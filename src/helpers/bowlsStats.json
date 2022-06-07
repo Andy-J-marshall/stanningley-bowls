@@ -1,0 +1,990 @@
+{
+    "playerResults": {
+        "jim moorin": {
+            "totalScore": 25,
+            "totalAgg": 105,
+            "totalScoreAgainst": 9,
+            "totalAggAgainst": 55,
+            "homeWins": 2,
+            "homeLosses": 0,
+            "awayWins": 3,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Colin Davison",
+                "Cedric Briggs",
+                "Jim Jordan",
+                "Ron Witham",
+                "Terry Blakeley"
+            ],
+            "beatenBy": [],
+            "dayPlayed": [
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday"
+            ]
+        },
+        "duncan mcphail": {
+            "totalScore": 24,
+            "totalAgg": 104,
+            "totalScoreAgainst": 11,
+            "totalAggAgainst": 57,
+            "homeWins": 2,
+            "homeLosses": 0,
+            "awayWins": 2,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Gordon Sadler",
+                "Carl Mahon",
+                "Eileen Coldrey",
+                "Lillian Pickles"
+            ],
+            "beatenBy": [
+                "Brian Dowling"
+            ],
+            "dayPlayed": [
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday"
+            ]
+        },
+        "stuart watson": {
+            "totalScore": 29,
+            "totalAgg": 125,
+            "totalScoreAgainst": 16,
+            "totalAggAgainst": 78,
+            "homeWins": 1,
+            "homeLosses": 1,
+            "awayWins": 4,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Graham Hey",
+                "Gerry Faller",
+                "Colin Whitley",
+                "Steve Caley",
+                "Brian Stevens"
+            ],
+            "beatenBy": [
+                "Paul Hatch"
+            ],
+            "dayPlayed": [
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday"
+            ]
+        },
+        "dave hudson": {
+            "totalScore": 12,
+            "totalAgg": 56,
+            "totalScoreAgainst": 14,
+            "totalAggAgainst": 66,
+            "homeWins": 1,
+            "homeLosses": 1,
+            "awayWins": 1,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Andy Sykes",
+                "Cedric Briggs"
+            ],
+            "beatenBy": [
+                "Mick Harrison",
+                "Barbara Nellis"
+            ],
+            "dayPlayed": [
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Thursday"
+            ]
+        },
+        "donald shaw": {
+            "totalScore": 54,
+            "totalAgg": 238,
+            "totalScoreAgainst": 28,
+            "totalAggAgainst": 146,
+            "homeWins": 5,
+            "homeLosses": 1,
+            "awayWins": 4,
+            "awayLosses": 2,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Carol Robinson",
+                "Hazel Marshall",
+                "Gordon Sadler",
+                "Peter Nicholson",
+                "Tony Kirk",
+                "Brian Ragan",
+                "Lewis Cuddy",
+                "Hazel Goodall",
+                "Rodney Sharp"
+            ],
+            "beatenBy": [
+                "Stephen Briggs",
+                "Janet Pearson",
+                "Phillip Marshall"
+            ],
+            "dayPlayed": [
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "alison woodfine": {
+            "totalScore": 42,
+            "totalAgg": 192,
+            "totalScoreAgainst": 35,
+            "totalAggAgainst": 167,
+            "homeWins": 3,
+            "homeLosses": 4,
+            "awayWins": 3,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Roy Tebbutt",
+                "Alan Taylor",
+                "Reece Pratt",
+                "Rachel Barnard",
+                "Terry Maher",
+                "Maureen Denison"
+            ],
+            "beatenBy": [
+                "Leslie Strang",
+                "Shirley Biancardo",
+                "Garry Marshall",
+                "Stuart Reardon",
+                "Steve Briggs"
+            ],
+            "dayPlayed": [
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "joey broadbent": {
+            "totalScore": 15,
+            "totalAgg": 63,
+            "totalScoreAgainst": 4,
+            "totalAggAgainst": 23,
+            "homeWins": 3,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Goschia Nelson",
+                "Gerry Wood",
+                "Granville Stoyles"
+            ],
+            "beatenBy": [],
+            "dayPlayed": [
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "neil porter": {
+            "totalScore": 30,
+            "totalAgg": 126,
+            "totalScoreAgainst": 13,
+            "totalAggAgainst": 70,
+            "homeWins": 3,
+            "homeLosses": 0,
+            "awayWins": 3,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Josh Lucas",
+                "Michael Ross",
+                "Harry Gillett",
+                "Barbara Ragan",
+                "Danny Dawson",
+                "Keith Kincaid"
+            ],
+            "beatenBy": [],
+            "dayPlayed": [
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "jack roberts": {
+            "totalScore": 1,
+            "totalAgg": 8,
+            "totalScoreAgainst": 10,
+            "totalAggAgainst": 42,
+            "homeWins": 0,
+            "homeLosses": 1,
+            "awayWins": 0,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [],
+            "beatenBy": [
+                "Malcolm Cameron",
+                "Mark Rastrick"
+            ],
+            "dayPlayed": [
+                "Thursday",
+                "Saturday"
+            ]
+        },
+        "jeff allman": {
+            "totalScore": 37,
+            "totalAgg": 169,
+            "totalScoreAgainst": 31,
+            "totalAggAgainst": 145,
+            "homeWins": 3,
+            "homeLosses": 2,
+            "awayWins": 3,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Shirley Allman",
+                "Shirley Allman"
+            ],
+            "beatenOpponents": [
+                "David Brooke",
+                "David Charlesworth",
+                "Wendy Sykes",
+                "Hugh Callard",
+                "David Charlesworth",
+                "Maureen Bradshaw"
+            ],
+            "beatenBy": [
+                "Gary Dennison & Nicola Pearson",
+                "Lavan Ron & Keith Skelton",
+                "Graham Goodall"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "shirley allman": {
+            "totalScore": 13,
+            "totalAgg": 70,
+            "totalScoreAgainst": 22,
+            "totalAggAgainst": 96,
+            "homeWins": 0,
+            "homeLosses": 3,
+            "awayWins": 1,
+            "awayLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Jeff Allman",
+                "Jeff Allman"
+            ],
+            "beatenOpponents": [
+                "Michael Small"
+            ],
+            "beatenBy": [
+                "Nicola Pearson & Gary Dennison",
+                "Keith Skelton & Lavan Ron",
+                "Lawrie Bairstow",
+                "Neil Schofield"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Thursday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "john armitage": {
+            "totalScore": 30,
+            "totalAgg": 126,
+            "totalScoreAgainst": 14,
+            "totalAggAgainst": 75,
+            "homeWins": 3,
+            "homeLosses": 0,
+            "awayWins": 3,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Stuart Tennant",
+                "David Howard",
+                "Paul Lawson",
+                "Christine Robson",
+                "Granville Stoyles",
+                "Gordon Monk"
+            ],
+            "beatenBy": [],
+            "dayPlayed": [
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday"
+            ]
+        },
+        "mario biancardo": {
+            "totalScore": 100,
+            "totalAgg": 436,
+            "totalScoreAgainst": 45,
+            "totalAggAgainst": 238,
+            "homeWins": 9,
+            "homeLosses": 1,
+            "awayWins": 9,
+            "awayLosses": 3,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Brenda Moscrop",
+                "David Taylor",
+                "Jenny Holiday",
+                "Hazel Goodall",
+                "Ian Baker",
+                "Darren Robinson",
+                "Ian Smith",
+                "David Lyons",
+                "Keith Worrall",
+                "Brian Thompson",
+                "Gordon Monk",
+                "Geoff Firth",
+                "Billy Ward",
+                "Dougie Cooper",
+                "Ian Wood",
+                "Kyle Hainsworth",
+                "Carol Robinson",
+                "Helen Milton"
+            ],
+            "beatenBy": [
+                "Ryan Lynch",
+                "Bill Robson",
+                "John Manson",
+                "Derek McCormack"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "shirley biancardo": {
+            "totalScore": 98,
+            "totalAgg": 431,
+            "totalScoreAgainst": 55,
+            "totalAggAgainst": 280,
+            "homeWins": 7,
+            "homeLosses": 3,
+            "awayWins": 10,
+            "awayLosses": 2,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Barbara Wherrett",
+                "Barry Ainsley",
+                "John Hindle",
+                "Dawn Peters",
+                "Danny Dawson",
+                "Paddy Glover",
+                "Kath Hey",
+                "Marion Worrall",
+                "John Hainsworth",
+                "Ken Stockhill",
+                "Malcolm Hallas",
+                "Bob Sharp",
+                "Arthur Horne",
+                "*A.N.Other*",
+                "Lisa Hogan",
+                "Josie Burdon",
+                "Pat Parker"
+            ],
+            "beatenBy": [
+                "Ellis Owen",
+                "Bob Taylor",
+                "Roger Birdsall",
+                "Graham Hainsworth",
+                "Glenda Holmes"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "paul bowes": {
+            "totalScore": 87,
+            "totalAgg": 378,
+            "totalScoreAgainst": 38,
+            "totalAggAgainst": 199,
+            "homeWins": 8,
+            "homeLosses": 2,
+            "awayWins": 7,
+            "awayLosses": 2,
+            "pairWins": 4,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell"
+            ],
+            "beatenOpponents": [
+                "Maureen Sheridan & Pat Blackburn",
+                "Dot Taylor & Glennys Ash",
+                "Paul Shackleton & Ann Hughes",
+                "Jade Kerry & Sharon Kerry",
+                "Martin McGowan",
+                "Doreen Hunter",
+                "Brian Ragan",
+                "Peter Richie",
+                "Brian Newton",
+                "Clifford Pitts",
+                "Peter Nicholson",
+                "Mick Hall",
+                "Ian Baker",
+                "Ron Lavan",
+                "Michael Geary"
+            ],
+            "beatenBy": [
+                "Malcolm Colinson & Chris Walsh",
+                "Harvey Lockwood & Kevin Smales",
+                "Tony Green",
+                "Dennis Walters"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "clifford brogie": {
+            "totalScore": 30,
+            "totalAgg": 144,
+            "totalScoreAgainst": 34,
+            "totalAggAgainst": 154,
+            "homeWins": 1,
+            "homeLosses": 3,
+            "awayWins": 3,
+            "awayLosses": 2,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "John King",
+                "Andrew Ash",
+                "Derek Howell",
+                "Josie M Burdon"
+            ],
+            "beatenBy": [
+                "Reece Pratt",
+                "Linda Gaunt",
+                "Jason Cooper",
+                "Dave Taylor",
+                "Terry Blakeley"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Thursday",
+                "Thursday",
+                "Thursday"
+            ]
+        },
+        "craig clarkson": {
+            "totalScore": 20,
+            "totalAgg": 88,
+            "totalScoreAgainst": 21,
+            "totalAggAgainst": 94,
+            "homeWins": 1,
+            "homeLosses": 1,
+            "awayWins": 1,
+            "awayLosses": 2,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Granville Stoyles",
+                "Angela Morley"
+            ],
+            "beatenBy": [
+                "Ahmed Hassoun",
+                "Lyn Dye",
+                "Harry Dixon"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday"
+            ]
+        },
+        "steve gardner": {
+            "totalScore": 75,
+            "totalAgg": 315,
+            "totalScoreAgainst": 24,
+            "totalAggAgainst": 141,
+            "homeWins": 7,
+            "homeLosses": 0,
+            "awayWins": 8,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "Marie Tate",
+                "Laura Love",
+                "Ian Tindal",
+                "Fred Hargreaves",
+                "Ralph Taylor",
+                "Eddie Siberry",
+                "Glen Scott",
+                "Mick Hall",
+                "Keith Worrall",
+                "Julie Cavalli",
+                "David Holmes",
+                "Graham Bluff",
+                "Stephen Morley",
+                "Ken Stockhill",
+                "Brenda Brown"
+            ],
+            "beatenBy": [],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "andy marshall": {
+            "totalScore": 53,
+            "totalAgg": 242,
+            "totalScoreAgainst": 34,
+            "totalAggAgainst": 165,
+            "homeWins": 3,
+            "homeLosses": 4,
+            "awayWins": 5,
+            "awayLosses": 1,
+            "pairWins": 6,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Alyssa Randell",
+                "Alyssa Randell"
+            ],
+            "beatenOpponents": [
+                "Arthur Horne & Julie Cavalli",
+                "David Rawson & Frank Hales",
+                "Julie Keightley & Oliver Delaney",
+                "Carol Butters & Ken Stockhill",
+                "Nigel Richardson & Trevor Hawkin",
+                "Pat Skelton & Barbara Taylor",
+                "John Hodgson",
+                "Sue Geary"
+            ],
+            "beatenBy": [
+                "Keith Sellars & Stuart Reardon",
+                "Peter Simmons & James Wright - Green",
+                "Gordon Monk",
+                "Paul Shackleton",
+                "Terry Blakeley"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "alyssa randell": {
+            "totalScore": 36,
+            "totalAgg": 160,
+            "totalScoreAgainst": 21,
+            "totalAggAgainst": 107,
+            "homeWins": 3,
+            "homeLosses": 1,
+            "awayWins": 3,
+            "awayLosses": 1,
+            "pairWins": 6,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Andy Marshall",
+                "Andy Marshall"
+            ],
+            "beatenOpponents": [
+                "Pat Blackburn & Maureen Sheridan",
+                "Glennys Ash & Dot Taylor",
+                "Ann Hughes & Paul Shackleton",
+                "Sharon Kerry & Jade Kerry",
+                "Trevor Hawkin & Nigel Richardson",
+                "Barbara Taylor & Pat Skelton"
+            ],
+            "beatenBy": [
+                "Chris Walsh & Malcolm Colinson",
+                "Kevin Smales & Harvey Lockwood"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday"
+            ]
+        },
+        "andy waller": {
+            "totalScore": 79,
+            "totalAgg": 346,
+            "totalScoreAgainst": 53,
+            "totalAggAgainst": 259,
+            "homeWins": 8,
+            "homeLosses": 3,
+            "awayWins": 4,
+            "awayLosses": 3,
+            "pairWins": 4,
+            "pairLosses": 2,
+            "pairsPartners": [
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall"
+            ],
+            "beatenOpponents": [
+                "Julie Cavalli & Arthur Horne",
+                "Frank Hales & David Rawson",
+                "Oliver Delaney & Julie Keightley",
+                "Ken Stockhill & Carol Butters",
+                "Aubrey Coldrey",
+                "Malcolm Hallas",
+                "David Howard",
+                "Malcolm Whipp",
+                "Tony Morris",
+                "Malcolm Hallas",
+                "Thomas Cuddy",
+                "Margaret McPhail"
+            ],
+            "beatenBy": [
+                "Stuart Reardon & Keith Sellars",
+                "James Wright - Green & Peter Simmons",
+                "Carol Matthews",
+                "Susan Harrison",
+                "Mario Biancardo",
+                "Barry Baldwin"
+            ],
+            "dayPlayed": [
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Monday",
+                "Tuesday",
+                "Tuesday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        },
+        "kevin waller": {
+            "totalScore": 24,
+            "totalAgg": 102,
+            "totalScoreAgainst": 14,
+            "totalAggAgainst": 73,
+            "homeWins": 1,
+            "homeLosses": 1,
+            "awayWins": 3,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairsPartners": [],
+            "beatenOpponents": [
+                "David Turner",
+                "Charlie Cross",
+                "Bob Pearson",
+                "Dawn Peters"
+            ],
+            "beatenBy": [
+                "Andrew Sykes"
+            ],
+            "dayPlayed": [
+                "Thursday",
+                "Saturday",
+                "Saturday",
+                "Saturday",
+                "Saturday"
+            ]
+        }
+    },
+    "teamResults": [
+        {
+            "Monday": {
+                "awayWins": 3,
+                "homeWins": 3,
+                "awayLosses": 1,
+                "homeLosses": 1,
+                "homeDraws": 0,
+                "awayDraws": 0,
+                "gamesPlayed": 8,
+                "totalDraws": 0,
+                "totalWins": 6,
+                "totalLosses": 2,
+                "stanningleyAgg": 894,
+                "stanningleyTotalPoints": 199,
+                "opponentAgg": 647,
+                "opponentTotalPoints": 134,
+                "beaten": [
+                    "Sth Lds Cons",
+                    "Gildersome",
+                    "Meanwood B",
+                    "Western Flatts",
+                    "New Wortley",
+                    "Harehills"
+                ],
+                "beatenBy": [
+                    "Rothwell BC",
+                    "New Farnley B"
+                ],
+                "drawnWith": []
+            }
+        },
+        {
+            "Tuesday": {
+                "awayWins": 3,
+                "homeWins": 2,
+                "awayLosses": 0,
+                "homeLosses": 0,
+                "homeDraws": 0,
+                "awayDraws": 0,
+                "gamesPlayed": 5,
+                "totalDraws": 0,
+                "totalWins": 5,
+                "totalLosses": 0,
+                "stanningleyAgg": 808,
+                "stanningleyTotalPoints": 188,
+                "opponentAgg": 511,
+                "opponentTotalPoints": 99,
+                "beaten": [
+                    "Horsforth Woodside.",
+                    "New Armley",
+                    "Harehills Park A",
+                    "West Royd Park",
+                    "Western Flatts"
+                ],
+                "beatenBy": [],
+                "drawnWith": []
+            }
+        },
+        {
+            "Thursday": {
+                "awayWins": 1,
+                "homeWins": 1,
+                "awayLosses": 1,
+                "homeLosses": 1,
+                "homeDraws": 0,
+                "awayDraws": 0,
+                "gamesPlayed": 4,
+                "totalDraws": 0,
+                "totalWins": 2,
+                "totalLosses": 2,
+                "stanningleyAgg": 565,
+                "stanningleyTotalPoints": 126,
+                "opponentAgg": 455,
+                "opponentTotalPoints": 95,
+                "beaten": [
+                    "Middleton Community",
+                    "New Armley"
+                ],
+                "beatenBy": [
+                    "Churwell Pk",
+                    "Pudsey Park A"
+                ],
+                "drawnWith": []
+            }
+        },
+        {
+            "Saturday": {
+                "awayWins": 3,
+                "homeWins": 4,
+                "awayLosses": 0,
+                "homeLosses": 0,
+                "homeDraws": 0,
+                "awayDraws": 0,
+                "gamesPlayed": 7,
+                "totalDraws": 0,
+                "totalWins": 7,
+                "totalLosses": 0,
+                "stanningleyAgg": 1094,
+                "stanningleyTotalPoints": 253,
+                "opponentAgg": 688,
+                "opponentTotalPoints": 133,
+                "beaten": [
+                    "Sth Leeds Cons B",
+                    "Gildersome B",
+                    "Cranmore",
+                    "Middleton Comm",
+                    "New Wortley",
+                    "Western Flatts",
+                    "Scatcherd Park B"
+                ],
+                "beatenBy": [],
+                "drawnWith": []
+            }
+        }
+    ]
+}

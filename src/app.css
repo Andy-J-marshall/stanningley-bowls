@@ -1,0 +1,25 @@
+p {
+  padding: 0.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #112B3C;
+  margin: auto;
+  width: 100%;
+}
+
+#root {
+  background-color: #112B3C;
+  color: #EFEFEF;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+#header {
+  padding: 2rem;
+}
