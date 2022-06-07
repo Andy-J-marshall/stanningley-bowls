@@ -3,7 +3,7 @@ import React from 'react';
 function PlayerStats() {
     return (
         <div>
-            <h1>Player Stats</h1>
+            <h2>Player Stats</h2>
         </div>
     );
 }

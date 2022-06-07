@@ -6,19 +6,20 @@ import bowlsStats from '../helpers/bowlsStats.json'
 
 function TeamStats() {
     const teamStats = bowlsStats.teamResults;
-    const mondayStats = teamStats[0].Monday
-    const tuesdayStats = teamStats[1].Tuesday
-    const thursdayStats = teamStats[2].Thursday
-    const saturdayStats = teamStats[3].Saturday
+    // TODO get the teamStats in a better way that using array
+    const mondayStats = teamStats[0]
+    const tuesdayStats = teamStats[1]
+    const thursdayStats = teamStats[2]
+    const saturdayStats = teamStats[3]
 
     return (
         <div id='TeamStats'>
-            <h1>Team Stats</h1>
+            <h2>Team Stats</h2>
             <TeamRecords
                 stats={teamStats}
             />
             <CombinedTeamStats
-                stats={[mondayStats, tuesdayStats, thursdayStats, saturdayStats]}
+                stats={teamStats}
             />
             <IndividualTeamStats
                 day='Monday'

@@ -57,7 +57,7 @@
                 "Tuesday"
             ]
         },
-        "stuart watson": {
+        "stewart watson": {
             "totalScore": 29,
             "totalAgg": 125,
             "totalScoreAgainst": 16,
@@ -873,118 +873,98 @@
     },
     "teamResults": [
         {
-            "Monday": {
-                "awayWins": 3,
-                "homeWins": 3,
-                "awayLosses": 1,
-                "homeLosses": 1,
-                "homeDraws": 0,
-                "awayDraws": 0,
-                "gamesPlayed": 8,
-                "totalDraws": 0,
-                "totalWins": 6,
-                "totalLosses": 2,
-                "stanningleyAgg": 894,
-                "stanningleyTotalPoints": 199,
-                "opponentAgg": 647,
-                "opponentTotalPoints": 134,
-                "beaten": [
-                    "Sth Lds Cons",
-                    "Gildersome",
-                    "Meanwood B",
-                    "Western Flatts",
-                    "New Wortley",
-                    "Harehills"
-                ],
-                "beatenBy": [
-                    "Rothwell BC",
-                    "New Farnley B"
-                ],
-                "drawnWith": []
-            }
+            "day": "Monday",
+            "awayWins": 3,
+            "homeWins": 3,
+            "awayLosses": 1,
+            "homeLosses": 1,
+            "homeDraws": 0,
+            "awayDraws": 0,
+            "stanningleyAgg": 894,
+            "stanningleyTotalPoints": 199,
+            "opponentAgg": 647,
+            "opponentTotalPoints": 134,
+            "beaten": [
+                "Sth Lds Cons",
+                "Gildersome",
+                "Meanwood B",
+                "Western Flatts",
+                "New Wortley",
+                "Harehills"
+            ],
+            "beatenBy": [
+                "Rothwell BC",
+                "New Farnley B"
+            ],
+            "drawnWith": []
         },
         {
-            "Tuesday": {
-                "awayWins": 3,
-                "homeWins": 2,
-                "awayLosses": 0,
-                "homeLosses": 0,
-                "homeDraws": 0,
-                "awayDraws": 0,
-                "gamesPlayed": 5,
-                "totalDraws": 0,
-                "totalWins": 5,
-                "totalLosses": 0,
-                "stanningleyAgg": 808,
-                "stanningleyTotalPoints": 188,
-                "opponentAgg": 511,
-                "opponentTotalPoints": 99,
-                "beaten": [
-                    "Horsforth Woodside.",
-                    "New Armley",
-                    "Harehills Park A",
-                    "West Royd Park",
-                    "Western Flatts"
-                ],
-                "beatenBy": [],
-                "drawnWith": []
-            }
+            "day": "Tuesday",
+            "awayWins": 3,
+            "homeWins": 2,
+            "awayLosses": 0,
+            "homeLosses": 0,
+            "homeDraws": 0,
+            "awayDraws": 0,
+            "stanningleyAgg": 808,
+            "stanningleyTotalPoints": 188,
+            "opponentAgg": 511,
+            "opponentTotalPoints": 99,
+            "beaten": [
+                "Horsforth Woodside.",
+                "New Armley",
+                "Harehills Park A",
+                "West Royd Park",
+                "Western Flatts"
+            ],
+            "beatenBy": [],
+            "drawnWith": []
         },
         {
-            "Thursday": {
-                "awayWins": 1,
-                "homeWins": 1,
-                "awayLosses": 1,
-                "homeLosses": 1,
-                "homeDraws": 0,
-                "awayDraws": 0,
-                "gamesPlayed": 4,
-                "totalDraws": 0,
-                "totalWins": 2,
-                "totalLosses": 2,
-                "stanningleyAgg": 565,
-                "stanningleyTotalPoints": 126,
-                "opponentAgg": 455,
-                "opponentTotalPoints": 95,
-                "beaten": [
-                    "Middleton Community",
-                    "New Armley"
-                ],
-                "beatenBy": [
-                    "Churwell Pk",
-                    "Pudsey Park A"
-                ],
-                "drawnWith": []
-            }
+            "day": "Thursday",
+            "awayWins": 1,
+            "homeWins": 1,
+            "awayLosses": 1,
+            "homeLosses": 1,
+            "homeDraws": 0,
+            "awayDraws": 0,
+            "stanningleyAgg": 565,
+            "stanningleyTotalPoints": 126,
+            "opponentAgg": 455,
+            "opponentTotalPoints": 95,
+            "beaten": [
+                "Middleton Community",
+                "New Armley"
+            ],
+            "beatenBy": [
+                "Churwell Pk",
+                "Pudsey Park A"
+            ],
+            "drawnWith": []
         },
         {
-            "Saturday": {
-                "awayWins": 3,
-                "homeWins": 4,
-                "awayLosses": 0,
-                "homeLosses": 0,
-                "homeDraws": 0,
-                "awayDraws": 0,
-                "gamesPlayed": 7,
-                "totalDraws": 0,
-                "totalWins": 7,
-                "totalLosses": 0,
-                "stanningleyAgg": 1094,
-                "stanningleyTotalPoints": 253,
-                "opponentAgg": 688,
-                "opponentTotalPoints": 133,
-                "beaten": [
-                    "Sth Leeds Cons B",
-                    "Gildersome B",
-                    "Cranmore",
-                    "Middleton Comm",
-                    "New Wortley",
-                    "Western Flatts",
-                    "Scatcherd Park B"
-                ],
-                "beatenBy": [],
-                "drawnWith": []
-            }
+            "day": "Saturday",
+            "awayWins": 3,
+            "homeWins": 4,
+            "awayLosses": 0,
+            "homeLosses": 0,
+            "homeDraws": 0,
+            "awayDraws": 0,
+            "stanningleyAgg": 1094,
+            "stanningleyTotalPoints": 253,
+            "opponentAgg": 688,
+            "opponentTotalPoints": 133,
+            "beaten": [
+                "Sth Leeds Cons B",
+                "Gildersome B",
+                "Cranmore",
+                "Middleton Comm",
+                "New Wortley",
+                "Western Flatts",
+                "Scatcherd Park B"
+            ],
+            "beatenBy": [],
+            "drawnWith": []
         }
     ]
 }
