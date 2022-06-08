@@ -2,7 +2,6 @@ import React from 'react';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
 
-
 function Stats() {
     return (
         <div>

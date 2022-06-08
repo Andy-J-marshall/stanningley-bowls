@@ -47,7 +47,7 @@ function Players(props) {
             < ListGroup.Item
                 key={index}>
                 <div>
-                    <h4>{capitalizeText([name])}</h4>
+                    <h3>{capitalizeText([name])}</h3>
                     {/* TODO display days played in nicer way */}
                     <p>Games played = {data.gamesPlayed} ({data.dayPlayed})</p>
                     <p>Games Won = {data.totalWins} ({data.homeWins} home, {data.awayWins} away, {data.pairWins} pairs)</p>
