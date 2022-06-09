@@ -7,8 +7,10 @@ function Players(props) {
     const player = props.player;
     const playersStats = props.playersStats;
     const name = props.name;
-    const data = returnPlayerData(player)
+    const data = returnPlayerData(player);
+    const daysPlayedCount = findDaysPlayedCount(data.dayPlayed);
 
+    // TODO handle plurals
     // TODO refactor this
     function returnPlayerData(player) {
         const playerData = playersStats[player];
@@ -32,7 +34,7 @@ function Players(props) {
             gamesPlayed: awayWins + homeWins + homeLosses + awayLosses,
             beatenBy: capitalizeText(beatenBy),
             beatenOpponents: capitalizeText(beatenOpponents),
-            dayPlayed: capitalizeText(dayPlayed),
+            dayPlayed: dayPlayed,
             pairsGames: pairLosses + pairWins,
             pairLosses,
             pairWins,
@@ -41,8 +43,22 @@ function Players(props) {
         return returnObj;
     }
 
-    // TODO display this in a fancy way
-    // TODO put in null checks
+    function findDaysPlayedCount(daysPlayed) {
+        const monday = daysPlayed.filter(day => day.toLowerCase() === 'monday').length;
+        const tuesday = daysPlayed.filter(day => day.toLowerCase() === 'tuesday').length;
+        const thursday = daysPlayed.filter(day => day.toLowerCase() === 'thursday').length;
+        const saturday = daysPlayed.filter(day => day.toLowerCase() === 'saturday').length;
+
+        const returnObj = [
+            { day: 'Monday', gamesPlayed: monday },
+            { day: 'Tuesday', gamesPlayed: tuesday },
+            { day: 'Thursday', gamesPlayed: thursday },
+            { day: 'Saturday', gamesPlayed: saturday }
+        ];
+
+        return returnObj.filter(day => day.gamesPlayed > 0);
+    }
+
     return (
         <div>
             < ListGroup.Item
@@ -52,11 +68,16 @@ function Players(props) {
                     {data.gamesPlayed === 0 && <p>No games played</p>}
                     {data.gamesPlayed > 0 && <div>
                         <h5>Games</h5>
-                        {/* TODO display days played in nicer way */}
-                        <p>{data.gamesPlayed} games played</p>
+                        <p>{data.gamesPlayed} games played in total</p>
+                        {daysPlayedCount.map(day => {
+                            return <p>{day.gamesPlayed} games played on {day.day}</p>
+                        })}
+                        {data.pairsGames > 0 && <p>{data.pairsGames} pairs games played</p>}
+
+                        <h5>Results</h5>
                         {data.totalWins > 0 && <p>{data.totalWins} wins ({data.homeWins} home, {data.awayWins} away)</p>}
                         {data.totalLosses > 0 && <p>{data.totalLosses} losses ({data.homeLosses} home, {data.awayLosses} away)</p>}
-                        {<p>Days played = {data.dayPlayed}</p>}
+                        <p>{(data.totalWins / data.gamesPlayed * 100).toFixed(0)}% win percentage</p>
 
                         {data.pairsGames > 0 && <div>
                             <h5>Pairs</h5>
@@ -77,8 +98,8 @@ function Players(props) {
                         <p>Total aggregate scored = {data.totalAgg} / {data.gamesPlayed * 21}</p>
                         <p>Total aggregate conceded = {data.totalAggAgainst} / {data.gamesPlayed * 21}</p>
                         <p>Average = {data.average.toFixed(2)}</p>
-                        <p>Combined average score = {data.averageScore.toFixed(2)} / 5</p>
-                        <p>Combined average score against = {data.averageScoreAgainst.toFixed(2)} / 5</p>
+                        <p>Average score = {data.averageScore.toFixed(2)} / 5</p>
+                        <p>Average opponents score = {data.averageScoreAgainst.toFixed(2)} / 5</p>
                     </div>}
                 </div>
             </ListGroup.Item>
