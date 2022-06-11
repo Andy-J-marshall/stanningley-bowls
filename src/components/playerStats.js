@@ -15,6 +15,7 @@ function PlayerStats() {
                     const playerName = keys[index];
                     return <Player
                         key={index}
+                        index={index}
                         player={p}
                         name={playerName}
                         playersStats={playersStats}

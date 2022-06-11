@@ -8,7 +8,8 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
     const data = returnPlayerData(player);
-    const daysPlayedCount = findDaysPlayedCount(data.dayPlayed);
+    const daysPlayedCount = calculateDaysPlayedCount(data.dayPlayed);
+    const pairsPartnersCount = calculatePairsPartnersCount(data.pairsPartners)
 
     // TODO handle plurals
     // TODO refactor this
@@ -38,12 +39,29 @@ function Players(props) {
             pairsGames: pairLosses + pairWins,
             pairLosses,
             pairWins,
-            pairsPartners: capitalizeText(pairsPartners),
+            pairsPartners,
         }
         return returnObj;
     }
 
-    function findDaysPlayedCount(daysPlayed) {
+    function calculatePairsPartnersCount(allPairsPartners) {
+        const uniquePartners = allPairsPartners.filter((partner, index) => {
+            return allPairsPartners.indexOf(partner) === index;
+        });
+        const partnersReturnObj = uniquePartners.reduce((partnerObj, player) => {
+            partnerObj[player] = { timesPaired: 0 };
+            return partnerObj;
+        }, {});
+
+        allPairsPartners.forEach(partner => {
+            if (uniquePartners.includes(partner)) {
+                partnersReturnObj[partner].timesPaired += 1;
+            }
+        })
+        return partnersReturnObj;
+    }
+
+    function calculateDaysPlayedCount(daysPlayed) {
         const monday = daysPlayed.filter(day => day.toLowerCase() === 'monday').length;
         const tuesday = daysPlayed.filter(day => day.toLowerCase() === 'tuesday').length;
         const thursday = daysPlayed.filter(day => day.toLowerCase() === 'thursday').length;
@@ -61,8 +79,7 @@ function Players(props) {
 
     return (
         <div>
-            < ListGroup.Item
-                key={index}>
+            < ListGroup.Item key={index}>
                 <div>
                     <h3>{capitalizeText([name])}</h3>
                     {data.gamesPlayed === 0 && <p>No games played</p>}
@@ -70,7 +87,8 @@ function Players(props) {
                         <h5>Games</h5>
                         <p>{data.gamesPlayed} games played in total</p>
                         {daysPlayedCount.map(day => {
-                            return <p>{day.gamesPlayed} games played on {day.day}</p>
+                            const key = Math.floor(Math.random() * 100000 + index);
+                            return <p key={key}>{day.gamesPlayed} games played on {day.day}</p>
                         })}
                         {data.pairsGames > 0 && <p>{data.pairsGames} pairs games played</p>}
 
@@ -79,13 +97,16 @@ function Players(props) {
                         {data.totalLosses > 0 && <p>{data.totalLosses} losses ({data.homeLosses} home, {data.awayLosses} away)</p>}
                         <p>{(data.totalWins / data.gamesPlayed * 100).toFixed(0)}% win percentage</p>
 
+                        {/* TODO add more detail on pairs partners wins/losses  */}
                         {data.pairsGames > 0 && <div>
                             <h5>Pairs</h5>
-                            {/* TODO display pairsPartners in nicer way */}
                             <p>{data.pairsGames} pairs games played</p>
                             <p>{data.pairWins} pairs wins</p>
                             <p>{data.pairLosses} pairs losses</p>
-                            {data.pairsPartners.length > 0 && <p>Pairs partners = {data.pairsPartners}</p>}
+                            {data.pairsPartners.length > 0 && Object.keys(pairsPartnersCount).map(partner => {
+                                const key = Math.floor(Math.random() * 100000 + index);
+                                return <p key={key}>{pairsPartnersCount[partner].timesPaired} games with {partner}</p>
+                            })}
                         </div>}
 
                         <h5>Opponents</h5>
@@ -93,6 +114,7 @@ function Players(props) {
                         {data.beatenBy.length > 0 && <p>Defeated by = {data.beatenBy}</p>}
 
                         <h5>Averages</h5>
+                        {/* TODO split in home and away? */}
                         <p>Total points scored = {data.totalScore} / {data.gamesPlayed * 5}</p>
                         <p>Total points conceded = {data.totalScoreAgainst} / {data.gamesPlayed * 5}</p>
                         <p>Total aggregate scored = {data.totalAgg} / {data.gamesPlayed * 21}</p>
