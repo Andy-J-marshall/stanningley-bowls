@@ -30,7 +30,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 42,
+            "totalHomeAggAgainst": 25,
+            "totalAwayAgg": 63,
+            "totalAwayAggAgainst": 30,
+            "totalHomeScore": 10,
+            "totalHomeScoreAgainst": 4,
+            "totalAwayScore": 15,
+            "totalAwayScoreAgainst": 5
         },
         "duncan mcphail": {
             "totalScore": 24,
@@ -63,7 +71,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 42,
+            "totalHomeAggAgainst": 25,
+            "totalAwayAgg": 62,
+            "totalAwayAggAgainst": 32,
+            "totalHomeScore": 10,
+            "totalHomeScoreAgainst": 4,
+            "totalAwayScore": 14,
+            "totalAwayScoreAgainst": 7
         },
         "stewart watson": {
             "totalScore": 29,
@@ -98,7 +114,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 41,
+            "totalHomeAggAgainst": 36,
+            "totalAwayAgg": 84,
+            "totalAwayAggAgainst": 42,
+            "totalHomeScore": 9,
+            "totalHomeScoreAgainst": 8,
+            "totalAwayScore": 20,
+            "totalAwayScoreAgainst": 8
         },
         "dave hudson": {
             "totalScore": 12,
@@ -129,7 +153,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 27,
+            "totalHomeAggAgainst": 31,
+            "totalAwayAgg": 29,
+            "totalAwayAggAgainst": 35,
+            "totalHomeScore": 6,
+            "totalHomeScoreAgainst": 7,
+            "totalAwayScore": 6,
+            "totalAwayScoreAgainst": 7
         },
         "donald shaw": {
             "totalScore": 54,
@@ -176,7 +208,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 125,
+            "totalHomeAggAgainst": 55,
+            "totalAwayAgg": 113,
+            "totalAwayAggAgainst": 91,
+            "totalHomeScore": 29,
+            "totalHomeScoreAgainst": 10,
+            "totalAwayScore": 25,
+            "totalAwayScoreAgainst": 18
         },
         "alison woodfine": {
             "totalScore": 42,
@@ -221,7 +261,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 113,
+            "totalHomeAggAgainst": 112,
+            "totalAwayAgg": 79,
+            "totalAwayAggAgainst": 55,
+            "totalHomeScore": 24,
+            "totalHomeScoreAgainst": 24,
+            "totalAwayScore": 18,
+            "totalAwayScoreAgainst": 11
         },
         "joey broadbent": {
             "totalScore": 15,
@@ -249,7 +297,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 63,
+            "totalHomeAggAgainst": 23,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalHomeScore": 15,
+            "totalHomeScoreAgainst": 4,
+            "totalAwayScore": 0,
+            "totalAwayScoreAgainst": 0
         },
         "neil porter": {
             "totalScore": 30,
@@ -283,7 +339,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 63,
+            "totalHomeAggAgainst": 36,
+            "totalAwayAgg": 63,
+            "totalAwayAggAgainst": 34,
+            "totalHomeScore": 15,
+            "totalHomeScoreAgainst": 6,
+            "totalAwayScore": 15,
+            "totalAwayScoreAgainst": 7
         },
         "jack roberts": {
             "totalScore": 1,
@@ -309,7 +373,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 7,
+            "totalHomeAggAgainst": 21,
+            "totalAwayAgg": 1,
+            "totalAwayAggAgainst": 21,
+            "totalHomeScore": 1,
+            "totalHomeScoreAgainst": 5,
+            "totalAwayScore": 0,
+            "totalAwayScoreAgainst": 5
         },
         "jeff allman": {
             "totalScore": 37,
@@ -356,7 +428,15 @@
             "losingPairsPartners": [
                 "Shirley Allman",
                 "Shirley Allman"
-            ]
+            ],
+            "totalHomeAgg": 92,
+            "totalHomeAggAgainst": 86,
+            "totalAwayAgg": 77,
+            "totalAwayAggAgainst": 59,
+            "totalHomeScore": 20,
+            "totalHomeScoreAgainst": 19,
+            "totalAwayScore": 17,
+            "totalAwayScoreAgainst": 12
         },
         "shirley allman": {
             "totalScore": 13,
@@ -395,7 +475,15 @@
             "losingPairsPartners": [
                 "Jeff Allman",
                 "Jeff Allman"
-            ]
+            ],
+            "totalHomeAgg": 35,
+            "totalHomeAggAgainst": 63,
+            "totalAwayAgg": 35,
+            "totalAwayAggAgainst": 33,
+            "totalHomeScore": 6,
+            "totalHomeScoreAgainst": 15,
+            "totalAwayScore": 7,
+            "totalAwayScoreAgainst": 7
         },
         "john armitage": {
             "totalScore": 30,
@@ -429,7 +517,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 63,
+            "totalHomeAggAgainst": 40,
+            "totalAwayAgg": 63,
+            "totalAwayAggAgainst": 35,
+            "totalHomeScore": 15,
+            "totalHomeScoreAgainst": 8,
+            "totalAwayScore": 15,
+            "totalAwayScoreAgainst": 6
         },
         "mario biancardo": {
             "totalScore": 100,
@@ -496,7 +592,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 207,
+            "totalHomeAggAgainst": 101,
+            "totalAwayAgg": 229,
+            "totalAwayAggAgainst": 137,
+            "totalHomeScore": 49,
+            "totalHomeScoreAgainst": 20,
+            "totalAwayScore": 51,
+            "totalAwayScoreAgainst": 25
         },
         "shirley biancardo": {
             "totalScore": 98,
@@ -563,7 +667,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 189,
+            "totalHomeAggAgainst": 142,
+            "totalAwayAgg": 242,
+            "totalAwayAggAgainst": 138,
+            "totalHomeScore": 42,
+            "totalHomeScoreAgainst": 29,
+            "totalAwayScore": 56,
+            "totalAwayScoreAgainst": 26
         },
         "paul bowes": {
             "totalScore": 87,
@@ -639,7 +751,15 @@
             "losingPairsPartners": [
                 "Alyssa Randell",
                 "Alyssa Randell"
-            ]
+            ],
+            "totalHomeAgg": 196,
+            "totalHomeAggAgainst": 102,
+            "totalAwayAgg": 182,
+            "totalAwayAggAgainst": 97,
+            "totalHomeScore": 45,
+            "totalHomeScoreAgainst": 20,
+            "totalAwayScore": 42,
+            "totalAwayScoreAgainst": 18
         },
         "clifford brogie": {
             "totalScore": 30,
@@ -680,7 +800,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 59,
+            "totalHomeAggAgainst": 71,
+            "totalAwayAgg": 85,
+            "totalAwayAggAgainst": 83,
+            "totalHomeScore": 11,
+            "totalHomeScoreAgainst": 16,
+            "totalAwayScore": 19,
+            "totalAwayScoreAgainst": 18
         },
         "craig clarkson": {
             "totalScore": 20,
@@ -713,7 +841,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 39,
+            "totalHomeAggAgainst": 41,
+            "totalAwayAgg": 49,
+            "totalAwayAggAgainst": 53,
+            "totalHomeScore": 9,
+            "totalHomeScoreAgainst": 9,
+            "totalAwayScore": 11,
+            "totalAwayScoreAgainst": 12
         },
         "steve gardner": {
             "totalScore": 75,
@@ -765,7 +901,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 147,
+            "totalHomeAggAgainst": 65,
+            "totalAwayAgg": 168,
+            "totalAwayAggAgainst": 76,
+            "totalHomeScore": 35,
+            "totalHomeScoreAgainst": 11,
+            "totalAwayScore": 40,
+            "totalAwayScoreAgainst": 13
         },
         "andy marshall": {
             "totalScore": 53,
@@ -833,7 +977,15 @@
             "losingPairsPartners": [
                 "Andy Waller",
                 "Andy Waller"
-            ]
+            ],
+            "totalHomeAgg": 125,
+            "totalHomeAggAgainst": 96,
+            "totalAwayAgg": 117,
+            "totalAwayAggAgainst": 69,
+            "totalHomeScore": 26,
+            "totalHomeScoreAgainst": 21,
+            "totalAwayScore": 27,
+            "totalAwayScoreAgainst": 13
         },
         "alyssa randell": {
             "totalScore": 36,
@@ -891,7 +1043,15 @@
             "losingPairsPartners": [
                 "Paul Bowes",
                 "Paul Bowes"
-            ]
+            ],
+            "totalHomeAgg": 80,
+            "totalHomeAggAgainst": 54,
+            "totalAwayAgg": 80,
+            "totalAwayAggAgainst": 53,
+            "totalHomeScore": 18,
+            "totalHomeScoreAgainst": 11,
+            "totalAwayScore": 18,
+            "totalAwayScoreAgainst": 10
         },
         "andy waller": {
             "totalScore": 79,
@@ -965,7 +1125,15 @@
             "losingPairsPartners": [
                 "Andy Marshall",
                 "Andy Marshall"
-            ]
+            ],
+            "totalHomeAgg": 214,
+            "totalHomeAggAgainst": 151,
+            "totalAwayAgg": 132,
+            "totalAwayAggAgainst": 108,
+            "totalHomeScore": 49,
+            "totalHomeScoreAgainst": 30,
+            "totalAwayScore": 30,
+            "totalAwayScoreAgainst": 23
         },
         "kevin waller": {
             "totalScore": 24,
@@ -998,7 +1166,15 @@
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
-            "losingPairsPartners": []
+            "losingPairsPartners": [],
+            "totalHomeAgg": 39,
+            "totalHomeAggAgainst": 34,
+            "totalAwayAgg": 63,
+            "totalAwayAggAgainst": 39,
+            "totalHomeScore": 9,
+            "totalHomeScoreAgainst": 7,
+            "totalAwayScore": 15,
+            "totalAwayScoreAgainst": 7
         }
     },
     "teamResults": [
