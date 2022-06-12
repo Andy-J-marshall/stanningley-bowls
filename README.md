@@ -14,3 +14,7 @@ Run the following:
 * `npm i`
 * `npm run build`
 * `npm run deploy`
+
+<!-- TODO add script into this repo once complete? -->
+<!-- TODO create cypress scripts to get the data? -->
+<!-- TODO update readme -->

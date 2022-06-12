@@ -164,11 +164,11 @@
             "totalAwayScoreAgainst": 7
         },
         "donald shaw": {
-            "totalScore": 54,
-            "totalAgg": 238,
-            "totalScoreAgainst": 28,
-            "totalAggAgainst": 146,
-            "homeWins": 5,
+            "totalScore": 59,
+            "totalAgg": 259,
+            "totalScoreAgainst": 32,
+            "totalAggAgainst": 164,
+            "homeWins": 6,
             "homeLosses": 1,
             "awayWins": 4,
             "awayLosses": 2,
@@ -184,7 +184,8 @@
                 "Brian Ragan",
                 "Lewis Cuddy",
                 "Hazel Goodall",
-                "Rodney Sharp"
+                "Rodney Sharp",
+                "Brian Newton"
             ],
             "beatenBy": [
                 "Stephen Briggs",
@@ -203,18 +204,19 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 125,
-            "totalHomeAggAgainst": 55,
+            "totalHomeAgg": 146,
+            "totalHomeAggAgainst": 73,
             "totalAwayAgg": 113,
             "totalAwayAggAgainst": 91,
-            "totalHomeScore": 29,
-            "totalHomeScoreAgainst": 10,
+            "totalHomeScore": 34,
+            "totalHomeScoreAgainst": 14,
             "totalAwayScore": 25,
             "totalAwayScoreAgainst": 18
         },
@@ -272,11 +274,11 @@
             "totalAwayScoreAgainst": 11
         },
         "joey broadbent": {
-            "totalScore": 15,
-            "totalAgg": 63,
-            "totalScoreAgainst": 4,
-            "totalAggAgainst": 23,
-            "homeWins": 3,
+            "totalScore": 20,
+            "totalAgg": 84,
+            "totalScoreAgainst": 6,
+            "totalAggAgainst": 37,
+            "homeWins": 4,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 0,
@@ -286,10 +288,12 @@
             "beatenOpponents": [
                 "Goschia Nelson",
                 "Gerry Wood",
-                "Granville Stoyles"
+                "Granville Stoyles",
+                "Malcolm Whipp"
             ],
             "beatenBy": [],
             "dayPlayed": [
+                "Saturday",
                 "Saturday",
                 "Saturday",
                 "Saturday"
@@ -298,21 +302,21 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 63,
-            "totalHomeAggAgainst": 23,
+            "totalHomeAgg": 84,
+            "totalHomeAggAgainst": 37,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
-            "totalHomeScore": 15,
-            "totalHomeScoreAgainst": 4,
+            "totalHomeScore": 20,
+            "totalHomeScoreAgainst": 6,
             "totalAwayScore": 0,
             "totalAwayScoreAgainst": 0
         },
         "neil porter": {
-            "totalScore": 30,
-            "totalAgg": 126,
-            "totalScoreAgainst": 13,
-            "totalAggAgainst": 70,
-            "homeWins": 3,
+            "totalScore": 35,
+            "totalAgg": 147,
+            "totalScoreAgainst": 16,
+            "totalAggAgainst": 87,
+            "homeWins": 4,
             "homeLosses": 0,
             "awayWins": 3,
             "awayLosses": 0,
@@ -325,10 +329,12 @@
                 "Harry Gillett",
                 "Barbara Ragan",
                 "Danny Dawson",
-                "Keith Kincaid"
+                "Keith Kincaid",
+                "Ged Healy"
             ],
             "beatenBy": [],
             "dayPlayed": [
+                "Saturday",
                 "Saturday",
                 "Saturday",
                 "Saturday",
@@ -340,12 +346,12 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 63,
-            "totalHomeAggAgainst": 36,
+            "totalHomeAgg": 84,
+            "totalHomeAggAgainst": 53,
             "totalAwayAgg": 63,
             "totalAwayAggAgainst": 34,
-            "totalHomeScore": 15,
-            "totalHomeScoreAgainst": 6,
+            "totalHomeScore": 20,
+            "totalHomeScoreAgainst": 9,
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 7
         },
@@ -528,13 +534,13 @@
             "totalAwayScoreAgainst": 6
         },
         "mario biancardo": {
-            "totalScore": 100,
-            "totalAgg": 436,
-            "totalScoreAgainst": 45,
-            "totalAggAgainst": 238,
+            "totalScore": 105,
+            "totalAgg": 457,
+            "totalScoreAgainst": 46,
+            "totalAggAgainst": 246,
             "homeWins": 9,
             "homeLosses": 1,
-            "awayWins": 9,
+            "awayWins": 10,
             "awayLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
@@ -557,7 +563,8 @@
                 "Ian Wood",
                 "Kyle Hainsworth",
                 "Carol Robinson",
-                "Helen Milton"
+                "Helen Milton",
+                "Glenda Holmes"
             ],
             "beatenBy": [
                 "Ryan Lynch",
@@ -587,6 +594,7 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 0,
@@ -595,21 +603,21 @@
             "losingPairsPartners": [],
             "totalHomeAgg": 207,
             "totalHomeAggAgainst": 101,
-            "totalAwayAgg": 229,
-            "totalAwayAggAgainst": 137,
+            "totalAwayAgg": 250,
+            "totalAwayAggAgainst": 145,
             "totalHomeScore": 49,
             "totalHomeScoreAgainst": 20,
-            "totalAwayScore": 51,
-            "totalAwayScoreAgainst": 25
+            "totalAwayScore": 56,
+            "totalAwayScoreAgainst": 26
         },
         "shirley biancardo": {
-            "totalScore": 98,
-            "totalAgg": 431,
-            "totalScoreAgainst": 55,
-            "totalAggAgainst": 280,
+            "totalScore": 103,
+            "totalAgg": 452,
+            "totalScoreAgainst": 56,
+            "totalAggAgainst": 289,
             "homeWins": 7,
             "homeLosses": 3,
-            "awayWins": 10,
+            "awayWins": 11,
             "awayLosses": 2,
             "pairWins": 0,
             "pairLosses": 0,
@@ -631,7 +639,8 @@
                 "*A.N.Other*",
                 "Lisa Hogan",
                 "Josie Burdon",
-                "Pat Parker"
+                "Pat Parker",
+                "Sandra Deegan"
             ],
             "beatenBy": [
                 "Ellis Owen",
@@ -662,6 +671,7 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 0,
@@ -670,19 +680,19 @@
             "losingPairsPartners": [],
             "totalHomeAgg": 189,
             "totalHomeAggAgainst": 142,
-            "totalAwayAgg": 242,
-            "totalAwayAggAgainst": 138,
+            "totalAwayAgg": 263,
+            "totalAwayAggAgainst": 147,
             "totalHomeScore": 42,
             "totalHomeScoreAgainst": 29,
-            "totalAwayScore": 56,
-            "totalAwayScoreAgainst": 26
+            "totalAwayScore": 61,
+            "totalAwayScoreAgainst": 27
         },
         "paul bowes": {
-            "totalScore": 87,
-            "totalAgg": 378,
-            "totalScoreAgainst": 38,
-            "totalAggAgainst": 199,
-            "homeWins": 8,
+            "totalScore": 92,
+            "totalAgg": 399,
+            "totalScoreAgainst": 40,
+            "totalAggAgainst": 209,
+            "homeWins": 9,
             "homeLosses": 2,
             "awayWins": 7,
             "awayLosses": 2,
@@ -711,7 +721,8 @@
                 "Mick Hall",
                 "Ian Baker",
                 "Ron Lavan",
-                "Michael Geary"
+                "Michael Geary",
+                "Arthur Horne"
             ],
             "beatenBy": [
                 "Malcolm Colinson & Chris Walsh",
@@ -738,6 +749,7 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 118,
@@ -752,12 +764,12 @@
                 "Alyssa Randell",
                 "Alyssa Randell"
             ],
-            "totalHomeAgg": 196,
-            "totalHomeAggAgainst": 102,
+            "totalHomeAgg": 217,
+            "totalHomeAggAgainst": 112,
             "totalAwayAgg": 182,
             "totalAwayAggAgainst": 97,
-            "totalHomeScore": 45,
-            "totalHomeScoreAgainst": 20,
+            "totalHomeScore": 50,
+            "totalHomeScoreAgainst": 22,
             "totalAwayScore": 42,
             "totalAwayScoreAgainst": 18
         },
@@ -852,12 +864,12 @@
             "totalAwayScoreAgainst": 12
         },
         "steve gardner": {
-            "totalScore": 75,
-            "totalAgg": 315,
-            "totalScoreAgainst": 24,
-            "totalAggAgainst": 141,
+            "totalScore": 79,
+            "totalAgg": 334,
+            "totalScoreAgainst": 29,
+            "totalAggAgainst": 162,
             "homeWins": 7,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 8,
             "awayLosses": 0,
             "pairWins": 0,
@@ -880,7 +892,9 @@
                 "Ken Stockhill",
                 "Brenda Brown"
             ],
-            "beatenBy": [],
+            "beatenBy": [
+                "Joe Adams"
+            ],
             "dayPlayed": [
                 "Monday",
                 "Monday",
@@ -896,27 +910,28 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 147,
-            "totalHomeAggAgainst": 65,
+            "totalHomeAgg": 166,
+            "totalHomeAggAgainst": 86,
             "totalAwayAgg": 168,
             "totalAwayAggAgainst": 76,
-            "totalHomeScore": 35,
-            "totalHomeScoreAgainst": 11,
+            "totalHomeScore": 39,
+            "totalHomeScoreAgainst": 16,
             "totalAwayScore": 40,
             "totalAwayScoreAgainst": 13
         },
         "andy marshall": {
-            "totalScore": 53,
-            "totalAgg": 242,
-            "totalScoreAgainst": 34,
-            "totalAggAgainst": 165,
-            "homeWins": 3,
+            "totalScore": 58,
+            "totalAgg": 263,
+            "totalScoreAgainst": 36,
+            "totalAggAgainst": 176,
+            "homeWins": 4,
             "homeLosses": 4,
             "awayWins": 5,
             "awayLosses": 1,
@@ -940,7 +955,8 @@
                 "Nigel Richardson & Trevor Hawkin",
                 "Pat Skelton & Barbara Taylor",
                 "John Hodgson",
-                "Sue Geary"
+                "Sue Geary",
+                "David Brooke"
             ],
             "beatenBy": [
                 "Keith Sellars & Stuart Reardon",
@@ -962,6 +978,7 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 155,
@@ -978,12 +995,12 @@
                 "Andy Waller",
                 "Andy Waller"
             ],
-            "totalHomeAgg": 125,
-            "totalHomeAggAgainst": 96,
+            "totalHomeAgg": 146,
+            "totalHomeAggAgainst": 107,
             "totalAwayAgg": 117,
             "totalAwayAggAgainst": 69,
-            "totalHomeScore": 26,
-            "totalHomeScoreAgainst": 21,
+            "totalHomeScore": 31,
+            "totalHomeScoreAgainst": 23,
             "totalAwayScore": 27,
             "totalAwayScoreAgainst": 13
         },
@@ -1054,11 +1071,11 @@
             "totalAwayScoreAgainst": 10
         },
         "andy waller": {
-            "totalScore": 79,
-            "totalAgg": 346,
-            "totalScoreAgainst": 53,
-            "totalAggAgainst": 259,
-            "homeWins": 8,
+            "totalScore": 84,
+            "totalAgg": 367,
+            "totalScoreAgainst": 54,
+            "totalAggAgainst": 266,
+            "homeWins": 9,
             "homeLosses": 3,
             "awayWins": 4,
             "awayLosses": 3,
@@ -1084,7 +1101,8 @@
                 "Tony Morris",
                 "Malcolm Hallas",
                 "Thomas Cuddy",
-                "Margaret McPhail"
+                "Margaret McPhail",
+                "Malcolm Collinson"
             ],
             "beatenBy": [
                 "Stuart Reardon & Keith Sellars",
@@ -1112,6 +1130,7 @@
                 "Saturday",
                 "Saturday",
                 "Saturday",
+                "Saturday",
                 "Saturday"
             ],
             "totalPairsAgg": 113,
@@ -1126,22 +1145,22 @@
                 "Andy Marshall",
                 "Andy Marshall"
             ],
-            "totalHomeAgg": 214,
-            "totalHomeAggAgainst": 151,
+            "totalHomeAgg": 235,
+            "totalHomeAggAgainst": 158,
             "totalAwayAgg": 132,
             "totalAwayAggAgainst": 108,
-            "totalHomeScore": 49,
-            "totalHomeScoreAgainst": 30,
+            "totalHomeScore": 54,
+            "totalHomeScoreAgainst": 31,
             "totalAwayScore": 30,
             "totalAwayScoreAgainst": 23
         },
         "kevin waller": {
-            "totalScore": 24,
-            "totalAgg": 102,
-            "totalScoreAgainst": 14,
-            "totalAggAgainst": 73,
+            "totalScore": 27,
+            "totalAgg": 118,
+            "totalScoreAgainst": 19,
+            "totalAggAgainst": 94,
             "homeWins": 1,
-            "homeLosses": 1,
+            "homeLosses": 2,
             "awayWins": 3,
             "awayLosses": 0,
             "pairWins": 0,
@@ -1154,10 +1173,12 @@
                 "Dawn Peters"
             ],
             "beatenBy": [
-                "Andrew Sykes"
+                "Andrew Sykes",
+                "Jackie Cross"
             ],
             "dayPlayed": [
                 "Thursday",
+                "Saturday",
                 "Saturday",
                 "Saturday",
                 "Saturday",
@@ -1167,12 +1188,12 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 39,
-            "totalHomeAggAgainst": 34,
+            "totalHomeAgg": 55,
+            "totalHomeAggAgainst": 55,
             "totalAwayAgg": 63,
             "totalAwayAggAgainst": 39,
-            "totalHomeScore": 9,
-            "totalHomeScoreAgainst": 7,
+            "totalHomeScore": 12,
+            "totalHomeScoreAgainst": 12,
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 7
         }

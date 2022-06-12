@@ -72,6 +72,7 @@ function Players(props) {
     }
 
     // TODO handle plurals
+    {/* TODO need to handle cup games on neutral greens? */}
     return (
         <div>
             < ListGroup.Item key={index}>
