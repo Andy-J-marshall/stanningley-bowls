@@ -26,7 +26,11 @@
                 "Tuesday",
                 "Tuesday",
                 "Tuesday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "duncan mcphail": {
             "totalScore": 24,
@@ -55,7 +59,11 @@
                 "Tuesday",
                 "Tuesday",
                 "Tuesday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "stewart watson": {
             "totalScore": 29,
@@ -86,7 +94,11 @@
                 "Tuesday",
                 "Tuesday",
                 "Thursday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "dave hudson": {
             "totalScore": 12,
@@ -113,7 +125,11 @@
                 "Thursday",
                 "Thursday",
                 "Thursday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "donald shaw": {
             "totalScore": 54,
@@ -156,7 +172,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "alison woodfine": {
             "totalScore": 42,
@@ -197,7 +217,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "joey broadbent": {
             "totalScore": 15,
@@ -221,7 +245,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "neil porter": {
             "totalScore": 30,
@@ -251,7 +279,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "jack roberts": {
             "totalScore": 1,
@@ -273,7 +305,11 @@
             "dayPlayed": [
                 "Thursday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "jeff allman": {
             "totalScore": 37,
@@ -313,6 +349,13 @@
                 "Thursday",
                 "Saturday",
                 "Saturday"
+            ],
+            "totalPairsAgg": 27,
+            "totalPairsAggAgainst": 42,
+            "winningPairsPartners": [],
+            "losingPairsPartners": [
+                "Shirley Allman",
+                "Shirley Allman"
             ]
         },
         "shirley allman": {
@@ -345,6 +388,13 @@
                 "Thursday",
                 "Saturday",
                 "Saturday"
+            ],
+            "totalPairsAgg": 27,
+            "totalPairsAggAgainst": 42,
+            "winningPairsPartners": [],
+            "losingPairsPartners": [
+                "Jeff Allman",
+                "Jeff Allman"
             ]
         },
         "john armitage": {
@@ -375,7 +425,11 @@
                 "Tuesday",
                 "Tuesday",
                 "Thursday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "mario biancardo": {
             "totalScore": 100,
@@ -438,7 +492,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "shirley biancardo": {
             "totalScore": 98,
@@ -501,7 +559,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "paul bowes": {
             "totalScore": 87,
@@ -565,6 +627,18 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
+            ],
+            "totalPairsAgg": 118,
+            "totalPairsAggAgainst": 90,
+            "winningPairsPartners": [
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell",
+                "Alyssa Randell"
+            ],
+            "losingPairsPartners": [
+                "Alyssa Randell",
+                "Alyssa Randell"
             ]
         },
         "clifford brogie": {
@@ -602,7 +676,11 @@
                 "Thursday",
                 "Thursday",
                 "Thursday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "craig clarkson": {
             "totalScore": 20,
@@ -631,7 +709,11 @@
                 "Monday",
                 "Monday",
                 "Monday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "steve gardner": {
             "totalScore": 75,
@@ -679,7 +761,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         },
         "andy marshall": {
             "totalScore": 53,
@@ -733,6 +819,20 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
+            ],
+            "totalPairsAgg": 155,
+            "totalPairsAggAgainst": 87,
+            "winningPairsPartners": [
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Andy Waller",
+                "Alyssa Randell",
+                "Alyssa Randell"
+            ],
+            "losingPairsPartners": [
+                "Andy Waller",
+                "Andy Waller"
             ]
         },
         "alyssa randell": {
@@ -777,6 +877,20 @@
                 "Monday",
                 "Monday",
                 "Monday"
+            ],
+            "totalPairsAgg": 160,
+            "totalPairsAggAgainst": 107,
+            "winningPairsPartners": [
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Paul Bowes",
+                "Andy Marshall",
+                "Andy Marshall"
+            ],
+            "losingPairsPartners": [
+                "Paul Bowes",
+                "Paul Bowes"
             ]
         },
         "andy waller": {
@@ -839,6 +953,18 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
+            ],
+            "totalPairsAgg": 113,
+            "totalPairsAggAgainst": 70,
+            "winningPairsPartners": [
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall",
+                "Andy Marshall"
+            ],
+            "losingPairsPartners": [
+                "Andy Marshall",
+                "Andy Marshall"
             ]
         },
         "kevin waller": {
@@ -868,7 +994,11 @@
                 "Saturday",
                 "Saturday",
                 "Saturday"
-            ]
+            ],
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "winningPairsPartners": [],
+            "losingPairsPartners": []
         }
     },
     "teamResults": [

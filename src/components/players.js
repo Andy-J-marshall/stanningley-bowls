@@ -8,9 +8,15 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
 
+    // "totalPairsAgg": 0,
+    // "totalPairsAggAgainst": 0,
+    // "winningPairsPartners": [],
+    // "losingPairsPartners": []
+
     const playerData = playersStats[player];
     let {
-        totalAgg, totalAggAgainst, totalScore, totalScoreAgainst, awayLosses, homeLosses, homeWins, awayWins, beatenBy, beatenOpponents, dayPlayed, pairLosses, pairWins, pairsPartners,
+        totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst, awayLosses, homeLosses, homeWins,
+        awayWins, winningPairsPartners, losingPairsPartners, beatenBy, beatenOpponents, dayPlayed, pairLosses, pairWins, pairsPartners,
     } = playerData;
     const average = (totalAgg - totalAggAgainst) / (awayWins + homeWins + homeLosses + awayLosses);
     const averageScore = (totalScore) / (awayWins + homeWins + homeLosses + awayLosses);
@@ -24,6 +30,8 @@ function Players(props) {
 
     const daysPlayedCount = calculateDaysPlayedCount(dayPlayed);
     const pairsPartnersCount = calculatePairsPartnersCount(pairsPartners)
+    const pairsPartnersCountWins = calculatePairsPartnersCount(winningPairsPartners)
+    const pairsPartnersCountLosses = calculatePairsPartnersCount(losingPairsPartners)
 
     function calculatePairsPartnersCount(allPairsPartners) {
         const uniquePartners = allPairsPartners.filter((partner, index) => {
@@ -79,7 +87,6 @@ function Players(props) {
                         {totalLosses > 0 && <p>{totalLosses} losses ({homeLosses} home, {awayLosses} away)</p>}
                         <p>{(totalWins / gamesPlayed * 100).toFixed(0)}% win percentage</p>
 
-                        {/* TODO add more detail on pairs partners wins/losses  */}
                         {pairsGames > 0 && <div>
                             <h5>Pairs</h5>
                             <p>{pairsGames} pairs games played</p>
@@ -87,7 +94,16 @@ function Players(props) {
                             <p>{pairLosses} pairs losses</p>
                             {pairsPartners.length > 0 && Object.keys(pairsPartnersCount).map(partner => {
                                 const key = Math.floor(Math.random() * 100000 + index);
-                                return <p key={key}>{pairsPartnersCount[partner].timesPaired} games with {partner}</p>
+                                return <p key={key}>{pairsPartnersCount[partner].timesPaired} games played with {partner}</p>
+                            })}
+                            {/* TODO pairs losses partners not working quite right e.g. Alyssa */}
+                            {pairWins > 0 && Object.keys(pairsPartnersCountWins).map(partner => {
+                                const key = Math.floor(Math.random() * 100000 + index);
+                                return <p key={key}>{pairsPartnersCountWins[partner].timesPaired} games won with {partner}</p>
+                            })}
+                            {pairLosses > 0 && Object.keys(pairsPartnersCountLosses).map(partner => {
+                                const key = Math.floor(Math.random() * 100000 + index);
+                                return <p key={key}>{pairsPartnersCountLosses[partner].timesPaired} games lost with {partner}</p>
                             })}
                         </div>}
 
