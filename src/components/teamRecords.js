@@ -16,23 +16,22 @@ function TeamRecords(props) {
     let lowestAggConcededPerGameTeam = [];
 
     statsArray.forEach(stats => {
-        // TODO add cupWins to this
         const {
-            day, awayWins, homeWins, awayLosses, homeLosses, homeDraws,
-            awayDraws, stanningleyAgg, stanningleyTotalPoints,
+            day, awayWins, homeWins, cupWins, awayLosses, homeLosses, cupLosses,
+            homeDraws, awayDraws, stanningleyAgg, stanningleyTotalPoints,
             opponentAgg, opponentTotalPoints,
         } = stats;
-        const wins = awayWins + homeWins;
-        const losses = awayLosses + homeLosses;
+        const wins = awayWins + homeWins + cupWins;
+        const losses = awayLosses + homeLosses + cupLosses;
         const draws = awayDraws + homeDraws;
         const drawPoints = draws > 0 ? draws * 0.5 : 0;
         const totalGames = wins + losses + homeDraws + awayDraws;
         const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
         const gamesPerMatch = day === 'Monday' ? 6 : 8;
-        const pointsPerGame = (stanningleyTotalPoints / gamesPerMatch) / totalGames;
+        const pointsPerGame = (stanningleyTotalPoints / gamesPerMatch) / (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
         const aggPerGame = (stanningleyAgg / gamesPerMatch) / totalGames;
-        const pointsConcededPerGame = (opponentTotalPoints / gamesPerMatch) / totalGames;
+        const pointsConcededPerGame = (opponentTotalPoints / gamesPerMatch) / (totalGames - cupLosses - cupWins);
         const aggConcededPerGame = (opponentAgg / gamesPerMatch) / totalGames;
 
         if (aggPerGame >= bestTeamAggPerGame) {

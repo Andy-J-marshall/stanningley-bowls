@@ -17,4 +17,4 @@ Run the following:
 
 <!-- TODO add script into this repo once complete? -->
 <!-- TODO create cypress scripts to get the data? -->
-<!-- TODO update readme -->
+<!-- TODO update readme (and scripts readme) -->

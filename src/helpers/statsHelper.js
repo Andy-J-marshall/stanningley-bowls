@@ -1,8 +1,10 @@
 export function combineTeamStats(statsArray) {
     let combinedAwayWins = 0;
     let combinedHomeWins = 0;
+    let combinedCupWins = 0;
     let combinedAwayLosses = 0;
     let combinedHomeLosses = 0;
+    let combinedCupLosses = 0;
     let combinedHomeDraws = 0;
     let combinedAwayDraws = 0;
     let combinedStanningleyAgg = 0;
@@ -15,8 +17,8 @@ export function combineTeamStats(statsArray) {
 
     statsArray.forEach(stats => {
         const {
-            awayWins, homeWins, awayLosses, homeLosses, homeDraws,
-            awayDraws, stanningleyAgg, stanningleyTotalPoints,
+            awayWins, homeWins, cupWins, awayLosses, homeLosses, cupLosses,
+            homeDraws, awayDraws, stanningleyAgg, stanningleyTotalPoints,
             opponentAgg, opponentTotalPoints, beaten, beatenBy, drawnWith,
         } = stats;
         combinedAwayWins += awayWins;
@@ -25,6 +27,8 @@ export function combineTeamStats(statsArray) {
         combinedHomeLosses += homeLosses;
         combinedHomeDraws += homeDraws;
         combinedAwayDraws += awayDraws;
+        combinedCupWins += cupWins;
+        combinedCupLosses += cupLosses;
         combinedStanningleyAgg += stanningleyAgg;
         combinedStanningleyTotalPoints += stanningleyTotalPoints;
         combinedOpponentAgg += opponentAgg;
@@ -35,15 +39,17 @@ export function combineTeamStats(statsArray) {
     });
 
     const totalDraws = combinedAwayDraws + combinedHomeDraws;
-    const totalWins = combinedAwayWins + combinedHomeWins;
-    const totalLosses = combinedAwayLosses + combinedHomeLosses;
+    const totalWins = combinedAwayWins + combinedHomeWins + combinedCupWins;
+    const totalLosses = combinedAwayLosses + combinedHomeLosses + combinedCupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
 
     return {
         combinedAwayWins,
         combinedHomeWins,
+        combinedCupWins,
         combinedAwayLosses,
         combinedHomeLosses,
+        combinedCupLosses,
         combinedHomeDraws,
         combinedAwayDraws,
         combinedStanningleyAgg,

@@ -5,13 +5,14 @@ import { combineTeamStats } from '../helpers/statsHelper';
 function CombinedTeamStats(props) {
     const stats = props.stats;
 
-    // TODO add cupWins/losses to this
     const combinedStats = combineTeamStats(stats);
     const {
         combinedAwayWins,
         combinedHomeWins,
         combinedAwayLosses,
         combinedHomeLosses,
+        combinedCupWins,
+        combinedCupLosses,
         combinedHomeDraws,
         combinedAwayDraws,
         combinedStanningleyAgg,
@@ -33,9 +34,9 @@ function CombinedTeamStats(props) {
             <div id='CombinedTeamWinLosses'>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>
-                {totalWins > 0 && <p>({combinedHomeWins} home, {combinedAwayWins} away)</p>}
+                {totalWins > 0 && <p>({combinedHomeWins} home, {combinedAwayWins} away, {combinedCupWins} cup)</p>}
                 <p>Total losses = {totalLosses}</p>
-                {totalLosses > 0 && <p>({combinedHomeLosses} home, {combinedAwayLosses} away)</p>}
+                {totalLosses > 0 && <p>({combinedHomeLosses} home, {combinedAwayLosses} away, {combinedCupLosses} cup)</p>}
                 {totalDraws > 0 && <p>Total draws = {totalDraws}</p>}
                 {totalDraws > 0 && <p>({combinedHomeDraws} home, {combinedAwayDraws} away)</p>}
             </div>

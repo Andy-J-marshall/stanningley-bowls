@@ -9,15 +9,14 @@ function Players(props) {
     const name = props.name;
 
     const playerData = playersStats[player];
-    // TODO add cupWins/losses to this
     let {
         totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst,
-        awayLosses, homeLosses, homeWins, awayWins, winningPairsPartners, losingPairsPartners, beatenBy,
+        awayLosses, homeLosses, cupLosses, homeWins, awayWins, cupWins, winningPairsPartners, losingPairsPartners, beatenBy,
         beatenOpponents, dayPlayed, pairLosses, pairWins, pairsPartners, totalHomeAgg, totalHomeAggAgainst,
         totalAwayAgg, totalAwayAggAgainst, totalHomeScore, totalHomeScoreAgainst, totalAwayScore, totalAwayScoreAgainst,
     } = playerData;
-    const totalLosses = awayLosses + homeLosses;
-    const totalWins = awayWins + homeWins;
+    const totalLosses = awayLosses + homeLosses + cupLosses;
+    const totalWins = awayWins + homeWins + cupWins;
     const gamesPlayed = totalLosses + totalWins;
     const homeGamesPlayed = homeWins + homeLosses;
     const awayGamesPlayed = awayWins + awayLosses;
@@ -73,7 +72,7 @@ function Players(props) {
     }
 
     // TODO handle plurals
-    {/* TODO need to handle cup games on neutral greens? */}
+    // TODO any more cup stats?
     return (
         <div>
             < ListGroup.Item key={index}>
@@ -90,8 +89,8 @@ function Players(props) {
                         {pairsGames > 0 && <p>{pairsGames} pairs games played</p>}
 
                         <h4>Results</h4>
-                        {totalWins > 0 && <p>{totalWins} wins ({homeWins} home, {awayWins} away)</p>}
-                        {totalLosses > 0 && <p>{totalLosses} losses ({homeLosses} home, {awayLosses} away)</p>}
+                        {totalWins > 0 && <p>{totalWins} wins ({homeWins} home, {awayWins} away, {cupWins} cup)</p>}
+                        {totalLosses > 0 && <p>{totalLosses} losses ({homeLosses} home, {awayLosses} away, {cupLosses} cup)</p>}
                         <p>{(totalWins / gamesPlayed * 100).toFixed(0)}% win percentage</p>
 
                         {pairsGames > 0 && <div>
