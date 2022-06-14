@@ -38,7 +38,9 @@
             "totalHomeScore": 10,
             "totalHomeScoreAgainst": 4,
             "totalAwayScore": 15,
-            "totalAwayScoreAgainst": 5
+            "totalAwayScoreAgainst": 5,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "duncan mcphail": {
             "totalScore": 24,
@@ -79,7 +81,9 @@
             "totalHomeScore": 10,
             "totalHomeScoreAgainst": 4,
             "totalAwayScore": 14,
-            "totalAwayScoreAgainst": 7
+            "totalAwayScoreAgainst": 7,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "stewart watson": {
             "totalScore": 29,
@@ -122,7 +126,9 @@
             "totalHomeScore": 9,
             "totalHomeScoreAgainst": 8,
             "totalAwayScore": 20,
-            "totalAwayScoreAgainst": 8
+            "totalAwayScoreAgainst": 8,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "dave hudson": {
             "totalScore": 12,
@@ -161,14 +167,16 @@
             "totalHomeScore": 6,
             "totalHomeScoreAgainst": 7,
             "totalAwayScore": 6,
-            "totalAwayScoreAgainst": 7
+            "totalAwayScoreAgainst": 7,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "donald shaw": {
             "totalScore": 59,
             "totalAgg": 259,
             "totalScoreAgainst": 32,
             "totalAggAgainst": 164,
-            "homeWins": 6,
+            "homeWins": 5,
             "homeLosses": 1,
             "awayWins": 4,
             "awayLosses": 2,
@@ -211,14 +219,16 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 146,
-            "totalHomeAggAgainst": 73,
+            "totalHomeAgg": 125,
+            "totalHomeAggAgainst": 55,
             "totalAwayAgg": 113,
             "totalAwayAggAgainst": 91,
-            "totalHomeScore": 34,
-            "totalHomeScoreAgainst": 14,
+            "totalHomeScore": 29,
+            "totalHomeScoreAgainst": 10,
             "totalAwayScore": 25,
-            "totalAwayScoreAgainst": 18
+            "totalAwayScoreAgainst": 18,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "alison woodfine": {
             "totalScore": 42,
@@ -228,7 +238,7 @@
             "homeWins": 3,
             "homeLosses": 4,
             "awayWins": 3,
-            "awayLosses": 1,
+            "awayLosses": 2,
             "pairWins": 0,
             "pairLosses": 0,
             "pairsPartners": [],
@@ -266,19 +276,21 @@
             "losingPairsPartners": [],
             "totalHomeAgg": 113,
             "totalHomeAggAgainst": 112,
-            "totalAwayAgg": 79,
-            "totalAwayAggAgainst": 55,
+            "totalAwayAgg": 83,
+            "totalAwayAggAgainst": 76,
             "totalHomeScore": 24,
             "totalHomeScoreAgainst": 24,
             "totalAwayScore": 18,
-            "totalAwayScoreAgainst": 11
+            "totalAwayScoreAgainst": 16,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "joey broadbent": {
             "totalScore": 20,
             "totalAgg": 84,
             "totalScoreAgainst": 6,
             "totalAggAgainst": 37,
-            "homeWins": 4,
+            "homeWins": 3,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 0,
@@ -302,21 +314,23 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 84,
-            "totalHomeAggAgainst": 37,
+            "totalHomeAgg": 63,
+            "totalHomeAggAgainst": 23,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
-            "totalHomeScore": 20,
-            "totalHomeScoreAgainst": 6,
+            "totalHomeScore": 15,
+            "totalHomeScoreAgainst": 4,
             "totalAwayScore": 0,
-            "totalAwayScoreAgainst": 0
+            "totalAwayScoreAgainst": 0,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "neil porter": {
             "totalScore": 35,
             "totalAgg": 147,
             "totalScoreAgainst": 16,
             "totalAggAgainst": 87,
-            "homeWins": 4,
+            "homeWins": 3,
             "homeLosses": 0,
             "awayWins": 3,
             "awayLosses": 0,
@@ -346,14 +360,16 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 84,
-            "totalHomeAggAgainst": 53,
+            "totalHomeAgg": 63,
+            "totalHomeAggAgainst": 36,
             "totalAwayAgg": 63,
             "totalAwayAggAgainst": 34,
-            "totalHomeScore": 20,
-            "totalHomeScoreAgainst": 9,
+            "totalHomeScore": 15,
+            "totalHomeScoreAgainst": 6,
             "totalAwayScore": 15,
-            "totalAwayScoreAgainst": 7
+            "totalAwayScoreAgainst": 7,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "jack roberts": {
             "totalScore": 1,
@@ -387,22 +403,25 @@
             "totalHomeScore": 1,
             "totalHomeScoreAgainst": 5,
             "totalAwayScore": 0,
-            "totalAwayScoreAgainst": 5
+            "totalAwayScoreAgainst": 5,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "jeff allman": {
-            "totalScore": 37,
-            "totalAgg": 169,
-            "totalScoreAgainst": 31,
-            "totalAggAgainst": 145,
+            "totalScore": 38,
+            "totalAgg": 177,
+            "totalScoreAgainst": 36,
+            "totalAggAgainst": 166,
             "homeWins": 3,
-            "homeLosses": 2,
+            "homeLosses": 3,
             "awayWins": 3,
             "awayLosses": 1,
             "pairWins": 0,
-            "pairLosses": 2,
+            "pairLosses": 3,
             "pairsPartners": [
                 "Shirley Allman",
-                "Shirley Allman"
+                "Shirley Allman",
+                "Bernie Miller"
             ],
             "beatenOpponents": [
                 "David Brooke",
@@ -414,10 +433,12 @@
             ],
             "beatenBy": [
                 "Gary Dennison & Nicola Pearson",
-                "Lavan Ron & Keith Skelton",
+                "Ron Lavan & Keith Skelton",
+                "G Scholes & T Newsome",
                 "Graham Goodall"
             ],
             "dayPlayed": [
+                "Monday",
                 "Monday",
                 "Monday",
                 "Monday",
@@ -428,21 +449,24 @@
                 "Saturday",
                 "Saturday"
             ],
-            "totalPairsAgg": 27,
-            "totalPairsAggAgainst": 42,
+            "totalPairsAgg": 35,
+            "totalPairsAggAgainst": 63,
             "winningPairsPartners": [],
             "losingPairsPartners": [
                 "Shirley Allman",
-                "Shirley Allman"
+                "Shirley Allman",
+                "Bernie Miller"
             ],
-            "totalHomeAgg": 92,
-            "totalHomeAggAgainst": 86,
+            "totalHomeAgg": 100,
+            "totalHomeAggAgainst": 107,
             "totalAwayAgg": 77,
             "totalAwayAggAgainst": 59,
-            "totalHomeScore": 20,
-            "totalHomeScoreAgainst": 19,
+            "totalHomeScore": 21,
+            "totalHomeScoreAgainst": 24,
             "totalAwayScore": 17,
-            "totalAwayScoreAgainst": 12
+            "totalAwayScoreAgainst": 12,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "shirley allman": {
             "totalScore": 13,
@@ -464,7 +488,7 @@
             ],
             "beatenBy": [
                 "Nicola Pearson & Gary Dennison",
-                "Keith Skelton & Lavan Ron",
+                "Keith Skelton & Ron Lavan",
                 "Lawrie Bairstow",
                 "Neil Schofield"
             ],
@@ -489,7 +513,9 @@
             "totalHomeScore": 6,
             "totalHomeScoreAgainst": 15,
             "totalAwayScore": 7,
-            "totalAwayScoreAgainst": 7
+            "totalAwayScoreAgainst": 7,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "john armitage": {
             "totalScore": 30,
@@ -531,16 +557,18 @@
             "totalHomeScore": 15,
             "totalHomeScoreAgainst": 8,
             "totalAwayScore": 15,
-            "totalAwayScoreAgainst": 6
+            "totalAwayScoreAgainst": 6,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "mario biancardo": {
-            "totalScore": 105,
-            "totalAgg": 457,
-            "totalScoreAgainst": 46,
-            "totalAggAgainst": 246,
-            "homeWins": 9,
+            "totalScore": 110,
+            "totalAgg": 478,
+            "totalScoreAgainst": 50,
+            "totalAggAgainst": 266,
+            "homeWins": 10,
             "homeLosses": 1,
-            "awayWins": 10,
+            "awayWins": 9,
             "awayLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
@@ -553,6 +581,7 @@
                 "Ian Baker",
                 "Darren Robinson",
                 "Ian Smith",
+                "P Hardy",
                 "David Lyons",
                 "Keith Worrall",
                 "Brian Thompson",
@@ -581,6 +610,7 @@
                 "Monday",
                 "Monday",
                 "Monday",
+                "Monday",
                 "Tuesday",
                 "Tuesday",
                 "Tuesday",
@@ -601,23 +631,25 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 207,
-            "totalHomeAggAgainst": 101,
-            "totalAwayAgg": 250,
-            "totalAwayAggAgainst": 145,
-            "totalHomeScore": 49,
-            "totalHomeScoreAgainst": 20,
-            "totalAwayScore": 56,
-            "totalAwayScoreAgainst": 26
+            "totalHomeAgg": 228,
+            "totalHomeAggAgainst": 121,
+            "totalAwayAgg": 229,
+            "totalAwayAggAgainst": 137,
+            "totalHomeScore": 54,
+            "totalHomeScoreAgainst": 24,
+            "totalAwayScore": 51,
+            "totalAwayScoreAgainst": 25,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "shirley biancardo": {
-            "totalScore": 103,
-            "totalAgg": 452,
-            "totalScoreAgainst": 56,
-            "totalAggAgainst": 289,
-            "homeWins": 7,
+            "totalScore": 108,
+            "totalAgg": 473,
+            "totalScoreAgainst": 58,
+            "totalAggAgainst": 303,
+            "homeWins": 8,
             "homeLosses": 3,
-            "awayWins": 11,
+            "awayWins": 10,
             "awayLosses": 2,
             "pairWins": 0,
             "pairLosses": 0,
@@ -629,6 +661,7 @@
                 "Dawn Peters",
                 "Danny Dawson",
                 "Paddy Glover",
+                "G Hodder",
                 "Kath Hey",
                 "Marion Worrall",
                 "John Hainsworth",
@@ -658,6 +691,7 @@
                 "Monday",
                 "Monday",
                 "Monday",
+                "Monday",
                 "Tuesday",
                 "Tuesday",
                 "Tuesday",
@@ -678,21 +712,23 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 189,
-            "totalHomeAggAgainst": 142,
-            "totalAwayAgg": 263,
-            "totalAwayAggAgainst": 147,
-            "totalHomeScore": 42,
-            "totalHomeScoreAgainst": 29,
-            "totalAwayScore": 61,
-            "totalAwayScoreAgainst": 27
+            "totalHomeAgg": 210,
+            "totalHomeAggAgainst": 156,
+            "totalAwayAgg": 242,
+            "totalAwayAggAgainst": 138,
+            "totalHomeScore": 47,
+            "totalHomeScoreAgainst": 31,
+            "totalAwayScore": 56,
+            "totalAwayScoreAgainst": 26,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "paul bowes": {
             "totalScore": 92,
             "totalAgg": 399,
             "totalScoreAgainst": 40,
             "totalAggAgainst": 209,
-            "homeWins": 9,
+            "homeWins": 8,
             "homeLosses": 2,
             "awayWins": 7,
             "awayLosses": 2,
@@ -764,21 +800,23 @@
                 "Alyssa Randell",
                 "Alyssa Randell"
             ],
-            "totalHomeAgg": 217,
-            "totalHomeAggAgainst": 112,
+            "totalHomeAgg": 196,
+            "totalHomeAggAgainst": 102,
             "totalAwayAgg": 182,
             "totalAwayAggAgainst": 97,
-            "totalHomeScore": 50,
-            "totalHomeScoreAgainst": 22,
+            "totalHomeScore": 45,
+            "totalHomeScoreAgainst": 20,
             "totalAwayScore": 42,
-            "totalAwayScoreAgainst": 18
+            "totalAwayScoreAgainst": 18,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "clifford brogie": {
-            "totalScore": 30,
-            "totalAgg": 144,
-            "totalScoreAgainst": 34,
-            "totalAggAgainst": 154,
-            "homeWins": 1,
+            "totalScore": 35,
+            "totalAgg": 165,
+            "totalScoreAgainst": 38,
+            "totalAggAgainst": 172,
+            "homeWins": 2,
             "homeLosses": 3,
             "awayWins": 3,
             "awayLosses": 2,
@@ -788,6 +826,7 @@
             "beatenOpponents": [
                 "John King",
                 "Andrew Ash",
+                "Andy Johnson",
                 "Derek Howell",
                 "Josie M Burdon"
             ],
@@ -805,6 +844,7 @@
                 "Monday",
                 "Monday",
                 "Monday",
+                "Monday",
                 "Thursday",
                 "Thursday",
                 "Thursday"
@@ -813,21 +853,23 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 59,
-            "totalHomeAggAgainst": 71,
+            "totalHomeAgg": 80,
+            "totalHomeAggAgainst": 89,
             "totalAwayAgg": 85,
             "totalAwayAggAgainst": 83,
-            "totalHomeScore": 11,
-            "totalHomeScoreAgainst": 16,
+            "totalHomeScore": 16,
+            "totalHomeScoreAgainst": 20,
             "totalAwayScore": 19,
-            "totalAwayScoreAgainst": 18
+            "totalAwayScoreAgainst": 18,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "craig clarkson": {
-            "totalScore": 20,
-            "totalAgg": 88,
-            "totalScoreAgainst": 21,
-            "totalAggAgainst": 94,
-            "homeWins": 1,
+            "totalScore": 25,
+            "totalAgg": 109,
+            "totalScoreAgainst": 24,
+            "totalAggAgainst": 111,
+            "homeWins": 2,
             "homeLosses": 1,
             "awayWins": 1,
             "awayLosses": 2,
@@ -836,7 +878,8 @@
             "pairsPartners": [],
             "beatenOpponents": [
                 "Granville Stoyles",
-                "Angela Morley"
+                "Angela Morley",
+                "Barry Tobin"
             ],
             "beatenBy": [
                 "Ahmed Hassoun",
@@ -848,20 +891,23 @@
                 "Monday",
                 "Monday",
                 "Monday",
+                "Monday",
                 "Monday"
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 39,
-            "totalHomeAggAgainst": 41,
+            "totalHomeAgg": 60,
+            "totalHomeAggAgainst": 58,
             "totalAwayAgg": 49,
             "totalAwayAggAgainst": 53,
-            "totalHomeScore": 9,
-            "totalHomeScoreAgainst": 9,
+            "totalHomeScore": 14,
+            "totalHomeScoreAgainst": 12,
             "totalAwayScore": 11,
-            "totalAwayScoreAgainst": 12
+            "totalAwayScoreAgainst": 12,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "steve gardner": {
             "totalScore": 79,
@@ -869,7 +915,7 @@
             "totalScoreAgainst": 29,
             "totalAggAgainst": 162,
             "homeWins": 7,
-            "homeLosses": 1,
+            "homeLosses": 0,
             "awayWins": 8,
             "awayLosses": 0,
             "pairWins": 0,
@@ -917,26 +963,28 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 166,
-            "totalHomeAggAgainst": 86,
+            "totalHomeAgg": 147,
+            "totalHomeAggAgainst": 65,
             "totalAwayAgg": 168,
             "totalAwayAggAgainst": 76,
-            "totalHomeScore": 39,
-            "totalHomeScoreAgainst": 16,
+            "totalHomeScore": 35,
+            "totalHomeScoreAgainst": 11,
             "totalAwayScore": 40,
-            "totalAwayScoreAgainst": 13
+            "totalAwayScoreAgainst": 13,
+            "cupWins": 0,
+            "cupLosses": 1
         },
         "andy marshall": {
-            "totalScore": 58,
-            "totalAgg": 263,
-            "totalScoreAgainst": 36,
-            "totalAggAgainst": 176,
-            "homeWins": 4,
-            "homeLosses": 4,
+            "totalScore": 60,
+            "totalAgg": 276,
+            "totalScoreAgainst": 41,
+            "totalAggAgainst": 197,
+            "homeWins": 3,
+            "homeLosses": 5,
             "awayWins": 5,
             "awayLosses": 1,
             "pairWins": 6,
-            "pairLosses": 2,
+            "pairLosses": 3,
             "pairsPartners": [
                 "Andy Waller",
                 "Andy Waller",
@@ -944,6 +992,7 @@
                 "Andy Waller",
                 "Andy Waller",
                 "Andy Waller",
+                "Alyssa Randell",
                 "Alyssa Randell",
                 "Alyssa Randell"
             ],
@@ -961,11 +1010,13 @@
             "beatenBy": [
                 "Keith Sellars & Stuart Reardon",
                 "Peter Simmons & James Wright - Green",
+                "S Cahill & Helen Johnson",
                 "Gordon Monk",
                 "Paul Shackleton",
                 "Terry Blakeley"
             ],
             "dayPlayed": [
+                "Monday",
                 "Monday",
                 "Monday",
                 "Monday",
@@ -981,8 +1032,8 @@
                 "Saturday",
                 "Saturday"
             ],
-            "totalPairsAgg": 155,
-            "totalPairsAggAgainst": 87,
+            "totalPairsAgg": 168,
+            "totalPairsAggAgainst": 108,
             "winningPairsPartners": [
                 "Andy Waller",
                 "Andy Waller",
@@ -993,28 +1044,31 @@
             ],
             "losingPairsPartners": [
                 "Andy Waller",
-                "Andy Waller"
+                "Andy Waller",
+                "Alyssa Randell"
             ],
-            "totalHomeAgg": 146,
-            "totalHomeAggAgainst": 107,
+            "totalHomeAgg": 138,
+            "totalHomeAggAgainst": 117,
             "totalAwayAgg": 117,
             "totalAwayAggAgainst": 69,
-            "totalHomeScore": 31,
-            "totalHomeScoreAgainst": 23,
+            "totalHomeScore": 28,
+            "totalHomeScoreAgainst": 26,
             "totalAwayScore": 27,
-            "totalAwayScoreAgainst": 13
+            "totalAwayScoreAgainst": 13,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "alyssa randell": {
-            "totalScore": 36,
-            "totalAgg": 160,
-            "totalScoreAgainst": 21,
-            "totalAggAgainst": 107,
+            "totalScore": 38,
+            "totalAgg": 173,
+            "totalScoreAgainst": 26,
+            "totalAggAgainst": 128,
             "homeWins": 3,
-            "homeLosses": 1,
+            "homeLosses": 2,
             "awayWins": 3,
             "awayLosses": 1,
             "pairWins": 6,
-            "pairLosses": 2,
+            "pairLosses": 3,
             "pairsPartners": [
                 "Paul Bowes",
                 "Paul Bowes",
@@ -1022,6 +1076,7 @@
                 "Paul Bowes",
                 "Paul Bowes",
                 "Paul Bowes",
+                "Andy Marshall",
                 "Andy Marshall",
                 "Andy Marshall"
             ],
@@ -1035,7 +1090,8 @@
             ],
             "beatenBy": [
                 "Chris Walsh & Malcolm Colinson",
-                "Kevin Smales & Harvey Lockwood"
+                "Kevin Smales & Harvey Lockwood",
+                "Helen Johnson & S Cahill"
             ],
             "dayPlayed": [
                 "Monday",
@@ -1045,10 +1101,11 @@
                 "Monday",
                 "Monday",
                 "Monday",
+                "Monday",
                 "Monday"
             ],
-            "totalPairsAgg": 160,
-            "totalPairsAggAgainst": 107,
+            "totalPairsAgg": 173,
+            "totalPairsAggAgainst": 128,
             "winningPairsPartners": [
                 "Paul Bowes",
                 "Paul Bowes",
@@ -1059,26 +1116,29 @@
             ],
             "losingPairsPartners": [
                 "Paul Bowes",
-                "Paul Bowes"
+                "Paul Bowes",
+                "Andy Marshall"
             ],
-            "totalHomeAgg": 80,
-            "totalHomeAggAgainst": 54,
+            "totalHomeAgg": 93,
+            "totalHomeAggAgainst": 75,
             "totalAwayAgg": 80,
             "totalAwayAggAgainst": 53,
-            "totalHomeScore": 18,
-            "totalHomeScoreAgainst": 11,
+            "totalHomeScore": 20,
+            "totalHomeScoreAgainst": 16,
             "totalAwayScore": 18,
-            "totalAwayScoreAgainst": 10
+            "totalAwayScoreAgainst": 10,
+            "cupWins": 0,
+            "cupLosses": 0
         },
         "andy waller": {
             "totalScore": 84,
             "totalAgg": 367,
             "totalScoreAgainst": 54,
             "totalAggAgainst": 266,
-            "homeWins": 9,
+            "homeWins": 8,
             "homeLosses": 3,
             "awayWins": 4,
-            "awayLosses": 3,
+            "awayLosses": 4,
             "pairWins": 4,
             "pairLosses": 2,
             "pairsPartners": [
@@ -1145,14 +1205,16 @@
                 "Andy Marshall",
                 "Andy Marshall"
             ],
-            "totalHomeAgg": 235,
-            "totalHomeAggAgainst": 158,
-            "totalAwayAgg": 132,
-            "totalAwayAggAgainst": 108,
-            "totalHomeScore": 54,
-            "totalHomeScoreAgainst": 31,
-            "totalAwayScore": 30,
-            "totalAwayScoreAgainst": 23
+            "totalHomeAgg": 214,
+            "totalHomeAggAgainst": 151,
+            "totalAwayAgg": 143,
+            "totalAwayAggAgainst": 129,
+            "totalHomeScore": 49,
+            "totalHomeScoreAgainst": 30,
+            "totalAwayScore": 32,
+            "totalAwayScoreAgainst": 28,
+            "cupWins": 1,
+            "cupLosses": 0
         },
         "kevin waller": {
             "totalScore": 27,
@@ -1160,7 +1222,7 @@
             "totalScoreAgainst": 19,
             "totalAggAgainst": 94,
             "homeWins": 1,
-            "homeLosses": 2,
+            "homeLosses": 1,
             "awayWins": 3,
             "awayLosses": 0,
             "pairWins": 0,
@@ -1188,14 +1250,54 @@
             "totalPairsAggAgainst": 0,
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "totalHomeAgg": 55,
-            "totalHomeAggAgainst": 55,
+            "totalHomeAgg": 39,
+            "totalHomeAggAgainst": 34,
             "totalAwayAgg": 63,
             "totalAwayAggAgainst": 39,
-            "totalHomeScore": 12,
-            "totalHomeScoreAgainst": 12,
+            "totalHomeScore": 9,
+            "totalHomeScoreAgainst": 7,
             "totalAwayScore": 15,
-            "totalAwayScoreAgainst": 7
+            "totalAwayScoreAgainst": 7,
+            "cupWins": 0,
+            "cupLosses": 1
+        },
+        "bernie miller": {
+            "totalScore": 1,
+            "totalAgg": 8,
+            "totalScoreAgainst": 5,
+            "totalAggAgainst": 21,
+            "homeWins": 0,
+            "homeLosses": 1,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 1,
+            "pairsPartners": [
+                "Jeff Allman"
+            ],
+            "beatenOpponents": [],
+            "beatenBy": [
+                "T Newsome & G Scholes"
+            ],
+            "dayPlayed": [
+                "Monday"
+            ],
+            "totalPairsAgg": 8,
+            "totalPairsAggAgainst": 21,
+            "winningPairsPartners": [],
+            "losingPairsPartners": [
+                "Jeff Allman"
+            ],
+            "totalHomeAgg": 8,
+            "totalHomeAggAgainst": 21,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalHomeScore": 1,
+            "totalHomeScoreAgainst": 5,
+            "totalAwayScore": 0,
+            "totalAwayScoreAgainst": 0,
+            "cupWins": 0,
+            "cupLosses": 0
         }
     },
     "teamResults": [
@@ -1205,25 +1307,29 @@
             "homeWins": 3,
             "awayLosses": 1,
             "homeLosses": 1,
-            "homeDraws": 0,
+            "homeDraws": 1,
             "awayDraws": 0,
-            "stanningleyAgg": 894,
-            "stanningleyTotalPoints": 199,
-            "opponentAgg": 647,
-            "opponentTotalPoints": 134,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "stanningleyAgg": 999,
+            "stanningleyTotalPoints": 222,
+            "opponentAgg": 758,
+            "opponentTotalPoints": 157,
             "beaten": [
-                "Sth Lds Cons",
-                "Gildersome",
-                "Meanwood B",
-                "Western Flatts",
-                "New Wortley",
-                "Harehills"
+                "Sth Lds Cons (home)",
+                "Gildersome (away)",
+                "Meanwood B (home)",
+                "Western Flatts (away)",
+                "New Wortley (home)",
+                "Harehills (away)"
             ],
             "beatenBy": [
-                "Rothwell BC",
-                "New Farnley B"
+                "Rothwell BC (home)",
+                "New Farnley B (away)"
             ],
-            "drawnWith": []
+            "drawnWith": [
+                "Whitkirk A (home)"
+            ]
         },
         {
             "day": "Tuesday",
@@ -1233,16 +1339,18 @@
             "homeLosses": 0,
             "homeDraws": 0,
             "awayDraws": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
             "stanningleyAgg": 808,
             "stanningleyTotalPoints": 188,
             "opponentAgg": 511,
             "opponentTotalPoints": 99,
             "beaten": [
-                "Horsforth Woodside.",
-                "New Armley",
-                "Harehills Park A",
-                "West Royd Park",
-                "Western Flatts"
+                "Horsforth Woodside. (away)",
+                "New Armley (away)",
+                "Harehills Park A (home)",
+                "West Royd Park (home)",
+                "Western Flatts (away)"
             ],
             "beatenBy": [],
             "drawnWith": []
@@ -1255,17 +1363,19 @@
             "homeLosses": 1,
             "homeDraws": 0,
             "awayDraws": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
             "stanningleyAgg": 565,
             "stanningleyTotalPoints": 126,
             "opponentAgg": 455,
             "opponentTotalPoints": 95,
             "beaten": [
-                "Middleton Community",
-                "New Armley"
+                "Middleton Community (home)",
+                "New Armley (away)"
             ],
             "beatenBy": [
-                "Churwell Pk",
-                "Pudsey Park A"
+                "Churwell Pk (home)",
+                "Pudsey Park A (away)"
             ],
             "drawnWith": []
         },
@@ -1277,18 +1387,21 @@
             "homeLosses": 0,
             "homeDraws": 0,
             "awayDraws": 0,
-            "stanningleyAgg": 1094,
+            "cupWins": 1,
+            "cupLosses": 0,
+            "stanningleyAgg": 1255,
             "stanningleyTotalPoints": 253,
-            "opponentAgg": 688,
+            "opponentAgg": 807,
             "opponentTotalPoints": 133,
             "beaten": [
-                "Sth Leeds Cons B",
-                "Gildersome B",
-                "Cranmore",
-                "Middleton Comm",
-                "New Wortley",
-                "Western Flatts",
-                "Scatcherd Park B"
+                "Sth Leeds Cons B (away)",
+                "Gildersome B (home)",
+                "Cranmore (away)",
+                "Middleton Comm (home)",
+                "New Wortley (home)",
+                "Western Flatts (home)",
+                "Scatcherd Park B (away)",
+                "Sth Leeds Cons B (cup)"
             ],
             "beatenBy": [],
             "drawnWith": []
