@@ -9,6 +9,7 @@ function Players(props) {
     const name = props.name;
 
     const playerData = playersStats[player];
+    // TODO add cupWins/losses to this
     let {
         totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst,
         awayLosses, homeLosses, homeWins, awayWins, winningPairsPartners, losingPairsPartners, beatenBy,

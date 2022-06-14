@@ -5,6 +5,7 @@ import { combineTeamStats } from '../helpers/statsHelper';
 function CombinedTeamStats(props) {
     const stats = props.stats;
 
+    // TODO add cupWins/losses to this
     const combinedStats = combineTeamStats(stats);
     const {
         combinedAwayWins,

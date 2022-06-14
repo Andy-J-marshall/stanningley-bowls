@@ -16,6 +16,7 @@ function TeamRecords(props) {
     let lowestAggConcededPerGameTeam = [];
 
     statsArray.forEach(stats => {
+        // TODO add cupWins to this
         const {
             day, awayWins, homeWins, awayLosses, homeLosses, homeDraws,
             awayDraws, stanningleyAgg, stanningleyTotalPoints,

@@ -5,17 +5,19 @@ function IndividualTeamStats(props) {
     const day = props.day;
     const stats = props.stats;
 
+    // TODO add cupWins/losses to this
     const {
         awayWins, homeWins, awayLosses, homeLosses, homeDraws,
         awayDraws, stanningleyAgg, stanningleyTotalPoints,
         opponentAgg, opponentTotalPoints, beaten, beatenBy, drawnWith,
     } = stats;
-
+    
     const totalDraws = awayDraws + homeDraws;
     const totalWins = awayWins + homeWins;
     const totalLosses = awayLosses + homeLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
-
+    
+    {/* TODO need to handle cup games on neutral greens? */}
     return (
         <div id={day + 'TeamResults'}>
             <h3>Stats for {day}</h3>
