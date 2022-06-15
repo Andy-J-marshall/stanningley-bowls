@@ -10,9 +10,9 @@ function Players(props) {
 
     const playerData = playersStats[player];
     let {
-        totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst,
-        awayLosses, homeLosses, cupLosses, homeWins, awayWins, cupWins, winningPairsPartners, losingPairsPartners, beatenBy,
-        beatenOpponents, dayPlayed, pairLosses, pairWins, pairsPartners, totalHomeAgg, totalHomeAggAgainst,
+        totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst, awayLosses, homeLosses,
+        cupLosses, homeWins, awayWins, cupWins, winningPairsPartners, losingPairsPartners, beatenBy, beatenByTeam,
+        beatenOpponents, beatenTeam, dayPlayed, pairLosses, pairWins, pairsPartners, totalHomeAgg, totalHomeAggAgainst,
         totalAwayAgg, totalAwayAggAgainst, totalHomeScore, totalHomeScoreAgainst, totalAwayScore, totalAwayScoreAgainst,
     } = playerData;
     const totalLosses = awayLosses + homeLosses + cupLosses;
@@ -31,6 +31,8 @@ function Players(props) {
     const awayAverageScoreAgainst = (totalAwayScoreAgainst) / awayGamesPlayed;
     beatenBy = capitalizeText(beatenBy);
     beatenOpponents = capitalizeText(beatenOpponents);
+    beatenByTeam = capitalizeText(beatenByTeam);
+    beatenTeam = capitalizeText(beatenTeam);
     const pairsGames = pairLosses + pairWins;
 
     const daysPlayedCount = calculateDaysPlayedCount(dayPlayed);
@@ -72,7 +74,6 @@ function Players(props) {
     }
 
     // TODO handle plurals
-    // TODO any more cup stats?
     return (
         <div>
             < ListGroup.Item key={index}>
@@ -115,6 +116,8 @@ function Players(props) {
                         <h4>Opponents</h4>
                         {beatenOpponents.length > 0 && <p>Beaten opponents = {beatenOpponents}</p>}
                         {beatenBy.length > 0 && <p>Defeated by = {beatenBy}</p>}
+                        {beatenTeam.length > 0 && <p>Beaten team = {beatenTeam}</p>}
+                        {beatenByTeam.length > 0 && <p>Teams lost to = {beatenByTeam}</p>}
 
                         <h4>Averages</h4>
                         <p>Average = {average.toFixed(2)}</p>

@@ -40,7 +40,15 @@
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 5,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "Harehills Park A (Tuesday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)"
+            ],
+            "beatenByTeam": []
         },
         "duncan mcphail": {
             "totalScore": 24,
@@ -83,7 +91,16 @@
             "totalAwayScore": 14,
             "totalAwayScoreAgainst": 7,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "New Armley (Tuesday)",
+                "Harehills Park A (Tuesday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)"
+            ],
+            "beatenByTeam": [
+                "Horsforth Woodside. (Tuesday)"
+            ]
         },
         "stewart watson": {
             "totalScore": 29,
@@ -128,7 +145,17 @@
             "totalAwayScore": 20,
             "totalAwayScoreAgainst": 8,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Pudsey Park A (Thursday)"
+            ],
+            "beatenByTeam": [
+                "Harehills Park A (Tuesday)"
+            ]
         },
         "dave hudson": {
             "totalScore": 12,
@@ -169,7 +196,15 @@
             "totalAwayScore": 6,
             "totalAwayScoreAgainst": 7,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)"
+            ],
+            "beatenByTeam": [
+                "Churwell Pk (Thursday)",
+                "Pudsey Park A (Thursday)"
+            ]
         },
         "donald shaw": {
             "totalScore": 59,
@@ -228,7 +263,24 @@
             "totalAwayScore": 25,
             "totalAwayScoreAgainst": 18,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "New Armley (Tuesday)",
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Scatcherd Park B (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Churwell Pk (Thursday)",
+                "Pudsey Park A (Thursday)",
+                "Cranmore (Saturday)"
+            ]
         },
         "alison woodfine": {
             "totalScore": 42,
@@ -283,7 +335,22 @@
             "totalAwayScore": 18,
             "totalAwayScoreAgainst": 16,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Middleton Comm (Saturday)",
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Churwell Pk (Thursday)",
+                "Pudsey Park A (Thursday)",
+                "Cranmore (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)"
+            ]
         },
         "joey broadbent": {
             "totalScore": 20,
@@ -323,7 +390,14 @@
             "totalAwayScore": 0,
             "totalAwayScoreAgainst": 0,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": []
         },
         "neil porter": {
             "totalScore": 35,
@@ -369,7 +443,17 @@
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 7,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Cranmore (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Scatcherd Park B (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": []
         },
         "jack roberts": {
             "totalScore": 1,
@@ -405,7 +489,12 @@
             "totalAwayScore": 0,
             "totalAwayScoreAgainst": 5,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [],
+            "beatenByTeam": [
+                "Middleton Community (Thursday)",
+                "Sth Leeds Cons B (Saturday)"
+            ]
         },
         "jeff allman": {
             "totalScore": 38,
@@ -466,7 +555,21 @@
             "totalAwayScore": 17,
             "totalAwayScoreAgainst": 12,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Meanwood B (Monday)",
+                "New Armley (Thursday)",
+                "Gildersome B (Saturday)",
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)",
+                "Whitkirk A (Monday)",
+                "Churwell Pk (Thursday)"
+            ]
         },
         "shirley allman": {
             "totalScore": 13,
@@ -515,7 +618,16 @@
             "totalAwayScore": 7,
             "totalAwayScoreAgainst": 7,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)",
+                "Churwell Pk (Thursday)",
+                "Gildersome B (Saturday)"
+            ]
         },
         "john armitage": {
             "totalScore": 30,
@@ -559,7 +671,16 @@
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 6,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "Harehills Park A (Tuesday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Middleton Community (Thursday)"
+            ],
+            "beatenByTeam": []
         },
         "mario biancardo": {
             "totalScore": 110,
@@ -640,7 +761,35 @@
             "totalAwayScore": 51,
             "totalAwayScoreAgainst": 25,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Rothwell BC (Monday)",
+                "Whitkirk A (Monday)",
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "Harehills Park A (Tuesday)",
+                "Pudsey Park A (Thursday)",
+                "New Armley (Thursday)",
+                "New Armley (Saturday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "New Farnley B (Monday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Cranmore (Saturday)"
+            ]
         },
         "shirley biancardo": {
             "totalScore": 108,
@@ -721,7 +870,35 @@
             "totalAwayScore": 56,
             "totalAwayScoreAgainst": 26,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Whitkirk A (Monday)",
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Pudsey Park A (Thursday)",
+                "New Armley (Thursday)",
+                "Cranmore (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)",
+                "Harehills Park A (Tuesday)",
+                "New Armley (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ]
         },
         "paul bowes": {
             "totalScore": 92,
@@ -809,7 +986,31 @@
             "totalAwayScore": 42,
             "totalAwayScoreAgainst": 18,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "West Royd Park (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Cranmore (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Scatcherd Park B (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Harehills Park A (Tuesday)",
+                "Pudsey Park A (Thursday)"
+            ]
         },
         "clifford brogie": {
             "totalScore": 35,
@@ -862,7 +1063,21 @@
             "totalAwayScore": 19,
             "totalAwayScoreAgainst": 18,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "Whitkirk A (Monday)",
+                "Pudsey Park A (Thursday)",
+                "New Armley (Thursday)"
+            ],
+            "beatenByTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)",
+                "Churwell Pk (Thursday)"
+            ]
         },
         "craig clarkson": {
             "totalScore": 25,
@@ -907,7 +1122,17 @@
             "totalAwayScore": 11,
             "totalAwayScoreAgainst": 12,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Western Flatts (Monday)",
+                "New Wortley (Monday)",
+                "Whitkirk A (Monday)"
+            ],
+            "beatenByTeam": [
+                "Harehills (Monday)",
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)"
+            ]
         },
         "steve gardner": {
             "totalScore": 79,
@@ -972,7 +1197,27 @@
             "totalAwayScore": 40,
             "totalAwayScoreAgainst": 13,
             "cupWins": 0,
-            "cupLosses": 1
+            "cupLosses": 1,
+            "beatenTeam": [
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Horsforth Woodside. (Tuesday)",
+                "New Armley (Tuesday)",
+                "Harehills Park A (Tuesday)",
+                "Western Flatts (Tuesday)",
+                "Churwell Pk (Thursday)",
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Cranmore (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Scatcherd Park B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Sth Leeds Cons B (Saturday)"
+            ]
         },
         "andy marshall": {
             "totalScore": 60,
@@ -1056,7 +1301,26 @@
             "totalAwayScore": 27,
             "totalAwayScoreAgainst": 13,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)",
+                "Cranmore (Saturday)",
+                "Scatcherd Park B (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Whitkirk A (Monday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)"
+            ]
         },
         "alyssa randell": {
             "totalScore": 38,
@@ -1128,7 +1392,20 @@
             "totalAwayScore": 18,
             "totalAwayScoreAgainst": 10,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Rothwell BC (Monday)",
+                "New Farnley B (Monday)"
+            ],
+            "beatenByTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Whitkirk A (Monday)"
+            ]
         },
         "andy waller": {
             "totalScore": 84,
@@ -1214,7 +1491,30 @@
             "totalAwayScore": 32,
             "totalAwayScoreAgainst": 28,
             "cupWins": 1,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [
+                "Sth Lds Cons (Monday)",
+                "Gildersome (Monday)",
+                "Meanwood B (Monday)",
+                "Western Flatts (Monday)",
+                "West Royd Park (Tuesday)",
+                "Middleton Community (Thursday)",
+                "New Armley (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Gildersome B (Saturday)",
+                "Middleton Comm (Saturday)",
+                "New Wortley (Saturday)",
+                "Western Flatts (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ],
+            "beatenByTeam": [
+                "New Wortley (Monday)",
+                "Harehills (Monday)",
+                "Horsforth Woodside. (Tuesday)",
+                "Churwell Pk (Thursday)",
+                "Pudsey Park A (Thursday)",
+                "Cranmore (Saturday)"
+            ]
         },
         "kevin waller": {
             "totalScore": 27,
@@ -1259,7 +1559,17 @@
             "totalAwayScore": 15,
             "totalAwayScoreAgainst": 7,
             "cupWins": 0,
-            "cupLosses": 1
+            "cupLosses": 1,
+            "beatenTeam": [
+                "Pudsey Park A (Thursday)",
+                "Sth Leeds Cons B (Saturday)",
+                "Cranmore (Saturday)",
+                "Western Flatts (Saturday)"
+            ],
+            "beatenByTeam": [
+                "Middleton Comm (Saturday)",
+                "Sth Leeds Cons B (Saturday)"
+            ]
         },
         "bernie miller": {
             "totalScore": 1,
@@ -1297,7 +1607,11 @@
             "totalAwayScore": 0,
             "totalAwayScoreAgainst": 0,
             "cupWins": 0,
-            "cupLosses": 0
+            "cupLosses": 0,
+            "beatenTeam": [],
+            "beatenByTeam": [
+                "Whitkirk A (Monday)"
+            ]
         }
     },
     "teamResults": [
