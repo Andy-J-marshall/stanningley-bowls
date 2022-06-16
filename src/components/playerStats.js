@@ -1,5 +1,6 @@
 import React from 'react';
 import Player from './players';
+import PlayerRecords from './playerRecords';
 import { ListGroup } from 'react-bootstrap';
 import bowlsStats from '../helpers/bowlsStats.json'
 
@@ -10,6 +11,9 @@ function PlayerStats() {
     return (
         <div>
             <h2>Player Stats</h2>
+            <PlayerRecords 
+                playersStats={playersStats}
+            />
             <ListGroup id='player-stats'>
                 {keys.map((p, index) => {
                     const playerName = keys[index];
