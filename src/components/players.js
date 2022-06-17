@@ -78,10 +78,10 @@ function Players(props) {
         <div>
             < ListGroup.Item key={index}>
                 <div>
-                    <h3>{capitalizeText([name])}</h3>
+                    <h4>{capitalizeText([name])}</h4>
                     {gamesPlayed === 0 && <p>No games played</p>}
                     {gamesPlayed > 0 && <div>
-                        <h4>Games</h4>
+                        <h5>Games</h5>
                         <p>{gamesPlayed} games played in total</p>
                         {daysPlayedCount.map(day => {
                             const key = Math.floor(Math.random() * 100000 + index);
@@ -89,13 +89,13 @@ function Players(props) {
                         })}
                         {pairsGames > 0 && <p>{pairsGames} pairs games played</p>}
 
-                        <h4>Results</h4>
+                        <h5>Results</h5>
                         {totalWins > 0 && <p>{totalWins} wins ({homeWins} home, {awayWins} away, {cupWins} cup)</p>}
                         {totalLosses > 0 && <p>{totalLosses} losses ({homeLosses} home, {awayLosses} away, {cupLosses} cup)</p>}
                         <p>{(totalWins / gamesPlayed * 100).toFixed(0)}% win percentage</p>
 
                         {pairsGames > 0 && <div>
-                            <h4>Pairs</h4>
+                            <h5>Pairs</h5>
                             <p>{pairsGames} pairs games played</p>
                             <p>{pairWins} pairs wins</p>
                             <p>{pairLosses} pairs losses</p>
@@ -113,13 +113,13 @@ function Players(props) {
                             })}
                         </div>}
 
-                        <h4>Opponents</h4>
+                        <h5>Opponents</h5>
                         {beatenOpponents.length > 0 && <p>Beaten opponents = {beatenOpponents}</p>}
                         {beatenBy.length > 0 && <p>Defeated by = {beatenBy}</p>}
                         {beatenTeam.length > 0 && <p>Beaten team = {beatenTeam}</p>}
                         {beatenByTeam.length > 0 && <p>Teams lost to = {beatenByTeam}</p>}
 
-                        <h4>Averages</h4>
+                        <h5>Averages</h5>
                         <p>Average = {average.toFixed(2)}</p>
                         <p>Home average = {homeAverage.toFixed(2)}</p>
                         <p>Away average = {awayAverage.toFixed(2)}</p>
@@ -131,7 +131,7 @@ function Players(props) {
                         <p>Average away score = {awayAverageScore.toFixed(2)} / 5</p>
                         <p>Average away opponents score = {awayAverageScoreAgainst.toFixed(2)} / 5</p>
 
-                        <h4>Aggregates</h4>
+                        <h5>Aggregates</h5>
                         <p><b>Points</b></p>
                         <p>Total aggregate scored = {totalAgg} / {gamesPlayed * 21}</p>
                         <p>Total aggregate conceded = {totalAggAgainst} / {gamesPlayed * 21}</p>

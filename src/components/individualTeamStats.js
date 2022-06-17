@@ -18,7 +18,7 @@ function IndividualTeamStats(props) {
 
     return (
         <div id={day + 'TeamResults'}>
-            <h3>Stats for {day}</h3>
+            <h4>Stats for {day}</h4>
             <div id={day + 'TeamWinLosses'}>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>

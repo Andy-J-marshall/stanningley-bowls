@@ -74,7 +74,7 @@ function PlayerRecords(props) {
 
     return (
         <div>
-            <h2>Player Records</h2>
+            <h3>Player Records</h3>
             <p>Most games played = {capitalizeText(mostGamesPlayer)} ({mostGames})</p>
             <p>Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})</p>
             <p>Best win percentage = {capitalizeText(bestWinPercPlayer)} ({bestWinPerc.toFixed(0)}% - min 6 games)</p>

@@ -73,7 +73,7 @@ function TeamRecords(props) {
 
     return (
         <div id='TeamRecords'>
-            <h2>Team Records</h2>
+            <h3>Team Records</h3>
             <p>Best win percentage = {bestWinPercentage.toFixed(0)}%</p>
             <p>Best win percentage Team = {capitalizeText(bestWinPercentageTeam)}</p>
             <p>Best points per game = {bestTeamPointsPerGame.toFixed(1)}/5</p>
