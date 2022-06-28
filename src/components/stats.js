@@ -18,7 +18,6 @@ function Stats() {
         }
     }
 
-
     function displayTeamStats() {
         if (showStats) {
             setShowTeamStats(false);
@@ -27,11 +26,14 @@ function Stats() {
         }
     }
 
-
     return (
         <div>
-            <Button variant='light' size='lg' onClick={displayPlayerStats}>{'Player Stats'}</Button>
-            <Button variant='light' size='lg' onClick={displayTeamStats}>{'Team Stats'}</Button>
+            <Button variant="light" size="lg" onClick={displayPlayerStats}>
+                {'Player Stats'}
+            </Button>
+            <Button variant="light" size="lg" onClick={displayTeamStats}>
+                {'Team Stats'}
+            </Button>
             <br />
             <br />
             {showStats && <PlayerStats />}

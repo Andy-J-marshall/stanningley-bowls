@@ -6,9 +6,21 @@ function IndividualTeamStats(props) {
     const stats = props.stats;
 
     const {
-        awayWins, homeWins, cupWins, cupLosses, awayLosses, homeLosses,
-        homeDraws, awayDraws, stanningleyAgg, stanningleyTotalPoints,
-        opponentAgg, opponentTotalPoints, beaten, beatenBy, drawnWith,
+        awayWins,
+        homeWins,
+        cupWins,
+        cupLosses,
+        awayLosses,
+        homeLosses,
+        homeDraws,
+        awayDraws,
+        stanningleyAgg,
+        stanningleyTotalPoints,
+        opponentAgg,
+        opponentTotalPoints,
+        beaten,
+        beatenBy,
+        drawnWith,
     } = stats;
 
     const totalDraws = awayDraws + homeDraws;
@@ -22,11 +34,23 @@ function IndividualTeamStats(props) {
             <div id={day + 'TeamWinLosses'}>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>
-                {totalWins > 0 && <p>({homeWins} home, {awayWins} away, {cupWins} cup)</p>}
+                {totalWins > 0 && (
+                    <p>
+                        ({homeWins} home, {awayWins} away, {cupWins} cup)
+                    </p>
+                )}
                 <p>Total losses = {totalLosses}</p>
-                {totalLosses > 0 && <p>({homeLosses} home, {awayLosses} away, {cupLosses} cup)</p>}
+                {totalLosses > 0 && (
+                    <p>
+                        ({homeLosses} home, {awayLosses} away, {cupLosses} cup)
+                    </p>
+                )}
                 {totalDraws > 0 && <p>Total draws = {totalDraws}</p>}
-                {totalDraws > 0 && <p>({homeDraws} home, {awayDraws} away)</p>}
+                {totalDraws > 0 && (
+                    <p>
+                        ({homeDraws} home, {awayDraws} away)
+                    </p>
+                )}
             </div>
             <div id={day + 'TeamAggregates'}>
                 <p>Stanningley aggregate = {stanningleyAgg}</p>
@@ -35,9 +59,15 @@ function IndividualTeamStats(props) {
                 <p>Opponents team score = {opponentTotalPoints}</p>
             </div>
             <div id={day + 'TeamOpponents'}>
-                {totalWins > 0 && <p>Teams beaten = {capitalizeText(beaten)}</p>}
-                {totalLosses > 0 && <p>Teams lost to = {capitalizeText(beatenBy)}</p>}
-                {totalDraws > 0 && <p>Teams drawn with = {capitalizeText(drawnWith)}</p>}
+                {totalWins > 0 && (
+                    <p>Teams beaten = {capitalizeText(beaten)}</p>
+                )}
+                {totalLosses > 0 && (
+                    <p>Teams lost to = {capitalizeText(beatenBy)}</p>
+                )}
+                {totalDraws > 0 && (
+                    <p>Teams drawn with = {capitalizeText(drawnWith)}</p>
+                )}
             </div>
         </div>
     );

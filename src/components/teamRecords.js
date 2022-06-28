@@ -15,11 +15,21 @@ function TeamRecords(props) {
     let lowestAggConcededPerGame = 1000;
     let lowestAggConcededPerGameTeam = [];
 
-    statsArray.forEach(stats => {
+    statsArray.forEach((stats) => {
         const {
-            day, awayWins, homeWins, cupWins, awayLosses, homeLosses, cupLosses,
-            homeDraws, awayDraws, stanningleyAgg, stanningleyTotalPoints,
-            opponentAgg, opponentTotalPoints,
+            day,
+            awayWins,
+            homeWins,
+            cupWins,
+            awayLosses,
+            homeLosses,
+            cupLosses,
+            homeDraws,
+            awayDraws,
+            stanningleyAgg,
+            stanningleyTotalPoints,
+            opponentAgg,
+            opponentTotalPoints,
         } = stats;
         const wins = awayWins + homeWins + cupWins;
         const losses = awayLosses + homeLosses + cupLosses;
@@ -29,10 +39,16 @@ function TeamRecords(props) {
         const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
         const gamesPerMatch = day === 'Monday' ? 6 : 8;
-        const pointsPerGame = (stanningleyTotalPoints / gamesPerMatch) / (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
-        const aggPerGame = (stanningleyAgg / gamesPerMatch) / totalGames;
-        const pointsConcededPerGame = (opponentTotalPoints / gamesPerMatch) / (totalGames - cupLosses - cupWins);
-        const aggConcededPerGame = (opponentAgg / gamesPerMatch) / totalGames;
+        const pointsPerGame =
+            stanningleyTotalPoints /
+            gamesPerMatch /
+            (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
+        const aggPerGame = stanningleyAgg / gamesPerMatch / totalGames;
+        const pointsConcededPerGame =
+            opponentTotalPoints /
+            gamesPerMatch /
+            (totalGames - cupLosses - cupWins);
+        const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGames;
 
         if (aggPerGame >= bestTeamAggPerGame) {
             if (aggPerGame !== bestTeamAggPerGame) {
@@ -72,18 +88,39 @@ function TeamRecords(props) {
     });
 
     return (
-        <div id='TeamRecords'>
+        <div id="TeamRecords">
             <h3>Team Records</h3>
             <p>Best win percentage = {bestWinPercentage.toFixed(0)}%</p>
-            <p>Best win percentage Team = {capitalizeText(bestWinPercentageTeam)}</p>
+            <p>
+                Best win percentage Team ={' '}
+                {capitalizeText(bestWinPercentageTeam)}
+            </p>
             <p>Best points per game = {bestTeamPointsPerGame.toFixed(1)}/5</p>
-            <p>Best points per game team = {capitalizeText(bestTeamPointsPerGameTeam)}</p>
+            <p>
+                Best points per game team ={' '}
+                {capitalizeText(bestTeamPointsPerGameTeam)}
+            </p>
             <p>Best agg per game = {bestTeamAggPerGame.toFixed(1)}/21</p>
-            <p>Best agg per game team = {capitalizeText(bestTeamAggPerGameTeam)}</p>
-            <p>Fewest points conceded per game = {fewestPointsConcededPerGame.toFixed(1)}/5</p>
-            <p>Fewest points conceded per game team = {capitalizeText(fewestPointsConcededPerGameTeam)}</p>
-            <p>Fewest aggregated points conceded per game = {lowestAggConcededPerGame.toFixed(1)}/21</p>
-            <p>Fewest aggregated points conceded per game team = {capitalizeText(lowestAggConcededPerGameTeam)}</p>
+            <p>
+                Best agg per game team ={' '}
+                {capitalizeText(bestTeamAggPerGameTeam)}
+            </p>
+            <p>
+                Fewest points conceded per game ={' '}
+                {fewestPointsConcededPerGame.toFixed(1)}/5
+            </p>
+            <p>
+                Fewest points conceded per game team ={' '}
+                {capitalizeText(fewestPointsConcededPerGameTeam)}
+            </p>
+            <p>
+                Fewest aggregated points conceded per game ={' '}
+                {lowestAggConcededPerGame.toFixed(1)}/21
+            </p>
+            <p>
+                Fewest aggregated points conceded per game team ={' '}
+                {capitalizeText(lowestAggConcededPerGameTeam)}
+            </p>
         </div>
     );
 }

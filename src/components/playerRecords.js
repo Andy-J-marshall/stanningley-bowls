@@ -23,12 +23,12 @@ function PlayerRecords(props) {
     let bestScorePlayer = [];
     let bestScore = 0;
 
-    players.forEach(player => {
+    players.forEach((player) => {
         const p = playersStats[player];
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
-        
+
         const playedMinGames = totalGames >= 6 ? true : false;
         // TODO the python script is picking up players matches for other teams e.g. Mario/ Shirley
         if (totalGames >= mostGames) {
@@ -45,7 +45,7 @@ function PlayerRecords(props) {
             }
             mostWinsPlayer.push(player);
         }
-        const winPerc = totalWins / totalGames * 100;
+        const winPerc = (totalWins / totalGames) * 100;
         if (winPerc >= bestWinPerc && playedMinGames) {
             if (winPerc > bestWinPerc) {
                 bestWinPercPlayer = [];
@@ -70,16 +70,30 @@ function PlayerRecords(props) {
             }
             bestScorePlayer.push(player);
         }
-    })
+    });
 
     return (
         <div>
             <h3>Player Records</h3>
-            <p>Most games played = {capitalizeText(mostGamesPlayer)} ({mostGames})</p>
-            <p>Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})</p>
-            <p>Best win percentage = {capitalizeText(bestWinPercPlayer)} ({bestWinPerc.toFixed(0)}% - min 6 games)</p>
-            <p>Best average = {capitalizeText(bestAveragePlayer)} ({bestAverage.toFixed(2)} - min 6 games)</p>
-            <p>Best team score per game = {capitalizeText(bestScorePlayer)} ({bestScore.toFixed(2)} - min 6 games)</p>
+            <p>
+                Most games played = {capitalizeText(mostGamesPlayer)} (
+                {mostGames})
+            </p>
+            <p>
+                Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})
+            </p>
+            <p>
+                Best win percentage = {capitalizeText(bestWinPercPlayer)} (
+                {bestWinPerc.toFixed(0)}% - min 6 games)
+            </p>
+            <p>
+                Best average = {capitalizeText(bestAveragePlayer)} (
+                {bestAverage.toFixed(2)} - min 6 games)
+            </p>
+            <p>
+                Best team score per game = {capitalizeText(bestScorePlayer)} (
+                {bestScore.toFixed(2)} - min 6 games)
+            </p>
         </div>
     );
 }
