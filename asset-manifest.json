@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/stanningley-bowls/static/css/main.bb62be73.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.471faa53.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.471faa53.chunk.js.map",
+    "main.css": "/stanningley-bowls/static/css/main.d97182a3.chunk.css",
+    "main.js": "/stanningley-bowls/static/js/main.0b59a259.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.0b59a259.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js.map",
     "static/js/2.cea9c7b0.chunk.js": "/stanningley-bowls/static/js/2.cea9c7b0.chunk.js",
     "static/js/2.cea9c7b0.chunk.js.map": "/stanningley-bowls/static/js/2.cea9c7b0.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
-    "static/css/main.bb62be73.chunk.css.map": "/stanningley-bowls/static/css/main.bb62be73.chunk.css.map",
+    "static/css/main.d97182a3.chunk.css.map": "/stanningley-bowls/static/css/main.d97182a3.chunk.css.map",
     "static/js/2.cea9c7b0.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.cea9c7b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3ce3fbbd.js",
     "static/js/2.cea9c7b0.chunk.js",
-    "static/css/main.bb62be73.chunk.css",
-    "static/js/main.471faa53.chunk.js"
+    "static/css/main.d97182a3.chunk.css",
+    "static/js/main.0b59a259.chunk.js"
   ]
 }
