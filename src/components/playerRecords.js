@@ -43,7 +43,7 @@ function PlayerRecords(props) {
                 mostWinsPlayer = [];
                 mostWins = totalWins;
             }
-            mostWinsPlayer.push(player);
+            mostWinsPlayer.push(`${player} -${totalGames} games`);
         }
         const winPerc = (totalWins / totalGames) * 100;
         if (winPerc >= bestWinPerc && playedMinGames) {
@@ -51,7 +51,7 @@ function PlayerRecords(props) {
                 bestWinPercPlayer = [];
                 bestWinPerc = winPerc;
             }
-            bestWinPercPlayer.push(player);
+            bestWinPercPlayer.push(`${player} - ${totalGames} games`);
         }
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
         if (average >= bestAverage && playedMinGames) {
@@ -59,7 +59,7 @@ function PlayerRecords(props) {
                 bestAveragePlayer = [];
                 bestAverage = average;
             }
-            bestAveragePlayer.push(player);
+            bestAveragePlayer.push(`${player} - ${totalGames} games`);
         }
 
         const score = p.totalScore / totalGames;
@@ -68,7 +68,7 @@ function PlayerRecords(props) {
                 bestScorePlayer = [];
                 bestScore = score;
             }
-            bestScorePlayer.push(player);
+            bestScorePlayer.push(`${player} - ${totalGames} games`);
         }
     });
 
@@ -77,33 +77,34 @@ function PlayerRecords(props) {
             <h3>Player Records</h3>
             {mostGames > 0 && (
                 <p>
-                    Most games played = {capitalizeText(mostGamesPlayer)} (
-                    {mostGames})
+                    Most games played = {mostGames} (
+                    {capitalizeText(mostGamesPlayer)})
                 </p>
             )}
             {mostWins > 0 && (
                 <p>
-                    Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})
+                    Most wins = {mostWins} ({capitalizeText(mostWinsPlayer)})
                 </p>
             )}
             {bestWinPerc > 0 && (
                 <p>
-                    Best win percentage = {capitalizeText(bestWinPercPlayer)} (
-                    {bestWinPerc.toFixed(0)}% - min 6 games)
+                    Best win percentage = {bestWinPerc.toFixed(0)}% (
+                    {capitalizeText(bestWinPercPlayer)})
                 </p>
             )}
             {bestAverage > -21 && (
                 <p>
-                    Best average = {capitalizeText(bestAveragePlayer)} (
-                    {bestAverage.toFixed(2)} - min 6 games)
+                    Best average = {bestAverage.toFixed(2)} (
+                    {capitalizeText(bestAveragePlayer)})
                 </p>
             )}
             {bestScore > 0 && (
                 <p>
-                    Best team score per game = {capitalizeText(bestScorePlayer)}
-                    ({bestScore.toFixed(2)} - min 6 games)
+                    Best average team score per game = {bestScore.toFixed(2)} (
+                    {capitalizeText(bestScorePlayer)})
                 </p>
             )}
+            <p>* minimum of 6 games played</p>
         </div>
     );
 }

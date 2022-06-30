@@ -54,35 +54,37 @@ function TeamRecords(props) {
             if (aggPerGame !== bestTeamAggPerGame) {
                 bestTeamAggPerGameTeam.pop();
             }
-            bestTeamAggPerGameTeam.push(day);
+            bestTeamAggPerGameTeam.push(`${day} (${totalGames} games)`);
             bestTeamAggPerGame = aggPerGame;
         }
         if (pointsPerGame >= bestTeamPointsPerGame) {
             if (pointsPerGame !== bestTeamPointsPerGame) {
                 bestTeamPointsPerGameTeam.pop();
             }
-            bestTeamPointsPerGameTeam.push(day);
+            bestTeamPointsPerGameTeam.push(`${day} (${totalGames} games)`);
             bestTeamPointsPerGame = pointsPerGame;
         }
         if (pointsConcededPerGame <= fewestPointsConcededPerGame) {
             if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
                 fewestPointsConcededPerGameTeam.pop();
             }
-            fewestPointsConcededPerGameTeam.push(day);
+            fewestPointsConcededPerGameTeam.push(
+                `${day} (${totalGames} games)`
+            );
             fewestPointsConcededPerGame = pointsConcededPerGame;
         }
         if (aggConcededPerGame <= lowestAggConcededPerGame) {
             if (aggConcededPerGame !== lowestAggConcededPerGame) {
                 lowestAggConcededPerGameTeam.pop();
             }
-            lowestAggConcededPerGameTeam.push(day);
+            lowestAggConcededPerGameTeam.push(`${day} (${totalGames} games)`);
             lowestAggConcededPerGame = aggConcededPerGame;
         }
         if (winPercentage >= bestWinPercentage) {
             if (winPercentage !== bestWinPercentage) {
                 bestWinPercentageTeam.pop();
             }
-            bestWinPercentageTeam.push(day);
+            bestWinPercentageTeam.push(`${day} (${totalGames} games)`);
             bestWinPercentage = winPercentage;
         }
     });
@@ -92,9 +94,8 @@ function TeamRecords(props) {
             <h3>Team Records</h3>
             {bestWinPercentage > 0 && (
                 <div>
-                    <p>Best win percentage = {bestWinPercentage.toFixed(0)}%</p>
                     <p>
-                        Best win percentage Team ={' '}
+                        Best win percentage = {bestWinPercentage.toFixed(0)}% -{' '}
                         {capitalizeText(bestWinPercentageTeam)}
                     </p>
                 </div>
@@ -104,10 +105,7 @@ function TeamRecords(props) {
                 <div>
                     <p>
                         Best points per game ={' '}
-                        {bestTeamPointsPerGame.toFixed(1)} / 5
-                    </p>
-                    <p>
-                        Best points per game team ={' '}
+                        {bestTeamPointsPerGame.toFixed(1)} / 5 -{' '}
                         {capitalizeText(bestTeamPointsPerGameTeam)}
                     </p>
                 </div>
@@ -116,10 +114,7 @@ function TeamRecords(props) {
                 <div>
                     <p>
                         Best agg per game = {bestTeamAggPerGame.toFixed(1)} / 21
-                    </p>
-                    <p>
-                        Best agg per game team ={' '}
-                        {capitalizeText(bestTeamAggPerGameTeam)}
+                        - {capitalizeText(bestTeamAggPerGameTeam)}
                     </p>
                 </div>
             )}
@@ -127,10 +122,7 @@ function TeamRecords(props) {
                 <div>
                     <p>
                         Fewest points conceded per game ={' '}
-                        {fewestPointsConcededPerGame.toFixed(1)} / 5
-                    </p>
-                    <p>
-                        Fewest points conceded per game team ={' '}
+                        {fewestPointsConcededPerGame.toFixed(1)} / 5 -{' '}
                         {capitalizeText(fewestPointsConcededPerGameTeam)}
                     </p>
                 </div>
@@ -140,10 +132,7 @@ function TeamRecords(props) {
                 <div>
                     <p>
                         Fewest aggregated points conceded per game ={' '}
-                        {lowestAggConcededPerGame.toFixed(1)} / 21
-                    </p>
-                    <p>
-                        Fewest aggregated points conceded per game team ={' '}
+                        {lowestAggConcededPerGame.toFixed(1)} / 21 -{' '}
                         {capitalizeText(lowestAggConcededPerGameTeam)}
                     </p>
                 </div>
