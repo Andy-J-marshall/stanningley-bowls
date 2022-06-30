@@ -236,101 +236,150 @@ function Players(props) {
                                 <p>Teams lost to = {beatenByTeam}</p>
                             )}
 
-                            <h5>Averages</h5>
-                            <p>Average = {average.toFixed(2)}</p>
-                            <p>Home average = {homeAverage.toFixed(2)}</p>
-                            <p>Away average = {awayAverage.toFixed(2)}</p>
+                            <div>
+                                <h5>Averages</h5>
+                                {average >= -21 && (
+                                    <div>
+                                        <p>Average = {average.toFixed(2)}</p>
+                                        {homeAverage > -22 && (
+                                            <p>
+                                                Home average =
+                                                {homeAverage.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {awayAverage > -22 && (
+                                            <p>
+                                                Away average =
+                                                {awayAverage.toFixed(2)}
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
+                                {averageScore >= 0 && (
+                                    <div>
+                                        <p>
+                                            Average score ={' '}
+                                            {averageScore.toFixed(2)} / 5
+                                        </p>
+                                        <p>
+                                            Average opponents score ={' '}
+                                            {averageScoreAgainst.toFixed(2)} / 5
+                                        </p>
+                                        {homeAverageScore >= 0 && (
+                                            <div>
+                                                <p>
+                                                    Average home score ={' '}
+                                                    {homeAverageScore.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </p>
+                                                <p>
+                                                    Average home opponents score
+                                                    ={' '}
+                                                    {homeAverageScoreAgainst.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </p>
+                                            </div>
+                                        )}
+                                        {awayAverageScore >= 0 && (
+                                            <div>
+                                                <p>
+                                                    Average away score ={' '}
+                                                    {awayAverageScore.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </p>
+                                                <p>
+                                                    Average away opponents score
+                                                    ={' '}
+                                                    {awayAverageScoreAgainst.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </p>
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
 
-                            <p>Average score = {averageScore.toFixed(2)} / 5</p>
-                            <p>
-                                Average opponents score ={' '}
-                                {averageScoreAgainst.toFixed(2)} / 5
-                            </p>
-                            <p>
-                                Average home score ={' '}
-                                {homeAverageScore.toFixed(2)} / 5
-                            </p>
-                            <p>
-                                Average home opponents score ={' '}
-                                {homeAverageScoreAgainst.toFixed(2)} / 5
-                            </p>
-                            <p>
-                                Average away score ={' '}
-                                {awayAverageScore.toFixed(2)} / 5
-                            </p>
-                            <p>
-                                Average away opponents score ={' '}
-                                {awayAverageScoreAgainst.toFixed(2)} / 5
-                            </p>
-
-                            <h5>Aggregates</h5>
-                            <p>
-                                <b>Points</b>
-                            </p>
-                            <p>
-                                Total aggregate scored = {totalAgg} /{' '}
-                                {gamesPlayed * 21}
-                            </p>
-                            <p>
-                                Total aggregate conceded = {totalAggAgainst} /{' '}
-                                {gamesPlayed * 21}
-                            </p>
-                            <p>
-                                Total home aggregate scored = {totalHomeAgg} /{' '}
-                                {homeGamesPlayed * 21}
-                            </p>
-                            <p>
-                                Total home aggregate conceded ={' '}
-                                {totalHomeAggAgainst} / {homeGamesPlayed * 21}
-                            </p>
-                            <p>
-                                Total away aggregate scored = {totalAwayAgg} /{' '}
-                                {awayGamesPlayed * 21}
-                            </p>
-                            <p>
-                                Total away aggregate conceded ={' '}
-                                {totalAwayAggAgainst} / {awayGamesPlayed * 21}
-                            </p>
-                            {pairsGames > 0 && (
+                                <h5>Aggregates</h5>
                                 <p>
-                                    Total pairs aggregate scored ={' '}
-                                    {totalPairsAgg} / {pairsGames * 21}
+                                    <b>Points</b>
                                 </p>
-                            )}
-                            {pairsGames > 0 && (
                                 <p>
-                                    Total pairs aggregate conceded ={' '}
-                                    {totalPairsAggAgainst} / {pairsGames * 21}
+                                    Total aggregate scored = {totalAgg} /{' '}
+                                    {gamesPlayed * 21}
                                 </p>
-                            )}
+                                <p>
+                                    Total aggregate conceded = {totalAggAgainst}{' '}
+                                    / {gamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Total home aggregate scored = {totalHomeAgg}{' '}
+                                    / {homeGamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Total home aggregate conceded ={' '}
+                                    {totalHomeAggAgainst} /{' '}
+                                    {homeGamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Total away aggregate scored = {totalAwayAgg}{' '}
+                                    / {awayGamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Total away aggregate conceded ={' '}
+                                    {totalAwayAggAgainst} /{' '}
+                                    {awayGamesPlayed * 21}
+                                </p>
+                                {pairsGames > 0 && (
+                                    <p>
+                                        Total pairs aggregate scored ={' '}
+                                        {totalPairsAgg} / {pairsGames * 21}
+                                    </p>
+                                )}
+                                {pairsGames > 0 && (
+                                    <p>
+                                        Total pairs aggregate conceded =
+                                        {totalPairsAggAgainst} /
+                                        {pairsGames * 21}
+                                    </p>
+                                )}
 
-                            <p>
-                                <b>Team Points</b>
-                            </p>
-                            <p>
-                                Total points scored = {totalScore} /{' '}
-                                {gamesPlayed * 5}
-                            </p>
-                            <p>
-                                Total points conceded = {totalScoreAgainst} /{' '}
-                                {gamesPlayed * 5}
-                            </p>
-                            <p>
-                                Total home points scored = {totalHomeScore} /{' '}
-                                {homeGamesPlayed * 5}
-                            </p>
-                            <p>
-                                Total home points conceded ={' '}
-                                {totalHomeScoreAgainst} / {homeGamesPlayed * 5}
-                            </p>
-                            <p>
-                                Total away points scored = {totalAwayScore} /{' '}
-                                {awayGamesPlayed * 5}
-                            </p>
-                            <p>
-                                Total away points conceded ={' '}
-                                {totalAwayScoreAgainst} / {awayGamesPlayed * 5}
-                            </p>
+                                <p>
+                                    <b>Team Points</b>
+                                </p>
+                                <p>
+                                    Total points scored = {totalScore} /{' '}
+                                    {gamesPlayed * 5}
+                                </p>
+                                <p>
+                                    Total points conceded = {totalScoreAgainst}{' '}
+                                    / {gamesPlayed * 5}
+                                </p>
+                                <p>
+                                    Total home points scored = {totalHomeScore}{' '}
+                                    / {homeGamesPlayed * 5}
+                                </p>
+                                <p>
+                                    Total home points conceded ={' '}
+                                    {totalHomeScoreAgainst} /{' '}
+                                    {homeGamesPlayed * 5}
+                                </p>
+                                <p>
+                                    Total away points scored = {totalAwayScore}/{' '}
+                                    {awayGamesPlayed * 5}
+                                </p>
+                                <p>
+                                    Total away points conceded ={' '}
+                                    {totalAwayScoreAgainst} /{' '}
+                                    {awayGamesPlayed * 5}
+                                </p>
+                            </div>
                         </div>
                     )}
                 </div>

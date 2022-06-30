@@ -19,7 +19,7 @@ function PlayerRecords(props) {
     let bestWinPercPlayer = [];
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
-    let bestAverage = 0;
+    let bestAverage = -21;
     let bestScorePlayer = [];
     let bestScore = 0;
 
@@ -75,25 +75,35 @@ function PlayerRecords(props) {
     return (
         <div>
             <h3>Player Records</h3>
-            <p>
-                Most games played = {capitalizeText(mostGamesPlayer)} (
-                {mostGames})
-            </p>
-            <p>
-                Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})
-            </p>
-            <p>
-                Best win percentage = {capitalizeText(bestWinPercPlayer)} (
-                {bestWinPerc.toFixed(0)}% - min 6 games)
-            </p>
-            <p>
-                Best average = {capitalizeText(bestAveragePlayer)} (
-                {bestAverage.toFixed(2)} - min 6 games)
-            </p>
-            <p>
-                Best team score per game = {capitalizeText(bestScorePlayer)} (
-                {bestScore.toFixed(2)} - min 6 games)
-            </p>
+            {mostGames > 0 && (
+                <p>
+                    Most games played = {capitalizeText(mostGamesPlayer)} (
+                    {mostGames})
+                </p>
+            )}
+            {mostWins > 0 && (
+                <p>
+                    Most wins = {capitalizeText(mostWinsPlayer)} ({mostWins})
+                </p>
+            )}
+            {bestWinPerc > 0 && (
+                <p>
+                    Best win percentage = {capitalizeText(bestWinPercPlayer)} (
+                    {bestWinPerc.toFixed(0)}% - min 6 games)
+                </p>
+            )}
+            {bestAverage > -21 && (
+                <p>
+                    Best average = {capitalizeText(bestAveragePlayer)} (
+                    {bestAverage.toFixed(2)} - min 6 games)
+                </p>
+            )}
+            {bestScore > 0 && (
+                <p>
+                    Best team score per game = {capitalizeText(bestScorePlayer)}
+                    ({bestScore.toFixed(2)} - min 6 games)
+                </p>
+            )}
         </div>
     );
 }
