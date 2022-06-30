@@ -1,13 +1,6 @@
 import React from 'react';
 import { capitalizeText } from '../helpers/utils';
 
-// let {
-//     totalAgg, totalAggAgainst, totalPairsAgg, totalPairsAggAgainst, totalScore, totalScoreAgainst, awayLosses, homeLosses,
-//     cupLosses, homeWins, awayWins, cupWins, winningPairsPartners, losingPairsPartners, beatenBy, beatenByTeam,
-//     beatenOpponents, beatenTeam, dayPlayed, pairLosses, pairWins, pairsPartners, totalHomeAgg, totalHomeAggAgainst,
-//     totalAwayAgg, totalAwayAggAgainst, totalHomeScore, totalHomeScoreAgainst, totalAwayScore, totalAwayScoreAgainst,
-// } = playerData;
-
 function PlayerRecords(props) {
     const playersStats = props.playersStats;
     const players = Object.keys(playersStats);
