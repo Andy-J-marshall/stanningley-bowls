@@ -15,14 +15,16 @@ function Stats() {
             setShowStats(false);
         } else {
             setShowStats(true);
+            setShowTeamStats(false);
         }
     }
 
     function displayTeamStats() {
-        if (showStats) {
+        if (showTeamStats) {
             setShowTeamStats(false);
         } else {
             setShowTeamStats(true);
+            setShowStats(false);
         }
     }
 

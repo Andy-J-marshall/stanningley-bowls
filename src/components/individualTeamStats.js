@@ -4,6 +4,8 @@ import { capitalizeText } from '../helpers/utils';
 function IndividualTeamStats(props) {
     const day = props.day;
     const stats = props.stats;
+    const playerStats = props.playerStats;
+    const index = props.index;
 
     const {
         awayWins,
@@ -23,10 +25,24 @@ function IndividualTeamStats(props) {
         drawnWith,
     } = stats;
 
+    const allPlayerStats = Object.keys(playerStats).map((player) => {
+        const stats = playerStats[player][day.toLowerCase()];
+        const { games, wins, aggDiff } = stats;
+        const playerDayStats = {
+            player,
+            games,
+            wins,
+            average: aggDiff / games,
+        };
+        return playerDayStats;
+    });
+
     const totalDraws = awayDraws + homeDraws;
     const totalWins = awayWins + homeWins + cupWins;
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
+
+    // TODO display records?
 
     return (
         <div id={day + 'TeamResults'}>
@@ -69,6 +85,18 @@ function IndividualTeamStats(props) {
                     <p>Teams drawn with = {capitalizeText(drawnWith)}</p>
                 )}
             </div>
+            {allPlayerStats.map((player) => {
+                const key = Math.floor(Math.random() * 100000 + index);
+                return (
+                    <div key={key}>
+                        {player.games > 0 && <h4>{capitalizeText([player.player])}</h4>}
+                        {player.games > 0 && <p>
+                            {player.games} games played, {player.wins} games
+                            won ({player.average.toFixed(2)} average)
+                        </p>}
+                    </div>
+                );
+            })}
         </div>
     );
 }

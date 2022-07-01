@@ -10,6 +10,7 @@ function TeamStats() {
     const [buttonText, setButtonText] = useState('Show Team Stats');
 
     const teamStats = bowlsStats.teamResults;
+    const playerStats = bowlsStats.playerResults;
     // TODO get the teamStats in a better way that using array
     const mondayStats = teamStats[0];
     const tuesdayStats = teamStats[1];
@@ -40,10 +41,30 @@ function TeamStats() {
 
             {showStats && (
                 <div>
-                    <IndividualTeamStats day="Monday" stats={mondayStats} />
-                    <IndividualTeamStats day="Tuesday" stats={tuesdayStats} />
-                    <IndividualTeamStats day="Thursday" stats={thursdayStats} />
-                    <IndividualTeamStats day="Saturday" stats={saturdayStats} />
+                    <IndividualTeamStats
+                        index={1}
+                        day="Monday"
+                        stats={mondayStats}
+                        playerStats={playerStats}
+                    />
+                    <IndividualTeamStats
+                        index={2}
+                        day="Tuesday"
+                        stats={tuesdayStats}
+                        playerStats={playerStats}
+                    />
+                    <IndividualTeamStats
+                        index={3}
+                        day="Thursday"
+                        stats={thursdayStats}
+                        playerStats={playerStats}
+                    />
+                    <IndividualTeamStats
+                        index={4}
+                        day="Saturday"
+                        stats={saturdayStats}
+                        playerStats={playerStats}
+                    />
                 </div>
             )}
         </div>
