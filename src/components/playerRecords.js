@@ -155,8 +155,8 @@ function PlayerRecords(props) {
     });
 
     return (
-        <div>
-            <h4>Player Records</h4>
+        <div id='player-records'>
+            <h1>Player Records</h1>
             <p>
                 <b>Combined Team Records</b>
             </p>

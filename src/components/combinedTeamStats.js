@@ -29,9 +29,9 @@ function CombinedTeamStats(props) {
     } = combinedStats;
 
     return (
-        <div id="CombinedTeamResults">
-            <h3>Combined Stats For All Teams</h3>
-            <div id="CombinedTeamWinLosses">
+        <div id='combined-team-results'>
+            <h1>Combined Stats For All Teams</h1>
+            <div id='combined-team-win-losses'>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>
                 {totalWins > 0 && (
@@ -54,13 +54,13 @@ function CombinedTeamStats(props) {
                     </p>
                 )}
             </div>
-            <div id="CombinedTeamAggregates">
+            <div id='combined-team-aggregates'>
                 <p>Stanningley aggregate = {combinedStanningleyAgg}</p>
                 <p>Opponents aggregate = {combinedOpponentAgg}</p>
                 <p>Stanningley team score = {combinedStanningleyTotalPoints}</p>
                 <p>Opponents team score = {combinedOpponentTotalPoints}</p>
             </div>
-            <div id="CombinedTeamOpponents">
+            <div id='combined-team-opponents'>
                 {totalWins > 0 && (
                     <p>Teams beaten = {capitalizeText(combinedBeaten)}</p>
                 )}

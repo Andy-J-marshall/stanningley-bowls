@@ -43,9 +43,9 @@ function IndividualTeamStats(props) {
     const totalGames = totalDraws + totalWins + totalLosses;
 
     return (
-        <div id={day + 'TeamResults'}>
+        <div id={day + '-team-results'}>
             <h4>Stats for {day}</h4>
-            <div id={day + 'TeamWinLosses'}>
+            <div id={day + '-team-win-losses'}>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>
                 {totalWins > 0 && (
@@ -66,13 +66,13 @@ function IndividualTeamStats(props) {
                     </p>
                 )}
             </div>
-            <div id={day + 'TeamAggregates'}>
+            <div id={day + '-team-aggregates'}>
                 <p>Stanningley aggregate = {stanningleyAgg}</p>
                 <p>Opponents aggregate = {opponentAgg}</p>
                 <p>Stanningley team score = {stanningleyTotalPoints}</p>
                 <p>Opponents team score = {opponentTotalPoints}</p>
             </div>
-            <div id={day + 'TeamOpponents'}>
+            <div id={day + '-team-opponents'}>
                 {totalWins > 0 && (
                     <p>Teams beaten = {capitalizeText(beaten)}</p>
                 )}

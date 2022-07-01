@@ -50,21 +50,21 @@ function TeamRecords(props) {
             (totalGames - cupLosses - cupWins);
         const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGames;
 
-        if (aggPerGame >= bestTeamAggPerGame) {
+        if (aggPerGame >= bestTeamAggPerGame && totalGames >= 2) {
             if (aggPerGame !== bestTeamAggPerGame) {
                 bestTeamAggPerGameTeam.pop();
             }
             bestTeamAggPerGameTeam.push(`${day} (${totalGames} games)`);
             bestTeamAggPerGame = aggPerGame;
         }
-        if (pointsPerGame >= bestTeamPointsPerGame) {
+        if (pointsPerGame >= bestTeamPointsPerGame && totalGames >= 2) {
             if (pointsPerGame !== bestTeamPointsPerGame) {
                 bestTeamPointsPerGameTeam.pop();
             }
             bestTeamPointsPerGameTeam.push(`${day} (${totalGames} games)`);
             bestTeamPointsPerGame = pointsPerGame;
         }
-        if (pointsConcededPerGame <= fewestPointsConcededPerGame) {
+        if (pointsConcededPerGame <= fewestPointsConcededPerGame && totalGames >= 2) {
             if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
                 fewestPointsConcededPerGameTeam.pop();
             }
@@ -73,14 +73,14 @@ function TeamRecords(props) {
             );
             fewestPointsConcededPerGame = pointsConcededPerGame;
         }
-        if (aggConcededPerGame <= lowestAggConcededPerGame) {
+        if (aggConcededPerGame <= lowestAggConcededPerGame && totalGames >= 2) {
             if (aggConcededPerGame !== lowestAggConcededPerGame) {
                 lowestAggConcededPerGameTeam.pop();
             }
             lowestAggConcededPerGameTeam.push(`${day} (${totalGames} games)`);
             lowestAggConcededPerGame = aggConcededPerGame;
         }
-        if (winPercentage >= bestWinPercentage) {
+        if (winPercentage >= bestWinPercentage && totalGames >= 2) {
             if (winPercentage !== bestWinPercentage) {
                 bestWinPercentageTeam.pop();
             }
@@ -90,8 +90,8 @@ function TeamRecords(props) {
     });
 
     return (
-        <div id="TeamRecords">
-            <h3>Team Records</h3>
+        <div id="team-records">
+            <h1>Team Records</h1>
             {bestWinPercentage > 0 && (
                 <div>
                     <p>
@@ -137,6 +137,9 @@ function TeamRecords(props) {
                     </p>
                 </div>
             )}
+            <p>
+                * Minimum of 2 games required
+            </p>
         </div>
     );
 }
