@@ -5,6 +5,14 @@ function PlayerRecords(props) {
     const playersStats = props.playersStats;
     const players = Object.keys(playersStats);
 
+    let mostMondayWinsPlayer = [];
+    let mostMondayWins = 0;
+    let mostTuesdayWinsPlayer = [];
+    let mostTuesdayWins = 0;
+    let mostThursdayWinsPlayer = [];
+    let mostThursdayWins = 0;
+    let mostSaturdayWinsPlayer = [];
+    let mostSaturdayWins = 0;
     let mostGamesPlayer = [];
     let mostGames = 0;
     let mostWinsPlayer = [];
@@ -22,8 +30,50 @@ function PlayerRecords(props) {
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
 
+        const { monday, tuesday, thursday, saturday } = p;
+        const mondayWins = monday.wins;
+        const mondayGames = monday.games;
+        const mondayAvg = monday.aggDiff / mondayGames;
+        const tuesdayWins = tuesday.wins;
+        const tuesdayGames = tuesday.games;
+        const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
+        const thursdayWins = thursday.wins;
+        const thursdayGames = thursday.games;
+        const thursdayAvg = thursday.aggDiff / thursdayGames;
+        const saturdayWins = saturday.wins;
+        const saturdayGames = saturday.games;
+        const saturdayAvg = saturday.aggDiff / saturdayGames;
+
         const playedMinGames = totalGames >= 6 ? true : false;
-        // TODO the python script is picking up players matches for other teams e.g. Mario/ Shirley
+
+        if (mondayWins >= mostMondayWins) {
+            if (mondayWins > mostMondayWins) {
+                mostMondayWinsPlayer = [];
+                mostMondayWins = mondayWins;
+            }
+            mostMondayWinsPlayer.push(player);
+        }
+        if (tuesdayWins >= mostTuesdayWins) {
+            if (tuesdayWins > mostTuesdayWins) {
+                mostTuesdayWinsPlayer = [];
+                mostTuesdayWins = tuesdayWins;
+            }
+            mostTuesdayWinsPlayer.push(player);
+        }
+        if (thursdayWins >= mostThursdayWins) {
+            if (thursdayWins > mostThursdayWins) {
+                mostThursdayWinsPlayer = [];
+                mostThursdayWins = thursdayWins;
+            }
+            mostThursdayWinsPlayer.push(player);
+        }
+        if (saturdayWins >= mostSaturdayWins) {
+            if (saturdayWins > mostSaturdayWins) {
+                mostSaturdayWinsPlayer = [];
+                mostSaturdayWins = saturdayWins;
+            }
+            mostSaturdayWinsPlayer.push(player);
+        }
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
                 mostGamesPlayer = [];
@@ -68,6 +118,7 @@ function PlayerRecords(props) {
     return (
         <div>
             <h3>Player Records</h3>
+            {/* TODO also do average and most games played */}
             {mostGames > 0 && (
                 <p>
                     Most games played = {mostGames} (
@@ -79,6 +130,32 @@ function PlayerRecords(props) {
                     Most wins = {mostWins} ({capitalizeText(mostWinsPlayer)})
                 </p>
             )}
+            <div>
+                {mostMondayWins > 0 && (
+                    <p>
+                        Most Monday wins = {mostMondayWins} (
+                        {capitalizeText(mostMondayWinsPlayer)})
+                    </p>
+                )}
+                {mostTuesdayWins > 0 && (
+                    <p>
+                        Most Tuesday wins = {mostTuesdayWins} (
+                        {capitalizeText(mostTuesdayWinsPlayer)})
+                    </p>
+                )}
+                {mostThursdayWins > 0 && (
+                    <p>
+                        Most Thursday wins = {mostThursdayWins} (
+                        {capitalizeText(mostThursdayWinsPlayer)})
+                    </p>
+                )}
+                {mostSaturdayWins > 0 && (
+                    <p>
+                        Most Saturday wins = {mostSaturdayWins} (
+                        {capitalizeText(mostSaturdayWinsPlayer)})
+                    </p>
+                )}
+            </div>
             {bestWinPerc > 0 && (
                 <p>
                     Best win percentage = {bestWinPerc.toFixed(0)}% (

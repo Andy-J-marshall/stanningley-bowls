@@ -42,8 +42,6 @@ function IndividualTeamStats(props) {
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
 
-    // TODO display records?
-
     return (
         <div id={day + 'TeamResults'}>
             <h4>Stats for {day}</h4>
