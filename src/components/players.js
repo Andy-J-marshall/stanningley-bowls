@@ -40,6 +40,10 @@ function Players(props) {
         totalHomeScoreAgainst,
         totalAwayScore,
         totalAwayScoreAgainst,
+        monday,
+        tuesday,
+        thursday,
+        saturday,
     } = playerData;
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
@@ -59,9 +63,27 @@ function Players(props) {
     beatenOpponents = capitalizeText(beatenOpponents);
     beatenByTeam = capitalizeText(beatenByTeam);
     beatenTeam = capitalizeText(beatenTeam);
-    const pairsGames = pairLosses + pairWins;
+    const pairsGames = pairLosses + pairWins;    
+    const mondayWins = monday.wins;
+    const mondayGames = monday.games;
+    const mondayAvg = monday.aggDiff / mondayGames;
+    const tuesdayWins = tuesday.wins;
+    const tuesdayGames = tuesday.games;
+    const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
+    const thursdayWins = thursday.wins;
+    const thursdayGames = thursday.games;
+    const thursdayAvg = thursday.aggDiff / thursdayGames;
+    const saturdayWins = saturday.wins;
+    const saturdayGames = saturday.games;
+    const saturdayAvg = saturday.aggDiff / saturdayGames;
+    let daysPlayedCount = [
+        { day: 'Monday', gamesPlayed: mondayGames },
+        { day: 'Tuesday', gamesPlayed: tuesdayGames },
+        { day: 'Thursday', gamesPlayed: thursdayGames },
+        { day: 'Saturday', gamesPlayed: saturdayGames },
+    ]
+    daysPlayedCount = daysPlayedCount.filter((day) => day.gamesPlayed > 0);
 
-    const daysPlayedCount = calculateDaysPlayedCount(dayPlayed);
     const pairsPartnersCount = calculatePairsPartnersCount(pairsPartners);
     const pairsPartnersCountWins =
         calculatePairsPartnersCount(winningPairsPartners);
@@ -86,30 +108,6 @@ function Players(props) {
             }
         });
         return partnersReturnObj;
-    }
-
-    function calculateDaysPlayedCount(daysPlayed) {
-        const monday = daysPlayed.filter(
-            (day) => day.toLowerCase() === 'monday'
-        ).length;
-        const tuesday = daysPlayed.filter(
-            (day) => day.toLowerCase() === 'tuesday'
-        ).length;
-        const thursday = daysPlayed.filter(
-            (day) => day.toLowerCase() === 'thursday'
-        ).length;
-        const saturday = daysPlayed.filter(
-            (day) => day.toLowerCase() === 'saturday'
-        ).length;
-
-        const returnObj = [
-            { day: 'Monday', gamesPlayed: monday },
-            { day: 'Tuesday', gamesPlayed: tuesday },
-            { day: 'Thursday', gamesPlayed: thursday },
-            { day: 'Saturday', gamesPlayed: saturday },
-        ];
-
-        return returnObj.filter((day) => day.gamesPlayed > 0);
     }
 
     // TODO handle plurals
@@ -140,10 +138,16 @@ function Players(props) {
 
                             <h5>Results</h5>
                             {totalWins > 0 && (
-                                <p>
-                                    {totalWins} wins ({homeWins} home,{' '}
-                                    {awayWins} away, {cupWins} cup)
-                                </p>
+                                <div>
+                                    <p>
+                                        {totalWins} wins ({homeWins} home,{' '}
+                                        {awayWins} away, {cupWins} cup)
+                                    </p>
+                                    {mondayGames > 0 && <p>{mondayWins} Monday wins</p>}
+                                    {tuesdayGames > 0 && <p>{tuesdayWins} Tuesday wins</p>}
+                                    {thursdayGames > 0 && <p>{thursdayWins} Thursday wins</p>}
+                                    {saturdayGames > 0 && <p>{saturdayWins} Saturday wins</p>}
+                                </div>
                             )}
                             {totalLosses > 0 && (
                                 <p>
@@ -251,6 +255,30 @@ function Players(props) {
                                             <p>
                                                 Away average =
                                                 {awayAverage.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {mondayGames > 0 && (
+                                            <p>
+                                                Monday average =
+                                                {mondayAvg.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {tuesdayGames > 0 && (
+                                            <p>
+                                                Tuesday average =
+                                                {tuesdayAvg.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {thursdayGames > 0 && (
+                                            <p>
+                                                Thursday average =
+                                                {thursdayAvg.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {saturdayGames > 0 && (
+                                            <p>
+                                                Saturday average =
+                                                {saturdayAvg.toFixed(2)}
                                             </p>
                                         )}
                                     </div>

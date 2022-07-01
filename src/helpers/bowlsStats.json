@@ -57,7 +57,11 @@
         "Holbeck Moor (Tuesday)",
         "Gildersome (Tuesday)"
       ],
-      "beatenByTeam": []
+      "beatenByTeam": [],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 8, "wins": 8, "aggDiff": 81 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "duncan mcphail": {
       "totalScore": 41,
@@ -115,7 +119,11 @@
         "Gildersome (Tuesday)",
         "Cross Flatts Pk (Thursday)"
       ],
-      "beatenByTeam": ["Horsforth Woodside. (Tuesday)", "Barwick BC (Tuesday)"]
+      "beatenByTeam": ["Horsforth Woodside. (Tuesday)", "Barwick BC (Tuesday)"],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 8, "wins": 6, "aggDiff": 63 },
+      "thursday": { "games": 1, "wins": 1, "aggDiff": 5 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "stewart watson": {
       "totalScore": 44,
@@ -175,7 +183,11 @@
         "Gildersome (Tuesday)",
         "Pudsey Park A (Thursday)"
       ],
-      "beatenByTeam": ["Harehills Park A (Tuesday)"]
+      "beatenByTeam": ["Harehills Park A (Tuesday)"],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 8, "wins": 7, "aggDiff": 58 },
+      "thursday": { "games": 1, "wins": 1, "aggDiff": 19 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "dave hudson": {
       "totalScore": 22,
@@ -229,7 +241,11 @@
         "Pudsey Park A (Thursday)",
         "Cross Flatts Pk (Thursday)",
         "Churwell Pk (Thursday)"
-      ]
+      ],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 7, "wins": 3, "aggDiff": -12 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
       "totalScore": 75,
@@ -320,7 +336,11 @@
         "Churwell Pk (Thursday)",
         "Cranmore (Saturday)",
         "Sth Leeds Cons B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 1, "wins": 1, "aggDiff": 4 },
+      "thursday": { "games": 7, "wins": 2, "aggDiff": 9 },
+      "saturday": { "games": 10, "wins": 8, "aggDiff": 66 }
     },
     "alison woodfine": {
       "totalScore": 66,
@@ -405,7 +425,11 @@
         "Cranmore (Saturday)",
         "New Wortley (Saturday)",
         "Western Flatts (Saturday)"
-      ]
+      ],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 7, "wins": 4, "aggDiff": 0 },
+      "saturday": { "games": 9, "wins": 6, "aggDiff": 43 }
     },
     "joey broadbent": {
       "totalScore": 25,
@@ -449,7 +473,11 @@
         "Sth Leeds Cons B (Saturday)",
         "Sth Leeds Cons B (Saturday)"
       ],
-      "beatenByTeam": []
+      "beatenByTeam": [],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 5, "wins": 5, "aggDiff": 61 }
     },
     "neil porter": {
       "totalScore": 45,
@@ -511,7 +539,11 @@
         "Middleton Park (Saturday)",
         "Sth Leeds Cons B (Saturday)"
       ],
-      "beatenByTeam": []
+      "beatenByTeam": [],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 9, "wins": 9, "aggDiff": 91 }
     },
     "jack roberts": {
       "totalScore": 1,
@@ -546,7 +578,11 @@
       "beatenByTeam": [
         "Middleton Community (Thursday)",
         "Sth Leeds Cons B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 1, "wins": 0, "aggDiff": -14 },
+      "saturday": { "games": 1, "wins": 0, "aggDiff": -20 }
     },
     "jeff allman": {
       "totalScore": 51,
@@ -642,7 +678,11 @@
         "Cross Flatts Pk (Thursday)",
         "Churwell Pk (Thursday)",
         "Middleton Park (Saturday)"
-      ]
+      ],
+      "monday": { "games": 8, "wins": 4, "aggDiff": -12 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 5, "wins": 1, "aggDiff": -26 },
+      "saturday": { "games": 3, "wins": 2, "aggDiff": -6 }
     },
     "shirley allman": {
       "totalScore": 23,
@@ -708,7 +748,11 @@
         "Crossgates BC (Monday)",
         "Churwell Pk (Thursday)",
         "Gildersome B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 4, "wins": 1, "aggDiff": -31 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 2, "wins": 1, "aggDiff": 11 },
+      "saturday": { "games": 2, "wins": 1, "aggDiff": -1 }
     },
     "john armitage": {
       "totalScore": 40,
@@ -767,7 +811,11 @@
         "Gildersome (Tuesday)",
         "Middleton Community (Thursday)"
       ],
-      "beatenByTeam": []
+      "beatenByTeam": [],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 7, "wins": 7, "aggDiff": 69 },
+      "thursday": { "games": 1, "wins": 1, "aggDiff": 2 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "mario biancardo": {
       "totalScore": 85,
@@ -861,7 +909,11 @@
         "Crossgates BC (Monday)",
         "West Royd Park (Tuesday)",
         "Western Flatts (Tuesday)"
-      ]
+      ],
+      "monday": { "games": 11, "wins": 9, "aggDiff": 85 },
+      "tuesday": { "games": 8, "wins": 6, "aggDiff": 55 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "shirley biancardo": {
       "totalScore": 83,
@@ -950,7 +1002,11 @@
         "New Farnley B (Monday)",
         "Crossgates BC (Monday)",
         "Harehills Park A (Tuesday)"
-      ]
+      ],
+      "monday": { "games": 11, "wins": 8, "aggDiff": 52 },
+      "tuesday": { "games": 8, "wins": 7, "aggDiff": 66 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "paul bowes": {
       "totalScore": 123,
@@ -1080,7 +1136,11 @@
         "Gildersome (Tuesday)",
         "Pudsey Park A (Thursday)",
         "Churwell Pk (Thursday)"
-      ]
+      ],
+      "monday": { "games": 7, "wins": 4, "aggDiff": 24 },
+      "tuesday": { "games": 6, "wins": 4, "aggDiff": 50 },
+      "thursday": { "games": 5, "wins": 3, "aggDiff": 42 },
+      "saturday": { "games": 9, "wins": 9, "aggDiff": 135 }
     },
     "clifford brogie": {
       "totalScore": 45,
@@ -1153,7 +1213,11 @@
         "Rothwell BC (Monday)",
         "New Farnley B (Monday)",
         "Churwell Pk (Thursday)"
-      ]
+      ],
+      "monday": { "games": 7, "wins": 3, "aggDiff": -18 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 5, "wins": 4, "aggDiff": 19 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "craig clarkson": {
       "totalScore": 30,
@@ -1210,7 +1274,11 @@
         "New Farnley B (Monday)",
         "Crossgates BC (Monday)",
         "Sth Lds Cons (Monday)"
-      ]
+      ],
+      "monday": { "games": 8, "wins": 3, "aggDiff": -17 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "steve gardner": {
       "totalScore": 111,
@@ -1314,7 +1382,11 @@
         "Gildersome (Tuesday)",
         "Cross Flatts Pk (Thursday)",
         "Sth Leeds Cons B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 2, "wins": 2, "aggDiff": 19 },
+      "tuesday": { "games": 7, "wins": 5, "aggDiff": 23 },
+      "thursday": { "games": 6, "wins": 5, "aggDiff": 57 },
+      "saturday": { "games": 9, "wins": 8, "aggDiff": 93 }
     },
     "andy marshall": {
       "totalScore": 71,
@@ -1430,7 +1502,11 @@
         "New Wortley (Saturday)",
         "Western Flatts (Saturday)",
         "Sth Leeds Cons B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 11, "wins": 7, "aggDiff": 57 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 7, "wins": 3, "aggDiff": 13 }
     },
     "alyssa randell": {
       "totalScore": 46,
@@ -1525,7 +1601,11 @@
         "Gildersome (Monday)",
         "Whitkirk A (Monday)",
         "Sth Lds Cons (Monday)"
-      ]
+      ],
+      "monday": { "games": 11, "wins": 7, "aggDiff": 42 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "andy waller": {
       "totalScore": 109,
@@ -1649,7 +1729,11 @@
         "Cross Flatts Pk (Thursday)",
         "Churwell Pk (Thursday)",
         "Cranmore (Saturday)"
-      ]
+      ],
+      "monday": { "games": 6, "wins": 4, "aggDiff": 43 },
+      "tuesday": { "games": 3, "wins": 2, "aggDiff": 24 },
+      "thursday": { "games": 7, "wins": 2, "aggDiff": -3 },
+      "saturday": { "games": 9, "wins": 8, "aggDiff": 68 }
     },
     "kevin waller": {
       "totalScore": 37,
@@ -1707,7 +1791,11 @@
       "beatenByTeam": [
         "Middleton Comm (Saturday)",
         "Sth Leeds Cons B (Saturday)"
-      ]
+      ],
+      "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 1, "wins": 1, "aggDiff": 11 },
+      "saturday": { "games": 7, "wins": 5, "aggDiff": 42 }
     },
     "bernie miller": {
       "totalScore": 3,
@@ -1739,7 +1827,11 @@
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": [],
-      "beatenByTeam": ["Whitkirk A (Monday)", "Crossgates BC (Monday)"]
+      "beatenByTeam": ["Whitkirk A (Monday)", "Crossgates BC (Monday)"],
+      "monday": { "games": 2, "wins": 0, "aggDiff": -24 },
+      "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     }
   },
   "teamResults": [
