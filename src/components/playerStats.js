@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Player from './players';
 import PlayerRecords from './playerRecords';
 import { ListGroup, Button } from 'react-bootstrap';
-import bowlsStats from '../helpers/bowlsStats.json';
+import bowlsStats from '../data/bowlsStats.json';
 
 function PlayerStats() {
     const [showStats, setShowStats] = useState(false);

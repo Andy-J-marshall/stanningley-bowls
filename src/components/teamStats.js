@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamRecords from './teamRecords';
-import bowlsStats from '../helpers/bowlsStats.json';
+import bowlsStats from '../data/bowlsStats.json';
 
 function TeamStats() {
     const [showStats, setShowStats] = useState(false);
