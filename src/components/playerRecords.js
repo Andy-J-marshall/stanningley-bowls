@@ -13,6 +13,14 @@ function PlayerRecords(props) {
     let mostThursdayWins = 0;
     let mostSaturdayWinsPlayer = [];
     let mostSaturdayWins = 0;
+    let bestMondayAveragePlayer = [];
+    let bestMondayAverage = -21;
+    let bestTuesdayAveragePlayer = [];
+    let bestTuesdayAverage = -21;
+    let bestThursdayAveragePlayer = [];
+    let bestThursdayAverage = -21;
+    let bestSaturdayAveragePlayer = [];
+    let bestSaturdayAverage = -21;
     let mostGamesPlayer = [];
     let mostGames = 0;
     let mostWinsPlayer = [];
@@ -29,6 +37,9 @@ function PlayerRecords(props) {
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
+        const winPerc = (totalWins / totalGames) * 100;
+        const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
+        const score = p.totalScore / totalGames;
 
         const { monday, tuesday, thursday, saturday } = p;
         const mondayWins = monday.wins;
@@ -44,35 +55,67 @@ function PlayerRecords(props) {
         const saturdayGames = saturday.games;
         const saturdayAvg = saturday.aggDiff / saturdayGames;
 
-        const playedMinGames = totalGames >= 6 ? true : false;
+        const playedMinGames = totalGames >= 10 ? true : false;
 
+        if (mondayAvg >= bestMondayAverage && mondayGames >= 6) {
+            if (mondayAvg > bestMondayAverage) {
+                bestMondayAveragePlayer = [];
+                bestMondayAverage = mondayAvg;
+            }
+            bestMondayAveragePlayer.push(`${player} - ${mondayGames} games`);
+        }
+        if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= 6) {
+            if (tuesdayAvg > bestTuesdayAverage) {
+                bestTuesdayAveragePlayer = [];
+                bestTuesdayAverage = tuesdayAvg;
+            }
+            bestTuesdayAveragePlayer.push(`${player} - ${tuesdayGames} games`);
+        }
+        if (thursdayAvg >= bestThursdayAverage && thursdayGames >= 6) {
+            if (thursdayAvg > bestThursdayAverage) {
+                bestThursdayAveragePlayer = [];
+                bestThursdayAverage = thursdayAvg;
+            }
+            bestThursdayAveragePlayer.push(
+                `${player} - ${thursdayGames} games`
+            );
+        }
+        if (saturdayAvg >= bestSaturdayAverage && saturdayGames >= 6) {
+            if (saturdayAvg > bestSaturdayAverage) {
+                bestSaturdayAveragePlayer = [];
+                bestSaturdayAverage = saturdayAvg;
+            }
+            bestSaturdayAveragePlayer.push(
+                `${player} - ${saturdayGames} games`
+            );
+        }
         if (mondayWins >= mostMondayWins) {
             if (mondayWins > mostMondayWins) {
                 mostMondayWinsPlayer = [];
                 mostMondayWins = mondayWins;
             }
-            mostMondayWinsPlayer.push(player);
+            mostMondayWinsPlayer.push(`${player} - ${mondayGames} games`);
         }
         if (tuesdayWins >= mostTuesdayWins) {
             if (tuesdayWins > mostTuesdayWins) {
                 mostTuesdayWinsPlayer = [];
                 mostTuesdayWins = tuesdayWins;
             }
-            mostTuesdayWinsPlayer.push(player);
+            mostTuesdayWinsPlayer.push(`${player} - ${tuesdayGames} games`);
         }
         if (thursdayWins >= mostThursdayWins) {
             if (thursdayWins > mostThursdayWins) {
                 mostThursdayWinsPlayer = [];
                 mostThursdayWins = thursdayWins;
             }
-            mostThursdayWinsPlayer.push(player);
+            mostThursdayWinsPlayer.push(`${player} - ${thursdayGames} games`);
         }
         if (saturdayWins >= mostSaturdayWins) {
             if (saturdayWins > mostSaturdayWins) {
                 mostSaturdayWinsPlayer = [];
                 mostSaturdayWins = saturdayWins;
             }
-            mostSaturdayWinsPlayer.push(player);
+            mostSaturdayWinsPlayer.push(`${player} - ${saturdayGames} games`);
         }
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
@@ -86,9 +129,8 @@ function PlayerRecords(props) {
                 mostWinsPlayer = [];
                 mostWins = totalWins;
             }
-            mostWinsPlayer.push(`${player} -${totalGames} games`);
+            mostWinsPlayer.push(`${player} - ${totalGames} games`);
         }
-        const winPerc = (totalWins / totalGames) * 100;
         if (winPerc >= bestWinPerc && playedMinGames) {
             if (winPerc > bestWinPerc) {
                 bestWinPercPlayer = [];
@@ -96,7 +138,6 @@ function PlayerRecords(props) {
             }
             bestWinPercPlayer.push(`${player} - ${totalGames} games`);
         }
-        const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
         if (average >= bestAverage && playedMinGames) {
             if (average > bestAverage) {
                 bestAveragePlayer = [];
@@ -104,8 +145,6 @@ function PlayerRecords(props) {
             }
             bestAveragePlayer.push(`${player} - ${totalGames} games`);
         }
-
-        const score = p.totalScore / totalGames;
         if (score >= bestScore && playedMinGames) {
             if (score > bestScore) {
                 bestScorePlayer = [];
@@ -117,8 +156,10 @@ function PlayerRecords(props) {
 
     return (
         <div>
-            <h3>Player Records</h3>
-            {/* TODO also do average and most games played */}
+            <h4>Player Records</h4>
+            <p>
+                <b>Combined Team Records</b>
+            </p>
             {mostGames > 0 && (
                 <p>
                     Most games played = {mostGames} (
@@ -127,44 +168,19 @@ function PlayerRecords(props) {
             )}
             {mostWins > 0 && (
                 <p>
-                    Most wins = {mostWins} ({capitalizeText(mostWinsPlayer)})
+                    Most combined wins = {mostWins} (
+                    {capitalizeText(mostWinsPlayer)})
                 </p>
             )}
-            <div>
-                {mostMondayWins > 0 && (
-                    <p>
-                        Most Monday wins = {mostMondayWins} (
-                        {capitalizeText(mostMondayWinsPlayer)})
-                    </p>
-                )}
-                {mostTuesdayWins > 0 && (
-                    <p>
-                        Most Tuesday wins = {mostTuesdayWins} (
-                        {capitalizeText(mostTuesdayWinsPlayer)})
-                    </p>
-                )}
-                {mostThursdayWins > 0 && (
-                    <p>
-                        Most Thursday wins = {mostThursdayWins} (
-                        {capitalizeText(mostThursdayWinsPlayer)})
-                    </p>
-                )}
-                {mostSaturdayWins > 0 && (
-                    <p>
-                        Most Saturday wins = {mostSaturdayWins} (
-                        {capitalizeText(mostSaturdayWinsPlayer)})
-                    </p>
-                )}
-            </div>
             {bestWinPerc > 0 && (
                 <p>
                     Best win percentage = {bestWinPerc.toFixed(0)}% (
                     {capitalizeText(bestWinPercPlayer)})
                 </p>
             )}
-            {bestAverage > -21 && (
+            {bestAverage >= -21 && (
                 <p>
-                    Best average = {bestAverage.toFixed(2)} (
+                    Best combined average = {bestAverage.toFixed(2)} (
                     {capitalizeText(bestAveragePlayer)})
                 </p>
             )}
@@ -174,7 +190,83 @@ function PlayerRecords(props) {
                     {capitalizeText(bestScorePlayer)})
                 </p>
             )}
-            <p>* minimum of 6 games played</p>
+            <p>
+                * Combined averages/ win percentage counted after minimum of 10
+                games
+            </p>
+            <h4>Individual Team Records</h4>
+            <div>
+                <p>
+                    <b>Monday</b>
+                </p>
+                {mostMondayWins > 0 && (
+                    <p>
+                        Most wins = {mostMondayWins} (
+                        {capitalizeText(mostMondayWinsPlayer)})
+                    </p>
+                )}
+                {bestMondayAverage >= -21 && (
+                    <p>
+                        Best average = {bestMondayAverage.toFixed(2)} (
+                        {capitalizeText(bestMondayAveragePlayer)})
+                    </p>
+                )}
+            </div>
+            <div>
+                <p>
+                    <b>Tuesday</b>
+                </p>
+                {mostTuesdayWins > 0 && (
+                    <p>
+                        Most wins = {mostTuesdayWins} (
+                        {capitalizeText(mostTuesdayWinsPlayer)})
+                    </p>
+                )}
+                {bestTuesdayAverage >= -21 && (
+                    <p>
+                        Best Average = {bestTuesdayAverage.toFixed(2)} (
+                        {capitalizeText(bestTuesdayAveragePlayer)})
+                    </p>
+                )}
+            </div>
+            <div>
+                <p>
+                    <b>Thursday</b>
+                </p>
+                {mostThursdayWins > 0 && (
+                    <p>
+                        Most wins = {mostThursdayWins} (
+                        {capitalizeText(mostThursdayWinsPlayer)})
+                    </p>
+                )}
+                {bestThursdayAverage >= -21 && (
+                    <p>
+                        Best Average = {bestThursdayAverage.toFixed(2)}{' '}
+                        ({capitalizeText(bestThursdayAveragePlayer)})
+                    </p>
+                )}
+            </div>
+            <div>
+                <p>
+                    <b>Saturday</b>
+                </p>
+                {mostSaturdayWins > 0 && (
+                    <p>
+                        Most wins = {mostSaturdayWins} (
+                        {capitalizeText(mostSaturdayWinsPlayer)})
+                    </p>
+                )}
+                {bestSaturdayAverage >= -21 && (
+                    <p>
+                        Best Average = {bestSaturdayAverage.toFixed(2)}{' '}
+                        ({capitalizeText(bestSaturdayAveragePlayer)})
+                    </p>
+                )}
+            </div>
+            <p>
+                * Individual team averages/ win percentage counted after minimum
+                of 6 games
+            </p>
         </div>
     );
 }
