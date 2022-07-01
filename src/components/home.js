@@ -5,6 +5,8 @@ import PlayerStats from './playerStats';
 import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
 import bowlsStats from '../data/bowlsStats.json';
+import smallLogo from './brand-logo-tiny.png';
+import logo from './brand-logo.png';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
@@ -62,22 +64,19 @@ function Home() {
             setShowTeamStats(false);
         }
     }
-
     return (
         <div id="home">
-            <Navbar id='navbar' fixed="top" bg="light" variant="light">
-                <Navbar.Brand href="#home">SPBC</Navbar.Brand>
-                {/* TODO do this */}
-                {/* <Navbar.Brand href='#home'>
+            <Navbar id="navbar" fixed="top" bg="light" variant="light">
+                <Navbar.Brand href="#home">
                     <img
-                        alt='logo'
-                        src='/logo.png'
-                        width='30'
-                        height='30'
-                        className='d-inline-block align-top'
-                    />{' '}
+                        alt="logo"
+                        src={smallLogo}
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />
                     SPBC
-                </Navbar.Brand> */}
+                </Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link onSelect={displayPlayerRecords} href="#home">
                         PLAYER RECORDS
@@ -94,21 +93,26 @@ function Home() {
                 </Nav>
             </Navbar>
             <div id="header">
-                <h1 style={{ fontSize: '4rem' }}>
-                    Stanningley Park Bowling Club
-                </h1>
+                <img
+                    alt="logo"
+                    src={logo}
+                    width="240"
+                    height="240"
+                    className="d-inline-block align-top"
+                />
             </div>
             {!showPlayerStats &&
                 !showTeamStats &&
                 !showTeamRecords &&
                 !showPlayerRecords && (
-                    <div id='welcome-text'>
+                    <div id="welcome-text">
                         <p>
                             Welcome to Stanningley Park Crown Green Bowling
                             Club's website
                         </p>
                     </div>
                 )}
+            {/* TODO should I be passing the stats around or importing? */}
             {showPlayerRecords && <PlayerRecords playersStats={playersStats} />}
             {showTeamRecords && <TeamRecords stats={teamStats} />}
             {showPlayerStats && <PlayerStats />}
