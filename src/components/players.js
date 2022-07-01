@@ -28,7 +28,6 @@ function Players(props) {
         beatenByTeam,
         beatenOpponents,
         beatenTeam,
-        dayPlayed,
         pairLosses,
         pairWins,
         pairsPartners,

@@ -1,32 +1,93 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 import Player from './players';
-import { ListGroup } from 'react-bootstrap';
+import { ListGroup, Form, Button } from 'react-bootstrap';
 import bowlsStats from '../data/bowlsStats.json';
+import { Typeahead } from 'react-bootstrap-typeahead';
+
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStats() {
+    const [searchedPlayerName, setSearchedPlayerName] = useState('');
+    const [value, setValue] = useState(['']);
+
     const playersStats = bowlsStats.playerResults;
     const keys = Object.keys(playersStats);
+    const playerNameArray = keys.sort().map((p) => p.toUpperCase());
 
-    // TODO get rid of the blue bar?
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setValue(['']);
+        const searchedName = event.target[0].value.trim();
+        setSearchedPlayerName(searchedName.toLowerCase());
+    };
+
+    const handleChange = (selected) => {
+        setValue(selected);
+    };
+
+    function showPlayerStats(index, player, playerName) {
+        return (
+            <Player
+                key={index}
+                index={index}
+                player={player}
+                name={playerName}
+                playersStats={playersStats}
+            ></Player>
+        );
+    }
+
     return (
-        <div id="player-stats">
+        <div id='player-stats'>
             <h1>Player Stats</h1>
-            <ListGroup>
-                {keys.map((p, index) => {
-                    const playerName = keys[index];
-                    return (
-                        <Player
-                            key={index}
-                            index={index}
-                            player={p}
-                            name={playerName}
-                            playersStats={playersStats}
-                        >
-                            {JSON.stringify(playersStats[p])}
-                        </Player>
-                    );
-                })}
-            </ListGroup>
+            <Form onSubmit={handleSubmit}>
+                <Fragment>
+                    <Form.Group className='mb-3'>
+                        <Typeahead
+                            id='player-search'
+                            placeholder='Search for player'
+                            onChange={handleChange}
+                            options={['SHOW ALL'].concat(playerNameArray)}
+                            selected={value}
+                            size='lg'
+                        />
+                    </Form.Group>
+                </Fragment>
+                <Button variant='light' type='submit'>
+                    Search
+                </Button>
+            </Form>
+            <br />
+
+            {/* Shows all players */}
+            {(!searchedPlayerName ||
+                searchedPlayerName.toLowerCase() === 'show all') && (
+                <ListGroup>
+                    {keys.map((p, index) => {
+                        const playerName = keys[index];
+                        {
+                            return showPlayerStats(index, p, playerName);
+                        }
+                    })}
+                </ListGroup>
+            )}
+
+            {/* Only shows searched for player */}
+            {searchedPlayerName && (
+                <ListGroup>
+                    {keys.map((p, index) => {
+                        const playerName = keys[index];
+                        if (
+                            playerName.toLowerCase() ===
+                            searchedPlayerName.toLowerCase()
+                        ) {
+                            {
+                                return showPlayerStats(index, p, playerName);
+                            }
+                        }
+                    })}
+                </ListGroup>
+            )}
         </div>
     );
 }
