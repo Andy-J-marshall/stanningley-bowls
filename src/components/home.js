@@ -64,21 +64,32 @@ function Home() {
     }
 
     return (
-        <div>
-            <Navbar fixed="top" bg="light" variant="light">
-                <Navbar.Brand href="#header">SPBC</Navbar.Brand>
+        <div id="home">
+            <Navbar id='navbar' fixed="top" bg="light" variant="light">
+                <Navbar.Brand href="#home">SPBC</Navbar.Brand>
+                {/* TODO do this */}
+                {/* <Navbar.Brand href='#home'>
+                    <img
+                        alt='logo'
+                        src='/logo.png'
+                        width='30'
+                        height='30'
+                        className='d-inline-block align-top'
+                    />{' '}
+                    SPBC
+                </Navbar.Brand> */}
                 <Nav className="me-auto">
-                    <Nav.Link onSelect={displayPlayerRecords} href="#header">
-                        Player Records
+                    <Nav.Link onSelect={displayPlayerRecords} href="#home">
+                        PLAYER RECORDS
                     </Nav.Link>
-                    <Nav.Link onSelect={displayTeamRecords} href="#header">
-                        Team Records
+                    <Nav.Link onSelect={displayTeamRecords} href="#home">
+                        TEAM RECORDS
                     </Nav.Link>
-                    <Nav.Link onSelect={displayPlayerStats} href="#header">
-                        Player Stats
+                    <Nav.Link onSelect={displayPlayerStats} href="#home">
+                        PLAYER STATS
                     </Nav.Link>
-                    <Nav.Link onSelect={displayTeamStats} href="#header">
-                        Team Stats
+                    <Nav.Link onSelect={displayTeamStats} href="#home">
+                        TEAM STATS
                     </Nav.Link>
                 </Nav>
             </Navbar>
@@ -91,7 +102,7 @@ function Home() {
                 !showTeamStats &&
                 !showTeamRecords &&
                 !showPlayerRecords && (
-                    <div>
+                    <div id='welcome-text'>
                         <p>
                             Welcome to Stanningley Park Crown Green Bowling
                             Club's website

@@ -7,17 +7,20 @@ h2 {
 }
 
 body {
-  background-color: white;
+  background-color: #efefef;
   margin: auto;
   width: 100%;
 }
 
 #root {
-  background-color: white;
+  background-color: #efefef;
   color: #112b3c;
   font-size: 20px;
   margin: auto;
   text-align: center;
+}
+#welcome-text, #team-records {
+  height:100vh;
 }
 
 #header {
@@ -26,4 +29,8 @@ body {
   margin-bottom: 2rem;
   background-color: #112b3c;
   color: #efefef;
+}
+
+#navbar, .me-auto {
+  margin-left: 0.7rem;
 }
