@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stanningley-bowls/static/css/main.e6dcac63.chunk.css",
+    "main.css": "/stanningley-bowls/static/css/main.0e404234.chunk.css",
     "main.js": "/stanningley-bowls/static/js/main.06294f5e.chunk.js",
     "main.js.map": "/stanningley-bowls/static/js/main.06294f5e.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js",
@@ -10,7 +10,7 @@
     "static/js/2.3c9088a7.chunk.js.map": "/stanningley-bowls/static/js/2.3c9088a7.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
-    "static/css/main.e6dcac63.chunk.css.map": "/stanningley-bowls/static/css/main.e6dcac63.chunk.css.map",
+    "static/css/main.0e404234.chunk.css.map": "/stanningley-bowls/static/css/main.0e404234.chunk.css.map",
     "static/js/2.3c9088a7.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.3c9088a7.chunk.js.LICENSE.txt",
     "static/media/brand-logo-tiny.923a3133.png": "/stanningley-bowls/static/media/brand-logo-tiny.923a3133.png",
     "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.3ce3fbbd.js",
     "static/css/2.6087c55b.chunk.css",
     "static/js/2.3c9088a7.chunk.js",
-    "static/css/main.e6dcac63.chunk.css",
+    "static/css/main.0e404234.chunk.css",
     "static/js/main.06294f5e.chunk.js"
   ]
 }
