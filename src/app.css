@@ -26,6 +26,7 @@ body {
 
 #header {
   padding: 1.5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   background-color: #0081a4;
   color: #ffffff;
@@ -35,5 +36,5 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
 }
