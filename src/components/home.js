@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
 import TeamRecords from './teamRecords';
@@ -66,31 +66,56 @@ function Home() {
     }
     return (
         <div id="home">
-            <Navbar id="navbar" fixed="top" bg="light" variant="light">
-                <Navbar.Brand href="#home">
-                    <img
-                        alt="logo"
-                        src={smallLogo}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                    />
-                    SPBC
-                </Navbar.Brand>
-                <Nav className="me-auto">
-                    <Nav.Link onSelect={displayPlayerRecords} href="#home">
-                        PLAYER RECORDS
-                    </Nav.Link>
-                    <Nav.Link onSelect={displayTeamRecords} href="#home">
-                        TEAM RECORDS
-                    </Nav.Link>
-                    <Nav.Link onSelect={displayPlayerStats} href="#home">
-                        PLAYER STATS
-                    </Nav.Link>
-                    <Nav.Link onSelect={displayTeamStats} href="#home">
-                        TEAM STATS
-                    </Nav.Link>
-                </Nav>
+            <Navbar
+                collapseOnSelect
+                id="navbar"
+                fixed="top"
+                bg="light"
+                variant="light"
+                expand="md"
+            >
+                <Container fluid>
+                    <Navbar.Brand href="#home">
+                        <img
+                            alt="logo"
+                            src={smallLogo}
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />
+                        SPBC
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav
+                            className="me-auto"
+                            style={{ maxHeight: '700px' }}
+                            navbarScroll
+                        >
+                            <Nav.Link
+                                onSelect={displayPlayerRecords}
+                                href="#home"
+                            >
+                                PLAYER RECORDS
+                            </Nav.Link>
+                            <Nav.Link
+                                onSelect={displayTeamRecords}
+                                href="#home"
+                            >
+                                TEAM RECORDS
+                            </Nav.Link>
+                            <Nav.Link
+                                onSelect={displayPlayerStats}
+                                href="#home"
+                            >
+                                PLAYER STATS
+                            </Nav.Link>
+                            <Nav.Link onSelect={displayTeamStats} href="#home">
+                                TEAM STATS
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
             </Navbar>
             <div id="header">
                 <img

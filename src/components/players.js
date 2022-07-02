@@ -110,6 +110,7 @@ function Players(props) {
     }
 
     // TODO handle plurals
+    // TODO still want to use listgroups?
     return (
         <div>
             <ListGroup.Item key={index}>

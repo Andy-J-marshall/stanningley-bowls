@@ -154,6 +154,7 @@ function PlayerRecords(props) {
         }
     });
 
+    // TODO how to present? Tables? https://react-bootstrap.github.io/components/table/
     return (
         <div id='player-records'>
             <h1>Player Records</h1>
