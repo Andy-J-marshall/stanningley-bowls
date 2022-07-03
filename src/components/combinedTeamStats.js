@@ -30,7 +30,6 @@ function CombinedTeamStats(props) {
 
     return (
         <div id='combined-team-results'>
-            <h1>Combined Stats For All Teams</h1>
             <div id='combined-team-win-losses'>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>

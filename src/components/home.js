@@ -21,6 +21,8 @@ function Home() {
     // TODO what info should I default to?
     // TODO Handle multiple years worth of stats
 
+    // TODO also display pages if e.g.URL = team-stats
+    // TODO need to go to top of page when changing navbar page? If not then just default to #home
     function displayPlayerStats() {
         if (showPlayerStats) {
             setShowPlayerStats(false);
@@ -94,23 +96,26 @@ function Home() {
                         >
                             <Nav.Link
                                 onSelect={displayPlayerRecords}
-                                href="#home"
+                                href="#player-records"
                             >
                                 PLAYER RECORDS
                             </Nav.Link>
                             <Nav.Link
                                 onSelect={displayTeamRecords}
-                                href="#home"
+                                href="#team-records"
                             >
                                 TEAM RECORDS
                             </Nav.Link>
                             <Nav.Link
                                 onSelect={displayPlayerStats}
-                                href="#home"
+                                href="#player-stats"
                             >
                                 PLAYER STATS
                             </Nav.Link>
-                            <Nav.Link onSelect={displayTeamStats} href="#home">
+                            <Nav.Link
+                                onSelect={displayTeamStats}
+                                href="#team-stats"
+                            >
                                 TEAM STATS
                             </Nav.Link>
                         </Nav>
@@ -137,6 +142,7 @@ function Home() {
                         </p>
                     </div>
                 )}
+            {/* TODO create links for socials */}
             {/* TODO should I be passing the stats around or importing? */}
             {showPlayerRecords && <PlayerRecords playersStats={playersStats} />}
             {showTeamRecords && <TeamRecords stats={teamStats} />}

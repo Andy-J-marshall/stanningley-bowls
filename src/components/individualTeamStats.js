@@ -42,12 +42,8 @@ function IndividualTeamStats(props) {
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
 
-    // TODO use accordion component? https://react-bootstrap.github.io/components/accordion/
-    // or tabs? https://react-bootstrap.github.io/components/tabs/
-
     return (
         <div id={day + '-team-results'}>
-            <h4>Stats for {day}</h4>
             <div id={day + '-team-win-losses'}>
                 <p>Total games = {totalGames}</p>
                 <p>Total wins = {totalWins}</p>

@@ -40,7 +40,7 @@ function PlayerStats() {
     return (
         <div id='player-stats'>
             <h1>Player Stats</h1>
-            <Form className='center' onSubmit={handleSubmit}>
+            <Form id='player-search-form' className='center' onSubmit={handleSubmit}>
                 <Fragment>
                     <Form.Group className='mb-3'>
                         <Typeahead

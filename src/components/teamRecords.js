@@ -89,6 +89,7 @@ function TeamRecords(props) {
         }
     });
 
+    // TODO use accordion component? https://react-bootstrap.github.io/components/accordion/
     return (
         <div id="team-records">
             <h1>Team Records</h1>

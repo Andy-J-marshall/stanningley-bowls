@@ -32,9 +32,23 @@ body {
   color: #ffffff;
 }
 
+#player-search-form {
+  width: 70%;
+}
+
+.nav-tabs .nav-link {
+  color: #000;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
