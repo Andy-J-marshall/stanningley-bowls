@@ -38,7 +38,7 @@ function PlayerStats() {
     }
 
     return (
-        <div id='player-stats'>
+        <div id='player-stat'>
             <h1>Player Stats</h1>
             <Form id='player-search-form' className='center' onSubmit={handleSubmit}>
                 <Fragment>

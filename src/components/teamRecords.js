@@ -91,7 +91,7 @@ function TeamRecords(props) {
 
     // TODO use accordion component? https://react-bootstrap.github.io/components/accordion/
     return (
-        <div id="team-records">
+        <div id="team-record">
             <h1>Team Records</h1>
             {bestWinPercentage > 0 && (
                 <div>

@@ -17,12 +17,8 @@ function Home() {
     const playersStats = bowlsStats.playerResults;
     const teamStats = bowlsStats.teamResults;
 
-    // TODO decide how to display this information. Maybe records together? Use a nav bar?
-    // TODO what info should I default to?
     // TODO Handle multiple years worth of stats
-
     // TODO also display pages if e.g.URL = team-stats
-    // TODO need to go to top of page when changing navbar page? If not then just default to #home
     function displayPlayerStats() {
         window.scrollTo(0, 0);
         setShowPlayerStats(true);

@@ -64,7 +64,7 @@ function TeamStats() {
     return (
         <div>
             <TeamTabs
-                id="team-stats"
+                id="team-stat"
                 allComponent={allComponent()}
                 mondayComponent={mondayComponent()}
                 tuesdayComponent={tuesdayComponent()}
