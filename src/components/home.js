@@ -24,6 +24,7 @@ function Home() {
     // TODO also display pages if e.g.URL = team-stats
     // TODO need to go to top of page when changing navbar page? If not then just default to #home
     function displayPlayerStats() {
+        window.scrollTo(0, 0);
         setShowPlayerStats(true);
         setShowTeamStats(false);
         setShowPlayerRecords(false);
@@ -31,6 +32,7 @@ function Home() {
     }
 
     function displayTeamStats() {
+        window.scrollTo(0, 0);
         setShowTeamStats(true);
         setShowPlayerStats(false);
         setShowPlayerRecords(false);
@@ -38,6 +40,7 @@ function Home() {
     }
 
     function displayPlayerRecords() {
+        window.scrollTo(0, 0);
         setShowPlayerRecords(true);
         setShowTeamRecords(false);
         setShowPlayerStats(false);
@@ -45,11 +48,13 @@ function Home() {
     }
 
     function displayTeamRecords() {
+        window.scrollTo(0, 0);
         setShowTeamRecords(true);
         setShowPlayerRecords(false);
         setShowPlayerStats(false);
         setShowTeamStats(false);
     }
+
     return (
         <div id="home">
             <Navbar
