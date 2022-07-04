@@ -75,84 +75,84 @@ function PlayerRecords(props) {
                 bestMondayAveragePlayer = [];
                 bestMondayAverage = mondayAvg;
             }
-            bestMondayAveragePlayer.push(`${player}(${mondayGames})`);
+            bestMondayAveragePlayer.push(`${player} (${mondayGames})`);
         }
         if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= 6) {
             if (tuesdayAvg > bestTuesdayAverage) {
                 bestTuesdayAveragePlayer = [];
                 bestTuesdayAverage = tuesdayAvg;
             }
-            bestTuesdayAveragePlayer.push(`${player}(${tuesdayGames})`);
+            bestTuesdayAveragePlayer.push(`${player} (${tuesdayGames})`);
         }
         if (thursdayAvg >= bestThursdayAverage && thursdayGames >= 6) {
             if (thursdayAvg > bestThursdayAverage) {
                 bestThursdayAveragePlayer = [];
                 bestThursdayAverage = thursdayAvg;
             }
-            bestThursdayAveragePlayer.push(`${player}(${thursdayGames})`);
+            bestThursdayAveragePlayer.push(`${player} (${thursdayGames})`);
         }
         if (saturdayAvg >= bestSaturdayAverage && saturdayGames >= 6) {
             if (saturdayAvg > bestSaturdayAverage) {
                 bestSaturdayAveragePlayer = [];
                 bestSaturdayAverage = saturdayAvg;
             }
-            bestSaturdayAveragePlayer.push(`${player}(${saturdayGames})`);
+            bestSaturdayAveragePlayer.push(`${player} (${saturdayGames})`);
         }
         if (mondayWins >= mostMondayWins) {
             if (mondayWins > mostMondayWins) {
                 mostMondayWinsPlayer = [];
                 mostMondayWins = mondayWins;
             }
-            mostMondayWinsPlayer.push(`${player}(${mondayGames})`);
+            mostMondayWinsPlayer.push(`${player} (${mondayGames})`);
         }
         if (tuesdayWins >= mostTuesdayWins) {
             if (tuesdayWins > mostTuesdayWins) {
                 mostTuesdayWinsPlayer = [];
                 mostTuesdayWins = tuesdayWins;
             }
-            mostTuesdayWinsPlayer.push(`${player}(${tuesdayGames})`);
+            mostTuesdayWinsPlayer.push(`${player} (${tuesdayGames})`);
         }
         if (thursdayWins >= mostThursdayWins) {
             if (thursdayWins > mostThursdayWins) {
                 mostThursdayWinsPlayer = [];
                 mostThursdayWins = thursdayWins;
             }
-            mostThursdayWinsPlayer.push(`${player}(${thursdayGames})`);
+            mostThursdayWinsPlayer.push(`${player} (${thursdayGames})`);
         }
         if (saturdayWins >= mostSaturdayWins) {
             if (saturdayWins > mostSaturdayWins) {
                 mostSaturdayWinsPlayer = [];
                 mostSaturdayWins = saturdayWins;
             }
-            mostSaturdayWinsPlayer.push(`${player}(${saturdayGames})`);
+            mostSaturdayWinsPlayer.push(`${player} (${saturdayGames})`);
         }
         if (mondayWinPerc >= bestMondayWinPerc && mondayGames >= 6) {
             if (mondayWinPerc > bestMondayWinPerc) {
                 bestMondayWinPercPlayer = [];
                 bestMondayWinPerc = mondayWinPerc;
             }
-            bestMondayWinPercPlayer.push(`${player}(${mondayGames})`);
+            bestMondayWinPercPlayer.push(`${player} (${mondayGames})`);
         }
         if (tuesdayWinPerc >= bestTuesdayWinPerc && tuesdayGames >= 6) {
             if (tuesdayWinPerc > bestTuesdayWinPerc) {
                 bestTuesdayWinPercPlayer = [];
                 bestTuesdayWinPerc = tuesdayWinPerc;
             }
-            bestTuesdayWinPercPlayer.push(`${player}(${tuesdayGames})`);
+            bestTuesdayWinPercPlayer.push(`${player} (${tuesdayGames})`);
         }
         if (thursdayWinPerc >= bestThursdayWinPerc && thursdayGames >= 6) {
             if (thursdayWinPerc > bestThursdayWinPerc) {
                 bestThursdayWinPercPlayer = [];
                 bestThursdayWinPerc = thursdayWinPerc;
             }
-            bestThursdayWinPercPlayer.push(`${player}(${thursdayGames})`);
+            bestThursdayWinPercPlayer.push(`${player} (${thursdayGames})`);
         }
         if (saturdayWinPerc >= bestSaturdayWinPerc && saturdayGames >= 6) {
             if (saturdayWinPerc > bestSaturdayWinPerc) {
                 bestSaturdayWinPercPlayer = [];
                 bestSaturdayWinPerc = saturdayWinPerc;
             }
-            bestSaturdayWinPercPlayer.push(`${player}(${saturdayGames})`);
+            bestSaturdayWinPercPlayer.push(`${player} (${saturdayGames})`);
         }
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
@@ -166,28 +166,28 @@ function PlayerRecords(props) {
                 mostWinsPlayer = [];
                 mostWins = totalWins;
             }
-            mostWinsPlayer.push(`${player}(${totalGames})`);
+            mostWinsPlayer.push(`${player} (${totalGames})`);
         }
         if (winPerc >= bestWinPerc && playedMinGames) {
             if (winPerc > bestWinPerc) {
                 bestWinPercPlayer = [];
                 bestWinPerc = winPerc;
             }
-            bestWinPercPlayer.push(`${player}(${totalGames})`);
+            bestWinPercPlayer.push(`${player} (${totalGames})`);
         }
         if (average >= bestAverage && playedMinGames) {
             if (average > bestAverage) {
                 bestAveragePlayer = [];
                 bestAverage = average;
             }
-            bestAveragePlayer.push(`${player}(${totalGames})`);
+            bestAveragePlayer.push(`${player} (${totalGames})`);
         }
         if (score >= bestScore && playedMinGames) {
             if (score > bestScore) {
                 bestScorePlayer = [];
                 bestScore = score;
             }
-            bestScorePlayer.push(`${player}(${totalGames})`);
+            bestScorePlayer.push(`${player} (${totalGames})`);
         }
     });
 
