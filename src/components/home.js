@@ -23,17 +23,24 @@ function Home() {
         window.scrollTo(0, 0);
         const url = window.location.href.toLowerCase();
         if (loaded === false) {
-            if (url.includes('team-stats')) {
+            if (url.includes('#team-stats')) {
                 displayTeamStats();
             }
-            if (url.includes('team-records')) {
+            if (url.includes('#team-records')) {
                 displayTeamRecords();
             }
-            if (url.includes('player-stats')) {
+            if (url.includes('#player-stats')) {
                 displayPlayerStats();
             }
-            if (url.includes('player-records')) {
+            if (url.includes('#player-records')) {
                 displayPlayerRecords();
+            }
+            // TODO this isn't working when clicking on home page
+            if (url.includes('#home')) {
+                setShowPlayerStats(false);
+                setShowTeamStats(false);
+                setShowPlayerRecords(false);
+                setShowTeamRecords(false);
             }
             setLoaded(true);
         }

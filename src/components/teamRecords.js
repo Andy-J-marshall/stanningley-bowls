@@ -1,5 +1,5 @@
 import React from 'react';
-import { capitalizeText } from '../helpers/utils';
+import StatsTableDisplay from './statsTableDisplay';
 
 function TeamRecords(props) {
     const statsArray = props.stats;
@@ -54,93 +54,60 @@ function TeamRecords(props) {
             if (aggPerGame !== bestTeamAggPerGame) {
                 bestTeamAggPerGameTeam.pop();
             }
-            bestTeamAggPerGameTeam.push(`${day} (${totalGames} games)`);
+            bestTeamAggPerGameTeam.push(`${day} (${totalGames})`);
             bestTeamAggPerGame = aggPerGame;
         }
         if (pointsPerGame >= bestTeamPointsPerGame && totalGames >= 2) {
             if (pointsPerGame !== bestTeamPointsPerGame) {
                 bestTeamPointsPerGameTeam.pop();
             }
-            bestTeamPointsPerGameTeam.push(`${day} (${totalGames} games)`);
+            bestTeamPointsPerGameTeam.push(`${day} (${totalGames})`);
             bestTeamPointsPerGame = pointsPerGame;
         }
-        if (pointsConcededPerGame <= fewestPointsConcededPerGame && totalGames >= 2) {
+        if (
+            pointsConcededPerGame <= fewestPointsConcededPerGame &&
+            totalGames >= 2
+        ) {
             if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
                 fewestPointsConcededPerGameTeam.pop();
             }
-            fewestPointsConcededPerGameTeam.push(
-                `${day} (${totalGames} games)`
-            );
+            fewestPointsConcededPerGameTeam.push(`${day} (${totalGames})`);
             fewestPointsConcededPerGame = pointsConcededPerGame;
         }
         if (aggConcededPerGame <= lowestAggConcededPerGame && totalGames >= 2) {
             if (aggConcededPerGame !== lowestAggConcededPerGame) {
                 lowestAggConcededPerGameTeam.pop();
             }
-            lowestAggConcededPerGameTeam.push(`${day} (${totalGames} games)`);
+            lowestAggConcededPerGameTeam.push(`${day} (${totalGames})`);
             lowestAggConcededPerGame = aggConcededPerGame;
         }
         if (winPercentage >= bestWinPercentage && totalGames >= 2) {
             if (winPercentage !== bestWinPercentage) {
                 bestWinPercentageTeam.pop();
             }
-            bestWinPercentageTeam.push(`${day} (${totalGames} games)`);
+            bestWinPercentageTeam.push(`${day} (${totalGames})`);
             bestWinPercentage = winPercentage;
         }
     });
 
-    // TODO use accordion component? https://react-bootstrap.github.io/components/accordion/
     return (
         <div id="team-record">
-            <h1>Team Records</h1>
-            {bestWinPercentage > 0 && (
-                <div>
-                    <p>
-                        Best win percentage = {bestWinPercentage.toFixed(0)}% -{' '}
-                        {capitalizeText(bestWinPercentageTeam)}
-                    </p>
-                </div>
-            )}
-
-            {bestTeamPointsPerGame > 0 && (
-                <div>
-                    <p>
-                        Best points per game ={' '}
-                        {bestTeamPointsPerGame.toFixed(1)} / 5 -{' '}
-                        {capitalizeText(bestTeamPointsPerGameTeam)}
-                    </p>
-                </div>
-            )}
-            {bestTeamAggPerGame > 0 && (
-                <div>
-                    <p>
-                        Best agg per game = {bestTeamAggPerGame.toFixed(1)} / 21
-                        - {capitalizeText(bestTeamAggPerGameTeam)}
-                    </p>
-                </div>
-            )}
-            {fewestPointsConcededPerGame >= 0 && (
-                <div>
-                    <p>
-                        Fewest points conceded per game ={' '}
-                        {fewestPointsConcededPerGame.toFixed(1)} / 5 -{' '}
-                        {capitalizeText(fewestPointsConcededPerGameTeam)}
-                    </p>
-                </div>
-            )}
-
-            {lowestAggConcededPerGame > 0 && (
-                <div>
-                    <p>
-                        Fewest aggregated points conceded per game ={' '}
-                        {lowestAggConcededPerGame.toFixed(1)} / 21 -{' '}
-                        {capitalizeText(lowestAggConcededPerGameTeam)}
-                    </p>
-                </div>
-            )}
-            <p>
-                * Minimum of 2 games required
-            </p>
+            <StatsTableDisplay
+                minGames={2}
+                playerOrTeam={'Team'}
+                bestWinPerc={bestWinPercentage}
+                bestWinPercPlayerOrTeam={bestWinPercentageTeam}
+                bestTeamPointsPerGame={bestTeamPointsPerGame}
+                bestTeamPointsPerGameTeam={bestTeamPointsPerGameTeam}
+                fewestPointsConcededPerGame={fewestPointsConcededPerGame}
+                fewestPointsConcededPerGameTeam={
+                    fewestPointsConcededPerGameTeam
+                }
+                bestTeamAggPerGame={bestTeamAggPerGame}
+                bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
+                lowestAggConcededPerGame={lowestAggConcededPerGame}
+                lowestAggConcededPerGameTeam={lowestAggConcededPerGameTeam}
+            />
         </div>
     );
 }

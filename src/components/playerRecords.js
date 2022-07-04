@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamTabs from './teamTabs';
-import { capitalizeText } from '../helpers/utils';
+import StatsTableDisplay from './statsTableDisplay';
 
 function PlayerRecords(props) {
     const playersStats = props.playersStats;
@@ -75,92 +75,84 @@ function PlayerRecords(props) {
                 bestMondayAveragePlayer = [];
                 bestMondayAverage = mondayAvg;
             }
-            bestMondayAveragePlayer.push(`${player} - ${mondayGames} games`);
+            bestMondayAveragePlayer.push(`${player}(${mondayGames})`);
         }
         if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= 6) {
             if (tuesdayAvg > bestTuesdayAverage) {
                 bestTuesdayAveragePlayer = [];
                 bestTuesdayAverage = tuesdayAvg;
             }
-            bestTuesdayAveragePlayer.push(`${player} - ${tuesdayGames} games`);
+            bestTuesdayAveragePlayer.push(`${player}(${tuesdayGames})`);
         }
         if (thursdayAvg >= bestThursdayAverage && thursdayGames >= 6) {
             if (thursdayAvg > bestThursdayAverage) {
                 bestThursdayAveragePlayer = [];
                 bestThursdayAverage = thursdayAvg;
             }
-            bestThursdayAveragePlayer.push(
-                `${player} - ${thursdayGames} games`
-            );
+            bestThursdayAveragePlayer.push(`${player}(${thursdayGames})`);
         }
         if (saturdayAvg >= bestSaturdayAverage && saturdayGames >= 6) {
             if (saturdayAvg > bestSaturdayAverage) {
                 bestSaturdayAveragePlayer = [];
                 bestSaturdayAverage = saturdayAvg;
             }
-            bestSaturdayAveragePlayer.push(
-                `${player} - ${saturdayGames} games`
-            );
+            bestSaturdayAveragePlayer.push(`${player}(${saturdayGames})`);
         }
         if (mondayWins >= mostMondayWins) {
             if (mondayWins > mostMondayWins) {
                 mostMondayWinsPlayer = [];
                 mostMondayWins = mondayWins;
             }
-            mostMondayWinsPlayer.push(`${player} - ${mondayGames} games`);
+            mostMondayWinsPlayer.push(`${player}(${mondayGames})`);
         }
         if (tuesdayWins >= mostTuesdayWins) {
             if (tuesdayWins > mostTuesdayWins) {
                 mostTuesdayWinsPlayer = [];
                 mostTuesdayWins = tuesdayWins;
             }
-            mostTuesdayWinsPlayer.push(`${player} - ${tuesdayGames} games`);
+            mostTuesdayWinsPlayer.push(`${player}(${tuesdayGames})`);
         }
         if (thursdayWins >= mostThursdayWins) {
             if (thursdayWins > mostThursdayWins) {
                 mostThursdayWinsPlayer = [];
                 mostThursdayWins = thursdayWins;
             }
-            mostThursdayWinsPlayer.push(`${player} - ${thursdayGames} games`);
+            mostThursdayWinsPlayer.push(`${player}(${thursdayGames})`);
         }
         if (saturdayWins >= mostSaturdayWins) {
             if (saturdayWins > mostSaturdayWins) {
                 mostSaturdayWinsPlayer = [];
                 mostSaturdayWins = saturdayWins;
             }
-            mostSaturdayWinsPlayer.push(`${player} - ${saturdayGames} games`);
+            mostSaturdayWinsPlayer.push(`${player}(${saturdayGames})`);
         }
         if (mondayWinPerc >= bestMondayWinPerc && mondayGames >= 6) {
             if (mondayWinPerc > bestMondayWinPerc) {
                 bestMondayWinPercPlayer = [];
                 bestMondayWinPerc = mondayWinPerc;
             }
-            bestMondayWinPercPlayer.push(`${player} - ${mondayGames} games`);
+            bestMondayWinPercPlayer.push(`${player}(${mondayGames})`);
         }
         if (tuesdayWinPerc >= bestTuesdayWinPerc && tuesdayGames >= 6) {
             if (tuesdayWinPerc > bestTuesdayWinPerc) {
                 bestTuesdayWinPercPlayer = [];
                 bestTuesdayWinPerc = tuesdayWinPerc;
             }
-            bestTuesdayWinPercPlayer.push(`${player} - ${tuesdayGames} games`);
+            bestTuesdayWinPercPlayer.push(`${player}(${tuesdayGames})`);
         }
         if (thursdayWinPerc >= bestThursdayWinPerc && thursdayGames >= 6) {
             if (thursdayWinPerc > bestThursdayWinPerc) {
                 bestThursdayWinPercPlayer = [];
                 bestThursdayWinPerc = thursdayWinPerc;
             }
-            bestThursdayWinPercPlayer.push(
-                `${player} - ${thursdayGames} games`
-            );
+            bestThursdayWinPercPlayer.push(`${player}(${thursdayGames})`);
         }
         if (saturdayWinPerc >= bestSaturdayWinPerc && saturdayGames >= 6) {
             if (saturdayWinPerc > bestSaturdayWinPerc) {
                 bestSaturdayWinPercPlayer = [];
                 bestSaturdayWinPerc = saturdayWinPerc;
             }
-            bestSaturdayWinPercPlayer.push(
-                `${player} - ${saturdayGames} games`
-            );
+            bestSaturdayWinPercPlayer.push(`${player}(${saturdayGames})`);
         }
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
@@ -174,92 +166,66 @@ function PlayerRecords(props) {
                 mostWinsPlayer = [];
                 mostWins = totalWins;
             }
-            mostWinsPlayer.push(`${player} - ${totalGames} games`);
+            mostWinsPlayer.push(`${player}(${totalGames})`);
         }
         if (winPerc >= bestWinPerc && playedMinGames) {
             if (winPerc > bestWinPerc) {
                 bestWinPercPlayer = [];
                 bestWinPerc = winPerc;
             }
-            bestWinPercPlayer.push(`${player} - ${totalGames} games`);
+            bestWinPercPlayer.push(`${player}(${totalGames})`);
         }
         if (average >= bestAverage && playedMinGames) {
             if (average > bestAverage) {
                 bestAveragePlayer = [];
                 bestAverage = average;
             }
-            bestAveragePlayer.push(`${player} - ${totalGames} games`);
+            bestAveragePlayer.push(`${player}(${totalGames})`);
         }
         if (score >= bestScore && playedMinGames) {
             if (score > bestScore) {
                 bestScorePlayer = [];
                 bestScore = score;
             }
-            bestScorePlayer.push(`${player} - ${totalGames} games`);
+            bestScorePlayer.push(`${player}(${totalGames})`);
         }
     });
 
     function allComponent() {
         return (
             <div>
-                {mostGames > 0 && (
-                    <p>
-                        Games played = {mostGames} (
-                        {capitalizeText(mostGamesPlayer)})
-                    </p>
-                )}
-                {mostWins > 0 && (
-                    <p>
-                        Wins = {mostWins} (
-                        {capitalizeText(mostWinsPlayer)})
-                    </p>
-                )}
-                {bestWinPerc > 0 && (
-                    <p>
-                        Win percentage = {bestWinPerc.toFixed(0)}% (
-                        {capitalizeText(bestWinPercPlayer)})
-                    </p>
-                )}
-                {bestAverage >= -21 && (
-                    <p>
-                        Average = {bestAverage.toFixed(2)} (
-                        {capitalizeText(bestAveragePlayer)})
-                    </p>
-                )}
-                {bestScore > 0 && (
-                    <p>
-                        Average team score ={' '}
-                        {bestScore.toFixed(2)} (
-                        {capitalizeText(bestScorePlayer)})
-                    </p>
-                )}
-                <p>* minimum of 10 games</p>
+                <StatsTableDisplay
+                    minGames={10}
+                    playerOrTeam={'Player'}
+                    mostGames={mostGames}
+                    mostGamesPlayer={mostGamesPlayer}
+                    mostWins={mostWins}
+                    mostWinsPlayer={mostWinsPlayer}
+                    bestWinPerc={bestWinPerc}
+                    bestWinPercPlayerOrTeam={bestWinPercPlayer}
+                    bestAverage={bestAverage}
+                    bestAveragePlayer={bestAveragePlayer}
+                    bestScore={bestScore}
+                    bestScorePlayer={bestScorePlayer}
+                />
             </div>
         );
     }
 
+    // TODO create a component for this.
     function mondayComponent() {
         return (
             <div>
-                {mostMondayWins > 0 && (
-                    <p>
-                        Wins = {mostMondayWins} (
-                        {capitalizeText(mostMondayWinsPlayer)})
-                    </p>
-                )}
-                {bestMondayAverage >= -21 && (
-                    <p>
-                        Average = {bestMondayAverage.toFixed(2)} (
-                        {capitalizeText(bestMondayAveragePlayer)})
-                    </p>
-                )}
-                {bestMondayWinPerc >= 0 && (
-                    <p>
-                        Win percentage = {bestMondayWinPerc.toFixed(1)}% (
-                        {capitalizeText(bestMondayWinPercPlayer)})
-                    </p>
-                )}
-                <p>* minimum of 6 games</p>
+                <StatsTableDisplay
+                    minGames={6}
+                    playerOrTeam={'Player'}
+                    mostWins={mostMondayWins}
+                    mostWinsPlayer={mostMondayWinsPlayer}
+                    bestWinPerc={bestMondayWinPerc}
+                    bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
+                    bestAverage={bestMondayAverage}
+                    bestAveragePlayer={bestMondayAveragePlayer}
+                />
             </div>
         );
     }
@@ -267,25 +233,16 @@ function PlayerRecords(props) {
     function tuesdayComponent() {
         return (
             <div>
-                {mostTuesdayWins > 0 && (
-                    <p>
-                        Wins = {mostTuesdayWins} (
-                        {capitalizeText(mostTuesdayWinsPlayer)})
-                    </p>
-                )}
-                {bestTuesdayAverage >= -21 && (
-                    <p>
-                        Average = {bestTuesdayAverage.toFixed(2)} (
-                        {capitalizeText(bestTuesdayAveragePlayer)})
-                    </p>
-                )}
-                {bestTuesdayWinPerc >= 0 && (
-                    <p>
-                        Win percentage = {bestTuesdayWinPerc.toFixed(1)}% (
-                        {capitalizeText(bestTuesdayWinPercPlayer)})
-                    </p>
-                )}
-                <p>* minimum of 6 games</p>
+                <StatsTableDisplay
+                    minGames={6}
+                    playerOrTeam={'Player'}
+                    mostWins={mostTuesdayWins}
+                    mostWinsPlayer={mostTuesdayWinsPlayer}
+                    bestWinPerc={bestTuesdayWinPerc}
+                    bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
+                    bestAverage={bestTuesdayAverage}
+                    bestAveragePlayer={bestTuesdayAveragePlayer}
+                />
             </div>
         );
     }
@@ -293,25 +250,16 @@ function PlayerRecords(props) {
     function thursdayComponent() {
         return (
             <div>
-                {mostThursdayWins > 0 && (
-                    <p>
-                        Wins = {mostThursdayWins} (
-                        {capitalizeText(mostThursdayWinsPlayer)})
-                    </p>
-                )}
-                {bestThursdayAverage >= -21 && (
-                    <p>
-                        Average = {bestThursdayAverage.toFixed(2)} (
-                        {capitalizeText(bestThursdayAveragePlayer)})
-                    </p>
-                )}
-                {bestThursdayWinPerc >= 0 && (
-                    <p>
-                        Win percentage = {bestThursdayWinPerc.toFixed(1)}%
-                        ({capitalizeText(bestThursdayWinPercPlayer)})
-                    </p>
-                )}
-                <p>* minimum of 6 games</p>
+                <StatsTableDisplay
+                    minGames={6}
+                    playerOrTeam={'Player'}
+                    mostWins={mostThursdayWins}
+                    mostWinsPlayer={mostThursdayWinsPlayer}
+                    bestWinPerc={bestThursdayWinPerc}
+                    bestWinPercPlayerOrTeam={bestThursdayWinPercPlayer}
+                    bestAverage={bestThursdayAverage}
+                    bestAveragePlayer={bestThursdayAveragePlayer}
+                />
             </div>
         );
     }
@@ -319,30 +267,20 @@ function PlayerRecords(props) {
     function saturdayComponent() {
         return (
             <div>
-                {mostSaturdayWins > 0 && (
-                    <p>
-                        Wins = {mostSaturdayWins} (
-                        {capitalizeText(mostSaturdayWinsPlayer)})
-                    </p>
-                )}
-                {bestSaturdayAverage >= -21 && (
-                    <p>
-                        Average = {bestSaturdayAverage.toFixed(2)} (
-                        {capitalizeText(bestSaturdayAveragePlayer)})
-                    </p>
-                )}
-                {bestSaturdayWinPerc >= 0 && (
-                    <p>
-                        Win percentage = {bestSaturdayWinPerc.toFixed(1)}% (
-                        {capitalizeText(bestSaturdayWinPercPlayer)})
-                    </p>
-                )}
-                <p>* minimum of 6 games</p>
+                <StatsTableDisplay
+                    minGames={6}
+                    playerOrTeam={'Player'}
+                    mostWins={mostSaturdayWins}
+                    mostWinsPlayer={mostSaturdayWinsPlayer}
+                    bestWinPerc={bestSaturdayWinPerc}
+                    bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
+                    bestAverage={bestSaturdayAverage}
+                    bestAveragePlayer={bestSaturdayAveragePlayer}
+                />
             </div>
         );
     }
 
-    // TODO how to present? Tables? https://react-bootstrap.github.io/components/table/
     return (
         <div>
             <TeamTabs
