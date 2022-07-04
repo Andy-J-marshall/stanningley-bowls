@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/stanningley-bowls/static/css/main.6034389c.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.c072978c.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.c072978c.chunk.js.map",
+    "main.js": "/stanningley-bowls/static/js/main.be6cbdec.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.be6cbdec.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
-    "static/js/2.b39b98d6.chunk.js": "/stanningley-bowls/static/js/2.b39b98d6.chunk.js",
-    "static/js/2.b39b98d6.chunk.js.map": "/stanningley-bowls/static/js/2.b39b98d6.chunk.js.map",
+    "static/js/2.e4730071.chunk.js": "/stanningley-bowls/static/js/2.e4730071.chunk.js",
+    "static/js/2.e4730071.chunk.js.map": "/stanningley-bowls/static/js/2.e4730071.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
     "static/css/main.6034389c.chunk.css.map": "/stanningley-bowls/static/css/main.6034389c.chunk.css.map",
-    "static/js/2.b39b98d6.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.b39b98d6.chunk.js.LICENSE.txt",
+    "static/js/2.e4730071.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.e4730071.chunk.js.LICENSE.txt",
     "static/media/brand-logo-tiny.923a3133.png": "/stanningley-bowls/static/media/brand-logo-tiny.923a3133.png",
     "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ce3fbbd.js",
     "static/css/2.6087c55b.chunk.css",
-    "static/js/2.b39b98d6.chunk.js",
+    "static/js/2.e4730071.chunk.js",
     "static/css/main.6034389c.chunk.css",
-    "static/js/main.c072978c.chunk.js"
+    "static/js/main.be6cbdec.chunk.js"
   ]
 }
