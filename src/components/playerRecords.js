@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamTabs from './teamTabs';
-import StatsTableDisplay from './statsTableDisplay';
+import RecordsTableDisplay from './recordsTableDisplay';
 
 function PlayerRecords(props) {
     const playersStats = props.playersStats;
@@ -194,7 +194,7 @@ function PlayerRecords(props) {
     function allComponent() {
         return (
             <div>
-                <StatsTableDisplay
+                <RecordsTableDisplay
                     minGames={10}
                     playerOrTeam={'Player'}
                     mostGames={mostGames}
@@ -216,7 +216,7 @@ function PlayerRecords(props) {
     function mondayComponent() {
         return (
             <div>
-                <StatsTableDisplay
+                <RecordsTableDisplay
                     minGames={6}
                     playerOrTeam={'Player'}
                     mostWins={mostMondayWins}
@@ -233,7 +233,7 @@ function PlayerRecords(props) {
     function tuesdayComponent() {
         return (
             <div>
-                <StatsTableDisplay
+                <RecordsTableDisplay
                     minGames={6}
                     playerOrTeam={'Player'}
                     mostWins={mostTuesdayWins}
@@ -250,7 +250,7 @@ function PlayerRecords(props) {
     function thursdayComponent() {
         return (
             <div>
-                <StatsTableDisplay
+                <RecordsTableDisplay
                     minGames={6}
                     playerOrTeam={'Player'}
                     mostWins={mostThursdayWins}
@@ -267,7 +267,7 @@ function PlayerRecords(props) {
     function saturdayComponent() {
         return (
             <div>
-                <StatsTableDisplay
+                <RecordsTableDisplay
                     minGames={6}
                     playerOrTeam={'Player'}
                     mostWins={mostSaturdayWins}

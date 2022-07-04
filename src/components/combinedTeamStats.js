@@ -1,6 +1,6 @@
 import React from 'react';
-import { capitalizeText } from '../helpers/utils';
 import { combineTeamStats } from '../helpers/statsHelper';
+import TeamStatsTableDisplay from './teamStatsTableDisplay';
 
 function CombinedTeamStats(props) {
     const stats = props.stats;
@@ -29,48 +29,29 @@ function CombinedTeamStats(props) {
     } = combinedStats;
 
     return (
-        <div id='combined-team-results'>
-            <div id='combined-team-win-losses'>
-                <p>Total games = {totalGames}</p>
-                <p>Total wins = {totalWins}</p>
-                {totalWins > 0 && (
-                    <p>
-                        ({combinedHomeWins} home, {combinedAwayWins} away,{' '}
-                        {combinedCupWins} cup)
-                    </p>
-                )}
-                <p>Total losses = {totalLosses}</p>
-                {totalLosses > 0 && (
-                    <p>
-                        ({combinedHomeLosses} home, {combinedAwayLosses} away,{' '}
-                        {combinedCupLosses} cup)
-                    </p>
-                )}
-                {totalDraws > 0 && <p>Total draws = {totalDraws}</p>}
-                {totalDraws > 0 && (
-                    <p>
-                        ({combinedHomeDraws} home, {combinedAwayDraws} away)
-                    </p>
-                )}
-            </div>
-            <div id='combined-team-aggregates'>
-                <p>Stanningley aggregate = {combinedStanningleyAgg}</p>
-                <p>Opponents aggregate = {combinedOpponentAgg}</p>
-                <p>Stanningley team score = {combinedStanningleyTotalPoints}</p>
-                <p>Opponents team score = {combinedOpponentTotalPoints}</p>
-            </div>
-            <div id='combined-team-opponents'>
-                {totalWins > 0 && (
-                    <p>Teams beaten = {capitalizeText(combinedBeaten)}</p>
-                )}
-                {totalLosses > 0 && (
-                    <p>Teams lost to = {capitalizeText(combinedBeatenBy)}</p>
-                )}
-                {totalDraws > 0 && (
-                    <p>
-                        Teams drawn with = {capitalizeText(combinedDrawnWith)}
-                    </p>
-                )}
+        <div id="combined-team-results">
+            <div id="combined-team-win-losses">
+                <TeamStatsTableDisplay
+                    totalGames={totalGames}
+                    totalWins={totalWins}
+                    totalLosses={totalLosses}
+                    totalDraws={totalDraws}
+                    stanningleyAgg={combinedStanningleyAgg}
+                    opponentAgg={combinedOpponentAgg}
+                    stanningleyTeamScore={combinedStanningleyTotalPoints}
+                    opponentTeamScore={combinedOpponentTotalPoints}
+                    teamsBeaten={combinedBeaten}
+                    teamsLostTo={combinedBeatenBy}
+                    teamsDrawn={combinedDrawnWith}
+                    homeWins={combinedHomeWins}
+                    awayWins={combinedAwayWins}
+                    cupWins={combinedCupWins}
+                    homeLosses={combinedHomeLosses}
+                    awayLosses={combinedAwayLosses}
+                    cupLosses={combinedCupLosses}
+                    homeDraws={combinedHomeDraws}
+                    awayDraws={combinedAwayDraws}
+                />
             </div>
         </div>
     );

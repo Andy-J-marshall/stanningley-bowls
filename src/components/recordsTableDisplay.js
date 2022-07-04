@@ -2,12 +2,12 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 
-function StatsTableDisplay(props) {
+function RecordsTableDisplay(props) {
     const minGames = props.minGames;
     const playerOrTeam = props.playerOrTeam;
     let bestWinPerc = props.bestWinPerc;
     const bestWinPercPlayerOrTeam = props.bestWinPercPlayerOrTeam;
-    // Player stats
+    // Player records
     const mostWins = props.mostWins;
     const mostWinsPlayer = props.mostWinsPlayer;
     const mostGames = props.mostGames;
@@ -16,7 +16,7 @@ function StatsTableDisplay(props) {
     const bestAveragePlayer = props.bestAveragePlayer;
     const bestScore = props.bestScore;
     const bestScorePlayer = props.bestScorePlayer;
-    // Team stats
+    // Team records
     const bestTeamPointsPerGame = props.bestTeamPointsPerGame;
     const bestTeamPointsPerGameTeam = props.bestTeamPointsPerGameTeam;
     const fewestPointsConcededPerGame = props.fewestPointsConcededPerGame;
@@ -133,4 +133,4 @@ function StatsTableDisplay(props) {
     );
 }
 
-export default StatsTableDisplay;
+export default RecordsTableDisplay;

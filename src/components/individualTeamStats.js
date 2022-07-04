@@ -1,5 +1,6 @@
 import React from 'react';
-import { capitalizeText } from '../helpers/utils';
+import TeamStatsTableDisplay from './teamStatsTableDisplay';
+import { capitalizeText } from '../helpers/utils'; // TODO remove this
 
 function IndividualTeamStats(props) {
     const day = props.day;
@@ -44,53 +45,42 @@ function IndividualTeamStats(props) {
 
     return (
         <div id={day + '-team-results'}>
-            <div id={day + '-team-win-losses'}>
-                <p>Total games = {totalGames}</p>
-                <p>Total wins = {totalWins}</p>
-                {totalWins > 0 && (
-                    <p>
-                        ({homeWins} home, {awayWins} away, {cupWins} cup)
-                    </p>
-                )}
-                <p>Total losses = {totalLosses}</p>
-                {totalLosses > 0 && (
-                    <p>
-                        ({homeLosses} home, {awayLosses} away, {cupLosses} cup)
-                    </p>
-                )}
-                {totalDraws > 0 && <p>Total draws = {totalDraws}</p>}
-                {totalDraws > 0 && (
-                    <p>
-                        ({homeDraws} home, {awayDraws} away)
-                    </p>
-                )}
-            </div>
-            <div id={day + '-team-aggregates'}>
-                <p>Stanningley aggregate = {stanningleyAgg}</p>
-                <p>Opponents aggregate = {opponentAgg}</p>
-                <p>Stanningley team score = {stanningleyTotalPoints}</p>
-                <p>Opponents team score = {opponentTotalPoints}</p>
-            </div>
-            <div id={day + '-team-opponents'}>
-                {totalWins > 0 && (
-                    <p>Teams beaten = {capitalizeText(beaten)}</p>
-                )}
-                {totalLosses > 0 && (
-                    <p>Teams lost to = {capitalizeText(beatenBy)}</p>
-                )}
-                {totalDraws > 0 && (
-                    <p>Teams drawn with = {capitalizeText(drawnWith)}</p>
-                )}
-            </div>
+            <TeamStatsTableDisplay
+                totalGames={totalGames}
+                totalWins={totalWins}
+                totalLosses={totalLosses}
+                totalDraws={totalDraws}
+                stanningleyAgg={stanningleyAgg}
+                opponentAgg={opponentAgg}
+                stanningleyTeamScore={stanningleyTotalPoints}
+                opponentTeamScore={opponentTotalPoints}
+                teamsBeaten={beaten}
+                teamsLostTo={beatenBy}
+                teamsDrawn={drawnWith}
+                homeWins={homeWins}
+                awayWins={awayWins}
+                cupWins={cupWins}
+                homeLosses={homeLosses}
+                awayLosses={awayLosses}
+                cupLosses={cupLosses}
+                homeDraws={homeDraws}
+                awayDraws={awayDraws}
+            />
+
+            {/* TODO display this nicely - a table? */}
             {allPlayerStats.map((player) => {
                 const key = Math.floor(Math.random() * 100000 + index);
                 return (
                     <div key={key}>
-                        {player.games > 0 && <h4>{capitalizeText([player.player])}</h4>}
-                        {player.games > 0 && <p>
-                            {player.games} games played, {player.wins} games
-                            won ({player.average.toFixed(2)} average)
-                        </p>}
+                        {player.games > 0 && (
+                            <h4>{capitalizeText([player.player])}</h4>
+                        )}
+                        {player.games > 0 && (
+                            <p>
+                                {player.games} games played, {player.wins} games
+                                won ({player.average.toFixed(2)} average)
+                            </p>
+                        )}
                     </div>
                 );
             })}

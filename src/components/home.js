@@ -151,6 +151,10 @@ function Home() {
                     </div>
                 )}
             {/* TODO create links for socials */}
+            {/* TODO link to bowlsnet pages */}
+            {/* TODO Add current league position into stats */}
+            {/* TODO Social media integration */}
+            {/* TODO Contact page */}
             {/* TODO should I be passing the stats around or importing? */}
             {showPlayerRecords && <PlayerRecords playersStats={playersStats} />}
             {showTeamRecords && <TeamRecords stats={teamStats} />}

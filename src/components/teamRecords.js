@@ -1,5 +1,5 @@
 import React from 'react';
-import StatsTableDisplay from './statsTableDisplay';
+import RecordsTableDisplay from './recordsTableDisplay';
 
 function TeamRecords(props) {
     const statsArray = props.stats;
@@ -92,7 +92,7 @@ function TeamRecords(props) {
 
     return (
         <div id="team-record">
-            <StatsTableDisplay
+            <RecordsTableDisplay
                 minGames={2}
                 playerOrTeam={'Team'}
                 bestWinPerc={bestWinPercentage}
