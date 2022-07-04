@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
@@ -13,14 +13,33 @@ function Home() {
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showPlayerRecords, setShowPlayerRecords] = useState(false);
     const [showTeamRecords, setShowTeamRecords] = useState(false);
+    const [loaded, setLoaded] = useState(false);
 
     const playersStats = bowlsStats.playerResults;
     const teamStats = bowlsStats.teamResults;
 
     // TODO Handle multiple years worth of stats
-    // TODO also display pages if e.g.URL = team-stats
-    function displayPlayerStats() {
+    useEffect(() => {
         window.scrollTo(0, 0);
+        const url = window.location.href.toLowerCase();
+        if (loaded === false) {
+            if (url.includes('team-stats')) {
+                displayTeamStats();
+            }
+            if (url.includes('team-records')) {
+                displayTeamRecords();
+            }
+            if (url.includes('player-stats')) {
+                displayPlayerStats();
+            }
+            if (url.includes('player-records')) {
+                displayPlayerRecords();
+            }
+            setLoaded(true);
+        }
+    });
+
+    function displayPlayerStats() {
         setShowPlayerStats(true);
         setShowTeamStats(false);
         setShowPlayerRecords(false);
@@ -28,7 +47,6 @@ function Home() {
     }
 
     function displayTeamStats() {
-        window.scrollTo(0, 0);
         setShowTeamStats(true);
         setShowPlayerStats(false);
         setShowPlayerRecords(false);
@@ -36,7 +54,6 @@ function Home() {
     }
 
     function displayPlayerRecords() {
-        window.scrollTo(0, 0);
         setShowPlayerRecords(true);
         setShowTeamRecords(false);
         setShowPlayerStats(false);
@@ -44,7 +61,6 @@ function Home() {
     }
 
     function displayTeamRecords() {
-        window.scrollTo(0, 0);
         setShowTeamRecords(true);
         setShowPlayerRecords(false);
         setShowPlayerStats(false);
