@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamTabs from './teamTabs';
 import { capitalizeText } from '../helpers/utils';
 
 function PlayerRecords(props) {
@@ -154,48 +155,47 @@ function PlayerRecords(props) {
         }
     });
 
-    // TODO how to present? Tables? https://react-bootstrap.github.io/components/table/
-    return (
-        <div id='player-records'>
-            <h1>Player Records</h1>
-            <p>
-                <b>Combined Team Records</b>
-            </p>
-            {mostGames > 0 && (
-                <p>
-                    Most games played = {mostGames} (
-                    {capitalizeText(mostGamesPlayer)})
-                </p>
-            )}
-            {mostWins > 0 && (
-                <p>
-                    Most combined wins = {mostWins} (
-                    {capitalizeText(mostWinsPlayer)})
-                </p>
-            )}
-            {bestWinPerc > 0 && (
-                <p>
-                    Best win percentage = {bestWinPerc.toFixed(0)}% (
-                    {capitalizeText(bestWinPercPlayer)})
-                </p>
-            )}
-            {bestAverage >= -21 && (
-                <p>
-                    Best combined average = {bestAverage.toFixed(2)} (
-                    {capitalizeText(bestAveragePlayer)})
-                </p>
-            )}
-            {bestScore > 0 && (
-                <p>
-                    Best average team score per game = {bestScore.toFixed(2)} (
-                    {capitalizeText(bestScorePlayer)})
-                </p>
-            )}
-            <p>
-                * Combined averages/ win percentage counted after minimum of 10
-                games
-            </p>
-            <h4>Individual Team Records</h4>
+    function allComponent() {
+        return (
+            <div>
+                {mostGames > 0 && (
+                    <p>
+                        Most games played = {mostGames} (
+                        {capitalizeText(mostGamesPlayer)})
+                    </p>
+                )}
+                {mostWins > 0 && (
+                    <p>
+                        Most combined wins = {mostWins} (
+                        {capitalizeText(mostWinsPlayer)})
+                    </p>
+                )}
+                {bestWinPerc > 0 && (
+                    <p>
+                        Best win percentage = {bestWinPerc.toFixed(0)}% (
+                        {capitalizeText(bestWinPercPlayer)})
+                    </p>
+                )}
+                {bestAverage >= -21 && (
+                    <p>
+                        Best combined average = {bestAverage.toFixed(2)} (
+                        {capitalizeText(bestAveragePlayer)})
+                    </p>
+                )}
+                {bestScore > 0 && (
+                    <p>
+                        Best average team score per game ={' '}
+                        {bestScore.toFixed(2)} (
+                        {capitalizeText(bestScorePlayer)})
+                    </p>
+                )}
+                <p>* minimum of 10 games</p>
+            </div>
+        );
+    }
+
+    function mondayComponent() {
+        return (
             <div>
                 <p>
                     <b>Monday</b>
@@ -212,7 +212,13 @@ function PlayerRecords(props) {
                         {capitalizeText(bestMondayAveragePlayer)})
                     </p>
                 )}
+                <p>* minimum of 6 games</p>
             </div>
+        );
+    }
+
+    function tuesdayComponent() {
+        return (
             <div>
                 <p>
                     <b>Tuesday</b>
@@ -229,7 +235,13 @@ function PlayerRecords(props) {
                         {capitalizeText(bestTuesdayAveragePlayer)})
                     </p>
                 )}
+                <p>* minimum of 6 games</p>
             </div>
+        );
+    }
+
+    function thursdayComponent() {
+        return (
             <div>
                 <p>
                     <b>Thursday</b>
@@ -242,11 +254,17 @@ function PlayerRecords(props) {
                 )}
                 {bestThursdayAverage >= -21 && (
                     <p>
-                        Best Average = {bestThursdayAverage.toFixed(2)}{' '}
-                        ({capitalizeText(bestThursdayAveragePlayer)})
+                        Best Average = {bestThursdayAverage.toFixed(2)} (
+                        {capitalizeText(bestThursdayAveragePlayer)})
                     </p>
                 )}
+                <p>* minimum of 6 games</p>
             </div>
+        );
+    }
+
+    function saturdayComponent() {
+        return (
             <div>
                 <p>
                     <b>Saturday</b>
@@ -259,15 +277,27 @@ function PlayerRecords(props) {
                 )}
                 {bestSaturdayAverage >= -21 && (
                     <p>
-                        Best Average = {bestSaturdayAverage.toFixed(2)}{' '}
-                        ({capitalizeText(bestSaturdayAveragePlayer)})
+                        Best Average = {bestSaturdayAverage.toFixed(2)} (
+                        {capitalizeText(bestSaturdayAveragePlayer)})
                     </p>
                 )}
+                <p>* minimum of 6 games</p>
             </div>
-            <p>
-                * Individual team averages/ win percentage counted after minimum
-                of 6 games
-            </p>
+        );
+    }
+
+    // TODO how to present? Tables? https://react-bootstrap.github.io/components/table/
+    // TODO Also show stats for win % and games played?
+    return (
+        <div>
+            <TeamTabs
+                id="team-stats"
+                allComponent={allComponent()}
+                mondayComponent={mondayComponent()}
+                tuesdayComponent={tuesdayComponent()}
+                thursdayComponent={thursdayComponent()}
+                saturdayComponent={saturdayComponent()}
+            />
         </div>
     );
 }

@@ -24,47 +24,31 @@ function Home() {
     // TODO also display pages if e.g.URL = team-stats
     // TODO need to go to top of page when changing navbar page? If not then just default to #home
     function displayPlayerStats() {
-        if (showPlayerStats) {
-            setShowPlayerStats(false);
-        } else {
-            setShowPlayerStats(true);
-            setShowTeamStats(false);
-            setShowPlayerRecords(false);
-            setShowTeamRecords(false);
-        }
+        setShowPlayerStats(true);
+        setShowTeamStats(false);
+        setShowPlayerRecords(false);
+        setShowTeamRecords(false);
     }
 
     function displayTeamStats() {
-        if (showTeamStats) {
-            setShowTeamStats(false);
-        } else {
-            setShowTeamStats(true);
-            setShowPlayerStats(false);
-            setShowPlayerRecords(false);
-            setShowTeamRecords(false);
-        }
+        setShowTeamStats(true);
+        setShowPlayerStats(false);
+        setShowPlayerRecords(false);
+        setShowTeamRecords(false);
     }
 
     function displayPlayerRecords() {
-        if (showPlayerRecords) {
-            setShowPlayerRecords(false);
-        } else {
-            setShowPlayerRecords(true);
-            setShowTeamRecords(false);
-            setShowPlayerStats(false);
-            setShowTeamStats(false);
-        }
+        setShowPlayerRecords(true);
+        setShowTeamRecords(false);
+        setShowPlayerStats(false);
+        setShowTeamStats(false);
     }
 
     function displayTeamRecords() {
-        if (showTeamRecords) {
-            setShowTeamRecords(false);
-        } else {
-            setShowTeamRecords(true);
-            setShowPlayerRecords(false);
-            setShowPlayerStats(false);
-            setShowTeamStats(false);
-        }
+        setShowTeamRecords(true);
+        setShowPlayerRecords(false);
+        setShowPlayerStats(false);
+        setShowTeamStats(false);
     }
     return (
         <div id="home">

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Tabs, Tab } from 'react-bootstrap';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
+import TeamTabs from './teamTabs';
 import bowlsStats from '../data/bowlsStats.json';
 
 function TeamStats() {
@@ -13,49 +13,64 @@ function TeamStats() {
     const thursdayStats = teamStats[2];
     const saturdayStats = teamStats[3];
 
+    function allComponent() {
+        return <CombinedTeamStats stats={teamStats} />;
+    }
+
+    function mondayComponent() {
+        return (
+            <IndividualTeamStats
+                index={1}
+                day="Monday"
+                stats={mondayStats}
+                playerStats={playerStats}
+            />
+        );
+    }
+
+    function tuesdayComponent() {
+        return (
+            <IndividualTeamStats
+                index={2}
+                day="Tuesday"
+                stats={tuesdayStats}
+                playerStats={playerStats}
+            />
+        );
+    }
+
+    function thursdayComponent() {
+        return (
+            <IndividualTeamStats
+                index={3}
+                day="Thursday"
+                stats={thursdayStats}
+                playerStats={playerStats}
+            />
+        );
+    }
+
+    function saturdayComponent() {
+        return (
+            <IndividualTeamStats
+                index={4}
+                day="Saturday"
+                stats={saturdayStats}
+                playerStats={playerStats}
+            />
+        );
+    }
+
     return (
         <div>
-            <Tabs
-                defaultActiveKey="Combined"
+            <TeamTabs
                 id="team-stats"
-                className="mb-3 tabs"
-            >
-                <Tab eventKey="Combined" title="All">
-                    <CombinedTeamStats stats={teamStats} />
-                </Tab>
-                <Tab eventKey="Monday" title="Mon">
-                    <IndividualTeamStats
-                        index={1}
-                        day="Monday"
-                        stats={mondayStats}
-                        playerStats={playerStats}
-                    />
-                </Tab>
-                <Tab eventKey="Tuesday" title="Tues">
-                    <IndividualTeamStats
-                        index={2}
-                        day="Tuesday"
-                        stats={tuesdayStats}
-                        playerStats={playerStats}
-                    />
-                </Tab>
-                <Tab eventKey="Thursday" title="Thur">
-                    <IndividualTeamStats
-                        index={3}
-                        day="Thursday"
-                        stats={thursdayStats}
-                        playerStats={playerStats}
-                    />
-                </Tab>
-                <Tab eventKey="Saturday" title="Sat">
-                    <IndividualTeamStats
-                        index={4}
-                        day="Saturday"
-                        stats={saturdayStats}
-                        playerStats={playerStats}
-                    />
-                </Tab>
-            </Tabs>
+                allComponent={allComponent()}
+                mondayComponent={mondayComponent()}
+                tuesdayComponent={tuesdayComponent()}
+                thursdayComponent={thursdayComponent()}
+                saturdayComponent={saturdayComponent()}
+            />
         </div>
     );
 }
