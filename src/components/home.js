@@ -94,7 +94,7 @@ function Home() {
                             style={{ maxHeight: '700px' }}
                             navbarScroll
                         >
-                            <Nav.Link onSelect={displayInfo} href="#info">
+                            <Nav.Link onSelect={displayInfo} href="#information">
                                 INFO
                             </Nav.Link>
                             <Nav.Link
