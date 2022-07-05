@@ -86,7 +86,6 @@ function Home() {
                             className="d-inline-block align-top"
                         />
                     </Navbar.Brand>
-                    {/* // TODO this isn't working when clicking on home page */}
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav

@@ -25,8 +25,8 @@ awayTeamNameCol = 'B'
 
 # TODO add current league position into script?
 
-# TODO need to check this is also the case on Tuesday
-cupText = ' cup'
+# TODO need to check this works for final
+cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file
 excelFilepath = str(Path.cwd()) + '/files/' + 'bowlsresults.xlsx'
@@ -63,8 +63,8 @@ for day in stanningleyTeamDays:
     cupGameRows = []
     for row in sheet['A']:
         if row.value and type(row.value) is str:
-            if cupGameIndex > startingRow and cupText in row.value.lower():
-                for i in range(0, 12):
+            if cupGameIndex > startingRow and row.value.lower() in cupText:
+                for i in range(0, 11):
                     cupGameRows.append(cupGameIndex + i)
         cupGameIndex += 1
 
@@ -107,8 +107,8 @@ for day in stanningleyTeamDays:
         cupCell = ''
         # Cup games are based on aggregate, not score, and are played on neutral greens
         if row > 2:
-            cupCell = sheet[homeTeamNameCol + str(row - 2)].value
-        if cupCell and type(cupCell) is str and cupText in cupCell.lower():
+            cupCell = sheet[homeTeamNameCol + str(row - 1)].value
+        if (cupCell and type(cupCell) is str) and cupCell.lower() in cupText:
             cupGame = True
             homeScore = sheet[homeTeamScoreCol + str(row + 9)].value
             awayScore = sheet[awayTeamScoreCol + str(row + 9)].value
