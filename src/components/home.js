@@ -11,6 +11,7 @@ import google from '../images/google.png';
 import upcoming_fixtures from '../images/upcoming_fixtures.png';
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
+import email from '../images/email.png';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
@@ -184,6 +185,13 @@ function Home() {
                                     className="footer-logos"
                                     src={google}
                                     alt="Maps link"
+                                />
+                            </a>
+                            <a href="mailto:stanningleybowlsclub@gmail.com">
+                                <img
+                                    className="footer-logos"
+                                    src={email}
+                                    alt="Email link"
                                 />
                             </a>
                         </div>
