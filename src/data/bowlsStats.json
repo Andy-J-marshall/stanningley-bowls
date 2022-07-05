@@ -190,9 +190,9 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "dave hudson": {
-      "totalScore": 24,
+      "totalScore": 22,
       "totalAgg": 120,
-      "totalScoreAgainst": 31,
+      "totalScoreAgainst": 26,
       "totalAggAgainst": 141,
       "homeWins": 2,
       "homeLosses": 1,
@@ -251,9 +251,9 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
-      "totalScore": 77,
+      "totalScore": 70,
       "totalAgg": 354,
-      "totalScoreAgainst": 65,
+      "totalScoreAgainst": 51,
       "totalAggAgainst": 305,
       "homeWins": 6,
       "homeLosses": 3,
@@ -352,9 +352,9 @@
       "saturday": { "games": 11, "wins": 8, "aggDiff": 50 }
     },
     "alison woodfine": {
-      "totalScore": 74,
+      "totalScore": 66,
       "totalAgg": 332,
-      "totalScoreAgainst": 61,
+      "totalScoreAgainst": 52,
       "totalAggAgainst": 292,
       "homeWins": 5,
       "homeLosses": 4,
@@ -447,9 +447,9 @@
       "saturday": { "games": 10, "wins": 7, "aggDiff": 44 }
     },
     "joey broadbent": {
-      "totalScore": 25,
+      "totalScore": 20,
       "totalAgg": 105,
-      "totalScoreAgainst": 7,
+      "totalScoreAgainst": 5,
       "totalAggAgainst": 44,
       "homeWins": 4,
       "homeLosses": 0,
@@ -495,9 +495,9 @@
       "saturday": { "games": 5, "wins": 5, "aggDiff": 61 }
     },
     "neil porter": {
-      "totalScore": 50,
+      "totalScore": 40,
       "totalAgg": 210,
-      "totalScoreAgainst": 21,
+      "totalScoreAgainst": 15,
       "totalAggAgainst": 113,
       "homeWins": 5,
       "homeLosses": 0,
@@ -603,9 +603,9 @@
       "saturday": { "games": 1, "wins": 0, "aggDiff": -20 }
     },
     "jeff allman": {
-      "totalScore": 61,
+      "totalScore": 56,
       "totalAgg": 289,
-      "totalScoreAgainst": 71,
+      "totalScoreAgainst": 69,
       "totalAggAgainst": 323,
       "homeWins": 4,
       "homeLosses": 5,
@@ -710,9 +710,9 @@
       "saturday": { "games": 3, "wins": 2, "aggDiff": -6 }
     },
     "shirley allman": {
-      "totalScore": 29,
+      "totalScore": 28,
       "totalAgg": 146,
-      "totalScoreAgainst": 40,
+      "totalScoreAgainst": 35,
       "totalAggAgainst": 177,
       "homeWins": 1,
       "homeLosses": 3,
@@ -1047,9 +1047,9 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "paul bowes": {
-      "totalScore": 138,
+      "totalScore": 123,
       "totalAgg": 603,
-      "totalScoreAgainst": 57,
+      "totalScoreAgainst": 55,
       "totalAggAgainst": 298,
       "homeWins": 13,
       "homeLosses": 2,
@@ -1190,9 +1190,9 @@
       "saturday": { "games": 10, "wins": 10, "aggDiff": 153 }
     },
     "clifford brogie": {
-      "totalScore": 51,
+      "totalScore": 46,
       "totalAgg": 236,
-      "totalScoreAgainst": 53,
+      "totalScoreAgainst": 49,
       "totalAggAgainst": 246,
       "homeWins": 3,
       "homeLosses": 4,
@@ -1334,9 +1334,9 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "steve gardner": {
-      "totalScore": 111,
+      "totalScore": 107,
       "totalAgg": 479,
-      "totalScoreAgainst": 54,
+      "totalScoreAgainst": 49,
       "totalAggAgainst": 287,
       "homeWins": 11,
       "homeLosses": 1,
@@ -1442,9 +1442,9 @@
       "saturday": { "games": 9, "wins": 8, "aggDiff": 93 }
     },
     "andy marshall": {
-      "totalScore": 78,
+      "totalScore": 71,
       "totalAgg": 358,
-      "totalScoreAgainst": 61,
+      "totalScoreAgainst": 54,
       "totalAggAgainst": 285,
       "homeWins": 4,
       "homeLosses": 6,
@@ -1674,9 +1674,9 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "andy waller": {
-      "totalScore": 119,
+      "totalScore": 104,
       "totalAgg": 524,
-      "totalScoreAgainst": 78,
+      "totalScoreAgainst": 72,
       "totalAggAgainst": 379,
       "homeWins": 11,
       "homeLosses": 3,
@@ -1808,9 +1808,9 @@
       "saturday": { "games": 10, "wins": 9, "aggDiff": 72 }
     },
     "kevin waller": {
-      "totalScore": 42,
+      "totalScore": 34,
       "totalAgg": 181,
-      "totalScoreAgainst": 21,
+      "totalScoreAgainst": 16,
       "totalAggAgainst": 110,
       "homeWins": 3,
       "homeLosses": 1,

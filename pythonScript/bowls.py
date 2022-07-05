@@ -23,8 +23,6 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
-# TODO check team score is not updated for cup games
-
 # TODO need to check this is also the case on Tuesday and Thursday
 cupText = ' cup'
 
@@ -329,8 +327,11 @@ for day in stanningleyTeamDays:
                     stanningleyPlayerResults[playerName]['awayLosses'] += 1
                 if cupGame:
                     stanningleyPlayerResults[playerName]['cupLosses'] += 1
-            score = calculateGameScore(points)
-            opponentScore = calculateGameScore(opponentPoints)
+            score = 0
+            opponentScore = 0
+            if not cupGame:
+                score = calculateGameScore(points)
+                opponentScore = calculateGameScore(opponentPoints)
 
             # Averages
             stanningleyPlayerResults[playerName]['totalAgg'] += points
