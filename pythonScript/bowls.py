@@ -23,6 +23,8 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
+# TODO add current league position into script?
+
 # TODO need to check this is also the case on Tuesday
 cupText = ' cup'
 

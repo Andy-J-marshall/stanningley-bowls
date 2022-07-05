@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamStatsTableDisplay from './teamStatsTableDisplay';
+import StatsTableDisplay from './statsTableDisplay';
 import { capitalizeText } from '../helpers/utils'; // TODO remove this
 
 function IndividualTeamStats(props) {
@@ -45,7 +45,7 @@ function IndividualTeamStats(props) {
 
     return (
         <div id={day + '-team-results'}>
-            <TeamStatsTableDisplay
+            <StatsTableDisplay
                 totalGames={totalGames}
                 totalWins={totalWins}
                 totalLosses={totalLosses}

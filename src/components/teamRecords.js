@@ -92,6 +92,7 @@ function TeamRecords(props) {
 
     return (
         <div id="team-record">
+            <h1>Team Records</h1>
             <RecordsTableDisplay
                 minGames={2}
                 playerOrTeam={'Team'}

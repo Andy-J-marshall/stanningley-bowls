@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 
-function TeamStatsTableDisplay(props) {
+function StatsTableDisplay(props) {
     const totalGames = props.totalGames;
     const totalWins = props.totalWins;
     const homeWins = props.homeWins || 0;
@@ -24,7 +24,7 @@ function TeamStatsTableDisplay(props) {
     const teamsDrawn = props.teamsDrawn;
 
     return (
-        <div>
+        <div className="center table" style={{ width: '97%' }}>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -130,4 +130,4 @@ function TeamStatsTableDisplay(props) {
     );
 }
 
-export default TeamStatsTableDisplay;
+export default StatsTableDisplay;

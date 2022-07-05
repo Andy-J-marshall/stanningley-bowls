@@ -63,6 +63,7 @@ function TeamStats() {
 
     return (
         <div>
+            <h1>Team Stats</h1>
             <TeamTabs
                 id="team-stat"
                 allComponent={allComponent()}

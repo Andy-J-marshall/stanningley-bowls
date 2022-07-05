@@ -33,7 +33,7 @@ function RecordsTableDisplay(props) {
                 : bestWinPerc.toFixed(0);
     }
     return (
-        <div>
+        <div className="center" style={{ width: '97%' }}>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -128,7 +128,7 @@ function RecordsTableDisplay(props) {
                         )}
                 </tbody>
             </Table>
-            <p>* minimum of {minGames} games</p>
+            <p className="footnote">* minimum of {minGames} games</p>
         </div>
     );
 }

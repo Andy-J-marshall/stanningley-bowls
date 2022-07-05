@@ -1,6 +1,6 @@
 import React from 'react';
 import { combineTeamStats } from '../helpers/statsHelper';
-import TeamStatsTableDisplay from './teamStatsTableDisplay';
+import StatsTableDisplay from './statsTableDisplay';
 
 function CombinedTeamStats(props) {
     const stats = props.stats;
@@ -31,7 +31,7 @@ function CombinedTeamStats(props) {
     return (
         <div id="combined-team-results">
             <div id="combined-team-win-losses">
-                <TeamStatsTableDisplay
+                <StatsTableDisplay
                     totalGames={totalGames}
                     totalWins={totalWins}
                     totalLosses={totalLosses}

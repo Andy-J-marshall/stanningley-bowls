@@ -5,8 +5,12 @@ import PlayerStats from './playerStats';
 import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
 import bowlsStats from '../data/bowlsStats.json';
-import smallLogo from './brand-logo-tiny.png';
-import logo from './brand-logo.png';
+import smallLogo from '../images/brand-logo-tiny.png';
+import logo from '../images/brand-logo.png';
+import google from '../images/google.png';
+import upcoming_fixtures from '../images/upcoming_fixtures.png';
+import facebook from '../images/facebook.png';
+import instagram from '../images/instagram.png';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
@@ -35,16 +39,19 @@ function Home() {
             if (url.includes('#player-records')) {
                 displayPlayerRecords();
             }
-            // TODO this isn't working when clicking on home page
-            if (url.includes('#home')) {
-                setShowPlayerStats(false);
-                setShowTeamStats(false);
-                setShowPlayerRecords(false);
-                setShowTeamRecords(false);
+            if (url.includes('#home') || url.includes('#info')) {
+                displayInfo();
             }
             setLoaded(true);
         }
     });
+
+    function displayInfo() {
+        setShowPlayerStats(false);
+        setShowTeamStats(false);
+        setShowPlayerRecords(false);
+        setShowTeamRecords(false);
+    }
 
     function displayPlayerStats() {
         setShowPlayerStats(true);
@@ -89,12 +96,12 @@ function Home() {
                         <img
                             alt="logo"
                             src={smallLogo}
-                            width="30"
-                            height="30"
+                            width="50px"
+                            height="50px"
                             className="d-inline-block align-top"
                         />
-                        SPBC
                     </Navbar.Brand>
+                    {/* // TODO this isn't working when clicking on home page */}
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -102,6 +109,9 @@ function Home() {
                             style={{ maxHeight: '700px' }}
                             navbarScroll
                         >
+                            <Nav.Link onSelect={displayInfo} href="#info">
+                                INFO
+                            </Nav.Link>
                             <Nav.Link
                                 onSelect={displayPlayerRecords}
                                 href="#player-records"
@@ -143,11 +153,40 @@ function Home() {
                 !showTeamStats &&
                 !showTeamRecords &&
                 !showPlayerRecords && (
-                    <div id="welcome-text">
+                    <div id="welcome">
                         <p>
                             Welcome to Stanningley Park Crown Green Bowling
-                            Club's website
+                            Club's website.
                         </p>
+                        <img
+                            id="upcoming-fixtures"
+                            src={upcoming_fixtures}
+                            alt="upcoming fixtures"
+                        />
+                        <p>Follow us on social media:</p>
+                        <div id="contact">
+                            <a href="https://www.facebook.com/StanningleyBowlsClub">
+                                <img
+                                    className="footer-logos"
+                                    src={facebook}
+                                    alt="Facebook link"
+                                />
+                            </a>
+                            <a href="https://www.instagram.com/StanningleyParkBowls">
+                                <img
+                                    className="footer-logos"
+                                    src={instagram}
+                                    alt="Instagram link"
+                                />
+                            </a>
+                            <a href="https://goo.gl/maps/DtesTxChC5x9Jz3i9">
+                                <img
+                                    className="footer-logos"
+                                    src={google}
+                                    alt="Maps link"
+                                />
+                            </a>
+                        </div>
                     </div>
                 )}
             {/* TODO create links for socials */}
