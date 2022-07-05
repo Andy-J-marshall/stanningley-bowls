@@ -25,3 +25,4 @@ yarn-error.log*
 .env.production.local
 
 __pycache__
+~$bowlsresults.xlsx

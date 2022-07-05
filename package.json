@@ -2,6 +2,7 @@
   "private": true,
   "homepage": "https://andy-j-marshall.github.io/stanningley-bowls/",
   "scripts": {
+    "update-stats": "python3 ./pythonScript/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build"

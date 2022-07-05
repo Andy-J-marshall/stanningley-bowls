@@ -23,8 +23,10 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
+# TODO check team score is not updated for cup games
+
 # TODO need to check this is also the case on Tuesday and Thursday
-cupText = 'cup division'
+cupText = ' cup'
 
 # Open Excel file
 excelFilepath = str(Path.cwd()) + '/files/' + 'bowlsresults.xlsx'

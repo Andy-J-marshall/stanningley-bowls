@@ -18,6 +18,7 @@ Run the following:
 <!-- TODO do we want the Excel file in Git? -->
 <!-- TODO create cypress scripts to get the data? -->
 <!-- TODO update readme (and scripts readme) -->
+
 ## Bowls script
 A script to collate stats from all Stanningley bowls club teams.
 
@@ -47,7 +48,7 @@ e.g. a new player would have to be added into the `stanningleyPlayers` array and
 If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array
 
 ### to run
-`python3 ./pythonScript/bowls.py`
+`npm run update-stats`
 
 JSON file will be created: `src/data/bowlsStats.json`
 
