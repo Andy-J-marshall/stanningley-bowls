@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/stanningley-bowls/static/css/main.6034389c.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.b773c44f.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.b773c44f.chunk.js.map",
+    "main.css": "/stanningley-bowls/static/css/main.2a03e5ad.chunk.css",
+    "main.js": "/stanningley-bowls/static/js/main.e8dc6c5a.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.e8dc6c5a.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
@@ -10,16 +10,17 @@
     "static/js/2.29e9e0d4.chunk.js.map": "/stanningley-bowls/static/js/2.29e9e0d4.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
-    "static/css/main.6034389c.chunk.css.map": "/stanningley-bowls/static/css/main.6034389c.chunk.css.map",
+    "static/css/main.2a03e5ad.chunk.css.map": "/stanningley-bowls/static/css/main.2a03e5ad.chunk.css.map",
     "static/js/2.29e9e0d4.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.29e9e0d4.chunk.js.LICENSE.txt",
     "static/media/brand-logo-tiny.923a3133.png": "/stanningley-bowls/static/media/brand-logo-tiny.923a3133.png",
-    "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png"
+    "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png",
+    "static/media/upcoming_fixtures.1cf6acc0.png": "/stanningley-bowls/static/media/upcoming_fixtures.1cf6acc0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ce3fbbd.js",
     "static/css/2.6087c55b.chunk.css",
     "static/js/2.29e9e0d4.chunk.js",
-    "static/css/main.6034389c.chunk.css",
-    "static/js/main.b773c44f.chunk.js"
+    "static/css/main.2a03e5ad.chunk.css",
+    "static/js/main.e8dc6c5a.chunk.js"
   ]
 }
