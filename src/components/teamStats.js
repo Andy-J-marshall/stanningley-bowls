@@ -2,11 +2,11 @@ import React from 'react';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
-import bowlsStats from '../data/bowlsStats.json';
 
-function TeamStats() {
-    const teamStats = bowlsStats.teamResults;
-    const playerStats = bowlsStats.playerResults;
+function TeamStats(props) {
+    const teamStats = props.teamStats;
+    const playerStats = props.playersStats;
+
     // TODO get the teamStats in a better way than using array
     const mondayStats = teamStats[0];
     const tuesdayStats = teamStats[1];

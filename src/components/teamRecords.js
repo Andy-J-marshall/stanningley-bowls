@@ -2,7 +2,7 @@ import React from 'react';
 import RecordsTableDisplay from './recordsTableDisplay';
 
 function TeamRecords(props) {
-    const statsArray = props.stats;
+    const statsArray = props.teamStats;
 
     let bestWinPercentage = -1;
     let bestWinPercentageTeam = [];

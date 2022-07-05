@@ -1,16 +1,16 @@
 import React, { useState, Fragment } from 'react';
 import Player from './players';
 import { ListGroup, Form, Button } from 'react-bootstrap';
-import bowlsStats from '../data/bowlsStats.json';
 import { Typeahead } from 'react-bootstrap-typeahead';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
-function PlayerStats() {
+function PlayerStats(props) {
+    const playersStats = props.playersStats;
+
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
 
-    const playersStats = bowlsStats.playerResults;
     const keys = Object.keys(playersStats);
     const playerNameArray = keys.sort().map((p) => p.toUpperCase());
 
@@ -38,22 +38,26 @@ function PlayerStats() {
     }
 
     return (
-        <div id='player-stat'>
+        <div id="player-stat">
             <h1>Player Stats</h1>
-            <Form id='player-search-form' className='center' onSubmit={handleSubmit}>
+            <Form
+                id="player-search-form"
+                className="center"
+                onSubmit={handleSubmit}
+            >
                 <Fragment>
-                    <Form.Group className='mb-3'>
+                    <Form.Group className="mb-3">
                         <Typeahead
-                            id='player-search'
-                            placeholder='Search for player'
+                            id="player-search"
+                            placeholder="Search for player"
                             onChange={handleChange}
                             options={['SHOW ALL'].concat(playerNameArray)}
                             selected={value}
-                            size='lg'
+                            size="lg"
                         />
                     </Form.Group>
                 </Fragment>
-                <Button variant='light' type='submit'>
+                <Button variant="light" type="submit">
                     Search
                 </Button>
             </Form>

@@ -2,19 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
-import TeamRecords from './teamRecords';
-import PlayerRecords from './playerRecords';
 import Links from './links';
 import Fixtures from './fixtures';
 import bowlsStats from '../data/bowlsStats.json';
 import smallLogo from '../images/brand-logo-tiny.png';
 import logo from '../images/brand-logo.png';
+import Records from './Records';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
     const [showTeamStats, setShowTeamStats] = useState(false);
-    const [showPlayerRecords, setShowPlayerRecords] = useState(false);
-    const [showTeamRecords, setShowTeamRecords] = useState(false);
+    const [showRecords, setShowRecords] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
     const playersStats = bowlsStats.playerResults;
@@ -35,7 +33,7 @@ function Home() {
                 displayPlayerStats();
             }
             if (url.includes('#player-records')) {
-                displayPlayerRecords();
+                displayRecords();
             }
             if (url.includes('#home') || url.includes('#info')) {
                 displayInfo();
@@ -47,34 +45,23 @@ function Home() {
     function displayInfo() {
         setShowPlayerStats(false);
         setShowTeamStats(false);
-        setShowPlayerRecords(false);
-        setShowTeamRecords(false);
+        setShowRecords(false);
     }
 
     function displayPlayerStats() {
         setShowPlayerStats(true);
         setShowTeamStats(false);
-        setShowPlayerRecords(false);
-        setShowTeamRecords(false);
+        setShowRecords(false);
     }
 
     function displayTeamStats() {
         setShowTeamStats(true);
         setShowPlayerStats(false);
-        setShowPlayerRecords(false);
-        setShowTeamRecords(false);
+        setShowRecords(false);
     }
 
-    function displayPlayerRecords() {
-        setShowPlayerRecords(true);
-        setShowTeamRecords(false);
-        setShowPlayerStats(false);
-        setShowTeamStats(false);
-    }
-
-    function displayTeamRecords() {
-        setShowTeamRecords(true);
-        setShowPlayerRecords(false);
+    function displayRecords() {
+        setShowRecords(true);
         setShowPlayerStats(false);
         setShowTeamStats(false);
     }
@@ -111,18 +98,6 @@ function Home() {
                                 INFO
                             </Nav.Link>
                             <Nav.Link
-                                onSelect={displayPlayerRecords}
-                                href="#player-records"
-                            >
-                                PLAYER RECORDS
-                            </Nav.Link>
-                            <Nav.Link
-                                onSelect={displayTeamRecords}
-                                href="#team-records"
-                            >
-                                TEAM RECORDS
-                            </Nav.Link>
-                            <Nav.Link
                                 onSelect={displayPlayerStats}
                                 href="#player-stats"
                             >
@@ -133,6 +108,9 @@ function Home() {
                                 href="#team-stats"
                             >
                                 TEAM STATS
+                            </Nav.Link>
+                            <Nav.Link onSelect={displayRecords} href="#records">
+                                RECORDS
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -147,28 +125,27 @@ function Home() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {!showPlayerStats &&
-                !showTeamStats &&
-                !showTeamRecords &&
-                !showPlayerRecords && (
-                    <div id="welcome">
-                        <p>
-                            Welcome to Stanningley Park Crown Green Bowling
-                            Club's website.
-                        </p>
-                        <Fixtures />
-                        <Links />
-                    </div>
-                )}
+            {!showPlayerStats && !showTeamStats && !showRecords && (
+                <div id="welcome">
+                    <p>
+                        Welcome to Stanningley Park Crown Green Bowling Club's
+                        website.
+                    </p>
+                    <Fixtures />
+                    <Links />
+                </div>
+            )}
             {/* TODO link to bowlsnet pages */}
             {/* TODO Add current league position into stats */}
             {/* TODO Social media integration */}
             {/* TODO Contact page */}
-            {/* TODO should I be passing the stats around or importing? */}
-            {showPlayerRecords && <PlayerRecords playersStats={playersStats} />}
-            {showTeamRecords && <TeamRecords stats={teamStats} />}
-            {showPlayerStats && <PlayerStats />}
-            {showTeamStats && <TeamStats />}
+            {showRecords && (
+                <Records teamStats={teamStats} playersStats={playersStats} />
+            )}
+            {showPlayerStats && <PlayerStats playersStats={playersStats} />}
+            {showTeamStats && (
+                <TeamStats teamStats={teamStats} playersStats={playersStats} />
+            )}
         </div>
     );
 }
