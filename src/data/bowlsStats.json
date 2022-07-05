@@ -710,13 +710,13 @@
       "saturday": { "games": 3, "wins": 2, "aggDiff": -6 }
     },
     "shirley allman": {
-      "totalScore": 28,
-      "totalAgg": 146,
+      "totalScore": 23,
+      "totalAgg": 125,
       "totalScoreAgainst": 35,
       "totalAggAgainst": 177,
       "homeWins": 1,
       "homeLosses": 3,
-      "awayWins": 3,
+      "awayWins": 2,
       "awayLosses": 2,
       "pairWins": 2,
       "pairLosses": 3,
@@ -730,7 +730,6 @@
       "beatenOpponents": [
         "Dave Kellett & Malcolm Colinson",
         "Frank Hales & Cliff Pitts",
-        "*WalkOver*",
         "Michael Small"
       ],
       "beatenBy": [
@@ -749,7 +748,6 @@
         "Monday",
         "Thursday",
         "Thursday",
-        "Thursday",
         "Saturday",
         "Saturday"
       ],
@@ -759,18 +757,17 @@
       "losingPairsPartners": ["Jeff Allman", "Jeff Allman", "Jeff Allman"],
       "totalHomeAgg": 56,
       "totalHomeAggAgainst": 82,
-      "totalAwayAgg": 81,
+      "totalAwayAgg": 60,
       "totalAwayAggAgainst": 74,
       "totalHomeScore": 11,
       "totalHomeScoreAgainst": 19,
-      "totalAwayScore": 17,
+      "totalAwayScore": 12,
       "totalAwayScoreAgainst": 16,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
         "Sth Lds Cons (Monday)",
         "Gildersome (Monday)",
-        "Cross Flatts Pk (Thursday)",
         "Scatcherd Park B (Saturday)"
       ],
       "beatenByTeam": [
@@ -783,7 +780,7 @@
       ],
       "monday": { "games": 5, "wins": 2, "aggDiff": -29 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday": { "games": 3, "wins": 1, "aggDiff": -1 },
+      "thursday": { "games": 2, "wins": 0, "aggDiff": -22 },
       "saturday": { "games": 2, "wins": 1, "aggDiff": -1 }
     },
     "john armitage": {
@@ -1047,11 +1044,11 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "paul bowes": {
-      "totalScore": 123,
-      "totalAgg": 603,
+      "totalScore": 118,
+      "totalAgg": 582,
       "totalScoreAgainst": 55,
       "totalAggAgainst": 298,
-      "homeWins": 13,
+      "homeWins": 12,
       "homeLosses": 2,
       "awayWins": 7,
       "awayLosses": 5,
@@ -1077,7 +1074,6 @@
         "Steve Milton",
         "Brian Ragan",
         "Peter Richie",
-        "*WalkOver*",
         "Malcolm Cameron",
         "Brian Newton",
         "Clifford Pitts",
@@ -1119,7 +1115,6 @@
         "Thursday",
         "Thursday",
         "Thursday",
-        "Thursday",
         "Saturday",
         "Saturday",
         "Saturday",
@@ -1140,11 +1135,11 @@
         "Alyssa Randell"
       ],
       "losingPairsPartners": ["Alyssa Randell", "Alyssa Randell"],
-      "totalHomeAgg": 301,
+      "totalHomeAgg": 280,
       "totalHomeAggAgainst": 121,
       "totalAwayAgg": 239,
       "totalAwayAggAgainst": 160,
-      "totalHomeScore": 70,
+      "totalHomeScore": 65,
       "totalHomeScoreAgainst": 22,
       "totalAwayScore": 53,
       "totalAwayScoreAgainst": 33,
@@ -1162,7 +1157,6 @@
         "Holbeck Moor (Tuesday)",
         "Middleton Community (Thursday)",
         "New Armley (Thursday)",
-        "Scatcherd Pk A (Thursday)",
         "Middleton Community (Thursday)",
         "Sth Leeds Cons B (Saturday)",
         "Gildersome B (Saturday)",
@@ -1186,7 +1180,7 @@
       ],
       "monday": { "games": 8, "wins": 5, "aggDiff": 43 },
       "tuesday": { "games": 6, "wins": 4, "aggDiff": 50 },
-      "thursday": { "games": 6, "wins": 4, "aggDiff": 59 },
+      "thursday": { "games": 5, "wins": 3, "aggDiff": 38 },
       "saturday": { "games": 10, "wins": 10, "aggDiff": 153 }
     },
     "clifford brogie": {
