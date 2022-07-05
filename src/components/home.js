@@ -81,8 +81,8 @@ function Home() {
                         <img
                             alt="logo"
                             src={smallLogo}
-                            width="50px"
-                            height="50px"
+                            width="52px"
+                            height="52px"
                             className="d-inline-block align-top"
                         />
                     </Navbar.Brand>
@@ -135,6 +135,9 @@ function Home() {
             {showTeamStats && (
                 <TeamStats teamStats={teamStats} playersStats={playersStats} />
             )}
+            {/* TODO News? */}
+            {/* TODO add a membership page? */}
+            {/* TODO change info to fixtures? */}
             <Footer />
         </div>
     );
