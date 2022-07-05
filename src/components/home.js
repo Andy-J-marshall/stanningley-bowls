@@ -4,14 +4,11 @@ import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
 import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
+import Links from './links';
+import Fixtures from './fixtures';
 import bowlsStats from '../data/bowlsStats.json';
 import smallLogo from '../images/brand-logo-tiny.png';
 import logo from '../images/brand-logo.png';
-import google from '../images/google.png';
-import upcoming_fixtures from '../images/upcoming_fixtures.png';
-import facebook from '../images/facebook.png';
-import instagram from '../images/instagram.png';
-import email from '../images/email.png';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
@@ -159,45 +156,10 @@ function Home() {
                             Welcome to Stanningley Park Crown Green Bowling
                             Club's website.
                         </p>
-                        <img
-                            id="upcoming-fixtures"
-                            src={upcoming_fixtures}
-                            alt="upcoming fixtures"
-                        />
-                        <p>Follow us on social media:</p>
-                        <div id="contact">
-                            <a href="https://www.facebook.com/StanningleyBowlsClub">
-                                <img
-                                    className="footer-logos"
-                                    src={facebook}
-                                    alt="Facebook link"
-                                />
-                            </a>
-                            <a href="https://www.instagram.com/StanningleyParkBowls">
-                                <img
-                                    className="footer-logos"
-                                    src={instagram}
-                                    alt="Instagram link"
-                                />
-                            </a>
-                            <a href="https://goo.gl/maps/DtesTxChC5x9Jz3i9">
-                                <img
-                                    className="footer-logos"
-                                    src={google}
-                                    alt="Maps link"
-                                />
-                            </a>
-                            <a href="mailto:stanningleybowlsclub@gmail.com">
-                                <img
-                                    className="footer-logos"
-                                    src={email}
-                                    alt="Email link"
-                                />
-                            </a>
-                        </div>
+                        <Fixtures />
+                        <Links />
                     </div>
                 )}
-            {/* TODO create links for socials */}
             {/* TODO link to bowlsnet pages */}
             {/* TODO Add current league position into stats */}
             {/* TODO Social media integration */}
