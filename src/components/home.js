@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
-import Links from './links';
-import Fixtures from './fixtures';
+import Footer from './footer';
+import Info from './info';
 import bowlsStats from '../data/bowlsStats.json';
 import smallLogo from '../images/brand-logo-tiny.png';
 import logo from '../images/brand-logo.png';
-import Records from './Records';
+import Records from './records';
 
 function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
@@ -125,20 +125,10 @@ function Home() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {!showPlayerStats && !showTeamStats && !showRecords && (
-                <div id="welcome">
-                    <p>
-                        Welcome to Stanningley Park Crown Green Bowling Club's
-                        website.
-                    </p>
-                    <Fixtures />
-                    <Links />
-                </div>
-            )}
+            {!showPlayerStats && !showTeamStats && !showRecords && <Info />}
             {/* TODO link to bowlsnet pages */}
             {/* TODO Add current league position into stats */}
             {/* TODO Social media integration */}
-            {/* TODO Contact page */}
             {showRecords && (
                 <Records teamStats={teamStats} playersStats={playersStats} />
             )}
@@ -146,6 +136,7 @@ function Home() {
             {showTeamStats && (
                 <TeamStats teamStats={teamStats} playersStats={playersStats} />
             )}
+            <Footer />
         </div>
     );
 }

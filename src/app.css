@@ -1,5 +1,5 @@
 p {
-  padding: 0.3rem;
+  padding: 0.1rem;
 }
 
 h1 {
@@ -10,6 +10,12 @@ body {
   background-color: #efefef;
   margin: auto;
   width: 100%;
+}
+
+#footer {
+  padding: 0.5rem 0 0 0;
+  margin-top: 2rem;
+  background-color: #0081a4;
 }
 
 #root {
@@ -57,9 +63,10 @@ body {
 .footer-logos {
   width: 40px;
   height: 40px;
-  margin: 0 1rem 2rem 1rem;
+  margin: 1rem 1.5rem 1rem 1.5rem;
 }
 
 .footnote {
-  font-size: 16px;
+  margin: 0;
+  font-size: 14px;
 }
