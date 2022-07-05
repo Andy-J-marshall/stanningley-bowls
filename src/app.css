@@ -70,3 +70,9 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
