@@ -13,7 +13,5 @@
 .DS_Store
 /.vscode
 
-*/config.js
-
 __pycache__
 ~$bowlsresults.xlsx

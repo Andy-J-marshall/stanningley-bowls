@@ -195,6 +195,7 @@ function Home() {
                 <TeamStats teamStats={teamStats} playersStats={playersStats} />
             )}
             {/* TODO add info on supporters */}
+            {/* TODO add Results */}
             {/* TODO add a membership page? */}
             <Footer />
         </div>
