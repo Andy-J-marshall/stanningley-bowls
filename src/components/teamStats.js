@@ -20,7 +20,6 @@ function TeamStats(props) {
     function mondayComponent() {
         return (
             <IndividualTeamStats
-                index={1}
                 day="Monday"
                 stats={mondayStats}
                 playerStats={playerStats}
@@ -31,7 +30,6 @@ function TeamStats(props) {
     function tuesdayComponent() {
         return (
             <IndividualTeamStats
-                index={2}
                 day="Tuesday"
                 stats={tuesdayStats}
                 playerStats={playerStats}
@@ -42,7 +40,6 @@ function TeamStats(props) {
     function thursdayComponent() {
         return (
             <IndividualTeamStats
-                index={3}
                 day="Thursday"
                 stats={thursdayStats}
                 playerStats={playerStats}
@@ -53,7 +50,6 @@ function TeamStats(props) {
     function saturdayComponent() {
         return (
             <IndividualTeamStats
-                index={4}
                 day="Saturday"
                 stats={saturdayStats}
                 playerStats={playerStats}

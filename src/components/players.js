@@ -3,7 +3,6 @@ import { ListGroup } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 
 function Players(props) {
-    const index = props.index;
     const player = props.player;
     const playersStats = props.playersStats;
     const name = props.name;
@@ -114,7 +113,7 @@ function Players(props) {
     // TODO pagination?
     return (
         <div>
-            <ListGroup.Item key={index}>
+            <ListGroup.Item>
                 <div>
                     <h4>{capitalizeText([name])}</h4>
                     {gamesPlayed === 0 && <p>No games played</p>}
@@ -122,10 +121,7 @@ function Players(props) {
                         <div>
                             <h5>Games</h5>
                             <p>{gamesPlayed} games played in total</p>
-                            {daysPlayedCount.map((day) => {
-                                const key = Math.floor(
-                                    Math.random() * 100000 + index
-                                );
+                            {daysPlayedCount.map((day, key) => {
                                 return (
                                     <p key={key}>
                                         {day.gamesPlayed} games played on{' '}
@@ -177,11 +173,7 @@ function Players(props) {
                                     <p>{pairLosses} pairs losses</p>
                                     {pairsPartners.length > 0 &&
                                         Object.keys(pairsPartnersCount).map(
-                                            (partner) => {
-                                                const key = Math.floor(
-                                                    Math.random() * 100000 +
-                                                        index
-                                                );
+                                            (partner, key) => {
                                                 return (
                                                     <p key={key}>
                                                         {
@@ -197,11 +189,7 @@ function Players(props) {
                                         )}
                                     {pairWins > 0 &&
                                         Object.keys(pairsPartnersCountWins).map(
-                                            (partner) => {
-                                                const key = Math.floor(
-                                                    Math.random() * 100000 +
-                                                        index
-                                                );
+                                            (partner, key) => {
                                                 return (
                                                     <p key={key}>
                                                         {
@@ -217,10 +205,7 @@ function Players(props) {
                                     {pairLosses > 0 &&
                                         Object.keys(
                                             pairsPartnersCountLosses
-                                        ).map((partner) => {
-                                            const key = Math.floor(
-                                                Math.random() * 100000 + index
-                                            );
+                                        ).map((partner, key) => {
                                             return (
                                                 <p key={key}>
                                                     {

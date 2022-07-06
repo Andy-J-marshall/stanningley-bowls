@@ -1,12 +1,12 @@
 import React from 'react';
 import StatsTableDisplay from './statsTableDisplay';
+import { ListGroup } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils'; // TODO remove this
 
 function IndividualTeamStats(props) {
     const day = props.day;
     const stats = props.stats;
     const playerStats = props.playerStats;
-    const index = props.index;
 
     const {
         awayWins,
@@ -26,17 +26,19 @@ function IndividualTeamStats(props) {
         drawnWith,
     } = stats;
 
-    const allPlayerStats = Object.keys(playerStats).map((player) => {
-        const stats = playerStats[player][day.toLowerCase()];
-        const { games, wins, aggDiff } = stats;
-        const playerDayStats = {
-            player,
-            games,
-            wins,
-            average: aggDiff / games,
-        };
-        return playerDayStats;
-    });
+    const allPlayerStats = Object.keys(playerStats)
+        .sort()
+        .map((player) => {
+            const stats = playerStats[player][day.toLowerCase()];
+            const { games, wins, aggDiff } = stats;
+            const playerDayStats = {
+                player,
+                games,
+                wins,
+                average: aggDiff / games,
+            };
+            return playerDayStats;
+        });
 
     const totalDraws = awayDraws + homeDraws;
     const totalWins = awayWins + homeWins + cupWins;
@@ -67,29 +69,62 @@ function IndividualTeamStats(props) {
                 awayDraws={awayDraws}
             />
 
+            {/* TODO change this to use cards? */}
             <div id="player-stats-per-team">
                 <h1>PLAYERS</h1>
-                {allPlayerStats.map((player) => {
-                    const key = Math.floor(Math.random() * 100000 + index);
-                    return (
-                        <div key={key}>
-                            {player.games > 0 && (
-                                <h4>{capitalizeText([player.player])}</h4>
-                            )}
-                            {player.games > 0 && (
-                                <div className="tabs">
-                                    <ul>
-                                        <li>{player.games} games played</li>
-                                        <li>{player.wins} games won</li>
-                                        <li>
-                                            {player.average.toFixed(2)} average
-                                        </li>
-                                    </ul>
-                                </div>
-                            )}
-                        </div>
-                    );
-                })}
+                <ListGroup>
+                    {allPlayerStats.map((player, key) => {
+                        const games = player.games;
+                        if (games > 1) {
+                            return (
+                                <ListGroup.Item key={key}>
+                                    <div key={key}>
+                                        <h4>
+                                            {capitalizeText([player.player])}
+                                        </h4>
+                                        <div className="tabs">
+                                            <ul>
+                                                <li>Games: {player.games}</li>
+                                                <li>Wins: {player.wins}</li>
+                                                <li>
+                                                    Average{' '}
+                                                    {player.average.toFixed(2)}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ListGroup.Item>
+                            );
+                        }
+                    })}
+                </ListGroup>
+
+                {/* <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
+                    {teams.map((team, idx) => (
+                        <Col key={idx}>
+                            <Card bg="light" style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src={team.img} />
+                                <Card.Body>
+                                    <Card.Title>
+                                        {team.name.toUpperCase()}
+                                    </Card.Title>
+                                    <Card.Text>
+                                        {team.age}
+                                        <br /> {team.desc}
+                                        <br /> Start Time: {team.startTime}
+                                    </Card.Text>
+                                    <Button
+                                        style={{ backgroundColor: '#0081a4' }}
+                                        href={team.link}
+                                        variant="secondary"
+                                    >
+                                        View on Bowlsnet
+                                    </Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row> */}
             </div>
         </div>
     );

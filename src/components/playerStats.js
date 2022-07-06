@@ -29,7 +29,6 @@ function PlayerStats(props) {
         return (
             <Player
                 key={index}
-                index={index}
                 player={player}
                 name={playerName}
                 playersStats={playersStats}
