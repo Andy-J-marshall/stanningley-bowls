@@ -84,25 +84,25 @@ function StatsTableDisplay(props) {
                     )}
                     {stanningleyAgg > 0 && (
                         <tr>
-                            <td>Stanningley points scored</td>
+                            <td>Stanningley aggregate</td>
                             <td>{stanningleyAgg}</td>
                         </tr>
                     )}
                     {opponentAgg > 0 && (
                         <tr>
-                            <td>Opponents points scored</td>
+                            <td>Opponents aggregate</td>
                             <td>{opponentAgg}</td>
                         </tr>
                     )}
                     {stanningleyTeamScore > 0 && (
                         <tr>
-                            <td>Stanningley score</td>
+                            <td>Stanningley points</td>
                             <td>{stanningleyTeamScore}</td>
                         </tr>
                     )}
                     {opponentTeamScore > 0 && (
                         <tr>
-                            <td>Opponents score</td>
+                            <td>Opponents points</td>
                             <td>{opponentTeamScore}</td>
                         </tr>
                     )}

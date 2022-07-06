@@ -73,7 +73,7 @@ function RecordsTableDisplay(props) {
                     )}
                     {bestScore && bestScorePlayer && bestScore > 0 && (
                         <tr>
-                            <td>Score per game</td>
+                            <td>Points per game</td>
                             <td>{bestScore.toFixed(2)}</td>
                             <td>{capitalizeText(bestScorePlayer)}</td>
                         </tr>
@@ -82,7 +82,7 @@ function RecordsTableDisplay(props) {
                         bestTeamPointsPerGame &&
                         bestTeamPointsPerGame > 0 && (
                             <tr>
-                                <td>Score per game</td>
+                                <td>Points per game</td>
                                 <td>{bestTeamPointsPerGame.toFixed(2)}</td>
                                 <td>
                                     {capitalizeText(bestTeamPointsPerGameTeam)}
@@ -93,7 +93,7 @@ function RecordsTableDisplay(props) {
                         fewestPointsConcededPerGame &&
                         fewestPointsConcededPerGame > 0 && (
                             <tr>
-                                <td>Opponent score per game</td>
+                                <td>Opponent points per game</td>
                                 <td>
                                     {fewestPointsConcededPerGame.toFixed(2)}
                                 </td>
@@ -106,7 +106,7 @@ function RecordsTableDisplay(props) {
                         bestTeamAggPerGame &&
                         bestTeamAggPerGame > 0 && (
                             <tr>
-                                <td>Points per game</td>
+                                <td>Aggregate per game</td>
                                 <td>{bestTeamAggPerGame.toFixed(2)}</td>
                                 <td>
                                     {capitalizeText(bestTeamAggPerGameTeam)}
@@ -117,7 +117,7 @@ function RecordsTableDisplay(props) {
                         lowestAggConcededPerGameTeam &&
                         lowestAggConcededPerGame > 0 && (
                             <tr>
-                                <td>Opponent points per game</td>
+                                <td>Opponent aggregate per game</td>
                                 <td>{lowestAggConcededPerGame.toFixed(2)}</td>
                                 <td>
                                     {capitalizeText(
