@@ -5,7 +5,7 @@ import email from '../images/email.png';
 
 function Contact() {
     return (
-        <div id="contact-page" className='page-component'>
+        <div id="contact-page" className="page-component">
             <h1>CONTACT US</h1>
             <img className="footer-logos" src={email} alt="Email icon" />
             <a href="mailto:stanningleybowlsclub@gmail.com">

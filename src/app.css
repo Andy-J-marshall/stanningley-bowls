@@ -6,6 +6,10 @@ h1 {
   padding: 2rem 0 1rem 0;
 }
 
+h4 {
+  padding: 0.7rem 0 0 0;
+}
+
 body {
   background-color: #efefef;
   margin: auto;
@@ -34,6 +38,11 @@ body {
   margin-top: 4.2rem;
   background-color: #0081a4;
   color: #ffffff;
+}
+
+ul {
+  text-align: left;
+  list-style: inside;
 }
 
 #player-search-form {

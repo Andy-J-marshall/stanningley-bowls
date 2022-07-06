@@ -67,23 +67,30 @@ function IndividualTeamStats(props) {
                 awayDraws={awayDraws}
             />
 
-            {/* TODO display this nicely - a table? */}
-            {allPlayerStats.map((player) => {
-                const key = Math.floor(Math.random() * 100000 + index);
-                return (
-                    <div key={key}>
-                        {player.games > 0 && (
-                            <h4>{capitalizeText([player.player])}</h4>
-                        )}
-                        {player.games > 0 && (
-                            <p>
-                                {player.games} games played, {player.wins} games
-                                won ({player.average.toFixed(2)} average)
-                            </p>
-                        )}
-                    </div>
-                );
-            })}
+            <div id="player-stats-per-team">
+                <h1>PLAYERS</h1>
+                {allPlayerStats.map((player) => {
+                    const key = Math.floor(Math.random() * 100000 + index);
+                    return (
+                        <div key={key}>
+                            {player.games > 0 && (
+                                <h4>{capitalizeText([player.player])}</h4>
+                            )}
+                            {player.games > 0 && (
+                                <div className="tabs">
+                                    <ul>
+                                        <li>{player.games} games played</li>
+                                        <li>{player.wins} games won</li>
+                                        <li>
+                                            {player.average.toFixed(2)} average
+                                        </li>
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     );
 }

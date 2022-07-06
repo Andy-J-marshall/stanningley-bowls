@@ -49,7 +49,7 @@ function PlayerStats(props) {
                     <Form.Group className="mb-3">
                         <Typeahead
                             id="player-search"
-                            placeholder="Search for player"
+                            placeholder="Player..."
                             onChange={handleChange}
                             options={['SHOW ALL'].concat(playerNameArray)}
                             selected={value}
