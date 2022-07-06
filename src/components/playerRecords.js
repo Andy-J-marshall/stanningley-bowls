@@ -48,7 +48,7 @@ function PlayerRecords(props) {
         const totalGames = totalWins + totalLosses;
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-        const score = p.totalScore / totalGames;
+        const score = p.totalScore / (totalGames - p.cupWins - p.cupLosses);
 
         const { monday, tuesday, thursday, saturday } = p;
         const mondayWins = monday.wins;

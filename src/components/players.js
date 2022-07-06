@@ -51,8 +51,8 @@ function Players(props) {
     const average = (totalAgg - totalAggAgainst) / gamesPlayed;
     const homeAverage = (totalHomeAgg - totalHomeAggAgainst) / homeGamesPlayed;
     const awayAverage = (totalAwayAgg - totalAwayAggAgainst) / awayGamesPlayed;
-    const averageScore = totalScore / gamesPlayed;
-    const averageScoreAgainst = totalScoreAgainst / gamesPlayed;
+    const averageScore = totalScore / (gamesPlayed - cupWins - cupLosses);
+    const averageScoreAgainst = totalScoreAgainst / (gamesPlayed - cupWins - cupLosses);
     const homeAverageScore = totalHomeScore / homeGamesPlayed;
     const homeAverageScoreAgainst = totalHomeScoreAgainst / homeGamesPlayed;
     const awayAverageScore = totalAwayScore / awayGamesPlayed;
@@ -280,24 +280,24 @@ function Players(props) {
                                 {averageScore >= 0 && (
                                     <div>
                                         <p>
-                                            Average score ={' '}
+                                            Average points ={' '}
                                             {averageScore.toFixed(2)} / 5
                                         </p>
                                         <p>
-                                            Average opponents score ={' '}
+                                            Average opponents points ={' '}
                                             {averageScoreAgainst.toFixed(2)} / 5
                                         </p>
                                         {homeAverageScore >= 0 && (
                                             <div>
                                                 <p>
-                                                    Average home score ={' '}
+                                                    Average home points ={' '}
                                                     {homeAverageScore.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
                                                 </p>
                                                 <p>
-                                                    Average home opponents score
+                                                    Average home opponents points
                                                     ={' '}
                                                     {homeAverageScoreAgainst.toFixed(
                                                         2
@@ -309,14 +309,14 @@ function Players(props) {
                                         {awayAverageScore >= 0 && (
                                             <div>
                                                 <p>
-                                                    Average away score ={' '}
+                                                    Average away points ={' '}
                                                     {awayAverageScore.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
                                                 </p>
                                                 <p>
-                                                    Average away opponents score
+                                                    Average away opponents points
                                                     ={' '}
                                                     {awayAverageScoreAgainst.toFixed(
                                                         2
@@ -377,11 +377,11 @@ function Players(props) {
                                 </p>
                                 <p>
                                     Total points scored = {totalScore} /{' '}
-                                    {gamesPlayed * 5}
+                                    {(gamesPlayed - cupLosses - cupWins) * 5}
                                 </p>
                                 <p>
                                     Total points conceded = {totalScoreAgainst}{' '}
-                                    / {gamesPlayed * 5}
+                                    / {(gamesPlayed - cupLosses - cupWins) * 5}
                                 </p>
                                 <p>
                                     Total home points scored = {totalHomeScore}{' '}
