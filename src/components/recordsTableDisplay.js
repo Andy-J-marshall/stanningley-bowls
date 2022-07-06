@@ -37,9 +37,9 @@ function RecordsTableDisplay(props) {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>Record</th>
-                        <th>Value</th>
-                        <th>{playerOrTeam} (Games Played)</th>
+                        <th>RECORD</th>
+                        <th>VALUE</th>
+                        <th>{playerOrTeam.toUpperCase()} (GAMES PLAYED)</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -1,7 +1,7 @@
 import React from 'react';
 import StatsTableDisplay from './statsTableDisplay';
-import { ListGroup } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils'; // TODO remove this
+import { Table } from 'react-bootstrap';
+import { capitalizeText } from '../helpers/utils';
 
 function IndividualTeamStats(props) {
     const day = props.day;
@@ -69,62 +69,38 @@ function IndividualTeamStats(props) {
                 awayDraws={awayDraws}
             />
 
-            {/* TODO change this to use cards? */}
             <div id="player-stats-per-team">
                 <h1>PLAYERS</h1>
-                <ListGroup>
-                    {allPlayerStats.map((player, key) => {
-                        const games = player.games;
-                        if (games > 1) {
+                <div className="center table" style={{ width: '97%' }}>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>PLAYER</th>
+                                <th>GAMES</th>
+                                <th>WINS</th>
+                                <th>AVERAGE</th>
+                            </tr>
+                        </thead>
+                        {allPlayerStats.map((player, key) => {
                             return (
-                                <ListGroup.Item key={key}>
-                                    <div key={key}>
-                                        <h4>
-                                            {capitalizeText([player.player])}
-                                        </h4>
-                                        <div className="tabs">
-                                            <ul>
-                                                <li>Games: {player.games}</li>
-                                                <li>Wins: {player.wins}</li>
-                                                <li>
-                                                    Average{' '}
-                                                    {player.average.toFixed(2)}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </ListGroup.Item>
+                                <tbody key={key}>
+                                    {player.games > 0 && (
+                                        <tr>
+                                            <td>
+                                                {capitalizeText([
+                                                    player.player,
+                                                ])}
+                                            </td>
+                                            <td>{player.games}</td>
+                                            <td>{player.wins}</td>
+                                            <td>{player.average.toFixed(2)}</td>
+                                        </tr>
+                                    )}
+                                </tbody>
                             );
-                        }
-                    })}
-                </ListGroup>
-
-                {/* <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
-                    {teams.map((team, idx) => (
-                        <Col key={idx}>
-                            <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={team.img} />
-                                <Card.Body>
-                                    <Card.Title>
-                                        {team.name.toUpperCase()}
-                                    </Card.Title>
-                                    <Card.Text>
-                                        {team.age}
-                                        <br /> {team.desc}
-                                        <br /> Start Time: {team.startTime}
-                                    </Card.Text>
-                                    <Button
-                                        style={{ backgroundColor: '#0081a4' }}
-                                        href={team.link}
-                                        variant="secondary"
-                                    >
-                                        View on Bowlsnet
-                                    </Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}
-                </Row> */}
+                        })}
+                    </Table>
+                </div>
             </div>
         </div>
     );

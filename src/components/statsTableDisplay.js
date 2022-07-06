@@ -28,8 +28,8 @@ function StatsTableDisplay(props) {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>Statistic</th>
-                        <th>Value</th>
+                        <th>STATISTIC</th>
+                        <th>VALUE</th>
                     </tr>
                 </thead>
                 <tbody>

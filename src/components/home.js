@@ -37,7 +37,7 @@ function Home() {
             if (url.includes('#player-stats')) {
                 displayPlayerStats();
             }
-            if (url.includes('#player-records')) {
+            if (url.includes('#records')) {
                 displayRecords();
             }
             if (url.includes('#membership')) {
