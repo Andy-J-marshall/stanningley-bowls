@@ -283,7 +283,7 @@ function PlayerRecords(props) {
 
     return (
         <div>
-            <h1>Player Records</h1>
+            <h1>PLAYER RECORDS</h1>
             <TeamTabs
                 id="player-record"
                 allComponent={allComponent()}

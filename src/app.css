@@ -3,7 +3,7 @@ p {
 }
 
 h1 {
-  padding: 1rem;
+  padding: 2rem 0 1rem 0;
 }
 
 body {
@@ -28,7 +28,6 @@ body {
 #header {
   padding: 1rem;
   margin-top: 4.2rem;
-  margin-bottom: 1.5rem;
   background-color: #0081a4;
   color: #ffffff;
 }

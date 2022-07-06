@@ -3,7 +3,9 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
 import Footer from './footer';
-import Info from './info';
+import Membership from './membership';
+import Contact from './contact';
+import Fixtures from './fixtures';
 import bowlsStats from '../data/bowlsStats.json';
 import smallLogo from '../images/brand-logo-tiny.png';
 import logo from '../images/brand-logo.png';
@@ -13,6 +15,9 @@ function Home() {
     const [showPlayerStats, setShowPlayerStats] = useState(false);
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showRecords, setShowRecords] = useState(false);
+    const [showMembership, setShowMembership] = useState(false);
+    const [showFixtures, setShowFixtures] = useState(false);
+    const [showContactInfo, setShowContactInfo] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
     const playersStats = bowlsStats.playerResults;
@@ -35,37 +40,74 @@ function Home() {
             if (url.includes('#player-records')) {
                 displayRecords();
             }
-            if (url.includes('#home') || url.includes('#info')) {
-                displayInfo();
+            if (url.includes('#membership')) {
+                displayMembership();
+            }
+            if (url.includes('#fixtures')) {
+                displayFixtures();
+            }
+            if (url.includes('#contact')) {
+                displayContactInfo();
             }
             setLoaded(true);
         }
     });
 
-    function displayInfo() {
+    function displayContactInfo() {
+        setShowContactInfo(true);
+        setShowFixtures(false);
+        setShowMembership(false);
         setShowPlayerStats(false);
         setShowTeamStats(false);
         setShowRecords(false);
+    }
+
+    function displayFixtures() {
+        setShowFixtures(true);
+        setShowMembership(false);
+        setShowPlayerStats(false);
+        setShowTeamStats(false);
+        setShowRecords(false);
+        setShowContactInfo(false);
+    }
+
+    function displayMembership() {
+        setShowMembership(true);
+        setShowPlayerStats(false);
+        setShowTeamStats(false);
+        setShowRecords(false);
+        setShowFixtures(false);
+        setShowContactInfo(false);
     }
 
     function displayPlayerStats() {
         setShowPlayerStats(true);
         setShowTeamStats(false);
         setShowRecords(false);
+        setShowMembership(false);
+        setShowFixtures(false);
+        setShowContactInfo(false);
     }
 
     function displayTeamStats() {
         setShowTeamStats(true);
         setShowPlayerStats(false);
         setShowRecords(false);
+        setShowMembership(false);
+        setShowFixtures(false);
+        setShowContactInfo(false);
     }
 
     function displayRecords() {
         setShowRecords(true);
         setShowPlayerStats(false);
         setShowTeamStats(false);
+        setShowMembership(false);
+        setShowFixtures(false);
+        setShowContactInfo(false);
     }
 
+    /* TODO Home tab? Or move this to app.js? */
     return (
         <div id="home">
             <Navbar
@@ -93,8 +135,23 @@ function Home() {
                             style={{ maxHeight: '700px' }}
                             navbarScroll
                         >
-                            <Nav.Link onSelect={displayInfo} href="#information">
-                                INFO
+                            <Nav.Link
+                                onSelect={displayMembership}
+                                href="#membership"
+                            >
+                                MEMBERSHIP
+                            </Nav.Link>
+                            <Nav.Link
+                                onSelect={displayFixtures}
+                                href="#fixtures"
+                            >
+                                FIXTURES
+                            </Nav.Link>
+                            <Nav.Link
+                                onSelect={displayContactInfo}
+                                href="#contact"
+                            >
+                                CONTACT
                             </Nav.Link>
                             <Nav.Link
                                 onSelect={displayPlayerStats}
@@ -124,8 +181,10 @@ function Home() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {!showPlayerStats && !showTeamStats && !showRecords && <Info />}
-            {/* TODO link to bowlsnet pages */}
+            {/* TODO change this to a proper home page */}
+            {showFixtures && <Fixtures />}
+            {showContactInfo && <Contact />}
+            {showMembership && <Membership />}
             {/* TODO Add current league position into stats */}
             {/* TODO Social media integration */}
             {showRecords && (
@@ -135,9 +194,8 @@ function Home() {
             {showTeamStats && (
                 <TeamStats teamStats={teamStats} playersStats={playersStats} />
             )}
-            {/* TODO News? */}
+            {/* TODO add info on supporters */}
             {/* TODO add a membership page? */}
-            {/* TODO change info to fixtures? */}
             <Footer />
         </div>
     );

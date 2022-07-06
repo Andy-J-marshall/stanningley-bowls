@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import Fixtures from './fixtures';
 import stan1 from '../images/stan1.jpg';
 import stan2 from '../images/stan2.jpg';
 import stan3 from '../images/stan3.jpg';
@@ -16,7 +15,7 @@ const teams = [
         img: stan1,
     },
     {
-        name: 'Tuesday Vet',
+        name: 'Tuesday Vets',
         age: 'Vets (55+ year olds)',
         desc: '8 singles games',
         link: 'https://bowlsnet.uk/LeedsParkVets/Tue',
@@ -41,10 +40,10 @@ const teams = [
     },
 ];
 
-function Info() {
+function Membership() {
     return (
-        <div id="info">
-            <h1>Team Information</h1>
+        <div id="members">
+            <h1>MEMBERSHIP</h1>
             <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                 {teams.map((team, idx) => (
                     <Col key={idx}>
@@ -72,9 +71,8 @@ function Info() {
                     </Col>
                 ))}
             </Row>
-            <Fixtures />
         </div>
     );
 }
 
-export default Info;
+export default Membership;

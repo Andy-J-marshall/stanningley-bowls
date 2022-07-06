@@ -7,7 +7,7 @@ import email from '../images/email.png';
 function Footer() {
     return (
         <div id="footer">
-            <div id="contact">
+            <div id="socials">
                 <a href="https://www.facebook.com/StanningleyBowlsClub">
                     <img
                         className="footer-logos"
