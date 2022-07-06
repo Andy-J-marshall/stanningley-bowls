@@ -5,13 +5,13 @@ import email from '../images/email.png';
 
 function Contact() {
     return (
-        <div id="contact-page">
-            <h1>CONTACT</h1>
+        <div id="contact-page" className='page-component'>
+            <h1>CONTACT US</h1>
             <img className="footer-logos" src={email} alt="Email icon" />
             <a href="mailto:stanningleybowlsclub@gmail.com">
                 StanningleyBowlsClub@gmail.com
             </a>
-            <h1>Follow us on social media</h1>
+            <br />
             <a href="https://www.instagram.com/StanningleyParkBowls">
                 <img
                     className="footer-logos"
@@ -35,8 +35,6 @@ function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <br />
-            <br />
         </div>
     );
 }

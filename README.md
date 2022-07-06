@@ -18,6 +18,7 @@ Run the following:
 <!-- TODO do we want the Excel file in Git? -->
 <!-- TODO create cypress scripts to get the data? -->
 <!-- TODO update readme (and scripts readme) -->
+<!-- TODO add a config file for things like days played, membership price, stanningley specific stuff etc. -->
 
 ## Bowls script
 A script to collate stats from all Stanningley bowls club teams.

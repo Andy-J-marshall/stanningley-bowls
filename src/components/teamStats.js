@@ -62,7 +62,7 @@ function TeamStats(props) {
     }
 
     return (
-        <div>
+        <div className="page-component">
             <h1>TEAM STATS</h1>
             <TeamTabs
                 id="team-stat"
