@@ -1962,7 +1962,9 @@
         "New Farnley B (away)",
         "Crossgates BC (away)"
       ],
-      "drawnWith": ["Whitkirk A (home)", "Sth Lds Cons (away)"]
+      "drawnWith": ["Whitkirk A (home)", "Sth Lds Cons (away)"],
+      "leaguePosition": 2,
+      "leaguePoints": 284
     },
     {
       "day": "Tuesday",
@@ -1989,7 +1991,9 @@
         "Gildersome (away)"
       ],
       "beatenBy": ["Harehills Park A (cup)"],
-      "drawnWith": []
+      "drawnWith": [],
+      "leaguePosition": 2,
+      "leaguePoints": 298
     },
     {
       "day": "Thursday",
@@ -2017,7 +2021,9 @@
         "Churwell Pk (away)",
         "Middleton Community (cup)"
       ],
-      "drawnWith": []
+      "drawnWith": [],
+      "leaguePosition": 2,
+      "leaguePoints": 216
     },
     {
       "day": "Saturday",
@@ -2046,7 +2052,9 @@
         "Sth Leeds Cons B (home)"
       ],
       "beatenBy": ["Western Flatts (cup)"],
-      "drawnWith": []
+      "drawnWith": [],
+      "leaguePosition": 1,
+      "leaguePoints": 326
     }
   ]
 }

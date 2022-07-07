@@ -23,8 +23,6 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
-# TODO add current league position into script?
-
 # TODO need to check this works for final
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
@@ -84,6 +82,38 @@ for day in stanningleyTeamDays:
                 awayRow.append(awayIndex)
         awayIndex = awayIndex + 1
 
+    # Find league position for Stanningley teams
+    leaguePositionIndex = 1
+    leaguePositionRow = 0
+    currentLeaguePoints = -1
+    currentLeaguePoints = -1
+    leaguePositionCol = 'A'
+    satLeaguePositionCol = 'B'
+    leaguePointsCol = 'I'
+    satLeaguePointsCol = 'A'
+    monLeaguePointsCol = 'C'
+    leagueTeamNameCol = 'B'
+    satLeagueTeamNameCol = 'C'
+
+    if day == 'Saturday':
+        leagueTeamNameCol = satLeagueTeamNameCol
+        leaguePositionCol = satLeaguePositionCol
+        leaguePointsCol = satLeaguePointsCol
+    if day == 'Monday':
+        leaguePointsCol = monLeaguePointsCol
+
+    for row in sheet[leagueTeamNameCol]:
+        if row.value and type(row.value) is str and row.value.lower() in stanningleyTeamNames:
+            leaguePosition = sheet[leaguePositionCol +
+                                   str(leaguePositionIndex)].value
+            leaguePoints = sheet[leaguePointsCol +
+                                 str(leaguePositionIndex)].value
+            if type(leaguePosition) is int:
+                leaguePositionRow = leaguePositionIndex
+                currentLeaguePosition = leaguePosition
+            if type(leaguePoints) is int:
+                currentLeaguePoints = leaguePoints
+        leaguePositionIndex = leaguePositionIndex + 1
     # Find team results and scores
     awayWins = 0
     awayLosses = 0
@@ -118,57 +148,61 @@ for day in stanningleyTeamDays:
 
         # Home games
         if row in homeRow:
-            opponent = sheet[awayTeamNameCol + str(row)].value
-            if homeScore > awayScore:
-                if cupGame:
-                    beaten.append(opponent + ' (cup)')
-                    cupWins = cupWins + 1
-                else:
-                    beaten.append(opponent + ' (home)')
-                    homeWins = homeWins + 1
-            if homeScore < awayScore:
-                if cupGame:
-                    beatenBy.append(opponent + ' (cup)')
-                    cupLosses = cupLosses + 1
-                else:
-                    beatenBy.append(opponent + ' (home)')
-                    homeLosses = homeLosses + 1
-            if awayScore == homeScore:
-                drawnWith.append(opponent + (' (home)'))
-                homeDraws = homeDraws + 1
-            stanningleyAgg = stanningleyAgg + \
-                sheet[homeAggCol + str(row + 9)].value
-            opponentAgg = opponentAgg + sheet[awayAggCol + str(row + 9)].value
-            if not cupGame:
-                stanningleyTotalPoints = stanningleyTotalPoints + homeScore
-                opponentTotalPoints = opponentTotalPoints + awayScore
+            if row != leaguePositionRow:
+                opponent = sheet[awayTeamNameCol + str(row)].value
+                if homeScore > awayScore:
+                    if cupGame:
+                        beaten.append(opponent + ' (cup)')
+                        cupWins = cupWins + 1
+                    else:
+                        beaten.append(opponent + ' (home)')
+                        homeWins = homeWins + 1
+                if homeScore < awayScore:
+                    if cupGame:
+                        beatenBy.append(opponent + ' (cup)')
+                        cupLosses = cupLosses + 1
+                    else:
+                        beatenBy.append(opponent + ' (home)')
+                        homeLosses = homeLosses + 1
+                if awayScore == homeScore:
+                    drawnWith.append(opponent + (' (home)'))
+                    homeDraws = homeDraws + 1
+                stanningleyAgg = stanningleyAgg + \
+                    sheet[homeAggCol + str(row + 9)].value
+                opponentAgg = opponentAgg + \
+                    sheet[awayAggCol + str(row + 9)].value
+                if not cupGame:
+                    stanningleyTotalPoints = stanningleyTotalPoints + homeScore
+                    opponentTotalPoints = opponentTotalPoints + awayScore
 
         # Away games
         if row in awayRow:
-            opponent = sheet[homeTeamNameCol + str(row)].value
-            if awayScore > homeScore:
-                if cupGame:
-                    beaten.append(opponent + ' (cup)')
-                    cupWins = cupWins + 1
-                else:
-                    beaten.append(opponent + ' (away)')
-                    awayWins = awayWins + 1
-            if awayScore < homeScore:
-                if cupGame:
-                    beatenBy.append(opponent + ' (cup)')
-                    cupLosses = cupLosses + 1
-                else:
-                    beatenBy.append(opponent + ' (away)')
-                    awayLosses = awayLosses + 1
-            if awayScore == homeScore:
-                drawnWith.append(opponent + ' (away)')
-                awayDraws = awayDraws + 1
-            opponentAgg = opponentAgg + sheet[homeAggCol + str(row + 9)].value
-            stanningleyAgg = stanningleyAgg + \
-                sheet[awayAggCol + str(row + 9)].value
-            if not cupGame:
-                stanningleyTotalPoints = stanningleyTotalPoints + awayScore
-                opponentTotalPoints = opponentTotalPoints + homeScore
+            if row != leaguePositionRow:
+                opponent = sheet[homeTeamNameCol + str(row)].value
+                if awayScore > homeScore:
+                    if cupGame:
+                        beaten.append(opponent + ' (cup)')
+                        cupWins = cupWins + 1
+                    else:
+                        beaten.append(opponent + ' (away)')
+                        awayWins = awayWins + 1
+                if awayScore < homeScore:
+                    if cupGame:
+                        beatenBy.append(opponent + ' (cup)')
+                        cupLosses = cupLosses + 1
+                    else:
+                        beatenBy.append(opponent + ' (away)')
+                        awayLosses = awayLosses + 1
+                if awayScore == homeScore:
+                    drawnWith.append(opponent + ' (away)')
+                    awayDraws = awayDraws + 1
+                opponentAgg = opponentAgg + \
+                    sheet[homeAggCol + str(row + 9)].value
+                stanningleyAgg = stanningleyAgg + \
+                    sheet[awayAggCol + str(row + 9)].value
+                if not cupGame:
+                    stanningleyTotalPoints = stanningleyTotalPoints + awayScore
+                    opponentTotalPoints = opponentTotalPoints + homeScore
 
     # Store team result data
     teamResults = {
@@ -187,7 +221,9 @@ for day in stanningleyTeamDays:
         'opponentTotalPoints': opponentTotalPoints,
         'beaten': beaten,
         'beatenBy': beatenBy,
-        'drawnWith': drawnWith
+        'drawnWith': drawnWith,
+        'leaguePosition': currentLeaguePosition,
+        'leaguePoints': currentLeaguePoints
     }
     stanningleyTeamResults.append(teamResults)
 
