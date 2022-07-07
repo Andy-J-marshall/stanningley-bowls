@@ -18,13 +18,13 @@ function Stats() {
         window.scrollTo(0, 0);
         const url = window.location.href.toLowerCase();
         if (loaded === false) {
-            if (url.includes('/team-stats')) {
+            if (url.includes('#team-stats')) {
                 displayTeamStats();
             }
-            if (url.includes('/player-stats')) {
+            if (url.includes('#player-stats')) {
                 displayPlayerStats();
             }
-            if (url.includes('/records')) {
+            if (url.includes('#records')) {
                 displayRecords();
             }
             setLoaded(true);
@@ -65,39 +65,39 @@ function Stats() {
                         navbarScroll
                         activeKey="/player-stats"
                         onSelect={(selectedKey) => {
-                            if (selectedKey === '/player-stats') {
+                            if (selectedKey === '#player-stats') {
                                 displayPlayerStats();
                             }
-                            if (selectedKey === '/team-stats') {
+                            if (selectedKey === '#team-stats') {
                                 displayTeamStats();
                             }
-                            if (selectedKey === '/records') {
+                            if (selectedKey === '#records') {
                                 displayRecords();
                             }
                         }}
                     >
                         <Nav.Item>
                             <Nav.Link
-                                href="/player-stats"
-                                eventKey="/player-stats"
+                                href="#player-stats"
+                                eventKey="#player-stats"
                             >
                                 PLAYERS
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/team-stats" eventKey="/team-stats">
+                            <Nav.Link href="#team-stats" eventKey="#team-stats">
                                 TEAMS
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/records" eventKey="/records">
+                            <Nav.Link href="#records" eventKey="#records">
                                 RECORDS
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Container>
             </Navbar>
-            <div id="stats" className="page-component">
+            <div id="stat" className="page-component">
                 {showRecords && (
                     <Records
                         teamStats={teamStats}

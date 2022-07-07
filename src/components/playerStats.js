@@ -37,7 +37,7 @@ function PlayerStats(props) {
     }
 
     return (
-        <div id="player-stats">
+        <div id="player-stat">
             <h1>PLAYER STATS</h1>
             <Form
                 id="player-search-form"

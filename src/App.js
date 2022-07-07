@@ -24,22 +24,22 @@ function App() {
         const url = window.location.href.toLowerCase();
         if (loaded === false) {
             if (
-                url.includes('/records') ||
-                url.includes('/stats') ||
+                url.includes('#records') ||
+                url.includes('#stats') ||
                 url.includes('-stats')
             ) {
                 displayStats();
             }
-            if (url.includes('/membership')) {
+            if (url.includes('#membership')) {
                 displayMembership();
             }
-            if (url.includes('/fixtures')) {
+            if (url.includes('#fixtures')) {
                 displayFixtures();
             }
-            if (url.includes('/contact')) {
+            if (url.includes('#contact')) {
                 displayContactInfo();
             }
-            if (url.includes('/home')) {
+            if (url.includes('#home')) {
                 setShowHome();
             }
             setLoaded(true);
@@ -96,7 +96,7 @@ function App() {
                 expand="md"
             >
                 <Container fluid>
-                    <Navbar.Brand href="/home">
+                    <Navbar.Brand href="#home">
                         <img
                             alt="logo"
                             src={smallLogo}
@@ -113,46 +113,46 @@ function App() {
                             navbarScroll
                             activeKey="/home"
                             onSelect={(selectedKey) => {
-                                if (selectedKey === '/home') {
+                                if (selectedKey === '#homepage') {
                                     displayHome();
                                 }
-                                if (selectedKey === '/membership') {
+                                if (selectedKey === '#membership') {
                                     displayMembership();
                                 }
-                                if (selectedKey === '/fixtures') {
+                                if (selectedKey === '#fixtures') {
                                     displayFixtures();
                                 }
-                                if (selectedKey === '/stats') {
+                                if (selectedKey === '#stats') {
                                     displayStats();
                                 }
-                                if (selectedKey === '/contact') {
+                                if (selectedKey === '#contact') {
                                     displayContactInfo();
                                 }
                             }}
                         >
                             <Nav.Item>
-                                <Nav.Link href="/home" eventKey="/home">HOME</Nav.Link>
+                                <Nav.Link href="#homepage" eventKey="#homepage">HOME</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link
-                                    href="/membership"
-                                    eventKey="/membership"
+                                    href="#membership"
+                                    eventKey="#membership"
                                 >
                                     MEMBERSHIP
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/fixtures" eventKey="/fixtures">
+                                <Nav.Link href="#fixtures" eventKey="#fixtures">
                                     FIXTURES
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/stats" eventKey="/stats">
+                                <Nav.Link href="#stats" eventKey="#stats">
                                     STATS
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="/contact" eventKey="/contact">
+                                <Nav.Link href="#contact" eventKey="#contact">
                                     CONTACT
                                 </Nav.Link>
                             </Nav.Item>
