@@ -112,14 +112,14 @@ function Home() {
                             >
                                 FIXTURES
                             </Nav.Link>
+                            <Nav.Link onSelect={displayStats} href="#stats">
+                                STATS
+                            </Nav.Link>
                             <Nav.Link
                                 onSelect={displayContactInfo}
                                 href="#contact"
                             >
                                 CONTACT
-                            </Nav.Link>
-                            <Nav.Link onSelect={displayStats} href="#stats">
-                                STATS
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
