@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
+import { capitalizeText, arrayToList } from '../helpers/utils';
 
 function Players(props) {
     const player = props.player;
@@ -52,15 +52,18 @@ function Players(props) {
     const homeAverage = (totalHomeAgg - totalHomeAggAgainst) / homeGamesPlayed;
     const awayAverage = (totalAwayAgg - totalAwayAggAgainst) / awayGamesPlayed;
     const averageScore = totalScore / (gamesPlayed - cupWins - cupLosses);
-    const averageScoreAgainst = totalScoreAgainst / (gamesPlayed - cupWins - cupLosses);
+    const averageScoreAgainst =
+        totalScoreAgainst / (gamesPlayed - cupWins - cupLosses);
     const homeAverageScore = totalHomeScore / homeGamesPlayed;
     const homeAverageScoreAgainst = totalHomeScoreAgainst / homeGamesPlayed;
     const awayAverageScore = totalAwayScore / awayGamesPlayed;
     const awayAverageScoreAgainst = totalAwayScoreAgainst / awayGamesPlayed;
-    beatenBy = capitalizeText(beatenBy);
-    beatenOpponents = capitalizeText(beatenOpponents);
-    beatenByTeam = capitalizeText(beatenByTeam);
-    beatenTeam = capitalizeText(beatenTeam);
+    beatenBy = beatenBy ? arrayToList(beatenBy) : beatenBy;
+    beatenOpponents = beatenOpponents
+        ? arrayToList(beatenOpponents)
+        : beatenOpponents;
+    beatenByTeam = beatenByTeam ? arrayToList(beatenByTeam) : beatenByTeam;
+    beatenTeam = beatenTeam ? arrayToList(beatenTeam) : beatenTeam;
     const pairsGames = pairLosses + pairWins;
     const mondayWins = monday.wins;
     const mondayGames = monday.games;
@@ -222,16 +225,16 @@ function Players(props) {
 
                             <h5>Opponents</h5>
                             {beatenOpponents.length > 0 && (
-                                <p>Beaten opponents = {beatenOpponents}</p>
+                                <p>Opponents beaten: {beatenOpponents}</p>
                             )}
                             {beatenBy.length > 0 && (
-                                <p>Defeated by = {beatenBy}</p>
+                                <p>Opponents lost to: {beatenBy}</p>
                             )}
                             {beatenTeam.length > 0 && (
-                                <p>Beaten team = {beatenTeam}</p>
+                                <p>Teams beaten: {beatenTeam}</p>
                             )}
                             {beatenByTeam.length > 0 && (
-                                <p>Teams lost to = {beatenByTeam}</p>
+                                <p>Teams lost to: {beatenByTeam}</p>
                             )}
 
                             <div>
@@ -297,8 +300,8 @@ function Players(props) {
                                                     / 5
                                                 </p>
                                                 <p>
-                                                    Average home opponents points
-                                                    ={' '}
+                                                    Average home opponents
+                                                    points ={' '}
                                                     {homeAverageScoreAgainst.toFixed(
                                                         2
                                                     )}{' '}
@@ -316,8 +319,8 @@ function Players(props) {
                                                     / 5
                                                 </p>
                                                 <p>
-                                                    Average away opponents points
-                                                    ={' '}
+                                                    Average away opponents
+                                                    points ={' '}
                                                     {awayAverageScoreAgainst.toFixed(
                                                         2
                                                     )}{' '}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
+import { capitalizeText, arrayToList } from '../helpers/utils';
 
 function StatsTableDisplay(props) {
     const totalGames = props.totalGames;
@@ -19,11 +19,18 @@ function StatsTableDisplay(props) {
     const opponentAgg = props.opponentAgg;
     const stanningleyTeamScore = props.stanningleyTeamScore;
     const opponentTeamScore = props.opponentTeamScore;
-    const teamsBeaten = props.teamsBeaten;
-    const teamsLostTo = props.teamsLostTo;
-    const teamsDrawn = props.teamsDrawn;
     const leaguePoints = props.leaguePoints;
     const leaguePosition = props.leaguePosition;
+    const teamsBeaten = props.teamsBeaten
+        ? arrayToList(props.teamsBeaten)
+        : props.teamsBeaten;
+    const teamsLostTo = props.teamsLostTo
+        ? arrayToList(props.teamsLostTo)
+        : props.teamsLostTo;
+    const teamsDrawn = props.teamsDrawn
+        ? arrayToList(props.teamsDrawn)
+        : props.teamsDrawn;
+    const results = props.results ? arrayToList(props.results) : props.results;
 
     return (
         <div className="center table" style={{ width: '97%' }}>
@@ -39,6 +46,18 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Games</td>
                             <td>{totalGames}</td>
+                        </tr>
+                    )}
+                    {leaguePosition >= 0 && (
+                        <tr>
+                            <td>Current league position</td>
+                            <td>{leaguePosition}</td>
+                        </tr>
+                    )}
+                    {leaguePoints >= 0 && (
+                        <tr>
+                            <td>Current league points</td>
+                            <td>{leaguePoints}</td>
                         </tr>
                     )}
                     {totalWins > 0 && (
@@ -111,31 +130,25 @@ function StatsTableDisplay(props) {
                     {totalWins > 0 && teamsBeaten && (
                         <tr>
                             <td>Opponents beaten</td>
-                            <td>{capitalizeText(teamsBeaten)}</td>
+                            <td>{<ul>{teamsBeaten}</ul>}</td>
                         </tr>
                     )}
                     {totalLosses > 0 && teamsLostTo && (
                         <tr>
                             <td>Opponents lost to</td>
-                            <td>{capitalizeText(teamsLostTo)}</td>
+                            <td>{<ul>{teamsLostTo}</ul>}</td>
                         </tr>
                     )}
                     {totalDraws > 0 && teamsDrawn && (
                         <tr>
                             <td>Opponents drawn with</td>
-                            <td>{capitalizeText(teamsDrawn)}</td>
+                            <td>{<ul>{teamsDrawn}</ul>}</td>
                         </tr>
                     )}
-                    {leaguePosition >= 0 && (
+                    {results && results.length > 0 && (
                         <tr>
-                            <td>Current league position</td>
-                            <td>{leaguePosition}</td>
-                        </tr>
-                    )}
-                    {leaguePoints >= 0 && (
-                        <tr>
-                            <td>Current league points</td>
-                            <td>{leaguePoints}</td>
+                            <td>Results</td>
+                            <td>{<ul>{results}</ul>}</td>
                         </tr>
                     )}
                 </tbody>

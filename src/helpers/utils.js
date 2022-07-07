@@ -15,3 +15,13 @@ export function capitalizeText(stringArray) {
     });
     return stringArrayAsString;
 }
+
+export function arrayToList(stringArray) {
+    let returnList;
+    if (stringArray) {
+        returnList = stringArray.map((r, idx) => (
+            <li className='tabs' key={idx}>{capitalizeText([r])}</li>
+        ));
+    }
+    return returnList;
+}

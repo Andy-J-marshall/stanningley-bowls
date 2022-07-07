@@ -21,11 +21,9 @@ function IndividualTeamStats(props) {
         stanningleyTotalPoints,
         opponentAgg,
         opponentTotalPoints,
-        beaten,
-        beatenBy,
-        drawnWith,
         leaguePosition,
-        leaguePoints
+        leaguePoints,
+        results,
     } = stats;
 
     const allPlayerStats = Object.keys(playerStats)
@@ -58,9 +56,6 @@ function IndividualTeamStats(props) {
                 opponentAgg={opponentAgg}
                 stanningleyTeamScore={stanningleyTotalPoints}
                 opponentTeamScore={opponentTotalPoints}
-                teamsBeaten={beaten}
-                teamsLostTo={beatenBy}
-                teamsDrawn={drawnWith}
                 homeWins={homeWins}
                 awayWins={awayWins}
                 cupWins={cupWins}
@@ -71,6 +66,7 @@ function IndividualTeamStats(props) {
                 awayDraws={awayDraws}
                 leaguePoints={leaguePoints}
                 leaguePosition={leaguePosition}
+                results={results}
             />
 
             <div id="player-stats-per-team">
