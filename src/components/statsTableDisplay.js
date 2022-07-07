@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import { capitalizeText, arrayToList } from '../helpers/utils';
+import { arrayToList } from '../helpers/utils';
 
 function StatsTableDisplay(props) {
     const totalGames = props.totalGames;

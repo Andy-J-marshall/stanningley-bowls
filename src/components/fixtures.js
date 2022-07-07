@@ -3,7 +3,7 @@ import upcoming_fixtures from '../images/upcoming_fixtures.png';
 
 function Fixtures() {
     return (
-        <div id="fixture">
+        <div id="fixtures">
             <img
                 id="upcoming-fixtures"
                 src={upcoming_fixtures}

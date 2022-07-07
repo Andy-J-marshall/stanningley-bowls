@@ -3,7 +3,7 @@ import TeamInfo from './teamInfo';
 
 function Membership() {
     return (
-        <div id="members">
+        <div id="membership">
             <h1>MEMBERSHIP</h1>
             <div>
                 <p>New members welcome.</p>

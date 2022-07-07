@@ -23,7 +23,6 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
-# TODO need to check this works for final
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file

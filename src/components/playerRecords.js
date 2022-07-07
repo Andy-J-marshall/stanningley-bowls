@@ -285,7 +285,7 @@ function PlayerRecords(props) {
         <div>
             <h1>PLAYER RECORDS</h1>
             <TeamTabs
-                id="player-record"
+                id="player-records"
                 allComponent={allComponent()}
                 mondayComponent={mondayComponent()}
                 tuesdayComponent={tuesdayComponent()}
