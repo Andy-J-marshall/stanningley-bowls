@@ -1964,7 +1964,21 @@
       ],
       "drawnWith": ["Whitkirk A (home)", "Sth Lds Cons (away)"],
       "leaguePosition": 2,
-      "leaguePoints": 284
+      "leaguePoints": 284,
+      "results": [
+        "Stanningley: 26 - Sth Lds Cons: 14",
+        "Gildersome: 14 - Stanningley: 26",
+        "Stanningley: 30 - Meanwood B: 8",
+        "Western Flatts: 12 - Stanningley: 30",
+        "Stanningley: 28 - New Wortley: 17",
+        "Harehills: 17 - Stanningley: 26",
+        "Stanningley: 18 - Rothwell BC: 25",
+        "New Farnley B: 27 - Stanningley: 15",
+        "Stanningley: 23 - Whitkirk A: 23",
+        "Crossgates BC: 29 - Stanningley: 11",
+        "Sth Lds Cons: 25 - Stanningley: 25",
+        "Stanningley: 26 - Gildersome: 13"
+      ]
     },
     {
       "day": "Tuesday",
@@ -1993,7 +2007,18 @@
       "beatenBy": ["Harehills Park A (cup)"],
       "drawnWith": [],
       "leaguePosition": 2,
-      "leaguePoints": 298
+      "leaguePoints": 298,
+      "results": [
+        "Horsforth Woodside.: 21 - Stanningley: 38",
+        "New Armley: 13 - Stanningley: 40",
+        "Stanningley: 34 - Harehills Park A: 27",
+        "Stanningley: 39 - West Royd Park: 19",
+        "Western Flatts: 19 - Stanningley: 37",
+        "Stanningley: 33 - Barwick BC: 23",
+        "Stanningley: 40 - Holbeck Moor: 14",
+        "Gildersome: 15 - Stanningley: 37",
+        "Harehills Park A: 145 - Stanningley: 130"
+      ]
     },
     {
       "day": "Thursday",
@@ -2023,7 +2048,17 @@
       ],
       "drawnWith": [],
       "leaguePosition": 2,
-      "leaguePoints": 216
+      "leaguePoints": 216,
+      "results": [
+        "Stanningley: 24 - Churwell Pk: 36",
+        "Pudsey Park A: 30 - Stanningley: 26",
+        "Stanningley: 36 - Middleton Community: 16",
+        "New Armley: 13 - Stanningley: 40",
+        "Stanningley: 34 - Scatcherd Pk A: 25",
+        "Cross Flatts Pk: 32 - Stanningley: 24",
+        "Churwell Pk: 35 - Stanningley: 32",
+        "Stanningley: 129 - Middleton Community: 132"
+      ]
     },
     {
       "day": "Saturday",
@@ -2054,7 +2089,20 @@
       "beatenBy": ["Western Flatts (cup)"],
       "drawnWith": [],
       "leaguePosition": 1,
-      "leaguePoints": 326
+      "leaguePoints": 326,
+      "results": [
+        "Sth Leeds Cons B: 18 - Stanningley: 35",
+        "Stanningley: 37 - Gildersome B: 22",
+        "Cranmore: 23 - Stanningley: 33",
+        "Stanningley: 36 - Middleton Comm: 20",
+        "Stanningley: 37 - New Wortley: 17",
+        "Stanningley: 35 - Western Flatts: 19",
+        "Scatcherd Park B: 14 - Stanningley: 40",
+        "Stanningley: 161 - Sth Leeds Cons B: 119",
+        "Stanningley: 37 - Middleton Park: 17",
+        "Stanningley: 36 - Sth Leeds Cons B: 18",
+        "Western Flatts: 121 - Stanningley: 120"
+      ]
     }
   ]
 }

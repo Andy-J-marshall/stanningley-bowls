@@ -130,6 +130,7 @@ for day in stanningleyTeamDays:
     beaten = []
     beatenBy = []
     drawnWith = []
+    results = []
 
     for row in range(1, sheet.max_row + 1):
         # Check if cup game
@@ -150,6 +151,8 @@ for day in stanningleyTeamDays:
         if row in homeRow:
             if row != leaguePositionRow:
                 opponent = sheet[awayTeamNameCol + str(row)].value
+                result = 'Stanningley: ' + str(homeScore) + ' - ' + opponent + ': ' + str(awayScore)
+                results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
                         beaten.append(opponent + ' (cup)')
@@ -179,6 +182,8 @@ for day in stanningleyTeamDays:
         if row in awayRow:
             if row != leaguePositionRow:
                 opponent = sheet[homeTeamNameCol + str(row)].value
+                result = opponent + ': ' + str(homeScore) + ' - Stanningley: ' + str(awayScore)
+                results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
                         beaten.append(opponent + ' (cup)')
@@ -223,7 +228,8 @@ for day in stanningleyTeamDays:
         'beatenBy': beatenBy,
         'drawnWith': drawnWith,
         'leaguePosition': currentLeaguePosition,
-        'leaguePoints': currentLeaguePoints
+        'leaguePoints': currentLeaguePoints,
+        'results': results
     }
     stanningleyTeamResults.append(teamResults)
 

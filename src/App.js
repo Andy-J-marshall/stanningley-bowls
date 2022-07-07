@@ -160,7 +160,7 @@ function App() {
                 !showMembership &&
                 !showHome && <Home />}
             {/* TODO add info on supporters */}
-            {/* TODO add Results */}
+            {/* TODO add Results, and result records */}
             <Footer />
             <link
                 rel="stylesheet"
