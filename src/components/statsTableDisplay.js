@@ -22,6 +22,8 @@ function StatsTableDisplay(props) {
     const teamsBeaten = props.teamsBeaten;
     const teamsLostTo = props.teamsLostTo;
     const teamsDrawn = props.teamsDrawn;
+    const leaguePoints = props.leaguePoints;
+    const leaguePosition = props.leaguePosition;
 
     return (
         <div className="center table" style={{ width: '97%' }}>
@@ -122,6 +124,18 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Opponents drawn with</td>
                             <td>{capitalizeText(teamsDrawn)}</td>
+                        </tr>
+                    )}
+                    {leaguePosition >= 0 && (
+                        <tr>
+                            <td>Current league position</td>
+                            <td>{leaguePosition}</td>
+                        </tr>
+                    )}
+                    {leaguePoints >= 0 && (
+                        <tr>
+                            <td>Current league points</td>
+                            <td>{leaguePoints}</td>
                         </tr>
                     )}
                 </tbody>

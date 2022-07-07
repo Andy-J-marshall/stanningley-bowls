@@ -159,7 +159,6 @@ function App() {
                 !showContactInfo &&
                 !showMembership &&
                 !showHome && <Home />}
-            {/* TODO Add current league position into stats */}
             {/* TODO add info on supporters */}
             {/* TODO add Results */}
             <Footer />
