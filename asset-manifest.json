@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/stanningley-bowls/static/css/main.41c582ff.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.0c0dc29e.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.0c0dc29e.chunk.js.map",
-    "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js",
-    "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.3ce3fbbd.js.map",
+    "main.js": "/stanningley-bowls/static/js/main.a6fa3090.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.a6fa3090.chunk.js.map",
+    "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js",
+    "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
-    "static/js/2.bd9beaae.chunk.js": "/stanningley-bowls/static/js/2.bd9beaae.chunk.js",
-    "static/js/2.bd9beaae.chunk.js.map": "/stanningley-bowls/static/js/2.bd9beaae.chunk.js.map",
+    "static/js/2.a5dd493c.chunk.js": "/stanningley-bowls/static/js/2.a5dd493c.chunk.js",
+    "static/js/2.a5dd493c.chunk.js.map": "/stanningley-bowls/static/js/2.a5dd493c.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
     "static/css/main.41c582ff.chunk.css.map": "/stanningley-bowls/static/css/main.41c582ff.chunk.css.map",
-    "static/js/2.bd9beaae.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.bd9beaae.chunk.js.LICENSE.txt",
+    "static/js/2.a5dd493c.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.a5dd493c.chunk.js.LICENSE.txt",
     "static/media/brand-logo-tiny.923a3133.png": "/stanningley-bowls/static/media/brand-logo-tiny.923a3133.png",
     "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png",
     "static/media/stan1.fb507703.jpg": "/stanningley-bowls/static/media/stan1.fb507703.jpg",
@@ -21,10 +21,10 @@
     "static/media/upcoming_fixtures.1cf6acc0.png": "/stanningley-bowls/static/media/upcoming_fixtures.1cf6acc0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ce3fbbd.js",
+    "static/js/runtime-main.7bab6f68.js",
     "static/css/2.6087c55b.chunk.css",
-    "static/js/2.bd9beaae.chunk.js",
+    "static/js/2.a5dd493c.chunk.js",
     "static/css/main.41c582ff.chunk.css",
-    "static/js/main.0c0dc29e.chunk.js"
+    "static/js/main.a6fa3090.chunk.js"
   ]
 }
