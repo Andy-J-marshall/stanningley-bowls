@@ -120,22 +120,29 @@ function Players(props) {
                 <h2>{capitalizeText([name])}</h2>
                 {gamesPlayed === 0 && <p>No games played</p>}
                 {gamesPlayed > 0 && (
-                    <Accordion>
+                    <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>GAMES PLAYED</Accordion.Header>
                             <Accordion.Body>
-                                <p>{gamesPlayed} games played in total</p>
+                                <h3>TOTAL</h3>
+                                <p>{gamesPlayed} total games</p>
+                                {pairsGames > 0 && (
+                                    <div>
+                                        <p>{pairsGames} pairs games</p>
+                                        <p>
+                                            {gamesPlayed - pairsGames} singles
+                                            games
+                                        </p>
+                                    </div>
+                                )}
+                                <h3>TEAMS</h3>
                                 {daysPlayedCount.map((day, key) => {
                                     return (
                                         <p key={key}>
-                                            {day.gamesPlayed} games played on{' '}
-                                            {day.day}
+                                            {day.gamesPlayed} games on {day.day}
                                         </p>
                                     );
                                 })}
-                                {pairsGames > 0 && (
-                                    <p>{pairsGames} pairs games played</p>
-                                )}
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
@@ -145,9 +152,28 @@ function Players(props) {
                                     <div>
                                         <h3>WINS</h3>
                                         <p>
-                                            {totalWins} wins ({homeWins} home,{' '}
-                                            {awayWins} away, {cupWins} cup)
+                                            {totalWins} total wins ({homeWins}{' '}
+                                            home, {awayWins} away, {cupWins}{' '}
+                                            cup)
                                         </p>
+                                        <p>
+                                            {(
+                                                (totalWins / gamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            % win percentage
+                                        </p>
+                                        {pairWins > 0 && (
+                                            <div>
+                                                {totalWins - pairWins > 0 && (
+                                                    <p>
+                                                        {totalWins - pairWins}{' '}
+                                                        singles wins
+                                                    </p>
+                                                )}
+                                                <p>{pairWins} pairs wins</p>
+                                            </div>
+                                        )}
                                         {mondayGames > 0 && (
                                             <p>{mondayWins} Monday wins</p>
                                         )}
@@ -166,28 +192,34 @@ function Players(props) {
                                     <div>
                                         <h3>LOSSES</h3>
                                         <p>
-                                            {totalLosses} losses ({homeLosses}{' '}
-                                            home, {awayLosses} away, {cupLosses}{' '}
-                                            cup)
+                                            {totalLosses} total losses (
+                                            {homeLosses} home, {awayLosses}{' '}
+                                            away, {cupLosses} cup)
                                         </p>
+                                        {pairLosses > 0 && (
+                                            <div>
+                                                {totalLosses - pairLosses >
+                                                    0 && (
+                                                    <p>
+                                                        {totalLosses -
+                                                            pairLosses}{' '}
+                                                        singles losses
+                                                    </p>
+                                                )}
+                                                <p>{pairLosses} pairs losses</p>
+                                            </div>
+                                        )}
                                     </div>
                                 )}
-                                <p>
-                                    {((totalWins / gamesPlayed) * 100).toFixed(
-                                        0
-                                    )}
-                                    % win percentage
-                                </p>
 
                                 {pairsGames > 0 && (
                                     <div>
-                                        <h3>Pairs</h3>
-                                        <p>{pairsGames} pairs games played</p>
-                                        <p>{pairWins} pairs wins</p>
-                                        <p>{pairLosses} pairs losses</p>
-                                        {pairsPartners.length > 0 &&
-                                            Object.keys(pairsPartnersCount).map(
-                                                (partner, key) => {
+                                        {pairsPartners.length > 0 && (
+                                            <div>
+                                                <h3>PAIRS PARTNERS</h3>
+                                                {Object.keys(
+                                                    pairsPartnersCount
+                                                ).map((partner, key) => {
                                                     return (
                                                         <p key={key}>
                                                             {
@@ -195,77 +227,45 @@ function Players(props) {
                                                                     partner
                                                                 ].timesPaired
                                                             }{' '}
-                                                            games played with{' '}
-                                                            {partner}
+                                                            games with {partner}
                                                         </p>
                                                     );
-                                                }
-                                            )}
-                                        {pairWins > 0 &&
-                                            Object.keys(
-                                                pairsPartnersCountWins
-                                            ).map((partner, key) => {
-                                                return (
-                                                    <p key={key}>
-                                                        {
-                                                            pairsPartnersCountWins[
-                                                                partner
-                                                            ].timesPaired
-                                                        }{' '}
-                                                        games won with {partner}
-                                                    </p>
-                                                );
-                                            })}
-                                        {pairLosses > 0 &&
-                                            Object.keys(
-                                                pairsPartnersCountLosses
-                                            ).map((partner, key) => {
-                                                return (
-                                                    <p key={key}>
-                                                        {
-                                                            pairsPartnersCountLosses[
-                                                                partner
-                                                            ].timesPaired
-                                                        }{' '}
-                                                        games lost with{' '}
-                                                        {partner}
-                                                    </p>
-                                                );
-                                            })}
+                                                })}
+                                                {Object.keys(
+                                                    pairsPartnersCountWins
+                                                ).map((partner, key) => {
+                                                    return (
+                                                        <p key={key}>
+                                                            {
+                                                                pairsPartnersCountWins[
+                                                                    partner
+                                                                ].timesPaired
+                                                            }{' '}
+                                                            won with {partner}
+                                                        </p>
+                                                    );
+                                                })}
+                                                {Object.keys(
+                                                    pairsPartnersCountLosses
+                                                ).map((partner, key) => {
+                                                    return (
+                                                        <p key={key}>
+                                                            {
+                                                                pairsPartnersCountLosses[
+                                                                    partner
+                                                                ].timesPaired
+                                                            }{' '}
+                                                            lost with {partner}
+                                                        </p>
+                                                    );
+                                                })}
+                                            </div>
+                                        )}
                                     </div>
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>OPPONENTS</Accordion.Header>
-                            <Accordion.Body>
-                                {beatenOpponents.length > 0 && (
-                                    <div>
-                                        <h3>OPPONENTS BEATEN</h3>
-                                        <p>{beatenOpponents}</p>
-                                    </div>
-                                )}
-                                {beatenBy.length > 0 && (
-                                    <div>
-                                        <h3>OPPONENTS LOST TO</h3>
-                                        <p>{beatenBy}</p>
-                                    </div>
-                                )}
-                                {beatenTeam.length > 0 && (
-                                    <div>
-                                        <h3>TEAMS BEATEN</h3>
-                                        <p>{beatenTeam}</p>
-                                    </div>
-                                )}
-                                {beatenByTeam.length > 0 && (
-                                    <div>
-                                        <h3>TEAMS LOST TO</h3>
-                                        <p>{beatenByTeam}</p>
-                                    </div>
-                                )}
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="3">
                             <Accordion.Header>AVERAGES</Accordion.Header>
                             <Accordion.Body>
                                 {average >= -21 && (
@@ -318,7 +318,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="4">
+                        <Accordion.Item eventKey="3">
                             <Accordion.Header>POINTS</Accordion.Header>
                             <Accordion.Body>
                                 {averageScore >= 0 && (
@@ -411,7 +411,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="5">
+                        <Accordion.Item eventKey="4">
                             <Accordion.Header>AGGREGATES</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
@@ -460,9 +460,39 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
+                        <Accordion.Item eventKey="5">
+                            <Accordion.Header>OPPONENTS</Accordion.Header>
+                            <Accordion.Body>
+                                {beatenOpponents.length > 0 && (
+                                    <div>
+                                        <h3>OPPONENTS BEATEN</h3>
+                                        <p>{beatenOpponents}</p>
+                                    </div>
+                                )}
+                                {beatenBy.length > 0 && (
+                                    <div>
+                                        <h3>OPPONENTS LOST TO</h3>
+                                        <p>{beatenBy}</p>
+                                    </div>
+                                )}
+                                {beatenTeam.length > 0 && (
+                                    <div>
+                                        <h3>TEAMS BEATEN</h3>
+                                        <p>{beatenTeam}</p>
+                                    </div>
+                                )}
+                                {beatenByTeam.length > 0 && (
+                                    <div>
+                                        <h3>TEAMS LOST TO</h3>
+                                        <p>{beatenByTeam}</p>
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
                     </Accordion>
                 )}
             </ListGroup.Item>
+            <br />
         </div>
     );
 }
