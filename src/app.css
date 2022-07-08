@@ -64,6 +64,10 @@ ul {
   width: 70%;
 }
 
+#result {
+  width: 96%;
+}
+
 #upcoming-fixtures {
   width: 100%;
 }

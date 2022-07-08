@@ -150,7 +150,7 @@ for day in stanningleyTeamDays:
         if row in homeRow:
             if row != leaguePositionRow:
                 opponent = sheet[awayTeamNameCol + str(row)].value
-                result = 'Stanningley Park ' + \
+                result = 'Stanningley ' + \
                     str(homeScore) + ' - ' + str(awayScore) + ' ' + opponent
                 results.append(result)
                 if homeScore > awayScore:
@@ -183,7 +183,7 @@ for day in stanningleyTeamDays:
             if row != leaguePositionRow:
                 opponent = sheet[homeTeamNameCol + str(row)].value
                 result = opponent + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + ' Stanningley Park'
+                    str(homeScore) + ' - ' + str(awayScore) + ' Stanningley'
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
