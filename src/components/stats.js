@@ -3,16 +3,15 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import Records from './records';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
-import bowlsStats from '../data/bowlsStats.json';
 
-function Stats() {
+function Stats(props) {
     const [showPlayerStats, setShowPlayerStats] = useState(true);
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showRecords, setShowRecords] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
-    const playersStats = bowlsStats.playerResults;
-    const teamStats = bowlsStats.teamResults;
+    const playersStats = props.playerResults;
+    const teamStats = props.teamResults;
 
     useEffect(() => {
         window.scrollTo(0, 0);

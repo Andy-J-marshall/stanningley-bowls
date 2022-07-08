@@ -7,11 +7,18 @@ function TeamStats(props) {
     const teamStats = props.teamStats;
     const playerStats = props.playersStats;
 
-    // TODO get the teamStats in a better way than using array
-    const mondayStats = teamStats[0];
-    const tuesdayStats = teamStats[1];
-    const thursdayStats = teamStats[2];
-    const saturdayStats = teamStats[3];
+    const mondayStats = teamStats.find(
+        (team) => team.day.toLowerCase() === 'monday'
+    );
+    const tuesdayStats = teamStats.find(
+        (team) => team.day.toLowerCase() === 'tuesday'
+    );
+    const thursdayStats = teamStats.find(
+        (team) => team.day.toLowerCase() === 'thursday'
+    );
+    const saturdayStats = teamStats.find(
+        (team) => team.day.toLowerCase() === 'saturday'
+    );
 
     function allComponent() {
         return <CombinedTeamStats stats={teamStats} />;

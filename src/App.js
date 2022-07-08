@@ -10,15 +10,19 @@ import logo from './images/brand-logo.png';
 import stan1 from './images/stan1.jpg';
 import stan2 from './images/stan2.jpg';
 import stan3 from './images/stan3.jpg';
+import bowlsStats from './data/bowlsStats.json';
 import './app.css';
 
 function App() {
     const [showHome, setShowHome] = useState(false);
     const [showStats, setShowStats] = useState(false);
     const [showMembership, setShowMembership] = useState(false);
-    const [showFixtures, setShowFixtures] = useState(false);
+    const [showFixturesResults, setShowFixturesResults] = useState(false);
     const [showContactInfo, setShowContactInfo] = useState(false);
     const [loaded, setLoaded] = useState(false);
+
+    const playerResults = bowlsStats.playerResults;
+    const teamResults = bowlsStats.teamResults;
 
     // TODO Handle multiple years worth of stats
     useEffect(() => {
@@ -35,8 +39,8 @@ function App() {
             if (url.includes('#membership')) {
                 displayMembership();
             }
-            if (url.includes('#fixtures')) {
-                displayFixtures();
+            if (url.includes('#fixtures-results')) {
+                displayFixturesResults();
             }
             if (url.includes('#contact')) {
                 displayContactInfo();
@@ -55,8 +59,8 @@ function App() {
         if (selectedKey === '#membership') {
             displayMembership();
         }
-        if (selectedKey === '#fixtures') {
-            displayFixtures();
+        if (selectedKey === '#fixtures-results') {
+            displayFixturesResults();
         }
         if (selectedKey === '#stats') {
             displayStats();
@@ -69,21 +73,21 @@ function App() {
     function displayHome() {
         setShowHome(true);
         setShowContactInfo(false);
-        setShowFixtures(false);
+        setShowFixturesResults(false);
         setShowMembership(false);
         setShowStats(false);
     }
 
     function displayContactInfo() {
         setShowContactInfo(true);
-        setShowFixtures(false);
+        setShowFixturesResults(false);
         setShowMembership(false);
         setShowStats(false);
         setShowHome(false);
     }
 
-    function displayFixtures() {
-        setShowFixtures(true);
+    function displayFixturesResults() {
+        setShowFixturesResults(true);
         setShowMembership(false);
         setShowStats(false);
         setShowContactInfo(false);
@@ -93,7 +97,7 @@ function App() {
     function displayMembership() {
         setShowMembership(true);
         setShowStats(false);
-        setShowFixtures(false);
+        setShowFixturesResults(false);
         setShowContactInfo(false);
         setShowHome(false);
     }
@@ -101,7 +105,7 @@ function App() {
     function displayStats() {
         setShowStats(true);
         setShowMembership(false);
-        setShowFixtures(false);
+        setShowFixturesResults(false);
         setShowContactInfo(false);
         setShowHome(false);
     }
@@ -148,8 +152,8 @@ function App() {
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#fixtures" eventKey="#fixtures">
-                                    FIXTURES
+                                <Nav.Link href="#fixtures-results" eventKey="#fixtures-results">
+                                    FIXTURES & RESULTS
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
@@ -175,14 +179,19 @@ function App() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {showFixtures && <Fixtures />}
+            {showFixturesResults && <Fixtures teamResults={teamResults} />}
             {showContactInfo && <Contact />}
             {showMembership && <Membership />}
-            {showStats && <Stats />}
+            {showStats && (
+                <Stats
+                    playerResults={playerResults}
+                    teamResults={teamResults}
+                />
+            )}
 
             {(showHome ||
                 (!showStats &&
-                    !showFixtures &&
+                    !showFixturesResults &&
                     !showContactInfo &&
                     !showMembership &&
                     !showHome)) && (
@@ -236,7 +245,7 @@ function App() {
                                     <Nav.Item>
                                         <Nav.Link
                                             style={{ color: 'white' }}
-                                            href="#fixtures"
+                                            href="#fixtures-results"
                                         >
                                             <h5>Fixtures and Results</h5>
                                         </Nav.Link>
@@ -250,12 +259,6 @@ function App() {
             {/* TODO add info on supporters */}
             {/* TODO add Results, and result records */}
             <Footer />
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-                crossOrigin="anonymous"
-            />
         </div>
     );
 }
