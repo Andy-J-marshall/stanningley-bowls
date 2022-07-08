@@ -4,7 +4,7 @@ import Stats from './components/stats';
 import Footer from './components/footer';
 import Membership from './components/membership';
 import Contact from './components/contact';
-import Fixtures from './components/fixtures';
+import FixturesResults from './components/fixturesResults';
 import smallLogo from './images/brand-logo-tiny.png';
 import logo from './images/brand-logo.png';
 import stan1 from './images/stan1.jpg';
@@ -179,7 +179,7 @@ function App() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {showFixturesResults && <Fixtures teamResults={teamResults} />}
+            {showFixturesResults && <FixturesResults teamResults={teamResults} />}
             {showContactInfo && <Contact />}
             {showMembership && <Membership />}
             {showStats && (
@@ -257,7 +257,6 @@ function App() {
                 </div>
             )}
             {/* TODO add info on supporters */}
-            {/* TODO add Results, and result records */}
             <Footer />
         </div>
     );

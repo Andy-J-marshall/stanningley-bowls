@@ -2,10 +2,12 @@ import React from 'react';
 import Results from './results';
 import upcoming_fixtures from '../images/upcoming_fixtures.png';
 
-function Fixtures() {
+function FixturesResults(props) {
+    const teamResults = props.teamResults;
+
     return (
         <div id="fixture">
-            <Results/>
+            <Results teamResults={teamResults} />
             <img
                 id="upcoming-fixtures"
                 src={upcoming_fixtures}
@@ -16,4 +18,4 @@ function Fixtures() {
     );
 }
 
-export default Fixtures;
+export default FixturesResults;
