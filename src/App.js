@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Carousel } from 'react-bootstrap';
 import Stats from './components/stats';
 import Footer from './components/footer';
+import Supporters from './components/supporters';
 import Membership from './components/membership';
 import Contact from './components/contact';
 import FixturesResults from './components/fixturesResults';
@@ -152,7 +153,10 @@ function App() {
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#fixtures-results" eventKey="#fixtures-results">
+                                <Nav.Link
+                                    href="#fixtures-results"
+                                    eventKey="#fixtures-results"
+                                >
                                     FIXTURES & RESULTS
                                 </Nav.Link>
                             </Nav.Item>
@@ -179,7 +183,9 @@ function App() {
                     className="d-inline-block align-top"
                 />
             </div>
-            {showFixturesResults && <FixturesResults teamResults={teamResults} />}
+            {showFixturesResults && (
+                <FixturesResults teamResults={teamResults} />
+            )}
             {showContactInfo && <Contact />}
             {showMembership && <Membership />}
             {showStats && (
@@ -195,65 +201,66 @@ function App() {
                     !showContactInfo &&
                     !showMembership &&
                     !showHome)) && (
-                <div
-                    className="center page-component"
-                    style={{ width: '90%' }}
-                    id="home-page"
-                >
-                    <p>
-                        Welcome to Stanningley Park Bowling Club's website.
-                        <br /> <br /> Find out about membership, upcoming
-                        fixures and player stats.
-                    </p>
-                    <Nav
-                        activeKey="#homepage"
-                        onSelect={onSelect}
-                        className="tabs"
-                    >
-                        <Carousel fade>
-                            <Carousel.Item>
-                                <img src={stan1} alt="Membership slide" />
-                                <Carousel.Caption>
-                                    <Nav.Item>
-                                        <Nav.Link
-                                            style={{ color: 'white' }}
-                                            href="#membership"
-                                        >
-                                            <h5>Membership Options</h5>
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img src={stan2} alt="Stats slide" />
+                <div className="center" style={{ width: '90%' }} id="home-page">
+                    <div className="center page-component">
+                        <p>
+                            Welcome to Stanningley Park Bowling Club's website.
+                            <br /> <br /> Find out about membership, upcoming
+                            fixures and player stats.
+                        </p>
+                        <Nav
+                            activeKey="#homepage"
+                            onSelect={onSelect}
+                            className="tabs"
+                        >
+                            <Carousel fade>
+                                <Carousel.Item>
+                                    <img src={stan1} alt="Membership slide" />
+                                    <Carousel.Caption>
+                                        <Nav.Item>
+                                            <Nav.Link
+                                                style={{ color: 'white' }}
+                                                href="#membership"
+                                            >
+                                                <h5>Membership Options</h5>
+                                            </Nav.Link>
+                                        </Nav.Item>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img src={stan2} alt="Stats slide" />
 
-                                <Carousel.Caption>
-                                    <Nav.Item>
-                                        <Nav.Link
-                                            style={{ color: 'white' }}
-                                            href="#stats"
-                                        >
-                                            <h5>Team and Player Stats</h5>
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img src={stan3} alt="Fixtures slide" />
+                                    <Carousel.Caption>
+                                        <Nav.Item>
+                                            <Nav.Link
+                                                style={{ color: 'white' }}
+                                                href="#stats"
+                                            >
+                                                <h5>Team and Player Stats</h5>
+                                            </Nav.Link>
+                                        </Nav.Item>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img src={stan3} alt="Fixtures slide" />
 
-                                <Carousel.Caption>
-                                    <Nav.Item>
-                                        <Nav.Link
-                                            style={{ color: 'white' }}
-                                            href="#fixtures-results"
-                                        >
-                                            <h5>Fixtures and Results</h5>
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-                    </Nav>
+                                    <Carousel.Caption>
+                                        <Nav.Item>
+                                            <Nav.Link
+                                                style={{ color: 'white' }}
+                                                href="#fixtures-results"
+                                            >
+                                                <h5>Fixtures and Results</h5>
+                                            </Nav.Link>
+                                        </Nav.Item>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                            </Carousel>
+                        </Nav>
+                    </div>
+
+                    <h3>SUPPORTERS</h3>
+                    <Supporters />
                 </div>
             )}
             {/* TODO add info on supporters */}

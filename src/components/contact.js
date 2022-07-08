@@ -7,21 +7,21 @@ function Contact() {
     return (
         <div id="contact-page" className="page-component">
             <h1>CONTACT US</h1>
-            <img className="footer-logos" src={email} alt="Email icon" />
+            <img className="logos" src={email} alt="Email icon" />
             <a href="mailto:stanningleybowlsclub@gmail.com">
                 StanningleyBowlsClub@gmail.com
             </a>
             <br />
             <a href="https://www.instagram.com/StanningleyParkBowls">
                 <img
-                    className="footer-logos"
+                    className="logos"
                     src={instagram}
                     alt="Instagram link"
                 />
             </a>
             <a href="https://www.facebook.com/StanningleyBowlsClub">
                 <img
-                    className="footer-logos"
+                    className="logos"
                     src={facebook}
                     alt="Facebook link"
                 />

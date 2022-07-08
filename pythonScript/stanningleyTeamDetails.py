@@ -24,7 +24,6 @@ traitorPlayers = {
     'Saturday': ['mario biancardo', 'shirley biancardo', 'dave hudson', 'clifford brogie'],
 }
 
-# TODO improve how we do this
 # Base information for each player. New players need adding to this
 stanningleyPlayerResults = {
     'jim moorin': {
