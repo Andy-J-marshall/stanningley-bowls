@@ -5,7 +5,7 @@ function Membership() {
     return (
         <div id="members">
             <h1>MEMBERSHIP</h1>
-            <div>
+            <div className="center" style={{ width: '95%' }}>
                 <p>New members welcome.</p>
                 <p>
                     Please visit the Contact page to get in touch, or just turn
