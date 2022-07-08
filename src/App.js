@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Carousel } from 'react-bootstrap';
 import Stats from './components/stats';
 import Footer from './components/footer';
 import Membership from './components/membership';
 import Contact from './components/contact';
 import Fixtures from './components/fixtures';
-import Home from './components/home';
 import smallLogo from './images/brand-logo-tiny.png';
 import logo from './images/brand-logo.png';
+import stan1 from './images/stan1.jpg';
+import stan2 from './images/stan2.jpg';
+import stan3 from './images/stan3.jpg';
 import './app.css';
 
 function App() {
@@ -45,6 +47,24 @@ function App() {
             setLoaded(true);
         }
     });
+
+    const onSelect = (selectedKey) => {
+        if (selectedKey === '#homepage') {
+            displayHome();
+        }
+        if (selectedKey === '#membership') {
+            displayMembership();
+        }
+        if (selectedKey === '#fixtures') {
+            displayFixtures();
+        }
+        if (selectedKey === '#stats') {
+            displayStats();
+        }
+        if (selectedKey === '#contact') {
+            displayContactInfo();
+        }
+    };
 
     function displayHome() {
         setShowHome(true);
@@ -111,27 +131,13 @@ function App() {
                             className="me-auto"
                             style={{ maxHeight: '700px' }}
                             navbarScroll
-                            activeKey="/home"
-                            onSelect={(selectedKey) => {
-                                if (selectedKey === '#homepage') {
-                                    displayHome();
-                                }
-                                if (selectedKey === '#membership') {
-                                    displayMembership();
-                                }
-                                if (selectedKey === '#fixtures') {
-                                    displayFixtures();
-                                }
-                                if (selectedKey === '#stats') {
-                                    displayStats();
-                                }
-                                if (selectedKey === '#contact') {
-                                    displayContactInfo();
-                                }
-                            }}
+                            activeKey="#homepage"
+                            onSelect={onSelect}
                         >
                             <Nav.Item>
-                                <Nav.Link href="#homepage" eventKey="#homepage">HOME</Nav.Link>
+                                <Nav.Link href="#homepage" eventKey="#homepage">
+                                    HOME
+                                </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link
@@ -173,12 +179,74 @@ function App() {
             {showContactInfo && <Contact />}
             {showMembership && <Membership />}
             {showStats && <Stats />}
-            {showHome && <Home />}
-            {!showStats &&
-                !showFixtures &&
-                !showContactInfo &&
-                !showMembership &&
-                !showHome && <Home />}
+
+            {(showHome ||
+                (!showStats &&
+                    !showFixtures &&
+                    !showContactInfo &&
+                    !showMembership &&
+                    !showHome)) && (
+                <div
+                    className="center page-component"
+                    style={{ width: '90%' }}
+                    id="home-page"
+                >
+                    <p>
+                        Welcome to Stanningley Park Bowling Club's website.
+                        <br /> <br /> Find out about membership, upcoming
+                        fixures and player stats.
+                    </p>
+                    <Nav
+                        activeKey="#homepage"
+                        onSelect={onSelect}
+                        className="tabs"
+                    >
+                        <Carousel fade>
+                            <Carousel.Item>
+                                <img src={stan1} alt="Membership slide" />
+                                <Carousel.Caption>
+                                    <Nav.Item>
+                                        <Nav.Link
+                                            style={{ color: 'white' }}
+                                            href="#membership"
+                                        >
+                                            <h5>Membership Options</h5>
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={stan2} alt="Stats slide" />
+
+                                <Carousel.Caption>
+                                    <Nav.Item>
+                                        <Nav.Link
+                                            style={{ color: 'white' }}
+                                            href="#stats"
+                                        >
+                                            <h5>Team and Player Stats</h5>
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img src={stan3} alt="Fixtures slide" />
+
+                                <Carousel.Caption>
+                                    <Nav.Item>
+                                        <Nav.Link
+                                            style={{ color: 'white' }}
+                                            href="#fixtures"
+                                        >
+                                            <h5>Fixtures and Results</h5>
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </Nav>
+                </div>
+            )}
             {/* TODO add info on supporters */}
             {/* TODO add Results, and result records */}
             <Footer />

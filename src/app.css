@@ -10,6 +10,16 @@ h4 {
   padding: 0.7rem 0 0 0;
 }
 
+.carousel-item {
+  height: 350px;
+  width: 350px;
+}
+
+.carousel-item img {
+  height: 350px;
+  width: 350px;
+}
+
 body {
   background-color: #efefef;
   margin: auto;
@@ -17,12 +27,17 @@ body {
 }
 
 .page-component {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 #footer {
   padding: 0.5rem 0 0 0;
   background-color: #0081a4;
+}
+
+#navbar {
+  width: 100%;
 }
 
 #root {
