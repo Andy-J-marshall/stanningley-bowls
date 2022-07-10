@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/stanningley-bowls/static/css/main.1490b7c3.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.deed4211.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.deed4211.chunk.js.map",
+    "main.css": "/stanningley-bowls/static/css/main.f6ad5518.chunk.css",
+    "main.js": "/stanningley-bowls/static/js/main.5c0961c0.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.5c0961c0.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
@@ -10,21 +10,29 @@
     "static/js/2.95d47320.chunk.js.map": "/stanningley-bowls/static/js/2.95d47320.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
-    "static/css/main.1490b7c3.chunk.css.map": "/stanningley-bowls/static/css/main.1490b7c3.chunk.css.map",
+    "static/css/main.f6ad5518.chunk.css.map": "/stanningley-bowls/static/css/main.f6ad5518.chunk.css.map",
     "static/js/2.95d47320.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.95d47320.chunk.js.LICENSE.txt",
+    "static/media/arnold_clark_grant.8f29679f.png": "/stanningley-bowls/static/media/arnold_clark_grant.8f29679f.png",
+    "static/media/asda_foundation.45cd6d42.png": "/stanningley-bowls/static/media/asda_foundation.45cd6d42.png",
+    "static/media/bramley_elderly_action.3376acc4.png": "/stanningley-bowls/static/media/bramley_elderly_action.3376acc4.png",
     "static/media/brand-logo-tiny.923a3133.png": "/stanningley-bowls/static/media/brand-logo-tiny.923a3133.png",
     "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png",
+    "static/media/hey_neighbour_grant.9ee20b8b.png": "/stanningley-bowls/static/media/hey_neighbour_grant.9ee20b8b.png",
+    "static/media/squeaker.3afb2210.png": "/stanningley-bowls/static/media/squeaker.3afb2210.png",
     "static/media/stan1.fb507703.jpg": "/stanningley-bowls/static/media/stan1.fb507703.jpg",
     "static/media/stan2.0dcb8369.jpg": "/stanningley-bowls/static/media/stan2.0dcb8369.jpg",
     "static/media/stan3.ae6c9d7a.jpg": "/stanningley-bowls/static/media/stan3.ae6c9d7a.jpg",
     "static/media/stan4.03dd241f.jpg": "/stanningley-bowls/static/media/stan4.03dd241f.jpg",
-    "static/media/upcoming_fixtures.1cf6acc0.png": "/stanningley-bowls/static/media/upcoming_fixtures.1cf6acc0.png"
+    "static/media/upcoming_fixtures.419a4fcc.png": "/stanningley-bowls/static/media/upcoming_fixtures.419a4fcc.png",
+    "static/media/upcoming_fixtures_Aug.43489b53.png": "/stanningley-bowls/static/media/upcoming_fixtures_Aug.43489b53.png",
+    "static/media/upcoming_fixtures_Sept.68e86e42.png": "/stanningley-bowls/static/media/upcoming_fixtures_Sept.68e86e42.png",
+    "static/media/west_leeds_dispatch.242ca0e5.png": "/stanningley-bowls/static/media/west_leeds_dispatch.242ca0e5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7bab6f68.js",
     "static/css/2.6087c55b.chunk.css",
     "static/js/2.95d47320.chunk.js",
-    "static/css/main.1490b7c3.chunk.css",
-    "static/js/main.deed4211.chunk.js"
+    "static/css/main.f6ad5518.chunk.css",
+    "static/js/main.5c0961c0.chunk.js"
   ]
 }
