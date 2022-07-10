@@ -1,18 +1,20 @@
 import React from 'react';
-import google from '../images/google.png';
-import facebook from '../images/facebook.png';
-import instagram from '../images/instagram.png';
-import email from '../images/email.png';
-// TODO add the real logos here
+import arnoldClarkLogo from '../images/supporters/arnold_clark_grant.png';
+import asdaLogo from '../images/supporters/asda_foundation.png';
+import beaLogo from '../images/supporters/bramley_elderly_action.png';
+import heyNeighbourLogo from '../images/supporters/hey_neighbour_grant.png';
+import squeakerLogo from '../images/supporters/squeaker.png';
+import wldLogo from '../images/supporters/west_leeds_dispatch.png';
 
 function Supporters() {
     return (
-        <div id="socials">
-            {/* TODO update this */}
-            <img className="logos" src={facebook} alt="" />
-            <img className="logos" src={instagram} alt="" />
-            <img className="logos" src={google} alt="" />
-            <img className="logos" src={email} alt="" />
+        <div id="socials" className=" page-component">
+            <img className="supporters-logos" src={asdaLogo} alt="" />
+            <img className="supporters-logos" src={beaLogo} alt="" />
+            <img className="supporters-logos" src={arnoldClarkLogo} alt="" />
+            <img className="supporters-logos" src={heyNeighbourLogo} alt="" />
+            <img className="supporters-logos" src={squeakerLogo} alt="" />
+            <img className="supporters-logos" src={wldLogo} alt="" />
         </div>
     );
 }

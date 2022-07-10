@@ -263,7 +263,6 @@ function App() {
                     <Supporters />
                 </div>
             )}
-            {/* TODO add info on supporters */}
             <Footer />
         </div>
     );
