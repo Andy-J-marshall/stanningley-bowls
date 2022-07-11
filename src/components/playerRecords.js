@@ -280,7 +280,6 @@ function PlayerRecords(props) {
         );
     }
 
-    // TODO create a component for this.
     function mondayComponent() {
         return (
             <div>

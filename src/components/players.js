@@ -58,23 +58,32 @@ function Players(props) {
     const homeAverageScoreAgainst = totalHomeScoreAgainst / homeGamesPlayed;
     const awayAverageScore = totalAwayScore / awayGamesPlayed;
     const awayAverageScoreAgainst = totalAwayScoreAgainst / awayGamesPlayed;
+    const pairsGames = pairLosses + pairWins;
+    const singlesGames = gamesPlayed - pairsGames;
+    const singlesAgg = totalAgg - totalPairsAgg;
+    const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
+    const singlesAvg = (singlesAgg - singlesAggAgainst) / singlesGames;
+    const pairsAvg = (totalPairsAgg - totalPairsAggAgainst) / pairsGames;
     beatenBy = beatenBy ? arrayToList(beatenBy) : beatenBy;
     beatenOpponents = beatenOpponents
         ? arrayToList(beatenOpponents)
         : beatenOpponents;
     beatenByTeam = beatenByTeam ? arrayToList(beatenByTeam) : beatenByTeam;
     beatenTeam = beatenTeam ? arrayToList(beatenTeam) : beatenTeam;
-    const pairsGames = pairLosses + pairWins;
     const mondayWins = monday.wins;
+    const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
     const mondayAvg = monday.aggDiff / mondayGames;
     const tuesdayWins = tuesday.wins;
+    const tuesdayLosses = tuesday.games - tuesday.wins;
     const tuesdayGames = tuesday.games;
     const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
     const thursdayWins = thursday.wins;
+    const thursdayLosses = thursday.games - thursday.wins;
     const thursdayGames = thursday.games;
     const thursdayAvg = thursday.aggDiff / thursdayGames;
     const saturdayWins = saturday.wins;
+    const saturdayLosses = saturday.games - saturday.wins;
     const saturdayGames = saturday.games;
     const saturdayAvg = saturday.aggDiff / saturdayGames;
     let daysPlayedCount = [
@@ -111,9 +120,10 @@ function Players(props) {
         return partnersReturnObj;
     }
 
-    // TODO handle plurals
-    // TODO still want to use listgroups?
     // TODO pagination?
+    const gameOrGames = gamesPlayed > 0 ? 'games' : 'game';
+    const winOrWins = totalWins > 0 ? 'wins' : 'win';
+    const lossOrLosses = totalLosses > 0 ? 'losses' : 'loss';
     return (
         <div>
             <ListGroup.Item>
@@ -125,21 +135,15 @@ function Players(props) {
                             <Accordion.Header>GAMES PLAYED</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
-                                <p>{gamesPlayed} total games</p>
-                                {pairsGames > 0 && (
-                                    <div>
-                                        <p>{pairsGames} pairs games</p>
-                                        <p>
-                                            {gamesPlayed - pairsGames} singles
-                                            games
-                                        </p>
-                                    </div>
-                                )}
+                                <p>
+                                    {gamesPlayed} total {gameOrGames} (
+                                    {singlesGames} singles, {pairsGames} pairs)
+                                </p>
                                 <h3>TEAMS</h3>
                                 {daysPlayedCount.map((day, key) => {
                                     return (
                                         <p key={key}>
-                                            {day.gamesPlayed} games on {day.day}
+                                            {day.gamesPlayed} on {day.day}
                                         </p>
                                     );
                                 })}
@@ -152,9 +156,9 @@ function Players(props) {
                                     <div>
                                         <h3>WINS</h3>
                                         <p>
-                                            {totalWins} total wins ({homeWins}{' '}
-                                            home, {awayWins} away, {cupWins}{' '}
-                                            cup)
+                                            {totalWins} total {winOrWins} (
+                                            {homeWins} home, {awayWins} away,{' '}
+                                            {cupWins} cup)
                                         </p>
                                         <p>
                                             {(
@@ -163,28 +167,21 @@ function Players(props) {
                                             ).toFixed(0)}
                                             % win percentage
                                         </p>
-                                        {pairWins > 0 && (
-                                            <div>
-                                                {totalWins - pairWins > 0 && (
-                                                    <p>
-                                                        {totalWins - pairWins}{' '}
-                                                        singles wins
-                                                    </p>
-                                                )}
-                                                <p>{pairWins} pairs wins</p>
-                                            </div>
-                                        )}
+                                        <p>
+                                            {totalWins - pairWins} singles,{' '}
+                                            {pairWins} pairs
+                                        </p>
                                         {mondayGames > 0 && (
-                                            <p>{mondayWins} Monday wins</p>
+                                            <p>{mondayWins} on Monday</p>
                                         )}
                                         {tuesdayGames > 0 && (
-                                            <p>{tuesdayWins} Tuesday wins</p>
+                                            <p>{tuesdayWins} on Tuesday</p>
                                         )}
                                         {thursdayGames > 0 && (
-                                            <p>{thursdayWins} Thursday wins</p>
+                                            <p>{thursdayWins} on Thursday</p>
                                         )}
                                         {saturdayGames > 0 && (
-                                            <p>{saturdayWins} Saturday wins</p>
+                                            <p>{saturdayWins} on Saturday</p>
                                         )}
                                     </div>
                                 )}
@@ -192,22 +189,29 @@ function Players(props) {
                                     <div>
                                         <h3>LOSSES</h3>
                                         <p>
-                                            {totalLosses} total losses (
+                                            {totalLosses} total {lossOrLosses} (
                                             {homeLosses} home, {awayLosses}{' '}
                                             away, {cupLosses} cup)
                                         </p>
                                         {pairLosses > 0 && (
                                             <div>
-                                                {totalLosses - pairLosses >
-                                                    0 && (
-                                                    <p>
-                                                        {totalLosses -
-                                                            pairLosses}{' '}
-                                                        singles losses
-                                                    </p>
-                                                )}
-                                                <p>{pairLosses} pairs losses</p>
+                                                <p>
+                                                    {totalLosses - pairLosses}{' '}
+                                                    singles, {pairLosses} pairs
+                                                </p>
                                             </div>
+                                        )}
+                                        {mondayGames > 0 && (
+                                            <p>{mondayLosses} on Monday</p>
+                                        )}
+                                        {tuesdayGames > 0 && (
+                                            <p>{tuesdayLosses} on Tuesday</p>
+                                        )}
+                                        {thursdayGames > 0 && (
+                                            <p>{thursdayLosses} on Thursday</p>
+                                        )}
+                                        {saturdayGames > 0 && (
+                                            <p>{saturdayLosses} on Saturday</p>
                                         )}
                                     </div>
                                 )}
@@ -227,7 +231,8 @@ function Players(props) {
                                                                     partner
                                                                 ].timesPaired
                                                             }{' '}
-                                                            games with {partner}
+                                                            played with{' '}
+                                                            {partner}
                                                         </p>
                                                     );
                                                 })}
@@ -274,15 +279,29 @@ function Players(props) {
                                         <p>Average = {average.toFixed(2)}</p>
                                         {homeAverage > -22 && (
                                             <p>
-                                                Home average ={' '}
-                                                {homeAverage.toFixed(2)}
+                                                Home = {homeAverage.toFixed(2)}
                                             </p>
                                         )}
                                         {awayAverage > -22 && (
                                             <p>
-                                                Away average ={' '}
-                                                {awayAverage.toFixed(2)}
+                                                Away = {awayAverage.toFixed(2)}
                                             </p>
+                                        )}
+                                        {pairsGames > 0 && (
+                                            <div>
+                                                {singlesAvg > -22 && (
+                                                    <p>
+                                                        Singles ={' '}
+                                                        {singlesAvg.toFixed(2)}
+                                                    </p>
+                                                )}
+                                                {pairsAvg > -22 && (
+                                                    <p>
+                                                        Pairs ={' '}
+                                                        {pairsAvg.toFixed(2)}
+                                                    </p>
+                                                )}
+                                            </div>
                                         )}
                                         {(mondayGames > 0 ||
                                             tuesdayGames > 0 ||
@@ -292,25 +311,24 @@ function Players(props) {
                                         )}
                                         {mondayGames > 0 && (
                                             <p>
-                                                Monday average ={' '}
-                                                {mondayAvg.toFixed(2)}
+                                                Monday = {mondayAvg.toFixed(2)}
                                             </p>
                                         )}
                                         {tuesdayGames > 0 && (
                                             <p>
-                                                Tuesday average ={' '}
+                                                Tuesday ={' '}
                                                 {tuesdayAvg.toFixed(2)}
                                             </p>
                                         )}
                                         {thursdayGames > 0 && (
                                             <p>
-                                                Thursday average ={' '}
+                                                Thursday ={' '}
                                                 {thursdayAvg.toFixed(2)}
                                             </p>
                                         )}
                                         {saturdayGames > 0 && (
                                             <p>
-                                                Saturday average ={' '}
+                                                Saturday ={' '}
                                                 {saturdayAvg.toFixed(2)}
                                             </p>
                                         )}
@@ -446,6 +464,16 @@ function Players(props) {
                                 </p>
                                 {pairsGames > 0 && (
                                     <div>
+                                        <h3>SINGLES</h3>
+                                        <p>
+                                            Singles aggregate scored ={' '}
+                                            {singlesAgg} / {singlesGames * 21}
+                                        </p>
+                                        <p>
+                                            Singles aggregate conceded ={' '}
+                                            {singlesAggAgainst} /{' '}
+                                            {singlesGames * 21}
+                                        </p>
                                         <h3>PAIRS</h3>
                                         <p>
                                             Pairs aggregate scored ={' '}
