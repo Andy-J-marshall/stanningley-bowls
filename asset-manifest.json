@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stanningley-bowls/static/css/main.f6ad5518.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.5c0961c0.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.5c0961c0.chunk.js.map",
+    "main.js": "/stanningley-bowls/static/js/main.23d86220.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.23d86220.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
@@ -33,6 +33,6 @@
     "static/css/2.6087c55b.chunk.css",
     "static/js/2.95d47320.chunk.js",
     "static/css/main.f6ad5518.chunk.css",
-    "static/js/main.5c0961c0.chunk.js"
+    "static/js/main.23d86220.chunk.js"
   ]
 }
