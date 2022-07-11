@@ -91,7 +91,8 @@ function RecordsTableDisplay(props) {
                         )}
                     {fewestPointsConcededTeam &&
                         fewestPointsConcededPerGame &&
-                        fewestPointsConcededPerGame > 0 && (
+                        fewestPointsConcededPerGame > 0 &&
+                        fewestPointsConcededPerGame <= 40 && (
                             <tr>
                                 <td>Opponent points per game</td>
                                 <td>
@@ -115,7 +116,8 @@ function RecordsTableDisplay(props) {
                         )}
                     {lowestAggConcededPerGame &&
                         lowestAggConcededPerGameTeam &&
-                        lowestAggConcededPerGame > 0 && (
+                        lowestAggConcededPerGame > 0 &&
+                        lowestAggConcededPerGame <= 21 && (
                             <tr>
                                 <td>Opponent aggregate per game</td>
                                 <td>{lowestAggConcededPerGame.toFixed(2)}</td>

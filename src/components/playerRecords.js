@@ -6,6 +6,11 @@ function PlayerRecords(props) {
     const playersStats = props.playersStats;
     const players = Object.keys(playersStats);
 
+    let minTotalGames = 1;
+    let minMonGames = 1;
+    let minTuesGames = 1;
+    let minThurGames = 1;
+    let minSatGames = 1;
     let mostMondayWinsPlayer = [];
     let mostMondayWins = 0;
     let mostTuesdayWinsPlayer = [];
@@ -41,6 +46,54 @@ function PlayerRecords(props) {
     let bestScorePlayer = [];
     let bestScore = 0;
 
+    // This sets the minimum number of games required for the stats to be counted
+    players.forEach((player) => {
+        const p = playersStats[player];
+        const totalWins = p.awayWins + p.homeWins + p.cupWins;
+        const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
+        const totalGames = totalWins + totalLosses;
+        const { monday, tuesday, thursday, saturday } = p;
+        const mondayGames = monday.games;
+        const tuesdayGames = tuesday.games;
+        const thursdayGames = thursday.games;
+        const saturdayGames = saturday.games;
+        if (totalGames > minTotalGames) {
+            if (totalGames >= 8) {
+                minTotalGames = 8;
+            } else {
+                minTotalGames = totalGames;
+            }
+        }
+        if (mondayGames > minMonGames) {
+            if (mondayGames >= 7) {
+                minMonGames = 7;
+            } else {
+                minMonGames = mondayGames;
+            }
+        }
+        if (tuesdayGames > minTuesGames) {
+            if (tuesdayGames >= 7) {
+                minTuesGames = 7;
+            } else {
+                minTuesGames = tuesdayGames;
+            }
+        }
+        if (thursdayGames > minThurGames) {
+            if (thursdayGames >= 7) {
+                minThurGames = 7;
+            } else {
+                minThurGames = thursdayGames;
+            }
+        }
+        if (saturdayGames > minSatGames) {
+            if (saturdayGames >= 7) {
+                minSatGames = 7;
+            } else {
+                minSatGames = saturdayGames;
+            }
+        }
+    });
+
     players.forEach((player) => {
         const p = playersStats[player];
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
@@ -68,30 +121,34 @@ function PlayerRecords(props) {
         const saturdayAvg = saturday.aggDiff / saturdayGames;
         const saturdayWinPerc = (saturdayWins / saturdayGames) * 100;
 
-        const playedMinGames = totalGames >= 10 ? true : false;
-
-        if (mondayAvg >= bestMondayAverage && mondayGames >= 6) {
+        if (mondayAvg >= bestMondayAverage && mondayGames >= minMonGames) {
             if (mondayAvg > bestMondayAverage) {
                 bestMondayAveragePlayer = [];
                 bestMondayAverage = mondayAvg;
             }
             bestMondayAveragePlayer.push(`${player} (${mondayGames})`);
         }
-        if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= 6) {
+        if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= minTuesGames) {
             if (tuesdayAvg > bestTuesdayAverage) {
                 bestTuesdayAveragePlayer = [];
                 bestTuesdayAverage = tuesdayAvg;
             }
             bestTuesdayAveragePlayer.push(`${player} (${tuesdayGames})`);
         }
-        if (thursdayAvg >= bestThursdayAverage && thursdayGames >= 6) {
+        if (
+            thursdayAvg >= bestThursdayAverage &&
+            thursdayGames >= minThurGames
+        ) {
             if (thursdayAvg > bestThursdayAverage) {
                 bestThursdayAveragePlayer = [];
                 bestThursdayAverage = thursdayAvg;
             }
             bestThursdayAveragePlayer.push(`${player} (${thursdayGames})`);
         }
-        if (saturdayAvg >= bestSaturdayAverage && saturdayGames >= 6) {
+        if (
+            saturdayAvg >= bestSaturdayAverage &&
+            saturdayGames >= minSatGames
+        ) {
             if (saturdayAvg > bestSaturdayAverage) {
                 bestSaturdayAveragePlayer = [];
                 bestSaturdayAverage = saturdayAvg;
@@ -126,34 +183,45 @@ function PlayerRecords(props) {
             }
             mostSaturdayWinsPlayer.push(`${player} (${saturdayGames})`);
         }
-        if (mondayWinPerc >= bestMondayWinPerc && mondayGames >= 6) {
+        if (mondayWinPerc >= bestMondayWinPerc && mondayGames >= minMonGames) {
             if (mondayWinPerc > bestMondayWinPerc) {
                 bestMondayWinPercPlayer = [];
                 bestMondayWinPerc = mondayWinPerc;
             }
             bestMondayWinPercPlayer.push(`${player} (${mondayGames})`);
         }
-        if (tuesdayWinPerc >= bestTuesdayWinPerc && tuesdayGames >= 6) {
+        if (
+            tuesdayWinPerc >= bestTuesdayWinPerc &&
+            tuesdayGames >= minTuesGames
+        ) {
             if (tuesdayWinPerc > bestTuesdayWinPerc) {
                 bestTuesdayWinPercPlayer = [];
                 bestTuesdayWinPerc = tuesdayWinPerc;
             }
             bestTuesdayWinPercPlayer.push(`${player} (${tuesdayGames})`);
         }
-        if (thursdayWinPerc >= bestThursdayWinPerc && thursdayGames >= 6) {
+        if (
+            thursdayWinPerc >= bestThursdayWinPerc &&
+            thursdayGames >= minThurGames
+        ) {
             if (thursdayWinPerc > bestThursdayWinPerc) {
                 bestThursdayWinPercPlayer = [];
                 bestThursdayWinPerc = thursdayWinPerc;
             }
             bestThursdayWinPercPlayer.push(`${player} (${thursdayGames})`);
         }
-        if (saturdayWinPerc >= bestSaturdayWinPerc && saturdayGames >= 6) {
+        if (
+            saturdayWinPerc >= bestSaturdayWinPerc &&
+            saturdayGames >= minSatGames
+        ) {
             if (saturdayWinPerc > bestSaturdayWinPerc) {
                 bestSaturdayWinPercPlayer = [];
                 bestSaturdayWinPerc = saturdayWinPerc;
             }
             bestSaturdayWinPercPlayer.push(`${player} (${saturdayGames})`);
         }
+
+        const playedMinGames = totalGames >= minTotalGames ? true : false;
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
                 mostGamesPlayer = [];
@@ -195,7 +263,7 @@ function PlayerRecords(props) {
         return (
             <div>
                 <RecordsTableDisplay
-                    minGames={10}
+                    minGames={minTotalGames}
                     playerOrTeam={'Player'}
                     mostGames={mostGames}
                     mostGamesPlayer={mostGamesPlayer}
@@ -217,7 +285,7 @@ function PlayerRecords(props) {
         return (
             <div>
                 <RecordsTableDisplay
-                    minGames={6}
+                    minGames={minMonGames}
                     playerOrTeam={'Player'}
                     mostWins={mostMondayWins}
                     mostWinsPlayer={mostMondayWinsPlayer}
@@ -234,7 +302,7 @@ function PlayerRecords(props) {
         return (
             <div>
                 <RecordsTableDisplay
-                    minGames={6}
+                    minGames={minTuesGames}
                     playerOrTeam={'Player'}
                     mostWins={mostTuesdayWins}
                     mostWinsPlayer={mostTuesdayWinsPlayer}
@@ -251,7 +319,7 @@ function PlayerRecords(props) {
         return (
             <div>
                 <RecordsTableDisplay
-                    minGames={6}
+                    minGames={minThurGames}
                     playerOrTeam={'Player'}
                     mostWins={mostThursdayWins}
                     mostWinsPlayer={mostThursdayWinsPlayer}
@@ -268,7 +336,7 @@ function PlayerRecords(props) {
         return (
             <div>
                 <RecordsTableDisplay
-                    minGames={6}
+                    minGames={minSatGames}
                     playerOrTeam={'Player'}
                     mostWins={mostSaturdayWins}
                     mostWinsPlayer={mostSaturdayWinsPlayer}

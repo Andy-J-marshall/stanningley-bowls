@@ -15,11 +15,13 @@ function FixturesResults(props) {
                 src={upcoming_fixtures}
                 alt="upcoming fixtures for July"
             />
+            <hr style={{ margin: 0 }} />
             <img
                 id="upcoming-fixtures"
                 src={upcomingFixturesAugust}
                 alt="upcoming fixtures for August"
             />
+            <hr style={{ margin: 0 }} />
             <img
                 id="upcoming-fixtures"
                 src={upcomingFixturesSeptember}
