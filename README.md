@@ -20,6 +20,8 @@ Run the following:
 <!-- TODO Buy a domain -->
 <!-- TODO create cypress scripts to get the data? -->
 <!-- TODO update readme (and scripts readme) -->
+<!-- TODO improve images -->
+<!-- TODO Add routing? -->
 <!-- TODO add a config file for things like days played, membership price, stanningley specific stuff etc. -->
 
 ## Bowls script

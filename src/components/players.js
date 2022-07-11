@@ -120,7 +120,6 @@ function Players(props) {
         return partnersReturnObj;
     }
 
-    // TODO pagination?
     const gameOrGames = gamesPlayed > 0 ? 'games' : 'game';
     const winOrWins = totalWins > 0 ? 'wins' : 'win';
     const lossOrLosses = totalLosses > 0 ? 'losses' : 'loss';
