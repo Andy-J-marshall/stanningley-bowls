@@ -2,12 +2,15 @@
   "private": true,
   "homepage": "https://andy-j-marshall.github.io/stanningley-bowls/",
   "scripts": {
+    "cypress:open": "npx cypress open",
     "update-stats": "python3 ./pythonScript/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "cypress": "^10.3.0",
+    "cypress-iframe": "^1.0.1",
     "gh-pages": "^3.2.3",
     "react": "17.0.2",
     "react-bootstrap": "^2.4.0",

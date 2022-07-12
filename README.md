@@ -39,9 +39,10 @@ https://bowlsnet.uk/LeedsParkVets/Thu
 * Create an Excel workbook called bowlsresults.xlsx and store it in the `/files` directory
 * Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
 * Navigate to each of the above 4 URLs, go to Info, then Reports:
-  * select Formatted Report
-  * select the full From and To date ranges
-  * tick Output Full Results
+  * Select Formatted Report
+  * Click Output Tables
+  * Select the full From and To date ranges
+  * Click Output Full Results
 * Copy the outputted reports to the corresponding sheet in the Excel workbook
 * Save the Excel file
 
