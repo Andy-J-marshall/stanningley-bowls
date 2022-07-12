@@ -38,10 +38,17 @@ https://bowlsnet.uk/LeedsParkVets/Thu
 * Run: `pip3 install openpyxl==2.6.2 `
 * Create an Excel workbook called bowlsresults.xlsx and store it in the `/files` directory
 * Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
-* Navigate to each of the above 4 URLs, go to Info, then Reports:
-  * select Formatted Report
-  * select the full From and To date ranges
-  * tick Output Full Results
+* Generate the reports on bowlsnet. This can either by running the Cypress tests or manually. To generate them using Cypress:
+  * Run `npm run cypress:open`
+  * Select Integration tests and Chome as the browser.
+  * Run the tests in the generate-data.cy.js file (Bowlsnet is flaky so may need to rerun occasionally)
+  * These will output the reports that can be copied and pasted into the Excel file.
+* To generate manually:
+  * Navigate to each of the above 4 URLs, go to Info, then Reports:
+  * Select Formatted Report
+  * Click Output Tables
+  * Select the full From and To date ranges
+  * Click Output Full Results
 * Copy the outputted reports to the corresponding sheet in the Excel workbook
 * Save the Excel file
 
