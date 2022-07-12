@@ -4,6 +4,7 @@ import json
 import os
 import stanningleyTeamDetails
 
+year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
 stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays
 stanningleyPlayers = stanningleyTeamDetails.stanningleyPlayers
@@ -423,7 +424,7 @@ dataToExport = {
     'teamResults': stanningleyTeamResults
 }
 
-filename = 'src/data/bowlsStats.json'
+filename = 'src/data/bowlsStats' + year + '.json'
 if os.path.exists(filename):
     os.remove(filename)
 

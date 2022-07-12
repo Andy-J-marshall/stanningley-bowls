@@ -19,7 +19,6 @@ Run the following:
 * `npm run build`
 * `npm run deploy`
 
-<!-- TODO do we want the Excel file in Git? -->
 <!-- TODO Update wording of home and membership page -->
 <!-- TODO improve images -->
 <!-- TODO Buy a domain -->
@@ -66,6 +65,6 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 ## Run the script
 `npm run update-stats`
 
-JSON file will be created: `src/data/bowlsStats.json`
+JSON file will be created: `src/data/bowlsStats{year}.json`. Ensure you update the year variable in the python script if required.
 
 You might want to format the JSON document to make it easier to read

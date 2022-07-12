@@ -11,8 +11,10 @@ import logo from './images/brand-logo.png';
 import stan1 from './images/stan1.jpg';
 import stan2 from './images/stan2.jpg';
 import stan3 from './images/stan3.jpg';
-import bowlsStats from './data/bowlsStats.json';
+import bowlsStats2022 from './data/bowlsStats2022.json';
 import './app.css';
+
+const year = new Date().getFullYear();
 
 function App() {
     const [showHome, setShowHome] = useState(false);
@@ -22,8 +24,8 @@ function App() {
     const [showContactInfo, setShowContactInfo] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
-    const playerResults = bowlsStats.playerResults;
-    const teamResults = bowlsStats.teamResults;
+    const playerResults = bowlsStats2022.playerResults;
+    const teamResults = bowlsStats2022.teamResults;
 
     // TODO Handle multiple years worth of stats
     useEffect(() => {
