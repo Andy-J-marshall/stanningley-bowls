@@ -21,8 +21,8 @@ Run the following:
 
 <!-- TODO do we want the Excel file in Git? -->
 <!-- TODO Update wording of home and membership page -->
-<!-- TODO Buy a domain -->
 <!-- TODO improve images -->
+<!-- TODO Buy a domain -->
 <!-- TODO Add routing? -->
 <!-- TODO add a config file for things like days played, membership price, stanningley specific stuff etc. -->
 
