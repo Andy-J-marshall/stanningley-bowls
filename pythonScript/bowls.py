@@ -4,6 +4,11 @@ import json
 import os
 import stanningleyTeamDetails
 
+
+# TODO add last updated from python script?
+#     # dd/mm/YY
+# d1 = today.strftime("%d/%m/%Y")
+# print("d1 =", d1)
 year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
 stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays

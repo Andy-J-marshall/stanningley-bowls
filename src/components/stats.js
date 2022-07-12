@@ -1,17 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {
+    Navbar,
+    Nav,
+    Container,
+    Dropdown,
+    DropdownButton,
+} from 'react-bootstrap';
 import Records from './records';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
+import bowlsStats2021 from '../data/bowlsStats2021.json';
+import bowlsStats2022 from '../data/bowlsStats2022.json';
 
-function Stats(props) {
+// TODO display stats year prominently
+let currentYear = new Date().getFullYear();
+const url = window.location.href.toLowerCase();
+if (url.includes('#stats20')) {
+    const yearFromUrl = url.split('#stats')[1];
+    currentYear = yearFromUrl;
+}
+
+const allYearStats = {
+    year2022: bowlsStats2022,
+    year2021: bowlsStats2021,
+};
+const defaultStats = allYearStats[`year${currentYear}`];
+
+function Stats() {
     const [showPlayerStats, setShowPlayerStats] = useState(true);
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showRecords, setShowRecords] = useState(false);
     const [loaded, setLoaded] = useState(false);
-
-    const playersStats = props.playerResults;
-    const teamStats = props.teamResults;
+    const [playerResults, setPlayerResults] = useState(
+        defaultStats.playerResults
+    );
+    const [teamResults, setTeamResults] = useState(defaultStats.teamResults);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -46,6 +69,24 @@ function Stats(props) {
         setShowRecords(true);
         setShowPlayerStats(false);
         setShowTeamStats(false);
+    }
+
+    function changeStatsYear(event) {
+        event = event.replace('#stats', '').toString();
+        let statsForSelectedYear;
+        switch (event) {
+            case '2021':
+                statsForSelectedYear = allYearStats['year2021'];
+                break;
+            case '2022':
+                statsForSelectedYear = allYearStats['year2022'];
+                break;
+            default:
+                statsForSelectedYear = allYearStats[`year${currentYear}`];
+                break;
+        }
+        setPlayerResults(statsForSelectedYear.playerResults);
+        setTeamResults(statsForSelectedYear.teamResults);
     }
 
     return (
@@ -96,20 +137,33 @@ function Stats(props) {
                     </Nav>
                 </Container>
             </Navbar>
+            {/* TODO need to align right */}
+            {/* TODO add year to the button? */}
+            <DropdownButton
+                variant="secondary"
+                onSelect={changeStatsYear}
+                id="dropdown-basic-button"
+                title="Year"
+            >
+                <Dropdown.Item href="#stats2022">2022</Dropdown.Item>
+                <Dropdown.Item href="#stats2021">2021</Dropdown.Item>
+            </DropdownButton>
             <div id="stat" className="page-component">
                 {showRecords && (
                     <Records
-                        teamStats={teamStats}
-                        playersStats={playersStats}
+                        teamStats={teamResults}
+                        playersStats={playerResults}
                     />
                 )}
                 {showTeamStats && (
                     <TeamStats
-                        teamStats={teamStats}
-                        playersStats={playersStats}
+                        teamStats={teamResults}
+                        playersStats={playerResults}
                     />
                 )}
-                {showPlayerStats && <PlayerStats playersStats={playersStats} />}
+                {showPlayerStats && (
+                    <PlayerStats playersStats={playerResults} />
+                )}
             </div>
         </div>
     );

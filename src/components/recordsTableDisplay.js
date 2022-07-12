@@ -50,6 +50,7 @@ function RecordsTableDisplay(props) {
                             <td>{capitalizeText(mostGamesPlayer)}</td>
                         </tr>
                     )}
+                    {/* TODO these two are causing issues with null data? */}
                     {mostWins && mostWinsPlayer && mostWins > 0 && (
                         <tr>
                             <td>Most Wins</td>
@@ -64,7 +65,7 @@ function RecordsTableDisplay(props) {
                             <td>{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     )}
-                    {bestAverage && bestAveragePlayer && bestAverage >= -21 && (
+                    {bestAverage && bestAveragePlayer && bestAverage > -21 && (
                         <tr>
                             <td>Average</td>
                             <td>{bestAverage.toFixed(2)}</td>

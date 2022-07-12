@@ -14,8 +14,6 @@ import stan3 from './images/stan3.jpg';
 import bowlsStats2022 from './data/bowlsStats2022.json';
 import './app.css';
 
-const year = new Date().getFullYear();
-
 function App() {
     const [showHome, setShowHome] = useState(false);
     const [showStats, setShowStats] = useState(false);
@@ -24,10 +22,13 @@ function App() {
     const [showContactInfo, setShowContactInfo] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
-    const playerResults = bowlsStats2022.playerResults;
-    const teamResults = bowlsStats2022.teamResults;
+    const currentYear = new Date().getFullYear();
+    const allYearStats = {
+        year2022: bowlsStats2022,
+    };
+    const defaultStats = allYearStats[`year${currentYear}`];
+    const { teamResults } = defaultStats;
 
-    // TODO Handle multiple years worth of stats
     useEffect(() => {
         window.scrollTo(0, 0);
         const url = window.location.href.toLowerCase();
@@ -112,6 +113,7 @@ function App() {
         setShowContactInfo(false);
         setShowHome(false);
     }
+
     return (
         <div id="home">
             <Navbar
@@ -190,12 +192,7 @@ function App() {
             )}
             {showContactInfo && <Contact />}
             {showMembership && <Membership />}
-            {showStats && (
-                <Stats
-                    playerResults={playerResults}
-                    teamResults={teamResults}
-                />
-            )}
+            {showStats && <Stats />}
 
             {(showHome ||
                 (!showStats &&
