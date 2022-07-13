@@ -40,6 +40,7 @@ function Stats() {
         defaultStats.playerResults
     );
     const [teamResults, setTeamResults] = useState(defaultStats.teamResults);
+    const [updated, setUpdated] = useState(defaultStats.lastUpdated);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -90,6 +91,7 @@ function Stats() {
         }
         setPlayerResults(statsForSelectedYear.playerResults);
         setTeamResults(statsForSelectedYear.teamResults);
+        setUpdated(statsForSelectedYear.lastUpdated);
     }
 
     return (
@@ -170,6 +172,7 @@ function Stats() {
                     <PlayerStats playersStats={playerResults} />
                 )}
             </div>
+            <p>Last Updated: {updated}</p>
         </div>
     );
 }

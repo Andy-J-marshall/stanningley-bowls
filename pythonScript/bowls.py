@@ -2,13 +2,10 @@ import openpyxl
 from pathlib import Path
 import json
 import os
+from datetime import date
 import stanningleyTeamDetails
 
 
-# TODO add last updated from python script?
-#     # dd/mm/YY
-# d1 = today.strftime("%d/%m/%Y")
-# print("d1 =", d1)
 year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
 stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays
@@ -426,7 +423,8 @@ for day in stanningleyTeamDays:
 # Create JSON file
 dataToExport = {
     'playerResults': stanningleyPlayerResults,
-    'teamResults': stanningleyTeamResults
+    'teamResults': stanningleyTeamResults,
+    'lastUpdated': date.today().strftime("%d/%m/%Y")
 }
 
 filename = 'src/data/bowlsStats' + year + '.json'
