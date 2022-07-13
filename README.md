@@ -22,6 +22,8 @@ Run the following:
 <!-- TODO Buy a domain -->
 <!-- TODO Add routing? -->
 <!-- TODO add a config file for things like days played, membership price, stanningley specific stuff etc. -->
+<!-- TODO images load slowly -->
+<!-- TODO Results layout -->
 
 # Bowls script
 The script that collates stats from all Stanningley bowls club teams can be found in the `/pythonScript` directory.
