@@ -201,13 +201,13 @@ function App() {
                     !showContactInfo &&
                     !showMembership &&
                     !showHome)) && (
-                <div className="center" style={{ width: '90%' }} id="home-page">
+                <div className="center" id="home-page">
                     <div className="center page-component">
-                        <p>
+                        {/* TODO remove? */}
+                        {/* <p>
                             Welcome to Stanningley Park Bowling Club's website.
-                            <br /> <br /> Find out about membership, upcoming
-                            fixures and player stats.
-                        </p>
+                            <br />
+                        </p> */}
                         <Nav
                             activeKey="#homepage"
                             onSelect={onSelect}
@@ -258,7 +258,6 @@ function App() {
                             </Carousel>
                         </Nav>
                     </div>
-
                     <h3>SUPPORTERS</h3>
                     <Supporters />
                 </div>
