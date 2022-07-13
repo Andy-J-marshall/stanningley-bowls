@@ -149,8 +149,8 @@ function Stats() {
                 title={year + ' Stats'}
                 style={{
                     display: 'flex',
-                    justifyContent: 'left',
-                    margin: '0.5rem 0 0 0.5rem',
+                    justifyContent: 'right',
+                    margin: '0.5rem 0.5rem 0 0',
                 }}
             >
                 <Dropdown.Item href="#stats2022">2022</Dropdown.Item>

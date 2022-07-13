@@ -49,7 +49,7 @@ h4 {
 @media (min-width: 1000px) {
   .carousel-item img {
     height: 35%;
-    width: 35%;
+    width: 36%;
   }
 }
 
@@ -79,7 +79,6 @@ body {
   font-size: 20px;
   margin: auto;
   text-align: center;
-  /* TODO font type? */
 }
 
 #header {
@@ -130,7 +129,7 @@ ul {
 }
 
 .supporters-logos {
-  width: 18%;
+  width: 10%;
   margin: 1rem;
 }
 

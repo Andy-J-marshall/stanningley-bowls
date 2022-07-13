@@ -19,8 +19,6 @@ Run the following:
 * `npm run build`
 * `npm run deploy`
 
-<!-- TODO Update wording of home and membership page -->
-<!-- TODO improve images -->
 <!-- TODO Buy a domain -->
 <!-- TODO Add routing? -->
 <!-- TODO add a config file for things like days played, membership price, stanningley specific stuff etc. -->

@@ -194,7 +194,6 @@ function App() {
             {showMembership && <Membership />}
             {showStats && <Stats />}
 
-            {/* TODO the images look a bit weird when switching */}
             {(showHome ||
                 (!showStats &&
                     !showFixturesResults &&
