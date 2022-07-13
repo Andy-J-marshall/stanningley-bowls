@@ -20,19 +20,19 @@ function PlayerRecords(props) {
     let mostSaturdayWinsPlayer = [];
     let mostSaturdayWins = 0;
     let bestMondayAveragePlayer = [];
-    let bestMondayAverage = -22;
+    let bestMondayAverage = -21;
     let bestMondayWinPerc = 0;
     let bestMondayWinPercPlayer = 0;
     let bestTuesdayAveragePlayer = [];
-    let bestTuesdayAverage = -22;
+    let bestTuesdayAverage = -21;
     let bestTuesdayWinPerc = 0;
     let bestTuesdayWinPercPlayer = 0;
     let bestThursdayAveragePlayer = [];
-    let bestThursdayAverage = -22;
+    let bestThursdayAverage = -21;
     let bestThursdayWinPerc = 0;
     let bestThursdayWinPercPlayer = 0;
     let bestSaturdayAveragePlayer = [];
-    let bestSaturdayAverage = -22;
+    let bestSaturdayAverage = -21;
     let bestSaturdayWinPerc = 0;
     let bestSaturdayWinPercPlayer = 0;
     let mostGamesPlayer = [];
@@ -42,7 +42,7 @@ function PlayerRecords(props) {
     let bestWinPercPlayer = [];
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
-    let bestAverage = -22;
+    let bestAverage = -21;
     let bestScorePlayer = [];
     let bestScore = 0;
 
@@ -264,7 +264,7 @@ function PlayerRecords(props) {
             <div>
                 <RecordsTableDisplay
                     minGames={minTotalGames}
-                    playerOrTeam={'Player'}
+                    playerOrTeam="Player"
                     mostGames={mostGames}
                     mostGamesPlayer={mostGamesPlayer}
                     mostWins={mostWins}
@@ -285,7 +285,7 @@ function PlayerRecords(props) {
             <div>
                 <RecordsTableDisplay
                     minGames={minMonGames}
-                    playerOrTeam={'Player'}
+                    playerOrTeam="Player"
                     mostWins={mostMondayWins}
                     mostWinsPlayer={mostMondayWinsPlayer}
                     bestWinPerc={bestMondayWinPerc}
@@ -302,7 +302,7 @@ function PlayerRecords(props) {
             <div>
                 <RecordsTableDisplay
                     minGames={minTuesGames}
-                    playerOrTeam={'Player'}
+                    playerOrTeam="Player"
                     mostWins={mostTuesdayWins}
                     mostWinsPlayer={mostTuesdayWinsPlayer}
                     bestWinPerc={bestTuesdayWinPerc}
@@ -319,7 +319,7 @@ function PlayerRecords(props) {
             <div>
                 <RecordsTableDisplay
                     minGames={minThurGames}
-                    playerOrTeam={'Player'}
+                    playerOrTeam="Player"
                     mostWins={mostThursdayWins}
                     mostWinsPlayer={mostThursdayWinsPlayer}
                     bestWinPerc={bestThursdayWinPerc}
@@ -336,7 +336,7 @@ function PlayerRecords(props) {
             <div>
                 <RecordsTableDisplay
                     minGames={minSatGames}
-                    playerOrTeam={'Player'}
+                    playerOrTeam="Player"
                     mostWins={mostSaturdayWins}
                     mostWinsPlayer={mostSaturdayWinsPlayer}
                     bestWinPerc={bestSaturdayWinPerc}

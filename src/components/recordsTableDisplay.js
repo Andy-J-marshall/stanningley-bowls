@@ -43,92 +43,83 @@ function RecordsTableDisplay(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {mostGames && mostGamesPlayer && mostGames > 0 && (
+                    {mostGames && mostGamesPlayer && mostGames > 0 ? (
                         <tr>
                             <td>Most Games</td>
                             <td>{mostGames}</td>
                             <td>{capitalizeText(mostGamesPlayer)}</td>
                         </tr>
-                    )}
-                    {/* TODO these two are causing issues with null data? */}
-                    {mostWins && mostWinsPlayer && mostWins > 0 && (
+                    ) : null}
+                    {mostWins && mostWinsPlayer && mostWins > 0 ? (
                         <tr>
                             <td>Most Wins</td>
                             <td>{mostWins}</td>
                             <td>{capitalizeText(mostWinsPlayer)}</td>
                         </tr>
-                    )}
-                    {bestWinPerc && bestWinPercPlayerOrTeam && bestWinPerc > 0 && (
+                    ) : null}
+                    {bestWinPerc &&
+                    bestWinPercPlayerOrTeam &&
+                    bestWinPerc > 0 ? (
                         <tr>
                             <td>Win percentage</td>
                             <td>{bestWinPerc}%</td>
                             <td>{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
-                    )}
-                    {bestAverage && bestAveragePlayer && bestAverage > -21 && (
+                    ) : null}
+                    {bestAverage && bestAveragePlayer && bestAverage > -21 ? (
                         <tr>
                             <td>Average</td>
                             <td>{bestAverage.toFixed(2)}</td>
                             <td>{capitalizeText(bestAveragePlayer)}</td>
                         </tr>
-                    )}
-                    {bestScore && bestScorePlayer && bestScore > 0 && (
+                    ) : null}
+                    {bestScore && bestScorePlayer && bestScore > 0 ? (
                         <tr>
                             <td>Points per game</td>
                             <td>{bestScore.toFixed(2)}</td>
                             <td>{capitalizeText(bestScorePlayer)}</td>
                         </tr>
-                    )}
+                    ) : null}
                     {bestTeamPointsPerGameTeam &&
-                        bestTeamPointsPerGame &&
-                        bestTeamPointsPerGame > 0 && (
-                            <tr>
-                                <td>Points per game</td>
-                                <td>{bestTeamPointsPerGame.toFixed(2)}</td>
-                                <td>
-                                    {capitalizeText(bestTeamPointsPerGameTeam)}
-                                </td>
-                            </tr>
-                        )}
+                    bestTeamPointsPerGame &&
+                    bestTeamPointsPerGame > 0 ? (
+                        <tr>
+                            <td>Points per game</td>
+                            <td>{bestTeamPointsPerGame.toFixed(2)}</td>
+                            <td>{capitalizeText(bestTeamPointsPerGameTeam)}</td>
+                        </tr>
+                    ) : null}
                     {fewestPointsConcededTeam &&
-                        fewestPointsConcededPerGame &&
-                        fewestPointsConcededPerGame > 0 &&
-                        fewestPointsConcededPerGame <= 40 && (
-                            <tr>
-                                <td>Opponent points per game</td>
-                                <td>
-                                    {fewestPointsConcededPerGame.toFixed(2)}
-                                </td>
-                                <td>
-                                    {capitalizeText(fewestPointsConcededTeam)}
-                                </td>
-                            </tr>
-                        )}
+                    fewestPointsConcededPerGame &&
+                    fewestPointsConcededPerGame > 0 &&
+                    fewestPointsConcededPerGame <= 40 ? (
+                        <tr>
+                            <td>Opponent points per game</td>
+                            <td>{fewestPointsConcededPerGame.toFixed(2)}</td>
+                            <td>{capitalizeText(fewestPointsConcededTeam)}</td>
+                        </tr>
+                    ) : null}
                     {bestTeamAggPerGameTeam &&
-                        bestTeamAggPerGame &&
-                        bestTeamAggPerGame > 0 && (
-                            <tr>
-                                <td>Aggregate per game</td>
-                                <td>{bestTeamAggPerGame.toFixed(2)}</td>
-                                <td>
-                                    {capitalizeText(bestTeamAggPerGameTeam)}
-                                </td>
-                            </tr>
-                        )}
+                    bestTeamAggPerGame &&
+                    bestTeamAggPerGame > 0 ? (
+                        <tr>
+                            <td>Aggregate per game</td>
+                            <td>{bestTeamAggPerGame.toFixed(2)}</td>
+                            <td>{capitalizeText(bestTeamAggPerGameTeam)}</td>
+                        </tr>
+                    ) : null}
                     {lowestAggConcededPerGame &&
-                        lowestAggConcededPerGameTeam &&
-                        lowestAggConcededPerGame > 0 &&
-                        lowestAggConcededPerGame <= 21 && (
-                            <tr>
-                                <td>Opponent aggregate per game</td>
-                                <td>{lowestAggConcededPerGame.toFixed(2)}</td>
-                                <td>
-                                    {capitalizeText(
-                                        lowestAggConcededPerGameTeam
-                                    )}
-                                </td>
-                            </tr>
-                        )}
+                    lowestAggConcededPerGameTeam &&
+                    lowestAggConcededPerGame > 0 &&
+                    lowestAggConcededPerGame <= 21 ? (
+                        <tr>
+                            <td>Opponent aggregate per game</td>
+                            <td>{lowestAggConcededPerGame.toFixed(2)}</td>
+                            <td>
+                                {capitalizeText(lowestAggConcededPerGameTeam)}
+                            </td>
+                        </tr>
+                    ) : null}
                 </tbody>
             </Table>
             <p className="footnote">* minimum of {minGames} games</p>

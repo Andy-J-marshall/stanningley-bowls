@@ -129,7 +129,7 @@ function TeamRecords(props) {
             <h1>TEAM RECORDS</h1>
             <RecordsTableDisplay
                 minGames={minGames}
-                playerOrTeam={'Team'}
+                playerOrTeam="Team"
                 bestWinPerc={bestWinPercentage}
                 bestWinPercPlayerOrTeam={bestWinPercentageTeam}
                 bestTeamPointsPerGame={bestTeamPointsPerGame}

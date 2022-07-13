@@ -42,45 +42,45 @@ function StatsTableDisplay(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {totalGames > 0 && (
+                    {totalGames > 0 ? (
                         <tr>
                             <td>Games</td>
                             <td>{totalGames}</td>
                         </tr>
-                    )}
-                    {leaguePosition >= 0 && (
+                    ) : null}
+                    {leaguePosition >= 0 ? (
                         <tr>
                             <td>Current league position</td>
                             <td>{leaguePosition}</td>
                         </tr>
-                    )}
-                    {leaguePoints >= 0 && (
+                    ) : null}
+                    {leaguePoints >= 0 ? (
                         <tr>
                             <td>Current league points</td>
                             <td>{leaguePoints}</td>
                         </tr>
-                    )}
-                    {totalWins > 0 && (
+                    ) : null}
+                    {totalWins > 0 ? (
                         <tr>
                             <td>Wins</td>
                             <td>{totalWins}</td>
                         </tr>
-                    )}
-                    {totalWins > 0 && (
+                    ) : null}
+                    {totalWins > 0 ? (
                         <tr>
                             <td>Win breakdown</td>
                             <td>
                                 {homeWins} home, {awayWins} away, {cupWins} cup
                             </td>
                         </tr>
-                    )}
-                    {totalLosses > 0 && (
+                    ) : null}
+                    {totalLosses > 0 ? (
                         <tr>
                             <td>Losses</td>
                             <td>{totalLosses}</td>
                         </tr>
-                    )}
-                    {totalLosses > 0 && (
+                    ) : null}
+                    {totalLosses > 0 ? (
                         <tr>
                             <td>Loss breakdown</td>
                             <td>
@@ -88,69 +88,69 @@ function StatsTableDisplay(props) {
                                 {cupLosses} cup
                             </td>
                         </tr>
-                    )}
-                    {totalDraws > 0 && (
+                    ) : null}
+                    {totalDraws > 0 ? (
                         <tr>
                             <td>Draws</td>
                             <td>{totalDraws}</td>
                         </tr>
-                    )}
-                    {totalDraws > 0 && (
+                    ) : null}
+                    {totalDraws > 0 ? (
                         <tr>
                             <td>Draw breakdown</td>
                             <td>
                                 {homeDraws} home, {awayDraws} away
                             </td>
                         </tr>
-                    )}
-                    {stanningleyAgg > 0 && (
+                    ) : null}
+                    {stanningleyAgg > 0 ? (
                         <tr>
                             <td>Stanningley aggregate</td>
                             <td>{stanningleyAgg}</td>
                         </tr>
-                    )}
-                    {opponentAgg > 0 && (
+                    ) : null}
+                    {opponentAgg > 0 ? (
                         <tr>
                             <td>Opponents aggregate</td>
                             <td>{opponentAgg}</td>
                         </tr>
-                    )}
-                    {stanningleyTeamScore > 0 && (
+                    ) : null}
+                    {stanningleyTeamScore > 0 ? (
                         <tr>
                             <td>Stanningley points</td>
                             <td>{stanningleyTeamScore}</td>
                         </tr>
-                    )}
-                    {opponentTeamScore > 0 && (
+                    ) : null}
+                    {opponentTeamScore > 0 ? (
                         <tr>
                             <td>Opponents points</td>
                             <td>{opponentTeamScore}</td>
                         </tr>
-                    )}
-                    {totalWins > 0 && teamsBeaten && (
+                    ) : null}
+                    {totalWins > 0 && teamsBeaten ? (
                         <tr>
                             <td>Opponents beaten</td>
                             <td>{<ul>{teamsBeaten}</ul>}</td>
                         </tr>
-                    )}
-                    {totalLosses > 0 && teamsLostTo && (
+                    ) : null}
+                    {totalLosses > 0 && teamsLostTo ? (
                         <tr>
                             <td>Opponents lost to</td>
                             <td>{<ul>{teamsLostTo}</ul>}</td>
                         </tr>
-                    )}
-                    {totalDraws > 0 && teamsDrawn && (
+                    ) : null}
+                    {totalDraws > 0 && teamsDrawn ? (
                         <tr>
                             <td>Opponents drawn with</td>
                             <td>{<ul>{teamsDrawn}</ul>}</td>
                         </tr>
-                    )}
-                    {results && results.length > 0 && (
+                    ) : null}
+                    {results && results.length > 0 ? (
                         <tr>
                             <td>Results</td>
                             <td>{<ul>{results}</ul>}</td>
                         </tr>
-                    )}
+                    ) : null}
                 </tbody>
             </Table>
         </div>
