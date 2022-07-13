@@ -203,11 +203,6 @@ function App() {
                     !showHome)) && (
                 <div className="center" id="home-page">
                     <div className="center page-component">
-                        {/* TODO remove? */}
-                        {/* <p>
-                            Welcome to Stanningley Park Bowling Club's website.
-                            <br />
-                        </p> */}
                         <Nav
                             activeKey="#homepage"
                             onSelect={onSelect}
@@ -215,11 +210,16 @@ function App() {
                         >
                             <Carousel fade>
                                 <Carousel.Item>
-                                    <img src={stanImg1} alt="Membership slide" />
+                                    <img
+                                        src={stanImg1}
+                                        alt="Membership slide"
+                                    />
                                     <Carousel.Caption>
                                         <Nav.Item>
                                             <Nav.Link
-                                                style={{ color: 'white' }}
+                                                style={{
+                                                    color: 'white',
+                                                }}
                                                 href="#membership"
                                             >
                                                 <h2>Membership</h2>
@@ -233,7 +233,9 @@ function App() {
                                     <Carousel.Caption>
                                         <Nav.Item>
                                             <Nav.Link
-                                                style={{ color: 'white' }}
+                                                style={{
+                                                    color: 'white',
+                                                }}
                                                 href="#stats"
                                             >
                                                 <h2>Team & Player Stats</h2>
@@ -247,7 +249,9 @@ function App() {
                                     <Carousel.Caption>
                                         <Nav.Item>
                                             <Nav.Link
-                                                style={{ color: 'white' }}
+                                                style={{
+                                                    color: 'white',
+                                                }}
                                                 href="#fixtures-results"
                                             >
                                                 <h2>Fixtures & Results</h2>

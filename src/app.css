@@ -15,9 +15,42 @@ h4 {
   padding: 0.7rem 0 0 0;
 }
 
-.carousel-item img {
-  height: 96%;
-  width: 96%;
+/* TODO improve this! */
+@media (min-width: 100px) {
+  .carousel-item img {
+    height: 90%;
+    width: 90%;
+  }
+}
+@media (min-width: 600px) {
+  .carousel-item img {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media (min-width: 700px) {
+  .carousel-item img {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media (min-width: 800px) {
+  .carousel-item img {
+    height: 60%;
+    width: 60%;
+  }
+}
+@media (min-width: 900px) {
+  .carousel-item img {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .carousel-item img {
+    height: 35%;
+    width: 35%;
+  }
 }
 
 body {
