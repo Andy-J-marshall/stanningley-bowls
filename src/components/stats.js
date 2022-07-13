@@ -9,27 +9,32 @@ import {
 import Records from './records';
 import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
-import bowlsStats2021 from '../data/bowlsStats2021.json';
 import bowlsStats2022 from '../data/bowlsStats2022.json';
 
-let currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
+let startYear = currentYear;
 const url = window.location.href.toLowerCase();
 if (url.includes('#stats20')) {
     const yearFromUrl = url.split('#stats')[1];
-    currentYear = yearFromUrl;
+    startYear = yearFromUrl;
 }
 
+// Stats for future years will go in here
 const allYearStats = {
     year2022: bowlsStats2022,
-    year2021: bowlsStats2021,
 };
-const defaultStats = allYearStats[`year${currentYear}`];
+
+let defaultStats = allYearStats[`year${startYear}`];
+if (!defaultStats) {
+    defaultStats = allYearStats[`year${currentYear}`];
+    startYear = currentYear;
+}
 
 function Stats() {
     const [showPlayerStats, setShowPlayerStats] = useState(true);
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showRecords, setShowRecords] = useState(false);
-    const [year, setYear] = useState(currentYear);
+    const [year, setYear] = useState(startYear);
     const [loaded, setLoaded] = useState(false);
     const [playerResults, setPlayerResults] = useState(
         defaultStats.playerResults
@@ -76,14 +81,11 @@ function Stats() {
         let statsForSelectedYear;
         setYear(year);
         switch (year) {
-            case '2021':
-                statsForSelectedYear = allYearStats['year2021'];
-                break;
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
                 break;
             default:
-                statsForSelectedYear = allYearStats[`year${currentYear}`];
+                statsForSelectedYear = allYearStats[`year${startYear}`];
                 break;
         }
         setPlayerResults(statsForSelectedYear.playerResults);
@@ -143,10 +145,13 @@ function Stats() {
                 onSelect={changeStatsYear}
                 id="dropdown-basic-button"
                 title={year + ' Stats'}
-                style={{ display: 'flex', justifyContent: 'right', margin: '0.5rem 0.5rem 0 0' }}
+                style={{
+                    display: 'flex',
+                    justifyContent: 'left',
+                    margin: '0.5rem 0 0 0.5rem',
+                }}
             >
                 <Dropdown.Item href="#stats2022">2022</Dropdown.Item>
-                <Dropdown.Item href="#stats2021">2021</Dropdown.Item>
             </DropdownButton>
             <div id="stat" className="page-component">
                 {showRecords && (
