@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/stanningley-bowls/static/css/main.3ba7799f.chunk.css",
-    "main.js": "/stanningley-bowls/static/js/main.8d53e2ee.chunk.js",
-    "main.js.map": "/stanningley-bowls/static/js/main.8d53e2ee.chunk.js.map",
+    "main.css": "/stanningley-bowls/static/css/main.77364e76.chunk.css",
+    "main.js": "/stanningley-bowls/static/js/main.b704e5a7.chunk.js",
+    "main.js.map": "/stanningley-bowls/static/js/main.b704e5a7.chunk.js.map",
     "runtime-main.js": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js",
     "runtime-main.js.map": "/stanningley-bowls/static/js/runtime-main.7bab6f68.js.map",
     "static/css/2.6087c55b.chunk.css": "/stanningley-bowls/static/css/2.6087c55b.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.8b5e6345.chunk.js.map": "/stanningley-bowls/static/js/2.8b5e6345.chunk.js.map",
     "index.html": "/stanningley-bowls/index.html",
     "static/css/2.6087c55b.chunk.css.map": "/stanningley-bowls/static/css/2.6087c55b.chunk.css.map",
-    "static/css/main.3ba7799f.chunk.css.map": "/stanningley-bowls/static/css/main.3ba7799f.chunk.css.map",
+    "static/css/main.77364e76.chunk.css.map": "/stanningley-bowls/static/css/main.77364e76.chunk.css.map",
     "static/js/2.8b5e6345.chunk.js.LICENSE.txt": "/stanningley-bowls/static/js/2.8b5e6345.chunk.js.LICENSE.txt",
     "static/media/arnold_clark_grant.8f29679f.png": "/stanningley-bowls/static/media/arnold_clark_grant.8f29679f.png",
     "static/media/asda_foundation.45cd6d42.png": "/stanningley-bowls/static/media/asda_foundation.45cd6d42.png",
@@ -19,10 +19,15 @@
     "static/media/brand-logo.9a167be7.png": "/stanningley-bowls/static/media/brand-logo.9a167be7.png",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/stanningley-bowls/static/media/hey_neighbour_grant.9ee20b8b.png",
     "static/media/squeaker.3afb2210.png": "/stanningley-bowls/static/media/squeaker.3afb2210.png",
-    "static/media/stan1.fb507703.jpg": "/stanningley-bowls/static/media/stan1.fb507703.jpg",
-    "static/media/stan2.0dcb8369.jpg": "/stanningley-bowls/static/media/stan2.0dcb8369.jpg",
-    "static/media/stan3.ae6c9d7a.jpg": "/stanningley-bowls/static/media/stan3.ae6c9d7a.jpg",
-    "static/media/stan4.03dd241f.jpg": "/stanningley-bowls/static/media/stan4.03dd241f.jpg",
+    "static/media/stan-green.3aac6069.jpg": "/stanningley-bowls/static/media/stan-green.3aac6069.jpg",
+    "static/media/stan-green2.394d9920.jpg": "/stanningley-bowls/static/media/stan-green2.394d9920.jpg",
+    "static/media/stan-green3.263bb5e4.jpg": "/stanningley-bowls/static/media/stan-green3.263bb5e4.jpg",
+    "static/media/stan-mond-team.c6348481.jpg": "/stanningley-bowls/static/media/stan-mond-team.c6348481.jpg",
+    "static/media/stan-sat-team.b9ee81b0.jpg": "/stanningley-bowls/static/media/stan-sat-team.b9ee81b0.jpg",
+    "static/media/stan-social1.5f175ac0.jpg": "/stanningley-bowls/static/media/stan-social1.5f175ac0.jpg",
+    "static/media/stan-social2.f52f884a.jpg": "/stanningley-bowls/static/media/stan-social2.f52f884a.jpg",
+    "static/media/stan-thur-team.1df4e595.jpg": "/stanningley-bowls/static/media/stan-thur-team.1df4e595.jpg",
+    "static/media/stan-tues-team.77a45bfc.jpg": "/stanningley-bowls/static/media/stan-tues-team.77a45bfc.jpg",
     "static/media/upcoming_fixtures.419a4fcc.png": "/stanningley-bowls/static/media/upcoming_fixtures.419a4fcc.png",
     "static/media/upcoming_fixtures_Aug.43489b53.png": "/stanningley-bowls/static/media/upcoming_fixtures_Aug.43489b53.png",
     "static/media/upcoming_fixtures_Sept.68e86e42.png": "/stanningley-bowls/static/media/upcoming_fixtures_Sept.68e86e42.png",
@@ -32,7 +37,7 @@
     "static/js/runtime-main.7bab6f68.js",
     "static/css/2.6087c55b.chunk.css",
     "static/js/2.8b5e6345.chunk.js",
-    "static/css/main.3ba7799f.chunk.css",
-    "static/js/main.8d53e2ee.chunk.js"
+    "static/css/main.77364e76.chunk.css",
+    "static/js/main.b704e5a7.chunk.js"
   ]
 }
