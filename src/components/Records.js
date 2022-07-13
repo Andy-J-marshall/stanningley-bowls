@@ -7,7 +7,7 @@ function Records(props) {
     const playersStats = props.playersStats;
 
     return (
-        <div id="record" className='page-component'>
+        <div id="record" className="page-component">
             <PlayerRecords playersStats={playersStats} />
             <TeamRecords teamStats={teamStats} />
         </div>

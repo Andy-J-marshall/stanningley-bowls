@@ -12,7 +12,6 @@ import PlayerStats from './playerStats';
 import bowlsStats2021 from '../data/bowlsStats2021.json';
 import bowlsStats2022 from '../data/bowlsStats2022.json';
 
-// TODO display stats year prominently
 let currentYear = new Date().getFullYear();
 const url = window.location.href.toLowerCase();
 if (url.includes('#stats20')) {
@@ -30,6 +29,7 @@ function Stats() {
     const [showPlayerStats, setShowPlayerStats] = useState(true);
     const [showTeamStats, setShowTeamStats] = useState(false);
     const [showRecords, setShowRecords] = useState(false);
+    const [year, setYear] = useState(currentYear);
     const [loaded, setLoaded] = useState(false);
     const [playerResults, setPlayerResults] = useState(
         defaultStats.playerResults
@@ -72,9 +72,10 @@ function Stats() {
     }
 
     function changeStatsYear(event) {
-        event = event.replace('#stats', '').toString();
+        let year = event.replace('#stats', '').toString();
         let statsForSelectedYear;
-        switch (event) {
+        setYear(year);
+        switch (year) {
             case '2021':
                 statsForSelectedYear = allYearStats['year2021'];
                 break;
@@ -137,13 +138,12 @@ function Stats() {
                     </Nav>
                 </Container>
             </Navbar>
-            {/* TODO need to align right */}
-            {/* TODO add year to the button? */}
             <DropdownButton
                 variant="secondary"
                 onSelect={changeStatsYear}
                 id="dropdown-basic-button"
-                title="Year"
+                title={year + ' Stats'}
+                style={{ display: 'flex', justifyContent: 'right', margin: '0.5rem 0.5rem 0 0' }}
             >
                 <Dropdown.Item href="#stats2022">2022</Dropdown.Item>
                 <Dropdown.Item href="#stats2021">2021</Dropdown.Item>

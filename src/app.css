@@ -21,8 +21,8 @@ h4 {
 }
 
 .carousel-item img {
-  height: 350px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
 }
 
 body {
