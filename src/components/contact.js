@@ -1,7 +1,7 @@
 import React from 'react';
-import facebook from '../images/facebook.png';
-import instagram from '../images/instagram.png';
-import email from '../images/email.png';
+import facebook from '../images/socials/facebook.png';
+import instagram from '../images/socials/instagram.png';
+import email from '../images/socials/email.png';
 
 function Contact() {
     return (

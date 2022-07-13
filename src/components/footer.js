@@ -1,8 +1,8 @@
 import React from 'react';
-import google from '../images/google.png';
-import facebook from '../images/facebook.png';
-import instagram from '../images/instagram.png';
-import email from '../images/email.png';
+import google from '../images/socials/google.png';
+import facebook from '../images/socials/facebook.png';
+import instagram from '../images/socials/instagram.png';
+import email from '../images/socials/email.png';
 
 function Footer() {
     return (

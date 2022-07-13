@@ -6,11 +6,11 @@ import Supporters from './components/supporters';
 import Membership from './components/membership';
 import Contact from './components/contact';
 import FixturesResults from './components/fixturesResults';
-import smallLogo from './images/brand-logo-tiny.png';
-import logo from './images/brand-logo.png';
-import stan1 from './images/stan1.jpg';
-import stan2 from './images/stan2.jpg';
-import stan3 from './images/stan3.jpg';
+import smallLogo from './images/logos/brand-logo-tiny.png';
+import logo from './images/logos/brand-logo.png';
+import stanImg1 from './images/websiteImages/stan-green.jpg';
+import stanImg2 from './images/websiteImages/stan-green2.jpg';
+import stanImg3 from './images/websiteImages/stan-green3.jpg';
 import bowlsStats2022 from './data/bowlsStats2022.json';
 import './app.css';
 
@@ -215,20 +215,20 @@ function App() {
                         >
                             <Carousel fade>
                                 <Carousel.Item>
-                                    <img src={stan1} alt="Membership slide" />
+                                    <img src={stanImg1} alt="Membership slide" />
                                     <Carousel.Caption>
                                         <Nav.Item>
                                             <Nav.Link
                                                 style={{ color: 'white' }}
                                                 href="#membership"
                                             >
-                                                <h5>Membership Options</h5>
+                                                <h2>Membership</h2>
                                             </Nav.Link>
                                         </Nav.Item>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img src={stan2} alt="Stats slide" />
+                                    <img src={stanImg2} alt="Stats slide" />
 
                                     <Carousel.Caption>
                                         <Nav.Item>
@@ -236,13 +236,13 @@ function App() {
                                                 style={{ color: 'white' }}
                                                 href="#stats"
                                             >
-                                                <h5>Team and Player Stats</h5>
+                                                <h2>Team & Player Stats</h2>
                                             </Nav.Link>
                                         </Nav.Item>
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img src={stan3} alt="Fixtures slide" />
+                                    <img src={stanImg3} alt="Fixtures slide" />
 
                                     <Carousel.Caption>
                                         <Nav.Item>
@@ -250,7 +250,7 @@ function App() {
                                                 style={{ color: 'white' }}
                                                 href="#fixtures-results"
                                             >
-                                                <h5>Fixtures and Results</h5>
+                                                <h2>Fixtures & Results</h2>
                                             </Nav.Link>
                                         </Nav.Item>
                                     </Carousel.Caption>

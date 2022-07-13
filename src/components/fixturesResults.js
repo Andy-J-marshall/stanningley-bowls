@@ -1,8 +1,8 @@
 import React from 'react';
 import Results from './results';
-import upcoming_fixtures from '../images/upcoming_fixtures.png';
-import upcomingFixturesAugust from '../images/upcoming_fixtures_Aug.png';
-import upcomingFixturesSeptember from '../images/upcoming_fixtures_Sept.png';
+import upcoming_fixtures from '../images/fixtures/upcoming_fixtures.png';
+import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png';
+import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept.png';
 
 function FixturesResults(props) {
     const teamResults = props.teamResults;
