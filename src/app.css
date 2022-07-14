@@ -15,54 +15,63 @@ h4 {
   padding: 0.7rem 0 0 0;
 }
 
-/* TODO improve this! */
+body {
+  background-color: #efefef;
+  margin: auto;
+  width: 100%;
+}
+
+.carousel {
+  width: 95%;
+}
+
 @media (min-width: 100px) {
   .carousel-item img {
-    height: 90%;
-    width: 90%;
+    height: 99%;
+    width: 99%;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .carousel-item img {
-    height: 80%;
-    width: 80%;
+    height: 88%;
+    width: 88%;
   }
 }
 @media (min-width: 700px) {
   .carousel-item img {
-    height: 70%;
-    width: 70%;
+    height: 86%;
+    width: 86%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 825px) {
+  .carousel-item img {
+    height: 84%;
+    width: 84%;
+  }
+}
+@media (min-width: 950px) {
+  .carousel-item img {
+    height: 69%;
+    width: 69%;
+  }
+}
+@media (min-width: 1000px) {
   .carousel-item img {
     height: 60%;
     width: 60%;
   }
 }
-@media (min-width: 900px) {
-  .carousel-item img {
-    height: 50%;
-    width: 50%;
-  }
-}
-@media (min-width: 1000px) {
-  .carousel-item img {
-    height: 40%;
-    width: 40%;
-  }
-}
 @media (min-width: 1250px) {
+  .carousel-item img {
+    height: 45%;
+    width: 45%;
+  }
+}
+@media (min-width: 1500px) {
   .carousel-item img {
     height: 33%;
     width: 33%;
   }
-}
-
-body {
-  background-color: #efefef;
-  margin: auto;
-  width: 100%;
 }
 
 .page-component {
