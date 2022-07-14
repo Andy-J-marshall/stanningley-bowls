@@ -30,7 +30,6 @@ function StatsTableDisplay(props) {
     const teamsDrawn = props.teamsDrawn
         ? arrayToList(props.teamsDrawn)
         : props.teamsDrawn;
-    const results = props.results ? arrayToList(props.results) : props.results;
 
     return (
         <div className="center table" style={{ width: '97%' }}>
@@ -143,12 +142,6 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Opponents drawn with</td>
                             <td>{<ul>{teamsDrawn}</ul>}</td>
-                        </tr>
-                    ) : null}
-                    {results && results.length > 0 ? (
-                        <tr>
-                            <td>Results</td>
-                            <td>{<ul>{results}</ul>}</td>
                         </tr>
                     ) : null}
                 </tbody>

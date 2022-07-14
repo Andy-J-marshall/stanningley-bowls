@@ -23,7 +23,6 @@ function IndividualTeamStats(props) {
         opponentTotalPoints,
         leaguePosition,
         leaguePoints,
-        results,
     } = stats;
 
     const allPlayerStats = Object.keys(playerStats)
@@ -66,7 +65,6 @@ function IndividualTeamStats(props) {
                 awayDraws={awayDraws}
                 leaguePoints={leaguePoints}
                 leaguePosition={leaguePosition}
-                results={results}
             />
 
             <div id="player-stats-per-team">

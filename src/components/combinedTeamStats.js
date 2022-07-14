@@ -26,7 +26,6 @@ function CombinedTeamStats(props) {
         totalWins,
         totalLosses,
         totalGames,
-        combinedResults,
     } = combinedStats;
 
     return (
@@ -52,7 +51,6 @@ function CombinedTeamStats(props) {
                     cupLosses={combinedCupLosses}
                     homeDraws={combinedHomeDraws}
                     awayDraws={combinedAwayDraws}
-                    results={combinedResults}
                 />
             </div>
         </div>
