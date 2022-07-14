@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import mondayTeamImg from '../images/websiteImages/stan-mond-team.jpg';
-import tuesdayTeamImg from '../images/websiteImages/stan-tues-team.jpg';
-import thursdayTeamImg from '../images/websiteImages/stan-thur-team.jpg';
-import saturdayTeamImg from '../images/websiteImages/stan-sat-team.jpg';
-import socialImg1 from '../images/websiteImages/stan-social1.jpg';
-import socialImg2 from '../images/websiteImages/stan-social2.jpg';
+import mondayTeamImg from '../images/websiteImages/stan-mond-team.webp';
+import tuesdayTeamImg from '../images/websiteImages/stan-tues-team.webp';
+import thursdayTeamImg from '../images/websiteImages/stan-thur-team.webp';
+import saturdayTeamImg from '../images/websiteImages/stan-sat-team.webp';
+import socialImg1 from '../images/websiteImages/stan-social1.webp';
+import socialImg2 from '../images/websiteImages/stan-social2.webp';
 import config from '../config';
 
 const { teams, socialDays } = config;
@@ -44,7 +44,7 @@ function TeamInfo() {
                     {teams.map((team, idx) => (
                         <Col key={idx}>
                             <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={team.img} />
+                                <Card.Img alt='team-photo' variant="top" src={team.img} />
                                 <Card.Body>
                                     <Card.Title>
                                         {team.name.toUpperCase()}
@@ -73,7 +73,7 @@ function TeamInfo() {
                     {socialDays.map((day, idx) => (
                         <Col key={idx}>
                             <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={day.img} />
+                                <Card.Img alt='social-photo' variant="top" src={day.img} />
                                 <Card.Body>
                                     <Card.Title>
                                         {day.name.toUpperCase()}

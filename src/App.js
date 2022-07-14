@@ -8,9 +8,9 @@ import Contact from './components/contact';
 import FixturesResults from './components/fixturesResults';
 import smallLogo from './images/logos/brand-logo-tiny.png';
 import logo from './images/logos/brand-logo.png';
-import stanImg1 from './images/websiteImages/stan-green.jpg';
-import stanImg2 from './images/websiteImages/stan-green2.jpg';
-import stanImg3 from './images/websiteImages/stan-green3.jpg';
+import stanImg1 from './images/websiteImages/stan-green.webp';
+import stanImg2 from './images/websiteImages/stan-green2.webp';
+import stanImg3 from './images/websiteImages/stan-green3.webp';
 import bowlsStats2022 from './data/bowlsStats2022.json';
 import './app.css';
 
