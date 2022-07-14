@@ -56,6 +56,16 @@ export function combineTeamStats(statsArray) {
         combinedAwayLosses + combinedHomeLosses + combinedCupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
 
+    if (combinedBeaten) {
+        combinedBeaten.sort();
+    }
+    if (combinedBeatenBy) {
+        combinedBeatenBy.sort();
+    }
+    if (combinedDrawnWith) {
+        combinedDrawnWith.sort();
+    }
+
     return {
         combinedAwayWins,
         combinedHomeWins,
