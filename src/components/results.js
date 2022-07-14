@@ -46,10 +46,10 @@ function Results(props) {
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
-                                    <th>Home</th>
-                                    <th>Score</th>
-                                    <th>Score</th>
-                                    <th>Away</th>
+                                    <th>Home Team</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Away Team</th>
                                 </tr>
                             </thead>
                             {team.results.map((result, idx) => {
