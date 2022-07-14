@@ -1,5 +1,8 @@
 import React from 'react';
 import TeamInfo from './teamInfo';
+import config from '../config';
+
+const { socialPrice, bowlingPrice } = config.membership;
 
 function Membership() {
     return (
@@ -17,8 +20,8 @@ function Membership() {
                 </p>
                 <div className="tabs">
                     <ul>
-                        <li>Social membership: £10</li>
-                        <li>Bowling membership: £45</li>
+                        <li>Social membership: £{socialPrice}</li>
+                        <li>Bowling membership: £{bowlingPrice}</li>
                     </ul>
                 </div>
                 <p>

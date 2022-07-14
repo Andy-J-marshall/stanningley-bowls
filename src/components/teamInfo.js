@@ -6,53 +6,34 @@ import thursdayTeamImg from '../images/websiteImages/stan-thur-team.jpg';
 import saturdayTeamImg from '../images/websiteImages/stan-sat-team.jpg';
 import socialImg1 from '../images/websiteImages/stan-social1.jpg';
 import socialImg2 from '../images/websiteImages/stan-social2.jpg';
+import config from '../config';
 
-const teams = [
-    {
-        name: 'Monday Combined',
-        age: 'Open Age',
-        desc: '4 singles games and 2 pairs',
-        link: 'https://bowlsnet.uk/Leeds/MonComb',
-        startTime: '6:15-6.45pm',
-        img: mondayTeamImg,
-    },
-    {
-        name: 'Tuesday Vets',
-        age: 'Vets (55+ year olds)',
-        desc: '8 singles games',
-        link: 'https://bowlsnet.uk/LeedsParkVets/Tue',
-        startTime: '1:30pm',
-        img: tuesdayTeamImg,
-    },
-    {
-        name: 'Thursday Vets',
-        age: 'Vets (55+ year olds)',
-        desc: '8 singles games',
-        link: 'https://bowlsnet.uk/LeedsParkVets/Thu',
-        startTime: '1:30pm',
-        img: thursdayTeamImg,
-    },
-    {
-        name: 'Saturday',
-        age: 'Open Age',
-        desc: '8 singles games',
-        link: 'https://bowlsnet.uk/Leeds/Sat',
-        startTime: '2pm',
-        img: saturdayTeamImg,
-    },
-];
-const socialDays = [
-    {
-        name: 'WEDNESDAY AFTERNOON',
-        time: '2pm -4pm',
-        img: socialImg1,
-    },
-    {
-        name: 'SATURDAY MORNING',
-        time: '10:30am -12:30pm',
-        img: socialImg2,
-    },
-];
+const { teams, socialDays } = config;
+
+teams.forEach((team) => {
+    const teamName = team.name.toLowerCase();
+    if (teamName.includes('monday')) {
+        team.img = mondayTeamImg;
+    }
+    if (teamName.includes('tuesday vets')) {
+        team.img = tuesdayTeamImg;
+    }
+    if (teamName.includes('thursday')) {
+        team.img = thursdayTeamImg;
+    }
+    if (teamName.includes('saturday')) {
+        team.img = saturdayTeamImg;
+    }
+});
+socialDays.forEach((day) => {
+    const socialDay = day.name.toLowerCase();
+    if (socialDay.includes('wednesday afternoon')) {
+        day.img = socialImg1;
+    }
+    if (socialDay.includes('saturday')) {
+        day.img = socialImg2;
+    }
+});
 
 function TeamInfo() {
     return (

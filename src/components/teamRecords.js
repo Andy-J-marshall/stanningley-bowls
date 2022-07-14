@@ -69,7 +69,7 @@ function TeamRecords(props) {
         const drawPoints = draws > 0 ? draws * 0.5 : 0;
         const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
-        const gamesPerMatch = day === 'Monday' ? 6 : 8;
+        const gamesPerMatch = day === 'Monday' || day === 'Wednesday' ? 6 : 8; // there are only 6 games on a Monday and Wednesday
         const pointsPerGame =
             stanningleyTotalPoints /
             gamesPerMatch /

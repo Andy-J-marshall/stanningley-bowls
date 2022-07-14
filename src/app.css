@@ -48,8 +48,14 @@ h4 {
 }
 @media (min-width: 1000px) {
   .carousel-item img {
-    height: 35%;
-    width: 36%;
+    height: 40%;
+    width: 40%;
+  }
+}
+@media (min-width: 1250px) {
+  .carousel-item img {
+    height: 33%;
+    width: 33%;
   }
 }
 
