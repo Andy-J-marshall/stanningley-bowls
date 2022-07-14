@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://andy-j-marshall.github.io/stanningley-bowls/",
+  "homepage": "https://stanningleybowlsclub.co.uk",
   "scripts": {
     "cypress:open": "npx cypress open",
     "update-stats": "python3 ./pythonScript/bowls.py",
