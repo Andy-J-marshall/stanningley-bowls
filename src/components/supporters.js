@@ -9,12 +9,12 @@ import wldLogo from '../images/supporters/west_leeds_dispatch.png';
 function Supporters() {
     return (
         <div id="socials" className="page-component">
-            <img className="supporters-logos" src={asdaLogo} alt="" />
-            <img className="supporters-logos" src={beaLogo} alt="" />
-            <img className="supporters-logos" src={arnoldClarkLogo} alt="" />
-            <img className="supporters-logos" src={heyNeighbourLogo} alt="" />
-            <img className="supporters-logos" src={squeakerLogo} alt="" />
-            <img className="supporters-logos" src={wldLogo} alt="" />
+            <img className="supporters-logos" src={asdaLogo} alt="support-logo1" />
+            <img className="supporters-logos" src={beaLogo} alt="support-logo2" />
+            <img className="supporters-logos" src={arnoldClarkLogo} alt="support-logo3" />
+            <img className="supporters-logos" src={heyNeighbourLogo} alt="support-logo4" />
+            <img className="supporters-logos" src={squeakerLogo} alt="support-logo5" />
+            <img className="supporters-logos" src={wldLogo} alt="support-logo6" />
         </div>
     );
 }
