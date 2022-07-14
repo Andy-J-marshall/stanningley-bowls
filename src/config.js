@@ -50,7 +50,12 @@ const live = {
             time: '10:30am-12:30pm',
         },
     ],
-    days: {},
+    days: {
+        monday: 'Monday Combined',
+        tuesday: 'Tuesday Vets',
+        thursday: 'Thursday Vets',
+        saturday: 'Saturday',
+    },
 };
 
 export default live;

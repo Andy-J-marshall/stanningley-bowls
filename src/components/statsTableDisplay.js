@@ -59,7 +59,7 @@ function StatsTableDisplay(props) {
                             <td>{leaguePoints}</td>
                         </tr>
                     ) : null}
-                    {totalWins > 0 ? (
+                    {totalWins >= 0 ? (
                         <tr>
                             <td>Wins</td>
                             <td>{totalWins}</td>
@@ -73,7 +73,7 @@ function StatsTableDisplay(props) {
                             </td>
                         </tr>
                     ) : null}
-                    {totalLosses > 0 ? (
+                    {totalLosses >= 0 ? (
                         <tr>
                             <td>Losses</td>
                             <td>{totalLosses}</td>

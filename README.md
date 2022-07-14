@@ -19,7 +19,6 @@ Run the following:
 * `npm run build`
 * `npm run deploy`
 
-<!-- TODO Buy a domain -->
 <!-- TODO Add routing? -->
 
 # Bowls script

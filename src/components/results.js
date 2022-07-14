@@ -1,12 +1,11 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import config from '../config';
 
 function Results(props) {
     const teamResults = props.teamResults;
 
     const resultsArray = [];
-
-    // TODO also change team stats page?
     teamResults.map((team) => {
         const results = team.results.map((result) => {
             const resultParts = result.split('-');
@@ -30,7 +29,7 @@ function Results(props) {
         });
 
         const result = {
-            day: team.day,
+            day: config.days[team.day.toLowerCase()],
             results: results,
         };
         resultsArray.push(result);

@@ -39,7 +39,7 @@ function RecordsTableDisplay(props) {
                     <tr>
                         <th>RECORD</th>
                         <th>VALUE</th>
-                        <th>{playerOrTeam.toUpperCase()} (GAMES PLAYED)</th>
+                        <th>{playerOrTeam.toUpperCase()}</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -122,6 +122,7 @@ function RecordsTableDisplay(props) {
                     ) : null}
                 </tbody>
             </Table>
+            <p className="footnote">* Number of games played are in brackets</p>
             <p className="footnote">* minimum of {minGames} games</p>
         </div>
     );
