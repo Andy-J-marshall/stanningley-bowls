@@ -2,7 +2,7 @@ import React from 'react';
 import RecordsTableDisplay from './recordsTableDisplay';
 
 function TeamRecords(props) {
-    const statsArray = props.teamStats;
+    const teamResults = props.teamResults;
 
     let bestWinPercentage = -1;
     let bestWinPercentageTeam = [];
@@ -17,7 +17,7 @@ function TeamRecords(props) {
     let minGames = 1;
 
     // This sets the minimum number of games required for the stats to be counted
-    statsArray.forEach((stats) => {
+    teamResults.forEach((stats) => {
         const {
             awayWins,
             homeWins,
@@ -46,7 +46,7 @@ function TeamRecords(props) {
         }
     });
 
-    statsArray.forEach((stats) => {
+    teamResults.forEach((stats) => {
         const {
             day,
             awayWins,

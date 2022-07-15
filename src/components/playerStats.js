@@ -6,12 +6,12 @@ import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStats(props) {
-    const playersStats = props.playersStats;
+    const playerResults = props.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
 
-    const keys = Object.keys(playersStats);
+    const keys = Object.keys(playerResults);
     const playerNameArray = keys.sort().map((p) => p.toUpperCase());
 
     const handleSubmit = (event) => {
@@ -31,7 +31,7 @@ function PlayerStats(props) {
                 key={index}
                 player={player}
                 name={playerName}
-                playersStats={playersStats}
+                playersStats={playerResults}
             ></Player>
         );
     }

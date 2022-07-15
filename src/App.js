@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Stats from './components/stats';
@@ -11,22 +11,50 @@ import Navigation from './components/navigation';
 import Records from './components/records';
 import TeamStats from './components/teamStats';
 import PlayerStats from './components/playerStats';
+import YearSelectDropdown from './components/yearSelectDropdown';
 import bowlsStats2022 from './data/bowlsStats2022.json';
 import './app.css';
 
 function App() {
     const currentYear = new Date().getFullYear();
+    let startYear = currentYear;
+    const url = window.location.href.toLowerCase();
+    if (url.includes('#20')) {
+        const yearFromUrl = url.split('/stats#')[1];
+        startYear = yearFromUrl;
+    }
+
+    // Stats for future years will go in here
     const allYearStats = {
         year2022: bowlsStats2022,
     };
-    const defaultStats = allYearStats[`year${currentYear}`];
-    const { teamResults, playerResults } = defaultStats;
 
-    // TODO need to keep the nav bar for the records/ player stats and team stats
+    let defaultStats = allYearStats[`year${startYear}`];
+    if (!defaultStats) {
+        defaultStats = allYearStats[`year${currentYear}`];
+        startYear = currentYear;
+    }
+
+    const [playerResults, setPlayerResults] = useState(
+        defaultStats.playerResults
+    );
+    const [teamResults, setTeamResults] = useState(defaultStats.teamResults);
+    const [updateDate, setUpdateDate] = useState(defaultStats.lastUpdated);
+
     return (
         <div id="app">
             <Header />
             <Navigation />
+            {url.includes('/stats') && (
+                <YearSelectDropdown
+                    startYear={startYear}
+                    defaultStats={defaultStats}
+                    setUpdateDate={setUpdateDate}
+                    setPlayerResults={setPlayerResults}
+                    setTeamResults={setTeamResults}
+                    allYearStats={allYearStats}
+                />
+            )}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<Home />} />
@@ -36,17 +64,25 @@ function App() {
                     path="/fixtures-and-results"
                     element={<FixturesResults teamResults={teamResults} />}
                 />
-                <Route path="/stats" element={<Stats />}>
+                <Route
+                    path="/stats"
+                    element={
+                        <Stats
+                            updateDate={updateDate}
+                            playerResults={playerResults}
+                        />
+                    }
+                >
                     <Route
                         path="/stats/player"
-                        element={<PlayerStats playersStats={playerResults} />}
+                        element={<PlayerStats playerResults={playerResults} />}
                     />
                     <Route
                         path="/stats/team"
                         element={
                             <TeamStats
-                                teamStats={teamResults}
-                                playersStats={playerResults}
+                                teamResults={teamResults}
+                                playerResults={playerResults}
                             />
                         }
                     />
@@ -54,8 +90,8 @@ function App() {
                         path="/stats/records"
                         element={
                             <Records
-                                teamStats={teamResults}
-                                playersStats={playerResults}
+                                teamResults={teamResults}
+                                playerResults={playerResults}
                             />
                         }
                     />

@@ -3,8 +3,8 @@ import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
 
 function PlayerRecords(props) {
-    const playersStats = props.playersStats;
-    const players = Object.keys(playersStats);
+    const playerResults = props.playerResults;
+    const players = Object.keys(playerResults);
 
     let minTotalGames = 1;
     let minMonGames = 1;
@@ -48,7 +48,7 @@ function PlayerRecords(props) {
 
     // This sets the minimum number of games required for the stats to be counted
     players.forEach((player) => {
-        const p = playersStats[player];
+        const p = playerResults[player];
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
@@ -95,7 +95,7 @@ function PlayerRecords(props) {
     });
 
     players.forEach((player) => {
-        const p = playersStats[player];
+        const p = playerResults[player];
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;

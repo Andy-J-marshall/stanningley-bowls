@@ -28,7 +28,8 @@ function Navigation() {
                         className="me-auto"
                         style={{ maxHeight: '700px' }}
                         navbarScroll
-                        activeKey="/home"
+                        // activeKey="/home"
+                        // TODO change active key to whatever the selected tab is
                     >
                         <Nav.Item>
                             <Nav.Link href="/home" eventKey="/home">
