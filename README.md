@@ -18,7 +18,7 @@ Run the following:
 * `npm i`
 * `npm run build`
 * `npm run deploy`
-* Navigate to the Github repo settings and re-add the custom domain `stanningleybowlsclub.co.uk`
+* Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain `stanningleybowlsclub.co.uk`
 
 <!-- TODO Add routing? -->
 
