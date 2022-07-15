@@ -20,8 +20,6 @@ Run the following:
 * `npm run deploy`
 * Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain `stanningleybowlsclub.co.uk`
 
-<!-- TODO Add routing? -->
-
 # Bowls script
 The script that collates stats from all Stanningley bowls club teams can be found in the `/pythonScript` directory.
 

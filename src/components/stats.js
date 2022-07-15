@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import {
     Navbar,
     Nav,
@@ -6,16 +7,15 @@ import {
     Dropdown,
     DropdownButton,
 } from 'react-bootstrap';
-import Records from './records';
-import TeamStats from './teamStats';
 import PlayerStats from './playerStats';
 import bowlsStats2022 from '../data/bowlsStats2022.json';
 
 const currentYear = new Date().getFullYear();
 let startYear = currentYear;
 const url = window.location.href.toLowerCase();
-if (url.includes('#stats20')) {
-    const yearFromUrl = url.split('#stats')[1];
+console.log(url);
+if (url.includes('#20')) {
+    const yearFromUrl = url.split('/stats#')[1];
     startYear = yearFromUrl;
 }
 
@@ -30,55 +30,16 @@ if (!defaultStats) {
     startYear = currentYear;
 }
 
+// TODO test the year works
 function Stats() {
-    const [showPlayerStats, setShowPlayerStats] = useState(true);
-    const [showTeamStats, setShowTeamStats] = useState(false);
-    const [showRecords, setShowRecords] = useState(false);
     const [year, setYear] = useState(startYear);
-    const [loaded, setLoaded] = useState(false);
     const [playerResults, setPlayerResults] = useState(
         defaultStats.playerResults
     );
-    const [teamResults, setTeamResults] = useState(defaultStats.teamResults);
-    const [updated, setUpdated] = useState(defaultStats.lastUpdated);
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        const url = window.location.href.toLowerCase();
-        if (loaded === false) {
-            if (url.includes('#team-stats')) {
-                displayTeamStats();
-            }
-            if (url.includes('#player-stats')) {
-                displayPlayerStats();
-            }
-            if (url.includes('#records')) {
-                displayRecords();
-            }
-            setLoaded(true);
-        }
-    });
-
-    function displayPlayerStats() {
-        setShowPlayerStats(true);
-        setShowTeamStats(false);
-        setShowRecords(false);
-    }
-
-    function displayTeamStats() {
-        setShowTeamStats(true);
-        setShowPlayerStats(false);
-        setShowRecords(false);
-    }
-
-    function displayRecords() {
-        setShowRecords(true);
-        setShowPlayerStats(false);
-        setShowTeamStats(false);
-    }
+    const [updatedDate, setUpdatedDate] = useState(defaultStats.lastUpdated);
 
     function changeStatsYear(event) {
-        let year = event.replace('#stats', '').toString();
+        let year = event.replace('#', '').toString();
         let statsForSelectedYear;
         setYear(year);
         switch (year) {
@@ -90,12 +51,11 @@ function Stats() {
                 break;
         }
         setPlayerResults(statsForSelectedYear.playerResults);
-        setTeamResults(statsForSelectedYear.teamResults);
-        setUpdated(statsForSelectedYear.lastUpdated);
+        setUpdatedDate(statsForSelectedYear.lastUpdated);
     }
 
     return (
-        <div>
+        <div id="stats" className="page-component">
             <Navbar
                 collapseOnSelect
                 id="navbar-stats"
@@ -108,34 +68,26 @@ function Stats() {
                         className="me-auto center"
                         style={{ maxHeight: '700px' }}
                         navbarScroll
-                        activeKey="/player-stats"
-                        onSelect={(selectedKey) => {
-                            if (selectedKey === '#player-stats') {
-                                displayPlayerStats();
-                            }
-                            if (selectedKey === '#team-stats') {
-                                displayTeamStats();
-                            }
-                            if (selectedKey === '#records') {
-                                displayRecords();
-                            }
-                        }}
+                        activeKey="/stats/player"
                     >
                         <Nav.Item>
                             <Nav.Link
-                                href="#player-stats"
-                                eventKey="#player-stats"
+                                href="/stats/player"
+                                eventKey="/stats/player"
                             >
                                 PLAYERS
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#team-stats" eventKey="#team-stats">
+                            <Nav.Link href="/stats/team" eventKey="/stats/team">
                                 TEAMS
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#records" eventKey="#records">
+                            <Nav.Link
+                                href="/stats/records"
+                                eventKey="/stats/records"
+                            >
                                 RECORDS
                             </Nav.Link>
                         </Nav.Item>
@@ -153,26 +105,15 @@ function Stats() {
                     margin: '0.5rem 0.5rem 0 0',
                 }}
             >
-                <Dropdown.Item href="#stats2022">2022</Dropdown.Item>
+                <Dropdown.Item href="#2022">2022</Dropdown.Item>
             </DropdownButton>
-            <div id="stat" className="page-component">
-                {showRecords && (
-                    <Records
-                        teamStats={teamResults}
-                        playersStats={playerResults}
-                    />
-                )}
-                {showTeamStats && (
-                    <TeamStats
-                        teamStats={teamResults}
-                        playersStats={playerResults}
-                    />
-                )}
-                {showPlayerStats && (
+            {!url.includes('/stats/records') &&
+                !url.includes('/player') &&
+                !url.includes('/team') && (
                     <PlayerStats playersStats={playerResults} />
                 )}
-            </div>
-            <p>Last Updated: {updated}</p>
+            <Outlet />
+            <p>Last Updated: {updatedDate}</p>
         </div>
     );
 }
