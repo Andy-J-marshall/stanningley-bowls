@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import PlayerStats from './playerStats';
 
@@ -27,25 +28,34 @@ function Stats(props) {
                         // TODO change active key to whatever the selected tab is
                     >
                         <Nav.Item>
-                            <Nav.Link
-                                href="/stats/player"
-                                eventKey="/stats/player"
-                            >
-                                PLAYERS
-                            </Nav.Link>
+                            <LinkContainer to="/stats/player">
+                                <Nav.Link
+                                    href="/stats/player"
+                                    eventKey="/stats/player"
+                                >
+                                    PLAYERS
+                                </Nav.Link>
+                            </LinkContainer>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/stats/team" eventKey="/stats/team">
-                                TEAMS
-                            </Nav.Link>
+                            <LinkContainer to="/stats/team">
+                                <Nav.Link
+                                    href="/stats/team"
+                                    eventKey="/stats/team"
+                                >
+                                    TEAMS
+                                </Nav.Link>
+                            </LinkContainer>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link
-                                href="/stats/records"
-                                eventKey="/stats/records"
-                            >
-                                RECORDS
-                            </Nav.Link>
+                            <LinkContainer to="/stats/records">
+                                <Nav.Link
+                                    href="/stats/records"
+                                    eventKey="/stats/records"
+                                >
+                                    RECORDS
+                                </Nav.Link>
+                            </LinkContainer>
                         </Nav.Item>
                     </Nav>
                 </Container>

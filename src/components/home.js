@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Carousel } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import Supporters from './supporters';
 import stanImg1 from '../images/websiteImages/stan-green.webp';
 import stanImg2 from '../images/websiteImages/stan-green2.webp';
@@ -16,14 +17,16 @@ function Home() {
                             <img src={stanImg1} alt="Membership slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
-                                    <Nav.Link
+                                    <LinkContainer
                                         style={{
                                             color: 'white',
                                         }}
-                                        href="/membership"
+                                        to="/membership"
                                     >
-                                        <h2>Membership</h2>
-                                    </Nav.Link>
+                                        <Nav.Link href="/membership">
+                                            <h2>Membership</h2>
+                                        </Nav.Link>
+                                    </LinkContainer>
                                 </Nav.Item>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -31,30 +34,33 @@ function Home() {
                             <img src={stanImg2} alt="Stats slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
-                                    <Nav.Link
+                                    <LinkContainer
                                         style={{
                                             color: 'white',
                                         }}
-                                        href="/stats"
+                                        to="/stats"
                                     >
-                                        <h2>Team & Player Stats</h2>
-                                    </Nav.Link>
+                                        <Nav.Link href="/stats">
+                                            <h2>Team & Player Stats</h2>
+                                        </Nav.Link>
+                                    </LinkContainer>
                                 </Nav.Item>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img src={stanImg3} alt="Fixtures slide" />
-
                             <Carousel.Caption>
                                 <Nav.Item>
-                                    <Nav.Link
+                                    <LinkContainer
                                         style={{
                                             color: 'white',
                                         }}
-                                        href="/fixtures-and-results"
+                                        to="/fixtures-and-results"
                                     >
-                                        <h2>Fixtures & Results</h2>
-                                    </Nav.Link>
+                                        <Nav.Link href="/fixtures-and-results">
+                                            <h2>Fixtures & Results</h2>
+                                        </Nav.Link>
+                                    </LinkContainer>
                                 </Nav.Item>
                             </Carousel.Caption>
                         </Carousel.Item>
