@@ -20,7 +20,7 @@ export function arrayToList(stringArray) {
     let returnList;
     if (stringArray) {
         returnList = stringArray.map((r, idx) => (
-            <li className='tabs' key={idx}>{capitalizeText([r])}</li>
+            <li className='center' key={idx}>{capitalizeText([r.trim()])}</li>
         ));
     }
     return returnList;

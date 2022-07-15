@@ -32,7 +32,7 @@ function StatsTableDisplay(props) {
         : props.teamsDrawn;
 
     return (
-        <div className="center table" style={{ width: '97%' }}>
+        <div className="center table" style={{ width: '98%' }}>
             <Table striped bordered hover>
                 <thead>
                     <tr>
