@@ -45,6 +45,7 @@ function App() {
         <div id="app">
             <Header />
             <Navigation />
+            {/* TODO the year selection isn't working */}
             {url.includes('/stats') && (
                 <YearSelectDropdown
                     startYear={startYear}
@@ -55,6 +56,7 @@ function App() {
                     allYearStats={allYearStats}
                 />
             )}
+            {/* TODO needs to support history e.g. when refreshing */}
             <Routes>
                 <Route path="" element={<Home />} />
                 <Route path="*" element={<Home />} />
@@ -64,6 +66,7 @@ function App() {
                     path="/fixtures-and-results"
                     element={<FixturesResults teamResults={teamResults} />}
                 />
+                {/* TODO the stats sub pages aren't showing */}
                 <Route
                     path="/stats"
                     element={

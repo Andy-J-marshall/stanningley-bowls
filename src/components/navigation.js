@@ -14,15 +14,18 @@ function Navigation() {
             expand="md"
         >
             <Container fluid>
-                <Navbar.Brand href="/home">
-                    <img
-                        alt="logo"
-                        src={smallLogo}
-                        width="52px"
-                        height="52px"
-                        className="d-inline-block align-top"
-                    />
-                </Navbar.Brand>
+                {/* TODO this is causing problems */}
+                <LinkContainer to="/home">
+                    <Navbar.Brand href="/home">
+                        <img
+                            alt="logo"
+                            src={smallLogo}
+                            width="52px"
+                            height="52px"
+                            className="d-inline-block align-top"
+                        />
+                    </Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
