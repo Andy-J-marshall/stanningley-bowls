@@ -51,9 +51,14 @@ function Players(props) {
     const average = (totalAgg - totalAggAgainst) / gamesPlayed;
     const homeAverage = (totalHomeAgg - totalHomeAggAgainst) / homeGamesPlayed;
     const awayAverage = (totalAwayAgg - totalAwayAggAgainst) / awayGamesPlayed;
-    const averageScore = totalScore / (gamesPlayed - cupWins - cupLosses);
+    const cupAgg = totalAgg - totalAwayAgg - totalHomeAgg;
+    const cupAggAgainst =
+        totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
+    const cupGamesPlayed = cupWins + cupLosses;
+    const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
+    const averageScore = totalScore / (gamesPlayed - cupGamesPlayed);
     const averageScoreAgainst =
-        totalScoreAgainst / (gamesPlayed - cupWins - cupLosses);
+        totalScoreAgainst / (gamesPlayed - cupGamesPlayed);
     const homeAverageScore = totalHomeScore / homeGamesPlayed;
     const homeAverageScoreAgainst = totalHomeScoreAgainst / homeGamesPlayed;
     const awayAverageScore = totalAwayScore / awayGamesPlayed;
@@ -286,6 +291,9 @@ function Players(props) {
                                                 Away = {awayAverage.toFixed(2)}
                                             </p>
                                         )}
+                                        {cupAverage > -22 && (
+                                            <p>Cup = {cupAverage.toFixed(2)}</p>
+                                        )}
                                         {pairsGames > 0 && (
                                             <div>
                                                 {singlesAvg > -22 && (
@@ -343,18 +351,12 @@ function Players(props) {
                                         <h3>TOTAL</h3>
                                         <p>
                                             Points scored = {totalScore} /{' '}
-                                            {(gamesPlayed -
-                                                cupLosses -
-                                                cupWins) *
-                                                5}
+                                            {(gamesPlayed - cupGamesPlayed) * 5}
                                         </p>
                                         <p>
                                             Points conceded ={' '}
                                             {totalScoreAgainst} /{' '}
-                                            {(gamesPlayed -
-                                                cupLosses -
-                                                cupWins) *
-                                                5}
+                                            {(gamesPlayed - cupGamesPlayed) * 5}
                                         </p>
                                         <p>
                                             Average points ={' '}
@@ -461,6 +463,20 @@ function Players(props) {
                                     {totalAwayAggAgainst} /{' '}
                                     {awayGamesPlayed * 21}
                                 </p>
+                                {cupGamesPlayed > 0 && (
+                                    <div>
+                                        <h3>CUP</h3>
+                                        <p>
+                                            Cup aggregate scored = {cupAgg} /{' '}
+                                            {cupGamesPlayed * 21}
+                                        </p>
+                                        <p>
+                                            Cup aggregate conceded ={' '}
+                                            {cupAggAgainst} /{' '}
+                                            {cupGamesPlayed * 21}
+                                        </p>
+                                    </div>
+                                )}
                                 {pairsGames > 0 && (
                                     <div>
                                         <h3>SINGLES</h3>
