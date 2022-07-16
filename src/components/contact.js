@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import facebook from '../images/socials/facebook.png';
 import instagram from '../images/socials/instagram.png';
 import email from '../images/socials/email.png';
@@ -10,6 +10,10 @@ const { instagramUrl, facebookUrl, emailUrl, googleMapsUrl } =
 const emailAddress = emailUrl.split('mailto:')[1];
 
 function Contact() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="contact-page" className="page-component">
             <h1>CONTACT US</h1>

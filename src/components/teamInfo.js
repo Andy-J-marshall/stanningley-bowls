@@ -44,7 +44,11 @@ function TeamInfo() {
                     {teams.map((team, idx) => (
                         <Col key={idx}>
                             <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img alt='team-photo' variant="top" src={team.img} />
+                                <Card.Img
+                                    alt="team-photo"
+                                    variant="top"
+                                    src={team.img}
+                                />
                                 <Card.Body>
                                     <Card.Title>
                                         {team.name.toUpperCase()}
@@ -73,7 +77,11 @@ function TeamInfo() {
                     {socialDays.map((day, idx) => (
                         <Col key={idx}>
                             <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img alt='social-photo' variant="top" src={day.img} />
+                                <Card.Img
+                                    alt="social-photo"
+                                    variant="top"
+                                    src={day.img}
+                                />
                                 <Card.Body>
                                     <Card.Title>
                                         {day.name.toUpperCase()}

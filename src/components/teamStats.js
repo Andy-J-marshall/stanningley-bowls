@@ -4,24 +4,24 @@ import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
 
 function TeamStats(props) {
-    const teamStats = props.teamStats;
-    const playerStats = props.playersStats;
+    const teamResults = props.teamResults;
+    const playerResults = props.playerResults;
 
-    const mondayStats = teamStats.find(
+    const mondayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'monday'
     );
-    const tuesdayStats = teamStats.find(
+    const tuesdayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'tuesday'
     );
-    const thursdayStats = teamStats.find(
+    const thursdayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'thursday'
     );
-    const saturdayStats = teamStats.find(
+    const saturdayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'saturday'
     );
 
     function allComponent() {
-        return <CombinedTeamStats stats={teamStats} />;
+        return <CombinedTeamStats stats={teamResults} />;
     }
 
     function mondayComponent() {
@@ -29,7 +29,7 @@ function TeamStats(props) {
             <IndividualTeamStats
                 day="Monday"
                 stats={mondayStats}
-                playerStats={playerStats}
+                playerStats={playerResults}
             />
         );
     }
@@ -39,7 +39,7 @@ function TeamStats(props) {
             <IndividualTeamStats
                 day="Tuesday"
                 stats={tuesdayStats}
-                playerStats={playerStats}
+                playerStats={playerResults}
             />
         );
     }
@@ -49,7 +49,7 @@ function TeamStats(props) {
             <IndividualTeamStats
                 day="Thursday"
                 stats={thursdayStats}
-                playerStats={playerStats}
+                playerStats={playerResults}
             />
         );
     }
@@ -59,7 +59,7 @@ function TeamStats(props) {
             <IndividualTeamStats
                 day="Saturday"
                 stats={saturdayStats}
-                playerStats={playerStats}
+                playerStats={playerResults}
             />
         );
     }
