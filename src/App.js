@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Stats from './components/stats';
@@ -11,72 +11,27 @@ import Navigation from './components/navigation';
 import Records from './components/records';
 import TeamStats from './components/teamStats';
 import PlayerStats from './components/playerStats';
-import YearSelectDropdown from './components/yearSelectDropdown';
-import bowlsStats2022 from './data/bowlsStats2022.json';
+import bowlsStats from './data/bowlsStats2022.json';
 import './app.css';
 
 function App() {
-    const currentYear = new Date().getFullYear();
-    let startYear = currentYear;
-    const url = window.location.href.toLowerCase();
-    if (url.includes('#20')) {
-        const yearFromUrl = url.split('/stats#')[1];
-        startYear = yearFromUrl;
-    }
-
-    // Stats for future years will go in here
-    const allYearStats = {
-        year2022: bowlsStats2022,
-    };
-
-    let defaultStats = allYearStats[`year${startYear}`];
-    if (!defaultStats) {
-        defaultStats = allYearStats[`year${currentYear}`];
-        startYear = currentYear;
-    }
-
-    const [playerResults, setPlayerResults] = useState(
-        defaultStats.playerResults
-    );
-    const [teamResults, setTeamResults] = useState(defaultStats.teamResults);
-    const [updateDate, setUpdateDate] = useState(defaultStats.lastUpdated);
+    // Stats for future years will need to be updated here
+    const stats = bowlsStats;
+    const { playerResults, teamResults } = stats;
 
     return (
         <div id="app">
             <Header />
             <Navigation />
-            {/* TODO the year selection isn't working */}
-            {url.includes('/stats') && (
-                <YearSelectDropdown
-                    startYear={startYear}
-                    defaultStats={defaultStats}
-                    setUpdateDate={setUpdateDate}
-                    setPlayerResults={setPlayerResults}
-                    setTeamResults={setTeamResults}
-                    allYearStats={allYearStats}
-                />
-            )}
-            {/* TODO needs to support history e.g. when refreshing */}
-            {/* https://github.com/rafgraph/spa-github-pages */}
             <Routes>
                 <Route path="" element={<Home />} />
-                <Route path="*" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/membership" element={<Membership />} />
                 <Route
                     path="/fixtures-and-results"
                     element={<FixturesResults teamResults={teamResults} />}
                 />
-                {/* TODO the stats sub pages aren't showing - maybe just add as a dropdown instead? */}
-                <Route
-                    path="/stats"
-                    element={
-                        <Stats
-                            updateDate={updateDate}
-                            playerResults={playerResults}
-                        />
-                    }
-                >
+                <Route path="/stats" element={<Stats stats={stats} />}>
                     <Route
                         path="/stats/player"
                         element={<PlayerStats playerResults={playerResults} />}

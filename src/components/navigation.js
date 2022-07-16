@@ -14,7 +14,6 @@ function Navigation() {
             expand="md"
         >
             <Container fluid>
-                {/* TODO this is causing problems */}
                 <LinkContainer to="/home">
                     <Navbar.Brand href="/home">
                         <img
@@ -32,8 +31,6 @@ function Navigation() {
                         className="me-auto"
                         style={{ maxHeight: '700px' }}
                         navbarScroll
-                        // activeKey="/home"
-                        // TODO change active key to whatever the selected tab is
                     >
                         <Nav.Item>
                             <LinkContainer to="/home">
@@ -63,8 +60,8 @@ function Navigation() {
                             </LinkContainer>
                         </Nav.Item>
                         <Nav.Item>
-                            <LinkContainer to="/stats">
-                                <Nav.Link href="/stats" eventKey="/stats">
+                            <LinkContainer to="/stats/player">
+                                <Nav.Link href="/stats/player" eventKey="/stats/player">
                                     STATS
                                 </Nav.Link>
                             </LinkContainer>

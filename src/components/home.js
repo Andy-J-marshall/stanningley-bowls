@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Nav, Carousel } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Supporters from './supporters';
@@ -6,12 +6,15 @@ import stanImg1 from '../images/websiteImages/stan-green.webp';
 import stanImg2 from '../images/websiteImages/stan-green2.webp';
 import stanImg3 from '../images/websiteImages/stan-green3.webp';
 
-// TODO carousel arrows disappeared?
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div className="center" id="home-page">
             <div className="center page-component">
-                <Nav activeKey="/home" className="tabs">
+                <Nav defaultActiveKey="/home" className="tabs">
                     <Carousel fade>
                         <Carousel.Item>
                             <img src={stanImg1} alt="Membership slide" />
@@ -38,9 +41,9 @@ function Home() {
                                         style={{
                                             color: 'white',
                                         }}
-                                        to="/stats"
+                                        to="/stats/player"
                                     >
-                                        <Nav.Link href="/stats">
+                                        <Nav.Link href="/stats/player">
                                             <h2>Team & Player Stats</h2>
                                         </Nav.Link>
                                     </LinkContainer>

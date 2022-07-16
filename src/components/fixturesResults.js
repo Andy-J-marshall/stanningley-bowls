@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Results from './results';
 import upcoming_fixtures from '../images/fixtures/upcoming_fixtures.png';
 import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png';
@@ -6,6 +6,10 @@ import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept
 
 function FixturesResults(props) {
     const teamResults = props.teamResults;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     return (
         <div id="fixture">

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TeamInfo from './teamInfo';
 import config from '../config';
 
 const { socialPrice, bowlingPrice } = config.membership;
 
 function Membership() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="members">
             <h1>MEMBERSHIP</h1>

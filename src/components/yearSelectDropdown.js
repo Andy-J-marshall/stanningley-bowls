@@ -36,6 +36,7 @@ function YearSelectDropdown(props) {
             style={{
                 display: 'flex',
                 justifyContent: 'right',
+                marginRight: '0.2rem',
             }}
         >
             <Dropdown.Item href="#2022">2022</Dropdown.Item>

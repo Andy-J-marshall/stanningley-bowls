@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import PlayerStats from './playerStats';
-
-const url = window.location.href.toLowerCase();
+import YearSelectDropdown from './yearSelectDropdown';
 
 function Stats(props) {
-    const updateDate = props.updateDate;
-    const playerResults = props.playerResults;
+    const stats = props.stats;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     return (
         <div id="stats">
@@ -24,8 +25,6 @@ function Stats(props) {
                         className="me-auto center"
                         style={{ maxHeight: '700px' }}
                         navbarScroll
-                        // activeKey="/stats/player"
-                        // TODO change active key to whatever the selected tab is
                     >
                         <Nav.Item>
                             <LinkContainer to="/stats/player">
@@ -60,13 +59,18 @@ function Stats(props) {
                     </Nav>
                 </Container>
             </Navbar>
-            {!url.includes('/stats/records') &&
-                !url.includes('/player') &&
-                !url.includes('/team') && (
-                    <PlayerStats playerResults={playerResults} />
-                )}
+            {/* TODO implement year drop down */}
+            {/* TODO display year in drop down from the URL? */}
+            {/* <YearSelectDropdown
+                startYear={startYear}
+                defaultStats={stats}
+                setUpdateDate={setUpdateDate}
+                setPlayerResults={setPlayerResults}
+                setTeamResults={setTeamResults}
+                allYearStats={allYearStats}
+            /> */}
             <Outlet />
-            <p>Last Updated: {updateDate}</p>
+            <p>Last Updated: {stats.lastUpdated}</p>
         </div>
     );
 }
