@@ -57,6 +57,7 @@ function App() {
                 />
             )}
             {/* TODO needs to support history e.g. when refreshing */}
+            {/* https://github.com/rafgraph/spa-github-pages */}
             <Routes>
                 <Route path="" element={<Home />} />
                 <Route path="*" element={<Home />} />
@@ -66,7 +67,7 @@ function App() {
                     path="/fixtures-and-results"
                     element={<FixturesResults teamResults={teamResults} />}
                 />
-                {/* TODO the stats sub pages aren't showing */}
+                {/* TODO the stats sub pages aren't showing - maybe just add as a dropdown instead? */}
                 <Route
                     path="/stats"
                     element={
