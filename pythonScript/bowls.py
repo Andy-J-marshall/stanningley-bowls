@@ -6,6 +6,7 @@ from datetime import date
 import stanningleyTeamDetails
 
 # TODO consider adding fixtures into script?
+# TODO add date of results in?
 
 year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames

@@ -8,7 +8,7 @@ a {
 }
 
 h1 {
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 h4 {
@@ -72,6 +72,10 @@ body {
     height: 33%;
     width: 33%;
   }
+}
+
+.navigation {
+  padding: 0 1rem 0 0;
 }
 
 .page-component {

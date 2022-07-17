@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 function Navigation() {
@@ -14,7 +14,9 @@ function Navigation() {
         >
             <Container fluid>
                 <LinkContainer to="/home">
-                    <Navbar.Brand href="/home">SPBC</Navbar.Brand>
+                    <Navbar.Brand className="navigation" href="/home">
+                        S.P.B.C.
+                    </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -23,14 +25,7 @@ function Navigation() {
                         style={{ maxHeight: '700px' }}
                         navbarScroll
                     >
-                        <Nav.Item>
-                            <LinkContainer to="/home">
-                                <Nav.Link href="/home" eventKey="/home">
-                                    HOME
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
-                        <Nav.Item>
+                        <Nav.Item className="navigation">
                             <LinkContainer to="/membership">
                                 <Nav.Link
                                     href="/membership"
@@ -40,7 +35,7 @@ function Navigation() {
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav.Item>
-                        <Nav.Item>
+                        <Nav.Item className="navigation">
                             <LinkContainer to="/fixtures-and-results">
                                 <Nav.Link
                                     href="/fixtures-and-results"
@@ -50,17 +45,43 @@ function Navigation() {
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav.Item>
-                        <Nav.Item>
-                            <LinkContainer to="/stats/player">
-                                <Nav.Link
-                                    href="/stats/player"
-                                    eventKey="/stats/player"
-                                >
-                                    STATS
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
-                        <Nav.Item>
+                        <NavDropdown
+                            title="STATS"
+                            id="basic-nav-dropdown"
+                            className="navigation"
+                        >
+                            <Nav.Item>
+                                <LinkContainer to="/stats/player">
+                                    <Nav.Link
+                                        href="/stats/player"
+                                        eventKey="/stats/player"
+                                    >
+                                        PLAYER STATS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <LinkContainer to="/stats/team">
+                                    <Nav.Link
+                                        href="/stats/team"
+                                        eventKey="/stats/team"
+                                    >
+                                        TEAM STATS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <LinkContainer to="/stats/records">
+                                    <Nav.Link
+                                        href="/stats/records"
+                                        eventKey="/stats/records"
+                                    >
+                                        RECORDS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                        </NavDropdown>
+                        <Nav.Item className="navigation">
                             <LinkContainer to="/contact">
                                 <Nav.Link href="/contact" eventKey="/contact">
                                     CONTACT
