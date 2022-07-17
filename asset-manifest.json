@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a7e7ff84.chunk.css",
-    "main.js": "/static/js/main.aabe1d95.chunk.js",
-    "main.js.map": "/static/js/main.aabe1d95.chunk.js.map",
+    "main.js": "/static/js/main.b9cc82d5.chunk.js",
+    "main.js.map": "/static/js/main.b9cc82d5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -15,7 +15,6 @@
     "static/media/arnold_clark_grant.8f29679f.png": "/static/media/arnold_clark_grant.8f29679f.png",
     "static/media/asda_foundation.45cd6d42.png": "/static/media/asda_foundation.45cd6d42.png",
     "static/media/bramley_elderly_action.3376acc4.png": "/static/media/bramley_elderly_action.3376acc4.png",
-    "static/media/brand-logo-tiny.923a3133.png": "/static/media/brand-logo-tiny.923a3133.png",
     "static/media/brand-logo.9a167be7.png": "/static/media/brand-logo.9a167be7.png",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
@@ -38,6 +37,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.1cbc4feb.chunk.js",
     "static/css/main.a7e7ff84.chunk.css",
-    "static/js/main.aabe1d95.chunk.js"
+    "static/js/main.b9cc82d5.chunk.js"
   ]
 }
