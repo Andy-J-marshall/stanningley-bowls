@@ -28,7 +28,7 @@ function Stats(props) {
                             navbarScroll
                             className="me-auto"
                         >
-                            <Nav.Item style={{ padding: '0 1rem 0 4rem' }}>
+                            <Nav.Item style={{ padding: '0 0 0 1rem' }}>
                                 <LinkContainer to="/stats/player">
                                     <Nav.Link
                                         href="/stats/player"
@@ -38,7 +38,7 @@ function Stats(props) {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item style={{ paddingRight: '1rem' }}>
+                            <Nav.Item style={{ padding: '0 0 0 1rem' }}>
                                 <LinkContainer to="/stats/team">
                                     <Nav.Link
                                         href="/stats/team"
@@ -48,7 +48,7 @@ function Stats(props) {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item>
+                            <Nav.Item style={{ padding: '0 0 0 1rem' }}>
                                 <LinkContainer to="/stats/records">
                                     <Nav.Link
                                         href="/stats/records"
