@@ -4,8 +4,9 @@ import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
 
 function TeamStats(props) {
-    const teamResults = props.teamResults;
-    const playerResults = props.playerResults;
+    const stats = props.stats;
+
+    const { playerResults, teamResults } = stats;
 
     const mondayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'monday'

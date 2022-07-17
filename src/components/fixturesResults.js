@@ -5,7 +5,9 @@ import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png
 import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept.png';
 
 function FixturesResults(props) {
-    const teamResults = props.teamResults;
+    const stats = props.stats;
+
+    const { teamResults } = stats;
 
     useEffect(() => {
         window.scrollTo(0, 0);

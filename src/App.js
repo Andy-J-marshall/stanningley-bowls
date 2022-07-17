@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Stats from './components/stats';
@@ -11,13 +11,31 @@ import Navigation from './components/navigation';
 import Records from './components/records';
 import TeamStats from './components/teamStats';
 import PlayerStats from './components/playerStats';
-import bowlsStats from './data/bowlsStats2022.json';
+import bowlsStats22 from './data/bowlsStats2022.json';
 import './app.css';
 
+
 function App() {
-    // Stats for future years will need to be updated here
-    const stats = bowlsStats;
-    const { playerResults, teamResults } = stats;
+    const [stats, setStats] = useState(bowlsStats22);
+
+    function statsCallback(year) {
+        const currentYear = new Date().getFullYear();
+        let statsForSelectedYear;
+        // Stats for future years will need to be updated here
+        const allYearStats = {
+            year2022: bowlsStats22,
+        };
+
+        switch (year.toString()) {
+            case '2022':
+                statsForSelectedYear = allYearStats['year2022'];
+                break;
+            default:
+                statsForSelectedYear = allYearStats[`year${currentYear}`];
+                break;
+        }
+        setStats(statsForSelectedYear);
+    }
 
     return (
         <div id="app">
@@ -29,30 +47,25 @@ function App() {
                 <Route path="/membership" element={<Membership />} />
                 <Route
                     path="/fixtures-and-results"
-                    element={<FixturesResults teamResults={teamResults} />}
+                    element={<FixturesResults stats={stats} />}
                 />
-                <Route path="/stats" element={<Stats stats={stats} />}>
+                <Route
+                    path="/stats"
+                    element={
+                        <Stats statsCallback={statsCallback} stats={stats} />
+                    }
+                >
                     <Route
                         path="/stats/player"
-                        element={<PlayerStats playerResults={playerResults} />}
+                        element={<PlayerStats stats={stats} />}
                     />
                     <Route
                         path="/stats/team"
-                        element={
-                            <TeamStats
-                                teamResults={teamResults}
-                                playerResults={playerResults}
-                            />
-                        }
+                        element={<TeamStats stats={stats} />}
                     />
                     <Route
                         path="/stats/records"
-                        element={
-                            <Records
-                                teamResults={teamResults}
-                                playerResults={playerResults}
-                            />
-                        }
+                        element={<Records stats={stats} />}
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />

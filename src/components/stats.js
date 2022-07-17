@@ -6,6 +6,7 @@ import YearSelectDropdown from './yearSelectDropdown';
 
 function Stats(props) {
     const stats = props.stats;
+    const statsCallback = props.statsCallback;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -62,16 +63,7 @@ function Stats(props) {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            {/* TODO implement year drop down */}
-            {/* TODO display year in drop down from the URL? */}
-            {/* <YearSelectDropdown
-                startYear={startYear}
-                defaultStats={stats}
-                setUpdateDate={setUpdateDate}
-                setPlayerResults={setPlayerResults}
-                setTeamResults={setTeamResults}
-                allYearStats={allYearStats}
-            /> */}
+            <YearSelectDropdown statsCallback={statsCallback} />
             <Outlet />
             <p>Last Updated: {stats.lastUpdated}</p>
         </div>

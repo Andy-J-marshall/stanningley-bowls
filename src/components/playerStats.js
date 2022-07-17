@@ -6,7 +6,9 @@ import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStats(props) {
-    const playerResults = props.playerResults;
+    const stats = props.stats;
+
+    const { playerResults } = stats;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);

@@ -5,6 +5,7 @@ import os
 from datetime import date
 import stanningleyTeamDetails
 
+# TODO consider adding fixtures into script?
 
 year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames

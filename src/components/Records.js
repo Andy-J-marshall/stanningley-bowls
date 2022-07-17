@@ -3,8 +3,9 @@ import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
 
 function Records(props) {
-    const teamResults = props.teamResults;
-    const playerResults = props.playerResults;
+    const stats = props.stats;
+
+    const { playerResults, teamResults } = stats;
 
     return (
         <div id="record" className="page-component">
