@@ -39,7 +39,7 @@ function TeamInfo() {
     return (
         <div id="team-and-socials" className="page-component">
             <div id="team-info">
-                <h1>BOWLING</h1>
+                <h1>TEAMS</h1>
                 <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                     {teams.map((team, idx) => (
                         <Col key={idx}>

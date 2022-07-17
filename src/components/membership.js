@@ -13,28 +13,34 @@ function Membership() {
         <div id="members">
             <h1>MEMBERSHIP</h1>
             <div className="center" style={{ width: '95%' }}>
-                <p>New members welcome.</p>
                 <p>
-                    Please visit the Contact page to get in touch, or just turn
-                    up to one of the days listed below.
+                    Stanningley Park Bowling club welcomes new members of any
+                    age. Fees apply to adults over 16, children are welcome but
+                    must be accompanied by an adult member. Membership is valid
+                    per season and runs from 1st April until 30th September.
+                    Please <a href="/#/contact">contact</a> us or speak to us at
+                    one of the open sessions to apply.
+                </p>
+                <h3>Full Membership</h3>
+                <p>
+                    The current fee is £{bowlingPrice} which includes club
+                    membership and the Leeds parks green fee*. You are permitted
+                    access to the green any time it is available via a key code.
+                    Full members who are registered with BCGBA are also eligible
+                    to play in teams. Our teams currently play in the Leeds
+                    Parks leagues.
                 </p>
                 <p>
-                    The green is open between April and September for all
-                    members. Prices:
+                    *If you have already paid your green fee at another Leeds
+                    Parks bowling club then you only need to pay £5, please
+                    bring proof you have paid this at another club.
                 </p>
-                <div className="tabs">
-                    <ul>
-                        <li>Social membership: £{socialPrice}</li>
-                        <li>Bowling membership: £{bowlingPrice}</li>
-                    </ul>
-                </div>
+                <h3>Social Membership</h3>
                 <p>
-                    All members are given the keycode to the gate and can play
-                    whenever the green is free and equipment can be provided.
-                </p>
-                <p>
-                    Teams currently play in the Leeds Park leagues on a Monday
-                    evening and on Tuesday, Thursday and Saturday afternoons.
+                    If you are a beginner or infrequent visitor wanting to join
+                    our social bowling sessions then you may choose a social
+                    membership which is just £{socialPrice} for the season. This
+                    includes free bowls hire if required.
                 </p>
             </div>
             <TeamInfo />

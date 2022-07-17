@@ -14,7 +14,6 @@ import PlayerStats from './components/playerStats';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import './app.css';
 
-
 function App() {
     const [stats, setStats] = useState(bowlsStats22);
 
