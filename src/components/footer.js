@@ -13,17 +13,17 @@ function Footer() {
     return (
         <div id="footer">
             <div id="socials">
-                <a href={facebookUrl}>
+                <a target="_blank" href={facebookUrl}>
                     <img className="logos" src={facebook} alt="Facebook link" />
                 </a>
-                <a href={instagramUrl}>
+                <a target="_blank" href={instagramUrl}>
                     <img
                         className="logos"
                         src={instagram}
                         alt="Instagram link"
                     />
                 </a>
-                <a href={googleMapsUrl}>
+                <a target="_blank" href={googleMapsUrl}>
                     <img className="logos" src={google} alt="Maps link" />
                 </a>
                 <a href={emailUrl}>

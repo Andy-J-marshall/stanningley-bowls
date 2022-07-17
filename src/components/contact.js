@@ -4,7 +4,7 @@ import instagram from '../images/socials/instagram.png';
 import email from '../images/socials/email.png';
 import config from '../config';
 
-const { instagramUrl, facebookUrl, emailUrl, googleMapsUrl } =
+const { instagramUrl, facebookUrl, emailUrl, googleMapsIframeUrl } =
     config.socialLinks;
 
 const emailAddress = emailUrl.split('mailto:')[1];
@@ -20,15 +20,15 @@ function Contact() {
             <img className="logos" src={email} alt="Email icon" />
             <a href={emailUrl}>{emailAddress}</a>
             <br />
-            <a href={instagramUrl}>
+            <a target="_blank" href={instagramUrl}>
                 <img className="logos" src={instagram} alt="Instagram link" />
             </a>
-            <a href={facebookUrl}>
+            <a target="_blank" href={facebookUrl}>
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
             <h1>Find us on Google Maps</h1>
             <iframe
-                src={googleMapsUrl}
+                src={googleMapsIframeUrl}
                 width="90%"
                 height="450"
                 allowFullScreen=""
