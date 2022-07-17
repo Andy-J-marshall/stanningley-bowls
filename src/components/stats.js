@@ -14,49 +14,52 @@ function Stats(props) {
     return (
         <div id="stats">
             <Navbar
-                collapseOnSelect
                 id="navbar-stats"
+                collapseOnSelect
+                expand="sm"
                 bg="light"
                 variant="light"
             >
                 <Container fluid>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Nav
-                        className="me-auto center"
-                        style={{ maxHeight: '700px' }}
-                        navbarScroll
-                    >
-                        <Nav.Item>
-                            <LinkContainer to="/stats/player">
-                                <Nav.Link
-                                    href="/stats/player"
-                                    eventKey="/stats/player"
-                                >
-                                    PLAYERS
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <LinkContainer to="/stats/team">
-                                <Nav.Link
-                                    href="/stats/team"
-                                    eventKey="/stats/team"
-                                >
-                                    TEAMS
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <LinkContainer to="/stats/records">
-                                <Nav.Link
-                                    href="/stats/records"
-                                    eventKey="/stats/records"
-                                >
-                                    RECORDS
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
-                    </Nav>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav
+                            style={{ maxHeight: '700px' }}
+                            navbarScroll
+                            className="me-auto"
+                        >
+                            <Nav.Item style={{ padding: '0 1rem 0 4rem' }}>
+                                <LinkContainer to="/stats/player">
+                                    <Nav.Link
+                                        href="/stats/player"
+                                        eventKey="/stats/player"
+                                    >
+                                        PLAYER STATS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item style={{ paddingRight: '1rem' }}>
+                                <LinkContainer to="/stats/team">
+                                    <Nav.Link
+                                        href="/stats/team"
+                                        eventKey="/stats/team"
+                                    >
+                                        TEAM STATS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <LinkContainer to="/stats/records">
+                                    <Nav.Link
+                                        href="/stats/records"
+                                        eventKey="/stats/records"
+                                    >
+                                        RECORDS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
             {/* TODO implement year drop down */}

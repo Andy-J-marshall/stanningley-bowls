@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import smallLogo from '../images/logos/brand-logo-tiny.png';
 
 function Navigation() {
     return (
@@ -15,15 +14,7 @@ function Navigation() {
         >
             <Container fluid>
                 <LinkContainer to="/home">
-                    <Navbar.Brand href="/home">
-                        <img
-                            alt="logo"
-                            src={smallLogo}
-                            width="52px"
-                            height="52px"
-                            className="d-inline-block align-top"
-                        />
-                    </Navbar.Brand>
+                    <Navbar.Brand href="/home">SPBC</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -61,7 +52,10 @@ function Navigation() {
                         </Nav.Item>
                         <Nav.Item>
                             <LinkContainer to="/stats/player">
-                                <Nav.Link href="/stats/player" eventKey="/stats/player">
+                                <Nav.Link
+                                    href="/stats/player"
+                                    eventKey="/stats/player"
+                                >
                                     STATS
                                 </Nav.Link>
                             </LinkContainer>
