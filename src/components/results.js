@@ -62,7 +62,13 @@ function Results(props) {
                                         <tr>
                                             {homeTeam.toLowerCase() ===
                                             'stanningley' ? (
-                                                <td style={{ width: '40%' }}>
+                                                <td
+                                                    style={{
+                                                        width: '40%',
+                                                        fontFamily:
+                                                            'Alegreya SC',
+                                                    }}
+                                                >
                                                     <b>{homeTeam}</b>
                                                 </td>
                                             ) : (
@@ -81,7 +87,13 @@ function Results(props) {
                                             <td>{result.away.awayScore}</td>
                                             {awayTeam.toLowerCase() ===
                                             'stanningley' ? (
-                                                <td style={{ width: '40%' }}>
+                                                <td
+                                                    style={{
+                                                        width: '40%',
+                                                        fontFamily:
+                                                            'Alegreya SC',
+                                                    }}
+                                                >
                                                     <b>{awayTeam}</b>
                                                 </td>
                                             ) : (

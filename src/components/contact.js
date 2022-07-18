@@ -17,14 +17,16 @@ function Contact() {
     return (
         <div id="contact-page" className="page-component">
             <h1>CONTACT US</h1>
-            <p>
-                Get in contact using the email address below or via social media
+            <p style={{ margin: 0 }}>
+                Get in contact using the email address below:
             </p>
             <img className="logos" src={email} alt="Email icon" />
             <a style={{ textDecoration: 'none' }} href={emailUrl}>
                 {emailAddress}
             </a>
             <br />
+            <br />
+            <p style={{ margin: 0 }}>Follow us on social media:</p>
             <a
                 style={{ textDecoration: 'none' }}
                 target="_blank"

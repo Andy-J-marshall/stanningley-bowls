@@ -2,6 +2,7 @@ p {
   padding: 0.1rem;
 }
 
+th,
 h1,
 h2,
 h3,
@@ -85,7 +86,7 @@ body {
 .page-component {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 99%;
+  width: 95%;
 }
 
 #footer {
