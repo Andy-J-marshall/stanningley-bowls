@@ -30,7 +30,7 @@ function Navigation() {
                             id="basic-nav-dropdown"
                             className="navigation"
                         >
-                            <Nav.Item className="navigation">
+                            <Nav.Item className="tabs navigation">
                                 <LinkContainer to="/membership">
                                     <Nav.Link
                                         href="/membership"
@@ -40,13 +40,13 @@ function Navigation() {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item className="navigation">
+                            <Nav.Item className="tabs navigation">
                                 <LinkContainer to="/team-and-social">
                                     <Nav.Link
                                         href="/team-and-social"
                                         eventKey="/team-and-social"
                                     >
-                                        TEAMS & SOCIALS
+                                        TEAM & SOCIAL BOWLING
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
@@ -56,7 +56,7 @@ function Navigation() {
                             id="basic-nav-dropdown"
                             className="navigation"
                         >
-                            <Nav.Item className="navigation">
+                            <Nav.Item className="tabs navigation">
                                 <LinkContainer to="/fixtures">
                                     <Nav.Link
                                         href="/fixtures"
@@ -66,7 +66,7 @@ function Navigation() {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item className="navigation">
+                            <Nav.Item className="tabs navigation">
                                 <LinkContainer to="/results">
                                     <Nav.Link
                                         href="/results"
@@ -82,7 +82,7 @@ function Navigation() {
                             id="basic-nav-dropdown"
                             className="navigation"
                         >
-                            <Nav.Item>
+                            <Nav.Item className="tabs">
                                 <LinkContainer to="/stats/player">
                                     <Nav.Link
                                         href="/stats/player"
@@ -92,7 +92,7 @@ function Navigation() {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item>
+                            <Nav.Item className="tabs">
                                 <LinkContainer to="/stats/team">
                                     <Nav.Link
                                         href="/stats/team"
@@ -102,7 +102,7 @@ function Navigation() {
                                     </Nav.Link>
                                 </LinkContainer>
                             </Nav.Item>
-                            <Nav.Item>
+                            <Nav.Item className="tabs">
                                 <LinkContainer to="/stats/records">
                                     <Nav.Link
                                         href="/stats/records"
