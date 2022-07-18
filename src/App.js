@@ -27,14 +27,14 @@ function App() {
         });
     }, []);
 
+    // Stats for future years will need to be updated here
+    const allYearStats = {
+        year2022: bowlsStats22,
+    };
+
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
-        // Stats for future years will need to be updated here
-        const allYearStats = {
-            year2022: bowlsStats22,
-        };
-
         switch (year.toString()) {
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
@@ -59,7 +59,11 @@ function App() {
                 <Route
                     path="/stats"
                     element={
-                        <Stats statsCallback={statsCallback} stats={stats} />
+                        <Stats
+                            yearsToDisplay={Object.keys(allYearStats).length}
+                            statsCallback={statsCallback}
+                            stats={stats}
+                        />
                     }
                 >
                     <Route

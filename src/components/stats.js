@@ -5,6 +5,7 @@ import YearSelectDropdown from './yearSelectDropdown';
 function Stats(props) {
     const stats = props.stats;
     const statsCallback = props.statsCallback;
+    const yearsToDisplay = props.yearsToDisplay;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,7 +13,10 @@ function Stats(props) {
 
     return (
         <div id="stats">
-            <YearSelectDropdown statsCallback={statsCallback} />
+            <YearSelectDropdown
+                yearsToDisplay={yearsToDisplay}
+                statsCallback={statsCallback}
+            />
             <Outlet />
             <p>Last Updated: {stats.lastUpdated}</p>
         </div>
