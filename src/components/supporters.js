@@ -10,36 +10,51 @@ function Supporters() {
     return (
         <div id="socials" className="page-component center">
             <h3>SUPPORTERS</h3>
-            <img
-                className="supporters-logos"
-                src={asdaLogo}
-                alt="support-logo1"
-            />
-            <img
-                className="supporters-logos"
-                src={beaLogo}
-                alt="support-logo2"
-            />
-            <img
-                className="supporters-logos"
-                src={arnoldClarkLogo}
-                alt="support-logo3"
-            />
-            <img
-                className="supporters-logos"
-                src={heyNeighbourLogo}
-                alt="support-logo4"
-            />
-            <img
-                className="supporters-logos"
-                src={squeakerLogo}
-                alt="support-logo5"
-            />
-            <img
-                className="supporters-logos"
-                src={wldLogo}
-                alt="support-logo6"
-            />
+            <a target="_blank" href="https://www.asdafoundation.org">
+                <img
+                    className="supporters-logos"
+                    src={asdaLogo}
+                    alt="support-logo1"
+                />
+            </a>
+            <a target="_blank" href="https://bramleyea.org.uk">
+                <img
+                    className="supporters-logos"
+                    src={beaLogo}
+                    alt="support-logo2"
+                />
+            </a>
+            <a
+                target="_blank"
+                href="https://www.arnoldclark.com/community-fund"
+            >
+                <img
+                    className="supporters-logos"
+                    src={arnoldClarkLogo}
+                    alt="support-logo3"
+                />
+            </a>
+            <a target="_blank" href="https://www.heyneighbour.org.uk">
+                <img
+                    className="supporters-logos"
+                    src={heyNeighbourLogo}
+                    alt="support-logo4"
+                />
+            </a>
+            <a target="_blank" href="http://www.thesqueaker.co.uk">
+                <img
+                    className="supporters-logos"
+                    src={squeakerLogo}
+                    alt="support-logo5"
+                />
+            </a>
+            <a target="_blank" href="https://westleedsdispatch.com">
+                <img
+                    className="supporters-logos"
+                    src={wldLogo}
+                    alt="support-logo6"
+                />
+            </a>
         </div>
     );
 }
