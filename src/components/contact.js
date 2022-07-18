@@ -43,12 +43,13 @@ function Contact() {
             </a>
             <h1>LOCATION</h1>
             <p>
-                Stanningley Park is located near the number 16 and 72 bus routes
-                and 1 mile away from Bramley train station.
+                Stanningley Park is near the number 16 and 72 bus routes and 1
+                mile away from Bramley train station.
             </p>
             <p>
                 The car park is located next to the changing rooms just off Half
-                Mile Lane. Please do not park in the actual park.
+                Mile Lane (near Tesco Express). Please do not park in the actual
+                park.
             </p>
             <p>
                 The entrance to the green is between the rose garden and the
