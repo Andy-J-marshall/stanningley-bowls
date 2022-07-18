@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cacb9fb.chunk.css",
-    "main.js": "/static/js/main.b47e598a.chunk.js",
-    "main.js.map": "/static/js/main.b47e598a.chunk.js.map",
+    "main.css": "/static/css/main.c7570b36.chunk.css",
+    "main.js": "/static/js/main.e2bdeac9.chunk.js",
+    "main.js.map": "/static/js/main.e2bdeac9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.1b38fde0.chunk.js.map": "/static/js/2.1b38fde0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.56039741.chunk.css.map": "/static/css/2.56039741.chunk.css.map",
-    "static/css/main.9cacb9fb.chunk.css.map": "/static/css/main.9cacb9fb.chunk.css.map",
+    "static/css/main.c7570b36.chunk.css.map": "/static/css/main.c7570b36.chunk.css.map",
     "static/js/2.1b38fde0.chunk.js.LICENSE.txt": "/static/js/2.1b38fde0.chunk.js.LICENSE.txt",
     "static/media/arnold_clark_grant.8f29679f.png": "/static/media/arnold_clark_grant.8f29679f.png",
     "static/media/asda_foundation.45cd6d42.png": "/static/media/asda_foundation.45cd6d42.png",
@@ -27,8 +27,11 @@
     "static/media/stan-social-bowling.32756047.webp": "/static/media/stan-social-bowling.32756047.webp",
     "static/media/stan-thur-team.fe4ebc96.webp": "/static/media/stan-thur-team.fe4ebc96.webp",
     "static/media/stan-tues-team.b9404668.webp": "/static/media/stan-tues-team.b9404668.webp",
-    "static/media/upcoming_fixtures.419a4fcc.png": "/static/media/upcoming_fixtures.419a4fcc.png",
+    "static/media/upcoming_fixtures_April.419a4fcc.png": "/static/media/upcoming_fixtures_April.419a4fcc.png",
     "static/media/upcoming_fixtures_Aug.43489b53.png": "/static/media/upcoming_fixtures_Aug.43489b53.png",
+    "static/media/upcoming_fixtures_July.419a4fcc.png": "/static/media/upcoming_fixtures_July.419a4fcc.png",
+    "static/media/upcoming_fixtures_June.419a4fcc.png": "/static/media/upcoming_fixtures_June.419a4fcc.png",
+    "static/media/upcoming_fixtures_May.419a4fcc.png": "/static/media/upcoming_fixtures_May.419a4fcc.png",
     "static/media/upcoming_fixtures_Sept.68e86e42.png": "/static/media/upcoming_fixtures_Sept.68e86e42.png",
     "static/media/west_leeds_dispatch.242ca0e5.png": "/static/media/west_leeds_dispatch.242ca0e5.png"
   },
@@ -36,7 +39,7 @@
     "static/js/runtime-main.5a1d6240.js",
     "static/css/2.56039741.chunk.css",
     "static/js/2.1b38fde0.chunk.js",
-    "static/css/main.9cacb9fb.chunk.css",
-    "static/js/main.b47e598a.chunk.js"
+    "static/css/main.c7570b36.chunk.css",
+    "static/js/main.e2bdeac9.chunk.js"
   ]
 }
