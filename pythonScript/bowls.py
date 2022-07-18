@@ -28,8 +28,7 @@ awayTeamNameCol = 'B'
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file
-excelFilepath = str(Path.cwd()) + '/files/' + 'bowlsresults.xlsx'
-path = excelFilepath
+path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 stanningleyTeamResults = []

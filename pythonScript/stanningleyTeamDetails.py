@@ -10,7 +10,7 @@ stanningleyPlayers = [
     'jeff allman', 'shirley allman', 'john armitage', 'mario biancardo', 'shirley biancardo',
     'paul bowes', 'clifford brogie', 'craig clarkson', 'steve gardner', 'andy marshall', 'bernie miller',
     'alyssa randell', 'andy waller', 'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson',
-    'dave hudson', 'neil porter', 'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts'
+    'dave hudson', 'neil porter', 'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster'
 ]
 
 # Stanningley players with different spellings of name (lowercase)
@@ -1119,6 +1119,58 @@ stanningleyPlayerResults = {
         },
     },
     'kevin waller': {
+        'totalScore': 0,
+        'totalAgg': 0,
+        'totalScoreAgainst': 0,
+        'totalAggAgainst': 0,
+        'homeWins': 0,
+        'homeLosses': 0,
+        'awayWins': 0,
+        'awayLosses': 0,
+        'pairWins': 0,
+        'pairLosses': 0,
+        'pairsPartners': [],
+        'beatenOpponents': [],
+        'beatenBy': [],
+        'dayPlayed': [],
+        'totalPairsAgg': 0,
+        'totalPairsAggAgainst': 0,
+        'winningPairsPartners': [],
+        'losingPairsPartners': [],
+        'totalHomeAgg': 0,
+        'totalHomeAggAgainst': 0,
+        'totalAwayAgg': 0,
+        'totalAwayAggAgainst': 0,
+        'totalHomeScore': 0,
+        'totalHomeScoreAgainst': 0,
+        'totalAwayScore': 0,
+        'totalAwayScoreAgainst': 0,
+        'cupWins': 0,
+        'cupLosses': 0,
+        'beatenTeam': [],
+        'beatenByTeam': [],
+        'monday': {
+            'games': 0,
+            'wins': 0,
+            'aggDiff': 0,
+        },
+        'tuesday': {
+            'games': 0,
+            'wins': 0,
+            'aggDiff': 0,
+        },
+        'thursday': {
+            'games': 0,
+            'wins': 0,
+            'aggDiff': 0,
+        },
+        'saturday': {
+            'games': 0,
+            'wins': 0,
+            'aggDiff': 0,
+        },
+    },
+    'Vanessa Lancaster': {
         'totalScore': 0,
         'totalAgg': 0,
         'totalScoreAgainst': 0,

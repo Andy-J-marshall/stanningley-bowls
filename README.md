@@ -48,11 +48,11 @@ Bowlsnet links:
 
 ## Update the player stats
 
-- Create an Excel workbook called bowlsresults.xlsx and store it in the `/files` directory
+- Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
 - Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
 - Generate the reports on bowlsnet. This can either by running the Cypress tests or manually. To generate them using Cypress:
   - Run `npm run cypress:open`
-  - Select Integration tests and Chome as the browser.
+  - Select Integration tests and Chrome as the browser.
   - Run the tests in the generate-data.cy.js file (Bowlsnet is flaky so may need to rerun occasionally)
   - These will output the reports that can be copied and pasted into the Excel file.
 - To generate manually:
