@@ -13,7 +13,6 @@ function Membership() {
 
     return (
         <div id="members" className="center page-component">
-            <h1>MEMBERSHIP</h1>
             <div>
                 <p>
                     Stanningley Park Bowling club welcomes new members of any
@@ -58,7 +57,7 @@ function Membership() {
                     mornings (10:30am - 12:30pm) and Wednesday afternoons
                     (2-4pm).
                 </p>
-                <img style={{width: '95%'}} src={socialBowlingImg}></img>
+                <img style={{ width: '95%' }} src={socialBowlingImg}></img>
                 <h1>GROUP SESSIONS</h1>
                 <p>
                     We are happy to accommodate groups of up to 15 with
@@ -76,7 +75,7 @@ function Membership() {
                     </a>{' '}
                     us to discuss availability.
                 </p>
-                <img style={{width: '95%'}} src={groupBowlingImg}></img>
+                <img style={{ width: '95%' }} src={groupBowlingImg}></img>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ import wldLogo from '../images/supporters/west_leeds_dispatch.png';
 function Supporters() {
     return (
         <div id="socials" className="page-component center">
-            <h1>SUPPORTERS</h1>
+            <h3>SUPPORTERS</h3>
             <img
                 className="supporters-logos"
                 src={asdaLogo}
