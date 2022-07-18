@@ -35,16 +35,32 @@ function Navigation() {
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav.Item>
-                        <Nav.Item className="navigation">
-                            <LinkContainer to="/fixtures-and-results">
-                                <Nav.Link
-                                    href="/fixtures-and-results"
-                                    eventKey="/fixtures-and-results"
-                                >
-                                    FIXTURES & RESULTS
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
+                        <NavDropdown
+                            title="FIXTURES & RESULTS"
+                            id="basic-nav-dropdown"
+                            className="navigation"
+                        >
+                            <Nav.Item className="navigation">
+                                <LinkContainer to="/fixtures">
+                                    <Nav.Link
+                                        href="/fixtures"
+                                        eventKey="/fixtures"
+                                    >
+                                        FIXTURES
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item className="navigation">
+                                <LinkContainer to="/results">
+                                    <Nav.Link
+                                        href="/results"
+                                        eventKey="/results"
+                                    >
+                                        RESULTS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                        </NavDropdown>
                         <NavDropdown
                             title="STATS"
                             id="basic-nav-dropdown"

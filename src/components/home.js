@@ -44,7 +44,7 @@ function Home() {
                                         to="/stats/player"
                                     >
                                         <Nav.Link href="/stats/player">
-                                            <h2>Team & Player Stats</h2>
+                                            <h2>Player Stats</h2>
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>
@@ -58,10 +58,10 @@ function Home() {
                                         style={{
                                             color: 'white',
                                         }}
-                                        to="/fixtures-and-results"
+                                        to="/fixtures"
                                     >
-                                        <Nav.Link href="/fixtures-and-results">
-                                            <h2>Fixtures & Results</h2>
+                                        <Nav.Link href="/fixtures">
+                                            <h2>Fixtures</h2>
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>

@@ -6,7 +6,8 @@ import Footer from './components/footer';
 import Membership from './components/membership';
 import Header from './components/header';
 import Contact from './components/contact';
-import FixturesResults from './components/fixturesResults';
+import Fixtures from './components/fixtures';
+import Results from './components/results';
 import Navigation from './components/navigation';
 import Records from './components/records';
 import TeamStats from './components/teamStats';
@@ -44,10 +45,8 @@ function App() {
                 <Route path="" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/membership" element={<Membership />} />
-                <Route
-                    path="/fixtures-and-results"
-                    element={<FixturesResults stats={stats} />}
-                />
+                <Route path="/fixtures" element={<Fixtures />} />
+                <Route path="/results" element={<Results stats={stats} />} />
                 <Route
                     path="/stats"
                     element={

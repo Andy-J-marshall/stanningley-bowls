@@ -3,7 +3,9 @@ import { Table } from 'react-bootstrap';
 import config from '../config';
 
 function Results(props) {
-    const teamResults = props.teamResults;
+    const stats = props.stats;
+
+    const { teamResults } = stats;
 
     const resultsArray = [];
     teamResults.map((team) => {
