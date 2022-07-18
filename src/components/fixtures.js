@@ -8,6 +8,7 @@ function FixturesResults() {
         window.scrollTo(0, 0);
     });
 
+    // TODO add checks on what the current date is
     return (
         <div id="fixture">
             <img

@@ -8,7 +8,7 @@ import wldLogo from '../images/supporters/west_leeds_dispatch.png';
 
 function Supporters() {
     return (
-        <div id="socials" className="page-component">
+        <div id="socials" className="page-component center">
             <h1>SUPPORTERS</h1>
             <img
                 className="supporters-logos"

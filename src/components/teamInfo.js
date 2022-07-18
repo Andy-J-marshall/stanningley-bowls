@@ -61,14 +61,6 @@ function TeamInfo() {
                     ))}
                 </Row>
             </div>
-            <div id="social-info" className="page-component center">
-                <h1>SOCIAL BOWLING</h1>
-                <p>
-                    We currently hold open social bowling days on Saturday
-                    mornings (10:30am - 12:30pm) and Wednesday afternoons
-                    (2-4pm).
-                </p>
-            </div>
         </div>
     );
 }

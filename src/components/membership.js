@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import TeamInfo from './teamInfo';
 import config from '../config';
+import socialBowlingImg from '../images/websiteImages/stan-social-bowling.webp';
+import groupBowlingImg from '../images/websiteImages/stan-group-bowling.webp';
 
 const { socialPrice, bowlingPrice } = config.membership;
 
@@ -10,9 +12,9 @@ function Membership() {
     });
 
     return (
-        <div id="members">
+        <div id="members" className="center page-component">
             <h1>MEMBERSHIP</h1>
-            <div className="center page-component">
+            <div>
                 <p>
                     Stanningley Park Bowling club welcomes new members of any
                     age. Fees apply to adults over 16, children are welcome but
@@ -49,6 +51,33 @@ function Membership() {
                 </p>
             </div>
             <TeamInfo />
+            <div id="social-info">
+                <h1>SOCIAL BOWLING</h1>
+                <p>
+                    We currently hold open social bowling days on Saturday
+                    mornings (10:30am - 12:30pm) and Wednesday afternoons
+                    (2-4pm).
+                </p>
+                <img style={{width: '95%'}} src={socialBowlingImg}></img>
+                <h1>GROUP SESSIONS</h1>
+                <p>
+                    We are happy to accommodate groups of up to 15 with
+                    exclusive use of the green as a one off session or a regular
+                    meeting. Crown green bowling is the ideal activity for
+                    corporate team building, youth clubs or charity groups as it
+                    is suitable for a wide range of ages and abilities.
+                </p>
+                <p>
+                    Children and teenagers must be supervised by an adult in the
+                    group. All equipment and beginner tuition will be provided.
+                    Please{' '}
+                    <a style={{ textDecoration: 'none' }} href="/#/contact">
+                        contact
+                    </a>{' '}
+                    us to discuss availability.
+                </p>
+                <img style={{width: '95%'}} src={groupBowlingImg}></img>
+            </div>
         </div>
     );
 }

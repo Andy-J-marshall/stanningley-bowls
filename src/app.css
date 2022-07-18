@@ -22,57 +22,36 @@ body {
   width: 100%;
 }
 
-.carousel {
-  width: 95%;
-}
-
 @media (min-width: 100px) {
-  .carousel-item img {
-    height: 99%;
+  .carousel {
     width: 99%;
   }
 }
-@media (min-width: 400px) {
-  .carousel-item img {
-    height: 88%;
-    width: 88%;
+
+@media (min-width: 500px) {
+  .carousel {
+    width: 90%;
   }
 }
-@media (min-width: 700px) {
-  .carousel-item img {
-    height: 86%;
-    width: 86%;
-  }
-}
-@media (min-width: 825px) {
-  .carousel-item img {
-    height: 84%;
-    width: 84%;
-  }
-}
-@media (min-width: 950px) {
-  .carousel-item img {
-    height: 69%;
-    width: 69%;
-  }
-}
+
 @media (min-width: 1000px) {
-  .carousel-item img {
-    height: 50%;
-    width: 50%;
+  .carousel {
+    width: 80%;
   }
 }
-@media (min-width: 1250px) {
-  .carousel-item img {
-    height: 45%;
-    width: 45%;
+@media (min-width: 1200px) {
+  .carousel {
+    width: 70%;
   }
 }
 @media (min-width: 1500px) {
-  .carousel-item img {
-    height: 33%;
-    width: 33%;
+  .carousel {
+    width: 60%;
   }
+}
+
+.carousel-item img {
+  width: 100%;
 }
 
 .navigation {
