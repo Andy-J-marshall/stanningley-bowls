@@ -43,7 +43,7 @@ function Results(props) {
                 return (
                     <div key={idx}>
                         <br />
-                        <h2>{team.day.toUpperCase()} RESULTS</h2>
+                        <h2>{team.day.toUpperCase()}</h2>
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
