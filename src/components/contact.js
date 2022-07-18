@@ -17,16 +17,43 @@ function Contact() {
     return (
         <div id="contact-page" className="page-component">
             <h1>CONTACT US</h1>
+            <p>
+                Get in contact using the email address below or via social media
+            </p>
             <img className="logos" src={email} alt="Email icon" />
-            <a href={emailUrl}>{emailAddress}</a>
+            <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                {emailAddress}
+            </a>
             <br />
-            <a target="_blank" href={instagramUrl}>
+            <a
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                href={instagramUrl}
+            >
                 <img className="logos" src={instagram} alt="Instagram link" />
+                @StanningleyParkBowls
             </a>
-            <a target="_blank" href={facebookUrl}>
+            <a
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                href={facebookUrl}
+            >
                 <img className="logos" src={facebook} alt="Facebook link" />
+                @StanningleyBowlsClub
             </a>
-            <h1>Find us on Google Maps</h1>
+            <h1>LOCATION</h1>
+            <p>
+                Stanningley Park is located near the number 16 and 72 bus routes
+                and 1 mile away from Bramley train station.
+            </p>
+            <p>
+                The car park is located next to the changing rooms just off Half
+                Mile Lane. Please do not park in the actual park.
+            </p>
+            <p>
+                The entrance to the green is between the rose garden and the
+                rugby pitch.
+            </p>
             <iframe
                 src={googleMapsIframeUrl}
                 width="90%"

@@ -18,8 +18,11 @@ function Membership() {
                     age. Fees apply to adults over 16, children are welcome but
                     must be accompanied by an adult member. Membership is valid
                     per season and runs from 1st April until 30th September.
-                    Please <a href="/#/contact">contact</a> us or speak to us at
-                    one of the open sessions to apply.
+                    Please{' '}
+                    <a style={{ textDecoration: 'none' }} href="/#/contact">
+                        contact
+                    </a>{' '}
+                    us or speak to us at one of the open sessions to apply.
                 </p>
                 <br />
                 <h3>FULL MEMBERSHIP</h3>
