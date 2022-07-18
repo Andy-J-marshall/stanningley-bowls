@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Nav, Carousel } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Supporters from './supporters';
-import stanImg1 from '../images/websiteImages/carousel-01.webp';
-import stanImg2 from '../images/websiteImages/carousel-02.webp';
-import stanImg3 from '../images/websiteImages/carousel-03.webp';
+import statsImg from '../images/websiteImages/carousel-01.webp';
+import membershipImg from '../images/websiteImages/carousel-02.webp';
+import fixturesImg from '../images/websiteImages/carousel-03.webp';
 
 function Home() {
     useEffect(() => {
@@ -17,7 +17,7 @@ function Home() {
                 <Nav defaultActiveKey="/home" className="tabs">
                     <Carousel fade>
                         <Carousel.Item>
-                            <img src={stanImg1} alt="Membership slide" />
+                            <img src={membershipImg} alt="Membership slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
@@ -27,14 +27,14 @@ function Home() {
                                         to="/membership"
                                     >
                                         <Nav.Link href="/membership">
-                                            <h2>Membership</h2>
+                                            <h2>MEMBERSHIP</h2>
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src={stanImg2} alt="Stats slide" />
+                            <img src={statsImg} alt="Stats slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
@@ -44,14 +44,14 @@ function Home() {
                                         to="/stats/player"
                                     >
                                         <Nav.Link href="/stats/player">
-                                            <h2>Player Stats</h2>
+                                            <h2>PLAYER STATS</h2>
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src={stanImg3} alt="Fixtures slide" />
+                            <img src={fixturesImg} alt="Fixtures slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
@@ -61,7 +61,7 @@ function Home() {
                                         to="/fixtures"
                                     >
                                         <Nav.Link href="/fixtures">
-                                            <h2>Fixtures</h2>
+                                            <h2>FIXTURES</h2>
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav.Item>
