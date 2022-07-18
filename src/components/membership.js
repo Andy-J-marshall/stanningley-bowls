@@ -53,9 +53,15 @@ function Membership() {
             <div id="social-info">
                 <h1>SOCIAL BOWLING</h1>
                 <p>
-                    We currently hold open social bowling days on Saturday
-                    mornings (10:30am - 12:30pm) and Wednesday afternoons
-                    (2-4pm).
+                    Feel free to come along to one of our open social bowling
+                    sessions, complete beginner’s welcome. These sessions
+                    currently run Saturday morning 10.30am - 12.30pm, Wednesday
+                    afternoon 2pm - 4pm and Wednesday evening 6pm - 8pm. Booking
+                    is not required but please be aware that sessions will not
+                    run in extreme weather conditions so you may want to contact
+                    us in advance to confirm the session is running. The first
+                    session is free and then you can choose a full or social
+                    membership for the remainder of the season.
                 </p>
                 <img style={{ width: '95%' }} src={socialBowlingImg}></img>
                 <h1>GROUP SESSIONS</h1>
