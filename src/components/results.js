@@ -65,11 +65,11 @@ function Results(props) {
                                                 <td
                                                     style={{
                                                         width: '40%',
-                                                        fontFamily:
-                                                            'Alegreya SC',
                                                     }}
                                                 >
-                                                    <b>{homeTeam}</b>
+                                                    <b>
+                                                        {homeTeam.toUpperCase()}
+                                                    </b>
                                                 </td>
                                             ) : (
                                                 <td style={{ width: '40%' }}>
@@ -90,11 +90,9 @@ function Results(props) {
                                                 <td
                                                     style={{
                                                         width: '40%',
-                                                        fontFamily:
-                                                            'Alegreya SC',
                                                     }}
                                                 >
-                                                    <b>{awayTeam}</b>
+                                                    <b>{awayTeam.toUpperCase()}</b>
                                                 </td>
                                             ) : (
                                                 <td style={{ width: '40%' }}>

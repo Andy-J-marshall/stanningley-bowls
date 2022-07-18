@@ -4,11 +4,9 @@ import mondayTeamImg from '../images/websiteImages/stan-mond-team.webp';
 import tuesdayTeamImg from '../images/websiteImages/stan-tues-team.webp';
 import thursdayTeamImg from '../images/websiteImages/stan-thur-team.webp';
 import saturdayTeamImg from '../images/websiteImages/stan-sat-team.webp';
-import socialImg1 from '../images/websiteImages/stan-social1.webp';
-import socialImg2 from '../images/websiteImages/stan-social2.webp';
 import config from '../config';
 
-const { teams, socialDays } = config;
+const { teams } = config;
 
 teams.forEach((team) => {
     const teamName = team.name.toLowerCase();
@@ -25,20 +23,11 @@ teams.forEach((team) => {
         team.img = saturdayTeamImg;
     }
 });
-socialDays.forEach((day) => {
-    const socialDay = day.name.toLowerCase();
-    if (socialDay.includes('wednesday afternoon')) {
-        day.img = socialImg1;
-    }
-    if (socialDay.includes('saturday')) {
-        day.img = socialImg2;
-    }
-});
 
 function TeamInfo() {
     return (
-        <div id="team-and-socials" className="page-component">
-            <div id="team-info">
+        <div id="team-and-socials">
+            <div id="team-info" className="page-component center">
                 <h1>TEAMS</h1>
                 <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                     {teams.map((team, idx) => (
@@ -72,30 +61,13 @@ function TeamInfo() {
                     ))}
                 </Row>
             </div>
-            <div id="social-info" className="page-component">
+            <div id="social-info" className="page-component center">
                 <h1>SOCIAL BOWLING</h1>
-                <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
-                    {socialDays.map((day, idx) => (
-                        <Col key={idx}>
-                            <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Img
-                                    alt="social-photo"
-                                    variant="top"
-                                    src={day.img}
-                                />
-                                <Card.Body>
-                                    <Card.Title>
-                                        {day.name.toUpperCase()}
-                                    </Card.Title>
-                                    <Card.Text>
-                                        Everyone welcome
-                                        <br /> {day.time}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}
-                </Row>
+                <p>
+                    We currently hold open social bowling days on Saturday
+                    mornings (10:30am - 12:30pm) and Wednesday afternoons
+                    (2-4pm).
+                </p>
             </div>
         </div>
     );

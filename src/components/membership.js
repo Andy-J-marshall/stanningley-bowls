@@ -12,7 +12,7 @@ function Membership() {
     return (
         <div id="members">
             <h1>MEMBERSHIP</h1>
-            <div className="center" style={{ width: '95%' }}>
+            <div className="center page-component">
                 <p>
                     Stanningley Park Bowling club welcomes new members of any
                     age. Fees apply to adults over 16, children are welcome but

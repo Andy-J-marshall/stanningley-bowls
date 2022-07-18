@@ -41,16 +41,6 @@ const live = {
             startTime: '2pm',
         },
     ],
-    socialDays: [
-        {
-            name: 'Wednesday Afternoon',
-            time: '2pm-4pm',
-        },
-        {
-            name: 'Saturday Morning',
-            time: '10:30am-12:30pm',
-        },
-    ],
     days: {
         monday: 'Monday Combined',
         tuesday: 'Tuesday Vets',
