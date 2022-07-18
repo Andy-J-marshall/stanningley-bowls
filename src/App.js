@@ -12,6 +12,7 @@ import Results from './components/results';
 import Navigation from './components/navigation';
 import Records from './components/records';
 import TeamStats from './components/teamStats';
+import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import './app.css';
@@ -54,6 +55,7 @@ function App() {
                 <Route path="" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/membership" element={<Membership />} />
+                <Route path="/team-and-social" element={<TeamInfo />} />
                 <Route path="/fixtures" element={<Fixtures />} />
                 <Route path="/results" element={<Results stats={stats} />} />
                 <Route

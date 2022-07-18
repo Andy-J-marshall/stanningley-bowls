@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import TeamInfo from './teamInfo';
 import config from '../config';
-import socialBowlingImg from '../images/websiteImages/stan-social-bowling.webp';
-import groupBowlingImg from '../images/websiteImages/stan-group-bowling.webp';
 
 const { socialPrice, bowlingPrice } = config.membership;
 
@@ -32,8 +29,14 @@ function Membership() {
                     membership and the Leeds parks green fee*. You are permitted
                     access to the green any time it is available via a key code.
                     Full members who are registered with BCGBA are also eligible
-                    to play in teams. Our teams currently play in the Leeds
-                    Parks leagues.
+                    to play in teams. Our{' '}
+                    <a
+                        style={{ textDecoration: 'none' }}
+                        href="/#/team-and-social"
+                    >
+                        teams
+                    </a>{' '}
+                    currently play in the Leeds Parks leagues.
                 </p>
                 <p>
                     *If you have already paid your green fee at another Leeds
@@ -44,44 +47,17 @@ function Membership() {
                 <h3>SOCIAL MEMBERSHIP</h3>
                 <p>
                     If you are a beginner or infrequent visitor wanting to join
-                    our social bowling sessions then you may choose a social
-                    membership which is just £{socialPrice} for the season. This
-                    includes free bowls hire if required.
-                </p>
-            </div>
-            <TeamInfo />
-            <div id="social-info">
-                <h1>SOCIAL BOWLING</h1>
-                <p>
-                    Feel free to come along to one of our open social bowling
-                    sessions, complete beginner’s welcome. These sessions
-                    currently run Saturday morning 10.30am - 12.30pm, Wednesday
-                    afternoon 2pm - 4pm and Wednesday evening 6pm - 8pm. Booking
-                    is not required but please be aware that sessions will not
-                    run in extreme weather conditions so you may want to contact
-                    us in advance to confirm the session is running. The first
-                    session is free and then you can choose a full or social
-                    membership for the remainder of the season.
-                </p>
-                <img style={{ width: '95%' }} src={socialBowlingImg}></img>
-                <h1>GROUP SESSIONS</h1>
-                <p>
-                    We are happy to accommodate groups of up to 15 with
-                    exclusive use of the green as a one off session or a regular
-                    meeting. Crown green bowling is the ideal activity for
-                    corporate team building, youth clubs or charity groups as it
-                    is suitable for a wide range of ages and abilities.
-                </p>
-                <p>
-                    Children and teenagers must be supervised by an adult in the
-                    group. All equipment and beginner tuition will be provided.
-                    Please{' '}
-                    <a style={{ textDecoration: 'none' }} href="/#/contact">
-                        contact
+                    our social bowling{' '}
+                    <a
+                        style={{ textDecoration: 'none' }}
+                        href="/#/team-and-social"
+                    >
+                        sessions
                     </a>{' '}
-                    us to discuss availability.
+                    then you may choose a social membership which is just £
+                    {socialPrice} for the season. This includes free bowls hire
+                    if required.
                 </p>
-                <img style={{ width: '95%' }} src={groupBowlingImg}></img>
             </div>
         </div>
     );

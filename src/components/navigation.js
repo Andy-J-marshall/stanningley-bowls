@@ -25,16 +25,32 @@ function Navigation() {
                         style={{ maxHeight: '700px' }}
                         navbarScroll
                     >
-                        <Nav.Item className="navigation">
-                            <LinkContainer to="/membership">
-                                <Nav.Link
-                                    href="/membership"
-                                    eventKey="/membership"
-                                >
-                                    MEMBERSHIP
-                                </Nav.Link>
-                            </LinkContainer>
-                        </Nav.Item>
+                        <NavDropdown
+                            title="MEMBERSHIP & TEAMS"
+                            id="basic-nav-dropdown"
+                            className="navigation"
+                        >
+                            <Nav.Item className="navigation">
+                                <LinkContainer to="/membership">
+                                    <Nav.Link
+                                        href="/membership"
+                                        eventKey="/membership"
+                                    >
+                                        MEMBERSHIP
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item className="navigation">
+                                <LinkContainer to="/team-and-social">
+                                    <Nav.Link
+                                        href="/team-and-social"
+                                        eventKey="/team-and-social"
+                                    >
+                                        TEAMS & SOCIALS
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                        </NavDropdown>
                         <NavDropdown
                             title="FIXTURES & RESULTS"
                             id="basic-nav-dropdown"
