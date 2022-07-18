@@ -45,20 +45,48 @@ function Results(props) {
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
-                                    <th>Home Team</th>
+                                    <th>HOME TEAM</th>
                                     <th></th>
                                     <th></th>
-                                    <th>Away Team</th>
+                                    <th>AWAY TEAM</th>
                                 </tr>
                             </thead>
                             {team.results.map((result, idx) => {
+                                let homeTeam = result.home.homeTeam;
+                                let awayTeam = result.away.awayTeam;
+                                result.away.awayTeam;
                                 return (
                                     <tbody key={idx}>
                                         <tr>
-                                            <td>{result.home.homeTeam}</td>
-                                            <td>{result.home.homeScore}</td>
+                                            {homeTeam.toLowerCase() ===
+                                            'stanningley' ? (
+                                                <td style={{ width: '40%' }}>
+                                                    <b>{homeTeam}</b>
+                                                </td>
+                                            ) : (
+                                                <td style={{ width: '40%' }}>
+                                                    {homeTeam}
+                                                </td>
+                                            )}
+                                            <td
+                                                style={{
+                                                    borderRightStyle: 'solid',
+                                                    borderRightColor: 'black',
+                                                }}
+                                            >
+                                                {result.home.homeScore}
+                                            </td>
                                             <td>{result.away.awayScore}</td>
-                                            <td>{result.away.awayTeam}</td>
+                                            {awayTeam.toLowerCase() ===
+                                            'stanningley' ? (
+                                                <td style={{ width: '40%' }}>
+                                                    <b>{awayTeam}</b>
+                                                </td>
+                                            ) : (
+                                                <td style={{ width: '40%' }}>
+                                                    {awayTeam}
+                                                </td>
+                                            )}
                                         </tr>
                                     </tbody>
                                 );
