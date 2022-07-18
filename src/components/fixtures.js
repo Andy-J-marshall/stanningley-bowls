@@ -11,75 +11,86 @@ function FixturesResults() {
         window.scrollTo(0, 0);
     });
 
-    const month = new Date().getMonth() + 1;
+    const date = new Date();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const yearFixturesAddedFor = 2022; // Will need to change this when fixtures added for future years
 
     return (
         <div id="fixture">
-            {4 >= month && (
+            {year === yearFixturesAddedFor ? (
                 <div>
-                    <img
-                        id="upcoming-fixtures-april"
-                        src={upcomingFixturesApril}
-                        alt="upcoming fixtures for April"
-                        className="upcoming-fixtures"
-                    />
+                    {4 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-april"
+                                src={upcomingFixturesApril}
+                                alt="upcoming fixtures for April"
+                                className="upcoming-fixtures"
+                            />
+                            <hr style={{ margin: 0 }} />
+                        </div>
+                    )}
+                    {5 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-may"
+                                src={upcomingFixturesMay}
+                                alt="upcoming fixtures for May"
+                                className="upcoming-fixtures"
+                            />
+                            <hr style={{ margin: 0 }} />
+                        </div>
+                    )}
+                    {6 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-june"
+                                src={upcomingFixturesJune}
+                                alt="upcoming fixtures for June"
+                                className="upcoming-fixtures"
+                            />
+                            <hr style={{ margin: 0 }} />
+                        </div>
+                    )}
+                    {7 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-july"
+                                src={upcomingFixturesJuly}
+                                alt="upcoming fixtures for July"
+                                className="upcoming-fixtures"
+                            />
+                            <hr style={{ margin: 0 }} />
+                        </div>
+                    )}
+                    {8 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-august"
+                                src={upcomingFixturesAugust}
+                                alt="upcoming fixtures for August"
+                                className="upcoming-fixtures"
+                            />
+                        </div>
+                    )}
                     <hr style={{ margin: 0 }} />
+                    {9 >= month && (
+                        <div>
+                            <img
+                                id="upcoming-fixtures-september"
+                                src={upcomingFixturesSeptember}
+                                alt="upcoming fixtures for September"
+                                className="upcoming-fixtures"
+                            />
+                            <hr style={{ margin: 0 }} />
+                        </div>
+                    )}
                 </div>
-            )}
-            {5 >= month && (
-                <div>
-                    <img
-                        id="upcoming-fixtures-may"
-                        src={upcomingFixturesMay}
-                        alt="upcoming fixtures for May"
-                        className="upcoming-fixtures"
-                    />
-                    <hr style={{ margin: 0 }} />
-                </div>
-            )}
-            {6 >= month && (
-                <div>
-                    <img
-                        id="upcoming-fixtures-june"
-                        src={upcomingFixturesJune}
-                        alt="upcoming fixtures for June"
-                        className="upcoming-fixtures"
-                    />
-                    <hr style={{ margin: 0 }} />
-                </div>
-            )}
-            {7 >= month && (
-                <div>
-                    <img
-                        id="upcoming-fixtures-july"
-                        src={upcomingFixturesJuly}
-                        alt="upcoming fixtures for July"
-                        className="upcoming-fixtures"
-                    />
-                    <hr style={{ margin: 0 }} />
-                </div>
-            )}
-            {8 >= month && (
-                <div>
-                    <img
-                        id="upcoming-fixtures-august"
-                        src={upcomingFixturesAugust}
-                        alt="upcoming fixtures for August"
-                        className="upcoming-fixtures"
-                    />
-                </div>
-            )}
-            <hr style={{ margin: 0 }} />
-            {9 >= month && (
-                <div>
-                    <img
-                        id="upcoming-fixtures-september"
-                        src={upcomingFixturesSeptember}
-                        alt="upcoming fixtures for September"
-                        className="upcoming-fixtures"
-                    />
-                    <hr style={{ margin: 0 }} />
-                </div>
+            ) : (
+                <h3 style={{ padding: '2rem' }}>
+                    No fixtures are available yet.
+                </h3>
             )}
         </div>
     );
