@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbd74009.chunk.css",
-    "main.js": "/static/js/main.632af964.chunk.js",
-    "main.js.map": "/static/js/main.632af964.chunk.js.map",
+    "main.css": "/static/css/main.9cacb9fb.chunk.css",
+    "main.js": "/static/js/main.b47e598a.chunk.js",
+    "main.js.map": "/static/js/main.b47e598a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -10,19 +10,21 @@
     "static/js/2.1b38fde0.chunk.js.map": "/static/js/2.1b38fde0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.56039741.chunk.css.map": "/static/css/2.56039741.chunk.css.map",
-    "static/css/main.cbd74009.chunk.css.map": "/static/css/main.cbd74009.chunk.css.map",
+    "static/css/main.9cacb9fb.chunk.css.map": "/static/css/main.9cacb9fb.chunk.css.map",
     "static/js/2.1b38fde0.chunk.js.LICENSE.txt": "/static/js/2.1b38fde0.chunk.js.LICENSE.txt",
     "static/media/arnold_clark_grant.8f29679f.png": "/static/media/arnold_clark_grant.8f29679f.png",
     "static/media/asda_foundation.45cd6d42.png": "/static/media/asda_foundation.45cd6d42.png",
     "static/media/bramley_elderly_action.3376acc4.png": "/static/media/bramley_elderly_action.3376acc4.png",
     "static/media/brand-logo.9a167be7.png": "/static/media/brand-logo.9a167be7.png",
+    "static/media/carousel-01.387bd115.webp": "/static/media/carousel-01.387bd115.webp",
+    "static/media/carousel-02.2af62c0a.webp": "/static/media/carousel-02.2af62c0a.webp",
+    "static/media/carousel-03.b11b08e7.webp": "/static/media/carousel-03.b11b08e7.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
-    "static/media/stan-green.c549bc0c.webp": "/static/media/stan-green.c549bc0c.webp",
-    "static/media/stan-green2.77614cb6.webp": "/static/media/stan-green2.77614cb6.webp",
-    "static/media/stan-green3.7fe8b43e.webp": "/static/media/stan-green3.7fe8b43e.webp",
+    "static/media/stan-group-bowling.466ad98b.webp": "/static/media/stan-group-bowling.466ad98b.webp",
     "static/media/stan-mond-team.01e57f1c.webp": "/static/media/stan-mond-team.01e57f1c.webp",
     "static/media/stan-sat-team.a07c0c5c.webp": "/static/media/stan-sat-team.a07c0c5c.webp",
+    "static/media/stan-social-bowling.32756047.webp": "/static/media/stan-social-bowling.32756047.webp",
     "static/media/stan-thur-team.fe4ebc96.webp": "/static/media/stan-thur-team.fe4ebc96.webp",
     "static/media/stan-tues-team.b9404668.webp": "/static/media/stan-tues-team.b9404668.webp",
     "static/media/upcoming_fixtures.419a4fcc.png": "/static/media/upcoming_fixtures.419a4fcc.png",
@@ -34,7 +36,7 @@
     "static/js/runtime-main.5a1d6240.js",
     "static/css/2.56039741.chunk.css",
     "static/js/2.1b38fde0.chunk.js",
-    "static/css/main.cbd74009.chunk.css",
-    "static/js/main.632af964.chunk.js"
+    "static/css/main.9cacb9fb.chunk.css",
+    "static/js/main.b47e598a.chunk.js"
   ]
 }
