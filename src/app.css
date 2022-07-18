@@ -1,14 +1,18 @@
 p {
-  font-size: 19px;
   padding: 0.1rem;
 }
 
-a {
-  font-size: 19px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alegreya SC';
 }
 
 h1 {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 0.4rem 0;
 }
 
 h4 {
@@ -96,6 +100,7 @@ body {
 #root {
   background-color: #efefef;
   font-size: 19px;
+  font-family: 'Alegreya Sans';
   margin: auto;
   text-align: center;
 }

@@ -21,7 +21,8 @@ function Membership() {
                     Please <a href="/#/contact">contact</a> us or speak to us at
                     one of the open sessions to apply.
                 </p>
-                <h3>Full Membership</h3>
+                <br />
+                <h3>FULL MEMBERSHIP</h3>
                 <p>
                     The current fee is £{bowlingPrice} which includes club
                     membership and the Leeds parks green fee*. You are permitted
@@ -35,7 +36,8 @@ function Membership() {
                     Parks bowling club then you only need to pay £5, please
                     bring proof you have paid this at another club.
                 </p>
-                <h3>Social Membership</h3>
+                <br />
+                <h3>SOCIAL MEMBERSHIP</h3>
                 <p>
                     If you are a beginner or infrequent visitor wanting to join
                     our social bowling sessions then you may choose a social

@@ -73,7 +73,7 @@ function TeamInfo() {
                 </Row>
             </div>
             <div id="social-info" className="page-component">
-                <h1>SOCIAL BOWLS</h1>
+                <h1>SOCIAL BOWLING</h1>
                 <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                     {socialDays.map((day, idx) => (
                         <Col key={idx}>

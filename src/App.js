@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import WebFont from 'webfontloader';
 import Home from './components/home';
 import Stats from './components/stats';
 import Footer from './components/footer';
@@ -17,6 +18,14 @@ import './app.css';
 
 function App() {
     const [stats, setStats] = useState(bowlsStats22);
+
+    useEffect(() => {
+        WebFont.load({
+            google: {
+                families: ['Alegreya Sans', 'Alegreya SC'],
+            },
+        });
+    }, []);
 
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
