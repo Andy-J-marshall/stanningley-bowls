@@ -20,8 +20,8 @@ function Contact() {
             <p style={{ margin: 0 }}>
                 Get in contact using the email address below:
             </p>
-            <img className="logos" src={email} alt="Email icon" />
             <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                <img className="logos" src={email} alt="Email link" />
                 {emailAddress}
             </a>
             <br />

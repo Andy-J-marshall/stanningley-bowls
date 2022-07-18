@@ -6,7 +6,6 @@ from datetime import date
 import stanningleyTeamDetails
 
 # TODO consider adding fixtures into script?
-# TODO add date of results in?
 
 year = '2022'
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
@@ -56,8 +55,8 @@ for day in stanningleyTeamDays:
     # Find rows in spreadsheet for Stanningley games
     startingRow = 0
     startingRowIndex = 1
-    for row in sheet['C']:
-        if row.value == 'v.':
+    for row in sheet['A']:
+        if row.value and type(row.value) is str and 'FULL RESULTS' in row.value.upper():
             startingRow = startingRowIndex
         startingRowIndex += 1
 
@@ -151,12 +150,19 @@ for day in stanningleyTeamDays:
             homeScore = sheet[homeTeamScoreCol + str(row + 10)].value
             awayScore = sheet[awayTeamScoreCol + str(row + 10)].value
 
+        gameDate = ''
+        if (row in homeRow or row in awayRow) and row > startingRow:
+            gameDate = sheet[awayTeamNameCol + str(row - 1)].value
+            if 'On ' in gameDate or '(from ' in gameDate:
+                gameDate = sheet[awayTeamNameCol + str(row - 2)].value
+
         # Home games
         if row in homeRow:
             if row != leaguePositionRow:
                 opponent = sheet[awayTeamNameCol + str(row)].value
                 result = 'Stanningley ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + ' ' + opponent
+                    str(homeScore) + ' - ' + str(awayScore) + \
+                    ' ' + opponent + ' (' + gameDate + ')'
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
@@ -188,7 +194,8 @@ for day in stanningleyTeamDays:
             if row != leaguePositionRow:
                 opponent = sheet[homeTeamNameCol + str(row)].value
                 result = opponent + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + ' Stanningley'
+                    str(homeScore) + ' - ' + str(awayScore) + \
+                    ' Stanningley' + ' (' + gameDate + ')'
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:

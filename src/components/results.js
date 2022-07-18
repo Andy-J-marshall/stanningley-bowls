@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import config from '../config';
 
@@ -7,6 +7,10 @@ function Results(props) {
 
     const { teamResults } = stats;
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     const resultsArray = [];
     teamResults.map((team) => {
         const results = team.results.map((result) => {
@@ -14,7 +18,8 @@ function Results(props) {
             const homePart = resultParts[0];
             const homeScore = homePart.match(/[0-9]+/g)[0].trim();
             const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
-            const awayPart = resultParts[1];
+            const awayPart = resultParts[1].split(' (')[0];
+            const date = resultParts[1].split(' (')[1];
             const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
             const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
 
@@ -27,6 +32,7 @@ function Results(props) {
                     awayTeam,
                     awayScore,
                 },
+                date,
             };
         });
 
@@ -47,24 +53,34 @@ function Results(props) {
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
-                                    <th>HOME TEAM</th>
+                                    <th>DATE</th>
+                                    <th>HOME</th>
                                     <th></th>
                                     <th></th>
-                                    <th>AWAY TEAM</th>
+                                    <th>AWAY</th>
                                 </tr>
                             </thead>
                             {team.results.map((result, idx) => {
-                                let homeTeam = result.home.homeTeam;
-                                let awayTeam = result.away.awayTeam;
-                                result.away.awayTeam;
+                                const homeTeam = result.home.homeTeam;
+                                const awayTeam = result.away.awayTeam;
+                                let date = result.date.split(' ');
+                                date = `${date[1]} ${date[2]}`;
                                 return (
                                     <tbody key={idx}>
                                         <tr>
+                                            <td
+                                                style={{
+                                                    borderRightStyle: 'solid',
+                                                    borderRightColor: 'black',
+                                                }}
+                                            >
+                                                {date}
+                                            </td>
                                             {homeTeam.toLowerCase() ===
                                             'stanningley' ? (
                                                 <td
                                                     style={{
-                                                        width: '40%',
+                                                        width: '38%',
                                                     }}
                                                 >
                                                     <b>
@@ -72,7 +88,7 @@ function Results(props) {
                                                     </b>
                                                 </td>
                                             ) : (
-                                                <td style={{ width: '40%' }}>
+                                                <td style={{ width: '38%' }}>
                                                     {homeTeam}
                                                 </td>
                                             )}
@@ -89,13 +105,19 @@ function Results(props) {
                                             'stanningley' ? (
                                                 <td
                                                     style={{
-                                                        width: '40%',
+                                                        width: '38%',
                                                     }}
                                                 >
-                                                    <b>{awayTeam.toUpperCase()}</b>
+                                                    <b>
+                                                        {awayTeam.toUpperCase()}
+                                                    </b>
                                                 </td>
                                             ) : (
-                                                <td style={{ width: '40%' }}>
+                                                <td
+                                                    style={{
+                                                        width: '38%',
+                                                    }}
+                                                >
                                                     {awayTeam}
                                                 </td>
                                             )}
