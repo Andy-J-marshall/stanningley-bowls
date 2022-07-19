@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c7570b36.chunk.css",
-    "main.js": "/static/js/main.14f08028.chunk.js",
-    "main.js.map": "/static/js/main.14f08028.chunk.js.map",
+    "main.js": "/static/js/main.d3e5f99d.chunk.js",
+    "main.js.map": "/static/js/main.d3e5f99d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -16,15 +16,15 @@
     "static/media/asda_foundation.45cd6d42.png": "/static/media/asda_foundation.45cd6d42.png",
     "static/media/bramley_elderly_action.3376acc4.png": "/static/media/bramley_elderly_action.3376acc4.png",
     "static/media/brand-logo.9a167be7.png": "/static/media/brand-logo.9a167be7.png",
-    "static/media/carousel-01.387bd115.webp": "/static/media/carousel-01.387bd115.webp",
-    "static/media/carousel-02.2af62c0a.webp": "/static/media/carousel-02.2af62c0a.webp",
-    "static/media/carousel-03.b11b08e7.webp": "/static/media/carousel-03.b11b08e7.webp",
+    "static/media/carousel-01.eded76cf.webp": "/static/media/carousel-01.eded76cf.webp",
+    "static/media/carousel-02.3645efdc.webp": "/static/media/carousel-02.3645efdc.webp",
+    "static/media/carousel-03.bba830b6.webp": "/static/media/carousel-03.bba830b6.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
     "static/media/stan-group-bowling.466ad98b.webp": "/static/media/stan-group-bowling.466ad98b.webp",
     "static/media/stan-mond-team.01e57f1c.webp": "/static/media/stan-mond-team.01e57f1c.webp",
     "static/media/stan-sat-team.a07c0c5c.webp": "/static/media/stan-sat-team.a07c0c5c.webp",
-    "static/media/stan-social-bowling.32756047.webp": "/static/media/stan-social-bowling.32756047.webp",
+    "static/media/stan-social-bowling.3b26214a.webp": "/static/media/stan-social-bowling.3b26214a.webp",
     "static/media/stan-thur-team.fe4ebc96.webp": "/static/media/stan-thur-team.fe4ebc96.webp",
     "static/media/stan-tues-team.b9404668.webp": "/static/media/stan-tues-team.b9404668.webp",
     "static/media/upcoming_fixtures_April.419a4fcc.png": "/static/media/upcoming_fixtures_April.419a4fcc.png",
@@ -40,6 +40,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.55f3991b.chunk.js",
     "static/css/main.c7570b36.chunk.css",
-    "static/js/main.14f08028.chunk.js"
+    "static/js/main.d3e5f99d.chunk.js"
   ]
 }
