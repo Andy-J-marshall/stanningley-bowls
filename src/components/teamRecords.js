@@ -125,7 +125,7 @@ function TeamRecords(props) {
     });
 
     return (
-        <div id="team-record">
+        <div id="team-record" className="center">
             <h1>TEAM RECORDS</h1>
             <RecordsTableDisplay
                 minGames={minGames}

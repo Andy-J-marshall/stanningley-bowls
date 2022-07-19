@@ -17,7 +17,7 @@ function FixturesResults() {
     const yearFixturesAddedFor = 2022; // Will need to change this when fixtures added for future years
 
     return (
-        <div id="fixture">
+        <div id="fixture" className="center">
             {year === yearFixturesAddedFor ? (
                 <div>
                     {4 >= month && (

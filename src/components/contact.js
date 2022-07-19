@@ -15,18 +15,18 @@ function Contact() {
     });
 
     return (
-        <div id="contact-page" className="page-component">
+        <div id="contact-page" className="page-component center">
             <h1>CONTACT US</h1>
-            <p style={{ margin: 0 }}>
-                Get in contact using the email address below:
-            </p>
+            <p style={{ margin: 0 }}>Get in touch via email:</p>
             <a style={{ textDecoration: 'none' }} href={emailUrl}>
                 <img className="logos" src={email} alt="Email link" />
                 {emailAddress}
             </a>
             <br />
             <br />
-            <p style={{ margin: 0 }}>Follow us on social media:</p>
+            <p style={{ margin: 0 }}>
+                Keep up to date with the latest news via our social media pages:
+            </p>
             <a
                 style={{ textDecoration: 'none' }}
                 target="_blank"
@@ -45,17 +45,20 @@ function Contact() {
             </a>
             <h1>LOCATION</h1>
             <p>
-                Stanningley Park is near the number 16 and 72 bus routes and 1
-                mile away from Bramley train station.
+                Stanningley Park Bowling Club is situated within Stanningley
+                Park. Follow the footpath round and the entrance is between the
+                rose garden and the rugby pitch. Access is on foot only.
             </p>
             <p>
-                The car park is located next to the changing rooms just off Half
-                Mile Lane (near Tesco Express). Please do not park in the actual
-                park.
+                Stanningley Park has a small, free car park which is located
+                just off Half Mile Lane. If you are coming via Stanningley Road
+                then take the turning by Tesco Express; you'll find the entrance
+                on the right after you pass the park house.
             </p>
             <p>
-                The entrance to the green is between the rose garden and the
-                rugby pitch.
+                The nearest bus stops are only a short walk away, with regular
+                buses running via the number 16 and 72. The number 16 stops on
+                Intake Lane and the 72 on Stanningley Road.
             </p>
             <iframe
                 src={googleMapsIframeUrl}
