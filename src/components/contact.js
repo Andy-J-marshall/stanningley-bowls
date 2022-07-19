@@ -33,7 +33,6 @@ function Contact() {
                 href={instagramUrl}
             >
                 <img className="logos" src={instagram} alt="Instagram link" />
-                @StanningleyParkBowls
             </a>
             <a
                 style={{ textDecoration: 'none' }}
@@ -41,7 +40,6 @@ function Contact() {
                 href={facebookUrl}
             >
                 <img className="logos" src={facebook} alt="Facebook link" />
-                @StanningleyBowlsClub
             </a>
             <h1>LOCATION</h1>
             <p>
@@ -50,15 +48,15 @@ function Contact() {
                 rose garden and the rugby pitch. Access is on foot only.
             </p>
             <p>
-                Stanningley Park has a small, free car park which is located
-                just off Half Mile Lane. If you are coming via Stanningley Road
+                The Park has a small, free car park which is located just off
+                Half Mile Lane. If you are coming via Stanningley Road (B6157)
                 then take the turning by Tesco Express; you'll find the entrance
                 on the right after you pass the park house.
             </p>
             <p>
-                The nearest bus stops are only a short walk away, with regular
-                buses running via the number 16 and 72. The number 16 stops on
-                Intake Lane and the 72 on Stanningley Road.
+                The nearest bus stops are only a short walk away, with the
+                number 16 stopping on Intake Lane and the 72 on Stanningley
+                Road.
             </p>
             <iframe
                 src={googleMapsIframeUrl}
