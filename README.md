@@ -76,6 +76,6 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 
 `npm run update-stats`
 
-JSON file will be created: `src/data/bowlsStats{year}.json`. Ensure you update the year variable in the python script if required.
+JSON file will be created: `src/data/bowlsStats{year}.json`.
 
 You might want to format the JSON document to make it easier to read

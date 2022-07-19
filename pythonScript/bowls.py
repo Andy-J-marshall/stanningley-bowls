@@ -5,7 +5,8 @@ import os
 from datetime import date
 import stanningleyTeamDetails
 
-year = '2022'
+year = str(date.today().year)
+
 stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
 stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays
 stanningleyPlayers = stanningleyTeamDetails.stanningleyPlayers
