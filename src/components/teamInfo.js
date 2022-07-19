@@ -4,7 +4,7 @@ import mondayTeamImg from '../images/websiteImages/stan-mond-team.webp';
 import tuesdayTeamImg from '../images/websiteImages/stan-tues-team.webp';
 import thursdayTeamImg from '../images/websiteImages/stan-thur-team.webp';
 import saturdayTeamImg from '../images/websiteImages/stan-sat-team.webp';
-import socialBowlingImg from '../images/websiteImages/stan-social-bowling.webp';
+import socialBowlingImg from '../images/websiteImages/stan-social-bowling2.webp';
 import groupBowlingImg from '../images/websiteImages/stan-group-bowling.webp';
 import config from '../config';
 
