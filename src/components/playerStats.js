@@ -13,8 +13,8 @@ function PlayerStats(props) {
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
 
-    const keys = Object.keys(playerResults);
-    const playerNameArray = keys.sort().map((p) => p.toUpperCase());
+    const keys = Object.keys(playerResults).sort();
+    const playerNameArray = keys.map((p) => p.toUpperCase());
 
     const handleSubmit = (event) => {
         event.preventDefault();

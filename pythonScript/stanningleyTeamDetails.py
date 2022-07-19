@@ -1170,7 +1170,7 @@ stanningleyPlayerResults = {
             'aggDiff': 0,
         },
     },
-    'Vanessa Lancaster': {
+    'vanessa lancaster': {
         'totalScore': 0,
         'totalAgg': 0,
         'totalScoreAgainst': 0,
