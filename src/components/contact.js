@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import facebook from '../images/socials/facebook.png';
-import instagram from '../images/socials/instagram.png';
-import email from '../images/socials/email.png';
+import facebook from '../images/socials/facebook_blue.png';
+import instagram from '../images/socials/insta_blue.png';
+import email from '../images/socials/email_blue.png';
 import config from '../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsIframeUrl } =

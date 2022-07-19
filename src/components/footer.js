@@ -1,8 +1,8 @@
 import React from 'react';
-import google from '../images/socials/google.png';
-import facebook from '../images/socials/facebook.png';
-import instagram from '../images/socials/instagram.png';
-import email from '../images/socials/email.png';
+import google from '../images/socials/maps_white.png';
+import facebook from '../images/socials/facebook_white.png';
+import instagram from '../images/socials/insta_white.png';
+import email from '../images/socials/email_white.png';
 import config from '../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsUrl } =
