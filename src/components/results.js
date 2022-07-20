@@ -11,8 +11,7 @@ function Results(props) {
         window.scrollTo(0, 0);
     });
 
-    const resultsArray = [];
-    teamResults.map((team) => {
+    const resultsArray = teamResults.map((team) => {
         const results = team.results.map((result) => {
             const resultParts = result.split('-');
             const homePart = resultParts[0];
@@ -36,11 +35,10 @@ function Results(props) {
             };
         });
 
-        const result = {
+        return {
             day: config.days[team.day.toLowerCase()],
             results: results,
         };
-        resultsArray.push(result);
     });
 
     return (
@@ -83,9 +81,7 @@ function Results(props) {
                                                         width: '38%',
                                                     }}
                                                 >
-                                                    <b>
-                                                        {homeTeam.toUpperCase()}
-                                                    </b>
+                                                    {homeTeam.toUpperCase()}
                                                 </td>
                                             ) : (
                                                 <td style={{ width: '38%' }}>
@@ -108,9 +104,7 @@ function Results(props) {
                                                         width: '38%',
                                                     }}
                                                 >
-                                                    <b>
-                                                        {awayTeam.toUpperCase()}
-                                                    </b>
+                                                    {awayTeam.toUpperCase()}
                                                 </td>
                                             ) : (
                                                 <td

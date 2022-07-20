@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListGroup, Accordion } from 'react-bootstrap';
+import PlayerResults from './playerResults';
 import { capitalizeText, arrayToList } from '../helpers/utils';
 import { findBiggestWin } from '../helpers/statsHelper';
 import config from '../config';
@@ -528,10 +529,7 @@ function Players(props) {
                             <Accordion.Header>RESULTS</Accordion.Header>
                             <Accordion.Body>
                                 {results.length > 0 && (
-                                    <div>
-                                        <h3>RESULTS</h3>
-                                        <p>{resultsString}</p>
-                                    </div>
+                                    <PlayerResults results={results} />
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
