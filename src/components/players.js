@@ -8,7 +8,6 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
 
-    const playerData = playersStats[player];
     let {
         totalAgg,
         totalAggAgainst,
@@ -24,9 +23,7 @@ function Players(props) {
         cupWins,
         winningPairsPartners,
         losingPairsPartners,
-        beatenBy,
         beatenByTeam,
-        beatenOpponents,
         beatenTeam,
         pairLosses,
         pairWins,
@@ -44,7 +41,7 @@ function Players(props) {
         thursday,
         saturday,
         results,
-    } = playerData;
+    } = playersStats[player];
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
     const gamesPlayed = totalLosses + totalWins;
@@ -71,10 +68,6 @@ function Players(props) {
     const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
     const singlesAvg = (singlesAgg - singlesAggAgainst) / singlesGames;
     const pairsAvg = (totalPairsAgg - totalPairsAggAgainst) / pairsGames;
-    beatenBy = beatenBy ? arrayToList(beatenBy) : beatenBy;
-    beatenOpponents = beatenOpponents
-        ? arrayToList(beatenOpponents)
-        : beatenOpponents;
     beatenByTeam = beatenByTeam ? arrayToList(beatenByTeam) : beatenByTeam;
     beatenTeam = beatenTeam ? arrayToList(beatenTeam) : beatenTeam;
     results = results ? arrayToList(results) : results;
@@ -525,18 +518,6 @@ function Players(props) {
                                     <div>
                                         <h3>RESULTS</h3>
                                         <p>{results}</p>
-                                    </div>
-                                )}
-                                {beatenOpponents.length > 0 && (
-                                    <div>
-                                        <h3>OPPONENTS BEATEN</h3>
-                                        <p>{beatenOpponents}</p>
-                                    </div>
-                                )}
-                                {beatenBy.length > 0 && (
-                                    <div>
-                                        <h3>OPPONENTS LOST TO</h3>
-                                        <p>{beatenBy}</p>
                                     </div>
                                 )}
                                 {beatenTeam.length > 0 && (
