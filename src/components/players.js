@@ -136,6 +136,20 @@ function Players(props) {
                 {gamesPlayed > 0 && (
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
+                            <Accordion.Header>SUMMARY</Accordion.Header>
+                            <Accordion.Body>
+                                <div>
+                                    <p>Games played = {gamesPlayed}</p>
+                                    <p>Wins = {totalWins}</p>
+                                    <p>Losses = {totalLosses}</p>
+                                    {average >= -21 && (
+                                        <p>Average = {average.toFixed(2)}</p>
+                                    )}
+                                    {/* TODO add biggest win? */}
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
                             <Accordion.Header>GAMES PLAYED</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
@@ -153,7 +167,7 @@ function Players(props) {
                                 })}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="1">
+                        <Accordion.Item eventKey="2">
                             <Accordion.Header>RESULTS</Accordion.Header>
                             <Accordion.Body>
                                 {totalWins > 0 && (
@@ -274,12 +288,12 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="2">
+                        <Accordion.Item eventKey="3">
                             <Accordion.Header>AVERAGES</Accordion.Header>
                             <Accordion.Body>
                                 {average >= -21 && (
                                     <div>
-                                        <p>Average = {average.toFixed(2)}</p>
+                                        <p>Overall = {average.toFixed(2)}</p>
                                         {homeAverage > -22 && (
                                             <p>
                                                 Home = {homeAverage.toFixed(2)}
@@ -309,12 +323,6 @@ function Players(props) {
                                                 )}
                                             </div>
                                         )}
-                                        {(mondayGames > 0 ||
-                                            tuesdayGames > 0 ||
-                                            thursdayGames > 0 ||
-                                            saturdayGames > 0) && (
-                                            <h3>TEAMS</h3>
-                                        )}
                                         {mondayGames > 0 && (
                                             <p>
                                                 Monday = {mondayAvg.toFixed(2)}
@@ -342,7 +350,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="3">
+                        <Accordion.Item eventKey="4">
                             <Accordion.Header>POINTS</Accordion.Header>
                             <Accordion.Body>
                                 {averageScore >= 0 && (
@@ -440,7 +448,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="4">
+                        <Accordion.Item eventKey="6">
                             <Accordion.Header>AGGREGATES</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
@@ -513,7 +521,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="5">
+                        <Accordion.Item eventKey="6">
                             <Accordion.Header>OPPONENTS</Accordion.Header>
                             <Accordion.Body>
                                 {beatenOpponents.length > 0 && (
