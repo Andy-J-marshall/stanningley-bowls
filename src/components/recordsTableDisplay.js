@@ -75,7 +75,7 @@ function RecordsTableDisplay(props) {
                     ) : null}
                     {bestScore && bestScorePlayer && bestScore > 0 ? (
                         <tr>
-                            <td>Points per game*</td>
+                            <td>points per game***</td>
                             <td>{bestScore.toFixed(2)}</td>
                             <td>{capitalizeText(bestScorePlayer)}</td>
                         </tr>
@@ -84,7 +84,7 @@ function RecordsTableDisplay(props) {
                     bestTeamPointsPerGame &&
                     bestTeamPointsPerGame > 0 ? (
                         <tr>
-                            <td>Points per game*</td>
+                            <td>points per game***</td>
                             <td>{bestTeamPointsPerGame.toFixed(2)}</td>
                             <td>{capitalizeText(bestTeamPointsPerGameTeam)}</td>
                         </tr>
@@ -94,7 +94,7 @@ function RecordsTableDisplay(props) {
                     fewestPointsConcededPerGame > 0 &&
                     fewestPointsConcededPerGame <= 40 ? (
                         <tr>
-                            <td>Opponent points per game*</td>
+                            <td>Opponent points per game***</td>
                             <td>{fewestPointsConcededPerGame.toFixed(2)}</td>
                             <td>{capitalizeText(fewestPointsConcededTeam)}</td>
                         </tr>
