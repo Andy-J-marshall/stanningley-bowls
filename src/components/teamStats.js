@@ -2,6 +2,7 @@ import React from 'react';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
+import config from '../config';
 
 function TeamStats(props) {
     const stats = props.stats;
@@ -77,13 +78,7 @@ function TeamStats(props) {
                 saturdayComponent={saturdayComponent()}
             />
             <br />
-            <p className="footnote">
-                * A match is decided using the 0-5 points system. If a player
-                wins by scoring 21 then they get 5 points. If they lose and
-                score 18-20 then they get 4 points, 15-17 is 3 points, 10-14 is
-                2 points and 5-9 is 1 point. If a player scores 0-4 then they
-                get 0 points.
-            </p>
+            <p className="footnote">* {config.leagueRules}</p>
         </div>
     );
 }

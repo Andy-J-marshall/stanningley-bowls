@@ -71,7 +71,7 @@ function TeamInfo() {
                 <h1>SOCIAL BOWLING</h1>
                 <p>
                     Feel free to come along to one of our open social bowling
-                    sessions, complete beginner’s welcome. These sessions
+                    sessions, complete beginner's welcome. These sessions
                     currently run Saturday morning 10.30am - 12.30pm, Wednesday
                     afternoon 2pm - 4pm and Wednesday evening 6pm - 8pm. Booking
                     is not required but please be aware that sessions will not
