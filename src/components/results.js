@@ -129,6 +129,7 @@ function Results(props) {
                     </div>
                 );
             })}
+            <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );
 }

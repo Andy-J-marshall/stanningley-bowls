@@ -122,8 +122,7 @@ function RecordsTableDisplay(props) {
                     ) : null}
                 </tbody>
             </Table>
-            <p className="footnote">* Number of games played are in brackets</p>
-            <p className="footnote">* minimum of {minGames} games</p>
+            <p className="footnote">* Minimum of {minGames} games</p>
         </div>
     );
 }

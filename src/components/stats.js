@@ -12,13 +12,14 @@ function Stats(props) {
     });
 
     return (
-        <div id="stats">
+        <div id="stats" className="center">
             <YearSelectDropdown
                 yearsToDisplay={yearsToDisplay}
                 statsCallback={statsCallback}
             />
             <Outlet />
-            <p>Last Updated: {stats.lastUpdated}</p>
+            <p className="footnote">Last Updated: {stats.lastUpdated}</p>
+            <br />
         </div>
     );
 }
