@@ -57,6 +57,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -109,6 +110,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -161,6 +163,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -213,6 +216,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -265,6 +269,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -317,6 +322,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -369,6 +375,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -421,6 +428,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -473,6 +481,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -525,6 +534,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -577,6 +587,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -629,6 +640,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -681,6 +693,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -733,6 +746,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -785,6 +799,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -837,6 +852,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -889,6 +905,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -941,6 +958,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -993,6 +1011,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -1045,6 +1064,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -1097,6 +1117,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -1149,6 +1170,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -1201,6 +1223,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,
@@ -1253,6 +1276,7 @@ stanningleyPlayerResults = {
         'cupLosses': 0,
         'beatenTeam': [],
         'beatenByTeam': [],
+        'results': [],
         'monday': {
             'games': 0,
             'wins': 0,

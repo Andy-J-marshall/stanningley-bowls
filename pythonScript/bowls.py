@@ -264,28 +264,28 @@ for day in stanningleyTeamDays:
         awayPlayerIndex = awayPlayerIndex + 1
 
     # Converts points to team score
-    def calculateGameScore(points):
+    def calculateGamePoints(points):
         if points == 21:
-            gameScore = 5
+            gamePoints = 5
         if points < 5:
-            gameScore = 0
+            gamePoints = 0
         if points >= 5 and points < 10:
-            gameScore = 1
+            gamePoints = 1
         if points >= 10 and points < 15:
-            gameScore = 2
+            gamePoints = 2
         if points >= 15 and points < 18:
-            gameScore = 3
+            gamePoints = 3
         if points >= 18 and points < 21:
-            gameScore = 4
-        return gameScore
+            gamePoints = 4
+        return gamePoints
 
     # Find each players' scores
     for row in range(1, sheet.max_row + 1):
         # reset variable values
+        aggregate = 0
+        opponentAggregate = 0
         points = 0
         opponentPoints = 0
-        score = 0
-        opponentScore = 0
         secondOpponent = ''
         playerName = ''
         opponentsName = ''
@@ -324,17 +324,17 @@ for day in stanningleyTeamDays:
 
             if opponentsName.lower() != '*walkover*':
                 playerName = sheet[stanPlayerNameCol + str(row)].value
-                points = sheet[stanPlayerScoreCol + str(row)].value
-                opponentPoints = sheet[opponentPlayerScoreCol + str(row)].value
+                aggregate = sheet[stanPlayerScoreCol + str(row)].value
+                opponentAggregate = sheet[opponentPlayerScoreCol + str(row)].value
                 pairsGame = False
-                if points is None:
+                if aggregate is None:
                     pairsGame = True
                     pairsPartner = sheet[stanPlayerNameCol +
                                          str(row - 1)].value
                     secondOpponent = sheet[opponentPlayerNameCol +
                                            str(row - 1)].value
-                    points = sheet[stanPlayerScoreCol + str(row - 1)].value
-                    opponentPoints = sheet[opponentPlayerScoreCol +
+                    aggregate = sheet[stanPlayerScoreCol + str(row - 1)].value
+                    opponentAggregate = sheet[opponentPlayerScoreCol +
                                            str(row - 1)].value
                 else:
                     pointsRowBelow = sheet[stanPlayerScoreCol +
@@ -362,13 +362,19 @@ for day in stanningleyTeamDays:
                     stanningleyPlayerResults[playerName]['pairsPartners'].append(
                         pairsPartner)
                     opponentsName = opponentsName + ' & ' + secondOpponent
-                    stanningleyPlayerResults[playerName]['totalPairsAgg'] += points
-                    stanningleyPlayerResults[playerName]['totalPairsAggAgainst'] += opponentPoints
+                    stanningleyPlayerResults[playerName]['totalPairsAgg'] += aggregate
+                    stanningleyPlayerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
                 stanningleyPlayerResults[playerName][day.lower()]['games'] += 1
 
+                stanningleyPlayerResults[playerName]['results'].append({
+                    "for": aggregate,
+                    "against": opponentAggregate,
+                    "opponent": opponentsName,
+                })
+
                 # Wins
-                if points > opponentPoints:
+                if aggregate > opponentAggregate:
                     stanningleyPlayerResults[playerName][day.lower(
                     )]['wins'] += 1
                     stanningleyPlayerResults[playerName]['beatenOpponents'].append(
@@ -401,31 +407,32 @@ for day in stanningleyTeamDays:
                         stanningleyPlayerResults[playerName]['awayLosses'] += 1
                     if cupGame:
                         stanningleyPlayerResults[playerName]['cupLosses'] += 1
-                score = 0
-                opponentScore = 0
+                points = 0
+                opponentPoints = 0
                 if not cupGame:
-                    score = calculateGameScore(points)
-                    opponentScore = calculateGameScore(opponentPoints)
+                    points = calculateGamePoints(aggregate)
+                    opponentPoints = calculateGamePoints(opponentAggregate)
 
                 # Averages
-                stanningleyPlayerResults[playerName]['totalAgg'] += points
-                stanningleyPlayerResults[playerName]['totalAggAgainst'] += opponentPoints
-                stanningleyPlayerResults[playerName][day.lower()]['aggDiff'] += points - \
-                    opponentPoints
+                stanningleyPlayerResults[playerName]['totalAgg'] += aggregate
+                stanningleyPlayerResults[playerName]['totalAggAgainst'] += opponentAggregate
+                stanningleyPlayerResults[playerName][day.lower()]['aggDiff'] += aggregate - \
+                    opponentAggregate
                 if homeGame:
-                    stanningleyPlayerResults[playerName]['totalHomeAgg'] += points
-                    stanningleyPlayerResults[playerName]['totalHomeAggAgainst'] += opponentPoints
-                    stanningleyPlayerResults[playerName]['totalHomeScore'] += score
-                    stanningleyPlayerResults[playerName]['totalHomeScoreAgainst'] += opponentScore
+                    stanningleyPlayerResults[playerName]['totalHomeAgg'] += aggregate
+                    stanningleyPlayerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
+                    stanningleyPlayerResults[playerName]['totalHomeScore'] += points
+                    stanningleyPlayerResults[playerName]['totalHomeScoreAgainst'] += opponentPoints
                 if awayGame:
-                    stanningleyPlayerResults[playerName]['totalAwayAgg'] += points
-                    stanningleyPlayerResults[playerName]['totalAwayAggAgainst'] += opponentPoints
-                    stanningleyPlayerResults[playerName]['totalAwayScore'] += score
-                    stanningleyPlayerResults[playerName]['totalAwayScoreAgainst'] += opponentScore
-                stanningleyPlayerResults[playerName]['totalScore'] += score
-                stanningleyPlayerResults[playerName]['totalScoreAgainst'] += opponentScore
+                    stanningleyPlayerResults[playerName]['totalAwayAgg'] += aggregate
+                    stanningleyPlayerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
+                    stanningleyPlayerResults[playerName]['totalAwayScore'] += points
+                    stanningleyPlayerResults[playerName]['totalAwayScoreAgainst'] += opponentPoints
+                stanningleyPlayerResults[playerName]['totalScore'] += points
+                stanningleyPlayerResults[playerName]['totalScoreAgainst'] += opponentPoints
                 stanningleyPlayerResults[playerName]['dayPlayed'].append(day)
 
+# TODO rename totalHomeScore, totalHomeScoreAgainst, totalAwayScore, totalAwayScoreAgainst, totalScore, totalScoreAgainst
 
 # Create JSON file
 dataToExport = {

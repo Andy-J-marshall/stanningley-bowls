@@ -62,6 +62,18 @@
         "Horsforth Woodside. (Tuesday)"
       ],
       "beatenByTeam": ["Harehills Park A (Tuesday)"],
+      "results": [
+        { "for": 21, "against": 8, "opponent": "Colin Davison" },
+        { "for": 21, "against": 4, "opponent": "Cedric Briggs" },
+        { "for": 21, "against": 17, "opponent": "Jim Jordan" },
+        { "for": 21, "against": 8, "opponent": "Ron Witham" },
+        { "for": 21, "against": 18, "opponent": "Terry Blakeley" },
+        { "for": 21, "against": 14, "opponent": "Jeff Binns" },
+        { "for": 21, "against": 4, "opponent": "George Ellener" },
+        { "for": 21, "against": 14, "opponent": "Tony Morris" },
+        { "for": 10, "against": 21, "opponent": "Roger Birdsall" },
+        { "for": 21, "against": 3, "opponent": "Brian Dowling" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 10, "wins": 9, "aggDiff": 88 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -131,6 +143,19 @@
         "Horsforth Woodside. (Tuesday)",
         "Barwick BC (Tuesday)",
         "Harehills Park A (Tuesday)"
+      ],
+      "results": [
+        { "for": 20, "against": 21, "opponent": "Brian Dowling" },
+        { "for": 21, "against": 5, "opponent": "Gordon Sadler" },
+        { "for": 21, "against": 13, "opponent": "Carl Mahon" },
+        { "for": 21, "against": 12, "opponent": "Eileen Coldrey" },
+        { "for": 21, "against": 6, "opponent": "Lillian Pickles" },
+        { "for": 13, "against": 21, "opponent": "Derek Dobson" },
+        { "for": 21, "against": 8, "opponent": "Pat Parker" },
+        { "for": 21, "against": 10, "opponent": "David Norton" },
+        { "for": 12, "against": 21, "opponent": "Jim Jordan" },
+        { "for": 21, "against": 15, "opponent": "Brenda Chaffer" },
+        { "for": 21, "against": 16, "opponent": "Paul Hatch" }
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 10, "wins": 7, "aggDiff": 60 },
@@ -203,6 +228,19 @@
         "Harehills Park A (Tuesday)",
         "Harehills Park A (Tuesday)"
       ],
+      "results": [
+        { "for": 21, "against": 18, "opponent": "Graham Hey" },
+        { "for": 21, "against": 11, "opponent": "Gerry Faller" },
+        { "for": 20, "against": 21, "opponent": "Paul Hatch" },
+        { "for": 21, "against": 15, "opponent": "Colin Whitley" },
+        { "for": 21, "against": 11, "opponent": "Steve Caley" },
+        { "for": 21, "against": 15, "opponent": "Keith Dodgson" },
+        { "for": 21, "against": 16, "opponent": "Jeff Warburton" },
+        { "for": 21, "against": 2, "opponent": "David Rawson" },
+        { "for": 7, "against": 21, "opponent": "Paul Hatch" },
+        { "for": 21, "against": 4, "opponent": "Ray Rundle" },
+        { "for": 21, "against": 2, "opponent": "Brian Stevens" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 10, "wins": 8, "aggDiff": 61 },
       "thursday": { "games": 1, "wins": 1, "aggDiff": 19 },
@@ -266,6 +304,17 @@
         "Churwell Pk (Thursday)",
         "Middleton Community (Thursday)",
         "Pudsey Park A (Thursday)"
+      ],
+      "results": [
+        { "for": 6, "against": 21, "opponent": "Mick Harrison" },
+        { "for": 8, "against": 21, "opponent": "Barbara Nellis" },
+        { "for": 21, "against": 10, "opponent": "Andy Sykes" },
+        { "for": 21, "against": 14, "opponent": "Cedric Briggs" },
+        { "for": 21, "against": 12, "opponent": "Michael Small" },
+        { "for": 14, "against": 21, "opponent": "Maveen Tomlinson" },
+        { "for": 17, "against": 21, "opponent": "Dawn Peters" },
+        { "for": 12, "against": 21, "opponent": "Roy Tebbutt" },
+        { "for": 8, "against": 21, "opponent": "Shirley Biancardo" }
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -374,6 +423,30 @@
         "Western Flatts (Saturday)",
         "Gildersome B (Saturday)"
       ],
+      "results": [
+        { "for": 21, "against": 17, "opponent": "Carol Robinson" },
+        { "for": 20, "against": 21, "opponent": "Stephen Briggs" },
+        { "for": 20, "against": 21, "opponent": "Janet Pearson" },
+        { "for": 21, "against": 3, "opponent": "Hazel Marshall" },
+        { "for": 21, "against": 10, "opponent": "Gordon Sadler" },
+        { "for": 20, "against": 21, "opponent": "George Bentley" },
+        { "for": 8, "against": 21, "opponent": "Steve Brown" },
+        { "for": 17, "against": 21, "opponent": "Stephen Briggs" },
+        { "for": 7, "against": 21, "opponent": "Mick Hall" },
+        { "for": 21, "against": 20, "opponent": "Dennis Walters" },
+        { "for": 21, "against": 8, "opponent": "Peter Nicholson" },
+        { "for": 21, "against": 15, "opponent": "Tony Kirk" },
+        { "for": 9, "against": 21, "opponent": "Phillip Marshall" },
+        { "for": 21, "against": 3, "opponent": "Brian Ragan" },
+        { "for": 21, "against": 5, "opponent": "Lewis Cuddy" },
+        { "for": 21, "against": 8, "opponent": "Hazel Goodall" },
+        { "for": 21, "against": 14, "opponent": "Rodney Sharp" },
+        { "for": 21, "against": 18, "opponent": "Brian Newton" },
+        { "for": 21, "against": 15, "opponent": "Kath Burdett" },
+        { "for": 17, "against": 21, "opponent": "Charlie Cross" },
+        { "for": 5, "against": 21, "opponent": "Granville Stoyles" },
+        { "for": 18, "against": 21, "opponent": "Tracy Norton" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 1, "wins": 1, "aggDiff": 4 },
       "thursday": { "games": 9, "wins": 3, "aggDiff": -4 },
@@ -475,6 +548,28 @@
         "New Wortley (Saturday)",
         "Western Flatts (Saturday)"
       ],
+      "results": [
+        { "for": 15, "against": 21, "opponent": "Leslie Strang" },
+        { "for": 4, "against": 21, "opponent": "Shirley Biancardo" },
+        { "for": 21, "against": 7, "opponent": "Roy Tebbutt" },
+        { "for": 21, "against": 12, "opponent": "Alan Taylor" },
+        { "for": 18, "against": 21, "opponent": "Billy Ward" },
+        { "for": 21, "against": 19, "opponent": "Brian Golden" },
+        { "for": 21, "against": 20, "opponent": "Glen Scott" },
+        { "for": 17, "against": 21, "opponent": "Gordon Monk" },
+        { "for": 21, "against": 17, "opponent": "Janet Pearson" },
+        { "for": 21, "against": 15, "opponent": "Reece Pratt" },
+        { "for": 21, "against": 17, "opponent": "Rachel Barnard" },
+        { "for": 16, "against": 21, "opponent": "Garry Marshall" },
+        { "for": 21, "against": 4, "opponent": "Terry Maher" },
+        { "for": 20, "against": 21, "opponent": "Stuart Reardon" },
+        { "for": 11, "against": 21, "opponent": "Steve Briggs" },
+        { "for": 21, "against": 7, "opponent": "Maureen Denison" },
+        { "for": 21, "against": 14, "opponent": "James King" },
+        { "for": 21, "against": 10, "opponent": "Malcolm Collinson" },
+        { "for": 21, "against": 20, "opponent": "Ron Lavan" },
+        { "for": 21, "against": 5, "opponent": "Rachel Barnard" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 9, "wins": 5, "aggDiff": 0 },
@@ -523,6 +618,13 @@
         "Sth Leeds Cons B (Saturday)"
       ],
       "beatenByTeam": [],
+      "results": [
+        { "for": 21, "against": 5, "opponent": "Gosia Nelson" },
+        { "for": 21, "against": 11, "opponent": "Gerry Wood" },
+        { "for": 21, "against": 7, "opponent": "Granville Stoyles" },
+        { "for": 21, "against": 14, "opponent": "Malcolm Whipp" },
+        { "for": 21, "against": 7, "opponent": "Brenda Moscrop" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -595,6 +697,19 @@
         "Gildersome B (Saturday)"
       ],
       "beatenByTeam": [],
+      "results": [
+        { "for": 21, "against": 18, "opponent": "Josh Lucas" },
+        { "for": 21, "against": 17, "opponent": "Michael Ross" },
+        { "for": 21, "against": 10, "opponent": "Harry Gillett" },
+        { "for": 21, "against": 15, "opponent": "Barbara Ragan" },
+        { "for": 21, "against": 4, "opponent": "Danny Dawson" },
+        { "for": 21, "against": 6, "opponent": "Keith Kincaid" },
+        { "for": 21, "against": 17, "opponent": "Ged Healy" },
+        { "for": 21, "against": 6, "opponent": "Brian Dean" },
+        { "for": 21, "against": 5, "opponent": "Arthur Horne" },
+        { "for": 21, "against": 15, "opponent": "Ken Stockhill" },
+        { "for": 21, "against": 8, "opponent": "David Holmes" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -633,6 +748,10 @@
       "beatenByTeam": [
         "Middleton Community (Thursday)",
         "Sth Leeds Cons B (Saturday)"
+      ],
+      "results": [
+        { "for": 7, "against": 21, "opponent": "Malcolm Cameron" },
+        { "for": 1, "against": 21, "opponent": "Mark Rastrick" }
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -757,6 +876,37 @@
         "Pudsey Park A (Thursday)",
         "Middleton Park (Saturday)"
       ],
+      "results": [
+        { "for": 21, "against": 5, "opponent": "David Brooke" },
+        { "for": 21, "against": 7, "opponent": "David Charlesworth" },
+        { "for": 21, "against": 19, "opponent": "Wendy Sykes" },
+        {
+          "for": 13,
+          "against": 21,
+          "opponent": "Gary Dennison & Nicola Pearson"
+        },
+        { "for": 14, "against": 21, "opponent": "Ron Lavan & Keith Skelton" },
+        { "for": 8, "against": 21, "opponent": "G Scholes & T Newsome" },
+        { "for": 4, "against": 21, "opponent": "Peter Wilcox & Lynn Wilcox" },
+        {
+          "for": 21,
+          "against": 20,
+          "opponent": "Malcolm Colinson & Dave Kellett"
+        },
+        { "for": 21, "against": 19, "opponent": "Cliff Pitts & Frank Hales" },
+        { "for": 8, "against": 21, "opponent": "Graham Hey & John King" },
+        { "for": 21, "against": 19, "opponent": "Dot Taylor & Glennys Ash" },
+        { "for": 16, "against": 21, "opponent": "Graham Goodall" },
+        { "for": 21, "against": 13, "opponent": "Hugh Callard" },
+        { "for": 13, "against": 21, "opponent": "Brenda Brown" },
+        { "for": 5, "against": 21, "opponent": "Peter Colley" },
+        { "for": 16, "against": 21, "opponent": "Susan Harrison" },
+        { "for": 21, "against": 13, "opponent": "Brian Ragan" },
+        { "for": 2, "against": 21, "opponent": "Mario Biancardo" },
+        { "for": 21, "against": 20, "opponent": "David Charlesworth" },
+        { "for": 21, "against": 18, "opponent": "Maureen Bradshaw" },
+        { "for": 11, "against": 21, "opponent": "Graham Butterfield" }
+      ],
       "monday": { "games": 11, "wins": 6, "aggDiff": -21 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 7, "wins": 2, "aggDiff": -37 },
@@ -844,6 +994,27 @@
         "Middleton Community (Thursday)",
         "Gildersome B (Saturday)"
       ],
+      "results": [
+        {
+          "for": 13,
+          "against": 21,
+          "opponent": "Nicola Pearson & Gary Dennison"
+        },
+        { "for": 14, "against": 21, "opponent": "Keith Skelton & Ron Lavan" },
+        { "for": 4, "against": 21, "opponent": "Lynn Wilcox & Peter Wilcox" },
+        {
+          "for": 21,
+          "against": 20,
+          "opponent": "Dave Kellett & Malcolm Colinson"
+        },
+        { "for": 21, "against": 19, "opponent": "Frank Hales & Cliff Pitts" },
+        { "for": 8, "against": 21, "opponent": "John King & Graham Hey" },
+        { "for": 21, "against": 19, "opponent": "Glennys Ash & Dot Taylor" },
+        { "for": 11, "against": 21, "opponent": "Lawrie Bairstow" },
+        { "for": 9, "against": 21, "opponent": "Andy Sykes" },
+        { "for": 11, "against": 21, "opponent": "Neil Schofield" },
+        { "for": 21, "against": 12, "opponent": "Michael Small" }
+      ],
       "monday": { "games": 7, "wins": 3, "aggDiff": -40 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 2, "wins": 0, "aggDiff": -22 },
@@ -913,6 +1084,18 @@
         "Middleton Community (Thursday)"
       ],
       "beatenByTeam": [],
+      "results": [
+        { "for": 21, "against": 10, "opponent": "Stuart Tennant" },
+        { "for": 21, "against": 12, "opponent": "David Howard" },
+        { "for": 21, "against": 6, "opponent": "Paul Lawson" },
+        { "for": 21, "against": 15, "opponent": "Christine Robson" },
+        { "for": 21, "against": 13, "opponent": "Granville Stoyles" },
+        { "for": 21, "against": 15, "opponent": "Pam Binns" },
+        { "for": 21, "against": 7, "opponent": "Frank Hales" },
+        { "for": 21, "against": 12, "opponent": "Ralph Taylor" },
+        { "for": 21, "against": 3, "opponent": "Colin Davison" },
+        { "for": 21, "against": 19, "opponent": "Gordon Monk" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 9, "wins": 9, "aggDiff": 96 },
       "thursday": { "games": 1, "wins": 1, "aggDiff": 2 },
@@ -1023,6 +1206,31 @@
         "Western Flatts (Tuesday)",
         "Harehills Park A (Tuesday)"
       ],
+      "results": [
+        { "for": 21, "against": 5, "opponent": "Brenda Moscrop" },
+        { "for": 21, "against": 12, "opponent": "David Taylor" },
+        { "for": 21, "against": 7, "opponent": "Jenny Holiday" },
+        { "for": 21, "against": 3, "opponent": "Hazel Goodall" },
+        { "for": 21, "against": 5, "opponent": "Ian Baker" },
+        { "for": 21, "against": 7, "opponent": "Darren Robinson" },
+        { "for": 21, "against": 18, "opponent": "Ian Smith" },
+        { "for": 14, "against": 21, "opponent": "Ryan Lynch" },
+        { "for": 21, "against": 20, "opponent": "P Hardy" },
+        { "for": 11, "against": 21, "opponent": "Jack Williamson" },
+        { "for": 21, "against": 10, "opponent": "Josh Lucas" },
+        { "for": 21, "against": 14, "opponent": "David Taylor" },
+        { "for": 21, "against": 8, "opponent": "Jimmy Wilson" },
+        { "for": 21, "against": 9, "opponent": "David Lyons" },
+        { "for": 21, "against": 14, "opponent": "Keith Worrall" },
+        { "for": 21, "against": 10, "opponent": "Brian Thompson" },
+        { "for": 18, "against": 21, "opponent": "Bill Robson" },
+        { "for": 12, "against": 21, "opponent": "John Manson" },
+        { "for": 21, "against": 6, "opponent": "Jennifer Dodgson" },
+        { "for": 21, "against": 20, "opponent": "Steve Brown" },
+        { "for": 21, "against": 0, "opponent": "Archie McCafferty" },
+        { "for": 18, "against": 21, "opponent": "Stuart Poulter" },
+        { "for": 21, "against": 6, "opponent": "David Hurd" }
+      ],
       "monday": { "games": 13, "wins": 11, "aggDiff": 105 },
       "tuesday": { "games": 10, "wins": 7, "aggDiff": 67 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1130,6 +1338,32 @@
         "New Farnley B (Monday)",
         "Crossgates BC (Monday)",
         "Harehills Park A (Tuesday)"
+      ],
+      "results": [
+        { "for": 21, "against": 13, "opponent": "Barbara Wherrett" },
+        { "for": 21, "against": 3, "opponent": "Barry Ainsley" },
+        { "for": 21, "against": 5, "opponent": "John Hindle" },
+        { "for": 21, "against": 5, "opponent": "Dawn Peters" },
+        { "for": 21, "against": 15, "opponent": "Danny Dawson" },
+        { "for": 21, "against": 8, "opponent": "Paddy Glover" },
+        { "for": 9, "against": 21, "opponent": "Ellis Owen" },
+        { "for": 15, "against": 21, "opponent": "Bob Taylor" },
+        { "for": 21, "against": 14, "opponent": "G Hodder" },
+        { "for": 5, "against": 21, "opponent": "Tony Sharpe" },
+        { "for": 21, "against": 19, "opponent": "Reece Pratt" },
+        { "for": 21, "against": 8, "opponent": "Kevin Smales" },
+        { "for": 21, "against": 17, "opponent": "Jenny Holiday" },
+        { "for": 21, "against": 3, "opponent": "Steve Briggs" },
+        { "for": 21, "against": 8, "opponent": "Kath Hey" },
+        { "for": 21, "against": 8, "opponent": "Marion Worrall" },
+        { "for": 16, "against": 21, "opponent": "Roger Birdsall" },
+        { "for": 21, "against": 11, "opponent": "John Hainsworth" },
+        { "for": 21, "against": 16, "opponent": "Ken Stockhill" },
+        { "for": 21, "against": 15, "opponent": "David Wright" },
+        { "for": 21, "against": 14, "opponent": "John Harvey" },
+        { "for": 21, "against": 4, "opponent": "Clifford Pitts" },
+        { "for": 21, "against": 17, "opponent": "Tony Green" },
+        { "for": 21, "against": 17, "opponent": "Graham Hey" }
       ],
       "monday": { "games": 14, "wins": 11, "aggDiff": 87 },
       "tuesday": { "games": 10, "wins": 9, "aggDiff": 74 },
@@ -1283,6 +1517,57 @@
         "Pudsey Park A (Thursday)",
         "Churwell Pk (Thursday)"
       ],
+      "results": [
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Malcolm Colinson & Chris Walsh"
+        },
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Harvey Lockwood & Kevin Smales"
+        },
+        {
+          "for": 21,
+          "against": 7,
+          "opponent": "Maureen Sheridan & Pat Blackburn"
+        },
+        { "for": 21, "against": 13, "opponent": "Dot Taylor & Glennys Ash" },
+        {
+          "for": 21,
+          "against": 19,
+          "opponent": "Paul Shackleton & Ann Hughes"
+        },
+        { "for": 21, "against": 9, "opponent": "Jade Kerry & Sharon Kerry" },
+        { "for": 17, "against": 21, "opponent": "Michael Gore" },
+        { "for": 21, "against": 2, "opponent": "Linda Gaunt" },
+        { "for": 21, "against": 9, "opponent": "Cedric Ash" },
+        { "for": 11, "against": 21, "opponent": "Tony Green" },
+        { "for": 21, "against": 6, "opponent": "Martin McGowan" },
+        { "for": 21, "against": 5, "opponent": "Doreen Hunter" },
+        { "for": 21, "against": 8, "opponent": "Jane Boyd" },
+        { "for": 21, "against": 4, "opponent": "Steve Milton" },
+        { "for": 20, "against": 21, "opponent": "Harvey Lockwood" },
+        { "for": 21, "against": 11, "opponent": "Graham Hodder" },
+        { "for": 18, "against": 21, "opponent": "Dennis Walters" },
+        { "for": 21, "against": 4, "opponent": "Brian Ragan" },
+        { "for": 21, "against": 13, "opponent": "Peter Richie" },
+        { "for": 20, "against": 21, "opponent": "Lawrie Bairstow" },
+        { "for": 21, "against": 4, "opponent": "Malcolm Cameron" },
+        { "for": 21, "against": 11, "opponent": "Derek Howell" },
+        { "for": 21, "against": 7, "opponent": "Brian Newton" },
+        { "for": 21, "against": 0, "opponent": "Clifford Pitts" },
+        { "for": 21, "against": 6, "opponent": "Peter Nicholson" },
+        { "for": 21, "against": 13, "opponent": "Mick Hall" },
+        { "for": 21, "against": 10, "opponent": "Ian Baker" },
+        { "for": 21, "against": 1, "opponent": "Ron Lavan" },
+        { "for": 21, "against": 2, "opponent": "Michael Geary" },
+        { "for": 21, "against": 10, "opponent": "Arthur Horne" },
+        { "for": 21, "against": 5, "opponent": "Bill Lovett" },
+        { "for": 21, "against": 3, "opponent": "Dawn Peters" },
+        { "for": 21, "against": 8, "opponent": "Neil Schofield" }
+      ],
       "monday": { "games": 9, "wins": 6, "aggDiff": 55 },
       "tuesday": { "games": 7, "wins": 5, "aggDiff": 60 },
       "thursday": { "games": 6, "wins": 4, "aggDiff": 48 },
@@ -1372,6 +1657,24 @@
         "Churwell Pk (Thursday)",
         "Pudsey Park A (Thursday)"
       ],
+      "results": [
+        { "for": 17, "against": 21, "opponent": "Reece Pratt" },
+        { "for": 15, "against": 21, "opponent": "Linda Gaunt" },
+        { "for": 21, "against": 8, "opponent": "John King" },
+        { "for": 21, "against": 19, "opponent": "Andrew Ash" },
+        { "for": 9, "against": 21, "opponent": "Jason Cooper" },
+        { "for": 7, "against": 21, "opponent": "Dave Taylor" },
+        { "for": 21, "against": 18, "opponent": "Andy Johnson" },
+        { "for": 8, "against": 21, "opponent": "Sandra Deegan" },
+        { "for": 21, "against": 12, "opponent": "Oliver Delaney" },
+        { "for": 12, "against": 21, "opponent": "Terry Blakeley" },
+        { "for": 21, "against": 16, "opponent": "Derek Howell" },
+        { "for": 21, "against": 6, "opponent": "Josie M Burdon" },
+        { "for": 21, "against": 14, "opponent": "Raymond Ball" },
+        { "for": 21, "against": 20, "opponent": "Graham Goodall" },
+        { "for": 21, "against": 19, "opponent": "Malcolm Hallas" },
+        { "for": 11, "against": 21, "opponent": "Bryan Bonnington" }
+      ],
       "monday": { "games": 9, "wins": 4, "aggDiff": -22 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 7, "wins": 5, "aggDiff": 11 },
@@ -1442,6 +1745,18 @@
         "Crossgates BC (Monday)",
         "Sth Lds Cons (Monday)",
         "Meanwood B (Monday)"
+      ],
+      "results": [
+        { "for": 21, "against": 11, "opponent": "Granville Stoyles" },
+        { "for": 21, "against": 20, "opponent": "Angela Morley" },
+        { "for": 18, "against": 21, "opponent": "Ahmed Hassoun" },
+        { "for": 18, "against": 21, "opponent": "Lyn Dye" },
+        { "for": 10, "against": 21, "opponent": "Harry Dixon" },
+        { "for": 21, "against": 17, "opponent": "Barry Tobin" },
+        { "for": 9, "against": 21, "opponent": "Adam Sharpe" },
+        { "for": 18, "against": 21, "opponent": "Arthur Horne" },
+        { "for": 9, "against": 21, "opponent": "Tina Howard" },
+        { "for": 21, "against": 16, "opponent": "Andrew Ash" }
       ],
       "monday": { "games": 10, "wins": 4, "aggDiff": -24 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1564,6 +1879,35 @@
         "Harehills Park A (Tuesday)",
         "Cross Flatts Pk (Thursday)",
         "Sth Leeds Cons B (Saturday)"
+      ],
+      "results": [
+        { "for": 21, "against": 4, "opponent": "Marie Tate" },
+        { "for": 21, "against": 19, "opponent": "Laura Love" },
+        { "for": 21, "against": 14, "opponent": "Ian Tindal" },
+        { "for": 21, "against": 10, "opponent": "Fred Hargreaves" },
+        { "for": 21, "against": 18, "opponent": "Ralph Taylor" },
+        { "for": 21, "against": 6, "opponent": "Eddie Siberry" },
+        { "for": 9, "against": 21, "opponent": "Chris Boyd" },
+        { "for": 21, "against": 16, "opponent": "Arthur Hutchinson" },
+        { "for": 15, "against": 21, "opponent": "Kevin Smales" },
+        { "for": 20, "against": 21, "opponent": "Brian Thompson" },
+        { "for": 21, "against": 7, "opponent": "Ian Tindal" },
+        { "for": 21, "against": 6, "opponent": "Glen Scott" },
+        { "for": 21, "against": 13, "opponent": "Mick Hall" },
+        { "for": 21, "against": 3, "opponent": "Keith Worrall" },
+        { "for": 21, "against": 8, "opponent": "Colin Firth" },
+        { "for": 16, "against": 21, "opponent": "Jim Bootland" },
+        { "for": 21, "against": 13, "opponent": "Mick Harrison" },
+        { "for": 21, "against": 5, "opponent": "David Turner" },
+        { "for": 21, "against": 0, "opponent": "Julie Cavalli" },
+        { "for": 21, "against": 7, "opponent": "David Holmes" },
+        { "for": 21, "against": 12, "opponent": "Graham Bluff" },
+        { "for": 21, "against": 5, "opponent": "Stephen Morley" },
+        { "for": 21, "against": 12, "opponent": "Ken Stockhill" },
+        { "for": 21, "against": 12, "opponent": "Brenda Brown" },
+        { "for": 19, "against": 21, "opponent": "Joe Adams" },
+        { "for": 21, "against": 16, "opponent": "Beryl Butterfield" },
+        { "for": 21, "against": 9, "opponent": "Joe Adams" }
       ],
       "monday": { "games": 2, "wins": 2, "aggDiff": 19 },
       "tuesday": { "games": 9, "wins": 6, "aggDiff": 36 },
@@ -1701,6 +2045,62 @@
         "Sth Leeds Cons B (Saturday)",
         "Western Flatts (Saturday)"
       ],
+      "results": [
+        { "for": 21, "against": 2, "opponent": "Arthur Horne & Julie Cavalli" },
+        { "for": 21, "against": 8, "opponent": "David Rawson & Frank Hales" },
+        {
+          "for": 21,
+          "against": 3,
+          "opponent": "Julie Keightley & Oliver Delaney"
+        },
+        {
+          "for": 21,
+          "against": 15,
+          "opponent": "Carol Butters & Ken Stockhill"
+        },
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Keith Sellars & Stuart Reardon"
+        },
+        {
+          "for": 12,
+          "against": 21,
+          "opponent": "Peter Simmons & James Wright - Green"
+        },
+        {
+          "for": 21,
+          "against": 7,
+          "opponent": "Nigel Richardson & Trevor Hawkin"
+        },
+        {
+          "for": 21,
+          "against": 10,
+          "opponent": "Pat Skelton & Barbara Taylor"
+        },
+        { "for": 13, "against": 21, "opponent": "S Cahill & Helen Johnson" },
+        {
+          "for": 21,
+          "against": 18,
+          "opponent": "Eddie Fisher & Eugene Kellegher"
+        },
+        { "for": 15, "against": 21, "opponent": "Julie Cavalli & Chris Walsh" },
+        { "for": 21, "against": 7, "opponent": "David Rawson & Mick Ross" },
+        {
+          "for": 21,
+          "against": 13,
+          "opponent": "Chris Bartlett & Julie Keightley"
+        },
+        { "for": 21, "against": 3, "opponent": "John Hodgson" },
+        { "for": 14, "against": 21, "opponent": "Gordon Monk" },
+        { "for": 15, "against": 21, "opponent": "Paul Shackleton" },
+        { "for": 16, "against": 21, "opponent": "Terry Blakeley" },
+        { "for": 21, "against": 12, "opponent": "Sue Geary" },
+        { "for": 21, "against": 11, "opponent": "David Brooke" },
+        { "for": 15, "against": 21, "opponent": "David Brooke" },
+        { "for": 10, "against": 21, "opponent": "Terry Blakeley" },
+        { "for": 21, "against": 15, "opponent": "Clifford Pitts" }
+      ],
       "monday": { "games": 13, "wins": 9, "aggDiff": 79 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1812,6 +2212,54 @@
         "Whitkirk A (Monday)",
         "Sth Lds Cons (Monday)",
         "Gildersome B (Saturday)"
+      ],
+      "results": [
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Chris Walsh & Malcolm Colinson"
+        },
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Kevin Smales & Harvey Lockwood"
+        },
+        {
+          "for": 21,
+          "against": 7,
+          "opponent": "Pat Blackburn & Maureen Sheridan"
+        },
+        { "for": 21, "against": 13, "opponent": "Glennys Ash & Dot Taylor" },
+        {
+          "for": 21,
+          "against": 19,
+          "opponent": "Ann Hughes & Paul Shackleton"
+        },
+        { "for": 21, "against": 9, "opponent": "Sharon Kerry & Jade Kerry" },
+        {
+          "for": 21,
+          "against": 7,
+          "opponent": "Trevor Hawkin & Nigel Richardson"
+        },
+        {
+          "for": 21,
+          "against": 10,
+          "opponent": "Barbara Taylor & Pat Skelton"
+        },
+        { "for": 13, "against": 21, "opponent": "Helen Johnson & S Cahill" },
+        {
+          "for": 21,
+          "against": 18,
+          "opponent": "Eugene Kellegher & Eddie Fisher"
+        },
+        { "for": 15, "against": 21, "opponent": "Chris Walsh & Julie Cavalli" },
+        { "for": 21, "against": 7, "opponent": "Mick Ross & David Rawson" },
+        {
+          "for": 21,
+          "against": 13,
+          "opponent": "Julie Keightley & Chris Bartlett"
+        },
+        { "for": 5, "against": 21, "opponent": "Kevin Smales" }
       ],
       "monday": { "games": 13, "wins": 9, "aggDiff": 64 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1956,6 +2404,54 @@
         "Churwell Pk (Thursday)",
         "Cranmore (Saturday)"
       ],
+      "results": [
+        { "for": 21, "against": 2, "opponent": "Julie Cavalli & Arthur Horne" },
+        { "for": 21, "against": 8, "opponent": "Frank Hales & David Rawson" },
+        {
+          "for": 21,
+          "against": 3,
+          "opponent": "Oliver Delaney & Julie Keightley"
+        },
+        {
+          "for": 21,
+          "against": 15,
+          "opponent": "Ken Stockhill & Carol Butters"
+        },
+        {
+          "for": 17,
+          "against": 21,
+          "opponent": "Stuart Reardon & Keith Sellars"
+        },
+        {
+          "for": 12,
+          "against": 21,
+          "opponent": "James Wright - Green & Peter Simmons"
+        },
+        { "for": 18, "against": 21, "opponent": "Carol Matthews" },
+        { "for": 21, "against": 10, "opponent": "Aubrey Coldrey" },
+        { "for": 21, "against": 5, "opponent": "Frank Armitage" },
+        { "for": 21, "against": 16, "opponent": "Stuart Tennant" },
+        { "for": 18, "against": 21, "opponent": "Susan Harrison" },
+        { "for": 11, "against": 21, "opponent": "Mario Biancardo" },
+        { "for": 21, "against": 11, "opponent": "Malcolm Hallas" },
+        { "for": 21, "against": 10, "opponent": "David Howard" },
+        { "for": 20, "against": 21, "opponent": "Michael Stott" },
+        { "for": 14, "against": 21, "opponent": "John Harvey" },
+        { "for": 18, "against": 21, "opponent": "Terry Blakeley" },
+        { "for": 21, "against": 12, "opponent": "Christine Glynne" },
+        { "for": 21, "against": 8, "opponent": "Barbara Nellis" },
+        { "for": 21, "against": 12, "opponent": "Malcolm Whipp" },
+        { "for": 21, "against": 17, "opponent": "Tony Morris" },
+        { "for": 18, "against": 21, "opponent": "Barry Baldwin" },
+        { "for": 21, "against": 20, "opponent": "Malcolm Hallas" },
+        { "for": 21, "against": 9, "opponent": "Thomas Cuddy" },
+        { "for": 21, "against": 16, "opponent": "Margaret McPhail" },
+        { "for": 21, "against": 7, "opponent": "Malcolm Collinson" },
+        { "for": 21, "against": 6, "opponent": "Val Darwin" },
+        { "for": 21, "against": 10, "opponent": "Peter Nicholson" },
+        { "for": 21, "against": 17, "opponent": "Margaret McPhail" },
+        { "for": 21, "against": 17, "opponent": "Tony Morris" }
+      ],
       "monday": { "games": 6, "wins": 4, "aggDiff": 43 },
       "tuesday": { "games": 4, "wins": 3, "aggDiff": 29 },
       "thursday": { "games": 9, "wins": 4, "aggDiff": 19 },
@@ -2024,6 +2520,18 @@
         "Middleton Comm (Saturday)",
         "Sth Leeds Cons B (Saturday)"
       ],
+      "results": [
+        { "for": 21, "against": 10, "opponent": "David Turner" },
+        { "for": 21, "against": 14, "opponent": "Charlie Cross" },
+        { "for": 21, "against": 15, "opponent": "Bob Pearson" },
+        { "for": 18, "against": 21, "opponent": "Andrew Sykes" },
+        { "for": 21, "against": 13, "opponent": "Dawn Peters" },
+        { "for": 16, "against": 21, "opponent": "Jackie Cross" },
+        { "for": 21, "against": 5, "opponent": "William Mewse" },
+        { "for": 21, "against": 8, "opponent": "Malcolm Whipp" },
+        { "for": 21, "against": 3, "opponent": "Hazel Goodall" },
+        { "for": 21, "against": 20, "opponent": "Michael Ross" }
+      ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 1, "wins": 1, "aggDiff": 11 },
@@ -2060,6 +2568,7 @@
       "cupLosses": 0,
       "beatenTeam": [],
       "beatenByTeam": [],
+      "results": [],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2096,6 +2605,10 @@
       "cupLosses": 0,
       "beatenTeam": [],
       "beatenByTeam": ["Whitkirk A (Monday)", "Crossgates BC (Monday)"],
+      "results": [
+        { "for": 8, "against": 21, "opponent": "T Newsome & G Scholes" },
+        { "for": 10, "against": 21, "opponent": "Michael Wood" }
+      ],
       "monday": { "games": 2, "wins": 0, "aggDiff": -24 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2284,5 +2797,5 @@
       ]
     }
   ],
-  "lastUpdated": "19/07/2022"
+  "lastUpdated": "20/07/2022"
 }
