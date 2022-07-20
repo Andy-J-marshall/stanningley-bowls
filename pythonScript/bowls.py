@@ -368,11 +368,10 @@ for day in stanningleyTeamDays:
 
                 stanningleyPlayerResults[playerName][day.lower()]['games'] += 1
 
-                stanningleyPlayerResults[playerName]['results'].append({
-                    "for": aggregate,
-                    "against": opponentAggregate,
-                    "opponent": opponentsName,
-                })
+                playersResult = playerName + ' ' + \
+                    str(aggregate) + ' - ' + str(opponentAggregate) + ' ' + opponentsName
+                stanningleyPlayerResults[playerName]['results'].append(
+                    playersResult)
 
                 # Wins
                 if aggregate > opponentAggregate:

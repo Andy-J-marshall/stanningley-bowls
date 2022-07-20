@@ -42,6 +42,7 @@ function Players(props) {
         tuesday,
         thursday,
         saturday,
+        results,
     } = playerData;
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
@@ -75,6 +76,7 @@ function Players(props) {
         : beatenOpponents;
     beatenByTeam = beatenByTeam ? arrayToList(beatenByTeam) : beatenByTeam;
     beatenTeam = beatenTeam ? arrayToList(beatenTeam) : beatenTeam;
+    results = results ? arrayToList(results) : results;
     const mondayWins = monday.wins;
     const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
@@ -371,7 +373,8 @@ function Players(props) {
                                         </p>
                                         <p>
                                             Average points conceded ={' '}
-                                            {averagePointsAgainst.toFixed(2)} / 5
+                                            {averagePointsAgainst.toFixed(2)} /
+                                            5
                                         </p>
                                         {homeAveragePoints >= 0 && (
                                             <div>
@@ -448,7 +451,7 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="6">
+                        <Accordion.Item eventKey="5">
                             <Accordion.Header>AGGREGATES</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
@@ -524,6 +527,12 @@ function Players(props) {
                         <Accordion.Item eventKey="6">
                             <Accordion.Header>OPPONENTS</Accordion.Header>
                             <Accordion.Body>
+                                {results.length > 0 && (
+                                    <div>
+                                        <h3>RESULTS</h3>
+                                        <p>{results}</p>
+                                    </div>
+                                )}
                                 {beatenOpponents.length > 0 && (
                                     <div>
                                         <h3>OPPONENTS BEATEN</h3>
