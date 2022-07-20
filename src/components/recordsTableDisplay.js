@@ -75,7 +75,7 @@ function RecordsTableDisplay(props) {
                     ) : null}
                     {bestScore && bestScorePlayer && bestScore > 0 ? (
                         <tr>
-                            <td>Points per game</td>
+                            <td>Points per game*</td>
                             <td>{bestScore.toFixed(2)}</td>
                             <td>{capitalizeText(bestScorePlayer)}</td>
                         </tr>
