@@ -116,13 +116,13 @@ function StatsTableDisplay(props) {
                     ) : null}
                     {stanningleyTeamScore > 0 ? (
                         <tr>
-                            <td>Stanningley points</td>
+                            <td>Stanningley points*</td>
                             <td>{stanningleyTeamScore}</td>
                         </tr>
                     ) : null}
                     {opponentTeamScore > 0 ? (
                         <tr>
-                            <td>Opponents points</td>
+                            <td>Opponents points*</td>
                             <td>{opponentTeamScore}</td>
                         </tr>
                     ) : null}
