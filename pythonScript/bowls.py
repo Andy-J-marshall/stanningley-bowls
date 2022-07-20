@@ -359,17 +359,20 @@ for day in stanningleyTeamDays:
                                              str(row - i)].value
 
             # Store player stats
+                playerNameForResult = playerName
                 if pairsGame:
                     stanningleyPlayerResults[playerName]['pairsPartners'].append(
                         pairsPartner)
+                    playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
                     stanningleyPlayerResults[playerName]['totalPairsAgg'] += aggregate
                     stanningleyPlayerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
                 stanningleyPlayerResults[playerName][day.lower()]['games'] += 1
 
-                playersResult = playerName + ' ' + \
-                    str(aggregate) + ' - ' + str(opponentAggregate) + ' ' + opponentsName
+                playersResult = playerNameForResult + ' ' + \
+                    str(aggregate) + ' - ' + \
+                    str(opponentAggregate) + ' ' + opponentsName
                 stanningleyPlayerResults[playerName]['results'].append(
                     playersResult)
 

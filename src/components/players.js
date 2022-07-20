@@ -1,6 +1,7 @@
 import React from 'react';
 import { ListGroup, Accordion } from 'react-bootstrap';
 import { capitalizeText, arrayToList } from '../helpers/utils';
+import { findBiggestWin } from '../helpers/statsHelper';
 import config from '../config';
 
 function Players(props) {
@@ -23,6 +24,8 @@ function Players(props) {
         cupWins,
         winningPairsPartners,
         losingPairsPartners,
+        beatenBy,
+        beatenOpponents,
         beatenByTeam,
         beatenTeam,
         pairLosses,
@@ -44,6 +47,7 @@ function Players(props) {
     } = playersStats[player];
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
+    const biggestWin = findBiggestWin(results);
     const gamesPlayed = totalLosses + totalWins;
     const homeGamesPlayed = homeWins + homeLosses;
     const awayGamesPlayed = awayWins + awayLosses;
@@ -68,9 +72,13 @@ function Players(props) {
     const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
     const singlesAvg = (singlesAgg - singlesAggAgainst) / singlesGames;
     const pairsAvg = (totalPairsAgg - totalPairsAggAgainst) / pairsGames;
-    beatenByTeam = beatenByTeam ? arrayToList(beatenByTeam) : beatenByTeam;
-    beatenTeam = beatenTeam ? arrayToList(beatenTeam) : beatenTeam;
-    results = results ? arrayToList(results) : results;
+    const beatenByString = beatenBy ? arrayToList(beatenBy) : null;
+    const beatenOpponentsString = beatenOpponents
+        ? arrayToList(beatenOpponents)
+        : null;
+    const beatenByTeamString = beatenByTeam ? arrayToList(beatenByTeam) : null;
+    const beatenTeamString = beatenTeam ? arrayToList(beatenTeam) : null;
+    const resultsString = results ? arrayToList(results) : null;
     const mondayWins = monday.wins;
     const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
@@ -141,7 +149,12 @@ function Players(props) {
                                     {average >= -21 && (
                                         <p>Average = {average.toFixed(2)}</p>
                                     )}
-                                    {/* TODO add biggest win? */}
+                                    {biggestWin && totalWins > 0 && (
+                                        <p>
+                                            Biggest win ={' '}
+                                            {capitalizeText([biggestWin])}
+                                        </p>
+                                    )}
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -164,7 +177,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>RESULTS</Accordion.Header>
+                            <Accordion.Header>WINS & LOSSES</Accordion.Header>
                             <Accordion.Body>
                                 {totalWins > 0 && (
                                     <div>
@@ -512,24 +525,41 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="6">
-                            <Accordion.Header>OPPONENTS</Accordion.Header>
+                            <Accordion.Header>RESULTS</Accordion.Header>
                             <Accordion.Body>
                                 {results.length > 0 && (
                                     <div>
                                         <h3>RESULTS</h3>
-                                        <p>{results}</p>
+                                        <p>{resultsString}</p>
                                     </div>
                                 )}
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="7">
+                            <Accordion.Header>OPPONENTS</Accordion.Header>
+                            <Accordion.Body>
                                 {beatenTeam.length > 0 && (
                                     <div>
                                         <h3>TEAMS BEATEN</h3>
-                                        <p>{beatenTeam}</p>
+                                        <p>{beatenTeamString}</p>
                                     </div>
                                 )}
                                 {beatenByTeam.length > 0 && (
                                     <div>
                                         <h3>TEAMS LOST TO</h3>
-                                        <p>{beatenByTeam}</p>
+                                        <p>{beatenByTeamString}</p>
+                                    </div>
+                                )}
+                                {beatenOpponents.length > 0 && (
+                                    <div>
+                                        <h3>PLAYERS BEATEN</h3>
+                                        <p>{beatenOpponentsString}</p>
+                                    </div>
+                                )}
+                                {beatenBy.length > 0 && (
+                                    <div>
+                                        <h3>PLAYERS LOST TO</h3>
+                                        <p>{beatenByString}</p>
                                     </div>
                                 )}
                             </Accordion.Body>

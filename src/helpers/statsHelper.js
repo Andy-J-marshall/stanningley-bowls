@@ -88,3 +88,26 @@ export function combineTeamStats(statsArray) {
         totalGames,
     };
 }
+
+export function findBiggestWin(playerResults) {
+    let bestWin = null;
+    if (playerResults) {
+        let bestWinMargin = 0;
+        playerResults.forEach((result) => {
+            const resultParts = result.split('-');
+
+            const stanPart = resultParts[0];
+            const stanScore = stanPart.match(/[0-9]+/g)[0].trim();
+
+            const opponentPart = resultParts[1].split(' (')[0];
+            const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();
+
+            const pointsDiff = stanScore - opponentScore;
+            if (pointsDiff > 0 && pointsDiff > bestWinMargin) {
+                bestWinMargin = pointsDiff;
+                bestWin = `${stanScore} - ${opponentScore}`;
+            }
+        });
+    }
+    return bestWin;
+}
