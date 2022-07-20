@@ -53,8 +53,8 @@ function IndividualTeamStats(props) {
                 totalDraws={totalDraws}
                 stanningleyAgg={stanningleyAgg}
                 opponentAgg={opponentAgg}
-                stanningleyTeamScore={stanningleyTotalPoints}
-                opponentTeamScore={opponentTotalPoints}
+                stanningleyTeamPoints={stanningleyTotalPoints}
+                opponentTeamPoints={opponentTotalPoints}
                 homeWins={homeWins}
                 awayWins={awayWins}
                 cupWins={cupWins}

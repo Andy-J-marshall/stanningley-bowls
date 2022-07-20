@@ -38,8 +38,8 @@ function CombinedTeamStats(props) {
                     totalDraws={totalDraws}
                     stanningleyAgg={combinedStanningleyAgg}
                     opponentAgg={combinedOpponentAgg}
-                    stanningleyTeamScore={combinedStanningleyTotalPoints}
-                    opponentTeamScore={combinedOpponentTotalPoints}
+                    stanningleyTeamPoints={combinedStanningleyTotalPoints}
+                    opponentTeamPoints={combinedOpponentTotalPoints}
                     teamsBeaten={combinedBeaten}
                     teamsLostTo={combinedBeatenBy}
                     teamsDrawn={combinedDrawnWith}

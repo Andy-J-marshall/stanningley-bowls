@@ -17,8 +17,8 @@ function StatsTableDisplay(props) {
     const awayDraws = props.awayDraws || 0;
     const stanningleyAgg = props.stanningleyAgg;
     const opponentAgg = props.opponentAgg;
-    const stanningleyTeamScore = props.stanningleyTeamScore;
-    const opponentTeamScore = props.opponentTeamScore;
+    const stanningleyTeamPoints = props.stanningleyTeamPoints;
+    const opponentTeamPoints = props.opponentTeamPoints;
     const leaguePoints = props.leaguePoints;
     const leaguePosition = props.leaguePosition;
     const teamsBeaten = props.teamsBeaten
@@ -114,16 +114,16 @@ function StatsTableDisplay(props) {
                             <td>{opponentAgg}</td>
                         </tr>
                     ) : null}
-                    {stanningleyTeamScore > 0 ? (
+                    {stanningleyTeamPoints > 0 ? (
                         <tr>
                             <td>Stanningley points*</td>
-                            <td>{stanningleyTeamScore}</td>
+                            <td>{stanningleyTeamPoints}</td>
                         </tr>
                     ) : null}
-                    {opponentTeamScore > 0 ? (
+                    {opponentTeamPoints > 0 ? (
                         <tr>
                             <td>Opponents points*</td>
-                            <td>{opponentTeamScore}</td>
+                            <td>{opponentTeamPoints}</td>
                         </tr>
                     ) : null}
                     {totalWins > 0 && teamsBeaten ? (

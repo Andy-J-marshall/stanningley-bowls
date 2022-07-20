@@ -43,8 +43,8 @@ function PlayerRecords(props) {
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
     let bestAverage = -21;
-    let bestScorePlayer = [];
-    let bestScore = 0;
+    let bestPointsPlayer = [];
+    let bestPoints = 0;
 
     // This sets the minimum number of games required for the stats to be counted
     players.forEach((player) => {
@@ -101,7 +101,7 @@ function PlayerRecords(props) {
         const totalGames = totalWins + totalLosses;
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-        const score = p.totalScore / (totalGames - p.cupWins - p.cupLosses);
+        const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
 
         const { monday, tuesday, thursday, saturday } = p;
         const mondayWins = monday.wins;
@@ -250,12 +250,12 @@ function PlayerRecords(props) {
             }
             bestAveragePlayer.push(`${player} (${totalGames})`);
         }
-        if (score >= bestScore && playedMinGames) {
-            if (score > bestScore) {
-                bestScorePlayer = [];
-                bestScore = score;
+        if (points >= bestPoints && playedMinGames) {
+            if (points > bestPoints) {
+                bestPointsPlayer = [];
+                bestPoints = points;
             }
-            bestScorePlayer.push(`${player} (${totalGames})`);
+            bestPointsPlayer.push(`${player} (${totalGames})`);
         }
     });
 
@@ -273,8 +273,8 @@ function PlayerRecords(props) {
                     bestWinPercPlayerOrTeam={bestWinPercPlayer}
                     bestAverage={bestAverage}
                     bestAveragePlayer={bestAveragePlayer}
-                    bestScore={bestScore}
-                    bestScorePlayer={bestScorePlayer}
+                    bestPoints={bestPoints}
+                    bestPointsPlayer={bestPointsPlayer}
                 />
             </div>
         );

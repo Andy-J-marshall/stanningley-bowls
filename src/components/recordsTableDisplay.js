@@ -14,8 +14,8 @@ function RecordsTableDisplay(props) {
     const mostGamesPlayer = props.mostGamesPlayer;
     const bestAverage = props.bestAverage;
     const bestAveragePlayer = props.bestAveragePlayer;
-    const bestScore = props.bestScore;
-    const bestScorePlayer = props.bestScorePlayer;
+    const bestPoints = props.bestPoints;
+    const bestPointsPlayer = props.bestPointsPlayer;
     // Team records
     const bestTeamPointsPerGame = props.bestTeamPointsPerGame;
     const bestTeamPointsPerGameTeam = props.bestTeamPointsPerGameTeam;
@@ -73,11 +73,11 @@ function RecordsTableDisplay(props) {
                             <td>{capitalizeText(bestAveragePlayer)}</td>
                         </tr>
                     ) : null}
-                    {bestScore && bestScorePlayer && bestScore > 0 ? (
+                    {bestPoints && bestPointsPlayer && bestPoints > 0 ? (
                         <tr>
                             <td>points per game***</td>
-                            <td>{bestScore.toFixed(2)}</td>
-                            <td>{capitalizeText(bestScorePlayer)}</td>
+                            <td>{bestPoints.toFixed(2)}</td>
+                            <td>{capitalizeText(bestPointsPlayer)}</td>
                         </tr>
                     ) : null}
                     {bestTeamPointsPerGameTeam &&

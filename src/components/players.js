@@ -13,8 +13,8 @@ function Players(props) {
         totalAggAgainst,
         totalPairsAgg,
         totalPairsAggAgainst,
-        totalScore,
-        totalScoreAgainst,
+        totalPoints,
+        totalPointsAgainst,
         awayLosses,
         homeLosses,
         cupLosses,
@@ -34,10 +34,10 @@ function Players(props) {
         totalHomeAggAgainst,
         totalAwayAgg,
         totalAwayAggAgainst,
-        totalHomeScore,
-        totalHomeScoreAgainst,
-        totalAwayScore,
-        totalAwayScoreAgainst,
+        totalHomePoints,
+        totalHomePointsAgainst,
+        totalAwayPoints,
+        totalAwayPointsAgainst,
         monday,
         tuesday,
         thursday,
@@ -56,13 +56,13 @@ function Players(props) {
         totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
     const cupGamesPlayed = cupWins + cupLosses;
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
-    const averageScore = totalScore / (gamesPlayed - cupGamesPlayed);
-    const averageScoreAgainst =
-        totalScoreAgainst / (gamesPlayed - cupGamesPlayed);
-    const homeAverageScore = totalHomeScore / homeGamesPlayed;
-    const homeAverageScoreAgainst = totalHomeScoreAgainst / homeGamesPlayed;
-    const awayAverageScore = totalAwayScore / awayGamesPlayed;
-    const awayAverageScoreAgainst = totalAwayScoreAgainst / awayGamesPlayed;
+    const averagePoints = totalPoints / (gamesPlayed - cupGamesPlayed);
+    const averagePointsAgainst =
+        totalPointsAgainst / (gamesPlayed - cupGamesPlayed);
+    const homeAveragePoints = totalHomePoints / homeGamesPlayed;
+    const homeAveragePointsAgainst = totalHomePointsAgainst / homeGamesPlayed;
+    const awayAveragePoints = totalAwayPoints / awayGamesPlayed;
+    const awayAveragePointsAgainst = totalAwayPointsAgainst / awayGamesPlayed;
     const pairsGames = pairLosses + pairWins;
     const singlesGames = gamesPlayed - pairsGames;
     const singlesAgg = totalAgg - totalPairsAgg;
@@ -353,42 +353,42 @@ function Players(props) {
                         <Accordion.Item eventKey="4">
                             <Accordion.Header>POINTS</Accordion.Header>
                             <Accordion.Body>
-                                {averageScore >= 0 && (
+                                {averagePoints >= 0 && (
                                     <div>
                                         <h3>TOTAL</h3>
                                         <p>
-                                            Points scored = {totalScore} /{' '}
+                                            Points scored = {totalPoints} /{' '}
                                             {(gamesPlayed - cupGamesPlayed) * 5}
                                         </p>
                                         <p>
                                             Points conceded ={' '}
-                                            {totalScoreAgainst} /{' '}
+                                            {totalPointsAgainst} /{' '}
                                             {(gamesPlayed - cupGamesPlayed) * 5}
                                         </p>
                                         <p>
                                             Average points ={' '}
-                                            {averageScore.toFixed(2)} / 5
+                                            {averagePoints.toFixed(2)} / 5
                                         </p>
                                         <p>
                                             Average points conceded ={' '}
-                                            {averageScoreAgainst.toFixed(2)} / 5
+                                            {averagePointsAgainst.toFixed(2)} / 5
                                         </p>
-                                        {homeAverageScore >= 0 && (
+                                        {homeAveragePoints >= 0 && (
                                             <div>
                                                 <h3>HOME</h3>
                                                 <p>
                                                     Home points scored ={' '}
-                                                    {totalHomeScore} /{' '}
+                                                    {totalHomePoints} /{' '}
                                                     {homeGamesPlayed * 5}
                                                 </p>
                                                 <p>
                                                     Home points conceded ={' '}
-                                                    {totalHomeScoreAgainst} /{' '}
+                                                    {totalHomePointsAgainst} /{' '}
                                                     {homeGamesPlayed * 5}
                                                 </p>
                                                 <p>
                                                     Average home points ={' '}
-                                                    {homeAverageScore.toFixed(
+                                                    {homeAveragePoints.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
@@ -396,29 +396,29 @@ function Players(props) {
                                                 <p>
                                                     Average home points conceded
                                                     ={' '}
-                                                    {homeAverageScoreAgainst.toFixed(
+                                                    {homeAveragePointsAgainst.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
                                                 </p>
                                             </div>
                                         )}
-                                        {awayAverageScore >= 0 && (
+                                        {awayAveragePoints >= 0 && (
                                             <div>
                                                 <h3>AWAY</h3>
                                                 <p>
                                                     Away points scored ={' '}
-                                                    {totalAwayScore} /{' '}
+                                                    {totalAwayPoints} /{' '}
                                                     {awayGamesPlayed * 5}
                                                 </p>
                                                 <p>
                                                     Away points conceded ={' '}
-                                                    {totalAwayScoreAgainst} /{' '}
+                                                    {totalAwayPointsAgainst} /{' '}
                                                     {awayGamesPlayed * 5}
                                                 </p>
                                                 <p>
                                                     Average away points ={' '}
-                                                    {awayAverageScore.toFixed(
+                                                    {awayAveragePoints.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
@@ -426,7 +426,7 @@ function Players(props) {
                                                 <p>
                                                     Average away points conceded
                                                     ={' '}
-                                                    {awayAverageScoreAgainst.toFixed(
+                                                    {awayAveragePointsAgainst.toFixed(
                                                         2
                                                     )}{' '}
                                                     / 5
