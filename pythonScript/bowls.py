@@ -45,6 +45,13 @@ def deduplicateNames(name):
     return name.lower()
 
 
+def anonymiseNames(name):
+    if name.lower() == 'alison woodfine':
+        name = 'Ali'
+    if name.lower() == 'andy waller':
+        name = 'Andy W'
+    return name
+
 for day in stanningleyTeamDays:
     # Goes through each sheet in turn
     sheet = wb[day]
@@ -324,6 +331,7 @@ for day in stanningleyTeamDays:
 
             if opponentsName.lower() != '*walkover*':
                 playerName = sheet[stanPlayerNameCol + str(row)].value
+                playerName = anonymiseNames(playerName)
                 aggregate = sheet[stanPlayerScoreCol + str(row)].value
                 opponentAggregate = sheet[opponentPlayerScoreCol +
                                           str(row)].value
@@ -361,6 +369,7 @@ for day in stanningleyTeamDays:
             # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
+                    pairsPartner = anonymiseNames(pairsPartner)
                     stanningleyPlayerResults[playerName]['pairsPartners'].append(
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner

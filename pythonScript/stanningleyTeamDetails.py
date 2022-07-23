@@ -291,7 +291,7 @@ stanningleyPlayerResults = {
             'aggDiff': 0,
         },
     },
-    'alison woodfine': {
+    'ali': {
         'totalPoints': 0,
         'totalAgg': 0,
         'totalPointsAgainst': 0,
@@ -1086,7 +1086,7 @@ stanningleyPlayerResults = {
             'aggDiff': 0,
         },
     },
-    'andy waller': {
+    'andy w': {
         'totalPoints': 0,
         'totalAgg': 0,
         'totalPointsAgainst': 0,

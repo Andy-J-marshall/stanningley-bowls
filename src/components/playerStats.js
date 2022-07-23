@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import React, { useState, Fragment } from 'react';
 import Player from './players';
 import { ListGroup, Form, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
@@ -37,10 +37,6 @@ function PlayerStats(props) {
             ></Player>
         );
     }
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
 
     return (
         <div id="player-stat" className="center">
