@@ -79,7 +79,6 @@ function Players(props) {
         : null;
     const beatenByTeamString = beatenByTeam ? arrayToList(beatenByTeam) : null;
     const beatenTeamString = beatenTeam ? arrayToList(beatenTeam) : null;
-    const resultsString = results ? arrayToList(results) : null;
     const mondayWins = monday.wins;
     const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
@@ -136,6 +135,7 @@ function Players(props) {
     return (
         <div>
             <ListGroup.Item>
+                {/* TODO change Andy W and Alison names */}
                 <h2>{capitalizeText([name])}</h2>
                 {gamesPlayed === 0 && <p>No games played</p>}
                 {gamesPlayed > 0 && (

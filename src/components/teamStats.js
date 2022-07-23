@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
@@ -21,6 +21,10 @@ function TeamStats(props) {
     const saturdayStats = teamResults.find(
         (team) => team.day.toLowerCase() === 'saturday'
     );
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     function allComponent() {
         return <CombinedTeamStats stats={teamResults} />;
