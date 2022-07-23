@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 import Player from './players';
 import { ListGroup, Form, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
@@ -12,9 +12,17 @@ function PlayerStats(props) {
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
+    const [loaded, setLoaded] = useState(false);
 
     const keys = Object.keys(playerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
+
+    useEffect(() => {
+        if (!loaded) {
+            window.scrollTo(0, 0);
+        }
+        setLoaded(true);
+    });
 
     const handleSubmit = (event) => {
         event.preventDefault();
