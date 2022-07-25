@@ -79,3 +79,15 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 JSON file will be created: `src/data/bowlsStats{year}.json`.
 
 You might want to format the JSON document to make it easier to read
+
+
+
+
+        const modifier = "Meta";
+        await page.focus("#root");
+        await page.keyboard.press(`${modifier}+KeyA`);
+        await page.keyboard.press(`${modifier}+KeyC`);
+        await expect(page).toHaveTitle(/Fun With Countries/);
+        // await page.keyboard.press(`${modifier}+KeyV`);
+        // await page.keyboard.press(`${modifier}+KeyV`);
+        // expect(await page.evaluate(() => document.querySelector('div').textContent)).toBe('123123');

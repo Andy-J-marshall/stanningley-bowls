@@ -21,6 +21,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@playwright/test": "^1.24.0",
     "cypress": "^10.3.0",
     "cypress-iframe": "^1.0.1"
   },
