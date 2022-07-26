@@ -2,7 +2,7 @@
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
   "scripts": {
-    "update-stats": "python3 ./pythonScript/bowls.py",
+    "update-stats": "python3 ./scripts/pythonScript/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",

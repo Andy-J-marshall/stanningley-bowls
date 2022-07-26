@@ -32,7 +32,7 @@ Fixture images will need to be updated for each year. Most of the club details a
 
 # Bowls script
 
-The script that collates stats from all Stanningley bowls club teams can be found in the `/pythonScript` directory.
+The script that collates stats from all Stanningley bowls club teams can be found in the `/scripts/pythonScript` directory.
 
 Bowlsnet links:
 
