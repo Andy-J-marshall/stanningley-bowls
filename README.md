@@ -51,7 +51,7 @@ Bowlsnet links:
 - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
 - Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
 - Generate the reports on bowlsnet. This can either by running the Cypress tests or manually. To generate them using Cypress:
-  - Run `npm run tests`
+  - Run `npm run statsFromBowlsNet`
   - These will output the reports to local html files in `files/htmlFiles/`, which can be copied and pasted into the Excel file.
 - To generate manually:
   - Navigate to each of the above 4 URLs, go to Info, then Reports:
