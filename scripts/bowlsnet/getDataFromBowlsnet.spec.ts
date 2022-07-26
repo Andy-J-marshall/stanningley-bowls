@@ -82,8 +82,10 @@ for (const team of teams) {
     ]);
 
     await newPage.bringToFront();
-    const value = await newPage.$eval('body', (el) => el.innerHTML);
-    const html = `<html><body>${value}</body></html>`;
+    const html = await newPage.$eval('body', (el) => {
+      const value = el.innerHTML;
+      return `<html><body>${value}</body></html>`;
+    });
 
     fs.writeFile(filePath, html, (err) => {
       if (err) {
