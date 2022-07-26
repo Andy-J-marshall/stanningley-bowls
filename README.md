@@ -32,7 +32,7 @@ Fixture images will need to be updated for each year. Most of the club details a
 
 # Bowls script
 
-The script that collates stats from all Stanningley bowls club teams can be found in the `/pythonScript` directory.
+The script that collates stats from all Stanningley bowls club teams can be found in the `/scripts/pythonScript` directory.
 
 Bowlsnet links:
 
@@ -51,10 +51,8 @@ Bowlsnet links:
 - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
 - Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
 - Generate the reports on bowlsnet. This can either by running the Cypress tests or manually. To generate them using Cypress:
-  - Run `npm run cypress:open`
-  - Select Integration tests and Chrome as the browser.
-  - Run the tests in the generate-data.cy.js file (Bowlsnet is flaky so may need to rerun occasionally)
-  - These will output the reports that can be copied and pasted into the Excel file.
+  - Run `npm run statsFromBowlsNet`
+  - These will output the reports to local html files in `files/htmlFiles/`, which can be copied and pasted into the Excel file.
 - To generate manually:
   - Navigate to each of the above 4 URLs, go to Info, then Reports:
   - Select Formatted Report

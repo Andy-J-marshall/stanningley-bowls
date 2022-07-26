@@ -93,34 +93,22 @@ for day in stanningleyTeamDays:
     # Find league position for Stanningley teams
     leaguePositionIndex = 1
     leaguePositionRow = 0
-    currentLeaguePoints = -1
-    currentLeaguePoints = -1
     leaguePositionCol = 'A'
     satLeaguePositionCol = 'B'
-    leaguePointsCol = 'I'
-    satLeaguePointsCol = 'A'
-    monLeaguePointsCol = 'C'
     leagueTeamNameCol = 'B'
     satLeagueTeamNameCol = 'C'
 
     if day == 'Saturday':
         leagueTeamNameCol = satLeagueTeamNameCol
         leaguePositionCol = satLeaguePositionCol
-        leaguePointsCol = satLeaguePointsCol
-    if day == 'Monday':
-        leaguePointsCol = monLeaguePointsCol
 
     for row in sheet[leagueTeamNameCol]:
         if row.value and type(row.value) is str and row.value.lower() in stanningleyTeamNames:
             leaguePosition = sheet[leaguePositionCol +
                                    str(leaguePositionIndex)].value
-            leaguePoints = sheet[leaguePointsCol +
-                                 str(leaguePositionIndex)].value
             if type(leaguePosition) is int:
                 leaguePositionRow = leaguePositionIndex
                 currentLeaguePosition = leaguePosition
-            if type(leaguePoints) is int:
-                currentLeaguePoints = leaguePoints
         leaguePositionIndex = leaguePositionIndex + 1
     # Find team results and scores
     awayWins = 0
@@ -246,7 +234,6 @@ for day in stanningleyTeamDays:
         'beatenBy': beatenBy,
         'drawnWith': drawnWith,
         'leaguePosition': currentLeaguePosition,
-        'leaguePoints': currentLeaguePoints,
         'results': results
     }
     stanningleyTeamResults.append(teamResults)

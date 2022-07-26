@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/files
 
 # Source data
 *.csv
@@ -15,3 +16,6 @@
 /.vscode
 
 __pycache__
+/test-results/
+/playwright-report/
+/playwright/.cache/

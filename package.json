@@ -2,11 +2,12 @@
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
   "scripts": {
-    "cypress:open": "npx cypress open",
-    "update-stats": "python3 ./pythonScript/bowls.py",
+    "update-stats": "python3 ./scripts/pythonScript/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "statsFromBowlsNet": "npx playwright test",
+    "statsFromBowlsNet:debug": "npx playwright test --debug"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
@@ -21,8 +22,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "cypress": "^10.3.0",
-    "cypress-iframe": "^1.0.1"
+    "@playwright/test": "^1.24.0"
   },
   "browserslist": {
     "production": [
