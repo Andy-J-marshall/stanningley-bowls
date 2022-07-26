@@ -82,16 +82,8 @@ for (const team of teams) {
     ]);
 
     await newPage.bringToFront();
-    const html = await newPage.$eval('body', (el) => {
-      const value = el.innerHTML;
-      return `<html><body>${value}</body></html>`;
-    });
-
-    fs.writeFile(filePath, html, (err) => {
-      if (err) {
-        console.log(`Failed to update ${day} html file`);
-        console.error(err);
-      }
-    });
+    const value = await newPage.$eval('body', (el) => el.innerHTML);
+    const html = `<html><body>${value}</body></html>`;
+    fs.writeFileSync(filePath, html);
   });
 }
