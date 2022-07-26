@@ -6,7 +6,9 @@
     "update-stats": "python3 ./pythonScript/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "tests": "npx playwright test",
+    "tests:debug": "npx playwright test --debug"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
