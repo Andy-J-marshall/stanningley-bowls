@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/files
 
 # Source data
 *.csv
