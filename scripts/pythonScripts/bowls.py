@@ -52,6 +52,7 @@ def anonymiseNames(name):
         name = 'Andy W'
     return name
 
+
 for day in stanningleyTeamDays:
     # Goes through each sheet in turn
     sheet = wb[day]
@@ -435,7 +436,8 @@ for day in stanningleyTeamDays:
 dataToExport = {
     'playerResults': stanningleyPlayerResults,
     'teamResults': stanningleyTeamResults,
-    'lastUpdated': date.today().strftime("%d/%m/%Y")
+    'lastUpdated': date.today().strftime("%d/%m/%Y"),
+    'statsYear': year
 }
 
 filename = 'src/data/bowlsStats' + year + '.json'
