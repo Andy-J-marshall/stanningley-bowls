@@ -2,7 +2,7 @@
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
   "scripts": {
-    "get-latest-stats": "python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2022.xlsx",
+    "get-latest-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2022.xlsx",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py",
     "start": "react-scripts start",
     "build": "react-scripts build",

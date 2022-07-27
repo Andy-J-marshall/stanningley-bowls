@@ -48,12 +48,14 @@ Bowlsnet links:
 
 ## Update the player stats
 
-- Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
-- Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
-- Generate the reports on bowlsnet. This can either by running the Cypress tests or manually. To generate them using Cypress:
+Generate the reports on bowlsnet. This can either by running the automated Playwright tests or manually.
+
+- To generate them using Playwright:
   - Run `npm run get-latest-stats` - these will output local html files in `files/htmlFiles/` and open them in your web browser
   - Copy contents of each file (CMD + A, CMD + C) into the Excel file (CMD + V)
 - To generate manually:
+  - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
+  - Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
   - Navigate to each of the above 4 URLs, go to Info, then Reports:
   - Select Formatted Report
   - Click Output Tables
