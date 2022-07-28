@@ -1,5 +1,12 @@
 import { expect, Locator, Page } from '@playwright/test';
 
+interface PlayerStats {
+  totalGamesPlayed: number;
+  totalWins: number;
+  totalLosses: number;
+  totalAverage: number;
+}
+
 export class PlayerStatsPage {
   readonly page: Page;
   readonly searchButton: Locator;
@@ -15,6 +22,10 @@ export class PlayerStatsPage {
   readonly aggAccordionButton: Locator;
   readonly resultsAccordionButton: Locator;
   readonly opponentsAccordionButton: Locator;
+  readonly totalGamesPlayed: Locator;
+  readonly totalWins: Locator;
+  readonly totalLosses: Locator;
+  readonly totalAverage: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -33,6 +44,10 @@ export class PlayerStatsPage {
     this.aggAccordionButton = page.locator('#stats-aggregate');
     this.resultsAccordionButton = page.locator('#stats-results');
     this.opponentsAccordionButton = page.locator('#stats-opponents');
+    this.totalGamesPlayed = page.locator('#totalGamesPlayed');
+    this.totalWins = page.locator('#totalWins');
+    this.totalLosses = page.locator('#totalLosses');
+    this.totalAverage = page.locator('#totalAverage');
   }
 
   async goto() {
@@ -62,5 +77,18 @@ export class PlayerStatsPage {
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
+  }
+
+  async validateSummaryStats(playerStats: PlayerStats) {
+    await expect(this.totalGamesPlayed).toHaveText(
+      `Games played = ${playerStats.totalGamesPlayed}`
+    );
+    await expect(this.totalWins).toHaveText(`Wins = ${playerStats.totalWins}`);
+    await expect(this.totalLosses).toHaveText(
+      `Losses = ${playerStats.totalLosses}`
+    );
+    await expect(this.totalAverage).toHaveText(
+      `Average = ${playerStats.totalAverage.toFixed(2)}`
+    );
   }
 }

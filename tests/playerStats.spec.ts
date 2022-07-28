@@ -27,7 +27,32 @@ for (const player of players) {
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkNumberOfPlayersReturned(1);
     await playerStatsPage.checkPlayerName(player);
+  });
+
+  test(`Summary of player stats are correct for ${player}`, async () => {
+    await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkAccordionHeadersExist();
+    const {
+      totalAgg,
+      totalAggAgainst,
+      homeWins,
+      awayWins,
+      cupWins,
+      homeLosses,
+      awayLosses,
+      cupLosses,
+    } = bowlsStats2022.playerResults[player.toLowerCase()];
+    const totalWins = cupWins + homeWins + awayWins;
+    const totalLosses = cupLosses + homeLosses + awayLosses;
+    const totalGamesPlayed = totalLosses + totalWins;
+    const totalAverage = (totalAgg - totalAggAgainst) / totalGamesPlayed;
+    const stats = {
+      totalGamesPlayed,
+      totalWins,
+      totalLosses,
+      totalAverage,
+    };
+    await playerStatsPage.validateSummaryStats(stats);
   });
 }
 
