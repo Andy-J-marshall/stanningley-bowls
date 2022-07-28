@@ -1,13 +1,14 @@
 import { expect, test } from '@playwright/test';
 import bowlsStats2022 from '../src/data/bowlsStats2022.json';
+import { PlayerStatsPage } from './pages/playerStatsPage';
 
-const numberOfPlayers = Object.keys(bowlsStats2022.playerResults).length;
+const totalNumberOfPlayers = Object.keys(bowlsStats2022.playerResults).length;
 const { statsYear } = bowlsStats2022;
-
-// TODO add POM
+let playerStatsPage: PlayerStatsPage;
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/#/stats/player');
+  playerStatsPage = new PlayerStatsPage(page);
+  await playerStatsPage.goto();
 });
 
 test('Stats are checking for current year', async () => {
@@ -15,19 +16,27 @@ test('Stats are checking for current year', async () => {
   expect(statsYear).toEqual(currentYear.toString());
 });
 
-test('Stats search bar returns correct player', async ({ page }) => {
-  await page
-    .locator(
-      '#player-search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
-    )
-    .type('Andy Marshall'); // TODO change
-  await page.locator('#player-search').click();
-  await page.locator('#player-search-form > button').click();
-  await expect(page.locator('#stats .list-group-item')).toHaveCount(1);
+const players: Array<string> = [
+  'Andy Marshall',
+  'Andy W',
+  'Jack Roberts',
+  'Paul Bowes',
+];
+for (const player of players) {
+  test(`Stats search bar can return ${player} stats`, async () => {
+    await playerStatsPage.searchForPlayer(player);
+    await playerStatsPage.checkNumberOfPlayersReturned(1);
+    // TODO check stats
+  });
+}
+
+test('All players appear by default', async () => {
+  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
-test('All players appear by default', async ({ page }) => {
-  await expect(page.locator('#stats .list-group-item')).toHaveCount(
-    numberOfPlayers
-  );
+test(`Stats search bar can show all player stats`, async () => {
+  await playerStatsPage.searchForPlayer('Donald Shaw');
+  await playerStatsPage.checkNumberOfPlayersReturned(1);
+  await playerStatsPage.searchForPlayer('Show All');
+  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
