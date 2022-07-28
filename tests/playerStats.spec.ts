@@ -1,19 +1,15 @@
-import { expect, test } from '@playwright/test';
-import bowlsStats2022 from '../src/data/bowlsStats2022.json';
+import { test } from '@playwright/test';
+import bowlsStatsExample from './fixtures/bowlsStatsExample.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
-const totalNumberOfPlayers = Object.keys(bowlsStats2022.playerResults).length;
-const { statsYear } = bowlsStats2022;
+const totalNumberOfPlayers = Object.keys(
+  bowlsStatsExample.playerResults
+).length;
 let playerStatsPage: PlayerStatsPage;
 
 test.beforeEach(async ({ page }) => {
   playerStatsPage = new PlayerStatsPage(page);
   await playerStatsPage.goto();
-});
-
-test('Stats are checking for current year', async () => {
-  const currentYear = new Date().getFullYear();
-  expect(statsYear).toEqual(currentYear.toString());
 });
 
 const players: Array<string> = [
@@ -41,7 +37,7 @@ for (const player of players) {
       homeLosses,
       awayLosses,
       cupLosses,
-    } = bowlsStats2022.playerResults[player.toLowerCase()];
+    } = bowlsStatsExample.playerResults[player.toLowerCase()];
     const totalWins = cupWins + homeWins + awayWins;
     const totalLosses = cupLosses + homeLosses + awayLosses;
     const totalGamesPlayed = totalLosses + totalWins;
