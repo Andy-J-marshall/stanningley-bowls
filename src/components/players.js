@@ -135,13 +135,14 @@ function Players(props) {
     return (
         <div>
             <ListGroup.Item>
-                {/* TODO change Andy W and Alison names */}
-                <h2>{capitalizeText([name])}</h2>
+                <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
                 {gamesPlayed === 0 && <p>No games played</p>}
                 {gamesPlayed > 0 && (
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
-                            <Accordion.Header>SUMMARY</Accordion.Header>
+                            <Accordion.Header id="stats-summary">
+                                SUMMARY
+                            </Accordion.Header>
                             <Accordion.Body>
                                 <div>
                                     <p>Games played = {gamesPlayed}</p>
@@ -160,7 +161,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
-                            <Accordion.Header>GAMES PLAYED</Accordion.Header>
+                            <Accordion.Header id="stats-games">GAMES PLAYED</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
                                 <p>
@@ -178,7 +179,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>WINS & LOSSES</Accordion.Header>
+                            <Accordion.Header id="stats-wl">WINS & LOSSES</Accordion.Header>
                             <Accordion.Body>
                                 {totalWins > 0 && (
                                     <div>
@@ -299,7 +300,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
-                            <Accordion.Header>AVERAGES</Accordion.Header>
+                            <Accordion.Header id="stats-average">AVERAGES</Accordion.Header>
                             <Accordion.Body>
                                 {average >= -21 && (
                                     <div>
@@ -361,7 +362,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
-                            <Accordion.Header>POINTS</Accordion.Header>
+                            <Accordion.Header id="stats-points">POINTS</Accordion.Header>
                             <Accordion.Body>
                                 {averagePoints >= 0 && (
                                     <div>
@@ -453,7 +454,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="5">
-                            <Accordion.Header>AGGREGATES</Accordion.Header>
+                            <Accordion.Header id="stats-aggregate">AGGREGATES</Accordion.Header>
                             <Accordion.Body>
                                 <h3>TOTAL</h3>
                                 <p>
@@ -526,7 +527,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="6">
-                            <Accordion.Header>RESULTS</Accordion.Header>
+                            <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
                             <Accordion.Body>
                                 {results.length > 0 && (
                                     <PlayerResults results={results} />
@@ -534,7 +535,7 @@ function Players(props) {
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="7">
-                            <Accordion.Header>OPPONENTS</Accordion.Header>
+                            <Accordion.Header id="stats-opponents">OPPONENTS</Accordion.Header>
                             <Accordion.Body>
                                 {beatenTeam.length > 0 && (
                                     <div>

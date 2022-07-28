@@ -26,7 +26,8 @@ for (const player of players) {
   test(`Stats search bar can return ${player} stats`, async () => {
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkNumberOfPlayersReturned(1);
-    // TODO check stats
+    await playerStatsPage.checkPlayerName(player);
+    await playerStatsPage.checkAccordionHeadersExist();
   });
 }
 
