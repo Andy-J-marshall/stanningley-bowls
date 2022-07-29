@@ -96,16 +96,16 @@ export function findBiggestWin(playerResults) {
         playerResults.forEach((result) => {
             const resultParts = result.split('-');
 
-            const stanPart = resultParts[0];
-            const stanScore = stanPart.match(/[0-9]+/g)[0].trim();
+            const teamPart = resultParts[0];
+            const teamScore = teamPart.match(/[0-9]+/g)[0].trim();
 
             const opponentPart = resultParts[1].split(' (')[0];
             const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();
 
-            const pointsDiff = stanScore - opponentScore;
+            const pointsDiff = teamScore - opponentScore;
             if (pointsDiff > 0 && pointsDiff > bestWinMargin) {
                 bestWinMargin = pointsDiff;
-                bestWin = `${stanScore} - ${opponentScore}`;
+                bestWin = `${teamScore} - ${opponentScore}`;
             }
         });
     }

@@ -8,9 +8,9 @@ function PlayerResults(props) {
     const resultsArray = results.map((result) => {
         const resultParts = result.split('-');
 
-        const stanPart = resultParts[0];
-        const playerScore = stanPart.match(/[0-9]+/g)[0].trim();
-        const player = stanPart.split(/[0-9]+/g)[0].trim();
+        const teamPart = resultParts[0];
+        const playerScore = teamPart.match(/[0-9]+/g)[0].trim();
+        const player = teamPart.split(/[0-9]+/g)[0].trim();
 
         const opponentPart = resultParts[1].split(' (')[0];
         const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();

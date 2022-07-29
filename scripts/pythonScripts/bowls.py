@@ -270,16 +270,16 @@ for day in teamDays:
             updateStats = True
             if not cupGame:
                 homeGame = True
-            stanPlayerNameCol = homePlayerCol
-            stanPlayerScoreCol = homePlayerScoreCol
+            playerNameCol = homePlayerCol
+            playerScoreCol = homePlayerScoreCol
             opponentPlayerNameCol = awayPlayerCol
             opponentPlayerScoreCol = awayPlayerScoreCol
         if row in awayPlayerRow:
             updateStats = True
             if not cupGame:
                 awayGame = True
-            stanPlayerNameCol = awayPlayerCol
-            stanPlayerScoreCol = awayPlayerScoreCol
+            playerNameCol = awayPlayerCol
+            playerScoreCol = awayPlayerScoreCol
             opponentPlayerNameCol = homePlayerCol
             opponentPlayerScoreCol = homePlayerScoreCol
 
@@ -288,27 +288,27 @@ for day in teamDays:
             opponentsName = sheet[opponentPlayerNameCol + str(row)].value
 
             if opponentsName.lower() != '*walkover*':
-                playerName = sheet[stanPlayerNameCol + str(row)].value
+                playerName = sheet[playerNameCol + str(row)].value
                 playerName = anonymiseNames(playerName)
-                aggregate = sheet[stanPlayerScoreCol + str(row)].value
+                aggregate = sheet[playerScoreCol + str(row)].value
                 opponentAggregate = sheet[opponentPlayerScoreCol +
                                           str(row)].value
                 pairsGame = False
                 if aggregate is None:
                     pairsGame = True
-                    pairsPartner = sheet[stanPlayerNameCol +
+                    pairsPartner = sheet[playerNameCol +
                                          str(row - 1)].value
                     secondOpponent = sheet[opponentPlayerNameCol +
                                            str(row - 1)].value
-                    aggregate = sheet[stanPlayerScoreCol + str(row - 1)].value
+                    aggregate = sheet[playerScoreCol + str(row - 1)].value
                     opponentAggregate = sheet[opponentPlayerScoreCol +
                                               str(row - 1)].value
                 else:
-                    pointsRowBelow = sheet[stanPlayerScoreCol +
+                    pointsRowBelow = sheet[playerScoreCol +
                                            str(row + 1)].value
                     if pointsRowBelow is None:
                         pairsGame = True
-                        pairsPartner = sheet[stanPlayerNameCol +
+                        pairsPartner = sheet[playerNameCol +
                                              str(row + 1)].value
                         secondOpponent = sheet[opponentPlayerNameCol +
                                                str(row + 1)].value
