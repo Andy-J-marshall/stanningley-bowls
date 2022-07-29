@@ -29,7 +29,7 @@ awayTeamNameCol = 'B'
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file
-path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
+path = str(Path.cwd()) + '/files/' + 'combinedBowlsResults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 
