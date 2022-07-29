@@ -11,8 +11,11 @@ stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
 stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays
 stanningleyPlayers = stanningleyTeamDetails.stanningleyPlayers
 duplicateTeamMemberNames = stanningleyTeamDetails.duplicateTeamMemberNames
-stanningleyPlayerResults = stanningleyTeamDetails.stanningleyPlayerResults
 traitorPlayers = stanningleyTeamDetails.traitorPlayers
+stanningleyPlayerResults = stanningleyTeamDetails.returnListOfPlayerStats()
+anonymiseNames = stanningleyTeamDetails.anonymiseNames
+deduplicateNames = stanningleyTeamDetails.deduplicateNames
+calculateGamePoints = stanningleyTeamDetails.calculateGamePoints
 
 # Spreadsheet info
 homePlayerCol = 'A'
@@ -33,24 +36,6 @@ path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 stanningleyTeamResults = []
-
-
-def deduplicateNames(name):
-    if name == 'Duncan Mc Phail':
-        name = 'Duncan McPhail'
-    if name == 'Andrew Marshall':
-        name = 'Andy Marshall'
-    if name == 'Stuart Watson':
-        name = 'Stewart Watson'
-    return name.lower()
-
-
-def anonymiseNames(name):
-    if name.lower() == 'alison woodfine':
-        name = 'Ali'
-    if name.lower() == 'andy waller':
-        name = 'Andy W'
-    return name
 
 
 for day in stanningleyTeamDays:
@@ -257,22 +242,6 @@ for day in stanningleyTeamDays:
             if awayPlayerName.lower() not in traitorPlayers[day]:
                 awayPlayerRow.append(awayPlayerIndex)
         awayPlayerIndex = awayPlayerIndex + 1
-
-    # Converts points to team points
-    def calculateGamePoints(points):
-        if points == 21:
-            gamePoints = 5
-        if points < 5:
-            gamePoints = 0
-        if points >= 5 and points < 10:
-            gamePoints = 1
-        if points >= 10 and points < 15:
-            gamePoints = 2
-        if points >= 15 and points < 18:
-            gamePoints = 3
-        if points >= 18 and points < 21:
-            gamePoints = 4
-        return gamePoints
 
     # Find each players' results
     for row in range(1, sheet.max_row + 1):

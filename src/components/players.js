@@ -271,7 +271,9 @@ function Players(props) {
                                                                 ].timesPaired
                                                             }{' '}
                                                             played with{' '}
-                                                            {partner}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
                                                         </p>
                                                     );
                                                 })}
@@ -285,7 +287,10 @@ function Players(props) {
                                                                     partner
                                                                 ].timesPaired
                                                             }{' '}
-                                                            won with {partner}
+                                                            won with{' '}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
                                                         </p>
                                                     );
                                                 })}
@@ -299,7 +304,10 @@ function Players(props) {
                                                                     partner
                                                                 ].timesPaired
                                                             }{' '}
-                                                            lost with {partner}
+                                                            lost with{' '}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
                                                         </p>
                                                     );
                                                 })}

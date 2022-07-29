@@ -68,7 +68,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
 
 If a new player joins or a team is entered into a new league, you'll need to update the details in `stanningleyTeamDetails.py`.
 
-e.g. a new player would have to be added into the `stanningleyPlayers` array and `stanningleyPlayerResults` dict.
+e.g. a new player would have to be added into the `stanningleyPlayers` list.
 
 If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array
 
