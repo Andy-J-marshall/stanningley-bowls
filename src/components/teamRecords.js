@@ -57,8 +57,8 @@ function TeamRecords(props) {
             cupLosses,
             homeDraws,
             awayDraws,
-            stanningleyAgg,
-            stanningleyTotalPoints,
+            agg,
+            totalPoints,
             opponentAgg,
             opponentTotalPoints,
         } = stats;
@@ -71,10 +71,10 @@ function TeamRecords(props) {
 
         const gamesPerMatch = day === 'Monday' || day === 'Wednesday' ? 6 : 8; // there are only 6 games on a Monday and Wednesday
         const pointsPerGame =
-            stanningleyTotalPoints /
+            totalPoints /
             gamesPerMatch /
             (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
-        const aggPerGame = stanningleyAgg / gamesPerMatch / totalGames;
+        const aggPerGame = agg / gamesPerMatch / totalGames;
         const pointsConcededPerGame =
             opponentTotalPoints /
             gamesPerMatch /

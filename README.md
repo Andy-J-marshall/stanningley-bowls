@@ -73,6 +73,48 @@ JSON file will be created: `src/data/bowlsStats{year}.json`.
 
 You might want to format the JSON document to make it easier to read
 
-
 # How to use this repo as a template for other clubs
-Correct teams added in teamDetails
+
+Update `scripts/pythonScripts/teamDetails.py`:
+
+- teamNames
+- preferredTeamName
+- teamDays
+- players
+- duplicateTeamMemberNames
+- anonymiseNames
+- traitorPlayers (also update the days)
+- calculateGamePoints (#TODO check if we need this one)
+
+Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
+
+Update `background-color` and `color` in `src/app.css`
+
+Update `public` folder:
+
+- CNAME
+- favicon.ico
+- title in `index.html`
+- short_name and name in `manifest.json`
+
+Update all images in the `/images` folder
+
+Update `homepage` in `package.json`
+
+Check `bowls.py`:
+
+- Is the `cupText` array correct of the leagues the team is in?
+- Remove game points? (#TODO check if we need this one)
+
+Update `src/config.js`:
+
+- all data in this file
+- membership info
+- home page
+- contact page info
+- all images
+
+Update tests:
+
+- players array in `playerStats.spec.ts`
+- bowlsStatsExample.json with data from `src/data/bowlsStatsXXXX.json`

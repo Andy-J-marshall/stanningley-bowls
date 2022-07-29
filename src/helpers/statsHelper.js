@@ -7,8 +7,8 @@ export function combineTeamStats(statsArray) {
     let combinedCupLosses = 0;
     let combinedHomeDraws = 0;
     let combinedAwayDraws = 0;
-    let combinedStanningleyAgg = 0;
-    let combinedStanningleyTotalPoints = 0;
+    let combinedAgg = 0;
+    let combinedTotalPoints = 0;
     let combinedOpponentAgg = 0;
     let combinedOpponentTotalPoints = 0;
     let combinedBeaten = [];
@@ -25,8 +25,8 @@ export function combineTeamStats(statsArray) {
             cupLosses,
             homeDraws,
             awayDraws,
-            stanningleyAgg,
-            stanningleyTotalPoints,
+            agg,
+            totalPoints,
             opponentAgg,
             opponentTotalPoints,
             beaten,
@@ -41,8 +41,8 @@ export function combineTeamStats(statsArray) {
         combinedAwayDraws += awayDraws;
         combinedCupWins += cupWins;
         combinedCupLosses += cupLosses;
-        combinedStanningleyAgg += stanningleyAgg;
-        combinedStanningleyTotalPoints += stanningleyTotalPoints;
+        combinedAgg += agg;
+        combinedTotalPoints += totalPoints;
         combinedOpponentAgg += opponentAgg;
         combinedOpponentTotalPoints += opponentTotalPoints;
         combinedBeaten.push(...beaten);
@@ -75,8 +75,8 @@ export function combineTeamStats(statsArray) {
         combinedCupLosses,
         combinedHomeDraws,
         combinedAwayDraws,
-        combinedStanningleyAgg,
-        combinedStanningleyTotalPoints,
+        combinedAgg,
+        combinedTotalPoints,
         combinedOpponentAgg,
         combinedOpponentTotalPoints,
         combinedBeaten,

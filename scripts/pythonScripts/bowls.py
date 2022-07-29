@@ -30,6 +30,7 @@ awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
+# TODO will this work for other cup competitions?
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file
@@ -212,8 +213,8 @@ for day in teamDays:
         'awayDraws': awayDraws,
         'cupWins': cupWins,
         'cupLosses': cupLosses,
-        'stanningleyAgg': teamAgg,
-        'stanningleyTotalPoints': teamTotalPoints,
+        'agg': teamAgg,
+        'totalPoints': teamTotalPoints,
         'opponentAgg': opponentAgg,
         'opponentTotalPoints': opponentTotalPoints,
         'beaten': beaten,
