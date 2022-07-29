@@ -48,7 +48,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
   - Copy contents of each file (CMD + A, CMD + C) into the Excel file (CMD + V)
 - To generate manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
-  - Create 4 new sheets, 1 for each day the team plays e.g. Monday, Tuesday, Thursday, Saturday
+  - Create 4 new sheets, 1 for each day the team plays (ensure the names match the team names used by the `bowls.py` script)
   - Navigate to each of the above 4 URLs, go to Info, then Reports:
   - Select Formatted Report
   - Click Output Tables
@@ -75,7 +75,4 @@ You might want to format the JSON document to make it easier to read
 
 
 # How to use this repo as a template for other clubs
-Update scripts:
-* createSpreadsheet.py
-* deleteOldHtmlFiles.py
-* openInChrome.py
+Correct teams added in teamDetails

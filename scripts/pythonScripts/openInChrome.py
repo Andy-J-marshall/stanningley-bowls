@@ -1,12 +1,7 @@
 import webbrowser
 import teamDetails
 
-mondayFilename = 'file://' + teamDetails.mondayStatsFilename
-tuesdayFilename = 'file://' + teamDetails.tuesdayStatsFilename
-thursdayFilename = 'file://' + teamDetails.thursdayStatsFilename
-saturdayFilename = 'file://' + teamDetails.saturdayStatsFilename
+htmlFiles = teamDetails.findHtmlFiles()
 
-webbrowser.open(mondayFilename)
-webbrowser.open(tuesdayFilename)
-webbrowser.open(thursdayFilename)
-webbrowser.open(saturdayFilename)
+for file in htmlFiles:
+    webbrowser.open('file://' + file)

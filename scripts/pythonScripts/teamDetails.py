@@ -2,7 +2,7 @@ import os
 
 # Team info (lowercase)
 teamNames = ['stanningley', 'stanningley a',
-                        'stanningley park', 'stanningley park a']
+             'stanningley park', 'stanningley park a']
 
 preferredTeamName = 'Stanningley'
 
@@ -28,10 +28,13 @@ traitorPlayers = {
     'Saturday': ['mario biancardo', 'shirley biancardo', 'dave hudson', 'clifford brogie'],
 }
 
-mondayStatsFilename = os.getcwd() + '/files/htmlFiles/Monday.html'
-tuesdayStatsFilename = os.getcwd() + '/files/htmlFiles/Tuesday.html'
-thursdayStatsFilename = os.getcwd() + '/files/htmlFiles/Thursday.html'
-saturdayStatsFilename = os.getcwd() + '/files/htmlFiles/Saturday.html'
+
+def findHtmlFiles():
+    files = []
+    for team in teamDays:
+        files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
+    return files
+
 
 def calculateGamePoints(points):
     if points == 21:
@@ -105,26 +108,13 @@ def returnListOfPlayerStats():
             'beatenTeam': [],
             'beatenByTeam': [],
             'results': [],
-            'monday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'tuesday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'thursday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'saturday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
         }
+
+        for team in teamDays:
+            playerObj[team.lower()] = {
+                'games': 0,
+                'wins': 0,
+                'aggDiff': 0,
+            }
         playerStats[player] = playerObj
     return playerStats
