@@ -1,10 +1,10 @@
 import webbrowser
-import os
+import teamDetails
 
-mondayFilename = 'file://' + os.getcwd() + '/files/htmlFiles/Monday.html'
-tuesdayFilename = 'file://' + os.getcwd() + '/files/htmlFiles/Tuesday.html'
-thursdayFilename = 'file://' + os.getcwd() + '/files/htmlFiles/Thursday.html'
-saturdayFilename = 'file://' + os.getcwd() + '/files/htmlFiles/Saturday.html'
+mondayFilename = 'file://' + teamDetails.mondayStatsFilename
+tuesdayFilename = 'file://' + teamDetails.tuesdayStatsFilename
+thursdayFilename = 'file://' + teamDetails.thursdayStatsFilename
+saturdayFilename = 'file://' + teamDetails.saturdayStatsFilename
 
 webbrowser.open(mondayFilename)
 webbrowser.open(tuesdayFilename)

@@ -1,6 +1,6 @@
 # README
 
-This web app displays information and stats for Stanningley Park Crown Green Bowling Club.
+This web app displays information and stats for the Crown Green Bowling club.
 There is also a python script that takes the raw data from bowlsnet.uk and generates a JSON file that the web app uses.
 
 # React Web App
@@ -15,7 +15,7 @@ Run the following:
 
 - `npm i`
 - `npm run start`
-- Visit: http://localhost:3000/stanningley-bowls
+- Visit: http://localhost:3000
 
 ## To deploy to Github Pages
 
@@ -24,7 +24,7 @@ Run the following:
 - `npm i`
 - `npm run build`
 - `npm run deploy`
-- Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain `stanningleybowlsclub.co.uk`
+- Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain
 
 ## Maintenance
 
@@ -32,14 +32,7 @@ Fixture images will need to be updated for each year. Most of the club details a
 
 # Bowls script
 
-The script that collates stats from all Stanningley bowls club teams can be found in the `/scripts/pythonScripts` directory.
-
-Bowlsnet links:
-
-- [Monday](https://bowlsnet.uk/Leeds/MonComb)
-- [Tuesday](https://bowlsnet.uk/LeedsParkVets/Tue)
-- [Thursday](https://bowlsnet.uk/LeedsParkVets/Thu)
-- [Saturday](https://bowlsnet.uk/Leeds/Sat)
+The script that collates stats from all club teams can be found in the `/scripts/pythonScripts` directory.
 
 ## Pre-requisites
 
@@ -66,9 +59,9 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
 
 ## Update list of players
 
-If a new player joins or a team is entered into a new league, you'll need to update the details in `stanningleyTeamDetails.py`.
+If a new player joins or a team is entered into a new league, you'll need to update the details in `teamDetails.py`.
 
-e.g. a new player would have to be added into the `stanningleyPlayers` list.
+e.g. a new player would have to be added into the `players` list.
 
 If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array
 
@@ -79,3 +72,10 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 JSON file will be created: `src/data/bowlsStats{year}.json`.
 
 You might want to format the JSON document to make it easier to read
+
+
+# How to use this repo as a template for other clubs
+Update scripts:
+* createSpreadsheet.py
+* deleteOldHtmlFiles.py
+* openInChrome.py

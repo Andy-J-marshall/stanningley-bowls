@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import config from '../config';
 
 function Navigation() {
     return (
@@ -15,7 +16,7 @@ function Navigation() {
             <Container fluid>
                 <LinkContainer to="/home">
                     <Navbar.Brand className="navigation" href="/home">
-                        S.P.B.C.
+                        {config.teamNames.abbreviated}
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />

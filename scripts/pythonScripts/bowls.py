@@ -3,19 +3,20 @@ from pathlib import Path
 import json
 import os
 from datetime import date
-import stanningleyTeamDetails
+import teamDetails
 
 year = str(date.today().year)
 
-stanningleyTeamNames = stanningleyTeamDetails.stanningleyTeamNames
-stanningleyTeamDays = stanningleyTeamDetails.stanningleyTeamDays
-stanningleyPlayers = stanningleyTeamDetails.stanningleyPlayers
-duplicateTeamMemberNames = stanningleyTeamDetails.duplicateTeamMemberNames
-traitorPlayers = stanningleyTeamDetails.traitorPlayers
-stanningleyPlayerResults = stanningleyTeamDetails.returnListOfPlayerStats()
-anonymiseNames = stanningleyTeamDetails.anonymiseNames
-deduplicateNames = stanningleyTeamDetails.deduplicateNames
-calculateGamePoints = stanningleyTeamDetails.calculateGamePoints
+teamNames = teamDetails.teamNames
+teamDays = teamDetails.teamDays
+players = teamDetails.players
+duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
+traitorPlayers = teamDetails.traitorPlayers
+playerStats = teamDetails.returnListOfPlayerStats()
+anonymiseNames = teamDetails.anonymiseNames
+deduplicateNames = teamDetails.deduplicateNames
+calculateGamePoints = teamDetails.calculateGamePoints
+preferredTeamName = teamDetails.preferredTeamName
 
 # Spreadsheet info
 homePlayerCol = 'A'
@@ -35,15 +36,14 @@ cupText = ['qtr-finals', 'semi-finals', 'final']
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
-stanningleyTeamResults = []
+allTeamResults = []
 
-
-for day in stanningleyTeamDays:
+for day in teamDays:
     # Goes through each sheet in turn
     sheet = wb[day]
     print('Processing ' + day)
 
-    # Find rows in spreadsheet for Stanningley games
+    # Find rows in spreadsheet for team games
     startingRow = 0
     startingRowIndex = 1
     for row in sheet['A']:
@@ -63,7 +63,7 @@ for day in stanningleyTeamDays:
     homeIndex = 1
     homeRow = []
     for row in sheet[homeTeamNameCol]:
-        if row.value and type(row.value) is str and row.value.lower() in stanningleyTeamNames:
+        if row.value and type(row.value) is str and row.value.lower() in teamNames:
             if homeIndex > startingRow:
                 homeRow.append(homeIndex)
         homeIndex = homeIndex + 1
@@ -71,12 +71,12 @@ for day in stanningleyTeamDays:
     awayIndex = 1
     awayRow = []
     for row in sheet[awayTeamNameCol]:
-        if row.value and type(row.value) is str and row.value.lower() in stanningleyTeamNames:
+        if row.value and type(row.value) is str and row.value.lower() in teamNames:
             if awayIndex > startingRow:
                 awayRow.append(awayIndex)
         awayIndex = awayIndex + 1
 
-    # Find league position for Stanningley teams
+    # Find league position for teams
     leaguePositionIndex = 1
     leaguePositionRow = 0
     leaguePositionCol = 'A'
@@ -89,7 +89,7 @@ for day in stanningleyTeamDays:
         leaguePositionCol = satLeaguePositionCol
 
     for row in sheet[leagueTeamNameCol]:
-        if row.value and type(row.value) is str and row.value.lower() in stanningleyTeamNames:
+        if row.value and type(row.value) is str and row.value.lower() in teamNames:
             leaguePosition = sheet[leaguePositionCol +
                                    str(leaguePositionIndex)].value
             if type(leaguePosition) is int:
@@ -105,8 +105,8 @@ for day in stanningleyTeamDays:
     awayDraws = 0
     cupWins = 0
     cupLosses = 0
-    stanningleyAgg = 0
-    stanningleyTotalPoints = 0
+    teamAgg = 0
+    teamTotalPoints = 0
     opponentAgg = 0
     opponentTotalPoints = 0
     beaten = []
@@ -139,7 +139,7 @@ for day in stanningleyTeamDays:
         if row in homeRow:
             if row != leaguePositionRow:
                 opponent = sheet[awayTeamNameCol + str(row)].value
-                result = 'Stanningley ' + \
+                result = preferredTeamName + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent + ' (' + gameDate + ')'
                 results.append(result)
@@ -160,12 +160,12 @@ for day in stanningleyTeamDays:
                 if awayScore == homeScore:
                     drawnWith.append(opponent + (' (home)'))
                     homeDraws = homeDraws + 1
-                stanningleyAgg = stanningleyAgg + \
+                teamAgg = teamAgg + \
                     sheet[homeAggCol + str(row + 9)].value
                 opponentAgg = opponentAgg + \
                     sheet[awayAggCol + str(row + 9)].value
                 if not cupGame:
-                    stanningleyTotalPoints = stanningleyTotalPoints + homeScore
+                    teamTotalPoints = teamTotalPoints + homeScore
                     opponentTotalPoints = opponentTotalPoints + awayScore
 
         # Away games
@@ -174,7 +174,7 @@ for day in stanningleyTeamDays:
                 opponent = sheet[homeTeamNameCol + str(row)].value
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' Stanningley' + ' (' + gameDate + ')'
+                    ' ' + preferredTeamName + ' (' + gameDate + ')'
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
@@ -195,10 +195,10 @@ for day in stanningleyTeamDays:
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + \
                     sheet[homeAggCol + str(row + 9)].value
-                stanningleyAgg = stanningleyAgg + \
+                teamAgg = teamAgg + \
                     sheet[awayAggCol + str(row + 9)].value
                 if not cupGame:
-                    stanningleyTotalPoints = stanningleyTotalPoints + awayScore
+                    teamTotalPoints = teamTotalPoints + awayScore
                     opponentTotalPoints = opponentTotalPoints + homeScore
 
     # Store team result data
@@ -212,8 +212,8 @@ for day in stanningleyTeamDays:
         'awayDraws': awayDraws,
         'cupWins': cupWins,
         'cupLosses': cupLosses,
-        'stanningleyAgg': stanningleyAgg,
-        'stanningleyTotalPoints': stanningleyTotalPoints,
+        'stanningleyAgg': teamAgg,
+        'stanningleyTotalPoints': teamTotalPoints,
         'opponentAgg': opponentAgg,
         'opponentTotalPoints': opponentTotalPoints,
         'beaten': beaten,
@@ -222,14 +222,14 @@ for day in stanningleyTeamDays:
         'leaguePosition': currentLeaguePosition,
         'results': results
     }
-    stanningleyTeamResults.append(teamResults)
+    allTeamResults.append(teamResults)
 
-    # Find rows in spreadsheet for Stanningley players' games
+    # Find rows in spreadsheet for players' games
     homePlayerIndex = 1
     homePlayerRow = []
     for homePlayer in sheet[homePlayerCol]:
         homePlayerName = homePlayer.value
-        if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in stanningleyPlayers or homePlayerName.lower() in duplicateTeamMemberNames):
+        if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicateTeamMemberNames):
             if homePlayerName.lower() not in traitorPlayers[day]:
                 homePlayerRow.append(homePlayerIndex)
         homePlayerIndex = homePlayerIndex + 1
@@ -238,7 +238,7 @@ for day in stanningleyTeamDays:
     awayPlayerRow = []
     for awayPlayer in sheet[awayPlayerCol]:
         awayPlayerName = awayPlayer.value
-        if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in stanningleyPlayers or awayPlayerName.lower() in duplicateTeamMemberNames):
+        if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in players or awayPlayerName.lower() in duplicateTeamMemberNames):
             if awayPlayerName.lower() not in traitorPlayers[day]:
                 awayPlayerRow.append(awayPlayerIndex)
         awayPlayerIndex = awayPlayerIndex + 1
@@ -327,55 +327,55 @@ for day in stanningleyTeamDays:
                 playerNameForResult = playerName
                 if pairsGame:
                     pairsPartner = anonymiseNames(pairsPartner)
-                    stanningleyPlayerResults[playerName]['pairsPartners'].append(
+                    playerStats[playerName]['pairsPartners'].append(
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
-                    stanningleyPlayerResults[playerName]['totalPairsAgg'] += aggregate
-                    stanningleyPlayerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
+                    playerStats[playerName]['totalPairsAgg'] += aggregate
+                    playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
-                stanningleyPlayerResults[playerName][day.lower()]['games'] += 1
+                playerStats[playerName][day.lower()]['games'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
                     str(aggregate) + ' - ' + \
                     str(opponentAggregate) + ' ' + opponentsName
-                stanningleyPlayerResults[playerName]['results'].append(
+                playerStats[playerName]['results'].append(
                     playersResult)
 
                 # Wins
                 if aggregate > opponentAggregate:
-                    stanningleyPlayerResults[playerName][day.lower(
+                    playerStats[playerName][day.lower(
                     )]['wins'] += 1
-                    stanningleyPlayerResults[playerName]['beatenOpponents'].append(
+                    playerStats[playerName]['beatenOpponents'].append(
                         opponentsName)
-                    stanningleyPlayerResults[playerName]['beatenTeam'].append(
+                    playerStats[playerName]['beatenTeam'].append(
                         opponentTeam + ' (' + day + ')')
                     if pairsGame:
-                        stanningleyPlayerResults[playerName]['winningPairsPartners'].append(
+                        playerStats[playerName]['winningPairsPartners'].append(
                             pairsPartner)
-                        stanningleyPlayerResults[playerName]['pairWins'] += 1
+                        playerStats[playerName]['pairWins'] += 1
                     if homeGame:
-                        stanningleyPlayerResults[playerName]['homeWins'] += 1
+                        playerStats[playerName]['homeWins'] += 1
                     if awayGame:
-                        stanningleyPlayerResults[playerName]['awayWins'] += 1
+                        playerStats[playerName]['awayWins'] += 1
                     if cupGame:
-                        stanningleyPlayerResults[playerName]['cupWins'] += 1
+                        playerStats[playerName]['cupWins'] += 1
                 # Losses
                 else:
-                    stanningleyPlayerResults[playerName]['beatenBy'].append(
+                    playerStats[playerName]['beatenBy'].append(
                         opponentsName)
-                    stanningleyPlayerResults[playerName]['beatenByTeam'].append(
+                    playerStats[playerName]['beatenByTeam'].append(
                         opponentTeam + ' (' + day + ')')
                     if pairsGame:
-                        stanningleyPlayerResults[playerName]['losingPairsPartners'].append(
+                        playerStats[playerName]['losingPairsPartners'].append(
                             pairsPartner)
-                        stanningleyPlayerResults[playerName]['pairLosses'] += 1
+                        playerStats[playerName]['pairLosses'] += 1
                     if homeGame:
-                        stanningleyPlayerResults[playerName]['homeLosses'] += 1
+                        playerStats[playerName]['homeLosses'] += 1
                     if awayGame:
-                        stanningleyPlayerResults[playerName]['awayLosses'] += 1
+                        playerStats[playerName]['awayLosses'] += 1
                     if cupGame:
-                        stanningleyPlayerResults[playerName]['cupLosses'] += 1
+                        playerStats[playerName]['cupLosses'] += 1
                 points = 0
                 opponentPoints = 0
                 if not cupGame:
@@ -383,28 +383,28 @@ for day in stanningleyTeamDays:
                     opponentPoints = calculateGamePoints(opponentAggregate)
 
                 # Averages
-                stanningleyPlayerResults[playerName]['totalAgg'] += aggregate
-                stanningleyPlayerResults[playerName]['totalAggAgainst'] += opponentAggregate
-                stanningleyPlayerResults[playerName][day.lower()]['aggDiff'] += aggregate - \
+                playerStats[playerName]['totalAgg'] += aggregate
+                playerStats[playerName]['totalAggAgainst'] += opponentAggregate
+                playerStats[playerName][day.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
-                    stanningleyPlayerResults[playerName]['totalHomeAgg'] += aggregate
-                    stanningleyPlayerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
-                    stanningleyPlayerResults[playerName]['totalHomePoints'] += points
-                    stanningleyPlayerResults[playerName]['totalHomePointsAgainst'] += opponentPoints
+                    playerStats[playerName]['totalHomeAgg'] += aggregate
+                    playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
+                    playerStats[playerName]['totalHomePoints'] += points
+                    playerStats[playerName]['totalHomePointsAgainst'] += opponentPoints
                 if awayGame:
-                    stanningleyPlayerResults[playerName]['totalAwayAgg'] += aggregate
-                    stanningleyPlayerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
-                    stanningleyPlayerResults[playerName]['totalAwayPoints'] += points
-                    stanningleyPlayerResults[playerName]['totalAwayPointsAgainst'] += opponentPoints
-                stanningleyPlayerResults[playerName]['totalPoints'] += points
-                stanningleyPlayerResults[playerName]['totalPointsAgainst'] += opponentPoints
-                stanningleyPlayerResults[playerName]['dayPlayed'].append(day)
+                    playerStats[playerName]['totalAwayAgg'] += aggregate
+                    playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
+                    playerStats[playerName]['totalAwayPoints'] += points
+                    playerStats[playerName]['totalAwayPointsAgainst'] += opponentPoints
+                playerStats[playerName]['totalPoints'] += points
+                playerStats[playerName]['totalPointsAgainst'] += opponentPoints
+                playerStats[playerName]['dayPlayed'].append(day)
 
 # Create JSON file
 dataToExport = {
-    'playerResults': stanningleyPlayerResults,
-    'teamResults': stanningleyTeamResults,
+    'playerResults': playerStats,
+    'teamResults': allTeamResults,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year
 }

@@ -1,19 +1,23 @@
+import os
+
 # Team info (lowercase)
-stanningleyTeamNames = ['stanningley', 'stanningley a',
+teamNames = ['stanningley', 'stanningley a',
                         'stanningley park', 'stanningley park a']
 
-# Days played
-stanningleyTeamDays = ['Monday', 'Tuesday', 'Thursday', 'Saturday']
+preferredTeamName = 'Stanningley'
 
-# Every Stanningley player (lowercase)
-stanningleyPlayers = [
+# Days played
+teamDays = ['Monday', 'Tuesday', 'Thursday', 'Saturday']
+
+# Every player (lowercase)
+players = [
     'jeff allman', 'shirley allman', 'john armitage', 'mario biancardo', 'shirley biancardo',
     'paul bowes', 'clifford brogie', 'craig clarkson', 'steve gardner', 'andy marshall', 'bernie miller',
     'alyssa randell', 'andy waller', 'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson',
     'dave hudson', 'neil porter', 'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster'
 ]
 
-# Stanningley players with different spellings of name (lowercase)
+# Players with different spellings of name (lowercase)
 duplicateTeamMemberNames = ['duncan mc phail',
                             'stuart watson', 'andrew marshall']
 
@@ -24,6 +28,10 @@ traitorPlayers = {
     'Saturday': ['mario biancardo', 'shirley biancardo', 'dave hudson', 'clifford brogie'],
 }
 
+mondayStatsFilename = os.getcwd() + '/files/htmlFiles/Monday.html'
+tuesdayStatsFilename = os.getcwd() + '/files/htmlFiles/Tuesday.html'
+thursdayStatsFilename = os.getcwd() + '/files/htmlFiles/Thursday.html'
+saturdayStatsFilename = os.getcwd() + '/files/htmlFiles/Saturday.html'
 
 def calculateGamePoints(points):
     if points == 21:
@@ -61,9 +69,9 @@ def anonymiseNames(name):
 
 
 def returnListOfPlayerStats():
-    stanningleyPlayers.sort()
-    stanningleyPlayerResults = {}
-    for player in stanningleyPlayers:
+    players.sort()
+    playerStats = {}
+    for player in players:
         player = anonymiseNames(player)
         playerObj = {
             'totalPoints': 0,
@@ -118,5 +126,5 @@ def returnListOfPlayerStats():
                 'aggDiff': 0,
             },
         }
-        stanningleyPlayerResults[player] = playerObj
-    return stanningleyPlayerResults
+        playerStats[player] = playerObj
+    return playerStats

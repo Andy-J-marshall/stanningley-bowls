@@ -1,14 +1,14 @@
 {
   "playerResults": {
     "ali": {
-      "totalPoints": 81,
-      "totalAgg": 395,
-      "totalPointsAgainst": 57,
-      "totalAggAgainst": 320,
+      "totalPoints": 84,
+      "totalAgg": 410,
+      "totalPointsAgainst": 62,
+      "totalAggAgainst": 341,
       "homeWins": 7,
       "homeLosses": 4,
       "awayWins": 6,
-      "awayLosses": 2,
+      "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -33,11 +33,13 @@
         "Shirley Biancardo",
         "Billy Ward",
         "Gordon Monk",
+        "Mick Hall",
         "Garry Marshall",
         "Stuart Reardon",
         "Steve Briggs"
       ],
       "dayPlayed": [
+        "Thursday",
         "Thursday",
         "Thursday",
         "Thursday",
@@ -66,12 +68,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 211,
       "totalHomeAggAgainst": 159,
-      "totalAwayAgg": 146,
-      "totalAwayAggAgainst": 120,
+      "totalAwayAgg": 161,
+      "totalAwayAggAgainst": 141,
       "totalHomePoints": 48,
       "totalHomePointsAgainst": 32,
-      "totalAwayPoints": 33,
-      "totalAwayPointsAgainst": 25,
+      "totalAwayPoints": 36,
+      "totalAwayPointsAgainst": 30,
       "cupWins": 1,
       "cupLosses": 1,
       "beatenTeam": [
@@ -95,6 +97,7 @@
         "Pudsey Park A (Thursday)",
         "Scatcherd Pk A (Thursday)",
         "Middleton Community (Thursday)",
+        "Middleton Community (Thursday)",
         "Cranmore (Saturday)",
         "New Wortley (Saturday)",
         "Western Flatts (Saturday)"
@@ -109,6 +112,7 @@
         "ali 21 - 20 Glen Scott",
         "ali 17 - 21 Gordon Monk",
         "ali 21 - 17 Janet Pearson",
+        "ali 15 - 21 Mick Hall",
         "ali 21 - 15 Reece Pratt",
         "ali 21 - 17 Rachel Barnard",
         "ali 16 - 21 Garry Marshall",
@@ -124,7 +128,7 @@
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday": { "games": 9, "wins": 5, "aggDiff": 0 },
+      "thursday": { "games": 10, "wins": 5, "aggDiff": -6 },
       "saturday": { "games": 12, "wins": 9, "aggDiff": 75 }
     },
     "alyssa randell": {
@@ -436,14 +440,14 @@
       "saturday": { "games": 10, "wins": 5, "aggDiff": 23 }
     },
     "andy w": {
-      "totalPoints": 124,
-      "totalAgg": 608,
-      "totalPointsAgainst": 80,
-      "totalAggAgainst": 428,
+      "totalPoints": 128,
+      "totalAgg": 628,
+      "totalPointsAgainst": 85,
+      "totalAggAgainst": 449,
       "homeWins": 14,
       "homeLosses": 3,
       "awayWins": 5,
-      "awayLosses": 6,
+      "awayLosses": 7,
       "pairWins": 4,
       "pairLosses": 2,
       "pairsPartners": [
@@ -487,6 +491,7 @@
         "Michael Stott",
         "John Harvey",
         "Terry Blakeley",
+        "Gordon Monk",
         "Barry Baldwin"
       ],
       "dayPlayed": [
@@ -500,6 +505,7 @@
         "Tuesday",
         "Tuesday",
         "Tuesday",
+        "Thursday",
         "Thursday",
         "Thursday",
         "Thursday",
@@ -533,12 +539,12 @@
       "losingPairsPartners": ["andy marshall", "andy marshall"],
       "totalHomeAgg": 349,
       "totalHomeAggAgainst": 204,
-      "totalAwayAgg": 196,
-      "totalAwayAggAgainst": 188,
+      "totalAwayAgg": 216,
+      "totalAwayAggAgainst": 209,
       "totalHomePoints": 81,
       "totalHomePointsAgainst": 39,
-      "totalAwayPoints": 43,
-      "totalAwayPointsAgainst": 41,
+      "totalAwayPoints": 47,
+      "totalAwayPointsAgainst": 46,
       "cupWins": 3,
       "cupLosses": 0,
       "beatenTeam": [
@@ -574,6 +580,7 @@
         "Scatcherd Pk A (Thursday)",
         "Cross Flatts Pk (Thursday)",
         "Churwell Pk (Thursday)",
+        "Middleton Community (Thursday)",
         "Cranmore (Saturday)"
       ],
       "results": [
@@ -596,6 +603,7 @@
         "andy w 18 - 21 Terry Blakeley",
         "andy w 21 - 12 Christine Glynne",
         "andy w 21 - 8 Barbara Nellis",
+        "andy w 20 - 21 Gordon Monk",
         "andy w 21 - 12 Malcolm Whipp",
         "andy w 21 - 17 Tony Morris",
         "andy w 18 - 21 Barry Baldwin",
@@ -611,7 +619,7 @@
       ],
       "monday": { "games": 6, "wins": 4, "aggDiff": 43 },
       "tuesday": { "games": 4, "wins": 3, "aggDiff": 29 },
-      "thursday": { "games": 9, "wins": 4, "aggDiff": 19 },
+      "thursday": { "games": 10, "wins": 4, "aggDiff": 18 },
       "saturday": { "games": 12, "wins": 11, "aggDiff": 89 }
     },
     "bernie miller": {
@@ -655,13 +663,13 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "clifford brogie": {
-      "totalPoints": 56,
-      "totalAgg": 284,
-      "totalPointsAgainst": 61,
-      "totalAggAgainst": 300,
+      "totalPoints": 61,
+      "totalAgg": 305,
+      "totalPointsAgainst": 65,
+      "totalAggAgainst": 320,
       "homeWins": 3,
       "homeLosses": 5,
-      "awayWins": 5,
+      "awayWins": 6,
       "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
@@ -675,6 +683,7 @@
         "Josie M Burdon",
         "Raymond Ball",
         "Graham Goodall",
+        "Malcolm Hallas",
         "Malcolm Hallas"
       ],
       "beatenBy": [
@@ -704,6 +713,7 @@
         "Thursday",
         "Thursday",
         "Thursday",
+        "Thursday",
         "Thursday"
       ],
       "totalPairsAgg": 0,
@@ -712,12 +722,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 120,
       "totalHomeAggAgainst": 145,
-      "totalAwayAgg": 143,
-      "totalAwayAggAgainst": 136,
+      "totalAwayAgg": 164,
+      "totalAwayAggAgainst": 156,
       "totalHomePoints": 24,
       "totalHomePointsAgainst": 32,
-      "totalAwayPoints": 32,
-      "totalAwayPointsAgainst": 29,
+      "totalAwayPoints": 37,
+      "totalAwayPointsAgainst": 33,
       "cupWins": 1,
       "cupLosses": 0,
       "beatenTeam": [
@@ -729,6 +739,7 @@
         "New Armley (Thursday)",
         "Scatcherd Pk A (Thursday)",
         "Churwell Pk (Thursday)",
+        "Middleton Community (Thursday)",
         "Middleton Community (Thursday)"
       ],
       "beatenByTeam": [
@@ -758,11 +769,12 @@
         "clifford brogie 21 - 14 Raymond Ball",
         "clifford brogie 21 - 20 Graham Goodall",
         "clifford brogie 21 - 19 Malcolm Hallas",
-        "clifford brogie 11 - 21 Bryan Bonnington"
+        "clifford brogie 11 - 21 Bryan Bonnington",
+        "clifford brogie 21 - 20 Malcolm Hallas"
       ],
       "monday": { "games": 10, "wins": 4, "aggDiff": -27 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday": { "games": 7, "wins": 5, "aggDiff": 11 },
+      "thursday": { "games": 8, "wins": 6, "aggDiff": 12 },
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "craig clarkson": {
@@ -853,18 +865,23 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "dave hudson": {
-      "totalPoints": 23,
-      "totalAgg": 128,
-      "totalPointsAgainst": 31,
-      "totalAggAgainst": 162,
+      "totalPoints": 28,
+      "totalAgg": 149,
+      "totalPointsAgainst": 34,
+      "totalAggAgainst": 177,
       "homeWins": 2,
       "homeLosses": 2,
-      "awayWins": 1,
+      "awayWins": 2,
       "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
-      "beatenOpponents": ["Andy Sykes", "Cedric Briggs", "Michael Small"],
+      "beatenOpponents": [
+        "Andy Sykes",
+        "Cedric Briggs",
+        "Michael Small",
+        "Terry Maher"
+      ],
       "beatenBy": [
         "Mick Harrison",
         "Barbara Nellis",
@@ -882,6 +899,7 @@
         "Thursday",
         "Thursday",
         "Thursday",
+        "Thursday",
         "Thursday"
       ],
       "totalPairsAgg": 0,
@@ -890,18 +908,19 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 56,
       "totalHomeAggAgainst": 64,
-      "totalAwayAgg": 60,
-      "totalAwayAggAgainst": 77,
+      "totalAwayAgg": 81,
+      "totalAwayAggAgainst": 92,
       "totalHomePoints": 12,
       "totalHomePointsAgainst": 14,
-      "totalAwayPoints": 11,
-      "totalAwayPointsAgainst": 17,
+      "totalAwayPoints": 16,
+      "totalAwayPointsAgainst": 20,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
         "Middleton Community (Thursday)",
         "New Armley (Thursday)",
-        "Scatcherd Pk A (Thursday)"
+        "Scatcherd Pk A (Thursday)",
+        "Middleton Community (Thursday)"
       ],
       "beatenByTeam": [
         "Churwell Pk (Thursday)",
@@ -920,21 +939,22 @@
         "dave hudson 14 - 21 Maveen Tomlinson",
         "dave hudson 17 - 21 Dawn Peters",
         "dave hudson 12 - 21 Roy Tebbutt",
-        "dave hudson 8 - 21 Shirley Biancardo"
+        "dave hudson 8 - 21 Shirley Biancardo",
+        "dave hudson 21 - 15 Terry Maher"
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday": { "games": 9, "wins": 3, "aggDiff": -34 },
+      "thursday": { "games": 10, "wins": 4, "aggDiff": -28 },
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
-      "totalPoints": 84,
-      "totalAgg": 414,
-      "totalPointsAgainst": 61,
-      "totalAggAgainst": 354,
+      "totalPoints": 89,
+      "totalAgg": 435,
+      "totalPointsAgainst": 64,
+      "totalAggAgainst": 369,
       "homeWins": 8,
       "homeLosses": 3,
-      "awayWins": 4,
+      "awayWins": 5,
       "awayLosses": 5,
       "pairWins": 0,
       "pairLosses": 0,
@@ -944,6 +964,7 @@
         "Hazel Marshall",
         "Gordon Sadler",
         "Dennis Walters",
+        "Andy Sykes",
         "Peter Nicholson",
         "Tony Kirk",
         "Brian Ragan",
@@ -977,6 +998,7 @@
         "Thursday",
         "Thursday",
         "Thursday",
+        "Thursday",
         "Saturday",
         "Saturday",
         "Saturday",
@@ -997,12 +1019,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 225,
       "totalHomeAggAgainst": 140,
-      "totalAwayAgg": 156,
-      "totalAwayAggAgainst": 154,
+      "totalAwayAgg": 177,
+      "totalAwayAggAgainst": 169,
       "totalHomePoints": 51,
       "totalHomePointsAgainst": 28,
-      "totalAwayPoints": 33,
-      "totalAwayPointsAgainst": 33,
+      "totalAwayPoints": 38,
+      "totalAwayPointsAgainst": 36,
       "cupWins": 1,
       "cupLosses": 2,
       "beatenTeam": [
@@ -1010,6 +1032,7 @@
         "Middleton Community (Thursday)",
         "New Armley (Thursday)",
         "Pudsey Park A (Thursday)",
+        "Middleton Community (Thursday)",
         "Sth Leeds Cons B (Saturday)",
         "Gildersome B (Saturday)",
         "Middleton Comm (Saturday)",
@@ -1043,6 +1066,7 @@
         "donald shaw 17 - 21 Stephen Briggs",
         "donald shaw 7 - 21 Mick Hall",
         "donald shaw 21 - 20 Dennis Walters",
+        "donald shaw 21 - 15 Andy Sykes",
         "donald shaw 21 - 8 Peter Nicholson",
         "donald shaw 21 - 15 Tony Kirk",
         "donald shaw 9 - 21 Phillip Marshall",
@@ -1059,17 +1083,17 @@
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 1, "wins": 1, "aggDiff": 4 },
-      "thursday": { "games": 9, "wins": 3, "aggDiff": -4 },
+      "thursday": { "games": 10, "wins": 4, "aggDiff": 2 },
       "saturday": { "games": 13, "wins": 9, "aggDiff": 60 }
     },
     "duncan mcphail": {
-      "totalPoints": 51,
-      "totalAgg": 234,
-      "totalPointsAgainst": 26,
-      "totalAggAgainst": 154,
+      "totalPoints": 56,
+      "totalAgg": 255,
+      "totalPointsAgainst": 30,
+      "totalAggAgainst": 173,
       "homeWins": 5,
       "homeLosses": 1,
-      "awayWins": 4,
+      "awayWins": 5,
       "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
@@ -1083,7 +1107,8 @@
         "David Norton",
         "Brenda Chaffer",
         "Marion Worrall",
-        "Paul Hatch"
+        "Paul Hatch",
+        "Roy Tebbutt"
       ],
       "beatenBy": ["Brian Dowling", "Derek Dobson", "Jim Jordan"],
       "dayPlayed": [
@@ -1098,6 +1123,7 @@
         "Tuesday",
         "Tuesday",
         "Tuesday",
+        "Thursday",
         "Thursday"
       ],
       "totalPairsAgg": 0,
@@ -1106,12 +1132,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 118,
       "totalHomeAggAgainst": 75,
-      "totalAwayAgg": 104,
-      "totalAwayAggAgainst": 58,
+      "totalAwayAgg": 125,
+      "totalAwayAggAgainst": 77,
       "totalHomePoints": 27,
       "totalHomePointsAgainst": 14,
-      "totalAwayPoints": 24,
-      "totalAwayPointsAgainst": 12,
+      "totalAwayPoints": 29,
+      "totalAwayPointsAgainst": 16,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
@@ -1123,7 +1149,8 @@
         "Gildersome (Tuesday)",
         "Horsforth Woodside. (Tuesday)",
         "New Armley (Tuesday)",
-        "Cross Flatts Pk (Thursday)"
+        "Cross Flatts Pk (Thursday)",
+        "Middleton Community (Thursday)"
       ],
       "beatenByTeam": [
         "Horsforth Woodside. (Tuesday)",
@@ -1142,11 +1169,12 @@
         "duncan mcphail 12 - 21 Jim Jordan",
         "duncan mcphail 21 - 15 Brenda Chaffer",
         "duncan mcphail 21 - 6 Marion Worrall",
-        "duncan mcphail 21 - 16 Paul Hatch"
+        "duncan mcphail 21 - 16 Paul Hatch",
+        "duncan mcphail 21 - 19 Roy Tebbutt"
       ],
       "monday": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday": { "games": 11, "wins": 8, "aggDiff": 75 },
-      "thursday": { "games": 1, "wins": 1, "aggDiff": 5 },
+      "thursday": { "games": 2, "wins": 2, "aggDiff": 7 },
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "jack roberts": {
@@ -1193,13 +1221,13 @@
       "saturday": { "games": 1, "wins": 0, "aggDiff": -20 }
     },
     "jeff allman": {
-      "totalPoints": 67,
-      "totalAgg": 341,
-      "totalPointsAgainst": 84,
-      "totalAggAgainst": 393,
+      "totalPoints": 72,
+      "totalAgg": 362,
+      "totalPointsAgainst": 88,
+      "totalAggAgainst": 411,
       "homeWins": 5,
       "homeLosses": 6,
-      "awayWins": 5,
+      "awayWins": 6,
       "awayLosses": 5,
       "pairWins": 4,
       "pairLosses": 5,
@@ -1223,6 +1251,7 @@
         "Dot Taylor & Glennys Ash",
         "Ann Hughes & Keith Sellars",
         "Hugh Callard",
+        "Brian Ragan",
         "Brian Ragan",
         "David Charlesworth",
         "Maureen Bradshaw"
@@ -1260,6 +1289,7 @@
         "Thursday",
         "Thursday",
         "Thursday",
+        "Thursday",
         "Saturday",
         "Saturday",
         "Saturday"
@@ -1281,12 +1311,12 @@
       ],
       "totalHomeAgg": 168,
       "totalHomeAggAgainst": 208,
-      "totalAwayAgg": 152,
-      "totalAwayAggAgainst": 172,
+      "totalAwayAgg": 173,
+      "totalAwayAggAgainst": 190,
       "totalHomePoints": 35,
       "totalHomePointsAgainst": 47,
-      "totalAwayPoints": 32,
-      "totalAwayPointsAgainst": 37,
+      "totalAwayPoints": 37,
+      "totalAwayPointsAgainst": 41,
       "cupWins": 1,
       "cupLosses": 0,
       "beatenTeam": [
@@ -1298,6 +1328,7 @@
         "Western Flatts (Monday)",
         "New Wortley (Monday)",
         "New Armley (Thursday)",
+        "Middleton Community (Thursday)",
         "Middleton Community (Thursday)",
         "Gildersome B (Saturday)",
         "Scatcherd Park B (Saturday)"
@@ -1335,13 +1366,14 @@
         "jeff allman 16 - 21 Susan Harrison",
         "jeff allman 21 - 13 Brian Ragan",
         "jeff allman 2 - 21 Mario Biancardo",
+        "jeff allman 21 - 18 Brian Ragan",
         "jeff allman 21 - 20 David Charlesworth",
         "jeff allman 21 - 18 Maureen Bradshaw",
         "jeff allman 11 - 21 Graham Butterfield"
       ],
       "monday": { "games": 12, "wins": 7, "aggDiff": -9 },
       "tuesday": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday": { "games": 7, "wins": 2, "aggDiff": -37 },
+      "thursday": { "games": 8, "wins": 3, "aggDiff": -34 },
       "saturday": { "games": 3, "wins": 2, "aggDiff": -6 }
     },
     "jim moorin": {
@@ -2332,13 +2364,13 @@
       "saturday": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "steve gardner": {
-      "totalPoints": 127,
-      "totalAgg": 583,
-      "totalPointsAgainst": 55,
-      "totalAggAgainst": 347,
+      "totalPoints": 132,
+      "totalAgg": 604,
+      "totalPointsAgainst": 57,
+      "totalAggAgainst": 360,
       "homeWins": 15,
       "homeLosses": 1,
-      "awayWins": 9,
+      "awayWins": 10,
       "awayLosses": 2,
       "pairWins": 0,
       "pairLosses": 0,
@@ -2359,6 +2391,7 @@
         "Colin Firth",
         "Mick Harrison",
         "David Turner",
+        "Christine Glynne",
         "Julie Cavalli",
         "David Holmes",
         "Graham Bluff",
@@ -2396,6 +2429,7 @@
         "Thursday",
         "Thursday",
         "Thursday",
+        "Thursday",
         "Saturday",
         "Saturday",
         "Saturday",
@@ -2413,12 +2447,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 324,
       "totalHomeAggAgainst": 174,
-      "totalAwayAgg": 220,
-      "totalAwayAggAgainst": 131,
+      "totalAwayAgg": 241,
+      "totalAwayAggAgainst": 144,
       "totalHomePoints": 76,
       "totalHomePointsAgainst": 30,
-      "totalAwayPoints": 51,
-      "totalAwayPointsAgainst": 25,
+      "totalAwayPoints": 56,
+      "totalAwayPointsAgainst": 27,
       "cupWins": 0,
       "cupLosses": 2,
       "beatenTeam": [
@@ -2437,6 +2471,7 @@
         "Scatcherd Pk A (Thursday)",
         "Churwell Pk (Thursday)",
         "Pudsey Park A (Thursday)",
+        "Middleton Community (Thursday)",
         "Sth Leeds Cons B (Saturday)",
         "Gildersome B (Saturday)",
         "Cranmore (Saturday)",
@@ -2474,6 +2509,7 @@
         "steve gardner 16 - 21 Jim Bootland",
         "steve gardner 21 - 13 Mick Harrison",
         "steve gardner 21 - 5 David Turner",
+        "steve gardner 21 - 13 Christine Glynne",
         "steve gardner 21 - 0 Julie Cavalli",
         "steve gardner 21 - 7 David Holmes",
         "steve gardner 21 - 12 Graham Bluff",
@@ -2487,7 +2523,7 @@
       ],
       "monday": { "games": 2, "wins": 2, "aggDiff": 19 },
       "tuesday": { "games": 10, "wins": 7, "aggDiff": 44 },
-      "thursday": { "games": 7, "wins": 6, "aggDiff": 73 },
+      "thursday": { "games": 8, "wins": 7, "aggDiff": 81 },
       "saturday": { "games": 10, "wins": 9, "aggDiff": 100 }
     },
     "stewart watson": {
@@ -2713,7 +2749,7 @@
     },
     {
       "day": "Thursday",
-      "awayWins": 1,
+      "awayWins": 2,
       "homeWins": 3,
       "awayLosses": 3,
       "homeLosses": 1,
@@ -2721,15 +2757,16 @@
       "awayDraws": 0,
       "cupWins": 0,
       "cupLosses": 1,
-      "stanningleyAgg": 1246,
-      "stanningleyTotalPoints": 244,
-      "opponentAgg": 1127,
-      "opponentTotalPoints": 213,
+      "stanningleyAgg": 1407,
+      "stanningleyTotalPoints": 281,
+      "opponentAgg": 1269,
+      "opponentTotalPoints": 243,
       "beaten": [
         "Middleton Community (home)",
         "New Armley (away)",
         "Scatcherd Pk A (home)",
-        "Pudsey Park A (home)"
+        "Pudsey Park A (home)",
+        "Middleton Community (away)"
       ],
       "beatenBy": [
         "Churwell Pk (home)",
@@ -2739,7 +2776,7 @@
         "Middleton Community (cup)"
       ],
       "drawnWith": [],
-      "leaguePosition": 2,
+      "leaguePosition": 1,
       "results": [
         "Stanningley 24 - 36 Churwell Pk (Thu 21st Apr (1:30))",
         "Pudsey Park A 30 - 26 Stanningley (Thu 28th Apr (1:30))",
@@ -2749,7 +2786,8 @@
         "Cross Flatts Pk 32 - 24 Stanningley (Thu 16th Jun (1:30))",
         "Churwell Pk 35 - 32 Stanningley (Thu 23rd Jun (1:30))",
         "Stanningley 129 - 132 Middleton Community (Thu 30th Jun (1:30))",
-        "Stanningley 28 - 26 Pudsey Park A (Thu 14th Jul (1:30))"
+        "Stanningley 28 - 26 Pudsey Park A (Thu 14th Jul (1:30))",
+        "Middleton Community 30 - 37 Stanningley (Thu 28th Jul (1:30))"
       ]
     },
     {

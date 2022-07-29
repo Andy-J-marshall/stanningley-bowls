@@ -1,9 +1,10 @@
 import os
+import teamDetails
 
-mondayFilename = os.getcwd() + '/files/htmlFiles/Monday.html'
-tuesdayFilename = os.getcwd() + '/files/htmlFiles/Tuesday.html'
-thursdayFilename = os.getcwd() + '/files/htmlFiles/Thursday.html'
-saturdayFilename = os.getcwd() + '/files/htmlFiles/Saturday.html'
+mondayFilename = teamDetails.mondayStatsFilename
+tuesdayFilename = teamDetails.tuesdayStatsFilename
+thursdayFilename = teamDetails.thursdayStatsFilename
+saturdayFilename = teamDetails.saturdayStatsFilename
 
 if os.path.exists(mondayFilename):
     os.remove(mondayFilename)
