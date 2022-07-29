@@ -17,7 +17,7 @@ function PlayerResults(props) {
         const opponent = opponentPart.split(/[0-9]+/g)[1].trim();
 
         return {
-            stanningley: {
+            team: {
                 name: player,
                 score: playerScore,
             },
@@ -42,10 +42,10 @@ function PlayerResults(props) {
                         </tr>
                     </thead>
                     {resultsArray.map((result, idx) => {
-                        const stanningleyPlayer = capitalizeText([
-                            result.stanningley.name,
+                        const player = capitalizeText([
+                            result.team.name,
                         ]);
-                        const stanningleyScore = result.stanningley.score;
+                        const teamScore = result.team.score;
                         const opponent = capitalizeText([result.opponent.name]);
                         const opponentScore = result.opponent.score;
                         return (
@@ -56,7 +56,7 @@ function PlayerResults(props) {
                                             width: '42%',
                                         }}
                                     >
-                                        {stanningleyPlayer}
+                                        {player}
                                     </td>
 
                                     <td
@@ -65,7 +65,7 @@ function PlayerResults(props) {
                                             borderRightColor: 'black',
                                         }}
                                     >
-                                        {stanningleyScore}
+                                        {teamScore}
                                     </td>
                                     <td>{opponentScore}</td>
 

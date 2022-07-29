@@ -43,7 +43,7 @@ function Contact() {
             </a>
             <h1>LOCATION</h1>
             <p>
-                Stanningley Park Bowling Club is situated within Stanningley
+                {config.teamNames.full} is situated within Stanningley
                 Park. Follow the footpath round and the entrance is between the
                 rose garden and the rugby pitch. Access is on foot only.
             </p>

@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import config from '../config';
 
+const teamName = config.teamNames.short;
+
 function Results(props) {
     const stats = props.stats;
 
@@ -75,7 +77,7 @@ function Results(props) {
                                                 {date}
                                             </td>
                                             {homeTeam.toLowerCase() ===
-                                            'stanningley' ? (
+                                            teamName.toLowerCase() ? (
                                                 <td
                                                     style={{
                                                         width: '38%',
@@ -98,7 +100,7 @@ function Results(props) {
                                             </td>
                                             <td>{result.away.awayScore}</td>
                                             {awayTeam.toLowerCase() ===
-                                            'stanningley' ? (
+                                            teamName.toLowerCase() ? (
                                                 <td
                                                     style={{
                                                         width: '38%',

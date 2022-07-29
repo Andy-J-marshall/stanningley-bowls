@@ -15,8 +15,8 @@ function CombinedTeamStats(props) {
         combinedCupLosses,
         combinedHomeDraws,
         combinedAwayDraws,
-        combinedStanningleyAgg,
-        combinedStanningleyTotalPoints,
+        combinedAgg,
+        combinedTotalPoints,
         combinedOpponentAgg,
         combinedOpponentTotalPoints,
         combinedBeaten,
@@ -36,9 +36,9 @@ function CombinedTeamStats(props) {
                     totalWins={totalWins}
                     totalLosses={totalLosses}
                     totalDraws={totalDraws}
-                    stanningleyAgg={combinedStanningleyAgg}
+                    agg={combinedAgg}
                     opponentAgg={combinedOpponentAgg}
-                    stanningleyTeamPoints={combinedStanningleyTotalPoints}
+                    teamPoints={combinedTotalPoints}
                     opponentTeamPoints={combinedOpponentTotalPoints}
                     teamsBeaten={combinedBeaten}
                     teamsLostTo={combinedBeatenBy}

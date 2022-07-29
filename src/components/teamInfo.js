@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import mondayTeamImg from '../images/websiteImages/stan-mond-team.webp';
-import tuesdayTeamImg from '../images/websiteImages/stan-tues-team.webp';
-import thursdayTeamImg from '../images/websiteImages/stan-thur-team.webp';
-import saturdayTeamImg from '../images/websiteImages/stan-sat-team.webp';
-import socialBowlingImg from '../images/websiteImages/stan-social-bowling2.webp';
-import groupBowlingImg from '../images/websiteImages/stan-group-bowling.webp';
+import mondayTeamImg from '../images/websiteImages/mond-team.webp';
+import tuesdayTeamImg from '../images/websiteImages/tues-team.webp';
+import thursdayTeamImg from '../images/websiteImages/thur-team.webp';
+import saturdayTeamImg from '../images/websiteImages/sat-team.webp';
+import socialBowlingImg from '../images/websiteImages/social-bowling2.webp';
+import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 import config from '../config';
 
 const { teams } = config;

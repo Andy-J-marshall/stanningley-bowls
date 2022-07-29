@@ -1,19 +1,23 @@
+import os
+
 # Team info (lowercase)
-stanningleyTeamNames = ['stanningley', 'stanningley a',
-                        'stanningley park', 'stanningley park a']
+teamNames = ['stanningley', 'stanningley a',
+             'stanningley park', 'stanningley park a']
+
+preferredTeamName = 'Stanningley'
 
 # Days played
-stanningleyTeamDays = ['Monday', 'Tuesday', 'Thursday', 'Saturday']
+teamDays = ['Monday', 'Tuesday', 'Thursday', 'Saturday']
 
-# Every Stanningley player (lowercase)
-stanningleyPlayers = [
+# Every player (lowercase)
+players = [
     'jeff allman', 'shirley allman', 'john armitage', 'mario biancardo', 'shirley biancardo',
     'paul bowes', 'clifford brogie', 'craig clarkson', 'steve gardner', 'andy marshall', 'bernie miller',
     'alyssa randell', 'andy waller', 'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson',
     'dave hudson', 'neil porter', 'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster'
 ]
 
-# Stanningley players with different spellings of name (lowercase)
+# Players with different spellings of name (lowercase)
 duplicateTeamMemberNames = ['duncan mc phail',
                             'stuart watson', 'andrew marshall']
 
@@ -25,6 +29,13 @@ traitorPlayers = {
 }
 
 
+def findHtmlFiles():
+    files = []
+    for team in teamDays:
+        files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
+    return files
+
+# TODO what if a team is in a different league?
 def calculateGamePoints(points):
     if points == 21:
         gamePoints = 5
@@ -61,9 +72,9 @@ def anonymiseNames(name):
 
 
 def returnListOfPlayerStats():
-    stanningleyPlayers.sort()
-    stanningleyPlayerResults = {}
-    for player in stanningleyPlayers:
+    players.sort()
+    playerStats = {}
+    for player in players:
         player = anonymiseNames(player)
         playerObj = {
             'totalPoints': 0,
@@ -97,26 +108,13 @@ def returnListOfPlayerStats():
             'beatenTeam': [],
             'beatenByTeam': [],
             'results': [],
-            'monday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'tuesday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'thursday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
-            'saturday': {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            },
         }
-        stanningleyPlayerResults[player] = playerObj
-    return stanningleyPlayerResults
+
+        for team in teamDays:
+            playerObj[team.lower()] = {
+                'games': 0,
+                'wins': 0,
+                'aggDiff': 0,
+            }
+        playerStats[player] = playerObj
+    return playerStats

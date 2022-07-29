@@ -17,8 +17,8 @@ function IndividualTeamStats(props) {
         homeLosses,
         homeDraws,
         awayDraws,
-        stanningleyAgg,
-        stanningleyTotalPoints,
+        agg,
+        totalPoints,
         opponentAgg,
         opponentTotalPoints,
         leaguePosition,
@@ -50,9 +50,9 @@ function IndividualTeamStats(props) {
                 totalWins={totalWins}
                 totalLosses={totalLosses}
                 totalDraws={totalDraws}
-                stanningleyAgg={stanningleyAgg}
+                agg={agg}
                 opponentAgg={opponentAgg}
-                stanningleyTeamPoints={stanningleyTotalPoints}
+                teamPoints={totalPoints}
                 opponentTeamPoints={opponentTotalPoints}
                 homeWins={homeWins}
                 awayWins={awayWins}

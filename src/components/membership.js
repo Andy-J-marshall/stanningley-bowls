@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import config from '../config';
-import socialBowlingImg from '../images/websiteImages/stan-social-bowling.webp';
+import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
 
-const { socialPrice, bowlingPrice } = config.membership;
+const { socialPrice, bowlingPrice, bowlingPriceOnly } = config.membership;
 
 function Membership() {
     useEffect(() => {
@@ -12,10 +12,10 @@ function Membership() {
     return (
         <div id="members" className="center page-component">
             <p>
-                Stanningley Park Bowling club welcomes new members of any age.
-                Fees apply to adults over 16, children are welcome but must be
-                accompanied by an adult member. Membership is valid per season
-                and runs from 1st April until 30th September. Please{' '}
+                {config.teamNames.full} welcomes new members of any
+                age. Fees apply to adults over 16, children are welcome but must
+                be accompanied by an adult member. Membership is valid per
+                season and runs from 1st April until 30th September. Please{' '}
                 <a style={{ textDecoration: 'none' }} href="/#/contact">
                     contact
                 </a>{' '}
@@ -32,12 +32,12 @@ function Membership() {
                 <a style={{ textDecoration: 'none' }} href="/#/team-and-social">
                     teams
                 </a>{' '}
-                currently play in the Leeds Parks leagues.
+                currently play in the {config.leagues} leagues.
             </p>
             <p>
                 *If you have already paid your green fee at another Leeds Parks
-                bowling club then you only need to pay £5, please bring proof
-                you have paid this at another club.
+                bowling club then you only need to pay £{bowlingPriceOnly},
+                please bring proof you have paid this at another club.
             </p>
             <br />
             <h3>SOCIAL MEMBERSHIP</h3>

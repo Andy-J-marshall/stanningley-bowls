@@ -17,6 +17,9 @@ const players: Array<string> = [
   'Andy W',
   'Jack Roberts',
   'Paul Bowes',
+  'Alyssa Randell',
+  'Ali',
+  'Neil Porter',
 ];
 for (const player of players) {
   test(`Stats search bar can return ${player} stats`, async () => {

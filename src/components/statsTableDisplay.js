@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { arrayToList } from '../helpers/utils';
+import config from '../config';
 
 function StatsTableDisplay(props) {
     const totalGames = props.totalGames;
@@ -15,9 +16,9 @@ function StatsTableDisplay(props) {
     const totalDraws = props.totalDraws;
     const homeDraws = props.homeDraws || 0;
     const awayDraws = props.awayDraws || 0;
-    const stanningleyAgg = props.stanningleyAgg;
+    const agg = props.agg;
     const opponentAgg = props.opponentAgg;
-    const stanningleyTeamPoints = props.stanningleyTeamPoints;
+    const teamPoints = props.teamPoints;
     const opponentTeamPoints = props.opponentTeamPoints;
     const leaguePosition = props.leaguePosition;
     const teamsBeaten = props.teamsBeaten
@@ -95,10 +96,10 @@ function StatsTableDisplay(props) {
                             </td>
                         </tr>
                     ) : null}
-                    {stanningleyAgg > 0 ? (
+                    {agg > 0 ? (
                         <tr>
-                            <td>Stanningley aggregate</td>
-                            <td>{stanningleyAgg}</td>
+                            <td>{config.teamNames.short} aggregate</td>
+                            <td>{agg}</td>
                         </tr>
                     ) : null}
                     {opponentAgg > 0 ? (
@@ -107,10 +108,10 @@ function StatsTableDisplay(props) {
                             <td>{opponentAgg}</td>
                         </tr>
                     ) : null}
-                    {stanningleyTeamPoints > 0 ? (
+                    {teamPoints > 0 ? (
                         <tr>
-                            <td>Stanningley points*</td>
-                            <td>{stanningleyTeamPoints}</td>
+                            <td>{config.teamNames.short} points*</td>
+                            <td>{teamPoints}</td>
                         </tr>
                     ) : null}
                     {opponentTeamPoints > 0 ? (

@@ -2663,8 +2663,8 @@
       "awayDraws": 1,
       "cupWins": 0,
       "cupLosses": 0,
-      "stanningleyAgg": 1624,
-      "stanningleyTotalPoints": 360,
+      "agg": 1624,
+      "totalPoints": 360,
       "opponentAgg": 1305,
       "opponentTotalPoints": 271,
       "beaten": [
@@ -2714,8 +2714,8 @@
       "awayDraws": 0,
       "cupWins": 0,
       "cupLosses": 1,
-      "stanningleyAgg": 1751,
-      "stanningleyTotalPoints": 378,
+      "agg": 1751,
+      "totalPoints": 378,
       "opponentAgg": 1083,
       "opponentTotalPoints": 173,
       "beaten": [
@@ -2757,8 +2757,8 @@
       "awayDraws": 0,
       "cupWins": 0,
       "cupLosses": 1,
-      "stanningleyAgg": 1407,
-      "stanningleyTotalPoints": 281,
+      "agg": 1407,
+      "totalPoints": 281,
       "opponentAgg": 1269,
       "opponentTotalPoints": 243,
       "beaten": [
@@ -2800,8 +2800,8 @@
       "awayDraws": 0,
       "cupWins": 1,
       "cupLosses": 1,
-      "stanningleyAgg": 2001,
-      "stanningleyTotalPoints": 398,
+      "agg": 2001,
+      "totalPoints": 398,
       "opponentAgg": 1304,
       "opponentTotalPoints": 205,
       "beaten": [

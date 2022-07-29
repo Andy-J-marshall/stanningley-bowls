@@ -5,6 +5,7 @@ import Supporters from './supporters';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
 import fixturesImg from '../images/websiteImages/carousel-03.webp';
+import config from '../config';
 
 function Home() {
     useEffect(() => {
@@ -71,14 +72,14 @@ function Home() {
                 </Nav>
             </div>
             <p className="center page-component" style={{ width: '80%' }}>
-                Stanningley Park Bowling Club is a family friendly crown green
-                bowling club situated within Stanningley Park, West Leeds.
+                {config.teamNames.full} is a family friendly crown
+                green bowling club situated within Stanningley Park, West Leeds.
                 Surrounded by trees, the green is a secure and tranquil place to
                 play bowls. New members of all ages and abilities are welcome
                 and we have numerous social events to get involved in. The club
-                has proved to be a strong contender in the Leeds Parks leagues
-                so if you are interested in competing then we are always looking
-                for dedicated bowlers to join our teams.
+                has proved to be a strong contender in the {config.leagues}{' '}
+                leagues so if you are interested in competing then we are always
+                looking for dedicated bowlers to join our teams.
             </p>
             <Supporters />
         </div>
