@@ -118,3 +118,6 @@ Update tests:
 
 - players array in `playerStats.spec.ts`
 - bowlsStatsExample.json with data from `src/data/bowlsStatsXXXX.json`
+
+Update team info in all components:
+- lots of hardcoded references and variable names called "Monday", "Tuesday", "Thursday", "Saturday" #TODO would be good to minimise these
