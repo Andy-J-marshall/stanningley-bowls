@@ -4,10 +4,10 @@ import { Tabs, Tab } from 'react-bootstrap';
 function TeamTabs(props) {
     const id = props.id;
     const allComponent = props.allComponent;
-    const mondayComponent = props.mondayComponent;
-    const tuesdayComponent = props.tuesdayComponent;
-    const thursdayComponent = props.thursdayComponent;
-    const saturdayComponent = props.saturdayComponent;
+    const team1Component = props.team1Component;
+    const team2Component = props.team2Component;
+    const team3Component = props.team3Component;
+    const team4Component = props.team4Component;
 
     return (
         <div>
@@ -16,16 +16,16 @@ function TeamTabs(props) {
                     {allComponent}
                 </Tab>
                 <Tab eventKey="Monday" title="Mon">
-                    {mondayComponent}
+                    {team1Component}
                 </Tab>
                 <Tab eventKey="Tuesday" title="Tues">
-                    {tuesdayComponent}
+                    {team2Component}
                 </Tab>
                 <Tab eventKey="Thursday" title="Thur">
-                    {thursdayComponent}
+                    {team3Component}
                 </Tab>
                 <Tab eventKey="Saturday" title="Sat">
-                    {saturdayComponent}
+                    {team4Component}
                 </Tab>
             </Tabs>
         </div>

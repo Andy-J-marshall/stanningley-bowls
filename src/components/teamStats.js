@@ -30,7 +30,7 @@ function TeamStats(props) {
         return <CombinedTeamStats stats={teamResults} />;
     }
 
-    function mondayComponent() {
+    function returnTeam1Component() {
         return (
             <IndividualTeamStats
                 day="Monday"
@@ -40,7 +40,7 @@ function TeamStats(props) {
         );
     }
 
-    function tuesdayComponent() {
+    function returnTeam2Component() {
         return (
             <IndividualTeamStats
                 day="Tuesday"
@@ -50,7 +50,7 @@ function TeamStats(props) {
         );
     }
 
-    function thursdayComponent() {
+    function returnTeam3Component() {
         return (
             <IndividualTeamStats
                 day="Thursday"
@@ -60,7 +60,7 @@ function TeamStats(props) {
         );
     }
 
-    function saturdayComponent() {
+    function returnTeam4Component() {
         return (
             <IndividualTeamStats
                 day="Saturday"
@@ -76,10 +76,10 @@ function TeamStats(props) {
             <TeamTabs
                 id="team-stat"
                 allComponent={allComponent()}
-                mondayComponent={mondayComponent()}
-                tuesdayComponent={tuesdayComponent()}
-                thursdayComponent={thursdayComponent()}
-                saturdayComponent={saturdayComponent()}
+                team1Component={returnTeam1Component()}
+                team2Component={returnTeam2Component()}
+                team3Component={returnTeam3Component()}
+                team4Component={returnTeam4Component()}
             />
             <br />
             <p className="footnote">* {config.leagueRules}</p>

@@ -278,7 +278,7 @@ function PlayerRecords(props) {
         );
     }
 
-    function mondayComponent() {
+    function returnTeam1Component() {
         return (
             <RecordsTableDisplay
                 minGames={minMonGames}
@@ -293,7 +293,7 @@ function PlayerRecords(props) {
         );
     }
 
-    function tuesdayComponent() {
+    function returnTeam2Component() {
         return (
             <RecordsTableDisplay
                 minGames={minTuesGames}
@@ -308,7 +308,7 @@ function PlayerRecords(props) {
         );
     }
 
-    function thursdayComponent() {
+    function returnTeam3Component() {
         return (
             <RecordsTableDisplay
                 minGames={minThurGames}
@@ -323,7 +323,7 @@ function PlayerRecords(props) {
         );
     }
 
-    function saturdayComponent() {
+    function returnTeam4Component() {
         return (
             <RecordsTableDisplay
                 minGames={minSatGames}
@@ -344,10 +344,10 @@ function PlayerRecords(props) {
             <TeamTabs
                 id="player-record"
                 allComponent={allComponent()}
-                mondayComponent={mondayComponent()}
-                tuesdayComponent={tuesdayComponent()}
-                thursdayComponent={thursdayComponent()}
-                saturdayComponent={saturdayComponent()}
+                team1Component={returnTeam1Component()}
+                team2Component={returnTeam2Component()}
+                team3Component={returnTeam3Component()}
+                team4Component={returnTeam4Component()}
             />
         </div>
     );

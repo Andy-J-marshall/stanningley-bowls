@@ -121,7 +121,7 @@ Update tests:
 
 Update team info in all components:
 
-- lots of hardcoded references and variable names called "Monday", "Tuesday", "Thursday", "Saturday" #TODO would be good to minimise these
+- Change hardcoded references and variable names called "Monday", "Tuesday", "Thursday", "Saturday" to the correct team names
 - Add/remove teams if there are more/fewer teams than Stanningley in `playerRecords` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `players` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component

@@ -35,7 +35,6 @@ def findHtmlFiles():
         files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
     return files
 
-# TODO what if a team is in a different league?
 def calculateGamePoints(points):
     if points == 21:
         gamePoints = 5
