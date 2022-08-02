@@ -261,90 +261,80 @@ function PlayerRecords(props) {
 
     function allComponent() {
         return (
-            <div>
-                <RecordsTableDisplay
-                    minGames={minTotalGames}
-                    playerOrTeam="Player"
-                    mostGames={mostGames}
-                    mostGamesPlayer={mostGamesPlayer}
-                    mostWins={mostWins}
-                    mostWinsPlayer={mostWinsPlayer}
-                    bestWinPerc={bestWinPerc}
-                    bestWinPercPlayerOrTeam={bestWinPercPlayer}
-                    bestAverage={bestAverage}
-                    bestAveragePlayer={bestAveragePlayer}
-                    bestPoints={bestPoints}
-                    bestPointsPlayer={bestPointsPlayer}
-                />
-            </div>
+            <RecordsTableDisplay
+                minGames={minTotalGames}
+                playerOrTeam="Player"
+                mostGames={mostGames}
+                mostGamesPlayer={mostGamesPlayer}
+                mostWins={mostWins}
+                mostWinsPlayer={mostWinsPlayer}
+                bestWinPerc={bestWinPerc}
+                bestWinPercPlayerOrTeam={bestWinPercPlayer}
+                bestAverage={bestAverage}
+                bestAveragePlayer={bestAveragePlayer}
+                bestPoints={bestPoints}
+                bestPointsPlayer={bestPointsPlayer}
+            />
         );
     }
 
     function mondayComponent() {
         return (
-            <div>
-                <RecordsTableDisplay
-                    minGames={minMonGames}
-                    playerOrTeam="Player"
-                    mostWins={mostMondayWins}
-                    mostWinsPlayer={mostMondayWinsPlayer}
-                    bestWinPerc={bestMondayWinPerc}
-                    bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
-                    bestAverage={bestMondayAverage}
-                    bestAveragePlayer={bestMondayAveragePlayer}
-                />
-            </div>
+            <RecordsTableDisplay
+                minGames={minMonGames}
+                playerOrTeam="Player"
+                mostWins={mostMondayWins}
+                mostWinsPlayer={mostMondayWinsPlayer}
+                bestWinPerc={bestMondayWinPerc}
+                bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
+                bestAverage={bestMondayAverage}
+                bestAveragePlayer={bestMondayAveragePlayer}
+            />
         );
     }
 
     function tuesdayComponent() {
         return (
-            <div>
-                <RecordsTableDisplay
-                    minGames={minTuesGames}
-                    playerOrTeam="Player"
-                    mostWins={mostTuesdayWins}
-                    mostWinsPlayer={mostTuesdayWinsPlayer}
-                    bestWinPerc={bestTuesdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
-                    bestAverage={bestTuesdayAverage}
-                    bestAveragePlayer={bestTuesdayAveragePlayer}
-                />
-            </div>
+            <RecordsTableDisplay
+                minGames={minTuesGames}
+                playerOrTeam="Player"
+                mostWins={mostTuesdayWins}
+                mostWinsPlayer={mostTuesdayWinsPlayer}
+                bestWinPerc={bestTuesdayWinPerc}
+                bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
+                bestAverage={bestTuesdayAverage}
+                bestAveragePlayer={bestTuesdayAveragePlayer}
+            />
         );
     }
 
     function thursdayComponent() {
         return (
-            <div>
-                <RecordsTableDisplay
-                    minGames={minThurGames}
-                    playerOrTeam="Player"
-                    mostWins={mostThursdayWins}
-                    mostWinsPlayer={mostThursdayWinsPlayer}
-                    bestWinPerc={bestThursdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestThursdayWinPercPlayer}
-                    bestAverage={bestThursdayAverage}
-                    bestAveragePlayer={bestThursdayAveragePlayer}
-                />
-            </div>
+            <RecordsTableDisplay
+                minGames={minThurGames}
+                playerOrTeam="Player"
+                mostWins={mostThursdayWins}
+                mostWinsPlayer={mostThursdayWinsPlayer}
+                bestWinPerc={bestThursdayWinPerc}
+                bestWinPercPlayerOrTeam={bestThursdayWinPercPlayer}
+                bestAverage={bestThursdayAverage}
+                bestAveragePlayer={bestThursdayAveragePlayer}
+            />
         );
     }
 
     function saturdayComponent() {
         return (
-            <div>
-                <RecordsTableDisplay
-                    minGames={minSatGames}
-                    playerOrTeam="Player"
-                    mostWins={mostSaturdayWins}
-                    mostWinsPlayer={mostSaturdayWinsPlayer}
-                    bestWinPerc={bestSaturdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
-                    bestAverage={bestSaturdayAverage}
-                    bestAveragePlayer={bestSaturdayAveragePlayer}
-                />
-            </div>
+            <RecordsTableDisplay
+                minGames={minSatGames}
+                playerOrTeam="Player"
+                mostWins={mostSaturdayWins}
+                mostWinsPlayer={mostSaturdayWinsPlayer}
+                bestWinPerc={bestSaturdayWinPerc}
+                bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
+                bestAverage={bestSaturdayAverage}
+                bestAveragePlayer={bestSaturdayAveragePlayer}
+            />
         );
     }
 
