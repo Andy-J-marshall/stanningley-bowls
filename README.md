@@ -84,7 +84,7 @@ Update `scripts/pythonScripts/teamDetails.py`:
 - duplicateTeamMemberNames
 - anonymiseNames
 - traitorPlayers (also update the days)
-- calculateGamePoints (#TODO check if we need this one)
+- calculateGamePoints
 
 Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
 
@@ -104,7 +104,7 @@ Update `homepage` in `package.json`
 Check `bowls.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
-- Remove game points? (#TODO check if we need this one)
+- Remove/edit game points?
 
 Update `src/config.js`:
 
@@ -120,6 +120,7 @@ Update tests:
 - bowlsStatsExample.json with data from `src/data/bowlsStatsXXXX.json`
 
 Update team info in all components:
+
 - lots of hardcoded references and variable names called "Monday", "Tuesday", "Thursday", "Saturday" #TODO would be good to minimise these
 - Add/remove teams if there are more/fewer teams than Stanningley in `playerRecords` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `players` component
@@ -128,4 +129,5 @@ Update team info in all components:
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamTabs` component
 
 Team Records:
+
 - gamesPerMatch for Monday and Wednesday are set to 6 and 8 for everything else. Is this still correct?
