@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5d381e7f.chunk.css",
-    "main.js": "/static/js/main.9b726f6a.chunk.js",
-    "main.js.map": "/static/js/main.9b726f6a.chunk.js.map",
+    "main.js": "/static/js/main.5d6a7dc5.chunk.js",
+    "main.js.map": "/static/js/main.5d6a7dc5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -21,13 +21,13 @@
     "static/media/carousel-03.bba830b6.webp": "/static/media/carousel-03.bba830b6.webp",
     "static/media/group-bowling.466ad98b.webp": "/static/media/group-bowling.466ad98b.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
-    "static/media/mond-team.01e57f1c.webp": "/static/media/mond-team.01e57f1c.webp",
-    "static/media/sat-team.a07c0c5c.webp": "/static/media/sat-team.a07c0c5c.webp",
     "static/media/social-bowling.3b26214a.webp": "/static/media/social-bowling.3b26214a.webp",
     "static/media/social-bowling2.32756047.webp": "/static/media/social-bowling2.32756047.webp",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
-    "static/media/thur-team.fe4ebc96.webp": "/static/media/thur-team.fe4ebc96.webp",
-    "static/media/tues-team.b9404668.webp": "/static/media/tues-team.b9404668.webp",
+    "static/media/team1-team.01e57f1c.webp": "/static/media/team1-team.01e57f1c.webp",
+    "static/media/team2-team.b9404668.webp": "/static/media/team2-team.b9404668.webp",
+    "static/media/team3-team.fe4ebc96.webp": "/static/media/team3-team.fe4ebc96.webp",
+    "static/media/team4-team.a07c0c5c.webp": "/static/media/team4-team.a07c0c5c.webp",
     "static/media/upcoming_fixtures_April.419a4fcc.png": "/static/media/upcoming_fixtures_April.419a4fcc.png",
     "static/media/upcoming_fixtures_Aug.43489b53.png": "/static/media/upcoming_fixtures_Aug.43489b53.png",
     "static/media/upcoming_fixtures_July.419a4fcc.png": "/static/media/upcoming_fixtures_July.419a4fcc.png",
@@ -41,6 +41,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.3127b324.chunk.js",
     "static/css/main.5d381e7f.chunk.css",
-    "static/js/main.9b726f6a.chunk.js"
+    "static/js/main.5d6a7dc5.chunk.js"
   ]
 }
