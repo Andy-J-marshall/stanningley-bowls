@@ -126,3 +126,6 @@ Update team info in all components:
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamInfo` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamTabs` component
+
+Team Records:
+- gamesPerMatch for Monday and Wednesday are set to 6 and 8 for everything else. Is this still correct?
