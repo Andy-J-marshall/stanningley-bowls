@@ -47,8 +47,11 @@ for (const team of teams) {
     const url = team.url;
     await page.goto(url);
 
-    if ((await page.$('#x-Dframe')) !== null) {
-      await page.frameLocator('#x-Dframe').locator('#x-DlgI > input').click();
+    const popUp = await page
+      .frameLocator('#x-Dframe')
+      .locator('#x-DlgI > input');
+    if (popUp) {
+      popUp.click();
     } else {
       console.log('No pop up clicked');
     }
