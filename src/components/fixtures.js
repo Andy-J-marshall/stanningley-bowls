@@ -20,6 +20,7 @@ function FixturesResults() {
         <div id="fixture" className="center">
             {year === yearFixturesAddedFor ? (
                 <div>
+                    <hr style={{ margin: 0 }} />
                     {4 >= month && (
                         <div>
                             <img
