@@ -1,4 +1,5 @@
 import React from 'react';
+import facebook from '../images/socials/facebook_blue.png';
 
 const today = new Date().getTime();
 const events = [
@@ -27,6 +28,18 @@ function Events() {
             {eventsToShow && (
                 <div id="events" className="center page-component">
                     <h1>UPCOMING EVENTS</h1>
+                    <a
+                        style={{ textDecoration: 'none' }}
+                        href="https://www.facebook.com/StanningleyBowlsClub/events/"
+                    >
+                        <img
+                            className="logos"
+                            src={facebook}
+                            alt="Facebook Events link"
+                        />
+                        See Facebook Events
+                    </a>
+
                     {events.map((event) => {
                         if (event.date >= today) {
                             return (
