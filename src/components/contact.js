@@ -7,6 +7,7 @@ import config from '../config';
 const { instagramUrl, facebookUrl, emailUrl, googleMapsIframeUrl } =
     config.socialLinks;
 
+const facebookEventsUrl = `${facebookUrl}/events`;
 const emailAddress = emailUrl.split('mailto:')[1];
 
 function Contact() {
@@ -41,11 +42,24 @@ function Contact() {
             >
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
+            <br />
+            <br />
+            <p>
+                See our upcoming{' '}
+                <a
+                    target="_blank"
+                    style={{ textDecoration: 'none' }}
+                    href={facebookEventsUrl}
+                >
+                    events
+                </a>{' '}
+                on Facebook.
+            </p>
             <h1>LOCATION</h1>
             <p>
-                {config.teamNames.full} is situated within Stanningley
-                Park. Follow the footpath round and the entrance is between the
-                rose garden and the rugby pitch. Access is on foot only.
+                {config.teamNames.full} is situated within Stanningley Park.
+                Follow the footpath round and the entrance is between the rose
+                garden and the rugby pitch. Access is on foot only.
             </p>
             <p>
                 The Park has a small, free car park which is located just off

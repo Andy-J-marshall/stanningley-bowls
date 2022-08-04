@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Nav, Carousel } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Supporters from './supporters';
-import Events from './events';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
 import fixturesImg from '../images/websiteImages/carousel-03.webp';
+import eventsImg from '../images/websiteImages/carousel-05.webp';
 import config from '../config';
 
 function Home() {
@@ -15,7 +15,6 @@ function Home() {
 
     return (
         <div id="home-page">
-            <Events />
             <div className="center page-component">
                 <Nav defaultActiveKey="/home" className="tabs">
                     <Carousel fade>
@@ -24,9 +23,7 @@ function Home() {
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
-                                        style={{
-                                            color: 'white',
-                                        }}
+                                        style={{ color: 'white' }}
                                         to="/membership"
                                     >
                                         <Nav.Link href="/membership">
@@ -37,13 +34,26 @@ function Home() {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
+                            <img src={eventsImg} alt="Events slide" />
+                            <Carousel.Caption>
+                                <a
+                                    target="_blank"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'white',
+                                    }}
+                                    href={`${config.socialLinks.facebookUrl}/events`}
+                                >
+                                    <h2 style={{ margin: '16px' }}>EVENTS</h2>
+                                </a>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
                             <img src={statsImg} alt="Stats slide" />
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
-                                        style={{
-                                            color: 'white',
-                                        }}
+                                        style={{ color: 'white' }}
                                         to="/stats/player"
                                     >
                                         <Nav.Link href="/stats/player">
@@ -58,9 +68,7 @@ function Home() {
                             <Carousel.Caption>
                                 <Nav.Item>
                                     <LinkContainer
-                                        style={{
-                                            color: 'white',
-                                        }}
+                                        style={{ color: 'white' }}
                                         to="/fixtures"
                                     >
                                         <Nav.Link href="/fixtures">
