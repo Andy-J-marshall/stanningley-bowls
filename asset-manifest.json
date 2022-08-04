@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4e5ae3f0.chunk.css",
-    "main.js": "/static/js/main.e624baa1.chunk.js",
-    "main.js.map": "/static/js/main.e624baa1.chunk.js.map",
+    "main.js": "/static/js/main.069d2b3b.chunk.js",
+    "main.js.map": "/static/js/main.069d2b3b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a1d6240.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a1d6240.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/carousel-01.eded76cf.webp": "/static/media/carousel-01.eded76cf.webp",
     "static/media/carousel-02.2ff81fc1.webp": "/static/media/carousel-02.2ff81fc1.webp",
     "static/media/carousel-03.bba830b6.webp": "/static/media/carousel-03.bba830b6.webp",
+    "static/media/carousel-05.a2a0e36e.webp": "/static/media/carousel-05.a2a0e36e.webp",
     "static/media/group-bowling.466ad98b.webp": "/static/media/group-bowling.466ad98b.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
     "static/media/social-bowling.3b26214a.webp": "/static/media/social-bowling.3b26214a.webp",
@@ -41,6 +42,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.3127b324.chunk.js",
     "static/css/main.4e5ae3f0.chunk.css",
-    "static/js/main.e624baa1.chunk.js"
+    "static/js/main.069d2b3b.chunk.js"
   ]
 }
