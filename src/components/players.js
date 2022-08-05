@@ -40,12 +40,13 @@ function Players(props) {
         totalHomePointsAgainst,
         totalAwayPoints,
         totalAwayPointsAgainst,
-        monday,
-        tuesday,
-        thursday,
-        saturday,
         results,
     } = playersStats[player];
+    const p = playersStats[player];
+    const monday = p['monday combined leeds'];
+    const tuesday = p['tuesday vets leeds'];
+    const thursday = p['thursday vets leeds'];
+    const saturday = p['saturday leeds'];
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
     const biggestWin = findBiggestWin(results);

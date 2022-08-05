@@ -10,16 +10,16 @@ function TeamStats(props) {
     const { playerResults, teamResults } = stats;
 
     const mondayStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'monday'
+        (team) => team.day.toLowerCase().includes('monday')
     );
     const tuesdayStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'tuesday'
+        (team) => team.day.toLowerCase().includes('tuesday vets')
     );
     const thursdayStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'thursday'
+        (team) => team.day.toLowerCase().includes('thursday')
     );
     const saturdayStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'saturday'
+        (team) => team.day.toLowerCase().includes('saturday')
     );
 
     useEffect(() => {
@@ -33,7 +33,7 @@ function TeamStats(props) {
     function returnTeam1Component() {
         return (
             <IndividualTeamStats
-                day="Monday"
+                day="Monday Combined Leeds"
                 stats={mondayStats}
                 playerStats={playerResults}
             />
@@ -43,7 +43,7 @@ function TeamStats(props) {
     function returnTeam2Component() {
         return (
             <IndividualTeamStats
-                day="Tuesday"
+                day="Tuesday Vets Leeds"
                 stats={tuesdayStats}
                 playerStats={playerResults}
             />
@@ -53,7 +53,7 @@ function TeamStats(props) {
     function returnTeam3Component() {
         return (
             <IndividualTeamStats
-                day="Thursday"
+                day="Thursday Vets Leeds"
                 stats={thursdayStats}
                 playerStats={playerResults}
             />
@@ -63,7 +63,7 @@ function TeamStats(props) {
     function returnTeam4Component() {
         return (
             <IndividualTeamStats
-                day="Saturday"
+                day="Saturday Leeds"
                 stats={saturdayStats}
                 playerStats={playerResults}
             />

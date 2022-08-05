@@ -4,6 +4,7 @@ import json
 import os
 from datetime import date
 import teamDetails
+import utils
 
 year = str(date.today().year)
 
@@ -12,9 +13,9 @@ teamDays = teamDetails.teamDays
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
-playerStats = teamDetails.returnListOfPlayerStats()
-anonymiseNames = teamDetails.anonymiseNames
-deduplicateNames = teamDetails.deduplicateNames
+playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
+anonymiseNames = utils.anonymiseNames
+deduplicateNames = utils.deduplicateNames
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 
@@ -37,6 +38,7 @@ path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 allTeamResults = []
+print('UPDATING STATS:', teamNames[0].upper())
 
 for day in teamDays:
     # Goes through each sheet in turn
@@ -288,7 +290,6 @@ for day in teamDays:
 
             if opponentsName.lower() != '*walkover*':
                 playerName = sheet[playerNameCol + str(row)].value
-                playerName = anonymiseNames(playerName)
                 aggregate = sheet[playerScoreCol + str(row)].value
                 opponentAggregate = sheet[opponentPlayerScoreCol +
                                           str(row)].value
@@ -312,8 +313,6 @@ for day in teamDays:
                         secondOpponent = sheet[opponentPlayerNameCol +
                                                str(row + 1)].value
 
-                playerName = deduplicateNames(playerName)
-
                 for i in range(1, 10):
                     opponentTeamRow = sheet[awayTeamNameCol + str(row - i)]
                     if opponentTeamRow.row in homeRow:
@@ -322,11 +321,17 @@ for day in teamDays:
                     if opponentTeamRow.row in awayRow:
                         opponentTeam = sheet[homeTeamNameCol +
                                              str(row - i)].value
+                
+                pairsPartner = deduplicateNames(pairsPartner)
+                pairsPartner = anonymiseNames(pairsPartner)
+                secondOpponent = anonymiseNames(secondOpponent)
+                playerName = deduplicateNames(playerName)
+                playerName = anonymiseNames(playerName)
+                opponentsName = anonymiseNames(opponentsName)
 
             # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
-                    pairsPartner = anonymiseNames(pairsPartner)
                     playerStats[playerName]['pairsPartners'].append(
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
@@ -416,3 +421,4 @@ if os.path.exists(filename):
 with open(filename, 'w') as f:
     json.dump(dataToExport, f)
     print(filename + ' created')
+    print('------')

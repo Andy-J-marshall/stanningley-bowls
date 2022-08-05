@@ -7,25 +7,37 @@ let page;
 
 const teams = [
   {
-    day: 'Monday',
+    day: 'Monday Combined Leeds',
     url: 'https://bowlsnet.uk/Leeds/MonComb',
     dateFromValue: '17496',
     dateToValue: '18784',
   },
   {
-    day: 'Tuesday',
+    day: 'Tuesday Vets Leeds',
     url: 'https://bowlsnet.uk/LeedsParkVets/Tue',
     dateFromValue: '17560',
     dateToValue: '18848',
   },
   {
-    day: 'Thursday',
+    day: 'Tuesday Leeds',
+    url: 'https://bowlsnet.uk/Leeds/Tue',
+    dateFromValue: '17688',
+    dateToValue: '18672',
+  },
+  {
+    day: 'Wednesday Half Holiday Leeds',
+    url: 'https://bowlsnet.uk/Leeds/Wed',
+    dateFromValue: '17456',
+    dateToValue: '18800',
+  },
+  {
+    day: 'Thursday Vets Leeds',
     url: 'https://bowlsnet.uk/LeedsParkVets/Thu',
     dateFromValue: '17576',
     dateToValue: '18752',
   },
   {
-    day: 'Saturday',
+    day: 'Saturday Leeds',
     url: 'https://bowlsnet.uk/Leeds/Sat',
     dateFromValue: '17424',
     dateToValue: '18880',

@@ -48,10 +48,10 @@ const live = {
         },
     ],
     days: {
-        monday: 'Monday Combined',
-        tuesday: 'Tuesday Vets',
-        thursday: 'Thursday Vets',
-        saturday: 'Saturday',
+        'monday combined leeds': 'Monday Combined',
+        'tuesday vets leeds': 'Tuesday Vets',
+        'thursday vets leeds': 'Thursday Vets',
+        'saturday leeds': 'Saturday',
     },
     leagues: 'Leeds Parks',
     leagueRules:

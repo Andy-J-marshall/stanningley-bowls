@@ -1,7 +1,7 @@
 import os
-import teamDetails
+import utils
 
-htmlFiles = teamDetails.findHtmlFiles()
+htmlFiles = utils.findHtmlFiles()
 
 for file in htmlFiles:
     if os.path.exists(file):

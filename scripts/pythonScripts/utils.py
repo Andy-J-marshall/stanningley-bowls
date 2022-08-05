@@ -1,0 +1,93 @@
+import os
+import teamDetails
+
+teamPlayers = teamDetails.players
+duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
+currentTeamDays = teamDetails.teamDays
+
+otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds']
+teamDays = currentTeamDays + otherLeagues
+extraPlayers = []
+players = teamPlayers + extraPlayers
+otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'Andrew Waller']
+duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
+
+
+def findHtmlFiles():
+    files = []
+    for team in teamDays:
+        files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
+    return files
+
+
+def deduplicateNames(name):
+    if name == 'Duncan Mc Phail':
+        name = 'Duncan McPhail'
+    if name == 'Andrew Marshall':
+        name = 'Andy Marshall'
+    if name == 'Stuart Watson':
+        name = 'Stewart Watson'
+    if name == 'Cliff Brogie':
+        name = 'Clifford Brogie'
+    if name == 'David Hudson':
+        name = 'Dave Hudson'
+    if name == 'Andrew Waller':
+        name = 'Andy Waller'
+    return name.lower()
+
+
+def anonymiseNames(name):
+    if name.lower() == 'alison woodfine':
+        name = 'Ali'
+    if name.lower() == 'andy waller':
+        name = 'Andy W'
+    return name.lower()
+
+
+def returnListOfPlayerStats(days):
+    players.sort()
+    playerStats = {}
+    for player in players:
+        player = anonymiseNames(player)
+        playerObj = {
+            'totalPoints': 0,
+            'totalAgg': 0,
+            'totalPointsAgainst': 0,
+            'totalAggAgainst': 0,
+            'homeWins': 0,
+            'homeLosses': 0,
+            'awayWins': 0,
+            'awayLosses': 0,
+            'pairWins': 0,
+            'pairLosses': 0,
+            'pairsPartners': [],
+            'beatenOpponents': [],
+            'beatenBy': [],
+            'dayPlayed': [],
+            'totalPairsAgg': 0,
+            'totalPairsAggAgainst': 0,
+            'winningPairsPartners': [],
+            'losingPairsPartners': [],
+            'totalHomeAgg': 0,
+            'totalHomeAggAgainst': 0,
+            'totalAwayAgg': 0,
+            'totalAwayAggAgainst': 0,
+            'totalHomePoints': 0,
+            'totalHomePointsAgainst': 0,
+            'totalAwayPoints': 0,
+            'totalAwayPointsAgainst': 0,
+            'cupWins': 0,
+            'cupLosses': 0,
+            'beatenTeam': [],
+            'beatenByTeam': [],
+            'results': [],
+        }
+
+        for team in days:
+            playerObj[team.lower()] = {
+                'games': 0,
+                'wins': 0,
+                'aggDiff': 0,
+            }
+        playerStats[player] = playerObj
+    return playerStats
