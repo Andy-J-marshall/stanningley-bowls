@@ -15,10 +15,12 @@ import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
 import bowlsStats22 from './data/bowlsStats2022.json';
+import combinedBowlsStats22 from './data/allPlayerStats2022.json';
 import './app.css';
 
 function App() {
-    const [stats, setStats] = useState(bowlsStats22);
+    const [teamStats, setTeamStats] = useState(bowlsStats22);
+    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats22);
 
     useEffect(() => {
         WebFont.load({
@@ -32,19 +34,27 @@ function App() {
     const allYearStats = {
         year2022: bowlsStats22,
     };
+    const allYearCombinedStats = {
+        year2022: combinedBowlsStats22,
+    };
 
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
+        let combinedStatsForSelectedYear;
         switch (year.toString()) {
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
+                combinedStatsForSelectedYear = allYearCombinedStats['year2022'];
                 break;
             default:
                 statsForSelectedYear = allYearStats[`year${currentYear}`];
+                combinedStatsForSelectedYear =
+                    allYearCombinedStats[`year${currentYear}`];
                 break;
         }
-        setStats(statsForSelectedYear);
+        setTeamStats(statsForSelectedYear);
+        setCombinedStats(combinedStatsForSelectedYear);
     }
 
     return (
@@ -57,28 +67,31 @@ function App() {
                 <Route path="/membership" element={<Membership />} />
                 <Route path="/team-and-social" element={<TeamInfo />} />
                 <Route path="/fixtures" element={<Fixtures />} />
-                <Route path="/results" element={<Results stats={stats} />} />
+                <Route
+                    path="/results"
+                    element={<Results stats={teamStats} />}
+                />
                 <Route
                     path="/stats"
                     element={
                         <Stats
                             yearsToDisplay={Object.keys(allYearStats).length}
                             statsCallback={statsCallback}
-                            stats={stats}
+                            stats={teamStats}
                         />
                     }
                 >
                     <Route
                         path="/stats/player"
-                        element={<PlayerStats stats={stats} />}
+                        element={<PlayerStats stats={teamStats} combinedStats={combinedStats} />}
                     />
                     <Route
                         path="/stats/team"
-                        element={<TeamStats stats={stats} />}
+                        element={<TeamStats stats={teamStats} />}
                     />
                     <Route
                         path="/stats/records"
-                        element={<Records stats={stats} />}
+                        element={<Records stats={teamStats} />}
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />

@@ -20,6 +20,7 @@ const players: Array<string> = [
   'Alyssa Randell',
   'Ali',
   'Neil Porter',
+  'Clifford Brogie', // TODO this should fail until I make all stats optional
 ];
 for (const player of players) {
   test(`Stats search bar can return ${player} stats`, async () => {

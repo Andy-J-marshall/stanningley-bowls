@@ -1,18 +1,22 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import Player from './players';
 import { ListGroup, Form, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+import Player from './players';
+import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStats(props) {
+    const combinedStats = props.combinedStats;
     const stats = props.stats;
 
     const { playerResults } = stats;
+    const combinedPlayerResults = combinedStats.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
+    const [statsToUse, setStatsToUse] = useState(playerResults);
 
     const keys = Object.keys(playerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
@@ -23,6 +27,14 @@ function PlayerStats(props) {
         }
         setLoaded(true);
     });
+
+    function statsCallback(showAllBoolean) {
+        if (showAllBoolean) {
+            setStatsToUse(combinedPlayerResults);
+        } else {
+            setStatsToUse(playerResults);
+        }
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -41,7 +53,7 @@ function PlayerStats(props) {
                 key={index}
                 player={player}
                 name={playerName}
-                playersStats={playerResults}
+                playersStats={statsToUse}
             ></Player>
         );
     }
@@ -49,6 +61,7 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
+            <PlayerStatChoiceDropdown statsCallback={statsCallback} />
             <Form
                 id="player-search-form"
                 className="center"
@@ -73,6 +86,7 @@ function PlayerStats(props) {
             <br />
 
             {/* Shows all players */}
+            {/*  TODO need to give people an option to show all or only stanningley players */}
             {(!searchedPlayerName ||
                 searchedPlayerName.toLowerCase() === 'show all') && (
                 <ListGroup>

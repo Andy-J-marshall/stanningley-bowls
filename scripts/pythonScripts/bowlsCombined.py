@@ -28,6 +28,9 @@ wb = openpyxl.load_workbook(path)
 
 print('UPDATING ALL PLAYER STATS')
 
+# TODO I need to handle duplicate player names!! e.g. Dave/David Hudson
+# TODO add in other leagues e.g. aire/wharfe
+
 for league in leaguesDays:
     # Goes through each sheet in turn
     sheet = wb[league]

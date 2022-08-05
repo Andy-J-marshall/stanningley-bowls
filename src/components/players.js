@@ -47,6 +47,8 @@ function Players(props) {
     const tuesday = p['tuesday vets leeds'];
     const thursday = p['thursday vets leeds'];
     const saturday = p['saturday leeds'];
+    const tuesdayEvening = p['tuesday leeds'];
+    const wednesday = p['wednesday half holiday leeds'];
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
     const biggestWin = findBiggestWin(results);
@@ -88,6 +90,26 @@ function Players(props) {
     const tuesdayLosses = tuesday.games - tuesday.wins;
     const tuesdayGames = tuesday.games;
     const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
+    let tuesdayEveningWins = 0;
+    let tuesdayEveningLosses = 0;
+    let tuesdayEveningGames = 0;
+    let tuesdayEveningAvg = 0;
+    if (tuesdayEvening) {
+        tuesdayEveningWins = tuesdayEvening.wins;
+        tuesdayEveningLosses = tuesdayEvening.games - tuesdayEvening.wins;
+        tuesdayEveningGames = tuesdayEvening.games;
+        tuesdayEveningAvg = tuesdayEvening.aggDiff / tuesdayEveningGames;
+    }
+    let wednesdayWins = 0;
+    let wednesdayLosses = 0;
+    let wednesdayGames = 0;
+    let wednesdayAvg = 0;
+    if (wednesday) {
+        wednesdayWins = wednesday.wins;
+        wednesdayLosses = wednesday.games - wednesday.wins;
+        wednesdayGames = wednesday.games;
+        wednesdayAvg = wednesday.aggDiff / wednesdayGames;
+    }
     const thursdayWins = thursday.wins;
     const thursdayLosses = thursday.games - thursday.wins;
     const thursdayGames = thursday.games;
@@ -99,6 +121,8 @@ function Players(props) {
     let daysPlayedCount = [
         { day: 'Monday', gamesPlayed: mondayGames },
         { day: 'Tuesday', gamesPlayed: tuesdayGames },
+        { day: 'Tuesday Evening', gamesPlayed: tuesdayEveningGames },
+        { day: 'Wednesday', gamesPlayed: wednesdayGames },
         { day: 'Thursday', gamesPlayed: thursdayGames },
         { day: 'Saturday', gamesPlayed: saturdayGames },
     ];
@@ -215,7 +239,19 @@ function Players(props) {
                                             <p>{mondayWins} on Monday</p>
                                         )}
                                         {tuesdayGames > 0 && (
-                                            <p>{tuesdayWins} on Tuesday</p>
+                                            <p>
+                                                {tuesdayWins} on Tuesday
+                                                afternoon
+                                            </p>
+                                        )}
+                                        {tuesdayEveningGames > 0 && (
+                                            <p>
+                                                {tuesdayEveningWins} on Tuesday
+                                                evening
+                                            </p>
+                                        )}
+                                        {wednesdayGames > 0 && (
+                                            <p>{wednesdayWins} on Wednesday</p>
                                         )}
                                         {thursdayGames > 0 && (
                                             <p>{thursdayWins} on Thursday</p>
@@ -245,7 +281,21 @@ function Players(props) {
                                             <p>{mondayLosses} on Monday</p>
                                         )}
                                         {tuesdayGames > 0 && (
-                                            <p>{tuesdayLosses} on Tuesday</p>
+                                            <p>
+                                                {tuesdayLosses} on Tuesday
+                                                afternoon
+                                            </p>
+                                        )}
+                                        {tuesdayEveningGames > 0 && (
+                                            <p>
+                                                {tuesdayEveningLosses} on
+                                                Tuesday evening
+                                            </p>
+                                        )}
+                                        {wednesdayGames > 0 && (
+                                            <p>
+                                                {wednesdayLosses} on Wednesday
+                                            </p>
                                         )}
                                         {thursdayGames > 0 && (
                                             <p>{thursdayLosses} on Thursday</p>
@@ -366,6 +416,18 @@ function Players(props) {
                                                 {tuesdayAvg.toFixed(2)}
                                             </p>
                                         )}
+                                        {tuesdayEveningGames > 0 && (
+                                            <p>
+                                                Tuesday Evening ={' '}
+                                                {tuesdayEveningAvg.toFixed(2)}
+                                            </p>
+                                        )}
+                                        {wednesdayGames > 0 && (
+                                            <p>
+                                                Wednesday ={' '}
+                                                {wednesdayAvg.toFixed(2)}
+                                            </p>
+                                        )}
                                         {thursdayGames > 0 && (
                                             <p>
                                                 Thursday ={' '}
@@ -382,100 +444,108 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="4">
-                            <Accordion.Header id="stats-points">
-                                POINTS
-                            </Accordion.Header>
-                            <Accordion.Body>
-                                {averagePoints >= 0 && (
-                                    <div>
-                                        <h3>TOTAL</h3>
-                                        <p>
-                                            Points scored = {totalPoints} /{' '}
-                                            {(gamesPlayed - cupGamesPlayed) * 5}
-                                        </p>
-                                        <p>
-                                            Points conceded ={' '}
-                                            {totalPointsAgainst} /{' '}
-                                            {(gamesPlayed - cupGamesPlayed) * 5}
-                                        </p>
-                                        <p>
-                                            Average points ={' '}
-                                            {averagePoints.toFixed(2)} / 5
-                                        </p>
-                                        <p>
-                                            Average points conceded ={' '}
-                                            {averagePointsAgainst.toFixed(2)} /
-                                            5
-                                        </p>
-                                        {homeAveragePoints >= 0 && (
-                                            <div>
-                                                <h3>HOME</h3>
-                                                <p>
-                                                    Home points scored ={' '}
-                                                    {totalHomePoints} /{' '}
-                                                    {homeGamesPlayed * 5}
-                                                </p>
-                                                <p>
-                                                    Home points conceded ={' '}
-                                                    {totalHomePointsAgainst} /{' '}
-                                                    {homeGamesPlayed * 5}
-                                                </p>
-                                                <p>
-                                                    Average home points ={' '}
-                                                    {homeAveragePoints.toFixed(
-                                                        2
-                                                    )}{' '}
-                                                    / 5
-                                                </p>
-                                                <p>
-                                                    Average home points conceded
-                                                    ={' '}
-                                                    {homeAveragePointsAgainst.toFixed(
-                                                        2
-                                                    )}{' '}
-                                                    / 5
-                                                </p>
-                                            </div>
-                                        )}
-                                        {awayAveragePoints >= 0 && (
-                                            <div>
-                                                <h3>AWAY</h3>
-                                                <p>
-                                                    Away points scored ={' '}
-                                                    {totalAwayPoints} /{' '}
-                                                    {awayGamesPlayed * 5}
-                                                </p>
-                                                <p>
-                                                    Away points conceded ={' '}
-                                                    {totalAwayPointsAgainst} /{' '}
-                                                    {awayGamesPlayed * 5}
-                                                </p>
-                                                <p>
-                                                    Average away points ={' '}
-                                                    {awayAveragePoints.toFixed(
-                                                        2
-                                                    )}{' '}
-                                                    / 5
-                                                </p>
-                                                <p>
-                                                    Average away points conceded
-                                                    ={' '}
-                                                    {awayAveragePointsAgainst.toFixed(
-                                                        2
-                                                    )}{' '}
-                                                    / 5
-                                                </p>
-                                            </div>
-                                        )}
-                                        <br />
-                                        <p className="footnote">
-                                            * {config.leagueRules}
-                                        </p>
-                                    </div>
-                                )}
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        {totalPoints > 0 && (
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header id="stats-points">
+                                    POINTS
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                    {averagePoints >= 0 && (
+                                        <div>
+                                            <h3>TOTAL</h3>
+                                            <p>
+                                                Points scored = {totalPoints} /{' '}
+                                                {(gamesPlayed -
+                                                    cupGamesPlayed) *
+                                                    5}
+                                            </p>
+                                            <p>
+                                                Points conceded ={' '}
+                                                {totalPointsAgainst} /{' '}
+                                                {(gamesPlayed -
+                                                    cupGamesPlayed) *
+                                                    5}
+                                            </p>
+                                            <p>
+                                                Average points ={' '}
+                                                {averagePoints.toFixed(2)} / 5
+                                            </p>
+                                            <p>
+                                                Average points conceded ={' '}
+                                                {averagePointsAgainst.toFixed(
+                                                    2
+                                                )}{' '}
+                                                / 5
+                                            </p>
+                                            {homeAveragePoints >= 0 && (
+                                                <div>
+                                                    <h3>HOME</h3>
+                                                    <p>
+                                                        Home points scored ={' '}
+                                                        {totalHomePoints} /{' '}
+                                                        {homeGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Home points conceded ={' '}
+                                                        {totalHomePointsAgainst}{' '}
+                                                        / {homeGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Average home points ={' '}
+                                                        {homeAveragePoints.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                    <p>
+                                                        Average home points
+                                                        conceded ={' '}
+                                                        {homeAveragePointsAgainst.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                </div>
+                                            )}
+                                            {awayAveragePoints >= 0 && (
+                                                <div>
+                                                    <h3>AWAY</h3>
+                                                    <p>
+                                                        Away points scored ={' '}
+                                                        {totalAwayPoints} /{' '}
+                                                        {awayGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Away points conceded ={' '}
+                                                        {totalAwayPointsAgainst}{' '}
+                                                        / {awayGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Average away points ={' '}
+                                                        {awayAveragePoints.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                    <p>
+                                                        Average away points
+                                                        conceded ={' '}
+                                                        {awayAveragePointsAgainst.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                </div>
+                                            )}
+                                            <br />
+                                            <p className="footnote">
+                                                * {config.leagueRules}
+                                            </p>
+                                        </div>
+                                    )}
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        )}
                         <Accordion.Item eventKey="5">
                             <Accordion.Header id="stats-aggregate">
                                 AGGREGATES
