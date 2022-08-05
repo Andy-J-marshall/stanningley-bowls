@@ -1,7 +1,7 @@
 import os
-import combinedPlayerDetails
+import utils
 
-htmlFiles = combinedPlayerDetails.findHtmlFiles()
+htmlFiles = utils.findHtmlFiles()
 
 for file in htmlFiles:
     if os.path.exists(file):

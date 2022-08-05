@@ -63,7 +63,11 @@ If a new player joins or a team is entered into a new league, you'll need to upd
 
 e.g. a new player would have to be added into the `players` list.
 
-If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array
+If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array and `deduplicateNames` function.
+
+If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
+
+If a player doesn't want their full name appearing on the website, add them into the `anonymiseNames` function.
 
 ## Run the script
 
@@ -75,7 +79,7 @@ You might want to format the JSON document to make it easier to read
 
 # How to use this repo as a template for other clubs
 
-Update `scripts/pythonScripts/teamDetails.py`/`combinedPlayerDetails`:
+Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 
 - teamNames
 - preferredTeamName

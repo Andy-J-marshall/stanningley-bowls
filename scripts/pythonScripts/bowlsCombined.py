@@ -3,16 +3,16 @@ from pathlib import Path
 import json
 import os
 from datetime import date
-import combinedPlayerDetails
+import utils
 
 year = str(date.today().year)
 
-leaguesDays = combinedPlayerDetails.teamDays
-players = combinedPlayerDetails.players
-duplicatePlayerNames = combinedPlayerDetails.duplicatePlayerNames
-playerResults = combinedPlayerDetails.returnListOfPlayerStats(combinedPlayerDetails.teamDays)
-deduplicateNames = combinedPlayerDetails.deduplicateNames
-anonymiseNames = combinedPlayerDetails.anonymiseNames
+leaguesDays = utils.teamDays
+players = utils.players
+duplicatePlayerNames = utils.duplicatePlayerNames
+playerResults = utils.returnListOfPlayerStats(utils.teamDays)
+deduplicateNames = utils.deduplicateNames
+anonymiseNames = utils.anonymiseNames
 
 # Spreadsheet info
 homePlayerCol = 'A'

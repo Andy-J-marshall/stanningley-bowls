@@ -4,7 +4,6 @@ import teamDetails
 teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
-# TODO rename file
 
 otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds']
 teamDays = currentTeamDays + otherLeagues

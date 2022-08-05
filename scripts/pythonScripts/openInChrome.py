@@ -1,7 +1,7 @@
 import webbrowser
-import combinedPlayerDetails
+import utils
 
-htmlFiles = combinedPlayerDetails.findHtmlFiles()
+htmlFiles = utils.findHtmlFiles()
 
 for file in htmlFiles:
     webbrowser.open('file://' + file)

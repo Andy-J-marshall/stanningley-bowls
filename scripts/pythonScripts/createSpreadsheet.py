@@ -2,9 +2,9 @@ import openpyxl
 from pathlib import Path
 import os
 from datetime import date
-import combinedPlayerDetails
+import utils
 
-teams = combinedPlayerDetails.teamDays
+teams = utils.teamDays
 year = str(date.today().year)
 filename = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 

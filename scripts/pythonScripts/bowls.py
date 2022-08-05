@@ -4,7 +4,7 @@ import json
 import os
 from datetime import date
 import teamDetails
-import combinedPlayerDetails
+import utils
 
 year = str(date.today().year)
 
@@ -13,9 +13,9 @@ teamDays = teamDetails.teamDays
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
-playerStats = combinedPlayerDetails.returnListOfPlayerStats(teamDetails.teamDays)
-anonymiseNames = combinedPlayerDetails.anonymiseNames
-deduplicateNames = combinedPlayerDetails.deduplicateNames
+playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
+anonymiseNames = utils.anonymiseNames
+deduplicateNames = utils.deduplicateNames
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 
