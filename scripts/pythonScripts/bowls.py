@@ -288,7 +288,6 @@ for day in teamDays:
 
             if opponentsName.lower() != '*walkover*':
                 playerName = sheet[playerNameCol + str(row)].value
-                playerName = anonymiseNames(playerName)
                 aggregate = sheet[playerScoreCol + str(row)].value
                 opponentAggregate = sheet[opponentPlayerScoreCol +
                                           str(row)].value
@@ -312,8 +311,6 @@ for day in teamDays:
                         secondOpponent = sheet[opponentPlayerNameCol +
                                                str(row + 1)].value
 
-                playerName = deduplicateNames(playerName)
-
                 for i in range(1, 10):
                     opponentTeamRow = sheet[awayTeamNameCol + str(row - i)]
                     if opponentTeamRow.row in homeRow:
@@ -322,11 +319,19 @@ for day in teamDays:
                     if opponentTeamRow.row in awayRow:
                         opponentTeam = sheet[homeTeamNameCol +
                                              str(row - i)].value
+                
+                pairsPartner = deduplicateNames(pairsPartner)
+                pairsPartner = anonymiseNames(pairsPartner)
+                secondOpponent = deduplicateNames(secondOpponent)
+                secondOpponent = anonymiseNames(secondOpponent)
+                playerName = deduplicateNames(playerName)
+                playerName = anonymiseNames(playerName)
+                opponentsName = deduplicateNames(opponentsName)
+                opponentsName = anonymiseNames(opponentsName)
 
             # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
-                    pairsPartner = anonymiseNames(pairsPartner)
                     playerStats[playerName]['pairsPartners'].append(
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner

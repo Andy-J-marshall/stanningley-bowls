@@ -7,29 +7,23 @@ import combinedPlayerDetails
 
 year = str(date.today().year)
 
-leaguesDays = combinedPlayerDetails.leagues
+leaguesDays = combinedPlayerDetails.teamDays
 players = combinedPlayerDetails.players
 duplicatePlayerNames = combinedPlayerDetails.duplicatePlayerNames
-playerResults = combinedPlayerDetails.playerResults
+playerResults = combinedPlayerDetails.returnListOfPlayerStats()
 deduplicateNames = combinedPlayerDetails.deduplicateNames
+anonymiseNames = combinedPlayerDetails.anonymiseNames
 
 # Spreadsheet info
-# TODO prune these columns
 homePlayerCol = 'A'
 homePlayerScoreCol = 'B'
 awayPlayerCol = 'C'
 awayPlayerScoreCol = 'D'
-homeAggCol = 'B'
-awayAggCol = 'D'
-homeTeamScoreCol = 'B'
-awayTeamScoreCol = 'D'
-homeTeamNameCol = 'A'
-awayTeamNameCol = 'B'
 
 cupText = ['qtr-finals', 'semi-finals', 'final']
 
 # Open Excel file
-path = str(Path.cwd()) + '/files/' + 'combinedBowlsResults' + year + '.xlsx'
+path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 
@@ -37,6 +31,22 @@ for league in leaguesDays:
     # Goes through each sheet in turn
     sheet = wb[league]
     print('Processing ' + league)
+
+    startingRow = 0
+    startingRowIndex = 1
+    for row in sheet['A']:
+        if row.value and type(row.value) is str and 'FULL RESULTS' in row.value.upper():
+            startingRow = startingRowIndex
+        startingRowIndex += 1
+
+    cupGameIndex = 1
+    cupGameRows = []
+    for row in sheet['A']:
+        if row.value and type(row.value) is str:
+            if cupGameIndex > startingRow and row.value.lower() in cupText:
+                for i in range(0, 11):
+                    cupGameRows.append(cupGameIndex + i)
+        cupGameIndex += 1
 
     # Find rows in spreadsheet for players' games
     homePlayerIndex = 1
@@ -74,10 +84,8 @@ for league in leaguesDays:
         cupGame = False
 
         # Find columns
-
-        # TODO handle cup games?
-        # if row in cupGameRows:
-        #     cupGame = True
+        if row in cupGameRows:
+            cupGame = True
 
         if row in homePlayerRow:
             updateStats = True
@@ -125,7 +133,14 @@ for league in leaguesDays:
                         secondOpponent = sheet[opponentPlayerNameCol +
                                                str(row + 1)].value
 
+                pairsPartner = deduplicateNames(pairsPartner)
+                pairsPartner = anonymiseNames(pairsPartner)
+                secondOpponent = deduplicateNames(secondOpponent)
+                secondOpponent = anonymiseNames(secondOpponent)
                 playerName = deduplicateNames(playerName)
+                playerName = anonymiseNames(playerName)
+                opponentsName = deduplicateNames(opponentsName)
+                opponentsName = anonymiseNames(opponentsName)
 
             # Store player stats
                 playerNameForResult = playerName
@@ -186,7 +201,7 @@ for league in leaguesDays:
                 if awayGame:
                     playerResults[playerName]['totalAwayAgg'] += aggregate
                     playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
-                playerResults[playerName]['leaguePlayed'].append(league)
+                playerResults[playerName]['dayPlayed'].append(league)
 
 # Create JSON file
 dataToExport = {
