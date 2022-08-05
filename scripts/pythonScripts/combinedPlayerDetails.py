@@ -1,11 +1,9 @@
+import os
 # TODO split this config up into 2 files?
 
 # Days played
-teamDays = ['Monday', 'Tuesday', 'Thursday', 'Saturday']
-
-# TODO change to (and in the data below too)
-# leagues = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds', 'Wednesday Half Holiday Leeds',
-#            'Thursday Vets Leeds', 'Saturday Leeds']
+teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds', 'Wednesday Half Holiday Leeds',
+            'Thursday Vets Leeds', 'Saturday Leeds']
 
 # Every player (lowercase)
 players = [
@@ -20,20 +18,11 @@ duplicatePlayerNames = ['duncan mc phail',
                         'stuart watson', 'andrew marshall', 'cliff brogie', 'david hudson', 'Andrew Waller']
 
 
-def calculateGamePoints(points):
-    if points == 21:
-        gamePoints = 5
-    if points < 5:
-        gamePoints = 0
-    if points >= 5 and points < 10:
-        gamePoints = 1
-    if points >= 10 and points < 15:
-        gamePoints = 2
-    if points >= 15 and points < 18:
-        gamePoints = 3
-    if points >= 18 and points < 21:
-        gamePoints = 4
-    return gamePoints
+def findHtmlFiles():
+    files = []
+    for team in teamDays:
+        files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
+    return files
 
 
 def deduplicateNames(name):

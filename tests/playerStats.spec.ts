@@ -1,9 +1,9 @@
 import { test } from '@playwright/test';
-import bowlsStatsExample from './fixtures/bowlsStatsExample.json';
+import bowlsStats from '../src/data/bowlsStats2022.json'
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
 const totalNumberOfPlayers = Object.keys(
-  bowlsStatsExample.playerResults
+  bowlsStats.playerResults
 ).length;
 let playerStatsPage: PlayerStatsPage;
 
@@ -40,7 +40,7 @@ for (const player of players) {
       homeLosses,
       awayLosses,
       cupLosses,
-    } = bowlsStatsExample.playerResults[player.toLowerCase()];
+    } = bowlsStats.playerResults[player.toLowerCase()];
     const totalWins = cupWins + homeWins + awayWins;
     const totalLosses = cupLosses + homeLosses + awayLosses;
     const totalGamesPlayed = totalLosses + totalWins;

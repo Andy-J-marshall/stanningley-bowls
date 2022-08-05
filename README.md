@@ -75,7 +75,7 @@ You might want to format the JSON document to make it easier to read
 
 # How to use this repo as a template for other clubs
 
-Update `scripts/pythonScripts/teamDetails.py`:
+Update `scripts/pythonScripts/teamDetails.py`/`combinedPlayerDetails`:
 
 - teamNames
 - preferredTeamName
@@ -101,7 +101,7 @@ Update all images in the `/images` folder
 
 Update `homepage` in `package.json`
 
-Check `bowls.py`:
+Check `bowls.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
 - Remove/edit game points?
@@ -117,7 +117,6 @@ Update `src/config.js`:
 Update tests:
 
 - players array in `playerStats.spec.ts`
-- bowlsStatsExample.json with data from `src/data/bowlsStatsXXXX.json`
 
 Update team info in all components:
 

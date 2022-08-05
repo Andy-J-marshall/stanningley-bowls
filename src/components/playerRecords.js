@@ -52,7 +52,10 @@ function PlayerRecords(props) {
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
-        const { monday, tuesday, thursday, saturday } = p;
+        const monday = p['monday combined leeds'];
+        const tuesday = p['tuesday vets leeds'];
+        const thursday = p['thursday vets leeds'];
+        const saturday = p['saturday leeds'];
         const mondayGames = monday.games;
         const tuesdayGames = tuesday.games;
         const thursdayGames = thursday.games;
@@ -103,7 +106,10 @@ function PlayerRecords(props) {
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
         const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
 
-        const { monday, tuesday, thursday, saturday } = p;
+        const monday = p['monday combined leeds'];
+        const tuesday = p['tuesday vets leeds'];
+        const thursday = p['thursday vets leeds'];
+        const saturday = p['saturday leeds'];
         const mondayWins = monday.wins;
         const mondayGames = monday.games;
         const mondayAvg = monday.aggDiff / mondayGames;

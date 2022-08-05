@@ -4,6 +4,7 @@ import json
 import os
 from datetime import date
 import teamDetails
+import combinedPlayerDetails
 
 year = str(date.today().year)
 
@@ -13,8 +14,8 @@ players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = teamDetails.returnListOfPlayerStats()
-anonymiseNames = teamDetails.anonymiseNames
-deduplicateNames = teamDetails.deduplicateNames
+anonymiseNames = combinedPlayerDetails.anonymiseNames
+deduplicateNames = combinedPlayerDetails.deduplicateNames
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 
@@ -37,6 +38,7 @@ path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
 allTeamResults = []
+print('UPDATING STATS:', teamNames[0].upper())
 
 for day in teamDays:
     # Goes through each sheet in turn
@@ -322,11 +324,9 @@ for day in teamDays:
                 
                 pairsPartner = deduplicateNames(pairsPartner)
                 pairsPartner = anonymiseNames(pairsPartner)
-                secondOpponent = deduplicateNames(secondOpponent)
                 secondOpponent = anonymiseNames(secondOpponent)
                 playerName = deduplicateNames(playerName)
                 playerName = anonymiseNames(playerName)
-                opponentsName = deduplicateNames(opponentsName)
                 opponentsName = anonymiseNames(opponentsName)
 
             # Store player stats
@@ -421,3 +421,4 @@ if os.path.exists(filename):
 with open(filename, 'w') as f:
     json.dump(dataToExport, f)
     print(filename + ' created')
+    print('------')

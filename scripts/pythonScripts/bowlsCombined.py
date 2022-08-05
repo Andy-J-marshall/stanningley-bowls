@@ -26,6 +26,7 @@ cupText = ['qtr-finals', 'semi-finals', 'final']
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
+print('UPDATING ALL PLAYER STATS')
 
 for league in leaguesDays:
     # Goes through each sheet in turn
@@ -135,11 +136,9 @@ for league in leaguesDays:
 
                 pairsPartner = deduplicateNames(pairsPartner)
                 pairsPartner = anonymiseNames(pairsPartner)
-                secondOpponent = deduplicateNames(secondOpponent)
                 secondOpponent = anonymiseNames(secondOpponent)
                 playerName = deduplicateNames(playerName)
                 playerName = anonymiseNames(playerName)
-                opponentsName = deduplicateNames(opponentsName)
                 opponentsName = anonymiseNames(opponentsName)
 
             # Store player stats
@@ -162,7 +161,7 @@ for league in leaguesDays:
                 # Wins
                 if aggregate > opponentAggregate:
                     playerResults[playerName][league.lower()
-                                                    ]['wins'] += 1
+                                              ]['wins'] += 1
                     playerResults[playerName]['beatenOpponents'].append(
                         opponentsName)
                     if pairsGame:
@@ -217,3 +216,4 @@ if os.path.exists(filename):
 with open(filename, 'w') as f:
     json.dump(dataToExport, f)
     print(filename + ' created')
+    print('------')
