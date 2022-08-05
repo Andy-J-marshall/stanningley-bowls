@@ -61,7 +61,6 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
-            <PlayerStatChoiceDropdown statsCallback={statsCallback} />
             <Form
                 id="player-search-form"
                 className="center"
@@ -84,9 +83,9 @@ function PlayerStats(props) {
                 </Button>
             </Form>
             <br />
+            <PlayerStatChoiceDropdown statsCallback={statsCallback} />
 
             {/* Shows all players */}
-            {/*  TODO need to give people an option to show all or only stanningley players */}
             {(!searchedPlayerName ||
                 searchedPlayerName.toLowerCase() === 'show all') && (
                 <ListGroup>
