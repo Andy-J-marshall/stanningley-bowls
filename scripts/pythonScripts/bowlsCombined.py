@@ -10,7 +10,7 @@ year = str(date.today().year)
 leaguesDays = combinedPlayerDetails.teamDays
 players = combinedPlayerDetails.players
 duplicatePlayerNames = combinedPlayerDetails.duplicatePlayerNames
-playerResults = combinedPlayerDetails.returnListOfPlayerStats()
+playerResults = combinedPlayerDetails.returnListOfPlayerStats(combinedPlayerDetails.teamDays)
 deduplicateNames = combinedPlayerDetails.deduplicateNames
 anonymiseNames = combinedPlayerDetails.anonymiseNames
 

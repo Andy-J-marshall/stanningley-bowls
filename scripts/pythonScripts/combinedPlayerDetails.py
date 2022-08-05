@@ -1,21 +1,17 @@
 import os
-# TODO split this config up into 2 files?
+import teamDetails
 
-# Days played
-teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds', 'Wednesday Half Holiday Leeds',
-            'Thursday Vets Leeds', 'Saturday Leeds']
+teamPlayers = teamDetails.players
+duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
+currentTeamDays = teamDetails.teamDays
+# TODO rename file
 
-# Every player (lowercase)
-players = [
-    'jeff allman', 'shirley allman', 'john armitage', 'mario biancardo', 'shirley biancardo',
-    'paul bowes', 'clifford brogie', 'craig clarkson', 'steve gardner', 'andy marshall', 'bernie miller',
-    'alyssa randell', 'andy waller', 'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson',
-    'dave hudson', 'neil porter', 'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster'
-]
-
-# Players with different spellings of name (lowercase)
-duplicatePlayerNames = ['duncan mc phail',
-                        'stuart watson', 'andrew marshall', 'cliff brogie', 'david hudson', 'Andrew Waller']
+otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds']
+teamDays = currentTeamDays + otherLeagues
+extraPlayers = []
+players = teamPlayers + extraPlayers
+otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'Andrew Waller']
+duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 
 
 def findHtmlFiles():
@@ -49,7 +45,7 @@ def anonymiseNames(name):
     return name.lower()
 
 
-def returnListOfPlayerStats():
+def returnListOfPlayerStats(days):
     players.sort()
     playerStats = {}
     for player in players:
@@ -88,7 +84,7 @@ def returnListOfPlayerStats():
             'results': [],
         }
 
-        for team in teamDays:
+        for team in days:
             playerObj[team.lower()] = {
                 'games': 0,
                 'wins': 0,

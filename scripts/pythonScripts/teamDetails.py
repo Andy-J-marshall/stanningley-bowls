@@ -1,5 +1,3 @@
-import combinedPlayerDetails
-
 # Team info (lowercase)
 teamNames = ['stanningley', 'stanningley a',
              'stanningley park', 'stanningley park a']
@@ -44,53 +42,3 @@ def calculateGamePoints(points):
     if points >= 18 and points < 21:
         gamePoints = 4
     return gamePoints
-
-
-
-def returnListOfPlayerStats():
-    players.sort()
-    playerStats = {}
-    for player in players:
-        player = combinedPlayerDetails.anonymiseNames(player)
-        playerObj = {
-            'totalPoints': 0,
-            'totalAgg': 0,
-            'totalPointsAgainst': 0,
-            'totalAggAgainst': 0,
-            'homeWins': 0,
-            'homeLosses': 0,
-            'awayWins': 0,
-            'awayLosses': 0,
-            'pairWins': 0,
-            'pairLosses': 0,
-            'pairsPartners': [],
-            'beatenOpponents': [],
-            'beatenBy': [],
-            'dayPlayed': [],
-            'totalPairsAgg': 0,
-            'totalPairsAggAgainst': 0,
-            'winningPairsPartners': [],
-            'losingPairsPartners': [],
-            'totalHomeAgg': 0,
-            'totalHomeAggAgainst': 0,
-            'totalAwayAgg': 0,
-            'totalAwayAggAgainst': 0,
-            'totalHomePoints': 0,
-            'totalHomePointsAgainst': 0,
-            'totalAwayPoints': 0,
-            'totalAwayPointsAgainst': 0,
-            'cupWins': 0,
-            'cupLosses': 0,
-            'beatenTeam': [],
-            'beatenByTeam': [],
-            'results': [],
-        }
-
-        for team in teamDays:
-            playerObj[team.lower()] = {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            }
-        playerStats[player] = playerObj
-    return playerStats
