@@ -30,6 +30,7 @@ print('UPDATING ALL PLAYER STATS')
 
 # TODO I need to handle duplicate player names!! e.g. Dave/David Hudson
 # TODO Andy Waller (and Alison?) appear incorrect for all stats
+# TODO Andy Waller missing from stats on Wed?
 # TODO Alison and Andy Waller don't appear as opponents e.g. for mario/shirley
 # TODO add in other leagues e.g. aire/wharfe
 
@@ -57,6 +58,7 @@ for league in leaguesDays:
     # Find rows in spreadsheet for players' games
     homePlayerIndex = 1
     homePlayerRow = []
+    # TODO this screws up when player is playing against another Stan player!
     for homePlayer in sheet[homePlayerCol]:
         homePlayerName = homePlayer.value
         if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicatePlayerNames):
