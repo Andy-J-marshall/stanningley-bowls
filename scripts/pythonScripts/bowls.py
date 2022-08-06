@@ -321,7 +321,7 @@ for day in teamDays:
                     if opponentTeamRow.row in awayRow:
                         opponentTeam = sheet[homeTeamNameCol +
                                              str(row - i)].value
-                
+
                 pairsPartner = deduplicateNames(pairsPartner)
                 pairsPartner = anonymiseNames(pairsPartner)
                 secondOpponent = anonymiseNames(secondOpponent)
@@ -405,6 +405,10 @@ for day in teamDays:
                 playerStats[playerName]['totalPoints'] += points
                 playerStats[playerName]['totalPointsAgainst'] += opponentPoints
                 playerStats[playerName]['dayPlayed'].append(day)
+
+                if row in homePlayerRow and row in awayPlayerRow:
+                    raise Exception(
+                        'Row appears in home row and away row. Check the opponent name. Row: ' + str(row))
 
 # Create JSON file
 dataToExport = {
