@@ -11,6 +11,8 @@ extraPlayers = []
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'Andrew Waller']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
+otherTeams = ['pudsey park', 'pudsey park a', 'pudsey park b', 'burley park']
+teamsTracking = teamDetails.teamNames + otherTeams
 
 
 def findHtmlFiles():
@@ -18,17 +20,6 @@ def findHtmlFiles():
     for team in teamDays:
         files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
     return files
-
-
-# TODO others?
-playersWithSameNameToIgnore = {
-    'Monday Combined Leeds': ['david hudson', 'dave hudson'],
-    'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': [],
-    'Tuesday Vets Leeds': [],
-    'Thursday Vets Leeds': [],
-    'Saturday Leeds': [],
-}
 
 
 def deduplicateNames(name):
