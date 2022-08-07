@@ -20,6 +20,17 @@ def findHtmlFiles():
     return files
 
 
+# TODO others?
+playersWithSameNameToIgnore = {
+    'Monday Combined Leeds': ['david hudson', 'dave hudson'],
+    'Tuesday Leeds': [],
+    'Wednesday Half Holiday Leeds': [],
+    'Tuesday Vets Leeds': [],
+    'Thursday Vets Leeds': [],
+    'Saturday Leeds': [],
+}
+
+
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
         name = 'Duncan McPhail'
