@@ -32,10 +32,10 @@ function PlayerStats(props) {
     function statsCallback(showAllBoolean) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
-            setShowStatSummary(true)
+            setShowStatSummary(true);
         } else {
             setStatsToUse(playerResults);
-            setShowStatSummary(false)
+            setShowStatSummary(false);
         }
     }
 
@@ -86,7 +86,7 @@ function PlayerStats(props) {
                     Search
                 </Button>
             </Form>
-            <PlayerStatChoiceDropdown statsCallback={statsCallback} />
+            <br />
 
             {/* Shows all players */}
             {(!searchedPlayerName ||
@@ -104,6 +104,7 @@ function PlayerStats(props) {
             {/* Only shows searched for player */}
             {searchedPlayerName && (
                 <ListGroup>
+                    <PlayerStatChoiceDropdown statsCallback={statsCallback} />
                     {keys.map((p, index) => {
                         const playerName = keys[index];
                         if (
