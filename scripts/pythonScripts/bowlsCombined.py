@@ -32,9 +32,6 @@ wb = openpyxl.load_workbook(path)
 
 print('UPDATING ALL PLAYER STATS')
 
-# TODO I need to handle duplicate player names!! e.g. Dave/David Hudson
-# TODO Andy Waller missing from stats on Wed?
-# TODO add points back in?
 # TODO manually check stats are correct e.g. mario and shirley. Cliff? Dave Hudson!
 # TODO add in other leagues e.g. aire/wharfe
 
