@@ -19,7 +19,7 @@ function PlayerStats(props) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
 
-    const keys = Object.keys(playerResults).sort();
+    const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
 
     useEffect(() => {
