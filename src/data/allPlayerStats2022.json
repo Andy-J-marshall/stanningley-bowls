@@ -100,16 +100,19 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "alyssa randell": {
       "totalPoints": 0,
-      "totalAgg": 323,
+      "totalAgg": 344,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 277,
+      "totalAggAgainst": 291,
       "homeWins": 5,
       "homeLosses": 3,
-      "awayWins": 5,
+      "awayWins": 6,
       "awayLosses": 5,
       "pairWins": 0,
       "pairLosses": 0,
@@ -117,6 +120,7 @@
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -168,6 +172,7 @@
         "alyssa randell & andy marshall 21 - 13 julie keightley & chris bartlett",
         "alyssa randell & andy marshall 14 - 21 david hudson & stephanie mundell",
         "alyssa randell & andy marshall 21 - 6 sharon kerry & jade kerry",
+        "alyssa randell & andy marshall 21 - 14 lyn dye & nigel richardson",
         "alyssa randell 5 - 21 kevin smales",
         "alyssa randell 14 - 21 john harvey",
         "alyssa randell 18 - 21 andrew sykes"
@@ -190,16 +195,19 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "andy marshall": {
       "totalPoints": 0,
-      "totalAgg": 473,
+      "totalAgg": 494,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 367,
+      "totalAggAgainst": 381,
       "homeWins": 6,
       "homeLosses": 6,
-      "awayWins": 8,
+      "awayWins": 9,
       "awayLosses": 4,
       "pairWins": 0,
       "pairLosses": 0,
@@ -207,6 +215,7 @@
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -266,6 +275,7 @@
         "andy marshall & alyssa randell 21 - 13 chris bartlett & julie keightley",
         "andy marshall & alyssa randell 14 - 21 stephanie mundell & david hudson",
         "andy marshall & alyssa randell 21 - 6 jade kerry & sharon kerry",
+        "andy marshall & alyssa randell 21 - 14 nigel richardson & lyn dye",
         "andy marshall 21 - 3 john hodgson",
         "andy marshall 14 - 21 gordon monk",
         "andy marshall 15 - 21 paul shackleton",
@@ -296,16 +306,19 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "andy w": {
       "totalPoints": 0,
-      "totalAgg": 958,
+      "totalAgg": 979,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 740,
+      "totalAggAgainst": 753,
       "homeWins": 19,
       "homeLosses": 7,
-      "awayWins": 10,
+      "awayWins": 11,
       "awayLosses": 10,
       "pairWins": 0,
       "pairLosses": 0,
@@ -313,6 +326,7 @@
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -386,6 +400,7 @@
         "andy w & andy marshall 21 - 15 ken stockhill & carol butters",
         "andy w & andy marshall 17 - 21 stuart reardon & keith sellars",
         "andy w & andy marshall 12 - 21 james wright - green & peter simmons",
+        "andy w 21 - 13 ian smith",
         "andy w 18 - 21 carol matthews",
         "andy w 21 - 10 aubrey coldrey",
         "andy w 21 - 5 frank armitage",
@@ -448,7 +463,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "bernie miller": {
       "totalPoints": 0,
@@ -506,23 +524,27 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "clifford brogie": {
       "totalPoints": 0,
-      "totalAgg": 715,
+      "totalAgg": 720,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 830,
+      "totalAggAgainst": 851,
       "homeWins": 8,
       "homeLosses": 16,
       "awayWins": 9,
-      "awayLosses": 9,
+      "awayLosses": 10,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -597,6 +619,7 @@
         "clifford brogie 21 - 12 oliver delaney",
         "clifford brogie 16 - 21 danny dawson",
         "clifford brogie 21 - 12 ahmed hassoun",
+        "clifford brogie 5 - 21 jason cooper",
         "clifford brogie 12 - 21 terry blakeley",
         "clifford brogie 21 - 16 derek howell",
         "clifford brogie 21 - 6 josie m burdon",
@@ -650,23 +673,27 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "craig clarkson": {
       "totalPoints": 0,
-      "totalAgg": 199,
+      "totalAgg": 206,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 225,
+      "totalAggAgainst": 246,
       "homeWins": 3,
       "homeLosses": 2,
       "awayWins": 2,
-      "awayLosses": 5,
+      "awayLosses": 6,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -708,7 +735,8 @@
         "craig clarkson 9 - 21 tina howard",
         "craig clarkson 21 - 16 andrew ash",
         "craig clarkson 21 - 14 angela morley",
-        "craig clarkson 12 - 21 laura love"
+        "craig clarkson 12 - 21 laura love",
+        "craig clarkson 7 - 21 ellis owen"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -728,7 +756,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "dave hudson": {
       "totalPoints": 0,
@@ -860,7 +891,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
       "totalPoints": 0,
@@ -964,7 +998,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "duncan mcphail": {
       "totalPoints": 0,
@@ -1046,7 +1083,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "jack roberts": {
       "totalPoints": 0,
@@ -1106,7 +1146,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "jeff allman": {
       "totalPoints": 0,
@@ -1206,17 +1249,20 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "jim moorin": {
       "totalPoints": 0,
-      "totalAgg": 955,
+      "totalAgg": 1270,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 675,
-      "homeWins": 24,
+      "totalAggAgainst": 945,
+      "homeWins": 33,
       "homeLosses": 3,
-      "awayWins": 13,
-      "awayLosses": 10,
+      "awayWins": 15,
+      "awayLosses": 16,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -1273,7 +1319,24 @@
         "Saturday Bradford (Littlemoor S & SC B)",
         "Saturday Bradford (Littlemoor S & SC B)",
         "Saturday Bradford (Littlemoor S & SC B)",
-        "Saturday Bradford (Littlemoor S & SC B)"
+        "Saturday Bradford (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
@@ -1342,7 +1405,24 @@
         "jim moorin 19 - 21 linda gledhill",
         "jim moorin 21 - 11 stuart harrison",
         "jim moorin 21 - 4 debora sturman",
-        "jim moorin 21 - 19 david glass"
+        "jim moorin 21 - 19 david glass",
+        "jim moorin 21 - 9 derek pickering",
+        "jim moorin 18 - 21 andy robinson",
+        "jim moorin 21 - 12 neal hopper",
+        "jim moorin 11 - 21 craig hopwood",
+        "jim moorin 10 - 21 david halligan",
+        "jim moorin 21 - 8 jennifer pitchforth",
+        "jim moorin 21 - 17 richard hobson",
+        "jim moorin 21 - 18 simon metcalfe",
+        "jim moorin 10 - 21 nicola stocks",
+        "jim moorin 18 - 21 duncan mcphail",
+        "jim moorin 21 - 14 john wilson",
+        "jim moorin 21 - 12 jamie horsley",
+        "jim moorin 21 - 17 craig hopwood",
+        "jim moorin 21 - 13 frank cullen",
+        "jim moorin 17 - 21 tony render",
+        "jim moorin 21 - 13 aaron brine",
+        "jim moorin 21 - 11 jason watters"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1362,7 +1442,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "joey broadbent": {
       "totalPoints": 0,
@@ -1444,17 +1527,20 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "john armitage": {
       "totalPoints": 0,
-      "totalAgg": 441,
+      "totalAgg": 812,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 233,
-      "homeWins": 11,
-      "homeLosses": 0,
-      "awayWins": 9,
-      "awayLosses": 0,
+      "totalAggAgainst": 577,
+      "homeWins": 19,
+      "homeLosses": 1,
+      "awayWins": 12,
+      "awayLosses": 9,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -1481,7 +1567,28 @@
         "Wednesday Half Holiday Bradford (Littlemoor S & SC)",
         "Wednesday Half Holiday Bradford (Littlemoor S & SC)",
         "Wednesday Half Holiday Bradford (Littlemoor S & SC)",
-        "Wednesday Half Holiday Bradford (Littlemoor S & SC)"
+        "Wednesday Half Holiday Bradford (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC B)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Wednesday Spen Valley (Littlemoor S & SC)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor B)",
+        "Tuesday Mirfield (Littlemoor)",
+        "Tuesday Mirfield (Littlemoor B)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
@@ -1520,7 +1627,28 @@
         "john armitage 21 - 20 les ward",
         "john armitage 21 - 13 debra pearson",
         "john armitage 21 - 6 bev shutt",
-        "john armitage 21 - 16 maureen holmes"
+        "john armitage 21 - 16 maureen holmes",
+        "john armitage 11 - 21 steve hartley",
+        "john armitage 15 - 21 paul hillam",
+        "john armitage 21 - 13 steve williams",
+        "john armitage 21 - 7 ira jeffers",
+        "john armitage 21 - 17 andy hodgson",
+        "john armitage 9 - 21 graham oliver",
+        "john armitage 21 - 14 ben sweeney",
+        "john armitage 21 - 15 steve hartley",
+        "john armitage 11 - 21 graeme dytiche",
+        "john armitage 21 - 3 paul hillam",
+        "john armitage 20 - 21 tony green",
+        "john armitage 16 - 21 jonathan wood",
+        "john armitage 17 - 21 duncan ruddlesden",
+        "john armitage 16 - 21 steve kenworthy",
+        "john armitage 9 - 21 tom hanson",
+        "john armitage 16 - 21 mark thompson",
+        "john armitage 21 - 6 bryan jenkins",
+        "john armitage 21 - 18 derek pickering",
+        "john armitage 21 - 3 graeme eyre",
+        "john armitage 21 - 19 gareth lally",
+        "john armitage 21 - 19 justin harris"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1540,7 +1668,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "kevin waller": {
       "totalPoints": 0,
@@ -1616,7 +1747,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "mario biancardo": {
       "totalPoints": 0,
@@ -1818,7 +1952,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "neil porter": {
       "totalPoints": 0,
@@ -1896,23 +2033,27 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "paul bowes": {
       "totalPoints": 0,
-      "totalAgg": 771,
+      "totalAgg": 791,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 394,
+      "totalAggAgainst": 415,
       "homeWins": 18,
       "homeLosses": 2,
       "awayWins": 9,
-      "awayLosses": 5,
+      "awayLosses": 6,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
@@ -1979,6 +2120,7 @@
         "paul bowes 21 - 2 linda gaunt",
         "paul bowes 21 - 9 cedric ash",
         "paul bowes & vanessa lancaster 21 - 8 peter simmons & james wright - green",
+        "paul bowes & vanessa lancaster 20 - 21 gary dennison & nicola pearson",
         "paul bowes 11 - 21 tony green",
         "paul bowes 21 - 6 martin mcgowan",
         "paul bowes 21 - 5 doreen hunter",
@@ -2026,7 +2168,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "shirley allman": {
       "totalPoints": 0,
@@ -2104,7 +2249,10 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "shirley biancardo": {
       "totalPoints": 0,
@@ -2308,16 +2456,19 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "steve gardner": {
       "totalPoints": 0,
-      "totalAgg": 646,
+      "totalAgg": 667,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 370,
+      "totalAggAgainst": 383,
       "homeWins": 16,
       "homeLosses": 1,
-      "awayWins": 11,
+      "awayWins": 12,
       "awayLosses": 2,
       "pairWins": 0,
       "pairLosses": 0,
@@ -2325,6 +2476,7 @@
       "beatenOpponents": [],
       "beatenBy": [],
       "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Monday Combined Leeds (Stanningley)",
         "Tuesday Vets Leeds (Stanningley)",
@@ -2377,6 +2529,7 @@
       "results": [
         "steve gardner 21 - 4 marie tate",
         "steve gardner 21 - 19 laura love",
+        "steve gardner 21 - 13 trevor hawkin",
         "steve gardner 21 - 14 ian tindal",
         "steve gardner 21 - 10 fred hargreaves",
         "steve gardner 21 - 18 ralph taylor",
@@ -2426,17 +2579,20 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "stewart watson": {
       "totalPoints": 0,
-      "totalAgg": 632,
+      "totalAgg": 1128,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 541,
-      "homeWins": 10,
-      "homeLosses": 9,
-      "awayWins": 11,
-      "awayLosses": 4,
+      "totalAggAgainst": 991,
+      "homeWins": 17,
+      "homeLosses": 13,
+      "awayWins": 20,
+      "awayLosses": 10,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -2477,7 +2633,33 @@
         "Saturday Bradford (Pudsey B)",
         "Saturday Bradford (Pudsey B)",
         "Saturday Bradford (Pudsey B)",
-        "Saturday Bradford (Pudsey B)"
+        "Saturday Bradford (Pudsey B)",
+        "Wednesday Spen Valley (Pudsey BC B)",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Wednesday Spen Valley (Pudsey BC 'C')",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)",
+        "Thursday Vets Bradford (Pudsey)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
@@ -2530,7 +2712,33 @@
         "stewart watson 14 - 21 chloe hirst",
         "stewart watson 21 - 11 ken lee",
         "stewart watson 21 - 14 chris sowden",
-        "stewart watson 21 - 15 jim balmforth"
+        "stewart watson 21 - 15 jim balmforth",
+        "stewart watson 16 - 21 richard hobson",
+        "stewart watson 21 - 19 duncan terry",
+        "stewart watson 21 - 14 colin firth",
+        "stewart watson 18 - 21 jack glazzard",
+        "stewart watson 16 - 21 paul hatch",
+        "stewart watson 21 - 17 mark cunningham",
+        "stewart watson 21 - 15 paul blackburn",
+        "stewart watson 21 - 19 simon lavan",
+        "stewart watson 21 - 11 glenn molineux",
+        "stewart watson 21 - 20 colin fisher",
+        "stewart watson 21 - 13 bob sharp",
+        "stewart watson 12 - 21 jack glazzard",
+        "stewart watson 19 - 21 paul hatch",
+        "stewart watson 21 - 17 john christensen",
+        "stewart watson 21 - 16 kevin wood",
+        "stewart watson 12 - 21 ian matthews",
+        "stewart watson 20 - 21 andy denton",
+        "stewart watson 21 - 13 kevin burrage",
+        "stewart watson 21 - 12 brian hodgson",
+        "stewart watson 17 - 21 john stevenson",
+        "stewart watson 21 - 13 peter oliver",
+        "stewart watson 21 - 15 tim miller",
+        "stewart watson 13 - 21 steve alred",
+        "stewart watson 21 - 14 peter wilkinson",
+        "stewart watson 17 - 21 mike kane",
+        "stewart watson 21 - 12 phillip richards"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2550,23 +2758,29 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "vanessa lancaster": {
       "totalPoints": 0,
-      "totalAgg": 21,
+      "totalAgg": 41,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 8,
+      "totalAggAgainst": 29,
       "homeWins": 1,
       "homeLosses": 0,
       "awayWins": 0,
-      "awayLosses": 0,
+      "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": [],
       "beatenBy": [],
-      "dayPlayed": ["Monday Combined Leeds (Stanningley)"],
+      "dayPlayed": [
+        "Monday Combined Leeds (Stanningley)",
+        "Monday Combined Leeds (Stanningley)"
+      ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
@@ -2584,7 +2798,8 @@
       "beatenTeam": [],
       "beatenByTeam": [],
       "results": [
-        "vanessa lancaster & paul bowes 21 - 8 james wright - green & peter simmons"
+        "vanessa lancaster & paul bowes 21 - 8 james wright - green & peter simmons",
+        "vanessa lancaster & paul bowes 20 - 21 nicola pearson & gary dennison"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2604,9 +2819,12 @@
         "wins": 0,
         "aggDiff": 0
       },
-      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday bradford": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "wednesday spen valley": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     }
   },
-  "lastUpdated": "08/08/2022",
+  "lastUpdated": "09/08/2022",
   "statsYear": "2022"
 }

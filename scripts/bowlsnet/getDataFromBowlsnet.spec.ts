@@ -72,6 +72,24 @@ const teams = [
     dateFromValue: '17288',
     dateToValue: '18952',
   },
+  {
+    day: 'Wednesday West Riding & Spen Valley',
+    url: 'https://bowlsnet.uk/WestRiding',
+    dateFromValue: '17424',
+    dateToValue: '18632',
+  },
+  {
+    day: 'Tuesday Mirfield',
+    url: 'https://bowlsnet.uk/Mirfield',
+    dateFromValue: '17560',
+    dateToValue: '18672',
+  },
+  {
+    day: 'Thursday Vets Bradford',
+    url: 'https://bowlsnet.uk/BradfordVets',
+    dateFromValue: '17400',
+    dateToValue: '18752',
+  },
 ];
 
 for (const team of teams) {

@@ -6,14 +6,16 @@ duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
 otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds', 'Monday AireDale & Wharfedale',
-                'Wednesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford']
+                'Wednesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
+                'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'andrew waller']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['pudsey park', 'pudsey park a', 'pudsey', 'pudsey a', 'pudsey b', 'pudsey c', 'pudsey \'a\'', 'pudsey \'b\'', 'pudsey \'c\'',
-              'pudsey park b', 'burley park', 'tarnfield', 'littlemoor s & sc \'a\'', 'littlemoor s & sc \'b\'', 'littlemoor s & sc', 'littlemoor s & sc a', 'littlemoor s & sc b']
+otherTeams = ['pudsey park', 'pudsey park a', 'pudsey', 'pudsey a', 'pudsey b', 'pudsey c', 'pudsey \'a\'', 'pudsey \'b\'', 'pudsey \'c\'', 'pudsey bc', 'pudsey bc \'a\'', 'pudsey bc \'b\'',
+              'pudsey bc \'c\'', 'pudsey bc \'d\'', 'pudsey park b', 'burley park', 'tarnfield', 'littlemoor', 'littlemoor \'a\'', 'littlemoor \'b\'', 'littlemoor s & sc \'a\'',
+              'littlemoor s & sc \'b\'', 'littlemoor s & sc', 'littlemoor s & sc a', 'littlemoor s & sc b']
 teamsTracking = teamDetails.teamNames + otherTeams
 
 

@@ -122,6 +122,7 @@ for league in leaguesDays:
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str and possibleTeamName.lower() in teamsTracking:
                     teamName = possibleTeamName
+                    # TODO tidy this up for other teams too. Remember to add A, B, C, D etc.
                     if 'stanningley' in teamName.lower():
                         teamName = 'Stanningley'
                     if teamName[-2:] == ' A':
