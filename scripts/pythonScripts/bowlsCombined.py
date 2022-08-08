@@ -76,7 +76,6 @@ for league in leaguesDays:
             awayPlayerRow.append(awayPlayerIndex)
         awayPlayerIndex = awayPlayerIndex + 1
 
-    rowsToRepeat = []
     # Find each players' results
     for row in range(1, sheet.max_row + 1):
         playersToUpdate = []
@@ -177,14 +176,9 @@ for league in leaguesDays:
 
                     # Store player stats
                     playerNameForResult = playerName
-                    playerResults[playerName][league.lower()]['games'] += 1
                     if pairsGame:
-                        playerResults[playerName]['pairsPartners'].append(
-                            pairsPartner)
                         playerNameForResult = playerName + ' & ' + pairsPartner
                         opponentsName = opponentsName + ' & ' + secondOpponent
-                        playerResults[playerName]['totalPairsAgg'] += aggregate
-                        playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
                     playersResult = playerNameForResult + ' ' + \
                         str(aggregate) + ' - ' + \
@@ -194,14 +188,6 @@ for league in leaguesDays:
 
                     # Wins
                     if aggregate > opponentAggregate:
-                        playerResults[playerName][league.lower()
-                                                  ]['wins'] += 1
-                        playerResults[playerName]['beatenOpponents'].append(
-                            opponentsName)
-                        if pairsGame:
-                            playerResults[playerName]['winningPairsPartners'].append(
-                                pairsPartner)
-                            playerResults[playerName]['pairWins'] += 1
                         if homeGame:
                             playerResults[playerName]['homeWins'] += 1
                         if awayGame:
@@ -210,12 +196,6 @@ for league in leaguesDays:
                             playerResults[playerName]['cupWins'] += 1
                     # Losses
                     else:
-                        playerResults[playerName]['beatenBy'].append(
-                            opponentsName)
-                        if pairsGame:
-                            playerResults[playerName]['losingPairsPartners'].append(
-                                pairsPartner)
-                            playerResults[playerName]['pairLosses'] += 1
                         if homeGame:
                             playerResults[playerName]['homeLosses'] += 1
                         if awayGame:
@@ -226,14 +206,6 @@ for league in leaguesDays:
                     # Averages
                     playerResults[playerName]['totalAgg'] += aggregate
                     playerResults[playerName]['totalAggAgainst'] += opponentAggregate
-                    playerResults[playerName][league.lower()]['aggDiff'] += aggregate - \
-                        opponentAggregate
-                    if homeGame:
-                        playerResults[playerName]['totalHomeAgg'] += aggregate
-                        playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
-                    if awayGame:
-                        playerResults[playerName]['totalAwayAgg'] += aggregate
-                        playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
                     playerResults[playerName]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 
