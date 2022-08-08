@@ -18,8 +18,6 @@ function PlayerStatChoiceDropdown(props) {
         statsCallback(allStatsToggle);
     }
 
-    // TODO all stats toggle is adding 1 to things e.g. games played?
-
     return (
         <div id="allStatsSelectDropDown">
             <DropdownButton
