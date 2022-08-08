@@ -23,8 +23,7 @@ awayPlayerScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
-# TODO check other cup comps?
-cupText = ['qtr-finals', 'semi-finals', 'final']
+cupText = ['qtr-finals', 'semi-finals', 'final', 'Round of ']
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
@@ -32,7 +31,6 @@ wb = openpyxl.load_workbook(path)
 
 print('UPDATING ALL PLAYER STATS')
 
-# TODO manually check stats are correct e.g. mario and shirley. Cliff? Dave Hudson!
 # TODO add in other leagues e.g. aire/wharfe
 
 for league in leaguesDays:
