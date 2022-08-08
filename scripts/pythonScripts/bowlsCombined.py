@@ -129,9 +129,13 @@ for league in leaguesDays:
             for i in range(0, 13):
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str and possibleTeamName.lower() in teamsTracking:
+                    teamName = possibleTeamName
+                    if 'stanningley' in teamName.lower():
+                        teamName = 'Stanningley'
+                    if teamName[-2:] == ' A':
+                        teamName = teamName[:-2]
                     correctPlayerFound = True
                     break
-            
             if correctPlayerFound is False:
                 updateStats = False
 
@@ -230,7 +234,8 @@ for league in leaguesDays:
                     if awayGame:
                         playerResults[playerName]['totalAwayAgg'] += aggregate
                         playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
-                    playerResults[playerName]['dayPlayed'].append(league)
+                    playerResults[playerName]['dayPlayed'].append(
+                        league + ' (' + teamName + ')')
 
 # Create JSON file
 dataToExport = {
