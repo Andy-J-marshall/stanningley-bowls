@@ -5,13 +5,15 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds']
+otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds', 'Monday AireDale & Wharfedale',
+                'Wednesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'andrew waller']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['pudsey park', 'pudsey park a', 'pudsey park b', 'burley park']
+otherTeams = ['pudsey park', 'pudsey park a', 'pudsey', 'pudsey a', 'pudsey b', 'pudsey c', 'pudsey \'a\'', 'pudsey \'b\'', 'pudsey \'c\'',
+              'pudsey park b', 'burley park', 'tarnfield', 'littlemoor s & sc \'a\'', 'littlemoor s & sc \'b\'', 'littlemoor s & sc', 'littlemoor s & sc a', 'littlemoor s & sc b']
 teamsTracking = teamDetails.teamNames + otherTeams
 
 

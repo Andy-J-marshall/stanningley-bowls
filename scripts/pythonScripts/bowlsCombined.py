@@ -31,8 +31,6 @@ wb = openpyxl.load_workbook(path)
 
 print('UPDATING ALL PLAYER STATS')
 
-# TODO add in other leagues e.g. aire/wharfe
-
 for league in leaguesDays:
     # Goes through each sheet in turn
     sheet = wb[league]
@@ -128,6 +126,11 @@ for league in leaguesDays:
                         teamName = 'Stanningley'
                     if teamName[-2:] == ' A':
                         teamName = teamName[:-2]
+                    if teamName[-4:] == ' \'A\'':
+                        teamName = teamName[:-4]
+                    if teamName[-4:] == ' \'B\'':
+                        teamName = teamName[:-4]
+                        teamName = teamName + ' B'
                     correctPlayerFound = True
                     break
             if correctPlayerFound is False:
