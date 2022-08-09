@@ -20,7 +20,7 @@ function YearSelectDropdown(props) {
                 <DropdownButton
                     variant="light"
                     onSelect={changeStatsYear}
-                    id="dropdown-basic-button"
+                    id="yearSelectDropDown-button"
                     title={year + ' Stats'}
                     style={{
                         display: 'flex',

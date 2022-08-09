@@ -23,7 +23,7 @@ function PlayerStatChoiceDropdown(props) {
             <DropdownButton
                 variant="light"
                 onSelect={toggleAllStats}
-                id="dropdown-basic-button"
+                id="allStatsSelectDropDown-button"
                 title={currentOption}
                 style={{
                     display: 'flex',
