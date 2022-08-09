@@ -163,6 +163,19 @@ function Players(props) {
         return partnersReturnObj;
     }
 
+    function showStatsAdvice() {
+        return (
+            <div>
+                {playedForOtherTeam && !showStatSummary && (
+                    <p style={{ fontSize: '15px' }}>
+                        (To see stats whilst playing for non-Stanningley teams,
+                        select All Team Stats in the above drop down)
+                    </p>
+                )}
+            </div>
+        );
+    }
+
     const gameOrGames = gamesPlayed > 0 ? 'games' : 'game';
     const winOrWins = totalWins > 0 ? 'wins' : 'win';
     const lossOrLosses = totalLosses > 0 ? 'losses' : 'loss';
@@ -170,7 +183,12 @@ function Players(props) {
         <div>
             <ListGroup.Item>
                 <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
-                {gamesPlayed === 0 && <p>No games played</p>}
+                {gamesPlayed === 0 && (
+                    <div>
+                        <p>No games played for {config.teamNames.short}.</p>
+                        {showStatsAdvice()}
+                    </div>
+                )}
                 {gamesPlayed > 0 && (
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
@@ -219,13 +237,7 @@ function Players(props) {
                                             </p>
                                         </div>
                                     )}
-                                    {playedForOtherTeam && !showStatSummary && (
-                                        <p style={{ fontSize: '15px' }}>
-                                            (To see stats whilst playing for
-                                            non-Stanningley teams, select All
-                                            Team Stats in the above drop down)
-                                        </p>
-                                    )}
+                                    {showStatsAdvice()}
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
