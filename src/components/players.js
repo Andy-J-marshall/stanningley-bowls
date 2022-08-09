@@ -185,7 +185,10 @@ function Players(props) {
                 <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
                 {gamesPlayed === 0 && (
                     <div>
-                        <p>No games played for {config.teamNames.short}.</p>
+                        {!showStatSummary && (
+                            <p>No games played for {config.teamNames.short}.</p>
+                        )}
+                        {showStatSummary && <p>No games played.</p>}
                         {showStatsAdvice()}
                     </div>
                 )}
