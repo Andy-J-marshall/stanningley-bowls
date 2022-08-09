@@ -28,10 +28,16 @@ function PlayerStatChoiceDropdown(props) {
                     justifyContent: 'left',
                 }}
             >
-                <Dropdown.Item eventKey="Stanningley Stats">
+                <Dropdown.Item
+                    style={{ color: 'black', backgroundColor: 'white' }}
+                    eventKey="Stanningley Stats"
+                >
                     Stanningley Stats
                 </Dropdown.Item>
-                <Dropdown.Item eventKey="All Team Stats">
+                <Dropdown.Item
+                    style={{ color: 'black', backgroundColor: 'white' }}
+                    eventKey="All Team Stats"
+                >
                     All Team Stats
                 </Dropdown.Item>
             </DropdownButton>
