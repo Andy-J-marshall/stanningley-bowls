@@ -1,20 +1,25 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import Player from './players';
 import { ListGroup, Form, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+import Player from './players';
+import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStats(props) {
+    const combinedStats = props.combinedStats;
     const stats = props.stats;
 
     const { playerResults } = stats;
+    const combinedPlayerResults = combinedStats.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
+    const [showStatSummary, setShowStatSummary] = useState(false);
+    const [statsToUse, setStatsToUse] = useState(playerResults);
 
-    const keys = Object.keys(playerResults).sort();
+    const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
 
     useEffect(() => {
@@ -23,6 +28,16 @@ function PlayerStats(props) {
         }
         setLoaded(true);
     });
+
+    function statsCallback(showAllBoolean) {
+        if (showAllBoolean) {
+            setStatsToUse(combinedPlayerResults);
+            setShowStatSummary(true);
+        } else {
+            setStatsToUse(playerResults);
+            setShowStatSummary(false);
+        }
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -41,7 +56,8 @@ function PlayerStats(props) {
                 key={index}
                 player={player}
                 name={playerName}
-                playersStats={playerResults}
+                playersStats={statsToUse}
+                showStatSummary={showStatSummary}
             ></Player>
         );
     }
@@ -88,6 +104,7 @@ function PlayerStats(props) {
             {/* Only shows searched for player */}
             {searchedPlayerName && (
                 <ListGroup>
+                    <PlayerStatChoiceDropdown statsCallback={statsCallback} />
                     {keys.map((p, index) => {
                         const playerName = keys[index];
                         if (

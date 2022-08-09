@@ -42,6 +42,54 @@ const teams = [
     dateFromValue: '17424',
     dateToValue: '18880',
   },
+  {
+    day: 'Monday AireDale & Wharfedale',
+    url: 'https://bowlsnet.uk/AW/Mon',
+    dateFromValue: '17440',
+    dateToValue: '18664',
+  },
+  {
+    day: 'Wednesday AireDale & Wharfedale',
+    url: 'https://bowlsnet.uk/AW/WedSingles',
+    dateFromValue: '17512',
+    dateToValue: '18800',
+  },
+  {
+    day: 'Monday Bradford',
+    url: 'https://bowlsnet.uk/Bradford/Mon',
+    dateFromValue: '17496',
+    dateToValue: '18608',
+  },
+  {
+    day: 'Wednesday Half Holiday Bradford',
+    url: 'https://bowlsnet.uk/Bradford/HalfHol',
+    dateFromValue: '17568',
+    dateToValue: '18856',
+  },
+  {
+    day: 'Saturday Bradford',
+    url: 'https://bowlsnet.uk/Bradford/Sat',
+    dateFromValue: '17288',
+    dateToValue: '18952',
+  },
+  {
+    day: 'Wednesday West Riding & Spen Valley',
+    url: 'https://bowlsnet.uk/WestRiding',
+    dateFromValue: '17424',
+    dateToValue: '18632',
+  },
+  {
+    day: 'Tuesday Mirfield',
+    url: 'https://bowlsnet.uk/Mirfield',
+    dateFromValue: '17560',
+    dateToValue: '18672',
+  },
+  {
+    day: 'Thursday Vets Bradford',
+    url: 'https://bowlsnet.uk/BradfordVets',
+    dateFromValue: '17400',
+    dateToValue: '18752',
+  },
 ];
 
 for (const team of teams) {

@@ -5,12 +5,16 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds']
+otherLeagues = ['Tuesday Leeds', 'Wednesday Half Holiday Leeds', 'Monday AireDale & Wharfedale',
+                'Wednesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
+                'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []
 players = teamPlayers + extraPlayers
-otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'Andrew Waller']
+otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'andrew waller']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
+otherTeams = ['pudsey park', 'pudsey', 'burley', 'tarnfield', 'littlemoor']
+teamsTracking = teamDetails.teamNames + otherTeams
 
 
 def findHtmlFiles():

@@ -13,14 +13,17 @@ duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays)
 deduplicateNames = utils.deduplicateNames
 anonymiseNames = utils.anonymiseNames
+teamsTracking = utils.teamsTracking
 
 # Spreadsheet info
 homePlayerCol = 'A'
 homePlayerScoreCol = 'B'
 awayPlayerCol = 'C'
 awayPlayerScoreCol = 'D'
+homeTeamNameCol = 'A'
+awayTeamNameCol = 'B'
 
-cupText = ['qtr-finals', 'semi-finals', 'final']
+cupText = ['qtr-finals', 'semi-finals', 'final', 'Round of ']
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
@@ -68,139 +71,140 @@ for league in leaguesDays:
 
     # Find each players' results
     for row in range(1, sheet.max_row + 1):
-        # reset variable values
-        aggregate = 0
-        opponentAggregate = 0
-        points = 0
-        opponentPoints = 0
-        secondOpponent = ''
-        playerName = ''
-        opponentsName = ''
-        pairsGame = False
-        pairsPartner = ''
-        opponentTeam = ''
-        updateStats = False
-        homeGame = None
-        awayGame = None
-        cupGame = False
-
-        # Find columns
-        if row in cupGameRows:
-            cupGame = True
-
+        playersToUpdate = []
         if row in homePlayerRow:
-            updateStats = True
-            if not cupGame:
-                homeGame = True
-            playerNameCol = homePlayerCol
-            playerScoreCol = homePlayerScoreCol
-            opponentPlayerNameCol = awayPlayerCol
-            opponentPlayerScoreCol = awayPlayerScoreCol
+            playersToUpdate.append('home')
         if row in awayPlayerRow:
-            updateStats = True
-            if not cupGame:
-                awayGame = True
-            playerNameCol = awayPlayerCol
-            playerScoreCol = awayPlayerScoreCol
-            opponentPlayerNameCol = homePlayerCol
-            opponentPlayerScoreCol = homePlayerScoreCol
+            playersToUpdate.append('away')
 
-        # Find result details
-        if updateStats:
-            opponentsName = sheet[opponentPlayerNameCol + str(row)].value
+        for p in playersToUpdate:
+            # reset variable values
+            aggregate = 0
+            opponentAggregate = 0
+            points = 0
+            opponentPoints = 0
+            secondOpponent = ''
+            playerName = ''
+            opponentsName = ''
+            pairsGame = False
+            pairsPartner = ''
+            opponentTeam = ''
+            updateStats = False
+            homeGame = None
+            awayGame = None
+            cupGame = False
 
-            if opponentsName.lower() != '*walkover*':
-                playerName = sheet[playerNameCol + str(row)].value
-                aggregate = sheet[playerScoreCol + str(row)].value
-                opponentAggregate = sheet[opponentPlayerScoreCol +
-                                          str(row)].value
-                pairsGame = False
-                if aggregate is None:
-                    pairsGame = True
-                    pairsPartner = sheet[playerNameCol +
-                                         str(row - 1)].value
-                    secondOpponent = sheet[opponentPlayerNameCol +
-                                           str(row - 1)].value
-                    aggregate = sheet[playerScoreCol + str(row - 1)].value
+            # Find columns
+            if row in cupGameRows:
+                cupGame = True
+
+            if p == 'home':
+                updateStats = True
+                if not cupGame:
+                    homeGame = True
+                playerNameCol = homePlayerCol
+                playerScoreCol = homePlayerScoreCol
+                opponentPlayerNameCol = awayPlayerCol
+                opponentPlayerScoreCol = awayPlayerScoreCol
+                teamNameCol = homeTeamNameCol
+            if p == 'away':
+                updateStats = True
+                if not cupGame:
+                    awayGame = True
+                playerNameCol = awayPlayerCol
+                playerScoreCol = awayPlayerScoreCol
+                opponentPlayerNameCol = homePlayerCol
+                opponentPlayerScoreCol = homePlayerScoreCol
+                teamNameCol = awayTeamNameCol
+
+            correctPlayerFound = False
+            for i in range(0, 13):
+                possibleTeamName = sheet[teamNameCol][row - i].value
+                if type(possibleTeamName) is str:
+                    coreTeamName = possibleTeamName.split(' ')[0]
+                    if coreTeamName.lower() in teamsTracking:
+                        teamName = possibleTeamName
+                        if 'stanningley' in teamName.lower():
+                            teamName = 'Stanningley'
+                        teamName = teamName.replace('Pudsey BC', 'Pudsey')
+                        teamName = teamName.replace(
+                            "Littlemoor S & SC", "Littlemoor")
+                        teamName = teamName.replace('\'', '')
+                        correctPlayerFound = True
+                        break
+            if correctPlayerFound is False:
+                updateStats = False
+
+            # Find result details
+            if updateStats:
+                opponentsName = sheet[opponentPlayerNameCol + str(row)].value
+
+                if opponentsName.lower() != '*walkover*':
+                    playerName = sheet[playerNameCol + str(row)].value
+                    aggregate = sheet[playerScoreCol + str(row)].value
                     opponentAggregate = sheet[opponentPlayerScoreCol +
-                                              str(row - 1)].value
-                else:
-                    pointsRowBelow = sheet[playerScoreCol +
-                                           str(row + 1)].value
-                    if pointsRowBelow is None:
+                                              str(row)].value
+                    pairsGame = False
+                    if aggregate is None:
                         pairsGame = True
                         pairsPartner = sheet[playerNameCol +
-                                             str(row + 1)].value
+                                             str(row - 1)].value
                         secondOpponent = sheet[opponentPlayerNameCol +
+                                               str(row - 1)].value
+                        aggregate = sheet[playerScoreCol + str(row - 1)].value
+                        opponentAggregate = sheet[opponentPlayerScoreCol +
+                                                  str(row - 1)].value
+                    else:
+                        pointsRowBelow = sheet[playerScoreCol +
                                                str(row + 1)].value
+                        if pointsRowBelow is None:
+                            pairsGame = True
+                            pairsPartner = sheet[playerNameCol +
+                                                 str(row + 1)].value
+                            secondOpponent = sheet[opponentPlayerNameCol +
+                                                   str(row + 1)].value
 
-                pairsPartner = deduplicateNames(pairsPartner)
-                pairsPartner = anonymiseNames(pairsPartner)
-                secondOpponent = anonymiseNames(secondOpponent)
-                playerName = deduplicateNames(playerName)
-                playerName = anonymiseNames(playerName)
-                opponentsName = anonymiseNames(opponentsName)
+                    pairsPartner = deduplicateNames(pairsPartner)
+                    pairsPartner = anonymiseNames(pairsPartner)
+                    secondOpponent = anonymiseNames(secondOpponent)
+                    playerName = deduplicateNames(playerName)
+                    playerName = anonymiseNames(playerName)
+                    opponentsName = anonymiseNames(opponentsName)
 
-            # Store player stats
-                playerNameForResult = playerName
-                playerResults[playerName][league.lower()]['games'] += 1
-                if pairsGame:
-                    playerResults[playerName]['pairsPartners'].append(
-                        pairsPartner)
-                    playerNameForResult = playerName + ' & ' + pairsPartner
-                    opponentsName = opponentsName + ' & ' + secondOpponent
-                    playerResults[playerName]['totalPairsAgg'] += aggregate
-                    playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
-
-                playersResult = playerNameForResult + ' ' + \
-                    str(aggregate) + ' - ' + \
-                    str(opponentAggregate) + ' ' + opponentsName
-                playerResults[playerName]['results'].append(
-                    playersResult)
-
-                # Wins
-                if aggregate > opponentAggregate:
-                    playerResults[playerName][league.lower()
-                                              ]['wins'] += 1
-                    playerResults[playerName]['beatenOpponents'].append(
-                        opponentsName)
+                    # Store player stats
+                    playerNameForResult = playerName
                     if pairsGame:
-                        playerResults[playerName]['winningPairsPartners'].append(
-                            pairsPartner)
-                        playerResults[playerName]['pairWins'] += 1
-                    if homeGame:
-                        playerResults[playerName]['homeWins'] += 1
-                    if awayGame:
-                        playerResults[playerName]['awayWins'] += 1
-                    if cupGame:
-                        playerResults[playerName]['cupWins'] += 1
-                # Losses
-                else:
-                    playerResults[playerName]['beatenBy'].append(
-                        opponentsName)
-                    if pairsGame:
-                        playerResults[playerName]['losingPairsPartners'].append(
-                            pairsPartner)
-                        playerResults[playerName]['pairLosses'] += 1
-                    if homeGame:
-                        playerResults[playerName]['homeLosses'] += 1
-                    if awayGame:
-                        playerResults[playerName]['awayLosses'] += 1
-                    if cupGame:
-                        playerResults[playerName]['cupLosses'] += 1
+                        playerNameForResult = playerName + ' & ' + pairsPartner
+                        opponentsName = opponentsName + ' & ' + secondOpponent
 
-                # Averages
-                playerResults[playerName]['totalAgg'] += aggregate
-                playerResults[playerName]['totalAggAgainst'] += opponentAggregate
-                playerResults[playerName][league.lower()]['aggDiff'] += aggregate - \
-                    opponentAggregate
-                if homeGame:
-                    playerResults[playerName]['totalHomeAgg'] += aggregate
-                    playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
-                if awayGame:
-                    playerResults[playerName]['totalAwayAgg'] += aggregate
-                    playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
-                playerResults[playerName]['dayPlayed'].append(league)
+                    playersResult = playerNameForResult + ' ' + \
+                        str(aggregate) + ' - ' + \
+                        str(opponentAggregate) + ' ' + opponentsName
+                    playerResults[playerName]['results'].append(
+                        playersResult)
+
+                    # Wins
+                    if aggregate > opponentAggregate:
+                        if homeGame:
+                            playerResults[playerName]['homeWins'] += 1
+                        if awayGame:
+                            playerResults[playerName]['awayWins'] += 1
+                        if cupGame:
+                            playerResults[playerName]['cupWins'] += 1
+                    # Losses
+                    else:
+                        if homeGame:
+                            playerResults[playerName]['homeLosses'] += 1
+                        if awayGame:
+                            playerResults[playerName]['awayLosses'] += 1
+                        if cupGame:
+                            playerResults[playerName]['cupLosses'] += 1
+
+                    # Averages
+                    playerResults[playerName]['totalAgg'] += aggregate
+                    playerResults[playerName]['totalAggAgainst'] += opponentAggregate
+                    playerResults[playerName]['dayPlayed'].append(
+                        league + ' (' + teamName + ')')
 
 # Create JSON file
 dataToExport = {

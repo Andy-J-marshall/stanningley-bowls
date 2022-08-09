@@ -15,7 +15,7 @@ function YearSelectDropdown(props) {
     }
 
     return (
-        <div>
+        <div id="yearSelectDropDown">
             {yearsToDisplay > 1 && (
                 <DropdownButton
                     variant="light"
