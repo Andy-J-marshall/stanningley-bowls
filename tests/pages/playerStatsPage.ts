@@ -26,6 +26,7 @@ export class PlayerStatsPage {
   readonly totalWins: Locator;
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
+  readonly teamDropDown: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -48,6 +49,7 @@ export class PlayerStatsPage {
     this.totalWins = page.locator('#totalWins');
     this.totalLosses = page.locator('#totalLosses');
     this.totalAverage = page.locator('#totalAverage');
+    this.teamDropDown = page.locator('#allStatsSelectDropDown');
   }
 
   async goto() {
@@ -55,8 +57,10 @@ export class PlayerStatsPage {
   }
 
   async searchForPlayer(playerName: string) {
-    await this.searchBar.type(playerName);
-    await this.playerListInDropdown.click();
+    if (playerName !== '') {
+      await this.searchBar.type(playerName);
+      await this.playerListInDropdown.click();
+    }
     await this.searchButton.click();
   }
 
@@ -66,6 +70,12 @@ export class PlayerStatsPage {
 
   async checkPlayerName(expectedPlayer: string) {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
+  }
+
+  async checkStatsDropdownExists(expected: boolean) {
+    if (expected) {
+      await expect(this.teamDropDown).toBeNull();
+    }
   }
 
   async checkAccordionHeadersExist() {

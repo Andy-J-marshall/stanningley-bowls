@@ -57,6 +57,7 @@ for (const player of players) {
 }
 
 test('All players appear by default', async () => {
+  await playerStatsPage.checkStatsDropdownExists(false);
   await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
@@ -64,5 +65,9 @@ test(`Stats search bar can show all player stats`, async () => {
   await playerStatsPage.searchForPlayer('Donald Shaw');
   await playerStatsPage.checkNumberOfPlayersReturned(1);
   await playerStatsPage.searchForPlayer('Show All');
+  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
+  await playerStatsPage.searchForPlayer('Alyssa Randell');
+  await playerStatsPage.checkNumberOfPlayersReturned(1);
+  await playerStatsPage.searchForPlayer('');
   await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
