@@ -10,6 +10,7 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
     const showStatSummary = props.showStatSummary;
+    const playedForOtherTeam = props.playedForOtherTeam;
 
     let {
         totalAgg,
@@ -129,14 +130,12 @@ function Players(props) {
         { day: 'Saturday', gamesPlayed: saturdayGames },
     ];
     daysPlayedCount = daysPlayedCount.filter((day) => day.gamesPlayed > 0);
-    let teamsPlayedFor = [];
-    if (showStatSummary) {
-        dayPlayed.forEach((day) => {
-            if (!teamsPlayedFor.includes(day)) {
-                teamsPlayedFor.push(day);
-            }
-        });
-    }
+    let allTeamsPlayedFor = [];
+    dayPlayed.forEach((day) => {
+        if (!allTeamsPlayedFor.includes(day)) {
+            allTeamsPlayedFor.push(day);
+        }
+    });
 
     const pairsPartnersCount = calculatePairsPartnersCount(pairsPartners);
     const pairsPartnersCountWins =
@@ -180,6 +179,7 @@ function Players(props) {
                             </Accordion.Header>
                             <Accordion.Body>
                                 <div>
+                                    <h3>STATS</h3>
                                     <p id="totalGamesPlayed">
                                         Games played = {gamesPlayed}
                                     </p>
@@ -205,13 +205,27 @@ function Players(props) {
                                             {capitalizeText([biggestWin])}
                                         </p>
                                     )}
-                                    {teamsPlayedFor &&
-                                        teamsPlayedFor.length > 0 && (
-                                            <p id="teamsPlayedFor">
-                                                Teams played for:
-                                                {arrayToList(teamsPlayedFor)}
+                                    {allTeamsPlayedFor.length > 0 && (
+                                        <div id="teamsPlayedFor">
+                                            <h3
+                                                style={{
+                                                    paddingTop: '1rem',
+                                                }}
+                                            >
+                                                TEAMS
+                                            </h3>
+                                            <p>
+                                                {arrayToList(allTeamsPlayedFor)}
                                             </p>
-                                        )}
+                                        </div>
+                                    )}
+                                    {playedForOtherTeam && !showStatSummary && (
+                                        <p style={{ fontSize: '15px' }}>
+                                            (To see stats whilst playing for
+                                            non-Stanningley teams, select All
+                                            Team Stats in the above drop down)
+                                        </p>
+                                    )}
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>

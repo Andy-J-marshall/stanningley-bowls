@@ -3,6 +3,7 @@ import { ListGroup, Form, Button } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import Player from './players';
 import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
+import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
@@ -17,6 +18,8 @@ function PlayerStats(props) {
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
     const [showStatSummary, setShowStatSummary] = useState(false);
+    const [showStatSelectionDropdown, setShowStatSelectionDropdown] =
+        useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
 
     const keys = Object.keys(combinedPlayerResults).sort();
@@ -42,8 +45,20 @@ function PlayerStats(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
         setValue(['']);
-        const searchedName = event.target[0].value.trim();
-        setSearchedPlayerName(searchedName.toLowerCase());
+        setShowStatSelectionDropdown(false);
+        const searchedName = event.target[0].value.toLowerCase().trim();
+        setSearchedPlayerName(searchedName);
+
+        if (searchedName && !searchedName.includes('show all')) {
+            const stanDays = Object.keys(config.days);
+            const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
+            daysPlayed.forEach((day) => {
+                const formattedDay = day.split(' (')[0].toLowerCase().trim();
+                if (!stanDays.includes(formattedDay)) {
+                    setShowStatSelectionDropdown(true);
+                }
+            });
+        }
     };
 
     const handleChange = (selected) => {
@@ -58,6 +73,7 @@ function PlayerStats(props) {
                 name={playerName}
                 playersStats={statsToUse}
                 showStatSummary={showStatSummary}
+                playedForOtherTeam={showStatSelectionDropdown}
             ></Player>
         );
     }
@@ -104,7 +120,11 @@ function PlayerStats(props) {
             {/* Only shows searched for player */}
             {searchedPlayerName && (
                 <ListGroup>
-                    <PlayerStatChoiceDropdown statsCallback={statsCallback} />
+                    {showStatSelectionDropdown && (
+                        <PlayerStatChoiceDropdown
+                            statsCallback={statsCallback}
+                        />
+                    )}
                     {keys.map((p, index) => {
                         const playerName = keys[index];
                         if (
