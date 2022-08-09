@@ -120,20 +120,18 @@ for league in leaguesDays:
             correctPlayerFound = False
             for i in range(0, 13):
                 possibleTeamName = sheet[teamNameCol][row - i].value
-                if type(possibleTeamName) is str and possibleTeamName.lower() in teamsTracking:
-                    teamName = possibleTeamName
-                    # TODO tidy this up for other teams too. Remember to add A, B, C, D etc.
-                    if 'stanningley' in teamName.lower():
-                        teamName = 'Stanningley'
-                    if teamName[-2:] == ' A':
-                        teamName = teamName[:-2]
-                    if teamName[-4:] == ' \'A\'':
-                        teamName = teamName[:-4]
-                    if teamName[-4:] == ' \'B\'':
-                        teamName = teamName[:-4]
-                        teamName = teamName + ' B'
-                    correctPlayerFound = True
-                    break
+                if type(possibleTeamName) is str:
+                    coreTeamName = possibleTeamName.split(' ')[0]
+                    if coreTeamName.lower() in teamsTracking:
+                        teamName = possibleTeamName
+                        if 'stanningley' in teamName.lower():
+                            teamName = 'Stanningley'
+                        teamName = teamName.replace('Pudsey BC', 'Pudsey')
+                        teamName = teamName.replace(
+                            "Littlemoor S & SC", "Littlemoor")
+                        teamName = teamName.replace('\'', '')
+                        correctPlayerFound = True
+                        break
             if correctPlayerFound is False:
                 updateStats = False
 

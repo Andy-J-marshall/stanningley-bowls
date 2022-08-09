@@ -13,9 +13,7 @@ extraPlayers = []
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson', 'andrew waller']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['pudsey park', 'pudsey park a', 'pudsey', 'pudsey a', 'pudsey b', 'pudsey c', 'pudsey \'a\'', 'pudsey \'b\'', 'pudsey \'c\'', 'pudsey bc', 'pudsey bc \'a\'', 'pudsey bc \'b\'',
-              'pudsey bc \'c\'', 'pudsey bc \'d\'', 'pudsey park b', 'burley park', 'tarnfield', 'littlemoor', 'littlemoor \'a\'', 'littlemoor \'b\'', 'littlemoor s & sc \'a\'',
-              'littlemoor s & sc \'b\'', 'littlemoor s & sc', 'littlemoor s & sc a', 'littlemoor s & sc b']
+otherTeams = ['pudsey park', 'pudsey', 'burley', 'tarnfield', 'littlemoor']
 teamsTracking = teamDetails.teamNames + otherTeams
 
 
