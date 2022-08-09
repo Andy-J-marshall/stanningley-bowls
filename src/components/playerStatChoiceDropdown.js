@@ -3,8 +3,7 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 function PlayerStatChoiceDropdown(props) {
     const statsCallback = props.statsCallback;
-
-    const [currentOption, setCurrentOption] = useState('Stanningley Stats');
+    const dropDownText = props.dropDownText;
 
     function toggleAllStats(event) {
         const option = event.replace('#', '').toString();
@@ -14,7 +13,6 @@ function PlayerStatChoiceDropdown(props) {
         } else {
             allStatsToggle = false;
         }
-        setCurrentOption(option);
         statsCallback(allStatsToggle);
     }
 
@@ -24,7 +22,7 @@ function PlayerStatChoiceDropdown(props) {
                 variant="light"
                 onSelect={toggleAllStats}
                 id="allStatsSelectDropDown-button"
-                title={currentOption}
+                title={dropDownText}
                 style={{
                     display: 'flex',
                     justifyContent: 'left',

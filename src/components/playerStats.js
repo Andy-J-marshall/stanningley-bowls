@@ -21,6 +21,8 @@ function PlayerStats(props) {
     const [showStatSelectionDropdown, setShowStatSelectionDropdown] =
         useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
+    const defaultDropDownText = 'Stanningley Stats';
+    const [dropDownText, setDropDownText] = useState(defaultDropDownText);
 
     const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
@@ -36,9 +38,11 @@ function PlayerStats(props) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
             setShowStatSummary(true);
+            setDropDownText('All Team Stats');
         } else {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
+            setDropDownText(defaultDropDownText);
         }
     }
 
@@ -46,18 +50,30 @@ function PlayerStats(props) {
         event.preventDefault();
         setValue(['']);
         setShowStatSelectionDropdown(false);
+        setShowStatSummary(false);
+        setStatsToUse(playerResults);
+        setDropDownText(defaultDropDownText);
         const searchedName = event.target[0].value.toLowerCase().trim();
         setSearchedPlayerName(searchedName);
 
         if (searchedName && !searchedName.includes('show all')) {
             const stanDays = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
+            let anyStanDays = false;
             daysPlayed.forEach((day) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
                 if (!stanDays.includes(formattedDay)) {
                     setShowStatSelectionDropdown(true);
                 }
+                if (stanDays.includes(formattedDay)) {
+                    anyStanDays = true;
+                }
             });
+            if (!anyStanDays) {
+                setStatsToUse(combinedPlayerResults);
+                setShowStatSummary(true);
+                setShowStatSelectionDropdown(false);
+            }
         }
     };
 
@@ -122,6 +138,7 @@ function PlayerStats(props) {
                 <ListGroup>
                     {showStatSelectionDropdown && (
                         <PlayerStatChoiceDropdown
+                            dropDownText={dropDownText}
                             statsCallback={statsCallback}
                         />
                     )}
