@@ -126,7 +126,7 @@ for league in leaguesDays:
                         teamName = possibleTeamName
                         if 'stanningley' in teamName.lower():
                             teamName = 'Stanningley'
-                        teamName = teamName.replace('Pudsey BC', 'Pudsey')
+                        teamName = teamName.replace(' BC', '')
                         teamName = teamName.replace(
                             "Littlemoor S & SC", "Littlemoor")
                         teamName = teamName.replace('\'', '')

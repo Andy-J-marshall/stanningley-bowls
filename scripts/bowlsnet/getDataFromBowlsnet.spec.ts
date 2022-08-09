@@ -55,6 +55,12 @@ const teams = [
     dateToValue: '18800',
   },
   {
+    day: 'Tuesday AireDale & Wharfedale',
+    url: 'https://bowlsnet.uk/AW/Vets',
+    dateFromValue: '17504',
+    dateToValue: '18848',
+  },
+  {
     day: 'Monday Bradford',
     url: 'https://bowlsnet.uk/Bradford/Mon',
     dateFromValue: '17496',
@@ -73,7 +79,7 @@ const teams = [
     dateToValue: '18952',
   },
   {
-    day: 'Wednesday West Riding & Spen Valley',
+    day: 'Wednesday Spen Valley',
     url: 'https://bowlsnet.uk/WestRiding',
     dateFromValue: '17424',
     dateToValue: '18632',
