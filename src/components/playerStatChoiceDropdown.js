@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 function PlayerStatChoiceDropdown(props) {
