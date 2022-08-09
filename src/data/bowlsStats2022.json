@@ -480,14 +480,14 @@
       "saturday leeds": { "games": 11, "wins": 5, "aggDiff": 19 }
     },
     "andy w": {
-      "totalPoints": 143,
-      "totalAgg": 691,
-      "totalPointsAgainst": 91,
-      "totalAggAgainst": 483,
+      "totalPoints": 144,
+      "totalAgg": 696,
+      "totalPointsAgainst": 96,
+      "totalAggAgainst": 504,
       "homeWins": 15,
       "homeLosses": 3,
       "awayWins": 7,
-      "awayLosses": 7,
+      "awayLosses": 8,
       "pairWins": 4,
       "pairLosses": 2,
       "pairsPartners": [
@@ -529,6 +529,7 @@
         "stuart reardon & keith sellars",
         "james wright - green & peter simmons",
         "carol matthews",
+        "ralph taylor",
         "susan harrison",
         "mario biancardo",
         "michael stott",
@@ -545,6 +546,7 @@
         "Monday Combined Leeds",
         "Monday Combined Leeds",
         "Monday Combined Leeds",
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -585,12 +587,12 @@
       "losingPairsPartners": ["andy marshall", "andy marshall"],
       "totalHomeAgg": 370,
       "totalHomeAggAgainst": 209,
-      "totalAwayAgg": 258,
-      "totalAwayAggAgainst": 238,
+      "totalAwayAgg": 263,
+      "totalAwayAggAgainst": 259,
       "totalHomePoints": 86,
       "totalHomePointsAgainst": 40,
-      "totalAwayPoints": 57,
-      "totalAwayPointsAgainst": 51,
+      "totalAwayPoints": 58,
+      "totalAwayPointsAgainst": 56,
       "cupWins": 3,
       "cupLosses": 0,
       "beatenTeam": [
@@ -624,6 +626,7 @@
         "New Wortley (Monday Combined Leeds)",
         "Harehills (Monday Combined Leeds)",
         "Horsforth Woodside. (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Churwell Pk (Thursday Vets Leeds)",
         "Pudsey Park A (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
@@ -644,6 +647,7 @@
         "andy w 21 - 10 aubrey coldrey",
         "andy w 21 - 5 frank armitage",
         "andy w 21 - 16 stuart tennant",
+        "andy w 5 - 21 ralph taylor",
         "andy w 18 - 21 susan harrison",
         "andy w 11 - 21 mario biancardo",
         "andy w 21 - 11 malcolm hallas",
@@ -670,7 +674,7 @@
         "andy w 21 - 16 christine glynn"
       ],
       "monday combined leeds": { "games": 7, "wins": 5, "aggDiff": 51 },
-      "tuesday vets leeds": { "games": 4, "wins": 3, "aggDiff": 29 },
+      "tuesday vets leeds": { "games": 5, "wins": 3, "aggDiff": 13 },
       "thursday vets leeds": { "games": 11, "wins": 5, "aggDiff": 34 },
       "saturday leeds": { "games": 13, "wins": 12, "aggDiff": 94 }
     },
@@ -1170,14 +1174,14 @@
       "saturday leeds": { "games": 13, "wins": 9, "aggDiff": 60 }
     },
     "duncan mcphail": {
-      "totalPoints": 61,
-      "totalAgg": 276,
-      "totalPointsAgainst": 31,
-      "totalAggAgainst": 182,
+      "totalPoints": 62,
+      "totalAgg": 284,
+      "totalPointsAgainst": 36,
+      "totalAggAgainst": 203,
       "homeWins": 6,
       "homeLosses": 1,
       "awayWins": 5,
-      "awayLosses": 1,
+      "awayLosses": 2,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -1194,8 +1198,9 @@
         "roy tebbutt",
         "gordon sadler"
       ],
-      "beatenBy": ["brian dowling", "derek dobson", "jim jordan"],
+      "beatenBy": ["brian dowling", "derek dobson", "jim jordan", "jim jordan"],
       "dayPlayed": [
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -1217,12 +1222,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 139,
       "totalHomeAggAgainst": 84,
-      "totalAwayAgg": 125,
-      "totalAwayAggAgainst": 77,
+      "totalAwayAgg": 133,
+      "totalAwayAggAgainst": 98,
       "totalHomePoints": 32,
       "totalHomePointsAgainst": 15,
-      "totalAwayPoints": 29,
-      "totalAwayPointsAgainst": 16,
+      "totalAwayPoints": 30,
+      "totalAwayPointsAgainst": 21,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
@@ -1241,6 +1246,7 @@
       "beatenByTeam": [
         "Horsforth Woodside. (Tuesday Vets Leeds)",
         "Barwick BC (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Harehills Park A (Tuesday Vets Leeds)"
       ],
       "results": [
@@ -1255,12 +1261,13 @@
         "duncan mcphail 12 - 21 jim jordan",
         "duncan mcphail 21 - 15 brenda chaffer",
         "duncan mcphail 21 - 6 marion worrall",
+        "duncan mcphail 8 - 21 jim jordan",
         "duncan mcphail 21 - 16 paul hatch",
         "duncan mcphail 21 - 19 roy tebbutt",
         "duncan mcphail 21 - 9 gordon sadler"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "tuesday vets leeds": { "games": 11, "wins": 8, "aggDiff": 75 },
+      "tuesday vets leeds": { "games": 12, "wins": 8, "aggDiff": 62 },
       "thursday vets leeds": { "games": 3, "wins": 3, "aggDiff": 19 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
@@ -1465,14 +1472,14 @@
       "saturday leeds": { "games": 3, "wins": 2, "aggDiff": -6 }
     },
     "jim moorin": {
-      "totalPoints": 50,
-      "totalAgg": 220,
-      "totalPointsAgainst": 15,
-      "totalAggAgainst": 123,
+      "totalPoints": 53,
+      "totalAgg": 237,
+      "totalPointsAgainst": 20,
+      "totalAggAgainst": 144,
       "homeWins": 6,
       "homeLosses": 0,
       "awayWins": 4,
-      "awayLosses": 0,
+      "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -1488,8 +1495,9 @@
         "brian dowling",
         "gordon sadler"
       ],
-      "beatenBy": ["roger birdsall"],
+      "beatenBy": ["roger birdsall", "paul lawson"],
       "dayPlayed": [
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -1508,12 +1516,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 126,
       "totalHomeAggAgainst": 58,
-      "totalAwayAgg": 84,
-      "totalAwayAggAgainst": 44,
+      "totalAwayAgg": 101,
+      "totalAwayAggAgainst": 65,
       "totalHomePoints": 30,
       "totalHomePointsAgainst": 8,
-      "totalAwayPoints": 20,
-      "totalAwayPointsAgainst": 7,
+      "totalAwayPoints": 23,
+      "totalAwayPointsAgainst": 12,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
@@ -1528,7 +1536,10 @@
         "Horsforth Woodside. (Tuesday Vets Leeds)",
         "New Armley (Tuesday Vets Leeds)"
       ],
-      "beatenByTeam": ["Harehills Park A (Tuesday Vets Leeds)"],
+      "beatenByTeam": [
+        "Harehills Park A (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)"
+      ],
       "results": [
         "jim moorin 21 - 8 colin davison",
         "jim moorin 21 - 4 cedric briggs",
@@ -1540,10 +1551,11 @@
         "jim moorin 21 - 14 tony morris",
         "jim moorin 10 - 21 roger birdsall",
         "jim moorin 21 - 3 brian dowling",
-        "jim moorin 21 - 12 gordon sadler"
+        "jim moorin 21 - 12 gordon sadler",
+        "jim moorin 17 - 21 paul lawson"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "tuesday vets leeds": { "games": 11, "wins": 10, "aggDiff": 97 },
+      "tuesday vets leeds": { "games": 12, "wins": 10, "aggDiff": 93 },
       "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
@@ -1778,14 +1790,14 @@
       "saturday leeds": { "games": 10, "wins": 8, "aggDiff": 78 }
     },
     "mario biancardo": {
-      "totalPoints": 115,
-      "totalAgg": 514,
-      "totalPointsAgainst": 55,
-      "totalAggAgainst": 309,
+      "totalPoints": 118,
+      "totalAgg": 531,
+      "totalPointsAgainst": 60,
+      "totalAggAgainst": 330,
       "homeWins": 12,
       "homeLosses": 1,
       "awayWins": 9,
-      "awayLosses": 3,
+      "awayLosses": 4,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -1817,7 +1829,8 @@
         "jack williamson",
         "bill robson",
         "john manson",
-        "stuart poulter"
+        "stuart poulter",
+        "brian thompson"
       ],
       "dayPlayed": [
         "Monday Combined Leeds",
@@ -1845,6 +1858,7 @@
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds"
       ],
       "totalPairsAgg": 0,
@@ -1853,12 +1867,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 270,
       "totalHomeAggAgainst": 146,
-      "totalAwayAgg": 226,
-      "totalAwayAggAgainst": 142,
+      "totalAwayAgg": 243,
+      "totalAwayAggAgainst": 163,
       "totalHomePoints": 64,
       "totalHomePointsAgainst": 28,
-      "totalAwayPoints": 51,
-      "totalAwayPointsAgainst": 27,
+      "totalAwayPoints": 54,
+      "totalAwayPointsAgainst": 32,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
@@ -1889,6 +1903,7 @@
         "Crossgates BC (Monday Combined Leeds)",
         "West Royd Park (Tuesday Vets Leeds)",
         "Western Flatts (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Harehills Park A (Tuesday Vets Leeds)"
       ],
       "results": [
@@ -1917,10 +1932,11 @@
         "mario biancardo 21 - 0 archie mccafferty",
         "mario biancardo 18 - 21 stuart poulter",
         "mario biancardo 21 - 6 david hurd",
-        "mario biancardo 21 - 4 keith worrall"
+        "mario biancardo 21 - 4 keith worrall",
+        "mario biancardo 17 - 21 brian thompson"
       ],
       "monday combined leeds": { "games": 15, "wins": 13, "aggDiff": 121 },
-      "tuesday vets leeds": { "games": 11, "wins": 8, "aggDiff": 84 },
+      "tuesday vets leeds": { "games": 12, "wins": 8, "aggDiff": 80 },
       "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
@@ -2014,13 +2030,13 @@
       "saturday leeds": { "games": 12, "wins": 12, "aggDiff": 125 }
     },
     "paul bowes": {
-      "totalPoints": 162,
-      "totalAgg": 791,
-      "totalPointsAgainst": 72,
-      "totalAggAgainst": 415,
+      "totalPoints": 167,
+      "totalAgg": 812,
+      "totalPointsAgainst": 74,
+      "totalAggAgainst": 426,
       "homeWins": 18,
       "homeLosses": 2,
-      "awayWins": 9,
+      "awayWins": 10,
       "awayLosses": 6,
       "pairWins": 5,
       "pairLosses": 3,
@@ -2048,6 +2064,7 @@
         "steve milton",
         "graham hodder",
         "david howard",
+        "stuart poulter",
         "brian ragan",
         "peter richie",
         "malcolm cameron",
@@ -2097,6 +2114,7 @@
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
+        "Tuesday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
@@ -2134,12 +2152,12 @@
       ],
       "totalHomeAgg": 406,
       "totalHomeAggAgainst": 184,
-      "totalAwayAgg": 301,
-      "totalAwayAggAgainst": 203,
+      "totalAwayAgg": 322,
+      "totalAwayAggAgainst": 214,
       "totalHomePoints": 95,
       "totalHomePointsAgainst": 31,
-      "totalAwayPoints": 67,
-      "totalAwayPointsAgainst": 41,
+      "totalAwayPoints": 72,
+      "totalAwayPointsAgainst": 43,
       "cupWins": 4,
       "cupLosses": 0,
       "beatenTeam": [
@@ -2156,6 +2174,7 @@
         "Holbeck Moor (Tuesday Vets Leeds)",
         "Harehills Park A (Tuesday Vets Leeds)",
         "New Armley (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Middleton Community (Thursday Vets Leeds)",
         "New Armley (Thursday Vets Leeds)",
         "Middleton Community (Thursday Vets Leeds)",
@@ -2205,6 +2224,7 @@
         "paul bowes 20 - 21 harvey lockwood",
         "paul bowes 21 - 11 graham hodder",
         "paul bowes 21 - 14 david howard",
+        "paul bowes 21 - 11 stuart poulter",
         "paul bowes 18 - 21 dennis walters",
         "paul bowes 21 - 4 brian ragan",
         "paul bowes 21 - 13 peter richie",
@@ -2227,7 +2247,7 @@
         "paul bowes 21 - 14 gordon monk"
       ],
       "monday combined leeds": { "games": 11, "wins": 7, "aggDiff": 67 },
-      "tuesday vets leeds": { "games": 8, "wins": 6, "aggDiff": 67 },
+      "tuesday vets leeds": { "games": 9, "wins": 7, "aggDiff": 77 },
       "thursday vets leeds": { "games": 7, "wins": 5, "aggDiff": 61 },
       "saturday leeds": { "games": 13, "wins": 13, "aggDiff": 181 }
     },
@@ -2342,13 +2362,13 @@
       "saturday leeds": { "games": 2, "wins": 1, "aggDiff": -1 }
     },
     "shirley biancardo": {
-      "totalPoints": 117,
-      "totalAgg": 526,
-      "totalPointsAgainst": 61,
-      "totalAggAgainst": 344,
+      "totalPoints": 122,
+      "totalAgg": 547,
+      "totalPointsAgainst": 65,
+      "totalAggAgainst": 362,
       "homeWins": 12,
       "homeLosses": 2,
-      "awayWins": 9,
+      "awayWins": 10,
       "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
@@ -2375,7 +2395,8 @@
         "clifford pitts",
         "tony green",
         "graham hey",
-        "carol robinson"
+        "carol robinson",
+        "paul hatch"
       ],
       "beatenBy": [
         "ellis owen",
@@ -2411,6 +2432,7 @@
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds"
       ],
       "totalPairsAgg": 0,
@@ -2419,12 +2441,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 277,
       "totalHomeAggAgainst": 176,
-      "totalAwayAgg": 228,
-      "totalAwayAggAgainst": 151,
+      "totalAwayAgg": 249,
+      "totalAwayAggAgainst": 169,
       "totalHomePoints": 64,
       "totalHomePointsAgainst": 32,
-      "totalAwayPoints": 53,
-      "totalAwayPointsAgainst": 29,
+      "totalAwayPoints": 58,
+      "totalAwayPointsAgainst": 33,
       "cupWins": 1,
       "cupLosses": 0,
       "beatenTeam": [
@@ -2449,7 +2471,8 @@
         "Gildersome (Tuesday Vets Leeds)",
         "Harehills Park A (Tuesday Vets Leeds)",
         "Horsforth Woodside. (Tuesday Vets Leeds)",
-        "New Armley (Tuesday Vets Leeds)"
+        "New Armley (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)"
       ],
       "beatenByTeam": [
         "Rothwell BC (Monday Combined Leeds)",
@@ -2485,22 +2508,23 @@
         "shirley biancardo 21 - 4 clifford pitts",
         "shirley biancardo 21 - 17 tony green",
         "shirley biancardo 21 - 17 graham hey",
-        "shirley biancardo 21 - 10 carol robinson"
+        "shirley biancardo 21 - 10 carol robinson",
+        "shirley biancardo 21 - 18 paul hatch"
       ],
       "monday combined leeds": { "games": 16, "wins": 12, "aggDiff": 97 },
-      "tuesday vets leeds": { "games": 11, "wins": 10, "aggDiff": 85 },
+      "tuesday vets leeds": { "games": 12, "wins": 11, "aggDiff": 88 },
       "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "steve gardner": {
-      "totalPoints": 147,
-      "totalAgg": 667,
-      "totalPointsAgainst": 60,
-      "totalAggAgainst": 383,
+      "totalPoints": 148,
+      "totalAgg": 672,
+      "totalPointsAgainst": 65,
+      "totalAggAgainst": 404,
       "homeWins": 16,
       "homeLosses": 1,
       "awayWins": 12,
-      "awayLosses": 2,
+      "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -2538,6 +2562,7 @@
         "chris boyd",
         "kevin smales",
         "brian thompson",
+        "roger birdsall",
         "jim bootland",
         "joe adams"
       ],
@@ -2545,6 +2570,7 @@
         "Monday Combined Leeds",
         "Monday Combined Leeds",
         "Monday Combined Leeds",
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -2582,12 +2608,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 345,
       "totalHomeAggAgainst": 178,
-      "totalAwayAgg": 283,
-      "totalAwayAggAgainst": 163,
+      "totalAwayAgg": 288,
+      "totalAwayAggAgainst": 184,
       "totalHomePoints": 81,
       "totalHomePointsAgainst": 30,
-      "totalAwayPoints": 66,
-      "totalAwayPointsAgainst": 30,
+      "totalAwayPoints": 67,
+      "totalAwayPointsAgainst": 35,
       "cupWins": 0,
       "cupLosses": 2,
       "beatenTeam": [
@@ -2624,6 +2650,7 @@
         "Barwick BC (Tuesday Vets Leeds)",
         "Gildersome (Tuesday Vets Leeds)",
         "Harehills Park A (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Cross Flatts Pk (Thursday Vets Leeds)",
         "Sth Leeds Cons B (Saturday Leeds)"
       ],
@@ -2641,6 +2668,7 @@
         "steve gardner 20 - 21 brian thompson",
         "steve gardner 21 - 7 ian tindal",
         "steve gardner 21 - 13 hugh callard",
+        "steve gardner 5 - 21 roger birdsall",
         "steve gardner 21 - 6 glen scott",
         "steve gardner 21 - 13 mick hall",
         "steve gardner 21 - 3 keith worrall",
@@ -2663,18 +2691,18 @@
         "steve gardner 21 - 6 hazel marshall"
       ],
       "monday combined leeds": { "games": 3, "wins": 3, "aggDiff": 27 },
-      "tuesday vets leeds": { "games": 10, "wins": 7, "aggDiff": 44 },
+      "tuesday vets leeds": { "games": 11, "wins": 7, "aggDiff": 28 },
       "thursday vets leeds": { "games": 9, "wins": 8, "aggDiff": 98 },
       "saturday leeds": { "games": 11, "wins": 10, "aggDiff": 115 }
     },
     "stewart watson": {
-      "totalPoints": 54,
-      "totalAgg": 237,
-      "totalPointsAgainst": 23,
-      "totalAggAgainst": 145,
+      "totalPoints": 59,
+      "totalAgg": 258,
+      "totalPointsAgainst": 26,
+      "totalAggAgainst": 161,
       "homeWins": 5,
       "homeLosses": 1,
-      "awayWins": 5,
+      "awayWins": 6,
       "awayLosses": 0,
       "pairWins": 0,
       "pairLosses": 0,
@@ -2689,10 +2717,12 @@
         "david rawson",
         "ray rundle",
         "len robinson",
+        "tony green",
         "brian stevens"
       ],
       "beatenBy": ["paul hatch", "paul hatch"],
       "dayPlayed": [
+        "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -2712,12 +2742,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 125,
       "totalHomeAggAgainst": 80,
-      "totalAwayAgg": 105,
-      "totalAwayAggAgainst": 44,
+      "totalAwayAgg": 126,
+      "totalAwayAggAgainst": 60,
       "totalHomePoints": 29,
       "totalHomePointsAgainst": 15,
-      "totalAwayPoints": 25,
-      "totalAwayPointsAgainst": 8,
+      "totalAwayPoints": 30,
+      "totalAwayPointsAgainst": 11,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
@@ -2730,6 +2760,7 @@
         "Gildersome (Tuesday Vets Leeds)",
         "Horsforth Woodside. (Tuesday Vets Leeds)",
         "New Armley (Tuesday Vets Leeds)",
+        "Harehills Park A (Tuesday Vets Leeds)",
         "Pudsey Park A (Thursday Vets Leeds)"
       ],
       "beatenByTeam": [
@@ -2748,10 +2779,11 @@
         "stewart watson 7 - 21 paul hatch",
         "stewart watson 21 - 4 ray rundle",
         "stewart watson 21 - 9 len robinson",
+        "stewart watson 21 - 16 tony green",
         "stewart watson 21 - 2 brian stevens"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "tuesday vets leeds": { "games": 11, "wins": 9, "aggDiff": 73 },
+      "tuesday vets leeds": { "games": 12, "wins": 10, "aggDiff": 78 },
       "thursday vets leeds": { "games": 1, "wins": 1, "aggDiff": 19 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
@@ -2859,16 +2891,16 @@
       "day": "Tuesday Vets Leeds",
       "awayWins": 4,
       "homeWins": 6,
-      "awayLosses": 0,
+      "awayLosses": 1,
       "homeLosses": 0,
       "homeDraws": 0,
       "awayDraws": 0,
       "cupWins": 0,
       "cupLosses": 1,
-      "agg": 1751,
-      "totalPoints": 378,
-      "opponentAgg": 1083,
-      "opponentTotalPoints": 173,
+      "agg": 1866,
+      "totalPoints": 402,
+      "opponentAgg": 1233,
+      "opponentTotalPoints": 207,
       "beaten": [
         "Horsforth Woodside. (away)",
         "New Armley (away)",
@@ -2881,9 +2913,9 @@
         "Horsforth Woodside. (home)",
         "New Armley (home)"
       ],
-      "beatenBy": ["Harehills Park A (cup)"],
+      "beatenBy": ["Harehills Park A (cup)", "Harehills Park A (away)"],
       "drawnWith": [],
-      "leaguePosition": 1,
+      "leaguePosition": 2,
       "results": [
         "Horsforth Woodside. 21 - 38 Stanningley (Tue 26th Apr (1:30))",
         "New Armley 13 - 40 Stanningley (Tue 10th May (1:30))",
@@ -2895,7 +2927,8 @@
         "Gildersome 15 - 37 Stanningley (Tue 21st Jun (1:30))",
         "Harehills Park A 145 - 130 Stanningley (Tue 5th Jul (1:30))",
         "Stanningley 40 - 11 Horsforth Woodside. (Tue 12th Jul (1:30))",
-        "Stanningley 40 - 11 New Armley (Tue 26th Jul (1:30))"
+        "Stanningley 40 - 11 New Armley (Tue 26th Jul (1:30))",
+        "Harehills Park A 34 - 24 Stanningley (Tue 9th Aug (1:30))"
       ]
     },
     {
