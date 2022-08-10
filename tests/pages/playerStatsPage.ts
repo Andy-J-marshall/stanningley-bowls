@@ -57,10 +57,11 @@ export class PlayerStatsPage {
   }
 
   async searchForPlayer(playerName: string) {
-    if (playerName !== '') {
-      await this.searchBar.type(playerName);
-      await this.playerListInDropdown.click();
-    }
+    await this.searchBar.fill(playerName);
+    await this.playerListInDropdown.click();
+  }
+
+  async clickSearch() {
     await this.searchButton.click();
   }
 

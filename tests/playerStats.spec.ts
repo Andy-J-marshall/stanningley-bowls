@@ -1,10 +1,8 @@
 import { test } from '@playwright/test';
-import bowlsStats from '../src/data/bowlsStats2022.json'
+import bowlsStats from '../src/data/bowlsStats2022.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
-const totalNumberOfPlayers = Object.keys(
-  bowlsStats.playerResults
-).length;
+const totalNumberOfPlayers = Object.keys(bowlsStats.playerResults).length;
 let playerStatsPage: PlayerStatsPage;
 
 test.beforeEach(async ({ page }) => {
@@ -68,6 +66,7 @@ test(`Stats search bar can show all player stats`, async () => {
   await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
   await playerStatsPage.searchForPlayer('Alyssa Randell');
   await playerStatsPage.checkNumberOfPlayersReturned(1);
-  await playerStatsPage.searchForPlayer('');
+  await playerStatsPage.clickSearch();
+  await playerStatsPage.clickSearch();
   await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });

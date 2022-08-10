@@ -1,5 +1,5 @@
-import React, { useState, Fragment, useEffect } from 'react';
-import { ListGroup, Form, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { ListGroup, Form, Button, Spinner } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import Player from './players';
 import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
@@ -23,6 +23,8 @@ function PlayerStats(props) {
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const defaultDropDownText = 'Stanningley Stats';
     const [dropDownText, setDropDownText] = useState(defaultDropDownText);
+    const [playerFound, setPlayerFound] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
@@ -46,39 +48,61 @@ function PlayerStats(props) {
         }
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        setValue(['']);
+    function searchForPlayer(searchedName) {
         setShowStatSelectionDropdown(false);
         setShowStatSummary(false);
         setStatsToUse(playerResults);
         setDropDownText(defaultDropDownText);
-        const searchedName = event.target[0].value.toLowerCase().trim();
         setSearchedPlayerName(searchedName);
 
-        if (searchedName && !searchedName.includes('show all')) {
+        const validPlayer =
+            searchedName && playerNameArray.includes(searchedName.toUpperCase())
+                ? true
+                : false;
+        if (validPlayer && !searchedName.includes('show all')) {
+            setPlayerFound(true);
             const stanDays = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
-            let anyStanDays = false;
+            let anyTeamDays = false;
             daysPlayed.forEach((day) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
                 if (!stanDays.includes(formattedDay)) {
                     setShowStatSelectionDropdown(true);
                 }
                 if (stanDays.includes(formattedDay)) {
-                    anyStanDays = true;
+                    anyTeamDays = true;
                 }
             });
-            if (!anyStanDays) {
+            if (!anyTeamDays) {
                 setStatsToUse(combinedPlayerResults);
                 setShowStatSummary(true);
                 setShowStatSelectionDropdown(false);
             }
+        } else {
+            setPlayerFound(false);
         }
+    }
+
+    const handleSubmit = async (event) => {
+        setLoading(true);
+        event.preventDefault();
+        const searchedName = event.target[0].value.toLowerCase().trim();
+        setValue(['']);
+        await delay(600);
+        searchForPlayer(searchedName);
+        setLoading(false);
     };
 
-    const handleChange = (selected) => {
+    const handleChange = async (selected) => {
         setValue(selected);
+        const searchedPlayerName = selected[0];
+        if (searchedPlayerName) {
+            setValue([searchedPlayerName]);
+            setLoading(true);
+            await delay(600);
+            searchForPlayer(searchedPlayerName.toLowerCase().trim());
+        }
+        setLoading(false);
     };
 
     function showPlayerStats(index, player, playerName) {
@@ -94,6 +118,8 @@ function PlayerStats(props) {
         );
     }
 
+    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
@@ -102,26 +128,30 @@ function PlayerStats(props) {
                 className="center"
                 onSubmit={handleSubmit}
             >
-                <Fragment>
-                    <Form.Group className="mb-3">
-                        <Typeahead
-                            id="player-search"
-                            placeholder="Player..."
-                            onChange={handleChange}
-                            options={['SHOW ALL'].concat(playerNameArray)}
-                            selected={value}
-                            size="lg"
-                        />
-                    </Form.Group>
-                </Fragment>
+                <Form.Group className="mb-3">
+                    <Typeahead
+                        id="player-search"
+                        placeholder="Player..."
+                        onChange={handleChange}
+                        options={['SHOW ALL'].concat(playerNameArray)}
+                        selected={value}
+                        size="lg"
+                    />
+                </Form.Group>
                 <Button variant="light" type="submit">
                     Search
                 </Button>
             </Form>
             <br />
 
+            {loading && (
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            )}
+
             {/* Shows all players */}
-            {(!searchedPlayerName ||
+            {((!loading && !searchedPlayerName) ||
                 searchedPlayerName.toLowerCase() === 'show all') && (
                 <ListGroup>
                     {keys.map((p, index) => {
@@ -134,7 +164,7 @@ function PlayerStats(props) {
             )}
 
             {/* Only shows searched for player */}
-            {searchedPlayerName && (
+            {!loading && searchedPlayerName && (
                 <ListGroup>
                     {showStatSelectionDropdown && (
                         <PlayerStatChoiceDropdown
@@ -155,6 +185,7 @@ function PlayerStats(props) {
                     })}
                 </ListGroup>
             )}
+            {!loading && searchedPlayerName && !playerFound && <h2 style={{padding: '1rem 0 4rem 0'}}>Player not found</h2>}
         </div>
     );
 }

@@ -168,8 +168,8 @@ function Players(props) {
             <div>
                 {playedForOtherTeam && !showStatSummary && (
                     <p style={{ fontSize: '15px' }}>
-                        (To see stats whilst playing for non-Stanningley teams,
-                        select All Team Stats in the above drop down)
+                        (Select All Team Stats in the above drop down to view
+                        stats whilst playing for non-Stanningley teams)
                     </p>
                 )}
             </div>
