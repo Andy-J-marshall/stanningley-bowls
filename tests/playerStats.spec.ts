@@ -2,7 +2,6 @@ import { test } from '@playwright/test';
 import bowlsStats from '../src/data/bowlsStats2022.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
-const totalNumberOfPlayers = Object.keys(bowlsStats.playerResults).length;
 let playerStatsPage: PlayerStatsPage;
 
 test.beforeEach(async ({ page }) => {
@@ -18,18 +17,13 @@ const players: Array<string> = [
   'Alyssa Randell',
   'Ali',
   'Neil Porter',
-  'Clifford Brogie',
 ];
 for (const player of players) {
-  test(`Stats search bar can return ${player} stats`, async () => {
+  test(`Summary of player's team stats are correct for ${player}`, async () => {
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkNumberOfPlayersReturned(1);
     await playerStatsPage.checkPlayerName(player);
-  });
-
-  test(`Summary of player stats are correct for ${player}`, async () => {
-    await playerStatsPage.searchForPlayer(player);
-    await playerStatsPage.checkAccordionHeadersExist();
+    await playerStatsPage.checkTeamAccordionHeadersExist();
     const {
       totalAgg,
       totalAggAgainst,
@@ -53,20 +47,3 @@ for (const player of players) {
     await playerStatsPage.validateSummaryStats(stats);
   });
 }
-
-test('All players appear by default', async () => {
-  await playerStatsPage.checkStatsDropdownExists(false);
-  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
-});
-
-test(`Stats search bar can show all player stats`, async () => {
-  await playerStatsPage.searchForPlayer('Donald Shaw');
-  await playerStatsPage.checkNumberOfPlayersReturned(1);
-  await playerStatsPage.searchForPlayer('Show All');
-  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
-  await playerStatsPage.searchForPlayer('Alyssa Randell');
-  await playerStatsPage.checkNumberOfPlayersReturned(1);
-  await playerStatsPage.clickSearch();
-  await playerStatsPage.clickSearch();
-  await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
-});

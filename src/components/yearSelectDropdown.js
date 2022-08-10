@@ -15,12 +15,12 @@ function YearSelectDropdown(props) {
     }
 
     return (
-        <div id="yearSelectDropDown">
+        <div>
             {yearsToDisplay > 1 && (
                 <DropdownButton
                     variant="light"
                     onSelect={changeStatsYear}
-                    id="yearSelectDropDown-button"
+                    id="year-select-dropdown-button"
                     title={year + ' Stats'}
                     style={{
                         display: 'flex',

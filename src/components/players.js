@@ -165,7 +165,7 @@ function Players(props) {
 
     function showStatsAdvice() {
         return (
-            <div>
+            <div id="stats-advice">
                 {playedForOtherTeam && !showStatSummary && (
                     <p style={{ fontSize: '15px' }}>
                         (Select All Team Stats in the above drop down to view

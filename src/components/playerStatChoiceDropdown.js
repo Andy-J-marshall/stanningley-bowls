@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
+import config from '../config';
 
 function PlayerStatChoiceDropdown(props) {
     const statsCallback = props.statsCallback;
@@ -17,11 +18,11 @@ function PlayerStatChoiceDropdown(props) {
     }
 
     return (
-        <div id="allStatsSelectDropDown">
+        <div>
             <DropdownButton
                 variant="light"
                 onSelect={toggleAllStats}
-                id="allStatsSelectDropDown-button"
+                id="all-stats-select-dropdown-button"
                 title={dropDownText}
                 style={{
                     display: 'flex',
@@ -29,12 +30,14 @@ function PlayerStatChoiceDropdown(props) {
                 }}
             >
                 <Dropdown.Item
+                    id="team-stats-selector"
                     style={{ color: 'black', backgroundColor: 'white' }}
-                    eventKey="Stanningley Stats"
+                    eventKey={config.teamNames.short + 'Stats'}
                 >
-                    Stanningley Stats
+                    {config.teamNames.short} Stats
                 </Dropdown.Item>
                 <Dropdown.Item
+                    id="all-stats-selector"
                     style={{ color: 'black', backgroundColor: 'white' }}
                     eventKey="All Team Stats"
                 >

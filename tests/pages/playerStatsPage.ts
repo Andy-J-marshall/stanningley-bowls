@@ -22,11 +22,16 @@ export class PlayerStatsPage {
   readonly aggAccordionButton: Locator;
   readonly resultsAccordionButton: Locator;
   readonly opponentsAccordionButton: Locator;
+  readonly accordionButtons: Locator;
   readonly totalGamesPlayed: Locator;
   readonly totalWins: Locator;
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
   readonly teamDropDown: Locator;
+  readonly teamStatsSelect: Locator;
+  readonly allStatsSelect: Locator;
+  readonly statsAdviceMessage: Locator;
+  readonly yearSelectDropdown: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -45,11 +50,16 @@ export class PlayerStatsPage {
     this.aggAccordionButton = page.locator('#stats-aggregate');
     this.resultsAccordionButton = page.locator('#stats-results');
     this.opponentsAccordionButton = page.locator('#stats-opponents');
+    this.accordionButtons = page.locator('.accordion-button');
     this.totalGamesPlayed = page.locator('#totalGamesPlayed');
     this.totalWins = page.locator('#totalWins');
     this.totalLosses = page.locator('#totalLosses');
     this.totalAverage = page.locator('#totalAverage');
-    this.teamDropDown = page.locator('#allStatsSelectDropDown');
+    this.teamDropDown = page.locator('#all-stats-select-dropdown-button');
+    this.teamStatsSelect = page.locator('#team-stats-selector');
+    this.allStatsSelect = page.locator('#all-stats-selector');
+    this.statsAdviceMessage = page.locator('#stats-advice');
+    this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
   }
 
   async goto() {
@@ -73,13 +83,20 @@ export class PlayerStatsPage {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
   }
 
-  async checkStatsDropdownExists(expected: boolean) {
-    if (expected) {
-      await expect(this.teamDropDown).toBeNull();
-    }
+  async checkStatsDropdownNotExists() {
+    await expect(this.teamDropDown).not.toBeVisible();
   }
 
-  async checkAccordionHeadersExist() {
+  async checkStatsDropdownExists() {
+    await expect(this.teamDropDown).toBeVisible();
+  }
+
+  async checkYearDropdownNotExists() {
+    await expect(this.yearSelectDropdown).not.toBeVisible();
+  }
+
+  async checkTeamAccordionHeadersExist() {
+    await expect(this.accordionButtons).toHaveCount(8);
     await expect(this.summaryAccordionButton).toHaveText('SUMMARY');
     await expect(this.gamesAccordionButton).toHaveText('GAMES PLAYED');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
@@ -88,6 +105,23 @@ export class PlayerStatsPage {
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
+  }
+
+  async checkOnlyBasicAccordionHeadersExist() {
+    await expect(this.accordionButtons).toHaveCount(2);
+    await expect(this.summaryAccordionButton).toHaveText('SUMMARY');
+    await expect(this.resultsAccordionButton).toHaveText('RESULTS');
+  }
+
+  async selectTeamStatsDropdown(option: string) {
+    await this.teamDropDown.click();
+    if (option.toUpperCase() === 'ALL TEAM STATS') {
+      await this.allStatsSelect.click();
+    }
+    if (option.toUpperCase() === 'STANNINGLEY STATS') {
+      await this.teamStatsSelect.click();
+      await this.statsAdviceMessage.isVisible();
+    }
   }
 
   async validateSummaryStats(playerStats: PlayerStats) {
