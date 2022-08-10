@@ -88,7 +88,7 @@ function PlayerStats(props) {
         event.preventDefault();
         const searchedName = event.target[0].value.toLowerCase().trim();
         setValue(['']);
-        await delay(600);
+        await delay(250);
         searchForPlayer(searchedName);
         setLoading(false);
     };
@@ -99,7 +99,7 @@ function PlayerStats(props) {
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
             setLoading(true);
-            await delay(600);
+            await delay(500);
             searchForPlayer(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);
@@ -185,7 +185,9 @@ function PlayerStats(props) {
                     })}
                 </ListGroup>
             )}
-            {!loading && searchedPlayerName && !playerFound && <h2 style={{padding: '1rem 0 4rem 0'}}>Player not found</h2>}
+            {!loading && searchedPlayerName && !playerFound && (
+                <h2 style={{ padding: '1rem 0 4rem 0' }}>Player not found</h2>
+            )}
         </div>
     );
 }
