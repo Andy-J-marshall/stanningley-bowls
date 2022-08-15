@@ -29,8 +29,14 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  webServer: {
+    command: 'npm run start',
+    url: 'http://localhost:3000',
+    timeout: 60 * 1000,
+    // TODO add back in? reuseExistingServer: !process.env.CI,
+  },
   use: {
-    baseURL: 'https://stanningleybowlsclub.co.uk',
+    baseURL: process.env.CI ? 'https://stanningleybowlsclub.co.uk' : 'http://localhost:3000',
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
 
