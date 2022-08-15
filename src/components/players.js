@@ -770,7 +770,6 @@ function Players(props) {
                                 )}
                             </Accordion.Body>
                         </Accordion.Item>
-                        {/* TODO OPPONENTS NOT THERE FOR ALL TEAM STATS */}
                         <Accordion.Item eventKey="6">
                             <Accordion.Header id="stats-opponents">
                                 OPPONENTS
