@@ -108,7 +108,7 @@ export class PlayerStatsPage {
   }
 
   async checkOnlyBasicAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(2);
+    await expect(this.accordionButtons).toHaveCount(7);
     await expect(this.summaryAccordionButton).toHaveText('SUMMARY');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
@@ -135,5 +135,7 @@ export class PlayerStatsPage {
     await expect(this.totalAverage).toHaveText(
       `Average = ${playerStats.totalAverage.toFixed(2)}`
     );
+    expect(playerStats.totalAverage).toBeGreaterThan(-22);
+    expect(playerStats.totalAverage).toBeLessThan(22);
   }
 }

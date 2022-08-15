@@ -88,7 +88,7 @@ function PlayerStats(props) {
         event.preventDefault();
         const searchedName = event.target[0].value.toLowerCase().trim();
         setValue(['']);
-        await delay(250);
+        await delay(200);
         searchForPlayer(searchedName);
         setLoading(false);
     };
@@ -99,7 +99,7 @@ function PlayerStats(props) {
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
             setLoading(true);
-            await delay(500);
+            await delay(400);
             searchForPlayer(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);

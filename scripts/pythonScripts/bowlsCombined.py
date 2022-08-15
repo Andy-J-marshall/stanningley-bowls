@@ -166,10 +166,10 @@ for league in leaguesDays:
 
                     pairsPartner = deduplicateNames(pairsPartner)
                     pairsPartner = anonymiseNames(pairsPartner)
-                    secondOpponent = anonymiseNames(secondOpponent)
                     playerName = deduplicateNames(playerName)
                     playerName = anonymiseNames(playerName)
                     opponentsName = anonymiseNames(opponentsName)
+                    secondOpponent = anonymiseNames(secondOpponent)
 
                     # Store player stats
                     playerNameForResult = playerName
@@ -185,6 +185,10 @@ for league in leaguesDays:
 
                     # Wins
                     if aggregate > opponentAggregate:
+                        playerResults[playerName]['beatenOpponents'].append(
+                            opponentsName)
+                        playerResults[playerName]['beatenTeam'].append(
+                            opponentTeam + ' (' + league + ')')
                         if homeGame:
                             playerResults[playerName]['homeWins'] += 1
                         if awayGame:
@@ -193,6 +197,10 @@ for league in leaguesDays:
                             playerResults[playerName]['cupWins'] += 1
                     # Losses
                     else:
+                        playerResults[playerName]['beatenBy'].append(
+                            opponentsName)
+                        playerResults[playerName]['beatenByTeam'].append(
+                            opponentTeam + ' (' + league + ')')
                         if homeGame:
                             playerResults[playerName]['homeLosses'] += 1
                         if awayGame:
@@ -203,6 +211,12 @@ for league in leaguesDays:
                     # Averages
                     playerResults[playerName]['totalAgg'] += aggregate
                     playerResults[playerName]['totalAggAgainst'] += opponentAggregate
+                    if homeGame:
+                        playerResults[playerName]['totalHomeAgg'] += aggregate
+                        playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
+                    if awayGame:
+                        playerResults[playerName]['totalAwayAgg'] += aggregate
+                        playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
                     playerResults[playerName]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 

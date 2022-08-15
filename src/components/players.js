@@ -176,9 +176,9 @@ function Players(props) {
         );
     }
 
-    const gameOrGames = gamesPlayed > 0 ? 'games' : 'game';
-    const winOrWins = totalWins > 0 ? 'wins' : 'win';
-    const lossOrLosses = totalLosses > 0 ? 'losses' : 'loss';
+    const gameOrGames = gamesPlayed === 1 ? 'game' : 'games';
+    const winOrWins = totalWins === 1 ? 'win' : 'wins';
+    const lossOrLosses = totalLosses === 1 ? 'loss' : 'losses';
     return (
         <div>
             <ListGroup.Item>
@@ -208,7 +208,7 @@ function Players(props) {
                                     <p id="totalLosses">
                                         Losses = {totalLosses}
                                     </p>
-                                    {average >= -21 && (
+                                    {average > -22 && average < 22 && (
                                         <p id="totalAverage">
                                             Average = {average.toFixed(2)}
                                         </p>
@@ -244,20 +244,30 @@ function Players(props) {
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
-                        {/* We only show the full stats when playing for Stanningley teams */}
-                        {!showStatSummary && (
-                            <div>
-                                <Accordion.Item eventKey="1">
-                                    <Accordion.Header id="stats-games">
-                                        GAMES PLAYED
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        <h3>TOTAL</h3>
-                                        <p>
-                                            {gamesPlayed} total {gameOrGames} (
-                                            {singlesGames} singles, {pairsGames}{' '}
-                                            pairs)
-                                        </p>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header id="stats-games">
+                                GAMES PLAYED
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <h3>TOTAL</h3>
+                                <p>
+                                    {gamesPlayed} total {gameOrGames} (
+                                    {singlesGames} singles, {pairsGames} pairs)
+                                </p>
+                                <p>
+                                    {homeGamesPlayed} home{' '}
+                                    {homeGamesPlayed === 1 ? 'game' : 'games'}
+                                </p>
+                                <p>
+                                    {awayGamesPlayed} away{' '}
+                                    {awayGamesPlayed === 1 ? 'game' : 'games'}
+                                </p>
+                                <p>
+                                    {cupGamesPlayed} cup{' '}
+                                    {cupGamesPlayed === 1 ? 'game' : 'games'}
+                                </p>
+                                {!showStatSummary && (
+                                    <div>
                                         <h3>TEAMS</h3>
                                         {daysPlayedCount.map((day, key) => {
                                             return (
@@ -267,26 +277,29 @@ function Players(props) {
                                                 </p>
                                             );
                                         })}
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="2">
-                                    <Accordion.Header id="stats-wl">
-                                        WINS & LOSSES
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        {totalWins > 0 && (
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header id="stats-wl">
+                                WINS & LOSSES
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                {totalWins > 0 && (
+                                    <div>
+                                        <h3>WINS</h3>
+                                        <p>
+                                            {totalWins} total {winOrWins} (
+                                            {homeWins} home, {awayWins} away,{' '}
+                                            {cupWins} cup)
+                                        </p>
+                                        <p>
+                                            {totalWins - pairWins} singles,{' '}
+                                            {pairWins} pairs
+                                        </p>
+                                        {!showStatSummary && (
                                             <div>
-                                                <h3>WINS</h3>
-                                                <p>
-                                                    {totalWins} total{' '}
-                                                    {winOrWins} ({homeWins}{' '}
-                                                    home, {awayWins} away,{' '}
-                                                    {cupWins} cup)
-                                                </p>
-                                                <p>
-                                                    {totalWins - pairWins}{' '}
-                                                    singles, {pairWins} pairs
-                                                </p>
                                                 {mondayGames > 0 && (
                                                     <p>
                                                         {mondayWins} on Monday
@@ -324,25 +337,67 @@ function Players(props) {
                                                 )}
                                             </div>
                                         )}
-                                        {totalLosses > 0 && (
+                                        <h3>WIN PERCENTAGES</h3>
+                                        <p>
+                                            Total win percentage ={' '}
+                                            {(
+                                                (totalWins / gamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            %
+                                        </p>
+                                        {homeGamesPlayed > 0 && (
+                                            <p>
+                                                Home win percentage ={' '}
+                                                {(
+                                                    (homeWins /
+                                                        homeGamesPlayed) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        )}
+                                        {awayGamesPlayed > 0 && (
+                                            <p>
+                                                Away win percentage ={' '}
+                                                {(
+                                                    (awayWins /
+                                                        awayGamesPlayed) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        )}
+                                        {cupGamesPlayed > 0 && (
+                                            <p>
+                                                Cup win percentage ={' '}
+                                                {(
+                                                    (cupWins / cupGamesPlayed) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        )}
+                                    </div>
+                                )}
+                                {totalLosses > 0 && (
+                                    <div>
+                                        <h3>LOSSES</h3>
+                                        <p>
+                                            {totalLosses} total {lossOrLosses} (
+                                            {homeLosses} home, {awayLosses}{' '}
+                                            away, {cupLosses} cup)
+                                        </p>
+                                        {pairLosses > 0 && (
                                             <div>
-                                                <h3>LOSSES</h3>
                                                 <p>
-                                                    {totalLosses} total{' '}
-                                                    {lossOrLosses} ({homeLosses}{' '}
-                                                    home, {awayLosses} away,{' '}
-                                                    {cupLosses} cup)
+                                                    {totalLosses - pairLosses}{' '}
+                                                    singles, {pairLosses} pairs
                                                 </p>
-                                                {pairLosses > 0 && (
-                                                    <div>
-                                                        <p>
-                                                            {totalLosses -
-                                                                pairLosses}{' '}
-                                                            singles,{' '}
-                                                            {pairLosses} pairs
-                                                        </p>
-                                                    </div>
-                                                )}
+                                            </div>
+                                        )}
+                                        {!showStatSummary && (
+                                            <div>
                                                 {mondayGames > 0 && (
                                                     <p>
                                                         {mondayLosses} on Monday
@@ -380,147 +435,118 @@ function Players(props) {
                                                 )}
                                             </div>
                                         )}
+                                    </div>
+                                )}
 
+                                {pairsGames > 0 && (
+                                    <div>
+                                        {pairsPartners.length > 0 && (
+                                            <div>
+                                                <h3>PAIRS PARTNERS</h3>
+                                                {Object.keys(
+                                                    pairsPartnersCount
+                                                ).map((partner, key) => {
+                                                    return (
+                                                        <p key={key}>
+                                                            {
+                                                                pairsPartnersCount[
+                                                                    partner
+                                                                ].timesPaired
+                                                            }{' '}
+                                                            played with{' '}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
+                                                        </p>
+                                                    );
+                                                })}
+                                                {Object.keys(
+                                                    pairsPartnersCountWins
+                                                ).map((partner, key) => {
+                                                    return (
+                                                        <p key={key}>
+                                                            {
+                                                                pairsPartnersCountWins[
+                                                                    partner
+                                                                ].timesPaired
+                                                            }{' '}
+                                                            won with{' '}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
+                                                        </p>
+                                                    );
+                                                })}
+                                                {Object.keys(
+                                                    pairsPartnersCountLosses
+                                                ).map((partner, key) => {
+                                                    return (
+                                                        <p key={key}>
+                                                            {
+                                                                pairsPartnersCountLosses[
+                                                                    partner
+                                                                ].timesPaired
+                                                            }{' '}
+                                                            lost with{' '}
+                                                            {capitalizeText([
+                                                                partner,
+                                                            ])}
+                                                        </p>
+                                                    );
+                                                })}
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="3">
+                            <Accordion.Header id="stats-average">
+                                AVERAGES
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                {average >= -21 && average < 22 && (
+                                    <div>
+                                        <p>Overall = {average.toFixed(2)}</p>
+                                        {homeAverage > -22 &&
+                                            homeAverage < 22 && (
+                                                <p>
+                                                    Home ={' '}
+                                                    {homeAverage.toFixed(2)}
+                                                </p>
+                                            )}
+                                        {awayAverage > -22 &&
+                                            awayAverage < 22 && (
+                                                <p>
+                                                    Away ={' '}
+                                                    {awayAverage.toFixed(2)}
+                                                </p>
+                                            )}
+                                        {cupAverage > -22 &&
+                                            cupAverage < 22 && (
+                                                <p>
+                                                    Cup ={' '}
+                                                    {cupAverage.toFixed(2)}
+                                                </p>
+                                            )}
                                         {pairsGames > 0 && (
                                             <div>
-                                                {pairsPartners.length > 0 && (
-                                                    <div>
-                                                        <h3>PAIRS PARTNERS</h3>
-                                                        {Object.keys(
-                                                            pairsPartnersCount
-                                                        ).map(
-                                                            (partner, key) => {
-                                                                return (
-                                                                    <p
-                                                                        key={
-                                                                            key
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            pairsPartnersCount[
-                                                                                partner
-                                                                            ]
-                                                                                .timesPaired
-                                                                        }{' '}
-                                                                        played
-                                                                        with{' '}
-                                                                        {capitalizeText(
-                                                                            [
-                                                                                partner,
-                                                                            ]
-                                                                        )}
-                                                                    </p>
-                                                                );
-                                                            }
-                                                        )}
-                                                        {Object.keys(
-                                                            pairsPartnersCountWins
-                                                        ).map(
-                                                            (partner, key) => {
-                                                                return (
-                                                                    <p
-                                                                        key={
-                                                                            key
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            pairsPartnersCountWins[
-                                                                                partner
-                                                                            ]
-                                                                                .timesPaired
-                                                                        }{' '}
-                                                                        won with{' '}
-                                                                        {capitalizeText(
-                                                                            [
-                                                                                partner,
-                                                                            ]
-                                                                        )}
-                                                                    </p>
-                                                                );
-                                                            }
-                                                        )}
-                                                        {Object.keys(
-                                                            pairsPartnersCountLosses
-                                                        ).map(
-                                                            (partner, key) => {
-                                                                return (
-                                                                    <p
-                                                                        key={
-                                                                            key
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            pairsPartnersCountLosses[
-                                                                                partner
-                                                                            ]
-                                                                                .timesPaired
-                                                                        }{' '}
-                                                                        lost
-                                                                        with{' '}
-                                                                        {capitalizeText(
-                                                                            [
-                                                                                partner,
-                                                                            ]
-                                                                        )}
-                                                                    </p>
-                                                                );
-                                                            }
-                                                        )}
-                                                    </div>
+                                                {singlesAvg > -22 && (
+                                                    <p>
+                                                        Singles ={' '}
+                                                        {singlesAvg.toFixed(2)}
+                                                    </p>
+                                                )}
+                                                {pairsAvg > -22 && (
+                                                    <p>
+                                                        Pairs ={' '}
+                                                        {pairsAvg.toFixed(2)}
+                                                    </p>
                                                 )}
                                             </div>
                                         )}
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="3">
-                                    <Accordion.Header id="stats-average">
-                                        AVERAGES
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        {average >= -21 && (
+                                        {!showStatSummary && (
                                             <div>
-                                                <p>
-                                                    Overall ={' '}
-                                                    {average.toFixed(2)}
-                                                </p>
-                                                {homeAverage > -22 && (
-                                                    <p>
-                                                        Home ={' '}
-                                                        {homeAverage.toFixed(2)}
-                                                    </p>
-                                                )}
-                                                {awayAverage > -22 && (
-                                                    <p>
-                                                        Away ={' '}
-                                                        {awayAverage.toFixed(2)}
-                                                    </p>
-                                                )}
-                                                {cupAverage > -22 && (
-                                                    <p>
-                                                        Cup ={' '}
-                                                        {cupAverage.toFixed(2)}
-                                                    </p>
-                                                )}
-                                                {pairsGames > 0 && (
-                                                    <div>
-                                                        {singlesAvg > -22 && (
-                                                            <p>
-                                                                Singles ={' '}
-                                                                {singlesAvg.toFixed(
-                                                                    2
-                                                                )}
-                                                            </p>
-                                                        )}
-                                                        {pairsAvg > -22 && (
-                                                            <p>
-                                                                Pairs ={' '}
-                                                                {pairsAvg.toFixed(
-                                                                    2
-                                                                )}
-                                                            </p>
-                                                        )}
-                                                    </div>
-                                                )}
                                                 {mondayGames > 0 && (
                                                     <p>
                                                         Monday ={' '}
@@ -563,225 +589,195 @@ function Players(props) {
                                                 )}
                                             </div>
                                         )}
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                {totalPoints > 0 && (
-                                    <Accordion.Item eventKey="4">
-                                        <Accordion.Header id="stats-points">
-                                            POINTS
-                                        </Accordion.Header>
-                                        <Accordion.Body>
-                                            {averagePoints >= 0 && (
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        {!showStatSummary && totalPoints > 0 && (
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header id="stats-points">
+                                    POINTS
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                    {averagePoints >= 0 && (
+                                        <div>
+                                            <h3>TOTAL</h3>
+                                            <p>
+                                                Points scored = {totalPoints} /{' '}
+                                                {(gamesPlayed -
+                                                    cupGamesPlayed) *
+                                                    5}
+                                            </p>
+                                            <p>
+                                                Points conceded ={' '}
+                                                {totalPointsAgainst} /{' '}
+                                                {(gamesPlayed -
+                                                    cupGamesPlayed) *
+                                                    5}
+                                            </p>
+                                            <p>
+                                                Average points ={' '}
+                                                {averagePoints.toFixed(2)} / 5
+                                            </p>
+                                            <p>
+                                                Average points conceded ={' '}
+                                                {averagePointsAgainst.toFixed(
+                                                    2
+                                                )}{' '}
+                                                / 5
+                                            </p>
+                                            {homeAveragePoints >= 0 && (
                                                 <div>
-                                                    <h3>TOTAL</h3>
+                                                    <h3>HOME</h3>
                                                     <p>
-                                                        Points scored ={' '}
-                                                        {totalPoints} /{' '}
-                                                        {(gamesPlayed -
-                                                            cupGamesPlayed) *
-                                                            5}
+                                                        Home points scored ={' '}
+                                                        {totalHomePoints} /{' '}
+                                                        {homeGamesPlayed * 5}
                                                     </p>
                                                     <p>
-                                                        Points conceded ={' '}
-                                                        {totalPointsAgainst} /{' '}
-                                                        {(gamesPlayed -
-                                                            cupGamesPlayed) *
-                                                            5}
+                                                        Home points conceded ={' '}
+                                                        {totalHomePointsAgainst}{' '}
+                                                        / {homeGamesPlayed * 5}
                                                     </p>
                                                     <p>
-                                                        Average points ={' '}
-                                                        {averagePoints.toFixed(
+                                                        Average home points ={' '}
+                                                        {homeAveragePoints.toFixed(
                                                             2
                                                         )}{' '}
                                                         / 5
                                                     </p>
                                                     <p>
-                                                        Average points conceded
-                                                        ={' '}
-                                                        {averagePointsAgainst.toFixed(
+                                                        Average home points
+                                                        conceded ={' '}
+                                                        {homeAveragePointsAgainst.toFixed(
                                                             2
                                                         )}{' '}
                                                         / 5
-                                                    </p>
-                                                    {homeAveragePoints >= 0 && (
-                                                        <div>
-                                                            <h3>HOME</h3>
-                                                            <p>
-                                                                Home points
-                                                                scored ={' '}
-                                                                {
-                                                                    totalHomePoints
-                                                                }{' '}
-                                                                /{' '}
-                                                                {homeGamesPlayed *
-                                                                    5}
-                                                            </p>
-                                                            <p>
-                                                                Home points
-                                                                conceded ={' '}
-                                                                {
-                                                                    totalHomePointsAgainst
-                                                                }{' '}
-                                                                /{' '}
-                                                                {homeGamesPlayed *
-                                                                    5}
-                                                            </p>
-                                                            <p>
-                                                                Average home
-                                                                points ={' '}
-                                                                {homeAveragePoints.toFixed(
-                                                                    2
-                                                                )}{' '}
-                                                                / 5
-                                                            </p>
-                                                            <p>
-                                                                Average home
-                                                                points conceded
-                                                                ={' '}
-                                                                {homeAveragePointsAgainst.toFixed(
-                                                                    2
-                                                                )}{' '}
-                                                                / 5
-                                                            </p>
-                                                        </div>
-                                                    )}
-                                                    {awayAveragePoints >= 0 && (
-                                                        <div>
-                                                            <h3>AWAY</h3>
-                                                            <p>
-                                                                Away points
-                                                                scored ={' '}
-                                                                {
-                                                                    totalAwayPoints
-                                                                }{' '}
-                                                                /{' '}
-                                                                {awayGamesPlayed *
-                                                                    5}
-                                                            </p>
-                                                            <p>
-                                                                Away points
-                                                                conceded ={' '}
-                                                                {
-                                                                    totalAwayPointsAgainst
-                                                                }{' '}
-                                                                /{' '}
-                                                                {awayGamesPlayed *
-                                                                    5}
-                                                            </p>
-                                                            <p>
-                                                                Average away
-                                                                points ={' '}
-                                                                {awayAveragePoints.toFixed(
-                                                                    2
-                                                                )}{' '}
-                                                                / 5
-                                                            </p>
-                                                            <p>
-                                                                Average away
-                                                                points conceded
-                                                                ={' '}
-                                                                {awayAveragePointsAgainst.toFixed(
-                                                                    2
-                                                                )}{' '}
-                                                                / 5
-                                                            </p>
-                                                        </div>
-                                                    )}
-                                                    <br />
-                                                    <p className="footnote">
-                                                        * {config.leagueRules}
                                                     </p>
                                                 </div>
                                             )}
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                )}
-                                <Accordion.Item eventKey="5">
-                                    <Accordion.Header id="stats-aggregate">
-                                        AGGREGATES
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        <h3>TOTAL</h3>
-                                        <p>
-                                            Aggregate scored = {totalAgg} /{' '}
-                                            {gamesPlayed * 21}
-                                        </p>
-                                        <p>
-                                            Aggregate conceded ={' '}
-                                            {totalAggAgainst} /{' '}
-                                            {gamesPlayed * 21}
-                                        </p>
+                                            {awayAveragePoints >= 0 && (
+                                                <div>
+                                                    <h3>AWAY</h3>
+                                                    <p>
+                                                        Away points scored ={' '}
+                                                        {totalAwayPoints} /{' '}
+                                                        {awayGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Away points conceded ={' '}
+                                                        {totalAwayPointsAgainst}{' '}
+                                                        / {awayGamesPlayed * 5}
+                                                    </p>
+                                                    <p>
+                                                        Average away points ={' '}
+                                                        {awayAveragePoints.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                    <p>
+                                                        Average away points
+                                                        conceded ={' '}
+                                                        {awayAveragePointsAgainst.toFixed(
+                                                            2
+                                                        )}{' '}
+                                                        / 5
+                                                    </p>
+                                                </div>
+                                            )}
+                                            <br />
+                                            <p className="footnote">
+                                                * {config.leagueRules}
+                                            </p>
+                                        </div>
+                                    )}
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        )}
+                        <Accordion.Item eventKey="5">
+                            <Accordion.Header id="stats-aggregate">
+                                AGGREGATES
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <h3>TOTAL</h3>
+                                <p>
+                                    Aggregate scored = {totalAgg} /{' '}
+                                    {gamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Aggregate conceded = {totalAggAgainst} /{' '}
+                                    {gamesPlayed * 21}
+                                </p>
 
-                                        <h3>HOME</h3>
+                                <h3>HOME</h3>
+                                <p>
+                                    Home aggregate scored = {totalHomeAgg} /{' '}
+                                    {homeGamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Home aggregate conceded ={' '}
+                                    {totalHomeAggAgainst} /{' '}
+                                    {homeGamesPlayed * 21}
+                                </p>
+                                <h3>AWAY</h3>
+                                <p>
+                                    Away aggregate scored = {totalAwayAgg} /{' '}
+                                    {awayGamesPlayed * 21}
+                                </p>
+                                <p>
+                                    Away aggregate conceded ={' '}
+                                    {totalAwayAggAgainst} /{' '}
+                                    {awayGamesPlayed * 21}
+                                </p>
+                                {cupGamesPlayed > 0 && (
+                                    <div>
+                                        <h3>CUP</h3>
                                         <p>
-                                            Home aggregate scored ={' '}
-                                            {totalHomeAgg} /{' '}
-                                            {homeGamesPlayed * 21}
+                                            Cup aggregate scored = {cupAgg} /{' '}
+                                            {cupGamesPlayed * 21}
                                         </p>
                                         <p>
-                                            Home aggregate conceded ={' '}
-                                            {totalHomeAggAgainst} /{' '}
-                                            {homeGamesPlayed * 21}
+                                            Cup aggregate conceded ={' '}
+                                            {cupAggAgainst} /{' '}
+                                            {cupGamesPlayed * 21}
                                         </p>
-                                        <h3>AWAY</h3>
+                                    </div>
+                                )}
+                                {pairsGames > 0 && (
+                                    <div>
+                                        <h3>SINGLES</h3>
                                         <p>
-                                            Away aggregate scored ={' '}
-                                            {totalAwayAgg} /{' '}
-                                            {awayGamesPlayed * 21}
+                                            Singles aggregate scored ={' '}
+                                            {singlesAgg} / {singlesGames * 21}
                                         </p>
                                         <p>
-                                            Away aggregate conceded ={' '}
-                                            {totalAwayAggAgainst} /{' '}
-                                            {awayGamesPlayed * 21}
+                                            Singles aggregate conceded ={' '}
+                                            {singlesAggAgainst} /{' '}
+                                            {singlesGames * 21}
                                         </p>
-                                        {cupGamesPlayed > 0 && (
-                                            <div>
-                                                <h3>CUP</h3>
-                                                <p>
-                                                    Cup aggregate scored ={' '}
-                                                    {cupAgg} /{' '}
-                                                    {cupGamesPlayed * 21}
-                                                </p>
-                                                <p>
-                                                    Cup aggregate conceded ={' '}
-                                                    {cupAggAgainst} /{' '}
-                                                    {cupGamesPlayed * 21}
-                                                </p>
-                                            </div>
-                                        )}
-                                        {pairsGames > 0 && (
-                                            <div>
-                                                <h3>SINGLES</h3>
-                                                <p>
-                                                    Singles aggregate scored ={' '}
-                                                    {singlesAgg} /{' '}
-                                                    {singlesGames * 21}
-                                                </p>
-                                                <p>
-                                                    Singles aggregate conceded ={' '}
-                                                    {singlesAggAgainst} /{' '}
-                                                    {singlesGames * 21}
-                                                </p>
-                                                <h3>PAIRS</h3>
-                                                <p>
-                                                    Pairs aggregate scored ={' '}
-                                                    {totalPairsAgg} /{' '}
-                                                    {pairsGames * 21}
-                                                </p>
-                                                <p>
-                                                    Pairs aggregate conceded ={' '}
-                                                    {totalPairsAggAgainst} /{' '}
-                                                    {pairsGames * 21}
-                                                </p>
-                                            </div>
-                                        )}
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="6">
-                                    <Accordion.Header id="stats-opponents">
-                                        OPPONENTS
-                                    </Accordion.Header>
-                                    <Accordion.Body>
+                                        <h3>PAIRS</h3>
+                                        <p>
+                                            Pairs aggregate scored ={' '}
+                                            {totalPairsAgg} / {pairsGames * 21}
+                                        </p>
+                                        <p>
+                                            Pairs aggregate conceded ={' '}
+                                            {totalPairsAggAgainst} /{' '}
+                                            {pairsGames * 21}
+                                        </p>
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        {/* TODO OPPONENTS NOT THERE FOR ALL TEAM STATS */}
+                        <Accordion.Item eventKey="6">
+                            <Accordion.Header id="stats-opponents">
+                                OPPONENTS
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                {!showStatSummary && (
+                                    <div>
                                         {beatenTeam.length > 0 && (
                                             <div>
                                                 <h3>TEAMS BEATEN</h3>
@@ -794,22 +790,22 @@ function Players(props) {
                                                 <p>{beatenByTeamString}</p>
                                             </div>
                                         )}
-                                        {beatenOpponents.length > 0 && (
-                                            <div>
-                                                <h3>PLAYERS BEATEN</h3>
-                                                <p>{beatenOpponentsString}</p>
-                                            </div>
-                                        )}
-                                        {beatenBy.length > 0 && (
-                                            <div>
-                                                <h3>PLAYERS LOST TO</h3>
-                                                <p>{beatenByString}</p>
-                                            </div>
-                                        )}
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </div>
-                        )}
+                                    </div>
+                                )}
+                                {beatenOpponents.length > 0 && (
+                                    <div>
+                                        <h3>PLAYERS BEATEN</h3>
+                                        <p>{beatenOpponentsString}</p>
+                                    </div>
+                                )}
+                                {beatenBy.length > 0 && (
+                                    <div>
+                                        <h3>PLAYERS LOST TO</h3>
+                                        <p>{beatenByString}</p>
+                                    </div>
+                                )}
+                            </Accordion.Body>
+                        </Accordion.Item>
                         <Accordion.Item eventKey="7">
                             <Accordion.Header id="stats-results">
                                 RESULTS
