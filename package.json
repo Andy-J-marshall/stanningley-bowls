@@ -5,7 +5,7 @@
     "get-latest-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2022.xlsx",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run tests",
     "deploy": "gh-pages -d build",
     "tests": "npx playwright test"
   },
