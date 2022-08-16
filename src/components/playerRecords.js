@@ -61,36 +61,36 @@ function PlayerRecords(props) {
         const thursdayGames = thursday.games;
         const saturdayGames = saturday.games;
         if (totalGames > minTotalGames) {
-            if (totalGames >= 8) {
-                minTotalGames = 8;
+            if (totalGames >= 10) {
+                minTotalGames = 10;
             } else {
                 minTotalGames = totalGames;
             }
         }
         if (mondayGames > minMonGames) {
-            if (mondayGames >= 7) {
-                minMonGames = 7;
+            if (mondayGames >= 8) {
+                minMonGames = 8;
             } else {
                 minMonGames = mondayGames;
             }
         }
         if (tuesdayGames > minTuesGames) {
-            if (tuesdayGames >= 7) {
-                minTuesGames = 7;
+            if (tuesdayGames >= 8) {
+                minTuesGames = 8;
             } else {
                 minTuesGames = tuesdayGames;
             }
         }
         if (thursdayGames > minThurGames) {
-            if (thursdayGames >= 7) {
-                minThurGames = 7;
+            if (thursdayGames >= 8) {
+                minThurGames = 8;
             } else {
                 minThurGames = thursdayGames;
             }
         }
         if (saturdayGames > minSatGames) {
-            if (saturdayGames >= 7) {
-                minSatGames = 7;
+            if (saturdayGames >= 8) {
+                minSatGames = 8;
             } else {
                 minSatGames = saturdayGames;
             }

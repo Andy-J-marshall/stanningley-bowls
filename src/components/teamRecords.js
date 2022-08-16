@@ -38,8 +38,8 @@ function TeamRecords(props) {
             awayDraws +
             homeDraws;
         if (totalGames > minGames) {
-            if (totalGames >= 8) {
-                minGames = 8;
+            if (totalGames >= 7) {
+                minGames = 7;
             } else {
                 minGames = totalGames;
             }
