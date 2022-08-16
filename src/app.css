@@ -143,3 +143,8 @@ ul {
   float: none;
   margin-bottom: 10px;
 }
+
+.rbt-close {
+  background-color: white;
+  border-style: none;
+}
