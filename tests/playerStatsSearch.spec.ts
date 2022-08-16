@@ -34,6 +34,7 @@ test(`Clicking search with no player returns all stats`, async () => {
   await playerStatsPage.checkStatsDropdownNotExists();
 
   await playerStatsPage.clickSearch();
+  await playerStatsPage.checkNumberOfPlayersReturned(1);
   await playerStatsPage.clickSearch();
   await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
   await playerStatsPage.checkStatsDropdownNotExists();

@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ListGroup, Form, Button, Spinner } from 'react-bootstrap';
-import { ClearButton, Typeahead } from 'react-bootstrap-typeahead';
+import {
+    ClearButton,
+    Typeahead,
+    Menu,
+    MenuItem,
+} from 'react-bootstrap-typeahead';
 import Player from './players';
 import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
 import config from '../config';
@@ -136,6 +141,20 @@ function PlayerStats(props) {
                         options={['SHOW ALL'].concat(playerNameArray)}
                         selected={value}
                         size="lg"
+                        renderMenu={(players, menuProps) => (
+                            <Menu {...menuProps}>
+                                {players.map((result, index) => (
+                                    <MenuItem
+                                        key={index}
+                                        onClick={(e) => e.target.focus()}
+                                        option={result}
+                                        position={index}
+                                    >
+                                        {result}
+                                    </MenuItem>
+                                ))}
+                            </Menu>
+                        )}
                     >
                         {({ onClear, selected }) => (
                             <div className="rbt-aux">

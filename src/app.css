@@ -17,7 +17,7 @@ h4 {
 }
 
 body {
-  background-color: #efefef;
+  background-color: #ffffff;
   margin: auto;
   width: 100%;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 #root {
-  background-color: #efefef;
+  background-color: #ffffff;
   font-size: 19px;
   font-family: 'Alegreya Sans';
   margin: auto;
@@ -93,8 +93,21 @@ ul {
   list-style: inside;
 }
 
-#player-search-form {
-  width: 70%;
+@media (min-width: 100px) {
+  #player-search-form {
+    width: 90%;
+  }
+}
+@media (min-width: 700px) {
+  #player-search-form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #player-search-form {
+    width: 50%;
+  }
 }
 
 #result {
@@ -145,6 +158,6 @@ ul {
 }
 
 .rbt-close {
-  background-color: white;
+  background-color: #ffffff;
   border-style: none;
 }
