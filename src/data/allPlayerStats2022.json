@@ -194,7 +194,7 @@
         "kevin smales & harvey lockwood",
         "helen johnson & s cahill",
         "chris walsh & julie cavalli",
-        "david hudson & stephanie mundell",
+        "dave hudson & stephanie mundell",
         "kevin smales",
         "john harvey",
         "andrew sykes"
@@ -275,7 +275,7 @@
         "alyssa randell & andy marshall 15 - 21 chris walsh & julie cavalli",
         "alyssa randell & andy marshall 21 - 7 mick ross & david rawson",
         "alyssa randell & andy marshall 21 - 13 julie keightley & chris bartlett",
-        "alyssa randell & andy marshall 14 - 21 david hudson & stephanie mundell",
+        "alyssa randell & andy marshall 14 - 21 dave hudson & stephanie mundell",
         "alyssa randell & andy marshall 21 - 6 sharon kerry & jade kerry",
         "alyssa randell & andy marshall 21 - 14 lyn dye & nigel richardson",
         "alyssa randell & andy marshall 21 - 11 pat skelton & ron lavan",
@@ -341,10 +341,10 @@
       ],
       "beatenBy": [
         "keith sellars & stuart reardon",
-        "peter simmons & james wright - green",
+        "peter simmons & james wright-green",
         "s cahill & helen johnson",
         "julie cavalli & chris walsh",
-        "stephanie mundell & david hudson",
+        "stephanie mundell & dave hudson",
         "gordon monk",
         "paul shackleton",
         "terry blakeley",
@@ -437,7 +437,7 @@
         "andy marshall & andy w 21 - 3 julie keightley & oliver delaney",
         "andy marshall & andy w 21 - 15 carol butters & ken stockhill",
         "andy marshall & andy w 17 - 21 keith sellars & stuart reardon",
-        "andy marshall & andy w 12 - 21 peter simmons & james wright - green",
+        "andy marshall & andy w 12 - 21 peter simmons & james wright-green",
         "andy marshall & alyssa randell 21 - 7 nigel richardson & trevor hawkin",
         "andy marshall & alyssa randell 21 - 10 pat skelton & barbara taylor",
         "andy marshall & alyssa randell 13 - 21 s cahill & helen johnson",
@@ -445,7 +445,7 @@
         "andy marshall & alyssa randell 15 - 21 julie cavalli & chris walsh",
         "andy marshall & alyssa randell 21 - 7 david rawson & mick ross",
         "andy marshall & alyssa randell 21 - 13 chris bartlett & julie keightley",
-        "andy marshall & alyssa randell 14 - 21 stephanie mundell & david hudson",
+        "andy marshall & alyssa randell 14 - 21 stephanie mundell & dave hudson",
         "andy marshall & alyssa randell 21 - 6 jade kerry & sharon kerry",
         "andy marshall & alyssa randell 21 - 14 nigel richardson & lyn dye",
         "andy marshall & alyssa randell 21 - 11 ron lavan & pat skelton",
@@ -536,7 +536,7 @@
       ],
       "beatenBy": [
         "stuart reardon & keith sellars",
-        "james wright - green & peter simmons",
+        "james wright-green & peter simmons",
         "carol matthews",
         "ralph taylor",
         "susan harrison",
@@ -687,7 +687,7 @@
         "andy w & andy marshall 21 - 3 oliver delaney & julie keightley",
         "andy w & andy marshall 21 - 15 ken stockhill & carol butters",
         "andy w & andy marshall 17 - 21 stuart reardon & keith sellars",
-        "andy w & andy marshall 12 - 21 james wright - green & peter simmons",
+        "andy w & andy marshall 12 - 21 james wright-green & peter simmons",
         "andy w 21 - 13 ian smith",
         "andy w 21 - 19 dave taylor",
         "andy w 18 - 21 carol matthews",
@@ -3417,7 +3417,7 @@
         "jade kerry & sharon kerry",
         "linda gaunt",
         "cedric ash",
-        "peter simmons & james wright - green",
+        "peter simmons & james wright-green",
         "martin mcgowan",
         "doreen hunter",
         "jane boyd",
@@ -3570,7 +3570,7 @@
         "paul bowes 17 - 21 michael gore",
         "paul bowes 21 - 2 linda gaunt",
         "paul bowes 21 - 9 cedric ash",
-        "paul bowes & vanessa lancaster 21 - 8 peter simmons & james wright - green",
+        "paul bowes & vanessa lancaster 21 - 8 peter simmons & james wright-green",
         "paul bowes & vanessa lancaster 20 - 21 gary dennison & nicola pearson",
         "paul bowes & vanessa lancaster 8 - 21 harry dixon & keith skelton",
         "paul bowes 11 - 21 tony green",
@@ -4716,7 +4716,7 @@
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
-      "beatenOpponents": ["james wright - green & peter simmons"],
+      "beatenOpponents": ["james wright-green & peter simmons"],
       "beatenBy": [
         "nicola pearson & gary dennison",
         "keith skelton & harry dixon"
@@ -4743,7 +4743,7 @@
       "beatenTeam": [" (Monday Combined Leeds)"],
       "beatenByTeam": [" (Monday Combined Leeds)", " (Monday Combined Leeds)"],
       "results": [
-        "vanessa lancaster & paul bowes 21 - 8 james wright - green & peter simmons",
+        "vanessa lancaster & paul bowes 21 - 8 james wright-green & peter simmons",
         "vanessa lancaster & paul bowes 20 - 21 nicola pearson & gary dennison",
         "vanessa lancaster & paul bowes 8 - 21 keith skelton & harry dixon"
       ],
@@ -4772,6 +4772,6 @@
       "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     }
   },
-  "lastUpdated": "16/08/2022",
+  "lastUpdated": "17/08/2022",
   "statsYear": "2022"
 }

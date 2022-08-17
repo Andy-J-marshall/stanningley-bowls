@@ -49,6 +49,13 @@ def anonymiseNames(name):
     return name.lower()
 
 
+def formatName(name):
+    name = name.replace(' - ', '-')
+    name = deduplicateNames(name)
+    name = anonymiseNames(name)
+    return name.lower()
+
+
 def returnListOfPlayerStats(days):
     players.sort()
     playerStats = {}

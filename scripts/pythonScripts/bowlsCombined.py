@@ -11,8 +11,7 @@ leaguesDays = utils.teamDays
 players = utils.players
 duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays)
-deduplicateNames = utils.deduplicateNames
-anonymiseNames = utils.anonymiseNames
+formatName = utils.formatName
 teamsTracking = utils.teamsTracking
 
 # Spreadsheet info
@@ -164,12 +163,10 @@ for league in leaguesDays:
                             secondOpponent = sheet[opponentPlayerNameCol +
                                                    str(row + 1)].value
 
-                    pairsPartner = deduplicateNames(pairsPartner)
-                    pairsPartner = anonymiseNames(pairsPartner)
-                    playerName = deduplicateNames(playerName)
-                    playerName = anonymiseNames(playerName)
-                    opponentsName = anonymiseNames(opponentsName)
-                    secondOpponent = anonymiseNames(secondOpponent)
+                    pairsPartner = formatName(pairsPartner)
+                    playerName = formatName(playerName)
+                    opponentsName = formatName(opponentsName)
+                    secondOpponent = formatName(secondOpponent)
 
                     # Store player stats
                     playerNameForResult = playerName

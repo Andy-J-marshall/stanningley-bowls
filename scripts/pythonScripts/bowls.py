@@ -14,8 +14,7 @@ players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
-anonymiseNames = utils.anonymiseNames
-deduplicateNames = utils.deduplicateNames
+formatName = utils.formatName
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 
@@ -322,12 +321,10 @@ for day in teamDays:
                         opponentTeam = sheet[homeTeamNameCol +
                                              str(row - i)].value
 
-                pairsPartner = deduplicateNames(pairsPartner)
-                pairsPartner = anonymiseNames(pairsPartner)
-                secondOpponent = anonymiseNames(secondOpponent)
-                playerName = deduplicateNames(playerName)
-                playerName = anonymiseNames(playerName)
-                opponentsName = anonymiseNames(opponentsName)
+                pairsPartner = formatName(pairsPartner)
+                secondOpponent = formatName(secondOpponent)
+                playerName = formatName(playerName)
+                opponentsName = formatName(opponentsName)
 
             # Store player stats
                 playerNameForResult = playerName

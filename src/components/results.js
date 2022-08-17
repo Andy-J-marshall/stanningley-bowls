@@ -15,7 +15,7 @@ function Results(props) {
 
     const resultsArray = teamResults.map((team) => {
         const results = team.results.map((result) => {
-            const resultParts = result.split('-');
+            const resultParts = result.split(' - ');
             const homePart = resultParts[0];
             const homeScore = homePart.match(/[0-9]+/g)[0].trim();
             const homeTeam = homePart.split(/[0-9]+/g)[0].trim();

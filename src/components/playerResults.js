@@ -6,7 +6,7 @@ function PlayerResults(props) {
     const results = props.results;
 
     const resultsArray = results.map((result) => {
-        const resultParts = result.split('-');
+        const resultParts = result.split(' - ');
 
         const teamPart = resultParts[0];
         const playerScore = teamPart.match(/[0-9]+/g)[0].trim();
@@ -42,9 +42,7 @@ function PlayerResults(props) {
                         </tr>
                     </thead>
                     {resultsArray.map((result, idx) => {
-                        const player = capitalizeText([
-                            result.team.name,
-                        ]);
+                        const player = capitalizeText([result.team.name]);
                         const teamScore = result.team.score;
                         const opponent = capitalizeText([result.opponent.name]);
                         const opponentScore = result.opponent.score;
