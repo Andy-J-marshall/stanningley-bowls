@@ -1,7 +1,6 @@
 {
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
-  "type": "module",
   "scripts": {
     "get-latest-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2022.xlsx",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
@@ -10,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "tests": "npm run unit-tests && npm run ui-tests",
     "ui-tests": "npx playwright test",
-    "unit-tests": "./node_modules/.bin/mocha ./tests/unit"
+    "unit-tests": "mocha --require ts-node/register tests/unit/**/*.test.ts"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
@@ -25,7 +24,11 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
     "@playwright/test": "^1.24.0",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
   },

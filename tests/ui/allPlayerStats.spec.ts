@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 import allBowlsStats from '../../src/data/allPlayerStats2022.json';
-import { PlayerStatsPage } from '../pages/playerStatsPage';
+import { PlayerStatsPage } from './pages/playerStatsPage';
 
 let playerStatsPage: PlayerStatsPage;
 
