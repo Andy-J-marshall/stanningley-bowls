@@ -160,4 +160,9 @@ ul {
 .rbt-close {
   background-color: #ffffff;
   border-style: none;
+  padding: 0;
+}
+
+.rbt-aux {
+  margin-right: 0.5rem;
 }
