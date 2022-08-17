@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "tests": "npm run unit-tests && npm run ui-tests",
     "ui-tests": "npx playwright test",
-    "unit-tests": "mocha --require ts-node/register tests/unit/**/*.test.ts"
+    "unit-tests": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/unit/**/*.ts'"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",

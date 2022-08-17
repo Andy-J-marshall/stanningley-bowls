@@ -1,12 +1,12 @@
 {
+  "extension": ["ts"],
+  "spec": "tests/unit/*.test.ts",  
   "diff": true,
-  "extension": ["js"],
   "package": "./package.json",
   "reporter": "spec",
   "slow": 1500,
   "timeout": 5000,
   "ui": "bdd",
-  "watch-files": ["*.test.js"],
   "watch-ignore": ["lib/vendor"],
   "exit": true,
   "recursive": true

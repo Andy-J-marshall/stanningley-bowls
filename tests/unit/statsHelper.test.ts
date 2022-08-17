@@ -13,7 +13,7 @@ const stats = {
       homeLosses: 1,
       homeDraws: 1,
       awayDraws: 2,
-      cupWins: 0,
+      cupWins: 1,
       cupLosses: 0,
       agg: 1949,
       totalPoints: 434,
@@ -72,7 +72,7 @@ const stats = {
       awayLosses: 1,
       homeLosses: 0,
       homeDraws: 0,
-      awayDraws: 0,
+      awayDraws: 1,
       cupWins: 0,
       cupLosses: 1,
       agg: 1866,
@@ -160,7 +160,7 @@ const stats = {
       homeWins: 7,
       awayLosses: 0,
       homeLosses: 0,
-      homeDraws: 0,
+      homeDraws: 1,
       awayDraws: 0,
       cupWins: 1,
       cupLosses: 1,
@@ -210,10 +210,57 @@ const stats = {
 
 describe('#StatsHelper Tests', function () {
   describe('#CombinedTeamStats()', function () {
-    it('Wins are calculated correctly', function () {
-      const combinedStats = combineTeamStats(stats.teamResults);
-      console.log(combinedStats);
-      expect(true).to.be.true;
+    let combinedStats = combineTeamStats(stats.teamResults);
+    console.log(combinedStats);
+
+    beforeEach(() => {
+      // reset stats to default before each test
+      combinedStats = combineTeamStats(stats.teamResults);
+    });
+
+    it('Total wins are calculated correctly', function () {
+      expect(combinedStats.totalWins).to.equal(43);
+    });
+
+    it('Win breakdown are calculated correctly', function () {
+      expect(combinedStats.combinedAwayWins).to.equal(17);
+      expect(combinedStats.combinedHomeWins).to.equal(24);
+      expect(combinedStats.combinedCupWins).to.equal(2);
+    });
+
+    it('Total losses are calculated correctly', function () {
+      expect(combinedStats.totalLosses).to.equal(11);
+    });
+
+    it('Losses breakdown are calculated correctly', function () {
+      expect(combinedStats.combinedAwayLosses).to.equal(6);
+      expect(combinedStats.combinedHomeLosses).to.equal(2);
+      expect(combinedStats.combinedCupLosses).to.equal(3);
+    });
+
+    it('Total draws are calculated correctly', function () {
+      expect(combinedStats.totalDraws).to.equal(5);
+    });
+
+    it('Draws breakdown are calculated correctly', function () {
+      expect(combinedStats.combinedAwayDraws).to.equal(3);
+      expect(combinedStats.combinedHomeDraws).to.equal(2);
+    });
+
+    it('Team aggregates calculated correctly', function () {
+      expect(combinedStats.combinedAgg).to.equal(7680);
+    });
+
+    it('Team points calculated correctly', function () {
+      expect(combinedStats.combinedTotalPoints).to.equal(1619);
+    });
+
+    it('Opponent aggregates calculated correctly', function () {
+      expect(combinedStats.combinedOpponentAgg).to.equal(5698);
+    });
+
+    it('Opponent points calculated correctly', function () {
+      expect(combinedStats.combinedOpponentTotalPoints).to.equal(1041);
     });
   });
 });
