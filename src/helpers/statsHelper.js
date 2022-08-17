@@ -94,7 +94,7 @@ export function findBiggestWin(playerResults) {
     if (playerResults) {
         let bestWinMargin = 0;
         playerResults.forEach((result) => {
-            const resultParts = result.split(' - ');
+            const resultParts = result.split(' - ', 2);
 
             const teamPart = resultParts[0];
             const teamScore = teamPart.match(/[0-9]+/g)[0].trim();
