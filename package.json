@@ -7,7 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build && npm run tests",
     "deploy": "gh-pages -d build",
-    "tests": "npx playwright test"
+    "tests": "npm run unit-tests && npm run ui-tests",
+    "ui-tests": "npx playwright test",
+    "unit-tests": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/unit/**/*.ts'"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
@@ -22,7 +24,12 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@playwright/test": "^1.24.0"
+    "ts-node": "^10.9.1",
+    "@playwright/test": "^1.24.0",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
   },
   "browserslist": {
     "production": [

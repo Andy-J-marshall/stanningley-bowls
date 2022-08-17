@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import bowlsStats from '../src/data/bowlsStats2022.json';
+import bowlsStats from '../../src/data/bowlsStats2022.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
 const totalNumberOfPlayers = Object.keys(bowlsStats.playerResults).length;
