@@ -1,14 +1,12 @@
-import 'mocha';
 import { expect } from 'chai';
-
 import {
   combineTeamStats,
   findBiggestWin,
 } from '../../src/helpers/statsHelper.js';
 
-describe('#StatsHelper Tests', function () {
-  describe('#findBiggestWin()', function () {
-    it('Biggest win found successfully', function () {
+describe('#StatsHelper Tests', () => {
+  describe('#findBiggestWin()', () => {
+    it('Biggest win found successfully', () => {
       const results = [
         'ali 15 - 21 leslie strang',
         'ali 1 - 21 shirley biancardo',
@@ -22,7 +20,7 @@ describe('#StatsHelper Tests', function () {
       expect(biggestWin).to.equal('21 - 4');
     });
 
-    it('Biggest win found with double barrelled home names', function () {
+    it('Biggest win found with double barrelled home names', () => {
       const results = [
         'ali-double-barrel 21 - 0 leslie strang',
         'ali 1 - 21 shirley double-barrel-biancardo',
@@ -31,7 +29,7 @@ describe('#StatsHelper Tests', function () {
       expect(biggestWin).to.equal('21 - 0');
     });
 
-    it('Biggest win found with double barrelled away names', function () {
+    it('Biggest win found with double barrelled away names', () => {
       const results = [
         'ali 21 - 10 leslie strang',
         'ali 21 - 2 shirley double-barrel-biancardo',
@@ -40,7 +38,7 @@ describe('#StatsHelper Tests', function () {
       expect(biggestWin).to.equal('21 - 2');
     });
 
-    it('Biggest win found successfully when there are duplicates', function () {
+    it('Biggest win found successfully when there are duplicates', () => {
       const results = [
         'ali 21 - 10 alan taylor',
         'ali 21 - 10 alan taylor',
@@ -53,9 +51,9 @@ describe('#StatsHelper Tests', function () {
       expect(biggestWin).to.equal('21 - 10');
     });
 
-    it('Null returned if player has no wins', function () {
+    it('Null returned if player has no wins', () => {
       const results = [
-        'ali 20 - 21 leslie strang (\'A\')',
+        "ali 20 - 21 leslie strang ('A')",
         'ali 13 - 21 shirley biancardo',
         'ali 0 - 21 roy tebbutt',
       ];
@@ -63,14 +61,14 @@ describe('#StatsHelper Tests', function () {
       expect(biggestWin).to.be.null;
     });
 
-    it('Null returned if player has no results', function () {
+    it('Null returned if player has no results', () => {
       const results: any = [];
       const biggestWin = findBiggestWin(results);
       expect(biggestWin).to.be.null;
     });
   });
 
-  describe('#CombinedTeamStats()', function () {
+  describe('#CombinedTeamStats()', () => {
     const stats = {
       teamResults: [
         {
@@ -283,48 +281,48 @@ describe('#StatsHelper Tests', function () {
       combinedStats = combineTeamStats(stats.teamResults);
     });
 
-    it('Total wins are calculated correctly', function () {
+    it('Total wins are calculated correctly', () => {
       expect(combinedStats.totalWins).to.equal(43);
     });
 
-    it('Win breakdown are calculated correctly', function () {
+    it('Win breakdown are calculated correctly', () => {
       expect(combinedStats.combinedAwayWins).to.equal(17);
       expect(combinedStats.combinedHomeWins).to.equal(24);
       expect(combinedStats.combinedCupWins).to.equal(2);
     });
 
-    it('Total losses are calculated correctly', function () {
+    it('Total losses are calculated correctly', () => {
       expect(combinedStats.totalLosses).to.equal(11);
     });
 
-    it('Losses breakdown are calculated correctly', function () {
+    it('Losses breakdown are calculated correctly', () => {
       expect(combinedStats.combinedAwayLosses).to.equal(6);
       expect(combinedStats.combinedHomeLosses).to.equal(2);
       expect(combinedStats.combinedCupLosses).to.equal(3);
     });
 
-    it('Total draws are calculated correctly', function () {
+    it('Total draws are calculated correctly', () => {
       expect(combinedStats.totalDraws).to.equal(5);
     });
 
-    it('Draws breakdown are calculated correctly', function () {
+    it('Draws breakdown are calculated correctly', () => {
       expect(combinedStats.combinedAwayDraws).to.equal(3);
       expect(combinedStats.combinedHomeDraws).to.equal(2);
     });
 
-    it('Team aggregates calculated correctly', function () {
+    it('Team aggregates calculated correctly', () => {
       expect(combinedStats.combinedAgg).to.equal(7680);
     });
 
-    it('Team points calculated correctly', function () {
+    it('Team points calculated correctly', () => {
       expect(combinedStats.combinedTotalPoints).to.equal(1619);
     });
 
-    it('Opponent aggregates calculated correctly', function () {
+    it('Opponent aggregates calculated correctly', () => {
       expect(combinedStats.combinedOpponentAgg).to.equal(5698);
     });
 
-    it('Opponent points calculated correctly', function () {
+    it('Opponent points calculated correctly', () => {
       expect(combinedStats.combinedOpponentTotalPoints).to.equal(1041);
     });
   });

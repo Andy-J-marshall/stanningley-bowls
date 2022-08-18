@@ -4,7 +4,7 @@
   "diff": true,
   "package": "./package.json",
   "reporter": "spec",
-  "slow": 1500,
+  "slow": 1000,
   "timeout": 5000,
   "ui": "bdd",
   "watch-ignore": ["lib/vendor"],
