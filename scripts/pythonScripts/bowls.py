@@ -78,7 +78,7 @@ for day in teamDays:
         awayIndex = awayIndex + 1
 
     # Find league position for teams
-    # TODO league position for Saturday is incorrect!
+    currentLeaguePosition = -1
     leaguePositionIndex = 1
     leaguePositionRow = 0
     leaguePositionCol = 'A'
@@ -86,7 +86,7 @@ for day in teamDays:
     leagueTeamNameCol = 'B'
     satLeagueTeamNameCol = 'C'
 
-    if day == 'Saturday':
+    if 'saturday' in day.lower():
         leagueTeamNameCol = satLeagueTeamNameCol
         leaguePositionCol = satLeaguePositionCol
 
