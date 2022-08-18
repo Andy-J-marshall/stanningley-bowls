@@ -62,7 +62,7 @@ describe('#StatsHelper Tests', () => {
     });
 
     it('Null returned if player has no results', () => {
-      const results: any = [];
+      const results: Array<string> = [];
       const biggestWin = findBiggestWin(results);
       expect(biggestWin).to.be.null;
     });
