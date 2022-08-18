@@ -373,7 +373,7 @@ function Players(props) {
 
                                 {pairsGames > 0 && (
                                     <div>
-                                        {pairsPartnersCount.length > 0 && (
+                                        {Object.keys(pairsPartnersCount).length > 0 && (
                                             <div>
                                                 <h3>PAIRS PARTNERS</h3>
                                                 {Object.keys(
