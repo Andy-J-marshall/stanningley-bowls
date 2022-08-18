@@ -218,7 +218,7 @@ export function returnPlayerStats(playersStats, player) {
     };
 }
 
-function calculatePairsPartnersCount(allPairsPartners) {
+export function calculatePairsPartnersCount(allPairsPartners) {
     const uniquePartners = allPairsPartners.filter((partner, index) => {
         return allPairsPartners.indexOf(partner) === index;
     });
