@@ -20,7 +20,8 @@ function Results(props) {
             const homeScore = homePart.match(/[0-9]+/g)[0].trim();
             const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
             const awayPart = resultParts[1].split(' (')[0];
-            const date = resultParts[1].split(' (')[1];
+            let date = resultParts[1].split(' (')[1];
+            date = date.slice(0, -1);
             const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
             const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
 
@@ -63,8 +64,7 @@ function Results(props) {
                             {team.results.map((result, idx) => {
                                 const homeTeam = result.home.homeTeam;
                                 const awayTeam = result.away.awayTeam;
-                                let date = result.date.split(' ');
-                                date = `${date[1]} ${date[2]}`;
+                                const date = result.date;
                                 return (
                                     <tbody key={idx}>
                                         <tr>
