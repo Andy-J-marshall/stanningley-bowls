@@ -131,12 +131,24 @@ for (const team of teams) {
 
     await page
       .frameLocator('#x-Pframe')
-      .locator('#bbar > .bbar-tab[onclick*="ShowSubPage(4)"]')
+      .locator('.bbarT > .bbar-tab[onclick*="ShowSubPage(4)"]')
       .click();
-    await page.frameLocator('#x-Pframe').locator('#r1').click();
-    await page.frameLocator('#x-Pframe').locator('#oTab1').click();
-    await page.frameLocator('#x-Pframe').locator('#oRes').click();
-    await page.frameLocator('#x-Pframe').locator('#oResFull').click();
+    await page
+      .frameLocator('#x-Pframe')
+      .locator('#x-DlgF label:nth-child(3) [name="Clip"]')
+      .click();
+    await page
+      .frameLocator('#x-Pframe')
+      .locator('#x-DlgF [name="oTab1"]')
+      .click();
+    await page
+      .frameLocator('#x-Pframe')
+      .locator('#x-DlgF [name="oRes"]')
+      .click();
+    await page
+      .frameLocator('#x-Pframe')
+      .locator('#x-DlgF [name="oResFull"]')
+      .click();
     await page
       .frameLocator('#x-Pframe')
       .locator('#x-DlgF > .dGrp > select[name=oResF]')

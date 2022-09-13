@@ -134,8 +134,11 @@ for day in teamDays:
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
             gameDate = sheet[awayTeamNameCol + str(row - 1)].value
-            if 'On ' in gameDate or '(from ' in gameDate:
-                gameDate = sheet[awayTeamNameCol + str(row - 2)].value
+            if type(gameDate) is str:
+                if 'On ' in gameDate or '(from ' in gameDate:
+                    gameDate = sheet[awayTeamNameCol + str(row - 2)].value
+            else:
+                gameDate = ''
 
         # Home games
         if row in homeRow:
