@@ -12,6 +12,7 @@ players = utils.players
 duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays)
 formatName = utils.formatName
+standardiseName = utils.standardiseName
 teamsTracking = utils.teamsTracking
 
 # Spreadsheet info
@@ -56,16 +57,20 @@ for league in leaguesDays:
     homePlayerRow = []
     for homePlayer in sheet[homePlayerCol]:
         homePlayerName = homePlayer.value
-        if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicatePlayerNames):
-            homePlayerRow.append(homePlayerIndex)
+        if (homePlayerName and type(homePlayerName) is str):
+            homePlayerName = standardiseName(homePlayerName)
+            if homePlayerName.lower() in players or homePlayerName.lower() in duplicatePlayerNames:
+                homePlayerRow.append(homePlayerIndex)
         homePlayerIndex = homePlayerIndex + 1
 
     awayPlayerIndex = 1
     awayPlayerRow = []
     for awayPlayer in sheet[awayPlayerCol]:
         awayPlayerName = awayPlayer.value
-        if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in players or awayPlayerName.lower() in duplicatePlayerNames):
-            awayPlayerRow.append(awayPlayerIndex)
+        if (awayPlayerName and type(awayPlayerName) is str):
+            awayPlayerName = standardiseName(awayPlayerName)
+            if awayPlayerName.lower() in players or awayPlayerName.lower() in duplicatePlayerNames:
+                awayPlayerRow.append(awayPlayerIndex)
         awayPlayerIndex = awayPlayerIndex + 1
 
     # Find each players' results

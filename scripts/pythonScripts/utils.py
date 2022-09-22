@@ -49,8 +49,13 @@ def anonymiseNames(name):
     return name.lower()
 
 
-def formatName(name):
+def standardiseName(name):
     name = name.replace(' - ', '-')
+    name = name.replace(' \'A\'', '')
+    return name
+
+def formatName(name):
+    name = standardiseName(name)
     name = deduplicateNames(name)
     name = anonymiseNames(name)
     return name.lower()
