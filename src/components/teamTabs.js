@@ -19,22 +19,21 @@ function TeamTabs(props) {
                 <Tab eventKey="Monday" title="Mon">
                     {team1Component}
                 </Tab>
-                <Tab eventKey="Tuesday Vets" title="Tue (Vets)">
+                <Tab eventKey="Tuesday Vets" title="Tues (Vets)">
                     {team2Component}
                 </Tab>
-                <Tab eventKey="Tuesday" title="Tue">
+                <Tab eventKey="Tuesday" title="Tues">
                     {team3Component}
                 </Tab>
                 <Tab eventKey="Wednesday" title="Wed">
                     {team4Component}
                 </Tab>
-                <Tab eventKey="Thursday Vets" title="Thu (Vets)">
+                <Tab eventKey="Thursday Vets" title="Thur (Vets)">
                     {team5Component}
                 </Tab>
                 <Tab eventKey="Saturday" title="Sat">
                     {team6Component}
                 </Tab>
-                {/* TODO check it displays properly */}
             </Tabs>
         </div>
     );

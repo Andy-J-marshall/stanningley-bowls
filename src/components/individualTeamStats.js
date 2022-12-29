@@ -1,6 +1,7 @@
 import StatsTableDisplay from './statsTableDisplay';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
+import config from '../config';
 
 function IndividualTeamStats(props) {
     const day = props.day;
@@ -103,7 +104,7 @@ function IndividualTeamStats(props) {
             </div>
         );
     } else {
-        return <p>Team did not play in this league for the selected year</p>;
+        return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
     }
 }
 

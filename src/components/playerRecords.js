@@ -474,7 +474,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>;
         }
     }
 
@@ -493,7 +493,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>
         }
     }
 
@@ -512,7 +512,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>
         }
     }
 
@@ -531,7 +531,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>
         }
     }
 
@@ -550,7 +550,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>
         }
     }
 
@@ -569,7 +569,7 @@ function PlayerRecords(props) {
                 />
             );
         } else {
-            return <p>No stats for this day</p>;
+            return <p>No stats available for this day</p>;
         }
     }
 

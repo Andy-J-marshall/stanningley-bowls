@@ -39,6 +39,12 @@ function PlayerStats(props) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
+
+        if (showStatSummary) {
+            setStatsToUse(combinedPlayerResults);
+        } else {
+            setStatsToUse(playerResults);
+        }
     });
 
     function statsCallback(showAllBoolean) {
@@ -66,15 +72,15 @@ function PlayerStats(props) {
                 : false;
         if (validPlayer && !searchedName.includes('show all')) {
             setPlayerFound(true);
-            const stanDays = Object.keys(config.days); // TODO check these are correct for Tuesday and Wednesday
+            const teamDaysPlayed = Object.keys(config.days); // TODO currently won't show old non-stan stats for some players e.g. Andy W
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
-                if (!stanDays.includes(formattedDay)) {
-                    setShowStatSelectionDropdown(true);
+                if (!teamDaysPlayed.includes(formattedDay)) {
+                    setShowStatSelectionDropdown(true); // TODO need to change this?
                 }
-                if (stanDays.includes(formattedDay)) {
+                if (teamDaysPlayed.includes(formattedDay)) {
                     anyTeamDays = true;
                 }
             });

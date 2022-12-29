@@ -28,8 +28,6 @@ function TeamStats(props) {
         (team) => team.day.toLowerCase().includes('saturday')
     );
 
-    // TODO add teams into here
-
     useEffect(() => {
         window.scrollTo(0, 0);
     });

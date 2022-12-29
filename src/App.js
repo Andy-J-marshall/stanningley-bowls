@@ -20,10 +20,10 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
-// TODO update get-latest-stats script to 2023
 // TODO update README to explain how to update script per year?
 
 function App() {
+    // TODO change to 2023
     const [teamStats, setTeamStats] = useState(bowlsStats22);
     const [combinedStats, setCombinedStats] = useState(combinedBowlsStats22);
 
@@ -36,7 +36,6 @@ function App() {
     }, []);
 
     // Stats for future years will need to be updated here
-    // TODO add 2023 in here
     const allYearStats = {
         year2022: bowlsStats22,
         year2023: bowlsStats23,
@@ -96,7 +95,12 @@ function App() {
                 >
                     <Route
                         path="/stats/player"
-                        element={<PlayerStats stats={teamStats} combinedStats={combinedStats} />}
+                        element={
+                            <PlayerStats
+                                stats={teamStats}
+                                combinedStats={combinedStats}
+                            />
+                        }
                     />
                     <Route
                         path="/stats/team"

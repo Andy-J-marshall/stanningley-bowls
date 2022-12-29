@@ -5,7 +5,8 @@ function YearSelectDropdown(props) {
     const statsCallback = props.statsCallback;
     const yearsToDisplay = props.yearsToDisplay;
 
-    const currentYear = new Date().getFullYear();
+    // const currentYear = new Date().getFullYear(); // TODO change back
+    const currentYear = 2022;
     const [year, setYear] = useState(currentYear);
 
     function changeStatsYear(event) {

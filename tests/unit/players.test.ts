@@ -492,10 +492,10 @@ describe('#Players Tests', () => {
         mondayLosses,
         mondayGames,
         mondayAvg,
-        tuesdayWins,
-        tuesdayLosses,
-        tuesdayGames,
-        tuesdayAvg,
+        tuesdayVetsWins,
+        tuesdayVetsLosses,
+        tuesdayVetsGames,
+        tuesdayVetsAvg,
         thursdayWins,
         thursdayLosses,
         thursdayGames,
@@ -510,10 +510,10 @@ describe('#Players Tests', () => {
       expect(mondayGames).to.equal(12);
       expect(mondayAvg.toFixed(2)).to.equal('4.50');
 
-      expect(tuesdayWins).to.equal(7);
-      expect(tuesdayLosses).to.equal(2);
-      expect(tuesdayGames).to.equal(9);
-      expect(tuesdayAvg.toFixed(2)).to.equal('8.56');
+      expect(tuesdayVetsWins).to.equal(7);
+      expect(tuesdayVetsLosses).to.equal(2);
+      expect(tuesdayVetsGames).to.equal(9);
+      expect(tuesdayVetsAvg.toFixed(2)).to.equal('8.56');
 
       expect(thursdayWins).to.equal(5);
       expect(thursdayLosses).to.equal(2);

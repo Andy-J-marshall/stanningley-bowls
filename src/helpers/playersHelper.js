@@ -1,8 +1,14 @@
 import { findBiggestWin } from './statsHelper';
 import { arrayToList } from './utils';
+import config from '../config';
 
 export function returnPlayerStats(playersStats, player) {
-    let {
+    const stats = playersStats[player];
+    if (!stats) {
+        return null;
+    }
+
+    const {
         totalAgg,
         totalAggAgainst,
         totalPairsAgg,
@@ -34,10 +40,10 @@ export function returnPlayerStats(playersStats, player) {
         totalAwayPointsAgainst,
         results,
         dayPlayed,
-    } = playersStats[player];
+    } = stats;
     const p = playersStats[player];
     const monday = p['monday combined leeds'];
-    const tuesday = p['tuesday vets leeds'];
+    const tuesdayVets = p['tuesday vets leeds'];
     const thursday = p['thursday vets leeds'];
     const saturday = p['saturday leeds'];
     const tuesdayEvening = p['tuesday leeds'];
@@ -79,10 +85,10 @@ export function returnPlayerStats(playersStats, player) {
     const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
     const mondayAvg = monday.aggDiff / mondayGames;
-    const tuesdayWins = tuesday.wins;
-    const tuesdayLosses = tuesday.games - tuesday.wins;
-    const tuesdayGames = tuesday.games;
-    const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
+    const tuesdayVetsWins = tuesdayVets.wins;
+    const tuesdayVetsLosses = tuesdayVets.games - tuesdayVets.wins;
+    const tuesdayVetsGames = tuesdayVets.games;
+    const tuesdayVetsAvg = tuesdayVets.aggDiff / tuesdayVetsGames;
     let tuesdayEveningWins = 0;
     let tuesdayEveningLosses = 0;
     let tuesdayEveningGames = 0;
@@ -112,12 +118,12 @@ export function returnPlayerStats(playersStats, player) {
     const saturdayGames = saturday.games;
     const saturdayAvg = saturday.aggDiff / saturdayGames;
     let daysPlayedCount = [
-        { day: 'Monday', gamesPlayed: mondayGames },
-        { day: 'Tuesday', gamesPlayed: tuesdayGames },
-        { day: 'Tuesday Evening', gamesPlayed: tuesdayEveningGames },
-        { day: 'Wednesday', gamesPlayed: wednesdayGames },
-        { day: 'Thursday', gamesPlayed: thursdayGames },
-        { day: 'Saturday', gamesPlayed: saturdayGames },
+        { day: config.days['monday combined leeds'], gamesPlayed: mondayGames },
+        { day: config.days['tuesday vets leeds'], gamesPlayed: tuesdayVetsGames },
+        { day: config.days['tuesday leeds'], gamesPlayed: tuesdayEveningGames },
+        { day: config.days['wednesday half holiday leeds'], gamesPlayed: wednesdayGames },
+        { day: config.days['thursday vets leeds'], gamesPlayed: thursdayGames },
+        { day: config.days['saturday leeds'], gamesPlayed: saturdayGames },
     ];
     daysPlayedCount = daysPlayedCount.filter((day) => day.gamesPlayed > 0);
     let allTeamsPlayedFor = [];
@@ -190,10 +196,10 @@ export function returnPlayerStats(playersStats, player) {
         mondayLosses,
         mondayGames,
         mondayAvg,
-        tuesdayWins,
-        tuesdayLosses,
-        tuesdayGames,
-        tuesdayAvg,
+        tuesdayVetsWins,
+        tuesdayVetsLosses,
+        tuesdayVetsGames,
+        tuesdayVetsAvg,
         tuesdayEveningWins,
         tuesdayEveningLosses,
         tuesdayEveningGames,
