@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 function YearSelectDropdown(props) {
@@ -28,6 +28,7 @@ function YearSelectDropdown(props) {
                     }}
                 >
                     <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
+                    <Dropdown.Item eventKey="2023">2023</Dropdown.Item>
                     {/* Future years will need to be added here */}
                 </DropdownButton>
             )}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import Home from './components/home';
@@ -16,7 +16,12 @@ import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import combinedBowlsStats22 from './data/allPlayerStats2022.json';
+import bowlsStats23 from './data/bowlsStats2023.json';
+import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
+
+// TODO update get-latest-stats script to 2023
+// TODO update README to explain how to update script per year?
 
 function App() {
     const [teamStats, setTeamStats] = useState(bowlsStats22);
@@ -31,21 +36,29 @@ function App() {
     }, []);
 
     // Stats for future years will need to be updated here
+    // TODO add 2023 in here
     const allYearStats = {
         year2022: bowlsStats22,
+        year2023: bowlsStats23,
     };
     const allYearCombinedStats = {
         year2022: combinedBowlsStats22,
+        year2023: combinedBowlsStats23,
     };
 
     function statsCallback(year) {
-        const currentYear = new Date().getFullYear();
+        // const currentYear = new Date().getFullYear(); // TODO change back
+        const currentYear = 2023;
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;
         switch (year.toString()) {
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2022'];
+                break;
+            case '2023':
+                statsForSelectedYear = allYearStats['year2023'];
+                combinedStatsForSelectedYear = allYearCombinedStats['year2023'];
                 break;
             default:
                 statsForSelectedYear = allYearStats[`year${currentYear}`];

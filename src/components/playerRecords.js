@@ -1,4 +1,3 @@
-import React from 'react';
 import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
 
@@ -9,12 +8,18 @@ function PlayerRecords(props) {
     let minTotalGames = 1;
     let minMonGames = 1;
     let minTuesGames = 1;
-    let minThurGames = 1;
+    let minWedGames = 1;
+    let minTuesVetsGames = 1;
+    let minThurVetsGames = 1;
     let minSatGames = 1;
     let mostMondayWinsPlayer = [];
     let mostMondayWins = 0;
+    let mostTuesdayVetsWinsPlayer = [];
+    let mostTuesdayVetsWins = 0;
     let mostTuesdayWinsPlayer = [];
     let mostTuesdayWins = 0;
+    let mostWednesdayWinsPlayer = [];
+    let mostWednesdayWins = 0;
     let mostThursdayWinsPlayer = [];
     let mostThursdayWins = 0;
     let mostSaturdayWinsPlayer = [];
@@ -23,10 +28,18 @@ function PlayerRecords(props) {
     let bestMondayAverage = -21;
     let bestMondayWinPerc = 0;
     let bestMondayWinPercPlayer = 0;
+    let bestTuesdayVetsAveragePlayer = [];
+    let bestTuesdayVetsAverage = -21;
+    let bestTuesdayVetsWinPerc = 0;
+    let bestTuesdayVetsWinPercPlayer = 0;
     let bestTuesdayAveragePlayer = [];
     let bestTuesdayAverage = -21;
     let bestTuesdayWinPerc = 0;
     let bestTuesdayWinPercPlayer = 0;
+    let bestWednesdayAveragePlayer = [];
+    let bestWednesdayAverage = -21;
+    let bestWednesdayWinPerc = 0;
+    let bestWednesdayWinPercPlayer = 0;
     let bestThursdayAveragePlayer = [];
     let bestThursdayAverage = -21;
     let bestThursdayWinPerc = 0;
@@ -53,12 +66,16 @@ function PlayerRecords(props) {
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
         const monday = p['monday combined leeds'];
-        const tuesday = p['tuesday vets leeds'];
-        const thursday = p['thursday vets leeds'];
+        const tuesdayVets = p['tuesday vets leeds'];
+        const tuesday = p['tuesday leeds'];
+        const wednesday = p['wednesday half holiday leeds'];
+        const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
         const mondayGames = monday.games;
+        const tuesdayVetsGames = tuesdayVets.games;
         const tuesdayGames = tuesday.games;
-        const thursdayGames = thursday.games;
+        const wednesdayGames = wednesday.games;
+        const thursdayVetsGames = thursdayVets.games;
         const saturdayGames = saturday.games;
         if (totalGames > minTotalGames) {
             if (totalGames >= 10) {
@@ -74,6 +91,13 @@ function PlayerRecords(props) {
                 minMonGames = mondayGames;
             }
         }
+        if (tuesdayVetsGames > minTuesVetsGames) {
+            if (tuesdayVetsGames >= 8) {
+                minTuesVetsGames = 8;
+            } else {
+                minTuesVetsGames = tuesdayVetsGames;
+            }
+        }
         if (tuesdayGames > minTuesGames) {
             if (tuesdayGames >= 8) {
                 minTuesGames = 8;
@@ -81,11 +105,18 @@ function PlayerRecords(props) {
                 minTuesGames = tuesdayGames;
             }
         }
-        if (thursdayGames > minThurGames) {
-            if (thursdayGames >= 8) {
-                minThurGames = 8;
+        if (wednesdayGames > minWedGames) {
+            if (wednesdayGames >= 8) {
+                minWedGames = 8;
             } else {
-                minThurGames = thursdayGames;
+                minWedGames = wednesdayGames;
+            }
+        }
+        if (thursdayVetsGames > minThurVetsGames) {
+            if (thursdayVetsGames >= 8) {
+                minThurVetsGames = 8;
+            } else {
+                minThurVetsGames = thursdayVetsGames;
             }
         }
         if (saturdayGames > minSatGames) {
@@ -107,8 +138,10 @@ function PlayerRecords(props) {
         const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
 
         const monday = p['monday combined leeds'];
-        const tuesday = p['tuesday vets leeds'];
-        const thursday = p['thursday vets leeds'];
+        const tuesdayVets = p['tuesday vets leeds'];
+        const tuesday = p['tuesday leeds'];
+        const wednesday = p['wednesday leeds'];
+        const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
         const mondayWins = monday.wins;
         const mondayGames = monday.games;
@@ -118,10 +151,19 @@ function PlayerRecords(props) {
         const tuesdayGames = tuesday.games;
         const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
         const tuesdayWinPerc = (tuesdayWins / tuesdayGames) * 100;
-        const thursdayWins = thursday.wins;
-        const thursdayGames = thursday.games;
-        const thursdayAvg = thursday.aggDiff / thursdayGames;
-        const thursdayWinPerc = (thursdayWins / thursdayGames) * 100;
+        const wednesdayWins = wednesday.wins;
+        const wednesdayGames = wednesday.games;
+        const wednesdayAvg = wednesday.aggDiff / wednesdayGames;
+        const wednesdayWinPerc = (wednesdayWins / wednesdayGames) * 100;
+        const tuesdayVetsWins = tuesdayVets.wins;
+        const tuesdayVetsGames = tuesdayVets.games;
+        const tuesdayVetsAvg = tuesdayVets.aggDiff / tuesdayVetsGames;
+        const tuesdayVetsWinPerc = (tuesdayVetsWins / tuesdayVetsGames) * 100;
+        const thursdayVetsWins = thursdayVets.wins;
+        const thursdayVetsGames = thursdayVets.games;
+        const thursdayVetsAvg = thursdayVets.aggDiff / thursdayVetsGames;
+        const thursdayVetsWinPerc =
+            (thursdayVetsWins / thursdayVetsGames) * 100;
         const saturdayWins = saturday.wins;
         const saturdayGames = saturday.games;
         const saturdayAvg = saturday.aggDiff / saturdayGames;
@@ -134,6 +176,18 @@ function PlayerRecords(props) {
             }
             bestMondayAveragePlayer.push(`${player} (${mondayGames})`);
         }
+        if (
+            tuesdayVetsAvg >= bestTuesdayVetsAverage &&
+            tuesdayVetsGames >= minTuesVetsGames
+        ) {
+            if (tuesdayVetsAvg > bestTuesdayVetsAverage) {
+                bestTuesdayVetsAveragePlayer = [];
+                bestTuesdayVetsAverage = tuesdayVetsAvg;
+            }
+            bestTuesdayVetsAveragePlayer.push(
+                `${player} (${tuesdayVetsGames})`
+            );
+        }
         if (tuesdayAvg >= bestTuesdayAverage && tuesdayGames >= minTuesGames) {
             if (tuesdayAvg > bestTuesdayAverage) {
                 bestTuesdayAveragePlayer = [];
@@ -142,14 +196,24 @@ function PlayerRecords(props) {
             bestTuesdayAveragePlayer.push(`${player} (${tuesdayGames})`);
         }
         if (
-            thursdayAvg >= bestThursdayAverage &&
-            thursdayGames >= minThurGames
+            wednesdayAvg >= bestWednesdayAverage &&
+            wednesdayGames >= minWedGames
         ) {
-            if (thursdayAvg > bestThursdayAverage) {
-                bestThursdayAveragePlayer = [];
-                bestThursdayAverage = thursdayAvg;
+            if (wednesdayAvg > bestWednesdayAverage) {
+                bestWednesdayAveragePlayer = [];
+                bestWednesdayAverage = wednesdayAvg;
             }
-            bestThursdayAveragePlayer.push(`${player} (${thursdayGames})`);
+            bestWednesdayAveragePlayer.push(`${player} (${wednesdayGames})`);
+        }
+        if (
+            thursdayVetsAvg >= bestThursdayAverage &&
+            thursdayVetsGames >= minThurVetsGames
+        ) {
+            if (thursdayVetsAvg > bestThursdayAverage) {
+                bestThursdayAveragePlayer = [];
+                bestThursdayAverage = thursdayVetsAvg;
+            }
+            bestThursdayAveragePlayer.push(`${player} (${thursdayVetsGames})`);
         }
         if (
             saturdayAvg >= bestSaturdayAverage &&
@@ -168,6 +232,13 @@ function PlayerRecords(props) {
             }
             mostMondayWinsPlayer.push(`${player} (${mondayGames})`);
         }
+        if (tuesdayVetsWins >= mostTuesdayVetsWins) {
+            if (tuesdayVetsWins > mostTuesdayVetsWins) {
+                mostTuesdayVetsWinsPlayer = [];
+                mostTuesdayVetsWins = tuesdayVetsWins;
+            }
+            mostTuesdayVetsWinsPlayer.push(`${player} (${tuesdayVetsGames})`);
+        }
         if (tuesdayWins >= mostTuesdayWins) {
             if (tuesdayWins > mostTuesdayWins) {
                 mostTuesdayWinsPlayer = [];
@@ -175,12 +246,19 @@ function PlayerRecords(props) {
             }
             mostTuesdayWinsPlayer.push(`${player} (${tuesdayGames})`);
         }
-        if (thursdayWins >= mostThursdayWins) {
-            if (thursdayWins > mostThursdayWins) {
-                mostThursdayWinsPlayer = [];
-                mostThursdayWins = thursdayWins;
+        if (wednesdayWins >= mostWednesdayWins) {
+            if (wednesdayWins > mostWednesdayWins) {
+                mostWednesdayWinsPlayer = [];
+                mostWednesdayWins = wednesdayWins;
             }
-            mostThursdayWinsPlayer.push(`${player} (${thursdayGames})`);
+            mostWednesdayWinsPlayer.push(`${player} (${wednesdayGames})`);
+        }
+        if (thursdayVetsWins >= mostThursdayWins) {
+            if (thursdayVetsWins > mostThursdayWins) {
+                mostThursdayWinsPlayer = [];
+                mostThursdayWins = thursdayVetsWins;
+            }
+            mostThursdayWinsPlayer.push(`${player} (${thursdayVetsGames})`);
         }
         if (saturdayWins >= mostSaturdayWins) {
             if (saturdayWins > mostSaturdayWins) {
@@ -197,6 +275,18 @@ function PlayerRecords(props) {
             bestMondayWinPercPlayer.push(`${player} (${mondayGames})`);
         }
         if (
+            tuesdayVetsWinPerc >= bestTuesdayVetsWinPerc &&
+            tuesdayVetsGames >= minTuesVetsGames
+        ) {
+            if (tuesdayVetsWinPerc > bestTuesdayVetsWinPerc) {
+                bestTuesdayVetsWinPercPlayer = [];
+                bestTuesdayVetsWinPerc = tuesdayVetsWinPerc;
+            }
+            bestTuesdayVetsWinPercPlayer.push(
+                `${player} (${tuesdayVetsGames})`
+            );
+        }
+        if (
             tuesdayWinPerc >= bestTuesdayWinPerc &&
             tuesdayGames >= minTuesGames
         ) {
@@ -207,14 +297,24 @@ function PlayerRecords(props) {
             bestTuesdayWinPercPlayer.push(`${player} (${tuesdayGames})`);
         }
         if (
-            thursdayWinPerc >= bestThursdayWinPerc &&
-            thursdayGames >= minThurGames
+            wednesdayWinPerc >= bestWednesdayWinPerc &&
+            wednesdayGames >= minWedGames
         ) {
-            if (thursdayWinPerc > bestThursdayWinPerc) {
-                bestThursdayWinPercPlayer = [];
-                bestThursdayWinPerc = thursdayWinPerc;
+            if (wednesdayWinPerc > bestWednesdayWinPerc) {
+                bestWednesdayWinPercPlayer = [];
+                bestWednesdayWinPerc = wednesdayWinPerc;
             }
-            bestThursdayWinPercPlayer.push(`${player} (${thursdayGames})`);
+            bestWednesdayWinPercPlayer.push(`${player} (${wednesdayGames})`);
+        }
+        if (
+            thursdayVetsWinPerc >= bestThursdayWinPerc &&
+            thursdayVetsGames >= minThurVetsGames
+        ) {
+            if (thursdayVetsWinPerc > bestThursdayWinPerc) {
+                bestThursdayWinPercPlayer = [];
+                bestThursdayWinPerc = thursdayVetsWinPerc;
+            }
+            bestThursdayWinPercPlayer.push(`${player} (${thursdayVetsGames})`);
         }
         if (
             saturdayWinPerc >= bestSaturdayWinPerc &&
@@ -302,6 +402,21 @@ function PlayerRecords(props) {
     function returnTeam2Component() {
         return (
             <RecordsTableDisplay
+                minGames={minTuesVetsGames}
+                playerOrTeam="Player"
+                mostWins={mostTuesdayVetsWins}
+                mostWinsPlayer={mostTuesdayVetsWinsPlayer}
+                bestWinPerc={bestTuesdayVetsWinPerc}
+                bestWinPercPlayerOrTeam={bestTuesdayVetsWinPercPlayer}
+                bestAverage={bestTuesdayVetsAverage}
+                bestAveragePlayer={bestTuesdayVetsAveragePlayer}
+            />
+        );
+    }
+
+    function returnTeam3Component() {
+        return (
+            <RecordsTableDisplay
                 minGames={minTuesGames}
                 playerOrTeam="Player"
                 mostWins={mostTuesdayWins}
@@ -314,10 +429,25 @@ function PlayerRecords(props) {
         );
     }
 
-    function returnTeam3Component() {
+    function returnTeam4Component() {
         return (
             <RecordsTableDisplay
-                minGames={minThurGames}
+                minGames={minWedGames}
+                playerOrTeam="Player"
+                mostWins={mostWednesdayWins}
+                mostWinsPlayer={mostWednesdayWinsPlayer}
+                bestWinPerc={bestWednesdayWinPerc}
+                bestWinPercPlayerOrTeam={bestWednesdayWinPercPlayer}
+                bestAverage={bestWednesdayAverage}
+                bestAveragePlayer={bestWednesdayAveragePlayer}
+            />
+        );
+    }
+
+    function returnTeam5Component() {
+        return (
+            <RecordsTableDisplay
+                minGames={minThurVetsGames}
                 playerOrTeam="Player"
                 mostWins={mostThursdayWins}
                 mostWinsPlayer={mostThursdayWinsPlayer}
@@ -329,7 +459,7 @@ function PlayerRecords(props) {
         );
     }
 
-    function returnTeam4Component() {
+    function returnTeam6Component() {
         return (
             <RecordsTableDisplay
                 minGames={minSatGames}
@@ -354,6 +484,8 @@ function PlayerRecords(props) {
                 team2Component={returnTeam2Component()}
                 team3Component={returnTeam3Component()}
                 team4Component={returnTeam4Component()}
+                team5Component={returnTeam5Component()}
+                team6Component={returnTeam6Component()}
             />
         </div>
     );

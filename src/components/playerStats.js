@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ListGroup, Form, Button, Spinner } from 'react-bootstrap';
 import {
     ClearButton,
@@ -66,7 +66,7 @@ function PlayerStats(props) {
                 : false;
         if (validPlayer && !searchedName.includes('show all')) {
             setPlayerFound(true);
-            const stanDays = Object.keys(config.days);
+            const stanDays = Object.keys(config.days); // TODO check these are correct for Tuesday and Wednesday
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day) => {

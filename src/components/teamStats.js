@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
@@ -12,8 +12,14 @@ function TeamStats(props) {
     const mondayStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('monday')
     );
-    const tuesdayStats = teamResults.find(
+    const tuesdayVetsStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('tuesday vets')
+    );
+    const tuesdayStats = teamResults.find(
+        (team) => team.day.toLowerCase().includes('tuesday leeds')
+    );
+    const wednesdayStats = teamResults.find(
+        (team) => team.day.toLowerCase().includes('wednesday')
     );
     const thursdayStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('thursday')
@@ -21,6 +27,8 @@ function TeamStats(props) {
     const saturdayStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('saturday')
     );
+
+    // TODO add teams into here
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -44,13 +52,33 @@ function TeamStats(props) {
         return (
             <IndividualTeamStats
                 day="Tuesday Vets Leeds"
-                stats={tuesdayStats}
+                stats={tuesdayVetsStats}
                 playerStats={playerResults}
             />
         );
     }
 
     function returnTeam3Component() {
+        return (
+            <IndividualTeamStats
+                day="Tuesday Leeds"
+                stats={tuesdayStats}
+                playerStats={playerResults}
+            />
+        );
+    }
+
+    function returnTeam4Component() {
+        return (
+            <IndividualTeamStats
+                day="Wednesday Half Holiday Leeds"
+                stats={wednesdayStats}
+                playerStats={playerResults}
+            />
+        );
+    }
+
+    function returnTeam5Component() {
         return (
             <IndividualTeamStats
                 day="Thursday Vets Leeds"
@@ -60,7 +88,7 @@ function TeamStats(props) {
         );
     }
 
-    function returnTeam4Component() {
+    function returnTeam6Component() {
         return (
             <IndividualTeamStats
                 day="Saturday Leeds"
@@ -80,6 +108,8 @@ function TeamStats(props) {
                 team2Component={returnTeam2Component()}
                 team3Component={returnTeam3Component()}
                 team4Component={returnTeam4Component()}
+                team5Component={returnTeam6Component()}
+                team6Component={returnTeam6Component()}
             />
             <br />
             <p className="footnote">* {config.leagueRules}</p>

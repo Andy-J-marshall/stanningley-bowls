@@ -134,3 +134,6 @@ Update team info in all components:
 Team Records:
 
 - gamesPerMatch for Monday and Wednesday are set to 6 and 8 for everything else. Is this still correct?
+
+# Updates required at end of each calendar year
+Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.

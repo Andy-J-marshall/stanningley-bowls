@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
 import config from '../config';

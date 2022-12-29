@@ -17,6 +17,7 @@ const live = {
         bowlingPrice: '45',
         bowlingPriceOnly: '5',
     },
+    // TODO check the URLs for LeedsParkVets
     teams: [
         {
             name: 'Monday Combined',
@@ -31,6 +32,20 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/LeedsParkVets/Tue',
             startTime: '1:30pm',
+        },
+        {
+            name: 'Tuesday',
+            age: 'Open Age',
+            desc: '8 singles games',
+            link: 'https://bowlsnet.uk/Leeds/Tue',
+            startTime: '1.30pm',
+        },
+        {
+            name: 'Wednesday',
+            age: 'Open Age',
+            desc: '6 singles games',
+            link: 'https://bowlsnet.uk/Leeds/Wed',
+            startTime: '6:15-6.45pm',
         },
         {
             name: 'Thursday Vets',
@@ -50,6 +65,8 @@ const live = {
     days: {
         'monday combined leeds': 'Monday Combined',
         'tuesday vets leeds': 'Tuesday Vets',
+        'tuesday leeds': 'Tuesday',
+        'wednesday half holiday leeds': 'Wednesday',
         'thursday vets leeds': 'Thursday Vets',
         'saturday leeds': 'Saturday',
     },

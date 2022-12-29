@@ -1,4 +1,3 @@
-import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
 function TeamTabs(props) {
@@ -8,6 +7,8 @@ function TeamTabs(props) {
     const team2Component = props.team2Component;
     const team3Component = props.team3Component;
     const team4Component = props.team4Component;
+    const team5Component = props.team5Component;
+    const team6Component = props.team6Component;
 
     return (
         <div>
@@ -18,15 +19,22 @@ function TeamTabs(props) {
                 <Tab eventKey="Monday" title="Mon">
                     {team1Component}
                 </Tab>
-                <Tab eventKey="Tuesday" title="Tues">
+                <Tab eventKey="Tuesday Vets" title="Tue (Vets)">
                     {team2Component}
                 </Tab>
-                <Tab eventKey="Thursday" title="Thur">
+                <Tab eventKey="Tuesday" title="Tue">
                     {team3Component}
                 </Tab>
-                <Tab eventKey="Saturday" title="Sat">
+                <Tab eventKey="Wednesday" title="Wed">
                     {team4Component}
                 </Tab>
+                <Tab eventKey="Thursday Vets" title="Thu (Vets)">
+                    {team5Component}
+                </Tab>
+                <Tab eventKey="Saturday" title="Sat">
+                    {team6Component}
+                </Tab>
+                {/* TODO check it displays properly */}
             </Tabs>
         </div>
     );
