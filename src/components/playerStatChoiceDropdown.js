@@ -17,7 +17,7 @@ function PlayerStatChoiceDropdown(props) {
     }
 
     return (
-        <div>
+        <div style={{ padding: '0.2rem' }}>
             <DropdownButton
                 variant="light"
                 onSelect={toggleAllStats}

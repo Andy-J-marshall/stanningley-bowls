@@ -15,7 +15,7 @@ function YearSelectDropdown(props) {
     }
 
     return (
-        <div>
+        <div style = {{padding: '0.2rem'}}>
             {yearsToDisplay > 1 && (
                 <DropdownButton
                     variant="light"
