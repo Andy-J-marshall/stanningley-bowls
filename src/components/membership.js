@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import config from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
 

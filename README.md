@@ -136,4 +136,18 @@ Team Records:
 - gamesPerMatch for Monday and Wednesday are set to 6 and 8 for everything else. Is this still correct?
 
 # Updates required at end of each calendar year
+
 Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.
+
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
+
+Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
+
+After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
+Update the default stats to display for `teamStats` and `combinedStats`.
+
+Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
+
+If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components.
+
+Update `yearFixturesAddedFor` in `fixtures.js`

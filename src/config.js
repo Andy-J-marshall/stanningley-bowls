@@ -38,14 +38,14 @@ const live = {
             age: 'Open Age',
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/Leeds/Tue',
-            startTime: '1.30pm',
+            startTime: '6:15-6.45pm',
         },
         {
             name: 'Wednesday',
             age: 'Open Age',
             desc: '6 singles games',
             link: 'https://bowlsnet.uk/Leeds/Wed',
-            startTime: '6:15-6.45pm',
+            startTime: '1.30pm',
         },
         {
             name: 'Thursday Vets',

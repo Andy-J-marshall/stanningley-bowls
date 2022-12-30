@@ -21,7 +21,7 @@ function TeamStats(props) {
     const wednesdayStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('wednesday')
     );
-    const thursdayStats = teamResults.find(
+    const thursdayVetsStats = teamResults.find(
         (team) => team.day.toLowerCase().includes('thursday')
     );
     const saturdayStats = teamResults.find(
@@ -80,7 +80,7 @@ function TeamStats(props) {
         return (
             <IndividualTeamStats
                 day="Thursday Vets Leeds"
-                stats={thursdayStats}
+                stats={thursdayVetsStats}
                 playerStats={playerResults}
             />
         );

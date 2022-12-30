@@ -1,4 +1,3 @@
-import React from 'react';
 import google from '../images/socials/maps_white.png';
 import facebook from '../images/socials/facebook_white.png';
 import instagram from '../images/socials/insta_white.png';

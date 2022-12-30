@@ -7,7 +7,6 @@ import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png
 import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept.png';
 
 // TODO update these files
-// TODO add placeholder page
 // TODO get the fixtures from bowlsnet instead?
 
 function FixturesResults() {
@@ -18,11 +17,12 @@ function FixturesResults() {
     const date = new Date();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
+    // TODO update
     const yearFixturesAddedFor = 2022; // Will need to change this when fixtures added for future years
 
-    return (
-        <div id="fixture" className="center">
-            {year === yearFixturesAddedFor ? (
+    if (year === yearFixturesAddedFor && month <= 9) {
+        return (
+            <div id="fixture" className="center">
                 <div>
                     <hr style={{ margin: 0 }} />
                     {4 >= month && (
@@ -92,13 +92,17 @@ function FixturesResults() {
                         </div>
                     )}
                 </div>
-            ) : (
-                <h3 style={{ padding: '2rem' }}>
-                    No fixtures are available yet.
-                </h3>
-            )}
-        </div>
-    );
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <h1>Fixtures</h1>
+                {month < 4 && <p>Fixtures are not currently available.</p>}
+                {month > 9 && <p>The season has finished</p>}
+            </div>
+        );
+    }
 }
 
 export default FixturesResults;

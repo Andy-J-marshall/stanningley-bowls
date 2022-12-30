@@ -20,8 +20,6 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
-// TODO update README to explain how to update script per year?
-
 function App() {
     // TODO change to 2023
     const [teamStats, setTeamStats] = useState(bowlsStats22);

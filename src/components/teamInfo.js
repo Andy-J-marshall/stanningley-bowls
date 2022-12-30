@@ -10,8 +10,6 @@ import config from '../config';
 
 const { teams } = config;
 
-// TODO add new teams
-
 teams.forEach((team) => {
     const teamName = team.name.toLowerCase();
     if (teamName.includes('monday')) {
@@ -20,7 +18,14 @@ teams.forEach((team) => {
     if (teamName.includes('tuesday vets')) {
         team.img = team2Img;
     }
-    if (teamName.includes('thursday')) {
+    // TODO change images for these 2
+    if (teamName === 'tuesday') {
+        team.img = team1Img;
+    }
+    if (teamName.includes('wednesday')) {
+        team.img = team4Img;
+    }
+    if (teamName.includes('thursday vets')) {
         team.img = team3Img;
     }
     if (teamName.includes('saturday')) {
@@ -72,15 +77,14 @@ function TeamInfo() {
             <div id="social-info" className="center page-component">
                 <h1>SOCIAL BOWLING</h1>
                 <p>
-                    Feel free to come along to one of our open social bowling
-                    sessions, complete beginner's welcome. These sessions
-                    currently run Saturday morning 10.30am - 12.30pm, Wednesday
-                    afternoon 2pm - 4pm and Wednesday evening 6pm - 8pm. Booking
-                    is not required but please be aware that sessions will not
-                    run in extreme weather conditions so you may want to contact
-                    us in advance to confirm the session is running. The first
-                    session is free and then you can choose a full or social
-                    membership for the remainder of the season.
+                    Come along to one of our open social bowling sessions,
+                    complete beginner's are welcome and the first session is
+                    free. These sessions currently run Saturday morning 10.30am
+                    - 12.30pm, Wednesday afternoon 2pm - 4pm and Wednesday
+                    evening 6pm - 8pm. Booking is not required but please be
+                    aware that sessions will not run in extreme weather
+                    conditions so you may want to contact us in advance to
+                    confirm the session is running.
                 </p>
                 <img style={{ width: '95%' }} src={socialBowlingImg}></img>
             </div>
