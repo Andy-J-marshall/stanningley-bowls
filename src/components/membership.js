@@ -40,6 +40,7 @@ function Membership() {
                 please bring proof you have paid this at another club.
             </p>
             <br />
+            {/* TODO still want this section? */}
             <h3>SOCIAL MEMBERSHIP</h3>
             <p>
                 If you are a beginner or infrequent visitor wanting to join our

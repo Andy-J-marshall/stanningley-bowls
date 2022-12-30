@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import upcomingFixturesApril from '../images/fixtures/upcoming_fixtures_April.png';
 import upcomingFixturesMay from '../images/fixtures/upcoming_fixtures_May.png';
 import upcomingFixturesJune from '../images/fixtures/upcoming_fixtures_June.png';
@@ -7,6 +7,8 @@ import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png
 import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept.png';
 
 // TODO update these files
+// TODO add placeholder page
+// TODO get the fixtures from bowlsnet instead?
 
 function FixturesResults() {
     useEffect(() => {

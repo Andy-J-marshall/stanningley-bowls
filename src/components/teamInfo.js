@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import team1Img from '../images/websiteImages/team1-team.webp';
 import team2Img from '../images/websiteImages/team2-team.webp';
@@ -9,6 +9,8 @@ import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 import config from '../config';
 
 const { teams } = config;
+
+// TODO add new teams
 
 teams.forEach((team) => {
     const teamName = team.name.toLowerCase();
