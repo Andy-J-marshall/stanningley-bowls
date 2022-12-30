@@ -68,11 +68,13 @@ function TeamRecords(props) {
         const drawPoints = draws > 0 ? draws * 0.5 : 0;
         const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
-        const gamesPerMatch = day.toLowerCase().includes('monday') || day.toLowerCase().includes('wednesday') ? 6 : 8; // there are only 6 games on a Monday and Wednesday
+        const gamesPerMatch =
+            day.toLowerCase().includes('monday') ||
+            day.toLowerCase().includes('wednesday')
+                ? 6
+                : 8; // there are only 6 games on a Monday and Wednesday
         const pointsPerGame =
-            totalPoints /
-            gamesPerMatch /
-            (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
+            totalPoints / gamesPerMatch / (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
         const aggPerGame = agg / gamesPerMatch / totalGames;
         const pointsConcededPerGame =
             opponentTotalPoints /
@@ -123,27 +125,31 @@ function TeamRecords(props) {
         }
     });
 
-    return (
-        <div id="team-record" className="center">
-            <h1>TEAM RECORDS</h1>
-            <RecordsTableDisplay
-                minGames={minGames}
-                playerOrTeam="Team"
-                bestWinPerc={bestWinPercentage}
-                bestWinPercPlayerOrTeam={bestWinPercentageTeam}
-                bestTeamPointsPerGame={bestTeamPointsPerGame}
-                bestTeamPointsPerGameTeam={bestTeamPointsPerGameTeam}
-                fewestPointsConcededPerGame={fewestPointsConcededPerGame}
-                fewestPointsConcededPerGameTeam={
-                    fewestPointsConcededPerGameTeam
-                }
-                bestTeamAggPerGame={bestTeamAggPerGame}
-                bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
-                lowestAggConcededPerGame={lowestAggConcededPerGame}
-                lowestAggConcededPerGameTeam={lowestAggConcededPerGameTeam}
-            />
-        </div>
-    );
+    if (fewestPointsConcededPerGameTeam.length > 0) {
+        return (
+            <div id="team-record" className="center">
+                <h1>TEAM RECORDS</h1>
+                <RecordsTableDisplay
+                    minGames={minGames}
+                    playerOrTeam="Team"
+                    bestWinPerc={bestWinPercentage}
+                    bestWinPercPlayerOrTeam={bestWinPercentageTeam}
+                    bestTeamPointsPerGame={bestTeamPointsPerGame}
+                    bestTeamPointsPerGameTeam={bestTeamPointsPerGameTeam}
+                    fewestPointsConcededPerGame={fewestPointsConcededPerGame}
+                    fewestPointsConcededPerGameTeam={
+                        fewestPointsConcededPerGameTeam
+                    }
+                    bestTeamAggPerGame={bestTeamAggPerGame}
+                    bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
+                    lowestAggConcededPerGame={lowestAggConcededPerGame}
+                    lowestAggConcededPerGameTeam={lowestAggConcededPerGameTeam}
+                />
+            </div>
+        );
+    } else {
+        return null;
+    }
 }
 
 export default TeamRecords;

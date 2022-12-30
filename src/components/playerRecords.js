@@ -441,38 +441,46 @@ function PlayerRecords(props) {
     });
 
     function allComponent() {
-        return (
-            <RecordsTableDisplay
-                minGames={minTotalGames}
-                playerOrTeam="Player"
-                mostGames={mostGames}
-                mostGamesPlayer={mostGamesPlayer}
-                mostWins={mostWins}
-                mostWinsPlayer={mostWinsPlayer}
-                bestWinPerc={bestWinPerc}
-                bestWinPercPlayerOrTeam={bestWinPercPlayer}
-                bestAverage={bestAverage}
-                bestAveragePlayer={bestAveragePlayer}
-                bestPoints={bestPoints}
-                bestPointsPlayer={bestPointsPlayer}
-            />
-        );
+        if (mostGames > 0) {
+            return (
+                <RecordsTableDisplay
+                    minGames={minTotalGames}
+                    playerOrTeam="Player"
+                    mostGames={mostGames}
+                    mostGamesPlayer={mostGamesPlayer}
+                    mostWins={mostWins}
+                    mostWinsPlayer={mostWinsPlayer}
+                    bestWinPerc={bestWinPerc}
+                    bestWinPercPlayerOrTeam={bestWinPercPlayer}
+                    bestAverage={bestAverage}
+                    bestAveragePlayer={bestAveragePlayer}
+                    bestPoints={bestPoints}
+                    bestPointsPlayer={bestPointsPlayer}
+                />
+            );
+        } else {
+            return <p>No games played</p>;
+        }
     }
 
     function returnMondayTeamComponent() {
         if (useMondayStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minMonGames}
-                    playerOrTeam="Player"
-                    mostWins={mostMondayWins}
-                    mostWinsPlayer={mostMondayWinsPlayer}
-                    bestWinPerc={bestMondayWinPerc}
-                    bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
-                    bestAverage={bestMondayAverage}
-                    bestAveragePlayer={bestMondayAveragePlayer}
-                />
-            );
+            if (bestMondayAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minMonGames}
+                        playerOrTeam="Player"
+                        mostWins={mostMondayWins}
+                        mostWinsPlayer={mostMondayWinsPlayer}
+                        bestWinPerc={bestMondayWinPerc}
+                        bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
+                        bestAverage={bestMondayAverage}
+                        bestAveragePlayer={bestMondayAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
         } else {
             return <p>No stats available for this day</p>;
         }
@@ -480,114 +488,143 @@ function PlayerRecords(props) {
 
     function returnTuesdayVetsTeamComponent() {
         if (useTuesdayVetsStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minTuesVetsGames}
-                    playerOrTeam="Player"
-                    mostWins={mostTuesdayVetsWins}
-                    mostWinsPlayer={mostTuesdayVetsWinsPlayer}
-                    bestWinPerc={bestTuesdayVetsWinPerc}
-                    bestWinPercPlayerOrTeam={bestTuesdayVetsWinPercPlayer}
-                    bestAverage={bestTuesdayVetsAverage}
-                    bestAveragePlayer={bestTuesdayVetsAveragePlayer}
-                />
-            );
-        } else {
-            return <p>No stats available for this day</p>
-        }
-    }
-
-    function returnTuesdayTeamComponent() {
-        if (useTuesdayStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minTuesGames}
-                    playerOrTeam="Player"
-                    mostWins={mostTuesdayWins}
-                    mostWinsPlayer={mostTuesdayWinsPlayer}
-                    bestWinPerc={bestTuesdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
-                    bestAverage={bestTuesdayAverage}
-                    bestAveragePlayer={bestTuesdayAveragePlayer}
-                />
-            );
-        } else {
-            return <p>No stats available for this day</p>
-        }
-    }
-
-    function returnWednesdayTeamComponent() {
-        if (useWednesdayStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minWedGames}
-                    playerOrTeam="Player"
-                    mostWins={mostWednesdayWins}
-                    mostWinsPlayer={mostWednesdayWinsPlayer}
-                    bestWinPerc={bestWednesdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestWednesdayWinPercPlayer}
-                    bestAverage={bestWednesdayAverage}
-                    bestAveragePlayer={bestWednesdayAveragePlayer}
-                />
-            );
-        } else {
-            return <p>No stats available for this day</p>
-        }
-    }
-
-    function returnThursdayVetsTeamComponent() {
-        if (useThursdayVetsStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minThurVetsGames}
-                    playerOrTeam="Player"
-                    mostWins={mostThursdayVetsWins}
-                    mostWinsPlayer={mostThursdayVetsWinsPlayer}
-                    bestWinPerc={bestThursdayVetsWinPerc}
-                    bestWinPercPlayerOrTeam={bestThursdayVetsWinPercPlayer}
-                    bestAverage={bestThursdayVetsAverage}
-                    bestAveragePlayer={bestThursdayVetsAveragePlayer}
-                />
-            );
-        } else {
-            return <p>No stats available for this day</p>
-        }
-    }
-
-    function returnSaturdayTeamComponent() {
-        if (useSaturdayStats) {
-            return (
-                <RecordsTableDisplay
-                    minGames={minSatGames}
-                    playerOrTeam="Player"
-                    mostWins={mostSaturdayWins}
-                    mostWinsPlayer={mostSaturdayWinsPlayer}
-                    bestWinPerc={bestSaturdayWinPerc}
-                    bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
-                    bestAverage={bestSaturdayAverage}
-                    bestAveragePlayer={bestSaturdayAveragePlayer}
-                />
-            );
+            if (bestTuesdayVetsAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minTuesVetsGames}
+                        playerOrTeam="Player"
+                        mostWins={mostTuesdayVetsWins}
+                        mostWinsPlayer={mostTuesdayVetsWinsPlayer}
+                        bestWinPerc={bestTuesdayVetsWinPerc}
+                        bestWinPercPlayerOrTeam={bestTuesdayVetsWinPercPlayer}
+                        bestAverage={bestTuesdayVetsAverage}
+                        bestAveragePlayer={bestTuesdayVetsAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
         } else {
             return <p>No stats available for this day</p>;
         }
     }
 
-    return (
-        <div>
-            <h1>PLAYER RECORDS</h1>
-            <TeamTabs
-                id="player-record"
-                allComponent={allComponent()}
-                team1Component={returnMondayTeamComponent()}
-                team2Component={returnTuesdayVetsTeamComponent()}
-                team3Component={returnTuesdayTeamComponent()}
-                team4Component={returnWednesdayTeamComponent()}
-                team5Component={returnThursdayVetsTeamComponent()}
-                team6Component={returnSaturdayTeamComponent()}
-            />
-        </div>
-    );
+    function returnTuesdayTeamComponent() {
+        if (useTuesdayStats) {
+            if (bestTuesdayAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minTuesGames}
+                        playerOrTeam="Player"
+                        mostWins={mostTuesdayWins}
+                        mostWinsPlayer={mostTuesdayWinsPlayer}
+                        bestWinPerc={bestTuesdayWinPerc}
+                        bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
+                        bestAverage={bestTuesdayAverage}
+                        bestAveragePlayer={bestTuesdayAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
+        } else {
+            return <p>No stats available for this day</p>;
+        }
+    }
+
+    function returnWednesdayTeamComponent() {
+        if (useWednesdayStats) {
+            if (bestWednesdayAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minWedGames}
+                        playerOrTeam="Player"
+                        mostWins={mostWednesdayWins}
+                        mostWinsPlayer={mostWednesdayWinsPlayer}
+                        bestWinPerc={bestWednesdayWinPerc}
+                        bestWinPercPlayerOrTeam={bestWednesdayWinPercPlayer}
+                        bestAverage={bestWednesdayAverage}
+                        bestAveragePlayer={bestWednesdayAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
+        } else {
+            return <p>No stats available for this day</p>;
+        }
+    }
+
+    function returnThursdayVetsTeamComponent() {
+        if (useThursdayVetsStats) {
+            if (bestThursdayVetsAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minThurVetsGames}
+                        playerOrTeam="Player"
+                        mostWins={mostThursdayVetsWins}
+                        mostWinsPlayer={mostThursdayVetsWinsPlayer}
+                        bestWinPerc={bestThursdayVetsWinPerc}
+                        bestWinPercPlayerOrTeam={bestThursdayVetsWinPercPlayer}
+                        bestAverage={bestThursdayVetsAverage}
+                        bestAveragePlayer={bestThursdayVetsAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
+        } else {
+            return <p>No stats available for this day</p>;
+        }
+    }
+
+    function returnSaturdayTeamComponent() {
+        if (useSaturdayStats) {
+            if (bestSaturdayAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minSatGames}
+                        playerOrTeam="Player"
+                        mostWins={mostSaturdayWins}
+                        mostWinsPlayer={mostSaturdayWinsPlayer}
+                        bestWinPerc={bestSaturdayWinPerc}
+                        bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
+                        bestAverage={bestSaturdayAverage}
+                        bestAveragePlayer={bestSaturdayAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
+        } else {
+            return <p>No stats available for this day</p>;
+        }
+    }
+
+    if (mostGames > 0) {
+        return (
+            <div>
+                <h1>PLAYER RECORDS</h1>
+                <TeamTabs
+                    id="player-record"
+                    allComponent={allComponent()}
+                    team1Component={returnMondayTeamComponent()}
+                    team2Component={returnTuesdayVetsTeamComponent()}
+                    team3Component={returnTuesdayTeamComponent()}
+                    team4Component={returnWednesdayTeamComponent()}
+                    team5Component={returnThursdayVetsTeamComponent()}
+                    team6Component={returnSaturdayTeamComponent()}
+                />
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <h1>PLAYER RECORDS</h1>
+                <p>No games played</p>
+            </div>
+        );
+    }
 }
 
 export default PlayerRecords;
