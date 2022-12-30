@@ -106,7 +106,7 @@ function TeamStats(props) {
                 team2Component={returnTeam2Component()}
                 team3Component={returnTeam3Component()}
                 team4Component={returnTeam4Component()}
-                team5Component={returnTeam6Component()}
+                team5Component={returnTeam5Component()}
                 team6Component={returnTeam6Component()}
             />
             <br />

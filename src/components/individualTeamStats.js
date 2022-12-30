@@ -46,6 +46,7 @@ function IndividualTeamStats(props) {
 
         return (
             <div id={day + '-team-results'}>
+                {/* TODO add default if no games played? */}
                 <StatsTableDisplay
                     totalGames={totalGames}
                     totalWins={totalWins}
@@ -66,6 +67,7 @@ function IndividualTeamStats(props) {
                     leaguePosition={leaguePosition}
                 />
 
+                {/* TODO add default if no games played? */}
                 <div id="player-stats-per-team">
                     <h1>PLAYERS</h1>
                     <div className="center table" style={{ width: '97%' }}>
@@ -104,7 +106,12 @@ function IndividualTeamStats(props) {
             </div>
         );
     } else {
-        return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+        return (
+            <p>
+                {config.teamNames.short} did not play in this league for the
+                selected year
+            </p>
+        );
     }
 }
 
