@@ -23,8 +23,6 @@ function PlayerStats(props) {
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
     const [showStatSummary, setShowStatSummary] = useState(false);
-    const [showStatSelectionDropdown, setShowStatSelectionDropdown] =
-        useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const defaultDropDownText = 'Stanningley Stats';
     const [dropDownText, setDropDownText] = useState(defaultDropDownText);
@@ -60,7 +58,6 @@ function PlayerStats(props) {
     }
 
     function searchForPlayer(searchedName) {
-        setShowStatSelectionDropdown(false);
         setShowStatSummary(false);
         setStatsToUse(playerResults);
         setDropDownText(defaultDropDownText);
@@ -72,14 +69,11 @@ function PlayerStats(props) {
                 : false;
         if (validPlayer && !searchedName.includes('show all')) {
             setPlayerFound(true);
-            const teamDaysPlayed = Object.keys(config.days); // TODO currently won't show old non-stan stats for some players e.g. Andy W
+            const teamDaysPlayed = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
-                if (!teamDaysPlayed.includes(formattedDay)) {
-                    setShowStatSelectionDropdown(true); // TODO need to change this?
-                }
                 if (teamDaysPlayed.includes(formattedDay)) {
                     anyTeamDays = true;
                 }
@@ -87,7 +81,6 @@ function PlayerStats(props) {
             if (!anyTeamDays) {
                 setStatsToUse(combinedPlayerResults);
                 setShowStatSummary(true);
-                setShowStatSelectionDropdown(false);
             }
         } else {
             setPlayerFound(false);
@@ -124,7 +117,6 @@ function PlayerStats(props) {
                 name={playerName}
                 playersStats={statsToUse}
                 showStatSummary={showStatSummary}
-                playedForOtherTeam={showStatSelectionDropdown}
             ></Player>
         );
     }
@@ -199,12 +191,10 @@ function PlayerStats(props) {
             {/* Only shows searched for player */}
             {!loading && searchedPlayerName && (
                 <ListGroup>
-                    {showStatSelectionDropdown && (
-                        <PlayerStatChoiceDropdown
-                            dropDownText={dropDownText}
-                            statsCallback={statsCallback}
-                        />
-                    )}
+                    <PlayerStatChoiceDropdown
+                        dropDownText={dropDownText}
+                        statsCallback={statsCallback}
+                    />
                     {keys.map((p, index) => {
                         const playerName = keys[index];
                         if (

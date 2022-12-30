@@ -83,16 +83,12 @@ export class PlayerStatsPage {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
   }
 
-  async checkStatsDropdownNotExists() {
-    await expect(this.teamDropDown).not.toBeVisible();
-  }
-
   async checkStatsDropdownExists() {
     await expect(this.teamDropDown).toBeVisible();
   }
 
-  async checkYearDropdownNotExists() {
-    await expect(this.yearSelectDropdown).not.toBeVisible();
+  async checkYearDropdownExists() {
+    await expect(this.yearSelectDropdown).toBeVisible();
   }
 
   async checkTeamAccordionHeadersExist() {

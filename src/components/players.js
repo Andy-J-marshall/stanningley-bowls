@@ -9,14 +9,13 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
     const showStatSummary = props.showStatSummary;
-    const playedForOtherTeam = props.playedForOtherTeam;
 
     const stats = returnPlayerStats(playersStats, player);
 
     function showStatsAdvice() {
         return (
             <div id="stats-advice">
-                {playedForOtherTeam && !showStatSummary && (
+                {!showStatSummary && (
                     <p style={{ fontSize: '15px' }}>
                         (Select All Team Stats in the above drop down to view
                         stats whilst playing for non-Stanningley teams)
