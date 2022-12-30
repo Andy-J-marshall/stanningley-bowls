@@ -1,4 +1,3 @@
-import React from 'react';
 import { combineTeamStats } from '../helpers/statsHelper';
 import StatsTableDisplay from './statsTableDisplay';
 
@@ -28,33 +27,37 @@ function CombinedTeamStats(props) {
         totalGames,
     } = combinedStats;
 
-    return (
-        <div id="combined-team-results">
-            <div id="combined-team-win-losses">
-                <StatsTableDisplay
-                    totalGames={totalGames}
-                    totalWins={totalWins}
-                    totalLosses={totalLosses}
-                    totalDraws={totalDraws}
-                    agg={combinedAgg}
-                    opponentAgg={combinedOpponentAgg}
-                    teamPoints={combinedTotalPoints}
-                    opponentTeamPoints={combinedOpponentTotalPoints}
-                    teamsBeaten={combinedBeaten}
-                    teamsLostTo={combinedBeatenBy}
-                    teamsDrawn={combinedDrawnWith}
-                    homeWins={combinedHomeWins}
-                    awayWins={combinedAwayWins}
-                    cupWins={combinedCupWins}
-                    homeLosses={combinedHomeLosses}
-                    awayLosses={combinedAwayLosses}
-                    cupLosses={combinedCupLosses}
-                    homeDraws={combinedHomeDraws}
-                    awayDraws={combinedAwayDraws}
-                />
+    if (totalGames > 0) {
+        return (
+            <div id="combined-team-results">
+                <div id="combined-team-win-losses">
+                    <StatsTableDisplay
+                        totalGames={totalGames}
+                        totalWins={totalWins}
+                        totalLosses={totalLosses}
+                        totalDraws={totalDraws}
+                        agg={combinedAgg}
+                        opponentAgg={combinedOpponentAgg}
+                        teamPoints={combinedTotalPoints}
+                        opponentTeamPoints={combinedOpponentTotalPoints}
+                        teamsBeaten={combinedBeaten}
+                        teamsLostTo={combinedBeatenBy}
+                        teamsDrawn={combinedDrawnWith}
+                        homeWins={combinedHomeWins}
+                        awayWins={combinedAwayWins}
+                        cupWins={combinedCupWins}
+                        homeLosses={combinedHomeLosses}
+                        awayLosses={combinedAwayLosses}
+                        cupLosses={combinedCupLosses}
+                        homeDraws={combinedHomeDraws}
+                        awayDraws={combinedAwayDraws}
+                    />
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return <p>No games played</p>;
+    }
 }
 
 export default CombinedTeamStats;

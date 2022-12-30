@@ -6,9 +6,7 @@ from datetime import date
 import teamDetails
 import utils
 
-# TODO change back
-# year = str(date.today().year)
-year = "2023"
+year = str(date.today().year)
 
 teamNames = teamDetails.teamNames
 teamDays = teamDetails.teamDays

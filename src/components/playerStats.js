@@ -32,6 +32,7 @@ function PlayerStats(props) {
     const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
 
+    // TODO simplify layout for stats overview?
     useEffect(() => {
         if (!loaded) {
             window.scrollTo(0, 0);

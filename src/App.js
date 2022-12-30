@@ -44,10 +44,10 @@ function App() {
         year2022: combinedBowlsStats22,
         year2023: combinedBowlsStats23,
     };
+    //TODO create a combined stats option?
 
     function statsCallback(year) {
-        // const currentYear = new Date().getFullYear(); // TODO change back
-        const currentYear = 2023;
+        const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;
         switch (year.toString()) {

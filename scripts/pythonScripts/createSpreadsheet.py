@@ -5,9 +5,8 @@ from datetime import date
 import utils
 
 teams = utils.teamDays
-# TODO change back
-# year = str(date.today().year)
-year = "2023"
+
+year = str(date.today().year)
 filename = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 
 if os.path.exists(filename):

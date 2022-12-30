@@ -5,9 +5,7 @@ import os
 from datetime import date
 import utils
 
-# TODO change back
-# year = str(date.today().year)
-year = "2023"
+year = str(date.today().year)
 
 leaguesDays = utils.teamDays
 players = utils.players

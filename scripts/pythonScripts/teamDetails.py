@@ -14,7 +14,7 @@ players = [
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller',
     'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson', 'dave hudson', 'neil porter',
     'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard',
-    'melvyn miller', 'stuart potter'
+    'melvyn miller', 'stuart potter', 'colin haque'
     # TODO update player names
     # TODO need to check these are correct spellings still
 ]
@@ -30,9 +30,8 @@ traitorPlayers = {
     'Tuesday Vets Leeds': [],
     'Tuesday Leeds': ['mario biancardo', 'shirley biancardo'],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'clifford brogie'],
-    # TODO remove Mario and Shirley
-    'Thursday Vets Leeds': ['mario biancardo', 'shirley biancardo'],
-    'Saturday Leeds': ['mario biancardo', 'shirley biancardo', 'dave hudson', 'clifford brogie'],
+    'Thursday Vets Leeds': [],
+    'Saturday Leeds': ['dave hudson', 'clifford brogie'],
 }
 
 def calculateGamePoints(points):

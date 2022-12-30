@@ -10,6 +10,7 @@ function TeamTabs(props) {
     const team5Component = props.team5Component;
     const team6Component = props.team6Component;
 
+    // TODO improve layout?
     return (
         <div>
             <Tabs defaultActiveKey="Combined" id={id} className="mb-3 tabs">
