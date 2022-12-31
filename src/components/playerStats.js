@@ -9,6 +9,7 @@ import {
 import Player from './players';
 import PlayerStatSummary from './playerStatSummary';
 import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
+import AllTimePlayerStats from './allTimePlayerStats';
 import { returnPlayerStats } from '../helpers/playersHelper';
 import config from '../config';
 
@@ -17,6 +18,8 @@ import 'react-bootstrap-typeahead/css/Typeahead.css';
 function PlayerStats(props) {
     const combinedStats = props.combinedStats;
     const stats = props.stats;
+    const statsForEveryYearArray = props.statsForEveryYearArray;
+    const combinedStatsForEveryYearArray = props.combinedStatsForEveryYearArray;
 
     const { playerResults } = stats;
     const combinedPlayerResults = combinedStats.playerResults;
@@ -26,19 +29,20 @@ function PlayerStats(props) {
     const [loaded, setLoaded] = useState(false);
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
+    const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
+        statsForEveryYearArray
+    );
     const defaultDropDownText = 'Stanningley Stats';
     const [dropDownText, setDropDownText] = useState(defaultDropDownText);
     const [playerFound, setPlayerFound] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const keys = Object.keys(combinedPlayerResults).sort();
-    const playerNameArray = keys.map((p) => p.toUpperCase());
-
-    // TODO add ability to click on a player for their detailed stats?
+    const players = Object.keys(combinedPlayerResults).sort();
+    const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const statsToDisplayArray = [];
-    const playerNames = Object.keys(statsToUse);
+    // TODO add ability to click on a player for their detailed stats?
 
-    playerNames.sort().forEach((player) => {
+    players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
             const stats = {
@@ -63,8 +67,10 @@ function PlayerStats(props) {
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
+            setAllYearsStatsToUse(combinedStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
+            setAllYearsStatsToUse(statsForEveryYearArray);
         }
     });
 
@@ -87,7 +93,8 @@ function PlayerStats(props) {
         setSearchedPlayerName(searchedName);
 
         const validPlayer =
-            searchedName && playerNameArray.includes(searchedName.toUpperCase())
+            searchedName &&
+            playerSearchNameArray.includes(searchedName.toUpperCase())
                 ? true
                 : false;
         if (validPlayer && !searchedName.includes('show all')) {
@@ -151,7 +158,7 @@ function PlayerStats(props) {
         if (gamesPlayedThisYear) {
             return <PlayerStatSummary playerStats={statsToDisplayArray} />;
         } else {
-            return <p>No stats available</p>;
+            return <p>No stats available for the selected year</p>;
         }
     }
 
@@ -170,7 +177,7 @@ function PlayerStats(props) {
                         id="player-search"
                         placeholder="Player..."
                         onChange={handleChange}
-                        options={['SHOW ALL'].concat(playerNameArray)}
+                        options={['SHOW ALL'].concat(playerSearchNameArray)}
                         selected={value}
                         size="lg"
                         renderMenu={(players, menuProps) => (
@@ -202,18 +209,22 @@ function PlayerStats(props) {
                 </Button>
             </Form>
             <br />
-
             {loading && (
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </Spinner>
             )}
 
+            {/* TODO only show if stats found? */}
+            <PlayerStatChoiceDropdown
+                dropDownText={dropDownText}
+                statsCallback={statsCallback}
+            />
+
             {/* Shows all players */}
             {((!loading && !searchedPlayerName) ||
                 searchedPlayerName.toLowerCase() === 'show all') &&
                 returnStatsTable()}
-
             {/* Only shows searched for player */}
             {!loading && searchedPlayerName && (
                 <ListGroup>
@@ -221,8 +232,8 @@ function PlayerStats(props) {
                         dropDownText={dropDownText}
                         statsCallback={statsCallback}
                     />
-                    {keys.map((p, index) => {
-                        const playerName = keys[index];
+                    {players.map((p, index) => {
+                        const playerName = players[index];
                         if (
                             playerName.toLowerCase() ===
                             searchedPlayerName.toLowerCase()
@@ -237,6 +248,13 @@ function PlayerStats(props) {
             {!loading && searchedPlayerName && !playerFound && (
                 <h2 style={{ padding: '1rem 0 4rem 0' }}>Player not found</h2>
             )}
+            {/* // TODO When to display this? */}
+            <br />
+            {!loading &&
+                !searchedPlayerName &&
+                statsForEveryYearArray.length > 1 && (
+                    <AllTimePlayerStats statsArray={allYearsStatsToUse} />
+                )}
         </div>
     );
 }

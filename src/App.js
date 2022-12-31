@@ -20,9 +20,6 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
-// TODO remove
-// import AllTimePlayerStats from './components/allTimePlayerStats';
-
 function App() {
     // TODO change to 2023
     const [teamStats, setTeamStats] = useState(bowlsStats22);
@@ -45,7 +42,8 @@ function App() {
         year2022: combinedBowlsStats22,
         year2023: combinedBowlsStats23,
     };
-    //TODO create a combined stats option?
+    const statsForEveryYearArray = [bowlsStats22, bowlsStats23];
+    const combinedStatsForEveryYearArray = [combinedBowlsStats22, combinedBowlsStats23];
 
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
@@ -74,8 +72,6 @@ function App() {
         <div id="app">
             <Header />
             <Navigation />
-            {/* TODO remove */}
-            {/* <AllTimePlayerStats statsArray={[bowlsStats22, bowlsStats23]} /> */}
             <Routes>
                 <Route path="" element={<Home />} />
                 <Route path="/home" element={<Home />} />
@@ -102,6 +98,8 @@ function App() {
                             <PlayerStats
                                 stats={teamStats}
                                 combinedStats={combinedStats}
+                                statsForEveryYearArray={statsForEveryYearArray}
+                                combinedStatsForEveryYearArray={combinedStatsForEveryYearArray}
                             />
                         }
                     />

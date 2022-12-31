@@ -16,6 +16,7 @@ function PlayerStatChoiceDropdown(props) {
         statsCallback(allStatsToggle);
     }
 
+    // TODO change to tick box?
     return (
         <div style={{ padding: '0.2rem' }}>
             <DropdownButton
