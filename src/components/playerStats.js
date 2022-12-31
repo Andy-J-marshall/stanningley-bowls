@@ -7,7 +7,9 @@ import {
     MenuItem,
 } from 'react-bootstrap-typeahead';
 import Player from './players';
+import PlayerStatSummary from './playerStatSummary';
 import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
+import { returnPlayerStats } from '../helpers/playersHelper';
 import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
@@ -32,7 +34,27 @@ function PlayerStats(props) {
     const keys = Object.keys(combinedPlayerResults).sort();
     const playerNameArray = keys.map((p) => p.toUpperCase());
 
-    // TODO simplify layout for stats overview?
+    // TODO add ability to click on a player for their detailed stats?
+    const statsToDisplayArray = [];
+    const playerNames = Object.keys(statsToUse);
+
+    playerNames.sort().forEach((player) => {
+        const playerStats = returnPlayerStats(statsToUse, player);
+        if (playerStats) {
+            const stats = {
+                player,
+                games: playerStats.gamesPlayed,
+                wins: playerStats.totalWins,
+                agg: playerStats.totalAgg,
+                aggAgainst: playerStats.totalAggAgainst,
+                average:
+                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
+                    playerStats.gamesPlayed,
+            };
+            statsToDisplayArray.push(stats);
+        }
+    });
+
     useEffect(() => {
         if (!loaded) {
             window.scrollTo(0, 0);
@@ -122,6 +144,17 @@ function PlayerStats(props) {
         );
     }
 
+    function returnStatsTable() {
+        const gamesPlayedThisYear = statsToDisplayArray.find(
+            (player) => player.games > 0
+        );
+        if (gamesPlayedThisYear) {
+            return <PlayerStatSummary playerStats={statsToDisplayArray} />;
+        } else {
+            return <p>No stats available</p>;
+        }
+    }
+
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     return (
@@ -178,16 +211,8 @@ function PlayerStats(props) {
 
             {/* Shows all players */}
             {((!loading && !searchedPlayerName) ||
-                searchedPlayerName.toLowerCase() === 'show all') && (
-                <ListGroup>
-                    {keys.map((p, index) => {
-                        const playerName = keys[index];
-                        {
-                            return showPlayerStats(index, p, playerName);
-                        }
-                    })}
-                </ListGroup>
-            )}
+                searchedPlayerName.toLowerCase() === 'show all') &&
+                returnStatsTable()}
 
             {/* Only shows searched for player */}
             {!loading && searchedPlayerName && (
