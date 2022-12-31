@@ -93,6 +93,7 @@ function PlayerStats(props) {
 
     function searchForPlayer(searchedName) {
         setShowStatSummary(false);
+        setShowStatsSinceStart(false);
         setStatsToUse(playerResults);
         setSearchedPlayerName(searchedName);
 
@@ -176,15 +177,6 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
-            {/* TODO Reword? */}
-            {!loading &&
-                (!searchedPlayerName ||
-                    searchedPlayerName.toLowerCase() === 'show all') && (
-                    <p>
-                        Searching for a player will display a detailed breakdown
-                        of their stats.
-                    </p>
-                )}
             <Form
                 id="player-search-form"
                 className="center"
@@ -233,17 +225,26 @@ function PlayerStats(props) {
                 </Spinner>
             )}
 
+            {/* Shows Summary of all players stats for selected year */}
+            {!showStatsSinceStart &&
+                !loading &&
+                (!searchedPlayerName ||
+                    searchedPlayerName.toLowerCase() === 'show all') &&
+                returnStatsTable()}
+
+            {/* Shows Summary of all players stats since 2022 */}
+            {showStatsSinceStart &&
+                !loading &&
+                statsForEveryYearArray.length > 1 && (
+                    <AllTimePlayerStats statsArray={allYearsStatsToUse} />
+                )}
+
             <PlayerStatOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
             />
 
-            {/* Shows all players */}
-            {((!showStatsSinceStart && !loading && !searchedPlayerName) ||
-                searchedPlayerName.toLowerCase() === 'show all') &&
-                returnStatsTable()}
-
-            {/* Only shows searched for player */}
+            {/* Shows detailed stats for searched player */}
             {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <ListGroup>
                     {players.map((p, index) => {
@@ -259,6 +260,7 @@ function PlayerStats(props) {
                     })}
                 </ListGroup>
             )}
+
             {!loading &&
                 searchedPlayerName &&
                 !playerFound &&
@@ -266,12 +268,6 @@ function PlayerStats(props) {
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
                         Player not found
                     </h2>
-                )}
-
-            {showStatsSinceStart &&
-                !loading &&
-                statsForEveryYearArray.length > 1 && (
-                    <AllTimePlayerStats statsArray={allYearsStatsToUse} />
                 )}
         </div>
     );
