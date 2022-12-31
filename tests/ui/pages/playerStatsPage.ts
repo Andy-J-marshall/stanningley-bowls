@@ -27,10 +27,9 @@ export class PlayerStatsPage {
   readonly totalWins: Locator;
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
-  readonly teamDropDown: Locator;
+  readonly teamCheckBox: Locator;
   readonly teamStatsSelect: Locator;
   readonly allStatsSelect: Locator;
-  readonly statsAdviceMessage: Locator;
   readonly yearSelectDropdown: Locator;
 
   constructor(page: Page) {
@@ -55,10 +54,9 @@ export class PlayerStatsPage {
     this.totalWins = page.locator('#totalWins');
     this.totalLosses = page.locator('#totalLosses');
     this.totalAverage = page.locator('#totalAverage');
-    this.teamDropDown = page.locator('#all-stats-select-dropdown-button');
+    this.teamCheckBox = page.locator('#all-stats-select-checkbox');
     this.teamStatsSelect = page.locator('#team-stats-selector');
     this.allStatsSelect = page.locator('#all-stats-selector');
-    this.statsAdviceMessage = page.locator('#stats-advice');
     this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
   }
 
@@ -81,10 +79,6 @@ export class PlayerStatsPage {
 
   async checkPlayerName(expectedPlayer: string) {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
-  }
-
-  async checkStatsDropdownExists() {
-    await expect(this.teamDropDown).toBeVisible();
   }
 
   async checkYearDropdownExists() {
@@ -110,13 +104,12 @@ export class PlayerStatsPage {
   }
 
   async selectTeamStatsDropdown(option: string) {
-    await this.teamDropDown.click();
+    await this.teamCheckBox.click();
     if (option.toUpperCase() === 'ALL TEAM STATS') {
       await this.allStatsSelect.click();
     }
     if (option.toUpperCase() === 'STANNINGLEY STATS') {
       await this.teamStatsSelect.click();
-      await this.statsAdviceMessage.isVisible();
     }
   }
 

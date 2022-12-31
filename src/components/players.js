@@ -12,19 +12,6 @@ function Players(props) {
 
     const stats = returnPlayerStats(playersStats, player);
 
-    function showStatsAdvice() {
-        return (
-            <div id="stats-advice">
-                {!showStatSummary && (
-                    <p style={{ fontSize: '15px' }}>
-                        (Select All Team Stats in the above drop down to view
-                        stats whilst playing for non-Stanningley teams)
-                    </p>
-                )}
-            </div>
-        );
-    }
-
     if (stats) {
         const {
             totalAgg,
@@ -126,7 +113,6 @@ function Players(props) {
                                 </p>
                             )}
                             {showStatSummary && <p>No games played.</p>}
-                            {showStatsAdvice()}
                         </div>
                     )}
                     {gamesPlayed > 0 && (
@@ -179,7 +165,6 @@ function Players(props) {
                                                 </p>
                                             </div>
                                         )}
-                                        {showStatsAdvice()}
                                     </div>
                                 </Accordion.Body>
                             </Accordion.Item>

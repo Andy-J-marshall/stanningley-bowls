@@ -176,13 +176,13 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
-            {/* TODO add text to explain what search is for */}
+            {/* TODO Reword? */}
             {!loading &&
                 (!searchedPlayerName ||
                     searchedPlayerName.toLowerCase() === 'show all') && (
                     <p>
                         Searching for a player will display a detailed breakdown
-                        of their stats
+                        of their stats.
                     </p>
                 )}
             <Form

@@ -1,4 +1,4 @@
-import { Form } from 'react-bootstrap';
+import { Form, Row, Col, Accordion } from 'react-bootstrap';
 
 function PlayerStatChoiceDropdown(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
@@ -17,27 +17,44 @@ function PlayerStatChoiceDropdown(props) {
     return (
         <div
             style={{
-                marginLeft: '1.5rem',
+                margin: '0.8rem',
                 textAlign: 'left',
-                fontSize: '15px'
+                fontSize: '15px',
             }}
         >
-            <Form>
-                {/* TODO left align? Show on same row? */}
-                <Form.Group className="mb-3" controlId="searchOptions">
-                    <Form.Check
-                        onClick={toggleAllTeamStats}
-                        type="checkbox"
-                        label="Include Stats For Other Teams?"
-                    />
-                    <Form.Check
-                        onClick={toggleAllYearStats}
-                        type="checkbox"
-                        label="Show All Stats Since 2022"
-                    />
-                    {/* TODO this displays when searching for specific player? */}
-                </Form.Group>
-            </Form>
+            <Accordion>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>OPTIONS</Accordion.Header>
+                    <Accordion.Body>
+                        <Form style={{ display: 'inline-block' }}>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="searchOptions"
+                            >
+                                {/* TODO this displays when searching for specific player? */}
+                                <Row>
+                                    <Col>
+                                        <Form.Check
+                                            id="#all-stats-select-checkbox"
+                                            onClick={toggleAllTeamStats}
+                                            type="checkbox"
+                                            label="Include stats whilst playing for other teams"
+                                        />
+                                    </Col>
+                                    <Col>
+                                        <Form.Check
+                                            id="#all-years-select-checkbox"
+                                            onClick={toggleAllYearStats}
+                                            type="checkbox"
+                                            label="Show stats summary for all seasons since 2022"
+                                        />
+                                    </Col>
+                                </Row>
+                            </Form.Group>
+                        </Form>
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
         </div>
     );
 }
