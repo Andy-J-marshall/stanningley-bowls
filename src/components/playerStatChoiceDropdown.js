@@ -1,49 +1,43 @@
-import { Dropdown, DropdownButton } from 'react-bootstrap';
-import config from '../config';
+import { Form } from 'react-bootstrap';
 
 function PlayerStatChoiceDropdown(props) {
-    const statsCallback = props.statsCallback;
-    const dropDownText = props.dropDownText;
+    const allTeamStatsCallback = props.allTeamStatsCallback;
+    const allYearStatsCallback = props.allYearStatsCallback;
 
-    function toggleAllStats(event) {
-        const option = event.replace('#', '').toString();
-        let allStatsToggle;
-        if (option.toLowerCase().includes('all')) {
-            allStatsToggle = true;
-        } else {
-            allStatsToggle = false;
-        }
-        statsCallback(allStatsToggle);
+    function toggleAllTeamStats(event) {
+        const allTeamStatsToggle = event.currentTarget.checked;
+        allTeamStatsCallback(allTeamStatsToggle);
     }
 
-    // TODO change to tick box?
+    function toggleAllYearStats(event) {
+        const allYearStatsToggle = event.currentTarget.checked;
+        allYearStatsCallback(allYearStatsToggle);
+    }
+
     return (
-        <div style={{ padding: '0.2rem' }}>
-            <DropdownButton
-                variant="light"
-                onSelect={toggleAllStats}
-                id="all-stats-select-dropdown-button"
-                title={dropDownText}
-                style={{
-                    display: 'flex',
-                    justifyContent: 'left',
-                }}
-            >
-                <Dropdown.Item
-                    id="team-stats-selector"
-                    style={{ color: 'black', backgroundColor: 'white' }}
-                    eventKey={config.teamNames.short + 'Stats'}
-                >
-                    {config.teamNames.short} Stats
-                </Dropdown.Item>
-                <Dropdown.Item
-                    id="all-stats-selector"
-                    style={{ color: 'black', backgroundColor: 'white' }}
-                    eventKey="All Team Stats"
-                >
-                    All Team Stats
-                </Dropdown.Item>
-            </DropdownButton>
+        <div
+            style={{
+                marginLeft: '1.5rem',
+                textAlign: 'left',
+                fontSize: '15px'
+            }}
+        >
+            <Form>
+                {/* TODO left align? Show on same row? */}
+                <Form.Group className="mb-3" controlId="searchOptions">
+                    <Form.Check
+                        onClick={toggleAllTeamStats}
+                        type="checkbox"
+                        label="Include Stats For Other Teams?"
+                    />
+                    <Form.Check
+                        onClick={toggleAllYearStats}
+                        type="checkbox"
+                        label="Show All Stats Since 2022"
+                    />
+                    {/* TODO this displays when searching for specific player? */}
+                </Form.Group>
+            </Form>
         </div>
     );
 }

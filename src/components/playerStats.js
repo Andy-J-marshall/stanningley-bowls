@@ -29,11 +29,10 @@ function PlayerStats(props) {
     const [loaded, setLoaded] = useState(false);
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
+    const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
         statsForEveryYearArray
     );
-    const defaultDropDownText = 'Stanningley Stats';
-    const [dropDownText, setDropDownText] = useState(defaultDropDownText);
     const [playerFound, setPlayerFound] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -74,22 +73,27 @@ function PlayerStats(props) {
         }
     });
 
-    function statsCallback(showAllBoolean) {
+    function allTeamStatsCallback(showAllBoolean) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
             setShowStatSummary(true);
-            setDropDownText('All Team Stats');
         } else {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
-            setDropDownText(defaultDropDownText);
+        }
+    }
+
+    function allYearStatsCallback(showAllBoolean) {
+        if (showAllBoolean) {
+            setShowStatsSinceStart(true);
+        } else {
+            setShowStatsSinceStart(false);
         }
     }
 
     function searchForPlayer(searchedName) {
         setShowStatSummary(false);
         setStatsToUse(playerResults);
-        setDropDownText(defaultDropDownText);
         setSearchedPlayerName(searchedName);
 
         const validPlayer =
@@ -156,9 +160,14 @@ function PlayerStats(props) {
             (player) => player.games > 0
         );
         if (gamesPlayedThisYear) {
-            return <PlayerStatSummary playerStats={statsToDisplayArray} />;
+            return (
+                <div>
+                    <h2 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h2>
+                    <PlayerStatSummary playerStats={statsToDisplayArray} />
+                </div>
+            );
         } else {
-            return <p>No stats available for the selected year</p>;
+            return <h5>No stats available for the selected year</h5>;
         }
     }
 
@@ -167,6 +176,15 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>PLAYER STATS</h1>
+            {/* TODO add text to explain what search is for */}
+            {!loading &&
+                (!searchedPlayerName ||
+                    searchedPlayerName.toLowerCase() === 'show all') && (
+                    <p>
+                        Searching for a player will display a detailed breakdown
+                        of their stats
+                    </p>
+                )}
             <Form
                 id="player-search-form"
                 className="center"
@@ -217,21 +235,18 @@ function PlayerStats(props) {
 
             {/* TODO only show if stats found? */}
             <PlayerStatChoiceDropdown
-                dropDownText={dropDownText}
-                statsCallback={statsCallback}
+                allTeamStatsCallback={allTeamStatsCallback}
+                allYearStatsCallback={allYearStatsCallback}
             />
 
             {/* Shows all players */}
-            {((!loading && !searchedPlayerName) ||
+            {((!showStatsSinceStart && !loading && !searchedPlayerName) ||
                 searchedPlayerName.toLowerCase() === 'show all') &&
                 returnStatsTable()}
+
             {/* Only shows searched for player */}
-            {!loading && searchedPlayerName && (
+            {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <ListGroup>
-                    <PlayerStatChoiceDropdown
-                        dropDownText={dropDownText}
-                        statsCallback={statsCallback}
-                    />
                     {players.map((p, index) => {
                         const playerName = players[index];
                         if (
@@ -245,13 +260,17 @@ function PlayerStats(props) {
                     })}
                 </ListGroup>
             )}
-            {!loading && searchedPlayerName && !playerFound && (
-                <h2 style={{ padding: '1rem 0 4rem 0' }}>Player not found</h2>
-            )}
-            {/* // TODO When to display this? */}
-            <br />
             {!loading &&
-                !searchedPlayerName &&
+                searchedPlayerName &&
+                !playerFound &&
+                !searchedPlayerName.toLowerCase() === 'show all' && (
+                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
+                        Player not found
+                    </h2>
+                )}
+
+            {showStatsSinceStart &&
+                !loading &&
                 statsForEveryYearArray.length > 1 && (
                     <AllTimePlayerStats statsArray={allYearsStatsToUse} />
                 )}

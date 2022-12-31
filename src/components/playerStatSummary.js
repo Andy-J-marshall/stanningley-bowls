@@ -42,7 +42,7 @@ function PlayerStatSummary(props) {
             </div>
         );
     } else {
-        return <p>No stats available</p>;
+        return <h5>No stats available</h5>;
     }
 }
 
