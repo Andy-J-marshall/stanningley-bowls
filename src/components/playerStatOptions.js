@@ -1,6 +1,6 @@
 import { Form, Row, Col, Accordion } from 'react-bootstrap';
 
-function PlayerStatChoiceDropdown(props) {
+function PlayerStatOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
 
@@ -59,4 +59,4 @@ function PlayerStatChoiceDropdown(props) {
     );
 }
 
-export default PlayerStatChoiceDropdown;
+export default PlayerStatOptions;

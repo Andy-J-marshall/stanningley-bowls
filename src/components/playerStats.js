@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap-typeahead';
 import Player from './players';
 import PlayerStatSummary from './playerStatSummary';
-import PlayerStatChoiceDropdown from './playerStatChoiceDropdown';
+import PlayerStatOptions from './playerStatOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
 import { returnPlayerStats } from '../helpers/playersHelper';
 import config from '../config';
@@ -233,8 +233,7 @@ function PlayerStats(props) {
                 </Spinner>
             )}
 
-            {/* TODO only show if stats found? */}
-            <PlayerStatChoiceDropdown
+            <PlayerStatOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
             />
