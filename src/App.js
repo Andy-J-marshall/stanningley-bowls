@@ -20,6 +20,9 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
+// TODO remove
+// import AllTimePlayerStats from './components/allTimePlayerStats';
+
 function App() {
     // TODO change to 2023
     const [teamStats, setTeamStats] = useState(bowlsStats22);
@@ -71,6 +74,8 @@ function App() {
         <div id="app">
             <Header />
             <Navigation />
+            {/* TODO remove */}
+            {/* <AllTimePlayerStats statsArray={[bowlsStats22, bowlsStats23]} /> */}
             <Routes>
                 <Route path="" element={<Home />} />
                 <Route path="/home" element={<Home />} />

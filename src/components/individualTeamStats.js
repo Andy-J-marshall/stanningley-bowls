@@ -1,6 +1,5 @@
 import StatsTableDisplay from './statsTableDisplay';
-import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
+import PlayerStatSummary from './playerStatSummary';
 import config from '../config';
 
 function IndividualTeamStats(props) {
@@ -66,44 +65,8 @@ function IndividualTeamStats(props) {
                         awayDraws={awayDraws}
                         leaguePosition={leaguePosition}
                     />
-
-                    <div id="player-stats-per-team">
-                        <h1>PLAYERS</h1>
-                        <div className="center table" style={{ width: '97%' }}>
-                            <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th>PLAYER</th>
-                                        <th>GAMES</th>
-                                        <th>WINS</th>
-                                        <th>AVERAGE</th>
-                                    </tr>
-                                </thead>
-                                {allPlayerStats.map((player, key) => {
-                                    return (
-                                        <tbody key={key}>
-                                            {player.games > 0 && (
-                                                <tr>
-                                                    <td>
-                                                        {capitalizeText([
-                                                            player.player,
-                                                        ])}
-                                                    </td>
-                                                    <td>{player.games}</td>
-                                                    <td>{player.wins}</td>
-                                                    <td>
-                                                        {player.average.toFixed(
-                                                            2
-                                                        )}
-                                                    </td>
-                                                </tr>
-                                            )}
-                                        </tbody>
-                                    );
-                                })}
-                            </Table>
-                        </div>
-                    </div>
+                    <h1>PLAYERS</h1>
+                    <PlayerStatSummary playerStats={allPlayerStats} />
                 </div>
             );
         } else {

@@ -12,10 +12,10 @@ function Membership() {
     return (
         <div id="members" className="center page-component">
             <p>
-                {config.teamNames.full} welcomes new members of any
-                age. Fees apply to adults over 16, children are welcome but must
-                be accompanied by an adult member. Membership is valid per
-                season and runs from 1st April until 30th September. Please{' '}
+                {config.teamNames.full} welcomes new members of any age. Fees
+                apply to adults over 16, children are welcome but must be
+                accompanied by an adult member. Membership is valid per season
+                and runs from 1st April until 30th September. Please{' '}
                 <a style={{ textDecoration: 'none' }} href="/#/contact">
                     contact
                 </a>{' '}
@@ -40,7 +40,6 @@ function Membership() {
                 please bring proof you have paid this at another club.
             </p>
             <br />
-            {/* TODO still want this section? */}
             <h3>SOCIAL MEMBERSHIP</h3>
             <p>
                 If you are a beginner or infrequent visitor wanting to join our
@@ -48,9 +47,8 @@ function Membership() {
                 <a style={{ textDecoration: 'none' }} href="/#/team-and-social">
                     sessions
                 </a>{' '}
-                then you may choose a social membership which is just £
-                {socialPrice} for the season. This includes free bowls hire if
-                required.
+                then you may choose a social membership for the season. This
+                includes free bowls hire if required.
             </p>
             <img style={{ width: '95%' }} src={socialBowlingImg}></img>
         </div>
