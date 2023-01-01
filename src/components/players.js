@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ListGroup, Accordion } from 'react-bootstrap';
 import PlayerResults from './playerResults';
 import { capitalizeText, arrayToList } from '../helpers/utils';
@@ -10,7 +11,16 @@ function Players(props) {
     const name = props.name;
     const showStatSummary = props.showStatSummary;
 
+    const [loaded, setLoaded] = useState(false);
+
     const stats = returnPlayerStats(playersStats, player);
+
+    useEffect(() => {
+        if (!loaded) {
+            window.scrollTo(0, 0);
+        }
+        setLoaded(true);
+    });
 
     if (stats) {
         const {
@@ -343,8 +353,8 @@ function Players(props) {
                                                     )}
                                                     {tuesdayVetsGames > 0 && (
                                                         <p>
-                                                            {tuesdayVetsLosses} on
-                                                            Tuesday (Vets)
+                                                            {tuesdayVetsLosses}{' '}
+                                                            on Tuesday (Vets)
                                                         </p>
                                                     )}
                                                     {tuesdayEveningGames >
