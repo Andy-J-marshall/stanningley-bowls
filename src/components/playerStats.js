@@ -239,11 +239,6 @@ function PlayerStats(props) {
                     <AllTimePlayerStats statsArray={allYearsStatsToUse} />
                 )}
 
-            <PlayerStatOptions
-                allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={allYearStatsCallback}
-            />
-
             {/* Shows detailed stats for searched player */}
             {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <ListGroup>
@@ -269,6 +264,12 @@ function PlayerStats(props) {
                         Player not found
                     </h2>
                 )}
+
+            <PlayerStatOptions
+                allTeamStatsCallback={allTeamStatsCallback}
+                allYearStatsCallback={allYearStatsCallback}
+                playerSearchedFor={searchedPlayerName}
+            />
         </div>
     );
 }

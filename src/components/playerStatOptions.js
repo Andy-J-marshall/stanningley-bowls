@@ -1,8 +1,18 @@
+import { useState, useEffect } from 'react';
 import { Form, Row, Col, Accordion } from 'react-bootstrap';
 
 function PlayerStatOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
+    const playerSearchedFor = props.playerSearchedFor;
+
+    const [key, setKey] = useState(playerSearchedFor);
+
+    useEffect(() => {
+        if (playerSearchedFor !== key) {
+            setKey(playerSearchedFor);
+        }
+    });
 
     function toggleAllTeamStats(event) {
         const allTeamStatsToggle = event.currentTarget.checked;
@@ -31,24 +41,27 @@ function PlayerStatOptions(props) {
                                 className="mb-3"
                                 controlId="searchOptions"
                             >
-                                {/* TODO this displays when searching for specific player? */}
                                 <Row>
                                     <Col>
                                         <Form.Check
+                                            key={key}
                                             id="#all-stats-select-checkbox"
                                             onClick={toggleAllTeamStats}
                                             type="checkbox"
                                             label="Include stats whilst playing for other teams"
                                         />
                                     </Col>
-                                    <Col>
-                                        <Form.Check
-                                            id="#all-years-select-checkbox"
-                                            onClick={toggleAllYearStats}
-                                            type="checkbox"
-                                            label="Show stats summary for all seasons since 2022"
-                                        />
-                                    </Col>
+                                    {!playerSearchedFor && (
+                                        <Col>
+                                            <Form.Check
+                                                key={key}
+                                                id="#all-years-select-checkbox"
+                                                onClick={toggleAllYearStats}
+                                                type="checkbox"
+                                                label="Show stats summary for all seasons since 2022"
+                                            />
+                                        </Col>
+                                    )}
                                 </Row>
                             </Form.Group>
                         </Form>
