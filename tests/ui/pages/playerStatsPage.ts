@@ -13,6 +13,7 @@ export class PlayerStatsPage {
   readonly searchBar: Locator;
   readonly playerListInDropdown: Locator;
   readonly playerStatsItem: Locator;
+  readonly playerStatsRows: Locator;
   readonly playerNameTitle: Locator;
   readonly summaryAccordionButton: Locator;
   readonly gamesAccordionButton: Locator;
@@ -28,8 +29,6 @@ export class PlayerStatsPage {
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
   readonly teamCheckBox: Locator;
-  readonly teamStatsSelect: Locator;
-  readonly allStatsSelect: Locator;
   readonly yearSelectDropdown: Locator;
 
   constructor(page: Page) {
@@ -40,6 +39,7 @@ export class PlayerStatsPage {
     this.playerListInDropdown = page.locator('#player-search');
     this.searchButton = page.locator('#player-search-form > button');
     this.playerStatsItem = page.locator('#stats .list-group-item');
+    this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
     this.summaryAccordionButton = page.locator('#stats-summary');
     this.gamesAccordionButton = page.locator('#stats-games');
@@ -49,14 +49,16 @@ export class PlayerStatsPage {
     this.aggAccordionButton = page.locator('#stats-aggregate');
     this.resultsAccordionButton = page.locator('#stats-results');
     this.opponentsAccordionButton = page.locator('#stats-opponents');
-    this.accordionButtons = page.locator('.accordion-button');
+    this.accordionButtons = page.locator(
+      '#detailed-player-stats .accordion-button'
+    );
     this.totalGamesPlayed = page.locator('#totalGamesPlayed');
     this.totalWins = page.locator('#totalWins');
     this.totalLosses = page.locator('#totalLosses');
     this.totalAverage = page.locator('#totalAverage');
-    this.teamCheckBox = page.locator('#all-stats-select-checkbox');
-    this.teamStatsSelect = page.locator('#team-stats-selector');
-    this.allStatsSelect = page.locator('#all-stats-selector');
+    this.teamCheckBox = page.locator(
+      ".form-check input[id='#all-stats-select-checkbox']"
+    );
     this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
   }
 
@@ -74,7 +76,11 @@ export class PlayerStatsPage {
   }
 
   async checkNumberOfPlayersReturned(expectedNumberOfPlayers: number) {
-    await expect(this.playerStatsItem).toHaveCount(expectedNumberOfPlayers);
+    await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
+  }
+
+  async checkPlayerIsReturned() {
+    await expect(this.playerStatsItem).toHaveCount(1);
   }
 
   async checkPlayerName(expectedPlayer: string) {
@@ -103,14 +109,12 @@ export class PlayerStatsPage {
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 
-  async selectTeamStatsDropdown(option: string) {
-    await this.teamCheckBox.click();
-    if (option.toUpperCase() === 'ALL TEAM STATS') {
-      await this.allStatsSelect.click();
-    }
-    if (option.toUpperCase() === 'STANNINGLEY STATS') {
-      await this.teamStatsSelect.click();
-    }
+  async selectTeamStatsCheckbox() {
+    await this.teamCheckBox.check();
+  }
+
+  async deselectTeamStatsCheckbox() {
+    await this.teamCheckBox.uncheck();
   }
 
   async validateSummaryStats(playerStats: PlayerStats) {

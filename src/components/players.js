@@ -113,7 +113,7 @@ function Players(props) {
         const winOrWins = totalWins === 1 ? 'win' : 'wins';
         const lossOrLosses = totalLosses === 1 ? 'loss' : 'losses';
         return (
-            <div>
+            <div id='detailed-player-stats'>
                 <ListGroup.Item>
                     <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
                     {gamesPlayed === 0 && (
