@@ -144,6 +144,11 @@ function PlayerStats(props) {
         setLoading(false);
     };
 
+    function displayPlayerCallback(playerName) {
+        setSearchedPlayerName(playerName);
+        showPlayerStats(playerName);
+    }
+
     function showPlayerStats(playerName) {
         return (
             <Players
@@ -164,7 +169,10 @@ function PlayerStats(props) {
             return (
                 <div>
                     <h2 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h2>
-                    <PlayerStatSummary playerStats={statsToDisplayArray} />
+                    <PlayerStatSummary
+                        callback={displayPlayerCallback}
+                        playerStats={statsToDisplayArray}
+                    />
                 </div>
             );
         } else {

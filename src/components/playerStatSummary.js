@@ -3,7 +3,14 @@ import { capitalizeText } from '../helpers/utils';
 
 function PlayerStatSummary(props) {
     const playerStats = props.playerStats;
+    const displayPlayerStatsCallback = props.callback;
 
+    function displayPlayer(event) {
+        const playerName = event.target.innerHTML;
+        displayPlayerStatsCallback(playerName);
+    }
+
+    // TODO also need to add this for other places we use this e.g. all years stats and individual team stats
     if (playerStats) {
         return (
             <div id="player-stats-per-team">
@@ -24,13 +31,22 @@ function PlayerStatSummary(props) {
                                     {player.games > 0 && (
                                         <tr>
                                             <td>
-                                                {capitalizeText([
-                                                    player.player,
-                                                ])}
+                                                <a onClick={displayPlayer}>
+                                                    {capitalizeText([
+                                                        player.player,
+                                                    ])}
+                                                </a>
                                             </td>
                                             <td>{player.games}</td>
                                             <td>{player.wins}</td>
-                                            <td>{((player.wins / player.games) * 100).toFixed(0)}%</td>
+                                            <td>
+                                                {(
+                                                    (player.wins /
+                                                        player.games) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </td>
                                             <td>{player.average.toFixed(2)}</td>
                                         </tr>
                                     )}
