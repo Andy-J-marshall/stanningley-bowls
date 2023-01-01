@@ -39,7 +39,6 @@ function PlayerStats(props) {
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const statsToDisplayArray = [];
-    // TODO add ability to click on a player for their detailed stats?
 
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);

@@ -6,7 +6,6 @@ import upcomingFixturesJuly from '../images/fixtures/upcoming_fixtures_July.png'
 import upcomingFixturesAugust from '../images/fixtures/upcoming_fixtures_Aug.png';
 import upcomingFixturesSeptember from '../images/fixtures/upcoming_fixtures_Sept.png';
 
-// TODO update these files
 // TODO get the fixtures from bowlsnet instead?
 
 function FixturesResults() {

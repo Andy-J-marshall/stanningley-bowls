@@ -22,6 +22,8 @@ function Players(props) {
         setLoaded(true);
     });
 
+    // TODO add a close button?
+
     if (stats) {
         const {
             totalAgg,

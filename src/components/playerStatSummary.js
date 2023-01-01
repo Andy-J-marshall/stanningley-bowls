@@ -12,7 +12,6 @@ function PlayerStatSummary(props) {
         }
     }
 
-    // TODO also need to add this for other places we use this e.g. all years stats and individual team stats
     if (playerStats) {
         return (
             <div id="player-stats-per-team">

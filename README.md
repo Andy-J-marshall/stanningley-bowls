@@ -146,7 +146,7 @@ Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, othe
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
 
-Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
+Add a dropdown item for the new year in the `yearSelectDropdown.js` component and update the default year.
 
 If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components.
 
