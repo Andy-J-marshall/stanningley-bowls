@@ -146,19 +146,31 @@ function PlayerStats(props) {
 
     function displayPlayerCallback(playerName) {
         setSearchedPlayerName(playerName);
-        showPlayerStats(playerName);
+        // TODO implement query param? Or if not just pass displayPlayerCallback as callback?
+        // hashHistory.push({
+        //     pathname: '/dresses',
+        //     search: '?color=blue'
+        //   })
     }
 
     function showPlayerStats(playerName) {
-        return (
-            <Players
-                key={playerName}
-                player={playerName}
-                name={playerName}
-                playersStats={statsToUse}
-                showStatSummary={showStatSummary}
-            ></Players>
-        );
+        const validPlayer = players.find((player) => player == playerName);
+
+        if (validPlayer) {
+            return (
+                <ListGroup>
+                    <Players
+                        key={playerName}
+                        player={playerName}
+                        name={playerName}
+                        playersStats={statsToUse}
+                        showStatSummary={showStatSummary}
+                    ></Players>
+                </ListGroup>
+            );
+        } else {
+            return <h5>Player not found</h5>;
+        }
     }
 
     function returnStatsTable() {
@@ -168,7 +180,7 @@ function PlayerStats(props) {
         if (gamesPlayedThisYear) {
             return (
                 <div>
-                    <h2 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h2>
+                    <h3 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h3>
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
@@ -249,18 +261,7 @@ function PlayerStats(props) {
 
             {/* Shows detailed stats for searched player */}
             {!showStatsSinceStart && !loading && searchedPlayerName && (
-                <ListGroup>
-                    {players.map((player) => {
-                        if (
-                            player.toLowerCase() ===
-                            searchedPlayerName.toLowerCase()
-                        ) {
-                            {
-                                return showPlayerStats(player);
-                            }
-                        }
-                    })}
-                </ListGroup>
+                <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
             )}
 
             {!loading &&

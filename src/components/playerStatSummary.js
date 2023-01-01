@@ -7,7 +7,9 @@ function PlayerStatSummary(props) {
 
     function displayPlayer(event) {
         const playerName = event.target.innerHTML;
-        displayPlayerStatsCallback(playerName);
+        if (displayPlayerStatsCallback) {
+            displayPlayerStatsCallback(playerName);
+        }
     }
 
     // TODO also need to add this for other places we use this e.g. all years stats and individual team stats

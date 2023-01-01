@@ -1,8 +1,11 @@
+import { useState, useEffect } from 'react';
 import PlayerStatSummary from './playerStatSummary';
 import { returnPlayerStats } from '../helpers/playersHelper';
 
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
+
+    const [loaded, setLoaded] = useState(false);
 
     const statsToDisplayArray = [];
     let playerNames = [];
@@ -43,10 +46,17 @@ function AllTimePlayerStats(props) {
         statsToDisplayArray.push(stats);
     });
 
+    useEffect(() => {
+        if (!loaded) {
+            window.scrollTo(0, 0);
+        }
+        setLoaded(true);
+    });
+
     return (
         <div>
             <div id="all-time-player-stats">
-                <h2 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h2>
+                <h3 style={{ padding: '1rem 0 0 0' }}>STATS SINCE 2022</h3>
                 <PlayerStatSummary playerStats={statsToDisplayArray} />
             </div>
         </div>
