@@ -5,11 +5,28 @@ function PlayerStatSummary(props) {
     const playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
 
+    let style;
+    let href;
+
     function displayPlayer(event) {
         const playerName = event.target.innerHTML;
         if (displayPlayerStatsCallback) {
             displayPlayerStatsCallback(playerName);
         }
+    }
+
+    if (displayPlayerStatsCallback) {
+        style = {
+            textDecoration: 'underline',
+            color: '#004558',
+        };
+        href = '/#/stats/player';
+    } else {
+        style = {
+            textDecoration: 'none',
+            color: 'black',
+        };
+        href = null;
     }
 
     if (playerStats) {
@@ -32,7 +49,11 @@ function PlayerStatSummary(props) {
                                     {player.games > 0 && (
                                         <tr>
                                             <td>
-                                                <a onClick={displayPlayer}>
+                                                <a
+                                                    style={style}
+                                                    href={href}
+                                                    onClick={displayPlayer}
+                                                >
                                                     {capitalizeText([
                                                         player.player,
                                                     ])}
