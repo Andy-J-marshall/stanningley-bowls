@@ -6,7 +6,7 @@ import {
     Menu,
     MenuItem,
 } from 'react-bootstrap-typeahead';
-import Player from './players';
+import Players from './players';
 import PlayerStatSummary from './playerStatSummary';
 import PlayerStatOptions from './playerStatOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
@@ -144,15 +144,15 @@ function PlayerStats(props) {
         setLoading(false);
     };
 
-    function showPlayerStats(index, player, playerName) {
+    function showPlayerStats(playerName) {
         return (
-            <Player
-                key={index}
-                player={player}
+            <Players
+                key={playerName}
+                player={playerName}
                 name={playerName}
                 playersStats={statsToUse}
                 showStatSummary={showStatSummary}
-            ></Player>
+            ></Players>
         );
     }
 
@@ -242,14 +242,13 @@ function PlayerStats(props) {
             {/* Shows detailed stats for searched player */}
             {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <ListGroup>
-                    {players.map((p, index) => {
-                        const playerName = players[index];
+                    {players.map((player) => {
                         if (
-                            playerName.toLowerCase() ===
+                            player.toLowerCase() ===
                             searchedPlayerName.toLowerCase()
                         ) {
                             {
-                                return showPlayerStats(index, p, playerName);
+                                return showPlayerStats(player);
                             }
                         }
                     })}
