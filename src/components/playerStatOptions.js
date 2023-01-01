@@ -32,7 +32,7 @@ function PlayerStatOptions(props) {
                 fontSize: '15px',
             }}
         >
-            <Accordion>
+            <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>OPTIONS</Accordion.Header>
                     <Accordion.Body>
