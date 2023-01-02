@@ -46,11 +46,13 @@ function Results(props) {
 
     return (
         <div id="result" className="page-component center">
+            <h1>RESULTS</h1>
             {resultsArray.map((team, idx) => {
                 return (
                     <div key={idx}>
-                        <br />
-                        <h2>{team.day.toUpperCase()}</h2>
+                        <h2 style={{ paddingTop: '1rem' }}>
+                            {team.day.toUpperCase()}
+                        </h2>
                         <Table striped bordered hover>
                             <thead>
                                 <tr>

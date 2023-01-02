@@ -21,7 +21,7 @@ function FixturesResults() {
 
     if (year === yearFixturesAddedFor && month <= 9) {
         return (
-            <div id="fixture" className="center">
+            <div id="fixture" className="center page-component">
                 <div>
                     <hr style={{ margin: 0 }} />
                     {4 >= month && (
@@ -95,7 +95,7 @@ function FixturesResults() {
         );
     } else {
         return (
-            <div>
+            <div id="fixture" className="center page-component">
                 <h1>Fixtures</h1>
                 {month < 4 && <p>Fixtures are not currently available.</p>}
                 {month > 9 && <p>The season has finished</p>}

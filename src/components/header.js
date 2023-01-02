@@ -6,8 +6,8 @@ function Header() {
             <img
                 alt="header logo"
                 src={logo}
-                width="240"
-                height="240"
+                width="180"
+                height="180"
                 className="d-inline-block align-top"
             />
         </div>

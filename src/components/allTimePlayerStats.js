@@ -54,11 +54,9 @@ function AllTimePlayerStats(props) {
     });
 
     return (
-        <div>
-            <div id="all-time-player-stats">
-                <h3 style={{ padding: '1rem 0 0 0' }}>STATS SINCE 2022</h3>
-                <PlayerStatSummary playerStats={statsToDisplayArray} />
-            </div>
+        <div id="all-time-player-stats" className="center">
+            <h3 style={{ padding: '1rem 0 0 0' }}>STATS SINCE 2022</h3>
+            <PlayerStatSummary playerStats={statsToDisplayArray} />
         </div>
     );
 }

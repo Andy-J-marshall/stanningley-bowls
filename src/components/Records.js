@@ -13,7 +13,7 @@ function Records(props) {
     });
 
     return (
-        <div id="record" className="page-component center">
+        <div id="record" className="center">
             <PlayerRecords playerResults={playerResults} />
             <TeamRecords teamResults={teamResults} />
             <p className="footnote">
