@@ -22,8 +22,6 @@ function Players(props) {
         setLoaded(true);
     });
 
-    // TODO add a close button?
-
     if (stats) {
         const {
             totalAgg,
@@ -113,7 +111,7 @@ function Players(props) {
         const winOrWins = totalWins === 1 ? 'win' : 'wins';
         const lossOrLosses = totalLosses === 1 ? 'loss' : 'losses';
         return (
-            <div id='detailed-player-stats'>
+            <div id="detailed-player-stats">
                 <ListGroup.Item>
                     <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
                     {gamesPlayed === 0 && (
@@ -121,7 +119,6 @@ function Players(props) {
                             {!showStatSummary && (
                                 <p>
                                     No games played for {config.teamNames.short}
-                                    .
                                 </p>
                             )}
                             {showStatSummary && <p>No games played.</p>}
@@ -131,7 +128,7 @@ function Players(props) {
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header id="stats-summary">
-                                    SUMMARY
+                                    OVERVIEW
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     <div>

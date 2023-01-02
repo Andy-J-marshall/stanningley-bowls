@@ -15,7 +15,7 @@ export class PlayerStatsPage {
   readonly playerStatsItem: Locator;
   readonly playerStatsRows: Locator;
   readonly playerNameTitle: Locator;
-  readonly summaryAccordionButton: Locator;
+  readonly overviewAccordionButton: Locator;
   readonly gamesAccordionButton: Locator;
   readonly winLossAccordionButton: Locator;
   readonly averageAccordionButton: Locator;
@@ -41,7 +41,7 @@ export class PlayerStatsPage {
     this.playerStatsItem = page.locator('#stats .list-group-item');
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
-    this.summaryAccordionButton = page.locator('#stats-summary');
+    this.overviewAccordionButton = page.locator('#stats-summary');
     this.gamesAccordionButton = page.locator('#stats-games');
     this.winLossAccordionButton = page.locator('#stats-wl');
     this.averageAccordionButton = page.locator('#stats-average');
@@ -93,7 +93,7 @@ export class PlayerStatsPage {
 
   async checkTeamAccordionHeadersExist() {
     await expect(this.accordionButtons).toHaveCount(8);
-    await expect(this.summaryAccordionButton).toHaveText('SUMMARY');
+    await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
     await expect(this.gamesAccordionButton).toHaveText('GAMES PLAYED');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
     await expect(this.averageAccordionButton).toHaveText('AVERAGES');
@@ -105,7 +105,7 @@ export class PlayerStatsPage {
 
   async checkOnlyBasicAccordionHeadersExist() {
     await expect(this.accordionButtons).toHaveCount(7);
-    await expect(this.summaryAccordionButton).toHaveText('SUMMARY');
+    await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 

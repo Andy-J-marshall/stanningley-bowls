@@ -128,6 +128,7 @@ function TeamRecords(props) {
     if (fewestPointsConcededPerGameTeam.length > 0) {
         return (
             <div id="team-record" className="center">
+                <br />
                 <h1>TEAM RECORDS</h1>
                 <RecordsTableDisplay
                     minGames={minGames}

@@ -145,11 +145,10 @@ function PlayerStats(props) {
 
     function displayPlayerCallback(playerName) {
         setSearchedPlayerName(playerName);
-        // TODO implement query param? Or if not just pass displayPlayerCallback as callback?
-        // hashHistory.push({
-        //     pathname: '/dresses',
-        //     search: '?color=blue'
-        //   })
+    }
+
+    function closeButtonCallback() {
+        setSearchedPlayerName(null);
     }
 
     function showPlayerStats(playerName) {
@@ -179,7 +178,7 @@ function PlayerStats(props) {
         if (gamesPlayedThisYear) {
             return (
                 <div>
-                    <h3 style={{ padding: '1rem 0 0 0' }}>SUMMARY</h3>
+                    <h3 style={{ padding: '2rem 0 0 0' }}>SUMMARY</h3>
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
@@ -236,8 +235,16 @@ function PlayerStats(props) {
                 <Button variant="light" type="submit">
                     Search
                 </Button>
+                {searchedPlayerName && (
+                    <Button
+                        style={{ margin: '1rem' }}
+                        variant="secondary"
+                        onClick={closeButtonCallback}
+                    >
+                        Back to summary
+                    </Button>
+                )}
             </Form>
-            <br />
             {loading && (
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>

@@ -65,6 +65,7 @@ function IndividualTeamStats(props) {
                         awayDraws={awayDraws}
                         leaguePosition={leaguePosition}
                     />
+                    <br />
                     <h1>PLAYERS</h1>
                     <PlayerStatSummary playerStats={allPlayerStats} />
                 </div>
