@@ -10,6 +10,7 @@ interface PlayerStats {
 export class PlayerStatsPage {
   readonly page: Page;
   readonly searchButton: Locator;
+  readonly backButton: Locator;
   readonly searchBar: Locator;
   readonly playerListInDropdown: Locator;
   readonly playerStatsItem: Locator;
@@ -37,7 +38,8 @@ export class PlayerStatsPage {
       '#player-search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
     );
     this.playerListInDropdown = page.locator('#player-search');
-    this.searchButton = page.locator('#player-search-form > button');
+    this.searchButton = page.locator('#search-button');
+    this.backButton = page.locator('#back-button');
     this.playerStatsItem = page.locator('#stats .list-group-item');
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');

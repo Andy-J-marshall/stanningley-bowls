@@ -232,11 +232,12 @@ function PlayerStats(props) {
                         )}
                     </Typeahead>
                 </Form.Group>
-                <Button variant="light" type="submit">
+                <Button id="search-button" variant="light" type="submit">
                     Search
                 </Button>
                 {searchedPlayerName && (
                     <Button
+                        id="back-button"
                         style={{ margin: '1rem' }}
                         variant="secondary"
                         onClick={closeButtonCallback}
