@@ -121,7 +121,7 @@ function Players(props) {
                                     No games played for {config.teamNames.short}
                                 </p>
                             )}
-                            {showStatSummary && <p>No games played.</p>}
+                            {showStatSummary && <p>No games played</p>}
                         </div>
                     )}
                     {gamesPlayed > 0 && (

@@ -3,9 +3,10 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 function YearSelectDropdown(props) {
     const statsCallback = props.statsCallback;
-    const yearsToDisplay = props.yearsToDisplay;
+    const numberOfYearsToDisplay = props.numberOfYearsToDisplay;
+    const yearToDisplay = props.yearToDisplay;
 
-    const [year, setYear] = useState(2022); // TODO change this
+    const [year, setYear] = useState(yearToDisplay);
 
     function changeStatsYear(event) {
         const year = event.replace('#', '').toString();
@@ -14,8 +15,8 @@ function YearSelectDropdown(props) {
     }
 
     return (
-        <div style = {{padding: '0.2rem'}}>
-            {yearsToDisplay > 1 && (
+        <div style={{ padding: '0.2rem' }}>
+            {numberOfYearsToDisplay > 1 && (
                 <DropdownButton
                     variant="light"
                     onSelect={changeStatsYear}

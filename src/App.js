@@ -24,6 +24,7 @@ function App() {
     // TODO change to 2023
     const [teamStats, setTeamStats] = useState(bowlsStats22);
     const [combinedStats, setCombinedStats] = useState(combinedBowlsStats22);
+    const [yearToDisplay, setYearToDisplay] = useState('2022');
 
     useEffect(() => {
         WebFont.load({
@@ -67,6 +68,7 @@ function App() {
                     allYearCombinedStats[`year${currentYear}`];
                 break;
         }
+        setYearToDisplay(year.toString());
         setTeamStats(statsForSelectedYear);
         setCombinedStats(combinedStatsForSelectedYear);
     }
@@ -85,9 +87,12 @@ function App() {
                     path="/results"
                     element={
                         <Results
-                            yearsToDisplay={Object.keys(allYearStats).length}
+                            numberOfYearsToDisplay={
+                                Object.keys(allYearStats).length
+                            }
                             stats={teamStats}
                             statsCallback={statsCallback}
+                            yearToDisplay={yearToDisplay}
                         />
                     }
                 />
@@ -95,9 +100,12 @@ function App() {
                     path="/stats"
                     element={
                         <Stats
-                            yearsToDisplay={Object.keys(allYearStats).length}
+                            numberOfYearsToDisplay={
+                                Object.keys(allYearStats).length
+                            }
                             statsCallback={statsCallback}
                             stats={teamStats}
+                            yearToDisplay={yearToDisplay}
                         />
                     }
                 >
