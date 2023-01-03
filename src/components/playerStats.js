@@ -186,7 +186,11 @@ function PlayerStats(props) {
                 </div>
             );
         } else {
-            return <h5>No stats available for the selected year</h5>;
+            return (
+                <div className="page-component center">
+                    <h5>No stats available for the selected year</h5>
+                </div>
+            );
         }
     }
 

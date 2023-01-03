@@ -43,7 +43,10 @@ function App() {
         year2023: combinedBowlsStats23,
     };
     const statsForEveryYearArray = [bowlsStats22, bowlsStats23];
-    const combinedStatsForEveryYearArray = [combinedBowlsStats22, combinedBowlsStats23];
+    const combinedStatsForEveryYearArray = [
+        combinedBowlsStats22,
+        combinedBowlsStats23,
+    ];
 
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
@@ -80,7 +83,13 @@ function App() {
                 <Route path="/fixtures" element={<Fixtures />} />
                 <Route
                     path="/results"
-                    element={<Results stats={teamStats} />}
+                    element={
+                        <Results
+                            yearsToDisplay={Object.keys(allYearStats).length}
+                            stats={teamStats}
+                            statsCallback={statsCallback}
+                        />
+                    }
                 />
                 <Route
                     path="/stats"
@@ -99,7 +108,9 @@ function App() {
                                 stats={teamStats}
                                 combinedStats={combinedStats}
                                 statsForEveryYearArray={statsForEveryYearArray}
-                                combinedStatsForEveryYearArray={combinedStatsForEveryYearArray}
+                                combinedStatsForEveryYearArray={
+                                    combinedStatsForEveryYearArray
+                                }
                             />
                         }
                     />

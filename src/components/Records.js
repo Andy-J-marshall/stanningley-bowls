@@ -14,7 +14,10 @@ function Records(props) {
 
     return (
         <div id="record" className="center">
-            <PlayerRecords playerResults={playerResults} />
+            <PlayerRecords
+                playerResults={playerResults}
+                clubCupWinner={stats.clubCupWinner}
+            />
             <TeamRecords teamResults={teamResults} />
             <p className="footnote">
                 ** The number in brackets indicates the number of games played.

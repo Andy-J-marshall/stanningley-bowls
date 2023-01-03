@@ -150,4 +150,6 @@ Add a dropdown item for the new year in the `yearSelectDropdown.js` component an
 
 If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components.
 
-Update `yearFixturesAddedFor` in `fixtures.js`
+Update `yearFixturesAddedFor` in `fixtures.js`.
+
+Update the `clubCupWinner` in the `bowlsStats{year}` file.

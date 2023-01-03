@@ -1,8 +1,11 @@
 import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
+import { capitalizeText } from '../helpers/utils';
 
 function PlayerRecords(props) {
     const playerResults = props.playerResults;
+    const clubCupWinner = props.clubCupWinner;
+
     const players = Object.keys(playerResults);
 
     // Monday
@@ -604,6 +607,11 @@ function PlayerRecords(props) {
     if (mostGames > 0) {
         return (
             <div>
+                <div className="center">
+                    <h1>CLUB CUP WINNER</h1>
+                    <p>{capitalizeText([clubCupWinner])}</p>
+                </div>
+
                 <h1>PLAYER RECORDS</h1>
                 <TeamTabs
                     id="player-record"
@@ -619,7 +627,7 @@ function PlayerRecords(props) {
         );
     } else {
         return (
-            <div>
+            <div className="center">
                 <h1>PLAYER RECORDS</h1>
                 <p>No games played</p>
             </div>

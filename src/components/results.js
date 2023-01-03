@@ -13,6 +13,8 @@ function Results(props) {
         window.scrollTo(0, 0);
     });
 
+    // TODO need to add year select to this
+
     const resultsArray = teamResults.map((team) => {
         const results = team.results.map((result) => {
             const resultParts = result.split(' - ');
