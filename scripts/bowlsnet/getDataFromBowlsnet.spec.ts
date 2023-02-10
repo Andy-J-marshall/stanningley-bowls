@@ -9,92 +9,62 @@ const teams = [
   {
     day: 'Monday Combined Leeds',
     url: '/Leeds-MonComb',
-    dateFromValue: '17496',
-    dateToValue: '18784',
   },
   {
     day: 'Tuesday Vets Leeds',
     url: '/LeedsParkVets-Tue',
-    dateFromValue: '17560',
-    dateToValue: '18848',
   },
   {
     day: 'Tuesday Leeds',
     url: '/Leeds-Tue',
-    dateFromValue: '17688',
-    dateToValue: '18672',
   },
   {
     day: 'Wednesday Half Holiday Leeds',
     url: '/Leeds-Wed',
-    dateFromValue: '17456',
-    dateToValue: '18800',
   },
   {
     day: 'Thursday Vets Leeds',
     url: '/LeedsParkVets-Thu',
-    dateFromValue: '17576',
-    dateToValue: '18752',
   },
   {
     day: 'Saturday Leeds',
     url: '/Leeds-Sat',
-    dateFromValue: '17424',
-    dateToValue: '18880',
   },
   {
     day: 'Monday AireDale & Wharfedale',
     url: '/AW-Mon',
-    dateFromValue: '17440',
-    dateToValue: '18664',
   },
   {
     day: 'Wednesday AireDale & Wharfedale',
     url: '/AW-WedSingles',
-    dateFromValue: '17512',
-    dateToValue: '18800',
   },
   {
     day: 'Tuesday AireDale & Wharfedale',
     url: '/AW-Vets',
-    dateFromValue: '17504',
-    dateToValue: '18848',
   },
   {
     day: 'Monday Bradford',
     url: '/Bradford-Mon',
-    dateFromValue: '17496',
-    dateToValue: '18608',
   },
   {
     day: 'Wednesday Half Holiday Bradford',
     url: '/Bradford-HalfHol',
-    dateFromValue: '17568',
-    dateToValue: '18856',
   },
   {
     day: 'Saturday Bradford',
     url: '/Bradford-Sat',
-    dateFromValue: '17288',
-    dateToValue: '18952',
   },
   {
     day: 'Wednesday Spen Valley',
     url: '/WestRiding',
-    dateFromValue: '17424',
-    dateToValue: '18632',
   },
   {
     day: 'Tuesday Mirfield',
     url: '/Mirfield',
-    dateFromValue: '17560',
-    dateToValue: '18672',
   },
   {
     day: 'Thursday Vets Bradford',
     url: '/BradfordVets',
-    dateFromValue: '17400',
-    dateToValue: '18752',
   },
 ];
 
@@ -108,8 +78,6 @@ for (const team of teams) {
   test(`${team.day} Stats`, async () => {
     const day = team.day;
     const filePath = `./files/htmlFiles/${day}.html`;
-    const dateFromValue = team.dateFromValue;
-    const dateToValue = team.dateToValue;
     const url = team.url;
     await page.goto(url);
 
@@ -151,12 +119,8 @@ for (const team of teams) {
       .click();
     await page
       .frameLocator('#x-Pframe')
-      .locator('#x-DlgF > .dGrp > select[name=oResF]')
-      .selectOption(dateFromValue);
-    await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF > .dGrp > select[name=oResT]')
-      .selectOption(dateToValue);
+      .locator('#oResFull')
+      .check();
     const [newPage] = await Promise.all([
       context.waitForEvent('page'),
       await page.frameLocator('#x-Pframe').locator('#dRBtn').click(),
