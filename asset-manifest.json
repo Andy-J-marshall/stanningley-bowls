@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d791e709.chunk.css",
-    "main.js": "/static/js/main.3f6b93a0.chunk.js",
-    "main.js.map": "/static/js/main.3f6b93a0.chunk.js.map",
+    "main.js": "/static/js/main.49dd49ab.chunk.js",
+    "main.js.map": "/static/js/main.49dd49ab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2833f87.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2833f87.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -29,12 +29,6 @@
     "static/media/team2-team.b9404668.webp": "/static/media/team2-team.b9404668.webp",
     "static/media/team3-team.fe4ebc96.webp": "/static/media/team3-team.fe4ebc96.webp",
     "static/media/team4-team.a07c0c5c.webp": "/static/media/team4-team.a07c0c5c.webp",
-    "static/media/upcoming_fixtures_April.419a4fcc.png": "/static/media/upcoming_fixtures_April.419a4fcc.png",
-    "static/media/upcoming_fixtures_Aug.43489b53.png": "/static/media/upcoming_fixtures_Aug.43489b53.png",
-    "static/media/upcoming_fixtures_July.419a4fcc.png": "/static/media/upcoming_fixtures_July.419a4fcc.png",
-    "static/media/upcoming_fixtures_June.419a4fcc.png": "/static/media/upcoming_fixtures_June.419a4fcc.png",
-    "static/media/upcoming_fixtures_May.419a4fcc.png": "/static/media/upcoming_fixtures_May.419a4fcc.png",
-    "static/media/upcoming_fixtures_Sept.68e86e42.png": "/static/media/upcoming_fixtures_Sept.68e86e42.png",
     "static/media/west_leeds_dispatch.242ca0e5.png": "/static/media/west_leeds_dispatch.242ca0e5.png"
   },
   "entrypoints": [
@@ -42,6 +36,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.d7ded088.chunk.js",
     "static/css/main.d791e709.chunk.css",
-    "static/js/main.3f6b93a0.chunk.js"
+    "static/js/main.49dd49ab.chunk.js"
   ]
 }
