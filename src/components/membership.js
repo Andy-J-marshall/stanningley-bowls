@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import config from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
 
-const { socialPrice, bowlingPrice, bowlingPriceOnly } = config.membership;
+const { leedsCouncilFee, bowlingPriceOnly } = config.membership;
 
 function Membership() {
     useEffect(() => {
@@ -11,6 +11,7 @@ function Membership() {
 
     return (
         <div id="members" className="center page-component">
+            <h1>MEMBERSHIP</h1>
             <p>
                 {config.teamNames.full} welcomes new members of any age. Fees
                 apply to adults over 16, children are welcome but must be
@@ -22,17 +23,11 @@ function Membership() {
                 us or speak to us at one of the open sessions to apply.
             </p>
             <br />
-            <h3>FULL MEMBERSHIP</h3>
+            <h3>FULL BOWLING MEMBERSHIP</h3>
             <p>
-                The current fee is £{bowlingPrice} which includes club
-                membership and the Leeds parks green fee*. You are permitted
-                access to the green any time it is available via a key code.
-                Full members who are registered with BCGBA are also eligible to
-                play in teams. Our{' '}
-                <a style={{ textDecoration: 'none' }} href="/#/team-and-social">
-                    teams
-                </a>{' '}
-                currently play in the {config.leagues} leagues.
+                Team players and/ or anytime green access Leeds Council season
+                fee - £{leedsCouncilFee}* + membership fee - £{bowlingPriceOnly}
+                .
             </p>
             <p>
                 *If you have already paid your green fee at another Leeds Parks
@@ -41,15 +36,14 @@ function Membership() {
             </p>
             <br />
             <h3>SOCIAL MEMBERSHIP</h3>
+            <p>For new/ infrequent bowlers</p>
             <p>
-                If you are a beginner or infrequent visitor wanting to join our
-                social bowling{' '}
-                <a style={{ textDecoration: 'none' }} href="/#/team-and-social">
-                    sessions
-                </a>{' '}
-                then you may choose a social membership for the season. This
-                includes free bowls hire if required.
+                Access to social bowling sessions and club tournaments only.
+                Bowl hire included, no session fees. Under 16’s are free but
+                must be accompanied by an adult member. Membership fee - £20 per
+                person or £30 joint membership.
             </p>
+            <p>~ Optional non-bowling membership - £10 ~</p>
             <img style={{ width: '95%' }} src={socialBowlingImg}></img>
         </div>
     );

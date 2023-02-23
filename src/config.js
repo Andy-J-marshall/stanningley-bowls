@@ -16,6 +16,7 @@ const live = {
         socialPrice: '20',
         bowlingPrice: '52',
         bowlingPriceOnly: '10',
+        leedsCouncilFee: '42',
     },
     teams: [
         {
