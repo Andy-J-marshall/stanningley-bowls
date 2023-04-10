@@ -153,3 +153,5 @@ If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamS
 Update `yearFixturesAddedFor` in `fixtures.js`.
 
 Add/update the `clubCupWinner` in the `bowlsStats{year}` file.
+
+Update the dateFromValue and dateToValue in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts` file for each league. This is the option number when inspecting the date dropdowns on bowlsnet.
