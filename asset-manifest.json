@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d791e709.chunk.css",
-    "main.js": "/static/js/main.65ad0a32.chunk.js",
-    "main.js.map": "/static/js/main.65ad0a32.chunk.js.map",
+    "main.js": "/static/js/main.19cbd160.chunk.js",
+    "main.js.map": "/static/js/main.19cbd160.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2833f87.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2833f87.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
-    "static/js/2.d7ded088.chunk.js": "/static/js/2.d7ded088.chunk.js",
-    "static/js/2.d7ded088.chunk.js.map": "/static/js/2.d7ded088.chunk.js.map",
+    "static/js/2.c13bbbbd.chunk.js": "/static/js/2.c13bbbbd.chunk.js",
+    "static/js/2.c13bbbbd.chunk.js.map": "/static/js/2.c13bbbbd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.56039741.chunk.css.map": "/static/css/2.56039741.chunk.css.map",
     "static/css/main.d791e709.chunk.css.map": "/static/css/main.d791e709.chunk.css.map",
-    "static/js/2.d7ded088.chunk.js.LICENSE.txt": "/static/js/2.d7ded088.chunk.js.LICENSE.txt",
+    "static/js/2.c13bbbbd.chunk.js.LICENSE.txt": "/static/js/2.c13bbbbd.chunk.js.LICENSE.txt",
     "static/media/arnold_clark_grant.8f29679f.png": "/static/media/arnold_clark_grant.8f29679f.png",
     "static/media/asda_foundation.45cd6d42.png": "/static/media/asda_foundation.45cd6d42.png",
     "static/media/bramley_elderly_action.3376acc4.png": "/static/media/bramley_elderly_action.3376acc4.png",
@@ -22,20 +22,22 @@
     "static/media/carousel-05.a2a0e36e.webp": "/static/media/carousel-05.a2a0e36e.webp",
     "static/media/group-bowling.466ad98b.webp": "/static/media/group-bowling.466ad98b.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
+    "static/media/mon-team.62e2d4c5.webp": "/static/media/mon-team.62e2d4c5.webp",
+    "static/media/sat-team.6177a179.webp": "/static/media/sat-team.6177a179.webp",
     "static/media/social-bowling.3b26214a.webp": "/static/media/social-bowling.3b26214a.webp",
     "static/media/social-bowling2.32756047.webp": "/static/media/social-bowling2.32756047.webp",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
-    "static/media/team1-team.01e57f1c.webp": "/static/media/team1-team.01e57f1c.webp",
-    "static/media/team2-team.b9404668.webp": "/static/media/team2-team.b9404668.webp",
-    "static/media/team3-team.fe4ebc96.webp": "/static/media/team3-team.fe4ebc96.webp",
-    "static/media/team4-team.a07c0c5c.webp": "/static/media/team4-team.a07c0c5c.webp",
+    "static/media/thursVets-team.fe4ebc96.webp": "/static/media/thursVets-team.fe4ebc96.webp",
+    "static/media/tues-team.23c51793.webp": "/static/media/tues-team.23c51793.webp",
+    "static/media/tuesVets-team.b9404668.webp": "/static/media/tuesVets-team.b9404668.webp",
+    "static/media/wed-team.a07c0c5c.webp": "/static/media/wed-team.a07c0c5c.webp",
     "static/media/west_leeds_dispatch.242ca0e5.png": "/static/media/west_leeds_dispatch.242ca0e5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d2833f87.js",
     "static/css/2.56039741.chunk.css",
-    "static/js/2.d7ded088.chunk.js",
+    "static/js/2.c13bbbbd.chunk.js",
     "static/css/main.d791e709.chunk.css",
-    "static/js/main.65ad0a32.chunk.js"
+    "static/js/main.19cbd160.chunk.js"
   ]
 }
