@@ -22,6 +22,7 @@ const players: Array<string> = [
 ];
 for (const player of players) {
   test(`Summary of player's all team stats are correct for ${player}`, async () => {
+    await playerStatsPage.select2022Year();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
     await playerStatsPage.selectTeamStatsCheckbox();
@@ -54,6 +55,7 @@ for (const player of players) {
 
 test('Can switch between team and all stats', async () => {
   const player = 'Jim Moorin';
+  await playerStatsPage.select2022Year();
   await playerStatsPage.searchForPlayer(player);
   await playerStatsPage.checkTeamAccordionHeadersExist();
   await playerStatsPage.selectTeamStatsCheckbox();

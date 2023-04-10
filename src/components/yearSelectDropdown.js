@@ -27,8 +27,8 @@ function YearSelectDropdown(props) {
                         justifyContent: 'right',
                     }}
                 >
-                    <Dropdown.Item eventKey="2023">2023</Dropdown.Item>
-                    <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
+                    <Dropdown.Item id="option2023" eventKey="2023">2023</Dropdown.Item>
+                    <Dropdown.Item id="option2022" eventKey="2022">2022</Dropdown.Item>
                     {/* Future years will need to be added here */}
                 </DropdownButton>
             )}

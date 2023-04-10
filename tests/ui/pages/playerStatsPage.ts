@@ -31,6 +31,7 @@ export class PlayerStatsPage {
   readonly totalAverage: Locator;
   readonly teamCheckBox: Locator;
   readonly yearSelectDropdown: Locator;
+  readonly yearOptionInDropdownUsedByTests: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -62,6 +63,7 @@ export class PlayerStatsPage {
       ".form-check input[id='#all-stats-select-checkbox']"
     );
     this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
+    this.yearOptionInDropdownUsedByTests = page.locator('#option2022');
   }
 
   async goto() {
@@ -117,6 +119,11 @@ export class PlayerStatsPage {
 
   async deselectTeamStatsCheckbox() {
     await this.teamCheckBox.uncheck();
+  }
+
+  async select2022Year() {
+    await this.yearSelectDropdown.click();
+    await this.yearOptionInDropdownUsedByTests.click();
   }
 
   async validateSummaryStats(playerStats: PlayerStats) {
