@@ -21,10 +21,9 @@ import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
 function App() {
-    // TODO change to 2023
-    const [teamStats, setTeamStats] = useState(bowlsStats22);
-    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats22);
-    const [yearToDisplay, setYearToDisplay] = useState('2022');
+    const [teamStats, setTeamStats] = useState(combinedBowlsStats23);
+    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats23);
+    const [yearToDisplay, setYearToDisplay] = useState('2023');
 
     useEffect(() => {
         WebFont.load({

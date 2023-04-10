@@ -1,35 +1,37 @@
 import { useEffect } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import team1Img from '../images/websiteImages/team1-team.webp';
-import team2Img from '../images/websiteImages/team2-team.webp';
-import team3Img from '../images/websiteImages/team3-team.webp';
-import team4Img from '../images/websiteImages/team4-team.webp';
+import monImg from '../images/websiteImages/mon-team.webp';
+import tuesVetsImg from '../images/websiteImages/tuesVets-team.webp';
+import thurVetsImg from '../images/websiteImages/thursVets-team.webp';
+import satImg from '../images/websiteImages/sat-team.webp';
+import tuesImg from '../images/websiteImages/tues-team.webp';
+import wedImg from '../images/websiteImages/wed-team.webp';
 import socialBowlingImg from '../images/websiteImages/social-bowling2.webp';
 import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 import config from '../config';
 
 const { teams } = config;
 
+// TODO still need image for Wednesday team
 teams.forEach((team) => {
     const teamName = team.name.toLowerCase();
     if (teamName.includes('monday')) {
-        team.img = team1Img;
+        team.img = monImg;
     }
     if (teamName.includes('tuesday vets')) {
-        team.img = team2Img;
+        team.img = tuesVetsImg;
     }
-    // TODO change images for these 2
     if (teamName === 'tuesday') {
-        team.img = team1Img;
+        team.img = tuesImg;
     }
     if (teamName.includes('wednesday')) {
-        team.img = team4Img;
+        team.img = wedImg;
     }
     if (teamName.includes('thursday vets')) {
-        team.img = team3Img;
+        team.img = thurVetsImg;
     }
     if (teamName.includes('saturday')) {
-        team.img = team4Img;
+        team.img = satImg;
     }
 });
 

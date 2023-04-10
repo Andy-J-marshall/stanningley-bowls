@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 
-// TODO Add Tuesday fixtures to calendar when available, and check there's been no updates. Also check dates are BST
-
 function FixturesResults() {
     useEffect(() => {
         window.scrollTo(0, 0);

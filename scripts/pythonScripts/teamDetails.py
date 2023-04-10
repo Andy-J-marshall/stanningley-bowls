@@ -14,21 +14,18 @@ players = [
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller',
     'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson', 'dave hudson', 'neil porter',
     'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard',
-    'melvyn miller', 'stuart potter', 'colin haque'
-    # TODO update player names
-    # TODO need to check these are correct spellings still
+    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'tracey marshall', 'carole mcdermott', 'robin mcdermott',
+    'derek wilson', 'david eaton', 'michael haigh', 'peter crowther', 'laila packer'
 ]
 
 # Players with different spellings of name (lowercase)
 duplicateTeamMemberNames = ['duncan mc phail',
                             'stuart watson', 'andrew marshall']
-                            # TODO will need to check for other alternative spellings
 
 traitorPlayers = {
-    # TODO are these correct?
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': [],
-    'Tuesday Leeds': ['mario biancardo', 'shirley biancardo'],
+    'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'clifford brogie'],
     'Thursday Vets Leeds': [],
     'Saturday Leeds': ['dave hudson', 'clifford brogie'],

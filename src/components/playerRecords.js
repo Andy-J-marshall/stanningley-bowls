@@ -606,11 +606,14 @@ function PlayerRecords(props) {
 
     if (mostGames > 0) {
         return (
+            // TODO wrap this in null check
             <div>
-                <div className="center">
-                    <h1>CLUB CUP WINNER</h1>
-                    <p>{capitalizeText([clubCupWinner])}</p>
-                </div>
+                {clubCupWinner && (
+                    <div className="center">
+                        <h1>CLUB CUP WINNER</h1>
+                        <p>{capitalizeText([clubCupWinner])}</p>
+                    </div>
+                )}
 
                 <h1>PLAYER RECORDS</h1>
                 <TeamTabs
