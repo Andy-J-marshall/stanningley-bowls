@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import YearSelectDropdown from './yearSelectDropdown';
 import config from '../config';
-import { capitalizeText } from '../helpers/utils';
 
 const teamName = config.teamNames.short;
 
@@ -18,6 +17,7 @@ function Results(props) {
         window.scrollTo(0, 0);
     });
 
+    let resultsFound = false;
     const resultsArray = teamResults.map((team) => {
         const results = team.results.map((result) => {
             const resultParts = result.split(' - ');
@@ -29,6 +29,8 @@ function Results(props) {
             date = date.slice(0, -1);
             const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
             const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
+
+            resultsFound = true;
 
             return {
                 home: {
@@ -49,115 +51,129 @@ function Results(props) {
         };
     });
 
-    return (
-        <div>
-            <YearSelectDropdown
-                numberOfYearsToDisplay={numberOfYearsToDisplay}
-                statsCallback={statsCallback}
-                yearToDisplay={yearToDisplay}
-            />
-            <h1>RESULTS</h1>
-            {resultsArray.map((team, idx) => {
-                if (team.results.length > 1) {
+    if (resultsFound) {
+        return (
+            <div>
+                <YearSelectDropdown
+                    numberOfYearsToDisplay={numberOfYearsToDisplay}
+                    statsCallback={statsCallback}
+                    yearToDisplay={yearToDisplay}
+                />
+                <h1>RESULTS</h1>
+                {resultsArray.map((team, idx) => {
                     return (
                         <div className="center" id="result" key={idx}>
-                            <h3 style={{ paddingTop: '1rem' }}>
-                                {team.day.toUpperCase()}
-                            </h3>
-                            <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th>DATE</th>
-                                        <th>HOME</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th>AWAY</th>
-                                    </tr>
-                                </thead>
-                                {team.results.map((result, idx) => {
-                                    const homeTeam = result.home.homeTeam;
-                                    const awayTeam = result.away.awayTeam;
-                                    const date = result.date;
-
-                                    return (
-                                        <tbody key={idx}>
+                            {team.results.length > 0 && (
+                                <div>
+                                    <h3 style={{ paddingTop: '1rem' }}>
+                                        {team.day.toUpperCase()}
+                                    </h3>
+                                    <Table striped bordered hover>
+                                        <thead>
                                             <tr>
-                                                <td
-                                                    style={{
-                                                        borderRightStyle:
-                                                            'solid',
-                                                        borderRightColor:
-                                                            'black',
-                                                    }}
-                                                >
-                                                    {date}
-                                                </td>
-                                                {homeTeam.toLowerCase() ===
-                                                teamName.toLowerCase() ? (
-                                                    <td
-                                                        style={{
-                                                            width: '38%',
-                                                        }}
-                                                    >
-                                                        {homeTeam.toUpperCase()}
-                                                    </td>
-                                                ) : (
-                                                    <td
-                                                        style={{ width: '38%' }}
-                                                    >
-                                                        {homeTeam}
-                                                    </td>
-                                                )}
-                                                <td
-                                                    style={{
-                                                        borderRightStyle:
-                                                            'solid',
-                                                        borderRightColor:
-                                                            'black',
-                                                    }}
-                                                >
-                                                    {result.home.homeScore}
-                                                </td>
-                                                <td>{result.away.awayScore}</td>
-                                                {awayTeam.toLowerCase() ===
-                                                teamName.toLowerCase() ? (
-                                                    <td
-                                                        style={{
-                                                            width: '38%',
-                                                        }}
-                                                    >
-                                                        {awayTeam.toUpperCase()}
-                                                    </td>
-                                                ) : (
-                                                    <td
-                                                        style={{
-                                                            width: '38%',
-                                                        }}
-                                                    >
-                                                        {awayTeam}
-                                                    </td>
-                                                )}
+                                                <th>DATE</th>
+                                                <th>HOME</th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>AWAY</th>
                                             </tr>
-                                        </tbody>
-                                    );
-                                })}
-                            </Table>
+                                        </thead>
+                                        {team.results.map((result, idx) => {
+                                            const homeTeam =
+                                                result.home.homeTeam;
+                                            const awayTeam =
+                                                result.away.awayTeam;
+                                            const date = result.date;
+
+                                            return (
+                                                <tbody key={idx}>
+                                                    <tr>
+                                                        <td
+                                                            style={{
+                                                                borderRightStyle:
+                                                                    'solid',
+                                                                borderRightColor:
+                                                                    'black',
+                                                            }}
+                                                        >
+                                                            {date}
+                                                        </td>
+                                                        {homeTeam.toLowerCase() ===
+                                                        teamName.toLowerCase() ? (
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {homeTeam.toUpperCase()}
+                                                            </td>
+                                                        ) : (
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {homeTeam}
+                                                            </td>
+                                                        )}
+                                                        <td
+                                                            style={{
+                                                                borderRightStyle:
+                                                                    'solid',
+                                                                borderRightColor:
+                                                                    'black',
+                                                            }}
+                                                        >
+                                                            {
+                                                                result.home
+                                                                    .homeScore
+                                                            }
+                                                        </td>
+                                                        <td>
+                                                            {
+                                                                result.away
+                                                                    .awayScore
+                                                            }
+                                                        </td>
+                                                        {awayTeam.toLowerCase() ===
+                                                        teamName.toLowerCase() ? (
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {awayTeam.toUpperCase()}
+                                                            </td>
+                                                        ) : (
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {awayTeam}
+                                                            </td>
+                                                        )}
+                                                    </tr>
+                                                </tbody>
+                                            );
+                                        })}
+                                    </Table>
+                                </div>
+                            )}
                         </div>
                     );
-                } else {
-                    return (
-                        <div>
-                            <h3 style={{ paddingTop: '1rem' }}>
-                                {team.day.toUpperCase()}
-                            </h3>
-                            <p>No {yearToDisplay} results available </p>
-                        </div>
-                    );
-                }
-            })}
-            <p className="footnote">Last Updated: {stats.lastUpdated}</p>
-        </div>
-    );
+                })}
+                <p className="footnote">Last Updated: {stats.lastUpdated}</p>
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <h1>RESULTS</h1>
+                <p>Results not found for {yearToDisplay}</p>
+            </div>
+        );
+    }
 }
 
 export default Results;
