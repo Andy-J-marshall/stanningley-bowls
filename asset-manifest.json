@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d791e709.chunk.css",
-    "main.js": "/static/js/main.71fc510f.chunk.js",
-    "main.js.map": "/static/js/main.71fc510f.chunk.js.map",
+    "main.js": "/static/js/main.70683dde.chunk.js",
+    "main.js.map": "/static/js/main.70683dde.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2833f87.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2833f87.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -27,10 +27,10 @@
     "static/media/social-bowling.3b26214a.webp": "/static/media/social-bowling.3b26214a.webp",
     "static/media/social-bowling2.32756047.webp": "/static/media/social-bowling2.32756047.webp",
     "static/media/squeaker.3afb2210.png": "/static/media/squeaker.3afb2210.png",
-    "static/media/thursVets-team.fe4ebc96.webp": "/static/media/thursVets-team.fe4ebc96.webp",
+    "static/media/thursVets-team.f99d9e65.webp": "/static/media/thursVets-team.f99d9e65.webp",
     "static/media/tues-team.23c51793.webp": "/static/media/tues-team.23c51793.webp",
-    "static/media/tuesVets-team.b9404668.webp": "/static/media/tuesVets-team.b9404668.webp",
-    "static/media/wed-team.a07c0c5c.webp": "/static/media/wed-team.a07c0c5c.webp",
+    "static/media/tuesVets-team.8d230e1d.webp": "/static/media/tuesVets-team.8d230e1d.webp",
+    "static/media/wed-team.9bbd1ce4.webp": "/static/media/wed-team.9bbd1ce4.webp",
     "static/media/west_leeds_dispatch.242ca0e5.png": "/static/media/west_leeds_dispatch.242ca0e5.png"
   },
   "entrypoints": [
@@ -38,6 +38,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.d7ded088.chunk.js",
     "static/css/main.d791e709.chunk.css",
-    "static/js/main.71fc510f.chunk.js"
+    "static/js/main.70683dde.chunk.js"
   ]
 }
