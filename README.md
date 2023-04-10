@@ -155,3 +155,5 @@ Update `yearFixturesAddedFor` in `fixtures.js`.
 Add/update the `clubCupWinner` in the `bowlsStats{year}` file.
 
 Update the dateFromValue and dateToValue in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts` file for each league. This is the option number when inspecting the date dropdowns on bowlsnet.
+
+Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.

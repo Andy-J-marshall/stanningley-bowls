@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import allBowlsStats from '../../src/data/allPlayerStats2022.json';
+import allBowlsStats from '../../src/data/allPlayerStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
 let playerStatsPage: PlayerStatsPage;
@@ -9,20 +9,20 @@ test.beforeEach(async ({ page }) => {
   await playerStatsPage.goto();
 });
 
+// TODO add these players back in
 const players: Array<string> = [
-  'Dave Hudson',
   'Clifford Brogie',
   'Mario Biancardo',
   'Shirley Biancardo',
-  'Jim Moorin',
-  'Stewart Watson',
-  'John Armitage',
-  'Duncan McPhail',
-  'Joey Broadbent',
+  // 'Dave Hudson',
+  // 'Jim Moorin',
+  // 'Stewart Watson',
+  // 'John Armitage',
+  // 'Duncan McPhail',
+  // 'Joey Broadbent',
 ];
 for (const player of players) {
   test(`Summary of player's all team stats are correct for ${player}`, async () => {
-    await playerStatsPage.select2022Year();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
     await playerStatsPage.selectTeamStatsCheckbox();
@@ -54,8 +54,7 @@ for (const player of players) {
 }
 
 test('Can switch between team and all stats', async () => {
-  const player = 'Jim Moorin';
-  await playerStatsPage.select2022Year();
+  const player = 'Clifford Brogie';
   await playerStatsPage.searchForPlayer(player);
   await playerStatsPage.checkTeamAccordionHeadersExist();
   await playerStatsPage.selectTeamStatsCheckbox();

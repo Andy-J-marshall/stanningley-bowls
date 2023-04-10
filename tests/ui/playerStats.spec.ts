@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import bowlsStats from '../../src/data/bowlsStats2022.json';
+import bowlsStats from '../../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
 let playerStatsPage: PlayerStatsPage;
@@ -9,18 +9,18 @@ test.beforeEach(async ({ page }) => {
   await playerStatsPage.goto();
 });
 
+// TODO add these players back in
 const players: Array<string> = [
   'Andy Marshall',
   'Andy W',
-  'Jack Roberts',
   'Paul Bowes',
   'Alyssa Randell',
   'Ali',
-  'Neil Porter',
+  'Kevin Waller',
+  // 'Jack Roberts',
 ];
 for (const player of players) {
   test(`Summary of player's team stats are correct for ${player}`, async () => {
-    await playerStatsPage.select2022Year();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkPlayerIsReturned();
     await playerStatsPage.checkPlayerName(player);
