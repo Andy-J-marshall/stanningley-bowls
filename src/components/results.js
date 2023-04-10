@@ -53,7 +53,7 @@ function Results(props) {
 
     if (resultsFound) {
         return (
-            <div>
+            <div className="center" id="result">
                 <YearSelectDropdown
                     numberOfYearsToDisplay={numberOfYearsToDisplay}
                     statsCallback={statsCallback}
@@ -62,7 +62,7 @@ function Results(props) {
                 <h1>RESULTS</h1>
                 {resultsArray.map((team, idx) => {
                     return (
-                        <div className="center" id="result" key={idx}>
+                        <div key={idx}>
                             {team.results.length > 0 && (
                                 <div>
                                     <h3 style={{ paddingTop: '1rem' }}>
@@ -163,6 +163,7 @@ function Results(props) {
                         </div>
                     );
                 })}
+                <br />
                 <p className="footnote">Last Updated: {stats.lastUpdated}</p>
             </div>
         );
