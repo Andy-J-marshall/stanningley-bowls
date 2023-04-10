@@ -21,7 +21,7 @@ import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import './app.css';
 
 function App() {
-    const [teamStats, setTeamStats] = useState(combinedBowlsStats23);
+    const [teamStats, setTeamStats] = useState(bowlsStats23);
     const [combinedStats, setCombinedStats] = useState(combinedBowlsStats23);
     const [yearToDisplay, setYearToDisplay] = useState('2023');
 
