@@ -15,10 +15,10 @@ const players: Array<string> = [
   'Mario Biancardo',
   'Shirley Biancardo',
   // 'Dave Hudson',
-  // 'Jim Moorin',
-  // 'Stewart Watson',
+  'Jim Moorin',
+  'Stewart Watson',
   // 'John Armitage',
-  // 'Duncan McPhail',
+  'Duncan McPhail',
   // 'Joey Broadbent',
 ];
 for (const player of players) {

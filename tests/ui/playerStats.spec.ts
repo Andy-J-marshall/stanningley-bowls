@@ -9,7 +9,6 @@ test.beforeEach(async ({ page }) => {
   await playerStatsPage.goto();
 });
 
-// TODO add these players back in
 const players: Array<string> = [
   'Andy Marshall',
   'Andy W',
@@ -17,7 +16,7 @@ const players: Array<string> = [
   'Alyssa Randell',
   'Ali',
   'Kevin Waller',
-  // 'Jack Roberts',
+  'Jack Roberts',
 ];
 for (const player of players) {
   test(`Summary of player's team stats are correct for ${player}`, async () => {
