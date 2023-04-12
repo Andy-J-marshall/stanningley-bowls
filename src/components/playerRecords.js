@@ -16,7 +16,7 @@ function PlayerRecords(props) {
     let bestMondayAveragePlayer = [];
     let bestMondayAverage = -21;
     let bestMondayWinPerc = 0;
-    let bestMondayWinPercPlayer = 0;
+    let bestMondayWinPercPlayer = [];
 
     // Tuesday Vets
     let useTuesdayVetsStats = false;
@@ -26,7 +26,7 @@ function PlayerRecords(props) {
     let bestTuesdayVetsAveragePlayer = [];
     let bestTuesdayVetsAverage = -21;
     let bestTuesdayVetsWinPerc = 0;
-    let bestTuesdayVetsWinPercPlayer = 0;
+    let bestTuesdayVetsWinPercPlayer = [];
 
     // Tuesday
     let useTuesdayStats = false;
@@ -36,7 +36,7 @@ function PlayerRecords(props) {
     let bestTuesdayAveragePlayer = [];
     let bestTuesdayAverage = -21;
     let bestTuesdayWinPerc = 0;
-    let bestTuesdayWinPercPlayer = 0;
+    let bestTuesdayWinPercPlayer = [];
 
     // Wednesday
     let useWednesdayStats = false;
@@ -46,7 +46,7 @@ function PlayerRecords(props) {
     let bestWednesdayAveragePlayer = [];
     let bestWednesdayAverage = -21;
     let bestWednesdayWinPerc = 0;
-    let bestWednesdayWinPercPlayer = 0;
+    let bestWednesdayWinPercPlayer = [];
 
     // Thursday Vets
     let useThursdayVetsStats = false;
@@ -56,7 +56,7 @@ function PlayerRecords(props) {
     let bestThursdayVetsAveragePlayer = [];
     let bestThursdayVetsAverage = -21;
     let bestThursdayVetsWinPerc = 0;
-    let bestThursdayVetsWinPercPlayer = 0;
+    let bestThursdayVetsWinPercPlayer = [];
 
     // Saturday
     let useSaturdayStats = false;
@@ -66,7 +66,7 @@ function PlayerRecords(props) {
     let bestSaturdayAveragePlayer = [];
     let bestSaturdayAverage = -21;
     let bestSaturdayWinPerc = 0;
-    let bestSaturdayWinPercPlayer = 0;
+    let bestSaturdayWinPercPlayer = [];
 
     // Total
     let minTotalGames = 1;

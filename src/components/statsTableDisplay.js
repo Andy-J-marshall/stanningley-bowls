@@ -104,7 +104,7 @@ function StatsTableDisplay(props) {
                     ) : null}
                     {opponentAgg > 0 ? (
                         <tr>
-                            <td>Opponents aggregate</td>
+                            <td>Opponent aggregate</td>
                             <td>{opponentAgg}</td>
                         </tr>
                     ) : null}
@@ -116,7 +116,7 @@ function StatsTableDisplay(props) {
                     ) : null}
                     {opponentTeamPoints > 0 ? (
                         <tr>
-                            <td>Opponents points*</td>
+                            <td>Opponent points*</td>
                             <td>{opponentTeamPoints}</td>
                         </tr>
                     ) : null}
