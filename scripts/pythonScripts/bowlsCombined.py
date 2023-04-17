@@ -176,8 +176,12 @@ for league in leaguesDays:
                     # Store player stats
                     playerNameForResult = playerName
                     if pairsGame:
+                        playerResults[playerName]['pairsPartners'].append(
+                            pairsPartner)
                         playerNameForResult = playerName + ' & ' + pairsPartner
                         opponentsName = opponentsName + ' & ' + secondOpponent
+                        playerResults[playerName]['totalPairsAgg'] += aggregate
+                        playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
                     playersResult = playerNameForResult + ' ' + \
                         str(aggregate) + ' - ' + \
@@ -197,6 +201,10 @@ for league in leaguesDays:
                             playerResults[playerName]['awayWins'] += 1
                         if cupGame:
                             playerResults[playerName]['cupWins'] += 1
+                        if pairsGame:
+                            playerResults[playerName]['winningPairsPartners'].append(
+                                pairsPartner)
+                            playerResults[playerName]['pairWins'] += 1
                     # Losses
                     else:
                         playerResults[playerName]['beatenBy'].append(
@@ -209,6 +217,9 @@ for league in leaguesDays:
                             playerResults[playerName]['awayLosses'] += 1
                         if cupGame:
                             playerResults[playerName]['cupLosses'] += 1
+                        if pairsGame:
+                            playerResults[playerName]['losingPairsPartners'].append(pairsPartner)
+                            playerResults[playerName]['pairLosses'] += 1
 
                     # Averages
                     playerResults[playerName]['totalAgg'] += aggregate
