@@ -6,6 +6,7 @@ function IndividualTeamStats(props) {
     const day = props.day;
     const stats = props.stats;
     const playerStats = props.playerStats;
+    const url = props.url;
 
     if (stats) {
         const {
@@ -68,6 +69,18 @@ function IndividualTeamStats(props) {
                     <br />
                     <h1>PLAYERS</h1>
                     <PlayerStatSummary playerStats={allPlayerStats} />
+                    <br />
+                    <p>
+                        The full league stats can be found on{' '}
+                        <a
+                            style={{ textDecoration: 'none' }}
+                            target="_blank"
+                            href={url}
+                        >
+                            Bowlsnet
+                        </a>
+                        .
+                    </p>
                 </div>
             );
         } else {

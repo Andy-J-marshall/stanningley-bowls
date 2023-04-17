@@ -1,4 +1,3 @@
-import React from 'react';
 import { Table } from 'react-bootstrap';
 import { arrayToList } from '../helpers/utils';
 import config from '../config';
@@ -49,7 +48,7 @@ function StatsTableDisplay(props) {
                     ) : null}
                     {leaguePosition >= 0 ? (
                         <tr>
-                            <td>Current league position</td>
+                            <td>League position</td>
                             <td>{leaguePosition}</td>
                         </tr>
                     ) : null}
