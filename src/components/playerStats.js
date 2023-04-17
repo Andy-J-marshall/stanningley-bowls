@@ -38,24 +38,41 @@ function PlayerStats(props) {
 
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
-    const statsToDisplayArray = [];
+    const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
+    const initialStatsToDisplay = getStatsSummary();
+    const [statsToDisplayArray, setStatsToDisplayArray] = useState(
+        initialStatsToDisplay
+    );
 
-    players.sort().forEach((player) => {
-        const playerStats = returnPlayerStats(statsToUse, player);
-        if (playerStats) {
-            const stats = {
-                player,
-                games: playerStats.gamesPlayed,
-                wins: playerStats.totalWins,
-                agg: playerStats.totalAgg,
-                aggAgainst: playerStats.totalAggAgainst,
-                average:
-                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
-                    playerStats.gamesPlayed,
-            };
-            statsToDisplayArray.push(stats);
-        }
-    });
+    function getStatsSummary() {
+        const stats = [];
+        players.sort().forEach((player) => {
+            const playerStats = returnPlayerStats(statsToUse, player);
+            if (playerStats) {
+                const stat = {
+                    player,
+                    games: playerStats.gamesPlayed,
+                    wins: playerStats.totalWins,
+                    agg: playerStats.totalAgg,
+                    aggAgainst: playerStats.totalAggAgainst,
+                    average:
+                        (playerStats.totalAgg - playerStats.totalAggAgainst) /
+                        playerStats.gamesPlayed,
+
+                    singleGames: playerStats.singlesGames,
+                    singlesWins: playerStats.totalWins - playerStats.pairWins,
+                    singlesAgg: playerStats.singlesAgg,
+                    singlesAggAgainst: playerStats.singlesAggAgainst,
+                    singlesAverage:
+                        (playerStats.singlesAgg -
+                            playerStats.singlesAggAgainst) /
+                        playerStats.singlesGames,
+                };
+                stats.push(stat);
+            }
+        });
+        return stats;
+    }
 
     useEffect(() => {
         if (!loaded) {
@@ -80,6 +97,16 @@ function PlayerStats(props) {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
         }
+        setStatsToDisplayArray(getStatsSummary());
+    }
+
+    function onlySinglesCallback(showSinglesBoolean) {
+        if (showSinglesBoolean) {
+            setShowSinglesOnlyBool(true);
+        } else {
+            setShowSinglesOnlyBool(false);
+        }
+        setStatsToDisplayArray(getStatsSummary());
     }
 
     function allYearStatsCallback(showAllBoolean) {
@@ -88,6 +115,7 @@ function PlayerStats(props) {
         } else {
             setShowStatsSinceStart(false);
         }
+        setStatsToDisplayArray(getStatsSummary());
     }
 
     function searchForPlayer(searchedName) {
@@ -182,6 +210,7 @@ function PlayerStats(props) {
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
+                        showSinglesOnly={showSinglesOnlyBool}
                     />
                 </div>
             );
@@ -267,7 +296,10 @@ function PlayerStats(props) {
             {showStatsSinceStart &&
                 !loading &&
                 statsForEveryYearArray.length > 1 && (
-                    <AllTimePlayerStats statsArray={allYearsStatsToUse} />
+                    <AllTimePlayerStats
+                        statsArray={allYearsStatsToUse}
+                        showSinglesOnly={showSinglesOnlyBool}
+                    />
                 )}
 
             {/* Shows detailed stats for searched player */}
@@ -287,6 +319,7 @@ function PlayerStats(props) {
             <PlayerStatOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
+                onlySinglesCallback={onlySinglesCallback}
                 playerSearchedFor={searchedPlayerName}
             />
         </div>

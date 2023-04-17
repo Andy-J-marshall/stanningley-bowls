@@ -4,6 +4,7 @@ import { returnPlayerStats } from '../helpers/playersHelper';
 
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
+    const showSinglesOnlyBool = props.showSinglesOnly;
 
     const [loaded, setLoaded] = useState(false);
 
@@ -27,6 +28,11 @@ function AllTimePlayerStats(props) {
             agg: 0,
             aggAgainst: 0,
             average: 0,
+            singleGames: 0,
+            singlesWins: 0,
+            singlesAgg: 0,
+            singlesAggAgainst: 0,
+            singlesAverage: 0,
         };
 
         statsArray.forEach((yearStats) => {
@@ -39,10 +45,18 @@ function AllTimePlayerStats(props) {
                 stats.aggAgainst += playerStats.totalAggAgainst;
                 stats.wins += playerStats.totalWins;
                 stats.games += playerStats.gamesPlayed;
+
+                stats.singlesAgg += playerStats.singlesAgg;
+                stats.singlesAggAgainst += playerStats.singlesAggAgainst;
+                stats.singlesWins +=
+                    playerStats.totalWins - playerStats.pairWins;
+                stats.singleGames += playerStats.singlesGames;
             }
         });
-
+        stats.singlesAverage =
+            (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
         stats.average = (stats.agg - stats.aggAgainst) / stats.games;
+
         statsToDisplayArray.push(stats);
     });
 
@@ -56,7 +70,10 @@ function AllTimePlayerStats(props) {
     return (
         <div id="all-time-player-stats" className="center">
             <h3 style={{ padding: '1rem 0 0 0' }}>STATS SINCE 2022</h3>
-            <PlayerStatSummary playerStats={statsToDisplayArray} />
+            <PlayerStatSummary
+                playerStats={statsToDisplayArray}
+                showSinglesOnly={showSinglesOnlyBool}
+            />
         </div>
     );
 }

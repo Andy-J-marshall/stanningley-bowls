@@ -4,6 +4,7 @@ import { capitalizeText } from '../helpers/utils';
 function PlayerStatSummary(props) {
     const playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
+    const showSinglesOnlyBool = props.showSinglesOnly;
 
     let style;
     let href;
@@ -44,9 +45,19 @@ function PlayerStatSummary(props) {
                             </tr>
                         </thead>
                         {playerStats.map((player, key) => {
+                            let gamesPlayed = player.games;
+                            let average = player.average;
+                            let wins = player.wins;
+
+                            if (showSinglesOnlyBool) {
+                                gamesPlayed = player.singleGames;
+                                average = player.singlesAverage;
+                                wins = player.singlesWins;
+                            }
+
                             return (
                                 <tbody key={key}>
-                                    {player.games > 0 && (
+                                    {gamesPlayed > 0 && (
                                         <tr>
                                             <td>
                                                 <a
@@ -59,17 +70,16 @@ function PlayerStatSummary(props) {
                                                     ])}
                                                 </a>
                                             </td>
-                                            <td>{player.games}</td>
-                                            <td>{player.wins}</td>
+                                            <td>{gamesPlayed}</td>
+                                            <td>{wins}</td>
                                             <td>
                                                 {(
-                                                    (player.wins /
-                                                        player.games) *
+                                                    (wins / gamesPlayed) *
                                                     100
                                                 ).toFixed(0)}
                                                 %
                                             </td>
-                                            <td>{player.average.toFixed(2)}</td>
+                                            <td>{average.toFixed(2)}</td>
                                         </tr>
                                     )}
                                 </tbody>

@@ -4,6 +4,7 @@ import { Form, Row, Col, Accordion } from 'react-bootstrap';
 function PlayerStatOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
+    const onlySinglesCallback = props.onlySinglesCallback;
     const playerSearchedFor = props.playerSearchedFor;
 
     const [key, setKey] = useState(playerSearchedFor);
@@ -17,6 +18,11 @@ function PlayerStatOptions(props) {
     function toggleAllTeamStats(event) {
         const allTeamStatsToggle = event.currentTarget.checked;
         allTeamStatsCallback(allTeamStatsToggle);
+    }
+
+    function toggleSinglesOnlyMatches(event) {
+        const singlesToggle = event.currentTarget.checked;
+        onlySinglesCallback(singlesToggle);
     }
 
     function toggleAllYearStats(event) {
@@ -51,6 +57,19 @@ function PlayerStatOptions(props) {
                                             label="Include stats whilst playing for other teams"
                                         />
                                     </Col>
+                                    {!playerSearchedFor && (
+                                        <Col>
+                                            <Form.Check
+                                                key={key}
+                                                id="#only-singles-checkbox"
+                                                onClick={
+                                                    toggleSinglesOnlyMatches
+                                                }
+                                                type="checkbox"
+                                                label="Only show stats for singles games"
+                                            />
+                                        </Col>
+                                    )}
                                     {!playerSearchedFor && (
                                         <Col>
                                             <Form.Check

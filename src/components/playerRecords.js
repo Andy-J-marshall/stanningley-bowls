@@ -606,7 +606,6 @@ function PlayerRecords(props) {
 
     if (mostGames > 0) {
         return (
-            // TODO wrap this in null check
             <div>
                 {clubCupWinner && (
                     <div className="center">
