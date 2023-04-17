@@ -69,8 +69,7 @@ function IndividualTeamStats(props) {
                     <br />
                     <h1>PLAYERS</h1>
                     <PlayerStatSummary playerStats={allPlayerStats} />
-                    <br />
-                    <p>
+                    <p className="footnote">
                         The full league stats can be found on{' '}
                         <a
                             style={{ textDecoration: 'none' }}

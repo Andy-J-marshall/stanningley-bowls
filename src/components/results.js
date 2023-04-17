@@ -61,6 +61,10 @@ function Results(props) {
                 />
                 <h1>RESULTS</h1>
                 {resultsArray.map((team, idx) => {
+                    const teamConfig = config.teams.find((e) =>
+                        e.name.toLowerCase().includes(team.day.toLowerCase())
+                    );
+
                     return (
                         <div key={idx}>
                             {team.results.length > 0 && (
@@ -158,6 +162,17 @@ function Results(props) {
                                             );
                                         })}
                                     </Table>
+                                    <p className="footnote">
+                                        The full league results can be found on{' '}
+                                        <a
+                                            style={{ textDecoration: 'none' }}
+                                            target="_blank"
+                                            href={teamConfig.link}
+                                        >
+                                            Bowlsnet
+                                        </a>
+                                        .
+                                    </p>
                                 </div>
                             )}
                         </div>
