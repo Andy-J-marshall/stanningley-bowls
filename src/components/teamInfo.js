@@ -12,7 +12,6 @@ import config from '../config';
 
 const { teams } = config;
 
-// TODO still need image for Wednesday team
 teams.forEach((team) => {
     const teamName = team.name.toLowerCase();
     if (teamName.includes('monday')) {
