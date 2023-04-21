@@ -117,6 +117,12 @@ for day in teamDays:
     results = []
 
     for row in range(1, sheet.max_row + 1):
+        # Leeds half holiday team only has 6 players
+        if 'half holiday' in day.lower():
+            rowsDownIntModifier = 2
+        else:
+            rowsDownIntModifier = 0
+
         # Check if cup game
         cupGame = False
         cupCell = ''
@@ -125,11 +131,15 @@ for day in teamDays:
             cupCell = sheet[homeTeamNameCol + str(row - 1)].value
         if (cupCell and type(cupCell) is str) and cupCell.lower() in cupText:
             cupGame = True
-            homeScore = sheet[homeTeamScoreCol + str(row + 9)].value
-            awayScore = sheet[awayTeamScoreCol + str(row + 9)].value
+            homeScore = sheet[homeTeamScoreCol +
+                              str(row + 9 - rowsDownIntModifier)].value
+            awayScore = sheet[awayTeamScoreCol +
+                              str(row + 9 - rowsDownIntModifier)].value
         else:
-            homeScore = sheet[homeTeamScoreCol + str(row + 10)].value
-            awayScore = sheet[awayTeamScoreCol + str(row + 10)].value
+            homeScore = sheet[homeTeamScoreCol +
+                              str(row + 10 - rowsDownIntModifier)].value
+            awayScore = sheet[awayTeamScoreCol +
+                              str(row + 10 - rowsDownIntModifier)].value
 
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
@@ -166,9 +176,11 @@ for day in teamDays:
                     drawnWith.append(opponent + (' (home)'))
                     homeDraws = homeDraws + 1
                 teamAgg = teamAgg + \
-                    sheet[homeAggCol + str(row + 9)].value
+                    sheet[homeAggCol +
+                          str(row + 9 - rowsDownIntModifier)].value
                 opponentAgg = opponentAgg + \
-                    sheet[awayAggCol + str(row + 9)].value
+                    sheet[awayAggCol +
+                          str(row + 9 - rowsDownIntModifier)].value
                 if not cupGame:
                     teamTotalPoints = teamTotalPoints + homeScore
                     opponentTotalPoints = opponentTotalPoints + awayScore
@@ -199,9 +211,9 @@ for day in teamDays:
                     drawnWith.append(opponent + ' (away)')
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + \
-                    sheet[homeAggCol + str(row + 9)].value
+                    sheet[homeAggCol + str(row + 9 - rowsDownIntModifier)].value
                 teamAgg = teamAgg + \
-                    sheet[awayAggCol + str(row + 9)].value
+                    sheet[awayAggCol + str(row + 9 - rowsDownIntModifier)].value
                 if not cupGame:
                     teamTotalPoints = teamTotalPoints + awayScore
                     opponentTotalPoints = opponentTotalPoints + homeScore
