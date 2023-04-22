@@ -14,12 +14,12 @@ const players: Array<string> = [
   'Clifford Brogie',
   'Mario Biancardo',
   'Shirley Biancardo',
-  // 'Dave Hudson',
+  'Dave Hudson',
   'Jim Moorin',
   'Stewart Watson',
   // 'John Armitage',
   'Duncan McPhail',
-  // 'Joey Broadbent',
+  'Joey Broadbent',
 ];
 for (const player of players) {
   test(`Summary of player's all team stats are correct for ${player}`, async () => {

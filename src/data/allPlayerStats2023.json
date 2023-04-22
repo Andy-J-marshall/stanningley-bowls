@@ -128,10 +128,10 @@
     },
     "andy marshall": {
       "totalPoints": 0,
-      "totalAgg": 105,
+      "totalAgg": 126,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 65,
-      "homeWins": 3,
+      "totalAggAgainst": 66,
+      "homeWins": 4,
       "homeLosses": 0,
       "awayWins": 2,
       "awayLosses": 0,
@@ -143,7 +143,8 @@
         "elaine hill",
         "molly depledge",
         "james cuffe",
-        "barbara moss"
+        "barbara moss",
+        "doreen hogg"
       ],
       "beatenBy": [],
       "dayPlayed": [
@@ -151,14 +152,15 @@
         "Tuesday Leeds (Stanningley)",
         "Wednesday Half Holiday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
       "totalPairsAgg": 21,
       "totalPairsAggAgainst": 11,
       "winningPairsPartners": ["alyssa randell"],
       "losingPairsPartners": [],
-      "totalHomeAgg": 63,
-      "totalHomeAggAgainst": 48,
+      "totalHomeAgg": 84,
+      "totalHomeAggAgainst": 49,
       "totalAwayAgg": 42,
       "totalAwayAggAgainst": 17,
       "totalHomePoints": 0,
@@ -172,6 +174,7 @@
         " (Tuesday Leeds)",
         " (Wednesday Half Holiday Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Saturday Leeds)"
       ],
       "beatenByTeam": [],
@@ -180,7 +183,8 @@
         "andy marshall 21 - 18 elaine hill",
         "andy marshall 21 - 14 molly depledge",
         "andy marshall 21 - 19 james cuffe",
-        "andy marshall 21 - 3 barbara moss"
+        "andy marshall 21 - 3 barbara moss",
+        "andy marshall 21 - 1 doreen hogg"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -208,10 +212,10 @@
     },
     "andy w": {
       "totalPoints": 0,
-      "totalAgg": 84,
+      "totalAgg": 105,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 38,
-      "homeWins": 1,
+      "totalAggAgainst": 43,
+      "homeWins": 2,
       "homeLosses": 0,
       "awayWins": 3,
       "awayLosses": 0,
@@ -222,12 +226,14 @@
         "stuart marsh",
         "keith fleming",
         "andrew dewhirst",
-        "dave hudson"
+        "dave hudson",
+        "brian marshall"
       ],
       "beatenBy": [],
       "dayPlayed": [
         "Wednesday Half Holiday Leeds (Stanningley)",
         "Thursday Vets Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
@@ -235,8 +241,8 @@
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 21,
-      "totalHomeAggAgainst": 8,
+      "totalHomeAgg": 42,
+      "totalHomeAggAgainst": 13,
       "totalAwayAgg": 63,
       "totalAwayAggAgainst": 30,
       "totalHomePoints": 0,
@@ -249,6 +255,7 @@
         " (Wednesday Half Holiday Leeds)",
         " (Thursday Vets Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Saturday Leeds)"
       ],
       "beatenByTeam": [],
@@ -256,7 +263,8 @@
         "andy w 21 - 9 stuart marsh",
         "andy w 21 - 20 keith fleming",
         "andy w 21 - 8 andrew dewhirst",
-        "andy w 21 - 1 dave hudson"
+        "andy w 21 - 1 dave hudson",
+        "andy w 21 - 5 brian marshall"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -774,12 +782,12 @@
     },
     "duncan mcphail": {
       "totalPoints": 0,
-      "totalAgg": 118,
+      "totalAgg": 139,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 62,
+      "totalAggAgainst": 73,
       "homeWins": 4,
       "homeLosses": 0,
-      "awayWins": 1,
+      "awayWins": 2,
       "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
@@ -789,6 +797,7 @@
         "jeff linley",
         "diane farrar",
         "frank cullen",
+        "peter martin",
         "graham hainsworth"
       ],
       "beatenBy": ["paul hainsworth"],
@@ -796,6 +805,7 @@
         "Tuesday Vets Leeds (Stanningley)",
         "Tuesday Vets Leeds (Stanningley)",
         "Monday AireDale & Wharfedale (Farsley B)",
+        "Saturday Bradford (Farsley)",
         "Saturday Bradford (Farsley)",
         "Wednesday Spen Valley (Farsley)",
         "Wednesday Spen Valley (Farsley)"
@@ -806,8 +816,8 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 84,
       "totalHomeAggAgainst": 35,
-      "totalAwayAgg": 34,
-      "totalAwayAggAgainst": 27,
+      "totalAwayAgg": 55,
+      "totalAwayAggAgainst": 38,
       "totalHomePoints": 0,
       "totalHomePointsAgainst": 0,
       "totalAwayPoints": 0,
@@ -819,6 +829,7 @@
         " (Tuesday Vets Leeds)",
         " (Monday AireDale & Wharfedale)",
         " (Saturday Bradford)",
+        " (Saturday Bradford)",
         " (Wednesday Spen Valley)"
       ],
       "beatenByTeam": [" (Wednesday Spen Valley)"],
@@ -827,6 +838,7 @@
         "duncan mcphail 21 - 6 jeff linley",
         "duncan mcphail 21 - 9 diane farrar",
         "duncan mcphail 21 - 18 frank cullen",
+        "duncan mcphail 21 - 11 peter martin",
         "duncan mcphail 21 - 6 graham hainsworth",
         "duncan mcphail 13 - 21 paul hainsworth"
       ],
@@ -1046,25 +1058,25 @@
     },
     "joey broadbent": {
       "totalPoints": 0,
-      "totalAgg": 0,
+      "totalAgg": 21,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 0,
-      "homeWins": 0,
+      "totalAggAgainst": 6,
+      "homeWins": 1,
       "homeLosses": 0,
       "awayWins": 0,
       "awayLosses": 0,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
-      "beatenOpponents": [],
+      "beatenOpponents": ["thomas cuddy"],
       "beatenBy": [],
-      "dayPlayed": [],
+      "dayPlayed": ["Saturday Leeds (Stanningley)"],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 0,
-      "totalHomeAggAgainst": 0,
+      "totalHomeAgg": 21,
+      "totalHomeAggAgainst": 6,
       "totalAwayAgg": 0,
       "totalAwayAggAgainst": 0,
       "totalHomePoints": 0,
@@ -1073,9 +1085,9 @@
       "totalAwayPointsAgainst": 0,
       "cupWins": 0,
       "cupLosses": 0,
-      "beatenTeam": [],
+      "beatenTeam": [" (Saturday Leeds)"],
       "beatenByTeam": [],
-      "results": [],
+      "results": ["joey broadbent 21 - 6 thomas cuddy"],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1226,19 +1238,20 @@
     },
     "kevin waller": {
       "totalPoints": 0,
-      "totalAgg": 37,
+      "totalAgg": 53,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 35,
+      "totalAggAgainst": 56,
       "homeWins": 1,
-      "homeLosses": 0,
+      "homeLosses": 1,
       "awayWins": 0,
       "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["lisa hogan"],
-      "beatenBy": ["dennis walters"],
+      "beatenBy": ["dennis walters", "angela morley"],
       "dayPlayed": [
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
@@ -1246,8 +1259,8 @@
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 21,
-      "totalHomeAggAgainst": 14,
+      "totalHomeAgg": 37,
+      "totalHomeAggAgainst": 35,
       "totalAwayAgg": 16,
       "totalAwayAggAgainst": 21,
       "totalHomePoints": 0,
@@ -1257,10 +1270,11 @@
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": [" (Saturday Leeds)"],
-      "beatenByTeam": [" (Saturday Leeds)"],
+      "beatenByTeam": [" (Saturday Leeds)", " (Saturday Leeds)"],
       "results": [
         "kevin waller 21 - 14 lisa hogan",
-        "kevin waller 16 - 21 dennis walters"
+        "kevin waller 16 - 21 dennis walters",
+        "kevin waller 16 - 21 angela morley"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1400,10 +1414,10 @@
     },
     "mario biancardo": {
       "totalPoints": 0,
-      "totalAgg": 145,
+      "totalAgg": 166,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 83,
-      "homeWins": 3,
+      "totalAggAgainst": 97,
+      "homeWins": 4,
       "homeLosses": 0,
       "awayWins": 3,
       "awayLosses": 1,
@@ -1416,7 +1430,8 @@
         "keith render",
         "brian fish",
         "rhys hammill",
-        "brian stevens"
+        "brian stevens",
+        "stephen morley"
       ],
       "beatenBy": ["brian hodgson"],
       "dayPlayed": [
@@ -1426,14 +1441,15 @@
         "Wednesday Half Holiday Leeds (Stanningley)",
         "Thursday Vets Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 63,
-      "totalHomeAggAgainst": 25,
+      "totalHomeAgg": 84,
+      "totalHomeAggAgainst": 39,
       "totalAwayAgg": 82,
       "totalAwayAggAgainst": 58,
       "totalHomePoints": 0,
@@ -1448,6 +1464,7 @@
         " (Wednesday Half Holiday Leeds)",
         " (Thursday Vets Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Saturday Leeds)"
       ],
       "beatenByTeam": [" (Tuesday Vets Leeds)"],
@@ -1458,7 +1475,8 @@
         "mario biancardo 21 - 10 keith render",
         "mario biancardo 21 - 17 brian fish",
         "mario biancardo 21 - 10 rhys hammill",
-        "mario biancardo 21 - 10 brian stevens"
+        "mario biancardo 21 - 10 brian stevens",
+        "mario biancardo 21 - 14 stephen morley"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1598,10 +1616,10 @@
     },
     "paul bowes": {
       "totalPoints": 0,
-      "totalAgg": 75,
+      "totalAgg": 96,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 57,
-      "homeWins": 2,
+      "totalAggAgainst": 75,
+      "homeWins": 3,
       "homeLosses": 0,
       "awayWins": 1,
       "awayLosses": 1,
@@ -1611,11 +1629,13 @@
       "beatenOpponents": [
         "joe doughty & david bisby",
         "paul hainsworth",
+        "danny dawson",
         "darren hickey"
       ],
       "beatenBy": ["clifford brogie"],
       "dayPlayed": [
         "Monday Combined Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
         "Tuesday Mirfield (Littlemoor B)"
@@ -1624,8 +1644,8 @@
       "totalPairsAggAgainst": 13,
       "winningPairsPartners": ["vanessa lancaster"],
       "losingPairsPartners": [],
-      "totalHomeAgg": 42,
-      "totalHomeAggAgainst": 24,
+      "totalHomeAgg": 63,
+      "totalHomeAggAgainst": 42,
       "totalAwayAgg": 33,
       "totalAwayAggAgainst": 33,
       "totalHomePoints": 0,
@@ -1637,6 +1657,7 @@
       "beatenTeam": [
         " (Monday Combined Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Tuesday Mirfield)"
       ],
       "beatenByTeam": [" (Saturday Leeds)"],
@@ -1644,6 +1665,7 @@
         "paul bowes & vanessa lancaster 21 - 13 joe doughty & david bisby",
         "paul bowes 21 - 11 paul hainsworth",
         "paul bowes 12 - 21 clifford brogie",
+        "paul bowes 21 - 18 danny dawson",
         "paul bowes 21 - 12 darren hickey"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -1918,10 +1940,10 @@
     },
     "shirley biancardo": {
       "totalPoints": 0,
-      "totalAgg": 147,
+      "totalAgg": 168,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 55,
-      "homeWins": 3,
+      "totalAggAgainst": 59,
+      "homeWins": 4,
       "homeLosses": 0,
       "awayWins": 4,
       "awayLosses": 0,
@@ -1935,7 +1957,8 @@
         "david taylor",
         "malcolm dacre",
         "joanne unwin",
-        "stephen morris"
+        "stephen morris",
+        "dave hudson"
       ],
       "beatenBy": [],
       "dayPlayed": [
@@ -1945,14 +1968,15 @@
         "Wednesday Half Holiday Leeds (Stanningley)",
         "Thursday Vets Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 63,
-      "totalHomeAggAgainst": 20,
+      "totalHomeAgg": 84,
+      "totalHomeAggAgainst": 24,
       "totalAwayAgg": 84,
       "totalAwayAggAgainst": 35,
       "totalHomePoints": 0,
@@ -1968,6 +1992,7 @@
         " (Wednesday Half Holiday Leeds)",
         " (Thursday Vets Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Saturday Leeds)"
       ],
       "beatenByTeam": [],
@@ -1978,7 +2003,8 @@
         "shirley biancardo 21 - 9 david taylor",
         "shirley biancardo 21 - 20 malcolm dacre",
         "shirley biancardo 21 - 4 joanne unwin",
-        "shirley biancardo 21 - 1 stephen morris"
+        "shirley biancardo 21 - 1 stephen morris",
+        "shirley biancardo 21 - 4 dave hudson"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2006,10 +2032,10 @@
     },
     "steve gardner": {
       "totalPoints": 0,
-      "totalAgg": 105,
+      "totalAgg": 126,
       "totalPointsAgainst": 0,
-      "totalAggAgainst": 34,
-      "homeWins": 2,
+      "totalAggAgainst": 39,
+      "homeWins": 3,
       "homeLosses": 0,
       "awayWins": 3,
       "awayLosses": 0,
@@ -2021,7 +2047,8 @@
         "martin mcgowan",
         "jeff baggaley",
         "jason ream",
-        "derek howell"
+        "derek howell",
+        "iain baker"
       ],
       "beatenBy": [],
       "dayPlayed": [
@@ -2029,14 +2056,15 @@
         "Tuesday Vets Leeds (Stanningley)",
         "Wednesday Half Holiday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
+        "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 42,
-      "totalHomeAggAgainst": 14,
+      "totalHomeAgg": 63,
+      "totalHomeAggAgainst": 19,
       "totalAwayAgg": 63,
       "totalAwayAggAgainst": 20,
       "totalHomePoints": 0,
@@ -2050,6 +2078,7 @@
         " (Tuesday Vets Leeds)",
         " (Wednesday Half Holiday Leeds)",
         " (Saturday Leeds)",
+        " (Saturday Leeds)",
         " (Saturday Leeds)"
       ],
       "beatenByTeam": [],
@@ -2058,7 +2087,8 @@
         "steve gardner 21 - 16 martin mcgowan",
         "steve gardner 21 - 1 jeff baggaley",
         "steve gardner 21 - 7 jason ream",
-        "steve gardner 21 - 3 derek howell"
+        "steve gardner 21 - 3 derek howell",
+        "steve gardner 21 - 5 iain baker"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -2356,6 +2386,6 @@
       "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     }
   },
-  "lastUpdated": "21/04/2023",
+  "lastUpdated": "22/04/2023",
   "statsYear": "2023"
 }
