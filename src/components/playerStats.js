@@ -39,15 +39,15 @@ function PlayerStats(props) {
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
-    const initialStatsToDisplay = getStatsSummary();
+    const initialStatsToDisplay = getStatsSummary(playerResults);
     const [statsToDisplayArray, setStatsToDisplayArray] = useState(
         initialStatsToDisplay
     );
 
-    function getStatsSummary() {
+    function getStatsSummary(s) {
         const stats = [];
         players.sort().forEach((player) => {
-            const playerStats = returnPlayerStats(statsToUse, player);
+            const playerStats = returnPlayerStats(s, player);
             if (playerStats) {
                 const stat = {
                     player,
@@ -93,11 +93,12 @@ function PlayerStats(props) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
             setShowStatSummary(true);
+            setStatsToDisplayArray(getStatsSummary(combinedPlayerResults));
         } else {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
+            setStatsToDisplayArray(getStatsSummary(playerResults));
         }
-        setStatsToDisplayArray(getStatsSummary());
     }
 
     function onlySinglesCallback(showSinglesBoolean) {
@@ -106,7 +107,7 @@ function PlayerStats(props) {
         } else {
             setShowSinglesOnlyBool(false);
         }
-        setStatsToDisplayArray(getStatsSummary());
+        setStatsToDisplayArray(getStatsSummary(statsToUse));
     }
 
     function allYearStatsCallback(showAllBoolean) {
@@ -115,7 +116,7 @@ function PlayerStats(props) {
         } else {
             setShowStatsSinceStart(false);
         }
-        setStatsToDisplayArray(getStatsSummary());
+        setStatsToDisplayArray(getStatsSummary(statsToUse));
     }
 
     function searchForPlayer(searchedName) {
