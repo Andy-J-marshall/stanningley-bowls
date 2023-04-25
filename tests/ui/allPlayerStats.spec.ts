@@ -9,7 +9,6 @@ test.beforeEach(async ({ page }) => {
   await playerStatsPage.goto();
 });
 
-// TODO add these players back in
 const players: Array<string> = [
   'Clifford Brogie',
   'Mario Biancardo',
@@ -17,7 +16,7 @@ const players: Array<string> = [
   'Dave Hudson',
   'Jim Moorin',
   'Stewart Watson',
-  // 'John Armitage',
+  'John Armitage',
   'Duncan McPhail',
   'Joey Broadbent',
 ];
