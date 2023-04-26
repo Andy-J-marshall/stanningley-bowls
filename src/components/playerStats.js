@@ -39,17 +39,14 @@ function PlayerStats(props) {
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
-    const initialStatsToDisplay = getStatsSummary(playerResults);
-    const [statsToDisplayArray, setStatsToDisplayArray] = useState(
-        initialStatsToDisplay
-    );
+    const statsToDisplayArray = [];
+    getStatsSummary();
 
-    function getStatsSummary(s) {
-        const stats = [];
+    function getStatsSummary() {
         players.sort().forEach((player) => {
-            const playerStats = returnPlayerStats(s, player);
+            const playerStats = returnPlayerStats(statsToUse, player);
             if (playerStats) {
-                const stat = {
+                const stats = {
                     player,
                     games: playerStats.gamesPlayed,
                     wins: playerStats.totalWins,
@@ -68,10 +65,9 @@ function PlayerStats(props) {
                             playerStats.singlesAggAgainst) /
                         playerStats.singlesGames,
                 };
-                stats.push(stat);
+                statsToDisplayArray.push(stats);
             }
         });
-        return stats;
     }
 
     useEffect(() => {
@@ -93,12 +89,11 @@ function PlayerStats(props) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
             setShowStatSummary(true);
-            setStatsToDisplayArray(getStatsSummary(combinedPlayerResults));
         } else {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
-            setStatsToDisplayArray(getStatsSummary(playerResults));
         }
+        getStatsSummary()
     }
 
     function onlySinglesCallback(showSinglesBoolean) {
@@ -107,7 +102,7 @@ function PlayerStats(props) {
         } else {
             setShowSinglesOnlyBool(false);
         }
-        setStatsToDisplayArray(getStatsSummary(statsToUse));
+        getStatsSummary()
     }
 
     function allYearStatsCallback(showAllBoolean) {
@@ -116,7 +111,7 @@ function PlayerStats(props) {
         } else {
             setShowStatsSinceStart(false);
         }
-        setStatsToDisplayArray(getStatsSummary(statsToUse));
+        getStatsSummary()
     }
 
     function searchForPlayer(searchedName) {
