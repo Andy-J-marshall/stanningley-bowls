@@ -40,35 +40,31 @@ function PlayerStats(props) {
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const statsToDisplayArray = [];
-    getStatsSummary();
 
-    function getStatsSummary() {
-        players.sort().forEach((player) => {
-            const playerStats = returnPlayerStats(statsToUse, player);
-            if (playerStats) {
-                const stats = {
-                    player,
-                    games: playerStats.gamesPlayed,
-                    wins: playerStats.totalWins,
-                    agg: playerStats.totalAgg,
-                    aggAgainst: playerStats.totalAggAgainst,
-                    average:
-                        (playerStats.totalAgg - playerStats.totalAggAgainst) /
-                        playerStats.gamesPlayed,
+    players.sort().forEach((player) => {
+        const playerStats = returnPlayerStats(statsToUse, player);
+        if (playerStats) {
+            const stats = {
+                player,
+                games: playerStats.gamesPlayed,
+                wins: playerStats.totalWins,
+                agg: playerStats.totalAgg,
+                aggAgainst: playerStats.totalAggAgainst,
+                average:
+                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
+                    playerStats.gamesPlayed,
 
-                    singleGames: playerStats.singlesGames,
-                    singlesWins: playerStats.totalWins - playerStats.pairWins,
-                    singlesAgg: playerStats.singlesAgg,
-                    singlesAggAgainst: playerStats.singlesAggAgainst,
-                    singlesAverage:
-                        (playerStats.singlesAgg -
-                            playerStats.singlesAggAgainst) /
-                        playerStats.singlesGames,
-                };
-                statsToDisplayArray.push(stats);
-            }
-        });
-    }
+                singleGames: playerStats.singlesGames,
+                singlesWins: playerStats.totalWins - playerStats.pairWins,
+                singlesAgg: playerStats.singlesAgg,
+                singlesAggAgainst: playerStats.singlesAggAgainst,
+                singlesAverage:
+                    (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
+                    playerStats.singlesGames,
+            };
+            statsToDisplayArray.push(stats);
+        }
+    });
 
     useEffect(() => {
         if (!loaded) {
@@ -93,7 +89,6 @@ function PlayerStats(props) {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
         }
-        getStatsSummary()
     }
 
     function onlySinglesCallback(showSinglesBoolean) {
@@ -102,7 +97,6 @@ function PlayerStats(props) {
         } else {
             setShowSinglesOnlyBool(false);
         }
-        getStatsSummary()
     }
 
     function allYearStatsCallback(showAllBoolean) {
@@ -111,7 +105,6 @@ function PlayerStats(props) {
         } else {
             setShowStatsSinceStart(false);
         }
-        getStatsSummary()
     }
 
     function searchForPlayer(searchedName) {
