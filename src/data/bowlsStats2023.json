@@ -307,48 +307,56 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "clifford brogie": {
-      "totalPoints": 7,
-      "totalAgg": 35,
-      "totalPointsAgainst": 10,
-      "totalAggAgainst": 42,
+      "totalPoints": 15,
+      "totalAgg": 73,
+      "totalPointsAgainst": 17,
+      "totalAggAgainst": 74,
       "homeWins": 0,
-      "homeLosses": 2,
-      "awayWins": 0,
+      "homeLosses": 3,
+      "awayWins": 1,
       "awayLosses": 0,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
-      "beatenOpponents": [],
-      "beatenBy": ["phil lodge", "john hindle"],
-      "dayPlayed": ["Monday Combined Leeds", "Monday Combined Leeds"],
+      "beatenOpponents": ["malcolm woodcock"],
+      "beatenBy": ["phil lodge", "john hindle", "les oddy"],
+      "dayPlayed": [
+        "Monday Combined Leeds",
+        "Monday Combined Leeds",
+        "Thursday Vets Leeds",
+        "Thursday Vets Leeds"
+      ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 35,
-      "totalHomeAggAgainst": 42,
-      "totalAwayAgg": 0,
-      "totalAwayAggAgainst": 0,
-      "totalHomePoints": 7,
-      "totalHomePointsAgainst": 10,
-      "totalAwayPoints": 0,
-      "totalAwayPointsAgainst": 0,
+      "totalHomeAgg": 52,
+      "totalHomeAggAgainst": 63,
+      "totalAwayAgg": 21,
+      "totalAwayAggAgainst": 11,
+      "totalHomePoints": 10,
+      "totalHomePointsAgainst": 15,
+      "totalAwayPoints": 5,
+      "totalAwayPointsAgainst": 2,
       "cupWins": 0,
       "cupLosses": 0,
-      "beatenTeam": [],
+      "beatenTeam": ["Burley Prk (Thursday Vets Leeds)"],
       "beatenByTeam": [
         "Garforth C C (Monday Combined Leeds)",
-        "Meanwood B (Monday Combined Leeds)"
+        "Meanwood B (Monday Combined Leeds)",
+        "Middleton Community (Thursday Vets Leeds)"
       ],
       "results": [
         "clifford brogie 18 - 21 phil lodge",
-        "clifford brogie 17 - 21 john hindle"
+        "clifford brogie 17 - 21 john hindle",
+        "clifford brogie 21 - 11 malcolm woodcock",
+        "clifford brogie 17 - 21 les oddy"
       ],
       "monday combined leeds": { "games": 2, "wins": 0, "aggDiff": -7 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets leeds": { "games": 2, "wins": 1, "aggDiff": 6 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "colin haque": {
@@ -1980,6 +1988,6 @@
       ]
     }
   ],
-  "lastUpdated": "30/04/2023",
+  "lastUpdated": "01/05/2023",
   "statsYear": "2023"
 }

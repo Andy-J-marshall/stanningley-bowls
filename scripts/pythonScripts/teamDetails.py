@@ -18,9 +18,10 @@ players = [
     'derek wilson', 'david eaton', 'michael haigh', 'peter crowther', 'laila packer'
 ]
 
+# TODO check
 # Players with different spellings of name (lowercase)
 duplicateTeamMemberNames = ['duncan mc phail',
-                            'stuart watson', 'andrew marshall']
+                            'stuart watson', 'andrew marshall', 'cliff brogie']
 
 traitorPlayers = {
     'Monday Combined Leeds': [],
@@ -28,7 +29,7 @@ traitorPlayers = {
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'clifford brogie'],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['dave hudson', 'clifford brogie'],
+    'Saturday Leeds': ['dave hudson', 'clifford brogie', 'cliff brogie'],
 }
 
 def calculateGamePoints(points):
