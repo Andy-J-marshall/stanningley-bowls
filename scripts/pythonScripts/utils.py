@@ -9,7 +9,7 @@ otherLeagues = ['Monday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
 teamDays = currentTeamDays + otherLeagues
-extraPlayers = ['shirley allman', 'jeff allman']
+extraPlayers = ['shirley allman', 'jeff allman', 'neil porter']
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
