@@ -82,13 +82,13 @@ for day in teamDays:
     leaguePositionIndex = 1
     leaguePositionRow = 0
     leaguePositionCol = 'A'
-    satLeaguePositionCol = 'B'
+    satAndWedLeaguePositionCol = 'B'
     leagueTeamNameCol = 'B'
-    satLeagueTeamNameCol = 'C'
+    satAndWedLeagueTeamNameCol = 'C'
 
-    if 'saturday' in day.lower():
-        leagueTeamNameCol = satLeagueTeamNameCol
-        leaguePositionCol = satLeaguePositionCol
+    if 'saturday' in day.lower() or 'wednesday' in day.lower():
+        leagueTeamNameCol = satAndWedLeagueTeamNameCol
+        leaguePositionCol = satAndWedLeaguePositionCol
 
     for row in sheet[leagueTeamNameCol]:
         if row.value and type(row.value) is str and row.value.lower() in teamNames:

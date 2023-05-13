@@ -109,6 +109,7 @@ Check `bowls.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
 - Remove/edit game points?
+- Check the `satAndWedLeaguePositionCol` value for the selected leagues
 
 Update `src/config.js`:
 
