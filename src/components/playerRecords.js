@@ -81,6 +81,51 @@ function PlayerRecords(props) {
     let bestPointsPlayer = [];
     let bestPoints = 0;
 
+    // Find the highest number of games played for each team
+    let highestMonGames = 0;
+    let highestTuesVetsGames = 0;
+    let highestTuesGames = 0;
+    let highestWedGames = 0;
+    let highestThursVetsGames = 0;
+    let highestSatGames = 0;
+    let highestTotalGames = 0;
+
+    players.forEach((player) => {
+        const p = playerResults[player];
+        const monday = p['monday combined leeds'];
+        const tuesdayVets = p['tuesday vets leeds'];
+        const tuesday = p['tuesday leeds'];
+        const wednesday = p['wednesday half holiday leeds'];
+        const thursdayVets = p['thursday vets leeds'];
+        const saturday = p['saturday leeds'];
+
+        const totalWins = p.awayWins + p.homeWins + p.cupWins;
+        const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
+        const totalGames = totalWins + totalLosses;
+
+        if (monday.games >= highestMonGames) {
+            highestMonGames = monday.games;
+        }
+        if (tuesdayVets.games >= highestTuesVetsGames) {
+            highestTuesVetsGames = tuesdayVets.games;
+        }
+        if (tuesday.games >= highestTuesGames) {
+            highestTuesGames = tuesday.games;
+        }
+        if (wednesday.games >= highestWedGames) {
+            highestWedGames = wednesday.games;
+        }
+        if (thursdayVets.games >= highestThursVetsGames) {
+            highestThursVetsGames = thursdayVets.games;
+        }
+        if (saturday.games >= highestSatGames) {
+            highestSatGames = saturday.games;
+        }
+        if (totalGames >= highestTotalGames) {
+            highestTotalGames = totalGames;
+        }
+    });
+
     // This sets the minimum number of games required for the stats to be counted
     players.forEach((player) => {
         const p = playerResults[player];
@@ -99,11 +144,11 @@ function PlayerRecords(props) {
             const mondayAvg = monday.aggDiff / mondayGames;
             const mondayWinPerc = (mondayWins / mondayGames) * 100;
 
-            if (mondayGames > minMonGames) {
-                if (mondayGames >= 8) {
+            if (highestMonGames > minMonGames) {
+                if (highestMonGames >= 8) {
                     minMonGames = 8;
                 } else {
-                    minMonGames = mondayGames;
+                    minMonGames = highestMonGames;
                 }
             }
 
@@ -144,11 +189,11 @@ function PlayerRecords(props) {
             const tuesdayVetsWinPerc =
                 (tuesdayVetsWins / tuesdayVetsGames) * 100;
 
-            if (tuesdayVetsGames > minTuesVetsGames) {
-                if (tuesdayVetsGames >= 8) {
+            if (highestTuesVetsGames > minTuesVetsGames) {
+                if (highestTuesVetsGames >= 8) {
                     minTuesVetsGames = 8;
                 } else {
-                    minTuesVetsGames = tuesdayVetsGames;
+                    minTuesVetsGames = highestTuesVetsGames;
                 }
             }
 
@@ -197,11 +242,11 @@ function PlayerRecords(props) {
             const tuesdayAvg = tuesday.aggDiff / tuesdayGames;
             const tuesdayWinPerc = (tuesdayWins / tuesdayGames) * 100;
 
-            if (tuesdayGames > minTuesGames) {
-                if (tuesdayGames >= 8) {
+            if (highestTuesGames > minTuesGames) {
+                if (highestTuesGames >= 8) {
                     minTuesGames = 8;
                 } else {
-                    minTuesGames = tuesdayGames;
+                    minTuesGames = highestTuesGames;
                 }
             }
 
@@ -244,11 +289,11 @@ function PlayerRecords(props) {
             const wednesdayAvg = wednesday.aggDiff / wednesdayGames;
             const wednesdayWinPerc = (wednesdayWins / wednesdayGames) * 100;
 
-            if (wednesdayGames > minWedGames) {
-                if (wednesdayGames >= 8) {
+            if (highestWedGames > minWedGames) {
+                if (highestWedGames >= 8) {
                     minWedGames = 8;
                 } else {
-                    minWedGames = wednesdayGames;
+                    minWedGames = highestWedGames;
                 }
             }
 
@@ -296,11 +341,11 @@ function PlayerRecords(props) {
             const thursdayVetsWinPerc =
                 (thursdayVetsWins / thursdayVetsGames) * 100;
 
-            if (thursdayVetsGames > minThurVetsGames) {
-                if (thursdayVetsGames >= 8) {
+            if (highestThursVetsGames > minThurVetsGames) {
+                if (highestThursVetsGames >= 8) {
                     minThurVetsGames = 8;
                 } else {
-                    minThurVetsGames = thursdayVetsGames;
+                    minThurVetsGames = highestThursVetsGames;
                 }
             }
 
@@ -341,7 +386,7 @@ function PlayerRecords(props) {
             }
         }
 
-        //Saturday
+        // Saturday
         if (saturday) {
             useSaturdayStats = true;
             const saturdayWins = saturday.wins;
@@ -349,11 +394,11 @@ function PlayerRecords(props) {
             const saturdayAvg = saturday.aggDiff / saturdayGames;
             const saturdayWinPerc = (saturdayWins / saturdayGames) * 100;
 
-            if (saturdayGames > minSatGames) {
-                if (saturdayGames >= 8) {
+            if (highestSatGames > minSatGames) {
+                if (highestSatGames >= 8) {
                     minSatGames = 8;
                 } else {
-                    minSatGames = saturdayGames;
+                    minSatGames = highestSatGames;
                 }
             }
 
@@ -396,15 +441,15 @@ function PlayerRecords(props) {
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
         const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
-        const playedMinGames = totalGames >= minTotalGames ? true : false;
-
-        if (totalGames > minTotalGames) {
-            if (totalGames >= 10) {
+        
+        if (highestTotalGames > minTotalGames) {
+            if (highestTotalGames >= 10) {
                 minTotalGames = 10;
             } else {
-                minTotalGames = totalGames;
+                minTotalGames = highestTotalGames;
             }
         }
+        const playedMinGames = totalGames >= minTotalGames ? true : false;
 
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
