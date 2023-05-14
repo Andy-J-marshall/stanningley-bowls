@@ -28,7 +28,7 @@ traitorPlayers = {
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
+    'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
 }
 
 def calculateGamePoints(points):
