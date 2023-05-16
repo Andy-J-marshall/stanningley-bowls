@@ -1,3 +1,5 @@
+import datetime
+
 # Team info (lowercase)
 teamNames = ['stanningley', 'stanningley a',
              'stanningley park', 'stanningley park a']
@@ -28,7 +30,20 @@ traitorPlayers = {
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
+    'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
+}
+
+transferredPlayers = {
+    'Monday Combined Leeds': [],
+    'Tuesday Vets Leeds': [],
+    'Tuesday Leeds': [],
+    'Wednesday Half Holiday Leeds': [],
+    'Thursday Vets Leeds': [],
+    'Saturday Leeds':
+    {
+        'player': 'donald shaw',
+        'date': datetime.datetime(2023, 5, 10),
+    }
 }
 
 def calculateGamePoints(points):

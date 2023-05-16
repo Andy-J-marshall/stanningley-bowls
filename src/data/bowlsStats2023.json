@@ -726,23 +726,24 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
-      "totalPoints": 12,
-      "totalAgg": 56,
-      "totalPointsAgainst": 14,
-      "totalAggAgainst": 61,
+      "totalPoints": 13,
+      "totalAgg": 61,
+      "totalPointsAgainst": 19,
+      "totalAggAgainst": 82,
       "homeWins": 1,
       "homeLosses": 1,
       "awayWins": 0,
-      "awayLosses": 1,
+      "awayLosses": 2,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["roy tebbutt"],
-      "beatenBy": ["pauline stockdale", "brenda brown"],
+      "beatenBy": ["pauline stockdale", "brenda brown", "sandra deegan"],
       "dayPlayed": [
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
-        "Thursday Vets Leeds"
+        "Thursday Vets Leeds",
+        "Saturday Leeds"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
@@ -750,30 +751,32 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 36,
       "totalHomeAggAgainst": 40,
-      "totalAwayAgg": 20,
-      "totalAwayAggAgainst": 21,
+      "totalAwayAgg": 25,
+      "totalAwayAggAgainst": 42,
       "totalHomePoints": 8,
       "totalHomePointsAgainst": 9,
-      "totalAwayPoints": 4,
-      "totalAwayPointsAgainst": 5,
+      "totalAwayPoints": 5,
+      "totalAwayPointsAgainst": 10,
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": ["Middleton Community (Thursday Vets Leeds)"],
       "beatenByTeam": [
         "Burley Prk (Thursday Vets Leeds)",
-        "Scatcherd Pk A (Thursday Vets Leeds)"
+        "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Gildersome A (Saturday Leeds)"
       ],
       "results": [
         "donald shaw 20 - 21 pauline stockdale",
         "donald shaw 21 - 19 roy tebbutt",
-        "donald shaw 15 - 21 brenda brown"
+        "donald shaw 15 - 21 brenda brown",
+        "donald shaw 5 - 21 sandra deegan"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday vets leeds": { "games": 3, "wins": 1, "aggDiff": -5 },
-      "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
+      "saturday leeds": { "games": 1, "wins": 0, "aggDiff": -16 }
     },
     "duncan mcphail": {
       "totalPoints": 20,
@@ -2308,6 +2311,6 @@
       ]
     }
   ],
-  "lastUpdated": "15/05/2023",
+  "lastUpdated": "16/05/2023",
   "statsYear": "2023"
 }

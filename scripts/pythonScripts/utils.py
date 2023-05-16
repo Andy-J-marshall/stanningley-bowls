@@ -38,6 +38,8 @@ def deduplicateNames(name):
         name = 'Dave Hudson'
     if name == 'Andrew Waller':
         name = 'Andy Waller'
+    if name == 'Don Shaw':
+        name = 'Donald Shaw'
     return name.lower()
 
 

@@ -67,6 +67,8 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 
 If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
 
+Remove players from the `transferredPlayers` dictionary (and add to traitorPlayers?).
+
 If a player doesn't want their full name appearing on the website, add them into the `anonymiseNames` function.
 
 ## Run the script

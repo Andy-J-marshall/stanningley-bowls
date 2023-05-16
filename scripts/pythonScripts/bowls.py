@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import os
 from datetime import date
+import datefinder
 import teamDetails
 import utils
 
@@ -17,6 +18,8 @@ playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
 formatName = utils.formatName
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
+transferredPlayers = teamDetails.transferredPlayers
+lastResultRowsForTransferredPlayer = {}
 
 # Spreadsheet info
 homePlayerCol = 'A'
@@ -150,6 +153,13 @@ for day in teamDays:
             else:
                 gameDate = ''
 
+            # Finds last result before player has been transferred
+            if (transferredPlayers[day]):
+                gameDates = datefinder.find_dates(gameDate)
+                for formattedGameDate in gameDates:
+                    if (formattedGameDate < transferredPlayers[day]["date"]):
+                        lastResultRowsForTransferredPlayer[transferredPlayers[day]["player"]] = row
+
         # Home games
         if row in homeRow:
             if row != leaguePositionRow:
@@ -247,8 +257,15 @@ for day in teamDays:
     for homePlayer in sheet[homePlayerCol]:
         homePlayerName = homePlayer.value
         if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicateTeamMemberNames):
+            # Checks if player plays for team on selected day
             if homePlayerName.lower() not in traitorPlayers[day]:
-                homePlayerRow.append(homePlayerIndex)
+                # Only adds result to list if they haven't been transferred to another team
+                if homePlayerName.lower() in lastResultRowsForTransferredPlayer:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[homePlayerName.lower()]
+                    if homePlayerIndex <= lastGameBeforeTransfer:
+                        homePlayerRow.append(homePlayerIndex)
+                else:
+                    homePlayerRow.append(homePlayerIndex)
         homePlayerIndex = homePlayerIndex + 1
 
     awayPlayerIndex = 1
@@ -256,8 +273,16 @@ for day in teamDays:
     for awayPlayer in sheet[awayPlayerCol]:
         awayPlayerName = awayPlayer.value
         if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in players or awayPlayerName.lower() in duplicateTeamMemberNames):
+            # Checks if player plays for team on selected day
             if awayPlayerName.lower() not in traitorPlayers[day]:
-                awayPlayerRow.append(awayPlayerIndex)
+                # Only adds result to list if they haven't been transferred to another team
+                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[awayPlayerName.lower()]
+                    if awayPlayerIndex <= lastGameBeforeTransfer:
+                        awayPlayerRow.append(awayPlayerIndex)
+                else:
+                    awayPlayerRow.append(awayPlayerIndex)
+                    
         awayPlayerIndex = awayPlayerIndex + 1
 
     # Find each players' results
