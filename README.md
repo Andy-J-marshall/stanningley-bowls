@@ -38,6 +38,7 @@ The script that collates stats from all club teams can be found in the `/scripts
 
 - Download and install python 3
 - Run: `pip3 install openpyxl==2.6.2`
+- Run: `pip3 install datefinder`
 
 ## Update the player stats
 

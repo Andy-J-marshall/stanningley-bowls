@@ -154,6 +154,7 @@ for day in teamDays:
                 gameDate = ''
 
             # Finds last result before player has been transferred
+            # TODO need to store and use this information per day
             if (transferredPlayers[day]):
                 gameDates = datefinder.find_dates(gameDate)
                 for formattedGameDate in gameDates:
