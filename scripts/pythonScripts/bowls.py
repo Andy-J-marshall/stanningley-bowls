@@ -43,6 +43,8 @@ allTeamResults = []
 print('UPDATING STATS:', teamNames[0].upper())
 
 for day in teamDays:
+    lastResultRowsForTransferredPlayer[day] = {}
+
     # Goes through each sheet in turn
     sheet = wb[day]
     print('Processing ' + day)
@@ -154,12 +156,13 @@ for day in teamDays:
                 gameDate = ''
 
             # Finds last result before player has been transferred
-            # TODO need to store and use this information per day
             if (transferredPlayers[day]):
                 gameDates = datefinder.find_dates(gameDate)
                 for formattedGameDate in gameDates:
                     if (formattedGameDate < transferredPlayers[day]["date"]):
-                        lastResultRowsForTransferredPlayer[transferredPlayers[day]["player"]] = row
+                        playerTransferred = transferredPlayers[day]["player"]
+                        lastResultRowsForTransferredPlayer[day][playerTransferred] = playerTransferred
+                        lastResultRowsForTransferredPlayer[day][playerTransferred] = row
 
         # Home games
         if row in homeRow:
@@ -261,8 +264,8 @@ for day in teamDays:
             # Checks if player plays for team on selected day
             if homePlayerName.lower() not in traitorPlayers[day]:
                 # Only adds result to list if they haven't been transferred to another team
-                if homePlayerName.lower() in lastResultRowsForTransferredPlayer:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[homePlayerName.lower()]
+                if homePlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][homePlayerName.lower()]
                     if homePlayerIndex <= lastGameBeforeTransfer:
                         homePlayerRow.append(homePlayerIndex)
                 else:
@@ -277,8 +280,8 @@ for day in teamDays:
             # Checks if player plays for team on selected day
             if awayPlayerName.lower() not in traitorPlayers[day]:
                 # Only adds result to list if they haven't been transferred to another team
-                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[awayPlayerName.lower()]
+                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][awayPlayerName.lower()]
                     if awayPlayerIndex <= lastGameBeforeTransfer:
                         awayPlayerRow.append(awayPlayerIndex)
                 else:
