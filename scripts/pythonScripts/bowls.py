@@ -136,6 +136,9 @@ for day in teamDays:
             cupCell = sheet[homeTeamNameCol + str(row - 1)].value
         if (cupCell and type(cupCell) is str) and cupCell.lower() in cupText:
             cupGame = True
+            if 'half holiday' in day.lower():
+                rowsDownIntModifier = 3
+
             homeScore = sheet[homeTeamScoreCol +
                               str(row + 9 - rowsDownIntModifier)].value
             awayScore = sheet[awayTeamScoreCol +
