@@ -138,12 +138,11 @@ for day in teamDays:
             cupGame = True
 
             # To account for handicap row in cup games
-            # TODO if both teams are on same handicap then the handicap row won't appear. Need to check before setting the rowsDownIntModifier value
-            if 'half holiday' in day.lower():
-                rowsDownIntModifier = rowsDownIntModifier + 1
-            if 'tuesday leeds' in day.lower():
+            homeTeamName = sheet[homeTeamNameCol + str(row + 9 - rowsDownIntModifier)].value
+            if type(homeTeamName) is str and 'handicap' in homeTeamName.lower():
                 rowsDownIntModifier = rowsDownIntModifier + 1
 
+            # Save the scores
             homeScore = sheet[homeTeamScoreCol +
                               str(row + 9 - rowsDownIntModifier)].value
             awayScore = sheet[awayTeamScoreCol +

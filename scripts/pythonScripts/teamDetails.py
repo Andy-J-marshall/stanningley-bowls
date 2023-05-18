@@ -33,7 +33,6 @@ traitorPlayers = {
     'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
 }
 
-# TODO need to change this to an array?
 transferredPlayers = {
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': [],
