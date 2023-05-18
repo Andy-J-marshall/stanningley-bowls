@@ -1,14 +1,14 @@
 {
   "playerResults": {
     "ali": {
-      "totalPoints": 20,
-      "totalAgg": 95,
-      "totalPointsAgainst": 28,
-      "totalAggAgainst": 122,
+      "totalPoints": 24,
+      "totalAgg": 113,
+      "totalPointsAgainst": 33,
+      "totalAggAgainst": 143,
       "homeWins": 1,
       "homeLosses": 2,
       "awayWins": 1,
-      "awayLosses": 2,
+      "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -16,10 +16,12 @@
       "beatenBy": [
         "sue harrison",
         "graham goodall",
+        "bob davison",
         "frank lindsay",
         "daphne scott"
       ],
       "dayPlayed": [
+        "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
@@ -33,12 +35,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 47,
       "totalHomeAggAgainst": 61,
-      "totalAwayAgg": 48,
-      "totalAwayAggAgainst": 61,
+      "totalAwayAgg": 66,
+      "totalAwayAggAgainst": 82,
       "totalHomePoints": 10,
       "totalHomePointsAgainst": 14,
-      "totalAwayPoints": 10,
-      "totalAwayPointsAgainst": 14,
+      "totalAwayPoints": 14,
+      "totalAwayPointsAgainst": 19,
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": [
@@ -48,6 +50,7 @@
       "beatenByTeam": [
         "Middleton Community (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)",
         "Pudsey Park (Saturday Leeds)",
         "Gildersome A (Saturday Leeds)"
       ],
@@ -55,6 +58,7 @@
         "ali 21 - 19 steve pickersgill",
         "ali 10 - 21 sue harrison",
         "ali 16 - 21 graham goodall",
+        "ali 18 - 21 bob davison",
         "ali 21 - 19 lance greenwood",
         "ali 16 - 21 frank lindsay",
         "ali 11 - 21 daphne scott"
@@ -63,7 +67,7 @@
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday vets leeds": { "games": 3, "wins": 1, "aggDiff": -14 },
+      "thursday vets leeds": { "games": 4, "wins": 1, "aggDiff": -17 },
       "saturday leeds": { "games": 3, "wins": 1, "aggDiff": -13 }
     },
     "alyssa randell": {
@@ -409,22 +413,23 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "clifford brogie": {
-      "totalPoints": 15,
-      "totalAgg": 73,
-      "totalPointsAgainst": 17,
-      "totalAggAgainst": 74,
+      "totalPoints": 18,
+      "totalAgg": 90,
+      "totalPointsAgainst": 22,
+      "totalAggAgainst": 95,
       "homeWins": 0,
       "homeLosses": 3,
       "awayWins": 1,
-      "awayLosses": 0,
+      "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["malcolm woodcock"],
-      "beatenBy": ["phil lodge", "john hindle", "les oddy"],
+      "beatenBy": ["phil lodge", "john hindle", "les oddy", "ron lavan"],
       "dayPlayed": [
         "Monday Combined Leeds",
         "Monday Combined Leeds",
+        "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds"
       ],
@@ -434,52 +439,60 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 52,
       "totalHomeAggAgainst": 63,
-      "totalAwayAgg": 21,
-      "totalAwayAggAgainst": 11,
+      "totalAwayAgg": 38,
+      "totalAwayAggAgainst": 32,
       "totalHomePoints": 10,
       "totalHomePointsAgainst": 15,
-      "totalAwayPoints": 5,
-      "totalAwayPointsAgainst": 2,
+      "totalAwayPoints": 8,
+      "totalAwayPointsAgainst": 7,
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": ["Burley Prk (Thursday Vets Leeds)"],
       "beatenByTeam": [
         "Garforth C C (Monday Combined Leeds)",
         "Meanwood B (Monday Combined Leeds)",
-        "Middleton Community (Thursday Vets Leeds)"
+        "Middleton Community (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)"
       ],
       "results": [
         "clifford brogie 18 - 21 phil lodge",
         "clifford brogie 17 - 21 john hindle",
         "clifford brogie 21 - 11 malcolm woodcock",
-        "clifford brogie 17 - 21 les oddy"
+        "clifford brogie 17 - 21 les oddy",
+        "clifford brogie 17 - 21 ron lavan"
       ],
       "monday combined leeds": { "games": 2, "wins": 0, "aggDiff": -7 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday vets leeds": { "games": 2, "wins": 1, "aggDiff": 6 },
+      "thursday vets leeds": { "games": 3, "wins": 1, "aggDiff": 2 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "colin haque": {
-      "totalPoints": 11,
-      "totalAgg": 58,
-      "totalPointsAgainst": 15,
-      "totalAggAgainst": 66,
+      "totalPoints": 12,
+      "totalAgg": 66,
+      "totalPointsAgainst": 20,
+      "totalAggAgainst": 87,
       "homeWins": 1,
       "homeLosses": 2,
       "awayWins": 0,
-      "awayLosses": 1,
+      "awayLosses": 2,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["terry maher"],
-      "beatenBy": ["bill pyett", "david norton", "nicholas ryder"],
+      "beatenBy": [
+        "bill pyett",
+        "david norton",
+        "nicholas ryder",
+        "mary horrocks"
+      ],
       "dayPlayed": [
         "Tuesday Leeds",
         "Tuesday Leeds",
         "Tuesday Leeds",
-        "Tuesday Leeds"
+        "Tuesday Leeds",
+        "Thursday Vets Leeds"
       ],
       "totalPairsAgg": 0,
       "totalPairsAggAgainst": 0,
@@ -487,31 +500,33 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 46,
       "totalHomeAggAgainst": 45,
-      "totalAwayAgg": 12,
-      "totalAwayAggAgainst": 21,
+      "totalAwayAgg": 20,
+      "totalAwayAggAgainst": 42,
       "totalHomePoints": 9,
       "totalHomePointsAgainst": 10,
-      "totalAwayPoints": 2,
-      "totalAwayPointsAgainst": 5,
+      "totalAwayPoints": 3,
+      "totalAwayPointsAgainst": 10,
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": ["Middleton Comm (Tuesday Leeds)"],
       "beatenByTeam": [
         "Pudsey Park A (Tuesday Leeds)",
         "Gildersome A (Tuesday Leeds)",
-        "Colton (Tuesday Leeds)"
+        "Colton (Tuesday Leeds)",
+        "Western Flatts (Thursday Vets Leeds)"
       ],
       "results": [
         "colin haque 17 - 21 bill pyett",
         "colin haque 21 - 3 terry maher",
         "colin haque 12 - 21 david norton",
-        "colin haque 8 - 21 nicholas ryder"
+        "colin haque 8 - 21 nicholas ryder",
+        "colin haque 8 - 21 mary horrocks"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 4, "wins": 1, "aggDiff": -8 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
+      "thursday vets leeds": { "games": 1, "wins": 0, "aggDiff": -13 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "craig clarkson": {
@@ -615,14 +630,14 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "david eaton": {
-      "totalPoints": 40,
-      "totalAgg": 200,
-      "totalPointsAgainst": 33,
-      "totalAggAgainst": 164,
+      "totalPoints": 42,
+      "totalAgg": 212,
+      "totalPointsAgainst": 38,
+      "totalAggAgainst": 185,
       "homeWins": 5,
       "homeLosses": 1,
       "awayWins": 2,
-      "awayLosses": 2,
+      "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
@@ -636,7 +651,12 @@
         "barry palmer",
         "keith kincaid"
       ],
-      "beatenBy": ["richard tatum", "roger boyes", "mick hall"],
+      "beatenBy": [
+        "richard tatum",
+        "roger boyes",
+        "mick hall",
+        "margaret mcphail"
+      ],
       "dayPlayed": [
         "Tuesday Vets Leeds",
         "Tuesday Vets Leeds",
@@ -648,6 +668,7 @@
         "Wednesday Half Holiday Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
+        "Thursday Vets Leeds",
         "Thursday Vets Leeds"
       ],
       "totalPairsAgg": 0,
@@ -656,12 +677,12 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 113,
       "totalHomeAggAgainst": 94,
-      "totalAwayAgg": 66,
-      "totalAwayAggAgainst": 57,
+      "totalAwayAgg": 78,
+      "totalAwayAggAgainst": 78,
       "totalHomePoints": 26,
       "totalHomePointsAgainst": 20,
-      "totalAwayPoints": 14,
-      "totalAwayPointsAgainst": 13,
+      "totalAwayPoints": 16,
+      "totalAwayPointsAgainst": 18,
       "cupWins": 1,
       "cupLosses": 0,
       "beatenTeam": [
@@ -677,7 +698,8 @@
       "beatenByTeam": [
         "West Royd Park (Tuesday Vets Leeds)",
         "Methley (Wednesday Half Holiday Leeds)",
-        "Middleton Community (Thursday Vets Leeds)"
+        "Middleton Community (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)"
       ],
       "results": [
         "david eaton 21 - 11 clifford pitts",
@@ -690,13 +712,14 @@
         "david eaton 21 - 13 peter griffin",
         "david eaton 21 - 5 barry palmer",
         "david eaton 8 - 21 mick hall",
-        "david eaton 21 - 8 keith kincaid"
+        "david eaton 21 - 8 keith kincaid",
+        "david eaton 12 - 21 margaret mcphail"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 3, "wins": 2, "aggDiff": 1 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 5, "wins": 4, "aggDiff": 19 },
-      "thursday vets leeds": { "games": 3, "wins": 2, "aggDiff": 16 },
+      "thursday vets leeds": { "games": 4, "wins": 2, "aggDiff": 7 },
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "derek wilson": {
@@ -746,20 +769,26 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
-      "totalPoints": 13,
-      "totalAgg": 61,
-      "totalPointsAgainst": 19,
-      "totalAggAgainst": 82,
+      "totalPoints": 16,
+      "totalAgg": 78,
+      "totalPointsAgainst": 24,
+      "totalAggAgainst": 103,
       "homeWins": 1,
       "homeLosses": 1,
       "awayWins": 0,
-      "awayLosses": 2,
+      "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["roy tebbutt"],
-      "beatenBy": ["pauline stockdale", "brenda brown", "sandra deegan"],
+      "beatenBy": [
+        "pauline stockdale",
+        "brenda brown",
+        "glynis ash",
+        "sandra deegan"
+      ],
       "dayPlayed": [
+        "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
@@ -771,31 +800,33 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 36,
       "totalHomeAggAgainst": 40,
-      "totalAwayAgg": 25,
-      "totalAwayAggAgainst": 42,
+      "totalAwayAgg": 42,
+      "totalAwayAggAgainst": 63,
       "totalHomePoints": 8,
       "totalHomePointsAgainst": 9,
-      "totalAwayPoints": 5,
-      "totalAwayPointsAgainst": 10,
+      "totalAwayPoints": 8,
+      "totalAwayPointsAgainst": 15,
       "cupWins": 0,
       "cupLosses": 0,
       "beatenTeam": ["Middleton Community (Thursday Vets Leeds)"],
       "beatenByTeam": [
         "Burley Prk (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)",
         "Gildersome A (Saturday Leeds)"
       ],
       "results": [
         "donald shaw 20 - 21 pauline stockdale",
         "donald shaw 21 - 19 roy tebbutt",
         "donald shaw 15 - 21 brenda brown",
+        "donald shaw 17 - 21 glynis ash",
         "donald shaw 5 - 21 sandra deegan"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "thursday vets leeds": { "games": 3, "wins": 1, "aggDiff": -5 },
+      "thursday vets leeds": { "games": 4, "wins": 1, "aggDiff": -9 },
       "saturday leeds": { "games": 1, "wins": 0, "aggDiff": -16 }
     },
     "duncan mcphail": {
@@ -1221,13 +1252,13 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "malvin miller": {
-      "totalPoints": 42,
-      "totalAgg": 210,
-      "totalPointsAgainst": 47,
-      "totalAggAgainst": 230,
+      "totalPoints": 47,
+      "totalAgg": 231,
+      "totalPointsAgainst": 50,
+      "totalAggAgainst": 245,
       "homeWins": 4,
       "homeLosses": 4,
-      "awayWins": 0,
+      "awayWins": 1,
       "awayLosses": 4,
       "pairWins": 0,
       "pairLosses": 4,
@@ -1241,7 +1272,8 @@
         "barbara ragan",
         "anthony fawcett",
         "brian ragan",
-        "michael small"
+        "michael small",
+        "hazel goodall"
       ],
       "beatenBy": [
         "david l miller & graham hey",
@@ -1267,6 +1299,7 @@
         "Wednesday Half Holiday Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
+        "Thursday Vets Leeds",
         "Saturday Leeds"
       ],
       "totalPairsAgg": 48,
@@ -1280,19 +1313,20 @@
       ],
       "totalHomeAgg": 142,
       "totalHomeAggAgainst": 125,
-      "totalAwayAgg": 57,
-      "totalAwayAggAgainst": 84,
+      "totalAwayAgg": 78,
+      "totalAwayAggAgainst": 99,
       "totalHomePoints": 32,
       "totalHomePointsAgainst": 27,
-      "totalAwayPoints": 10,
-      "totalAwayPointsAgainst": 20,
+      "totalAwayPoints": 15,
+      "totalAwayPointsAgainst": 23,
       "cupWins": 0,
       "cupLosses": 1,
       "beatenTeam": [
         "Middleton Comm (Tuesday Leeds)",
         "Colton (Tuesday Leeds)",
         "Middleton Community (Thursday Vets Leeds)",
-        "Scatcherd Pk A (Thursday Vets Leeds)"
+        "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)"
       ],
       "beatenByTeam": [
         "Meanwood B (Monday Combined Leeds)",
@@ -1318,23 +1352,24 @@
         "malvin miller 11 - 21 michael noble",
         "malvin miller 21 - 7 brian ragan",
         "malvin miller 21 - 12 michael small",
+        "malvin miller 21 - 15 hazel goodall",
         "malvin miller 20 - 21 jeff holt"
       ],
       "monday combined leeds": { "games": 4, "wins": 0, "aggDiff": -36 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 4, "wins": 2, "aggDiff": 9 },
       "wednesday half holiday leeds": { "games": 2, "wins": 0, "aggDiff": -15 },
-      "thursday vets leeds": { "games": 2, "wins": 2, "aggDiff": 23 },
+      "thursday vets leeds": { "games": 3, "wins": 3, "aggDiff": 29 },
       "saturday leeds": { "games": 1, "wins": 0, "aggDiff": -1 }
     },
     "mario biancardo": {
-      "totalPoints": 113,
-      "totalAgg": 521,
+      "totalPoints": 118,
+      "totalAgg": 542,
       "totalPointsAgainst": 51,
-      "totalAggAgainst": 283,
+      "totalAggAgainst": 285,
       "homeWins": 12,
       "homeLosses": 1,
-      "awayWins": 9,
+      "awayWins": 10,
       "awayLosses": 1,
       "pairWins": 0,
       "pairLosses": 0,
@@ -1357,6 +1392,7 @@
         "brian fish",
         "terry maher",
         "geoff firth",
+        "anne lucas",
         "rhys hammill",
         "brian stevens",
         "stephen morley",
@@ -1385,6 +1421,7 @@
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
+        "Thursday Vets Leeds",
         "Saturday Leeds",
         "Saturday Leeds",
         "Saturday Leeds",
@@ -1398,11 +1435,11 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 271,
       "totalHomeAggAgainst": 150,
-      "totalAwayAgg": 208,
-      "totalAwayAggAgainst": 124,
+      "totalAwayAgg": 229,
+      "totalAwayAggAgainst": 126,
       "totalHomePoints": 64,
       "totalHomePointsAgainst": 27,
-      "totalAwayPoints": 49,
+      "totalAwayPoints": 54,
       "totalAwayPointsAgainst": 24,
       "cupWins": 2,
       "cupLosses": 0,
@@ -1424,6 +1461,7 @@
         "Burley Prk (Thursday Vets Leeds)",
         "Middleton Community (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)",
         "Holbeck Ltd A (Saturday Leeds)",
         "Pudsey Park (Saturday Leeds)",
         "New Wortley (Saturday Leeds)",
@@ -1455,6 +1493,7 @@
         "mario biancardo 21 - 17 brian fish",
         "mario biancardo 21 - 7 terry maher",
         "mario biancardo 21 - 8 geoff firth",
+        "mario biancardo 21 - 2 anne lucas",
         "mario biancardo 21 - 10 rhys hammill",
         "mario biancardo 21 - 10 brian stevens",
         "mario biancardo 21 - 14 stephen morley",
@@ -1466,7 +1505,7 @@
       "tuesday vets leeds": { "games": 6, "wins": 5, "aggDiff": 63 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 5, "wins": 4, "aggDiff": 43 },
-      "thursday vets leeds": { "games": 3, "wins": 3, "aggDiff": 31 },
+      "thursday vets leeds": { "games": 4, "wins": 4, "aggDiff": 50 },
       "saturday leeds": { "games": 6, "wins": 6, "aggDiff": 52 }
     },
     "michael haigh": {
@@ -1752,13 +1791,13 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "shirley biancardo": {
-      "totalPoints": 110,
-      "totalAgg": 508,
+      "totalPoints": 115,
+      "totalAgg": 529,
       "totalPointsAgainst": 37,
-      "totalAggAgainst": 247,
+      "totalAggAgainst": 249,
       "homeWins": 12,
       "homeLosses": 1,
-      "awayWins": 10,
+      "awayWins": 11,
       "awayLosses": 0,
       "pairWins": 0,
       "pairLosses": 0,
@@ -1782,6 +1821,7 @@
         "malcolm dacre",
         "mick harrison",
         "jeff holt",
+        "keith davison",
         "joanne unwin",
         "stephen morris",
         "dave hudson",
@@ -1810,6 +1850,7 @@
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
+        "Thursday Vets Leeds",
         "Saturday Leeds",
         "Saturday Leeds",
         "Saturday Leeds",
@@ -1823,11 +1864,11 @@
       "losingPairsPartners": [],
       "totalHomeAgg": 256,
       "totalHomeAggAgainst": 129,
-      "totalAwayAgg": 210,
-      "totalAwayAggAgainst": 102,
+      "totalAwayAgg": 231,
+      "totalAwayAggAgainst": 104,
       "totalHomePoints": 60,
       "totalHomePointsAgainst": 20,
-      "totalAwayPoints": 50,
+      "totalAwayPoints": 55,
       "totalAwayPointsAgainst": 17,
       "cupWins": 2,
       "cupLosses": 0,
@@ -1850,6 +1891,7 @@
         "Burley Prk (Thursday Vets Leeds)",
         "Middleton Community (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
+        "Western Flatts (Thursday Vets Leeds)",
         "Holbeck Ltd A (Saturday Leeds)",
         "Pudsey Park (Saturday Leeds)",
         "New Wortley (Saturday Leeds)",
@@ -1878,6 +1920,7 @@
         "shirley biancardo 21 - 20 malcolm dacre",
         "shirley biancardo 21 - 14 mick harrison",
         "shirley biancardo 21 - 16 jeff holt",
+        "shirley biancardo 21 - 2 keith davison",
         "shirley biancardo 21 - 4 joanne unwin",
         "shirley biancardo 21 - 1 stephen morris",
         "shirley biancardo 21 - 4 dave hudson",
@@ -1889,7 +1932,7 @@
       "tuesday vets leeds": { "games": 6, "wins": 6, "aggDiff": 72 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 5, "wins": 4, "aggDiff": 13 },
-      "thursday vets leeds": { "games": 3, "wins": 3, "aggDiff": 13 },
+      "thursday vets leeds": { "games": 4, "wins": 4, "aggDiff": 32 },
       "saturday leeds": { "games": 6, "wins": 6, "aggDiff": 99 }
     },
     "steve gardner": {
@@ -2371,25 +2414,26 @@
       "awayLosses": 0,
       "homeLosses": 0,
       "homeDraws": 0,
-      "awayDraws": 0,
+      "awayDraws": 1,
       "cupWins": 0,
       "cupLosses": 0,
-      "agg": 452,
-      "totalPoints": 102,
-      "opponentAgg": 361,
-      "opponentTotalPoints": 73,
+      "agg": 587,
+      "totalPoints": 130,
+      "opponentAgg": 485,
+      "opponentTotalPoints": 101,
       "beaten": [
         "Burley Prk (away)",
         "Middleton Community (home)",
         "Scatcherd Pk A (home)"
       ],
       "beatenBy": [],
-      "drawnWith": [],
+      "drawnWith": ["Western Flatts (away)"],
       "leaguePosition": 3,
       "results": [
         "Burley Prk 25 - 39 Stanningley (Thu 20th Apr)",
         "Stanningley 31 - 25 Middleton Community (Thu 27th Apr)",
-        "Stanningley 32 - 23 Scatcherd Pk A (Thu 11th May)"
+        "Stanningley 32 - 23 Scatcherd Pk A (Thu 11th May)",
+        "Western Flatts 28 - 28 Stanningley (Thu 18th May)"
       ]
     },
     {
@@ -2427,6 +2471,6 @@
       ]
     }
   ],
-  "lastUpdated": "17/05/2023",
+  "lastUpdated": "18/05/2023",
   "statsYear": "2023"
 }
