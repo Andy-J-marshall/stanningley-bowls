@@ -2,7 +2,15 @@ import { test } from '@playwright/test';
 import bowlsStats from '../../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 
-const totalNumberOfPlayers = Object.keys(bowlsStats.playerResults).length;
+const allPlayers = Object.keys(bowlsStats.playerResults);
+
+var totalNumberOfPlayers = allPlayers.filter((player) => {
+  const playerStats = bowlsStats.playerResults[player];
+  if (playerStats.totalAgg > 0 || playerStats.totalAggAgainst > 0) {
+    return player;
+  }
+}).length;
+
 let playerStatsPage: PlayerStatsPage;
 
 test.beforeEach(async ({ page }) => {
