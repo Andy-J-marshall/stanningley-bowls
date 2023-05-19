@@ -142,6 +142,7 @@ function PlayerStatSummary(props) {
                                         style={{
                                             backgroundColor: 'white',
                                             border: 'none',
+                                            padding: '0',
                                         }}
                                     >
                                         PLAYER
@@ -155,6 +156,7 @@ function PlayerStatSummary(props) {
                                         style={{
                                             backgroundColor: 'white',
                                             border: 'none',
+                                            padding: '0',
                                         }}
                                     >
                                         GAMES
@@ -168,6 +170,7 @@ function PlayerStatSummary(props) {
                                         style={{
                                             backgroundColor: 'white',
                                             border: 'none',
+                                            padding: '0',
                                         }}
                                     >
                                         WINS
@@ -181,6 +184,7 @@ function PlayerStatSummary(props) {
                                         style={{
                                             backgroundColor: 'white',
                                             border: 'none',
+                                            padding: '0',
                                         }}
                                     >
                                         WIN %
@@ -194,6 +198,7 @@ function PlayerStatSummary(props) {
                                         style={{
                                             backgroundColor: 'white',
                                             border: 'none',
+                                            padding: '0',
                                         }}
                                     >
                                         AVERAGE
