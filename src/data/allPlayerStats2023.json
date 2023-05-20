@@ -1,6 +1,6 @@
 {
   "playerResults": {
-    "ali": {
+    "alison": {
       "totalPoints": 0,
       "totalAgg": 113,
       "totalPointsAgainst": 0,
@@ -52,13 +52,13 @@
         " (Saturday Leeds)"
       ],
       "results": [
-        "ali 21 - 19 steve pickersgill",
-        "ali 10 - 21 sue harrison",
-        "ali 16 - 21 graham goodall",
-        "ali 18 - 21 bob davison",
-        "ali 21 - 19 lance greenwood",
-        "ali 16 - 21 frank lindsay",
-        "ali 11 - 21 daphne scott"
+        "alison 21 - 19 steve pickersgill",
+        "alison 10 - 21 sue harrison",
+        "alison 16 - 21 graham goodall",
+        "alison 18 - 21 bob davison",
+        "alison 21 - 19 lance greenwood",
+        "alison 16 - 21 frank lindsay",
+        "alison 11 - 21 daphne scott"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },

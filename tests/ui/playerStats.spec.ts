@@ -14,7 +14,7 @@ const players: Array<string> = [
   'Andy W',
   'Paul Bowes',
   'Alyssa Randell',
-  'Ali',
+  'Alison',
   'Kevin Waller',
   'Jack Roberts',
 ];
