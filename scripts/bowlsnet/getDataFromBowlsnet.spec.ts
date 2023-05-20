@@ -116,7 +116,7 @@ for (const team of teams) {
 
     const popUp = await page
       .frameLocator('#x-Dframe')
-      .locator('#x-DlgI > input');
+      .locator('#x-DlgI > .dlgBtn[value*="Close"]');
     if (popUp) {
       popUp.click();
     } else {
@@ -125,14 +125,11 @@ for (const team of teams) {
 
     await page
       .frameLocator('#x-Pframe')
-      .locator(
-        '#x-Menu > .menuSect:nth-child(2) > .menu-btn[onclick*="MenuPage(\'Info\')"]'
-      )
+      .locator('#x-Menu .menu-btn[onclick*="lgeDlg(\'DInfo\')"]')
       .click();
-
     await page
-      .frameLocator('#x-Pframe')
-      .locator('.bbarT > .bbar-tab[onclick*="ShowSubPage(4)"]')
+      .frameLocator('#x-Dframe')
+      .locator('#x-DlgI .dlgBtn[onclick*="dAct(4)"]')
       .click();
     await page
       .frameLocator('#x-Pframe')
