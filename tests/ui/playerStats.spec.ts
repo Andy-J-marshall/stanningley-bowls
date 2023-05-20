@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
 
 const players: Array<string> = [
   'Andy Marshall',
-  'Andy W',
+  'Andy Waller',
   'Paul Bowes',
   'Alyssa Randell',
   'Alison',

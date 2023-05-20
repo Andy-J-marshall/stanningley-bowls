@@ -334,7 +334,7 @@
       "tuesday mirfield": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
-    "andy w": {
+    "andy waller": {
       "totalPoints": 0,
       "totalAgg": 252,
       "totalPointsAgainst": 0,
@@ -405,18 +405,18 @@
       ],
       "beatenByTeam": [],
       "results": [
-        "andy w 21 - 10 john mcdermott",
-        "andy w 21 - 9 stuart marsh",
-        "andy w 21 - 18 rory bligh",
-        "andy w 21 - 11 hazel goodall",
-        "andy w 21 - 15 madge cass",
-        "andy w 21 - 20 keith fleming",
-        "andy w 21 - 11 christine glynne",
-        "andy w 21 - 7 george bentley",
-        "andy w 21 - 8 andrew dewhirst",
-        "andy w 21 - 1 dave hudson",
-        "andy w 21 - 5 brian marshall",
-        "andy w 21 - 19 brian thompson"
+        "andy waller 21 - 10 john mcdermott",
+        "andy waller 21 - 9 stuart marsh",
+        "andy waller 21 - 18 rory bligh",
+        "andy waller 21 - 11 hazel goodall",
+        "andy waller 21 - 15 madge cass",
+        "andy waller 21 - 20 keith fleming",
+        "andy waller 21 - 11 christine glynne",
+        "andy waller 21 - 7 george bentley",
+        "andy waller 21 - 8 andrew dewhirst",
+        "andy waller 21 - 1 dave hudson",
+        "andy waller 21 - 5 brian marshall",
+        "andy waller 21 - 19 brian thompson"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
@@ -781,7 +781,7 @@
       "pairLosses": 0,
       "pairsPartners": [],
       "beatenOpponents": ["bob emerson", "cliff roy"],
-      "beatenBy": ["billy ward", "andy w", "oliver devaney"],
+      "beatenBy": ["billy ward", "andy waller", "oliver devaney"],
       "dayPlayed": [
         "Wednesday Half Holiday Leeds (Burley Park)",
         "Thursday Vets Leeds (Stanningley)",
@@ -816,7 +816,7 @@
         "dave hudson 21 - 12 bob emerson",
         "dave hudson 21 - 13 cliff roy",
         "dave hudson 10 - 21 billy ward",
-        "dave hudson 1 - 21 andy w",
+        "dave hudson 1 - 21 andy waller",
         "dave hudson 15 - 21 oliver devaney"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },

@@ -46,8 +46,6 @@ def deduplicateNames(name):
 def anonymiseNames(name):
     if name.lower() == 'alison woodfine':
         name = 'Alison'
-    if name.lower() == 'andy waller':
-        name = 'Andy W'
     return name.lower()
 
 
