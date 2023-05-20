@@ -12,7 +12,11 @@ function PlayerStatSummary(props) {
     let style;
     let href;
 
-    const [orderedPlayerStats, setOrderedPlayerStats] = useState(playerStats);
+    const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
+    const [orderByGamesBool, setOrderByGamesBool] = useState(false);
+    const [orderByAverageBool, setOrderByAverageBool] = useState(false);
+    const [orderByWinsBool, setOrderByWinsBool] = useState(false);
+    const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
 
     function displayPlayer(event) {
         const playerName = event.target.innerHTML;
@@ -22,12 +26,27 @@ function PlayerStatSummary(props) {
     }
 
     function orderByName() {
-        const playerOrder = [...playerStats].sort();
+        setOrderByPlayerBool(true);
+        setOrderByGamesBool(false);
+        setOrderByWinsBool(false);
+        setOrderByWinPercBool(false);
+        setOrderByAverageBool(false);
+    }
 
-        setOrderedPlayerStats(playerOrder);
+    function orderPlayersByName() {
+        const playerOrder = [...playerStats].sort();
+        return playerOrder;
     }
 
     function orderByGames() {
+        setOrderByGamesBool(true);
+        setOrderByPlayerBool(false);
+        setOrderByWinsBool(false);
+        setOrderByWinPercBool(false);
+        setOrderByAverageBool(false);
+    }
+
+    function orderPlayersByGames() {
         let gameOrder;
 
         if (showSinglesOnlyBool) {
@@ -44,10 +63,18 @@ function PlayerStatSummary(props) {
             );
         }
 
-        setOrderedPlayerStats(gameOrder);
+        return gameOrder;
     }
 
     function orderByWins() {
+        setOrderByWinsBool(true);
+        setOrderByPlayerBool(false);
+        setOrderByGamesBool(false);
+        setOrderByWinPercBool(false);
+        setOrderByAverageBool(false);
+    }
+
+    function orderPlayersByWins() {
         let winOrder;
 
         if (showSinglesOnlyBool) {
@@ -64,10 +91,18 @@ function PlayerStatSummary(props) {
             );
         }
 
-        setOrderedPlayerStats(winOrder);
+        return winOrder;
     }
 
     function orderByWinPerc() {
+        setOrderByWinPercBool(true);
+        setOrderByPlayerBool(false);
+        setOrderByGamesBool(false);
+        setOrderByWinsBool(false);
+        setOrderByAverageBool(false);
+    }
+
+    function orderPlayersByWinPerc() {
         let winPercOrder;
 
         if (showSinglesOnlyBool) {
@@ -90,10 +125,18 @@ function PlayerStatSummary(props) {
             );
         }
 
-        setOrderedPlayerStats(winPercOrder);
+        return winPercOrder;
     }
 
     function orderByAverage() {
+        setOrderByAverageBool(true);
+        setOrderByPlayerBool(false);
+        setOrderByGamesBool(false);
+        setOrderByWinsBool(false);
+        setOrderByWinPercBool(false);
+    }
+
+    function orderPlayersByAverage() {
         let averageOrder;
 
         if (showSinglesOnlyBool) {
@@ -110,7 +153,69 @@ function PlayerStatSummary(props) {
             );
         }
 
-        setOrderedPlayerStats(averageOrder);
+        return averageOrder;
+    }
+
+    function displayPlayers() {
+        let stats;
+        if (
+            !orderByPlayerBool &&
+            !orderByGamesBool &&
+            !orderByWinsBool &&
+            !orderByWinPercBool &&
+            !orderByAverageBool
+        ) {
+            stats = orderPlayersByName();
+        }
+        if (orderByPlayerBool) {
+            stats = orderPlayersByName();
+        }
+        if (orderByGamesBool) {
+            stats = orderPlayersByGames();
+        }
+        if (orderByWinsBool) {
+            stats = orderPlayersByWins();
+        }
+        if (orderByWinPercBool) {
+            stats = orderPlayersByWinPerc();
+        }
+        if (orderByAverageBool) {
+            stats = orderPlayersByAverage();
+        }
+
+        return stats.map((player, key) => {
+            let gamesPlayed = player.games;
+            let average = player.average;
+            let wins = player.wins;
+
+            if (showSinglesOnlyBool) {
+                gamesPlayed = player.singleGames;
+                average = player.singlesAverage;
+                wins = player.singlesWins;
+            }
+
+            return (
+                <tbody key={key}>
+                    {gamesPlayed > 0 && (
+                        <tr>
+                            <td>
+                                <a
+                                    style={style}
+                                    href={href}
+                                    onClick={displayPlayer}
+                                >
+                                    {capitalizeText([player.player])}
+                                </a>
+                            </td>
+                            <td>{gamesPlayed}</td>
+                            <td>{wins}</td>
+                            <td>{((wins / gamesPlayed) * 100).toFixed(0)}%</td>
+                            <td>{average.toFixed(2)}</td>
+                        </tr>
+                    )}
+                </tbody>
+            );
+        });
     }
 
     if (displayPlayerStatsCallback) {
@@ -127,7 +232,7 @@ function PlayerStatSummary(props) {
         href = null;
     }
 
-    if (orderedPlayerStats) {
+    if (playerStats) {
         return (
             <div id="player-stats-per-team">
                 <div className="center table" style={{ width: '97%' }}>
@@ -206,47 +311,7 @@ function PlayerStatSummary(props) {
                                 </th>
                             </tr>
                         </thead>
-                        {orderedPlayerStats.map((player, key) => {
-                            let gamesPlayed = player.games;
-                            let average = player.average;
-                            let wins = player.wins;
-
-                            if (showSinglesOnlyBool) {
-                                gamesPlayed = player.singleGames;
-                                average = player.singlesAverage;
-                                wins = player.singlesWins;
-                            }
-
-                            return (
-                                <tbody key={key}>
-                                    {gamesPlayed > 0 && (
-                                        <tr>
-                                            <td>
-                                                <a
-                                                    style={style}
-                                                    href={href}
-                                                    onClick={displayPlayer}
-                                                >
-                                                    {capitalizeText([
-                                                        player.player,
-                                                    ])}
-                                                </a>
-                                            </td>
-                                            <td>{gamesPlayed}</td>
-                                            <td>{wins}</td>
-                                            <td>
-                                                {(
-                                                    (wins / gamesPlayed) *
-                                                    100
-                                                ).toFixed(0)}
-                                                %
-                                            </td>
-                                            <td>{average.toFixed(2)}</td>
-                                        </tr>
-                                    )}
-                                </tbody>
-                            );
-                        })}
+                        {displayPlayers()}
                     </Table>
                 </div>
             </div>
