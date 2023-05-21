@@ -1562,11 +1562,11 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "paul bowes": {
-      "totalPoints": 44,
-      "totalAgg": 194,
+      "totalPoints": 39,
+      "totalAgg": 173,
       "totalPointsAgainst": 28,
       "totalAggAgainst": 136,
-      "homeWins": 5,
+      "homeWins": 4,
       "homeLosses": 1,
       "awayWins": 2,
       "awayLosses": 2,
@@ -1579,8 +1579,7 @@
         "andrew ash",
         "paul hainsworth",
         "danny dawson",
-        "harvey lockwood",
-        "*no player*"
+        "harvey lockwood"
       ],
       "beatenBy": ["clifford brogie", "graham hainsworth", "danny towning"],
       "dayPlayed": [
@@ -1592,18 +1591,17 @@
         "Saturday Leeds",
         "Saturday Leeds",
         "Saturday Leeds",
-        "Saturday Leeds",
         "Saturday Leeds"
       ],
       "totalPairsAgg": 21,
       "totalPairsAggAgainst": 13,
       "winningPairsPartners": ["vanessa lancaster"],
       "losingPairsPartners": [],
-      "totalHomeAgg": 123,
+      "totalHomeAgg": 102,
       "totalHomeAggAgainst": 75,
       "totalAwayAgg": 71,
       "totalAwayAggAgainst": 61,
-      "totalHomePoints": 29,
+      "totalHomePoints": 24,
       "totalHomePointsAgainst": 15,
       "totalAwayPoints": 15,
       "totalAwayPointsAgainst": 13,
@@ -1615,8 +1613,7 @@
         "Western Flatts (Monday Combined Leeds)",
         "Holbeck Ltd A (Saturday Leeds)",
         "New Wortley (Saturday Leeds)",
-        "Gildersome A (Saturday Leeds)",
-        "Holbeck Moor (Saturday Leeds)"
+        "Gildersome A (Saturday Leeds)"
       ],
       "beatenByTeam": [
         "Pudsey Park (Saturday Leeds)",
@@ -1631,7 +1628,6 @@
         "paul bowes 12 - 21 clifford brogie",
         "paul bowes 21 - 18 danny dawson",
         "paul bowes 21 - 17 harvey lockwood",
-        "paul bowes 21 - 0 *no player*",
         "paul bowes 17 - 21 graham hainsworth",
         "paul bowes 18 - 21 danny towning"
       ],
@@ -1640,7 +1636,7 @@
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "saturday leeds": { "games": 7, "wins": 4, "aggDiff": 22 }
+      "saturday leeds": { "games": 6, "wins": 3, "aggDiff": 1 }
     },
     "paul leonard": {
       "totalPoints": 29,
@@ -2506,6 +2502,6 @@
       ]
     }
   ],
-  "lastUpdated": "20/05/2023",
+  "lastUpdated": "22/05/2023",
   "statsYear": "2023"
 }

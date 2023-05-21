@@ -339,7 +339,7 @@ for day in teamDays:
         if updateStats:
             opponentsName = sheet[opponentPlayerNameCol + str(row)].value
 
-            if opponentsName.lower() != '*walkover*':
+            if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
                 playerName = sheet[playerNameCol + str(row)].value
                 aggregate = sheet[playerScoreCol + str(row)].value
                 opponentAggregate = sheet[opponentPlayerScoreCol +

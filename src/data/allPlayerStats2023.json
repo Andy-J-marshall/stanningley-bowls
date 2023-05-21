@@ -2182,10 +2182,10 @@
     },
     "paul bowes": {
       "totalPoints": 0,
-      "totalAgg": 278,
+      "totalAgg": 257,
       "totalPointsAgainst": 0,
       "totalAggAgainst": 229,
-      "homeWins": 6,
+      "homeWins": 5,
       "homeLosses": 2,
       "awayWins": 3,
       "awayLosses": 4,
@@ -2199,7 +2199,6 @@
         "paul hainsworth",
         "danny dawson",
         "harvey lockwood",
-        "*no player*",
         "darren hickey",
         "joe bray"
       ],
@@ -2221,7 +2220,6 @@
         "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
         "Saturday Leeds (Stanningley)",
-        "Saturday Leeds (Stanningley)",
         "Tuesday Mirfield (Littlemoor B)",
         "Tuesday Mirfield (Littlemoor B)",
         "Tuesday Mirfield (Littlemoor B)",
@@ -2232,7 +2230,7 @@
       "totalPairsAggAgainst": 13,
       "winningPairsPartners": ["vanessa lancaster"],
       "losingPairsPartners": [],
-      "totalHomeAgg": 160,
+      "totalHomeAgg": 139,
       "totalHomeAggAgainst": 114,
       "totalAwayAgg": 118,
       "totalAwayAggAgainst": 115,
@@ -2246,7 +2244,6 @@
         " (Monday Combined Leeds)",
         " (Monday Combined Leeds)",
         " (Monday Combined Leeds)",
-        " (Saturday Leeds)",
         " (Saturday Leeds)",
         " (Saturday Leeds)",
         " (Saturday Leeds)",
@@ -2269,7 +2266,6 @@
         "paul bowes 12 - 21 clifford brogie",
         "paul bowes 21 - 18 danny dawson",
         "paul bowes 21 - 17 harvey lockwood",
-        "paul bowes 21 - 0 *no player*",
         "paul bowes 17 - 21 graham hainsworth",
         "paul bowes 18 - 21 danny towning",
         "paul bowes 21 - 12 darren hickey",
@@ -3273,6 +3269,6 @@
       "thursday vets bradford": { "games": 0, "wins": 0, "aggDiff": 0 }
     }
   },
-  "lastUpdated": "20/05/2023",
+  "lastUpdated": "22/05/2023",
   "statsYear": "2023"
 }
