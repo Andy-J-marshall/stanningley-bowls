@@ -811,18 +811,18 @@
       "saturday leeds": { "games": 0, "wins": 0, "aggDiff": 0 }
     },
     "donald shaw": {
-      "totalPoints": 21,
-      "totalAgg": 99,
-      "totalPointsAgainst": 28,
-      "totalAggAgainst": 121,
-      "homeWins": 2,
+      "totalPoints": 16,
+      "totalAgg": 78,
+      "totalPointsAgainst": 24,
+      "totalAggAgainst": 103,
+      "homeWins": 1,
       "homeLosses": 1,
       "awayWins": 0,
       "awayLosses": 3,
       "pairWins": 0,
       "pairLosses": 0,
       "pairsPartners": [],
-      "beatenOpponents": ["michael bennett", "roy tebbutt"],
+      "beatenOpponents": ["roy tebbutt"],
       "beatenBy": [
         "pauline stockdale",
         "brenda brown",
@@ -830,7 +830,6 @@
         "sandra deegan"
       ],
       "dayPlayed": [
-        "Tuesday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
         "Thursday Vets Leeds",
@@ -841,20 +840,17 @@
       "totalPairsAggAgainst": 0,
       "winningPairsPartners": [],
       "losingPairsPartners": [],
-      "totalHomeAgg": 57,
-      "totalHomeAggAgainst": 58,
+      "totalHomeAgg": 36,
+      "totalHomeAggAgainst": 40,
       "totalAwayAgg": 42,
       "totalAwayAggAgainst": 63,
-      "totalHomePoints": 13,
-      "totalHomePointsAgainst": 13,
+      "totalHomePoints": 8,
+      "totalHomePointsAgainst": 9,
       "totalAwayPoints": 8,
       "totalAwayPointsAgainst": 15,
       "cupWins": 0,
       "cupLosses": 0,
-      "beatenTeam": [
-        " (Tuesday Vets Leeds)",
-        "Middleton Community (Thursday Vets Leeds)"
-      ],
+      "beatenTeam": ["Middleton Community (Thursday Vets Leeds)"],
       "beatenByTeam": [
         "Burley Prk (Thursday Vets Leeds)",
         "Scatcherd Pk A (Thursday Vets Leeds)",
@@ -862,7 +858,6 @@
         "Gildersome A (Saturday Leeds)"
       ],
       "results": [
-        "donald shaw 21 - 18 michael bennett",
         "donald shaw 20 - 21 pauline stockdale",
         "donald shaw 21 - 19 roy tebbutt",
         "donald shaw 15 - 21 brenda brown",
@@ -870,7 +865,7 @@
         "donald shaw 5 - 21 sandra deegan"
       ],
       "monday combined leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
-      "tuesday vets leeds": { "games": 1, "wins": 1, "aggDiff": 3 },
+      "tuesday vets leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "tuesday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "wednesday half holiday leeds": { "games": 0, "wins": 0, "aggDiff": 0 },
       "thursday vets leeds": { "games": 4, "wins": 1, "aggDiff": -9 },

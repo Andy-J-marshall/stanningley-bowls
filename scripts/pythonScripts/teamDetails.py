@@ -26,7 +26,7 @@ duplicateTeamMemberNames = ['duncan mc phail',
 
 traitorPlayers = {
     'Monday Combined Leeds': [],
-    'Tuesday Vets Leeds': [],
+    'Tuesday Vets Leeds': ['donald shaw', 'don shaw'],
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
     'Thursday Vets Leeds': [],
