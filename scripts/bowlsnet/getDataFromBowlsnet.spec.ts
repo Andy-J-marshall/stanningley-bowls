@@ -123,6 +123,16 @@ for (const team of teams) {
       console.log('No pop up clicked');
     }
 
+    // This is a temporary measure whilst the site update appears
+    const continueButton = await page
+      .frameLocator('#x-Pframe')
+      .locator('#fpTab .fpBtn');
+    if (popUp) {
+      continueButton.click();
+    } else {
+      console.log('No Continue button clicked');
+    }
+
     await page
       .frameLocator('#x-Pframe')
       .locator('#x-Menu .menu-btn[onclick*="lgeDlg(\'DInfo\')"]')
