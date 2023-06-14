@@ -33,12 +33,17 @@ traitorPlayers = {
     'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
 }
 
+# TODO check Dave Hudson on Thursday
 transferredPlayers = {
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': [],
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': [],
-    'Thursday Vets Leeds': [],
+    'Thursday Vets Leeds': 
+    {
+        'player': 'dave hudson',
+        'date': datetime.datetime(2023, 6, 6),
+    },
     'Saturday Leeds':
     {
         'player': 'donald shaw',
