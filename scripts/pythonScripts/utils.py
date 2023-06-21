@@ -17,6 +17,7 @@ otherTeams = ['pudsey park', 'pudsey', 'burley',
               'tarnfield', 'littlemoor', 'farsley', 'bramley', 'bramley park']
 teamsTracking = teamDetails.teamNames + otherTeams
 
+cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
 
 def findHtmlFiles():
     files = []

@@ -16,6 +16,7 @@ duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
 formatName = utils.formatName
+cupText = utils.cupText
 calculateGamePoints = teamDetails.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 transferredPlayers = teamDetails.transferredPlayers
@@ -32,8 +33,6 @@ homeTeamScoreCol = 'B'
 awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
-
-cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
