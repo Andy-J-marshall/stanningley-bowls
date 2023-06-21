@@ -23,7 +23,7 @@ awayPlayerScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
 
-cupText = ['qtr-finals', 'semi-finals', 'final', 'Round of ']
+cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'

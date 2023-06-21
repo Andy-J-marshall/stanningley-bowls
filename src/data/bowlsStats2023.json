@@ -3147,9 +3147,9 @@
       "awayDraws": 0,
       "cupWins": 0,
       "cupLosses": 1,
-      "agg": 913,
+      "agg": 1023,
       "totalPoints": 189,
-      "opponentAgg": 977,
+      "opponentAgg": 1119,
       "opponentTotalPoints": 212,
       "beaten": [
         "Pudsey Park A (home)",
@@ -3171,7 +3171,7 @@
         "Stanningley 28 - 25 Colton (Tue 16th May)",
         "New Farnley B 40 - 19 Stanningley (Tue 23rd May)",
         "Stanningley 27 - 27 Meanwood B (Tue 30th May)",
-        "New Farnley A 21 - 6 Stanningley (Tue 6th Jun)",
+        "New Farnley A 163 - 116 Stanningley (Tue 6th Jun)",
         "Stanningley 33 - 23 Gildersome B (Tue 20th Jun)"
       ]
     },
@@ -3185,9 +3185,9 @@
       "awayDraws": 0,
       "cupWins": 2,
       "cupLosses": 0,
-      "agg": 995,
+      "agg": 1218,
       "totalPoints": 221,
-      "opponentAgg": 657,
+      "opponentAgg": 811,
       "opponentTotalPoints": 123,
       "beaten": [
         "Methley (away)",
@@ -3209,12 +3209,12 @@
         "Stanningley 25 - 21 Meanwood Park B (Wed 26th Apr)",
         "Stanningley 25 - 23 Western Flatts (Wed 3rd May)",
         "Fearnville 19 - 27 Stanningley (Wed 10th May)",
-        "Colton 14 - 21 Stanningley (Wed 17th May)",
+        "Colton 81 - 136 Stanningley (Wed 17th May)",
         "Stanningley 28 - 13 Potternewton (Wed 24th May)",
         "Gildersome B 15 - 29 Stanningley (Wed 31st May)",
         "Stanningley 30 - 9 Whitkirk BC B (Wed 7th Jun)",
         "Stanningley 29 - 12 Methley (Wed 14th Jun)",
-        "Stanningley 21 - 15 Rothwell BC A (Wed 21st Jun)"
+        "Stanningley 129 - 102 Rothwell BC A (Wed 21st Jun)"
       ]
     },
     {
@@ -3291,6 +3291,6 @@
       ]
     }
   ],
-  "lastUpdated": "21/06/2023",
+  "lastUpdated": "22/06/2023",
   "statsYear": "2023"
 }

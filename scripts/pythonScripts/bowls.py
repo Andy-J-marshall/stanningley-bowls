@@ -134,7 +134,7 @@ for day in teamDays:
             # To account for handicap row in cup games
             homeTeamName = sheet[homeTeamNameCol + str(row + 9 - rowsDownIntModifier)].value
             if type(homeTeamName) is str and 'handicap' in homeTeamName.lower():
-                rowsDownIntModifier = rowsDownIntModifier + 1
+                rowsDownIntModifier = rowsDownIntModifier - 1
 
             # Save the scores
             homeScore = sheet[homeTeamScoreCol +
