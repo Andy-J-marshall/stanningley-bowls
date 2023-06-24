@@ -9,8 +9,7 @@ const config: PlaywrightTestConfig = {
   },
   fullyParallel: true,
   forbidOnly: true,
-  retries: 1,
-  reporter: 'html',
+  retries: 2,
   use: {
     actionTimeout: 0,
     baseURL: 'https://bowlsnet.uk',
