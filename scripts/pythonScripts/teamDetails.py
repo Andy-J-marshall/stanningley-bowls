@@ -33,7 +33,6 @@ traitorPlayers = {
     'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
 }
 
-# TODO check Dave Hudson on Thursday
 transferredPlayers = {
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': [],
