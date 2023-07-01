@@ -5,7 +5,7 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-otherLeagues = ['Monday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale',
+otherLeagues = ['Monday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale',
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
 teamDays = currentTeamDays + otherLeagues
