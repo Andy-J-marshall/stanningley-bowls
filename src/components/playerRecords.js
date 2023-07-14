@@ -8,6 +8,9 @@ function PlayerRecords(props) {
 
     const players = Object.keys(playerResults);
 
+    const minGamesForOverallRecords = 15;
+    const minGamesForTeamRecords = 11;
+
     // Monday
     let useMondayStats = false;
     let minMonGames = 1;
@@ -145,8 +148,8 @@ function PlayerRecords(props) {
             const mondayWinPerc = (mondayWins / mondayGames) * 100;
 
             if (highestMonGames > minMonGames) {
-                if (highestMonGames >= 8) {
-                    minMonGames = 8;
+                if (highestMonGames >= minGamesForTeamRecords) {
+                    minMonGames = minGamesForTeamRecords;
                 } else {
                     minMonGames = highestMonGames;
                 }
@@ -190,8 +193,8 @@ function PlayerRecords(props) {
                 (tuesdayVetsWins / tuesdayVetsGames) * 100;
 
             if (highestTuesVetsGames > minTuesVetsGames) {
-                if (highestTuesVetsGames >= 8) {
-                    minTuesVetsGames = 8;
+                if (highestTuesVetsGames >= minGamesForTeamRecords) {
+                    minTuesVetsGames = minGamesForTeamRecords;
                 } else {
                     minTuesVetsGames = highestTuesVetsGames;
                 }
@@ -243,8 +246,8 @@ function PlayerRecords(props) {
             const tuesdayWinPerc = (tuesdayWins / tuesdayGames) * 100;
 
             if (highestTuesGames > minTuesGames) {
-                if (highestTuesGames >= 8) {
-                    minTuesGames = 8;
+                if (highestTuesGames >= minGamesForTeamRecords) {
+                    minTuesGames = minGamesForTeamRecords;
                 } else {
                     minTuesGames = highestTuesGames;
                 }
@@ -290,8 +293,8 @@ function PlayerRecords(props) {
             const wednesdayWinPerc = (wednesdayWins / wednesdayGames) * 100;
 
             if (highestWedGames > minWedGames) {
-                if (highestWedGames >= 8) {
-                    minWedGames = 8;
+                if (highestWedGames >= minGamesForTeamRecords) {
+                    minWedGames = minGamesForTeamRecords;
                 } else {
                     minWedGames = highestWedGames;
                 }
@@ -342,8 +345,8 @@ function PlayerRecords(props) {
                 (thursdayVetsWins / thursdayVetsGames) * 100;
 
             if (highestThursVetsGames > minThurVetsGames) {
-                if (highestThursVetsGames >= 8) {
-                    minThurVetsGames = 8;
+                if (highestThursVetsGames >= minGamesForTeamRecords) {
+                    minThurVetsGames = minGamesForTeamRecords;
                 } else {
                     minThurVetsGames = highestThursVetsGames;
                 }
@@ -395,8 +398,8 @@ function PlayerRecords(props) {
             const saturdayWinPerc = (saturdayWins / saturdayGames) * 100;
 
             if (highestSatGames > minSatGames) {
-                if (highestSatGames >= 8) {
-                    minSatGames = 8;
+                if (highestSatGames >= minGamesForTeamRecords) {
+                    minSatGames = minGamesForTeamRecords;
                 } else {
                     minSatGames = highestSatGames;
                 }
@@ -443,8 +446,8 @@ function PlayerRecords(props) {
         const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
         
         if (highestTotalGames > minTotalGames) {
-            if (highestTotalGames >= 10) {
-                minTotalGames = 10;
+            if (highestTotalGames >= minGamesForOverallRecords) {
+                minTotalGames = minGamesForOverallRecords;
             } else {
                 minTotalGames = highestTotalGames;
             }
