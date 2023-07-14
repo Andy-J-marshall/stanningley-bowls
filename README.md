@@ -152,7 +152,7 @@ Update the default stats to display for `teamStats` and `combinedStats`.
 
 Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
 
-If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components.
+If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
 
 Update `yearFixturesAddedFor` in `fixtures.js`.
 

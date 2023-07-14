@@ -106,22 +106,22 @@ function PlayerRecords(props) {
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
         const totalGames = totalWins + totalLosses;
 
-        if (monday.games >= highestMonGames) {
+        if (monday && monday.games >= highestMonGames) {
             highestMonGames = monday.games;
         }
-        if (tuesdayVets.games >= highestTuesVetsGames) {
+        if (tuesdayVets && tuesdayVets.games >= highestTuesVetsGames) {
             highestTuesVetsGames = tuesdayVets.games;
         }
-        if (tuesday.games >= highestTuesGames) {
+        if (tuesday && tuesday.games >= highestTuesGames) {
             highestTuesGames = tuesday.games;
         }
-        if (wednesday.games >= highestWedGames) {
+        if (wednesday && wednesday.games >= highestWedGames) {
             highestWedGames = wednesday.games;
         }
-        if (thursdayVets.games >= highestThursVetsGames) {
+        if (thursdayVets && thursdayVets.games >= highestThursVetsGames) {
             highestThursVetsGames = thursdayVets.games;
         }
-        if (saturday.games >= highestSatGames) {
+        if (saturday && saturday.games >= highestSatGames) {
             highestSatGames = saturday.games;
         }
         if (totalGames >= highestTotalGames) {
