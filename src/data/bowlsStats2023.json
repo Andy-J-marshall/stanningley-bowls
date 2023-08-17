@@ -676,8 +676,8 @@
         "andy waller": {
             "totalPoints": 160,
             "totalPointsAgainst": 107,
-            "totalAgg": 787,
-            "totalAggAgainst": 616,
+            "totalAgg": 807,
+            "totalAggAgainst": 637,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 365,
@@ -693,7 +693,7 @@
             "awayWins": 12,
             "awayLosses": 7,
             "cupWins": 3,
-            "cupLosses": 2,
+            "cupLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
             "beatenOpponents": [
@@ -735,6 +735,7 @@
                 "thomas kaye",
                 "lynda heath",
                 "martin costello",
+                "tina howard",
                 "ron lavan",
                 "malcolm hallas",
                 "michael stott",
@@ -747,6 +748,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -828,6 +830,7 @@
                 "Rothwell BC A (Wednesday Half Holiday Leeds)",
                 "Meanwood Park B (Wednesday Half Holiday Leeds)",
                 "Whitkirk BC B (Wednesday Half Holiday Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Western Flatts (Thursday Vets Leeds)",
                 "Middleton Community (Thursday Vets Leeds)",
                 "Scatcherd Pk A (Thursday Vets Leeds)",
@@ -853,6 +856,7 @@
                 "andy waller 21 - 11 bob williams",
                 "andy waller 21 - 17 geoff clark",
                 "andy waller 10 - 21 martin costello",
+                "andy waller 20 - 21 tina howard",
                 "andy waller 21 - 20 keith fleming",
                 "andy waller 21 - 11 christine glynne",
                 "andy waller 21 - 7 george bentley",
@@ -895,9 +899,9 @@
                 "aggDiff": 7
             },
             "wednesday half holiday leeds": {
-                "games": 13,
+                "games": 14,
                 "wins": 8,
-                "aggDiff": 25
+                "aggDiff": 24
             },
             "thursday vets leeds": {
                 "games": 11,
@@ -1476,8 +1480,8 @@
         "david eaton": {
             "totalPoints": 134,
             "totalPointsAgainst": 84,
-            "totalAgg": 658,
-            "totalAggAgainst": 476,
+            "totalAgg": 672,
+            "totalAggAgainst": 497,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 302,
@@ -1493,7 +1497,7 @@
             "awayWins": 10,
             "awayLosses": 6,
             "cupWins": 3,
-            "cupLosses": 1,
+            "cupLosses": 2,
             "pairWins": 0,
             "pairLosses": 0,
             "beatenOpponents": [
@@ -1531,6 +1535,7 @@
                 "david curland",
                 "hazel goodall",
                 "james lancaster",
+                "perer whipp",
                 "mick hall",
                 "margaret mcphail",
                 "jeff holt"
@@ -1543,6 +1548,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -1610,6 +1616,7 @@
                 "Potternewton (Wednesday Half Holiday Leeds)",
                 "Western Flatts (Wednesday Half Holiday Leeds)",
                 "Whitkirk BC B (Wednesday Half Holiday Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Middleton Community (Thursday Vets Leeds)",
                 "Western Flatts (Thursday Vets Leeds)",
                 "Scatcherd Pk A (Thursday Vets Leeds)"
@@ -1638,6 +1645,7 @@
                 "david eaton 14 - 21 david curland",
                 "david eaton 8 - 21 hazel goodall",
                 "david eaton 19 - 21 james lancaster",
+                "david eaton 14 - 21 perer whipp",
                 "david eaton 21 - 5 barry palmer",
                 "david eaton 8 - 21 mick hall",
                 "david eaton 21 - 8 keith kincaid",
@@ -1667,9 +1675,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 16,
+                "games": 17,
                 "wins": 12,
-                "aggDiff": 69
+                "aggDiff": 62
             },
             "thursday vets leeds": {
                 "games": 12,
@@ -3032,8 +3040,8 @@
         "mario biancardo": {
             "totalPoints": 342,
             "totalPointsAgainst": 140,
-            "totalAgg": 1649,
-            "totalAggAgainst": 878,
+            "totalAgg": 1670,
+            "totalAggAgainst": 894,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 741,
@@ -3048,7 +3056,7 @@
             "homeLosses": 5,
             "awayWins": 31,
             "awayLosses": 4,
-            "cupWins": 9,
+            "cupWins": 10,
             "cupLosses": 0,
             "pairWins": 0,
             "pairLosses": 0,
@@ -3096,6 +3104,7 @@
                 "mary black",
                 "dennis cole",
                 "ken stockhill",
+                "karen portman",
                 "brian fish",
                 "terry maher",
                 "geoff firth",
@@ -3171,6 +3180,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -3265,6 +3275,7 @@
                 "Fearnville (Wednesday Half Holiday Leeds)",
                 "Potternewton (Wednesday Half Holiday Leeds)",
                 "Western Flatts (Wednesday Half Holiday Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Burley Prk (Thursday Vets Leeds)",
                 "Middleton Community (Thursday Vets Leeds)",
                 "Scatcherd Pk A (Thursday Vets Leeds)",
@@ -3356,6 +3367,7 @@
                 "mario biancardo 21 - 6 dennis cole",
                 "mario biancardo 21 - 18 ken stockhill",
                 "mario biancardo 16 - 21 tony bond",
+                "mario biancardo 21 - 16 karen portman",
                 "mario biancardo 21 - 17 brian fish",
                 "mario biancardo 21 - 7 terry maher",
                 "mario biancardo 21 - 8 geoff firth",
@@ -3403,9 +3415,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 16,
-                "wins": 13,
-                "aggDiff": 131
+                "games": 17,
+                "wins": 14,
+                "aggDiff": 136
             },
             "thursday vets leeds": {
                 "games": 12,
@@ -3484,8 +3496,8 @@
         "paul bowes": {
             "totalPoints": 124,
             "totalPointsAgainst": 64,
-            "totalAgg": 602,
-            "totalAggAgainst": 371,
+            "totalAgg": 611,
+            "totalAggAgainst": 392,
             "totalPairsAgg": 105,
             "totalPairsAggAgainst": 52,
             "totalHomeAgg": 289,
@@ -3501,7 +3513,7 @@
             "awayWins": 9,
             "awayLosses": 4,
             "cupWins": 3,
-            "cupLosses": 0,
+            "cupLosses": 1,
             "pairWins": 5,
             "pairLosses": 0,
             "beatenOpponents": [
@@ -3533,6 +3545,7 @@
             "beatenBy": [
                 "laura love",
                 "danny dawson",
+                "ian howard",
                 "clifford brogie",
                 "graham hainsworth",
                 "danny towning",
@@ -3549,6 +3562,7 @@
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -3614,6 +3628,7 @@
             "beatenByTeam": [
                 "Harehills (Monday Combined Leeds)",
                 "New Wortley (Monday Combined Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Pudsey Park (Saturday Leeds)",
                 "Scatcherd Park A (Saturday Leeds)",
                 "Cross Flatts A (Saturday Leeds)",
@@ -3636,6 +3651,7 @@
                 "paul bowes 21 - 4 glennys ash",
                 "paul bowes 21 - 18 fraser douglas",
                 "paul bowes 21 - 9 tommy fitzgerald",
+                "paul bowes 9 - 21 ian howard",
                 "paul bowes 21 - 11 paul hainsworth",
                 "paul bowes 12 - 21 clifford brogie",
                 "paul bowes 21 - 18 danny dawson",
@@ -3667,9 +3683,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 6,
+                "games": 7,
                 "wins": 6,
-                "aggDiff": 68
+                "aggDiff": 56
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -4103,8 +4119,8 @@
         "shirley biancardo": {
             "totalPoints": 338,
             "totalPointsAgainst": 130,
-            "totalAgg": 1614,
-            "totalAggAgainst": 882,
+            "totalAgg": 1635,
+            "totalAggAgainst": 893,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 734,
@@ -4119,7 +4135,7 @@
             "homeLosses": 2,
             "awayWins": 30,
             "awayLosses": 5,
-            "cupWins": 6,
+            "cupWins": 7,
             "cupLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
@@ -4168,6 +4184,7 @@
                 "frank powell",
                 "mary horrocks",
                 "john hardwick",
+                "steve portman",
                 "malcolm dacre",
                 "mick harrison",
                 "jeff holt",
@@ -4243,6 +4260,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -4337,6 +4355,7 @@
                 "Potternewton (Wednesday Half Holiday Leeds)",
                 "Western Flatts (Wednesday Half Holiday Leeds)",
                 "Whitkirk BC B (Wednesday Half Holiday Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Burley Prk (Thursday Vets Leeds)",
                 "Middleton Community (Thursday Vets Leeds)",
                 "Scatcherd Pk A (Thursday Vets Leeds)",
@@ -4428,6 +4447,7 @@
                 "shirley biancardo 21 - 3 frank powell",
                 "shirley biancardo 21 - 11 mary horrocks",
                 "shirley biancardo 21 - 14 john hardwick",
+                "shirley biancardo 21 - 11 steve portman",
                 "shirley biancardo 21 - 20 malcolm dacre",
                 "shirley biancardo 21 - 14 mick harrison",
                 "shirley biancardo 21 - 16 jeff holt",
@@ -4474,9 +4494,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 16,
-                "wins": 14,
-                "aggDiff": 113
+                "games": 17,
+                "wins": 15,
+                "aggDiff": 123
             },
             "thursday vets leeds": {
                 "games": 11,
@@ -4492,8 +4512,8 @@
         "steve gardner": {
             "totalPoints": 190,
             "totalPointsAgainst": 98,
-            "totalAgg": 989,
-            "totalAggAgainst": 571,
+            "totalAgg": 1010,
+            "totalAggAgainst": 591,
             "totalPairsAgg": 21,
             "totalPairsAggAgainst": 18,
             "totalHomeAgg": 417,
@@ -4508,7 +4528,7 @@
             "homeLosses": 1,
             "awayWins": 14,
             "awayLosses": 8,
-            "cupWins": 7,
+            "cupWins": 8,
             "cupLosses": 1,
             "pairWins": 1,
             "pairLosses": 0,
@@ -4538,6 +4558,7 @@
                 "valerie bush",
                 "glennys ash",
                 "hannah risley",
+                "jeff blackburn",
                 "jason ream",
                 "derek howell",
                 "iain baker",
@@ -4585,6 +4606,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
                 "Wednesday Half Holiday Leeds",
@@ -4651,6 +4673,7 @@
                 "Potternewton (Wednesday Half Holiday Leeds)",
                 "Western Flatts (Wednesday Half Holiday Leeds)",
                 "Whitkirk BC B (Wednesday Half Holiday Leeds)",
+                "Meanwood Park A (Wednesday Half Holiday Leeds)",
                 "Holbeck Ltd A (Saturday Leeds)",
                 "Pudsey Park (Saturday Leeds)",
                 "New Wortley (Saturday Leeds)",
@@ -4713,6 +4736,7 @@
                 "steve gardner 21 - 5 valerie bush",
                 "steve gardner 21 - 11 glennys ash",
                 "steve gardner 21 - 17 hannah risley",
+                "steve gardner 21 - 20 jeff blackburn",
                 "steve gardner 21 - 7 jason ream",
                 "steve gardner 21 - 3 derek howell",
                 "steve gardner 21 - 5 iain baker",
@@ -4747,9 +4771,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 15,
-                "wins": 11,
-                "aggDiff": 120
+                "games": 16,
+                "wins": 12,
+                "aggDiff": 121
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -5512,11 +5536,11 @@
             "homeLosses": 0,
             "homeDraws": 0,
             "awayDraws": 1,
-            "cupWins": 3,
+            "cupWins": 4,
             "cupLosses": 0,
-            "agg": 1924,
+            "agg": 2050,
             "totalPoints": 349,
-            "opponentAgg": 1329,
+            "opponentAgg": 1439,
             "opponentTotalPoints": 204,
             "beaten": [
                 "Methley (away)",
@@ -5532,7 +5556,8 @@
                 "Western Flatts (away)",
                 "Fearnville (home)",
                 "Potternewton (away)",
-                "Western Flatts (cup)"
+                "Western Flatts (cup)",
+                "Meanwood Park A (cup)"
             ],
             "beatenBy": [
                 "Meanwood Park B (away)"
@@ -5557,7 +5582,8 @@
                 "Stanningley 30 - 9 Fearnville (Wed 12th Jul)",
                 "Potternewton 10 - 27 Stanningley (Wed 19th Jul)",
                 "Stanningley 133 - 114 Western Flatts (Wed 26th Jul)",
-                "Whitkirk BC B 24 - 24 Stanningley (Wed 9th Aug)"
+                "Whitkirk BC B 24 - 24 Stanningley (Wed 9th Aug)",
+                "Stanningley 126 - 110 Meanwood Park A (Wed 16th Aug)"
             ]
         },
         {
@@ -5668,6 +5694,6 @@
             ]
         }
     ],
-    "lastUpdated": "16/08/2023",
+    "lastUpdated": "17/08/2023",
     "statsYear": "2023"
 }
