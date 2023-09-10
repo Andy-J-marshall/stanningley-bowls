@@ -5,6 +5,8 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
+# Saturday AireDale & Wharfedale? And pairs leagues?
+# Can remove Wednesday AireDale & Wharfedale?
 otherLeagues = ['Monday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale',
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
@@ -13,7 +15,7 @@ extraPlayers = [] # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['pudsey park', 'pudsey', 'burley',
+otherTeams = ['pudsey park', 'pudsey', 'burley', 'wibsey',
               'tarnfield', 'littlemoor', 'farsley', 'bramley', 'bramley park']
 teamsTracking = teamDetails.teamNames + otherTeams
 
