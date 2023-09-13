@@ -143,7 +143,7 @@ Team Records:
 
 Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays. Reset the transferredPlayers to empty objects for each league.
 
 Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
