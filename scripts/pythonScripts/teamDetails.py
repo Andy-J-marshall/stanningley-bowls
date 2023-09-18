@@ -1,14 +1,21 @@
 import datetime
 
 # Team info (lowercase)
-teamNames = ['stanningley', 'stanningley a',
-             'stanningley park', 'stanningley park a']
+teamNames = ['stanningley', 'stanningley a', 'stanningley b',
+             'stanningley park', 'stanningley park a', 'stanningley park b']
 
 preferredTeamName = 'Stanningley'
+# TODO need to change this to "A" and "B"?
+
+# # TODO implement this instead
+# def findPreferredTeamName():
+#     return 'Stanningley'
 
 # Days played
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds']
+# TODO need to change the Saturday Leeds for the second team?
+# TODO maybe do a test with a team with more than 1 team already?
 
 # Every player (lowercase)
 players = [

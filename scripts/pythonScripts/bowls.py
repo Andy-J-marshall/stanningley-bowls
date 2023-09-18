@@ -42,6 +42,7 @@ allTeamResults = []
 print('UPDATING STATS:', teamNames[0].upper())
 
 for day in teamDays:
+    # TODO check if teamDay has a second team? If so, then do a loop?
     lastResultRowsForTransferredPlayer[day] = {}
 
     # Goes through each sheet in turn
@@ -233,6 +234,7 @@ for day in teamDays:
                     opponentTotalPoints = opponentTotalPoints + homeScore
 
     # Store team result data
+    # TODO need to store this for a second team as well
     teamResults = {
         'day': day,
         'awayWins': awayWins,
