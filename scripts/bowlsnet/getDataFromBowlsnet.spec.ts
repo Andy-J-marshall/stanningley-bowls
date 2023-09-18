@@ -5,6 +5,7 @@ let browser;
 let context;
 let page;
 
+// TODO possible to change the dateTo and dateFrom values to first/last ones in index?
 const teams = [
   {
     day: 'Monday Combined Leeds',
