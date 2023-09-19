@@ -45,19 +45,26 @@ function Players(props) {
             totalHomePointsAgainst,
             totalAwayPoints,
             totalAwayPointsAgainst,
-            // TODO change to just points, not average points (do that in this file instead)?
             pairsAveragePoints,
             pairsAveragePointsAgainst,
             pairsHomeAveragePoints,
             pairsHomeAveragePointsAgainst,
             pairsAwayAveragePoints,
             pairsAwayAveragePointsAgainst,
+            totalPairsHomePoints,
+            totalPairsHomePointsAgainst,
+            totalPairsAwayPoints,
+            totalPairsAwayPointsAgainst,
             singlesAveragePoints,
             singlesAveragePointsAgainst,
             singlesHomeAveragePoints,
             singlesHomeAveragePointsAgainst,
             singlesAwayAveragePoints,
             singlesAwayAveragePointsAgainst,
+            totalSinglesHomePoints,
+            totalSinglesHomePointsAgainst,
+            totalSinglesAwayPoints,
+            totalSinglesAwayPointsAgainst,
             awayLosses,
             homeLosses,
             pairLosses,
@@ -265,28 +272,32 @@ function Players(props) {
                                                 {homeWins} home, {awayWins}{' '}
                                                 away, {cupWins} cup)
                                             </p>
-                                            {pairsGames > 0 && (
-                                                <div>
-                                                    <p>
-                                                        {totalWins - pairWins}{' '}
-                                                        singles wins (
-                                                        {homeWins -
-                                                            pairHomeWins}{' '}
-                                                        home,{' '}
-                                                        {awayWins -
-                                                            pairAwayWins}{' '}
-                                                        away,{' '}
-                                                        {cupWins - pairCupWins}{' '}
-                                                        cup)
-                                                    </p>
-                                                    <p>
-                                                        {pairWins} pairs wins (
-                                                        {pairHomeWins} home,{' '}
-                                                        {pairAwayWins} away,{' '}
-                                                        {pairCupWins} cup)
-                                                    </p>
-                                                </div>
-                                            )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <div>
+                                                        <p>
+                                                            {totalWins -
+                                                                pairWins}{' '}
+                                                            singles wins (
+                                                            {homeWins -
+                                                                pairHomeWins}{' '}
+                                                            home,{' '}
+                                                            {awayWins -
+                                                                pairAwayWins}{' '}
+                                                            away,{' '}
+                                                            {cupWins -
+                                                                pairCupWins}{' '}
+                                                            cup)
+                                                        </p>
+                                                        <p>
+                                                            {pairWins} pairs
+                                                            wins ({pairHomeWins}{' '}
+                                                            home, {pairAwayWins}{' '}
+                                                            away, {pairCupWins}{' '}
+                                                            cup)
+                                                        </p>
+                                                    </div>
+                                                )}
                                             {!showStatSummary && (
                                                 <div>
                                                     {mondayGames > 0 && (
@@ -428,17 +439,18 @@ function Players(props) {
                                                         %
                                                     </p>
                                                 )}
-                                            {pairsGames > 0 && (
-                                                <p>
-                                                    Pairs win percentage ={' '}
-                                                    {(
-                                                        (pairWins /
-                                                            pairsGames) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <p>
+                                                        Pairs win percentage ={' '}
+                                                        {(
+                                                            (pairWins /
+                                                                pairsGames) *
+                                                            100
+                                                        ).toFixed(0)}
+                                                        %
+                                                    </p>
+                                                )}
                                             {pairHomeWins > 0 && (
                                                 <p>
                                                     Pairs home win percentage ={' '}
@@ -483,31 +495,34 @@ function Players(props) {
                                                 home, {awayLosses} away,{' '}
                                                 {cupLosses} cup)
                                             </p>
-                                            {pairsGames > 0 && (
-                                                <div>
-                                                    <p>
-                                                        {totalLosses -
-                                                            pairLosses}{' '}
-                                                        singles losses (
-                                                        {homeLosses -
-                                                            pairHomeLosses}{' '}
-                                                        home,{' '}
-                                                        {awayLosses -
-                                                            pairAwayLosses}{' '}
-                                                        away,{' '}
-                                                        {cupLosses -
-                                                            pairCupLosses}{' '}
-                                                        cup)
-                                                    </p>
-                                                    <p>
-                                                        {pairLosses} pairs
-                                                        losses ({pairHomeLosses}{' '}
-                                                        home, {pairAwayLosses}{' '}
-                                                        away, {pairCupLosses}{' '}
-                                                        cup)
-                                                    </p>
-                                                </div>
-                                            )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <div>
+                                                        <p>
+                                                            {totalLosses -
+                                                                pairLosses}{' '}
+                                                            singles losses (
+                                                            {homeLosses -
+                                                                pairHomeLosses}{' '}
+                                                            home,{' '}
+                                                            {awayLosses -
+                                                                pairAwayLosses}{' '}
+                                                            away,{' '}
+                                                            {cupLosses -
+                                                                pairCupLosses}{' '}
+                                                            cup)
+                                                        </p>
+                                                        <p>
+                                                            {pairLosses} pairs
+                                                            losses (
+                                                            {pairHomeLosses}{' '}
+                                                            home,{' '}
+                                                            {pairAwayLosses}{' '}
+                                                            away,{' '}
+                                                            {pairCupLosses} cup)
+                                                        </p>
+                                                    </div>
+                                                )}
                                             {!showStatSummary && (
                                                 <div>
                                                     {mondayGames > 0 && (
@@ -652,74 +667,81 @@ function Players(props) {
                                                         {cupAverage.toFixed(2)}
                                                     </p>
                                                 )}
-                                            {pairsGames > 0 && (
-                                                <div>
-                                                    {singlesAvg > -22 && (
-                                                        <p>
-                                                            Singles ={' '}
-                                                            {singlesAvg.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {singlesHomeAverage > -22 && (
-                                                        <p>
-                                                            Singles home ={' '}
-                                                            {singlesHomeAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {singlesAwayAverage > -22 && (
-                                                        <p>
-                                                            Singles away ={' '}
-                                                            {singlesAwayAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {singlesCupAverage > -22 && (
-                                                        <p>
-                                                            Singles cup ={' '}
-                                                            {singlesCupAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {pairsAvg > -22 && (
-                                                        <p>
-                                                            Pairs ={' '}
-                                                            {pairsAvg.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {pairsHomeAverage > -22 && (
-                                                        <p>
-                                                            Pairs home ={' '}
-                                                            {pairsHomeAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {pairsAwayAverage > -22 && (
-                                                        <p>
-                                                            Pairs away ={' '}
-                                                            {pairsAwayAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                    {pairsCupAverage > -22 && (
-                                                        <p>
-                                                            Pairs cup ={' '}
-                                                            {pairsCupAverage.toFixed(
-                                                                2
-                                                            )}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <div>
+                                                        {singlesAvg > -22 && (
+                                                            <p>
+                                                                Singles ={' '}
+                                                                {singlesAvg.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {singlesHomeAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Singles home ={' '}
+                                                                {singlesHomeAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {singlesAwayAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Singles away ={' '}
+                                                                {singlesAwayAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {singlesCupAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Singles cup ={' '}
+                                                                {singlesCupAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {pairsAvg > -22 && (
+                                                            <p>
+                                                                Pairs ={' '}
+                                                                {pairsAvg.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {pairsHomeAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Pairs home ={' '}
+                                                                {pairsHomeAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {pairsAwayAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Pairs away ={' '}
+                                                                {pairsAwayAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                        {pairsCupAverage >
+                                                            -22 && (
+                                                            <p>
+                                                                Pairs cup ={' '}
+                                                                {pairsCupAverage.toFixed(
+                                                                    2
+                                                                )}
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                )}
                                             {!showStatSummary && (
                                                 <div>
                                                     {mondayGames > 0 && (
@@ -815,75 +837,271 @@ function Players(props) {
                                                 {homeAveragePoints >= 0 && (
                                                     <div>
                                                         <h3>HOME</h3>
-                                                        <p>
-                                                            Home points scored ={' '}
-                                                            {totalHomePoints} /{' '}
-                                                            {homeGamesPlayed *
-                                                                5}
-                                                        </p>
-                                                        <p>
-                                                            Home points conceded
-                                                            ={' '}
-                                                            {
-                                                                totalHomePointsAgainst
-                                                            }{' '}
-                                                            /{' '}
-                                                            {homeGamesPlayed *
-                                                                5}
-                                                        </p>
-                                                        <p>
-                                                            Average home points
-                                                            ={' '}
-                                                            {homeAveragePoints.toFixed(
-                                                                2
-                                                            )}{' '}
-                                                            / 5
-                                                        </p>
-                                                        <p>
-                                                            Average home points
-                                                            conceded ={' '}
-                                                            {homeAveragePointsAgainst.toFixed(
-                                                                2
-                                                            )}{' '}
-                                                            / 5
-                                                        </p>
+                                                        <div>
+                                                            <p>
+                                                                Home points
+                                                                scored ={' '}
+                                                                {
+                                                                    totalHomePoints
+                                                                }{' '}
+                                                                /{' '}
+                                                                {homeGamesPlayed *
+                                                                    5}
+                                                            </p>
+                                                            <p>
+                                                                Home points
+                                                                conceded ={' '}
+                                                                {
+                                                                    totalHomePointsAgainst
+                                                                }{' '}
+                                                                /{' '}
+                                                                {homeGamesPlayed *
+                                                                    5}
+                                                            </p>
+                                                            <p>
+                                                                Average home
+                                                                points ={' '}
+                                                                {homeAveragePoints.toFixed(
+                                                                    2
+                                                                )}{' '}
+                                                                / 5
+                                                            </p>
+                                                            <p>
+                                                                Average home
+                                                                points conceded
+                                                                ={' '}
+                                                                {homeAveragePointsAgainst.toFixed(
+                                                                    2
+                                                                )}{' '}
+                                                                / 5
+                                                            </p>
+                                                        </div>
+                                                        {singlesGames > 0 &&
+                                                            pairsGames > 0 &&
+                                                            totalSinglesHomePoints >
+                                                                0 && (
+                                                                <div>
+                                                                    <p>
+                                                                        Singles
+                                                                        home
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalSinglesHomePoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Singles
+                                                                        home
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalSinglesHomePointsAgainst
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        home
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalPairsHomePoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        home
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalPairsHomePointsAgainst
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        singles
+                                                                        home
+                                                                        points
+                                                                        scored ={' '}
+                                                                        {singlesHomeAveragePoints.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        singles
+                                                                        home
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {singlesHomeAveragePointsAgainst.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        pairs
+                                                                        home
+                                                                        points
+                                                                        scored ={' '}
+                                                                        {pairsHomeAveragePoints.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        pairs
+                                                                        home
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {pairsHomeAveragePointsAgainst.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                </div>
+                                                            )}
                                                     </div>
                                                 )}
                                                 {awayAveragePoints >= 0 && (
                                                     <div>
                                                         <h3>AWAY</h3>
-                                                        <p>
-                                                            Away points scored ={' '}
-                                                            {totalAwayPoints} /{' '}
-                                                            {awayGamesPlayed *
-                                                                5}
-                                                        </p>
-                                                        <p>
-                                                            Away points conceded
-                                                            ={' '}
-                                                            {
-                                                                totalAwayPointsAgainst
-                                                            }{' '}
-                                                            /{' '}
-                                                            {awayGamesPlayed *
-                                                                5}
-                                                        </p>
-                                                        <p>
-                                                            Average away points
-                                                            ={' '}
-                                                            {awayAveragePoints.toFixed(
-                                                                2
-                                                            )}{' '}
-                                                            / 5
-                                                        </p>
-                                                        <p>
-                                                            Average away points
-                                                            conceded ={' '}
-                                                            {awayAveragePointsAgainst.toFixed(
-                                                                2
-                                                            )}{' '}
-                                                            / 5
-                                                        </p>
+                                                        <div>
+                                                            <p>
+                                                                Away points
+                                                                scored ={' '}
+                                                                {
+                                                                    totalAwayPoints
+                                                                }{' '}
+                                                                /{' '}
+                                                                {awayGamesPlayed *
+                                                                    5}
+                                                            </p>
+                                                            <p>
+                                                                Away points
+                                                                conceded ={' '}
+                                                                {
+                                                                    totalAwayPointsAgainst
+                                                                }{' '}
+                                                                /{' '}
+                                                                {awayGamesPlayed *
+                                                                    5}
+                                                            </p>
+                                                            <p>
+                                                                Average away
+                                                                points ={' '}
+                                                                {awayAveragePoints.toFixed(
+                                                                    2
+                                                                )}{' '}
+                                                                / 5
+                                                            </p>
+                                                            <p>
+                                                                Average away
+                                                                points conceded
+                                                                ={' '}
+                                                                {awayAveragePointsAgainst.toFixed(
+                                                                    2
+                                                                )}{' '}
+                                                                / 5
+                                                            </p>
+                                                        </div>
+                                                        {singlesGames > 0 &&
+                                                            pairsGames > 0 &&
+                                                            totalSinglesAwayPoints >
+                                                                0 && (
+                                                                <div>
+                                                                    <p>
+                                                                        Singles
+                                                                        away
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalSinglesAwayPoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Singles
+                                                                        away
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalSinglesAwayPointsAgainst
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        away
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalPairsAwayPoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        away
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalPairsAwayPointsAgainst
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        singles
+                                                                        away
+                                                                        points
+                                                                        scored ={' '}
+                                                                        {singlesAwayAveragePoints.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        singles
+                                                                        away
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {singlesAwayAveragePointsAgainst.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        pairs
+                                                                        away
+                                                                        points
+                                                                        scored ={' '}
+                                                                        {pairsAwayAveragePoints.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                    <p>
+                                                                        Average
+                                                                        pairs
+                                                                        away
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {pairsAwayAveragePointsAgainst.toFixed(
+                                                                            2
+                                                                        )}{' '}
+                                                                        / 5
+                                                                    </p>
+                                                                </div>
+                                                            )}
                                                     </div>
                                                 )}
                                                 <br />
@@ -895,6 +1113,7 @@ function Players(props) {
                                     </Accordion.Body>
                                 </Accordion.Item>
                             )}
+                            {/* TODO add average aggregates? */}
                             <Accordion.Item eventKey="5">
                                 <Accordion.Header id="stats-aggregate">
                                     AGGREGATES
@@ -944,7 +1163,7 @@ function Players(props) {
                                             </p>
                                         </div>
                                     )}
-                                    {pairsGames > 0 && (
+                                    {pairsGames > 0 && singlesGames > 0 && (
                                         <div>
                                             <h3>SINGLES</h3>
                                             <p>
