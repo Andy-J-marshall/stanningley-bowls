@@ -11,7 +11,7 @@ otherLeagues = ['Monday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale',
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
 teamDays = currentTeamDays + otherLeagues
-extraPlayers = [] # this is to track players who only play for a different team
+extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie', 'david hudson']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
@@ -20,6 +20,7 @@ otherTeams = ['pudsey park', 'pudsey', 'burley', 'wibsey',
 teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
+
 
 def findHtmlFiles():
     files = []
@@ -70,8 +71,6 @@ def returnListOfPlayerStats(days):
     for player in players:
         player = anonymiseNames(player)
         playerObj = {
-            'totalPoints': 0,
-            'totalPointsAgainst': 0,
             'totalAgg': 0,
             'totalAggAgainst': 0,
             'totalPairsAgg': 0,
@@ -80,6 +79,8 @@ def returnListOfPlayerStats(days):
             'totalHomeAggAgainst': 0,
             'totalAwayAgg': 0,
             'totalAwayAggAgainst': 0,
+            'totalPoints': 0,
+            'totalPointsAgainst': 0,
             'totalHomePoints': 0,
             'totalHomePointsAgainst': 0,
             'totalAwayPoints': 0,

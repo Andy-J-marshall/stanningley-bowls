@@ -1,8 +1,6 @@
 {
     "playerResults": {
         "alison": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 512,
             "totalAggAgainst": 419,
             "totalPairsAgg": 0,
@@ -11,6 +9,8 @@
             "totalHomeAggAgainst": 172,
             "totalAwayAgg": 203,
             "totalAwayAggAgainst": 193,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -223,8 +223,6 @@
             }
         },
         "alyssa randell": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 632,
             "totalAggAgainst": 517,
             "totalPairsAgg": 305,
@@ -233,6 +231,8 @@
             "totalHomeAggAgainst": 246,
             "totalAwayAgg": 231,
             "totalAwayAggAgainst": 250,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -518,8 +518,6 @@
             }
         },
         "andy marshall": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1017,
             "totalAggAgainst": 740,
             "totalPairsAgg": 279,
@@ -528,6 +526,8 @@
             "totalHomeAggAgainst": 300,
             "totalAwayAgg": 395,
             "totalAwayAggAgainst": 318,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -873,8 +873,6 @@
             }
         },
         "andy waller": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 945,
             "totalAggAgainst": 731,
             "totalPairsAgg": 0,
@@ -883,6 +881,8 @@
             "totalHomeAggAgainst": 253,
             "totalAwayAgg": 410,
             "totalAwayAggAgainst": 364,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -1187,8 +1187,6 @@
             }
         },
         "carole mcdermott": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 16,
             "totalAggAgainst": 42,
             "totalPairsAgg": 0,
@@ -1197,6 +1195,8 @@
             "totalHomeAggAgainst": 0,
             "totalAwayAgg": 16,
             "totalAwayAggAgainst": 42,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -1307,8 +1307,6 @@
             }
         },
         "clifford brogie": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 704,
             "totalAggAgainst": 736,
             "totalPairsAgg": 103,
@@ -1317,6 +1315,8 @@
             "totalHomeAggAgainst": 311,
             "totalAwayAgg": 348,
             "totalAwayAggAgainst": 368,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -1600,8 +1600,6 @@
             }
         },
         "colin haque": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 283,
             "totalAggAgainst": 431,
             "totalPairsAgg": 0,
@@ -1610,6 +1608,8 @@
             "totalHomeAggAgainst": 200,
             "totalAwayAgg": 114,
             "totalAwayAggAgainst": 210,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -1802,8 +1802,6 @@
             }
         },
         "craig clarkson": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 333,
             "totalAggAgainst": 292,
             "totalPairsAgg": 193,
@@ -1812,6 +1810,8 @@
             "totalHomeAggAgainst": 148,
             "totalAwayAgg": 154,
             "totalAwayAggAgainst": 144,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -2017,8 +2017,6 @@
             }
         },
         "dave hudson": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 317,
             "totalAggAgainst": 404,
             "totalPairsAgg": 0,
@@ -2027,6 +2025,8 @@
             "totalHomeAggAgainst": 192,
             "totalAwayAgg": 144,
             "totalAwayAggAgainst": 191,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -2219,8 +2219,6 @@
             }
         },
         "david eaton": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 751,
             "totalAggAgainst": 556,
             "totalPairsAgg": 0,
@@ -2229,6 +2227,8 @@
             "totalHomeAggAgainst": 202,
             "totalAwayAgg": 306,
             "totalAwayAggAgainst": 254,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -2493,8 +2493,6 @@
             }
         },
         "derek wilson": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 177,
             "totalAggAgainst": 252,
             "totalPairsAgg": 0,
@@ -2503,6 +2501,8 @@
             "totalHomeAggAgainst": 101,
             "totalAwayAgg": 59,
             "totalAwayAggAgainst": 123,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -2663,8 +2663,6 @@
             }
         },
         "donald shaw": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 558,
             "totalAggAgainst": 648,
             "totalPairsAgg": 0,
@@ -2673,6 +2671,8 @@
             "totalHomeAggAgainst": 295,
             "totalAwayAgg": 255,
             "totalAwayAggAgainst": 333,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -2921,8 +2921,6 @@
             }
         },
         "duncan mcphail": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1416,
             "totalAggAgainst": 1008,
             "totalPairsAgg": 0,
@@ -2931,6 +2929,8 @@
             "totalHomeAggAgainst": 383,
             "totalAwayAgg": 648,
             "totalAwayAggAgainst": 544,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -3331,8 +3331,6 @@
             }
         },
         "jack roberts": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 45,
             "totalAggAgainst": 53,
             "totalPairsAgg": 0,
@@ -3341,6 +3339,8 @@
             "totalHomeAggAgainst": 21,
             "totalAwayAgg": 21,
             "totalAwayAggAgainst": 11,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -3457,8 +3457,6 @@
             }
         },
         "jim moorin": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1596,
             "totalAggAgainst": 1411,
             "totalPairsAgg": 0,
@@ -3467,6 +3465,8 @@
             "totalHomeAggAgainst": 571,
             "totalAwayAgg": 652,
             "totalAwayAggAgainst": 773,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -3935,8 +3935,6 @@
             }
         },
         "joey broadbent": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 84,
             "totalAggAgainst": 35,
             "totalPairsAgg": 0,
@@ -3945,6 +3943,8 @@
             "totalHomeAggAgainst": 27,
             "totalAwayAgg": 21,
             "totalAwayAggAgainst": 8,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -4063,8 +4063,6 @@
             }
         },
         "john armitage": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1451,
             "totalAggAgainst": 994,
             "totalPairsAgg": 0,
@@ -4073,6 +4071,8 @@
             "totalHomeAggAgainst": 421,
             "totalAwayAgg": 631,
             "totalAwayAggAgainst": 526,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -4469,8 +4469,6 @@
             }
         },
         "ken green": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 142,
             "totalAggAgainst": 262,
             "totalPairsAgg": 0,
@@ -4479,6 +4477,8 @@
             "totalHomeAggAgainst": 105,
             "totalAwayAgg": 93,
             "totalAwayAggAgainst": 157,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -4635,8 +4635,6 @@
             }
         },
         "kevin waller": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 196,
             "totalAggAgainst": 204,
             "totalPairsAgg": 0,
@@ -4645,6 +4643,8 @@
             "totalHomeAggAgainst": 90,
             "totalAwayAgg": 66,
             "totalAwayAggAgainst": 93,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -4797,8 +4797,6 @@
             }
         },
         "laila packer": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 34,
             "totalAggAgainst": 63,
             "totalPairsAgg": 0,
@@ -4807,6 +4805,8 @@
             "totalHomeAggAgainst": 21,
             "totalAwayAgg": 22,
             "totalAwayAggAgainst": 42,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -4921,8 +4921,6 @@
             }
         },
         "malvin miller": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 750,
             "totalAggAgainst": 768,
             "totalPairsAgg": 81,
@@ -4931,6 +4929,8 @@
             "totalHomeAggAgainst": 337,
             "totalAwayAgg": 312,
             "totalAwayAggAgainst": 389,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -5232,8 +5232,6 @@
             }
         },
         "mario biancardo": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1876,
             "totalAggAgainst": 1047,
             "totalPairsAgg": 0,
@@ -5242,6 +5240,8 @@
             "totalHomeAggAgainst": 404,
             "totalAwayAgg": 821,
             "totalAwayAggAgainst": 476,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -5710,8 +5710,6 @@
             }
         },
         "michael haigh": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 0,
             "totalAggAgainst": 0,
             "totalPairsAgg": 0,
@@ -5720,6 +5718,8 @@
             "totalHomeAggAgainst": 0,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -5818,8 +5818,6 @@
             }
         },
         "paul bowes": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1035,
             "totalAggAgainst": 749,
             "totalPairsAgg": 105,
@@ -5828,6 +5826,8 @@
             "totalHomeAggAgainst": 294,
             "totalAwayAgg": 437,
             "totalAwayAggAgainst": 357,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -6164,8 +6164,6 @@
             }
         },
         "paul leonard": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 646,
             "totalAggAgainst": 653,
             "totalPairsAgg": 112,
@@ -6174,6 +6172,8 @@
             "totalHomeAggAgainst": 288,
             "totalAwayAgg": 309,
             "totalAwayAggAgainst": 344,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -6447,8 +6447,6 @@
             }
         },
         "peter crowther": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 2348,
             "totalAggAgainst": 1880,
             "totalPairsAgg": 0,
@@ -6457,6 +6455,8 @@
             "totalHomeAggAgainst": 833,
             "totalAwayAgg": 1049,
             "totalAwayAggAgainst": 962,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -7057,8 +7057,6 @@
             }
         },
         "robin mcdermott": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 16,
             "totalAggAgainst": 63,
             "totalPairsAgg": 0,
@@ -7067,6 +7065,8 @@
             "totalHomeAggAgainst": 0,
             "totalAwayAgg": 16,
             "totalAwayAggAgainst": 63,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -7181,8 +7181,6 @@
             }
         },
         "shirley biancardo": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1853,
             "totalAggAgainst": 1027,
             "totalPairsAgg": 0,
@@ -7191,6 +7189,8 @@
             "totalHomeAggAgainst": 378,
             "totalAwayAgg": 798,
             "totalAwayAggAgainst": 471,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -7663,8 +7663,6 @@
             }
         },
         "steve gardner": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 1122,
             "totalAggAgainst": 677,
             "totalPairsAgg": 21,
@@ -7673,6 +7671,8 @@
             "totalHomeAggAgainst": 192,
             "totalAwayAgg": 440,
             "totalAwayAggAgainst": 329,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -8009,8 +8009,6 @@
             }
         },
         "stewart watson": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 2233,
             "totalAggAgainst": 1807,
             "totalPairsAgg": 0,
@@ -8019,6 +8017,8 @@
             "totalHomeAggAgainst": 749,
             "totalAwayAgg": 996,
             "totalAwayAggAgainst": 995,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -8607,8 +8607,6 @@
             }
         },
         "stuart potter": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 692,
             "totalAggAgainst": 630,
             "totalPairsAgg": 120,
@@ -8617,6 +8615,8 @@
             "totalHomeAggAgainst": 224,
             "totalAwayAgg": 322,
             "totalAwayAggAgainst": 348,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -8896,8 +8896,6 @@
             }
         },
         "tracey marshall": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 47,
             "totalAggAgainst": 84,
             "totalPairsAgg": 0,
@@ -8906,6 +8904,8 @@
             "totalHomeAggAgainst": 63,
             "totalAwayAgg": 12,
             "totalAwayAggAgainst": 21,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
@@ -9024,8 +9024,6 @@
             }
         },
         "vanessa lancaster": {
-            "totalPoints": 0,
-            "totalPointsAgainst": 0,
             "totalAgg": 258,
             "totalAggAgainst": 286,
             "totalPairsAgg": 43,
@@ -9034,6 +9032,8 @@
             "totalHomeAggAgainst": 132,
             "totalAwayAgg": 110,
             "totalAwayAggAgainst": 133,
+            "totalPoints": 0,
+            "totalPointsAgainst": 0,
             "totalHomePoints": 0,
             "totalHomePointsAgainst": 0,
             "totalAwayPoints": 0,
