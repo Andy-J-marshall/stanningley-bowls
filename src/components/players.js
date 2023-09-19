@@ -370,59 +370,64 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
-                                            {pairsGames > 0 && singlesGames > 0 && (
-                                                <p>
-                                                    Singles win percentage ={' '}
-                                                    {(
-                                                        ((totalWins -
-                                                            pairWins) /
-                                                            singlesGames) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {pairsGames > 0 && singlesGames > 0 && (
-                                                <p>
-                                                    Singles home win percentage
-                                                    ={' '}
-                                                    {(
-                                                        ((homeWins -
-                                                            pairHomeWins) /
-                                                            (homeGamesPlayed -
-                                                                pairHomeGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {pairsGames > 0 && singlesGames > 0 && (
-                                                <p>
-                                                    Singles away win percentage
-                                                    ={' '}
-                                                    {(
-                                                        ((awayWins -
-                                                            pairAwayWins) /
-                                                            (awayGamesPlayed -
-                                                                pairAwayGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {pairsGames > 0 && singlesGames > 0 && (
-                                                <p>
-                                                    Singles cup win percentage ={' '}
-                                                    {(
-                                                        ((cupWins -
-                                                            pairCupWins) /
-                                                            (cupGamesPlayed -
-                                                                pairCupGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <p>
+                                                        Singles win percentage ={' '}
+                                                        {(
+                                                            ((totalWins -
+                                                                pairWins) /
+                                                                singlesGames) *
+                                                            100
+                                                        ).toFixed(0)}
+                                                        %
+                                                    </p>
+                                                )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <p>
+                                                        Singles home win
+                                                        percentage ={' '}
+                                                        {(
+                                                            ((homeWins -
+                                                                pairHomeWins) /
+                                                                (homeGamesPlayed -
+                                                                    pairHomeGamesPlayed)) *
+                                                            100
+                                                        ).toFixed(0)}
+                                                        %
+                                                    </p>
+                                                )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <p>
+                                                        Singles away win
+                                                        percentage ={' '}
+                                                        {(
+                                                            ((awayWins -
+                                                                pairAwayWins) /
+                                                                (awayGamesPlayed -
+                                                                    pairAwayGamesPlayed)) *
+                                                            100
+                                                        ).toFixed(0)}
+                                                        %
+                                                    </p>
+                                                )}
+                                            {pairsGames > 0 &&
+                                                singlesGames > 0 && (
+                                                    <p>
+                                                        Singles cup win
+                                                        percentage ={' '}
+                                                        {(
+                                                            ((cupWins -
+                                                                pairCupWins) /
+                                                                (cupGamesPlayed -
+                                                                    pairCupGamesPlayed)) *
+                                                            100
+                                                        ).toFixed(0)}
+                                                        %
+                                                    </p>
+                                                )}
                                             {pairsGames > 0 && (
                                                 <p>
                                                     Pairs win percentage ={' '}
@@ -657,10 +662,58 @@ function Players(props) {
                                                             )}
                                                         </p>
                                                     )}
+                                                    {singlesHomeAverage > -22 && (
+                                                        <p>
+                                                            Singles home ={' '}
+                                                            {singlesHomeAverage.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                    {singlesAwayAverage > -22 && (
+                                                        <p>
+                                                            Singles away ={' '}
+                                                            {singlesAwayAverage.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                    {singlesCupAverage > -22 && (
+                                                        <p>
+                                                            Singles cup ={' '}
+                                                            {singlesCupAverage.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
                                                     {pairsAvg > -22 && (
                                                         <p>
                                                             Pairs ={' '}
                                                             {pairsAvg.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                    {pairsHomeAverage > -22 && (
+                                                        <p>
+                                                            Pairs home ={' '}
+                                                            {pairsHomeAverage.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                    {pairsAwayAverage > -22 && (
+                                                        <p>
+                                                            Pairs away ={' '}
+                                                            {pairsAwayAverage.toFixed(
+                                                                2
+                                                            )}
+                                                        </p>
+                                                    )}
+                                                    {pairsCupAverage > -22 && (
+                                                        <p>
+                                                            Pairs cup ={' '}
+                                                            {pairsCupAverage.toFixed(
                                                                 2
                                                             )}
                                                         </p>
