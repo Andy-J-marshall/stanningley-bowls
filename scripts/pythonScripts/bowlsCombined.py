@@ -192,8 +192,6 @@ for league in leaguesDays:
                     if aggregate > opponentAggregate:
                         playerResults[playerName]['beatenOpponents'].append(
                             opponentsName)
-                        playerResults[playerName]['beatenTeam'].append(
-                            opponentTeam + ' (' + league + ')')
                         if homeGame:
                             playerResults[playerName]['homeWins'] += 1
                         if awayGame:
@@ -208,8 +206,6 @@ for league in leaguesDays:
                     else:
                         playerResults[playerName]['beatenBy'].append(
                             opponentsName)
-                        playerResults[playerName]['beatenByTeam'].append(
-                            opponentTeam + ' (' + league + ')')
                         if homeGame:
                             playerResults[playerName]['homeLosses'] += 1
                         if awayGame:
@@ -226,9 +222,15 @@ for league in leaguesDays:
                     if homeGame:
                         playerResults[playerName]['totalHomeAgg'] += aggregate
                         playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
+                        if pairsGame:
+                            playerResults[playerName]['totalPairsHomeAgg'] += aggregate
+                            playerResults[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
                     if awayGame:
                         playerResults[playerName]['totalAwayAgg'] += aggregate
                         playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
+                        if pairsGame:
+                            playerResults[playerName]['totalPairsAwayAgg'] += aggregate
+                            playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
                     playerResults[playerName]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 

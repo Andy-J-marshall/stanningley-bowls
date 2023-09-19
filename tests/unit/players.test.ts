@@ -159,52 +159,6 @@ describe('#Players Tests', () => {
           totalAwayPointsAgainst: 45,
           cupWins: 4,
           cupLosses: 0,
-          beatenTeam: [
-            'Meanwood B (Monday Combined Leeds)',
-            'Western Flatts (Monday Combined Leeds)',
-            'New Wortley (Monday Combined Leeds)',
-            'Harehills (Monday Combined Leeds)',
-            'Gildersome (Monday Combined Leeds)',
-            'Western Flatts (Monday Combined Leeds)',
-            'Harehills (Monday Combined Leeds)',
-            'West Royd Park (Tuesday Vets Leeds)',
-            'Western Flatts (Tuesday Vets Leeds)',
-            'Barwick BC (Tuesday Vets Leeds)',
-            'Holbeck Moor (Tuesday Vets Leeds)',
-            'Harehills Park A (Tuesday Vets Leeds)',
-            'New Armley (Tuesday Vets Leeds)',
-            'Harehills Park A (Tuesday Vets Leeds)',
-            'Middleton Community (Thursday Vets Leeds)',
-            'New Armley (Thursday Vets Leeds)',
-            'Middleton Community (Thursday Vets Leeds)',
-            'Pudsey Park A (Thursday Vets Leeds)',
-            'New Armley (Thursday Vets Leeds)',
-            'Sth Leeds Cons B (Saturday Leeds)',
-            'Gildersome B (Saturday Leeds)',
-            'Cranmore (Saturday Leeds)',
-            'Middleton Comm (Saturday Leeds)',
-            'New Wortley (Saturday Leeds)',
-            'Western Flatts (Saturday Leeds)',
-            'Scatcherd Park B (Saturday Leeds)',
-            'Sth Leeds Cons B (Saturday Leeds)',
-            'Middleton Park (Saturday Leeds)',
-            'Western Flatts (Saturday Leeds)',
-            'Gildersome B (Saturday Leeds)',
-            'Cranmore (Saturday Leeds)',
-            'Middleton Comm (Saturday Leeds)',
-            'New Wortley (Saturday Leeds)',
-          ],
-          beatenByTeam: [
-            'Sth Lds Cons (Monday Combined Leeds)',
-            'Gildersome (Monday Combined Leeds)',
-            'Sth Lds Cons (Monday Combined Leeds)',
-            'Rothwell BC (Monday Combined Leeds)',
-            'New Farnley B (Monday Combined Leeds)',
-            'Harehills Park A (Tuesday Vets Leeds)',
-            'Gildersome (Tuesday Vets Leeds)',
-            'Pudsey Park A (Thursday Vets Leeds)',
-            'Churwell Pk (Thursday Vets Leeds)',
-          ],
           results: [
             'paul bowes & alyssa randell 17 - 21 malcolm colinson & chris walsh',
             'paul bowes & alyssa randell 17 - 21 harvey lockwood & kevin smales',
@@ -262,13 +216,9 @@ describe('#Players Tests', () => {
       const {
         beatenByList,
         beatenOpponentsList,
-        beatenByTeamList,
-        beatenTeamList,
       } = stats;
-      expect(beatenTeamList).to.have.lengthOf(33);
       expect(beatenOpponentsList).to.have.lengthOf(33);
       expect(beatenByList).to.have.lengthOf(9);
-      expect(beatenByTeamList).to.have.lengthOf(9);
     });
 
     it('Games Played', () => {

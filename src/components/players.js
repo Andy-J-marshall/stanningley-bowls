@@ -74,8 +74,6 @@ function Players(props) {
             pairsAvg,
             beatenByList,
             beatenOpponentsList,
-            beatenByTeamList,
-            beatenTeamList,
             mondayWins,
             mondayLosses,
             mondayGames,
@@ -321,6 +319,28 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
+                                            {pairsGames > 0 && (
+                                                <p>
+                                                    Pairs win percentage ={' '}
+                                                    {(
+                                                        (pairWins /
+                                                            pairsGames) *
+                                                        100
+                                                    ).toFixed(0)}
+                                                    %
+                                                </p>
+                                            )}
+                                            {pairsGames > 0 && (
+                                                <p>
+                                                    Singles win percentage ={' '}
+                                                    {(
+                                                        ((totalWins - pairWins) /
+                                                            (gamesPlayed - pairsGames)) *
+                                                        100
+                                                    ).toFixed(0)}
+                                                    %
+                                                </p>
+                                            )}
                                         </div>
                                     )}
                                     {totalLosses > 0 && (
@@ -471,6 +491,7 @@ function Players(props) {
                                                         {homeAverage.toFixed(2)}
                                                     </p>
                                                 )}
+                                            
                                             {awayAverage > -22 &&
                                                 awayAverage < 22 && (
                                                     <p>
@@ -762,22 +783,6 @@ function Players(props) {
                                     OPPONENTS
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    {!showStatSummary && (
-                                        <div>
-                                            {beatenTeamList.length > 0 && (
-                                                <div>
-                                                    <h3>TEAMS BEATEN</h3>
-                                                    <p>{beatenTeamList}</p>
-                                                </div>
-                                            )}
-                                            {beatenByTeamList.length > 0 && (
-                                                <div>
-                                                    <h3>TEAMS LOST TO</h3>
-                                                    <p>{beatenByTeamList}</p>
-                                                </div>
-                                            )}
-                                        </div>
-                                    )}
                                     {beatenOpponentsList.length > 0 && (
                                         <div>
                                             <h3>PLAYERS BEATEN</h3>

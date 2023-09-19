@@ -159,3 +159,16 @@ Update `yearFixturesAddedFor` in `fixtures.js`.
 Add/update the `clubCupWinner` in the `bowlsStats{year}` file.
 
 Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.
+
+# Ideas
+### Stats
+<!-- TODO -->
+- Win percentage - doubles and singles
+- pairs home wins/losses
+- Home/ away/ cup average for singles/doubles
+- Singles/doubles points
+- Singles/doubles aggregate
+
+### UI
+- Toggle for pairs/singles stats
+- Display detailed stat information in nicer way

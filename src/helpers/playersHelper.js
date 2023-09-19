@@ -25,8 +25,6 @@ export function returnPlayerStats(playersStats, player) {
         losingPairsPartners,
         beatenBy,
         beatenOpponents,
-        beatenByTeam,
-        beatenTeam,
         pairLosses,
         pairWins,
         pairsPartners,
@@ -40,14 +38,32 @@ export function returnPlayerStats(playersStats, player) {
         totalAwayPointsAgainst,
         results,
         dayPlayed,
+        totalPairsHomeAgg,
+        totalPairsHomeAggAgainst,
+        totalPairsAwayAgg,
+        totalPairsAwayAggAgainst,
+        totalPairsPoints,
+        totalPairsPointsAgainst,
+        totalPairsHomePoints,
+        totalPairsHomePointsAgainst,
+        totalPairsAwayPoints,
+        totalPairsAwayPointsAgainst,
     } = stats;
     const p = playersStats[player];
+
     const monday = p['monday combined leeds'];
     const tuesdayVets = p['tuesday vets leeds'];
     const thursday = p['thursday vets leeds'];
     const saturday = p['saturday leeds'];
     const tuesdayEvening = p['tuesday leeds'];
     const wednesday = p['wednesday half holiday leeds'];
+
+    const singlesHomeAverage = (totalHomeAgg - totalPairsHomeAgg) - (totalHomeAggAgainst - totalPairsHomeAggAgainst) / (homeGamesPlayed )// TODO need to add pairsHomeGames
+    // const singlesAwayAverage = 
+    // const singlesCupAverage = 
+    // const singlesHomePoints = 
+    // const singlesAwayPoints = 
+
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalWins = awayWins + homeWins + cupWins;
     const biggestWin = findBiggestWin(results);
@@ -79,8 +95,6 @@ export function returnPlayerStats(playersStats, player) {
     const beatenOpponentsList = beatenOpponents
         ? arrayToList(beatenOpponents)
         : null;
-    const beatenByTeamList = beatenByTeam ? arrayToList(beatenByTeam) : null;
-    const beatenTeamList = beatenTeam ? arrayToList(beatenTeam) : null;
     const mondayWins = monday.wins;
     const mondayLosses = monday.games - monday.wins;
     const mondayGames = monday.games;
@@ -119,9 +133,15 @@ export function returnPlayerStats(playersStats, player) {
     const saturdayAvg = saturday.aggDiff / saturdayGames;
     let daysPlayedCount = [
         { day: config.days['monday combined leeds'], gamesPlayed: mondayGames },
-        { day: config.days['tuesday vets leeds'], gamesPlayed: tuesdayVetsGames },
+        {
+            day: config.days['tuesday vets leeds'],
+            gamesPlayed: tuesdayVetsGames,
+        },
         { day: config.days['tuesday leeds'], gamesPlayed: tuesdayEveningGames },
-        { day: config.days['wednesday half holiday leeds'], gamesPlayed: wednesdayGames },
+        {
+            day: config.days['wednesday half holiday leeds'],
+            gamesPlayed: wednesdayGames,
+        },
         { day: config.days['thursday vets leeds'], gamesPlayed: thursdayGames },
         { day: config.days['saturday leeds'], gamesPlayed: saturdayGames },
     ];
@@ -190,8 +210,6 @@ export function returnPlayerStats(playersStats, player) {
         pairsAvg,
         beatenByList,
         beatenOpponentsList,
-        beatenByTeamList,
-        beatenTeamList,
         mondayWins,
         mondayLosses,
         mondayGames,
