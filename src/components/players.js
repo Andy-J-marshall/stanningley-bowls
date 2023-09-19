@@ -282,7 +282,7 @@ function Players(props) {
                                                     <p>
                                                         {pairWins} pairs wins (
                                                         {pairHomeWins} home,{' '}
-                                                        {pairAwayWins} away, ,{' '}
+                                                        {pairAwayWins} away,{' '}
                                                         {pairCupWins} cup)
                                                     </p>
                                                 </div>
@@ -370,7 +370,7 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
-                                            {singlesGames > 0 && (
+                                            {pairsGames > 0 && singlesGames > 0 && (
                                                 <p>
                                                     Singles win percentage ={' '}
                                                     {(
@@ -382,7 +382,7 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
-                                            {singlesGames > 0 && (
+                                            {pairsGames > 0 && singlesGames > 0 && (
                                                 <p>
                                                     Singles home win percentage
                                                     ={' '}
@@ -396,7 +396,7 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
-                                            {singlesGames > 0 && (
+                                            {pairsGames > 0 && singlesGames > 0 && (
                                                 <p>
                                                     Singles away win percentage
                                                     ={' '}
@@ -410,7 +410,7 @@ function Players(props) {
                                                     %
                                                 </p>
                                             )}
-                                            {singlesGames > 0 && (
+                                            {pairsGames > 0 && singlesGames > 0 && (
                                                 <p>
                                                     Singles cup win percentage ={' '}
                                                     {(
