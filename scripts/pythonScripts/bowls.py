@@ -406,10 +406,16 @@ for day in teamDays:
                         playerStats[playerName]['pairWins'] += 1
                     if homeGame:
                         playerStats[playerName]['homeWins'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairHomeWins'] += 1
                     if awayGame:
                         playerStats[playerName]['awayWins'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairAwayWins'] += 1
                     if cupGame:
                         playerStats[playerName]['cupWins'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairCupWins'] += 1
                 # Losses
                 else:
                     playerStats[playerName]['beatenBy'].append(
@@ -420,10 +426,16 @@ for day in teamDays:
                         playerStats[playerName]['pairLosses'] += 1
                     if homeGame:
                         playerStats[playerName]['homeLosses'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairHomeLosses'] += 1
                     if awayGame:
                         playerStats[playerName]['awayLosses'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairAwayLosses'] += 1
                     if cupGame:
                         playerStats[playerName]['cupLosses'] += 1
+                        if pairsGame:
+                            playerStats[playerName]['pairCupLosses'] += 1
 
                 # Averages
                 playerStats[playerName]['totalAgg'] += aggregate

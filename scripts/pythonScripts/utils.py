@@ -107,6 +107,8 @@ def returnListOfPlayerStats(days):
             'pairHomeLosses': 0,
             'pairAwayWins': 0,
             'pairAwayLosses': 0,
+            'pairCupWins': 0,
+            'pairCupLosses': 0,
             'beatenOpponents': [],
             'beatenBy': [],
             'dayPlayed': [],

@@ -164,6 +164,7 @@ Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and 
 ### Stats
 <!-- TODO -->
 - Win percentage - doubles and singles
+- games played
 - pairs home wins/losses
 - Home/ away/ cup average for singles/doubles
 - Singles/doubles points
