@@ -17,9 +17,10 @@ traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
 formatName = utils.formatName
 cupText = utils.cupText
-calculateGamePoints = teamDetails.calculateGamePoints
+calculateGamePoints = utils.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 transferredPlayers = teamDetails.transferredPlayers
+clubCupWinners = teamDetails.clubCupWinners
 lastResultRowsForTransferredPlayer = {}
 
 # Spreadsheet info
@@ -456,8 +457,9 @@ for day in teamDays:
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
+    'clubCupWinner': clubCupWinners[year],
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
-    'statsYear': year
+    'statsYear': year,
 }
 
 filename = 'src/data/bowlsStats' + year + '.json'

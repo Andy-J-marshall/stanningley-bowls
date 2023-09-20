@@ -156,6 +156,6 @@ If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamS
 
 Update `yearFixturesAddedFor` in `fixtures.js`.
 
-Add/update the `clubCupWinner` in the `bowlsStats{year}` file.
+Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
 Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.

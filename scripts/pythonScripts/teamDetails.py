@@ -50,17 +50,7 @@ transferredPlayers = {
     }
 }
 
-def calculateGamePoints(points):
-    if points == 21:
-        gamePoints = 5
-    if points < 5:
-        gamePoints = 0
-    if points >= 5 and points < 10:
-        gamePoints = 1
-    if points >= 10 and points < 15:
-        gamePoints = 2
-    if points >= 15 and points < 18:
-        gamePoints = 3
-    if points >= 18 and points < 21:
-        gamePoints = 4
-    return gamePoints
+clubCupWinners = {
+    '2022': 'John Armitage',
+    '2023': 'Paul Bowes'
+}
