@@ -237,17 +237,15 @@ export function returnPlayerStats(playersStats, player) {
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
     // Pairs points
-    // TODO these values are wrong?
-    // TODO revert commit?
     const pairsAveragePoints = totalPairsPoints / pairsGames;
     const pairsAveragePointsAgainst = totalPairsPointsAgainst / pairsGames;
 
     const pairsHomeAveragePoints = totalPairsHomePoints / pairHomeGamesPlayed;
     const pairsHomeAveragePointsAgainst =
-        totalPairsHomePointsAgainst / homeGamesPlayed;
+        totalPairsHomePointsAgainst / pairHomeGamesPlayed;
     const pairsAwayAveragePoints = totalPairsAwayPoints / pairAwayGamesPlayed;
     const pairsAwayAveragePointsAgainst =
-        totalPairsAwayPointsAgainst / awayGamesPlayed;
+        totalPairsAwayPointsAgainst / pairAwayGamesPlayed;
 
     // Singles points
     const totalSinglesHomePoints = totalHomePoints - totalPairsHomePoints;
@@ -260,16 +258,18 @@ export function returnPlayerStats(playersStats, player) {
     const totalSinglesPointsAgainst =
         totalSinglesHomePointsAgainst + totalSinglesAwayPointsAgainst;
 
+    // Singles average points
     const singlesAveragePoints =
         totalSinglesPoints / (gamesPlayed - pairsGames);
     const singlesAveragePointsAgainst =
         totalSinglesPointsAgainst / (gamesPlayed - pairsGames);
+
     const singlesHomeAveragePoints =
-        (totalHomePoints - totalPairsHomePoints) /
-        (homeGamesPlayed - pairHomeGamesPlayed);
+        (totalHomePoints - totalPairsHomePoints) / singlesHomeGamesPlayed;
     const singlesHomeAveragePointsAgainst =
         (totalHomePointsAgainst - totalPairsHomePointsAgainst) /
-        (homeGamesPlayed - pairHomeGamesPlayed);
+        singlesHomeGamesPlayed;
+
     const singlesAwayAveragePoints =
         totalSinglesAwayPoints / (awayGamesPlayed - pairAwayGamesPlayed);
     const singlesAwayAveragePointsAgainst =
@@ -405,7 +405,6 @@ export function returnPlayerStats(playersStats, player) {
         pairsPartnersCountLosses,
         biggestWin,
         results,
-        // TODO check all are used
     };
 }
 

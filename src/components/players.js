@@ -806,7 +806,6 @@ function Players(props) {
                                     )}
                                 </Accordion.Body>
                             </Accordion.Item>
-                            {/* TODO need to tidy up this section */}
                             {!showStatSummary && totalPoints > 0 && (
                                 <Accordion.Item eventKey="4">
                                     <Accordion.Header id="stats-points">
@@ -842,7 +841,7 @@ function Players(props) {
                                                     )}{' '}
                                                     / 5
                                                 </p>
-                                                {homeAveragePoints >= 0 && (
+                                                {homeGamesPlayed > 0 && (
                                                     <div>
                                                         <h3>HOME</h3>
                                                         <div>
@@ -885,10 +884,11 @@ function Players(props) {
                                                             </p>
                                                         </div>
                                                         {singlesGames > 0 &&
-                                                            pairsGames > 0 &&
-                                                            totalSinglesHomePoints >
-                                                                0 && (
+                                                            pairsGames > 0 && (
                                                                 <div>
+                                                                    <h5>
+                                                                        SINGLES
+                                                                    </h5>
                                                                     <p>
                                                                         Singles
                                                                         home
@@ -906,25 +906,6 @@ function Players(props) {
                                                                         ={' '}
                                                                         {
                                                                             totalSinglesHomePointsAgainst
-                                                                        }{' '}
-                                                                    </p>
-                                                                    <p>
-                                                                        Pairs
-                                                                        home
-                                                                        points
-                                                                        scored={' '}
-                                                                        {
-                                                                            totalPairsHomePoints
-                                                                        }{' '}
-                                                                    </p>
-                                                                    <p>
-                                                                        Pairs
-                                                                        home
-                                                                        points
-                                                                        conceded
-                                                                        ={' '}
-                                                                        {
-                                                                            totalPairsHomePointsAgainst
                                                                         }{' '}
                                                                     </p>
                                                                     <p>
@@ -949,6 +930,28 @@ function Players(props) {
                                                                             2
                                                                         )}{' '}
                                                                         / 5
+                                                                    </p>
+                                                                    <h5>
+                                                                        PAIRS
+                                                                    </h5>
+                                                                    <p>
+                                                                        Pairs
+                                                                        home
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalPairsHomePoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        home
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalPairsHomePointsAgainst
+                                                                        }{' '}
                                                                     </p>
                                                                     <p>
                                                                         Average
@@ -977,7 +980,7 @@ function Players(props) {
                                                             )}
                                                     </div>
                                                 )}
-                                                {awayAveragePoints >= 0 && (
+                                                {awayGamesPlayed > 0 && (
                                                     <div>
                                                         <h3>AWAY</h3>
                                                         <div>
@@ -1020,10 +1023,11 @@ function Players(props) {
                                                             </p>
                                                         </div>
                                                         {singlesGames > 0 &&
-                                                            pairsGames > 0 &&
-                                                            totalSinglesAwayPoints >
-                                                                0 && (
+                                                            pairsGames > 0 && (
                                                                 <div>
+                                                                    <h5>
+                                                                        SINGLES
+                                                                    </h5>
                                                                     <p>
                                                                         Singles
                                                                         away
@@ -1041,25 +1045,6 @@ function Players(props) {
                                                                         ={' '}
                                                                         {
                                                                             totalSinglesAwayPointsAgainst
-                                                                        }{' '}
-                                                                    </p>
-                                                                    <p>
-                                                                        Pairs
-                                                                        away
-                                                                        points
-                                                                        scored={' '}
-                                                                        {
-                                                                            totalPairsAwayPoints
-                                                                        }{' '}
-                                                                    </p>
-                                                                    <p>
-                                                                        Pairs
-                                                                        away
-                                                                        points
-                                                                        conceded
-                                                                        ={' '}
-                                                                        {
-                                                                            totalPairsAwayPointsAgainst
                                                                         }{' '}
                                                                     </p>
                                                                     <p>
@@ -1084,6 +1069,28 @@ function Players(props) {
                                                                             2
                                                                         )}{' '}
                                                                         / 5
+                                                                    </p>
+                                                                    <h5>
+                                                                        PAIRS
+                                                                    </h5>
+                                                                    <p>
+                                                                        Pairs
+                                                                        away
+                                                                        points
+                                                                        scored={' '}
+                                                                        {
+                                                                            totalPairsAwayPoints
+                                                                        }{' '}
+                                                                    </p>
+                                                                    <p>
+                                                                        Pairs
+                                                                        away
+                                                                        points
+                                                                        conceded
+                                                                        ={' '}
+                                                                        {
+                                                                            totalPairsAwayPointsAgainst
+                                                                        }{' '}
                                                                     </p>
                                                                     <p>
                                                                         Average
