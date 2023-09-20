@@ -192,29 +192,41 @@ for league in leaguesDays:
                     if aggregate > opponentAggregate:
                         playerResults[playerName]['beatenOpponents'].append(
                             opponentsName)
-                        if homeGame:
-                            playerResults[playerName]['homeWins'] += 1
-                        if awayGame:
-                            playerResults[playerName]['awayWins'] += 1
-                        if cupGame:
-                            playerResults[playerName]['cupWins'] += 1
                         if pairsGame:
                             playerResults[playerName]['winningPairsPartners'].append(
                                 pairsPartner)
                             playerResults[playerName]['pairWins'] += 1
+                        if homeGame:
+                            playerResults[playerName]['homeWins'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairHomeWins'] += 1
+                        if awayGame:
+                            playerResults[playerName]['awayWins'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairAwayWins'] += 1
+                        if cupGame:
+                            playerResults[playerName]['cupWins'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairCupWins'] += 1
                     # Losses
                     else:
                         playerResults[playerName]['beatenBy'].append(
                             opponentsName)
-                        if homeGame:
-                            playerResults[playerName]['homeLosses'] += 1
-                        if awayGame:
-                            playerResults[playerName]['awayLosses'] += 1
-                        if cupGame:
-                            playerResults[playerName]['cupLosses'] += 1
                         if pairsGame:
                             playerResults[playerName]['losingPairsPartners'].append(pairsPartner)
                             playerResults[playerName]['pairLosses'] += 1
+                        if homeGame:
+                            playerResults[playerName]['homeLosses'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairHomeLosses'] += 1
+                        if awayGame:
+                            playerResults[playerName]['awayLosses'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairAwayLosses'] += 1
+                        if cupGame:
+                            playerResults[playerName]['cupLosses'] += 1
+                            if pairsGame:
+                                playerResults[playerName]['pairCupLosses'] += 1
 
                     # Averages
                     playerResults[playerName]['totalAgg'] += aggregate
