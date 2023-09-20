@@ -842,6 +842,7 @@ function Players(props) {
                                     )}
                                 </Accordion.Body>
                             </Accordion.Item>
+                            {/* TODO improve the layout of this */}
                             {!showStatSummary && (
                                 <Accordion.Item eventKey="4">
                                     <Accordion.Header id="stats-points">
