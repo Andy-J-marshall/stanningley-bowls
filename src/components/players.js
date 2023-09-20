@@ -1312,6 +1312,7 @@ function Players(props) {
                                                     {singlesHomeGamesPlayed >
                                                         0 && (
                                                         <div>
+                                                            <h5>HOME</h5>
                                                             <p>
                                                                 Home aggregate
                                                                 scored ={' '}
@@ -1337,6 +1338,7 @@ function Players(props) {
                                                     {singlesAwayGamesPlayed >
                                                         0 && (
                                                         <div>
+                                                            <h5>AWAY</h5>
                                                             <p>
                                                                 Away aggregate
                                                                 scored ={' '}
@@ -1362,6 +1364,7 @@ function Players(props) {
                                                     {singlesCupGamesPlayed >
                                                         0 && (
                                                         <div>
+                                                            <h5>CUP</h5>
                                                             <p>
                                                                 Cup aggregate
                                                                 scored ={' '}
@@ -1402,6 +1405,7 @@ function Players(props) {
                                                     {pairHomeGamesPlayed >
                                                         0 && (
                                                         <div>
+                                                            <h5>HOME</h5>
                                                             <p>
                                                                 Home aggregate
                                                                 scored ={' '}
@@ -1427,6 +1431,7 @@ function Players(props) {
                                                     {pairAwayGamesPlayed >
                                                         0 && (
                                                         <div>
+                                                            <h5>AWAY</h5>
                                                             <p>
                                                                 Away aggregate
                                                                 scored ={' '}
@@ -1451,6 +1456,7 @@ function Players(props) {
                                                     )}
                                                     {pairCupGamesPlayed > 0 && (
                                                         <div>
+                                                            <h5>CUP</h5>
                                                             <p>
                                                                 Cup aggregate
                                                                 scored ={' '}
