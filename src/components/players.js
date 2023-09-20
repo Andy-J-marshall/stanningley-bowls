@@ -26,7 +26,6 @@ function Players(props) {
 
     if (stats) {
         const {
-            // TODO copy this order to the method as well?
             totalAgg,
             totalAggAgainst,
             totalPairsAgg,
@@ -159,9 +158,6 @@ function Players(props) {
             // TODO check all are used
         } = stats;
 
-        const gameOrGames = gamesPlayed === 1 ? 'game' : 'games';
-        const winOrWins = totalWins === 1 ? 'win' : 'wins';
-        const lossOrLosses = totalLosses === 1 ? 'loss' : 'losses';
         return (
             <div id="detailed-player-stats">
                 <ListGroup.Item>
@@ -236,9 +232,8 @@ function Players(props) {
                                 <Accordion.Body>
                                     <h3>TOTAL</h3>
                                     <p>
-                                        {gamesPlayed} total {gameOrGames} (
-                                        {singlesGames} singles, {pairsGames}{' '}
-                                        pairs)
+                                        {gamesPlayed} total ({singlesGames}{' '}
+                                        singles, {pairsGames} pairs)
                                     </p>
                                     <p>
                                         {homeGamesPlayed} home{' '}
@@ -278,14 +273,13 @@ function Players(props) {
                                     WINS & LOSSES
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    {/* TODO remove words wins and losses from this section? */}
                                     {totalWins > 0 && (
                                         <div>
                                             <h3>WINS</h3>
                                             <p>
-                                                {totalWins} total {winOrWins} (
-                                                {homeWins} home, {awayWins}{' '}
-                                                away, {cupWins} cup)
+                                                {totalWins} total ({homeWins}{' '}
+                                                home, {awayWins} away, {cupWins}{' '}
+                                                cup)
                                             </p>
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
@@ -293,7 +287,7 @@ function Players(props) {
                                                         <p>
                                                             {totalWins -
                                                                 pairWins}{' '}
-                                                            singles wins (
+                                                            singles (
                                                             {homeWins -
                                                                 pairHomeWins}{' '}
                                                             home,{' '}
@@ -305,11 +299,10 @@ function Players(props) {
                                                             cup)
                                                         </p>
                                                         <p>
-                                                            {pairWins} pairs
-                                                            wins ({pairHomeWins}{' '}
-                                                            home, {pairAwayWins}{' '}
-                                                            away, {pairCupWins}{' '}
-                                                            cup)
+                                                            {pairWins} pairs (
+                                                            {pairHomeWins} home,{' '}
+                                                            {pairAwayWins} away,{' '}
+                                                            {pairCupWins} cup)
                                                         </p>
                                                     </div>
                                                 )}
@@ -356,7 +349,7 @@ function Players(props) {
                                             )}
                                             <h3>WIN PERCENTAGES</h3>
                                             <p>
-                                                Total win percentage ={' '}
+                                                Total ={' '}
                                                 {(
                                                     (totalWins / gamesPlayed) *
                                                     100
@@ -365,7 +358,7 @@ function Players(props) {
                                             </p>
                                             {homeGamesPlayed > 0 && (
                                                 <p>
-                                                    Home win percentage ={' '}
+                                                    Home ={' '}
                                                     {(
                                                         (homeWins /
                                                             homeGamesPlayed) *
@@ -376,7 +369,7 @@ function Players(props) {
                                             )}
                                             {awayGamesPlayed > 0 && (
                                                 <p>
-                                                    Away win percentage ={' '}
+                                                    Away ={' '}
                                                     {(
                                                         (awayWins /
                                                             awayGamesPlayed) *
@@ -387,7 +380,7 @@ function Players(props) {
                                             )}
                                             {cupGamesPlayed > 0 && (
                                                 <p>
-                                                    Cup win percentage ={' '}
+                                                    Cup ={' '}
                                                     {(
                                                         (cupWins /
                                                             cupGamesPlayed) *
@@ -399,7 +392,7 @@ function Players(props) {
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
                                                     <p>
-                                                        Singles win percentage ={' '}
+                                                        Singles ={' '}
                                                         {(
                                                             ((totalWins -
                                                                 pairWins) /
@@ -412,8 +405,7 @@ function Players(props) {
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
                                                     <p>
-                                                        Singles home win
-                                                        percentage ={' '}
+                                                        Singles home ={' '}
                                                         {(
                                                             ((homeWins -
                                                                 pairHomeWins) /
@@ -427,8 +419,7 @@ function Players(props) {
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
                                                     <p>
-                                                        Singles away win
-                                                        percentage ={' '}
+                                                        Singles away ={' '}
                                                         {(
                                                             ((awayWins -
                                                                 pairAwayWins) /
@@ -442,8 +433,7 @@ function Players(props) {
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
                                                     <p>
-                                                        Singles cup win
-                                                        percentage ={' '}
+                                                        Singles cup ={' '}
                                                         {(
                                                             ((cupWins -
                                                                 pairCupWins) /
@@ -457,7 +447,7 @@ function Players(props) {
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
                                                     <p>
-                                                        Pairs win percentage ={' '}
+                                                        Pairs ={' '}
                                                         {(
                                                             (pairWins /
                                                                 pairsGames) *
@@ -468,7 +458,7 @@ function Players(props) {
                                                 )}
                                             {pairHomeGamesPlayed > 0 && (
                                                 <p>
-                                                    Pairs home win percentage ={' '}
+                                                    Pairs home ={' '}
                                                     {(
                                                         (pairHomeWins /
                                                             pairHomeGamesPlayed) *
@@ -479,7 +469,7 @@ function Players(props) {
                                             )}
                                             {pairAwayGamesPlayed > 0 && (
                                                 <p>
-                                                    Pairs away win percentage ={' '}
+                                                    Pairs away ={' '}
                                                     {(
                                                         (pairAwayWins /
                                                             pairAwayGamesPlayed) *
@@ -490,7 +480,7 @@ function Players(props) {
                                             )}
                                             {pairCupGamesPlayed > 0 && (
                                                 <p>
-                                                    Pairs cup win percentage ={' '}
+                                                    Pairs cup ={' '}
                                                     {(
                                                         (pairCupWins /
                                                             pairCupGamesPlayed) *
@@ -505,10 +495,9 @@ function Players(props) {
                                         <div>
                                             <h3>LOSSES</h3>
                                             <p>
-                                                {totalLosses} total{' '}
-                                                {lossOrLosses} ({homeLosses}{' '}
-                                                home, {awayLosses} away,{' '}
-                                                {cupLosses} cup)
+                                                {totalLosses} total (home,{' '}
+                                                {awayLosses} away, {cupLosses}{' '}
+                                                cup)
                                             </p>
                                             {pairsGames > 0 &&
                                                 singlesGames > 0 && (
@@ -516,7 +505,7 @@ function Players(props) {
                                                         <p>
                                                             {totalLosses -
                                                                 pairLosses}{' '}
-                                                            singles losses (
+                                                            singles (
                                                             {homeLosses -
                                                                 pairHomeLosses}{' '}
                                                             home,{' '}
@@ -528,8 +517,7 @@ function Players(props) {
                                                             cup)
                                                         </p>
                                                         <p>
-                                                            {pairLosses} pairs
-                                                            losses (
+                                                            {pairLosses} pairs (
                                                             {pairHomeLosses}{' '}
                                                             home,{' '}
                                                             {pairAwayLosses}{' '}
@@ -818,6 +806,7 @@ function Players(props) {
                                     )}
                                 </Accordion.Body>
                             </Accordion.Item>
+                            {/* TODO need to tidy up this section */}
                             {!showStatSummary && totalPoints > 0 && (
                                 <Accordion.Item eventKey="4">
                                     <Accordion.Header id="stats-points">
