@@ -237,8 +237,8 @@ export function returnPlayerStats(playersStats, player) {
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
     // Pairs points
-    const pairsAveragePoints = totalPairsPoints / pairsGames;
-    const pairsAveragePointsAgainst = totalPairsPointsAgainst / pairsGames;
+    const pairsAveragePoints = totalPairsPoints / pairsGames - pairCupGamesPlayed;
+    const pairsAveragePointsAgainst = totalPairsPointsAgainst / pairsGames - pairCupGamesPlayed;
 
     const pairsHomeAveragePoints = totalPairsHomePoints / pairHomeGamesPlayed;
     const pairsHomeAveragePointsAgainst =
@@ -260,9 +260,9 @@ export function returnPlayerStats(playersStats, player) {
 
     // Singles average points
     const singlesAveragePoints =
-        totalSinglesPoints / (gamesPlayed - pairsGames);
+        totalSinglesPoints / (gamesPlayed - pairsGames - cupGamesPlayed);
     const singlesAveragePointsAgainst =
-        totalSinglesPointsAgainst / (gamesPlayed - pairsGames);
+        totalSinglesPointsAgainst / (gamesPlayed - pairsGames - cupGamesPlayed);
 
     const singlesHomeAveragePoints =
         (totalHomePoints - totalPairsHomePoints) / singlesHomeGamesPlayed;
@@ -312,6 +312,8 @@ export function returnPlayerStats(playersStats, player) {
         pairsHomeAveragePointsAgainst,
         pairsAwayAveragePoints,
         pairsAwayAveragePointsAgainst,
+        totalPairsPoints,
+        totalPairsPointsAgainst,
         totalPairsHomePoints,
         totalPairsHomePointsAgainst,
         totalPairsAwayPoints,
@@ -322,6 +324,8 @@ export function returnPlayerStats(playersStats, player) {
         singlesHomeAveragePointsAgainst,
         singlesAwayAveragePoints,
         singlesAwayAveragePointsAgainst,
+        totalSinglesPoints,
+        totalSinglesPointsAgainst,
         totalSinglesHomePoints,
         totalSinglesHomePointsAgainst,
         totalSinglesAwayPoints,
