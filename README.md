@@ -147,6 +147,8 @@ Update the `teamDetails.py` script with the updated list of players, traitorPlay
 
 Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
+If entering a new league, update `bowls.py` and `bowlscombined.py` scripts with the new scoring system for the league (if not 54321). Will also need to change the calculation for average number of points scored in `players.js` component.
+
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
 
