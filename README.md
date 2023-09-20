@@ -164,5 +164,6 @@ Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and 
 
 # Ideas
 ### UI
+<!-- TODO remove these once implemented -->
 - Toggle for pairs/singles stats
 - Display detailed stat information in nicer way
