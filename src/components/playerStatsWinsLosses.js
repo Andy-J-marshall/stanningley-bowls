@@ -1,4 +1,5 @@
-import { Accordion } from 'react-bootstrap';
+import { useState } from 'react';
+import { ToggleButton, Accordion, Button, ButtonGroup } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 
 function PlayerStatsWinsLosses(props) {
@@ -30,8 +31,8 @@ function PlayerStatsWinsLosses(props) {
             pairAwayGamesPlayed,
             pairCupGamesPlayed,
             cupGamesPlayed,
-            pairsGames,
             singlesGames,
+            pairsGames,
             mondayWins,
             mondayLosses,
             mondayGames,
@@ -55,6 +56,93 @@ function PlayerStatsWinsLosses(props) {
             pairsPartnersCountLosses,
         } = stats;
 
+        const [allChecked, setAllChecked] = useState(true);
+        const [singlesChecked, setSinglesChecked] = useState(false);
+        const [pairsChecked, setPairsChecked] = useState(false);
+
+        const [displayTotalWins, setDisplayTotalWins] = useState(totalWins);
+        const [displayHomeWins, setDisplayHomeWins] = useState(homeWins);
+        const [displayAwayWins, setDisplayAwayWins] = useState(awayWins);
+        const [displayCupWins, setDisplayCupWins] = useState(cupWins);
+
+        const [displayTotalLosses, setDisplayTotalLosses] =
+            useState(totalLosses);
+        const [displayHomeLosses, setDisplayHomeLosses] = useState(homeLosses);
+        const [displayAwayLosses, setDisplayAwayLosses] = useState(awayLosses);
+        const [displayCupLosses, setDisplayCupLosses] = useState(cupLosses);
+
+        const [displayGamesPlayed, setDisplayGamesPlayed] =
+            useState(gamesPlayed);
+        const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] =
+            useState(homeGamesPlayed);
+        const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] =
+            useState(awayGamesPlayed);
+        const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
+            useState(cupGamesPlayed);
+
+        function displayAll() {
+            setSinglesChecked(false);
+            setPairsChecked(false);
+            setAllChecked(true);
+
+            setDisplayTotalWins(totalWins);
+            setDisplayHomeWins(homeWins);
+            setDisplayAwayWins(awayWins);
+            setDisplayCupWins(cupWins);
+
+            setDisplayTotalLosses(totalLosses);
+            setDisplayHomeLosses(homeLosses);
+            setDisplayAwayLosses(awayLosses);
+            setDisplayCupLosses(cupLosses);
+
+            setDisplayGamesPlayed(gamesPlayed);
+            setDisplayHomeGamesPlayed(homeGamesPlayed);
+            setDisplayAwayGamesPlayed(awayGamesPlayed);
+            setDisplayCupGamesPlayed(cupGamesPlayed);
+        }
+
+        function displayOnlySingles() {
+            setSinglesChecked(true);
+            setPairsChecked(false);
+            setAllChecked(false);
+
+            setDisplayTotalWins(totalWins - pairWins);
+            setDisplayHomeWins(homeWins - pairHomeWins);
+            setDisplayAwayWins(awayWins - pairAwayWins);
+            setDisplayCupWins(cupWins - pairCupWins);
+
+            setDisplayTotalLosses(totalLosses - pairLosses);
+            setDisplayHomeLosses(homeLosses - pairHomeLosses);
+            setDisplayAwayLosses(awayLosses - pairAwayLosses);
+            setDisplayCupLosses(cupLosses - pairCupLosses);
+
+            setDisplayGamesPlayed(gamesPlayed - pairsGames);
+            setDisplayHomeGamesPlayed(homeGamesPlayed - pairHomeGamesPlayed);
+            setDisplayAwayGamesPlayed(awayGamesPlayed - pairAwayGamesPlayed);
+            setDisplayCupGamesPlayed(cupGamesPlayed - pairCupGamesPlayed);
+        }
+
+        function displayOnlyPairs() {
+            setSinglesChecked(false);
+            setPairsChecked(true);
+            setAllChecked(false);
+
+            setDisplayTotalWins(pairWins);
+            setDisplayHomeWins(pairHomeWins);
+            setDisplayAwayWins(pairAwayWins);
+            setDisplayCupWins(pairCupWins);
+
+            setDisplayTotalLosses(pairLosses);
+            setDisplayHomeLosses(pairHomeLosses);
+            setDisplayAwayLosses(pairAwayLosses);
+            setDisplayCupLosses(pairCupLosses);
+
+            setDisplayGamesPlayed(pairsGames);
+            setDisplayHomeGamesPlayed(pairHomeGamesPlayed);
+            setDisplayAwayGamesPlayed(pairAwayGamesPlayed);
+            setDisplayCupGamesPlayed(pairCupGamesPlayed);
+        }
+
         return (
             <div id="player-stats-wins-losses">
                 <Accordion.Item eventKey="2">
@@ -62,261 +150,211 @@ function PlayerStatsWinsLosses(props) {
                         WINS & LOSSES
                     </Accordion.Header>
                     <Accordion.Body>
-                        {totalWins > 0 && (
+                        {/* TODO move this? to component? */}
+                        {pairsGames > 0 && singlesGames > 0 && (
+                            <ButtonGroup
+                                id="game-type-select"
+                                size="lg"
+                                className="mb-2"
+                            >
+                                <ToggleButton
+                                    id="all-button"
+                                    onClick={displayAll}
+                                    type="checkbox"
+                                    variant="light"
+                                    checked={allChecked}
+                                >
+                                    All
+                                </ToggleButton>
+                                <ToggleButton
+                                    id="singles-button"
+                                    onClick={displayOnlySingles}
+                                    type="checkbox"
+                                    variant="light"
+                                    checked={singlesChecked}
+                                >
+                                    Singles
+                                </ToggleButton>
+                                <ToggleButton
+                                    id="pairs-button"
+                                    onClick={displayOnlyPairs}
+                                    type="checkbox"
+                                    variant="light"
+                                    checked={pairsChecked}
+                                >
+                                    Pairs
+                                </ToggleButton>
+                            </ButtonGroup>
+                        )}
+
+                        {displayGamesPlayed > 0 && (
                             <div>
-                                <h3>WINS</h3>
+                                <h3>TOTAL</h3>
+                                <p>Wins: {displayTotalWins}</p>
+                                <p>Losses: {displayTotalLosses}</p>
                                 <p>
-                                    {totalWins} total ({homeWins} home,{' '}
-                                    {awayWins} away, {cupWins} cup)
-                                </p>
-                                {pairsGames > 0 && singlesGames > 0 && (
-                                    <div>
-                                        <p>
-                                            {totalWins - pairWins} singles (
-                                            {homeWins - pairHomeWins} home,{' '}
-                                            {awayWins - pairAwayWins} away,{' '}
-                                            {cupWins - pairCupWins} cup)
-                                        </p>
-                                        <p>
-                                            {pairWins} pairs ({pairHomeWins}{' '}
-                                            home, {pairAwayWins} away,{' '}
-                                            {pairCupWins} cup)
-                                        </p>
-                                    </div>
-                                )}
-                                {!showStatSummary && (
-                                    <div>
-                                        <h5>TEAMS</h5>
-                                        {mondayGames > 0 && (
-                                            <p>{mondayWins} on Monday</p>
-                                        )}
-                                        {tuesdayVetsGames > 0 && (
-                                            <p>
-                                                {tuesdayVetsWins} on Tuesday
-                                                (Vets)
-                                            </p>
-                                        )}
-                                        {tuesdayEveningGames > 0 && (
-                                            <p>
-                                                {tuesdayEveningWins} on Tuesday
-                                                (Evening)
-                                            </p>
-                                        )}
-                                        {wednesdayGames > 0 && (
-                                            <p>{wednesdayWins} on Wednesday</p>
-                                        )}
-                                        {thursdayGames > 0 && (
-                                            <p>
-                                                {thursdayWins} on Thursday
-                                                (Vets)
-                                            </p>
-                                        )}
-                                        {saturdayGames > 0 && (
-                                            <p>{saturdayWins} on Saturday</p>
-                                        )}
-                                    </div>
-                                )}
-                                <h3>WIN PERCENTAGES</h3>
-                                <p>
-                                    Total ={' '}
-                                    {((totalWins / gamesPlayed) * 100).toFixed(
-                                        0
-                                    )}
+                                    Win percentage:{' '}
+                                    {(
+                                        (displayTotalWins /
+                                            displayGamesPlayed) *
+                                        100
+                                    ).toFixed(0)}
                                     %
                                 </p>
-                                {homeGamesPlayed > 0 && (
-                                    <p>
-                                        Home ={' '}
-                                        {(
-                                            (homeWins / homeGamesPlayed) *
-                                            100
-                                        ).toFixed(0)}
-                                        %
-                                    </p>
-                                )}
-                                {awayGamesPlayed > 0 && (
-                                    <p>
-                                        Away ={' '}
-                                        {(
-                                            (awayWins / awayGamesPlayed) *
-                                            100
-                                        ).toFixed(0)}
-                                        %
-                                    </p>
-                                )}
-                                {cupGamesPlayed > 0 && (
-                                    <p>
-                                        Cup ={' '}
-                                        {(
-                                            (cupWins / cupGamesPlayed) *
-                                            100
-                                        ).toFixed(0)}
-                                        %
-                                    </p>
-                                )}
-                                {pairsGames > 0 && singlesGames > 0 && (
-                                    <div>
-                                        <div>
-                                            <h5>SINGLES</h5>
-                                            <p>
-                                                Total ={' '}
-                                                {(
-                                                    ((totalWins - pairWins) /
-                                                        singlesGames) *
-                                                    100
-                                                ).toFixed(0)}
-                                                %
-                                            </p>
-                                            {homeGamesPlayed -
-                                                pairHomeGamesPlayed >
-                                                0 && (
-                                                <p>
-                                                    Home ={' '}
-                                                    {(
-                                                        ((homeWins -
-                                                            pairHomeWins) /
-                                                            (homeGamesPlayed -
-                                                                pairHomeGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {awayGamesPlayed -
-                                                pairAwayGamesPlayed >
-                                                0 && (
-                                                <p>
-                                                    Away ={' '}
-                                                    {(
-                                                        ((awayWins -
-                                                            pairAwayWins) /
-                                                            (awayGamesPlayed -
-                                                                pairAwayGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {cupGamesPlayed -
-                                                pairCupGamesPlayed >
-                                                0 && (
-                                                <p>
-                                                    Cup ={' '}
-                                                    {(
-                                                        ((cupWins -
-                                                            pairCupWins) /
-                                                            (cupGamesPlayed -
-                                                                pairCupGamesPlayed)) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                        </div>
-                                        <div>
-                                            <h5>PAIRS</h5>
-                                            <p>
-                                                Total ={' '}
-                                                {(
-                                                    (pairWins / pairsGames) *
-                                                    100
-                                                ).toFixed(0)}
-                                                %
-                                            </p>
-                                            {pairHomeGamesPlayed > 0 && (
-                                                <p>
-                                                    Home ={' '}
-                                                    {(
-                                                        (pairHomeWins /
-                                                            pairHomeGamesPlayed) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {pairAwayGamesPlayed > 0 && (
-                                                <p>
-                                                    Away ={' '}
-                                                    {(
-                                                        (pairAwayWins /
-                                                            pairAwayGamesPlayed) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                            {pairCupGamesPlayed > 0 && (
-                                                <p>
-                                                    Cup ={' '}
-                                                    {(
-                                                        (pairCupWins /
-                                                            pairCupGamesPlayed) *
-                                                        100
-                                                    ).toFixed(0)}
-                                                    %
-                                                </p>
-                                            )}
-                                        </div>
-                                    </div>
-                                )}
                             </div>
                         )}
-                        {totalLosses > 0 && (
+                        {displayHomeGamesPlayed > 0 && (
                             <div>
-                                <h3>LOSSES</h3>
+                                <h3>HOME</h3>
+                                <p>Wins: {displayHomeWins}</p>
+                                <p>Losses: {displayHomeLosses}</p>
                                 <p>
-                                    {totalLosses} total ({homeLosses} home,{' '}
-                                    {awayLosses} away, {cupLosses} cup)
+                                    Win percentage:{' '}
+                                    {(
+                                        (displayHomeWins /
+                                            displayHomeGamesPlayed) *
+                                        100
+                                    ).toFixed(0)}
+                                    %
                                 </p>
-                                {pairsGames > 0 && singlesGames > 0 && (
-                                    <div>
-                                        <p>
-                                            {totalLosses - pairLosses} singles (
-                                            {homeLosses - pairHomeLosses} home,{' '}
-                                            {awayLosses - pairAwayLosses} away,{' '}
-                                            {cupLosses - pairCupLosses} cup)
-                                        </p>
-                                        <p>
-                                            {pairLosses} pairs ({pairHomeLosses}{' '}
-                                            home, {pairAwayLosses} away,{' '}
-                                            {pairCupLosses} cup)
-                                        </p>
-                                    </div>
-                                )}
-                                {!showStatSummary && (
-                                    <div>
-                                        <h5>TEAMS</h5>
-                                        {mondayGames > 0 && (
-                                            <p>{mondayLosses} on Monday</p>
-                                        )}
-                                        {tuesdayVetsGames > 0 && (
+                            </div>
+                        )}
+                        {displayAwayGamesPlayed > 0 && (
+                            <div>
+                                <h3>AWAY</h3>
+                                <p>Wins: {displayAwayWins}</p>
+                                <p>Losses: {displayAwayLosses}</p>
+                                <p>
+                                    Win percentage:{' '}
+                                    {(
+                                        (displayAwayWins /
+                                            displayAwayGamesPlayed) *
+                                        100
+                                    ).toFixed(0)}
+                                    %
+                                </p>
+                            </div>
+                        )}
+
+                        {displayCupGamesPlayed > 0 && (
+                            <div>
+                                <h3>CUP</h3>
+                                <p>Wins: {displayCupWins}</p>
+                                <p>Losses: {displayCupLosses}</p>
+                                <p>
+                                    Win percentage:{' '}
+                                    {(
+                                        (displayCupWins /
+                                            displayCupGamesPlayed) *
+                                        100
+                                    ).toFixed(0)}
+                                    %
+                                </p>
+                            </div>
+                        )}
+                        {/* TODO make it obvious visually that it's all game types */}
+                        {!showStatSummary && (
+                            <div>
+                                <h3>TEAMS</h3>
+                                <div>
+                                    {mondayGames > 0 && (
+                                        <div>
+                                            <h5>MONDAY</h5>
+                                            <p>Wins: {mondayWins}</p>
+                                            <p>Losses: {mondayLosses}</p>
                                             <p>
-                                                {tuesdayVetsLosses} on Tuesday
-                                                (Vets)
+                                                Win percentage:{' '}
+                                                {(
+                                                    (mondayWins / mondayGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
                                             </p>
-                                        )}
-                                        {tuesdayEveningGames > 0 && (
+                                        </div>
+                                    )}
+                                    {tuesdayVetsGames > 0 && (
+                                        <div>
+                                            <h5>TUESDAY VETS</h5>
+                                            <p>Wins: {tuesdayVetsWins}</p>
+                                            <p>Losses: {tuesdayVetsLosses}</p>
                                             <p>
-                                                {tuesdayEveningLosses} on
-                                                Tuesday (Evening)
+                                                Win percentage:{' '}
+                                                {(
+                                                    (tuesdayVetsWins /
+                                                        tuesdayVetsGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
                                             </p>
-                                        )}
-                                        {wednesdayGames > 0 && (
+                                        </div>
+                                    )}
+                                    {tuesdayEveningGames > 0 && (
+                                        <div>
+                                            <h5>TUESDAY EVENING</h5>
+                                            <p>Wins: {tuesdayEveningWins}</p>
                                             <p>
-                                                {wednesdayLosses} on Wednesday
+                                                Losses: {tuesdayEveningLosses}
                                             </p>
-                                        )}
-                                        {thursdayGames > 0 && (
                                             <p>
-                                                {thursdayLosses} on Thursday
-                                                (Vets)
+                                                Win percentage:{' '}
+                                                {(
+                                                    (tuesdayEveningWins /
+                                                        tuesdayEveningGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
                                             </p>
-                                        )}
-                                        {saturdayGames > 0 && (
-                                            <p>{saturdayLosses} on Saturday</p>
-                                        )}
-                                    </div>
-                                )}
+                                        </div>
+                                    )}
+                                    {wednesdayGames > 0 && (
+                                        <div>
+                                            <h5>WEDNESDAY</h5>
+                                            <p>Wins: {wednesdayWins}</p>
+                                            <p>Losses: {wednesdayLosses}</p>
+                                            <p>
+                                                Win percentage:{' '}
+                                                {(
+                                                    (wednesdayWins /
+                                                        wednesdayGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        </div>
+                                    )}
+                                    {thursdayGames > 0 && (
+                                        <div>
+                                            <h5>THURSDAY VETS</h5>
+                                            <p>Wins: {thursdayWins}</p>
+                                            <p>Losses: {thursdayLosses}</p>
+                                            <p>
+                                                Win percentage:{' '}
+                                                {(
+                                                    (thursdayWins /
+                                                        thursdayGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        </div>
+                                    )}
+                                    {saturdayGames > 0 && (
+                                        <div>
+                                            <h5>SATURDAY</h5>
+                                            <p>Wins: {saturdayWins}</p>
+                                            <p>Losses: {saturdayLosses}</p>
+                                            <p>
+                                                Win percentage:{' '}
+                                                {(
+                                                    (saturdayWins /
+                                                        saturdayGames) *
+                                                    100
+                                                ).toFixed(0)}
+                                                %
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         )}
                         {pairsGames > 0 && (
