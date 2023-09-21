@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Form, Row, Col, Accordion } from 'react-bootstrap';
 
-function PlayerStatOptions(props) {
+function PlayerStatsOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
@@ -91,4 +91,4 @@ function PlayerStatOptions(props) {
     );
 }
 
-export default PlayerStatOptions;
+export default PlayerStatsOptions;

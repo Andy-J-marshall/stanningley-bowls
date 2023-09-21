@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap-typeahead';
 import Players from './players';
 import PlayerStatSummary from './playerStatSummary';
-import PlayerStatOptions from './playerStatOptions';
+import PlayerStatsOptions from './playerStatsOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
 import { returnPlayerStats } from '../helpers/playersHelper';
 import config from '../config';
@@ -305,7 +305,7 @@ function PlayerStats(props) {
                     </h2>
                 )}
 
-            <PlayerStatOptions
+            <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
                 onlySinglesCallback={onlySinglesCallback}
