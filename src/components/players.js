@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ListGroup, Accordion } from 'react-bootstrap';
-import PlayerStatsOverview from './playerStatsOverview';
-import { capitalizeText } from '../helpers/utils';
-import { returnPlayerStats } from '../helpers/playersHelper';
 import config from '../config';
+import { returnPlayerStats } from '../helpers/playersHelper';
+import { capitalizeText } from '../helpers/utils';
+import PlayerStatsOverview from './playerStatsOverview';
 import PlayerStatsGamePlayed from './playerStatsGamePlayed';
 import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsAverages from './playerStatsAverages';
