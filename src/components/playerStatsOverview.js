@@ -1,0 +1,55 @@
+import { Accordion } from 'react-bootstrap';
+import { capitalizeText, arrayToList } from '../helpers/utils';
+
+function PlayerStatsOverview(props) {
+    const stats = props.stats;
+
+    const {
+        totalLosses,
+        totalWins,
+        gamesPlayed,
+        average,
+        allTeamsPlayedFor,
+        biggestWin,
+    } = stats;
+
+    return (
+        <div id="player-stats-overview">
+            <Accordion.Item eventKey="0">
+                <Accordion.Header id="stats-overview">OVERVIEW</Accordion.Header>
+                <Accordion.Body>
+                    <div>
+                        <h3>STATS</h3>
+                        <p id="totalGamesPlayed">
+                            Games played = {gamesPlayed}
+                        </p>
+                        <p id="totalWins">Wins = {totalWins}</p>
+                        <p id="totalLosses">Losses = {totalLosses}</p>
+                        {average > -22 && average < 22 && (
+                            <p id="totalAverage">
+                                Average = {average.toFixed(2)}
+                            </p>
+                        )}
+                        <p>
+                            {((totalWins / gamesPlayed) * 100).toFixed(0)}% win
+                            percentage
+                        </p>
+                        {biggestWin && totalWins > 0 && (
+                            <p id="biggestWin">
+                                Biggest win = {capitalizeText([biggestWin])}
+                            </p>
+                        )}
+                        {allTeamsPlayedFor.length > 0 && (
+                            <div id="teamsPlayedFor">
+                                <h3 style={{ paddingTop: '1rem' }}>TEAMS</h3>
+                                <p>{arrayToList(allTeamsPlayedFor)}</p>
+                            </div>
+                        )}
+                    </div>
+                </Accordion.Body>
+            </Accordion.Item>
+        </div>
+    );
+}
+
+export default PlayerStatsOverview;
