@@ -30,7 +30,6 @@ function PlayerStatsTeams(props) {
         saturdayLosses,
     } = stats;
 
-    // TODO changes tests
     return (
         <div id="player-stats-teams">
             <Accordion.Item eventKey="4">
