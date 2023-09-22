@@ -92,6 +92,7 @@ function PlayerStatsAverages(props) {
                                     <p>Cup: {displayCupAverage.toFixed(2)}</p>
                                 )}
 
+                            {/* TODO what to do with this?  */}
                             {!showStatSummary && (
                                 <div>
                                     <h3>TEAMS</h3>
