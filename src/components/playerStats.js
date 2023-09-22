@@ -260,7 +260,11 @@ function PlayerStats(props) {
                 {searchedPlayerName && (
                     <Button
                         id="back-button"
-                        style={{ margin: '1rem' }}
+                        style={{
+                            margin: '1rem',
+                            backgroundColor: '#e7f1ff',
+                            color: 'black',
+                        }}
                         variant="secondary"
                         onClick={closeButtonCallback}
                     >

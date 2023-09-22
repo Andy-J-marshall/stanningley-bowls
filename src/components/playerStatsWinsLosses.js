@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { ToggleButton, Accordion, Button, ButtonGroup } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
+import GameTypeButton from './gameTypeButtons';
 
 function PlayerStatsWinsLosses(props) {
     const stats = props.stats;
@@ -56,10 +57,6 @@ function PlayerStatsWinsLosses(props) {
             pairsPartnersCountLosses,
         } = stats;
 
-        const [allChecked, setAllChecked] = useState(true);
-        const [singlesChecked, setSinglesChecked] = useState(false);
-        const [pairsChecked, setPairsChecked] = useState(false);
-
         const [displayTotalWins, setDisplayTotalWins] = useState(totalWins);
         const [displayHomeWins, setDisplayHomeWins] = useState(homeWins);
         const [displayAwayWins, setDisplayAwayWins] = useState(awayWins);
@@ -81,10 +78,6 @@ function PlayerStatsWinsLosses(props) {
             useState(cupGamesPlayed);
 
         function displayAll() {
-            setSinglesChecked(false);
-            setPairsChecked(false);
-            setAllChecked(true);
-
             setDisplayTotalWins(totalWins);
             setDisplayHomeWins(homeWins);
             setDisplayAwayWins(awayWins);
@@ -101,11 +94,7 @@ function PlayerStatsWinsLosses(props) {
             setDisplayCupGamesPlayed(cupGamesPlayed);
         }
 
-        function displayOnlySingles() {
-            setSinglesChecked(true);
-            setPairsChecked(false);
-            setAllChecked(false);
-
+        function displaySingles() {
             setDisplayTotalWins(totalWins - pairWins);
             setDisplayHomeWins(homeWins - pairHomeWins);
             setDisplayAwayWins(awayWins - pairAwayWins);
@@ -122,11 +111,7 @@ function PlayerStatsWinsLosses(props) {
             setDisplayCupGamesPlayed(cupGamesPlayed - pairCupGamesPlayed);
         }
 
-        function displayOnlyPairs() {
-            setSinglesChecked(false);
-            setPairsChecked(true);
-            setAllChecked(false);
-
+        function displayPairs() {
             setDisplayTotalWins(pairWins);
             setDisplayHomeWins(pairHomeWins);
             setDisplayAwayWins(pairAwayWins);
@@ -143,6 +128,7 @@ function PlayerStatsWinsLosses(props) {
             setDisplayCupGamesPlayed(pairCupGamesPlayed);
         }
 
+        // TODO move games played stats into here as well and remove that component?
         return (
             <div id="player-stats-wins-losses">
                 <Accordion.Item eventKey="2">
@@ -150,41 +136,12 @@ function PlayerStatsWinsLosses(props) {
                         WINS & LOSSES
                     </Accordion.Header>
                     <Accordion.Body>
-                        {/* TODO move this? to component? */}
                         {pairsGames > 0 && singlesGames > 0 && (
-                            <ButtonGroup
-                                id="game-type-select"
-                                size="lg"
-                                className="mb-2"
-                            >
-                                <ToggleButton
-                                    id="all-button"
-                                    onClick={displayAll}
-                                    type="checkbox"
-                                    variant="light"
-                                    checked={allChecked}
-                                >
-                                    All
-                                </ToggleButton>
-                                <ToggleButton
-                                    id="singles-button"
-                                    onClick={displayOnlySingles}
-                                    type="checkbox"
-                                    variant="light"
-                                    checked={singlesChecked}
-                                >
-                                    Singles
-                                </ToggleButton>
-                                <ToggleButton
-                                    id="pairs-button"
-                                    onClick={displayOnlyPairs}
-                                    type="checkbox"
-                                    variant="light"
-                                    checked={pairsChecked}
-                                >
-                                    Pairs
-                                </ToggleButton>
-                            </ButtonGroup>
+                            <GameTypeButton
+                                displayAllCallback={displayAll}
+                                displaySinglesCallback={displaySingles}
+                                displayPairsCallback={displayPairs}
+                            />
                         )}
 
                         {displayGamesPlayed > 0 && (
