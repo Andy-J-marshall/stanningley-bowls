@@ -5,7 +5,6 @@ import GameTypeButton from './gameTypeButtons';
 
 function PlayerStatsWinsLosses(props) {
     const stats = props.stats;
-    const showStatSummary = props.showStatSummary;
 
     const {
         awayLosses,
@@ -33,24 +32,6 @@ function PlayerStatsWinsLosses(props) {
         cupGamesPlayed,
         singlesGames,
         pairsGames,
-        mondayWins,
-        mondayLosses,
-        mondayGames,
-        tuesdayVetsWins,
-        tuesdayVetsLosses,
-        tuesdayVetsGames,
-        tuesdayEveningWins,
-        tuesdayEveningLosses,
-        tuesdayEveningGames,
-        wednesdayWins,
-        wednesdayLosses,
-        wednesdayGames,
-        thursdayWins,
-        thursdayLosses,
-        thursdayGames,
-        saturdayWins,
-        saturdayLosses,
-        saturdayGames,
         pairsPartnersCount,
         pairsPartnersCountWins,
         pairsPartnersCountLosses,
@@ -91,6 +72,8 @@ function PlayerStatsWinsLosses(props) {
     const [displayAwayAverage, setDisplayAwayAverage] = useState(awayAverage);
     const [displayCupAverage, setDisplayCupAverage] = useState(cupAverage);
 
+    const [displayPairsPartners, setDisplayPairsPartners] = useState(false);
+
     function displayAll() {
         setDisplayTotalWins(totalWins);
         setDisplayHomeWins(homeWins);
@@ -111,6 +94,8 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeAverage(homeAverage);
         setDisplayAwayAverage(awayAverage);
         setDisplayCupAverage(cupAverage);
+
+        setDisplayPairsPartners(false);
     }
 
     function displaySingles() {
@@ -133,6 +118,8 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeAverage(singlesHomeAverage);
         setDisplayAwayAverage(singlesAwayAverage);
         setDisplayCupAverage(singlesCupAverage);
+
+        setDisplayPairsPartners(false);
     }
 
     function displayPairs() {
@@ -155,8 +142,11 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeAverage(pairsHomeAverage);
         setDisplayAwayAverage(pairsAwayAverage);
         setDisplayCupAverage(pairsCupAverage);
+
+        setDisplayPairsPartners(true);
     }
 
+    // TODO rename and change event keys
     return (
         <div id="player-stats-wins-losses">
             <Accordion.Item eventKey="1">
@@ -172,7 +162,7 @@ function PlayerStatsWinsLosses(props) {
 
                     {displayGamesPlayed > 0 && (
                         <div>
-                            <h3>TOTAL</h3>
+                            <h3>COMBINED</h3>
                             <p>Games: {displayGamesPlayed}</p>
                             <p>Wins: {displayTotalWins}</p>
                             <p>Losses: {displayTotalLosses}</p>
@@ -239,114 +229,7 @@ function PlayerStatsWinsLosses(props) {
                             </p>
                         </div>
                     )}
-                    {/* TODO what to do with this? Combine and move to own section? */}
-                    {!showStatSummary && (
-                        <div>
-                            <h3>TEAMS</h3>
-                            <div>
-                                {mondayGames > 0 && (
-                                    <div>
-                                        <h5>MONDAY</h5>
-                                        <p>Games: {mondayGames}</p>
-                                        <p>Wins: {mondayWins}</p>
-                                        <p>Losses: {mondayLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (mondayWins / mondayGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                                {tuesdayVetsGames > 0 && (
-                                    <div>
-                                        <h5>TUESDAY VETS</h5>
-                                        <p>Games: {tuesdayVetsGames}</p>
-                                        <p>Wins: {tuesdayVetsWins}</p>
-                                        <p>Losses: {tuesdayVetsLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (tuesdayVetsWins /
-                                                    tuesdayVetsGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                                {tuesdayEveningGames > 0 && (
-                                    <div>
-                                        <h5>TUESDAY EVENING</h5>
-                                        <p>Games: {tuesdayEveningGames}</p>
-                                        <p>Wins: {tuesdayEveningWins}</p>
-                                        <p>Losses: {tuesdayEveningLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (tuesdayEveningWins /
-                                                    tuesdayEveningGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                                {wednesdayGames > 0 && (
-                                    <div>
-                                        <h5>WEDNESDAY</h5>
-                                        <p>Games: {wednesdayGames}</p>
-                                        <p>Wins: {wednesdayWins}</p>
-                                        <p>Losses: {wednesdayLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (wednesdayWins /
-                                                    wednesdayGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                                {thursdayGames > 0 && (
-                                    <div>
-                                        <h5>THURSDAY VETS</h5>
-                                        <p>Games: {thursdayGames}</p>
-                                        <p>Wins: {thursdayWins}</p>
-                                        <p>Losses: {thursdayLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (thursdayWins / thursdayGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                                {saturdayGames > 0 && (
-                                    <div>
-                                        <h5>SATURDAY</h5>
-                                        <p>Games: {saturdayGames}</p>
-                                        <p>Wins: {saturdayWins}</p>
-                                        <p>Losses: {saturdayLosses}</p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {(
-                                                (saturdayWins / saturdayGames) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </p>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-                    )}
-                    {pairsGames > 0 && (
+                    {displayPairsPartners && pairsGames > 0 && (
                         <div>
                             {Object.keys(pairsPartnersCount).length > 0 && (
                                 <div>

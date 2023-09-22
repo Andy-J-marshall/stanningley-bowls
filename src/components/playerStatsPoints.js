@@ -146,7 +146,7 @@ function PlayerStatsPoints(props) {
 
     return (
         <div id="player-stats-points">
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="2">
                 <Accordion.Header id="stats-points">POINTS</Accordion.Header>
                 <Accordion.Body>
                     <div>
@@ -157,7 +157,7 @@ function PlayerStatsPoints(props) {
                                 displayPairsCallback={displayPairs}
                             />
                         )}
-                        <h3>TOTAL</h3>
+                        <h3>COMBINED</h3>
                         <p>
                             Points scored: {displayTotalPoints} /{' '}
                             {(displayGamesPlayed - displayCupGamesPlayed) * 5}

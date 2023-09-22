@@ -120,7 +120,7 @@ function PlayerStatsAggregates(props) {
 
     return (
         <div id="player-stats-aggregates">
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="3">
                 <Accordion.Header id="stats-aggregate">
                     AGGREGATES
                 </Accordion.Header>
@@ -132,7 +132,7 @@ function PlayerStatsAggregates(props) {
                             displayPairsCallback={displayPairs}
                         />
                     )}
-                    <h3>TOTAL</h3>
+                    <h3>COMBINED</h3>
                     <p>
                         Aggregate scored: {displayTotalAgg} / {displayGamesPlayed * 21}
                     </p>
