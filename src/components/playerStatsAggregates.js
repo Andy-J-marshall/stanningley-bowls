@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
+import GameTypeButton from './gameTypeButtons';
 
 function PlayerStatsAggregates(props) {
     const stats = props.stats;
@@ -42,6 +44,80 @@ function PlayerStatsAggregates(props) {
         singlesGames,
     } = stats;
 
+    const [displayTotalAgg, setDisplayTotalAgg] = useState(totalAgg);
+    const [displayTotalAggAgainst, setDisplayTotalAggAgainst] = useState(totalAggAgainst);
+
+    const [displayTotalHomeAgg, setDisplayTotalHomeAgg] = useState(totalHomeAgg);
+    const [displayTotalHomeAggAgainst, setDisplayTotalHomeAggAgainst] = useState(totalHomeAggAgainst);
+    
+    const [displayTotalAwayAgg, setDisplayTotalAwayAgg] = useState(totalAwayAgg);
+    const [displayTotalAwayAggAgainst, setDisplayTotalAwayAggAgainst] = useState(totalAwayAggAgainst);
+
+    const [displayCupAgg, setDisplayCupAgg] = useState(cupAgg);
+    const [displayCupAggAgainst, setDisplayCupAggAgainst] = useState(cupAggAgainst);
+
+    const [displayGamesPlayed, setDisplayGamesPlayed] = useState(gamesPlayed);
+    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
+    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
+    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
+
+    function displayAll() {
+        setDisplayTotalAgg(totalAgg);
+        setDisplayTotalAggAgainst(totalAggAgainst);
+    
+        setDisplayTotalHomeAgg(totalHomeAgg);
+        setDisplayTotalHomeAggAgainst(totalHomeAggAgainst);
+        
+        setDisplayTotalAwayAgg(totalAwayAgg);
+        setDisplayTotalAwayAggAgainst(totalAwayAgg);
+    
+        setDisplayCupAgg(cupAgg);
+        setDisplayCupAggAgainst(cupAggAgainst);
+    
+        setDisplayGamesPlayed(gamesPlayed);
+        setDisplayHomeGamesPlayed(homeGamesPlayed);
+        setDisplayAwayGamesPlayed(awayGamesPlayed);
+        setDisplayCupGamesPlayed(cupGamesPlayed);
+    }
+
+    function displaySingles() {
+        setDisplayTotalAgg(singlesAgg);
+        setDisplayTotalAggAgainst(singlesAggAgainst);
+    
+        setDisplayTotalHomeAgg(totalSinglesHomeAgg);
+        setDisplayTotalHomeAggAgainst(totalSinglesHomeAggAgainst);
+        
+        setDisplayTotalAwayAgg(totalSinglesAwayAgg);
+        setDisplayTotalAwayAggAgainst(totalSinglesAwayAggAgainst);
+    
+        setDisplayCupAgg(totalSinglesCupAgg);
+        setDisplayCupAggAgainst(totalSinglesCupAggAgainst);
+    
+        setDisplayGamesPlayed(singlesGames);
+        setDisplayHomeGamesPlayed(singlesHomeGamesPlayed);
+        setDisplayAwayGamesPlayed(singlesAwayGamesPlayed);
+        setDisplayCupGamesPlayed(singlesCupGamesPlayed);
+    }
+
+    function displayPairs() {
+        setDisplayTotalAgg(totalPairsAgg);
+        setDisplayTotalAggAgainst(totalPairsAggAgainst);
+    
+        setDisplayTotalHomeAgg(totalPairsHomeAgg);
+        setDisplayTotalHomeAggAgainst(totalPairsHomeAggAgainst);
+        
+        setDisplayTotalAwayAgg(totalPairsAwayAgg);
+        setDisplayTotalAwayAggAgainst(totalPairsAwayAggAgainst);
+    
+        setDisplayCupAgg(totalPairsCupAgg);
+        setDisplayCupAggAgainst(totalPairsCupAggAgainst);
+    
+        setDisplayGamesPlayed(pairsGames);
+        setDisplayHomeGamesPlayed(pairHomeGamesPlayed);
+        setDisplayAwayGamesPlayed(pairAwayGamesPlayed);
+        setDisplayCupGamesPlayed(pairCupGamesPlayed);
+    }
+
     return (
         <div id="player-stats-aggregates">
             <Accordion.Item eventKey="5">
@@ -49,172 +125,58 @@ function PlayerStatsAggregates(props) {
                     AGGREGATES
                 </Accordion.Header>
                 <Accordion.Body>
+                    {pairsGames > 0 && singlesGames > 0 && (
+                        <GameTypeButton
+                            displayAllCallback={displayAll}
+                            displaySinglesCallback={displaySingles}
+                            displayPairsCallback={displayPairs}
+                        />
+                    )}
                     <h3>TOTAL</h3>
                     <p>
-                        Aggregate scored = {totalAgg} / {gamesPlayed * 21}
+                        Aggregate scored: {displayTotalAgg} / {displayGamesPlayed * 21}
                     </p>
                     <p>
-                        Aggregate conceded = {totalAggAgainst} /{' '}
-                        {gamesPlayed * 21}
+                        Aggregate conceded: {displayTotalAggAgainst} /{' '}
+                        {displayGamesPlayed * 21}
                     </p>
-                    {homeGamesPlayed > 0 && (
+                    {displayHomeGamesPlayed > 0 && (
                         <div>
                             <h3>HOME</h3>
                             <p>
-                                Aggregate scored = {totalHomeAgg} /{' '}
-                                {homeGamesPlayed * 21}
+                                Aggregate scored: {displayTotalHomeAgg} /{' '}
+                                {displayHomeGamesPlayed * 21}
                             </p>
                             <p>
-                                Aggregate conceded = {totalHomeAggAgainst} /{' '}
-                                {homeGamesPlayed * 21}
+                                Aggregate conceded: {displayTotalHomeAggAgainst} /{' '}
+                                {displayHomeGamesPlayed * 21}
                             </p>
                         </div>
                     )}
-                    {awayGamesPlayed > 0 && (
+                    {displayAwayGamesPlayed > 0 && (
                         <div>
                             <h3>AWAY</h3>
                             <p>
-                                Aggregate scored = {totalAwayAgg} /{' '}
-                                {awayGamesPlayed * 21}
+                                Aggregate scored: {displayTotalAwayAgg} /{' '}
+                                {displayAwayGamesPlayed * 21}
                             </p>
                             <p>
-                                Aggregate conceded = {totalAwayAggAgainst} /{' '}
-                                {awayGamesPlayed * 21}
+                                Aggregate conceded: {displayTotalAwayAggAgainst} /{' '}
+                                {displayAwayGamesPlayed * 21}
                             </p>
                         </div>
                     )}
-                    {cupGamesPlayed > 0 && (
+                    {displayCupGamesPlayed > 0 && (
                         <div>
                             <h3>CUP</h3>
                             <p>
-                                Aggregate scored = {cupAgg} /{' '}
-                                {cupGamesPlayed * 21}
+                                Aggregate scored: {displayCupAgg} /{' '}
+                                {displayCupGamesPlayed * 21}
                             </p>
                             <p>
-                                Aggregate conceded = {cupAggAgainst} /{' '}
-                                {cupGamesPlayed * 21}
+                                Aggregate conceded: {displayCupAggAgainst} /{' '}
+                                {displayCupGamesPlayed * 21}
                             </p>
-                        </div>
-                    )}
-                    {pairsGames > 0 && singlesGames > 0 && (
-                        <div>
-                            {singlesGames > 0 && (
-                                <div>
-                                    <h3>SINGLES</h3>
-                                    <p>
-                                        Aggregate scored = {singlesAgg} /{' '}
-                                        {singlesGames * 21}
-                                    </p>
-                                    <p>
-                                        Aggregate conceded = {singlesAggAgainst}{' '}
-                                        / {singlesGames * 21}
-                                    </p>
-                                    {singlesHomeGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>HOME</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalSinglesHomeAgg} /{' '}
-                                                {singlesHomeGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalSinglesHomeAggAgainst} /{' '}
-                                                {singlesHomeGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                    {singlesAwayGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>AWAY</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalSinglesAwayAgg} /{' '}
-                                                {singlesAwayGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalSinglesAwayAggAgainst} /{' '}
-                                                {singlesAwayGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                    {singlesCupGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>CUP</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalSinglesCupAgg} /{' '}
-                                                {singlesCupGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalSinglesCupAggAgainst} /{' '}
-                                                {singlesCupGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                </div>
-                            )}
-                            {pairsGames > 0 && (
-                                <div>
-                                    <h3>PAIRS</h3>
-                                    <p>
-                                        Aggregate scored = {totalPairsAgg} /{' '}
-                                        {pairsGames * 21}
-                                    </p>
-                                    <p>
-                                        Aggregate conceded ={' '}
-                                        {totalPairsAggAgainst} /{' '}
-                                        {pairsGames * 21}
-                                    </p>
-                                    {pairHomeGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>HOME</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalPairsHomeAgg} /{' '}
-                                                {pairHomeGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalPairsHomeAggAgainst} /{' '}
-                                                {pairHomeGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                    {pairAwayGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>AWAY</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalPairsAwayAgg} /{' '}
-                                                {pairAwayGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalPairsAwayAggAgainst} /{' '}
-                                                {pairAwayGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                    {pairCupGamesPlayed > 0 && (
-                                        <div>
-                                            <h5>CUP</h5>
-                                            <p>
-                                                Aggregate scored ={' '}
-                                                {totalPairsCupAgg} /{' '}
-                                                {pairCupGamesPlayed * 21}
-                                            </p>
-                                            <p>
-                                                Aggregate conceded ={' '}
-                                                {totalPairsCupAggAgainst} /{' '}
-                                                {pairCupGamesPlayed * 21}
-                                            </p>
-                                        </div>
-                                    )}
-                                </div>
-                            )}
                         </div>
                     )}
                 </Accordion.Body>
