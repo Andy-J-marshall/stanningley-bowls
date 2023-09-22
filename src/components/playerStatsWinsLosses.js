@@ -146,7 +146,6 @@ function PlayerStatsWinsLosses(props) {
         setDisplayPairsPartners(true);
     }
 
-    // TODO rename and change event keys
     return (
         <div id="player-stats-wins-losses">
             <Accordion.Item eventKey="1">
