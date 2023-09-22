@@ -54,6 +54,18 @@ function PlayerStatsWinsLosses(props) {
         pairsPartnersCount,
         pairsPartnersCountWins,
         pairsPartnersCountLosses,
+        average,
+        homeAverage,
+        awayAverage,
+        cupAverage,
+        singlesAvg,
+        pairsAvg,
+        singlesHomeAverage,
+        singlesAwayAverage,
+        singlesCupAverage,
+        pairsHomeAverage,
+        pairsAwayAverage,
+        pairsCupAverage,
     } = stats;
 
     const [displayTotalWins, setDisplayTotalWins] = useState(totalWins);
@@ -74,6 +86,11 @@ function PlayerStatsWinsLosses(props) {
     const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
         useState(cupGamesPlayed);
 
+    const [displayAverage, setDisplayAverage] = useState(average);
+    const [displayHomeAverage, setDisplayHomeAverage] = useState(homeAverage);
+    const [displayAwayAverage, setDisplayAwayAverage] = useState(awayAverage);
+    const [displayCupAverage, setDisplayCupAverage] = useState(cupAverage);
+
     function displayAll() {
         setDisplayTotalWins(totalWins);
         setDisplayHomeWins(homeWins);
@@ -89,6 +106,11 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeGamesPlayed(homeGamesPlayed);
         setDisplayAwayGamesPlayed(awayGamesPlayed);
         setDisplayCupGamesPlayed(cupGamesPlayed);
+
+        setDisplayAverage(average);
+        setDisplayHomeAverage(homeAverage);
+        setDisplayAwayAverage(awayAverage);
+        setDisplayCupAverage(cupAverage);
     }
 
     function displaySingles() {
@@ -106,6 +128,11 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeGamesPlayed(homeGamesPlayed - pairHomeGamesPlayed);
         setDisplayAwayGamesPlayed(awayGamesPlayed - pairAwayGamesPlayed);
         setDisplayCupGamesPlayed(cupGamesPlayed - pairCupGamesPlayed);
+
+        setDisplayAverage(singlesAvg);
+        setDisplayHomeAverage(singlesHomeAverage);
+        setDisplayAwayAverage(singlesAwayAverage);
+        setDisplayCupAverage(singlesCupAverage);
     }
 
     function displayPairs() {
@@ -123,6 +150,11 @@ function PlayerStatsWinsLosses(props) {
         setDisplayHomeGamesPlayed(pairHomeGamesPlayed);
         setDisplayAwayGamesPlayed(pairAwayGamesPlayed);
         setDisplayCupGamesPlayed(pairCupGamesPlayed);
+
+        setDisplayAverage(pairsAvg);
+        setDisplayHomeAverage(pairsHomeAverage);
+        setDisplayAwayAverage(pairsAwayAverage);
+        setDisplayCupAverage(pairsCupAverage);
     }
 
     return (
@@ -144,6 +176,7 @@ function PlayerStatsWinsLosses(props) {
                             <p>Games: {displayGamesPlayed}</p>
                             <p>Wins: {displayTotalWins}</p>
                             <p>Losses: {displayTotalLosses}</p>
+                            <p>Average: {displayAverage.toFixed(2)}</p>
                             <p>
                                 Win percentage:{' '}
                                 {(
@@ -160,6 +193,7 @@ function PlayerStatsWinsLosses(props) {
                             <p>Games: {displayHomeGamesPlayed}</p>
                             <p>Wins: {displayHomeWins}</p>
                             <p>Losses: {displayHomeLosses}</p>
+                            <p>Average: {displayHomeAverage.toFixed(2)}</p>
                             <p>
                                 Win percentage:{' '}
                                 {(
@@ -176,6 +210,7 @@ function PlayerStatsWinsLosses(props) {
                             <p>Games: {displayAwayGamesPlayed}</p>
                             <p>Wins: {displayAwayWins}</p>
                             <p>Losses: {displayAwayLosses}</p>
+                            <p>Average: {displayAwayAverage.toFixed(2)}</p>
                             <p>
                                 Win percentage:{' '}
                                 {(
@@ -193,6 +228,7 @@ function PlayerStatsWinsLosses(props) {
                             <p>Games: {displayCupGamesPlayed}</p>
                             <p>Wins: {displayCupWins}</p>
                             <p>Losses: {displayCupLosses}</p>
+                            <p>Average: {displayCupAverage.toFixed(2)}</p>
                             <p>
                                 Win percentage:{' '}
                                 {(
