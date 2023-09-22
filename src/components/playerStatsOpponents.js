@@ -7,7 +7,7 @@ function PlayerStatsOpponents(props) {
 
     return (
         <div id="player-stats-opponents">
-            <Accordion.Item eventKey="6">
+            <Accordion.Item eventKey="5">
                 <Accordion.Header id="stats-opponents">
                     OPPONENTS
                 </Accordion.Header>

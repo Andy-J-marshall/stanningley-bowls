@@ -155,6 +155,7 @@ export function returnPlayerStats(playersStats, player) {
     const saturdayAvg = saturday.aggDiff / saturdayGames;
 
     // Days played
+    // TODO is this used? Remove if not
     let daysPlayedCount = [
         { day: config.days['monday combined leeds'], gamesPlayed: mondayGames },
         {
@@ -170,6 +171,8 @@ export function returnPlayerStats(playersStats, player) {
         { day: config.days['saturday leeds'], gamesPlayed: saturdayGames },
     ];
     daysPlayedCount = daysPlayedCount.filter((day) => day.gamesPlayed > 0);
+    ///////
+
     let allTeamsPlayedFor = [];
     dayPlayed.forEach((day) => {
         if (!allTeamsPlayedFor.includes(day)) {

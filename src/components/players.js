@@ -4,7 +4,6 @@ import config from '../config';
 import { returnPlayerStats } from '../helpers/playersHelper';
 import { capitalizeText } from '../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';
-import PlayerStatsGamePlayed from './playerStatsGamePlayed';
 import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsAverages from './playerStatsAverages';
 import PlayerStatsPoints from './playerStatsPoints';
@@ -47,10 +46,6 @@ function Players(props) {
                     {stats.gamesPlayed > 0 && (
                         <Accordion defaultActiveKey="0">
                             <PlayerStatsOverview stats={stats} />
-                            <PlayerStatsGamePlayed
-                                stats={stats}
-                                showStatSummary={showStatSummary}
-                            />
                             <PlayerStatsWinsLosses
                                 stats={stats}
                                 showStatSummary={showStatSummary}

@@ -125,10 +125,9 @@ function PlayerStatsWinsLosses(props) {
         setDisplayCupGamesPlayed(pairCupGamesPlayed);
     }
 
-    // TODO move games played stats into here as well and remove that component (remember to change eventKeys)?
     return (
         <div id="player-stats-wins-losses">
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="1">
                 <Accordion.Header id="stats-wl">WINS & LOSSES</Accordion.Header>
                 <Accordion.Body>
                     {pairsGames > 0 && singlesGames > 0 && (
@@ -142,6 +141,7 @@ function PlayerStatsWinsLosses(props) {
                     {displayGamesPlayed > 0 && (
                         <div>
                             <h3>TOTAL</h3>
+                            <p>Games: {displayGamesPlayed}</p>
                             <p>Wins: {displayTotalWins}</p>
                             <p>Losses: {displayTotalLosses}</p>
                             <p>
@@ -157,6 +157,7 @@ function PlayerStatsWinsLosses(props) {
                     {displayHomeGamesPlayed > 0 && (
                         <div>
                             <h3>HOME</h3>
+                            <p>Games: {displayHomeGamesPlayed}</p>
                             <p>Wins: {displayHomeWins}</p>
                             <p>Losses: {displayHomeLosses}</p>
                             <p>
@@ -172,6 +173,7 @@ function PlayerStatsWinsLosses(props) {
                     {displayAwayGamesPlayed > 0 && (
                         <div>
                             <h3>AWAY</h3>
+                            <p>Games: {displayAwayGamesPlayed}</p>
                             <p>Wins: {displayAwayWins}</p>
                             <p>Losses: {displayAwayLosses}</p>
                             <p>
@@ -188,6 +190,7 @@ function PlayerStatsWinsLosses(props) {
                     {displayCupGamesPlayed > 0 && (
                         <div>
                             <h3>CUP</h3>
+                            <p>Games: {displayCupGamesPlayed}</p>
                             <p>Wins: {displayCupWins}</p>
                             <p>Losses: {displayCupLosses}</p>
                             <p>
@@ -208,6 +211,7 @@ function PlayerStatsWinsLosses(props) {
                                 {mondayGames > 0 && (
                                     <div>
                                         <h5>MONDAY</h5>
+                                        <p>Games: {mondayGames}</p>
                                         <p>Wins: {mondayWins}</p>
                                         <p>Losses: {mondayLosses}</p>
                                         <p>
@@ -223,6 +227,7 @@ function PlayerStatsWinsLosses(props) {
                                 {tuesdayVetsGames > 0 && (
                                     <div>
                                         <h5>TUESDAY VETS</h5>
+                                        <p>Games: {tuesdayVetsGames}</p>
                                         <p>Wins: {tuesdayVetsWins}</p>
                                         <p>Losses: {tuesdayVetsLosses}</p>
                                         <p>
@@ -239,6 +244,7 @@ function PlayerStatsWinsLosses(props) {
                                 {tuesdayEveningGames > 0 && (
                                     <div>
                                         <h5>TUESDAY EVENING</h5>
+                                        <p>Games: {tuesdayEveningGames}</p>
                                         <p>Wins: {tuesdayEveningWins}</p>
                                         <p>Losses: {tuesdayEveningLosses}</p>
                                         <p>
@@ -255,6 +261,7 @@ function PlayerStatsWinsLosses(props) {
                                 {wednesdayGames > 0 && (
                                     <div>
                                         <h5>WEDNESDAY</h5>
+                                        <p>Games: {wednesdayGames}</p>
                                         <p>Wins: {wednesdayWins}</p>
                                         <p>Losses: {wednesdayLosses}</p>
                                         <p>
@@ -271,6 +278,7 @@ function PlayerStatsWinsLosses(props) {
                                 {thursdayGames > 0 && (
                                     <div>
                                         <h5>THURSDAY VETS</h5>
+                                        <p>Games: {thursdayGames}</p>
                                         <p>Wins: {thursdayWins}</p>
                                         <p>Losses: {thursdayLosses}</p>
                                         <p>
@@ -286,6 +294,7 @@ function PlayerStatsWinsLosses(props) {
                                 {saturdayGames > 0 && (
                                     <div>
                                         <h5>SATURDAY</h5>
+                                        <p>Games: {saturdayGames}</p>
                                         <p>Wins: {saturdayWins}</p>
                                         <p>Losses: {saturdayLosses}</p>
                                         <p>

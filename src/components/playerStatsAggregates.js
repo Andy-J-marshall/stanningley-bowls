@@ -120,7 +120,7 @@ function PlayerStatsAggregates(props) {
 
     return (
         <div id="player-stats-aggregates">
-            <Accordion.Item eventKey="5">
+            <Accordion.Item eventKey="4">
                 <Accordion.Header id="stats-aggregate">
                     AGGREGATES
                 </Accordion.Header>

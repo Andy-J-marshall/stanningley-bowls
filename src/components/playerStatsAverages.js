@@ -63,7 +63,7 @@ function PlayerStatsAverages(props) {
 
     return (
         <div id="player-stats-averages">
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="2">
                 <Accordion.Header id="stats-average">AVERAGES</Accordion.Header>
                 <Accordion.Body>
                     {pairsGames > 0 && singlesGames > 0 && (

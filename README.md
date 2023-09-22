@@ -161,9 +161,3 @@ Update `yearFixturesAddedFor` in `fixtures.js`.
 Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
 Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.
-
-# Ideas
-### UI
-<!-- TODO remove these once implemented -->
-- Toggle for pairs/singles stats
-- Display detailed stat information in nicer way
