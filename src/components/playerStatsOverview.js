@@ -21,13 +21,13 @@ function PlayerStatsOverview(props) {
                     <div>
                         <h3>STATS</h3>
                         <p id="totalGamesPlayed">
-                            Games played = {gamesPlayed}
+                            Games played: {gamesPlayed}
                         </p>
-                        <p id="totalWins">Wins = {totalWins}</p>
-                        <p id="totalLosses">Losses = {totalLosses}</p>
+                        <p id="totalWins">Wins: {totalWins}</p>
+                        <p id="totalLosses">Losses: {totalLosses}</p>
                         {average > -22 && average < 22 && (
                             <p id="totalAverage">
-                                Average = {average.toFixed(2)}
+                                Average: {average.toFixed(2)}
                             </p>
                         )}
                         <p>
@@ -36,7 +36,7 @@ function PlayerStatsOverview(props) {
                         </p>
                         {biggestWin && totalWins > 0 && (
                             <p id="biggestWin">
-                                Biggest win = {capitalizeText([biggestWin])}
+                                Biggest win: {capitalizeText([biggestWin])}
                             </p>
                         )}
                         {allTeamsPlayedFor.length > 0 && (

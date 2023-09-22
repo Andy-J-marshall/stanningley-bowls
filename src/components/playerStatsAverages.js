@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
+import GameTypeButton from './gameTypeButtons';
 
 function PlayerStatsAverages(props) {
     const stats = props.stats;
@@ -33,25 +35,63 @@ function PlayerStatsAverages(props) {
         saturdayAvg,
     } = stats;
 
+    const [displayAverage, setDisplayAverage] = useState(average);
+    const [displayHomeAverage, setDisplayHomeAverage] = useState(homeAverage);
+    const [displayAwayAverage, setDisplayAwayAverage] = useState(awayAverage);
+    const [displayCupAverage, setDisplayCupAverage] = useState(cupAverage);
+
+    function displayAll() {
+        setDisplayAverage(average);
+        setDisplayHomeAverage(homeAverage);
+        setDisplayAwayAverage(awayAverage);
+        setDisplayCupAverage(cupAverage);
+    }
+
+    function displaySingles() {
+        setDisplayAverage(singlesAvg);
+        setDisplayHomeAverage(singlesHomeAverage);
+        setDisplayAwayAverage(singlesAwayAverage);
+        setDisplayCupAverage(singlesCupAverage);
+    }
+
+    function displayPairs() {
+        setDisplayAverage(pairsAvg);
+        setDisplayHomeAverage(pairsHomeAverage);
+        setDisplayAwayAverage(pairsAwayAverage);
+        setDisplayCupAverage(pairsCupAverage);
+    }
+
     return (
         <div id="player-stats-averages">
             <Accordion.Item eventKey="3">
                 <Accordion.Header id="stats-average">AVERAGES</Accordion.Header>
                 <Accordion.Body>
+                    {pairsGames > 0 && singlesGames > 0 && (
+                        <GameTypeButton
+                            displayAllCallback={displayAll}
+                            displaySinglesCallback={displaySingles}
+                            displayPairsCallback={displayPairs}
+                        />
+                    )}
                     {average >= -21 && average < 22 && (
                         <div>
                             <h3>AVERAGES</h3>
-                            <p>Overall = {average.toFixed(2)}</p>
-                            {homeAverage > -22 && homeAverage < 22 && (
-                                <p>Home = {homeAverage.toFixed(2)}</p>
-                            )}
+                            <p>Overall: {displayAverage.toFixed(2)}</p>
 
-                            {awayAverage > -22 && awayAverage < 22 && (
-                                <p>Away = {awayAverage.toFixed(2)}</p>
-                            )}
-                            {cupAverage > -22 && cupAverage < 22 && (
-                                <p>Cup = {cupAverage.toFixed(2)}</p>
-                            )}
+                            {displayHomeAverage > -22 &&
+                                displayHomeAverage < 22 && (
+                                    <p>Home: {displayHomeAverage.toFixed(2)}</p>
+                                )}
+
+                            {displayAwayAverage > -22 &&
+                                displayAwayAverage < 22 && (
+                                    <p>Away: {displayAwayAverage.toFixed(2)}</p>
+                                )}
+                            {displayCupAverage > -22 &&
+                                displayCupAverage < 22 && (
+                                    <p>Cup: {displayCupAverage.toFixed(2)}</p>
+                                )}
+
                             {!showStatSummary && (
                                 <div>
                                     <h3>TEAMS</h3>
@@ -85,50 +125,6 @@ function PlayerStatsAverages(props) {
                                     {saturdayGames > 0 && (
                                         <p>
                                             Saturday = {saturdayAvg.toFixed(2)}
-                                        </p>
-                                    )}
-                                </div>
-                            )}
-                            {pairsGames > 0 && singlesGames > 0 && (
-                                <div>
-                                    <h3>SINGLES</h3>
-                                    {singlesAvg > -22 && (
-                                        <p>Total = {singlesAvg.toFixed(2)}</p>
-                                    )}
-                                    {singlesHomeAverage > -22 && (
-                                        <p>
-                                            Home ={' '}
-                                            {singlesHomeAverage.toFixed(2)}
-                                        </p>
-                                    )}
-                                    {singlesAwayAverage > -22 && (
-                                        <p>
-                                            Away ={' '}
-                                            {singlesAwayAverage.toFixed(2)}
-                                        </p>
-                                    )}
-                                    {singlesCupAverage > -22 && (
-                                        <p>
-                                            Cup = {singlesCupAverage.toFixed(2)}
-                                        </p>
-                                    )}
-                                    <h3>PAIRS</h3>
-                                    {pairsAvg > -22 && (
-                                        <p>Total = {pairsAvg.toFixed(2)}</p>
-                                    )}
-                                    {pairsHomeAverage > -22 && (
-                                        <p>
-                                            Home = {pairsHomeAverage.toFixed(2)}
-                                        </p>
-                                    )}
-                                    {pairsAwayAverage > -22 && (
-                                        <p>
-                                            Away = {pairsAwayAverage.toFixed(2)}
-                                        </p>
-                                    )}
-                                    {pairsCupAverage > -22 && (
-                                        <p>
-                                            Cup = {pairsCupAverage.toFixed(2)}
                                         </p>
                                     )}
                                 </div>
