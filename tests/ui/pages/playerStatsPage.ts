@@ -44,7 +44,7 @@ export class PlayerStatsPage {
     this.playerStatsItem = page.locator('#stats .list-group-item');
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
-    this.overviewAccordionButton = page.locator('#stats-summary');
+    this.overviewAccordionButton = page.locator('#stats-overview');
     this.gamesAccordionButton = page.locator('#stats-games');
     this.winLossAccordionButton = page.locator('#stats-wl');
     this.averageAccordionButton = page.locator('#stats-average');
@@ -96,20 +96,23 @@ export class PlayerStatsPage {
   }
 
   async checkTeamAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(8);
+    await expect(this.accordionButtons).toHaveCount(7);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
-    await expect(this.gamesAccordionButton).toHaveText('GAMES PLAYED');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
     await expect(this.averageAccordionButton).toHaveText('AVERAGES');
     await expect(this.pointsAccordionButton).toHaveText('POINTS');
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
-    await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
+    await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 
   async checkOnlyBasicAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(7);
+    await expect(this.accordionButtons).toHaveCount(6);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
+    await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
+    await expect(this.averageAccordionButton).toHaveText('AVERAGES');
+    await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
+    await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 
@@ -128,14 +131,14 @@ export class PlayerStatsPage {
 
   async validateSummaryStats(playerStats: PlayerStats) {
     await expect(this.totalGamesPlayed).toHaveText(
-      `Games played = ${playerStats.totalGamesPlayed}`
+      `Games played: ${playerStats.totalGamesPlayed}`
     );
-    await expect(this.totalWins).toHaveText(`Wins = ${playerStats.totalWins}`);
+    await expect(this.totalWins).toHaveText(`Wins: ${playerStats.totalWins}`);
     await expect(this.totalLosses).toHaveText(
-      `Losses = ${playerStats.totalLosses}`
+      `Losses: ${playerStats.totalLosses}`
     );
     await expect(this.totalAverage).toHaveText(
-      `Average = ${playerStats.totalAverage.toFixed(2)}`
+      `Average: ${playerStats.totalAverage.toFixed(2)}`
     );
     expect(playerStats.totalAverage).toBeGreaterThan(-22);
     expect(playerStats.totalAverage).toBeLessThan(22);

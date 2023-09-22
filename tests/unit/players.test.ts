@@ -213,10 +213,7 @@ describe('#Players Tests', () => {
     });
 
     it('Opponents', () => {
-      const {
-        beatenByList,
-        beatenOpponentsList,
-      } = stats;
+      const { beatenByList, beatenOpponentsList } = stats;
       expect(beatenOpponentsList).to.have.lengthOf(33);
       expect(beatenByList).to.have.lengthOf(9);
     });
@@ -423,12 +420,7 @@ describe('#Players Tests', () => {
     });
 
     it('Days Played', () => {
-      const { daysPlayedCount, allTeamsPlayedFor } = stats;
-      expect(daysPlayedCount[0].gamesPlayed).to.equal(12);
-      expect(daysPlayedCount[1].gamesPlayed).to.equal(9);
-      expect(daysPlayedCount[2].gamesPlayed).to.equal(7);
-      expect(daysPlayedCount[3].gamesPlayed).to.equal(14);
-      expect(allTeamsPlayedFor).to.deep.equal([
+      expect(stats.allTeamsPlayedFor).to.deep.equal([
         'Monday Combined Leeds',
         'Tuesday Vets Leeds',
         'Thursday Vets Leeds',

@@ -154,25 +154,6 @@ export function returnPlayerStats(playersStats, player) {
     const saturdayGames = saturday.games;
     const saturdayAvg = saturday.aggDiff / saturdayGames;
 
-    // Days played
-    // TODO is this used? Remove if not
-    let daysPlayedCount = [
-        { day: config.days['monday combined leeds'], gamesPlayed: mondayGames },
-        {
-            day: config.days['tuesday vets leeds'],
-            gamesPlayed: tuesdayVetsGames,
-        },
-        { day: config.days['tuesday leeds'], gamesPlayed: tuesdayEveningGames },
-        {
-            day: config.days['wednesday half holiday leeds'],
-            gamesPlayed: wednesdayGames,
-        },
-        { day: config.days['thursday vets leeds'], gamesPlayed: thursdayGames },
-        { day: config.days['saturday leeds'], gamesPlayed: saturdayGames },
-    ];
-    daysPlayedCount = daysPlayedCount.filter((day) => day.gamesPlayed > 0);
-    ///////
-
     let allTeamsPlayedFor = [];
     dayPlayed.forEach((day) => {
         if (!allTeamsPlayedFor.includes(day)) {
@@ -403,7 +384,6 @@ export function returnPlayerStats(playersStats, player) {
         saturdayLosses,
         saturdayGames,
         saturdayAvg,
-        daysPlayedCount,
         beatenByList,
         beatenOpponentsList,
         allTeamsPlayedFor,
