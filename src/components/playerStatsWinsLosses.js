@@ -203,7 +203,7 @@ function PlayerStatsWinsLosses(props) {
                             </p>
                         </div>
                     )}
-                    {/* TODO make it obvious visually that it's all game types */}
+                    {/* TODO what to do with this? Combine and move to own section? */}
                     {!showStatSummary && (
                         <div>
                             <h3>TEAMS</h3>

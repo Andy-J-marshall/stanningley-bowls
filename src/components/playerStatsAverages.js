@@ -35,6 +35,8 @@ function PlayerStatsAverages(props) {
         saturdayAvg,
     } = stats;
 
+    // TODO combine averages component with wins/losses? And rename?
+
     const [displayAverage, setDisplayAverage] = useState(average);
     const [displayHomeAverage, setDisplayHomeAverage] = useState(homeAverage);
     const [displayAwayAverage, setDisplayAwayAverage] = useState(awayAverage);
@@ -92,7 +94,7 @@ function PlayerStatsAverages(props) {
                                     <p>Cup: {displayCupAverage.toFixed(2)}</p>
                                 )}
 
-                            {/* TODO what to do with this?  */}
+                            {/* TODO what to do with this? Combine and move to own section? */}
                             {!showStatSummary && (
                                 <div>
                                     <h3>TEAMS</h3>
