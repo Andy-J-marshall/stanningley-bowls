@@ -174,7 +174,7 @@ function PlayerStatsPoints(props) {
                             Average points conceded:{' '}
                             {displayAveragePointsAgainst.toFixed(2)} / 5
                         </p>
-                        {homeGamesPlayed > 0 && (
+                        {displayHomeGamesPlayed > 0 && (
                             <div>
                                 <h3>HOME</h3>
                                 <div>
@@ -199,7 +199,7 @@ function PlayerStatsPoints(props) {
                                 </div>
                             </div>
                         )}
-                        {awayGamesPlayed > 0 && (
+                        {displayAwayGamesPlayed > 0 && (
                             <div>
                                 <h3>AWAY</h3>
                                 <div>
