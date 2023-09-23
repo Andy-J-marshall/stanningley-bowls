@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Card, CardGroup } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import config from '../config';
 
@@ -58,37 +58,54 @@ function PlayerStatsPoints(props) {
     } = stats;
 
     const [displayTotalPoints, setDisplayTotalPoints] = useState(totalPoints);
-    const [displayTotalPointsAgainst, setDisplayTotalPointsAgainst] = useState(totalPointsAgainst);
-    const [displayAveragePoints, setDisplayAveragePoints] = useState(averagePoints);
-    const [displayAveragePointsAgainst, setDisplayAveragePointsAgainst] = useState(averagePointsAgainst);
+    const [displayTotalPointsAgainst, setDisplayTotalPointsAgainst] =
+        useState(totalPointsAgainst);
+    const [displayAveragePoints, setDisplayAveragePoints] =
+        useState(averagePoints);
+    const [displayAveragePointsAgainst, setDisplayAveragePointsAgainst] =
+        useState(averagePointsAgainst);
 
-    const [displayTotalHomePoints, setDisplayTotalHomePoints] = useState(totalHomePoints);
-    const [displayTotalHomePointsAgainst, setDisplayTotalHomePointsAgainst] = useState(totalHomePointsAgainst);
-    const [displayHomeAveragePoints, setDisplayHomeAveragePoints] = useState(homeAveragePoints);
-    const [displayHomeAveragePointsAgainst, setDisplayHomeAveragePointsAgainst] = useState(homeAveragePointsAgainst);
+    const [displayTotalHomePoints, setDisplayTotalHomePoints] =
+        useState(totalHomePoints);
+    const [displayTotalHomePointsAgainst, setDisplayTotalHomePointsAgainst] =
+        useState(totalHomePointsAgainst);
+    const [displayHomeAveragePoints, setDisplayHomeAveragePoints] =
+        useState(homeAveragePoints);
+    const [
+        displayHomeAveragePointsAgainst,
+        setDisplayHomeAveragePointsAgainst,
+    ] = useState(homeAveragePointsAgainst);
 
-    const [displayTotalAwayPoints, setDisplayTotalAwayPoints] = useState(totalAwayPoints);
-    const [displayTotalAwayPointsAgainst, setDisplayTotalAwayPointsAgainst] = useState(totalAwayPointsAgainst);
-    const [displayAwayAveragePoints, setDisplayAwayAveragePoints] = useState(awayAveragePoints);
-    const [displayAwayAveragePointsAgainst, setDisplayAwayAveragePointsAgainst] = useState(awayAveragePointsAgainst);
-    
+    const [displayTotalAwayPoints, setDisplayTotalAwayPoints] =
+        useState(totalAwayPoints);
+    const [displayTotalAwayPointsAgainst, setDisplayTotalAwayPointsAgainst] =
+        useState(totalAwayPointsAgainst);
+    const [displayAwayAveragePoints, setDisplayAwayAveragePoints] =
+        useState(awayAveragePoints);
+    const [
+        displayAwayAveragePointsAgainst,
+        setDisplayAwayAveragePointsAgainst,
+    ] = useState(awayAveragePointsAgainst);
+
     const [displayGamesPlayed, setDisplayGamesPlayed] = useState(gamesPlayed);
-    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
-    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
-    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
-
+    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] =
+        useState(homeGamesPlayed);
+    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] =
+        useState(awayGamesPlayed);
+    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
+        useState(cupGamesPlayed);
 
     function displayAll() {
         setDisplayTotalPoints(totalPoints);
         setDisplayTotalPointsAgainst(totalPointsAgainst);
         setDisplayAveragePoints(averagePoints);
         setDisplayAveragePointsAgainst(averagePointsAgainst);
-    
+
         setDisplayTotalHomePoints(totalHomePoints);
         setDisplayTotalHomePointsAgainst(totalHomePointsAgainst);
         setDisplayHomeAveragePoints(homeAveragePoints);
         setDisplayHomeAveragePointsAgainst(homeAveragePointsAgainst);
-    
+
         setDisplayTotalAwayPoints(totalAwayPoints);
         setDisplayTotalAwayPointsAgainst(totalAwayPointsAgainst);
         setDisplayAwayAveragePoints(awayAveragePoints);
@@ -105,12 +122,12 @@ function PlayerStatsPoints(props) {
         setDisplayTotalPointsAgainst(totalSinglesPointsAgainst);
         setDisplayAveragePoints(singlesAveragePoints);
         setDisplayAveragePointsAgainst(singlesAveragePointsAgainst);
-    
+
         setDisplayTotalHomePoints(totalSinglesHomePoints);
         setDisplayTotalHomePointsAgainst(totalSinglesHomePointsAgainst);
         setDisplayHomeAveragePoints(singlesHomeAveragePoints);
         setDisplayHomeAveragePointsAgainst(singlesHomeAveragePointsAgainst);
-    
+
         setDisplayTotalAwayPoints(totalSinglesAwayPoints);
         setDisplayTotalAwayPointsAgainst(totalSinglesAwayPointsAgainst);
         setDisplayAwayAveragePoints(singlesAwayAveragePoints);
@@ -127,12 +144,12 @@ function PlayerStatsPoints(props) {
         setDisplayTotalPointsAgainst(totalPairsPointsAgainst);
         setDisplayAveragePoints(pairsAveragePoints);
         setDisplayAveragePointsAgainst(pairsAveragePointsAgainst);
-    
+
         setDisplayTotalHomePoints(totalPairsHomePoints);
         setDisplayTotalHomePointsAgainst(totalPairsHomePointsAgainst);
         setDisplayHomeAveragePoints(pairsHomeAveragePoints);
         setDisplayHomeAveragePointsAgainst(pairsHomeAveragePointsAgainst);
-    
+
         setDisplayTotalAwayPoints(totalPairsAwayPoints);
         setDisplayTotalAwayPointsAgainst(totalPairsAwayPointsAgainst);
         setDisplayAwayAveragePoints(pairsAwayAveragePoints);
@@ -157,73 +174,105 @@ function PlayerStatsPoints(props) {
                                 displayPairsCallback={displayPairs}
                             />
                         )}
-                        <h3>TOTAL</h3>
-                        <p>
-                            Points scored: {displayTotalPoints} /{' '}
-                            {(displayGamesPlayed - displayCupGamesPlayed) * 5}
-                        </p>
-                        <p>
-                            Points conceded: {displayTotalPointsAgainst} /{' '}
-                            {(displayGamesPlayed - displayCupGamesPlayed) * 5}
-                        </p>
-                        <p>
-                            Average points scored: {displayAveragePoints.toFixed(2)} /
-                            5
-                        </p>
-                        <p>
-                            Average points conceded:{' '}
-                            {displayAveragePointsAgainst.toFixed(2)} / 5
-                        </p>
-                        {displayHomeGamesPlayed > 0 && (
-                            <div>
-                                <h3>HOME</h3>
-                                <div>
-                                    <p>
-                                        Points scored: {displayTotalHomePoints} /{' '}
-                                        {displayHomeGamesPlayed * 5}
-                                    </p>
-                                    <p>
-                                        Points conceded:{' '}
-                                        {displayTotalHomePointsAgainst} /{' '}
-                                        {displayHomeGamesPlayed * 5}
-                                    </p>
-                                    <p>
-                                        Average points scored:{' '}
-                                        {displayHomeAveragePoints.toFixed(2)} / 5
-                                    </p>
-                                    <p>
-                                        Average points conceded:{' '}
-                                        {displayHomeAveragePointsAgainst.toFixed(2)} /
-                                        5
-                                    </p>
-                                </div>
+
+                        <CardGroup>
+                            <div className="center-cards">
+                                <Card>
+                                    <Card.Header>TOTAL</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            Points scored: {displayTotalPoints}{' '}
+                                            /{' '}
+                                            {(displayGamesPlayed -
+                                                displayCupGamesPlayed) *
+                                                5}
+                                            <br />
+                                            Points conceded:{' '}
+                                            {displayTotalPointsAgainst} /{' '}
+                                            {(displayGamesPlayed -
+                                                displayCupGamesPlayed) *
+                                                5}
+                                            <br />
+                                            Average points scored:{' '}
+                                            {displayAveragePoints.toFixed(2)} /
+                                            5
+                                            <br />
+                                            Average points conceded:{' '}
+                                            {displayAveragePointsAgainst.toFixed(
+                                                2
+                                            )}{' '}
+                                            / 5
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                                {displayHomeGamesPlayed > 0 && (
+                                    <div>
+                                        <Card>
+                                            <Card.Header>HOME</Card.Header>
+                                            <Card.Body>
+                                                <Card.Text>
+                                                    Points scored:{' '}
+                                                    {displayTotalHomePoints} /{' '}
+                                                    {displayHomeGamesPlayed * 5}
+                                                    <br />
+                                                    Points conceded:{' '}
+                                                    {
+                                                        displayTotalHomePointsAgainst
+                                                    }{' '}
+                                                    /{' '}
+                                                    {displayHomeGamesPlayed * 5}
+                                                    <br />
+                                                    Average points scored:{' '}
+                                                    {displayHomeAveragePoints.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                    <br />
+                                                    Average points conceded:{' '}
+                                                    {displayHomeAveragePointsAgainst.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                )}
+                                {displayAwayGamesPlayed > 0 && (
+                                    <div>
+                                        <Card>
+                                            <Card.Header>AWAY</Card.Header>
+                                            <Card.Body>
+                                                <Card.Text>
+                                                    Points scored:{' '}
+                                                    {displayTotalAwayPoints} /{' '}
+                                                    {displayAwayGamesPlayed * 5}
+                                                    <br />
+                                                    Points conceded:{' '}
+                                                    {
+                                                        displayTotalAwayPointsAgainst
+                                                    }{' '}
+                                                    /{' '}
+                                                    {displayAwayGamesPlayed * 5}
+                                                    <br />
+                                                    Average points scored:{' '}
+                                                    {displayAwayAveragePoints.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                    <br />
+                                                    Average points conceded:{' '}
+                                                    {displayAwayAveragePointsAgainst.toFixed(
+                                                        2
+                                                    )}{' '}
+                                                    / 5
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                )}
                             </div>
-                        )}
-                        {displayAwayGamesPlayed > 0 && (
-                            <div>
-                                <h3>AWAY</h3>
-                                <div>
-                                    <p>
-                                        Points scored: {displayTotalAwayPoints} /{' '}
-                                        {displayAwayGamesPlayed * 5}
-                                    </p>
-                                    <p>
-                                        Points conceded:{' '}
-                                        {displayTotalAwayPointsAgainst} /{' '}
-                                        {displayAwayGamesPlayed * 5}
-                                    </p>
-                                    <p>
-                                        Average points scored:{' '}
-                                        {displayAwayAveragePoints.toFixed(2)} / 5
-                                    </p>
-                                    <p>
-                                        Average points conceded:{' '}
-                                        {displayAwayAveragePointsAgainst.toFixed(2)} /
-                                        5
-                                    </p>
-                                </div>
-                            </div>
-                        )}
+                        </CardGroup>
                         <br />
                         <p className="footnote">* {config.leagueRules}</p>
                     </div>

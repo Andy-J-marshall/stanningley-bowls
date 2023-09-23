@@ -56,7 +56,7 @@ function GameTypeButton(props) {
     }
 
     return (
-        <ButtonGroup size="lg" className="mb-2">
+        <ButtonGroup size="lg" className="mb-2" style={{ padding: '0.5rem' }}>
             <ToggleButton
                 className="toggle-button"
                 onClick={displayAll}

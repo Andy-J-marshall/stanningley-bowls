@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Card, CardGroup } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import GameTypeButton from './gameTypeButtons';
 
@@ -158,76 +158,109 @@ function PlayerStatsWinsLosses(props) {
                             displayPairsCallback={displayPairs}
                         />
                     )}
-
-                    {displayGamesPlayed > 0 && (
-                        <div>
-                            <h3>TOTAL</h3>
-                            <p>Games: {displayGamesPlayed}</p>
-                            <p>Wins: {displayTotalWins}</p>
-                            <p>Losses: {displayTotalLosses}</p>
-                            <p>Average: {displayAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayTotalWins / displayGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
+                    <CardGroup>
+                        <div className="center-cards">
+                            {displayGamesPlayed > 0 && (
+                                <Card>
+                                    <Card.Header>TOTAL</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            Games: {displayGamesPlayed}
+                                            <br />
+                                            Wins: {displayTotalWins}
+                                            <br />
+                                            Losses: {displayTotalLosses}
+                                            <br />
+                                            Average: {displayAverage.toFixed(2)}
+                                            <br />
+                                            Win percentage:{' '}
+                                            {(
+                                                (displayTotalWins /
+                                                    displayGamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            %
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )}
+                            {displayHomeGamesPlayed > 0 && (
+                                <Card>
+                                    <Card.Header>HOME</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            Games: {displayHomeGamesPlayed}
+                                            <br />
+                                            Wins: {displayHomeWins}
+                                            <br />
+                                            Losses: {displayHomeLosses}
+                                            <br />
+                                            Average:{' '}
+                                            {displayHomeAverage.toFixed(2)}
+                                            <br />
+                                            Win percentage:{' '}
+                                            {(
+                                                (displayHomeWins /
+                                                    displayHomeGamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            %
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )}
+                            {displayAwayGamesPlayed > 0 && (
+                                <Card>
+                                    <Card.Header>AWAY</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            Games: {displayAwayGamesPlayed}
+                                            <br />
+                                            Wins: {displayAwayWins}
+                                            <br />
+                                            Losses: {displayAwayLosses}
+                                            <br />
+                                            Average:{' '}
+                                            {displayAwayAverage.toFixed(2)}
+                                            <br />
+                                            Win percentage:{' '}
+                                            {(
+                                                (displayAwayWins /
+                                                    displayAwayGamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            %
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )}
+                            {displayCupGamesPlayed > 0 && (
+                                <Card>
+                                    <Card.Header>CUP</Card.Header>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            Games: {displayCupGamesPlayed}
+                                            <br />
+                                            Wins: {displayCupWins}
+                                            <br />
+                                            Losses: {displayCupLosses}
+                                            <br />
+                                            Average:{' '}
+                                            {displayCupAverage.toFixed(2)}
+                                            <br />
+                                            Win percentage:{' '}
+                                            {(
+                                                (displayCupWins /
+                                                    displayCupGamesPlayed) *
+                                                100
+                                            ).toFixed(0)}
+                                            %
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )}
                         </div>
-                    )}
-                    {displayHomeGamesPlayed > 0 && (
-                        <div>
-                            <h3>HOME</h3>
-                            <p>Games: {displayHomeGamesPlayed}</p>
-                            <p>Wins: {displayHomeWins}</p>
-                            <p>Losses: {displayHomeLosses}</p>
-                            <p>Average: {displayHomeAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayHomeWins / displayHomeGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
-                        </div>
-                    )}
-                    {displayAwayGamesPlayed > 0 && (
-                        <div>
-                            <h3>AWAY</h3>
-                            <p>Games: {displayAwayGamesPlayed}</p>
-                            <p>Wins: {displayAwayWins}</p>
-                            <p>Losses: {displayAwayLosses}</p>
-                            <p>Average: {displayAwayAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayAwayWins / displayAwayGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
-                        </div>
-                    )}
-
-                    {displayCupGamesPlayed > 0 && (
-                        <div>
-                            <h3>CUP</h3>
-                            <p>Games: {displayCupGamesPlayed}</p>
-                            <p>Wins: {displayCupWins}</p>
-                            <p>Losses: {displayCupLosses}</p>
-                            <p>Average: {displayCupAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayCupWins / displayCupGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
-                        </div>
-                    )}
+                    </CardGroup>
                     {displayPairsPartners && pairsGames > 0 && (
                         <div>
                             {Object.keys(pairsPartnersCount).length > 0 && (
