@@ -129,7 +129,8 @@ for day in teamDays:
             cupGame = True
 
             # To account for handicap row in cup games
-            homeTeamName = sheet[homeTeamNameCol + str(row + 9 - rowsDownIntModifier)].value
+            homeTeamName = sheet[homeTeamNameCol +
+                                 str(row + 9 - rowsDownIntModifier)].value
             if type(homeTeamName) is str and 'handicap' in homeTeamName.lower():
                 rowsDownIntModifier = rowsDownIntModifier - 1
 
@@ -213,9 +214,11 @@ for day in teamDays:
                 if awayScore == homeScore:
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + \
-                    sheet[homeAggCol + str(row + 9 - rowsDownIntModifier)].value
+                    sheet[homeAggCol +
+                          str(row + 9 - rowsDownIntModifier)].value
                 teamAgg = teamAgg + \
-                    sheet[awayAggCol + str(row + 9 - rowsDownIntModifier)].value
+                    sheet[awayAggCol +
+                          str(row + 9 - rowsDownIntModifier)].value
                 if not cupGame:
                     teamTotalPoints = teamTotalPoints + awayScore
                     opponentTotalPoints = opponentTotalPoints + homeScore
@@ -250,7 +253,8 @@ for day in teamDays:
             if homePlayerName.lower() not in traitorPlayers[day]:
                 # Only adds result to list if they haven't been transferred to another team
                 if homePlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][homePlayerName.lower()]
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][homePlayerName.lower(
+                    )]
                     if homePlayerIndex <= lastGameBeforeTransfer:
                         homePlayerRow.append(homePlayerIndex)
                 else:
@@ -266,7 +270,8 @@ for day in teamDays:
             if awayPlayerName.lower() not in traitorPlayers[day]:
                 # Only adds result to list if they haven't been transferred to another team
                 if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][awayPlayerName.lower()]
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][awayPlayerName.lower(
+                    )]
                     if awayPlayerIndex <= lastGameBeforeTransfer:
                         awayPlayerRow.append(awayPlayerIndex)
                 else:
@@ -451,11 +456,16 @@ for day in teamDays:
                     raise Exception(
                         'Row appears in home row and away row. Check the opponent name. Row: ' + str(row))
 
+if year in clubCupWinners:
+    clubCupWinner = clubCupWinners[year]
+else:
+    clubCupWinner = ''
+
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
-    'clubCupWinner': clubCupWinners[year],
+    'clubCupWinner': clubCupWinner,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year,
 }
