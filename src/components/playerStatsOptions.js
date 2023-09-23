@@ -60,7 +60,7 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#all-stats-select-checkbox"
-                                                    onClick={toggleAllTeamStats}
+                                                    onChange={toggleAllTeamStats}
                                                     type="checkbox"
                                                     label="Include stats whilst playing for other teams"
                                                     checked={allTeamsToggle}
@@ -72,7 +72,7 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-singles-checkbox"
-                                                    onClick={
+                                                    onChange={
                                                         toggleSinglesOnlyMatches
                                                     }
                                                     type="checkbox"
@@ -86,7 +86,7 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#all-years-select-checkbox"
-                                                    onClick={toggleAllYearStats}
+                                                    onChange={toggleAllYearStats}
                                                     type="checkbox"
                                                     label="Show stats summary for all seasons since 2022"
                                                     checked={allYearToggle}
