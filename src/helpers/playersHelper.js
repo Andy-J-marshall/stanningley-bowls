@@ -1,6 +1,4 @@
 import { findBiggestWin } from './statsHelper';
-import { arrayToList } from './utils';
-import config from '../config';
 
 export function returnPlayerStats(playersStats, player) {
     const stats = playersStats[player];

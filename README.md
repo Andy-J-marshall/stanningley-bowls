@@ -28,7 +28,7 @@ Run the following:
 
 ## Maintenance
 
-Fixture images will need to be updated for each year. Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
+Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
 
 # Bowls script
 

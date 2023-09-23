@@ -1,5 +1,4 @@
 import { Table } from 'react-bootstrap';
-import { arrayToList } from '../helpers/utils';
 import config from '../config';
 
 function StatsTableDisplay(props) {
