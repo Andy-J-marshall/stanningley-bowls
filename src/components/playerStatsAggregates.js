@@ -132,7 +132,7 @@ function PlayerStatsAggregates(props) {
                             displayPairsCallback={displayPairs}
                         />
                     )}
-                    <h3>COMBINED</h3>
+                    <h3>TOTAL</h3>
                     <p>
                         Aggregate scored: {displayTotalAgg} / {displayGamesPlayed * 21}
                     </p>

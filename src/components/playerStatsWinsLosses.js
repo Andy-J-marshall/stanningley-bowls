@@ -161,7 +161,7 @@ function PlayerStatsWinsLosses(props) {
 
                     {displayGamesPlayed > 0 && (
                         <div>
-                            <h3>COMBINED</h3>
+                            <h3>TOTAL</h3>
                             <p>Games: {displayGamesPlayed}</p>
                             <p>Wins: {displayTotalWins}</p>
                             <p>Losses: {displayTotalLosses}</p>

@@ -157,7 +157,7 @@ function PlayerStatsPoints(props) {
                                 displayPairsCallback={displayPairs}
                             />
                         )}
-                        <h3>COMBINED</h3>
+                        <h3>TOTAL</h3>
                         <p>
                             Points scored: {displayTotalPoints} /{' '}
                             {(displayGamesPlayed - displayCupGamesPlayed) * 5}
