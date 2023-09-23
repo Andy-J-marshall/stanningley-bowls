@@ -134,6 +134,11 @@ ul {
   margin-right: auto;
 }
 
+.card {
+  height: 18rem;
+  width: 13rem;
+}
+
 .tabs {
   display: flex;
   justify-content: center;

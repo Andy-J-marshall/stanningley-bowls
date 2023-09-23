@@ -174,7 +174,7 @@ function PlayerStatsPoints(props) {
                                 displayPairsCallback={displayPairs}
                             />
                         )}
-
+                        {/* TODO add rows and columns? */}
                         <CardGroup>
                             <div className="center-cards">
                                 <Card>
