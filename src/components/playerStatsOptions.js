@@ -38,55 +38,59 @@ function PlayerStatsOptions(props) {
                 fontSize: '15px',
             }}
         >
-            <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>OPTIONS</Accordion.Header>
-                    <Accordion.Body>
-                        <Form style={{ display: 'inline-block' }}>
-                            <Form.Group
-                                className="mb-3"
-                                controlId="searchOptions"
-                            >
-                                <Row>
-                                    <Col>
-                                        <Form.Check
-                                            key={key}
-                                            id="#all-stats-select-checkbox"
-                                            onClick={toggleAllTeamStats}
-                                            type="checkbox"
-                                            label="Include stats whilst playing for other teams"
-                                        />
-                                    </Col>
-                                    {!playerSearchedFor && (
-                                        <Col>
-                                            <Form.Check
-                                                key={key}
-                                                id="#only-singles-checkbox"
-                                                onClick={
-                                                    toggleSinglesOnlyMatches
-                                                }
-                                                type="checkbox"
-                                                label="Only show stats for singles games"
-                                            />
-                                        </Col>
-                                    )}
-                                    {!playerSearchedFor && (
-                                        <Col>
-                                            <Form.Check
-                                                key={key}
-                                                id="#all-years-select-checkbox"
-                                                onClick={toggleAllYearStats}
-                                                type="checkbox"
-                                                label="Show stats summary for all seasons since 2022"
-                                            />
-                                        </Col>
-                                    )}
-                                </Row>
-                            </Form.Group>
-                        </Form>
-                    </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
+            {!playerSearchedFor && (
+                <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>OPTIONS</Accordion.Header>
+                        <Accordion.Body>
+                            <Form style={{ display: 'inline-block' }}>
+                                <Form.Group
+                                    className="mb-3"
+                                    controlId="searchOptions"
+                                >
+                                    <Row>
+                                        {!playerSearchedFor && (
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#all-stats-select-checkbox"
+                                                    onClick={toggleAllTeamStats}
+                                                    type="checkbox"
+                                                    label="Include stats whilst playing for other teams"
+                                                />
+                                            </Col>
+                                        )}
+                                        {!playerSearchedFor && (
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#only-singles-checkbox"
+                                                    onClick={
+                                                        toggleSinglesOnlyMatches
+                                                    }
+                                                    type="checkbox"
+                                                    label="Only show stats for singles games"
+                                                />
+                                            </Col>
+                                        )}
+                                        {!playerSearchedFor && (
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#all-years-select-checkbox"
+                                                    onClick={toggleAllYearStats}
+                                                    type="checkbox"
+                                                    label="Show stats summary for all seasons since 2022"
+                                                />
+                                            </Col>
+                                        )}
+                                    </Row>
+                                </Form.Group>
+                            </Form>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            )}
         </div>
     );
 }
