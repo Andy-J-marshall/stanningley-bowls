@@ -75,6 +75,10 @@ export class PlayerStatsPage {
     await this.searchButton.click();
   }
 
+  async clickBackToSummary() {
+    await this.backButton.click();
+  }
+
   async checkNumberOfPlayersReturned(expectedNumberOfPlayers: number) {
     await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
   }
