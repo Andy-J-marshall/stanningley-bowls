@@ -8,7 +8,6 @@ import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsTeams from './playerStatsTeams';
 import PlayerStatsPoints from './playerStatsPoints';
 import PlayerStatsAggregates from './playerStatsAggregates';
-import PlayerStatsOpponents from './playerStatsOpponents';
 import PlayerStatsResults from './playerStatsResults';
 
 function Players(props) {
@@ -54,7 +53,6 @@ function Players(props) {
                             {!showStatSummary && (
                                 <PlayerStatsTeams stats={stats} />
                             )}
-                            <PlayerStatsOpponents stats={stats} />
                             <PlayerStatsResults stats={stats} />
                         </Accordion>
                     )}

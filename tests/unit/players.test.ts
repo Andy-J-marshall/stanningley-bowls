@@ -44,52 +44,6 @@ describe('#Players Tests', () => {
             'vanessa lancaster',
             'vanessa lancaster',
           ],
-          beatenOpponents: [
-            'maureen sheridan & pat blackburn',
-            'dot taylor & glennys ash',
-            'paul shackleton & ann hughes',
-            'jade kerry & sharon kerry',
-            'linda gaunt',
-            'cedric ash',
-            'peter simmons & james wright-green',
-            'martin mcgowan',
-            'doreen hunter',
-            'jane boyd',
-            'steve milton',
-            'graham hodder',
-            'david howard',
-            'stuart poulter',
-            'brian ragan',
-            'peter richie',
-            'malcolm cameron',
-            'derek howell',
-            'cedric briggs',
-            'brian newton',
-            'clifford pitts',
-            'peter nicholson',
-            'mick hall',
-            'ian baker',
-            'ron lavan',
-            'michael geary',
-            'arthur horne',
-            'bill lovett',
-            'dawn peters',
-            'neil schofield',
-            'harry gillett',
-            'gordon monk',
-            'andrew cole',
-          ],
-          beatenBy: [
-            'malcolm colinson & chris walsh',
-            'harvey lockwood & kevin smales',
-            'michael gore',
-            'gary dennison & nicola pearson',
-            'harry dixon & keith skelton',
-            'tony green',
-            'harvey lockwood',
-            'dennis walters',
-            'lawrie bairstow',
-          ],
           dayPlayed: [
             'Monday Combined Leeds',
             'Monday Combined Leeds',
@@ -210,12 +164,6 @@ describe('#Players Tests', () => {
         },
       };
       stats = returnPlayerStats(playerStats, 'paul bowes');
-    });
-
-    it('Opponents', () => {
-      const { beatenByList, beatenOpponentsList } = stats;
-      expect(beatenOpponentsList).to.have.lengthOf(33);
-      expect(beatenByList).to.have.lengthOf(9);
     });
 
     it('Games Played', () => {

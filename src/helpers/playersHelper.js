@@ -29,8 +29,6 @@ export function returnPlayerStats(playersStats, player) {
         pairCupLosses,
         winningPairsPartners,
         losingPairsPartners,
-        beatenBy,
-        beatenOpponents,
         pairLosses,
         pairWins,
         pairsPartners,
@@ -104,12 +102,6 @@ export function returnPlayerStats(playersStats, player) {
     const homeAveragePointsAgainst = totalHomePointsAgainst / homeGamesPlayed;
     const awayAveragePoints = totalAwayPoints / awayGamesPlayed;
     const awayAveragePointsAgainst = totalAwayPointsAgainst / awayGamesPlayed;
-
-    // Opponents
-    const beatenByList = beatenBy ? arrayToList(beatenBy) : null;
-    const beatenOpponentsList = beatenOpponents
-        ? arrayToList(beatenOpponents)
-        : null;
 
     // Stats per league
     const mondayWins = monday.wins;
@@ -384,8 +376,6 @@ export function returnPlayerStats(playersStats, player) {
         saturdayLosses,
         saturdayGames,
         saturdayAvg,
-        beatenByList,
-        beatenOpponentsList,
         allTeamsPlayedFor,
         pairsPartnersCount,
         pairsPartnersCountWins,

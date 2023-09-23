@@ -17,13 +17,11 @@ export class PlayerStatsPage {
   readonly playerStatsRows: Locator;
   readonly playerNameTitle: Locator;
   readonly overviewAccordionButton: Locator;
-  readonly gamesAccordionButton: Locator;
   readonly winLossAccordionButton: Locator;
   readonly teamAccordionButton: Locator;
   readonly pointsAccordionButton: Locator;
   readonly aggAccordionButton: Locator;
   readonly resultsAccordionButton: Locator;
-  readonly opponentsAccordionButton: Locator;
   readonly accordionButtons: Locator;
   readonly totalGamesPlayed: Locator;
   readonly totalWins: Locator;
@@ -45,13 +43,11 @@ export class PlayerStatsPage {
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
     this.overviewAccordionButton = page.locator('#stats-overview');
-    this.gamesAccordionButton = page.locator('#stats-games');
     this.winLossAccordionButton = page.locator('#stats-wl');
     this.teamAccordionButton = page.locator('#stats-teams');
     this.pointsAccordionButton = page.locator('#stats-points');
     this.aggAccordionButton = page.locator('#stats-aggregate');
     this.resultsAccordionButton = page.locator('#stats-results');
-    this.opponentsAccordionButton = page.locator('#stats-opponents');
     this.accordionButtons = page.locator(
       '#detailed-player-stats .accordion-button'
     );
@@ -96,22 +92,20 @@ export class PlayerStatsPage {
   }
 
   async checkTeamAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(7);
+    await expect(this.accordionButtons).toHaveCount(6);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
     await expect(this.teamAccordionButton).toHaveText('TEAMS');
     await expect(this.pointsAccordionButton).toHaveText('POINTS');
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
-    await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 
   async checkOnlyBasicAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(5);
+    await expect(this.accordionButtons).toHaveCount(4);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
-    await expect(this.opponentsAccordionButton).toHaveText('OPPONENTS');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 

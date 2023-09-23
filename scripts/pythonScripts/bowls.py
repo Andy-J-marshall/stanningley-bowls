@@ -110,9 +110,6 @@ for day in teamDays:
     teamTotalPoints = 0
     opponentAgg = 0
     opponentTotalPoints = 0
-    beaten = []
-    beatenBy = []
-    drawnWith = []
     results = []
 
     for row in range(1, sheet.max_row + 1):
@@ -175,20 +172,15 @@ for day in teamDays:
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
-                        beaten.append(opponent + ' (cup)')
                         cupWins = cupWins + 1
                     else:
-                        beaten.append(opponent + ' (home)')
                         homeWins = homeWins + 1
                 if homeScore < awayScore:
                     if cupGame:
-                        beatenBy.append(opponent + ' (cup)')
                         cupLosses = cupLosses + 1
                     else:
-                        beatenBy.append(opponent + ' (home)')
                         homeLosses = homeLosses + 1
                 if awayScore == homeScore:
-                    drawnWith.append(opponent + (' (home)'))
                     homeDraws = homeDraws + 1
                 teamAgg = teamAgg + \
                     sheet[homeAggCol +
@@ -210,20 +202,15 @@ for day in teamDays:
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
-                        beaten.append(opponent + ' (cup)')
                         cupWins = cupWins + 1
                     else:
-                        beaten.append(opponent + ' (away)')
                         awayWins = awayWins + 1
                 if awayScore < homeScore:
                     if cupGame:
-                        beatenBy.append(opponent + ' (cup)')
                         cupLosses = cupLosses + 1
                     else:
-                        beatenBy.append(opponent + ' (away)')
                         awayLosses = awayLosses + 1
                 if awayScore == homeScore:
-                    drawnWith.append(opponent + ' (away)')
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + \
                     sheet[homeAggCol + str(row + 9 - rowsDownIntModifier)].value
@@ -248,9 +235,6 @@ for day in teamDays:
         'totalPoints': teamTotalPoints,
         'opponentAgg': opponentAgg,
         'opponentTotalPoints': opponentTotalPoints,
-        'beaten': beaten,
-        'beatenBy': beatenBy,
-        'drawnWith': drawnWith,
         'leaguePosition': currentLeaguePosition,
         'results': results
     }
@@ -399,8 +383,6 @@ for day in teamDays:
                 # Wins
                 if aggregate > opponentAggregate:
                     playerStats[playerName][day.lower()]['wins'] += 1
-                    playerStats[playerName]['beatenOpponents'].append(
-                        opponentsName)
                     if pairsGame:
                         playerStats[playerName]['winningPairsPartners'].append(
                             pairsPartner)
@@ -419,8 +401,6 @@ for day in teamDays:
                             playerStats[playerName]['pairCupWins'] += 1
                 # Losses
                 else:
-                    playerStats[playerName]['beatenBy'].append(
-                        opponentsName)
                     if pairsGame:
                         playerStats[playerName]['losingPairsPartners'].append(
                             pairsPartner)

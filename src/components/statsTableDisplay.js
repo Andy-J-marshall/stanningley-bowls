@@ -20,15 +20,6 @@ function StatsTableDisplay(props) {
     const teamPoints = props.teamPoints;
     const opponentTeamPoints = props.opponentTeamPoints;
     const leaguePosition = props.leaguePosition;
-    const teamsBeaten = props.teamsBeaten
-        ? arrayToList(props.teamsBeaten)
-        : props.teamsBeaten;
-    const teamsLostTo = props.teamsLostTo
-        ? arrayToList(props.teamsLostTo)
-        : props.teamsLostTo;
-    const teamsDrawn = props.teamsDrawn
-        ? arrayToList(props.teamsDrawn)
-        : props.teamsDrawn;
 
     return (
         <div className="center table" style={{ width: '98%' }}>
@@ -117,24 +108,6 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Opponent points*</td>
                             <td>{opponentTeamPoints}</td>
-                        </tr>
-                    ) : null}
-                    {totalWins > 0 && teamsBeaten ? (
-                        <tr>
-                            <td>Opponents beaten</td>
-                            <td>{<ul>{teamsBeaten}</ul>}</td>
-                        </tr>
-                    ) : null}
-                    {totalLosses > 0 && teamsLostTo ? (
-                        <tr>
-                            <td>Opponents lost to</td>
-                            <td>{<ul>{teamsLostTo}</ul>}</td>
-                        </tr>
-                    ) : null}
-                    {totalDraws > 0 && teamsDrawn ? (
-                        <tr>
-                            <td>Opponents drawn with</td>
-                            <td>{<ul>{teamsDrawn}</ul>}</td>
                         </tr>
                     ) : null}
                 </tbody>

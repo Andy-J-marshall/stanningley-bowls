@@ -31,7 +31,7 @@ function PlayerStatsResults(props) {
 
     return (
         <div id="player-stats-results">
-            <Accordion.Item eventKey="6">
+            <Accordion.Item eventKey="5">
                 <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
                 <Accordion.Body>
                     <div id="player-results" className="center">

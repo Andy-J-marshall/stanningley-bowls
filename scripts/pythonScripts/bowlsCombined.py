@@ -190,8 +190,6 @@ for league in leaguesDays:
 
                     # Wins
                     if aggregate > opponentAggregate:
-                        playerResults[playerName]['beatenOpponents'].append(
-                            opponentsName)
                         if pairsGame:
                             playerResults[playerName]['winningPairsPartners'].append(
                                 pairsPartner)
@@ -210,8 +208,6 @@ for league in leaguesDays:
                                 playerResults[playerName]['pairCupWins'] += 1
                     # Losses
                     else:
-                        playerResults[playerName]['beatenBy'].append(
-                            opponentsName)
                         if pairsGame:
                             playerResults[playerName]['losingPairsPartners'].append(pairsPartner)
                             playerResults[playerName]['pairLosses'] += 1

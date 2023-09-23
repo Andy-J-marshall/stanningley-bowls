@@ -11,9 +11,6 @@ export function combineTeamStats(statsArray) {
     let combinedTotalPoints = 0;
     let combinedOpponentAgg = 0;
     let combinedOpponentTotalPoints = 0;
-    let combinedBeaten = [];
-    let combinedBeatenBy = [];
-    let combinedDrawnWith = [];
 
     statsArray.forEach((stats) => {
         const {
@@ -29,9 +26,6 @@ export function combineTeamStats(statsArray) {
             totalPoints,
             opponentAgg,
             opponentTotalPoints,
-            beaten,
-            beatenBy,
-            drawnWith,
         } = stats;
         combinedAwayWins += awayWins;
         combinedHomeWins += homeWins;
@@ -45,9 +39,6 @@ export function combineTeamStats(statsArray) {
         combinedTotalPoints += totalPoints;
         combinedOpponentAgg += opponentAgg;
         combinedOpponentTotalPoints += opponentTotalPoints;
-        combinedBeaten.push(...beaten);
-        combinedBeatenBy.push(...beatenBy);
-        combinedDrawnWith.push(...drawnWith);
     });
 
     const totalDraws = combinedAwayDraws + combinedHomeDraws;
@@ -55,16 +46,6 @@ export function combineTeamStats(statsArray) {
     const totalLosses =
         combinedAwayLosses + combinedHomeLosses + combinedCupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
-
-    if (combinedBeaten) {
-        combinedBeaten.sort();
-    }
-    if (combinedBeatenBy) {
-        combinedBeatenBy.sort();
-    }
-    if (combinedDrawnWith) {
-        combinedDrawnWith.sort();
-    }
 
     return {
         combinedAwayWins,
@@ -79,9 +60,6 @@ export function combineTeamStats(statsArray) {
         combinedTotalPoints,
         combinedOpponentAgg,
         combinedOpponentTotalPoints,
-        combinedBeaten,
-        combinedBeatenBy,
-        combinedDrawnWith,
         totalDraws,
         totalWins,
         totalLosses,
