@@ -8,6 +8,9 @@ function PlayerStatsOptions(props) {
     const playerSearchedFor = props.playerSearchedFor;
 
     const [key, setKey] = useState(playerSearchedFor);
+    const [allYearToggle, setAllYearToggle] = useState(false);
+    const [allTeamsToggle, setAllTeamsToggle] = useState(false);
+    const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -17,16 +20,19 @@ function PlayerStatsOptions(props) {
 
     function toggleAllTeamStats(event) {
         const allTeamStatsToggle = event.currentTarget.checked;
+        setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
     }
 
     function toggleSinglesOnlyMatches(event) {
         const singlesToggle = event.currentTarget.checked;
+        setSinglesOnlyToggle(singlesToggle);
         onlySinglesCallback(singlesToggle);
     }
 
     function toggleAllYearStats(event) {
         const allYearStatsToggle = event.currentTarget.checked;
+        setAllYearToggle(allYearStatsToggle);
         allYearStatsCallback(allYearStatsToggle);
     }
 
@@ -57,6 +63,7 @@ function PlayerStatsOptions(props) {
                                                     onClick={toggleAllTeamStats}
                                                     type="checkbox"
                                                     label="Include stats whilst playing for other teams"
+                                                    checked={allTeamsToggle}
                                                 />
                                             </Col>
                                         )}
@@ -70,6 +77,7 @@ function PlayerStatsOptions(props) {
                                                     }
                                                     type="checkbox"
                                                     label="Only show stats for singles games"
+                                                    checked={singlesOnlyToggle}
                                                 />
                                             </Col>
                                         )}
@@ -81,6 +89,7 @@ function PlayerStatsOptions(props) {
                                                     onClick={toggleAllYearStats}
                                                     type="checkbox"
                                                     label="Show stats summary for all seasons since 2022"
+                                                    checked={allYearToggle}
                                                 />
                                             </Col>
                                         )}
