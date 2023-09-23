@@ -16,13 +16,13 @@ function PlayerStatsOverview(props) {
     return (
         <div id="player-stats-overview">
             <Accordion.Item eventKey="0">
-                <Accordion.Header id="stats-overview">OVERVIEW</Accordion.Header>
+                <Accordion.Header id="stats-overview">
+                    OVERVIEW
+                </Accordion.Header>
                 <Accordion.Body>
                     <div>
                         <h3>STATS</h3>
-                        <p id="totalGamesPlayed">
-                            Games played: {gamesPlayed}
-                        </p>
+                        <p id="totalGamesPlayed">Games played: {gamesPlayed}</p>
                         <p id="totalWins">Wins: {totalWins}</p>
                         <p id="totalLosses">Losses: {totalLosses}</p>
                         {average > -22 && average < 22 && (
@@ -31,8 +31,9 @@ function PlayerStatsOverview(props) {
                             </p>
                         )}
                         <p>
-                            {((totalWins / gamesPlayed) * 100).toFixed(0)}% win
-                            percentage
+                            {' '}
+                            Win percentage:{' '}
+                            {((totalWins / gamesPlayed) * 100).toFixed(0)}%
                         </p>
                         {biggestWin && totalWins > 0 && (
                             <p id="biggestWin">
