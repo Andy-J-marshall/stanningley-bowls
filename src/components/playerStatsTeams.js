@@ -89,7 +89,7 @@ function PlayerStatsTeams(props) {
                         )}
                         {wednesdayGames > 0 && (
                             <div>
-                                <h3>WEDNESDAY</h3>
+                                <h3>WEDNESDAY HALF HOLIDAY</h3>
                                 <p>Games: {wednesdayGames}</p>
                                 <p>Wins: {wednesdayWins}</p>
                                 <p>Losses: {wednesdayLosses}</p>

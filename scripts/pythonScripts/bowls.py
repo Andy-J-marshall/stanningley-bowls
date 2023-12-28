@@ -112,7 +112,6 @@ for day in teamDays:
     opponentAgg = 0
     results = []
     totalGamesPlayed = 0
-    gamesWithout54321ScoringSystem = 0
 
     for row in range(1, sheet.max_row + 1):
         # Leeds half holiday team only has 6 players
@@ -168,9 +167,6 @@ for day in teamDays:
         # Home games
         if row in homeRow:
             if row != leaguePositionRow:
-                if cupGame or 'leeds' not in day.lower():
-                    gamesWithout54321ScoringSystem += 1
-
                 opponent = sheet[awayTeamNameCol + str(row)].value
                 result = preferredTeamName + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
@@ -198,9 +194,6 @@ for day in teamDays:
         # Away games
         if row in awayRow:
             if row != leaguePositionRow:
-                if cupGame or 'leeds' not in day.lower():
-                    gamesWithout54321ScoringSystem += 1
-
                 opponent = sheet[homeTeamNameCol + str(row)].value
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
@@ -240,7 +233,6 @@ for day in teamDays:
         'cupLosses': cupLosses,
         'losses': homeLosses + awayLosses + cupLosses,
         'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
-        'gamesWithout54321ScoringSystem': gamesWithout54321ScoringSystem,
         'agg': teamAgg,
         'opponentAgg': opponentAgg,
         'leaguePosition': currentLeaguePosition,

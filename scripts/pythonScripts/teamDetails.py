@@ -9,6 +9,7 @@ preferredTeamName = 'Stanningley'
 # Days played
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds']
+# TODO add 'wednesday pairs airewharfe'
 
 # Every player (lowercase)
 players = [

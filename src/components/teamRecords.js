@@ -1,4 +1,5 @@
 import RecordsTableDisplay from './recordsTableDisplay';
+import config from '../config';
 
 function TeamRecords(props) {
     const teamResults = props.teamResults;
@@ -31,26 +32,16 @@ function TeamRecords(props) {
                 draws,
                 agg,
                 opponentAgg,
-                gamesWithout54321ScoringSystem,
                 totalGamesPlayed
             } = stats;
 
             const drawPercCalculator = draws > 0 ? draws * 0.5 : 0;
             const winPercentage = ((wins + drawPercCalculator) / totalGamesPlayed) * 100;
 
-            // TODO get this from config instead?
-            let gamesPerMatch = 8;
-            if (
-                day.toLowerCase().includes('leeds') &&
-                (day.toLowerCase().includes('wednesday') ||
-                    day.toLowerCase().includes('monday'))
-            ) {
-                gamesPerMatch = 6;
-            }
-
-            if (!day.toLowerCase().includes('leeds') && day.toLowerCase().includes('pairs')) {
-                gamesPerMatch = 4;
-            }
+            const team = config.teams.find(t => {
+                return t.name === config.days[day.toLowerCase()]
+            })
+            const gamesPerMatch = team?.numberOfGames ? team.numberOfGames : 8
 
             const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
             const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
@@ -59,7 +50,7 @@ function TeamRecords(props) {
                 if (aggPerGame !== bestTeamAggPerGame) {
                     bestTeamAggPerGameTeam.pop();
                 }
-                bestTeamAggPerGameTeam.push(`${day} (${totalGamesPlayed})`);
+                bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestTeamAggPerGame = aggPerGame;
             }
             if (
@@ -69,14 +60,14 @@ function TeamRecords(props) {
                 if (aggConcededPerGame !== lowestAggConcededPerGame) {
                     lowestAggConcededPerGameTeam.pop();
                 }
-                lowestAggConcededPerGameTeam.push(`${day} (${totalGamesPlayed})`);
+                lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 lowestAggConcededPerGame = aggConcededPerGame;
             }
             if (winPercentage >= bestWinPercentage && totalGamesPlayed >= minGames) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();
                 }
-                bestWinPercentageTeam.push(`${day} (${totalGamesPlayed})`);
+                bestWinPercentageTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestWinPercentage = winPercentage;
             }
         });

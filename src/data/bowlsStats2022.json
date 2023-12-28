@@ -2863,8 +2863,10 @@
     "teamResults": [
         {
             "day": "Monday Combined Leeds",
+            "totalGamesPlayed": 20,
             "awayWins": 5,
             "homeWins": 7,
+            "wins": 12,
             "awayLosses": 3,
             "homeLosses": 2,
             "homeDraws": 1,
@@ -2901,8 +2903,10 @@
         },
         {
             "day": "Tuesday Vets Leeds",
+            "totalGamesPlayed": 17,
             "awayWins": 7,
             "homeWins": 8,
+            "wins": 15,
             "awayLosses": 1,
             "homeLosses": 0,
             "homeDraws": 0,
@@ -2936,8 +2940,10 @@
         },
         {
             "day": "Thursday Vets Leeds",
+            "totalGamesPlayed": 13,
             "awayWins": 2,
             "homeWins": 5,
+            "wins": 7,
             "awayLosses": 4,
             "homeLosses": 1,
             "homeDraws": 0,
@@ -2967,8 +2973,10 @@
         },
         {
             "day": "Saturday Leeds",
+            "totalGamesPlayed": 18,
             "awayWins": 8,
             "homeWins": 8,
+            "wins": 17,
             "awayLosses": 0,
             "homeLosses": 0,
             "homeDraws": 0,

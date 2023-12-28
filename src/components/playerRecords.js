@@ -41,7 +41,7 @@ function PlayerRecords(props) {
     let bestTuesdayWinPerc = 0;
     let bestTuesdayWinPercPlayer = [];
 
-    // Wednesday
+    // Wednesday Half Holiday
     let useWednesdayStats = false;
     let minWedGames = 1;
     let mostWednesdayWinsPlayer = [];
@@ -282,7 +282,7 @@ function PlayerRecords(props) {
             }
         }
 
-        // Wednesday
+        // Wednesday Half Holiday
         if (wednesday) {
             useWednesdayStats = true;
             const wednesdayWins = wednesday.wins;
