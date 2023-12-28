@@ -50,6 +50,7 @@ export function returnPlayerStats(playersStats, player) {
         totalPairsHomePointsAgainst,
         totalPairsAwayPoints,
         totalPairsAwayPointsAgainst,
+        totalGamesPlayed
     } = stats;
     const p = playersStats[player];
 
@@ -67,7 +68,7 @@ export function returnPlayerStats(playersStats, player) {
     const biggestWin = findBiggestWin(results);
 
     // Games played
-    const gamesPlayed = totalLosses + totalWins;
+    const gamesPlayed = totalGamesPlayed;
     const homeGamesPlayed = homeWins + homeLosses;
     const awayGamesPlayed = awayWins + awayLosses;
     const cupGamesPlayed = cupWins + cupLosses;

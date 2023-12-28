@@ -381,10 +381,6 @@ for day in teamDays:
                 if not cupGame and 'leeds' in day.lower():
                     points = calculateGamePoints(aggregate)
                     opponentPoints = calculateGamePoints(opponentAggregate)
-                else:
-                    playerStats[playerName]['gamesWithout54321ScoringSystem'] += 1
-
-                # TODO also store singles games stats separately? 
                     
                 # Store player stats
                 playerNameForResult = playerName
