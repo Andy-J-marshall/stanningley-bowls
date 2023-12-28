@@ -7,6 +7,8 @@ import utils
 
 year = str(date.today().year)
 
+# TODO also in here
+
 leaguesDays = utils.teamDays
 players = utils.players
 duplicatePlayerNames = utils.duplicatePlayerNames
@@ -182,6 +184,7 @@ for league in leaguesDays:
                         playerResults[playerName]['totalPairsAgg'] += aggregate
                         playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
+                    playerResults[playerName]['totalGamesPlayed'] += 1
                     playersResult = playerNameForResult + ' ' + \
                         str(aggregate) + ' - ' + \
                         str(opponentAggregate) + ' ' + opponentsName

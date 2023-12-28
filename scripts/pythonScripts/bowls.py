@@ -106,11 +106,16 @@ for day in teamDays:
     awayDraws = 0
     cupWins = 0
     cupLosses = 0
+    wins = 0
+    draws = 0
+    losses = 0
     teamAgg = 0
     teamTotalPoints = 0
     opponentAgg = 0
     opponentTotalPoints = 0
     results = []
+    totalGamesPlayed = 0
+    gamesWithout54321ScoringSystem = 0
 
     for row in range(1, sheet.max_row + 1):
         # Leeds half holiday team only has 6 players
@@ -166,6 +171,9 @@ for day in teamDays:
         # Home games
         if row in homeRow:
             if row != leaguePositionRow:
+                if cupGame or 'leeds' not in day.lower():
+                    gamesWithout54321ScoringSystem += 1
+
                 opponent = sheet[awayTeamNameCol + str(row)].value
                 result = preferredTeamName + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
@@ -196,6 +204,9 @@ for day in teamDays:
         # Away games
         if row in awayRow:
             if row != leaguePositionRow:
+                if cupGame or 'leeds' not in day.lower():
+                    gamesWithout54321ScoringSystem += 1
+
                 opponent = sheet[homeTeamNameCol + str(row)].value
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
@@ -228,12 +239,17 @@ for day in teamDays:
         'day': day,
         'awayWins': awayWins,
         'homeWins': homeWins,
+        'wins': awayWins + homeWins + cupWins,
         'awayLosses': awayLosses,
         'homeLosses': homeLosses,
         'homeDraws': homeDraws,
         'awayDraws': awayDraws,
+        'draws': homeDraws + awayDraws,
         'cupWins': cupWins,
         'cupLosses': cupLosses,
+        'losses': homeLosses + awayLosses + cupLosses,
+        'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
+        'gamesWithout54321ScoringSystem': gamesWithout54321ScoringSystem,
         'agg': teamAgg,
         'totalPoints': teamTotalPoints,
         'opponentAgg': opponentAgg,
@@ -361,10 +377,15 @@ for day in teamDays:
                 playerName = formatName(playerName)
                 opponentsName = formatName(opponentsName)
 
-                if not cupGame:
+                # points only calculated for league games in Leeds leagues
+                if not cupGame and 'leeds' in day.lower():
                     points = calculateGamePoints(aggregate)
                     opponentPoints = calculateGamePoints(opponentAggregate)
+                else:
+                    playerStats[playerName]['gamesWithout54321ScoringSystem'] += 1
 
+                # TODO also store singles games stats separately? 
+                    
                 # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
@@ -378,6 +399,7 @@ for day in teamDays:
                     playerStats[playerName]['totalPairsPointsAgainst'] += opponentPoints
 
                 playerStats[playerName][day.lower()]['games'] += 1
+                playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
                     str(aggregate) + ' - ' + \

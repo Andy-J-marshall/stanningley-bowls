@@ -18,30 +18,12 @@ function TeamRecords(props) {
     // This sets the minimum number of games required for the stats to be counted
     if (teamResults) {
         teamResults.forEach((stats) => {
-            const {
-                awayWins,
-                homeWins,
-                cupWins,
-                awayLosses,
-                homeLosses,
-                cupLosses,
-                homeDraws,
-                awayDraws,
-            } = stats;
-            const totalGames =
-                awayWins +
-                homeWins +
-                cupWins +
-                awayLosses +
-                homeLosses +
-                cupLosses +
-                awayDraws +
-                homeDraws;
-            if (totalGames > minGames) {
-                if (totalGames >= 7) {
+            const { totalGamesPlayed } = stats;
+            if (totalGamesPlayed > minGames) {
+                if (totalGamesPlayed >= 7) {
                     minGames = 7;
                 } else {
-                    minGames = totalGames;
+                    minGames = totalGamesPlayed;
                 }
             }
         });
@@ -49,84 +31,86 @@ function TeamRecords(props) {
         teamResults.forEach((stats) => {
             const {
                 day,
-                awayWins,
-                homeWins,
-                cupWins,
-                awayLosses,
-                homeLosses,
-                cupLosses,
-                homeDraws,
-                awayDraws,
+                wins,
+                draws,
                 agg,
                 totalPoints,
                 opponentAgg,
                 opponentTotalPoints,
+                gamesWithout54321ScoringSystem,
+                totalGamesPlayed
             } = stats;
-            const wins = awayWins + homeWins + cupWins;
-            const losses = awayLosses + homeLosses + cupLosses;
-            const draws = awayDraws + homeDraws;
-            const totalGames = wins + losses + draws;
-            const drawPoints = draws > 0 ? draws * 0.5 : 0;
-            const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
-            const gamesPerMatch =
-                day.toLowerCase().includes('monday') ||
-                day.toLowerCase().includes('wednesday')
-                    ? 6
-                    : 8; // there are only 6 games on a Monday and Wednesday
+            const drawPoints = draws > 0 ? draws * 0.5 : 0;
+            const winPercentage = ((wins + drawPoints) / totalGamesPlayed) * 100;
+
+            // TODO get this from config instead?
+            let gamesPerMatch = 8;
+            if (
+                day.toLowerCase().includes('leeds') &&
+                (day.toLowerCase().includes('wednesday') ||
+                    day.toLowerCase().includes('monday'))
+            ) {
+                gamesPerMatch = 6;
+            }
+
+            if (!day.toLowerCase().includes('leeds') && day.toLowerCase().includes('pairs')) {
+                gamesPerMatch = 4;
+            }
+
             const pointsPerGame =
                 totalPoints /
                 gamesPerMatch /
-                (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
-            const aggPerGame = agg / gamesPerMatch / totalGames;
+                (totalGamesPlayed - gamesWithout54321ScoringSystem); // only league games in the Leeds league use 54321 scoring system
+            const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
             const pointsConcededPerGame =
                 opponentTotalPoints /
                 gamesPerMatch /
-                (totalGames - cupLosses - cupWins);
-            const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGames;
+                (totalGamesPlayed - gamesWithout54321ScoringSystem);
+            const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
 
-            if (aggPerGame >= bestTeamAggPerGame && totalGames >= minGames) {
+            if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
                 if (aggPerGame !== bestTeamAggPerGame) {
                     bestTeamAggPerGameTeam.pop();
                 }
-                bestTeamAggPerGameTeam.push(`${day} (${totalGames})`);
+                bestTeamAggPerGameTeam.push(`${day} (${totalGamesPlayed})`);
                 bestTeamAggPerGame = aggPerGame;
             }
             if (
                 pointsPerGame >= bestTeamPointsPerGame &&
-                totalGames >= minGames
+                totalGamesPlayed >= minGames
             ) {
                 if (pointsPerGame !== bestTeamPointsPerGame) {
                     bestTeamPointsPerGameTeam.pop();
                 }
-                bestTeamPointsPerGameTeam.push(`${day} (${totalGames})`);
+                bestTeamPointsPerGameTeam.push(`${day} (${totalGamesPlayed})`);
                 bestTeamPointsPerGame = pointsPerGame;
             }
             if (
                 pointsConcededPerGame <= fewestPointsConcededPerGame &&
-                totalGames >= minGames
+                totalGamesPlayed >= minGames
             ) {
                 if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
                     fewestPointsConcededPerGameTeam.pop();
                 }
-                fewestPointsConcededPerGameTeam.push(`${day} (${totalGames})`);
+                fewestPointsConcededPerGameTeam.push(`${day} (${totalGamesPlayed})`);
                 fewestPointsConcededPerGame = pointsConcededPerGame;
             }
             if (
                 aggConcededPerGame <= lowestAggConcededPerGame &&
-                totalGames >= minGames
+                totalGamesPlayed >= minGames
             ) {
                 if (aggConcededPerGame !== lowestAggConcededPerGame) {
                     lowestAggConcededPerGameTeam.pop();
                 }
-                lowestAggConcededPerGameTeam.push(`${day} (${totalGames})`);
+                lowestAggConcededPerGameTeam.push(`${day} (${totalGamesPlayed})`);
                 lowestAggConcededPerGame = aggConcededPerGame;
             }
-            if (winPercentage >= bestWinPercentage && totalGames >= minGames) {
+            if (winPercentage >= bestWinPercentage && totalGamesPlayed >= minGames) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();
                 }
-                bestWinPercentageTeam.push(`${day} (${totalGames})`);
+                bestWinPercentageTeam.push(`${day} (${totalGamesPlayed})`);
                 bestWinPercentage = winPercentage;
             }
         });

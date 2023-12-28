@@ -87,6 +87,11 @@ def returnListOfPlayerStats(days):
         playerObj = {
             'totalAgg': 0,
             'totalAggAgainst': 0,
+            # TODO using this?
+            # 'totalAvailableAgg': 0,
+            # 'totalAvailableAggAgainst': 0,
+            # 'totalAvailableHomeAgg': 0,
+            # 'totalAvailableAwayAgg': 0,
             'totalPairsAgg': 0,
             'totalPairsAggAgainst': 0,
             'totalHomeAgg': 0,
@@ -123,11 +128,13 @@ def returnListOfPlayerStats(days):
             'pairAwayLosses': 0,
             'pairCupWins': 0,
             'pairCupLosses': 0,
+            'totalGamesPlayed': 0,
             'dayPlayed': [],
             'pairsPartners': [],
             'winningPairsPartners': [],
             'losingPairsPartners': [],
             'results': [],
+            'gamesWithout54321ScoringSystem': 0
         }
 
         for team in days:
