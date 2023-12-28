@@ -81,8 +81,6 @@ function PlayerRecords(props) {
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
     let bestAverage = -21;
-    let bestPointsPlayer = [];
-    let bestPoints = 0;
 
     // Find the highest number of games played for each team
     let highestMonGames = 0;
@@ -443,7 +441,6 @@ function PlayerRecords(props) {
 
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-        const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
         
         if (highestTotalGames > minTotalGames) {
             if (highestTotalGames >= minGamesForOverallRecords) {
@@ -482,13 +479,6 @@ function PlayerRecords(props) {
             }
             bestAveragePlayer.push(`${player} (${totalGames})`);
         }
-        if (points >= bestPoints && playedMinGames) {
-            if (points > bestPoints) {
-                bestPointsPlayer = [];
-                bestPoints = points;
-            }
-            bestPointsPlayer.push(`${player} (${totalGames})`);
-        }
     });
 
     function allComponent() {
@@ -505,8 +495,6 @@ function PlayerRecords(props) {
                     bestWinPercPlayerOrTeam={bestWinPercPlayer}
                     bestAverage={bestAverage}
                     bestAveragePlayer={bestAveragePlayer}
-                    bestPoints={bestPoints}
-                    bestPointsPlayer={bestPointsPlayer}
                 />
             );
         } else {

@@ -11,14 +11,12 @@ test.beforeEach(async ({ page }) => {
 
 const players: Array<string> = [
   'Clifford Brogie',
-  'Mario Biancardo',
-  'Shirley Biancardo',
-  'Dave Hudson',
   'Jim Moorin',
   'Stewart Watson',
   'John Armitage',
   'Duncan McPhail',
-  'Joey Broadbent',
+  'Peter Crowther',
+  'Andy Marshall'
 ];
 
 // TODO have to figure out why these aren't working. Possibly a race condition?

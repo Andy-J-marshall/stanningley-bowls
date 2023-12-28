@@ -11,8 +11,6 @@ export function returnPlayerStats(playersStats, player) {
         totalAggAgainst,
         totalPairsAgg,
         totalPairsAggAgainst,
-        totalPoints,
-        totalPointsAgainst,
         awayLosses,
         homeLosses,
         cupLosses,
@@ -34,22 +32,12 @@ export function returnPlayerStats(playersStats, player) {
         totalHomeAggAgainst,
         totalAwayAgg,
         totalAwayAggAgainst,
-        totalHomePoints,
-        totalHomePointsAgainst,
-        totalAwayPoints,
-        totalAwayPointsAgainst,
         results,
         dayPlayed,
         totalPairsHomeAgg,
         totalPairsHomeAggAgainst,
         totalPairsAwayAgg,
         totalPairsAwayAggAgainst,
-        totalPairsPoints,
-        totalPairsPointsAgainst,
-        totalPairsHomePoints,
-        totalPairsHomePointsAgainst,
-        totalPairsAwayPoints,
-        totalPairsAwayPointsAgainst,
         totalGamesPlayed
     } = stats;
     const p = playersStats[player];
@@ -92,15 +80,6 @@ export function returnPlayerStats(playersStats, player) {
     const cupAggAgainst =
         totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
-
-    // Points
-    const averagePoints = totalPoints / (gamesPlayed - cupGamesPlayed);
-    const averagePointsAgainst =
-        totalPointsAgainst / (gamesPlayed - cupGamesPlayed);
-    const homeAveragePoints = totalHomePoints / homeGamesPlayed;
-    const homeAveragePointsAgainst = totalHomePointsAgainst / homeGamesPlayed;
-    const awayAveragePoints = totalAwayPoints / awayGamesPlayed;
-    const awayAveragePointsAgainst = totalAwayPointsAgainst / awayGamesPlayed;
 
     // Stats per league
     const mondayWins = monday.wins;
@@ -211,44 +190,6 @@ export function returnPlayerStats(playersStats, player) {
     const pairsCupAverage =
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
-    // Pairs points
-    const pairsAveragePoints = totalPairsPoints / pairsGames - pairCupGamesPlayed;
-    const pairsAveragePointsAgainst = totalPairsPointsAgainst / pairsGames - pairCupGamesPlayed;
-
-    const pairsHomeAveragePoints = totalPairsHomePoints / pairHomeGamesPlayed;
-    const pairsHomeAveragePointsAgainst =
-        totalPairsHomePointsAgainst / pairHomeGamesPlayed;
-    const pairsAwayAveragePoints = totalPairsAwayPoints / pairAwayGamesPlayed;
-    const pairsAwayAveragePointsAgainst =
-        totalPairsAwayPointsAgainst / pairAwayGamesPlayed;
-
-    // Singles points
-    const totalSinglesHomePoints = totalHomePoints - totalPairsHomePoints;
-    const totalSinglesHomePointsAgainst =
-        totalHomePointsAgainst - totalPairsHomePointsAgainst;
-    const totalSinglesAwayPoints = totalAwayPoints - totalPairsAwayPoints;
-    const totalSinglesAwayPointsAgainst =
-        totalAwayPointsAgainst - totalPairsAwayPointsAgainst;
-    const totalSinglesPoints = totalSinglesHomePoints + totalSinglesAwayPoints;
-    const totalSinglesPointsAgainst =
-        totalSinglesHomePointsAgainst + totalSinglesAwayPointsAgainst;
-
-    // Singles average points
-    const singlesAveragePoints =
-        totalSinglesPoints / (gamesPlayed - pairsGames - cupGamesPlayed);
-    const singlesAveragePointsAgainst =
-        totalSinglesPointsAgainst / (gamesPlayed - pairsGames - cupGamesPlayed);
-
-    const singlesHomeAveragePoints =
-        (totalHomePoints - totalPairsHomePoints) / singlesHomeGamesPlayed;
-    const singlesHomeAveragePointsAgainst =
-        (totalHomePointsAgainst - totalPairsHomePointsAgainst) /
-        singlesHomeGamesPlayed;
-
-    const singlesAwayAveragePoints =
-        totalSinglesAwayPoints / (awayGamesPlayed - pairAwayGamesPlayed);
-    const singlesAwayAveragePointsAgainst =
-        totalSinglesAwayPointsAgainst / (awayGamesPlayed - pairAwayGamesPlayed);
 
     return {
         totalAgg,
@@ -275,36 +216,6 @@ export function returnPlayerStats(playersStats, player) {
         totalSinglesCupAggAgainst,
         cupAgg,
         cupAggAgainst,
-        totalPoints,
-        totalPointsAgainst,
-        totalHomePoints,
-        totalHomePointsAgainst,
-        totalAwayPoints,
-        totalAwayPointsAgainst,
-        pairsAveragePoints,
-        pairsAveragePointsAgainst,
-        pairsHomeAveragePoints,
-        pairsHomeAveragePointsAgainst,
-        pairsAwayAveragePoints,
-        pairsAwayAveragePointsAgainst,
-        totalPairsPoints,
-        totalPairsPointsAgainst,
-        totalPairsHomePoints,
-        totalPairsHomePointsAgainst,
-        totalPairsAwayPoints,
-        totalPairsAwayPointsAgainst,
-        singlesAveragePoints,
-        singlesAveragePointsAgainst,
-        singlesHomeAveragePoints,
-        singlesHomeAveragePointsAgainst,
-        singlesAwayAveragePoints,
-        singlesAwayAveragePointsAgainst,
-        totalSinglesPoints,
-        totalSinglesPointsAgainst,
-        totalSinglesHomePoints,
-        totalSinglesHomePointsAgainst,
-        totalSinglesAwayPoints,
-        totalSinglesAwayPointsAgainst,
         awayLosses,
         homeLosses,
         pairLosses,
@@ -345,12 +256,6 @@ export function returnPlayerStats(playersStats, player) {
         pairsHomeAverage,
         pairsAwayAverage,
         pairsCupAverage,
-        averagePoints,
-        averagePointsAgainst,
-        homeAveragePoints,
-        homeAveragePointsAgainst,
-        awayAveragePoints,
-        awayAveragePointsAgainst,
         mondayWins,
         mondayLosses,
         mondayGames,

@@ -16,8 +16,6 @@ function StatsTableDisplay(props) {
     const awayDraws = props.awayDraws || 0;
     const agg = props.agg;
     const opponentAgg = props.opponentAgg;
-    const teamPoints = props.teamPoints;
-    const opponentTeamPoints = props.opponentTeamPoints;
     const leaguePosition = props.leaguePosition;
 
     return (
@@ -95,18 +93,6 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Opponent aggregate</td>
                             <td>{opponentAgg}</td>
-                        </tr>
-                    ) : null}
-                    {teamPoints > 0 ? (
-                        <tr>
-                            <td>{config.teamNames.short} points*</td>
-                            <td>{teamPoints}</td>
-                        </tr>
-                    ) : null}
-                    {opponentTeamPoints > 0 ? (
-                        <tr>
-                            <td>Opponent points*</td>
-                            <td>{opponentTeamPoints}</td>
                         </tr>
                     ) : null}
                 </tbody>

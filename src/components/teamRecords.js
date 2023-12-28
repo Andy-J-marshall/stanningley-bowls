@@ -5,12 +5,8 @@ function TeamRecords(props) {
 
     let bestWinPercentage = -1;
     let bestWinPercentageTeam = [];
-    let bestTeamPointsPerGame = -1;
-    let bestTeamPointsPerGameTeam = [];
     let bestTeamAggPerGame = -1;
     let bestTeamAggPerGameTeam = [];
-    let fewestPointsConcededPerGame = 100;
-    let fewestPointsConcededPerGameTeam = [];
     let lowestAggConcededPerGame = 1000;
     let lowestAggConcededPerGameTeam = [];
     let minGames = 1;
@@ -34,15 +30,13 @@ function TeamRecords(props) {
                 wins,
                 draws,
                 agg,
-                totalPoints,
                 opponentAgg,
-                opponentTotalPoints,
                 gamesWithout54321ScoringSystem,
                 totalGamesPlayed
             } = stats;
 
-            const drawPoints = draws > 0 ? draws * 0.5 : 0;
-            const winPercentage = ((wins + drawPoints) / totalGamesPlayed) * 100;
+            const drawPercCalculator = draws > 0 ? draws * 0.5 : 0;
+            const winPercentage = ((wins + drawPercCalculator) / totalGamesPlayed) * 100;
 
             // TODO get this from config instead?
             let gamesPerMatch = 8;
@@ -58,15 +52,7 @@ function TeamRecords(props) {
                 gamesPerMatch = 4;
             }
 
-            const pointsPerGame =
-                totalPoints /
-                gamesPerMatch /
-                (totalGamesPlayed - gamesWithout54321ScoringSystem); // only league games in the Leeds league use 54321 scoring system
             const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
-            const pointsConcededPerGame =
-                opponentTotalPoints /
-                gamesPerMatch /
-                (totalGamesPlayed - gamesWithout54321ScoringSystem);
             const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
 
             if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
@@ -75,26 +61,6 @@ function TeamRecords(props) {
                 }
                 bestTeamAggPerGameTeam.push(`${day} (${totalGamesPlayed})`);
                 bestTeamAggPerGame = aggPerGame;
-            }
-            if (
-                pointsPerGame >= bestTeamPointsPerGame &&
-                totalGamesPlayed >= minGames
-            ) {
-                if (pointsPerGame !== bestTeamPointsPerGame) {
-                    bestTeamPointsPerGameTeam.pop();
-                }
-                bestTeamPointsPerGameTeam.push(`${day} (${totalGamesPlayed})`);
-                bestTeamPointsPerGame = pointsPerGame;
-            }
-            if (
-                pointsConcededPerGame <= fewestPointsConcededPerGame &&
-                totalGamesPlayed >= minGames
-            ) {
-                if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
-                    fewestPointsConcededPerGameTeam.pop();
-                }
-                fewestPointsConcededPerGameTeam.push(`${day} (${totalGamesPlayed})`);
-                fewestPointsConcededPerGame = pointsConcededPerGame;
             }
             if (
                 aggConcededPerGame <= lowestAggConcededPerGame &&
@@ -115,7 +81,7 @@ function TeamRecords(props) {
             }
         });
 
-        if (fewestPointsConcededPerGameTeam.length > 0) {
+        if (bestTeamAggPerGame >= 0) {
             return (
                 <div id="team-record" className="center">
                     <br />
@@ -125,14 +91,6 @@ function TeamRecords(props) {
                         playerOrTeam="Team"
                         bestWinPerc={bestWinPercentage}
                         bestWinPercPlayerOrTeam={bestWinPercentageTeam}
-                        bestTeamPointsPerGame={bestTeamPointsPerGame}
-                        bestTeamPointsPerGameTeam={bestTeamPointsPerGameTeam}
-                        fewestPointsConcededPerGame={
-                            fewestPointsConcededPerGame
-                        }
-                        fewestPointsConcededPerGameTeam={
-                            fewestPointsConcededPerGameTeam
-                        }
                         bestTeamAggPerGame={bestTeamAggPerGame}
                         bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
                         lowestAggConcededPerGame={lowestAggConcededPerGame}

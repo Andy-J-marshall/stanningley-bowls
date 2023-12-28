@@ -25,7 +25,7 @@ test('All players appear by default', async () => {
 });
 
 test(`Stats search bar can show all player stats`, async () => {
-  await playerStatsPage.searchForPlayer('Donald Shaw');
+  await playerStatsPage.searchForPlayer('Paul Bowes');
   await playerStatsPage.checkPlayerIsReturned();
 
   await playerStatsPage.searchForPlayer('Show All');

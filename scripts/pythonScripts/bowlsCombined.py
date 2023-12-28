@@ -86,8 +86,6 @@ for league in leaguesDays:
             # reset variable values
             aggregate = 0
             opponentAggregate = 0
-            points = 0
-            opponentPoints = 0
             secondOpponent = ''
             playerName = ''
             opponentsName = ''

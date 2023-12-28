@@ -23,9 +23,7 @@ describe('#Players Tests', () => {
     beforeEach(() => {
       playerStats = {
         'paul bowes': {
-          totalPoints: 173,
           totalAgg: 841,
-          totalPointsAgainst: 81,
           totalAggAgainst: 457,
           homeWins: 18,
           homeLosses: 3,
@@ -107,10 +105,6 @@ describe('#Players Tests', () => {
           totalHomeAggAgainst: 205,
           totalAwayAgg: 343,
           totalAwayAggAgainst: 224,
-          totalHomePoints: 96,
-          totalHomePointsAgainst: 36,
-          totalAwayPoints: 77,
-          totalAwayPointsAgainst: 45,
           cupWins: 4,
           cupLosses: 0,
           results: [
@@ -198,23 +192,6 @@ describe('#Players Tests', () => {
       expect(pairsAvg.toFixed(2)).to.equal('3.00');
     });
 
-    it('Average points', () => {
-      const {
-        averagePoints,
-        averagePointsAgainst,
-        homeAveragePoints,
-        homeAveragePointsAgainst,
-        awayAveragePoints,
-        awayAveragePointsAgainst,
-      } = stats;
-      expect(averagePoints.toFixed(2)).to.equal('4.55');
-      expect(averagePointsAgainst.toFixed(2)).to.equal('2.13');
-      expect(homeAveragePoints.toFixed(2)).to.equal('4.57');
-      expect(homeAveragePointsAgainst.toFixed(2)).to.equal('1.71');
-      expect(awayAveragePoints.toFixed(2)).to.equal('4.53');
-      expect(awayAveragePointsAgainst.toFixed(2)).to.equal('2.65');
-    });
-
     it('Wins', () => {
       const { totalWins, homeWins, awayWins, cupWins } = stats;
       expect(totalWins).to.equal(33);
@@ -258,23 +235,6 @@ describe('#Players Tests', () => {
       expect(singlesAggAgainst).to.equal(317);
       expect(totalPairsAgg).to.equal(167);
       expect(totalPairsAggAgainst).to.equal(140);
-    });
-
-    it('Points show correctly', () => {
-      const {
-        totalPoints,
-        totalPointsAgainst,
-        totalHomePoints,
-        totalHomePointsAgainst,
-        totalAwayPoints,
-        totalAwayPointsAgainst,
-      } = stats;
-      expect(totalPoints).to.equal(173);
-      expect(totalHomePoints).to.equal(96);
-      expect(totalAwayPoints).to.equal(77);
-      expect(totalPointsAgainst).to.equal(81);
-      expect(totalHomePointsAgainst).to.equal(36);
-      expect(totalAwayPointsAgainst).to.equal(45);
     });
 
     it('Results listed correctly', () => {

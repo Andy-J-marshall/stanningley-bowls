@@ -20,22 +20,6 @@ teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
 
-def calculateGamePoints(points):
-    if points == 21:
-        gamePoints = 5
-    if points < 5:
-        gamePoints = 0
-    if points >= 5 and points < 10:
-        gamePoints = 1
-    if points >= 10 and points < 15:
-        gamePoints = 2
-    if points >= 15 and points < 18:
-        gamePoints = 3
-    if points >= 18 and points < 21:
-        gamePoints = 4
-    return gamePoints
-
-
 def findHtmlFiles():
     files = []
     for team in teamDays:
@@ -102,18 +86,6 @@ def returnListOfPlayerStats(days):
             'totalAwayAggAgainst': 0,
             'totalPairsAwayAgg': 0,
             'totalPairsAwayAggAgainst': 0,
-            'totalPoints': 0,
-            'totalPointsAgainst': 0,
-            'totalPairsPoints': 0,
-            'totalPairsPointsAgainst': 0,
-            'totalHomePoints': 0,
-            'totalHomePointsAgainst': 0,
-            'totalPairsHomePoints': 0,
-            'totalPairsHomePointsAgainst': 0,
-            'totalAwayPoints': 0,
-            'totalAwayPointsAgainst': 0,
-            'totalPairsAwayPoints': 0,
-            'totalPairsAwayPointsAgainst': 0,
             'homeWins': 0,
             'homeLosses': 0,
             'awayWins': 0,
@@ -134,7 +106,6 @@ def returnListOfPlayerStats(days):
             'winningPairsPartners': [],
             'losingPairsPartners': [],
             'results': [],
-            'gamesWithout54321ScoringSystem': 0
         }
 
         for team in days:

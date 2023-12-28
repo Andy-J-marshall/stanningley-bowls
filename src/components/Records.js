@@ -22,7 +22,6 @@ function Records(props) {
             <p className="footnote">
                 ** The number in brackets indicates the number of games played.
             </p>
-            <p className="footnote">*** {config.leagueRules}</p>
         </div>
     );
 }

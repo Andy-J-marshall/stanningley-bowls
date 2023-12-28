@@ -139,7 +139,6 @@ function TeamStats(props) {
                 team6Component={returnTeam6Component()}
             />
             <br />
-            <p className="footnote">* {config.leagueRules}</p>
         </div>
     );
 }

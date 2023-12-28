@@ -19,9 +19,7 @@ function IndividualTeamStats(props) {
             homeDraws,
             awayDraws,
             agg,
-            totalPoints,
             opponentAgg,
-            opponentTotalPoints,
             leaguePosition,
         } = stats;
 
@@ -54,8 +52,6 @@ function IndividualTeamStats(props) {
                         totalDraws={totalDraws}
                         agg={agg}
                         opponentAgg={opponentAgg}
-                        teamPoints={totalPoints}
-                        opponentTeamPoints={opponentTotalPoints}
                         homeWins={homeWins}
                         awayWins={awayWins}
                         cupWins={cupWins}
