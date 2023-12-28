@@ -56,10 +56,10 @@ export function returnPlayerStats(playersStats, player) {
     const biggestWin = findBiggestWin(results);
 
     // Games played
-    const gamesPlayed = totalGamesPlayed;
     const homeGamesPlayed = homeWins + homeLosses;
     const awayGamesPlayed = awayWins + awayLosses;
     const cupGamesPlayed = cupWins + cupLosses;
+    const gamesPlayed = homeGamesPlayed + awayGamesPlayed + cupGamesPlayed;
     const pairsGames = pairLosses + pairWins;
     const singlesGames = gamesPlayed - pairsGames;
 
