@@ -127,7 +127,7 @@ function App() {
                     />
                     <Route
                         path="/stats/records"
-                        element={<records stats={teamStats} />}
+                        element={<Records stats={teamStats} />}
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
