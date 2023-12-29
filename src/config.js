@@ -25,7 +25,8 @@ const live = {
             desc: '4 singles games and 2 pairs',
             link: 'https://bowlsnet.uk/Leeds-MonComb',
             startTime: '6:15-6.45pm',
-            numberOfGames: 6
+            numberOfGames: 6,
+            games21UpBool: true
         },
         {
             name: 'Tuesday Vets',
@@ -33,7 +34,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/LeedsParkVets-Tue',
             startTime: '1:30pm',
-            numberOfGames: 8
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
             name: 'Tuesday',
@@ -41,7 +43,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/Leeds-Tue',
             startTime: '6:15-6.45pm',
-            numberOfGames: 8
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
             name: 'Wednesday Half Holiday',
@@ -49,7 +52,8 @@ const live = {
             desc: '6 singles games',
             link: 'https://bowlsnet.uk/Leeds-Wed',
             startTime: '1:30pm',
-            numberOfGames: 6
+            numberOfGames: 6,
+            games21UpBool: true
         },
         {
             name: 'Wednesday Pairs',
@@ -57,7 +61,8 @@ const live = {
             desc: '4 pairs games',
             link: 'https://bowlsnet.uk/AW-WedPairs',
             startTime: '6:15-7pm',
-            numberOfGames: 4
+            numberOfGames: 4,
+            games21UpBool: false
         },
         {
             name: 'Thursday Vets',
@@ -65,7 +70,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/LeedsParkVets-Thu',
             startTime: '1:30pm',
-            numberOfGames: 8
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
             name: 'Saturday',
@@ -73,7 +79,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/Leeds-Sat',
             startTime: '2pm',
-            numberOfGames: 8
+            numberOfGames: 8,
+            games21UpBool: true
         },
     ],
     days: {

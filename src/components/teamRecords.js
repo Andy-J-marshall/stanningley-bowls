@@ -46,34 +46,34 @@ function TeamRecords(props) {
             const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
             const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
 
-            // TODO need to exclude AW pairs from this?
-            if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
-                if (aggPerGame !== bestTeamAggPerGame) {
-                    bestTeamAggPerGameTeam.pop();
-                }
-                bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
-                bestTeamAggPerGame = aggPerGame;
-            }
-
-            // TODO need to exclude AW pairs from this?
-            if (
-                aggConcededPerGame <= lowestAggConcededPerGame &&
-                totalGamesPlayed >= minGames
-            ) {
-                if (aggConcededPerGame !== lowestAggConcededPerGame) {
-                    lowestAggConcededPerGameTeam.pop();
-                }
-                lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
-                lowestAggConcededPerGame = aggConcededPerGame;
-            }
-
-            // TODO add in stat for best winning margin?
             if (winPercentage >= bestWinPercentage && totalGamesPlayed >= minGames) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();
                 }
                 bestWinPercentageTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestWinPercentage = winPercentage;
+            }
+
+            // Excludes teams that don't play to 21 as these stats won't make sense otherwise
+            if (team.games21UpBool) {
+                if (
+                    aggConcededPerGame <= lowestAggConcededPerGame &&
+                    totalGamesPlayed >= minGames
+                ) {
+                    if (aggConcededPerGame !== lowestAggConcededPerGame) {
+                        lowestAggConcededPerGameTeam.pop();
+                    }
+                    lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    lowestAggConcededPerGame = aggConcededPerGame;
+                }
+
+                if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
+                    if (aggPerGame !== bestTeamAggPerGame) {
+                        bestTeamAggPerGameTeam.pop();
+                    }
+                    bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    bestTeamAggPerGame = aggPerGame;
+                }
             }
         });
 
