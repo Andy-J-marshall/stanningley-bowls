@@ -3,6 +3,12 @@
         "alison": {
             "totalAgg": 512,
             "totalAggAgainst": 419,
+            "availableAgg": 567,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 252,
+            "availableAwayAgg": 231,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 235,
@@ -89,7 +95,6 @@
                 "alison 21 - 6 david l miller",
                 "alison 21 - 8 david abbott"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -124,6 +129,12 @@
         "alyssa randell": {
             "totalAgg": 632,
             "totalAggAgainst": 517,
+            "availableAgg": 756,
+            "availablePairsAgg": 357,
+            "availableHomeAgg": 420,
+            "availableAwayAgg": 315,
+            "availablePairsHomeAgg": 189,
+            "availablePairsAwayAgg": 168,
             "totalPairsAgg": 305,
             "totalPairsAggAgainst": 233,
             "totalHomeAgg": 391,
@@ -265,7 +276,6 @@
                 "alyssa randell 21 - 11 frank tempest",
                 "alyssa randell 7 - 21 bob emerson"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 18,
                 "wins": 12,
@@ -300,6 +310,12 @@
         "andy marshall": {
             "totalAgg": 999,
             "totalAggAgainst": 719,
+            "availableAgg": 1071,
+            "availablePairsAgg": 315,
+            "availableHomeAgg": 504,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 168,
+            "availablePairsAwayAgg": 147,
             "totalPairsAgg": 279,
             "totalPairsAggAgainst": 208,
             "totalHomeAgg": 491,
@@ -467,7 +483,6 @@
                 "andy marshall 21 - 15 john hindle",
                 "andy marshall 11 - 21 danny towning"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 17,
                 "wins": 12,
@@ -502,6 +517,12 @@
         "andy waller": {
             "totalAgg": 945,
             "totalAggAgainst": 731,
+            "availableAgg": 1050,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 420,
+            "availableAwayAgg": 483,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 407,
@@ -634,7 +655,6 @@
                 "andy waller 21 - 10 oliver devaney",
                 "andy waller 21 - 9 peter colley"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 1,
                 "wins": 1,
@@ -669,6 +689,12 @@
         "carole mcdermott": {
             "totalAgg": 16,
             "totalAggAgainst": 42,
+            "availableAgg": 42,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 42,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 0,
@@ -705,7 +731,6 @@
                 "carole mcdermott 5 - 21 bill pyett",
                 "carole mcdermott 11 - 21 glenda holmes"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -740,6 +765,12 @@
         "clifford brogie": {
             "totalAgg": 282,
             "totalAggAgainst": 283,
+            "availableAgg": 336,
+            "availablePairsAgg": 126,
+            "availableHomeAgg": 126,
+            "availableAwayAgg": 210,
+            "availablePairsHomeAgg": 42,
+            "availablePairsAwayAgg": 84,
             "totalPairsAgg": 103,
             "totalPairsAggAgainst": 107,
             "totalHomeAgg": 110,
@@ -819,7 +850,6 @@
                 "clifford brogie 14 - 21 les oddy",
                 "clifford brogie 12 - 21 barbara nellis"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 9,
                 "wins": 5,
@@ -854,6 +884,12 @@
         "colin haque": {
             "totalAgg": 283,
             "totalAggAgainst": 431,
+            "availableAgg": 462,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 231,
+            "availableAwayAgg": 210,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 167,
@@ -930,7 +966,6 @@
                 "colin haque 17 - 21 peter colley",
                 "colin haque 12 - 21 david hurd"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -965,6 +1000,12 @@
         "craig clarkson": {
             "totalAgg": 333,
             "totalAggAgainst": 292,
+            "availableAgg": 399,
+            "availablePairsAgg": 231,
+            "availableHomeAgg": 210,
+            "availableAwayAgg": 189,
+            "availablePairsHomeAgg": 126,
+            "availablePairsAwayAgg": 105,
             "totalPairsAgg": 193,
             "totalPairsAggAgainst": 163,
             "totalHomeAgg": 179,
@@ -1060,7 +1101,6 @@
                 "craig clarkson 21 - 12 john ackroyd",
                 "craig clarkson 17 - 21 mark wilson"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 17,
                 "wins": 11,
@@ -1095,6 +1135,12 @@
         "dave hudson": {
             "totalAgg": 21,
             "totalAggAgainst": 13,
+            "availableAgg": 21,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 0,
@@ -1129,7 +1175,6 @@
             "results": [
                 "dave hudson 21 - 13 cliff roy"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1164,6 +1209,12 @@
         "david eaton": {
             "totalAgg": 751,
             "totalAggAgainst": 556,
+            "availableAgg": 840,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 357,
+            "availableAwayAgg": 357,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 344,
@@ -1276,7 +1327,6 @@
                 "david eaton 21 - 19 david turner",
                 "david eaton 21 - 11 julie keightley"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1311,6 +1361,12 @@
         "derek wilson": {
             "totalAgg": 177,
             "totalAggAgainst": 252,
+            "availableAgg": 294,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 126,
+            "availableAwayAgg": 126,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 79,
@@ -1371,7 +1427,6 @@
                 "derek wilson 6 - 21 mick hall",
                 "derek wilson 9 - 21 george bentley"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1406,6 +1461,12 @@
         "donald shaw": {
             "totalAgg": 231,
             "totalAggAgainst": 220,
+            "availableAgg": 273,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 126,
+            "availableAwayAgg": 126,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 112,
@@ -1464,7 +1525,6 @@
                 "donald shaw 21 - 20 derek howell",
                 "donald shaw 5 - 21 sandra deegan"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1499,6 +1559,12 @@
         "duncan mcphail": {
             "totalAgg": 429,
             "totalAggAgainst": 241,
+            "availableAgg": 441,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 189,
+            "availableAwayAgg": 168,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 187,
@@ -1573,7 +1639,6 @@
                 "duncan mcphail 21 - 14 anne lucas",
                 "duncan mcphail 21 - 13 tony groves"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1608,6 +1673,12 @@
         "jack roberts": {
             "totalAgg": 45,
             "totalAggAgainst": 53,
+            "availableAgg": 63,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 21,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 13,
@@ -1646,7 +1717,6 @@
                 "jack roberts 11 - 21 paul wood",
                 "jack roberts 21 - 11 douglas taylor"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1681,6 +1751,12 @@
         "jim moorin": {
             "totalAgg": 385,
             "totalAggAgainst": 323,
+            "availableAgg": 462,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 189,
+            "availableAwayAgg": 189,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 153,
@@ -1757,7 +1833,6 @@
                 "jim moorin 21 - 6 joan crampton",
                 "jim moorin 21 - 20 jim jordan"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1792,6 +1867,12 @@
         "joey broadbent": {
             "totalAgg": 84,
             "totalAggAgainst": 35,
+            "availableAgg": 84,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 63,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 63,
@@ -1832,7 +1913,6 @@
                 "joey broadbent 21 - 7 geoff warburton",
                 "joey broadbent 21 - 14 dougie cooper"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1867,6 +1947,12 @@
         "john armitage": {
             "totalAgg": 343,
             "totalAggAgainst": 190,
+            "availableAgg": 357,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 147,
+            "availableAwayAgg": 126,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 147,
@@ -1933,7 +2019,6 @@
                 "john armitage 21 - 8 sylvia bickerdike",
                 "john armitage 11 - 21 paul hatch"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -1968,6 +2053,12 @@
         "ken green": {
             "totalAgg": 142,
             "totalAggAgainst": 262,
+            "availableAgg": 273,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 105,
+            "availableAwayAgg": 168,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 49,
@@ -2026,7 +2117,6 @@
                 "ken green 9 - 21 alison lockwood",
                 "ken green 6 - 21 john townsend"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -2061,6 +2151,12 @@
         "kevin waller": {
             "totalAgg": 196,
             "totalAggAgainst": 204,
+            "availableAgg": 252,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 126,
+            "availableAwayAgg": 105,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 114,
@@ -2117,7 +2213,6 @@
                 "kevin waller 19 - 21 martin huxley",
                 "kevin waller 9 - 21 ian wood"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -2152,6 +2247,12 @@
         "laila packer": {
             "totalAgg": 34,
             "totalAggAgainst": 63,
+            "availableAgg": 63,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 21,
+            "availableAwayAgg": 42,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 12,
@@ -2190,7 +2291,6 @@
                 "laila packer 17 - 21 brian scholes",
                 "laila packer 5 - 21 daphne scott"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -2225,6 +2325,12 @@
         "malvin miller": {
             "totalAgg": 750,
             "totalAggAgainst": 768,
+            "availableAgg": 945,
+            "availablePairsAgg": 147,
+            "availableHomeAgg": 483,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 63,
+            "availablePairsAwayAgg": 84,
             "totalPairsAgg": 81,
             "totalPairsAggAgainst": 130,
             "totalHomeAgg": 418,
@@ -2364,7 +2470,6 @@
                 "malvin miller 16 - 21 dave hudson",
                 "malvin miller 21 - 14 barbara gray"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 14,
                 "wins": 3,
@@ -2399,6 +2504,12 @@
         "mario biancardo": {
             "totalAgg": 1876,
             "totalAggAgainst": 1047,
+            "availableAgg": 1911,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 798,
+            "availableAwayAgg": 840,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 783,
@@ -2613,7 +2724,6 @@
                 "mario biancardo 21 - 18 derek mccormack",
                 "mario biancardo 21 - 11 paul hatch"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 18,
                 "wins": 15,
@@ -2648,6 +2758,12 @@
         "michael haigh": {
             "totalAgg": 0,
             "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 0,
@@ -2678,7 +2794,6 @@
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -2713,6 +2828,12 @@
         "paul bowes": {
             "totalAgg": 732,
             "totalAggAgainst": 486,
+            "availableAgg": 798,
+            "availablePairsAgg": 105,
+            "availableHomeAgg": 336,
+            "availableAwayAgg": 336,
+            "availablePairsHomeAgg": 105,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 105,
             "totalPairsAggAgainst": 52,
             "totalHomeAgg": 331,
@@ -2833,7 +2954,6 @@
                 "paul bowes 21 - 6 anne m miller",
                 "paul bowes 21 - 14 jason potter"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 13,
                 "wins": 9,
@@ -2868,6 +2988,12 @@
         "paul leonard": {
             "totalAgg": 646,
             "totalAggAgainst": 653,
+            "availableAgg": 798,
+            "availablePairsAgg": 147,
+            "availableHomeAgg": 378,
+            "availableAwayAgg": 399,
+            "availablePairsHomeAgg": 42,
+            "availablePairsAwayAgg": 105,
             "totalPairsAgg": 112,
             "totalPairsAggAgainst": 131,
             "totalHomeAgg": 331,
@@ -2993,7 +3119,6 @@
                 "paul leonard 4 - 21 daniel howcroft",
                 "paul leonard 10 - 21 phil mcstay"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 17,
                 "wins": 9,
@@ -3028,6 +3153,12 @@
         "peter crowther": {
             "totalAgg": 381,
             "totalAggAgainst": 278,
+            "availableAgg": 399,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 168,
+            "availableAwayAgg": 147,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 159,
@@ -3098,7 +3229,6 @@
                 "peter crowther 21 - 10 glennys ash",
                 "peter crowther 21 - 10 brian thompson"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -3133,6 +3263,12 @@
         "robin mcdermott": {
             "totalAgg": 16,
             "totalAggAgainst": 63,
+            "availableAgg": 63,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 63,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 0,
@@ -3171,7 +3307,6 @@
                 "robin mcdermott 8 - 21 david ryder",
                 "robin mcdermott 4 - 21 ian macfarlane"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -3206,6 +3341,12 @@
         "shirley biancardo": {
             "totalAgg": 1853,
             "totalAggAgainst": 1027,
+            "availableAgg": 1932,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 819,
+            "availableAwayAgg": 840,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 797,
@@ -3422,7 +3563,6 @@
                 "shirley biancardo 21 - 14 arthur horne",
                 "shirley biancardo 21 - 10 jim bootland"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 19,
                 "wins": 16,
@@ -3457,6 +3597,12 @@
         "steve gardner": {
             "totalAgg": 1122,
             "totalAggAgainst": 677,
+            "availableAgg": 1197,
+            "availablePairsAgg": 21,
+            "availableHomeAgg": 441,
+            "availableAwayAgg": 504,
+            "availablePairsHomeAgg": 21,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 21,
             "totalPairsAggAgainst": 18,
             "totalHomeAgg": 438,
@@ -3607,7 +3753,6 @@
                 "steve gardner 14 - 21 mark rastrick",
                 "steve gardner 21 - 8 stephanie wood"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 1,
                 "wins": 1,
@@ -3642,6 +3787,12 @@
         "stewart watson": {
             "totalAgg": 408,
             "totalAggAgainst": 218,
+            "availableAgg": 441,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 189,
+            "availableAwayAgg": 168,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 168,
@@ -3716,7 +3867,6 @@
                 "stewart watson 21 - 7 shirley barker",
                 "stewart watson 21 - 12 paul lawson"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -3751,6 +3901,12 @@
         "stuart potter": {
             "totalAgg": 692,
             "totalAggAgainst": 630,
+            "availableAgg": 819,
+            "availablePairsAgg": 168,
+            "availableHomeAgg": 336,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 42,
+            "availablePairsAwayAgg": 126,
             "totalPairsAgg": 120,
             "totalPairsAggAgainst": 147,
             "totalHomeAgg": 315,
@@ -3880,7 +4036,6 @@
                 "stuart potter 21 - 20 ian macfarlane",
                 "stuart potter 17 - 21 ian wood"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 13,
                 "wins": 5,
@@ -3915,6 +4070,12 @@
         "tracey marshall": {
             "totalAgg": 47,
             "totalAggAgainst": 84,
+            "availableAgg": 84,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 63,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
             "totalHomeAgg": 35,
@@ -3955,7 +4116,6 @@
                 "tracey marshall 12 - 21 glenda holmes",
                 "tracey marshall 13 - 21 jean milner"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 0,
                 "wins": 0,
@@ -3990,6 +4150,12 @@
         "vanessa lancaster": {
             "totalAgg": 258,
             "totalAggAgainst": 286,
+            "availableAgg": 357,
+            "availablePairsAgg": 63,
+            "availableHomeAgg": 168,
+            "availableAwayAgg": 168,
+            "availablePairsHomeAgg": 42,
+            "availablePairsAwayAgg": 21,
             "totalPairsAgg": 43,
             "totalPairsAggAgainst": 55,
             "totalHomeAgg": 145,
@@ -4065,7 +4231,6 @@
                 "vanessa lancaster 21 - 10 margaret johnstone",
                 "vanessa lancaster 21 - 11 nigel fotherby"
             ],
-            "gamesWithout54321ScoringSystem": 0,
             "monday combined leeds": {
                 "games": 3,
                 "wins": 1,
@@ -4113,7 +4278,6 @@
             "cupLosses": 0,
             "losses": 6,
             "totalGamesPlayed": 20,
-            "gamesWithout54321ScoringSystem": 0,
             "agg": 2150,
             "opponentAgg": 1745,
             "leaguePosition": 3,
@@ -4154,7 +4318,6 @@
             "cupLosses": 0,
             "losses": 1,
             "totalGamesPlayed": 22,
-            "gamesWithout54321ScoringSystem": 4,
             "agg": 3479,
             "opponentAgg": 2119,
             "leaguePosition": 1,
@@ -4197,7 +4360,6 @@
             "cupLosses": 1,
             "losses": 9,
             "totalGamesPlayed": 17,
-            "gamesWithout54321ScoringSystem": 1,
             "agg": 2141,
             "opponentAgg": 2299,
             "leaguePosition": 5,
@@ -4235,7 +4397,6 @@
             "cupLosses": 0,
             "losses": 1,
             "totalGamesPlayed": 19,
-            "gamesWithout54321ScoringSystem": 5,
             "agg": 2309,
             "opponentAgg": 1640,
             "leaguePosition": 1,
@@ -4275,7 +4436,6 @@
             "cupLosses": 1,
             "losses": 3,
             "totalGamesPlayed": 13,
-            "gamesWithout54321ScoringSystem": 1,
             "agg": 1899,
             "opponentAgg": 1451,
             "leaguePosition": 2,
@@ -4309,7 +4469,6 @@
             "cupLosses": 0,
             "losses": 0,
             "totalGamesPlayed": 21,
-            "gamesWithout54321ScoringSystem": 3,
             "agg": 3260,
             "opponentAgg": 2207,
             "leaguePosition": 1,
@@ -4339,6 +4498,6 @@
         }
     ],
     "clubCupWinner": "Paul Bowes",
-    "lastUpdated": "28/12/2023",
+    "lastUpdated": "29/12/2023",
     "statsYear": "2023"
 }

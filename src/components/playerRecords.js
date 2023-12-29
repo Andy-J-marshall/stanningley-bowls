@@ -51,6 +51,17 @@ function PlayerRecords(props) {
     let bestWednesdayWinPerc = 0;
     let bestWednesdayWinPercPlayer = [];
 
+    // TODO need to implement this
+    // Wednesday Pairs
+    let useWedPairsStats = false;
+    let minWedPairsGames = 1;
+    let mostWedPairsWinsPlayer = [];
+    let mostWedPairsWins = 0;
+    let bestWedPairsAveragePlayer = [];
+    let bestWedPairsAverage = -26;
+    let bestWedPairsWinPerc = 0;
+    let bestWedPairsWinPercPlayer = [];
+
     // Thursday Vets
     let useThursdayVetsStats = false;
     let minThurVetsGames = 1;
@@ -80,7 +91,7 @@ function PlayerRecords(props) {
     let bestWinPercPlayer = [];
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
-    let bestAverage = -21;
+    let bestAverage = -26;
 
     // Find the highest number of games played for each team
     let highestMonGames = 0;
@@ -441,7 +452,7 @@ function PlayerRecords(props) {
 
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-        
+
         if (highestTotalGames > minTotalGames) {
             if (highestTotalGames >= minGamesForOverallRecords) {
                 minTotalGames = minGamesForOverallRecords;

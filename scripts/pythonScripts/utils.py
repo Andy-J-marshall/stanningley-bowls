@@ -10,6 +10,7 @@ currentTeamDays = teamDetails.teamDays
 otherLeagues = ['Monday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale',
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
+leaguesWithGamesTo26 = ['wednesday pairs airewharfe', 'monday pairs airewharfe']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
@@ -62,6 +63,10 @@ def formatName(name):
     name = anonymiseNames(name)
     return name.lower()
 
+def returnTotalAggAvailablePerGame(team):
+    if team.lower() in leaguesWithGamesTo26:
+        return 26
+    return 21
 
 def returnListOfPlayerStats(days):
     players.sort()
@@ -71,11 +76,12 @@ def returnListOfPlayerStats(days):
         playerObj = {
             'totalAgg': 0,
             'totalAggAgainst': 0,
-            # TODO using this?
-            # 'totalAvailableAgg': 0,
-            # 'totalAvailableAggAgainst': 0,
-            # 'totalAvailableHomeAgg': 0,
-            # 'totalAvailableAwayAgg': 0,
+            'availableAgg': 0,
+            'availablePairsAgg': 0,
+            'availableHomeAgg': 0,
+            'availableAwayAgg': 0,
+            'availablePairsHomeAgg': 0,
+            'availablePairsAwayAgg': 0,
             'totalPairsAgg': 0,
             'totalPairsAggAgainst': 0,
             'totalHomeAgg': 0,

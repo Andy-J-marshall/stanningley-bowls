@@ -46,6 +46,7 @@ function TeamRecords(props) {
             const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
             const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
 
+            // TODO need to exclude AW pairs from this?
             if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
                 if (aggPerGame !== bestTeamAggPerGame) {
                     bestTeamAggPerGameTeam.pop();
@@ -53,6 +54,8 @@ function TeamRecords(props) {
                 bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestTeamAggPerGame = aggPerGame;
             }
+
+            // TODO need to exclude AW pairs from this?
             if (
                 aggConcededPerGame <= lowestAggConcededPerGame &&
                 totalGamesPlayed >= minGames
@@ -63,6 +66,8 @@ function TeamRecords(props) {
                 lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 lowestAggConcededPerGame = aggConcededPerGame;
             }
+
+            // TODO add in stat for best winning margin?
             if (winPercentage >= bestWinPercentage && totalGamesPlayed >= minGames) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();

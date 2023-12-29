@@ -38,14 +38,14 @@ function RecordsTableDisplay(props) {
                 <tbody>
                     {mostGames && mostGamesPlayer && mostGames > 0 ? (
                         <tr>
-                            <td>Most Games</td>
+                            <td>Most games</td>
                             <td>{mostGames}</td>
                             <td>{capitalizeText(mostGamesPlayer)}</td>
                         </tr>
                     ) : null}
                     {mostWins && mostWinsPlayer && mostWins > 0 ? (
                         <tr>
-                            <td>Most Wins</td>
+                            <td>Most wins</td>
                             <td>{mostWins}</td>
                             <td>{capitalizeText(mostWinsPlayer)}</td>
                         </tr>
@@ -54,14 +54,14 @@ function RecordsTableDisplay(props) {
                     bestWinPercPlayerOrTeam &&
                     bestWinPerc > 0 ? (
                         <tr>
-                            <td>Win percentage</td>
+                            <td>Highest win percentage</td>
                             <td>{bestWinPerc}%</td>
                             <td>{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     ) : null}
-                    {bestAverage && bestAveragePlayer && bestAverage > -21 ? (
+                    {bestAverage && bestAveragePlayer && bestAverage > -26 ? (
                         <tr>
-                            <td>Average</td>
+                            <td>Best average</td>
                             <td>{bestAverage.toFixed(2)}</td>
                             <td>{capitalizeText(bestAveragePlayer)}</td>
                         </tr>
@@ -70,7 +70,7 @@ function RecordsTableDisplay(props) {
                     bestTeamAggPerGame &&
                     bestTeamAggPerGame > 0 ? (
                         <tr>
-                            <td>Aggregate per game</td>
+                            <td>Highest average aggregate scored per game</td>
                             <td>{bestTeamAggPerGame.toFixed(2)}</td>
                             <td>{capitalizeText(bestTeamAggPerGameTeam)}</td>
                         </tr>
@@ -78,9 +78,9 @@ function RecordsTableDisplay(props) {
                     {lowestAggConcededPerGame &&
                     lowestAggConcededPerGameTeam &&
                     lowestAggConcededPerGame > 0 &&
-                    lowestAggConcededPerGame <= 21 ? (
+                    lowestAggConcededPerGame <= 26 ? (
                         <tr>
-                            <td>Opponent aggregate per game</td>
+                            <td>Lowest average aggregate conceded per game</td>
                             <td>{lowestAggConcededPerGame.toFixed(2)}</td>
                             <td>
                                 {capitalizeText(lowestAggConcededPerGameTeam)}
