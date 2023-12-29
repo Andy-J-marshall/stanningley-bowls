@@ -35,6 +35,10 @@ const teams = [
     url: '/Leeds-Sat',
   },
   {
+    day: 'Wednesday Pairs AireWharfe',
+    url: '/AW-WedPairs',
+  },
+  {
     day: 'Monday AireDale & Wharfedale',
     url: '/AW-Mon',
   },
