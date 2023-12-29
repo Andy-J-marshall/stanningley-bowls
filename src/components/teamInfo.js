@@ -6,6 +6,7 @@ import thurVetsImg from '../images/websiteImages/thursVets-team.webp';
 import satImg from '../images/websiteImages/sat-team.webp';
 import tuesImg from '../images/websiteImages/tues-team.webp';
 import wedImg from '../images/websiteImages/wed-team.webp';
+import wedPairsImg from '../images/websiteImages/wedPairs-team.webp';
 import socialBowlingImg from '../images/websiteImages/social-bowling2.webp';
 import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 import config from '../config';
@@ -27,7 +28,7 @@ teams.forEach((team) => {
         team.img = wedImg;
     }
     if (teamName.includes('wednesday pairs')) {
-        team.img = wedImg; // TODO update this image
+        team.img = wedPairsImg;
     }
     if (teamName.includes('thursday vets')) {
         team.img = thurVetsImg;
