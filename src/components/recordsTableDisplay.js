@@ -18,6 +18,8 @@ function RecordsTableDisplay(props) {
     const bestTeamAggPerGameTeam = props.bestTeamAggPerGameTeam;
     const lowestAggConcededPerGame = props.lowestAggConcededPerGame;
     const lowestAggConcededPerGameTeam = props.lowestAggConcededPerGameTeam;
+    const bestWinMargin = props.bestWinMargin;
+    const bestWinMarginTeam = props.bestWinMarginTeam;
 
     if (bestWinPerc) {
         bestWinPerc =
@@ -70,7 +72,7 @@ function RecordsTableDisplay(props) {
                     bestTeamAggPerGame &&
                     bestTeamAggPerGame > 0 ? (
                         <tr>
-                            <td>Highest average aggregate scored per game</td>
+                            <td>Most points scored per game</td>
                             <td>{bestTeamAggPerGame.toFixed(2)}</td>
                             <td>{capitalizeText(bestTeamAggPerGameTeam)}</td>
                         </tr>
@@ -80,11 +82,20 @@ function RecordsTableDisplay(props) {
                     lowestAggConcededPerGame > 0 &&
                     lowestAggConcededPerGame <= 26 ? (
                         <tr>
-                            <td>Lowest average aggregate conceded per game</td>
+                            <td>Fewest points conceded per game</td>
                             <td>{lowestAggConcededPerGame.toFixed(2)}</td>
                             <td>
                                 {capitalizeText(lowestAggConcededPerGameTeam)}
                             </td>
+                        </tr>
+                    ) : null}
+                    {bestWinMargin &&
+                    bestWinMarginTeam &&
+                    bestWinMargin > 0 ? (
+                        <tr>
+                            <td>Best points difference</td>
+                            <td>{bestWinMargin.toFixed(0)}</td>
+                            <td>{capitalizeText(bestWinMarginTeam)}</td>
                         </tr>
                     ) : null}
                 </tbody>

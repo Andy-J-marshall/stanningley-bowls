@@ -10,6 +10,8 @@ function TeamRecords(props) {
     let bestTeamAggPerGameTeam = [];
     let lowestAggConcededPerGame = 1000;
     let lowestAggConcededPerGameTeam = [];
+    let bestWinMargin = -1;
+    let bestWinMarginTeam = [];
     let minGames = 1;
 
     // This sets the minimum number of games required for the stats to be counted
@@ -35,8 +37,7 @@ function TeamRecords(props) {
                 totalGamesPlayed
             } = stats;
 
-            const drawPercCalculator = draws > 0 ? draws * 0.5 : 0;
-            const winPercentage = ((wins + drawPercCalculator) / totalGamesPlayed) * 100;
+            const winPercentage = ((wins) / totalGamesPlayed) * 100;
 
             const team = config.teams.find(t => {
                 return t.name === config.days[day.toLowerCase()]
@@ -52,6 +53,15 @@ function TeamRecords(props) {
                 }
                 bestWinPercentageTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestWinPercentage = winPercentage;
+            }
+
+            const winMargin = agg - opponentAgg;
+            if (winMargin >= bestWinMargin && totalGamesPlayed >= minGames) {
+                if (winMargin !== bestWinMargin) {
+                    bestWinMarginTeam.pop();
+                }
+                bestWinMarginTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                bestWinMargin = winMargin;
             }
 
             // Excludes teams that don't play to 21 as these stats won't make sense otherwise
@@ -90,9 +100,9 @@ function TeamRecords(props) {
                         bestTeamAggPerGame={bestTeamAggPerGame}
                         bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
                         lowestAggConcededPerGame={lowestAggConcededPerGame}
-                        lowestAggConcededPerGameTeam={
-                            lowestAggConcededPerGameTeam
-                        }
+                        lowestAggConcededPerGameTeam={lowestAggConcededPerGameTeam}
+                        bestWinMargin={bestWinMargin}
+                        bestWinMarginTeam={bestWinMarginTeam}
                     />
                 </div>
             );
