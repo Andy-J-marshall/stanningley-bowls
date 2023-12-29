@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
-import config from '../config';
 
-function Records(props) {
+function records(props) {
     const stats = props.stats;
 
     const { playerResults, teamResults } = stats;
@@ -26,4 +25,4 @@ function Records(props) {
     );
 }
 
-export default Records;
+export default records;
