@@ -4364,6 +4364,195 @@
                 "aggDiff": 0
             }
         },
+        "neil porter": {
+            "totalAgg": 624,
+            "totalAggAgainst": 458,
+            "availableAgg": 693,
+            "availablePairsAgg": 42,
+            "availableHomeAgg": 315,
+            "availableAwayAgg": 336,
+            "availablePairsHomeAgg": 42,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 42,
+            "totalPairsAggAgainst": 23,
+            "totalHomeAgg": 297,
+            "totalHomeAggAgainst": 181,
+            "totalPairsHomeAgg": 42,
+            "totalPairsHomeAggAgainst": 23,
+            "totalAwayAgg": 296,
+            "totalAwayAggAgainst": 237,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 12,
+            "homeLosses": 3,
+            "awayWins": 9,
+            "awayLosses": 7,
+            "cupWins": 1,
+            "cupLosses": 1,
+            "pairWins": 2,
+            "pairLosses": 0,
+            "pairHomeWins": 2,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 33,
+            "dayPlayed": [
+                "Monday Combined Leeds (New Wortley)",
+                "Monday Combined Leeds (New Wortley)",
+                "Monday Combined Leeds (New Wortley)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Tuesday Leeds (New Wortley A)",
+                "Wednesday Half Holiday Leeds (New Wortley A)",
+                "Wednesday Half Holiday Leeds (New Wortley A)",
+                "Wednesday Half Holiday Leeds (New Wortley A)",
+                "Wednesday Half Holiday Leeds (New Wortley A)",
+                "Wednesday Half Holiday Leeds (New Wortley A)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Thursday Vets Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)",
+                "Saturday Leeds (New Wortley)"
+            ],
+            "pairsPartners": [
+                "martin heys",
+                "ann hughes"
+            ],
+            "winningPairsPartners": [
+                "martin heys",
+                "ann hughes"
+            ],
+            "losingPairsPartners": [],
+            "results": [
+                "neil porter 17 - 21 ian macfarlane",
+                "neil porter & martin heys 21 - 8 eugene kellegher & eddie fisher",
+                "neil porter & ann hughes 21 - 15 ian stocks & graham gaunt",
+                "neil porter 9 - 21 liam gleave",
+                "neil porter 13 - 21 dale hardcastle",
+                "neil porter 16 - 21 bob emerson",
+                "neil porter 21 - 4 elizabeth quigley",
+                "neil porter 21 - 12 geoff warbuton",
+                "neil porter 10 - 21 ian lynch",
+                "neil porter 21 - 12 debbie sandles",
+                "neil porter 21 - 12 neville salmon",
+                "neil porter 21 - 12 jeoff higgins",
+                "neil porter 14 - 21 ian stavely",
+                "neil porter 21 - 8 martin atkinson",
+                "neil porter 18 - 21 brian newton",
+                "neil porter 21 - 7 glenn parkinson",
+                "neil porter 21 - 10 jeff linley",
+                "neil porter 21 - 10 john harvey",
+                "neil porter 21 - 7 beryl butterfield",
+                "neil porter 21 - 7 jeff allman",
+                "neil porter 19 - 21 tony morris",
+                "neil porter 21 - 15 michael geary",
+                "neil porter 10 - 21 gerry horgan",
+                "neil porter 17 - 21 graham bluff",
+                "neil porter 21 - 16 david l miller",
+                "neil porter 21 - 8 barbara nellis",
+                "neil porter 21 - 16 tony auty",
+                "neil porter 21 - 19 simon hemmingway",
+                "neil porter 21 - 4 dougie cooper",
+                "neil porter 21 - 12 jason farrar",
+                "neil porter 19 - 21 jeff holt",
+                "neil porter 21 - 7 barbara wherret",
+                "neil porter 21 - 6 geoff warburton"
+            ],
+            "monday combined leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday airedale & wharfedale": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday airedale & wharfedale": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
         "paul bowes": {
             "totalAgg": 1056,
             "totalAggAgainst": 759,
