@@ -111,6 +111,7 @@ function TeamStats(props) {
     }
 
     function returnTeam6Component() {
+        {/* TODO split this into first and second team stats? */}
         const teamConfig = config.teams.find((e) =>
             e.name.toLowerCase().includes('saturday')
         );
