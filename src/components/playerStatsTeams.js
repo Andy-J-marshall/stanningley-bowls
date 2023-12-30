@@ -121,6 +121,7 @@ function PlayerStatsTeams(props) {
                                 </p>
                             </div>
                         )}
+                        {/* TODO split this into first and second team stats? */}
                         {saturdayGames > 0 && (
                             <div>
                                 <h3>SATURDAY</h3>

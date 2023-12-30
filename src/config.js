@@ -91,6 +91,8 @@ const live = {
         'wednesday pairs airewharfe': 'Wednesday Pairs',
         'thursday vets leeds': 'Thursday Vets',
         'saturday leeds': 'Saturday',
+        'saturday leeds (a)': 'Saturday',
+        'saturday leeds (b)': 'Saturday',
     },
     leagues: 'Leeds Parks',
 };
