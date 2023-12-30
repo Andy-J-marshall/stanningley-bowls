@@ -5,17 +5,14 @@ teamNames = ['stanningley', 'stanningley a',
              'stanningley park', 'stanningley park a']
 preferredTeamName = 'Stanningley'
 
- # TODO add back in if entering second team
 daysWithSecondTeam =[]
-teamNamesForFirstTeam =['stanningley a', 'stanningley park a']
-teamNamesForSecondTeam =['stanningley b', 'stanningley park b']
-# daysWithSecondTeam =['Saturday Leeds']
+teamNamesForFirstTeam =[]
+teamNamesForSecondTeam =[]
 
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds'
             #'Wednesday Pairs AireWharfe'
-            # TODO add 'Saturday Leeds' again if we enter second team
             ]
 
 # Every player (lowercase)
