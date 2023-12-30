@@ -22,6 +22,7 @@ transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
 daysWithSecondTeam = teamDetails.daysWithSecondTeam
 teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
+teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 lastResultRowsForTransferredPlayer = {}
 
@@ -51,11 +52,11 @@ for day in teamDays:
     dayName = day
     if day in daysWithSecondTeam:
         if countForDay == 0:
-            expectedTeamNames = ['stanningley park a', 'stanningley a']
+            expectedTeamNames = teamNamesForFirstTeam
             teamNameToUse = preferredTeamName + ' A'
             dayName = day + ' (A)'
         if countForDay == 1:
-            expectedTeamNames = ['stanningley park b', 'stanningley b']
+            expectedTeamNames = teamNamesForSecondTeam
             teamNameToUse = preferredTeamName + ' B'
             dayName = day + ' (B)'
         if countForDay > 1:
@@ -272,22 +273,26 @@ for day in teamDays:
         homePlayerName = homePlayer.value
         if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicateTeamMemberNames):
             # Checks if player is playing for A or B team
-            excludeHomePlayer = False
-            if dayName.endswith('(A)'):
-                for i in range(1, 10):
-                    homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
-                    if homeATeamRow and type(homeATeamRow.value) is str and not homeATeamRow.value.lower() in expectedTeamNames:
-                        excludeHomePlayer = True
-                        break
-            if dayName.endswith('(B)'):
-                for i in range(1, 10):
-                    homeBTeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
-                    if homeBTeamRow and type(homeBTeamRow.value) is str and not homeBTeamRow.value.lower() not in expectedTeamNames:
-                        excludeHomePlayer = True
-                        break
+            includeHomePlayer = False
+            if dayName.endswith('(A)') or dayName.endswith('(B)'):
+                if dayName.endswith('(A)'):
+                    for i in range(1, 10):
+                        homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
+                        if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in expectedTeamNames:
+                            includeHomePlayer = True
+                            break
+
+                if dayName.endswith('(B)'):
+                    for i in range(1, 10):
+                        homeBTeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
+                        if homeBTeamRow and type(homeBTeamRow.value) is str and homeBTeamRow.value.lower() in expectedTeamNames:
+                            includeHomePlayer = True
+                            break
+            else:
+                includeHomePlayer = True
 
             # Checks if player plays for team on selected day
-            if homePlayerName.lower() not in traitorPlayers[day] and excludeHomePlayer is False:
+            if homePlayerName.lower() not in traitorPlayers[day] and includeHomePlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
                 if homePlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
                     lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][homePlayerName.lower()]
@@ -300,26 +305,29 @@ for day in teamDays:
     awayPlayerIndex = 1
     awayPlayerRow = []
     for awayPlayer in sheet[awayPlayerCol]:
-        # TODO update away player too
         awayPlayerName = awayPlayer.value
         if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in players or awayPlayerName.lower() in duplicateTeamMemberNames):
             # Checks if player is playing for A or B team
-            excludeAwayPlayer = False
-            if dayName.endswith('(A)'):
-                for i in range(1, 10):
-                    awayATeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
-                    if awayATeamRow and type(awayATeamRow.value) is str and not awayATeamRow.value.lower() in expectedTeamNames:
-                        excludeAwayPlayer = True
-                        break
-            if dayName.endswith('(B)'):
-                for i in range(1, 10):
-                    awayBTeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
-                    if awayBTeamRow and type(awayBTeamRow.value) is str and not awayBTeamRow.value.lower() not in expectedTeamNames:
-                        excludeAwayPlayer = True
-                        break
+            includeAwayPlayer = False
+            if dayName.endswith('(A)') or dayName.endswith('(B)'):
+                if dayName.endswith('(A)'):
+                    for i in range(1, 10):
+                        awayATeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
+                        if awayATeamRow and type(awayATeamRow.value) is str and awayATeamRow.value.lower() in expectedTeamNames:
+                            includeAwayPlayer = True
+                            break
+
+                if dayName.endswith('(B)'):
+                    for i in range(1, 10):
+                        awayBTeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
+                        if awayBTeamRow and type(awayBTeamRow.value) is str and awayBTeamRow.value.lower() in expectedTeamNames:
+                            includeAwayPlayer = True
+                            break
+            else:
+                includeAwayPlayer = True
 
             # Checks if player plays for team on selected day
-            if awayPlayerName.lower() not in traitorPlayers[day] and excludeAwayPlayer is False:
+            if awayPlayerName.lower() not in traitorPlayers[day] and includeAwayPlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
                 if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
                     lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][awayPlayerName.lower()]
