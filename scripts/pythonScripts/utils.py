@@ -19,7 +19,7 @@ duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 otherTeams = ['pudsey', 'burley', 'wibsey', 'tarnfield', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
 
-cupText = ['qtr-finals', 'semi-finals', 'final', 'round of 16', 'round of 32']
+cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
 def findHtmlFiles():
     files = []
