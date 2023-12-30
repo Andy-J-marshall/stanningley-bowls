@@ -18,9 +18,6 @@ function Records(props) {
                 clubCupWinner={stats.clubCupWinner}
             />
             <TeamRecords teamResults={teamResults} />
-            <p className="footnote">
-                ** The number in brackets indicates the number of games played.
-            </p>
         </div>
     );
 }

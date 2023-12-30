@@ -169,7 +169,7 @@ function PlayerRecords(props) {
                     bestMondayAveragePlayer = [];
                     bestMondayAverage = mondayAvg;
                 }
-                bestMondayAveragePlayer.push(`${player} (${mondayGames})`);
+                bestMondayAveragePlayer.push(player);
             }
 
             if (mondayWins >= mostMondayWins) {
@@ -177,7 +177,7 @@ function PlayerRecords(props) {
                     mostMondayWinsPlayer = [];
                     mostMondayWins = mondayWins;
                 }
-                mostMondayWinsPlayer.push(`${player} (${mondayGames})`);
+                mostMondayWinsPlayer.push(player);
             }
 
             if (
@@ -188,7 +188,7 @@ function PlayerRecords(props) {
                     bestMondayWinPercPlayer = [];
                     bestMondayWinPerc = mondayWinPerc;
                 }
-                bestMondayWinPercPlayer.push(`${player} (${mondayGames})`);
+                bestMondayWinPercPlayer.push(player);
             }
         }
 
@@ -217,9 +217,7 @@ function PlayerRecords(props) {
                     bestTuesdayVetsAveragePlayer = [];
                     bestTuesdayVetsAverage = tuesdayVetsAvg;
                 }
-                bestTuesdayVetsAveragePlayer.push(
-                    `${player} (${tuesdayVetsGames})`
-                );
+                bestTuesdayVetsAveragePlayer.push(player);
             }
 
             if (tuesdayVetsWins >= mostTuesdayVetsWins) {
@@ -227,9 +225,7 @@ function PlayerRecords(props) {
                     mostTuesdayVetsWinsPlayer = [];
                     mostTuesdayVetsWins = tuesdayVetsWins;
                 }
-                mostTuesdayVetsWinsPlayer.push(
-                    `${player} (${tuesdayVetsGames})`
-                );
+                mostTuesdayVetsWinsPlayer.push(player);
             }
 
             if (
@@ -240,9 +236,7 @@ function PlayerRecords(props) {
                     bestTuesdayVetsWinPercPlayer = [];
                     bestTuesdayVetsWinPerc = tuesdayVetsWinPerc;
                 }
-                bestTuesdayVetsWinPercPlayer.push(
-                    `${player} (${tuesdayVetsGames})`
-                );
+                bestTuesdayVetsWinPercPlayer.push(player);
             }
         }
 
@@ -270,7 +264,7 @@ function PlayerRecords(props) {
                     bestTuesdayAveragePlayer = [];
                     bestTuesdayAverage = tuesdayAvg;
                 }
-                bestTuesdayAveragePlayer.push(`${player} (${tuesdayGames})`);
+                bestTuesdayAveragePlayer.push(player);
             }
 
             if (tuesdayWins >= mostTuesdayWins) {
@@ -278,7 +272,7 @@ function PlayerRecords(props) {
                     mostTuesdayWinsPlayer = [];
                     mostTuesdayWins = tuesdayWins;
                 }
-                mostTuesdayWinsPlayer.push(`${player} (${tuesdayGames})`);
+                mostTuesdayWinsPlayer.push(player);
             }
 
             if (
@@ -289,7 +283,7 @@ function PlayerRecords(props) {
                     bestTuesdayWinPercPlayer = [];
                     bestTuesdayWinPerc = tuesdayWinPerc;
                 }
-                bestTuesdayWinPercPlayer.push(`${player} (${tuesdayGames})`);
+                bestTuesdayWinPercPlayer.push(player);
             }
         }
 
@@ -317,9 +311,7 @@ function PlayerRecords(props) {
                     bestWednesdayAveragePlayer = [];
                     bestWednesdayAverage = wednesdayAvg;
                 }
-                bestWednesdayAveragePlayer.push(
-                    `${player} (${wednesdayGames})`
-                );
+                bestWednesdayAveragePlayer.push(player);
             }
 
             if (wednesdayWins >= mostWednesdayWins) {
@@ -327,7 +319,7 @@ function PlayerRecords(props) {
                     mostWednesdayWinsPlayer = [];
                     mostWednesdayWins = wednesdayWins;
                 }
-                mostWednesdayWinsPlayer.push(`${player} (${wednesdayGames})`);
+                mostWednesdayWinsPlayer.push(player);
             }
 
             if (
@@ -338,9 +330,7 @@ function PlayerRecords(props) {
                     bestWednesdayWinPercPlayer = [];
                     bestWednesdayWinPerc = wednesdayWinPerc;
                 }
-                bestWednesdayWinPercPlayer.push(
-                    `${player} (${wednesdayGames})`
-                );
+                bestWednesdayWinPercPlayer.push(player);
             }
         }
 
@@ -369,9 +359,7 @@ function PlayerRecords(props) {
                     bestThursdayVetsAveragePlayer = [];
                     bestThursdayVetsAverage = thursdayVetsAvg;
                 }
-                bestThursdayVetsAveragePlayer.push(
-                    `${player} (${thursdayVetsGames})`
-                );
+                bestThursdayVetsAveragePlayer.push(player);
             }
 
             if (thursdayVetsWins >= mostThursdayVetsWins) {
@@ -379,9 +367,7 @@ function PlayerRecords(props) {
                     mostThursdayVetsWinsPlayer = [];
                     mostThursdayVetsWins = thursdayVetsWins;
                 }
-                mostThursdayVetsWinsPlayer.push(
-                    `${player} (${thursdayVetsGames})`
-                );
+                mostThursdayVetsWinsPlayer.push(player);
             }
 
             if (
@@ -392,9 +378,7 @@ function PlayerRecords(props) {
                     bestThursdayVetsWinPercPlayer = [];
                     bestThursdayVetsWinPerc = thursdayVetsWinPerc;
                 }
-                bestThursdayVetsWinPercPlayer.push(
-                    `${player} (${thursdayVetsGames})`
-                );
+                bestThursdayVetsWinPercPlayer.push(player);
             }
         }
 
@@ -422,7 +406,7 @@ function PlayerRecords(props) {
                     bestSaturdayAveragePlayer = [];
                     bestSaturdayAverage = saturdayAvg;
                 }
-                bestSaturdayAveragePlayer.push(`${player} (${saturdayGames})`);
+                bestSaturdayAveragePlayer.push(player);
             }
 
             if (saturdayWins >= mostSaturdayWins) {
@@ -430,7 +414,7 @@ function PlayerRecords(props) {
                     mostSaturdayWinsPlayer = [];
                     mostSaturdayWins = saturdayWins;
                 }
-                mostSaturdayWinsPlayer.push(`${player} (${saturdayGames})`);
+                mostSaturdayWinsPlayer.push(player);
             }
 
             if (
@@ -441,7 +425,7 @@ function PlayerRecords(props) {
                     bestSaturdayWinPercPlayer = [];
                     bestSaturdayWinPerc = saturdayWinPerc;
                 }
-                bestSaturdayWinPercPlayer.push(`${player} (${saturdayGames})`);
+                bestSaturdayWinPercPlayer.push(player);
             }
         }
 
@@ -474,21 +458,21 @@ function PlayerRecords(props) {
                 mostWinsPlayer = [];
                 mostWins = totalWins;
             }
-            mostWinsPlayer.push(`${player} (${totalGames})`);
+            mostWinsPlayer.push(player);
         }
         if (winPerc >= bestWinPerc && playedMinGames) {
             if (winPerc > bestWinPerc) {
                 bestWinPercPlayer = [];
                 bestWinPerc = winPerc;
             }
-            bestWinPercPlayer.push(`${player} (${totalGames})`);
+            bestWinPercPlayer.push(player);
         }
         if (average >= bestAverage && playedMinGames) {
             if (average > bestAverage) {
                 bestAveragePlayer = [];
                 bestAverage = average;
             }
-            bestAveragePlayer.push(`${player} (${totalGames})`);
+            bestAveragePlayer.push(player);
         }
     });
 

@@ -51,7 +51,7 @@ function TeamRecords(props) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();
                 }
-                bestWinPercentageTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                bestWinPercentageTeam.push(config.days[day.toLowerCase()]);
                 bestWinPercentage = winPercentage;
             }
 
@@ -60,7 +60,7 @@ function TeamRecords(props) {
                 if (winMargin !== bestWinMargin) {
                     bestWinMarginTeam.pop();
                 }
-                bestWinMarginTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                bestWinMarginTeam.push(config.days[day.toLowerCase()]);
                 bestWinMargin = winMargin;
             }
 
@@ -73,7 +73,7 @@ function TeamRecords(props) {
                     if (aggConcededPerGame !== lowestAggConcededPerGame) {
                         lowestAggConcededPerGameTeam.pop();
                     }
-                    lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    lowestAggConcededPerGameTeam.push(config.days[day.toLowerCase()]);
                     lowestAggConcededPerGame = aggConcededPerGame;
                 }
 
@@ -81,7 +81,7 @@ function TeamRecords(props) {
                     if (aggPerGame !== bestTeamAggPerGame) {
                         bestTeamAggPerGameTeam.pop();
                     }
-                    bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    bestTeamAggPerGameTeam.push(config.days[day.toLowerCase()]);
                     bestTeamAggPerGame = aggPerGame;
                 }
             }
