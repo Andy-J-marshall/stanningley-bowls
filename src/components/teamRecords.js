@@ -31,7 +31,6 @@ function TeamRecords(props) {
             const {
                 day,
                 wins,
-                draws,
                 agg,
                 opponentAgg,
                 totalGamesPlayed
