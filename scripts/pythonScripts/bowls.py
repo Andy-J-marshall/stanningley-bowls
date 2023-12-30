@@ -498,7 +498,7 @@ for day in teamDays:
                         playerStats[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(day)
                         playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                playerStats[playerName]['dayPlayed'].append(dayName) # TODO add 'A or B'
+                playerStats[playerName]['dayPlayed'].append(dayName)
 
                 if row in homePlayerRow and row in awayPlayerRow:
                     raise Exception(
