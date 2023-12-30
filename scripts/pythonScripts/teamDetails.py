@@ -4,11 +4,14 @@ import datetime
 teamNames = ['stanningley', 'stanningley a',
              'stanningley park', 'stanningley park a']
 
+teamNamesForSecondTeam =['stanningley park b']
+daysWithSecondTeam =['Saturday Leeds']
+
 preferredTeamName = 'Stanningley'
 
-# Days played
+# Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
-            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds'
+            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds', 'Saturday Leeds'
             #'Wednesday Pairs AireWharfe'
             ]
 
