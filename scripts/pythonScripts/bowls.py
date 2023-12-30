@@ -10,7 +10,10 @@ import utils
 year = str(date.today().year)
 
 teamNames = teamDetails.teamNames
-teamDays = teamDetails.teamDays
+daysWithSecondTeam = teamDetails.daysWithSecondTeam
+teamDays = teamDetails.teamDays + daysWithSecondTeam
+teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
+teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
@@ -20,9 +23,6 @@ cupText = utils.cupText
 preferredTeamName = teamDetails.preferredTeamName
 transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
-daysWithSecondTeam = teamDetails.daysWithSecondTeam
-teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
-teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 lastResultRowsForTransferredPlayer = {}
 
