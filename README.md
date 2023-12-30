@@ -158,8 +158,8 @@ Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
 Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.
 
-If adding a second team, updated the following properties in `teamDetails.py`:
-* `daysWithSecondTeam` - this needs to match the value in teamDays
+If adding or removing a second team, updated the following properties in `teamDetails.py`:
+* `daysWithSecondTeam` - this needs to match the value in teamDays. If there are no second teams, use an empty array.
 * `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
 * `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`
 Also change the `days` property in `config.js` to include extra team names with `(a)` and `(b)` after them
