@@ -8,9 +8,7 @@ export function combineTeamStats(statsArray) {
     let combinedHomeDraws = 0;
     let combinedAwayDraws = 0;
     let combinedAgg = 0;
-    let combinedTotalPoints = 0;
     let combinedOpponentAgg = 0;
-    let combinedOpponentTotalPoints = 0;
 
     statsArray.forEach((stats) => {
         const {
@@ -23,9 +21,7 @@ export function combineTeamStats(statsArray) {
             homeDraws,
             awayDraws,
             agg,
-            totalPoints,
             opponentAgg,
-            opponentTotalPoints,
         } = stats;
         combinedAwayWins += awayWins;
         combinedHomeWins += homeWins;
@@ -36,9 +32,7 @@ export function combineTeamStats(statsArray) {
         combinedCupWins += cupWins;
         combinedCupLosses += cupLosses;
         combinedAgg += agg;
-        combinedTotalPoints += totalPoints;
         combinedOpponentAgg += opponentAgg;
-        combinedOpponentTotalPoints += opponentTotalPoints;
     });
 
     const totalDraws = combinedAwayDraws + combinedHomeDraws;
@@ -57,9 +51,7 @@ export function combineTeamStats(statsArray) {
         combinedHomeDraws,
         combinedAwayDraws,
         combinedAgg,
-        combinedTotalPoints,
         combinedOpponentAgg,
-        combinedOpponentTotalPoints,
         totalDraws,
         totalWins,
         totalLosses,
@@ -80,9 +72,9 @@ export function findBiggestWin(playerResults) {
             const opponentPart = resultParts[1].split(' (')[0];
             const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();
 
-            const pointsDiff = teamScore - opponentScore;
-            if (pointsDiff > 0 && pointsDiff > bestWinMargin) {
-                bestWinMargin = pointsDiff;
+            const scoreDiff = teamScore - opponentScore;
+            if (scoreDiff > 0 && scoreDiff > bestWinMargin) {
+                bestWinMargin = scoreDiff;
                 bestWin = `${teamScore} - ${opponentScore}`;
             }
         });

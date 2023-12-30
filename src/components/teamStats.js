@@ -19,7 +19,7 @@ function TeamStats(props) {
         team.day.toLowerCase().includes('tuesday leeds')
     );
     const wednesdayStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('wednesday')
+        team.day.toLowerCase().includes('wednesday half holiday')
     );
     const thursdayVetsStats = teamResults.find((team) =>
         team.day.toLowerCase().includes('thursday')
@@ -82,7 +82,7 @@ function TeamStats(props) {
 
     function returnTeam4Component() {
         const teamConfig = config.teams.find((e) =>
-            e.name.toLowerCase().includes('wednesday')
+            e.name.toLowerCase().includes('wednesday half holiday')
         );
 
         return (
@@ -139,7 +139,6 @@ function TeamStats(props) {
                 team6Component={returnTeam6Component()}
             />
             <br />
-            <p className="footnote">* {config.leagueRules}</p>
         </div>
     );
 }

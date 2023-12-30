@@ -82,9 +82,7 @@ describe('#StatsHelper Tests', () => {
           cupWins: 1,
           cupLosses: 0,
           agg: 1949,
-          totalPoints: 434,
           opponentAgg: 1572,
-          opponentTotalPoints: 324,
           leaguePosition: 2,
           results: [
             'Stanningley 26 - 14 Sth Lds Cons (Mon 11th Apr (6:15))',
@@ -118,9 +116,7 @@ describe('#StatsHelper Tests', () => {
           cupWins: 0,
           cupLosses: 1,
           agg: 1866,
-          totalPoints: 402,
           opponentAgg: 1233,
-          opponentTotalPoints: 207,
           leaguePosition: 2,
           results: [
             'Horsforth Woodside. 21 - 38 Stanningley (Tue 26th Apr (1:30))',
@@ -148,9 +144,7 @@ describe('#StatsHelper Tests', () => {
           cupWins: 0,
           cupLosses: 1,
           agg: 1567,
-          totalPoints: 318,
           opponentAgg: 1347,
-          opponentTotalPoints: 256,
           leaguePosition: 1,
           results: [
             'Stanningley 24 - 36 Churwell Pk (Thu 21st Apr (1:30))',
@@ -177,9 +171,7 @@ describe('#StatsHelper Tests', () => {
           cupWins: 1,
           cupLosses: 1,
           agg: 2298,
-          totalPoints: 465,
           opponentAgg: 1546,
-          opponentTotalPoints: 254,
           leaguePosition: 1,
           results: [
             'Sth Leeds Cons B 18 - 35 Stanningley (Sat 2nd Apr (2:00))',
@@ -242,16 +234,8 @@ describe('#StatsHelper Tests', () => {
       expect(combinedStats.combinedAgg).to.equal(7680);
     });
 
-    it('Team points calculated correctly', () => {
-      expect(combinedStats.combinedTotalPoints).to.equal(1619);
-    });
-
     it('Opponent aggregates calculated correctly', () => {
       expect(combinedStats.combinedOpponentAgg).to.equal(5698);
-    });
-
-    it('Opponent points calculated correctly', () => {
-      expect(combinedStats.combinedOpponentTotalPoints).to.equal(1041);
     });
   });
 });

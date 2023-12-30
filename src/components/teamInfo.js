@@ -6,6 +6,7 @@ import thurVetsImg from '../images/websiteImages/thursVets-team.webp';
 import satImg from '../images/websiteImages/sat-team.webp';
 import tuesImg from '../images/websiteImages/tues-team.webp';
 import wedImg from '../images/websiteImages/wed-team.webp';
+import wedPairsImg from '../images/websiteImages/wedPairs-team.webp';
 import socialBowlingImg from '../images/websiteImages/social-bowling2.webp';
 import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 import config from '../config';
@@ -23,8 +24,11 @@ teams.forEach((team) => {
     if (teamName === 'tuesday') {
         team.img = tuesImg;
     }
-    if (teamName.includes('wednesday')) {
+    if (teamName.includes('wednesday half holiday')) {
         team.img = wedImg;
+    }
+    if (teamName.includes('wednesday pairs')) {
+        team.img = wedPairsImg;
     }
     if (teamName.includes('thursday vets')) {
         team.img = thurVetsImg;
@@ -81,11 +85,10 @@ function TeamInfo() {
                     Come along to one of our open social bowling sessions,
                     complete beginner's are welcome and the first session is
                     free. These sessions currently run Saturday morning 10.30am
-                    - 12.30pm, Wednesday afternoon 2pm - 4pm and Wednesday
-                    evening 6pm - 8pm. Booking is not required but please be
-                    aware that sessions will not run in extreme weather
-                    conditions so you may want to contact us in advance to
-                    confirm the session is running.
+                    - 12.30pm and Thursday evening 6pm - 8pm. Booking is not
+                    required but please be aware that sessions will not run in
+                    extreme weather conditions so you may want to contact us in
+                    advance to confirm the session is running.
                 </p>
                 <img style={{ width: '95%' }} src={socialBowlingImg}></img>
             </div>

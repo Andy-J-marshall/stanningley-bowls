@@ -19,7 +19,6 @@ export class PlayerStatsPage {
   readonly overviewAccordionButton: Locator;
   readonly winLossAccordionButton: Locator;
   readonly teamAccordionButton: Locator;
-  readonly pointsAccordionButton: Locator;
   readonly aggAccordionButton: Locator;
   readonly resultsAccordionButton: Locator;
   readonly accordionButtons: Locator;
@@ -45,7 +44,6 @@ export class PlayerStatsPage {
     this.overviewAccordionButton = page.locator('#stats-overview');
     this.winLossAccordionButton = page.locator('#stats-wl');
     this.teamAccordionButton = page.locator('#stats-teams');
-    this.pointsAccordionButton = page.locator('#stats-points');
     this.aggAccordionButton = page.locator('#stats-aggregate');
     this.resultsAccordionButton = page.locator('#stats-results');
     this.accordionButtons = page.locator(
@@ -96,11 +94,10 @@ export class PlayerStatsPage {
   }
 
   async checkTeamAccordionHeadersExist() {
-    await expect(this.accordionButtons).toHaveCount(6);
+    await expect(this.accordionButtons).toHaveCount(5);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
     await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
     await expect(this.teamAccordionButton).toHaveText('TEAMS');
-    await expect(this.pointsAccordionButton).toHaveText('POINTS');
     await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }

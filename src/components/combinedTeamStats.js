@@ -15,9 +15,7 @@ function CombinedTeamStats(props) {
         combinedHomeDraws,
         combinedAwayDraws,
         combinedAgg,
-        combinedTotalPoints,
         combinedOpponentAgg,
-        combinedOpponentTotalPoints,
         totalDraws,
         totalWins,
         totalLosses,
@@ -35,8 +33,6 @@ function CombinedTeamStats(props) {
                         totalDraws={totalDraws}
                         agg={combinedAgg}
                         opponentAgg={combinedOpponentAgg}
-                        teamPoints={combinedTotalPoints}
-                        opponentTeamPoints={combinedOpponentTotalPoints}
                         homeWins={combinedHomeWins}
                         awayWins={combinedAwayWins}
                         cupWins={combinedCupWins}

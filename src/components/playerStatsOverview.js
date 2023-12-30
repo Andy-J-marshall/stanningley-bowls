@@ -25,7 +25,7 @@ function PlayerStatsOverview(props) {
                         <p id="totalGamesPlayed">Games played: {gamesPlayed}</p>
                         <p id="totalWins">Wins: {totalWins}</p>
                         <p id="totalLosses">Losses: {totalLosses}</p>
-                        {average > -22 && average < 22 && (
+                        {average >= -26 && average <= 26 && (
                             <p id="totalAverage">
                                 Average: {average.toFixed(2)}
                             </p>

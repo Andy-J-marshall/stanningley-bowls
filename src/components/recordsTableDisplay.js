@@ -13,17 +13,13 @@ function RecordsTableDisplay(props) {
     const mostGamesPlayer = props.mostGamesPlayer;
     const bestAverage = props.bestAverage;
     const bestAveragePlayer = props.bestAveragePlayer;
-    const bestPoints = props.bestPoints;
-    const bestPointsPlayer = props.bestPointsPlayer;
     // Team records
-    const bestTeamPointsPerGame = props.bestTeamPointsPerGame;
-    const bestTeamPointsPerGameTeam = props.bestTeamPointsPerGameTeam;
-    const fewestPointsConcededPerGame = props.fewestPointsConcededPerGame;
-    const fewestPointsConcededTeam = props.fewestPointsConcededPerGameTeam;
     const bestTeamAggPerGame = props.bestTeamAggPerGame;
     const bestTeamAggPerGameTeam = props.bestTeamAggPerGameTeam;
     const lowestAggConcededPerGame = props.lowestAggConcededPerGame;
     const lowestAggConcededPerGameTeam = props.lowestAggConcededPerGameTeam;
+    const bestWinMargin = props.bestWinMargin;
+    const bestWinMarginTeam = props.bestWinMarginTeam;
 
     if (bestWinPerc) {
         bestWinPerc =
@@ -44,14 +40,14 @@ function RecordsTableDisplay(props) {
                 <tbody>
                     {mostGames && mostGamesPlayer && mostGames > 0 ? (
                         <tr>
-                            <td>Most Games</td>
+                            <td>Most games</td>
                             <td>{mostGames}</td>
                             <td>{capitalizeText(mostGamesPlayer)}</td>
                         </tr>
                     ) : null}
                     {mostWins && mostWinsPlayer && mostWins > 0 ? (
                         <tr>
-                            <td>Most Wins</td>
+                            <td>Most wins</td>
                             <td>{mostWins}</td>
                             <td>{capitalizeText(mostWinsPlayer)}</td>
                         </tr>
@@ -60,49 +56,23 @@ function RecordsTableDisplay(props) {
                     bestWinPercPlayerOrTeam &&
                     bestWinPerc > 0 ? (
                         <tr>
-                            <td>Win percentage</td>
+                            <td>Highest win percentage</td>
                             <td>{bestWinPerc}%</td>
                             <td>{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     ) : null}
-                    {bestAverage && bestAveragePlayer && bestAverage > -21 ? (
+                    {bestAverage && bestAveragePlayer && bestAverage > -26 ? (
                         <tr>
-                            <td>Average</td>
+                            <td>Best average</td>
                             <td>{bestAverage.toFixed(2)}</td>
                             <td>{capitalizeText(bestAveragePlayer)}</td>
-                        </tr>
-                    ) : null}
-                    {bestPoints && bestPointsPlayer && bestPoints > 0 ? (
-                        <tr>
-                            <td>Points per game***</td>
-                            <td>{bestPoints.toFixed(2)}</td>
-                            <td>{capitalizeText(bestPointsPlayer)}</td>
-                        </tr>
-                    ) : null}
-                    {bestTeamPointsPerGameTeam &&
-                    bestTeamPointsPerGame &&
-                    bestTeamPointsPerGame > 0 ? (
-                        <tr>
-                            <td>Points per game***</td>
-                            <td>{bestTeamPointsPerGame.toFixed(2)}</td>
-                            <td>{capitalizeText(bestTeamPointsPerGameTeam)}</td>
-                        </tr>
-                    ) : null}
-                    {fewestPointsConcededTeam &&
-                    fewestPointsConcededPerGame &&
-                    fewestPointsConcededPerGame > 0 &&
-                    fewestPointsConcededPerGame <= 40 ? (
-                        <tr>
-                            <td>Opponent points per game***</td>
-                            <td>{fewestPointsConcededPerGame.toFixed(2)}</td>
-                            <td>{capitalizeText(fewestPointsConcededTeam)}</td>
                         </tr>
                     ) : null}
                     {bestTeamAggPerGameTeam &&
                     bestTeamAggPerGame &&
                     bestTeamAggPerGame > 0 ? (
                         <tr>
-                            <td>Aggregate per game</td>
+                            <td>Most points scored per game</td>
                             <td>{bestTeamAggPerGame.toFixed(2)}</td>
                             <td>{capitalizeText(bestTeamAggPerGameTeam)}</td>
                         </tr>
@@ -110,13 +80,22 @@ function RecordsTableDisplay(props) {
                     {lowestAggConcededPerGame &&
                     lowestAggConcededPerGameTeam &&
                     lowestAggConcededPerGame > 0 &&
-                    lowestAggConcededPerGame <= 21 ? (
+                    lowestAggConcededPerGame <= 26 ? (
                         <tr>
-                            <td>Opponent aggregate per game</td>
+                            <td>Fewest points conceded per game</td>
                             <td>{lowestAggConcededPerGame.toFixed(2)}</td>
                             <td>
                                 {capitalizeText(lowestAggConcededPerGameTeam)}
                             </td>
+                        </tr>
+                    ) : null}
+                    {bestWinMargin &&
+                    bestWinMarginTeam &&
+                    bestWinMargin > 0 ? (
+                        <tr>
+                            <td>Best points difference</td>
+                            <td>{bestWinMargin.toFixed(0)}</td>
+                            <td>{capitalizeText(bestWinMarginTeam)}</td>
                         </tr>
                     ) : null}
                 </tbody>

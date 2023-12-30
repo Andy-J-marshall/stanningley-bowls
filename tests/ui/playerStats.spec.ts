@@ -15,8 +15,7 @@ const players: Array<string> = [
   'Paul Bowes',
   'Alyssa Randell',
   'Alison',
-  'Kevin Waller',
-  'Jack Roberts',
+  'Derek Wilson',
 ];
 for (const player of players) {
   test(`Summary of player's team stats are correct for ${player}`, async () => {

@@ -6,7 +6,6 @@ import { capitalizeText } from '../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';
 import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsTeams from './playerStatsTeams';
-import PlayerStatsPoints from './playerStatsPoints';
 import PlayerStatsAggregates from './playerStatsAggregates';
 import PlayerStatsResults from './playerStatsResults';
 
@@ -46,9 +45,6 @@ function Players(props) {
                         <Accordion defaultActiveKey="0">
                             <PlayerStatsOverview stats={stats} />
                             <PlayerStatsWinsLosses stats={stats} />
-                            {!showStatSummary && (
-                                <PlayerStatsPoints stats={stats} />
-                            )}
                             <PlayerStatsAggregates stats={stats} />
                             {!showStatSummary && (
                                 <PlayerStatsTeams stats={stats} />

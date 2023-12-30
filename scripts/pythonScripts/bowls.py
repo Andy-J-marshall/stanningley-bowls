@@ -17,10 +17,10 @@ traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays)
 formatName = utils.formatName
 cupText = utils.cupText
-calculateGamePoints = utils.calculateGamePoints
 preferredTeamName = teamDetails.preferredTeamName
 transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
+returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 lastResultRowsForTransferredPlayer = {}
 
 # Spreadsheet info
@@ -106,11 +106,13 @@ for day in teamDays:
     awayDraws = 0
     cupWins = 0
     cupLosses = 0
+    wins = 0
+    draws = 0
+    losses = 0
     teamAgg = 0
-    teamTotalPoints = 0
     opponentAgg = 0
-    opponentTotalPoints = 0
     results = []
+    totalGamesPlayed = 0
 
     for row in range(1, sheet.max_row + 1):
         # Leeds half holiday team only has 6 players
@@ -189,9 +191,6 @@ for day in teamDays:
                 opponentAgg = opponentAgg + \
                     sheet[awayAggCol +
                           str(row + 9 - rowsDownIntModifier)].value
-                if not cupGame:
-                    teamTotalPoints = teamTotalPoints + homeScore
-                    opponentTotalPoints = opponentTotalPoints + awayScore
 
         # Away games
         if row in awayRow:
@@ -219,25 +218,24 @@ for day in teamDays:
                 teamAgg = teamAgg + \
                     sheet[awayAggCol +
                           str(row + 9 - rowsDownIntModifier)].value
-                if not cupGame:
-                    teamTotalPoints = teamTotalPoints + awayScore
-                    opponentTotalPoints = opponentTotalPoints + homeScore
 
     # Store team result data
     teamResults = {
         'day': day,
         'awayWins': awayWins,
         'homeWins': homeWins,
+        'wins': awayWins + homeWins + cupWins,
         'awayLosses': awayLosses,
         'homeLosses': homeLosses,
         'homeDraws': homeDraws,
         'awayDraws': awayDraws,
+        'draws': homeDraws + awayDraws,
         'cupWins': cupWins,
         'cupLosses': cupLosses,
+        'losses': homeLosses + awayLosses + cupLosses,
+        'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
         'agg': teamAgg,
-        'totalPoints': teamTotalPoints,
         'opponentAgg': opponentAgg,
-        'opponentTotalPoints': opponentTotalPoints,
         'leaguePosition': currentLeaguePosition,
         'results': results
     }
@@ -284,8 +282,6 @@ for day in teamDays:
         # reset variable values
         aggregate = 0
         opponentAggregate = 0
-        points = 0
-        opponentPoints = 0
         secondOpponent = ''
         playerName = ''
         opponentsName = ''
@@ -360,11 +356,7 @@ for day in teamDays:
                 secondOpponent = formatName(secondOpponent)
                 playerName = formatName(playerName)
                 opponentsName = formatName(opponentsName)
-
-                if not cupGame:
-                    points = calculateGamePoints(aggregate)
-                    opponentPoints = calculateGamePoints(opponentAggregate)
-
+                    
                 # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
@@ -372,12 +364,12 @@ for day in teamDays:
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
+                    playerStats[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(day)
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
-                    playerStats[playerName]['totalPairsPoints'] += points
-                    playerStats[playerName]['totalPairsPointsAgainst'] += opponentPoints
 
                 playerStats[playerName][day.lower()]['games'] += 1
+                playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
                     str(aggregate) + ' - ' + \
@@ -424,32 +416,27 @@ for day in teamDays:
                             playerStats[playerName]['pairCupLosses'] += 1
 
                 # Averages
+                playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(day)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
                 playerStats[playerName][day.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
+                    playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(day)
                     playerStats[playerName]['totalHomeAgg'] += aggregate
                     playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
-                    playerStats[playerName]['totalHomePoints'] += points
-                    playerStats[playerName]['totalHomePointsAgainst'] += opponentPoints
                     if pairsGame:
+                        playerStats[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(day)
                         playerStats[playerName]['totalPairsHomeAgg'] += aggregate
                         playerStats[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
-                        playerStats[playerName]['totalPairsHomePoints'] += points
-                        playerStats[playerName]['totalPairsHomePointsAgainst'] += opponentPoints
                 if awayGame:
+                    playerStats[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(day)
                     playerStats[playerName]['totalAwayAgg'] += aggregate
                     playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
-                    playerStats[playerName]['totalAwayPoints'] += points
-                    playerStats[playerName]['totalAwayPointsAgainst'] += opponentPoints
                     if pairsGame:
+                        playerStats[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(day)
                         playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                        playerStats[playerName]['totalPairsAwayPoints'] += points
-                        playerStats[playerName]['totalPairsAwayPointsAgainst'] += opponentPoints
-                playerStats[playerName]['totalPoints'] += points
-                playerStats[playerName]['totalPointsAgainst'] += opponentPoints
                 playerStats[playerName]['dayPlayed'].append(day)
 
                 if row in homePlayerRow and row in awayPlayerRow:

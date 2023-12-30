@@ -41,7 +41,7 @@ function PlayerRecords(props) {
     let bestTuesdayWinPerc = 0;
     let bestTuesdayWinPercPlayer = [];
 
-    // Wednesday
+    // Wednesday Half Holiday
     let useWednesdayStats = false;
     let minWedGames = 1;
     let mostWednesdayWinsPlayer = [];
@@ -50,6 +50,17 @@ function PlayerRecords(props) {
     let bestWednesdayAverage = -21;
     let bestWednesdayWinPerc = 0;
     let bestWednesdayWinPercPlayer = [];
+
+    // TODO need to implement this
+    // Wednesday Pairs
+    let useWedPairsStats = false;
+    let minWedPairsGames = 1;
+    let mostWedPairsWinsPlayer = [];
+    let mostWedPairsWins = 0;
+    let bestWedPairsAveragePlayer = [];
+    let bestWedPairsAverage = -26;
+    let bestWedPairsWinPerc = 0;
+    let bestWedPairsWinPercPlayer = [];
 
     // Thursday Vets
     let useThursdayVetsStats = false;
@@ -80,9 +91,7 @@ function PlayerRecords(props) {
     let bestWinPercPlayer = [];
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
-    let bestAverage = -21;
-    let bestPointsPlayer = [];
-    let bestPoints = 0;
+    let bestAverage = -26;
 
     // Find the highest number of games played for each team
     let highestMonGames = 0;
@@ -284,7 +293,7 @@ function PlayerRecords(props) {
             }
         }
 
-        // Wednesday
+        // Wednesday Half Holiday
         if (wednesday) {
             useWednesdayStats = true;
             const wednesdayWins = wednesday.wins;
@@ -443,8 +452,7 @@ function PlayerRecords(props) {
 
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-        const points = p.totalPoints / (totalGames - p.cupWins - p.cupLosses);
-        
+
         if (highestTotalGames > minTotalGames) {
             if (highestTotalGames >= minGamesForOverallRecords) {
                 minTotalGames = minGamesForOverallRecords;
@@ -482,13 +490,6 @@ function PlayerRecords(props) {
             }
             bestAveragePlayer.push(`${player} (${totalGames})`);
         }
-        if (points >= bestPoints && playedMinGames) {
-            if (points > bestPoints) {
-                bestPointsPlayer = [];
-                bestPoints = points;
-            }
-            bestPointsPlayer.push(`${player} (${totalGames})`);
-        }
     });
 
     function allComponent() {
@@ -505,8 +506,6 @@ function PlayerRecords(props) {
                     bestWinPercPlayerOrTeam={bestWinPercPlayer}
                     bestAverage={bestAverage}
                     bestAveragePlayer={bestAveragePlayer}
-                    bestPoints={bestPoints}
-                    bestPointsPlayer={bestPointsPlayer}
                 />
             );
         } else {

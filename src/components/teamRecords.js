@@ -1,47 +1,28 @@
 import RecordsTableDisplay from './recordsTableDisplay';
+import config from '../config';
 
 function TeamRecords(props) {
     const teamResults = props.teamResults;
 
     let bestWinPercentage = -1;
     let bestWinPercentageTeam = [];
-    let bestTeamPointsPerGame = -1;
-    let bestTeamPointsPerGameTeam = [];
     let bestTeamAggPerGame = -1;
     let bestTeamAggPerGameTeam = [];
-    let fewestPointsConcededPerGame = 100;
-    let fewestPointsConcededPerGameTeam = [];
     let lowestAggConcededPerGame = 1000;
     let lowestAggConcededPerGameTeam = [];
+    let bestWinMargin = -1;
+    let bestWinMarginTeam = [];
     let minGames = 1;
 
     // This sets the minimum number of games required for the stats to be counted
     if (teamResults) {
         teamResults.forEach((stats) => {
-            const {
-                awayWins,
-                homeWins,
-                cupWins,
-                awayLosses,
-                homeLosses,
-                cupLosses,
-                homeDraws,
-                awayDraws,
-            } = stats;
-            const totalGames =
-                awayWins +
-                homeWins +
-                cupWins +
-                awayLosses +
-                homeLosses +
-                cupLosses +
-                awayDraws +
-                homeDraws;
-            if (totalGames > minGames) {
-                if (totalGames >= 7) {
+            const { totalGamesPlayed } = stats;
+            if (totalGamesPlayed > minGames) {
+                if (totalGamesPlayed >= 7) {
                     minGames = 7;
                 } else {
-                    minGames = totalGames;
+                    minGames = totalGamesPlayed;
                 }
             }
         });
@@ -49,89 +30,64 @@ function TeamRecords(props) {
         teamResults.forEach((stats) => {
             const {
                 day,
-                awayWins,
-                homeWins,
-                cupWins,
-                awayLosses,
-                homeLosses,
-                cupLosses,
-                homeDraws,
-                awayDraws,
+                wins,
+                draws,
                 agg,
-                totalPoints,
                 opponentAgg,
-                opponentTotalPoints,
+                totalGamesPlayed
             } = stats;
-            const wins = awayWins + homeWins + cupWins;
-            const losses = awayLosses + homeLosses + cupLosses;
-            const draws = awayDraws + homeDraws;
-            const totalGames = wins + losses + draws;
-            const drawPoints = draws > 0 ? draws * 0.5 : 0;
-            const winPercentage = ((wins + drawPoints) / totalGames) * 100;
 
-            const gamesPerMatch =
-                day.toLowerCase().includes('monday') ||
-                day.toLowerCase().includes('wednesday')
-                    ? 6
-                    : 8; // there are only 6 games on a Monday and Wednesday
-            const pointsPerGame =
-                totalPoints /
-                gamesPerMatch /
-                (totalGames - cupLosses - cupWins); // cup games are decided on pure aggregate
-            const aggPerGame = agg / gamesPerMatch / totalGames;
-            const pointsConcededPerGame =
-                opponentTotalPoints /
-                gamesPerMatch /
-                (totalGames - cupLosses - cupWins);
-            const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGames;
+            const winPercentage = ((wins) / totalGamesPlayed) * 100;
 
-            if (aggPerGame >= bestTeamAggPerGame && totalGames >= minGames) {
-                if (aggPerGame !== bestTeamAggPerGame) {
-                    bestTeamAggPerGameTeam.pop();
-                }
-                bestTeamAggPerGameTeam.push(`${day} (${totalGames})`);
-                bestTeamAggPerGame = aggPerGame;
-            }
-            if (
-                pointsPerGame >= bestTeamPointsPerGame &&
-                totalGames >= minGames
-            ) {
-                if (pointsPerGame !== bestTeamPointsPerGame) {
-                    bestTeamPointsPerGameTeam.pop();
-                }
-                bestTeamPointsPerGameTeam.push(`${day} (${totalGames})`);
-                bestTeamPointsPerGame = pointsPerGame;
-            }
-            if (
-                pointsConcededPerGame <= fewestPointsConcededPerGame &&
-                totalGames >= minGames
-            ) {
-                if (pointsConcededPerGame !== fewestPointsConcededPerGame) {
-                    fewestPointsConcededPerGameTeam.pop();
-                }
-                fewestPointsConcededPerGameTeam.push(`${day} (${totalGames})`);
-                fewestPointsConcededPerGame = pointsConcededPerGame;
-            }
-            if (
-                aggConcededPerGame <= lowestAggConcededPerGame &&
-                totalGames >= minGames
-            ) {
-                if (aggConcededPerGame !== lowestAggConcededPerGame) {
-                    lowestAggConcededPerGameTeam.pop();
-                }
-                lowestAggConcededPerGameTeam.push(`${day} (${totalGames})`);
-                lowestAggConcededPerGame = aggConcededPerGame;
-            }
-            if (winPercentage >= bestWinPercentage && totalGames >= minGames) {
+            const team = config.teams.find(t => {
+                return t.name === config.days[day.toLowerCase()]
+            })
+            const gamesPerMatch = team?.numberOfGames ? team.numberOfGames : 8
+
+            const aggPerGame = agg / gamesPerMatch / totalGamesPlayed;
+            const aggConcededPerGame = opponentAgg / gamesPerMatch / totalGamesPlayed;
+
+            if (winPercentage >= bestWinPercentage && totalGamesPlayed >= minGames) {
                 if (winPercentage !== bestWinPercentage) {
                     bestWinPercentageTeam.pop();
                 }
-                bestWinPercentageTeam.push(`${day} (${totalGames})`);
+                bestWinPercentageTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
                 bestWinPercentage = winPercentage;
+            }
+
+            const winMargin = agg - opponentAgg;
+            if (winMargin >= bestWinMargin && totalGamesPlayed >= minGames) {
+                if (winMargin !== bestWinMargin) {
+                    bestWinMarginTeam.pop();
+                }
+                bestWinMarginTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                bestWinMargin = winMargin;
+            }
+
+            // Excludes teams that don't play to 21 as these stats won't make sense otherwise
+            if (team.games21UpBool) {
+                if (
+                    aggConcededPerGame <= lowestAggConcededPerGame &&
+                    totalGamesPlayed >= minGames
+                ) {
+                    if (aggConcededPerGame !== lowestAggConcededPerGame) {
+                        lowestAggConcededPerGameTeam.pop();
+                    }
+                    lowestAggConcededPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    lowestAggConcededPerGame = aggConcededPerGame;
+                }
+
+                if (aggPerGame >= bestTeamAggPerGame && totalGamesPlayed >= minGames) {
+                    if (aggPerGame !== bestTeamAggPerGame) {
+                        bestTeamAggPerGameTeam.pop();
+                    }
+                    bestTeamAggPerGameTeam.push(`${config.days[day.toLowerCase()]} (${totalGamesPlayed})`);
+                    bestTeamAggPerGame = aggPerGame;
+                }
             }
         });
 
-        if (fewestPointsConcededPerGameTeam.length > 0) {
+        if (bestTeamAggPerGame >= 0) {
             return (
                 <div id="team-record" className="center">
                     <br />
@@ -141,20 +97,12 @@ function TeamRecords(props) {
                         playerOrTeam="Team"
                         bestWinPerc={bestWinPercentage}
                         bestWinPercPlayerOrTeam={bestWinPercentageTeam}
-                        bestTeamPointsPerGame={bestTeamPointsPerGame}
-                        bestTeamPointsPerGameTeam={bestTeamPointsPerGameTeam}
-                        fewestPointsConcededPerGame={
-                            fewestPointsConcededPerGame
-                        }
-                        fewestPointsConcededPerGameTeam={
-                            fewestPointsConcededPerGameTeam
-                        }
                         bestTeamAggPerGame={bestTeamAggPerGame}
                         bestTeamAggPerGameTeam={bestTeamAggPerGameTeam}
                         lowestAggConcededPerGame={lowestAggConcededPerGame}
-                        lowestAggConcededPerGameTeam={
-                            lowestAggConcededPerGameTeam
-                        }
+                        lowestAggConcededPerGameTeam={lowestAggConcededPerGameTeam}
+                        bestWinMargin={bestWinMargin}
+                        bestWinMarginTeam={bestWinMarginTeam}
                     />
                 </div>
             );

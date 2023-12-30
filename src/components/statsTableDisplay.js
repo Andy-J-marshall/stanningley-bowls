@@ -16,9 +16,11 @@ function StatsTableDisplay(props) {
     const awayDraws = props.awayDraws || 0;
     const agg = props.agg;
     const opponentAgg = props.opponentAgg;
-    const teamPoints = props.teamPoints;
-    const opponentTeamPoints = props.opponentTeamPoints;
     const leaguePosition = props.leaguePosition;
+
+    const homeGames = homeDraws + homeWins + homeLosses;
+    const awayGames = awayDraws + awayWins + awayLosses;
+    const cupGames = cupWins + cupLosses;
 
     return (
         <div className="center table" style={{ width: '98%' }}>
@@ -48,27 +50,10 @@ function StatsTableDisplay(props) {
                             <td>{totalWins}</td>
                         </tr>
                     ) : null}
-                    {totalWins > 0 ? (
-                        <tr>
-                            <td>Win breakdown</td>
-                            <td>
-                                {homeWins} home, {awayWins} away, {cupWins} cup
-                            </td>
-                        </tr>
-                    ) : null}
                     {totalLosses >= 0 ? (
                         <tr>
                             <td>Losses</td>
                             <td>{totalLosses}</td>
-                        </tr>
-                    ) : null}
-                    {totalLosses > 0 ? (
-                        <tr>
-                            <td>Loss breakdown</td>
-                            <td>
-                                {homeLosses} home, {awayLosses} away,{' '}
-                                {cupLosses} cup
-                            </td>
                         </tr>
                     ) : null}
                     {totalDraws > 0 ? (
@@ -77,12 +62,26 @@ function StatsTableDisplay(props) {
                             <td>{totalDraws}</td>
                         </tr>
                     ) : null}
-                    {totalDraws > 0 ? (
+                    {homeGames > 0 ? (
                         <tr>
-                            <td>Draw breakdown</td>
+                            <td>Home win percentage</td>
                             <td>
-                                {homeDraws} home, {awayDraws} away
+                                {((homeWins / homeGames) * 100).toFixed(2)} %
                             </td>
+                        </tr>
+                    ) : null}
+                    {awayGames > 0 ? (
+                        <tr>
+                            <td>Away win percentage</td>
+                            <td>
+                                {((awayWins / awayGames) * 100).toFixed(2)} %
+                            </td>
+                        </tr>
+                    ) : null}
+                    {cupGames > 0 ? (
+                        <tr>
+                            <td>Cup win percentage</td>
+                            <td>{((cupWins / cupGames) * 100).toFixed(2)} %</td>
                         </tr>
                     ) : null}
                     {agg > 0 ? (
@@ -95,18 +94,6 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Opponent aggregate</td>
                             <td>{opponentAgg}</td>
-                        </tr>
-                    ) : null}
-                    {teamPoints > 0 ? (
-                        <tr>
-                            <td>{config.teamNames.short} points*</td>
-                            <td>{teamPoints}</td>
-                        </tr>
-                    ) : null}
-                    {opponentTeamPoints > 0 ? (
-                        <tr>
-                            <td>Opponent points*</td>
-                            <td>{opponentTeamPoints}</td>
                         </tr>
                     ) : null}
                 </tbody>

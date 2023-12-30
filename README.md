@@ -91,7 +91,6 @@ Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 - duplicateTeamMemberNames
 - anonymiseNames
 - traitorPlayers (also update the days)
-- calculateGamePoints
 
 Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
 
@@ -111,7 +110,6 @@ Update `homepage` in `package.json`
 Check `bowls.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
-- Remove/edit game points?
 - Check the `satAndWedLeaguePositionCol` value for the selected leagues
 
 Update `src/config.js`:
@@ -147,14 +145,12 @@ Update the `teamDetails.py` script with the updated list of players, traitorPlay
 
 Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
-If entering a new league, update `bowls.py` and `bowlscombined.py` scripts with the new scoring system for the league (if not 54321). Will also need to change the calculation for average number of points scored in `players.js` component.
-
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
 
 Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
 
-If there are any new teams added, update the `teamTabs.js`, `players.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
+If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
 
 Update `yearFixturesAddedFor` in `fixtures.js`.
 

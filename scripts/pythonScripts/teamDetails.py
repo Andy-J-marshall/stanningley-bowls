@@ -8,7 +8,9 @@ preferredTeamName = 'Stanningley'
 
 # Days played
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
-            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds']
+            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds'
+            #'Wednesday Pairs AireWharfe'
+            ]
 
 # Every player (lowercase)
 players = [
@@ -31,6 +33,7 @@ traitorPlayers = {
     'Wednesday Half Holiday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
     'Thursday Vets Leeds': [],
     'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
+    # 'Wednesday Pairs AireWharfe': []
 }
 
 transferredPlayers = {
@@ -47,7 +50,8 @@ transferredPlayers = {
     {
         'player': 'donald shaw',
         'date': datetime.datetime(2023, 5, 10),
-    }
+    },
+    # 'Wednesday Pairs AireWharfe': []
 }
 
 clubCupWinners = {

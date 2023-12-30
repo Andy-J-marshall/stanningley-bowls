@@ -25,6 +25,8 @@ const live = {
             desc: '4 singles games and 2 pairs',
             link: 'https://bowlsnet.uk/Leeds-MonComb',
             startTime: '6:15-6.45pm',
+            numberOfGames: 6,
+            games21UpBool: true
         },
         {
             name: 'Tuesday Vets',
@@ -32,6 +34,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/LeedsParkVets-Tue',
             startTime: '1:30pm',
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
             name: 'Tuesday',
@@ -39,13 +43,26 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/Leeds-Tue',
             startTime: '6:15-6.45pm',
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
-            name: 'Wednesday',
+            name: 'Wednesday Half Holiday',
             age: 'Open Age',
             desc: '6 singles games',
             link: 'https://bowlsnet.uk/Leeds-Wed',
-            startTime: '1.30pm',
+            startTime: '1:30pm',
+            numberOfGames: 6,
+            games21UpBool: true
+        },
+        {
+            name: 'Wednesday Pairs',
+            age: 'Open Age',
+            desc: '4 pairs games',
+            link: 'https://bowlsnet.uk/AW-WedPairs',
+            startTime: '6:15-7pm',
+            numberOfGames: 4,
+            games21UpBool: false
         },
         {
             name: 'Thursday Vets',
@@ -53,6 +70,8 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/LeedsParkVets-Thu',
             startTime: '1:30pm',
+            numberOfGames: 8,
+            games21UpBool: true
         },
         {
             name: 'Saturday',
@@ -60,19 +79,20 @@ const live = {
             desc: '8 singles games',
             link: 'https://bowlsnet.uk/Leeds-Sat',
             startTime: '2pm',
+            numberOfGames: 8,
+            games21UpBool: true
         },
     ],
     days: {
         'monday combined leeds': 'Monday Combined',
         'tuesday vets leeds': 'Tuesday Vets',
         'tuesday leeds': 'Tuesday',
-        'wednesday half holiday leeds': 'Wednesday',
+        'wednesday half holiday leeds': 'Wednesday Half Holiday',
+        'wednesday pairs airewharfe': 'Wednesday Pairs',
         'thursday vets leeds': 'Thursday Vets',
         'saturday leeds': 'Saturday',
     },
     leagues: 'Leeds Parks',
-    leagueRules:
-        'League matches are decided using the 0-5 points system. If a player wins by scoring 21 then they get 5 points. If they lose and score 18-20 then they get 4 points, 15-17 is 3 points, 10-14 is 2 points and 5-9 is 1 point. If a player scores 0-4 then they get 0 points. Cup matches are decided on pure aggregate.',
 };
 
 export default live;
