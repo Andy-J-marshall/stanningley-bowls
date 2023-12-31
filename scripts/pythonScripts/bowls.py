@@ -10,8 +10,7 @@ import utils
 year = str(date.today().year)
 
 teamNames = teamDetails.teamNames
-daysWithSecondTeam = teamDetails.daysWithSecondTeam
-teamDays = teamDetails.teamDays + daysWithSecondTeam
+teamDays = teamDetails.teamDays
 teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
 teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
 players = teamDetails.players
@@ -25,6 +24,7 @@ transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 lastResultRowsForTransferredPlayer = {}
+teamsProcessed = []
 
 # Spreadsheet info
 homePlayerCol = 'A'
@@ -37,7 +37,6 @@ homeTeamScoreCol = 'B'
 awayTeamScoreCol = 'D'
 homeTeamNameCol = 'A'
 awayTeamNameCol = 'B'
-countForDay = 0
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
@@ -46,33 +45,27 @@ wb = openpyxl.load_workbook(path)
 allTeamResults = []
 print('UPDATING STATS:', teamNames[0].upper())
 
-for day in teamDays:
-    expectedTeamNames = teamNames
-    teamNameSuffix = ''
-    dayName = day
-    if day in daysWithSecondTeam:
-        if countForDay == 0:
-            expectedTeamNames = teamNamesForFirstTeam
-            teamNameToUse = preferredTeamName + ' A'
-            dayName = day + ' (A)'
-        if countForDay == 1:
-            expectedTeamNames = teamNamesForSecondTeam
-            teamNameToUse = preferredTeamName + ' B'
-            dayName = day + ' (B)'
-        if countForDay > 1:
-            raise Exception('Unexpected number of teams for day: ' + day)
-        countForDay +=1
-    else:
-        teamNameToUse = preferredTeamName
-        expectedTeamNames = teamNames
-        countForDay = 0
-        dayName = day
+for team in teamDays:
+    league = team.replace(' (A)', '').replace(' (B)', '')
+    
+    if team in teamsProcessed:
+        raise Exception('team is being processed twice: ' + team)
+    teamsProcessed.append(team)
 
-    lastResultRowsForTransferredPlayer[day] = {}
+    expectedTeamNames = teamNames
+    teamNameToUse = preferredTeamName
+    if '(A)' in team:
+        expectedTeamNames = teamNamesForFirstTeam
+        teamNameToUse = preferredTeamName + ' A'
+    if '(B)' in team:
+        expectedTeamNames = teamNamesForSecondTeam
+        teamNameToUse = preferredTeamName + ' B'
+
+    lastResultRowsForTransferredPlayer[league] = {}
 
     # Goes through each sheet in turn
-    sheet = wb[day]
-    print('Processing ' + dayName)
+    sheet = wb[league]
+    print('Processing ' + team)
 
     # Find rows in spreadsheet for team games
     startingRow = 0
@@ -141,7 +134,7 @@ for day in teamDays:
 
     for row in range(1, sheet.max_row + 1):
         # Leeds half holiday team only has 6 players
-        if 'half holiday' in day.lower():
+        if 'half holiday' in team.lower():
             rowsDownIntModifier = 2
         else:
             rowsDownIntModifier = 0
@@ -182,13 +175,13 @@ for day in teamDays:
                 gameDate = ''
 
             # Finds last result before player has been transferred
-            if (transferredPlayers[day]):
+            if (transferredPlayers[league]):
                 gameDates = datefinder.find_dates(gameDate)
                 for formattedGameDate in gameDates:
-                    if (formattedGameDate < transferredPlayers[day]["date"]):
-                        playerTransferred = transferredPlayers[day]["player"]
-                        lastResultRowsForTransferredPlayer[day][playerTransferred] = playerTransferred
-                        lastResultRowsForTransferredPlayer[day][playerTransferred] = row
+                    if (formattedGameDate < transferredPlayers[league]["date"]):
+                        playerTransferred = transferredPlayers[league]["player"]
+                        lastResultRowsForTransferredPlayer[league][playerTransferred] = playerTransferred
+                        lastResultRowsForTransferredPlayer[league][playerTransferred] = row
 
         # Home games
         if row in homeRow:
@@ -246,7 +239,7 @@ for day in teamDays:
 
     # Store team result data
     teamResults = {
-        'day': dayName,
+        'day': team,
         'awayWins': awayWins,
         'homeWins': homeWins,
         'wins': awayWins + homeWins + cupWins,
@@ -274,15 +267,15 @@ for day in teamDays:
         if (homePlayerName and type(homePlayerName) is str) and (homePlayerName.lower() in players or homePlayerName.lower() in duplicateTeamMemberNames):
             # Checks if player is playing for A or B team
             includeHomePlayer = False
-            if dayName.endswith('(A)') or dayName.endswith('(B)'):
-                if dayName.endswith('(A)'):
+            if team.endswith('(A)') or team.endswith('(B)'):
+                if team.endswith('(A)'):
                     for i in range(1, 10):
                         homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
                         if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in expectedTeamNames:
                             includeHomePlayer = True
                             break
 
-                if dayName.endswith('(B)'):
+                if team.endswith('(B)'):
                     for i in range(1, 10):
                         homeBTeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
                         if homeBTeamRow and type(homeBTeamRow.value) is str and homeBTeamRow.value.lower() in expectedTeamNames:
@@ -292,10 +285,10 @@ for day in teamDays:
                 includeHomePlayer = True
 
             # Checks if player plays for team on selected day
-            if homePlayerName.lower() not in traitorPlayers[day] and includeHomePlayer is True:
+            if homePlayerName.lower() not in traitorPlayers[league] and includeHomePlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
-                if homePlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][homePlayerName.lower()]
+                if homePlayerName.lower() in lastResultRowsForTransferredPlayer[league]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][homePlayerName.lower()]
                     if homePlayerIndex <= lastGameBeforeTransfer:
                         homePlayerRow.append(homePlayerIndex)
                 else:
@@ -309,15 +302,15 @@ for day in teamDays:
         if (awayPlayerName and type(awayPlayerName) is str) and (awayPlayerName.lower() in players or awayPlayerName.lower() in duplicateTeamMemberNames):
             # Checks if player is playing for A or B team
             includeAwayPlayer = False
-            if dayName.endswith('(A)') or dayName.endswith('(B)'):
-                if dayName.endswith('(A)'):
+            if team.endswith('(A)') or team.endswith('(B)'):
+                if team.endswith('(A)'):
                     for i in range(1, 10):
                         awayATeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
                         if awayATeamRow and type(awayATeamRow.value) is str and awayATeamRow.value.lower() in expectedTeamNames:
                             includeAwayPlayer = True
                             break
 
-                if dayName.endswith('(B)'):
+                if team.endswith('(B)'):
                     for i in range(1, 10):
                         awayBTeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
                         if awayBTeamRow and type(awayBTeamRow.value) is str and awayBTeamRow.value.lower() in expectedTeamNames:
@@ -327,10 +320,10 @@ for day in teamDays:
                 includeAwayPlayer = True
 
             # Checks if player plays for team on selected day
-            if awayPlayerName.lower() not in traitorPlayers[day] and includeAwayPlayer is True:
+            if awayPlayerName.lower() not in traitorPlayers[league] and includeAwayPlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
-                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[day]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[day][awayPlayerName.lower()]
+                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[league]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][awayPlayerName.lower()]
                     if awayPlayerIndex <= lastGameBeforeTransfer:
                         awayPlayerRow.append(awayPlayerIndex)
                 else:
@@ -425,11 +418,11 @@ for day in teamDays:
                         pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
-                    playerStats[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(day)
+                    playerStats[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
-                playerStats[playerName][day.lower()]['games'] += 1
+                playerStats[playerName][team.lower()]['games'] += 1
                 playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
@@ -440,7 +433,7 @@ for day in teamDays:
 
                 # Wins
                 if aggregate > opponentAggregate:
-                    playerStats[playerName][day.lower()]['wins'] += 1
+                    playerStats[playerName][team.lower()]['wins'] += 1
                     if pairsGame:
                         playerStats[playerName]['winningPairsPartners'].append(
                             pairsPartner)
@@ -477,28 +470,28 @@ for day in teamDays:
                             playerStats[playerName]['pairCupLosses'] += 1
 
                 # Averages
-                playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(day)
+                playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
-                playerStats[playerName][day.lower()]['aggDiff'] += aggregate - \
+                playerStats[playerName][team.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
-                    playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(day)
+                    playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalHomeAgg'] += aggregate
                     playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(day)
+                        playerStats[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsHomeAgg'] += aggregate
                         playerStats[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
                 if awayGame:
-                    playerStats[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(day)
+                    playerStats[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalAwayAgg'] += aggregate
                     playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(day)
+                        playerStats[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                playerStats[playerName]['dayPlayed'].append(dayName)
+                playerStats[playerName]['dayPlayed'].append(team)
 
                 if row in homePlayerRow and row in awayPlayerRow:
                     raise Exception(
