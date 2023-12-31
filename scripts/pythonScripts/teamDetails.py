@@ -10,8 +10,7 @@ teamNamesForSecondTeam =['stanningley b', 'stanningley park b']
 
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
-            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds (A)', 
-            'Saturday Leeds (B)'
+            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds'
             #'Wednesday Pairs AireWharfe'
             ]
 
