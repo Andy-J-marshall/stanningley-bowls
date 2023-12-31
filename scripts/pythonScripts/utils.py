@@ -37,8 +37,6 @@ def deduplicateNames(name):
         name = 'Stewart Watson'
     if name == 'Cliff Brogie':
         name = 'Clifford Brogie'
-    if name == 'David Hudson':
-        name = 'Dave Hudson'
     if name == 'Andrew Waller':
         name = 'Andy Waller'
     if name == 'Don Shaw':

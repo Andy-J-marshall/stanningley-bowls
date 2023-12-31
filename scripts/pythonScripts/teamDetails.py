@@ -10,9 +10,7 @@ teamNamesForSecondTeam =['stanningley b', 'stanningley park b']
 
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
-            'Wednesday Half Holiday Leeds', 'Thursday Vets Leeds', 'Saturday Leeds'
-            #'Wednesday Pairs AireWharfe'
-            ]
+            'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds']
 
 # Every player (lowercase)
 players = [
@@ -32,10 +30,10 @@ traitorPlayers = {
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': ['donald shaw', 'don shaw'],
     'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
+    'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie'],
+    'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['dave hudson', 'david hudson', 'clifford brogie', 'cliff brogie'],
-    # 'Wednesday Pairs AireWharfe': []
+    'Saturday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw']
 }
 
 transferredPlayers = {
@@ -43,17 +41,9 @@ transferredPlayers = {
     'Tuesday Vets Leeds': [],
     'Tuesday Leeds': [],
     'Wednesday Half Holiday Leeds': [],
-    'Thursday Vets Leeds': 
-    {
-        'player': 'dave hudson',
-        'date': datetime.datetime(2023, 6, 6),
-    },
-    'Saturday Leeds':
-    {
-        'player': 'donald shaw',
-        'date': datetime.datetime(2023, 5, 10),
-    },
-    # 'Wednesday Pairs AireWharfe': []
+    'Wednesday Pairs AireWharfe': [],
+    'Thursday Vets Leeds': [],
+    'Saturday Leeds': []
 }
 
 clubCupWinners = {

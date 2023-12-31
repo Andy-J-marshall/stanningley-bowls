@@ -53,14 +53,14 @@ function PlayerRecords(props) {
 
     // TODO need to implement this
     // Wednesday Pairs
-    let useWedPairsStats = false;
+    let useWednesdayPairsStats = false;
     let minWedPairsGames = 1;
-    let mostWedPairsWinsPlayer = [];
-    let mostWedPairsWins = 0;
-    let bestWedPairsAveragePlayer = [];
-    let bestWedPairsAverage = -26;
-    let bestWedPairsWinPerc = 0;
-    let bestWedPairsWinPercPlayer = [];
+    let mostWednesdayPairsWinsPlayer = [];
+    let mostWednesdayPairsWins = 0;
+    let bestWednesdayPairsAveragePlayer = [];
+    let bestWednesdayPairsAverage = -26;
+    let bestWednesdayPairsWinPerc = 0;
+    let bestWednesdayPairsWinPercPlayer = [];
 
     // Thursday Vets
     let useThursdayVetsStats = false;
@@ -108,6 +108,7 @@ function PlayerRecords(props) {
     let highestTuesVetsGames = 0;
     let highestTuesGames = 0;
     let highestWedGames = 0;
+    let highestWedPairsGames = 0;
     let highestThursVetsGames = 0;
     let highestSatGames = 0;
     let highestSatBGames = 0;
@@ -119,6 +120,7 @@ function PlayerRecords(props) {
         const tuesdayVets = p['tuesday vets leeds'];
         const tuesday = p['tuesday leeds'];
         const wednesday = p['wednesday half holiday leeds'];
+        const wednesdayPairs = p['wednesday pairs airewharfe'];
         const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
         const saturdayB = p['saturday leeds (b)'];
@@ -160,6 +162,7 @@ function PlayerRecords(props) {
         const tuesdayVets = p['tuesday vets leeds'];
         const tuesday = p['tuesday leeds'];
         const wednesday = p['wednesday half holiday leeds'];
+        const wednesdayPairs = p['wednesday pairs airewharfe'];
         const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
         const saturdayB = p['saturday leeds (b)'];
@@ -347,6 +350,53 @@ function PlayerRecords(props) {
                     bestWednesdayWinPerc = wednesdayWinPerc;
                 }
                 bestWednesdayWinPercPlayer.push(player);
+            }
+        }
+
+        // Wednesday Half Holiday
+        if (wednesdayPairs) {
+            useWednesdayPairsStats = true;
+            const wednesdayPairsWins = wednesdayPairs.wins;
+            const wednesdayPairsGames = wednesdayPairs.games;
+            const wednesdayPairsAvg = wednesdayPairs.aggDiff / wednesdayPairsGames;
+            const wednesdayPairsWinPerc = (wednesdayPairsWins / wednesdayPairsGames) * 100;
+
+            if (highestWedPairsGames > minWedPairsGames) {
+                if (highestWedPairsGames >= minGamesForTeamRecords) {
+                    minWedPairsGames = minGamesForTeamRecords;
+                } else {
+                    minWedPairsGames = highestWedPairsGames;
+                }
+            }
+
+            if (
+                wednesdayPairsAvg >= bestWednesdayPairsAverage &&
+                wednesdayPairsGames >= minWedPairsGames
+            ) {
+                if (wednesdayPairsAvg > bestWednesdayPairsAverage) {
+                    bestWednesdayPairsAveragePlayer = [];
+                    bestWednesdayPairsAverage = wednesdayPairsAvg;
+                }
+                bestWednesdayPairsAveragePlayer.push(player);
+            }
+
+            if (wednesdayPairsWins >= mostWednesdayPairsWins) {
+                if (wednesdayPairsWins > mostWednesdayPairsWins) {
+                    mostWednesdayPairsWinsPlayer = [];
+                    mostWednesdayPairsWins = wednesdayPairsWins;
+                }
+                mostWednesdayPairsWinsPlayer.push(player);
+            }
+
+            if (
+                wednesdayPairsWinPerc >= bestWednesdayPairsWinPerc &&
+                wednesdayPairsGames >= minWedPairsGames
+            ) {
+                if (wednesdayPairsWinPerc > bestWednesdayPairsWinPerc) {
+                    bestWednesdayPairsWinPercPlayer = [];
+                    bestWednesdayPairsWinPerc = wednesdayPairsWinPerc;
+                }
+                bestWednesdayPairsWinPercPlayer.push(player);
             }
         }
 
@@ -651,6 +701,29 @@ function PlayerRecords(props) {
         }
     }
 
+    function returnWednesdayPairsTeamComponent() {
+        if (useWednesdayPairsStats) {
+            if (bestWednesdayPairsAveragePlayer.length > 0) {
+                return (
+                    <RecordsTableDisplay
+                        minGames={minWedPairsGames}
+                        playerOrTeam="Player"
+                        mostWins={mostWednesdayPairsWins}
+                        mostWinsPlayer={mostWednesdayPairsWinsPlayer}
+                        bestWinPerc={bestWednesdayPairsWinPerc}
+                        bestWinPercPlayerOrTeam={bestWednesdayPairsWinPercPlayer}
+                        bestAverage={bestWednesdayPairsAverage}
+                        bestAveragePlayer={bestWednesdayPairsAveragePlayer}
+                    />
+                );
+            } else {
+                return <p>No games played</p>;
+            }
+        } else {
+            return <p>No stats available for this day</p>;
+        }
+    }
+
     function returnThursdayVetsTeamComponent() {
         if (useThursdayVetsStats) {
             if (bestThursdayVetsAveragePlayer.length > 0) {
@@ -676,7 +749,7 @@ function PlayerRecords(props) {
 
     function returnSaturdayTeamComponent() {
         if (useSaturdayStats) {
-            if (bestSaturdayAveragePlayer.length > 0) {
+            if (bestSaturdayAveragePlayer.length > 0 || bestSaturdayBAveragePlayer.length > 0) {
                 return (
                     <div>
                         {useSaturdayBStats && <h3>FIRST TEAM</h3>}
@@ -733,6 +806,7 @@ function PlayerRecords(props) {
                     team2Component={returnTuesdayVetsTeamComponent()}
                     team3Component={returnTuesdayTeamComponent()}
                     team4Component={returnWednesdayTeamComponent()}
+                    team7Component={returnWednesdayPairsTeamComponent()}
                     team5Component={returnThursdayVetsTeamComponent()}
                     team6Component={returnSaturdayTeamComponent()}
                 />
