@@ -28,6 +28,10 @@ function PlayerStatsTeams(props) {
         saturdayAvg,
         saturdayWins,
         saturdayLosses,
+        saturdayBGames,
+        saturdayBWins,
+        saturdayBLosses,
+        saturdayBAvg,
     } = stats;
 
     return (
@@ -121,7 +125,6 @@ function PlayerStatsTeams(props) {
                                 </p>
                             </div>
                         )}
-                        {/* TODO split this into first and second team stats? */}
                         {saturdayGames > 0 && (
                             <div>
                                 <h3>SATURDAY</h3>
@@ -133,6 +136,23 @@ function PlayerStatsTeams(props) {
                                     Win percentage:{' '}
                                     {(
                                         (saturdayWins / saturdayGames) *
+                                        100
+                                    ).toFixed(0)}
+                                    %
+                                </p>
+                            </div>
+                        )}
+                        {saturdayBGames > 0 && (
+                            <div>
+                                <h3>SATURDAY B</h3>
+                                <p>Games: {saturdayBGames}</p>
+                                <p>Wins: {saturdayBWins}</p>
+                                <p>Losses: {saturdayBLosses}</p>
+                                <p>Average: {saturdayBAvg.toFixed(2)}</p>
+                                <p>
+                                    Win percentage:{' '}
+                                    {(
+                                        (saturdayBWins / saturdayBGames) *
                                         100
                                     ).toFixed(0)}
                                     %

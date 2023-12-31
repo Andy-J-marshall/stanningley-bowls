@@ -154,6 +154,8 @@ If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js
 
 Update `yearFixturesAddedFor` in `fixtures.js`.
 
+Add fixtures to Google calendar for all teams.
+
 Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
 Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.
@@ -162,4 +164,9 @@ If adding or removing a second team, updated the following properties in `teamDe
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 * `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
 * `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`
-Also change the `days` property in `config.js` to include extra team names with `(a)` and `(b)` after them
+Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
+
+Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
+Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day. 
+<!-- TODO `playerRecords.js` -->
+<!-- TODO `results.js` -->

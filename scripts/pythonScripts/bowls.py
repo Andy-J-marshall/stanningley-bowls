@@ -47,7 +47,9 @@ print('UPDATING STATS:', teamNames[0].upper())
 
 for team in teamDays:
     league = team.replace(' (A)', '').replace(' (B)', '')
-    
+     # this is to store first team data under the old name, to help with backward compatibility
+    teamNameToStoreData = team.replace(' (A)', '')
+
     if team in teamsProcessed:
         raise Exception('team is being processed twice: ' + team)
     teamsProcessed.append(team)
@@ -239,7 +241,7 @@ for team in teamDays:
 
     # Store team result data
     teamResults = {
-        'day': team,
+        'day': teamNameToStoreData,
         'awayWins': awayWins,
         'homeWins': homeWins,
         'wins': awayWins + homeWins + cupWins,
@@ -422,7 +424,7 @@ for team in teamDays:
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
-                playerStats[playerName][team.lower()]['games'] += 1
+                playerStats[playerName][teamNameToStoreData.lower()]['games'] += 1
                 playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
@@ -433,7 +435,7 @@ for team in teamDays:
 
                 # Wins
                 if aggregate > opponentAggregate:
-                    playerStats[playerName][team.lower()]['wins'] += 1
+                    playerStats[playerName][teamNameToStoreData.lower()]['wins'] += 1
                     if pairsGame:
                         playerStats[playerName]['winningPairsPartners'].append(
                             pairsPartner)
@@ -473,7 +475,7 @@ for team in teamDays:
                 playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
-                playerStats[playerName][team.lower()]['aggDiff'] += aggregate - \
+                playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
                     playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(team)

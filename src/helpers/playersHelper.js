@@ -50,10 +50,11 @@ export function returnPlayerStats(playersStats, player) {
     // League stats
     const monday = p['monday combined leeds'];
     const tuesdayVets = p['tuesday vets leeds'];
-    const thursday = p['thursday vets leeds'];
-    const saturday = p['saturday leeds'];
     const tuesdayEvening = p['tuesday leeds'];
     const wednesday = p['wednesday half holiday leeds'];
+    const thursday = p['thursday vets leeds'];
+    const saturday = p['saturday leeds'];
+    const saturdayBTeam = p['saturday leeds (b)'];
 
     // Wins and losses
     const totalWins = awayWins + homeWins + cupWins;
@@ -129,6 +130,17 @@ export function returnPlayerStats(playersStats, player) {
     const saturdayGames = saturday.games;
     const saturdayAvg = saturday.aggDiff / saturdayGames;
 
+    let saturdayBWins;
+    let saturdayBLosses;
+    let saturdayBGames;
+    let saturdayBAvg;
+    if (saturdayBTeam) {
+        saturdayBWins = saturdayBTeam.wins;
+        saturdayBLosses = saturdayBTeam.games - saturdayBTeam.wins;
+        saturdayBGames = saturdayBTeam.games;
+        saturdayBAvg = saturdayBTeam.aggDiff / saturdayBGames;
+    }
+
     let allTeamsPlayedFor = [];
     dayPlayed.forEach((day) => {
         if (!allTeamsPlayedFor.includes(day)) {
@@ -196,7 +208,6 @@ export function returnPlayerStats(playersStats, player) {
         (totalPairsAwayAgg - totalPairsAwayAggAgainst) / pairAwayGamesPlayed;
     const pairsCupAverage =
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
-
 
     return {
         totalAgg,
@@ -287,6 +298,10 @@ export function returnPlayerStats(playersStats, player) {
         saturdayLosses,
         saturdayGames,
         saturdayAvg,
+        saturdayBWins,
+        saturdayBLosses,
+        saturdayBGames,
+        saturdayBAvg,
         allTeamsPlayedFor,
         pairsPartnersCount,
         pairsPartnersCountWins,

@@ -26,7 +26,6 @@ const live = {
             link: 'https://bowlsnet.uk/Leeds-MonComb',
             startTime: '6:15-6.45pm',
             numberOfGames: 6,
-            games21UpBool: true
         },
         {
             name: 'Tuesday Vets',
@@ -35,7 +34,6 @@ const live = {
             link: 'https://bowlsnet.uk/LeedsParkVets-Tue',
             startTime: '1:30pm',
             numberOfGames: 8,
-            games21UpBool: true
         },
         {
             name: 'Tuesday',
@@ -44,7 +42,6 @@ const live = {
             link: 'https://bowlsnet.uk/Leeds-Tue',
             startTime: '6:15-6.45pm',
             numberOfGames: 8,
-            games21UpBool: true
         },
         {
             name: 'Wednesday Half Holiday',
@@ -53,7 +50,6 @@ const live = {
             link: 'https://bowlsnet.uk/Leeds-Wed',
             startTime: '1:30pm',
             numberOfGames: 6,
-            games21UpBool: true
         },
         {
             name: 'Wednesday Pairs',
@@ -62,7 +58,6 @@ const live = {
             link: 'https://bowlsnet.uk/AW-WedPairs',
             startTime: '6:15-7pm',
             numberOfGames: 4,
-            games21UpBool: false
         },
         {
             name: 'Thursday Vets',
@@ -71,7 +66,6 @@ const live = {
             link: 'https://bowlsnet.uk/LeedsParkVets-Thu',
             startTime: '1:30pm',
             numberOfGames: 8,
-            games21UpBool: true
         },
         {
             name: 'Saturday',
@@ -80,9 +74,9 @@ const live = {
             link: 'https://bowlsnet.uk/Leeds-Sat',
             startTime: '2pm',
             numberOfGames: 8,
-            games21UpBool: true
-        },
+        }
     ],
+    daysNotTo21: ['wednesday pairs airewharfe'],
     days: {
         'monday combined leeds': 'Monday Combined',
         'tuesday vets leeds': 'Tuesday Vets',
@@ -91,8 +85,7 @@ const live = {
         'wednesday pairs airewharfe': 'Wednesday Pairs',
         'thursday vets leeds': 'Thursday Vets',
         'saturday leeds': 'Saturday',
-        'saturday leeds (a)': 'Saturday',
-        'saturday leeds (b)': 'Saturday',
+        'saturday leeds (b)': 'Saturday B',
     },
     leagues: 'Leeds Parks',
 };

@@ -16,6 +16,7 @@ standardiseName = utils.standardiseName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 cupText = utils.cupText
+leaguesProcessed = []
 
 # Spreadsheet info
 homePlayerCol = 'A'
@@ -32,6 +33,12 @@ wb = openpyxl.load_workbook(path)
 print('UPDATING ALL PLAYER STATS')
 
 for league in leaguesDays:
+    # To prevent duplication
+    league = league.replace(' (A)', '').replace(' (B)', '')
+    if league in leaguesProcessed:
+        continue
+    leaguesProcessed.append(league)
+
     # Goes through each sheet in turn
     sheet = wb[league]
     print('Processing ' + league)
