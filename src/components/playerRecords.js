@@ -51,7 +51,6 @@ function PlayerRecords(props) {
     let bestWednesdayWinPerc = 0;
     let bestWednesdayWinPercPlayer = [];
 
-    // TODO need to implement this
     // Wednesday Pairs
     let useWednesdayPairsStats = false;
     let minWedPairsGames = 1;
