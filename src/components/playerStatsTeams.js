@@ -20,6 +20,10 @@ function PlayerStatsTeams(props) {
         wednesdayAvg,
         wednesdayWins,
         wednesdayLosses,
+        wednesdayPairsGames,
+        wednesdayPairsAvg,
+        wednesdayPairsWins,
+        wednesdayPairsLosses,
         thursdayGames,
         thursdayAvg,
         thursdayWins,
@@ -102,6 +106,23 @@ function PlayerStatsTeams(props) {
                                     Win percentage:{' '}
                                     {(
                                         (wednesdayWins / wednesdayGames) *
+                                        100
+                                    ).toFixed(0)}
+                                    %
+                                </p>
+                            </div>
+                        )}
+                        {wednesdayPairsGames > 0 && (
+                            <div>
+                                <h3>WEDNESDAY PAIRS</h3>
+                                <p>Games: {wednesdayPairsGames}</p>
+                                <p>Wins: {wednesdayPairsWins}</p>
+                                <p>Losses: {wednesdayPairsLosses}</p>
+                                <p>Average: {wednesdayPairsAvg.toFixed(2)}</p>
+                                <p>
+                                    Win percentage:{' '}
+                                    {(
+                                        (wednesdayPairsWins / wednesdayPairsGames) *
                                         100
                                     ).toFixed(0)}
                                     %

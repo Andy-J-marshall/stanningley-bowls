@@ -52,6 +52,7 @@ export function returnPlayerStats(playersStats, player) {
     const tuesdayVets = p['tuesday vets leeds'];
     const tuesdayEvening = p['tuesday leeds'];
     const wednesday = p['wednesday half holiday leeds'];
+    const wednesdayPairs = p['wednesday pairs airewharfe'];
     const thursday = p['thursday vets leeds'];
     const saturday = p['saturday leeds'];
     const saturdayBTeam = p['saturday leeds (b)'];
@@ -118,6 +119,17 @@ export function returnPlayerStats(playersStats, player) {
         wednesdayLosses = wednesday.games - wednesday.wins;
         wednesdayGames = wednesday.games;
         wednesdayAvg = wednesday.aggDiff / wednesdayGames;
+    }
+
+    let wednesdayPairsWins = 0;
+    let wednesdayPairsLosses = 0;
+    let wednesdayPairsGames = 0;
+    let wednesdayPairsAvg = 0;
+    if (wednesdayPairs) {
+        wednesdayPairsWins = wednesdayPairs.wins;
+        wednesdayPairsLosses = wednesdayPairs.games - wednesdayPairs.wins;
+        wednesdayPairsGames = wednesdayPairs.games;
+        wednesdayPairsAvg = wednesdayPairs.aggDiff / wednesdayPairsGames;
     }
 
     const thursdayWins = thursday.wins;
@@ -290,6 +302,10 @@ export function returnPlayerStats(playersStats, player) {
         wednesdayLosses,
         wednesdayGames,
         wednesdayAvg,
+        wednesdayPairsWins,
+        wednesdayPairsLosses,
+        wednesdayPairsGames,
+        wednesdayPairsAvg,
         thursdayWins,
         thursdayLosses,
         thursdayGames,

@@ -9,6 +9,7 @@ function TeamTabs(props) {
     const team4Component = props.team4Component;
     const team5Component = props.team5Component;
     const team6Component = props.team6Component;
+    const team7Component = props.team7Component;
 
     // TODO improve layout?
     return (
@@ -28,6 +29,9 @@ function TeamTabs(props) {
                 </Tab>
                 <Tab eventKey="Wednesday" title="Wed">
                     {team4Component}
+                </Tab>
+                <Tab eventKey="Wednesday Pairs" title="Wed (Pairs)">
+                    {team7Component}
                 </Tab>
                 <Tab eventKey="Thursday Vets" title="Thur (Vets)">
                     {team5Component}

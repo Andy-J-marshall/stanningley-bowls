@@ -152,8 +152,6 @@ Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
 
 If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
 
-Update `yearFixturesAddedFor` in `fixtures.js`.
-
 Add fixtures to Google calendar for all teams.
 
 Add the `clubCupWinner` for the current year in `teamDetails.py`.
@@ -164,8 +162,8 @@ If adding or removing a second team, updated the following properties in `teamDe
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 * `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
 * `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`
-Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
 
+Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
 Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
 Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.

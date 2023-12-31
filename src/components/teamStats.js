@@ -21,6 +21,9 @@ function TeamStats(props) {
     const wednesdayStats = teamResults.find((team) =>
         team.day.toLowerCase().includes('wednesday half holiday')
     );
+    const wednesdayPairsStats = teamResults.find((team) =>
+        team.day.toLowerCase().includes('wednesday pairs')
+    );
     const thursdayVetsStats = teamResults.find((team) =>
         team.day.toLowerCase().includes('thursday')
     );
@@ -102,6 +105,22 @@ function TeamStats(props) {
         );
     }
 
+    function returnTeam7Component() {
+        const teamConfig = config.teams.find((e) =>
+            e.name.toLowerCase().includes('wednesday pairs')
+        );
+
+        return (
+            <IndividualTeamStats
+                day="Wednesday Pairs AireWharfe"
+                stats={wednesdayPairsStats}
+                playerStats={playerResults}
+                url={teamConfig.link}
+                displayUrl={true}
+            />
+        );
+    }
+
     function returnTeam5Component() {
         const teamConfig = config.teams.find((e) =>
             e.name.toLowerCase().includes('thursday vets')
@@ -159,6 +178,7 @@ function TeamStats(props) {
                 team2Component={returnTeam2Component()}
                 team3Component={returnTeam3Component()}
                 team4Component={returnTeam4Component()}
+                team7Component={returnTeam7Component()}
                 team5Component={returnTeam5Component()}
                 team6Component={returnTeam6Component()}
             />

@@ -5,8 +5,7 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-# Saturday AireDale & Wharfedale? And pairs leagues?
-# Can remove Wednesday AireDale & Wharfedale?
+# Add Saturday AireDale & Wharfedale and Monday Pairs?
 otherLeagues = ['Monday AireDale & Wharfedale', 'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale',
                 'Monday Bradford', 'Wednesday Half Holiday Bradford', 'Saturday Bradford',
                 'Wednesday Spen Valley', 'Tuesday Mirfield', 'Thursday Vets Bradford']
@@ -14,7 +13,7 @@ leaguesWithGamesTo26 = ['wednesday pairs airewharfe', 'monday pairs airewharfe']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
-otherDuplicatePlayers = ['cliff brogie', 'david hudson']
+otherDuplicatePlayers = ['cliff brogie']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 otherTeams = ['pudsey', 'burley', 'wibsey', 'tarnfield', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
@@ -37,8 +36,6 @@ def deduplicateNames(name):
         name = 'Stewart Watson'
     if name == 'Cliff Brogie':
         name = 'Clifford Brogie'
-    if name == 'David Hudson':
-        name = 'Dave Hudson'
     if name == 'Andrew Waller':
         name = 'Andy Waller'
     if name == 'Don Shaw':
