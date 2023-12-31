@@ -17,7 +17,7 @@ function PlayerRecords(props) {
     let mostMondayWinsPlayer = [];
     let mostMondayWins = 0;
     let bestMondayAveragePlayer = [];
-    let bestMondayAverage = -21;
+    let bestMondayAverage = -22;
     let bestMondayWinPerc = 0;
     let bestMondayWinPercPlayer = [];
 
@@ -27,7 +27,7 @@ function PlayerRecords(props) {
     let mostTuesdayVetsWinsPlayer = [];
     let mostTuesdayVetsWins = 0;
     let bestTuesdayVetsAveragePlayer = [];
-    let bestTuesdayVetsAverage = -21;
+    let bestTuesdayVetsAverage = -22;
     let bestTuesdayVetsWinPerc = 0;
     let bestTuesdayVetsWinPercPlayer = [];
 
@@ -37,7 +37,7 @@ function PlayerRecords(props) {
     let mostTuesdayWinsPlayer = [];
     let mostTuesdayWins = 0;
     let bestTuesdayAveragePlayer = [];
-    let bestTuesdayAverage = -21;
+    let bestTuesdayAverage = -22;
     let bestTuesdayWinPerc = 0;
     let bestTuesdayWinPercPlayer = [];
 
@@ -47,7 +47,7 @@ function PlayerRecords(props) {
     let mostWednesdayWinsPlayer = [];
     let mostWednesdayWins = 0;
     let bestWednesdayAveragePlayer = [];
-    let bestWednesdayAverage = -21;
+    let bestWednesdayAverage = -22;
     let bestWednesdayWinPerc = 0;
     let bestWednesdayWinPercPlayer = [];
 
@@ -68,7 +68,7 @@ function PlayerRecords(props) {
     let mostThursdayVetsWinsPlayer = [];
     let mostThursdayVetsWins = 0;
     let bestThursdayVetsAveragePlayer = [];
-    let bestThursdayVetsAverage = -21;
+    let bestThursdayVetsAverage = -22;
     let bestThursdayVetsWinPerc = 0;
     let bestThursdayVetsWinPercPlayer = [];
 
@@ -78,9 +78,19 @@ function PlayerRecords(props) {
     let mostSaturdayWinsPlayer = [];
     let mostSaturdayWins = 0;
     let bestSaturdayAveragePlayer = [];
-    let bestSaturdayAverage = -21;
+    let bestSaturdayAverage = -22;
     let bestSaturdayWinPerc = 0;
     let bestSaturdayWinPercPlayer = [];
+
+    // Saturday B
+    let useSaturdayBStats = false;
+    let minSatBGames = 1;
+    let mostSaturdayBWinsPlayer = [];
+    let mostSaturdayBWins = 0;
+    let bestSaturdayBAveragePlayer = [];
+    let bestSaturdayBAverage = -22;
+    let bestSaturdayBWinPerc = 0;
+    let bestSaturdayBWinPercPlayer = [];
 
     // Total
     let minTotalGames = 1;
@@ -91,7 +101,7 @@ function PlayerRecords(props) {
     let bestWinPercPlayer = [];
     let bestWinPerc = 0;
     let bestAveragePlayer = [];
-    let bestAverage = -26;
+    let bestAverage = -27;
 
     // Find the highest number of games played for each team
     let highestMonGames = 0;
@@ -100,6 +110,7 @@ function PlayerRecords(props) {
     let highestWedGames = 0;
     let highestThursVetsGames = 0;
     let highestSatGames = 0;
+    let highestSatBGames = 0;
     let highestTotalGames = 0;
 
     players.forEach((player) => {
@@ -110,6 +121,7 @@ function PlayerRecords(props) {
         const wednesday = p['wednesday half holiday leeds'];
         const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
+        const saturdayB = p['saturday leeds (b)'];
 
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
@@ -133,6 +145,9 @@ function PlayerRecords(props) {
         if (saturday && saturday.games >= highestSatGames) {
             highestSatGames = saturday.games;
         }
+        if (saturdayB && saturdayB.games >= highestSatBGames) {
+            highestSatBGames = saturdayB.games;
+        }
         if (totalGames >= highestTotalGames) {
             highestTotalGames = totalGames;
         }
@@ -147,6 +162,7 @@ function PlayerRecords(props) {
         const wednesday = p['wednesday half holiday leeds'];
         const thursdayVets = p['thursday vets leeds'];
         const saturday = p['saturday leeds'];
+        const saturdayB = p['saturday leeds (b)'];
 
         // Monday
         if (monday) {
@@ -429,6 +445,52 @@ function PlayerRecords(props) {
             }
         }
 
+        if (saturdayB) {
+            useSaturdayBStats = true;
+            const saturdayBWins = saturdayB.wins;
+            const saturdayBGames = saturdayB.games;
+            const saturdayBAvg = saturdayB.aggDiff / saturdayBGames;
+            const saturdayBWinPerc = (saturdayBWins / saturdayBGames) * 100;
+
+            if (highestSatBGames > minSatBGames) {
+                if (highestSatBGames >= minGamesForTeamRecords) {
+                    minSatBGames = minGamesForTeamRecords;
+                } else {
+                    minSatBGames = highestSatBGames;
+                }
+            }
+
+            if (
+                saturdayBAvg >= bestSaturdayBAverage &&
+                saturdayBGames >= minSatBGames
+            ) {
+                if (saturdayBAvg > bestSaturdayBAverage) {
+                    bestSaturdayBAveragePlayer = [];
+                    bestSaturdayBAverage = saturdayBAvg;
+                }
+                bestSaturdayBAveragePlayer.push(player);
+            }
+
+            if (saturdayBWins >= mostSaturdayBWins) {
+                if (saturdayBWins > mostSaturdayBWins) {
+                    mostSaturdayBWinsPlayer = [];
+                    mostSaturdayBWins = saturdayBWins;
+                }
+                mostSaturdayBWinsPlayer.push(player);
+            }
+
+            if (
+                saturdayBWinPerc >= bestSaturdayBWinPerc &&
+                saturdayBGames >= minSatGames
+            ) {
+                if (saturdayBWinPerc > bestSaturdayBWinPerc) {
+                    bestSaturdayBWinPercPlayer = [];
+                    bestSaturdayBWinPerc = saturdayBWinPerc;
+                }
+                bestSaturdayBWinPercPlayer.push(player);
+            }
+        }
+
         // Total
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
@@ -616,16 +678,34 @@ function PlayerRecords(props) {
         if (useSaturdayStats) {
             if (bestSaturdayAveragePlayer.length > 0) {
                 return (
-                    <RecordsTableDisplay
-                        minGames={minSatGames}
-                        playerOrTeam="Player"
-                        mostWins={mostSaturdayWins}
-                        mostWinsPlayer={mostSaturdayWinsPlayer}
-                        bestWinPerc={bestSaturdayWinPerc}
-                        bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
-                        bestAverage={bestSaturdayAverage}
-                        bestAveragePlayer={bestSaturdayAveragePlayer}
-                    />
+                    <div>
+                        {useSaturdayBStats && <h3>FIRST TEAM</h3>}
+                        <RecordsTableDisplay
+                            minGames={minSatGames}
+                            playerOrTeam="Player"
+                            mostWins={mostSaturdayWins}
+                            mostWinsPlayer={mostSaturdayWinsPlayer}
+                            bestWinPerc={bestSaturdayWinPerc}
+                            bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
+                            bestAverage={bestSaturdayAverage}
+                            bestAveragePlayer={bestSaturdayAveragePlayer}
+                        />
+                        {useSaturdayBStats && <div>
+                            <br/>
+                            <h3>SECOND TEAM</h3>
+                            {minSatBGames > 0 && <RecordsTableDisplay
+                                minGames={minSatBGames}
+                                playerOrTeam="Player"
+                                mostWins={mostSaturdayBWins}
+                                mostWinsPlayer={mostSaturdayBWinsPlayer}
+                                bestWinPerc={bestSaturdayBWinPerc}
+                                bestWinPercPlayerOrTeam={bestSaturdayBWinPercPlayer}
+                                bestAverage={bestSaturdayBAverage}
+                                bestAveragePlayer={bestSaturdayBAveragePlayer}
+                            />}
+                        </div>}
+
+                        </div>
                 );
             } else {
                 return <p>No games played</p>;
