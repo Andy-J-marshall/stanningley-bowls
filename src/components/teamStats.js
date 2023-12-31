@@ -24,8 +24,11 @@ function TeamStats(props) {
     const thursdayVetsStats = teamResults.find((team) =>
         team.day.toLowerCase().includes('thursday')
     );
-    const saturdayStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('saturday')
+    const saturdayStats = teamResults.find(
+        (team) => team.day.toLowerCase() === 'saturday leeds'
+    );
+    const saturdayBStats = teamResults.find(
+        (team) => team.day.toLowerCase() === 'saturday leeds (b)'
     );
 
     useEffect(() => {
@@ -46,6 +49,7 @@ function TeamStats(props) {
                 stats={mondayStats}
                 playerStats={playerResults}
                 url={teamConfig.link}
+                displayUrl={true}
             />
         );
     }
@@ -61,6 +65,7 @@ function TeamStats(props) {
                 stats={tuesdayVetsStats}
                 playerStats={playerResults}
                 url={teamConfig.link}
+                displayUrl={true}
             />
         );
     }
@@ -76,6 +81,7 @@ function TeamStats(props) {
                 stats={tuesdayStats}
                 playerStats={playerResults}
                 url={teamConfig.link}
+                displayUrl={true}
             />
         );
     }
@@ -91,6 +97,7 @@ function TeamStats(props) {
                 stats={wednesdayStats}
                 playerStats={playerResults}
                 url={teamConfig.link}
+                displayUrl={true}
             />
         );
     }
@@ -106,23 +113,39 @@ function TeamStats(props) {
                 stats={thursdayVetsStats}
                 playerStats={playerResults}
                 url={teamConfig.link}
+                displayUrl={true}
             />
         );
     }
 
     function returnTeam6Component() {
-        {/* TODO split this into first and second team stats? */}
         const teamConfig = config.teams.find((e) =>
             e.name.toLowerCase().includes('saturday')
         );
 
         return (
-            <IndividualTeamStats
-                day="Saturday Leeds"
-                stats={saturdayStats}
-                playerStats={playerResults}
-                url={teamConfig.link}
-            />
+            <div>
+                <IndividualTeamStats
+                    day="Saturday Leeds"
+                    stats={saturdayStats}
+                    playerStats={playerResults}
+                    url={teamConfig.link}
+                    displayUrl={false}
+                />
+                {saturdayBStats && (
+                    <div>
+                        <br />
+                        <h1>SECOND TEAM STATS</h1>
+                        <IndividualTeamStats
+                            day="Saturday Leeds (b)"
+                            stats={saturdayBStats}
+                            playerStats={playerResults}
+                            url={teamConfig.link}
+                            displayUrl={true}
+                        />
+                    </div>
+                )}
+            </div>
         );
     }
 

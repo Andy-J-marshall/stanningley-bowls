@@ -64,7 +64,8 @@ function TeamRecords(props) {
             }
 
             // Excludes teams that don't play to 21 as these stats won't make sense otherwise
-            if (team.games21UpBool) {
+            const dayUsingMoreThan21Up = config.daysNotTo21.find(d => d === day)
+            if (!dayUsingMoreThan21Up) {
                 if (
                     aggConcededPerGame <= lowestAggConcededPerGame &&
                     totalGamesPlayed >= minGames

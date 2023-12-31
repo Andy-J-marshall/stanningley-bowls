@@ -115,7 +115,8 @@ def returnListOfPlayerStats(days):
         }
 
         for team in days:
-            playerObj[team.lower()] = {
+            # this is to store first team data under the old name, to help with backward compatibility
+            playerObj[team.replace(' (A)', '').lower()] = {
                 'games': 0,
                 'wins': 0,
                 'aggDiff': 0,
