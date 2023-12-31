@@ -64,7 +64,7 @@ function TeamRecords(props) {
             }
 
             // Excludes teams that don't play to 21 as these stats won't make sense otherwise
-            const dayUsingMoreThan21Up = config.daysNotTo21.find(d => d === day)
+            const dayUsingMoreThan21Up = config.daysNotTo21.find(d => d.toLowerCase() === day.toLowerCase())
             if (!dayUsingMoreThan21Up) {
                 if (
                     aggConcededPerGame <= lowestAggConcededPerGame &&
@@ -87,7 +87,7 @@ function TeamRecords(props) {
             }
         });
 
-        if (bestTeamAggPerGame >= 0) {
+        if (bestWinMargin >= 0) {
             return (
                 <div id="team-record" className="center">
                     <br />
