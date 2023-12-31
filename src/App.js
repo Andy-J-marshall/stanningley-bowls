@@ -18,12 +18,14 @@ import bowlsStats22 from './data/bowlsStats2022.json';
 import combinedBowlsStats22 from './data/allPlayerStats2022.json';
 import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
+import bowlsStats24 from './data/bowlsStats2024.json';
+import combinedBowlsStats24 from './data/allPlayerStats2024.json';
 import './app.css';
 
 function App() {
-    const [teamStats, setTeamStats] = useState(bowlsStats23);
-    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats23);
-    const [yearToDisplay, setYearToDisplay] = useState('2023');
+    const [teamStats, setTeamStats] = useState(bowlsStats24);
+    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats24);
+    const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
         WebFont.load({
@@ -37,15 +39,18 @@ function App() {
     const allYearStats = {
         year2022: bowlsStats22,
         year2023: bowlsStats23,
+        year2024: bowlsStats24,
     };
     const allYearCombinedStats = {
         year2022: combinedBowlsStats22,
         year2023: combinedBowlsStats23,
+        year2024: combinedBowlsStats24,
     };
-    const statsForEveryYearArray = [bowlsStats22, bowlsStats23];
+    const statsForEveryYearArray = [bowlsStats22, bowlsStats23, bowlsStats24];
     const combinedStatsForEveryYearArray = [
         combinedBowlsStats22,
         combinedBowlsStats23,
+        combinedBowlsStats24,
     ];
 
     function statsCallback(year) {
@@ -60,6 +65,10 @@ function App() {
             case '2023':
                 statsForSelectedYear = allYearStats['year2023'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2023'];
+                break;
+            case '2024':
+                statsForSelectedYear = allYearStats['year2024'];
+                combinedStatsForSelectedYear = allYearCombinedStats['year2024'];
                 break;
             default:
                 statsForSelectedYear = allYearStats[`year${currentYear}`];

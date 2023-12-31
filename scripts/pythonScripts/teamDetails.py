@@ -16,9 +16,9 @@ teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
 players = [
     'john armitage', 'mario biancardo', 'shirley biancardo', 'paul bowes', 'clifford brogie',
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller',
-    'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson', 'dave hudson',
+    'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall',
     'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard',
-    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'tracey marshall', 'carole mcdermott', 'robin mcdermott',
+    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'carole mcdermott', 'robin mcdermott',
     'derek wilson', 'david eaton', 'michael haigh', 'peter crowther', 'laila packer'
 ]
 
