@@ -23,10 +23,9 @@ import combinedBowlsStats24 from './data/allPlayerStats2024.json';
 import './app.css';
 
 function App() {
-    // TODO update to 2024 at start of season
-    const [teamStats, setTeamStats] = useState(bowlsStats23);
-    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats23);
-    const [yearToDisplay, setYearToDisplay] = useState('2023');
+    const [teamStats, setTeamStats] = useState(bowlsStats24);
+    const [combinedStats, setCombinedStats] = useState(combinedBowlsStats24);
+    const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
         WebFont.load({
