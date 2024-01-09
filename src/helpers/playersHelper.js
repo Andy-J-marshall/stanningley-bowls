@@ -89,15 +89,27 @@ export function returnPlayerStats(playersStats, player) {
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
 
     // Stats per league
-    const mondayWins = monday.wins;
-    const mondayLosses = monday.games - monday.wins;
-    const mondayGames = monday.games;
-    const mondayAvg = monday.aggDiff / mondayGames;
+    let mondayWins = 0;
+    let mondayLosses = 0;
+    let mondayGames = 0;
+    let mondayAvg = 0;
+    if (monday) {
+        mondayWins = monday.wins;
+        mondayLosses = monday.games - monday.wins;
+        mondayGames = monday.games;
+        mondayAvg = monday.aggDiff / mondayGames;
+    }
 
-    const tuesdayVetsWins = tuesdayVets.wins;
-    const tuesdayVetsLosses = tuesdayVets.games - tuesdayVets.wins;
-    const tuesdayVetsGames = tuesdayVets.games;
-    const tuesdayVetsAvg = tuesdayVets.aggDiff / tuesdayVetsGames;
+    let tuesdayVetsWins = 0;
+    let tuesdayVetsLosses = 0;
+    let tuesdayVetsGames = 0;
+    let tuesdayVetsAvg = 0;
+    if (tuesdayVets) {
+        tuesdayVetsWins = tuesdayVets.wins;
+        tuesdayVetsLosses = tuesdayVets.games - tuesdayVets.wins;
+        tuesdayVetsGames = tuesdayVets.games;
+        tuesdayVetsAvg = tuesdayVets.aggDiff / tuesdayVetsGames;
+    }
 
     let tuesdayEveningWins = 0;
     let tuesdayEveningLosses = 0;
@@ -132,20 +144,32 @@ export function returnPlayerStats(playersStats, player) {
         wednesdayPairsAvg = wednesdayPairs.aggDiff / wednesdayPairsGames;
     }
 
-    const thursdayWins = thursday.wins;
-    const thursdayLosses = thursday.games - thursday.wins;
-    const thursdayGames = thursday.games;
-    const thursdayAvg = thursday.aggDiff / thursdayGames;
+    let thursdayWins = 0;
+    let thursdayLosses = 0;
+    let thursdayGames = 0;
+    let thursdayAvg = 0;
+    if (thursday) {
+        thursdayWins = thursday.wins;
+        thursdayLosses = thursday.games - thursday.wins;
+        thursdayGames = thursday.games;
+        thursdayAvg = thursday.aggDiff / thursdayGames;
+    }
 
-    const saturdayWins = saturday.wins;
-    const saturdayLosses = saturday.games - saturday.wins;
-    const saturdayGames = saturday.games;
-    const saturdayAvg = saturday.aggDiff / saturdayGames;
+    let saturdayWins = 0;
+    let saturdayLosses = 0;
+    let saturdayGames = 0;
+    let saturdayAvg = 0;
+    if (saturday) {
+        saturdayWins = saturday.wins;
+        saturdayLosses = saturday.games - saturday.wins;
+        saturdayGames = saturday.games;
+        saturdayAvg = saturday.aggDiff / saturdayGames;
+    }
 
-    let saturdayBWins;
-    let saturdayBLosses;
-    let saturdayBGames;
-    let saturdayBAvg;
+    let saturdayBWins = 0;
+    let saturdayBLosses = 0;
+    let saturdayBGames = 0;
+    let saturdayBAvg = 0;
     if (saturdayBTeam) {
         saturdayBWins = saturdayBTeam.wins;
         saturdayBLosses = saturdayBTeam.games - saturdayBTeam.wins;
@@ -182,7 +206,8 @@ export function returnPlayerStats(playersStats, player) {
         totalAwayAggAgainst - totalPairsAwayAggAgainst;
 
     const availableCupAgg = availableAgg - availableHomeAgg - availableAwayAgg;
-    const availablePairsCupAgg = availablePairsAgg - availablePairsHomeAgg - availablePairsAwayAgg;
+    const availablePairsCupAgg =
+        availablePairsAgg - availablePairsHomeAgg - availablePairsAwayAgg;
     const totalPairsCupAgg =
         totalPairsAgg - totalPairsHomeAgg - totalPairsAwayAgg;
     const totalPairsCupAggAgainst =
