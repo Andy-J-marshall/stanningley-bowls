@@ -65,7 +65,7 @@ def returnTotalAggAvailablePerGame(team):
         return 26
     return 21
 
-def returnListOfPlayerStats(days):
+def returnListOfPlayerStats(days, includeTeamData):
     players.sort()
     playerStats = {}
     for player in players:
@@ -111,12 +111,13 @@ def returnListOfPlayerStats(days):
             'results': [],
         }
 
-        for team in days:
-            # this is to store first team data under the old name, to help with backward compatibility
-            playerObj[team.replace(' (A)', '').lower()] = {
-                'games': 0,
-                'wins': 0,
-                'aggDiff': 0,
-            }
+        if includeTeamData == True:
+            for team in days:
+                # this is to store first team data under the old name, to help with backward compatibility
+                playerObj[team.replace(' (A)', '').lower()] = {
+                    'games': 0,
+                    'wins': 0,
+                    'aggDiff': 0,
+                }
         playerStats[player] = playerObj
     return playerStats

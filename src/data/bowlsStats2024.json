@@ -600,81 +600,6 @@
                 "aggDiff": 0
             }
         },
-        "dave hudson": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
-            "homeLosses": 0,
-            "awayWins": 0,
-            "awayLosses": 0,
-            "cupWins": 0,
-            "cupLosses": 0,
-            "pairWins": 0,
-            "pairLosses": 0,
-            "pairHomeWins": 0,
-            "pairHomeLosses": 0,
-            "pairAwayWins": 0,
-            "pairAwayLosses": 0,
-            "pairCupWins": 0,
-            "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": [],
-            "monday combined leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "tuesday vets leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "tuesday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "wednesday half holiday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "wednesday pairs airewharfe": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "thursday vets leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "saturday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            }
-        },
         "david eaton": {
             "totalAgg": 0,
             "totalAggAgainst": 0,
@@ -2612,6 +2537,6 @@
         }
     ],
     "clubCupWinner": "",
-    "lastUpdated": "31/12/2023",
+    "lastUpdated": "09/01/2024",
     "statsYear": "2024"
 }
