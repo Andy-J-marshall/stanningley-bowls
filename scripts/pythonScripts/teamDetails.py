@@ -30,7 +30,7 @@ traitorPlayers = {
     'Monday Combined Leeds': [],
     'Tuesday Vets Leeds': ['donald shaw', 'don shaw'],
     'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie'],
+    'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
     'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': [],
     'Saturday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw']
