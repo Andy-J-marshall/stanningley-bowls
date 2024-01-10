@@ -133,8 +133,9 @@ def formatTeamName(possibleTeamName):
     teamName = teamName.replace(
         'S & SC', '')
     teamName = teamName.replace(' BC', '')
-    teamName = teamName.replace('-', '')
     teamName = teamName.replace('\'', '')
+    teamName = teamName.replace('-', ' ')
+    teamName = teamName.replace('   ', ' ')
     teamName = teamName.replace('  ', ' ')
     teamName = teamName.strip()
     return teamName
