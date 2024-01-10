@@ -133,12 +133,18 @@ for league in leaguesDays:
                     coreTeamName = possibleTeamName.split(' ')[0]
                     if coreTeamName.lower() in teamsTracking:
                         teamName = possibleTeamName
-                        if 'stanningley' in teamName.lower():
-                            teamName = 'Stanningley'
-                        teamName = teamName.replace(' BC', '')
                         teamName = teamName.replace(
-                            "Littlemoor S & SC", "Littlemoor")
+                            'Stanningley Park', 'Stanningley')
+                        teamName = teamName.replace(
+                            'S&SC', '')
+                        teamName = teamName.replace(
+                            'S & SC', '')
+                        teamName = teamName.replace(
+                            'Pudsey Littlemoor', 'Littlemoor')
+                        teamName = teamName.replace(' BC', '')
+                        teamName = teamName.replace('  ', ' ')
                         teamName = teamName.replace('\'', '')
+                        teamName = teamName.strip()
                         correctPlayerFound = True
                         break
             if correctPlayerFound is False:
