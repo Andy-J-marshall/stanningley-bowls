@@ -121,3 +121,20 @@ def returnListOfPlayerStats(days, includeTeamData):
                 }
         playerStats[player] = playerObj
     return playerStats
+
+def formatTeamName(possibleTeamName):
+    teamName = possibleTeamName
+    teamName = teamName.replace(
+        'Stanningley Park', 'Stanningley')
+    teamName = teamName.replace(
+        'S&SC', '')
+    teamName = teamName.replace(
+        'S & SC', '')
+    teamName = teamName.replace(
+        'Pudsey Littlemoor', 'Littlemoor')
+    teamName = teamName.replace(' BC', '')
+    teamName = teamName.replace('-', '')
+    teamName = teamName.replace('  ', ' ')
+    teamName = teamName.replace('\'', '')
+    teamName = teamName.strip()
+    return teamName

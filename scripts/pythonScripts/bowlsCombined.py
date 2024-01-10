@@ -13,6 +13,7 @@ duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
 formatName = utils.formatName
 standardiseName = utils.standardiseName
+formatTeamName = utils.formatTeamName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 cupText = utils.cupText
@@ -132,20 +133,7 @@ for league in leaguesDays:
                 if type(possibleTeamName) is str:
                     coreTeamName = possibleTeamName.split(' ')[0]
                     if coreTeamName.lower() in teamsTracking:
-                        teamName = possibleTeamName
-                        teamName = teamName.replace(
-                            'Stanningley Park', 'Stanningley')
-                        teamName = teamName.replace(
-                            'S&SC', '')
-                        teamName = teamName.replace(
-                            'S & SC', '')
-                        teamName = teamName.replace(
-                            'Pudsey Littlemoor', 'Littlemoor')
-                        teamName = teamName.replace(' BC', '')
-                        teamName = teamName.replace('-', '')
-                        teamName = teamName.replace('  ', ' ')
-                        teamName = teamName.replace('\'', '')
-                        teamName = teamName.strip()
+                        teamName = formatTeamName(possibleTeamName)
                         correctPlayerFound = True
                         break
             if correctPlayerFound is False:
