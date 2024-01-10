@@ -49,6 +49,10 @@ function PlayerStatsWinsLosses(props) {
         pairsCupAverage,
     } = stats;
 
+    const [displayingSingles, setDisplayingSingles] = useState(false);
+    const [displayingPairs, setDisplayingPairs] = useState(false);
+    const [displayingAll, setDisplayingAll] = useState(true);
+
     const [displayTotalWins, setDisplayTotalWins] = useState(totalWins);
     const [displayHomeWins, setDisplayHomeWins] = useState(homeWins);
     const [displayAwayWins, setDisplayAwayWins] = useState(awayWins);
@@ -60,12 +64,9 @@ function PlayerStatsWinsLosses(props) {
     const [displayCupLosses, setDisplayCupLosses] = useState(cupLosses);
 
     const [displayGamesPlayed, setDisplayGamesPlayed] = useState(gamesPlayed);
-    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] =
-        useState(homeGamesPlayed);
-    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] =
-        useState(awayGamesPlayed);
-    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
-        useState(cupGamesPlayed);
+    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
+    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
+    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
 
     const [displayAverage, setDisplayAverage] = useState(average);
     const [displayHomeAverage, setDisplayHomeAverage] = useState(homeAverage);
@@ -75,6 +76,8 @@ function PlayerStatsWinsLosses(props) {
     const [displayPairsPartners, setDisplayPairsPartners] = useState(false);
 
     function displayAll() {
+        setDisplayingAll();
+
         setDisplayTotalWins(totalWins);
         setDisplayHomeWins(homeWins);
         setDisplayAwayWins(awayWins);
@@ -99,6 +102,8 @@ function PlayerStatsWinsLosses(props) {
     }
 
     function displaySingles() {
+        setDisplayingSingles();
+
         setDisplayTotalWins(totalWins - pairWins);
         setDisplayHomeWins(homeWins - pairHomeWins);
         setDisplayAwayWins(awayWins - pairAwayWins);
@@ -123,6 +128,8 @@ function PlayerStatsWinsLosses(props) {
     }
 
     function displayPairs() {
+        setDisplayingPairs();
+        
         setDisplayTotalWins(pairWins);
         setDisplayHomeWins(pairHomeWins);
         setDisplayAwayWins(pairAwayWins);
@@ -146,10 +153,22 @@ function PlayerStatsWinsLosses(props) {
         setDisplayPairsPartners(true);
     }
 
+    function refreshStats() {
+        if (displayingAll) {
+            displayAll();
+        }
+        if (displayingSingles) {
+            displaySingles();
+        }
+        if (displayingPairs) {
+            displayPairs();
+        }
+    }
+
     return (
         <div id="player-stats-wins-losses">
             <Accordion.Item eventKey="1">
-                <Accordion.Header id="stats-wl">WINS & LOSSES</Accordion.Header>
+                <Accordion.Header onClick={refreshStats} id="stats-wl">WINS & LOSSES</Accordion.Header>
                 <Accordion.Body>
                     {pairsGames > 0 && singlesGames > 0 && (
                         <GameTypeButton

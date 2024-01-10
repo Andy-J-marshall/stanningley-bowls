@@ -51,6 +51,10 @@ function PlayerStatsAggregates(props) {
         availablePairsCupAgg,
     } = stats;
 
+    const [displayingSingles, setDisplayingSingles] = useState(false);
+    const [displayingPairs, setDisplayingPairs] = useState(false);
+    const [displayingAll, setDisplayingAll] = useState(true);
+    
     const [displayAvailableAgg, setDisplayAvailableAgg] = useState(availableAgg);
     const [displayTotalAgg, setDisplayTotalAgg] = useState(totalAgg);
     const [displayTotalAggAgainst, setDisplayTotalAggAgainst] = useState(totalAggAgainst);
@@ -72,6 +76,8 @@ function PlayerStatsAggregates(props) {
     const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
 
     function displayAll() {
+        setDisplayingAll();
+
         setDisplayAvailableAgg(availableAgg);
         setDisplayTotalAgg(totalAgg);
         setDisplayTotalAggAgainst(totalAggAgainst);
@@ -94,6 +100,8 @@ function PlayerStatsAggregates(props) {
     }
 
     function displaySingles() {
+        setDisplayingSingles();
+
         setDisplayAvailableAgg(availableAgg - availablePairsAgg);
         setDisplayTotalAgg(singlesAgg);
         setDisplayTotalAggAgainst(singlesAggAgainst);
@@ -116,6 +124,8 @@ function PlayerStatsAggregates(props) {
     }
 
     function displayPairs() {
+        setDisplayingPairs();
+
         setDisplayAvailableAgg(availablePairsAgg);
         setDisplayTotalAgg(totalPairsAgg);
         setDisplayTotalAggAgainst(totalPairsAggAgainst);
@@ -137,10 +147,22 @@ function PlayerStatsAggregates(props) {
         setDisplayCupGamesPlayed(pairCupGamesPlayed);
     }
 
+    function refreshStats() {
+        if (displayingAll) {
+            displayAll();
+        }
+        if (displayingSingles) {
+            displaySingles();
+        }
+        if (displayingPairs) {
+            displayPairs();
+        }
+    }
+
     return (
         <div id="player-stats-aggregates">
             <Accordion.Item eventKey="3">
-                <Accordion.Header id="stats-aggregate">
+                <Accordion.Header onClick={refreshStats} id="stats-aggregate">
                     AGGREGATES
                 </Accordion.Header>
                 <Accordion.Body>
