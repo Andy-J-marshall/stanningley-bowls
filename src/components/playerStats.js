@@ -108,9 +108,7 @@ function PlayerStats(props) {
     }
 
     function searchForPlayer(searchedName) {
-        setShowStatSummary(false);
         setShowStatsSinceStart(false);
-        setStatsToUse(playerResults);
         setSearchedPlayerName(searchedName);
 
         const validPlayer =

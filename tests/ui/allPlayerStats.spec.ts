@@ -19,9 +19,8 @@ const players: Array<string> = [
   'Andy Marshall'
 ];
 
-// TODO have to figure out why these aren't working. Possibly a race condition?
 for (const player of players) {
-  test.skip(`Summary of player's all team stats are correct for ${player}`, async () => {
+  test(`Summary of player's all team stats are correct for ${player}`, async () => {
     await playerStatsPage.selectTeamStatsCheckbox();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
@@ -49,7 +48,7 @@ for (const player of players) {
   });
 }
 
-test.skip('Can switch between team and all stats', async () => {
+test('Can switch between team and all stats', async () => {
   const player = 'Clifford Brogie';
 
   await playerStatsPage.selectTeamStatsCheckbox();
