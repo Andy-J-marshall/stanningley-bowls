@@ -189,8 +189,13 @@ function Results(props) {
     } else {
         return (
             <div>
+                <YearSelectDropdown
+                    numberOfYearsToDisplay={numberOfYearsToDisplay}
+                    statsCallback={statsCallback}
+                    yearToDisplay={yearToDisplay}
+                />
                 <h1>RESULTS</h1>
-                <p>Results not found for {yearToDisplay}</p>
+                <p>No results for {yearToDisplay}</p>
             </div>
         );
     }
