@@ -142,6 +142,7 @@ for league in leaguesDays:
                         teamName = teamName.replace(
                             'Pudsey Littlemoor', 'Littlemoor')
                         teamName = teamName.replace(' BC', '')
+                        teamName = teamName.replace('-', '')
                         teamName = teamName.replace('  ', ' ')
                         teamName = teamName.replace('\'', '')
                         teamName = teamName.strip()
