@@ -76,7 +76,9 @@ function PlayerStatsWinsLosses(props) {
     const [displayPairsPartners, setDisplayPairsPartners] = useState(false);
 
     function displayAll() {
-        setDisplayingAll();
+        setDisplayingAll(true);
+        setDisplayingSingles(false);
+        setDisplayingPairs(false);
 
         setDisplayTotalWins(totalWins);
         setDisplayHomeWins(homeWins);
@@ -102,7 +104,9 @@ function PlayerStatsWinsLosses(props) {
     }
 
     function displaySingles() {
-        setDisplayingSingles();
+        setDisplayingSingles(true);
+        setDisplayingPairs(false);
+        setDisplayingAll(false);
 
         setDisplayTotalWins(totalWins - pairWins);
         setDisplayHomeWins(homeWins - pairHomeWins);
@@ -128,7 +132,9 @@ function PlayerStatsWinsLosses(props) {
     }
 
     function displayPairs() {
-        setDisplayingPairs();
+        setDisplayingPairs(true);
+        setDisplayingSingles(false);
+        setDisplayingAll(false);
         
         setDisplayTotalWins(pairWins);
         setDisplayHomeWins(pairHomeWins);

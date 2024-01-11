@@ -76,7 +76,9 @@ function PlayerStatsAggregates(props) {
     const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
 
     function displayAll() {
-        setDisplayingAll();
+        setDisplayingAll(true);
+        setDisplayingSingles(false);
+        setDisplayingPairs(false);
 
         setDisplayAvailableAgg(availableAgg);
         setDisplayTotalAgg(totalAgg);
@@ -100,7 +102,9 @@ function PlayerStatsAggregates(props) {
     }
 
     function displaySingles() {
-        setDisplayingSingles();
+        setDisplayingSingles(true);
+        setDisplayingPairs(false);
+        setDisplayingAll(false);
 
         setDisplayAvailableAgg(availableAgg - availablePairsAgg);
         setDisplayTotalAgg(singlesAgg);
@@ -124,7 +128,9 @@ function PlayerStatsAggregates(props) {
     }
 
     function displayPairs() {
-        setDisplayingPairs();
+        setDisplayingPairs(true);
+        setDisplayingSingles(false);
+        setDisplayingAll(false);
 
         setDisplayAvailableAgg(availablePairsAgg);
         setDisplayTotalAgg(totalPairsAgg);
