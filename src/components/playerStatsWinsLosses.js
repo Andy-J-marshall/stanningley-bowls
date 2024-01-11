@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import GameTypeButton from './gameTypeButtons';
@@ -74,6 +74,10 @@ function PlayerStatsWinsLosses(props) {
     const [displayCupAverage, setDisplayCupAverage] = useState(cupAverage);
 
     const [displayPairsPartners, setDisplayPairsPartners] = useState(false);
+
+    useEffect(() => {
+        refreshStats();
+    });
 
     function displayAll() {
         setDisplayingAll(true);

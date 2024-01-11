@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 
@@ -74,6 +74,10 @@ function PlayerStatsAggregates(props) {
     const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
     const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
     const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
+
+    useEffect(() => {
+        refreshStats();
+    });
 
     function displayAll() {
         setDisplayingAll(true);
