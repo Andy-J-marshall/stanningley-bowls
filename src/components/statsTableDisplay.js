@@ -35,7 +35,7 @@ function StatsTableDisplay(props) {
                     {totalGames > 0 ? (
                         <tr>
                             <td>Games</td>
-                            <td>{totalGames}</td>
+                            <td id="totalGamesValue">{totalGames}</td>
                         </tr>
                     ) : null}
                     {leaguePosition >= 0 ? (
@@ -47,53 +47,55 @@ function StatsTableDisplay(props) {
                     {totalWins >= 0 ? (
                         <tr>
                             <td>Wins</td>
-                            <td>{totalWins}</td>
+                            <td id="totalWinsValue">{totalWins}</td>
                         </tr>
                     ) : null}
                     {totalLosses >= 0 ? (
                         <tr>
                             <td>Losses</td>
-                            <td>{totalLosses}</td>
+                            <td id="totalLossesValue">{totalLosses}</td>
                         </tr>
                     ) : null}
                     {totalDraws > 0 ? (
                         <tr>
                             <td>Draws</td>
-                            <td>{totalDraws}</td>
+                            <td id="totalDrawsValue">{totalDraws}</td>
                         </tr>
                     ) : null}
                     {homeGames > 0 ? (
                         <tr>
                             <td>Home win percentage</td>
-                            <td>
-                                {((homeWins / homeGames) * 100).toFixed(2)} %
+                            <td id="totalHomeWinPercValue">
+                                {((homeWins / homeGames) * 100).toFixed(2)}%
                             </td>
                         </tr>
                     ) : null}
                     {awayGames > 0 ? (
                         <tr>
                             <td>Away win percentage</td>
-                            <td>
-                                {((awayWins / awayGames) * 100).toFixed(2)} %
+                            <td id="totalAwayWinPercValue">
+                                {((awayWins / awayGames) * 100).toFixed(2)}%
                             </td>
                         </tr>
                     ) : null}
                     {cupGames > 0 ? (
                         <tr>
                             <td>Cup win percentage</td>
-                            <td>{((cupWins / cupGames) * 100).toFixed(2)} %</td>
+                            <td id="totalCupWinPercValue">
+                                {((cupWins / cupGames) * 100).toFixed(2)}%
+                            </td>
                         </tr>
                     ) : null}
                     {agg > 0 ? (
                         <tr>
                             <td>{config.teamNames.short} aggregate</td>
-                            <td>{agg}</td>
+                            <td id="totalAggValue">{agg}</td>
                         </tr>
                     ) : null}
                     {opponentAgg > 0 ? (
                         <tr>
                             <td>Opponent aggregate</td>
-                            <td>{opponentAgg}</td>
+                            <td id="totalOpponentAggValue">{opponentAgg}</td>
                         </tr>
                     ) : null}
                 </tbody>

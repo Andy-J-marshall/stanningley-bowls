@@ -1,19 +1,19 @@
 import { test } from '@playwright/test';
 import { BasePage } from './pages/basePage';
-import { ResultPage } from './pages/resultPage';
+import { TeamStatsPage } from './pages/teamStatsPage';
 
 let basePage: BasePage;
-let resultPage: ResultPage;
+let teamStatsPage: TeamStatsPage;
 
 test.beforeEach(async ({ page }) => {
   basePage = new BasePage(page);
-  resultPage = new ResultPage(page);
-  await resultPage.goto();
+  teamStatsPage = new TeamStatsPage(page);
+  await teamStatsPage.goto();
 });
 
-test('Teams results appear for previous years', async () => {
+test('Teams stats overview has correct stats for 2023', async () => {
   await basePage.select2023Year();
-  resultPage.resultsForAll2023TeamsAppear();
+  teamStatsPage.teamStatsOverviewHasCorrectValues();
 });
 
 test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
