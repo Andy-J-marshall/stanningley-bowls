@@ -1,11 +1,14 @@
 import { test } from '@playwright/test';
 import allBowlsStats from '../../src/data/allPlayerStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
+import { BasePage } from './pages/basePage';
 
 let playerStatsPage: PlayerStatsPage;
+let basePage: BasePage;
 
 test.beforeEach(async ({ page }) => {
   playerStatsPage = new PlayerStatsPage(page);
+  basePage = new BasePage(page);
   await playerStatsPage.goto();
 });
 
@@ -21,7 +24,7 @@ const players: Array<string> = [
 
 for (const player of players) {
   test(`Summary of player's all team stats are correct for ${player}`, async () => {
-    await playerStatsPage.select2023Year();
+    await basePage.select2023Year();
     await playerStatsPage.selectTeamStatsCheckbox();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
@@ -52,7 +55,7 @@ for (const player of players) {
 test('Can switch between team and all stats', async () => {
   const player = 'Clifford Brogie';
 
-  await playerStatsPage.select2023Year();
+  await basePage.select2023Year();
   await playerStatsPage.selectTeamStatsCheckbox();
   await playerStatsPage.searchForPlayer(player);
   await playerStatsPage.checkOnlyBasicAccordionHeadersExist();

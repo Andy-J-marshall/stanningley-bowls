@@ -27,9 +27,6 @@ export class PlayerStatsPage {
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
   readonly teamCheckBox: Locator;
-  readonly yearSelectDropdown: Locator;
-  readonly yearOptionInDropdownUsedByTests: Locator;
-  readonly allYearOptionsInDropdown: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -56,11 +53,6 @@ export class PlayerStatsPage {
     this.totalAverage = page.locator('#totalAverage');
     this.teamCheckBox = page.locator(
       ".form-check input[id='#all-stats-select-checkbox']"
-    );
-    this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
-    this.yearOptionInDropdownUsedByTests = page.locator('#option2023');
-    this.allYearOptionsInDropdown = page.locator(
-      '.dropdown-menu > .dropdown-item'
     );
   }
 
@@ -93,12 +85,6 @@ export class PlayerStatsPage {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
   }
 
-  async checkYearDropdownHasAllYearOptions() {
-    await expect(this.yearSelectDropdown).toBeVisible();
-    await this.yearSelectDropdown.click();
-    await expect(this.allYearOptionsInDropdown).toHaveCount(3);
-  }
-
   async checkTeamAccordionHeadersExist() {
     await expect(this.accordionButtons).toHaveCount(5);
     await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
@@ -122,11 +108,6 @@ export class PlayerStatsPage {
 
   async deselectTeamStatsCheckbox() {
     await this.teamCheckBox.uncheck();
-  }
-
-  async select2023Year() {
-    await this.yearSelectDropdown.click();
-    await this.yearOptionInDropdownUsedByTests.click();
   }
 
   async validateSummaryStats(playerStats: PlayerStats) {

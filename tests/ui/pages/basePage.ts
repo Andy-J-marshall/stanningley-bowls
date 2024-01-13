@@ -1,0 +1,28 @@
+import { expect, Locator, Page } from '@playwright/test';
+
+export class BasePage {
+  readonly page: Page;
+  readonly yearSelectDropdown: Locator;
+  readonly year2023InYearDropdown: Locator;
+  readonly allYearOptionsInDropdown: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
+    this.year2023InYearDropdown = page.locator('#option2023');
+    this.allYearOptionsInDropdown = page.locator(
+      '.dropdown-menu > .dropdown-item'
+    );
+  }
+
+  async checkYearDropdownHasAllYearOptions() {
+    await expect(this.yearSelectDropdown).toBeVisible();
+    await this.yearSelectDropdown.click();
+    await expect(this.allYearOptionsInDropdown).toHaveCount(3);
+  }
+
+  async select2023Year() {
+    await this.yearSelectDropdown.click();
+    await this.year2023InYearDropdown.click();
+  }
+}

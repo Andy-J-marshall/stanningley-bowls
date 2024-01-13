@@ -68,7 +68,7 @@ function Results(props) {
                     );
 
                     return (
-                        <div key={idx}>
+                        <div className='teamResult' key={idx}>
                             {resultTeam.results.length > 0 && (
                                 <div>
                                     <h3 style={{ paddingTop: '1rem' }}>

@@ -156,7 +156,7 @@ Add fixtures to Google calendar for all teams.
 
 Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
-Update the `bowlsStats` file to the latest year in `allPlayerStats.spec.ts` and `playerStats.spec.ts`. You might need to comment out players if they haven't played a game yet.
+Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
