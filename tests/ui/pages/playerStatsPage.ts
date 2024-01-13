@@ -29,6 +29,7 @@ export class PlayerStatsPage {
   readonly teamCheckBox: Locator;
   readonly yearSelectDropdown: Locator;
   readonly yearOptionInDropdownUsedByTests: Locator;
+  readonly allYearOptionsInDropdown: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -57,7 +58,10 @@ export class PlayerStatsPage {
       ".form-check input[id='#all-stats-select-checkbox']"
     );
     this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
-    this.yearOptionInDropdownUsedByTests = page.locator('#option2022');
+    this.yearOptionInDropdownUsedByTests = page.locator('#option2023');
+    this.allYearOptionsInDropdown = page.locator(
+      '.dropdown-menu > .dropdown-item'
+    );
   }
 
   async goto() {
@@ -89,8 +93,10 @@ export class PlayerStatsPage {
     await expect(this.playerNameTitle).toHaveText(expectedPlayer);
   }
 
-  async checkYearDropdownExists() {
+  async checkYearDropdownHasAllYearOptions() {
     await expect(this.yearSelectDropdown).toBeVisible();
+    await this.yearSelectDropdown.click();
+    await expect(this.allYearOptionsInDropdown).toHaveCount(3);
   }
 
   async checkTeamAccordionHeadersExist() {
@@ -118,7 +124,7 @@ export class PlayerStatsPage {
     await this.teamCheckBox.uncheck();
   }
 
-  async select2022Year() {
+  async select2023Year() {
     await this.yearSelectDropdown.click();
     await this.yearOptionInDropdownUsedByTests.click();
   }

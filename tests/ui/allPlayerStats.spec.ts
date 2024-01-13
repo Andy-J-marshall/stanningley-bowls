@@ -16,11 +16,12 @@ const players: Array<string> = [
   'John Armitage',
   'Duncan McPhail',
   'Peter Crowther',
-  'Andy Marshall'
+  'Andy Marshall',
 ];
 
 for (const player of players) {
   test(`Summary of player's all team stats are correct for ${player}`, async () => {
+    await playerStatsPage.select2023Year();
     await playerStatsPage.selectTeamStatsCheckbox();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
@@ -51,6 +52,7 @@ for (const player of players) {
 test('Can switch between team and all stats', async () => {
   const player = 'Clifford Brogie';
 
+  await playerStatsPage.select2023Year();
   await playerStatsPage.selectTeamStatsCheckbox();
   await playerStatsPage.searchForPlayer(player);
   await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
