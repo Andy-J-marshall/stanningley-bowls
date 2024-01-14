@@ -794,7 +794,7 @@ function PlayerRecords(props) {
                 {clubCupWinner && (
                     <div className="center">
                         <h1>CLUB CUP WINNER</h1>
-                        <p>{capitalizeText([clubCupWinner])}</p>
+                        <p id='club-cup-winner'>{capitalizeText([clubCupWinner])}</p>
                     </div>
                 )}
 

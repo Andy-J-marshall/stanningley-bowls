@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import config from '../../../src/config';
 
-const teamName = config.teamNames.short
+const teamName = config.teamNames.short;
 
 export class PlayerRecordsPage {
   readonly page: Page;
@@ -24,6 +24,8 @@ export class PlayerRecordsPage {
   readonly thurVetsOpponentAggValue: Locator;
 
   readonly wedPairsNoGamesPlayedMessage: Locator;
+
+  readonly clubCupWinner: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -70,10 +72,12 @@ export class PlayerRecordsPage {
     this.thurVetsAverageRecordPlayer = page.locator(
       '#player-record-tabpane-thursday-vets #bestAveragePlayer'
     );
-    
+
     this.wedPairsNoGamesPlayedMessage = page.locator(
       '#player-record-tabpane-wednesday-pairs p'
     );
+
+    this.clubCupWinner = page.locator('#club-cup-winner');
   }
 
   async goto() {
@@ -107,6 +111,16 @@ export class PlayerRecordsPage {
   }
 
   playerRecordsDoNotExistForWednesdayPairsIn2023() {
-    expect(this.wedPairsNoGamesPlayedMessage).toContainText(`${teamName} did not play in this league for the selected year`)
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(
+      `${teamName} did not play in this league for the selected year`
+    );
+  }
+
+  clubCupWinnerIsDisplayedFor2022() {
+    expect(this.clubCupWinner).toContainText('John Armitage');
+  }
+
+  clubCupWinnerIsDisplayedFor2023() {
+    expect(this.clubCupWinner).toContainText('Paul Bowes');
   }
 }
