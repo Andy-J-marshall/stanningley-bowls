@@ -12,13 +12,15 @@ export class PlayerRecordsPage {
   readonly overallAverageRecordPlayer: Locator;
   readonly overallOpponentAggValue: Locator;
 
-  readonly ThurVetsWinRecord: Locator;
-  readonly ThurVetsWinsRecordPlayer: Locator;
-  readonly ThurVetsWinPercRecord: Locator;
-  readonly ThurVetsWinPercRecordPlayer: Locator;
-  readonly ThurVetsAverageRecord: Locator;
-  readonly ThurVetsAverageRecordPlayer: Locator;
-  readonly ThurVetsOpponentAggValue: Locator;
+  readonly thurVetsWinRecord: Locator;
+  readonly thurVetsWinsRecordPlayer: Locator;
+  readonly thurVetsWinPercRecord: Locator;
+  readonly thurVetsWinPercRecordPlayer: Locator;
+  readonly thurVetsAverageRecord: Locator;
+  readonly thurVetsAverageRecordPlayer: Locator;
+  readonly thurVetsOpponentAggValue: Locator;
+
+  readonly wedPairsNoGamesPlayedMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -47,23 +49,27 @@ export class PlayerRecordsPage {
       '#player-record-tabpane-Combined #bestAveragePlayer'
     );
 
-    this.ThurVetsWinRecord = page.locator(
+    this.thurVetsWinRecord = page.locator(
       '#player-record-tabpane-thursday-vets #mostWins'
     );
-    this.ThurVetsWinsRecordPlayer = page.locator(
+    this.thurVetsWinsRecordPlayer = page.locator(
       '#player-record-tabpane-thursday-vets #mostWinsPlayer'
     );
-    this.ThurVetsWinPercRecord = page.locator(
+    this.thurVetsWinPercRecord = page.locator(
       '#player-record-tabpane-thursday-vets #bestWinPerc'
     );
-    this.ThurVetsWinPercRecordPlayer = page.locator(
+    this.thurVetsWinPercRecordPlayer = page.locator(
       '#player-record-tabpane-thursday-vets #bestWinPercPlayerOrTeam'
     );
-    this.ThurVetsAverageRecord = page.locator(
+    this.thurVetsAverageRecord = page.locator(
       '#player-record-tabpane-thursday-vets #bestAverage'
     );
-    this.ThurVetsAverageRecordPlayer = page.locator(
+    this.thurVetsAverageRecordPlayer = page.locator(
       '#player-record-tabpane-thursday-vets #bestAveragePlayer'
+    );
+    
+    this.wedPairsNoGamesPlayedMessage = page.locator(
+      '#player-record-tabpane-wednesday-pairs p'
     );
   }
 
@@ -73,7 +79,7 @@ export class PlayerRecordsPage {
 
   playerRecordsOverviewHasCorrectValuesFor2023() {
     expect(this.overallGamesRecord).toBeVisible();
-    expect(this.ThurVetsWinRecord).toBeVisible({ visible: false });
+    expect(this.thurVetsWinRecord).toBeVisible({ visible: false });
 
     expect(this.overallGamesRecord).toContainText('92');
     expect(this.overallGamesRecordPlayer).toContainText('Shirley Biancardo');
@@ -86,14 +92,19 @@ export class PlayerRecordsPage {
   }
 
   playerRecordsHasCorrectValuesForThurVets() {
-    expect(this.ThurVetsWinRecord).toBeVisible();
+    expect(this.thurVetsWinRecord).toBeVisible();
     expect(this.overallGamesRecord).toBeVisible({ visible: false });
 
-    expect(this.ThurVetsWinRecord).toContainText('12');
-    expect(this.ThurVetsWinsRecordPlayer).toContainText('Mario Biancardo');
-    expect(this.ThurVetsWinPercRecord).toContainText('92%');
-    expect(this.ThurVetsWinPercRecordPlayer).toContainText('Mario Biancardo');
-    expect(this.ThurVetsAverageRecord).toContainText('10.85');
-    expect(this.ThurVetsAverageRecordPlayer).toContainText('Mario Biancardo');
+    expect(this.thurVetsWinRecord).toContainText('12');
+    expect(this.thurVetsWinsRecordPlayer).toContainText('Mario Biancardo');
+    expect(this.thurVetsWinPercRecord).toContainText('92%');
+    expect(this.thurVetsWinPercRecordPlayer).toContainText('Mario Biancardo');
+    expect(this.thurVetsAverageRecord).toContainText('10.85');
+    expect(this.thurVetsAverageRecordPlayer).toContainText('Mario Biancardo');
+  }
+
+  playerRecordsDoNotExistForWednesdayPairsIn2023() {
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText("No stats available for this day")
+
   }
 }
