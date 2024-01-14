@@ -4,7 +4,7 @@ import { capitalizeText } from '../helpers/utils';
 function RecordsTableDisplay(props) {
     const minGames = props.minGames;
     const playerOrTeam = props.playerOrTeam;
-    let bestWinPerc = props.bestWinPerc;
+    const bestWinPerc = props.bestWinPerc;
     const bestWinPercPlayerOrTeam = props.bestWinPercPlayerOrTeam;
     // Player records
     const mostWins = props.mostWins;
@@ -21,12 +21,6 @@ function RecordsTableDisplay(props) {
     const bestWinMargin = props.bestWinMargin;
     const bestWinMarginTeam = props.bestWinMarginTeam;
 
-    if (bestWinPerc) {
-        bestWinPerc =
-            bestWinPerc.toFixed(1) % 10
-                ? bestWinPerc.toFixed(1)
-                : bestWinPerc.toFixed(0);
-    }
     return (
         <div className="center" style={{ width: '97%' }}>
             <Table striped bordered hover>
@@ -57,7 +51,7 @@ function RecordsTableDisplay(props) {
                     bestWinPerc > 0 ? (
                         <tr>
                             <td>Highest win percentage</td>
-                            <td id="bestWinPerc">{bestWinPerc}%</td>
+                            <td id="bestWinPerc">{bestWinPerc.toFixed(0)}%</td>
                             <td id="bestWinPercPlayerOrTeam">{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     ) : null}

@@ -66,7 +66,7 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Home win percentage</td>
                             <td id="totalHomeWinPercValue">
-                                {((homeWins / homeGames) * 100).toFixed(2)}%
+                                {((homeWins / homeGames) * 100).toFixed(0)}%
                             </td>
                         </tr>
                     ) : null}
@@ -74,7 +74,7 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Away win percentage</td>
                             <td id="totalAwayWinPercValue">
-                                {((awayWins / awayGames) * 100).toFixed(2)}%
+                                {((awayWins / awayGames) * 100).toFixed(0)}%
                             </td>
                         </tr>
                     ) : null}
@@ -82,7 +82,7 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Cup win percentage</td>
                             <td id="totalCupWinPercValue">
-                                {((cupWins / cupGames) * 100).toFixed(2)}%
+                                {((cupWins / cupGames) * 100).toFixed(0)}%
                             </td>
                         </tr>
                     ) : null}

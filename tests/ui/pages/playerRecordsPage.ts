@@ -79,7 +79,7 @@ export class PlayerRecordsPage {
     expect(this.overallGamesRecordPlayer).toContainText('Shirley Biancardo');
     expect(this.overallWinRecord).toContainText('81');
     expect(this.overallWinsRecordPlayer).toContainText('Shirley Biancardo');
-    expect(this.overallWinPercRecord).toContainText('89.5%');
+    expect(this.overallWinPercRecord).toContainText('89%');
     expect(this.overallWinPercRecordPlayer).toContainText('Peter Crowther');
     expect(this.overallAverageRecord).toContainText('9.11');
     expect(this.overallAverageRecordPlayer).toContainText('Mario Biancardo');
@@ -91,7 +91,7 @@ export class PlayerRecordsPage {
 
     expect(this.ThurVetsWinRecord).toContainText('12');
     expect(this.ThurVetsWinsRecordPlayer).toContainText('Mario Biancardo');
-    expect(this.ThurVetsWinPercRecord).toContainText('92.3%');
+    expect(this.ThurVetsWinPercRecord).toContainText('92%');
     expect(this.ThurVetsWinPercRecordPlayer).toContainText('Mario Biancardo');
     expect(this.ThurVetsAverageRecord).toContainText('10.85');
     expect(this.ThurVetsAverageRecordPlayer).toContainText('Mario Biancardo');

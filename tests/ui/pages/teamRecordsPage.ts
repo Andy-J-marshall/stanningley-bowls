@@ -44,7 +44,7 @@ export class TeamRecordsPage {
   }
 
   teamRecordsAreCorrectFor2023() {
-    expect(this.overallWinPercRecord).toContainText('95.5%');
+    expect(this.overallWinPercRecord).toContainText('95%');
     expect(this.overallWinPercRecordTeam).toContainText('Tuesday Vets');
     expect(this.bestAggRecord).toContainText('20.25');
     expect(this.bestAggRecordTeam).toContainText('Wednesday Half Holiday');

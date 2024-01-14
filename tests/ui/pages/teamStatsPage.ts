@@ -91,9 +91,9 @@ export class TeamStatsPage {
     expect(this.totalWinsValue).toContainText('87');
     expect(this.totalLossesValue).toContainText('20');
     expect(this.totalDrawsValue).toContainText('5');
-    expect(this.totalHomeWinPercValue).toContainText('93.88%');
-    expect(this.totalAwayWinPercValue).toContainText('59.18%');
-    expect(this.totalCupWinPercValue).toContainText('85.71%');
+    expect(this.totalHomeWinPercValue).toContainText('94%');
+    expect(this.totalAwayWinPercValue).toContainText('59%');
+    expect(this.totalCupWinPercValue).toContainText('86%');
     expect(this.totalAggValue).toContainText('15238');
     expect(this.totalOpponentAggValue).toContainText('11461');
   }
@@ -106,9 +106,9 @@ export class TeamStatsPage {
     expect(this.TuesVetsWinsValue).toContainText('21');
     expect(this.TuesVetsLossesValue).toContainText('1');
     expect(this.TuesVetsDrawsValue).toHaveCount(0);
-    expect(this.TuesVetsHomeWinPercValue).toContainText('100.00%');
-    expect(this.TuesVetsAwayWinPercValue).toContainText('88.89%');
-    expect(this.TuesVetsCupWinPercValue).toContainText('100.00%');
+    expect(this.TuesVetsHomeWinPercValue).toContainText('100%');
+    expect(this.TuesVetsAwayWinPercValue).toContainText('89%');
+    expect(this.TuesVetsCupWinPercValue).toContainText('100%');
     expect(this.TuesVetsAggValue).toContainText('3479');
     expect(this.TuesVetsOpponentAggValue).toContainText('2119');
   }
