@@ -1,13 +1,16 @@
 import { test } from '@playwright/test';
-import { BasePage } from './pages/basePage';
+import { YearSelectPage } from './pages/yearSelectPage';
 import { TeamStatsPage } from './pages/teamStatsPage';
+import { TeamTabsPage } from './pages/teamTabsPage';
 
-let basePage: BasePage;
+let basePage: YearSelectPage;
 let teamStatsPage: TeamStatsPage;
+let teamTabsPage: TeamTabsPage;
 
 test.beforeEach(async ({ page }) => {
-  basePage = new BasePage(page);
+  basePage = new YearSelectPage(page);
   teamStatsPage = new TeamStatsPage(page);
+  teamTabsPage = new TeamTabsPage(page);
   await teamStatsPage.goto();
 });
 
@@ -18,6 +21,7 @@ test('Teams stats overview has correct stats for 2023', async () => {
 
 test('Teams stats for Tuesday Vets has correct stats for 2023', async () => {
   await basePage.select2023Year();
+  await teamTabsPage.selectTuesVetsTeamFromTabs();
   teamStatsPage.teamStatsHasCorrectValuesForTuesVets();
 });
 

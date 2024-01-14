@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
-export class BasePage {
+export class YearSelectPage {
   readonly page: Page;
   readonly yearSelectDropdown: Locator;
   readonly year2023InYearDropdown: Locator;

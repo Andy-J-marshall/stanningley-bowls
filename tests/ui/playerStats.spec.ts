@@ -1,14 +1,14 @@
 import { test } from '@playwright/test';
 import bowlsStats from '../../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
-import { BasePage } from './pages/basePage';
+import { YearSelectPage } from './pages/yearSelectPage';
 
 let playerStatsPage: PlayerStatsPage;
-let basePage: BasePage;
+let yearSelectPage: YearSelectPage;
 
 test.beforeEach(async ({ page }) => {
   playerStatsPage = new PlayerStatsPage(page);
-  basePage = new BasePage(page);
+  yearSelectPage = new YearSelectPage(page);
   await playerStatsPage.goto();
 });
 
@@ -22,7 +22,7 @@ const players: Array<string> = [
 ];
 for (const player of players) {
   test(`Summary of player's team stats are correct for ${player}`, async () => {
-    await basePage.select2023Year();
+    await yearSelectPage.select2023Year();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkPlayerIsReturned();
     await playerStatsPage.checkPlayerName(player);

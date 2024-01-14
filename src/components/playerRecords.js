@@ -789,7 +789,7 @@ function PlayerRecords(props) {
 
     if (mostGames > 0) {
         return (
-            <div>
+            <div id="player-records">
                 {clubCupWinner && (
                     <div className="center">
                         <h1>CLUB CUP WINNER</h1>

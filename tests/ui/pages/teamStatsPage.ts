@@ -84,6 +84,9 @@ export class TeamStatsPage {
   }
 
   teamStatsOverviewHasCorrectValuesFor2023() {
+    expect(this.totalGamesValue).toBeVisible();
+    expect(this.TuesVetsGamesValue).toBeVisible({ visible: false });
+
     expect(this.totalGamesValue).toContainText('112');
     expect(this.totalWinsValue).toContainText('87');
     expect(this.totalLossesValue).toContainText('20');
@@ -96,6 +99,9 @@ export class TeamStatsPage {
   }
 
   teamStatsHasCorrectValuesForTuesVets() {
+    expect(this.TuesVetsGamesValue).toBeVisible();
+    expect(this.totalGamesValue).toBeVisible({ visible: false });
+
     expect(this.TuesVetsGamesValue).toContainText('22');
     expect(this.TuesVetsWinsValue).toContainText('21');
     expect(this.TuesVetsLossesValue).toContainText('1');

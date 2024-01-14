@@ -11,32 +11,31 @@ function TeamTabs(props) {
     const team6Component = props.team6Component;
     const team7Component = props.team7Component;
 
-    // TODO improve layout?
     return (
         <div>
             <Tabs defaultActiveKey="Combined" id={id} className="mb-3 tabs">
                 <Tab eventKey="Combined" title="All">
                     {allComponent}
                 </Tab>
-                <Tab eventKey="Monday" title="Mon">
+                <Tab eventKey="monday" title="Mon">
                     {team1Component}
                 </Tab>
-                <Tab eventKey="Tuesday Vets" title="Tues (Vets)">
+                <Tab eventKey="tuesday-vets" title="Tues (Vets)">
                     {team2Component}
                 </Tab>
-                <Tab eventKey="Tuesday" title="Tues">
+                <Tab eventKey="tuesday" title="Tues">
                     {team3Component}
                 </Tab>
-                <Tab eventKey="Wednesday" title="Wed">
+                <Tab eventKey="wednesday" title="Wed">
                     {team4Component}
                 </Tab>
-                <Tab eventKey="Wednesday Pairs" title="Wed (Pairs)">
+                <Tab eventKey="wednesday-pairs" title="Wed (Pairs)">
                     {team7Component}
                 </Tab>
-                <Tab eventKey="Thursday Vets" title="Thur (Vets)">
+                <Tab eventKey="thursday-vets" title="Thur (Vets)">
                     {team5Component}
                 </Tab>
-                <Tab eventKey="Saturday" title="Sat">
+                <Tab eventKey="taturday" title="Sat">
                     {team6Component}
                 </Tab>
             </Tabs>
