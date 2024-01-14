@@ -58,7 +58,7 @@ function RecordsTableDisplay(props) {
                         <tr>
                             <td>Highest win percentage</td>
                             <td id="bestWinPerc">{bestWinPerc}%</td>
-                            <td id="bestWinPercPlayer">{capitalizeText(bestWinPercPlayerOrTeam)}</td>
+                            <td id="bestWinPercPlayerOrTeam">{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     ) : null}
                     {bestAverage && bestAveragePlayer && bestAverage > -22 ? (
@@ -73,8 +73,8 @@ function RecordsTableDisplay(props) {
                     bestTeamAggPerGame > 0 ? (
                         <tr>
                             <td>Most points scored per game</td>
-                            <td>{bestTeamAggPerGame.toFixed(2)}</td>
-                            <td>{capitalizeText(bestTeamAggPerGameTeam)}</td>
+                            <td id='bestAgg'>{bestTeamAggPerGame.toFixed(2)}</td>
+                            <td id="bestAggTeam">{capitalizeText(bestTeamAggPerGameTeam)}</td>
                         </tr>
                     ) : null}
                     {lowestAggConcededPerGame &&
@@ -83,8 +83,8 @@ function RecordsTableDisplay(props) {
                     lowestAggConcededPerGame <= 26 ? (
                         <tr>
                             <td>Fewest points conceded per game</td>
-                            <td>{lowestAggConcededPerGame.toFixed(2)}</td>
-                            <td>
+                            <td id="bestAggConceded">{lowestAggConcededPerGame.toFixed(2)}</td>
+                            <td id="bestAggConcededTeam">
                                 {capitalizeText(lowestAggConcededPerGameTeam)}
                             </td>
                         </tr>
@@ -94,8 +94,8 @@ function RecordsTableDisplay(props) {
                     bestWinMargin > 0 ? (
                         <tr>
                             <td>Best points difference</td>
-                            <td>{bestWinMargin.toFixed(0)}</td>
-                            <td>{capitalizeText(bestWinMarginTeam)}</td>
+                            <td id="bestWinMargin">{bestWinMargin.toFixed(0)}</td>
+                            <td id="bestWinMarginTeam">{capitalizeText(bestWinMarginTeam)}</td>
                         </tr>
                     ) : null}
                 </tbody>

@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
-export class playerRecordsPage {
+export class PlayerRecordsPage {
   readonly page: Page;
   readonly overallWinRecord: Locator;
   readonly overallWinsRecordPlayer: Locator;
@@ -38,7 +38,7 @@ export class playerRecordsPage {
       '#player-record-tabpane-Combined #bestWinPerc'
     );
     this.overallWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #bestWinPercPlayer'
+      '#player-record-tabpane-Combined #bestWinPercPlayerOrTeam'
     );
     this.overallAverageRecord = page.locator(
       '#player-record-tabpane-Combined #bestAverage'
@@ -57,7 +57,7 @@ export class playerRecordsPage {
       '#player-record-tabpane-thursday-vets #bestWinPerc'
     );
     this.ThurVetsWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-thursday-vets #bestWinPercPlayer'
+      '#player-record-tabpane-thursday-vets #bestWinPercPlayerOrTeam'
     );
     this.ThurVetsAverageRecord = page.locator(
       '#player-record-tabpane-thursday-vets #bestAverage'
