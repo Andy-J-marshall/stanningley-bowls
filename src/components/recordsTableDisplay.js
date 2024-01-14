@@ -41,15 +41,15 @@ function RecordsTableDisplay(props) {
                     {mostGames && mostGamesPlayer && mostGames > 0 ? (
                         <tr>
                             <td>Most games</td>
-                            <td>{mostGames}</td>
-                            <td>{capitalizeText(mostGamesPlayer)}</td>
+                            <td id="mostGames">{mostGames}</td>
+                            <td id="mostGamesPlayer">{capitalizeText(mostGamesPlayer)}</td>
                         </tr>
                     ) : null}
                     {mostWins && mostWinsPlayer && mostWins > 0 ? (
                         <tr>
                             <td>Most wins</td>
-                            <td>{mostWins}</td>
-                            <td>{capitalizeText(mostWinsPlayer)}</td>
+                            <td id="mostWins">{mostWins}</td>
+                            <td id="mostWinsPlayer">{capitalizeText(mostWinsPlayer)}</td>
                         </tr>
                     ) : null}
                     {bestWinPerc &&
@@ -57,15 +57,15 @@ function RecordsTableDisplay(props) {
                     bestWinPerc > 0 ? (
                         <tr>
                             <td>Highest win percentage</td>
-                            <td>{bestWinPerc}%</td>
-                            <td>{capitalizeText(bestWinPercPlayerOrTeam)}</td>
+                            <td id="bestWinPerc">{bestWinPerc}%</td>
+                            <td id="bestWinPercPlayer">{capitalizeText(bestWinPercPlayerOrTeam)}</td>
                         </tr>
                     ) : null}
                     {bestAverage && bestAveragePlayer && bestAverage > -22 ? (
                         <tr>
                             <td>Best average</td>
-                            <td>{bestAverage.toFixed(2)}</td>
-                            <td>{capitalizeText(bestAveragePlayer)}</td>
+                            <td id="bestAverage">{bestAverage.toFixed(2)}</td>
+                            <td id="bestAveragePlayer">{capitalizeText(bestAveragePlayer)}</td>
                         </tr>
                     ) : null}
                     {bestTeamAggPerGameTeam &&

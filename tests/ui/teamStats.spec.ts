@@ -21,7 +21,7 @@ test('Teams stats overview has correct stats for 2023', async () => {
 
 test('Teams stats for Tuesday Vets has correct stats for 2023', async () => {
   await basePage.select2023Year();
-  await teamTabsPage.selectTuesVetsTeamFromTabs();
+  await teamTabsPage.selectTuesVetsTeamFromStatsTabs();
   teamStatsPage.teamStatsHasCorrectValuesForTuesVets();
 });
 
