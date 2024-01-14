@@ -45,7 +45,7 @@ function IndividualTeamStats(props) {
 
         if (totalGames > 0) {
             return (
-                <div id={day + '-team-results'}>
+                <div id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}>
                     <StatsTableDisplay
                         totalGames={totalGames}
                         totalWins={totalWins}
