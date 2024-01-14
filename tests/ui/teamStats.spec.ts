@@ -25,6 +25,12 @@ test('Teams stats for Tuesday Vets has correct stats for 2023', async () => {
   teamStatsPage.teamStatsHasCorrectValuesForTuesVets();
 });
 
+test('Team stats not show for Wednesday Pairs in 2023 as team did not exist', async () => {
+  await basePage.select2022Year();
+  await teamTabsPage.selectWedPairsTeamFromStatsTabs();
+  teamStatsPage.teamStatsDoNotExistForWednesdayPairsIn2023();
+});
+
 test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
   await basePage.checkYearDropdownHasAllYearOptions();
 });

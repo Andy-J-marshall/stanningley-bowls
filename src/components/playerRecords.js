@@ -1,6 +1,7 @@
 import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
 import { capitalizeText } from '../helpers/utils';
+import config from '../config';
 
 function PlayerRecords(props) {
     const playerResults = props.playerResults;
@@ -627,7 +628,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -650,7 +651,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -673,7 +674,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -696,7 +697,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -719,7 +720,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -742,7 +743,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 
@@ -783,7 +784,7 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>No stats available for this day</p>;
+            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
         }
     }
 

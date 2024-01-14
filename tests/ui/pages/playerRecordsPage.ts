@@ -1,4 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
+import config from '../../../src/config';
+
+const teamName = config.teamNames.short
 
 export class PlayerRecordsPage {
   readonly page: Page;
@@ -104,7 +107,6 @@ export class PlayerRecordsPage {
   }
 
   playerRecordsDoNotExistForWednesdayPairsIn2023() {
-    expect(this.wedPairsNoGamesPlayedMessage).toContainText("No stats available for this day")
-
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(`${teamName} did not play in this league for the selected year`)
   }
 }

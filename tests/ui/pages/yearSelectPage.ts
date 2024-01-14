@@ -3,12 +3,14 @@ import { expect, Locator, Page } from '@playwright/test';
 export class YearSelectPage {
   readonly page: Page;
   readonly yearSelectDropdown: Locator;
+  readonly year2022InYearDropdown: Locator;
   readonly year2023InYearDropdown: Locator;
   readonly allYearOptionsInDropdown: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
+    this.year2022InYearDropdown = page.locator('#option2022');
     this.year2023InYearDropdown = page.locator('#option2023');
     this.allYearOptionsInDropdown = page.locator(
       '.dropdown-menu > .dropdown-item'
@@ -24,5 +26,10 @@ export class YearSelectPage {
   async select2023Year() {
     await this.yearSelectDropdown.click();
     await this.year2023InYearDropdown.click();
+  }
+
+  async select2022Year() {
+    await this.yearSelectDropdown.click();
+    await this.year2022InYearDropdown.click();
   }
 }

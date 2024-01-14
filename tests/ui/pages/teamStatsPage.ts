@@ -1,4 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
+import config from '../../../src/config';
+
+const teamName = config.teamNames.short
 
 export class TeamStatsPage {
   readonly page: Page;
@@ -11,15 +14,18 @@ export class TeamStatsPage {
   readonly totalCupWinPercValue: Locator;
   readonly totalAggValue: Locator;
   readonly totalOpponentAggValue: Locator;
-  readonly TuesVetsGamesValue: Locator;
-  readonly TuesVetsWinsValue: Locator;
-  readonly TuesVetsLossesValue: Locator;
-  readonly TuesVetsDrawsValue: Locator;
-  readonly TuesVetsHomeWinPercValue: Locator;
-  readonly TuesVetsAwayWinPercValue: Locator;
-  readonly TuesVetsCupWinPercValue: Locator;
-  readonly TuesVetsAggValue: Locator;
-  readonly TuesVetsOpponentAggValue: Locator;
+
+  readonly tuesVetsGamesValue: Locator;
+  readonly tuesVetsWinsValue: Locator;
+  readonly tuesVetsLossesValue: Locator;
+  readonly tuesVetsDrawsValue: Locator;
+  readonly tuesVetsHomeWinPercValue: Locator;
+  readonly tuesVetsAwayWinPercValue: Locator;
+  readonly tuesVetsCupWinPercValue: Locator;
+  readonly tuesVetsAggValue: Locator;
+  readonly tuesVetsOpponentAggValue: Locator;
+
+  readonly wedPairsNoGamesPlayedMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -50,32 +56,36 @@ export class TeamStatsPage {
     this.totalOpponentAggValue = page.locator(
       '#combined-team-win-losses #totalOpponentAggValue'
     );
-    this.TuesVetsGamesValue = page.locator(
+    this.tuesVetsGamesValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalGamesValue'
     );
-    this.TuesVetsWinsValue = page.locator(
+    this.tuesVetsWinsValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalWinsValue'
     );
-    this.TuesVetsLossesValue = page.locator(
+    this.tuesVetsLossesValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalLossesValue'
     );
-    this.TuesVetsDrawsValue = page.locator(
+    this.tuesVetsDrawsValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalDrawsValue'
     );
-    this.TuesVetsHomeWinPercValue = page.locator(
+    this.tuesVetsHomeWinPercValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalHomeWinPercValue'
     );
-    this.TuesVetsAwayWinPercValue = page.locator(
+    this.tuesVetsAwayWinPercValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalAwayWinPercValue'
     );
-    this.TuesVetsCupWinPercValue = page.locator(
+    this.tuesVetsCupWinPercValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalCupWinPercValue'
     );
-    this.TuesVetsAggValue = page.locator(
+    this.tuesVetsAggValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalAggValue'
     );
-    this.TuesVetsOpponentAggValue = page.locator(
+    this.tuesVetsOpponentAggValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
+    );
+
+    this.wedPairsNoGamesPlayedMessage = page.locator(
+      '#team-stat-tabpane-wednesday-pairs p'
     );
   }
 
@@ -85,7 +95,7 @@ export class TeamStatsPage {
 
   teamStatsOverviewHasCorrectValuesFor2023() {
     expect(this.totalGamesValue).toBeVisible();
-    expect(this.TuesVetsGamesValue).toBeVisible({ visible: false });
+    expect(this.tuesVetsGamesValue).toBeVisible({ visible: false });
 
     expect(this.totalGamesValue).toContainText('112');
     expect(this.totalWinsValue).toContainText('87');
@@ -99,17 +109,21 @@ export class TeamStatsPage {
   }
 
   teamStatsHasCorrectValuesForTuesVets() {
-    expect(this.TuesVetsGamesValue).toBeVisible();
+    expect(this.tuesVetsGamesValue).toBeVisible();
     expect(this.totalGamesValue).toBeVisible({ visible: false });
 
-    expect(this.TuesVetsGamesValue).toContainText('22');
-    expect(this.TuesVetsWinsValue).toContainText('21');
-    expect(this.TuesVetsLossesValue).toContainText('1');
-    expect(this.TuesVetsDrawsValue).toHaveCount(0);
-    expect(this.TuesVetsHomeWinPercValue).toContainText('100%');
-    expect(this.TuesVetsAwayWinPercValue).toContainText('89%');
-    expect(this.TuesVetsCupWinPercValue).toContainText('100%');
-    expect(this.TuesVetsAggValue).toContainText('3479');
-    expect(this.TuesVetsOpponentAggValue).toContainText('2119');
+    expect(this.tuesVetsGamesValue).toContainText('22');
+    expect(this.tuesVetsWinsValue).toContainText('21');
+    expect(this.tuesVetsLossesValue).toContainText('1');
+    expect(this.tuesVetsDrawsValue).toHaveCount(0);
+    expect(this.tuesVetsHomeWinPercValue).toContainText('100%');
+    expect(this.tuesVetsAwayWinPercValue).toContainText('89%');
+    expect(this.tuesVetsCupWinPercValue).toContainText('100%');
+    expect(this.tuesVetsAggValue).toContainText('3479');
+    expect(this.tuesVetsOpponentAggValue).toContainText('2119');
+  }
+
+  teamStatsDoNotExistForWednesdayPairsIn2023() {
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(`${teamName} did not play in this league for the selected year`);
   }
 }
