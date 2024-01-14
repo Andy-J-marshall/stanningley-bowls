@@ -23,7 +23,7 @@ const players: Array<string> = [
 ];
 
 for (const player of players) {
-  test(`Summary of player's all team stats are correct for ${player}`, async () => {
+  test(`Summary of player's all team stats are correct for ${player} in 2023`, async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.selectTeamStatsCheckbox();
     await playerStatsPage.searchForPlayer(player);
