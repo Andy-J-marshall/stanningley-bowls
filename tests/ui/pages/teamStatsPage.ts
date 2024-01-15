@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import config from '../../../src/config';
 
-const teamName = config.teamNames.short
+const teamName = config.teamNames.short;
 
 export class TeamStatsPage {
   readonly page: Page;
@@ -15,6 +15,17 @@ export class TeamStatsPage {
   readonly totalAggValue: Locator;
   readonly totalOpponentAggValue: Locator;
 
+  readonly mondayGamesValue: Locator;
+  readonly mondayWinsValue: Locator;
+  readonly mondayLossesValue: Locator;
+  readonly mondayDrawsValue: Locator;
+  readonly mondayHomeWinPercValue: Locator;
+  readonly mondayAwayWinPercValue: Locator;
+  readonly mondayCupWinPercValue: Locator;
+  readonly mondayAggValue: Locator;
+  readonly mondayOpponentAggValue: Locator;
+  readonly mondayLeaguePositionValue: Locator;
+
   readonly tuesVetsGamesValue: Locator;
   readonly tuesVetsWinsValue: Locator;
   readonly tuesVetsLossesValue: Locator;
@@ -24,6 +35,7 @@ export class TeamStatsPage {
   readonly tuesVetsCupWinPercValue: Locator;
   readonly tuesVetsAggValue: Locator;
   readonly tuesVetsOpponentAggValue: Locator;
+  readonly tuesVetsLeaguePositionValue: Locator;
 
   readonly wedPairsNoGamesPlayedMessage: Locator;
 
@@ -56,6 +68,38 @@ export class TeamStatsPage {
     this.totalOpponentAggValue = page.locator(
       '#combined-team-win-losses #totalOpponentAggValue'
     );
+    
+    this.mondayGamesValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalGamesValue'
+    );
+    this.mondayWinsValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalWinsValue'
+    );
+    this.mondayLossesValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalLossesValue'
+    );
+    this.mondayDrawsValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalDrawsValue'
+    );
+    this.mondayHomeWinPercValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalHomeWinPercValue'
+    );
+    this.mondayAwayWinPercValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalAwayWinPercValue'
+    );
+    this.mondayCupWinPercValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalCupWinPercValue'
+    );
+    this.mondayAggValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalAggValue'
+    );
+    this.mondayOpponentAggValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalOpponentAggValue'
+    );
+    this.mondayLeaguePositionValue = page.locator(
+      '#mondaycombinedleeds-team-results #leaguePosition'
+    );
+
     this.tuesVetsGamesValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalGamesValue'
     );
@@ -83,6 +127,9 @@ export class TeamStatsPage {
     this.tuesVetsOpponentAggValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
     );
+    this.tuesVetsLeaguePositionValue = page.locator(
+      '#tuesdayvetsleeds-team-results #leaguePosition'
+    );
 
     this.wedPairsNoGamesPlayedMessage = page.locator(
       '#team-stat-tabpane-wednesday-pairs p'
@@ -108,11 +155,12 @@ export class TeamStatsPage {
     expect(this.totalOpponentAggValue).toContainText('11461');
   }
 
-  teamStatsHasCorrectValuesForTuesVets() {
+  teamStatsHasCorrectValuesForTuesVets2023() {
     expect(this.tuesVetsGamesValue).toBeVisible();
     expect(this.totalGamesValue).toBeVisible({ visible: false });
 
     expect(this.tuesVetsGamesValue).toContainText('22');
+    expect(this.tuesVetsLeaguePositionValue).toContainText('1');
     expect(this.tuesVetsWinsValue).toContainText('21');
     expect(this.tuesVetsLossesValue).toContainText('1');
     expect(this.tuesVetsDrawsValue).toHaveCount(0);
@@ -123,7 +171,25 @@ export class TeamStatsPage {
     expect(this.tuesVetsOpponentAggValue).toContainText('2119');
   }
 
+  teamStatsHasCorrectValuesForMonday2022() {
+    expect(this.mondayGamesValue).toBeVisible();
+    expect(this.totalGamesValue).toBeVisible({ visible: false });
+
+    expect(this.mondayGamesValue).toContainText('20');
+    expect(this.mondayLeaguePositionValue).toContainText('4');
+    expect(this.mondayWinsValue).toContainText('12');
+    expect(this.mondayLossesValue).toContainText('5');
+    expect(this.mondayDrawsValue).toContainText('3');
+    expect(this.mondayHomeWinPercValue).toContainText('70%');
+    expect(this.mondayAwayWinPercValue).toContainText('50%');
+    expect(this.mondayCupWinPercValue).toHaveCount(0);
+    expect(this.mondayAggValue).toContainText('2077');
+    expect(this.mondayOpponentAggValue).toContainText('1797');
+  }
+
   teamStatsDoNotExistForWednesdayPairsIn2023() {
-    expect(this.wedPairsNoGamesPlayedMessage).toContainText(`${teamName} did not play in this league for the selected year`);
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(
+      `${teamName} did not play in this league for the selected year`
+    );
   }
 }

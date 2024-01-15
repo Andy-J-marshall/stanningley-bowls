@@ -2,26 +2,28 @@ import { Locator, Page } from '@playwright/test';
 
 export class TeamTabsPage {
   readonly page: Page;
+  readonly mondayTeamStats: Locator;
+  readonly mondayTeamRecords: Locator;
   readonly tuesVetsTeamStats: Locator;
-  readonly thurVetsTeamStats: Locator;
-  readonly wedPairsTeamStats: Locator;
   readonly tuesVetsTeamRecords: Locator;
-  readonly thurVetsTeamRecords: Locator;
+  readonly wedPairsTeamStats: Locator;
   readonly wedPairsTeamRecords: Locator;
+  readonly thurVetsTeamStats: Locator;
+  readonly thurVetsTeamRecords: Locator;
 
   constructor(page: Page) {
     this.page = page;
+    this.mondayTeamStats = page.locator(
+      '#team-stats #team-stat-tab-monday'
+    );
+    this.mondayTeamRecords = page.locator(
+      '#player-records #player-record-tab-monday'
+    );
     this.tuesVetsTeamStats = page.locator(
       '#team-stats #team-stat-tab-tuesday-vets'
     );
     this.tuesVetsTeamRecords = page.locator(
       '#player-records #player-record-tab-tuesday-vets'
-    );
-    this.thurVetsTeamStats = page.locator(
-      '#team-stats #team-stat-tab-thursday-vets'
-    );
-    this.thurVetsTeamRecords = page.locator(
-      '#player-records #player-record-tab-thursday-vets'
     );
     this.wedPairsTeamStats = page.locator(
       '#team-stats #team-stat-tab-wednesday-pairs'
@@ -29,6 +31,16 @@ export class TeamTabsPage {
     this.wedPairsTeamRecords = page.locator(
       '#player-records #player-record-tab-wednesday-pairs'
     );
+    this.thurVetsTeamStats = page.locator(
+      '#team-stats #team-stat-tab-thursday-vets'
+    );
+    this.thurVetsTeamRecords = page.locator(
+      '#player-records #player-record-tab-thursday-vets'
+    );
+  }
+
+  async selectMondayTeamFromStatsTabs() {
+    await this.mondayTeamStats.click();
   }
 
   async selectTuesVetsTeamFromStatsTabs() {

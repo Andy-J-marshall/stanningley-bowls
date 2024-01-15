@@ -41,7 +41,7 @@ function StatsTableDisplay(props) {
                     {leaguePosition >= 0 ? (
                         <tr>
                             <td>League position</td>
-                            <td>{leaguePosition}</td>
+                            <td id='leaguePosition'>{leaguePosition}</td>
                         </tr>
                     ) : null}
                     {totalWins >= 0 ? (
