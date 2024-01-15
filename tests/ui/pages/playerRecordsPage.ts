@@ -15,6 +15,14 @@ export class PlayerRecordsPage {
   readonly overallAverageRecordPlayer: Locator;
   readonly overallOpponentAggValue: Locator;
 
+  readonly tuesVetsWinRecord: Locator;
+  readonly tuesVetsWinsRecordPlayer: Locator;
+  readonly tuesVetsWinPercRecord: Locator;
+  readonly tuesVetsWinPercRecordPlayer: Locator;
+  readonly tuesVetsAverageRecord: Locator;
+  readonly tuesVetsAverageRecordPlayer: Locator;
+  readonly tuesVetsOpponentAggValue: Locator;
+
   readonly thurVetsWinRecord: Locator;
   readonly thurVetsWinsRecordPlayer: Locator;
   readonly thurVetsWinPercRecord: Locator;
@@ -52,6 +60,25 @@ export class PlayerRecordsPage {
     );
     this.overallAverageRecordPlayer = page.locator(
       '#player-record-tabpane-Combined #bestAveragePlayer'
+    );
+
+    this.tuesVetsWinRecord = page.locator(
+      '#player-record-tabpane-tuesday-vets #mostWins'
+    );
+    this.tuesVetsWinsRecordPlayer = page.locator(
+      '#player-record-tabpane-tuesday-vets #mostWinsPlayer'
+    );
+    this.tuesVetsWinPercRecord = page.locator(
+      '#player-record-tabpane-tuesday-vets #bestWinPerc'
+    );
+    this.tuesVetsWinPercRecordPlayer = page.locator(
+      '#player-record-tabpane-tuesday-vets #bestWinPercPlayerOrTeam'
+    );
+    this.tuesVetsAverageRecord = page.locator(
+      '#player-record-tabpane-tuesday-vets #bestAverage'
+    );
+    this.tuesVetsAverageRecordPlayer = page.locator(
+      '#player-record-tabpane-tuesday-vets #bestAveragePlayer'
     );
 
     this.thurVetsWinRecord = page.locator(
@@ -98,7 +125,7 @@ export class PlayerRecordsPage {
     expect(this.overallAverageRecordPlayer).toContainText('Mario Biancardo');
   }
 
-  playerRecordsHasCorrectValuesForThurVets() {
+  playerRecordsHasCorrectValuesForThurVets2023() {
     expect(this.thurVetsWinRecord).toBeVisible();
     expect(this.overallGamesRecord).toBeVisible({ visible: false });
 
@@ -108,6 +135,18 @@ export class PlayerRecordsPage {
     expect(this.thurVetsWinPercRecordPlayer).toContainText('Mario Biancardo');
     expect(this.thurVetsAverageRecord).toContainText('10.85');
     expect(this.thurVetsAverageRecordPlayer).toContainText('Mario Biancardo');
+  }
+
+  playerRecordsHasCorrectValuesForTuesVets2022() {
+    expect(this.tuesVetsWinRecord).toBeVisible();
+    expect(this.overallGamesRecord).toBeVisible({ visible: false });
+
+    expect(this.tuesVetsWinRecord).toContainText('15');
+    expect(this.tuesVetsWinsRecordPlayer).toContainText('Jim Moorin, Shirley Biancardo, Stewart Watson');
+    expect(this.tuesVetsWinPercRecord).toContainText('100%');
+    expect(this.tuesVetsWinPercRecordPlayer).toContainText('John Armitage');
+    expect(this.tuesVetsAverageRecord).toContainText('12.36');
+    expect(this.tuesVetsAverageRecordPlayer).toContainText('John Armitage');
   }
 
   playerRecordsDoNotExistForWednesdayPairsIn2023() {

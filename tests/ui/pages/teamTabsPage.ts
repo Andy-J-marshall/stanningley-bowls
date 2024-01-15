@@ -51,6 +51,10 @@ export class TeamTabsPage {
     await this.wedPairsTeamStats.click();
   }
 
+  async selectTuesVetsTeamFromRecordsTabs() {
+    await this.tuesVetsTeamRecords.click();
+  }
+
   async selectWedPairsTeamFromRecordsTabs() {
     await this.wedPairsTeamRecords.click();
   }
