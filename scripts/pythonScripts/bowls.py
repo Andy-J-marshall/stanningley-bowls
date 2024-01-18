@@ -23,6 +23,7 @@ preferredTeamName = teamDetails.preferredTeamName
 transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
+sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 lastResultRowsForTransferredPlayer = {}
 teamsProcessed = []
 
@@ -521,3 +522,8 @@ with open(filename, 'w') as f:
     json.dump(dataToExport, f)
     print(filename + ' created')
     print('------')
+
+# Sanity checks on the team data
+sanityChecksOnTeamStats(allTeamResults)
+print('Sanity checks complete')
+print('------')

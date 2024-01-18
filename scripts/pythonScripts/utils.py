@@ -139,3 +139,41 @@ def formatTeamName(possibleTeamName):
     teamName = teamName.replace('  ', ' ')
     teamName = teamName.strip()
     return teamName
+
+def sanityChecksOnTeamStats(allTeamResults):
+    print('Running sanity checks on team stats')
+    for team in allTeamResults:
+        dayForTeam = team['day']
+
+        if team['totalGamesPlayed'] > 0 and (team['leaguePosition'] <= 0 or team['leaguePosition'] > 13):
+            raise Exception(f'leaguePosition for {dayForTeam} incorrect?')
+        if team['agg'] < 0 or team['agg'] > 4000:
+            raise Exception(f'agg for {dayForTeam} incorrect?')
+        if team['opponentAgg'] < 0 or team['opponentAgg'] > 4000:
+            raise Exception(f'opponentAgg for {dayForTeam} incorrect?')
+        if len(team['results']) > 30:
+            raise Exception(f'results for {dayForTeam} incorrect?')
+        if team['totalGamesPlayed'] < 0 or team['totalGamesPlayed'] > 30:
+            raise Exception(f'totalGamesPlayed for {dayForTeam} incorrect?')
+        if team['wins'] < 0 or team['wins'] > 30:
+            raise Exception(f'wins for {dayForTeam} incorrect?')
+        if team['losses'] < 0 or team['losses'] > 30:
+            raise Exception(f'losses for {dayForTeam} incorrect?')
+        if team['draws'] < 0 or team['draws'] > 20:
+            raise Exception(f'draws for {dayForTeam} incorrect?')
+        if team['awayWins'] < 0 or team['awayWins'] > team['wins']:
+            raise Exception(f'awayWins for {dayForTeam} incorrect?')
+        if team['homeWins'] < 0 or team['homeWins'] > team['wins']:
+            raise Exception(f'homeWins for {dayForTeam} incorrect?')
+        if team['awayLosses'] < 0 or team['awayLosses'] > team['losses']:
+            raise Exception(f'awayLosses for {dayForTeam} incorrect?')
+        if team['homeLosses'] < 0 or team['homeLosses'] > team['losses']:
+            raise Exception(f'homeLosses for {dayForTeam} incorrect?')
+        if team['cupLosses'] < 0 or team['cupLosses'] > team['losses']:
+            raise Exception(f'cupLosses for {dayForTeam} incorrect?')
+        if team['cupWins'] < 0 or team['cupWins'] > team['wins']:
+            raise Exception(f'cupWins for {dayForTeam} incorrect?')
+        if team['homeDraws'] < 0 or team['homeDraws'] > team['draws']:
+            raise Exception(f'homeDraws for {dayForTeam} incorrect?')
+        if team['awayDraws'] < 0 or team['awayDraws'] > team['draws']:
+            raise Exception(f'awayDraws for {dayForTeam} incorrect?')
