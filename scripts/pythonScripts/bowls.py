@@ -24,6 +24,7 @@ transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
+sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 lastResultRowsForTransferredPlayer = {}
 teamsProcessed = []
 
@@ -523,7 +524,8 @@ with open(filename, 'w') as f:
     print(filename + ' created')
     print('------')
 
-# Sanity checks on the team data
+# Sanity checks on the data
 sanityChecksOnTeamStats(allTeamResults)
-print('Sanity checks complete')
+sanityChecksOnPlayerStats(playerStats, players)
+print(f'Sanity checks for {preferredTeamName} stats complete')
 print('------')

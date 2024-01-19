@@ -177,3 +177,67 @@ def sanityChecksOnTeamStats(allTeamResults):
             raise Exception(f'homeDraws for {dayForTeam} incorrect?')
         if team['awayDraws'] < 0 or team['awayDraws'] > team['draws']:
             raise Exception(f'awayDraws for {dayForTeam} incorrect?')
+
+def sanityChecksOnPlayerStats(playerStats, players):
+    print('Running sanity checks on player stats')
+    for p in players:
+        player = formatName(p)
+        stats = playerStats[player]
+        # check games played
+        if stats['totalGamesPlayed'] < 0 or stats['totalGamesPlayed'] > 200:
+            raise Exception(f'totalGamesPlayed for {player} incorrect?')
+        if stats['totalGamesPlayed'] != (stats['homeWins'] + stats['homeLosses'] + stats['awayWins'] + stats['awayLosses'] + stats['cupWins'] + stats['cupLosses']):
+            raise Exception(f'totalGamesPlayed value does not match wins/losses values for {player}')
+        
+        # check wins/losses
+        if stats['pairWins'] != (stats['pairHomeWins'] + stats['pairAwayWins'] + stats['pairCupWins']):
+            raise Exception(f'pairWins value does not match pairs home/away/cup wins values for {player}')
+        if stats['pairLosses'] != (stats['pairHomeLosses'] + stats['pairAwayLosses'] + stats['pairCupLosses']):
+            raise Exception(f'pairLosses value does not match pairs home/away/cup losses values for {player}')
+
+        # check aggregates
+        if stats['totalAgg'] < 0 or stats['totalAgg'] > 3500:
+            raise Exception(f'totalAgg for {player} incorrect?')
+        if stats['totalAggAgainst'] < 0 or stats['totalAggAgainst'] > 3500:
+            raise Exception(f'totalAggAgainst for {player} incorrect?')
+        if stats['availableAgg'] < 0 or stats['availableAgg'] < stats['totalAgg'] or stats['availableAgg'] < stats['totalAggAgainst']:
+            raise Exception(f'availableAgg for {player} incorrect?')
+        if stats['totalHomeAgg'] < 0 or stats['totalHomeAgg'] > stats['availableHomeAgg']:
+            raise Exception(f'totalHomeAgg for {player} incorrect?')
+        if stats['totalAwayAgg'] < 0 or stats['totalAwayAgg'] > stats['availableAwayAgg']:
+            raise Exception(f'totalAwayAgg for {player} incorrect?')
+        if stats['totalHomeAggAgainst'] < 0 or stats['totalHomeAggAgainst'] > stats['availableHomeAgg']:
+            raise Exception(f'totalHomeAggAgainst for {player} incorrect?')
+        if stats['totalAwayAggAgainst'] < 0 or stats['totalAwayAggAgainst'] > stats['availableAwayAgg']:
+            raise Exception(f'totalAwayAggAgainst for {player} incorrect?')
+        
+        # check pairs aggregates
+        if stats['totalPairsAgg'] < 0 or stats['totalPairsAgg'] > stats['totalAgg']:
+            raise Exception(f'totalPairsAgg for {player} incorrect?')
+        if stats['availablePairsAgg'] < 0 or stats['availablePairsAgg'] < stats['totalPairsAgg'] or stats['availablePairsAgg'] < stats['totalPairsAggAgainst'] or stats['availablePairsAgg'] > stats['availableAgg']:
+            raise Exception(f'availablePairsAgg for {player} incorrect?')
+        if stats['totalPairsAggAgainst'] < 0 or stats['totalPairsAggAgainst'] > stats['totalAggAgainst']:
+            raise Exception(f'totalPairsAggAgainst for {player} incorrect?')
+        if (stats['availablePairsHomeAgg'] + stats['availablePairsAwayAgg']) > stats['availablePairsAgg']:
+            raise Exception(f'availablePairsHomeAgg and/or availablePairsAwayAgg for {player} incorrect?')
+        if stats['totalPairsAwayAgg'] < 0 or stats['totalPairsAwayAgg'] > stats['totalPairsAgg']:
+            raise Exception(f'totalPairsAwayAgg for {player} incorrect?')
+        if stats['totalPairsHomeAgg'] < 0 or stats['totalPairsHomeAgg'] > stats['totalPairsAgg']:
+            raise Exception(f'totalPairsHomeAgg for {player} incorrect?')
+        if stats['totalPairsAwayAggAgainst'] < 0 or stats['totalPairsAwayAggAgainst'] > stats['totalPairsAggAgainst']:
+            raise Exception(f'totalPairsAwayAggAgainst for {player} incorrect?')
+        if stats['totalPairsHomeAggAgainst'] < 0 or stats['totalPairsHomeAggAgainst'] > stats['totalPairsAggAgainst']:
+            raise Exception(f'totalPairsHomeAggAgainst for {player} incorrect?')
+        
+        # checks arrays
+        if len(stats['results']) != stats['totalGamesPlayed']:
+            raise Exception(f'results for {player} incorrect?')
+        if len(stats['dayPlayed']) != stats['totalGamesPlayed']:
+            raise Exception(f'dayPlayed for {player} incorrect?')
+        if len(stats['pairsPartners']) != (stats['pairWins'] + stats['pairLosses']):
+            raise Exception(f'pairsPartners for {player} incorrect?')
+        if len(stats['winningPairsPartners']) != stats['pairWins']:
+            raise Exception(f'winningPairsPartners for {player} incorrect?')
+        if len(stats['losingPairsPartners']) != stats['pairLosses']:
+            raise Exception(f'losingPairsPartners for {player} incorrect?')
+        

@@ -16,6 +16,7 @@ standardiseName = utils.standardiseName
 formatTeamName = utils.formatTeamName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
+sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 cupText = utils.cupText
 leaguesProcessed = []
 
@@ -265,3 +266,7 @@ with open(filename, 'w') as f:
     json.dump(dataToExport, f)
     print(filename + ' created')
     print('------')
+
+# Sanity checks on the data
+sanityChecksOnPlayerStats(playerResults, players)
+print('Sanity checks for all teams stats complete')
