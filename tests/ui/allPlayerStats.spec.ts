@@ -65,3 +65,26 @@ test('Can switch between team and all stats', async () => {
   await playerStatsPage.searchForPlayer(player);
   await playerStatsPage.checkTeamAccordionHeadersExist();
 });
+
+test('Summary of player stats for all teams are correct for Jim Moorin', async () => {
+  await playerStatsPage.selectTeamStatsCheckbox();
+  await yearSelectPage.select2023Year();
+  playerStatsPage.playerStatsAreCorrectForJM('93', '53', '57%', '1.81');
+  await yearSelectPage.select2022Year();
+  playerStatsPage.playerStatsAreCorrectForJM('96', '69', '72%', '5.35');
+});
+
+test('Summary of player stats for singles games for all teams are correct for Andy Marshall', async () => {
+  await playerStatsPage.selectTeamStatsCheckbox();
+  await yearSelectPage.select2023Year();
+  await playerStatsPage.selectSinglesOnlyCheckbox();
+  playerStatsPage.playerStatsAreCorrectForAM('37', '30', '81%', '5.57');
+  await playerStatsPage.deselectSinglesOnlyCheckbox();
+  playerStatsPage.playerStatsAreCorrectForAM('52', '40', '77%', '5.33');
+});
+
+test('Summary of player stats since 2022 for all team are correct for Dave Hudson', async () => {
+  await playerStatsPage.selectTeamStatsCheckbox();
+  await playerStatsPage.selectSince2022Checkbox();
+  playerStatsPage.playerStatsAreCorrectForDH('70', '24', '34%', '-2.83');
+});

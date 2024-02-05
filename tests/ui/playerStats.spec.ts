@@ -50,3 +50,23 @@ for (const player of players) {
     await playerStatsPage.validateSummaryStats(stats);
   });
 }
+
+test('Summary of player stats for team are correct for Steve Gardner', async () => {
+  await yearSelectPage.select2023Year();
+  playerStatsPage.playerStatsAreCorrectForSG('57', '44', '77%', '7.81');
+  await yearSelectPage.select2022Year();
+  playerStatsPage.playerStatsAreCorrectForSG('43', '35', '81%', '7.86');
+  await playerStatsPage.selectSince2022Checkbox();
+});
+
+test('Summary of player stats for singles games for team are correct for Andy Marshall', async () => {
+  await yearSelectPage.select2023Year();
+  playerStatsPage.playerStatsAreCorrectForAM('51', '40', '78%', '5.49');
+  await playerStatsPage.selectSinglesOnlyCheckbox();
+  playerStatsPage.playerStatsAreCorrectForAM('36', '30', '83%', '5.81');
+});
+
+test('Summary of player stats since 2022 for team are correct for Dave Hudson', async () => {
+  await playerStatsPage.selectSince2022Checkbox();
+  playerStatsPage.playerStatsAreCorrectForDH('14', '7', '50%', '-1.00');
+});

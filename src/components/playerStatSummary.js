@@ -207,10 +207,10 @@ function PlayerStatSummary(props) {
                                     {capitalizeText([player.player])}
                                 </a>
                             </td>
-                            <td>{gamesPlayed}</td>
-                            <td>{wins}</td>
-                            <td>{((wins / gamesPlayed) * 100).toFixed(0)}%</td>
-                            <td>{average.toFixed(2)}</td>
+                            <td id={`${player.player.replace(' ', '-')}-games`}>{gamesPlayed}</td>
+                            <td id={`${player.player.replace(' ', '-')}-wins`}>{wins}</td>
+                            <td id={`${player.player.replace(' ', '-')}-win-perc`}>{((wins / gamesPlayed) * 100).toFixed(0)}%</td>
+                            <td id={`${player.player.replace(' ', '-')}-avg`}>{average.toFixed(2)}</td>
                         </tr>
                     )}
                 </tbody>

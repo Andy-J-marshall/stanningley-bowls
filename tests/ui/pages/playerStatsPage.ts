@@ -27,6 +27,24 @@ export class PlayerStatsPage {
   readonly totalLosses: Locator;
   readonly totalAverage: Locator;
   readonly teamCheckBox: Locator;
+  readonly allYearCheckBox: Locator;
+  readonly singlesOnlyCheckBox: Locator;
+  readonly sgGames: Locator;
+  readonly sgWins: Locator;
+  readonly sgWinPerc: Locator;
+  readonly sgAvg: Locator;
+  readonly jmGames: Locator;
+  readonly jmWins: Locator;
+  readonly jmWinPerc: Locator;
+  readonly jmAvg: Locator;
+  readonly amGames: Locator;
+  readonly amWins: Locator;
+  readonly amWinPerc: Locator;
+  readonly amAvg: Locator;
+  readonly dhGames: Locator;
+  readonly dhWins: Locator;
+  readonly dhWinPerc: Locator;
+  readonly dhAvg: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -54,6 +72,28 @@ export class PlayerStatsPage {
     this.teamCheckBox = page.locator(
       ".form-check input[id='#all-stats-select-checkbox']"
     );
+    this.singlesOnlyCheckBox = page.locator(
+      ".form-check input[id='#only-singles-checkbox']"
+    );
+    this.allYearCheckBox = page.locator(
+      ".form-check input[id='#all-years-select-checkbox']"
+    );
+    this.sgGames = page.locator('#steve-gardner-games');
+    this.sgWins = page.locator('#steve-gardner-wins');
+    this.sgWinPerc = page.locator('#steve-gardner-win-perc');
+    this.sgAvg = page.locator('#steve-gardner-avg');
+    this.jmGames = page.locator('#jim-moorin-games');
+    this.jmWins = page.locator('#jim-moorin-wins');
+    this.jmWinPerc = page.locator('#jim-moorin-win-perc');
+    this.jmAvg = page.locator('#jim-moorin-avg');
+    this.amGames = page.locator('#andy-marshall-games');
+    this.amWins = page.locator('#andy-marshall-wins');
+    this.amWinPerc = page.locator('#andy-marshall-win-perc');
+    this.amAvg = page.locator('#andy-marshall-avg');
+    this.dhGames = page.locator('#dave-hudson-games');
+    this.dhWins = page.locator('#dave-hudson-wins');
+    this.dhWinPerc = page.locator('#dave-hudson-win-perc');
+    this.dhAvg = page.locator('#dave-hudson-avg');
   }
 
   async goto() {
@@ -110,6 +150,22 @@ export class PlayerStatsPage {
     await this.teamCheckBox.uncheck();
   }
 
+  async selectSinglesOnlyCheckbox() {
+    await this.singlesOnlyCheckBox.check();
+  }
+
+  async deselectSinglesOnlyCheckbox() {
+    await this.singlesOnlyCheckBox.uncheck();
+  }
+
+  async selectSince2022Checkbox() {
+    await this.allYearCheckBox.check();
+  }
+
+  async deselectSince2022Checkbox() {
+    await this.allYearCheckBox.uncheck();
+  }
+
   async validateSummaryStats(playerStats: PlayerStats) {
     await expect(this.totalGamesPlayed).toHaveText(
       `Games played: ${playerStats.totalGamesPlayed}`
@@ -123,5 +179,53 @@ export class PlayerStatsPage {
     );
     expect(playerStats.totalAverage).toBeGreaterThan(-22);
     expect(playerStats.totalAverage).toBeLessThan(22);
+  }
+
+  playerStatsAreCorrectForSG(
+    games: string,
+    wins: string,
+    winPerc: string,
+    avg: string
+  ) {
+    expect(this.sgGames).toContainText(games);
+    expect(this.sgWins).toContainText(wins);
+    expect(this.sgWinPerc).toContainText(winPerc);
+    expect(this.sgAvg).toContainText(avg);
+  }
+
+  playerStatsAreCorrectForJM(
+    games: string,
+    wins: string,
+    winPerc: string,
+    avg: string
+  ) {
+    expect(this.jmGames).toContainText(games);
+    expect(this.jmWins).toContainText(wins);
+    expect(this.jmWinPerc).toContainText(winPerc);
+    expect(this.jmAvg).toContainText(avg);
+  }
+
+  playerStatsAreCorrectForAM(
+    games: string,
+    wins: string,
+    winPerc: string,
+    avg: string
+  ) {
+    expect(this.amGames).toContainText(games);
+    expect(this.amWins).toContainText(wins);
+    expect(this.amWinPerc).toContainText(winPerc);
+    expect(this.amAvg).toContainText(avg);
+  }
+
+  playerStatsAreCorrectForDH(
+    games: string,
+    wins: string,
+    winPerc: string,
+    avg: string
+  ) {
+    expect(this.dhGames).toContainText(games);
+    expect(this.dhWins).toContainText(wins);
+    expect(this.dhWinPerc).toContainText(winPerc);
+    expect(this.dhAvg).toContainText(avg);
   }
 }
