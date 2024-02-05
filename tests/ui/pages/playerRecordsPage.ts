@@ -4,36 +4,36 @@ import config from '../../../src/config';
 const teamName = config.teamNames.short;
 
 export class PlayerRecordsPage {
-  readonly page: Page;
-  readonly overallWinRecord: Locator;
-  readonly overallWinsRecordPlayer: Locator;
-  readonly overallGamesRecord: Locator;
-  readonly overallGamesRecordPlayer: Locator;
-  readonly overallWinPercRecord: Locator;
-  readonly overallWinPercRecordPlayer: Locator;
-  readonly overallAverageRecord: Locator;
-  readonly overallAverageRecordPlayer: Locator;
-  readonly overallOpponentAggValue: Locator;
+  private readonly page: Page;
+  private readonly overallWinRecord: Locator;
+  private readonly overallWinsRecordPlayer: Locator;
+  private readonly overallGamesRecord: Locator;
+  private readonly overallGamesRecordPlayer: Locator;
+  private readonly overallWinPercRecord: Locator;
+  private readonly overallWinPercRecordPlayer: Locator;
+  private readonly overallAverageRecord: Locator;
+  private readonly overallAverageRecordPlayer: Locator;
+  private readonly overallOpponentAggValue: Locator;
 
-  readonly tuesVetsWinRecord: Locator;
-  readonly tuesVetsWinsRecordPlayer: Locator;
-  readonly tuesVetsWinPercRecord: Locator;
-  readonly tuesVetsWinPercRecordPlayer: Locator;
-  readonly tuesVetsAverageRecord: Locator;
-  readonly tuesVetsAverageRecordPlayer: Locator;
-  readonly tuesVetsOpponentAggValue: Locator;
+  private readonly tuesVetsWinRecord: Locator;
+  private readonly tuesVetsWinsRecordPlayer: Locator;
+  private readonly tuesVetsWinPercRecord: Locator;
+  private readonly tuesVetsWinPercRecordPlayer: Locator;
+  private readonly tuesVetsAverageRecord: Locator;
+  private readonly tuesVetsAverageRecordPlayer: Locator;
+  private readonly tuesVetsOpponentAggValue: Locator;
 
-  readonly thurVetsWinRecord: Locator;
-  readonly thurVetsWinsRecordPlayer: Locator;
-  readonly thurVetsWinPercRecord: Locator;
-  readonly thurVetsWinPercRecordPlayer: Locator;
-  readonly thurVetsAverageRecord: Locator;
-  readonly thurVetsAverageRecordPlayer: Locator;
-  readonly thurVetsOpponentAggValue: Locator;
+  private readonly thurVetsWinRecord: Locator;
+  private readonly thurVetsWinsRecordPlayer: Locator;
+  private readonly thurVetsWinPercRecord: Locator;
+  private readonly thurVetsWinPercRecordPlayer: Locator;
+  private readonly thurVetsAverageRecord: Locator;
+  private readonly thurVetsAverageRecordPlayer: Locator;
+  private readonly thurVetsOpponentAggValue: Locator;
 
-  readonly wedPairsNoGamesPlayedMessage: Locator;
+  private readonly wedPairsNoGamesPlayedMessage: Locator;
 
-  readonly clubCupWinner: Locator;
+  private readonly clubCupWinner: Locator;
 
   constructor(page: Page) {
     this.page = page;

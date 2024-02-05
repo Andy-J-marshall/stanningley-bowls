@@ -8,43 +8,47 @@ interface PlayerStats {
 }
 
 export class PlayerStatsPage {
-  readonly page: Page;
-  readonly searchButton: Locator;
-  readonly backButton: Locator;
-  readonly searchBar: Locator;
-  readonly playerListInDropdown: Locator;
-  readonly playerStatsItem: Locator;
-  readonly playerStatsRows: Locator;
-  readonly playerNameTitle: Locator;
-  readonly overviewAccordionButton: Locator;
-  readonly winLossAccordionButton: Locator;
-  readonly teamAccordionButton: Locator;
-  readonly aggAccordionButton: Locator;
-  readonly resultsAccordionButton: Locator;
-  readonly accordionButtons: Locator;
-  readonly totalGamesPlayed: Locator;
-  readonly totalWins: Locator;
-  readonly totalLosses: Locator;
-  readonly totalAverage: Locator;
-  readonly teamCheckBox: Locator;
-  readonly allYearCheckBox: Locator;
-  readonly singlesOnlyCheckBox: Locator;
-  readonly sgGames: Locator;
-  readonly sgWins: Locator;
-  readonly sgWinPerc: Locator;
-  readonly sgAvg: Locator;
-  readonly jmGames: Locator;
-  readonly jmWins: Locator;
-  readonly jmWinPerc: Locator;
-  readonly jmAvg: Locator;
-  readonly amGames: Locator;
-  readonly amWins: Locator;
-  readonly amWinPerc: Locator;
-  readonly amAvg: Locator;
-  readonly dhGames: Locator;
-  readonly dhWins: Locator;
-  readonly dhWinPerc: Locator;
-  readonly dhAvg: Locator;
+  private readonly page: Page;
+  private readonly searchButton: Locator;
+  private readonly backButton: Locator;
+  private readonly searchBar: Locator;
+  private readonly playerListInDropdown: Locator;
+  private readonly playerStatsItem: Locator;
+  private readonly playerStatsRows: Locator;
+  private readonly playerNameTitle: Locator;
+  private readonly overviewAccordionButton: Locator;
+  private readonly winLossAccordionButton: Locator;
+  private readonly teamAccordionButton: Locator;
+  private readonly aggAccordionButton: Locator;
+  private readonly resultsAccordionButton: Locator;
+  private readonly accordionButtons: Locator;
+  private readonly totalGamesPlayed: Locator;
+  private readonly totalWins: Locator;
+  private readonly totalLosses: Locator;
+  private readonly totalAverage: Locator;
+  private readonly teamCheckBox: Locator;
+  private readonly allYearCheckBox: Locator;
+  private readonly singlesOnlyCheckBox: Locator;
+  private readonly sgGames: Locator;
+  private readonly sgWins: Locator;
+  private readonly sgWinPerc: Locator;
+  private readonly sgAvg: Locator;
+  private readonly jmGames: Locator;
+  private readonly jmWins: Locator;
+  private readonly jmWinPerc: Locator;
+  private readonly jmAvg: Locator;
+  private readonly amGames: Locator;
+  private readonly amWins: Locator;
+  private readonly amWinPerc: Locator;
+  private readonly amAvg: Locator;
+  private readonly bmGames: Locator;
+  private readonly bmWins: Locator;
+  private readonly bmWinPerc: Locator;
+  private readonly bmAvg: Locator;
+  private readonly dhGames: Locator;
+  private readonly dhWins: Locator;
+  private readonly dhWinPerc: Locator;
+  private readonly dhAvg: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -90,6 +94,10 @@ export class PlayerStatsPage {
     this.amWins = page.locator('#andy-marshall-wins');
     this.amWinPerc = page.locator('#andy-marshall-win-perc');
     this.amAvg = page.locator('#andy-marshall-avg');
+    this.bmGames = page.locator('#bernie-miller-games');
+    this.bmWins = page.locator('#bernie-miller-wins');
+    this.bmWinPerc = page.locator('#bernie-miller-win-perc');
+    this.bmAvg = page.locator('#bernie-miller-avg');
     this.dhGames = page.locator('#dave-hudson-games');
     this.dhWins = page.locator('#dave-hudson-wins');
     this.dhWinPerc = page.locator('#dave-hudson-win-perc');
@@ -142,7 +150,7 @@ export class PlayerStatsPage {
     await expect(this.resultsAccordionButton).toHaveText('RESULTS');
   }
 
-  async selectTeamStatsCheckbox() {
+  async selectAllTeamStatsCheckbox() {
     await this.teamCheckBox.check();
   }
 
@@ -215,6 +223,18 @@ export class PlayerStatsPage {
     expect(this.amWins).toContainText(wins);
     expect(this.amWinPerc).toContainText(winPerc);
     expect(this.amAvg).toContainText(avg);
+  }
+
+  playerStatsAreCorrectForBM(
+    games: string,
+    wins: string,
+    winPerc: string,
+    avg: string
+  ) {
+    expect(this.bmGames).toContainText(games);
+    expect(this.bmWins).toContainText(wins);
+    expect(this.bmWinPerc).toContainText(winPerc);
+    expect(this.bmAvg).toContainText(avg);
   }
 
   playerStatsAreCorrectForDH(

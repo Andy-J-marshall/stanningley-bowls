@@ -1,15 +1,15 @@
 import { expect, Locator, Page } from '@playwright/test';
 
 export class TeamRecordsPage {
-  readonly page: Page;
-  readonly overallWinPercRecord: Locator;
-  readonly overallWinPercRecordTeam: Locator;
-  readonly bestAggRecord: Locator;
-  readonly bestAggRecordTeam: Locator;
-  readonly bestAggConcededRecord: Locator;
-  readonly bestAggConcededRecordTeam: Locator;
-  readonly bestWinMargin: Locator;
-  readonly bestWinMarginTeam: Locator;
+  private readonly page: Page;
+  private readonly overallWinPercRecord: Locator;
+  private readonly overallWinPercRecordTeam: Locator;
+  private readonly bestAggRecord: Locator;
+  private readonly bestAggRecordTeam: Locator;
+  private readonly bestAggConcededRecord: Locator;
+  private readonly bestAggConcededRecordTeam: Locator;
+  private readonly bestWinMargin: Locator;
+  private readonly bestWinMarginTeam: Locator;
 
   constructor(page: Page) {
     this.page = page;

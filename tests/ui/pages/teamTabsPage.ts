@@ -1,15 +1,15 @@
 import { Locator, Page } from '@playwright/test';
 
 export class TeamTabsPage {
-  readonly page: Page;
-  readonly mondayTeamStats: Locator;
-  readonly mondayTeamRecords: Locator;
-  readonly tuesVetsTeamStats: Locator;
-  readonly tuesVetsTeamRecords: Locator;
-  readonly wedPairsTeamStats: Locator;
-  readonly wedPairsTeamRecords: Locator;
-  readonly thurVetsTeamStats: Locator;
-  readonly thurVetsTeamRecords: Locator;
+  private readonly page: Page;
+  private readonly mondayTeamStats: Locator;
+  private readonly mondayTeamRecords: Locator;
+  private readonly tuesVetsTeamStats: Locator;
+  private readonly tuesVetsTeamRecords: Locator;
+  private readonly wedPairsTeamStats: Locator;
+  private readonly wedPairsTeamRecords: Locator;
+  private readonly thurVetsTeamStats: Locator;
+  private readonly thurVetsTeamRecords: Locator;
 
   constructor(page: Page) {
     this.page = page;

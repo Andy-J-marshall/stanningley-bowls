@@ -4,40 +4,40 @@ import config from '../../../src/config';
 const teamName = config.teamNames.short;
 
 export class TeamStatsPage {
-  readonly page: Page;
-  readonly totalGamesValue: Locator;
-  readonly totalWinsValue: Locator;
-  readonly totalLossesValue: Locator;
-  readonly totalDrawsValue: Locator;
-  readonly totalHomeWinPercValue: Locator;
-  readonly totalAwayWinPercValue: Locator;
-  readonly totalCupWinPercValue: Locator;
-  readonly totalAggValue: Locator;
-  readonly totalOpponentAggValue: Locator;
+  private readonly page: Page;
+  private readonly totalGamesValue: Locator;
+  private readonly totalWinsValue: Locator;
+  private readonly totalLossesValue: Locator;
+  private readonly totalDrawsValue: Locator;
+  private readonly totalHomeWinPercValue: Locator;
+  private readonly totalAwayWinPercValue: Locator;
+  private readonly totalCupWinPercValue: Locator;
+  private readonly totalAggValue: Locator;
+  private readonly totalOpponentAggValue: Locator;
 
-  readonly mondayGamesValue: Locator;
-  readonly mondayWinsValue: Locator;
-  readonly mondayLossesValue: Locator;
-  readonly mondayDrawsValue: Locator;
-  readonly mondayHomeWinPercValue: Locator;
-  readonly mondayAwayWinPercValue: Locator;
-  readonly mondayCupWinPercValue: Locator;
-  readonly mondayAggValue: Locator;
-  readonly mondayOpponentAggValue: Locator;
-  readonly mondayLeaguePositionValue: Locator;
+  private readonly mondayGamesValue: Locator;
+  private readonly mondayWinsValue: Locator;
+  private readonly mondayLossesValue: Locator;
+  private readonly mondayDrawsValue: Locator;
+  private readonly mondayHomeWinPercValue: Locator;
+  private readonly mondayAwayWinPercValue: Locator;
+  private readonly mondayCupWinPercValue: Locator;
+  private readonly mondayAggValue: Locator;
+  private readonly mondayOpponentAggValue: Locator;
+  private readonly mondayLeaguePositionValue: Locator;
 
-  readonly tuesVetsGamesValue: Locator;
-  readonly tuesVetsWinsValue: Locator;
-  readonly tuesVetsLossesValue: Locator;
-  readonly tuesVetsDrawsValue: Locator;
-  readonly tuesVetsHomeWinPercValue: Locator;
-  readonly tuesVetsAwayWinPercValue: Locator;
-  readonly tuesVetsCupWinPercValue: Locator;
-  readonly tuesVetsAggValue: Locator;
-  readonly tuesVetsOpponentAggValue: Locator;
-  readonly tuesVetsLeaguePositionValue: Locator;
+  private readonly tuesVetsGamesValue: Locator;
+  private readonly tuesVetsWinsValue: Locator;
+  private readonly tuesVetsLossesValue: Locator;
+  private readonly tuesVetsDrawsValue: Locator;
+  private readonly tuesVetsHomeWinPercValue: Locator;
+  private readonly tuesVetsAwayWinPercValue: Locator;
+  private readonly tuesVetsCupWinPercValue: Locator;
+  private readonly tuesVetsAggValue: Locator;
+  private readonly tuesVetsOpponentAggValue: Locator;
+  private readonly tuesVetsLeaguePositionValue: Locator;
 
-  readonly wedPairsNoGamesPlayedMessage: Locator;
+  private readonly wedPairsNoGamesPlayedMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
