@@ -67,32 +67,43 @@ test('Can switch between team and all stats', async () => {
 });
 
 test('Summary of Jim Moorin stats for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('jim moorin');
   await playerStatsPage.selectAllTeamStatsCheckbox();
+
   await yearSelectPage.select2023Year();
-  playerStatsPage.playerStatsAreCorrectForJM('93', '53', '57%', '1.81');
+  playerStatsPage.playerStatsAreCorrectInTable('93', '53', '57%', '1.81');
+
   await yearSelectPage.select2022Year();
-  playerStatsPage.playerStatsAreCorrectForJM('96', '69', '72%', '5.35');
+  playerStatsPage.playerStatsAreCorrectInTable('96', '69', '72%', '5.35');
 });
 
 test('Summary of Andy Marshall stats for singles games for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('andy marshall');
   await playerStatsPage.selectAllTeamStatsCheckbox();
   await yearSelectPage.select2023Year();
+
   await playerStatsPage.selectSinglesOnlyCheckbox();
-  playerStatsPage.playerStatsAreCorrectForAM('37', '30', '81%', '5.57');
+  playerStatsPage.playerStatsAreCorrectInTable('37', '30', '81%', '5.57');
+
   await playerStatsPage.deselectSinglesOnlyCheckbox();
-  playerStatsPage.playerStatsAreCorrectForAM('52', '40', '77%', '5.33');
+  playerStatsPage.playerStatsAreCorrectInTable('52', '40', '77%', '5.33');
 });
 
 test('Summary of Dave Hudson stats since 2022 for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('dave hudson');
   await playerStatsPage.selectAllTeamStatsCheckbox();
+
   await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectForDH('70', '24', '34%', '-2.83');
+  playerStatsPage.playerStatsAreCorrectInTable('70', '24', '34%', '-2.83');
 });
 
 test('Summary of Bernie Miller stats since 2022 for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('bernie miller');
   await playerStatsPage.selectAllTeamStatsCheckbox();
+
   await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectForBM('2', '0', '0%', '-12');
+  playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
+
   await playerStatsPage.selectSinglesOnlyCheckbox();
-  playerStatsPage.playerStatsAreCorrectForBM('1', '0', '0%', '-11');
+  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
 });

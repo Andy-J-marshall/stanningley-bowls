@@ -52,28 +52,38 @@ for (const player of players) {
 }
 
 test('Summary of Steve Gardner stats for team are correct', async () => {
+  playerStatsPage.setPlayerToFind('steve gardner');
+
   await yearSelectPage.select2023Year();
-  playerStatsPage.playerStatsAreCorrectForSG('57', '44', '77%', '7.81');
+  playerStatsPage.playerStatsAreCorrectInTable('57', '44', '77%', '7.81');
+
   await yearSelectPage.select2022Year();
-  playerStatsPage.playerStatsAreCorrectForSG('43', '35', '81%', '7.86');
-  await playerStatsPage.selectSince2022Checkbox();
+  playerStatsPage.playerStatsAreCorrectInTable('43', '35', '81%', '7.86');
 });
 
 test('Summary of Andy Marshall stats for singles games for team are correct', async () => {
+  playerStatsPage.setPlayerToFind('andy marshall');
+
   await yearSelectPage.select2023Year();
-  playerStatsPage.playerStatsAreCorrectForAM('51', '40', '78%', '5.49');
+  playerStatsPage.playerStatsAreCorrectInTable('51', '40', '78%', '5.49');
+
   await playerStatsPage.selectSinglesOnlyCheckbox();
-  playerStatsPage.playerStatsAreCorrectForAM('36', '30', '83%', '5.81');
+  playerStatsPage.playerStatsAreCorrectInTable('36', '30', '83%', '5.81');
 });
 
 test('Summary of Dave Hudson stats since 2022 for team are correct', async () => {
+  playerStatsPage.setPlayerToFind('dave hudson');
+
   await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectForDH('14', '7', '50%', '-1.00');
+  playerStatsPage.playerStatsAreCorrectInTable('14', '7', '50%', '-1.00');
 });
 
 test('Summary of Bernie Miller stats since 2022 for team are correct', async () => {
+  playerStatsPage.setPlayerToFind('bernie miller');
+
   await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectForBM('2', '0', '0%', '-12');
+  playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
+
   await playerStatsPage.selectSinglesOnlyCheckbox();
-  playerStatsPage.playerStatsAreCorrectForBM('1', '0', '0%', '-11');
+  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
 });

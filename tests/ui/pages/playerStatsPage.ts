@@ -29,26 +29,11 @@ export class PlayerStatsPage {
   private readonly teamCheckBox: Locator;
   private readonly allYearCheckBox: Locator;
   private readonly singlesOnlyCheckBox: Locator;
-  private readonly sgGames: Locator;
-  private readonly sgWins: Locator;
-  private readonly sgWinPerc: Locator;
-  private readonly sgAvg: Locator;
-  private readonly jmGames: Locator;
-  private readonly jmWins: Locator;
-  private readonly jmWinPerc: Locator;
-  private readonly jmAvg: Locator;
-  private readonly amGames: Locator;
-  private readonly amWins: Locator;
-  private readonly amWinPerc: Locator;
-  private readonly amAvg: Locator;
-  private readonly bmGames: Locator;
-  private readonly bmWins: Locator;
-  private readonly bmWinPerc: Locator;
-  private readonly bmAvg: Locator;
-  private readonly dhGames: Locator;
-  private readonly dhWins: Locator;
-  private readonly dhWinPerc: Locator;
-  private readonly dhAvg: Locator;
+
+  private games: Locator;
+  private wins: Locator;
+  private winPerc: Locator;
+  private avg: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -82,26 +67,19 @@ export class PlayerStatsPage {
     this.allYearCheckBox = page.locator(
       ".form-check input[id='#all-years-select-checkbox']"
     );
-    this.sgGames = page.locator('#steve-gardner-games');
-    this.sgWins = page.locator('#steve-gardner-wins');
-    this.sgWinPerc = page.locator('#steve-gardner-win-perc');
-    this.sgAvg = page.locator('#steve-gardner-avg');
-    this.jmGames = page.locator('#jim-moorin-games');
-    this.jmWins = page.locator('#jim-moorin-wins');
-    this.jmWinPerc = page.locator('#jim-moorin-win-perc');
-    this.jmAvg = page.locator('#jim-moorin-avg');
-    this.amGames = page.locator('#andy-marshall-games');
-    this.amWins = page.locator('#andy-marshall-wins');
-    this.amWinPerc = page.locator('#andy-marshall-win-perc');
-    this.amAvg = page.locator('#andy-marshall-avg');
-    this.bmGames = page.locator('#bernie-miller-games');
-    this.bmWins = page.locator('#bernie-miller-wins');
-    this.bmWinPerc = page.locator('#bernie-miller-win-perc');
-    this.bmAvg = page.locator('#bernie-miller-avg');
-    this.dhGames = page.locator('#dave-hudson-games');
-    this.dhWins = page.locator('#dave-hudson-wins');
-    this.dhWinPerc = page.locator('#dave-hudson-win-perc');
-    this.dhAvg = page.locator('#dave-hudson-avg');
+    this.games = page.locator('#steve-gardner-games');
+    this.wins = page.locator('#steve-gardner-wins');
+    this.winPerc = page.locator('#steve-gardner-win-perc');
+    this.avg = page.locator('#steve-gardner-avg');
+  }
+
+  setPlayerToFind(name: string) {
+    const nameWithHyphen = name.trim().toLowerCase().replace(' ', '-');
+
+    this.games = this.page.locator(`#${nameWithHyphen}-games`);
+    this.wins = this.page.locator(`#${nameWithHyphen}-wins`);
+    this.winPerc = this.page.locator(`#${nameWithHyphen}-win-perc`);
+    this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
   }
 
   async goto() {
@@ -189,63 +167,15 @@ export class PlayerStatsPage {
     expect(playerStats.totalAverage).toBeLessThan(22);
   }
 
-  playerStatsAreCorrectForSG(
+  playerStatsAreCorrectInTable(
     games: string,
     wins: string,
     winPerc: string,
     avg: string
   ) {
-    expect(this.sgGames).toContainText(games);
-    expect(this.sgWins).toContainText(wins);
-    expect(this.sgWinPerc).toContainText(winPerc);
-    expect(this.sgAvg).toContainText(avg);
-  }
-
-  playerStatsAreCorrectForJM(
-    games: string,
-    wins: string,
-    winPerc: string,
-    avg: string
-  ) {
-    expect(this.jmGames).toContainText(games);
-    expect(this.jmWins).toContainText(wins);
-    expect(this.jmWinPerc).toContainText(winPerc);
-    expect(this.jmAvg).toContainText(avg);
-  }
-
-  playerStatsAreCorrectForAM(
-    games: string,
-    wins: string,
-    winPerc: string,
-    avg: string
-  ) {
-    expect(this.amGames).toContainText(games);
-    expect(this.amWins).toContainText(wins);
-    expect(this.amWinPerc).toContainText(winPerc);
-    expect(this.amAvg).toContainText(avg);
-  }
-
-  playerStatsAreCorrectForBM(
-    games: string,
-    wins: string,
-    winPerc: string,
-    avg: string
-  ) {
-    expect(this.bmGames).toContainText(games);
-    expect(this.bmWins).toContainText(wins);
-    expect(this.bmWinPerc).toContainText(winPerc);
-    expect(this.bmAvg).toContainText(avg);
-  }
-
-  playerStatsAreCorrectForDH(
-    games: string,
-    wins: string,
-    winPerc: string,
-    avg: string
-  ) {
-    expect(this.dhGames).toContainText(games);
-    expect(this.dhWins).toContainText(wins);
-    expect(this.dhWinPerc).toContainText(winPerc);
-    expect(this.dhAvg).toContainText(avg);
+    expect(this.games).toContainText(games);
+    expect(this.wins).toContainText(wins);
+    expect(this.winPerc).toContainText(winPerc);
+    expect(this.avg).toContainText(avg);
   }
 }
