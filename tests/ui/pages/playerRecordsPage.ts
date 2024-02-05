@@ -13,7 +13,6 @@ export class PlayerRecordsPage {
   private readonly overallWinPercRecordPlayer: Locator;
   private readonly overallAverageRecord: Locator;
   private readonly overallAverageRecordPlayer: Locator;
-  private readonly overallOpponentAggValue: Locator;
 
   private readonly tuesVetsWinRecord: Locator;
   private readonly tuesVetsWinsRecordPlayer: Locator;
@@ -21,7 +20,6 @@ export class PlayerRecordsPage {
   private readonly tuesVetsWinPercRecordPlayer: Locator;
   private readonly tuesVetsAverageRecord: Locator;
   private readonly tuesVetsAverageRecordPlayer: Locator;
-  private readonly tuesVetsOpponentAggValue: Locator;
 
   private readonly thurVetsWinRecord: Locator;
   private readonly thurVetsWinsRecordPlayer: Locator;
@@ -29,7 +27,6 @@ export class PlayerRecordsPage {
   private readonly thurVetsWinPercRecordPlayer: Locator;
   private readonly thurVetsAverageRecord: Locator;
   private readonly thurVetsAverageRecordPlayer: Locator;
-  private readonly thurVetsOpponentAggValue: Locator;
 
   private readonly wedPairsNoGamesPlayedMessage: Locator;
 
