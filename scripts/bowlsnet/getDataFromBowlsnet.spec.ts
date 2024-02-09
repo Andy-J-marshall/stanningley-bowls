@@ -27,6 +27,10 @@ const teams = [
     url: '/Leeds-Wed',
   },
   {
+    day: 'Wednesday Pairs AireWharfe',
+    url: '/AW-WedPairs',
+  },
+  {
     day: 'Thursday Vets Leeds',
     url: '/LeedsParkVets-Thu',
   },
@@ -35,20 +39,24 @@ const teams = [
     url: '/Leeds-Sat',
   },
   {
-    day: 'Wednesday Pairs AireWharfe',
-    url: '/AW-WedPairs',
+    day: 'Tuesday Mirfield',
+    url: '/Mirfield',
+  },
+  {
+    day: 'Wednesday Spen Valley',
+    url: '/WestRiding',
   },
   {
     day: 'Monday AireDale & Wharfedale',
     url: '/AW-Mon',
   },
   {
-    day: 'Wednesday AireDale & Wharfedale',
-    url: '/AW-WedSingles',
-  },
-  {
     day: 'Tuesday AireDale & Wharfedale',
     url: '/AW-Vets',
+  },
+  {
+    day: 'Wednesday AireDale & Wharfedale',
+    url: '/AW-WedSingles',
   },
   {
     day: 'Monday Bradford',
@@ -59,20 +67,12 @@ const teams = [
     url: '/Bradford-HalfHol',
   },
   {
-    day: 'Saturday Bradford',
-    url: '/Bradford-Sat',
-  },
-  {
-    day: 'Wednesday Spen Valley',
-    url: '/WestRiding',
-  },
-  {
-    day: 'Tuesday Mirfield',
-    url: '/Mirfield',
-  },
-  {
     day: 'Thursday Vets Bradford',
     url: '/BradfordVets',
+  },
+  {
+    day: 'Saturday Bradford',
+    url: '/Bradford-Sat',
   },
 ];
 
@@ -106,7 +106,7 @@ for (const team of teams) {
       .click();
     await page
       .frameLocator('#x-Dframe')
-      .locator('#x-DlgI .dlgBtn[onclick*="dAct(4)"]')
+      .locator('#x-DlgI .dlgBtn[onclick*="dAct(5)"]')
       .click();
     await page
       .frameLocator('#x-Pframe')
