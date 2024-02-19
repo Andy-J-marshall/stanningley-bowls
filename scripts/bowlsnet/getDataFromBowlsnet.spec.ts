@@ -68,7 +68,7 @@ const teams = [
   },
   {
     day: 'Thursday Vets Bradford',
-    url: '/BradfordVets',
+    url: '/Bradford-Vets',
   },
   {
     day: 'Saturday Bradford',
