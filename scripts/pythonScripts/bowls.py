@@ -71,6 +71,7 @@ for team in teamDays:
     sheet = wb[league]
     print('Processing ' + team)
 
+    #### TEAM STATS ####
     # Find rows in spreadsheet for team games
     startingRow = 0
     startingRowIndex = 1
@@ -262,6 +263,8 @@ for team in teamDays:
         'results': results
     }
     allTeamResults.append(teamResults)
+    
+    #### PLAYER STATS ####
 
     # Find rows in spreadsheet for players' games
     homePlayerIndex = 1

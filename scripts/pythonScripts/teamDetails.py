@@ -14,12 +14,13 @@ teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
 
 # Every player (lowercase)
 players = [
-    'john armitage', 'mario biancardo', 'shirley biancardo', 'paul bowes', 'clifford brogie',
-    'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller',
-    'kevin waller', 'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall',
-    'donald shaw', 'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard',
-    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'carole mcdermott', 'robin mcdermott',
-    'derek wilson', 'david eaton', 'michael haigh', 'peter crowther', 'laila packer'
+    'john armitage', 'paul bowes', 'clifford brogie', 'harvey leonard', 'rob packer', 'neil porter'
+    'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller', 'phil sutcliffe',
+    'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall', 'derek wilson', 'donald shaw',
+    'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard', 'martin fulton',
+    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tierney',
+    'david eaton', 'mary spears', 'peter crowther', 'laila packer', 'richard hodgson', 'jim swailes',
+    'michael haigh', 'kevin waller'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -33,7 +34,7 @@ traitorPlayers = {
     'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
     'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw']
+    'Saturday Leeds': ['clifford brogie', 'cliff brogie']
 }
 
 transferredPlayers = {
