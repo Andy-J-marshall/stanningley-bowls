@@ -29,22 +29,22 @@ duplicateTeamMemberNames = ['duncan mc phail',
 
 traitorPlayers = {
     'Monday Combined Leeds': [],
-    'Tuesday Vets Leeds': ['donald shaw', 'don shaw'],
+    'Tuesday Vets Leeds': [],
     'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
+    'Wednesday Half Holiday Leeds': ['clifford brogie'],
     'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['clifford brogie', 'cliff brogie']
+    'Saturday Leeds': ['clifford brogie']
 }
 
 transferredPlayers = {
-    'Monday Combined Leeds': [],
-    'Tuesday Vets Leeds': [],
-    'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': [],
-    'Wednesday Pairs AireWharfe': [],
-    'Thursday Vets Leeds': [],
-    'Saturday Leeds': []
+    'Monday Combined Leeds': {},
+    'Tuesday Vets Leeds': {},
+    'Tuesday Leeds': {},
+    'Wednesday Half Holiday Leeds': {},
+    'Wednesday Pairs AireWharfe': {},
+    'Thursday Vets Leeds': {},
+    'Saturday Leeds': {}
 }
 
 clubCupWinners = {
