@@ -18,9 +18,9 @@ players = [
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller', 'phil sutcliffe',
     'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall', 'derek wilson', 'donald shaw',
     'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard', 'martin fulton',
-    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tierney',
+    'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tiernan',
     'david eaton', 'mary spears', 'peter crowther', 'laila packer', 'richard hodgson', 'jim swailes',
-    'michael haigh', 'kevin waller'
+    'michael haigh', 'kevin waller', 'iliya marhov'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -29,22 +29,22 @@ duplicateTeamMemberNames = ['duncan mc phail',
 
 traitorPlayers = {
     'Monday Combined Leeds': [],
-    'Tuesday Vets Leeds': ['donald shaw', 'don shaw'],
+    'Tuesday Vets Leeds': [],
     'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': ['clifford brogie', 'cliff brogie', 'donald shaw', 'don shaw'],
+    'Wednesday Half Holiday Leeds': ['clifford brogie'],
     'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['clifford brogie', 'cliff brogie']
+    'Saturday Leeds': ['clifford brogie']
 }
 
 transferredPlayers = {
-    'Monday Combined Leeds': [],
-    'Tuesday Vets Leeds': [],
-    'Tuesday Leeds': [],
-    'Wednesday Half Holiday Leeds': [],
-    'Wednesday Pairs AireWharfe': [],
-    'Thursday Vets Leeds': [],
-    'Saturday Leeds': []
+    'Monday Combined Leeds': {},
+    'Tuesday Vets Leeds': {},
+    'Tuesday Leeds': {},
+    'Wednesday Half Holiday Leeds': {},
+    'Wednesday Pairs AireWharfe': {},
+    'Thursday Vets Leeds': {},
+    'Saturday Leeds': {}
 }
 
 clubCupWinners = {

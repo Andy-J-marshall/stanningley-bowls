@@ -185,7 +185,6 @@ for team in teamDays:
                 for formattedGameDate in gameDates:
                     if (formattedGameDate < transferredPlayers[league]["date"]):
                         playerTransferred = transferredPlayers[league]["player"]
-                        lastResultRowsForTransferredPlayer[league][playerTransferred] = playerTransferred
                         lastResultRowsForTransferredPlayer[league][playerTransferred] = row
 
         # Home games
@@ -292,10 +291,11 @@ for team in teamDays:
                 includeHomePlayer = True
 
             # Checks if player plays for team on selected day
-            if homePlayerName.lower() not in traitorPlayers[league] and includeHomePlayer is True:
+            homePlayerName = formatName(homePlayerName)
+            if homePlayerName not in traitorPlayers[league] and includeHomePlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
-                if homePlayerName.lower() in lastResultRowsForTransferredPlayer[league]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][homePlayerName.lower()]
+                if homePlayerName in lastResultRowsForTransferredPlayer[league]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][homePlayerName]
                     if homePlayerIndex <= lastGameBeforeTransfer:
                         homePlayerRow.append(homePlayerIndex)
                 else:
@@ -327,10 +327,11 @@ for team in teamDays:
                 includeAwayPlayer = True
 
             # Checks if player plays for team on selected day
-            if awayPlayerName.lower() not in traitorPlayers[league] and includeAwayPlayer is True:
+            awayPlayerName = formatName(awayPlayerName)
+            if awayPlayerName not in traitorPlayers[league] and includeAwayPlayer is True:
                 # Only adds result to list if they haven't been transferred to another team
-                if awayPlayerName.lower() in lastResultRowsForTransferredPlayer[league]:
-                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][awayPlayerName.lower()]
+                if awayPlayerName in lastResultRowsForTransferredPlayer[league]:
+                    lastGameBeforeTransfer = lastResultRowsForTransferredPlayer[league][awayPlayerName]
                     if awayPlayerIndex <= lastGameBeforeTransfer:
                         awayPlayerRow.append(awayPlayerIndex)
                 else:
