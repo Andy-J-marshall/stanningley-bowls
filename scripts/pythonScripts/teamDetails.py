@@ -14,7 +14,7 @@ teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
 
 # Every player (lowercase)
 players = [
-    'john armitage', 'paul bowes', 'clifford brogie', 'harvey leonard', 'rob packer', 'neil porter'
+    'john armitage', 'paul bowes', 'clifford brogie', 'harvey leonard', 'rob packer', 'neil porter',
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller', 'phil sutcliffe',
     'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall', 'derek wilson', 'donald shaw',
     'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard', 'martin fulton',
