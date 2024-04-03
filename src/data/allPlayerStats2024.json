@@ -1,44 +1,52 @@
 {
     "playerResults": {
         "alison": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 23,
+            "totalAggAgainst": 26,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 23,
+            "totalPairsAggAgainst": 26,
+            "totalHomeAgg": 23,
+            "totalHomeAggAgainst": 26,
+            "totalPairsHomeAgg": 23,
+            "totalPairsHomeAggAgainst": 26,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
-            "pairHomeLosses": 0,
+            "pairHomeLosses": 1,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "derek wilson"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": []
+            "losingPairsPartners": [
+                "derek wilson"
+            ],
+            "results": [
+                "alison & derek wilson 23 - 26 ken garrett & sue pagdin"
+            ]
         },
         "alyssa randell": {
             "totalAgg": 0,
@@ -205,44 +213,52 @@
             "results": []
         },
         "colin haque": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 26,
+            "totalAggAgainst": 11,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 26,
+            "totalPairsAggAgainst": 11,
+            "totalHomeAgg": 26,
+            "totalHomeAggAgainst": 11,
+            "totalPairsHomeAgg": 26,
+            "totalPairsHomeAggAgainst": 11,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
-            "pairWins": 0,
+            "pairWins": 1,
             "pairLosses": 0,
-            "pairHomeWins": 0,
+            "pairHomeWins": 1,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "ken green"
+            ],
+            "winningPairsPartners": [
+                "ken green"
+            ],
             "losingPairsPartners": [],
-            "results": []
+            "results": [
+                "colin haque & ken green 26 - 11 john auty & barbara varley"
+            ]
         },
         "craig clarkson": {
             "totalAgg": 0,
@@ -329,44 +345,52 @@
             ]
         },
         "derek wilson": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 23,
+            "totalAggAgainst": 26,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 23,
+            "totalPairsAggAgainst": 26,
+            "totalHomeAgg": 23,
+            "totalHomeAggAgainst": 26,
+            "totalPairsHomeAgg": 23,
+            "totalPairsHomeAggAgainst": 26,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
-            "pairHomeLosses": 0,
+            "pairHomeLosses": 1,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "alison"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": []
+            "losingPairsPartners": [
+                "alison"
+            ],
+            "results": [
+                "derek wilson & alison 23 - 26 sue pagdin & ken garrett"
+            ]
         },
         "donald shaw": {
             "totalAgg": 0,
@@ -453,44 +477,52 @@
             ]
         },
         "harvey leonard": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 26,
+            "totalAggAgainst": 3,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 26,
+            "totalPairsAggAgainst": 3,
+            "totalHomeAgg": 26,
+            "totalHomeAggAgainst": 3,
+            "totalPairsHomeAgg": 26,
+            "totalPairsHomeAggAgainst": 3,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
-            "pairWins": 0,
+            "pairWins": 1,
             "pairLosses": 0,
-            "pairHomeWins": 0,
+            "pairHomeWins": 1,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "stuart potter"
+            ],
+            "winningPairsPartners": [
+                "stuart potter"
+            ],
             "losingPairsPartners": [],
-            "results": []
+            "results": [
+                "harvey leonard & stuart potter 26 - 3 christina levy & jim mcquade"
+            ]
         },
         "iliya marhov": {
             "totalAgg": 0,
@@ -736,7 +768,7 @@
             "losingPairsPartners": [],
             "results": []
         },
-        "ken green": {
+        "karl chapman": {
             "totalAgg": 0,
             "totalAggAgainst": 0,
             "availableAgg": 0,
@@ -775,6 +807,54 @@
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": []
+        },
+        "ken green": {
+            "totalAgg": 26,
+            "totalAggAgainst": 11,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 26,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 26,
+            "totalPairsAggAgainst": 11,
+            "totalHomeAgg": 26,
+            "totalHomeAggAgainst": 11,
+            "totalPairsHomeAgg": 26,
+            "totalPairsHomeAggAgainst": 11,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 1,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 1,
+            "pairLosses": 0,
+            "pairHomeWins": 1,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "colin haque"
+            ],
+            "winningPairsPartners": [
+                "colin haque"
+            ],
+            "losingPairsPartners": [],
+            "results": [
+                "ken green & colin haque 26 - 11 barbara varley & john auty"
+            ]
         },
         "kevin waller": {
             "totalAgg": 0,
@@ -817,44 +897,52 @@
             "results": []
         },
         "laila packer": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 11,
+            "totalAggAgainst": 26,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 11,
+            "totalPairsAggAgainst": 26,
+            "totalHomeAgg": 11,
+            "totalHomeAggAgainst": 26,
+            "totalPairsHomeAgg": 11,
+            "totalPairsHomeAggAgainst": 26,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
-            "pairHomeLosses": 0,
+            "pairHomeLosses": 1,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "vanessa lancaster"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": []
+            "losingPairsPartners": [
+                "vanessa lancaster"
+            ],
+            "results": [
+                "laila packer & vanessa lancaster 11 - 26 alan wittrick & wendy allison"
+            ]
         },
         "malvin miller": {
             "totalAgg": 0,
@@ -1517,44 +1605,52 @@
             ]
         },
         "stuart potter": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 26,
+            "totalAggAgainst": 3,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 26,
+            "totalPairsAggAgainst": 3,
+            "totalHomeAgg": 26,
+            "totalHomeAggAgainst": 3,
+            "totalPairsHomeAgg": 26,
+            "totalPairsHomeAggAgainst": 3,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
-            "pairWins": 0,
+            "pairWins": 1,
             "pairLosses": 0,
-            "pairHomeWins": 0,
+            "pairHomeWins": 1,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "harvey leonard"
+            ],
+            "winningPairsPartners": [
+                "harvey leonard"
+            ],
             "losingPairsPartners": [],
-            "results": []
+            "results": [
+                "stuart potter & harvey leonard 26 - 3 jim mcquade & christina levy"
+            ]
         },
         "tracey marshall": {
             "totalAgg": 0,
@@ -1597,46 +1693,54 @@
             "results": []
         },
         "vanessa lancaster": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "totalAgg": 11,
+            "totalAggAgainst": 26,
+            "availableAgg": 26,
+            "availablePairsAgg": 26,
+            "availableHomeAgg": 26,
             "availableAwayAgg": 0,
-            "availablePairsHomeAgg": 0,
+            "availablePairsHomeAgg": 26,
             "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
-            "totalPairsHomeAgg": 0,
-            "totalPairsHomeAggAgainst": 0,
+            "totalPairsAgg": 11,
+            "totalPairsAggAgainst": 26,
+            "totalHomeAgg": 11,
+            "totalHomeAggAgainst": 26,
+            "totalPairsHomeAgg": 11,
+            "totalPairsHomeAggAgainst": 26,
             "totalAwayAgg": 0,
             "totalAwayAggAgainst": 0,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 0,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
-            "pairHomeLosses": 0,
+            "pairHomeLosses": 1,
             "pairAwayWins": 0,
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe (Stanningley)"
+            ],
+            "pairsPartners": [
+                "laila packer"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": []
+            "losingPairsPartners": [
+                "laila packer"
+            ],
+            "results": [
+                "vanessa lancaster & laila packer 11 - 26 wendy allison & alan wittrick"
+            ]
         }
     },
-    "lastUpdated": "02/04/2024",
+    "lastUpdated": "03/04/2024",
     "statsYear": "2024"
 }

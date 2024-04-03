@@ -20,7 +20,7 @@ players = [
     'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard', 'martin fulton',
     'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tiernan',
     'david eaton', 'mary spears', 'peter crowther', 'laila packer', 'richard hodgson', 'jim swailes',
-    'michael haigh', 'kevin waller', 'iliya marhov', 'nicola bona'
+    'michael haigh', 'kevin waller', 'iliya marhov', 'nicola bona', 'karl chapman'
 ]
 
 # Players with different spellings of name (lowercase)

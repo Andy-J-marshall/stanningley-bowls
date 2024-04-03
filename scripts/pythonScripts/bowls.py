@@ -139,10 +139,14 @@ for team in teamDays:
 
     for row in range(1, sheet.max_row + 1):
         # Leeds half holiday team only has 6 players
+        rowsDownIntModifier = 0
+        rowsUpIntModifier = 0
         if 'half holiday' in team.lower():
             rowsDownIntModifier = 2
-        else:
-            rowsDownIntModifier = 0
+
+        # AireWharfe pairs league display scores differently
+        if 'pairs airewharfe' in team.lower():
+            rowsUpIntModifier = 1
 
         # Check if cup game
         cupGame = False
@@ -154,21 +158,23 @@ for team in teamDays:
             cupGame = True
 
             # To account for handicap row in cup games
+            # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
             homeTeamName = sheet[homeTeamNameCol +
                                  str(row + 9 - rowsDownIntModifier)].value
             if type(homeTeamName) is str and 'handicap' in homeTeamName.lower():
                 rowsDownIntModifier = rowsDownIntModifier - 1
 
             # Save the scores
+            # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
             homeScore = sheet[homeTeamScoreCol +
                               str(row + 9 - rowsDownIntModifier)].value
             awayScore = sheet[awayTeamScoreCol +
                               str(row + 9 - rowsDownIntModifier)].value
         else:
             homeScore = sheet[homeTeamScoreCol +
-                              str(row + 10 - rowsDownIntModifier)].value
+                              str(row + 10 - rowsDownIntModifier + rowsUpIntModifier)].value
             awayScore = sheet[awayTeamScoreCol +
-                              str(row + 10 - rowsDownIntModifier)].value
+                              str(row + 10 - rowsDownIntModifier + rowsUpIntModifier)].value
 
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
