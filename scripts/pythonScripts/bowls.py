@@ -138,15 +138,17 @@ for team in teamDays:
     totalGamesPlayed = 0
 
     for row in range(1, sheet.max_row + 1):
+        rowsDownAdjustmentInt = 0
+        rowsUpAdjustmentInt = 0
+        totalNumberOfRowsAdjustmentInt = 0
+
         # Leeds half holiday team only has 6 players
-        rowsDownIntModifier = 0
-        rowsUpIntModifier = 0
         if 'half holiday' in team.lower():
-            rowsDownIntModifier = 2
+            rowsDownAdjustmentInt = 2
 
         # AireWharfe pairs league display scores differently
         if 'pairs airewharfe' in team.lower():
-            rowsUpIntModifier = 1
+            rowsUpAdjustmentInt = 1
 
         # Check if cup game
         cupGame = False
@@ -159,22 +161,20 @@ for team in teamDays:
 
             # To account for handicap row in cup games
             # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
-            homeTeamName = sheet[homeTeamNameCol +
-                                 str(row + 9 - rowsDownIntModifier)].value
-            if type(homeTeamName) is str and 'handicap' in homeTeamName.lower():
-                rowsDownIntModifier = rowsDownIntModifier - 1
+            checkForTeamHandicap = sheet[homeTeamNameCol +
+                                 str(row + 9 - rowsDownAdjustmentInt)].value
+            if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
+                rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
 
-            # Save the scores
             # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
-            homeScore = sheet[homeTeamScoreCol +
-                              str(row + 9 - rowsDownIntModifier)].value
-            awayScore = sheet[awayTeamScoreCol +
-                              str(row + 9 - rowsDownIntModifier)].value
+            # Find the number of rows down for the team scores
+            totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
         else:
-            homeScore = sheet[homeTeamScoreCol +
-                              str(row + 10 - rowsDownIntModifier + rowsUpIntModifier)].value
-            awayScore = sheet[awayTeamScoreCol +
-                              str(row + 10 - rowsDownIntModifier + rowsUpIntModifier)].value
+            totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+        
+        # Save the scores
+        homeScore = sheet[homeTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
+        awayScore = sheet[awayTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
 
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
@@ -215,10 +215,10 @@ for team in teamDays:
                     homeDraws = homeDraws + 1
                 teamAgg = teamAgg + \
                     sheet[homeAggCol +
-                          str(row + 9 - rowsDownIntModifier)].value
+                          str(row + 9 - rowsDownAdjustmentInt)].value
                 opponentAgg = opponentAgg + \
                     sheet[awayAggCol +
-                          str(row + 9 - rowsDownIntModifier)].value
+                          str(row + 9 - rowsDownAdjustmentInt)].value
 
         # Away games
         if row in awayRow:
@@ -242,10 +242,10 @@ for team in teamDays:
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + \
                     sheet[homeAggCol +
-                          str(row + 9 - rowsDownIntModifier)].value
+                          str(row + 9 - rowsDownAdjustmentInt)].value
                 teamAgg = teamAgg + \
                     sheet[awayAggCol +
-                          str(row + 9 - rowsDownIntModifier)].value
+                          str(row + 9 - rowsDownAdjustmentInt)].value
 
     # Store team result data
     teamResults = {
