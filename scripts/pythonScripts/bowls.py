@@ -151,9 +151,9 @@ for team in teamDays:
             rowsUpAdjustmentInt = 1
 
         # Check if cup game
+        # Cup games are based on aggregate, not score, and are played on neutral greens
         cupGame = False
         cupCell = ''
-        # Cup games are based on aggregate, not score, and are played on neutral greens
         if row > 2:
             cupCell = sheet[homeTeamNameCol + str(row - 1)].value
         if (cupCell and type(cupCell) is str) and cupCell.lower() in cupText:
