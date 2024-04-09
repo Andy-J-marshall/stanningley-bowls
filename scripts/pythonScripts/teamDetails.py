@@ -28,13 +28,13 @@ duplicateTeamMemberNames = ['duncan mc phail',
                             'stuart watson', 'andrew marshall', 'cliff brogie']
 
 traitorPlayers = {
-    'Monday Combined Leeds': [],
+    'Monday Combined Leeds': ['neil porter'],
     'Tuesday Vets Leeds': [],
-    'Tuesday Leeds': [],
+    'Tuesday Leeds': ['neil porter'],
     'Wednesday Half Holiday Leeds': ['clifford brogie'],
     'Wednesday Pairs AireWharfe': [],
-    'Thursday Vets Leeds': [],
-    'Saturday Leeds': ['clifford brogie']
+    'Thursday Vets Leeds': ['neil porter'],
+    'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
 
 transferredPlayers = {
