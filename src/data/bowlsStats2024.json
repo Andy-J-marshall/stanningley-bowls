@@ -84,12 +84,12 @@
             }
         },
         "alyssa randell": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
+            "totalAgg": 7,
+            "totalAggAgainst": 21,
+            "availableAgg": 21,
             "availablePairsAgg": 0,
             "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -98,14 +98,14 @@
             "totalHomeAggAgainst": 0,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
+            "totalAwayAgg": 7,
+            "totalAwayAggAgainst": 21,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
             "homeLosses": 0,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
@@ -116,16 +116,20 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Monday Combined Leeds"
+            ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "results": [],
+            "results": [
+                "alyssa randell 7 - 21 mick goodhall"
+            ],
             "monday combined leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -14
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -159,12 +163,12 @@
             }
         },
         "andy marshall": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
+            "totalAgg": 21,
+            "totalAggAgainst": 20,
+            "availableAgg": 21,
             "availablePairsAgg": 0,
             "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -173,13 +177,13 @@
             "totalHomeAggAgainst": 0,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
+            "totalAwayAgg": 21,
+            "totalAwayAggAgainst": 20,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
             "homeLosses": 0,
-            "awayWins": 0,
+            "awayWins": 1,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
@@ -191,16 +195,20 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Monday Combined Leeds"
+            ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "results": [],
+            "results": [
+                "andy marshall 21 - 20 tyler patrick"
+            ],
             "monday combined leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 1
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -315,48 +323,56 @@
             }
         },
         "clifford brogie": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
+            "totalAgg": 3,
+            "totalAggAgainst": 21,
+            "availableAgg": 21,
+            "availablePairsAgg": 21,
             "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
+            "availablePairsAwayAgg": 21,
+            "totalPairsAgg": 3,
+            "totalPairsAggAgainst": 21,
             "totalHomeAgg": 0,
             "totalHomeAggAgainst": 0,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 3,
+            "totalAwayAggAgainst": 21,
+            "totalPairsAwayAgg": 3,
+            "totalPairsAwayAggAgainst": 21,
             "homeWins": 0,
             "homeLosses": 0,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Monday Combined Leeds"
+            ],
+            "pairsPartners": [
+                "craig clarkson"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": [],
+            "losingPairsPartners": [
+                "craig clarkson"
+            ],
+            "results": [
+                "clifford brogie & craig clarkson 3 - 21 ellis owen & claire robinson"
+            ],
             "monday combined leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -18
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -473,48 +489,56 @@
             }
         },
         "craig clarkson": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
-            "availablePairsAgg": 0,
+            "totalAgg": 3,
+            "totalAggAgainst": 21,
+            "availableAgg": 21,
+            "availablePairsAgg": 21,
             "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 0,
-            "totalPairsAggAgainst": 0,
+            "availablePairsAwayAgg": 21,
+            "totalPairsAgg": 3,
+            "totalPairsAggAgainst": 21,
             "totalHomeAgg": 0,
             "totalHomeAggAgainst": 0,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 3,
+            "totalAwayAggAgainst": 21,
+            "totalPairsAwayAgg": 3,
+            "totalPairsAwayAggAgainst": 21,
             "homeWins": 0,
             "homeLosses": 0,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 0,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
-            "pairsPartners": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Monday Combined Leeds"
+            ],
+            "pairsPartners": [
+                "clifford brogie"
+            ],
             "winningPairsPartners": [],
-            "losingPairsPartners": [],
-            "results": [],
+            "losingPairsPartners": [
+                "clifford brogie"
+            ],
+            "results": [
+                "craig clarkson & clifford brogie 3 - 21 claire robinson & ellis owen"
+            ],
             "monday combined leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -18
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -866,56 +890,61 @@
             }
         },
         "harvey leonard": {
-            "totalAgg": 26,
-            "totalAggAgainst": 3,
-            "availableAgg": 26,
-            "availablePairsAgg": 26,
+            "totalAgg": 34,
+            "totalAggAgainst": 24,
+            "availableAgg": 47,
+            "availablePairsAgg": 47,
             "availableHomeAgg": 26,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 26,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 26,
-            "totalPairsAggAgainst": 3,
+            "availablePairsAwayAgg": 21,
+            "totalPairsAgg": 34,
+            "totalPairsAggAgainst": 24,
             "totalHomeAgg": 26,
             "totalHomeAggAgainst": 3,
             "totalPairsHomeAgg": 26,
             "totalPairsHomeAggAgainst": 3,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 8,
+            "totalAwayAggAgainst": 21,
+            "totalPairsAwayAgg": 8,
+            "totalPairsAwayAggAgainst": 21,
             "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 1,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 1,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 1,
+            "totalGamesPlayed": 2,
             "dayPlayed": [
+                "Monday Combined Leeds",
                 "Wednesday Pairs AireWharfe"
             ],
             "pairsPartners": [
+                "stuart potter",
                 "stuart potter"
             ],
             "winningPairsPartners": [
                 "stuart potter"
             ],
-            "losingPairsPartners": [],
+            "losingPairsPartners": [
+                "stuart potter"
+            ],
             "results": [
+                "harvey leonard & stuart potter 8 - 21 nicola pearson & gary dennison",
                 "harvey leonard & stuart potter 26 - 3 christina levy & jim mcquade"
             ],
             "monday combined leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -13
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -1255,12 +1284,12 @@
             }
         },
         "joey broadbent": {
-            "totalAgg": 0,
-            "totalAggAgainst": 0,
-            "availableAgg": 0,
+            "totalAgg": 21,
+            "totalAggAgainst": 14,
+            "availableAgg": 21,
             "availablePairsAgg": 0,
             "availableHomeAgg": 0,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -1269,13 +1298,13 @@
             "totalHomeAggAgainst": 0,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
+            "totalAwayAgg": 21,
+            "totalAwayAggAgainst": 14,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
             "homeLosses": 0,
-            "awayWins": 0,
+            "awayWins": 1,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
@@ -1287,16 +1316,20 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 0,
-            "dayPlayed": [],
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Monday Combined Leeds"
+            ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
-            "results": [],
+            "results": [
+                "joey broadbent 21 - 14 michael hill"
+            ],
             "monday combined leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 7
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -2181,12 +2214,12 @@
             }
         },
         "paul bowes": {
-            "totalAgg": 42,
-            "totalAggAgainst": 6,
-            "availableAgg": 42,
+            "totalAgg": 63,
+            "totalAggAgainst": 26,
+            "availableAgg": 63,
             "availablePairsAgg": 0,
             "availableHomeAgg": 21,
-            "availableAwayAgg": 21,
+            "availableAwayAgg": 42,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -2195,13 +2228,13 @@
             "totalHomeAggAgainst": 4,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 21,
-            "totalAwayAggAgainst": 2,
+            "totalAwayAgg": 42,
+            "totalAwayAggAgainst": 22,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 1,
             "homeLosses": 0,
-            "awayWins": 1,
+            "awayWins": 2,
             "awayLosses": 0,
             "cupWins": 0,
             "cupLosses": 0,
@@ -2213,8 +2246,9 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
+                "Monday Combined Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds"
             ],
@@ -2222,13 +2256,14 @@
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
+                "paul bowes 21 - 20 peter burrows",
                 "paul bowes 21 - 2 david rawson",
                 "paul bowes 21 - 4 lillian pickles"
             ],
             "monday combined leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 1
             },
             "tuesday vets leeds": {
                 "games": 2,
@@ -2949,56 +2984,61 @@
             }
         },
         "stuart potter": {
-            "totalAgg": 26,
-            "totalAggAgainst": 3,
-            "availableAgg": 26,
-            "availablePairsAgg": 26,
+            "totalAgg": 34,
+            "totalAggAgainst": 24,
+            "availableAgg": 47,
+            "availablePairsAgg": 47,
             "availableHomeAgg": 26,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 21,
             "availablePairsHomeAgg": 26,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 26,
-            "totalPairsAggAgainst": 3,
+            "availablePairsAwayAgg": 21,
+            "totalPairsAgg": 34,
+            "totalPairsAggAgainst": 24,
             "totalHomeAgg": 26,
             "totalHomeAggAgainst": 3,
             "totalPairsHomeAgg": 26,
             "totalPairsHomeAggAgainst": 3,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 8,
+            "totalAwayAggAgainst": 21,
+            "totalPairsAwayAgg": 8,
+            "totalPairsAwayAggAgainst": 21,
             "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 1,
-            "pairLosses": 0,
+            "pairLosses": 1,
             "pairHomeWins": 1,
             "pairHomeLosses": 0,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 1,
+            "totalGamesPlayed": 2,
             "dayPlayed": [
+                "Monday Combined Leeds",
                 "Wednesday Pairs AireWharfe"
             ],
             "pairsPartners": [
+                "harvey leonard",
                 "harvey leonard"
             ],
             "winningPairsPartners": [
                 "harvey leonard"
             ],
-            "losingPairsPartners": [],
+            "losingPairsPartners": [
+                "harvey leonard"
+            ],
             "results": [
+                "stuart potter & harvey leonard 8 - 21 gary dennison & nicola pearson",
                 "stuart potter & harvey leonard 26 - 3 jim mcquade & christina levy"
             ],
             "monday combined leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -13
             },
             "tuesday vets leeds": {
                 "games": 0,
@@ -3196,19 +3236,21 @@
             "awayWins": 0,
             "homeWins": 0,
             "wins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "homeLosses": 0,
             "homeDraws": 0,
             "awayDraws": 0,
             "draws": 0,
             "cupWins": 0,
             "cupLosses": 0,
-            "losses": 0,
-            "totalGamesPlayed": 0,
-            "agg": 0,
-            "opponentAgg": 0,
-            "leaguePosition": -1,
-            "results": []
+            "losses": 1,
+            "totalGamesPlayed": 1,
+            "agg": 81,
+            "opponentAgg": 117,
+            "leaguePosition": 8,
+            "results": [
+                "Rothwell BC A 25 - 17 Stanningley (Mon 8th Apr)"
+            ]
         },
         {
             "day": "Tuesday Vets Leeds",
@@ -3331,6 +3373,6 @@
         }
     ],
     "clubCupWinner": "",
-    "lastUpdated": "09/04/2024",
+    "lastUpdated": "10/04/2024",
     "statsYear": "2024"
 }
