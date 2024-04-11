@@ -89,25 +89,25 @@
             }
         },
         "alyssa randell": {
-            "totalAgg": 28,
-            "totalAggAgainst": 34,
-            "availableAgg": 42,
+            "totalAgg": 49,
+            "totalAggAgainst": 46,
+            "availableAgg": 63,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "availableHomeAgg": 21,
             "availableAwayAgg": 42,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
+            "totalHomeAgg": 21,
+            "totalHomeAggAgainst": 12,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 28,
             "totalAwayAggAgainst": 34,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 1,
             "awayLosses": 1,
@@ -121,17 +121,19 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
                 "Monday Combined Leeds",
-                "Tuesday Leeds"
+                "Tuesday Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
                 "alyssa randell 7 - 21 mick goodhall",
-                "alyssa randell 21 - 13 elaine hill"
+                "alyssa randell 21 - 13 elaine hill",
+                "alyssa randell 21 - 12 clifford brogie"
             ],
             "monday combined leeds": {
                 "games": 1,
@@ -149,9 +151,9 @@
                 "aggDiff": 8
             },
             "wednesday half holiday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 9
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -251,25 +253,25 @@
             }
         },
         "andy waller": {
-            "totalAgg": 42,
-            "totalAggAgainst": 23,
-            "availableAgg": 42,
+            "totalAgg": 63,
+            "totalAggAgainst": 28,
+            "availableAgg": 63,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 21,
+            "availableHomeAgg": 42,
             "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 21,
-            "totalHomeAggAgainst": 6,
+            "totalHomeAgg": 42,
+            "totalHomeAggAgainst": 11,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 21,
             "totalAwayAggAgainst": 17,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 1,
+            "homeWins": 2,
             "homeLosses": 0,
             "awayWins": 1,
             "awayLosses": 0,
@@ -283,17 +285,19 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
-                "Tuesday Vets Leeds"
+                "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
                 "andy waller 21 - 17 linda gaunt",
-                "andy waller 21 - 6 margaret mcphail"
+                "andy waller 21 - 6 margaret mcphail",
+                "andy waller 21 - 5 barry palmer"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -311,9 +315,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 16
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -590,18 +594,18 @@
             }
         },
         "david eaton": {
-            "totalAgg": 21,
-            "totalAggAgainst": 17,
-            "availableAgg": 21,
+            "totalAgg": 33,
+            "totalAggAgainst": 38,
+            "availableAgg": 42,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "availableHomeAgg": 21,
             "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
+            "totalHomeAgg": 12,
+            "totalHomeAggAgainst": 21,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 21,
@@ -609,7 +613,7 @@
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 0,
+            "homeLosses": 1,
             "awayWins": 1,
             "awayLosses": 0,
             "cupWins": 0,
@@ -622,15 +626,17 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 1,
+            "totalGamesPlayed": 2,
             "dayPlayed": [
-                "Tuesday Vets Leeds"
+                "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
-                "david eaton 21 - 17 david norton"
+                "david eaton 21 - 17 david norton",
+                "david eaton 12 - 21 michael howsham"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -648,9 +654,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -9
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -1307,25 +1313,25 @@
             }
         },
         "joey broadbent": {
-            "totalAgg": 21,
-            "totalAggAgainst": 14,
-            "availableAgg": 21,
+            "totalAgg": 42,
+            "totalAggAgainst": 34,
+            "availableAgg": 42,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "availableHomeAgg": 21,
             "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
+            "totalHomeAgg": 21,
+            "totalHomeAggAgainst": 20,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 21,
             "totalAwayAggAgainst": 14,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 1,
             "awayLosses": 0,
@@ -1339,15 +1345,17 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 1,
+            "totalGamesPlayed": 2,
             "dayPlayed": [
-                "Monday Combined Leeds"
+                "Monday Combined Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
-                "joey broadbent 21 - 14 michael hill"
+                "joey broadbent 21 - 14 michael hill",
+                "joey broadbent 21 - 20 brian fish"
             ],
             "monday combined leeds": {
                 "games": 1,
@@ -1365,9 +1373,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 1
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -1790,25 +1798,25 @@
             }
         },
         "malvin miller": {
-            "totalAgg": 21,
-            "totalAggAgainst": 13,
-            "availableAgg": 21,
+            "totalAgg": 42,
+            "totalAggAgainst": 16,
+            "availableAgg": 42,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 0,
+            "availableHomeAgg": 21,
             "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 0,
-            "totalHomeAggAgainst": 0,
+            "totalHomeAgg": 21,
+            "totalHomeAggAgainst": 3,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 21,
             "totalAwayAggAgainst": 13,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 0,
+            "homeWins": 1,
             "homeLosses": 0,
             "awayWins": 1,
             "awayLosses": 0,
@@ -1822,15 +1830,17 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 1,
+            "totalGamesPlayed": 2,
             "dayPlayed": [
-                "Tuesday Leeds"
+                "Tuesday Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
-                "malvin miller 21 - 13 darren lowe"
+                "malvin miller 21 - 13 darren lowe",
+                "malvin miller 21 - 3 malcolm dacre"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -1848,9 +1858,9 @@
                 "aggDiff": 8
             },
             "wednesday half holiday leeds": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 18
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -2094,18 +2104,18 @@
             }
         },
         "neil porter": {
-            "totalAgg": 30,
-            "totalAggAgainst": 25,
-            "availableAgg": 42,
+            "totalAgg": 45,
+            "totalAggAgainst": 46,
+            "availableAgg": 63,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 21,
+            "availableHomeAgg": 42,
             "availableAwayAgg": 21,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 9,
-            "totalHomeAggAgainst": 21,
+            "totalHomeAgg": 24,
+            "totalHomeAggAgainst": 42,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 21,
@@ -2113,7 +2123,7 @@
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
-            "homeLosses": 1,
+            "homeLosses": 2,
             "awayWins": 1,
             "awayLosses": 0,
             "cupWins": 0,
@@ -2126,17 +2136,19 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
-                "Tuesday Vets Leeds"
+                "Tuesday Vets Leeds",
+                "Wednesday Half Holiday Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
                 "neil porter 21 - 4 archie mccafferty",
-                "neil porter 9 - 21 stewart wardlow"
+                "neil porter 9 - 21 stewart wardlow",
+                "neil porter 15 - 21 john illingworth"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -2154,9 +2166,9 @@
                 "aggDiff": 0
             },
             "wednesday half holiday leeds": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -6
             },
             "wednesday pairs airewharfe": {
                 "games": 0,
@@ -3362,8 +3374,8 @@
         {
             "day": "Wednesday Half Holiday Leeds",
             "awayWins": 0,
-            "homeWins": 0,
-            "wins": 0,
+            "homeWins": 1,
+            "wins": 1,
             "awayLosses": 0,
             "homeLosses": 0,
             "homeDraws": 0,
@@ -3372,11 +3384,13 @@
             "cupWins": 0,
             "cupLosses": 0,
             "losses": 0,
-            "totalGamesPlayed": 0,
-            "agg": 0,
-            "opponentAgg": 0,
-            "leaguePosition": -1,
-            "results": []
+            "totalGamesPlayed": 1,
+            "agg": 111,
+            "opponentAgg": 82,
+            "leaguePosition": 3,
+            "results": [
+                "Stanningley 25 - 17 Burley Park (Wed 10th Apr)"
+            ]
         },
         {
             "day": "Wednesday Pairs AireWharfe",
