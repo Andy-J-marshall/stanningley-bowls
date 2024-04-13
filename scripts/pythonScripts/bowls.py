@@ -285,6 +285,8 @@ for team in teamDays:
             includeHomePlayer = False
             if team.endswith('(A)') or team.endswith('(B)'):
                 if team.endswith('(A)'):
+                    if homePlayer.row - i <= startingRow:
+                        break
                     for i in range(1, 10):
                         homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
                         if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in teamNamesForFirstTeam:
@@ -293,6 +295,8 @@ for team in teamDays:
 
                 if team.endswith('(B)'):
                     for i in range(1, 10):
+                        if homePlayer.row - i <= startingRow:
+                            break
                         homeBTeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
                         if homeBTeamRow and type(homeBTeamRow.value) is str and homeBTeamRow.value.lower() in teamNamesForSecondTeam:
                             includeHomePlayer = True
@@ -322,7 +326,7 @@ for team in teamDays:
             if team.endswith('(A)') or team.endswith('(B)'):
                 if team.endswith('(A)'):
                     for i in range(1, 10):
-                        if homePlayer.row - i <= startingRow:
+                        if awayPlayer.row - i <= startingRow:
                             break
                         awayATeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
                         if awayATeamRow and type(awayATeamRow.value) is str and awayATeamRow.value.lower() in teamNamesForFirstTeam:
