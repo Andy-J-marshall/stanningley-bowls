@@ -159,6 +159,7 @@ Add the `clubCupWinner` for the current year in `teamDetails.py`.
 Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
+* `teamNames` - Add the lowercase team names for the B team 
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 * `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
 * `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`

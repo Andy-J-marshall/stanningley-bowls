@@ -78,6 +78,7 @@ for team in teamDays:
     for row in sheet['A']:
         if row.value and type(row.value) is str and 'FULL RESULTS' in row.value.upper():
             startingRow = startingRowIndex
+            break
         startingRowIndex += 1
 
     cupGameIndex = 1
@@ -286,14 +287,14 @@ for team in teamDays:
                 if team.endswith('(A)'):
                     for i in range(1, 10):
                         homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
-                        if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in expectedTeamNames:
+                        if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in teamNamesForFirstTeam:
                             includeHomePlayer = True
                             break
 
                 if team.endswith('(B)'):
                     for i in range(1, 10):
                         homeBTeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
-                        if homeBTeamRow and type(homeBTeamRow.value) is str and homeBTeamRow.value.lower() in expectedTeamNames:
+                        if homeBTeamRow and type(homeBTeamRow.value) is str and homeBTeamRow.value.lower() in teamNamesForSecondTeam:
                             includeHomePlayer = True
                             break
             else:
@@ -321,15 +322,19 @@ for team in teamDays:
             if team.endswith('(A)') or team.endswith('(B)'):
                 if team.endswith('(A)'):
                     for i in range(1, 10):
+                        if homePlayer.row - i <= startingRow:
+                            break
                         awayATeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
-                        if awayATeamRow and type(awayATeamRow.value) is str and awayATeamRow.value.lower() in expectedTeamNames:
+                        if awayATeamRow and type(awayATeamRow.value) is str and awayATeamRow.value.lower() in teamNamesForFirstTeam:
                             includeAwayPlayer = True
                             break
 
                 if team.endswith('(B)'):
                     for i in range(1, 10):
+                        if awayPlayer.row - i <= startingRow:
+                            break
                         awayBTeamRow = sheet[awayTeamNameCol + str(awayPlayer.row - i)]
-                        if awayBTeamRow and type(awayBTeamRow.value) is str and awayBTeamRow.value.lower() in expectedTeamNames:
+                        if awayBTeamRow and type(awayBTeamRow.value) is str and awayBTeamRow.value.lower() in teamNamesForSecondTeam:
                             includeAwayPlayer = True
                             break
             else:
