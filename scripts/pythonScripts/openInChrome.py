@@ -2,8 +2,10 @@ import webbrowser
 import utils
 
 htmlFiles = utils.findHtmlFiles()
+filesOpened = []
 
 for file in htmlFiles:
-    # TODO check this works?
-    file.replace(' (A)', '').replace(' (B)', '')
-    webbrowser.open('file://' + file)
+    file = file.replace(' (A)', '').replace(' (B)', '')
+    if file not in filesOpened:
+        webbrowser.open('file://' + file)
+    filesOpened.append(file)
