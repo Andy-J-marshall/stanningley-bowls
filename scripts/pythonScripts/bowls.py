@@ -363,7 +363,7 @@ for team in teamDays:
         awayPlayerIndex = awayPlayerIndex + 1
 
     # Find each players' results
-    for row in range(1, sheet.max_row + 1):
+    for row in range(startingRow, sheet.max_row + 1):              
         # reset variable values
         aggregate = 0
         opponentAggregate = 0
@@ -429,6 +429,8 @@ for team in teamDays:
                                                str(row + 1)].value
 
                 for i in range(1, 10):
+                    if row - i <= startingRow:
+                        break
                     opponentTeamRow = sheet[awayTeamNameCol + str(row - i)]
                     if opponentTeamRow.row in homeRow:
                         opponentTeam = sheet[awayTeamNameCol +

@@ -83,7 +83,7 @@ for league in leaguesDays:
         awayPlayerIndex = awayPlayerIndex + 1
 
     # Find each players' results
-    for row in range(1, sheet.max_row + 1):
+    for row in range(startingRow, sheet.max_row + 1):
         playersToUpdate = []
         if row in homePlayerRow:
             playersToUpdate.append('home')
@@ -130,6 +130,8 @@ for league in leaguesDays:
 
             correctPlayerFound = False
             for i in range(0, 13):
+                if row - i <= startingRow:
+                    break
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str:
                     coreTeamName = possibleTeamName.split(' ')[0]
