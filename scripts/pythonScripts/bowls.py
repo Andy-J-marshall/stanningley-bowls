@@ -290,9 +290,9 @@ for team in teamDays:
             includeHomePlayer = False
             if team.endswith('(A)') or team.endswith('(B)'):
                 if team.endswith('(A)'):
-                    if homePlayer.row - i <= startingRow:
-                        break
                     for i in range(1, 10):
+                        if homePlayer.row - i <= startingRow:
+                            break
                         homeATeamRow = sheet[homeTeamNameCol + str(homePlayer.row - i)]
                         if homeATeamRow and type(homeATeamRow.value) is str and homeATeamRow.value.lower() in teamNamesForFirstTeam:
                             includeHomePlayer = True
