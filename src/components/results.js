@@ -68,7 +68,7 @@ function Results(props) {
                     );
 
                     return (
-                        <div className='teamResult' key={idx}>
+                        <div className="teamResult" key={idx}>
                             {resultTeam.results.length > 0 && (
                                 <div>
                                     <h3 style={{ paddingTop: '1rem' }}>
@@ -105,14 +105,17 @@ function Results(props) {
                                                             >
                                                                 {date}
                                                             </td>
-                                                            {homeTeam.toLowerCase() ===
-                                                            teamName.toLowerCase() ? (
+                                                            {homeTeam
+                                                                .toLowerCase()
+                                                                .includes(
+                                                                    teamName.toLowerCase()
+                                                                ) ? (
                                                                 <td
                                                                     style={{
                                                                         width: '38%',
                                                                     }}
                                                                 >
-                                                                    {homeTeam.toUpperCase()}
+                                                                    {teamName.toUpperCase()}
                                                                 </td>
                                                             ) : (
                                                                 <td
@@ -142,14 +145,17 @@ function Results(props) {
                                                                         .awayScore
                                                                 }
                                                             </td>
-                                                            {awayTeam.toLowerCase() ===
-                                                            teamName.toLowerCase() ? (
+                                                            {awayTeam
+                                                                .toLowerCase()
+                                                                .includes(
+                                                                    teamName.toLowerCase()
+                                                                ) ? (
                                                                 <td
                                                                     style={{
                                                                         width: '38%',
                                                                     }}
                                                                 >
-                                                                    {awayTeam.toUpperCase()}
+                                                                    {teamName.toUpperCase()}
                                                                 </td>
                                                             ) : (
                                                                 <td
