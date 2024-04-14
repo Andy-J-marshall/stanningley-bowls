@@ -177,15 +177,20 @@ for team in teamDays:
         homeScore = sheet[homeTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
         awayScore = sheet[awayTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
 
+        # Finds the date of the match
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
-            gameDate = sheet[awayTeamNameCol + str(row - 1)].value
+            gameDateRowModifier = 1
             if 'Saturday Leeds' in team:
-                gameDate = sheet[awayTeamNameCol + str(row - 2)].value
+                gameDateRowModifier += 1
+
+            gameDate = sheet[awayTeamNameCol + str(row - gameDateRowModifier)].value
+            
             if type(gameDate) is str:
                 # TODO will this work for Saturday cup games?
                 if 'On ' in gameDate or '(from ' in gameDate:
-                    gameDate = sheet[awayTeamNameCol + str(row - 2)].value
+                    gameDateRowModifier += 1
+                    gameDate = sheet[awayTeamNameCol + str(row - gameDateRowModifier)].value
             else:
                 gameDate = ''
 
