@@ -67,7 +67,10 @@ test('Summary of Andy Marshall stats for singles games for team are correct', as
   await yearSelectPage.select2023Year();
   playerStatsPage.playerStatsAreCorrectInTable('51', '40', '78%', '5.49');
 
-  await playerStatsPage.selectSinglesOnlyCheckbox();
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('15', '10', '67%', '4.73');
+
+  await playerStatsPage.selectSinglesOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('36', '30', '83%', '5.81');
 });
 
@@ -84,6 +87,9 @@ test('Summary of Bernie Miller stats since 2022 for team are correct', async () 
   await playerStatsPage.selectSince2022Checkbox();
   playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
 
-  await playerStatsPage.selectSinglesOnlyCheckbox();
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-13');
+
+  await playerStatsPage.selectSinglesOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
 });

@@ -28,7 +28,9 @@ export class PlayerStatsPage {
   private readonly totalAverage: Locator;
   private readonly teamCheckBox: Locator;
   private readonly allYearCheckBox: Locator;
-  private readonly singlesOnlyCheckBox: Locator;
+  private readonly singlesOnlyRadio: Locator;
+  private readonly pairsOnlyRadio: Locator;
+  private readonly allGameTypesRadio: Locator;
 
   private games: Locator;
   private wins: Locator;
@@ -61,8 +63,14 @@ export class PlayerStatsPage {
     this.teamCheckBox = page.locator(
       ".form-check input[id='#all-stats-select-checkbox']"
     );
-    this.singlesOnlyCheckBox = page.locator(
-      ".form-check input[id='#only-singles-checkbox']"
+    this.singlesOnlyRadio = page.locator(
+      ".form-check input[id='#only-singles-radio']"
+    );
+    this.pairsOnlyRadio = page.locator(
+      ".form-check input[id='#only-pairs-radio']"
+    );
+    this.allGameTypesRadio = page.locator(
+      ".form-check input[id='#all-matches-radio']"
     );
     this.allYearCheckBox = page.locator(
       ".form-check input[id='#all-years-select-checkbox']"
@@ -136,12 +144,16 @@ export class PlayerStatsPage {
     await this.teamCheckBox.uncheck();
   }
 
-  async selectSinglesOnlyCheckbox() {
-    await this.singlesOnlyCheckBox.check();
+  async selectSinglesOnlyRadio() {
+    await this.singlesOnlyRadio.check();
   }
 
-  async deselectSinglesOnlyCheckbox() {
-    await this.singlesOnlyCheckBox.uncheck();
+  async selectPairsOnlyRadio() {
+    await this.pairsOnlyRadio.check();
+  }
+
+  async selectAllGameTypesRadio() {
+    await this.allGameTypesRadio.check();
   }
 
   async selectSince2022Checkbox() {
