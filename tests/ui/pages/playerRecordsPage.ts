@@ -50,7 +50,7 @@ export class PlayerRecordsPage {
       '#player-record-tabpane-Combined #bestWinPerc'
     );
     this.overallWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #bestWinPercPlayerOrTeam'
+      '#player-record-tabpane-Combined #bestWinPercPlayer'
     );
     this.overallAverageRecord = page.locator(
       '#player-record-tabpane-Combined #bestAverage'
@@ -69,7 +69,7 @@ export class PlayerRecordsPage {
       '#player-record-tabpane-tuesday-vets #bestWinPerc'
     );
     this.tuesVetsWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-tuesday-vets #bestWinPercPlayerOrTeam'
+      '#player-record-tabpane-tuesday-vets #bestWinPercPlayer'
     );
     this.tuesVetsAverageRecord = page.locator(
       '#player-record-tabpane-tuesday-vets #bestAverage'
@@ -88,7 +88,7 @@ export class PlayerRecordsPage {
       '#player-record-tabpane-thursday-vets #bestWinPerc'
     );
     this.thurVetsWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-thursday-vets #bestWinPercPlayerOrTeam'
+      '#player-record-tabpane-thursday-vets #bestWinPercPlayer'
     );
     this.thurVetsAverageRecord = page.locator(
       '#player-record-tabpane-thursday-vets #bestAverage'

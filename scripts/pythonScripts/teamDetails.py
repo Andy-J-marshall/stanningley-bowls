@@ -13,6 +13,7 @@ teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds (A)', 'Saturday Leeds (B)' ]
 
 # Every player (lowercase)
+# TODO need to add James?
 players = [
     'john armitage', 'paul bowes', 'clifford brogie', 'harvey leonard', 'rob packer', 'neil porter',
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller', 'phil sutcliffe',
@@ -37,6 +38,7 @@ traitorPlayers = {
     'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
 
+# TODO need to add James?
 transferredPlayers = {
     'Monday Combined Leeds': {},
     'Tuesday Vets Leeds': {},
