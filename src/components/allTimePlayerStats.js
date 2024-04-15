@@ -5,6 +5,7 @@ import { returnPlayerStats } from '../helpers/playersHelper';
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
+    const showPairsOnlyBool = props.showPairsOnly;
 
     const [loaded, setLoaded] = useState(false);
 
@@ -33,6 +34,11 @@ function AllTimePlayerStats(props) {
             singlesAgg: 0,
             singlesAggAgainst: 0,
             singlesAverage: 0,
+            pairsGames: 0,
+            pairsWins: 0,
+            pairsAgg: 0,
+            pairsAggAgainst: 0,
+            pairsAverage: 0,
         };
 
         statsArray.forEach((yearStats) => {
@@ -40,22 +46,33 @@ function AllTimePlayerStats(props) {
                 yearStats.playerResults,
                 player
             );
+
             if (playerStats) {
+                // All
                 stats.agg += playerStats.totalAgg;
                 stats.aggAgainst += playerStats.totalAggAgainst;
                 stats.wins += playerStats.totalWins;
                 stats.games += playerStats.gamesPlayed;
 
+                // Singles
                 stats.singlesAgg += playerStats.singlesAgg;
                 stats.singlesAggAgainst += playerStats.singlesAggAgainst;
                 stats.singlesWins +=
                     playerStats.totalWins - playerStats.pairWins;
                 stats.singleGames += playerStats.singlesGames;
+
+                // Pairs
+                stats.pairsAgg += playerStats.totalPairsAgg;
+                stats.pairsAggAgainst += playerStats.totalPairsAggAgainst;
+                stats.pairsWins += playerStats.pairWins;
+                stats.pairsGames += playerStats.pairsGames;
+
             }
         });
         stats.singlesAverage =
             (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
         stats.average = (stats.agg - stats.aggAgainst) / stats.games;
+        stats.pairsAverage = (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
 
         statsToDisplayArray.push(stats);
     });
@@ -73,6 +90,7 @@ function AllTimePlayerStats(props) {
             <PlayerStatSummary
                 playerStats={statsToDisplayArray}
                 showSinglesOnly={showSinglesOnlyBool}
+                showPairsOnly={showPairsOnlyBool}
             />
         </div>
     );

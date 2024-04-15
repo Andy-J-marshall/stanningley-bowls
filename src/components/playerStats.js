@@ -333,6 +333,7 @@ function PlayerStats(props) {
                     <AllTimePlayerStats
                         statsArray={allYearsStatsToUse}
                         showSinglesOnly={showSinglesOnlyBool}
+                        showPairsOnly={showPairsOnlyBool}
                     />
                 )}
 

@@ -13,7 +13,7 @@ function PlayerStatsOptions(props) {
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
-    const [allOnlyToggle, setAllOnlyToggle] = useState(true);
+    const [allToggle, setAllToggle] = useState(true);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -28,7 +28,7 @@ function PlayerStatsOptions(props) {
     }
 
     function toggleSinglesOnlyMatches() {
-        setAllOnlyToggle(false);
+        setAllToggle(false);
 
         setPairsOnlyToggle(false);
         onlyPairsCallback(false);
@@ -38,7 +38,7 @@ function PlayerStatsOptions(props) {
     }
 
     function togglePairsOnlyMatches() {
-        setAllOnlyToggle(false);
+        setAllToggle(false);
 
         setSinglesOnlyToggle(false);
         onlySinglesCallback(false);
@@ -48,7 +48,7 @@ function PlayerStatsOptions(props) {
     }
 
     function toggleAllMatches() {
-        setAllOnlyToggle(true);
+        setAllToggle(true);
 
         setSinglesOnlyToggle(false);
         onlySinglesCallback(false);
@@ -114,7 +114,7 @@ function PlayerStatsOptions(props) {
                                                     name="gameTypeOptions"
                                                     type="radio"
                                                     label="All"
-                                                    checked={allOnlyToggle}
+                                                    checked={allToggle}
                                                 />
                                             </Col>
                                             <Col>
