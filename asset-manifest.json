@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.18d4bf3b.chunk.css",
-    "main.js": "/static/js/main.4e01ce73.chunk.js",
-    "main.js.map": "/static/js/main.4e01ce73.chunk.js.map",
+    "main.js": "/static/js/main.05460378.chunk.js",
+    "main.js.map": "/static/js/main.05460378.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2833f87.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2833f87.js.map",
     "static/css/2.56039741.chunk.css": "/static/css/2.56039741.chunk.css",
@@ -22,6 +22,7 @@
     "static/media/carousel-05.a2a0e36e.webp": "/static/media/carousel-05.a2a0e36e.webp",
     "static/media/group-bowling.466ad98b.webp": "/static/media/group-bowling.466ad98b.webp",
     "static/media/hey_neighbour_grant.9ee20b8b.png": "/static/media/hey_neighbour_grant.9ee20b8b.png",
+    "static/media/joey.e7a1ed95.png": "/static/media/joey.e7a1ed95.png",
     "static/media/mon-team.62e2d4c5.webp": "/static/media/mon-team.62e2d4c5.webp",
     "static/media/sat-team.4c78ab8c.webp": "/static/media/sat-team.4c78ab8c.webp",
     "static/media/social-bowling.3b26214a.webp": "/static/media/social-bowling.3b26214a.webp",
@@ -39,6 +40,6 @@
     "static/css/2.56039741.chunk.css",
     "static/js/2.93d6c508.chunk.js",
     "static/css/main.18d4bf3b.chunk.css",
-    "static/js/main.4e01ce73.chunk.js"
+    "static/js/main.05460378.chunk.js"
   ]
 }
