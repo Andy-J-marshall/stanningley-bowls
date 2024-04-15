@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Form, Row, Col, Accordion } from 'react-bootstrap';
+import { Form, InputGroup, Row, Col, Accordion } from 'react-bootstrap';
 
 function PlayerStatsOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
@@ -13,6 +13,7 @@ function PlayerStatsOptions(props) {
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
+    const [allOnlyToggle, setAllOnlyToggle] = useState(true);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -26,16 +27,34 @@ function PlayerStatsOptions(props) {
         allTeamStatsCallback(allTeamStatsToggle);
     }
 
-    function toggleSinglesOnlyMatches(event) {
-        const singlesToggle = event.currentTarget.checked;
-        setSinglesOnlyToggle(singlesToggle);
-        onlySinglesCallback(singlesToggle);
+    function toggleSinglesOnlyMatches() {
+        setAllOnlyToggle(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setSinglesOnlyToggle(true);
+        onlySinglesCallback(true);
     }
 
-    function togglePairsOnlyMatches(event) {
-        const pairsToggle = event.currentTarget.checked;
-        setPairsOnlyToggle(pairsToggle);
-        onlyPairsCallback(pairsToggle);
+    function togglePairsOnlyMatches() {
+        setAllOnlyToggle(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setPairsOnlyToggle(true);
+        onlyPairsCallback(true);
+    }
+
+    function toggleAllMatches() {
+        setAllOnlyToggle(true);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
     }
 
     function toggleAllYearStats(event) {
@@ -59,58 +78,68 @@ function PlayerStatsOptions(props) {
                         <Accordion.Body>
                             <Form style={{ display: 'inline-block' }}>
                                 <Form.Group
-                                    className="mb-3"
+                                    className="mb-2"
                                     controlId="searchOptions"
                                 >
                                     <Row>
-                                        {!playerSearchedFor && (
+                                        <Col className="mb-3">
+                                            <Form.Check
+                                                key={key}
+                                                id="#all-stats-select-checkbox"
+                                                onChange={toggleAllTeamStats}
+                                                type="checkbox"
+                                                label="Include stats from other teams"
+                                                checked={allTeamsToggle}
+                                            />
+                                        </Col>
+                                        <Col>
+                                            <Form.Check
+                                                key={key}
+                                                id="#all-years-select-checkbox"
+                                                onChange={toggleAllYearStats}
+                                                type="checkbox"
+                                                label="Stats since 2022"
+                                                checked={allYearToggle}
+                                            />
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <h6>GAME TYPES</h6>
+                                        <InputGroup>
                                             <Col>
                                                 <Form.Check
                                                     key={key}
-                                                    id="#all-stats-select-checkbox"
-                                                    onChange={toggleAllTeamStats}
-                                                    type="checkbox"
-                                                    label="Include stats whilst playing for other teams"
-                                                    checked={allTeamsToggle}
+                                                    id="#all-matches-radio"
+                                                    onChange={toggleAllMatches}
+                                                    name="gameTypeOptions"
+                                                    type="radio"
+                                                    label="All"
+                                                    checked={allOnlyToggle}
                                                 />
                                             </Col>
-                                        )}
-                                        {!playerSearchedFor && (
                                             <Col>
                                                 <Form.Check
                                                     key={key}
-                                                    id="#only-singles-checkbox"
+                                                    id="#only-singles-radio"
                                                     onChange={toggleSinglesOnlyMatches}
-                                                    type="checkbox"
-                                                    label="Only show stats for singles games"
+                                                    name="gameTypeOptions"
+                                                    type="radio"
+                                                    label="Singles"
                                                     checked={singlesOnlyToggle}
                                                 />
                                             </Col>
-                                        )}
-                                        {!playerSearchedFor && (
                                             <Col>
                                                 <Form.Check
                                                     key={key}
-                                                    id="#only-pairs-checkbox"
+                                                    id="#only-pairs-radio"
                                                     onChange={togglePairsOnlyMatches}
-                                                    type="checkbox"
-                                                    label="Only show stats for pairs games"
+                                                    name="gameTypeOptions"
+                                                    type="radio"
+                                                    label="Pairs"
                                                     checked={pairsOnlyToggle}
                                                 />
                                             </Col>
-                                        )}
-                                        {!playerSearchedFor && (
-                                            <Col>
-                                                <Form.Check
-                                                    key={key}
-                                                    id="#all-years-select-checkbox"
-                                                    onChange={toggleAllYearStats}
-                                                    type="checkbox"
-                                                    label="Show stats summary for all seasons since 2022"
-                                                    checked={allYearToggle}
-                                                />
-                                            </Col>
-                                        )}
+                                        </InputGroup>
                                     </Row>
                                 </Form.Group>
                             </Form>
