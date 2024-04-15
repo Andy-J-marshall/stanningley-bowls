@@ -77,7 +77,7 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
   playerStatsPage.playerStatsAreCorrectInTable('96', '69', '72%', '5.35');
 });
 
-test('Summary of Andy Marshall stats for singles games for all teams is correct', async () => {
+test('Summary of Andy Marshall stats for singles and pairs games for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('andy marshall');
   await playerStatsPage.selectAllTeamStatsCheckbox();
   await yearSelectPage.select2023Year();
@@ -90,6 +90,21 @@ test('Summary of Andy Marshall stats for singles games for all teams is correct'
 
   await playerStatsPage.selectPairsOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('15', '10', '67%', '4.73');
+});
+
+test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('neil porter');
+  await playerStatsPage.selectAllTeamStatsCheckbox();
+  await yearSelectPage.select2023Year();
+
+  await playerStatsPage.selectSinglesOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('31', '20', '65%', '4.74');
+
+  await playerStatsPage.selectAllGameTypesRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('33', '22', '67%', '5.03');
+
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('2', '2', '100%', '9.5');
 });
 
 test('Summary of Dave Hudson stats since 2022 for all teams is correct', async () => {
