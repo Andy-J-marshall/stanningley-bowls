@@ -208,25 +208,25 @@
             ]
         },
         "clifford brogie": {
-            "totalAgg": 36,
-            "totalAggAgainst": 59,
-            "availableAgg": 63,
+            "totalAgg": 57,
+            "totalAggAgainst": 60,
+            "availableAgg": 84,
             "availablePairsAgg": 42,
-            "availableHomeAgg": 21,
+            "availableHomeAgg": 42,
             "availableAwayAgg": 42,
             "availablePairsHomeAgg": 21,
             "availablePairsAwayAgg": 21,
             "totalPairsAgg": 24,
             "totalPairsAggAgainst": 38,
-            "totalHomeAgg": 21,
-            "totalHomeAggAgainst": 17,
+            "totalHomeAgg": 42,
+            "totalHomeAggAgainst": 18,
             "totalPairsHomeAgg": 21,
             "totalPairsHomeAggAgainst": 17,
             "totalAwayAgg": 15,
             "totalAwayAggAgainst": 42,
             "totalPairsAwayAgg": 3,
             "totalPairsAwayAggAgainst": 21,
-            "homeWins": 1,
+            "homeWins": 2,
             "homeLosses": 0,
             "awayWins": 0,
             "awayLosses": 2,
@@ -240,11 +240,12 @@
             "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 3,
+            "totalGamesPlayed": 4,
             "dayPlayed": [
                 "Monday Combined Leeds (Stanningley)",
                 "Monday Combined Leeds (Stanningley)",
-                "Wednesday Half Holiday Leeds (Burley Park)"
+                "Wednesday Half Holiday Leeds (Burley Park)",
+                "Saturday Leeds (Pudsey Park)"
             ],
             "pairsPartners": [
                 "craig clarkson",
@@ -259,7 +260,8 @@
             "results": [
                 "clifford brogie & craig clarkson 3 - 21 ellis owen & claire robinson",
                 "clifford brogie & craig clarkson 21 - 17 chloe jackson & p hardy",
-                "clifford brogie 12 - 21 alyssa randell"
+                "clifford brogie 12 - 21 alyssa randell",
+                "clifford brogie 21 - 1 josie burdon"
             ]
         },
         "colin haque": {
