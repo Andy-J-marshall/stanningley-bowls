@@ -77,16 +77,34 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
   playerStatsPage.playerStatsAreCorrectInTable('96', '69', '72%', '5.35');
 });
 
-test('Summary of Andy Marshall stats for singles games for all teams is correct', async () => {
+test('Summary of Andy Marshall stats for singles and pairs games for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('andy marshall');
   await playerStatsPage.selectAllTeamStatsCheckbox();
   await yearSelectPage.select2023Year();
 
-  await playerStatsPage.selectSinglesOnlyCheckbox();
+  await playerStatsPage.selectSinglesOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('37', '30', '81%', '5.57');
 
-  await playerStatsPage.deselectSinglesOnlyCheckbox();
+  await playerStatsPage.selectAllGameTypesRadio();
   playerStatsPage.playerStatsAreCorrectInTable('52', '40', '77%', '5.33');
+
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('15', '10', '67%', '4.73');
+});
+
+test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
+  playerStatsPage.setPlayerToFind('neil porter');
+  await playerStatsPage.selectAllTeamStatsCheckbox();
+  await yearSelectPage.select2023Year();
+
+  await playerStatsPage.selectSinglesOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('31', '20', '65%', '4.74');
+
+  await playerStatsPage.selectAllGameTypesRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('33', '22', '67%', '5.03');
+
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('2', '2', '100%', '9.5');
 });
 
 test('Summary of Dave Hudson stats since 2022 for all teams is correct', async () => {
@@ -104,6 +122,9 @@ test('Summary of Bernie Miller stats since 2022 for all teams is correct', async
   await playerStatsPage.selectSince2022Checkbox();
   playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
 
-  await playerStatsPage.selectSinglesOnlyCheckbox();
+  await playerStatsPage.selectSinglesOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
+
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-13');
 });
