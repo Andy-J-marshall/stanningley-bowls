@@ -39,29 +39,63 @@ function PlayerStats(props) {
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
+    const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const statsToDisplayArray = [];
 
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
             const stats = {
+                // Total
                 player,
                 games: playerStats.gamesPlayed,
                 wins: playerStats.totalWins,
+                winPerc: (playerStats.totalWins / playerStats.gamesPlayed) * 100,
                 agg: playerStats.totalAgg,
                 aggAgainst: playerStats.totalAggAgainst,
                 average:
                     (playerStats.totalAgg - playerStats.totalAggAgainst) /
                     playerStats.gamesPlayed,
 
+                // Singles
                 singleGames: playerStats.singlesGames,
                 singlesWins: playerStats.totalWins - playerStats.pairWins,
+                singlesWinPerc: ((playerStats.totalWins - playerStats.pairWins) / playerStats.singlesGames) * 100,
                 singlesAgg: playerStats.singlesAgg,
                 singlesAggAgainst: playerStats.singlesAggAgainst,
                 singlesAverage:
                     (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
                     playerStats.singlesGames,
+
+                // Pairs
+                pairsGames: playerStats.pairsGames,
+                pairsWins: playerStats.pairWins,
+                pairsWinPerc: (playerStats.pairWins / playerStats.pairsGames) * 100,
+                pairsAgg: playerStats.totalPairsAgg,
+                pairsAggAgainst: playerStats.totalPairsAggAgainst,
+                pairsAverage:
+                    (playerStats.totalPairsAgg -
+                        playerStats.totalPairsAggAgainst) /
+                    playerStats.pairsGames,
             };
+            if (isNaN(stats.winPerc)) {
+                stats.winPerc = 0;
+            }
+            if (isNaN(stats.average)) {
+                stats.average = -99;
+            }
+            if (isNaN(stats.singlesWinPerc)) {
+                stats.singlesWinPerc = 0;
+            }
+            if (isNaN(stats.singlesAverage)) {
+                stats.singlesAverage = -99;
+            }
+            if (isNaN(stats.pairsWinPerc)) {
+                stats.pairsWinPerc = 0;
+            }
+            if (isNaN(stats.pairsAverage)) {
+                stats.pairsAverage = -99;
+            }
             statsToDisplayArray.push(stats);
         }
     });
@@ -96,6 +130,14 @@ function PlayerStats(props) {
             setShowSinglesOnlyBool(true);
         } else {
             setShowSinglesOnlyBool(false);
+        }
+    }
+
+    function onlyPairsCallback(showPairsBoolean) {
+        if (showPairsBoolean) {
+            setShowPairsOnlyBool(true);
+        } else {
+            setShowPairsOnlyBool(false);
         }
     }
 
@@ -198,6 +240,7 @@ function PlayerStats(props) {
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
                         showSinglesOnly={showSinglesOnlyBool}
+                        showPairsOnly={showPairsOnlyBool}
                     />
                 </div>
             );
@@ -311,6 +354,7 @@ function PlayerStats(props) {
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
                 onlySinglesCallback={onlySinglesCallback}
+                onlyPairsCallback={onlyPairsCallback}
                 playerSearchedFor={searchedPlayerName}
             />
         </div>

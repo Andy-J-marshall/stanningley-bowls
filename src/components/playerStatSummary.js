@@ -6,6 +6,7 @@ function PlayerStatSummary(props) {
     let playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
+    const showPairsOnlyBool = props.showPairsOnly;
 
     playerStats = playerStats.filter((player) => player.games > 0);
 
@@ -23,6 +24,17 @@ function PlayerStatSummary(props) {
         if (displayPlayerStatsCallback) {
             displayPlayerStatsCallback(playerName);
         }
+    }
+
+    function orderPlayers(orderByStatPropertyName) {
+        const order = [...playerStats].sort((p1, p2) =>
+            p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
+                ? 1
+                : p1[orderByStatPropertyName] > p2[orderByStatPropertyName]
+                ? -1
+                : 0
+        );
+        return order;
     }
 
     function orderByName() {
@@ -49,18 +61,15 @@ function PlayerStatSummary(props) {
     function orderPlayersByGames() {
         let gameOrder;
 
-        if (showSinglesOnlyBool) {
-            gameOrder = [...playerStats].sort((p1, p2) =>
-                p1.singleGames < p2.singleGames
-                    ? 1
-                    : p1.singleGames > p2.singleGames
-                    ? -1
-                    : 0
-            );
+        if (showSinglesOnlyBool || showPairsOnlyBool) {
+            if (showSinglesOnlyBool) {
+                gameOrder = orderPlayers('singleGames');
+            }
+            if (showPairsOnlyBool) {
+                gameOrder = orderPlayers('pairsGames');
+            }
         } else {
-            gameOrder = [...playerStats].sort((p1, p2) =>
-                p1.games < p2.games ? 1 : p1.games > p2.games ? -1 : 0
-            );
+            gameOrder = orderPlayers('games');
         }
 
         return gameOrder;
@@ -77,18 +86,15 @@ function PlayerStatSummary(props) {
     function orderPlayersByWins() {
         let winOrder;
 
-        if (showSinglesOnlyBool) {
-            winOrder = [...playerStats].sort((p1, p2) =>
-                p1.singlesWins < p2.singlesWins
-                    ? 1
-                    : p1.singlesWins > p2.singlesWins
-                    ? -1
-                    : 0
-            );
+        if (showSinglesOnlyBool || showPairsOnlyBool) {
+            if (showSinglesOnlyBool) {
+                winOrder = orderPlayers('singlesWins');
+            }
+            if (showPairsOnlyBool) {
+                winOrder = orderPlayers('pairsWins');
+            }
         } else {
-            winOrder = [...playerStats].sort((p1, p2) =>
-                p1.wins < p2.wins ? 1 : p1.wins > p2.wins ? -1 : 0
-            );
+            winOrder = orderPlayers('wins');
         }
 
         return winOrder;
@@ -105,24 +111,15 @@ function PlayerStatSummary(props) {
     function orderPlayersByWinPerc() {
         let winPercOrder;
 
-        if (showSinglesOnlyBool) {
-            winPercOrder = [...playerStats].sort((p1, p2) =>
-                (p1.singlesWins / p1.singleGames) * 100 <
-                (p2.singlesWins / p2.singleGames) * 100
-                    ? 1
-                    : (p1.singlesWins / p1.singleGames) * 100 >
-                      (p2.singlesWins / p2.singleGames) * 100
-                    ? -1
-                    : 0
-            );
+        if (showSinglesOnlyBool || showPairsOnlyBool) {
+            if (showSinglesOnlyBool) {
+                winPercOrder = orderPlayers('singlesWinPerc');
+            }
+            if (showPairsOnlyBool) {
+                winPercOrder = orderPlayers('pairsWinPerc');
+            }
         } else {
-            winPercOrder = [...playerStats].sort((p1, p2) =>
-                (p1.wins / p1.games) * 100 < (p2.wins / p2.games) * 100
-                    ? 1
-                    : (p1.wins / p1.games) * 100 > (p2.wins / p2.games) * 100
-                    ? -1
-                    : 0
-            );
+            winPercOrder = orderPlayers('winPerc');
         }
 
         return winPercOrder;
@@ -139,18 +136,15 @@ function PlayerStatSummary(props) {
     function orderPlayersByAverage() {
         let averageOrder;
 
-        if (showSinglesOnlyBool) {
-            averageOrder = [...playerStats].sort((p1, p2) =>
-                p1.singlesAverage < p2.singlesAverage
-                    ? 1
-                    : p1.singlesAverage > p2.singlesAverage
-                    ? -1
-                    : 0
-            );
+        if (showSinglesOnlyBool || showPairsOnlyBool) {
+            if (showSinglesOnlyBool) {
+                averageOrder = orderPlayers('singlesAverage');
+            }
+            if (showPairsOnlyBool) {
+                averageOrder = orderPlayers('pairsAverage');
+            }
         } else {
-            averageOrder = [...playerStats].sort((p1, p2) =>
-                p1.average < p2.average ? 1 : p1.average > p2.average ? -1 : 0
-            );
+            averageOrder = orderPlayers('average');
         }
 
         return averageOrder;
@@ -194,6 +188,12 @@ function PlayerStatSummary(props) {
                 wins = player.singlesWins;
             }
 
+            if (showPairsOnlyBool) {
+                gamesPlayed = player.pairsGames;
+                average = player.pairsAverage;
+                wins = player.pairsWins;
+            }
+
             return (
                 <tbody key={key}>
                     {gamesPlayed > 0 && (
@@ -207,10 +207,23 @@ function PlayerStatSummary(props) {
                                     {capitalizeText([player.player])}
                                 </a>
                             </td>
-                            <td id={`${player.player.replace(' ', '-')}-games`}>{gamesPlayed}</td>
-                            <td id={`${player.player.replace(' ', '-')}-wins`}>{wins}</td>
-                            <td id={`${player.player.replace(' ', '-')}-win-perc`}>{((wins / gamesPlayed) * 100).toFixed(0)}%</td>
-                            <td id={`${player.player.replace(' ', '-')}-avg`}>{average.toFixed(2)}</td>
+                            <td id={`${player.player.replace(' ', '-')}-games`}>
+                                {gamesPlayed}
+                            </td>
+                            <td id={`${player.player.replace(' ', '-')}-wins`}>
+                                {wins}
+                            </td>
+                            <td
+                                id={`${player.player.replace(
+                                    ' ',
+                                    '-'
+                                )}-win-perc`}
+                            >
+                                {((wins / gamesPlayed) * 100).toFixed(0)}%
+                            </td>
+                            <td id={`${player.player.replace(' ', '-')}-avg`}>
+                                {average.toFixed(2)}
+                            </td>
                         </tr>
                     )}
                 </tbody>

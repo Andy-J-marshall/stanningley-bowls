@@ -5,12 +5,14 @@ function PlayerStatsOptions(props) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
+    const onlyPairsCallback = props.onlyPairsCallback;
     const playerSearchedFor = props.playerSearchedFor;
 
     const [key, setKey] = useState(playerSearchedFor);
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
+    const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -28,6 +30,12 @@ function PlayerStatsOptions(props) {
         const singlesToggle = event.currentTarget.checked;
         setSinglesOnlyToggle(singlesToggle);
         onlySinglesCallback(singlesToggle);
+    }
+
+    function togglePairsOnlyMatches(event) {
+        const pairsToggle = event.currentTarget.checked;
+        setPairsOnlyToggle(pairsToggle);
+        onlyPairsCallback(pairsToggle);
     }
 
     function toggleAllYearStats(event) {
@@ -72,12 +80,22 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-singles-checkbox"
-                                                    onChange={
-                                                        toggleSinglesOnlyMatches
-                                                    }
+                                                    onChange={toggleSinglesOnlyMatches}
                                                     type="checkbox"
                                                     label="Only show stats for singles games"
                                                     checked={singlesOnlyToggle}
+                                                />
+                                            </Col>
+                                        )}
+                                        {!playerSearchedFor && (
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#only-pairs-checkbox"
+                                                    onChange={togglePairsOnlyMatches}
+                                                    type="checkbox"
+                                                    label="Only show stats for pairs games"
+                                                    checked={pairsOnlyToggle}
                                                 />
                                             </Col>
                                         )}
