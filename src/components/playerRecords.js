@@ -593,13 +593,12 @@ function PlayerRecords(props) {
             return (
                 <RecordsTableDisplay
                     minGames={minTotalGames}
-                    playerOrTeam="Player"
                     mostGames={mostGames}
                     mostGamesPlayer={mostGamesPlayer}
                     mostWins={mostWins}
                     mostWinsPlayer={mostWinsPlayer}
                     bestWinPerc={bestWinPerc}
-                    bestWinPercPlayerOrTeam={bestWinPercPlayer}
+                    bestWinPercPlayer={bestWinPercPlayer}
                     bestAverage={bestAverage}
                     bestAveragePlayer={bestAveragePlayer}
                 />
@@ -615,11 +614,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minMonGames}
-                        playerOrTeam="Player"
                         mostWins={mostMondayWins}
                         mostWinsPlayer={mostMondayWinsPlayer}
                         bestWinPerc={bestMondayWinPerc}
-                        bestWinPercPlayerOrTeam={bestMondayWinPercPlayer}
+                        bestWinPercPlayer={bestMondayWinPercPlayer}
                         bestAverage={bestMondayAverage}
                         bestAveragePlayer={bestMondayAveragePlayer}
                     />
@@ -638,11 +636,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minTuesVetsGames}
-                        playerOrTeam="Player"
                         mostWins={mostTuesdayVetsWins}
                         mostWinsPlayer={mostTuesdayVetsWinsPlayer}
                         bestWinPerc={bestTuesdayVetsWinPerc}
-                        bestWinPercPlayerOrTeam={bestTuesdayVetsWinPercPlayer}
+                        bestWinPercPlayer={bestTuesdayVetsWinPercPlayer}
                         bestAverage={bestTuesdayVetsAverage}
                         bestAveragePlayer={bestTuesdayVetsAveragePlayer}
                     />
@@ -661,11 +658,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minTuesGames}
-                        playerOrTeam="Player"
                         mostWins={mostTuesdayWins}
                         mostWinsPlayer={mostTuesdayWinsPlayer}
                         bestWinPerc={bestTuesdayWinPerc}
-                        bestWinPercPlayerOrTeam={bestTuesdayWinPercPlayer}
+                        bestWinPercPlayer={bestTuesdayWinPercPlayer}
                         bestAverage={bestTuesdayAverage}
                         bestAveragePlayer={bestTuesdayAveragePlayer}
                     />
@@ -684,11 +680,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minWedGames}
-                        playerOrTeam="Player"
                         mostWins={mostWednesdayWins}
                         mostWinsPlayer={mostWednesdayWinsPlayer}
                         bestWinPerc={bestWednesdayWinPerc}
-                        bestWinPercPlayerOrTeam={bestWednesdayWinPercPlayer}
+                        bestWinPercPlayer={bestWednesdayWinPercPlayer}
                         bestAverage={bestWednesdayAverage}
                         bestAveragePlayer={bestWednesdayAveragePlayer}
                     />
@@ -707,11 +702,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minWedPairsGames}
-                        playerOrTeam="Player"
                         mostWins={mostWednesdayPairsWins}
                         mostWinsPlayer={mostWednesdayPairsWinsPlayer}
                         bestWinPerc={bestWednesdayPairsWinPerc}
-                        bestWinPercPlayerOrTeam={bestWednesdayPairsWinPercPlayer}
+                        bestWinPercPlayer={bestWednesdayPairsWinPercPlayer}
                         bestAverage={bestWednesdayPairsAverage}
                         bestAveragePlayer={bestWednesdayPairsAveragePlayer}
                     />
@@ -730,11 +724,10 @@ function PlayerRecords(props) {
                 return (
                     <RecordsTableDisplay
                         minGames={minThurVetsGames}
-                        playerOrTeam="Player"
                         mostWins={mostThursdayVetsWins}
                         mostWinsPlayer={mostThursdayVetsWinsPlayer}
                         bestWinPerc={bestThursdayVetsWinPerc}
-                        bestWinPercPlayerOrTeam={bestThursdayVetsWinPercPlayer}
+                        bestWinPercPlayer={bestThursdayVetsWinPercPlayer}
                         bestAverage={bestThursdayVetsAverage}
                         bestAveragePlayer={bestThursdayVetsAveragePlayer}
                     />
@@ -755,11 +748,10 @@ function PlayerRecords(props) {
                         {useSaturdayBStats && <h3>FIRST TEAM</h3>}
                         <RecordsTableDisplay
                             minGames={minSatGames}
-                            playerOrTeam="Player"
                             mostWins={mostSaturdayWins}
                             mostWinsPlayer={mostSaturdayWinsPlayer}
                             bestWinPerc={bestSaturdayWinPerc}
-                            bestWinPercPlayerOrTeam={bestSaturdayWinPercPlayer}
+                            bestWinPercPlayer={bestSaturdayWinPercPlayer}
                             bestAverage={bestSaturdayAverage}
                             bestAveragePlayer={bestSaturdayAveragePlayer}
                         />
@@ -768,11 +760,10 @@ function PlayerRecords(props) {
                             <h3>SECOND TEAM</h3>
                             {minSatBGames > 0 && <RecordsTableDisplay
                                 minGames={minSatBGames}
-                                playerOrTeam="Player"
                                 mostWins={mostSaturdayBWins}
                                 mostWinsPlayer={mostSaturdayBWinsPlayer}
                                 bestWinPerc={bestSaturdayBWinPerc}
-                                bestWinPercPlayerOrTeam={bestSaturdayBWinPercPlayer}
+                                bestWinPercPlayer={bestSaturdayBWinPercPlayer}
                                 bestAverage={bestSaturdayBAverage}
                                 bestAveragePlayer={bestSaturdayBAveragePlayer}
                             />}

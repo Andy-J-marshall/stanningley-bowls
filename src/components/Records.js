@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import TeamRecords from './teamRecords';
 import PlayerRecords from './playerRecords';
 
 function Records(props) {
@@ -17,7 +16,6 @@ function Records(props) {
                 playerResults={playerResults}
                 clubCupWinner={stats.clubCupWinner}
             />
-            <TeamRecords teamResults={teamResults} />
         </div>
     );
 }

@@ -76,7 +76,6 @@ const live = {
             numberOfGames: 8,
         }
     ],
-    daysNotTo21: ['wednesday pairs airewharfe'],
     days: {
         'monday combined leeds': 'Monday Combined',
         'tuesday vets leeds': 'Tuesday Vets',

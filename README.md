@@ -150,7 +150,7 @@ Update the default stats to display for `teamStats` and `combinedStats`.
 
 Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
 
-If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, `teamRecords.js` and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
+If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
 
 Add fixtures to Google calendar for all teams.
 
