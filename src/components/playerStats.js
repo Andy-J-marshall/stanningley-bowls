@@ -40,7 +40,10 @@ function PlayerStats(props) {
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
+    const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
     const statsToDisplayArray = [];
+
+    // TODO 1.all time stats. 2.singles/pairs stats. 3.Add tests
 
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
@@ -90,6 +93,8 @@ function PlayerStats(props) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
+
+        setTotalPlayersUsed(statsToDisplayArray.length);
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
@@ -335,6 +340,9 @@ function PlayerStats(props) {
                         Player not found
                     </h2>
                 )}
+
+            {/* TODO Only shows Stanningley stats for all games types */}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && !showStatSummary &&<p>Total players used: {totalPlayersUsed}</p>}
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
