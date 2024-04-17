@@ -29,16 +29,19 @@ function AllTimePlayerStats(props) {
             agg: 0,
             aggAgainst: 0,
             average: 0,
+            winPerc: 0,
             singleGames: 0,
             singlesWins: 0,
             singlesAgg: 0,
             singlesAggAgainst: 0,
             singlesAverage: 0,
+            singlesWinPerc: 0,
             pairsGames: 0,
             pairsWins: 0,
             pairsAgg: 0,
             pairsAggAgainst: 0,
             pairsAverage: 0,
+            pairsWinPerc: 0,
         };
 
         statsArray.forEach((yearStats) => {
@@ -69,10 +72,33 @@ function AllTimePlayerStats(props) {
 
             }
         });
+        stats.winPerc = (stats.wins / stats.games) * 100,
+        stats.singlesWinPerc = (stats.singlesWins / stats.singleGames) * 100,
+        stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100,
+
+        stats.average = (stats.agg - stats.aggAgainst) / stats.games;
         stats.singlesAverage =
             (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
-        stats.average = (stats.agg - stats.aggAgainst) / stats.games;
         stats.pairsAverage = (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
+
+        if (isNaN(stats.winPerc)) {
+            stats.winPerc = 0;
+        }
+        if (isNaN(stats.average)) {
+            stats.average = -99;
+        }
+        if (isNaN(stats.singlesWinPerc)) {
+            stats.singlesWinPerc = 0;
+        }
+        if (isNaN(stats.singlesAverage)) {
+            stats.singlesAverage = -99;
+        }
+        if (isNaN(stats.pairsWinPerc)) {
+            stats.pairsWinPerc = 0;
+        }
+        if (isNaN(stats.pairsAverage)) {
+            stats.pairsAverage = -99;
+        }
 
         statsToDisplayArray.push(stats);
     });

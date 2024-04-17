@@ -78,6 +78,7 @@ function PlayerStats(props) {
                         playerStats.totalPairsAggAgainst) /
                     playerStats.pairsGames,
             };
+
             if (isNaN(stats.winPerc)) {
                 stats.winPerc = 0;
             }
@@ -96,6 +97,7 @@ function PlayerStats(props) {
             if (isNaN(stats.pairsAverage)) {
                 stats.pairsAverage = -99;
             }
+
             statsToDisplayArray.push(stats);
         }
     });
