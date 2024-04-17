@@ -101,6 +101,9 @@ function AllTimePlayerStats(props) {
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
             />
+            {/* TODO style this. Use own component? */}
+            {/* TODO would this be better in the team stats instead? */}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && <p>Total players used since 2022: {playerNames.length}</p>}
         </div>
     );
 }

@@ -43,8 +43,6 @@ function PlayerStats(props) {
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
     const statsToDisplayArray = [];
 
-    // TODO 1.all time stats. 2.singles/pairs stats. 3.Add tests
-
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
@@ -341,8 +339,10 @@ function PlayerStats(props) {
                     </h2>
                 )}
 
-            {/* TODO Only shows Stanningley stats for all games types */}
-            {!showSinglesOnlyBool && !showPairsOnlyBool && !showStatSummary &&<p>Total players used: {totalPlayersUsed}</p>}
+            {/* // TODO Add tests */}
+            {/* TODO style this. Use own component? */}
+            {/* TODO would this be better in the team stats instead? */}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && !showStatSummary && !showStatsSinceStart && <p>Total players used: {totalPlayersUsed}</p>}
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
