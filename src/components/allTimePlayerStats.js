@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PlayerStatSummary from './playerStatSummary';
-import { returnPlayerStats } from '../helpers/playersHelper';
+import { returnPlayerStats, checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
 
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
@@ -22,7 +22,7 @@ function AllTimePlayerStats(props) {
     }
 
     playerNames.sort().forEach((player) => {
-        const stats = {
+        let stats = {
             player,
             games: 0,
             wins: 0,
@@ -81,24 +81,7 @@ function AllTimePlayerStats(props) {
             (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
         stats.pairsAverage = (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
 
-        if (isNaN(stats.winPerc)) {
-            stats.winPerc = 0;
-        }
-        if (isNaN(stats.average)) {
-            stats.average = -99;
-        }
-        if (isNaN(stats.singlesWinPerc)) {
-            stats.singlesWinPerc = 0;
-        }
-        if (isNaN(stats.singlesAverage)) {
-            stats.singlesAverage = -99;
-        }
-        if (isNaN(stats.pairsWinPerc)) {
-            stats.pairsWinPerc = 0;
-        }
-        if (isNaN(stats.pairsAverage)) {
-            stats.pairsAverage = -99;
-        }
+        stats = checkWinPercAndAverageAreNumbers(stats);
 
         statsToDisplayArray.push(stats);
     });

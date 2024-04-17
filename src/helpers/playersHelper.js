@@ -376,3 +376,28 @@ export function calculatePairsPartnersCount(allPairsPartners) {
     });
     return partnersReturnObj;
 }
+
+export function checkWinPercAndAverageAreNumbers(stats) {
+    let verifiedStats = stats;
+
+    if (isNaN(verifiedStats.winPerc)) {
+        verifiedStats.winPerc = 0;
+    }
+    if (isNaN(verifiedStats.average)) {
+        verifiedStats.average = -99;
+    }
+    if (isNaN(verifiedStats.singlesWinPerc)) {
+        verifiedStats.singlesWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.singlesAverage)) {
+        verifiedStats.singlesAverage = -99;
+    }
+    if (isNaN(verifiedStats.pairsWinPerc)) {
+        verifiedStats.pairsWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.pairsAverage)) {
+        verifiedStats.pairsAverage = -99;
+    }
+
+    return verifiedStats
+}

@@ -10,7 +10,7 @@ import Players from './players';
 import PlayerStatSummary from './playerStatSummary';
 import PlayerStatsOptions from './playerStatsOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
-import { returnPlayerStats } from '../helpers/playersHelper';
+import { returnPlayerStats, checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
 import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
@@ -45,7 +45,7 @@ function PlayerStats(props) {
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
-            const stats = {
+            let stats = {
                 // Total
                 player,
                 games: playerStats.gamesPlayed,
@@ -79,24 +79,7 @@ function PlayerStats(props) {
                     playerStats.pairsGames,
             };
 
-            if (isNaN(stats.winPerc)) {
-                stats.winPerc = 0;
-            }
-            if (isNaN(stats.average)) {
-                stats.average = -99;
-            }
-            if (isNaN(stats.singlesWinPerc)) {
-                stats.singlesWinPerc = 0;
-            }
-            if (isNaN(stats.singlesAverage)) {
-                stats.singlesAverage = -99;
-            }
-            if (isNaN(stats.pairsWinPerc)) {
-                stats.pairsWinPerc = 0;
-            }
-            if (isNaN(stats.pairsAverage)) {
-                stats.pairsAverage = -99;
-            }
+            stats = checkWinPercAndAverageAreNumbers(stats);
 
             statsToDisplayArray.push(stats);
         }
