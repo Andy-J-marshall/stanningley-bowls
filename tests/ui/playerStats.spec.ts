@@ -108,6 +108,8 @@ test('Total player count is not visible if filtering player stats', async () => 
 
   await playerStatsPage.selectSinglesOnlyRadio();
   await playerStatsPage.totalPlayerCountIsNotVisible();
+  
+  await playerStatsPage.selectAllGameTypesRadio();
 
   await playerStatsPage.selectAllTeamStatsCheckbox();
   await playerStatsPage.totalPlayerCountIsNotVisible();
