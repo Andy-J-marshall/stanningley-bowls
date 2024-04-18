@@ -13,15 +13,14 @@ teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds (A)', 'Saturday Leeds (B)' ]
 
 # Every player (lowercase)
-# TODO need to add James?
 players = [
     'john armitage', 'paul bowes', 'clifford brogie', 'harvey leonard', 'rob packer', 'neil porter',
     'craig clarkson', 'steve gardner', 'andy marshall', 'alyssa randell', 'andy waller', 'phil sutcliffe',
     'jim moorin', 'duncan mcphail', 'stewart watson', 'tracey marshall', 'derek wilson', 'donald shaw',
-    'alison woodfine', 'joey broadbent', 'jack roberts', 'vanessa lancaster', 'paul leonard', 'martin fulton',
+    'alison woodfine', 'joey broadbent', 'vanessa lancaster', 'paul leonard', 'martin fulton',
     'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tiernan',
     'david eaton', 'mary spears', 'peter crowther', 'laila packer', 'richard hodgson', 'jim swailes',
-    'michael haigh', 'kevin waller', 'iliya marhov', 'nicola bona', 'karl chapman'
+    'iliya marhov', 'nicola bona', 'karl chapman'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -38,7 +37,6 @@ traitorPlayers = {
     'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
 
-# TODO need to add James?
 transferredPlayers = {
     'Monday Combined Leeds': {},
     'Tuesday Vets Leeds': {},

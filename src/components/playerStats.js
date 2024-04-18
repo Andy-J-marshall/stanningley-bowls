@@ -40,6 +40,7 @@ function PlayerStats(props) {
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
+    const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
     const statsToDisplayArray = [];
 
     players.sort().forEach((player) => {
@@ -90,6 +91,11 @@ function PlayerStats(props) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
+
+        const playersWithGames = statsToDisplayArray.filter(
+            (player) => player.games > 0
+        );
+        setTotalPlayersUsed(playersWithGames.length);
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
@@ -334,6 +340,15 @@ function PlayerStats(props) {
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
                         Player not found
                     </h2>
+                )}
+
+            {/* // TODO Add tests */}
+            <br />
+            {!showSinglesOnlyBool &&
+                !showPairsOnlyBool &&
+                !showStatSummary &&
+                !showStatsSinceStart && (
+                    <p id='total-player-count'>Total players: {totalPlayersUsed}</p>
                 )}
 
             <PlayerStatsOptions

@@ -6,6 +6,7 @@ function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
+    const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     const [loaded, setLoaded] = useState(false);
 
@@ -90,6 +91,10 @@ function AllTimePlayerStats(props) {
         if (!loaded) {
             window.scrollTo(0, 0);
         }
+        const playersWithGames = statsToDisplayArray.filter(
+            (player) => player.games > 0
+        );
+        setTotalPlayersUsed(playersWithGames.length);
         setLoaded(true);
     });
 
@@ -101,6 +106,8 @@ function AllTimePlayerStats(props) {
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
             />
+            <br />
+            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
         </div>
     );
 }
