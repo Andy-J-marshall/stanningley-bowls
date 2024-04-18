@@ -31,6 +31,7 @@ export class PlayerStatsPage {
   private readonly singlesOnlyRadio: Locator;
   private readonly pairsOnlyRadio: Locator;
   private readonly allGameTypesRadio: Locator;
+  private readonly totalPlayerCount: Locator;
 
   private games: Locator;
   private wins: Locator;
@@ -79,6 +80,7 @@ export class PlayerStatsPage {
     this.wins = page.locator('#steve-gardner-wins');
     this.winPerc = page.locator('#steve-gardner-win-perc');
     this.avg = page.locator('#steve-gardner-avg');
+    this.totalPlayerCount = page.locator('#total-player-count');
   }
 
   setPlayerToFind(name: string) {
@@ -162,6 +164,14 @@ export class PlayerStatsPage {
 
   async deselectSince2022Checkbox() {
     await this.allYearCheckBox.uncheck();
+  }
+
+  async totalPlayerCountIsCorrect(playerCount: string) {
+    await expect(this.totalPlayerCount).toContainText(playerCount);
+  }
+
+  async totalPlayerCountIsNotVisible() {
+    await expect(this.totalPlayerCount).toBeHidden();
   }
 
   async validateSummaryStats(playerStats: PlayerStats) {

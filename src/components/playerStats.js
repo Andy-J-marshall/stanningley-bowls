@@ -348,7 +348,7 @@ function PlayerStats(props) {
                 !showPairsOnlyBool &&
                 !showStatSummary &&
                 !showStatsSinceStart && (
-                    <p>Total players: {totalPlayersUsed}</p>
+                    <p id='total-player-count'>Total players: {totalPlayersUsed}</p>
                 )}
 
             <PlayerStatsOptions

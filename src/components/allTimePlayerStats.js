@@ -107,7 +107,7 @@ function AllTimePlayerStats(props) {
                 showPairsOnly={showPairsOnlyBool}
             />
             <br />
-            {!showSinglesOnlyBool && !showPairsOnlyBool && <p>Total players since 2022: {totalPlayersUsed}</p>}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
         </div>
     );
 }
