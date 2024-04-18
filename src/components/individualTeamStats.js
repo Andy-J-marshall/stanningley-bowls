@@ -1,5 +1,6 @@
 import StatsTableDisplay from './statsTableDisplay';
 import PlayerStatSummary from './playerStatSummary';
+import { checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
 import config from '../config';
 
 function IndividualTeamStats(props) {
@@ -29,12 +30,14 @@ function IndividualTeamStats(props) {
             .map((player) => {
                 const stats = playerStats[player][day.toLowerCase()];
                 const { games, wins, aggDiff } = stats;
-                const playerDayStats = {
+                let playerDayStats = {
                     player,
                     games,
                     wins,
                     average: aggDiff / games,
+                    winPerc: (wins / games) * 100,
                 };
+                playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
                 return playerDayStats;
             });
 

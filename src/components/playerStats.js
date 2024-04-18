@@ -342,7 +342,6 @@ function PlayerStats(props) {
                     </h2>
                 )}
 
-            {/* // TODO Add tests */}
             <br />
             {!showSinglesOnlyBool &&
                 !showPairsOnlyBool &&
