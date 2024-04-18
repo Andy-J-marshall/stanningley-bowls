@@ -92,7 +92,10 @@ function PlayerStats(props) {
         }
         setLoaded(true);
 
-        setTotalPlayersUsed(statsToDisplayArray.length);
+        const playersWithGames = statsToDisplayArray.filter(
+            (player) => player.games > 0
+        );
+        setTotalPlayersUsed(playersWithGames.length);
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
