@@ -128,3 +128,8 @@ test('Summary of Bernie Miller stats since 2022 for all teams is correct', async
   await playerStatsPage.selectPairsOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-13');
 });
+
+test('Total player count is not visible for all team stats', async () => {
+  await playerStatsPage.selectAllTeamStatsCheckbox();
+  await playerStatsPage.totalPlayerCountIsNotVisible();
+});
