@@ -343,9 +343,13 @@ function PlayerStats(props) {
                 )}
 
             {/* // TODO Add tests */}
-            {/* TODO style this. Use own component? */}
-            {/* TODO would this be better in the team stats instead? */}
-            {!showSinglesOnlyBool && !showPairsOnlyBool && !showStatSummary && !showStatsSinceStart && <p>Total players used: {totalPlayersUsed}</p>}
+            <br />
+            {!showSinglesOnlyBool &&
+                !showPairsOnlyBool &&
+                !showStatSummary &&
+                !showStatsSinceStart && (
+                    <p>Total players: {totalPlayersUsed}</p>
+                )}
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
