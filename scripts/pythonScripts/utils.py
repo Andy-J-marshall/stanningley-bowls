@@ -15,7 +15,7 @@ extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = ['cliff brogie']
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['pudsey', 'burley', 'wibsey', 'tarnfield', 'littlemoor', 'farsley', 'bramley']
+otherTeams = ['new', 'pudsey', 'burley', 'wibsey', 'tarnfield', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
