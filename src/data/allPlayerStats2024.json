@@ -246,12 +246,21 @@
             ]
         },
         "clifford brogie": {
+<<<<<<< HEAD
             "totalAgg": 128,
             "totalAggAgainst": 134,
             "availableAgg": 168,
             "availablePairsAgg": 63,
             "availableHomeAgg": 84,
             "availableAwayAgg": 84,
+=======
+            "totalAgg": 149,
+            "totalAggAgainst": 148,
+            "availableAgg": 189,
+            "availablePairsAgg": 63,
+            "availableHomeAgg": 84,
+            "availableAwayAgg": 105,
+>>>>>>> c3790ad (updated stats)
             "availablePairsHomeAgg": 21,
             "availablePairsAwayAgg": 42,
             "totalPairsAgg": 45,
@@ -260,13 +269,22 @@
             "totalHomeAggAgainst": 55,
             "totalPairsHomeAgg": 21,
             "totalPairsHomeAggAgainst": 17,
+<<<<<<< HEAD
             "totalAwayAgg": 50,
             "totalAwayAggAgainst": 79,
+=======
+            "totalAwayAgg": 71,
+            "totalAwayAggAgainst": 93,
+>>>>>>> c3790ad (updated stats)
             "totalPairsAwayAgg": 24,
             "totalPairsAwayAggAgainst": 37,
             "homeWins": 3,
             "homeLosses": 1,
+<<<<<<< HEAD
             "awayWins": 1,
+=======
+            "awayWins": 2,
+>>>>>>> c3790ad (updated stats)
             "awayLosses": 3,
             "cupWins": 0,
             "cupLosses": 0,
@@ -278,7 +296,11 @@
             "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
+<<<<<<< HEAD
             "totalGamesPlayed": 8,
+=======
+            "totalGamesPlayed": 9,
+>>>>>>> c3790ad (updated stats)
             "dayPlayed": [
                 "Monday Combined Leeds (Stanningley)",
                 "Monday Combined Leeds (Stanningley)",
@@ -287,6 +309,7 @@
                 "Wednesday Half Holiday Leeds (Burley Park)",
                 "Wednesday Half Holiday Leeds (Burley Park)",
                 "Thursday Vets Leeds (Stanningley A)",
+                "Saturday Leeds (Pudsey Park)",
                 "Saturday Leeds (Pudsey Park)"
             ],
             "pairsPartners": [
@@ -309,7 +332,8 @@
                 "clifford brogie 21 - 16 barry potter",
                 "clifford brogie 14 - 21 david clarke",
                 "clifford brogie 15 - 21 frank lindsay",
-                "clifford brogie 21 - 1 josie burdon"
+                "clifford brogie 21 - 1 josie burdon",
+                "clifford brogie 21 - 14 paul jagger"
             ]
         },
         "colin haque": {
@@ -2164,6 +2188,10 @@
             ]
         }
     },
+<<<<<<< HEAD
     "lastUpdated": "24/04/2024",
+=======
+    "lastUpdated": "25/04/2024",
+>>>>>>> c3790ad (updated stats)
     "statsYear": "2024"
 }

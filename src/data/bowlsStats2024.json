@@ -3735,7 +3735,7 @@
             "totalGamesPlayed": 2,
             "agg": 276,
             "opponentAgg": 244,
-            "leaguePosition": 2,
+            "leaguePosition": 4,
             "results": [
                 "Cross Flatts A 37 - 21 Stanningley A (Sat 13th Apr)",
                 "Stanningley A 40 - 13 Gildersome A (Sat 20th Apr)"
@@ -3757,7 +3757,7 @@
             "totalGamesPlayed": 2,
             "agg": 287,
             "opponentAgg": 242,
-            "leaguePosition": 1,
+            "leaguePosition": 4,
             "results": [
                 "Stanningley B 32 - 28 Gildersome B (Sat 13th Apr)",
                 "New Armley 24 - 31 Stanningley B (Sat 20th Apr)"
@@ -3765,6 +3765,6 @@
         }
     ],
     "clubCupWinner": "",
-    "lastUpdated": "24/04/2024",
+    "lastUpdated": "25/04/2024",
     "statsYear": "2024"
 }
