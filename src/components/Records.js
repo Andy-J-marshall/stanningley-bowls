@@ -4,7 +4,7 @@ import PlayerRecords from './playerRecords';
 function Records(props) {
     const stats = props.stats;
 
-    const { playerResults, teamResults } = stats;
+    const { playerResults } = stats;
 
     useEffect(() => {
         window.scrollTo(0, 0);
