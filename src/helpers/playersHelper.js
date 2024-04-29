@@ -401,3 +401,50 @@ export function checkWinPercAndAverageAreNumbers(stats) {
 
     return verifiedStats
 }
+
+export function collatePlayerStats(statsToUse, players) {
+    const statsArray = []
+    players.sort().forEach((player) => {
+        const playerStats = returnPlayerStats(statsToUse, player);
+        if (playerStats) {
+            let stats = {
+                // Total
+                player,
+                games: playerStats.gamesPlayed,
+                wins: playerStats.totalWins,
+                winPerc: (playerStats.totalWins / playerStats.gamesPlayed) * 100,
+                agg: playerStats.totalAgg,
+                aggAgainst: playerStats.totalAggAgainst,
+                average:
+                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
+                    playerStats.gamesPlayed,
+
+                // Singles
+                singleGames: playerStats.singlesGames,
+                singlesWins: playerStats.totalWins - playerStats.pairWins,
+                singlesWinPerc: ((playerStats.totalWins - playerStats.pairWins) / playerStats.singlesGames) * 100,
+                singlesAgg: playerStats.singlesAgg,
+                singlesAggAgainst: playerStats.singlesAggAgainst,
+                singlesAverage:
+                    (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
+                    playerStats.singlesGames,
+
+                // Pairs
+                pairsGames: playerStats.pairsGames,
+                pairsWins: playerStats.pairWins,
+                pairsWinPerc: (playerStats.pairWins / playerStats.pairsGames) * 100,
+                pairsAgg: playerStats.totalPairsAgg,
+                pairsAggAgainst: playerStats.totalPairsAggAgainst,
+                pairsAverage:
+                    (playerStats.totalPairsAgg -
+                        playerStats.totalPairsAggAgainst) /
+                    playerStats.pairsGames,
+            };
+
+            stats = checkWinPercAndAverageAreNumbers(stats);
+
+            statsArray.push(stats);
+        }
+    });
+    return statsArray;
+}

@@ -10,7 +10,7 @@ import Players from './players';
 import PlayerStatSummary from './playerStatSummary';
 import PlayerStatsOptions from './playerStatsOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
-import { returnPlayerStats, checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
+import { collatePlayerStats } from '../helpers/playersHelper';
 import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
@@ -41,50 +41,7 @@ function PlayerStats(props) {
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = [];
-
-    players.sort().forEach((player) => {
-        const playerStats = returnPlayerStats(statsToUse, player);
-        if (playerStats) {
-            let stats = {
-                // Total
-                player,
-                games: playerStats.gamesPlayed,
-                wins: playerStats.totalWins,
-                winPerc: (playerStats.totalWins / playerStats.gamesPlayed) * 100,
-                agg: playerStats.totalAgg,
-                aggAgainst: playerStats.totalAggAgainst,
-                average:
-                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
-                    playerStats.gamesPlayed,
-
-                // Singles
-                singleGames: playerStats.singlesGames,
-                singlesWins: playerStats.totalWins - playerStats.pairWins,
-                singlesWinPerc: ((playerStats.totalWins - playerStats.pairWins) / playerStats.singlesGames) * 100,
-                singlesAgg: playerStats.singlesAgg,
-                singlesAggAgainst: playerStats.singlesAggAgainst,
-                singlesAverage:
-                    (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
-                    playerStats.singlesGames,
-
-                // Pairs
-                pairsGames: playerStats.pairsGames,
-                pairsWins: playerStats.pairWins,
-                pairsWinPerc: (playerStats.pairWins / playerStats.pairsGames) * 100,
-                pairsAgg: playerStats.totalPairsAgg,
-                pairsAggAgainst: playerStats.totalPairsAggAgainst,
-                pairsAverage:
-                    (playerStats.totalPairsAgg -
-                        playerStats.totalPairsAggAgainst) /
-                    playerStats.pairsGames,
-            };
-
-            stats = checkWinPercAndAverageAreNumbers(stats);
-
-            statsToDisplayArray.push(stats);
-        }
-    });
+    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
 
     useEffect(() => {
         if (!loaded) {
