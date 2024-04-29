@@ -138,6 +138,9 @@ function PlayerRecords(props) {
         if (tuesday && tuesday.games >= highestTuesGames) {
             highestTuesGames = tuesday.games;
         }
+        if (wednesdayPairs && wednesdayPairs.games >= highestWedPairsGames) {
+            highestWedPairsGames = wednesdayPairs.games;
+        }
         if (wednesday && wednesday.games >= highestWedGames) {
             highestWedGames = wednesday.games;
         }
