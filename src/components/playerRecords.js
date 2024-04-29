@@ -531,7 +531,7 @@ function PlayerRecords(props) {
 
             if (
                 saturdayBWinPerc >= bestSaturdayBWinPerc &&
-                saturdayBGames >= minSatGames
+                saturdayBGames >= minSatBGames
             ) {
                 if (saturdayBWinPerc > bestSaturdayBWinPerc) {
                     bestSaturdayBWinPercPlayer = [];
