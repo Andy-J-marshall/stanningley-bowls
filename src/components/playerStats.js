@@ -344,6 +344,7 @@ function PlayerStats(props) {
 
             <br />
             {!showSinglesOnlyBool &&
+                !searchedPlayerName &&
                 !showPairsOnlyBool &&
                 !showStatSummary &&
                 !showStatsSinceStart && (
