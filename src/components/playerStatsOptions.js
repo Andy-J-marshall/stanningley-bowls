@@ -6,6 +6,7 @@ function PlayerStatsOptions(props) {
     const allYearStatsCallback = props.allYearStatsCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
+    const specificDayPlayerStatsCallback = props.specificDayPlayerStatsCallback;
     const playerSearchedFor = props.playerSearchedFor;
 
     const [key, setKey] = useState(playerSearchedFor);
@@ -14,6 +15,15 @@ function PlayerStatsOptions(props) {
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
     const [allGameTypesToggle, setAllGameTypesToggle] = useState(true);
+    const [allDayPlayerStatsToggle, setAllDayPlayerStatsToggle] = useState(true);
+    const [mondayPlayerStatsToggle, setMondayPlayerStatsToggle] = useState(false);
+    const [tuesVetsPlayerStatsToggle, setTuesVetsPlayerStatsToggle] = useState(false);
+    const [tuesdayPlayerStatsToggle, setTuesdayPlayerStatsToggle] = useState(false);
+    const [wednesdayPlayerStatsToggle, setWednesdayPlayerStatsToggle] = useState(false);
+    const [wedPairsPlayerStatsToggle, setWedPairsPlayerStatsToggle] = useState(false);
+    const [thurVetsPlayerStatsToggle, setThurVetsPlayerStatsToggle] = useState(false);
+    const [saturdayPlayerStatsToggle, setSaturdayPlayerStatsToggle] = useState(false);
+    const [saturdayBPlayerStatsToggle, setSaturdayBPlayerStatsToggle] = useState(false);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -25,6 +35,12 @@ function PlayerStatsOptions(props) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
+    }
+
+    function toggleAllYearStats(event) {
+        const allYearStatsToggle = event.currentTarget.checked;
+        setAllYearToggle(allYearStatsToggle);
+        allYearStatsCallback(allYearStatsToggle);
     }
 
     function toggleSinglesOnlyMatches() {
@@ -57,10 +73,67 @@ function PlayerStatsOptions(props) {
         onlyPairsCallback(false);
     }
 
-    function toggleAllYearStats(event) {
-        const allYearStatsToggle = event.currentTarget.checked;
-        setAllYearToggle(allYearStatsToggle);
-        allYearStatsCallback(allYearStatsToggle);
+    function toggleMondayPlayedStats() {
+        setMondayPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('monday combined leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleTuesVetsPlayedStats() {
+        setTuesVetsPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('tuesday vets leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleTuesdayPlayedStats() {
+        setTuesdayPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('tuesday leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleWednesdayPlayedStats() {
+        setWednesdayPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('wednesday half holiday leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleWedPairsPlayedStats() {
+        setWedPairsPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('wednesday pairs airewharfe');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleThurVetsPlayedStats() {
+        setThurVetsPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('thursday vets leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleSaturdayPlayedStats() {
+        setSaturdayPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('saturday leeds');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleSaturdayBPlayedStats() {
+        setSaturdayBPlayerStatsToggle(true);
+        specificDayPlayerStatsCallback('saturday leeds (b)');
+        
+        setAllDayPlayerStatsToggle(false);
+    }
+
+    function toggleAllDaysPlayedStats() {
+        setAllDayPlayerStatsToggle(true);
+        setMondayPlayerStatsToggle(false);
+
+        specificDayPlayerStatsCallback('');
     }
 
     return (
@@ -137,6 +210,110 @@ function PlayerStatsOptions(props) {
                                                     type="radio"
                                                     label="Pairs"
                                                     checked={pairsOnlyToggle}
+                                                />
+                                            </Col>
+                                        </InputGroup>
+                                    </Row>
+                                    <Row>
+                                        <h6>DAYS PLAYED</h6>
+                                        <InputGroup>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#all-days-players-radio"
+                                                    onChange={toggleAllDaysPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="All"
+                                                    checked={allDayPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#monday-players-radio"
+                                                    onChange={toggleMondayPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Monday"
+                                                    checked={mondayPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#tues-vets-players-radio"
+                                                    onChange={toggleTuesVetsPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Tuesday Vets"
+                                                    checked={tuesVetsPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#tuesday-players-radio"
+                                                    onChange={toggleTuesdayPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Tuesday"
+                                                    checked={tuesdayPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#wednesday-players-radio"
+                                                    onChange={toggleWednesdayPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Wednesday"
+                                                    checked={wednesdayPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#wed-pairs-players-radio"
+                                                    onChange={toggleWedPairsPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Wednesday Pairs"
+                                                    checked={wedPairsPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#thur-vets-players-radio"
+                                                    onChange={toggleThurVetsPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Thursday Vets"
+                                                    checked={thurVetsPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#saturday-players-radio"
+                                                    onChange={toggleSaturdayPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Saturday A"
+                                                    checked={saturdayPlayerStatsToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#saturday-b-players-radio"
+                                                    onChange={toggleSaturdayBPlayedStats}
+                                                    name="dayPlayersOptions"
+                                                    type="radio"
+                                                    label="Saturday B"
+                                                    checked={saturdayBPlayerStatsToggle}
                                                 />
                                             </Col>
                                         </InputGroup>

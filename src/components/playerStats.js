@@ -41,7 +41,8 @@ function PlayerStats(props) {
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
+    const [specificDayPlayerStatsDay, setSpecificDayPlayerStatsDay] = useState('');
+    let statsToDisplayArray = collatePlayerStats(statsToUse, players);
 
     useEffect(() => {
         if (!loaded) {
@@ -95,6 +96,10 @@ function PlayerStats(props) {
         } else {
             setShowStatsSinceStart(false);
         }
+    }
+
+    function specificDayPlayerStatsCallback(day) {
+        setSpecificDayPlayerStatsDay(day);
     }
 
     function searchForPlayer(searchedName) {
@@ -176,7 +181,24 @@ function PlayerStats(props) {
         }
     }
 
-    function returnStatsTable() {
+    function returnStatsTable() {        
+        let playersToDisplay = players;
+        if (specificDayPlayerStatsDay && specificDayPlayerStatsDay != '') {
+            let playersForDay = [];
+
+            players.sort().forEach((player) => {
+                const playerStats = statsToUse[player];
+                if (playerStats) {
+                    const dayStats = playerStats[specificDayPlayerStatsDay];
+                    if (dayStats && dayStats.games > 0) {
+                        playersForDay.push(player);
+                    }
+                }
+            })
+            playersToDisplay = playersForDay.sort();
+        }
+        
+        statsToDisplayArray = collatePlayerStats(statsToUse, playersToDisplay);
         const gamesPlayedThisYear = statsToDisplayArray.find(
             (player) => player.games > 0
         );
@@ -314,6 +336,7 @@ function PlayerStats(props) {
                 allYearStatsCallback={allYearStatsCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
+                specificDayPlayerStatsCallback={specificDayPlayerStatsCallback}
                 playerSearchedFor={searchedPlayerName}
             />
         </div>
