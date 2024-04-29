@@ -13,7 +13,7 @@ leaguesWithGamesTo26 = ['wednesday pairs airewharfe', 'monday pairs airewharfe']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
-otherDuplicatePlayers = ['cliff brogie']
+otherDuplicatePlayers = []
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 otherTeams = ['new', 'pudsey', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
@@ -40,6 +40,8 @@ def deduplicateNames(name):
         name = 'Andy Waller'
     if name == 'Don Shaw':
         name = 'Donald Shaw'
+    if name == 'James Moorin':
+        name = 'Jim Moorin'
     return name.lower()
 
 

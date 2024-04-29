@@ -25,7 +25,7 @@ players = [
 
 # Players with different spellings of name (lowercase)
 duplicateTeamMemberNames = ['duncan mc phail',
-                            'stuart watson', 'andrew marshall', 'cliff brogie']
+                            'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin']
 
 traitorPlayers = {
     'Monday Combined Leeds': ['neil porter'],
