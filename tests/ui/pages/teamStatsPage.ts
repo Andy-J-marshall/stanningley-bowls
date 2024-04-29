@@ -9,6 +9,7 @@ export class TeamStatsPage {
   private readonly totalWinsValue: Locator;
   private readonly totalLossesValue: Locator;
   private readonly totalDrawsValue: Locator;
+  private readonly totalWinPercValue: Locator;
   private readonly totalHomeWinPercValue: Locator;
   private readonly totalAwayWinPercValue: Locator;
   private readonly totalCupWinPercValue: Locator;
@@ -19,6 +20,7 @@ export class TeamStatsPage {
   private readonly mondayWinsValue: Locator;
   private readonly mondayLossesValue: Locator;
   private readonly mondayDrawsValue: Locator;
+  private readonly mondayWinPercValue: Locator;
   private readonly mondayHomeWinPercValue: Locator;
   private readonly mondayAwayWinPercValue: Locator;
   private readonly mondayCupWinPercValue: Locator;
@@ -30,6 +32,7 @@ export class TeamStatsPage {
   private readonly tuesVetsWinsValue: Locator;
   private readonly tuesVetsLossesValue: Locator;
   private readonly tuesVetsDrawsValue: Locator;
+  private readonly tuesVetsWinPercValue: Locator;
   private readonly tuesVetsHomeWinPercValue: Locator;
   private readonly tuesVetsAwayWinPercValue: Locator;
   private readonly tuesVetsCupWinPercValue: Locator;
@@ -52,6 +55,9 @@ export class TeamStatsPage {
     );
     this.totalDrawsValue = page.locator(
       '#combined-team-win-losses #totalDrawsValue'
+    );
+    this.totalWinPercValue = page.locator(
+      '#combined-team-win-losses #totalWinPercValue'
     );
     this.totalHomeWinPercValue = page.locator(
       '#combined-team-win-losses #totalHomeWinPercValue'
@@ -80,6 +86,9 @@ export class TeamStatsPage {
     );
     this.mondayDrawsValue = page.locator(
       '#mondaycombinedleeds-team-results #totalDrawsValue'
+    );
+    this.mondayWinPercValue = page.locator(
+      '#mondaycombinedleeds-team-results #totalWinPercValue'
     );
     this.mondayHomeWinPercValue = page.locator(
       '#mondaycombinedleeds-team-results #totalHomeWinPercValue'
@@ -111,6 +120,9 @@ export class TeamStatsPage {
     );
     this.tuesVetsDrawsValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalDrawsValue'
+    );
+    this.tuesVetsWinPercValue = page.locator(
+      '#tuesdayvetsleeds-team-results #totalWinPercValue'
     );
     this.tuesVetsHomeWinPercValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalHomeWinPercValue'
@@ -148,6 +160,7 @@ export class TeamStatsPage {
     expect(this.totalWinsValue).toContainText('87');
     expect(this.totalLossesValue).toContainText('20');
     expect(this.totalDrawsValue).toContainText('5');
+    expect(this.totalWinPercValue).toContainText('78%');
     expect(this.totalHomeWinPercValue).toContainText('94%');
     expect(this.totalAwayWinPercValue).toContainText('59%');
     expect(this.totalCupWinPercValue).toContainText('86%');
@@ -164,6 +177,7 @@ export class TeamStatsPage {
     expect(this.tuesVetsWinsValue).toContainText('21');
     expect(this.tuesVetsLossesValue).toContainText('1');
     expect(this.tuesVetsDrawsValue).toHaveCount(0);
+    expect(this.tuesVetsWinPercValue).toContainText('95%');
     expect(this.tuesVetsHomeWinPercValue).toContainText('100%');
     expect(this.tuesVetsAwayWinPercValue).toContainText('89%');
     expect(this.tuesVetsCupWinPercValue).toContainText('100%');
@@ -180,6 +194,7 @@ export class TeamStatsPage {
     expect(this.mondayWinsValue).toContainText('12');
     expect(this.mondayLossesValue).toContainText('5');
     expect(this.mondayDrawsValue).toContainText('3');
+    expect(this.mondayWinPercValue).toContainText('60%');
     expect(this.mondayHomeWinPercValue).toContainText('70%');
     expect(this.mondayAwayWinPercValue).toContainText('50%');
     expect(this.mondayCupWinPercValue).toHaveCount(0);

@@ -62,6 +62,12 @@ function StatsTableDisplay(props) {
                             <td id="totalDrawsValue">{totalDraws}</td>
                         </tr>
                     ) : null}
+                    {totalWins >= 0 ? (
+                        <tr>
+                            <td>Win percentage</td>
+                            <td id="totalWinPercValue">{(totalWins / totalGames * 100).toFixed(0)}%</td>
+                        </tr>
+                    ) : null}
                     {homeGames > 0 ? (
                         <tr>
                             <td>Home win percentage</td>

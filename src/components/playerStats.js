@@ -342,6 +342,7 @@ function PlayerStats(props) {
                     </h2>
                 )}
 
+            {/* Shows total player count */}
             <br />
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
