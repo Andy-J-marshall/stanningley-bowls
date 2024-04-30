@@ -16,7 +16,7 @@ const teams = [
   },
   {
     day: 'Tuesday Vets Leeds',
-    url: '/LeedsParkVets-Tue',
+    url: '/Leeds-TueVets',
   },
   {
     day: 'Tuesday Leeds',
@@ -32,7 +32,7 @@ const teams = [
   },
   {
     day: 'Thursday Vets Leeds',
-    url: '/LeedsParkVets-Thu',
+    url: '/Leeds-ThuVets',
   },
   {
     day: 'Saturday Leeds',
