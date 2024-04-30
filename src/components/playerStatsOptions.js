@@ -129,11 +129,20 @@ function PlayerStatsOptions(props) {
         setAllDayPlayerStatsToggle(false);
     }
 
+    // TODO not fully working yet, especially when selecting a team with no stats for a particular year
+
     function toggleAllDaysPlayedStats() {
         setAllDayPlayerStatsToggle(true);
-        setMondayPlayerStatsToggle(false);
-
         specificDayPlayerStatsCallback('');
+
+        setMondayPlayerStatsToggle(false);
+        setTuesVetsPlayerStatsToggle(false);
+        setTuesdayPlayerStatsToggle(false);
+        setWednesdayPlayerStatsToggle(false);
+        setWedPairsPlayerStatsToggle(false);
+        setThurVetsPlayerStatsToggle(false);
+        setSaturdayPlayerStatsToggle(false);
+        setSaturdayBPlayerStatsToggle(false);
     }
 
     return (
