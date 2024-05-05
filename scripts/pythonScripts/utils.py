@@ -141,6 +141,14 @@ def formatTeamName(possibleTeamName):
     teamName = teamName.replace('  ', ' ')
     teamName = teamName.strip()
     return teamName
+                
+def checkForDuplicateResults(results, player):
+    potentialDuplicatesFound = len(results) != len(set(results))
+    if potentialDuplicatesFound:
+        print('***')
+        print('check for potential duplicate results for player:' + player)
+        print(results)
+        print('***')
 
 def sanityChecksOnTeamStats(allTeamResults):
     print('Running sanity checks on team stats')
@@ -243,3 +251,4 @@ def sanityChecksOnPlayerStats(playerStats, players):
         if len(stats['losingPairsPartners']) != stats['pairLosses']:
             raise Exception(f'losingPairsPartners for {player} incorrect?')
         
+        checkForDuplicateResults(stats['results'], player)
