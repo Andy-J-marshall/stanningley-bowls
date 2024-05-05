@@ -3,17 +3,19 @@ import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: '.',
-  timeout: 30 * 1000,
+  timeout: 12 * 1000,
   expect: {
     timeout: 5000
   },
   fullyParallel: true,
   forbidOnly: true,
   retries: 2,
+  // reporter: 'html',
   use: {
     actionTimeout: 0,
     baseURL: 'https://bowlsnet.uk',
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
+    screenshot: 'only-on-failure',
   },
 
   projects: [
