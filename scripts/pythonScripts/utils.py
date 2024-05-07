@@ -26,7 +26,6 @@ def findHtmlFiles():
         files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
     return files
 
-
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
         name = 'Duncan McPhail'
@@ -42,6 +41,10 @@ def deduplicateNames(name):
         name = 'Donald Shaw'
     if name == 'James Moorin':
         name = 'Jim Moorin'
+    if name == 'Philip Thornton':
+        name = 'Phil Thornton'
+    if name == 'Phillip Thornton':
+        name = 'Phil Thornton'
     return name.lower()
 
 

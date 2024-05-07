@@ -20,11 +20,11 @@ players = [
     'alison woodfine', 'joey broadbent', 'vanessa lancaster', 'paul leonard', 'martin fulton',
     'malvin miller', 'stuart potter', 'colin haque', 'ken green', 'robin mcdermott', 'stephen tiernan',
     'david eaton', 'mary spears', 'peter crowther', 'laila packer', 'richard hodgson', 'jim swailes',
-    'iliya marhov', 'nicola bona', 'karl chapman'
+    'nicola bona', 'karl chapman', 'phil thornton'
 ]
 
 # Players with different spellings of name (lowercase)
-duplicateTeamMemberNames = ['duncan mc phail',
+duplicateTeamMemberNames = ['duncan mc phail', 'phillip thornton', 'philip thornton',
                             'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin']
 
 traitorPlayers = {
