@@ -71,7 +71,7 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
   await yearSelectPage.select2023Year();
-  playerStatsPage.playerStatsAreCorrectInTable('93', '53', '57%', '1.81');
+  playerStatsPage.playerStatsAreCorrectInTable('111', '66', '59%', '2.23');
 
   await yearSelectPage.select2022Year();
   playerStatsPage.playerStatsAreCorrectInTable('96', '69', '72%', '5.35');
