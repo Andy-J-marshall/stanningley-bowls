@@ -161,13 +161,11 @@ for team in teamDays:
             cupGame = True
 
             # To account for handicap row in cup games
-            # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
             checkForTeamHandicap = sheet[homeTeamNameCol +
                                  str(row + 9 - rowsDownAdjustmentInt)].value
             if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
                 rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
 
-            # TODO might need the "+ rowsUpIntModifier", check after first airewharfe cup game
             # Find the number of rows down for the team scores
             totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
         else:
