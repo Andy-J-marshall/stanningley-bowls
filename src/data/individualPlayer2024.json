@@ -1,0 +1,64 @@
+{
+    "playerResults": {
+        "ann lucas": {
+            "totalAgg": 68,
+            "totalAggAgainst": 97,
+            "availableAgg": 99,
+            "availablePairsAgg": 78,
+            "availableHomeAgg": 26,
+            "availableAwayAgg": 47,
+            "availablePairsHomeAgg": 26,
+            "availablePairsAwayAgg": 26,
+            "totalPairsAgg": 47,
+            "totalPairsAggAgainst": 78,
+            "totalHomeAgg": 18,
+            "totalHomeAggAgainst": 26,
+            "totalPairsHomeAgg": 18,
+            "totalPairsHomeAggAgainst": 26,
+            "totalAwayAgg": 37,
+            "totalAwayAggAgainst": 45,
+            "totalPairsAwayAgg": 16,
+            "totalPairsAwayAggAgainst": 26,
+            "homeWins": 0,
+            "homeLosses": 1,
+            "awayWins": 1,
+            "awayLosses": 1,
+            "cupWins": 0,
+            "cupLosses": 1,
+            "pairWins": 0,
+            "pairLosses": 3,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 1,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 1,
+            "pairCupWins": 0,
+            "pairCupLosses": 1,
+            "totalGamesPlayed": 4,
+            "dayPlayed": [
+                "Wednesday Half Holiday Leeds (Churwell Park)",
+                "Wednesday Pairs AireWharfe (New Armley)",
+                "Wednesday Pairs AireWharfe (New Armley)",
+                "Wednesday Pairs AireWharfe (New Armley)"
+            ],
+            "pairsPartners": [
+                "Shirley Barker",
+                "Shirley Barker",
+                "Shirley Barker"
+            ],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [
+                "Shirley Barker",
+                "Shirley Barker",
+                "Shirley Barker"
+            ],
+            "results": [
+                "ann lucas 21 - 19 Paul Bowes",
+                "ann lucas & Shirley Barker 18 - 26 David Firth & Kath Crompton",
+                "ann lucas & Shirley Barker 16 - 26 Ken Garrett & Sue Pagdin",
+                "ann lucas & Shirley Barker 13 - 26 Gail Singh & Amrik Singh"
+            ]
+        }
+    },
+    "lastUpdated": "10/05/2024",
+    "statsYear": "2024"
+}

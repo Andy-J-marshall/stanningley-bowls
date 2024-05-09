@@ -20,6 +20,48 @@ teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
+def returnPlayerObj():
+    return {
+        'totalAgg': 0,
+        'totalAggAgainst': 0,
+        'availableAgg': 0,
+        'availablePairsAgg': 0,
+        'availableHomeAgg': 0,
+        'availableAwayAgg': 0,
+        'availablePairsHomeAgg': 0,
+        'availablePairsAwayAgg': 0,
+        'totalPairsAgg': 0,
+        'totalPairsAggAgainst': 0,
+        'totalHomeAgg': 0,
+        'totalHomeAggAgainst': 0,
+        'totalPairsHomeAgg': 0,
+        'totalPairsHomeAggAgainst': 0,
+        'totalAwayAgg': 0,
+        'totalAwayAggAgainst': 0,
+        'totalPairsAwayAgg': 0,
+        'totalPairsAwayAggAgainst': 0,
+        'homeWins': 0,
+        'homeLosses': 0,
+        'awayWins': 0,
+        'awayLosses': 0,
+        'cupWins': 0,
+        'cupLosses': 0,
+        'pairWins': 0,
+        'pairLosses': 0,
+        'pairHomeWins': 0,
+        'pairHomeLosses': 0,
+        'pairAwayWins': 0,
+        'pairAwayLosses': 0,
+        'pairCupWins': 0,
+        'pairCupLosses': 0,
+        'totalGamesPlayed': 0,
+        'dayPlayed': [],
+        'pairsPartners': [],
+        'winningPairsPartners': [],
+        'losingPairsPartners': [],
+        'results': []
+    }
+
 def findHtmlFiles():
     files = []
     for team in teamDays:
@@ -75,46 +117,7 @@ def returnListOfPlayerStats(days, includeTeamData):
     playerStats = {}
     for player in players:
         player = anonymiseNames(player)
-        playerObj = {
-            'totalAgg': 0,
-            'totalAggAgainst': 0,
-            'availableAgg': 0,
-            'availablePairsAgg': 0,
-            'availableHomeAgg': 0,
-            'availableAwayAgg': 0,
-            'availablePairsHomeAgg': 0,
-            'availablePairsAwayAgg': 0,
-            'totalPairsAgg': 0,
-            'totalPairsAggAgainst': 0,
-            'totalHomeAgg': 0,
-            'totalHomeAggAgainst': 0,
-            'totalPairsHomeAgg': 0,
-            'totalPairsHomeAggAgainst': 0,
-            'totalAwayAgg': 0,
-            'totalAwayAggAgainst': 0,
-            'totalPairsAwayAgg': 0,
-            'totalPairsAwayAggAgainst': 0,
-            'homeWins': 0,
-            'homeLosses': 0,
-            'awayWins': 0,
-            'awayLosses': 0,
-            'cupWins': 0,
-            'cupLosses': 0,
-            'pairWins': 0,
-            'pairLosses': 0,
-            'pairHomeWins': 0,
-            'pairHomeLosses': 0,
-            'pairAwayWins': 0,
-            'pairAwayLosses': 0,
-            'pairCupWins': 0,
-            'pairCupLosses': 0,
-            'totalGamesPlayed': 0,
-            'dayPlayed': [],
-            'pairsPartners': [],
-            'winningPairsPartners': [],
-            'losingPairsPartners': [],
-            'results': [],
-        }
+        playerObj = returnPlayerObj()
 
         if includeTeamData == True:
             for team in days:
@@ -125,6 +128,12 @@ def returnListOfPlayerStats(days, includeTeamData):
                     'aggDiff': 0,
                 }
         playerStats[player] = playerObj
+    return playerStats
+
+def returnIndividualPlayerStats(player):
+    player = standardiseName(player).lower()
+    playerObj = returnPlayerObj()
+    playerStats = { player: playerObj }
     return playerStats
 
 def formatTeamName(possibleTeamName):
