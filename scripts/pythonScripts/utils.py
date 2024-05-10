@@ -89,12 +89,10 @@ def deduplicateNames(name):
         name = 'Phil Thornton'
     return name.lower()
 
-
 def anonymiseNames(name):
     if name.lower() == 'alison woodfine':
         name = 'Alison'
     return name.lower()
-
 
 def standardiseName(name):
     name = name.replace(' - ', '-')
@@ -131,7 +129,6 @@ def returnListOfPlayerStats(days, includeTeamData):
     return playerStats
 
 def returnIndividualPlayerStats(player):
-    player = standardiseName(player).lower()
     playerObj = returnPlayerObj()
     playerStats = { player: playerObj }
     return playerStats

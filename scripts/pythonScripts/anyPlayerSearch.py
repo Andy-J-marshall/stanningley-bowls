@@ -4,11 +4,13 @@ import json
 import os
 from datetime import date
 import utils
+import sys
 
 year = str(2024) # TODO pass in the year
-player = 'ann lucas' # TODO change this to pass in string
-duplicatePlayerNames = ['test1', 'test2'] # TODO change this to pass in list of strings
-teamsTracking = ['churwell', 'western', 'new'] # TODO need to pass this in
+playerNameInput = sys.argv[1]
+player = utils.standardiseName(playerNameInput).lower()
+duplicatePlayerNames = sys.argv[2] # TODO how do I pass in an array?
+teamsTracking = ['littlemoor', 'stanningley'] # TODO need to pass this in
 leaguesDays = utils.teamDays
 playerResults = utils.returnIndividualPlayerStats(player)
 standardiseName = utils.standardiseName
@@ -89,10 +91,10 @@ for league in leaguesDays:
 
         for p in playersToUpdate:
             # reset variable values
+            # TODO Do I need to reset these still?
             aggregate = 0
             opponentAggregate = 0
             secondOpponent = ''
-            playerName = ''
             opponentsName = ''
             pairsGame = False
             pairsPartner = ''
@@ -144,7 +146,6 @@ for league in leaguesDays:
                 opponentsName = sheet[opponentPlayerNameCol + str(row)].value
 
                 if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
-                    playerName = sheet[playerNameCol + str(row)].value
                     aggregate = sheet[playerScoreCol + str(row)].value
                     opponentAggregate = sheet[opponentPlayerScoreCol +
                                               str(row)].value
@@ -169,85 +170,84 @@ for league in leaguesDays:
                                                    str(row + 1)].value
 
                     pairsPartner = standardiseName(pairsPartner)
-                    playerName = standardiseName(playerName).lower()
                     opponentsName = standardiseName(opponentsName)
                     secondOpponent = standardiseName(secondOpponent)
 
                     # Store player stats
-                    playerNameForResult = playerName
+                    playerNameForResult = player
                     if pairsGame:
-                        playerResults[playerName]['pairsPartners'].append(
+                        playerResults[player]['pairsPartners'].append(
                             pairsPartner)
-                        playerNameForResult = playerName + ' & ' + pairsPartner
+                        playerNameForResult = player + ' & ' + pairsPartner
                         opponentsName = opponentsName + ' & ' + secondOpponent
-                        playerResults[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(league)
-                        playerResults[playerName]['totalPairsAgg'] += aggregate
-                        playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
+                        playerResults[player]['availablePairsAgg'] += returnTotalAggAvailablePerGame(league)
+                        playerResults[player]['totalPairsAgg'] += aggregate
+                        playerResults[player]['totalPairsAggAgainst'] += opponentAggregate
 
-                    playerResults[playerName]['totalGamesPlayed'] += 1
+                    playerResults[player]['totalGamesPlayed'] += 1
                     playersResult = playerNameForResult + ' ' + \
                         str(aggregate) + ' - ' + \
                         str(opponentAggregate) + ' ' + opponentsName
-                    playerResults[playerName]['results'].append(
+                    playerResults[player]['results'].append(
                         playersResult)
 
                     # Wins
                     if aggregate > opponentAggregate:
                         if pairsGame:
-                            playerResults[playerName]['winningPairsPartners'].append(
+                            playerResults[player]['winningPairsPartners'].append(
                                 pairsPartner)
-                            playerResults[playerName]['pairWins'] += 1
+                            playerResults[player]['pairWins'] += 1
                         if homeGame:
-                            playerResults[playerName]['homeWins'] += 1
+                            playerResults[player]['homeWins'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairHomeWins'] += 1
+                                playerResults[player]['pairHomeWins'] += 1
                         if awayGame:
-                            playerResults[playerName]['awayWins'] += 1
+                            playerResults[player]['awayWins'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairAwayWins'] += 1
+                                playerResults[player]['pairAwayWins'] += 1
                         if cupGame:
-                            playerResults[playerName]['cupWins'] += 1
+                            playerResults[player]['cupWins'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairCupWins'] += 1
+                                playerResults[player]['pairCupWins'] += 1
                     # Losses
                     else:
                         if pairsGame:
-                            playerResults[playerName]['losingPairsPartners'].append(pairsPartner)
-                            playerResults[playerName]['pairLosses'] += 1
+                            playerResults[player]['losingPairsPartners'].append(pairsPartner)
+                            playerResults[player]['pairLosses'] += 1
                         if homeGame:
-                            playerResults[playerName]['homeLosses'] += 1
+                            playerResults[player]['homeLosses'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairHomeLosses'] += 1
+                                playerResults[player]['pairHomeLosses'] += 1
                         if awayGame:
-                            playerResults[playerName]['awayLosses'] += 1
+                            playerResults[player]['awayLosses'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairAwayLosses'] += 1
+                                playerResults[player]['pairAwayLosses'] += 1
                         if cupGame:
-                            playerResults[playerName]['cupLosses'] += 1
+                            playerResults[player]['cupLosses'] += 1
                             if pairsGame:
-                                playerResults[playerName]['pairCupLosses'] += 1
+                                playerResults[player]['pairCupLosses'] += 1
 
                     # Averages
-                    playerResults[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(league)
-                    playerResults[playerName]['totalAgg'] += aggregate
-                    playerResults[playerName]['totalAggAgainst'] += opponentAggregate
+                    playerResults[player]['availableAgg'] += returnTotalAggAvailablePerGame(league)
+                    playerResults[player]['totalAgg'] += aggregate
+                    playerResults[player]['totalAggAgainst'] += opponentAggregate
                     if homeGame:
-                        playerResults[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(league)
-                        playerResults[playerName]['totalHomeAgg'] += aggregate
-                        playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
+                        playerResults[player]['availableHomeAgg'] += returnTotalAggAvailablePerGame(league)
+                        playerResults[player]['totalHomeAgg'] += aggregate
+                        playerResults[player]['totalHomeAggAgainst'] += opponentAggregate
                         if pairsGame:
-                            playerResults[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(league)
-                            playerResults[playerName]['totalPairsHomeAgg'] += aggregate
-                            playerResults[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
+                            playerResults[player]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(league)
+                            playerResults[player]['totalPairsHomeAgg'] += aggregate
+                            playerResults[player]['totalPairsHomeAggAgainst'] += opponentAggregate
                     if awayGame:
-                        playerResults[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(league)
-                        playerResults[playerName]['totalAwayAgg'] += aggregate
-                        playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
+                        playerResults[player]['availableAwayAgg'] += returnTotalAggAvailablePerGame(league)
+                        playerResults[player]['totalAwayAgg'] += aggregate
+                        playerResults[player]['totalAwayAggAgainst'] += opponentAggregate
                         if pairsGame:
-                            playerResults[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
-                            playerResults[playerName]['totalPairsAwayAgg'] += aggregate
-                            playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                    playerResults[playerName]['dayPlayed'].append(
+                            playerResults[player]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
+                            playerResults[player]['totalPairsAwayAgg'] += aggregate
+                            playerResults[player]['totalPairsAwayAggAgainst'] += opponentAggregate
+                    playerResults[player]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 
 # Create JSON file
