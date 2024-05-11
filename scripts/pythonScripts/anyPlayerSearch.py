@@ -133,11 +133,15 @@ for league in leaguesDays:
                     break
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str:
-                    coreTeamName = possibleTeamName.split(' ')[0] # TODO this won't work
-                    if coreTeamName.lower() in teamsTracking:
-                        teamName = possibleTeamName
-                        correctPlayerFound = True
-                        break
+                    possibleTeamName.replace(' BC', '')
+                    possibleTeamName.replace(' Park', '')
+                    teamNameParts = possibleTeamName.split(' ')
+                    for part in teamNameParts:
+                        if part.lower() in teamsTracking:
+                            teamName = possibleTeamName
+                            correctPlayerFound = True
+                            break
+
             if correctPlayerFound is False:
                 updateStats = False
 
