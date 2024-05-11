@@ -6,15 +6,16 @@ from datetime import date
 import utils
 import sys
 
-year = str(2024) # TODO pass in the year
+# e.g. python3 ./scripts/pythonScripts/anyPlayerSearch.py 'jim moorin' 'james moorin, jimmy moorin' 'stanningley, littlemoor' '2024'
 playerNameInput = sys.argv[1]
 player = utils.standardiseName(playerNameInput).lower()
-duplicatePlayerNames = sys.argv[2] # TODO how do I pass in an array?
-teamsTracking = ['littlemoor', 'stanningley'] # TODO need to pass this in
+duplicatePlayerNames = sys.argv[2]
+teamsTracking = sys.argv[3]
+year = sys.argv[4]
 leaguesDays = utils.teamDays
 playerResults = utils.returnIndividualPlayerStats(player)
 standardiseName = utils.standardiseName
-returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame # TODO need to update this? Or can I work it out another way?
+returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 cupText = utils.cupText
 leaguesProcessed = []
@@ -91,7 +92,6 @@ for league in leaguesDays:
 
         for p in playersToUpdate:
             # reset variable values
-            # TODO Do I need to reset these still?
             aggregate = 0
             opponentAggregate = 0
             secondOpponent = ''
