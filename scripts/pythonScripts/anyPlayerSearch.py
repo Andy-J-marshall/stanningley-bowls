@@ -104,7 +104,6 @@ for league in leaguesDays:
             homeGame = None
             awayGame = None
             cupGame = False
-            teamName = ''
 
             # Find columns
             if row in cupGameRows:
@@ -129,18 +128,32 @@ for league in leaguesDays:
                 opponentPlayerScoreCol = homePlayerScoreCol
                 teamNameCol = awayTeamNameCol
 
+            # Checks player plays for expected team
             correctPlayerFound = False
+            teamName = ''
+            longTeamName = ''
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
+
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str:
+                    # Checks against full team name first
                     if possibleTeamName.lower() in teamsTracking:
                         teamName = possibleTeamName
                         correctPlayerFound = True
                         break
                     else:                        
+                        # Checks against first two words in team name next
                         teamNameParts = possibleTeamName.split(' ')
+                        if len(teamNameParts) > 2:
+                            longTeamName = (teamNameParts[0] + ' ' + teamNameParts[1])
+                            if longTeamName.lower() in teamsTracking:
+                                teamName = possibleTeamName
+                                correctPlayerFound = True
+                                break
+
+                        # Finally checks against each word in the team name
                         for part in teamNameParts:
                             if part.lower() in teamsTracking:
                                 teamName = possibleTeamName
