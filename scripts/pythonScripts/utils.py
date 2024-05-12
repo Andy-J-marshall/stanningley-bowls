@@ -9,6 +9,7 @@ currentTeamDays = teamDetails.teamDays
 otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale', 
                 'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale', 'Monday Bradford', 
                 'Wednesday Half Holiday Bradford', 'Thursday Vets Bradford', 'Saturday Bradford']
+# TODO wednesday pairs bradford, airewharfe saturday, airewharfe tuesday pairs, barkston ash
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe', 'monday pairs airewharfe'] # TODO what other leagues?
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
