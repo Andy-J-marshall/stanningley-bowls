@@ -6,11 +6,12 @@ from datetime import date
 import utils
 import sys
 
+# TODO delete this
 # e.g. python3 ./scripts/pythonScripts/anyPlayerSearch.py 'jim moorin' 'james moorin, jimmy moorin' 'stanningley, littlemoor' '2024'
 playerNameInput = sys.argv[1]
 player = utils.standardiseName(playerNameInput).lower()
 duplicatePlayerNames = sys.argv[2]
-teamsTracking = sys.argv[3]
+teamsTracking = sys.argv[3] # TODO need to make lowercase
 year = sys.argv[4]
 leaguesDays = utils.teamDays
 playerResults = utils.returnIndividualPlayerStats(player)
@@ -103,6 +104,7 @@ for league in leaguesDays:
             homeGame = None
             awayGame = None
             cupGame = False
+            teamName = ''
 
             # Find columns
             if row in cupGameRows:
@@ -133,14 +135,16 @@ for league in leaguesDays:
                     break
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str:
-                    possibleTeamName.replace(' BC', '')
-                    possibleTeamName.replace(' Park', '')
-                    teamNameParts = possibleTeamName.split(' ')
-                    for part in teamNameParts:
-                        if part.lower() in teamsTracking:
-                            teamName = possibleTeamName
-                            correctPlayerFound = True
-                            break
+                    if possibleTeamName.lower() in teamsTracking:
+                        teamName = possibleTeamName
+                        correctPlayerFound = True
+                    else:                        
+                        teamNameParts = possibleTeamName.split(' ')
+                        for part in teamNameParts:
+                            if part.lower() in teamsTracking:
+                                teamName = possibleTeamName
+                                correctPlayerFound = True
+                                break
 
             if correctPlayerFound is False:
                 updateStats = False
