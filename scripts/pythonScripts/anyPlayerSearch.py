@@ -138,6 +138,7 @@ for league in leaguesDays:
                     if possibleTeamName.lower() in teamsTracking:
                         teamName = possibleTeamName
                         correctPlayerFound = True
+                        break
                     else:                        
                         teamNameParts = possibleTeamName.split(' ')
                         for part in teamNameParts:
