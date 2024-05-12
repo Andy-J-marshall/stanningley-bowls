@@ -10,8 +10,8 @@ import sys
 # e.g. python3 ./scripts/pythonScripts/anyPlayerSearch.py 'jim moorin' 'james moorin, jimmy moorin' 'stanningley, littlemoor' '2024'
 playerNameInput = sys.argv[1]
 player = utils.standardiseName(playerNameInput).lower()
-duplicatePlayerNames = sys.argv[2]
-teamsTracking = sys.argv[3] # TODO need to make lowercase
+duplicatePlayerNames = sys.argv[2].lower()
+teamsTracking = sys.argv[3].lower()
 year = sys.argv[4]
 leaguesDays = utils.teamDays
 playerResults = utils.returnIndividualPlayerStats(player)
