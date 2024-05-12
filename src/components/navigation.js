@@ -94,6 +94,16 @@ function Navigation() {
                                 </LinkContainer>
                             </Nav.Item>
                             <Nav.Item className="tabs">
+                                <LinkContainer to="/stats/search">
+                                    <Nav.Link
+                                        href="/stats/search"
+                                        eventKey="/stats/search"
+                                    >
+                                        PLAYER SEARCH
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav.Item>
+                            <Nav.Item className="tabs">
                                 <LinkContainer to="/stats/team">
                                     <Nav.Link
                                         href="/stats/team"

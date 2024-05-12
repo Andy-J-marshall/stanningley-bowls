@@ -6,7 +6,7 @@ from datetime import date
 import utils
 import sys
 
-# TODO delete this
+# TODO delete this comment
 # e.g. python3 ./scripts/pythonScripts/anyPlayerSearch.py 'jim moorin' 'james moorin, jimmy moorin' 'stanningley, littlemoor' '2024'
 playerNameInput = sys.argv[1]
 player = utils.standardiseName(playerNameInput).lower()
@@ -266,7 +266,7 @@ dataToExport = {
     'statsYear': year
 }
 
-filename = 'src/data/individualPlayer' + year + '.json'
+filename = 'src/data/individualPlayer.json'
 if os.path.exists(filename):
     os.remove(filename)
 

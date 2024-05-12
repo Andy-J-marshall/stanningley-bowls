@@ -21,6 +21,7 @@ import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import bowlsStats24 from './data/bowlsStats2024.json';
 import combinedBowlsStats24 from './data/allPlayerStats2024.json';
 import './app.css';
+import PlayerSearchStats from './components/playerSearchStats';
 
 function App() {
     const [teamStats, setTeamStats] = useState(bowlsStats24);
@@ -129,6 +130,10 @@ function App() {
                                 }
                             />
                         }
+                    />
+                    <Route
+                        path="/stats/search"
+                        element={<PlayerSearchStats />}
                     />
                     <Route
                         path="/stats/team"
