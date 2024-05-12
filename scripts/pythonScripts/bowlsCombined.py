@@ -104,6 +104,7 @@ for league in leaguesDays:
             homeGame = None
             awayGame = None
             cupGame = False
+            teamName = ''
 
             # Find columns
             if row in cupGameRows:
@@ -134,11 +135,17 @@ for league in leaguesDays:
                     break
                 possibleTeamName = sheet[teamNameCol][row - i].value
                 if type(possibleTeamName) is str:
-                    coreTeamName = possibleTeamName.split(' ')[0]
-                    if coreTeamName.lower() in teamsTracking:
+                    if possibleTeamName.lower() in teamsTracking:
                         teamName = formatTeamName(possibleTeamName)
                         correctPlayerFound = True
                         break
+                    else:
+                        teamNameParts = possibleTeamName.split(' ')
+                        for part in teamNameParts:
+                            if part.lower() in teamsTracking:
+                                teamName = formatTeamName(possibleTeamName)
+                                correctPlayerFound = True
+                                break
             if correctPlayerFound is False:
                 updateStats = False
 
