@@ -1,22 +1,16 @@
 import { useState, useEffect } from 'react';
-import { ListGroup, Form, Button, Spinner } from 'react-bootstrap';
-import {
-    ClearButton,
-    Typeahead,
-    Menu,
-    MenuItem,
-} from 'react-bootstrap-typeahead';
+import { ListGroup, Form, Button, Spinner, InputGroup } from 'react-bootstrap';
 import Players from './players';
 import stats from '../data/individualPlayer.json';
-import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerSearchStats() {
     const { playerResults } = stats;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
-    const [value, setValue] = useState(['']);
+    const [playerNameValue, setPlayerNameValue] = useState('');
+    const [alternativeNameSpelling, setAlternativeNameSpelling] = useState('');
+    const [teamNameValue, setTeamNameValue] = useState('');
     const [loaded, setLoaded] = useState(false);
-    const [statsToUse, setStatsToUse] = useState(playerResults);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -29,10 +23,18 @@ function PlayerSearchStats() {
     const handleSubmit = async (event) => {
         setLoading(true);
         event.preventDefault();
+        await delay(750);
+
         const searchedName = event.target[0].value.toLowerCase().trim();
-        setValue(['']);
-        await delay(200);
-        searchForPlayer(searchedName);
+        setPlayerNameValue([searchedName]);
+        setSearchedPlayerName(searchedName);
+
+        const alternativeName = event.target[1].value.toLowerCase().trim();
+        setAlternativeNameSpelling(alternativeName);
+
+        const teamName = event.target[2].value.toLowerCase().trim();
+        setTeamNameValue([teamName]);
+
         setLoading(false);
     };
 
@@ -43,50 +45,57 @@ function PlayerSearchStats() {
                     key={playerName}
                     player={playerName}
                     name={playerName}
-                    playersStats={statsToUse}
-                    showStatSummary={showStatSummary}
+                    playersStats={playerResults}
+                    showStatSummary={true}
                 ></Players>
             </ListGroup>
         );
     }
 
+    // TODO run script with details passed in - need to create express api?
+    // TODO how to handle year
+    // TODO Error handling if player not found
+    // TODO only call api if fields populated
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     return (
-        <div id="player-stat" className="center">
-            <h1>PLAYER STATS</h1>
+        <div id="player-search" className="center">
+            <h1>SEARCH FOR PLAYER</h1>
             <Form
                 id="player-search-form"
                 className="center"
                 onSubmit={handleSubmit}
             >
-                <Form.Group className="mb-3">
-                    <Typeahead
-                        id="player-search"
-                        placeholder="Player..."
-                        // onChange={handleChange}
-                        selected={value}
-                        size="lg"
+                <InputGroup className="mb-3">
+                    <Form.Control
+                        id="player-name-field"
+                        placeholder='Player name...'
+                        aria-label="Player's name"
+                        aria-describedby="basic-addon2"
                     />
-                </Form.Group>
-                <Button id="search-button" variant="light" type="submit">
-                    Search
-                </Button>
-                {searchedPlayerName && (
-                    <Button
-                        id="back-button"
-                        style={{
-                            margin: '1rem',
-                            backgroundColor: '#e7f1ff',
-                            color: 'black',
-                        }}
-                        variant="secondary"
-                        onClick={closeButtonCallback}
-                    >
-                        Back to summary
+                    <Form.Control
+                        id="alternative-player-name-field"
+                        placeholder="Alternative name spelling..."
+                        aria-label="Player's alternative name"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Form.Control
+                        id="team-name-field"
+                        placeholder="Teams played for..."
+                        aria-label="Team names"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Button id="search-button" variant="light" type="submit">
+                        Search
                     </Button>
-                )}
+                </InputGroup>
             </Form>
+
+            {loading && (
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            )}
 
             {/* Shows detailed stats for searched player */}
             {!loading && searchedPlayerName && (
