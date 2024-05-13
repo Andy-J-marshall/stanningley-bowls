@@ -42,9 +42,15 @@ transferredPlayers = {
     'Tuesday Vets Leeds': {},
     'Tuesday Leeds': {},
     'Wednesday Half Holiday Leeds': {},
-    'Wednesday Pairs AireWharfe': {},
+    'Wednesday Pairs AireWharfe': {
+        'player': 'karl chapman',
+        'date': datetime.datetime(2024, 5, 10),
+    },
     'Thursday Vets Leeds': {},
-    'Saturday Leeds': {}
+    'Saturday Leeds': {
+        'player': 'karl chapman',
+        'date': datetime.datetime(2024, 5, 10),
+    }
 }
 
 clubCupWinners = {
