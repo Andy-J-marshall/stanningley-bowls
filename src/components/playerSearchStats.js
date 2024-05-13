@@ -69,19 +69,19 @@ function PlayerSearchStats() {
                 <InputGroup className="mb-3">
                     <Form.Control
                         id="player-name-field"
-                        placeholder='Player name...'
+                        placeholder="e.g. Robert Smith"
                         aria-label="Player's name"
                         aria-describedby="basic-addon2"
                     />
                     <Form.Control
                         id="alternative-player-name-field"
-                        placeholder="Alternative name spelling..."
+                        placeholder="e.g. Bob Smith, Rob Smith"
                         aria-label="Player's alternative name"
                         aria-describedby="basic-addon2"
                     />
                     <Form.Control
                         id="team-name-field"
-                        placeholder="Teams played for..."
+                        placeholder="e.g. Farsley, Pudsey, Bramley"
                         aria-label="Team names"
                         aria-describedby="basic-addon2"
                     />
@@ -89,6 +89,12 @@ function PlayerSearchStats() {
                         Search
                     </Button>
                 </InputGroup>
+                {!loading && !searchedPlayerName && (
+                    <Form.Text>
+                        Enter your name, plus any alternative spellings of your
+                        name and the teams you play for separated by commas
+                    </Form.Text>
+                )}
             </Form>
 
             {loading && (
