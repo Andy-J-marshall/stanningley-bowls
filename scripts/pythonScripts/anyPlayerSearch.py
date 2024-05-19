@@ -33,8 +33,6 @@ awayTeamNameCol = 'B'
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
 
-print('UPDATING ALL PLAYER STATS')
-
 for league in leaguesDays:
     # To prevent duplication
     league = league.replace(' (A)', '').replace(' (B)', '')
@@ -44,7 +42,6 @@ for league in leaguesDays:
     
     # Goes through each sheet in turn
     sheet = wb[league]
-    print('Processing ' + league)
 
     startingRow = 0
     startingRowIndex = 1
@@ -273,21 +270,14 @@ for league in leaguesDays:
                         league + ' (' + teamName + ')')
 
 # Create JSON file
-dataToExport = {
+dataToReturn = {
     'playerResults': playerResults,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year
 }
 
-filename = 'src/data/individualPlayer.json'
-if os.path.exists(filename):
-    os.remove(filename)
-
-with open(filename, 'w') as f:
-    json.dump(dataToExport, f)
-    print(filename + ' created')
-    print('------')
-
+# TODO worth doing this? Change it so it returns an error if it looks wrong?
 # Sanity checks on the data
-sanityChecksOnPlayerStats(playerResults, [player])
-print('Sanity checks for all teams stats complete')
+# sanityChecksOnPlayerStats(playerResults, [player])
+
+print(json.dumps(dataToReturn))

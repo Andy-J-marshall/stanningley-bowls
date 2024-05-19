@@ -1,17 +1,16 @@
+import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { ListGroup, Form, Button, Spinner, InputGroup } from 'react-bootstrap';
 import Players from './players';
-import stats from '../data/individualPlayer.json';
+import { returnPlayerStats } from '../helpers/playersHelper';
 
 function PlayerSearchStats() {
-    const { playerResults } = stats;
-
+    const [playerResults, setPlayerResults] = useState({});
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
-    const [playerNameValue, setPlayerNameValue] = useState('');
-    const [alternativeNameSpelling, setAlternativeNameSpelling] = useState('');
-    const [teamNameValue, setTeamNameValue] = useState('');
     const [loaded, setLoaded] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [displayValidationError, setDisplayValidationError] = useState(false);
+    const [playerNotFound, setPlayerNotFound] = useState(false);
 
     useEffect(() => {
         if (!loaded) {
@@ -20,20 +19,57 @@ function PlayerSearchStats() {
         setLoaded(true);
     });
 
+    function getRequestToStatsEndpoint(
+        playerName,
+        alternativeNameSpelling,
+        teamName,
+        year
+    ) {
+        const url = 'http://localhost:3001/stats';
+        const params = {
+            name: playerName,
+            alternativeName: alternativeNameSpelling,
+            teams: teamName,
+            year: year,
+        };
+
+        axios.get(url, { params }).then((response) => {
+            const playerResults = response.data.playerResults;
+            const stats = returnPlayerStats(playerResults, playerName);
+            if (stats && stats.gamesPlayed <= 0) {
+                setPlayerNotFound(true);
+            } else {
+                setPlayerNotFound(false);
+                setPlayerResults(playerResults);
+            }
+        });
+    }
+
     const handleSubmit = async (event) => {
         setLoading(true);
         event.preventDefault();
-        await delay(750);
+
+        setPlayerNotFound(false);
 
         const searchedName = event.target[0].value.toLowerCase().trim();
-        setPlayerNameValue([searchedName]);
         setSearchedPlayerName(searchedName);
 
         const alternativeName = event.target[1].value.toLowerCase().trim();
-        setAlternativeNameSpelling(alternativeName);
-
         const teamName = event.target[2].value.toLowerCase().trim();
-        setTeamNameValue([teamName]);
+
+        if (searchedName && teamName) {
+            setDisplayValidationError(false);
+            const date = new Date();
+            getRequestToStatsEndpoint(
+                searchedName,
+                alternativeName,
+                teamName,
+                date.getFullYear() // TODO give user a choice?
+            );
+            await delay(500);
+        } else {
+            setDisplayValidationError(true);
+        }
 
         setLoading(false);
     };
@@ -52,10 +88,7 @@ function PlayerSearchStats() {
         );
     }
 
-    // TODO run script with details passed in - need to create express api?
     // TODO how to handle year
-    // TODO Error handling if player not found
-    // TODO only call api if fields populated
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     return (
@@ -104,9 +137,28 @@ function PlayerSearchStats() {
             )}
 
             {/* Shows detailed stats for searched player */}
-            {!loading && searchedPlayerName && (
+            {!loading && searchedPlayerName && !playerNotFound && (
                 <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
             )}
+
+            {/* TODO style this */}
+            {/* Displays error message if required fields are not populated */}
+            {!loading && searchedPlayerName && displayValidationError && (
+                <p>Enter player and team name</p>
+            )}
+
+            {/* TODO style this */}
+            {/* TODO this is briefly appearing */}
+            {/* Displays error message if player not found */}
+            {!loading &&
+                searchedPlayerName &&
+                !displayValidationError &&
+                playerNotFound && (
+                    <p>
+                        No stats found for this player. Check the player's
+                        spelling and list of teams
+                    </p>
+                )}
         </div>
     );
 }
