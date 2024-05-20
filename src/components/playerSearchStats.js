@@ -19,6 +19,9 @@ function PlayerSearchStats() {
         setLoaded(true);
     });
 
+    // TODO fix bug for harry seehra, crossgates:
+    // TEAMS: Tuesday Mirfield (Ross Taylor)
+
     function getRequestToStatsEndpoint(
         playerName,
         alternativeNameSpelling,
