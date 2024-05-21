@@ -47,13 +47,6 @@ def deduplicateNames(name):
         name = 'Phil Thornton'
     return name.lower()
 
-
-def anonymiseNames(name):
-    if name.lower() == 'alison woodfine':
-        name = 'Alison'
-    return name.lower()
-
-
 def standardiseName(name):
     name = name.replace(' - ', '-')
     name = name.replace(' \'A\'', '')
@@ -65,7 +58,6 @@ def standardiseName(name):
 def formatName(name):
     name = standardiseName(name)
     name = deduplicateNames(name)
-    name = anonymiseNames(name)
     return name.lower()
 
 def returnTotalAggAvailablePerGame(team):
@@ -77,7 +69,6 @@ def returnListOfPlayerStats(days, includeTeamData):
     players.sort()
     playerStats = {}
     for player in players:
-        player = anonymiseNames(player)
         playerObj = {
             'totalAgg': 0,
             'totalAggAgainst': 0,

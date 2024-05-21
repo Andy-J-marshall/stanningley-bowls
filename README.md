@@ -70,8 +70,6 @@ If a player plays for another team on a different day, enter them into the `trai
 
 Remove players from the `transferredPlayers` dictionary (and add to traitorPlayers?).
 
-If a player doesn't want their full name appearing on the website, add them into the `anonymiseNames` function.
-
 ## Run the script
 
 `npm run update-stats`
@@ -89,7 +87,6 @@ Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 - teamDays
 - players
 - duplicateTeamMemberNames
-- anonymiseNames
 - traitorPlayers (also update the days)
 
 Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
@@ -143,7 +140,7 @@ Update the `get-latest-stats` script in `package.json` to point to the new year'
 
 Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays. Reset the transferredPlayers to empty objects for each league.
 
-Update the `Utils.py` script: deduplicateNames, anonymiseNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
+Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
