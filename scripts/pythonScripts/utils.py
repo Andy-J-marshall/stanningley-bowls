@@ -57,6 +57,9 @@ def anonymiseNames(name):
 def standardiseName(name):
     name = name.replace(' - ', '-')
     name = name.replace(' \'A\'', '')
+    name = name.replace('\'A\'', '')
+    name = name.replace(' \'a\'', '')
+    name = name.replace('\'a\'', '')
     return name
 
 def formatName(name):
