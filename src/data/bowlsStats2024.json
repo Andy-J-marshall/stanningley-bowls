@@ -591,39 +591,39 @@
             }
         },
         "colin haque": {
-            "totalAgg": 349,
-            "totalAggAgainst": 393,
-            "availableAgg": 461,
-            "availablePairsAgg": 167,
+            "totalAgg": 369,
+            "totalAggAgainst": 419,
+            "availableAgg": 487,
+            "availablePairsAgg": 193,
             "availableHomeAgg": 241,
-            "availableAwayAgg": 173,
+            "availableAwayAgg": 199,
             "availablePairsHomeAgg": 94,
-            "availablePairsAwayAgg": 47,
-            "totalPairsAgg": 108,
-            "totalPairsAggAgainst": 147,
+            "availablePairsAwayAgg": 73,
+            "totalPairsAgg": 128,
+            "totalPairsAggAgainst": 173,
             "totalHomeAgg": 182,
             "totalHomeAggAgainst": 208,
             "totalPairsHomeAgg": 57,
             "totalPairsHomeAggAgainst": 74,
-            "totalAwayAgg": 126,
-            "totalAwayAggAgainst": 138,
-            "totalPairsAwayAgg": 27,
-            "totalPairsAwayAggAgainst": 47,
+            "totalAwayAgg": 146,
+            "totalAwayAggAgainst": 164,
+            "totalPairsAwayAgg": 47,
+            "totalPairsAwayAggAgainst": 73,
             "homeWins": 5,
             "homeLosses": 6,
             "awayWins": 3,
-            "awayLosses": 5,
+            "awayLosses": 6,
             "cupWins": 0,
             "cupLosses": 2,
             "pairWins": 2,
-            "pairLosses": 5,
+            "pairLosses": 6,
             "pairHomeWins": 2,
             "pairHomeLosses": 2,
             "pairAwayWins": 0,
-            "pairAwayLosses": 2,
+            "pairAwayLosses": 3,
             "pairCupWins": 0,
             "pairCupLosses": 1,
-            "totalGamesPlayed": 21,
+            "totalGamesPlayed": 22,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -632,6 +632,7 @@
                 "Tuesday Leeds",
                 "Tuesday Leeds",
                 "Tuesday Leeds",
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -654,7 +655,8 @@
                 "ken green",
                 "laila packer",
                 "tracey marshall",
-                "vanessa lancaster"
+                "vanessa lancaster",
+                "tracey marshall"
             ],
             "winningPairsPartners": [
                 "vanessa lancaster",
@@ -665,7 +667,8 @@
                 "harvey leonard",
                 "laila packer",
                 "tracey marshall",
-                "vanessa lancaster"
+                "vanessa lancaster",
+                "tracey marshall"
             ],
             "results": [
                 "colin haque & vanessa lancaster 21 - 16 pat prosser & graham hey",
@@ -679,6 +682,7 @@
                 "colin haque & laila packer 17 - 26 barry slater & reid haddow",
                 "colin haque & tracey marshall 2 - 26 phil clayton & paul stoyles",
                 "colin haque & vanessa lancaster 24 - 26 ian scott & christine scott",
+                "colin haque & tracey marshall 20 - 26 john hutton & allen hardcastle",
                 "colin haque 21 - 19 david turner",
                 "colin haque 21 - 8 gary reddyhoff",
                 "colin haque 21 - 17 david anker",
@@ -711,9 +715,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 4,
+                "games": 5,
                 "wins": 1,
-                "aggDiff": -20
+                "aggDiff": -26
             },
             "thursday vets leeds": {
                 "games": 5,
@@ -971,40 +975,41 @@
             }
         },
         "derek wilson": {
-            "totalAgg": 186,
-            "totalAggAgainst": 203,
-            "availableAgg": 240,
-            "availablePairsAgg": 156,
+            "totalAgg": 212,
+            "totalAggAgainst": 228,
+            "availableAgg": 266,
+            "availablePairsAgg": 182,
             "availableHomeAgg": 120,
-            "availableAwayAgg": 94,
+            "availableAwayAgg": 120,
             "availablePairsHomeAgg": 78,
-            "availablePairsAwayAgg": 52,
-            "totalPairsAgg": 123,
-            "totalPairsAggAgainst": 126,
+            "availablePairsAwayAgg": 78,
+            "totalPairsAgg": 149,
+            "totalPairsAggAgainst": 151,
             "totalHomeAgg": 106,
             "totalHomeAggAgainst": 101,
             "totalPairsHomeAgg": 75,
             "totalPairsHomeAggAgainst": 59,
-            "totalAwayAgg": 69,
-            "totalAwayAggAgainst": 76,
-            "totalPairsAwayAgg": 37,
-            "totalPairsAwayAggAgainst": 41,
+            "totalAwayAgg": 95,
+            "totalAwayAggAgainst": 101,
+            "totalPairsAwayAgg": 63,
+            "totalPairsAwayAggAgainst": 66,
             "homeWins": 2,
             "homeLosses": 3,
-            "awayWins": 2,
+            "awayWins": 3,
             "awayLosses": 2,
             "cupWins": 0,
             "cupLosses": 1,
-            "pairWins": 3,
+            "pairWins": 4,
             "pairLosses": 3,
             "pairHomeWins": 2,
             "pairHomeLosses": 1,
-            "pairAwayWins": 1,
+            "pairAwayWins": 2,
             "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 1,
-            "totalGamesPlayed": 10,
+            "totalGamesPlayed": 11,
             "dayPlayed": [
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -1022,12 +1027,14 @@
                 "alison woodfine",
                 "alison woodfine",
                 "alison woodfine",
-                "alison woodfine"
+                "alison woodfine",
+                "vanessa lancaster"
             ],
             "winningPairsPartners": [
                 "alison woodfine",
                 "alison woodfine",
-                "alison woodfine"
+                "alison woodfine",
+                "vanessa lancaster"
             ],
             "losingPairsPartners": [
                 "alison woodfine",
@@ -1041,6 +1048,7 @@
                 "derek wilson & alison woodfine 11 - 26 ann ryley & edgar ryley",
                 "derek wilson & alison woodfine 26 - 14 walter stockhill & david gregory",
                 "derek wilson & alison woodfine 11 - 26 lindsay rosendale & ken garbett",
+                "derek wilson & vanessa lancaster 26 - 25 joan baker & frank baker",
                 "derek wilson 16 - 21 janet pearson",
                 "derek wilson 11 - 21 malcolm hallas",
                 "derek wilson 15 - 21 kay stewart",
@@ -1067,9 +1075,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 6,
-                "wins": 3,
-                "aggDiff": -3
+                "games": 7,
+                "wins": 4,
+                "aggDiff": -2
             },
             "thursday vets leeds": {
                 "games": 2,
@@ -1274,45 +1282,46 @@
             }
         },
         "harvey leonard": {
-            "totalAgg": 199,
-            "totalAggAgainst": 254,
-            "availableAgg": 314,
-            "availablePairsAgg": 209,
+            "totalAgg": 225,
+            "totalAggAgainst": 268,
+            "availableAgg": 340,
+            "availablePairsAgg": 235,
             "availableHomeAgg": 157,
-            "availableAwayAgg": 131,
+            "availableAwayAgg": 157,
             "availablePairsHomeAgg": 115,
-            "availablePairsAwayAgg": 68,
-            "totalPairsAgg": 143,
-            "totalPairsAggAgainst": 154,
+            "availablePairsAwayAgg": 94,
+            "totalPairsAgg": 169,
+            "totalPairsAggAgainst": 168,
             "totalHomeAgg": 104,
             "totalHomeAggAgainst": 115,
             "totalPairsHomeAgg": 92,
             "totalPairsHomeAggAgainst": 73,
-            "totalAwayAgg": 69,
-            "totalAwayAggAgainst": 126,
-            "totalPairsAwayAgg": 25,
-            "totalPairsAwayAggAgainst": 68,
+            "totalAwayAgg": 95,
+            "totalAwayAggAgainst": 140,
+            "totalPairsAwayAgg": 51,
+            "totalPairsAwayAggAgainst": 82,
             "homeWins": 3,
             "homeLosses": 4,
-            "awayWins": 1,
+            "awayWins": 2,
             "awayLosses": 5,
             "cupWins": 1,
             "cupLosses": 0,
-            "pairWins": 4,
+            "pairWins": 5,
             "pairLosses": 5,
             "pairHomeWins": 3,
             "pairHomeLosses": 2,
-            "pairAwayWins": 0,
+            "pairAwayWins": 1,
             "pairAwayLosses": 3,
             "pairCupWins": 1,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 14,
+            "totalGamesPlayed": 15,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -1332,11 +1341,13 @@
                 "stuart potter",
                 "paul leonard",
                 "paul leonard",
+                "paul leonard",
                 "paul leonard"
             ],
             "winningPairsPartners": [
                 "stuart potter",
                 "stuart potter",
+                "paul leonard",
                 "paul leonard",
                 "paul leonard"
             ],
@@ -1357,6 +1368,7 @@
                 "harvey leonard & paul leonard 26 - 19 ruth sutcliffe & nigel stockdale",
                 "harvey leonard & paul leonard 15 - 26 gary poucher & alan bishop",
                 "harvey leonard & paul leonard 26 - 13 bernard harrison & graham hogg",
+                "harvey leonard & paul leonard 26 - 14 richard gosnay & tracy wilson",
                 "harvey leonard 14 - 21 walter stockhill",
                 "harvey leonard 5 - 21 harry dixon",
                 "harvey leonard 21 - 16 james drury",
@@ -1384,9 +1396,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 4,
-                "wins": 3,
-                "aggDiff": 32
+                "games": 5,
+                "wins": 4,
+                "aggDiff": 44
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -2746,39 +2758,39 @@
             }
         },
         "paul leonard": {
-            "totalAgg": 329,
-            "totalAggAgainst": 269,
-            "availableAgg": 398,
-            "availablePairsAgg": 146,
+            "totalAgg": 355,
+            "totalAggAgainst": 283,
+            "availableAgg": 424,
+            "availablePairsAgg": 172,
             "availableHomeAgg": 178,
-            "availableAwayAgg": 173,
+            "availableAwayAgg": 199,
             "availablePairsHomeAgg": 73,
-            "availablePairsAwayAgg": 47,
-            "totalPairsAgg": 106,
-            "totalPairsAggAgainst": 123,
+            "availablePairsAwayAgg": 73,
+            "totalPairsAgg": 132,
+            "totalPairsAggAgainst": 137,
             "totalHomeAgg": 156,
             "totalHomeAggAgainst": 128,
             "totalPairsHomeAgg": 63,
             "totalPairsHomeAggAgainst": 63,
-            "totalAwayAgg": 126,
-            "totalAwayAggAgainst": 121,
-            "totalPairsAwayAgg": 17,
-            "totalPairsAwayAggAgainst": 47,
+            "totalAwayAgg": 152,
+            "totalAwayAggAgainst": 135,
+            "totalPairsAwayAgg": 43,
+            "totalPairsAwayAggAgainst": 61,
             "homeWins": 6,
             "homeLosses": 2,
-            "awayWins": 4,
+            "awayWins": 5,
             "awayLosses": 4,
             "cupWins": 2,
             "cupLosses": 0,
-            "pairWins": 3,
+            "pairWins": 4,
             "pairLosses": 3,
             "pairHomeWins": 2,
             "pairHomeLosses": 1,
-            "pairAwayWins": 0,
+            "pairAwayWins": 1,
             "pairAwayLosses": 2,
             "pairCupWins": 1,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 18,
+            "totalGamesPlayed": 19,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -2789,6 +2801,7 @@
                 "Tuesday Leeds",
                 "Tuesday Leeds",
                 "Tuesday Leeds",
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -2805,12 +2818,14 @@
                 "harvey leonard",
                 "harvey leonard",
                 "harvey leonard",
-                "phil sutcliffe"
+                "phil sutcliffe",
+                "harvey leonard"
             ],
             "winningPairsPartners": [
                 "harvey leonard",
                 "harvey leonard",
-                "phil sutcliffe"
+                "phil sutcliffe",
+                "harvey leonard"
             ],
             "losingPairsPartners": [
                 "harvey leonard",
@@ -2831,6 +2846,7 @@
                 "paul leonard & harvey leonard 15 - 26 alan bishop & gary poucher",
                 "paul leonard & harvey leonard 26 - 13 graham hogg & bernard harrison",
                 "paul leonard & phil sutcliffe 26 - 23 pat blackburn & david l miller",
+                "paul leonard & harvey leonard 26 - 14 tracy wilson & richard gosnay",
                 "paul leonard 21 - 3 john cunnane",
                 "paul leonard 9 - 21 ryan lynch",
                 "paul leonard 21 - 17 maveen tomlinson",
@@ -2858,9 +2874,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 4,
-                "wins": 3,
-                "aggDiff": 12
+                "games": 5,
+                "wins": 4,
+                "aggDiff": 24
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -3256,40 +3272,41 @@
             }
         },
         "rob packer": {
-            "totalAgg": 75,
-            "totalAggAgainst": 90,
-            "availableAgg": 120,
-            "availablePairsAgg": 78,
+            "totalAgg": 91,
+            "totalAggAgainst": 116,
+            "availableAgg": 146,
+            "availablePairsAgg": 104,
             "availableHomeAgg": 99,
-            "availableAwayAgg": 21,
+            "availableAwayAgg": 47,
             "availablePairsHomeAgg": 78,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 43,
-            "totalPairsAggAgainst": 57,
+            "availablePairsAwayAgg": 26,
+            "totalPairsAgg": 59,
+            "totalPairsAggAgainst": 83,
             "totalHomeAgg": 64,
             "totalHomeAggAgainst": 69,
             "totalPairsHomeAgg": 43,
             "totalPairsHomeAggAgainst": 57,
-            "totalAwayAgg": 11,
-            "totalAwayAggAgainst": 21,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 27,
+            "totalAwayAggAgainst": 47,
+            "totalPairsAwayAgg": 16,
+            "totalPairsAwayAggAgainst": 26,
             "homeWins": 2,
             "homeLosses": 2,
             "awayWins": 0,
-            "awayLosses": 1,
+            "awayLosses": 2,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 1,
-            "pairLosses": 2,
+            "pairLosses": 3,
             "pairHomeWins": 1,
             "pairHomeLosses": 2,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 5,
+            "totalGamesPlayed": 6,
             "dayPlayed": [
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -3299,19 +3316,22 @@
             "pairsPartners": [
                 "karl chapman",
                 "stuart potter",
-                "laila packer"
+                "laila packer",
+                "stuart potter"
             ],
             "winningPairsPartners": [
                 "stuart potter"
             ],
             "losingPairsPartners": [
                 "karl chapman",
-                "laila packer"
+                "laila packer",
+                "stuart potter"
             ],
             "results": [
                 "rob packer & karl chapman 9 - 26 bruce callard & richard sunley",
                 "rob packer & stuart potter 26 - 5 josie burdon & john cunnane",
                 "rob packer & laila packer 8 - 26 graham hey & kathy hey",
+                "rob packer & stuart potter 16 - 26 mark wilson & david keighley",
                 "rob packer 11 - 21 carl birkin",
                 "rob packer 21 - 12 lillian pickles"
             ],
@@ -3336,9 +3356,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 3,
+                "games": 4,
                 "wins": 1,
-                "aggDiff": -14
+                "aggDiff": -24
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -3738,39 +3758,39 @@
             }
         },
         "stuart potter": {
-            "totalAgg": 483,
-            "totalAggAgainst": 301,
-            "availableAgg": 508,
-            "availablePairsAgg": 172,
+            "totalAgg": 499,
+            "totalAggAgainst": 327,
+            "availableAgg": 534,
+            "availablePairsAgg": 198,
             "availableHomeAgg": 267,
-            "availableAwayAgg": 194,
+            "availableAwayAgg": 220,
             "availablePairsHomeAgg": 99,
-            "availablePairsAwayAgg": 47,
-            "totalPairsAgg": 159,
-            "totalPairsAggAgainst": 95,
+            "availablePairsAwayAgg": 73,
+            "totalPairsAgg": 175,
+            "totalPairsAggAgainst": 121,
             "totalHomeAgg": 263,
             "totalHomeAggAgainst": 125,
             "totalPairsHomeAgg": 99,
             "totalPairsHomeAggAgainst": 35,
-            "totalAwayAgg": 173,
-            "totalAwayAggAgainst": 149,
-            "totalPairsAwayAgg": 34,
-            "totalPairsAwayAggAgainst": 45,
+            "totalAwayAgg": 189,
+            "totalAwayAggAgainst": 175,
+            "totalPairsAwayAgg": 50,
+            "totalPairsAwayAggAgainst": 71,
             "homeWins": 11,
             "homeLosses": 1,
             "awayWins": 5,
-            "awayLosses": 4,
+            "awayLosses": 5,
             "cupWins": 2,
             "cupLosses": 0,
             "pairWins": 6,
-            "pairLosses": 1,
+            "pairLosses": 2,
             "pairHomeWins": 4,
             "pairHomeLosses": 0,
             "pairAwayWins": 1,
-            "pairAwayLosses": 1,
+            "pairAwayLosses": 2,
             "pairCupWins": 1,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 23,
+            "totalGamesPlayed": 24,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -3783,6 +3803,7 @@
                 "Tuesday Leeds",
                 "Tuesday Leeds",
                 "Tuesday Leeds",
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
@@ -3803,7 +3824,8 @@
                 "stephen tiernan",
                 "rob packer",
                 "laila packer",
-                "tracey marshall"
+                "tracey marshall",
+                "rob packer"
             ],
             "winningPairsPartners": [
                 "harvey leonard",
@@ -3814,7 +3836,8 @@
                 "tracey marshall"
             ],
             "losingPairsPartners": [
-                "harvey leonard"
+                "harvey leonard",
+                "rob packer"
             ],
             "results": [
                 "stuart potter & harvey leonard 8 - 21 gary dennison & nicola pearson",
@@ -3833,6 +3856,7 @@
                 "stuart potter & rob packer 26 - 5 john cunnane & josie burdon",
                 "stuart potter & laila packer 26 - 15 marlene waite-pullan & terry waite-pullan",
                 "stuart potter & tracey marshall 26 - 18 philip mcstay & john hindle",
+                "stuart potter & rob packer 16 - 26 david keighley & mark wilson",
                 "stuart potter 20 - 21 jason potter",
                 "stuart potter 21 - 13 dougie cooper",
                 "stuart potter 21 - 18 steve brown",
@@ -3862,9 +3886,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 5,
+                "games": 6,
                 "wins": 5,
-                "aggDiff": 65
+                "aggDiff": 55
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -3883,56 +3907,60 @@
             }
         },
         "tracey marshall": {
-            "totalAgg": 28,
-            "totalAggAgainst": 44,
-            "availableAgg": 52,
-            "availablePairsAgg": 52,
+            "totalAgg": 48,
+            "totalAggAgainst": 70,
+            "availableAgg": 78,
+            "availablePairsAgg": 78,
             "availableHomeAgg": 52,
-            "availableAwayAgg": 0,
+            "availableAwayAgg": 26,
             "availablePairsHomeAgg": 52,
-            "availablePairsAwayAgg": 0,
-            "totalPairsAgg": 28,
-            "totalPairsAggAgainst": 44,
+            "availablePairsAwayAgg": 26,
+            "totalPairsAgg": 48,
+            "totalPairsAggAgainst": 70,
             "totalHomeAgg": 28,
             "totalHomeAggAgainst": 44,
             "totalPairsHomeAgg": 28,
             "totalPairsHomeAggAgainst": 44,
-            "totalAwayAgg": 0,
-            "totalAwayAggAgainst": 0,
-            "totalPairsAwayAgg": 0,
-            "totalPairsAwayAggAgainst": 0,
+            "totalAwayAgg": 20,
+            "totalAwayAggAgainst": 26,
+            "totalPairsAwayAgg": 20,
+            "totalPairsAwayAggAgainst": 26,
             "homeWins": 1,
             "homeLosses": 1,
             "awayWins": 0,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 1,
-            "pairLosses": 1,
+            "pairLosses": 2,
             "pairHomeWins": 1,
             "pairHomeLosses": 1,
             "pairAwayWins": 0,
-            "pairAwayLosses": 0,
+            "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
+                "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe"
             ],
             "pairsPartners": [
                 "colin haque",
-                "stuart potter"
+                "stuart potter",
+                "colin haque"
             ],
             "winningPairsPartners": [
                 "stuart potter"
             ],
             "losingPairsPartners": [
+                "colin haque",
                 "colin haque"
             ],
             "results": [
                 "tracey marshall & colin haque 2 - 26 paul stoyles & phil clayton",
-                "tracey marshall & stuart potter 26 - 18 john hindle & philip mcstay"
+                "tracey marshall & stuart potter 26 - 18 john hindle & philip mcstay",
+                "tracey marshall & colin haque 20 - 26 allen hardcastle & john hutton"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -3955,9 +3983,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 2,
+                "games": 3,
                 "wins": 1,
-                "aggDiff": -16
+                "aggDiff": -22
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -3976,39 +4004,39 @@
             }
         },
         "vanessa lancaster": {
-            "totalAgg": 253,
-            "totalAggAgainst": 234,
-            "availableAgg": 309,
-            "availablePairsAgg": 120,
+            "totalAgg": 279,
+            "totalAggAgainst": 259,
+            "availableAgg": 335,
+            "availablePairsAgg": 146,
             "availableHomeAgg": 157,
-            "availableAwayAgg": 126,
+            "availableAwayAgg": 152,
             "availablePairsHomeAgg": 73,
-            "availablePairsAwayAgg": 21,
-            "totalPairsAgg": 92,
-            "totalPairsAggAgainst": 97,
+            "availablePairsAwayAgg": 47,
+            "totalPairsAgg": 118,
+            "totalPairsAggAgainst": 122,
             "totalHomeAgg": 123,
             "totalHomeAggAgainst": 118,
             "totalPairsHomeAgg": 58,
             "totalPairsHomeAggAgainst": 50,
-            "totalAwayAgg": 106,
-            "totalAwayAggAgainst": 90,
-            "totalPairsAwayAgg": 10,
-            "totalPairsAwayAggAgainst": 21,
+            "totalAwayAgg": 132,
+            "totalAwayAggAgainst": 115,
+            "totalPairsAwayAgg": 36,
+            "totalPairsAwayAggAgainst": 46,
             "homeWins": 4,
             "homeLosses": 3,
-            "awayWins": 4,
+            "awayWins": 5,
             "awayLosses": 2,
             "cupWins": 0,
             "cupLosses": 1,
-            "pairWins": 2,
+            "pairWins": 3,
             "pairLosses": 3,
             "pairHomeWins": 2,
             "pairHomeLosses": 1,
-            "pairAwayWins": 0,
+            "pairAwayWins": 1,
             "pairAwayLosses": 1,
             "pairCupWins": 0,
             "pairCupLosses": 1,
-            "totalGamesPlayed": 14,
+            "totalGamesPlayed": 15,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -4021,6 +4049,7 @@
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
+                "Wednesday Pairs AireWharfe",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)"
@@ -4030,11 +4059,13 @@
                 "colin haque",
                 "laila packer",
                 "ken green",
-                "colin haque"
+                "colin haque",
+                "derek wilson"
             ],
             "winningPairsPartners": [
                 "colin haque",
-                "ken green"
+                "ken green",
+                "derek wilson"
             ],
             "losingPairsPartners": [
                 "colin haque",
@@ -4053,6 +4084,7 @@
                 "vanessa lancaster & laila packer 11 - 26 wendy allison & alan wittrick",
                 "vanessa lancaster & ken green 26 - 8 maureen morris & alan taylor",
                 "vanessa lancaster & colin haque 24 - 26 christine scott & ian scott",
+                "vanessa lancaster & derek wilson 26 - 25 frank baker & joan baker",
                 "vanessa lancaster 21 - 16 tony morris",
                 "vanessa lancaster 21 - 10 gerry faller",
                 "vanessa lancaster 21 - 17 deborah stafford"
@@ -4078,9 +4110,9 @@
                 "aggDiff": 0
             },
             "wednesday pairs airewharfe": {
-                "games": 3,
-                "wins": 1,
-                "aggDiff": 1
+                "games": 4,
+                "wins": 2,
+                "aggDiff": 2
             },
             "thursday vets leeds": {
                 "games": 0,
@@ -4196,7 +4228,7 @@
             "totalGamesPlayed": 6,
             "agg": 677,
             "opponentAgg": 554,
-            "leaguePosition": 1,
+            "leaguePosition": 2,
             "results": [
                 "Stanningley 25 - 17 Burley Park (Wed 10th Apr)",
                 "Gildersome A 24 - 23 Stanningley (Wed 17th Apr)",
@@ -4211,18 +4243,18 @@
             "awayWins": 0,
             "homeWins": 2,
             "wins": 3,
-            "awayLosses": 2,
+            "awayLosses": 3,
             "homeLosses": 2,
             "homeDraws": 0,
             "awayDraws": 0,
             "draws": 0,
             "cupWins": 1,
             "cupLosses": 0,
-            "losses": 4,
-            "totalGamesPlayed": 7,
-            "agg": 565,
-            "opponentAgg": 573,
-            "leaguePosition": 7,
+            "losses": 5,
+            "totalGamesPlayed": 8,
+            "agg": 653,
+            "opponentAgg": 664,
+            "leaguePosition": 6,
             "results": [
                 "Stanningley 15 - 9 Adel B (Wed 3rd Apr)",
                 "Yeadon Park B 15 - 9 Stanningley (Wed 10th Apr)",
@@ -4230,7 +4262,8 @@
                 "Greenbottom 20 - 4 Stanningley (Wed 24th Apr)",
                 "Stanningley 24 - 0 New Armley (Wed 1st May)",
                 "Rawdon 100 - 107 Stanningley (Wed 8th May)",
-                "Stanningley 8 - 16 Meanwood Park B (Wed 15th May)"
+                "Stanningley 8 - 16 Meanwood Park B (Wed 15th May)",
+                "Yeadon Park A 13 - 11 Stanningley (Wed 22nd May)"
             ]
         },
         {
