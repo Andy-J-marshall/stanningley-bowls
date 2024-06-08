@@ -185,7 +185,6 @@ for team in teamDays:
             gameDate = sheet[awayTeamNameCol + str(row - gameDateRowModifier)].value
             
             if type(gameDate) is str:
-                # TODO will this work for Saturday cup games?
                 if 'On ' in gameDate or '(from ' in gameDate:
                     gameDateRowModifier += 1
                     gameDate = sheet[awayTeamNameCol + str(row - gameDateRowModifier)].value
