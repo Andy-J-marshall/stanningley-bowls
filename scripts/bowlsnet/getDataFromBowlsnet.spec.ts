@@ -91,53 +91,65 @@ for (const team of teams) {
     await page.goto(url);
     await sleep();
 
-    const popUp = await page
-      .frameLocator('#x-Dframe')
-      .locator('#x-DlgI > .dlgBtn[value*="Close"]');
-    const popUpCount = await popUp.count();
-
-    if (popUpCount > 0) {
-      await popUp.click();
+    // Click pop up if present
+    try {
+      const popUp = await page
+        .frameLocator('iframe[title="BowlsNet Page"]')
+        .frameLocator('iframe[title="BowlsNet Dlg"]')
+        .getByRole('button', { name: 'Close' });
+      const popUpCount = await popUp.count();
+      if (popUpCount > 0) {
+        await popUp.click();
+      }
+    } catch (error) {
+      console.log(`No popup to click for ${team.day}, continuing...`);
     }
 
+    // Navigate to reports
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-Menu .menu-btn[onclick*="lgeDlg(\'DInfo\')"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByText('Info.')
       .click();
     await page
-      .frameLocator('#x-Dframe')
-      .locator('#x-DlgI .dlgBtn[onclick*="dAct(5)"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .frameLocator('iframe[title="BowlsNet Dlg"]')
+      .getByRole('button', { name: 'League Report...' })
+      .click();
+
+    // Choose report options
+    await page
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByText('Formatted Report')
       .click();
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF label:nth-child(3) [name="Clip"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByText('Output Tables')
       .click();
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF [name="oTab1"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByText('Output Selected Results')
       .click();
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF [name="oRes"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByText('Output Full Results')
       .click();
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF > .dGrp > select[name=oResF]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .locator('select[name="oResF"]')
       .selectOption({ index: 1 });
-
     const dateOptionCount = await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF > .dGrp > select[name=oResT] > option')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .locator('select[name="oResT"] > option')
       .count();
-
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF > .dGrp > select[name=oResT]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .locator('select[name="oResT"]')
       .selectOption({ index: dateOptionCount - 1 });
     await page
-      .frameLocator('#x-Pframe')
-      .locator('#x-DlgF [name="oResFull"]')
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .getByRole('button', { name: 'Generate Report' })
       .click();
+
     await page.frameLocator('#x-Pframe').locator('#oResFull').check();
     const [newPage] = await Promise.all([
       context.waitForEvent('page'),
