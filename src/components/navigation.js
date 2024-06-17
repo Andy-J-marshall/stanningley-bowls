@@ -121,6 +121,13 @@ function Navigation() {
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav.Item>
+                        <Nav.Item className="navigation">
+                            <LinkContainer to="/history">
+                                <Nav.Link href="/history" eventKey="/history">
+                                    HISTORY
+                                </Nav.Link>
+                            </LinkContainer>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -14,6 +14,7 @@ import Records from './components/records';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
+import History from './components/history';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import combinedBowlsStats22 from './data/allPlayerStats2022.json';
 import bowlsStats23 from './data/bowlsStats2023.json';
@@ -140,6 +141,7 @@ function App() {
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/history" element={<History />} />
             </Routes>
             <Footer />
         </div>
