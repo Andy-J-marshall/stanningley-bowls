@@ -151,7 +151,7 @@ If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js
 
 Add fixtures to Google calendar for all teams.
 
-Add the `clubCupWinner` for the current year in `teamDetails.py`.
+Add the `clubCupWinner` for the current year in `teamDetails.py`, and update `History.js`.
 
 Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 
