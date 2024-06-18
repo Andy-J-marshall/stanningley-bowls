@@ -4,8 +4,10 @@ import { capitalizeText } from '../helpers/utils';
 import config from '../config';
 
 function PlayerRecords(props) {
-    const playerResults = props.playerResults;
-    const clubCupWinner = props.clubCupWinner;
+    const stats = props.stats;
+
+    const playerResults = stats.playerResults;
+    const clubCupWinner = stats.clubCupWinner;
 
     const players = Object.keys(playerResults);
 

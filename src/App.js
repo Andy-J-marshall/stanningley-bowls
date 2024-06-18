@@ -10,7 +10,7 @@ import Contact from './components/contact';
 import Fixtures from './components/fixtures';
 import Results from './components/results';
 import Navigation from './components/navigation';
-import Records from './components/records';
+import PlayerRecords from './components/playerRecords';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
@@ -137,7 +137,7 @@ function App() {
                     />
                     <Route
                         path="/stats/records"
-                        element={<Records stats={teamStats} />}
+                        element={<PlayerRecords stats={teamStats} />}
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
