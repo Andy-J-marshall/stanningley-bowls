@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import YearSelectDropdown from './yearSelectDropdown';
 import config from '../config';
@@ -12,10 +11,6 @@ function Results(props) {
     const yearToDisplay = props.yearToDisplay;
 
     const { teamResults } = stats;
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
 
     let resultsFound = false;
     const resultsArray = teamResults.map((team) => {

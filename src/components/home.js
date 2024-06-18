@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Nav, Carousel } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Supporters from './supporters';
@@ -9,10 +8,6 @@ import eventsImg from '../images/websiteImages/carousel-05.webp';
 import config from '../config';
 
 function Home() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
-
     return (
         <div id="home-page">
             <div className="center page-component">

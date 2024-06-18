@@ -29,9 +29,7 @@ function Contact() {
                         />
                         <Card.Body>
                             <Card.Title>TEAM PHOTOS</Card.Title>
-                            <Card.Text>
-                                Team photos from the club house
-                            </Card.Text>
+                            <Card.Text>Photos from the club house</Card.Text>
                             <Button
                                 style={{ backgroundColor: '#0081a4' }}
                                 href={teamPhotosUrl}
@@ -51,9 +49,9 @@ function Contact() {
                             src={historicStatsImage}
                         />
                         <Card.Body>
-                            <Card.Title>HISTORIC TEAM RECORDS</Card.Title>
+                            <Card.Title>HISTORIC STATS</Card.Title>
                             <Card.Text>
-                                Stats from the old record books, 1972-1990
+                                Stats 1972-1990
                             </Card.Text>
                             <Button
                                 style={{ backgroundColor: '#0081a4' }}
@@ -69,15 +67,6 @@ function Contact() {
             </Row>
             <br />
             <h2>CLUB CUP WINNERS</h2>
-            {/* TODO review below wording */}
-            <p>
-                Below are the Club Cup winners. There are a number of years
-                missing,{' '}
-                <a style={{ textDecoration: 'none' }} href={emailUrl}>
-                    contact us
-                </a>{' '}
-                if you can help fill in the gaps.
-            </p>
             <ListGroup className="page-center">
                 <ListGroupItem>1950 - N. Dewhirst</ListGroupItem>
                 <ListGroupItem>1951 - E. Foskett</ListGroupItem>
@@ -118,10 +107,17 @@ function Contact() {
                 <ListGroupItem>1986 - D. McPhail</ListGroupItem>
                 <ListGroupItem>1999 - M. Shaw</ListGroupItem>
                 <ListGroupItem>2014 - C. Brogie</ListGroupItem>
-                <ListGroupItem>2019 - S. Gardner</ListGroupItem>
                 <ListGroupItem>2022 - J. Armitage</ListGroupItem>
                 <ListGroupItem>2023 - P. Bowes</ListGroupItem>
             </ListGroup>
+            <br />
+            <p>
+                There are a number of years missing,{' '}
+                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                    contact us
+                </a>{' '}
+                if you can help fill in the gaps.
+            </p>
         </div>
     );
 }
