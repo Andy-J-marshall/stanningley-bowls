@@ -8,8 +8,6 @@ function AllTimePlayerStats(props) {
     const showPairsOnlyBool = props.showPairsOnly;
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
-    const [loaded, setLoaded] = useState(false);
-
     const statsToDisplayArray = [];
     let playerNames = [];
 
@@ -88,14 +86,10 @@ function AllTimePlayerStats(props) {
     });
 
     useEffect(() => {
-        if (!loaded) {
-            window.scrollTo(0, 0);
-        }
         const playersWithGames = statsToDisplayArray.filter(
             (player) => player.games > 0
         );
         setTotalPlayersUsed(playersWithGames.length);
-        setLoaded(true);
     });
 
     return (
