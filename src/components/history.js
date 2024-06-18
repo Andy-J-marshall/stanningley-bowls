@@ -13,7 +13,7 @@ import config from '../config';
 const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 const { fullName } = config.teamNames;
 
-function Contact() {
+function History() {
     return (
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
@@ -220,4 +220,4 @@ function Contact() {
         </div>
     );
 }
-export default Contact;
+export default History;
