@@ -18,7 +18,6 @@ function Contact() {
     return (
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
-            {/* TODO make images same size */}
             <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                 <Col>
                     <Card bg="light" style={{ width: '18rem' }}>
@@ -50,9 +49,7 @@ function Contact() {
                         />
                         <Card.Body>
                             <Card.Title>HISTORIC STATS</Card.Title>
-                            <Card.Text>
-                                Stats 1972-1990
-                            </Card.Text>
+                            <Card.Text>Stats 1972-1990</Card.Text>
                             <Button
                                 style={{ backgroundColor: '#0081a4' }}
                                 href={historicStatsUrl}
@@ -66,6 +63,14 @@ function Contact() {
                 </Col>
             </Row>
             <br />
+            <br />
+            <p>
+                There are a number of years missing,{' '}
+                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                    contact us
+                </a>{' '}
+                if you can help fill in the gaps.
+            </p>
             <h2>CLUB CUP WINNERS</h2>
             <ListGroup className="page-center">
                 <ListGroupItem>1950 - N. Dewhirst</ListGroupItem>
@@ -111,13 +116,46 @@ function Contact() {
                 <ListGroupItem>2023 - P. Bowes</ListGroupItem>
             </ListGroup>
             <br />
-            <p>
-                There are a number of years missing,{' '}
-                <a style={{ textDecoration: 'none' }} href={emailUrl}>
-                    contact us
-                </a>{' '}
-                if you can help fill in the gaps.
-            </p>
+            <h2>TROPHIES</h2>
+            <h5>YORKSHIRE EVENING NEWS CUP (SATURDAY)</h5>
+            <ListGroup>
+                <ListGroupItem>1925</ListGroupItem>
+                <ListGroupItem>1926</ListGroupItem>
+                <ListGroupItem>1927</ListGroupItem>
+                <ListGroupItem>1928</ListGroupItem>
+                <ListGroupItem>1929</ListGroupItem>
+                <ListGroupItem>1931</ListGroupItem>
+                <ListGroupItem>1932</ListGroupItem>
+                <ListGroupItem>1933</ListGroupItem>
+                <ListGroupItem>1936</ListGroupItem>
+                <ListGroupItem>1937</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
+            <h5>SATURDAY LEAGUE</h5>
+            <ListGroup>
+                <ListGroupItem>1926</ListGroupItem>
+                <ListGroupItem>1928</ListGroupItem>
+                <ListGroupItem>1929</ListGroupItem>
+                <ListGroupItem>1932</ListGroupItem>
+                <ListGroupItem>1933</ListGroupItem>
+                <ListGroupItem>1935</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
+            <h5>PENROSE GREEN CUP (HALF HOLIDAY)</h5>
+            <ListGroup>
+                <ListGroupItem>1970</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
+            <h5>CLEGG CUP (TUESDAY VETS)</h5>
+            <ListGroup>
+                <ListGroupItem>1970</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
+            <h5>TUESDAY VETS LEAGUE</h5>
+            <ListGroup>
+                <ListGroupItem>2017</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
         </div>
     );
 }
