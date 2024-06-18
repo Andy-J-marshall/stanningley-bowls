@@ -97,7 +97,7 @@ function History() {
                 className="g-4 tabs align-items-start"
             >
                 <Col>
-                    <h5>Yorkshire Evening News Cup</h5>
+                    <h5>Cup</h5>
                     <ListGroup>
                         <ListGroupItem>1925</ListGroupItem>
                         <ListGroupItem>1926</ListGroupItem>
