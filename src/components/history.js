@@ -12,8 +12,6 @@ import config from '../config';
 
 const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 
-// TODO add cup wins too?
-
 function Contact() {
     return (
         <div id="history-page" className="page-component center">
@@ -117,45 +115,102 @@ function Contact() {
             </ListGroup>
             <br />
             <h2>TROPHIES</h2>
-            <h5>YORKSHIRE EVENING NEWS CUP (SATURDAY)</h5>
-            <ListGroup>
-                <ListGroupItem>1925</ListGroupItem>
-                <ListGroupItem>1926</ListGroupItem>
-                <ListGroupItem>1927</ListGroupItem>
-                <ListGroupItem>1928</ListGroupItem>
-                <ListGroupItem>1929</ListGroupItem>
-                <ListGroupItem>1931</ListGroupItem>
-                <ListGroupItem>1932</ListGroupItem>
-                <ListGroupItem>1933</ListGroupItem>
-                <ListGroupItem>1936</ListGroupItem>
-                <ListGroupItem>1937</ListGroupItem>
-                <ListGroupItem>2023</ListGroupItem>
-            </ListGroup>
-            <h5>SATURDAY LEAGUE</h5>
-            <ListGroup>
-                <ListGroupItem>1926</ListGroupItem>
-                <ListGroupItem>1928</ListGroupItem>
-                <ListGroupItem>1929</ListGroupItem>
-                <ListGroupItem>1932</ListGroupItem>
-                <ListGroupItem>1933</ListGroupItem>
-                <ListGroupItem>1935</ListGroupItem>
-                <ListGroupItem>2023</ListGroupItem>
-            </ListGroup>
-            <h5>PENROSE GREEN CUP (HALF HOLIDAY)</h5>
-            <ListGroup>
-                <ListGroupItem>1970</ListGroupItem>
-                <ListGroupItem>2023</ListGroupItem>
-            </ListGroup>
-            <h5>CLEGG CUP (TUESDAY VETS)</h5>
-            <ListGroup>
-                <ListGroupItem>1970</ListGroupItem>
-                <ListGroupItem>2023</ListGroupItem>
-            </ListGroup>
-            <h5>TUESDAY VETS LEAGUE</h5>
-            <ListGroup>
-                <ListGroupItem>2017</ListGroupItem>
-                <ListGroupItem>2023</ListGroupItem>
-            </ListGroup>
+            <h4>Leeds Saturday</h4>
+            <Row
+                sm={1}
+                md={2}
+                lg={3}
+                xl={4}
+                className="g-4 tabs align-items-start"
+            >
+                <Col>
+                    <h5>Yorkshire Evening News Cup</h5>
+                    <ListGroup>
+                        <ListGroupItem>1925</ListGroupItem>
+                        <ListGroupItem>1926</ListGroupItem>
+                        <ListGroupItem>1927</ListGroupItem>
+                        <ListGroupItem>1928</ListGroupItem>
+                        <ListGroupItem>1929</ListGroupItem>
+                        <ListGroupItem>1931</ListGroupItem>
+                        <ListGroupItem>1932</ListGroupItem>
+                        <ListGroupItem>1933</ListGroupItem>
+                        <ListGroupItem>1936</ListGroupItem>
+                        <ListGroupItem>1937</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+                <Col>
+                    <h5>League</h5>
+                    <ListGroup>
+                        <ListGroupItem>1926</ListGroupItem>
+                        <ListGroupItem>1928</ListGroupItem>
+                        <ListGroupItem>1929</ListGroupItem>
+                        <ListGroupItem>1932</ListGroupItem>
+                        <ListGroupItem>1933</ListGroupItem>
+                        <ListGroupItem>1935</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+            </Row>
+            <br />
+            <h4>Leeds Tuesday Vets</h4>
+            <Row
+                sm={1}
+                md={2}
+                lg={3}
+                xl={4}
+                className="g-4 tabs align-items-start"
+            >
+                <Col>
+                    <h5>Clegg Cup</h5>
+                    <ListGroup>
+                        <ListGroupItem>2017</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+                <Col>
+                    <h5>League</h5>
+                    <ListGroup>
+                        <ListGroupItem>2017</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+            </Row>
+            <br />
+            <h4>Leeds Half Holiday</h4>
+            <Row
+                sm={1}
+                md={2}
+                lg={3}
+                xl={4}
+                className="g-4 tabs align-items-start"
+            >
+                <Col>
+                    <h5>Penrose Green Cup</h5>
+                    <ListGroup>
+                        <ListGroupItem>1970</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+            </Row>
+            <br />
+            <h4>Leeds Thursday Vets</h4>
+            <Row
+                sm={1}
+                md={2}
+                lg={3}
+                xl={4}
+                className="g-4 tabs align-items-start"
+            >
+                <Col>
+                    <h5>Harrison Cup</h5>
+                    <ListGroup>
+                        <ListGroupItem>1995</ListGroupItem>
+                        <ListGroupItem>2017</ListGroupItem>
+                    </ListGroup>
+                </Col>
+            </Row>
+            <br />
         </div>
     );
 }

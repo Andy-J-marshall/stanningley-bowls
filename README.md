@@ -102,6 +102,8 @@ Update `public` folder:
 
 Update all images in the `/images` folder
 
+Update the History page, including the links in the config file.
+
 Update `homepage` in `package.json`
 
 Check `bowls.py`/`bowlsCombined.py`:
