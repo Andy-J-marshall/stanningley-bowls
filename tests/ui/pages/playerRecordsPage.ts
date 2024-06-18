@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import config from '../../../src/config';
 
-const teamName = config.teamNames.short;
+const teamName = config.teamNames.shortName;
 
 export class PlayerRecordsPage {
   private readonly page: Page;
