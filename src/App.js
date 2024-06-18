@@ -10,10 +10,11 @@ import Contact from './components/contact';
 import Fixtures from './components/fixtures';
 import Results from './components/results';
 import Navigation from './components/navigation';
-import Records from './components/records';
+import PlayerRecords from './components/playerRecords';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
+import History from './components/history';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import combinedBowlsStats22 from './data/allPlayerStats2022.json';
 import bowlsStats23 from './data/bowlsStats2023.json';
@@ -136,10 +137,11 @@ function App() {
                     />
                     <Route
                         path="/stats/records"
-                        element={<Records stats={teamStats} />}
+                        element={<PlayerRecords stats={teamStats} />}
                     />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/history" element={<History />} />
             </Routes>
             <Footer />
         </div>

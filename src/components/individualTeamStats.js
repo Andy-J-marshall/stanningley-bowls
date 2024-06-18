@@ -37,7 +37,8 @@ function IndividualTeamStats(props) {
                     average: aggDiff / games,
                     winPerc: (wins / games) * 100,
                 };
-                playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
+                playerDayStats =
+                    checkWinPercAndAverageAreNumbers(playerDayStats);
                 return playerDayStats;
             });
 
@@ -48,7 +49,9 @@ function IndividualTeamStats(props) {
 
         if (totalGames > 0) {
             return (
-                <div id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}>
+                <div
+                    id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}
+                >
                     <StatsTableDisplay
                         totalGames={totalGames}
                         totalWins={totalWins}
@@ -91,7 +94,7 @@ function IndividualTeamStats(props) {
     } else {
         return (
             <p>
-                {config.teamNames.short} did not play in this league for the
+                {config.teamNames.shortName} did not play in this league for the
                 selected year
             </p>
         );

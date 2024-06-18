@@ -35,7 +35,8 @@ function Players(props) {
                         <div>
                             {!showStatSummary && (
                                 <p>
-                                    No games played for {config.teamNames.short}
+                                    No games played for{' '}
+                                    {config.teamNames.shortName}
                                 </p>
                             )}
                             {showStatSummary && <p>No games played</p>}

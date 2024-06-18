@@ -1,10 +1,4 @@
-import { useEffect } from 'react';
-
 function FixturesResults() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
-
     return (
         <div id="fixture" className="center page-component">
             <h1>Fixtures</h1>

@@ -1,20 +1,15 @@
-import { useEffect } from 'react';
 import config from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
 
 const { leedsCouncilFee, bowlingPriceOnly } = config.membership;
 
 function Membership() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
-
     return (
         <div id="members" className="center page-component">
             <h1>MEMBERSHIP</h1>
             <p>
-                {config.teamNames.full} welcomes new members of any age. Fees
-                apply to adults over 16, children are welcome but must be
+                {config.teamNames.fullName} welcomes new members of any age.
+                Fees apply to adults over 16, children are welcome but must be
                 accompanied by an adult member. Membership is valid per season
                 and runs from 1st April until 30th September. Please{' '}
                 <a style={{ textDecoration: 'none' }} href="/#/contact">

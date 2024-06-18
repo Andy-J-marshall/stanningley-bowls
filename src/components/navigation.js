@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import config from '../config';
@@ -16,7 +15,7 @@ function Navigation() {
             <Container fluid>
                 <LinkContainer to="/home">
                     <Navbar.Brand className="navigation" href="/home">
-                        {config.teamNames.abbreviated}
+                        {config.teamNames.abbreviatedName}
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -118,6 +117,13 @@ function Navigation() {
                             <LinkContainer to="/contact">
                                 <Nav.Link href="/contact" eventKey="/contact">
                                     CONTACT
+                                </Nav.Link>
+                            </LinkContainer>
+                        </Nav.Item>
+                        <Nav.Item className="navigation">
+                            <LinkContainer to="/history">
+                                <Nav.Link href="/history" eventKey="/history">
+                                    HISTORY
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav.Item>

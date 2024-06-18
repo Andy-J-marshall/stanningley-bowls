@@ -41,7 +41,7 @@ function StatsTableDisplay(props) {
                     {leaguePosition >= 0 ? (
                         <tr>
                             <td>League position</td>
-                            <td id='leaguePosition'>{leaguePosition}</td>
+                            <td id="leaguePosition">{leaguePosition}</td>
                         </tr>
                     ) : null}
                     {totalWins >= 0 ? (
@@ -65,7 +65,9 @@ function StatsTableDisplay(props) {
                     {totalWins >= 0 ? (
                         <tr>
                             <td>Win percentage</td>
-                            <td id="totalWinPercValue">{(totalWins / totalGames * 100).toFixed(0)}%</td>
+                            <td id="totalWinPercValue">
+                                {((totalWins / totalGames) * 100).toFixed(0)}%
+                            </td>
                         </tr>
                     ) : null}
                     {homeGames > 0 ? (
@@ -94,7 +96,7 @@ function StatsTableDisplay(props) {
                     ) : null}
                     {agg > 0 ? (
                         <tr>
-                            <td>{config.teamNames.short} aggregate</td>
+                            <td>{config.teamNames.shortName} aggregate</td>
                             <td id="totalAggValue">{agg}</td>
                         </tr>
                     ) : null}

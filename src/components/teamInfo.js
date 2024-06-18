@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import monImg from '../images/websiteImages/mon-team.webp';
 import tuesVetsImg from '../images/websiteImages/tuesVets-team.webp';
@@ -39,10 +38,6 @@ teams.forEach((team) => {
 });
 
 function TeamInfo() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
-
     return (
         <div id="team-and-socials">
             <div id="team-info" className="page-component center">

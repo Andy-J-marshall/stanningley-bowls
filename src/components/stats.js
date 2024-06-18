@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import YearSelectDropdown from './yearSelectDropdown';
 
@@ -7,10 +6,6 @@ function Stats(props) {
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
     const numberOfYearsToDisplay = props.numberOfYearsToDisplay;
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
 
     return (
         <div id="stats" className="center">
