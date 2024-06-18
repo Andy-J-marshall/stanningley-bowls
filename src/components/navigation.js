@@ -15,7 +15,7 @@ function Navigation() {
             <Container fluid>
                 <LinkContainer to="/home">
                     <Navbar.Brand className="navigation" href="/home">
-                        {config.teamNames.abbreviated}
+                        {config.teamNames.abbreviatedName}
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="navbarScroll" />

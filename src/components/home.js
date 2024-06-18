@@ -77,14 +77,14 @@ function Home() {
                 </Nav>
             </div>
             <p className="center page-component" style={{ width: '80%' }}>
-                {config.teamNames.full} is a family friendly crown green bowling
-                club situated within Stanningley Park, West Leeds. Surrounded by
-                trees, the green is a secure and tranquil place to play bowls.
-                New members of all ages and abilities are welcome and we have
-                numerous social events to get involved in. The club has proved
-                to be a strong contender in the {config.leagues} leagues so if
-                you are interested in competing then we are always looking for
-                dedicated bowlers to join our teams.
+                {config.teamNames.fullName} is a family friendly crown green
+                bowling club situated within Stanningley Park, West Leeds.
+                Surrounded by trees, the green is a secure and tranquil place to
+                play bowls. New members of all ages and abilities are welcome
+                and we have numerous social events to get involved in. The club
+                has proved to be a strong contender in the {config.leagues}{' '}
+                leagues so if you are interested in competing then we are always
+                looking for dedicated bowlers to join our teams.
             </p>
             <Supporters />
         </div>

@@ -52,7 +52,7 @@ function Contact() {
             </p>
             <h1>LOCATION</h1>
             <p>
-                {config.teamNames.full} is situated within Stanningley Park.
+                {config.teamNames.fullName} is situated within Stanningley Park.
                 Follow the footpath round and the entrance is between the rose
                 garden and the rugby pitch. Access is on foot only.
             </p>

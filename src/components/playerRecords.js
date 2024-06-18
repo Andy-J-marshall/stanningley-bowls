@@ -363,8 +363,10 @@ function PlayerRecords(props) {
             useWednesdayPairsStats = true;
             const wednesdayPairsWins = wednesdayPairs.wins;
             const wednesdayPairsGames = wednesdayPairs.games;
-            const wednesdayPairsAvg = wednesdayPairs.aggDiff / wednesdayPairsGames;
-            const wednesdayPairsWinPerc = (wednesdayPairsWins / wednesdayPairsGames) * 100;
+            const wednesdayPairsAvg =
+                wednesdayPairs.aggDiff / wednesdayPairsGames;
+            const wednesdayPairsWinPerc =
+                (wednesdayPairsWins / wednesdayPairsGames) * 100;
 
             if (highestWedPairsGames > minWedPairsGames) {
                 if (highestWedPairsGames >= minGamesForTeamRecords) {
@@ -631,7 +633,12 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -653,7 +660,12 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -675,7 +687,12 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -697,7 +714,12 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -719,7 +741,12 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -741,13 +768,21 @@ function PlayerRecords(props) {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
     function returnSaturdayTeamComponent() {
         if (useSaturdayStats) {
-            if (bestSaturdayAveragePlayer.length > 0 || bestSaturdayBAveragePlayer.length > 0) {
+            if (
+                bestSaturdayAveragePlayer.length > 0 ||
+                bestSaturdayBAveragePlayer.length > 0
+            ) {
                 return (
                     <div>
                         {useSaturdayBStats && <h3>FIRST TEAM</h3>}
@@ -760,27 +795,39 @@ function PlayerRecords(props) {
                             bestAverage={bestSaturdayAverage}
                             bestAveragePlayer={bestSaturdayAveragePlayer}
                         />
-                        {useSaturdayBStats && <div>
-                            <br/>
-                            <h3>SECOND TEAM</h3>
-                            {minSatBGames > 0 && <RecordsTableDisplay
-                                minGames={minSatBGames}
-                                mostWins={mostSaturdayBWins}
-                                mostWinsPlayer={mostSaturdayBWinsPlayer}
-                                bestWinPerc={bestSaturdayBWinPerc}
-                                bestWinPercPlayer={bestSaturdayBWinPercPlayer}
-                                bestAverage={bestSaturdayBAverage}
-                                bestAveragePlayer={bestSaturdayBAveragePlayer}
-                            />}
-                        </div>}
-
-                        </div>
+                        {useSaturdayBStats && (
+                            <div>
+                                <br />
+                                <h3>SECOND TEAM</h3>
+                                {minSatBGames > 0 && (
+                                    <RecordsTableDisplay
+                                        minGames={minSatBGames}
+                                        mostWins={mostSaturdayBWins}
+                                        mostWinsPlayer={mostSaturdayBWinsPlayer}
+                                        bestWinPerc={bestSaturdayBWinPerc}
+                                        bestWinPercPlayer={
+                                            bestSaturdayBWinPercPlayer
+                                        }
+                                        bestAverage={bestSaturdayBAverage}
+                                        bestAveragePlayer={
+                                            bestSaturdayBAveragePlayer
+                                        }
+                                    />
+                                )}
+                            </div>
+                        )}
+                    </div>
                 );
             } else {
                 return <p>No games played</p>;
             }
         } else {
-            return <p>{config.teamNames.short} did not play in this league for the selected year</p>;
+            return (
+                <p>
+                    {config.teamNames.shortName} did not play in this league for
+                    the selected year
+                </p>
+            );
         }
     }
 
@@ -790,7 +837,9 @@ function PlayerRecords(props) {
                 {clubCupWinner && (
                     <div className="center">
                         <h1>CLUB CUP WINNER</h1>
-                        <p id='club-cup-winner'>{capitalizeText([clubCupWinner])}</p>
+                        <p id="club-cup-winner">
+                            {capitalizeText([clubCupWinner])}
+                        </p>
                     </div>
                 )}
 

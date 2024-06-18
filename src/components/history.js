@@ -11,11 +11,24 @@ import historicStatsImage from '../images/websiteImages/historic-stats.webp';
 import config from '../config';
 
 const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
+const { fullName } = config.teamNames;
 
 function Contact() {
     return (
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
+            <p>
+                There has been a bowling club at {fullName} for over 100 years.
+                Below are a selection of photos, statistics, records, and
+                trophies over that period.
+            </p>
+            <p>
+                There are a number of years missing,{' '}
+                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                    contact us
+                </a>{' '}
+                if you can help fill in the gaps.
+            </p>
             <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                 <Col>
                     <Card bg="light" style={{ width: '18rem' }}>
@@ -62,13 +75,6 @@ function Contact() {
             </Row>
             <br />
             <br />
-            <p>
-                There are a number of years missing,{' '}
-                <a style={{ textDecoration: 'none' }} href={emailUrl}>
-                    contact us
-                </a>{' '}
-                if you can help fill in the gaps.
-            </p>
             <h2>CLUB CUP WINNERS</h2>
             <ListGroup className="page-center">
                 <ListGroupItem>1950 - N. Dewhirst</ListGroupItem>
