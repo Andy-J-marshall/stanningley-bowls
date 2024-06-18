@@ -102,7 +102,7 @@ Update `public` folder:
 
 Update all images in the `/images` folder
 
-Update the History page, including the links in the config file.
+Update the `History.js` component, including the links in the config file, and the `clubCupWinners.json` file
 
 Update `homepage` in `package.json`
 
@@ -155,7 +155,7 @@ Add fixtures to Google calendar for all teams.
 
 Add the `clubCupWinner` for the current year in `teamDetails.py`.
 
-Update `History.js` with the club cup winner and any trophies won.
+Update `History.js` with any trophies won and `clubCupWinners.json` with the club cup winner.
 
 Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 
