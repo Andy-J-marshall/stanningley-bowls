@@ -8,13 +8,11 @@ import {
 } from 'react-bootstrap';
 import historicTeamImage from '../images/websiteImages/historic-team-photo.webp';
 import historicStatsImage from '../images/websiteImages/historic-stats.webp';
+import config from '../config';
+
+const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 
 // TODO add cup wins too?
-// TODO move to config?
-const teamPhotosUrl =
-    'https://photos.google.com/share/AF1QipMmkXau_XJaD1459y7Sdsk7pSoUeAr04SiVP_z07i1u0NzLiVQLBioFHwGF9jHV_A?key=N3VLT0l0VWZEVlNrVm5kQUF3MHl1d2lJNEFDRVNR';
-const historicStatsUrl =
-    'https://photos.google.com/share/AF1QipOqs9EK2LBhL3uZjas8l1ccFkrkdsY8KpOlajx60sBsUaM_-S4LCr-qLpEj9aRX3Q?key=N1VwMnRwdWlKQU5pcW9lVXk1b09IX3Y1OGxQWlFR';
 
 function Contact() {
     return (
@@ -71,8 +69,15 @@ function Contact() {
             </Row>
             <br />
             <h2>CLUB CUP WINNERS</h2>
-            {/* TODO review below wording, and link to contact page? */}
-            <p>Below are the Club Cup winners. There are a number of years missing, contact us if you can help fill in the gaps.</p>
+            {/* TODO review below wording */}
+            <p>
+                Below are the Club Cup winners. There are a number of years
+                missing,{' '}
+                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                    contact us
+                </a>{' '}
+                if you can help fill in the gaps.
+            </p>
             <ListGroup className="page-center">
                 <ListGroupItem>1950 - N. Dewhirst</ListGroupItem>
                 <ListGroupItem>1951 - E. Foskett</ListGroupItem>
