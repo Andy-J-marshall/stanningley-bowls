@@ -14,6 +14,7 @@ import PlayerRecords from './components/playerRecords';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
+import PlayerStatsOther from './components/playerStatsOther'; // TODO rename
 import History from './components/history';
 import bowlsStats22 from './data/bowlsStats2022.json';
 import combinedBowlsStats22 from './data/allPlayerStats2022.json';
@@ -128,6 +129,16 @@ function App() {
                                 combinedStatsForEveryYearArray={
                                     combinedStatsForEveryYearArray
                                 }
+                            />
+                        }
+                    />
+                    {/* TODO update path */}
+                    <Route
+                        path="/stats/player/other"
+                        element={
+                            <PlayerStatsOther
+                                combinedStats={combinedStats}
+                                combinedStatsForEveryYearArray={combinedStatsForEveryYearArray}
                             />
                         }
                     />

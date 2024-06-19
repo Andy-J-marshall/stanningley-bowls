@@ -6,14 +6,18 @@ function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
+    const hidePlayersUsedCountBool = props.hidePlayersUsedCountBool;
+    let playerNames = props.playerNames;
+
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     const statsToDisplayArray = [];
-    let playerNames = [];
 
-    statsArray.forEach((stat) => {
-        playerNames = playerNames.concat(Object.keys(stat.playerResults));
-    });
+    if (!playerNames) {
+        statsArray.forEach((stat) => {
+            playerNames = playerNames.concat(Object.keys(stat.playerResults));
+        });
+    }
     for (var i = 0; i < playerNames.length; ++i) {
         for (var j = i + 1; j < playerNames.length; ++j) {
             if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
@@ -101,7 +105,7 @@ function AllTimePlayerStats(props) {
                 showPairsOnly={showPairsOnlyBool}
             />
             <br />
-            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
+            {!hidePlayersUsedCountBool && !showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
         </div>
     );
 }

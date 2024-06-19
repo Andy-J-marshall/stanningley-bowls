@@ -15,62 +15,37 @@ import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
-function PlayerStats(props) {
+function PlayerStatsOther(props) {
     const combinedStats = props.combinedStats;
-    const stats = props.stats;
-    const statsForEveryYearArray = props.statsForEveryYearArray;
     const combinedStatsForEveryYearArray = props.combinedStatsForEveryYearArray;
-
-    const { playerResults } = stats;
+    
     const combinedPlayerResults = combinedStats.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
-    const [showStatSummary, setShowStatSummary] = useState(false);
-    const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
-        statsForEveryYearArray
-    );
     const [playerFound, setPlayerFound] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase());
+    const players = ['richard hodgson'];
+    const playerSearchNameArray = ['RICHARD HODGSON'];
+    // TODO fix this? Make it smarter
+    // const players = Object.keys(combinedPlayerResults).sort();
+    // const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
-    const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
+    const statsToDisplayArray = collatePlayerStats(combinedPlayerResults, players);
 
     useEffect(() => {
         if (!loaded) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
-
-        const playersWithGames = statsToDisplayArray.filter(
-            (player) => player.games > 0
-        );
-        setTotalPlayersUsed(playersWithGames.length);
-
-        if (showStatSummary) {
-            setStatsToUse(combinedPlayerResults);
-            setAllYearsStatsToUse(combinedStatsForEveryYearArray);
-        } else {
-            setStatsToUse(playerResults);
-            setAllYearsStatsToUse(statsForEveryYearArray);
-        }
     });
 
     function allTeamStatsCallback(showAllBoolean) {
-        if (showAllBoolean) {
-            setStatsToUse(combinedPlayerResults);
-            setShowStatSummary(true);
-        } else {
-            setStatsToUse(playerResults);
-            setShowStatSummary(false);
-        }
+        // TODO remove?
     }
 
     function onlySinglesCallback(showSinglesBoolean) {
@@ -117,10 +92,6 @@ function PlayerStats(props) {
                     anyTeamDays = true;
                 }
             });
-            if (!anyTeamDays) {
-                setStatsToUse(combinedPlayerResults);
-                setShowStatSummary(true);
-            }
         } else {
             setPlayerFound(false);
         }
@@ -166,8 +137,8 @@ function PlayerStats(props) {
                         key={playerName}
                         player={playerName}
                         name={playerName}
-                        playersStats={statsToUse}
-                        showStatSummary={showStatSummary}
+                        playersStats={combinedPlayerResults}
+                        showStatSummary={true}
                     ></Players>
                 </ListGroup>
             );
@@ -277,12 +248,13 @@ function PlayerStats(props) {
             {/* Shows Summary of all players stats since 2022 */}
             {showStatsSinceStart &&
                 !loading &&
-                statsForEveryYearArray.length > 1 && (
+                combinedStatsForEveryYearArray.length > 1 && (
                     <AllTimePlayerStats
-                        statsArray={allYearsStatsToUse}
+                        statsArray={combinedStatsForEveryYearArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
-                        hidePlayersUsedCountBool={false}
+                        hidePlayersUsedCountBool={true}
+                        playerNames={players}
                     />
                 )}
 
@@ -300,16 +272,6 @@ function PlayerStats(props) {
                     </h2>
                 )}
 
-            {/* Shows total player count */}
-            <br />
-            {!showSinglesOnlyBool &&
-                !searchedPlayerName &&
-                !showPairsOnlyBool &&
-                !showStatSummary &&
-                !showStatsSinceStart && (
-                    <p id='total-player-count'>Total players: {totalPlayersUsed}</p>
-                )}
-
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
@@ -321,4 +283,4 @@ function PlayerStats(props) {
     );
 }
 
-export default PlayerStats;
+export default PlayerStatsOther;
