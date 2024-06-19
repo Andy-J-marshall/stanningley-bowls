@@ -1,23 +1,24 @@
 import { useState, useEffect } from 'react';
 import PlayerStatSummary from './playerStatSummary';
-import { returnPlayerStats, checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
+import {
+    returnPlayerStats,
+    checkWinPercAndAverageAreNumbers,
+} from '../helpers/playersHelper';
 
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
     const hidePlayersUsedCountBool = props.hidePlayersUsedCountBool;
-    let playerNames = props.playerNames;
 
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     const statsToDisplayArray = [];
 
-    if (!playerNames) {
-        statsArray.forEach((stat) => {
-            playerNames = playerNames.concat(Object.keys(stat.playerResults));
-        });
-    }
+    let playerNames = [];
+    statsArray.forEach((stat) => {
+        playerNames = playerNames.concat(Object.keys(stat.playerResults));
+    });
     for (var i = 0; i < playerNames.length; ++i) {
         for (var j = i + 1; j < playerNames.length; ++j) {
             if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
@@ -72,17 +73,17 @@ function AllTimePlayerStats(props) {
                 stats.pairsAggAgainst += playerStats.totalPairsAggAgainst;
                 stats.pairsWins += playerStats.pairWins;
                 stats.pairsGames += playerStats.pairsGames;
-
             }
         });
-        stats.winPerc = (stats.wins / stats.games) * 100,
-        stats.singlesWinPerc = (stats.singlesWins / stats.singleGames) * 100,
-        stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100,
-
-        stats.average = (stats.agg - stats.aggAgainst) / stats.games;
+        (stats.winPerc = (stats.wins / stats.games) * 100),
+            (stats.singlesWinPerc =
+                (stats.singlesWins / stats.singleGames) * 100),
+            (stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100),
+            (stats.average = (stats.agg - stats.aggAgainst) / stats.games);
         stats.singlesAverage =
             (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
-        stats.pairsAverage = (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
+        stats.pairsAverage =
+            (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
 
         stats = checkWinPercAndAverageAreNumbers(stats);
 
@@ -105,7 +106,13 @@ function AllTimePlayerStats(props) {
                 showPairsOnly={showPairsOnlyBool}
             />
             <br />
-            {!hidePlayersUsedCountBool && !showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
+            {!hidePlayersUsedCountBool &&
+                !showSinglesOnlyBool &&
+                !showPairsOnlyBool && (
+                    <p id="total-player-count">
+                        Total players since 2022: {totalPlayersUsed}
+                    </p>
+                )}
         </div>
     );
 }

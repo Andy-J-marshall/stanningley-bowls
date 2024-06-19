@@ -22,11 +22,13 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import bowlsStats24 from './data/bowlsStats2024.json';
 import combinedBowlsStats24 from './data/allPlayerStats2024.json';
+import oldBoysStats24 from './data/oldBoysStats2024.json'; // TODO rename
 import './app.css';
 
 function App() {
     const [teamStats, setTeamStats] = useState(bowlsStats24);
     const [combinedStats, setCombinedStats] = useState(combinedBowlsStats24);
+    const [oldBoysStats, setOldBoysStats] = useState(oldBoysStats24);
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
@@ -48,17 +50,22 @@ function App() {
         year2023: combinedBowlsStats23,
         year2024: combinedBowlsStats24,
     };
+    const allYearOldBoysStats = {
+        year2024: oldBoysStats24,
+    };
     const statsForEveryYearArray = [bowlsStats22, bowlsStats23, bowlsStats24];
     const combinedStatsForEveryYearArray = [
         combinedBowlsStats22,
         combinedBowlsStats23,
         combinedBowlsStats24,
     ];
+    const oldBoysStatsForEveryYearArray = [oldBoysStats24];
 
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;
+        let oldBoysStatsForSelectedYear;
         switch (year.toString()) {
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
@@ -76,11 +83,14 @@ function App() {
                 statsForSelectedYear = allYearStats[`year${currentYear}`];
                 combinedStatsForSelectedYear =
                     allYearCombinedStats[`year${currentYear}`];
+                oldBoysStatsForSelectedYear =
+                    allYearOldBoysStats[`year${currentYear}`];
                 break;
         }
         setYearToDisplay(year.toString());
         setTeamStats(statsForSelectedYear);
         setCombinedStats(combinedStatsForSelectedYear);
+        setOldBoysStats(oldBoysStatsForSelectedYear);
     }
 
     return (
@@ -137,8 +147,8 @@ function App() {
                         path="/stats/player/other"
                         element={
                             <PlayerStatsOther
-                                combinedStats={combinedStats}
-                                combinedStatsForEveryYearArray={combinedStatsForEveryYearArray}
+                                stats={oldBoysStats}
+                                statsForEveryYearArray={oldBoysStatsForEveryYearArray}
                             />
                         }
                     />

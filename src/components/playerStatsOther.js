@@ -16,10 +16,10 @@ import config from '../config';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 function PlayerStatsOther(props) {
-    const combinedStats = props.combinedStats;
-    const combinedStatsForEveryYearArray = props.combinedStatsForEveryYearArray;
+    const stats = props.stats;
+    const statsForEveryYearArray = props.statsForEveryYearArray;
     
-    const combinedPlayerResults = combinedStats.playerResults;
+    const playerResults = stats.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
@@ -28,14 +28,11 @@ function PlayerStatsOther(props) {
     const [playerFound, setPlayerFound] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const players = ['richard hodgson'];
-    const playerSearchNameArray = ['RICHARD HODGSON'];
-    // TODO fix this? Make it smarter
-    // const players = Object.keys(combinedPlayerResults).sort();
-    // const playerSearchNameArray = players.map((p) => p.toUpperCase());
+    const players = Object.keys(playerResults).sort();
+    const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
-    const statsToDisplayArray = collatePlayerStats(combinedPlayerResults, players);
+    const statsToDisplayArray = collatePlayerStats(playerResults, players);
 
     useEffect(() => {
         if (!loaded) {
@@ -44,6 +41,7 @@ function PlayerStatsOther(props) {
         setLoaded(true);
     });
 
+    // TODO need to remove this as an option
     function allTeamStatsCallback(showAllBoolean) {
         // TODO remove?
     }
@@ -64,6 +62,7 @@ function PlayerStatsOther(props) {
         }
     }
 
+    // TODO do we still want this?
     function allYearStatsCallback(showAllBoolean) {
         if (showAllBoolean) {
             setShowStatsSinceStart(true);
@@ -84,7 +83,7 @@ function PlayerStatsOther(props) {
         if (validPlayer && !searchedName.includes('show all')) {
             setPlayerFound(true);
             const teamDaysPlayed = Object.keys(config.days);
-            const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
+            const daysPlayed = playerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
@@ -137,7 +136,7 @@ function PlayerStatsOther(props) {
                         key={playerName}
                         player={playerName}
                         name={playerName}
-                        playersStats={combinedPlayerResults}
+                        playersStats={playerResults}
                         showStatSummary={true}
                     ></Players>
                 </ListGroup>
@@ -248,13 +247,12 @@ function PlayerStatsOther(props) {
             {/* Shows Summary of all players stats since 2022 */}
             {showStatsSinceStart &&
                 !loading &&
-                combinedStatsForEveryYearArray.length > 1 && (
+                statsForEveryYearArray.length >= 1 && (
                     <AllTimePlayerStats
-                        statsArray={combinedStatsForEveryYearArray}
+                        statsArray={statsForEveryYearArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                         hidePlayersUsedCountBool={true}
-                        playerNames={players}
                     />
                 )}
 
