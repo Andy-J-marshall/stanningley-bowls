@@ -277,7 +277,7 @@ function PlayerStats(props) {
             {/* Shows Summary of all players stats since 2022 */}
             {showStatsSinceStart &&
                 !loading &&
-                statsForEveryYearArray.length > 1 && (
+                statsForEveryYearArray.length >= 1 && (
                     <AllTimePlayerStats
                         statsArray={allYearsStatsToUse}
                         showSinglesOnly={showSinglesOnlyBool}

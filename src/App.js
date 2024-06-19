@@ -54,6 +54,8 @@ function App() {
         combinedBowlsStats24,
     ];
 
+    const numberOfYearsToDisplay = Object.keys(allYearStats).length;
+
     function statsCallback(year) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
@@ -96,9 +98,7 @@ function App() {
                     path="/results"
                     element={
                         <Results
-                            numberOfYearsToDisplay={
-                                Object.keys(allYearStats).length
-                            }
+                            numberOfYearsToDisplay={numberOfYearsToDisplay}
                             stats={teamStats}
                             statsCallback={statsCallback}
                             yearToDisplay={yearToDisplay}
@@ -109,9 +109,7 @@ function App() {
                     path="/stats"
                     element={
                         <Stats
-                            numberOfYearsToDisplay={
-                                Object.keys(allYearStats).length
-                            }
+                            numberOfYearsToDisplay={numberOfYearsToDisplay}
                             statsCallback={statsCallback}
                             stats={teamStats}
                             yearToDisplay={yearToDisplay}
