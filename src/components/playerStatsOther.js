@@ -62,7 +62,6 @@ function PlayerStatsOther(props) {
         }
     }
 
-    // TODO do we still want this?
     function allYearStatsCallback(showAllBoolean) {
         if (showAllBoolean) {
             setShowStatsSinceStart(true);
