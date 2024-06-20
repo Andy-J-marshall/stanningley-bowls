@@ -15,7 +15,7 @@ Run the following:
 
 - `npm i`
 - `npm run start`
-- Visit: http://localhost:3000
+- Visit: http://localhost:5173
 
 ## To deploy to Github Pages
 

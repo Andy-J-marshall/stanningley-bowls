@@ -19,12 +19,12 @@ const config: PlaywrightTestConfig = {
   outputDir: 'test-results/',
   webServer: {
     command: 'npm run start',
-    url: 'http://localhost:3000',
+    url: 'http://localhost:5173',
     timeout: 60 * 1000,
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: process.env.CI ? 'https://stanningleybowlsclub.co.uk' : 'http://localhost:3000',
+    baseURL: process.env.CI ? 'https://stanningleybowlsclub.co.uk' : 'http://localhost:5173',
     actionTimeout: 0,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
@@ -38,48 +38,6 @@ const config: PlaywrightTestConfig = {
         ...devices['Desktop Chrome'],
       },
     },
-
-    // {
-    //   name: 'firefox',
-    //   use: {
-    //     ...devices['Desktop Firefox'],
-    //   },
-    // },
-
-    // {
-    //   name: 'webkit',
-    //   use: {
-    //     ...devices['Desktop Safari'],
-    //   },
-    // },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: {
-    //     channel: 'msedge',
-    //   },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: {
-    //     channel: 'chrome',
-    //   },
-    // },
   ],
 };
 

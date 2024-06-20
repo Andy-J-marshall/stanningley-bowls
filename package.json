@@ -4,9 +4,9 @@
   "scripts": {
     "get-latest-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2024.xlsx",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
-    "start": "react-scripts start",
-    "build": "react-scripts build && npm run tests",
-    "deploy": "gh-pages -d build",
+    "start": "vite",
+    "build": "vite build && npm run tests",
+    "deploy": "gh-pages -d dist",
     "build-deploy": "npm run build && npm run deploy",
     "tests": "npm run unit-tests && npm run ui-tests",
     "unit-tests": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/unit/**/*.ts'",
@@ -23,14 +23,14 @@
     "react-dom": "^17.0.2",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.1",
+    "vite": "^5.2.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@playwright/test": "^1.24.0",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "ts-node": "^10.9.1"
