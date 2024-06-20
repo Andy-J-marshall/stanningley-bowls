@@ -15,6 +15,7 @@
     "ui-test-reports": "npx playwright show-report"
   },
   "dependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "bootstrap": "^5.1.3",
     "gh-pages": "^3.2.3",
     "react": "17.0.2",
