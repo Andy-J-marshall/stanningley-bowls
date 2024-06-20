@@ -1,5 +1,5 @@
 import { Nav, Carousel } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Supporters from './supporters';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
@@ -16,18 +16,15 @@ function Home() {
                         <Carousel.Item>
                             <img src={membershipImg} alt="Membership slide" />
                             <Carousel.Caption>
-                                <Nav.Item
-                                    style={{ textDecoration: 'none' }}
-                                    as={Link}
+                                <NavLink
                                     to="/membership"
+                                    style={{
+                                        color: 'white',
+                                        textDecoration: 'none',
+                                    }}
                                 >
-                                    <Nav.Link
-                                        style={{ color: 'white' }}
-                                        href="/membership"
-                                    >
-                                        <h2>MEMBERSHIP</h2>
-                                    </Nav.Link>
-                                </Nav.Item>
+                                    <h2>MEMBERSHIP</h2>
+                                </NavLink>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -48,35 +45,29 @@ function Home() {
                         <Carousel.Item>
                             <img src={statsImg} alt="Stats slide" />
                             <Carousel.Caption>
-                                <Nav.Item
-                                    style={{ textDecoration: 'none' }}
-                                    as={Link}
+                                <NavLink
                                     to="/stats/player"
+                                    style={{
+                                        color: 'white',
+                                        textDecoration: 'none',
+                                    }}
                                 >
-                                    <Nav.Link
-                                        style={{ color: 'white' }}
-                                        href="/stats/player"
-                                    >
-                                        <h2>PLAYER STATS</h2>
-                                    </Nav.Link>
-                                </Nav.Item>
+                                    <h2>PLAYER STATS</h2>
+                                </NavLink>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img src={fixturesImg} alt="Fixtures slide" />
                             <Carousel.Caption>
-                                <Nav.Item
-                                    style={{ textDecoration: 'none' }}
-                                    as={Link}
+                                <Nav.Link
                                     to="/fixtures"
+                                    style={{
+                                        color: 'white',
+                                        textDecoration: 'none',
+                                    }}
                                 >
-                                    <Nav.Link
-                                        style={{ color: 'white' }}
-                                        href="/fixtures"
-                                    >
-                                        <h2>FIXTURES</h2>
-                                    </Nav.Link>
-                                </Nav.Item>
+                                    <h2>FIXTURES</h2>
+                                </Nav.Link>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>

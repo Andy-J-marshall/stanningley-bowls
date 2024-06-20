@@ -13,11 +13,7 @@ function Navigation() {
             expand="md"
         >
             <Container fluid>
-                <Navbar.Brand
-                    as={Link}
-                    to="/"
-                    href="/home"
-                >
+                <Navbar.Brand as={Link} to="/" href="/home">
                     {config.teamNames.abbreviatedName}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -39,6 +35,7 @@ function Navigation() {
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
+                                    as="div"
                                     href="/membership"
                                     eventKey="/membership"
                                 >
@@ -52,6 +49,7 @@ function Navigation() {
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
+                                    as="div"
                                     href="/team-and-social"
                                     eventKey="/team-and-social"
                                 >
@@ -70,7 +68,11 @@ function Navigation() {
                                 className="tabs navigation"
                                 style={{ textDecoration: 'none' }}
                             >
-                                <Nav.Link href="/fixtures" eventKey="/fixtures">
+                                <Nav.Link
+                                    as="div"
+                                    href="/fixtures"
+                                    eventKey="/fixtures"
+                                >
                                     FIXTURES
                                 </Nav.Link>
                             </Nav.Item>
@@ -80,7 +82,11 @@ function Navigation() {
                                 className="tabs navigation"
                                 style={{ textDecoration: 'none' }}
                             >
-                                <Nav.Link href="/results" eventKey="/results">
+                                <Nav.Link
+                                    as="div"
+                                    href="/results"
+                                    eventKey="/results"
+                                >
                                     RESULTS
                                 </Nav.Link>
                             </Nav.Item>
@@ -97,6 +103,7 @@ function Navigation() {
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
+                                    as="div"
                                     href="/stats/player"
                                     eventKey="/stats/player"
                                 >
@@ -110,6 +117,7 @@ function Navigation() {
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
+                                    as="div"
                                     href="/stats/team"
                                     eventKey="/stats/team"
                                 >
@@ -123,6 +131,7 @@ function Navigation() {
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
+                                    as="div"
                                     href="/stats/records"
                                     eventKey="/stats/records"
                                 >
@@ -136,7 +145,11 @@ function Navigation() {
                             className="navigation"
                             style={{ textDecoration: 'none' }}
                         >
-                            <Nav.Link href="/contact" eventKey="/contact">
+                            <Nav.Link
+                                as="div"
+                                href="/contact"
+                                eventKey="/contact"
+                            >
                                 CONTACT
                             </Nav.Link>
                         </Nav.Item>
@@ -146,7 +159,11 @@ function Navigation() {
                             className="navigation"
                             style={{ textDecoration: 'none' }}
                         >
-                            <Nav.Link href="/history" eventKey="/history">
+                            <Nav.Link
+                                as="div"
+                                href="/history"
+                                eventKey="/history"
+                            >
                                 HISTORY
                             </Nav.Link>
                         </Nav.Item>
