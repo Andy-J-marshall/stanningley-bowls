@@ -4981,7 +4981,7 @@
             "totalGamesPlayed": 11,
             "agg": 1112,
             "opponentAgg": 1093,
-            "leaguePosition": 6,
+            "leaguePosition": 8,
             "results": [
                 "Rothwell BC A 25 - 17 Stanningley (Mon 8th Apr)",
                 "Stanningley 26 - 14 Whitkirk A (Mon 15th Apr)",
@@ -5217,6 +5217,6 @@
         }
     ],
     "clubCupWinner": "",
-    "lastUpdated": "29/06/2024",
+    "lastUpdated": "02/07/2024",
     "statsYear": "2024"
 }
