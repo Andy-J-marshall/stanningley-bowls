@@ -4,10 +4,11 @@ import json
 import os
 from datetime import date
 import utils
+import re
 
 year = str(date.today().year)
 
-leaguesDays = utils.teamDays
+leaguesDays = ['Test'] # leaguesDays = utils.teamDays # TODO revert
 players = utils.players
 duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
@@ -19,14 +20,6 @@ returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 cupText = utils.cupText
 leaguesProcessed = []
-
-# Spreadsheet info
-homePlayerCol = 'A'
-homePlayerScoreCol = 'B'
-awayPlayerCol = 'C'
-awayPlayerScoreCol = 'D'
-homeTeamNameCol = 'A'
-awayTeamNameCol = 'B'
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
@@ -45,6 +38,7 @@ for league in leaguesDays:
     sheet = wb[league]
     print('Processing ' + league)
 
+    # TODO do something similar to this for the other script?
     startingRow = 0
     startingRowIndex = 1
     for row in sheet['A']:
@@ -61,26 +55,29 @@ for league in leaguesDays:
                     cupGameRows.append(cupGameIndex + i)
         cupGameIndex += 1
 
+    # TODO the other script may have extra logic e.g. around traitor and transferred players  
     # Find rows in spreadsheet for players' games
-    homePlayerIndex = 1
+    playerIndex = 1
     homePlayerRow = []
-    for homePlayer in sheet[homePlayerCol]:
-        homePlayerName = homePlayer.value
-        if (homePlayerName and type(homePlayerName) is str):
-            homePlayerName = standardiseName(homePlayerName)
-            if homePlayerName.lower() in players or homePlayerName.lower() in duplicatePlayerNames:
-                homePlayerRow.append(homePlayerIndex)
-        homePlayerIndex = homePlayerIndex + 1
-
-    awayPlayerIndex = 1
     awayPlayerRow = []
-    for awayPlayer in sheet[awayPlayerCol]:
-        awayPlayerName = awayPlayer.value
-        if (awayPlayerName and type(awayPlayerName) is str):
-            awayPlayerName = standardiseName(awayPlayerName)
-            if awayPlayerName.lower() in players or awayPlayerName.lower() in duplicatePlayerNames:
-                awayPlayerRow.append(awayPlayerIndex)
-        awayPlayerIndex = awayPlayerIndex + 1
+    for row in sheet['A']:
+        rowText = row.value
+        if (rowText and type(rowText) is str):
+            isPlayerResultHome = re.match(r"^[^\d]+", rowText)
+            if (isPlayerResultHome):
+                possiblePlayerNameHome = isPlayerResultHome.group().strip()
+                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
+                if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                    homePlayerRow.append(playerIndex)
+
+            isPlayerResultAway = re.search(r"\d+\s+(.*)", rowText)
+            if (isPlayerResultAway):
+                possiblePlayerNameAway = isPlayerResultAway.group()
+                possiblePlayerNameAway = re.sub(r"\d+", "", possiblePlayerNameAway).strip()
+                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
+                if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                    awayPlayerRow.append(playerIndex)
+        playerIndex = playerIndex + 1
 
     # Find each players' results
     for row in range(startingRow, sheet.max_row + 1):
@@ -113,20 +110,11 @@ for league in leaguesDays:
                 updateStats = True
                 if not cupGame:
                     homeGame = True
-                playerNameCol = homePlayerCol
-                playerScoreCol = homePlayerScoreCol
-                opponentPlayerNameCol = awayPlayerCol
-                opponentPlayerScoreCol = awayPlayerScoreCol
-                teamNameCol = homeTeamNameCol
+
             if p == 'away':
                 updateStats = True
                 if not cupGame:
                     awayGame = True
-                playerNameCol = awayPlayerCol
-                playerScoreCol = awayPlayerScoreCol
-                opponentPlayerNameCol = homePlayerCol
-                opponentPlayerScoreCol = homePlayerScoreCol
-                teamNameCol = awayTeamNameCol
 
             # Checks player plays for expected team
             correctPlayerFound = False
@@ -136,7 +124,8 @@ for league in leaguesDays:
                 if row - i <= startingRow:
                     break
 
-                possibleTeamName = sheet[teamNameCol][row - i].value
+                possibleTeamName = sheet['A'][row - i].value
+                # TODO need to be smarter about this
                 if type(possibleTeamName) is str:
                     # Checks against full team name first
                     if possibleTeamName.lower() in teamsTracking:
@@ -162,8 +151,11 @@ for league in leaguesDays:
                 updateStats = False
 
             # Find result details
+            updateStats = True # TODO remove this once fixed
             if updateStats:
-                opponentsName = sheet[opponentPlayerNameCol + str(row)].value
+                # TODO refactor this
+                opponentsName = sheet['A' + str(row)].value
+                # TODO need to check for homeGame or awayGame, then use regex
 
                 if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
                     playerName = sheet[playerNameCol + str(row)].value
@@ -272,22 +264,23 @@ for league in leaguesDays:
                     playerResults[playerName]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 
+# TODO add back in
 # Create JSON file
-dataToExport = {
-    'playerResults': playerResults,
-    'lastUpdated': date.today().strftime("%d/%m/%Y"),
-    'statsYear': year
-}
+# dataToExport = {
+#     'playerResults': playerResults,
+#     'lastUpdated': date.today().strftime("%d/%m/%Y"),
+#     'statsYear': year
+# }
 
-filename = 'src/data/allPlayerStats' + year + '.json'
-if os.path.exists(filename):
-    os.remove(filename)
+# filename = 'src/data/allPlayerStats' + year + '.json'
+# if os.path.exists(filename):
+#     os.remove(filename)
 
-with open(filename, 'w') as f:
-    json.dump(dataToExport, f)
-    print(filename + ' created')
-    print('------')
+# with open(filename, 'w') as f:
+#     json.dump(dataToExport, f)
+#     print(filename + ' created')
+#     print('------')
 
-# Sanity checks on the data
-sanityChecksOnPlayerStats(playerResults, players)
-print('Sanity checks for all teams stats complete')
+# # Sanity checks on the data
+# sanityChecksOnPlayerStats(playerResults, players)
+# print('Sanity checks for all teams stats complete')
