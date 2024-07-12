@@ -50,6 +50,7 @@ for league in leaguesDays:
     for row in sheet['A']:
         if row.value and type(row.value) is str and 'FULL RESULTS' in row.value.upper():
             startingRow = startingRowIndex
+            break
         startingRowIndex += 1
 
     cupGameIndex = 1
