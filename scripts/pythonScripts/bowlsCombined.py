@@ -156,13 +156,7 @@ for league in leaguesDays:
             if updateStats:
                 # TODO check how it handles - and ' etc.
                 text = sheet['A' + str(row)].value
-             
-                scoreFoundInText = any(char.isdigit() for char in text)
-                if scoreFoundInText is False:
-                    pairsGame = True
-                    # TODO what to do with this?
-                
-                # TODO will this work for pairs games?
+
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
                 if homeGame or cupHome:
                     opponentsName = findPossiblePlayerNames[1]
@@ -170,7 +164,7 @@ for league in leaguesDays:
                 if awayGame or cupAway:
                     opponentsName = findPossiblePlayerNames[0]
                     
-                if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
+                if '*walkover*' not in opponentsName.lower() and '*no player*' not in opponentsName.lower():
                     if homeGame or cupHome:
                         playerName = findPossiblePlayerNames[0]
                         
@@ -186,43 +180,51 @@ for league in leaguesDays:
                         if aggregateMatch:
                             aggregate = int(aggregateMatch[1].strip())
                             opponentAggregate = int(aggregateMatch[0].strip())
-                            
-                # TODO remove
-                # Mick Bagshaw       21  Craig Clarkson     17
-                # Trevor Hawkin          Alyssa Randell       
-                
-                # TODO how to get regex for pairs game?
-                    pairsGame = False
-                    # if aggregate is None:
-                        # pairsGame = True
-                #         pairsPartner = sheet[playerNameCol +
-                #                              str(row - 1)].value
-                #         secondOpponent = sheet[opponentPlayerNameCol +
-                #                                str(row - 1)].value
-                #         aggregate = sheet[playerScoreCol + str(row - 1)].value
-                #         opponentAggregate = sheet[opponentPlayerScoreCol +
-                #                                   str(row - 1)].value
-                #     else:
-                #         pointsRowBelow = sheet[playerScoreCol +
-                #                                str(row + 1)].value
-                #         if pointsRowBelow is None:
-                #             pairsGame = True
-                #             pairsPartner = sheet[playerNameCol +
-                #                                  str(row + 1)].value
-                #             secondOpponent = sheet[opponentPlayerNameCol +
-                #                                    str(row + 1)].value
 
-                    pairsPartner = formatName(pairsPartner)
+                    # Checks whether it's a pairs game
+                    pairsGame = False
+                    scoreFoundInText = any(char.isdigit() for char in text)
+                    if scoreFoundInText is False:
+                        pairsGame = True
+                        rowBelowText = sheet['A' + str(row - 1)].value
+                        
+                        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+                        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+                        if homeGame or cupHome:
+                            pairsPartner = findPossiblePairsPlayerNames[0]
+                            secondOpponent = findPossiblePairsPlayerNames[1]
+                            aggregate = int(pairsAggregateMatch[0].strip())
+                            opponentAggregate = int(pairsAggregateMatch[1].strip())
+                
+                        if awayGame or cupAway:
+                            pairsPartner = findPossiblePairsPlayerNames[1]
+                            secondOpponent = findPossiblePairsPlayerNames[0]
+                            aggregate = int(pairsAggregateMatch[1].strip())
+                            opponentAggregate = int(pairsAggregateMatch[0].strip())
+                            
+                    else:
+                        rowBelowText = sheet['A' + str(row + 1)].value
+                        
+                        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+                        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+                        if len(pairsAggregateMatch) == 0:
+                            pairsGame = True
+                            if homeGame or cupHome:
+                                pairsPartner = findPossiblePairsPlayerNames[0]
+                                secondOpponent = findPossiblePairsPlayerNames[1]
+                            if awayGame or cupAway:
+                                pairsPartner = findPossiblePairsPlayerNames[1]
+                                secondOpponent = findPossiblePairsPlayerNames[0]
+
                     playerName = formatName(playerName)
                     opponentsName = formatName(opponentsName)
-                    secondOpponent = formatName(secondOpponent)
                     pairsPartner = formatName(pairsPartner)
+                    secondOpponent = formatName(secondOpponent)
 
                     # Store player stats
                     playerNameForResult = playerName
                     if pairsGame:
-                        playerResults[playerName]['pairsPartners'].append(
-                            pairsPartner)
+                        playerResults[playerName]['pairsPartners'].append(pairsPartner)
                         playerNameForResult = playerName + ' & ' + pairsPartner
                         opponentsName = opponentsName + ' & ' + secondOpponent
                         playerResults[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(league)
@@ -239,8 +241,7 @@ for league in leaguesDays:
                     # Wins
                     if aggregate > opponentAggregate:
                         if pairsGame:
-                            playerResults[playerName]['winningPairsPartners'].append(
-                                pairsPartner)
+                            playerResults[playerName]['winningPairsPartners'].append(pairsPartner)
                             playerResults[playerName]['pairWins'] += 1
                         if homeGame:
                             playerResults[playerName]['homeWins'] += 1
