@@ -152,7 +152,9 @@ for league in leaguesDays:
                 updateStats = False
 
             # Find result details
-            if updateStats:     
+            if updateStats:
+                # TODO change regex to what Stiv sent me? Use Find all, then change it to [0], [1] etc.?
+                # TODO check how it handles - and ' etc.
                 text = sheet['A' + str(row)].value
                 # TODO will this work for pairs games?
                 if homeGame or cupHome:
@@ -179,11 +181,17 @@ for league in leaguesDays:
                         if aggregateMatch:
                             aggregate = int(aggregateMatch[1].strip())
                             opponentAggregate = int(aggregateMatch[0].strip())
+                            
+                # TODO remove
+                # Mick Bagshaw       21  Craig Clarkson     17
+                # Trevor Hawkin          Alyssa Randell       
                 
                 # TODO how to get regex for pairs game?
+                    if aggregateMatch.count == 0:
+                        print('HERE')
                     pairsGame = False
-                #     if aggregate is None:
-                #         pairsGame = True
+                    # if aggregate is None:
+                        # pairsGame = True
                 #         pairsPartner = sheet[playerNameCol +
                 #                              str(row - 1)].value
                 #         secondOpponent = sheet[opponentPlayerNameCol +
