@@ -68,8 +68,6 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 
 If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
 
-Remove players from the `transferredPlayers` dictionary (and add to traitorPlayers?).
-
 ## Run the script
 
 `npm run update-stats`
@@ -140,7 +138,7 @@ Team Records:
 
 Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays. Reset the transferredPlayers to empty objects for each league.
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
 
 Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 

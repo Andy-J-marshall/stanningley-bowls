@@ -21,12 +21,10 @@ playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True)
 formatName = utils.formatName
 cupTextList = utils.cupText
 preferredTeamName = teamDetails.preferredTeamName
-transferredPlayers = teamDetails.transferredPlayers
 clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-lastResultRowsForTransferredPlayer = {}
 teamsProcessed = []
 
 # TODO best place for this?
@@ -89,8 +87,6 @@ for team in teamDays:
     if '(B)' in team:
         expectedTeamNames = teamNamesForSecondTeam
         teamNameToUse = preferredTeamName + ' B'
-
-    lastResultRowsForTransferredPlayer[league] = {}
 
     # Goes through each sheet in turn
     sheet = wb[league]
@@ -220,16 +216,6 @@ for team in teamDays:
         #             gameDate = sheet['A' + str(row - gameDateRowModifier)].value
         #     else:
         #         gameDate = ''
-
-        # TODO don't need this any more?
-        #     # Finds last result before player has been transferred
-        #     if (transferredPlayers[league]):
-        #         gameDates = datefinder.find_dates(gameDate.strip())
-        #         for formattedGameDate in gameDates:
-        #             if (formattedGameDate < transferredPlayers[league]["date"]):
-        #                 playerTransferred = transferredPlayers[league]["player"]
-        #                 lastResultRowsForTransferredPlayer[league][playerTransferred] = row
-
     #     # Home games
     #     if row in homeRow:
     #         if row != leaguePositionRow:
