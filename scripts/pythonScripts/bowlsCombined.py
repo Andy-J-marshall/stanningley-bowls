@@ -47,6 +47,7 @@ for league in leaguesDays:
             break
         startingRowIndex += 1
 
+    # TODO this isn't getting picked up
     cupGameIndex = 1
     cupGameRows = []
     for row in sheet['A']:
@@ -283,6 +284,7 @@ for league in leaguesDays:
                             playerResults[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalPairsAwayAgg'] += aggregate
                             playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
+                    # TODO teamName is wrong e.g. 'Stanningley A Sth Leeds Cons A'
                     playerResults[playerName]['dayPlayed'].append(
                         league + ' (' + teamName + ')')
 
@@ -294,14 +296,13 @@ dataToExport = {
 }
 
 filename = 'src/data/allPlayerStats' + year + '.json'
-# TODO add back in
-# if os.path.exists(filename):
-#     os.remove(filename)
+if os.path.exists(filename):
+    os.remove(filename)
 
-# with open(filename, 'w') as f:
-#     json.dump(dataToExport, f)
-#     print(filename + ' created')
-#     print('------')
+with open(filename, 'w') as f:
+    json.dump(dataToExport, f)
+    print(filename + ' created')
+    print('------')
 
 # Sanity checks on the data
 sanityChecksOnPlayerStats(playerResults, players)
