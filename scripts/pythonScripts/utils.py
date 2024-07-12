@@ -15,7 +15,8 @@ extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = []
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
+# TODO remove armley and wortley once it works properly?
+otherTeams = ['new wortley', 'new armley', 'wortley', 'armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
@@ -120,24 +121,6 @@ def returnListOfPlayerStats(days, includeTeamData):
                 }
         playerStats[player] = playerObj
     return playerStats
-
-def formatTeamName(possibleTeamName):
-    teamName = possibleTeamName
-    teamName = teamName.replace(
-        'Stanningley Park', 'Stanningley')
-    teamName = teamName.replace(
-        'Pudsey Littlemoor', 'Littlemoor')
-    teamName = teamName.replace(
-        'S&SC', '')
-    teamName = teamName.replace(
-        'S & SC', '')
-    teamName = teamName.replace(' BC', '')
-    teamName = teamName.replace('\'', '')
-    teamName = teamName.replace('-', ' ')
-    teamName = teamName.replace('   ', ' ')
-    teamName = teamName.replace('  ', ' ')
-    teamName = teamName.strip()
-    return teamName
                 
 def checkForDuplicateResults(results, player):
     potentialDuplicatesFound = len(results) != len(set(results))

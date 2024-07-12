@@ -119,10 +119,6 @@ for (const team of teams) {
     // Choose report options
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Formatted Report')
-      .click();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
       .getByText('Output Tables')
       .click();
     await page

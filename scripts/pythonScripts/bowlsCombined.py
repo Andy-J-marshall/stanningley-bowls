@@ -14,7 +14,6 @@ duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
 formatName = utils.formatName
 standardiseName = utils.standardiseName
-formatTeamName = utils.formatTeamName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
@@ -127,34 +126,32 @@ for league in leaguesDays:
                 if row - i <= startingRow:
                     break
 
-                possibleTeamName = sheet['A'][row - i].value
+                possibleTeamText = sheet['A'][row - i].value
                 # TODO need to be smarter about this
-                if type(possibleTeamName) is str:
+                
+                # TODO remove # e.g.     Bramley Park          Middleton Park
+                if type(possibleTeamText) is str:
                     # Checks against full team name first
-                    if possibleTeamName.lower() in teamsTracking:
-                        teamName = formatTeamName(possibleTeamName)
+                    if possibleTeamText.lower() in teamsTracking:
                         correctPlayerFound = True
                         break
                     else:
                         # Checks against first two words in team name next
-                        teamNameParts = possibleTeamName.split(' ')
+                        teamNameParts = possibleTeamText.split(' ')
                         if len(teamNameParts) > 2:
                             longTeamName = (teamNameParts[0] + ' ' + teamNameParts[1])
                             if longTeamName.lower() in teamsTracking:
-                                teamName = formatTeamName(possibleTeamName)
                                 correctPlayerFound = True
                                 break
                         # Finally checks against each word in the team name
                         for part in teamNameParts:
                             if part.lower() in teamsTracking:
-                                teamName = formatTeamName(possibleTeamName)
                                 correctPlayerFound = True
                                 break
             if correctPlayerFound is False:
                 updateStats = False
 
             # Find result details
-            updateStats = True # TODO remove this once fixed
             if updateStats:     
                 text = sheet['A' + str(row)].value
                 # TODO will this work for pairs games?
@@ -284,9 +281,7 @@ for league in leaguesDays:
                             playerResults[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalPairsAwayAgg'] += aggregate
                             playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                    # TODO teamName is wrong e.g. 'Stanningley A Sth Leeds Cons A'
-                    playerResults[playerName]['dayPlayed'].append(
-                        league + ' (' + teamName + ')')
+                    playerResults[playerName]['dayPlayed'].append(league)
 
 # Create JSON file
 dataToExport = {
