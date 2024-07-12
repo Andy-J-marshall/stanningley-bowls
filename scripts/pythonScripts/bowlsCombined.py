@@ -37,6 +37,7 @@ for league in leaguesDays:
     sheet = wb[league]
     print('Processing ' + league)
 
+    # Find the stating row to check the stats
     startingRow = 0
     startingRowIndex = 1
     for row in sheet['A']:
@@ -45,6 +46,7 @@ for league in leaguesDays:
             break
         startingRowIndex += 1
 
+    # Find the cup games in the stats
     cupGameIndex = 1
     cupGameRows = []
     for row in sheet['A']:
@@ -57,7 +59,6 @@ for league in leaguesDays:
                         break
         cupGameIndex += 1
 
-    # TODO the other script may have extra logic e.g. around traitor and transferred players  
     # Find rows in spreadsheet for players' games
     playerIndex = 1
     homePlayerRow = []
@@ -70,16 +71,15 @@ for league in leaguesDays:
         if (rowText and type(rowText) is str):
             findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowText)
             if len(findPossiblePlayerNames) > 1:                
-                if findPossiblePlayerNames:
-                    possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
-                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
-                        homePlayerRow.append(playerIndex)
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
+                if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                    homePlayerRow.append(playerIndex)
 
-                    possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
-                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
-                        awayPlayerRow.append(playerIndex)
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
+                if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                    awayPlayerRow.append(playerIndex)
         playerIndex = playerIndex + 1
 
     # Find each players' results
@@ -154,7 +154,6 @@ for league in leaguesDays:
 
             # Find result details
             if updateStats:
-                # TODO check how it handles - and ' etc.
                 text = sheet['A' + str(row)].value
 
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
