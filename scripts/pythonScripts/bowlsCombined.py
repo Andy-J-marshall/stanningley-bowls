@@ -37,7 +37,6 @@ for league in leaguesDays:
     sheet = wb[league]
     print('Processing ' + league)
 
-    # TODO do something similar to this for the other script?
     startingRow = 0
     startingRowIndex = 1
     for row in sheet['A']:
@@ -56,7 +55,6 @@ for league in leaguesDays:
                     cupGameRows.append(cupGameIndex + i)
         cupGameIndex += 1
 
-    # TODO don't need to do this in a separate loop any more? 
     # TODO the other script may have extra logic e.g. around traitor and transferred players  
     # Find rows in spreadsheet for players' games
     playerIndex = 1
@@ -121,33 +119,28 @@ for league in leaguesDays:
             # Checks player plays for expected team
             correctPlayerFound = False
             teamName = ''
-            longTeamName = ''
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
-
-                possibleTeamText = sheet['A'][row - i].value
-                # TODO need to be smarter about this
                 
-                # TODO remove # e.g.     Bramley Park          Middleton Park
+                # TODO should I care about possible duplicate name appearing for home/away team?
+                possibleTeamText = sheet['A'][row - i].value
                 if type(possibleTeamText) is str:
                     # Checks against full team name first
-                    if possibleTeamText.lower() in teamsTracking:
-                        correctPlayerFound = True
+                    for team in teamsTracking:
+                        if team.lower() in possibleTeamText.lower():
+                            correctPlayerFound = True
+                            break
+                    
+                    if correctPlayerFound is True:
                         break
-                    else:
-                        # Checks against first two words in team name next
-                        teamNameParts = possibleTeamText.split(' ')
-                        if len(teamNameParts) > 2:
-                            longTeamName = (teamNameParts[0] + ' ' + teamNameParts[1])
-                            if longTeamName.lower() in teamsTracking:
-                                correctPlayerFound = True
-                                break
-                        # Finally checks against each word in the team name
-                        for part in teamNameParts:
-                            if part.lower() in teamsTracking:
-                                correctPlayerFound = True
-                                break
+                        
+                    # Checks against each word in the team name if team not found
+                    teamNameParts = possibleTeamText.split(' ')
+                    for part in teamNameParts:
+                        if part.lower() in teamsTracking:
+                            correctPlayerFound = True
+                            break
             if correctPlayerFound is False:
                 updateStats = False
 
