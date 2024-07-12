@@ -44,6 +44,7 @@ for league in leaguesDays:
     for row in sheet['A']:
         if row.value and type(row.value) is str and 'FULL RESULTS' in row.value.upper():
             startingRow = startingRowIndex
+            break
         startingRowIndex += 1
 
     cupGameIndex = 1
@@ -55,6 +56,7 @@ for league in leaguesDays:
                     cupGameRows.append(cupGameIndex + i)
         cupGameIndex += 1
 
+    # TODO don't need to do this in a separate loop any more? 
     # TODO the other script may have extra logic e.g. around traitor and transferred players  
     # Find rows in spreadsheet for players' games
     playerIndex = 1
@@ -175,7 +177,7 @@ for league in leaguesDays:
                 #                               str(row)].value
                 
                 # TODO how to get regex for pairs game?
-                #     pairsGame = False
+                    pairsGame = False
                 #     if aggregate is None:
                 #         pairsGame = True
                 #         pairsPartner = sheet[playerNameCol +
@@ -195,10 +197,11 @@ for league in leaguesDays:
                 #             secondOpponent = sheet[opponentPlayerNameCol +
                 #                                    str(row + 1)].value
 
-                #     pairsPartner = formatName(pairsPartner)
-                #     playerName = formatName(playerName)
-                #     opponentsName = formatName(opponentsName)
-                #     secondOpponent = formatName(secondOpponent)
+                    pairsPartner = formatName(pairsPartner)
+                    playerName = formatName(playerName)
+                    opponentsName = formatName(opponentsName)
+                    secondOpponent = formatName(secondOpponent)
+                    pairsPartner = formatName(pairsPartner)
 
                 #     # Store player stats
                 #     playerNameForResult = playerName
