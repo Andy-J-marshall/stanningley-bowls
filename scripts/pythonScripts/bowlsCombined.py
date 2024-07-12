@@ -17,7 +17,7 @@ standardiseName = utils.standardiseName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-cupText = utils.cupText
+cupTextList = utils.cupText
 leaguesProcessed = []
 
 # Open Excel file
@@ -45,14 +45,16 @@ for league in leaguesDays:
             break
         startingRowIndex += 1
 
-    # TODO this isn't getting picked up
     cupGameIndex = 1
     cupGameRows = []
     for row in sheet['A']:
-        if row.value and type(row.value) is str:
-            if cupGameIndex > startingRow and row.value.lower() in cupText:
-                for i in range(0, 11):
-                    cupGameRows.append(cupGameIndex + i)
+        if cupGameIndex > startingRow:
+            if row.value and type(row.value) is str:
+                for cupText in cupTextList:
+                    if cupText in row.value.lower():
+                        for i in range(0, 11):
+                            cupGameRows.append(cupGameIndex + i)
+                        break
         cupGameIndex += 1
 
     # TODO the other script may have extra logic e.g. around traitor and transferred players  
@@ -81,13 +83,13 @@ for league in leaguesDays:
 
     # Find each players' results
     for row in range(startingRow, sheet.max_row + 1):
-        playersToUpdate = []
+        playerRows = []
         if row in homePlayerRow:
-            playersToUpdate.append('home')
+            playerRows.append('home')
         if row in awayPlayerRow:
-            playersToUpdate.append('away')
+            playerRows.append('away')
 
-        for p in playersToUpdate:
+        for homeOrAway in playerRows:
             # reset variable values
             aggregate = 0
             opponentAggregate = 0
@@ -101,24 +103,29 @@ for league in leaguesDays:
             homeGame = None
             awayGame = None
             cupGame = False
+            cupHome = False
+            cupAway = False
 
             # Find columns
             if row in cupGameRows:
                 cupGame = True
+                if homeOrAway == 'home':
+                    cupHome = True
+                if homeOrAway == 'away':
+                    cupAway = True
 
-            if p == 'home':
+            if homeOrAway == 'home':
                 updateStats = True
                 if not cupGame:
                     homeGame = True
 
-            if p == 'away':
+            if homeOrAway == 'away':
                 updateStats = True
                 if not cupGame:
                     awayGame = True
 
             # Checks player plays for expected team
             correctPlayerFound = False
-            teamName = ''
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
@@ -148,15 +155,15 @@ for league in leaguesDays:
             if updateStats:     
                 text = sheet['A' + str(row)].value
                 # TODO will this work for pairs games?
-                if homeGame:
+                if homeGame or cupHome:
                     opponentsName = re.search(r"\d+\s+(.*)", text).group()
                     opponentsName = re.sub(r"\d+", "", opponentsName).strip()
                 
-                if awayGame:
+                if awayGame or cupAway:
                     opponentsName = re.match(r"^[^\d]+", text).group().strip()
                     
                 if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
-                    if homeGame:
+                    if homeGame or cupHome:
                         playerName = re.match(r"^[^\d]+", text).group().strip()
                             
                         aggregateMatch = re.findall(r'\d+', text)
@@ -164,7 +171,7 @@ for league in leaguesDays:
                             aggregate = int(aggregateMatch[0].strip())
                             opponentAggregate = int(aggregateMatch[1].strip())
 
-                    if awayGame:
+                    if awayGame or cupAway:
                         playerName = re.search(r"\d+\s+(.*)", text).group()
                         playerName = re.sub(r"\d+", "", playerName).strip()
                         
