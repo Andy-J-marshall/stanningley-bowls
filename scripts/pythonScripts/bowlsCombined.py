@@ -156,6 +156,7 @@ for league in leaguesDays:
             updateStats = True # TODO remove this once fixed
             if updateStats:     
                 text = sheet['A' + str(row)].value
+                # TODO will this work for pairs games?
                 if homeGame:
                     opponentsName = re.search(r"\d+\s+(.*)", text).group()
                     opponentsName = re.sub(r"\d+", "", opponentsName).strip()
@@ -166,13 +167,21 @@ for league in leaguesDays:
                 if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
                     if homeGame:
                         playerName = re.match(r"^[^\d]+", text).group().strip()
+                        
+                        aggregateMatch = re.search(r'\d+', text)
+                        if aggregateMatch:
+                            aggregate = aggregateMatch.group().strip()
 
                     if awayGame:
                         playerName = re.search(r"\d+\s+(.*)", text).group()
-                        playerName = re.sub(r"\d+", "", playerName).strip()    
+                        playerName = re.sub(r"\d+", "", playerName).strip()
+                        
+                        aggregateMatch = re.findall(r'\d+', text) # TODO change this?
+                        if aggregateMatch:
+                            aggregate = aggregateMatch[1].strip()
                     
-                    # TODO change how we get these
-                #     aggregate = sheet['A' + str(row)].value
+                    # TODO move these into homeGame/ awayGame
+                    
                 #     opponentAggregate = sheet[opponentPlayerScoreCol +
                 #                               str(row)].value
                 
