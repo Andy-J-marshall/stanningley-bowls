@@ -8,7 +8,7 @@ import re
 
 year = str(date.today().year)
 
-leaguesDays = ['Test'] # leaguesDays = utils.teamDays # TODO revert
+leaguesDays = utils.teamDays
 players = utils.players
 duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
