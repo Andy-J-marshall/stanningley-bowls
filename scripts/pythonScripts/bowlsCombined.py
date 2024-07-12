@@ -63,22 +63,23 @@ for league in leaguesDays:
     homePlayerRow = []
     awayPlayerRow = []
     for row in sheet['A']:
+        if playerIndex < startingRow:
+            playerIndex = playerIndex + 1
+            continue
         rowText = row.value
         if (rowText and type(rowText) is str):
-            isPlayerResultHome = re.match(r"^[^\d]+", rowText)
-            if isPlayerResultHome:
-                possiblePlayerNameHome = isPlayerResultHome.group().strip()
-                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
-                if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
-                    homePlayerRow.append(playerIndex)
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowText)
+            if len(findPossiblePlayerNames) > 1:                
+                if findPossiblePlayerNames:
+                    possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                    possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
+                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                        homePlayerRow.append(playerIndex)
 
-            isPlayerResultAway = re.search(r"\d+\s+(.*)", rowText)
-            if isPlayerResultAway:
-                possiblePlayerNameAway = isPlayerResultAway.group()
-                possiblePlayerNameAway = re.sub(r"\d+", "", possiblePlayerNameAway).strip()
-                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
-                if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
-                    awayPlayerRow.append(playerIndex)
+                    possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                    possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
+                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                        awayPlayerRow.append(playerIndex)
         playerIndex = playerIndex + 1
 
     # Find each players' results
@@ -153,29 +154,33 @@ for league in leaguesDays:
 
             # Find result details
             if updateStats:
-                # TODO change regex to what Stiv sent me? Use Find all, then change it to [0], [1] etc.?
                 # TODO check how it handles - and ' etc.
                 text = sheet['A' + str(row)].value
+             
+                scoreFoundInText = any(char.isdigit() for char in text)
+                if scoreFoundInText is False:
+                    pairsGame = True
+                    # TODO what to do with this?
+                
                 # TODO will this work for pairs games?
+                findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
                 if homeGame or cupHome:
-                    opponentsName = re.search(r"\d+\s+(.*)", text).group()
-                    opponentsName = re.sub(r"\d+", "", opponentsName).strip()
+                    opponentsName = findPossiblePlayerNames[1]
                 
                 if awayGame or cupAway:
-                    opponentsName = re.match(r"^[^\d]+", text).group().strip()
+                    opponentsName = findPossiblePlayerNames[0]
                     
                 if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
                     if homeGame or cupHome:
-                        playerName = re.match(r"^[^\d]+", text).group().strip()
-                            
+                        playerName = findPossiblePlayerNames[0]
+                        
                         aggregateMatch = re.findall(r'\d+', text)
                         if aggregateMatch:
                             aggregate = int(aggregateMatch[0].strip())
                             opponentAggregate = int(aggregateMatch[1].strip())
 
                     if awayGame or cupAway:
-                        playerName = re.search(r"\d+\s+(.*)", text).group()
-                        playerName = re.sub(r"\d+", "", playerName).strip()
+                        playerName = findPossiblePlayerNames[1]
                         
                         aggregateMatch = re.findall(r'\d+', text)
                         if aggregateMatch:
@@ -187,8 +192,6 @@ for league in leaguesDays:
                 # Trevor Hawkin          Alyssa Randell       
                 
                 # TODO how to get regex for pairs game?
-                    if aggregateMatch.count == 0:
-                        print('HERE')
                     pairsGame = False
                     # if aggregate is None:
                         # pairsGame = True
