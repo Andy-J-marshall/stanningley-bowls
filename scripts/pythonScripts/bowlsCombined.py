@@ -164,7 +164,7 @@ for league in leaguesDays:
                 if awayGame or cupAway:
                     opponentsName = findPossiblePlayerNames[0]
                     
-                if '*walkover*' not in opponentsName.lower() and '*no player*' not in opponentsName.lower():
+                if 'walkover' not in opponentsName.lower() and 'no player' not in opponentsName.lower():
                     if homeGame or cupHome:
                         playerName = findPossiblePlayerNames[0]
                         
