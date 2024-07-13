@@ -5,9 +5,6 @@ teamNames = ['Stanningley', 'Stanningley A', 'Stanningley B',
              'Stanningley Park', 'Stanningley Park A', 'Stanningley Park B']
 preferredTeamName = 'Stanningley'
 
-teamNamesForFirstTeam =['Stanningley A', 'Stanningley Park A']
-teamNamesForSecondTeam =['Stanningley B', 'Stanningley Park B']
-
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds (A)', 'Saturday Leeds (B)' ]

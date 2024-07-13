@@ -11,9 +11,7 @@ year = str(date.today().year)
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
-teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
-teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
-preferredTeamName = teamDetails.preferredTeamName
+displayTeamName = teamDetails.preferredTeamName
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
@@ -41,20 +39,11 @@ for team in teamDays:
     if team in teamsProcessed:
         raise Exception('team is being processed twice: ' + team)
     teamsProcessed.append(team)
-
-    expectedTeamNames = teamNames
-    teamNameToUse = preferredTeamName
-    if '(A)' in team:
-        expectedTeamNames = teamNamesForFirstTeam
-        teamNameToUse = preferredTeamName + ' A'
-    if '(B)' in team:
-        expectedTeamNames = teamNamesForSecondTeam
-        teamNameToUse = preferredTeamName + ' B'
-
+    
     # Goes through each sheet in turn
     sheet = wb[league]
     print('Processing ' + team)
-
+    
     # Find the stating row to check the stats
     startingRow = 0
     startingRowIndex = 1
@@ -63,6 +52,34 @@ for team in teamDays:
             startingRow = startingRowIndex
             break
         startingRowIndex += 1
+    
+    # Find team name used by Stanningley in this league
+    possibleTeamNamesUsed = []
+    teamNameUsedForLeague = ''
+    teamNameToUse = displayTeamName
+    for row in sheet['A']:
+        if row.row <= startingRow:
+            continue
+        if row.value and type(row.value) is str:
+            for teamName in teamNames:
+                if row.value.lower().strip().startswith(teamName.lower()):
+                    if '(A)' in team and row.value.lower().endswith('b'):
+                        continue
+                    if '(B)' in team and row.value.lower().endswith('a'):
+                        continue
+                    if teamName.lower() in row.value.lower():
+                        possibleTeamNamesUsed.append(teamName)
+                        if '(A)' in team:
+                            teamNameToUse = displayTeamName + ' A'
+                        if '(B)' in team:
+                            teamNameToUse = displayTeamName + ' B'
+    
+    if len(possibleTeamNamesUsed) == 0:
+        raise Exception('No team name found')
+    
+    teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
+    if displayTeamName.lower() not in teamNameUsedForLeague.lower():
+        raise Exception('Incorrect team name found')
 
     # Find the cup games in the stats
     cupGameRows = []
@@ -75,31 +92,6 @@ for team in teamDays:
                     for i in range(0, 11):
                         cupGameRows.append(row.row + i)
                     break
-    
-    # Find team name used by Stanningley in this league
-    possibleTeamNamesUsed = []
-    teamNameUsedForLeague = ''
-    for row in sheet['A']:
-        if row.row <= startingRow:
-            continue
-        if row.value and type(row.value) is str:
-            for teamName in expectedTeamNames:
-                if row.value.lower().strip().startswith(teamName.lower()):
-                    if '(A)' in team and '(b)' in row.value.lower():
-                        continue
-                    if '(B)' in team and '(a)' in row.value.lower():
-                        continue
-                    if teamName.lower() in row.value.lower():
-                        possibleTeamNamesUsed.append(teamName)
-    
-    if len(possibleTeamNamesUsed) == 0:
-        raise Exception('No team name found')
-    
-    teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
-    if preferredTeamName.lower() not in teamNameUsedForLeague.lower():
-        raise Exception('Incorrect team name found')
-                    
-    # TODO refactor code to use the teamNameUsedForLeague instead of endless loops! Also in combinedBowls.py
 
     #### TEAM STATS ####
     # Find Stanningley games
@@ -109,39 +101,34 @@ for team in teamDays:
         if row.row <= startingRow:
             continue
         if row.value and type(row.value) is str:
-            for teamName in expectedTeamNames:
-                # This ignores cup games hosted on Stanningley
-                hostedCupGame = False
-                for cupText in cupTextList:
-                    if cupText.lower() in row.value.lower():
-                        hostedCupGame = True
-                        break
-                if hostedCupGame is False and teamName.lower() in row.value.lower():
-                    words = row.value.strip().lower().split()
-                    firstWord = words[0].lower() 
-                    if firstWord == preferredTeamName.lower():
-                        homeRow.append(row.row)
-                    else:
-                        awayRow.append(row.row)
+            # This ignores cup games hosted on Stanningley
+            hostedCupGame = False
+            for cupText in cupTextList:
+                if cupText.lower() in row.value.lower():
+                    hostedCupGame = True
                     break
+            if hostedCupGame is False and teamNameUsedForLeague.lower() in row.value.lower():
+                words = row.value.strip().lower().split()
+                firstWord = words[0].lower() 
+                if firstWord == displayTeamName.lower():
+                    homeRow.append(row.row)
+                else:
+                    awayRow.append(row.row)
 
     # Find league position for teams
     currentLeaguePosition = -1
     leaguePositionRow = 0
-
     for row in sheet['A']:
         # League position appears before player results
         if row.row > startingRow:
             break
         if row.value and type(row.value) is str:
             leagueTableText = re.search(r"\d\.\s", row.value.lower())
-            # if len(leagueTableText) > 0:
             if leagueTableText:
-                for teamName in expectedTeamNames:
-                    if teamName.lower() in row.value.lower():
-                        leaguePosition = leagueTableText[0].split('.')[0]
-                        currentLeaguePosition = int(leaguePosition)
-                        break
+                if teamNameUsedForLeague.lower() in row.value.lower():
+                    leaguePosition = leagueTableText[0].split('.')[0]
+                    currentLeaguePosition = int(leaguePosition)
+                    break
 
     # Find team results and scores
     awayWins = 0
@@ -222,7 +209,7 @@ for team in teamDays:
         gameDate = ''
         if (row in homeRow or row in awayRow) and row > startingRow:
             gameDateRowModifier = 1
-            if 'Saturday Leeds' in team:
+            if 'saturday leeds' in team.lower():
                 gameDateRowModifier += 1
 
             gameDate = sheet['A' + str(row - gameDateRowModifier)].value
@@ -331,21 +318,8 @@ for team in teamDays:
             # Checks player is playing for correct team
             previousRowValue = sheet['A' + str(row.row - i)]
             if previousRowValue and type(previousRowValue.value) is str:
-                if team.endswith('(A)') or team.endswith('(B)'):
-                    if team.endswith('(A)'):
-                        for teamName in teamNamesForFirstTeam:
-                            if teamName.lower() in previousRowValue.value.lower():
-                                return True
-
-                    if team.endswith('(B)'):
-                        for teamName in teamNamesForSecondTeam:
-                            if teamName.lower() in previousRowValue.value.lower():
-                                return True
-
-                else:
-                    for teamName in teamNames:
-                        if teamName.lower() in previousRowValue.value.lower():
-                            return True
+                if teamNameUsedForLeague.lower() in previousRowValue.value.lower():
+                    return True
 
     # Find rows in spreadsheet for players' games
     playerIndex = 1
@@ -594,5 +568,5 @@ with open(filename, 'w') as f:
 # Sanity checks on the data
 sanityChecksOnTeamStats(allTeamResults)
 sanityChecksOnPlayerStats(playerStats, players)
-print(f'Sanity checks for {preferredTeamName} stats complete')
+print(f'Sanity checks for {displayTeamName} stats complete')
 print('------')

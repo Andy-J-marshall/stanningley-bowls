@@ -160,8 +160,6 @@ Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
 * `teamNames` - Add the lowercase team names for the B team 
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
-* `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
-* `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`
 
 Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
 Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
