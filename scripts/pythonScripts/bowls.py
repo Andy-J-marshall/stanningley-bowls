@@ -39,22 +39,22 @@ def checkValidPlayerOnDay(playerName, row):
             break
         
         # Checks player is playing for correct team
-        teamRow = sheet['A' + str(row.row - i)]
-        if teamRow and type(teamRow.value) is str:         
+        previousRowValue = sheet['A' + str(row.row - i)]
+        if previousRowValue and type(previousRowValue.value) is str:         
             if team.endswith('(A)') or team.endswith('(B)'):               
                     if team.endswith('(A)'):
                         for teamName in teamNamesForFirstTeam:
-                            if teamName.lower() in teamRow.value.lower():
+                            if teamName.lower() in previousRowValue.value.lower():
                                 return True
 
                     if team.endswith('(B)'):
                         for teamName in teamNamesForSecondTeam:
-                            if teamName.lower() in teamRow.value.lower():
+                            if teamName.lower() in previousRowValue.value.lower():
                                 return True
 
             else:
                 for teamName in teamNames:
-                    if teamName.lower() in teamRow.value.lower():
+                    if teamName.lower() in previousRowValue.value.lower():
                         return True
 
 # Open Excel file
