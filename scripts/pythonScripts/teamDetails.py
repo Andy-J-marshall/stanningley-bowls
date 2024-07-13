@@ -1,12 +1,12 @@
 import datetime
 
 # Team info (lowercase)
-teamNames = ['stanningley', 'stanningley a', 'stanningley b',
-             'stanningley park', 'stanningley park a', 'stanningley park b']
+teamNames = ['Stanningley', 'Stanningley A', 'Stanningley B',
+             'Stanningley Park', 'Stanningley Park A', 'Stanningley Park B']
 preferredTeamName = 'Stanningley'
 
-teamNamesForFirstTeam =['stanningley a', 'stanningley park a']
-teamNamesForSecondTeam =['stanningley b', 'stanningley park b']
+teamNamesForFirstTeam =['Stanningley A', 'Stanningley Park A']
+teamNamesForSecondTeam =['Stanningley B', 'Stanningley Park B']
 
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',

@@ -75,6 +75,31 @@ for team in teamDays:
                     for i in range(0, 11):
                         cupGameRows.append(row.row + i)
                     break
+    
+    # Find team name used by Stanningley in this league
+    possibleTeamNamesUsed = []
+    teamNameUsedForLeague = ''
+    for row in sheet['A']:
+        if row.row <= startingRow:
+            continue
+        if row.value and type(row.value) is str:
+            for teamName in expectedTeamNames:
+                if row.value.lower().strip().startswith(teamName.lower()):
+                    if '(A)' in team and '(b)' in row.value.lower():
+                        continue
+                    if '(B)' in team and '(a)' in row.value.lower():
+                        continue
+                    if teamName.lower() in row.value.lower():
+                        possibleTeamNamesUsed.append(teamName)
+    
+    if len(possibleTeamNamesUsed) == 0:
+        raise Exception('No team name found')
+    
+    teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
+    if preferredTeamName.lower() not in teamNameUsedForLeague.lower():
+        raise Exception('Incorrect team name found')
+                    
+    # TODO refactor code to use the teamNameUsedForLeague instead of endless loops! Also in combinedBowls.py
 
     #### TEAM STATS ####
     # Find Stanningley games
@@ -223,11 +248,10 @@ for team in teamDays:
                 raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
 
         # Home games
+        rowText = sheet['A' + str(row)].value
         if row in homeRow:
             if row != leaguePositionRow:
-                # TODO find opponent name
-                # opponent = sheet[awayTeamNameCol + str(row)].value
-                opponent = 'HOME OPPONENT'
+                opponent = rowText.split(teamNameUsedForLeague)[1].strip()
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent + ' (' + gameDate + ')'
@@ -250,9 +274,7 @@ for team in teamDays:
         # Away games
         if row in awayRow:
             if row != leaguePositionRow:
-                # TODO find opponent name
-                # opponent = sheet['A' + str(row)].value
-                opponent = 'AWAY OPPONENT'
+                opponent = rowText.split(teamNameUsedForLeague)[0].strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + teamNameToUse + ' (' + gameDate + ')'
