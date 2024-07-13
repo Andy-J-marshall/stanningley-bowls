@@ -84,6 +84,7 @@ for league in leaguesDays:
 
     # Find each players' results
     for row in range(startingRow, sheet.max_row + 1):
+        # Create list as players may be playing against one another
         playerRows = []
         if row in homePlayerRow:
             playerRows.append('home')
@@ -109,6 +110,7 @@ for league in leaguesDays:
 
             # Find columns
             if row in cupGameRows:
+                updateStats = True
                 cupGame = True
                 if homeOrAway == 'home':
                     cupHome = True
