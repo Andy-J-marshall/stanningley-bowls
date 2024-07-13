@@ -35,7 +35,7 @@ const live = {
             name: 'Tuesday Vets',
             age: '55+ year olds',
             desc: '8 singles games',
-            link: 'https://bowlsnet.uk/leeds-TueVets',
+            link: 'https://bowlsnet.uk/Leeds-TueVets',
             startTime: '1:30pm',
             numberOfGames: 8,
         },
