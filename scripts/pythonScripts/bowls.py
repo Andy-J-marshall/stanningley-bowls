@@ -101,18 +101,22 @@ for team in teamDays:
                     break
 
     # Find league position for teams
-    # currentLeaguePosition = -1
-    currentLeaguePosition = 1 # TODO revert
+    currentLeaguePosition = -1
     leaguePositionRow = 0
 
-# TODO fix this?
-    # for row in sheet['A']:
-    #     if row.value and type(row.value) is str and row.value.lower() in expectedTeamNames:
-    #         leaguePosition = sheet['A' + str(row.row)].value
-    #         if type(leaguePosition) is int:
-    #             leaguePositionRow = row.row
-    #             currentLeaguePosition = leaguePosition
-    #             break
+    for row in sheet['A']:
+        # League position appears before player results
+        if row.row > startingRow:
+            break
+        if row.value and type(row.value) is str:
+            leagueTableText = re.search(r"\d\.\s", row.value.lower())
+            # if len(leagueTableText) > 0:
+            if leagueTableText:
+                for teamName in expectedTeamNames:
+                    if teamName.lower() in row.value.lower():
+                        leaguePosition = leagueTableText[0].split('.')[0]
+                        currentLeaguePosition = int(leaguePosition)
+                        break
 
     # Find team results and scores
     awayWins = 0
