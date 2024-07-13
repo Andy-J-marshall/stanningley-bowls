@@ -33,32 +33,26 @@ def checkValidPlayerOnDay(playerName, row):
     playerName = formatName(playerName)
     if playerName in traitorPlayers[league]:
         return False
+    
+    for i in range(1, 10):
+        if row.row - i <= startingRow:
+            break
+        
+        # Checks player is playing for correct team
+        teamRow = sheet['A' + str(row.row - i)]
+        if teamRow and type(teamRow.value) is str:         
+            if team.endswith('(A)') or team.endswith('(B)'):               
+                    if team.endswith('(A)'):
+                        for teamName in teamNamesForFirstTeam:
+                            if teamName.lower() in teamRow.value.lower():
+                                return True
 
-    if team.endswith('(A)') or team.endswith('(B)'):
-        for i in range(1, 10):
-            if row.row - i <= startingRow:
-                break
-            
-            teamRow = sheet['A' + str(row.row - i)]            
-            if teamRow and type(teamRow.value) is str:         
-                if team.endswith('(A)'):
-                    for teamName in teamNamesForFirstTeam:
-                        if teamName.lower() in teamRow.value.lower():
-                            return True
+                    if team.endswith('(B)'):
+                        for teamName in teamNamesForSecondTeam:
+                            if teamName.lower() in teamRow.value.lower():
+                                return True
 
-                if team.endswith('(B)'):
-                    for teamName in teamNamesForSecondTeam:
-                        if teamName.lower() in teamRow.value.lower():
-                            return True
-
-    else:
-        # TODO refactor this?
-        for i in range(1, 10):
-            if row.row - i <= startingRow:
-                break
-            
-            teamRow = sheet['A' + str(row.row - i)]
-            if teamRow and type(teamRow.value) is str:
+            else:
                 for teamName in teamNames:
                     if teamName.lower() in teamRow.value.lower():
                         return True
