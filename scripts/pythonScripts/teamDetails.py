@@ -1,12 +1,9 @@
 import datetime
 
 # Team info (lowercase)
-teamNames = ['stanningley', 'stanningley a', 'stanningley b',
-             'stanningley park', 'stanningley park a', 'stanningley park b']
+teamNames = ['Stanningley', 'Stanningley A', 'Stanningley B',
+             'Stanningley Park', 'Stanningley Park A', 'Stanningley Park B']
 preferredTeamName = 'Stanningley'
-
-teamNamesForFirstTeam =['stanningley a', 'stanningley park a']
-teamNamesForSecondTeam =['stanningley b', 'stanningley park b']
 
 # Days played (duplicate days for second teams)
 teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
@@ -35,22 +32,6 @@ traitorPlayers = {
     'Wednesday Pairs AireWharfe': [],
     'Thursday Vets Leeds': ['neil porter'],
     'Saturday Leeds': ['clifford brogie', 'neil porter']
-}
-
-transferredPlayers = {
-    'Monday Combined Leeds': {},
-    'Tuesday Vets Leeds': {},
-    'Tuesday Leeds': {},
-    'Wednesday Half Holiday Leeds': {},
-    'Wednesday Pairs AireWharfe': {
-        'player': 'karl chapman',
-        'date': datetime.datetime(2024, 5, 10),
-    },
-    'Thursday Vets Leeds': {},
-    'Saturday Leeds': {
-        'player': 'karl chapman',
-        'date': datetime.datetime(2024, 5, 10),
-    }
 }
 
 clubCupWinners = {

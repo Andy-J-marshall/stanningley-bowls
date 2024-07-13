@@ -68,8 +68,6 @@ If a player has multiple spellings, enter them into the `duplicateTeamMemberName
 
 If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
 
-Remove players from the `transferredPlayers` dictionary (and add to traitorPlayers?).
-
 ## Run the script
 
 `npm run update-stats`
@@ -140,7 +138,7 @@ Team Records:
 
 Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays. Reset the transferredPlayers to empty objects for each league.
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
 
 Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
@@ -162,10 +160,9 @@ Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
 * `teamNames` - Add the lowercase team names for the B team 
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
-* `teamNamesForFirstTeam` - the name(s) of the first team e.g. `['stanningley a', 'stanningley park a']`
-* `teamNamesForSecondTeam` - the name(s) of the second team e.g. `['stanningley b', 'stanningley park b']`
 
 Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
+Also update any URLs if the Bowlsnet link has changed.
 Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
 Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.

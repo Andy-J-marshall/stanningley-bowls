@@ -4,6 +4,7 @@ import json
 import os
 from datetime import date
 import utils
+import re
 
 year = str(date.today().year)
 
@@ -13,20 +14,11 @@ duplicatePlayerNames = utils.duplicatePlayerNames
 playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
 formatName = utils.formatName
 standardiseName = utils.standardiseName
-formatTeamName = utils.formatTeamName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-cupText = utils.cupText
+cupTextList = utils.cupText
 leaguesProcessed = []
-
-# Spreadsheet info
-homePlayerCol = 'A'
-homePlayerScoreCol = 'B'
-awayPlayerCol = 'C'
-awayPlayerScoreCol = 'D'
-homeTeamNameCol = 'A'
-awayTeamNameCol = 'B'
 
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
@@ -45,6 +37,7 @@ for league in leaguesDays:
     sheet = wb[league]
     print('Processing ' + league)
 
+    # Find the stating row to check the stats
     startingRow = 0
     startingRowIndex = 1
     for row in sheet['A']:
@@ -53,45 +46,52 @@ for league in leaguesDays:
             break
         startingRowIndex += 1
 
+    # Find the cup games in the stats
     cupGameIndex = 1
     cupGameRows = []
     for row in sheet['A']:
-        if row.value and type(row.value) is str:
-            if cupGameIndex > startingRow and row.value.lower() in cupText:
-                for i in range(0, 11):
-                    cupGameRows.append(cupGameIndex + i)
+        if cupGameIndex > startingRow:
+            if row.value and type(row.value) is str:
+                for cupText in cupTextList:
+                    if cupText in row.value.lower():
+                        for i in range(0, 11):
+                            cupGameRows.append(cupGameIndex + i)
+                        break
         cupGameIndex += 1
 
     # Find rows in spreadsheet for players' games
-    homePlayerIndex = 1
+    playerIndex = 1
     homePlayerRow = []
-    for homePlayer in sheet[homePlayerCol]:
-        homePlayerName = homePlayer.value
-        if (homePlayerName and type(homePlayerName) is str):
-            homePlayerName = standardiseName(homePlayerName)
-            if homePlayerName.lower() in players or homePlayerName.lower() in duplicatePlayerNames:
-                homePlayerRow.append(homePlayerIndex)
-        homePlayerIndex = homePlayerIndex + 1
-
-    awayPlayerIndex = 1
     awayPlayerRow = []
-    for awayPlayer in sheet[awayPlayerCol]:
-        awayPlayerName = awayPlayer.value
-        if (awayPlayerName and type(awayPlayerName) is str):
-            awayPlayerName = standardiseName(awayPlayerName)
-            if awayPlayerName.lower() in players or awayPlayerName.lower() in duplicatePlayerNames:
-                awayPlayerRow.append(awayPlayerIndex)
-        awayPlayerIndex = awayPlayerIndex + 1
+    for row in sheet['A']:
+        if playerIndex < startingRow:
+            playerIndex = playerIndex + 1
+            continue
+        rowText = row.value
+        if (rowText and type(rowText) is str):
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowText)
+            if len(findPossiblePlayerNames) > 1:                
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
+                if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                    homePlayerRow.append(playerIndex)
+
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
+                if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                    awayPlayerRow.append(playerIndex)
+        playerIndex = playerIndex + 1
 
     # Find each players' results
     for row in range(startingRow, sheet.max_row + 1):
-        playersToUpdate = []
+        # Create list as players may be playing against one another
+        playerRows = []
         if row in homePlayerRow:
-            playersToUpdate.append('home')
+            playerRows.append('home')
         if row in awayPlayerRow:
-            playersToUpdate.append('away')
+            playerRows.append('away')
 
-        for p in playersToUpdate:
+        for homeOrAway in playerRows:
             # reset variable values
             aggregate = 0
             opponentAggregate = 0
@@ -105,102 +105,126 @@ for league in leaguesDays:
             homeGame = None
             awayGame = None
             cupGame = False
+            cupHome = False
+            cupAway = False
 
             # Find columns
             if row in cupGameRows:
+                updateStats = True
                 cupGame = True
+                if homeOrAway == 'home':
+                    cupHome = True
+                if homeOrAway == 'away':
+                    cupAway = True
 
-            if p == 'home':
+            if homeOrAway == 'home':
                 updateStats = True
                 if not cupGame:
                     homeGame = True
-                playerNameCol = homePlayerCol
-                playerScoreCol = homePlayerScoreCol
-                opponentPlayerNameCol = awayPlayerCol
-                opponentPlayerScoreCol = awayPlayerScoreCol
-                teamNameCol = homeTeamNameCol
-            if p == 'away':
+
+            if homeOrAway == 'away':
                 updateStats = True
                 if not cupGame:
                     awayGame = True
-                playerNameCol = awayPlayerCol
-                playerScoreCol = awayPlayerScoreCol
-                opponentPlayerNameCol = homePlayerCol
-                opponentPlayerScoreCol = homePlayerScoreCol
-                teamNameCol = awayTeamNameCol
 
             # Checks player plays for expected team
             correctPlayerFound = False
-            teamName = ''
-            longTeamName = ''
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
 
-                possibleTeamName = sheet[teamNameCol][row - i].value
-                if type(possibleTeamName) is str:
+                possibleTeamText = sheet['A'][row - i].value
+                if type(possibleTeamText) is str:
                     # Checks against full team name first
-                    if possibleTeamName.lower() in teamsTracking:
-                        teamName = formatTeamName(possibleTeamName)
-                        correctPlayerFound = True
+                    for team in teamsTracking:
+                        if team.lower() in possibleTeamText.lower():
+                            correctPlayerFound = True
+                            break
+                    
+                    if correctPlayerFound is True:
                         break
-                    else:
-                        # Checks against first two words in team name next
-                        teamNameParts = possibleTeamName.split(' ')
-                        if len(teamNameParts) > 2:
-                            longTeamName = (teamNameParts[0] + ' ' + teamNameParts[1])
-                            if longTeamName.lower() in teamsTracking:
-                                teamName = formatTeamName(possibleTeamName)
-                                correctPlayerFound = True
-                                break
-                        # Finally checks against each word in the team name
-                        for part in teamNameParts:
-                            if part.lower() in teamsTracking:
-                                teamName = formatTeamName(possibleTeamName)
-                                correctPlayerFound = True
-                                break
+                        
+                    # Checks against each word in the team name if team not found
+                    teamNameParts = possibleTeamText.split(' ')
+                    for part in teamNameParts:
+                        if part.lower() in teamsTracking:
+                            correctPlayerFound = True
+                            break
             if correctPlayerFound is False:
                 updateStats = False
 
             # Find result details
             if updateStats:
-                opponentsName = sheet[opponentPlayerNameCol + str(row)].value
+                text = sheet['A' + str(row)].value
 
-                if opponentsName.lower() != '*walkover*' and opponentsName.lower() != '*no player*':
-                    playerName = sheet[playerNameCol + str(row)].value
-                    aggregate = sheet[playerScoreCol + str(row)].value
-                    opponentAggregate = sheet[opponentPlayerScoreCol +
-                                              str(row)].value
+                findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
+                if homeGame or cupHome:
+                    opponentsName = findPossiblePlayerNames[1]
+                
+                if awayGame or cupAway:
+                    opponentsName = findPossiblePlayerNames[0]
+                    
+                if 'walkover' not in opponentsName.lower() and 'no player' not in opponentsName.lower():
+                    if homeGame or cupHome:
+                        playerName = findPossiblePlayerNames[0]
+                        
+                        aggregateMatch = re.findall(r'\d+', text)
+                        if aggregateMatch:
+                            aggregate = int(aggregateMatch[0].strip())
+                            opponentAggregate = int(aggregateMatch[1].strip())
+
+                    if awayGame or cupAway:
+                        playerName = findPossiblePlayerNames[1]
+                        
+                        aggregateMatch = re.findall(r'\d+', text)
+                        if aggregateMatch:
+                            aggregate = int(aggregateMatch[1].strip())
+                            opponentAggregate = int(aggregateMatch[0].strip())
+
+                    # Checks whether it's a pairs game
                     pairsGame = False
-                    if aggregate is None:
+                    scoreFoundInText = any(char.isdigit() for char in text)
+                    if scoreFoundInText is False:
                         pairsGame = True
-                        pairsPartner = sheet[playerNameCol +
-                                             str(row - 1)].value
-                        secondOpponent = sheet[opponentPlayerNameCol +
-                                               str(row - 1)].value
-                        aggregate = sheet[playerScoreCol + str(row - 1)].value
-                        opponentAggregate = sheet[opponentPlayerScoreCol +
-                                                  str(row - 1)].value
+                        rowBelowText = sheet['A' + str(row - 1)].value
+                        
+                        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+                        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+                        if homeGame or cupHome:
+                            pairsPartner = findPossiblePairsPlayerNames[0]
+                            secondOpponent = findPossiblePairsPlayerNames[1]
+                            aggregate = int(pairsAggregateMatch[0].strip())
+                            opponentAggregate = int(pairsAggregateMatch[1].strip())
+                
+                        if awayGame or cupAway:
+                            pairsPartner = findPossiblePairsPlayerNames[1]
+                            secondOpponent = findPossiblePairsPlayerNames[0]
+                            aggregate = int(pairsAggregateMatch[1].strip())
+                            opponentAggregate = int(pairsAggregateMatch[0].strip())
+                            
                     else:
-                        pointsRowBelow = sheet[playerScoreCol +
-                                               str(row + 1)].value
-                        if pointsRowBelow is None:
+                        rowBelowText = sheet['A' + str(row + 1)].value
+                        
+                        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+                        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+                        if len(pairsAggregateMatch) == 0:
                             pairsGame = True
-                            pairsPartner = sheet[playerNameCol +
-                                                 str(row + 1)].value
-                            secondOpponent = sheet[opponentPlayerNameCol +
-                                                   str(row + 1)].value
+                            if homeGame or cupHome:
+                                pairsPartner = findPossiblePairsPlayerNames[0]
+                                secondOpponent = findPossiblePairsPlayerNames[1]
+                            if awayGame or cupAway:
+                                pairsPartner = findPossiblePairsPlayerNames[1]
+                                secondOpponent = findPossiblePairsPlayerNames[0]
 
-                    pairsPartner = formatName(pairsPartner)
                     playerName = formatName(playerName)
                     opponentsName = formatName(opponentsName)
+                    pairsPartner = formatName(pairsPartner)
                     secondOpponent = formatName(secondOpponent)
 
                     # Store player stats
                     playerNameForResult = playerName
                     if pairsGame:
-                        playerResults[playerName]['pairsPartners'].append(
-                            pairsPartner)
+                        playerResults[playerName]['pairsPartners'].append(pairsPartner)
                         playerNameForResult = playerName + ' & ' + pairsPartner
                         opponentsName = opponentsName + ' & ' + secondOpponent
                         playerResults[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(league)
@@ -217,8 +241,7 @@ for league in leaguesDays:
                     # Wins
                     if aggregate > opponentAggregate:
                         if pairsGame:
-                            playerResults[playerName]['winningPairsPartners'].append(
-                                pairsPartner)
+                            playerResults[playerName]['winningPairsPartners'].append(pairsPartner)
                             playerResults[playerName]['pairWins'] += 1
                         if homeGame:
                             playerResults[playerName]['homeWins'] += 1
@@ -270,8 +293,7 @@ for league in leaguesDays:
                             playerResults[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalPairsAwayAgg'] += aggregate
                             playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-                    playerResults[playerName]['dayPlayed'].append(
-                        league + ' (' + teamName + ')')
+                    playerResults[playerName]['dayPlayed'].append(league)
 
 # Create JSON file
 dataToExport = {
