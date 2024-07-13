@@ -132,8 +132,7 @@ for league in leaguesDays:
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
-                
-                # TODO should I care about possible duplicate name appearing for home/away team?
+
                 possibleTeamText = sheet['A'][row - i].value
                 if type(possibleTeamText) is str:
                     # Checks against full team name first
