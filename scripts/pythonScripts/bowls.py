@@ -3,24 +3,25 @@ from pathlib import Path
 import json
 import os
 from datetime import date
-import datefinder
+# import datefinder # TODO remove this?
 import teamDetails
 import utils
 import re
 
 year = str(date.today().year)
 
-teamNames = teamDetails.teamNames
 teamDays = teamDetails.teamDays
+# teamDays = ['Monday Combined Leeds'] # TODO revert
+teamNames = teamDetails.teamNames
 teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
 teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
+preferredTeamName = teamDetails.preferredTeamName
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True)
 formatName = utils.formatName
 cupTextList = utils.cupText
-preferredTeamName = teamDetails.preferredTeamName
 clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
@@ -66,195 +67,220 @@ for team in teamDays:
         startingRowIndex += 1
 
     # Find the cup games in the stats
-    cupGameIndex = 1
     cupGameRows = []
     for row in sheet['A']:
-        if cupGameIndex > startingRow:
-            if row.value and type(row.value) is str:
-                for cupText in cupTextList:
-                    if cupText in row.value.lower():
-                        for i in range(0, 11):
-                            cupGameRows.append(cupGameIndex + i)
-                        break
-        cupGameIndex += 1
+        if row.row <= startingRow:
+            continue
+        if row.value and type(row.value) is str:
+            for cupText in cupTextList:
+                if cupText in row.value.lower():
+                    for i in range(0, 11):
+                        cupGameRows.append(row.row + i)
+                    break
 
     #### TEAM STATS ####
-    # homeIndex = 1
-    # homeRow = []
-    # for row in sheet[homeTeamNameCol]:
-    #     if row.value and type(row.value) is str and row.value.lower() in expectedTeamNames:
-    #         if homeIndex > startingRow:
-    #             homeRow.append(homeIndex)
-    #     homeIndex = homeIndex + 1
+    # Find Stanningley games
+    homeRow = []
+    awayRow = []
+    for row in sheet['A']:
+        if row.row <= startingRow:
+            continue
+        if row.value and type(row.value) is str:
+            for teamName in expectedTeamNames:
+                # This ignores cup games hosted on Stanningley
+                hostedCupGame = False
+                for cupText in cupTextList:
+                    if cupText.lower() in row.value.lower():
+                        hostedCupGame = True
+                        break
+                if hostedCupGame is False and teamName.lower() in row.value.lower():
+                    words = row.value.strip().lower().split()
+                    firstWord = words[0].lower() 
+                    if firstWord == preferredTeamName.lower():
+                        homeRow.append(row.row)
+                    else:
+                        awayRow.append(row.row)
+                    break
 
-    # awayIndex = 1
-    # awayRow = []
-    # for row in sheet[awayTeamNameCol]:
-    #     if row.value and type(row.value) is str and row.value.lower() in expectedTeamNames:
-    #         if awayIndex > startingRow:
-    #             awayRow.append(awayIndex)
-    #     awayIndex = awayIndex + 1
-
-    # # Find league position for teams
+    # Find league position for teams
     # currentLeaguePosition = -1
-    # leaguePositionIndex = 1
-    # leaguePositionRow = 0
-    # leaguePositionCol = 'A'
-    # leagueTeamNameCol = 'B'
+    currentLeaguePosition = 1 # TODO revert
+    leaguePositionRow = 0
 
-    # for row in sheet[leagueTeamNameCol]:
+# TODO fix this?
+    # for row in sheet['A']:
     #     if row.value and type(row.value) is str and row.value.lower() in expectedTeamNames:
-    #         leaguePosition = sheet[leaguePositionCol +
-    #                                str(leaguePositionIndex)].value
+    #         leaguePosition = sheet['A' + str(row.row)].value
     #         if type(leaguePosition) is int:
-    #             leaguePositionRow = leaguePositionIndex
+    #             leaguePositionRow = row.row
     #             currentLeaguePosition = leaguePosition
-    #     leaguePositionIndex = leaguePositionIndex + 1
-    # # Find team results and scores
-    # awayWins = 0
-    # awayLosses = 0
-    # homeWins = 0
-    # homeLosses = 0
-    # homeDraws = 0
-    # awayDraws = 0
-    # cupWins = 0
-    # cupLosses = 0
-    # wins = 0
-    # draws = 0
-    # losses = 0
-    # teamAgg = 0
-    # opponentAgg = 0
-    # results = []
-    # totalGamesPlayed = 0
+    #             break
 
-    # for row in range(1, sheet.max_row + 1):
-    #     rowsDownAdjustmentInt = 0
-    #     rowsUpAdjustmentInt = 0
-    #     totalNumberOfRowsAdjustmentInt = 0
+    # Find team results and scores
+    awayWins = 0
+    awayLosses = 0
+    homeWins = 0
+    homeLosses = 0
+    homeDraws = 0
+    awayDraws = 0
+    cupWins = 0
+    cupLosses = 0
+    wins = 0
+    draws = 0
+    losses = 0
+    teamAgg = 0
+    opponentAgg = 0
+    results = []
+    totalGamesPlayed = 0
 
-    #     # Leeds half holiday team only has 6 players
-    #     if 'half holiday' in team.lower():
-    #         rowsDownAdjustmentInt = 2
-
-    #     # AireWharfe pairs league display scores differently
-    #     if 'pairs airewharfe' in team.lower():
-    #         rowsUpAdjustmentInt = 1
-
-    #     # Check if cup game
-    #     # Cup games are based on aggregate, not score, and are played on neutral greens
-    #     cupGame = False
-    #     cupCell = ''
-    #     if row > 2:
-    #         cupCell = sheet[homeTeamNameCol + str(row - 1)].value
-    #     if (cupCell and type(cupCell) is str) and cupCell.lower() in cupText:
-    #         cupGame = True
-
-    #         # To account for handicap row in cup games
-    #         checkForTeamHandicap = sheet[homeTeamNameCol +
-    #                              str(row + 9 - rowsDownAdjustmentInt)].value
-    #         if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
-    #             rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
-
-    #         # Find the number of rows down for the team scores
-    #         totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
-    #     else:
-    #         totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+    for row in range(1, sheet.max_row + 1):
+        if row <= startingRow:
+            continue
         
-    #     # Save the scores
-    #     homeScore = sheet[homeTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
-    #     awayScore = sheet[awayTeamScoreCol + str(row + totalNumberOfRowsAdjustmentInt)].value
+        rowsDownAdjustmentInt = 0
+        rowsUpAdjustmentInt = 0
+        totalNumberOfRowsAdjustmentInt = 0
+
+        # Leeds half holiday team only has 6 players
+        if 'half holiday' in team.lower():
+            rowsDownAdjustmentInt = 2
+
+        # AireWharfe pairs league display scores differently
+        if 'pairs airewharfe' in team.lower():
+            rowsUpAdjustmentInt = 1
+
+        # Check if cup game
+        # Cup games are based on aggregate, not score, and are played on neutral greens
+        cupGame = False
+        cupCell = sheet['A' + str(row - 1)].value
+        if cupCell and type(cupCell) is str:
+            for cupText in cupTextList:
+                if cupText.lower() in cupCell.lower():
+                    cupGame = True
+                    break
+        
+        if cupGame:
+            # To account for handicap row in cup games
+            checkForTeamHandicap = sheet['A' +
+                                 str(row + 9 - rowsDownAdjustmentInt)].value
+            if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
+                rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
+
+            # Find the number of rows down for the team scores
+            totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
+        else:
+            totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+        
+        # Save the scores
+        text = sheet['A' + str(row + totalNumberOfRowsAdjustmentInt)].value
+        if text and type(text) is str:
+            matchScore = re.findall(r'\d+', text)
+        if len(matchScore) == 2:
+            homeScore = int(matchScore[0].strip())
+            awayScore = int(matchScore[1].strip())
 
         # Finds the date of the match
-        # TODO is this the best place for this?
-        # gameDate = ''
-        # if (row in homeRow or row in awayRow) and row > startingRow:
-        #     gameDateRowModifier = 1
-        #     if 'Saturday Leeds' in team:
-        #         gameDateRowModifier += 1
+        gameDate = ''
+        if (row in homeRow or row in awayRow) and row > startingRow:
+            gameDateRowModifier = 1
+            if 'Saturday Leeds' in team:
+                gameDateRowModifier += 1
 
-        #     gameDate = sheet['A' + str(row - gameDateRowModifier)].value
+            gameDate = sheet['A' + str(row - gameDateRowModifier)].value
             
-        #     if type(gameDate) is str:
-        #         if 'On ' in gameDate or '(from ' in gameDate:
-        #             gameDateRowModifier += 1
-        #             gameDate = sheet['A' + str(row - gameDateRowModifier)].value
-        #     else:
-        #         gameDate = ''
-    #     # Home games
-    #     if row in homeRow:
-    #         if row != leaguePositionRow:
-    #             opponent = sheet[awayTeamNameCol + str(row)].value
-    #             result = teamNameToUse + ' ' + \
-    #                 str(homeScore) + ' - ' + str(awayScore) + \
-    #                 ' ' + opponent + ' (' + gameDate + ')'
-    #             results.append(result)
-    #             if homeScore > awayScore:
-    #                 if cupGame:
-    #                     cupWins = cupWins + 1
-    #                 else:
-    #                     homeWins = homeWins + 1
-    #             if homeScore < awayScore:
-    #                 if cupGame:
-    #                     cupLosses = cupLosses + 1
-    #                 else:
-    #                     homeLosses = homeLosses + 1
-    #             if awayScore == homeScore:
-    #                 homeDraws = homeDraws + 1
-    #             teamAgg = teamAgg + \
-    #                 sheet[homeAggCol +
-    #                       str(row + 9 - rowsDownAdjustmentInt)].value
-    #             opponentAgg = opponentAgg + \
-    #                 sheet[awayAggCol +
-    #                       str(row + 9 - rowsDownAdjustmentInt)].value
+            if type(gameDate) is str:
+                if 'On ' in gameDate or '(from ' in gameDate:
+                    gameDateRowModifier += 1
+                    gameDate = sheet['A' + str(row - gameDateRowModifier)].value
+                    
+            else:
+                gameDate = ''
+                
+        if gameDate:
+            # TODO failing for :     Sat Cup Div 1           Sat 8th Jun
+            gameDate = re.split(r"Mon |Tue | Wed | Thu | Fri | Sat | Sun", gameDate)[1]
 
-    #     # Away games
-    #     if row in awayRow:
-    #         if row != leaguePositionRow:
-    #             opponent = sheet[homeTeamNameCol + str(row)].value
-    #             result = opponent + ' ' + \
-    #                 str(homeScore) + ' - ' + str(awayScore) + \
-    #                 ' ' + teamNameToUse + ' (' + gameDate + ')'
-    #             results.append(result)
-    #             if awayScore > homeScore:
-    #                 if cupGame:
-    #                     cupWins = cupWins + 1
-    #                 else:
-    #                     awayWins = awayWins + 1
-    #             if awayScore < homeScore:
-    #                 if cupGame:
-    #                     cupLosses = cupLosses + 1
-    #                 else:
-    #                     awayLosses = awayLosses + 1
-    #             if awayScore == homeScore:
-    #                 awayDraws = awayDraws + 1
-    #             opponentAgg = opponentAgg + \
-    #                 sheet[homeAggCol +
-    #                       str(row + 9 - rowsDownAdjustmentInt)].value
-    #             teamAgg = teamAgg + \
-    #                 sheet[awayAggCol +
-    #                       str(row + 9 - rowsDownAdjustmentInt)].value
+        # Home games
+        if row in homeRow:
+            if row != leaguePositionRow:
+                # TODO find opponent name
+                # opponent = sheet[awayTeamNameCol + str(row)].value
+                opponent = 'HOME OPPONENT'
+                result = teamNameToUse + ' ' + \
+                    str(homeScore) + ' - ' + str(awayScore) + \
+                    ' ' + opponent + ' (' + gameDate + ')'
+                results.append(result)
+                if homeScore > awayScore:
+                    if cupGame:
+                        cupWins = cupWins + 1
+                    else:
+                        homeWins = homeWins + 1
+                if homeScore < awayScore:
+                    if cupGame:
+                        cupLosses = cupLosses + 1
+                    else:
+                        homeLosses = homeLosses + 1
+                if awayScore == homeScore:
+                    homeDraws = homeDraws + 1
+                # TODO change this
+                # teamAgg = teamAgg + \
+                #     sheet[homeAggCol +
+                #           str(row + 9 - rowsDownAdjustmentInt)].value
+                # opponentAgg = opponentAgg + \
+                #     sheet[awayAggCol +
+                #           str(row + 9 - rowsDownAdjustmentInt)].value
 
-    # # Store team result data
-    # teamResults = {
-    #     'day': teamNameToStoreData,
-    #     'awayWins': awayWins,
-    #     'homeWins': homeWins,
-    #     'wins': awayWins + homeWins + cupWins,
-    #     'awayLosses': awayLosses,
-    #     'homeLosses': homeLosses,
-    #     'homeDraws': homeDraws,
-    #     'awayDraws': awayDraws,
-    #     'draws': homeDraws + awayDraws,
-    #     'cupWins': cupWins,
-    #     'cupLosses': cupLosses,
-    #     'losses': homeLosses + awayLosses + cupLosses,
-    #     'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
-    #     'agg': teamAgg,
-    #     'opponentAgg': opponentAgg,
-    #     'leaguePosition': currentLeaguePosition,
-    #     'results': results
-    # }
-    # allTeamResults.append(teamResults)
+        # Away games
+        if row in awayRow:
+            if row != leaguePositionRow:
+                # TODO find opponent name
+                # opponent = sheet['A' + str(row)].value
+                opponent = 'AWAY OPPONENT'
+                result = opponent + ' ' + \
+                    str(homeScore) + ' - ' + str(awayScore) + \
+                    ' ' + teamNameToUse + ' (' + gameDate + ')'
+                results.append(result)
+                if awayScore > homeScore:
+                    if cupGame:
+                        cupWins = cupWins + 1
+                    else:
+                        awayWins = awayWins + 1
+                if awayScore < homeScore:
+                    if cupGame:
+                        cupLosses = cupLosses + 1
+                    else:
+                        awayLosses = awayLosses + 1
+                if awayScore == homeScore:
+                    awayDraws = awayDraws + 1
+                # TODO fix
+                # opponentAgg = opponentAgg + \
+                #     sheet[homeAggCol +
+                #           str(row + 9 - rowsDownAdjustmentInt)].value
+                # teamAgg = teamAgg + \
+                #     sheet[awayAggCol +
+                #           str(row + 9 - rowsDownAdjustmentInt)].value
+
+    # Store team result data
+    teamResults = {
+        'day': teamNameToStoreData,
+        'awayWins': awayWins,
+        'homeWins': homeWins,
+        'wins': awayWins + homeWins + cupWins,
+        'awayLosses': awayLosses,
+        'homeLosses': homeLosses,
+        'homeDraws': homeDraws,
+        'awayDraws': awayDraws,
+        'draws': homeDraws + awayDraws,
+        'cupWins': cupWins,
+        'cupLosses': cupLosses,
+        'losses': homeLosses + awayLosses + cupLosses,
+        'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
+        'agg': teamAgg,
+        'opponentAgg': opponentAgg,
+        'leaguePosition': currentLeaguePosition,
+        'results': results
+    }
+    allTeamResults.append(teamResults)
     
     #### PLAYER STATS ####
     
@@ -373,18 +399,18 @@ for team in teamDays:
                     if homeGame or cupHome:
                         playerName = findPossiblePlayerNames[0]
                         
-                        aggregateMatch = re.findall(r'\d+', text)
-                        if aggregateMatch:
-                            aggregate = int(aggregateMatch[0].strip())
-                            opponentAggregate = int(aggregateMatch[1].strip())
+                        matchScore = re.findall(r'\d+', text)
+                        if matchScore:
+                            aggregate = int(matchScore[0].strip())
+                            opponentAggregate = int(matchScore[1].strip())
 
                     if awayGame or cupAway:
                         playerName = findPossiblePlayerNames[1]
                         
-                        aggregateMatch = re.findall(r'\d+', text)
-                        if aggregateMatch:
-                            aggregate = int(aggregateMatch[1].strip())
-                            opponentAggregate = int(aggregateMatch[0].strip())
+                        matchScore = re.findall(r'\d+', text)
+                        if matchScore:
+                            aggregate = int(matchScore[1].strip())
+                            opponentAggregate = int(matchScore[0].strip())
 
                     # Checks whether it's a pairs game
                     pairsGame = False
