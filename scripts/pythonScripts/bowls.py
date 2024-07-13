@@ -178,6 +178,18 @@ for team in teamDays:
         if len(matchScore) == 2:
             homeScore = int(matchScore[0].strip())
             awayScore = int(matchScore[1].strip())
+            
+        # Save the aggregates
+        if cupGame:
+            homeAgg = homeScore
+            awayAgg = awayScore
+        else:
+            text = sheet['A' + str(row + 9 - rowsDownAdjustmentInt)].value
+            if text and type(text) is str:
+                matchAgg = re.findall(r'\d+', text)
+            if len(matchAgg) == 2:
+                homeAgg = int(matchAgg[0].strip())
+                awayAgg = int(matchAgg[1].strip())
 
         # Finds the date of the match
         gameDate = ''
@@ -230,13 +242,8 @@ for team in teamDays:
                         homeLosses = homeLosses + 1
                 if awayScore == homeScore:
                     homeDraws = homeDraws + 1
-                # TODO change this
-                # teamAgg = teamAgg + \
-                #     sheet[homeAggCol +
-                #           str(row + 9 - rowsDownAdjustmentInt)].value
-                # opponentAgg = opponentAgg + \
-                #     sheet[awayAggCol +
-                #           str(row + 9 - rowsDownAdjustmentInt)].value
+                teamAgg = teamAgg + homeAgg
+                opponentAgg = opponentAgg + awayAgg
 
         # Away games
         if row in awayRow:
@@ -260,13 +267,8 @@ for team in teamDays:
                         awayLosses = awayLosses + 1
                 if awayScore == homeScore:
                     awayDraws = awayDraws + 1
-                # TODO fix
-                # opponentAgg = opponentAgg + \
-                #     sheet[homeAggCol +
-                #           str(row + 9 - rowsDownAdjustmentInt)].value
-                # teamAgg = teamAgg + \
-                #     sheet[awayAggCol +
-                #           str(row + 9 - rowsDownAdjustmentInt)].value
+                opponentAgg = opponentAgg + homeAgg
+                teamAgg = teamAgg + awayAgg
 
     # Store team result data
     teamResults = {
