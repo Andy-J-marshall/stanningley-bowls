@@ -27,36 +27,6 @@ sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 teamsProcessed = []
 
-# TODO best place for this?
-def checkValidPlayerOnDay(playerName, row):
-    # Checks if player plays for team on selected day
-    playerName = formatName(playerName)
-    if playerName in traitorPlayers[league]:
-        return False
-    
-    for i in range(1, 10):
-        if row.row - i <= startingRow:
-            break
-        
-        # Checks player is playing for correct team
-        previousRowValue = sheet['A' + str(row.row - i)]
-        if previousRowValue and type(previousRowValue.value) is str:
-            if team.endswith('(A)') or team.endswith('(B)'):
-                if team.endswith('(A)'):
-                    for teamName in teamNamesForFirstTeam:
-                        if teamName.lower() in previousRowValue.value.lower():
-                            return True
-
-                if team.endswith('(B)'):
-                    for teamName in teamNamesForSecondTeam:
-                        if teamName.lower() in previousRowValue.value.lower():
-                            return True
-
-            else:
-                for teamName in teamNames:
-                    if teamName.lower() in previousRowValue.value.lower():
-                        return True
-
 # Open Excel file
 path = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 wb = openpyxl.load_workbook(path)
@@ -287,6 +257,36 @@ for team in teamDays:
     # allTeamResults.append(teamResults)
     
     #### PLAYER STATS ####
+    
+    def checkValidPlayerOnDay(playerName, row):
+        # Checks if player plays for team on selected day
+        playerName = formatName(playerName)
+        if playerName in traitorPlayers[league]:
+            return False
+        
+        for i in range(1, 10):
+            if row.row - i <= startingRow:
+                break
+            
+            # Checks player is playing for correct team
+            previousRowValue = sheet['A' + str(row.row - i)]
+            if previousRowValue and type(previousRowValue.value) is str:
+                if team.endswith('(A)') or team.endswith('(B)'):
+                    if team.endswith('(A)'):
+                        for teamName in teamNamesForFirstTeam:
+                            if teamName.lower() in previousRowValue.value.lower():
+                                return True
+
+                    if team.endswith('(B)'):
+                        for teamName in teamNamesForSecondTeam:
+                            if teamName.lower() in previousRowValue.value.lower():
+                                return True
+
+                else:
+                    for teamName in teamNames:
+                        if teamName.lower() in previousRowValue.value.lower():
+                            return True
+
     # Find rows in spreadsheet for players' games
     playerIndex = 1
     homePlayerRow = []
