@@ -3,7 +3,6 @@ from pathlib import Path
 import json
 import os
 from datetime import date
-# import datefinder # TODO remove this?
 import teamDetails
 import utils
 import re
@@ -11,7 +10,6 @@ import re
 year = str(date.today().year)
 
 teamDays = teamDetails.teamDays
-# teamDays = ['Monday Combined Leeds'] # TODO revert
 teamNames = teamDetails.teamNames
 teamNamesForSecondTeam = teamDetails.teamNamesForSecondTeam
 teamNamesForFirstTeam = teamDetails.teamNamesForFirstTeam
