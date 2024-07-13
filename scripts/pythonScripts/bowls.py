@@ -197,8 +197,16 @@ for team in teamDays:
                 gameDate = ''
                 
         if gameDate:
-            # TODO failing for :     Sat Cup Div 1           Sat 8th Jun
-            gameDate = re.split(r"Mon |Tue | Wed | Thu | Fri | Sat | Sun", gameDate)[1]
+            gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
+            gameDate = gameDateParts[2]
+            # This might happen if date if cup text includes the day
+            if len(gameDateParts) > 4:
+                gameDate = gameDateParts[4]
+            
+            # Sanity check on the date
+            dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
+            if dateContainsDayOfWeekBool is None:
+                raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
 
         # Home games
         if row in homeRow:
