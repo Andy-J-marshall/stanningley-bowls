@@ -40,8 +40,8 @@ def checkValidPlayerOnDay(playerName, row):
         
         # Checks player is playing for correct team
         previousRowValue = sheet['A' + str(row.row - i)]
-        if previousRowValue and type(previousRowValue.value) is str:         
-            if team.endswith('(A)') or team.endswith('(B)'):               
+        if previousRowValue and type(previousRowValue.value) is str:
+            if team.endswith('(A)') or team.endswith('(B)'):
                     if team.endswith('(A)'):
                         for teamName in teamNamesForFirstTeam:
                             if teamName.lower() in previousRowValue.value.lower():
