@@ -4,20 +4,23 @@ import os
 from datetime import date
 import utils
 
-teams = utils.teamDays
+teamDays = utils.teamDays
 
 year = str(date.today().year)
 filename = str(Path.cwd()) + '/files/' + 'bowlsresults' + year + '.xlsx'
 
 if os.path.exists(filename):
-    print('Excel file already exists: ' + filename)
-else:
-    wb = openpyxl.Workbook()
-    for team in teams:
-        if teams.index(team) == 0:
-            ws = wb.active
-            ws.title = team
-        else:
-            wb.create_sheet(team)
-    wb.save(filename)
-    print(filename + ' created')
+    print('Excel file already exists, deleting: ' + filename)
+    os.remove(filename)
+
+wb = openpyxl.Workbook()
+for teamName in teamDays:
+    if teamDays.index(teamName) == 0:
+        teamName = teamName.replace(' (A)', '').replace(' (B)', '')
+        ws = wb.active
+        ws.title = teamName
+    else:
+        teamName = teamName.replace(' (A)', '').replace(' (B)', '')
+        wb.create_sheet(teamName)
+wb.save(filename)
+print(filename + ' created')

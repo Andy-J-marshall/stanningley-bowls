@@ -1,8 +1,8 @@
 import os
 import utils
 
-htmlFiles = utils.findHtmlFiles()
+files = utils.findReportFiles()
 
-for file in htmlFiles:
+for file in files:
     if os.path.exists(file):
         os.remove(file)

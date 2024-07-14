@@ -35,7 +35,7 @@ for league in leaguesDays:
 
     # Goes through each sheet in turn
     sheet = wb[league]
-    print('Processing ' + league)
+    print('Updating Stats: ' + league)
 
     # Find the stating row to check the stats
     startingRow = 0

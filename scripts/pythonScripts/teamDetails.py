@@ -1,5 +1,3 @@
-import datetime
-
 # Team info (lowercase)
 teamNames = ['Stanningley', 'Stanningley A', 'Stanningley B',
              'Stanningley Park', 'Stanningley Park A', 'Stanningley Park B']

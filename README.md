@@ -38,14 +38,14 @@ The script that collates stats from all club teams can be found in the `/scripts
 
 - Download and install python 3
 - Run: `pip3 install openpyxl==2.6.2`
-- Run: `pip3 install datefinder`
 
 ## Update the player stats
 
 Generate the reports on bowlsnet. This can either by running the automated Playwright tests or manually.
 
 - To generate them using Playwright:
-  - Run `npm run get-latest-stats` - these will output local html files in `files/htmlFiles/` and open them in your web browser
+<!-- TODO update here -->
+  - Run `npm run get-latest-stats` - these will output local html files in `files/bowlsnetReports/` and open them in your web browser
   - Copy contents of each file (CMD + A, CMD + C) into the Excel file (CMD + V)
 - To generate manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory

@@ -2,8 +2,12 @@
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
   "scripts": {
-    "get-latest-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldHtmlFiles.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts && python3 ./scripts/pythonScripts/openInChrome.py && open files/bowlsresults2024.xlsx",
+    "get-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldReports.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts",
+    "get-stats-and-view-reports": "npm run get-stats && python3 ./scripts/pythonScripts/openReports.py && open files/bowlsresults2024.xlsx",
+    "get-and-update-stats": "npm run get-stats && python3 ./scripts/pythonScripts/copyReportToExcel.py && npm run update-stats",
+    "get-update-deploy-stats": "npm run get-and-update-stats && npm run build-deploy",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
+    "commit-updated-stats": "git add . && git commit -m 'updated stats'",
     "start": "vite",
     "build": "vite build && npm run tests",
     "deploy": "gh-pages -d dist",
