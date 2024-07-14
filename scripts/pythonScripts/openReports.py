@@ -1,10 +1,10 @@
 import webbrowser
 import utils
 
-htmlFiles = utils.findHtmlFiles()
+files = utils.findReportFiles()
 filesOpened = []
 
-for file in htmlFiles:
+for file in files:
     file = file.replace(' (A)', '').replace(' (B)', '')
     if file not in filesOpened:
         webbrowser.open('file://' + file)

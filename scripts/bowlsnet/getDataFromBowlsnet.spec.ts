@@ -85,7 +85,7 @@ for (const team of teams) {
 
   test(`${team.day} Stats`, async () => {
     const day = team.day;
-    const filePath = `./files/htmlFiles/${day}.html`;
+    const filePath = `./files/bowlsnetReports/${day}.txt`;
     const url = team.url;
 
     await page.goto(url);
@@ -154,7 +154,6 @@ for (const team of teams) {
 
     await newPage.bringToFront();
     const value = await newPage.$eval('body', (el) => el.innerHTML);
-    const html = `<html><body>${value}</body></html>`;
-    fs.writeFileSync(filePath, html);
+    fs.writeFileSync(filePath, value);
   });
 }

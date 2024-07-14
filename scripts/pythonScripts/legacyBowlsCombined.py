@@ -116,7 +116,7 @@ for league in leaguesDays:
 
     # Goes through each sheet in turn
     sheet = wb[league]
-    print('Processing ' + league)
+    print('Updating Stats: ' + league)
 
     startingRow = 0
     startingRowIndex = 1

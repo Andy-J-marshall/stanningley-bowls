@@ -42,7 +42,7 @@ for team in teamDays:
     
     # Goes through each sheet in turn
     sheet = wb[league]
-    print('Processing ' + team)
+    print('Updating Stats: ' + team)
     
     # Find the stating row to check the stats
     startingRow = 0
@@ -552,7 +552,7 @@ if os.path.exists(filename):
     os.remove(filename)
 
 with open(filename, 'w') as f:
-    json.dump(dataToExport, f)
+    json.dump(dataToExport, f, indent=4)
     print(filename + ' created')
     print('------')
 

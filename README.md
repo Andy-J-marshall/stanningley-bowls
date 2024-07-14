@@ -38,25 +38,26 @@ The script that collates stats from all club teams can be found in the `/scripts
 
 - Download and install python 3
 - Run: `pip3 install openpyxl==2.6.2`
-- Run: `pip3 install datefinder`
 
 ## Update the player stats
 
-Generate the reports on bowlsnet. This can either by running the automated Playwright tests or manually.
+Generate the reports on bowlsnet. This can either by running the automated Playwright scripts or manually.
 
 - To generate them using Playwright:
-  - Run `npm run get-latest-stats` - these will output local html files in `files/htmlFiles/` and open them in your web browser
-  - Copy contents of each file (CMD + A, CMD + C) into the Excel file (CMD + V)
-- To generate manually:
+  - Run `npm run get-stats-and-view-reports` - these will output the reports as text files in `files/bowlsnetReports/` and open them
+  - Copy contents of each file (CMD + A, CMD + C, CMD + V)) into the `bowlsresults` Excel file, then run `npm run update-stats`
+  - You can update the stats automatically by running `npm run get-stats-and-update`, this will automate the above 2 steps.
+  - Advanced: You can also get, update, commit and deploy the stats by running `npm run get-stats-update-deploy`. You may want to use the more manual steps first to check the data before deploying.
+- To generate the reports manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
-  - Create 4 new sheets, 1 for each day the team plays (ensure the names match the team names used by the `bowls.py` script)
-  - Navigate to each of the above 4 URLs, go to Info, then Reports:
-  - Select Formatted Report
+  - Create new sheets for each day the team plays (ensure the names match the team names used by the `bowls.py` script, but remove any A/B suffix)
+  - Navigate to the Bowlsnet league URLs, go to Info, then Reports:
   - Click Output Tables
   - Select the full From and To date ranges
   - Click Output Full Results
-- Copy the outputted reports to the corresponding sheet in the Excel workbook
-- Save the Excel file
+  - Copy the outputted reports to the corresponding sheet in the Excel workbook
+  - Save the Excel file
+  - Run `npm run update-stats`
 
 ## Update list of players
 
@@ -73,8 +74,6 @@ If a player plays for another team on a different day, enter them into the `trai
 `npm run update-stats`
 
 JSON file will be created: `src/data/bowlsStats{year}.json`.
-
-You might want to format the JSON document to make it easier to read
 
 # How to use this repo as a template for other clubs
 
@@ -107,7 +106,6 @@ Update `homepage` in `package.json`
 Check `bowls.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
-- Check the `satAndWedLeaguePositionCol` value for the selected leagues
 
 Update `src/config.js`:
 
@@ -123,7 +121,7 @@ Update tests:
 
 Update team info in all components:
 
-- Change hardcoded references and variable names called "Monday", "Tuesday", "Thursday", "Saturday" to the correct team names
+- Change hardcoded references and variable names (e.g. "Monday", "Tuesday", "Thursday", "Saturday") to the correct team names
 - Add/remove teams if there are more/fewer teams than Stanningley in `playerRecords` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `players` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component
@@ -136,7 +134,7 @@ Team Records:
 
 # Updates required at end of each calendar year
 
-Update the `get-latest-stats` script in `package.json` to point to the new year's xlsx file.
+Update the `get-stats-and-view-reports` script in `package.json` to point to the new year's xlsx file.
 
 Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
 
@@ -162,7 +160,7 @@ If adding or removing a second team, updated the following properties in `teamDe
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 
 Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
-Also update any URLs if the Bowlsnet link has changed.
+Update any URLs if the Bowlsnet link has changed.
 Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
 Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.

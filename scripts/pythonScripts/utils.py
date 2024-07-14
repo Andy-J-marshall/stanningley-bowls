@@ -20,10 +20,10 @@ teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
-def findHtmlFiles():
+def findReportFiles():
     files = []
     for team in teamDays:
-        files.append(os.getcwd() + '/files/htmlFiles/' + team + '.html')
+        files.append(os.getcwd() + '/files/bowlsnetReports/' + team + '.txt')
     return files
 
 def deduplicateNames(name):
