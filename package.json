@@ -7,7 +7,7 @@
     "get-and-update-stats": "npm run get-stats && python3 ./scripts/pythonScripts/copyReportToExcel.py && npm run update-stats",
     "get-update-deploy-stats": "npm run get-and-update-stats && npm run build-deploy",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
-    "commit-updated-stats": "git add . && git commit -m 'updated stats'",
+    "commit-updated-stats": "git add . && git commit -m 'updated stats' && git push",
     "start": "vite",
     "build": "vite build && npm run tests",
     "deploy": "gh-pages -d dist",
