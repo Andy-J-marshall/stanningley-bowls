@@ -309,7 +309,7 @@ if os.path.exists(filename):
     os.remove(filename)
 
 with open(filename, 'w') as f:
-    json.dump(dataToExport, f)
+    json.dump(dataToExport, f, indent=4)
     print(filename + ' created')
     print('------')
 
