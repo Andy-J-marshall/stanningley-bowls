@@ -86,12 +86,17 @@ for league in leaguesDays:
     for row in range(startingRow, sheet.max_row + 1):
         # Create list as players may be playing against one another
         playerRows = []
-        if row in homePlayerRow or row in awayPlayerRow:
-            if row in homePlayerRow:
-                playerRows.append('home')
-            if row in awayPlayerRow:
-                playerRows.append('away')
-        else:
+        playerToProcess = False
+        
+        if row in homePlayerRow:
+            playerToProcess = True
+            playerRows.append('home')
+
+        if row in awayPlayerRow:
+            playerToProcess = True
+            playerRows.append('away')
+        
+        if playerToProcess is False:
             continue
 
         for homeOrAway in playerRows:
