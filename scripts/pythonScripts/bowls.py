@@ -349,14 +349,7 @@ for team in teamDays:
         playerIndex = playerIndex + 1
     
     # Find each players' results
-    for row in range(startingRow, sheet.max_row + 1):
-        playerRows = []
-        homeOrAway = ''
-        if row in homePlayerRow:
-            homeOrAway = 'home'
-        if row in awayPlayerRow:
-            homeOrAway = 'away'
-
+    for row in range(startingRow, sheet.max_row + 1):        
         # reset variable values
         aggregate = 0
         opponentAggregate = 0
@@ -376,17 +369,17 @@ for team in teamDays:
         # Find columns
         if row in cupGameRows:
             cupGame = True
-            if homeOrAway == 'home':
+            if row in homePlayerRow:
                 cupHome = True
-            if homeOrAway == 'away':
+            if row in awayPlayerRow:
                 cupAway = True
 
-        if homeOrAway == 'home':
+        if row in homePlayerRow:
             updateStats = True
             if not cupGame:
                 homeGame = True
 
-        if homeOrAway == 'away':
+        if row in awayPlayerRow:
             updateStats = True
             if not cupGame:
                 awayGame = True
