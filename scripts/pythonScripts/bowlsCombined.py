@@ -86,10 +86,13 @@ for league in leaguesDays:
     for row in range(startingRow, sheet.max_row + 1):
         # Create list as players may be playing against one another
         playerRows = []
-        if row in homePlayerRow:
-            playerRows.append('home')
-        if row in awayPlayerRow:
-            playerRows.append('away')
+        if row in homePlayerRow or row in awayPlayerRow:
+            if row in homePlayerRow:
+                playerRows.append('home')
+            if row in awayPlayerRow:
+                playerRows.append('away')
+        else:
+            continue
 
         for homeOrAway in playerRows:
             # reset variable values
@@ -101,7 +104,7 @@ for league in leaguesDays:
             pairsGame = False
             pairsPartner = ''
             opponentTeam = ''
-            updateStats = False
+            correctPlayerFound = False
             homeGame = None
             awayGame = None
             cupGame = False
@@ -110,7 +113,6 @@ for league in leaguesDays:
 
             # Find columns
             if row in cupGameRows:
-                updateStats = True
                 cupGame = True
                 if homeOrAway == 'home':
                     cupHome = True
@@ -118,17 +120,14 @@ for league in leaguesDays:
                     cupAway = True
 
             if homeOrAway == 'home':
-                updateStats = True
                 if not cupGame:
                     homeGame = True
 
             if homeOrAway == 'away':
-                updateStats = True
                 if not cupGame:
                     awayGame = True
 
             # Checks player plays for expected team
-            correctPlayerFound = False
             for i in range(0, 13):
                 if row - i <= startingRow:
                     break
@@ -150,11 +149,9 @@ for league in leaguesDays:
                         if part.lower() in teamsTracking:
                             correctPlayerFound = True
                             break
-            if correctPlayerFound is False:
-                updateStats = False
 
             # Find result details
-            if updateStats:
+            if correctPlayerFound:
                 text = sheet['A' + str(row)].value
 
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
