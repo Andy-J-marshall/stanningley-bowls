@@ -5,7 +5,7 @@
     "get-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldReports.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts",
     "get-stats-and-view-reports": "npm run get-stats && python3 ./scripts/pythonScripts/openReports.py && open files/bowlsresults2024.xlsx",
     "get-and-update-stats": "npm run get-stats && python3 ./scripts/pythonScripts/copyReportToExcel.py && npm run update-stats",
-    "get-update-deploy-stats": "npm run get-and-update-stats && npm run build-deploy",
+    "get-update-deploy-stats": "npm run get-and-update-stats && npm run build-deploy && npm run commit-updated-stats",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
     "commit-updated-stats": "git add . && git commit -m 'updated stats' && git push",
     "start": "vite",
