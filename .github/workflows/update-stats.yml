@@ -29,8 +29,12 @@ jobs:
           npm ci
           npx playwright install-deps
           npx playwright install
+      - name: Configure Git
+        run: | 
+          git config --global user.email "stanningleybowlsclub@gmail.com"
+          git config --global user.name "SPBC GitHub Action"
       - name: Update stats and deploy
         run: npm run get-stats-update-deploy
         # TODO do I need this? Need to install gh CLI?
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
