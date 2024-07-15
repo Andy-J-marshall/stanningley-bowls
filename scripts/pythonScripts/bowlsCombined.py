@@ -41,8 +41,6 @@ for league in leaguesDays:
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
-            
-        # TODO check if these leagues have cups (half hol bradford, mon bradford, thurs vets bradford, saturday bradford)
 
         # Find the cup games in the stats
         cupGameRows = []

@@ -153,9 +153,6 @@ for team in teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             if rowNumber <= startingRow:
                 continue
-            # # TODO check if this will cause issues
-            # if rowNumber + 10 >= endRow:
-            #     break
             row = allRowsInFile[rowNumber]
             
             rowsDownAdjustmentInt = 0
