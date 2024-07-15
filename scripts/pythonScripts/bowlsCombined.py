@@ -15,6 +15,7 @@ standardiseName = utils.standardiseName
 teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
+checkFileSize = utils.checkFileSize
 cupTextList = utils.cupText
 leaguesProcessed = []
 
@@ -32,7 +33,7 @@ for league in leaguesDays:
         print('Updating Stats: ' + league)
         allRowsInFile = file.readlines()
 
-        # Find the stating row to check the stats
+        # Find the number of rows in the file and the stating row to check the stats
         startingRow = 0
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -301,7 +302,9 @@ dataToExport = {
 }
 
 filename = 'src/data/allPlayerStats' + year + '.json'
+previousFileSize = 0
 if os.path.exists(filename):
+    previousFileSize = checkFileSize(filename)
     os.remove(filename)
 
 with open(filename, 'w') as jsonFile:
@@ -312,4 +315,7 @@ with open(filename, 'w') as jsonFile:
 
 # Sanity checks on the data
 sanityChecksOnPlayerStats(playerResults, players)
+newFileSize = checkFileSize(filename)
+if newFileSize < previousFileSize:
+    raise Exception('JSON has fewer rows than before')
 print('Sanity checks for all teams stats complete')

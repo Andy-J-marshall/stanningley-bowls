@@ -226,3 +226,15 @@ def sanityChecksOnPlayerStats(playerStats, players):
             raise Exception(f'losingPairsPartners for {player} incorrect?')
         
         checkForDuplicateResults(stats['results'], player)
+
+def checkFileSize(fileName):
+    newEndRow = 0
+    with open(fileName, 'r') as jsonFile:
+        allRowsInFile = jsonFile.readlines()    
+        for rowNumber, line in enumerate(allRowsInFile, start=0):
+            newEndRow = rowNumber
+    
+    if newEndRow == 0:
+        raise Exception('JSON is empty')
+    return newEndRow
+                    

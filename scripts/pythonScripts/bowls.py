@@ -20,6 +20,7 @@ clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
+checkFileSize = utils.checkFileSize
 teamsProcessed = []
 
 allTeamResults = []
@@ -39,7 +40,7 @@ for team in teamDays:
     with open('bowlsnetReports/' + league + '.txt', 'r') as file:
         allRowsInFile = file.readlines()
         
-        # Find the stating row to check the stats
+        # Find the number of rows in the file and the stating row to check the stats
         startingRow = 0
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -555,8 +556,10 @@ dataToExport = {
 }
 
 filename = 'src/data/bowlsStats' + year + '.json'
+previousFileSize = 0
 if os.path.exists(filename):
-    os.remove(filename)
+    previousFileSize = checkFileSize(filename)
+    os.remove(filename)    
 
 with open(filename, 'w') as jsonFile:
     json.dump(dataToExport, jsonFile, indent=4)
@@ -567,5 +570,8 @@ with open(filename, 'w') as jsonFile:
 # Sanity checks on the data
 sanityChecksOnTeamStats(allTeamResults)
 sanityChecksOnPlayerStats(playerStats, players)
+newFileSize = checkFileSize(filename)
+if newFileSize < previousFileSize:
+    raise Exception('JSON has fewer rows than before')
 print(f'Sanity checks for {displayTeamName} stats complete')
 print('------')
