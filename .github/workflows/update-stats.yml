@@ -23,7 +23,7 @@ jobs:
       - name: Set node version
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '20.x'
       - name: Install dependencies
         run: | 
           npm ci
@@ -36,5 +36,5 @@ jobs:
       - name: Update stats and deploy
         run: npm run get-stats-update-deploy
         # TODO do I need this? Need to install gh CLI?
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
