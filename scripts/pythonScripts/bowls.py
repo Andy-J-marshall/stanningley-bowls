@@ -1,4 +1,3 @@
-from pathlib import Path
 import json
 import os
 from datetime import date
@@ -37,7 +36,7 @@ for team in teamDays:
         raise Exception('team is being processed twice: ' + team)
     teamsProcessed.append(team)
     
-    with open(str(Path.cwd()) + '/bowlsnetReports/' + league + '.txt', 'r') as file:
+    with open('bowlsnetReports/' + league + '.txt', 'r') as file:
         allRowsInFile = file.readlines()
         
         # Find the stating row to check the stats
@@ -48,6 +47,9 @@ for team in teamDays:
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
+                    
+        if endRow == 0:
+            raise Exception('Report file is empty')
         
         # Find team name used by Stanningley in this league
         possibleTeamNamesUsed = []

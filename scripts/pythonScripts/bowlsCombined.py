@@ -1,4 +1,3 @@
-from pathlib import Path
 import json
 import os
 from datetime import date
@@ -29,7 +28,7 @@ for league in leaguesDays:
     leaguesProcessed.append(league)
 
     # Goes through each sheet in turn
-    with open(str(Path.cwd()) + '/bowlsnetReports/' + league + '.txt', 'r') as file:
+    with open('bowlsnetReports/' + league + '.txt', 'r') as file:
         print('Updating Stats: ' + league)
         allRowsInFile = file.readlines()
 
@@ -41,6 +40,9 @@ for league in leaguesDays:
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
+            
+        if endRow == 0:
+            raise Exception('Report file is empty')
 
         # Find the cup games in the stats
         cupGameRows = []
