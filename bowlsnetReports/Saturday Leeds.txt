@@ -294,6 +294,7 @@
  2:00pm  Meanwood             31  139   v.  Sth Leeds Cons B     24  113                       
  2:00pm  Holbeck Moor         22  102   v.  Stanningley Park A   32  146                       
  2:00pm  Sth Leeds Cons A     27  126   v.  Scatcherd Park A     30  138                       
+ 2:00pm  Gildersome A         23  113   v.  Holbeck Ltd A        29  133                       
 ----------------------------------------------------------------------------------------------------------------
  Time            Sat 13th Jul                          Div 1                                           
                                                     League Div 2                                       
@@ -321,11 +322,11 @@ Pos  Team                Pl   W   L   For
  3.  Cross Flatts A      12  11   1   408
  4.  New Wortley         13   7   6   379
  5.  Sth Leeds Cons A    12   7   5   347
- 6.  Meanwood            12   4   8   325
- 7.  Gildersome A        12   4   8   310
- 8.  Holbeck Moor        11   4   7   296
- 9.  Sth Leeds Cons B    13   0  12   284
-10.  Holbeck Ltd A       10   3   7   272
+ 6.  Gildersome A        13   4   9   333
+ 7.  Meanwood            12   4   8   325
+ 8.  Holbeck Ltd A       11   4   7   301
+ 9.  Holbeck Moor        11   4   7   296
+10.  Sth Leeds Cons B    13   0  12   284
 
 === League Div 2
                           Matches    Pnts
@@ -2033,6 +2034,20 @@ Derek McCormack    21  Martin Huxley       9
 Simon Hemmingway   12  Michael Stott      21
       Aggregate:  126        Aggregate:  138
          Points:   27           Points:   30
+
+        Div 1              Sat 13th Jul
+    League Div 1                 
+    Gildersome A           Holbeck Ltd A
+Dougie Cooper       4  Kian Hendry        21
+Frank Hales        12  Simon Linsell      21
+Diane Hales         2  James Cuffe        21
+Sandra Deegan      21  Paul Hainsworth    16
+Glenda Holmes      21  Jason Ream          9
+Daphne Scott       18  Michaela Wardle    21
+Kevin Smales       14  Ian Wardle         21
+Harvey Lockwood    21  Andrew Dewhirst     3
+      Aggregate:  113        Aggregate:  133
+         Points:   23           Points:   29
 
         Div 1              Sat 13th Jul
     League Div 2                 

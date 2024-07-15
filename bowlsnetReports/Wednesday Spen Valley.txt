@@ -659,6 +659,7 @@
 ------------------------------------------------------------------------------------------------------------
  Time            Wed 10th Jul                           Division 2                           
 ------------------------------------------------------------------------------------------------------------
+        Holbeck                           v.  Farsley                          To Sun 14th Jul
 7:00pm  Mirfield Old Bank - B    8  155   v.  Shipley - B              2  122  
 7:00pm  Scatcherd Park           2  118   v.  Spen Victoria - B        9  163  
 7:00pm  Harold Club - B          4  131   v.  New Farnley - A          7  142  
@@ -684,6 +685,11 @@
  Time            Thu 11th Jul                           Division 4                           
 ------------------------------------------------------------------------------------------------------------
 7:00pm  Cleckheaton Sports - E   4  133   v.  Cleckheaton Sports - F   7  141  
+
+------------------------------------------------------------------------------------------------------------
+ Time            Sun 14th Jul                           Division 2                           
+------------------------------------------------------------------------------------------------------------
+7:00pm  Holbeck                  3  135   v.  Farsley                  8  138  From Wed 10th Jul
 
 ------------------------------------------------------------------------------------------------------------
  Time            Wed 14th Aug                           Division 3                           
@@ -728,13 +734,13 @@ Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
  1.  New Farnley - A         12  10   2    84
  2.  Spen Victoria - B       12   9   3    84
- 3.  Shipley - B             12   9   3    75
- 4.  Farsley                 11   7   3    69
+ 3.  Farsley                 12   8   3    77
+ 4.  Shipley - B             12   9   3    75
  5.  Harold Club - B         12   6   6    67
  6.  Cleckheaton Sports - B  11   6   5    66
  7.  Pudsey BC - C           11   5   6    55
  8.  Mirfield Old Bank - B   12   3   8    40
- 9.  Holbeck                 11   1   9    34
+ 9.  Holbeck                 12   1  10    37
 10.  Scatcherd Park          12   0  11    25
 
 === Division 3
@@ -4838,6 +4844,19 @@ Callum Brook       21  Ryan Piercy        20
 Ian Gatenby        17  Daniel Noland      21
       Aggregate:  133        Aggregate:  141
          Points:    4           Points:    7
+
+     Division 2            Sun 14th Jul
+       Holbeck                Farsley
+Kian Hendry        20  Graham Petty       21
+Lance Greenwood    13  Peter Crowther     21
+Paul Hainsworth    17  Stuart Brook       21
+Michaela Wardle    21  Duncan McPhail     16
+Jason Ream         21  Ian Swinfield      13
+Ian Wardle         21  Peter Scott         4
+James Cuffe        10  Richard Whitaker   21
+Richard Perry      12  Jim Swailes        21
+      Aggregate:  135        Aggregate:  138
+         Points:    3           Points:    8
 
 
 </pre>

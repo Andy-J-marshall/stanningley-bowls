@@ -365,6 +365,7 @@
  Time              Wed 10th Jul                               Div 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 1:30pm  Middleton Comm A           20   91   v.  Scatcherd Park A         22  102                       
+1:30pm  Gildersome B               15   80   v.  Chapel Allerton          29  125                       
 1:30pm  Whitkirk BC B              22   99   v.  Moor Allerton B          16   75                       
 -------------------------------------------------------------------------------------------------------------------------
  Time              Wed 10th Jul                               Div 4                                             
@@ -412,14 +413,14 @@ Pos  Team                Pl   W  L   For
                           Matches   Pnts
 Pos  Team                Pl   W  L   For
 ===  ==================  ==  ==  =  ====  
- 1.  Scatcherd Park A    10   8  1   237
- 2.  Whitkirk BC B       10   6  3   236
- 3.  Chapel Allerton      9   6  1   224
+ 1.  Chapel Allerton     10   7  1   253
+ 2.  Scatcherd Park A    10   8  1   237
+ 3.  Whitkirk BC B       10   6  3   236
  4.  Moor Allerton B     10   4  6   217
  5.  Fearnville           9   5  4   187
  6.  Methley              8   3  5   166
  7.  Middleton Comm A     8   1  5   155
- 8.  Gildersome B         8   0  8   113
+ 8.  Gildersome B         9   0  9   128
 
 === Div 4
                           Matches   Pnts
@@ -2426,6 +2427,17 @@ Terry Maher         6  Ray Ball            21
 Brian Ragan         6  Billy Ward          21
       Aggregate:   91         Aggregate:  102
          Points:   20            Points:   22
+
+        Div 3               Wed 10th Jul
+    Gildersome B          Chapel Allerton
+David Rawson        6  Chris Jones         21
+Bev Farrar         17  Graham Pickles      21
+John Ackroyd        9  Alex McSheehy       21
+Graham Gaunt       21  Adrienne Blackwell  20
+Neil Schofield     18  Andrew Paxton       21
+Frank Hales         9  Royce Jackson       21
+      Aggregate:   80         Aggregate:  125
+         Points:   15            Points:   29
 
         Div 3               Wed 10th Jul
     Whitkirk BC B         Moor Allerton B
