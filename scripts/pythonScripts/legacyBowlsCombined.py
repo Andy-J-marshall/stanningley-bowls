@@ -7,19 +7,18 @@ import utils
 
 #######################
 # This script can be used to update old stats from 2022 or 2023 for a player who joined Stanningley
-# Follow the TODO comments for instructions
+# Follow the steps below:
+# Update the year (2022 or 2023)
+# Add players to the players list in lower case
+# Add any alternative spellings for the player to the duplicatePlayerNames list in lower case
+# comment out all names in deduplicateNames(), and add any for the new player (alternatively just remove the method call from formatName
 # Once you have the updated file, copy and paste the player stats from individualPlayerStats to allPlayerStats json file
 #######################
 
-# TODO update the year (2022 or 2023)
 year = str(2022)
 
-# TODO comment out all names in deduplicateNames(), and add any for the new player (alternatively just remove the method call from formatName
-
 leaguesDays = utils.teamDays
-# TODO Add players to this list in lower case
 players = ['test name']
-# TODO  Add any alternative spellings for the player to this list in lower case
 duplicatePlayerNames = ['']
 formatName = utils.formatName
 standardiseName = utils.standardiseName
@@ -91,7 +90,6 @@ def formatTeamName(possibleTeamName):
     teamName = teamName.replace('  ', ' ')
     teamName = teamName.strip()
     return teamName
-
 
 # Spreadsheet info
 homePlayerCol = 'A'

@@ -85,7 +85,7 @@ for (const team of teams) {
 
   test(`${team.day} Stats`, async () => {
     const day = team.day;
-    const filePath = `./files/bowlsnetReports/${day}.txt`;
+    const filePath = `./bowlsnetReports/${day}.txt`;
     const url = team.url;
 
     await page.goto(url);

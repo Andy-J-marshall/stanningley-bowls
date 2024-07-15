@@ -20,12 +20,6 @@ teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
-def findReportFiles():
-    files = []
-    for team in teamDays:
-        files.append(os.getcwd() + '/files/bowlsnetReports/' + team + '.txt')
-    return files
-
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
         name = 'Duncan McPhail'
@@ -128,6 +122,7 @@ def checkForDuplicateResults(results, player):
         print('check for potential duplicate results for player:' + player)
         print(results)
         print('***')
+        raise Exception('Duplicate results')
 
 def sanityChecksOnTeamStats(allTeamResults):
     print('Running sanity checks on team stats')

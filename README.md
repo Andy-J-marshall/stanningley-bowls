@@ -9,7 +9,7 @@ There is also a python script that takes the raw data from bowlsnet.uk and gener
   - Run: `gh auth login` and login to GitHub
 - Install NodeJS
 - Install python 3
-  - Run: `pip3 install openpyxl==2.6.2`
+  - Run: `pip3 install openpyxl==2.6.2` (only need if updated stats for 2022 and 2023)
 
 # React Web App
 
@@ -44,9 +44,7 @@ The script that collates stats from all club teams can be found in the `/scripts
 Generate the reports on bowlsnet. This can either by running the automated Playwright scripts or manually.
 
 - To generate them using Playwright:
-  - Run `npm run get-stats-and-view-reports` - these will output the reports as text files in `files/bowlsnetReports/` and open them
-  - Copy contents of each file (CMD + A, CMD + C, CMD + V)) into the `bowlsresults` Excel file, then run `npm run update-stats`
-  - You can update the stats automatically by running `npm run get-stats-and-update`, this will automate the above 2 steps.
+  - Run `npm run get-stats-and-update` - this will use Playwright to generate text reports and then run the scripts to update the stats JSON files
   - Advanced: You can also get, update, commit and deploy the stats by running `npm run get-stats-update-deploy`. You may want to use the more manual steps first to check the data before deploying.
     - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
