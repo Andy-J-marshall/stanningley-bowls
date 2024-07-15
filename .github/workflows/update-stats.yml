@@ -30,3 +30,6 @@ jobs:
           npx playwright install
       - name: Update stats and deploy
         run: npm run get-stats-update-deploy
+        # TODO do I need this? Need to install gh CLI?
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
