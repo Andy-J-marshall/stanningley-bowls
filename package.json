@@ -7,7 +7,7 @@
     "get-stats-and-update": "npm run get-stats && python3 ./scripts/pythonScripts/copyReportToExcel.py && npm run update-stats",
     "get-stats-update-deploy": "npm run get-stats-and-update && npm run build-deploy && npm run commit-updated-stats",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
-    "commit-updated-stats": "git checkout update_stats_prod && git pull && git merge master && git add src/data/* && git commit -m 'updated stats' && git push && git checkout master && git pull && git merge update_stats_prod && git push",
+    "commit-updated-stats": "git checkout update_stats_prod && git pull && git merge master && git add src/data/* && git commit -m 'updated stats' && git push && gh pr create --title 'updating stats' --body 'review the updated stats before merging to master' && git checkout master && git pull",
     "start": "vite",
     "build": "vite build && npm run tests",
     "deploy": "gh-pages -d dist",

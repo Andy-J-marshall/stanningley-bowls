@@ -3,11 +3,15 @@
 This web app displays information and stats for the Crown Green Bowling club.
 There is also a python script that takes the raw data from bowlsnet.uk and generates a JSON file that the web app uses.
 
+## Pre-requisites
+- Install Git
+- Install GH CLI i.e. `brew install gh`
+  - Run: `gh auth login` and login to GitHub
+- Install NodeJS
+- Install python 3
+  - Run: `pip3 install openpyxl==2.6.2`
+
 # React Web App
-
-## UI Pre-requisites
-
-NodeJS
 
 ## To run locally
 
@@ -34,10 +38,6 @@ Most of the club details are stored in the `config.js` file (e.g. membership pri
 
 The script that collates stats from all club teams can be found in the `/scripts/pythonScripts` directory.
 
-## Pre-requisites
-
-- Download and install python 3
-- Run: `pip3 install openpyxl==2.6.2`
 
 ## Update the player stats
 
@@ -48,6 +48,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
   - Copy contents of each file (CMD + A, CMD + C, CMD + V)) into the `bowlsresults` Excel file, then run `npm run update-stats`
   - You can update the stats automatically by running `npm run get-stats-and-update`, this will automate the above 2 steps.
   - Advanced: You can also get, update, commit and deploy the stats by running `npm run get-stats-update-deploy`. You may want to use the more manual steps first to check the data before deploying.
+    - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
   - Create new sheets for each day the team plays (ensure the names match the team names used by the `bowls.py` script, but remove any A/B suffix)
