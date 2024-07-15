@@ -92,7 +92,6 @@ def formatTeamName(possibleTeamName):
     teamName = teamName.strip()
     return teamName
 
-
 # Spreadsheet info
 homePlayerCol = 'A'
 homePlayerScoreCol = 'B'
