@@ -1,9 +1,14 @@
 name: Update stats
 on:
+  # TODO add this in
+  # schedule:
+    # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 10 PM (UTC time)
+    # - cron: '0 22 1-30 4-9 1,2,3,4,6'
   push:
     branches:
       - '*'
   workflow_dispatch:
+    # TODO workflow dispatch not working?
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
