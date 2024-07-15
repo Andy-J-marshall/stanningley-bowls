@@ -2,7 +2,7 @@
   "private": true,
   "homepage": "https://www.stanningleybowlsclub.co.uk",
   "scripts": {
-    "get-stats": "python3 ./scripts/pythonScripts/createSpreadsheet.py && python3 ./scripts/pythonScripts/deleteOldReports.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts",
+    "get-stats": "python3 ./scripts/pythonScripts/deleteOldReports.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts && python3 ./scripts/pythonScripts/createSpreadsheet.py",
     "get-stats-and-view-reports": "npm run get-stats && python3 ./scripts/pythonScripts/openReports.py && open files/bowlsresults2024.xlsx",
     "get-stats-and-update": "npm run get-stats && python3 ./scripts/pythonScripts/copyReportToExcel.py && npm run update-stats",
     "get-stats-update-deploy": "npm run get-stats-and-update && npm run build-deploy && npm run commit-updated-stats",
