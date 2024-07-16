@@ -48,7 +48,7 @@ jobs:
           git commit -m 'updated stats'
           git push
       - name: Create a PR
-        run: gh pr create --fill
+        run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
