@@ -10,69 +10,70 @@ function sleep() {
 }
 
 const teams = [
-  {
-    day: 'Monday Combined Leeds',
-    url: '/Leeds-MonComb',
-  },
+  // TODO add back in
+  // {
+  //   day: 'Monday Combined Leeds',
+  //   url: '/Leeds-MonComb',
+  // },
   {
     day: 'Tuesday Vets Leeds',
     url: '/Leeds-TueVets',
   },
-  {
-    day: 'Tuesday Leeds',
-    url: '/Leeds-Tue',
-  },
-  {
-    day: 'Wednesday Half Holiday Leeds',
-    url: '/Leeds-Wed',
-  },
-  {
-    day: 'Wednesday Pairs AireWharfe',
-    url: '/AW-WedPairs',
-  },
-  {
-    day: 'Thursday Vets Leeds',
-    url: '/Leeds-ThuVets',
-  },
-  {
-    day: 'Saturday Leeds',
-    url: '/Leeds-Sat',
-  },
-  {
-    day: 'Tuesday Mirfield',
-    url: '/Mirfield',
-  },
-  {
-    day: 'Wednesday Spen Valley',
-    url: '/WestRiding',
-  },
-  {
-    day: 'Monday AireDale & Wharfedale',
-    url: '/AW-Mon',
-  },
-  {
-    day: 'Tuesday AireDale & Wharfedale',
-    url: '/AW-Vets',
-  },
-  {
-    day: 'Wednesday AireDale & Wharfedale',
-    url: '/AW-WedSingles',
-  },
-  {
-    day: 'Monday Bradford',
-    url: '/Bradford-Mon',
-  },
-  {
-    day: 'Wednesday Half Holiday Bradford',
-    url: '/Bradford-HalfHol',
-  },
-  {
-    day: 'Thursday Vets Bradford',
-    url: '/Bradford-Vets',
-  },
-  {
-    day: 'Saturday Bradford',
-    url: '/Bradford-Sat',
+  // {
+  //   day: 'Tuesday Leeds',
+  //   url: '/Leeds-Tue',
+  // },
+  // {
+  //   day: 'Wednesday Half Holiday Leeds',
+  //   url: '/Leeds-Wed',
+  // },
+  // {
+  //   day: 'Wednesday Pairs AireWharfe',
+  //   url: '/AW-WedPairs',
+  // },
+  // {
+  //   day: 'Thursday Vets Leeds',
+  //   url: '/Leeds-ThuVets',
+  // },
+  // {
+  //   day: 'Saturday Leeds',
+  //   url: '/Leeds-Sat',
+  // },
+  // {
+  //   day: 'Tuesday Mirfield',
+  //   url: '/Mirfield',
+  // },
+  // {
+  //   day: 'Wednesday Spen Valley',
+  //   url: '/WestRiding',
+  // },
+  // {
+  //   day: 'Monday AireDale & Wharfedale',
+  //   url: '/AW-Mon',
+  // },
+  // {
+  //   day: 'Tuesday AireDale & Wharfedale',
+  //   url: '/AW-Vets',
+  // },
+  // {
+  //   day: 'Wednesday AireDale & Wharfedale',
+  //   url: '/AW-WedSingles',
+  // },
+  // {
+  //   day: 'Monday Bradford',
+  //   url: '/Bradford-Mon',
+  // },
+  // {
+  //   day: 'Wednesday Half Holiday Bradford',
+  //   url: '/Bradford-HalfHol',
+  // },
+  // {
+  //   day: 'Thursday Vets Bradford',
+  //   url: '/Bradford-Vets',
+  // },
+  // {
+  //   day: 'Saturday Bradford',
+  //   url: '/Bradford-Sat',
   },
 ];
 
