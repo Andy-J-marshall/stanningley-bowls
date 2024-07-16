@@ -4307,12 +4307,12 @@
             ]
         },
         "stuart potter": {
-            "totalAgg": 921,
-            "totalAggAgainst": 715,
-            "availableAgg": 1037,
+            "totalAgg": 924,
+            "totalAggAgainst": 736,
+            "availableAgg": 1058,
             "availablePairsAgg": 386,
             "availableHomeAgg": 440,
-            "availableAwayAgg": 482,
+            "availableAwayAgg": 503,
             "availablePairsHomeAgg": 167,
             "availablePairsAwayAgg": 167,
             "totalPairsAgg": 312,
@@ -4321,14 +4321,14 @@
             "totalHomeAggAgainst": 261,
             "totalPairsHomeAgg": 140,
             "totalPairsHomeAggAgainst": 103,
-            "totalAwayAgg": 415,
-            "totalAwayAggAgainst": 371,
+            "totalAwayAgg": 418,
+            "totalAwayAggAgainst": 392,
             "totalPairsAwayAgg": 132,
             "totalPairsAwayAggAgainst": 137,
             "homeWins": 15,
             "homeLosses": 5,
             "awayWins": 11,
-            "awayLosses": 11,
+            "awayLosses": 12,
             "cupWins": 3,
             "cupLosses": 2,
             "pairWins": 8,
@@ -4339,7 +4339,7 @@
             "pairAwayLosses": 4,
             "pairCupWins": 1,
             "pairCupLosses": 1,
-            "totalGamesPlayed": 47,
+            "totalGamesPlayed": 48,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -4387,7 +4387,8 @@
                 "Saturday Leeds",
                 "Saturday Leeds",
                 "Saturday Leeds",
-                "Saturday Leeds"
+                "Saturday Leeds",
+                "Wednesday Spen Valley"
             ],
             "pairsPartners": [
                 "harvey leonard",
@@ -4474,7 +4475,8 @@
                 "stuart potter 21 - 13 danny dawson",
                 "stuart potter 18 - 21 diane hales",
                 "stuart potter 21 - 10 joe adams",
-                "stuart potter 21 - 7 george ellener"
+                "stuart potter 21 - 7 george ellener",
+                "stuart potter 3 - 21 eddie hill"
             ]
         },
         "tracey marshall": {
