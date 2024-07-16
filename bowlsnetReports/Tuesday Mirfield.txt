@@ -643,16 +643,16 @@
                                  Matches    Pnts
 Pos  Team                       Pl   W   L   For
 ===  =========================  ==  ==  ==  ====  
- 1.  Thongsbridge C &amp; BC 'A'    11   9   2    91
- 2.  Crossgates BC 'A'          11   7   3    88
- 3.  Crosland Moor 'A'          11   8   3    83
- 4.  Dearne Sports              11   8   3    78
- 5.  Pudsey BC 'A'              11   8   2    77
- 6.  Littlemoor 'A'             11   3   8    53
- 7.  Dodworth MW                11   4   7    53
+ 1.  Crossgates BC 'A'          12   8   3    97
+ 2.  Crosland Moor 'A'          12   9   3    93
+ 3.  Thongsbridge C &amp; BC 'A'    11   9   2    91
+ 4.  Pudsey BC 'A'              12   9   2    88
+ 5.  Dearne Sports              12   8   4    80
+ 6.  Littlemoor 'A'             12   3   8    59
+ 7.  Dodworth MW                12   4   7    59
  8.  Lower Hopton WMC 'A'       11   3   8    52
- 9.  Denby Grange BC 'A'        11   2   8    45
-10.  Woodlands Park             11   1   9    40
+ 9.  Denby Grange BC 'A'        12   2   9    48
+10.  Woodlands Park             12   1  10    41
 
 === Division 2
                                  Matches    Pnts
