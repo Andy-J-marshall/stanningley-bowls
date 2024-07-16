@@ -35,7 +35,7 @@ jobs:
           git config --global user.email "stanningleybowlsclub@gmail.com"
           git config --global user.name "SPBC GitHub Action"
       - name: Update stats and deploy
-        run: get-stats-and-update
+        run: npm run get-stats-and-update
       - name: Commit and create a PR
         run: |
           git add bowlsnetReports/*
