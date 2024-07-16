@@ -1,5 +1,5 @@
 <pre style="word-wrap: break-word; white-space: pre-wrap;">=== AireDale &amp; Wharfedale (Mon. Evening) 2024
-=== League Report (as of Mon 15th Jul)
+=== League Report (as of Tue 16th Jul)
 
 
 === RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -508,17 +508,21 @@
  6:45pm  Ilkley B                       22  184   v.  Horsforth Hall Park             8  134                   
  6:45pm  Adel A                          9  150   v.  Rawdon A                       21  198                   
  6:45pm  Rufford B                      15  180   v.  Guiseley B                     15  178                   
+ 6:45pm  Wharfemeadows A                 5  135   v.  Eccleshill A                   25  197                   
  6:45pm  Littlemoor S&amp;SC                30  210   v.  Holt Park A                     0   86                   
 --------------------------------------------------------------------------------------------------------------------------------
  Time                 Mon 15th Jul                                  Division 3                                         
 --------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Menston A                      21  181   v.  Salts                           9  149                   
  6:45pm  Eccleshill B                   16  188   v.  Bramhope                       14  181                   
+ 6:45pm  Rawdon B                       20  181   v.  Yeadon Park A                  10  147                   
  6:45pm  Baildon                        18  168   v.  Grove Hill                     12  153                   
 --------------------------------------------------------------------------------------------------------------------------------
  Time                 Mon 15th Jul                                  Division 4                                         
 --------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Holt Park B                     8  161   v.  Burley in Wharfedale B         22  194                   
+ 6:45pm  Yeadon Park B                  15  179   v.  Wharfemeadows B                15  170                   
+ 6:45pm  Myrtle Park                    14  152   v.  Adel B                         16  163                   
  6:45pm  Greenbottom B                  13  165   v.  Menston B                      17  175                   
 
 
@@ -543,15 +547,15 @@ Pos  Team                    Pl   W   L   For
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
  1.  Littlemoor S&amp;SC         13  13   0   331
- 2.  Eccleshill A            12  11   1   273
+ 2.  Eccleshill A            13  12   1   298
  3.  Rawdon A                13  10   3   242
  4.  Rufford B               13   5   7   181
  5.  Adel A                  13   5   7   176
  6.  Ilkley B                13   5   8   173
  7.  Guiseley B              13   5   7   167
  8.  Holt Park A             13   3  10   131
- 9.  Horsforth Hall Park     13   2  11   125
-10.  Wharfemeadows A         12   3   8   121
+ 9.  Wharfemeadows A         13   3   9   126
+10.  Horsforth Hall Park     13   2  11   125
 
 === Division 3
                               Matches    Pnts
@@ -561,25 +565,25 @@ Pos  Team                    Pl   W   L   For
  2.  Menston A               12   6   6   191
  3.  Eccleshill B            12   8   4   188
  4.  Salts                   12   5   7   180
- 5.  Greenbottom A           11   4   6   157
- 6.  Rawdon B                10   6   3   152
+ 5.  Rawdon B                11   7   3   172
+ 6.  Greenbottom A           11   4   6   157
  7.  Bramhope                11   3   8   144
  8.  Baildon                 11   3   7   141
- 9.  Yeadon Park A            9   3   5   123
+ 9.  Yeadon Park A           10   3   6   133
 
 === Division 4
                               Matches    Pnts
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
  1.  Burley in Wharfedale B  12  12   0   269
- 2.  Myrtle Park             10   9   1   204
+ 2.  Myrtle Park             11   9   2   218
  3.  Holt Park B             12   5   6   184
- 4.  Wharfemeadows B         11   4   5   159
+ 4.  Wharfemeadows B         12   4   5   174
  5.  Calverley               11   4   6   157
  6.  Menston B               12   5   7   153
- 7.  Yeadon Park B           11   5   6   131
- 8.  Greenbottom B           11   2   9   126
- 9.  Adel B                  10   2   8   117
+ 7.  Yeadon Park B           12   5   6   146
+ 8.  Adel B                  11   3   8   133
+ 9.  Greenbottom B           11   2   9   126
 
 
 === FULL RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -4625,6 +4629,22 @@ Tom Broadbent      19  Colin Matthewman    21
          Points:   15            Points:   15
 
      Division 2             Mon 15th Jul
+   Wharfemeadows A          Eccleshill A
+Howard Gardiner 'A'21  Steve Bowes         19
+Paul Bowden        12  Graham Chaffer'A'   21
+Graham Tansley     10  Paul Rooks          21
+Ben Smith          21  Peter Jefferson     10
+Corrine Thuilliez   9  Jeremy Knowles      21
+Garrie Bolton      11  Ian Matthews        21
+John Chippindale 'A'                                                                                                                                                                                                                                                               15  Stephen Bastow'A'   21
+Michael Smith'A'    6  Mick Angus          21
+Paul Crawford      11  Neil Mylan 'A'      21
+Mark Silvester     19  Andy Howie'A'       21
+      Aggregate:  135         Aggregate:  197
+          Games:    2             Games:    8
+         Points:    5            Points:   25
+
+     Division 2             Mon 15th Jul
    Littlemoor S&amp;SC          Holt Park A
 Will Bedford       21  David Lyons         16
 Marc Armitage      21  Ernest Johnson 'A'   5
@@ -4673,6 +4693,22 @@ John Griffin       21  Sabrina Piggott     17
          Points:   16            Points:   14
 
      Division 3             Mon 15th Jul
+      Rawdon B             Yeadon Park A
+Terry Waite-Pullan 19  Frank Baker 'A'     21
+Bernard Harrison   21  Patrick Campbell     8
+Philip Leadbeater  21  David Baldwin       11
+Ken Chapman        21  Tim Nicholson        5
+Marlene Waite-Pullan                                                                                                                                                                                                                                                               21  Reid Haddow          7
+John Illingworth   15  John Hutton'A'      21
+Philip Jackson     21  Andrew Smalley      19
+George McLaren     12  Ian Robertson'A'    21
+John Collins       21  Robert North'A'     13
+Allan Sample        9  Paul Bullock        21
+      Aggregate:  181         Aggregate:  147
+          Games:    6             Games:    4
+         Points:   20            Points:   10
+
+     Division 3             Mon 15th Jul
        Baildon               Grove Hill
 Charles Wilson      6  Diane Farrar        21
 Jim Whittle        18  Peter Brearley      21
@@ -4703,6 +4739,38 @@ Jamie Hird         21  Pete Thornton       12
       Aggregate:  161         Aggregate:  194
           Games:    2             Games:    8
          Points:    8            Points:   22
+
+     Division 4             Mon 15th Jul
+    Yeadon Park B         Wharfemeadows B
+Mark Wilson        21  Dot Dixon            6
+Maureen Slater     17  Malolm Levi         21
+Sandra Taylor      16  Sandra Tiffany      21
+Joan Baker         15  Ray Smith Snr       21
+Shirley Nicholson  19  Gill Godden         21
+Michael Burnett    21  Belinda Mitchell     8
+Julie Watson       21  Jane Bowden         11
+Tracy Wilson       10  Tim Marshall        21
+Stan Parker        18  John Parker         21
+Barry Slater       21  David Warburton     19
+      Aggregate:  179         Aggregate:  170
+          Games:    4             Games:    6
+         Points:   15            Points:   15
+
+     Division 4             Mon 15th Jul
+     Myrtle Park               Adel B
+Harrison Charles   21  Steve Richardson     8
+Mike Wilson        12  Gordon Robinson     21
+Martin Slater      21  Marion Rider        13
+Maureen Wood       21  Kathryn Jones       15
+Tom Barnes         21  Kath Hynes          20
+Nick Gilleard       4  Meryl Auty          21
+Keith Brown         5  Bruce Tremlett      21
+Stephen Turner     21  Alan Wittrick        8
+Andrew Lancaster    5  John Auty           21
+Chris Dickerson    21  Dave Brown          15
+      Aggregate:  152         Aggregate:  163
+          Games:    6             Games:    4
+         Points:   14            Points:   16
 
      Division 4             Mon 15th Jul
     Greenbottom B            Menston B
