@@ -545,6 +545,7 @@
 7:00pm  Lower Hopton WMC 'A'        4  154   v.  Crossgates BC 'A'           8  188  
 7:00pm  Dearne Sports              10  199   v.  Denby Grange BC 'A'         2  137  
 7:00pm  Dodworth MW                 4  171   v.  Crosland Moor 'A'           8  192  
+7:00pm  Littlemoor 'A'              5  174   v.  Pudsey BC 'A'               7  179  
 7:00pm  Woodlands Park              5  186   v.  Thongsbridge C &amp; BC 'A'     7  187  
 ------------------------------------------------------------------------------------------------------
  Time              Tue 9th Jul                               Division 2                      
@@ -598,10 +599,10 @@ Pos  Team                       Pl   W   L   For
  2.  Crossgates BC 'A'          11   7   3    88
  3.  Crosland Moor 'A'          11   8   3    83
  4.  Dearne Sports              11   8   3    78
- 5.  Pudsey BC 'A'              10   7   2    70
- 6.  Dodworth MW                11   4   7    53
- 7.  Lower Hopton WMC 'A'       11   3   8    52
- 8.  Littlemoor 'A'             10   3   7    48
+ 5.  Pudsey BC 'A'              11   8   2    77
+ 6.  Littlemoor 'A'             11   3   8    53
+ 7.  Dodworth MW                11   4   7    53
+ 8.  Lower Hopton WMC 'A'       11   3   8    52
  9.  Denby Grange BC 'A'        11   2   8    45
 10.  Woodlands Park             11   1   9    40
 
@@ -5180,6 +5181,21 @@ Josh Talbot        11  John Greenhalgh    21
 James Thomas        4  Ian Booth          21
          Points:    4           Points:    8
       Aggregate:  171        Aggregate:  192
+
+     Division 1             Tue 9th Jul
+   Littlemoor 'A'          Pudsey BC 'A'
+Marc Armitage      21  Philip Wilsdon     18
+Will Bedford       21  Tom Hanson         19
+Jack Bowes         21  Ian Shaw           14
+Nathan Dobson      21  Josh Mordue        16
+Ben Falkingham     10  Jon Edmondson      21
+Mark Regan         16  Tom Lawrence       21
+Lee Wider          21  Chris Mordue        7
+Paul Wilczynski    15  James Cosgrave     21
+Alexander Wolfenden12  James Hanson       21
+Mark Allman        16  Stuart King        21
+         Points:    5           Points:    7
+      Aggregate:  174        Aggregate:  179
 
      Division 1             Tue 9th Jul
    Woodlands Park      Thongsbridge C &amp; BC '

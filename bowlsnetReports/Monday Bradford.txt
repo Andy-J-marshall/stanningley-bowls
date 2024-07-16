@@ -315,6 +315,7 @@
 ------------------------------------------------------------------------------------------------------
 7:00pm  Wibsey             26  126   v.  Crowghyll Park      0   61  
 7:00pm  Hightown            6   89   v.  Asa Briggs 'A'     20  123  
+7:00pm  Shipley Club A     16  109   v.  Spen Victoria 'A'  10   95  
 7:00pm  Idle 'A'            2   70   v.  Tyersal 'A'        24  126  
 7:00pm  Asa Briggs 'B'      8   94   v.  Littlemoor S&amp;SC    18  122  
 ------------------------------------------------------------------------------------------------------
@@ -339,8 +340,8 @@
 Pos  Team               Pl   W   L   For
 ===  =================  ==  ==  ==  ====  
  1.  Tyersal 'A'        13  12   1   260
- 2.  Shipley Club A     12  10   2   232
- 3.  Spen Victoria 'A'  12   9   3   224
+ 2.  Shipley Club A     13  11   2   248
+ 3.  Spen Victoria 'A'  13   9   4   234
  4.  Asa Briggs 'A'     13   8   5   200
  5.  Wibsey             13   8   5   196
  6.  Hightown           13   6   7   173
@@ -2298,6 +2299,18 @@ Darren Goodall       21  Carl Smith         18
         Aggregate:   89        Aggregate:  123
             Games:    1            Games:    5
            Points:    6           Points:   20
+
+Division 1 (Thurston) 7      Mon 15th Jul
+    Shipley Club A         Spen Victoria 'A'
+David Bland          11  Andy Hodgson       21
+Richard Firth        14  Andrew Wood        21
+Ian Jacques          21  Peter Ellis        12
+Matthew Jacques      21  Mark Goodall       14
+Daniel Metcalfe      21  Debi Davis         11
+Stuart Wilson        21  Kevin Wood         16
+        Aggregate:  109        Aggregate:   95
+            Games:    4            Games:    2
+           Points:   16           Points:   10
 
 Division 1 (Thurston) 7      Mon 15th Jul
        Idle 'A'               Tyersal 'A'
