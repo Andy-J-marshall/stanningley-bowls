@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
   forbidOnly: true,
   retries: 2,
   workers: process.env.CI ? 4 : 5,
-  // reporter: 'html',
+  reporter: 'html',
   use: {
     actionTimeout: 0,
     baseURL: 'https://bowlsnet.uk',
