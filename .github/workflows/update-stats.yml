@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: master
+          ref: gh_action_for_stats_update
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -36,9 +36,10 @@ jobs:
           git config --global user.name "SPBC GitHub Action"
       - name: Update stats and deploy
         run: npm run get-stats-and-update
-      - uses: actions/checkout@v4
-        with:
-          ref: update_stats_prod
+        # TODO need this?
+      # - uses: actions/checkout@v4
+      #   with:
+      #     ref: update_stats_prod
       - name: Commit and push
         run: |
           git add bowlsnetReports/*
