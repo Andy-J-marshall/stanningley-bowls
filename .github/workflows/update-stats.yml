@@ -14,10 +14,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          repository: 'update_stats_prod'
+          ref: update_stats_prod
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
