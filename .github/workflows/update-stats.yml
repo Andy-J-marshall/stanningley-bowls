@@ -55,10 +55,15 @@ jobs:
         run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Deploy
-        run: npm run build-deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # TODO error:
+          #           > deploy
+          # > gh-pages -d dist
+          # ProcessError: fatal: could not read Username for 'https://github.com': No such device or address
+
+      # - name: Deploy
+      #   run: npm run build-deploy
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # create-pr:
   #   runs-on: ubuntu-latest
   #   steps:
