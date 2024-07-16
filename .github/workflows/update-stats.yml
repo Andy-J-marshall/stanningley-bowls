@@ -47,13 +47,10 @@ jobs:
           git add src/data/*
           git commit -m 'updated stats'
           git push
-  create-pr:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: gh_action_for_stats_update
-        # TODO what if this exists already?
+      # - uses: actions/checkout@v4
+      #   with:
+      #   ref: gh_action_for_stats_update
+      # TODO what if this exists already?
       - name: Create a PR
         run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
         env:
@@ -62,6 +59,18 @@ jobs:
         run: npm run build-deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # create-pr:
+  #   runs-on: ubuntu-latest
+  #   steps:
+    # TODO need to install vite?
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         ref: gh_action_for_stats_update
+  #       # TODO what if this exists already?
+  #     - name: Create a PR
+  #       run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # TODO build and deploy
       # TODO commit and create PR
