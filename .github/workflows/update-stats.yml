@@ -14,9 +14,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: update_stats_prod
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -36,19 +33,17 @@ jobs:
           git config --global user.name "SPBC GitHub Action"
       - name: Update stats and deploy
         run: npm run get-stats-and-update
-      - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
+      - uses: actions/checkout@v4
         with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 1
-      - name: Commit and create a PR
+          ref: update_stats_prod
+      - name: Commit and push
         run: |
           git add bowlsnetReports/*
           git add src/data/*
           git commit -m 'updated stats'
           git push
-          gh pr create --fill
+      - name: Create a PR
+        run: gh pr create --fill
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
