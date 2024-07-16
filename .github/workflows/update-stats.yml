@@ -12,6 +12,7 @@ on:
     # TODO workflow dispatch not working?
 jobs:
   setup:
+    # splitting up the steps won't work
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
