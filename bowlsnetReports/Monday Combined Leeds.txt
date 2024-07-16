@@ -1,5 +1,5 @@
 <pre style="word-wrap: break-word; white-space: pre-wrap;">=== Leeds &amp; District (Mon. Combined) 2024
-=== League Report (as of Mon 15th Jul)
+=== League Report (as of Tue 16th Jul)
 
 
 === RESULTS: Mon 8th Apr to Mon 9th Sep
@@ -161,18 +161,19 @@
 6:30pm  Meanwood A      23  105   v.  Stanningley     25  116  
 6:30pm  Crossgates BC   30  126   v.  Gildersome      13   75  
 6:30pm  Western Flatts  25  113   v.  Garforth C C    17   82  
+6:30pm  Rothwell BC A   27  120   v.  Harehills       18   90  
 
 
 === Current LEAGUE TABLE
                       Matches    Pnts
 Pos  Team            Pl   W   L   For
 ===  ==============  ==  ==  ==  ====  
- 1.  Whitkirk A      14  10   3   340
-=2.  Crossgates BC   13  10   3   329
-=2.  Harehills       14  10   4   329
- 4.  Garforth C C    14   9   5   329
- 5.  Stanningley     14   9   5   313
- 6.  Rothwell BC A   12  10   2   309
+ 1.  Harehills       15  10   5   347
+ 2.  Whitkirk A      14  10   3   340
+ 3.  Rothwell BC A   13  11   2   336
+ 4.  Crossgates BC   13  10   3   329
+ 5.  Garforth C C    14   9   5   329
+ 6.  Stanningley     14   9   5   313
  7.  Gildersome      14   8   6   294
  8.  New Wortley     15   6   9   293
  9.  New Farnley A   15   3  12   275
@@ -1273,6 +1274,19 @@ Anne Lucas         21  David Bisby         8
 Shirley Barker         Nigel Turner         
       Aggregate:  113        Aggregate:   82
          Points:   25           Points:   17
+
+                           Mon 15th Jul
+    Rothwell BC A            Harehills
+Mick Goodhall      21  Laura Love         20
+Michael Hill       21  Jade Kerry          6
+John Wyard         16  Peter Simmons      21
+Matthew Turner     21  David Tinker       14
+Ellis Owen         21  David Smith         8
+Katie Turner           Sharon Kerry         
+Gary Dennison      20  Raymond Swallow    21
+Nicola Pearson         Nigel Rawlings       
+      Aggregate:  120        Aggregate:   90
+         Points:   27           Points:   18
 
 
 </pre>
