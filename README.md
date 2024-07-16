@@ -58,6 +58,15 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
   - Save the Excel file
   - Run `npm run update-stats`
 
+You can also set up a Cron scheduled job:
+- run `crontab -e` from your terminal
+- Add the below, replacing the path to the repo and the PATH value e.g. this runs at 10.15am and 10.15pm most days during the bowls season.
+
+```
+PATH=[insert path here]
+15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-deploy
+```
+
 ## Update list of players
 
 If a new player joins or a team is entered into a new league, you'll need to update the details in `teamDetails.py`.
