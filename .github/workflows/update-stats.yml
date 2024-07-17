@@ -5,9 +5,9 @@
 name: Update stats
 on:
   schedule:
-    # Runs every day from April 1st to September 30th at 22:15
+    # Runs every day from April 1st to September 30th at 22:15 UTC
     # TODO remove time of 14:15
-    - cron: '15 14,22 1-30 4-9 *'
+    - cron: '15 14,21 1-30 4-9 *'
   workflow_dispatch:
 jobs:
   Update-Stats:
