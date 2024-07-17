@@ -335,13 +335,18 @@
 -----------------------------------------------------------------------------------------------------------
  Time           Wed 17th Jul                  Division 1 (Ed Foster)                      
 -----------------------------------------------------------------------------------------------------------
+1:30pm  Heckmondwike         16   96   v.  Pudsey 'A'           10   86  
+1:30pm  Wyke                 12  111   v.  Asa Briggs 'A'       14  114  
 1:30pm  Clayton 'A'          10   94   v.  Wibsey 'A'           16  106  
+1:30pm  Eccleshill 'A'       17  109   v.  Queensbury 'A'        9   90  
+1:30pm  Littlemoor S&amp;SC 'A'  21  124   v.  Hove Edge             5   88  
 -----------------------------------------------------------------------------------------------------------
  Time           Wed 17th Jul               Division 2 (Sheila Johnson)                    
 -----------------------------------------------------------------------------------------------------------
 1:30pm  Crowghyll Park       20  114   v.  Eccleshill 'B'        6   74  
 1:30pm  Queensbury 'B'       14  102   v.  Drighlington         12   96  
 1:30pm  Asa Briggs 'B'       20  105   v.  Brackenhill           6   69  
+1:30pm  New Greengates       10   94   v.  Oakenshaw 'A'        16  110  
 -----------------------------------------------------------------------------------------------------------
  Time           Wed 17th Jul                Division 3 (Peter Gilroy)                     
 -----------------------------------------------------------------------------------------------------------
@@ -354,17 +359,17 @@
                            Matches    Pnts
 Pos  Team                 Pl   W   L   For
 ===  ===================  ==  ==  ==  ====  
- 1.  Pudsey 'A'           10   9   1   181
- 2.  Wibsey 'A'           12  10   2   178
- 3.  Heckmondwike         10   7   3   163
- 4.  Littlemoor S&amp;SC 'A'  11   7   3   150
- 5.  Littlemoor S&amp;SC 'B'  11   5   4   148
- 6.  Eccleshill 'A'       11   5   6   148
- 7.  Hove Edge            11   3   8   136
- 8.  Clayton 'A'          10   3   6   120
- 9.  Queensbury 'A'       11   2   8   118
-10.  Asa Briggs 'A'       10   3   6   109
-11.  Wyke                 11   2   9    83
+ 1.  Pudsey 'A'           11   9   2   191
+ 2.  Heckmondwike         11   8   3   179
+ 3.  Wibsey 'A'           12  10   2   178
+ 4.  Littlemoor S&amp;SC 'A'  12   8   3   171
+ 5.  Eccleshill 'A'       12   6   6   165
+ 6.  Littlemoor S&amp;SC 'B'  11   5   4   148
+ 7.  Hove Edge            12   3   9   141
+ 8.  Queensbury 'A'       12   2   9   127
+ 9.  Asa Briggs 'A'       11   4   6   123
+10.  Clayton 'A'          10   3   6   120
+11.  Wyke                 12   2  10    95
 
 === Division 2 (Sheila Johnson)
                            Matches    Pnts
@@ -373,13 +378,13 @@ Pos  Team                 Pl   W   L   For
  1.  Crowghyll Park       12  10   2   207
  2.  Drighlington         12   8   4   199
  3.  West Bradford 'A'    11   9   2   192
- 4.  Asa Briggs 'B'       12   8   4   166
- 5.  Oakenshaw 'A'        11   7   4   164
+ 4.  Oakenshaw 'A'        12   8   4   180
+ 5.  Asa Briggs 'B'       12   8   4   166
  6.  Queensbury 'B'       12   6   6   160
  7.  Eccleshill 'B'       12   5   6   160
  8.  Pudsey 'B'           11   4   7   135
  9.  Brackenhill          12   3   9   100
-10.  New Greengates       10   2   8    90
+10.  New Greengates       11   2   9   100
 11.  Bowling Park         11   0  10    65
 
 === Division 3 (Peter Gilroy)
@@ -2525,6 +2530,30 @@ Alan Naylor        21  Amy Walsh           9
          Points:   21           Points:    5
 
 Division 1 (Ed Foster      Wed 17th Jul
+    Heckmondwike            Pudsey 'A'
+Darren Goodall     21  Melissa Morris      9
+Eddie Gilbert      21  Jonathan Orbell    11
+Gerald Bromley     21  Steve Emmett       11
+Jacob Hatfield-Goodall                                                                                                                                                                                                                                                             21  Tom Morris         13
+Roy Carter          8  Pam Lindley        21
+Gareth Harwood      4  Andrew Sykes       21
+      Aggregate:   96        Aggregate:   86
+          Games:    4            Games:    2
+         Points:   16           Points:   10
+
+Division 1 (Ed Foster      Wed 17th Jul
+        Wyke              Asa Briggs 'A'
+Malcolm Park       15  Kevin Burrage      21
+Vincent Kerr       21  Kath Sansom        17
+Colin White        21  Steve Fleming      15
+Stephen Cain       21  David Trudgill     19
+Richard Kerr       17  Paula Graham       21
+Colin Fallows      16  Arthur Schofield   21
+      Aggregate:  111        Aggregate:  114
+          Games:    3            Games:    3
+         Points:   12           Points:   14
+
+Division 1 (Ed Foster      Wed 17th Jul
      Clayton 'A'            Wibsey 'A'
 Chris Wilson       21  Tasawar Hussain     7
 Paul Gill          21  Peter Crowther     15
@@ -2535,6 +2564,30 @@ Alan Peel          20  Alison Stocks      21
       Aggregate:   94        Aggregate:  106
           Games:    2            Games:    4
          Points:   10           Points:   16
+
+Division 1 (Ed Foster      Wed 17th Jul
+   Eccleshill 'A'         Queensbury 'A'
+John Griffin       14  Irene Bulman       21
+Mick Angus         21  Dennis Robinson    13
+Peter Jefferson    21  David Clough       18
+Pauline Gilroy     21  Michael Clare      15
+Ken Wilson         11  David Smalley      21
+Mark Reynolds      21  Margaret Lee        2
+      Aggregate:  109        Aggregate:   90
+          Games:    4            Games:    2
+         Points:   17           Points:    9
+
+Division 1 (Ed Foster      Wed 17th Jul
+ Littlemoor S&amp;SC 'A'         Hove Edge
+Glenn Miller       21  Jim Warne          13
+Kath Mazurke       21  Steve Rothwell     13
+Jim Moorin         21  Christine Barker   12
+Alan Mazurke       19  Nigel Firth        21
+John Armitage      21  Richard Hopley     17
+Angela Carter      21  Peter Barstow      12
+      Aggregate:  124        Aggregate:   88
+          Games:    5            Games:    1
+         Points:   21           Points:    5
 
 Division 2 (Sheila Jo      Wed 17th Jul
    Crowghyll Park         Eccleshill 'B'
@@ -2571,6 +2624,18 @@ Alan Marsden       21  Gordon McLennon     4
       Aggregate:  105        Aggregate:   69
           Games:    4            Games:    2
          Points:   20           Points:    6
+
+Division 2 (Sheila Jo      Wed 17th Jul
+   New Greengates          Oakenshaw 'A'
+Derek Parker        6  Tony Smith         21
+Craig Bentley      21  John Garside       12
+Allan Smith        11  Jim Gomersal       21
+Alan Wright        21  Richard Stewart    18
+Vince Bussingham   21  Jason Greenwood    17
+Chris Burnett      14  Ian Gomersal       21
+      Aggregate:   94        Aggregate:  110
+          Games:    3            Games:    3
+         Points:   10           Points:   16
 
 Division 3 (Peter Gil      Wed 17th Jul
      Wibsey 'C'             Clayton 'B'
