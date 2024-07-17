@@ -30,6 +30,12 @@ Run the following:
 - `npm run deploy`
 - Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain
 
+## Pipelines
+There are several GitHub Action jobs that run. These can be found in `/.github/workflows`.
+* `deploy-master.yml` - this deploys to prod whenever there is a push to master
+* `run-ui-tests.yml` - this runs the UI tests against prod whenever there is a push to master or a PR is opened/changed
+* `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
+
 ## Maintenance
 
 Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
@@ -45,7 +51,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
 
 - To generate them using Playwright:
   - Run `npm run get-stats-and-update` - this will use Playwright to generate text reports and then run the scripts to update the stats JSON files
-  - Advanced: You can also get, update, commit and deploy the stats by running `npm run get-stats-update-deploy`. You may want to use the more manual steps first to check the data before deploying.
+  - Advanced: You can also get, update and commit the stats, then create a PR, by running `npm run get-stats-update-pr`. Once the PR is merged it should automatically deploy master to prod.
     - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
@@ -64,7 +70,7 @@ You can also set up a Cron scheduled job:
 
 ```
 PATH=[insert path here]
-15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-deploy
+15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-pr
 ```
 
 ## Update list of players
@@ -84,6 +90,7 @@ If a player plays for another team on a different day, enter them into the `trai
 JSON file will be created: `src/data/bowlsStats{year}.json`.
 
 # How to use this repo as a template for other clubs
+Change the Git credentials in the GitHub action `update-stats.yml`.
 
 Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 
