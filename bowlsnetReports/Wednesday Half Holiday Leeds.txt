@@ -379,6 +379,7 @@
  Time              Wed 17th Jul                               Div 1                                             
 -------------------------------------------------------------------------------------------------------------------------
 1:30pm  Colton                     19   89   v.  Cross Flatts A           25  109                       
+1:30pm  Whitkirk BC A              27  119   v.  Meanwood Park A          20   95                       
 1:30pm  Holbeck Moor               27  121   v.  South Leeds Cons A       19   95                       
 -------------------------------------------------------------------------------------------------------------------------
  Time              Wed 17th Jul                               Div 2                                             
@@ -409,12 +410,12 @@
 Pos  Team                Pl   W  L   For
 ===  ==================  ==  ==  =  ====  
  1.  Rothwell BC B       10   7  3   235
- 2.  Cross Flatts A       9   5  4   204
- 3.  Meanwood Park A      8   5  2   196
- 4.  Holbeck Moor         9   4  4   193
- 5.  Colton               9   2  5   186
- 6.  Rothwell BC A        7   5  2   184
- 7.  Whitkirk BC A        9   4  5   182
+ 2.  Meanwood Park A      9   5  3   216
+ 3.  Whitkirk BC A       10   5  5   209
+ 4.  Cross Flatts A       9   5  4   204
+ 5.  Holbeck Moor         9   4  4   193
+ 6.  Colton               9   2  5   186
+ 7.  Rothwell BC A        7   5  2   184
  8.  South Leeds Cons A   9   1  8   164
 
 === Div 2
@@ -2526,6 +2527,17 @@ Andrew Stocks        6  Mario Biancardo    21
 Tony Ward           18  Jason Potter       21
        Aggregate:   89        Aggregate:  109
           Points:   19           Points:   25
+
+        Div 1               Wed 17th Jul
+    Whitkirk BC A          Meanwood Park A
+Barry Tobin         21  Steve Portman      20
+Chloe Jackson       21  Tina Howard        16
+Phil Cox            21  Jeff Blackburn      6
+Graham Scholes      21  Peter Whipp        11
+Graham Hodder       20  Karen Portman      21
+Philip Hatch        15  Ian Howard         21
+       Aggregate:  119        Aggregate:   95
+          Points:   27           Points:   20
 
         Div 1               Wed 17th Jul
      Holbeck Moor        South Leeds Cons A
