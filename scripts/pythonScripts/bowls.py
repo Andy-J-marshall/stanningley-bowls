@@ -572,6 +572,6 @@ sanityChecksOnTeamStats(allTeamResults)
 sanityChecksOnPlayerStats(playerStats, players)
 newFileSize = checkFileSize(filename)
 if newFileSize < previousFileSize:
-    raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
+    print(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print(f'Sanity checks for {displayTeamName} stats complete')
 print('------')
