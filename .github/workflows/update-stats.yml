@@ -1,12 +1,10 @@
 # TODO why do the scripts fail the first time?
-# TODO check update stats runs at 3pm
 
 name: Update stats
 on:
   schedule:
     # Runs every day from April 1st to September 30th at 22:00 UTC
-    # TODO remove time of 14
-    - cron: '0 14,21 1-30 4-9 *'
+    - cron: '0 21 1-30 4-9 *'
   workflow_dispatch:
 jobs:
   Update-Stats:
