@@ -26,14 +26,14 @@ jobs:
           npm ci
           npx playwright install-deps
           npx playwright install
-      - name: Update stats and deploy
-        run: npm run get-stats-and-update
       - name: Configure Git
         run: | 
           git config --global user.email "stanningleybowlsclub@gmail.com"
           git config --global user.name "SPBC GitHub Action"
       - name: Merge from master
         run: git merge master
+      - name: Update stats and deploy
+        run: npm run get-stats-and-update
       - name: Commit and push
         run: |
           git add bowlsnetReports/*
