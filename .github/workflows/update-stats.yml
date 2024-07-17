@@ -1,6 +1,6 @@
 # TODO need to tidy up npm run scripts
 # TODO why do the scripts fail the first time?
-# TODO update readme
+# TODO spen and bradford saturday reports are being truncated!
 
 name: Update stats
 on:
@@ -46,6 +46,7 @@ jobs:
           git add src/data/*
           git commit -m 'updated stats'
           git push
+      # TODO don't fail the job if this fails due to it already existing
       - name: Create a PR
         run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
         env:

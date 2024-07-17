@@ -30,6 +30,12 @@ Run the following:
 - `npm run deploy`
 - Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain
 
+## Pipelines
+There are several GitHub Action jobs that run. These can be found in `/.github/workflows`.
+* `deploy-master.yml` - this deploys to prod whenever there is a push to master
+* `run-ui-tests.yml` - this runs the UI tests against prod whenever there is a push to master or a PR is opened/changed
+* `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
+
 ## Maintenance
 
 Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
