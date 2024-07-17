@@ -385,15 +385,19 @@
  Time              Wed 17th Jul                               Div 2                                             
 -------------------------------------------------------------------------------------------------------------------------
 1:30pm  Harehills Park             20   97   v.  Churwell Park            19   87                       
+1:30pm  Stanningley Park           29  124   v.  Grove Road A             10   60                       
 1:30pm  Gildersome A               24  112   v.  Moor Allerton A          24  112                       
+1:30pm  Pudsey Park A              25  113   v.  Burley Park              22  101                       
 -------------------------------------------------------------------------------------------------------------------------
  Time              Wed 17th Jul                               Div 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 1:30pm  Moor Allerton B            25  110   v.  Chapel Allerton          22  100                       
 1:30pm  Scatcherd Park A           30  126   v.  Whitkirk BC B             6   40                       
+1:30pm  Fearnville                 26  116   v.  Methley                  22  103                       
 -------------------------------------------------------------------------------------------------------------------------
  Time              Wed 17th Jul                               Div 4                                             
 -------------------------------------------------------------------------------------------------------------------------
+1:30pm  Potternewton               23  107   v.  Scatcherd Park B         18   89                       
 1:30pm  South Leeds Cons B         24  110   v.  Bramley Park             19   88                       
 1:30pm  New Wortley A              27  118   v.  Cranmore                 17   84                       
 1:30pm  Rothwell Park              28  120   v.  Pudsey Park B            12   62                       
@@ -422,15 +426,15 @@ Pos  Team                Pl   W  L   For
                           Matches   Pnts
 Pos  Team                Pl   W  L   For
 ===  ==================  ==  ==  =  ====  
- 1.  Stanningley Park    11   9  2   282
+ 1.  Stanningley Park    12  10  2   311
  2.  Moor Allerton A     11   9  1   279
  3.  Gildersome A        12   6  5   269
  4.  Churwell Park       11   5  6   249
- 5.  Grove Road A        10   2  6   217
- 6.  Harehills Park      11   5  6   216
- 7.  Pudsey Park A       10   3  6   213
- 8.  Meanwood Park B     10   4  5   205
- 9.  Burley Park         10   2  8   202
+ 5.  Pudsey Park A       11   4  6   238
+ 6.  Grove Road A        11   2  7   227
+ 7.  Burley Park         11   2  9   224
+ 8.  Harehills Park      11   5  6   216
+ 9.  Meanwood Park B     10   4  5   205
 
 === Div 3
                           Matches   Pnts
@@ -440,8 +444,8 @@ Pos  Team                Pl   W  L   For
  2.  Scatcherd Park A    11   9  1   267
  3.  Whitkirk BC B       11   6  4   242
  4.  Moor Allerton B     11   5  6   242
- 5.  Fearnville           9   5  4   187
- 6.  Methley              8   3  5   166
+ 5.  Fearnville          10   6  4   213
+ 6.  Methley              9   3  6   188
  7.  Middleton Comm A     8   1  5   155
  8.  Gildersome B         9   0  9   128
 
@@ -451,13 +455,13 @@ Pos  Team                Pl   W  L   For
 ===  ==================  ==  ==  =  ====  
  1.  Rothwell Park       11  11  0   296
  2.  South Leeds Cons B  12   7  5   285
- 3.  New Wortley A       12   6  6   261
- 4.  Cranmore            12   6  6   259
- 5.  Potternewton        11   8  3   241
+ 3.  Potternewton        12   9  3   264
+ 4.  New Wortley A       12   6  6   261
+ 5.  Cranmore            12   6  6   259
  6.  Bramley Park        11   5  6   234
  7.  Pudsey Park B       11   3  8   197
- 8.  Grove Road B        10   2  8   187
- 9.  Scatcherd Park B    10   2  8   175
+ 8.  Scatcherd Park B    11   2  9   193
+ 9.  Grove Road B        10   2  8   187
 
 
 === FULL RESULTS: Wed 10th Apr to Wed 11th Sep
@@ -2562,6 +2566,17 @@ David Clarke         8  Stephen Briggs     21
           Points:   20           Points:   19
 
         Div 2               Wed 17th Jul
+   Stanningley Park         Grove Road A
+Alyssa Randell      21  Lynne Mattison      4
+Joey Broadbent      19  Tony Boyes         21
+David Eaton         21  Martin Murdoch     12
+Andy Waller         21  Peter Allanson      4
+Steve Gardner       21  Ray Mattison        5
+Malvin Miller       21  John West          14
+       Aggregate:  124        Aggregate:   60
+          Points:   29           Points:   10
+
+        Div 2               Wed 17th Jul
      Gildersome A          Moor Allerton A
 Kevin Smales        21  Keith Harbage      12
 David Norton        21  Martin Kaitcer     17
@@ -2571,6 +2586,17 @@ Harvey Lockwood     17  Steven Jones       21
 Linda Gaunt         12  John Alper         21
        Aggregate:  112        Aggregate:  112
           Points:   24           Points:   24
+
+        Div 2               Wed 17th Jul
+    Pudsey Park A            Burley Park
+Brian Stevens       13  Clifford Brogie    21
+Elaine Hill         21  Michael Howsham    15
+Calum Birkin        18  John Illingworth   21
+Carl Birkin         21  Malcolm Dacre      17
+Dennis Walters      21  Barry Palmer        6
+Janet Pearson       19  Brian Fish         21
+       Aggregate:  113        Aggregate:  101
+          Points:   25           Points:   22
 
         Div 3               Wed 17th Jul
    Moor Allerton B         Chapel Allerton
@@ -2593,6 +2619,28 @@ Jeff Holt           21  Hannah Risley       7
 Ray Ball            21  M Hebden           10
        Aggregate:  126        Aggregate:   40
           Points:   30           Points:    6
+
+        Div 3               Wed 17th Jul
+      Fearnville               Methley
+Helen Simms         14  Stuart Marsh       21
+Tom Ingram          18  Roger Boyes        21
+Paul Foster         21  Molly Depledge     20
+Mary Black          21  Keith Render       10
+Madge Cass          21  Jeff Baggaley      15
+Stuart Poulter      21  David Taylor       16
+       Aggregate:  116        Aggregate:  103
+          Points:   26           Points:   22
+
+        Div 4               Wed 17th Jul
+     Potternewton         Scatcherd Park B
+Gail Schofield      21  Roy Mitchell       12
+Valerie Bush         9  Michael Geary      21
+Phillip Schofield   21  Terry Dillon       14
+Alan Smith          14  Keith Kincaid      21
+Dennis Cole         21  Chris Roy Stuart   11
+David Curland       21  Kevin Chadwick     10
+       Aggregate:  107        Aggregate:   89
+          Points:   23           Points:   18
 
         Div 4               Wed 17th Jul
   South Leeds Cons B        Bramley Park
