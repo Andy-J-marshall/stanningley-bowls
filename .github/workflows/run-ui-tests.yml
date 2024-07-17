@@ -3,9 +3,11 @@ on:
   push:
     branches: ['master']
   pull_request:
-    branches: ['master']
+      types:
+        - opened
+        - synchronize
 jobs:
-  Explore-GitHub-Actions:
+  Run-Tests:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
