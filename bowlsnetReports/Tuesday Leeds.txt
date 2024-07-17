@@ -326,6 +326,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------
  Time             Tue 16th Jul                            Division 3                                                 
 -----------------------------------------------------------------------------------------------------------------------------------
+6:45pm  Gildersome B             26  126   v.  Middleton Comm            34  151                       
 6:45pm  Garforth C C             31  137   v.  Pudsey Park A             24  118                       
 6:45pm  Pudsey Park B            22  112   v.  Manston Pk                35  153                       
 6:45pm  Colton                   40  168   v.  Meanwood B                19  104                       
@@ -370,11 +371,11 @@ Pos  Team               Pl   W   L   For
  2.  Colton             13   7   6   384
  3.  Moor Allerton      13   7   6   373
  4.  Manston Pk         12   8   4   372
- 5.  Pudsey Park A      13   2  11   333
- 6.  Pudsey Park B      13   2  10   319
- 7.  Meanwood B         11   6   5   308
- 8.  Middleton Comm     10   7   3   304
- 9.  Gildersome B       11   4   6   289
+ 5.  Middleton Comm     11   8   3   338
+ 6.  Pudsey Park A      13   2  11   333
+ 7.  Pudsey Park B      13   2  10   319
+ 8.  Gildersome B       12   4   7   315
+ 9.  Meanwood B         11   6   5   308
 10.  Garforth C C       11   4   7   280
 
 
@@ -2731,6 +2732,19 @@ Geoff Warbuton     20  Michael Gore        21
 Steve Brown        20  Mark Rastrick       21
       Aggregate:  145         Aggregate:  153
          Points:   31            Points:   34
+
+     Division 3             Tue 16th Jul
+    Gildersome B           Middleton Comm
+David Holmes       21  Malcolm Cameron     11
+Neil Schofield     21  Christine Glyn      17
+Stuart Wardlaw      6  Mick Hall           21
+Kay Stewart        14  Barbara Ragan       21
+Alison Lockwood    15  Mark Aspin          21
+Glenda Holmes      16  Malcolm Hallas      21
+David Charlesworth 21  Les Oddy            18
+Tony Morris        12  Darren Cookson      21
+      Aggregate:  126         Aggregate:  151
+         Points:   26            Points:   34
 
      Division 3             Tue 16th Jul
     Garforth C C           Pudsey Park A
