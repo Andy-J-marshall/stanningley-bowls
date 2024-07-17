@@ -346,11 +346,13 @@
 1:30pm  Crowghyll Park       20  114   v.  Eccleshill 'B'        6   74  
 1:30pm  Queensbury 'B'       14  102   v.  Drighlington         12   96  
 1:30pm  Asa Briggs 'B'       20  105   v.  Brackenhill           6   69  
+1:30pm  Pudsey 'B'           14  110   v.  West Bradford 'A'    12  107  
 1:30pm  New Greengates       10   94   v.  Oakenshaw 'A'        16  110  
 -----------------------------------------------------------------------------------------------------------
  Time           Wed 17th Jul                Division 3 (Peter Gilroy)                     
 -----------------------------------------------------------------------------------------------------------
 1:30pm  Wibsey 'C'            6   86   v.  Clayton 'B'          20  123  
+1:30pm  Brighouse Sports     26  126   v.  Wibsey 'B'            0   45  
 1:30pm  Tyersal               7   79   v.  Thornton             19  112  
 
 
@@ -376,13 +378,13 @@ Pos  Team                 Pl   W   L   For
 Pos  Team                 Pl   W   L   For
 ===  ===================  ==  ==  ==  ====  
  1.  Crowghyll Park       12  10   2   207
- 2.  Drighlington         12   8   4   199
- 3.  West Bradford 'A'    11   9   2   192
+ 2.  West Bradford 'A'    12   9   3   204
+ 3.  Drighlington         12   8   4   199
  4.  Oakenshaw 'A'        12   8   4   180
  5.  Asa Briggs 'B'       12   8   4   166
  6.  Queensbury 'B'       12   6   6   160
  7.  Eccleshill 'B'       12   5   6   160
- 8.  Pudsey 'B'           11   4   7   135
+ 8.  Pudsey 'B'           12   5   7   149
  9.  Brackenhill          12   3   9   100
 10.  New Greengates       11   2   9   100
 11.  Bowling Park         11   0  10    65
@@ -391,7 +393,7 @@ Pos  Team                 Pl   W   L   For
                            Matches    Pnts
 Pos  Team                 Pl   W   L   For
 ===  ===================  ==  ==  ==  ====  
- 1.  Brighouse Sports     11  11   0   267
+ 1.  Brighouse Sports     12  12   0   293
  2.  Clayton 'B'          12  10   2   194
  3.  Bradford Moor        11   6   5   161
  4.  Royd House           11   5   5   144
@@ -401,7 +403,7 @@ Pos  Team                 Pl   W   L   For
  8.  West Bradford 'B'    10   5   5   136
  9.  Oakenshaw 'B'        11   4   7   126
 10.  Tyersal              11   1   9    76
-11.  Wibsey 'B'           11   0  11    70
+11.  Wibsey 'B'           12   0  12    70
 
 
 === FULL RESULTS: Wed 17th Apr to Wed 25th Sep
@@ -2592,11 +2594,11 @@ Angela Carter      21  Peter Barstow      12
 Division 2 (Sheila Jo      Wed 17th Jul
    Crowghyll Park         Eccleshill 'B'
 Pam Robinson       14  Myra Humpleby      21
-Peter Mitchell     16  *A.N.Other*        21
+Peter Mitchell     16  Brian Barker       21
 Lek Fletcher       21  Mary Nellist        3
 Andy Matthews      21  Sue Butler          8
 Eddie Prince       21  Jan Smith          12
-Phil Robinson      21  Binder Ken          9
+Phil Robinson      21  Ken Binder          9
       Aggregate:  114        Aggregate:   74
           Games:    4            Games:    2
          Points:   20           Points:    6
@@ -2626,6 +2628,18 @@ Alan Marsden       21  Gordon McLennon     4
          Points:   20           Points:    6
 
 Division 2 (Sheila Jo      Wed 17th Jul
+     Pudsey 'B'          West Bradford 'A'
+Colin Dibb         21  Malcolm Crotty     17
+Granville Thornton 15  John Shoesmith     21
+Lynn Noonan        21  Steven Bussingham   9
+Geoff Simpson      12  Eddie Pells        21
+David Elliott      20  Stuart Graham      21
+Janice Connaleigh  21  Mark Woolner       18
+      Aggregate:  110        Aggregate:  107
+          Games:    3            Games:    3
+         Points:   14           Points:   12
+
+Division 2 (Sheila Jo      Wed 17th Jul
    New Greengates          Oakenshaw 'A'
 Derek Parker        6  Tony Smith         21
 Craig Bentley      21  John Garside       12
@@ -2648,6 +2662,18 @@ John May           21  Bob Armitage       19
       Aggregate:   86        Aggregate:  123
           Games:    2            Games:    4
          Points:    6           Points:   20
+
+Division 3 (Peter Gil      Wed 17th Jul
+  Brighouse Sports          Wibsey 'B'
+Peter Owen         21  Michael Oliver      7
+David Marsh        21  Daryl Fieldhouse   15
+Steven Bedford     21  Ray Clapham        10
+Ian Moxon          21  Ann Daniels         3
+Stuart Fletcher    21  Michael Black      10
+Tony Naylor        21  *No Player*         0
+      Aggregate:  126        Aggregate:   45
+          Games:    6            Games:    0
+         Points:   26           Points:    0
 
 Division 3 (Peter Gil      Wed 17th Jul
        Tyersal               Thornton

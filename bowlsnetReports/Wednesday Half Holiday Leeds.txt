@@ -381,6 +381,7 @@
 1:30pm  Colton                     19   89   v.  Cross Flatts A           25  109                       
 1:30pm  Whitkirk BC A              27  119   v.  Meanwood Park A          20   95                       
 1:30pm  Holbeck Moor               27  121   v.  South Leeds Cons A       19   95                       
+1:30pm  Rothwell BC A              17   91   v.  Rothwell BC B            28  121                       
 -------------------------------------------------------------------------------------------------------------------------
  Time              Wed 17th Jul                               Div 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -413,13 +414,13 @@
                           Matches   Pnts
 Pos  Team                Pl   W  L   For
 ===  ==================  ==  ==  =  ====  
- 1.  Rothwell BC B       10   7  3   235
+ 1.  Rothwell BC B       11   8  3   263
  2.  Meanwood Park A      9   5  3   216
  3.  Whitkirk BC A       10   5  5   209
  4.  Cross Flatts A       9   5  4   204
- 5.  Holbeck Moor         9   4  4   193
- 6.  Colton               9   2  5   186
- 7.  Rothwell BC A        7   5  2   184
+ 5.  Rothwell BC A        8   5  3   201
+ 6.  Holbeck Moor         9   4  4   193
+ 7.  Colton               9   2  5   186
  8.  South Leeds Cons A   9   1  8   164
 
 === Div 2
@@ -2553,6 +2554,17 @@ John Binns          21  Bob Emerson        12
 Michael Stott       21  Brenda Moscrop     16
        Aggregate:  121        Aggregate:   95
           Points:   27           Points:   19
+
+        Div 1               Wed 17th Jul
+    Rothwell BC A           Rothwell BC B
+Thomas Kaye         13  Matthew Turner     21
+David Kaye           8  Mick Goodhall      21
+Geoff Newbould      21  Peter Burrows      16
+Alan Box            13  Lyn Dye            21
+John Wyard          19  Mark Hopps         21
+June Johnson        17  Lyn Best           21
+       Aggregate:   91        Aggregate:  121
+          Points:   17           Points:   28
 
         Div 2               Wed 17th Jul
     Harehills Park          Churwell Park

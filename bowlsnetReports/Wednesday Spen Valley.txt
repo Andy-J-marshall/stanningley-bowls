@@ -692,6 +692,38 @@
 7:00pm  Holbeck                  3  135   v.  Farsley                  8  138  From Wed 10th Jul
 
 ------------------------------------------------------------------------------------------------------------
+ Time            Wed 17th Jul                             Premier                            
+------------------------------------------------------------------------------------------------------------
+7:00pm  Pudsey BC - A            9  162   v.  Whitkirk                 1  114  
+7:00pm  Swillington              9  167   v.  Shipley - A              1  124  
+7:00pm  Littlemoor - A           9  160   v.  Guiseley                 1  101  
+7:00pm  Heckmondwike - A         8  159   v.  Castleford Town          2  123  
+------------------------------------------------------------------------------------------------------------
+ Time            Wed 17th Jul                           Division 1                           
+------------------------------------------------------------------------------------------------------------
+7:00pm  Spen Victoria - A        7  150   v.  Pudsey BC - B            3  130  
+7:00pm  Harold Club - A          6  148   v.  Mirfield Old Bank - A    4  145  
+------------------------------------------------------------------------------------------------------------
+ Time            Wed 17th Jul                           Division 2                           
+------------------------------------------------------------------------------------------------------------
+7:00pm  Farsley                  8  154   v.  Scatcherd Park           2  109  
+7:00pm  New Farnley - A          9  154   v.  Cleckheaton Sports - B   1  113  
+7:00pm  Mirfield Old Bank - B    6  142   v.  Holbeck                  4  136  
+------------------------------------------------------------------------------------------------------------
+ Time            Wed 17th Jul                           Division 3                           
+------------------------------------------------------------------------------------------------------------
+7:00pm  Royds Park - A           1  119   v.  Royds Park - B          10  163  
+7:00pm  Cleckheaton Moorend      6  148   v.  Cleckheaton Sports - C   4  138  
+7:00pm  Brighouse Sports - C     9  167   v.  Spen Victoria - C        1  130  
+------------------------------------------------------------------------------------------------------------
+ Time            Wed 17th Jul                           Division 4                           
+------------------------------------------------------------------------------------------------------------
+7:00pm  Harold Club - C          6  135   v.  Spen Victoria - D        4  126  
+7:00pm  Gildersome - B           2  123   v.  Cleckheaton Sports - D   9  155  
+7:00pm  Cleckheaton Sports - F   1  113   v.  Rastrick - B            10  157  
+7:00pm  Eccleshill - B           2  117   v.  Heckmondwike - C         9  143  
+
+------------------------------------------------------------------------------------------------------------
  Time            Wed 14th Aug                           Division 3                           
 ------------------------------------------------------------------------------------------------------------
         Brighouse Sports - C              v.  Rastrick - A                     To Wed 12th Jun
@@ -702,59 +734,59 @@
                               Matches    Pnts
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
- 1.  Crossgates              12   9   2    86
- 2.  Littlemoor - A          12   9   3    80
- 3.  Pudsey BC - A           12   5   6    65
- 4.  Eccleshill - A          12   7   5    64
- 5.  Shipley - A             12   5   7    62
- 6.  Heckmondwike - A        12   6   6    59
- 7.  Whitkirk                12   5   7    54
- 8.  Guiseley                12   4   8    52
- 9.  Castleford Town         12   6   6    47
-10.  Swillington             12   3   9    44
+ 1.  Littlemoor - A          13  10   3    89
+ 2.  Crossgates              12   9   2    86
+ 3.  Pudsey BC - A           13   6   6    74
+ 4.  Heckmondwike - A        13   7   6    67
+ 5.  Eccleshill - A          12   7   5    64
+ 6.  Shipley - A             13   5   8    63
+ 7.  Whitkirk                13   5   8    55
+=8.  Guiseley                13   4   9    53
+=8.  Swillington             13   4   9    53
+10.  Castleford Town         13   6   7    49
 
 === Division 1
                               Matches    Pnts
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
- 1.  Spen Victoria - A       12  11   1    93
+ 1.  Spen Victoria - A       13  12   1   100
  2.  Brighouse Sports - A    12   9   3    83
  3.  Littlemoor - B          12   7   4    69
  4.  Chapel Street           12   6   5    68
- 5.  Cleckheaton Sports - A  12   6   6    63
- 6.  Pudsey BC - B           12   5   5    61
- 7.  Harold Club - A         12   4   7    52
+ 5.  Pudsey BC - B           13   5   6    64
+ 6.  Cleckheaton Sports - A  12   6   6    63
+ 7.  Harold Club - A         13   5   7    58
  8.  Brighouse Sports - B    12   4   7    52
- 9.  Mirfield Old Bank - A   12   3   7    45
+ 9.  Mirfield Old Bank - A   13   3   8    49
 10.  Hanging Heaton          12   1  11    27
 
 === Division 2
                               Matches    Pnts
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
- 1.  New Farnley - A         12  10   2    84
- 2.  Spen Victoria - B       12   9   3    84
- 3.  Farsley                 12   8   3    77
+ 1.  New Farnley - A         13  11   2    93
+ 2.  Farsley                 13   9   3    85
+ 3.  Spen Victoria - B       12   9   3    84
  4.  Shipley - B             12   9   3    75
- 5.  Harold Club - B         12   6   6    67
- 6.  Cleckheaton Sports - B  11   6   5    66
+=5.  Cleckheaton Sports - B  12   6   6    67
+=5.  Harold Club - B         12   6   6    67
  7.  Pudsey BC - C           11   5   6    55
- 8.  Mirfield Old Bank - B   12   3   8    40
- 9.  Holbeck                 12   1  10    37
-10.  Scatcherd Park          12   0  11    25
+ 8.  Mirfield Old Bank - B   13   4   8    46
+ 9.  Holbeck                 13   1  11    41
+10.  Scatcherd Park          13   0  12    27
 
 === Division 3
                               Matches    Pnts
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
  1.  Rastrick - A            13  10   3    84
- 2.  New Farnley - B         11   7   4    69
- 3.  Cleckheaton Moorend     12   7   5    66
- 4.  Brighouse Sports - C    13   6   7    65
- 5.  Royds Park - A          11   8   3    64
- 6.  Royds Park - B          12   6   6    60
- 7.  Spen Victoria - C       12   5   7    60
- 8.  Cleckheaton Sports - C  12   5   7    55
+ 2.  Brighouse Sports - C    14   7   7    74
+ 3.  Cleckheaton Moorend     13   8   5    72
+ 4.  Royds Park - B          13   7   6    70
+ 5.  New Farnley - B         11   7   4    69
+ 6.  Royds Park - A          12   8   4    65
+ 7.  Spen Victoria - C       13   5   8    61
+ 8.  Cleckheaton Sports - C  13   5   8    59
  9.  Pudsey BC - D           12   5   7    54
 10.  Heckmondwike - B        12   1  11    39
 
@@ -763,15 +795,15 @@ Pos  Team                    Pl   W   L   For
 Pos  Team                    Pl   W   L   For
 ===  ======================  ==  ==  ==  ====  
  1.  Gildersome - A          14  12   1   107
- 2.  Rastrick - B            13  11   2    94
- 3.  Cleckheaton Sports - F  13   8   4    80
- 4.  Harold Club - C         14   7   6    74
- 5.  Spen Victoria - D       14   7   7    73
- 6.  Heckmondwike - C        14   6   7    72
- 7.  Cleckheaton Sports - D  14   6   7    66
+ 2.  Rastrick - B            14  12   2   104
+ 3.  Cleckheaton Sports - F  14   8   5    81
+ 4.  Heckmondwike - C        15   7   7    81
+ 5.  Harold Club - C         15   8   6    80
+ 6.  Spen Victoria - D       15   7   8    77
+ 7.  Cleckheaton Sports - D  15   7   7    75
  8.  Cleckheaton Sports - E  13   5   8    66
- 9.  Eccleshill - B          14   3   9    54
-10.  Gildersome - B          14   3  10    51
+ 9.  Eccleshill - B          15   3  10    56
+10.  Gildersome - B          15   3  11    53
 11.  Drighlington            13   3  10    45
 
 
@@ -4857,5 +4889,213 @@ James Cuffe        10  Richard Whitaker   21
 Richard Perry      12  Jim Swailes        21
       Aggregate:  135        Aggregate:  138
          Points:    3           Points:    8
+
+       Premier             Wed 17th Jul
+    Pudsey BC - A            Whitkirk
+Alex Edmondson     21  Emma Tobin         19
+Tom Lawrence       21  Thomas Johnson      4
+Mason Lindley      21  Nichole Farrar     19
+Chris Mordue       21  Kristian Walder    14
+Josh Mordue        21  Adam Sharpe        12
+Jonathan Orbell    21  Adam Varley        14
+Ian Shaw           21  Lewis Cooper       11
+Jamie Winterburn   15  Amy Tobin          21
+      Aggregate:  162        Aggregate:  114
+         Points:    9           Points:    1
+
+       Premier             Wed 17th Jul
+     Swillington            Shipley - A
+Nathan Conlon      21  Chris Jacques      15
+Sam Donnelly       21  Chris Bedford      20
+Matthew Littleton  20  Graeme Dytiche     21
+Andrew Morris      21  Matthew Jacques    14
+Scott Normington   21  Craig Fenton       16
+Thomas Scorah      21  Steve Cooper        7
+Dave Smith         21  Richard Firth      19
+David Waldron      21  David Bland        12
+      Aggregate:  167        Aggregate:  124
+         Points:    9           Points:    1
+
+       Premier             Wed 17th Jul
+   Littlemoor - A            Guiseley
+Nathan Dobson      21  Tommy Cater        11
+Lee Wider          21  Andrew Durkin       5
+John Armitage      21  Chris Hight        14
+Kevin Siddle       21  Bob Jeffrey        17
+Craig Hebbard      21  Graham Oliver       5
+Will Bedford       21  Ben Stockdale       8
+Mark Allman        21  Joe Stockdale      20
+Glen Pratt         13  James Teale        21
+      Aggregate:  160        Aggregate:  101
+         Points:    9           Points:    1
+
+       Premier             Wed 17th Jul
+  Heckmondwike - A        Castleford Town
+Dawn Bray          14  Peter Farrar       21
+Sam Beresford      19  Josh Thomas        21
+Charlie Ripley     21  Alwyn Beedel       19
+Darren Goodall     21  Liam Sykes         17
+Jacob Goodall      21  Calum Fennell      15
+Graham Higgins     21  Robert McGuire     15
+Sean Carter        21  Darryl Harrap       8
+Alex Wolfenden     21  Liam Massey         7
+      Aggregate:  159        Aggregate:  123
+         Points:    8           Points:    2
+
+     Division 1            Wed 17th Jul
+  Spen Victoria - A        Pudsey BC - B
+Andrew Wood        16  Steve Morris       21
+Garry Walker       16  David Hilliam      21
+Debi Davis         13  Matthew Leaf       21
+Philip Smith       21  Simon Metcalfe     19
+Mark Goodall       21  Pam Lindley         9
+Chris Ellis        21  Dave Rankin        12
+Mark Ellis         21  Sebastian Mordue   17
+Philip Bryant      21  Wendy Shimbles     10
+      Aggregate:  150        Aggregate:  130
+         Points:    7           Points:    3
+
+     Division 1            Wed 17th Jul
+   Harold Club - A     Mirfield Old Bank - A
+Andy Malone        21  Alan Thompson      11
+Andy Bairstow      16  Tony Green         21
+Nigel Wormald      17  Andrew Mitchell    21
+Thomas Jagger      21  Aiden Fox          14
+Nick Jagger        21  Andrew Sykes       20
+Ian Wilson         21  John Hopkinson     16
+Shaun Godfrey      13  Keith Bissell      21
+Paul Garside       18  Neil Shaw          21
+      Aggregate:  148        Aggregate:  145
+         Points:    6           Points:    4
+
+     Division 2            Wed 17th Jul
+       Farsley            Scatcherd Park
+Stuart Brook       21  N Mark Ellis       14
+Jim Swailes        21  Graham Hainsworth   9
+Richard Whitaker   10  Martin Huxley      21
+Peter Crowther     18  Graham Goodall     21
+Duncan McPhail     21  Stuart Wardlaw      5
+Ian Swinfield      21  Dawn Peters         9
+Peter Scott        21  Steve Briggs       17
+Graham Petty       21  Raymond Ball       13
+      Aggregate:  154        Aggregate:  109
+         Points:    8           Points:    2
+
+     Division 2            Wed 17th Jul
+   New Farnley - A     Cleckheaton Sports - 
+Ian Lynch          21  David Marshall     13
+Paul Jagger        21  Andrew Page        13
+Simon Lavan         7  Josh Walker        21
+Ian Worrall        21  Ian Gatenby         5
+Andrew Thompson    21  Norman Swift       17
+Sophie Worrall     21  Gary Sharp         16
+Paul Wood          21  Reuben Taylor      15
+Ryan Lynch         21  Stephen Archer     13
+      Aggregate:  154        Aggregate:  113
+         Points:    9           Points:    1
+
+     Division 2            Wed 17th Jul
+Mirfield Old Bank - B         Holbeck
+Norman Booth       11  Jason Ream         21
+Terry Sykes        21  Paul Hainsworth    20
+Charlie Sykes       9  Kian Hendry        21
+Joshua Perks       21  Lance Greenwood    11
+Graham Sheard      20  Richard Perry      21
+Mark Morton        21  Ian Wardle         10
+Paul Moon          21  Michaela Wardle    11
+Bryan Ibbetson     18  Kyle Hainsworth    21
+      Aggregate:  142        Aggregate:  136
+         Points:    6           Points:    4
+
+     Division 3            Wed 17th Jul
+   Royds Park - A         Royds Park - B
+Barbara Johnstone  11  Ray Downes         21
+Susan Bentley      17  Rachel Gowan       21
+Gareth Harwood     21  Steve Busz         16
+Harry Parsan       14  Stuart Burton      21
+Robert Hoyle       20  Chris Kennedy      21
+Philip Rann        17  John Greenhalgh    21
+David Nightingale  13  Paul Murphy        21
+David Broadhead     6  David Renshaw      21
+      Aggregate:  119        Aggregate:  163
+         Points:    1           Points:   10
+
+     Division 3            Wed 17th Jul
+ Cleckheaton Moorend   Cleckheaton Sports - 
+Martin Bailey      14  Bradley Throup     21
+Philip Long        21  Helen Seed          8
+Tyler James        21  Chris Bray         16
+David Lloyd        21  Greg Hutchinson    19
+Lawrie Bairstow    17  Matthew Terry      21
+Mick Stewart       16  Alex Green         21
+Lee Collinson      17  David Griffiths    21
+Robert Spink       21  Jack Glazzard      11
+      Aggregate:  148        Aggregate:  138
+         Points:    6           Points:    4
+
+     Division 3            Wed 17th Jul
+Brighouse Sports - C     Spen Victoria - C
+Max Delarrosa      21  Lewis Pember       17
+Dave Scott         20  John Smith         21
+Neal Hopper        21  Michael Griffiths  20
+Corey Fountian     21  Mel Blackburn      13
+Tony Naylor        21  Steve Kemp         15
+Ryan Collins       21  Dave Hutton        19
+Jodie Barraclough  21  Michael Potter     10
+Holly Jenkins      21  Lucas Wood         15
+      Aggregate:  167        Aggregate:  130
+         Points:    9           Points:    1
+
+     Division 4            Wed 17th Jul
+   Harold Club - C       Spen Victoria - D
+Mark Gummery       21  Anthony Tolson      8
+Niamh Maguire       1  Ken Spencer        21
+Tony Godfrey       21  Justine Wood        8
+Jimmy Hearne       21  Archie Wood        12
+Lee Boocock        15  Laura Wood         21
+Dave Hill          18  Leigh Manton       21
+Carl Maguire       17  Lexie Gould        21
+Stuart Harrison    21  Derek Warriner     14
+      Aggregate:  135        Aggregate:  126
+         Points:    6           Points:    4
+
+     Division 4            Wed 17th Jul
+   Gildersome - B      Cleckheaton Sports - 
+David Rawson        6  Michael Binns      21
+Frank Hales        15  Jacqui Bateson     21
+Kay Stewart        21  Gillian Shore      10
+Glenda Holmes      19  Janet Inness       21
+David Holmes       17  Kath Wilson        21
+Michael Ross       21  Chris Piercy       19
+Neil Schofield      6  Jane Bradley       21
+Tony Morris        18  Elaine Binns       21
+      Aggregate:  123        Aggregate:  155
+         Points:    2           Points:    9
+
+     Division 4            Wed 17th Jul
+Cleckheaton Sports -       Rastrick - B
+Steve Smith        15  Paul Rimmer        21
+Richard Simpson    12  Michael Hollingdrake                                                                                                                                                                                                                                                               21
+Mick Collins        9  Michael Carter     21
+Nick Robinson      21  Brian Thurlow      10
+Gordon Piper       12  Graeme Rimmer      21
+Ryan Piercy        11  Gaye Wood          21
+Daniel Noland      19  Keith Richards     21
+Mark Wright        14  Chris Stanley      21
+      Aggregate:  113        Aggregate:  157
+         Points:    1           Points:   10
+
+     Division 4            Wed 17th Jul
+   Eccleshill - B        Heckmondwike - C
+Vincent Gelder     18  Steven Sugden      21
+Dot Shaw            4  Hayley Lay         21
+Jenson Gilroy      11  Steven Kidd        21
+Brian Barker       11  Kath Field         21
+Rachel Curtis      15  Paul Cooper        21
+Mark Stevens       16  George Tozer       21
+Andy Gilroy        21  Roger Jackson       7
+John Griffin       21  Eddie Temple       10
+      Aggregate:  117        Aggregate:  143
+         Points:    2           Points:    9
 
 
