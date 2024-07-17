@@ -1,8 +1,7 @@
 name: Deploy
 on:
   push:
-    # TODO change back to master
-    branches: ['gh_action_for_stats_update']
+    branches: ['master']
   workflow_dispatch:
 jobs:
   Deploy:
