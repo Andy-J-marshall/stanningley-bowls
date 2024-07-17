@@ -1,6 +1,4 @@
-# TODO need to tidy up npm run scripts
 # TODO why do the scripts fail the first time?
-# TODO spen and bradford saturday reports are being truncated!
 
 name: Update stats
 on:

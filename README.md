@@ -51,7 +51,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
 
 - To generate them using Playwright:
   - Run `npm run get-stats-and-update` - this will use Playwright to generate text reports and then run the scripts to update the stats JSON files
-  - Advanced: You can also get, update, commit and deploy the stats by running `npm run get-stats-update-deploy`. You may want to use the more manual steps first to check the data before deploying.
+  - Advanced: You can also get, update and commit the stats, then create a PR, by running `npm run get-stats-update-pr`. Once the PR is merged it should automatically deploy master to prod.
     - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
   - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
@@ -70,7 +70,7 @@ You can also set up a Cron scheduled job:
 
 ```
 PATH=[insert path here]
-15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-deploy
+15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-pr
 ```
 
 ## Update list of players

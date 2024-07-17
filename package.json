@@ -4,7 +4,7 @@
   "scripts": {
     "get-stats": "python3 ./scripts/pythonScripts/deleteOldReports.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts",
     "get-stats-and-update": "npm run get-stats && npm run update-stats",
-    "get-stats-update-deploy": "npm run get-stats-and-update && npm run tests && npm run build-deploy && npm run commit-updated-stats",
+    "get-stats-update-pr": "npm run get-stats-and-update && npm run tests && npm run commit-updated-stats",
     "update-stats": "python3 ./scripts/pythonScripts/bowls.py && python3 ./scripts/pythonScripts/bowlsCombined.py",
     "commit-updated-stats": "git checkout update_stats_prod && git pull && git merge master && git add bowlsnetReports/* && git add src/data/* && git commit -m 'updated stats' && git push && gh pr create --fill && git checkout master && git pull",
     "start": "vite",
