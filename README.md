@@ -36,6 +36,11 @@ There are several GitHub Action jobs that run. These can be found in `/.github/w
 * `run-ui-tests.yml` - this runs the UI tests against prod whenever there is a push to master or a PR is opened/changed
 * `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
 
+# Tests
+* Install Playwright using `npx playwright install --with-deps`
+* Run `npm run tests` to run the unit and UI tests
+* View reports using `npm run ui-test-reports`
+
 ## Maintenance
 
 Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
