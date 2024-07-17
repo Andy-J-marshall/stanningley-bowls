@@ -1,10 +1,13 @@
 # TODO why do the scripts fail the first time?
+# TODO check PR is created, then check after merge that my result is vs p hatch, not phil hatch
+# TODO check update stats runs at 14:15
 
 name: Update stats
 on:
   schedule:
-    # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 11:15 and 22:15
-    - cron: '15 10,22 1-30 4-9 1,2,3,4,6'
+    # Runs every day from April 1st to September 30th at 22:15
+    # TODO remove time of 14:15
+    - cron: '15 14,22 1-30 4-9 *'
   workflow_dispatch:
 jobs:
   Update-Stats:
