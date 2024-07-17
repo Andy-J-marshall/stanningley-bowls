@@ -1,9 +1,11 @@
-import { test, chromium } from '@playwright/test';
+import {
+  test,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+} from '@playwright/test';
 import fs from 'fs';
-
-let browser;
-let context;
-let page;
 
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
@@ -77,6 +79,10 @@ const teams = [
 ];
 
 for (const team of teams) {
+  let browser: Browser;
+  let context: BrowserContext;
+  let page: Page;
+
   test.beforeEach(async () => {
     browser = await chromium.launch();
     context = await browser.newContext();

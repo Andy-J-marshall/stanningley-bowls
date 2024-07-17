@@ -1,5 +1,3 @@
-# TODO why do the scripts fail the first time?
-
 name: Update stats
 on:
   schedule:
