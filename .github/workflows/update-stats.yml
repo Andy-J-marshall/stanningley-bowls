@@ -6,7 +6,6 @@ on:
     # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 11:15 and 22:15
     - cron: '15 10,22 1-30 4-9 1,2,3,4,6'
   workflow_dispatch:
-    # TODO workflow dispatch not working?
 jobs:
   Update-Stats:
     runs-on: ubuntu-latest
