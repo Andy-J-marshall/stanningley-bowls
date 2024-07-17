@@ -22,7 +22,6 @@ jobs:
           npx playwright install
       - name: Run tests
         run: npm run tests
-        # TODO check if this works
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
