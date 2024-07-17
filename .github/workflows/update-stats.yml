@@ -1,86 +1,48 @@
-# TODO add back in
-# name: Update stats
-# on:
-#   # TODO add this in
-#   # schedule:
-#     # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 10 PM (UTC time)
-#     # - cron: '0 22 1-30 4-9 1,2,3,4,6'
-#   # TODO remove this once working
-#   push:
-#     branches:
-#       - '*'
-#   workflow_dispatch:
-#     # TODO workflow dispatch not working?
-# jobs:
-#   Update-Stats:
-#     # splitting up the steps won't work
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#         with:
-#           ref: gh_action_for_stats_update
-#       - name: Set up Python
-#         uses: actions/setup-python@v2
-#         with:
-#           python-version: '3.12.3'
-#       - name: Set node version
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: '20.x'
-#       - name: Install dependencies
-#         run: | 
-#           npm ci
-#           npx playwright install-deps
-#           npx playwright install
-#       - name: Update stats and deploy
-#         run: npm run get-stats-and-update
-#         # TODO need this?
-#       # - uses: actions/checkout@v4
-#       #   with:
-#       #     ref: update_stats_prod
-#       - name: Configure Git
-#         run: | 
-#           git config --global user.email "stanningleybowlsclub@gmail.com"
-#           git config --global user.name "SPBC GitHub Action"
-#       - name: Commit and push
-#         run: |
-#           git add bowlsnetReports/*
-#           git add src/data/*
-#           git commit -m 'updated stats'
-#           git push
-#       # - uses: actions/checkout@v4
-#       #   with:
-#       #   ref: gh_action_for_stats_update
-#       # TODO what if this exists already?
-#       - name: Create a PR
-#         run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           # TODO error:
-#           #           > deploy
-#           # > gh-pages -d dist
-#           # ProcessError: fatal: could not read Username for 'https://github.com': No such device or address
-
-#       # - name: Deploy
-#       #   run: npm run build-deploy
-#       #   env:
-#       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#   # create-pr:
-#   #   runs-on: ubuntu-latest
-#   #   steps:
-#     # TODO need to install vite?
-#   #     - uses: actions/checkout@v4
-#   #       with:
-#   #         ref: gh_action_for_stats_update
-#   #       # TODO what if this exists already?
-#   #     - name: Create a PR
-#   #       run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
-#   #       env:
-#   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#       # TODO build and deploy
-#       # TODO commit and create PR
-
-#         # TODO do I need this? Need to install gh CLI?
-#         # env:
-#         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: Update stats
+on:
+  # TODO add this in
+  # schedule:
+    # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 10 PM (UTC time)
+    # - cron: '0 22 1-30 4-9 1,2,3,4,6'
+  # TODO remove push once working
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
+    # TODO workflow dispatch not working?
+jobs:
+  Update-Stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh_action_for_stats_update # TODO change branch name to update_stats_prod
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12.3'
+      - name: Set node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: Install dependencies
+        run: | 
+          npm ci
+          npx playwright install-deps
+          npx playwright install
+      - name: Update stats and deploy
+        run: npm run get-stats-and-update
+      - name: Configure Git
+        run: | 
+          git config --global user.email "stanningleybowlsclub@gmail.com"
+          git config --global user.name "SPBC GitHub Action"
+      - name: Commit and push
+        run: |
+          git add bowlsnetReports/*
+          git add src/data/*
+          git commit -m 'updated stats'
+          git push
+      - name: Create a PR
+        run: gh pr create --title "updated stats" --body "Stats updated from pipeline"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
