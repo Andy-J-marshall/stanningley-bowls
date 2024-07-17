@@ -3,6 +3,7 @@ on:
   push:
     # TODO change back to master
     branches: ['gh_action_for_stats_update']
+  workflow_dispatch:
 jobs:
   Deploy:
     runs-on: ubuntu-latest
