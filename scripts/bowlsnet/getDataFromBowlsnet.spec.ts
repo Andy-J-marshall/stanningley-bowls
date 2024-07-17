@@ -79,22 +79,14 @@ const teams = [
 ];
 
 for (const team of teams) {
-  let browser: Browser;
-  let context: BrowserContext;
-  let page: Page;
-
-  test.beforeEach(async () => {
-    browser = await chromium.launch();
-    context = await browser.newContext();
-    page = await context.newPage();
-  });
-
   test(`${team.day} Stats`, async () => {
-    const day = team.day;
-    const filePath = `./bowlsnetReports/${day}.txt`;
-    const url = team.url;
+    // Browser set up
+    const browser: Browser = await chromium.launch();
+    const context: BrowserContext = await browser.newContext();
+    let page: Page = await context.newPage();
 
-    await page.goto(url);
+    // Test
+    await page.goto(team.url);
     await sleep();
 
     // Click pop up if present
@@ -158,6 +150,8 @@ for (const team of teams) {
       await page.frameLocator('#x-Pframe').locator('#dRBtn').click(),
     ]);
 
+    // Create text file
+    const filePath = `./bowlsnetReports/${team.day}.txt`;
     await newPage.bringToFront();
     const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
     fs.writeFileSync(filePath, value);
