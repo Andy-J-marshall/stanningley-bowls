@@ -2,14 +2,9 @@
 
 name: Update stats
 on:
-  # TODO add this in
-  # schedule:
-    # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 10 PM (UTC time)
-    # - cron: '0 22 1-30 4-9 1,2,3,4,6'
-  # TODO remove push once working
-  push:
-    branches:
-      - '*'
+  schedule:
+    # Runs on Mon, Tue, Wed, Thu, and Sat from April 1st to September 30th at 11:15 and 22:15
+    - cron: '15 10,22 1-30 4-9 1,2,3,4,6'
   workflow_dispatch:
     # TODO workflow dispatch not working?
 jobs:
@@ -18,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: gh_action_for_stats_update # TODO change branch name to update_stats_prod
+          ref: update_stats_prod
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
