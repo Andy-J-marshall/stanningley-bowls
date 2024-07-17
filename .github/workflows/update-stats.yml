@@ -1,3 +1,7 @@
+# TODO need to tidy up npm run scripts
+# TODO why do the scripts fail the first time?
+# TODO update readme
+
 name: Update stats
 on:
   # TODO add this in
