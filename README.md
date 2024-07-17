@@ -142,8 +142,6 @@ Team Records:
 
 # Updates required at end of each calendar year
 
-Update the `get-stats-and-view-reports` script in `package.json` to point to the new year's xlsx file.
-
 Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
 
 Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
