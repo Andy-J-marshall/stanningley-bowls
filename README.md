@@ -71,7 +71,7 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
 
 You can also set up a Cron scheduled job:
 - run `crontab -e` from your terminal
-- Add the below, replacing the path to the repo and the PATH value e.g. this runs at 10.15am and 10.15pm most days during the bowls season.
+- Add something like the below, replacing the path to the repo and the PATH value e.g. this runs at 10.15am and 10.15pm most days during the bowls season.
 
 ```
 PATH=[insert path here]
