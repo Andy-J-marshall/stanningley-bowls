@@ -153,7 +153,7 @@ for (const team of teams) {
     ]);
 
     await newPage.bringToFront();
-    const value = await newPage.$eval('body', (el) => el.innerHTML);
+    const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
     fs.writeFileSync(filePath, value);
   });
 }
