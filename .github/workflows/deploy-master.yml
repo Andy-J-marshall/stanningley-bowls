@@ -1,4 +1,4 @@
-name: Run UI Tests
+name: Deploy
 on:
   push:
     # TODO change back to master
