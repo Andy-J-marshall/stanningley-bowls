@@ -316,6 +316,7 @@ with open(filename, 'w') as jsonFile:
 # Sanity checks on the data
 sanityChecksOnPlayerStats(playerResults, players)
 newFileSize = checkFileSize(filename)
+# TODO add back in
 if newFileSize < previousFileSize:
     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print('Sanity checks for all teams stats complete')
