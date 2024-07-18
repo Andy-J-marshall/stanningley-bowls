@@ -1,5 +1,5 @@
 === Bradford (Half Holiday) 2024
-=== League Report (as of Wed 17th Jul)
+=== League Report (as of Thu 18th Jul)
 
 
 === RESULTS: Wed 17th Apr to Wed 25th Sep
@@ -351,6 +351,7 @@
 -----------------------------------------------------------------------------------------------------------
  Time           Wed 17th Jul                Division 3 (Peter Gilroy)                     
 -----------------------------------------------------------------------------------------------------------
+1:30pm  West Bradford 'B'    25  126   v.  Bradford Moor         1   66  
 1:30pm  Wibsey 'C'            6   86   v.  Clayton 'B'          20  123  
 1:30pm  Brighouse Sports     26  126   v.  Wibsey 'B'            0   45  
 1:30pm  Tyersal               7   79   v.  Thornton             19  112  
@@ -395,12 +396,12 @@ Pos  Team                 Pl   W   L   For
 ===  ===================  ==  ==  ==  ====  
  1.  Brighouse Sports     12  12   0   293
  2.  Clayton 'B'          12  10   2   194
- 3.  Bradford Moor        11   6   5   161
- 4.  Royd House           11   5   5   144
- 5.  Thornton             12   6   6   138
- 6.  Wibsey 'C'           12   5   5   138
- 7.  Calverley            10   6   4   136
- 8.  West Bradford 'B'    10   5   5   136
+ 3.  Bradford Moor        12   6   6   162
+ 4.  West Bradford 'B'    11   6   5   161
+ 5.  Royd House           11   5   5   144
+ 6.  Thornton             12   6   6   138
+ 7.  Wibsey 'C'           12   5   5   138
+ 8.  Calverley            10   6   4   136
  9.  Oakenshaw 'B'        11   4   7   126
 10.  Tyersal              11   1   9    76
 11.  Wibsey 'B'           12   0  12    70
@@ -2650,6 +2651,18 @@ Chris Burnett      14  Ian Gomersal       21
       Aggregate:   94        Aggregate:  110
           Games:    3            Games:    3
          Points:   10           Points:   16
+
+Division 3 (Peter Gil      Wed 17th Jul
+  West Bradford 'B'        Bradford Moor
+John Dale          21  Martin Barraclough  9
+Geraldine Sephton  21  Diane Barraclough  11
+Malcolm Leeming    21  Janet Gatenby      16
+Brian Woolner      21  Marjorie Leeming    8
+Colin Isles        21  Doreen Parkin       7
+Patrick McNally    21  Alan Farrow        15
+      Aggregate:  126        Aggregate:   66
+          Games:    6            Games:    0
+         Points:   25           Points:    1
 
 Division 3 (Peter Gil      Wed 17th Jul
      Wibsey 'C'             Clayton 'B'

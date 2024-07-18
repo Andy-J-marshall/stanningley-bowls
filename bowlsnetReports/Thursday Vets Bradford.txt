@@ -1,5 +1,5 @@
 === Bradford (Vets) 2024
-=== League Report (as of Wed 17th Jul)
+=== League Report (as of Thu 18th Jul)
 
 
 === RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -343,68 +343,100 @@
  1:30pm  Bowling             8   86   v.  Eccleshill B       18  108  
  1:30pm  Shipley Club       25  126   v.  Drighlington        1   65  
 
+-------------------------------------------------------------------------------------------------------
+ Time           Thu 18th Jul                     Division One                         
+-------------------------------------------------------------------------------------------------------
+ 1:30pm  Pudsey A           27  166   v.  Salts A             1  101  
+ 1:30pm  Clayton A          26  157   v.  Wibsey              2   98  
+ 1:30pm  Asa Briggs A       20  161   v.  Ilkley              8  133  
+ 1:30pm  Littlemoor S &amp; SC  21  155   v.  Wyke A              7  126  
+ 1:30pm  Eccleshill A       19  153   v.  Guiseley A          9  129  
+-------------------------------------------------------------------------------------------------------
+ Time           Thu 18th Jul                     Division Two                         
+-------------------------------------------------------------------------------------------------------
+ 1:30pm  Calverley A        25  166   v.  Queensbury A        3  112  
+ 1:30pm  Wyke B              5  114   v.  Crowghyll Park A   23  160  
+ 1:30pm  Harold Club        23  159   v.  Clayton B           5  112  
+ 1:30pm  West Bradford A    13  137   v.  Pudsey B           15  139  
+-------------------------------------------------------------------------------------------------------
+ Time           Thu 18th Jul                    Division Three                        
+-------------------------------------------------------------------------------------------------------
+ 1:30pm  Guiseley B         20  147   v.  West Bradford B     8  118  
+ 1:30pm  New Greengates     14  141   v.  Oakenshaw A        14  134  
+ 1:30pm  Brackenhill        15  144   v.  Idle B             13  133  
+ 1:30pm  Crowghyll Park B   23  160   v.  Bradford Moor       5  113  
+ 1:30pm  Royd House         19  154   v.  Calverley B         9  130  
+-------------------------------------------------------------------------------------------------------
+ Time           Thu 18th Jul              Division Four ( 6 Players)                  
+-------------------------------------------------------------------------------------------------------
+11:00am  Eccleshill B       10  102   v.  Shipley Club       16  110  
+ 1:30pm  Tyersal            15   97   v.  Bowling            11   89  
+11:00am  Idle C             24  124   v.  Oakenshaw B         2   67  
+11:00am  Clayton C          22  126   v.  Queensbury B        4   88  
+ 1:30pm  Thornton           19  114   v.  Salts B             7   82  
+
 
 === Current LEAGUE TABLES
 === Division One
-                        Matches   Pnts
-Pos  Team               Pl  W  L   For
-===  =================  ==  =  =  ====  
- 1.  Clayton A           9  9  0   177
- 2.  Pudsey A            9  7  2   168
- 3.  Ilkley              9  6  3   164
- 4.  Asa Briggs A        9  5  4   146
- 5.  Wyke A              9  4  5   129
- 6.  Eccleshill A        9  4  5   120
- 7.  Wibsey              9  4  5   120
- 8.  Guiseley A          9  3  6    88
- 9.  Littlemoor S &amp; SC   9  2  7    81
-10.  Salts A             9  1  8    67
+                         Matches   Pnts
+Pos  Team               Pl   W  L   For
+===  =================  ==  ==  =  ====  
+ 1.  Clayton A          10  10  0   203
+ 2.  Pudsey A           10   8  2   195
+ 3.  Ilkley             10   6  4   172
+ 4.  Asa Briggs A       10   6  4   166
+ 5.  Eccleshill A       10   5  5   139
+ 6.  Wyke A             10   4  6   136
+ 7.  Wibsey             10   4  6   122
+ 8.  Littlemoor S &amp; SC  10   3  7   102
+ 9.  Guiseley A         10   3  7    97
+10.  Salts A            10   1  9    68
 
 === Division Two
-                        Matches   Pnts
-Pos  Team               Pl  W  L   For
-===  =================  ==  =  =  ====  
- 1.  Queensbury A        9  7  2   170
- 2.  Asa Briggs B        9  7  1   162
- 3.  Calverley A         9  7  2   158
- 4.  Idle A              9  6  3   154
- 5.  Crowghyll Park A    9  6  3   137
- 6.  Harold Club         9  4  4   122
- 7.  Pudsey B            9  3  6   106
- 8.  Clayton B           9  1  8    94
- 9.  West Bradford A     9  2  7    85
-10.  Wyke B              9  1  8    72
+                         Matches   Pnts
+Pos  Team               Pl   W  L   For
+===  =================  ==  ==  =  ====  
+ 1.  Calverley A        10   8  2   183
+ 2.  Queensbury A       10   7  3   173
+ 3.  Asa Briggs B        9   7  1   162
+ 4.  Crowghyll Park A   10   7  3   160
+ 5.  Idle A              9   6  3   154
+ 6.  Harold Club        10   5  4   145
+ 7.  Pudsey B           10   4  6   121
+ 8.  Clayton B          10   1  9    99
+ 9.  West Bradford A    10   2  8    98
+10.  Wyke B             10   1  9    77
 
 === Division Three
-                        Matches   Pnts
-Pos  Team               Pl  W  L   For
-===  =================  ==  =  =  ====  
- 1.  New Greengates      9  7  1   175
- 2.  Idle B              9  6  3   159
- 3.  Oakenshaw A         9  6  3   151
- 4.  Royd House          9  5  4   136
- 5.  West Bradford B     9  5  4   135
- 6.  Crowghyll Park B    9  4  5   121
- 7.  Bradford Moor       9  5  3   115
- 8.  Guiseley B          9  2  7    96
- 9.  Calverley B         9  3  6    95
-10.  Brackenhill         9  1  8    77
+                         Matches   Pnts
+Pos  Team               Pl   W  L   For
+===  =================  ==  ==  =  ====  
+ 1.  New Greengates     10   7  1   189
+ 2.  Idle B             10   6  4   172
+ 3.  Oakenshaw A        10   6  3   165
+ 4.  Royd House         10   6  4   155
+ 5.  Crowghyll Park B   10   5  5   144
+ 6.  West Bradford B    10   5  5   143
+ 7.  Bradford Moor      10   5  4   120
+ 8.  Guiseley B         10   3  7   116
+ 9.  Calverley B        10   3  7   104
+10.  Brackenhill        10   2  8    92
 
 === Division Four ( 6 Players)
-                        Matches   Pnts
-Pos  Team               Pl  W  L   For
-===  =================  ==  =  =  ====  
- 1.  Shipley Club       10  8  2   207
- 2.  Eccleshill B       11  8  3   182
- 3.  Salts B            10  9  1   176
- 4.  Drighlington       11  7  4   163
- 5.  Idle C             11  5  5   135
- 6.  Oakenshaw B        11  4  6   129
- 7.  Queensbury B       11  4  6   125
- 8.  Bowling            11  4  6   124
- 9.  Clayton C          11  3  8   114
-10.  Thornton           10  3  7    95
-11.  Tyersal            11  2  9    84
+                         Matches   Pnts
+Pos  Team               Pl   W  L   For
+===  =================  ==  ==  =  ====  
+ 1.  Shipley Club       11   9  2   223
+ 2.  Eccleshill B       12   8  4   192
+ 3.  Salts B            11   9  2   183
+ 4.  Drighlington       11   7  4   163
+ 5.  Idle C             12   6  5   159
+ 6.  Clayton C          12   4  8   136
+ 7.  Bowling            12   4  7   135
+ 8.  Oakenshaw B        12   4  7   131
+ 9.  Queensbury B       12   4  7   129
+10.  Thornton           11   4  7   114
+11.  Tyersal            12   3  9    99
 
 
 === FULL RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -3005,5 +3037,261 @@ Ian Greenwood      21  Duncan Newton      18
       Aggregate:  126        Aggregate:   65
           Games:    6            Games:    0
          Points:   25           Points:    1
+
+    Division One           Thu 18th Jul
+      Pudsey A                Salts A
+Steve Emmett       21  Carol Royston      12
+Stuart Hanson      21  Simon Cowley       13
+Ian Jagger         19  Chris Womersley    21
+Pam Lindley        21  Richard Lonsdale   10
+David Poole        21  Philip Peel         5
+Dave Rankin        21  Dennis Thorpe      11
+Andrew Sykes       21  Martin Sherred     12
+Stewart Watson     21  John Greenwood     17
+      Aggregate:  166        Aggregate:  101
+          Games:    7            Games:    1
+         Points:   27           Points:    1
+
+    Division One           Thu 18th Jul
+      Clayton A               Wibsey
+Tom Harney         10  John Stocks        21
+Peter Ellis        21  Tasawar Hussain    14
+Paul Gill          21  Ann Billington      4
+Mally Fowler       21  John Stevenson      6
+Peter Oliver       21  Geoff Hanson       15
+Alan Peel          21  Peter Crowther     15
+Andrew Walker      21  Vince Cleary       10
+Ian Johnson        21  David Billington   13
+      Aggregate:  157        Aggregate:   98
+          Games:    7            Games:    1
+         Points:   26           Points:    2
+
+    Division One           Thu 18th Jul
+    Asa Briggs A              Ilkley
+David Jowett       21  Rod Bastow         11
+Kevin Burrage      21  Bob Jeffrey        15
+Malcolm Iles       21  Brian Wheeler      18
+Mick Gadd          21  Mick Bastow        15
+Peter Wilkinson    21  Geoff Howard       20
+John Beverley      21  Cliff Taylor       12
+Phil Smith         20  Paul Hillam        21
+Mark Barnett       15  Andy Thornton      21
+      Aggregate:  161        Aggregate:  133
+          Games:    6            Games:    2
+         Points:   20           Points:    8
+
+    Division One           Thu 18th Jul
+  Littlemoor S &amp; SC           Wyke A
+Alan Mazurke       21  Nigel Wormald      14
+Bob Baines         13  David Rayner       21
+Bill Swales        21  Mike Lambert        9
+Thomas Powell      21  Steven Ward        16
+Kath Mazurke       21  Gerry Hird         15
+James Moorin       16  Ian Wilson         21
+Glen Merrick       21  Michael Walton     12
+Glenn Miller       21  Nigel Swales       18
+      Aggregate:  155        Aggregate:  126
+          Games:    6            Games:    2
+         Points:   21           Points:    7
+
+    Division One           Thu 18th Jul
+    Eccleshill A            Guiseley A
+Peter Jefferson    18  Lynne Ogden        21
+John Griffin       10  Graham Oliver      21
+Mick Angus         21  Colin Matthewman    8
+Michael Hall       21  Jeremy Jones       16
+Peter Howroyd      21  Peter Storey       14
+Ian Matthews       21  Roger Waite        16
+Ken Gilroy         20  Andy Durkin        21
+Ken Wilson         21  Barry McCourt      12
+      Aggregate:  153        Aggregate:  129
+          Games:    5            Games:    3
+         Points:   19           Points:    9
+
+    Division Two           Thu 18th Jul
+     Calverley A           Queensbury A
+Adrian Newlove     21  Barbara Wardman     7
+Derek Whittaker    21  Norman Swift       14
+Michael Bennet     21  Margaret Lee       13
+Steve Spurr        21  Brian Raistrick     8
+Brian Hodgson      21  David Clough       16
+Clifford Wheatley  19  Irene Bulman       21
+Roger French       21  Peter Howell       14
+Ricky Kearns       21  Dennis Robinson    19
+      Aggregate:  166        Aggregate:  112
+          Games:    7            Games:    1
+         Points:   25           Points:    3
+
+    Division Two           Thu 18th Jul
+       Wyke B            Crowghyll Park A
+Colin Fallows      19  Derek Bridge       21
+Ian Meskimmon      11  Dennis Brown       21
+Colin White        21  Eddie Prince       18
+Malcolm Park       11  Derek Carroll      21
+Brian Metcalfe      5  Trevor Hodgson     21
+Stephen Cain       12  Jeff Townend       21
+Vincent Kerr       14  Robert Ramsden     21
+Richard Kerr       21  Alan Clements      16
+      Aggregate:  114        Aggregate:  160
+          Games:    2            Games:    6
+         Points:    5           Points:   23
+
+    Division Two           Thu 18th Jul
+     Harold Club             Clayton B
+Stuart Harrison    21  June Wilson        12
+Granville Kellett  21  Bev Shutt          14
+Barbara Bairstow   21  Pauline Macgregor   7
+David Haligan      21  David Moore         6
+Dave Roberts       17  John Smith         21
+Brian Kettle       21  Gaynor Shutt       18
+Ken Tindall        16  Chris Wilson       21
+Glen Molyneux      21  Ray Atkinson       13
+      Aggregate:  159        Aggregate:  112
+          Games:    6            Games:    2
+         Points:   23           Points:    5
+
+    Division Two           Thu 18th Jul
+   West Bradford A           Pudsey B
+Eddie Pells        21  Lynn Noonan        16
+Susan Cavallari     7  Sue Chadwick       21
+Brian Woolner      21  Geoff Simpson      18
+John Shoesmith     21  David Elliott      17
+Malcolm Crotty     16  Colin Dibb         21
+Steven Bussingham  10  Janice Connaleigh  21
+Bill Hutchinson    21  Granville Thornton  4
+Colin Isles        20  Peter Bainbridge   21
+      Aggregate:  137        Aggregate:  139
+          Games:    4            Games:    4
+         Points:   13           Points:   15
+
+   Division Three          Thu 18th Jul
+     Guiseley B           West Bradford B
+Alan Whitehouse    21  Lesley Lalor       12
+John Stead         10  Paul Wood          21
+Christine Boyd     21  Geraldine Sephton  10
+Eric Brocklehurst  15  Patrick McNally    21
+Mo Jarvis          21  Linda Wills         8
+John Boyd          17  Tony Wills         21
+Andrew Baxter      21  Lesley Pawson       8
+Ralph Sissons      21  Malcolm Leeming    17
+      Aggregate:  147        Aggregate:  118
+          Games:    5            Games:    3
+         Points:   20           Points:    8
+
+   Division Three          Thu 18th Jul
+   New Greengates           Oakenshaw A
+Alan Broscombe     17  Ian Gomersal       21
+Tom Sayer           8  John Garside       21
+Keith Goodall      18  Jim Gomersal       21
+Mary Hemsley       21  Richard Stewart    13
+Malcolm Hamilton   16  Tony Smith         21
+Pauline Wilkinson  21  John Priestley      8
+Allan Smith        19  Peter Brennan      21
+Robert Denby       21  Pat Priestley       8
+      Aggregate:  141        Aggregate:  134
+          Games:    3            Games:    5
+         Points:   14           Points:   14
+
+   Division Three          Thu 18th Jul
+     Brackenhill              Idle B
+Bob Armitage       21  John Rawnsley       7
+Gordon McLennon    16  Trevor Turner      21
+Jackie Wilkinson   15  Peter Bolton       21
+Steve Hillam       16  Colin Richardson   21
+Michael Feeley     21  Ken Walker         17
+Kathy Wilford      17  Pamela Barlow      21
+Graham Wilkinson   21  Tony Bather         4
+Bob Armitage       17  Judith Turner      21
+      Aggregate:  144        Aggregate:  133
+          Games:    3            Games:    5
+         Points:   15           Points:   13
+
+   Division Three          Thu 18th Jul
+  Crowghyll Park B         Bradford Moor
+Pam Robinson       21  Martin Barraclough 12
+Audrey Healey      21  Geoff Woodfine      9
+Flo Johnston       19  Doreen Parkin      21
+Eddie Shanks       21  Diane Barraclough   8
+Rae Heddle         21  Alan Naylor        14
+Lek Fletcher       15  Alan Farrow        21
+Jim Welsh          21  Michael Jarvis     10
+Phil Robinson      21  Christine Jarvis   18
+      Aggregate:  160        Aggregate:  113
+          Games:    6            Games:    2
+         Points:   23           Points:    5
+
+   Division Three          Thu 18th Jul
+     Royd House             Calverley B
+Gordon Evans       21  Malcolm Pratt       6
+Harry Ashley       14  June Whittaker     21
+Michael Czuba      21  Raymond Gambles    13
+John Tillotson     18  Alan Horsfield     21
+David Hogg         21  Margaret Whitaker  11
+Andrew Lancaster   21  Geoff Yewdall      20
+Patricia Allison   17  David Burton       21
+Jeff Hodgson       21  Ken Paley          17
+      Aggregate:  154        Aggregate:  130
+          Games:    5            Games:    3
+         Points:   19           Points:    9
+
+Division Four ( 6 Pla      Thu 18th Jul
+    Eccleshill B           Shipley Club
+Robert Renton      19  Pam Nellist        21
+Ken Binder         21  Steve West         14
+Brian Barker       21  Tony Greenwood     12
+Shirley Rooks      10  Ian Greenwood      21
+Keith Cooksey      13  Alan Outlaw        21
+Kevin Ackroyd      18  Richard Shaw       21
+      Aggregate:  102        Aggregate:  110
+          Games:    2            Games:    4
+         Points:   10           Points:   16
+
+Division Four ( 6 Pla      Thu 18th Jul
+       Tyersal                Bowling
+Terry King          9  Keith Robertson    21
+Edgar Rhodes       21  Brian Metcalfe      9
+Pam Fergus         12  Violet Rodgers     21
+Christine Hillas   13  Jackie Swindell    21
+Margaret Wilson    21  Lesley Cordingley  10
+Barry Clough       21  Brian Metcalfe      7
+      Aggregate:   97        Aggregate:   89
+          Games:    3            Games:    3
+         Points:   15           Points:   11
+
+Division Four ( 6 Pla      Thu 18th Jul
+       Idle C               Oakenshaw B
+Alan Briggs        19  Les Kear           21
+Margaret Austin    21  Eric Oldroyd        4
+Elizabeth Rawnsley 21  Muriel Paley       13
+Valerie Leach      21  Paul Rymer          7
+Jacqueline Spencer 21  Maureen Robinson    9
+David Priestley    21  Geoff Forder       13
+      Aggregate:  124        Aggregate:   67
+          Games:    5            Games:    1
+         Points:   24           Points:    2
+
+Division Four ( 6 Pla      Thu 18th Jul
+      Clayton C            Queensbury B
+Sue Findlay        21  Jill Dance         15
+Ian Findlay        21  David Jarvis       14
+Lee Greenwood      21  John Moore         19
+Malcolm Riggs      21  Pauline Brown      19
+Kevin Flanagan     21  Lorraine Birch     10
+Joe Midgley        21  Muriel Keighley    11
+      Aggregate:  126        Aggregate:   88
+          Games:    6            Games:    0
+         Points:   22           Points:    4
+
+Division Four ( 6 Pla      Thu 18th Jul
+      Thornton                Salts B
+Steve Tomkinson    21  Sandra Womersley   11
+Anthony Lockwood   21  Jim Philipson      13
+Dawn Riggett       16  Brian Denning      21
+Ronald Broadbent   14  Vanda Greenwood    21
+Alan Galloway      21  Maureen Adams       5
+Gordon Daniel      21  Deryck Welch       11
+      Aggregate:  114        Aggregate:   82
+          Games:    4            Games:    2
+         Points:   19           Points:    7
 
 
