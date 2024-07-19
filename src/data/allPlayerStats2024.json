@@ -1940,9 +1940,9 @@
             ]
         },
         "john armitage": {
-            "totalAgg": 1010,
-            "totalAggAgainst": 792,
-            "availableAgg": 1113,
+            "totalAgg": 1031,
+            "totalAggAgainst": 807,
+            "availableAgg": 1134,
             "availablePairsAgg": 0,
             "availableHomeAgg": 567,
             "availableAwayAgg": 525,
@@ -1962,7 +1962,7 @@
             "homeLosses": 5,
             "awayWins": 11,
             "awayLosses": 14,
-            "cupWins": 1,
+            "cupWins": 2,
             "cupLosses": 0,
             "pairWins": 0,
             "pairLosses": 0,
@@ -1972,7 +1972,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 53,
+            "totalGamesPlayed": 54,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2005,6 +2005,7 @@
                 "Wednesday Spen Valley",
                 "Wednesday Spen Valley",
                 "Wednesday Spen Valley",
+                "Monday AireDale & Wharfedale",
                 "Monday AireDale & Wharfedale",
                 "Monday AireDale & Wharfedale",
                 "Monday AireDale & Wharfedale",
@@ -2068,6 +2069,7 @@
                 "john armitage 21 - 10 glynn goodyear",
                 "john armitage 13 - 21 royston lewis",
                 "john armitage 21 - 5 john patrick",
+                "john armitage 21 - 15 dave upton",
                 "john armitage 17 - 21 gary wike",
                 "john armitage 19 - 21 kevin siddle",
                 "john armitage 21 - 19 christine barker",
@@ -2088,18 +2090,18 @@
             ]
         },
         "karl chapman": {
-            "totalAgg": 247,
-            "totalAggAgainst": 306,
-            "availableAgg": 340,
+            "totalAgg": 253,
+            "totalAggAgainst": 327,
+            "availableAgg": 361,
             "availablePairsAgg": 130,
-            "availableHomeAgg": 157,
+            "availableHomeAgg": 178,
             "availableAwayAgg": 162,
             "availablePairsHomeAgg": 52,
             "availablePairsAwayAgg": 78,
             "totalPairsAgg": 76,
             "totalPairsAggAgainst": 118,
-            "totalHomeAgg": 126,
-            "totalHomeAggAgainst": 123,
+            "totalHomeAgg": 132,
+            "totalHomeAggAgainst": 144,
             "totalPairsHomeAgg": 35,
             "totalPairsHomeAggAgainst": 40,
             "totalAwayAgg": 106,
@@ -2107,7 +2109,7 @@
             "totalPairsAwayAgg": 41,
             "totalPairsAwayAggAgainst": 78,
             "homeWins": 4,
-            "homeLosses": 3,
+            "homeLosses": 4,
             "awayWins": 0,
             "awayLosses": 7,
             "cupWins": 0,
@@ -2120,13 +2122,14 @@
             "pairAwayLosses": 3,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 15,
+            "totalGamesPlayed": 16,
             "dayPlayed": [
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
+                "Saturday Leeds",
                 "Saturday Leeds",
                 "Saturday Leeds",
                 "Saturday Leeds",
@@ -2169,7 +2172,8 @@
                 "karl chapman 15 - 21 brian fish",
                 "karl chapman 17 - 21 bill lovett",
                 "karl chapman 13 - 21 frank lindsay",
-                "karl chapman 11 - 21 peter nicholson"
+                "karl chapman 11 - 21 peter nicholson",
+                "karl chapman 6 - 21 mick harrison"
             ]
         },
         "ken green": {
@@ -4750,6 +4754,6 @@
             ]
         }
     },
-    "lastUpdated": "18/07/2024",
+    "lastUpdated": "19/07/2024",
     "statsYear": "2024"
 }

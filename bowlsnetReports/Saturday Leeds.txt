@@ -1,5 +1,5 @@
 === Leeds &amp; District (Saturday) 2024
-=== League Report (as of Thu 18th Jul)
+=== League Report (as of Fri 19th Jul)
 
 
 === RESULTS: Sat 6th Apr to Sat 14th Sep
@@ -285,6 +285,7 @@
  2:00pm  Middleton Park       31  148   v.  Bramley Park         30  138                       
  2:00pm  New Farnley          37  159   v.  Stanningley Park B   11   68                       
  2:00pm  Pudsey Park          39  166   v.  Cranmore             26  121                       
+         New Armley                     v.  Middleton Comm                                     To Fri 19th Jul
 
 ----------------------------------------------------------------------------------------------------------------
  Time            Sat 13th Jul                          Div 1                                           
@@ -311,6 +312,12 @@
 ----------------------------------------------------------------------------------------------------------------
 12:00pm  Sth Leeds Cons B     25  117   v.  Sth Leeds Cons A     32  142                       From Sat 1st Jun
 
+----------------------------------------------------------------------------------------------------------------
+ Time            Fri 19th Jul                          Div 1                                           
+                                                    League Div 2                                       
+----------------------------------------------------------------------------------------------------------------
+ 1:30pm  New Armley           28  129   v.  Middleton Comm       33  143                       From Sat 6th Jul
+
 
 === Current LEAGUE TABLES in Div 1
 === League Div 1
@@ -335,13 +342,13 @@ Pos  Team                Pl   W   L   For
  1.  New Farnley         13  13   0   449
  2.  Pudsey Park         13   9   4   425
  3.  Cranmore            13   7   6   392
- 4.  Western Flatts      13   5   7   370
- 5.  Bramley Park        13   4   9   353
- 6.  Gildersome B        13   4   9   348
- 7.  Middleton Comm      11   8   3   346
+ 4.  Middleton Comm      12   9   3   379
+ 5.  Western Flatts      13   5   7   370
+ 6.  Bramley Park        13   4   9   353
+ 7.  Gildersome B        13   4   9   348
  8.  Middleton Park      13   5   8   331
  9.  Stanningley Park B  12   6   5   316
-10.  New Armley          12   1  11   266
+10.  New Armley          13   1  12   294
 
 
 === FULL RESULTS: Sat 6th Apr to Sat 14th Sep
@@ -2132,5 +2139,19 @@ Damien Wright      12  Simon Hemmingway   21
 Bob Emerson        10  Derek McCormack    21
       Aggregate:  117        Aggregate:  142
          Points:   25           Points:   32
+
+        Div 1              Fri 19th Jul
+    League Div 2                 
+     New Armley           Middleton Comm
+David Hurd         18  Sue Harrison       21
+Josie Burdon       17  Brian Ragan        21
+Richard Aspin      21  Charlotte Doris    19
+Anne Gothard        7  Christine Glynn    21
+Howard Gothard     18  Malcolm Hallas     21
+Karl Chapman        6  Mick Harrison      21
+Carol Robinson     21  Barbara Ragan      18
+Walter Stockhill   21  Terry Maher         1
+      Aggregate:  129        Aggregate:  143
+         Points:   28           Points:   33
 
 
