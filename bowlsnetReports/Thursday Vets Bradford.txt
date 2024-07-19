@@ -1,5 +1,5 @@
 === Bradford (Vets) 2024
-=== League Report (as of Thu 18th Jul)
+=== League Report (as of Fri 19th Jul)
 
 
 === RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -356,6 +356,7 @@
 -------------------------------------------------------------------------------------------------------
  1:30pm  Calverley A        25  166   v.  Queensbury A        3  112  
  1:30pm  Wyke B              5  114   v.  Crowghyll Park A   23  160  
+ 1:30pm  Idle A             25  168   v.  Asa Briggs B        3  120  
  1:30pm  Harold Club        23  159   v.  Clayton B           5  112  
  1:30pm  West Bradford A    13  137   v.  Pudsey B           15  139  
 -------------------------------------------------------------------------------------------------------
@@ -397,10 +398,10 @@ Pos  Team               Pl   W  L   For
 Pos  Team               Pl   W  L   For
 ===  =================  ==  ==  =  ====  
  1.  Calverley A        10   8  2   183
- 2.  Queensbury A       10   7  3   173
- 3.  Asa Briggs B        9   7  1   162
- 4.  Crowghyll Park A   10   7  3   160
- 5.  Idle A              9   6  3   154
+ 2.  Idle A             10   7  3   179
+ 3.  Queensbury A       10   7  3   173
+ 4.  Asa Briggs B       10   7  2   165
+ 5.  Crowghyll Park A   10   7  3   160
  6.  Harold Club        10   5  4   145
  7.  Pudsey B           10   4  6   121
  8.  Clayton B          10   1  9    99
@@ -3135,6 +3136,20 @@ Richard Kerr       21  Alan Clements      16
       Aggregate:  114        Aggregate:  160
           Games:    2            Games:    6
          Points:    5           Points:   23
+
+    Division Two           Thu 18th Jul
+       Idle A              Asa Briggs B
+Ian Watson         21  Steve Fleming      15
+Roy Barlow         21  Alan Standing      12
+Michael Kane       21  Kath Sansom        16
+Yvonne Coppin      21  Alan Marsden       12
+Dave Duckett       21  Mick Sansom        16
+Alan Sinfield      21  Arthur Schofield   13
+Bryn Jones         21  David Trudgill     18
+Michael Leach      21  Paula Graham       18
+      Aggregate:  168        Aggregate:  120
+          Games:    8            Games:    0
+         Points:   25           Points:    3
 
     Division Two           Thu 18th Jul
      Harold Club             Clayton B
