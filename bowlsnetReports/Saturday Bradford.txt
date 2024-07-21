@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sat 20th Jul)
+=== League Report (as of Sun 21st Jul)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -392,6 +392,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 6th Jul                              Division 1 (Naylor Premier)                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+          Pudsey 'A'                                  v.   Shipley Club                                  To Sun 21st Jul
   2:00pm  Farsley                          14   162   v.   Wyke 'A'                         16   172     
   2:00pm  Cononley                         25   205   v.   Asa Briggs 'A'                    5   129     
   2:00pm  Littlemoor S&amp;SC 'A'              29   207   v.   Guiseley 'A'                      1   116     
@@ -486,6 +487,10 @@
  12:00pm  Guiseley 'C'                      4    93   v.   Cleckheaton Sports 'B'           24   163     
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Sat 20th Jul                              Division 1 (Naylor Premier)                             
+-------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Pudsey 'A'                       25   203   v.   Shipley Club                      5   140     From Sun 21st Jul
+-------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 20th Jul                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
  11:00am  Rufford 'A'                      21   202   v.   Hove Edge 'A'                     9   158     From Sat 15th Jun
@@ -505,6 +510,11 @@
   2:00pm  Bradford Moor                    15   139   v.   West Bradford 'C'                13   132     From Sat 6th Jul
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Sun 21st Jul                              Division 1 (Naylor Premier)                             
+-------------------------------------------------------------------------------------------------------------------------------------------
+          Pudsey 'A'                                  v.   Shipley Club                                  From Sat 6th Jul. To Sat 20th Jul
+
+-------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                                  Division 3 (Mellor)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
           Wyke 'B'                                    v.   Hightown                                      To Sat 20th Jul
@@ -515,11 +525,11 @@
                                         Matches     Pnts
  Pos  Team                             Pl   W    L    For
 ====  ==============================  ===  ==  ===  =====  
-  1.  Littlemoor S&amp;SC 'A'               9   6    3    163
-  2.  Spen Victoria 'A'                 9   6    3    162
-  3.  Cononley                          9   7    1    162
-  4.  Pudsey 'A'                        8   7    1    160
-  5.  Shipley Club                      8   4    4    143
+  1.  Pudsey 'A'                        9   8    1    185
+  2.  Littlemoor S&amp;SC 'A'               9   6    3    163
+  3.  Spen Victoria 'A'                 9   6    3    162
+  4.  Cononley                          9   7    1    162
+  5.  Shipley Club                      9   4    5    148
   6.  Guiseley 'A'                      9   4    5    132
   7.  Asa Briggs 'A'                    9   1    8     88
   8.  Wyke 'A'                          9   2    6     82
@@ -4543,6 +4553,22 @@ Gary Collins           21  Helen Seed          16
              Games:     1            Games:     7
          Aggregate:    93        Aggregate:   163
             Points:     4           Points:    24
+
+Division 1 (Naylor Premie       Sat 20th Jul
+       Pudsey 'A'               Shipley Club
+Chris Mordue           21  John Sample         20
+Thomas Hanson          21  Ian Jacques          9
+Josh Mordue            21  Craig Fenton        18
+Stuart King            21  Matthew Jacques 'A'  8
+Gary Wike              21  Graham Baggley       5
+Philip Wilsdon         21  Richard Firth       11
+Andrew Sykes           21  Chris Jacques       17
+Ian Shaw               17  Daniel Metcalfe     21
+Dave Poole             18  Chris Bedford       21
+Jamie Winterburn       21  Rachel Telford      10
+             Games:     8            Games:     2
+         Aggregate:   203        Aggregate:   140
+            Points:    25           Points:     5
 
    Division 2 (Godwin)          Sat 20th Jul
        Rufford 'A'             Hove Edge 'A'
