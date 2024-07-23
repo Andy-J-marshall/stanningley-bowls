@@ -36,6 +36,8 @@ There are several GitHub Action jobs that run. These can be found in `/.github/w
 * `run-ui-tests.yml` - this runs the UI tests against prod whenever there is a push to master or a PR is opened/changed
 * `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
 
+Note, if the branch names change (e.g. `update_stats_prod` or `master`) then the jobs will need to be updated.
+
 # Tests
 * Install Playwright using `npx playwright install --with-deps`
 * Run `npm run tests` to run the unit and UI tests
