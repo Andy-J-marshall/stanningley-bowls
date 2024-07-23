@@ -1,5 +1,5 @@
 === Bradford (Mon. Evening) 2024
-=== League Report (as of Mon 22nd Jul)
+=== League Report (as of Tue 23rd Jul)
 
 
 === RESULTS: Mon 8th Apr to Mon 19th Aug
@@ -338,11 +338,13 @@
 ------------------------------------------------------------------------------------------------------------------
  7:00pm  Tyersal 'A'          12   107   v.   Shipley Club A       14   112     
  7:00pm  Spen Victoria 'A'    17   123   v.   Hightown              9   102     
+ 7:00pm  Asa Briggs 'A'       19   115   v.   Wibsey                7    93     
  7:00pm  Littlemoor S&amp;SC      26   126   v.   Idle 'A'              0    56     
  7:00pm  Crowghyll Park       13   115   v.   Asa Briggs 'B'       13   111     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 22nd Jul                 Division 2 (Robert Bland)7.00                      
 ------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Heckmondwike 'A'     18   109   v.   New Greengates        8    85     
  7:00pm  Brackenhill           5    85   v.   Spen Victoria 'B'    21   124     
  7:00pm  West Royd A          10   100   v.   Clayton A            16   110     
 ------------------------------------------------------------------------------------------------------------------
@@ -363,8 +365,8 @@
   1.  Tyersal 'A'          14   12    2    272
   2.  Shipley Club A       14   12    2    262
   3.  Spen Victoria 'A'    14   10    4    251
-  4.  Asa Briggs 'A'       13    8    5    200
-  5.  Wibsey               13    8    5    196
+  4.  Asa Briggs 'A'       14    9    5    219
+  5.  Wibsey               14    8    6    203
   6.  Hightown             14    6    8    182
   7.  Littlemoor S&amp;SC      14    4   10    140
   8.  Crowghyll Park       14    6    7    140
@@ -377,10 +379,10 @@
 ====  ==================  ===  ===  ===  =====  
   1.  Spen Victoria 'B'    11    8    2    185
   2.  Clayton A            11    8    3    177
-  3.  West Bradford        10    7    2    172
-  4.  Heckmondwike 'A'     11    4    4    157
+  3.  Heckmondwike 'A'     12    5    4    175
+  4.  West Bradford        10    7    2    172
   5.  Drighlington         11    5    6    139
-  6.  New Greengates       10    5    4    121
+  6.  New Greengates       11    5    5    129
   7.  West Royd A          12    3    9    104
   8.  Brackenhill          10    0   10     63
 
@@ -2478,6 +2480,18 @@ Mark Goodall          21  Alex Edmondson         17
            Points:    17              Points:     9
 
 Division 1 (Thurston) 7.        Mon 22nd Jul
+     Asa Briggs 'A'                Wibsey
+Michael Frost         10  John Stocks            21
+James Klenk           21  Rich Hunter            13
+Scott Sansom 'A'      21  Alison Stocks          18
+Paula Graham          21  Vinnie Cleary          18
+Andrew Heenan         21  Tasawir Hussain         9
+Gary Woodhead         21  John Stevenson         14
+        Aggregate:   115           Aggregate:    93
+            Games:     5               Games:     1
+           Points:    19              Points:     7
+
+Division 1 (Thurston) 7.        Mon 22nd Jul
     Littlemoor S&amp;SC               Idle 'A'
 Alan Mazurke          21  Dave Duckett           11
 Angela Carter         21  Michael Leach          18
@@ -2500,6 +2514,18 @@ Trevor Hodgson        19  Arthur Schofield       21
         Aggregate:   115           Aggregate:   111
             Games:     2               Games:     4
            Points:    13              Points:    13
+
+Division 2 (Robert Bland        Mon 22nd Jul
+    Heckmondwike 'A'           New Greengates
+Gerald Bromley 'A'    21  James Burnett          15
+George Tozer          21  Derek Parker            4
+Sean Carter           21  Chris Burnett          12
+Kathleen Field        21  Allan Smith            12
+Roy Carter            18  Alan Broscombe         21
+Peter Buchan           7  Chris J Burnett        21
+        Aggregate:   109           Aggregate:    85
+            Games:     4               Games:     2
+           Points:    18              Points:     8
 
 Division 2 (Robert Bland        Mon 22nd Jul
       Brackenhill             Spen Victoria 'B'
