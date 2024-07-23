@@ -1,0 +1,21 @@
+name: Merge Master
+on:
+  push:
+    branches: ['master']
+  workflow_dispatch:
+jobs:
+  Merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: update_stats_prod
+      - name: Configure Git
+        run: | 
+          git config --global user.email "stanningleybowlsclub@gmail.com"
+          git config --global user.name "SPBC GitHub Action"
+      - name: Merge master
+        run: | 
+          git fetch origin master
+          git merge origin/master
+          git push
