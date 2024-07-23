@@ -6,9 +6,6 @@ on:
   pull_request:
       branches:
       - master
-  # This runs the tests when a PR is created via GitHub Actions
-  repository_dispatch:
-    types: [create-pull-request]
 jobs:
   Run-Tests:
     runs-on: ubuntu-latest
