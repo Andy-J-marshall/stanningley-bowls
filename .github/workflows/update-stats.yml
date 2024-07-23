@@ -21,6 +21,7 @@ jobs:
           node-version: '20.x'
       - name: Configure Git
         run: | 
+          git pull
           git config --global user.email "stanningleybowlsclub@gmail.com"
           git config --global user.name "SPBC GitHub Action"
       - name: Install dependencies
