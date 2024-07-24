@@ -57,10 +57,6 @@ const teams = [
     url: '/AW-Vets',
   },
   {
-    day: 'Wednesday AireDale & Wharfedale',
-    url: '/AW-WedSingles',
-  },
-  {
     day: 'Monday Bradford',
     url: '/Bradford-Mon',
   },
