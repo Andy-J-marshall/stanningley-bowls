@@ -1,5 +1,5 @@
 === Leeds &amp; District (Tuesday) 2024
-=== League Report (as of Tue 23rd Jul)
+=== League Report (as of Wed 24th Jul)
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -349,13 +349,16 @@
  Time               Tue 23rd Jul                                 Division 2                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Sth Leeds Cons A           36   160   v.   New Wortley A               27   130                        
+ 6:45pm  Crossgates Rec A           35   156   v.   Chapel Allerton A           24   120                        
  6:45pm  Gildersome A               32   143   v.   Holt Park                   24   121                        
+ 6:45pm  New Farnley B              24   121   v.   Cross Flatts                34   145                        
  6:45pm  Holbeck Ltd A              31   135   v.   Holbeck Moor                22   110                        
 ---------------------------------------------------------------------------------------------------------------------------------------------
  Time               Tue 23rd Jul                                 Division 3                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Stanningley Park           31   143   v.   Colton                      29   134                        
  6:45pm  Middleton Comm             40   168   v.   Pudsey Park B               14    80                        
+ 6:45pm  Meanwood B                 23   107   v.   Manston Pk                  32   150                        
  6:45pm  Pudsey Park A              34   149   v.   Gildersome B                26   124                        
  6:45pm  Garforth C C               35   155   v.   Moor Allerton               22   106                        
 
@@ -380,30 +383,30 @@
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
   1.  Holbeck Ltd A        14   13    1    480
-  2.  New Wortley A        14    8    5    420
-  3.  Cross Flatts         13    9    4    401
-  4.  Holt Park            14    6    7    398
-  5.  Gildersome A         14    7    7    395
-  6.  Crossgates Rec A     12    7    4    372
-  7.  Sth Leeds Cons A     13    6    7    364
-  8.  Chapel Allerton A    13    4    8    363
+  2.  Cross Flatts         14   10    4    435
+  3.  New Wortley A        14    8    5    420
+  4.  Crossgates Rec A     13    8    4    407
+  5.  Holt Park            14    6    7    398
+  6.  Gildersome A         14    7    7    395
+  7.  Chapel Allerton A    14    4    9    387
+  8.  Sth Leeds Cons A     13    6    7    364
   9.  Holbeck Moor         13    1   11    345
- 10.  New Farnley B        12    2    9    308
+ 10.  New Farnley B        13    2   10    332
 
 === Division 3
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
   1.  Stanningley Park     14   13    1    487
-  2.  Colton               14    7    7    413
-  3.  Middleton Comm       13   10    3    410
-  4.  Manston Pk           13    8    5    402
+  2.  Manston Pk           14    9    5    434
+  3.  Colton               14    7    7    413
+  4.  Middleton Comm       13   10    3    410
   5.  Moor Allerton        14    7    7    395
   6.  Pudsey Park A        14    3   11    367
   7.  Gildersome B         13    4    8    341
   8.  Pudsey Park B        14    2   11    333
-  9.  Garforth C C         12    5    7    315
- 10.  Meanwood B           11    6    5    308
+  9.  Meanwood B           12    6    6    331
+ 10.  Garforth C C         12    5    7    315
 
 
 === FULL RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -2904,6 +2907,19 @@ Damien Wright       18  Paul Shackleton     21
          Points:    36           Points:    27
 
       Division 2             Tue 23rd Jul
+   Crossgates Rec A       Chapel Allerton A
+Alan Durant         17  David Blackwell     21
+Maria Durkan        21  Colin Wilson        19
+Bob Patterson       13  Mandy Wilson        21
+Alan Wood           21  Adrienne Blackwell  18
+Dave Farman         21  Royce Jackson       16
+Dave Sharp          21  Ian McMillan         9
+James Tayolr        21  David Burke         12
+Andy Walton         21  Tommy Massey         4
+      Aggregate:   156        Aggregate:   120
+         Points:    35           Points:    24
+
+      Division 2             Tue 23rd Jul
      Gildersome A             Holt Park
 Harvey Lockwood     21  Peter Byford        14
 Kevin Smales        21  Mick Sadler         19
@@ -2915,6 +2931,19 @@ Beverley Hampshaw    8  Dave Lyons          21
 Alan Procter        21  Peter Sandles       16
       Aggregate:   143        Aggregate:   121
          Points:    32           Points:    24
+
+      Division 2             Tue 23rd Jul
+    New Farnley B            Cross Flatts
+Bob Taylor          15  Jim Bootland        21
+Barbara Taylor      15  Stephanie Wood      21
+Pat Skelton          9  Paul Hatch          21
+Howard Fowler       16  Mario Biancardo     21
+Jan Ingham          21  Ian Wood            19
+Jean Milner         20  Shirley Biancardo   21
+Roger Milner         4  Jason Potter        21
+Graham Davison      21  *No Player*          0
+      Aggregate:   121        Aggregate:   145
+         Points:    24           Points:    34
 
       Division 2             Tue 23rd Jul
     Holbeck Ltd A            Holbeck Moor
@@ -2954,6 +2983,19 @@ Christine Glyn      21  Callum Birkin       10
 Barbara Ragan       21  David Milner         8
       Aggregate:   168        Aggregate:    80
          Points:    40           Points:    14
+
+      Division 3             Tue 23rd Jul
+      Meanwood B              Manston Pk
+David L Miller       8  Alan Taylor         21
+Pat Prosser          6  Jonathan Moriaty    21
+Julie Keightley      4  Jim Jordan          21
+Phil McStay         21  John Wilson         13
+Anne M Miller        5  Neil Taylor         21
+Oliver Devaney      21  David Clarke        17
+Graham Hey          21  David Wall          16
+Ian Macfarlane      21  John Townsend       20
+      Aggregate:   107        Aggregate:   150
+         Points:    23           Points:    32
 
       Division 3             Tue 23rd Jul
     Pudsey Park A            Gildersome B
