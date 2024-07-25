@@ -7,7 +7,8 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
-const year = 2019
+// const year = new Date().getFullYear();
+const year = 2019 // TODO change back
 
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
@@ -54,6 +55,7 @@ const teams = [
     day: 'Monday AireDale & Wharfedale',
     url: '/AW-Mon',
   },
+  // TODO remove WedSingles
   {
     day: 'Wednesday AireDale & Wharfedale',
     url: '/AW-WedSingles',
@@ -105,6 +107,7 @@ for (const team of teams) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
 
+    // TODO remove this section
     // Select year
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
@@ -123,18 +126,21 @@ for (const team of teams) {
       .frameLocator('iframe[title="BowlsNet Page"]')
       .getByText('Report')
       .click();
+      // TODO remove
 
-    // await page1
+      
+    // TODO add this back in
+    // await page
     //   .frameLocator('iframe[title="BowlsNet Page"]')
     //   .getByText('Info.')
     //   .click();
-    // await page1
+    // await page
     //   .frameLocator('iframe[title="BowlsNet Page"]')
     //   .frameLocator('iframe[title="BowlsNet Dlg"]')
     //   .getByRole('button', { name: 'League Report...' })
     //   .click();
-      
 
+    // TODO change back to page rather than page1
     // Choose report options
     await page1
       .frameLocator('iframe[title="BowlsNet Page"]')
