@@ -1,5 +1,5 @@
 === West Riding &amp; Spen Valley 2024
-=== League Report (as of Wed 24th Jul)
+=== League Report (as of Thu 25th Jul)
 
 
 === RESULTS: Sat 30th Mar to Sun 29th Sep
@@ -753,32 +753,50 @@
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 24th Jul                                Premier                                  
 ------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Castleford Town            5   131   v.   Pudsey BC - A              6   140     
+ 7:00pm  Shipley - A                6   150   v.   Heckmondwike - A           4   130     
  7:00pm  Whitkirk                   3   137   v.   Eccleshill - A             8   148     
+ 7:00pm  Crossgates                 9   163   v.   Littlemoor - A             1   112     
  7:00pm  Guiseley                  10   168   v.   Swillington                0    95     
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 24th Jul                               Division 1                                
 ------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Littlemoor - B             6   139   v.   Spen Victoria - A          4   135     
  7:00pm  Chapel Street              9   163   v.   Cleckheaton Sports - A     1   116     
+ 7:00pm  Pudsey BC - B              9   164   v.   Hanging Heaton             1   101     
  7:00pm  Brighouse Sports - B       7   158   v.   Harold Club - A            3   115     
  7:00pm  Mirfield Old Bank - A      7   154   v.   Brighouse Sports - A       3   146     
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 24th Jul                               Division 2                                
 ------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Harold Club - B            6   142   v.   Farsley                    4   140     
  7:00pm  Cleckheaton Sports - B     6   143   v.   Shipley - B                4   118     
  7:00pm  Scatcherd Park             3   135   v.   Mirfield Old Bank - B      8   136     
  7:00pm  Holbeck                    2   117   v.   Spen Victoria - B          9   157     
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 24th Jul                               Division 3                                
 ------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Spen Victoria - C          9   154   v.   Royds Park - A             1   111     
  7:00pm  Heckmondwike - B           5   137   v.   Brighouse Sports - C       5   137     
  7:00pm  Royds Park - B             6   139   v.   Pudsey BC - D              4   129     
+ 7:00pm  New Farnley - B            8   157   v.   Cleckheaton Moorend        2   118     
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 24th Jul                               Division 4                                
 ------------------------------------------------------------------------------------------------------------------------
  7:00pm  Gildersome - A             5   132   v.   Cleckheaton Sports - F     5   125     
  7:00pm  Rastrick - B               9   165   v.   Drighlington               1    96     
  7:00pm  Spen Victoria - D          4   135   v.   Cleckheaton Sports - E     7   157     
+ 7:00pm  Cleckheaton Sports - D     4   133   v.   Harold Club - C            7   140     
  7:00pm  Eccleshill - B             7   135   v.   Gildersome - B             3   132     
+
+------------------------------------------------------------------------------------------------------------------------
+ Time               Thu 25th Jul                               Division 2                                
+------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Pudsey BC - C              3   132   v.   New Farnley - A            8   144     
+------------------------------------------------------------------------------------------------------------------------
+ Time               Thu 25th Jul                               Division 3                                
+------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Cleckheaton Sports - C     4   139   v.   Rastrick - A               7   145     
 
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 14th Aug                               Division 3                                
@@ -791,43 +809,43 @@
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Crossgates                13   10    2     95
-  2.  Littlemoor - A            13   10    3     89
-  3.  Pudsey BC - A             13    6    6     74
+  1.  Crossgates                14   11    2    104
+  2.  Littlemoor - A            14   10    4     90
+  3.  Pudsey BC - A             14    7    6     80
   4.  Eccleshill - A            14    8    6     73
-  5.  Heckmondwike - A          13    7    6     67
-  6.  Guiseley                  14    5    9     63
-  7.  Shipley - A               13    5    8     63
+  5.  Heckmondwike - A          14    7    7     71
+  6.  Shipley - A               14    6    8     69
+  7.  Guiseley                  14    5    9     63
   8.  Whitkirk                  14    5    9     58
-  9.  Swillington               14    4   10     53
- 10.  Castleford Town           13    6    7     49
+  9.  Castleford Town           14    6    8     54
+ 10.  Swillington               14    4   10     53
 
 === Division 1
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Spen Victoria - A         13   12    1    100
+  1.  Spen Victoria - A         14   12    2    104
   2.  Brighouse Sports - A      14    9    5     89
   3.  Chapel Street             14    8    5     85
-  4.  Cleckheaton Sports - A    14    7    7     73
-  5.  Littlemoor - B            13    7    5     70
-  6.  Pudsey BC - B             13    5    6     64
+  4.  Littlemoor - B            14    8    5     76
+  5.  Cleckheaton Sports - A    14    7    7     73
+  6.  Pudsey BC - B             14    6    6     73
   7.  Brighouse Sports - B      14    5    8     63
   8.  Harold Club - A           14    5    8     61
   9.  Mirfield Old Bank - A     14    4    8     56
- 10.  Hanging Heaton            13    2   11     33
+ 10.  Hanging Heaton            14    2   12     34
 
 === Division 2
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Spen Victoria - B         14   11    3    101
-  2.  New Farnley - A           13   11    2     93
-  3.  Shipley - B               14   10    4     86
-  4.  Farsley                   13    9    3     85
+  1.  New Farnley - A           14   12    2    101
+  2.  Spen Victoria - B         14   11    3    101
+  3.  Farsley                   14    9    4     89
+  4.  Shipley - B               14   10    4     86
   5.  Cleckheaton Sports - B    14    8    6     82
-  6.  Harold Club - B           13    6    7     70
-  7.  Pudsey BC - C             13    5    8     58
+  6.  Harold Club - B           14    7    7     76
+  7.  Pudsey BC - C             14    5    9     61
   8.  Mirfield Old Bank - B     14    5    8     54
   9.  Holbeck                   14    1   12     43
  10.  Scatcherd Park            14    0   13     30
@@ -836,15 +854,15 @@
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Rastrick - A              14   11    3     92
-  2.  New Farnley - B           13    8    5     79
+  1.  Rastrick - A              15   12    3     99
+  2.  New Farnley - B           14    9    5     87
   3.  Brighouse Sports - C      15    7    7     79
   4.  Royds Park - B            14    8    6     76
-  5.  Cleckheaton Moorend       13    8    5     72
-  6.  Royds Park - A            13    8    5     69
-  7.  Pudsey BC - D             14    6    8     64
-  8.  Spen Victoria - C         13    5    8     61
-  9.  Cleckheaton Sports - C    13    5    8     59
+  5.  Cleckheaton Moorend       14    8    6     74
+  6.  Royds Park - A            14    8    6     70
+  7.  Spen Victoria - C         14    6    8     70
+  8.  Pudsey BC - D             14    6    8     64
+  9.  Cleckheaton Sports - C    14    5    9     63
  10.  Heckmondwike - B          14    1   12     46
 
 === Division 4
@@ -853,12 +871,12 @@
 ====  =======================  ===  ===  ===  =====  
   1.  Rastrick - B              15   13    2    113
   2.  Gildersome - A            15   12    1    112
-  3.  Cleckheaton Sports - F    15    8    5     86
-  4.  Cleckheaton Sports - E    15    7    8     82
-  5.  Spen Victoria - D         16    7    9     81
-  6.  Heckmondwike - C          15    7    7     81
-  7.  Harold Club - C           15    8    6     80
-  8.  Cleckheaton Sports - D    15    7    7     75
+  3.  Harold Club - C           16    9    6     87
+  4.  Cleckheaton Sports - F    15    8    5     86
+  5.  Cleckheaton Sports - E    15    7    8     82
+  6.  Spen Victoria - D         16    7    9     81
+  7.  Heckmondwike - C          15    7    7     81
+  8.  Cleckheaton Sports - D    16    7    8     79
   9.  Eccleshill - B            16    4   10     63
  10.  Gildersome - B            16    3   12     56
  11.  Drighlington              15    3   12     47
@@ -946,7 +964,7 @@ Jamie Winterburn    21  Sean Carter         18
        Premier               Wed 10th Apr
      Shipley - A              Crossgates
 Matthew Jacques     21  Garreth Lally       18
-Graeme Dytiche      21  Seehra Harry         8
+Graeme Dytiche      21  Harry Seehra         8
 Steve Cooper        21  Kez Smith           19
 David Bland          9  Liam Griffin        21
 Chris Jacques       15  Steven Gilroy       21
@@ -1298,7 +1316,7 @@ Peter Farrar        21  Tommy Cater         10
       Crossgates             Swillington
 Garreth Lally       21  Thomas Scorah       16
 Jonathan Wood       12  Nathan Conlon       21
-Seehra Harry        21  Scott Normington     3
+Harry Seehra        21  Scott Normington     3
 Mark A Hughes       21  Guy Stewart          8
 Kez Smith           21  Andrew Morris        9
 Simon Walder        21  Sam Donnelly        12
@@ -1573,7 +1591,7 @@ Alex Edmondson      18  Steven Gilroy       21
 Tom Lawrence        16  Liam Griffin        21
 Chris Mordue        21  Kez Smith            7
 Josh Mordue         21  Simon Walder        16
-Ian Shaw            16  Seehra Harry        21
+Ian Shaw            16  Harry Seehra        21
 Jonathan Orbell     17  Garreth Lally       21
 Dave Smith          21  Mark A Hughes        9
 Gary Wike           20  Jonathan Wood       21
@@ -1948,7 +1966,7 @@ Liam Massey          7  Charlie Ripley      21
     Eccleshill - A            Crossgates
 Daniel Teale        11  Garreth Lally       21
 Nicky Rooks         21  Andy Hodgson        15
-Nick Bastow         21  Seehra Harry        16
+Nick Bastow         21  Harry Seehra        16
 Steve Bowes         14  Mark A Hughes       21
 Andy Howie          21  Kez Smith           20
 Andy Haran          11  Jonathan Wood       21
@@ -2272,7 +2290,7 @@ Nicky Rooks         17  Adam Varley         21
        Premier               Wed 8th May
     Littlemoor - A            Crossgates
 Mark Allman         21  Simon Walder        14
-Marc Armitage       21  Seehra Harry        15
+Marc Armitage       21  Harry Seehra        15
 Will Bedford        16  Liam Griffin        21
 Jack Bowes          13  Steven Gilroy       21
 Nathan Dobson       21  Kez Smith           19
@@ -2611,7 +2629,7 @@ Calum Fennell       21  Mick Angus          12
       Crossgates           Heckmondwike - A
 Garreth Lally       21  Sam Beresford       14
 Jonathan Wood       21  Graham Higgins       5
-Seehra Harry        21  Sean Carter         17
+Harry Seehra        21  Sean Carter         17
 Liam Griffin        19  Harley Tattersley   21
 Andy Hodgson        20  Darren Goodall      21
 Simon Walder        21  Alex Wolfenden       5
@@ -2898,7 +2916,7 @@ Jamie Winterburn    21  Steve Cooper        17
 Calum Fennell       18  Jonathan Wood       21
 Mark Brain          15  Mark A Hughes       21
 Liam Massey          9  Liam Griffin        21
-Robert McGuire      16  H Seehra            21
+Robert McGuire      16  Harry Seehra        21
 Aron Little         13  Steven Gilroy       21
 Steve Williams      21  Kez Smith           15
 Rob Lloyd           12  Simon Walder        21
@@ -3038,7 +3056,7 @@ Chris Bedford       14  Steve Bowes         21
 
        Premier               Wed 29th May
        Guiseley               Crossgates
-Graham Oliver        4  H Seehra            21
+Graham Oliver        4  Harry Seehra        21
 Chris Hight         21  Garreth Lally       20
 Ben Stockdale       16  Jonathan Wood       21
 Bob Jeffrey         21  Kez Smith           19
@@ -3989,7 +4007,7 @@ Alex Wolfenden      21  Ian Shaw            11
       Crossgates             Shipley - A
 Steven Gilroy       21  Chris Jacques        7
 Liam Griffin        21  Steve Cooper        15
-Seehra Harry        21  Matthew Jacques     16
+Harry Seehra        21  Matthew Jacques     16
 Mark A Hughes       21  Scott Bloodworth    10
 Garreth Lally       21  Graeme Dytiche       5
 Kez Smith           21  Ian Jacques         17
@@ -4338,7 +4356,7 @@ Richard Stockdale   21  Steve Williams       7
 
        Premier               Wed 3rd Jul
      Swillington              Crossgates
-Adam Conlon         17  H Seehra            21
+Adam Conlon         17  Harry Seehra        21
 Nathan Conlon       21  Mark A Hughes       11
 Matthew Littleton   16  Andy Hodgson        21
 Andrew Morris       21  Liam Griffin        11
@@ -4651,7 +4669,7 @@ Colin Matthewman    12  Dave McGourty       21
        Premier               Wed 10th Jul
       Crossgates            Pudsey BC - A
 Jonathan Wood       21  Josh Mordue         17
-Seehra Harry        21  Jonathan Orbell      8
+Harry Seehra        21  Jonathan Orbell      8
 Garreth Lally       18  Ian Shaw            21
 Liam Griffin        21  Dave Smith          17
 Simon Walder        21  Alex Edmondson      13
@@ -5003,7 +5021,7 @@ Alex Wolfenden      21  Liam Massey          7
       Crossgates            Eccleshill - A
 Steven Gilroy       21  Andy Howie           8
 Liam Griffin        20  Stephen Bastow      21
-Seehra Harry        21  Nicky Rooks          2
+Harry Seehra        21  Nicky Rooks          2
 Andy Hodgson        21  Mick Angus          19
 Mark A Hughes       21  Andy Haran           9
 Garreth Lally       21  Nick Bastow         18
@@ -5299,6 +5317,32 @@ James Skelton       15  Philip Rann         21
          Points:     6           Points:     4
 
        Premier               Wed 24th Jul
+   Castleford Town          Pudsey BC - A
+Calum Fennell       21  Ian Shaw            12
+Robert McGuire      21  Jamie Winterburn    14
+Peter Farrar        21  Alex Edmondson      16
+Steve Williams      21  Josh Mordue         17
+Darryl Harrap       21  Dave Smith          18
+Ryan Tankard-Little 11  Jonathan Orbell     21
+Alwyn Beedel         9  Chris Mordue        21
+Aron Little          6  Mason Lindley       21
+      Aggregate:   131        Aggregate:   140
+         Points:     5           Points:     6
+
+       Premier               Wed 24th Jul
+     Shipley - A           Heckmondwike - A
+Chris Bedford       21  Sean Carter         10
+Chris Jacques       20  Harley Tattersley   21
+Graeme Dytiche      19  Sam Beresford       21
+Paul Wilczynski     21  Charlie Ripley      19
+Craig Fenton        21  Jacob Goodall        9
+Steve Cooper        21  Darren Goodall       8
+David Bland         13  Graham Higgins      21
+Matthew Jacques     14  Alex Wolfenden      21
+      Aggregate:   150        Aggregate:   130
+         Points:     6           Points:     4
+
+       Premier               Wed 24th Jul
        Whitkirk             Eccleshill - A
 Paul Hardy          14  Andy Haran          21
 Lewis Cooper        20  Nick Bastow         21
@@ -5310,6 +5354,19 @@ Emma Tobin          21  Paul Rooks          10
 Amy Tobin           19  Nicky Rooks         21
       Aggregate:   137        Aggregate:   148
          Points:     3           Points:     8
+
+       Premier               Wed 24th Jul
+      Crossgates            Littlemoor - A
+Garreth Lally       21  Will Bedford         6
+Jonathan Wood       21  Kevin Siddle        10
+Harry Seehra        21  Paul Bowes          15
+Mark A Hughes       21  Craig Hebbard       14
+Andy Hodgson        21  Mark Allman         13
+Simon Walder        21  Nathan Dobson       17
+Steven Gilroy       16  Lee Wider           21
+Kez Smith           21  Martin Fulton       16
+      Aggregate:   163        Aggregate:   112
+         Points:     9           Points:     1
 
        Premier               Wed 24th Jul
        Guiseley              Swillington
@@ -5325,6 +5382,19 @@ James Teale         21  David Waldron       18
          Points:    10           Points:     0
 
       Division 1             Wed 24th Jul
+    Littlemoor - B        Spen Victoria - A
+John Stocks         21  John Blackburn       5
+Angela Carter       11  Chris Ellis         21
+Jim Moorin          21  Peter Ellis         14
+Stuart Watson       16  Philip Bryant       21
+Philip Thornton     18  Mark Goodall        21
+Andy Marshall       10  Mark Ellis          21
+Alan Mazurke        21  Debi Davis          17
+Steve Longley       21  Garry Walker        15
+      Aggregate:   139        Aggregate:   135
+         Points:     6           Points:     4
+
+      Division 1             Wed 24th Jul
     Chapel Street       Cleckheaton Sports - A
 Paul Tobin          21  Andy Walker         12
 Stan Elwell         16  Tony Throup         21
@@ -5335,6 +5405,19 @@ David Lightfoot     21  Tim Hall            18
 Michael Wood        21  Josh Walker          9
 Duncan Ruddlesden   21  Michael Rhodes      11
       Aggregate:   163        Aggregate:   116
+         Points:     9           Points:     1
+
+      Division 1             Wed 24th Jul
+    Pudsey BC - B           Hanging Heaton
+David Hilliam       17  Michael Armitage    21
+Craig Farquharson   21  David Collinson      8
+Steve Morris        21  Tony Render          9
+Dave Rankin         21  Derek North         11
+Matthew Leaf        21  Stephen Wainwright  10
+Simon Metcalfe      21  Kath Robinson       13
+Duncan Reeves       21  David Armitage      14
+Kevin Rankin        21  Malcolm Preston     15
+      Aggregate:   164        Aggregate:   101
          Points:     9           Points:     1
 
       Division 1             Wed 24th Jul
@@ -5362,6 +5445,19 @@ Andrew Foggo        21  Mark Connolly       13
 Neil Shaw           21  Nigel Briggs        17
       Aggregate:   154        Aggregate:   146
          Points:     7           Points:     3
+
+      Division 2             Wed 24th Jul
+   Harold Club - B             Farsley
+Joe Mellor          15  Duncan McPhail      21
+Mick Walton         21  Derek Pickering     17
+Eddie Hill          21  Richard Whitaker     8
+Andy Malone         21  Peter Crowther      12
+Andrew Stocks       18  Daniel Beardsworth  21
+Andrew Jacobs       21  Jim Swailes         19
+Martin Watson        6  Peter Scott         21
+Shaun Godfrey       19  Graham Petty        21
+      Aggregate:   142        Aggregate:   140
+         Points:     6           Points:     4
 
       Division 2             Wed 24th Jul
 Cleckheaton Sports - B       Shipley - B
@@ -5403,6 +5499,19 @@ Lance Greenwood     12  David Billington    21
          Points:     2           Points:     9
 
       Division 3             Wed 24th Jul
+  Spen Victoria - C         Royds Park - A
+Terry Varney        21  Robert Hoyle         4
+Trevor Austin       21  Barbara Johnstone   17
+Tim Miller          21  Gareth Harwood      19
+Dave Hutton         21  David Nightingale   18
+John Smith           7  Philip Rann         21
+Michael Griffiths   21  David Broadhead     17
+Mel Blackburn       21  Richard Hemingway    5
+Michael Potter      21  Susan Bentley       10
+      Aggregate:   154        Aggregate:   111
+         Points:     9           Points:     1
+
+      Division 3             Wed 24th Jul
    Heckmondwike - B      Brighouse Sports - C
 Eric Franks         19  Corey Fountian      21
 Gerald Bromley      21  Ryan Collins         7
@@ -5427,6 +5536,19 @@ David Renshaw        9  Taylor Smith        21
 John Greenhalgh     21  Richard Hodgson     18
       Aggregate:   139        Aggregate:   129
          Points:     6           Points:     4
+
+      Division 3             Wed 24th Jul
+   New Farnley - B       Cleckheaton Moorend
+Andy Gardener       21  Ian Northrop        14
+Jean Milner         21  Lawrie Bairstow     17
+Harry Dixon         21  Lee Collinson       11
+James Skelton       21  Mick Stewart         8
+Roger Milner        21  Frank Turnbull       8
+David J Taylor      21  Philip Long         18
+Dave Taylor         14  David Lloyd         21
+Jake Skelton        17  Robert Spink        21
+      Aggregate:   157        Aggregate:   118
+         Points:     8           Points:     2
 
       Division 4             Wed 24th Jul
     Gildersome - A      Cleckheaton Sports - F
@@ -5468,6 +5590,19 @@ Derek Warriner      21  Graham Ward         17
          Points:     4           Points:     7
 
       Division 4             Wed 24th Jul
+Cleckheaton Sports - D     Harold Club - C
+Alan Holmes         21  Stephen Council     13
+Gillian Shore       21  Mark Gummery        18
+Janet Inness        21  Stuart Davis         6
+Linda Potter        13  Ian Boldy           21
+David Holmes        12  Sue Williamson      21
+David Priestley      9  Carl Maguire        21
+Jacqui Bateson      15  Tony Godfrey        21
+Chris Piercy        21  Dave Hill           19
+      Aggregate:   133        Aggregate:   140
+         Points:     4           Points:     7
+
+      Division 4             Wed 24th Jul
     Eccleshill - B          Gildersome - B
 Brian Barker        11  David Rawson        21
 Dot Shaw             8  Frank Hales         21
@@ -5479,5 +5614,31 @@ Sarah Harrison      21  Neil Schofield      17
 John Griffin        21  Tony Morris         10
       Aggregate:   135        Aggregate:   132
          Points:     7           Points:     3
+
+      Division 2             Thu 25th Jul
+    Pudsey BC - C          New Farnley - A
+Wendy Shimbles      16  Paul Jagger         21
+Lynn Noonan          9  Sophie Worrall      21
+Thomas Morris       21  Paul Wood           15
+Sue Chadwick        21  Andrew Thompson     11
+Steve Harwood       16  Simon Lavan         21
+Jake Daggett        17  Ian Lynch           21
+Peter Simpson       21  Ian Worrall         13
+Sam Hunak           11  Ryan Lynch          21
+      Aggregate:   132        Aggregate:   144
+         Points:     3           Points:     8
+
+      Division 3             Thu 25th Jul
+Cleckheaton Sports - C       Rastrick - A
+Keith Barlow        21  Joshua Smith        20
+Ian Gatenby         14  Robert Laycock      21
+Jack Glazzard        4  David Wood          21
+Chris Bray          21  Roy Chapman         14
+Bradley Throup      21  Derek Hanner        14
+Matthew Terry       21  David Stuart        13
+Alex Green          17  Paul Pendleton      21
+David Griffiths     20  Geoff Normanton     21
+      Aggregate:   139        Aggregate:   145
+         Points:     4           Points:     7
 
 
