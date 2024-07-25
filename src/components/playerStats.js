@@ -274,7 +274,7 @@ function PlayerStats(props) {
                     searchedPlayerName.toLowerCase() === 'show all') &&
                 returnStatsTable()}
 
-            {/* Shows Summary of all players stats since 2022 */}
+            {/* Shows Summary of all players stats for all years */}
             {showStatsSinceStart &&
                 !loading &&
                 statsForEveryYearArray.length >= 1 && (

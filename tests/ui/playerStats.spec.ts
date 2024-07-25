@@ -74,14 +74,14 @@ test('Summary of Andy Marshall stats for singles games for team are correct', as
   playerStatsPage.playerStatsAreCorrectInTable('36', '30', '83%', '5.81');
 });
 
-test('Summary of Dave Hudson stats since 2022 for team are correct', async () => {
+test('Summary of Dave Hudson stats for all years for team are correct', async () => {
   playerStatsPage.setPlayerToFind('dave hudson');
 
   await playerStatsPage.selectSince2022Checkbox();
   playerStatsPage.playerStatsAreCorrectInTable('14', '7', '50%', '-1.00');
 });
 
-test('Summary of Bernie Miller stats since 2022 for team are correct', async () => {
+test('Summary of Bernie Miller stats for all years for team are correct', async () => {
   playerStatsPage.setPlayerToFind('bernie miller');
 
   await playerStatsPage.selectSince2022Checkbox();

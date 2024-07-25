@@ -107,7 +107,7 @@ test('Summary of Neil Porter stats for singles and pairs games for all teams is 
   playerStatsPage.playerStatsAreCorrectInTable('2', '2', '100%', '9.5');
 });
 
-test('Summary of Dave Hudson stats since 2022 for all teams is correct', async () => {
+test('Summary of Dave Hudson stats for all years for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('dave hudson');
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
@@ -115,7 +115,7 @@ test('Summary of Dave Hudson stats since 2022 for all teams is correct', async (
   playerStatsPage.playerStatsAreCorrectInTable('70', '24', '34%', '-2.83');
 });
 
-test('Summary of Bernie Miller stats since 2022 for all teams is correct', async () => {
+test('Summary of Bernie Miller stats for all years for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('bernie miller');
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
