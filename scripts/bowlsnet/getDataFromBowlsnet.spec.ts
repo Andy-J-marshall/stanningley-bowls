@@ -7,8 +7,7 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
-// const year = new Date().getFullYear();
-const year = 2013 // TODO change back
+const year = new Date().getFullYear();
 
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
@@ -101,75 +100,52 @@ for (const team of teams) {
     } catch (error) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
-
-    // TODO remove this section
-    // Select year
+    
+    // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('LIVE')
+      .getByText('Info.')
       .click();
-    const page1Promise = page.waitForEvent('popup');
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .frameLocator('iframe[title="BowlsNet Dlg"]')
-      .getByRole('cell', { name: year.toString() })
+      .getByRole('button', { name: 'League Report...' })
       .click();
-    const page1 = await page1Promise;
-    
-    // Navigate to reports
-    await page1
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Report')
-      .click();
-      // TODO remove
 
-      
-    // TODO add this back in
-    // await page
-    //   .frameLocator('iframe[title="BowlsNet Page"]')
-    //   .getByText('Info.')
-    //   .click();
-    // await page
-    //   .frameLocator('iframe[title="BowlsNet Page"]')
-    //   .frameLocator('iframe[title="BowlsNet Dlg"]')
-    //   .getByRole('button', { name: 'League Report...' })
-    //   .click();
-
-    // TODO change back to page rather than page1
     // Choose report options
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .getByText('Output Tables')
       .click();
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .getByText('Output Selected Results')
       .click();
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .getByText('Output Full Results')
       .click();
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .locator('select[name="oResF"]')
       .selectOption({ index: 1 });
-    const dateOptionCount = await page1
+    const dateOptionCount = await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .locator('select[name="oResT"] > option')
       .count();
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .locator('select[name="oResT"]')
       .selectOption({ index: dateOptionCount - 1 });
-    await page1
+    await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .getByRole('button', { name: 'Generate Report' })
       .click();
 
-    await page1.frameLocator('#x-Pframe').locator('#oResFull').check();
+    await page.frameLocator('#x-Pframe').locator('#oResFull').check();
     const [newPage] = await Promise.all([
       context.waitForEvent('page'),
-      await page1.frameLocator('#x-Pframe').locator('#dRBtn').click(),
+      await page.frameLocator('#x-Pframe').locator('#dRBtn').click(),
     ]);
 
     // Create text file
