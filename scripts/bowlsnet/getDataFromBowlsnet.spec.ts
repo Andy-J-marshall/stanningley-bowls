@@ -55,11 +55,6 @@ const teams = [
     day: 'Monday AireDale & Wharfedale',
     url: '/AW-Mon',
   },
-  // TODO remove WedSingles
-  {
-    day: 'Wednesday AireDale & Wharfedale',
-    url: '/AW-WedSingles',
-  },
   {
     day: 'Tuesday AireDale & Wharfedale',
     url: '/AW-Vets',
