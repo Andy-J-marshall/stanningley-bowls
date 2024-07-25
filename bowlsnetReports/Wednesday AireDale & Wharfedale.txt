@@ -1,5 +1,5 @@
 === AireDale &amp; Wharfedale (Wed. Singles) 2024
-=== League Report (as of Wed 24th Jul)
+=== League Report (as of Thu 25th Jul)
 
 
 === RESULTS: Wed 3rd Apr to Wed 25th Sep
@@ -440,6 +440,7 @@
   1:30pm  Salts A                       11   134   v.   Ilkley A                      17   148                            
   1:30pm  Myrtle Park A                 10   128   v.   Baildon A                     18   151                            
   1:30pm  Grove Hill A                  10   123   v.   Rawdon A                      18   151                            
+  1:30pm  Oxenhope                      17   143   v.   Skipton Craven                11   128                            
   1:30pm  Rufford A                     21   160   v.   Calverley                      7   110                            
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Time                 Wed 24th Jul                                   Division 2                                                               
@@ -466,15 +467,15 @@
 ====  =====================  ===  ===  ===  =====  
   1.  Ilkley A                13   12    1    263
   2.  Rufford A               12    9    2    207
-  3.  Salts A                 13    5    7    183
-  4.  Rawdon A                13    6    7    179
-  5.  Oxenhope                12    6    6    174
+  3.  Oxenhope                13    7    6    191
+  4.  Salts A                 13    5    7    183
+  5.  Rawdon A                13    6    7    179
   6.  Baildon A               13    6    7    174
   7.  Skipton Broughton       11    7    3    161
   8.  Calverley               12    3    9    139
-  9.  Grove Hill A            13    4    9    137
- 10.  Myrtle Park A           11    4    6    131
- 11.  Skipton Craven          11    3    8    128
+  9.  Skipton Craven          12    3    9    139
+ 10.  Grove Hill A            13    4    9    137
+ 11.  Myrtle Park A           11    4    6    131
 
 === Division 2
                                 Matches     Pnts
@@ -3613,6 +3614,20 @@ Neil Jameson          21  Gordon Longfellow     17
         Aggregate:   123          Aggregate:   151
             Games:     3              Games:     5
            Points:    10             Points:    18
+
+       Division 1               Wed 24th Jul
+        Oxenhope               Skipton Craven
+Stephen Lloyd         21  Alan Pickering        13
+Trevor Douglas         9  Edmond Wray           21
+Colin Bilney          21  David Jubb            16
+Derek Pollard         21  Joshua Titorenko       5
+Steve Griffiths       21  Gary Bailey           18
+Lorraine Douglas      18  Warren Burnett        21
+Amy Hemsley           21  Mel Titerenko         13
+Mary Hemsley          11  Mick Demain           21
+        Aggregate:   143          Aggregate:   128
+            Games:     5              Games:     3
+           Points:    17             Points:    11
 
        Division 1               Wed 24th Jul
        Rufford A                 Calverley

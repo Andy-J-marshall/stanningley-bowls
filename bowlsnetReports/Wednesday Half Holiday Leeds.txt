@@ -1,5 +1,5 @@
 === Leeds &amp; District (Half Holiday) 2024
-=== League Report (as of Wed 24th Jul)
+=== League Report (as of Thu 25th Jul)
 
 
 === RESULTS: Wed 10th Apr to Wed 11th Sep
@@ -425,8 +425,9 @@
  Time                Wed 24th Jul                                    Div 3                                                
 -----------------------------------------------------------------------------------------------------------------------------------
  1:30pm  Methley                      21   101   v.   Scatcherd Park A           23   111                        
+ 1:30pm  Whitkirk BC B                29   125   v.   Middleton Comm A            8    47                        
  1:30pm  Gildersome B                 25   108   v.   Moor Allerton B            22   105                        
- 1:30pm  Chapel Allerton              25   110   v.   Fearnville                 18    87                        
+ 1:30pm  Chapel Allerton              25   110   v.   Fearnville                 16    79                        
 -----------------------------------------------------------------------------------------------------------------------------------
  Time                Wed 24th Jul                                    Div 4                                                
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -474,11 +475,11 @@
 ====  ===================  ===  ===  ===  =====  
   1.  Chapel Allerton       12    8    2    300
   2.  Scatcherd Park A      12   10    1    290
-  3.  Moor Allerton B       12    5    7    264
-  4.  Whitkirk BC B         11    6    4    242
-  5.  Fearnville            11    6    5    231
+  3.  Whitkirk BC B         12    7    4    271
+  4.  Moor Allerton B       12    5    7    264
+  5.  Fearnville            11    6    5    229
   6.  Methley               10    3    7    209
-  7.  Middleton Comm A       8    1    5    155
+  7.  Middleton Comm A       9    1    6    163
   8.  Gildersome B          10    1    9    153
 
 === Div 4
@@ -2818,11 +2819,22 @@ Roger Boyes         7  Ray Ball             21
          Points:   21             Points:   23
 
         Div 3               Wed 24th Jul
+    Whitkirk BC B         Middleton Comm A
+Kevin Collins      20  Barbara Ragan        21
+Jenny Mullins      21  Malcolm Cameron      13
+Hannah Risley      21  Malcolm Hallas        4
+John Hardwick      21  Terry Maher           2
+Tony Bond          21  Brian Ragan           1
+Marian McDonald    21  Christine Glynn       6
+      Aggregate:  125          Aggregate:   47
+         Points:   29             Points:    8
+
+        Div 3               Wed 24th Jul
     Gildersome B           Moor Allerton B
 Neil Schofield     21  Peter Aves           15
 Bev Farrar         21  Ian Lee              20
 Mick Ross          21  George Ramsden       17
-David Rawson        5  Rodney Cundle        21
+David Rawson        5  Stephen Lee          21
 Frank Hales        19  Ian Franklin         21
 Simon Hampshaw     21  Mike Gould           11
       Aggregate:  108          Aggregate:  105
@@ -2830,14 +2842,14 @@ Simon Hampshaw     21  Mike Gould           11
 
         Div 3               Wed 24th Jul
    Chapel Allerton           Fearnville
-Royce Jackson      21  Fraser Douglas       18
+Royce Jackson      21  Fraser Douglas       10
 Alex McSheehy      21  Stella Gibbons        3
 Andrew Paxton      10  Paul Foster          21
 Ian McMillin       21  Stuart Poulter       14
 Joe Hanakin        16  Mary Black           21
 Chris Jones        21  Madge Cass           10
-      Aggregate:  110          Aggregate:   87
-         Points:   25             Points:   18
+      Aggregate:  110          Aggregate:   79
+         Points:   25             Points:   16
 
         Div 4               Wed 24th Jul
       Cranmore              Grove Road B
