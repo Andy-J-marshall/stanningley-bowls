@@ -7,6 +7,8 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
+const year = new Date().getFullYear();
+
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
 }
@@ -147,7 +149,7 @@ for (const team of teams) {
     ]);
 
     // Create text file
-    const filePath = `./bowlsnetReports/${team.day}.txt`;
+    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     await newPage.bringToFront();
     const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
     fs.writeFileSync(filePath, value);

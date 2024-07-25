@@ -29,7 +29,7 @@ for league in leaguesDays:
     leaguesProcessed.append(league)
 
     # Goes through each sheet in turn
-    with open('bowlsnetReports/' + league + '.txt', 'r') as file:
+    with open('bowlsnetReports/' + year + '/' + league + '.txt', 'r') as file:
         print('Updating Stats: ' + league)
         allRowsInFile = file.readlines()
 

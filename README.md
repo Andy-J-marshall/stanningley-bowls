@@ -155,6 +155,8 @@ Update team info in all components:
 
 Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
 
+Create a directory for the new year in the `/bowlsnetReports`.
+
 Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
