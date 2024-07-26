@@ -16,7 +16,7 @@ Gildersome B            3   110   v.   Bramley Pk A            7   148
 ----------------------------------------------------------------------------
 Armley Pk B             9   155   v.   West Royd Park'B'       1    83     
 Cross Flatts Pk A       7   164   v.   Cross Flatts Pk B       3   121     
-Stanningley Pk B        9   162   v.   Scatcherd Pk C          1   117     
+Stanningley Park B        9   162   v.   Scatcherd Pk C          1   117     
 Pudsey Pk A             8   161   v.   Pudsey Pk B             2   105     
 Bramley Pk B            6   129   v.   Western Flatts B        4   117     
 
@@ -33,7 +33,7 @@ Middleton Community     7   157   v.   Hunslet Moor            3   127
 ----------------------------------------------------------------------------
 Cross Flatts Pk B       4   111   v.   Armley Pk B             6   158     
 Scatcherd Pk C          3   123   v.   Cross Flatts Pk A       7   125     
-Pudsey Pk B             8   140   v.   Stanningley Pk B        2   119     
+Pudsey Pk B             8   140   v.   Stanningley Park B        2   119     
 Western Flatts B        8   141   v.   Holbeck Moor            2    91     
 West Royd Park'B'       4   123   v.   Bramley Pk B            6   139     
 
@@ -66,7 +66,7 @@ Churwell Pk             8   142   v.   Gildersome B            2   108
           Thu 1st May                            Division 2                
 ----------------------------------------------------------------------------
 Pudsey Pk B             1    90   v.   Armley Pk B             9   167     
-Western Flatts B        6   134   v.   Stanningley Pk B        4   126     
+Western Flatts B        6   134   v.   Stanningley Park B        4   126     
 West Royd Park'B'       3   109   v.   Pudsey Pk A             7   145     
 Cross Flatts Pk B       4   105   v.   Holbeck Moor            6   151     
 Scatcherd Pk C          7   139   v.   Bramley Pk B            3   135     
@@ -83,7 +83,7 @@ Cranmore                4   134   v.   Churwell Pk             6   149
           Thu 8th May                            Division 2                
 ----------------------------------------------------------------------------
 Cross Flatts Pk A       6   142   v.   Western Flatts B        4   124     
-Stanningley Pk B        7   143   v.   West Royd Park'B'       3   116     
+Stanningley Park B        7   143   v.   West Royd Park'B'       3   116     
 Pudsey Pk A             8   150   v.   Cross Flatts Pk B       2   106     
 Holbeck Moor            6   142   v.   Scatcherd Pk C          4   123     
 Bramley Pk B            4   124   v.   Pudsey Pk B             6   126     
@@ -101,7 +101,7 @@ Middleton Community    10   168   v.   Gildersome B            0    97
 ----------------------------------------------------------------------------
 Western Flatts B        6   142   v.   Armley Pk B             4   133     
 West Royd Park'B'       3   115   v.   Cross Flatts Pk A       7   139     
-Cross Flatts Pk B       8   165   v.   Stanningley Pk B        2    98     
+Cross Flatts Pk B       8   165   v.   Stanningley Park B        2    98     
 Scatcherd Pk C          3   116   v.   Pudsey Pk A             7   135     
 Pudsey Pk B             7   130   v.   Holbeck Moor            3   125     
 
@@ -118,7 +118,7 @@ Middleton Community     7   145   v.   The Hollies S &amp; SC      3   141
 ----------------------------------------------------------------------------
 Armley Pk B             7   139   v.   Bramley Pk B            3   119     
 Cross Flatts Pk A       7   120   v.   Holbeck Moor            3    97     
-Stanningley Pk B        0   115   v.   Pudsey Pk A            10   168     
+Stanningley Park B        0   115   v.   Pudsey Pk A            10   168     
 Western Flatts B        8   151   v.   West Royd Park'B'       2    93     
 Pudsey Pk B             6   137   v.   Scatcherd Pk C          4   130     
 
@@ -135,7 +135,7 @@ Churwell Pk             7   154   v.   Bramley Pk A            3   111
 ----------------------------------------------------------------------------
 Holbeck Moor            3   124   v.   Armley Pk B             7   138     
 Pudsey Pk A             6   137   v.   Cross Flatts Pk A       4   125     
-Bramley Pk B            4   133   v.   Stanningley Pk B        6   134     
+Bramley Pk B            4   133   v.   Stanningley Park B        6   134     
 Cross Flatts Pk B       7   145   v.   Pudsey Pk B             3   123     
 Scatcherd Pk C          2   124   v.   Western Flatts B        8   149     
 
@@ -151,7 +151,7 @@ Bramley Pk A            9   165   v.   Middleton Community     1   100
           Thu 5th Jun                            Division 2                
 ----------------------------------------------------------------------------
 Armley Pk B             7   148   v.   Pudsey Pk A             3   131     
-Stanningley Pk B        4   125   v.   Cross Flatts Pk A       6   161     
+Stanningley Park B        4   125   v.   Cross Flatts Pk A       6   161     
 Holbeck Moor            6   140   v.   Bramley Pk B            4   114     
 Pudsey Pk B             7   130   v.   West Royd Park'B'       3   115     
 Cross Flatts Pk B       2   115   v.   Scatcherd Pk C          8   146     
@@ -167,7 +167,7 @@ Bramley Pk A            6   145   v.   The Hollies S &amp; SC      4   130
 ----------------------------------------------------------------------------
          Thu 12th Jun                            Division 2                
 ----------------------------------------------------------------------------
-Stanningley Pk B        2   107   v.   Armley Pk B             8   139     
+Stanningley Park B        2   107   v.   Armley Pk B             8   139     
 Cross Flatts Pk A       8   157   v.   Bramley Pk B            2    97     
 Pudsey Pk A             7   145   v.   Holbeck Moor            3   127     
 West Royd Park'B'       8   145   v.   Scatcherd Pk C          2   117     
@@ -185,7 +185,7 @@ Churwell Pk             7   151   v.   Middleton Community     3   124
          Thu 19th Jun                            Division 2                
 ----------------------------------------------------------------------------
 Armley Pk B             9   161   v.   Cross Flatts Pk A       1   129     
-Holbeck Moor            7   148   v.   Stanningley Pk B        3   127     
+Holbeck Moor            7   148   v.   Stanningley Park B        3   127     
 Bramley Pk B            2   105   v.   Pudsey Pk A             8   149     
 Cross Flatts Pk B       7   140   v.   West Royd Park'B'       3   125     
 Pudsey Pk B             4   119   v.   Western Flatts B        6   155     
@@ -203,7 +203,7 @@ Bramley Pk A            8   151   v.   Gildersome B            2   108
 ----------------------------------------------------------------------------
 West Royd Park'B'       2   127   v.   Armley Pk B             8   148     
 Cross Flatts Pk B       6   138   v.   Cross Flatts Pk A       4   133     
-Scatcherd Pk C          9   157   v.   Stanningley Pk B        1   116     
+Scatcherd Pk C          9   157   v.   Stanningley Park B        1   116     
 Pudsey Pk B             4   126   v.   Pudsey Pk A             6   144     
 Western Flatts B       10   168   v.   Bramley Pk B            0    90     
 
@@ -220,7 +220,7 @@ Gildersome B            6   130   v.   New Wortley             4   127
 ----------------------------------------------------------------------------
 Armley Pk B             9   167   v.   Cross Flatts Pk B       1    77     
 Cross Flatts Pk A       6   148   v.   Scatcherd Pk C          4   127     
-Stanningley Pk B        4   111   v.   Pudsey Pk B             6   138     
+Stanningley Park B        4   111   v.   Pudsey Pk B             6   138     
 Holbeck Moor            1   121   v.   Western Flatts B        9   161     
 Bramley Pk B            8   135   v.   West Royd Park'B'       2   109     
 
@@ -253,7 +253,7 @@ Gildersome B            6   154   v.   Churwell Pk             4   140
          Thu 31st Jul                            Division 2                
 ----------------------------------------------------------------------------
 Armley Pk B             7   148   v.   Pudsey Pk B             3   119     
-Stanningley Pk B        1   117   v.   Western Flatts B        9   157     
+Stanningley Park B        1   117   v.   Western Flatts B        9   157     
 Pudsey Pk A            10   168   v.   West Royd Park'B'       0    79     
 Holbeck Moor            8   146   v.   Cross Flatts Pk B       2   102     
 Bramley Pk B            7   140   v.   Scatcherd Pk C          3   118     
@@ -270,7 +270,7 @@ Churwell Pk             9   167   v.   Cranmore                1   103
           Thu 7th Aug                            Division 2                
 ----------------------------------------------------------------------------
 Western Flatts B        8   151   v.   Cross Flatts Pk A       2   136     
-West Royd Park'B'       1   125   v.   Stanningley Pk B        9   167     
+West Royd Park'B'       1   125   v.   Stanningley Park B        9   167     
 Cross Flatts Pk B       2    87   v.   Pudsey Pk A             8   158     
 Scatcherd Pk C          4   114   v.   Holbeck Moor            6   123     
 Pudsey Pk B             7   147   v.   Bramley Pk B            3   135     
@@ -288,7 +288,7 @@ Gildersome B            2   133   v.   Middleton Community     8   153
 ----------------------------------------------------------------------------
 Armley Pk B             5   130   v.   Western Flatts B        5   126     
 Cross Flatts Pk A       9   167   v.   West Royd Park'B'       1    98     
-Stanningley Pk B        7   146   v.   Cross Flatts Pk B       3   100     
+Stanningley Park B        7   146   v.   Cross Flatts Pk B       3   100     
 Pudsey Pk A            10   168   v.   Scatcherd Pk C          0    77     
 Holbeck Moor            8   155   v.   Pudsey Pk B             2   115     
 
@@ -305,7 +305,7 @@ The Hollies S &amp; SC      2   110   v.   Middleton Community     8   153
 ----------------------------------------------------------------------------
 Bramley Pk B            4   104   v.   Armley Pk B             6   132     
 Holbeck Moor            4   107   v.   Cross Flatts Pk A       6   139     
-Pudsey Pk A             8   154   v.   Stanningley Pk B        2   112     
+Pudsey Pk A             8   154   v.   Stanningley Park B        2   112     
 West Royd Park'B'       1    83   v.   Western Flatts B        9   162     
 Scatcherd Pk C          6   129   v.   Pudsey Pk B             4   116     
 
@@ -322,7 +322,7 @@ Bramley Pk A            7   137   v.   Churwell Pk             3   131
 ----------------------------------------------------------------------------
 Armley Pk B             3   129   v.   Holbeck Moor            7   139     
 Cross Flatts Pk A       5   142   v.   Pudsey Pk A             5   145     
-Stanningley Pk B        8   161   v.   Bramley Pk B            2   119     
+Stanningley Park B        8   161   v.   Bramley Pk B            2   119     
 Pudsey Pk B             6   128   v.   Cross Flatts Pk B       4   125     
 Western Flatts B       10   168   v.   Scatcherd Pk C          0    80     
 
@@ -338,7 +338,7 @@ Middleton Community     8   159   v.   Bramley Pk A            2   123
          Thu 11th Sep                            Division 2                
 ----------------------------------------------------------------------------
 Pudsey Pk A             7   151   v.   Armley Pk B             3   100     
-Cross Flatts Pk A       4   133   v.   Stanningley Pk B        6   142     
+Cross Flatts Pk A       4   133   v.   Stanningley Park B        6   142     
 Bramley Pk B            7   150   v.   Holbeck Moor            3   126     
 West Royd Park'B'       6   142   v.   Pudsey Pk B             4   126     
 Scatcherd Pk C          6   131   v.   Cross Flatts Pk B       4   116     
@@ -354,7 +354,7 @@ The Hollies S &amp; SC      7   141   v.   Bramley Pk A            3   122
 ----------------------------------------------------------------------------
          Thu 18th Sep                            Division 2                
 ----------------------------------------------------------------------------
-Armley Pk B             8   143   v.   Stanningley Pk B        2   110     
+Armley Pk B             8   143   v.   Stanningley Park B        2   110     
 Bramley Pk B            4   112   v.   Cross Flatts Pk A       6   135     
 Holbeck Moor            2    89   v.   Pudsey Pk A             8   151     
 Scatcherd Pk C          6   133   v.   West Royd Park'B'       4   127     
@@ -374,7 +374,7 @@ Middleton Community     5   141   v.   Churwell Pk             5   137
 Western Flatts B        8   165   v.   Pudsey Pk B             2   111     
 West Royd Park'B'       3   130   v.   Cross Flatts Pk B       7   144     
 Pudsey Pk A             8   166   v.   Bramley Pk B            2    93     
-Stanningley Pk B        8   143   v.   Holbeck Moor            2   104     
+Stanningley Park B        8   143   v.   Holbeck Moor            2   104     
 Cross Flatts Pk A       7   153   v.   Armley Pk B             3   138     
 
 
@@ -405,7 +405,7 @@ Cross Flatts Pk A       7   153   v.   Armley Pk B             3   138
   4.  Cross Flatts Pk A      20   14    5    115
   5.  Holbeck Moor           20   10   10     95
   6.  Pudsey Pk B            20    8   12     89
-  7.  Stanningley Pk B       20    8   12     87
+  7.  Stanningley Park B       20    8   12     87
   8.  Bramley Pk B           20    7   13     84
   9.  Scatcherd Pk C         20    6   14     78
  10.  Cross Flatts Pk B      20    5   15     75
@@ -505,7 +505,7 @@ Brian Weatherill     21  Eric Mitchell        6
           Points:     7           Points:     3
 
       Division 2              Thu 10th Apr
-   Stanningley Pk B          Scatcherd Pk C
+   Stanningley Park B          Scatcherd Pk C
 Marjorie Taylor      15  Keith Wakelin       21
 Dorothy Heslewood    21  Betty Falkinder     20
 Gordon Taylor        21  Joan Middleton      16
@@ -635,7 +635,7 @@ Joan Middleton        8  Brian Weatherill    21
           Points:     3           Points:     7
 
       Division 2              Thu 17th Apr
-      Pudsey Pk B           Stanningley Pk B
+      Pudsey Pk B           Stanningley Park B
 Val Ellis            21  June Mitchell       12
 Colin Webb           21  Dorothy Heslewood   14
 Janet Pearson        21  Derek Wilson         9
@@ -882,7 +882,7 @@ Ken Armitage          9  Arthur Senior       21
           Points:     1           Points:     9
 
       Division 2              Thu 1st May
-   Western Flatts B         Stanningley Pk B
+   Western Flatts B         Stanningley Park B
 Lillian Pickles      18  Bernard Miller      21
 Glynis Ash           21  Dorothy Heslewood    7
 Hazel Goodall        21  Marjorie Taylor      8
@@ -1012,7 +1012,7 @@ Brian Weatherill     17  Derek Howell        21
           Points:     6           Points:     4
 
       Division 2              Thu 8th May
-   Stanningley Pk B        West Royd Park'B'
+   Stanningley Park B        West Royd Park'B'
 June Mitchell         7  Richard Tatum       21
 Gordon Taylor        21  Colin Pontefract    16
 Maureen Boyce        12  Barbara Hunt        21
@@ -1155,7 +1155,7 @@ Paul Whitehead       21  John Harvey         20
           Points:     3           Points:     7
 
       Division 2              Thu 15th May
-   Cross Flatts Pk B        Stanningley Pk B
+   Cross Flatts Pk B        Stanningley Park B
 Chris Duffy          21  Derek Wilson         9
 Albert Kay           21  Marjorie Taylor      6
 Margaret Goode       21  June Mitchell       12
@@ -1285,7 +1285,7 @@ Brian Weatherill     21  Annice Wood         12
           Points:     7           Points:     3
 
       Division 2              Thu 22nd May
-   Stanningley Pk B           Pudsey Pk A
+   Stanningley Park B           Pudsey Pk A
 June Mitchell        11  Jean Hall           21
 Marjorie Taylor      20  Eric Johnys         21
 Shirley Sandilands   19  Rowland Bennett     21
@@ -1415,7 +1415,7 @@ Shirley Rhodes       21  John Harvey         11
           Points:     6           Points:     4
 
       Division 2              Thu 29th May
-     Bramley Pk B           Stanningley Pk B
+     Bramley Pk B           Stanningley Park B
 Leslie Deighton      10  Maureen Boyce       21
 Brenda Johnson        9  Dorothy Heslewood   21
 Ina Gray             12  Derek Wilson        21
@@ -1532,7 +1532,7 @@ Arthur Senior        21  Eric Johnys         16
           Points:     7           Points:     3
 
       Division 2              Thu 5th Jun
-   Stanningley Pk B        Cross Flatts Pk A
+   Stanningley Park B        Cross Flatts Pk A
 June Mitchell        21  Chris Johnson       20
 Maureen Boyce         8  Brenda Walton       21
 Bernard Miller       21  Brian Weatherill    20
@@ -1649,7 +1649,7 @@ Kevin Morley         19  Alex McCartney      21
           Points:     6           Points:     4
 
       Division 2              Thu 12th Jun
-   Stanningley Pk B           Armley Pk B
+   Stanningley Park B           Armley Pk B
 Gordon Taylor        10  Betty Hirst         21
 Marjorie Taylor       6  John Kerry          21
 Maureen Boyce        14  Shirley Bromley     21
@@ -1792,7 +1792,7 @@ Arthur Senior        21  Chris Goode         11
           Points:     9           Points:     1
 
       Division 2              Thu 19th Jun
-     Holbeck Moor           Stanningley Pk B
+     Holbeck Moor           Stanningley Park B
 Yvonne Hestletine     9  Maureen Boyce       21
 Don Burgess          16  Anthony Heslewood   21
 Colin Batterham      21  June Mitchell        7
@@ -1935,7 +1935,7 @@ Brian Ragan          21  David Wilson        17
           Points:     6           Points:     4
 
       Division 2              Thu 3rd Jul
-    Scatcherd Pk C          Stanningley Pk B
+    Scatcherd Pk C          Stanningley Park B
 Jackie Walsh         21  Shirley Sandilands  12
 Ken Billcliffe       21  Gordon Taylor       15
 Betty Falkinder      21  Leslie Leak         12
@@ -2065,7 +2065,7 @@ David Wilson         19  Ronnie Bain         21
           Points:     6           Points:     4
 
       Division 2              Thu 17th Jul
-   Stanningley Pk B           Pudsey Pk B
+   Stanningley Park B           Pudsey Pk B
 Marjorie Taylor       0  Timothy Pearson     21
 Bernard Miller       21  Val Ellis           13
 Colin Butterfield    21  Kathleen Vince      14
@@ -2312,7 +2312,7 @@ Arthur Senior        21  Dennis Shutt        11
           Points:     7           Points:     3
 
       Division 2              Thu 31st Jul
-   Stanningley Pk B         Western Flatts B
+   Stanningley Park B         Western Flatts B
 Bernard Miller       13  Barry Brown         21
 Geoff Lee            20  Lillian Pickles     21
 June Mitchell        12  Hazel Goodall       21
@@ -2442,7 +2442,7 @@ Barry Brown          21  Chris Goode         15
           Points:     8           Points:     2
 
       Division 2              Thu 7th Aug
-   West Royd Park'B'        Stanningley Pk B
+   West Royd Park'B'        Stanningley Park B
 Pam Wilson           15  Brian Chamberlain   21
 Richard Tatum        21  Shirley Sandilands  20
 Jeff Linley          17  Gordon Taylor       21
@@ -2585,7 +2585,7 @@ Brian Weatherill     21  Richard Tatum        6
           Points:     9           Points:     1
 
       Division 2              Thu 21st Aug
-   Stanningley Pk B        Cross Flatts Pk B
+   Stanningley Park B        Cross Flatts Pk B
 Bernard Miller       21  Peter Lewis          6
 Maureen Boyce        19  Jim Thompson        21
 June Mitchell         8  Joyce Sherman       21
@@ -2715,7 +2715,7 @@ Bobby Davison        21  Brian Golden        10
           Points:     4           Points:     6
 
       Division 2              Thu 28th Aug
-      Pudsey Pk A           Stanningley Pk B
+      Pudsey Pk A           Stanningley Park B
 Dorothy Phizackerley 21  Shirley Sandilands  10
 Jean Hall            21  Leslie Leak          8
 Shirley Rhodes       21  Maureen Boyce       11
@@ -2845,7 +2845,7 @@ Brian Weatherill      6  Dennis Walters      21
           Points:     5           Points:     5
 
       Division 2              Thu 4th Sep
-   Stanningley Pk B           Bramley Pk B
+   Stanningley Park B           Bramley Pk B
 Shirley Sandilands   21  Brenda Johnson       9
 Maureen Boyce        21  Dorothy Foster       8
 Leslie Leak          21  Ina Gray             2
@@ -2962,7 +2962,7 @@ Dennis Walters       21  Arthur Senior        9
           Points:     7           Points:     3
 
       Division 2              Thu 11th Sep
-   Cross Flatts Pk A        Stanningley Pk B
+   Cross Flatts Pk A        Stanningley Park B
 Chris Johnson        21  Maureen Boyce       12
 Brenda Walton        21  Shirley Sandilands  15
 Jack Worsnop          8  Cliff Brogie        21
@@ -3079,7 +3079,7 @@ Barry Lee            21  George Clough        8
           Points:     7           Points:     3
 
       Division 2              Thu 18th Sep
-      Armley Pk B           Stanningley Pk B
+      Armley Pk B           Stanningley Park B
 Betty Hirst          21  Leslie Leak          9
 Robert Marriot        8  Geoff Lee           21
 Sylvia Senior        21  Maureen Boyce        3
@@ -3248,7 +3248,7 @@ Dennis Walters       21  Jim Gray             6
           Points:     8           Points:     2
 
       Division 2              Thu 25th Sep
-   Stanningley Pk B           Holbeck Moor
+   Stanningley Park B           Holbeck Moor
 Derek Wilson         21  Don Burgess          5
 Leslie Leak           0  Ken Brown           21
 Gordon Taylor        21  Malcolm Brown       15

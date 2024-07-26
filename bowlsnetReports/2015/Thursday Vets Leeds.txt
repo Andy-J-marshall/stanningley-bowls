@@ -15,7 +15,7 @@ Scatcherd Pk A          8   147   v.   Bramley Pk A            2   134
 ----------------------------------------------------------------------------------------------------------
          Thu 16th Apr                            Division 2                               
 ----------------------------------------------------------------------------------------------------------
-Stanningley Park A      7   148   v.   Stanningley Pk B        3    98     
+Stanningley Park A      7   148   v.   Stanningley Park B        3    98     
 Armley Cons             7   141   v.   Pudsey Pk B             3   114     
 Bramley Pk B            3   119   v.   Scatcherd Pk C          7   148     
 
@@ -33,7 +33,7 @@ Western Flatts B        4   129   v.   Scatcherd Pk A          6   140
 ----------------------------------------------------------------------------------------------------------
 Pudsey Pk B             3   123   v.   Stanningley Park A      7   156     
 Gildersome B            8   158   v.   West Royd Park'B'       2   101     
-Stanningley Pk B        5   122   v.   Bramley Pk B            5   127     
+Stanningley Park B        5   122   v.   Bramley Pk B            5   127     
 
 ----------------------------------------------------------------------------------------------------------
          Thu 30th Apr                            Division 1                               
@@ -65,7 +65,7 @@ Middleton Community     4   128   v.   Scatcherd Pk A          6   145
 ----------------------------------------------------------------------------------------------------------
 Gildersome B            6   135   v.   Armley Cons             4   112     
 Scatcherd Pk C          2   119   v.   Cross Flatts Pk A       8   142     
-Stanningley Pk B        6   139   v.   West Royd Park'B'       4   130     
+Stanningley Park B        6   139   v.   West Royd Park'B'       4   130     
 
 ----------------------------------------------------------------------------------------------------------
          Thu 14th May                            Division 1                               
@@ -81,7 +81,7 @@ Scatcherd Pk A          4   131   v.   West Royd Pk'A'         6   134
 ----------------------------------------------------------------------------------------------------------
 Stanningley Park A      7   138   v.   Gildersome B            3   118     
 Armley Cons             6   132   v.   Scatcherd Pk C          4   111     
-Cross Flatts Pk A       8   153   v.   Stanningley Pk B        2   109     
+Cross Flatts Pk A       8   153   v.   Stanningley Park B        2   109     
 West Royd Park'B'       6   133   v.   Pudsey Pk B             4   126     
 
 ----------------------------------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ Armley Pk B             3   133   v.   Scatcherd Pk A          7   144
          Thu 21st May                            Division 2                               
 ----------------------------------------------------------------------------------------------------------
 Scatcherd Pk C          3   128   v.   Stanningley Park A      7   149     
-Stanningley Pk B        1    85   v.   Armley Cons             9   167     
+Stanningley Park B        1    85   v.   Armley Cons             9   167     
 Pudsey Pk B             4   142   v.   Cross Flatts Pk A       6   146     
 Gildersome B            9   166   v.   Bramley Pk B            1   113     
 
@@ -115,7 +115,7 @@ West Royd Pk'A'         7   147   v.   Middleton Community     3   110
 ----------------------------------------------------------------------------------------------------------
 Stanningley Park A      9   164   v.   Bramley Pk B            1    71     
 Cross Flatts Pk A       6   133   v.   West Royd Park'B'       4   125     
-Scatcherd Pk C          8   164   v.   Stanningley Pk B        2    94     
+Scatcherd Pk C          8   164   v.   Stanningley Park B        2    94     
 Gildersome B            8   163   v.   Pudsey Pk B             2   126     
 
 ----------------------------------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ Middleton Community     6   143   v.   Bramley Pk A            4   134
 ----------------------------------------------------------------------------------------------------------
 West Royd Park'B'       3    97   v.   Armley Cons             7   143     
 Bramley Pk B            1    89   v.   Cross Flatts Pk A       9   157     
-Stanningley Pk B        6   149   v.   Gildersome B            4   137     
+Stanningley Park B        6   149   v.   Gildersome B            4   137     
 
 ----------------------------------------------------------------------------------------------------------
          Thu 11th Jun                            Division 1                               
@@ -180,7 +180,7 @@ West Royd Pk'A'         8   159   v.   Bramley Pk A            2    95
 ----------------------------------------------------------------------------------------------------------
 Stanningley Park A      4   128   v.   Armley Cons             6   138     
 Bramley Pk B            5   129   v.   West Royd Park'B'       5   142     
-Pudsey Pk B             9   164   v.   Stanningley Pk B        1   114     
+Pudsey Pk B             9   164   v.   Stanningley Park B        1   114     
 
 ----------------------------------------------------------------------------------------------------------
           Thu 2nd Jul                            Division 1                               
@@ -194,7 +194,7 @@ Bramley Pk A           10   168   v.   Scatcherd Pk A          0    99
 ----------------------------------------------------------------------------------------------------------
           Thu 2nd Jul                            Division 2                               
 ----------------------------------------------------------------------------------------------------------
-Stanningley Pk B        1   101   v.   Stanningley Park A      9   158     
+Stanningley Park B        1   101   v.   Stanningley Park A      9   158     
 Pudsey Pk B             4   133   v.   Armley Cons             6   135     
 Scatcherd Pk C          4   139   v.   Bramley Pk B            6   136     
 
@@ -212,7 +212,7 @@ Scatcherd Pk A          8   158   v.   Western Flatts B        2   135
 ----------------------------------------------------------------------------------------------------------
 Stanningley Park A      8   157   v.   Pudsey Pk B             2   117     
 West Royd Park'B'       5   142   v.   Gildersome B            5   150     
-Bramley Pk B            6   131   v.   Stanningley Pk B        4   137     
+Bramley Pk B            6   131   v.   Stanningley Park B        4   137     
 
 ----------------------------------------------------------------------------------------------------------
          Thu 23rd Jul                            Division 1                               
@@ -244,7 +244,7 @@ Scatcherd Pk A          7   146   v.   Middleton Community     3   141
 ----------------------------------------------------------------------------------------------------------
 Armley Cons             7   139   v.   Gildersome B            3   112     
 Cross Flatts Pk A       7   146   v.   Scatcherd Pk C          3   105     
-West Royd Park'B'       6   139   v.   Stanningley Pk B        4   133     
+West Royd Park'B'       6   139   v.   Stanningley Park B        4   133     
 
 ----------------------------------------------------------------------------------------------------------
           Thu 6th Aug                            Division 1                               
@@ -260,7 +260,7 @@ West Royd Pk'A'        10   168   v.   Scatcherd Pk A          0    70
 ----------------------------------------------------------------------------------------------------------
 Gildersome B            6   141   v.   Stanningley Park A      4   140     
 Scatcherd Pk C          2   121   v.   Armley Cons             8   160     
-Stanningley Pk B        4   125   v.   Cross Flatts Pk A       6   140     
+Stanningley Park B        4   125   v.   Cross Flatts Pk A       6   140     
 Pudsey Pk B             9   165   v.   West Royd Park'B'       1   129     
 
 ----------------------------------------------------------------------------------------------------------
@@ -276,7 +276,7 @@ Scatcherd Pk A          3   131   v.   Armley Pk B             7   151
          Thu 13th Aug                            Division 2                               
 ----------------------------------------------------------------------------------------------------------
 Stanningley Park A      9   167   v.   Scatcherd Pk C          1   100     
-Armley Cons             9   162   v.   Stanningley Pk B        1    83     
+Armley Cons             9   162   v.   Stanningley Park B        1    83     
 Cross Flatts Pk A       7   158   v.   Pudsey Pk B             3   130     
 Bramley Pk B            4   127   v.   Gildersome B            6   134     
 
@@ -294,7 +294,7 @@ Middleton Community     3   131   v.   West Royd Pk'A'         7   162
 ----------------------------------------------------------------------------------------------------------
 Bramley Pk B            3   107   v.   Stanningley Park A      7   148     
 West Royd Park'B'       7   137   v.   Cross Flatts Pk A       3   133     
-Stanningley Pk B        8   160   v.   Scatcherd Pk C          2   117     
+Stanningley Park B        8   160   v.   Scatcherd Pk C          2   117     
 Pudsey Pk B             7   148   v.   Gildersome B            3   120     
 
 ----------------------------------------------------------------------------------------------------------
@@ -311,7 +311,7 @@ Bramley Pk A            7   159   v.   Middleton Community     3   134
 ----------------------------------------------------------------------------------------------------------
 Armley Cons            10   168   v.   West Royd Park'B'       0    86     
 Cross Flatts Pk A       9   157   v.   Bramley Pk B            1    78     
-Gildersome B            8   149   v.   Stanningley Pk B        2   115     
+Gildersome B            8   149   v.   Stanningley Park B        2   115     
 
 ----------------------------------------------------------------------------------------------------------
           Thu 3rd Sep                            Division 1                               
@@ -359,7 +359,7 @@ Bramley Pk A            5   125   v.   West Royd Pk'A'         5   138
 ----------------------------------------------------------------------------------------------------------
 Armley Cons             7   140   v.   Stanningley Park A      3   128     
 West Royd Park'B'       8   162   v.   Bramley Pk B            2   129     
-Stanningley Pk B        7   148   v.   Pudsey Pk B             3   142     
+Stanningley Park B        7   148   v.   Pudsey Pk B             3   142     
 
 ----------------------------------------------------------------------------------------------------------
          Thu 24th Sep                            Division 2                               
@@ -396,7 +396,7 @@ Armley Cons             9   163   v.   Bramley Pk B            1    64     From 
   5.  Pudsey Pk B            16    5   11     75
   6.  West Royd Park'B'      16    5    9     66
   7.  Scatcherd Pk C         16    5   11     63
-  8.  Stanningley Pk B       16    4   11     57
+  8.  Stanningley Park B       16    4   11     57
   9.  Bramley Pk B           16    2   12     47
 
 
@@ -480,7 +480,7 @@ Geoff Firth            4  Brian Fish           21
            Points:     8             Points:    2
 
        Division 2              Thu 16th Apr
-   Stanningley Park A        Stanningley Pk B
+   Stanningley Park A        Stanningley Park B
 Adam Sandilands       21  June Mitchell         6
 Brian Barker          21  Carol Butters         6
 Shirley Sandilands    21  Marjorie Taylor       6
@@ -623,7 +623,7 @@ Ron Burton            21  Pam Wilson            9
            Points:     8             Points:    2
 
        Division 2              Thu 23rd Apr
-    Stanningley Pk B           Bramley Pk B
+    Stanningley Park B           Bramley Pk B
 Graham Dawson         21  Leslie Deighton       3
 Carol Butters         21  Dorothy Foster       16
 James Butters          7  Ina Gray             21
@@ -857,7 +857,7 @@ Betty Falkinder       14  John Harvey          21
            Points:     2             Points:    8
 
        Division 2               Thu 7th May
-    Stanningley Pk B         West Royd Park'B'
+    Stanningley Park B         West Royd Park'B'
 Marjorie Taylor       10  Paul Whitehead       21
 Carol Butters         14  Peter Britton        21
 Adam Sandilands       16  Richard Tatum        21
@@ -974,7 +974,7 @@ Steve Pickersgill     21  Betty Falkinder      13
            Points:     6             Points:    4
 
        Division 2              Thu 14th May
-   Cross Flatts Pk A         Stanningley Pk B
+   Cross Flatts Pk A         Stanningley Park B
 Chris Johnson         21  June Mitchell         5
 Brenda Walton         21  Marjorie Taylor       9
 Margaret Goode        21  Carol Butters        12
@@ -1091,7 +1091,7 @@ Keith Wakelin         21  Geoff Lee            19
            Points:     3             Points:    7
 
        Division 2              Thu 21st May
-    Stanningley Pk B            Armley Cons
+    Stanningley Park B            Armley Cons
 Carol Butters          5  Peter Whitrick       21
 Marjorie Taylor       11  Barry Palmer         21
 Maureen Boyce          6  John Gilroy          21
@@ -1234,7 +1234,7 @@ Brian Weatherill      21  Keith Corp           14
            Points:     6             Points:    4
 
        Division 2              Thu 28th May
-     Scatcherd Pk C          Stanningley Pk B
+     Scatcherd Pk C          Stanningley Park B
 Jackie Walsh          21  Leslie Leak           5
 Betty Falkinder       19  Gordon Taylor        21
 Marilyn Robinson      21  Graham Dawson        15
@@ -1364,7 +1364,7 @@ Jim Gray              21  John Harvey          10
            Points:     1             Points:    9
 
        Division 2               Thu 4th Jun
-    Stanningley Pk B           Gildersome B
+    Stanningley Park B           Gildersome B
 Carol Butters         14  David Rawson         21
 Maureen Boyce         15  Frank Hales          21
 Gordon Taylor         21  Clifford Pitts       19
@@ -1702,7 +1702,7 @@ William Henderson     21  Keith Corp           13
            Points:     5             Points:    5
 
        Division 2              Thu 25th Jun
-      Pudsey Pk B            Stanningley Pk B
+      Pudsey Pk B            Stanningley Park B
 Donald Hitchcox       17  David Hudson         21
 Janet Pearson         21  June Mitchell         7
 Kathleen Vince        21  Carol Butters        12
@@ -1793,7 +1793,7 @@ Eric Ralph            21  Anthony Smith         8
            Points:    10             Points:    0
 
        Division 2               Thu 2nd Jul
-    Stanningley Pk B        Stanningley Park A
+    Stanningley Park B        Stanningley Park A
 Carol Butters         11  Shirley Sandilands   21
 Gordon Taylor         15  Geoff Lee            21
 Derek Wilson          12  Anthony Heslewood    21
@@ -1936,7 +1936,7 @@ Peter Britton         21  Ron Burton           18
            Points:     5             Points:    5
 
        Division 2              Thu 16th Jul
-      Bramley Pk B           Stanningley Pk B
+      Bramley Pk B           Stanningley Park B
 Dorothy Foster        21  Carol Butters        19
 Brenda Johnson        21  Marjorie Taylor      20
 Ina Gray              21  James Butters        13
@@ -2170,7 +2170,7 @@ Peter Colley          21  Ronnie Bain          11
            Points:     7             Points:    3
 
        Division 2              Thu 30th Jul
-   West Royd Park'B'         Stanningley Pk B
+   West Royd Park'B'         Stanningley Park B
 Jennie Barrett        14  Ken Walker           21
 Paul Whitehead        21  Carol Butters        19
 Alan Benson           19  Anthony Heslewood    21
@@ -2287,7 +2287,7 @@ Joan Middleton        20  Steve Pickersgill    21
            Points:     2             Points:    8
 
        Division 2               Thu 6th Aug
-    Stanningley Pk B         Cross Flatts Pk A
+    Stanningley Park B         Cross Flatts Pk A
 Marjorie Taylor        7  Margaret Goode       21
 Maureen Boyce         21  Brenda Walton        17
 Carol Butters         12  Barbara Ragan        21
@@ -2404,7 +2404,7 @@ Ken Walker            21  Ken Billcliffe        8
            Points:     9             Points:    1
 
        Division 2              Thu 13th Aug
-      Armley Cons            Stanningley Pk B
+      Armley Cons            Stanningley Park B
 Colin Batterham       21  June Mitchell        17
 Barry Palmer          21  Maureen Boyce        14
 Clifford Roy          21  Carol Butters         6
@@ -2547,7 +2547,7 @@ Colin Arnold          21  Peter Colley         19
            Points:     7             Points:    3
 
        Division 2              Thu 20th Aug
-    Stanningley Pk B          Scatcherd Pk C
+    Stanningley Park B          Scatcherd Pk C
 Graham Dawson         21  Norman Walsh          9
 Maureen Boyce         14  Betty Falkinder      21
 James Butters         20  Marilyn Robinson     21
@@ -2677,7 +2677,7 @@ Brian Golden          21  Raymond Hague        10
            Points:     9             Points:    1
 
        Division 2              Thu 27th Aug
-      Gildersome B           Stanningley Pk B
+      Gildersome B           Stanningley Park B
 Trevor Hardwick       21  Gordon Taylor        14
 Sandra Deegan         21  Graham Dawson         7
 Patricia Cooper       10  Colin Butterfield    21
@@ -3028,7 +3028,7 @@ Richard Tatum         21  Jim Gray             20
            Points:     8             Points:    2
 
        Division 2              Thu 17th Sep
-    Stanningley Pk B            Pudsey Pk B
+    Stanningley Park B            Pudsey Pk B
 Marjorie Taylor       21  Kathleen Vince       18
 Maureen Boyce         13  Janet Pearson        21
 Graham Dawson         17  Val Ellis            21

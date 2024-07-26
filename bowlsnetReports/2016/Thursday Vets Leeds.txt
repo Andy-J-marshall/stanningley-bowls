@@ -14,7 +14,7 @@ Scatcherd Pk A          26   126   v.   The Hollies S &amp; SC      32   140
 ----------------------------------------------------------------------------------------------------
           Thu 14th Apr                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        31   142   v.   New Wortley             30   142                           
+Stanningley Park B        31   142   v.   New Wortley             30   142                           
 Pudsey Pk B             30   140   v.   Cross Flatts Pk         28   129                           
 Cranmore                28   135   v.   West Royd Park'B'       33   146                           
 Gildersome              40   168   v.   Scatcherd Pk B          15    85                           
@@ -30,7 +30,7 @@ Stanningley Park A      21   108   v.   Churwell Pk             34   150
 ----------------------------------------------------------------------------------------------------
           Thu 21st Apr                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Cross Flatts Pk         36   159   v.   Stanningley Pk B        20    99                           
+Cross Flatts Pk         36   159   v.   Stanningley Park B        20    99                           
 West Royd Park'B'       32   143   v.   Armley Pk               29   140                           
 Scatcherd Pk B          33   147   v.   Cranmore                26   123                           
 
@@ -60,7 +60,7 @@ Pudsey Pk A             34   150   v.   Scatcherd Pk A          27   134
 ----------------------------------------------------------------------------------------------------
           Thu 5th May                              Division 2                                      
 ----------------------------------------------------------------------------------------------------
-West Royd Park'B'       40   168   v.   Stanningley Pk B        21   122                           
+West Royd Park'B'       40   168   v.   Stanningley Park B        21   122                           
 Scatcherd Pk B          26   123   v.   Pudsey Pk B             30   137                           
 New Wortley             26   127   v.   Cranmore                28   132                           
 Cross Flatts Pk         33   146   v.   Gildersome              22   111                           
@@ -83,7 +83,7 @@ Churwell Pk             39   165   v.   Middleton Community     15    85
 ----------------------------------------------------------------------------------------------------
           Thu 12th May                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        31   143   v.   Scatcherd Pk B          27   122                           
+Stanningley Park B        31   143   v.   Scatcherd Pk B          27   122                           
 Armley Pk               36   159   v.   New Wortley             30   137                           
 Cranmore                28   131   v.   Cross Flatts Pk         32   146                           
 
@@ -140,7 +140,7 @@ Armley Cons            112         v.   Stanningley Park A     149        On Cro
                                                Harrison Team Cup                                   
                                                    Round One                                       
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B       119         v.   Armley Pk              139        On Amley Cons            
+Stanningley Park B       119         v.   Armley Pk              139        On Amley Cons            
 New Wortley            124         v.   Cross Flatts Pk        140        On Middleton Community   
 West Royd Park'B'      120         v.   Cranmore               144        On Burley Park           
 Gildersome             159         v.   Scatcherd Pk B         131        On Burley Park           
@@ -156,7 +156,7 @@ Scatcherd Pk A          34   149   v.   Armley Cons             18    91
 ----------------------------------------------------------------------------------------------------
           Thu 9th Jun                              Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Gildersome              38   163   v.   Stanningley Pk B        18    90                           
+Gildersome              38   163   v.   Stanningley Park B        18    90                           
 Cranmore                37   158   v.   Pudsey Pk B             22   115                           
 New Wortley             33   148   v.   Scatcherd Pk B          25   121                           
 Cross Flatts Pk         29   134   v.   West Royd Park'B'       23   115                           
@@ -172,7 +172,7 @@ Pudsey Pk A             28   130   v.   Burley Pk               25   117
 ----------------------------------------------------------------------------------------------------
           Thu 16th Jun                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        25   118   v.   Cranmore                30   138                           
+Stanningley Park B        25   118   v.   Cranmore                30   138                           
 Armley Pk               33   149   v.   Pudsey Pk B             22   107                           
 West Royd Park'B'       29   133   v.   New Wortley             28   131                           
 
@@ -187,7 +187,7 @@ The Hollies S &amp; SC      35   156   v.   Middleton Community     18    95
 ----------------------------------------------------------------------------------------------------
           Thu 23rd Jun                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Armley Pk               34   151   v.   Stanningley Pk B        18    89                           
+Armley Pk               34   151   v.   Stanningley Park B        18    89                           
 Cranmore                31   141   v.   Gildersome              25   121                           
 Scatcherd Pk B          28   131   v.   West Royd Park'B'       29   138                           
 
@@ -202,7 +202,7 @@ Burley Pk               28   131   v.   The Hollies S &amp; SC      30   138
 ----------------------------------------------------------------------------------------------------
           Thu 30th Jun                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        26   124   v.   Pudsey Pk B             31   139                           
+Stanningley Park B        26   124   v.   Pudsey Pk B             31   139                           
 Gildersome              32   149   v.   Armley Pk               27   124                           
 Cross Flatts Pk         25   117   v.   New Wortley             31   143                           
 
@@ -232,7 +232,7 @@ The Hollies S &amp; SC      34   154   v.   Scatcherd Pk A          25   122
 ----------------------------------------------------------------------------------------------------
           Thu 14th Jul                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-New Wortley             35   155   v.   Stanningley Pk B        20   105                           
+New Wortley             35   155   v.   Stanningley Park B        20   105                           
 Cross Flatts Pk         31   143   v.   Pudsey Pk B             29   139                           
 West Royd Park'B'       29   137   v.   Cranmore                28   133                           
 Scatcherd Pk B          29   137   v.   Gildersome              33   150                           
@@ -248,7 +248,7 @@ Churwell Pk             38   163   v.   Stanningley Park A      25   127
 ----------------------------------------------------------------------------------------------------
           Thu 21st Jul                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        27   126   v.   Cross Flatts Pk         25   118                           
+Stanningley Park B        27   126   v.   Cross Flatts Pk         25   118                           
 Armley Pk               37   157   v.   West Royd Park'B'       19   104                           
 Cranmore                31   136   v.   Scatcherd Pk B          25   118                           
 
@@ -291,7 +291,7 @@ Churwell Pk             29   135   v.   Burley Pk               28   132
 ----------------------------------------------------------------------------------------------------
           Thu 11th Aug                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        24   113   v.   West Royd Park'B'       31   142                           
+Stanningley Park B        24   113   v.   West Royd Park'B'       31   142                           
 Pudsey Pk B             36   158   v.   Scatcherd Pk B          23   118                           
 Cranmore                20    95   v.   New Wortley             30   135                           
 Gildersome              37   159   v.   Cross Flatts Pk         22   112                           
@@ -307,7 +307,7 @@ Middleton Community     27   128   v.   Churwell Pk             30   141
 ----------------------------------------------------------------------------------------------------
           Thu 18th Aug                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Scatcherd Pk B          32   147   v.   Stanningley Pk B        26   128                           
+Scatcherd Pk B          32   147   v.   Stanningley Park B        26   128                           
 New Wortley             28   128   v.   Armley Pk               26   126                           
 Cross Flatts Pk         33   147   v.   Cranmore                29   134                           
 
@@ -352,7 +352,7 @@ Middleton Community     26   133   v.   Pudsey Pk A             30   134
 ----------------------------------------------------------------------------------------------------
           Thu 8th Sep                              Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        24   115   v.   Gildersome              30   137                           
+Stanningley Park B        24   115   v.   Gildersome              30   137                           
 Pudsey Pk B             27   129   v.   Cranmore                30   136                           
 Scatcherd Pk B          24   122   v.   New Wortley             33   148                           
 West Royd Park'B'       29   139   v.   Cross Flatts Pk         33   147                           
@@ -368,7 +368,7 @@ Burley Pk               32   144   v.   Pudsey Pk A             27   126
 ----------------------------------------------------------------------------------------------------
           Thu 15th Sep                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Cranmore                36   158   v.   Stanningley Pk B        18    95                           
+Cranmore                36   158   v.   Stanningley Park B        18    95                           
 Pudsey Pk B             16    90   v.   Armley Pk               38   162                           
 New Wortley             34   152   v.   West Royd Park'B'       20   106                           
 
@@ -383,7 +383,7 @@ Middleton Community     28   139   v.   The Hollies S &amp; SC      32   144
 ----------------------------------------------------------------------------------------------------
           Thu 22nd Sep                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Stanningley Pk B        18    94   v.   Armley Pk               32   139                           
+Stanningley Park B        18    94   v.   Armley Pk               32   139                           
 Gildersome              33   148   v.   Cranmore                24   111                           
 West Royd Park'B'       33   146   v.   Scatcherd Pk B          17    92                           
 
@@ -398,7 +398,7 @@ The Hollies S &amp; SC      30   141   v.   Burley Pk               31   146
 ----------------------------------------------------------------------------------------------------
           Thu 29th Sep                             Division 2                                      
 ----------------------------------------------------------------------------------------------------
-Pudsey Pk B             33   150   v.   Stanningley Pk B        27   132                           
+Pudsey Pk B             33   150   v.   Stanningley Park B        27   132                           
 Armley Pk               28   126   v.   Gildersome              29   135                           
 New Wortley             27   125   v.   Cross Flatts Pk         26   120                           
 
@@ -432,7 +432,7 @@ New Wortley             27   125   v.   Cross Flatts Pk         26   120
   6.  Cross Flatts Pk        16    8    8    446
   7.  Pudsey Pk B            16    7    9    441
   8.  Scatcherd Pk B         16    3   13    397
-  9.  Stanningley Pk B       16    3   13    374
+  9.  Stanningley Park B       16    3   13    374
 
 
 === FULL RESULTS: Thu 14th Apr to Thu 29th Sep
@@ -502,7 +502,7 @@ George Bentley      14  Barry Lee           21
          Points:    26           Points:    32
 
       Division 2             Thu 14th Apr
-   Stanningley Pk B          New Wortley
+   Stanningley Park B          New Wortley
 June Mitchell        4  Joe Aylesbury       21
 Carol Butters       21  Eddie Tate           9
 James Butters       19  Eddie Harrison      21
@@ -619,7 +619,7 @@ Andy Robertson      13  Glen Scott          21
          Points:    21           Points:    34
 
       Division 2             Thu 21st Apr
-   Cross Flatts Pk         Stanningley Pk B
+   Cross Flatts Pk         Stanningley Park B
 Peter Colley        21  Carol Butters       11
 Margaret Goode      21  Marjorie Taylor     19
 Barbara Ragan       19  Derek Wilson        21
@@ -827,7 +827,7 @@ Dennis Walters      19  Anthony Smith       21
          Points:    34           Points:    27
 
       Division 2             Thu 5th May
-  West Royd Park'B'        Stanningley Pk B
+  West Royd Park'B'        Stanningley Park B
 Colin Arnold        21  June Mitchell       20
 Alan Benson         21  Marjorie Taylor     13
 Pam Wilson          21  Gordon Taylor       16
@@ -958,7 +958,7 @@ Glen Scott          21  Steven Ballance      8
          Points:    39           Points:    15
 
       Division 2             Thu 12th May
-   Stanningley Pk B         Scatcherd Pk B
+   Stanningley Park B         Scatcherd Pk B
 Derek Wilson        21  Keith Wakelin       10
 Marjorie Taylor     21  Betty Falkinder     15
 June Mitchell       15  Geoff Hirst         21
@@ -1305,7 +1305,7 @@ Steve Pickersgill    6  Brian Barker        21
        Main KOs              Thu 2nd Jun
   Harrison Team Cup                
       Round One             On Amley Cons
-   Stanningley Pk B           Armley Pk
+   Stanningley Park B           Armley Pk
 Carol Butters        3  Jean Newton         21
 Marjorie Taylor     18  Pat Hayes           21
 June Mitchell       17  John Kerry          21
@@ -1424,7 +1424,7 @@ Anthony Smith       21  Steve Pickersgill    7
          Points:    34           Points:    18
 
       Division 2             Thu 9th Jun
-      Gildersome           Stanningley Pk B
+      Gildersome           Stanningley Park B
 David Charlesworth  21  Leslie Leak         11
 Alan Kirk           21  James Butters       10
 Patricia Cooper     21  June Mitchell        8
@@ -1541,7 +1541,7 @@ Dennis Walters      21  David Hurd           8
          Points:    28           Points:    25
 
       Division 2             Thu 16th Jun
-   Stanningley Pk B            Cranmore
+   Stanningley Park B            Cranmore
 Derek Wilson        21  Keith Lambert       17
 June Mitchell       13  Monica Buckroyd     21
 Graham Dawson       18  Hazel Cookson       21
@@ -1645,7 +1645,7 @@ Barry Hogg          21  Brian Weatherill    10
          Points:    35           Points:    18
 
       Division 2             Thu 23rd Jun
-      Armley Pk            Stanningley Pk B
+      Armley Pk            Stanningley Park B
 Jean Newton         21  Dorothy Heslewood    5
 Sylvia Senior       21  Anthony Heslewood    8
 Norman Forsythe     21  James Butters       10
@@ -1749,7 +1749,7 @@ Brian Shepherd       6  Mario Biancardo     21
          Points:    28           Points:    30
 
       Division 2             Thu 30th Jun
-   Stanningley Pk B          Pudsey Pk B
+   Stanningley Park B          Pudsey Pk B
 Dorothy Heslewood   13  Philip Goodfellow   21
 Leslie Leak         20  Janet Pearson       21
 June Mitchell       10  Val Ellis           21
@@ -1909,7 +1909,7 @@ Mario Biancardo     21  Geoff Firth          4
          Points:    34           Points:    25
 
       Division 2             Thu 14th Jul
-     New Wortley           Stanningley Pk B
+     New Wortley           Stanningley Park B
 Geoff Gaunt         21  Marjorie Taylor      6
 Joan Keen           21  Carol Butters       12
 Pauline Gaunt       13  Derek Wilson        21
@@ -2026,7 +2026,7 @@ Glen Scott          21  Colin Butterfield   17
          Points:    38           Points:    25
 
       Division 2             Thu 21st Jul
-   Stanningley Pk B        Cross Flatts Pk
+   Stanningley Park B        Cross Flatts Pk
 Marjorie Taylor     14  Chris Johnson       21
 Leslie Leak         21  Margaret Goode      14
 June Mitchell        5  Barbara Ragan       21
@@ -2262,7 +2262,7 @@ Ron Walker           6  David Hurd          21
          Points:    29           Points:    28
 
       Division 2             Thu 11th Aug
-   Stanningley Pk B       West Royd Park'B'
+   Stanningley Park B       West Royd Park'B'
 June Mitchell        5  Pam Wilson          21
 Leslie Leak         21  Keith Corp          11
 Derek Wilson        21  Alan Benson          9
@@ -2379,7 +2379,7 @@ Hazel Marshall       8  Graham Goodall      21
          Points:    27           Points:    30
 
       Division 2             Thu 18th Aug
-    Scatcherd Pk B         Stanningley Pk B
+    Scatcherd Pk B         Stanningley Park B
 James Halliday      21  June Mitchell       13
 Christine Cawood     8  James Butters       21
 Ken Billcliffe      20  Gordon Taylor       21
@@ -2691,7 +2691,7 @@ Malcolm Cameron     13  Dennis Walters      21
          Points:    26           Points:    30
 
       Division 2             Thu 8th Sep
-   Stanningley Pk B           Gildersome
+   Stanningley Park B           Gildersome
 Marjorie Taylor      3  David Charlesworth  21
 Carol Butters        8  Sandra Deegan       21
 Gordon Taylor       21  Ron Burton           8
@@ -2808,7 +2808,7 @@ Roy Hardwick        12  Dennis Walters      21
          Points:    32           Points:    27
 
       Division 2             Thu 15th Sep
-       Cranmore            Stanningley Pk B
+       Cranmore            Stanningley Park B
 Barry Baldwin       21  June Mitchell        7
 Joyce Whitehead     21  Marjorie Taylor      9
 Ray Watson          21  Leslie Leak         20
@@ -2912,7 +2912,7 @@ Malcolm Cameron     11  Mario Biancardo     21
          Points:    28           Points:    32
 
       Division 2             Thu 22nd Sep
-   Stanningley Pk B           Armley Pk
+   Stanningley Park B           Armley Pk
 Gordon Taylor       14  Sylvia Senior       21
 June Mitchell        6  Jean Newton         21
 James Butters        4  Gerry Faller        21
@@ -3016,7 +3016,7 @@ Mario Biancardo     21  Keith Fleming       17
          Points:    30           Points:    31
 
       Division 2             Thu 29th Sep
-     Pudsey Pk B           Stanningley Pk B
+     Pudsey Pk B           Stanningley Park B
 Janet Pearson       21  June Mitchell       17
 Philip Goodfellow   21  Marjorie Taylor     11
 Val Ellis           21  James Butters        7
