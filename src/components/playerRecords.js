@@ -5,6 +5,23 @@ import config from '../config';
 
 function PlayerRecords(props) {
     const stats = props.stats;
+    const year = props.year;
+
+    let mondayLeagueName = 'monday combined leeds';
+    const tuesdayVetsLeagueName = 'tuesday vets leeds';
+    const tuesdayLeagueName = 'tuesday leeds';
+    let wednesdayLeagueName = 'wednesday half holiday leeds';
+    const wednesdayPairsLeagueName = 'wednesday pairs airewharfe';
+    const thursdayVetsLeagueName = 'thursday vets leeds';
+    let saturdayLeagueName = 'saturday leeds';
+    let saturdayBLeagueName = 'saturday leeds (b)';
+
+    if (parseInt(year) < 2022) {
+        mondayLeagueName = 'monday airedale & wharfedale';
+        wednesdayLeagueName = 'wednesday half holiday bradford';
+        saturdayLeagueName = 'saturday bradford';
+        saturdayBLeagueName = 'saturday bradford (b)';
+    }
 
     const playerResults = stats.playerResults;
     const clubCupWinner = stats.clubCupWinner;
@@ -118,14 +135,14 @@ function PlayerRecords(props) {
 
     players.forEach((player) => {
         const p = playerResults[player];
-        const monday = p['monday combined leeds'];
-        const tuesdayVets = p['tuesday vets leeds'];
-        const tuesday = p['tuesday leeds'];
-        const wednesday = p['wednesday half holiday leeds'];
-        const wednesdayPairs = p['wednesday pairs airewharfe'];
-        const thursdayVets = p['thursday vets leeds'];
-        const saturday = p['saturday leeds'];
-        const saturdayB = p['saturday leeds (b)'];
+        const monday = p[mondayLeagueName];
+        const tuesdayVets = p[tuesdayVetsLeagueName];
+        const tuesday = p[tuesdayLeagueName];
+        const wednesday = p[wednesdayLeagueName];
+        const wednesdayPairs = p[wednesdayPairsLeagueName];
+        const thursdayVets = p[thursdayVetsLeagueName];
+        const saturday = p[saturdayLeagueName];
+        const saturdayB = p[saturdayBLeagueName];
 
         const totalWins = p.awayWins + p.homeWins + p.cupWins;
         const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
@@ -163,14 +180,15 @@ function PlayerRecords(props) {
     // This sets the minimum number of games required for the stats to be counted
     players.forEach((player) => {
         const p = playerResults[player];
-        const monday = p['monday combined leeds'];
-        const tuesdayVets = p['tuesday vets leeds'];
-        const tuesday = p['tuesday leeds'];
-        const wednesday = p['wednesday half holiday leeds'];
-        const wednesdayPairs = p['wednesday pairs airewharfe'];
-        const thursdayVets = p['thursday vets leeds'];
-        const saturday = p['saturday leeds'];
-        const saturdayB = p['saturday leeds (b)'];
+
+        const monday = p[mondayLeagueName];
+        const tuesdayVets = p[tuesdayVetsLeagueName];
+        const tuesday = p[tuesdayLeagueName];
+        const wednesday = p[wednesdayLeagueName];
+        const wednesdayPairs = p[wednesdayPairsLeagueName];
+        const thursdayVets = p[thursdayVetsLeagueName];
+        const saturday = p[saturdayLeagueName];
+        const saturdayB = p[saturdayBLeagueName];
 
         // Monday
         if (monday) {

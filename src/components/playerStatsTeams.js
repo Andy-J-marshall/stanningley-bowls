@@ -3,6 +3,8 @@ import { Accordion } from 'react-bootstrap';
 function PlayerStatsTeams(props) {
     const stats = props.stats;
 
+    // TODO sort this out e.g. Cliff in 2013
+
     const {
         mondayGames,
         mondayAvg,

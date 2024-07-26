@@ -153,6 +153,7 @@ function PlayerStats(props) {
     }
 
     function closeButtonCallback() {
+        setValue(['']);
         setSearchedPlayerName(null);
     }
 
