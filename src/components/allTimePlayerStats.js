@@ -94,8 +94,7 @@ function AllTimePlayerStats(props) {
 
     return (
         <div id="all-time-player-stats" className="center">
-            {/* TODO update this text */}
-            <h3 style={{ padding: '2rem 0 0 0' }}>STATS SINCE 2021</h3>
+            <h3 style={{ padding: '2rem 0 0 0' }}>STATS SINCE 2013</h3>
             <PlayerStatSummary
                 playerStats={statsToDisplayArray}
                 showSinglesOnly={showSinglesOnlyBool}

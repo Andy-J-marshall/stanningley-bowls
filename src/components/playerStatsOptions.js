@@ -98,8 +98,7 @@ function PlayerStatsOptions(props) {
                                                 id="#all-years-select-checkbox"
                                                 onChange={toggleAllYearStats}
                                                 type="checkbox"
-                                                // {/* TODO update this text */}
-                                                label="Stats since 2021"
+                                                label="Stats since 2013"
                                                 checked={allYearToggle}
                                             />
                                         </Col>

@@ -15,6 +15,8 @@ import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
 import History from './components/history';
+import bowlsStats19 from './data/bowlsStats2019.json';
+import combinedBowlsStats19 from './data/allPlayerStats2019.json';
 import bowlsStats21 from './data/bowlsStats2021.json';
 import combinedBowlsStats21 from './data/allPlayerStats2021.json';
 import bowlsStats22 from './data/bowlsStats2022.json';
@@ -40,19 +42,26 @@ function App() {
 
     // Stats for future years will need to be updated here
     const allYearStats = {
-        // year2021: bowlsStats21, // TODO remove?
         year2022: bowlsStats22,
         year2023: bowlsStats23,
         year2024: bowlsStats24,
     };
     const allYearCombinedStats = {
-        // year2021: combinedBowlsStats21, // TODO remove?
         year2022: combinedBowlsStats22,
         year2023: combinedBowlsStats23,
         year2024: combinedBowlsStats24,
     };
-    const statsForEveryYearArray = [bowlsStats21, bowlsStats22, bowlsStats23, bowlsStats24];
+    // TODO this should have every year
+    const statsForEveryYearArray = [
+        bowlsStats19,
+        bowlsStats21,
+        bowlsStats22,
+        bowlsStats23,
+        bowlsStats24,
+    ];
+    // TODO this should have every year
     const combinedStatsForEveryYearArray = [
+        combinedBowlsStats19,
         combinedBowlsStats21,
         combinedBowlsStats22,
         combinedBowlsStats23,
@@ -66,11 +75,6 @@ function App() {
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;
         switch (year.toString()) {
-             // TODO remove?
-            // case '2021':
-            //     statsForSelectedYear = allYearStats['year2021'];
-            //     combinedStatsForSelectedYear = allYearCombinedStats['year2021'];
-            //     break;
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2022'];
