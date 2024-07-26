@@ -321,7 +321,7 @@ for team in teamDays:
             if playerName in traitorPlayers[league]:
                 return False
             
-            for i in range(1, 14):
+            for i in range(1, 13):
                 if rowNumber - i <= startingRow:
                     break
                 
