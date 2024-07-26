@@ -46,8 +46,6 @@ function Results(props) {
         };
     });
 
-    // TODO check that the results appear correct for 2021 stats (specifically game date)
-
     if (resultsFound) {
         return (
             <div className="center" id="result">
