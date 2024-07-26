@@ -1985,25 +1985,25 @@
             ]
         },
         "joey broadbent": {
-            "totalAgg": 686,
-            "totalAggAgainst": 514,
-            "availableAgg": 729,
+            "totalAgg": 707,
+            "totalAggAgainst": 531,
+            "availableAgg": 750,
             "availablePairsAgg": 372,
-            "availableHomeAgg": 375,
+            "availableHomeAgg": 396,
             "availableAwayAgg": 354,
             "availablePairsHomeAgg": 186,
             "availablePairsAwayAgg": 186,
             "totalPairsAgg": 345,
             "totalPairsAggAgainst": 263,
-            "totalHomeAgg": 361,
-            "totalHomeAggAgainst": 226,
+            "totalHomeAgg": 382,
+            "totalHomeAggAgainst": 243,
             "totalPairsHomeAgg": 176,
             "totalPairsHomeAggAgainst": 109,
             "totalAwayAgg": 325,
             "totalAwayAggAgainst": 288,
             "totalPairsAwayAgg": 169,
             "totalPairsAwayAggAgainst": 154,
-            "homeWins": 11,
+            "homeWins": 12,
             "homeLosses": 4,
             "awayWins": 10,
             "awayLosses": 4,
@@ -2017,7 +2017,7 @@
             "pairAwayLosses": 2,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 29,
+            "totalGamesPlayed": 30,
             "dayPlayed": [
                 "Monday AireDale & Wharfedale",
                 "Monday AireDale & Wharfedale",
@@ -2047,7 +2047,8 @@
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
-                "Wednesday Pairs AireWharfe"
+                "Wednesday Pairs AireWharfe",
+                "Saturday AireDale & Wharfedale"
             ],
             "pairsPartners": [
                 "tom broardbent",
@@ -2108,7 +2109,8 @@
                 "joey broadbent & callum shaw 31 - 18 katherine lodge & david locke",
                 "joey broadbent & callum shaw 31 - 29 steve senior & andrew cook",
                 "joey broadbent & tom broardbent 30 - 31 dianne teale & christopher sims",
-                "joey broadbent & callum shaw 22 - 31 roger waite & colin matthewman"
+                "joey broadbent & callum shaw 22 - 31 roger waite & colin matthewman",
+                "joey broadbent 21 - 17 christine ratcliffe"
             ]
         },
         "john armitage": {
