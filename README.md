@@ -184,5 +184,4 @@ Update `playersHelper.js` with the stats for the second team. Keep the old name 
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
 Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.
 
-
-<!-- TODO add something about adding manual leagues reports (AW Wed and Sat, BA etc.?) -->
+Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.
