@@ -50,5 +50,5 @@ test(`Clicking search with no player returns all stats`, async () => {
 });
 
 test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
-  await yearSelectPage.checkYearDropdownHasAllYearOptions();
+  await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
 });

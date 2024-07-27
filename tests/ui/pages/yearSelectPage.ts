@@ -13,14 +13,14 @@ export class YearSelectPage {
     this.year2022InYearDropdown = page.locator('#option2022');
     this.year2023InYearDropdown = page.locator('#option2023');
     this.allYearOptionsInDropdown = page.locator(
-      '.dropdown-menu > .dropdown-item'
+      '.dropdown-menu .dropdown-item'
     );
   }
 
-  async checkYearDropdownHasAllYearOptions() {
+  async checkYearDropdownHasAllYearOptions(expectedNumber: number) {
     await expect(this.yearSelectDropdown).toBeVisible();
     await this.yearSelectDropdown.click();
-    await expect(this.allYearOptionsInDropdown).toHaveCount(3);
+    await expect(this.allYearOptionsInDropdown).toHaveCount(expectedNumber);
   }
 
   async select2023Year() {
