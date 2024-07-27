@@ -46,7 +46,7 @@ export class PlayerStatsPage {
     this.playerListInDropdown = page.locator('#player-search');
     this.searchButton = page.locator('#search-button');
     this.backButton = page.locator('#back-button');
-    this.playerStatsItem = page.locator('#stats .list-group-item');
+    this.playerStatsItem = page.locator('#detailed-player-stats .list-group-item');
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
     this.overviewAccordionButton = page.locator('#stats-overview');
@@ -114,7 +114,7 @@ export class PlayerStatsPage {
   }
 
   async checkPlayerIsReturned() {
-    // await expect(this.playerStatsItem).toHaveCount(1); // TODO fix
+    await expect(this.playerStatsItem).toHaveCount(1);
   }
 
   async checkPlayerName(expectedPlayer: string) {
