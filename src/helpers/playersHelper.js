@@ -1,6 +1,6 @@
 import { findBiggestWin } from './statsHelper';
 
-export function returnPlayerStats(playersStats, player) {
+export function returnPlayerStats(playersStats, player, year) {
     const stats = playersStats[player];
     if (!stats) {
         return null;
@@ -47,15 +47,31 @@ export function returnPlayerStats(playersStats, player) {
     } = stats;
     const p = playersStats[player];
 
+    let mondayLeagueName = 'monday combined leeds';
+    const tuesdayVetsLeagueName = 'tuesday vets leeds';
+    const tuesdayLeagueName = 'tuesday leeds';
+    let wednesdayLeagueName = 'wednesday half holiday leeds';
+    const wednesdayPairsLeagueName = 'wednesday pairs airewharfe';
+    const thursdayVetsLeagueName = 'thursday vets leeds';
+    let saturdayLeagueName = 'saturday leeds';
+    let saturdayBLeagueName = 'saturday leeds (b)';
+
+    if (parseInt(year) < 2022) {
+        mondayLeagueName = 'monday airedale & wharfedale';
+        wednesdayLeagueName = 'wednesday half holiday bradford';
+        saturdayLeagueName = 'saturday bradford';
+        saturdayBLeagueName = 'saturday bradford (b)';
+    }
+
     // League stats
-    const monday = p['monday combined leeds'];
-    const tuesdayVets = p['tuesday vets leeds'];
-    const tuesdayEvening = p['tuesday leeds'];
-    const wednesday = p['wednesday half holiday leeds'];
-    const wednesdayPairs = p['wednesday pairs airewharfe'];
-    const thursday = p['thursday vets leeds'];
-    const saturday = p['saturday leeds'];
-    const saturdayBTeam = p['saturday leeds (b)'];
+    const monday = p[mondayLeagueName];
+    const tuesdayVets = p[tuesdayVetsLeagueName];
+    const tuesdayEvening = p[tuesdayLeagueName];
+    const wednesday = p[wednesdayLeagueName];
+    const wednesdayPairs = p[wednesdayPairsLeagueName];
+    const thursday = p[thursdayVetsLeagueName];
+    const saturday = p[saturdayLeagueName];
+    const saturdayBTeam = p[saturdayBLeagueName];
 
     // Wins and losses
     const totalWins = awayWins + homeWins + cupWins;
@@ -402,10 +418,10 @@ export function checkWinPercAndAverageAreNumbers(stats) {
     return verifiedStats
 }
 
-export function collatePlayerStats(statsToUse, players) {
+export function collatePlayerStats(statsToUse, players, year) {
     const statsArray = []
     players.sort().forEach((player) => {
-        const playerStats = returnPlayerStats(statsToUse, player);
+        const playerStats = returnPlayerStats(statsToUse, player, year);
         if (playerStats) {
             let stats = {
                 // Total

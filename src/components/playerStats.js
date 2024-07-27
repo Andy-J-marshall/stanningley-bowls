@@ -41,7 +41,7 @@ function PlayerStats(props) {
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
+    const statsToDisplayArray = collatePlayerStats(statsToUse, players, stats.statsYear);
 
     useEffect(() => {
         if (!loaded) {
@@ -169,6 +169,7 @@ function PlayerStats(props) {
                         name={playerName}
                         playersStats={statsToUse}
                         showStatSummary={showStatSummary}
+                        year={stats.statsYear}
                     ></Players>
                 </ListGroup>
             );

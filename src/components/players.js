@@ -14,10 +14,11 @@ function Players(props) {
     const playersStats = props.playersStats;
     const name = props.name;
     const showStatSummary = props.showStatSummary;
+    const year = props.year;
 
     const [loaded, setLoaded] = useState(false);
 
-    const stats = returnPlayerStats(playersStats, player);
+    const stats = returnPlayerStats(playersStats, player, year);
 
     useEffect(() => {
         if (!loaded) {
