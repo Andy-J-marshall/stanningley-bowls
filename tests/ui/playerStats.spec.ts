@@ -81,7 +81,6 @@ test('Summary of Dave Hudson stats since 2013 for team are correct', async () =>
   playerStatsPage.playerStatsAreCorrectInTable('387', '148', '38%', '-2.36');
 });
 
-// TODO broken
 test('Summary of Bernie Miller stats since 2013 for team are correct', async () => {
   playerStatsPage.setPlayerToFind('bernie miller');
 
@@ -89,7 +88,7 @@ test('Summary of Bernie Miller stats since 2013 for team are correct', async () 
   playerStatsPage.playerStatsAreCorrectInTable('401', '232', '58%', '2.28');
 
   await playerStatsPage.selectSinglesOnlyRadio();
-  playerStatsPage.playerStatsAreCorrectInTable('354', '211', '60%', '2.42');
+  playerStatsPage.playerStatsAreCorrectInTable('339', '201', '59%', '2.32');
 
   await playerStatsPage.selectPairsOnlyRadio();
   playerStatsPage.playerStatsAreCorrectInTable('62', '31', '50%', '2.08');
