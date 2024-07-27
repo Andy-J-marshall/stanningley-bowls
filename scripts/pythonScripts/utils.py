@@ -1,4 +1,3 @@
-import os
 import teamDetails
 
 teamPlayers = teamDetails.players
