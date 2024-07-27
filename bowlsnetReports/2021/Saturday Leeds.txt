@@ -278,7 +278,7 @@ Joe Adams           21  Derek Howell        10
 Malcolm Collinson    5  Shirley Biancardo   21
 Brenda Moscrop      21  Cliff Brogie        19
 Bob Emerson         21  Barbara Nellis      13
-Paul Sittlinton     21  David Hudson         9
+Paul Sittlinton     21  dave hudson         9
 Ambrose Farrel      13  Mario Biancardo     21
 Derek McCormack     17  Dennis Walters      21
       Aggregate:   140        Aggregate:   123
@@ -366,7 +366,7 @@ Bill Lovett         21  Graham Bluff         5
      Pudsey Park            Cross Flatts A
 Barbara Nellis      13  Paul Hatch          21
 Shirley Biancardo   21  Jim Bootland        16
-David Hudson        21  Pauline Bramley     20
+dave hudson        21  Pauline Bramley     20
 Brian Stevens       21  Brenda Walton        3
 Dennis Walters      21  Colin Bramley       17
 Mario Biancardo     21  Peter Colley        10
@@ -500,7 +500,7 @@ Graham Goodhall     21  Brian Stevens       14
 Laurie Bairstow     21  Barbara Nellis      11
 Martin Huxley       21  Cliff Brogie         7
 Geoff Firth         21  Bryan Bonnington    14
-Billy Ward          21  David Hudson        12
+Billy Ward          21  dave hudson        12
 Les Strang          21  Derek Howell         9
 Raymond Ball        20  Mario Biancardo     21
       Aggregate:   167        Aggregate:   104
@@ -575,7 +575,7 @@ Philip Rowe         12  Malcolm Hallas      21
       Division 1             Sat 3rd Jul
      Pudsey Park             Holbeck Moor
 Derek Howell        21  Helen Milton        12
-David Hudson        21  Hilary Campbell     20
+dave hudson        21  Hilary Campbell     20
 Barbara Nellis      20  Frank Armitage      21
 Shirley Biancardo   21  George Ellener       7
 Bryan Bonnington     5  Brian Thompson      21
@@ -680,7 +680,7 @@ Graham Bluff        18  Walter Stockhill    21
        Meanwood              Pudsey Park
 Andy Swain          21  Barbara Nellis      19
 Douglas Blair       18  Shirley Biancardo   21
-Ian Macfarlane      21  David Hudson        16
+Ian Macfarlane      21  dave hudson        16
 Jimmy Wilson        21  Derek Howell        19
 Jenny Holiday       20  Bryan Bonnington    21
 Phil McStay         21  Cliff Brogie        13
@@ -784,7 +784,7 @@ James King           8  *A.N.Other*         21
       Division 1             Sat 17th Jul
      Pudsey Park             Gildersome A
 Bryan Bonnington    12  Harvey Lockwood     21
-David Hudson        21  Diane Hales         18
+dave hudson        21  Diane Hales         18
 Barbara Nellis      21  Frank Hales         13
 Shirley Biancardo   21  Linda Gaunt         11
 Derek Howell        21  Dougie Cooper        8
@@ -902,7 +902,7 @@ Wayne Warburton     21  Josh Lucas          10
     Holbeck Ltd A            Pudsey Park
 Lisa Hogan          21  Derek Howell        18
 Joanne Unwin        16  Barbara Nellis      21
-Mark Griffin        21  David Hudson        15
+Mark Griffin        21  dave hudson        15
 Richard Perry       21  Shirley Biancardo    9
 Rhys Hammill        17  Brian Stevens       21
 Jason Ream          21  Cliff Brogie         7
@@ -997,7 +997,7 @@ Barbara Nellis      21  Jackie Cross        18
 Brian Stevens       21  David Brooke         4
 Cliff Brogie        21  Barbara Wherret      9
 Derek Howell        20  Brenda Moscrop      21
-David Hudson         5  Damien Wright       21
+dave hudson         5  Damien Wright       21
 Mario Biancardo     21  Joe Adams            6
 Dennis Walters      18  Derek McCormack     21
       Aggregate:   148        Aggregate:   116
@@ -1089,7 +1089,7 @@ Colin Bramley       21  Barbara Nellis      12
 David Abbott        21  Brian Stevens       19
 Steve Brown         21  Cliff Brogie        11
 John Binns          21  Bryan Bonnington     3
-Danny Towning       21  David Hudson         7
+Danny Towning       21  dave hudson         7
 Paul Hatch          21  Mario Biancardo     16
 Jim Bootland        12  Dennis Walters      21
       Aggregate:   149        Aggregate:   110
@@ -1228,7 +1228,7 @@ Tim Newton          17  Steve Brown         21
 
       Division 1             Sat 14th Aug
      Pudsey Park           Scatcherd Park A
-David Hudson        21  Martin Huxley       17
+dave hudson        21  Martin Huxley       17
 Bryan Bonnington    13  Geoff Firth         21
 Barbara Nellis       6  Graham Hainsworth   21
 Shirley Biancardo   21  Graham Goodhall     19
@@ -1296,7 +1296,7 @@ Christine Glynn     21  Bill Lovett         15
 Helen Milton        10  Barbara Nellis      21
 Geoff Warburton      8  Cliff Brogie        21
 George Ellener      21  Shirley Biancardo   15
-Brian Thompson      21  David Hudson        10
+Brian Thompson      21  dave hudson        10
 Wayne Warburton     17  Dennis Walters      21
 Steve Milton        21  Derek Howell         9
 Frank Armitage      21  Bryan Bonnington    10
@@ -1463,7 +1463,7 @@ Peter Clarkson      21  Marjorie Kay        15
 
       Division 1             Sat 4th Sep
      Gildersome A            Pudsey Park
-Dougie Cooper       21  David Hudson         8
+Dougie Cooper       21  dave hudson         8
 Dennis Wainwright   21  Shirley Biancardo   16
 Graham Gaunt        21  Derek Howell        12
 Diane Hales         21  Barbara Nellis      15
@@ -1598,7 +1598,7 @@ Cliff Brogie        21  Lisa Hogan          18
 Barbara Nellis      21  Paul Hainsworth     17
 Brian Stevens       21  Stephen Francis      5
 Shirley Biancardo   21  Jason Ream          10
-David Hudson        14  Rhys Hammill        21
+dave hudson        14  Rhys Hammill        21
 Derek Howell         4  Alex Perry          21
 Dennis Walters       6  Lance Greenwood     21
 Mario Biancardo     21  *A.N.Other*          8
@@ -1699,7 +1699,7 @@ Richard Perry       21  Wayne Warburton      7
       Division 1             Sat 18th Sep
      Pudsey Park               Meanwood
 Bryan Bonnington    16  Brian Longbottom    21
-David Hudson        14  Phil McStay         21
+dave hudson        14  Phil McStay         21
 Barbara Nellis      21  John Hindle          9
 Shirley Biancardo   21  Jimmy Wilson         4
 Derek Howell        21  Ian Macfarlane      17

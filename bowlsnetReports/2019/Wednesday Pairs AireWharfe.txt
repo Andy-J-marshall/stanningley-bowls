@@ -621,12 +621,12 @@ Granville Thornton        Michelle Norcliffe
      Stanningley A              Greenbottom A
 Brian Barker          29  Ann Ryley              31
 Andrew Robertson          Edgar Ryley              
-Don Shaw              31  Lynne Malcolm          22
+donald shaw              31  Lynne Malcolm          22
 Mabel Shaw                Janice Waite             
 Jack Roberts          31  Alan Bishop            19
 Alison Woodfine           William Schuler          
 Brian Fish            31  Malcolm Handscombe     21
-David Hudson              Elinor Newhouse          
+dave hudson              Elinor Newhouse          
          Aggregate:  122           Aggregate:    93
              Games:    3               Games:     1
             Points:   18              Points:     6
@@ -790,10 +790,10 @@ John Binns                John Spilsbury
 Sheila Hudson         31  Brian Barker           20
 John Hudson               Andrew Robertson         
 Pauline Ingleson      31  Mabel Shaw             23
-Kerstin Clapham           Don Shaw                 
+Kerstin Clapham           donald shaw                 
 Barry Clayton         31  Alison Woodfine        26
 Kelvin Grace              Derek Wilson             
-John Fletcher         28  David Hudson           31
+John Fletcher         28  dave hudson           31
 Ernest Hugill             Brian Fish               
          Aggregate:  121           Aggregate:   100
              Games:    3               Games:     1
@@ -955,11 +955,11 @@ Ernest Johnson            Alan Broadwell
 
        Division 3               Wed 17th Apr
      Stanningley A               Calverley B
-Don Shaw              31  Kenneth Paley           9
+donald shaw              31  Kenneth Paley           9
 Mabel Shaw                Raymond Gambles          
 Alison Woodfine       31  John Spilsbury         21
 Derek Wilson              Brian Hindmarsh          
-David Hudson          31  Brian Rawnsley         26
+dave hudson          31  Brian Rawnsley         26
 Brian Fish                Granville Thornton       
 Brian Barker          27  Malcolm Pratt          31
 Andrew Robertson          Clifford Wheatley        
@@ -1112,11 +1112,11 @@ Colin Hargreaves          Mike Ripley
 Jean Shepherd         31  Brian Barker           14
 Jean Ruddiman             Cliff Brogie             
 Gordon Robinson       31  Brian Fish             22
-John Binns                David Hudson             
+John Binns                dave hudson             
 Pat Ellse             31  Alison Woodfine        20
 Trevor Sargison           Derek Wilson             
 Meryl Auty            31  Mabel Shaw             26
-Barry Driscoll            Don Shaw                 
+Barry Driscoll            donald shaw                 
          Aggregate:  124           Aggregate:    82
              Games:    4               Games:     0
             Points:   20              Points:     4
@@ -1320,11 +1320,11 @@ Kelvin Grace              David Parsons
 
        Division 3                Wed 1st May
       Hall Park B               Stanningley A
-David Firth           17  Don Shaw               31
+David Firth           17  donald shaw               31
 Kath Crompton             Mabel Shaw               
 John Sutton           31  Cliff Brogie           30
 Bruce Callard             Brian Barker             
-Frank Sutcliffe       15  David Hudson           31
+Frank Sutcliffe       15  dave hudson           31
 Ruth Sutcliffe            Brian Fish               
 Jim Dobson            23  Alison Woodfine        31
 Christine Dobson          Derek Wilson             
@@ -1490,12 +1490,12 @@ Raymond Gambles           Michael Wardle
      Stanningley A              Greenbottom B
 Alison Woodfine       31  Mavis Harwood          11
 Derek Wilson              Linda Summers            
-Don Shaw              31  Elinor Newhouse         6
+donald shaw              31  Elinor Newhouse         6
 Mabel Shaw                Isobel Douglas           
 Brian Barker          31  Bob Ferguson           27
 Cliff Brogie              Anita Kingham            
 Brian Fish            31  Lynette Hall           21
-David Hudson              William Schuler          
+dave hudson              William Schuler          
          Aggregate:  124           Aggregate:    65
              Games:    4               Games:     0
             Points:   23              Points:     1
@@ -1746,11 +1746,11 @@ Joey Crawford             Bob Escreet
 
        Division 3               Wed 22nd May
        Holt Park                Stanningley A
-Brendan Clarke        22  David Hudson           31
+Brendan Clarke        22  dave hudson           31
 Kathleen Haley            Brian Fish               
 Trevor Haley          29  Alison Woodfine        31
 Derek Hewitt              Derek Wilson             
-Michelle Norcliffe    15  Don Shaw               31
+Michelle Norcliffe    15  donald shaw               31
 Barry Norcliffe           Mabel Shaw               
 Ernest Johnson        31  Brian Barker           20
 Pam Johnson               Cliff Brogie             
@@ -1944,11 +1944,11 @@ Clifford Wheatley         Kelvin Grace
      Stanningley A             Burley W/dale B
 Brian Barker          24  Brian Wardle           31
 Bernard Miller            Michael Wardle           
-David Hudson          19  Sandra Hall            31
+dave hudson          19  Sandra Hall            31
 Brian Fish                Michael Hall             
 Alison Woodfine       31  John Hardisty          25
 Derek Wilson              Peter Thornton           
-Don Shaw              31  Allan Knowles           5
+donald shaw              31  Allan Knowles           5
 Cliff Brogie              Arthur Brogden           
          Aggregate:  105           Aggregate:    92
              Games:    2               Games:     2
@@ -2309,11 +2309,11 @@ Michelle Norcliffe        Clifford Wheatley
 
        Division 3               Wed 19th Jun
      Greenbottom A              Stanningley A
-Alan Bishop           25  Don Shaw               31
+Alan Bishop           25  donald shaw               31
 Elinor Newhouse           Cliff Brogie             
 Ann Ryley             31  Brian Barker           24
 Edgar Ryley               Bernard Miller           
-Karen Whitelaw        23  David Hudson           31
+Karen Whitelaw        23  dave hudson           31
 Mike Whitelaw             Brian Fish               
 Janice Waite          31  Alison Woodfine        26
 Lynne Malcolm             Derek Wilson             
@@ -2480,10 +2480,10 @@ Granville Thornton        Barry Driscoll
 Alison Woodfine       31  David Robertshaw        4
 Derek Wilson              Ernest Hugill            
 Cliff Brogie          31  Barry Clayton          15
-Don Shaw                  Kelvin Grace             
+donald shaw                  Kelvin Grace             
 Brian Barker          31  Mick Snowden           19
 Bernard Miller            Pauline Ingleson         
-David Hudson          31  Ian Fickling           18
+dave hudson          31  Ian Fickling           18
 Brian Fish                Aileen Pawley            
          Aggregate:  124           Aggregate:    56
              Games:    4               Games:     0
@@ -2674,11 +2674,11 @@ Laila Packer              Ernest Johnson
 
        Division 3                Wed 3rd Jul
       Calverley B               Stanningley A
-Derek Whitaker        31  David Hudson           19
+Derek Whitaker        31  dave hudson           19
 John Spilsbury            Brian Fish               
 Malcolm Pratt         24  Alison Woodfine        31
 Clifford Wheatley         Derek Wilson             
-Raymond Gambles       24  Don Shaw               31
+Raymond Gambles       24  donald shaw               31
 Margaret Jones            Cliff Brogie             
 Brian Rawnsley        28  Brian Barker           31
 Granville Thornton        Bernard Miller           
@@ -2830,12 +2830,12 @@ Shaun Johnson             Nigel Stockdale
      Stanningley A                 Adel B
 Brian Barker          31  Jean Shepherd          22
 Bernard Miller            Anthony Shepherd         
-David Hudson          21  Meryl Auty             31
+dave hudson          21  Meryl Auty             31
 Brian Fish                Barry Driscoll           
 Alison Woodfine       31  Jean Ruddiman          30
 Derek Wilson              John Binns               
 Cliff Brogie          31  Pat Ellse              15
-Don Shaw                  Howard Rew               
+donald shaw                  Howard Rew               
          Aggregate:  114           Aggregate:    98
              Games:    3               Games:     1
             Points:   16              Points:     8
@@ -3040,7 +3040,7 @@ Gary Poucher              Ian Fickling
      Stanningley A               Hall Park B
 Cliff Brogie          31  Keith Barran           14
 Brian Fish                Ken Crompton             
-Don Shaw              31  David Firth            18
+donald shaw              31  David Firth            18
 Mabel Shaw                Bruce Callard            
 Brian Barker          27  Frank Sutcliffe        31
 Bernard Miller            Kath Crompton            
@@ -3224,9 +3224,9 @@ Gary Poucher              Margaret Jones
 Margaret Greenwood    10  Alison Woodfine        31
 Anne Hogg                 Derek Wilson             
 Bob Ferguson          20  Cliff Brogie           31
-Lynette Hall              David Hudson             
+Lynette Hall              dave hudson             
 William Schuler       14  Mabel Shaw             31
-Dorothy Jackson           Don Shaw                 
+Dorothy Jackson           donald shaw                 
 Linda Summers         14  Brian Barker           31
 Mavis Harwood             Bernard Miller           
          Aggregate:   58           Aggregate:   124
@@ -3361,14 +3361,14 @@ Paul Dishman              Katherine Lodge
 
        Division 3               Wed 31st Jul
      Stanningley A                Holt Park
-David Hudson          31  Trevor Haley           10
+dave hudson          31  Trevor Haley           10
 Kenneth Stockhill         Derek Hewitt             
 Alison Woodfine       31  Brendan Clarke          5
 Derek Wilson              Kathleen Haley           
 Brian Fish            31  Barry Norcliffe        19
 Brian Barker              Michelle Norcliffe       
 Cliff Brogie          31  Peter Byford            9
-Don Shaw                  Raymond Boast            
+donald shaw                  Raymond Boast            
          Aggregate:  124           Aggregate:    43
              Games:    4               Games:     0
             Points:   24              Points:     0
@@ -3557,10 +3557,10 @@ Amy Lawrence              Granville Thornton
 
        Division 3                Wed 7th Aug
     Burley W/dale B             Stanningley A
-Michael Hall          31  Don Shaw               18
+Michael Hall          31  donald shaw               18
 Sandra Hall               Cliff Brogie             
 Brian Wardle          31  Brian Fish             13
-Michael Wardle            David Hudson             
+Michael Wardle            dave hudson             
 John Hardisty         31  Alison Woodfine        27
 Peter Thornton            Derek Wilson             
 Arthur Brogden        16  Brian Barker           31

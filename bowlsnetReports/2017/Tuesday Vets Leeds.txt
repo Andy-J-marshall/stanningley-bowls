@@ -281,7 +281,7 @@ Graham Hey          21  Barry Lee            8
 Granville Smith     21  Mabel Shaw          10
 Paul Lawson         21  Ken Walker           6
 Paddy Glover        21  Keith Worrall       11
-Eric Massey         21  Don Shaw             5
+Eric Massey         21  donald shaw             5
 Jim Jordan          21  Brian Fish          15
 Mike Sherman        21  Bernard Miller      11
 Brian Higgins        9  Duncan McPhail      21
@@ -333,7 +333,7 @@ Len Robinson        13  Dave Norris         21
 Ken Walker          21  Kevin Toolan        14
 Keith Worrall       21  Colin Davison        8
 Mabel Shaw          11  Graham Hey          21
-Don Shaw            21  Jean Long           17
+donald shaw            21  Jean Long           17
 Stewart Watson      21  Kath Bywell         10
 Duncan McPhail      21  Shirley Biancardo    9
 Brian Fish          21  David Lyons         17
@@ -385,7 +385,7 @@ Aubrey Coldrey      17  Harry Gillett       21
 Colin Whitley       21  Mabel Shaw          14
 Brian Dowling       10  Ken Stockhill       21
 John Hainsworth     21  Jim Moorin          18
-Ron Witham          18  Don Shaw            21
+Ron Witham          18  donald shaw            21
 David Beardsworth   21  Brian Fish          16
 Ken Lee             21  Stewart Watson      14
 Bill Robson         13  Duncan McPhail      21
@@ -504,7 +504,7 @@ Stewart Watson      21  Keith Lambert       11
 Mabel Shaw          21  Joyce Whitehead     12
 Jim Moorin          21  Ted Mounteney        2
 Derek Wilson        21  Barry Baldwin       12
-Don Shaw            20  Harry Gillett       21
+donald shaw            20  Harry Gillett       21
 Duncan McPhail      21  Monica Buckroyd     12
 Ken Stockhill       21  Phillip Marshall     9
       Aggregate:   167        Aggregate:    86
@@ -552,7 +552,7 @@ Ken Maxim            6  Len Robinson        21
                              Tue 2nd May
      Holbeck Moor          Stanningley Park
 Barbara Rowe        12  Jack Roberts        21
-Carl Mahon          19  Don Shaw            21
+Carl Mahon          19  donald shaw            21
 Graham Dunwell      11  Jim Moorin          21
 Pat Parker          16  Mabel Shaw          21
 Allan Nicholson     21  Duncan McPhail      15
@@ -604,7 +604,7 @@ Doreen Hogg         16  Paul Lawson         21
                              Tue 9th May
    Stanningley Park           Barwick BC
 Brian Fish           8  Lynda Wright        21
-Don Shaw            21  Jane Boyd           14
+donald shaw            21  Jane Boyd           14
 Mabel Shaw          21  Sue Wilkinson       12
 Jim Moorin          21  Dennis Bainbridge   10
 Ken Stockhill       21  Jeff Binns           7
@@ -698,7 +698,7 @@ Patricia Cooper     21  Brian Fish          17
 Dennis Wainwright   21  Jack Roberts        10
 Frank Tempest       18  Mabel Shaw          21
 Bob Bearpark        18  Jim Moorin          21
-John Ackroyd        13  Don Shaw            21
+John Ackroyd        13  donald shaw            21
 Harvey Lockwood      7  Duncan McPhail      21
 David Rawson         7  Ken Stockhill       21
 Kevin Smales        16  Stewart Watson      21
@@ -828,7 +828,7 @@ Mabel Shaw          21  June Lambert        15
 Jim Moorin          17  Carol Robinson      21
 Jack Roberts        21  Doreen Hogg         10
 Stewart Watson      21  Maureen Bradshaw    16
-Don Shaw            16  Cedric Briggs       21
+donald shaw            16  Cedric Briggs       21
 Brian Fish          21  Barry Hogg           8
 Ken Stockhill       21  Elaine Hill         19
 Duncan McPhail      21  Len Robinson         9
@@ -876,7 +876,7 @@ Hilary Maxim        17  David Burns         21
 
                              Tue 6th Jun
   West Royd Park 'B'       Stanningley Park
-Keith Corp          21  Don Shaw            20
+Keith Corp          21  donald shaw            20
 Brenda Chaffer      21  Jim Moorin          15
 Colin Hargreaves    16  Ken Stockhill       21
 Colin Pontefract    10  Stewart Watson      21
@@ -955,7 +955,7 @@ Len Robinson        21  Brian Dowling        9
                              Tue 13th Jun
    Stanningley Park         Western Flatts
 Jim Moorin          19  Steve Parker        21
-Don Shaw            21  Lillian Pickles      9
+donald shaw            21  Lillian Pickles      9
 Jack Roberts        10  Beryl Blakeley      21
 Stewart Watson      21  Ray Ellerker        14
 Mabel Shaw          21  Granville Stoyles   10
@@ -972,7 +972,7 @@ Jack Roberts        21  Derek Walker        18
 Jim Moorin          21  Dennis Wainwright   12
 Stewart Watson      21  Frank Tempest       13
 Mabel Shaw          21  Patricia Cooper      5
-Don Shaw            21  Harvey Lockwood     16
+donald shaw            21  Harvey Lockwood     16
 Brian Fish          19  Dougie Cooper       21
 Duncan McPhail      21  John Ackroyd         7
 Ken Stockhill       21  Frank Hales         10
@@ -1034,7 +1034,7 @@ Walter Stockhill    21  Ian Tindal          19
    Stanningley Park         Harehills Park
 Mabel Shaw          21  Margaret West       16
 Brian Fish          20  Eric Massey         21
-Don Shaw            21  Jim Jordan          11
+donald shaw            21  Jim Jordan          11
 Jim Moorin          21  Bill Mewes           0
 Jack Roberts        17  Paul Lawson         21
 Ken Stockhill       21  Tony Boyes          19
@@ -1085,7 +1085,7 @@ Dave Norris         21  Elaine Hill         10
                              Tue 4th Jul
  Horsforth Woodside.       Stanningley Park
 David Lyons         21  Ken Stockhill       14
-Kath Bywell          9  Don Shaw            21
+Kath Bywell          9  donald shaw            21
 Shirley Biancardo   20  Mabel Shaw          21
 Ian Tindal          12  Jim Moorin          21
 Jean Long           21  Derek Wilson        12
@@ -1137,7 +1137,7 @@ Phillip Marshall    19  Jeff Linley         21
                              Tue 11th Jul
    Stanningley Park       West Royd Park 'A'
 Jim Moorin          21  Ron Witham           1
-Don Shaw            21  Colin Whitley       18
+donald shaw            21  Colin Whitley       18
 Mabel Shaw          14  Norman Shaw         21
 Jack Roberts        21  John Hainsworth      7
 Ken Stockhill       11  Bill Robson         21
@@ -1231,7 +1231,7 @@ Keith Fincken        5  Jim Moorin          21
 Ray Watson          18  Mabel Shaw          21
 Mavis Hargreaves    21  Ken Stockhill       15
 Monica Buckroyd     21  Brian Fish          19
-Keith Lambert        9  Don Shaw            21
+Keith Lambert        9  donald shaw            21
 Ted Mounteney        7  Stewart Watson      21
 Harry Gillett        6  Duncan McPhail      21
 Peter Griffin       14  Jack Roberts        21
@@ -1268,7 +1268,7 @@ David Burns         10  Walter Stockhill    21
     Quarter-final       On Horsforth Woodside
    Stanningley Park           Barwick BC
 Jim Moorin          21  David Wright        12
-Don Shaw            21  Sue Wilkinson        8
+donald shaw            21  Sue Wilkinson        8
 Ken Walker          21  Jack Finister       15
 Ken Stockhill       17  Jane Boyd           21
 Duncan McPhail      21  Chris Boyd          14
@@ -1364,7 +1364,7 @@ Brian Fish          21  David Burns         17
 Jim Moorin          21  Carl Mahon           8
 Mabel Shaw          21  Allan Nicholson      7
 Jack Roberts        21  Hilary Campbell      8
-Don Shaw            21  Frank Armitage      19
+donald shaw            21  Frank Armitage      19
       Aggregate:   155        Aggregate:   110
          Points:    36           Points:    21
 
@@ -1409,7 +1409,7 @@ Mike Sherman        21  Walter Stockhill    14
 
                              Tue 8th Aug
       Barwick BC           Stanningley Park
-Margaret Finister   11  Don Shaw            21
+Margaret Finister   11  donald shaw            21
 David Wilkinson      8  Ken Walker          21
 David Wright        14  Mabel Shaw          21
 Christine Plaskitt  10  Ken Stockhill       21
@@ -1500,7 +1500,7 @@ Walter Stockhill    21  Terry Blakeley      16
 
                              Tue 15th Aug
    Stanningley Park           Gildersome
-Don Shaw            21  Dougie Cooper       13
+donald shaw            21  Dougie Cooper       13
 Jim Moorin          21  Bob Bearpark         4
 Mabel Shaw          21  Frank Tempest       12
 Jack Roberts        21  David Rawson        10
@@ -1514,7 +1514,7 @@ Ken Stockhill       21  Dennis Wainwright   17
       Clegg Cup              Tue 22nd Aug
       Semi-final            On Armley Park
    Stanningley Park       West Royd Park 'A'
-Don Shaw            21  John Hainsworth      5
+donald shaw            21  John Hainsworth      5
 Ken Stockhill       19  Colin Whitley       21
 Mabel Shaw          21  Norman Shaw         11
 Jim Moorin          19  Ron Witham          21
@@ -1659,7 +1659,7 @@ Geoff Lacey          7  Dennis Wainwright   21
 Elaine Hill         21  Ken Stockhill        9
 Carol Robinson       9  Brian Fish          21
 Keith Worrall       15  Jim Moorin          21
-Maureen Bradshaw    16  Don Shaw            21
+Maureen Bradshaw    16  donald shaw            21
 Cedric Briggs       21  Ken Walker           6
 Kevin Gilroy        11  Stewart Watson      21
 Len Robinson        21  Jack Roberts        19
@@ -1672,7 +1672,7 @@ Walter Stockhill    15  Duncan McPhail      21
    Stanningley Park          Holbeck Moor
 Jim Moorin          21  Carl Mahon           5
 Jack Roberts        21  Hilary Campbell     11
-Don Shaw            19  Allan Nicholson     21
+donald shaw            19  Allan Nicholson     21
 Mabel Shaw          21  Frank Armitage      19
 Duncan McPhail      21  Jeff Warburton      10
 Brian Fish          21  David Burns         19
@@ -1724,7 +1724,7 @@ Brian Thompson      21  David Wilkinson     10
 Jim Moorin          21  Brenda Chaffer      10
 Ken Stockhill       21  Eileen Coldrey       7
 Mabel Shaw          17  Geoff Lacey         21
-Don Shaw            20  Colin Pontefract    21
+donald shaw            20  Colin Pontefract    21
 Jack Roberts        21  Brian Dowling       20
 Stewart Watson      21  Colin Hargreaves     9
 Brian Fish          21  Jeff Linley          5
@@ -1800,7 +1800,7 @@ Geoff Lacey         11  Walter Stockhill    21
                              Tue 26th Sep
     Western Flatts         Stanningley Park
 Terry Blakeley      21  Mabel Shaw          18
-Ray Ellerker        16  Don Shaw            21
+Ray Ellerker        16  donald shaw            21
 Cedric Ash          14  Jack Roberts        21
 Keith Hunter        21  Jim Moorin          20
 Doreen Hunter       16  Ken Stockhill       21

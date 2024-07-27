@@ -1720,7 +1720,7 @@ Clifford Roy             21  Cliff Brogie       14
 Barry Brown              21  Graham Dawson       2
 Bob Davison              15  Ken Stockhill      21
 Joanc Crampton           21  Terry Powell        8
-Barry Palmer             21  David Hudson        7
+Barry Palmer             21  dave hudson        7
 Bob Allitt               15  Brian Barker       21
 Alan Jones               17  Ken Walker         21
 Ken Brown                16  Robert Taylor      21
@@ -1873,7 +1873,7 @@ Tony Barker              16  Terry Williams     21
         Division 2                Thu 5th Jul
          Armley Pk             Stanningley Park B
 Pat Hayes                13  Mabel Shaw         21
-Arthur Senior            17  Don Shaw           21
+Arthur Senior            17  donald shaw           21
 Jean Newton              21  June Mitchell       4
 Gordon Sadler            21  Carol Butters      10
 John Kerry               21  Geoff Lee          12
@@ -2533,7 +2533,7 @@ Roy Hardwick             21  Malcolm Cameron    19
 Ina Gray                 15  Cliff Brogie       21
 Kevin Morley             21  Graham Dawson      16
 Keith Bradley             5  Ken Stockhill      21
-Hugh Callard             20  David Hudson       21
+Hugh Callard             20  dave hudson       21
 George Clough            19  Ken Walker         21
 Leslie Shepard           13  Brian Barker       21
 Eric Ralph               21  Robert Taylor      13
@@ -2582,7 +2582,7 @@ Beryl Butterfield        21  Gerry Faller       18
 
         Division 2               Thu 16th Aug
      Stanningley Park B             Gildersome
-Don Shaw                 21  Patricia Cooper    14
+donald shaw                 21  Patricia Cooper    14
 Shirley Sandilands       21  Phillip Lucas      15
 Carol Butters            17  David Charlesworth 21
 Geoff Lee                 6  Sandra Deegan      21

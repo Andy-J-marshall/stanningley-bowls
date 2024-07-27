@@ -557,8 +557,8 @@ Tony Webbe              John Chippindale
 Andrew Robertson    26  Sheila Hudson            31
 Derek Wilson            Val Grace                  
 Cliff Brogie        31  Kelvin Grace             15
-David Hudson            John Hudson                
-Don Shaw            31  William Lovedale         19
+dave hudson            John Hudson                
+donald shaw            31  William Lovedale         19
 Mabel Shaw              Ian Fickling               
 Jack Roberts        31  Dennis Court             20
 David Parker            Barry Clayton              
@@ -712,9 +712,9 @@ Jim McLeod          31  Jack Roberts             12
 John Chippindale        David Parker               
 William Shears      31  Andrew Robertson         26
 Tom Broadbent           Derek Wilson               
-Andrew Jones        31  Don Shaw                 19
+Andrew Jones        31  donald shaw                 19
 David Locke             Mabel Shaw                 
-David Samuel        31  David Hudson             21
+David Samuel        31  dave hudson             21
 Joey Crawford           Cliff Brogie               
       Aggregate:   124             Aggregate:    78
           Games:     4                 Games:     0
@@ -863,8 +863,8 @@ Jeff Blackburn          Lee Stevens
       Division 2               Wed 29th Apr
     Stanningley A                  Adel
 Cliff Brogie        31  Anthony Shepherd         22
-David Hudson            Les Tugwell                
-Don Shaw            31  Rene Stephens            22
+dave hudson            Les Tugwell                
+donald shaw            31  Rene Stephens            22
 Mabel Shaw              Alan Byers                 
 Jack Roberts        24  David Pike               31
 David Parker            Russell Ruddiman           
@@ -1115,12 +1115,12 @@ Keith Ellse             Jack Beck
      Hall Park B               Stanningley A
 Brian Falcon        31  Jack Roberts             22
 Keith Barran            David Parker               
-Jim Dobson          31  Don Shaw                 21
+Jim Dobson          31  donald shaw                 21
 Ian Tindal              Mabel Shaw                 
 June Marshall       15  Andrew Robertson         31
 Tony Webbe              Derek Wilson               
 Peter Allen         18  Colin Butterfield        31
-Malcolm Milner          David Hudson               
+Malcolm Milner          dave hudson               
       Aggregate:    95             Aggregate:   105
           Games:     2                 Games:     2
          Points:    10                Points:    14
@@ -1497,7 +1497,7 @@ Derek Wilson        31  Malcolm Handscombe       27
 Andrew Robertson        Alan Bishop                
 Ken Walker          31  Ann Ryley                18
 Cliff Brogie            Edgar Ryley                
-Don Shaw            31  Colin Mann                8
+donald shaw            31  Colin Mann                8
 Mabel Shaw              Jack Beck                  
       Aggregate:   124             Aggregate:    72
           Games:     4                 Games:     0
@@ -1607,7 +1607,7 @@ Geoff Yewdall       31  Andrew Robertson         24
 Brian Hindmarsh         Derek Wilson               
 Clifford Wheatley   31  David Parker             18
 Peter Harding           Jack Roberts               
-Derek Whitaker      31  Don Shaw                 20
+Derek Whitaker      31  donald shaw                 20
 Adrian Newlove          Mabel Shaw                 
 Marion Walton       31  Ken Walker               21
 Roger French            Cliff Brogie               
@@ -1791,7 +1791,7 @@ Cliff Brogie        28  Dorothy Lawrance         31
 Ken Walker              Douglas Blair              
 Jack Roberts        17  Jeanne Keightley         31
 Colin Butterfield       Norman Bracewell           
-Don Shaw            31  Barbara Gray              8
+donald shaw            31  Barbara Gray              8
 Mabel Shaw              Margaret Butterworth       
       Aggregate:   107             Aggregate:    83
           Games:     2                 Games:     2
@@ -1967,10 +1967,10 @@ Norman Bracewell        Alan Bishop
       Division 2               Wed 17th Jun
        Ilkley B                Stanningley A
 Lee Stevens         30  Ken Walker               31
-Steve Morton            David Hudson               
+Steve Morton            dave hudson               
 Kevin Jubb          31  Andrew Robertson         23
 Andrew Breare           Derek Wilson               
-Alan Strachan       23  Don Shaw                 31
+Alan Strachan       23  donald shaw                 31
 Gordon Dick             Mabel Shaw                 
 Jane Steadman       31  Jack Roberts             24
 Graham Stockhill        David Parker               
@@ -2137,10 +2137,10 @@ Gordon Dick             Edgar Ryley
 Val Grace           31  Andrew Robertson         17
 Sheila Hudson           Derek Wilson               
 David Robertshaw    31  Cliff Brogie             21
-Ian Fickling            David Hudson               
+Ian Fickling            dave hudson               
 Dennis Court        31  Jack Roberts             10
 Derek Laughey           David Parker               
-John Hudson         31  Don Shaw                 16
+John Hudson         31  donald shaw                 16
 Barry Clayton           Mabel Shaw                 
       Aggregate:   124             Aggregate:    64
           Games:     4                 Games:     0
@@ -2290,9 +2290,9 @@ David Firth             Russell Ruddiman
     Stanningley A               Grove Hill
 Andrew Robertson    25  Joey Crawford            31
 Derek Wilson            David Samuel               
-David Hudson        31  Andrew Jones             26
+dave hudson        31  Andrew Jones             26
 Cliff Brogie            David Locke                
-Don Shaw            31  William Shears           27
+donald shaw            31  William Shears           27
 Mabel Shaw              Judith Highcock            
 Jack Roberts        31  Jim McLeod                8
 Ken Walker              Ruth Marshall              
@@ -2473,11 +2473,11 @@ Judith Highcock         Jack Beck
 Les Tugwell         26  Jack Roberts             31
 Anthony Shepherd        Ken Walker                 
 Barry Driscoll      28  Mabel Shaw               31
-Philip Hynes            Don Shaw                   
+Philip Hynes            donald shaw                   
 David Pike          31  Andrew Robertson         26
 Russell Ruddiman        Derek Wilson               
 Brian Ward          31  Cliff Brogie             10
-Keith Ellse             David Hudson               
+Keith Ellse             dave hudson               
       Aggregate:   116             Aggregate:    98
           Games:     2                 Games:     2
          Points:    15                Points:     9
@@ -2611,10 +2611,10 @@ David Milnes            Sheila Hudson
       Division 2               Wed 15th Jul
     Stanningley A               Hall Park B
 Cliff Brogie        31  Brian Falcon             30
-David Hudson            June Marshall              
+dave hudson            June Marshall              
 Andrew Robertson    31  Peter Allen              27
 Derek Wilson            Doreen Stephenson          
-Don Shaw            31  Christine Dobson         23
+donald shaw            31  Christine Dobson         23
 Mabel Shaw              Jim Dobson                 
 Jack Roberts        31  Betty Beverley            7
 Ken Walker              Geoff Beverley             
@@ -2778,12 +2778,12 @@ Alan Strachan           Zoe Armstrong
 
       Division 2               Wed 22nd Jul
     Greenbottom A              Stanningley A
-Colin Mann          20  Don Shaw                 31
+Colin Mann          20  donald shaw                 31
 John Ellis              Mabel Shaw                 
 Janice Waite        21  Andrew Robertson         31
 Lynne Malcolm           Derek Wilson               
 Malcolm Handscombe  31  Cliff Brogie             25
-Jack Beck               David Hudson               
+Jack Beck               dave hudson               
 Ann Ryley           25  Jack Roberts             31
 Edgar Ryley             Ken Walker                 
       Aggregate:    97             Aggregate:   118
@@ -3089,10 +3089,10 @@ Roger French            Jack Beck
 Valerie Bradshaw    31  Derek Wilson             19
 Jeff Blackburn          Andrew Robertson           
 Kathy Hey           23  Cliff Brogie             31
-Graham Hey              David Hudson               
+Graham Hey              dave hudson               
 Margaret Butterworth18  Jack Roberts             31
 Barbara Gray            Ken Walker                 
-Dorothy Lawrance    31  Don Shaw                 18
+Dorothy Lawrance    31  donald shaw                 18
 Douglas Blair           Mabel Shaw                 
       Aggregate:   103             Aggregate:    99
           Games:     2                 Games:     2
@@ -3268,9 +3268,9 @@ Keith Barran            Jeff Blackburn
 
       Division 2               Wed 12th Aug
     Stanningley A               Calverley A
-David Hudson        20  Marion Walton            31
+dave hudson        20  Marion Walton            31
 Cliff Brogie            Roger French               
-Don Shaw            31  Geoff Yewdall            19
+donald shaw            31  Geoff Yewdall            19
 Mabel Shaw              Brian Hindmarsh            
 Jack Roberts        31  Clifford Wheatley        13
 Ken Walker              Peter Harding              
@@ -3410,9 +3410,9 @@ Brian Falcon            Dennis Court
     Stanningley A                Ilkley B
 Andrew Robertson    31  Andrew Breare            24
 Derek Wilson            Lee Stevens                
-Don Shaw            18  Kevin Jubb               31
+donald shaw            18  Kevin Jubb               31
 Mabel Shaw              Steve Ackroyd              
-David Hudson        29  Gordon Dick              31
+dave hudson        29  Gordon Dick              31
 Cliff Brogie            Alan Strachan              
 Jack Roberts        28  Jane Steadman            31
 Ken Walker              Graham Stockhill           

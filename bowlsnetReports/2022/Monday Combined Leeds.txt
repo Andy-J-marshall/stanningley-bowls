@@ -248,7 +248,7 @@ G Scholes                Adam Sharpe
 
                               Mon 11th Apr
        Harehills              New Wortley
-Claire Robinson      21  David Hudson        14
+Claire Robinson      21  dave hudson        14
 Peter Simmons        21  Angela Morley       20
 Ahmed Hassoun        21  Stephen Morley      19
 James Wright - Green  7  Danny Dawson        21
@@ -307,7 +307,7 @@ Stephen Morley       21  Harry Dixon         20
 Angela Morley        21  Bob Taylor          19
 Paul Shackleton          Howard Fowler         
 Stephanie Mundell    21  Barbara Taylor       9
-David Hudson             Lynda Ward            
+dave hudson             Lynda Ward            
         Aggregate:  123        Aggregate:    93
            Points:   29           Points:    19
 
@@ -705,7 +705,7 @@ Cedric Ash               Frank Hales
      Sth Lds Cons             New Wortley
 Barbara Wherrett     16  Martin Heys         21
 Arthur Horne         21  Andrew Cole         17
-Malcolm Colinson     21  David Hudson        12
+Malcolm Colinson     21  dave hudson        12
 Josh Lucas           21  Stephen Morley      10
 Dave Kellett         21  Paul Shackleton     20
 David Brooke             Angela Morley         
@@ -918,7 +918,7 @@ Andrew Ash            8  Danny Dawson        21
 Dot Taylor           18  Ann Hughes          21
 Granville Stoyles        Stuart Reardon        
 Dawn Peters          21  Paul Shackleton     15
-Steve Briggs             David Hudson          
+Steve Briggs             dave hudson          
         Aggregate:  108        Aggregate:   110
            Points:   24           Points:    24
 
@@ -1228,7 +1228,7 @@ Angela Morley        14  Craig Clarkson      21
 Stephen Morley       16  Mario Biancardo     21
 Danny Dawson         21  Clifford Brogie     16
 Stephanie Mundell    21  Andy Marshall       14
-David Hudson             Alyssa Randell        
+dave hudson             Alyssa Randell        
 Ann Hughes            9  Jeff Allman         21
 Keith Sellars            Shirley Allman        
         Aggregate:  102        Aggregate:   112
@@ -1241,7 +1241,7 @@ S Cahill             21  Danny Dawson         1
 Barry Tobin          21  Martin Heys          5
 P Hardy              21  Angela Morley        5
 Andrea Tobin         21  Stephanie Mundell    2
-E Tobin                  David Hudson          
+E Tobin                  dave hudson          
 G Scholes            21  Ann Hughes           8
 T Newsome                Paul Shackleton       
         Aggregate:  125        Aggregate:    42
@@ -1462,7 +1462,7 @@ Martin Heys          21  Oliver Delaney       8
 Stephen Morley       21  Jenny Holiday       18
 Danny Dawson         21  John Hindle         10
 Stephanie Mundell    21  Maureen Sheridan     8
-David Hudson             Julie Keightley       
+dave hudson             Julie Keightley       
 Keith Sellars        21  John King           17
 Stuart Reardon           Wendy Sykes           
         Aggregate:  126        Aggregate:    69
@@ -1488,7 +1488,7 @@ Chloe Jackson        21  Martin Heys          6
 Mark Taylor          21  Paul Shackleton      5
 Natalie Hughes       21  Stephen Morley      13
 Eddie Fisher         21  Stephanie Mundell    3
-Eugene Kellegher         David Hudson          
+Eugene Kellegher         dave hudson          
 Adam Sharpe          21  Angela Morley       13
 Gareth Lally             Stuart Reardon        
         Aggregate:  126        Aggregate:    60
@@ -1605,7 +1605,7 @@ Martin Heys          18  Granville Stoyles   21
 Stephen Morley       21  Hazel Goodall       11
 Danny Dawson         21  Glennys Ash         17
 Stephanie Mundell    21  Anne Lucas           3
-David Hudson             Bob Davison           
+dave hudson             Bob Davison           
 Stuart Reardon       21  Dawn Peters         17
 Keith Sellars            Dot Taylor            
         Aggregate:  123        Aggregate:    86

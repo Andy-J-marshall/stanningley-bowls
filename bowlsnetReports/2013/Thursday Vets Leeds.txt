@@ -622,7 +622,7 @@ Maureen Boyce          13  Timothy Pearson     21
 Don Sturgeon            8  Dennis Shutt        21
 Terry Powell           21  Brian Chamberlain   20
 Brian Barker           21  Ray Ward             7
-David Hudson           21  Ken Armitage        16
+dave hudson           21  Ken Armitage        16
          Aggregate:   146        Aggregate:   120
             Points:     7           Points:     3
 
@@ -2272,7 +2272,7 @@ Maureen Boyce          16  Hazel Goodall       21
 Anthony Heslewood      21  Lillian Pickles     19
 Gordon Taylor           8  Peter Smalley       21
 Geoff Lee              21  Cedric Ash          13
-David Hudson           21  Derek Howell        16
+dave hudson           21  Derek Howell        16
 Brian Barker           21  Barry Brown         12
          Aggregate:   133        Aggregate:   129
             Points:     7           Points:     3

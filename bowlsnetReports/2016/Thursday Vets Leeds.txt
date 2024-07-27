@@ -908,9 +908,9 @@ Steve Pickersgill   17  Mario Biancardo     21
       Division 1             Thu 12th May
      Bramley Pk A         Stanningley Park A
 George Clough       21  Dorothy Heslewood   13
-Jim Walker          21  David Hudson        14
+Jim Walker          21  dave hudson        14
 Deborah Sandles     21  Geoff Lee           13
-Leslie Shepard      12  Don Shaw            21
+Leslie Shepard      12  donald shaw            21
 Brian Fish          17  Colin Butterfield   21
 Kevin Morley        21  Anthony Heslewood    4
 Eric Ralph          21  Andy Robertson      11
@@ -1516,7 +1516,7 @@ Geoff Firth         21  Peter Thorpe        14
 
       Division 1             Thu 16th Jun
  Middleton Community      Stanningley Park A
-Hazel Marshall      18  Don Shaw            21
+Hazel Marshall      18  donald shaw            21
 Peter Griffin       21  Dorothy Heslewood    6
 Brian Weatherill    21  Anthony Heslewood   11
 Christine Glynne    21  Bernard Miller      17
@@ -1626,7 +1626,7 @@ Geoff Lee           21  Keith Clapham       10
 Cliff Brogie        21  Pat Dacre           15
 Ken Walker          21  Eddie Siberry        6
 Andy Robertson      16  Ken Hamilton        21
-Don Shaw            21  David Hurd           5
+donald shaw            21  David Hurd           5
 Brian Barker        21  Brian Shepherd      12
       Aggregate:   161        Aggregate:   110
          Points:    37           Points:    23
@@ -2424,7 +2424,7 @@ Lillian Pickles     21  Gordon Taylor        7
 Cedric Ash          21  Graham Dawson       12
 Mary Horrocks       21  Andy Robertson      17
 Derek Howell        15  Colin Butterfield   21
-Glynis Ash          21  David Hudson        16
+Glynis Ash          21  dave hudson        16
 Margaret McPhail    21  Cliff Brogie        11
 Les Brook           12  Ken Walker          21
       Aggregate:   152        Aggregate:   126
@@ -2671,7 +2671,7 @@ June Lambert        21  Terry Powell        18
 Shirley Biancardo   21  Mabel Shaw           2
 John Lambert        21  Andy Robertson       5
 Josie M Burdon      21  Geoff Lee            8
-Cedric Briggs       11  Don Shaw            21
+Cedric Briggs       11  donald shaw            21
 Barry Lee           17  Ken Walker          21
 Mario Biancardo     21  Brian Barker         5
       Aggregate:   154        Aggregate:    92
@@ -2789,7 +2789,7 @@ Geoff Lee           21  Gordon Monk         15
 Cliff Brogie        21  Terry Maher         17
 Andy Robertson      16  Malcolm Cameron     21
 Anthony Heslewood   21  Hazel Marshall       4
-Don Shaw            21  Brian Weatherill     5
+donald shaw            21  Brian Weatherill     5
 Brian Barker        19  Peter Griffin       21
       Aggregate:   144        Aggregate:   125
          Points:    32           Points:    27
@@ -2891,7 +2891,7 @@ Michael Howson      21  Cliff Brogie         8
 Gordon Summers      21  Anthony Heslewood   16
 Keith Clapham       13  Geoff Lee           21
 Eddie Siberry       21  Maureen Boyce        9
-Roy Hardwick        21  David Hudson        12
+Roy Hardwick        21  dave hudson        12
 Brian Shepherd      20  Andy Robertson      21
 Keith Fleming       21  Ken Walker           7
 David Hurd          21  Brian Barker         5
@@ -2992,7 +2992,7 @@ John Hainsworth     21  Graham Goodall      11
       Division 1             Thu 29th Sep
   Stanningley Park A         Pudsey Pk A
 Anthony Heslewood   21  Dorothy Phizackerley 4
-David Hudson        21  Shirley Rhodes      14
+dave hudson        21  Shirley Rhodes      14
 Geoff Lee           21  Ian Penman          16
 Cliff Brogie        21  Bryan Bonnington    19
 Colin Butterfield   21  Barbara Moss        12

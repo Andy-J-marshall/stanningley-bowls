@@ -1726,7 +1726,7 @@ Alison Woodfine     10  Peter Howroyd         21
 Ken Walker          21  Graham Foster         14
 Terry Powell        21  Sarah Harrison         5
 Derek Wilson        21  Donald Firth           7
-David Hudson        17  Will Gilroy           21
+dave hudson        17  Will Gilroy           21
 Jack Roberts        21  Brian Conway           1
 Andy Robertson      16  Stephen Gilroy        21
 Mabel Shaw 'A'      21  Andrew Smith           7
@@ -2174,7 +2174,7 @@ Stephen Airey       21  John Priestley        13
    Stanningley 'A'             Birkenshaw
 Alison Woodfine     21  Keith Woodhead         6
 Ken Walker           8  David Kent            21
-David Hudson        18  Wendy Andrews         21
+dave hudson        18  Wendy Andrews         21
 Andy Robertson      21  George Hunter          0
 Brian Barker        14  Laurie Taylor         21
 Jack Roberts        12  Harry Hall            21
@@ -2784,7 +2784,7 @@ David Watson        21  Alison Woodfine        8
 Graham Wilkinson    21  Ken Walker             9
 Terry Ricketts      21  Clifford Brogie       13
 Andrew Mackrill     21  Mabel Shaw 'A'         5
-Gillian Benson      11  David Hudson          21
+Gillian Benson      11  dave hudson          21
 Kathy Wilford       10  Jack Roberts          21
 David Pearson       14  Terry Powell          21
 Tony Cockcroft      21  Donald Shaw 'A'       11
@@ -3387,7 +3387,7 @@ Mary Hudson 'B'     17  Peter Howroyd         21
   Division 5 (Haigh)          Sat 30th Apr
    Stanningley 'A'         Bradford Moor 'A'
 Ken Walker          15  Tracy Tidswell        21
-David Hudson        15  Barry Durrans 'A'     21
+dave hudson        15  Barry Durrans 'A'     21
 Alison Woodfine     15  Shirley Hudson        21
 Brian Barker        21  Elaine Farrow         17
 Jack Roberts         9  Geoff Hudson          21
@@ -3997,7 +3997,7 @@ Margaret Lee        21  Terry Powell          13
 Brian Hemingway     21  Alan Parker            6
 David Clough        21  Ken Walker             9
 Maureen Holmes      14  Mabel Shaw 'A'        21
-Joan Law            21  David Hudson           9
+Joan Law            21  dave hudson           9
 Irene Bulman        21  Jack Roberts           5
 Dennis Robinson     21  Brian Barker           7
 Michael Jagger      21  Clifford Brogie        6
@@ -4586,7 +4586,7 @@ Lynne Hobson        11  Michael Jagger        21
   Division 5 (Haigh)          Sat 21st May
    Stanningley 'A'            Guiseley 'B'
 Brian Barker        21  Graham Bolton 'B'     17
-David Hudson        16  Jack Wiffen           21
+dave hudson        16  Jack Wiffen           21
 Andy Robertson      14  Andrew Baxter 'B'     21
 Alison Woodfine     15  Martin Laycock 'B'    21
 Ken Walker          21  Stan Marsden          16
@@ -5018,7 +5018,7 @@ Ted Piskozub        10  Terry Powell          21
 Marlene Hughes      21  Brian Barker          14
 Gordon Akroyd       16  Mabel Shaw 'A'        21
 John Garside         8  Jack Roberts          21
-Marian Firth        21  David Hudson           6
+Marian Firth        21  dave hudson           6
 Paul Tillyer        21  Clifford Brogie       12
 Harry Foster        21  Andy Robertson         4
 John Priestley      21  Donald Shaw 'A'       16
@@ -5448,7 +5448,7 @@ Graham Foster        7  Rusty Hatherley       21
   Division 5 (Haigh)          Sat 11th Jun
 Cleckheaton Sports 'A'      Stanningley 'A'
 Margaret Briggs     21  Alan Parker           10
-Liz Ellis           21  David Hudson           1
+Liz Ellis           21  dave hudson           1
 Anne Watkinson      20  Ken Walker            21
 Joyce Ellis         20  Alison Woodfine       21
 Janet Inness        13  Mabel Shaw 'A'        21
@@ -6455,7 +6455,7 @@ Brian Conway        21  Jack Roberts           9
 Keith Cooksey       21  Alan Parker           18
 Donald Firth        21  Terry Powell          13
 Stephen Gilroy      21  Donald Shaw 'A'        9
-John Griffin        21  David Hudson          16
+John Griffin        21  dave hudson          16
 Sarah Harrison      21  Mabel Shaw 'A'        19
 Martin Hayton       21  Brian Barker          11
 Jim Head            21  Alison Woodfine       16
@@ -6917,7 +6917,7 @@ Alan Farrow 'A'     17  Tony Cockcroft        21
   Division 5 (Haigh)          Sat 2nd Jul
    Stanningley 'A'           Hove Edge 'B'
 Ken Walker          21  Donald Whiteley 'B'   15
-David Hudson        21  Sue Gormley           13
+dave hudson        21  Sue Gormley           13
 Alison Woodfine     15  Linda Gledhill 'B'    21
 Jack Roberts        17  Stephen Airey         21
 Brian Barker        21  Julie Butterworth     16
@@ -7561,7 +7561,7 @@ Terry Ness          21  Mabel Shaw 'A'         7
 Ivan Larkins        21  Jack Roberts           7
 Gillian Johnson     13  Donald Shaw 'A'       21
 Jeff Hodgson        21  Andy Robertson        19
-Cliff White         21  David Hudson          20
+Cliff White         21  dave hudson          20
 Janet Green         15  Clifford Brogie       21
       Aggregate:   196          Aggregate:   132
          Points:    25             Points:     5
@@ -7937,7 +7937,7 @@ John Holden 'B'     19  Cliff White           21
    Stanningley 'A'           Oakenshaw 'A'
 Derek Wilson        18  Pat Priestley         21
 Alison Woodfine     21  Victor Riley          12
-David Hudson        21  Marlene Hughes        16
+dave hudson        21  Marlene Hughes        16
 Clifford Brogie     21  Ted Piskozub          20
 Jack Roberts        21  John Garside          18
 Ken Walker          15  Marian Firth          21
@@ -8450,7 +8450,7 @@ David Kent          21  Brian Barker          11
 Laurie Taylor       17  Derek Wilson          21
 Keith Woodhead      21  Alison Woodfine       20
 Harry Hall          18  Mabel Shaw 'A'        21
-Rusty Hatherley     21  David Hudson           6
+Rusty Hatherley     21  dave hudson           6
 Wendy Andrews       14  Jack Roberts          21
 Richard Hunter      21  Andy Robertson        16
 Ann Ramsbottom      21  Terry Powell           7
@@ -9075,7 +9075,7 @@ Marie Lockwood      12  George Hunter         21
   Division 5 (Haigh)          Sat 30th Jul
    Stanningley 'A'            Brackenhill
 Alison Woodfine     21  John Howarth          16
-David Hudson        21  Alan Holdsworth       12
+dave hudson        21  Alan Holdsworth       12
 Terry Powell        14  Alan Marsh            21
 Brian Barker        10  Terry Ricketts        21
 Ken Walker           4  Andrew Mackrill       21
@@ -9598,7 +9598,7 @@ Tracy Tidswell      18  Mabel Shaw 'A'        21
 Geoff Hudson         3  Ken Walker            21
 Neil Duxbury        21  Terry Powell          15
 Barry Durrans 'A'   21  Andy Robertson        16
-Colin Wright 'A'     6  David Hudson          21
+Colin Wright 'A'     6  dave hudson          21
 Alan Naylor         21  Clifford Brogie       13
 John Hainsworth     19  Donald Shaw 'A'       21
       Aggregate:   172          Aggregate:   171
@@ -10285,7 +10285,7 @@ Lynda Drury         21  Alan Naylor            5
 Terry Powell        11  Maureen Holmes        21
 Brian Barker        21  Ray Charles           13
 Alison Woodfine     13  David Clough          21
-David Hudson        21  Joan Law              20
+dave hudson        21  Joan Law              20
 Jack Roberts        21  Brian Hemingway       14
 Ken Walker           5  Michael Clare         21
 Andy Robertson      15  Michael Jagger        21
@@ -10849,7 +10849,7 @@ Jack Wiffen         21  Brian Barker          11
 Caroline Corbett    21  Ken Walker            19
 Andrew Baxter 'B'   15  Jack Roberts          21
 John Stead          15  Mabel Shaw 'A'        21
-Ben Falkingham      21  David Hudson           4
+Ben Falkingham      21  dave hudson           4
 Carolyn Matthewman 'B'                                                                                                                                                                                                                                                              21  Terry Powell           3
 Michael Dixon       14  Andy Robertson        21
 Bob Jeffreys        21  Clifford Brogie        7
@@ -11037,7 +11037,7 @@ Derek O'Connell     21  Malcolm Leeming        2
 
  Division 8 (Mellor)          Sat 27th Aug
    Stanningley 'B'           Queensbury 'C'
-David Hudson        21  Stella Doherty        19
+dave hudson        21  Stella Doherty        19
 Clifford Brogie     21  Gerry Hill            13
 Marjorie Taylor     21  Terry Hall            18
 Kevin Miller        21  Jennie Shaw           18
@@ -11429,7 +11429,7 @@ Donald Shaw 'A'     21  Joyce Ellis            3
 Ken Walker          21  Kath Icke             16
 Mabel Shaw 'A'      21  Janet Inness          18
 Jack Roberts        21  Alan Potter           14
-David Hudson         7  David Griffiths       21
+dave hudson         7  David Griffiths       21
 Andy Robertson       7  Dave Marshall         21
       Aggregate:   169          Aggregate:   164
          Points:    18             Points:    12
@@ -12658,7 +12658,7 @@ Mary Hudson 'B'     21  Mabel Shaw 'A'        17
 Lynda Drury         17  Ken Walker            21
 Marie Lockwood      21  Jack Roberts          13
 Donald Whiteley 'B' 21  Terry Powell           8
-John Holden 'B'     21  David Hudson           3
+John Holden 'B'     21  dave hudson           3
 Steven Bloomer      21  Clifford Brogie       14
       Aggregate:   201          Aggregate:   135
          Points:    24             Points:     6
@@ -13272,7 +13272,7 @@ Geoff Hudson        21  Peter Howroyd         16
 
   Division 5 (Haigh)          Sat 24th Sep
    Stanningley 'A'             Royd House
-David Hudson        13  Dorothy Craig         21
+dave hudson        13  Dorothy Craig         21
 Brian Barker         5  Thomas Johnson        21
 Alison Woodfine     16  Gillian Holt          21
 Ken Walker           5  Paul Fisher           21

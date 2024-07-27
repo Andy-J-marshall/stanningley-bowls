@@ -958,7 +958,7 @@ Dennis Walters      21  Brenda Brown         9
 Brian Stevens       21  George Bentley      19
 Frank Lindsay       20  Graham Goodall      21
 Barbara Moss         5  Jeff Holt           21
-David Hudson        19  Keith Kincaid       21
+dave hudson        19  Keith Kincaid       21
 David Turner        21  Michael Small       15
 Bill Pyett           3  Michael Stott       21
       Aggregate:   121         Aggregate:  148
@@ -1139,7 +1139,7 @@ Granville Stoyles   21  Keith Worrall        4
     Pudsey Park A             Burley Prk
 Bill Pyett          21  Barry Brown         16
 Janet Pearson       13  Malcolm Dacre       21
-David Hudson        21  Steve Pickersgill    6
+dave hudson        21  Steve Pickersgill    6
 Barbara Nellis      21  Mark McCann         16
 Dennis Walters      21  Pauline Stockdale   10
 David Turner         7  Barry Palmer        21
@@ -1231,7 +1231,7 @@ David Hurd          21  Michael Small       19
 Malcolm Hallas      21  Brian Stevens       12
 Gordon Monk         21  Frank Lindsay       13
 Mick Harrison       21  Barbara Nellis       2
-Mick Hall           21  David Hudson        16
+Mick Hall           21  dave hudson        16
 Brian Ragan         11  Bill Pyett          21
 Christine Glynne    21  Judith Hartley      10
 Les Oddy            20  Dennis Walters      21

@@ -845,8 +845,8 @@ Jack Wiffen           21  Jack Bowes 'A'       17
 Stan Marsden          21  Jack Roberts         16
 Caroline Corbett      14  Mabel Shaw           21
 Carolyn Matthewman    17  James Moorin         21
-Ralph Sissons         21  David Hudson          8
-Roger Waite           21  Don Shaw 'A'          6
+Ralph Sissons         21  dave hudson          8
+Roger Waite           21  donald shaw 'A'          6
 Andy Swallow          21  Barry Palmer         13
 Graham Bolton         17  Brian Fish           21
 Andy Baxter           20  Paul Bowes 'A'       21
@@ -1115,12 +1115,12 @@ Andrew Shaw           21  Lee Wider            12
 Steve Gardner 'A'     19  Derek Whitaker 'A'   21
 Jack Bowes 'A'        21  Margaret Wood 'A'    15
 James Moorin          12  Malcolm Pratt        21
-Don Shaw 'A'          21  Steve Spurr 'A'      12
+donald shaw 'A'          21  Steve Spurr 'A'      12
 David Parker          17  Brian Hodgson        21
 Barry Palmer          10  Adrian Newlove 'A'   21
 Cliff Brogie          20  Colin Whitley        21
 Jack Roberts          19  Eddie Prince         21
-David Hudson          11  Nigel Russell        21
+dave hudson          11  Nigel Russell        21
 Paul Bowes 'A'        21  Roger French         14
          Aggregate:  171          Aggregate:  188
              Games:    3              Games:    7
@@ -1462,13 +1462,13 @@ Nigel Russell         21  Brian Hall           18
 
        Division 2              Mon 22nd Apr
       Tarnfield A              Stanningley A
-Dorcas Kirk           21  David Hudson         20
+Dorcas Kirk           21  dave hudson         20
 Daniel Carter         21  Barry Palmer         10
 Daniel Twist           9  Mabel Shaw           21
 May Metcalf           17  Jack Roberts         21
 Joan Roberts           4  Cliff Brogie         21
 Harry Utley           21  Steve Gardner 'A'    15
-Stanley Southern      20  Don Shaw 'A'         21
+Stanley Southern      20  donald shaw 'A'         21
 Ron Brown             15  James Moorin         21
 Alan Gribbins         15  David Parker         21
 Callum Shaw           14  Paul Bowes 'A'       21
@@ -1686,9 +1686,9 @@ Andrew Shaw           21  Ryan Benson 'A'      18
 
        Division 2              Mon 29th Apr
      Stanningley A               Rawdon A
-David Hudson          21  Jim Fell             13
+dave hudson          21  Jim Fell             13
 James Moorin          21  Norman Shaw 'A'      19
-Don Shaw 'A'          21  Paul Haigh           16
+donald shaw 'A'          21  Paul Haigh           16
 Jack Roberts          11  Bill Robson          21
 Barry Palmer           7  Gordon Longfellow    21
 Cliff Brogie          11  David Johnson        21
@@ -2445,8 +2445,8 @@ Andrew Shaw           21  Richard Kearns       16
 James Moorin          21  Diane Farrar 'A'     17
 Paul Bowes 'A'        21  Pauline Barnett       5
 Jack Bowes 'A'        21  Mark Silvester       11
-Don Shaw 'A'          21  Alan Broadwell 'A'   19
-David Hudson          12  Garrie Bolton        21
+donald shaw 'A'          21  Alan Broadwell 'A'   19
+dave hudson          12  Garrie Bolton        21
 Mabel Shaw            12  John Parker          21
 Brian Fish            11  Howard Platt         21
 Cliff Brogie          11  Katherine Lodge      21
@@ -2721,9 +2721,9 @@ John Birtles          12  Paul Bowes 'A'       21
 Ken Gilroy            21  Ken Walker            7
 Peter Scott           21  Barry Palmer         20
 Nigel Peel            21  David Parker          4
-Nick Beswick          21  David Hudson         17
+Nick Beswick          21  dave hudson         17
 Graham Petty          21  Cliff Brogie         10
-Ian Swinfield         21  Don Shaw 'A'         18
+Ian Swinfield         21  donald shaw 'A'         18
          Aggregate:  177          Aggregate:  148
              Games:    7              Games:    3
             Points:   20             Points:   10
@@ -3049,8 +3049,8 @@ Kevin Burnett         21  Andrew Shaw          20
 James Moorin          21  Tony Farrar          11
 Paul Bowes 'A'        21  David Locke 'A'       1
 Jack Bowes 'A'        21  Joan Holden           9
-Don Shaw 'A'          13  Peter Brearly        21
-David Hudson          17  Neil Howlett 'A'     21
+donald shaw 'A'          13  Peter Brearly        21
+dave hudson          17  Neil Howlett 'A'     21
 Ken Walker             5  Philip West          21
 Brian Fish            16  Richard Allen        21
 Cliff Brogie          10  Neil Jameson         21
@@ -3373,8 +3373,8 @@ Peter Haxby 'A'       11  Paul Bowes 'A'       21
 Colin Mann            11  James Moorin         21
 Audrey McGregor       21  Ken Walker           12
 David Waite           15  Jack Bowes 'A'       21
-Ann Ryley 'A'         21  Don Shaw 'A'         17
-Janice Waite          21  David Hudson         16
+Ann Ryley 'A'         21  donald shaw 'A'         17
+Janice Waite          21  dave hudson         16
 Brian Hall            18  Brian Fish           21
          Aggregate:  170          Aggregate:  182
              Games:    5              Games:    5
@@ -3801,13 +3801,13 @@ Phil Hall             21  Robert Ellis          3
 Paul Bowes 'A'        21  Jack Wiffen          10
 Barry Palmer           7  Howard Bentley-Smith 21
 Brian Fish            17  Ralph Sissons        21
-David Hudson          14  Carolyn Matthewman   21
+dave hudson          14  Carolyn Matthewman   21
 James Moorin          15  Martin Laycock       21
 Mabel Shaw             1  Andy Swallow         21
 Jack Bowes 'A'        21  Graham Bolton        17
 David Parker          16  Roger Waite          21
 Cliff Brogie          21  Peter Storey         13
-Don Shaw 'A'          12  Colin Matthewman     21
+donald shaw 'A'          12  Colin Matthewman     21
          Aggregate:  145          Aggregate:  187
              Games:    3              Games:    7
             Points:    8             Points:   22
@@ -4060,10 +4060,10 @@ Malcolm Pratt         14  Jack Bowes 'A'       21
 Anne Newlove          20  James Moorin         21
 Margaret Wood 'A'     21  Cliff Brogie         20
 Nigel Russell         21  Barry Palmer         14
-Adrian Newlove 'A'    21  David Hudson         12
+Adrian Newlove 'A'    21  dave hudson         12
 Steve Spurr 'A'       21  Brian Fish           11
 Brian Hodgson         21  David Parker          3
-Roger French          21  Don Shaw 'A'          8
+Roger French          21  donald shaw 'A'          8
          Aggregate:  202          Aggregate:  133
              Games:    8              Games:    2
             Points:   25             Points:    5
@@ -4420,14 +4420,14 @@ Brian Hall             8  Roger French         21
        Division 2               Mon 8th Jul
      Stanningley A              Tarnfield A
 David Parker          21  Linda Utley          17
-Don Shaw 'A'          21  May Metcalf          10
+donald shaw 'A'          21  May Metcalf          10
 Brian Fish            21  Dorcas Kirk           8
 Steve Gardner 'A'     10  Daniel Carter        21
 Barry Palmer          19  Andy Mortimer        21
 Ken Walker            21  Alan Gribbins        11
 James Moorin          16  Stanley Southern     21
 Paul Bowes 'A'        21  Daniel Twist         11
-David Hudson          21  Philip Howard        17
+dave hudson          21  Philip Howard        17
 Cliff Brogie          21  Gareth Robinson      16
          Aggregate:  192          Aggregate:  153
              Games:    7              Games:    3
@@ -4744,7 +4744,7 @@ Ken Garbett           21  Mabel Shaw           10
 Brian Teale 'A'       14  Steve Gardner 'A'    21
 Bill Robson           21  Brian Fish           20
 Dave Hill             21  Barry Palmer         13
-David Johnson         21  Don Shaw 'A'         17
+David Johnson         21  donald shaw 'A'         17
 Paul Haigh            16  Paul Bowes 'A'       21
 Gordon Longfellow      9  Jack Bowes 'A'       21
 Ian Bolton 'A'        15  James Moorin         21
@@ -5332,13 +5332,13 @@ Mark I Matthews       21  Andrew Shaw          20
 Alan Broadwell 'A'    15  James Moorin         21
 Jean Harrison         13  Brian Fish           21
 Katherine Lodge       21  David Parker          9
-Howard Platt          21  Don Shaw 'A'         16
+Howard Platt          21  donald shaw 'A'         16
 Diane Farrar 'A'      21  Barry Palmer          4
 John Chippindale      21  Cliff Brogie         13
 Pauline Barnett       11  Paul Bowes 'A'       21
 John Parker           21  Mabel Shaw            4
 Howard Gardiner 'A'   21  Steve Gardner 'A'    11
-John Harrison 'A'     21  David Hudson          5
+John Harrison 'A'     21  dave hudson          5
          Aggregate:  186          Aggregate:  125
              Games:    7              Games:    3
             Points:   24             Points:    6
@@ -5639,9 +5639,9 @@ James Moorin          21  John Birtles         15
 Steve Gardner 'A'     12  Brian Dowling        21
 Ken Walker             4  Graham Petty         21
 Barry Palmer          21  Richard Whitaker     17
-David Hudson          20  Richard Tatum        21
+dave hudson          20  Richard Tatum        21
 David Parker          11  Nigel Peel           21
-Don Shaw 'A'          21  Nick Beswick         13
+donald shaw 'A'          21  Nick Beswick         13
 Brian Fish            13  Mark Barker          21
 Cliff Brogie           9  Ian Swinfield        21
          Aggregate:  153          Aggregate:  190
@@ -5924,12 +5924,12 @@ Andrew Shaw           17  Billy Cater          21
 David Samuel 'A'      21  Mabel Shaw            8
 Tony Farrar           13  Jack Bowes 'A'       21
 Joan Holden            5  Paul Bowes 'A'       21
-Ruth Marshall          6  Don Shaw 'A'         21
+Ruth Marshall          6  donald shaw 'A'         21
 Jeff Bacon            12  Steve Gardner 'A'    21
 David Locke 'A'       21  David Parker          6
 Neil Howlett 'A'      21  Brian Fish           16
 Philip West           21  Barry Palmer          9
-Neil Jameson          19  David Hudson         21
+Neil Jameson          19  dave hudson         21
 Joey Crawford         11  James Moorin         21
          Aggregate:  150          Aggregate:  165
              Games:    4              Games:    6
@@ -6245,8 +6245,8 @@ Paul Bowes 'A'        21  Jean Long             9
 Jack Bowes 'A'        21  John Ellis            6
 James Moorin          19  Peter Haxby 'A'      21
 Steve Gardner 'A'     21  Edgar Ryley           4
-Don Shaw 'A'          21  Audrey McGregor       8
-David Hudson          21  Alan Bishop           8
+donald shaw 'A'          21  Audrey McGregor       8
+dave hudson          21  Alan Bishop           8
 David Parker          21  Steve Crossley 'A'   18
 Brian Fish            21  Jenny Mann 'A'       18
 Barry Palmer          21  Janice Waite         14

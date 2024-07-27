@@ -232,7 +232,7 @@ Colin Whitley         21  Ken Walker             7
 Bill Robson           21  Mabel Shaw            18
 Peter Mylan           21  Derek Wilson          20
 Ken Lee               21  Jack Roberts           9
-David Beardsworth     17  Don Shaw              21
+David Beardsworth     17  donald shaw              21
 Norman Shaw            9  Andy Robertson        21
 Dave Norris           13  Stewart Watson        21
         Aggregate:   165          Aggregate:   167
@@ -277,7 +277,7 @@ Ken Walker            21  Jean Cooper           11
 Marion Worrall        16  Fred Leckenby         21
 Derek Wilson          14  Marjorie Kay          21
 Mabel Shaw            21  Peter Lee              6
-Don Shaw              21  Brian Dean             7
+donald shaw              21  Brian Dean             7
 Stewart Watson        21  Steven Ballance       19
 Andy Robertson        21  John Kay              13
         Aggregate:   198          Aggregate:   111
@@ -337,7 +337,7 @@ Tony Boyes            10  Jim Moorin            21
 Edward Parker         21  Ken Walker            19
 Paul Lawson           21  Gordon Taylor          5
 Margaret Higgins      21  Jack Roberts          14
-Jim Jordan            21  Don Shaw              11
+Jim Jordan            21  donald shaw              11
 Eric Massey           21  Stewart Watson        17
 Mike Sherman          21  Andy Robertson        19
         Aggregate:   192          Aggregate:   149
@@ -393,7 +393,7 @@ Brian Thompson        21  Mike Sherman          13
 Jim Moorin            21  Patricia Cooper        4
 Ken Walker            21  Harvey Lockwood       13
 Marion Worrall        21  Dougie Cooper         16
-Don Shaw              15  Dennis Wainwright     21
+donald shaw              15  Dennis Wainwright     21
 Jack Roberts          21  Bob Bearpark           9
 Mabel Shaw            21  Clifford Pitts        20
 Derek Wilson          21  Frank Tempest         11
@@ -470,7 +470,7 @@ Lillian Pickles        3  Mabel Shaw            21
 Granville Stoyles     21  Ken Walker            16
 Beryl Blakeley        21  Gordon Taylor         14
 Hazel Goodall         21  Jack Roberts          18
-Steve Parker          21  Don Shaw              12
+Steve Parker          21  donald shaw              12
 Ray Ellerker          19  Andy Robertson        21
 Terry Blakeley        21  Colin Butterfield     11
 Derek Howell          12  Stewart Watson        21
@@ -546,7 +546,7 @@ Gordon Taylor         21  Carol Robinson        15
 Jack Roberts          21  Barry Lee             17
 Ken Walker            18  Bruce Vayro           21
 Mabel Shaw            21  Len Robinson          18
-Don Shaw              14  Ken Stockhill         21
+donald shaw              14  Ken Stockhill         21
 Andy Robertson        21  Mario Biancardo       16
 Stewart Watson        13  Duncan McPhail        21
 Jim Moorin            21  Walter Stockhill       8
@@ -693,7 +693,7 @@ Dave Norris           21  Derek Walker           9
   Horsforth Woodside.          Stanningley Pk
 Jean Long             11  Ken Walker            21
 Kath Bywell            8  Jim Moorin            21
-Irene Stancliffe      15  Don Shaw              21
+Irene Stancliffe      15  donald shaw              21
 Mike Froggatt          7  Marion Worrall        21
 John Stancliffe       21  Gordon Taylor         16
 David Lyons           21  Derek Wilson          15
@@ -755,7 +755,7 @@ Kath Bywell           21  Jim Moorin            11
 John Stancliffe        6  Mabel Shaw            21
 Colin Davison         20  Gordon Taylor         21
 Colin Hargreaves      21  Derek Wilson          10
-Irene Stancliffe      12  Don Shaw              21
+Irene Stancliffe      12  donald shaw              21
 David Lyons           21  Bernard Miller        16
 Brian Dowling         16  Colin Butterfield     21
 Ian Tindal            18  Jack Roberts          21
@@ -770,7 +770,7 @@ Jack Roberts          21  Pat Parker             7
 Jim Moorin            21  Allan Nicholson        6
 Gordon Taylor          9  Frank Armitage        21
 Ken Walker            15  Hilary Campbell       21
-Don Shaw              12  Jeff Warburton        21
+donald shaw              12  Jeff Warburton        21
 Mabel Shaw            21  George Ellener        13
 Bernard Miller        20  Steve Milton          21
 Stewart Watson        21  Brian Thompson        18
@@ -859,7 +859,7 @@ Leslie Leak           12  Colin Whitley         21
 Jim Moorin            21  Terry Williams        16
 Ken Walker            21  Geoff Lacey           20
 Anthony Heslewood      7  Ron Witham            21
-Don Shaw              21  John Hainsworth        4
+donald shaw              21  John Hainsworth        4
 Derek Wilson          17  Ken Lee               21
 Mabel Shaw            21  Bill Robson           15
 Brian Barker          21  David Beardsworth     16
@@ -905,7 +905,7 @@ Yvonne Heseltine       5  Ken Walker            21
 Jean Cooper           19  Jim Moorin            21
 Steven Ballance        6  Mabel Shaw            21
 Peter Lee              3  Derek Wilson          21
-Brian Dean            10  Don Shaw              21
+Brian Dean            10  donald shaw              21
 Annice Wood           18  Jack Roberts          21
 Beryl Butterfield     21  Stewart Watson        17
 Valerie Darwin        21  Brian Barker          17
@@ -967,7 +967,7 @@ Derek Wilson          21  Brian Higgins         18
 Gordon Taylor         10  Bill Mewes            21
 Stewart Watson        21  Jim Jordan            12
 Mabel Shaw            21  Margaret Higgins      15
-Don Shaw              21  Eric Massey           16
+donald shaw              21  Eric Massey           16
 Brian Barker          16  Tony Boyes            21
 Bernard Miller        19  Mike Sherman          21
         Aggregate:   169          Aggregate:   178
@@ -1024,7 +1024,7 @@ Harvey Lockwood       21  Ken Walker            15
 Clifford Pitts        18  Jim Moorin            21
 Patricia Cooper       17  Jack Roberts          21
 Frank Tempest         20  Mabel Shaw            21
-Dennis Wainwright     21  Don Shaw              18
+Dennis Wainwright     21  donald shaw              18
 Phillip Lucas         21  Derek Wilson          16
 David Taylor          17  Colin Butterfield     21
 Bob Bearpark          21  Bernard Miller        16
@@ -1088,7 +1088,7 @@ Colin Whitley         21  Derek Wilson           4
 John Hainsworth       21  Jack Roberts          11
 Geoff Lacey           21  Ken Walker            13
 Ken Lee               21  Bernard Miller        12
-Peter Mylan           16  Don Shaw              21
+Peter Mylan           16  donald shaw              21
 Dave Norris           21  Andy Robertson         7
 Norman Shaw            8  Stewart Watson        21
         Aggregate:   176          Aggregate:   143
@@ -1098,7 +1098,7 @@ Norman Shaw            8  Stewart Watson        21
 Leslie Leak           15  Eddie Sidberry        21
 Ken Walker            21  Cedric Ash            13
 Jim Moorin            21  Joan Crampton         19
-Don Shaw              21  Granville Stoyles     12
+donald shaw              21  Granville Stoyles     12
 Colin Butterfield     21  Beryl Blakeley        13
 Derek Wilson          13  John Manson           21
 Mabel Shaw            21  Hazel Goodall         17
@@ -1171,7 +1171,7 @@ John Manson           18  Brian Thompson        21
                                 Tue 16th Aug
    The Hollies S &amp; SC          Stanningley Pk
 Elaine Hill           21  Jack Roberts          12
-Barry Lee             10  Don Shaw              21
+Barry Lee             10  donald shaw              21
 Doreen Hogg           16  Mabel Shaw            21
 Walter Stockhill      13  Jim Moorin            21
 Cedric Briggs         21  Colin Butterfield     10
@@ -1341,7 +1341,7 @@ Leslie Leak           21  Colin Davison         17
 Ken Walker            21  Maurice Burton        16
 Andy Robertson        20  Jean Long             21
 Derek Wilson          21  Stuart Tennant        14
-Don Shaw              21  Colin Hargreaves      17
+donald shaw              21  Colin Hargreaves      17
 Mabel Shaw            21  Kath Bywell            7
 Jack Roberts          17  David Lyons           21
 Brian Barker          14  Brian Dowling         21
@@ -1357,7 +1357,7 @@ Pat Parker             5  Mabel Shaw            21
 George Ellener        20  Stewart Watson        21
 Brian Alderson        12  Jim Moorin            21
 Hilary Campbell       20  Derek Wilson          21
-Barbara Rowe           9  Don Shaw              21
+Barbara Rowe           9  donald shaw              21
 Jeff Warburton        21  Ken Walker             5
 Brian Thompson        21  Brian Barker           5
 David Burns           21  Jack Roberts          12

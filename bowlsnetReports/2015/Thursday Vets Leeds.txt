@@ -951,10 +951,10 @@ Christine Smith       21  Ron Witham           12
    Stanningley Park A          Gildersome B
 Ken Walker            21  David Rawson          5
 Adam Sandilands        8  Sandra Deegan        21
-Don Shaw              21  Frank Tempest        10
+donald shaw              21  Frank Tempest        10
 Terry Powell           8  Frank Hales          21
 Bernard Miller        21  Patricia Cooper       3
-David Hudson          17  Clifford Pitts       21
+dave hudson          17  Clifford Pitts       21
 Anthony Heslewood     21  Dougie Cooper        19
 Brian Barker          21  Ron Burton           18
         Aggregate:   138          Aggregate:  118
@@ -1082,7 +1082,7 @@ John Hayes            17  George Bentley       21
 Geoff Hirst           21  Shirley Sandilands    7
 Joan Middleton        15  Bernard Miller       21
 Ken Billcliffe        21  Leslie Leak          18
-Jackie Walsh          20  David Hudson         21
+Jackie Walsh          20  dave hudson         21
 T Bickerdyke           7  Adam Sandilands      21
 Walter Saunders        3  Ken Walker           21
 Norman Walsh          20  Cliff Brogie         21
@@ -1212,7 +1212,7 @@ Terry Williams        21  Peter Griffin         9
 Geoff Lee             21  Leslie Shepard       17
 Adam Sandilands       21  Dorothy Foster        6
 Ken Walker            21  Betty Wilson          4
-Don Shaw              21  Leslie Deighton       3
+donald shaw              21  Leslie Deighton       3
 Terry Powell          21  Jean Tebbs           10
 Cliff Brogie          21  William Henderson     4
 Bernard Miller        17  Raymond Hague        21
@@ -1577,7 +1577,7 @@ Peter Lewis            2  Geoff Lee            21
 Derek Smith           21  Carol Butters        15
 Jim Thompson          21  Shirley Sandilands   15
 Jack Worsnop          16  Anthony Heslewood    21
-Brenda Walton         12  David Hudson         21
+Brenda Walton         12  dave hudson         21
 Barbara Ragan         21  Adam Sandilands       5
 Brian Ragan            8  Bernard Miller       21
 Chris Goode           21  Ken Walker           15
@@ -1680,7 +1680,7 @@ David Beardsworth     21  Brian Fish           18
 Terry Powell          21  Peter Whitrick       19
 Adam Sandilands       10  Barry Palmer         21
 Geoff Lee             10  Clifford Roy         21
-Don Shaw              21  Nigel Partington      5
+donald shaw              21  Nigel Partington      5
 Ken Walker            21  Colin Batterham      15
 Bernard Miller        21  Bob Davison          15
 Cliff Brogie           6  John Gilroy          21
@@ -1703,7 +1703,7 @@ William Henderson     21  Keith Corp           13
 
        Division 2              Thu 25th Jun
       Pudsey Pk B            Stanningley Park B
-Donald Hitchcox       17  David Hudson         21
+Donald Hitchcox       17  dave hudson         21
 Janet Pearson         21  June Mitchell         7
 Kathleen Vince        21  Carol Butters        12
 Val Ellis             21  Leslie Leak          11
@@ -2397,7 +2397,7 @@ Cliff Brogie          21  Keith Wakelin        11
 Geoff Lee             20  Marilyn Robinson     21
 Anthony Heslewood     21  Walter Saunders       1
 Adam Sandilands       21  Betty Falkinder      16
-Don Shaw              21  T Bickerdyke          9
+donald shaw              21  T Bickerdyke          9
 Terry Powell          21  Ronnie Bain          16
 Ken Walker            21  Ken Billcliffe        8
         Aggregate:   167          Aggregate:  100
@@ -3006,8 +3006,8 @@ Brian Fish            21  Peter Mylan          14
 Joanc Crampton        21  Bernard Miller       13
 Bob Davison           13  Anthony Heslewood    21
 Malcolm Brown         16  Adam Sandilands      21
-Barry Palmer          21  David Hudson         16
-Clifford Roy           6  Don Shaw             21
+Barry Palmer          21  dave hudson         16
+Clifford Roy           6  donald shaw             21
 Peter Whitrick        21  Ken Walker           15
 Nigel Partington      21  Andy Robertson       19
 Steve Pickersgill     21  Brian Barker          2

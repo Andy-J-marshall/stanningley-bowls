@@ -241,7 +241,7 @@ Frank Hales        17  Stephanie Mundell     21
 Sandra Deegan      21  Joe Aylesbury          7
 Linda Gaunt        14  Stephen Morley        21
 Ian Stocks         14  Danny Dawson          21
-David Norton           David Hudson            
+David Norton           dave hudson            
 Harvey Lockwood    16  Stuart Reardon        21
 Kevin Smales           Angela Morley           
       Aggregate:  100          Aggregate:   112
@@ -384,7 +384,7 @@ David Horsey       17  Danny Dawson          21
 David Bisby         6  Ian Baker             21
 Craig White        21  Stephen Morley        12
 Nigel Cranston     21  Stephanie Mundell      8
-Gary Kerrigan          David Hudson            
+Gary Kerrigan          dave hudson            
 Alan Dean          20  Martin Heys           21
 Joe Doughty            Angela Morley           
       Aggregate:  102          Aggregate:   104
@@ -516,7 +516,7 @@ Laura Love         21  Danny Dawson          18
 Jim Spalding       21  Stuart Reardon         4
 Gina Long              Keith Sellars           
 Sharon Kerry       10  Paul Shackleton       21
-Jade Kerry             David Hudson            
+Jade Kerry             dave hudson            
       Aggregate:  112          Aggregate:    89
          Points:   26             Points:    19
 
@@ -659,7 +659,7 @@ Stephen Morley      9  Phil Cox              21
 Danny Dawson       15  Helen Johnson         21
 Martin Heys            Thomas Johnson          
 Paul Shackleton     8  P Hardy               21
-David Hudson           T Newsome               
+dave hudson           T Newsome               
       Aggregate:   66          Aggregate:   126
          Points:   10             Points:    30
 
@@ -917,7 +917,7 @@ Brian Marshall     21  Howard Fowler         15
 Keith Sellars      14  Bob Taylor            21
 Martin Heys        21  Harry Dixon           15
 Danny Dawson       21  Sue Jones              7
-David Hudson           Barbara Taylor          
+dave hudson           Barbara Taylor          
 Stuart Reardon     21  Pat Skelton           12
 Ann Hughes             Emma Dixon              
       Aggregate:  119          Aggregate:    85
@@ -945,7 +945,7 @@ Martin Heys        13  Linda Gaunt           21
 Neil Porter        21  Ian Stocks            15
 Ann Hughes             Graham Gaunt            
 Stuart Reardon     21  Kevin Smales          15
-David Hudson           Harvey Lockwood         
+dave hudson           Harvey Lockwood         
       Aggregate:  109          Aggregate:   110
          Points:   23             Points:    24
 
@@ -1047,7 +1047,7 @@ Ellis Owen         21  Martin Heys            2
 Darren Robinson    16  Danny Dawson          21
 Jason Cooper       21  Stephen Morley        17
 Mick Bagshaw       17  Paul Shackleton       21
-Trevor Hawkin          David Hudson            
+Trevor Hawkin          dave hudson            
 Gary Dennison      21  Stuart Reardon         4
 Nicola Pearson         Stephanie Mundell       
       Aggregate:  104          Aggregate:    86
@@ -1179,7 +1179,7 @@ Shirley Biancardo  21  Stephanie Mundell      4
 Paul Leonard       17  Stuart Reardon        21
 Stuart Potter          Martin Heys             
 Andrew Marshall    21  Paul Shackleton        5
-Alyssa Randell         David Hudson            
+Alyssa Randell         dave hudson            
       Aggregate:  120          Aggregate:    67
          Points:   27             Points:    13
 
@@ -1216,7 +1216,7 @@ Stephanie Mundell  21  Ahmed Hassoun         15
 Angela Morley      21  Nigel Rawlings        18
 Stephen Morley     21  Raymond Swallow       10
 Paul Shackleton    21  Peter Simmons         20
-David Hudson           Sharon Kerry            
+dave hudson           Sharon Kerry            
 Brian Marshall     20  Dave Smith            21
 Alan Collins           Gina Long               
       Aggregate:  119          Aggregate:   105
@@ -1445,7 +1445,7 @@ Kevin Smales           Tyler Patrick
 
                              Mon 14th Aug
      New Wortley              Meanwood B
-David Hudson       21  Julie Keightley       14
+dave hudson       21  Julie Keightley       14
 Joe Aylesbury      18  John King             21
 Stephanie Mundell  21  Oliver Delaney        15
 Martin Heys        21  John Hindle           14
@@ -1541,7 +1541,7 @@ Malcolm Crowson    10  Dawn Peters           21
 Stephen Morley     21  Anne Lucas             9
 Martin Heys        15  Maveen Tomlinson      21
 Steve Longley      21  Dot Taylor             5
-David Hudson           Andrew Ash              
+dave hudson           Andrew Ash              
 Keith Sellars      20  Glennys Ash           21
 Brian Marshall         Shirley Barker          
       Aggregate:  108          Aggregate:    95
@@ -1632,7 +1632,7 @@ Howard Fowler      16  Angela Morley         21
 Dave Taylor        21  Brian Marshall        14
 Harry Dixon        11  Danny Dawson          21
 Andy Lynch         17  Paul Shackleton       21
-Ryan Lynch             David Hudson            
+Ryan Lynch             dave hudson            
 Sue Jones           2  Stuart Reardon        21
 Keith Skelton          Martin Heys             
       Aggregate:   80          Aggregate:   119

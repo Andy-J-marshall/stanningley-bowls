@@ -3567,7 +3567,7 @@ Darryl McCormick 'A'  7  David Watson          21
 
   Division 5 (Haigh)           Sat 25th May
       Birkenshaw               Stanningley
-Janet Hunter         21  David Hudson          15
+Janet Hunter         21  dave hudson          15
 Bob Corner           21  Carol Butters         15
 Ian Northrop         21  Ken Walker            11
 John Jagger          21  Mabel Shaw            14
@@ -4635,7 +4635,7 @@ Derek Wilson         20  Graham Wilkinson      21
 Ken Walker           17  Andrew Morton         21
 Carol Butters         7  David Watson          21
 Brian Barker         21  Andrew Mackrill       17
-David Hudson          7  Gillian Benson        21
+dave hudson          7  Gillian Benson        21
 Alison Woodfine      21  Kathy Wilford          6
 Mabel Shaw           21  Madeline Gamble       11
 Clifford Brogie      21  Tony Cockcroft        19
@@ -5171,7 +5171,7 @@ David Griffiths      21  Graham Wilkinson       7
 
   Division 5 (Haigh)           Sat 22nd Jun
      Oakenshaw 'A'             Stanningley
-Jim Gomersal         21  David Hudson          17
+Jim Gomersal         21  dave hudson          17
 David Hammond        21  Alison Woodfine       17
 Gordon Akroyd 'A'    21  Carol Butters          7
 Richard Stewart      21  Ken Walker            11
@@ -6327,7 +6327,7 @@ Graham Hey           19  Mabel Shaw            21
 Brenda Chaffer       21  Brian Fish            12
 Kath Crompton        21  Terry Powell          19
 John King             2  Steve Gardner         21
-Ian Tindal           21  David Hudson          10
+Ian Tindal           21  dave hudson          10
 Jeremy Waller        18  Donald Shaw           21
            Games:     5              Games:     5
        Aggregate:   169          Aggregate:   172
@@ -7279,7 +7279,7 @@ Les Kear             21  William Graham        12
       Stanningley              Armley Cons
 Carol Butters         3  Thomas Parr           21
 Brian Barker         21  Joan Crampton          9
-David Hudson         21  Pauline Stockdale      5
+dave hudson         21  Pauline Stockdale      5
 Ken Walker           21  Barry Brown           15
 Derek Wilson         16  Lesley Crowe          21
 Alison Woodfine      10  Barry Palmer          21
@@ -8874,7 +8874,7 @@ Alison Woodfine      21  Laurie Taylor          9
 Brian Barker         20  Janet Hunter          21
 Derek Wilson         13  Bob Corner            21
 Brian Fish           21  Harry Hall             8
-David Hudson         19  Keith Woodhead        21
+dave hudson         19  Keith Woodhead        21
 Mabel Shaw           14  Michael McKellor      21
 Terry Powell         14  Rusty Hatherley       21
 Steve Gardner        21  Richard Hunter        19
@@ -9428,7 +9428,7 @@ Janet Firth          21  Allen Bottomley       19
 Syd Spencer          21  Terry Powell          17
 Keith Robertson 'A'  21  Derek Wilson          17
 Ken Parker            8  Alison Woodfine       21
-Najabat Hussain      21  David Hudson          15
+Najabat Hussain      21  dave hudson          15
 David McCormick      21  Mabel Shaw            19
 Michael Feeley       21  Carol Butters          9
 Christine Kilner     13  Steve Gardner         21
@@ -9991,7 +9991,7 @@ Terry Powell         16  Marian Firth 'A'      21
 Alison Woodfine      21  Pat Priestley 'A'     18
 Mabel Shaw           21  Gordon Akroyd 'A'     20
 Steve Gardner        21  John Priestley         5
-David Hudson         11  David Hammond         21
+dave hudson         11  David Hammond         21
 Donald Shaw          21  Paul Tillyer          16
            Games:     7              Games:     3
        Aggregate:   181          Aggregate:   157
@@ -10525,7 +10525,7 @@ Jeremy Waller        21  Graham Wilkinson      16
 
   Division 5 (Haigh)           Sat 14th Sep
 Cleckheaton Sports 'A'         Stanningley
-Kath Wilson           4  David Hudson          21
+Kath Wilson           4  dave hudson          21
 Val Wilson 'A'       16  Alison Woodfine       21
 Joyce Ellis          21  Terry Powell           1
 Dave Marshall        21  Brian Fish             9
@@ -11074,7 +11074,7 @@ Derek Wilson         21  John King              2
 Alison Woodfine      21  Stuart Tennant         7
 Steve Gardner        21  Martin McGowan        14
 Mabel Shaw           21  Kath Crompton         15
-David Hudson         14  Paul Stoyles          21
+dave hudson         14  Paul Stoyles          21
 Clifford Brogie      14  Kevin Waller          21
 Donald Shaw          21  Jeremy Waller         14
            Games:     6              Games:     4
@@ -11610,7 +11610,7 @@ Andrew Fenton 'A'    12  Paul Kitson           21
 Thomas Parr          21  Adam Sandilands        4
 Barry Palmer         21  Carol Butters          7
 Kevin Gilroy         21  Colin Butterfield      6
-Joan Crampton        17  David Hudson          21
+Joan Crampton        17  dave hudson          21
 Barry Brown           5  Brian Fish            21
 Lesley Crowe         21  Terry Powell          15
 Pauline Stockdale    17  Alison Woodfine       21

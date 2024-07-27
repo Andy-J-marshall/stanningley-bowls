@@ -239,7 +239,7 @@ Derek Wilson          21  David Rawson           5
 Mabel Shaw            21  Dougie Cooper          7
 Colin Butterfield     12  Frank Tempest         21
 Keith Worrall         21  Bob Bearpark           6
-Don Shaw              21  Dennis Wainwright     11
+donald shaw              21  Dennis Wainwright     11
 Stewart Watson        21  Derek Walker          16
         Aggregate:   198          Aggregate:   116
            Points:    10             Points:     2
@@ -341,7 +341,7 @@ Jim Moorin            21  George Richmond       17
 Ken Walker            21  Elaine Hill           13
 Marion Worrall        10  Cedric Briggs         21
 Colin Butterfield     21  Ken Stockhill          7
-Don Shaw              21  Barry Lee              5
+donald shaw              21  Barry Lee              5
 Mabel Shaw            21  Bruce Vayro           11
 Stewart Watson        21  Len Robinson          12
 Bernard Miller        21  Walter Stockhill      17
@@ -399,7 +399,7 @@ Walter Stockhill      21  Mike Sherman          15
 Barbara Rowe          16  Mabel Shaw            21
 Colin Batterham       21  Keith Worrall         12
 Hilary Campbell       14  Jim Moorin            21
-Graham Dunwell        18  Don Shaw              21
+Graham Dunwell        18  donald shaw              21
 Frank Armitage        21  Derek Wilson          15
 Jeff Warburton        21  Jack Roberts           6
 George Ellener        21  Ken Walker            19
@@ -480,7 +480,7 @@ Mabel Shaw            14  David Lyons           21
 Keith Worrall         21  John Stancliffe        9
 Stewart Watson        21  Brenda Chaffer         4
 Colin Butterfield     19  Brian Dowling         21
-Don Shaw              21  Colin Hargreaves      13
+donald shaw              21  Colin Hargreaves      13
         Aggregate:   177          Aggregate:   154
            Points:     7             Points:     5
 
@@ -566,7 +566,7 @@ John Hainsworth       21  Alan Parker           13
 Linda Crawford        21  Marion Worrall         8
 Colin Whitley         21  Jim Moorin            11
 Bill Robson           21  Mabel Shaw            19
-David Beardsworth     21  Don Shaw              17
+David Beardsworth     21  donald shaw              17
 Peter Mylan           21  Ken Walker            13
 Eddie Stead           21  Bernard Miller         7
 Dave Norris           18  Stewart Watson        21
@@ -593,7 +593,7 @@ Steven Ballance       21  David Hurd            17
      Harehills Park           Stanningley Pk A
 Irene Cavavagh         4  Jim Moorin            21
 Brian Higgins         13  Mabel Shaw            21
-Paddy Glover          21  Don Shaw              19
+Paddy Glover          21  donald shaw              19
 Jim Spalding          13  Stewart Watson        21
 Edward Parker         21  Derek Wilson           9
 Margaret Higgins      21  Marion Worrall         5
@@ -644,7 +644,7 @@ Derek Wilson          21  Robert Cooper          2
 Ken Walker            12  Derek Crisp           21
 Mabel Shaw            21  Beryl Butterfield      9
 Keith Worrall         21  Jean Cooper           15
-Don Shaw              21  Valerie Darwin         6
+donald shaw              21  Valerie Darwin         6
 Stewart Watson        21  Annice Wood            9
         Aggregate:   192          Aggregate:   122
            Points:     9             Points:     3
@@ -779,7 +779,7 @@ Stewart Watson        21  Betty Hirst           19
 Mabel Shaw            21  Gordon Summers        16
 Keith Worrall         15  John Stocks           21
 Colin Butterfield     21  Brian Hirst            8
-Don Shaw              21  David Hurd            15
+donald shaw              21  David Hurd            15
 Bernard Miller        21  Geoff Ashton          13
         Aggregate:   201          Aggregate:   141
            Points:    10             Points:     2
@@ -840,7 +840,7 @@ Malcolm Child         12  Ken Walker            21
 Terry Blakeley        19  Mabel Shaw            21
 Ron Walker            16  Jack Roberts          21
 Ray Ellerker          14  Stewart Watson        21
-Bob Davison           19  Don Shaw              21
+Bob Davison           19  donald shaw              21
         Aggregate:   161          Aggregate:   203
            Points:     1             Points:    11
 
@@ -912,7 +912,7 @@ Patricia Cooper       21  Marion Worrall        10
 Frank Hales           13  Jack Roberts          21
 Clifford Pitts        11  Ken Walker            21
 Dougie Cooper         21  Derek Wilson          10
-Ron Burton            16  Don Shaw              21
+Ron Burton            16  donald shaw              21
 Bob Bearpark          21  Bernard Miller         8
 Frank Tempest          3  Stewart Watson        21
 Dennis Wainwright     21  Keith Worrall         20
@@ -1016,7 +1016,7 @@ Ken Watkin            21  Ken Walker            18
 Bruce Vayro           21  Jim Moorin            17
 Shirley Biancardo     14  Mabel Shaw            21
 Cedric Briggs         21  Jack Roberts          13
-Mario Biancardo       21  Don Shaw               8
+Mario Biancardo       21  donald shaw               8
 Len Robinson          21  Andy Robertson         6
 Duncan McPhail        21  Colin Butterfield     14
 Walter Stockhill      16  Keith Worrall         21
@@ -1075,7 +1075,7 @@ Bernard Miller        11  Pat Parker            21
 Jack Roberts          21  Colin Batterham       16
 Ken Walker            13  Jack Clough           21
 Jim Moorin            21  Allan Nicholson       17
-Don Shaw              21  George Ellener        15
+donald shaw              21  George Ellener        15
 Marion Worrall         4  Jeff Warburton        21
 Mabel Shaw            21  Frank Armitage         9
 Colin Butterfield     13  Steve Milton          21
@@ -1152,7 +1152,7 @@ Kath Bywell           21  Gordon Taylor          5
 Jean Long             21  Mabel Shaw            18
 John Stancliffe       10  Stewart Watson        21
 David Lyons           20  Jack Roberts          21
-Brian Dowling         21  Don Shaw              17
+Brian Dowling         21  donald shaw              17
 Brenda Chaffer        21  Derek Wilson          14
 Ian Tindal            21  Adam Sandilands        7
 Colin Hargreaves      21  Bernard Miller        10
@@ -1223,7 +1223,7 @@ Mike Sherman          20  Brenda Chaffer        21
     Stanningley Pk A           West Royd Pk A
 Keith Worrall          9  Ron Witham            21
 Anthony Heslewood     21  Linda Crawford        15
-Don Shaw              21  Eddie Stead           11
+donald shaw              21  Eddie Stead           11
 Jim Moorin            21  John Hainsworth        9
 Marion Worrall         7  David Beardsworth     21
 Derek Wilson           5  Ken Lee               21
@@ -1275,7 +1275,7 @@ Bernard Miller        17  Bill Mewes            21
 Keith Worrall         12  Margaret Higgins      21
 Ken Walker             3  Paul Lawson           21
 Stewart Watson        21  Edward Parker          7
-Don Shaw              21  Mike Sherman          10
+donald shaw              21  Mike Sherman          10
         Aggregate:   163          Aggregate:   147
            Points:     7             Points:     5
 
@@ -1317,7 +1317,7 @@ Marjorie Kay          21  Ken Walker            10
 Yvonne Heseltine      19  Marion Worrall        21
 Beryl Butterfield     21  Mabel Shaw            11
 Brian Dean            21  Derek Wilson          19
-Robert Cooper          6  Don Shaw              21
+Robert Cooper          6  donald shaw              21
 Steven Ballance       11  Keith Worrall         21
 Valerie Darwin        21  Jack Roberts          18
 Annice Wood            5  Stewart Watson        21
@@ -1512,7 +1512,7 @@ Mabel Shaw            21  Eddie Sidberry        15
 Marion Worrall        10  Joan Crampton         21
 Derek Wilson          11  Steve Parker          21
 Jack Roberts          20  Malcolm Child         21
-Don Shaw              21  John Manson           12
+donald shaw              21  John Manson           12
 Colin Butterfield     21  Hazel Goodall         20
 Keith Worrall         10  Ray Ellerker          21
 Stewart Watson        18  Terry Blakeley        21

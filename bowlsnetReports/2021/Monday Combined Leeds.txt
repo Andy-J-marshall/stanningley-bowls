@@ -211,7 +211,7 @@ Danny Dawson        21  Granville Stoyles  13
 Stephanie Mondell   21  Hazel Goodall      17
 Stephen Morley      21  Glennys Ash        13
 Paul Shackleton     21  Andrew Ash          9
-David Hudson            Mary Horrocks        
+dave hudson            Mary Horrocks        
 Stuart Reardon      21  Dawn Peters        17
 Angela Morley           Steve Briggs         
        Aggregate:  126        Aggregate:   69
@@ -251,7 +251,7 @@ Reece Pratt         17  Stuart Reardon     21
 Brenda Moscrop       8  Danny Dawson       21
 Arthur Horne        21  Ian Baker           9
 Paul Sitlinton          Stephanie Mondell    
-Charlie Cross       21  David Hudson       15
+Charlie Cross       21  dave hudson       15
 David Brooke            Lewis Cuddy          
        Aggregate:   99        Aggregate:  102
           Points:   21           Points:   22
@@ -342,7 +342,7 @@ Stephanie Mondell   13  Linda Gaunt        21
 Stuart Reardon      21  Sandra Deegan      10
 Marie Tate          16  Harvey Lockwood    21
 Angela Morley           Kevin Smales         
-David Hudson        21  Frank Hales         5
+dave hudson        21  Frank Hales         5
 Lewis Cuddy             Barry Ainsley        
        Aggregate:  111        Aggregate:   79
           Points:   24           Points:   18
@@ -406,7 +406,7 @@ Danny Dawson        21  Cath Crane         13
 Paul Shackleton     21  Harry Dixon        17
 Stephen Morley      21  Bob Taylor         18
 Ian Baker           21  Pat Skelton        13
-David Hudson            Barbara Taylor       
+dave hudson            Barbara Taylor       
 Stuart Reardon      21  Lavan Ron          20
 Angela Morley           Keith Skelton        
        Aggregate:  126        Aggregate:   84
@@ -471,7 +471,7 @@ Jenny Holiday       11  Andrew Cole        21
 Chris Bartley        7  Stephen Morley     21
 Andy Swain          21  Paul Shackleton    18
 John Hindle         18  Stephanie Mondell  21
-Carole Sullivan         David Hudson         
+Carole Sullivan         dave hudson         
 Wendy Sykes         11  Stuart Reardon     21
 Ann Wilson              Lewis Cuddy          
        Aggregate:   89        Aggregate:  116
@@ -538,7 +538,7 @@ Steve Briggs        21  Angela Morley       7
 Lillian Pickles      7  Andrew Cole        21
 Margaret Macphail       Danny Dawson         
 Andrew Ash          11  Ian Baker          21
-Mary Wilson             David Hudson         
+Mary Wilson             dave hudson         
        Aggregate:   81        Aggregate:  110
           Points:   17           Points:   25
 
@@ -667,7 +667,7 @@ David Taylor        17  Stephen Morley     21
 Derek Walker        15  Andrew Cole        21
 Sandra Deegan       12  Angela Morley      21
 Linda Gaunt             Paul Shackleton      
-Harvey Lockwood     21  David Hudson       12
+Harvey Lockwood     21  dave hudson       12
 Kevin Smales            Stephanie Mondell    
        Aggregate:   92        Aggregate:  117
           Points:   18           Points:   27
@@ -779,13 +779,13 @@ Reece Pratt             Mary Wilson
       Division 2            Mon 16th Aug
      New Wortley             Meanwood B
 Lewis Cuddy         21  Wendy Sykes        16
-David Hudson        21  Chris Bartley      10
+dave hudson        21  Chris Bartley      10
 Stephanie Mondell   21  John Hindle         9
 Paul Shackleton     21  John King           3
 Marie Tate          21  Andy Swain         13
 Danny Dawson            Julie Keightley      
 Angela Morley       20  Jenny Holiday      21
-David Hudson            Graham Hey           
+dave hudson            Graham Hey           
        Aggregate:  125        Aggregate:   72
           Points:   29           Points:   13
 

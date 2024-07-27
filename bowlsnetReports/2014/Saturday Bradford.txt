@@ -1598,7 +1598,7 @@ Jenny Taylor        10  Jeff Ramsden         21
      Stanningley              Brackenhill
 Clifford Brogie     18  John Howarth         21
 Derek Wilson        21  Alan Holdsworth      20
-David Hudson        21  Terry Ricketts       10
+dave hudson        21  Terry Ricketts       10
 Terry Powell        21  David Pearson         8
 Bernard Palmer      15  Gillian Benson       21
 Jack Roberts        21  Andrew Mackrill      18
@@ -2230,7 +2230,7 @@ Carole Sharp        21  Bernard Palmer        8
 Brian Tillotson     21  Jack Roberts         11
 Bryan Smith         21  Derek Wilson         10
 Andy Gardiner       19  Clifford Brogie      21
-Ian Burbank         21  David Hudson         20
+Ian Burbank         21  dave hudson         20
 Patricia Sunderland 15  Mabel Shaw           21
 Andrew Lee          20  Keith Worrall        21
 Rod Fox             21  Terry Powell         12
@@ -2781,7 +2781,7 @@ Paul Tillyer        21  Robert Sharp         18
 
   Division 5 (Haigh)         Sat 19th Apr
      Stanningley               Wibsey B
-David Hudson        10  Pat Newby            21
+dave hudson        10  Pat Newby            21
 Keith Worrall       21  Bernard Cahill       14
 Steve Gardner       21  Elaine Thorpe         4
 Andy Robertson      20  Nathan Dobson        21
@@ -3372,7 +3372,7 @@ Norman Lickley      21  Terry Powell         16
 Ben Stockdale       21  Clifford Brogie       8
 Carolyn Matthewman  21  Mabel Shaw           16
 Michael Turner      11  Jack Roberts         21
-Graham Bolton (b)   21  David Hudson         11
+Graham Bolton (b)   21  dave hudson         11
 Michael Dixon       13  Donald Shaw          21
 Martin Laycock (b)  21  Andy Robertson        7
 Hannah Turner (b)   21  Keith Worrall        15
@@ -3952,7 +3952,7 @@ Paul Tillyer         9  Martin Laycock (b)   21
   Division 5 (Haigh)         Sat 17th May
      Stanningley          Cleckheaton Moorend
 Marion Worrall       8  David Lloyd          21
-David Hudson        21  Barbara Woodcock     14
+dave hudson        21  Barbara Woodcock     14
 Andy Robertson      21  Stuart Goodall       13
 Christopher Gardner 14  Ken Hudson           21
 Bernard Palmer      15  Roy Gauntlett        21
@@ -4541,7 +4541,7 @@ Shirley Sandilands  13  James Greenwood      21
 Keith Worrall       21  Val Grace             6
 Bernard Palmer      21  Cath New             12
 Jack Roberts        17  Mike Mitchell        21
-David Hudson        21  Carole Wright (b)     5
+dave hudson        21  Carole Wright (b)     5
 Andy Robertson      21  Bill Slater (b)       9
 Mabel Shaw          20  Jeremy Parsons (b)   21
 Terry Powell        15  Kelvin Grace         21
@@ -5739,7 +5739,7 @@ Ralph Sissons        5  John Fletcher        21
 Gerry Smith (a)     21  Keith Worrall        16
 Patrick Brannan     21  Terry Powell         10
 Terry Wilsdon (a)   17  Derek Wilson         21
-Ralph Wood          21  David Hudson         12
+Ralph Wood          21  dave hudson         12
 John Waugh          13  Mabel Shaw           21
 Wendy Shimbles (a)  13  Steve Gardner        21
 Lynn Noonan         21  Bernard Palmer       20
@@ -6310,7 +6310,7 @@ Bernard Palmer       7  Hannah Turner (b)    21
 Andy Robertson      21  Ralph Sissons        17
 Jack Roberts        16  Michael Turner       21
 Derek Wilson        21  Roger Garnett         5
-David Hudson        21  Michael Dixon        14
+dave hudson        21  Michael Dixon        14
 Keith Worrall       21  Jack Wiffen (b)      12
 Terry Powell        13  Graham Bolton (b)    21
 Mabel Shaw          21  Carolyn Matthewman   11
@@ -6849,7 +6849,7 @@ Steve Pickersgill   21  John Woodcock         6
 Jackie Wilkinson    12  Clifford Brogie      21
 Roger Butterfield   16  Colin Butterfield    21
 Alan Paul            9  Keith Worrall        21
-David Pearson       21  David Hudson         15
+David Pearson       21  dave hudson         15
 Gillian Benson      21  Jack Roberts          7
 Andrew Mackrill     21  Mabel Shaw           12
 Tony Cockcroft      21  Derek Wilson         14
@@ -7391,7 +7391,7 @@ Stuart Goodall      21  Derek Wilson         15
 Margaret Lloyd      19  Terry Powell         21
 Steven James        18  Clifford Brogie      21
 Roy Gauntlett       21  Colin Butterfield    15
-David Lloyd         21  David Hudson         14
+David Lloyd         21  dave hudson         14
 Margaret Grogan     21  Keith Worrall        14
 Barbara Woodcock    21  Donald Shaw          20
 Frank Turnbull      17  Andy Robertson       21
@@ -8377,7 +8377,7 @@ Ted Piskozub        21  Jackie Richards (b)  13
   Division 5 (Haigh)         Sat 19th Jul
      Stanningley              Armley Cons
 Bernard Palmer       6  David Birks          21
-David Hudson         3  Kevin Gilroy         21
+dave hudson         3  Kevin Gilroy         21
 Clifford Brogie     10  Bob Davison          21
 Andy Robertson      21  Joan Crampton         7
 Colin Butterfield   21  Les Brookes          13
@@ -10342,7 +10342,7 @@ Derek Relton        20  Bill Hutchinson (a)  21
 
   Division 5 (Haigh)         Sat 16th Aug
      Stanningley              Oakenshaw A
-David Hudson        17  Victor Riley         21
+dave hudson        17  Victor Riley         21
 Keith Worrall       21  John Priestley (a)   16
 Clifford Brogie     16  Derek Dillon (a)     21
 Andy Robertson      21  Pat Priestley (a)     7
@@ -10947,7 +10947,7 @@ Colin Butterfield   21  Rod Fox              15
 Jack Roberts        21  Bryan Smith           6
 Bernard Palmer      21  Carole Sharp         16
 Marion Worrall      15  Patricia Sunderland  21
-David Hudson        21  Colin Sunderland     17
+dave hudson        21  Colin Sunderland     17
 Keith Worrall       21  Andy Gardiner        15
 Mabel Shaw          12  Robert Sharp         21
 Clifford Brogie     21  Ray O'Connor         13
@@ -11559,7 +11559,7 @@ Steve Pickersgill   21  Kelvin Grace         17
        Wibsey B               Stanningley
 David Lupton        21  Bernard Palmer        7
 Bernard Cahill      21  Keith Worrall        18
-James Klenk (b)     21  David Hudson         18
+James Klenk (b)     21  dave hudson         18
 George Gledhill (b) 21  Jack Roberts         12
 Nathan Dobson       13  Mabel Shaw           21
 Pat Newby           14  Clifford Brogie      21
@@ -12116,7 +12116,7 @@ Andy Robertson      12  Gerry Smith (a)      21
 Geoff Lee           21  Arthur Parker        16
 Clifford Brogie     21  Terry Wilsdon (a)    15
 Bernard Palmer      21  Eddie Foster          6
-David Hudson        21  Ralph Wood           10
+dave hudson        21  Ralph Wood           10
 Terry Powell        21  Patrick Brannan      13
 Mabel Shaw           9  John Smith (a)       21
 Keith Worrall        6  Pam Lindley (a)      21
@@ -13269,7 +13269,7 @@ Joe Mellor          12  Mark Morris          21
      Oakenshaw A              Stanningley
 Gerald Bywater      21  Keith Worrall        16
 David Hammond       21  Terry Powell         11
-Ted Piskozub        21  David Hudson         20
+Ted Piskozub        21  dave hudson         20
 Marlene Hughes (a)  21  Marion Worrall       17
 Pat Priestley (a)   21  Bernard Palmer       20
 Derek Dillon (a)    13  Mabel Shaw           21
@@ -13662,7 +13662,7 @@ Eddie Siberry       20  Andy Robertson       21
 Thomas Parr         21  Jack Roberts          9
 Joan Crampton       21  Marion Worrall       20
 Barry Brown         21  Mabel Shaw           15
-Nigel Partington    18  David Hudson         21
+Nigel Partington    18  dave hudson         21
 Bob Davison         21  Bernard Palmer       17
 John Gilroy         21  Keith Worrall        19
 Alan Nicholson      21  Donald Shaw          12

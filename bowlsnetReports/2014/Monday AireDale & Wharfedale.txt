@@ -973,10 +973,10 @@ Geoff Lee                3  John Hainsworth       21
 Derek Wilson            21  Audrey Womersley       5
 Bernard Palmer          21  Colin Pontefract       5
 Jack Roberts            17  John Birtles          21
-David Hudson            16  Richard Tatum         21
+dave hudson            16  Richard Tatum         21
 Cliff Brogie            16  Ian Coulthard         21
 Mabel Shaw              21  Terry Watson           2
-Don Shaw                21  Paul Womersley        10
+donald shaw                21  Paul Womersley        10
 James Moorin            21  Graham Womersley       3
 David Parker            10  Nigel Peel            21
           Aggregate:   167          Aggregate:   130
@@ -1291,12 +1291,12 @@ Paul Haigh              18  Ken Gilroy            21
        Hall Park B               Stanningley A
 William Lovedale        21  Bernard Palmer         9
 Peter Hargreaves        21  Derek Wilson          11
-Doreen Stephenson       21  David Hudson          14
+Doreen Stephenson       21  dave hudson          14
 Christine Dobson        11  Cliff Brogie          21
 Robert Kee              21  Jack Roberts          14
 David Firth             21  David Parker          16
 Keith Barran            13  Mabel Shaw            21
-Malcolm Milner           9  Don Shaw              21
+Malcolm Milner           9  donald shaw              21
 Jim Dobson               2  James Moorin          21
 David Greenwood          5  Steve Gardner         21
           Aggregate:   145          Aggregate:   169
@@ -1643,13 +1643,13 @@ Michael Blackburn       14  Geoff Collier         21
         Division 3                Mon 28th Apr
       Stanningley A                 Rawdon B
 Derek Wilson            21  Steven Sheppard       11
-David Hudson            14  Keith Sansom          21
+dave hudson            14  Keith Sansom          21
 Terry Powell            20  Terry Waite-Pullan    21
 Cliff Brogie            12  Ken Chapman           21
 Jack Roberts            14  Lindsay Rosendale     21
 David Parker            17  Michael Land          21
 Mabel Shaw              14  Marlene Waite-Pullan  21
-Don Shaw                21  Jim Fell              18
+donald shaw                21  Jim Fell              18
 James Moorin            15  John Collins          21
 Steve Gardner           21  Brian Minogue          4
           Aggregate:   169          Aggregate:   180
@@ -1965,9 +1965,9 @@ John Ellis               4  John Hainsworth       21
 Sylvia Richardson       21  David Parker          17
 Ray Smith               10  Mabel Shaw            21
 John Parker             21  Bernard Palmer        12
-Margaret Greenwood      11  Don Shaw              21
+Margaret Greenwood      11  donald shaw              21
 Michael Blackburn       21  Derek Wilson          19
-Jean Harrison           21  David Hudson          11
+Jean Harrison           21  dave hudson          11
 Nell Skelley            14  Jack Roberts          21
 Barbara Scholes         21  Terry Powell           6
 Les Austerberry          7  James Moorin          21
@@ -2555,9 +2555,9 @@ Jack Wilson             21  Mabel Shaw            15
 Alan Parkinson          21  Terry Powell          11
 Lee Stevens             21  Bernard Palmer        14
 Eric Dodsworth          21  Jack Roberts          16
-Graham Stockhill        21  David Hudson          12
+Graham Stockhill        21  dave hudson          12
 Eddie Wray              21  David Parker           8
-Jonathan Wilson         20  Don Shaw              21
+Jonathan Wilson         20  donald shaw              21
 Andrew Breare            7  James Moorin          21
 Vince Pickersgill       21  Steve Gardner         16
           Aggregate:   195          Aggregate:   147
@@ -2877,7 +2877,7 @@ Cliff Brogie            21  Brian Jones            9
 Bernard Palmer           7  Andrew Shaw           21
 Derek Wilson             6  Reg Addey             21
 Mabel Shaw              19  Peter Hammond         21
-Don Shaw                19  Callum Shaw           21
+donald shaw                19  Callum Shaw           21
 James Moorin            21  Ken Limb              17
 Steve Gardner            9  Roger Sayers          21
           Aggregate:   130          Aggregate:   194
@@ -3515,10 +3515,10 @@ Sue Steward             11  James Moorin          21
 Sally Goodall            7  Steve Gardner         21
 Andrew Magoolagan        8  Mabel Shaw            21
 Jack Steward            21  Jack Roberts           8
-Jan Smith               18  David Hudson          21
+Jan Smith               18  dave hudson          21
 Dave Telford            21  Terry Powell          10
 Will Gilroy             21  Bernard Palmer        14
-Rachel Telford           9  Don Shaw              21
+Rachel Telford           9  donald shaw              21
 Ken Gilroy              21  Cliff Brogie           8
           Aggregate:   158          Aggregate:   151
               Games:     5              Games:     5
@@ -3830,7 +3830,7 @@ John Harrison           10  Paul Haigh            21
 
         Division 3                Mon 16th Jun
       Stanningley A               Holt Park A
-David Hudson            21  Brenda Evans           5
+dave hudson            21  Brenda Evans           5
 Derek Wilson            21  Jim McQuade           16
 Cliff Brogie            14  Anthony Watson        21
 Terry Powell            18  Keith Bennett         21
@@ -3839,7 +3839,7 @@ Steve Gardner           21  Barry Underwood       10
 Mabel Shaw              18  Sylvia Petty          21
 Jack Roberts            21  Graham Walker         13
 Bernard Palmer           7  George Stevenson      21
-Don Shaw                21  Ernest Johnson        19
+donald shaw                21  Ernest Johnson        19
           Aggregate:   183          Aggregate:   155
               Games:     6              Games:     4
              Points:    19             Points:    11
@@ -4225,12 +4225,12 @@ Margaret Jeffrey        11  James Moorin          21
 Colin Pontefract         8  Steve Gardner         21
 Richard Tatum           21  Mabel Shaw            18
 Paul Womersley           6  Jack Roberts          21
-John Birtles            21  David Hudson          11
+John Birtles            21  dave hudson          11
 Ian Coulthard           19  Bernard Palmer        21
 John Hainsworth         21  David Parker           9
 Terry Watson            13  Terry Powell          21
 Peter Mylan             21  Cliff Brogie          10
-Nigel Peel              16  Don Shaw              21
+Nigel Peel              16  donald shaw              21
           Aggregate:   157          Aggregate:   174
               Games:     4              Games:     6
              Points:    12             Points:    18
@@ -4608,13 +4608,13 @@ Katherine Lodge         12  John Hainsworth       21
 Derek Wilson            21  Bill Middleton        14
 Bernard Palmer          21  Ian Tindal            12
 Cliff Brogie            21  Jim Dobson            19
-David Hudson            21  Robert Kee            20
+dave hudson            21  Robert Kee            20
 James Moorin            21  Peter Hargreaves      11
 Mabel Shaw              21  John Parker            7
 Steve Gardner           21  David Greenwood        9
 Keith Worrall           21  Keith Barran           9
 Jack Roberts            21  Peter Allen           12
-Don Shaw                21  Malcolm Milner        16
+donald shaw                21  Malcolm Milner        16
           Aggregate:   210          Aggregate:   129
               Games:    10              Games:     0
              Points:    29             Points:     1
@@ -4927,14 +4927,14 @@ Paul Haigh              21  William Lovedale      12
       Stanningley A             Wharfemeadows B
 Bernard Palmer          21  Anne Pickersgill      11
 Terry Powell            21  Margaret Greenwood     4
-David Hudson            21  Michael Blackburn     19
+dave hudson            21  Michael Blackburn     19
 David Parker            17  Alan Bolderson        21
 Jack Roberts            21  Sylvia Richardson     11
 James Moorin            21  Nell Skelley           7
 Mabel Shaw              21  John Parker           12
 Colin Butterfield       21  Billy Webb            10
 Cliff Brogie            12  John Harrison         21
-Don Shaw                21  Garrie Bolton         10
+donald shaw                21  Garrie Bolton         10
           Aggregate:   197          Aggregate:   126
               Games:     8              Games:     2
              Points:    26             Points:     4
@@ -5253,9 +5253,9 @@ Brian Minogue           21  Mabel Shaw            15
 Marlene Waite-Pullan    21  Jack Roberts          13
 Lindsay Rosendale       21  David Parker          12
 David Leather           21  Terry Powell           9
-Terry Waite-Pullan      21  David Hudson          15
+Terry Waite-Pullan      21  dave hudson          15
 Ken Chapman             13  Bernard Palmer        21
-John Collins            21  Don Shaw              15
+John Collins            21  donald shaw              15
 Paul Haigh              14  Steve Gardner         21
           Aggregate:   174          Aggregate:   163
               Games:     6              Games:     4
@@ -5634,12 +5634,12 @@ Nell Skelley            10  Vince Pickersgill     21
 Colin Butterfield       21  Malcolm Handscombe    11
 Cliff Brogie            13  Colin Mann            21
 Bernard Palmer          21  Jean Long             16
-David Hudson            21  Margaret Orchard       9
+dave hudson            21  Margaret Orchard       9
 James Moorin            21  Audrey McGregor        9
 Jack Roberts            21  Edgar Ryley           20
 David Parker             5  Ann Ryley             21
 Mabel Shaw              21  William Schuler       14
-Don Shaw                21  Jack Beck             15
+donald shaw                21  Jack Beck             15
 Steve Gardner           21  Geoff Collier         14
           Aggregate:   186          Aggregate:   150
               Games:     8              Games:     2
@@ -5887,13 +5887,13 @@ Andrew Jones             8  David Baldwin         21
 
         Division 3                Mon 4th Aug
         Menston A                Stanningley A
-Colin Robinson          16  Don Shaw              21
+Colin Robinson          16  donald shaw              21
 George Hanson            7  Steve Gardner         21
 Amrik Singh             16  Mabel Shaw            21
 Brian Jones             21  Jack Roberts           3
 Tim Dove                21  Colin Butterfield     11
 Gail Blue               18  James Moorin          21
-Roger Sayers            21  David Hudson           3
+Roger Sayers            21  dave hudson           3
 Ken Limb                21  Cliff Brogie          10
 Shaun Johnson           13  Bernard Palmer        21
 Andrew Shaw             21  Terry Powell          12
@@ -6311,7 +6311,7 @@ Bernard Palmer          19  Steve Ackroyd         21
 Terry Powell            21  Vince Pickersgill     19
 Colin Butterfield       21  Jane Steadman          3
 Jack Roberts            21  Bernard Connor         4
-Don Shaw                21  Gordon Dick           10
+donald shaw                21  Gordon Dick           10
 Mabel Shaw              21  Lee Stevens           19
 Steve Gardner           21  Colin Spooner          8
 James Moorin            21  Jonathan Wilson        7
@@ -6562,11 +6562,11 @@ David Ratcliffe         12  Jim McLeod            21
         Division 3                Mon 18th Aug
        Holt Park A               Stanningley A
 Ernest Johnson          21  Jack Roberts           8
-Lorna McQuade           21  David Hudson          14
+Lorna McQuade           21  dave hudson          14
 Sylvia Petty            21  Terry Powell           6
 Brenda Evans            21  David Parker          18
 Anthony Watson          21  Colin Butterfield     20
-Keith Bennett           13  Don Shaw              21
+Keith Bennett           13  donald shaw              21
 Michael Cox             20  Bernard Palmer        21
 Barry Underwood          9  Mabel Shaw            21
 Graham Walker           12  James Moorin          21
@@ -6947,13 +6947,13 @@ Billy Webb              21  Reg Addey             12
       Stanningley A                Eccleshill
 Jack Roberts            11  Neil Mylan            21
 David Parker            15  Will Gilroy           21
-David Hudson            21  Andrew Magoolagan     18
+dave hudson            21  Andrew Magoolagan     18
 Colin Butterfield       21  Pauline Gilroy        13
 Cliff Brogie            21  Diane Emery            8
 Bernard Palmer          21  Peter Howroyd         15
 James Moorin            11  Les Ward              21
 Mabel Shaw               8  Allen Bottomley       21
-Don Shaw                18  Rachel Telford        21
+donald shaw                18  Rachel Telford        21
 Steve Gardner           21  Ken Gilroy             5
           Aggregate:   168          Aggregate:   164
               Games:     5              Games:     5

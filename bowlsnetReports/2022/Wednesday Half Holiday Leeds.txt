@@ -673,7 +673,7 @@ Lyn Dye             21  Jackie Cross         2
 
       Division 2             Wed 6th Apr
      Burley Park           Moor Allerton A
-David Hudson        21  Bill Seddon         12
+dave hudson        21  Bill Seddon         12
 Ross Stuart         21  Geoff Rowland        5
 Malcolm Dacre       21  Keith Harbage       20
 Michael Howsham     17  Richard Mansell     21
@@ -827,7 +827,7 @@ Geoff Newbould      21  Philip Hatch        12
 
       Division 2             Wed 13th Apr
       Fearnville             Burley Park
-Fraser Douglas      21  David Hudson        17
+Fraser Douglas      21  dave hudson        17
 Tom Ingram          20  Malcolm Dacre       21
 Stella Gibbons      18  Barry Palmer        21
 Paul Foster         21  Michael Howsham     18
@@ -994,7 +994,7 @@ Arthur Hutchinson   21  Richard Mansell     14
      Gildersome A            Burley Park
 Tony Morris         21  Malcolm Dacre        7
 David Holmes        21  Clifford Brogie     16
-Neil Schofield      21  David Hudson        16
+Neil Schofield      21  dave hudson        16
 Harvey Lockwood     21  Michael Howsham     19
 Kevin Smales        21  Barry Palmer        16
 Diane Hales         21  Andrew Waller       17
@@ -1128,7 +1128,7 @@ Barry Palmer        21  Maria Binelli       15
 Andrew Waller       19  Dennis Cole         21
 Michael Howsham     21  Frank Powell        16
 Clifford Brogie     21  David Curland       14
-David Hudson        21  *A.N.Other*          0
+dave hudson        21  *A.N.Other*          0
 Malcolm Dacre       13  Valerie Bush        21
       Aggregate:   116        Aggregate:    87
          Points:    26           Points:    18
@@ -1290,7 +1290,7 @@ Diane Hales         21  Frank Powell         9
       Division 2             Wed 4th May
      Grove Road A            Burley Park
 Margaret West       21  Malcolm Dacre        8
-Peter Nichols       15  David Hudson        21
+Peter Nichols       15  dave hudson        21
 Barry Potter        21  Barry Palmer         7
 Martin Murdoch      21  Michael Howsham     18
 John West           11  Clifford Brogie     21
@@ -1402,7 +1402,7 @@ Brendan Keville     20  Alex McSheehy       21
 Andrew Waller       21  James Lancaster      5
 Barry Palmer        20  John Hardwick       21
 Michael Howsham     21  Jenny Mullins        9
-David Hudson        21  Mac Bell            10
+dave hudson        21  Mac Bell            10
 Malcolm Dacre       21  Kevin Collins        9
 Steve Pickersgill   21  Barbara Kerridge     1
       Aggregate:   125        Aggregate:    55
@@ -1746,7 +1746,7 @@ Clifford Brogie     21  Monica Buckroyd      8
 Andrew Waller       21  Tony Ward           18
 Michael Howsham     17  Peter Griffin       21
 Malcolm Dacre       11  Michael Noble       21
-David Hudson        21  Andrea Ryder        16
+dave hudson        21  Andrea Ryder        16
 Barry Palmer        21  David Clarkson       6
       Aggregate:   112        Aggregate:    90
          Points:    25           Points:    19
@@ -1887,7 +1887,7 @@ June Johnson        21  Shirley Biancardo   16
      Holbeck Moor            Burley Park
 Hilary Campbell     21  Barry Palmer        19
 George Ellener       6  Malcolm Dacre       21
-Carl Mahon          21  David Hudson        13
+Carl Mahon          21  dave hudson        13
 Arthur Hutchinson   21  Michael Howsham     11
 Steve Milton        16  Clifford Brogie     21
 Jeff Warburton      21  Andrew Waller       19
@@ -2028,7 +2028,7 @@ Neville Salmon      18  Matthew Turner      21
 
       Division 2             Wed 15th Jun
    Moor Allerton A           Burley Park
-Arthur Kasher       21  David Hudson        20
+Arthur Kasher       21  dave hudson        20
 Keith Harbage       21  Malcolm Dacre       10
 Paul Shafar         21  Barry Palmer        13
 Geoff Rowland       21  Pat Dacre           19
@@ -2340,7 +2340,7 @@ Barry Tobin         13  John Whiteley       21
 Andrew Waller       21  Stuart Poulter      18
 Clifford Brogie     16  Fraser Douglas      21
 Michael Howsham     21  Paul Foster          6
-David Hudson        21  Madge Cass          17
+dave hudson        21  Madge Cass          17
 Malcolm Dacre       21  Mary Black          20
 Barry Palmer        21  Tom Ingram          15
       Aggregate:   121        Aggregate:    97
@@ -2518,7 +2518,7 @@ Michael Howsham     16  Harvey Lockwood     21
 Andrew Waller       18  Kevin Smales        21
 Malcolm Dacre       21  Neil Schofield      14
 Barry Palmer        21  Sandra Deegan       20
-David Hudson        20  Tony Morris         21
+dave hudson        20  Tony Morris         21
       Aggregate:   114        Aggregate:   118
          Points:    25           Points:    26
 
@@ -2635,7 +2635,7 @@ Barry Potter        21  Rob Holt            16
 
       Division 2             Wed 13th Jul
      Potternewton            Burley Park
-Frank Powell        21  David Hudson        15
+Frank Powell        21  dave hudson        15
 Alan Smith          21  Malcolm Dacre        6
 Phillip Schofield   21  Barry Palmer        14
 David Curland       21  Michael Howsham     15
@@ -2817,7 +2817,7 @@ Michael Howsham     16  Barry Potter        21
 Andrew Waller       18  Tony Boyes          21
 Malcolm Dacre       18  John West           21
 Barry Palmer        21  Allan Hall          14
-David Hudson        17  Peter Nichols       21
+dave hudson        17  Peter Nichols       21
       Aggregate:   101        Aggregate:   119
          Points:    21           Points:    27
 
@@ -2891,7 +2891,7 @@ Paul Phillipson     21  Madge Cass          11
   Penrose Green Cup          Wed 27th Jul
      Round of 16           On Moor Allerton
      Burley Park            Whitkirk BC A
-David Hudson        21  Bill Newstead       13
+dave hudson        21  Bill Newstead       13
 Malcolm Dacre        9  Jim Spalding        21
 Barry Palmer        10  Barry Tobin         21
 Michael Howsham      7  Graham Scholes      21
@@ -3019,7 +3019,7 @@ Graham Pickles      21  Geoff Newbould      12
       Division 2             Wed 3rd Aug
     Whitkirk BC B            Burley Park
 James Lancaster     20  Clifford Brogie     21
-Kevin Collins       21  David Hudson         4
+Kevin Collins       21  dave hudson         4
 Hannah Risley       21  Malcolm Dacre        8
 Tony Bond           21  Barry Palmer         9
 Martin Costello     18  Andrew Waller       21
@@ -3329,7 +3329,7 @@ James Lancaster     21  Tom Ingram           2
 Monica Buckroyd     10  Andrew Waller       21
 Peter Griffin       21  Barry Palmer         5
 Michael Noble       21  Michael Howsham     14
-Paul Phillipson     21  David Hudson         8
+Paul Phillipson     21  dave hudson         8
 Andrea Ryder        21  Malcolm Dacre       16
 Tony Ward           21  Clifford Brogie      8
       Aggregate:   115        Aggregate:    72
@@ -3519,7 +3519,7 @@ Barbara Nellis      16  Alan Box            21
      Burley Park             Holbeck Moor
 Barry Palmer        21  Helen Milton         9
 Malcolm Dacre       10  Hilary Campbell     21
-David Hudson        21  George Ellener      20
+dave hudson        21  George Ellener      20
 Michael Howsham      8  Arthur Hutchinson   21
 Clifford Brogie     20  Steve Milton        21
 Andrew Waller       20  Jeff Warburton      21

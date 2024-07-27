@@ -588,13 +588,13 @@ Howard Bentley Smith    Les Tugwell
 
       Division 2             Wed 11th Apr
        Ilkley B              Stanningley A
-Andrew Breare       31  Don Shaw             23
+Andrew Breare       31  donald shaw             23
 Terry Almond            Mabel Shaw             
 David Emerson       31  Andrew Robertson     17
 Sue Emerson             Cliff Brogie           
 Bernie Connor       31  Alison Woodfine      29
 Alan Strachan           Derek Wilson           
-Lee Stevens         31  David Hudson         14
+Lee Stevens         31  dave hudson         14
 Steve Morton            Brian Fish             
        Aggregate:  124         Aggregate:    83
            Games:    4             Games:     0
@@ -772,12 +772,12 @@ Kathy Hey               Terry Almond
     Stanningley A             Yeadon Park
 Alison Woodfine     31  Stuart Norris        24
 Derek Wilson            Reid Haddow            
-Don Shaw            31  David Baldwin        23
+donald shaw            31  David Baldwin        23
 Mabel Shaw              Frank Baker            
 Brian Barker        31  Alan Keighley         9
 Cliff Brogie            Barry Slater           
 Brian Fish          31  Maureen Slater       25
-David Hudson            Barry Palmer           
+dave hudson            Barry Palmer           
        Aggregate:  124         Aggregate:    81
            Games:    4             Games:     0
           Points:   21            Points:     3
@@ -929,8 +929,8 @@ Graham Hey              Cliff Brogie
 Dorothy Lawrance    31  Alison Woodfine      21
 Douglas Blair           Derek Wilson           
 Pat Blackburn       31  Mabel Shaw           23
-Brian Longbottom        Don Shaw               
-Norman Bracewell    11  David Hudson         31
+Brian Longbottom        donald shaw               
+Norman Bracewell    11  dave hudson         31
 Anne Wilson             Brian Fish             
        Aggregate:  104         Aggregate:    90
            Games:    3             Games:     1
@@ -1094,10 +1094,10 @@ William Schuler         Stuart Norris
     Stanningley A               Rawdon
 Alison Woodfine     30  Lindsay Rosendale    31
 Derek Wilson            Arthur Roundhill       
-Don Shaw            31  Paul Haigh           18
+donald shaw            31  Paul Haigh           18
 Mabel Shaw              Angela Bennett         
 Brian Fish          31  Terry Waite-Pullan   25
-David Hudson            Marlene Waite-Pullan   
+dave hudson            Marlene Waite-Pullan   
 Brian Barker        19  Brian Minogue        31
 Ken Stockhill           Ken Chapman            
        Aggregate:  111         Aggregate:   105
@@ -1234,10 +1234,10 @@ Sue Emerson             Martin Sherred
     Stanningley A             Hall Park A
 Alison Woodfine     31  Brian Bowman         29
 Derek Wilson            Jaci Bowman            
-Don Shaw            31  Peter Allen          14
+donald shaw            31  Peter Allen          14
 Mabel Shaw              Richard Sunley         
 Brian Fish          31  Christine Gill        8
-David Hudson            John Sutton            
+dave hudson            John Sutton            
 Brian Barker        31  Nigel Stockdale      30
 Ken Stockhill           Colin Hargreaves       
        Aggregate:  124         Aggregate:    81
@@ -1461,9 +1461,9 @@ Steve Spurr             David Locke
 
       Division 2             Wed 23rd May
         Salts                Stanningley A
-Martin Sherred      31  David Hudson         13
+Martin Sherred      31  dave hudson         13
 Dave Hanson             Brian Fish             
-Susan Rymer         31  Don Shaw             28
+Susan Rymer         31  donald shaw             28
 Berni Criddle           Mabel Shaw             
 Bernard Greaves     31  Alison Woodfine      24
 Deryck Welch            Derek Wilson           
@@ -1783,11 +1783,11 @@ Alan Bishop             Harry Franklin
 
       Division 2              Wed 6th Jun
        Bramhope              Stanningley A
-Bob Newton          31  David Hudson         11
+Bob Newton          31  dave hudson         11
 Allan Balmforth         Brian Fish             
 Billy Webb          31  Brian Barker         27
 Stewart Sunman          Cliff Brogie           
-Bill Shears         31  Don Shaw             29
+Bill Shears         31  donald shaw             29
 Peter Dalby             Mabel Shaw             
 Anne Mackman        26  Alison Woodfine      31
 Carole Garside          Derek Wilson           
@@ -2011,12 +2011,12 @@ Brian Longbottom        Stewart Sunman
     Stanningley A            Greenbottom A
 Alison Woodfine     26  Ann Ryley            31
 Derek Wilson            Edgar Ryley            
-Don Shaw            31  Bill Lovedale        22
+donald shaw            31  Bill Lovedale        22
 Mabel Shaw              Lynette Hall           
 Brian Barker         9  Lynne Malcolm        31
 Cliff Brogie            William Schuler        
 Brian Fish          27  Colin Mann           31
-David Hudson            Alan Bishop            
+dave hudson            Alan Bishop            
        Aggregate:   93         Aggregate:   115
            Games:    1             Games:     3
           Points:    7            Points:    17
@@ -2135,10 +2135,10 @@ Keith Ellse             Martin Laycock
 
       Division 2             Wed 20th Jun
     Stanningley A              Ilkley B
-Don Shaw            31  David Emerson        27
+donald shaw            31  David Emerson        27
 Mabel Shaw              Sue Emerson            
 Brian Fish          28  Martin Bailey        31
-David Hudson            Bernie Connor          
+dave hudson            Bernie Connor          
 Alison Woodfine     11  Terry Almond         31
 Derek Wilson            Andrew Breare          
 Cliff Brogie        31  Lee Stevens          15
@@ -2319,9 +2319,9 @@ Martin Bailey           Douglas Blair
      Yeadon Park             Stanningley A
 Alan Keighley       29  Cliff Brogie         31
 Maureen Slater          Brian Barker           
-David Keighley      31  Don Shaw             25
+David Keighley      31  donald shaw             25
 Barry Slater            Mabel Shaw             
-David Baldwin       30  David Hudson         31
+David Baldwin       30  dave hudson         31
 Frank Baker             Brian Fish             
 Reid Haddow         31  Alison Woodfine      15
 Stuart Norris           Derek Wilson           
@@ -2489,8 +2489,8 @@ Harry Franklin          Andrew Breare
 Brian Barker        29  Paul Dishman         31
 Cliff Brogie            Dorothy Lawrance       
 Brian Fish          31  Jimmy Wilson          8
-David Hudson            Jeanne Keightley       
-Don Shaw            26  Carole Sullivan      31
+dave hudson            Jeanne Keightley       
+donald shaw            26  Carole Sullivan      31
 Mabel Shaw              Graham Hey             
 Alison Woodfine     21  Douglas Blair        31
 Carol Butters           Norman Bracewell       
@@ -2724,11 +2724,11 @@ Bernard Greaves         Gordon Dick
 
       Division 2             Wed 18th Jul
      Hall Park A             Stanningley A
-Christine Gill      26  David Hudson         31
+Christine Gill      26  dave hudson         31
 Geoff Bennett           Brian Fish             
 Peter Allen         31  Cliff Brogie         18
 Jaci Bowman             Brian Barker           
-Richard Sunley      31  Don Shaw             17
+Richard Sunley      31  donald shaw             17
 Brian Bowman            Mabel Shaw             
 Nigel Stockdale     31  Derek Wilson         23
 Colin Hargreaves        Alison Woodfine        
@@ -2838,11 +2838,11 @@ Jean Shepherd           David Samuel
         Rawdon               Stanningley A
 Paul Haigh          31  Alison Woodfine      18
 Angela Bennett          Derek Wilson           
-Brian Minogue       31  David Hudson         20
+Brian Minogue       31  dave hudson         20
 Ken Chapman             Leslie Leak            
 Marlene Waite-Pullan31  Cliff Brogie         24
 Derek Kendall           Brian Barker           
-Terry Waite-Pullan  31  Don Shaw             22
+Terry Waite-Pullan  31  donald shaw             22
 Ken Garbett             Mabel Shaw             
        Aggregate:  124         Aggregate:    84
            Games:    4             Games:     0
@@ -2906,14 +2906,14 @@ Douglas Crossley        Malcolm Pratt
 
       Division 2             Wed 25th Jul
     Stanningley A                Salts
-David Hudson        18  Susan Rymer          31
+dave hudson        18  Susan Rymer          31
 Brian Fish              Berni Criddle          
 Alison Woodfine      9  Deryck Welch         31
 Derek Wilson            Bernard Greaves        
 Brian Barker        20  Patricia Allison     31
 Cliff Brogie            Malcolm Pitt           
 Mabel Shaw          20  Dave Hanson          31
-Don Shaw                Martin Sherred         
+donald shaw                Martin Sherred         
        Aggregate:   67         Aggregate:   124
            Games:    0             Games:     4
           Points:    1            Points:    23
@@ -3258,10 +3258,10 @@ Colin Hargreaves        Edgar Ryley
     Stanningley A              Bramhope
 Brian Barker        20  Bob Newton           31
 Cliff Brogie            Allan Balmforth        
-Don Shaw            31  Bill Shears           4
+donald shaw            31  Bill Shears           4
 Mabel Shaw              George Garside         
 Brian Fish          31  Billy Webb           28
-David Hudson            Stewart Sunman         
+dave hudson            Stewart Sunman         
 Derek Wilson        24  Anne Mackman         31
 Alison Woodfine         Porter Linda           
        Aggregate:  106         Aggregate:    94
@@ -3470,9 +3470,9 @@ Ann Ryley           31  Cliff Brogie         19
 Edgar Ryley             Brian Barker           
 Janice Waite        31  Alison Woodfine      14
 Lynne Malcolm           Derek Wilson           
-Malcolm Handscombe  31  David Hudson         26
+Malcolm Handscombe  31  dave hudson         26
 William Schuler         Brian Fish             
-Alan Bishop         31  Don Shaw              9
+Alan Bishop         31  donald shaw              9
 Bill Lovedale           Mabel Shaw             
        Aggregate:  124         Aggregate:    68
            Games:    4             Games:     0

@@ -559,11 +559,11 @@ Graham Hey             John Chippindale
       Rufford B             Stanningley A
 John Hudson        17  Jack Roberts          31
 Sheila Hudson          Ken Walker              
-Barry Clayton      31  Don Shaw              15
+Barry Clayton      31  donald shaw              15
 Kelvin Grace           Mabel Shaw              
 David Robertshaw   29  Andrew Robertson      31
 Amy Lawrence           Derek Wilson            
-Derek Laughey      31  David Hudson          27
+Derek Laughey      31  dave hudson          27
 Alan Preston           Cliff Brogie            
       Aggregate:  108          Aggregate:   104
           Games:    2              Games:     2
@@ -755,10 +755,10 @@ Bernie Connor          Terry Hasselby
     Stanningley A               Rawdon
 Andrew Robertson   28  Arthur Roundhill      31
 Derek Wilson           Lindsay Rosendale       
-Don Shaw           31  Terry Waite-Pullan    27
+donald shaw           31  Terry Waite-Pullan    27
 Mabel Shaw             Ken Garbett             
 Cliff Brogie        8  Brian Minogue         31
-David Hudson           Ken Chapman             
+dave hudson           Ken Chapman             
 Jack Roberts        9  Andy Swallow          31
 Ken Walker             Brian Teale             
       Aggregate:   76          Aggregate:   120
@@ -922,10 +922,10 @@ Brian Hodgson          Ian Howard
      Division 2              Wed 4th May
     Stanningley A             Tarnfield
 Cliff Brogie       28  Barry Larkins         31
-David Hudson           Terry Hasselby          
+dave hudson           Terry Hasselby          
 Ken Walker         31  David Ratcliffe       12
 Jack Roberts           David Kirk              
-Don Shaw           31  Dennis Fowles         13
+donald shaw           31  Dennis Fowles         13
 Mabel Shaw             James Work              
 Andrew Robertson   31  Stanley Southern      28
 Derek Wilson           Steven Sheppard         
@@ -1019,9 +1019,9 @@ Betty Sparkes          Ken Garbett
 
      Division 2              Wed 11th May
       Ilkley B              Stanningley A
-Terry Almond       31  David Hudson          28
+Terry Almond       31  dave hudson          28
 Andrew Breare          David Parker            
-Martin Bailey       9  Don Shaw              31
+Martin Bailey       9  donald shaw              31
 Lee Stevens            Mabel Shaw              
 Bernie Connor      31  Jack Roberts          27
 Andrew Thornton        Ken Walker              
@@ -1173,13 +1173,13 @@ Amrik Singh            Sandra Hall
 
      Division 2              Wed 18th May
      Grove Hill             Stanningley A
-David Stretch      31  David Hudson          25
+David Stretch      31  dave hudson          25
 David Samuel           David Parker            
 Carol Walker       30  Jack Roberts          31
 Jim Walker             Ken Walker              
 Joey Crawford      24  Andrew Robertson      31
 Michael Land           Alison Woodfine         
-David Locke        31  Don Shaw               9
+David Locke        31  donald shaw               9
 Andrew Jones           Mabel Shaw              
       Aggregate:  116          Aggregate:    96
           Games:    2              Games:     2
@@ -1467,12 +1467,12 @@ Arthur Roundhill       Ian Fickling
 
      Division 2              Wed 25th May
     Stanningley A          Meanwood Park B
-Don Shaw           31  John King             18
+donald shaw           31  John King             18
 Mabel Shaw             John Straiton           
 Andrew Robertson   31  Dorothy Lawrance      14
 Alison Woodfine        Janet Sanders           
 Cliff Brogie       31  Jeanne Keightley      17
-David Hudson           Norman Bracewell        
+dave hudson           Norman Bracewell        
 Jack Roberts       31  Graham Hey            16
 Ken Walker             Kathy Hey               
       Aggregate:  124          Aggregate:    65
@@ -1607,7 +1607,7 @@ Callum Shaw            Andrew Newell
 
      Division 2              Wed 1st Jun
       Holt Park             Stanningley A
-Betty Sparkes      18  Don Shaw              31
+Betty Sparkes      18  donald shaw              31
 Joyce Adamson          Mabel Shaw              
 Graham Walker      31  Jack Roberts          29
 Geoff Megson           Ken Walker              
@@ -1959,10 +1959,10 @@ Ernest Hugill          Pam Johnson
      Yeadon Park            Stanningley A
 David Baldwin      31  Derek Wilson          14
 Frank Baker            Alison Woodfine         
-Angela Burnham     31  Don Shaw              28
+Angela Burnham     31  donald shaw              28
 Terry Doyle            Mabel Shaw              
 Harry Utley        29  David Parker          31
-Barry Slater           David Hudson            
+Barry Slater           dave hudson            
 Linda Utley        14  Jack Roberts          31
 Reid Haddow            Ken Walker              
       Aggregate:  105          Aggregate:   104
@@ -2112,10 +2112,10 @@ Katherine Lodge        Douglas Blair
      Division 2              Wed 22nd Jun
     Stanningley A             Rufford B
 Cliff Brogie       31  John Hudson            4
-David Hudson           Sheila Hudson           
+dave hudson           Sheila Hudson           
 Derek Wilson       31  Ian Fickling          24
 Alison Woodfine        Derek Laughey           
-Don Shaw           31  Ernest Hugill          4
+donald shaw           31  Ernest Hugill          4
 Mabel Shaw             William Lovedale        
 Jack Roberts       31  Laila Packer          28
 Ken Walker             Barry Clayton           
@@ -2294,8 +2294,8 @@ David Ratcliffe        Bernie Connor
      Division 2              Wed 29th Jun
        Rawdon               Stanningley A
 Terry Waite-Pullan 31  Cliff Brogie          26
-Marlene Waite-Pullan   David Hudson            
-Lindsay Rosendale  31  Don Shaw              24
+Marlene Waite-Pullan   dave hudson            
+Lindsay Rosendale  31  donald shaw              24
 Arthur Roundhill       Mabel Shaw              
 Brian Teale        24  Alison Woodfine       31
 Dianne Teale           Derek Wilson            
@@ -2489,13 +2489,13 @@ Stuart Norris          Arthur Roundhill
 
      Division 2              Wed 6th Jul
       Tarnfield             Stanningley A
-Barry Larkins      27  Don Shaw              31
+Barry Larkins      27  donald shaw              31
 Terry Hasselby         Mabel Shaw              
 Steven Sheppard    22  Jack Roberts          31
 Stanley Southern       Ken Walker              
 Dennis Fowles      31  David Parker          25
 James Work             Alison Woodfine         
-Alan Gribbins      31  David Hudson          28
+Alan Gribbins      31  dave hudson          28
 David Ratcliffe        Cliff Brogie            
       Aggregate:  111          Aggregate:   115
           Games:    2              Games:     2
@@ -2575,10 +2575,10 @@ Angela Bennett         Derek Hewitt
     Stanningley A              Ilkley B
 Derek Wilson       31  Andrew Thornton       14
 Alison Woodfine        Bernie Connor           
-Don Shaw           31  Terry Almond          23
+donald shaw           31  Terry Almond          23
 Mabel Shaw             Andrew Breare           
 Cliff Brogie       31  Colin Spooner         13
-David Hudson           Gordon Dick             
+dave hudson           Gordon Dick             
 Jack Roberts       31  Steve Morton          16
 Ken Walker             Lee Stevens             
       Aggregate:  124          Aggregate:    66
@@ -2727,10 +2727,10 @@ Michael Hall           William Hill
 
      Division 2              Wed 20th Jul
     Stanningley A             Grove Hill
-Don Shaw           28  David Samuel          31
+donald shaw           28  David Samuel          31
 Mabel Shaw             David Stretch           
 Cliff Brogie       13  David Locke           31
-David Hudson           Andrew Jones            
+dave hudson           Andrew Jones            
 Derek Wilson       31  John Chippindale      24
 Alison Woodfine        Joey Crawford           
 Jack Roberts       26  Jim Walker            31
@@ -2938,11 +2938,11 @@ Barry Clayton          Angela Bennett
      Division 2              Wed 27th Jul
    Meanwood Park B          Stanningley A
 Kathy Hey          26  Mabel Shaw            31
-Graham Hey             Don Shaw                
+Graham Hey             donald shaw                
 Douglas Blair      31  Jack Roberts          23
 Dorothy Lawrance       Ken Walker              
 Norman Bracewell   31  Cliff Brogie          19
-Jeanne Keightley       David Hudson            
+Jeanne Keightley       dave hudson            
 Barbara Gray       31  Alison Woodfine       15
 Janet Sanders          Derek Wilson            
       Aggregate:  119          Aggregate:    88
@@ -3077,11 +3077,11 @@ Andrew Newell          George Hanson
 
      Division 2              Wed 3rd Aug
     Stanningley A             Holt Park
-Don Shaw           31  Derek Hewitt          19
+donald shaw           31  Derek Hewitt          19
 Mabel Shaw             Chris Power             
 Derek Wilson       31  Geoff Megson          26
 Alison Woodfine        Betty Walker            
-David Hudson       31  Joyce Adamson         28
+dave hudson       31  Joyce Adamson         28
 Cliff Brogie           Graham Walker           
 Jack Roberts       31  Ernest Johnson        25
 Ken Walker             Pam Johnson             
@@ -3432,8 +3432,8 @@ Ken Walker             Pat Appleyard
 Alison Woodfine    20  David Baldwin         31
 Derek Wilson           Frank Baker             
 Cliff Brogie       29  Reid Haddow           31
-David Hudson           Stuart Norris           
-Don Shaw           31  *No Player*            0
+dave hudson           Stuart Norris           
+donald shaw           31  *No Player*            0
 Mabel Shaw             ----------              
       Aggregate:  111          Aggregate:    77
           Games:    2              Games:     2

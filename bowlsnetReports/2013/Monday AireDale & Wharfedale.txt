@@ -789,9 +789,9 @@ Brian Hall              21  Bernard Palmer         20
 Malcolm Wrigglesworth   13  Mabel Shaw             21
 Malcolm Handscombe      21  Derek Wilson           13
 Mavis Harwood            9  Brian Barker           21
-Dorothy Jackson          8  Don Shaw               21
+Dorothy Jackson          8  donald shaw               21
 Jenny Mann              21  Geoff Lee               6
-Kathryn Thomas          14  David Hudson           21
+Kathryn Thomas          14  dave hudson           21
 John Hudson             17  Terry Powell           21
 Lynette Hall            21  Jack Roberts           19
 Tom Fane                 7  Steve Gardner          21
@@ -1123,9 +1123,9 @@ Peter Harding           21  Charles Holden          6
       Stanningley A                Hall Park B
 Steve Gardner           21  Christine Dobson        4
 Jack Roberts            21  Jim Dobson             14
-Don Shaw                21  John Parker            20
+donald shaw                21  John Parker            20
 Terry Powell            10  William Lovedale       21
-David Hudson            21  Robert Kee             14
+dave hudson            21  Robert Kee             14
 Brian Barker            21  Malcolm Milner         16
 Mabel Shaw              21  Keith Barran            9
 David Parker            21  Tony Wood              19
@@ -1414,9 +1414,9 @@ Lorna McQuade           14  Bernard Palmer         21
 Sylvia Petty            21  Mabel Shaw              3
 Anthony Watson          21  Derek Wilson           20
 Graham Walker           21  Terry Powell            4
-Jim McQuade             13  Don Shaw               21
+Jim McQuade             13  donald shaw               21
 Michael Cox             21  David Parker           10
-Barry Underwood         18  David Hudson           21
+Barry Underwood         18  dave hudson           21
 Ernest Johnson          12  Steve Gardner          21
 Geoff Collins           13  Jack Roberts           21
               Games:     4               Games:     6
@@ -1698,8 +1698,8 @@ Peter Harding           12  David Greenwood        21
         Division 3                Mon 29th Apr
       Stanningley A               Yeadon Park B
 Terry Powell            21  Michael Burnett        10
-Don Shaw                21  Linda Utley             9
-David Hudson            14  Gladys Robinson        21
+donald shaw                21  Linda Utley             9
+dave hudson            14  Gladys Robinson        21
 Chris Gardner           21  Stuart Norris           8
 David Parker            21  Harry Utley            18
 Jack Roberts            21  David Baldwin          18
@@ -1940,12 +1940,12 @@ Stuart Tennant          21  Pamela Nellist          4
 Edwin Webster            8  Mabel Shaw             21
 Pam White               21  Derek Wilson           16
 Melvyn Jones            11  Bernard Palmer         21
-Tom Moore               11  Don Shaw               21
+Tom Moore               11  donald shaw               21
 Henry Danskin           16  Chris Gardner          21
 Joan Holden             20  Terry Powell           21
 Harold Watson           10  Jack Roberts           21
 Joey Crawford           21  Steve Gardner          13
-Freda Jones             21  David Hudson           13
+Freda Jones             21  dave hudson           13
 Charles Holden          10  David Parker           21
               Games:     3               Games:     7
           Aggregate:   149           Aggregate:   189
@@ -2273,7 +2273,7 @@ Michael Cox             21  William Shears         13
 
         Division 3                Mon 20th May
       Stanningley A               Greenbottom A
-Don Shaw                21  Audrey McGregor         4
+donald shaw                21  Audrey McGregor         4
 Terry Powell            10  Jean Long              21
 Jack Roberts            19  Colin Mann             21
 David Parker            21  John Ellis             12
@@ -2546,7 +2546,7 @@ Harold Watson           14  David Greenwood        21
         Division 3                Mon 27th May
          Pudsey B                 Stanningley A
 George Hogg             21  David Parker           11
-Angie Morris            10  Don Shaw               21
+Angie Morris            10  donald shaw               21
 Geoff Hodgson           15  Chris Gardner          21
 Rita Harding            21  Mabel Shaw             20
 Lynne Shaw              21  Jack Roberts           12
@@ -3123,10 +3123,10 @@ Charles Holden          21  Tom Fane                6
          Ilkley B                 Stanningley A
 Brenda Simmons          21  Derek Wilson           11
 Jack Wilson             21  David Parker            7
-Brian Williams          20  Don Shaw               21
+Brian Williams          20  donald shaw               21
 Eddie Wray              10  Steve Gardner          21
 Alan Parkinson          21  Mabel Shaw             17
-Michael Simmons         21  David Hudson           17
+Michael Simmons         21  dave hudson           17
 Steve Ackroyd           21  Bernard Palmer         12
 Eric Dodsworth           9  Jack Roberts           21
 Jonathan Wilson         21  Chris Gardner          11
@@ -3380,11 +3380,11 @@ Ira Jeffers             21  Andrew Wood             9
 Chris Gardner           21  John Hudson             4
 David Parker            17  Brian Hall             21
 Brian Barker            21  Mavis Harwood          17
-Don Shaw                21  Ron Lowe                5
+donald shaw                21  Ron Lowe                5
 Steve Gardner           21  Dorothy Jackson         8
 Bernard Palmer          16  Kathryn Thomas         21
 Mabel Shaw              21  Malcolm Wrigglesworth  14
-David Hudson            16  Tom Fane               21
+dave hudson            16  Tom Fane               21
 Jack Roberts            21  Malcolm Handscombe     16
 Derek Wilson            21  Lynette Hall           19
               Games:     7               Games:     3
@@ -3716,11 +3716,11 @@ Henry Danskin           21  Ian Swinfield          14
 Doreen Stephenson       20  Jack Roberts           21
 Christine Dobson        15  Mabel Shaw             21
 John Parker              8  Chris Gardner          21
-Jim Dobson              17  David Hudson           21
+Jim Dobson              17  dave hudson           21
 Malcolm Milner          21  Geoff Lee              12
 Peter Hargreaves        21  Brian Barker           17
 Keith Barran            21  David Bark             14
-Tony Wood               17  Don Shaw               21
+Tony Wood               17  donald shaw               21
 William Lovedale        21  Derek Wilson           17
 David Greenwood         21  Bernard Palmer         15
               Games:     5               Games:     5
@@ -4005,12 +4005,12 @@ Jack Roberts            21  Brenda Evans           19
 Brian Barker            21  Lorna McQuade           2
 Steve Gardner           21  Sylvia Petty            1
 Bernard Palmer          21  Graham Walker          11
-Don Shaw                21  Geoff Collins          13
+donald shaw                21  Geoff Collins          13
 Derek Wilson            21  Anthony Watson         17
 Mabel Shaw              21  Jim McQuade             5
 Terry Powell            21  Michael Cox            16
 Chris Gardner           19  John Patrick           21
-David Hudson            10  Ernest Johnson         21
+dave hudson            10  Ernest Johnson         21
               Games:     8               Games:     2
           Aggregate:   197           Aggregate:   126
              Points:    26              Points:     4
@@ -4289,9 +4289,9 @@ David Greenwood         11  Kevin Rankin           21
 
         Division 3                Mon 15th Jul
       Yeadon Park B               Stanningley A
-Pauline Ingleson        20  Don Shaw               21
+Pauline Ingleson        20  donald shaw               21
 Linda Utley             21  Jack Roberts           19
-James Teale             21  David Hudson            4
+James Teale             21  dave hudson            4
 Gladys Robinson         21  David Parker           11
 Harry Utley             21  Geoff Lee              11
 Michael Stocks          21  Mabel Shaw              9
@@ -4536,7 +4536,7 @@ Derek Wilson            21  William Shears         17
 Brian Barker            18  Tom Moore              21
 Geoff Lee               21  Melvyn Jones           20
 Mabel Shaw              21  Dorothy Danskin         6
-Don Shaw                21  Joan Holden             2
+donald shaw                21  Joan Holden             2
 Terry Powell            17  Freda Jones            21
 Steve Gardner           21  Harold Watson           7
               Games:     6               Games:     4
@@ -4873,7 +4873,7 @@ Jack Beck               21  Derek Wilson           16
 Colin Mann              21  Geoff Lee               5
 Ann Ryley               11  Chris Gardner          21
 Geoff Collier           15  Mabel Shaw             21
-David Waite             12  Don Shaw               21
+David Waite             12  donald shaw               21
 William Schuler          9  Steve Gardner          21
               Games:     4               Games:     6
           Aggregate:   156           Aggregate:   175
@@ -5141,7 +5141,7 @@ Terry Powell            19  Geoff Hodgson          21
 Bernard Palmer          21  Angie Morris           10
 Chris Gardner           21  Rita Harding           18
 Jack Roberts            21  Brian Russell          17
-Don Shaw                21  Anne Bell               0
+donald shaw                21  Anne Bell               0
 Geoff Lee               19  Lynne Shaw             21
 Mabel Shaw              21  Ian Swinfield          11
 Derek Wilson            21  Peter Harding          16
@@ -5714,7 +5714,7 @@ Malcolm Handscombe      21  Melvyn Jones            9
         Division 3                Mon 19th Aug
       Stanningley A                 Ilkley B
 David Parker            21  Alan Parkinson         11
-Don Shaw                21  Andrew Breare          17
+donald shaw                21  Andrew Breare          17
 Derek Wilson            12  Brenda Simmons         21
 Brian Barker             9  Jack Wilson            21
 Bernard Palmer          21  Eddie Wray             16

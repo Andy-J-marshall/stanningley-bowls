@@ -683,7 +683,7 @@ Geoff Gaunt              12  Anthony Heslewood   21
 Eddie Tate               21  Adam Sandilands     14
 Roy Wainman               7  Ken Stockhill       21
 Beryl Wainman            12  Cliff Brogie        21
-Paul Howarth             21  David Hudson         8
+Paul Howarth             21  dave hudson         8
 Eddie Harrison           15  Brian Fish          21
 Joan Keen                20  Ken Walker          21
 Tony Barker              21  Brian Barker        10
@@ -1229,7 +1229,7 @@ Clifford Roy              7  Leslie Leak         21
 Bob Allitt               21  Carol Butters        9
 Ken Brown                21  Bernard Miller      13
 Barry Palmer              5  Robert Taylor       21
-Peter Whitrick           21  Don Shaw            18
+Peter Whitrick           21  donald shaw            18
 Alan Jones               21  Graham Dawson       20
 Kevin Gilroy             21  Andy Robertson      13
 Steve Pickersgill        21  Brian Barker         8
@@ -1909,7 +1909,7 @@ Duncan McPhail           21  David Hannam         7
 Bob Davison              13  Shirley Sandilands  21
 Joan Whitrick             6  Cliff Brogie        21
 Ken Brown                21  Adam Sandilands     18
-Clifford Roy             10  Don Shaw            21
+Clifford Roy             10  donald shaw            21
 Bob Allitt               15  Andy Robertson      21
 Peter Whitrick           12  Ken Walker          21
 Alan Jones               12  Brian Barker        21
@@ -2632,7 +2632,7 @@ Barbara Nellis           20  Chris Goode         21
 Terry Powell             21  Robert Cooper        1
 Adam Sandilands          21  Derek Crisp         13
 Cliff Brogie             21  Peter Lee           18
-Don Shaw                 21  Brian Dean           4
+donald shaw                 21  Brian Dean           4
 Ken Stockhill            21  Jean Cooper         14
 Ken Walker               21  Valerie Darwin       4
 Andy Robertson            8  Beryl Butterfield   21
@@ -2736,7 +2736,7 @@ Jeff Linley              21  Philip Goodfellow   12
 Keith Wakelin             4  Cliff Brogie        21
 Betty Falkinder          21  Carol Butters       16
 Walter Saunders          21  Adam Sandilands     17
-Roy Luty                 10  Don Shaw            21
+Roy Luty                 10  donald shaw            21
 Marilyn Robinson         12  Andy Robertson      21
 Margaret Saunders        21  Ken Walker          16
 Ken Billcliffe            7  Ken Stockhill       21
@@ -2809,7 +2809,7 @@ Leslie Leak              15  Andy Robertson      21
 Graham Dawson            14  Cliff Brogie        21
 David Wainwright          2  Ken Stockhill       21
 Brian Barker             14  Brian Fish          21
-Robert Taylor            21  Don Shaw            17
+Robert Taylor            21  donald shaw            17
            Aggregate:   121        Aggregate:   159
 
          Main KOs                 Thu 24th Aug
@@ -2922,7 +2922,7 @@ Colin Smith              17  Keith Corp          21
 Adam Sandilands          20  Marjorie Taylor     21
 Carol Butters            16  Derek Wilson        21
 Terry Powell             21  Bernard Miller      18
-Don Shaw                 21  Leslie Leak         10
+donald shaw                 21  Leslie Leak         10
 Ken Stockhill            21  Graham Dawson       12
 Ken Walker               15  Brian Barker        21
 Cliff Brogie             15  Robert Taylor       21
@@ -3050,7 +3050,7 @@ Ken Billcliffe           21  Eric Johnys         15
         Division 2                Thu 7th Sep
          Cranmore              Stanningley Park A
 Monica Buckroyd          21  Andy Robertson      17
-Peter Griffin            16  Don Shaw            21
+Peter Griffin            16  donald shaw            21
 Keith Lambert            18  Anthony Heslewood   21
 Hazel Cookson            21  Ken Stockhill       11
 Harry Gillett            21  Ken Walker           8
@@ -3109,7 +3109,7 @@ Cliff Brogie             21  Joyce Sherman        5
 Ken Stockhill            21  Peter Colley         8
 Adam Sandilands          21  Brian Golden        20
 Ken Walker               13  Barbara Ragan       21
-Don Shaw                 21  Chris Goode         17
+donald shaw                 21  Chris Goode         17
 Andy Robertson           21  Brian Ragan         18
 Brian Fish               13  John Harvey         21
            Aggregate:   152        Aggregate:   121
@@ -3196,7 +3196,7 @@ Brian Dean               21  Roy Luty            12
     Stanningley Park A         West Royd Park 'B'
 Brian Fish               21  Peter Britton        7
 Adam Sandilands          21  Colin Arnold         5
-Don Shaw                 21  Jeff Linley          8
+donald shaw                 21  Jeff Linley          8
 Duncan McPhail           21  Terry Williams      19
 Andy Robertson           21  Colin Pontefract    16
 Ken Stockhill            21  Paul Whitehead      10

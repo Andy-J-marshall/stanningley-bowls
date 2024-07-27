@@ -584,9 +584,9 @@ Tim Dove               Ernest Hargreaves
     Stanningley A         Meanwood Park B
 Andrew Robertson   31  Margaret Butterworth14
 Colin Butterfield      Barbara Gray          
-Don Shaw           31  Kathy Hey           12
+donald shaw           31  Kathy Hey           12
 Mabel Shaw             Graham Hey            
-David Hudson       31  Valerie Bradshaw    23
+dave hudson       31  Valerie Bradshaw    23
 Bernard Palmer         Stuart Hoath          
 Jack Roberts       31  Dorothy Lawrance     8
 David Parker           Tina Howard           
@@ -768,10 +768,10 @@ Keith Ellse        31  David Parker         6
 Brian Ward             Jack Roberts          
 David Pike         31  Andrew Robertson    19
 Russell Ruddiman       Brian Barker          
-Rene Stephens      22  Don Shaw            31
+Rene Stephens      22  donald shaw            31
 Alan Byers             Mabel Shaw            
 Philip Hynes       31  Bernard Palmer      21
-Les Tugwell            David Hudson          
+Les Tugwell            dave hudson          
       Aggregate:  115        Aggregate:    77
           Games:    3            Games:     1
          Points:   19           Points:     5
@@ -1212,9 +1212,9 @@ Hedley Chapman         David Rawnsley
     Stanningley A          Greenbottom A
 Jack Roberts       31  Malcolm Handscombe  24
 David Parker           Geoff Collier         
-David Hudson       31  Ann Ryley           30
+dave hudson       31  Ann Ryley           30
 Bernard Palmer         Edgar Ryley           
-Don Shaw           31  Colin Mann          24
+donald shaw           31  Colin Mann          24
 Mabel Shaw             William Schuler       
 Andrew Robertson   23  Janice Waite        31
 Brian Barker           Lyn Malcolm           
@@ -1436,9 +1436,9 @@ Harry Utley            Barbara Gray
     Grove Hill A           Stanningley A
 Jim McLeod         31  Andrew Robertson     8
 Katherine Lodge        Brian Barker          
-Philip West        25  Don Shaw            31
+Philip West        25  donald shaw            31
 David Samuel           Mabel Shaw            
-David Locke        31  David Hudson        27
+David Locke        31  dave hudson        27
 Joey Crawford          Bernard Palmer        
 John Chippindale   26  Jack Roberts        31
 William Shears         David Parker          
@@ -1685,7 +1685,7 @@ Ian Smith              Dennis Fowles
 
      Division 2             Wed 28th May
     Stanningley A           Yeadon Park
-Don Shaw           29  Frank Baker         31
+donald shaw           29  Frank Baker         31
 Mabel Shaw             David Baldwin         
 Andrew Robertson   26  Diane Teale         31
 Brian Barker           Luke Teale            
@@ -2052,8 +2052,8 @@ Tim Dove               David Robertshaw
 Jack Roberts       31  Joy Izzard          29
 Brian Barker           Anthony Webster       
 Bernard Palmer     31  Bernard Harrison     7
-David Hudson           Derek Kendall         
-Don Shaw           31  Terry Waite-Pullan  30
+dave hudson           Derek Kendall         
+donald shaw           31  Terry Waite-Pullan  30
 Mabel Shaw             Ken Garbett           
 Andrew Robertson   29  Anita Bastow        31
 Cliff Brogie           Andy Swallow          
@@ -2301,10 +2301,10 @@ Alan Byers             Graham Hey
      Division 2             Wed 18th Jun
      The Hollies           Stanningley A
 Doreen Hogg        31  Bernard Palmer      27
-Barry Hogg             David Hudson          
+Barry Hogg             dave hudson          
 Josie Burdon       31  Jack Roberts        10
 John Lambert           Alan Parker           
-Carol Robinson     31  Don Shaw            25
+Carol Robinson     31  donald shaw            25
 Len Robinson           Mabel Shaw            
 Maureen Morris     31  Andrew Robertson    11
 Dorothy Ford           Cliff Brogie          
@@ -2471,10 +2471,10 @@ Brian Jones            Brian Hindmarsh
 David Parker       31  Alan Byers          26
 Jack Roberts           Russell Ruddiman      
 Bernard Palmer     13  David Pike          31
-David Hudson           Anthony Shepherd      
+dave hudson           Anthony Shepherd      
 Andrew Robertson   25  Les Tugwell         31
 Cliff Brogie           Philip Hynes          
-Don Shaw           31  Brian Ward          16
+donald shaw           31  Brian Ward          16
 Mabel Shaw             Keith Ellse           
       Aggregate:  100        Aggregate:   104
           Games:    2            Games:     2
@@ -2651,12 +2651,12 @@ Colin Hargreaves       Callum Shaw
      Division 2             Wed 2nd Jul
    Meanwood Park B         Stanningley A
 Valerie Bradshaw   31  Bernard Palmer      17
-Barbara Gray           David Hudson          
+Barbara Gray           dave hudson          
 Jeanne Keightley   29  Jack Roberts        31
 Tina Howard            David Parker          
 Dorothy Lawrance   31  Andrew Robertson    13
 Douglas Blair          Cliff Brogie          
-Kathy Hey          25  Don Shaw            31
+Kathy Hey          25  donald shaw            31
 Graham Hey             Mabel Shaw            
       Aggregate:  116        Aggregate:    92
           Games:    2            Games:     2
@@ -3084,14 +3084,14 @@ Jim McLeod             Graham Hey
 
      Division 2             Wed 16th Jul
     Greenbottom A          Stanningley A
-Malcolm Handscombe 31  Don Shaw            19
+Malcolm Handscombe 31  donald shaw            19
 Geoff Collier          Mabel Shaw            
 Ann Ryley          26  Andrew Robertson    31
 Edgar Ryley            Cliff Brogie          
 Colin Mann         31  Jack Roberts        15
 William Schuler        David Parker          
 Janice Waite       31  Bernard Palmer      27
-Lyn Malcolm            David Hudson          
+Lyn Malcolm            dave hudson          
       Aggregate:  119        Aggregate:    92
           Games:    3            Games:     1
          Points:   17           Points:     7
@@ -3224,12 +3224,12 @@ Gail Blue              Margaret Wood
 
      Division 2             Wed 23rd Jul
     Stanningley A           Grove Hill A
-Don Shaw           31  Joey Crawford       10
+donald shaw           31  Joey Crawford       10
 David Parker           Joan Holden           
 Andrew Robertson   21  David Locke         31
 Cliff Brogie           Andrew Jones          
 Bernard Palmer     19  Philip West         31
-David Hudson           David Samuel          
+dave hudson           David Samuel          
 Mabel Shaw         31  John Chippindale    20
 Jack Roberts           Margaret Jones        
       Aggregate:  102        Aggregate:    92
@@ -3450,11 +3450,11 @@ Simon Roby             Douglas Blair
      Yeadon Park           Stanningley A
 Diane Teale        31  Andrew Robertson     8
 Luke Teale             Cliff Brogie          
-Terry Doyle        27  David Hudson        31
+Terry Doyle        27  dave hudson        31
 Angela Burnham         Bernard Palmer        
 James Teale        31  Mabel Shaw          29
 Linda Utley            Jack Roberts          
-Frank Baker        31  Don Shaw            23
+Frank Baker        31  donald shaw            23
 David Baldwin          David Parker          
       Aggregate:  120        Aggregate:    91
           Games:    3            Games:     1
@@ -3602,14 +3602,14 @@ Gail Blue              Bill Slater
 
      Division 2             Wed 6th Aug
     Stanningley A             Ilkley B
-Don Shaw           23  Kevin Jubb          31
+donald shaw           23  Kevin Jubb          31
 David Parker           Alan Strachan         
 Mabel Shaw         31  Andrew Breare       29
 Jack Roberts           John Dobson           
 Andrew Robertson   31  Lee Stevens         18
 Cliff Brogie           Steve Morton          
 Bernard Palmer     31  Gordon Dick         19
-David Hudson           Graham Stockhill      
+dave hudson           Graham Stockhill      
       Aggregate:  116        Aggregate:    97
           Games:    3            Games:     1
          Points:   16           Points:     8
@@ -3798,14 +3798,14 @@ Walter Stockhill       Graham Hey
 
      Division 2             Wed 13th Aug
        Rawdon              Stanningley A
-Derek Kendall      17  Don Shaw            31
+Derek Kendall      17  donald shaw            31
 Bernard Harrison       David Parker          
 Terry Waite-Pullan 24  Mabel Shaw          31
 Ken Garbett            Jack Roberts          
 Anita Bastow        7  Andrew Robertson    31
 Ken Yeadon             Cliff Brogie          
 Marlene Waite-Pullan                                                                                                                                                                                                                                                               30  Bernard Palmer      31
-Andy Swallow           David Hudson          
+Andy Swallow           dave hudson          
       Aggregate:   78        Aggregate:   124
           Games:    0            Games:     4
          Points:    3           Points:    21
@@ -3967,10 +3967,10 @@ Callum Shaw            Janet Sanders
      Division 2             Wed 20th Aug
     Stanningley A           The Hollies
 Bernard Palmer     31  John Lambert        18
-David Hudson           Maureen Morris        
+dave hudson           Maureen Morris        
 Mabel Shaw         31  Barry Hogg          23
 Jack Roberts           Doreen Hogg           
-Don Shaw           31  Margaret Stockhill  10
+donald shaw           31  Margaret Stockhill  10
 Colin Butterfield      Walter Stockhill      
 Andrew Robertson   31  Dorothy Ford        26
 Cliff Brogie           Josie Burdon          

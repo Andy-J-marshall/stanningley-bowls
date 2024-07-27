@@ -268,7 +268,7 @@ David Wright         21  Harry Gillett       20
                               Tue 9th Apr
     West Royd Park          Stanningley Park
 Norman Shaw          19  Jim Moorin          21
-John Hainsworth       5  Don Shaw            21
+John Hainsworth       5  donald shaw            21
 Bill Robson          21  Jack Roberts        12
 Colin Whitley        18  Ken Stockhill       21
 Ron Witham            7  Duncan McPhail      21
@@ -307,7 +307,7 @@ Ian Tindal           10  Margaret Higgins    21
                               Tue 16th Apr
    Stanningley Park            Barwick BC
 Jim Moorin           21  Jeff Binns          13
-Don Shaw             21  David Wilkinson     15
+donald shaw             21  David Wilkinson     15
 Duncan McPhail       21  Hilary Maxim        12
 Jack Roberts         10  Margaret Finister   21
 Mabel Shaw           21  Lynda Wright        18
@@ -371,7 +371,7 @@ Tony Boyes           21  Graham Bluff        19
 
                               Tue 23rd Apr
     Western Flatts          Stanningley Park
-Barry Hogg            6  Don Shaw            21
+Barry Hogg            6  donald shaw            21
 Steve Caley          21  Mabel Shaw          19
 Keith Hunter          5  Duncan McPhail      21
 Cedric Ash           21  Jack Roberts        20
@@ -411,7 +411,7 @@ Brian Thompson       21  Bill Robson         14
                               Tue 30th Apr
    Stanningley Park          Harehills Park
 Jim Moorin           16  Bill Mewes          21
-Don Shaw             17  Margaret West       21
+donald shaw             17  Margaret West       21
 Derek Wilson         21  Carl Mahon          17
 Jack Roberts         17  Paul Lawson         21
 Ken Walker            2  Jim Jordan          21
@@ -492,7 +492,7 @@ Neil Schofield       19  Jim Moorin          21
 Clifford Pitts       18  Mabel Shaw          21
 Dougie Cooper        21  Derek Wilson        10
 Tony Morris          13  Brian Fish          21
-Frank Tempest        10  Don Shaw            21
+Frank Tempest        10  donald shaw            21
 Bob Bearpark         21  Duncan McPhail      15
 Harvey Lockwood      21  Keith Worrell       12
 Dennis Wainwright    15  Stewart Watson      21
@@ -554,7 +554,7 @@ Norman Shaw          15  Eric Massey         21
                               Tue 14th May
    Stanningley Park       Horsforth Woodside.
 Jim Moorin           21  Ian Tindal          19
-Don Shaw             21  Stuart Tennant      12
+donald shaw             21  Stuart Tennant      12
 Derek Wilson         21  Graham Hey          20
 Brian Fish           18  Shirley Biancardo   21
 Mabel Shaw           19  Mario Biancardo     21
@@ -609,7 +609,7 @@ Ray Watson            6  Jim Moorin          21
 Barry Baldwin        20  Keith Worrell       21
 Peter Nicholson      13  Derek Wilson        21
 Harry Gillett        21  Mabel Shaw          20
-Steven Ballance       3  Don Shaw            21
+Steven Ballance       3  donald shaw            21
 Keith Lambert         6  Brian Fish          21
 Graham Bluff         13  Duncan McPhail      21
 Jeoff Higgins         6  Stewart Watson      21
@@ -725,7 +725,7 @@ Roy Tebbutt          21  Philip Marshall     19
 Jim Moorin           21  Graham Dunwell       6
 Keith Worrell        21  Pat Parker           7
 Derek Wilson         16  Frank Armitage      21
-Don Shaw             16  Allan Nicholson     21
+donald shaw             16  Allan Nicholson     21
 Brian Fish           14  Hilary Campbell     21
 Mabel Shaw            9  Arthur Hutchinson   21
 Duncan McPhail       21  Steve Milton        19
@@ -738,7 +738,7 @@ Stewart Watson       21  Brian Thompson      15
 Jim Moorin           21  Carol Robinson       3
 Barry Palmer         21  Josie Burdon        19
 Derek Wilson         21  Marion Worrall      13
-Don Shaw             21  Maureen Morris      15
+donald shaw             21  Maureen Morris      15
 Brian Fish           19  Cedric Briggs       21
 Keith Worrell        21  David Johnson        9
 Duncan McPhail       21  Roy Tebbutt         13
@@ -843,7 +843,7 @@ Mabel Shaw           20  Terry Williams      21
 Jim Moorin           19  Bill Robson         21
 Derek Wilson         14  John Hainsworth     21
 Keith Worrell        21  Ken Lee             18
-Don Shaw             21  Ron Witham          10
+donald shaw             21  Ron Witham          10
 Brian Fish           21  Christine Robson    16
 Barry Palmer         10  Brian Dowling       21
 Stewart Watson       16  Norman Shaw         21
@@ -921,7 +921,7 @@ Jeff Binns           21  Mabel Shaw          15
 Christine Plaskitt   21  Derek Wilson        17
 Lynda Wright          8  Jim Moorin          21
 Jack Finister        21  Ken Walker          17
-Margaret Finister    21  Don Shaw            13
+Margaret Finister    21  donald shaw            13
 David Wright         21  Brian Fish          13
 David Wilkinson      21  Duncan McPhail      13
 Pam Binns            14  Stewart Watson      21
@@ -970,7 +970,7 @@ Ted Mounteney         1  Jim Jordan          21
                               Tue 2nd Jul
    Stanningley Park          Western Flatts
 Jim Moorin           21  Ray Ellerker         9
-Don Shaw             21  Steve Caley         18
+donald shaw             21  Steve Caley         18
 Ken Walker           21  Granville Stoyles   17
 Duncan McPhail       21  John Manson         15
 Derek Wilson         21  Lillian Pickles     10
@@ -1013,7 +1013,7 @@ Margaret West        21  Ken Walker          11
 Bill Mewes           17  Mabel Shaw          21
 Derek Green          10  Duncan McPhail      21
 Eric Massey          20  Jim Moorin          21
-Mike Sherman         10  Don Shaw            21
+Mike Sherman         10  donald shaw            21
 Jim Jordan           21  Brian Fish          10
 Tony Boyes           10  Stewart Watson      21
        Aggregate:   130        Aggregate:   135
@@ -1143,10 +1143,10 @@ Pat Parker            6  Jim Moorin          21
 Graham Dunwell       21  Mabel Shaw          17
 Frank Armitage       21  Ken Walker           8
 Steve Milton         21  Derek Wilson         4
-Hilary Campbell      21  David Hudson        11
+Hilary Campbell      21  dave hudson        11
 Allan Nicholson      11  Keith Worrell       21
 Arthur Hutchinson    21  Duncan McPhail      17
-Brian Thompson       21  Don Shaw            16
+Brian Thompson       21  donald shaw            16
        Aggregate:   143        Aggregate:   115
 
                               Tue 30th Jul
@@ -1165,7 +1165,7 @@ Philip Marshall       7  Ian Tindal          21
                               Tue 30th Jul
    Stanningley Park            Gildersome
 Jim Moorin           21  Clifford Pitts       5
-Don Shaw             21  David Rawson        18
+donald shaw             21  David Rawson        18
 Derek Wilson         19  Dennis Wainwright   21
 Brian Fish           21  Dougie Cooper        9
 Keith Worrell         8  Tony Morris         21
@@ -1235,7 +1235,7 @@ Colin Davison        12  Jim Moorin          21
 Mike Froggatt        12  Brian Fish          21
 Graham Hey           17  Mabel Shaw          21
 Kath Hey             14  Keith Worrell       21
-Jean Long            11  Don Shaw            21
+Jean Long            11  donald shaw            21
 David Lyons          11  Stewart Watson      21
        Aggregate:   117        Aggregate:   160
           Points:    22           Points:    37
@@ -1283,7 +1283,7 @@ Barry Lee            21  Dennis Wainwright   19
    Stanningley Park             Cranmore
 Jim Moorin           21  Ray Watson          12
 Brian Fish           21  Graham Bluff         9
-Don Shaw             21  Peter Nicholson     14
+donald shaw             21  Peter Nicholson     14
 Derek Wilson         21  Steven Ballance      8
 Keith Worrell        21  Jeoff Higgins       16
 Mabel Shaw           21  Harry Gillett       17
@@ -1428,7 +1428,7 @@ Frank Armitage       21  Mabel Shaw          14
 Pat Parker           12  Jim Moorin          21
 Allan Nicholson      21  Derek Wilson        11
 Graham Dunwell       21  Brian Fish          17
-Hilary Campbell      19  Don Shaw            21
+Hilary Campbell      19  donald shaw            21
 Steve Milton         21  Keith Worrell        5
 Arthur Hutchinson    12  Duncan McPhail      21
 Brian Thompson       21  Stewart Watson      19
@@ -1442,7 +1442,7 @@ Marion Worrall        8  Mabel Shaw          21
 John Lambert         21  Derek Wilson        11
 Barry Lee            11  Brian Fish          21
 Len Robinson         21  Keith Worrell        9
-David Johnson         3  Don Shaw            21
+David Johnson         3  donald shaw            21
 Roy Tebbutt           7  Duncan McPhail      21
 David Howard         20  Stewart Watson      21
        Aggregate:   112        Aggregate:   131

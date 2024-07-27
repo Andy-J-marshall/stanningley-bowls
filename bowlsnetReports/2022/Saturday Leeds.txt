@@ -447,7 +447,7 @@ Len Robinson        16  Diane Hales           21
      Pudsey Park            Scatcherd Park A
 Barbara Nellis       5  Jeff Holt             21
 Shirley Biancardo   17  Graham Hainsworth     21
-David Hudson        10  Graham Goodhall       21
+dave hudson        10  Graham Goodhall       21
 Brian Stevens       11  Bob Sharp             21
 Bryan Bonnington    15  Colin Wicks           21
 Cliff Brogie        10  Michael Stott         21
@@ -554,7 +554,7 @@ Daphne Scott        21  Cliff Brogie          14
 Glenda Holmes       21  Shirley Biancardo     17
 Frank Hales         16  Barbara Nellis        21
 Linda Gaunt         13  Derek Howell          21
-Diane Hales         21  David Hudson          18
+Diane Hales         21  dave hudson          18
 Dougie Cooper        4  Mario Biancardo       21
 Harvey Lockwood     16  Dennis Walters        21
       Aggregate:   133          Aggregate:   141
@@ -696,7 +696,7 @@ Barry Baldwin       21  Andy Waller           18
 Bob Emerson         21  Derek Howell           0
 Arthur Horne         5  Shirley Biancardo     21
 Brenda Moscrop      21  Barbara Nellis         4
-Damien Wright       21  David Hudson          18
+Damien Wright       21  dave hudson          18
 Mark Rastrick       21  Brian Stevens          8
 Paul Sittlinton     21  Bryan Bonnington      11
 Simon Hemmingway    21  Cliff Brogie          12
@@ -814,7 +814,7 @@ Cliff Brogie        21  David Abbott          13
 Bryan Bonnington    18  Peter Colley          21
 Barbara Nellis      21  Mavine Tomlinson      18
 Shirley Biancardo   21  *A.N.Other*           13
-David Hudson        11  John Binns            21
+dave hudson        11  John Binns            21
 Brian Stevens       16  Steve Brown           21
 Mario Biancardo     21  Ian Wood               7
 Dennis Walters      15  Paul Hatch            21
@@ -930,7 +930,7 @@ Keith Worrall        9  Frank Armitage        21
     Holbeck Ltd A             Pudsey Park
 Michaela Wardle     20  Barbara Nellis        21
 Joanne Unwin        21  Stephen Morris        16
-Steve Francis       17  David Hudson          21
+Steve Francis       17  dave hudson          21
 Lisa Hogan          16  Shirley Biancardo     21
 Jason Ream          21  Brian Stevens          7
 Alex Perry          21  Bryan Bonnington      15
@@ -1064,7 +1064,7 @@ Derek Howell        21  Alan Taylor            5
 Bryan Bonnington    21  Hugh Callard          17
 Shirley Biancardo   21  Josie Burdon          11
 Barbara Nellis      11  Cedric Briggs         21
-David Hudson        21  Fred Hargreaves       14
+dave hudson        21  Fred Hargreaves       14
 Mario Biancardo     21  Carol Robinson         7
 Dennis Walters      21  Keith Worrall         18
       Aggregate:   151          Aggregate:   114
@@ -1153,7 +1153,7 @@ Keith Worrall       11  Martin Huxley         21
      Pudsey Park              Holbeck Moor
 Brian Stevens        7  Wayne Warburton       21
 Shirley Biancardo   21  Pat Parker            11
-David Hudson        13  Steve Milton          21
+dave hudson        13  Steve Milton          21
 Derek Howell        21  Hilary Campbell       12
 Barbara Nellis       7  Geoff Warburton       21
 Cliff Brogie        20  Arthur Hutchinson     21
@@ -1247,7 +1247,7 @@ Steve Milton         9  Derek McCormack       21
       Qtr-Finals          On Stanningley Park
      Gildersome A             Pudsey Park
 Glenda Holmes        8  Mario Biancardo       21
-Dougie Cooper       21  David Hudson          20
+Dougie Cooper       21  dave hudson          20
 Daphne Scott        21  Barbara Nellis         8
 Frank Hales         13  Derek Howell          21
 Harvey Lockwood     21  Brian Stevens         12
@@ -1408,7 +1408,7 @@ Paul Bowes          21  Bill Lovett            5
 Gerry Wood          21  Ken Stockhill         20
 Thomas Cuddy        21  Bob Davison           18
 Martin Heys         21  Carol Butters         14
-David Hudson        10  Ron Lavan             21
+dave hudson        10  Ron Lavan             21
 Danny Dawson        21  Granville Stoyles     17
 Stuart Reardon      21  Hazel Goodall          6
 Paul Shackleton     21  Margaret McPhail      14
@@ -1449,7 +1449,7 @@ Michael Stott       21  Shirley Biancardo     12
 Billy Ward          21  Cliff Brogie           8
 Jeff Holt           21  Derek Howell           4
 Graham Hainsworth   21  Barbara Nellis         4
-Martin Huxley       21  David Hudson          14
+Martin Huxley       21  dave hudson          14
 Bob Sharp           14  Mario Biancardo       21
 Robert Spink        21  Dennis Walters        11
       Aggregate:   161          Aggregate:    78
@@ -1527,7 +1527,7 @@ Paul Hatch          20  Simon Hemmingway      21
      Pudsey Park            Scatcherd Park A
 Barbara Nellis      10  Martin Huxley         21
 Mario Biancardo     21  Geoff Firth            3
-David Hudson        12  Michael Stott         21
+dave hudson        12  Michael Stott         21
 Brian Stevens       21  Bob Sharp             13
 Derek Howell        21  Colin Wicks           18
 Shirley Biancardo   21  Billy Ward            13
@@ -1609,7 +1609,7 @@ Bryan Bonnington    21  Daphne Scott           9
 Cliff Brogie        14  Sandra Deegan         21
 Barbara Nellis      16  Dougie Cooper         21
 Stephen Morris      21  Frank Hales           14
-David Hudson        13  Harvey Lockwood       21
+dave hudson        13  Harvey Lockwood       21
 Brian Stevens       21  Glenda Holmes          5
 Derek Howell        18  Linda Gaunt           21
 Dennis Walters       6  Diane Hales           21
@@ -1725,7 +1725,7 @@ Derek McCormack     21  Steve Francis         10
 Julie Keightley     21  Bryan Bonnington      18
 Douglas Blair       21  Derek Howell          17
 John Hindle         14  Shirley Biancardo     21
-Pat Blackburn       21  David Hudson           5
+Pat Blackburn       21  dave hudson           5
 Jimmy Wilson        21  Barbara Nellis        18
 Jeff Blackburn      21  Cliff Brogie           7
 Barbara Gray        21  Stephen Morris         4
@@ -1904,7 +1904,7 @@ Derek McCormack     21  John Binns            10
 
       Division 1              Sat 6th Aug
      Pudsey Park                Meanwood
-David Hudson        15  John Hindle           21
+dave hudson        15  John Hindle           21
 Shirley Biancardo   21  Maureen Sheridan       8
 Bryan Bonnington    16  Jimmy Wilson          21
 Cliff Brogie        11  Barbara Gray          21
@@ -1948,7 +1948,7 @@ Jim Bootland        21  Derek Howell          11
 Steve Brown         21  Stephen Morris        11
 Paul Hatch          21  Shirley Biancardo     17
 Mavine Tomlinson    21  Cliff Brogie          14
-David Bailey        21  David Hudson          10
+David Bailey        21  dave hudson          10
 Peter Colley        10  Mario Biancardo       21
 Jason Potter        21  Bryan Bonnington      11
 Ian Wood            21  Dennis Walters        19
@@ -2049,7 +2049,7 @@ Steve Milton        21  Walter Stockhill      11
       Division 1              Sat 20th Aug
      Pudsey Park             Holbeck Ltd A
 Bryan Bonnington    18  Lisa Hogan            21
-David Hudson        21  James Cuffe           18
+dave hudson        21  James Cuffe           18
 Stephen Morris      21  Jason Ream            12
 Shirley Biancardo   21  Kyle Hainsworth       13
 Derek Howell        12  Alex Perry            21
@@ -2143,7 +2143,7 @@ Derek McCormack     21  Jeff Blackburn        13
 Keith Worrall       20  Shirley Biancardo     21
 Hugh Callard        18  Barbara Nellis        21
 Carol Robinson      21  Stephen Morris        16
-Fred Hargreaves     16  David Hudson          21
+Fred Hargreaves     16  dave hudson          21
 Mark Rollinson       6  Brian Stevens         21
 Cedric Briggs       13  Bryan Bonnington      21
 Len Robinson        15  Dennis Walters        21
@@ -2221,7 +2221,7 @@ Kyle Hainsworth     21  Walter Stockhill      18
         Final              On Middleton Comm
    S L eeds Cons A            Pudsey Park
 Reece Pratt         21  Barbara Nellis         4
-Mark Rastrick       21  David Hudson          12
+Mark Rastrick       21  dave hudson          12
 Bob Emerson         10  Shirley Biancardo     21
 Julie Cavalli       21  Cliff Brogie          20
 Brian Newton        21  Bryan Bonnington      15
@@ -2273,7 +2273,7 @@ Diane Hales         21  Paul Hainsworth       11
      Holbeck Moor             Pudsey Park
 Jim Barker          20  Bryan Bonnington      21
 Larrain Barker      21  Stephen Morris        20
-Brian Thompson      21  David Hudson           9
+Brian Thompson      21  dave hudson           9
 Hilary Campbell     14  Barbara Nellis        21
 Geoff Warburton     21  Derek Howell          11
 George Ellener      21  Cliff Brogie          16

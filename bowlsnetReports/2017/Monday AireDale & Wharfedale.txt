@@ -902,8 +902,8 @@ Alan Jessop             20  David Locke                21
         Division 2                  Mon 10th Apr
       Stanningley A                Skipton Craven
 Cliff Brogie            15  Darrell Gore               21
-David Hudson            15  Kevin Burnett              21
-Don Shaw                10  Robbie Ellis               21
+dave hudson            15  Kevin Burnett              21
+donald shaw                10  Robbie Ellis               21
 Derek Wilson             3  Derek Seed                 21
 Jack Bowes              21  Robert Ellis               10
 Ken Stockhill           21  Gary Hodge                  6
@@ -1191,10 +1191,10 @@ Elaine Hill              4  Luke Teale                 21
        Grove Hill A                 Stanningley A
 Neil Howlett            21  Ken Stockhill              14
 Joey Crawford           15  Jack Bowes                 21
-Joan Holden              6  David Hudson               21
+Joan Holden              6  dave hudson               21
 Bob Wilson              21  Brian Fish                 16
 Jim McLeod              21  James Moorin                8
-Philip West             21  Don Shaw                   15
+Philip West             21  donald shaw                   15
 Chris Sims              21  David Parker               18
 David Locke             21  Cliff Brogie               10
 David Samuel             8  Steve Gardner              21
@@ -1509,9 +1509,9 @@ Brian Wheeler           21  Roger French               14
 
         Division 2                  Mon 24th Apr
       Stanningley A                   Pudsey B
-Don Shaw                21  Alan Jessop                17
+donald shaw                21  Alan Jessop                17
 Cliff Brogie            18  George Hogg                21
-David Hudson            21  Alex Edmondson             16
+dave hudson            21  Alex Edmondson             16
 Jack Bowes              21  Sue Chadwick                9
 Brian Fish              12  Thomas Morris              21
 David Parker             6  Brian Scarth               21
@@ -1877,9 +1877,9 @@ George McLaren          21  Andy Swallow               17
 
         Division 2                   Mon 1st May
        Calverley A                  Stanningley A
-Steve Spurr             21  Don Shaw                   15
+Steve Spurr             21  donald shaw                   15
 Derek Whitaker          21  Cliff Brogie               10
-Anne Newlove            16  David Hudson               21
+Anne Newlove            16  dave hudson               21
 Margaret Wood           21  Jack Bowes                 17
 Margaret Whitaker       16  Derek Wilson               21
 John Spilsbury           4  Jack Roberts               21
@@ -2451,7 +2451,7 @@ Robbie Ellis            21  Tom Broadbent              18
      Wharfemeadows A                Stanningley A
 Tony Farrar             21  David Parker               14
 John Harrison           14  Brian Fish                 21
-Jean Harrison           21  David Hudson                9
+Jean Harrison           21  dave hudson                9
 John Chippindale        21  Derek Wilson               17
 Diane Farrar            12  Jack Roberts               21
 Mark Silvester           9  Jack Bowes                 21
@@ -2755,7 +2755,7 @@ Alex Edmondson          15  Ralph Sissons              21
       Stanningley A                   Rawdon A
 Derek Wilson            18  Paul Haigh                 21
 Jack Roberts            21  Gordon Longfellow          16
-David Hudson            18  Steve Calvert              21
+dave hudson            18  Steve Calvert              21
 David Parker            21  Bill Robson                15
 Brian Fish              21  Gill Godden                13
 Jack Bowes              20  Brian Teale                21
@@ -3059,7 +3059,7 @@ Brian Wardle            21  Sam Hunak                  14
         Guiseley B                  Stanningley A
 Lynn Ogden              21  Cliff Brogie               17
 Ralph Sissons           21  David Parker                3
-Marie Sutcliffe         21  David Hudson               12
+Marie Sutcliffe         21  dave hudson               12
 Caroline Corbett        21  Jack Roberts               17
 Roger Waite             21  Brian Fish                  9
 Graham Bolton           19  Jack Bowes                 21
@@ -3449,7 +3449,7 @@ Jack Bowes              21  Andrew Mortimer            13
 Paul Bowes              21  Tom Broadbent              11
 James Moorin            21  Philip Howard              12
 Steve Gardner           21  George McLaren              7
-Don Shaw                 3  Gareth Robinson            21
+donald shaw                 3  Gareth Robinson            21
 Brian Fish              13  Nigel Stockdale            21
        Aggregate:      146            Aggregate:      157
            Games:        5                Games:        5
@@ -3714,7 +3714,7 @@ Jim Swailes              8  Helen Gilroy               21
         Division 2                  Mon 12th Jun
       Burley Wdale A                Stanningley A
 Steven Fender           21  Derek Wilson                5
-Andrew Shaw             21  Don Shaw                    9
+Andrew Shaw             21  donald shaw                    9
 Brian Wardle            19  Jack Roberts               21
 Susan Knowles           21  Cliff Brogie               13
 Andrew Wilson           21  Paul Bowes                 20
@@ -4233,7 +4233,7 @@ Cathy Rushton           11  Jack Bowes                 21
 David Leeming           21  Jack Roberts               10
 Billy Cater             21  Derek Wilson                6
 Richard Baker           21  Cliff Brogie               13
-Darrell Gore            21  David Hudson                4
+Darrell Gore            21  dave hudson                4
 Viv Abell               19  Mabel Shaw                 21
        Aggregate:      187            Aggregate:      129
            Games:        7                Games:        3
@@ -4513,9 +4513,9 @@ Andrew Durkin 'A'       19  Walter Stockhill           21
 
         Division 2                   Mon 3rd Jul
       Stanningley A                 Grove Hill A
-Don Shaw                21  Philip West                20
+donald shaw                21  Philip West                20
 Ken Stockhill            7  David Samuel               21
-David Hudson             8  Chris Sims                 21
+dave hudson             8  Chris Sims                 21
 Jack Roberts            13  David Locke                21
 Jack Bowes              21  Joan Holden                 5
 Paul Bowes              21  Bob Wilson                 18
@@ -4853,7 +4853,7 @@ Alan Bell               19  Brian Fish                 21
 Sue Chadwick            21  Jack Roberts               17
 Alex Edmondson          21  Cliff Brogie               20
 Peter Harding           13  Steve Gardner              21
-George Hogg             14  Don Shaw                   21
+George Hogg             14  donald shaw                   21
 Sam Hunak               13  James Moorin               21
 Alan Jessop             21  Ken Stockhill               1
 Angie Morris             4  Paul Bowes                 21
@@ -5273,7 +5273,7 @@ Ben Stockdale           21  Gareth Robinson            12
 
         Division 2                  Mon 17th Jul
       Stanningley A                  Calverley A
-David Hudson            13  Margaret Wood              21
+dave hudson            13  Margaret Wood              21
 Derek Wilson            13  Derek Whitaker             21
 Steve Gardner           21  Roy Scott                   8
 Cliff Brogie             5  John Spilsbury             21
@@ -5610,10 +5610,10 @@ Nigel Stockdale         20  Joanne Ellis               21
 
         Division 2                  Mon 24th Jul
       Stanningley A                Wharfemeadows A
-Don Shaw                 9  John Harrison              21
+donald shaw                 9  John Harrison              21
 Ken Stockhill           14  John Chippindale           21
 Cliff Brogie            21  Jean Harrison              18
-David Hudson            14  Howard Gardiner            21
+dave hudson            14  Howard Gardiner            21
 Jack Bowes              21  Mark Silvester              8
 Paul Bowes              17  Alan Broadwell             21
 Mabel Shaw              21  Gill Godden                16
@@ -5915,7 +5915,7 @@ Colin Matthewman        21  Peter Harding               7
         Division 2                  Mon 31st Jul
          Rawdon A                   Stanningley A
 Norman Shaw             21  Cliff Brogie                6
-Gordon Longfellow       21  David Hudson               11
+Gordon Longfellow       21  dave hudson               11
 Brian Teale             21  Mabel Shaw                 17
 Paul Haigh              21  Ken Stockhill              18
 Bill Robson             21  Derek Wilson               17
@@ -5923,7 +5923,7 @@ David Johnson           20  Paul Bowes                 21
 Ian Bolton              21  Jack Roberts               11
 Steve Calvert           21  James Moorin                6
 Richard Lawrence        19  Steve Gardner              21
-Andrew Wood             21  Don Shaw                    6
+Andrew Wood             21  donald shaw                    6
        Aggregate:      207            Aggregate:      134
            Games:        8                Games:        2
           Points:       26               Points:        4
@@ -6238,10 +6238,10 @@ Thomas Morris           12  Ben Ullock                 21
 
         Division 2                   Mon 7th Aug
       Stanningley A                  Guiseley B
-Don Shaw                20  Ralph Sissons              21
+donald shaw                20  Ralph Sissons              21
 Derek Wilson             7  Carolyn Matthewman         21
 Ken Stockhill            8  Marie Sutcliffe            21
-David Hudson            21  Caroline Corbett           11
+dave hudson            21  Caroline Corbett           11
 Jack Roberts            21  Stan Marsden                8
 Mabel Shaw              21  Roger Waite                17
 Paul Bowes              21  Graham Bolton               7
@@ -6574,11 +6574,11 @@ Andrew Uttley           18  Thomas Morris              21
 
         Division 2                  Mon 14th Aug
        Tarnfield A                  Stanningley A
-Andrew Mortimer         21  David Hudson                9
+Andrew Mortimer         21  dave hudson                9
 Graham Howden            1  Ken Stockhill              21
 Linda Utley             21  Derek Wilson               10
 Colin Hargreaves        19  Jack Roberts               21
-Alan Gribbins            5  Don Shaw                   21
+Alan Gribbins            5  donald shaw                   21
 Stanley Southern        15  Jack Bowes                 21
 George McLaren           9  Paul Bowes                 21
 Nigel Stockdale         21  James Moorin               11
@@ -6895,8 +6895,8 @@ Daniel Teale            21  Stephen Bottomley          13
         Division 2                  Mon 21st Aug
       Stanningley A                Burley Wdale A
 Derek Wilson            21  Andrew Wilson               8
-David Hudson             6  Robert Hartley             21
-Don Shaw                21  Brenda Cromwell             8
+dave hudson             6  Robert Hartley             21
+donald shaw                21  Brenda Cromwell             8
 Ken Stockhill           21  Alison Wailes              16
 Brian Fish              21  Susan Knowles               1
 Jack Bowes              21  Steven Fender              13

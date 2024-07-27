@@ -647,7 +647,7 @@ John Gilroy        16  Derek McCormack     21
 Barry Palmer       21  David Brooke        11
 Michael Howsham    10  Reece Pratt         21
 Malcolm Dacre      14  Brenda Moscrop      21
-David Hudson       21  Bob Emerson         12
+dave hudson       21  Bob Emerson         12
 Clifford Brogie    21  Arthur Horne        12
       Aggregate:  103        Aggregate:    98
          Points:   22           Points:    21
@@ -2236,7 +2236,7 @@ Danny Towning      21  Terry Newsome       16
 
      Division 2             Wed 28th Jun
      Burley Park            Holbeck Moor
-David Hudson       21  George Ellener       7
+dave hudson       21  George Ellener       7
 Malcolm Dacre      19  Hilary Campbell     21
 Jeff Allmman       15  Steve Milton        21
 Michael Howsham    21  Jeff Warburton      12
@@ -2434,7 +2434,7 @@ Linda Gaunt        21  Chris Jones         16
 
      Division 2             Wed 5th Jul
   Middleton Comm A          Burley Park
-Charlotte Doris    10  David Hudson        21
+Charlotte Doris    10  dave hudson        21
 Christine Glynn    21  Malcolm Dacre       14
 Bill Mewse         21  Clifford Brogie     16
 Brian Ragan        21  Michael Howsham     13
@@ -2610,7 +2610,7 @@ Linda Gaunt        17  Malcolm Hallas      21
 
      Division 2             Wed 12th Jul
    Moor Allerton A          Burley Park
-Geoff West         21  David Hudson         6
+Geoff West         21  dave hudson         6
 Richard Mansell    21  Malcolm Dacre       17
 Martin Keitcer     18  Mark McCann         21
 Keith Harbage      21  Michael Howsham      5
@@ -3110,7 +3110,7 @@ Paul Shafar        21  Royce Jackson        2
      Burley Park            Gildersome A
 Mark McCann        21  Sandra Deegan       11
 Malcolm Dacre      21  Neil Schofield      18
-David Hudson       15  Diane Hales         21
+dave hudson       15  Diane Hales         21
 Michael Howsham    21  Tony Morris         10
 Barry Palmer       12  Harvey Lockwood     21
 Jeff Allmman       21  Linda Gaunt         18
@@ -3242,7 +3242,7 @@ Harvey Lockwood    12  Steve Brown         21
    Chapel Allerton          Burley Park
 Ian McMillin        3  Mark McCann         21
 Graham Pickles     21  Malcolm Dacre        4
-Alex McSheehy      21  David Hudson        13
+Alex McSheehy      21  dave hudson        13
 Royce Jackson      21  Michael Howsham     13
 Joe Hanakin        10  Jeff Allmman        21
 David Blackwell    19  Clifford Brogie     21
@@ -3321,7 +3321,7 @@ Jeff Blackburn     21  Thomas Kaye          6
      Burley Park           Harehills Park
 Mark McCann        21  Nigel Rawlings      14
 Malcolm Dacre      21  Maurice Holleran     1
-David Hudson       13  Jade Kerry          21
+dave hudson       13  Jade Kerry          21
 Michael Howsham    21  Peter Simmons       19
 John Gilroy        21  Sharon Kerry        13
 Clifford Brogie    21  Laura Love          16

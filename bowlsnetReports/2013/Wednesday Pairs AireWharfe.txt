@@ -595,7 +595,7 @@ Jeanne Keithley     31  Barry Slater       13
       Division 2            Wed 17th Apr
      The Hollies            Stanningley A
 John Lambert        31  Jack Roberts       23
-Doreen Hogg         12  Don Shaw           31
+Doreen Hogg         12  donald shaw           31
 Maureen Morris      19  Bernard Palmer     31
 Walter Stockhill    31  Alison Woodfine    26
           Games:     2            Games:    2
@@ -736,7 +736,7 @@ Andrew Shaw         31  Colin Matthewman   11
     Stanningley A          Meanwood Park B
 Jack Roberts        31  Margaret Butterworth                                                                                                                                                                                                                                                               22
 Bernard Palmer      27  Dorothy Lawrence   31
-Don Shaw            31  Tina Howard        15
+donald shaw            31  Tina Howard        15
 Andy Robertson      31  Graham Hey          7
           Games:     3            Games:    1
       Aggregate:   120        Aggregate:   75
@@ -856,8 +856,8 @@ Barry Larkins       31  Philip Postlethwaite7
     Greenbottom A           Stanningley A
 William Schuler     21  Alison Woodfine    31
 Janice Waite        30  David Parker       31
-Malcolm Handscombe  31  Don Shaw           25
-Ann Ryley           31  David Hudson       26
+Malcolm Handscombe  31  donald shaw           25
+Ann Ryley           31  dave hudson       26
           Games:     2            Games:    2
       Aggregate:   113        Aggregate:  113
          Points:    12           Points:   12
@@ -1036,7 +1036,7 @@ Jean Hammond        31  Dorothy Ford       23
     Stanningley A           Grove Hill B
 Bernard Palmer      31  Dot Danskin        16
 Jack Roberts        31  Judith Highcock    23
-Don Shaw            31  John Moore         18
+donald shaw            31  John Moore         18
 Andy Robertson      31  Freda Jones        18
           Games:     4            Games:    0
       Aggregate:   124        Aggregate:   75
@@ -1184,7 +1184,7 @@ Valerie Bradshaw    31  Adrian Briggs      28
 
       Division 2            Wed 15th May
     Stanningley A            Yeadon Park
-David Hudson        31  Barry Slater        7
+dave hudson        31  Barry Slater        7
 Alison Woodfine     31  Harry Utley        28
 Mabel Shaw          31  James Teale        21
 Jack Roberts        29  Frank Baker        31
@@ -1316,7 +1316,7 @@ Les Tugwell         21  Frank Baker        31
      Calverley B            Stanningley A
 Malcolm Pratt       27  Bernard Palmer     31
 Clifford Wheatley   31  Jack Roberts       29
-Marjorie Scott      20  Don Shaw           31
+Marjorie Scott      20  donald shaw           31
 Barry Briggs        18  Andy Robertson     31
           Games:     1            Games:    3
       Aggregate:    96        Aggregate:  122
@@ -1476,7 +1476,7 @@ Kathryn Jones       31  Brian Tillotson    11
     Stanningley A               Adel
 Bernard Palmer      31  Brian Ward         22
 Alison Woodfine     31  David Pike         30
-Don Shaw            31  Les Tugwell        21
+donald shaw            31  Les Tugwell        21
 David Parker        18  Philip Hynes       31
           Games:     3            Games:    1
       Aggregate:   111        Aggregate:  104
@@ -1614,9 +1614,9 @@ Clifford Wheatley   23  Stuart Norris      31
 
       Division 2             Wed 5th Jun
       Guiseley B            Stanningley A
-Margaret Orchard    31  David Hudson       23
+Margaret Orchard    31  dave hudson       23
 Michael Bennett     31  Jack Roberts       20
-Adrian Briggs       28  Don Shaw           31
+Adrian Briggs       28  donald shaw           31
 Colin Matthewman    31  Alison Woodfine    28
           Games:     3            Games:    1
       Aggregate:   121        Aggregate:  102
@@ -1786,7 +1786,7 @@ Judith Highcock      8  Michael Bennett    31
     Stanningley A             Menston A
 Bernard Palmer      31  Reg Addey          21
 Alison Woodfine     25  Roger Sayers       31
-Don Shaw            31  Shaun Johnson      19
+donald shaw            31  Shaun Johnson      19
 Jack Roberts        17  Callum Shaw        31
           Games:     2            Games:    2
       Aggregate:   104        Aggregate:  102
@@ -1946,7 +1946,7 @@ Frank Baker         31  Douglas Blair      19
     Stanningley A            The Hollies
 Alison Woodfine     31  Barry Hogg         14
 Jack Roberts        31  Carol Robinson     20
-Don Shaw            31  Margaret Stockhill 17
+donald shaw            31  Margaret Stockhill 17
 Bernard Palmer      31  Doreen Hogg        18
           Games:     4            Games:    0
       Aggregate:   124        Aggregate:   69
@@ -2085,7 +2085,7 @@ Margaret Wood       24  Andrew Shaw        31
       Division 2            Wed 26th Jun
    Meanwood Park B          Stanningley A
 Kathy Hey           23  Geoff Hodgson      31
-Valerie Bradshaw    23  Don Shaw           31
+Valerie Bradshaw    23  donald shaw           31
 Margaret Butterworth31  Bernard Palmer     12
 Jeanne Keithley     31  Alison Woodfine    29
           Games:     2            Games:    2
@@ -2206,7 +2206,7 @@ Brian Wardle        31  Ron Brown          26
     Stanningley A           Greenbottom A
 Bernard Palmer      31  Malcolm Handscombe 25
 Alison Woodfine     31  Ann Ryley          10
-Don Shaw            31  Colin Mann         19
+donald shaw            31  Colin Mann         19
 Jack Roberts        28  Lyn Malcolm        31
           Games:     3            Games:    1
       Aggregate:   121        Aggregate:   85
@@ -2386,8 +2386,8 @@ Josie Burdon        19  Andrew Shaw        31
      Grove Hill B           Stanningley A
 Dot Danskin         31  Alison Woodfine    30
 John Moore          25  David Parker       31
-Freda Jones         31  Don Shaw           28
-Kathryn Jones       31  David Hudson       22
+Freda Jones         31  donald shaw           28
+Kathryn Jones       31  dave hudson       22
           Games:     3            Games:    1
       Aggregate:   118        Aggregate:  111
          Points:    14           Points:   10
@@ -2535,8 +2535,8 @@ Colin Matthewman    31  Dorothy Lawrence   11
       Division 2            Wed 17th Jul
      Yeadon Park            Stanningley A
 David Baldwin       31  Andy Robertson     22
-Diane Teale         31  David Hudson       28
-Harry Utley         31  Don Shaw           13
+Diane Teale         31  dave hudson       28
+Harry Utley         31  donald shaw           13
 Linda Utley         31  Jack Roberts       16
           Games:     4            Games:    0
       Aggregate:   124        Aggregate:   79
@@ -2664,9 +2664,9 @@ Linda Utley         31  Philip Hynes       28
 
       Division 2            Wed 24th Jul
     Stanningley A            Calverley B
-David Hudson        24  Margaret Jones     31
+dave hudson        24  Margaret Jones     31
 Steve Gardner       31  Malcolm Pratt       8
-Don Shaw            31  Roy Whiteley       10
+donald shaw            31  Roy Whiteley       10
 Alison Woodfine     31  Marjorie Scott     17
           Games:     3            Games:    1
       Aggregate:   117        Aggregate:   66
@@ -2824,9 +2824,9 @@ Roy Whiteley         8  David Samuel       31
 
       Division 2            Wed 31st Jul
          Adel               Stanningley A
-Les Tugwell         11  Don Shaw           31
+Les Tugwell         11  donald shaw           31
 Alan Byers          31  David Parker       24
-Russell Ruddiman    31  David Hudson        8
+Russell Ruddiman    31  dave hudson        8
 Keith Ellse         16  Steve Gardner      31
           Games:     2            Games:    2
       Aggregate:    89        Aggregate:   94
@@ -2964,7 +2964,7 @@ Linda Utley         27  Malcolm Pratt      31
 
       Division 2             Wed 7th Aug
     Stanningley A            Guiseley B
-Don Shaw            30  Michael Bennett    31
+donald shaw            30  Michael Bennett    31
 Andy Robertson      31  Margaret Orchard    4
 Bernard Palmer      31  Andrea Briggs      28
 Jack Roberts        26  Colin Matthewman   31
@@ -3134,7 +3134,7 @@ Colin Matthewman    31  David Samuel       11
 
       Division 2            Wed 14th Aug
       Menston A             Stanningley A
-Andrew Shaw         31  Don Shaw           24
+Andrew Shaw         31  donald shaw           24
 Tim Dove            21  Steve Gardner      31
 Ian Smith           31  Bernard Palmer     22
 Peter Hammond       31  Jack Roberts       14

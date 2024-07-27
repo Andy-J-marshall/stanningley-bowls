@@ -2239,7 +2239,7 @@ Jeremy Waller        21  Kim Benson            5
 Steven McGrevy       21  Alison Woodfine      13
 Paul Turpin           9  Terry Powell         21
 Kenny McCafferty     21  Brian Barker          3
-Roy Watters          19  David Hudson         21
+Roy Watters          19  dave hudson         21
 Debra Pearson         5  Mabel Shaw 'A'       21
 Sylvia Parker        12  Ken Walker           21
 Trevor Kendal        14  Brian Fish           21
@@ -2861,7 +2861,7 @@ Alison Woodfine      21  Kath Hey             12
 Ken Walker           21  Michael Froggatt      9
 Andy Robertson       21  Colin Davison        17
 Brian Barker          7  Ian Tindal           21
-David Hudson         16  Stuart Tennant       21
+dave hudson         16  Stuart Tennant       21
 Mabel Shaw 'A'       21  Graham Hey           19
 Clifford Brogie      20  David Hill           21
 Terry Powell          2  Jeremy Waller        21
@@ -3358,7 +3358,7 @@ David Smalley 'A'    21  Stuart Alderson       7
       Rufford 'C'            Stanningley 'A'
 Bill Lovedale        21  Brian Barker          6
 Alan Preston         21  Donald Shaw 'A'      10
-Daniel Pawley        21  David Hudson          6
+Daniel Pawley        21  dave hudson          6
 Eileen Beck          21  Terry Powell          9
 Alexander Waite      21  Alison Woodfine      20
 Jim Dobson           21  Mabel Shaw 'A'       12
@@ -3995,7 +3995,7 @@ Tracy Duxbury        15  Alison Woodfine      21
 Elaine Farrow        13  Ken Walker           21
 Derek Briggs         10  Andy Robertson       21
 Shirley Hudson       19  Brian Barker         21
-Neil Duxbury         21  David Hudson          4
+Neil Duxbury         21  dave hudson          4
 Mark Durrans         19  Mabel Shaw 'A'       21
 John Hainsworth 'A'  21  Jack Roberts 'A'      7
 Barry Durrans 'A'    21  Brian Fish           14
@@ -4716,7 +4716,7 @@ Paul Kitson          21  Paul Tillyer         14
 
   Division 6 (Riley)          Sat 10th Jun
     Stanningley 'A'              Farsley
-David Hudson         21  Nick Beswick         13
+dave hudson         21  Nick Beswick         13
 Terry Powell         21  Peter Mylan           8
 Brian Fish           21  Terry Watson          3
 Alison Woodfine      21  Margaret Gardner      3
@@ -5517,7 +5517,7 @@ Martin Brenchley     13  Daniel Pawley        21
   Division 6 (Riley)          Sat 24th Jun
   Bailiff Bridge 'A'         Stanningley 'A'
 Sandra Franz 'A'     21  Brian Barker         13
-Albert Stocks        14  David Hudson         21
+Albert Stocks        14  dave hudson         21
 Malcolm Park         21  Terry Powell         15
 Stuart Briggs        17  Andy Robertson       21
 Jan Marshall 'A'     15  Mabel Shaw 'A'       21
@@ -6170,7 +6170,7 @@ Jack Roberts 'A'     21  David Healey         11
 Terry Powell         21  Emma Clayton         17
 Brian Barker         21  Jillian Heffernan     6
 Ken Walker           21  Janet M Hopper       11
-David Hudson         17  Karen Healey         21
+dave hudson         17  Karen Healey         21
 Alison Woodfine      21  Jennifer Moffat       9
 Mabel Shaw 'A'       21  Paul Iredale          8
 Brian Fish           21  Christine Stout      16
@@ -7028,7 +7028,7 @@ Stephen Airey        21  John Fletcher         7
       Bowling 'A'            Stanningley 'A'
 Keith Robertson 'A'  21  Alison Woodfine      10
 Ken Parker           21  Brian Fish           14
-Syd Spencer          19  David Hudson         21
+Syd Spencer          19  dave hudson         21
 James Dennison       21  Ken Walker            8
 David McCormick      21  Mabel Shaw 'A'        6
 Christine Kilner     19  Terry Powell         21
@@ -7578,7 +7578,7 @@ Alison Woodfine      21  Fred Fogg             3
 Clifford Brogie      19  Margaret Shuker      21
 Andy Robertson       21  Jordon Hare           4
 Mabel Shaw 'A'       12  Robert Haydock       21
-David Hudson         21  Stephen Airey        16
+dave hudson         21  Stephen Airey        16
 Brian Fish           21  Sheila Brown         13
 Donald Shaw 'A'      21  Richard Brown        10
        Aggregate:   199         Aggregate:   109
@@ -8029,7 +8029,7 @@ Nigel Peel           21  Robert Haydock        7
   Division 6 (Riley)           Sat 5th Aug
     Stanningley 'A'          Asa Briggs 'C'
 Clifford Brogie       8  Gordon Daniel        21
-David Hudson         17  Paul Turpin          21
+dave hudson         17  Paul Turpin          21
 Brian Fish           21  Debra Pearson        17
 Ken Walker           21  Bert Haigh           17
 Andy Robertson       21  Sylvia Parker         7
@@ -8590,7 +8590,7 @@ John Priestley       11  David Firth          21
   Horsforth Woodside         Stanningley 'A'
 Ian Tindal           21  Terry Powell         15
 Michael Froggatt     21  Ken Walker           12
-Margaret Froggatt    21  David Hudson         12
+Margaret Froggatt    21  dave hudson         12
 Colin Davison        17  Brian Barker         21
 Stuart Tennant       15  Mabel Shaw 'A'       21
 Graham Hey           21  Alison Woodfine      13
@@ -9236,7 +9236,7 @@ Nigel Peel           21  Stephen Bottomley    12
 
   Division 6 (Riley)          Sat 19th Aug
     Stanningley 'A'            Rufford 'C'
-David Hudson         21  John Parker           6
+dave hudson         21  John Parker           6
 Clifford Brogie      21  Eileen Beck          17
 Alison Woodfine      21  Kirsten Clapham      10
 Ken Walker           21  Jim Dobson           20
@@ -9804,7 +9804,7 @@ Donald Shaw 'A'      21  Shirley Hudson        8
 Brian Barker         20  Barry Durrans 'A'    21
 Alison Woodfine      21  Alan Farrow 'A'      14
 Andy Robertson       21  John Hainsworth 'A'  19
-David Hudson         11  Mark Durrans         21
+dave hudson         11  Mark Durrans         21
 Clifford Brogie      13  Geoff Hudson         21
        Aggregate:   183         Aggregate:   166
           Points:    18            Points:    12
@@ -11067,7 +11067,7 @@ Nigel Peel           21  Geoff Hudson         17
   Division 6 (Riley)           Sat 9th Sep
     Stanningley 'A'        Bailiff Bridge 'A'
 Ken Walker            8  Sandra Franz 'A'     21
-David Hudson         21  Andrea Beetham        4
+dave hudson         21  Andrea Beetham        4
 Brian Fish           21  Jacqueline Sugden 'A'10
 Alison Woodfine      21  Sue Wingate          16
 Jack Roberts 'A'     15  Jan Marshall 'A'     21
@@ -11724,7 +11724,7 @@ Janet M Hopper       21  Mabel Shaw 'A'       17
 Jennifer Moffat      19  Jack Roberts 'A'     21
 Glyn Hopper          21  Donald Shaw 'A'      20
 Karen Healey         21  Ken Walker           16
-Martin Brenchley     21  David Hudson         20
+Martin Brenchley     21  dave hudson         20
 Roger Bernard        21  Brian Fish            9
        Aggregate:   174         Aggregate:   187
           Points:    13            Points:    17
@@ -12345,7 +12345,7 @@ Ken Walker           21  Christine Kilner      7
 Mabel Shaw 'A'       21  Robert Etherington    5
 Andy Robertson       13  James Dennison       21
 Clifford Brogie      12  Andrew Fenton 'A'    21
-David Hudson         15  Daryl McCormick 'A'  21
+dave hudson         15  Daryl McCormick 'A'  21
        Aggregate:   182         Aggregate:   154
           Points:    19            Points:    11
 
@@ -12483,7 +12483,7 @@ Keith Wrightson      21  Brian Woolner         9
   Division 8 (Mellor)         Sat 23rd Sep
       Bowling 'B'            Stanningley 'B'
 Jack Berry            7  Clifford Brogie      21
-Wendy Flower         13  David Hudson         21
+Wendy Flower         13  dave hudson         21
 Annie Wragg          12  Leslie Leak          21
 Barrie Clough        10  Derek Wilson         21
 Violet Rodgers       21  Adam Sandilands      20
@@ -12928,7 +12928,7 @@ Paul Turpin          11  Dave Robertshaw      21
      Hove Edge 'D'           Stanningley 'A'
 Robert Haydock       21  Terry Powell         10
 Lynne Hobson         21  Andy Robertson       10
-Richard Brown        21  David Hudson         20
+Richard Brown        21  dave hudson         20
 Jordon Hare          12  Mabel Shaw 'A'       21
 Margaret Shuker      21  Clifford Brogie      15
 Sheila Brown          8  Jack Roberts 'A'     21

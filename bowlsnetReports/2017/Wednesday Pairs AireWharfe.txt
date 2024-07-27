@@ -646,10 +646,10 @@ Ian Fickling             Gail Blue
 
       Division 2               Wed 12th Apr
      Stanningley A           Meanwood Park B
-Don Shaw             26  Brian Longbottom      31
+donald shaw             26  Brian Longbottom      31
 Mabel Shaw               John Straiton           
 Cliff Brogie         19  Paul Dishman          31
-David Hudson             John King               
+dave hudson             John King               
 Brian Fish           31  Kathy Hey             21
 Ken Walker               Graham Hey              
 Alison Woodfine      31  Barbara Gray          29
@@ -800,10 +800,10 @@ John King                Terry Hasselby
 
       Division 2               Wed 19th Apr
       Yeadon Park             Stanningley A
-Frank Baker          31  Don Shaw              25
+Frank Baker          31  donald shaw              25
 David Baldwin            Mabel Shaw              
 Stuart Norris        31  Cliff Brogie           9
-Reid Haddow              David Hudson            
+Reid Haddow              dave hudson            
 Alan Keighley        31  Ken Walker            25
 Maureen Slater           Brian Fish              
 Joe Keighley         27  Derek Wilson          31
@@ -982,9 +982,9 @@ Laila Packer             David Baldwin
 
       Division 2               Wed 26th Apr
      Stanningley A            Greenbottom A
-Don Shaw             31  John Ellis            19
+donald shaw             31  John Ellis            19
 Mabel Shaw               William Schuler         
-David Hudson         31  Janice Waite          26
+dave hudson         31  Janice Waite          26
 Cliff Brogie             Alan Bishop             
 Brian Fish           31  Malcolm Handscombe    19
 Ken Walker               Jack Beck               
@@ -1126,12 +1126,12 @@ John Spilsbury           Philip Hynes
        Menston A              Stanningley A
 Gail Blue            31  Andrew Robertson      12
 Amrik Singh              Brian Fish              
-Peter Hammond        31  Don Shaw              19
+Peter Hammond        31  donald shaw              19
 Simon Cowley             Mabel Shaw              
 Paul Jacques         31  Derek Wilson          11
 George Hanson            Alison Woodfine         
 Shaun Johnson        31  Ken Walker            14
-Ray Dalton               David Hudson            
+Ray Dalton               dave hudson            
        Aggregate:   124           Aggregate:   56
            Games:     4               Games:    0
           Points:    24              Points:    0
@@ -1336,12 +1336,12 @@ Geoff Ashton             Graham Hey
      Stanningley A              Rufford B
 Jack Roberts         31  Barry Clayton         15
 Alison Woodfine          Jordan Waite            
-Don Shaw             31  Ian Fickling          13
+donald shaw             31  Ian Fickling          13
 Mabel Shaw               Ernest Hugill           
 Brian Fish           31  Kelvin Grace          20
 Andrew Robertson         Amy Lawrence            
 Cliff Brogie         31  Alexander Waite       13
-David Hudson             John Hudson             
+dave hudson             John Hudson             
        Aggregate:   124           Aggregate:   61
            Games:     4               Games:    0
           Points:    23              Points:    1
@@ -1739,8 +1739,8 @@ Joy Bailey               Robert Wheeler
       Division 2               Wed 31st May
       Tarnfield A             Stanningley A
 Linda Utley          31  Cliff Brogie          25
-Dennis Fowles            David Hudson            
-Tom Broardbent       31  Don Shaw               8
+Dennis Fowles            dave hudson            
+Tom Broardbent       31  donald shaw               8
 Joey Broadbent           Mabel Shaw              
 Barry Larkins        31  Alison Woodfine       28
 Terry Hasselby           Ken Stockhill           
@@ -1950,9 +1950,9 @@ Ernest Hugill            Stanley Southern
      Stanningley A               Ilkley B
 Brian Fish           27  John Jubb             31
 Andrew Robertson         Eddie Wray              
-David Hudson         31  David Emerson         13
+dave hudson         31  David Emerson         13
 Cliff Brogie             Sue Emerson             
-Don Shaw             31  Bernie Connor         25
+donald shaw             31  Bernie Connor         25
 Mabel Shaw               Andrew Thornton         
 Alison Woodfine      31  Terry Almond          12
 Derek Wilson             Andrew Breare           
@@ -2156,8 +2156,8 @@ Len Robinson             Derek Wilson
 Doreen Hogg          31  Brian Fish            24
 Barry Hogg               Andrew Robertson        
 Maureen Morris       31  Cliff Brogie          22
-Geoff Ashton             David Hudson            
-Josie Burdon         31  Don Shaw              13
+Geoff Ashton             dave hudson            
+Josie Burdon         31  donald shaw              13
 Elaine Hill              Mabel Shaw              
        Aggregate:   121           Aggregate:   90
            Games:     3               Games:    1
@@ -2347,14 +2347,14 @@ Ray Dalton               David Robertshaw
 
       Division 2               Wed 21st Jun
     Meanwood Park B           Stanningley A
-Graham Hey           24  Don Shaw              31
+Graham Hey           24  donald shaw              31
 Kathy Hey                Mabel Shaw              
 Dorothy Lawrance     31  Alison Woodfine       26
 Douglas Blair            Derek Wilson            
 Barbara Gray         31  Brian Fish            28
 Pat Blackburn            Andrew Robertson        
 Jeanne Keightley     31  Cliff Brogie          30
-Norman Bracewell         David Hudson            
+Norman Bracewell         dave hudson            
        Aggregate:   117           Aggregate:  115
            Games:     3               Games:    1
           Points:    14              Points:   10
@@ -2632,10 +2632,10 @@ Barry Slater             Tim Bennett
      Greenbottom A            Stanningley A
 Malcolm Handscombe   18  Brian Fish            31
 Jack Beck                Ken Stockhill           
-Ann Ryley            28  Don Shaw              31
+Ann Ryley            28  donald shaw              31
 Edgar Ryley              Mabel Shaw              
 Colin Mann           31  Cliff Brogie          28
-William Schuler          David Hudson            
+William Schuler          dave hudson            
 Janice Waite         31  Alison Woodfine       26
 Lynne Malcolm            Derek Wilson            
        Aggregate:   108           Aggregate:  116
@@ -2691,8 +2691,8 @@ Derek Wilson             David Baldwin
 Brian Fish           14  Reid Haddow           31
 Andrew Robertson         Stuart Norris           
 Cliff Brogie         26  Joe Keighley          31
-David Hudson             Barry Slater            
-Don Shaw             31  Alan Keighley         15
+dave hudson             Barry Slater            
+donald shaw             31  Alan Keighley         15
 Mabel Shaw               Maureen Slater          
        Aggregate:    97           Aggregate:  108
            Games:     1               Games:    3
@@ -2771,8 +2771,8 @@ Brian Ward               Clifford Wheatley
       Division 2               Wed 12th Jul
      Stanningley A              Menston A
 Cliff Brogie         28  Amrik Singh           31
-David Hudson             Gail Blue               
-Don Shaw             31  Simon Cowley          18
+dave hudson             Gail Blue               
+donald shaw             31  Simon Cowley          18
 Mabel Shaw               Peter Hammond           
 Derek Wilson         31  George Hanson         15
 Alison Woodfine          Reg Addey               
@@ -2985,8 +2985,8 @@ Alexander Waite          Derek Wilson
 Barry Clayton        31  Brian Fish            25
 Kelvin Grace             Andrew Robertson        
 Ernest Hugill        25  Cliff Brogie          31
-Amy Lawrence             David Hudson            
-Jordan Waite         31  Don Shaw              23
+Amy Lawrence             dave hudson            
+Jordan Waite         31  donald shaw              23
 David Robertshaw         Mabel Shaw              
        Aggregate:   118           Aggregate:  102
            Games:     3               Games:    1
@@ -3333,10 +3333,10 @@ Michael Wardle           Colin Hargreaves
       Division 2               Wed 2nd Aug
      Stanningley A             Tarnfield A
 Cliff Brogie         27  Terry Hasselby        31
-David Hudson             Barry Larkins           
+dave hudson             Barry Larkins           
 Alison Woodfine      20  Joey Broadbent        31
 Derek Wilson             Tom Broardbent          
-Don Shaw             31  Dennis Fowles         17
+donald shaw             31  Dennis Fowles         17
 Mabel Shaw               Linda Utley             
 Brian Fish           21  Alan Gribbins         31
 Andrew Robertson         Daniel Carter           
@@ -3556,10 +3556,10 @@ Daniel Carter            Alexander Waite
 
       Division 2               Wed 9th Aug
        Ilkley B               Stanningley A
-Andrew Breare        31  Don Shaw              17
+Andrew Breare        31  donald shaw              17
 Terry Almond             Mabel Shaw              
 David Emerson        31  Cliff Brogie           8
-Sue Emerson              David Hudson            
+Sue Emerson              dave hudson            
 Alan Strachan        31  Brian Fish            28
 Colin Spooner            Andrew Robertson        
 Bernie Connor        31  Alison Woodfine       23
@@ -3728,10 +3728,10 @@ Andrew Robertson     31  Walter Stockhill      18
 Brian Fish               David Gregory           
 Alison Woodfine      31  Josie Burdon          13
 Derek Wilson             Geoff Ashton            
-Don Shaw             31  Maureen Morris        19
+donald shaw             31  Maureen Morris        19
 Mabel Shaw               Barry Hogg              
 Cliff Brogie         10  Carol Robinson        31
-David Hudson             Len Robinson            
+dave hudson             Len Robinson            
        Aggregate:   103           Aggregate:   81
            Games:     3               Games:    1
           Points:    17              Points:    7

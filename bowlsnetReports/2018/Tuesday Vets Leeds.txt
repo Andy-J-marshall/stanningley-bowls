@@ -268,7 +268,7 @@ Keith Worrall         14  Graham Bluff         21
 Neil Schofield        16  Jack Roberts         21
 David Rawson          12  Mabel Shaw           21
 Clifford Pitts        12  Jim Moorin           21
-Frank Tempest         21  Don Shaw             14
+Frank Tempest         21  donald shaw             14
 Bob Bearpark          21  Ken Stockhill        16
 Dennis Wainwright     18  Brian Fish           21
 Harvey Lockwood       10  Stewart Watson       21
@@ -331,7 +331,7 @@ Terry Blakeley        21  Tony Morris          16
                                Tue 17th Apr
     Stanningley Park            New Armley
 Jim Moorin            21  David Johnson         3
-Don Shaw              21  Barry Lee            12
+donald shaw              21  Barry Lee            12
 Ken Stockhill         21  Doreen Hogg           7
 Brian Fish            21  Marion Worrall       12
 Mabel Shaw            21  Keith Worrall        12
@@ -400,7 +400,7 @@ Brian Fish            21  Bill Mewes           10
 Mabel Shaw             9  Eric Massey          21
 Jack Roberts          18  Paul Lawson          21
 Duncan McPhail        21  Tony Boyes            9
-Don Shaw              18  Jim Jordan           21
+donald shaw              18  Jim Jordan           21
 Stewart Watson        21  Margaret Higgins     20
 Ken Stockhill         21  Mike Sherman          7
         Aggregate:   148         Aggregate:   130
@@ -488,7 +488,7 @@ Mike Sherman          18  Walter Stockhill     21
       Holbeck Moor           Stanningley Park
 Pat Parker            16  Mabel Shaw           21
 Carl Mahon            21  Ken Stockhill        10
-Hilary Campbell       21  Don Shaw             13
+Hilary Campbell       21  donald shaw             13
 Frank Armitage        18  Jim Moorin           21
 Allan Nicholson       14  Jack Roberts         21
 Jeff Warburton        20  Duncan McPhail       21
@@ -526,7 +526,7 @@ Keith Worrall         21  Gerry Horgan         12
                                 Tue 8th May
     Stanningley Park             Cranmore
 Ken Stockhill         21  Albert Beggs          6
-Don Shaw              21  Ray Watson            7
+donald shaw              21  Ray Watson            7
 Stewart Watson        21  Harry Gillett         5
 Derek Wilson          21  Phillip Marshall      8
 Mabel Shaw            21  Ted Mounteney         5
@@ -582,7 +582,7 @@ Mary Wilson            4  Jim Moorin           21
 John Carter           19  Brian Fish           21
 Lillian Pickles       21  Mabel Shaw           17
 Granville Stoyles      9  Duncan McPhail       21
-Cedric Ash            13  Don Shaw             21
+Cedric Ash            13  donald shaw             21
 Margaret McPhail       9  Ken Stockhill        21
 Terry Blakeley        10  Stewart Watson       21
         Aggregate:   101         Aggregate:   164
@@ -647,7 +647,7 @@ Jack Roberts          21  Gerry Horgan         16
 Derek Wilson          21  Brenda Chaffer       14
 Mabel Shaw            21  Eileen Coldrey        7
 Ken Stockhill         21  Keith Corp            9
-Don Shaw              21  Joan Coop             8
+donald shaw              21  Joan Coop             8
 Brian Fish             6  Brian Dowling        21
 Duncan McPhail        21  Aubrey Coldrey        7
         Aggregate:   153         Aggregate:    89
@@ -748,7 +748,7 @@ David Lyons           21  Doreen Hogg           6
        Barwick BC            Stanningley Park
 Jeff Binns            12  Jack Roberts         21
 Pam Binns             17  Brian Fish           21
-Sue Wilkinson         15  Don Shaw             21
+Sue Wilkinson         15  donald shaw             21
 David Wilkinson       12  Derek Wilson         21
 Jack Finister         21  Mabel Shaw           19
 David Wright          21  Ken Walker           20
@@ -791,7 +791,7 @@ Aubrey Coldrey        10  Jack Roberts         21
 Brenda Chaffer        21  Jim Moorin           16
 Paul Whitehead        10  Mabel Shaw           21
 Joan Coop              8  Ken Stockhill        21
-Keith Corp             5  Don Shaw             21
+Keith Corp             5  donald shaw             21
 Colin Pontefract       7  Stewart Watson       21
 Eileen Coldrey         6  Duncan McPhail       21
         Aggregate:    86         Aggregate:   163
@@ -828,7 +828,7 @@ Derek Wilson          12  Mario Biancardo      21
 Duncan McPhail        21  June Crosland         8
 Mabel Shaw            10  Shirley Biancardo    21
 Jim Moorin            21  Colin Davison         7
-Don Shaw               7  Ian Tindal           21
+donald shaw               7  Ian Tindal           21
 Stewart Watson        21  Graham Hey           15
 Brian Fish            21  David Lyons          13
 Jack Roberts          21  Jean Long            18
@@ -930,7 +930,7 @@ Jack Finister         17  Len Robinson         21
    West Royd Park 'A'        Stanningley Park
 David Beardsworth     21  Jack Roberts          7
 Dave Norris           21  Ken Stockhill        14
-Geoff Lacey           21  Don Shaw             16
+Geoff Lacey           21  donald shaw             16
 John Hainsworth       12  Brian Fish           21
 Christine Robson      12  Mabel Shaw           21
 Bill Robson            5  Duncan McPhail       21
@@ -1022,7 +1022,7 @@ Barry Baldwin          4  Len Robinson         21
 Jack Roberts          21  John Ackroyd          5
 Ken Stockhill         21  Patricia Cooper      16
 Derek Wilson          21  Dougie Cooper         9
-Don Shaw              15  Harvey Lockwood      21
+donald shaw              15  Harvey Lockwood      21
 Mabel Shaw            21  Frank Tempest        19
 Brian Fish            19  Dennis Wainwright    21
 Stewart Watson        21  Bob Bearpark         10
@@ -1084,7 +1084,7 @@ Harvey Lockwood       21  Cedric Ash            6
 
                                 Tue 3rd Jul
        New Armley            Stanningley Park
-Carol Robinson        21  Don Shaw             18
+Carol Robinson        21  donald shaw             18
 David Johnson          5  Ken Stockhill        21
 Marion Worrall        19  Jim Moorin           21
 Barry Lee             19  Mabel Shaw           21
@@ -1150,7 +1150,7 @@ Steve Milton          21  Cedric Briggs        14
                                Tue 10th Jul
      Harehills Park          Stanningley Park
 Margaret West         21  Leslie Leak          13
-Paddy Glover          14  Don Shaw             21
+Paddy Glover          14  donald shaw             21
 Paul Lawson           21  Brian Fish            7
 Bill Mewes            21  Jack Roberts         19
 Mike Sherman          21  Mabel Shaw            8
@@ -1242,7 +1242,7 @@ Cedric Briggs         19  Tony Boyes           21
     Stanningley Park           Holbeck Moor
 Jim Moorin            21  Hilary Campbell      12
 Jack Roberts          21  Pat Parker            9
-Don Shaw              21  Graham Dunwell        7
+donald shaw              21  Graham Dunwell        7
 Ken Stockhill         21  Allan Nicholson      14
 Mabel Shaw            21  George Ellener       12
 Brian Fish            13  Jeff Warburton       21
@@ -1269,7 +1269,7 @@ David Beardsworth     21  Brian Dowling        12
       Holbeck Moor           Stanningley Park
 Pat Parker             7  Jack Roberts         21
 George Ellener        16  Mabel Shaw           21
-Frank Armitage        21  Don Shaw             13
+Frank Armitage        21  donald shaw             13
 Allan Nicholson       13  Jim Moorin           21
 Hilary Campbell       13  Stewart Watson       21
 Jeff Warburton        21  Duncan McPhail       16
@@ -1331,7 +1331,7 @@ Brian Dowling         21  Barry Lee             7
 
                                Tue 31st Jul
         Cranmore             Stanningley Park
-Graham Bluff          20  Don Shaw             21
+Graham Bluff          20  donald shaw             21
 Albert Beggs          21  Mabel Shaw           11
 Harry Gillett         21  Ken Stockhill        15
 Colin Smith           19  Derek Wilson         21
@@ -1385,7 +1385,7 @@ Lillian Pickles       10  Norman Shaw          21
     Stanningley Park          Western Flatts
 Jack Roberts          21  Steve Caley          18
 Leslie Leak           21  Lillian Pickles      10
-Don Shaw              21  John Carter          18
+donald shaw              21  John Carter          18
 Duncan McPhail        21  Keith Hunter          8
 Mabel Shaw            21  Keith Spruce         11
 Ken Stockhill         21  Cedric Ash           14
@@ -1451,7 +1451,7 @@ Jeff Warburton        21  Gerry Horgan         20
 Gerry Horgan           8  Ken Walker           21
 Aubrey Coldrey        16  Jack Roberts         21
 Joan Coop             18  Brian Fish           21
-Brenda Chaffer        21  Don Shaw             19
+Brenda Chaffer        21  donald shaw             19
 Eileen Coldrey        14  Mabel Shaw           21
 Keith Corp             4  Stewart Watson       21
 Colin Pontefract      15  Ken Stockhill        21
@@ -1514,7 +1514,7 @@ Kevin Smales          21  David Beardsworth    10
        Clegg Cup               Tue 21st Aug
       Semi Finals             On Holbeck Moor
     Stanningley Park          Harehills Park
-Don Shaw              21  Bill Mewes            6
+donald shaw              21  Bill Mewes            6
 Jim Moorin            21  Eric Massey          16
 Mabel Shaw            14  Irene Cavavagh       21
 Jack Roberts           5  Paul Lawson          21
@@ -1579,7 +1579,7 @@ Len Robinson          21  Stuart Tennant       15
                                Tue 28th Aug
     Stanningley Park            Barwick BC
 Jack Roberts           9  Jane Boyd            21
-Don Shaw              11  David Wilkinson      21
+donald shaw              11  David Wilkinson      21
 Ken Stockhill         11  Chris Boyd           21
 Derek Wilson          21  Ken Maxim            17
 Mabel Shaw            15  Jack Finister        21
@@ -1619,7 +1619,7 @@ Terry Blakeley        12  Keith Worrall        21
   Horsforth Woodside.        Stanningley Park
 Kath Bywell           10  Mabel Shaw           21
 David Lyons           21  Jack Roberts         11
-Stuart Tennant        21  Don Shaw             20
+Stuart Tennant        21  donald shaw             20
 Shirley Biancardo     17  Jim Moorin           21
 Ian Tindal            21  Ken Stockhill        11
 Graham Hey             7  Duncan McPhail       21
@@ -1736,7 +1736,7 @@ Len Robinson          21  Sue Wilkinson         9
     Stanningley Park        West Royd Park 'A'
 Ken Stockhill         21  Colin Whitley        17
 Jack Roberts          15  Norman Shaw          21
-Don Shaw              11  Christine Robson     21
+donald shaw              11  Christine Robson     21
 Mabel Shaw            14  Ken Lee              21
 Jim Moorin            14  John Hainsworth      21
 Stewart Watson        21  Bill Robson           3

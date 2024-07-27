@@ -730,7 +730,7 @@ Howard Gardiner 'A' 19  Brian Hodgson         21
 
       Division 2              Mon 10th May
       Guiseley B             Stanningley A
-Lynn Ogden          21  David Hudson          20
+Lynn Ogden          21  dave hudson          20
 Roger Waite         21  Barry Palmer           8
 Carolyn Matthewman  21  Derek Wilson           8
 Andy Baxter         19  James Moorin 'A'      21
@@ -1019,7 +1019,7 @@ Ben Ullock 'A'      21  David Leeming         19
       Division 2              Mon 17th May
     Stanningley A             Holt Park A
 James Moorin 'A'    13  Ernest Johnson        21
-David Hudson        14  John Gilroy           21
+dave hudson        14  John Gilroy           21
 Bernard Miller      17  John Patrick 'A'      21
 Alison Woodfine     21  Dave Hurd              7
 Jack Bowes 'A'      21  Tony Watson 'A'       14
@@ -1306,7 +1306,7 @@ Ken Lee             21  Nigel Russell 'A'      9
 
       Division 2              Mon 24th May
      Eccleshill A            Stanningley A
-Ken Wilson          21  David Hudson          19
+Ken Wilson          21  dave hudson          19
 Derek Relton        21  Cliff Brogie          12
 Peter Jefferson     21  James Moorin 'A'      16
 Allen Bottomley     21  Alison Woodfine       13
@@ -1467,7 +1467,7 @@ Ben Ullock 'A'      21  Keith Hall            11
       Division 2              Mon 31st May
     Stanningley A           Wharfemeadows A
 James Moorin 'A'    21  John Harrison         20
-David Hudson        21  Gill Godden           20
+dave hudson        21  Gill Godden           20
 Bernard Miller      16  Raymond Smith         21
 Alison Woodfine     21  John Parker 'A'        6
 Andrew Waller       20  Mark Silvester        21
@@ -1728,7 +1728,7 @@ Rory Bligh          21  Cliff Brogie           9
 Roger French 'A'    14  Ben Falkingham        21
 Brian Hodgson        9  Paul Bowes 'A'        21
 Steve Spurr         21  Craig Clarkson         8
-Clifford Wheatley   21  David Hudson          11
+Clifford Wheatley   21  dave hudson          11
 Margaret Whitaker   20  Alison Woodfine       21
 Derek Whitaker 'A'  21  James Moorin 'A'      12
 Colin Whitley        4  Jack Bowes 'A'        21
@@ -1947,7 +1947,7 @@ Susan Knowles       14  Dave Upton            21
       Division 2              Mon 14th Jun
     Stanningley A             Grove Hill A
 Cliff Brogie        21  Mike Taylor           13
-David Hudson         7  David Samuel 'A'      21
+dave hudson         7  David Samuel 'A'      21
 Alison Woodfine     21  Charles Holden        12
 Barry Palmer        15  Royston Lewis         21
 Andrew Waller       21  Tony Farrar           15
@@ -2348,7 +2348,7 @@ Ian Thomson         21  Linda Smith           13
     Stanningley A              Rufford B
 Ben Falkingham      21  Christopher Sims      16
 Bernard Miller      12  Debbie Kirkbright     21
-David Hudson         9  Val Grace             21
+dave hudson         9  Val Grace             21
 Alison Woodfine     15  John Fletcher         21
 Steve Gardner       21  Tim Bennett           13
 Barry Palmer         7  Brian Teale           21
@@ -2427,7 +2427,7 @@ Robbie Ellis        21  Neil Nicholson 'A'    16
       Division 2              Mon 28th Jun
     Stanningley A               Ilkley B
 Jack Bowes 'A'      21  Hedley Chapman         3
-David Hudson         7  Allan Hughes          21
+dave hudson         7  Allan Hughes          21
 Alison Woodfine     15  Deborah Swann         21
 Bernard Miller      21  Bernard Connor        12
 Paul Bowes 'A'      21  Clive Swan             9
@@ -2643,7 +2643,7 @@ Michael Mitchell    10  Ben Falkingham        21
 Allan Caine         21  Steve Gardner         13
 Donald Jones        21  Andrew Waller         20
 Pete Hepworth       21  Cliff Brogie          18
-Guy Barrie          21  David Hudson           7
+Guy Barrie          21  dave hudson           7
       Aggregate:   168          Aggregate:   172
           Games:     5              Games:     5
          Points:    14             Points:    16
@@ -2865,7 +2865,7 @@ Andrew Waller       21  Lynn Ogden             2
 Steve Gardner       21  Dave Whelan            3
 James Moorin 'A'     9  Peter Storey          21
 Alison Woodfine      5  Roger Waite           21
-David Hudson         0  Andrew Durkin         21
+dave hudson         0  Andrew Durkin         21
 Cliff Brogie         7  Dennis Henderson      21
 Craig Clarkson       0  Colin Matthewman      21
       Aggregate:   126          Aggregate:   142
@@ -3054,7 +3054,7 @@ John Gilroy         18  James Moorin 'A'      21
 John Patrick 'A'    21  Bernard Miller        10
 Carol Matthews      21  Ben Falkingham        17
 Ernest Johnson      21  Alison Woodfine       11
-Neil Matthews       21  David Hudson          16
+Neil Matthews       21  dave hudson          16
 Sylvia Petty 'A'    20  Steve Gardner         21
 Dave Hurd           21  Craig Clarkson        17
 David Lyons         16  Andrew Waller         21
@@ -3326,7 +3326,7 @@ James Moorin 'A'    21  John Griffin           6
 Alison Woodfine     21  Andy Hill             11
 Paul Bowes 'A'      21  Roger Binks 'A'        4
 Barry Palmer        12  Gary Nellist 'A'      21
-David Hudson        21  Peter Howroyd         15
+dave hudson        21  Peter Howroyd         15
 Steve Gardner       21  Allen Bottomley        9
 Bernard Miller       4  Ian Matthews          21
 Craig Clarkson      16  Peter Jefferson       21
@@ -3486,7 +3486,7 @@ Diane Farrar        21  Barry Palmer           7
 Alan Broadwell       9  James Moorin 'A'      21
 Pauline Barnett      7  Jack Bowes 'A'        21
 Howard Platt 'A'    21  Cliff Brogie          12
-Katherine Lodge     21  David Hudson          13
+Katherine Lodge     21  dave hudson          13
 John Parker 'A'     12  Alison Woodfine       21
 Mark Silvester      14  Steve Gardner         21
 John Harrison       16  Craig Clarkson        21
@@ -3726,7 +3726,7 @@ James Moorin 'A'    21  Pamela Barlow         13
 Alison Woodfine     21  Anne Newlove          13
 Bernard Miller      12  Derek Whitaker 'A'    21
 Ben Falkingham      21  Margaret Wood          8
-David Hudson        21  Steve Spurr           18
+dave hudson        21  Steve Spurr           18
 Steve Gardner       21  Roy Barlow            10
 Craig Clarkson      13  Terry Lilley          21
 Andrew Waller       21  Clifford Wheatley      7
@@ -3915,7 +3915,7 @@ Stewart Watson      18  Brenda Cromwell       21
       Division 2              Mon 16th Aug
      Grove Hill A            Stanningley A
 David Samuel 'A'    21  Alison Woodfine       14
-Kathryn Jones       21  David Hudson          10
+Kathryn Jones       21  dave hudson          10
 Alan Byers          15  Paul Bowes 'A'        21
 David Locke 'A'     19  Steve Gardner         21
 Mike Taylor         10  Andrew Waller         21
@@ -4399,7 +4399,7 @@ Hedley Chapman      21  Paul Bowes 'A'        20
 Bernard Connor      21  Steve Gardner         12
 Andrew Breare       21  James Moorin 'A'      19
 Allan Hughes        21  Alison Woodfine       11
-Terry Almond        21  David Hudson          14
+Terry Almond        21  dave hudson          14
 Lee Stevens         21  Bernard Miller        17
 Andrew Cook         20  Andrew Waller         21
 Steve Birch         21  Craig Clarkson        14

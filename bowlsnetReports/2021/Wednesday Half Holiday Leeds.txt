@@ -492,7 +492,7 @@ John Illingworth       7  Malcolm Hallas     21
 
        Division 3              Wed 9th Jun
      Harehills Park            Burley Park
-Laura Love            21  David Hudson        7
+Laura Love            21  dave hudson        7
 Phil Hatch            21  Michael Howsham     7
 Maurice Holleran       8  Clifford Brogie    21
 Bernard Taylor        11  Roy Hardwick       21
@@ -629,7 +629,7 @@ Michael Howsham       17  Joan Keen          21
 Barry Palmer          21  Keith Anderson      9
 David Hurd            21  Cliff Pitts         7
 Andrew Waller         21  Marie Tate          9
-David Hudson          21  Doreen Hogg        13
+dave hudson          21  Doreen Hogg        13
         Aggregate:   122        Aggregate:   63
            Points:    28           Points:   10
 
@@ -778,7 +778,7 @@ Roy Wainman            6  Phil Hatch         21
 
        Division 3             Wed 23rd Jun
         Methley                Burley Park
-Joan Tooley           18  David Hudson       21
+Joan Tooley           18  dave hudson       21
 Maggie Boyes          12  Barry Palmer       21
 Christine Wheatley    21  Michael Howsham    18
 Roger Boyes           21  Clifford Brogie    11
@@ -893,7 +893,7 @@ Barry Palmer          21  Christine Glynn     9
 Malcolm Woodcock      21  Derek Crisp         6
 Andrew Waller         16  Gordon Monk        21
 Roy Hardwick          21  Malcolm Cameron    16
-David Hudson          21  Bill Mewse         13
+dave hudson          21  Bill Mewse         13
         Aggregate:   121        Aggregate:   78
            Points:    28           Points:   14
 
@@ -1022,7 +1022,7 @@ Tony Ward             13  Fraser Douglas     21
       Bramley Park             Burley Park
 Keith Worrall         14  Andrew Waller      21
 Peter Richie          21  Roy Hardwick       14
-Eric Ralph            20  David Hudson       21
+Eric Ralph            20  dave hudson       21
 Deborah Sandles       21  Michael Howsham    18
 Keith Bradley         12  Barry Palmer       21
 John Illingworth       5  David Hurd         21
@@ -1153,7 +1153,7 @@ Gary Mahoney          21  Kevin Smales       17
        Division 3             Wed 14th Jul
       Burley Park             Potternewton
 Andrew Waller         21  Tony Boyes         16
-David Hudson          21  Valerie Bush       12
+dave hudson          21  Valerie Bush       12
 David Hurd            21  Frank Powell        7
 Michael Howsham       21  David Curland      20
 Roy Hardwick          13  Dennis Cole        21
@@ -1428,7 +1428,7 @@ Christine Glynn       21  Jeff Allman        16
        Division 3             Wed 28th Jul
       Burley Park            Harehills Park
 Michael Howsham        8  Jim Jordan         21
-David Hudson          21  Graham Hodder      10
+dave hudson          21  Graham Hodder      10
 Barry Palmer          17  Laura Love         21
 Andrew Waller         14  Phil Hatch         21
 Clifford Brogie       21  Paddy Glover        7
@@ -1559,7 +1559,7 @@ Harvey Lockwood       21  Neville Salmon      5
 
        Division 3              Wed 4th Aug
      New Wortley A             Burley Park
-Joe Aylesbury         13  David Hudson       21
+Joe Aylesbury         13  dave hudson       21
 Doreen Hogg           21  Barry Palmer       20
 Joan Keen             14  Andrew Waller      21
 Stephen Morley        21  David Hurd         18
@@ -1815,7 +1815,7 @@ Kevin Smales          21  Fraser Douglas     17
 Malcolm Cameron       21  Andrew Waller       5
 Martin Burling        21  Clifford Brogie    14
 Christine Glynn       21  John Gilroy        12
-Bill Mewse            21  David Hudson       11
+Bill Mewse            21  dave hudson       11
 Peter Burling         21  Michael Howsham    20
 Malcolm Hallas        21  Clifford Brogie    18
         Aggregate:   126        Aggregate:   80
@@ -1944,7 +1944,7 @@ Madge Cass            11  Paul Phillipson    21
 
        Division 3             Wed 25th Aug
       Burley Park             Bramley Park
-David Hudson          21  Jeff Allman         5
+dave hudson          21  Jeff Allman         5
 Michael Howsham       21  Peter Richie       10
 Andrew Waller         18  Eric Ralph         21
 Barry Palmer          21  Shirley Allman      8
@@ -2078,7 +2078,7 @@ Harvey Lockwood       17  Paul Phillipson    21
       Potternewton             Burley Park
 Margaret West         21  Barry Palmer        3
 Alan Smith            21  Andrew Waller      18
-Tony Boyes            21  David Hudson       11
+Tony Boyes            21  dave hudson       11
 Frank Powell          13  Michael Howsham    21
 Ian McMillan          21  Roy Hardwick       12
 Valerie Bush           7  John Gilroy        21

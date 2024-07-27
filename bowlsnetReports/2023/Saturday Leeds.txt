@@ -445,7 +445,7 @@ Paul Hatch          21  Derek McCormack     20
 
       Division 1             Sat 8th Apr
    Scatcherd Park A          Pudsey Park
-Billy Ward          21  David Hudson        10
+Billy Ward          21  dave hudson        10
 Martin Huxley       21  Brian Stevens       20
 Ian Dufton          21  Frank Lindsay       16
 Raymond Ball        21  Stephen Morris      11
@@ -542,7 +542,7 @@ Barbara Moss         3  Andrew Marshall     21
 Frank Lindsay       21  Alison Woodfine     16
 Brian Stevens       10  Mario Biancardo     21
 Derek Howell         3  Steve Gardner       21
-David Hudson         1  Andy Waller         21
+dave hudson         1  Andy Waller         21
 Cliff Brogie        21  Paul Bowes          12
       Aggregate:    81        Aggregate:   149
          Points:    17           Points:    33
@@ -616,7 +616,7 @@ Geoff Firth         21  Margaret McPhail     8
        Meanwood              Pudsey Park
 Jeff Blackburn      21  Cliff Brogie        13
 Barbara Gray        13  Brian Stevens       21
-Oliver Devaney      21  David Hudson        15
+Oliver Devaney      21  dave hudson        15
 Julie Keightley     18  Frank Lindsay       21
 Jimmy Wilson        20  David Turner        21
 David L Miller      21  Barbara Nellis      20
@@ -669,7 +669,7 @@ Steve Briggs        21  Diane Hales          8
 Mario Biancardo     21  Stephen Morley      14
 Paul Bowes          21  Danny Dawson        18
 Joey Broadbent      21  Thomas Cuddy         6
-Shirley Biancardo   21  David Hudson         4
+Shirley Biancardo   21  dave hudson         4
 Andrew Marshall     21  Doreen Hogg          1
 Andy Waller         21  Brian Marshall       5
 Steve Gardner       21  Iain Baker           5
@@ -1678,7 +1678,7 @@ Linda Gaunt          9  Michael Stott       21
      New Wortley          Stanningley Park A
 Gerry Wood           8  Andrew Marshall     21
 Angela Morley       17  Shirley Biancardo   21
-David Hudson        21  Malvin Miller       16
+dave hudson        21  Malvin Miller       16
 Stephen Morley      15  Steve Gardner       21
 Keith Sellars        4  Stuart Potter       21
 Keith Anderson      16  Alison Woodfine     21
@@ -1757,7 +1757,7 @@ Jeff Holt           21  George Ellener       6
 Mark Rastrick       21  Derek Howell         2
 David Brooke        21  Barbara Nellis       8
 Joe Adams           21  Dennis Walters      12
-Brenda Moscrop      21  David Hudson        13
+Brenda Moscrop      21  dave hudson        13
 Julie Cavalli       21  Carl Birkin         11
 Reece Pratt         17  Brian Stevens       21
 Derek McCormack     21  James Drury          3
@@ -1888,7 +1888,7 @@ Barbara Nellis      16  Richard Perry       21
 Frank Lindsay       21  Joanne Unwin        10
 Bill Pyett           3  Jason Farrar        21
 Dennis Walters      21  Jason Ream          16
-David Hudson        13  Rhys Hammill        21
+dave hudson        13  Rhys Hammill        21
 Carl Birkin         16  *A.N.Other*         21
 James Drury         11  Kian Hendry         21
 Brian Stevens       21  Andrew Dewhirst     16
@@ -1956,7 +1956,7 @@ Carl Birkin         11  Paul Bowes          21
 Brian Stevens        5  Steve Gardner       21
 Dennis Walters      21  Alison Woodfine     19
 Frank Lindsay        8  Shirley Biancardo   21
-David Hudson         5  Mario Biancardo     21
+dave hudson         5  Mario Biancardo     21
 Bill Pyett           9  Andy Waller         21
 Derek Howell        21  Stuart Potter       17
 James Drury         12  Andrew Marshall     21
@@ -1993,7 +1993,7 @@ Margaret McPhail    15  Jeff Allman         21
       Division 1             Sat 5th Aug
      Pudsey Park             New Wortley
 James Drury         16  Stephen Morley      21
-David Hudson        21  Iain Baker          20
+dave hudson        21  Iain Baker          20
 Bill Pyett          20  Angela Morley       21
 Dennis Walters       6  Steve Longley       21
 Barbara Nellis      15  Gerry Wood          21
@@ -2128,7 +2128,7 @@ Dougie Cooper       21  Brian Stevens       18
 Harvey Lockwood     17  James Drury         21
 Daphne Scott        14  Carl Birkin         21
 Linda Gaunt         21  Barbara Nellis      16
-Diane Hales         21  David Hudson        20
+Diane Hales         21  dave hudson        20
 Glenda Holmes       15  Bill Pyett          21
       Aggregate:   138        Aggregate:   159
          Points:    29           Points:    36
@@ -2232,7 +2232,7 @@ Derek Howell        20  Stephanie Wood      21
 James Drury          9  Peter Colley        21
 Barbara Nellis      17  David Abbott        21
 Cliff Brogie        11  Ian Wood            21
-David Hudson        14  Jason Potter        21
+dave hudson        14  Jason Potter        21
 Bill Pyett           2  Danny Towning       21
       Aggregate:   101        Aggregate:   165
          Points:    18           Points:    39
@@ -2348,7 +2348,7 @@ Brian Thompson      21  Barbara Nellis      11
 Helen Milton        11  David Turner        21
 Hilary Campbell     21  James Drury         12
 George Ellener      21  Frank Lindsay        9
-Steve Milton        21  David Hudson         9
+Steve Milton        21  dave hudson         9
 John Binns          21  Bill Pyett           7
 Geoff Warburton     21  Carl Birkin         13
       Aggregate:   158        Aggregate:    96
@@ -2426,7 +2426,7 @@ David Turner        21  Linda Gaunt         13
 Derek Howell         9  Glenda Holmes       21
 Dennis Walters      21  Dougie Cooper       11
 Barbara Nellis       8  Sandra Deegan       21
-David Hudson         9  Harvey Lockwood     21
+dave hudson         9  Harvey Lockwood     21
 Cliff Brogie        21  Daphne Scott        12
 Carl Birkin         21  Diane Hales         15
       Aggregate:   131        Aggregate:   127

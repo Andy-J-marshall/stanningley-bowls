@@ -1007,8 +1007,8 @@ Jim Fell              21  Malcolm Milner          7
 David Parker          21  Ron Brown 'A'           6
 Terry Powell          21  Keith Hogg             10
 Derek Wilson          21  George McLaren          4
-David Hudson           7  Stanley Southern       21
-Don Shaw              12  Philip Howard          21
+dave hudson           7  Stanley Southern       21
+donald shaw              12  Philip Howard          21
 Cliff Brogie          16  Terry Hasselby         21
 Jack Roberts 'A'      21  Alan Gribbins 'A'      18
 James Moorin 'A'      21  Daniel Carter 'A'      17
@@ -1279,8 +1279,8 @@ Walter Stockhill      21  Andrew Shaw 'A'        17
 Kathryn Thomas        21  David Parker           13
 Mike Whitelaw         13  Terry Powell           21
 Ron Lowe               5  Derek Wilson           21
-Dorothy Jackson       14  David Hudson           21
-Margaret Orchard      18  Don Shaw               21
+Dorothy Jackson       14  dave hudson           21
+Margaret Orchard      18  donald shaw               21
 Alan Bishop           11  Cliff Brogie           21
 Malcolm Wrigglesworth 16  Jack Roberts 'A'       21
 Malcolm Handscombe    15  James Moorin 'A'       21
@@ -1696,10 +1696,10 @@ Tim Bennett           21  Lynette Hall            8
        Division 3               Mon 25th Apr
      Stanningley A                Farsley B
 Derek Wilson          21  Peter Mylan             7
-Don Shaw              18  Richard Tatum          21
+donald shaw              18  Richard Tatum          21
 David Parker          21  Nick Beswick            8
 Terry Powell          21  Ian Coulthard          16
-David Hudson          21  David Lawrence          4
+dave hudson          21  David Lawrence          4
 Jack Roberts 'A'      21  John Birtles           19
 Cliff Brogie          21  Nigel Peel              7
 James Moorin 'A'      13  Peter Scott            21
@@ -2000,10 +2000,10 @@ Malcolm Handscombe    20  Barry Slater           21
        Division 3                Mon 2nd May
       Hall Park B               Stanningley A
 Sandra Griffiths       8  Derek Wilson           21
-Richard Sunley        16  Don Shaw               21
+Richard Sunley        16  donald shaw               21
 Tony Webbe            21  David Parker           16
 Brian Falcon          21  Terry Powell           10
-Christine Dobson      12  David Hudson           21
+Christine Dobson      12  dave hudson           21
 John Hudson            5  Jack Roberts 'A'       21
 John Parker           16  Cliff Brogie           21
 Stuart Davies         10  James Moorin 'A'       21
@@ -2607,11 +2607,11 @@ Mike Cox              21  Malcolm Milner          9
 
        Division 3               Mon 16th May
         Rawdon B                Stanningley A
-Marlene Waite-Pullan  16  Don Shaw               21
+Marlene Waite-Pullan  16  donald shaw               21
 Keith Sansom          21  Derek Wilson            8
 Lindsay Rosendale     21  David Parker           13
 John Collins          21  Ken Walker             13
-Dianne Teale          21  David Hudson            9
+Dianne Teale          21  dave hudson            9
 Brian Minogue         21  Jack Roberts 'A'        9
 Terry Waite-Pullan    21  Terry Powell           19
 Jim Fell              21  Mabel Shaw 'A'         20
@@ -2927,13 +2927,13 @@ Terry Waite-Pullan    21  William Schuler         7
 
        Division 3               Mon 23rd May
      Stanningley A               Yeadon Park
-Don Shaw              21  Ken Close              13
+donald shaw              21  Ken Close              13
 Derek Wilson           9  Angela Burnham         21
 David Parker          19  Michael Burnett        21
 Terry Powell          17  Maureen Slater         21
 Jack Roberts 'A'      21  Michael Stocks         12
 Cliff Brogie          21  Linda Utley             8
-David Hudson          11  Terry Doyle            21
+dave hudson          11  Terry Doyle            21
 James Moorin 'A'      21  Frank Baker            16
 Steve Gardner         21  David Baldwin           7
 Paul Bowes 'A'        21  Stuart Norris          10
@@ -3205,7 +3205,7 @@ Brian Hall            21  Derek Wilson           11
 Jean Long 'A'         21  Terry Powell           11
 Colin Mann            13  Cliff Brogie           21
 Audrey McGregor       17  Jack Roberts 'A'       21
-Ann Ryley 'A'         21  Don Shaw               20
+Ann Ryley 'A'         21  donald shaw               20
 William Schuler       15  James Moorin 'A'       21
 Peter Haxby 'A'       13  Steve Gardner          21
 Jack Beck 'A'         11  Paul Bowes 'A'         21
@@ -3551,11 +3551,11 @@ Keith Sansom          19  Donald Marshall        21
 
        Division 3                Mon 6th Jun
      Stanningley A               Holt Park A
-Don Shaw              21  Brenda Evans            6
+donald shaw              21  Brenda Evans            6
 David Parker          18  Keith Bennett          21
 Derek Wilson          21  Geoff Collins           4
 Terry Powell          13  Chris Power            21
-David Hudson          20  Derek Hewitt           21
+dave hudson          20  Derek Hewitt           21
 Cliff Brogie          10  Ernest Johnson 'A'     21
 Jack Roberts 'A'      21  Graham Walker          11
 James Moorin 'A'      21  John Patrick           14
@@ -3951,10 +3951,10 @@ Brian Shepherd        21  John Griffin           19
 
        Division 3               Mon 20th Jun
       Greengates B              Stanningley A
-Malcolm Grainger       8  Don Shaw               21
+Malcolm Grainger       8  donald shaw               21
 Chris James Burnett   21  Derek Wilson           12
 Colin Richardson      16  Cliff Brogie           21
-Martin Hayton         21  David Hudson           14
+Martin Hayton         21  dave hudson           14
 Chris Burnett          7  Mabel Shaw 'A'         21
 Wendy Ward            10  David Parker           21
 Bryn Jones            21  Jack Roberts 'A'        3
@@ -4329,8 +4329,8 @@ Malcolm Milner        21  Keith Sansom           18
       Tarnfield A               Stanningley A
 Joey Broadbent        21  Derek Wilson           11
 Gareth Robinson 'A'   21  Cliff Brogie           15
-Stanley Southern       3  Don Shaw               21
-Tom Broadbent         21  David Hudson           17
+Stanley Southern       3  donald shaw               21
+Tom Broadbent         21  dave hudson           17
 Daniel Carter 'A'     21  David Parker           10
 Alan Gribbins 'A'     21  Terry Powell           17
 George McLaren        21  Jack Roberts 'A'       12
@@ -4616,10 +4616,10 @@ Andrew Shaw 'A'       21  Gary Dixon             18
        Division 3                Mon 4th Jul
      Stanningley A              Greenbottom B
 Cliff Brogie          21  Linda Summers           5
-Don Shaw              21  Margaret Orchard       16
+donald shaw              21  Margaret Orchard       16
 Terry Powell          17  Mike Whitelaw          21
 David Parker          21  Kathryn Thomas          0
-David Hudson          17  Dorothy Jackson        21
+dave hudson          17  Dorothy Jackson        21
 Jack Roberts 'A'      11  Alan Bishop            21
 Mabel Shaw 'A'        21  Steve Crossley         15
 James Moorin 'A'      21  Tom Fane                9
@@ -4986,12 +4986,12 @@ Malcolm Handscombe     7  Tim Bennett            21
 Margaret Gardner      21  Derek Wilson           14
 David Lawrence        13  Mabel Shaw 'A'         21
 Nick Beswick          21  David Parker           18
-Peter Mylan           21  David Hudson            9
+Peter Mylan           21  dave hudson            9
 Richard Whitaker      21  Terry Powell            8
 Nigel Peel            21  Cliff Brogie           12
 Ian Swinfield         21  Jack Roberts 'A'       10
 Geoff Lacey           16  James Moorin 'A'       21
-Richard Tatum         21  Don Shaw               10
+Richard Tatum         21  donald shaw               10
 Peter Scott           21  Paul Bowes 'A'         16
         Aggregate:   197           Aggregate:   139
             Games:     8               Games:     2
@@ -5355,12 +5355,12 @@ Harry Utley           19  Tom Fane               21
 
        Division 3               Mon 18th Jul
      Stanningley A               Hall Park B
-Don Shaw              21  Sandra Griffiths       19
+donald shaw              21  Sandra Griffiths       19
 Terry Powell          21  Brian Bowman            8
 Derek Wilson          21  Jaci Bowman             6
 David Parker          21  John Parker             6
 Cliff Brogie          21  George Garside         17
-David Hudson          21  Peter Hargreaves       19
+dave hudson          21  Peter Hargreaves       19
 Jack Roberts 'A'      16  Tony Wood              21
 James Moorin 'A'      21  Jim Dobson              8
 Steve Gardner         21  Richard Sunley          9
@@ -5693,13 +5693,13 @@ Richard Sunley         6  Ernest Johnson 'A'     21
      Stanningley A                Rawdon B
 David Parker          21  Brian Minogue          14
 Derek Wilson          21  Marlene Waite-Pullan    9
-David Hudson           9  Arthur Roundhill       21
+dave hudson           9  Arthur Roundhill       21
 Terry Powell          21  Angela Bennett         15
 Cliff Brogie          15  Lindsay Rosendale      21
 Steve Gardner         21  Dianne Teale           16
 Jack Roberts 'A'      18  John Collins           21
 James Moorin 'A'      21  Terry Waite-Pullan     12
-Don Shaw               7  Tim Bennett            21
+donald shaw               7  Tim Bennett            21
 Paul Bowes 'A'        21  Jim Fell                9
         Aggregate:   175           Aggregate:   159
             Games:     6               Games:     4
@@ -6011,8 +6011,8 @@ William Schuler       21  Keith Sansom           17
 
        Division 3                Mon 1st Aug
       Yeadon Park               Stanningley A
-Pauline Ingleson      13  Don Shaw               21
-Ken Close             17  David Hudson           21
+Pauline Ingleson      13  donald shaw               21
+Ken Close             17  dave hudson           21
 Angela Burnham        21  Cliff Brogie           16
 Maureen Slater        21  Derek Wilson           18
 Linda Utley           21  David Parker            7
@@ -6317,8 +6317,8 @@ Harry Franklin        21  Tony Farrar            11
 
        Division 3                Mon 8th Aug
      Stanningley A              Greenbottom A
-Don Shaw              21  Colin Mann              7
-David Hudson          12  Lynne Malcolm          21
+donald shaw              21  Colin Mann              7
+dave hudson          12  Lynne Malcolm          21
 Cliff Brogie          20  Jean Long 'A'          21
 Derek Wilson          16  Audrey McGregor        21
 David Parker          10  Ann Ryley 'A'          21
@@ -6673,10 +6673,10 @@ Sylvia Petty 'A'      21  Mabel Shaw 'A'         11
 Geoff Collins         21  Ken Walker              6
 Brenda Evans          21  Derek Wilson           17
 Keith Bennett         12  David Parker           21
-Derek Hewitt          21  David Hudson           20
+Derek Hewitt          21  dave hudson           20
 Colin Chadwick        15  Cliff Brogie           21
 Mike Cox              21  Jack Roberts 'A'        7
-Anthony Watson 'A'    21  Don Shaw               14
+Anthony Watson 'A'    21  donald shaw               14
 Ernest Johnson 'A'    21  James Moorin 'A'       13
 Barry Underwood        7  Paul Bowes 'A'         21
         Aggregate:   181           Aggregate:   151
@@ -6974,11 +6974,11 @@ Peter Scott            9  William Schuler        21
        Division 3               Mon 22nd Aug
      Stanningley A              Greengates B
 Ken Walker            21  James Burnett           9
-Don Shaw              21  Chris Burnett           5
+donald shaw              21  Chris Burnett           5
 David Parker          21  Jeffrey Goodall         8
 Derek Wilson          16  Malcolm Grainger       21
 Terry Powell           9  Les Ward               21
-David Hudson          10  Tommy Powell           21
+dave hudson          10  Tommy Powell           21
 Mabel Shaw 'A'        12  Colin Richardson       21
 Steve Gardner         21  Donald Marshall         3
 Cliff Brogie          21  Wendy Ward             13

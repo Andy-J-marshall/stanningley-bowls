@@ -1771,7 +1771,7 @@ David Smalley 'A'       7  Steve Pickersgill      21
      Stanningley 'A'              Birkenshaw
 Marion Worrall         16  Anthony Hatherley      21
 Derek Wilson           21  George Hunter          13
-David Hudson           17  Ann Ramsbottom         21
+dave hudson           17  Ann Ramsbottom         21
 Colin Butterfield      21  Laurie Taylor          12
 Clifford Brogie         8  Paul Kitson            21
 Jack Roberts 'A'       21  Ian Northrop            9
@@ -2253,7 +2253,7 @@ Roy Burton             14  Clifford Brogie        21
 Keith McMurray         12  Marion Worrall         21
 Shirley Wood           21  Jack Roberts 'A'       20
 Audrey Gilderdale      21  Terry Powell            1
-Tom Sayer              21  David Hudson           17
+Tom Sayer              21  dave hudson           17
 Dianne Goodall         18  Mabel Shaw 'A'         21
 Alan Wright            17  Andy Robertson 'A'     21
 Keith Holdroyd         10  Keith Worrall 'A'      21
@@ -2836,7 +2836,7 @@ Janice Walton 'A'      21  Audrey Gilderdale       7
      Stanningley 'A'              Wibsey 'B'
 Jack Bowes             21  Michael Gill            7
 Andy Robertson 'A'     21  Douglas Maclean        11
-David Hudson           21  Roy Lee                11
+dave hudson           21  Roy Lee                11
 Marion Worrall         21  Rita Mackrill          18
 Clifford Brogie         6  Jackie Richards        21
 Jack Roberts 'A'       21  Raymond Leadbetter     14
@@ -4037,7 +4037,7 @@ Nick Crowther          18  Steve Pickersgill      21
 Terry Powell           21  Peter Harding          16
 Jack Bowes             21  Geoff Hodgson          10
 Marion Worrall         19  Angie Morris           21
-David Hudson           12  Tony Butterworth       21
+dave hudson           12  Tony Butterworth       21
 Keith Worrall 'A'      21  Brian Russell          19
 Jack Roberts 'A'       21  David Elliott           5
 Mabel Shaw 'A'         21  Lynn Shaw              15
@@ -4652,7 +4652,7 @@ Peter Simpson          16  Derek Relton           21
 Kate Stockdale         19  Clifford Brogie        21
 Andrew Baxter 'B'      21  Terry Powell           18
 David Arundale         12  Jack Bowes             21
-Barbara Firth          21  David Hudson           10
+Barbara Firth          21  dave hudson           10
 Roger Garnett           9  Mabel Shaw 'A'         21
 Lynne Ogden            15  Ken Walker             21
 Michael Dixon          21  Jack Roberts 'A'       20
@@ -5266,7 +5266,7 @@ Joyce Ellis            10  Ralph Sissons 'B'      21
      Stanningley 'A'              Tyersal 'A'
 Terry Powell           10  Gerry Smith            21
 Ken Walker             11  Wendy Shimbles 'A'     21
-David Hudson            5  Terry Wilsdon 'A'      21
+dave hudson            5  Terry Wilsdon 'A'      21
 Marion Worrall         14  Eddie Foster 'A'       21
 Jack Roberts 'A'       19  Cassidy Lindley        21
 Andy Robertson 'A'     17  Philip Wilsdon         21
@@ -5866,7 +5866,7 @@ Nathan Sowden          17  Dennis Thorpe 'A'      21
 Graham Foster          21  Marion Worrall         14
 Roger Binks            21  Andy Robertson 'A'     14
 Andrew Magoolagan      11  Ken Walker             21
-Keith Cooksey          21  David Hudson            7
+Keith Cooksey          21  dave hudson            7
 Ken Wilson             21  Clifford Brogie         1
 Donald Firth           21  Mabel Shaw 'A'         19
 Peter Howroyd           9  Jack Roberts 'A'       21
@@ -6366,7 +6366,7 @@ Alan Potter            21  George Gledhill        10
    Division 5 (Haigh)            Sat 27th Jun
      Stanningley 'A'             Oakenshaw 'A'
 Terry Powell            7  Derek Dillon           21
-David Hudson           17  John Priestley 'A'     21
+dave hudson           17  John Priestley 'A'     21
 Clifford Brogie        17  Victor Riley           21
 Marion Worrall         10  Marlene Hughes 'A'     21
 Ken Walker              9  Pat Priestley 'A'      21
@@ -7059,7 +7059,7 @@ Leslie Leak            21  Margaret Gardner        7
 Ken Walker             21  Peter Scott            11
 James Butters           6  Terry Watson           21
 Gordon Taylor          18  Peter Mylan            21
-David Hudson           21  Richard Whitaker       17
+dave hudson           21  Richard Whitaker       17
 Bernard Miller         17  Graham Petty           21
 Brian Barker            8  Stuart Brook           21
 Robin Miller           21  Nigel Peel              7
@@ -7479,7 +7479,7 @@ Adam Sandilands        14  Kath Icke 'A'          21
 Ken Walker             21  Elaine Binns           20
 Jack Roberts 'A'       21  Anne Watkinson 'A'     16
 Marion Worrall          2  Janice Walton 'A'      21
-David Hudson           14  Janet Inness           21
+dave hudson           14  Janet Inness           21
 Donald Shaw 'A'        21  Les Binns              18
 Terry Powell           21  Liz Ellis              20
 Mabel Shaw 'A'         21  Eddie Watkinson 'A'     9
@@ -8021,7 +8021,7 @@ Eddie Mordue           21  Mabel Shaw 'A'         19
 David Kent             21  Adam Sandilands         8
 Ian Northrop           21  Ken Walker             17
 Ann Ramsbottom         20  Andy Robertson 'A'     21
-Anthony Hatherley      21  David Hudson           16
+Anthony Hatherley      21  dave hudson           16
 Paul Kitson            21  Donald Shaw 'A'        17
          Aggregate:   209            Aggregate:  157
             Points:    25               Points:    5
@@ -8388,7 +8388,7 @@ Alan Potter            19  Paul Kitson            21
 
    Division 5 (Haigh)            Sat 25th Jul
      Stanningley 'A'               Peel 'B'
-David Hudson           13  Shirley Wood           21
+dave hudson           13  Shirley Wood           21
 Ken Walker             21  Michael Mathers        13
 Jack Roberts 'A'       21  Roy Burton              1
 Adam Sandilands        21  Stanley Craven         12
@@ -9050,7 +9050,7 @@ Raymond Leadbetter     21  Adam Sandilands        10
 Douglas Maclean        21  Clifford Brogie        10
 Malcolm Wilkinson      21  Ken Walker              9
 Norman Klenk           21  Mabel Shaw 'A'          8
-George Sykes           15  David Hudson           21
+George Sykes           15  dave hudson           21
 Bernard Cahill 'B'     19  Jack Roberts 'A'       21
 Elaine Thorpe          19  Andy Robertson 'A'     21
 Jackie Richards        21  Donald Shaw 'A'        13
@@ -10343,7 +10343,7 @@ Ben Stockdale          21  Brian Conway           11
        Pudsey 'C'               Stanningley 'A'
 Brian Russell          20  Ken Walker             21
 Richard Shaw           21  Adam Sandilands        13
-Sue Chadwick           21  David Hudson           10
+Sue Chadwick           21  dave hudson           10
 David Elliott          21  Clifford Brogie         8
 Angie Morris            9  Keith Worrall 'A'      21
 Peter Harding          15  Mabel Shaw 'A'         21
@@ -11014,7 +11014,7 @@ Marion Worrall         14  Graham Bolton 'B'      21
 Adam Sandilands         9  Andrew Baxter 'B'      21
 Ken Walker             18  Caroline Corbett       21
 Clifford Brogie        21  Lynne Ogden             7
-David Hudson           21  Jack Wiffen            10
+dave hudson           21  Jack Wiffen            10
 Jack Roberts 'A'       21  Roger Garnett          11
 Mabel Shaw 'A'         21  Michael Dixon           5
 Andy Robertson 'A'     21  John Stead              5
@@ -11658,7 +11658,7 @@ Eddie Foster 'A'       21  Adam Sandilands        17
 Terry Wilsdon 'A'      21  Ken Walker             18
 Oliver Mordue          12  Mabel Shaw 'A'         21
 Gerry Smith            21  Clifford Brogie         5
-Pam Lindley 'A'        21  David Hudson           10
+Pam Lindley 'A'        21  dave hudson           10
 Lynn Noonan            21  Keith Worrall 'A'      15
 Peter Simpson          20  Donald Shaw 'A'        21
          Aggregate:   200            Aggregate:  150
@@ -12282,7 +12282,7 @@ Wilf Murgatroyd        21  Michael Jagger         17
    Division 5 (Haigh)             Sat 5th Sep
      Stanningley 'A'            Eccleshill 'C'
 Ken Walker             21  Brian Conway           17
-David Hudson           17  Derek Relton           21
+dave hudson           17  Derek Relton           21
 Adam Sandilands        10  Carol Matthews         21
 Clifford Brogie        21  Jim Head               16
 Jack Roberts 'A'       21  Mathew Johnson          4
@@ -13502,7 +13502,7 @@ Anne Watkinson 'A'     21  Alison Woodfine        14
 Joyce Ellis            21  Clifford Brogie        16
 Val Wilson             21  Colin Butterfield      20
 Eddie Watkinson 'A'    18  Ken Walker             21
-Elaine Binns           21  David Hudson           12
+Elaine Binns           21  dave hudson           12
 Janet Inness            8  Keith Worrall 'A'      21
 Liz Ellis              21  Andy Robertson 'A'     12
 Janice Walton 'A'      21  Jack Roberts 'A'        4
@@ -13997,7 +13997,7 @@ Marian Firth 'A'       21  Jack Roberts 'A'       18
 David Hammond 'A'      21  Ken Walker             17
 Stuart England         21  Mabel Shaw 'A'         20
 Marlene Hughes 'A'     21  Clifford Brogie         8
-Derek Dillon           21  David Hudson           18
+Derek Dillon           21  dave hudson           18
 Pat Priestley 'A'      21  Andy Robertson 'A'      6
 Ted Piskozub           21  Keith Worrall 'A'      15
 Victor Riley           10  Donald Shaw 'A'        21

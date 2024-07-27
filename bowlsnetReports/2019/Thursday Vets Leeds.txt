@@ -641,7 +641,7 @@ Gerry Faller          17  Barbara Nellis         21
       Armley Cons             Stanningley Park B
 Clifford Roy          21  Adam Sandilands        12
 Bob Davison           10  Geoff Lee              21
-Maveen Tomlinson       7  David Hudson           21
+Maveen Tomlinson       7  dave hudson           21
 Barry Palmer          17  Terry Powell           21
 Joanc Crampton        21  Carol Butters          19
 Ken Brown             13  Colin Butterfield      21
@@ -785,7 +785,7 @@ Dennis Scothern       16  Steve Pickersgill      21
 Shirley Sandilands    16  Pat Hayes              21
 Adam Sandilands       12  Gordon Sadler          21
 Carol Butters         11  Sylvia Senior          21
-David Hudson          15  John Hayes             21
+dave hudson          15  John Hayes             21
 Colin Butterfield     21  Joan Hargreaves        12
 Ken Stockhill         21  Gerry Faller           13
 Geoff Lee             21  Arthur Senior          14
@@ -899,7 +899,7 @@ Christine Glynne      21  Peter Britton          12
 
        Division 2                Thu 2nd May
      Pudsey Park B            Stanningley Park B
-Robert Fountain        4  David Hudson           21
+Robert Fountain        4  dave hudson           21
 John Telford          21  June Mitchell          10
 Jean Hall             20  Carol Butters          21
 Barbara Moss          21  Adam Sandilands         5
@@ -1060,7 +1060,7 @@ Philip Marshall       21  Geoff Lee               9
 Harry Gillett         21  Bernard Miller         17
 Carl Mahon            21  Carol Butters          20
 Jeoff Higgins         16  Terry Powell           21
-Graham Bluff          21  David Hudson            1
+Graham Bluff          21  dave hudson            1
 Keith Lambert         16  Colin Butterfield      21
 Ray Watson            19  Ken Stockhill          21
         Aggregate:   156           Aggregate:   118
@@ -1176,10 +1176,10 @@ Carol Butters         21  Dennis Scothern        16
 Geoff Lee             21  Betty Falkinder        19
 June Mitchell         18  Walter Saunders        21
 Adam Sandilands        6  Roy Luty               21
-David Hudson          21  Margaret Saunders      17
+dave hudson          21  Margaret Saunders      17
 Ken Stockhill         21  Glenn Parkinson        13
 Bernard Miller        14  Marilyn Robinson       21
-Don Shaw              21  Joan Middleton          6
+donald shaw              21  Joan Middleton          6
         Aggregate:   143           Aggregate:   134
            Points:    32              Points:    28
 
@@ -1212,7 +1212,7 @@ George Bentley        21  Tony Barker            11
        Division 1               Thu 23rd May
    Stanningley Park A            Churwell Pk
 Keith Worrall         21  John Bilbie            11
-David Hudson          21  Ron Spruce             14
+dave hudson          21  Ron Spruce             14
 Ken Walker            21  Susan Harrison         11
 Cliff Brogie          11  Glen Scott             21
 Brian Fish            13  Stephen Briggs         21
@@ -1357,7 +1357,7 @@ Mary Horrocks          7  David Barker           21
 John Birtles          19  Graham Dawson          21
 Ron Witham            15  Robert Taylor          21
 Bill Robson           21  Keith Worrall          15
-Alan Layfield         21  David Hudson           15
+Alan Layfield         21  dave hudson           15
 John Hainsworth       21  Ken Walker             11
 Graham Petty          21  Brian Fish              6
 Christine Robson      21  Brian Barker           16
@@ -1474,7 +1474,7 @@ Mario Biancardo       21  Len Robinson           10
 Ken Walker            21  Glynis Ash             18
 Brian Fish            21  Ron Lavan              13
 Brian Barker          21  Mary Horrocks          13
-David Hudson          21  Lillian Pickles         5
+dave hudson          21  Lillian Pickles         5
 Cliff Brogie          21  Granville Stoyles      13
 Keith Worrall         13  Cedric Ash             21
 Robert Taylor         21  Hazel Goodall           9
@@ -1628,7 +1628,7 @@ Raymond Ball           9  Margaret McPhail       21
        Division 1               Thu 13th Jun
    Stanningley Park A            New Armley
 Ken Walker            11  David Johnson          21
-David Hudson          21  Josie M Burdon         14
+dave hudson          21  Josie M Burdon         14
 Graham Dawson         12  John Lambert           21
 Derek Wilson          17  Carol Robinson         21
 Mabel Shaw            21  June Lambert            6
@@ -1710,7 +1710,7 @@ Albert Stubley Team Cup
 Graham Dawson         21  Maureen Morris         14
 Brian Fish            21  Cedric Briggs          15
 Derek Wilson          21  June Lambert           12
-David Hudson          21  Carol Robinson         11
+dave hudson          21  Carol Robinson         11
 Ken Walker            21  Josie M Burdon          6
 Cliff Brogie          21  John Lambert           10
 Brian Barker          12  Len Robinson           21
@@ -1831,7 +1831,7 @@ Patricia Cooper       12  Graham Dawson          21
 Phillip Lucas         21  Robert Taylor          15
 Frank Tempest         20  Cliff Brogie           21
 David Charlesworth    21  Ken Walker             20
-Derek Walker          21  David Hudson           19
+Derek Walker          21  dave hudson           19
 David Holmes          14  Brian Fish             21
 Harvey Lockwood       21  Brian Barker           11
         Aggregate:   147           Aggregate:   149
@@ -1918,7 +1918,7 @@ Norman Shaw           21  Kevin Morley           20
        Division 1                Thu 4th Jul
    Stanningley Park A           Pudsey Park A
 Leslie Leak           21  Janet Pearson          17
-David Hudson          21  Barbara Nellis         18
+dave hudson          21  Barbara Nellis         18
 Jim Moorin            15  Shirley Biancardo      21
 Keith Worrall         10  Dennis Walters         21
 Ken Walker            21  David Barker           17
@@ -2013,7 +2013,7 @@ Ina Gray              14  Graham Dawson          21
 Barry Tebbs           13  Brian Fish             21
 Peter Ritchie         21  Derek Wilson           15
 Keith Bradley         15  Ken Walker             21
-Hugh Callard          21  David Hudson           13
+Hugh Callard          21  dave hudson           13
 Deborah Sandles       21  Robert Taylor          18
 Kevin Morley          21  Brian Barker           14
         Aggregate:   144           Aggregate:   144
@@ -2208,7 +2208,7 @@ Stephen Briggs        21  George Bentley         13
        Division 1               Thu 25th Jul
        New Armley            Stanningley Park A
 Cedric Briggs         21  Cliff Brogie           17
-Maureen Morris        21  David Hudson           20
+Maureen Morris        21  dave hudson           20
 David Johnson          9  Brian Fish             21
 John Lambert          21  Graham Dawson          11
 Josie M Burdon        13  Ken Walker             21
@@ -2302,7 +2302,7 @@ Mick Harrison         21  Derek Walker            8
 
        Division 1                Thu 1st Aug
      Scatcherd Pk A          Stanningley Park A
-Jean Wainman          11  David Hudson           21
+Jean Wainman          11  dave hudson           21
 Lynn Firth            21  Cliff Brogie           11
 Malcolm Stroud        21  Graham Dawson          15
 George Bentley        21  Keith Worrall          17
@@ -2476,7 +2476,7 @@ Brian Barker          21  Pauline Gaunt          15
 Robert Taylor         21  Geoff Gaunt             1
 Derek Wilson          16  Eddie Harrison         21
 Ken Walker            13  Eddie Tate             21
-David Hudson          21  Beryl Wainman          11
+dave hudson          21  Beryl Wainman          11
 Keith Worrall         21  Joan Keen               9
 Cliff Brogie          10  Tony Barker            21
         Aggregate:   144           Aggregate:   106
@@ -2568,7 +2568,7 @@ Lawrie Bairstow       21  Robert Taylor          15
 Susan Harrison        21  Leslie Leak             6
 Graham Goodall        21  Cliff Brogie           12
 Leslie Strang         17  Brian Fish             21
-Mick Harrison         21  David Hudson            5
+Mick Harrison         21  dave hudson            5
 Terry Blakeley        21  Keith Worrall           6
         Aggregate:   164           Aggregate:    93
            Points:    38              Points:    18
@@ -2748,11 +2748,11 @@ Dennis Walters        18  Granville Stoyles      21
 
        Division 1               Thu 29th Aug
    Stanningley Park A        West Royd Park 'A'
-David Hudson          21  Alan Layfield           6
+dave hudson          21  Alan Layfield           6
 Keith Worrall         21  Ron Witham             14
 Brian Fish            10  John Hainsworth        21
 Derek Wilson          15  Bill Robson            21
-Don Shaw              17  Christine Robson       21
+donald shaw              17  Christine Robson       21
 Cliff Brogie          21  Brenda Chaffer         15
 Brian Barker          18  Ken Lee                21
 Robert Taylor         20  Norman Shaw            21
@@ -2885,7 +2885,7 @@ Doreen Hogg            6  Derek Wilson           21
 Mary Horrocks         21  Mabel Shaw             19
 Granville Stoyles     21  Cliff Brogie           12
 Margaret McPhail      21  Keith Worrall          17
-Ron Lavan             21  David Hudson           13
+Ron Lavan             21  dave hudson           13
         Aggregate:   127           Aggregate:   142
            Points:    29              Points:    30
 

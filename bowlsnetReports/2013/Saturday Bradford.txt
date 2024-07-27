@@ -1625,7 +1625,7 @@ Jordan Brown        21  Mark Morris            13
   Division 5 - Haigh           Sat 6th Apr
    Bradford Moor A             Stanningley
 Derek Briggs (a)    19  Alison Woodfine        21
-Michael Holleran    18  David Hudson           21
+Michael Holleran    18  dave hudson           21
 Elaine Farrow        7  Bernard Palmer         21
 Kenneth Smith       21  Jack Roberts           13
 Barry Durrans (a)   14  Mabel Shaw             21
@@ -2213,7 +2213,7 @@ Christopher Gardner 21  John Murphy            15
 Derek Wilson        21  Joyce Ellis            13
 Terence Powell      13  Kath Icke              21
 Andy Robertson      21  Janice Walton (a)       0
-David Hudson        20  Val Wilson             21
+dave hudson        20  Val Wilson             21
 Bernard Palmer       8  Anne Watkinson         21
 Keith Worrall       21  Janet Inness           15
 Mabel Shaw          21  Eddie Watkinson        11
@@ -2764,7 +2764,7 @@ John Fletcher       21  Steven James           15
 
   Division 5 - Haigh          Sat 27th Apr
      Brackenhill               Stanningley
-Ronnie Gibson       21  David Hudson           13
+Ronnie Gibson       21  dave hudson           13
 Alan Holdsworth     21  Derek Wilson           16
 Alan Paul           19  Jack Roberts           21
 Terry Ricketts      21  Alison Woodfine        15
@@ -3979,7 +3979,7 @@ Robin Smith         21  David Griffiths        14
 
   Division 5 - Haigh          Sat 18th May
      Stanningley               Oakenshaw A
-David Hudson        21  Ted Piskozub           17
+dave hudson        21  Ted Piskozub           17
 Derek Wilson         5  Pat Priestley (a)      21
 Alison Woodfine     21  Stewart England        15
 Jack Roberts        12  Victor Riley           21
@@ -4595,7 +4595,7 @@ Tony Smith (a)      18  Jamie Lindley          21
   Division 5 - Haigh           Sat 8th Jun
      Stanningley                Wibsey B
 Terence Powell      21  George Gledhill (b)    10
-David Hudson        20  James Klenk (b)        21
+dave hudson        20  James Klenk (b)        21
 Alison Woodfine     21  Bernard Cahill         10
 Andy Robertson      18  Pat Newby              21
 Jack Roberts        21  Michael Sansome        20
@@ -5169,7 +5169,7 @@ Wendy Shimbles (a)  21  Bernard Palmer         18
 Terry Wilsdon       21  Jack Roberts           18
 Eric Pennells        6  Christopher Gardner    21
 John Waugh          18  Mabel Shaw             21
-Patrick Brannan     21  David Hudson            9
+Patrick Brannan     21  dave hudson            9
 John Smith          21  Terence Powell         10
 Pam Lindley (a)     21  Alison Woodfine         9
 Peter Simpson        5  Steve Gardner          21
@@ -5587,7 +5587,7 @@ Tony Quinn          20  Graham Wilkinson       21
 Martin Laycock      21  Bernard Palmer          7
 Roger Garnett       18  Jack Roberts           21
 Carolyn Matthewman  13  Keith Worrall          21
-Norman Lickley      21  David Hudson            5
+Norman Lickley      21  dave hudson            5
 Emma Ramsey         21  Mabel Shaw              6
 Ben Stockdale       21  Derek Wilson            4
 Michael Dixon       16  Alison Woodfine        21
@@ -6787,7 +6787,7 @@ Colin Matthewman    21  John Murphy             8
 George Hogg         21  Derek Wilson            7
 Thomas Morris       21  Alison Woodfine        15
 Geoff Hodgson       20  Bernard Palmer         21
-Brian Russell       21  David Hudson           10
+Brian Russell       21  dave hudson           10
 Sue Chadwick        21  Donald Shaw            14
 Lynn Shaw           21  Mabel Shaw             18
 Jack Bowes          21  Jack Roberts            7
@@ -7175,7 +7175,7 @@ John Priestley (a)   9  Colin Matthewman       21
   Division 5 - Haigh          Sat 13th Jul
      Stanningley             Bradford Moor A
 Terence Powell      21  Alan Naylor             8
-David Hudson        21  Kenneth Smith          14
+dave hudson        21  Kenneth Smith          14
 Jack Roberts        21  Colin Wright            8
 Alison Woodfine     21  Elaine Farrow          19
 Bernard Palmer      21  Michael Holleran       17
@@ -7805,7 +7805,7 @@ Anthony Hatherley   21  Graham Wilkinson       14
   Division 5 - Haigh          Sat 20th Jul
    West Bradford A             Stanningley
 Sydney North        15  Bernard Palmer         21
-Pat Edden           21  David Hudson           10
+Pat Edden           21  dave hudson           10
 Geoff Dickson        6  Terence Powell         21
 John Shoesmith      21  Mabel Shaw             15
 Greg Fairhead       21  Andy Robertson         14
@@ -8362,7 +8362,7 @@ Donald Firth        21  Joe Keenan              1
 Derek Wilson        20  Greg Fairhead          21
 Mabel Shaw          21  Sydney North           17
 Andy Robertson      17  Pat Edden              21
-David Hudson         3  Geoff Dickson          21
+dave hudson         3  Geoff Dickson          21
 Keith Worrall       19  John Shoesmith         21
 Terence Powell      14  Tony Smith (a)         21
 Bernard Palmer      14  Bill Hutchinson (a)    21
@@ -9574,7 +9574,7 @@ Graham Wilkinson    19  Alan Farrow            21
 
   Division 5 - Haigh          Sat 10th Aug
  Cleckheaton Sports A          Stanningley
-Les Binns           19  David Hudson           21
+Les Binns           19  dave hudson           21
 Liz Ellis           21  Derek Wilson           18
 Kath Icke           21  Andy Robertson         12
 Janet Inness         7  Donald Shaw            21
@@ -10177,7 +10177,7 @@ Wayne Woodhead      21  Madeline Gamble        20
 Kenneth Hudson      15  Jack Roberts           21
 Victor Riley        21  Bernard Palmer         13
 Ted Piskozub        13  Keith Worrall          21
-Harry Foster        21  David Hudson            6
+Harry Foster        21  dave hudson            6
 Derek Dillon (a)    16  Mabel Shaw             21
 John Priestley (a)  21  Andy Robertson         11
 Marlene Hughes      21  Derek Wilson           14
@@ -11405,7 +11405,7 @@ Alan Bell           21  Graham Wilkinson        7
   Division 5 - Haigh          Sat 31st Aug
        Wibsey B                Stanningley
 David Lupton        21  Bernard Palmer          8
-Elaine Thorpe       21  David Hudson           14
+Elaine Thorpe       21  dave hudson           14
 Nathan Dobson       21  Keith Worrall          16
 James Klenk (b)     21  Terence Powell         16
 Bernard Cahill      18  Jack Roberts           21
@@ -13594,7 +13594,7 @@ John Priestley (a)   6  Jamie Wilczynski       21
 
   Division 5 - Haigh          Sat 28th Sep
      Stanningley               Guiseley B
-David Hudson         9  Andrew Baxter          21
+dave hudson         9  Andrew Baxter          21
 Jack Roberts        13  Graham Bolton (b)      21
 Terence Powell      21  Norman Lickley         11
 Donald Shaw         16  Hannah Turner (b)      21

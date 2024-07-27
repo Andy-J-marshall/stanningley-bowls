@@ -7388,7 +7388,7 @@ Harry Foster         13  Nicky Jagger       21
 Cleckheaton Sports 'A'        Stanningley
 Mavis Arnold         20  Derek Wilson       21
 Eddie Watkinson      21  Alison Woodfine    17
-Elaine Binns         21  David Hudson        8
+Elaine Binns         21  dave hudson        8
 Colin Taylor         21  Mabel Shaw         13
 David Arnold         16  Ken Walker         21
 Joyce Ellis          21  Brian Fish         17
@@ -8617,7 +8617,7 @@ Bob Corner            8  Alison Woodfine    21
 John Jagger          11  Clifford Brogie    21
 Bill Lovett          14  Brian Fish         21
 Yvonne Northrop      21  Derek Wilson       15
-Rusty Hatherley      21  David Hudson       20
+Rusty Hatherley      21  dave hudson       20
 Richard Hunter       13  Donald Shaw        21
            Games:     4            Games:    6
        Aggregate:   160        Aggregate:  176
