@@ -73,6 +73,12 @@ body {
   width: 100%;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #root {
   background-color: #ffffff;
   font-size: 19px;
@@ -165,4 +171,9 @@ ul {
 
 .rbt-aux {
   margin-right: 0.5rem;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
 }

@@ -169,81 +169,85 @@ function App() {
     return (
         <div id="app">
             <Header />
-            <Navigation />
-            <Routes>
-                <Route path="" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/membership" element={<Membership />} />
-                <Route path="/team-and-social" element={<TeamInfo />} />
-                <Route path="/fixtures" element={<Fixtures />} />
-                <Route
-                    path="/results"
-                    element={
-                        <Results
-                            stats={teamStats}
-                            statsCallback={statsSelectCallback}
-                            yearToDisplay={yearToDisplay}
-                        />
-                    }
-                />
-                <Route
-                    path="/stats/player"
-                    element={
-                        <div>
-                            <YearSelectDropdown
+            <main>
+                <Navigation />
+                <Routes>
+                    <Route path="" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/membership" element={<Membership />} />
+                    <Route path="/team-and-social" element={<TeamInfo />} />
+                    <Route path="/fixtures" element={<Fixtures />} />
+                    <Route
+                        path="/results"
+                        element={
+                            <Results
+                                stats={teamStats}
                                 statsCallback={statsSelectCallback}
                                 yearToDisplay={yearToDisplay}
-                                showOldYears={true}
                             />
-                            <PlayerStats
-                                stats={teamStats}
-                                combinedStats={combinedStats}
-                                statsForEveryYearArray={statsForEveryYearArray}
-                                combinedStatsForEveryYearArray={
-                                    combinedStatsForEveryYearArray
-                                }
-                            />
-                        </div>
-                    }
-                />
-                <Route
-                    path="/stats/team"
-                    element={
-                        <div>
-                            <YearSelectDropdown
-                                statsCallback={statsSelectCallback}
-                                yearToDisplay={yearToDisplay}
-                                showOldYears={false}
-                            />
-                            <TeamStats
-                                stats={teamStats}
-                                statsSelectCallback={statsSelectCallback}
-                                yearToDisplay={yearToDisplay}
-                            />
-                        </div>
-                    }
-                />
-                <Route
-                    path="/stats/records"
-                    element={
-                        <div>
-                            <YearSelectDropdown
-                                statsCallback={statsSelectCallback}
-                                yearToDisplay={yearToDisplay}
-                                showOldYears={true}
-                            />
-                            <PlayerRecords
-                                year = {yearToDisplay}
-                                stats={teamStats}
-                                statsSelectCallback={statsSelectCallback}
-                                yearToDisplay={yearToDisplay}
-                            />
-                        </div>
-                    }
-                />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/history" element={<History />} />
-            </Routes>
+                        }
+                    />
+                    <Route
+                        path="/stats/player"
+                        element={
+                            <div>
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                    showOldYears={true}
+                                />
+                                <PlayerStats
+                                    stats={teamStats}
+                                    combinedStats={combinedStats}
+                                    statsForEveryYearArray={
+                                        statsForEveryYearArray
+                                    }
+                                    combinedStatsForEveryYearArray={
+                                        combinedStatsForEveryYearArray
+                                    }
+                                />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/stats/team"
+                        element={
+                            <div>
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                    showOldYears={false}
+                                />
+                                <TeamStats
+                                    stats={teamStats}
+                                    statsSelectCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/stats/records"
+                        element={
+                            <div>
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                    showOldYears={true}
+                                />
+                                <PlayerRecords
+                                    year={yearToDisplay}
+                                    stats={teamStats}
+                                    statsSelectCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                />
+                            </div>
+                        }
+                    />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/history" element={<History />} />
+                </Routes>
+            </main>
             <Footer />
         </div>
     );
