@@ -45,5 +45,5 @@ test('Club cup winner is displayed correctly', async () => {
 });
 
 test(`Records year dropdown appears if there are multiple years of records available`, async () => {
-  await basePage.checkYearDropdownHasAllYearOptions();
+  await basePage.checkYearDropdownHasAllYearOptions(11);
 });

@@ -7,52 +7,55 @@ const teamName = config.teamNames.shortName;
 function Results(props) {
     const stats = props.stats;
     const statsCallback = props.statsCallback;
-    const numberOfYearsToDisplay = props.numberOfYearsToDisplay;
     const yearToDisplay = props.yearToDisplay;
 
     const { teamResults } = stats;
 
     let resultsFound = false;
-    const resultsArray = teamResults.map((team) => {
-        const results = team.results.map((result) => {
-            const resultParts = result.split(' - ');
-            const homePart = resultParts[0];
-            const homeScore = homePart.match(/[0-9]+/g)[0].trim();
-            const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
-            const awayPart = resultParts[1].split(' (')[0];
-            let date = resultParts[1].split(' (')[1];
-            date = date.slice(0, -1);
-            const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
-            const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
+    let resultsArray;
 
-            resultsFound = true;
-
+    if (teamResults) {
+        resultsArray = teamResults.map((team) => {
+            const results = team.results.map((result) => {
+                const resultParts = result.split(' - ');
+                const homePart = resultParts[0];
+                const homeScore = homePart.match(/[0-9]+/g)[0].trim();
+                const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
+                const awayPart = resultParts[1].split(' (')[0];
+                let date = resultParts[1].split(' (')[1];
+                date = date.slice(0, -1);
+                const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
+                const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
+    
+                resultsFound = true;
+    
+                return {
+                    home: {
+                        homeTeam,
+                        homeScore,
+                    },
+                    away: {
+                        awayTeam,
+                        awayScore,
+                    },
+                    date,
+                };
+            });
+    
             return {
-                home: {
-                    homeTeam,
-                    homeScore,
-                },
-                away: {
-                    awayTeam,
-                    awayScore,
-                },
-                date,
+                day: config.days[team.day.toLowerCase()],
+                results: results,
             };
         });
-
-        return {
-            day: config.days[team.day.toLowerCase()],
-            results: results,
-        };
-    });
+    }
 
     if (resultsFound) {
         return (
             <div className="center" id="result">
                 <YearSelectDropdown
-                    numberOfYearsToDisplay={numberOfYearsToDisplay}
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
+                    showOldYears={false}
                 />
                 <h1>RESULTS</h1>
                 {resultsArray.map((resultTeam, idx) => {
@@ -191,9 +194,9 @@ function Results(props) {
         return (
             <div>
                 <YearSelectDropdown
-                    numberOfYearsToDisplay={numberOfYearsToDisplay}
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
+                    showOldYears={false}
                 />
                 <h1>RESULTS</h1>
                 <p>No results for {yearToDisplay}</p>

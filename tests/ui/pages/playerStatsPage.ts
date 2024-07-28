@@ -46,7 +46,7 @@ export class PlayerStatsPage {
     this.playerListInDropdown = page.locator('#player-search');
     this.searchButton = page.locator('#search-button');
     this.backButton = page.locator('#back-button');
-    this.playerStatsItem = page.locator('#stats .list-group-item');
+    this.playerStatsItem = page.locator('#detailed-player-stats .list-group-item');
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
     this.overviewAccordionButton = page.locator('#stats-overview');
@@ -158,11 +158,11 @@ export class PlayerStatsPage {
     await this.allGameTypesRadio.check();
   }
 
-  async selectSince2022Checkbox() {
+  async selectSince2013Checkbox() {
     await this.allYearCheckBox.check();
   }
 
-  async deselectSince2022Checkbox() {
+  async deselectSince2013Checkbox() {
     await this.allYearCheckBox.uncheck();
   }
 

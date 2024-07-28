@@ -7,32 +7,45 @@ import config from '../config';
 function TeamStats(props) {
     const stats = props.stats;
 
+    const teamName = config.teamNames.shortName;
+
     const { playerResults, teamResults } = stats;
 
-    const mondayStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('monday')
-    );
-    const tuesdayVetsStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('tuesday vets')
-    );
-    const tuesdayStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('tuesday leeds')
-    );
-    const wednesdayStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('wednesday half holiday')
-    );
-    const wednesdayPairsStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('wednesday pairs')
-    );
-    const thursdayVetsStats = teamResults.find((team) =>
-        team.day.toLowerCase().includes('thursday')
-    );
-    const saturdayStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'saturday leeds'
-    );
-    const saturdayBStats = teamResults.find(
-        (team) => team.day.toLowerCase() === 'saturday leeds (b)'
-    );
+    let mondayStats;
+    let tuesdayVetsStats;
+    let tuesdayStats;
+    let wednesdayStats;
+    let wednesdayPairsStats;
+    let thursdayVetsStats;
+    let saturdayStats;
+    let saturdayBStats;
+
+    if (teamResults) {
+        mondayStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('monday')
+        );
+        tuesdayVetsStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('tuesday vets')
+        );
+        tuesdayStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('tuesday leeds')
+        );
+        wednesdayStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('wednesday half holiday')
+        );
+        wednesdayPairsStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('wednesday pairs')
+        );
+        thursdayVetsStats = teamResults.find((team) =>
+            team.day.toLowerCase().includes('thursday')
+        );
+        saturdayStats = teamResults.find(
+            (team) => team.day.toLowerCase() === 'saturday leeds'
+        );
+        saturdayBStats = teamResults.find(
+            (team) => team.day.toLowerCase() === 'saturday leeds (b)'
+        );
+    }
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -168,23 +181,34 @@ function TeamStats(props) {
         );
     }
 
-    return (
-        <div id="team-stats" className="center page-component">
-            <h1>TEAM STATS</h1>
-            <TeamTabs
-                id="team-stat"
-                allComponent={allComponent()}
-                team1Component={returnTeam1Component()}
-                team2Component={returnTeam2Component()}
-                team3Component={returnTeam3Component()}
-                team4Component={returnTeam4Component()}
-                team7Component={returnTeam7Component()}
-                team5Component={returnTeam5Component()}
-                team6Component={returnTeam6Component()}
-            />
-            <br />
-        </div>
-    );
+    if (teamResults) {
+        return (
+            <div id="team-stats" className="center page-component">
+                <h1>TEAM STATS</h1>
+                <TeamTabs
+                    id="team-stat"
+                    allComponent={allComponent()}
+                    team1Component={returnTeam1Component()}
+                    team2Component={returnTeam2Component()}
+                    team3Component={returnTeam3Component()}
+                    team4Component={returnTeam4Component()}
+                    team7Component={returnTeam7Component()}
+                    team5Component={returnTeam5Component()}
+                    team6Component={returnTeam6Component()}
+                />
+                <br />
+            </div>
+        );
+    } else {
+        return (
+            <div id="team-stats-unavailable" className="center page-component">
+                <h1>TEAM STATS</h1>
+                <p>
+                    No {teamName} team stats available, please select another year.
+                </p>
+            </div>
+        );
+    }
 }
 
 export default TeamStats;

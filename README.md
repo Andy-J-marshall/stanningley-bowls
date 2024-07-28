@@ -150,13 +150,12 @@ Update team info in all components:
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamInfo` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamTabs` component
 
-Team Records:
-
-- gamesPerMatch for Monday and Wednesday are set to 6 and 8 for everything else. Is this still correct?
 
 # Updates required at end of each calendar year
 
 Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
+
+Create a directory for the new year in the `/bowlsnetReports`.
 
 Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
 
@@ -165,7 +164,7 @@ Update the default stats to display for `teamStats` and `combinedStats`.
 
 Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
 
-If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Does the `gamesPerMatch` for the new league need updating (the default is 8)?
+If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
 
 Add fixtures to Google calendar for all teams.
 
@@ -184,3 +183,5 @@ Update any URLs if the Bowlsnet link has changed.
 Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
 Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.
+
+Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.

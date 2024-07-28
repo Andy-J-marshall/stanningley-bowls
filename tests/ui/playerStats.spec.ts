@@ -74,24 +74,24 @@ test('Summary of Andy Marshall stats for singles games for team are correct', as
   playerStatsPage.playerStatsAreCorrectInTable('36', '30', '83%', '5.81');
 });
 
-test('Summary of Dave Hudson stats since 2022 for team are correct', async () => {
+test('Summary of Dave Hudson stats since 2013 for team are correct', async () => {
   playerStatsPage.setPlayerToFind('dave hudson');
 
-  await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectInTable('14', '7', '50%', '-1.00');
+  await playerStatsPage.selectSince2013Checkbox();
+  playerStatsPage.playerStatsAreCorrectInTable('385', '147', '38%', '-2.34');
 });
 
-test('Summary of Bernie Miller stats since 2022 for team are correct', async () => {
+test('Summary of Bernie Miller stats since 2013 for team are correct', async () => {
   playerStatsPage.setPlayerToFind('bernie miller');
 
-  await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
-
-  await playerStatsPage.selectPairsOnlyRadio();
-  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-13');
+  await playerStatsPage.selectSince2013Checkbox();
+  playerStatsPage.playerStatsAreCorrectInTable('416', '242', '58%', '2.37');
 
   await playerStatsPage.selectSinglesOnlyRadio();
-  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
+  playerStatsPage.playerStatsAreCorrectInTable('354', '211', '60%', '2.42');
+
+  await playerStatsPage.selectPairsOnlyRadio();
+  playerStatsPage.playerStatsAreCorrectInTable('62', '31', '50%', '2.08');
 });
 
 test('Total player count is calculated correctly', async () => {

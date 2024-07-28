@@ -1,4 +1,3 @@
-import os
 import teamDetails
 
 teamPlayers = teamDetails.players
@@ -6,9 +5,9 @@ duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
 # Add Saturday AireDale & Wharfedale and Monday Pairs?
-otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale', 
-                'Tuesday AireDale & Wharfedale', 'Wednesday AireDale & Wharfedale', 'Monday Bradford', 
-                'Wednesday Half Holiday Bradford', 'Thursday Vets Bradford', 'Saturday Bradford']
+otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
+                'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
+                'Thursday Vets Bradford', 'Saturday Bradford']
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 teamDays = currentTeamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
@@ -18,7 +17,7 @@ duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 otherTeams = ['new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
 teamsTracking = teamDetails.teamNames + otherTeams
 
-cupText = ['pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
+cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':

@@ -7,6 +7,8 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
+const year = new Date().getFullYear();
+
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
 }
@@ -57,10 +59,6 @@ const teams = [
     url: '/AW-Vets',
   },
   {
-    day: 'Wednesday AireDale & Wharfedale',
-    url: '/AW-WedSingles',
-  },
-  {
     day: 'Monday Bradford',
     url: '/Bradford-Mon',
   },
@@ -102,7 +100,7 @@ for (const team of teams) {
     } catch (error) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
-
+    
     // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
@@ -151,7 +149,7 @@ for (const team of teams) {
     ]);
 
     // Create text file
-    const filePath = `./bowlsnetReports/${team.day}.txt`;
+    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     await newPage.bringToFront();
     const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
     fs.writeFileSync(filePath, value);

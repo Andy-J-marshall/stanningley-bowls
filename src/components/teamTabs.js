@@ -35,7 +35,7 @@ function TeamTabs(props) {
                 <Tab eventKey="thursday-vets" title="Thur (Vets)">
                     {team5Component}
                 </Tab>
-                <Tab eventKey="taturday" title="Sat">
+                <Tab eventKey="saturday" title="Sat">
                     {team6Component}
                 </Tab>
             </Tabs>

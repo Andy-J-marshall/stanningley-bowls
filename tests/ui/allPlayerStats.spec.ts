@@ -107,26 +107,26 @@ test('Summary of Neil Porter stats for singles and pairs games for all teams is 
   playerStatsPage.playerStatsAreCorrectInTable('2', '2', '100%', '9.5');
 });
 
-test('Summary of Dave Hudson stats since 2022 for all teams is correct', async () => {
+test('Summary of Dave Hudson stats since 2013 for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('dave hudson');
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
-  await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectInTable('70', '24', '34%', '-2.83');
+  await playerStatsPage.selectSince2013Checkbox();
+  playerStatsPage.playerStatsAreCorrectInTable('463', '174', '38%', '-2.48');
 });
 
-test('Summary of Bernie Miller stats since 2022 for all teams is correct', async () => {
+test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
   playerStatsPage.setPlayerToFind('bernie miller');
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
-  await playerStatsPage.selectSince2022Checkbox();
-  playerStatsPage.playerStatsAreCorrectInTable('2', '0', '0%', '-12');
+  await playerStatsPage.selectSince2013Checkbox();
+  playerStatsPage.playerStatsAreCorrectInTable('416', '242', '58%', '2.37');
 
   await playerStatsPage.selectSinglesOnlyRadio();
-  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-11');
+  playerStatsPage.playerStatsAreCorrectInTable('354', '211', '60%', '2.42');
 
   await playerStatsPage.selectPairsOnlyRadio();
-  playerStatsPage.playerStatsAreCorrectInTable('1', '0', '0%', '-13');
+  playerStatsPage.playerStatsAreCorrectInTable('62', '31', '50%', '2.08');
 });
 
 test('Total player count is not visible for all team stats', async () => {

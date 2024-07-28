@@ -46,7 +46,8 @@ function AllTimePlayerStats(props) {
         statsArray.forEach((yearStats) => {
             const playerStats = returnPlayerStats(
                 yearStats.playerResults,
-                player
+                player,
+                yearStats.statsYear
             );
 
             if (playerStats) {
@@ -94,14 +95,14 @@ function AllTimePlayerStats(props) {
 
     return (
         <div id="all-time-player-stats" className="center">
-            <h3 style={{ padding: '2rem 0 0 0' }}>STATS SINCE 2022</h3>
+            <h3 style={{ padding: '2rem 0 0 0' }}>STATS SINCE 2013</h3>
             <PlayerStatSummary
                 playerStats={statsToDisplayArray}
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
             />
             <br />
-            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players since 2022: {totalPlayersUsed}</p>}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players: {totalPlayersUsed}</p>}
         </div>
     );
 }
