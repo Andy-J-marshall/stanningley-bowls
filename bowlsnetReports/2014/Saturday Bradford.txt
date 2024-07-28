@@ -4329,7 +4329,7 @@ Danny Towning       21  Ian Kemp             18
 Dave Whelan         17  Mark Reynolds        21
 Martyn Benson (a)   17  Ian Matthews         21
 Carole Wright (b)   21  Roger Binks          10
-John Fletcher       20  Neil Porter (b)      21
+John Fletcher       20  Neil Porter      21
 Debbie Kirkbright   21  Jeff Goodall         15
 Dave Kirkbright     21  Will Gilroy           9
 Kelvin Grace        19  Andy Woodhead (b)    21
@@ -4941,7 +4941,7 @@ Simon Chaffer (a)   11  Graham Oliver (a)    21
 
  Division 2 (Godwin)         Sat 31st May
      Eccleshill B         Brighouse Sports B
-Neil Porter (b)     21  Kevin Wood           11
+Neil Porter     21  Kevin Wood           11
 Rachel Telford      14  Steve Livesey        21
 Mark Reynolds       21  Trevor Gasson         5
 Mick Angus (b)      21  Peter Owen           14
@@ -6081,7 +6081,7 @@ Graham Oliver (a)   21  Michael Rennison      3
 
  Division 2 (Godwin)         Sat 21st Jun
  Pudsey Littlemoor A         Eccleshill B
-Duncan Reeves       21  Neil Porter (b)      17
+Duncan Reeves       21  Neil Porter      17
 Marc Armitage       21  Ian Matthews          9
 John Armitage       21  Steve Bowes          13
 Neil McPhail        21  Andy Woodhead (b)     8
@@ -7185,7 +7185,7 @@ Roger Binks         21  Kenneth Bull         14
 Ian Matthews        21  Roger Waite          15
 Ken Gilroy          21  Gary Whelan (a)      15
 Mick Angus (b)      18  Robert Jeffrey'S     21
-Neil Porter (b)     12  Graham Oliver (a)    21
+Neil Porter     12  Graham Oliver (a)    21
       Aggregate:   172         Aggregate:   173
          Points:    15            Points:    15
 
@@ -7780,7 +7780,7 @@ Trevor Gasson       21  Andrew Howie         14
 Tom Gasson          21  Neil Mylan           10
 William Muslek      14  Mark Reynolds        21
 John Horsley        21  Rachel Telford        8
-Nigel Briggs        21  Neil Porter (b)      19
+Nigel Briggs        21  Neil Porter      19
 Helen Simpson       19  Roger Binks          21
 Steve Foster        18  Ken Gilroy           21
 Gary Barraclough    21  Mick Angus (b)       18
@@ -9552,7 +9552,7 @@ Kevin Siddle        21  Ian Matthews         20
 Michael Goodall     21  Andy Woodhead (b)     9
 Darren Cookson      21  Will Gilroy          15
 Les Oddy            21  Carol Matthews       10
-Robert Spink        21  Neil Porter (b)       5
+Robert Spink        21  Neil Porter       5
 Irene Turner        21  Mick Angus (b)       19
 Matthew Turner      18  Neil Mylan           21
 Katie Turner        11  Jeff Goodall         21
@@ -10178,7 +10178,7 @@ Chris Wood (a)      10  Darren Cookson       21
  Division 2 (Godwin)         Sat 16th Aug
      Eccleshill B            Greengates A
 Les Ward            14  Paul Ridealgh        21
-Neil Porter (b)     15  Matthew Connolly     21
+Neil Porter     15  Matthew Connolly     21
 Carol Matthews      21  Chris Lodge (a)       1
 Rachel Telford      21  Dave Rankin          11
 Ian Matthews        21  Tony Southern        18
@@ -11287,7 +11287,7 @@ Eddie Hill          21  Graham Roberts (a)   17
 
  Division 2 (Godwin)         Sat 30th Aug
      Eccleshill B           Drighlington A
-Neil Porter (b)     21  Bailey Rice          17
+Neil Porter     21  Bailey Rice          17
 Carol Matthews      21  Ronnie Benton        18
 Ken Gilroy          12  John Cash (a)        21
 Mick Angus (b)      21  Mark Smith (a)       12
@@ -12525,7 +12525,7 @@ Ian Matthews        21  Irene Turner         17
 Roger Binks         17  Katie Turner         21
 Rachel Telford      21  Joanne Speight        3
 Will Gilroy         14  Robert Spink         21
-Neil Porter (b)     21  Darren Cookson       18
+Neil Porter     21  Darren Cookson       18
 Ken Gilroy          21  Michael Rennison     15
       Aggregate:   184         Aggregate:   162
          Points:    19            Points:    11
@@ -13102,7 +13102,7 @@ David Southwell     14  Kevin Rankin         21
 
  Division 2 (Godwin)         Sat 20th Sep
      Greengates A            Eccleshill B
-Peter Wilson (a)    21  Neil Porter (b)      12
+Peter Wilson (a)    21  Neil Porter      12
 Colin Rhodes (a)     8  Andy Gilroy (b)      21
 Tony Southern       21  Les Ward             12
 Stuart Wilson (a)   21  Brian Conway          4
