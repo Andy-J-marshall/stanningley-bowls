@@ -504,7 +504,7 @@ Paul Shackleton     21  Pat Hayes             4
 Thomas Cuddy        20  Fred Hargeaves       21
 Andrew Cole         17  Gordon Sadler        21
 Stephen Morley      21  John Hayes           10
-Steven Longley      16  Joan Hargreaves      21
+steve longley      16  Joan Hargreaves      21
 Marie Tate              Gerry Faller           
 Stuart Reardon      21  Sylvia Senior        11
 Angela Morley           Arthur Senior          
@@ -639,7 +639,7 @@ Tony Kirk           20  Ian Baker            21
 Jeff Holt           21  Stuart Reardon       12
 Derek Walker            Angela Morley          
 Harvey Lockwood     20  Andrew Cole          21
-Kevin Smales            Steven Longley         
+Kevin Smales            steve longley         
        Aggregate:  124         Aggregate:    86
 
       Division 1             Mon 13th May
@@ -711,7 +711,7 @@ Angela Morley        7  Sophie Olivant       21
 Paul Shackleton     21  Joesy Olivant         2
 Marie Tate              Kevin Austin           
 Stephanie Mondell   21  Steve Olivant        15
-Steven Longley          Matty Rennison         
+steve longley          Matty Rennison         
        Aggregate:   99         Aggregate:    95
 
       Division 2             Mon 13th May
@@ -924,7 +924,7 @@ Thomas Cuddy        21  Graham Dawson        14
 Stephen Morley      10  Ian Lynch            21
 Lewis Cuddy         10  Andy Thompson        21
 Andrew Cole         21  Cath Crane           20
-Steven Longley      21  Barbara Taylor       11
+steve longley      21  Barbara Taylor       11
 Angela Morley           Bob Taylor             
 Paul Shackleton     21  Lynda Ward           10
 Marie Tate              Pat Skelton            
@@ -1046,7 +1046,7 @@ Paul Hatch          21  Stuart Reardon       13
 John Binns          11  Andrew Cole          21
 Marjorie Kay        20  Ian Baker            21
 Marcia Sykes            Danny Dawson           
-Bill Mewse          13  Steven Longley       21
+Bill Mewse          13  steve longley       21
 Terry Maher             Marie Tate             
        Aggregate:  107         Aggregate:    94
 
@@ -1286,7 +1286,7 @@ Trevor Beeton       21  Stephanie Mondell    13
 Colin Wilson        13  Stuart Reardon       21
 Adrienne Blackwell  21  Ian Baker            11
 David Blackwell         Danny Dawson           
-Valerie Bush         9  Steven Longley       21
+Valerie Bush         9  steve longley       21
 Royce Jackson           Angela Morley          
        Aggregate:  101         Aggregate:   101
 
@@ -1464,7 +1464,7 @@ Norman Forsyth      13  Andrew Cole          21
 Gordon Sadler       20  Paul Shackleton      21
 Fred Hargeaves      21  Stephanie Mondell     9
 Marcus Edwards      16  Stephen Morley       21
-Joan Hargreaves      8  Steven Longley       21
+Joan Hargreaves      8  steve longley       21
 Gerry Faller            Lewis Cuddy            
 Arthur Senior        9  Thomas Cuddy         21
 Sylvia Senior           Angela Morley          
@@ -1680,7 +1680,7 @@ Matty Rennison       9  Danny Dawson         21
 Alan Hall           14  Paul Shackleton      21
 Darren Robinson     14  Andrew Cole          21
 Tyler Patrick       18  Stephen Morley       21
-Steve Olivant       11  Steven Longley       21
+Steve Olivant       11  steve longley       21
 Ryley Patrick           Thomas Cuddy           
 Joesy Olivant        7  Stuart Reardon       21
 Kevin Austin            Stephanie Mondell      
@@ -1897,7 +1897,7 @@ Betty Bell           9  Paul Shackleton      21
 Pat Skelton         21  Stephen Morley       16
 Ian Lynch           21  Stuart Reardon       15
 Cath Crane          12  Marie Tate           21
-Ann Scotter             Steven Longley         
+Ann Scotter             steve longley         
 Ryan Lynch          15  Andrew Cole          21
 Andy Lynch              Danny Dawson           
        Aggregate:   86         Aggregate:   115
@@ -2016,7 +2016,7 @@ Paul Shackleton     21  Paul Hatch           15
 Danny Dawson        21  John Binns           18
 Andrew Cole         12  Gordon Monk          21
 Stephanie Mondell    8  Malcolm Hallas       21
-Steven Longley      21  Bill Mewse           15
+steve longley      21  Bill Mewse           15
 Angela Morley           Terry Maher            
 Stephen Morley      21  Marcia Sykes         10
 Marie Tate              Christine Glynn        
@@ -2112,7 +2112,7 @@ Stuart Hoath        11  Paul Shackleton      21
 Ann Wilson          14  Danny Dawson         21
 Chris Bartlett      21  Thomas Cuddy         19
 Sarah Tinto         19  Stephen Morley       21
-Carole Sullivan      8  Steven Longley       21
+Carole Sullivan      8  steve longley       21
 Jeanne Keightley        Marie Tate             
 Noah Tomlinson       6  Stuart Reardon       21
 Jamie Tinto             Angela Morley          

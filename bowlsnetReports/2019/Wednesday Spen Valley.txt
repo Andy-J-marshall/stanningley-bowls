@@ -2469,7 +2469,7 @@ David Billington    21  Alan Mazurke         12
 Ann Billington      21  Angela Carter        14
 Trevor Worsman      21  Philip Richards      13
 David Scott         21  Jim Moorin           11
-Jonathan Gamble     21  Steven Longley       14
+Jonathan Gamble     21  steve longley       14
 Derek Goor           5  Simon Wider          21
 Charles Wood        21  Andy Woodhead         5
       Aggregate:   151         Aggregate:   111
@@ -2807,7 +2807,7 @@ Kath Mazurke        21  Paul Hillam          19
 Philip Richards     16  James Teale          21
 Jim Moorin          21  Graham Chaffer       17
 Philip Thornton     19  Andy Wood            21
-Steven Longley      17  Nick Bastow          21
+steve longley      17  Nick Bastow          21
 Andy Woodhead        9  Andy Howie           21
 Alan Mazurke        10  Paul Rooks           21
       Aggregate:   120         Aggregate:   162
@@ -3445,7 +3445,7 @@ Angela Carter       21  Andrew Jacobs         8
 Simon Wider         21  Robert Wilkinson      6
 Kath Mazurke        21  Nigel Wormald        20
 Philip Thornton     21  Thomas Jagger        14
-Steven Longley      21  Nick Jagger           9
+steve longley      21  Nick Jagger           9
 Andy Woodhead       18  Nigel Swailes        21
       Aggregate:   158         Aggregate:   106
          Points:     8            Points:     2
@@ -3829,7 +3829,7 @@ Derek Goor          21  David Hurd           13
 
       Division 1              Wed 5th Jun
   Overthorpe Sports      Littlemoor S &amp; SC 'B'
-Sam Beresford       21  Steven Longley       18
+Sam Beresford       21  steve longley       18
 Alex Wolfenden      21  Simon Wider          16
 Mark Dobson         21  Jim Moorin           20
 Darren Ripley       21  Philip Thornton       7
@@ -4211,7 +4211,7 @@ Kath Mazurke        21  David Armitage       20
 Jim Moorin          21  Michael Wood         12
 Philip Thornton     21  Steve Pollard         7
 Philip Richards     21  Derek North          17
-Steven Longley      20  Michael Armitage     21
+steve longley      20  Michael Armitage     21
 Alan Mazurke        16  Tony Render          21
 Simon Wider         21  Malcolm Preston      14
       Aggregate:   162         Aggregate:   121
@@ -4525,7 +4525,7 @@ Emma Tobin          21  Simon Wider           7
 Paul Hardy          21  Andy Woodhead         5
 Simon Cahill        21  Angela Carter         5
 Lewis Cooper        21  Philip Richards       9
-Simon Walder        21  Steven Longley        5
+Simon Walder        21  steve longley        5
       Aggregate:   168         Aggregate:    42
          Points:    10            Points:     0
 
@@ -4913,7 +4913,7 @@ Angela Carter       21  Duncan McPhail        6
 Jim Moorin           9  Jim Swailes          21
 Simon Wider         21  Bob Ramsden           7
 Alan Mazurke        15  Colin Rhodes         21
-Steven Longley      21  David Hurd            9
+steve longley      21  David Hurd            9
 Nicky Dewhirst      15  Chris Hight          21
 Philip Richards     20  Dave Rankin          21
       Aggregate:   143         Aggregate:   113
@@ -5213,7 +5213,7 @@ Andy Smith          19  Simon Wider          21
 Les Mitchell        21  Alan Mazurke         19
 Tim Miller          21  Philip Thornton      11
 Jennie Miller       10  Philip Richards      21
-Kevin Wood           9  Steven Longley       21
+Kevin Wood           9  steve longley       21
 Lee Murgatroyd      21  Nicky Dewhirst       13
       Aggregate:   143         Aggregate:   124
          Points:     7            Points:     3
@@ -5565,7 +5565,7 @@ Kath Mazurke        13  Jonathan Gamble      21
 Philip Richards     16  David Scott          21
 Simon Wider         21  David Billington     12
 Alan Mazurke        21  Derek Goor           20
-Steven Longley      21  Charles Wood          5
+steve longley      21  Charles Wood          5
       Aggregate:   155         Aggregate:   130
          Points:     8            Points:     2
 
@@ -5913,7 +5913,7 @@ Will Gilroy          5  Simon Wider          21
 Andy Wood           20  Neil McPhail         21
 James Teale         21  Angela Carter        13
 Paul Hillam         21  Jim Moorin           10
-Ken Gilroy          21  Steven Longley       12
+Ken Gilroy          21  steve longley       12
 Daniel Teale        21  Alan Mazurke         14
 Paul Rooks          21  Philip Thornton       9
 Andy Howie          21  Nicky Dewhirst       14
@@ -6280,7 +6280,7 @@ Angela Carter       21  Steve Emmett          9
 Kath Mazurke        21  Luke Sandland        18
 Philip Richards      9  Jordan Wike          21
 Nicky Dewhirst      20  Paul Bowes           21
-Steven Longley      21  Kevin Rankin         14
+steve longley      21  Kevin Rankin         14
       Aggregate:   138         Aggregate:   139
          Points:     4            Points:     7
 
@@ -6577,7 +6577,7 @@ Nigel Swailes       21  Kath Mazurke          7
 Nigel Wormald       20  Simon Wider          21
 Ian Wilson          21  Angela Carter        20
 Nick Jagger         21  Alan Mazurke         13
-Stuart Firth        21  Steven Longley       10
+Stuart Firth        21  steve longley       10
 Thomas Jagger       21  Jim Moorin           12
 Jimmy Hearne        21  Philip Richards       6
       Aggregate:   167         Aggregate:   109
@@ -6929,7 +6929,7 @@ Kath Mazurke        14  Mark Dobson          21
 Philip Thornton     21  Wayne Kemp           18
 Jim Moorin          15  Alex Wolfenden       21
 Nicky Dewhirst      21  Jacob Goodall         7
-Steven Longley      21  Aidan Haley           8
+steve longley      21  Aidan Haley           8
 Alan Mazurke        10  Sam Beresford        21
       Aggregate:   144         Aggregate:   112
          Points:     7            Points:     3
