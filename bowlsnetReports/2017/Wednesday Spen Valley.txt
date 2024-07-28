@@ -1579,7 +1579,7 @@ Terry Varney        21  Brenda Chaffer        5
 
       Division 2             Wed 19th Apr
 Cleckheaton Sports 'A'   Littlemoor S &amp; SC 'B'
-Michael Rhodes      21  steve gardner       14
+Michael Rhodes      21  Steve Gardner       14
 David Marshall      20  Philip Vayro         21
 Andrew Page         21  Angela Carter        15
 Greg Hutchinson     17  Alan Mazurke         21
@@ -1908,7 +1908,7 @@ Nick Jagger         21  Ben Falkingham       12
 Trevor Benn         21  Jim Moorin            9
 Chris Sowden        21  Alan Mazurke         14
 Andrew Fowler       21  Kath Bywell          13
-Robert Wilkinson    16  steve gardner       21
+Robert Wilkinson    16  Steve Gardner       21
 Neil Tordoff        21  Terry Laidlaw         6
 David Leaper        12  Philip Vayro         21
 Malcolm Fowler      21  Angela Carter         8
@@ -2248,7 +2248,7 @@ Terry Laidlaw       21  Neil Broadbent        7
 Neil Porter         21  Graham Hall          12
 Ben Falkingham      21  Gaye Wood             3
 Angela Carter       14  Trevor Heley         21
-steve gardner      21  Richard Humpleby      9
+Steve Gardner      21  Richard Humpleby      9
 Alan Mazurke        10  Anthony Sutcliffe    21
       Aggregate:   150         Aggregate:    85
          Points:     8            Points:     2
@@ -2623,7 +2623,7 @@ Kath Icke           15  Jim Moorin           21
 Liam Gleave         21  Angela Carter         9
 Jason Tozer         15  Kath Mazurke         21
 Tony Quinn          21  Terry Laidlaw        17
-Janice Walton       11  steve gardner       21
+Janice Walton       11  Steve Gardner       21
 Andrew Robinson     21  Ben Falkingham       13
 Stuart Johnson      16  Alan Mazurke         21
 Reuben Taylor        6  Paul Bowes           21
@@ -2935,7 +2935,7 @@ Kath Mazurke        18  Mel Stradling        21
 Brian Richards      21  Colin Fisher         16
 Jim Moorin          21  Duncan Terry         11
 Angela Carter       21  David Sharp          11
-steve gardner      21  Andrew Foggo         13
+Steve Gardner      21  Andrew Foggo         13
 Ben Falkingham      17  David Bentley        21
 Simon Wider         20  Terry Varney         21
 Alan Mazurke        16  Graham Sheard        21
@@ -3270,7 +3270,7 @@ Luke Sandland       21  Gary Barraclough     15
       Division 2             Wed 24th May
   Horsforth Woodside     Littlemoor S &amp; SC 'B'
 David Hill          21  Alan Mazurke         18
-Ian Matthews        13  steve gardner       21
+Ian Matthews        13  Steve Gardner       21
 Graham A Chaffer    21  Simon Wider           8
 Steven Bottomley    21  Ben Falkingham       12
 Carol Matthews      21  Angela Carter        15
@@ -3638,7 +3638,7 @@ Jim Moorin          21  Thomas Jagger         4
 Angela Carter       21  Ian Wilson            4
 Kath Mazurke        21  Carl Molineux        18
 Ben Falkingham      21  Glenn Molineux       14
-steve gardner      21  Phil Brooke           3
+Steve Gardner      21  Phil Brooke           3
 Alan Mazurke        21  Andy Bairstow        16
 Nicky Dewhirst      21  Andy Walker          11
       Aggregate:   168         Aggregate:    77
@@ -3926,7 +3926,7 @@ Craig Hebbard       21  Daniel Teale          8
 Glen Pratt          21  Duncan McPhail        4
 Glen Smith          21  James Teale          12
 Philip Vayro        21  Dave Norris          16
-steve gardner      21  David Beardsworth     3
+Steve Gardner      21  David Beardsworth     3
       Aggregate:   158         Aggregate:    81
          Points:     9            Points:     1
 
@@ -4615,7 +4615,7 @@ Jim Moorin          21  Chris Bray            7
 Jack Bowes          21  John Wilson          11
 Angela Carter       21  Steve Bishop         17
 Simon Wider         21  Liam Gleave          12
-steve gardner      21  David Marshall       17
+Steve Gardner      21  David Marshall       17
       Aggregate:   149         Aggregate:   121
          Points:     8            Points:     2
 
@@ -4924,7 +4924,7 @@ Angela Carter       21  Robert Wilkinson      9
 Paul Bowes          21  Jimmy Hearne         11
 Jim Moorin          20  Andrew Fowler        21
 Ben Falkingham      16  Neil Tordoff         21
-steve gardner      21  Chris Sowden          9
+Steve Gardner      21  Chris Sowden          9
 Kath Mazurke        17  Malcolm Fowler       21
 Jack Bowes          20  Trevor Benn          21
 Mark Allman         21  Nick Jagger          12
@@ -5298,7 +5298,7 @@ Nigel Wormald       19  Paul Jagger          21
       Division 2             Wed 19th Jul
      Rastrick 'A'        Littlemoor S &amp; SC 'B'
 Richard Humpleby    10  Simon Wider          21
-Trevor Heley        21  steve gardner       11
+Trevor Heley        21  Steve Gardner       11
 Graham Hall         17  Angela Carter        21
 Anthony Sutcliffe   21  Alan Mazurke         13
 Neil Broadbent      21  Paul Bowes           18
@@ -6028,7 +6028,7 @@ Mirfield Old Bank 'B'    Littlemoor S &amp; SC 'B'
 Graham Sheard        6  Simon Wider          21
 David Sharp         21  Ben Falkingham       20
 Colin Fisher        21  Terry Laidlaw        15
-Walter Morgan       21  steve gardner       19
+Walter Morgan       21  Steve Gardner       19
 Brian Scarth        21  Jim Moorin           10
 John Green          17  Paul Bowes           21
 Mel Stradling       10  Paul Jacques         21
@@ -6408,7 +6408,7 @@ Alan Mazurke        21  Brian Dowling        19
 Mark Allman         21  Simon Chaffer         5
 Paul Jacques        21  Mandy Wilson         14
 Angela Carter       21  Steven Bottomley     16
-steve gardner      14  Ian Matthews         21
+Steve Gardner      14  Ian Matthews         21
 Simon Wider         21  David Hill            4
       Aggregate:   161         Aggregate:    96
          Points:     9            Points:     1
@@ -6797,7 +6797,7 @@ Nigel Wormald       21  Alan Mazurke         19
 Nigel Swailes       21  Philip Richards      11
 Phil Brooke         21  Paul Bowes           16
 Glenn Molineux      18  Jim Moorin           21
-Andy Bairstow       21  steve gardner       11
+Andy Bairstow       21  Steve Gardner       11
 Andy Walker         21  Ben Falkingham       15
 Thomas Jagger       12  Simon Wider          21
       Aggregate:   154         Aggregate:   135
