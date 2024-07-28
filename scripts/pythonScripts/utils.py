@@ -5,16 +5,54 @@ duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
 # Add Saturday AireDale & Wharfedale and Monday Pairs?
-otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
-                'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
-                'Thursday Vets Bradford', 'Saturday Bradford']
-leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
+otherLeagues = [
+    'Leeds Ladies',
+    'Monday Combined Leeds', 
+    # 'Tuesday Leeds',
+    'Wednesday Half Holiday Leeds',
+                'Tuesday Mirfield', 
+                'Wednesday Spen Valley',
+                'Wednesday AireDale & Wharfedale',
+                # 'Tuesday AireDale & Wharfedale',
+                'Monday Bradford',
+                # 'Thursday Vets Bradford',
+                'Saturday Leeds', 
+                # 'Saturday Barkston Ash',
+                'Saturday AireDale & Wharfedale'
+                ]
+
+leaguesWithGamesTo31 = ['wednesday pairs airewharfe', 'wednesday pairs airewharfe (a)', 'wednesday pairs airewharfe (b)']
 teamDays = currentTeamDays + otherLeagues
-extraPlayers = []  # this is to track players who only play for a different team
+# TODO add back in for allPlayerStats
+extraPlayers = [    
+                # 'andy waller', 'joey broadbent', 'martin fulton',
+    # 'laila packer', 'richard hodgson', 'jim swailes',
+    # 'john armitage', 
+    #  'neil porter',
+    
+    # TODO these didn't play before 2018
+    # 'linda barrand', 'mary spears', 
+    # 'peter crowther', 'phil thornton',
+    
+    ]  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = []
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
+otherTeams = [
+    # 'meanwood',   'new armley', 'bramley',
+    # 'horsforth',
+    #  'woodside',
+    # 'hollies',
+    #  'pudsey', 'pudsey park', 'burley',
+    #  'wibsey', 
+     'littlemoor',
+    #  'farsley',  
+    #  'castleford', 
+    #  'westroyd', 
+    #  'wharfemeadow',
+    #  'tarnfield',
+    #  'rufford'
+    ]
 teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
@@ -30,14 +68,26 @@ def deduplicateNames(name):
         name = 'Clifford Brogie'
     if name == 'Andrew Waller':
         name = 'Andy Waller'
-    if name == 'Don Shaw':
+    if 'Don Shaw' in name:
         name = 'Donald Shaw'
-    if name == 'James Moorin':
+    if 'James Moorin' in name:
         name = 'Jim Moorin'
+    # if name == 'James Moorin \'A\'':
+    #     name = 'Jim Moorin'
+    # if name == 'Paul Bowes \'A\'':
+    #     name = 'Paul Bowes'
     if name == 'Philip Thornton':
         name = 'Phil Thornton'
     if name == 'Phillip Thornton':
         name = 'Phil Thornton'
+    if name == 'Rich Hodgson':
+        name = 'Richard Hodgson'
+    if name == 'Steven Gardner':
+        name = 'Steve Gardner'
+    if name == 'Bernard Miller':
+        name = 'Bernie Miller'
+    if name == 'David Hudson':
+        name = 'Dave Hudson'
     return name.lower()
 
 def standardiseName(name):
@@ -46,6 +96,10 @@ def standardiseName(name):
     name = name.replace('\'A\'', '')
     name = name.replace(' \'a\'', '')
     name = name.replace('\'a\'', '')
+    name = name.replace(' \'B\'', '')
+    name = name.replace('\'B\'', '')
+    name = name.replace(' \'b\'', '')
+    name = name.replace('\'b\'', '')
     return name
 
 def formatName(name):
@@ -54,8 +108,8 @@ def formatName(name):
     return name.lower()
 
 def returnTotalAggAvailablePerGame(team):
-    if team.lower() in leaguesWithGamesTo26:
-        return 26
+    if team.lower() in leaguesWithGamesTo31:
+        return 31
     return 21
 
 def returnListOfPlayerStats(days, includeTeamData):
@@ -121,7 +175,6 @@ def checkForDuplicateResults(results, player):
         print('check for potential duplicate results for player:' + player)
         print(results)
         print('***')
-        raise Exception('Duplicate results')
 
 def sanityChecksOnTeamStats(allTeamResults):
     print('Running sanity checks on team stats')

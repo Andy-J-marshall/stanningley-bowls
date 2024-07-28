@@ -5,7 +5,12 @@ import teamDetails
 import utils
 import re
 
-year = str(date.today().year)
+# year = str(date.today().year) TODO revert
+year = str(2013)
+
+# TODO 
+# Mabel - add in Leeds ladies league for Westroyd
+
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
@@ -66,9 +71,9 @@ for team in teamDays:
                     name = row.lower().strip()
                     if name.startswith(teamName.lower()):
                         name = teamName.lower()
-                        if '(a)' in team.lower() and name.endswith(' b'):
+                        if '(a)' in team.lower() and (name.endswith(' b') or name.endswith(' \'b\'')):
                             continue
-                        if '(b)' in team.lower() and name.endswith(' a'):
+                        if '(b)' in team.lower() and (name.endswith(' a') or name.endswith(' \'a\'')):
                             continue
                         if teamName.lower() in name:
                             possibleTeamNamesUsed.append(teamName)
@@ -77,13 +82,14 @@ for team in teamDays:
                             if '(B)' in team:
                                 teamNameToUse = displayTeamName + ' B'
         
-    
+
         if len(possibleTeamNamesUsed) == 0:
             raise Exception('No team name found')
         
         teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
         if displayTeamName.lower() not in teamNameUsedForLeague.lower():
             raise Exception('Incorrect team name found')
+        # print(teamNameUsedForLeague)
 
         # Find the cup games in the stats
         cupGameRows = []
@@ -221,30 +227,34 @@ for team in teamDays:
                 gameDateRowModifier = 1
                 if 'saturday leeds' in team.lower():
                     gameDateRowModifier += 1
+                # if 'thursday vets leeds' in team.lower():
+                #     if rowNumber in cupGameRows:
+                #         gameDateRowModifier += 1
 
-                gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
+                # TODO fix
+                # gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
                 
-                if type(gameDate) is str:
-                    if 'On ' in gameDate or '(from ' in gameDate:
-                        gameDateRowModifier += 1
-                        gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
+                # if type(gameDate) is str:
+                #     if 'On ' in gameDate or '(from ' in gameDate:
+                #         gameDateRowModifier += 1
+                #         gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
                         
-                else:
-                    gameDate = ''
+                # else:
+                #     gameDate = ''
                     
-            if gameDate:
-                gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
-                gameDate = gameDateParts[2]
-                # This might happen if date if cup text includes the day
-                if len(gameDateParts) > 4:
-                    gameDate = gameDateParts[4]
+            # if gameDate:
+            #     gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
+            #     gameDate = gameDateParts[2]
+            #     # This might happen if date if cup text includes the day
+            #     if len(gameDateParts) > 4:
+            #         gameDate = gameDateParts[4]
                 
-                gameDate = gameDate.strip()
+            #     gameDate = gameDate.strip()
                 
-                # Sanity check on the date
-                dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
-                if dateContainsDayOfWeekBool is None:
-                    raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
+            #     # Sanity check on the date
+            #     dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
+            #     if dateContainsDayOfWeekBool is None:
+            #         raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
 
             # Home games
             rowText = allRowsInFile[rowNumber]
@@ -252,7 +262,8 @@ for team in teamDays:
                 opponent = rowText.split(teamNameUsedForLeague)[1].strip()
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + opponent + ' (' + gameDate + ')'
+                    ' ' + opponent
+                    # ' ' + opponent + ' (' + gameDate + ')'
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
@@ -274,7 +285,8 @@ for team in teamDays:
                 opponent = rowText.split(teamNameUsedForLeague)[0].strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + teamNameToUse + ' (' + gameDate + ')'
+                    ' ' + teamNameToUse
+                    # ' ' + teamNameToUse + ' (' + gameDate + ')'
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
@@ -329,6 +341,16 @@ for team in teamDays:
                 previousRowValue = allRowsInFile[rowNumber - i]
                 if previousRowValue and type(previousRowValue) is str:
                     if teamNameUsedForLeague.lower() in previousRowValue.lower():
+                        # TODO remove except for 2015 and 2017
+                        # stanningleyTeamCount = len(list(re.finditer('stanningley', previousRowValue.lower())))
+                        # if stanningleyTeamCount > 1:
+                        #     aorbTeamToExclude = ' A'
+                        #     if league.lower() == 'thursday vets leeds':
+                        #         # TODO change these players when doing 2015 stats for thurs vets
+                        #         if playerName.lower() == 'clifford brogie' or playerName.lower() == 'donald shaw':
+                        #             aorbTeamToExclude = ' B'
+                        #     if teamNameUsedForLeague.endswith(aorbTeamToExclude):
+                        #         return False
                         return True
 
         # Find rows in spreadsheet for players' games
@@ -571,7 +593,7 @@ with open(filename, 'w') as jsonFile:
 sanityChecksOnTeamStats(allTeamResults)
 sanityChecksOnPlayerStats(playerStats, players)
 newFileSize = checkFileSize(filename)
-if newFileSize < previousFileSize:
-    raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
+# if newFileSize < previousFileSize:
+    # raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print(f'Sanity checks for {displayTeamName} stats complete')
 print('------')

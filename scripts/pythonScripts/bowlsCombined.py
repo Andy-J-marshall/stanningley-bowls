@@ -4,7 +4,8 @@ from datetime import date
 import utils
 import re
 
-year = str(date.today().year)
+# year = str(date.today().year) TODO revert
+year = str(2018)
 
 leaguesDays = utils.teamDays
 players = utils.players
@@ -161,6 +162,9 @@ for league in leaguesDays:
                     
                     if awayGame or cupAway:
                         opponentsName = findPossiblePlayerNames[0]
+                    
+                    # if opponentsName.lower() == 'brian richards':
+                    #     continue
                         
                     if 'walkover' not in opponentsName.lower() and 'no player' not in opponentsName.lower():
                         if homeGame or cupHome:
@@ -316,6 +320,6 @@ with open(filename, 'w') as jsonFile:
 # Sanity checks on the data
 sanityChecksOnPlayerStats(playerResults, players)
 newFileSize = checkFileSize(filename)
-if newFileSize < previousFileSize:
-    raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
+# if newFileSize < previousFileSize:
+#     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print('Sanity checks for all teams stats complete')

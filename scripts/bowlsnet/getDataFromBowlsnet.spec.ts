@@ -7,7 +7,8 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
-const year = new Date().getFullYear();
+// const year = new Date().getFullYear();
+const year = 2023;
 
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
@@ -15,65 +16,9 @@ function sleep() {
 
 const teams = [
   {
-    day: 'Monday Combined Leeds',
-    url: '/Leeds-MonComb',
-  },
-  {
-    day: 'Tuesday Vets Leeds',
-    url: '/Leeds-TueVets',
-  },
-  {
-    day: 'Tuesday Leeds',
-    url: '/Leeds-Tue',
-  },
-  {
-    day: 'Wednesday Half Holiday Leeds',
-    url: '/Leeds-Wed',
-  },
-  {
-    day: 'Wednesday Pairs AireWharfe',
-    url: '/AW-WedPairs',
-  },
-  {
-    day: 'Thursday Vets Leeds',
-    url: '/Leeds-ThuVets',
-  },
-  {
-    day: 'Saturday Leeds',
-    url: '/Leeds-Sat',
-  },
-  {
-    day: 'Tuesday Mirfield',
-    url: '/Mirfield',
-  },
-  {
-    day: 'Wednesday Spen Valley',
-    url: '/WestRiding',
-  },
-  {
-    day: 'Monday AireDale & Wharfedale',
-    url: '/AW-Mon',
-  },
-  {
-    day: 'Tuesday AireDale & Wharfedale',
-    url: '/AW-Vets',
-  },
-  {
-    day: 'Monday Bradford',
-    url: '/Bradford-Mon',
-  },
-  {
-    day: 'Wednesday Half Holiday Bradford',
-    url: '/Bradford-HalfHol',
-  },
-  {
-    day: 'Thursday Vets Bradford',
-    url: '/Bradford-Vets',
-  },
-  {
-    day: 'Saturday Bradford',
-    url: '/Bradford-Sat',
-  },
+    day: 'Leeds Ladies',
+    url: '/LeedsLadies?DB=' + year,
+  }
 ];
 
 for (const team of teams) {
@@ -104,13 +49,13 @@ for (const team of teams) {
     // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Info.')
+      .getByText('Report')
       .click();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .frameLocator('iframe[title="BowlsNet Dlg"]')
-      .getByRole('button', { name: 'League Report...' })
-      .click();
+    // await page
+    //   .frameLocator('iframe[title="BowlsNet Page"]')
+    //   .frameLocator('iframe[title="BowlsNet Dlg"]')
+    //   .getByRole('button', { name: 'League Report...' })
+    //   .click();
 
     // Choose report options
     await page
