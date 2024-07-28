@@ -1955,9 +1955,9 @@ Helen Simpson       21  Alan Mazurke            7
  Division 2 - Godwin          Sat 20th Apr
       Guiseley A                Pudsey B
 Joe Stockdale       21  Andy Hodgson           18
-Jeff Bolton (a)      8  Richard Hodgson (b)    21
+Jeff Bolton (a)      8  Richard Hodgson    21
 Thomas Cater        19  Stuart Hanson          21
-Kenneth Bull        21  Stewart Watson (b)     15
+Kenneth Bull        21  stewart watson     15
 Michael Hall        21  David Hilliam          20
 David Norris        10  Debbie Davis           21
 David Leather       12  Neil Nicholson         21
@@ -2587,8 +2587,8 @@ Richard Firth       17  Andrew Durkin          21
 Andy Hodgson        13  Anthony Naylor         21
 Dan Beardsworth (b) 21  John Horsley            8
 Stuart Hanson       21  Jack Hemmins            4
-Richard Hodgson (b) 21  Russell Swailes        14
-Stewart Watson (b)  12  Tom Gasson             21
+Richard Hodgson 21  Russell Swailes        14
+stewart watson  12  Tom Gasson             21
 Debbie Davis        21  Trevor Gasson          20
 Neil Nicholson      21  Peter Owen             10
 Mick Smith          21  Raymond Stansfield     12
@@ -3186,10 +3186,10 @@ Michael Rennison    21  Donald Jones           17
        Pudsey B               Greengates A
 Andy Hodgson        21  Peter Wilson            5
 Stuart Hanson       21  David Rankin           10
-Richard Hodgson (b) 21  Tommy Powell           15
+Richard Hodgson 21  Tommy Powell           15
 David Hilliam       21  Richard Kearns          6
 Debbie Davis        21  Paul Ridealgh (a)      11
-Stewart Watson (b)  21  Chris Lodge            13
+stewart watson  21  Chris Lodge            13
 Neil Nicholson      21  Kay Lodge               6
 Jeff Ramsden        21  Martin Wilson          16
 Connor Davis        21  Matthew Connolly       18
@@ -3786,10 +3786,10 @@ John Butterworth    17  John Horsley           21
         Wyke A                  Pudsey B
 Mike Lambert        16  Andy Hodgson           21
 Robert Wilkinson    18  Stuart Hanson          21
-Peter Jagger (a)    21  Richard Hodgson (b)     8
+Peter Jagger (a)    21  Richard Hodgson     8
 Trevor Benn         21  David Hilliam          16
 John Armitage       20  Debbie Davis           21
-Tony Throup (a)     10  Stewart Watson (b)     21
+Tony Throup (a)     10  stewart watson     21
 Richard Crowther (a)13  Neil Nicholson         21
 Peter Senior        21  Jeff Ramsden            9
 Robert Firth        10  Connor Davis           21
@@ -4371,9 +4371,9 @@ Phil Hill           21  John Horsley            9
       Rufford A                 Pudsey B
 David Kirkbright     9  Mick Smith             21
 Martyn Benson (a)   21  Ian Shaw               16
-Ryan Benson (a)     21  Stewart Watson (b)     15
+Ryan Benson (a)     21  stewart watson     15
 David Whelan (b)    21  Dan Beardsworth (b)    19
-Andy Newell (b)     20  Richard Hodgson (b)    21
+Andy Newell (b)     20  Richard Hodgson    21
 Debbie Kirkbright    6  Stuart Hanson          21
 Neil Howlett        11  Jeff Ramsden           21
 Steve Ainley        21  Mark Morris             9
@@ -4986,9 +4986,9 @@ Paul Ridealgh (a)   16  Peter Senior           21
        Pudsey B                Hove Edge A
 Andy Hodgson        21  Ross Halstead          10
 Ian Kemp            17  Kenny Barker (a)       21
-Richard Hodgson (b) 21  Lynne Saxby            15
+Richard Hodgson 21  Lynne Saxby            15
 Stuart Hanson       21  Louise Whiteley        10
-Stewart Watson (b)  18  Julie Mallinson        21
+stewart watson  18  Julie Mallinson        21
 Debbie Davis         7  Christine Barker (a)   21
 Jeff Ramsden        21  Peter Martin           14
 Mark Morris         21  Nigel Firth             8
@@ -5946,7 +5946,7 @@ Jeff Bolton (a)     21  Danny Fountain          6
        Cranmore                 Pudsey B
 Michael Goodall     12  Jeff Ramsden           21
 Matthew Turner      21  Kevin Rankin           19
-Graham Butterfield  21  Richard Hodgson (b)     7
+Graham Butterfield  21  Richard Hodgson     7
 Les Oddy            10  Dan Beardsworth (b)    21
 David Fletcher      16  Ian Shaw               21
 Craig Oddy          21  Dave Smith             19
@@ -6576,8 +6576,8 @@ Matthew Connolly    21  Donald Jones           16
        Pudsey B                 Whitkirk
 Dave Smith          21  Arthur Butler           6
 Andy Hodgson        21  Phil Vayro              8
-Richard Hodgson (b) 21  Phil Hill              16
-Stewart Watson (b)  21  Brian Sunter           12
+Richard Hodgson 21  Phil Hill              16
+stewart watson  21  Brian Sunter           12
 Jeff Ramsden        10  Phil Cooper            21
 David Hilliam       13  Tony Green             21
 Mick Smith          20  Nichole Farrar         21
@@ -7595,7 +7595,7 @@ Mick Bailey         13  Andy Newell (b)        21
  Division 2 - Godwin          Sat 20th Jul
  Pudsey Littlemoor B            Pudsey B
 Alan Mazurke         9  Connor Davis           21
-Kath Mazurke        21  Stewart Watson (b)     15
+Kath Mazurke        21  stewart watson     15
 Luke Thompson       11  Dan Beardsworth (b)    21
 Robbie Ellis        21  David Hilliam          15
 Bob Dove            21  Alan Jessop             6
@@ -8194,10 +8194,10 @@ Paul Ridealgh (a)   12  Kevin Wood             21
 
  Division 2 - Godwin          Sat 27th Jul
        Pudsey B            Pudsey Littlemoor B
-Richard Hodgson (b) 21  Kath Mazurke           10
+Richard Hodgson 21  Kath Mazurke           10
 Neil Nicholson      14  Terry Laidlaw          21
 Stuart Hanson       21  Angela Carter           8
-Stewart Watson (b)  21  Kath Bywell             7
+stewart watson  21  Kath Bywell             7
 Mick Smith          21  Ken Walker             15
 Debbie Davis        21  Bob Dove               15
 Mark Morris         21  Margaret Slater        13
@@ -8735,7 +8735,7 @@ Paul Jacques        15  Paul Gill              21
  Division 2 - Godwin           Sat 3rd Aug
   Brighouse Sports B            Pudsey B
 Mark McGorlick      21  Stuart Hanson          14
-Kevin Wood          12  Richard Hodgson (b)    21
+Kevin Wood          12  Richard Hodgson    21
 Peter Owen          21  Neil Nicholson         18
 Trevor Gasson       21  Steve Emmett           14
 Anthony Naylor      21  Andy Hodgson           19
@@ -9380,8 +9380,8 @@ Matthew Connolly    20  Michael Rennison       21
  Division 2 - Godwin          Sat 10th Aug
        Pudsey B                Guiseley A
 Neil Nicholson      21  Gary Whelan (a)        14
-Richard Hodgson (b) 21  Michael Hall           19
-Stewart Watson (b)  21  Jeff Bolton (a)        10
+Richard Hodgson 21  Michael Hall           19
+stewart watson  21  Jeff Bolton (a)        10
 Debbie Davis        21  Kenneth Bull           20
 Stuart Hanson       21  Colin Matthewman       11
 Mark Morris         19  Andrew Durkin          21
@@ -9982,13 +9982,13 @@ Michael Rennison    16  Phil Hill              21
 Andy Hodgson        21  Mike Lambert           18
 Stuart Hanson       21  Jimmy Hearne            5
 Peter Harding        3  Peter Jagger (a)       21
-Stewart Watson (b)   6  Trevor Benn            21
+stewart watson   6  Trevor Benn            21
 Debbie Davis        12  John Armitage          21
 Alan Jessop          5  Tony Throup (a)        21
 Sue Chadwick         4  Richard Crowther (a)   21
 Connor Davis        21  Robert Firth           15
 Mark Morris         21  Robert Wilkinson       16
-Richard Hodgson (b) 17  Peter Senior           21
+Richard Hodgson 17  Peter Senior           21
       Aggregate:   131           Aggregate:   180
          Points:     9              Points:    21
 
@@ -10594,9 +10594,9 @@ Tony Throup (a)     21  Janice Naylor          20
 
  Division 2 - Godwin          Sat 24th Aug
      Greengates A               Pudsey B
-Peter Wilson        21  Stewart Watson (b)     20
+Peter Wilson        21  stewart watson     20
 Bob Jeffrey          8  Andy Hodgson           21
-Richard Firth       13  Richard Hodgson (b)    21
+Richard Firth       13  Richard Hodgson    21
 Stuart Wilson (a)   21  Connor Davis            8
 Colin Rhodes (a)    10  Ian Shaw               21
 Martin Wilson       21  Debbie Davis           17
@@ -11185,8 +11185,8 @@ Kevin Rankin        21  John Fletcher           6
 Mark Morris         21  Debbie Kirkbright       7
 Debbie Davis        21  Steve Ainley            9
 Ian Kemp            21  David Kirkbright       11
-Richard Hodgson (b)  8  Allan Caine            21
-Stewart Watson (b)  21  Martyn Benson (a)      18
+Richard Hodgson  8  Allan Caine            21
+stewart watson  21  Martyn Benson (a)      18
 Ian Shaw            21  David Whelan (b)       12
 Andy Hodgson        16  Ryan Benson (a)        21
       Aggregate:   183           Aggregate:   146
@@ -11780,9 +11780,9 @@ Donald Jones        21  Mark McGorlick         12
  Division 2 - Godwin           Sat 7th Sep
      Hove Edge A                Pudsey B
 Lisa Whiteley        8  Ian Shaw               21
-Lynne Saxby         21  Richard Hodgson (b)    10
+Lynne Saxby         21  Richard Hodgson    10
 Peter Martin        21  Kevin Rankin           15
-Les Crossley        13  Stewart Watson (b)     21
+Les Crossley        13  stewart watson     21
 Julie Mallinson     16  Andy Hodgson           21
 Steven Airey        21  Sue Chadwick           19
 Richard Hopley      21  Debbie Davis           15
@@ -12385,8 +12385,8 @@ Neil Nicholson      21  Matthew Turner          7
 Connor Davis        21  Darren Cookson         13
 Mark Morris         13  Irene Turner           21
 Debbie Davis        21  Katie Turner            9
-Stewart Watson (b)  19  Craig Oddy             21
-Richard Hodgson (b) 21  David Fletcher         16
+stewart watson  19  Craig Oddy             21
+Richard Hodgson 21  David Fletcher         16
 Andy Hodgson        21  Gary Wilson            17
 Ian Shaw            21  Michael Goodall        16
       Aggregate:   200           Aggregate:   144
@@ -12972,8 +12972,8 @@ David McGourty      21  Andy Hodgson           15
 Phil Hill           20  Debbie Davis           21
 Nichole Farrar      21  Stuart Hanson          11
 Arthur Butler       20  Connor Davis           21
-Tony Green          16  Stewart Watson (b)     21
-Brian Sunter        21  Richard Hodgson (b)    12
+Tony Green          16  stewart watson     21
+Brian Sunter        21  Richard Hodgson    12
       Aggregate:   191           Aggregate:   171
          Points:    17              Points:    13
 
