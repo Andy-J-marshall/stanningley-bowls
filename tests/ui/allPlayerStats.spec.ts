@@ -112,7 +112,7 @@ test('Summary of Dave Hudson stats since 2013 for all teams is correct', async (
   await playerStatsPage.selectAllTeamStatsCheckbox();
 
   await playerStatsPage.selectSince2013Checkbox();
-  playerStatsPage.playerStatsAreCorrectInTable('449', '170', '38%', '-2.40');
+  playerStatsPage.playerStatsAreCorrectInTable('463', '174', '38%', '-2.48');
 });
 
 test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
