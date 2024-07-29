@@ -65,7 +65,7 @@ West Bradford A      10    97   v.   Spen Victoria        16   117
 ------------------------------------------------------------------------
         Mon 22nd Apr                   Division 3 (City Sports)        
 ------------------------------------------------------------------------
-Brackenhill A        13   107   v.   Pudsey Littlemoor    13   111     
+Brackenhill A        13   107   v.   Littlemoor    13   111     
 Bradford Moor A      19   120   v.   Shipley Club C        7    85     
 Myrtle B             12   106   v.   Crowghyll B          14   108     
 Tyersal A            15   113   v.   Birkenshaw A         11   102     
@@ -112,7 +112,7 @@ Ladyhill B           20   114   v.   Crowghyll A           6    77
 Tyersal A            19   121   v.   Myrtle B              7    91     
 Crowghyll B          12   102   v.   Bradford Moor A      14   107     
 Peel B               19   110   v.   Brackenhill A         7    85     
-Pudsey Littlemoor     9    93   v.   Birkenshaw A         17   114     
+Littlemoor     9    93   v.   Birkenshaw A         17   114     
 ------------------------------------------------------------------------
         Mon 29th Apr                 Division 4 (Carter's Sports)      
 ------------------------------------------------------------------------
@@ -155,7 +155,7 @@ Drighlington B       23   126   v.   Ladyhill B            3    79
 ------------------------------------------------------------------------
 Brackenhill A        14   112   v.   Shipley Club C       12   107     
 Bradford Moor A      10    92   v.   Tyersal A            16   105     
-Pudsey Littlemoor    15   113   v.   Peel B               11    99     
+Littlemoor    15   113   v.   Peel B               11    99     
 Birkenshaw A         23   126   v.   Myrtle B              3    82     
 ------------------------------------------------------------------------
          Mon 6th May                 Division 4 (Carter's Sports)      
@@ -199,7 +199,7 @@ Wibsey A             18   106   v.   Drighlington B        8    82
 ------------------------------------------------------------------------
 Myrtle B             17   111   v.   Bradford Moor A       9    93     
 Crowghyll B          18   116   v.   Brackenhill A         8    89     
-Shipley Club C       19   119   v.   Pudsey Littlemoor     7    93     
+Shipley Club C       19   119   v.   Littlemoor     7    93     
 Peel B               14   111   v.   Birkenshaw A         12   104     
 ------------------------------------------------------------------------
         Mon 13th May                 Division 4 (Carter's Sports)      
@@ -243,7 +243,7 @@ Drighlington B       19   114   v.   Spen Victoria         7    80
 ------------------------------------------------------------------------
 Brackenhill A         9    94   v.   Tyersal A            17   113     
 Peel B               21   117   v.   Shipley Club C        5    74     
-Pudsey Littlemoor    10   101   v.   Crowghyll B          16   115     
+Littlemoor    10   101   v.   Crowghyll B          16   115     
 Birkenshaw A         20   114   v.   Bradford Moor A       6    76     
 ------------------------------------------------------------------------
         Mon 20th May                 Division 4 (Carter's Sports)      
@@ -286,7 +286,7 @@ Spen Victoria        11   109   v.   Ladyhill B           15   118
          Mon 3rd Jun                   Division 3 (City Sports)        
 ------------------------------------------------------------------------
 Myrtle B             16   113   v.   Brackenhill A        10   103     
-Tyersal A            16   107   v.   Pudsey Littlemoor    10    88     
+Tyersal A            16   107   v.   Littlemoor    10    88     
 Crowghyll B          18   119   v.   Peel B                8    91     
 Shipley Club C       15   114   v.   Birkenshaw A         11   100     
 ------------------------------------------------------------------------
@@ -329,7 +329,7 @@ Oakenshaw A          14   111   v.   Wibsey A             12   109
 ------------------------------------------------------------------------
         Mon 10th Jun                   Division 3 (City Sports)        
 ------------------------------------------------------------------------
-Bradford Moor A      21   123   v.   Pudsey Littlemoor     5    86     
+Bradford Moor A      21   123   v.   Littlemoor     5    86     
 Myrtle B              4    77   v.   Peel B               22   124     
 Tyersal A            24   124   v.   Shipley Club C        2    64     
 Crowghyll B          18   113   v.   Birkenshaw A          8    89     
@@ -376,7 +376,7 @@ Drighlington B       20   125   v.   West Bradford A       6    90
 Brackenhill A         9   100   v.   Bradford Moor A      17   117     
 Shipley Club C        9    95   v.   Crowghyll B          17   115     
 Peel B               14    97   v.   Tyersal A            12    95     
-Pudsey Littlemoor    10    92   v.   Myrtle B             16   110     
+Littlemoor    10    92   v.   Myrtle B             16   110     
 ------------------------------------------------------------------------
         Mon 17th Jun                 Division 4 (Carter's Sports)      
 ------------------------------------------------------------------------
@@ -420,7 +420,7 @@ West Bradford A      14   108   v.   Oakenshaw A          12   104
 Brackenhill A        12   108   v.   Peel B               14   112     
 Bradford Moor A      10   100   v.   Crowghyll B          16   116     
 Myrtle B             12    99   v.   Tyersal A            14   105     
-Birkenshaw A         21   117   v.   Pudsey Littlemoor     5    81     
+Birkenshaw A         21   117   v.   Littlemoor     5    81     
 ------------------------------------------------------------------------
         Mon 24th Jun                 Division 4 (Carter's Sports)      
 ------------------------------------------------------------------------
@@ -464,7 +464,7 @@ Wibsey A             13   102   v.   Crowghyll A          13   106
 Myrtle B              9    95   v.   Birkenshaw A         17   113     
 Tyersal A            10   111   v.   Bradford Moor A      16   119     
 Shipley Club C       20   118   v.   Brackenhill A         6    84     
-Peel B               21   121   v.   Pudsey Littlemoor     5    85     
+Peel B               21   121   v.   Littlemoor     5    85     
 ------------------------------------------------------------------------
          Mon 1st Jul                 Division 4 (Carter's Sports)      
 ------------------------------------------------------------------------
@@ -507,7 +507,7 @@ Drighlington B       21   125   v.   Wibsey A              5    86
 ------------------------------------------------------------------------
 Brackenhill A        18   108   v.   Crowghyll B           8    86     
 Bradford Moor A      22   111   v.   Myrtle B              4    67     
-Pudsey Littlemoor    15   105   v.   Shipley Club C       11    94     
+Littlemoor    15   105   v.   Shipley Club C       11    94     
 Birkenshaw A         16   111   v.   Peel B               10    99     
 ------------------------------------------------------------------------
          Mon 8th Jul                 Division 4 (Carter's Sports)      
@@ -551,7 +551,7 @@ Spen Victoria        10    98   v.   Drighlington B       16   107
 ------------------------------------------------------------------------
 Bradford Moor A       9    98   v.   Birkenshaw A         17   117     
 Tyersal A            20   123   v.   Brackenhill A         6    87     
-Crowghyll B          17   119   v.   Pudsey Littlemoor     9   104     
+Crowghyll B          17   119   v.   Littlemoor     9   104     
 Shipley Club C       17   114   v.   Peel B                9    95     
 ------------------------------------------------------------------------
         Mon 15th Jul                 Division 4 (Carter's Sports)      
@@ -595,7 +595,7 @@ Drighlington B       17   113   v.   Oakenshaw A           9    98
 ------------------------------------------------------------------------
 Brackenhill A        11   110   v.   Myrtle B             15   114     
 Peel B               26   126   v.   Crowghyll B           0    54     
-Pudsey Littlemoor     3    71   v.   Tyersal A            23   121     
+Littlemoor     3    71   v.   Tyersal A            23   121     
 Birkenshaw A         16   110   v.   Shipley Club C       10   100     
 ------------------------------------------------------------------------
         Mon 22nd Jul                 Division 4 (Carter's Sports)      
@@ -639,7 +639,7 @@ Drighlington B       21   119   v.   Peel A                5    80
 ------------------------------------------------------------------------
 Shipley Club C        7    81   v.   Tyersal A            19   111     
 Peel B               22   126   v.   Myrtle B              4    87     
-Pudsey Littlemoor    11   108   v.   Bradford Moor A      15   120     
+Littlemoor    11   108   v.   Bradford Moor A      15   120     
 Birkenshaw A         17   123   v.   Crowghyll B           9    96     
 ------------------------------------------------------------------------
         Mon 29th Jul                 Division 4 (Carter's Sports)      
@@ -682,7 +682,7 @@ Oakenshaw A          16   116   v.   Ladyhill B           10   105
          Mon 5th Aug                   Division 3 (City Sports)        
 ------------------------------------------------------------------------
 Bradford Moor A      14   112   v.   Brackenhill A        12   108     
-Myrtle B             18   103   v.   Pudsey Littlemoor     8    79     
+Myrtle B             18   103   v.   Littlemoor     8    79     
 Tyersal A            24   126   v.   Peel B                2    71     
 Crowghyll B          19   120   v.   Shipley Club C        7    92     
 ------------------------------------------------------------------------
@@ -771,7 +771,7 @@ Drighlington B       17   102   v.   Crowghyll A           9    82
 ------------------------------------------------------------------------
 Crowghyll B          12   103   v.   Myrtle B             14   108     
 Shipley Club C       20   118   v.   Bradford Moor A       6    89     
-Pudsey Littlemoor    12   109   v.   Brackenhill A        14   110     
+Littlemoor    12   109   v.   Brackenhill A        14   110     
 Birkenshaw A         19   120   v.   Tyersal A             7    96     
 ------------------------------------------------------------------------
         Mon 19th Aug                 Division 4 (Carter's Sports)      
@@ -838,7 +838,7 @@ Wibsey D             17    99   v.   Thornton B            9    78
   6.  Shipley Club C       16    6   10    185
   7.  Myrtle B             16    7    9    179
   8.  Brackenhill A        16    3   11    168
-  9.  Pudsey Littlemoor    16    2   13    147
+  9.  Littlemoor    16    2   13    147
 
 === Division 4 (Carter's Sports)
                              Matches     Pnts
@@ -1259,7 +1259,7 @@ Tony Smith (a)        10  Lee Murgatroyd     21
             Points:   10           Points:   16
 
 Division 3 (City Sports)      Mon 22nd Apr
-     Brackenhill A          Pudsey Littlemoor
+     Brackenhill A          Littlemoor
 Alan Marsh            21  Kath Mazurke       19
 Ken Marsh             11  Angela Carter      21
 Gillian Benson        21  Bob Dove           17
@@ -1567,7 +1567,7 @@ Susan Rymer           21  Graham Wilkinson (a)                                  
             Points:   19           Points:    7
 
 Division 3 (City Sports)      Mon 29th Apr
-   Pudsey Littlemoor          Birkenshaw A
+   Littlemoor          Birkenshaw A
 Bob Dove              21  David Griffiths    15
 Ken Walker            21  Ronald Ellis       15
 Angela Carter         11  Stuart Blaylock (a)21
@@ -1831,7 +1831,7 @@ Alan Farrow (a)       21  Peter Simpson (a)  13
             Points:   10           Points:   16
 
 Division 3 (City Sports)       Mon 6th May
-   Pudsey Littlemoor             Peel B
+   Littlemoor             Peel B
 Angela Carter         18  David Firth        21
 Billy Thorpe          15  James Dennison (b) 21
 Ian Hibbert           21  Robert Denby       15
@@ -2106,7 +2106,7 @@ Trevor Hodgson        21  Graham Wilkinson (a)8
             Points:   18           Points:    8
 
 Division 3 (City Sports)      Mon 13th May
-     Shipley Club C         Pudsey Littlemoor
+     Shipley Club C         Littlemoor
 Peter Linaker         14  Kath Mazurke       21
 Derek Overall         21  Billy Thorpe       19
 Wendy Spivey          21  Bob Dove           19
@@ -2381,7 +2381,7 @@ Robert Denby          15  Peter Linaker      21
             Points:   21           Points:    5
 
 Division 3 (City Sports)      Mon 20th May
-   Pudsey Littlemoor           Crowghyll B
+   Littlemoor           Crowghyll B
 Philip A Richards     14  Sylvia Halliday    21
 Billy Thorpe          10  Kathleen Stockdale 21
 Ken Walker            21  Fred Dalby         17
@@ -2645,7 +2645,7 @@ David Earl            21  Graham Wilkinson (a)                                  
             Points:   16           Points:   10
 
 Division 3 (City Sports)       Mon 3rd Jun
-       Tyersal A            Pudsey Littlemoor
+       Tyersal A            Littlemoor
 Patrick Brannan       10  Angela Carter      21
 Wendy Shimbles (a)    21  Billy Thorpe        5
 Simon Metcalfe        21  Kath Mazurke       14
@@ -2909,7 +2909,7 @@ Neil Rankin (a)       21  Mick Frost (a)     13
             Points:   14           Points:   12
 
 Division 3 (City Sports)      Mon 10th Jun
-    Bradford Moor A         Pudsey Littlemoor
+    Bradford Moor A         Littlemoor
 Barry Durrans (a)     21  Billy Thorpe       18
 Colin Wright          21  Angela Carter       5
 Elaine Farrow         18  Ian Hibbert        21
@@ -3217,7 +3217,7 @@ Robert Denby           9  Wayne Woodhead     21
             Points:   14           Points:   12
 
 Division 3 (City Sports)      Mon 17th Jun
-   Pudsey Littlemoor            Myrtle B
+   Littlemoor            Myrtle B
 Angela Carter         21  Irene Bird         19
 Terry Laidlaw         21  Brian Royston      19
 Ian Hibbert            7  Michael Wilson     21
@@ -3492,7 +3492,7 @@ David Earl            20  Simon Metcalfe     21
             Points:   12           Points:   14
 
 Division 3 (City Sports)      Mon 24th Jun
-      Birkenshaw A          Pudsey Littlemoor
+      Birkenshaw A          Littlemoor
 Donald Whiteley       21  Bob Dove           15
 Anthony Hatherley (a) 21  Billy Thorpe        8
 Laurie Taylor         21  Philip A Richards  16
@@ -3767,7 +3767,7 @@ Derek Edon            21  Graham Wilkinson (a)                                  
             Points:   20           Points:    6
 
 Division 3 (City Sports)       Mon 1st Jul
-         Peel B             Pudsey Littlemoor
+         Peel B             Littlemoor
 James Dennison (b)    16  Angela Carter      21
 Robert Denby          21  Billy Thorpe        7
 Andrew Dennison (b)   21  Philip A Richards  14
@@ -4031,7 +4031,7 @@ Graham Wood           21  Jim Kelly          13
             Points:   22           Points:    4
 
 Division 3 (City Sports)       Mon 8th Jul
-   Pudsey Littlemoor         Shipley Club C
+   Littlemoor         Shipley Club C
 Angela Carter         21  Ben Spivey          8
 Kath Mazurke          12  Paul Colman        21
 Philip A Richards     21  Derek Edon          7
@@ -4306,7 +4306,7 @@ Wayne Woodhead        20  Graham Wilkinson (a)                                  
             Points:   20           Points:    6
 
 Division 3 (City Sports)      Mon 15th Jul
-      Crowghyll B           Pudsey Littlemoor
+      Crowghyll B           Littlemoor
 Geoff Shores          18  Terry Laidlaw      21
 Fred Dalby            21  Billy Thorpe       15
 Kathleen Stockdale    17  Angela Carter      21
@@ -4581,7 +4581,7 @@ Andrew Firth (b)      21  Steve Alred        15
             Points:   26           Points:    0
 
 Division 3 (City Sports)      Mon 22nd Jul
-   Pudsey Littlemoor            Tyersal A
+   Littlemoor            Tyersal A
 Bob Dove              10  Wayne Woodhead     21
 Alan Mazurke          21  Gerry Smith        16
 Philip A Richards     10  Wendy Shimbles (a) 21
@@ -4856,7 +4856,7 @@ David Firth           21  David Earl         16
             Points:   22           Points:    4
 
 Division 3 (City Sports)      Mon 29th Jul
-   Pudsey Littlemoor         Bradford Moor A
+   Littlemoor         Bradford Moor A
 Billy Thorpe          21  Kenneth Smith      19
 Alan Mazurke          21  Alan Naylor        18
 Bob Dove              21  Derek Briggs (a)   20
@@ -5120,7 +5120,7 @@ Alan Farrow (a)       16  Graham Wilkinson (a)                                  
             Points:   14           Points:   12
 
 Division 3 (City Sports)       Mon 5th Aug
-        Myrtle B            Pudsey Littlemoor
+        Myrtle B            Littlemoor
 Brian Royston          6  Angela Carter      21
 Irene Bird            21  Kath Mazurke        8
 Jim Kelly             21  Billy Thorpe       11
@@ -5681,7 +5681,7 @@ Stephen Town          21  Barry Durrans (a)  17
             Points:   20           Points:    6
 
 Division 3 (City Sports)      Mon 19th Aug
-   Pudsey Littlemoor          Brackenhill A
+   Littlemoor          Brackenhill A
 Angela Carter         21  Darryl Bowles      18
 Kath Mazurke          21  Ken Marsh          15
 Billy Thorpe           8  Andrew Mackrill (a)21

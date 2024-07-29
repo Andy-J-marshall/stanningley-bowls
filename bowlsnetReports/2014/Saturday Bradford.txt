@@ -57,13 +57,13 @@ Wyke A                          11   172   v.   Eccleshill A                    
 Eccleshill B                    24   205   v.   Horsforth Woodside A             6   148                                 
 Cranmore                        26   202   v.   Drighlington A                   4   126                                 
 Rufford A                       20   188   v.   Pudsey B                        10   165                                 
-Brighouse Sports B               8   167   v.   Pudsey Littlemoor A             22   199                                 
+Brighouse Sports B               8   167   v.   Littlemoor A             22   199                                 
 Greengates A                    21   194   v.   Guiseley A                       9   161                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 12th Apr                               Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Hollies S &amp; SC                  22   195   v.   Wyke B                           8   151                                 
-Pudsey Littlemoor B             21   192   v.   Ladyhill B                       9   151                                 
+Littlemoor B             21   192   v.   Ladyhill B                       9   151                                 
 Elland CA &amp; BC                  26   204   v.   Wibsey A                         4   129                                 
 Queensbury A                    13   165   v.   Hove Edge A                     17   170                                 
 Clayton B                       25   205   v.   Crowghyll A                      5   152                                 
@@ -119,7 +119,7 @@ Clayton A                       15   176   v.   Wyke A                          
               Sat 19th Apr                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      22   195   v.   Brighouse Sports B               8   155                                 
-Pudsey Littlemoor A             26   199   v.   Rufford A                        4   124                                 
+Littlemoor A             26   199   v.   Rufford A                        4   124                                 
 Pudsey B                        28   209   v.   Cranmore                         2   119                                 
 Drighlington A                  19   192   v.   Eccleshill B                    11   162                                 
 Horsforth Woodside A             6   136   v.   Greengates A                    24   190                                 
@@ -128,7 +128,7 @@ Horsforth Woodside A             6   136   v.   Greengates A                    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll A                     20   193   v.   Queensbury A                    10   150                                 
 Hove Edge A                     17   194   v.   Elland CA &amp; BC                  13   185                                 
-Wibsey A                        19   178   v.   Pudsey Littlemoor B             11   149                                 
+Wibsey A                        19   178   v.   Littlemoor B             11   149                                 
 Ladyhill B                      18   183   v.   Hollies S &amp; SC                  12   170                                 
 Wyke B                           7   149   v.   Clayton B                       23   199                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -184,7 +184,7 @@ Pudsey A                        18   184   v.   Ladyhill A                      
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Drighlington A                  16   171   v.   Greengates A                    14   163                                 
 Horsforth Woodside A            18   173   v.   Pudsey B                        12   171                                 
-Eccleshill B                     5   143   v.   Pudsey Littlemoor A             25   205                                 
+Eccleshill B                     5   143   v.   Littlemoor A             25   205                                 
 Cranmore                        26   206   v.   Guiseley A                       4   135                                 
 Rufford A                       24   186   v.   Brighouse Sports B               6   125                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ Rufford A                       24   186   v.   Brighouse Sports B              
 Ladyhill B                      10   167   v.   Clayton B                       20   196                                 
 Wyke B                          20   186   v.   Wibsey A                        10   159                                 
 Hollies S &amp; SC                  20   197   v.   Hove Edge A                     10   174                                 
-Pudsey Littlemoor B             23   198   v.   Crowghyll A                      7   148                                 
+Littlemoor B             23   198   v.   Crowghyll A                      7   148                                 
 Elland CA &amp; BC                  27   205   v.   Queensbury A                     3   125                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 3rd May                                 Division 4 (Bartle)                                                             
@@ -247,7 +247,7 @@ Wyke A                           9   161   v.   Pudsey A                        
               Sat 17th May                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      17   164   v.   Eccleshill B                    13   155                                 
-Pudsey Littlemoor A             29   208   v.   Horsforth Woodside A             1   106                                 
+Littlemoor A             29   208   v.   Horsforth Woodside A             1   106                                 
 Pudsey B                        28   210   v.   Drighlington A                   2   137                                 
 Brighouse Sports B              14   177   v.   Cranmore                        16   180                                 
 Greengates A                    16   177   v.   Rufford A                       14   167                                 
@@ -257,7 +257,7 @@ Greengates A                    16   177   v.   Rufford A                       
 Crowghyll A                     17   171   v.   Hollies S &amp; SC                  13   158                                 
 Hove Edge A                     21   199   v.   Wyke B                           9   161                                 
 Wibsey A                        12   172   v.   Ladyhill B                      18   194                                 
-Queensbury A                    17   193   v.   Pudsey Littlemoor B             13   177                                 
+Queensbury A                    17   193   v.   Littlemoor B             13   177                                 
 Clayton B                        4   141   v.   Elland CA &amp; BC                  26   202                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 17th May                                Division 4 (Bartle)                                                             
@@ -311,7 +311,7 @@ Wyke A                          18   186   v.   Asa Briggs A                    
               Sat 24th May                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      23   187   v.   Drighlington A                   7   134                                 
-Pudsey Littlemoor A             25   204   v.   Pudsey B                         5   142                                 
+Littlemoor A             25   204   v.   Pudsey B                         5   142                                 
 Rufford A                       18   181   v.   Eccleshill B                    12   156                                 
 Brighouse Sports B              24   208   v.   Horsforth Woodside A             6   166                                 
 Greengates A                    18   189   v.   Cranmore                        12   168                                 
@@ -322,7 +322,7 @@ Crowghyll A                     13   168   v.   Ladyhill B                      
 Hove Edge A                     22   192   v.   Wibsey A                         8   142                                 
 Elland CA &amp; BC                  18   188   v.   Hollies S &amp; SC                  12   164                                 
 Queensbury A                    11   157   v.   Wyke B                          19   179                                 
-Clayton B                       15   169   v.   Pudsey Littlemoor B             15   175                                 
+Clayton B                       15   169   v.   Littlemoor B             15   175                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 24th May                                Division 4 (Bartle)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -376,7 +376,7 @@ Asa Briggs A                     6   144   v.   Pudsey A                        
               Sat 31st May                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Pudsey B                        22   195   v.   Greengates A                     8   151                                 
-Drighlington A                  13   160   v.   Pudsey Littlemoor A             17   175                                 
+Drighlington A                  13   160   v.   Littlemoor A             17   175                                 
 Horsforth Woodside A            13   178   v.   Guiseley A                      17   186                                 
 Eccleshill B                    18   178   v.   Brighouse Sports B              12   163                                 
 Cranmore                        27   204   v.   Rufford A                        3   124                                 
@@ -387,7 +387,7 @@ Wibsey A                        13   175   v.   Clayton B                       
 Ladyhill B                      19   193   v.   Hove Edge A                     11   178                                 
 Wyke B                          16   165   v.   Crowghyll A                     14   162                                 
 Hollies S &amp; SC                  20   197   v.   Queensbury A                    10   164                                 
-Pudsey Littlemoor B             21   198   v.   Elland CA &amp; BC                   9   163                                 
+Littlemoor B             21   198   v.   Elland CA &amp; BC                   9   163                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 31st May                                Division 4 (Bartle)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -441,7 +441,7 @@ Ladyhill A                      21   204   v.   Wyke A                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Horsforth Woodside A            21   199   v.   Drighlington A                   9   165                                 
 Eccleshill B                    11   157   v.   Pudsey B                        19   182                                 
-Cranmore                        22   194   v.   Pudsey Littlemoor A              8   160                                 
+Cranmore                        22   194   v.   Littlemoor A              8   160                                 
 Rufford A                       19   188   v.   Guiseley A                      11   167                                 
 Brighouse Sports B              16   190   v.   Greengates A                    14   184                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -449,7 +449,7 @@ Brighouse Sports B              16   190   v.   Greengates A                    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Wyke B                          10   152   v.   Ladyhill B                      20   187                                 
 Hollies S &amp; SC                  23   201   v.   Wibsey A                         7   145                                 
-Pudsey Littlemoor B             21   189   v.   Hove Edge A                      9   153                                 
+Littlemoor B             21   189   v.   Hove Edge A                      9   153                                 
 Elland CA &amp; BC                  25   199   v.   Crowghyll A                      5   131                                 
 Queensbury A                    12   167   v.   Clayton B                       18   180                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -504,14 +504,14 @@ Wyke A                          12   185   v.   Brighouse Sports A              
               Sat 21st Jun                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      23   193   v.   Cranmore                         7   142                                 
-Pudsey Littlemoor A             29   207   v.   Eccleshill B                     1   109                                 
+Littlemoor A             29   207   v.   Eccleshill B                     1   109                                 
 Pudsey B                        23   202   v.   Horsforth Woodside A             7   151                                 
 Brighouse Sports B              17   188   v.   Rufford A                       13   177                                 
 Greengates A                    16   198   v.   Drighlington A                  14   196                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 21st Jun                               Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Crowghyll A                      9   153   v.   Pudsey Littlemoor B             21   190                                 
+Crowghyll A                      9   153   v.   Littlemoor B             21   190                                 
 Hove Edge A                     22   187   v.   Hollies S &amp; SC                   8   137                                 
 Wibsey A                        25   207   v.   Wyke B                           5   149                                 
 Queensbury A                    12   166   v.   Elland CA &amp; BC                  18   185                                 
@@ -623,7 +623,7 @@ Pudsey A                        23   190   v.   Wyke A                          
               Sat 5th Jul                                 Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Drighlington A                  11   170   v.   Pudsey B                        19   190                                 
-Horsforth Woodside A             6   149   v.   Pudsey Littlemoor A             24   204                                 
+Horsforth Woodside A             6   149   v.   Littlemoor A             24   204                                 
 Eccleshill B                    15   172   v.   Guiseley A                      15   173                                 
 Cranmore                        25   197   v.   Brighouse Sports B               5   134                                 
 Rufford A                       19   191   v.   Greengates A                    11   152                                 
@@ -633,7 +633,7 @@ Rufford A                       19   191   v.   Greengates A                    
 Ladyhill B                      11   167   v.   Wibsey A                        19   181                                 
 Wyke B                          14   169   v.   Hove Edge A                     16   171                                 
 Hollies S &amp; SC                  21   192   v.   Crowghyll A                      9   159                                 
-Pudsey Littlemoor B             27   207   v.   Queensbury A                     3   130                                 
+Littlemoor B             27   207   v.   Queensbury A                     3   130                                 
 Elland CA &amp; BC                  16   176   v.   Clayton B                       14   169                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 5th Jul                                 Division 4 (Bartle)                                                             
@@ -687,7 +687,7 @@ Wyke A                           6   156   v.   Crossgates                      
               Sat 12th Jul                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      21   183   v.   Horsforth Woodside A             9   133                                 
-Pudsey Littlemoor A             25   207   v.   Drighlington A                   5   149                                 
+Littlemoor A             25   207   v.   Drighlington A                   5   149                                 
 Rufford A                       22   194   v.   Cranmore                         8   158                                 
 Brighouse Sports B              21   198   v.   Eccleshill B                     9   158                                 
 Greengates A                    20   203   v.   Pudsey B                        10   164                                 
@@ -696,7 +696,7 @@ Greengates A                    20   203   v.   Pudsey B                        
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll A                     11   173   v.   Wyke B                          19   200                                 
 Hove Edge A                     28   209   v.   Ladyhill B                       2   124                                 
-Elland CA &amp; BC                  22   196   v.   Pudsey Littlemoor B              8   159                                 
+Elland CA &amp; BC                  22   196   v.   Littlemoor B              8   159                                 
 Queensbury A                    20   195   v.   Hollies S &amp; SC                  10   168                                 
 Clayton B                       14   171   v.   Wibsey A                        16   179                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -849,7 +849,7 @@ Asa Briggs A                    13   170   v.   Wyke A                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 2nd Aug                                 Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Pudsey B                        16   175   v.   Pudsey Littlemoor A             14   174                                 
+Pudsey B                        16   175   v.   Littlemoor A             14   174                                 
 Drighlington A                  13   169   v.   Guiseley A                      17   172                                 
 Horsforth Woodside A            14   185   v.   Brighouse Sports B              16   190                                 
 Eccleshill B                    18   181   v.   Rufford A                       12   155                                 
@@ -861,7 +861,7 @@ Wibsey A                        26   192   v.   Hove Edge A                     
 Ladyhill B                      25   194   v.   Crowghyll A                      5   138                                 
 Wyke B                          21   189   v.   Queensbury A                     9   154                                 
 Hollies S &amp; SC                   7   136   v.   Elland CA &amp; BC                  23   185                                 
-Pudsey Littlemoor B             23   183   v.   Clayton B                        7   131                                 
+Littlemoor B             23   183   v.   Clayton B                        7   131                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 2nd Aug                                 Division 4 (Bartle)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -918,12 +918,12 @@ Guiseley A                      18   185   v.   Pudsey B                        
 Cranmore                        24   197   v.   Eccleshill B                     6   137                                 
 Rufford A                       30   210   v.   Horsforth Woodside A             0   118                                 
 Brighouse Sports B              21   192   v.   Drighlington A                   9   159                                 
-Greengates A                    16   177   v.   Pudsey Littlemoor A             14   177                                 
+Greengates A                    16   177   v.   Littlemoor A             14   177                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 9th Aug                                Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll A                     11   142   v.   Wibsey A                        19   171                                 
-Pudsey Littlemoor B             28   207   v.   Hollies S &amp; SC                   2   120                                 
+Littlemoor B             28   207   v.   Hollies S &amp; SC                   2   120                                 
 Elland CA &amp; BC                  25   197   v.   Wyke B                           5   139                                 
 Queensbury A                    18   186   v.   Ladyhill B                      12   170                                 
 Clayton B                       20   193   v.   Hove Edge A                     10   171                                 
@@ -978,7 +978,7 @@ Shipley Club A                  20   190   v.   Wyke A                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 16th Aug                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Pudsey Littlemoor A             23   193   v.   Guiseley A                       7   139                                 
+Littlemoor A             23   193   v.   Guiseley A                       7   139                                 
 Pudsey B                        13   169   v.   Brighouse Sports B              17   171                                 
 Drighlington A                  19   186   v.   Rufford A                       11   158                                 
 Horsforth Woodside A             8   145   v.   Cranmore                        22   188                                 
@@ -989,7 +989,7 @@ Eccleshill B                    18   175   v.   Greengates A                    
 Hove Edge A                     22   193   v.   Crowghyll A                      8   153                                 
 Wibsey A                        26   198   v.   Queensbury A                     4   119                                 
 Ladyhill B                       6   146   v.   Elland CA &amp; BC                  24   201                                 
-Wyke B                          17   181   v.   Pudsey Littlemoor B             13   173                                 
+Wyke B                          17   181   v.   Littlemoor B             13   173                                 
 Hollies S &amp; SC                  10   162   v.   Clayton B                       20   195                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 16th Aug                                Division 4 (Bartle)                                                             
@@ -1043,7 +1043,7 @@ Clayton A                       19   189   v.   Shipley Club A                  
               Sat 23rd Aug                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      25   202   v.   Greengates A                     5   135                                 
-Pudsey Littlemoor A             28   197   v.   Brighouse Sports B               2   112                                 
+Littlemoor A             28   197   v.   Brighouse Sports B               2   112                                 
 Pudsey B                        26   208   v.   Rufford A                        4   139                                 
 Drighlington A                  12   174   v.   Cranmore                        18   189                                 
 Horsforth Woodside A            21   194   v.   Eccleshill B                     9   146                                 
@@ -1053,7 +1053,7 @@ Horsforth Woodside A            21   194   v.   Eccleshill B                    
 Crowghyll A                     13   162   v.   Clayton B                       17   180                                 
 Hove Edge A                     25   197   v.   Queensbury A                     5   126                                 
 Wibsey A                        20   180   v.   Elland CA &amp; BC                  10   147                                 
-Ladyhill B                      12   162   v.   Pudsey Littlemoor B             18   175                                 
+Ladyhill B                      12   162   v.   Littlemoor B             18   175                                 
 Wyke B                          19   182   v.   Hollies S &amp; SC                  11   156                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 23rd Aug                                Division 4 (Bartle)                                                             
@@ -1108,14 +1108,14 @@ Wyke A                          20   188   v.   Clayton A                       
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Eccleshill B                    17   181   v.   Drighlington A                  13   174                                 
 Cranmore                        19   195   v.   Pudsey B                        11   173                                 
-Rufford A                       11   160   v.   Pudsey Littlemoor A             19   185                                 
+Rufford A                       11   160   v.   Littlemoor A             19   185                                 
 Brighouse Sports B              21   195   v.   Guiseley A                       9   170                                 
 Greengates A                    23   199   v.   Horsforth Woodside A             7   155                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 30th Aug                               Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Hollies S &amp; SC                  12   165   v.   Ladyhill B                      18   172                                 
-Pudsey Littlemoor B             23   185   v.   Wibsey A                         7   133                                 
+Littlemoor B             23   185   v.   Wibsey A                         7   133                                 
 Elland CA &amp; BC                  21   196   v.   Hove Edge A                      9   155                                 
 Queensbury A                    19   183   v.   Crowghyll A                     11   160                                 
 Clayton B                       13   147   v.   Wyke B                          17   158                                 
@@ -1171,7 +1171,7 @@ Wyke A                          13   170   v.   Ladyhill A                      
               Sat 6th Sep                                 Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley A                      19   181   v.   Rufford A                       11   153                                 
-Pudsey Littlemoor A             23   196   v.   Cranmore                         7   140                                 
+Littlemoor A             23   196   v.   Cranmore                         7   140                                 
 Pudsey B                        19   187   v.   Eccleshill B                    11   158                                 
 Drighlington A                  15   173   v.   Horsforth Woodside A            15   178                                 
 Greengates A                    24   204   v.   Brighouse Sports B               6   148                                 
@@ -1179,7 +1179,7 @@ Greengates A                    24   204   v.   Brighouse Sports B              
               Sat 6th Sep                                Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll A                      4   145   v.   Elland CA &amp; BC                  26   209                                 
-Hove Edge A                     19   181   v.   Pudsey Littlemoor B             11   154                                 
+Hove Edge A                     19   181   v.   Littlemoor B             11   154                                 
 Wibsey A                        20   175   v.   Hollies S &amp; SC                  10   147                                 
 Ladyhill B                      17   174   v.   Wyke B                          13   166                                 
 Clayton B                       17   174   v.   Queensbury A                    13   163                                 
@@ -1234,7 +1234,7 @@ Shipley Club A                  16   174   v.   Asa Briggs A                    
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 13th Sep                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Pudsey Littlemoor A             28   204   v.   Greengates A                     2   117                                 
+Littlemoor A             28   204   v.   Greengates A                     2   117                                 
 Pudsey B                        15   189   v.   Guiseley A                      15   184                                 
 Drighlington A                  13   176   v.   Brighouse Sports B              17   177                                 
 Horsforth Woodside A            20   194   v.   Rufford A                       10   169                                 
@@ -1246,7 +1246,7 @@ Hove Edge A                     23   201   v.   Clayton B                       
 Wibsey A                        21   193   v.   Crowghyll A                      9   156                                 
 Ladyhill B                      22   192   v.   Queensbury A                     8   155                                 
 Wyke B                          10   149   v.   Elland CA &amp; BC                  20   188                                 
-Hollies S &amp; SC                  20   181   v.   Pudsey Littlemoor B             10   153                                 
+Hollies S &amp; SC                  20   181   v.   Littlemoor B             10   153                                 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 13th Sep                                Division 4 (Bartle)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1298,7 +1298,7 @@ Wyke A                          16   181   v.   Shipley Club A                  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
               Sat 20th Sep                                Division 2 (Godwin)                                                             
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Guiseley A                      20   174   v.   Pudsey Littlemoor A             10   144                                 
+Guiseley A                      20   174   v.   Littlemoor A             10   144                                 
 Cranmore                        24   200   v.   Horsforth Woodside A             6   135                                 
 Rufford A                       24   201   v.   Drighlington A                   6   150                                 
 Brighouse Sports B              18   188   v.   Pudsey B                        12   181                                 
@@ -1307,7 +1307,7 @@ Greengates A                    21   180   v.   Eccleshill B                    
               Sat 20th Sep                               Division 3 (Observer)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll A                     15   172   v.   Hove Edge A                     15   162                                 
-Pudsey Littlemoor B             18   188   v.   Wyke B                          12   168                                 
+Littlemoor B             18   188   v.   Wyke B                          12   168                                 
 Elland CA &amp; BC                  27   206   v.   Ladyhill B                       3   119                                 
 Queensbury A                    12   179   v.   Wibsey A                        18   186                                 
 Clayton B                       18   186   v.   Hollies S &amp; SC                  12   163                                 
@@ -1412,7 +1412,7 @@ Bailiff Bridge B                 9   115   v.   Hipperholme &amp; Lightcliffe B 
                                        Matches     Pnts
  Pos  Team                           Pl    W    L    For
 ====  ============================  ===  ===  ===  =====  
-  1.  Pudsey Littlemoor A            18   14    4    389
+  1.  Littlemoor A            18   14    4    389
   2.  Cranmore                       18   12    6    323
   3.  Pudsey B                       18    9    8    300
   4.  Guiseley A                     18   11    5    292
@@ -1428,7 +1428,7 @@ Bailiff Bridge B                 9   115   v.   Hipperholme &amp; Lightcliffe B 
  Pos  Team                           Pl    W    L    For
 ====  ============================  ===  ===  ===  =====  
   1.  Elland CA &amp; BC                 18   15    3    376
-  2.  Pudsey Littlemoor B            18   11    6    325
+  2.  Littlemoor B            18   11    6    325
   3.  Hove Edge A                    18   11    6    300
   4.  Wibsey A                       18   11    7    290
   5.  Clayton B                      18   10    7    281
@@ -2000,7 +2000,7 @@ Guy Barrie (a)      21  Neil Nicholson       11
          Points:    20            Points:    10
 
  Division 2 (Godwin)         Sat 12th Apr
-  Brighouse Sports B      Pudsey Littlemoor A
+  Brighouse Sports B      Littlemoor A
 Steve Foster        11  Duncan Reeves        21
 Kevin Wood          19  Lee Wider            21
 Anthony Naylor      15  John Armitage        21
@@ -2045,7 +2045,7 @@ Len Robinson        21  Nigel Swales         13
          Points:    22            Points:     8
 
 Division 3 (Observer)        Sat 12th Apr
- Pudsey Littlemoor B          Ladyhill B
+ Littlemoor B          Ladyhill B
 Alan Mazurke        21  Vince Cleary         20
 Kath Mazurke        21  Peter Finnie         13
 Kath Bywell         20  Alan Pennington      21
@@ -2555,7 +2555,7 @@ Graham Oliver (a)   21  David Southwell      17
          Points:    22            Points:     8
 
  Division 2 (Godwin)         Sat 19th Apr
- Pudsey Littlemoor A           Rufford A
+ Littlemoor A           Rufford A
 Duncan Reeves       21  Dave Whelan           2
 John Armitage       21  Dave Kirkbright      14
 Neil McPhail        21  Debbie Kirkbright    17
@@ -2645,7 +2645,7 @@ Stephen Rothwell (a)21  James Senior         19
          Points:    17            Points:    13
 
 Division 3 (Observer)        Sat 19th Apr
-       Wibsey A           Pudsey Littlemoor B
+       Wibsey A           Littlemoor B
 Kevin Arundale      21  Robert Baines        14
 Malcolm Wilkinson   21  Kath Bywell          14
 Michael Gill        15  Angela Carter        21
@@ -3155,7 +3155,7 @@ Simon Chaffer (a)   21  Dan Beardsworth (b)  17
          Points:    18            Points:    12
 
  Division 2 (Godwin)          Sat 3rd May
-     Eccleshill B         Pudsey Littlemoor A
+     Eccleshill B         Littlemoor A
 Ian Matthews        16  Andy Smith           21
 Mark Reynolds       18  Duncan Reeves        21
 Will Gilroy         10  John Armitage        21
@@ -3245,7 +3245,7 @@ Walter Stockhill    21  John Butterworth     14
          Points:    20            Points:    10
 
 Division 3 (Observer)         Sat 3rd May
- Pudsey Littlemoor B          Crowghyll A
+ Littlemoor B          Crowghyll A
 Alan Mazurke        19  David Hodgson (a)    21
 Kath Mazurke        11  Barry Fenton         21
 Robert Baines       21  Archie Wishart (a)   19
@@ -3725,7 +3725,7 @@ Graham Oliver (a)    7  John Benson          21
          Points:    17            Points:    13
 
  Division 2 (Godwin)         Sat 17th May
- Pudsey Littlemoor A     Horsforth Woodside A
+ Littlemoor A     Horsforth Woodside A
 Duncan Reeves       21  Stephen Bottomley    10
 Craig Hebbard       21  Graham Chaffer (a)   10
 Marc Armitage       21  Brian Dowling         9
@@ -3830,7 +3830,7 @@ Mark Dobson (a)     17  Vince Cleary         21
          Points:    12            Points:    18
 
 Division 3 (Observer)        Sat 17th May
-     Queensbury A         Pudsey Littlemoor B
+     Queensbury A         Littlemoor B
 Susan Gormley       19  Jim Moorin           21
 David Smalley (a)   21  Margaret Slater       7
 Joan Law (a)        21  Philip A Richards    14
@@ -4310,7 +4310,7 @@ Graham Oliver (a)   21  Mark Smith (a)       12
          Points:    23            Points:     7
 
  Division 2 (Godwin)         Sat 24th May
- Pudsey Littlemoor A           Pudsey B
+ Littlemoor A           Pudsey B
 Craig Hebbard       21  Stuart Hanson (b)    17
 Brian Richards      21  Darren Crawley       14
 Marc Armitage       21  Gary Wike            15
@@ -4430,7 +4430,7 @@ Maureen Holmes       6  David Greenwood      21
          Points:    11            Points:    19
 
 Division 3 (Observer)        Sat 24th May
-      Clayton B           Pudsey Littlemoor B
+      Clayton B           Littlemoor B
 Pauline Lowrie      16  Robert Baines        21
 Bev Shutt           10  Kath Bywell          21
 Derek Seed          21  Angela Carter        20
@@ -4910,7 +4910,7 @@ Paul Cousins        21  Tom Powell           10
          Points:    22            Points:     8
 
  Division 2 (Godwin)         Sat 31st May
-    Drighlington A        Pudsey Littlemoor A
+    Drighlington A        Littlemoor A
 Darren Schofield    18  Nigel Roper (a)      21
 Lisa Rice (a)       21  John Armitage        12
 Michael Dickinson (a)                                                                                                                                                                                                                                                               11  Marc Armitage        21
@@ -5030,7 +5030,7 @@ Len Robinson        21  Brian Hemingway      19
          Points:    20            Points:    10
 
 Division 3 (Observer)        Sat 31st May
- Pudsey Littlemoor B        Elland CA &amp; BC
+ Littlemoor B        Elland CA &amp; BC
 Bob Dove            21  Barry Nicholl        19
 Robert Baines       14  Steve Kenworthy      21
 Kath Mazurke        21  Stuart Carroll       11
@@ -5510,7 +5510,7 @@ Ken Gilroy           7  Ian Shaw (b)         21
          Points:    11            Points:    19
 
  Division 2 (Godwin)         Sat 14th Jun
-       Cranmore           Pudsey Littlemoor A
+       Cranmore           Littlemoor A
 Robert King         21  Craig Hebbard        20
 Michael Goodall     21  Glen Smith           10
 Les Oddy            11  Marc Armitage        21
@@ -5585,7 +5585,7 @@ Duncan McPhail      21  Nigel Wormald        12
          Points:    23            Points:     7
 
 Division 3 (Observer)        Sat 14th Jun
- Pudsey Littlemoor B          Hove Edge A
+ Littlemoor B          Hove Edge A
 Alan Mazurke        21  Christine Barker (a)  4
 Kath Mazurke        21  John Holden          13
 William Swailes     21  Peter Martin (a)     19
@@ -6080,7 +6080,7 @@ Graham Oliver (a)   21  Michael Rennison      3
          Points:    23            Points:     7
 
  Division 2 (Godwin)         Sat 21st Jun
- Pudsey Littlemoor A         Eccleshill B
+ Littlemoor A         Eccleshill B
 Duncan Reeves       21  Neil Porter      17
 Marc Armitage       21  Ian Matthews          9
 John Armitage       21  Steve Bowes          13
@@ -6140,7 +6140,7 @@ Stuart Wilson (a)   21  John Cash (a)        16
          Points:    16            Points:    14
 
 Division 3 (Observer)        Sat 21st Jun
-     Crowghyll A          Pudsey Littlemoor B
+     Crowghyll A          Littlemoor B
 Trevor Hodgson (a)  14  Jim Moorin           21
 Barry Fenton        21  Angela Carter        20
 Philip Robinson     15  Robert Baines        21
@@ -7160,7 +7160,7 @@ Trevor Worsman      21  Jack Bowes            9
          Points:    11            Points:    19
 
  Division 2 (Godwin)          Sat 5th Jul
- Horsforth Woodside A     Pudsey Littlemoor A
+ Horsforth Woodside A     Littlemoor A
 David Hill          15  Nigel Roper (a)      21
 Chris Wood (a)      21  Neil McPhail         18
 Brian Dowling       10  Craig Hebbard        21
@@ -7265,7 +7265,7 @@ Gary Dixon          15  Alan Clements        21
          Points:    21            Points:     9
 
 Division 3 (Observer)         Sat 5th Jul
- Pudsey Littlemoor B         Queensbury A
+ Littlemoor B         Queensbury A
 Alan Mazurke        21  Margaret Lee          8
 Luke Thompson       21  Donald Firth (a)     13
 Angela Carter       18  Maureen Holmes       21
@@ -7745,7 +7745,7 @@ Graham Oliver (a)   21  David Hill           10
          Points:    21            Points:     9
 
  Division 2 (Godwin)         Sat 12th Jul
- Pudsey Littlemoor A        Drighlington A
+ Littlemoor A        Drighlington A
 Brian Richards      21  Josh Gamble          20
 John Armitage       21  Derek Goor (a)       13
 Marc Armitage       21  Bailey Rice          10
@@ -7835,7 +7835,7 @@ Paul Audsley        21  Vince Cleary          9
          Points:    28            Points:     2
 
 Division 3 (Observer)        Sat 12th Jul
-    Elland CA &amp; BC        Pudsey Littlemoor B
+    Elland CA &amp; BC        Littlemoor B
 Barry Nicholl       21  Luke Thompson         5
 Roger Stopford       8  Martin Fulton        21
 Andy Speechley      21  Angela Carter        16
@@ -8931,7 +8931,7 @@ Andy Denton (a)     21  Neil Tordoff         12
          Points:    13            Points:    17
 
  Division 2 (Godwin)          Sat 2nd Aug
-       Pudsey B           Pudsey Littlemoor A
+       Pudsey B           Littlemoor A
 Dan Beardsworth (b) 17  Neil McPhail         21
 Stuart Hanson (b)   19  Lee Wider            21
 David Hilliam (b)   21  Jim Moorin           14
@@ -9066,7 +9066,7 @@ Walter Stockhill    13  James Senior         21
          Points:     7            Points:    23
 
 Division 3 (Observer)         Sat 2nd Aug
- Pudsey Littlemoor B           Clayton B
+ Littlemoor B           Clayton B
 Andy Smith          16  Anthony Brocksom     21
 Kath Mazurke         2  Nino Esposito        21
 William Swailes     21  Graham Clare         11
@@ -9591,7 +9591,7 @@ Andrew Wood         21  Michael Dickinson (a)18
          Points:    21            Points:     9
 
  Division 2 (Godwin)          Sat 9th Aug
-     Greengates A         Pudsey Littlemoor A
+     Greengates A         Littlemoor A
 Richard Kearns      20  Marc Armitage        21
 Stuart Wilson (a)   21  John Armitage        15
 Colin Rhodes (a)    21  Lee Wider            16
@@ -9621,7 +9621,7 @@ Philip Robinson      5  Mark Dobson (a)      21
          Points:    11            Points:    19
 
 Division 3 (Observer)         Sat 9th Aug
- Pudsey Littlemoor B        Hollies S &amp; SC
+ Littlemoor B        Hollies S &amp; SC
 Alan Mazurke        18  Ken Stockhill        21
 Kath Mazurke        21  Mark McCann          10
 Luke Thompson       21  Pat Dacre            15
@@ -10116,7 +10116,7 @@ David Jacques (a)   21  Ian Smith            14
          Points:    20            Points:    10
 
  Division 2 (Godwin)         Sat 16th Aug
- Pudsey Littlemoor A          Guiseley A
+ Littlemoor A          Guiseley A
 Martin Fulton       21  Ralph Sissons         5
 Brian Richards      17  Kenneth Bull         21
 Lee Wider           21  Colin Matthewman (b) 13
@@ -10236,7 +10236,7 @@ Chris Wilson        21  Dave Greenwood       14
          Points:     6            Points:    24
 
 Division 3 (Observer)        Sat 16th Aug
-        Wyke B            Pudsey Littlemoor B
+        Wyke B            Littlemoor B
 David Roberts       20  Terry Laidlaw        21
 Brian Smith         21  Philip A Richards    20
 Robert Benn         21  Alan Mazurke          7
@@ -10716,7 +10716,7 @@ Carolyn Matthewman  17  Colin Rhodes (a)     21
          Points:    25            Points:     5
 
  Division 2 (Godwin)         Sat 23rd Aug
- Pudsey Littlemoor A      Brighouse Sports B
+ Littlemoor A      Brighouse Sports B
 Alan Mazurke         8  Nigel Briggs         21
 Craig Hebbard       21  Alan Bray             7
 Neil McPhail        21  Steve Livesey         7
@@ -10821,7 +10821,7 @@ Nigel Wormald       11  James Senior         21
          Points:    20            Points:    10
 
 Division 3 (Observer)        Sat 23rd Aug
-      Ladyhill B          Pudsey Littlemoor B
+      Ladyhill B          Littlemoor B
 Alan Pennington     12  Andy Smith           21
 Peter Finnie        10  Martin Fulton        21
 Kim Ramsden         21  William Swailes      15
@@ -11316,7 +11316,7 @@ Matthew Turner      17  Kevin Rankin         21
          Points:    19            Points:    11
 
  Division 2 (Godwin)         Sat 30th Aug
-      Rufford A           Pudsey Littlemoor A
+      Rufford A           Littlemoor A
 John Arundel        14  Martin Fulton        21
 Martyn Benson (a)   21  Neil McPhail         18
 Dave Whelan         21  Jim Moorin           16
@@ -11376,7 +11376,7 @@ Gary Dixon          10  Vince Cleary         21
          Points:    12            Points:    18
 
 Division 3 (Observer)        Sat 30th Aug
- Pudsey Littlemoor B           Wibsey A
+ Littlemoor B           Wibsey A
 Andy Smith          18  Mark Dobson (a)      21
 Kath Mazurke        21  Paul Wilczynski (a)  18
 Angela Carter        7  Thomas Bailey        21
@@ -11886,7 +11886,7 @@ Graham Oliver (a)   21  Guy Barrie (a)       11
          Points:    19            Points:    11
 
  Division 2 (Godwin)          Sat 6th Sep
- Pudsey Littlemoor A           Cranmore
+ Littlemoor A           Cranmore
 Duncan Reeves       13  Michael Goodall      21
 Kath Mazurke        18  Matthew Turner       21
 Neil McPhail        21  Paul King             3
@@ -11961,7 +11961,7 @@ Craig Tavendale (a) 19  James Senior         21
          Points:     4            Points:    26
 
 Division 3 (Observer)         Sat 6th Sep
-     Hove Edge A          Pudsey Littlemoor B
+     Hove Edge A          Littlemoor B
 Graham Jackson      21  Alan Mazurke         17
 Stephen Airey       11  Jim Moorin           21
 Lynne Saxby         21  Philip A Richards    11
@@ -12456,7 +12456,7 @@ Ian Jacques (a)     21  Mark Senior (a)      19
          Points:    16            Points:    14
 
  Division 2 (Godwin)         Sat 13th Sep
- Pudsey Littlemoor A         Greengates A
+ Littlemoor A         Greengates A
 Brian Richards      21  Dave Rankin          11
 Kath Mazurke        15  Peter Wilson (a)     21
 Neil McPhail        21  Tony Southern        11
@@ -12591,7 +12591,7 @@ Robert Firth         2  Darren Hennessy      21
          Points:    10            Points:    20
 
 Division 3 (Observer)        Sat 13th Sep
-    Hollies S &amp; SC        Pudsey Littlemoor B
+    Hollies S &amp; SC        Littlemoor B
 Ken Stockhill        6  Jim Moorin           21
 Len Robinson        19  Andy Smith           21
 Mark McCann         21  Kath Bywell           9
@@ -13041,7 +13041,7 @@ Jimmy Hearne        17  Matthew Jacques      21
          Points:    16            Points:    14
 
  Division 2 (Godwin)         Sat 20th Sep
-      Guiseley A          Pudsey Littlemoor A
+      Guiseley A          Littlemoor A
 Jeff Bolton (a)     21  Luke Thompson        18
 Ben Stockdale       17  Peter Richards       21
 Carolyn Matthewman   7  Glen Smith           21
@@ -13131,7 +13131,7 @@ Archie Wishart (a)  21  John Butterworth     14
          Points:    15            Points:    15
 
 Division 3 (Observer)        Sat 20th Sep
- Pudsey Littlemoor B            Wyke B
+ Littlemoor B            Wyke B
 Robert Baines       12  Robert Firth         21
 Andy Smith          21  Peter Walker          9
 William Swailes     21  Ian Fraser           19
