@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sat 27th Jul)
+=== League Report (as of Mon 29th Jul)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -515,6 +515,11 @@
           Pudsey 'A'                                  v.   Shipley Club                                  From Sat 6th Jul. To Sat 20th Jul
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Sat 27th Jul                              Division 1 (Naylor Premier)                             
+-------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Asa Briggs 'A'                   21   191   v.   Farsley                           9   143     
+  2:00pm  Wyke 'A'                         15   180   v.   Shipley Club                     15   183     
+-------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 27th Jul                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Rufford 'A'                      20   196   v.   Harold Club 'A'                  10   162     
@@ -566,13 +571,13 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Pudsey 'A'                        9    8    1    185
   2.  Littlemoor S&amp;SC 'A'               9    6    3    163
-  3.  Spen Victoria 'A'                 9    6    3    162
-  4.  Cononley                          9    7    1    162
-  5.  Shipley Club                      9    4    5    148
+  3.  Shipley Club                     10    4    5    163
+  4.  Spen Victoria 'A'                 9    6    3    162
+  5.  Cononley                          9    7    1    162
   6.  Guiseley 'A'                      9    4    5    132
-  7.  Asa Briggs 'A'                    9    1    8     88
-  8.  Wyke 'A'                          9    2    6     82
-  9.  Farsley                           8    1    7     78
+  7.  Asa Briggs 'A'                   10    2    8    109
+  8.  Wyke 'A'                         10    2    6     97
+  9.  Farsley                           9    1    8     87
 
 === Division 2 (Godwin)
                                          Matches     Pnts
@@ -4696,6 +4701,38 @@ Mark Durrans 'A'    21  Iain Brown           16
           Games:     4              Games:    4
       Aggregate:   139          Aggregate:  132
          Points:    15             Points:   13
+
+Division 1 (Naylor Pre       Sat 27th Jul
+    Asa Briggs 'A'              Farsley
+Michael Frost       15  Derek Pickering      21
+Andrew Heenan       19  Colin Rhodes         21
+Scott Sansom        21  Duncan McPhail       16
+Jordan Brown 'B'    21  Peter Crowther        3
+Gary Woodhead       21  Stuart Brook         10
+Andy Southwell 'B'  11  Andy Wood            21
+Paula Graham        21  Daniel Beardsworth   14
+Glen McCafferty     21  Neil Nicholson       10
+Carl Smith          21  Peter Scott           6
+Mark Hirst          20  Dean Helliwell       21
+          Games:     6              Games:    4
+      Aggregate:   191          Aggregate:  143
+         Points:    21             Points:    9
+
+Division 1 (Naylor Pre       Sat 27th Jul
+       Wyke 'A'              Shipley Club
+Nigel Swales         8  Chris Bedford        21
+Chris Sowden        10  Daniel Metcalfe      21
+Gareth Metcalf      16  Neil Simpson         21
+Ian Wilson 'A'      20  Matthew Jacques 'A'  21
+Daniel Barker       21  Graeme Dytiche 'A'    9
+Frank Cullen 'A'    21  Craig Fenton         16
+Trevor Benn 'A'     21  Stuart Wilson        18
+Neil Tordoff 'A'    21  Scott Bloodworth     18
+Darren Hickey       21  Chris Jacques        19
+Nigel Wormald       21  John Sample          19
+          Games:     6              Games:    4
+      Aggregate:   180          Aggregate:  183
+         Points:    15             Points:   15
 
  Division 2 (Godwin)         Sat 27th Jul
      Rufford 'A'            Harold Club 'A'
