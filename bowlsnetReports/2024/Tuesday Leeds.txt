@@ -1,5 +1,5 @@
 === Leeds &amp; District (Tuesday) 2024
-=== League Report (as of Sat 27th Jul)
+=== League Report (as of Mon 29th Jul)
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -250,6 +250,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Pudsey Park B              34   157   v.   Colton                      31   145                        
  6:45pm  Stanningley Park           34   152   v.   Pudsey Park A               22   109                        
+         Middleton Comm                        v.   Garforth C C                                                To Mon 29th Jul
  6:45pm  Manston Pk                 31   137   v.   Moor Allerton               24   112                        
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -362,6 +363,11 @@
  6:45pm  Pudsey Park A              34   149   v.   Gildersome B                26   124                        
  6:45pm  Garforth C C               35   155   v.   Moor Allerton               22   106                        
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Mon 29th Jul                                 Division 3                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 6:45pm  Middleton Comm             35   159   v.   Garforth C C                27   126                        From Tue 18th Jun
+
 
 === Current LEAGUE TABLES
 === Division 1
@@ -398,15 +404,15 @@
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
   1.  Stanningley Park     14   13    1    487
-  2.  Manston Pk           14    9    5    434
-  3.  Colton               14    7    7    413
-  4.  Middleton Comm       13   10    3    410
+  2.  Middleton Comm       14   11    3    445
+  3.  Manston Pk           14    9    5    434
+  4.  Colton               14    7    7    413
   5.  Moor Allerton        14    7    7    395
   6.  Pudsey Park A        14    3   11    367
-  7.  Gildersome B         13    4    8    341
-  8.  Pudsey Park B        14    2   11    333
-  9.  Meanwood B           12    6    6    331
- 10.  Garforth C C         12    5    7    315
+  7.  Garforth C C         13    5    8    342
+  8.  Gildersome B         13    4    8    341
+  9.  Pudsey Park B        14    2   11    333
+ 10.  Meanwood B           12    6    6    331
 
 
 === FULL RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -3022,5 +3028,18 @@ Nigel Ware          21  George Ramsden       9
 Doughty Ian         21  Martin Kaitcer       6
       Aggregate:   155        Aggregate:   106
          Points:    35           Points:    22
+
+      Division 3             Mon 29th Jul
+    Middleton Comm           Garforth C C
+Malcolm Hallas      17  John Robson         21
+Darren Cookson      21  Les Hudson           6
+Brian Ragan         21  Andrew Grunwell     18
+Mark Aspin          17  Nigel Ware          21
+Barbara Ragan       20  Ann Doughty         21
+Les Oddy            21  Ian Thornhill       20
+Christine Glyn      21  Helen Dickinson      4
+Malcolm Cameron     21  Steve Barltrop      15
+      Aggregate:   159        Aggregate:   126
+         Points:    35           Points:    27
 
 

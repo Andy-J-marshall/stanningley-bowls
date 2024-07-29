@@ -1,5 +1,5 @@
 === AireDale &amp; Wharfedale (Mon. Evening) 2024
-=== League Report (as of Sat 27th Jul)
+=== League Report (as of Mon 29th Jul)
 
 
 === RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -588,51 +588,81 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------
   6:45pm  Littlemoor S&amp;SC                 6.5         v.   Skipton BR                      2.0        On Rawdon                 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Mon 29th Jul                                      Division 1                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  6:45pm  Burley in Wharfedale A            6   150   v.   Rufford A                        24   201                            
+  6:45pm  Guiseley A                       27   201   v.   Pudsey B                          3   122                            
+  6:45pm  Skipton Craven                   17   196   v.   Cross Roads                      13   182                            
+  6:45pm  Farsley A                        19   193   v.   Farsley B                        11   164                            
+  6:45pm  Pudsey A                         22   186   v.   Ilkley A                          8   141                            
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Mon 29th Jul                                      Division 2                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  6:45pm  Rufford B                        25   203   v.   Horsforth Hall Park               5   137                            
+  6:45pm  Littlemoor S&amp;SC                  30   210   v.   Rawdon A                          0    83                            
+  6:45pm  Ilkley B                         24   200   v.   Guiseley B                        6   148                            
+  6:45pm  Eccleshill A                     23   193   v.   Adel A                            7   135                            
+  6:45pm  Wharfemeadows A                  19   185   v.   Holt Park A                      11   171                            
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Mon 29th Jul                                      Division 3                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  6:45pm  Baildon                          15   178   v.   Bramhope                         15   177                            
+  6:45pm  Menston A                        19   192   v.   Greenbottom A                    11   167                            
+  6:45pm  Yeadon Park A                    12   161   v.   Eccleshill B                     18   189                            
+  6:45pm  Rawdon B                         17   180   v.   Grove Hill                       13   168                            
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Mon 29th Jul                                      Division 4                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  6:45pm  Greenbottom B                    19   187   v.   Wharfemeadows B                  11   170                            
+  6:45pm  Holt Park B                      12   163   v.   Calverley                        18   185                            
+  6:45pm  Adel B                           25   198   v.   Yeadon Park B                     5   139                            
+
 
 === Current LEAGUE TABLES
 === Division 1
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Guiseley A                14   10    2    265
-  2.  Rufford A                 14    8    6    262
-  3.  Pudsey A                  14    9    4    259
-  4.  Skipton Craven            14    8    5    240
-  5.  Farsley A                 14    9    5    237
-  6.  Cross Roads               14    9    5    233
-  7.  Ilkley A                  14    8    6    213
-  8.  Burley in Wharfedale A    14    2   12    158
-  9.  Farsley B                 14    4    9    138
- 10.  Pudsey B                  14    0   13     95
+  1.  Guiseley A                15   11    2    292
+  2.  Rufford A                 15    9    6    286
+  3.  Pudsey A                  15   10    4    281
+  4.  Skipton Craven            15    9    5    257
+  5.  Farsley A                 15   10    5    256
+  6.  Cross Roads               15    9    6    246
+  7.  Ilkley A                  15    8    7    221
+  8.  Burley in Wharfedale A    15    2   13    164
+  9.  Farsley B                 15    4   10    149
+ 10.  Pudsey B                  15    0   14     98
 
 === Division 2
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Littlemoor S&amp;SC           14   14    0    348
-  2.  Eccleshill A              14   12    2    311
-  3.  Rawdon A                  14   11    3    263
-  4.  Rufford B                 14    5    8    192
-  5.  Adel A                    14    5    8    187
-  6.  Guiseley B                14    6    7    186
-  7.  Ilkley B                  14    5    9    182
-  8.  Holt Park A               14    4   10    150
-  9.  Horsforth Hall Park       14    3   11    142
- 10.  Wharfemeadows A           14    3   10    139
+  1.  Littlemoor S&amp;SC           15   15    0    378
+  2.  Eccleshill A              15   13    2    334
+  3.  Rawdon A                  15   11    4    263
+  4.  Rufford B                 15    6    8    217
+  5.  Ilkley B                  15    6    9    206
+  6.  Adel A                    15    5    9    194
+  7.  Guiseley B                15    6    8    192
+  8.  Holt Park A               15    4   11    161
+  9.  Wharfemeadows A           15    4   10    158
+ 10.  Horsforth Hall Park       15    3   12    147
 
 === Division 3
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Grove Hill                12   10    2    224
-  2.  Eccleshill B              13    9    4    206
-  3.  Salts                     13    6    7    204
-  4.  Menston A                 13    6    7    201
-  5.  Rawdon B                  12    7    4    178
-  6.  Bramhope                  13    4    9    174
-  7.  Yeadon Park A             12    5    6    172
-  8.  Greenbottom A             12    4    7    169
-  9.  Baildon                   12    3    8    152
+  1.  Grove Hill                13   10    3    237
+  2.  Eccleshill B              14   10    4    224
+  3.  Menston A                 14    7    7    220
+  4.  Salts                     13    6    7    204
+  5.  Rawdon B                  13    8    4    195
+  6.  Bramhope                  14    4    9    189
+  7.  Yeadon Park A             13    5    7    184
+  8.  Greenbottom A             13    4    8    180
+  9.  Baildon                   13    3    8    167
 
 === Division 4
                                   Matches     Pnts
@@ -640,13 +670,13 @@
 ====  =======================  ===  ===  ===  =====  
   1.  Burley in Wharfedale B    13   13    0    291
   2.  Myrtle Park               12    9    3    226
-  3.  Wharfemeadows B           13    5    5    196
-  4.  Holt Park B               13    5    7    192
-  5.  Calverley                 12    5    6    180
-  6.  Menston B                 12    5    7    153
-  7.  Yeadon Park B             13    5    7    153
-  8.  Adel B                    12    3    9    146
-  9.  Greenbottom B             12    3    9    143
+  3.  Wharfemeadows B           14    5    6    207
+  4.  Holt Park B               14    5    8    204
+  5.  Calverley                 13    6    6    198
+  6.  Adel B                    13    4    9    171
+  7.  Greenbottom B             13    4    9    162
+  8.  Yeadon Park B             14    5    8    158
+  9.  Menston B                 12    5    7    153
 
 
 === FULL RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -5252,5 +5282,277 @@ Simon Wider              K Burnett
 Nicole Farrer        21  D Jowell            20
 Mark Allman              D Gore                
           Points:   6.5           Points:   2.0
+
+      Division 1              Mon 29th Jul
+Burley in Wharfedale A         Rufford A
+Andrew Wilson        11  Tony Beeden         21
+Brian Wheeler 'A'    13  Martyn Benson       21
+Alan Goodenough      15  David Kirkbright    21
+Robert Wheeler       14  Andrew Haran        21
+Susan Knowles        11  Allan Caine         21
+Roy Knowles          17  John Benson 'A'     21
+Mark Ullock          11  Debbie Kirkbright   21
+Joe Ullock'A'        16  Tim Bennett         21
+Andrew Shaw 'A'      21  Daniel Teale'A'     19
+Ben Ullock 'A'       21  Ryan Benson 'A'     14
+       Aggregate:   150        Aggregate:   201
+           Games:     2            Games:     8
+          Points:     6           Points:    24
+
+      Division 1              Mon 29th Jul
+      Guiseley A                Pudsey B
+Nick Bastow          21  David McDonald      19
+Ben Stockdale        21  Rick Pearson         8
+James Teale          21  Kevin Rankin        18
+Chris Daysh'A'       12  Dave Rankin         21
+Graham Oliver        21  Sue Chadwick         8
+Gary Whelan          21  Stewart Watson      12
+Thomas Cater         21  Melissa Morris       8
+Ian Howard'A'        21  Sam Hunak            6
+Joe Stockdale 'A'    21  Richard Hodgson      6
+Luke Teale 'A'       21  Matthew Leaf        16
+       Aggregate:   201        Aggregate:   122
+           Games:     9            Games:     1
+          Points:    27           Points:     3
+
+      Division 1              Mon 29th Jul
+    Skipton Craven            Cross Roads
+Mick Gadd            21  Neil Madden         19
+Daniel Moore         17  Richard Hargreaves  21
+Mick Bastow          21  Richard Dunhill     17
+Paul Drinkall        20  Neill Hargreaves    21
+Sharon Gadd          21  Paul Berry          17
+Viv Abell            19  Peter Hepworth      21
+Dave Jowett          20  Peter Clark         21
+Bob Jeffrey          15  Ryan Tiler          21
+Guy Greene           21  Mark Barker         10
+Robbie Ellis         21  Thomas Johnson      14
+       Aggregate:   196        Aggregate:   182
+           Games:     5            Games:     5
+          Points:    17           Points:    13
+
+      Division 1              Mon 29th Jul
+       Farsley A               Farsley B
+Chris Hight          21  David Smalley       14
+Daniel Beardsworth'A'17  Stuart Brook        21
+Andy Swain           21  Derek Pickering     17
+Duncan McPhail       20  Colin Rhodes        21
+Neil Nicholson       21  Richard Whitaker    12
+Ken Gilroy           21  Jim Swailes         12
+Andy Gilroy          14  Peter Crowther      21
+Paul Jacques         16  Peter Scott         21
+Dean Helliwell       21  Graham Petty        16
+Lee Wider            21  Derek Pickering      9
+       Aggregate:   193        Aggregate:   164
+           Games:     6            Games:     4
+          Points:    19           Points:    11
+
+      Division 1              Mon 29th Jul
+       Pudsey A                 Ilkley A
+Steve Morris         21  Dave Scott          16
+Thomas Morris        21  Andrew Breare       13
+Thomas Hanson        21  Andy Thornton 'A'    9
+Craig Farquharson     8  Danny Barker        21
+Andrew Sykes'A'      14  Paul Hillam         21
+Dave Upton'A'        21  Steve Ackroyd       12
+Steve Emmett         21  Martin Bailey        9
+Ian Shaw 'A'         21  Darren Thompson      4
+Duncan Reeves        17  Richard Garth 'A'   21
+Jamie Winterburn     21  Steve Cooper 'A'    15
+       Aggregate:   186        Aggregate:   141
+           Games:     7            Games:     3
+          Points:    22           Points:     8
+
+      Division 2              Mon 29th Jul
+       Rufford B          Horsforth Hall Park
+Graham Ingleson      21  Kath Crompton       10
+Christopher Sims     19  Nigel Stockdale 'A' 21
+Carole Wright        21  Bruce Callard       11
+Pauline Ingleson     21  Paul Stoyles        13
+Glynn Goodyear       16  Frank Sutcliffe     21
+Diane Teale          21  Phillip Clayton     13
+Catherine New        21  Ruth Sutcliffe      16
+Guy Barrie           21  Peter Allen 'A'     13
+Ken Lee              21  David Ascough        9
+Brian Teale          21  Wayne Shipley       10
+       Aggregate:   203        Aggregate:   137
+           Games:     8            Games:     2
+          Points:    25           Points:     5
+
+      Division 2              Mon 29th Jul
+    Littlemoor S&amp;SC             Rawdon A
+Will Bedford         21  Lindsay Rosendale    7
+Simon Wider          21  Steve Calvert 'A'   10
+Lewis Cooper         21  David Johnson        6
+Ben Falkingham       21  Paul Haigh 'A'      10
+Glen Pratt           21  Gordon Longfellow    6
+Craig Hebberd        21  Roger French'A'      6
+John Armitage        21  Ken Garbett'A'      10
+Nathan Dobson        21  Ian Tindal           1
+Mark Allman          21  Stephen Bottomley   16
+Nicole Farrer        21  Steven Spurr        11
+       Aggregate:   210        Aggregate:    83
+           Games:    10            Games:     0
+          Points:    30           Points:     0
+
+      Division 2              Mon 29th Jul
+       Ilkley B                Guiseley B
+Allan Hughes         21  Lynn Ogden          12
+Eddie Wray           21  Carolyn Matthewman  17
+Simon Whitehead      16  Billy Cater         21
+Deborah Swann        21  Ralph Sissons       17
+Andrew Cook          21  Jeremy Jones         7
+Clive Swan           16  Roger Waite         21
+David Emerson        21  Andy Baxter         20
+Robert Garth         21  Peter Storey        15
+Steven Senior        21  Andrew Durkin        7
+Steve Birch          21  Colin Matthewman    11
+       Aggregate:   200        Aggregate:   148
+           Games:     8            Games:     2
+          Points:    24           Points:     6
+
+      Division 2              Mon 29th Jul
+     Eccleshill A                Adel A
+Steve Bowes          21  Trevor Sargison      3
+Graham Chaffer'A'    21  Howard Rew          11
+Michael Hall         21  John Binns'A'       17
+Peter Jefferson      13  Royston Lewis 'A'   21
+Ian Matthews         21  Phil Hynes'A'        5
+Neil Mylan 'A'       21  Lynda Heath          9
+Jeremy Knowles       21  Andy Jones           9
+Mick Angus           13  Dave Cooper         21
+Paul Rooks           21  Peter Forshaw       18
+Andy Howie'A'        20  David Pike          21
+       Aggregate:   193        Aggregate:   135
+           Games:     7            Games:     3
+          Points:    23           Points:     7
+
+      Division 2              Mon 29th Jul
+    Wharfemeadows A           Holt Park A
+Paul Bowden          21  Debbie Sandles      15
+Pauline Barnett      15  David Lyons         21
+Howard Gardiner 'A'  21  Carol Matthews      18
+Michael Smith'A'      6  Ernest Johnson 'A'  21
+Corrine Thuilliez    17  John Patrick        21
+Raymond Smith Jr     21  Mike Cox            20
+John Chippindale 'A' 21  Tony Watson          9
+Ben Smith            21  Peter Byford 'A'    13
+Mark Silvester       21  Sylvia Petty 'A'    19
+Paul Crawford        21  Peter Sandles       14
+       Aggregate:   185        Aggregate:   171
+           Games:     7            Games:     3
+          Points:    19           Points:    11
+
+      Division 3              Mon 29th Jul
+        Baildon                 Bramhope
+Linda Bakes          21  Pam Wood            18
+John Tyson           20  Antonio Sanna       21
+Malcolm Throup       21  Bob Williams        18
+Jason Bridge         21  Chris Jowett         6
+David Greenwood      21  Sue Bird             9
+Celia Throup         18  Ian Warner          21
+Philip Clifton       18  Linda Porter        21
+Dorothy Walker       12  Billy Webb          21
+Jim Whittle          11  Anne Mackman        21
+James Greenwood      15  Sabrina Piggott     21
+       Aggregate:   178        Aggregate:   177
+           Games:     4            Games:     6
+          Points:    15           Points:    15
+
+      Division 3              Mon 29th Jul
+       Menston A             Greenbottom A
+Nigel Buckley'A'     15  Janice Waite        21
+Amrik Singh          21  Fiona Haxby          6
+Roger Sayers 'A'     21  Audrey McGregor     16
+Gwen Smith           18  Dave Whelan         21
+Gary Skeet           15  Colin Mann'A'       21
+Laurie Robinson      21  Karen Whitelaw'A'   19
+Ian Smith            21  Alan Bishop         16
+Gail Singh           18  Brian Hall 'A'      21
+Simon Cowley 'A'     21  Ann Ryley 'A'        6
+Shaun Johnson'A'     21  Peter Haxby         20
+       Aggregate:   192        Aggregate:   167
+           Games:     6            Games:     4
+          Points:    19           Points:    11
+
+      Division 3              Mon 29th Jul
+     Yeadon Park A            Eccleshill B
+Patrick Campbell     10  Sarah Harrison      21
+Frank Baker 'A'      21  Brian Barker        13
+John Hutton'A'       21  Vincent Gelder      15
+Robert North'A'      19  Melissa Gilroy      21
+Reid Haddow          21  Andrew Smith        19
+Tim Nicholson         3  Lee Hicks           21
+Ian Robertson'A'     21  Keith Harrison      17
+Mark Sample          21  Andrew Magoolagan   20
+David Keighley       18  Pauline Gilroy      21
+Paul Bullock          6  Peter Howroyd       21
+       Aggregate:   161        Aggregate:   189
+           Games:     5            Games:     5
+          Points:    12           Points:    18
+
+      Division 3              Mon 29th Jul
+       Rawdon B                Grove Hill
+Bernard Harrison     15  David Samuel        21
+Philip Jackson       17  David Locke         21
+Ken Chapman          21  Peter Brearley      17
+Ray Weldrand         12  Tony Farrar         21
+Philip Leadbeater    21  Billy Hartley       10
+George McLaren       21  Neil Howlett         7
+Marlene Waite-Pullan 21  Katherine Lodge     16
+Allan Sample         21  Charles Holden      13
+John Illingworth     19  Neil Jameson        21
+John Collins         12  Daniel Twist        21
+       Aggregate:   180        Aggregate:   168
+           Games:     5            Games:     5
+          Points:    17           Points:    13
+
+      Division 4              Mon 29th Jul
+     Greenbottom B          Wharfemeadows B
+Dorothy Jackson      15  Gill Godden         21
+Sandy Watson         21  Lorna Crabtree      16
+Elinor Newhouse      12  Belinda Mitchell    21
+Stan Marsden         21  John Parker         18
+Jean Lees            21  Jane Bowden         20
+Margaret Adamson     21  Dot Dixon            9
+Bill Lovedale        13  Tim Marshall        21
+Gary Poucher         21  Linda Yates         19
+Trevor Dawson        21  Ray Smith Snr       11
+Allan Jukes          21  David Warburton     14
+       Aggregate:   187        Aggregate:   170
+           Games:     7            Games:     3
+          Points:    19           Points:    11
+
+      Division 4              Mon 29th Jul
+      Holt Park B              Calverley
+Michelle Norcliffe   17  Raymond Gambles     21
+Lois Horsfall         9  Alan Horsfield      21
+Mark Swindlehurst    21  Clifford Wheatley   20
+Ray Boast            21  Ann Townsley        18
+Terry Cook            2  June Whitaker       21
+Mick Sadler          21  Paul Hanson         11
+Geoff Megson         15  Malcolm Pratt       21
+Colin Kilner         21  Norma Whiteley      19
+Brendan Clarke       15  Roy Whiteley        21
+David Sadler         21  Richard Nudd        12
+       Aggregate:   163        Aggregate:   185
+           Games:     5            Games:     5
+          Points:    12           Points:    18
+
+      Division 4              Mon 29th Jul
+        Adel B               Yeadon Park B
+Steve Richardson      9  Maureen Slater      21
+Marion Rider         21  Trevor Taylor       13
+Ken Garrett          21  Mark Wilson         12
+Bruce Tremlett       21  Sandra Taylor        5
+Philip Sykes         21  John Keys           18
+Dave Brown           21  Tracy Wilson        18
+Meryl Auty           21  Barry Slater         9
+Kath Hynes           21  Stan Parker         12
+John Auty            21  Michael Burnett     19
+Kathryn Jones        21  Julie Watson        12
+       Aggregate:   198        Aggregate:   139
+           Games:     9            Games:     1
+          Points:    25           Points:     5
 
 
