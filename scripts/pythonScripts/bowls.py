@@ -327,7 +327,7 @@ for team in teamDays:
         
         #### PLAYER STATS ####
         
-        def checkValidPlayerOnDay(playerName, rowNumber):
+        def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
             # Checks if player plays for team on selected day
             playerName = formatName(playerName)
             if playerName in traitorPlayers[league]:
@@ -340,7 +340,8 @@ for team in teamDays:
                 # Checks player is playing for correct team
                 previousRowValue = allRowsInFile[rowNumber - i]
                 if previousRowValue and type(previousRowValue) is str:
-                    if teamNameUsedForLeague.lower() in previousRowValue.lower():
+                    previousRowValue = previousRowValue.lower().strip()
+                    if teamNameUsedForLeague.lower() in previousRowValue:
                         # TODO remove except for 2015 and 2017
                         # stanningleyTeamCount = len(list(re.finditer('stanningley', previousRowValue.lower())))
                         # if stanningleyTeamCount > 1:
@@ -351,7 +352,11 @@ for team in teamDays:
                         #             aorbTeamToExclude = ' B'
                         #     if teamNameUsedForLeague.endswith(aorbTeamToExclude):
                         #         return False
-                        return True
+                        if homeOrAway.lower() == 'home' and previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                            return True
+                        if homeOrAway.lower() == 'away' and not previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                            return True
+                        return False
 
         # Find rows in spreadsheet for players' games
         homePlayerRow = []
@@ -366,14 +371,14 @@ for team in teamDays:
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                     possiblePlayerNameHome = formatName(possiblePlayerNameHome).lower()
                     if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicateTeamMemberNames:
-                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber)
+                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home')
                         if validPlayer:
                             homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
                     possiblePlayerNameAway = formatName(possiblePlayerNameAway).lower()
                     if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicateTeamMemberNames:
-                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber)
+                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away')
                         if validPlayer:
                             awayPlayerRow.append(rowNumber)
         
