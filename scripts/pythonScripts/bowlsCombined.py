@@ -135,22 +135,26 @@ for league in leaguesDays:
                         break
 
                     possibleTeamText = allRowsInFile[rowNumber - i]
+                    
                     if type(possibleTeamText) is str:
+                        possibleTeamText = possibleTeamText.lower().strip()
+                        
                         # Checks against full team name first
                         for team in teamsTracking:
-                            if team.lower() in possibleTeamText.lower():
-                                correctPlayerFound = True
-                                break
+                            team = team.lower()
+                            if team in possibleTeamText:
+                                if (homeGame or cupHome) and possibleTeamText.startswith(team):
+                                    correctPlayerFound = True
+                                    break
+                                if (awayGame or cupAway) and not possibleTeamText.startswith(team):
+                                    correctPlayerFound = True
+                                    break
+                                if possibleTeamText.count(team) == 2:
+                                    correctPlayerFound = True
+                                    break
                         
                         if correctPlayerFound is True:
                             break
-                            
-                        # Checks against each word in the team name if team not found
-                        teamNameParts = possibleTeamText.split(' ')
-                        for part in teamNameParts:
-                            if part.lower() in teamsTracking:
-                                correctPlayerFound = True
-                                break
 
                 # Find result details
                 if correctPlayerFound:
