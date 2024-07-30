@@ -2,6 +2,7 @@ import { expect } from 'chai';
 import {
   returnPlayerStats,
   calculatePairsPartnersCount,
+  checkWinPercAndAverageAreNumbers,
 } from '../../src/helpers/playersHelper';
 
 describe('#Players Tests', () => {
@@ -374,6 +375,46 @@ describe('#Players Tests', () => {
       expect(saturdayLosses).to.equal(0);
       expect(saturdayGames).to.equal(14);
       expect(saturdayAvg.toFixed(2)).to.equal('13.71');
+    });
+  });
+
+  describe('calculatePairsPartnersCount', () => {
+    it('should calculate pairs partners count', () => {
+      const allPairsPartners = ['partner1', 'partner2', 'partner1', 'partner3'];
+
+      const expectedResult = {
+        partner1: { timesPaired: 2 },
+        partner2: { timesPaired: 1 },
+        partner3: { timesPaired: 1 },
+      };
+
+      const result = calculatePairsPartnersCount(allPairsPartners);
+      expect(result).to.deep.equal(expectedResult);
+    });
+  });
+
+  describe('checkWinPercAndAverageAreNumbers', () => {
+    it('should verify win percentage and average are numbers and set defaults if not', () => {
+      const stats = {
+        winPerc: 'NaN',
+        average: 'NaN',
+        singlesWinPerc: 'NaN',
+        singlesAverage: 'NaN',
+        pairsWinPerc: 'NaN',
+        pairsAverage: 'NaN',
+      };
+
+      const expectedResult = {
+        winPerc: 0,
+        average: -99,
+        singlesWinPerc: 0,
+        singlesAverage: -99,
+        pairsWinPerc: 0,
+        pairsAverage: -99,
+      };
+
+      const result = checkWinPercAndAverageAreNumbers(stats);
+      expect(result).to.deep.equal(expectedResult);
     });
   });
 });
