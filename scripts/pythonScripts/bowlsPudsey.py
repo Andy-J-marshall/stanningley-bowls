@@ -1,25 +1,25 @@
 import json
 import os
 from datetime import date
-import teamDetails
-import utils
+import teamDetailsPudsey
+import utilsPudsey
 import re
 
 year = str(date.today().year)
 
-teamDays = teamDetails.teamDays
-teamNames = teamDetails.teamNames
-displayTeamName = teamDetails.preferredTeamName
-players = teamDetails.players
-duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
-traitorPlayers = teamDetails.traitorPlayers
-playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True)
-formatName = utils.formatName
-cupTextList = utils.cupText
-returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
-sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
-sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-checkFileSize = utils.checkFileSize
+teamDays = teamDetailsPudsey.teamDays
+teamNames = teamDetailsPudsey.teamNames
+displayTeamName = teamDetailsPudsey.preferredTeamName
+players = teamDetailsPudsey.players
+duplicateTeamMemberNames = teamDetailsPudsey.duplicateTeamMemberNames
+traitorPlayers = teamDetailsPudsey.traitorPlayers
+playerStats = utilsPudsey.returnListOfPlayerStats(teamDetailsPudsey.teamDays, True)
+formatName = utilsPudsey.formatName
+cupTextList = utilsPudsey.cupText
+clubCupWinners = teamDetailsPudsey.clubCupWinners
+returnTotalAggAvailablePerGame = utilsPudsey.returnTotalAggAvailablePerGame
+sanityChecksOnPlayerStats = utilsPudsey.sanityChecksOnPlayerStats
+checkFileSize = utilsPudsey.checkFileSize
 teamsProcessed = []
 
 allTeamResults = []
@@ -28,9 +28,7 @@ print('UPDATING STATS:', teamNames[0].upper())
 for team in teamDays:
     print('Updating Stats: ' + team)
     
-    league = team.replace(' (A)', '').replace(' (B)', '')
-     # this is to store first team data under the old name, to help with backward compatibility
-    teamNameToStoreData = team.replace(' (A)', '')
+    league = team.replace(' (A)', '').replace(' (B)', '').replace(' (C)', '').replace(' (D)', '')
 
     if team in teamsProcessed:
         raise Exception('team is being processed twice: ' + team)
@@ -51,7 +49,7 @@ for team in teamDays:
         if endRow == 0:
             raise Exception('Report file is empty')
         
-        # Find team name used by Stanningley in this league
+        # Find team name used by Pudsey in this league
         possibleTeamNamesUsed = []
         teamNameUsedForLeague = ''
         teamNameToUse = displayTeamName
@@ -65,17 +63,24 @@ for team in teamDays:
                     name = row.lower().strip().replace('\'', '').replace(' - ', ' ').replace(' bc', '')
                     if name.startswith(teamName.lower()):
                         name = teamName.lower()
-                        if '(a)' in team.lower() and name.endswith(' b'):
+                        if '(a)' in team.lower() and (name.endswith(' b') or name.endswith(' c') or name.endswith(' d')):
                             continue
-                        if '(b)' in team.lower() and name.endswith(' a'):
+                        if '(b)' in team.lower() and (name.endswith(' a') or name.endswith(' c') or name.endswith(' d')):
+                            continue
+                        if '(c)' in team.lower() and (name.endswith(' a') or name.endswith(' b') or name.endswith(' d')):
+                            continue
+                        if '(d)' in team.lower() and (name.endswith(' a') or name.endswith(' b') or name.endswith(' c')):
                             continue
                         if teamName.lower() in name:
                             possibleTeamNamesUsed.append(teamName)
-                            if '(A)' in team:
+                            if '(a)' in team.lower():
                                 teamNameToUse = displayTeamName + ' A'
-                            if '(B)' in team:
+                            if '(b)' in team.lower():
                                 teamNameToUse = displayTeamName + ' B'
-        
+                            if '(c)' in team.lower():
+                                teamNameToUse = displayTeamName + ' C'
+                            if '(d)' in team.lower():
+                                teamNameToUse = displayTeamName + ' D'
     
         if len(possibleTeamNamesUsed) == 0:
             raise Exception('No team name found')
@@ -96,224 +101,8 @@ for team in teamDays:
                         for i in range(0, 11):
                             cupGameRows.append(rowNumber + i)
                         break
-
-        #### TEAM STATS ####
-        # Find Stanningley games
-        homeRow = []
-        awayRow = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                # This ignores cup games hosted on Stanningley
-                hostedCupGame = False
-                for cupText in cupTextList:
-                    if cupText.lower() in row.lower():
-                        hostedCupGame = True
-                        break
-                if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
-                    words = row.strip().lower().split()
-                    firstWord = words[0].lower() 
-                    if firstWord == displayTeamName.lower():
-                        homeRow.append(rowNumber)
-                    else:
-                        awayRow.append(rowNumber)
-
-        # Find league position for teams
-        currentLeaguePosition = -1
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            # League position appears before player results
-            if rowNumber > startingRow:
-                break
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                leagueTableText = re.search(r"\d\.\s", row.lower())
-                if leagueTableText:
-                    if teamNameUsedForLeague.lower() in row.lower():
-                        leaguePosition = leagueTableText[0].split('.')[0]
-                        currentLeaguePosition = int(leaguePosition)
-                        break
-
-        # Find team results and scores
-        awayWins = 0
-        awayLosses = 0
-        homeWins = 0
-        homeLosses = 0
-        homeDraws = 0
-        awayDraws = 0
-        cupWins = 0
-        cupLosses = 0
-        wins = 0
-        draws = 0
-        losses = 0
-        teamAgg = 0
-        opponentAgg = 0
-        results = []
-        totalGamesPlayed = 0
-
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
-            row = allRowsInFile[rowNumber]
-            
-            rowsDownAdjustmentInt = 0
-            rowsUpAdjustmentInt = 0
-            totalNumberOfRowsAdjustmentInt = 0
-
-            # Leeds half holiday team only has 6 players
-            if 'half holiday' in team.lower():
-                rowsDownAdjustmentInt = 2
-
-            # AireWharfe pairs league display scores differently
-            if 'pairs airewharfe' in team.lower():
-                rowsUpAdjustmentInt = 1
-
-            # Check if cup game
-            # Cup games are based on aggregate, not score, and are played on neutral greens
-            cupGame = False
-            cupRow = allRowsInFile[rowNumber - 1]
-            if cupRow and type(cupRow) is str:
-                for cupText in cupTextList:
-                    if cupText.lower() in cupRow.lower():
-                        cupGame = True
-                        break
-            
-            if cupGame:
-                # To account for handicap row in cup games
-                checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
-                if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
-                    rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
-
-                # Find the number of rows down for the team scores
-                totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
-            else:
-                totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
-            
-            # Prevents attempting to process a line that doesn't exist
-            if rowNumber + totalNumberOfRowsAdjustmentInt >= endRow:
-                break
-            
-            # Save the scores
-            text = allRowsInFile[rowNumber + totalNumberOfRowsAdjustmentInt]
-            if text and type(text) is str:
-                matchScore = re.findall(r'\d+', text)
-            if len(matchScore) == 2:
-                homeScore = int(matchScore[0].strip())
-                awayScore = int(matchScore[1].strip())
-                
-            # Save the aggregates
-            if cupGame:
-                homeAgg = homeScore
-                awayAgg = awayScore
-            else:
-                text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
-                if text and type(text) is str:
-                    matchAgg = re.findall(r'\d+', text)
-                if len(matchAgg) == 2:
-                    homeAgg = int(matchAgg[0].strip())
-                    awayAgg = int(matchAgg[1].strip())
-
-            # Finds the date of the match
-            gameDate = ''
-            if (rowNumber in homeRow or rowNumber in awayRow) and rowNumber > startingRow:
-                gameDateRowModifier = 1
-                if 'saturday leeds' in team.lower():
-                    gameDateRowModifier += 1
-
-                gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                
-                if type(gameDate) is str:
-                    if 'On ' in gameDate or '(from ' in gameDate:
-                        gameDateRowModifier += 1
-                        gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                        
-                else:
-                    gameDate = ''
-                    
-            if gameDate:
-                gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
-                gameDate = gameDateParts[2]
-                # This might happen if date if cup text includes the day
-                if len(gameDateParts) > 4:
-                    gameDate = gameDateParts[4]
-                
-                gameDate = gameDate.strip()
-                
-                # Sanity check on the date
-                dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
-                if dateContainsDayOfWeekBool is None:
-                    raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
-
-            # Home games
-            rowText = allRowsInFile[rowNumber]
-            if rowNumber in homeRow:
-                opponent = rowText.split(teamNameUsedForLeague)[1].strip()
-                result = teamNameToUse + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + opponent + ' (' + gameDate + ')'
-                results.append(result)
-                if homeScore > awayScore:
-                    if cupGame:
-                        cupWins = cupWins + 1
-                    else:
-                        homeWins = homeWins + 1
-                if homeScore < awayScore:
-                    if cupGame:
-                        cupLosses = cupLosses + 1
-                    else:
-                        homeLosses = homeLosses + 1
-                if awayScore == homeScore:
-                    homeDraws = homeDraws + 1
-                teamAgg = teamAgg + homeAgg
-                opponentAgg = opponentAgg + awayAgg
-
-            # Away games
-            if rowNumber in awayRow:
-                opponent = rowText.split(teamNameUsedForLeague)[0].strip()
-                result = opponent + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + teamNameToUse + ' (' + gameDate + ')'
-                results.append(result)
-                if awayScore > homeScore:
-                    if cupGame:
-                        cupWins = cupWins + 1
-                    else:
-                        awayWins = awayWins + 1
-                if awayScore < homeScore:
-                    if cupGame:
-                        cupLosses = cupLosses + 1
-                    else:
-                        awayLosses = awayLosses + 1
-                if awayScore == homeScore:
-                    awayDraws = awayDraws + 1
-                opponentAgg = opponentAgg + homeAgg
-                teamAgg = teamAgg + awayAgg
-
-        # Store team result data
-        teamResults = {
-            'day': teamNameToStoreData,
-            'awayWins': awayWins,
-            'homeWins': homeWins,
-            'wins': awayWins + homeWins + cupWins,
-            'awayLosses': awayLosses,
-            'homeLosses': homeLosses,
-            'homeDraws': homeDraws,
-            'awayDraws': awayDraws,
-            'draws': homeDraws + awayDraws,
-            'cupWins': cupWins,
-            'cupLosses': cupLosses,
-            'losses': homeLosses + awayLosses + cupLosses,
-            'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
-            'agg': teamAgg,
-            'opponentAgg': opponentAgg,
-            'leaguePosition': currentLeaguePosition,
-            'results': results
-        }
-        allTeamResults.append(teamResults)
         
         #### PLAYER STATS ####
-        
         def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
             # Checks if player plays for team on selected day
             playerName = formatName(playerName)
@@ -471,7 +260,7 @@ for team in teamDays:
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
-                playerStats[playerName][teamNameToStoreData.lower()]['games'] += 1
+                playerStats[playerName][team.lower()]['games'] += 1
                 playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
@@ -482,7 +271,7 @@ for team in teamDays:
 
                 # Wins
                 if aggregate > opponentAggregate:
-                    playerStats[playerName][teamNameToStoreData.lower()]['wins'] += 1
+                    playerStats[playerName][team.lower()]['wins'] += 1
                     if pairsGame:
                         playerStats[playerName]['winningPairsPartners'].append(pairsPartner)
                         playerStats[playerName]['pairWins'] += 1
@@ -520,7 +309,7 @@ for team in teamDays:
                 playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
-                playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - \
+                playerStats[playerName][team.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
                     playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(team)
@@ -545,19 +334,25 @@ for team in teamDays:
                         'Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
     file.close()
 
+if year in clubCupWinners:
+    clubCupWinner = clubCupWinners[year]
+else:
+    clubCupWinner = ''
+
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
+    'clubCupWinner': clubCupWinner,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year,
 }
 
-filename = 'src/data/bowlsStats' + year + '.json'
+filename = 'src/data/pudsey/bowlsStatsPudsey' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
     previousFileSize = checkFileSize(filename)
-    os.remove(filename)    
+    os.remove(filename)
 
 with open(filename, 'w') as jsonFile:
     json.dump(dataToExport, jsonFile, indent=4)
@@ -566,7 +361,6 @@ with open(filename, 'w') as jsonFile:
     jsonFile.close()
 
 # Sanity checks on the data
-sanityChecksOnTeamStats(allTeamResults)
 sanityChecksOnPlayerStats(playerStats, players)
 newFileSize = checkFileSize(filename)
 if newFileSize < previousFileSize:
