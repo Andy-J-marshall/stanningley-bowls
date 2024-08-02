@@ -47,7 +47,7 @@ import pudseyCombinedBowlsStats23 from './data/pudsey/allPlayerStatsPudsey2023.j
 import pudseyBowlsStats24 from './data/pudsey/bowlsStatsPudsey2024.json';
 import pudseyCombinedBowlsStats24 from './data/pudsey/allPlayerStatsPudsey2024.json';
 import './app.css';
-import PudseyStats from './components/pudseyStats';
+// TODO move these files imports to another file?
 
 // TODO do I want the Pudsey specific stats to be in a separate file?
 
@@ -287,7 +287,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                     showOldYears={true}
                                 />
-                                <PudseyStats
+                                <PlayerStats
                                     stats={pudseyStats}
                                     combinedStats={pudseyCombinedStats}
                                     statsForEveryYearArray={

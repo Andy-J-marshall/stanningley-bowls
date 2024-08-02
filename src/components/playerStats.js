@@ -15,11 +15,18 @@ import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
+// TODO doesn't work if you click on a player for pudsey
+// TODO might want to remove the team stats option for Pudsey? Or can I refactor it?
+
 function PlayerStats(props) {
     const combinedStats = props.combinedStats;
     const stats = props.stats;
     const statsForEveryYearArray = props.statsForEveryYearArray;
     const combinedStatsForEveryYearArray = props.combinedStatsForEveryYearArray;
+
+    if (!stats || !combinedStats) {
+        return <h4>No stats available for the selected year</h4>;
+    }
 
     const { playerResults } = stats;
     const combinedPlayerResults = combinedStats.playerResults;
