@@ -1,12 +1,12 @@
 import teamDetailsPudsey
 
-# teamPlayers = teamDetails.players
 # TODO paramertise these 3
 teamPlayers = teamDetailsPudsey.players
 duplicateTeamMemberNames = teamDetailsPudsey.duplicateTeamMemberNames
 currentTeamDays = teamDetailsPudsey.teamDays
 
-# TODO paramertise this
+# TODO split the generic methods into a separate file
+# TODO move to teamDetailsPudsey.py
 otherLeagues = ['Tuesday AireDale & Wharfedale', 'Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds',]
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
@@ -16,29 +16,30 @@ players = teamPlayers + extraPlayers
 otherDuplicatePlayers = []
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
 otherTeams = ['stanningley', 'new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
-# TODO paramertise this
+# TODO paramertise this? Or just hardcode
 teamsTracking = teamDetailsPudsey.teamNames + otherTeams
 cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
+# TODO move this to teamDetailsPudsey.py? Or just one big method?
 def deduplicateNames(name):
-    if name == 'Duncan Mc Phail':
-        name = 'Duncan McPhail'
-    if name == 'Andrew Marshall':
-        name = 'Andy Marshall'
+    if name == 'Tom Hanson':
+        name = 'Thomas Hanson'
     if name == 'Stuart Watson':
         name = 'Stewart Watson'
-    if name == 'Cliff Brogie':
-        name = 'Clifford Brogie'
-    if name == 'Andrew Waller':
-        name = 'Andy Waller'
-    if name == 'Don Shaw':
-        name = 'Donald Shaw'
-    if name == 'James Moorin':
-        name = 'Jim Moorin'
-    if name == 'Philip Thornton':
-        name = 'Phil Thornton'
-    if name == 'Phillip Thornton':
-        name = 'Phil Thornton'
+    if name == 'David Smith':
+        name = 'Dave Smith'
+    if name == 'Christopher Mordue':
+        name = 'Chris Mordue'
+    if name == 'Joshua Mordue':
+        name = 'Josh Mordue'
+    if name == 'Jonathon Edmondson':
+        name = 'Jon Edmondson'
+    if name == 'Andy Sykes':
+        name = 'Andrew Sykes'
+    if name == 'Phil Wilsdon':
+        name = 'Philip Wilsdon'
+    if name == 'Dave Poole':
+        name = 'David Poole'
     return name.lower()
 
 def standardiseName(name):

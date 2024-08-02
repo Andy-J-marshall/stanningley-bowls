@@ -21,26 +21,41 @@ teamDays = [
 
 # Every player (lowercase)
 players = [
-    'paul bowes',
-    'mary spears',
+    # 'paul bowes',
+    # 'mary spears',
     'stewart watson',
     'linda barrand',
     'richard hodgson',
+    'chris mordue'
+    'josh mordue',
+    'jon edmondson',
+    'ian smith',
+    'andrew sykes',
+    'gary wike',
+    'david poole',
+    'thomas hanson',
+    'james hanson',
+    'stuart hanson',
+    'stuart king',
+    'jamie winterburn',
+    'philip wilsdon',
+    'mason lindley',
+    'dave smith',
+    'jordan wike',
+    'alex edmondson',
 ]
 
 # Players with different spellings of name (lowercase)
-duplicateTeamMemberNames = []
+duplicateTeamMemberNames = [
+    'stuart watson', 'andy sykes', 'tom hanson', 'christopher mordue', 'joshua mordue', 'jonathon edmondson', 'dave poole', 'phil wilsdon', 'david smith' 
+]
 
 traitorPlayers = {
     'Tuesday Mirfield': [],
-    'Wednesday Spen Valley': [ 'stewart watson' ],
+    'Wednesday Spen Valley': [ 'stewart watson', 'andrew sykes' ],
     'Monday AireDale & Wharfedale': [],
-    'Tuesday AireDale & Wharfedale': [],
-    'Wednesday Half Holiday Bradford': [],
-    'Thursday Vets Bradford': [],
-    'Saturday Bradford': [],
-}
-
-clubCupWinners = {
-    # '2023': ''
+    'Tuesday AireDale & Wharfedale': [ 'stewart watson' ],
+    'Wednesday Half Holiday Bradford': [ 'stewart watson'],
+    'Thursday Vets Bradford': [ 'stewart watson'],
+    'Saturday Bradford': [ 'stewart watson'],
 }

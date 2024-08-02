@@ -22,7 +22,6 @@ sanityChecksOnPlayerStats = utilsPudsey.sanityChecksOnPlayerStats
 checkFileSize = utilsPudsey.checkFileSize
 teamsProcessed = []
 
-allTeamResults = []
 print('UPDATING STATS:', teamNames[0].upper())
 
 for team in teamDays:
@@ -342,8 +341,6 @@ else:
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
-    'teamResults': allTeamResults,
-    'clubCupWinner': clubCupWinner,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year,
 }

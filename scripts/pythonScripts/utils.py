@@ -4,7 +4,7 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-# Add Saturday AireDale & Wharfedale and Monday Pairs?
+# TODO move to teamDetails
 otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
                 'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
                 'Thursday Vets Bradford', 'Saturday Bradford']
@@ -19,6 +19,7 @@ teamsTracking = teamDetails.teamNames + otherTeams
 
 cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
+# TODO move this to team details
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
         name = 'Duncan McPhail'
