@@ -1,0 +1,3416 @@
+{
+    "playerResults": {
+        "alex edmondson": {
+            "totalAgg": 421,
+            "totalAggAgainst": 380,
+            "availableAgg": 504,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 252,
+            "availableAwayAgg": 252,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 229,
+            "totalHomeAggAgainst": 168,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 192,
+            "totalAwayAggAgainst": 212,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 8,
+            "homeLosses": 4,
+            "awayWins": 4,
+            "awayLosses": 8,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 24,
+            "dayPlayed": [
+                "Wednesday Spen Valley (C)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "alex edmondson 18 - 21 joshua perks",
+                "alex edmondson 21 - 14 peter jefferson",
+                "alex edmondson 21 - 10 phil robinson",
+                "alex edmondson 19 - 21 john stevenson",
+                "alex edmondson 19 - 21 alan marsden",
+                "alex edmondson 21 - 16 brian woolner",
+                "alex edmondson 7 - 21 peter oliver",
+                "alex edmondson 11 - 21 ian dewhirst",
+                "alex edmondson 13 - 21 kez smith",
+                "alex edmondson 12 - 21 john bloomer",
+                "alex edmondson 21 - 11 clive foord",
+                "alex edmondson 16 - 21 paul wilczynski",
+                "alex edmondson 21 - 15 chris bedford",
+                "alex edmondson 21 - 13 peter oliver",
+                "alex edmondson 20 - 21 michael sweeney",
+                "alex edmondson 21 - 2 louise whiteley",
+                "alex edmondson 15 - 21 guy barrie",
+                "alex edmondson 21 - 8 david leeming",
+                "alex edmondson 21 - 5 john griffin",
+                "alex edmondson 9 - 21 thomas powell",
+                "alex edmondson 21 - 9 ian hawtin",
+                "alex edmondson 21 - 9 christine barker",
+                "alex edmondson 10 - 21 thomas cater",
+                "alex edmondson 21 - 16 john armitage"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -3
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 5,
+                "wins": 3,
+                "aggDiff": 19
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 9,
+                "wins": 3,
+                "aggDiff": -23
+            },
+            "saturday bradford (b)": {
+                "games": 9,
+                "wins": 6,
+                "aggDiff": 48
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "andrew sykes": {
+            "totalAgg": 974,
+            "totalAggAgainst": 940,
+            "availableAgg": 1155,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 567,
+            "availableAwayAgg": 588,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 469,
+            "totalHomeAggAgainst": 457,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 505,
+            "totalAwayAggAgainst": 483,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 14,
+            "homeLosses": 13,
+            "awayWins": 12,
+            "awayLosses": 16,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 55,
+            "dayPlayed": [
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "andrew sykes 11 - 21 grant herrington",
+                "andrew sykes 13 - 21 gary siswick",
+                "andrew sykes 10 - 21 mark mcgorlick",
+                "andrew sykes 21 - 13 colin lloyd",
+                "andrew sykes 14 - 21 tom jagger",
+                "andrew sykes 21 - 18 chris broughton",
+                "andrew sykes 12 - 21 mally fowler",
+                "andrew sykes 18 - 21 phil hill",
+                "andrew sykes 21 - 15 daniel kilburn",
+                "andrew sykes 21 - 12 james teale",
+                "andrew sykes 21 - 13 tony barrass",
+                "andrew sykes 21 - 7 ian vickers",
+                "andrew sykes 15 - 21 neil tordoff",
+                "andrew sykes 17 - 21 dale dyson",
+                "andrew sykes 19 - 21 scott bloodworth",
+                "andrew sykes 21 - 7 tony green",
+                "andrew sykes 20 - 21 danny beeby",
+                "andrew sykes 13 - 21 paul rooks",
+                "andrew sykes 11 - 21 andrew jones",
+                "andrew sykes 10 - 21 mark mcgorlick",
+                "andrew sykes 21 - 13 colin lloyd",
+                "andrew sykes 14 - 21 tom jagger",
+                "andrew sykes 21 - 18 chris broughton",
+                "andrew sykes 12 - 21 mally fowler",
+                "andrew sykes 18 - 21 phil hill",
+                "andrew sykes 21 - 15 daniel kilburn",
+                "andrew sykes 21 - 12 james teale",
+                "andrew sykes 21 - 13 tony barrass",
+                "andrew sykes 11 - 21 grant herrington",
+                "andrew sykes 21 - 7 ian vickers",
+                "andrew sykes 15 - 21 neil tordoff",
+                "andrew sykes 17 - 21 dale dyson",
+                "andrew sykes 19 - 21 scott bloodworth",
+                "andrew sykes 21 - 7 tony green",
+                "andrew sykes 13 - 21 gary siswick",
+                "andrew sykes 20 - 21 danny beeby",
+                "andrew sykes 13 - 21 paul rooks",
+                "andrew sykes 11 - 21 andrew jones",
+                "andrew sykes 17 - 21 mark allman",
+                "andrew sykes 21 - 20 paul rooks",
+                "andrew sykes 21 - 17 jim garbutt",
+                "andrew sykes 21 - 2 neal hopper",
+                "andrew sykes 21 - 12 tony green",
+                "andrew sykes 21 - 4 james klenk",
+                "andrew sykes 21 - 7 tom harney",
+                "andrew sykes 14 - 21 chris ellis",
+                "andrew sykes 21 - 20 ben falkingham",
+                "andrew sykes 18 - 21 ian matthews 'b'",
+                "andrew sykes 20 - 21 kev siddle",
+                "andrew sykes 21 - 15 jason horsley",
+                "andrew sykes 21 - 18 scott sansom",
+                "andrew sykes 13 - 21 terry kelly",
+                "andrew sykes 21 - 19 chris jacques",
+                "andrew sykes 21 - 17 chris jacques",
+                "andrew sykes 21 - 10 jack summers"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 2,
+                "wins": 0,
+                "aggDiff": -18
+            },
+            "tuesday mirfield (b)": {
+                "games": 17,
+                "wins": 7,
+                "aggDiff": 1
+            },
+            "tuesday mirfield (c)": {
+                "games": 19,
+                "wins": 7,
+                "aggDiff": -17
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 17,
+                "wins": 12,
+                "aggDiff": 68
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "chris morduejosh mordue": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "dave smith": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "david poole": {
+            "totalAgg": 1462,
+            "totalAggAgainst": 1240,
+            "availableAgg": 1680,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 819,
+            "availableAwayAgg": 861,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 777,
+            "totalHomeAggAgainst": 547,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 685,
+            "totalAwayAggAgainst": 693,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 31,
+            "homeLosses": 8,
+            "awayWins": 21,
+            "awayLosses": 20,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 80,
+            "dayPlayed": [
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "david poole 10 - 21 marc armitage",
+                "david poole 21 - 20 dennis mackie",
+                "david poole 21 - 20 brian teale",
+                "david poole 21 - 18 david smalley",
+                "david poole 21 - 14 steven fender",
+                "david poole 21 - 19 david scott",
+                "david poole 21 - 2 ian tindal",
+                "david poole 19 - 21 ken gilroy",
+                "david poole 21 - 19 chris daysh",
+                "david poole 21 - 11 andrew haran",
+                "david poole 11 - 21 derek pickering",
+                "david poole 21 - 5 steven fender",
+                "david poole 21 - 6 cath rushton",
+                "david poole 10 - 21 martin bailey",
+                "david poole 21 - 12 paul haigh",
+                "david poole 10 - 21 marc armitage",
+                "david poole 21 - 20 dennis mackie",
+                "david poole 21 - 20 brian teale",
+                "david poole 21 - 18 david smalley",
+                "david poole 21 - 14 steven fender",
+                "david poole 21 - 19 david scott",
+                "david poole 21 - 2 ian tindal",
+                "david poole 19 - 21 ken gilroy",
+                "david poole 21 - 19 chris daysh",
+                "david poole 21 - 11 andrew haran",
+                "david poole 11 - 21 derek pickering",
+                "david poole 21 - 5 steven fender",
+                "david poole 21 - 6 cath rushton",
+                "david poole 10 - 21 martin bailey",
+                "david poole 21 - 12 paul haigh",
+                "david poole 13 - 21 nathan haigh",
+                "david poole 12 - 21 james martin",
+                "david poole 21 - 8 dean missere",
+                "david poole 15 - 21 mark hughes",
+                "david poole 9 - 21 alexander wolfenden",
+                "david poole 16 - 21 mark booth",
+                "david poole 21 - 16 ryan clark",
+                "david poole 21 - 2 malcolm preston",
+                "david poole 5 - 21 ross meese",
+                "david poole 21 - 10 paul ingleby",
+                "david poole 21 - 12 steve gilroy",
+                "david poole 21 - 14 neil gomersall",
+                "david poole 12 - 21 paul jacques",
+                "david poole 21 - 18 liam fallas",
+                "david poole 21 - 15 chris kelly",
+                "david poole 19 - 21 liam griffin",
+                "david poole 21 - 5 kristian shuttleworth",
+                "david poole 13 - 21 nathan haigh",
+                "david poole 12 - 21 james martin",
+                "david poole 21 - 8 dean missere",
+                "david poole 15 - 21 mark hughes",
+                "david poole 9 - 21 alexander wolfenden",
+                "david poole 16 - 21 mark booth",
+                "david poole 21 - 16 ryan clark",
+                "david poole 21 - 2 malcolm preston",
+                "david poole 5 - 21 ross meese",
+                "david poole 21 - 10 paul ingleby",
+                "david poole 21 - 12 steve gilroy",
+                "david poole 21 - 14 neil gomersall",
+                "david poole 12 - 21 paul jacques",
+                "david poole 21 - 18 liam fallas",
+                "david poole 21 - 15 chris kelly",
+                "david poole 19 - 21 liam griffin",
+                "david poole 21 - 5 kristian shuttleworth",
+                "david poole 17 - 21 ian dewhirst",
+                "david poole 21 - 13 mick wood",
+                "david poole 21 - 11 robert hopper",
+                "david poole 21 - 18 r whitfield",
+                "david poole 21 - 18 peter wilkinson",
+                "david poole 21 - 20 myles summers",
+                "david poole 20 - 21 neil simpson",
+                "david poole 21 - 10 mark dobson",
+                "david poole 20 - 21 nicky bastow",
+                "david poole 21 - 9 andrew limbert",
+                "david poole 21 - 13 robert hopper",
+                "david poole 11 - 21 kristian walder",
+                "david poole 21 - 15 matthew jacques",
+                "david poole 21 - 8 william bedford",
+                "david poole 21 - 8 chris wilson",
+                "david poole 21 - 17 andrew wood"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 15,
+                "wins": 11,
+                "aggDiff": 51
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 15,
+                "wins": 11,
+                "aggDiff": 51
+            },
+            "tuesday mirfield (a)": {
+                "games": 17,
+                "wins": 9,
+                "aggDiff": 22
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 17,
+                "wins": 9,
+                "aggDiff": 22
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 16,
+                "wins": 12,
+                "aggDiff": 76
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "gary wike": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "ian smith": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "james hanson": {
+            "totalAgg": 636,
+            "totalAggAgainst": 464,
+            "availableAgg": 672,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 378,
+            "availableAwayAgg": 294,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 358,
+            "totalHomeAggAgainst": 254,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 278,
+            "totalAwayAggAgainst": 210,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 14,
+            "homeLosses": 4,
+            "awayWins": 12,
+            "awayLosses": 2,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 32,
+            "dayPlayed": [
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (B)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "james hanson 21 - 6 graham chaffer",
+                "james hanson 21 - 6 graham chaffer",
+                "james hanson 21 - 20 gary siswick",
+                "james hanson 21 - 14 paul ingleby",
+                "james hanson 21 - 13 andrew whittaker",
+                "james hanson 21 - 14 kevin siddle",
+                "james hanson 21 - 12 colin scorah",
+                "james hanson 21 - 14 paul jacques",
+                "james hanson 21 - 16 andy sorsby",
+                "james hanson 21 - 11 wayne hirst",
+                "james hanson 21 - 12 gary amatt",
+                "james hanson 21 - 10 rob wiltshire",
+                "james hanson 21 - 7 paul arthurs",
+                "james hanson 13 - 21 joseph cranston",
+                "james hanson 14 - 21 danny walker",
+                "james hanson 21 - 20 wayne moseley",
+                "james hanson 18 - 21 ian ross (a)",
+                "james hanson 21 - 20 gary siswick",
+                "james hanson 21 - 14 paul ingleby",
+                "james hanson 21 - 13 andrew whittaker",
+                "james hanson 21 - 14 kevin siddle",
+                "james hanson 21 - 12 colin scorah",
+                "james hanson 21 - 14 paul jacques",
+                "james hanson 21 - 16 andy sorsby",
+                "james hanson 21 - 11 wayne hirst",
+                "james hanson 21 - 12 gary amatt",
+                "james hanson 21 - 10 rob wiltshire",
+                "james hanson 21 - 7 paul arthurs",
+                "james hanson 13 - 21 joseph cranston",
+                "james hanson 14 - 21 danny walker",
+                "james hanson 21 - 20 wayne moseley",
+                "james hanson 18 - 21 ian ross (a)"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 15
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 15
+            },
+            "tuesday mirfield (a)": {
+                "games": 15,
+                "wins": 12,
+                "aggDiff": 71
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 15,
+                "wins": 12,
+                "aggDiff": 71
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "jamie winterburn": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "jon edmondson": {
+            "totalAgg": 977,
+            "totalAggAgainst": 820,
+            "availableAgg": 1071,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 483,
+            "availableAwayAgg": 588,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 439,
+            "totalHomeAggAgainst": 369,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 538,
+            "totalAwayAggAgainst": 451,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 14,
+            "homeLosses": 9,
+            "awayWins": 19,
+            "awayLosses": 9,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 51,
+            "dayPlayed": [
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley (B)",
+                "Wednesday Spen Valley (C)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "jon edmondson 21 - 11 mark atkinson",
+                "jon edmondson 21 - 10 graham hickey",
+                "jon edmondson 21 - 12 rob wiltshire",
+                "jon edmondson 20 - 21 ira jeffers",
+                "jon edmondson 21 - 20 gareth coates",
+                "jon edmondson 18 - 21 martin fulton",
+                "jon edmondson 20 - 21 ashley daykin",
+                "jon edmondson 21 - 17 james senior",
+                "jon edmondson 16 - 21 kevin burns",
+                "jon edmondson 21 - 19 john hardwick",
+                "jon edmondson 21 - 14 mark taylor",
+                "jon edmondson 11 - 21 adam conlon",
+                "jon edmondson 21 - 14 martin fulton",
+                "jon edmondson 14 - 21 richard jackson",
+                "jon edmondson 8 - 21 robert hitchen",
+                "jon edmondson 21 - 11 nigel briggs",
+                "jon edmondson 21 - 11 mark atkinson",
+                "jon edmondson 21 - 10 graham hickey",
+                "jon edmondson 21 - 12 rob wiltshire",
+                "jon edmondson 20 - 21 ira jeffers",
+                "jon edmondson 21 - 20 gareth coates",
+                "jon edmondson 18 - 21 martin fulton",
+                "jon edmondson 20 - 21 ashley daykin",
+                "jon edmondson 21 - 17 james senior",
+                "jon edmondson 16 - 21 kevin burns",
+                "jon edmondson 21 - 19 john hardwick",
+                "jon edmondson 21 - 14 mark taylor",
+                "jon edmondson 21 - 11 nigel briggs",
+                "jon edmondson 11 - 21 adam conlon",
+                "jon edmondson 21 - 14 martin fulton",
+                "jon edmondson 14 - 21 richard jackson",
+                "jon edmondson 8 - 21 robert hitchen",
+                "jon edmondson 21 - 16 david bland",
+                "jon edmondson 21 - 16 david bland",
+                "jon edmondson 21 - 1 andrew foggo",
+                "jon edmondson 21 - 17 alex wolfenden",
+                "jon edmondson 21 - 18 peter jefferson",
+                "jon edmondson 21 - 7 nigel cranston",
+                "jon edmondson 21 - 10 dale dyson",
+                "jon edmondson 19 - 21 kristian walder",
+                "jon edmondson 21 - 16 jason watters",
+                "jon edmondson 16 - 21 joe bray",
+                "jon edmondson 21 - 17 ash tattersley",
+                "jon edmondson 21 - 16 andy wood 'b'",
+                "jon edmondson 20 - 21 ian vickers",
+                "jon edmondson 15 - 21 gordon bradford",
+                "jon edmondson 21 - 7 jordan brown 'b'",
+                "jon edmondson 21 - 12 chris bedford",
+                "jon edmondson 21 - 18 matthew jacques",
+                "jon edmondson 21 - 4 david scott",
+                "jon edmondson 21 - 11 mark goodall"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 15,
+                "wins": 8,
+                "aggDiff": 11
+            },
+            "tuesday mirfield (b)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 10
+            },
+            "tuesday mirfield (c)": {
+                "games": 16,
+                "wins": 9,
+                "aggDiff": 21
+            },
+            "wednesday spen valley": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 5
+            },
+            "wednesday spen valley (b)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 5
+            },
+            "wednesday spen valley (c)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 20
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 16,
+                "wins": 12,
+                "aggDiff": 85
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "jordan wike": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "linda barrand": {
+            "totalAgg": 218,
+            "totalAggAgainst": 386,
+            "availableAgg": 399,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 168,
+            "availableAwayAgg": 231,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 97,
+            "totalHomeAggAgainst": 164,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 121,
+            "totalAwayAggAgainst": 222,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 1,
+            "homeLosses": 7,
+            "awayWins": 1,
+            "awayLosses": 10,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 19,
+            "dayPlayed": [
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Thursday Vets Bradford (B)",
+                "Thursday Vets Bradford (B)",
+                "Thursday Vets Bradford (B)",
+                "Thursday Vets Bradford (B)",
+                "Thursday Vets Bradford (B)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "linda barrand 19 - 21 hayley wood",
+                "linda barrand 6 - 21 tasawir hussain",
+                "linda barrand 15 - 21 stuart wailes",
+                "linda barrand 10 - 21 daniel noland",
+                "linda barrand 13 - 21 john bishop",
+                "linda barrand 2 - 21 ian boldy",
+                "linda barrand 21 - 12 matt newssome",
+                "linda barrand 2 - 21 chris piercy",
+                "linda barrand 18 - 21 michael ross",
+                "linda barrand 10 - 21 darren munt",
+                "linda barrand 2 - 21 kath field",
+                "linda barrand 10 - 21 derek hanner",
+                "linda barrand 5 - 21 andrew stocks",
+                "linda barrand 10 - 21 david taylor",
+                "linda barrand 21 - 17 alan briggs",
+                "linda barrand 6 - 21 lesley pawson",
+                "linda barrand 20 - 21 lesley pawson",
+                "linda barrand 17 - 21 christine jarvis",
+                "linda barrand 11 - 21 barrie clough"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 14,
+                "wins": 1,
+                "aggDiff": -142
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 5,
+                "wins": 1,
+                "aggDiff": -26
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "mary spears": {
+            "totalAgg": 69,
+            "totalAggAgainst": 189,
+            "availableAgg": 189,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 84,
+            "availableAwayAgg": 105,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 23,
+            "totalHomeAggAgainst": 84,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 46,
+            "totalAwayAggAgainst": 105,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 4,
+            "awayWins": 0,
+            "awayLosses": 5,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 9,
+            "dayPlayed": [
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Spen Valley (D)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "mary spears 10 - 21 sharon bloodworth",
+                "mary spears 5 - 21 wendy andrews",
+                "mary spears 5 - 21 geoff thornton",
+                "mary spears 7 - 21 jan marshall",
+                "mary spears 7 - 21 tony kirk",
+                "mary spears 2 - 21 david griffiths",
+                "mary spears 17 - 21 ian webb",
+                "mary spears 9 - 21 matt newssome",
+                "mary spears 7 - 21 david rawson"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 9,
+                "wins": 0,
+                "aggDiff": -120
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "mason lindley": {
+            "totalAgg": 546,
+            "totalAggAgainst": 571,
+            "availableAgg": 672,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 315,
+            "availableAwayAgg": 357,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 279,
+            "totalHomeAggAgainst": 242,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 267,
+            "totalAwayAggAgainst": 329,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 10,
+            "homeLosses": 5,
+            "awayWins": 6,
+            "awayLosses": 11,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 32,
+            "dayPlayed": [
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "mason lindley 21 - 9 john smith",
+                "mason lindley 21 - 14 gareth harwood",
+                "mason lindley 21 - 9 ian lynch",
+                "mason lindley 21 - 18 kevin smales",
+                "mason lindley 12 - 21 reuben taylor",
+                "mason lindley 21 - 16 norman booth",
+                "mason lindley 21 - 18 martin huxley",
+                "mason lindley 21 - 20 steve kemp",
+                "mason lindley 21 - 17 philip rann",
+                "mason lindley 13 - 21 dave taylor",
+                "mason lindley 21 - 16 tony morris",
+                "mason lindley 16 - 21 jason townend",
+                "mason lindley 17 - 21 lee collinson",
+                "mason lindley 21 - 20 geoff firth",
+                "mason lindley 21 - 10 terry sykes",
+                "mason lindley 21 - 18 grahame bell",
+                "mason lindley 21 - 17 mark hirst",
+                "mason lindley 11 - 21 andy haran",
+                "mason lindley 21 - 9 mike gadd",
+                "mason lindley 12 - 21 peter jefferson",
+                "mason lindley 13 - 21 nicky dewhirst",
+                "mason lindley 21 - 12 ian ryding",
+                "mason lindley 18 - 21 suzi ladbrooke",
+                "mason lindley 5 - 21 james teale",
+                "mason lindley 13 - 21 james klenk",
+                "mason lindley 3 - 21 jim calvert",
+                "mason lindley 19 - 21 andy newell",
+                "mason lindley 21 - 12 jim moorin",
+                "mason lindley 13 - 21 steve swallow",
+                "mason lindley 17 - 21 lynne saxby",
+                "mason lindley 17 - 21 john armitage",
+                "mason lindley 11 - 21 luke teale"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 16,
+                "wins": 12,
+                "aggDiff": 41
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 16,
+                "wins": 4,
+                "aggDiff": -66
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "philip wilsdon": {
+            "totalAgg": 1106,
+            "totalAggAgainst": 954,
+            "availableAgg": 1260,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 630,
+            "availableAwayAgg": 630,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 606,
+            "totalHomeAggAgainst": 364,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 500,
+            "totalAwayAggAgainst": 590,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 24,
+            "homeLosses": 6,
+            "awayWins": 10,
+            "awayLosses": 20,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 60,
+            "dayPlayed": [
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley",
+                "Wednesday Spen Valley (B)",
+                "Wednesday Spen Valley (B)",
+                "Wednesday Spen Valley (B)",
+                "Wednesday Spen Valley (B)",
+                "Wednesday Spen Valley (B)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "philip wilsdon 19 - 21 michael martin",
+                "philip wilsdon 21 - 20 paul arthurs",
+                "philip wilsdon 17 - 21 paul bailey",
+                "philip wilsdon 21 - 10 mark taylor",
+                "philip wilsdon 21 - 18 darren pitchforth",
+                "philip wilsdon 21 - 8 jack bowes",
+                "philip wilsdon 13 - 21 chris kelly",
+                "philip wilsdon 14 - 21 graeme i wilson",
+                "philip wilsdon 18 - 21 paul wildgoose",
+                "philip wilsdon 7 - 21 paul bailey",
+                "philip wilsdon 21 - 18 graham hirst",
+                "philip wilsdon 12 - 21 jonathan wilcox",
+                "philip wilsdon 21 - 7 scott fisher",
+                "philip wilsdon 21 - 15 craig farquharson",
+                "philip wilsdon 21 - 3 trevor boothroyd",
+                "philip wilsdon 21 - 12 andy sorsby",
+                "philip wilsdon 9 - 21 stuart king",
+                "philip wilsdon 19 - 21 michael martin",
+                "philip wilsdon 21 - 20 paul arthurs",
+                "philip wilsdon 17 - 21 paul bailey",
+                "philip wilsdon 21 - 10 mark taylor",
+                "philip wilsdon 21 - 18 darren pitchforth",
+                "philip wilsdon 21 - 8 jack bowes",
+                "philip wilsdon 13 - 21 chris kelly",
+                "philip wilsdon 14 - 21 graeme i wilson",
+                "philip wilsdon 18 - 21 paul wildgoose",
+                "philip wilsdon 7 - 21 paul bailey",
+                "philip wilsdon 21 - 18 graham hirst",
+                "philip wilsdon 12 - 21 jonathan wilcox",
+                "philip wilsdon 21 - 7 scott fisher",
+                "philip wilsdon 21 - 15 craig farquharson",
+                "philip wilsdon 21 - 3 trevor boothroyd",
+                "philip wilsdon 21 - 12 andy sorsby",
+                "philip wilsdon 9 - 21 stuart king",
+                "philip wilsdon 17 - 21 simon cahill",
+                "philip wilsdon 21 - 9 andy limbert",
+                "philip wilsdon 21 - 7 alwyn beedel",
+                "philip wilsdon 20 - 21 graeme dytiche",
+                "philip wilsdon 20 - 21 darren ripley",
+                "philip wilsdon 17 - 21 simon cahill",
+                "philip wilsdon 21 - 9 andy limbert",
+                "philip wilsdon 21 - 7 alwyn beedel",
+                "philip wilsdon 20 - 21 graeme dytiche",
+                "philip wilsdon 20 - 21 darren ripley",
+                "philip wilsdon 21 - 10 dave robson",
+                "philip wilsdon 21 - 14 ken gilroy",
+                "philip wilsdon 21 - 7 mark taylor",
+                "philip wilsdon 21 - 18 tony riley",
+                "philip wilsdon 21 - 12 warren wilson",
+                "philip wilsdon 21 - 20 clive foord",
+                "philip wilsdon 21 - 13 steve wilkinson",
+                "philip wilsdon 21 - 10 andrew gallagher",
+                "philip wilsdon 13 - 21 jack bowes",
+                "philip wilsdon 21 - 5 ken gilroy",
+                "philip wilsdon 16 - 21 chris broughton",
+                "philip wilsdon 14 - 21 peter owen",
+                "philip wilsdon 21 - 17 r whitfield",
+                "philip wilsdon 21 - 16 graeme dytiche",
+                "philip wilsdon 17 - 21 paul wilczynski",
+                "philip wilsdon 21 - 12 andy walker"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 17,
+                "wins": 9,
+                "aggDiff": 19
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 17,
+                "wins": 9,
+                "aggDiff": 19
+            },
+            "wednesday spen valley": {
+                "games": 5,
+                "wins": 2,
+                "aggDiff": 20
+            },
+            "wednesday spen valley (b)": {
+                "games": 5,
+                "wins": 2,
+                "aggDiff": 20
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 16,
+                "wins": 12,
+                "aggDiff": 74
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "richard hodgson": {
+            "totalAgg": 332,
+            "totalAggAgainst": 328,
+            "availableAgg": 399,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 231,
+            "availableAwayAgg": 168,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 202,
+            "totalHomeAggAgainst": 183,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 130,
+            "totalAwayAggAgainst": 145,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 5,
+            "homeLosses": 6,
+            "awayWins": 4,
+            "awayLosses": 4,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 19,
+            "dayPlayed": [
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (C)",
+                "Wednesday Spen Valley (D)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Wednesday Half Holiday Bradford (A)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)",
+                "Saturday Bradford (B)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "richard hodgson 17 - 21 scott bloodworth",
+                "richard hodgson 10 - 21 rob whitfield",
+                "richard hodgson 17 - 21 scott bloodworth",
+                "richard hodgson 10 - 21 rob whitfield",
+                "richard hodgson 17 - 21 michael potter",
+                "richard hodgson 19 - 21 david broadhead",
+                "richard hodgson 19 - 21 dave taylor",
+                "richard hodgson 21 - 8 jack glazzard",
+                "richard hodgson 21 - 14 steve briggs",
+                "richard hodgson 21 - 10 michael blanchard",
+                "richard hodgson 21 - 18 ian boldy",
+                "richard hodgson 21 - 11 phil robinson",
+                "richard hodgson 21 - 7 graham heede",
+                "richard hodgson 13 - 21 paul gill",
+                "richard hodgson 14 - 21 jason watters",
+                "richard hodgson 21 - 17 steve swallow",
+                "richard hodgson 21 - 17 andy southwell 'b'",
+                "richard hodgson 21 - 16 john duncanson",
+                "richard hodgson 7 - 21 suzi ladbrooke"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 2,
+                "wins": 0,
+                "aggDiff": -15
+            },
+            "tuesday mirfield (c)": {
+                "games": 2,
+                "wins": 0,
+                "aggDiff": -15
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 6,
+                "wins": 3,
+                "aggDiff": 23
+            },
+            "wednesday spen valley (d)": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 3
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 3,
+                "wins": 2,
+                "aggDiff": 16
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 5,
+                "wins": 3,
+                "aggDiff": -8
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "stewart watson": {
+            "totalAgg": 594,
+            "totalAggAgainst": 540,
+            "availableAgg": 672,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 378,
+            "availableAwayAgg": 294,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 356,
+            "totalHomeAggAgainst": 290,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 238,
+            "totalAwayAggAgainst": 250,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 14,
+            "homeLosses": 4,
+            "awayWins": 6,
+            "awayLosses": 8,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 32,
+            "dayPlayed": [
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (C)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "stewart watson 21 - 8 graham chaffer",
+                "stewart watson 21 - 15 derek seed",
+                "stewart watson 21 - 15 luke teale",
+                "stewart watson 10 - 21 david kirkbright",
+                "stewart watson 21 - 19 derek pickering",
+                "stewart watson 21 - 18 roy knowles",
+                "stewart watson 21 - 7 phil hall",
+                "stewart watson 10 - 21 paul haigh",
+                "stewart watson 21 - 20 neil nicholson",
+                "stewart watson 17 - 21 graham oliver",
+                "stewart watson 21 - 13 stephen ainley",
+                "stewart watson 18 - 21 brenda cromwell",
+                "stewart watson 21 - 17 robbie ellis",
+                "stewart watson 19 - 21 steve cooper",
+                "stewart watson 21 - 12 ian tindal",
+                "stewart watson 21 - 8 graham chaffer",
+                "stewart watson 21 - 15 derek seed",
+                "stewart watson 21 - 15 luke teale",
+                "stewart watson 10 - 21 david kirkbright",
+                "stewart watson 21 - 19 derek pickering",
+                "stewart watson 21 - 18 roy knowles",
+                "stewart watson 21 - 7 phil hall",
+                "stewart watson 10 - 21 paul haigh",
+                "stewart watson 21 - 20 neil nicholson",
+                "stewart watson 17 - 21 graham oliver",
+                "stewart watson 21 - 13 stephen ainley",
+                "stewart watson 18 - 21 brenda cromwell",
+                "stewart watson 21 - 17 robbie ellis",
+                "stewart watson 19 - 21 steve cooper",
+                "stewart watson 21 - 12 ian tindal",
+                "stewart watson 13 - 21 john webster",
+                "stewart watson 13 - 21 john webster"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 15,
+                "wins": 10,
+                "aggDiff": 35
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 15,
+                "wins": 10,
+                "aggDiff": 35
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -8
+            },
+            "tuesday mirfield (c)": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -8
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "stuart hanson": {
+            "totalAgg": 706,
+            "totalAggAgainst": 658,
+            "availableAgg": 798,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 378,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 346,
+            "totalHomeAggAgainst": 292,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 360,
+            "totalAwayAggAgainst": 366,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 12,
+            "homeLosses": 6,
+            "awayWins": 10,
+            "awayLosses": 10,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 38,
+            "dayPlayed": [
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (A)",
+                "Monday AireDale & Wharfedale (B)",
+                "Monday AireDale & Wharfedale (B)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (B)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "stuart hanson 21 - 14 chris hight",
+                "stuart hanson 17 - 21 james teale",
+                "stuart hanson 21 - 14 chris hight",
+                "stuart hanson 17 - 21 james teale",
+                "stuart hanson 19 - 21 paul mottram",
+                "stuart hanson 19 - 21 adam jones",
+                "stuart hanson 13 - 21 ashley tattersley",
+                "stuart hanson 21 - 16 sam farmer",
+                "stuart hanson 18 - 21 adrian taylor",
+                "stuart hanson 21 - 20 ian newby",
+                "stuart hanson 21 - 18 james martin",
+                "stuart hanson 21 - 11 ian shuttleworth",
+                "stuart hanson 21 - 13 nigel marshall",
+                "stuart hanson 21 - 17 clive foord",
+                "stuart hanson 21 - 14 gareth lally",
+                "stuart hanson 6 - 21 lewis cooper",
+                "stuart hanson 17 - 21 tom jagger",
+                "stuart hanson 21 - 13 mark connolly",
+                "stuart hanson 13 - 21 neil simpson",
+                "stuart hanson 21 - 11 rob whitfield",
+                "stuart hanson 21 - 14 dave fox",
+                "stuart hanson 21 - 13 nigel marshall",
+                "stuart hanson 21 - 17 clive foord",
+                "stuart hanson 21 - 14 gareth lally",
+                "stuart hanson 19 - 21 paul mottram",
+                "stuart hanson 6 - 21 lewis cooper",
+                "stuart hanson 19 - 21 adam jones",
+                "stuart hanson 13 - 21 ashley tattersley",
+                "stuart hanson 21 - 16 sam farmer",
+                "stuart hanson 18 - 21 adrian taylor",
+                "stuart hanson 21 - 20 ian newby",
+                "stuart hanson 17 - 21 tom jagger",
+                "stuart hanson 21 - 13 mark connolly",
+                "stuart hanson 13 - 21 neil simpson",
+                "stuart hanson 21 - 11 rob whitfield",
+                "stuart hanson 21 - 14 dave fox",
+                "stuart hanson 21 - 18 james martin",
+                "stuart hanson 21 - 11 ian shuttleworth"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 2,
+                "wins": 1,
+                "aggDiff": 3
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 2,
+                "wins": 1,
+                "aggDiff": 3
+            },
+            "tuesday mirfield (a)": {
+                "games": 8,
+                "wins": 4,
+                "aggDiff": 4
+            },
+            "tuesday mirfield (b)": {
+                "games": 9,
+                "wins": 6,
+                "aggDiff": 17
+            },
+            "tuesday mirfield (c)": {
+                "games": 17,
+                "wins": 10,
+                "aggDiff": 21
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "stuart king": {
+            "totalAgg": 0,
+            "totalAggAgainst": 0,
+            "availableAgg": 0,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 0,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 0,
+            "totalAwayAggAgainst": 0,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 0,
+            "dayPlayed": [],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "thomas hanson": {
+            "totalAgg": 761,
+            "totalAggAgainst": 578,
+            "availableAgg": 861,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 441,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 421,
+            "totalHomeAggAgainst": 217,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 340,
+            "totalAwayAggAgainst": 361,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 19,
+            "homeLosses": 2,
+            "awayWins": 9,
+            "awayLosses": 11,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 41,
+            "dayPlayed": [
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (A)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Tuesday Mirfield (C)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "thomas hanson 21 - 17 john greenhalgh",
+                "thomas hanson 21 - 5 david scott",
+                "thomas hanson 21 - 5 grant herrington",
+                "thomas hanson 21 - 14 jonathan wilcox",
+                "thomas hanson 15 - 21 stephen walker",
+                "thomas hanson 21 - 1 paul bowes",
+                "thomas hanson 18 - 21 james davison",
+                "thomas hanson 21 - 12 stuart king",
+                "thomas hanson 21 - 18 craig newton",
+                "thomas hanson 21 - 20 craig hill",
+                "thomas hanson 21 - 11 david scott",
+                "thomas hanson 10 - 21 james wilcox",
+                "thomas hanson 21 - 9 stuart thompson",
+                "thomas hanson 16 - 21 marc armitage",
+                "thomas hanson 11 - 21 steve haigh",
+                "thomas hanson 21 - 10 andy cairns",
+                "thomas hanson 9 - 21 graeme i wilson",
+                "thomas hanson 21 - 10 craig newton",
+                "thomas hanson 21 - 17 john greenhalgh",
+                "thomas hanson 21 - 5 david scott",
+                "thomas hanson 21 - 5 grant herrington",
+                "thomas hanson 21 - 14 jonathan wilcox",
+                "thomas hanson 15 - 21 stephen walker",
+                "thomas hanson 21 - 1 paul bowes",
+                "thomas hanson 18 - 21 james davison",
+                "thomas hanson 21 - 12 stuart king",
+                "thomas hanson 21 - 18 craig newton",
+                "thomas hanson 21 - 20 craig hill",
+                "thomas hanson 21 - 11 david scott",
+                "thomas hanson 10 - 21 james wilcox",
+                "thomas hanson 21 - 9 stuart thompson",
+                "thomas hanson 16 - 21 marc armitage",
+                "thomas hanson 11 - 21 steve haigh",
+                "thomas hanson 21 - 10 andy cairns",
+                "thomas hanson 9 - 21 graeme i wilson",
+                "thomas hanson 21 - 10 craig newton",
+                "thomas hanson 21 - 6 adam wider",
+                "thomas hanson 21 - 15 james wilcox",
+                "thomas hanson 21 - 10 anthony naylor",
+                "thomas hanson 15 - 21 mark allman",
+                "thomas hanson 21 - 10 andrew gallagher"
+            ],
+            "monday airedale & wharfedale (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airedale & wharfedale (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (a)": {
+                "games": 18,
+                "wins": 12,
+                "aggDiff": 73
+            },
+            "tuesday mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday mirfield (c)": {
+                "games": 18,
+                "wins": 12,
+                "aggDiff": 73
+            },
+            "wednesday spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday spen valley (d)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (a)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (a)": {
+                "games": 5,
+                "wins": 4,
+                "aggDiff": 37
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        }
+    },
+    "lastUpdated": "02/08/2024",
+    "statsYear": "2021"
+}

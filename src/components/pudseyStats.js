@@ -16,6 +16,8 @@ import config from '../config';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 // TODO check this is all fine
+// TODO might want to remove the team stats option?
+// TODO have to make sure the stats go back to 2013. Maybe a null check?
 
 function PudseyStats(props) {
     const combinedStats = props.combinedStats;

@@ -37,9 +37,15 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import bowlsStats24 from './data/bowlsStats2024.json';
 import combinedBowlsStats24 from './data/allPlayerStats2024.json';
+// TODO add more years
+import pudseyBowlsStats21 from './data/pudsey/bowlsStatsPudsey2021.json';
+import pudseyCombinedBowlsStats21 from './data/pudsey/allPlayerStatsPudsey2021.json';
+import pudseyBowlsStats22 from './data/pudsey/bowlsStatsPudsey2022.json';
+import pudseyCombinedBowlsStats22 from './data/pudsey/allPlayerStatsPudsey2022.json';
+import pudseyBowlsStats23 from './data/pudsey/bowlsStatsPudsey2023.json';
+import pudseyCombinedBowlsStats23 from './data/pudsey/allPlayerStatsPudsey2023.json';
 import pudseyBowlsStats24 from './data/pudsey/bowlsStatsPudsey2024.json';
 import pudseyCombinedBowlsStats24 from './data/pudsey/allPlayerStatsPudsey2024.json';
-// TODO add more years
 import './app.css';
 import PudseyStats from './components/pudseyStats';
 
@@ -116,15 +122,27 @@ function App() {
 
     const pudseyAllYearStats = {
         year2024: pudseyBowlsStats24,
+        year2023: pudseyBowlsStats23,
+        year2022: pudseyBowlsStats22,
+        year2021: pudseyBowlsStats21,
     };
     const pudseyAllYearCombinedStats = {
         year2024: pudseyCombinedBowlsStats24,
+        year2023: pudseyCombinedBowlsStats23,
+        year2022: pudseyCombinedBowlsStats22,
+        year2021: pudseyCombinedBowlsStats21,
     };
     const pudseyStatsForEveryYearArray = [
         pudseyBowlsStats24,
+        pudseyBowlsStats23,
+        pudseyBowlsStats22,
+        pudseyBowlsStats21,
     ];
     const pudseyCombinedStatsForEveryYearArray = [
         pudseyCombinedBowlsStats24,
+        pudseyCombinedBowlsStats23,
+        pudseyCombinedBowlsStats22,
+        pudseyCombinedBowlsStats21,
     ];
 
     function statsSelectCallback(year) {
@@ -165,14 +183,20 @@ function App() {
             case '2021':
                 statsForSelectedYear = allYearStats['year2021'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2021'];
+                pudseyStatsForSelectedYear = pudseyAllYearStats['year2021'];
+                pudseyCombinedStatsForSelectedYear = pudseyAllYearCombinedStats['year2021'];
                 break;
             case '2022':
                 statsForSelectedYear = allYearStats['year2022'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2022'];
+                pudseyStatsForSelectedYear = pudseyAllYearStats['year2022'];
+                pudseyCombinedStatsForSelectedYear = pudseyAllYearCombinedStats['year2022'];
                 break;
             case '2023':
                 statsForSelectedYear = allYearStats['year2023'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2023'];
+                pudseyStatsForSelectedYear = pudseyAllYearStats['year2023'];
+                pudseyCombinedStatsForSelectedYear = pudseyAllYearCombinedStats['year2023'];
                 break;
             case '2024':
                 statsForSelectedYear = allYearStats['year2024'];

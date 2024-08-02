@@ -16,7 +16,6 @@ traitorPlayers = teamDetailsPudsey.traitorPlayers
 playerStats = utilsPudsey.returnListOfPlayerStats(teamDetailsPudsey.teamDays, True)
 formatName = utilsPudsey.formatName
 cupTextList = utilsPudsey.cupText
-clubCupWinners = teamDetailsPudsey.clubCupWinners
 returnTotalAggAvailablePerGame = utilsPudsey.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utilsPudsey.sanityChecksOnPlayerStats
 checkFileSize = utilsPudsey.checkFileSize
@@ -332,11 +331,6 @@ for team in teamDays:
                     raise Exception(
                         'Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
     file.close()
-
-if year in clubCupWinners:
-    clubCupWinner = clubCupWinners[year]
-else:
-    clubCupWinner = ''
 
 # Create JSON file
 dataToExport = {

@@ -5,9 +5,9 @@ teamPlayers = teamDetailsPudsey.players
 duplicateTeamMemberNames = teamDetailsPudsey.duplicateTeamMemberNames
 currentTeamDays = teamDetailsPudsey.teamDays
 
-# TODO split the generic methods into a separate file
+# TODO split the generic methods into a separate file and put the pudsey specific things in teamDetailsPudsey.py
 # TODO move to teamDetailsPudsey.py
-otherLeagues = ['Tuesday AireDale & Wharfedale', 'Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
+otherLeagues = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
             'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds',]
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 teamDays = currentTeamDays + otherLeagues
@@ -15,8 +15,8 @@ extraPlayers = []  # this is to track players who only play for a different team
 players = teamPlayers + extraPlayers
 otherDuplicatePlayers = []
 duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['stanningley', 'new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
-# TODO paramertise this? Or just hardcode
+otherTeams = ['stanningley', 'littlemoor', 'farsley', 'tyersal', 'mirfield']
+# TODO paramertise this?
 teamsTracking = teamDetailsPudsey.teamNames + otherTeams
 cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
