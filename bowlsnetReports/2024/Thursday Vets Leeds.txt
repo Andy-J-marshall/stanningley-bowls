@@ -1,5 +1,5 @@
 === Leeds &amp; District (Thursday Over 55s) 2024
-=== League Report (as of Thu 1st Aug)
+=== League Report (as of Fri 2nd Aug)
 
 
 === RESULTS: Thu 11th Apr to Thu 29th Aug
@@ -206,6 +206,7 @@
  1:30pm  Cross Flatts Pk         35   156   v.   Middleton Park          16    88                           
  1:30pm  West Royd Park          18    87   v.   New Wortley             30   141                           
  1:30pm  New Armley              33   146   v.   Bramley Park            24   113                           
+ 1:30pm  Cranmore BC             33   149   v.   Pudsey Park B           24   114                           
 
 
 === Current LEAGUE TABLES
@@ -226,13 +227,13 @@
  Pos  Team                   Pl    W   L    For
 ====  ====================  ===  ===  ==  =====  
   1.  New Wortley            12   12   0    407
-  2.  West Royd Park         12    6   6    324
-  3.  Cross Flatts Pk        11    8   2    317
-  4.  Bramley Park           12    4   7    313
-  5.  Cranmore BC            10    5   4    307
+  2.  Cranmore BC            11    6   4    340
+  3.  West Royd Park         12    6   6    324
+  4.  Cross Flatts Pk        11    8   2    317
+  5.  Bramley Park           12    4   7    313
   6.  Middleton Park         12    3   9    304
   7.  New Armley             12    4   8    291
-  8.  Pudsey Park B          11    2   8    257
+  8.  Pudsey Park B          12    2   9    281
 
 
 === FULL RESULTS: Thu 11th Apr to Thu 29th Aug
@@ -1417,6 +1418,19 @@ Gerry Faller         5  John McDermott       21
 Glynn Barrett       21  Syd Lawton           11
 David Hurd          21  Jeff Allman          10
       Aggregate:   146         Aggregate:   113
+         Points:    33            Points:    24
+
+      Division 2              Thu 1st Aug
+     Cranmore BC             Pudsey Park B
+Philip Marshall     13  Derek Howell         21
+Harry Gillett       13  Bill Pyett           21
+John Gillett        18  Peter Wild           21
+Albert Beggs        21  Kathleen Vince        3
+Graham Bluff        21  Barbara Moss         17
+Jeff Higgins        21  Maureen Bradshaw     18
+Peter Nicholson     21  Philip Danby          5
+Ray Watson          21  David Milner          8
+      Aggregate:   149         Aggregate:   114
          Points:    33            Points:    24
 
 
