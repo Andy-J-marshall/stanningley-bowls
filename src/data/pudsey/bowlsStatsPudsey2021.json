@@ -94,11 +94,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -326,11 +321,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 2,
                 "wins": 0,
@@ -442,11 +432,6 @@
             "losingPairsPartners": [],
             "results": [],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -566,11 +551,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -643,28 +623,28 @@
             }
         },
         "david poole": {
-            "totalAgg": 1462,
-            "totalAggAgainst": 1240,
-            "availableAgg": 1680,
+            "totalAgg": 1181,
+            "totalAggAgainst": 1010,
+            "availableAgg": 1365,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 819,
-            "availableAwayAgg": 861,
+            "availableHomeAgg": 672,
+            "availableAwayAgg": 693,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 777,
-            "totalHomeAggAgainst": 547,
+            "totalHomeAgg": 632,
+            "totalHomeAggAgainst": 455,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 685,
-            "totalAwayAggAgainst": 693,
+            "totalAwayAgg": 549,
+            "totalAwayAggAgainst": 555,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 31,
-            "homeLosses": 8,
-            "awayWins": 21,
-            "awayLosses": 20,
+            "homeWins": 25,
+            "homeLosses": 7,
+            "awayWins": 16,
+            "awayLosses": 17,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
@@ -675,7 +655,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 80,
+            "totalGamesPlayed": 65,
             "dayPlayed": [
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
@@ -692,21 +672,6 @@
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
@@ -777,21 +742,6 @@
                 "david poole 21 - 6 cath rushton",
                 "david poole 10 - 21 martin bailey",
                 "david poole 21 - 12 paul haigh",
-                "david poole 10 - 21 marc armitage",
-                "david poole 21 - 20 dennis mackie",
-                "david poole 21 - 20 brian teale",
-                "david poole 21 - 18 david smalley",
-                "david poole 21 - 14 steven fender",
-                "david poole 21 - 19 david scott",
-                "david poole 21 - 2 ian tindal",
-                "david poole 19 - 21 ken gilroy",
-                "david poole 21 - 19 chris daysh",
-                "david poole 21 - 11 andrew haran",
-                "david poole 11 - 21 derek pickering",
-                "david poole 21 - 5 steven fender",
-                "david poole 21 - 6 cath rushton",
-                "david poole 10 - 21 martin bailey",
-                "david poole 21 - 12 paul haigh",
                 "david poole 13 - 21 nathan haigh",
                 "david poole 12 - 21 james martin",
                 "david poole 21 - 8 dean missere",
@@ -844,11 +794,6 @@
                 "david poole 21 - 17 andrew wood"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 15,
-                "wins": 11,
-                "aggDiff": 51
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 15,
                 "wins": 11,
                 "aggDiff": 51
@@ -968,11 +913,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -1088,11 +1028,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -1165,25 +1100,25 @@
             }
         },
         "james hanson": {
-            "totalAgg": 636,
-            "totalAggAgainst": 464,
-            "availableAgg": 672,
+            "totalAgg": 615,
+            "totalAggAgainst": 458,
+            "availableAgg": 651,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 378,
+            "availableHomeAgg": 357,
             "availableAwayAgg": 294,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 358,
-            "totalHomeAggAgainst": 254,
+            "totalHomeAgg": 337,
+            "totalHomeAggAgainst": 248,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 278,
             "totalAwayAggAgainst": 210,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 14,
+            "homeWins": 13,
             "homeLosses": 4,
             "awayWins": 12,
             "awayLosses": 2,
@@ -1197,10 +1132,9 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 32,
+            "totalGamesPlayed": 31,
             "dayPlayed": [
                 "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (B)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
@@ -1237,7 +1171,6 @@
             "losingPairsPartners": [],
             "results": [
                 "james hanson 21 - 6 graham chaffer",
-                "james hanson 21 - 6 graham chaffer",
                 "james hanson 21 - 20 gary siswick",
                 "james hanson 21 - 14 paul ingleby",
                 "james hanson 21 - 13 andrew whittaker",
@@ -1270,11 +1203,6 @@
                 "james hanson 18 - 21 ian ross (a)"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 1,
-                "wins": 1,
-                "aggDiff": 15
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 1,
                 "wins": 1,
                 "aggDiff": 15
@@ -1390,11 +1318,6 @@
             "losingPairsPartners": [],
             "results": [],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1618,11 +1541,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 15,
                 "wins": 8,
@@ -1734,11 +1652,6 @@
             "losingPairsPartners": [],
             "results": [],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1898,11 +1811,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -2034,11 +1942,6 @@
                 "mary spears 7 - 21 david rawson"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2220,11 +2123,6 @@
                 "mason lindley 11 - 21 luke teale"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2466,11 +2364,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 17,
                 "wins": 9,
@@ -2626,11 +2519,6 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
             "tuesday mirfield (a)": {
                 "games": 0,
                 "wins": 0,
@@ -2703,28 +2591,28 @@
             }
         },
         "stewart watson": {
-            "totalAgg": 594,
-            "totalAggAgainst": 540,
-            "availableAgg": 672,
+            "totalAgg": 310,
+            "totalAggAgainst": 291,
+            "availableAgg": 357,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 378,
-            "availableAwayAgg": 294,
+            "availableHomeAgg": 210,
+            "availableAwayAgg": 147,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 356,
-            "totalHomeAggAgainst": 290,
+            "totalHomeAgg": 191,
+            "totalHomeAggAgainst": 166,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 238,
-            "totalAwayAggAgainst": 250,
+            "totalAwayAgg": 119,
+            "totalAwayAggAgainst": 125,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 14,
-            "homeLosses": 4,
-            "awayWins": 6,
-            "awayLosses": 8,
+            "homeWins": 7,
+            "homeLosses": 3,
+            "awayWins": 3,
+            "awayLosses": 4,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
@@ -2735,7 +2623,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 32,
+            "totalGamesPlayed": 17,
             "dayPlayed": [
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
@@ -2752,21 +2640,6 @@
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
                 "Tuesday Mirfield (B)",
                 "Tuesday Mirfield (C)"
             ],
@@ -2789,30 +2662,10 @@
                 "stewart watson 21 - 17 robbie ellis",
                 "stewart watson 19 - 21 steve cooper",
                 "stewart watson 21 - 12 ian tindal",
-                "stewart watson 21 - 8 graham chaffer",
-                "stewart watson 21 - 15 derek seed",
-                "stewart watson 21 - 15 luke teale",
-                "stewart watson 10 - 21 david kirkbright",
-                "stewart watson 21 - 19 derek pickering",
-                "stewart watson 21 - 18 roy knowles",
-                "stewart watson 21 - 7 phil hall",
-                "stewart watson 10 - 21 paul haigh",
-                "stewart watson 21 - 20 neil nicholson",
-                "stewart watson 17 - 21 graham oliver",
-                "stewart watson 21 - 13 stephen ainley",
-                "stewart watson 18 - 21 brenda cromwell",
-                "stewart watson 21 - 17 robbie ellis",
-                "stewart watson 19 - 21 steve cooper",
-                "stewart watson 21 - 12 ian tindal",
                 "stewart watson 13 - 21 john webster",
                 "stewart watson 13 - 21 john webster"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 15,
-                "wins": 10,
-                "aggDiff": 35
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 15,
                 "wins": 10,
                 "aggDiff": 35
@@ -2889,26 +2742,26 @@
             }
         },
         "stuart hanson": {
-            "totalAgg": 706,
-            "totalAggAgainst": 658,
-            "availableAgg": 798,
+            "totalAgg": 668,
+            "totalAggAgainst": 623,
+            "availableAgg": 756,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 378,
+            "availableHomeAgg": 336,
             "availableAwayAgg": 420,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 346,
-            "totalHomeAggAgainst": 292,
+            "totalHomeAgg": 308,
+            "totalHomeAggAgainst": 257,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 360,
             "totalAwayAggAgainst": 366,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 12,
-            "homeLosses": 6,
+            "homeWins": 11,
+            "homeLosses": 5,
             "awayWins": 10,
             "awayLosses": 10,
             "cupWins": 0,
@@ -2921,12 +2774,10 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 38,
+            "totalGamesPlayed": 36,
             "dayPlayed": [
                 "Monday AireDale & Wharfedale (A)",
                 "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
                 "Tuesday Mirfield (A)",
@@ -2968,8 +2819,6 @@
             "results": [
                 "stuart hanson 21 - 14 chris hight",
                 "stuart hanson 17 - 21 james teale",
-                "stuart hanson 21 - 14 chris hight",
-                "stuart hanson 17 - 21 james teale",
                 "stuart hanson 19 - 21 paul mottram",
                 "stuart hanson 19 - 21 adam jones",
                 "stuart hanson 13 - 21 ashley tattersley",
@@ -3006,11 +2855,6 @@
                 "stuart hanson 21 - 11 ian shuttleworth"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 2,
-                "wins": 1,
-                "aggDiff": 3
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 2,
                 "wins": 1,
                 "aggDiff": 3
@@ -3126,11 +2970,6 @@
             "losingPairsPartners": [],
             "results": [],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -3330,11 +3169,6 @@
                 "thomas hanson 21 - 10 andrew gallagher"
             ],
             "monday airedale & wharfedale (a)": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
-            },
-            "monday airedale & wharfedale (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0

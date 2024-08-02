@@ -18,6 +18,8 @@ teamDays = [
     'Thursday Vets Bradford (A)', 'Thursday Vets Bradford (B)',
     'Saturday Bradford (A)', 'Saturday Bradford (B)', 'Saturday Bradford (C)'
 ]
+# No AW Mon B team pre 2023
+# No AW Vets team pre 2023
 
 # Every player (lowercase)
 players = [

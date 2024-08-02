@@ -7,8 +7,6 @@ import re
 
 year = str(date.today().year)
 
-# TODO stewart watson has duplicate monday results in 2022 and 2021.
-
 teamDays = teamDetailsPudsey.teamDays
 teamNames = teamDetailsPudsey.teamNames
 displayTeamName = teamDetailsPudsey.preferredTeamName
