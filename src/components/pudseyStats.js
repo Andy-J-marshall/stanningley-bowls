@@ -16,8 +16,9 @@ import config from '../config';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 // TODO check this is all fine
+// TODO doesn't work if you click on a player
 // TODO might want to remove the team stats option?
-// TODO have to make sure the stats go back to 2013. Maybe a null check?
+// TODO probably don't even need this as a component
 
 function PudseyStats(props) {
     const combinedStats = props.combinedStats;
@@ -25,6 +26,9 @@ function PudseyStats(props) {
     const statsForEveryYearArray = props.statsForEveryYearArray;
     const combinedStatsForEveryYearArray = props.combinedStatsForEveryYearArray;
 
+    if (!stats || !combinedStats) {
+        return <h4>No stats available for the selected year</h4>;
+    }
     const { playerResults } = stats;
     const combinedPlayerResults = combinedStats.playerResults;
 
