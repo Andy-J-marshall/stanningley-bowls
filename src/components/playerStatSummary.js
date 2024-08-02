@@ -7,6 +7,7 @@ function PlayerStatSummary(props) {
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
+    const url = props.url;
 
     playerStats = playerStats.filter((player) => player.games > 0);
 
@@ -236,7 +237,7 @@ function PlayerStatSummary(props) {
             textDecoration: 'underline',
             color: '#004558',
         };
-        href = '/#/stats/player';
+        href = url;
     } else {
         style = {
             textDecoration: 'none',

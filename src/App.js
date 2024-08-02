@@ -249,6 +249,7 @@ function App() {
                                     showOldYears={true}
                                 />
                                 <PlayerStats
+                                    url="/#/stats/player"
                                     stats={teamStats}
                                     combinedStats={combinedStats}
                                     statsForEveryYearArray={
@@ -256,6 +257,29 @@ function App() {
                                     }
                                     combinedStatsForEveryYearArray={
                                         combinedStatsForEveryYearArray
+                                    }
+                                />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/stats/pudsey"
+                        element={
+                            <div>
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                    showOldYears={true}
+                                />
+                                <PlayerStats
+                                    url="/#/stats/pudsey"
+                                    stats={pudseyStats}
+                                    combinedStats={pudseyCombinedStats}
+                                    statsForEveryYearArray={
+                                        pudseyStatsForEveryYearArray
+                                    }
+                                    combinedStatsForEveryYearArray={
+                                        pudseyCombinedStatsForEveryYearArray
                                     }
                                 />
                             </div>
@@ -274,28 +298,6 @@ function App() {
                                     stats={teamStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                />
-                            </div>
-                        }
-                    />
-                    <Route
-                        path="/stats/pudsey"
-                        element={
-                            <div>
-                                <YearSelectDropdown
-                                    statsCallback={statsSelectCallback}
-                                    yearToDisplay={yearToDisplay}
-                                    showOldYears={true}
-                                />
-                                <PlayerStats
-                                    stats={pudseyStats}
-                                    combinedStats={pudseyCombinedStats}
-                                    statsForEveryYearArray={
-                                        pudseyStatsForEveryYearArray
-                                    }
-                                    combinedStatsForEveryYearArray={
-                                        pudseyCombinedStatsForEveryYearArray
-                                    }
                                 />
                             </div>
                         }
