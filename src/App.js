@@ -37,11 +37,19 @@ import bowlsStats23 from './data/bowlsStats2023.json';
 import combinedBowlsStats23 from './data/allPlayerStats2023.json';
 import bowlsStats24 from './data/bowlsStats2024.json';
 import combinedBowlsStats24 from './data/allPlayerStats2024.json';
+import pudseyBowlsStats24 from './data/pudsey/bowlsStatsPudsey2024.json';
+import pudseyCombinedBowlsStats24 from './data/pudsey/allPlayerStatsPudsey2024.json';
+// TODO add more years
 import './app.css';
+import PudseyStats from './components/pudseyStats';
+
+// TODO do I want the Pudsey specific stats to be in a separate file?
 
 function App() {
     const [teamStats, setTeamStats] = useState(bowlsStats24);
     const [combinedStats, setCombinedStats] = useState(combinedBowlsStats24);
+    const [pudseyStats, setPudseyTeamStats] = useState(pudseyBowlsStats24);
+    const [pudseyCombinedStats, setPudseyCombinedStats] = useState(pudseyCombinedBowlsStats24);
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
@@ -106,10 +114,25 @@ function App() {
         combinedBowlsStats24,
     ];
 
+    const pudseyAllYearStats = {
+        year2024: pudseyBowlsStats24,
+    };
+    const pudseyAllYearCombinedStats = {
+        year2024: pudseyCombinedBowlsStats24,
+    };
+    const pudseyStatsForEveryYearArray = [
+        pudseyBowlsStats24,
+    ];
+    const pudseyCombinedStatsForEveryYearArray = [
+        pudseyCombinedBowlsStats24,
+    ];
+
     function statsSelectCallback(year) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;
+        let pudseyStatsForSelectedYear;
+        let pudseyCombinedStatsForSelectedYear;
         switch (year.toString()) {
             case '2013':
                 statsForSelectedYear = allYearStats['year2013'];
@@ -154,16 +177,21 @@ function App() {
             case '2024':
                 statsForSelectedYear = allYearStats['year2024'];
                 combinedStatsForSelectedYear = allYearCombinedStats['year2024'];
+                pudseyStatsForSelectedYear = pudseyAllYearStats['year2024'];
+                pudseyCombinedStatsForSelectedYear = pudseyAllYearCombinedStats['year2024'];
                 break;
             default:
                 statsForSelectedYear = allYearStats[`year${currentYear}`];
-                combinedStatsForSelectedYear =
-                    allYearCombinedStats[`year${currentYear}`];
+                combinedStatsForSelectedYear = allYearCombinedStats[`year${currentYear}`];
+                pudseyStatsForSelectedYear = pudseyAllYearStats[`year${currentYear}`];
+                pudseyCombinedStatsForSelectedYear = pudseyAllYearCombinedStats[`year${currentYear}`];
                 break;
         }
         setYearToDisplay(year.toString());
         setTeamStats(statsForSelectedYear);
         setCombinedStats(combinedStatsForSelectedYear);
+        setPudseyTeamStats(pudseyStatsForSelectedYear);
+        setPudseyCombinedStats(pudseyCombinedStatsForSelectedYear);
     }
 
     return (
@@ -222,6 +250,28 @@ function App() {
                                     stats={teamStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/stats/pudsey"
+                        element={
+                            <div>
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                    showOldYears={true}
+                                />
+                                <PudseyStats
+                                    stats={pudseyStats}
+                                    combinedStats={pudseyCombinedStats}
+                                    statsForEveryYearArray={
+                                        pudseyStatsForEveryYearArray
+                                    }
+                                    combinedStatsForEveryYearArray={
+                                        pudseyCombinedStatsForEveryYearArray
+                                    }
                                 />
                             </div>
                         }
