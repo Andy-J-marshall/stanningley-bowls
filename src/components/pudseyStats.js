@@ -180,7 +180,8 @@ function PudseyStats(props) {
                         player={playerName}
                         name={playerName}
                         playersStats={statsToUse}
-                        showStatSummary={showStatSummary}
+                        // showStatSummary={showStatSummary}
+                        showStatSummary={true} // TODO hardcoded for now until implemented
                         year={stats.statsYear}
                     ></Players>
                 </ListGroup>
