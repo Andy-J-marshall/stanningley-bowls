@@ -26,6 +26,8 @@ print('UPDATING STATS:', teamNames[0].upper())
 for team in teamDays:
     print('Updating Stats: ' + team)
     
+    # TODO add the (A') back onto the team name for Pudsey players
+    
     league = team.replace(' (A)', '').replace(' (B)', '').replace(' (C)', '').replace(' (D)', '')
 
     if team in teamsProcessed:
