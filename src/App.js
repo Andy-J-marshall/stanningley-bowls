@@ -15,14 +15,14 @@ import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
 import History from './components/history';
 import YearSelectDropdown from './components/yearSelectDropdown';
-import dataFiles from './dataFiles';
+import statsData from './statsData';
 import './app.css';
 
 function App() {
-    const [teamStats, setTeamStats] = useState(dataFiles.bowlsStats24);
-    const [combinedStats, setCombinedStats] = useState(dataFiles.combinedBowlsStats24);
-    const [pudseyStats, setPudseyTeamStats] = useState(dataFiles.pudseyBowlsStats24);
-    const [pudseyCombinedStats, setPudseyCombinedStats] = useState(dataFiles.pudseyCombinedBowlsStats24);
+    const [teamStats, setTeamStats] = useState(statsData.dataFiles.bowlsStats24);
+    const [combinedStats, setCombinedStats] = useState(statsData.dataFiles.combinedBowlsStats24);
+    const [pudseyStats, setPudseyTeamStats] = useState(statsData.dataFiles.pudseyBowlsStats24);
+    const [pudseyCombinedStats, setPudseyCombinedStats] = useState(statsData.dataFiles.pudseyCombinedBowlsStats24);
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
@@ -34,83 +34,16 @@ function App() {
     }, []);
 
     // Stats for future years will need to be updated here
-    const allYearStats = {
-        year2013: dataFiles.bowlsStats13,
-        year2014: dataFiles.bowlsStats14,
-        year2015: dataFiles.bowlsStats15,
-        year2016: dataFiles.bowlsStats16,
-        year2017: dataFiles.bowlsStats17,
-        year2018: dataFiles.bowlsStats18,
-        year2019: dataFiles.bowlsStats19,
-        year2021: dataFiles.bowlsStats21,
-        year2022: dataFiles.bowlsStats22,
-        year2023: dataFiles.bowlsStats23,
-        year2024: dataFiles.bowlsStats24,
-    };
-    const allYearCombinedStats = {
-        year2013: dataFiles.combinedBowlsStats13,
-        year2014: dataFiles.combinedBowlsStats14,
-        year2015: dataFiles.combinedBowlsStats15,
-        year2016: dataFiles.combinedBowlsStats16,
-        year2017: dataFiles.combinedBowlsStats17,
-        year2018: dataFiles.combinedBowlsStats18,
-        year2019: dataFiles.combinedBowlsStats19,
-        year2021: dataFiles.combinedBowlsStats21,
-        year2022: dataFiles.combinedBowlsStats22,
-        year2023: dataFiles.combinedBowlsStats23,
-        year2024: dataFiles.combinedBowlsStats24,
-    };
-    const statsForEveryYearArray = [
-        dataFiles.bowlsStats13,
-        dataFiles.bowlsStats14,
-        dataFiles.bowlsStats15,
-        dataFiles.bowlsStats16,
-        dataFiles.bowlsStats17,
-        dataFiles.bowlsStats18,
-        dataFiles.bowlsStats19,
-        dataFiles.bowlsStats21,
-        dataFiles.bowlsStats22,
-        dataFiles.bowlsStats23,
-        dataFiles.bowlsStats24,
-    ];
-    const combinedStatsForEveryYearArray = [
-        dataFiles.combinedBowlsStats13,
-        dataFiles.combinedBowlsStats14,
-        dataFiles.combinedBowlsStats15,
-        dataFiles.combinedBowlsStats16,
-        dataFiles.combinedBowlsStats17,
-        dataFiles.combinedBowlsStats18,
-        dataFiles.combinedBowlsStats19,
-        dataFiles.combinedBowlsStats21,
-        dataFiles.combinedBowlsStats22,
-        dataFiles.combinedBowlsStats23,
-        dataFiles.combinedBowlsStats24,
-    ];
-
-    const pudseyAllYearStats = {
-        year2024: dataFiles.pudseyBowlsStats24,
-        year2023: dataFiles.pudseyBowlsStats23,
-        year2022: dataFiles.pudseyBowlsStats22,
-        year2021: dataFiles.pudseyBowlsStats21,
-    };
-    const pudseyAllYearCombinedStats = {
-        year2024: dataFiles.pudseyCombinedBowlsStats24,
-        year2023: dataFiles.pudseyCombinedBowlsStats23,
-        year2022: dataFiles.pudseyCombinedBowlsStats22,
-        year2021: dataFiles.pudseyCombinedBowlsStats21,
-    };
-    const pudseyStatsForEveryYearArray = [
-        dataFiles.pudseyBowlsStats24,
-        dataFiles.pudseyBowlsStats23,
-        dataFiles.pudseyBowlsStats22,
-        dataFiles.pudseyBowlsStats21,
-    ];
-    const pudseyCombinedStatsForEveryYearArray = [
-        dataFiles.pudseyCombinedBowlsStats24,
-        dataFiles.pudseyCombinedBowlsStats23,
-        dataFiles.pudseyCombinedBowlsStats22,
-        dataFiles.pudseyCombinedBowlsStats21,
-    ];
+    const {
+        allYearStats,
+        allYearCombinedStats,
+        statsForEveryYearArray,
+        combinedStatsForEveryYearArray,
+        pudseyAllYearStats,
+        pudseyAllYearCombinedStats,
+        pudseyStatsForEveryYearArray,
+        pudseyCombinedStatsForEveryYearArray
+    } = statsData;
 
     function statsSelectCallback(year) {
         const currentYear = new Date().getFullYear();
