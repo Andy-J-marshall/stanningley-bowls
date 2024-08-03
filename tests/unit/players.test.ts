@@ -247,25 +247,17 @@ describe('#Players Tests', () => {
       expect(biggestWin).to.equal('21 - 0');
     });
 
-    it('Days with no games show as 0', () => {
-      const {
-        tuesdayEveningWins,
-        tuesdayEveningLosses,
-        tuesdayEveningGames,
-        tuesdayEveningAvg,
-        wednesdayWins,
-        wednesdayLosses,
-        wednesdayGames,
-        wednesdayAvg,
-      } = stats;
-      expect(tuesdayEveningWins).to.equal(0);
-      expect(tuesdayEveningLosses).to.equal(0);
-      expect(tuesdayEveningGames).to.equal(0);
-      expect(tuesdayEveningAvg).to.equal(0);
-      expect(wednesdayWins).to.equal(0);
-      expect(wednesdayLosses).to.equal(0);
-      expect(wednesdayGames).to.equal(0);
-      expect(wednesdayAvg).to.equal(0);
+    it('Days with no games show as are not returned', () => {
+      const { allTeamStats } = stats;
+      const tuesdayEvening = allTeamStats.find((team: any) => {
+        return team.teamName === 'tuesday leeds';
+      });
+      const wednesday = allTeamStats.find((team: any) => {
+        return team.teamName === 'wednesday half holiday leeds';
+      });
+
+      expect(tuesdayEvening).to.be.undefined;
+      expect(wednesday).to.be.undefined;
     });
 
     it('Tuesday evening and Wednesday can calculate stats', () => {
@@ -282,24 +274,22 @@ describe('#Players Tests', () => {
 
       stats = returnPlayerStats(playerStats, 'paul bowes');
 
-      const {
-        tuesdayEveningWins,
-        tuesdayEveningLosses,
-        tuesdayEveningGames,
-        tuesdayEveningAvg,
-        wednesdayWins,
-        wednesdayLosses,
-        wednesdayGames,
-        wednesdayAvg,
-      } = stats;
-      expect(tuesdayEveningWins).to.equal(7);
-      expect(tuesdayEveningLosses).to.equal(4);
-      expect(tuesdayEveningGames).to.equal(11);
-      expect(tuesdayEveningAvg).to.equal(-3);
-      expect(wednesdayWins).to.equal(1);
-      expect(wednesdayLosses).to.equal(0);
-      expect(wednesdayGames).to.equal(1);
-      expect(wednesdayAvg).to.equal(21);
+      const { allTeamStats } = stats;
+      const tuesdayEvening = allTeamStats.find((team: any) => {
+        return team.teamName === 'tuesday leeds';
+      });
+      const wednesday = allTeamStats.find((team: any) => {
+        return team.teamName === 'wednesday half holiday leeds';
+      });
+
+      expect(tuesdayEvening.teamWins).to.equal(7);
+      expect(tuesdayEvening.teamLosses).to.equal(4);
+      expect(tuesdayEvening.teamGames).to.equal(11);
+      expect(tuesdayEvening.teamAvg).to.equal(-3);
+      expect(wednesday.teamWins).to.equal(1);
+      expect(wednesday.teamLosses).to.equal(0);
+      expect(wednesday.teamGames).to.equal(1);
+      expect(wednesday.teamAvg).to.equal(21);
     });
 
     it('Pairs partners calculated correctly', () => {
@@ -338,43 +328,39 @@ describe('#Players Tests', () => {
     });
 
     it('Days with games show correct values', () => {
-      const {
-        mondayWins,
-        mondayLosses,
-        mondayGames,
-        mondayAvg,
-        tuesdayVetsWins,
-        tuesdayVetsLosses,
-        tuesdayVetsGames,
-        tuesdayVetsAvg,
-        thursdayWins,
-        thursdayLosses,
-        thursdayGames,
-        thursdayAvg,
-        saturdayWins,
-        saturdayLosses,
-        saturdayGames,
-        saturdayAvg,
-      } = stats;
-      expect(mondayWins).to.equal(7);
-      expect(mondayLosses).to.equal(5);
-      expect(mondayGames).to.equal(12);
-      expect(mondayAvg.toFixed(2)).to.equal('4.50');
+      const { allTeamStats } = stats;
+      const monday = allTeamStats.find((team: any) => {
+        return team.teamName === 'monday combined leeds';
+      });
+      const tuesVets = allTeamStats.find((team: any) => {
+        return team.teamName === 'tuesday vets leeds';
+      });
+      const thursVets = allTeamStats.find((team: any) => {
+        return team.teamName === 'thursday vets leeds';
+      });
+      const saturday = allTeamStats.find((team: any) => {
+        return team.teamName === 'saturday leeds';
+      });
 
-      expect(tuesdayVetsWins).to.equal(7);
-      expect(tuesdayVetsLosses).to.equal(2);
-      expect(tuesdayVetsGames).to.equal(9);
-      expect(tuesdayVetsAvg.toFixed(2)).to.equal('8.56');
+      expect(monday.teamWins).to.equal(7);
+      expect(monday.teamLosses).to.equal(5);
+      expect(monday.teamGames).to.equal(12);
+      expect(monday.teamAvg.toFixed(2)).to.equal('4.50');
 
-      expect(thursdayWins).to.equal(5);
-      expect(thursdayLosses).to.equal(2);
-      expect(thursdayGames).to.equal(7);
-      expect(thursdayAvg.toFixed(2)).to.equal('8.71');
+      expect(tuesVets.teamWins).to.equal(7);
+      expect(tuesVets.teamLosses).to.equal(2);
+      expect(tuesVets.teamGames).to.equal(9);
+      expect(tuesVets.teamAvg.toFixed(2)).to.equal('8.56');
 
-      expect(saturdayWins).to.equal(14);
-      expect(saturdayLosses).to.equal(0);
-      expect(saturdayGames).to.equal(14);
-      expect(saturdayAvg.toFixed(2)).to.equal('13.71');
+      expect(thursVets.teamWins).to.equal(5);
+      expect(thursVets.teamLosses).to.equal(2);
+      expect(thursVets.teamGames).to.equal(7);
+      expect(thursVets.teamAvg.toFixed(2)).to.equal('8.71');
+
+      expect(saturday.teamWins).to.equal(14);
+      expect(saturday.teamLosses).to.equal(0);
+      expect(saturday.teamGames).to.equal(14);
+      expect(saturday.teamAvg.toFixed(2)).to.equal('13.71');
     });
   });
 
