@@ -30,8 +30,6 @@ export class PlayerRecordsPage {
 
   private readonly wedPairsNoGamesPlayedMessage: Locator;
 
-  private readonly clubCupWinner: Locator;
-
   constructor(page: Page) {
     this.page = page;
     this.overallGamesRecord = page.locator(
@@ -100,8 +98,6 @@ export class PlayerRecordsPage {
     this.wedPairsNoGamesPlayedMessage = page.locator(
       '#player-record-tabpane-wednesday-pairs p'
     );
-
-    this.clubCupWinner = page.locator('#club-cup-winner');
   }
 
   async goto() {
@@ -150,13 +146,5 @@ export class PlayerRecordsPage {
     expect(this.wedPairsNoGamesPlayedMessage).toContainText(
       `${teamName} did not play in this league for the selected year`
     );
-  }
-
-  clubCupWinnerIsDisplayedFor2022() {
-    expect(this.clubCupWinner).toContainText('John Armitage');
-  }
-
-  clubCupWinnerIsDisplayedFor2023() {
-    expect(this.clubCupWinner).toContainText('Paul Bowes');
   }
 }

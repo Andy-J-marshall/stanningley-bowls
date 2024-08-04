@@ -1,6 +1,7 @@
 import { findBiggestWin } from './statsHelper';
+import config from '../config';
 
-export function returnPlayerStats(playersStats, player, year) {
+export function returnPlayerStats(playersStats, player) {
     const stats = playersStats[player];
     if (!stats) {
         return null;
@@ -47,32 +48,6 @@ export function returnPlayerStats(playersStats, player, year) {
     } = stats;
     const p = playersStats[player];
 
-    let mondayLeagueName = 'monday combined leeds';
-    const tuesdayVetsLeagueName = 'tuesday vets leeds';
-    const tuesdayLeagueName = 'tuesday leeds';
-    let wednesdayLeagueName = 'wednesday half holiday leeds';
-    const wednesdayPairsLeagueName = 'wednesday pairs airewharfe';
-    const thursdayVetsLeagueName = 'thursday vets leeds';
-    let saturdayLeagueName = 'saturday leeds';
-    let saturdayBLeagueName = 'saturday leeds (b)';
-
-    if (parseInt(year) < 2022) {
-        mondayLeagueName = 'monday airedale & wharfedale';
-        wednesdayLeagueName = 'wednesday half holiday bradford';
-        saturdayLeagueName = 'saturday bradford';
-        saturdayBLeagueName = 'saturday bradford (b)';
-    }
-
-    // League stats
-    const monday = p[mondayLeagueName];
-    const tuesdayVets = p[tuesdayVetsLeagueName];
-    const tuesdayEvening = p[tuesdayLeagueName];
-    const wednesday = p[wednesdayLeagueName];
-    const wednesdayPairs = p[wednesdayPairsLeagueName];
-    const thursday = p[thursdayVetsLeagueName];
-    const saturday = p[saturdayLeagueName];
-    const saturdayBTeam = p[saturdayBLeagueName];
-
     // Wins and losses
     const totalWins = awayWins + homeWins + cupWins;
     const totalLosses = awayLosses + homeLosses + cupLosses;
@@ -104,94 +79,27 @@ export function returnPlayerStats(playersStats, player, year) {
         totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
 
-    // Stats per league
-    let mondayWins = 0;
-    let mondayLosses = 0;
-    let mondayGames = 0;
-    let mondayAvg = 0;
-    if (monday) {
-        mondayWins = monday.wins;
-        mondayLosses = monday.games - monday.wins;
-        mondayGames = monday.games;
-        mondayAvg = monday.aggDiff / mondayGames;
-    }
+    // Team specific stats
+    const possibleTeamNames = config.allTeamsInLeaguesSince2013;
 
-    let tuesdayVetsWins = 0;
-    let tuesdayVetsLosses = 0;
-    let tuesdayVetsGames = 0;
-    let tuesdayVetsAvg = 0;
-    if (tuesdayVets) {
-        tuesdayVetsWins = tuesdayVets.wins;
-        tuesdayVetsLosses = tuesdayVets.games - tuesdayVets.wins;
-        tuesdayVetsGames = tuesdayVets.games;
-        tuesdayVetsAvg = tuesdayVets.aggDiff / tuesdayVetsGames;
-    }
+    const propertyNames = Object.keys(p);
+    const teamsFound = propertyNames.filter((property) =>
+        possibleTeamNames.includes(property.toLowerCase())
+    );
 
-    let tuesdayEveningWins = 0;
-    let tuesdayEveningLosses = 0;
-    let tuesdayEveningGames = 0;
-    let tuesdayEveningAvg = 0;
-    if (tuesdayEvening) {
-        tuesdayEveningWins = tuesdayEvening.wins;
-        tuesdayEveningLosses = tuesdayEvening.games - tuesdayEvening.wins;
-        tuesdayEveningGames = tuesdayEvening.games;
-        tuesdayEveningAvg = tuesdayEvening.aggDiff / tuesdayEveningGames;
-    }
+    const allTeamStats = teamsFound.map((team) => {
+        const teamStats = p[team];
+        const teamName = team;
 
-    let wednesdayWins = 0;
-    let wednesdayLosses = 0;
-    let wednesdayGames = 0;
-    let wednesdayAvg = 0;
-    if (wednesday) {
-        wednesdayWins = wednesday.wins;
-        wednesdayLosses = wednesday.games - wednesday.wins;
-        wednesdayGames = wednesday.games;
-        wednesdayAvg = wednesday.aggDiff / wednesdayGames;
-    }
+        const teamWins = teamStats.wins;
+        const teamLosses = teamStats.games - teamStats.wins;
+        const teamGames = teamStats.games;
 
-    let wednesdayPairsWins = 0;
-    let wednesdayPairsLosses = 0;
-    let wednesdayPairsGames = 0;
-    let wednesdayPairsAvg = 0;
-    if (wednesdayPairs) {
-        wednesdayPairsWins = wednesdayPairs.wins;
-        wednesdayPairsLosses = wednesdayPairs.games - wednesdayPairs.wins;
-        wednesdayPairsGames = wednesdayPairs.games;
-        wednesdayPairsAvg = wednesdayPairs.aggDiff / wednesdayPairsGames;
-    }
+        const teamAvg = teamGames > 0 ? teamStats.aggDiff / teamGames : null;
+        const teamWinPerc = teamWins && teamGames > 0 ? teamWins / teamGames * 100 : 0;
 
-    let thursdayWins = 0;
-    let thursdayLosses = 0;
-    let thursdayGames = 0;
-    let thursdayAvg = 0;
-    if (thursday) {
-        thursdayWins = thursday.wins;
-        thursdayLosses = thursday.games - thursday.wins;
-        thursdayGames = thursday.games;
-        thursdayAvg = thursday.aggDiff / thursdayGames;
-    }
-
-    let saturdayWins = 0;
-    let saturdayLosses = 0;
-    let saturdayGames = 0;
-    let saturdayAvg = 0;
-    if (saturday) {
-        saturdayWins = saturday.wins;
-        saturdayLosses = saturday.games - saturday.wins;
-        saturdayGames = saturday.games;
-        saturdayAvg = saturday.aggDiff / saturdayGames;
-    }
-
-    let saturdayBWins = 0;
-    let saturdayBLosses = 0;
-    let saturdayBGames = 0;
-    let saturdayBAvg = 0;
-    if (saturdayBTeam) {
-        saturdayBWins = saturdayBTeam.wins;
-        saturdayBLosses = saturdayBTeam.games - saturdayBTeam.wins;
-        saturdayBGames = saturdayBTeam.games;
-        saturdayBAvg = saturdayBTeam.aggDiff / saturdayBGames;
-    }
+        return { teamName, teamWins, teamLosses, teamGames, teamAvg, teamWinPerc };
+    });
 
     let allTeamsPlayedFor = [];
     dayPlayed.forEach((day) => {
@@ -327,38 +235,7 @@ export function returnPlayerStats(playersStats, player, year) {
         pairsHomeAverage,
         pairsAwayAverage,
         pairsCupAverage,
-        mondayWins,
-        mondayLosses,
-        mondayGames,
-        mondayAvg,
-        tuesdayVetsWins,
-        tuesdayVetsLosses,
-        tuesdayVetsGames,
-        tuesdayVetsAvg,
-        tuesdayEveningWins,
-        tuesdayEveningLosses,
-        tuesdayEveningGames,
-        tuesdayEveningAvg,
-        wednesdayWins,
-        wednesdayLosses,
-        wednesdayGames,
-        wednesdayAvg,
-        wednesdayPairsWins,
-        wednesdayPairsLosses,
-        wednesdayPairsGames,
-        wednesdayPairsAvg,
-        thursdayWins,
-        thursdayLosses,
-        thursdayGames,
-        thursdayAvg,
-        saturdayWins,
-        saturdayLosses,
-        saturdayGames,
-        saturdayAvg,
-        saturdayBWins,
-        saturdayBLosses,
-        saturdayBGames,
-        saturdayBAvg,
+        allTeamStats,
         allTeamsPlayedFor,
         pairsPartnersCount,
         pairsPartnersCountWins,
@@ -415,20 +292,21 @@ export function checkWinPercAndAverageAreNumbers(stats) {
         verifiedStats.pairsAverage = -99;
     }
 
-    return verifiedStats
+    return verifiedStats;
 }
 
-export function collatePlayerStats(statsToUse, players, year) {
-    const statsArray = []
+export function collatePlayerStats(statsToUse, players) {
+    const statsArray = [];
     players.sort().forEach((player) => {
-        const playerStats = returnPlayerStats(statsToUse, player, year);
+        const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
             let stats = {
                 // Total
                 player,
                 games: playerStats.gamesPlayed,
                 wins: playerStats.totalWins,
-                winPerc: (playerStats.totalWins / playerStats.gamesPlayed) * 100,
+                winPerc:
+                    (playerStats.totalWins / playerStats.gamesPlayed) * 100,
                 agg: playerStats.totalAgg,
                 aggAgainst: playerStats.totalAggAgainst,
                 average:
@@ -438,7 +316,10 @@ export function collatePlayerStats(statsToUse, players, year) {
                 // Singles
                 singleGames: playerStats.singlesGames,
                 singlesWins: playerStats.totalWins - playerStats.pairWins,
-                singlesWinPerc: ((playerStats.totalWins - playerStats.pairWins) / playerStats.singlesGames) * 100,
+                singlesWinPerc:
+                    ((playerStats.totalWins - playerStats.pairWins) /
+                        playerStats.singlesGames) *
+                    100,
                 singlesAgg: playerStats.singlesAgg,
                 singlesAggAgainst: playerStats.singlesAggAgainst,
                 singlesAverage:
@@ -448,7 +329,8 @@ export function collatePlayerStats(statsToUse, players, year) {
                 // Pairs
                 pairsGames: playerStats.pairsGames,
                 pairsWins: playerStats.pairWins,
-                pairsWinPerc: (playerStats.pairWins / playerStats.pairsGames) * 100,
+                pairsWinPerc:
+                    (playerStats.pairWins / playerStats.pairsGames) * 100,
                 pairsAgg: playerStats.totalPairsAgg,
                 pairsAggAgainst: playerStats.totalPairsAggAgainst,
                 pairsAverage:

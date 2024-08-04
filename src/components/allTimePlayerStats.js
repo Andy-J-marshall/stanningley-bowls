@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import PlayerStatSummary from './playerStatSummary';
-import { returnPlayerStats, checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
+import {
+    returnPlayerStats,
+    checkWinPercAndAverageAreNumbers,
+} from '../helpers/playersHelper';
 
 function AllTimePlayerStats(props) {
     const statsArray = props.statsArray;
@@ -46,8 +49,7 @@ function AllTimePlayerStats(props) {
         statsArray.forEach((yearStats) => {
             const playerStats = returnPlayerStats(
                 yearStats.playerResults,
-                player,
-                yearStats.statsYear
+                player
             );
 
             if (playerStats) {
@@ -69,17 +71,17 @@ function AllTimePlayerStats(props) {
                 stats.pairsAggAgainst += playerStats.totalPairsAggAgainst;
                 stats.pairsWins += playerStats.pairWins;
                 stats.pairsGames += playerStats.pairsGames;
-
             }
         });
-        stats.winPerc = (stats.wins / stats.games) * 100,
-        stats.singlesWinPerc = (stats.singlesWins / stats.singleGames) * 100,
-        stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100,
-
-        stats.average = (stats.agg - stats.aggAgainst) / stats.games;
+        (stats.winPerc = (stats.wins / stats.games) * 100),
+            (stats.singlesWinPerc =
+                (stats.singlesWins / stats.singleGames) * 100),
+            (stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100),
+            (stats.average = (stats.agg - stats.aggAgainst) / stats.games);
         stats.singlesAverage =
             (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
-        stats.pairsAverage = (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
+        stats.pairsAverage =
+            (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
 
         stats = checkWinPercAndAverageAreNumbers(stats);
 
@@ -102,7 +104,9 @@ function AllTimePlayerStats(props) {
                 showPairsOnly={showPairsOnlyBool}
             />
             <br />
-            {!showSinglesOnlyBool && !showPairsOnlyBool && <p id='total-player-count'>Total players: {totalPlayersUsed}</p>}
+            {!showSinglesOnlyBool && !showPairsOnlyBool && (
+                <p id="total-player-count">Total players: {totalPlayersUsed}</p>
+            )}
         </div>
     );
 }

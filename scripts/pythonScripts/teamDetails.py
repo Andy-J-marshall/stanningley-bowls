@@ -31,8 +31,3 @@ traitorPlayers = {
     'Thursday Vets Leeds': ['neil porter'],
     'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
-
-clubCupWinners = {
-    '2022': 'John Armitage',
-    '2023': 'Paul Bowes'
-}

@@ -16,7 +16,6 @@ traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True)
 formatName = utils.formatName
 cupTextList = utils.cupText
-clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
@@ -546,16 +545,10 @@ for team in teamDays:
                         'Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
     file.close()
 
-if year in clubCupWinners:
-    clubCupWinner = clubCupWinners[year]
-else:
-    clubCupWinner = ''
-
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
-    'clubCupWinner': clubCupWinner,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year,
 }
