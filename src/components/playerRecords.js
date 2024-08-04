@@ -190,7 +190,7 @@ function PlayerRecords(props) {
         }
     });
 
-    function allComponent() {
+    function combinedRecordsComponent() {
         if (mostGames > 0) {
             return (
                 <RecordsTableDisplay
@@ -210,10 +210,10 @@ function PlayerRecords(props) {
         }
     }
 
-    function returnTeamComponent(possibleTeamNames, bTeamForLeagueBool) {
+    function returnTeamRecordComponent(possibleTeamNames, bTeamForLeagueBool) {
         let teamName = '';
         let teamRecord = null;
-        
+
         for (const team of possibleTeamNames) {
             const tn = team.toLowerCase();
             const tr = teamRecords[tn];
@@ -230,10 +230,22 @@ function PlayerRecords(props) {
                 break;
             }
         }
-        
+
         let bTeamRecord = null;
         if (bTeamForLeagueBool) {
             bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
+        }
+
+        // TODO move to function?
+        let displayName = teamName.substring(0, 3).toUpperCase();
+        if (teamName.toLowerCase().includes(' vets')) {
+            displayName += ' (VETS)';
+        }
+        if (teamName.toLowerCase().includes(' (b)')) {
+            displayName += ' (B)';
+        }
+        if (teamName.toLowerCase().includes(' pairs')) {
+            displayName += ' (PAIRS)';
         }
 
         if (teamRecord || bTeamRecord) {
@@ -242,7 +254,7 @@ function PlayerRecords(props) {
                 bTeamRecord.bestTeamAveragePlayer.length > 0
             ) {
                 return (
-                    <div>
+                    <div displayname={displayName} day={teamName}>
                         {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
                             <h3>FIRST TEAM</h3>
                         )}
@@ -297,47 +309,59 @@ function PlayerRecords(props) {
         }
     }
 
+    function returnAllComponentsForTeams() {
+        const teamInfo = [
+            {
+                teamNames: [
+                    'monday combined leeds',
+                    'monday airedale & wharfedale',
+                ],
+                bTeamForLeagueBool: true,
+            },
+            {
+                teamNames: ['tuesday vets leeds'],
+                bTeamForLeagueBool: false,
+            },
+            {
+                teamNames: ['tuesday leeds'],
+                bTeamForLeagueBool: false,
+            },
+            {
+                teamNames: [
+                    'wednesday half holiday leeds',
+                    'wednesday half holiday bradford',
+                ],
+                bTeamForLeagueBool: true,
+            },
+            {
+                teamNames: ['wednesday pairs airewharfe'],
+                bTeamForLeagueBool: true,
+            },
+            {
+                teamNames: ['thursday vets leeds'],
+                bTeamForLeagueBool: true,
+            },
+            {
+                teamNames: ['saturday leeds', 'saturday bradford'],
+                bTeamForLeagueBool: true,
+            },
+        ];
+
+        return teamInfo.map((teamData) => {
+            return returnTeamRecordComponent(
+                teamData.teamNames,
+                teamData.bTeamForLeagueBool
+            );
+        });
+    }
+
     if (mostGames > 0) {
         return (
             <div id="player-records">
                 <h1>PLAYER RECORDS</h1>
                 <TeamTabs
-                    id="player-record"
-                    allComponent={allComponent()}
-                    team1Component={returnTeamComponent(
-                        [
-                            'monday combined leeds',
-                            'monday airedale & wharfedale',
-                        ],
-                        true
-                    )}
-                    team2Component={returnTeamComponent(
-                        ['tuesday vets leeds'],
-                        false
-                    )}
-                    team3Component={returnTeamComponent(
-                        ['tuesday leeds'],
-                        false
-                    )}
-                    team4Component={returnTeamComponent(
-                        [
-                            'wednesday half holiday leeds',
-                            'wednesday half holiday bradford',
-                        ],
-                        true
-                    )}
-                    team7Component={returnTeamComponent(
-                        ['wednesday pairs airewharfe'],
-                        true
-                    )}
-                    team5Component={returnTeamComponent(
-                        ['thursday vets leeds'],
-                        true
-                    )}
-                    team6Component={returnTeamComponent(
-                        ['saturday leeds', 'saturday bradford'],
-                        true
-                    )}
+                    allComponent={combinedRecordsComponent()}
+                    teamRecordsComponents={returnAllComponentsForTeams()}
                 />
             </div>
         );

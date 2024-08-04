@@ -5,10 +5,9 @@ import config from '../config';
 
 function IndividualTeamStats(props) {
     const day = props.day;
+    const displayName = props.displayName; // this is used by TeamTabs component
     const stats = props.stats;
     const playerStats = props.playerStats;
-    const url = props.url;
-    const displayUrl = props.displayUrl;
 
     if (stats) {
         const {
@@ -70,28 +69,15 @@ function IndividualTeamStats(props) {
                         leaguePosition={leaguePosition}
                     />
                     <br />
-                    <h3>PLAYERS</h3>
+                    <h4>PLAYERS</h4>
                     <PlayerStatSummary playerStats={allPlayerStats} />
-                    <br />
-                    {displayUrl && (
-                        <p className="footnote">
-                            The full league stats can be found on{' '}
-                            <a
-                                style={{ textDecoration: 'none' }}
-                                target="_blank"
-                                href={url}
-                            >
-                                Bowlsnet
-                            </a>
-                            .
-                        </p>
-                    )}
                 </div>
             );
         } else {
             return <p>No games played</p>;
         }
     } else {
+        // TODO might be able to remove this. Check what happens when moving from one year to another for a league that does not exist
         return (
             <p>
                 {config.teamNames.shortName} did not play in this league for the
