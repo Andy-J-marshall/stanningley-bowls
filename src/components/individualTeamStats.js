@@ -77,7 +77,6 @@ function IndividualTeamStats(props) {
             return <p>No games played</p>;
         }
     } else {
-        // TODO might be able to remove this. Check what happens when moving from one year to another for a league that does not exist
         return (
             <p>
                 {config.teamNames.shortName} did not play in this league for the
