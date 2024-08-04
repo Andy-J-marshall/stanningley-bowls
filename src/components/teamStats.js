@@ -3,6 +3,7 @@ import IndividualTeamStats from './individualTeamStats';
 import CombinedTeamStats from './combinedTeamStats';
 import TeamTabs from './teamTabs';
 import config from '../config';
+import { returnTabName } from '../helpers/teamsHelper';
 
 function TeamStats(props) {
     const stats = props.stats;
@@ -24,20 +25,9 @@ function TeamStats(props) {
 
         return teamResults.map((teamResult) => {
             if (possibleTeamNames.includes(teamResult.day.toLowerCase())) {
-                // TODO move to function?
-                let displayName = teamResult.day.substring(0, 3).toUpperCase();
-                if (teamResult.day.toLowerCase().includes(' vets')) {
-                    displayName += ' (VETS)';
-                }
-                if (teamResult.day.toLowerCase().includes(' (b)')) {
-                    displayName += ' (B)';
-                }
-                if (teamResult.day.toLowerCase().includes(' pairs')) {
-                    displayName += ' (PAIRS)';
-                }
                 return (
                     <IndividualTeamStats
-                        displayName={displayName}
+                        displayName={returnTabName(teamResult.day)}
                         day={teamResult.day}
                         stats={teamResult}
                         playerStats={playerResults}

@@ -1,6 +1,7 @@
 import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
 import config from '../config';
+import { returnTabName } from '../helpers/teamsHelper';
 
 function PlayerRecords(props) {
     const stats = props.stats;
@@ -236,25 +237,13 @@ function PlayerRecords(props) {
             bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
         }
 
-        // TODO move to function?
-        let displayName = teamName.substring(0, 3).toUpperCase();
-        if (teamName.toLowerCase().includes(' vets')) {
-            displayName += ' (VETS)';
-        }
-        if (teamName.toLowerCase().includes(' (b)')) {
-            displayName += ' (B)';
-        }
-        if (teamName.toLowerCase().includes(' pairs')) {
-            displayName += ' (PAIRS)';
-        }
-
         if (teamRecord || bTeamRecord) {
             if (
                 teamRecord.bestTeamAveragePlayer.length > 0 ||
                 bTeamRecord.bestTeamAveragePlayer.length > 0
             ) {
                 return (
-                    <div displayname={displayName} day={teamName}>
+                    <div displayname={returnTabName(teamName)} day={teamName}>
                         {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
                             <h3>FIRST TEAM</h3>
                         )}
