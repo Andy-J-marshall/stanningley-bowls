@@ -7,6 +7,15 @@ function PlayerRecords(props) {
     const stats = props.stats;
     const year = props.year;
 
+    const playerResults = stats.playerResults;
+    const clubCupWinner = stats.clubCupWinner;
+
+    const players = Object.keys(playerResults);
+
+    const minGamesForOverallRecords = 15;
+    const minGamesForTeamRecords = 11;
+
+    // TODO remove these
     let mondayLeagueName = 'monday combined leeds';
     const tuesdayVetsLeagueName = 'tuesday vets leeds';
     const tuesdayLeagueName = 'tuesday leeds';
@@ -22,14 +31,6 @@ function PlayerRecords(props) {
         saturdayLeagueName = 'saturday bradford';
         saturdayBLeagueName = 'saturday bradford (b)';
     }
-
-    const playerResults = stats.playerResults;
-    const clubCupWinner = stats.clubCupWinner;
-
-    const players = Object.keys(playerResults);
-
-    const minGamesForOverallRecords = 15;
-    const minGamesForTeamRecords = 11;
 
     // Monday
     let useMondayStats = false;
@@ -133,53 +134,143 @@ function PlayerRecords(props) {
     let highestSatBGames = 0;
     let highestTotalGames = 0;
 
+    //////////////////
+
+    // This finds the leagues available in the data
+    const teamRecords = {};
+    let teamsFound = [];
     players.forEach((player) => {
         const p = playerResults[player];
-        const monday = p[mondayLeagueName];
-        const tuesdayVets = p[tuesdayVetsLeagueName];
-        const tuesday = p[tuesdayLeagueName];
-        const wednesday = p[wednesdayLeagueName];
-        const wednesdayPairs = p[wednesdayPairsLeagueName];
-        const thursdayVets = p[thursdayVetsLeagueName];
-        const saturday = p[saturdayLeagueName];
-        const saturdayB = p[saturdayBLeagueName];
 
-        const totalWins = p.awayWins + p.homeWins + p.cupWins;
-        const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
-        const totalGames = totalWins + totalLosses;
+        // Find list of team stats
+        const possibleTeamNames = [
+            'monday combined leeds',
+            'tuesday vets leeds',
+            'tuesday leeds',
+            'wednesday half holiday leeds',
+            'wednesday pairs airewharfe',
+            'wednesday pairs airewharfe (a)',
+            'wednesday pairs airewharfe (b)',
+            'thursday vets leeds',
+            'thursday vets leeds (a)',
+            'thursday vets leeds (b)',
+            'saturday leeds',
+            'saturday leeds (a)',
+            'saturday leeds (b)',
+            'wednesday half holiday bradford',
+            'wednesday half holiday bradford (a)',
+            'wednesday half holiday bradford (b)',
+            'saturday bradford',
+            'saturday bradford (a)',
+            'saturday bradford (b)',
+        ];
 
-        if (monday && monday.games >= highestMonGames) {
-            highestMonGames = monday.games;
-        }
-        if (tuesdayVets && tuesdayVets.games >= highestTuesVetsGames) {
-            highestTuesVetsGames = tuesdayVets.games;
-        }
-        if (tuesday && tuesday.games >= highestTuesGames) {
-            highestTuesGames = tuesday.games;
-        }
-        if (wednesdayPairs && wednesdayPairs.games >= highestWedPairsGames) {
-            highestWedPairsGames = wednesdayPairs.games;
-        }
-        if (wednesday && wednesday.games >= highestWedGames) {
-            highestWedGames = wednesday.games;
-        }
-        if (thursdayVets && thursdayVets.games >= highestThursVetsGames) {
-            highestThursVetsGames = thursdayVets.games;
-        }
-        if (saturday && saturday.games >= highestSatGames) {
-            highestSatGames = saturday.games;
-        }
-        if (saturdayB && saturdayB.games >= highestSatBGames) {
-            highestSatBGames = saturdayB.games;
-        }
-        if (totalGames >= highestTotalGames) {
-            highestTotalGames = totalGames;
-        }
+        const propertyNames = Object.keys(p);
+        teamsFound = propertyNames.filter((property) =>
+            possibleTeamNames.includes(property.toLowerCase())
+        );
+
+        possibleTeamNames.forEach((team) => {
+            teamRecords[team] = {
+                minTeamGames: 1,
+                highestTeamGames: 0,
+                mostTeamWins: 0,
+                bestTeamAverage: -27,
+                bestTeamWinPerc: 0,
+                mostTeamWinsPlayer: [],
+                bestTeamAveragePlayer: [],
+                bestTeamWinPercPlayer: [],
+            };
+        });
     });
 
     // This sets the minimum number of games required for the stats to be counted
     players.forEach((player) => {
         const p = playerResults[player];
+
+        const totalGames =
+            p.awayWins +
+            p.homeWins +
+            p.cupWins +
+            p.awayLosses +
+            p.homeLosses +
+            p.cupLosses;
+
+        if (totalGames >= highestTotalGames) {
+            highestTotalGames = totalGames;
+        }
+
+        teamsFound.forEach((team) => {
+            const teamRecord = teamRecords[team];
+            const playerStats = p[team];
+
+            if (teamRecord && playerStats && playerStats.games >= teamRecord.highestTeamGames) {
+                teamRecords[team].highestTeamGames = playerStats.games;
+            }
+        });
+    });
+
+    // This finds the records for the players
+    players.forEach((player) => {
+        const p = playerResults[player];
+
+        // Team specific stats
+        teamsFound.forEach((team) => {
+            const teamStats = p[team];
+
+            const games = teamStats.games;
+            if (games > 0) {
+                const wins = teamStats.wins;
+                const avg = teamStats.aggDiff / games;
+                const winPerc = (wins / games) * 100;
+
+                // TODO set useStats property?
+                let teamRecord = teamRecords[team];
+                let minTeamGames = teamRecord.minTeamGames;
+                let highestTeamGames = teamRecord.highestTeamGames;
+                let mostTeamWins = teamRecord.mostTeamWins;
+                let bestTeamAverage = teamRecord.bestTeamAverage;
+                let bestTeamWinPerc = teamRecord.bestTeamWinPerc;
+
+                if (highestTeamGames > minTeamGames) {
+                    if (highestTeamGames >= minGamesForTeamRecords) {
+                        minTeamGames = minGamesForTeamRecords;
+                    } else {
+                        minTeamGames = highestTeamGames;
+                    }
+                }
+
+                if (avg >= bestTeamAverage && games >= minTeamGames) {
+                    if (avg > bestTeamAverage) {
+                        teamRecords[team].bestTeamAveragePlayer = [];
+                        bestTeamAverage = avg;
+                    }
+                    teamRecords[team].bestTeamAveragePlayer.push(player);
+                }
+
+                if (wins >= mostTeamWins) {
+                    if (wins > mostTeamWins) {
+                        teamRecords[team].mostTeamWinsPlayer = [];
+                        mostTeamWins = wins;
+                    }
+                    teamRecords[team].mostTeamWinsPlayer.push(player);
+                }
+
+                if (winPerc >= bestTeamWinPerc && games >= minTeamGames) {
+                    if (winPerc > bestTeamWinPerc) {
+                        teamRecords[team].bestTeamWinPercPlayer = [];
+                        bestTeamWinPerc = winPerc;
+                    }
+                    teamRecords[team].bestTeamWinPercPlayer.push(player);
+                }
+
+                teamRecords[team].minTeamGames = minTeamGames;
+                teamRecords[team].highestTeamGames = highestTeamGames;
+                teamRecords[team].mostTeamWins = mostTeamWins;
+                teamRecords[team].bestTeamAverage = bestTeamAverage;
+                teamRecords[team].bestTeamWinPerc = bestTeamWinPerc;
+            }
+        });
 
         const monday = p[mondayLeagueName];
         const tuesdayVets = p[tuesdayVetsLeagueName];
@@ -633,6 +724,7 @@ function PlayerRecords(props) {
         }
     }
 
+    // TODO replace these with 1 function that loops through teamRecords
     function returnMondayTeamComponent() {
         if (useMondayStats) {
             if (bestMondayAveragePlayer.length > 0) {

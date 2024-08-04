@@ -78,7 +78,6 @@ export function returnPlayerStats(playersStats, player) {
         totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
 
-
     // Team specific stats
     const possibleTeamNames = [
         'monday combined leeds',
