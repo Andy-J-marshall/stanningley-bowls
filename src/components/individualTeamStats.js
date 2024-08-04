@@ -5,7 +5,7 @@ import config from '../config';
 
 function IndividualTeamStats(props) {
     const day = props.day;
-    const displayName = props.displayName; // this is used by TeamTabs component
+    const displayName = props.displayname; // this is used by TeamTabs component
     const stats = props.stats;
     const playerStats = props.playerStats;
 

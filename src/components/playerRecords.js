@@ -349,7 +349,7 @@ function PlayerRecords(props) {
             <div id="player-records">
                 <h1>PLAYER RECORDS</h1>
                 <TeamTabs
-                    allComponent={combinedRecordsComponent()}
+                    allCombinedComponent={combinedRecordsComponent()}
                     teamRecordsComponents={returnAllComponentsForTeams()}
                 />
             </div>

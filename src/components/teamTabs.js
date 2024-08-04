@@ -1,14 +1,12 @@
 import { Tabs, Tab } from 'react-bootstrap';
 
 function TeamTabs(props) {
-    const allComponent = props.allComponent;
+    const allCombinedComponent = props.allCombinedComponent;
     const teamStatsComponents = props.teamComponents;
     const teamRecordsComponents = props.teamRecordsComponents;
 
     return (
         // TODO tidy up? Need both?
-        // TODO there's an error with the title in the console?
-        // TODO hide old tabs or show a message?
         <div>
             {teamStatsComponents && (
                 <Tabs
@@ -17,16 +15,18 @@ function TeamTabs(props) {
                     className="mb-3 tabs"
                 >
                     <Tab eventKey="Combined" title="ALL">
-                        {allComponent}
+                        {allCombinedComponent}
                     </Tab>
                     {teamStatsComponents.map((teamComponent, index) => (
-                        <Tab
-                            key={index}
-                            eventKey={teamComponent.props.day}
-                            title={teamComponent.props.displayName}
-                        >
-                            {teamComponent}
-                        </Tab>
+                        teamComponent.props.displayname && (
+                            <Tab
+                                key={index}
+                                eventKey={teamComponent.props.day}
+                                title={teamComponent.props.displayname}
+                            >
+                                {teamComponent}
+                            </Tab>
+                        )
                     ))}
                 </Tabs>
             )}
@@ -37,16 +37,18 @@ function TeamTabs(props) {
                     className="mb-3 tabs"
                 >
                     <Tab eventKey="Combined" title="ALL">
-                        {allComponent}
+                        {allCombinedComponent}
                     </Tab>
                     {teamRecordsComponents.map((teamComponent, index) => (
-                        <Tab
-                            key={index}
-                            eventKey={teamComponent.props.day}
-                            title={teamComponent.props.displayname}
-                        >
-                            {teamComponent}
-                        </Tab>
+                        teamComponent.props.displayname && (
+                            <Tab
+                                key={index}
+                                eventKey={teamComponent.props.day}
+                                title={teamComponent.props.displayname}
+                            >
+                                {teamComponent}
+                            </Tab>
+                        )
                     ))}
                 </Tabs>
             )}

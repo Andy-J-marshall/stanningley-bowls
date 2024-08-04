@@ -27,7 +27,7 @@ function TeamStats(props) {
             if (possibleTeamNames.includes(teamResult.day.toLowerCase())) {
                 return (
                     <IndividualTeamStats
-                        displayName={returnTabName(teamResult.day)}
+                        displayname={returnTabName(teamResult.day)}
                         day={teamResult.day}
                         stats={teamResult}
                         playerStats={playerResults}
@@ -42,7 +42,7 @@ function TeamStats(props) {
             <div id="team-stats" className="center page-component">
                 <h1>TEAM STATS</h1>
                 <TeamTabs
-                    allComponent={allComponent()}
+                    allCombinedComponent={allComponent()}
                     teamComponents={returnTeamComponents()}
                 />
                 <br />
