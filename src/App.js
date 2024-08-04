@@ -236,7 +236,6 @@ function App() {
                                     showOldYears={true}
                                 />
                                 <PlayerRecords
-                                    year={yearToDisplay}
                                     stats={teamStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
