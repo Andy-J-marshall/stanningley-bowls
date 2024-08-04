@@ -177,6 +177,7 @@ If adding or removing a second team, updated the following properties in `teamDe
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 
 Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
+Update the `allTeamsInLeaguesSince2013` array in `config.js` to include an extra keys (second team teams need to be suffixed with ' (b)').
 Update any URLs if the Bowlsnet link has changed.
 Update `playersHelper.js` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.

@@ -1,4 +1,5 @@
 import { findBiggestWin } from './statsHelper';
+import config from '../config';
 
 export function returnPlayerStats(playersStats, player) {
     const stats = playersStats[player];
@@ -79,30 +80,7 @@ export function returnPlayerStats(playersStats, player) {
     const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
 
     // Team specific stats
-    const possibleTeamNames = [
-        'monday combined leeds',
-        'monday airedale & wharfedale',
-        'monday airedale & wharfedale (a)',
-        'monday airedale & wharfedale (b)',
-        'tuesday vets leeds',
-        'tuesday leeds',
-        'wednesday half holiday leeds',
-        'wednesday half holiday bradford',
-        'wednesday half holiday bradford (a)',
-        'wednesday half holiday bradford (b)',
-        'wednesday pairs airewharfe',
-        'wednesday pairs airewharfe (a)',
-        'wednesday pairs airewharfe (b)',
-        'thursday vets leeds',
-        'thursday vets leeds (a)',
-        'thursday vets leeds (b)',
-        'saturday leeds',
-        'saturday leeds (a)',
-        'saturday leeds (b)',
-        'saturday bradford',
-        'saturday bradford (a)',
-        'saturday bradford (b)',
-    ];
+    const possibleTeamNames = config.allTeamsInLeaguesSince2013;
 
     const propertyNames = Object.keys(p);
     const teamsFound = propertyNames.filter((property) =>
