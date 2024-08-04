@@ -15,17 +15,22 @@ function TeamTabs(props) {
                     <Tab eventKey="Combined" title="ALL">
                         {allCombinedComponent}
                     </Tab>
-                    {teamComponents.map((teamComponent, index) => (
-                        teamComponent.props.displayname && (
-                            <Tab
-                                key={index}
-                                eventKey={teamComponent.props.displayname.replace('(', '').replace(')', '').replace(' ', '').toLowerCase()}
-                                title={teamComponent.props.displayname}
-                            >
-                                {teamComponent}
-                            </Tab>
-                        )
-                    ))}
+                    {teamComponents.map(
+                        (teamComponent, index) =>
+                            teamComponent.props.displayname && (
+                                <Tab
+                                    key={index}
+                                    eventKey={teamComponent.props.displayname
+                                        .replace('(', '')
+                                        .replace(')', '')
+                                        .replace(' ', '')
+                                        .toLowerCase()}
+                                    title={teamComponent.props.displayname}
+                                >
+                                    {teamComponent}
+                                </Tab>
+                            )
+                    )}
                 </Tabs>
             )}
         </div>
