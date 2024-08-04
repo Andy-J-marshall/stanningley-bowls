@@ -13,7 +13,6 @@ function TeamTabs(props) {
 
     return (
         <div>
-            {/* TODO rename these? */}
             <Tabs defaultActiveKey="Combined" id={id} className="mb-3 tabs">
                 <Tab eventKey="Combined" title="All">
                     {allComponent}

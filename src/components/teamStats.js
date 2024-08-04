@@ -20,8 +20,6 @@ function TeamStats(props) {
     let saturdayStats;
     let saturdayBStats;
 
-    // TODO refactor this?
-
     if (teamResults) {
         mondayStats = teamResults.find((team) =>
             team.day.toLowerCase().includes('monday')
