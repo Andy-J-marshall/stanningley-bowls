@@ -19,7 +19,7 @@ function TeamTabs(props) {
                         teamComponent.props.displayname && (
                             <Tab
                                 key={index}
-                                eventKey={teamComponent.props.day}
+                                eventKey={teamComponent.props.displayname.replace('(', '').replace(')', '').replace(' ', '').toLowerCase()}
                                 title={teamComponent.props.displayname}
                             >
                                 {teamComponent}

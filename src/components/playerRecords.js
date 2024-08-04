@@ -243,7 +243,7 @@ function PlayerRecords(props) {
                 bTeamRecord.bestTeamAveragePlayer.length > 0
             ) {
                 return (
-                    <div displayname={returnTabName(teamName)} day={teamName}>
+                    <div displayname={returnTabName(teamName)}>
                         {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
                             <h3>FIRST TEAM</h3>
                         )}

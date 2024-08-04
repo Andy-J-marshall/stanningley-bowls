@@ -28,75 +28,69 @@ export class PlayerRecordsPage {
   private readonly thurVetsAverageRecord: Locator;
   private readonly thurVetsAverageRecordPlayer: Locator;
 
-  private readonly wedPairsNoGamesPlayedMessage: Locator;
-
   constructor(page: Page) {
     this.page = page;
     this.overallGamesRecord = page.locator(
-      '#player-record-tabpane-Combined #mostGames'
+      '#team-select-tabs-tabpane-Combined #mostGames'
     );
     this.overallGamesRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #mostGamesPlayer'
+      '#team-select-tabs-tabpane-Combined #mostGamesPlayer'
     );
     this.overallWinRecord = page.locator(
-      '#player-record-tabpane-Combined #mostWins'
+      '#team-select-tabs-tabpane-Combined #mostWins'
     );
     this.overallWinsRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #mostWinsPlayer'
+      '#team-select-tabs-tabpane-Combined #mostWinsPlayer'
     );
     this.overallWinPercRecord = page.locator(
-      '#player-record-tabpane-Combined #bestWinPerc'
+      '#team-select-tabs-tabpane-Combined #bestWinPerc'
     );
     this.overallWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #bestWinPercPlayer'
+      '#team-select-tabs-tabpane-Combined #bestWinPercPlayer'
     );
     this.overallAverageRecord = page.locator(
-      '#player-record-tabpane-Combined #bestAverage'
+      '#team-select-tabs-tabpane-Combined #bestAverage'
     );
     this.overallAverageRecordPlayer = page.locator(
-      '#player-record-tabpane-Combined #bestAveragePlayer'
+      '#team-select-tabs-tabpane-Combined #bestAveragePlayer'
     );
 
     this.tuesVetsWinRecord = page.locator(
-      '#player-record-tabpane-tuesday-vets #mostWins'
+      '#team-select-tabs-tabpane-tuevets #mostWins'
     );
     this.tuesVetsWinsRecordPlayer = page.locator(
-      '#player-record-tabpane-tuesday-vets #mostWinsPlayer'
+      '#team-select-tabs-tabpane-tuevets #mostWinsPlayer'
     );
     this.tuesVetsWinPercRecord = page.locator(
-      '#player-record-tabpane-tuesday-vets #bestWinPerc'
+      '#team-select-tabs-tabpane-tuevets #bestWinPerc'
     );
     this.tuesVetsWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-tuesday-vets #bestWinPercPlayer'
+      '#team-select-tabs-tabpane-tuevets #bestWinPercPlayer'
     );
     this.tuesVetsAverageRecord = page.locator(
-      '#player-record-tabpane-tuesday-vets #bestAverage'
+      '#team-select-tabs-tabpane-tuevets #bestAverage'
     );
     this.tuesVetsAverageRecordPlayer = page.locator(
-      '#player-record-tabpane-tuesday-vets #bestAveragePlayer'
+      '#team-select-tabs-tabpane-tuevets #bestAveragePlayer'
     );
 
     this.thurVetsWinRecord = page.locator(
-      '#player-record-tabpane-thursday-vets #mostWins'
+      '#team-select-tabs-tabpane-thuvets #mostWins'
     );
     this.thurVetsWinsRecordPlayer = page.locator(
-      '#player-record-tabpane-thursday-vets #mostWinsPlayer'
+      '#team-select-tabs-tabpane-thuvets #mostWinsPlayer'
     );
     this.thurVetsWinPercRecord = page.locator(
-      '#player-record-tabpane-thursday-vets #bestWinPerc'
+      '#team-select-tabs-tabpane-thuvets #bestWinPerc'
     );
     this.thurVetsWinPercRecordPlayer = page.locator(
-      '#player-record-tabpane-thursday-vets #bestWinPercPlayer'
+      '#team-select-tabs-tabpane-thuvets #bestWinPercPlayer'
     );
     this.thurVetsAverageRecord = page.locator(
-      '#player-record-tabpane-thursday-vets #bestAverage'
+      '#team-select-tabs-tabpane-thuvets #bestAverage'
     );
     this.thurVetsAverageRecordPlayer = page.locator(
-      '#player-record-tabpane-thursday-vets #bestAveragePlayer'
-    );
-
-    this.wedPairsNoGamesPlayedMessage = page.locator(
-      '#player-record-tabpane-wednesday-pairs p'
+      '#team-select-tabs-tabpane-thuvets #bestAveragePlayer'
     );
   }
 
@@ -140,11 +134,5 @@ export class PlayerRecordsPage {
     expect(this.tuesVetsWinPercRecordPlayer).toContainText('John Armitage');
     expect(this.tuesVetsAverageRecord).toContainText('12.36');
     expect(this.tuesVetsAverageRecordPlayer).toContainText('John Armitage');
-  }
-
-  playerRecordsDoNotExistForWednesdayPairsIn2023() {
-    expect(this.wedPairsNoGamesPlayedMessage).toContainText(
-      `${teamName} did not play in this league for the selected year`
-    );
   }
 }

@@ -13,30 +13,14 @@ export class TeamTabsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.mondayTeamStats = page.locator(
-      '#team-stats #team-stat-tab-monday'
-    );
-    this.mondayTeamRecords = page.locator(
-      '#player-records #player-record-tab-monday'
-    );
-    this.tuesVetsTeamStats = page.locator(
-      '#team-stats #team-stat-tab-tuesday-vets'
-    );
-    this.tuesVetsTeamRecords = page.locator(
-      '#player-records #player-record-tab-tuesday-vets'
-    );
-    this.wedPairsTeamStats = page.locator(
-      '#team-stats #team-stat-tab-wednesday-pairs'
-    );
-    this.wedPairsTeamRecords = page.locator(
-      '#player-records #player-record-tab-wednesday-pairs'
-    );
-    this.thurVetsTeamStats = page.locator(
-      '#team-stats #team-stat-tab-thursday-vets'
-    );
-    this.thurVetsTeamRecords = page.locator(
-      '#player-records #player-record-tab-thursday-vets'
-    );
+    this.mondayTeamStats = page.locator(`text=MON`);
+    this.mondayTeamRecords = page.locator(`text=MON`);
+    this.tuesVetsTeamStats = page.locator(`text=TUE (VETS)`);
+    this.tuesVetsTeamRecords = page.locator(`text=TUE (VETS)`);
+    this.wedPairsTeamStats = page.locator(`text=WED (PAIRS)`);
+    this.wedPairsTeamRecords = page.locator(`text=WED (PAIRS)`);
+    this.thurVetsTeamStats = page.locator(`text=THU (VETS)`);
+    this.thurVetsTeamRecords = page.locator(`text=THU (VETS)`);
   }
 
   async selectMondayTeamFromStatsTabs() {
