@@ -234,24 +234,29 @@ function PlayerRecords(props) {
     }
 
     function returnTeamComponent(possibleTeamNames, bTeamForLeagueBool) {
-        // This assumes the A team won't have (a) in the name
+        let teamName = '';
         let teamRecord = null;
-        let bTeamRecord = null;
-
+        
         for (const team of possibleTeamNames) {
-            const teamName = team.toLowerCase();
-            if (
-                teamRecords[teamName] &&
-                teamRecords[teamName].bestTeamAverage > -21
-            ) {
-                teamRecord = teamRecords[teamName];
-
-                if (bTeamForLeagueBool) {
-                    bTeamRecord =
-                        teamRecords[teamName.replace(' (a)', '') + ' (b)'];
-                }
+            const tn = team.toLowerCase();
+            const tr = teamRecords[tn];
+            if (tr && tr.bestTeamAverage > -21) {
+                teamRecord = tr;
+                teamName = tn;
                 break;
             }
+            // Check for a team with an (a) suffix if no team found
+            const trWithASuffix = teamRecords[tn + ' (a)'];
+            if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+                teamRecord = trWithASuffix;
+                teamName = tn;
+                break;
+            }
+        }
+        
+        let bTeamRecord = null;
+        if (bTeamForLeagueBool) {
+            bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
         }
 
         if (teamRecord || bTeamRecord) {
