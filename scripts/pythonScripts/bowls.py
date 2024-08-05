@@ -214,44 +214,13 @@ for team in teamDays:
                     homeAgg = int(matchAgg[0].strip())
                     awayAgg = int(matchAgg[1].strip())
 
-            # Finds the date of the match
-            gameDate = ''
-            if (rowNumber in homeRow or rowNumber in awayRow) and rowNumber > startingRow:
-                gameDateRowModifier = 1
-                if 'saturday leeds' in team.lower():
-                    gameDateRowModifier += 1
-
-                gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                
-                if type(gameDate) is str:
-                    if 'On ' in gameDate or '(from ' in gameDate:
-                        gameDateRowModifier += 1
-                        gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                        
-                else:
-                    gameDate = ''
-                    
-            if gameDate:
-                gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
-                gameDate = gameDateParts[2]
-                # This might happen if date if cup text includes the day
-                if len(gameDateParts) > 4:
-                    gameDate = gameDateParts[4]
-                
-                gameDate = gameDate.strip()
-                
-                # Sanity check on the date
-                dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
-                if dateContainsDayOfWeekBool is None:
-                    raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
-
             # Home games
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1].strip()
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + opponent + ' (' + gameDate + ')'
+                    ' ' + opponent
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
@@ -273,7 +242,7 @@ for team in teamDays:
                 opponent = rowText.split(teamNameUsedForLeague)[0].strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + teamNameToUse + ' (' + gameDate + ')'
+                    ' ' + teamNameToUse
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
