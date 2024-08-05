@@ -15,16 +15,16 @@ function RecordsTableDisplay(props) {
     const bestAverage = props.bestAverage;
     const bestAveragePlayer = props.bestAveragePlayer;
 
+    const title = day && !aTeam && bTeam ? `${day} (B)` : day;
+
     return (
         <div className="center" style={{ width: '97%' }}>
-            {day && aTeam && (
+            {day && (
                 <div>
                     <br />
-                    <h4>{day.toUpperCase()}</h4>
+                    <h4>{title.toUpperCase()}</h4>
                 </div>
             )}
-            <br />
-            {day && !aTeam && bTeam && <h4>B TEAM</h4>}
             <Table striped bordered hover>
                 <thead>
                     <tr>
