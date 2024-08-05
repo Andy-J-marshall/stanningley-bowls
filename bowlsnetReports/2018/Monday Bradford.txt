@@ -17,7 +17,7 @@ Birkenshaw 'A'        7    92   v.   Eccleshill           19   121
 Oakenshaw 'A'        10    91   v.   West Bradford 'A'    16   105     
 Royd House           14   102   v.   Crowghyll 'A'        12    97     
 Drighlington 'B'      3    64   v.   Tyersal 'A'          23   118     
-Heckmondwike 'A'     21   125   v.   Littlemoor S &amp; SC     5    85     
+Heckmondwike 'A'     21   125   v.   Littlemoor S & SC     5    85     
 ------------------------------------------------------------------------------------------------------
          Mon 9th Apr                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ Shipley Club         16   102   v.   Myrtle 'A'           10    93
 ------------------------------------------------------------------------------------------------------
         Mon 16th Apr                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    23   119   v.   Drighlington 'B'      3    64     
+Littlemoor S & SC    23   119   v.   Drighlington 'B'      3    64     
 Tyersal 'A'          26   126   v.   Royd House            0    39     
 Crowghyll 'A'        14   114   v.   Oakenshaw 'A'        12   108     
 West Bradford 'A'    16   106   v.   Birkenshaw 'A'       10    93     
@@ -85,7 +85,7 @@ Asa Briggs 'B'        5    91   v.   Clayton 'A'          21   126
 Eccleshill            9    94   v.   West Bradford 'A'    17   108     
 Birkenshaw 'A'        7    84   v.   Crowghyll 'A'        19   109     
 Oakenshaw 'A'         6    81   v.   Tyersal 'A'          20   120     
-Royd House           18   118   v.   Littlemoor S &amp; SC     8    98     
+Royd House           18   118   v.   Littlemoor S & SC     8    98     
 Drighlington 'B'      8    79   v.   Heckmondwike 'A'     18   107     
 ------------------------------------------------------------------------------------------------------
         Mon 23rd Apr                   Division 3 (City Sports)                       
@@ -117,7 +117,7 @@ Myrtle 'A'           13    95   v.   Drighlington 'A'     13   100
 ------------------------------------------------------------------------------------------------------
         Mon 30th Apr                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    20   116   v.   Oakenshaw 'A'         6    84     
+Littlemoor S & SC    20   116   v.   Oakenshaw 'A'         6    84     
 Tyersal 'A'          26   126   v.   Birkenshaw 'A'        0    55     
 Crowghyll 'A'        24   126   v.   Eccleshill            2    73     
 Drighlington 'B'     16   101   v.   Royd House           10    88     
@@ -153,7 +153,7 @@ Asa Briggs 'B'        6    88   v.   Myrtle 'A'           20   117
 ------------------------------------------------------------------------------------------------------
 West Bradford 'A'    12   109   v.   Crowghyll 'A'        14   110     
 Eccleshill           13   104   v.   Tyersal 'A'          13   102     
-Birkenshaw 'A'                  v.   Littlemoor S &amp; SC                 To Mon 28th May (Rearranged)
+Birkenshaw 'A'                  v.   Littlemoor S & SC                 To Mon 28th May (Rearranged)
 Oakenshaw 'A'        22   116   v.   Drighlington 'B'      4    67     
 Royd House            7    82   v.   Heckmondwike 'A'     19   111     
 ------------------------------------------------------------------------------------------------------
@@ -185,7 +185,7 @@ Myrtle 'A'           20   118   v.   Asa Briggs 'A'        6    86
 ------------------------------------------------------------------------------------------------------
         Mon 21st May                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    20   113   v.   Eccleshill            6    74     
+Littlemoor S & SC    20   113   v.   Eccleshill            6    74     
 Tyersal 'A'          23   126   v.   West Bradford 'A'     3    82     
 Royd House           16   107   v.   Oakenshaw 'A'        10    89     
 Drighlington 'B'     17   122   v.   Birkenshaw 'A'        9   104     
@@ -213,7 +213,7 @@ West Royd            19   116   v.   Tyersal 'B'           7    86
 ------------------------------------------------------------------------------------------------------
         Mon 28th May                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Birkenshaw 'A'       15   112   v.   Littlemoor S &amp; SC    11   105     From Mon 14th May (Rearranged)
+Birkenshaw 'A'       15   112   v.   Littlemoor S & SC    11   105     From Mon 14th May (Rearranged)
 
 ------------------------------------------------------------------------------------------------------
          Mon 4th Jun                     Division 1 (Thurston)                        
@@ -226,7 +226,7 @@ Spen Victoria 'B'     5    84   v.   Myrtle 'A'           21   123
          Mon 4th Jun                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Crowghyll 'A'        17   114   v.   Tyersal 'A'           9    98     
-West Bradford 'A'    20   117   v.   Littlemoor S &amp; SC     6    88     
+West Bradford 'A'    20   117   v.   Littlemoor S & SC     6    88     
 Eccleshill           25   126   v.   Drighlington 'B'      1    69     
 Birkenshaw 'A'       21   120   v.   Royd House            5    72     
 Oakenshaw 'A'        18   110   v.   Heckmondwike 'A'      8    85     
@@ -259,7 +259,7 @@ Myrtle 'A'           10   101   v.   Spen Victoria 'A'    16   114
 ------------------------------------------------------------------------------------------------------
         Mon 11th Jun                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    18   123   v.   Crowghyll 'A'         8   100     
+Littlemoor S & SC    18   123   v.   Crowghyll 'A'         8   100     
 Oakenshaw 'A'        13   114   v.   Birkenshaw 'A'       13   109     
 Royd House           14    97   v.   Eccleshill           12    91     
 Drighlington 'B'      8    81   v.   West Bradford 'A'    18   108     
@@ -293,7 +293,7 @@ Ladyhill             18   109   v.   Myrtle 'A'            8    89
 ------------------------------------------------------------------------------------------------------
         Mon 18th Jun                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Tyersal 'A'          17   107   v.   Littlemoor S &amp; SC     9    90     
+Tyersal 'A'          17   107   v.   Littlemoor S & SC     9    90     
 Crowghyll 'A'        24   125   v.   Drighlington 'B'      2    68     
 West Bradford 'A'    24   112   v.   Royd House            2    51     
 Eccleshill           18   117   v.   Oakenshaw 'A'         8    91     
@@ -327,7 +327,7 @@ Shipley Club         15   115   v.   Ladyhill             11   106
 ------------------------------------------------------------------------------------------------------
         Mon 25th Jun                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    10    89   v.   Heckmondwike 'A'     16   105     
+Littlemoor S & SC    10    89   v.   Heckmondwike 'A'     16   105     
 Tyersal 'A'          22   120   v.   Drighlington 'B'      4    74     
 Crowghyll 'A'        18   117   v.   Royd House            8    90     
 West Bradford 'A'    17   117   v.   Oakenshaw 'A'         9    95     
@@ -364,7 +364,7 @@ Myrtle 'A'           17   109   v.   Shipley Club          9    92
 Birkenshaw 'A'        7    89   v.   West Bradford 'A'    19   114     
 Oakenshaw 'A'        10    93   v.   Crowghyll 'A'        16   109     
 Royd House            7    80   v.   Tyersal 'A'          19   110     
-Drighlington 'B'      6    85   v.   Littlemoor S &amp; SC    20   114     
+Drighlington 'B'      6    85   v.   Littlemoor S & SC    20   114     
 Heckmondwike 'A'     12   109   v.   Eccleshill           14   114     
 ------------------------------------------------------------------------------------------------------
          Mon 2nd Jul                   Division 3 (City Sports)                       
@@ -396,7 +396,7 @@ Drighlington 'A'     10   105   v.   Shipley Club         16   114
 ------------------------------------------------------------------------------------------------------
          Mon 9th Jul                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    25   126   v.   Royd House            1    69     
+Littlemoor S & SC    25   126   v.   Royd House            1    69     
 Tyersal 'A'          26   126   v.   Oakenshaw 'A'         0    57     
 Crowghyll 'A'        22   120   v.   Birkenshaw 'A'        4    74     
 West Bradford 'A'    14   114   v.   Eccleshill           12   107     
@@ -434,7 +434,7 @@ Spen Victoria 'B'     7    96   v.   Clayton 'A'          19   118
 West Bradford 'A'    16   108   v.   Heckmondwike 'A'     10    99     
 Eccleshill           14   108   v.   Crowghyll 'A'        12   101     
 Birkenshaw 'A'        8    86   v.   Tyersal 'A'          18   114     
-Oakenshaw 'A'        12   107   v.   Littlemoor S &amp; SC    14   110     
+Oakenshaw 'A'        12   107   v.   Littlemoor S & SC    14   110     
 Royd House           21   125   v.   Drighlington 'B'      5    88     
 ------------------------------------------------------------------------------------------------------
         Mon 16th Jul                   Division 3 (City Sports)                       
@@ -465,7 +465,7 @@ Myrtle 'A'           18   116   v.   Asa Briggs 'B'        8    93
 ------------------------------------------------------------------------------------------------------
         Mon 23rd Jul                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    21   120   v.   Birkenshaw 'A'        5    76     
+Littlemoor S & SC    21   120   v.   Birkenshaw 'A'        5    76     
 Tyersal 'A'          18   124   v.   Eccleshill            8   104     
 Crowghyll 'A'        15   107   v.   West Bradford 'A'    11    99     
 Drighlington 'B'      4    74   v.   Oakenshaw 'A'        22   119     
@@ -501,7 +501,7 @@ Spen Victoria 'B'     8    91   v.   Asa Briggs 'B'       18   113
 ------------------------------------------------------------------------------------------------------
 Crowghyll 'A'        18   110   v.   Heckmondwike 'A'      8    88     
 West Bradford 'A'    15   102   v.   Tyersal 'A'          11    99     
-Eccleshill                      v.   Littlemoor S &amp; SC                 To Thu 2nd Aug (Rearranged)
+Eccleshill                      v.   Littlemoor S & SC                 To Thu 2nd Aug (Rearranged)
 Birkenshaw 'A'       20   116   v.   Drighlington 'B'      6    77     
 Oakenshaw 'A'        16   114   v.   Royd House           10    96     
 ------------------------------------------------------------------------------------------------------
@@ -527,7 +527,7 @@ Tyersal 'B'          12   106   v.   West Royd            14   109
 ------------------------------------------------------------------------------------------------------
          Thu 2nd Aug                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Eccleshill           24   126   v.   Littlemoor S &amp; SC     2    75     From Mon 30th Jul (Rearranged)
+Eccleshill           24   126   v.   Littlemoor S & SC     2    75     From Mon 30th Jul (Rearranged)
 
 ------------------------------------------------------------------------------------------------------
          Mon 6th Aug                     Division 1 (Thurston)                        
@@ -539,7 +539,7 @@ Myrtle 'A'           13    97   v.   Spen Victoria 'B'    13    97
 ------------------------------------------------------------------------------------------------------
          Mon 6th Aug                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    22   124   v.   West Bradford 'A'     4    79     
+Littlemoor S & SC    22   124   v.   West Bradford 'A'     4    79     
 Tyersal 'A'          14   106   v.   Crowghyll 'A'        12    98     
 Royd House           19   113   v.   Birkenshaw 'A'        7    88     
 Drighlington 'B'      6    78   v.   Eccleshill           20   112     
@@ -574,7 +574,7 @@ Ladyhill             26   126   v.   Spen Victoria 'B'     0    60
         Mon 13th Aug                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Tyersal 'A'          24   125   v.   Heckmondwike 'A'      2    65     
-Crowghyll 'A'        20   116   v.   Littlemoor S &amp; SC     6    76     
+Crowghyll 'A'        20   116   v.   Littlemoor S & SC     6    76     
 West Bradford 'A'    19   117   v.   Drighlington 'B'      7    87     
 Eccleshill                      v.   Royd House                        To Wed 15th Aug (Rearranged)
 Birkenshaw 'A'       12   106   v.   Oakenshaw 'A'        14   108     
@@ -612,7 +612,7 @@ Myrtle 'A'           16   101   v.   Ladyhill             10    92
 ------------------------------------------------------------------------------------------------------
         Mon 20th Aug                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    15   104   v.   Tyersal 'A'          11   100     
+Littlemoor S & SC    15   104   v.   Tyersal 'A'          11   100     
 Oakenshaw 'A'        12   102   v.   Eccleshill           14   103     
 Royd House           16    95   v.   West Bradford 'A'    10    83     
 Drighlington 'B'      4    69   v.   Crowghyll 'A'        22   114     
@@ -660,7 +660,7 @@ West Royd             6    91   v.   Bowling 'B'          20   124
   2.  Crowghyll 'A'        18   13    5    296
   3.  Heckmondwike 'A'     18   13    5    289
   4.  West Bradford 'A'    18   12    6    260
-  5.  Littlemoor S &amp; SC    18   10    8    255
+  5.  Littlemoor S & SC    18   10    8    255
   6.  Eccleshill           18   10    7    250
   7.  Oakenshaw 'A'        18    5   12    202
   8.  Royd House           18    7   11    182
@@ -797,7 +797,7 @@ Rod Fox            11  Peter Simpson        21
          Points:    3            Points:    23
 
 Division 2 (Robert Bl        Mon 9th Apr
-  Heckmondwike 'A'        Littlemoor S &amp; SC
+  Heckmondwike 'A'        Littlemoor S & SC
 Gerald Bromley     21  Terri Durrans        11
 Robert Sharp       20  Angela Carter        21
 Roy Carter 'A'     21  Graham Swithenbank    5
@@ -951,7 +951,7 @@ David Bland        21  Steve Morris 'A'     20
          Points:   16            Points:    10
 
 Division 2 (Robert Bl       Mon 16th Apr
-  Littlemoor S &amp; SC       Drighlington 'B'
+  Littlemoor S & SC       Drighlington 'B'
 David Burns        21  Dianne Hoole          7
 Terri Durrans      21  Rod Fox              13
 Angela Carter      21  Mick Hopkins          6
@@ -1193,7 +1193,7 @@ Gordon Akroyd 'A'  12  Pam Lindley          21
          Points:    6            Points:    20
 
 Division 2 (Robert Bl       Mon 23rd Apr
-     Royd House           Littlemoor S &amp; SC
+     Royd House           Littlemoor S & SC
 Cliff White        21  Billy Thorpe         13
 David Hogg         21  Philip A Richards     9
 Gordan Evans       21  David Burns          15
@@ -1369,7 +1369,7 @@ Michael Upton      21  David Scott          20
          Points:   13            Points:    13
 
 Division 2 (Robert Bl       Mon 30th Apr
-  Littlemoor S &amp; SC         Oakenshaw 'A'
+  Littlemoor S & SC         Oakenshaw 'A'
 Angela Carter      21  Marian Firth 'A'     17
 Billy Thorpe       11  Pat Priestley 'A'    21
 Terri Durrans      21  David Hammond        15
@@ -1754,7 +1754,7 @@ Peter Hepworth     21  Mark Pearson         17
          Points:   20            Points:     6
 
 Division 2 (Robert Bl       Mon 21st May
-  Littlemoor S &amp; SC          Eccleshill
+  Littlemoor S & SC          Eccleshill
 Billy Thorpe       21  Ken Wilson            9
 David Burns        21  Peter Howroyd         7
 Angela Carter      21  Jim Head              7
@@ -1919,7 +1919,7 @@ Joan Coop          17  Edgar Rhodes         21
          Points:   19            Points:     7
 
 Division 2 (Robert Bl       Mon 28th May
-   Birkenshaw 'A'         Littlemoor S &amp; SC
+   Birkenshaw 'A'         Littlemoor S & SC
 Richard Hunter 'A' 21  Philip A Richards    20
 Janet Hunter       21  Terri Durrans        11
 Eddie Mordue 'A'   14  David Burns          21
@@ -1985,7 +1985,7 @@ Andrew Matthews    21  Peter Simpson        10
          Points:   17            Points:     9
 
 Division 2 (Robert Bl        Mon 4th Jun
-  West Bradford 'A'       Littlemoor S &amp; SC
+  West Bradford 'A'       Littlemoor S & SC
 Dennis Thorpe      21  Kath Mazurke         11
 Pat Edden          21  Terri Durrans        14
 Val Riley          21  Billy Thorpe         17
@@ -2172,7 +2172,7 @@ James Pollard      21  Garry Walker         17
          Points:   10            Points:    16
 
 Division 2 (Robert Bl       Mon 11th Jun
-  Littlemoor S &amp; SC         Crowghyll 'A'
+  Littlemoor S & SC         Crowghyll 'A'
 Billy Thorpe       21  Tony Southern        19
 Philip A Richards  21  Sylvia Halliday 'A'  12
 David Burns        20  Trevor Hodgson       21
@@ -2370,7 +2370,7 @@ Steve Cooper       21  Michael Upton        17
          Points:   18            Points:     8
 
 Division 2 (Robert Bl       Mon 18th Jun
-     Tyersal 'A'          Littlemoor S &amp; SC
+     Tyersal 'A'          Littlemoor S & SC
 Wendy Shimbles      9  David Burns          21
 Peter Simpson      21  Billy Thorpe         17
 Pam Lindley        21  Terri Durrans         8
@@ -2568,7 +2568,7 @@ Matthew Jacques    21  Malcolm Fowler       15
          Points:   15            Points:    11
 
 Division 2 (Robert Bl       Mon 25th Jun
-  Littlemoor S &amp; SC       Heckmondwike 'A'
+  Littlemoor S & SC       Heckmondwike 'A'
 Angela Carter       6  Gerald Bromley       21
 Billy Thorpe       21  Eddie Temple         16
 David Burns        21  Robert Sharp          7
@@ -2799,7 +2799,7 @@ David Hogg         21  Peter Simpson        12
          Points:    7            Points:    19
 
 Division 2 (Robert Bl        Mon 2nd Jul
-  Drighlington 'B'        Littlemoor S &amp; SC
+  Drighlington 'B'        Littlemoor S & SC
 Richard Jones      21  Angela Carter         9
 Mick Hopkins       11  Terri Durrans        21
 Rod Fox             9  Kath Mazurke         21
@@ -2975,7 +2975,7 @@ David Scott        21  David Bland          13
          Points:   10            Points:    16
 
 Division 2 (Robert Bl        Mon 9th Jul
-  Littlemoor S &amp; SC          Royd House
+  Littlemoor S & SC          Royd House
 David Burns        21  Cliff White          10
 Philip A Richards  21  Gordan Evans          9
 Graham Swithenbank 21  Jillian Winter        6
@@ -3217,7 +3217,7 @@ Bill Lovett        20  John Smith           21
          Points:    8            Points:    18
 
 Division 2 (Robert Bl       Mon 16th Jul
-    Oakenshaw 'A'         Littlemoor S &amp; SC
+    Oakenshaw 'A'         Littlemoor S & SC
 Marian Firth 'A'   21  Terri Durrans        13
 Paul Tillyer       16  Philip A Richards    21
 John Garside       21  Angela Carter        16
@@ -3382,7 +3382,7 @@ James Pollard      16  Gary Woodhead        21
          Points:   18            Points:     8
 
 Division 2 (Robert Bl       Mon 23rd Jul
-  Littlemoor S &amp; SC        Birkenshaw 'A'
+  Littlemoor S & SC        Birkenshaw 'A'
 Angela Carter      21  Paul Kitson 'A'       4
 Graham Swithenbank 16  Laurie Taylor        21
 Philip A Richards  21  David Kent            8
@@ -3734,7 +3734,7 @@ Edgar Rhodes       21  Colin Pontefract     16
          Points:   12            Points:    14
 
 Division 2 (Robert Bl        Thu 2nd Aug
-     Eccleshill           Littlemoor S &amp; SC
+     Eccleshill           Littlemoor S & SC
 Ken Wilson         21  Graham Swithenbank   12
 Jim Head           21  Philip Thornton      20
 Peter Howroyd      21  Philip A Richards    12
@@ -3789,7 +3789,7 @@ Steve Morris 'A'   21  Jenny Miller          7
          Points:   13            Points:    13
 
 Division 2 (Robert Bl        Mon 6th Aug
-  Littlemoor S &amp; SC       West Bradford 'A'
+  Littlemoor S & SC       West Bradford 'A'
 Alan Mazurke       21  Kevin Buckley         9
 Philip Thornton    21  Val Riley            13
 Angela Carter      19  John Shoesmith       21
@@ -3998,7 +3998,7 @@ Peter Simpson      20  Tasawir Hussain 'A'  21
          Points:   24            Points:     2
 
 Division 2 (Robert Bl       Mon 13th Aug
-    Crowghyll 'A'         Littlemoor S &amp; SC
+    Crowghyll 'A'         Littlemoor S & SC
 Jeffrey Townend    14  Philip Thornton      21
 Trevor Hodgson     21  Billy Thorpe         15
 Alan Haley         21  Kath Mazurke          4
@@ -4185,7 +4185,7 @@ Peter Hepworth     10  Steve Cooper         21
          Points:   16            Points:    10
 
 Division 2 (Robert Bl       Mon 20th Aug
-  Littlemoor S &amp; SC          Tyersal 'A'
+  Littlemoor S & SC          Tyersal 'A'
 Angela Carter      13  Philip Wilsdon       21
 Kath Mazurke       21  Simon Metcalfe       16
 Graham Swithenbank 21  John Smith           10

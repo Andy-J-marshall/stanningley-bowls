@@ -1,4 +1,4 @@
-=== Leeds &amp; District (Thursday Over 55s) 2014
+=== Leeds & District (Thursday Over 55s) 2014
 === League Report
 
 
@@ -7,7 +7,7 @@
          Thu 10th Apr                            Division 1                
 ----------------------------------------------------------------------------
 West Royd Pk'A'        10   168   v.   New Wortley             0   118     
-Burley Pk               7   150   v.   The Hollies S &amp; SC      3   127     
+Burley Pk               7   150   v.   The Hollies S & SC      3   127     
 Scatcherd Pk A          3   129   v.   Churwell Pk             7   148     
 Cranmore                3   122   v.   Middleton Community     7   133     
 Gildersome B            3   110   v.   Bramley Pk A            7   148     
@@ -23,7 +23,7 @@ Bramley Pk B            6   129   v.   Western Flatts B        4   117
 ----------------------------------------------------------------------------
          Thu 17th Apr                            Division 1                
 ----------------------------------------------------------------------------
-The Hollies S &amp; SC      3   119   v.   West Royd Pk'A'         7   135     
+The Hollies S & SC      3   119   v.   West Royd Pk'A'         7   135     
 Churwell Pk             1   122   v.   Burley Pk               9   162     
 Bramley Pk A            9   161   v.   Cranmore                1    80     
 New Wortley             7   146   v.   Gildersome B            3   127     
@@ -44,7 +44,7 @@ West Royd Pk'A'         7   153   v.   Churwell Pk             3   123
 Scatcherd Pk A          5   133   v.   Middleton Community     5   136     
 Hunslet Moor            3   109   v.   Bramley Pk A            7   138     
 Cranmore                9   165   v.   New Wortley             1    94     
-Gildersome B            4   128   v.   The Hollies S &amp; SC      6   152     
+Gildersome B            4   128   v.   The Hollies S & SC      6   152     
 ----------------------------------------------------------------------------
          Thu 24th Apr                            Division 2                
 ----------------------------------------------------------------------------
@@ -60,7 +60,7 @@ Bramley Pk B            7   144   v.   Cross Flatts Pk B       3   124
 Middleton Community     2   125   v.   Burley Pk               8   155     
 Bramley Pk A            7   147   v.   Scatcherd Pk A          3   128     
 New Wortley             6   143   v.   Hunslet Moor            4   128     
-The Hollies S &amp; SC      7   146   v.   Cranmore                3   109     
+The Hollies S & SC      7   146   v.   Cranmore                3   109     
 Churwell Pk             8   142   v.   Gildersome B            2   108     
 ----------------------------------------------------------------------------
           Thu 1st May                            Division 2                
@@ -77,7 +77,7 @@ Scatcherd Pk C          7   139   v.   Bramley Pk B            3   135
 West Royd Pk'A'         7   155   v.   Middleton Community     3   123     
 Burley Pk               8   153   v.   Bramley Pk A            2   111     
 Scatcherd Pk A          3   133   v.   New Wortley             7   137     
-Hunslet Moor            3   130   v.   The Hollies S &amp; SC      7   150     
+Hunslet Moor            3   130   v.   The Hollies S & SC      7   150     
 Cranmore                4   134   v.   Churwell Pk             6   149     
 ----------------------------------------------------------------------------
           Thu 8th May                            Division 2                
@@ -93,7 +93,7 @@ Bramley Pk B            4   124   v.   Pudsey Pk B             6   126
 ----------------------------------------------------------------------------
 Bramley Pk A            8   159   v.   West Royd Pk'A'         2   124     
 New Wortley             2   100   v.   Burley Pk               8   155     
-The Hollies S &amp; SC      3   133   v.   Scatcherd Pk A          7   135     
+The Hollies S & SC      3   133   v.   Scatcherd Pk A          7   135     
 Churwell Pk             8   143   v.   Hunslet Moor            2   103     
 Middleton Community    10   168   v.   Gildersome B            0    97     
 ----------------------------------------------------------------------------
@@ -112,7 +112,7 @@ West Royd Pk'A'         9   159   v.   Gildersome B            1    92
 Burley Pk               7   151   v.   Cranmore                3   137     
 Scatcherd Pk A          7   159   v.   Hunslet Moor            3   117     
 Bramley Pk A           10   168   v.   New Wortley             0   104     
-Middleton Community     7   145   v.   The Hollies S &amp; SC      3   141     
+Middleton Community     7   145   v.   The Hollies S & SC      3   141     
 ----------------------------------------------------------------------------
          Thu 22nd May                            Division 2                
 ----------------------------------------------------------------------------
@@ -145,7 +145,7 @@ Scatcherd Pk C          2   124   v.   Western Flatts B        8   149
 West Royd Pk'A'         9   163   v.   Hunslet Moor            1    85     
 Scatcherd Pk A          3   126   v.   Burley Pk               7   138     
 Cranmore                5   148   v.   Gildersome B            5   136     
-The Hollies S &amp; SC      6   145   v.   Churwell Pk             4   135     
+The Hollies S & SC      6   145   v.   Churwell Pk             4   135     
 Bramley Pk A            9   165   v.   Middleton Community     1   100     
 ----------------------------------------------------------------------------
           Thu 5th Jun                            Division 2                
@@ -163,7 +163,7 @@ Scatcherd Pk A          3   140   v.   West Royd Pk'A'         7   149
 Burley Pk               9   158   v.   Gildersome B            1   116     
 Hunslet Moor            7   139   v.   Cranmore                3   130     
 New Wortley             7   145   v.   Churwell Pk             3   131     
-Bramley Pk A            6   145   v.   The Hollies S &amp; SC      4   130     
+Bramley Pk A            6   145   v.   The Hollies S & SC      4   130     
 ----------------------------------------------------------------------------
          Thu 12th Jun                            Division 2                
 ----------------------------------------------------------------------------
@@ -179,7 +179,7 @@ Western Flatts B        9   165   v.   Cross Flatts Pk B       1    78
 West Royd Pk'A'         7   149   v.   Burley Pk               3   129     
 Cranmore                3   129   v.   Scatcherd Pk A          7   151     
 Gildersome B            7   135   v.   Hunslet Moor            3   126     
-The Hollies S &amp; SC      8   158   v.   New Wortley             2   117     
+The Hollies S & SC      8   158   v.   New Wortley             2   117     
 Churwell Pk             7   151   v.   Middleton Community     3   124     
 ----------------------------------------------------------------------------
          Thu 19th Jun                            Division 2                
@@ -194,7 +194,7 @@ Pudsey Pk B             4   119   v.   Western Flatts B        6   155
           Thu 3rd Jul                            Division 1                
 ----------------------------------------------------------------------------
 New Wortley             3   121   v.   West Royd Pk'A'         7   147     
-The Hollies S &amp; SC      5   143   v.   Burley Pk               5   148     
+The Hollies S & SC      5   143   v.   Burley Pk               5   148     
 Churwell Pk             9   164   v.   Scatcherd Pk A          1    99     
 Middleton Community     7   148   v.   Cranmore                3   112     
 Bramley Pk A            8   151   v.   Gildersome B            2   108     
@@ -210,7 +210,7 @@ Western Flatts B       10   168   v.   Bramley Pk B            0    90
 ----------------------------------------------------------------------------
          Thu 17th Jul                            Division 1                
 ----------------------------------------------------------------------------
-West Royd Pk'A'         3   144   v.   The Hollies S &amp; SC      7   145     
+West Royd Pk'A'         3   144   v.   The Hollies S & SC      7   145     
 Burley Pk               7   144   v.   Churwell Pk             3   128     
 Hunslet Moor            5   140   v.   Middleton Community     5   137     
 Cranmore                6   142   v.   Bramley Pk A            4   122     
@@ -231,7 +231,7 @@ Churwell Pk             3   145   v.   West Royd Pk'A'         7   154
 Middleton Community     8   154   v.   Scatcherd Pk A          2   128     
 Bramley Pk A           10   168   v.   Hunslet Moor            0    81     
 New Wortley             8   152   v.   Cranmore                2   115     
-The Hollies S &amp; SC      7   140   v.   Gildersome B            3   137     
+The Hollies S & SC      7   140   v.   Gildersome B            3   137     
 ----------------------------------------------------------------------------
          Thu 24th Jul                            Division 2                
 ----------------------------------------------------------------------------
@@ -247,7 +247,7 @@ Cross Flatts Pk B       4   114   v.   Bramley Pk B            6   125
 Burley Pk               8   144   v.   Middleton Community     2   114     
 Scatcherd Pk A          8   162   v.   Bramley Pk A            2   112     
 Hunslet Moor            7   136   v.   New Wortley             3   131     
-Cranmore                7   161   v.   The Hollies S &amp; SC      3   134     
+Cranmore                7   161   v.   The Hollies S & SC      3   134     
 Gildersome B            6   154   v.   Churwell Pk             4   140     
 ----------------------------------------------------------------------------
          Thu 31st Jul                            Division 2                
@@ -264,7 +264,7 @@ Bramley Pk B            7   140   v.   Scatcherd Pk C          3   118
 Middleton Community     4   136   v.   West Royd Pk'A'         6   140     
 Bramley Pk A            3   119   v.   Burley Pk               7   131     
 New Wortley             5   129   v.   Scatcherd Pk A          5   126     
-The Hollies S &amp; SC     10   168   v.   Hunslet Moor            0    84     
+The Hollies S & SC     10   168   v.   Hunslet Moor            0    84     
 Churwell Pk             9   167   v.   Cranmore                1   103     
 ----------------------------------------------------------------------------
           Thu 7th Aug                            Division 2                
@@ -280,7 +280,7 @@ Pudsey Pk B             7   147   v.   Bramley Pk B            3   135
 ----------------------------------------------------------------------------
 West Royd Pk'A'         8   153   v.   Bramley Pk A            2    91     
 Burley Pk               7   147   v.   New Wortley             3    98     
-Scatcherd Pk A          7   161   v.   The Hollies S &amp; SC      3   122     
+Scatcherd Pk A          7   161   v.   The Hollies S & SC      3   122     
 Hunslet Moor            6   127   v.   Churwell Pk             4   124     
 Gildersome B            2   133   v.   Middleton Community     8   153     
 ----------------------------------------------------------------------------
@@ -299,7 +299,7 @@ Gildersome B            3   132   v.   West Royd Pk'A'         7   149
 Cranmore                9   157   v.   Burley Pk               1   126     
 Hunslet Moor            3   118   v.   Scatcherd Pk A          7   146     
 New Wortley             7   143   v.   Bramley Pk A            3   123     
-The Hollies S &amp; SC      2   110   v.   Middleton Community     8   153     
+The Hollies S & SC      2   110   v.   Middleton Community     8   153     
 ----------------------------------------------------------------------------
          Thu 28th Aug                            Division 2                
 ----------------------------------------------------------------------------
@@ -332,7 +332,7 @@ Western Flatts B       10   168   v.   Scatcherd Pk C          0    80
 Hunslet Moor            3   128   v.   West Royd Pk'A'         7   146     
 Burley Pk               7   151   v.   Scatcherd Pk A          3   117     
 Gildersome B            8   149   v.   Cranmore                2   122     
-Churwell Pk             7   137   v.   The Hollies S &amp; SC      3   127     
+Churwell Pk             7   137   v.   The Hollies S & SC      3   127     
 Middleton Community     8   159   v.   Bramley Pk A            2   123     
 ----------------------------------------------------------------------------
          Thu 11th Sep                            Division 2                
@@ -350,7 +350,7 @@ West Royd Pk'A'         9   163   v.   Scatcherd Pk A          1    95
 Gildersome B            4   120   v.   Burley Pk               6   131     
 Cranmore                7   147   v.   Hunslet Moor            3   130     
 Churwell Pk             7   163   v.   New Wortley             3   111     
-The Hollies S &amp; SC      7   141   v.   Bramley Pk A            3   122     
+The Hollies S & SC      7   141   v.   Bramley Pk A            3   122     
 ----------------------------------------------------------------------------
          Thu 18th Sep                            Division 2                
 ----------------------------------------------------------------------------
@@ -366,7 +366,7 @@ Cross Flatts Pk B       1   101   v.   Western Flatts B        9   156
 Burley Pk               8   147   v.   West Royd Pk'A'         2   105     
 Scatcherd Pk A         10   168   v.   Cranmore                0    73     
 Hunslet Moor            7   153   v.   Gildersome B            3   152     
-New Wortley             5   137   v.   The Hollies S &amp; SC      5   133     
+New Wortley             5   137   v.   The Hollies S & SC      5   133     
 Middleton Community     5   141   v.   Churwell Pk             5   137     
 ----------------------------------------------------------------------------
          Thu 25th Sep                            Division 2                
@@ -389,7 +389,7 @@ Cross Flatts Pk A       7   153   v.   Armley Pk B             3   138
   4.  Bramley Pk A           20   11    9    112
   5.  Churwell Pk            20   10    9    108
   6.  Scatcherd Pk A         20    9    9    102
-  7.  The Hollies S &amp; SC     20    9    9    102
+  7.  The Hollies S & SC     20    9    9    102
   8.  New Wortley            20    6   12     80
   9.  Cranmore               20    5   14     72
  10.  Hunslet Moor           20    4   15     68
@@ -427,7 +427,7 @@ Ken Lee              21  Keith Anderson      13
           Points:    10           Points:     0
 
       Division 1              Thu 10th Apr
-       Burley Pk           The Hollies S &amp; SC
+       Burley Pk           The Hollies S & SC
 Cliff Roy            12  Doreen Hogg         21
 Keith Clapham        21  Ken Watkin          10
 Keith Fleming        21  John Lambert        15
@@ -544,7 +544,7 @@ Jim Gray             21  Barry Brown          3
           Points:     6           Points:     4
 
       Division 1              Thu 17th Apr
-  The Hollies S &amp; SC        West Royd Pk'A'
+  The Hollies S & SC        West Royd Pk'A'
 June Lambert         21  John Hainsworth     13
 Josie M Burden       21  Joan Coop           11
 Barry Lee            21  Alan Layfield        6
@@ -726,7 +726,7 @@ Harry Gillett        21  Syd Elcock           3
           Points:     9           Points:     1
 
       Division 1              Thu 24th Apr
-     Gildersome B          The Hollies S &amp; SC
+     Gildersome B          The Hollies S & SC
 David Rawson          8  Josie M Burden      21
 Ron Burton           21  Cedric Briggs       16
 Barry Ainsley         5  John Lambert        21
@@ -843,7 +843,7 @@ Harry Thurlow        20  David Howard        21
           Points:     6           Points:     4
 
       Division 1              Thu 1st May
-  The Hollies S &amp; SC            Cranmore
+  The Hollies S & SC            Cranmore
 June Lambert         21  Hazel Cookson       18
 Barry Lee            21  Keith Lambert        8
 Alex McCartney       21  Gordon Bowes        10
@@ -973,7 +973,7 @@ Malcolm Stroud       16  Harry Thurlow       21
           Points:     3           Points:     7
 
       Division 1              Thu 8th May
-     Hunslet Moor          The Hollies S &amp; SC
+     Hunslet Moor          The Hollies S & SC
 Keith Stanton        13  Barry Hogg          21
 Beryl Wainman         7  Josie M Burden      21
 Eddie Harrison       21  June Lambert         9
@@ -1090,7 +1090,7 @@ Robert Hackett        8  Kevin Gilroy        21
           Points:     2           Points:     8
 
       Division 1              Thu 15th May
-  The Hollies S &amp; SC         Scatcherd Pk A
+  The Hollies S & SC         Scatcherd Pk A
 Cedric Briggs        17  Lawrie Bairstow     21
 Cliff Legthorn        8  Anthony Smith       21
 Josie M Burden       21  Malcolm Stroud      10
@@ -1246,7 +1246,7 @@ Eric Ralph           21  Joe Aylesbury       12
           Points:    10           Points:     0
 
       Division 1              Thu 22nd May
-  Middleton Community      The Hollies S &amp; SC
+  Middleton Community      The Hollies S & SC
 Hazel Shaw           21  Doreen Hogg         19
 Peter Griffin        10  Barry Lee           21
 Christine Glynne     21  Alex McCartney      15
@@ -1493,7 +1493,7 @@ Gordon Bowes         15  Trevor Hardwick     21
           Points:     5           Points:     5
 
       Division 1              Thu 5th Jun
-  The Hollies S &amp; SC          Churwell Pk
+  The Hollies S & SC          Churwell Pk
 Josie M Burden       20  Keith Spruce        21
 Cedric Briggs        17  Doreen Hunter       21
 Barry Hogg           21  Colin Booth          7
@@ -1636,7 +1636,7 @@ Harry Thurlow        21  John Bilbie         10
           Points:     7           Points:     3
 
       Division 1              Thu 12th Jun
-     Bramley Pk A          The Hollies S &amp; SC
+     Bramley Pk A          The Hollies S & SC
 Peter Ritchie        21  Barry Hogg          11
 Charles Spratt       16  John Lambert        21
 Donald Foster        16  Cedric Briggs       21
@@ -1753,7 +1753,7 @@ Ron Burton           21  Bill Lupton         10
           Points:     7           Points:     3
 
       Division 1              Thu 19th Jun
-  The Hollies S &amp; SC          New Wortley
+  The Hollies S & SC          New Wortley
 June Lambert         21  Joe Aylesbury       15
 Josie M Burden       21  Joan Keen            5
 Doreen Hogg          18  Keith Anderson      21
@@ -1857,7 +1857,7 @@ Keith Anderson       21  David Beardsworth   18
           Points:     3           Points:     7
 
       Division 1              Thu 3rd Jul
-  The Hollies S &amp; SC           Burley Pk
+  The Hollies S & SC           Burley Pk
 John Lambert         21  Gordon Summers      19
 Josie M Burden       16  Kevin Gilroy        21
 Doreen Hogg          17  Keith Clapham       21
@@ -1974,7 +1974,7 @@ Les Brook            21  Jim Gray            12
           Points:    10           Points:     0
 
       Division 1              Thu 17th Jul
-    West Royd Pk'A'        The Hollies S &amp; SC
+    West Royd Pk'A'        The Hollies S & SC
 Geoff Lacey          21  June Lambert        19
 Peter Mylan          16  Cedric Briggs       21
 Peter Britton        21  Barry Hogg          14
@@ -2156,7 +2156,7 @@ Keith Anderson       21  Ray Watson          11
           Points:     8           Points:     2
 
       Division 1              Thu 24th Jul
-  The Hollies S &amp; SC          Gildersome B
+  The Hollies S & SC          Gildersome B
 Terry Nicholls       13  Frank Tempest       21
 Josie M Burden       12  Patricia Cooper     21
 June Lambert         21  David Charlesworth  12
@@ -2273,7 +2273,7 @@ Beryl Wainman        21  Keith Anderson      19
           Points:     7           Points:     3
 
       Division 1              Thu 31st Jul
-       Cranmore            The Hollies S &amp; SC
+       Cranmore            The Hollies S & SC
 Don Cunningham       19  Barry Hogg          21
 Ray Watson           18  John Lambert        21
 Peter Carr           21  Alex McCartney      14
@@ -2403,7 +2403,7 @@ Robert Hackett       21  Margaret Saunders    8
           Points:     5           Points:     5
 
       Division 1              Thu 7th Aug
-  The Hollies S &amp; SC          Hunslet Moor
+  The Hollies S & SC          Hunslet Moor
 Terry Nicholls       21  Rose Stewart        16
 Josie M Burden       21  Roy Wainman         11
 Doreen Hogg          21  Keith Stanton        3
@@ -2520,7 +2520,7 @@ Ken Hamilton         15  Robert Hackett      21
           Points:     7           Points:     3
 
       Division 1              Thu 21st Aug
-    Scatcherd Pk A         The Hollies S &amp; SC
+    Scatcherd Pk A         The Hollies S & SC
 Chrirstine Smith     18  June Lambert        21
 Lynn Firth           21  Barry Lee           17
 Margaret Saunders    18  Alex McCartney      21
@@ -2676,7 +2676,7 @@ Keith Anderson       14  Kevin Morley        21
           Points:     7           Points:     3
 
       Division 1              Thu 28th Aug
-  The Hollies S &amp; SC      Middleton Community
+  The Hollies S & SC      Middleton Community
 Cedric Briggs        20  Rose Thornton       21
 Doreen Hogg           9  Steven Ballance     21
 June Lambert         10  Gordon Monk         21
@@ -2923,7 +2923,7 @@ Frank Tempest        21  Monica Buckroyd     15
           Points:     8           Points:     2
 
       Division 1              Thu 11th Sep
-      Churwell Pk          The Hollies S &amp; SC
+      Churwell Pk          The Hollies S & SC
 John Bilbie          21  Barry Lee            6
 Doreen Hunter         9  Barry Hogg          21
 Barbara Ramsden      12  Josie M Burden      21
@@ -3066,7 +3066,7 @@ Ron Spruce           21  Keith Anderson       6
           Points:     7           Points:     3
 
       Division 1              Thu 18th Sep
-  The Hollies S &amp; SC          Bramley Pk A
+  The Hollies S & SC          Bramley Pk A
 John Lambert         21  Jim Walker          15
 Doreen Hogg          21  Hugh Callard        11
 Terry Nicholls        1  Barry Tebbs         21
@@ -3183,7 +3183,7 @@ Keith Stanton        21  Ron Burton          17
           Points:     7           Points:     3
 
       Division 1              Thu 25th Sep
-      New Wortley          The Hollies S &amp; SC
+      New Wortley          The Hollies S & SC
 Robert Hackett        9  Cliff Legthorn      21
 Paul Howarth         16  June Lambert        21
 Joan Keen            12  Josie M Burden      21

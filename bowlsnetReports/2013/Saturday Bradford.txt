@@ -8,7 +8,7 @@
 ----------------------------------------------------------------------------------------
 South Leeds Cons             12   178   v.   Eccleshill C                 18   191     
 Harold Park                  17   166   v.   Harold Club                  13   161     
-Hipperholme &amp; Lightcliffe    20   181   v.   Asa Briggs B                 10   147     
+Hipperholme & Lightcliffe    20   181   v.   Asa Briggs B                 10   147     
 Royd House                   13   173   v.   Wyke B                       17   181     
 Rufford B                    19   189   v.   Peel A                       11   155     
 Cleckheaton Moorend          12   157   v.   Clayton B                    18   166     
@@ -67,14 +67,14 @@ Rufford A                    29   205   v.   Hove Edge A                   1   1
 Drighlington A               18   182   v.   Queensbury A                 12   165     
 Ladyhill B                   26   194   v.   Blakeborough Albion           4   117     
 Horsforth Woodside A         26   206   v.   Crowghyll A                   4   138     
-Wibsey A                     22   195   v.   Hollies S &amp; SC                8   143     
+Wibsey A                     22   195   v.   Hollies S & SC                8   143     
 ----------------------------------------------------------------------------------------
             Sat 20th Apr                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 South Leeds Cons             27   210   v.   Rufford B                     3   145     
 Wyke B                       16   168   v.   Peel A                       14   159     
 Harold Park                  13   158   v.   Eccleshill C                 17   175     
-Hipperholme &amp; Lightcliffe    17   184   v.   Royd House                   13   166     
+Hipperholme & Lightcliffe    17   184   v.   Royd House                   13   166     
 Clayton B                    28   195   v.   Harold Club                   2   102     
 Cleckheaton Moorend          15   174   v.   Asa Briggs B                 15   176     
 ----------------------------------------------------------------------------------------
@@ -129,7 +129,7 @@ Littlemoor B          10   165   v.   Rufford A                    20   186
 ----------------------------------------------------------------------------------------
             Sat 27th Apr                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
-Hollies S &amp; SC               16   169   v.   Hightown                     14   159     
+Hollies S & SC               16   169   v.   Hightown                     14   159     
 Crowghyll A                  14   182   v.   Ladyhill B                   16   183     
 Blakeborough Albion           7   128   v.   Drighlington A               23   188     
 Queensbury A                 17   186   v.   Wibsey A                     13   169     
@@ -137,7 +137,7 @@ Queensbury A                 17   186   v.   Wibsey A                     13   1
             Sat 27th Apr                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 Asa Briggs B                 16   187   v.   Clayton B                    14   172     
-Harold Club                  17   176   v.   Hipperholme &amp; Lightcliffe    13   159     
+Harold Club                  17   176   v.   Hipperholme & Lightcliffe    13   159     
 Royd House                   15   166   v.   Harold Park                  15   163     
 Eccleshill C                  9   130   v.   Wyke B                       21   179     
 Peel A                       24   185   v.   South Leeds Cons              6   118     
@@ -194,7 +194,7 @@ Littlemoor B          14   168   v.   Whitkirk                     16   172
 ----------------------------------------------------------------------------------------
             Sat 11th May                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
-Ladyhill B                   18   179   v.   Hollies S &amp; SC               12   153     
+Ladyhill B                   18   179   v.   Hollies S & SC               12   153     
 Horsforth Woodside A         22   190   v.   Wibsey A                      8   150     
 Blakeborough Albion          11   141   v.   Crowghyll A                  19   164     
 Queensbury A                 18   177   v.   Hightown                     12   160     
@@ -206,7 +206,7 @@ Wyke B                       20   188   v.   Asa Briggs B                 10   1
 Harold Park                  17   175   v.   Clayton B                    13   158     
 Peel A                       21   194   v.   Eccleshill C                  9   163     
 Rufford B                    19   170   v.   Royd House                   11   144     
-Cleckheaton Moorend          18   187   v.   Hipperholme &amp; Lightcliffe    12   167     
+Cleckheaton Moorend          18   187   v.   Hipperholme & Lightcliffe    12   167     
 ----------------------------------------------------------------------------------------
             Sat 11th May                              Division 5 - Haigh               
 ----------------------------------------------------------------------------------------
@@ -261,12 +261,12 @@ Greengates A                 26   202   v.   Littlemoor B           4   141
 ----------------------------------------------------------------------------------------
 Hightown                     15   171   v.   Horsforth Woodside A         15   180     
 Wibsey A                     24   205   v.   Ladyhill B                    6   159     
-Hollies S &amp; SC               16   185   v.   Drighlington A               14   185     
+Hollies S & SC               16   185   v.   Drighlington A               14   185     
 Crowghyll A                  23   182   v.   Queensbury A                  7   131     
 ----------------------------------------------------------------------------------------
             Sat 18th May                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
-Hipperholme &amp; Lightcliffe    17   164   v.   Harold Park                  13   156     
+Hipperholme & Lightcliffe    17   164   v.   Harold Park                  13   156     
 Clayton B                    14   159   v.   Wyke B                       16   160     
 Asa Briggs B                 26   199   v.   South Leeds Cons              4   137     
 Harold Club                  18   179   v.   Rufford B                    12   164     
@@ -327,12 +327,12 @@ Wyke A                       27   205   v.   Littlemoor B           3   132
 Horsforth Woodside A         24   197   v.   Ladyhill B                    6   141     
 Hightown                     14   173   v.   Drighlington A               16   176     
 Wibsey A                     29   210   v.   Blakeborough Albion           1   126     
-Hollies S &amp; SC               19   176   v.   Crowghyll A                  11   152     
+Hollies S & SC               19   176   v.   Crowghyll A                  11   152     
 ----------------------------------------------------------------------------------------
              Sat 8th Jun                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 Harold Park                  10   151   v.   Wyke B                       20   182     
-Hipperholme &amp; Lightcliffe    17   176   v.   South Leeds Cons             13   164     
+Hipperholme & Lightcliffe    17   176   v.   South Leeds Cons             13   164     
 Clayton B                    25   196   v.   Rufford B                     5   132     
 Asa Briggs B                 30   210   v.   Peel A                        0   116     
 Harold Club                  21   186   v.   Eccleshill C                  9   143     
@@ -391,13 +391,13 @@ Littlemoor B          21   180   v.   Cranmore                      9   149
 ----------------------------------------------------------------------------------------
 Drighlington A               22   194   v.   Wibsey A                      8   154     
 Ladyhill B                   20   187   v.   Hightown                     10   164     
-Blakeborough Albion          10   138   v.   Hollies S &amp; SC               20   179     
+Blakeborough Albion          10   138   v.   Hollies S & SC               20   179     
 Queensbury A                 10   155   v.   Horsforth Woodside A         20   180     
 ----------------------------------------------------------------------------------------
             Sat 15th Jun                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 South Leeds Cons             18   185   v.   Clayton B                    12   172     
-Wyke B                       12   162   v.   Hipperholme &amp; Lightcliffe    18   179     
+Wyke B                       12   162   v.   Hipperholme & Lightcliffe    18   179     
 Eccleshill C                 21   188   v.   Royd House                    9   161     
 Peel A                       20   190   v.   Harold Club                  10   165     
 Rufford B                    19   188   v.   Asa Briggs B                 11   166     
@@ -439,7 +439,7 @@ Lister                        5    98   v.   Bowling B                    23   1
             Sat 22nd Jun                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 Harold Park                  20   195   v.   Peel A                       10   153     
-Hipperholme &amp; Lightcliffe    27   210   v.   Eccleshill C                  3   149     
+Hipperholme & Lightcliffe    27   210   v.   Eccleshill C                  3   149     
 Harold Club                  17   185   v.   Asa Briggs B                 13   174     
 Royd House                   16   180   v.   Clayton B                    14   175     
 Rufford B                    16   175   v.   Wyke B                       14   169     
@@ -499,13 +499,13 @@ Hove Edge A                  23   201   v.   Littlemoor B           7   146
 Ladyhill B                   14   173   v.   Drighlington A               16   176     
 Horsforth Woodside A         27   200   v.   Blakeborough Albion           3   115     
 Hightown                     18   181   v.   Crowghyll A                  12   170     
-Hollies S &amp; SC               20   196   v.   Queensbury A                 10   166     
+Hollies S & SC               20   196   v.   Queensbury A                 10   166     
 ----------------------------------------------------------------------------------------
             Sat 29th Jun                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 Wyke B                       20   193   v.   South Leeds Cons             10   168     
 Harold Park                  26   204   v.   Rufford B                     4   128     
-Hipperholme &amp; Lightcliffe    18   181   v.   Peel A                       12   159     
+Hipperholme & Lightcliffe    18   181   v.   Peel A                       12   159     
 Clayton B                    25   196   v.   Eccleshill C                  5   145     
 Asa Briggs B                 20   193   v.   Royd House                   10   158     
 Harold Club                  26   202   v.   Cleckheaton Moorend           4   135     
@@ -572,7 +572,7 @@ South Leeds Cons             21   193   v.   Harold Park                   9   1
 Royd House                   21   205   v.   Harold Club                   9   169     
 Eccleshill C                 21   190   v.   Asa Briggs B                  9   152     
 Peel A                       18   182   v.   Clayton B                    12   153     
-Rufford B                    21   176   v.   Hipperholme &amp; Lightcliffe     9   140     
+Rufford B                    21   176   v.   Hipperholme & Lightcliffe     9   140     
 Cleckheaton Moorend          18   193   v.   Wyke B                       12   166     
 ----------------------------------------------------------------------------------------
              Sat 6th Jul                              Division 5 - Haigh               
@@ -613,7 +613,7 @@ Lister                        5   100   v.   Shipley Club B               23   1
 ----------------------------------------------------------------------------------------
 Wyke B                       17   165   v.   Royd House                   13   159     
 Clayton B                    28   204   v.   Cleckheaton Moorend           2   123     
-Asa Briggs B                 14   166   v.   Hipperholme &amp; Lightcliffe    16   169     
+Asa Briggs B                 14   166   v.   Hipperholme & Lightcliffe    16   169     
 Harold Club                  17   163   v.   Harold Park                  13   157     
 Eccleshill C                 16   163   v.   South Leeds Cons             14   155     
 Peel A                       26   210   v.   Rufford B                     4   152     
@@ -670,7 +670,7 @@ Littlemoor B          11   148   v.   Pudsey B                     19   177
             Sat 20th Jul                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
 Drighlington A               24   199   v.   Crowghyll A                   6   142     
-Horsforth Woodside A         10   162   v.   Hollies S &amp; SC               20   185     
+Horsforth Woodside A         10   162   v.   Hollies S & SC               20   185     
 Hightown                     17   169   v.   Wibsey A                     13   166     
 Queensbury A                 26   202   v.   Blakeborough Albion           4   137     
 ----------------------------------------------------------------------------------------
@@ -679,7 +679,7 @@ Queensbury A                 26   202   v.   Blakeborough Albion           4   1
 South Leeds Cons             13   167   v.   Royd House                   17   181     
 Wyke B                       23   178   v.   Harold Club                   7   127     
 Harold Park                  17   180   v.   Asa Briggs B                 13   177     
-Hipperholme &amp; Lightcliffe    18   188   v.   Clayton B                    12   162     
+Hipperholme & Lightcliffe    18   188   v.   Clayton B                    12   162     
 Rufford B                     9   169   v.   Eccleshill C                 21   196     
 Cleckheaton Moorend           9   163   v.   Peel A                       21   198     
 ----------------------------------------------------------------------------------------
@@ -735,13 +735,13 @@ Pudsey B                     25   202   v.   Littlemoor B           5   132
             Sat 27th Jul                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
 Wibsey A                     27   206   v.   Hightown                      3   131     
-Hollies S &amp; SC               16   165   v.   Horsforth Woodside A         14   156     
+Hollies S & SC               16   165   v.   Horsforth Woodside A         14   156     
 Crowghyll A                  15   183   v.   Drighlington A               15   180     
 Blakeborough Albion           6   157   v.   Queensbury A                 24   207     
 ----------------------------------------------------------------------------------------
             Sat 27th Jul                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
-Clayton B                    20   181   v.   Hipperholme &amp; Lightcliffe    10   156     
+Clayton B                    20   181   v.   Hipperholme & Lightcliffe    10   156     
 Asa Briggs B                 19   188   v.   Harold Park                  11   173     
 Harold Club                  17   177   v.   Wyke B                       13   161     
 Royd House                   22   183   v.   South Leeds Cons              8   132     
@@ -801,7 +801,7 @@ Rufford A                    27   204   v.   Littlemoor B           3   131
 ----------------------------------------------------------------------------------------
 Drighlington A               25   199   v.   Blakeborough Albion           5   123     
 Ladyhill B                   24   192   v.   Crowghyll A                   6   140     
-Hightown                     12   173   v.   Hollies S &amp; SC               18   185     
+Hightown                     12   173   v.   Hollies S & SC               18   185     
 Wibsey A                     17   181   v.   Queensbury A                 13   164     
 ----------------------------------------------------------------------------------------
              Sat 3rd Aug                              Division 4 - Bartle              
@@ -809,7 +809,7 @@ Wibsey A                     17   181   v.   Queensbury A                 13   1
 South Leeds Cons             18   188   v.   Peel A                       12   175     
 Wyke B                       17   175   v.   Eccleshill C                 13   162     
 Harold Park                  22   196   v.   Royd House                    8   147     
-Hipperholme &amp; Lightcliffe    22   201   v.   Harold Club                   8   167     
+Hipperholme & Lightcliffe    22   201   v.   Harold Club                   8   167     
 Clayton B                    18   188   v.   Asa Briggs B                 12   159     
 Cleckheaton Moorend          20   200   v.   Rufford B                    10   177     
 ----------------------------------------------------------------------------------------
@@ -864,7 +864,7 @@ Littlemoor B          19   189   v.   Brighouse Sports B           11   165
 ----------------------------------------------------------------------------------------
             Sat 10th Aug                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
-Hollies S &amp; SC               21   186   v.   Wibsey A                      9   144     
+Hollies S & SC               21   186   v.   Wibsey A                      9   144     
 Crowghyll A                  16   173   v.   Horsforth Woodside A         14   163     
 Blakeborough Albion           5   128   v.   Ladyhill B                   25   197     
 Queensbury A                 13   171   v.   Drighlington A               17   175     
@@ -873,7 +873,7 @@ Queensbury A                 13   171   v.   Drighlington A               17   1
 ----------------------------------------------------------------------------------------
 Asa Briggs B                 27   206   v.   Cleckheaton Moorend           3   131     
 Harold Club                  19   176   v.   Clayton B                    11   149     
-Royd House                   19   182   v.   Hipperholme &amp; Lightcliffe    11   158     
+Royd House                   19   182   v.   Hipperholme & Lightcliffe    11   158     
 Eccleshill C                 16   181   v.   Harold Park                  14   180     
 Peel A                       14   171   v.   Wyke B                       16   175     
 Rufford B                    18   184   v.   South Leeds Cons             12   166     
@@ -929,7 +929,7 @@ Littlemoor B          13   162   v.   Greengates A                 17   174
 ----------------------------------------------------------------------------------------
             Sat 17th Aug                             Division 3 - Observer             
 ----------------------------------------------------------------------------------------
-Drighlington A               15   171   v.   Hollies S &amp; SC               15   165     
+Drighlington A               15   171   v.   Hollies S & SC               15   165     
 Ladyhill B                   15   170   v.   Wibsey A                     15   171     
 Horsforth Woodside A         25   198   v.   Hightown                      5   133     
 Queensbury A                 13   161   v.   Crowghyll A                  17   170     
@@ -938,7 +938,7 @@ Queensbury A                 13   161   v.   Crowghyll A                  17   1
 ----------------------------------------------------------------------------------------
 South Leeds Cons             23   201   v.   Asa Briggs B                  7   153     
 Wyke B                       11   161   v.   Clayton B                    19   184     
-Harold Park                  19   195   v.   Hipperholme &amp; Lightcliffe    11   167     
+Harold Park                  19   195   v.   Hipperholme & Lightcliffe    11   167     
 Peel A                       16   179   v.   Royd House                   14   168     
 Rufford B                    22   196   v.   Harold Club                   8   157     
 Cleckheaton Moorend          12   149   v.   Eccleshill C                 18   169     
@@ -996,12 +996,12 @@ Greengates A                 13   166   v.   Pudsey B                     17   1
 ----------------------------------------------------------------------------------------
 Hightown                     23   194   v.   Queensbury A                  7   145     
 Wibsey A                     24   204   v.   Horsforth Woodside A          6   153     
-Hollies S &amp; SC               14   179   v.   Ladyhill B                   16   184     
+Hollies S & SC               14   179   v.   Ladyhill B                   16   184     
 Crowghyll A                  21   190   v.   Blakeborough Albion           9   154     
 ----------------------------------------------------------------------------------------
             Sat 24th Aug                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
-Hipperholme &amp; Lightcliffe    23   182   v.   Cleckheaton Moorend           7   127     
+Hipperholme & Lightcliffe    23   182   v.   Cleckheaton Moorend           7   127     
 Clayton B                    20   184   v.   Harold Park                  10   159     
 Asa Briggs B                 18   179   v.   Wyke B                       12   168     
 Harold Club                  19   195   v.   South Leeds Cons             11   164     
@@ -1061,12 +1061,12 @@ Littlemoor B           6   132   v.   Wyke A                       24   190
 ----------------------------------------------------------------------------------------
 Drighlington A               19   195   v.   Hightown                     11   159     
 Ladyhill B                   16   188   v.   Horsforth Woodside A         14   178     
-Crowghyll A                  14   172   v.   Hollies S &amp; SC               16   175     
+Crowghyll A                  14   172   v.   Hollies S & SC               16   175     
 Blakeborough Albion           8   165   v.   Wibsey A                     22   199     
 ----------------------------------------------------------------------------------------
             Sat 31st Aug                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
-South Leeds Cons             14   155   v.   Hipperholme &amp; Lightcliffe    16   159     
+South Leeds Cons             14   155   v.   Hipperholme & Lightcliffe    16   159     
 Wyke B                       17   184   v.   Harold Park                  13   170     
 Eccleshill C                 16   185   v.   Harold Club                  14   176     
 Peel A                       22   196   v.   Asa Briggs B                  8   160     
@@ -1127,12 +1127,12 @@ Wyke A                       20   198   v.   Greengates A                 10   1
 Horsforth Woodside A         18   181   v.   Queensbury A                 12   161     
 Hightown                     16   183   v.   Ladyhill B                   14   175     
 Wibsey A                     13   170   v.   Drighlington A               17   171     
-Hollies S &amp; SC               25   202   v.   Blakeborough Albion           5   137     
+Hollies S & SC               25   202   v.   Blakeborough Albion           5   137     
 ----------------------------------------------------------------------------------------
              Sat 7th Sep                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 Harold Park                  26   197   v.   Cleckheaton Moorend           4   132     
-Hipperholme &amp; Lightcliffe    18   165   v.   Wyke B                       12   147     
+Hipperholme & Lightcliffe    18   165   v.   Wyke B                       12   147     
 Clayton B                    22   197   v.   South Leeds Cons              8   153     
 Asa Briggs B                 21   181   v.   Rufford B                     9   139     
 Harold Club                  11   148   v.   Peel A                       19   172     
@@ -1192,14 +1192,14 @@ Littlemoor B          19   192   v.   Hove Edge A                  11   167
 Drighlington A               22   197   v.   Ladyhill B                    8   154     
 Crowghyll A                  25   194   v.   Hightown                      5   124     
 Blakeborough Albion           6   134   v.   Horsforth Woodside A         24   194     
-Queensbury A                 22   196   v.   Hollies S &amp; SC                8   153     
+Queensbury A                 22   196   v.   Hollies S & SC                8   153     
 ----------------------------------------------------------------------------------------
             Sat 14th Sep                              Division 4 - Bartle              
 ----------------------------------------------------------------------------------------
 South Leeds Cons             20   200   v.   Wyke B                       10   170     
 Royd House                   11   164   v.   Asa Briggs B                 19   184     
 Eccleshill C                 13   172   v.   Clayton B                    17   185     
-Peel A                       18   178   v.   Hipperholme &amp; Lightcliffe    12   157     
+Peel A                       18   178   v.   Hipperholme & Lightcliffe    12   157     
 Rufford B                    23   195   v.   Harold Park                   7   145     
 Cleckheaton Moorend          21   193   v.   Harold Club                   9   158     
 ----------------------------------------------------------------------------------------
@@ -1263,7 +1263,7 @@ Wibsey A                     17   190   v.   Crowghyll A                  13   1
 ----------------------------------------------------------------------------------------
 Wyke B                       26   198   v.   Cleckheaton Moorend           4   118     
 Harold Park                  23   195   v.   South Leeds Cons              7   143     
-Hipperholme &amp; Lightcliffe    29   210   v.   Rufford B                     1   121     
+Hipperholme & Lightcliffe    29   210   v.   Rufford B                     1   121     
 Clayton B                    16   175   v.   Peel A                       14   168     
 Asa Briggs B                 23   197   v.   Eccleshill C                  7   152     
 Harold Club                   8   151   v.   Royd House                   22   189     
@@ -1308,7 +1308,7 @@ South Leeds Cons             21   196   v.   Cleckheaton Moorend           9   1
 Wyke B                       25   197   v.   Rufford B                     5   140     
 Clayton B                    19   183   v.   Royd House                   11   156     
 Asa Briggs B                 18   184   v.   Harold Club                  12   155     
-Eccleshill C                 19   173   v.   Hipperholme &amp; Lightcliffe    11   156     
+Eccleshill C                 19   173   v.   Hipperholme & Lightcliffe    11   156     
 Peel A                       16   184   v.   Harold Park                  14   177     
 ----------------------------------------------------------------------------------------
             Sat 28th Sep                              Division 5 - Haigh               
@@ -1382,7 +1382,7 @@ West Bradford B              17   145   v.   Bowling B                    11   1
   1.  Drighlington A               16   12    2    293
   2.  Horsforth Woodside A         16    9    6    289
   3.  Wibsey A                     16    8    7    273
-  4.  Hollies S &amp; SC               16   11    4    264
+  4.  Hollies S & SC               16   11    4    264
   5.  Ladyhill B                   16    9    6    255
   6.  Crowghyll A                  16    7    8    234
   7.  Queensbury A                 16    6   10    233
@@ -1395,7 +1395,7 @@ West Bradford B              17   145   v.   Bowling B                    11   1
 ====  ==========================  ===  ===  ===  =====  
   1.  Clayton B                    22   13    9    388
   2.  Wyke B                       22   14    8    367
-  3.  Hipperholme &amp; Lightcliffe    22   14    8    365
+  3.  Hipperholme & Lightcliffe    22   14    8    365
   4.  Peel A                       22   13    9    364
   5.  Asa Briggs B                 22   11   10    359
   6.  Harold Park                  22    9   12    342
@@ -1503,7 +1503,7 @@ Andrew Walker       21  Philip Wall             5
          Points:    17              Points:    13
 
  Division 4 - Bartle           Sat 6th Apr
-Hipperholme &amp; Lightcli        Asa Briggs B
+Hipperholme & Lightcli        Asa Briggs B
 John Drake          21  Arthur Schofield       13
 John Denham         16  John Sharp             21
 Martin Crowther     21  Ian Smith               9
@@ -2058,7 +2058,7 @@ Simon Chaffer (a)   21  Craig Fenton (a)       11
          Points:    26              Points:     4
 
 Division 3 - Observer         Sat 20th Apr
-       Wibsey A              Hollies S &amp; SC
+       Wibsey A              Hollies S & SC
 Thomas Bailey (a)   21  Cedric Briggs           1
 John Stevenson      19  Walter Stockhill       21
 Paul Wilczynski (a) 17  Mark McCann            21
@@ -2118,7 +2118,7 @@ Stewart Firth       21  Les Ward                8
          Points:    13              Points:    17
 
  Division 4 - Bartle          Sat 20th Apr
-Hipperholme &amp; Lightcli         Royd House
+Hipperholme & Lightcli         Royd House
 Chris Cox           20  Paul Barker            21
 Adrian Megson       16  Paul Fisher            21
 Nick Crowther       19  Fiona Fisher           21
@@ -2613,7 +2613,7 @@ Ken Walker          19  Debbie Kirkbright      21
          Points:    10              Points:    20
 
 Division 3 - Observer         Sat 27th Apr
-    Hollies S &amp; SC              Hightown
+    Hollies S & SC              Hightown
 Ken Stockhill       21  Liam Gleave            12
 Duncan McPhail       9  Stephen Holmes         21
 Mark McCann         21  Gareth Harwood          9
@@ -2688,7 +2688,7 @@ Steve Wilkinson     21  Tom McCarthy           13
          Points:    16              Points:    14
 
  Division 4 - Bartle          Sat 27th Apr
-     Harold Club        Hipperholme &amp; Lightcliffe
+     Harold Club        Hipperholme & Lightcliffe
 Jan French          17  Steve Swallow          21
 Chris Sowden        21  Chris Cox               7
 Lee Boocock         21  John Wilson             4
@@ -3213,7 +3213,7 @@ Ken Walker          18  Mick Bailey            21
          Points:    14              Points:    16
 
 Division 3 - Observer         Sat 11th May
-      Ladyhill B             Hollies S &amp; SC
+      Ladyhill B             Hollies S & SC
 Alan Pennington     16  Andrew Woodhead        21
 Chris Wilson        13  Shane Richards         21
 Alec Byrnes         20  Duncan McPhail         21
@@ -3348,7 +3348,7 @@ John Fletcher       21  Andrew Matthews        16
          Points:    19              Points:    11
 
  Division 4 - Bartle          Sat 11th May
- Cleckheaton Moorend    Hipperholme &amp; Lightcliffe
+ Cleckheaton Moorend    Hipperholme & Lightcliffe
 Les Strang          21  Nick Crowther          17
 David Batten        21  Chris Cox              15
 Stuart Goodall      21  John Denham            15
@@ -3843,7 +3843,7 @@ Mark Dobson (a)     21  Vince Cleary           12
          Points:    24              Points:     6
 
 Division 3 - Observer         Sat 18th May
-    Hollies S &amp; SC           Drighlington A
+    Hollies S & SC           Drighlington A
 Gary Dixon          21  Bailey Rice            19
 Mark McCann         21  Michael Dickinson      18
 Duncan McPhail      21  Tony Carpenter         16
@@ -3873,7 +3873,7 @@ Craig Fenton (a)    21  Donald Firth           13
          Points:    23              Points:     7
 
  Division 4 - Bartle          Sat 18th May
-Hipperholme &amp; Lightcli         Harold Park
+Hipperholme & Lightcli         Harold Park
 Chris Cox           21  Stuart Harrison        20
 Roger Bernard       21  John Simpson            7
 Wilf Murgatroyd     21  Doreen Terry           12
@@ -4458,7 +4458,7 @@ Michael Frost       21  Pete McGowan           12
          Points:    29              Points:     1
 
 Division 3 - Observer          Sat 8th Jun
-    Hollies S &amp; SC             Crowghyll A
+    Hollies S & SC             Crowghyll A
 Gary Dixon          21  Derek Carroll          19
 Duncan McPhail      15  Craig Tavendale        21
 Mark McCann         21  Steve Alred            15
@@ -4488,7 +4488,7 @@ Julie Darvill       17  Ian Wilson             21
          Points:    10              Points:    20
 
  Division 4 - Bartle           Sat 8th Jun
-Hipperholme &amp; Lightcli      South Leeds Cons
+Hipperholme & Lightcli      South Leeds Cons
 David Healey         8  Charlie Cross          21
 Adrian Megson       21  Jacky Cross             4
 Martin Crowther     20  Bob Emerson            21
@@ -5043,7 +5043,7 @@ Vince Cleary        21  Roy Carter              8
          Points:    20              Points:    10
 
 Division 3 - Observer         Sat 15th Jun
- Blakeborough Albion         Hollies S &amp; SC
+ Blakeborough Albion         Hollies S & SC
 Neal Hopper         21  David Hurd             17
 Jennie Moffat       10  Duncan McPhail         21
 Bev Clayton          4  Mark McCann            21
@@ -5088,7 +5088,7 @@ Ambrose Farrell     21  Peter Hendry           10
          Points:    18              Points:    12
 
  Division 4 - Bartle          Sat 15th Jun
-        Wyke B          Hipperholme &amp; Lightcliffe
+        Wyke B          Hipperholme & Lightcliffe
 Raymond Wilkes      21  John Wilson            20
 Ian Fraser          20  Martin Firth           21
 Ken Bairstow        13  Ian Ryding             21
@@ -5478,7 +5478,7 @@ Julie Darvill       21  Donald Shorten         11
          Points:    20              Points:    10
 
  Division 4 - Bartle          Sat 22nd Jun
-Hipperholme &amp; Lightcli        Eccleshill C
+Hipperholme & Lightcli        Eccleshill C
 John Denham         21  Les Ward               18
 John Drake          21  Keith Cooksey          20
 Martin Firth        21  Will Gilroy            12
@@ -6048,7 +6048,7 @@ Michael Briggs      14  Craig Tavendale        21
          Points:    18              Points:    12
 
 Division 3 - Observer         Sat 29th Jun
-    Hollies S &amp; SC            Queensbury A
+    Hollies S & SC            Queensbury A
 Cedric Briggs       21  Joan Law               20
 Ken Stockhill       12  Dennis Robinson (a)    21
 Mark McCann         21  Margaret Lee           16
@@ -6093,7 +6093,7 @@ Stewart Firth       21  John Fletcher           9
          Points:    26              Points:     4
 
  Division 4 - Bartle          Sat 29th Jun
-Hipperholme &amp; Lightcli           Peel A
+Hipperholme & Lightcli           Peel A
 John Drake          19  Malcolm Jowett (a)     21
 John Wilson         21  Maurice Haley           9
 Chris Cox           21  Jim Mellor              5
@@ -6723,7 +6723,7 @@ Donald Firth        16  Paul Gill              21
          Points:    18              Points:    12
 
  Division 4 - Bartle           Sat 6th Jul
-      Rufford B         Hipperholme &amp; Lightcliffe
+      Rufford B         Hipperholme & Lightcliffe
 Janice Waite        21  Roger Bernard           9
 Catherine New       21  Chris Cox              15
 Tony Wood           21  Martin Crowther         3
@@ -7098,7 +7098,7 @@ Paul Gill           21  Les Strang              9
          Points:    28              Points:     2
 
  Division 4 - Bartle          Sat 13th Jul
-     Asa Briggs B       Hipperholme &amp; Lightcliffe
+     Asa Briggs B       Hipperholme & Lightcliffe
 Matthew Pearson (b) 21  Nick Crowther          16
 Arthur Schofield    16  John Drake             21
 Clive Foord         21  Ian Ryding             16
@@ -7623,7 +7623,7 @@ John Cash           21  Craig Fenton (a)        6
          Points:    24              Points:     6
 
 Division 3 - Observer         Sat 20th Jul
- Horsforth Woodside A        Hollies S &amp; SC
+ Horsforth Woodside A        Hollies S & SC
 Brian Dowling       20  Bev Watt               21
 Stephen Bottomley   21  Gary Dixon             17
 Graham Chaffer (a)  21  Cedric Briggs           8
@@ -7713,7 +7713,7 @@ Andrew Walker       21  Clive Foord            17
          Points:    17              Points:    13
 
  Division 4 - Bartle          Sat 20th Jul
-Hipperholme &amp; Lightcli          Clayton B
+Hipperholme & Lightcli          Clayton B
 Martin Firth        17  Nino Esposito          21
 John Drake          21  Anthony Brocksom       14
 Roger Bernard       18  Tom Harney             21
@@ -8223,7 +8223,7 @@ Nigel Wormald       21  Colin Wailes           11
          Points:    27              Points:     3
 
 Division 3 - Observer         Sat 27th Jul
-    Hollies S &amp; SC        Horsforth Woodside A
+    Hollies S & SC        Horsforth Woodside A
 Cedric Briggs       18  Stephen Bottomley      21
 Duncan McPhail      13  Andy McMahon           21
 Mark McCann         21  Stuart Tennant         13
@@ -8268,7 +8268,7 @@ Simon Clayton        6  Dennis Robinson (a)    21
          Points:     6              Points:    24
 
  Division 4 - Bartle          Sat 27th Jul
-      Clayton B         Hipperholme &amp; Lightcliffe
+      Clayton B         Hipperholme & Lightcliffe
 Bev Shutt           21  Martin Crowther         8
 Alan Readyhough     21  Ian Ryding             20
 Tom Harney          21  Adrian Megson          20
@@ -8838,7 +8838,7 @@ Vince Cleary        21  David Hodgson          11
          Points:    24              Points:     6
 
 Division 3 - Observer          Sat 3rd Aug
-       Hightown              Hollies S &amp; SC
+       Hightown              Hollies S & SC
 Phillip Rayner      20  Jim Moorin             21
 Michael Briggs      21  Gary Dixon             17
 Paul Warwick        15  Andrew Woodhead        21
@@ -8913,7 +8913,7 @@ Andrew Walker       21  Cliff White            19
          Points:    22              Points:     8
 
  Division 4 - Bartle           Sat 3rd Aug
-Hipperholme &amp; Lightcli         Harold Club
+Hipperholme & Lightcli         Harold Club
 Martin Firth        21  Lee Boocock            11
 John Drake          21  Tom Jagger             18
 Ian Ryding          14  Andrew Stocks          21
@@ -9408,7 +9408,7 @@ William Swailes     15  Gary Barraclough       21
          Points:    19              Points:    11
 
 Division 3 - Observer         Sat 10th Aug
-    Hollies S &amp; SC              Wibsey A
+    Hollies S & SC              Wibsey A
 Ken Stockhill       18  John Stevenson         21
 Duncan McPhail      21  James Klenk (b)        15
 Mark McCann         21  Gary Woodhead           4
@@ -9498,7 +9498,7 @@ Chris Sowden        21  Tom McCarthy            8
          Points:    19              Points:    11
 
  Division 4 - Bartle          Sat 10th Aug
-      Royd House        Hipperholme &amp; Lightcliffe
+      Royd House        Hipperholme & Lightcliffe
 Andrew Matthews     21  John Drake              8
 Joanne Ellis        20  Martin Firth           21
 Paul Barker         21  John Denham            16
@@ -10008,7 +10008,7 @@ Ken Walker           3  Matthew Connolly       21
          Points:    13              Points:    17
 
 Division 3 - Observer         Sat 17th Aug
-    Drighlington A           Hollies S &amp; SC
+    Drighlington A           Hollies S & SC
 Lisa Rice (a)       21  Shane Richards         10
 Bailey Rice         12  Mark McCann            21
 Josh Gamble          4  Duncan McPhail         21
@@ -10098,7 +10098,7 @@ Nigel Swales        21  Tom Harney             16
          Points:    11              Points:    19
 
  Division 4 - Bartle          Sat 17th Aug
-     Harold Park        Hipperholme &amp; Lightcliffe
+     Harold Park        Hipperholme & Lightcliffe
 Stuart Harrison     21  John Wilson             9
 Andrew Walker       21  Chris Cox              18
 Julie Darvill       16  Nick Crowther          21
@@ -10638,7 +10638,7 @@ Mark Dobson (a)     21  Simon Chaffer (a)      16
          Points:    24              Points:     6
 
 Division 3 - Observer         Sat 24th Aug
-    Hollies S &amp; SC             Ladyhill B
+    Hollies S & SC             Ladyhill B
 Duncan McPhail      21  Peter Finnie           14
 Ken Stockhill       21  Eric Butler            11
 Ken Goodwill        19  Chris Wilson           21
@@ -10668,7 +10668,7 @@ David Hodgson       21  Gill Helliwell         12
          Points:    21              Points:     9
 
  Division 4 - Bartle          Sat 24th Aug
-Hipperholme &amp; Lightcli     Cleckheaton Moorend
+Hipperholme & Lightcli     Cleckheaton Moorend
 Nick Crowther       21  Frank Turnbull          7
 Adrian Megson       21  John Woodcock           6
 John Drake          21  Margaret Lloyd          4
@@ -11238,7 +11238,7 @@ Mark Woolner        14  Chris Wood (a)         21
          Points:    16              Points:    14
 
 Division 3 - Observer         Sat 31st Aug
-     Crowghyll A             Hollies S &amp; SC
+     Crowghyll A             Hollies S & SC
 Dennis Thorpe (a)   21  Ken Stockhill          11
 Craig Tavendale     21  Cedric Briggs          16
 Archie Wishart      11  Mark McCann            21
@@ -11268,7 +11268,7 @@ Glyn Hopper         21  Nigel Wormald          14
          Points:     8              Points:    22
 
  Division 4 - Bartle          Sat 31st Aug
-   South Leeds Cons     Hipperholme &amp; Lightcliffe
+   South Leeds Cons     Hipperholme & Lightcliffe
 Simon Hemingway     21  John Wilson             8
 Roger Backhouse     10  Adrian Megson          21
 Jacky Cross         21  David Healey           11
@@ -11853,7 +11853,7 @@ Jordan Brown        21  Robert Sharp            7
          Points:    13              Points:    17
 
 Division 3 - Observer          Sat 7th Sep
-    Hollies S &amp; SC         Blakeborough Albion
+    Hollies S & SC         Blakeborough Albion
 Ken Watkin          21  Bev Clayton            14
 Cedric Briggs       21  Paul Pendleton         16
 Duncan McPhail      21  Jimmy Wriggles         14
@@ -11883,7 +11883,7 @@ Stewart Firth       21  Joe Keenan              5
          Points:    26              Points:     4
 
  Division 4 - Bartle           Sat 7th Sep
-Hipperholme &amp; Lightcli           Wyke B
+Hipperholme & Lightcli           Wyke B
 Ian Ryding          21  Brian Smith             8
 John Drake          14  Gerry Hird             21
 Nick Crowther       21  Raymond Wilkes          4
@@ -12453,7 +12453,7 @@ Glyn Hopper         21  Simon Chaffer (a)      12
          Points:     6              Points:    24
 
 Division 3 - Observer         Sat 14th Sep
-     Queensbury A            Hollies S &amp; SC
+     Queensbury A            Hollies S & SC
 Joan Law            21  Andrew Woodhead        15
 Margaret Lee        18  Len Robinson           21
 Maureen Holmes      21  Bev Watt                7
@@ -12513,7 +12513,7 @@ Les Ward            21  Tom Harney             13
          Points:    13              Points:    17
 
  Division 4 - Bartle          Sat 14th Sep
-        Peel A          Hipperholme &amp; Lightcliffe
+        Peel A          Hipperholme & Lightcliffe
 Malcolm Jowett (a)  21  Chris Cox              20
 Maurice Haley       15  Adrian Megson          21
 Donald Shorten       7  Nick Crowther          21
@@ -13098,7 +13098,7 @@ Stewart Firth       21  Bob Emerson            18
          Points:    23              Points:     7
 
  Division 4 - Bartle          Sat 21st Sep
-Hipperholme &amp; Lightcli          Rufford B
+Hipperholme & Lightcli          Rufford B
 Ian Ryding          21  John Fletcher          11
 David Ryding        21  Catherine New          14
 Steve Swallow       21  Bill Slater            10
@@ -13533,7 +13533,7 @@ Jason Watters (b)   21  Philip Wall            14
          Points:    18              Points:    12
 
  Division 4 - Bartle          Sat 28th Sep
-     Eccleshill C       Hipperholme &amp; Lightcliffe
+     Eccleshill C       Hipperholme & Lightcliffe
 Brian Conway        21  Steve Swallow          19
 Keith Cooksey       21  Chris Cox              12
 Peter Dykes         21  Ian Ryding              9

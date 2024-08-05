@@ -25,7 +25,7 @@ Ladyhill B           25   116   v.   West Royd A           1    52
         Wed 20th Apr                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
 Clayton B             9    84   v.   Wyke                 17   102     
-Littlemoor S &amp; SC    22   117   v.   Salts                 4    70     
+Littlemoor S & SC    22   117   v.   Salts                 4    70     
 Peel                 23   119   v.   Bowling A             3    64     
 Calverley            17   117   v.   Lister                9    99     
 Brackenhill          18   105   v.   Horton B              8    79     
@@ -63,7 +63,7 @@ Horton B              9    86   v.   Clayton B            17   110
 Lister               11    93   v.   Brackenhill          15   103     
 Bowling A             7    97   v.   Calverley            19   124     
 Salts                15   107   v.   Peel                 11    99     
-Eccleshill B         22   114   v.   Littlemoor S &amp; SC     4    68     
+Eccleshill B         22   114   v.   Littlemoor S & SC     4    68     
 ------------------------------------------------------------------------------------------------------
         Wed 27th Apr                      Division 4 (Walker)                         
 ------------------------------------------------------------------------------------------------------
@@ -133,7 +133,7 @@ Lister                3    72   v.   Wyke                 23   125
 Bowling A            19   111   v.   Clayton B             7    83     
 Salts                20   120   v.   Brackenhill           6    86     
 Eccleshill B         18   114   v.   Calverley             8    90     
-Littlemoor S &amp; SC    11    84   v.   Peel                 15    97     
+Littlemoor S & SC    11    84   v.   Peel                 15    97     
 ------------------------------------------------------------------------------------------------------
         Wed 11th May                      Division 4 (Walker)                         
 ------------------------------------------------------------------------------------------------------
@@ -167,7 +167,7 @@ Ladyhill B           26   126   v.   Horton A              0    42
 Clayton B            12   105   v.   Salts                14   115     
 Wyke                 16   113   v.   Bowling A            10    93     
 Horton B              3    63   v.   Lister               23   114     
-Calverley            15   114   v.   Littlemoor S &amp; SC    11   104     
+Calverley            15   114   v.   Littlemoor S & SC    11   104     
 Brackenhill          17   116   v.   Eccleshill B          9    96     
 ------------------------------------------------------------------------------------------------------
         Wed 18th May                      Division 4 (Walker)                         
@@ -202,7 +202,7 @@ Horton A              6    91   v.   Oakenshaw B          20   122
 Bowling A            23   116   v.   Horton B              3    64     
 Salts                11    96   v.   Wyke                 15   108     
 Eccleshill B         18   124   v.   Clayton B             8    97     
-Littlemoor S &amp; SC    24   117   v.   Brackenhill           2    55     
+Littlemoor S & SC    24   117   v.   Brackenhill           2    55     
 Peel                 22   111   v.   Calverley             4    65     
 ------------------------------------------------------------------------------------------------------
         Wed 25th May                      Division 4 (Walker)                         
@@ -234,7 +234,7 @@ Ladyhill B           21   123   v.   Oakenshaw B           5    75
 ------------------------------------------------------------------------------------------------------
          Wed 1st Jun                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
-Clayton B            15   110   v.   Littlemoor S &amp; SC    11    89     
+Clayton B            15   110   v.   Littlemoor S & SC    11    89     
 Wyke                 20   119   v.   Eccleshill B          6    82     
 Horton B             12   102   v.   Salts                14   108     
 Lister                7    85   v.   Bowling A            19   116     
@@ -271,7 +271,7 @@ Oakenshaw B          17   105   v.   Tyersal               9    89
 ------------------------------------------------------------------------------------------------------
 Salts                18   111   v.   Lister                8    85     
 Eccleshill B         21   121   v.   Horton B              5    83     
-Littlemoor S &amp; SC    21   118   v.   Wyke                  5    77     
+Littlemoor S & SC    21   118   v.   Wyke                  5    77     
 Peel                 21   119   v.   Clayton B             5    80     
 Calverley            21   123   v.   Brackenhill           5    77     
 ------------------------------------------------------------------------------------------------------
@@ -306,7 +306,7 @@ Ladyhill B           26   126   v.   Tyersal               0    41
 ------------------------------------------------------------------------------------------------------
 Clayton B            22   126   v.   Calverley             4    88     
 Wyke                 14   104   v.   Peel                 12   103     
-Horton B              6    71   v.   Littlemoor S &amp; SC    20   107     
+Horton B              6    71   v.   Littlemoor S & SC    20   107     
 Lister               11    92   v.   Eccleshill B         15   101     
 Bowling A            12   101   v.   Salts                14   108     
 ------------------------------------------------------------------------------------------------------
@@ -345,7 +345,7 @@ Ladyhill B           16   107   v.   Greengates           10    94
         Wed 29th Jun                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
 Eccleshill B         16   109   v.   Bowling A            10    97     
-Littlemoor S &amp; SC    16   115   v.   Lister               10    97     
+Littlemoor S & SC    16   115   v.   Lister               10    97     
 Peel                 22   120   v.   Horton B              4    77     
 Calverley            10    95   v.   Wyke                 16   104     
 Brackenhill          13    99   v.   Clayton B            13   102     
@@ -387,7 +387,7 @@ Greengates           26   126   v.   West Royd A           0    57
 Wyke                 20   111   v.   Brackenhill           6    72     
 Horton B              5    81   v.   Calverley            21   120     
 Lister               11    89   v.   Peel                 15   101     
-Bowling A            12   102   v.   Littlemoor S &amp; SC    14   102     
+Bowling A            12   102   v.   Littlemoor S & SC    14   102     
 Salts                21   122   v.   Eccleshill B          5    78     
 ------------------------------------------------------------------------------------------------------
          Wed 6th Jul                      Division 4 (Walker)                         
@@ -423,7 +423,7 @@ Wyke                 19   124   v.   Clayton B             7   100
 Horton B              6    76   v.   Brackenhill          20   112     
 Lister                5    81   v.   Calverley            21   118     
 Bowling A            16   107   v.   Peel                 10    91     
-Salts                13    98   v.   Littlemoor S &amp; SC    13    97     
+Salts                13    98   v.   Littlemoor S & SC    13    97     
 ------------------------------------------------------------------------------------------------------
         Wed 13th Jul                      Division 4 (Walker)                         
 ------------------------------------------------------------------------------------------------------
@@ -455,7 +455,7 @@ Ladyhill B           15   118   v.   Crowghyll B          11   113
         Wed 20th Jul                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
 Clayton B            17   115   v.   Horton B              9    99     
-Littlemoor S &amp; SC    25   124   v.   Eccleshill B          1    58     
+Littlemoor S & SC    25   124   v.   Eccleshill B          1    58     
 Peel                 19   118   v.   Salts                 7    93     
 Calverley            15   105   v.   Bowling A            11   103     
 Brackenhill          10    91   v.   Lister               16   103     
@@ -526,7 +526,7 @@ Ladyhill B           20   116   v.   Queensbury B          6    85
 ------------------------------------------------------------------------------------------------------
 Clayton B            16   109   v.   Bowling A            10   102     
 Wyke                 19   119   v.   Lister                7    97     
-Peel                 15   106   v.   Littlemoor S &amp; SC    11    96     
+Peel                 15   106   v.   Littlemoor S & SC    11    96     
 Calverley            13   104   v.   Eccleshill B         13   104     
 Brackenhill           7    91   v.   Salts                19   119     
 ------------------------------------------------------------------------------------------------------
@@ -563,7 +563,7 @@ Lister                9    90   v.   Horton B             17   105
 Bowling A             9    95   v.   Wyke                 17   111     
 Salts                17   119   v.   Clayton B             9   100     
 Eccleshill B         18   114   v.   Brackenhill           8    86     
-Littlemoor S &amp; SC    25   124   v.   Calverley             1    60     
+Littlemoor S & SC    25   124   v.   Calverley             1    60     
 ------------------------------------------------------------------------------------------------------
         Wed 10th Aug                      Division 4 (Walker)                         
 ------------------------------------------------------------------------------------------------------
@@ -598,7 +598,7 @@ Clayton B            16   111   v.   Eccleshill B         10    92
 Wyke                 24   126   v.   Salts                 2    73     
 Horton B              9    89   v.   Bowling A            17   105     
 Calverley             5    68   v.   Peel                 21   116     
-Brackenhill           8    94   v.   Littlemoor S &amp; SC    18   117     
+Brackenhill           8    94   v.   Littlemoor S & SC    18   117     
 ------------------------------------------------------------------------------------------------------
         Wed 17th Aug                      Division 4 (Walker)                         
 ------------------------------------------------------------------------------------------------------
@@ -632,7 +632,7 @@ Oakenshaw B           7    94   v.   Ladyhill B           19   122
 Bowling A            26   126   v.   Lister                0    61     
 Salts                25   126   v.   Horton B              1    69     
 Eccleshill B          8    83   v.   Wyke                 18   113     
-Littlemoor S &amp; SC    21   122   v.   Clayton B             5    74     
+Littlemoor S & SC    21   122   v.   Clayton B             5    74     
 Peel                 17   105   v.   Brackenhill           9    90     
 ------------------------------------------------------------------------------------------------------
         Wed 24th Aug                      Division 4 (Walker)                         
@@ -665,7 +665,7 @@ Ladyhill B           16   111   v.   West A               10    98
         Wed 31st Aug                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
 Clayton B            10    95   v.   Peel                 16   104     
-Wyke                 22   121   v.   Littlemoor S &amp; SC     4    74     
+Wyke                 22   121   v.   Littlemoor S & SC     4    74     
 Horton B              9    92   v.   Eccleshill B         17   112     
 Lister                5    78   v.   Salts                21   116     
 Brackenhill          14   105   v.   Calverley            12   105     
@@ -701,7 +701,7 @@ Tyersal               7    90   v.   Ladyhill B           19   122
 ------------------------------------------------------------------------------------------------------
 Salts                22   124   v.   Bowling A             4    79     
 Eccleshill B         26   126   v.   Lister                0    60     
-Littlemoor S &amp; SC    26   126   v.   Horton B              0    58     
+Littlemoor S & SC    26   126   v.   Horton B              0    58     
 Peel                 18   113   v.   Wyke                  8    86     
 Calverley             8    93   v.   Clayton B            18   117     
 ------------------------------------------------------------------------------------------------------
@@ -737,7 +737,7 @@ Greengates           17   112   v.   Ladyhill B            9    95
 Clayton B            21   111   v.   Brackenhill           5    68     
 Wyke                 23   125   v.   Calverley             3    74     
 Horton B              2    64   v.   Peel                 24   125     
-Lister                1    60   v.   Littlemoor S &amp; SC    25   125     
+Lister                1    60   v.   Littlemoor S & SC    25   125     
 Bowling A            15   110   v.   Eccleshill B         11   102     
 ------------------------------------------------------------------------------------------------------
         Wed 14th Sep                      Division 4 (Walker)                         
@@ -770,7 +770,7 @@ Ladyhill B           13   113   v.   Eccleshill A         13   114
         Wed 21st Sep                   Division 3 (Peter Gilroy)                      
 ------------------------------------------------------------------------------------------------------
 Eccleshill B          8    92   v.   Salts                18   116     
-Littlemoor S &amp; SC    24   124   v.   Bowling A             2    66     
+Littlemoor S & SC    24   124   v.   Bowling A             2    66     
 Peel                 23   121   v.   Lister                3    67     
 Calverley            14   115   v.   Horton B             12   112     
 Brackenhill           5    78   v.   Wyke                 21   119     
@@ -825,7 +825,7 @@ West B                8    90   v.   West Royd B          18   118
 ====  ==================  ===  ===  ===  =====  
   1.  Wyke                 20   18    2    368
   2.  Peel                 20   17    3    359
-  3.  Littlemoor S &amp; SC    20   13    6    346
+  3.  Littlemoor S & SC    20   13    6    346
   4.  Salts                20   15    4    313
   5.  Eccleshill B         20    9   10    259
   6.  Bowling A            20    8   12    253
@@ -997,7 +997,7 @@ Marie Kitson          21  Malcolm Park          9
             Points:    9            Points:    17
 
 Division 3 (Peter Gilroy       Wed 20th Apr
-   Littlemoor S &amp; SC               Salts
+   Littlemoor S & SC               Salts
 Alan Parker           21  Joan Dean            15
 Billy Thorpe          21  Keith Anderson        7
 Clifford Francis      21  Amrik Singh          11
@@ -1272,7 +1272,7 @@ Amrik Singh           21  Tom Sayer             9
             Points:   15            Points:    11
 
 Division 3 (Peter Gilroy       Wed 27th Apr
-      Eccleshill B           Littlemoor S &amp; SC
+      Eccleshill B           Littlemoor S & SC
 Myra Humpleby         21  Peter Brown          13
 Mary Nellist          21  Billy Thorpe          7
 Alan Wright            9  Clifford Francis     21
@@ -1756,7 +1756,7 @@ Allen Bottomley       21  Geoff Dixon           7
             Points:   18            Points:     8
 
 Division 3 (Peter Gilroy       Wed 11th May
-   Littlemoor S &amp; SC               Peel
+   Littlemoor S & SC               Peel
 Terry Laidlaw         21  Keith McMurray        5
 Alan Parker           21  Malcolm Jowett       19
 Ray Myers              8  Alison Stocks        21
@@ -1987,7 +1987,7 @@ Terry Watson           4  Margaret Lee         21
             Points:    3            Points:    23
 
 Division 3 (Peter Gilroy       Wed 18th May
-       Calverley             Littlemoor S &amp; SC
+       Calverley             Littlemoor S & SC
 Barry Briggs          19  Terry Laidlaw        21
 Geoff Dixon           19  Billy Thorpe         21
 Jack Hawley           21  Clifford Francis     20
@@ -2229,7 +2229,7 @@ Jim Head              20  Brian Heppleston     21
             Points:   18            Points:     8
 
 Division 3 (Peter Gilroy       Wed 25th May
-   Littlemoor S &amp; SC            Brackenhill
+   Littlemoor S & SC            Brackenhill
 Terry Laidlaw         21  Carole Gibson         3
 Billy Thorpe          21  Steve Hillam          9
 Alan Parker           21  Jackie Wilkinson      2
@@ -2438,7 +2438,7 @@ Vince Cleary          21  Allan Johnson         3
             Points:   21            Points:     5
 
 Division 3 (Peter Gilroy        Wed 1st Jun
-       Clayton B             Littlemoor S &amp; SC
+       Clayton B             Littlemoor S & SC
 Brian Heppleston      16  Terry Laidlaw        21
 David Topham          20  Billy Thorpe         21
 Colin McGregor        15  Alan Parker          21
@@ -2702,7 +2702,7 @@ Tony Whiteoak         21  Pat Cates            15
             Points:   21            Points:     5
 
 Division 3 (Peter Gilroy        Wed 8th Jun
-   Littlemoor S &amp; SC               Wyke
+   Littlemoor S & SC               Wyke
 Alan Parker           21  Jimmy Hearne         14
 Clifford Francis      21  Wally Whytell        12
 Billy Thorpe          21  Malcolm Park         12
@@ -2944,7 +2944,7 @@ Jimmy Hearne          17  Alison Stocks        21
             Points:   14            Points:    12
 
 Division 3 (Peter Gilroy       Wed 15th Jun
-        Horton B             Littlemoor S &amp; SC
+        Horton B             Littlemoor S & SC
 Jean Briggs            7  Terry Laidlaw        21
 Pat Cates              6  Alan Parker          21
 Gordon Robinson       11  Billy Thorpe         21
@@ -3164,7 +3164,7 @@ Malcolm Hamilton       9  Darryl McCormick     21
             Points:   16            Points:    10
 
 Division 3 (Peter Gilroy       Wed 29th Jun
-   Littlemoor S &amp; SC              Lister
+   Littlemoor S & SC              Lister
 Terry Laidlaw         21  Margaret McEvoy       5
 Clifford Francis      19  Ray Charles          21
 Billy Thorpe          21  Norma Schofield      13
@@ -3439,7 +3439,7 @@ Margaret Lee          21  Michael Mathers       5
             Points:   11            Points:    15
 
 Division 3 (Peter Gilroy        Wed 6th Jul
-       Bowling A             Littlemoor S &amp; SC
+       Bowling A             Littlemoor S & SC
 Syd Spencer           19  Kath Mazurke         21
 Pat Wagstaff          19  Alan Mazurke         21
 Roy Dennison          16  Terry Laidlaw        21
@@ -3692,7 +3692,7 @@ Elliott Yates         21  Michael Mathers       6
             Points:   16            Points:    10
 
 Division 3 (Peter Gilroy       Wed 13th Jul
-         Salts               Littlemoor S &amp; SC
+         Salts               Littlemoor S & SC
 Amrik Singh           21  Ray Myers             3
 Joan Dean             19  Terry Laidlaw        21
 Bernard Greaves       19  Clifford Francis     21
@@ -3901,7 +3901,7 @@ Donald Hodgson        21  Geoffrey Woodfine     6
             Points:   17            Points:     9
 
 Division 3 (Peter Gilroy       Wed 20th Jul
-   Littlemoor S &amp; SC           Eccleshill B
+   Littlemoor S & SC           Eccleshill B
 Terry Laidlaw         21  Jack Steward          0
 Billy Thorpe          21  Mary Nellist          8
 Clifford Francis      21  John Griffin         17
@@ -4396,7 +4396,7 @@ Jimmy Hearne          21  Les Waddington        9
             Points:   19            Points:     7
 
 Division 3 (Peter Gilroy        Wed 3rd Aug
-          Peel               Littlemoor S &amp; SC
+          Peel               Littlemoor S & SC
 John Stocks           21  Terry Laidlaw         9
 Alison Stocks         17  Philip A Richards    21
 David Burns           21  Alan Mazurke         18
@@ -4660,7 +4660,7 @@ Tony Whiteoak         21  Gordon McLennon      18
             Points:   18            Points:     8
 
 Division 3 (Peter Gilroy       Wed 10th Aug
-   Littlemoor S &amp; SC             Calverley
+   Littlemoor S & SC             Calverley
 Terry Laidlaw         21  Brian Tillotson      10
 Philip A Richards     21  Barry Briggs          5
 Alan Mazurke          21  Kenneth Paley         3
@@ -4902,7 +4902,7 @@ Roy Whiteley          21  Tom Sayer            13
             Points:    5            Points:    21
 
 Division 3 (Peter Gilroy       Wed 17th Aug
-      Brackenhill            Littlemoor S &amp; SC
+      Brackenhill            Littlemoor S & SC
 Gordon McLennon        9  Philip A Richards    21
 David Pearson         21  Kath Mazurke         13
 Marjorie Spaven        6  Graham Swithenbank   21
@@ -5133,7 +5133,7 @@ John Knight            4  Richard Kerr         21
             Points:    8            Points:    18
 
 Division 3 (Peter Gilroy       Wed 24th Aug
-   Littlemoor S &amp; SC             Clayton B
+   Littlemoor S & SC             Clayton B
 Terry Laidlaw         21  Donald Hodgson       10
 Billy Thorpe          21  Marie Kitson         11
 Philip A Richards     21  David Topham          1
@@ -5353,7 +5353,7 @@ David Lord            16  Tom Sayer            21
             Points:   10            Points:    16
 
 Division 3 (Peter Gilroy       Wed 31st Aug
-          Wyke               Littlemoor S &amp; SC
+          Wyke               Littlemoor S & SC
 Wally Whytell         21  Graham Swithenbank   16
 Richard Kerr          21  Ray Myers             1
 Stuart Buckle         21  Philip A Richards    13
@@ -5606,7 +5606,7 @@ Myra Humpleby         21  Les Waddington       15
             Points:   26            Points:     0
 
 Division 3 (Peter Gilroy        Wed 7th Sep
-   Littlemoor S &amp; SC             Horton B
+   Littlemoor S & SC             Horton B
 Terry Laidlaw         21  Geoffrey Woodfine     9
 Philip A Richards     21  Jean Briggs           4
 Graham Swithenbank    21  Pat Cates             8
@@ -5859,7 +5859,7 @@ Graham Womersley      21  Tom Sayer            20
             Points:    2            Points:    24
 
 Division 3 (Peter Gilroy       Wed 14th Sep
-         Lister              Littlemoor S &amp; SC
+         Lister              Littlemoor S & SC
 Harold Barber          3  Terry Laidlaw        21
 Margaret McEvoy       17  Billy Thorpe         21
 Norma Schofield        3  Philip A Richards    21
@@ -6079,7 +6079,7 @@ John Knight           11  Colin White          21
             Points:    8            Points:    18
 
 Division 3 (Peter Gilroy       Wed 21st Sep
-   Littlemoor S &amp; SC             Bowling A
+   Littlemoor S & SC             Bowling A
 Graham Swithenbank    21  Pat Wagstaff         19
 Terry Laidlaw         21  Barrie Clough         3
 Philip A Richards     21  Violet Rodgers        2

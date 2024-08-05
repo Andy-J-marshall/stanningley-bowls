@@ -11,7 +11,7 @@ Bowling Park          8    85   v.   West Royd            18   108     From Mon 
 ----------------------------------------------------------------------------------------------------------
         Mon 18th Apr                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC     5    72   v.   Pudsey               21   111     
+Littlemoor S & SC     5    72   v.   Pudsey               21   111     
 Heckmondwike 'A'      6    84   v.   Tyersal 'A'          20   117     
 Spen Victoria 'B'     7    95   v.   Spen Victoria 'A'    19   119     
 Wibsey 'A'           18   124   v.   Asa Briggs 'A'        8   103     
@@ -36,7 +36,7 @@ Tyersal 'B'           9    86   v.   Heckmondwike 'B'     17   114
 ----------------------------------------------------------------------------------------------------------
 Asa Briggs 'A'       24   126   v.   Spen Victoria 'B'     2    74     
 Shipley Club 'A'     17   114   v.   Heckmondwike 'A'      9    98     
-Tyersal 'A'          22   120   v.   Littlemoor S &amp; SC     4    75     
+Tyersal 'A'          22   120   v.   Littlemoor S & SC     4    75     
 Pudsey               15   105   v.   Wibsey 'A'           11    96     
 ----------------------------------------------------------------------------------------------------------
         Mon 25th Apr                 Division 2 (Robert Bland)7.00                      
@@ -58,7 +58,7 @@ Wibsey 'B'            7    81   v.   Brackenhill          19   111
          Mon 9th May                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
 Pudsey                          v.   Tyersal 'A'                       To Fri 20th May
-Littlemoor S &amp; SC    15   102   v.   Shipley Club 'A'     11    91     
+Littlemoor S & SC    15   102   v.   Shipley Club 'A'     11    91     
 Heckmondwike 'A'      8    90   v.   Spen Victoria 'A'    18   118     
 Spen Victoria 'B'    12   101   v.   Wibsey 'A'           14   104     
 ----------------------------------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Clayton              21   117   v.   Drighlington          5    77     From Mon 
         Mon 16th May                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
 Asa Briggs 'A'       21   123   v.   Heckmondwike 'A'      5    85     
-Spen Victoria 'A'    17   114   v.   Littlemoor S &amp; SC     9    96     
+Spen Victoria 'A'    17   114   v.   Littlemoor S & SC     9    96     
 Shipley Club 'A'      6    93   v.   Pudsey               20   124     
 Wibsey 'A'           10    94   v.   Tyersal 'A'          16   108     
 ----------------------------------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Bradford Moor 'A'     9    96   v.   Crowghyll Park       17   114     From Mon 
 ----------------------------------------------------------------------------------------------------------
 Tyersal 'A'          23   126   v.   Shipley Club 'A'      3    78     
 Pudsey               22   115   v.   Spen Victoria 'A'     4    67     
-Littlemoor S &amp; SC    20   122   v.   Asa Briggs 'A'        6    84     
+Littlemoor S & SC    20   122   v.   Asa Briggs 'A'        6    84     
 Heckmondwike 'A'     25   126   v.   Spen Victoria 'B'     1    69     
 ----------------------------------------------------------------------------------------------------------
         Mon 23rd May                 Division 2 (Robert Bland)7.00                      
@@ -147,7 +147,7 @@ Tyersal 'B'          20   114   v.   Bowling Park          6    75     From Mon 
         Mon 30th May                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
 Asa Briggs 'A'       15   113   v.   Pudsey               11   103     
-Spen Victoria 'B'    12    90   v.   Littlemoor S &amp; SC    14    92     
+Spen Victoria 'B'    12    90   v.   Littlemoor S & SC    14    92     
 Spen Victoria 'A'    10    96   v.   Tyersal 'A'          16   106     
 Wibsey 'A'           20   122   v.   Shipley Club 'A'      6    87     
 ----------------------------------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ Salts 'B'            18   111   v.   Brackenhill           8    83
         Mon 13th Jun                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
 Asa Briggs 'A'       19   120   v.   Shipley Club 'A'      7    96     
-Heckmondwike 'A'     15   112   v.   Littlemoor S &amp; SC    11    99     
+Heckmondwike 'A'     15   112   v.   Littlemoor S & SC    11    99     
 Wibsey 'A'            6    89   v.   Spen Victoria 'A'    20   120     
 Spen Victoria 'B'     2    70   v.   Tyersal 'A'          24   126     
 ----------------------------------------------------------------------------------------------------------
@@ -222,7 +222,7 @@ Pudsey                          v.   Tyersal 'A'                       From Fri 
 ----------------------------------------------------------------------------------------------------------
 Spen Victoria 'A'    24   126   v.   Asa Briggs 'A'        2    72     
 Shipley Club 'A'     24   126   v.   Spen Victoria 'B'     2    71     
-Littlemoor S &amp; SC    24   124   v.   Wibsey 'A'            2    67     
+Littlemoor S & SC    24   124   v.   Wibsey 'A'            2    67     
 Heckmondwike 'A'     12    85   v.   Pudsey               14    91     
 ----------------------------------------------------------------------------------------------------------
         Mon 20th Jun                 Division 2 (Robert Bland)7.00                      
@@ -251,7 +251,7 @@ Pudsey               18   114   v.   Tyersal 'A'           8    95     From Fri 
 Asa Briggs 'A'       19   121   v.   Wibsey 'A'            7    89     
 Spen Victoria 'A'    25   123   v.   Spen Victoria 'B'     1    58     
 Tyersal 'A'          25   124   v.   Heckmondwike 'A'      1    57     
-Pudsey               21   122   v.   Littlemoor S &amp; SC     5    80     
+Pudsey               21   122   v.   Littlemoor S & SC     5    80     
 ----------------------------------------------------------------------------------------------------------
         Mon 27th Jun                 Division 2 (Robert Bland)7.00                      
 ----------------------------------------------------------------------------------------------------------
@@ -271,7 +271,7 @@ Wibsey 'B'           17   111   v.   Bradford Moor 'B'     9    90
 ----------------------------------------------------------------------------------------------------------
          Mon 4th Jul                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC     9   100   v.   Tyersal 'A'          17   111     
+Littlemoor S & SC     9   100   v.   Tyersal 'A'          17   111     
 Heckmondwike 'A'     14   113   v.   Shipley Club 'A'     12   105     
 Spen Victoria 'B'    11    91   v.   Asa Briggs 'A'       15   107     
 Wibsey 'A'           19   115   v.   Pudsey                7    92     
@@ -295,7 +295,7 @@ Brackenhill          14    95   v.   Wibsey 'B'           12    92
         Mon 11th Jul                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
 Spen Victoria 'A'    21   118   v.   Heckmondwike 'A'      5    74     
-Shipley Club 'A'     20   126   v.   Littlemoor S &amp; SC     6   103     
+Shipley Club 'A'     20   126   v.   Littlemoor S & SC     6   103     
 Tyersal 'A'          20   118   v.   Pudsey                6    87     
 Wibsey 'A'           26   126   v.   Spen Victoria 'B'     0    59     
 ----------------------------------------------------------------------------------------------------------
@@ -319,7 +319,7 @@ Brackenhill          12   103   v.   Tyersal 'B'          14   112
 ----------------------------------------------------------------------------------------------------------
 Tyersal 'A'          22   120   v.   Wibsey 'A'            4    77     
 Pudsey               24   116   v.   Shipley Club 'A'      2    58     
-Littlemoor S &amp; SC     9   100   v.   Spen Victoria 'A'    17   120     
+Littlemoor S & SC     9   100   v.   Spen Victoria 'A'    17   120     
 Heckmondwike 'A'     18   113   v.   Asa Briggs 'A'        8    93     
 ----------------------------------------------------------------------------------------------------------
         Mon 18th Jul                 Division 2 (Robert Bland)7.00                      
@@ -340,7 +340,7 @@ Bowling Park                    v.   Tyersal 'B'                       To Sat 6t
 ----------------------------------------------------------------------------------------------------------
         Mon 25th Jul                 Division 1 (Thurston) 7.00PM                       
 ----------------------------------------------------------------------------------------------------------
-Asa Briggs 'A'       25   126   v.   Littlemoor S &amp; SC     1    69     
+Asa Briggs 'A'       25   126   v.   Littlemoor S & SC     1    69     
 Spen Victoria 'A'    16   104   v.   Pudsey               10    91     
 Shipley Club 'A'     10   101   v.   Tyersal 'A'          16   115     
 Spen Victoria 'B'     8    87   v.   Heckmondwike 'A'     18   115     
@@ -366,7 +366,7 @@ Brackenhill          16   118   v.   Bowling Park         10    97
 Shipley Club 'A'     11    94   v.   Wibsey 'A'           15    98     
 Tyersal 'A'          19   117   v.   Spen Victoria 'A'     7    84     
 Pudsey               22   123   v.   Asa Briggs 'A'        4    71     
-Littlemoor S &amp; SC    24   126   v.   Spen Victoria 'B'     2    74     
+Littlemoor S & SC    24   126   v.   Spen Victoria 'B'     2    74     
 ----------------------------------------------------------------------------------------------------------
          Mon 1st Aug                 Division 2 (Robert Bland)7.00                      
 ----------------------------------------------------------------------------------------------------------
@@ -431,7 +431,7 @@ Brackenhill          14   105   v.   Salts 'B'            12   101
 Spen Victoria 'A'    25   126   v.   Wibsey 'A'            1    69     
 Shipley Club 'A'      9    82   v.   Asa Briggs 'A'       17   110     
 Tyersal 'A'          23   121   v.   Spen Victoria 'B'     3    67     
-Littlemoor S &amp; SC    19   119   v.   Heckmondwike 'A'      7    84     
+Littlemoor S & SC    19   119   v.   Heckmondwike 'A'      7    84     
 ----------------------------------------------------------------------------------------------------------
         Mon 15th Aug                 Division 2 (Robert Bland)7.00                      
 ----------------------------------------------------------------------------------------------------------
@@ -458,7 +458,7 @@ Asa Briggs 'B'        9    87   v.   Hightown             17   107     From Mon 
 ----------------------------------------------------------------------------------------------------------
 Asa Briggs 'A'       15   118   v.   Spen Victoria 'A'    11   112     
 Spen Victoria 'B'    17   106   v.   Shipley Club 'A'      9    84     
-Wibsey 'A'           22   126   v.   Littlemoor S &amp; SC     4    88     
+Wibsey 'A'           22   126   v.   Littlemoor S & SC     4    88     
 Pudsey               22   122   v.   Heckmondwike 'A'      4    68     
 ----------------------------------------------------------------------------------------------------------
         Mon 22nd Aug                 Division 2 (Robert Bland)7.00                      
@@ -487,7 +487,7 @@ Brackenhill          20   113   v.   Bradford Moor 'B'     6    82
   3.  Spen Victoria 'A'    16   12    4    276
   4.  Asa Briggs 'A'       16    9    7    203
   5.  Wibsey 'A'           16    8    8    202
-  6.  Littlemoor S &amp; SC    16    6   10    179
+  6.  Littlemoor S & SC    16    6   10    179
   7.  Heckmondwike 'A'     16    6   10    172
   8.  Shipley Club 'A'     16    3   13    157
   9.  Spen Victoria 'B'    16    1   15     86
@@ -535,7 +535,7 @@ John Appleyard      21  Gez Collins           14
          Points:     8              Points:   18
 
 Division 1 (Thurston)         Mon 18th Apr
-  Littlemoor S &amp; SC              Pudsey
+  Littlemoor S & SC              Pudsey
 Angela Carter       12  Andy Hodgson          21
 Terri Durrans       18  Alex Edmondson        21
 Kath Mazurke         7  Debi Davis            21
@@ -678,7 +678,7 @@ Andrew Walker       21  Peter Buchan          19
          Points:    17              Points:    9
 
 Division 1 (Thurston)         Mon 25th Apr
-     Tyersal 'A'           Littlemoor S &amp; SC
+     Tyersal 'A'           Littlemoor S & SC
 Simon Metcalfe      21  Philip A Richards      8
 Wendy Shimbles      15  Angela Carter         21
 Peter Page          21  Alan Mazurke           8
@@ -799,7 +799,7 @@ Michael Oliver       3  Graham Wilkinson 'A'  21
          Points:     7              Points:   19
 
 Division 1 (Thurston)         Mon 9th May
-  Littlemoor S &amp; SC         Shipley Club 'A'
+  Littlemoor S & SC         Shipley Club 'A'
 Angela Carter       18  John Sample           21
 Alan Mazurke        21  Kevin Cullerton       10
 Kath Mazurke         8  Graham Baggley        21
@@ -953,7 +953,7 @@ Jordan Brown 'B'    21  Gerald Bromley 'A'    14
          Points:    21              Points:    5
 
 Division 1 (Thurston)         Mon 16th May
-  Spen Victoria 'A'        Littlemoor S &amp; SC
+  Spen Victoria 'A'        Littlemoor S & SC
 Chris Ellis         21  Terri Durrans          7
 Jim Balmforth       21  Jim Moorin            20
 Daz Ripley          18  Philip Thornton       21
@@ -1096,7 +1096,7 @@ Peter Simpson       10  Mark Goodall          21
          Points:    22              Points:    4
 
 Division 1 (Thurston)         Mon 23rd May
-  Littlemoor S &amp; SC          Asa Briggs 'A'
+  Littlemoor S & SC          Asa Briggs 'A'
 Jim Moorin          21  Jordan Brown 'B'      14
 Philip A Richards   21  Bert Haigh             0
 Angela Carter       21  Carl Smith            17
@@ -1239,7 +1239,7 @@ Gary Woodhead       16  Jon Edmondson         21
          Points:    15              Points:   11
 
 Division 1 (Thurston)         Mon 30th May
-  Spen Victoria 'B'        Littlemoor S &amp; SC
+  Spen Victoria 'B'        Littlemoor S & SC
 Steve Kemp           4  Jim Moorin            21
 Michael Griffiths   21  Philip Thornton        9
 Michael Potter      21  Terri Durrans          7
@@ -1525,7 +1525,7 @@ Gary Woodhead       15  Andrew Walker         21
          Points:    19              Points:    7
 
 Division 1 (Thurston)         Mon 13th Jun
-   Heckmondwike 'A'        Littlemoor S &amp; SC
+   Heckmondwike 'A'        Littlemoor S & SC
 Debora Sturman 'A'  21  Angela Carter         16
 Sean Carter         21  Terri Durrans         12
 Eddie Temple        16  Graham Swithenbank    21
@@ -1679,7 +1679,7 @@ John Sample         21  Lucas Wood             5
          Points:    24              Points:    2
 
 Division 1 (Thurston)         Mon 20th Jun
-  Littlemoor S &amp; SC            Wibsey 'A'
+  Littlemoor S & SC            Wibsey 'A'
 Kath Mazurke        21  John Stevenson        17
 Angela Carter       21  John Simpson           3
 Philip A Richards   19  Michael Skwarek       21
@@ -1844,7 +1844,7 @@ Philip Wilsdon      21  Gerald Bromley 'A'    18
          Points:    25              Points:    1
 
 Division 1 (Thurston)         Mon 27th Jun
-        Pudsey             Littlemoor S &amp; SC
+        Pudsey             Littlemoor S & SC
 Debi Davis          21  Graham Swithenbank    12
 Alex Edmondson      21  Philip Thornton       19
 Jon Edmondson       21  Alan Mazurke           9
@@ -1954,7 +1954,7 @@ Michael Oliver      14  Geoff Woodfine        21
          Points:    17              Points:    9
 
 Division 1 (Thurston)         Mon 4th Jul
-  Littlemoor S &amp; SC           Tyersal 'A'
+  Littlemoor S & SC           Tyersal 'A'
 Terri Durrans        7  Philip Wilsdon        21
 Philip A Richards   16  Chris Mordue          21
 Jim Moorin          21  Wendy Shimbles         6
@@ -2108,7 +2108,7 @@ Philip Smith        21  Peter Buchan           6
          Points:    21              Points:    5
 
 Division 1 (Thurston)         Mon 11th Jul
-   Shipley Club 'A'        Littlemoor S &amp; SC
+   Shipley Club 'A'        Littlemoor S & SC
 Graham Baggley      21  Angela Carter         15
 Kevin Cullerton     21  Philip A Richards     17
 Barry Fenton        21  Kath Mazurke          15
@@ -2262,7 +2262,7 @@ Peter Simpson       11  Andrew Walker         21
          Points:    24              Points:    2
 
 Division 1 (Thurston)         Mon 18th Jul
-  Littlemoor S &amp; SC        Spen Victoria 'A'
+  Littlemoor S & SC        Spen Victoria 'A'
 Angela Carter       16  Chris Ellis           21
 Jim Moorin          21  Kevin Wood            19
 Philip A Richards   14  Mark Ellis            21
@@ -2339,7 +2339,7 @@ Michal Black        18  Pam Wilson            21
          Points:    16              Points:   10
 
 Division 1 (Thurston)         Mon 25th Jul
-    Asa Briggs 'A'         Littlemoor S &amp; SC
+    Asa Briggs 'A'         Littlemoor S & SC
 Michael Frost       21  Angela Carter         19
 Carl Smith          21  Kath Mazurke          10
 Scott Sansom 'A'    21  Philip A Richards      7
@@ -2515,7 +2515,7 @@ James Cosgrave      21  Jordan Brown 'B'       5
          Points:    22              Points:    4
 
 Division 1 (Thurston)         Mon 1st Aug
-  Littlemoor S &amp; SC        Spen Victoria 'B'
+  Littlemoor S & SC        Spen Victoria 'B'
 Angela Carter       21  Steve Kemp            14
 Philip A Richards   21  Lewis Pember           9
 Jim Moorin          21  Russell Porter         4
@@ -2834,7 +2834,7 @@ Pam Lindley         16  Laura Wood            21
          Points:    23              Points:    3
 
 Division 1 (Thurston)         Mon 15th Aug
-  Littlemoor S &amp; SC         Heckmondwike 'A'
+  Littlemoor S & SC         Heckmondwike 'A'
 Angela Carter       18  Gerald Bromley 'A'    21
 Kath Mazurke        21  Tasawir Hussain 'A'    2
 Philip Thornton     21  Eddie Temple          10
@@ -2977,7 +2977,7 @@ Michael Griffiths   17  Andrew Walker         21
          Points:    17              Points:    9
 
 Division 1 (Thurston)         Mon 22nd Aug
-      Wibsey 'A'           Littlemoor S &amp; SC
+      Wibsey 'A'           Littlemoor S & SC
 Vinnie Cleary       21  Angela Carter         18
 John Stevenson      21  Kath Mazurke           8
 Peter Crowther      21  Graham Swithenbank    10

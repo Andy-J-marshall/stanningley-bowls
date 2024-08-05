@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------------------------------------------------
 Littlemoor 'A'               9   194   v.   Denby Grange BC 'A'          3   150                       
 Alverthorpe WMC 'A'          3   153   v.   Dearne Sports                9   191                       
-Lower Hopton WMC 'A'         3   177   v.   Thongsbridge C &amp; BC 'A'      9   190                       
+Lower Hopton WMC 'A'         3   177   v.   Thongsbridge C & BC 'A'      9   190                       
 Ossett Flying Horse 'A'      5   156   v.   Crosland Moor 'A'            7   177                       
 Crossgates BC 'A'            6   192   v.   Pudsey BC 'A'                6   189                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -22,8 +22,8 @@ Eccleshill                   8   182   v.   Shipley BC                   4   173
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Apr                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett C &amp; AC               10   190   v.   Ossett Flying Horse 'B'      2   169                       
-Elland C &amp; BC                3   165   v.   Spen Victoria 'A'            9   198                       
+Ossett C & AC               10   190   v.   Ossett Flying Horse 'B'      2   169                       
+Elland C & BC                3   165   v.   Spen Victoria 'A'            9   198                       
 Cleckheaton Sports 'A'       3   159   v.   Crossgates BC 'B'            9   197                       
 Morton House                 7   175   v.   Almondbury Lib 'A'           5   179                       
 The Harold Club 'A'          8   182   v.   Littlemoor 'B'               4   162                       
@@ -32,15 +32,15 @@ The Harold Club 'A'          8   182   v.   Littlemoor 'B'               4   162
 -------------------------------------------------------------------------------------------------------------------------
 Thurgoland BC                8   177   v.   Lowerhouses BC               4   148                       
 Crosland Moor 'B'            8   174   v.   Broad Oak BC                 4   144                       
-Spen Victoria 'B'            9   189   v.   Thornhill C &amp; BC             3   162                       
+Spen Victoria 'B'            9   189   v.   Thornhill C & BC             3   162                       
 Denby Grange BC 'B'          8   184   v.   Kirkheaton Con 'B'           4   150                       
-Thongsbridge C &amp; BC 'B'      4   175   v.   Heckmondwike BC              8   182                       
+Thongsbridge C & BC 'B'      4   175   v.   Heckmondwike BC              8   182                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Apr                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Farsley BC                   7   152   v.   Longwood BC                  3   104                       
 Cowcliffe Lib                9   167   v.   The Harold Club 'B'          1   119                       
-Slaithwaite C &amp; BC           6   149   v.   Alverthorpe WMC 'B'          4   119                       
+Slaithwaite C & BC           6   149   v.   Alverthorpe WMC 'B'          4   119                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Apr                                 Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Rastrick BC                  2   116   v.   Waterloo BC                  8   143
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Apr                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Milnsbridge BC               2   139   v.   Dalton C &amp; BC                8   143                       
+Milnsbridge BC               2   139   v.   Dalton C & BC                8   143                       
 Almondbury BC                7   151   v.   Thorpe Green BC 'B'          3   111                       
 Springwood BC 'B'            4   132   v.   Golcar Libs                  6   144                       
 
@@ -62,7 +62,7 @@ Pudsey BC 'A'               10   203   v.   Alverthorpe WMC 'A'          2   127
 Crosland Moor 'A'            8   203   v.   Littlemoor 'A'               4   161                       
 Dearne Sports                9   192   v.   Crossgates BC 'A'            3   165                       
 Denby Grange BC 'A'          5   166   v.   Lower Hopton WMC 'A'         7   169                       
-Thongsbridge C &amp; BC 'A'      9   206   v.   Ossett Flying Horse 'A'      3   148                       
+Thongsbridge C & BC 'A'      9   206   v.   Ossett Flying Horse 'A'      3   148                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Apr                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -74,8 +74,8 @@ Woodlands Park              11   208   v.   Brighouse Sports 'A'         1   105
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Apr                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Littlemoor 'B'               9   185   v.   Elland C &amp; BC                3   154                       
-Almondbury Lib 'A'          10   199   v.   Ossett C &amp; AC                2   149                       
+Littlemoor 'B'               9   185   v.   Elland C & BC                3   154                       
+Almondbury Lib 'A'          10   199   v.   Ossett C & AC                2   149                       
 Spen Victoria 'A'            9   187   v.   The Harold Club 'A'          3   141                       
 Ossett Flying Horse 'B'      8   189   v.   Cleckheaton Sports 'A'       4   170                       
 Crossgates BC 'B'            7   178   v.   Morton House                 5   164                       
@@ -84,15 +84,15 @@ Crossgates BC 'B'            7   178   v.   Morton House                 5   164
 -------------------------------------------------------------------------------------------------------------------------
 Heckmondwike BC              4   159   v.   Crosland Moor 'B'            8   178                       
 Kirkheaton Con 'B'           2   160   v.   Thurgoland BC               10   197                       
-Broad Oak BC                 9   190   v.   Thongsbridge C &amp; BC 'B'      3   157                       
+Broad Oak BC                 9   190   v.   Thongsbridge C & BC 'B'      3   157                       
 Lowerhouses BC               9   185   v.   Spen Victoria 'B'            3   138                       
-Thornhill C &amp; BC             8   184   v.   Denby Grange BC 'B'          4   158                       
+Thornhill C & BC             8   184   v.   Denby Grange BC 'B'          4   158                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Apr                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Horbury WMC                  0    94   v.   Farsley BC                  10   168                       
 Netherton Con                7   151   v.   Cowcliffe Lib                3   128                       
-The Harold Club 'B'          3   129   v.   Slaithwaite C &amp; BC           7   138                       
+The Harold Club 'B'          3   129   v.   Slaithwaite C & BC           7   138                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Apr                                 Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ Rastrick BC                  6   149   v.   Shepley BC                   4   144
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Apr                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Dalton C &amp; BC                5   139   v.   Cleckheaton Sports 'C'       5   136                       
+Dalton C & BC                5   139   v.   Cleckheaton Sports 'C'       5   136                       
 Springwood BC 'B'            2   140   v.   Almondbury BC                8   164                       
 Thorpe Green BC 'B'          3   120   v.   Springwood BC 'A'            7   146                       
 
@@ -114,7 +114,7 @@ Littlemoor 'A'               7   167   v.   Dearne Sports                5   164
 Crosland Moor 'A'           10   207   v.   Denby Grange BC 'A'          2   132                       
 Lower Hopton WMC 'A'         9   199   v.   Alverthorpe WMC 'A'          3   160                       
 Ossett Flying Horse 'A'      8   181   v.   Pudsey BC 'A'                4   168                       
-Crossgates BC 'A'            8   192   v.   Thongsbridge C &amp; BC 'A'      4   168                       
+Crossgates BC 'A'            8   192   v.   Thongsbridge C & BC 'A'      4   168                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 2nd May                                  Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -126,9 +126,9 @@ Eccleshill                  10   202   v.   Woodlands Park               2   135
 -------------------------------------------------------------------------------------------------------------------------
             Tue 2nd May                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett C &amp; AC                7   186   v.   Spen Victoria 'A'            5   173                       
+Ossett C & AC                7   186   v.   Spen Victoria 'A'            5   173                       
 Almondbury Lib 'A'          11   208   v.   Ossett Flying Horse 'B'      1   159                       
-Cleckheaton Sports 'A'       9   190   v.   Elland C &amp; BC                3   172                       
+Cleckheaton Sports 'A'       9   190   v.   Elland C & BC                3   172                       
 Morton House                 8   186   v.   Littlemoor 'B'               4   173                       
 The Harold Club 'A'          4   150   v.   Crossgates BC 'B'            8   178                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -138,13 +138,13 @@ Thurgoland BC               10   200   v.   Broad Oak BC                 2   144
 Kirkheaton Con 'B'           5   170   v.   Lowerhouses BC               7   171                       
 Spen Victoria 'B'            4   154   v.   Crosland Moor 'B'            8   185                       
 Denby Grange BC 'B'          7   168   v.   Heckmondwike BC              5   167                       
-Thongsbridge C &amp; BC 'B'      7   178   v.   Thornhill C &amp; BC             5   169                       
+Thongsbridge C & BC 'B'      7   178   v.   Thornhill C & BC             5   169                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 2nd May                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Alverthorpe WMC 'B'          9   159   v.   Netherton Con                1   102                       
 Cowcliffe Lib                3   132   v.   Farsley BC                   7   149                       
-Slaithwaite C &amp; BC           6   153   v.   Horbury WMC                  4   135                       
+Slaithwaite C & BC           6   153   v.   Horbury WMC                  4   135                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 2nd May                                  Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ Thorpe Green BC 'A'          8   149   v.   Rastrick BC                  2   127
 -------------------------------------------------------------------------------------------------------------------------
 Almondbury BC                8   156   v.   Milnsbridge BC               2    96                       
 Cleckheaton Sports 'C'       3   126   v.   Thorpe Green BC 'B'          7   132                       
-Golcar Libs                  8   159   v.   Dalton C &amp; BC                2   105                       
+Golcar Libs                  8   159   v.   Dalton C & BC                2   105                       
 
 -------------------------------------------------------------------------------------------------------------------------
             Tue 9th May                                  Division 1                                             
@@ -166,7 +166,7 @@ Pudsey BC 'A'               10   200   v.   Lower Hopton WMC 'A'         2   139
 Alverthorpe WMC 'A'          7   177   v.   Ossett Flying Horse 'A'      5   144                       
 Dearne Sports                9   201   v.   Crosland Moor 'A'            3   172                       
 Denby Grange BC 'A'          4   162   v.   Crossgates BC 'A'            8   173                       
-Thongsbridge C &amp; BC 'A'     10   198   v.   Littlemoor 'A'               2   142                       
+Thongsbridge C & BC 'A'     10   198   v.   Littlemoor 'A'               2   142                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 9th May                                  Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -179,23 +179,23 @@ Woodlands Park               8   187   v.   Pudsey BC 'B'                4   155
             Tue 9th May                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Littlemoor 'B'              12   210   v.   Cleckheaton Sports 'A'       0   157                       
-Elland C &amp; BC                9   194   v.   Morton House                 3   141                       
+Elland C & BC                9   194   v.   Morton House                 3   141                       
 Spen Victoria 'A'            8   187   v.   Almondbury Lib 'A'           4   171                       
 Ossett Flying Horse 'B'      7   188   v.   The Harold Club 'A'          5   184                       
-Crossgates BC 'B'            9   186   v.   Ossett C &amp; AC                3   148                       
+Crossgates BC 'B'            9   186   v.   Ossett C & AC                3   148                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 9th May                                  Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
 Heckmondwike BC              6   172   v.   Spen Victoria 'B'            6   182                       
 Crosland Moor 'B'           11   208   v.   Denby Grange BC 'B'          1   105                       
 Broad Oak BC                 3   178   v.   Kirkheaton Con 'B'           9   187                       
-Lowerhouses BC               8   181   v.   Thongsbridge C &amp; BC 'B'      4   156                       
-Thornhill C &amp; BC             5   157   v.   Thurgoland BC                7   158                       
+Lowerhouses BC               8   181   v.   Thongsbridge C & BC 'B'      4   156                       
+Thornhill C & BC             5   157   v.   Thurgoland BC                7   158                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 9th May                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Horbury WMC                  8   155   v.   Cowcliffe Lib                2   102                       
-Farsley BC                   4   147   v.   Slaithwaite C &amp; BC           6   146                       
+Farsley BC                   4   147   v.   Slaithwaite C & BC           6   146                       
 Longwood BC                  5   140   v.   Alverthorpe WMC 'B'          5   140                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 9th May                                  Division 6                                             
@@ -215,7 +215,7 @@ Almondbury BC                7   145   v.   Golcar Libs                  3   121
             Tue 16th May                                 Division 1                                             
 -------------------------------------------------------------------------------------------------------------------------
 Littlemoor 'A'               8   189   v.   Pudsey BC 'A'                4   169                       
-Crosland Moor 'A'            7   181   v.   Thongsbridge C &amp; BC 'A'      5   172                       
+Crosland Moor 'A'            7   181   v.   Thongsbridge C & BC 'A'      5   172                       
 Dearne Sports                8   178   v.   Denby Grange BC 'A'          4   161                       
 Ossett Flying Horse 'A'      4   169   v.   Lower Hopton WMC 'A'         8   178                       
 Crossgates BC 'A'           11   209   v.   Alverthorpe WMC 'A'          1   121                       
@@ -230,25 +230,25 @@ Eccleshill                   8   192   v.   Kirkheaton Con 'A'           4   174
 -------------------------------------------------------------------------------------------------------------------------
             Tue 16th May                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett C &amp; AC               10   192   v.   Littlemoor 'B'               2   129                       
+Ossett C & AC               10   192   v.   Littlemoor 'B'               2   129                       
 Almondbury Lib 'A'          11   198   v.   Crossgates BC 'B'            1   148                       
 Spen Victoria 'A'           11   202   v.   Ossett Flying Horse 'B'      1   131                       
 Morton House                 8   183   v.   Cleckheaton Sports 'A'       4   147                       
-The Harold Club 'A'          8   192   v.   Elland C &amp; BC                4   142                       
+The Harold Club 'A'          8   192   v.   Elland C & BC                4   142                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 16th May                                 Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
 Thurgoland BC                8   186   v.   Heckmondwike BC              4   164                       
-Kirkheaton Con 'B'          10   181   v.   Thornhill C &amp; BC             2   159                       
+Kirkheaton Con 'B'          10   181   v.   Thornhill C & BC             2   159                       
 Broad Oak BC                 4   170   v.   Lowerhouses BC               8   182                       
 Denby Grange BC 'B'          7   185   v.   Spen Victoria 'B'            5   169                       
-Thongsbridge C &amp; BC 'B'      4   166   v.   Crosland Moor 'B'            8   169                       
+Thongsbridge C & BC 'B'      4   166   v.   Crosland Moor 'B'            8   169                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 16th May                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Alverthorpe WMC 'B'          6   128   v.   The Harold Club 'B'          4   120                       
 Longwood BC                  4   144   v.   Netherton Con                6   155                       
-Slaithwaite C &amp; BC           7   148   v.   Cowcliffe Lib                3   140                       
+Slaithwaite C & BC           7   148   v.   Cowcliffe Lib                3   140                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 16th May                                 Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -259,7 +259,7 @@ Thorpe Green BC 'A'          3   133   v.   Almondbury Lib 'B'           7   135
 -------------------------------------------------------------------------------------------------------------------------
             Tue 16th May                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Dalton C &amp; BC                5   150   v.   Springwood BC 'B'            5   142                       
+Dalton C & BC                5   150   v.   Springwood BC 'B'            5   142                       
 Springwood BC 'A'            3   131   v.   Almondbury BC                7   135                       
 Cleckheaton Sports 'C'       9   154   v.   Milnsbridge BC               1   119                       
 Golcar Libs                  3   138   v.   Thorpe Green BC 'B'          7   148                       
@@ -271,7 +271,7 @@ Pudsey BC 'A'                3   185   v.   Crosland Moor 'A'            9   198
 Alverthorpe WMC 'A'          8   168   v.   Littlemoor 'A'               4   164                       
 Lower Hopton WMC 'A'         5   160   v.   Crossgates BC 'A'            7   177                       
 Ossett Flying Horse 'A'      7   182   v.   Denby Grange BC 'A'          5   154                       
-Thongsbridge C &amp; BC 'A'      4   188   v.   Dearne Sports                8   190                       
+Thongsbridge C & BC 'A'      4   188   v.   Dearne Sports                8   190                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 23rd May                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -284,7 +284,7 @@ Woodlands Park              11   205   v.   Lower Hopton WMC 'B'         1   147
             Tue 23rd May                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Littlemoor 'B'               8   196   v.   Almondbury Lib 'A'           4   158                       
-Elland C &amp; BC                9   188   v.   Ossett C &amp; AC                3   158                       
+Elland C & BC                9   188   v.   Ossett C & AC                3   158                       
 Cleckheaton Sports 'A'       6   181   v.   The Harold Club 'A'          6   159                       
 Morton House                 5   165   v.   Ossett Flying Horse 'B'      7   183                       
 Crossgates BC 'B'            7   183   v.   Spen Victoria 'A'            5   166                       
@@ -293,14 +293,14 @@ Crossgates BC 'B'            7   183   v.   Spen Victoria 'A'            5   166
 -------------------------------------------------------------------------------------------------------------------------
 Heckmondwike BC              8   174   v.   Kirkheaton Con 'B'           4   147                       
 Crosland Moor 'B'            6   180   v.   Thurgoland BC                6   176                       
-Spen Victoria 'B'            7   194   v.   Thongsbridge C &amp; BC 'B'      5   162                       
+Spen Victoria 'B'            7   194   v.   Thongsbridge C & BC 'B'      5   162                       
 Denby Grange BC 'B'          4   160   v.   Lowerhouses BC               8   183                       
-Thornhill C &amp; BC                       v.   Broad Oak BC                                               To Mon 5th Jun
+Thornhill C & BC                       v.   Broad Oak BC                                               To Mon 5th Jun
 -------------------------------------------------------------------------------------------------------------------------
             Tue 23rd May                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Horbury WMC                  8   160   v.   Alverthorpe WMC 'B'          2   115                       
-Slaithwaite C &amp; BC           8   155   v.   Netherton Con                2   122                       
+Slaithwaite C & BC           8   155   v.   Netherton Con                2   122                       
 The Harold Club 'B'          7   144   v.   Longwood BC                  3   125                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 23rd May                                 Division 6                                             
@@ -314,7 +314,7 @@ Rastrick BC                  3   129   v.   Cleckheaton Sports 'B'       7   143
 -------------------------------------------------------------------------------------------------------------------------
 Almondbury BC                8   154   v.   Cleckheaton Sports 'C'       2   126                       
 Springwood BC 'A'            7   162   v.   Springwood BC 'B'            3   111                       
-Thorpe Green BC 'B'          9   155   v.   Dalton C &amp; BC                1    99                       
+Thorpe Green BC 'B'          9   155   v.   Dalton C & BC                1    99                       
 
 -------------------------------------------------------------------------------------------------------------------------
             Tue 30th May                                 Division 1                                             
@@ -322,7 +322,7 @@ Thorpe Green BC 'B'          9   155   v.   Dalton C &amp; BC                1  
 Littlemoor 'A'               8   187   v.   Lower Hopton WMC 'A'         4   161                       
 Crosland Moor 'A'           10   194   v.   Alverthorpe WMC 'A'          2   124                       
 Dearne Sports                6   175   v.   Pudsey BC 'A'                6   184                       
-Denby Grange BC 'A'          4   152   v.   Thongsbridge C &amp; BC 'A'      8   183                       
+Denby Grange BC 'A'          4   152   v.   Thongsbridge C & BC 'A'      8   183                       
 Crossgates BC 'A'           11   204   v.   Ossett Flying Horse 'A'      1   134                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 30th May                                 Division 2                                             
@@ -335,8 +335,8 @@ Eccleshill                   9   197   v.   Brighouse Sports 'A'         3   157
 -------------------------------------------------------------------------------------------------------------------------
             Tue 30th May                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett C &amp; AC                9   182   v.   Cleckheaton Sports 'A'       3   147                       
-Almondbury Lib 'A'          11   200   v.   Elland C &amp; BC                1   124                       
+Ossett C & AC                9   182   v.   Cleckheaton Sports 'A'       3   147                       
+Almondbury Lib 'A'          11   200   v.   Elland C & BC                1   124                       
 Spen Victoria 'A'            8   181   v.   Littlemoor 'B'               4   160                       
 Ossett Flying Horse 'B'      4   164   v.   Crossgates BC 'B'            8   178                       
 The Harold Club 'A'          5   172   v.   Morton House                 7   189                       
@@ -346,8 +346,8 @@ The Harold Club 'A'          5   172   v.   Morton House                 7   189
 Thurgoland BC                8   188   v.   Spen Victoria 'B'            4   157                       
 Kirkheaton Con 'B'           4   170   v.   Crosland Moor 'B'            8   185                       
 Broad Oak BC                 6   172   v.   Heckmondwike BC              6   162                       
-Lowerhouses BC               9   189   v.   Thornhill C &amp; BC             3   142                       
-Thongsbridge C &amp; BC 'B'     10   204   v.   Denby Grange BC 'B'          2   121                       
+Lowerhouses BC               9   189   v.   Thornhill C & BC             3   142                       
+Thongsbridge C & BC 'B'     10   204   v.   Denby Grange BC 'B'          2   121                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 30th May                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -371,12 +371,12 @@ Golcar Libs                  8   164   v.   Milnsbridge BC               2   126
 -------------------------------------------------------------------------------------------------------------------------
             Mon 5th Jun                                  Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
-Thornhill C &amp; BC            10   202   v.   Broad Oak BC                 2   164                       From Tue 23rd May
+Thornhill C & BC            10   202   v.   Broad Oak BC                 2   164                       From Tue 23rd May
 
 -------------------------------------------------------------------------------------------------------------------------
             Tue 6th Jun                                  Division 1                                             
 -------------------------------------------------------------------------------------------------------------------------
-Pudsey BC 'A'                8   183   v.   Thongsbridge C &amp; BC 'A'      4   162                       
+Pudsey BC 'A'                8   183   v.   Thongsbridge C & BC 'A'      4   162                       
 Alverthorpe WMC 'A'          7   179   v.   Denby Grange BC 'A'          5   172                       
 Lower Hopton WMC 'A'         9   197   v.   Dearne Sports                3   161                       
 Ossett Flying Horse 'A'      8   186   v.   Littlemoor 'A'               4   174                       
@@ -393,18 +393,18 @@ Eccleshill                  10   199   v.   Whitkirk BC                  2   143
             Tue 6th Jun                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Littlemoor 'B'              11   206   v.   Crossgates BC 'B'            1   160                       
-Elland C &amp; BC                7   189   v.   Ossett Flying Horse 'B'      5   159                       
+Elland C & BC                7   189   v.   Ossett Flying Horse 'B'      5   159                       
 Cleckheaton Sports 'A'       3   161   v.   Spen Victoria 'A'            9   174                       
-Morton House                 5   175   v.   Ossett C &amp; AC                7   185                       
+Morton House                 5   175   v.   Ossett C & AC                7   185                       
 The Harold Club 'A'          8   175   v.   Almondbury Lib 'A'           4   161                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 6th Jun                                  Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
-Heckmondwike BC              4   181   v.   Thornhill C &amp; BC             8   182                       
+Heckmondwike BC              4   181   v.   Thornhill C & BC             8   182                       
 Crosland Moor 'B'            8   185   v.   Lowerhouses BC               4   138                       
 Spen Victoria 'B'            9   193   v.   Broad Oak BC                 3   151                       
 Denby Grange BC 'B'          5   152   v.   Thurgoland BC                7   161                       
-Thongsbridge C &amp; BC 'B'      9   184   v.   Kirkheaton Con 'B'           3   161                       
+Thongsbridge C & BC 'B'      9   184   v.   Kirkheaton Con 'B'           3   161                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 6th Jun                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -422,7 +422,7 @@ Shepley BC                   8   157   v.   Grange Moor BC               2   127
             Tue 6th Jun                                  Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
 Milnsbridge BC               9   167   v.   Springwood BC 'B'            1   119                       
-Almondbury BC               10   168   v.   Dalton C &amp; BC                0   117                       
+Almondbury BC               10   168   v.   Dalton C & BC                0   117                       
 Springwood BC 'A'            6   150   v.   Golcar Libs                  4   137                       
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -432,7 +432,7 @@ Littlemoor 'A'              10   197   v.   Crossgates BC 'A'            2   137
 Crosland Moor 'A'            8   177   v.   Lower Hopton WMC 'A'         4   175                       
 Dearne Sports                9   190   v.   Ossett Flying Horse 'A'      3   149                       
 Denby Grange BC 'A'          8   191   v.   Pudsey BC 'A'                4   157                       
-Thongsbridge C &amp; BC 'A'     11   199   v.   Alverthorpe WMC 'A'          1   135                       
+Thongsbridge C & BC 'A'     11   199   v.   Alverthorpe WMC 'A'          1   135                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 13th Jun                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -444,24 +444,24 @@ Woodlands Park               5   169   v.   Kirkheaton Con 'A'           7   195
 -------------------------------------------------------------------------------------------------------------------------
             Tue 13th Jun                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett C &amp; AC               10   185   v.   The Harold Club 'A'          2   173                       
+Ossett C & AC               10   185   v.   The Harold Club 'A'          2   173                       
 Almondbury Lib 'A'          10   198   v.   Cleckheaton Sports 'A'       2   131                       
 Spen Victoria 'A'            8   187   v.   Morton House                 4   166                       
 Ossett Flying Horse 'B'      8   182   v.   Littlemoor 'B'               4   154                       
-Crossgates BC 'B'            9   186   v.   Elland C &amp; BC                3   148                       
+Crossgates BC 'B'            9   186   v.   Elland C & BC                3   148                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 13th Jun                                 Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
-Thurgoland BC               10   200   v.   Thongsbridge C &amp; BC 'B'      2   153                       
+Thurgoland BC               10   200   v.   Thongsbridge C & BC 'B'      2   153                       
 Kirkheaton Con 'B'          10   186   v.   Spen Victoria 'B'            2   150                       
 Broad Oak BC                10   195   v.   Denby Grange BC 'B'          2   127                       
 Lowerhouses BC               9   191   v.   Heckmondwike BC              3   130                       
-Thornhill C &amp; BC             3   164   v.   Crosland Moor 'B'            9   187                       
+Thornhill C & BC             3   164   v.   Crosland Moor 'B'            9   187                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 13th Jun                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Alverthorpe WMC 'B'          9   158   v.   Cowcliffe Lib                1   121                       
-Longwood BC                  3   135   v.   Slaithwaite C &amp; BC           7   155                       
+Longwood BC                  3   135   v.   Slaithwaite C & BC           7   155                       
 Netherton Con                4   127   v.   Horbury WMC                  6   141                       
 The Harold Club 'B'          7   139   v.   Farsley BC                   3   126                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -474,7 +474,7 @@ Rastrick BC                  1    91   v.   Almondbury Lib 'B'           9   160
 -------------------------------------------------------------------------------------------------------------------------
             Tue 13th Jun                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Dalton C &amp; BC                2   129   v.   Springwood BC 'A'            8   163                       
+Dalton C & BC                2   129   v.   Springwood BC 'A'            8   163                       
 Thorpe Green BC 'B'          7   156   v.   Milnsbridge BC               3   136                       
 Golcar Libs                  8   144   v.   Cleckheaton Sports 'C'       2   115                       
 
@@ -483,7 +483,7 @@ Golcar Libs                  8   144   v.   Cleckheaton Sports 'C'       2   115
 -------------------------------------------------------------------------------------------------------------------------
 Denby Grange BC 'A'          7   170   v.   Littlemoor 'A'               5   144                       
 Dearne Sports                9   191   v.   Alverthorpe WMC 'A'          3   134                       
-Thongsbridge C &amp; BC 'A'     11   202   v.   Lower Hopton WMC 'A'         1   123                       
+Thongsbridge C & BC 'A'     11   202   v.   Lower Hopton WMC 'A'         1   123                       
 Crosland Moor 'A'            7   186   v.   Ossett Flying Horse 'A'      5   151                       
 Pudsey BC 'A'               10   196   v.   Crossgates BC 'A'            2   151                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -497,8 +497,8 @@ Shipley BC                   5   155   v.   Eccleshill                   7   169
 -------------------------------------------------------------------------------------------------------------------------
             Tue 4th Jul                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Ossett Flying Horse 'B'      4   149   v.   Ossett C &amp; AC                8   182                       
-Spen Victoria 'A'            8   181   v.   Elland C &amp; BC                4   164                       
+Ossett Flying Horse 'B'      4   149   v.   Ossett C & AC                8   182                       
+Spen Victoria 'A'            8   181   v.   Elland C & BC                4   164                       
 Crossgates BC 'B'           10   191   v.   Cleckheaton Sports 'A'       2   113                       
 Almondbury Lib 'A'           9   194   v.   Morton House                 3   133                       
 Littlemoor 'B'               9   197   v.   The Harold Club 'A'          3   155                       
@@ -507,15 +507,15 @@ Littlemoor 'B'               9   197   v.   The Harold Club 'A'          3   155
 -------------------------------------------------------------------------------------------------------------------------
 Lowerhouses BC               8   181   v.   Thurgoland BC                4   162                       
 Broad Oak BC                 5   151   v.   Crosland Moor 'B'            7   178                       
-Thornhill C &amp; BC            10   189   v.   Spen Victoria 'B'            2   138                       
+Thornhill C & BC            10   189   v.   Spen Victoria 'B'            2   138                       
 Kirkheaton Con 'B'           9   178   v.   Denby Grange BC 'B'          3   145                       
-Heckmondwike BC              7   180   v.   Thongsbridge C &amp; BC 'B'      5   158                       
+Heckmondwike BC              7   180   v.   Thongsbridge C & BC 'B'      5   158                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 4th Jul                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Longwood BC                  2   124   v.   Farsley BC                   8   151                       
 The Harold Club 'B'          6   148   v.   Cowcliffe Lib                4   127                       
-Alverthorpe WMC 'B'         10   168   v.   Slaithwaite C &amp; BC           0   110                       
+Alverthorpe WMC 'B'         10   168   v.   Slaithwaite C & BC           0   110                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 4th Jul                                  Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -526,7 +526,7 @@ Waterloo BC                  7   139   v.   Rastrick BC                  3    95
 -------------------------------------------------------------------------------------------------------------------------
             Tue 4th Jul                                  Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Dalton C &amp; BC                8   152   v.   Milnsbridge BC               2   126                       
+Dalton C & BC                8   152   v.   Milnsbridge BC               2   126                       
 Thorpe Green BC 'B'          7   138   v.   Almondbury BC                3   126                       
 Golcar Libs                  9   166   v.   Springwood BC 'B'            1   105                       
 
@@ -537,7 +537,7 @@ Alverthorpe WMC 'A'          2   149   v.   Pudsey BC 'A'               10   196
 Littlemoor 'A'              11   208   v.   Crosland Moor 'A'            1   145                       
 Crossgates BC 'A'           10   195   v.   Dearne Sports                2   152                       
 Lower Hopton WMC 'A'         7   180   v.   Denby Grange BC 'A'          5   168                       
-Ossett Flying Horse 'A'      3   127   v.   Thongsbridge C &amp; BC 'A'      9   202                       
+Ossett Flying Horse 'A'      3   127   v.   Thongsbridge C & BC 'A'      9   202                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 11th Jul                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -549,8 +549,8 @@ Brighouse Sports 'A'         7   186   v.   Woodlands Park               5   164
 -------------------------------------------------------------------------------------------------------------------------
             Tue 11th Jul                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Elland C &amp; BC                8   180   v.   Littlemoor 'B'               4   175                       
-Ossett C &amp; AC                7   176   v.   Almondbury Lib 'A'           5   164                       
+Elland C & BC                8   180   v.   Littlemoor 'B'               4   175                       
+Ossett C & AC                7   176   v.   Almondbury Lib 'A'           5   164                       
 The Harold Club 'A'          2   169   v.   Spen Victoria 'A'           10   196                       
 Cleckheaton Sports 'A'       9   194   v.   Ossett Flying Horse 'B'      3   173                       
 Morton House                 8   176   v.   Crossgates BC 'B'            4   156                       
@@ -559,15 +559,15 @@ Morton House                 8   176   v.   Crossgates BC 'B'            4   156
 -------------------------------------------------------------------------------------------------------------------------
 Crosland Moor 'B'           12   210   v.   Heckmondwike BC              0   122                       
 Thurgoland BC                9   198   v.   Kirkheaton Con 'B'           3   123                       
-Thongsbridge C &amp; BC 'B'      7   174   v.   Broad Oak BC                 5   162                       
+Thongsbridge C & BC 'B'      7   174   v.   Broad Oak BC                 5   162                       
 Spen Victoria 'B'            9   189   v.   Lowerhouses BC               3   167                       
-Denby Grange BC 'B'          6   176   v.   Thornhill C &amp; BC             6   161                       
+Denby Grange BC 'B'          6   176   v.   Thornhill C & BC             6   161                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 11th Jul                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Farsley BC                   8   159   v.   Horbury WMC                  2   117                       
 Cowcliffe Lib                3   138   v.   Netherton Con                7   157                       
-Slaithwaite C &amp; BC           7   151   v.   The Harold Club 'B'          3   112                       
+Slaithwaite C & BC           7   151   v.   The Harold Club 'B'          3   112                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 11th Jul                                 Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -578,7 +578,7 @@ Shepley BC                  10   168   v.   Rastrick BC                  0   125
 -------------------------------------------------------------------------------------------------------------------------
             Tue 11th Jul                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Cleckheaton Sports 'C'       7   157   v.   Dalton C &amp; BC                3   113                       
+Cleckheaton Sports 'C'       7   157   v.   Dalton C & BC                3   113                       
 Almondbury BC                9   161   v.   Springwood BC 'B'            1   108                       
 Springwood BC 'A'            5   136   v.   Thorpe Green BC 'B'          5   148                       
 
@@ -589,7 +589,7 @@ Dearne Sports               10   200   v.   Littlemoor 'A'               2   130
 Denby Grange BC 'A'          8   186   v.   Crosland Moor 'A'            4   161                       
 Alverthorpe WMC 'A'          5   166   v.   Lower Hopton WMC 'A'         7   175                       
 Pudsey BC 'A'               10   200   v.   Ossett Flying Horse 'A'      2   127                       
-Thongsbridge C &amp; BC 'A'      8   190   v.   Crossgates BC 'A'            4   179                       
+Thongsbridge C & BC 'A'      8   190   v.   Crossgates BC 'A'            4   179                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Jul                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -601,9 +601,9 @@ Woodlands Park               8   188   v.   Eccleshill                   4   163
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Jul                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Spen Victoria 'A'            9   185   v.   Ossett C &amp; AC                3   156                       
+Spen Victoria 'A'            9   185   v.   Ossett C & AC                3   156                       
 Ossett Flying Horse 'B'      3   175   v.   Almondbury Lib 'A'           9   189                       
-Elland C &amp; BC                7   173   v.   Cleckheaton Sports 'A'       5   163                       
+Elland C & BC                7   173   v.   Cleckheaton Sports 'A'       5   163                       
 Littlemoor 'B'               8   187   v.   Morton House                 4   169                       
 Crossgates BC 'B'            8   182   v.   The Harold Club 'A'          4   143                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -613,13 +613,13 @@ Broad Oak BC                 2   138   v.   Thurgoland BC               10   199
 Lowerhouses BC               8   200   v.   Kirkheaton Con 'B'           4   156                       
 Crosland Moor 'B'           10   195   v.   Spen Victoria 'B'            2   138                       
 Heckmondwike BC              3   140   v.   Denby Grange BC 'B'          9   193                       
-Thornhill C &amp; BC            12   210   v.   Thongsbridge C &amp; BC 'B'      0   131                       
+Thornhill C & BC            12   210   v.   Thongsbridge C & BC 'B'      0   131                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Jul                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Netherton Con                          v.   Alverthorpe WMC 'B'                                        To Fri 21st Jul
 Farsley BC                   9   156   v.   Cowcliffe Lib                1   107                       
-Horbury WMC                  6   154   v.   Slaithwaite C &amp; BC           4   152                       
+Horbury WMC                  6   154   v.   Slaithwaite C & BC           4   152                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 18th Jul                                 Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -632,7 +632,7 @@ Rastrick BC                  5   122   v.   Thorpe Green BC 'A'          5   136
 -------------------------------------------------------------------------------------------------------------------------
 Milnsbridge BC               1    99   v.   Almondbury BC                9   160                       
 Thorpe Green BC 'B'          6   143   v.   Cleckheaton Sports 'C'       4   132                       
-Dalton C &amp; BC                4   110   v.   Golcar Libs                  6   124                       
+Dalton C & BC                4   110   v.   Golcar Libs                  6   124                       
 
 -------------------------------------------------------------------------------------------------------------------------
             Fri 21st Jul                                 Division 5                                             
@@ -646,7 +646,7 @@ Lower Hopton WMC 'A'         5   174   v.   Pudsey BC 'A'                7   181
 Ossett Flying Horse 'A'      8   192   v.   Alverthorpe WMC 'A'          4   164                       
 Crosland Moor 'A'           11   205   v.   Dearne Sports                1   149                       
 Crossgates BC 'A'           10   190   v.   Denby Grange BC 'A'          2   140                       
-Littlemoor 'A'               4   164   v.   Thongsbridge C &amp; BC 'A'      8   181                       
+Littlemoor 'A'               4   164   v.   Thongsbridge C & BC 'A'      8   181                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Jul                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -659,23 +659,23 @@ Pudsey BC 'B'                9   186   v.   Woodlands Park               3   138
             Tue 25th Jul                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Cleckheaton Sports 'A'       9   190   v.   Littlemoor 'B'               3   155                       
-Morton House                10   194   v.   Elland C &amp; BC                2   147                       
+Morton House                10   194   v.   Elland C & BC                2   147                       
 Almondbury Lib 'A'          10   193   v.   Spen Victoria 'A'            2   142                       
 The Harold Club 'A'          8   188   v.   Ossett Flying Horse 'B'      4   169                       
-Ossett C &amp; AC                6   186   v.   Crossgates BC 'B'            6   186                       
+Ossett C & AC                6   186   v.   Crossgates BC 'B'            6   186                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Jul                                 Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
 Spen Victoria 'B'           10   203   v.   Heckmondwike BC              2   163                       
 Denby Grange BC 'B'          3   160   v.   Crosland Moor 'B'            9   183                       
 Kirkheaton Con 'B'          10   192   v.   Broad Oak BC                 2   147                       
-Thongsbridge C &amp; BC 'B'     10   200   v.   Lowerhouses BC               2   129                       
-Thurgoland BC               11   203   v.   Thornhill C &amp; BC             1   126                       
+Thongsbridge C & BC 'B'     10   200   v.   Lowerhouses BC               2   129                       
+Thurgoland BC               11   203   v.   Thornhill C & BC             1   126                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Jul                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Cowcliffe Lib                8   154   v.   Horbury WMC                  2   115                       
-Slaithwaite C &amp; BC           3   137   v.   Farsley BC                   7   151                       
+Slaithwaite C & BC           3   137   v.   Farsley BC                   7   151                       
 Alverthorpe WMC 'B'          7   152   v.   Longwood BC                  3   113                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 25th Jul                                 Division 6                                             
@@ -695,7 +695,7 @@ Golcar Libs                  8   142   v.   Almondbury BC                2   137
             Tue 1st Aug                                  Division 1                                             
 -------------------------------------------------------------------------------------------------------------------------
 Pudsey BC 'A'               10   199   v.   Littlemoor 'A'               2   127                       
-Thongsbridge C &amp; BC 'A'      8   174   v.   Crosland Moor 'A'            4   172                       
+Thongsbridge C & BC 'A'      8   174   v.   Crosland Moor 'A'            4   172                       
 Denby Grange BC 'A'          8   183   v.   Dearne Sports                4   180                       
 Lower Hopton WMC 'A'         7   181   v.   Ossett Flying Horse 'A'      5   175                       
 Alverthorpe WMC 'A'          5   148   v.   Crossgates BC 'A'            7   184                       
@@ -710,25 +710,25 @@ Kirkheaton Con 'A'           8   182   v.   Eccleshill                   4   154
 -------------------------------------------------------------------------------------------------------------------------
             Tue 1st Aug                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Littlemoor 'B'               9   179   v.   Ossett C &amp; AC                3   128                       
+Littlemoor 'B'               9   179   v.   Ossett C & AC                3   128                       
 Crossgates BC 'B'           10   195   v.   Almondbury Lib 'A'           2   147                       
 Ossett Flying Horse 'B'      7   194   v.   Spen Victoria 'A'            5   156                       
 Cleckheaton Sports 'A'      10   201   v.   Morton House                 2   153                       
-Elland C &amp; BC                5   167   v.   The Harold Club 'A'          7   180                       
+Elland C & BC                5   167   v.   The Harold Club 'A'          7   180                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 1st Aug                                  Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
 Heckmondwike BC              6   172   v.   Thurgoland BC                6   194                       
-Thornhill C &amp; BC            12   210   v.   Kirkheaton Con 'B'           0   107                       
+Thornhill C & BC            12   210   v.   Kirkheaton Con 'B'           0   107                       
 Lowerhouses BC              10   198   v.   Broad Oak BC                 2   143                       
 Spen Victoria 'B'            9   176   v.   Denby Grange BC 'B'          3   159                       
-Crosland Moor 'B'            9   199   v.   Thongsbridge C &amp; BC 'B'      3   153                       
+Crosland Moor 'B'            9   199   v.   Thongsbridge C & BC 'B'      3   153                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 1st Aug                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 The Harold Club 'B'          7   141   v.   Alverthorpe WMC 'B'          3   132                       
 Netherton Con                6   139   v.   Longwood BC                  4   130                       
-Cowcliffe Lib                6   145   v.   Slaithwaite C &amp; BC           4   125                       
+Cowcliffe Lib                6   145   v.   Slaithwaite C & BC           4   125                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 1st Aug                                  Division 6                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -739,7 +739,7 @@ Almondbury Lib 'B'           7   150   v.   Thorpe Green BC 'A'          3   135
 -------------------------------------------------------------------------------------------------------------------------
             Tue 1st Aug                                  Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Springwood BC 'B'            6   135   v.   Dalton C &amp; BC                4   132                       
+Springwood BC 'B'            6   135   v.   Dalton C & BC                4   132                       
 Almondbury BC                8   163   v.   Springwood BC 'A'            2   120                       
 Milnsbridge BC               3   146   v.   Cleckheaton Sports 'C'       7   155                       
 Thorpe Green BC 'B'          8   145   v.   Golcar Libs                  2   127                       
@@ -751,7 +751,7 @@ Crosland Moor 'A'            7   187   v.   Pudsey BC 'A'                5   185
 Littlemoor 'A'               8   185   v.   Alverthorpe WMC 'A'          4   156                       
 Crossgates BC 'A'            9   195   v.   Lower Hopton WMC 'A'         3   158                       
 Denby Grange BC 'A'          9   198   v.   Ossett Flying Horse 'A'      3   149                       
-Dearne Sports                9   180   v.   Thongsbridge C &amp; BC 'A'      3   153                       
+Dearne Sports                9   180   v.   Thongsbridge C & BC 'A'      3   153                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 8th Aug                                  Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -764,7 +764,7 @@ Lower Hopton WMC 'B'         4   179   v.   Woodlands Park               8   192
             Tue 8th Aug                                  Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Almondbury Lib 'A'          11   207   v.   Littlemoor 'B'               1   128                       
-Ossett C &amp; AC                5   164   v.   Elland C &amp; BC                7   165                       
+Ossett C & AC                5   164   v.   Elland C & BC                7   165                       
 The Harold Club 'A'          9   177   v.   Cleckheaton Sports 'A'       3   132                       
 Ossett Flying Horse 'B'      7   185   v.   Morton House                 5   161                       
 Spen Victoria 'A'            3   165   v.   Crossgates BC 'B'            9   201                       
@@ -773,14 +773,14 @@ Spen Victoria 'A'            3   165   v.   Crossgates BC 'B'            9   201
 -------------------------------------------------------------------------------------------------------------------------
 Kirkheaton Con 'B'           7   184   v.   Heckmondwike BC              5   161                       
 Thurgoland BC                4   175   v.   Crosland Moor 'B'            8   178                       
-Thongsbridge C &amp; BC 'B'      6   160   v.   Spen Victoria 'B'            6   175                       
+Thongsbridge C & BC 'B'      6   160   v.   Spen Victoria 'B'            6   175                       
 Lowerhouses BC               8   174   v.   Denby Grange BC 'B'          4   155                       
-Broad Oak BC                 5   178   v.   Thornhill C &amp; BC             7   179                       
+Broad Oak BC                 5   178   v.   Thornhill C & BC             7   179                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 8th Aug                                  Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Alverthorpe WMC 'B'          4   140   v.   Horbury WMC                  6   146                       
-Netherton Con                7   144   v.   Slaithwaite C &amp; BC           3   123                       
+Netherton Con                7   144   v.   Slaithwaite C & BC           3   123                       
 Longwood BC                  2   128   v.   The Harold Club 'B'          8   152                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 8th Aug                                  Division 6                                             
@@ -794,7 +794,7 @@ Cleckheaton Sports 'B'       8   158   v.   Rastrick BC                  2   105
 -------------------------------------------------------------------------------------------------------------------------
 Cleckheaton Sports 'C'       4   144   v.   Almondbury BC                6   154                       
 Springwood BC 'B'            2   114   v.   Springwood BC 'A'            8   160                       
-Dalton C &amp; BC                5   132   v.   Thorpe Green BC 'B'          5   155                       
+Dalton C & BC                5   132   v.   Thorpe Green BC 'B'          5   155                       
 
 -------------------------------------------------------------------------------------------------------------------------
             Tue 15th Aug                                 Division 1                                             
@@ -802,7 +802,7 @@ Dalton C &amp; BC                5   132   v.   Thorpe Green BC 'B'          5  
 Lower Hopton WMC 'A'        10   208   v.   Littlemoor 'A'               2   156                       
 Alverthorpe WMC 'A'          3   171   v.   Crosland Moor 'A'            9   198                       
 Pudsey BC 'A'               10   197   v.   Dearne Sports                2   139                       
-Thongsbridge C &amp; BC 'A'     10   198   v.   Denby Grange BC 'A'          2   148                       
+Thongsbridge C & BC 'A'     10   198   v.   Denby Grange BC 'A'          2   148                       
 Ossett Flying Horse 'A'      2   142   v.   Crossgates BC 'A'           10   193                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 15th Aug                                 Division 2                                             
@@ -815,8 +815,8 @@ Brighouse Sports 'A'         2   157   v.   Eccleshill                  10   199
 -------------------------------------------------------------------------------------------------------------------------
             Tue 15th Aug                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-Cleckheaton Sports 'A'       7   183   v.   Ossett C &amp; AC                5   173                       
-Elland C &amp; BC                6   168   v.   Almondbury Lib 'A'           6   158                       
+Cleckheaton Sports 'A'       7   183   v.   Ossett C & AC                5   173                       
+Elland C & BC                6   168   v.   Almondbury Lib 'A'           6   158                       
 Littlemoor 'B'              10   200   v.   Spen Victoria 'A'            2   144                       
 Crossgates BC 'B'           11   208   v.   Ossett Flying Horse 'B'      1   138                       
 Morton House                10   191   v.   The Harold Club 'A'          2   149                       
@@ -826,8 +826,8 @@ Morton House                10   191   v.   The Harold Club 'A'          2   149
 Spen Victoria 'B'            2   155   v.   Thurgoland BC               10   197                       
 Crosland Moor 'B'            9   197   v.   Kirkheaton Con 'B'           3   125                       
 Heckmondwike BC              8   175   v.   Broad Oak BC                 4   136                       
-Thornhill C &amp; BC            11   204   v.   Lowerhouses BC               1   168                       
-Denby Grange BC 'B'          4   181   v.   Thongsbridge C &amp; BC 'B'      8   194                       
+Thornhill C & BC            11   204   v.   Lowerhouses BC               1   168                       
+Denby Grange BC 'B'          4   181   v.   Thongsbridge C & BC 'B'      8   194                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 15th Aug                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -851,7 +851,7 @@ Milnsbridge BC               3   139   v.   Golcar Libs                  7   151
 -------------------------------------------------------------------------------------------------------------------------
             Tue 22nd Aug                                 Division 1                                             
 -------------------------------------------------------------------------------------------------------------------------
-Thongsbridge C &amp; BC 'A'      3   171   v.   Pudsey BC 'A'                9   176                       
+Thongsbridge C & BC 'A'      3   171   v.   Pudsey BC 'A'                9   176                       
 Denby Grange BC 'A'          9   192   v.   Alverthorpe WMC 'A'          3   162                       
 Dearne Sports                9   193   v.   Lower Hopton WMC 'A'         3   148                       
 Littlemoor 'A'              10   193   v.   Ossett Flying Horse 'A'      2   140                       
@@ -868,18 +868,18 @@ Whitkirk BC                  9   193   v.   Eccleshill                   3   164
             Tue 22nd Aug                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
 Crossgates BC 'B'            8   190   v.   Littlemoor 'B'               4   134                       
-Ossett Flying Horse 'B'     10   198   v.   Elland C &amp; BC                2   132                       
+Ossett Flying Horse 'B'     10   198   v.   Elland C & BC                2   132                       
 Spen Victoria 'A'           10   194   v.   Cleckheaton Sports 'A'       2   148                       
-Ossett C &amp; AC                8   182   v.   Morton House                 4   156                       
+Ossett C & AC                8   182   v.   Morton House                 4   156                       
 Almondbury Lib 'A'           9   199   v.   The Harold Club 'A'          3   141                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 22nd Aug                                 Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
-Thornhill C &amp; BC            10   201   v.   Heckmondwike BC              2   150                       
+Thornhill C & BC            10   201   v.   Heckmondwike BC              2   150                       
 Lowerhouses BC               8   194   v.   Crosland Moor 'B'            4   173                       
 Broad Oak BC                11   208   v.   Spen Victoria 'B'            1   133                       
 Thurgoland BC               10   200   v.   Denby Grange BC 'B'          2   129                       
-Kirkheaton Con 'B'           8   181   v.   Thongsbridge C &amp; BC 'B'      4   155                       
+Kirkheaton Con 'B'           8   181   v.   Thongsbridge C & BC 'B'      4   155                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 22nd Aug                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -897,7 +897,7 @@ Grange Moor BC               8   143   v.   Shepley BC                   2   131
             Tue 22nd Aug                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
 Springwood BC 'B'            8   142   v.   Milnsbridge BC               2   123                       
-Dalton C &amp; BC                2   127   v.   Almondbury BC                8   159                       
+Dalton C & BC                2   127   v.   Almondbury BC                8   159                       
 Golcar Libs                  5   123   v.   Springwood BC 'A'            5   128                       
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -907,7 +907,7 @@ Crossgates BC 'A'           10   202   v.   Littlemoor 'A'               2   113
 Lower Hopton WMC 'A'         5   163   v.   Crosland Moor 'A'            7   172                       
 Ossett Flying Horse 'A'      6   176   v.   Dearne Sports                6   180                       
 Pudsey BC 'A'               10   190   v.   Denby Grange BC 'A'          2   135                       
-Alverthorpe WMC 'A'          3   161   v.   Thongsbridge C &amp; BC 'A'      9   196                       
+Alverthorpe WMC 'A'          3   161   v.   Thongsbridge C & BC 'A'      9   196                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 29th Aug                                 Division 2                                             
 -------------------------------------------------------------------------------------------------------------------------
@@ -919,24 +919,24 @@ Kirkheaton Con 'A'           5   174   v.   Woodlands Park               7   180
 -------------------------------------------------------------------------------------------------------------------------
             Tue 29th Aug                                 Division 3                                             
 -------------------------------------------------------------------------------------------------------------------------
-The Harold Club 'A'          3   162   v.   Ossett C &amp; AC                9   184                       
+The Harold Club 'A'          3   162   v.   Ossett C & AC                9   184                       
 Cleckheaton Sports 'A'       9   166   v.   Almondbury Lib 'A'           3   147                       
 Morton House                10   201   v.   Spen Victoria 'A'            2   137                       
 Littlemoor 'B'               8   174   v.   Ossett Flying Horse 'B'      4   159                       
-Elland C &amp; BC               10   196   v.   Crossgates BC 'B'            2   157                       
+Elland C & BC               10   196   v.   Crossgates BC 'B'            2   157                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 29th Aug                                 Division 4                                             
 -------------------------------------------------------------------------------------------------------------------------
-Thongsbridge C &amp; BC 'B'      8   193   v.   Thurgoland BC                4   159                       
+Thongsbridge C & BC 'B'      8   193   v.   Thurgoland BC                4   159                       
 Spen Victoria 'B'            5   151   v.   Kirkheaton Con 'B'           7   175                       
 Denby Grange BC 'B'          8   177   v.   Broad Oak BC                 4   176                       
 Heckmondwike BC              4   167   v.   Lowerhouses BC               8   173                       
-Crosland Moor 'B'            9   185   v.   Thornhill C &amp; BC             3   147                       
+Crosland Moor 'B'            9   185   v.   Thornhill C & BC             3   147                       
 -------------------------------------------------------------------------------------------------------------------------
             Tue 29th Aug                                 Division 5                                             
 -------------------------------------------------------------------------------------------------------------------------
 Cowcliffe Lib                9   166   v.   Alverthorpe WMC 'B'          1    79                       
-Slaithwaite C &amp; BC           8   160   v.   Longwood BC                  2   101                       
+Slaithwaite C & BC           8   160   v.   Longwood BC                  2   101                       
 Horbury WMC                  7   152   v.   Netherton Con                3   138                       
 Farsley BC                   9   162   v.   The Harold Club 'B'          1   101                       
 -------------------------------------------------------------------------------------------------------------------------
@@ -949,7 +949,7 @@ Almondbury Lib 'B'           5   158   v.   Rastrick BC                  5   147
 -------------------------------------------------------------------------------------------------------------------------
             Tue 29th Aug                                 Division 7                                             
 -------------------------------------------------------------------------------------------------------------------------
-Springwood BC 'A'            9   166   v.   Dalton C &amp; BC                1    98                       
+Springwood BC 'A'            9   166   v.   Dalton C & BC                1    98                       
 Milnsbridge BC               8   159   v.   Thorpe Green BC 'B'          2   108                       
 Cleckheaton Sports 'C'       8   153   v.   Golcar Libs                  2   136                       
 
@@ -961,7 +961,7 @@ Crossgates BC 'A'          141         v.   Pudsey BC 'A'              161      
 Lower Hopton WMC 'A'       141         v.   Littlemoor 'A'             140        On THE HAROLD CLUB   
 Kirkheaton Con 'A'         146         v.   Ossett Flying Horse 'A'    136        On BRIGHOUSE         
 Crosland Moor 'A'          167         v.   Rothwell BC                110        On LITTLEMOOR        
-Shipley BC                 137         v.   Thongsbridge C &amp; BC 'A'    152        On HECKMONDWIKE BC   
+Shipley BC                 137         v.   Thongsbridge C & BC 'A'    152        On HECKMONDWIKE BC   
 Dodworth MW                139         v.   Pudsey BC 'B'              140        On HORBURY WMC       
 Brighouse Sports 'A'       110         v.   Dearne Sports              151        On CLECK SPORTS 1    
 Woodlands Park             147         v.   Eccleshill                 124        On CROSSGATES BC     
@@ -971,7 +971,7 @@ Woodlands Park             147         v.   Eccleshill                 124      
                                                          Qtr-Finals                                             
 -------------------------------------------------------------------------------------------------------------------------
 Pudsey BC 'A'              158         v.   Lower Hopton WMC 'A'       126        On RASTRICK          
-Thongsbridge C &amp; BC 'A'    158         v.   Kirkheaton Con 'A'         131        On LOWERHOUSES BC    
+Thongsbridge C & BC 'A'    158         v.   Kirkheaton Con 'A'         131        On LOWERHOUSES BC    
 Woodlands Park             111         v.   Dearne Sports              164        On LOWER HOPTON      
 Pudsey BC 'B'              141         v.   Crosland Moor 'A'          154        On BRIGHOUSE         
 
@@ -979,14 +979,14 @@ Pudsey BC 'B'              141         v.   Crosland Moor 'A'          154      
             Tue 26th Sep                           Allan Thompson Trophy                                        
                                                         Semi-Finals                                             
 -------------------------------------------------------------------------------------------------------------------------
-Pudsey BC 'A'              131         v.   Thongsbridge C &amp; BC 'A'    149        On BRIGHOUSE         
+Pudsey BC 'A'              131         v.   Thongsbridge C & BC 'A'    149        On BRIGHOUSE         
 Dearne Sports              123         v.   Crosland Moor 'A'          138        On BRIGHOUSE 2       
 
 -------------------------------------------------------------------------------------------------------------------------
             Thu 28th Sep                           Allan Thompson Trophy                                        
                                                            Final                                                
 -------------------------------------------------------------------------------------------------------------------------
-Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127        On MIRFIELD O B      
+Thongsbridge C & BC 'A'    152         v.   Crosland Moor 'A'          127        On MIRFIELD O B      
 
 
 === Current LEAGUE TABLES
@@ -995,7 +995,7 @@ Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127  
  Pos  Team                       Pl    W    L    For
 ====  ========================  ===  ===  ===  =====  
   1.  Pudsey BC 'A'              18   11    5    136
-  2.  Thongsbridge C &amp; BC 'A'    18   12    6    133
+  2.  Thongsbridge C & BC 'A'    18   12    6    133
   3.  Crossgates BC 'A'          18   12    5    131
   4.  Crosland Moor 'A'          18   13    5    123
   5.  Dearne Sports              18   10    6    118
@@ -1027,10 +1027,10 @@ Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127  
   1.  Almondbury Lib 'A'         18   10    7    134
   2.  Crossgates BC 'B'          18   13    4    127
   3.  Spen Victoria 'A'          18   11    7    123
-  4.  Ossett C &amp; AC              18   10    7    115
+  4.  Ossett C & AC              18   10    7    115
   5.  Littlemoor 'B'             18    9    9    114
   6.  Morton House               18    8   10    108
-  7.  Elland C &amp; BC              18    7   10     93
+  7.  Elland C & BC              18    7   10     93
   8.  The Harold Club 'A'        18    6   11     90
   9.  Cleckheaton Sports 'A'     18    6   11     90
  10.  Ossett Flying Horse 'B'    18    7   11     86
@@ -1042,9 +1042,9 @@ Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127  
   1.  Crosland Moor 'B'          18   16    1    151
   2.  Thurgoland BC              18   13    3    142
   3.  Lowerhouses BC             18   13    5    122
-  4.  Thornhill C &amp; BC           18    9    8    119
+  4.  Thornhill C & BC           18    9    8    119
   5.  Kirkheaton Con 'B'         18    8   10    102
-  6.  Thongsbridge C &amp; BC 'B'    18    7   10     99
+  6.  Thongsbridge C & BC 'B'    18    7   10     99
   7.  Spen Victoria 'B'          18    6   10     95
   8.  Heckmondwike BC            18    4   11     85
   9.  Broad Oak BC               18    3   14     83
@@ -1055,7 +1055,7 @@ Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127  
  Pos  Team                       Pl    W    L    For
 ====  ========================  ===  ===  ===  =====  
   1.  Farsley BC                 14   10    4     94
-  2.  Slaithwaite C &amp; BC         14    9    5     76
+  2.  Slaithwaite C & BC         14    9    5     76
   3.  Horbury WMC                14    9    5     75
   4.  Alverthorpe WMC 'B'        14    6    7     74
   5.  Netherton Con              14    9    5     71
@@ -1086,7 +1086,7 @@ Thongsbridge C &amp; BC 'A'    152         v.   Crosland Moor 'A'          127  
   3.  Springwood BC 'A'          14    8    4     79
   4.  Golcar Libs                14    8    5     79
   5.  Cleckheaton Sports 'C'     14    7    6     76
-  6.  Dalton C &amp; BC              14    2    9     50
+  6.  Dalton C & BC              14    2    9     50
   7.  Milnsbridge BC             14    3   11     48
   8.  Springwood BC 'B'          14    2   11     46
 
@@ -1123,7 +1123,7 @@ Nathan Webster       21  Roger Norris        20
        Aggregate:   153        Aggregate:   191
 
       Division 1              Tue 18th Apr
- Lower Hopton WMC 'A'    Thongsbridge C &amp; BC 'A
+ Lower Hopton WMC 'A'    Thongsbridge C & BC 'A
 Ryan Clark           21  Andy Sorsby         10
 Ben Halliday         14  Nick White          21
 Finley Hickey        21  Chris Kelly         20
@@ -1243,7 +1243,7 @@ John Benson          12  Adam Mellor         21
        Aggregate:   182        Aggregate:   173
 
       Division 3              Tue 18th Apr
-     Ossett C &amp; AC       Ossett Flying Horse 'B
+     Ossett C & AC       Ossett Flying Horse 'B
 Robert Dunford       21  Tim Chadwick         6
 Stuart Daniel        21  Malcolm Preston     17
 Andrew Callaghan     10  Andy Hoult          21
@@ -1258,7 +1258,7 @@ Graeme Eyre          21  Graham Blenkinsop   20
        Aggregate:   190        Aggregate:   169
 
       Division 3              Tue 18th Apr
-     Elland C &amp; BC         Spen Victoria 'A'
+     Elland C & BC         Spen Victoria 'A'
 Russell Broadbent    20  Garry Walker        21
 Darren Hennessey     15  Mally Fowler        21
 Steve Kenworthy       8  Andrew Gallagher    21
@@ -1348,7 +1348,7 @@ John Greenhalgh      21  Brendan Gilbert      9
        Aggregate:   174        Aggregate:   144
 
       Division 4              Tue 18th Apr
-   Spen Victoria 'B'        Thornhill C &amp; BC
+   Spen Victoria 'B'        Thornhill C & BC
 Derek Goor           21  Ben Gibson          17
 Steve Kemp           21  Jason Woodhouse     10
 Peter Senior         21  Gary Mountain       15
@@ -1378,7 +1378,7 @@ Danny Walker         21  Tom Kaye             9
        Aggregate:   184        Aggregate:   150
 
       Division 4              Tue 18th Apr
-Thongsbridge C &amp; BC 'B'     Heckmondwike BC
+Thongsbridge C & BC 'B'     Heckmondwike BC
 S Ross               19  Darren Schofield    21
 Roy Smith            17  Sean Carter         21
 Joshua Stephens      15  Paul Warwick        21
@@ -1419,7 +1419,7 @@ Derrick Hewitt       21  Eddie Hill          19
        Aggregate:   167        Aggregate:   119
 
       Division 5              Tue 18th Apr
-  Slaithwaite C &amp; BC      Alverthorpe WMC 'B'
+  Slaithwaite C & BC      Alverthorpe WMC 'B'
 Robert Morgan        18  John Smart          21
 Trevor Eckersley     19  Michael Cooney      21
 Robert Gartside      21  Richard Ramsden     11
@@ -1484,7 +1484,7 @@ John Ramsden         18  Tom Fletcher        21
        Aggregate:   116        Aggregate:   143
 
       Division 7              Tue 18th Apr
-    Milnsbridge BC           Dalton C &amp; BC
+    Milnsbridge BC           Dalton C & BC
 David Peacock        21  Keith Clarkson       5
 Ian Parr             21  Philip Battye       12
 Steven Baldwin       12  David Hill          21
@@ -1583,7 +1583,7 @@ Stephen Walker       21  Ryan Clark          18
        Aggregate:   166        Aggregate:   169
 
       Division 1              Tue 25th Apr
-Thongsbridge C &amp; BC 'A'  Ossett Flying Horse 'A
+Thongsbridge C & BC 'A'  Ossett Flying Horse 'A
 Chris Kelly          21  Leighton Shuttleworth                                                                                                                                                                                                                                                               17
 Sam Day              21  Graham Blenkinsop   14
 Craig Gant           21  Paul Wildgoose       7
@@ -1673,7 +1673,7 @@ Andy Jones           21  Tony Riley          15
        Aggregate:   208        Aggregate:   105
 
       Division 3              Tue 25th Apr
-    Littlemoor 'B'           Elland C &amp; BC
+    Littlemoor 'B'           Elland C & BC
 Neil McPhail         21  David Greenwood     14
 Phil Vayro           21  Steve Kenworthy     11
 Nathan Dobson        21  Mark Luford         12
@@ -1688,7 +1688,7 @@ Adam Wider           13  Darren Hennessey    21
        Aggregate:   185        Aggregate:   154
 
       Division 3              Tue 25th Apr
-  Almondbury Lib 'A'         Ossett C &amp; AC
+  Almondbury Lib 'A'         Ossett C & AC
 Michael Martin       21  Martin Cross         2
 Mick Higgins         21  Stuart Daniel       10
 Daniel Beeby         16  Joshua Dunford      21
@@ -1778,7 +1778,7 @@ Daniel Kilburn       20  Fred Tippett        21
        Aggregate:   160        Aggregate:   197
 
       Division 4              Tue 25th Apr
-     Broad Oak BC        Thongsbridge C &amp; BC 'B
+     Broad Oak BC        Thongsbridge C & BC 'B
 Martin Moran         21  Roy Smith           11
 Rhys Beaumont        21  Brian Moroney       17
 Martin Burgess       21  Mike Luty           18
@@ -1808,7 +1808,7 @@ Kevin Sykes           4  Peter Senior        21
        Aggregate:   185        Aggregate:   138
 
       Division 4              Tue 25th Apr
-   Thornhill C &amp; BC       Denby Grange BC 'B'
+   Thornhill C & BC       Denby Grange BC 'B'
 Aiden Fox            21  George Fisher        7
 Stephen Wainwright   21  Chris Shires        20
 Graham Sheard        21  Liam Redican         9
@@ -1849,7 +1849,7 @@ Rob Parker           17  Derrick Hewitt      21
        Aggregate:   151        Aggregate:   128
 
       Division 5              Tue 25th Apr
-  The Harold Club 'B'      Slaithwaite C &amp; BC
+  The Harold Club 'B'      Slaithwaite C & BC
 Vincent Cleary        9  Colin Haywood       21
 Eddie Hill           21  Robert Morgan       15
 Ian Boldy            12  Mick Mozley         21
@@ -1914,7 +1914,7 @@ Geoff Normanton      21  Simon Whitwham      16
        Aggregate:   149        Aggregate:   144
 
       Division 7              Tue 25th Apr
-     Dalton C &amp; BC       Cleckheaton Sports 'C'
+     Dalton C & BC       Cleckheaton Sports 'C'
 Percy Harrison       12  Chris Bray          21
 David Hill           21  John Dyson          14
 Trevor Boothroyd     21  Chris Piercy         9
@@ -2013,7 +2013,7 @@ Ernie Wearing         9  Ian Shaw            21
        Aggregate:   181        Aggregate:   168
 
       Division 1              Tue 2nd May
-   Crossgates BC 'A'     Thongsbridge C &amp; BC 'A
+   Crossgates BC 'A'     Thongsbridge C & BC 'A
 Mark Taylor          21  Andy Sorsby         20
 Liam Griffin         21  Jonathan Sneddon     9
 Jonathan Wilcox      21  Chris Kelly         11
@@ -2103,7 +2103,7 @@ Chris Hight          21  Andy Mailer         14
        Aggregate:   202        Aggregate:   135
 
       Division 3              Tue 2nd May
-     Ossett C &amp; AC         Spen Victoria 'A'
+     Ossett C & AC         Spen Victoria 'A'
 Robert Dunford       21  Chris Ellis         15
 Stuart Daniel        21  Paul Blackburn      12
 Nigel Miller         21  Peter Ellis         13
@@ -2133,7 +2133,7 @@ Andrew Heaume        21  Tim Chadwick         9
        Aggregate:   208        Aggregate:   159
 
       Division 3              Tue 2nd May
-Cleckheaton Sports 'A'       Elland C &amp; BC
+Cleckheaton Sports 'A'       Elland C & BC
 John Wilson          21  Tony Dubaj          10
 Joe Bray             21  Russell Broadbent   13
 Richard Firth        21  David Greenwood     13
@@ -2238,7 +2238,7 @@ Raymond Hughes       13  Paul Warwick        21
        Aggregate:   168        Aggregate:   167
 
       Division 4              Tue 2nd May
-Thongsbridge C &amp; BC 'B'     Thornhill C &amp; BC
+Thongsbridge C & BC 'B'     Thornhill C & BC
 Joshua Stephens      13  Johny Smith         21
 Lyndon Campbell      18  Ryan Mitchell       21
 Ben Hirst            21  Bob Collomosse       6
@@ -2279,7 +2279,7 @@ Derrick Hewitt       21  Mark Barker         11
        Aggregate:   132        Aggregate:   149
 
       Division 5              Tue 2nd May
-  Slaithwaite C &amp; BC          Horbury WMC
+  Slaithwaite C & BC          Horbury WMC
 Adrian Palmer        21  Mark Young          19
 Roy Sutton           21  Stewart Widdrington 10
 Robert Morgan        21  David Horan         19
@@ -2370,7 +2370,7 @@ Richard Bentley      17  Andrew Livingstone  21
        Aggregate:   126        Aggregate:   132
 
       Division 7              Tue 2nd May
-      Golcar Libs            Dalton C &amp; BC
+      Golcar Libs            Dalton C & BC
 Malcolm Branch       21  David Hill           3
 Danny Duce           21  Keith Williamson    15
 Trevor Liversidge    21  Glen Morris         12
@@ -2443,7 +2443,7 @@ Gareth Coates        21  Ira Jeffers          5
        Aggregate:   162        Aggregate:   173
 
       Division 1              Tue 9th May
-Thongsbridge C &amp; BC 'A'      Littlemoor 'A'
+Thongsbridge C & BC 'A'      Littlemoor 'A'
 Chris Kelly          21  Paul Jacques        12
 Sam Day              21  Paul Wilczynski     17
 Craig Gant           21  Lee Wider           16
@@ -2548,7 +2548,7 @@ Phil Vayro           21  Andy Robinson       17
        Aggregate:   210        Aggregate:   157
 
       Division 3              Tue 9th May
-     Elland C &amp; BC            Morton House
+     Elland C & BC            Morton House
 Russell Broadbent    21  Jamie Balmforth      4
 Gordon Bradford      21  Adrian Leach         9
 Mark Luford          21  Charlie Ripley      10
@@ -2593,7 +2593,7 @@ James Szabo          15  Frank Cullen        21
        Aggregate:   188        Aggregate:   184
 
       Division 3              Tue 9th May
-   Crossgates BC 'B'         Ossett C &amp; AC
+   Crossgates BC 'B'         Ossett C & AC
 Harry Seehra         21  Graeme Eyre          4
 Chris Broughton      12  Joshua Dunford      21
 Adam Sharpe          15  Stuart Daniel       21
@@ -2653,7 +2653,7 @@ Martin Burgess       18  Tom Kaye            21
        Aggregate:   178        Aggregate:   187
 
       Division 4              Tue 9th May
-    Lowerhouses BC       Thongsbridge C &amp; BC 'B
+    Lowerhouses BC       Thongsbridge C & BC 'B
 Matthew Armitage      1  Ian Ross            21
 Guy Beaumont         21  Ben Hirst           11
 Aidan Crawley        20  Joshua Stephens     21
@@ -2668,7 +2668,7 @@ Andy Wike            15  S Ross              21
        Aggregate:   181        Aggregate:   156
 
       Division 4              Tue 9th May
-   Thornhill C &amp; BC          Thurgoland BC
+   Thornhill C & BC          Thurgoland BC
 Ben Gibson            3  Tommy Silcock       21
 Jason Woodhouse      21  Fred Tippett         9
 Brian Sweeney        11  Frazer Pickering    21
@@ -2696,7 +2696,7 @@ Derek Hawes          14  Derrick Hewitt      21
        Aggregate:   155        Aggregate:   102
 
       Division 5              Tue 9th May
-      Farsley BC           Slaithwaite C &amp; BC
+      Farsley BC           Slaithwaite C & BC
 Mark Barker          19  Oliver Barstow      21
 Graham Petty         19  Lee Tricket         21
 Dave Rankin          18  Trevor Eckersley    21
@@ -2828,7 +2828,7 @@ Nathan Dobson        21  Ian Shaw            12
        Aggregate:   189        Aggregate:   169
 
       Division 1              Tue 16th May
-   Crosland Moor 'A'     Thongsbridge C &amp; BC 'A
+   Crosland Moor 'A'     Thongsbridge C & BC 'A
 Liam Fallas          13  Craig Gant          21
 Terry Brook          21  Ashley Daykin       20
 Ian Booth            16  Jonathan Sneddon    21
@@ -2963,7 +2963,7 @@ Will Gilroy          21  Harry Lumb          15
        Aggregate:   192        Aggregate:   174
 
       Division 3              Tue 16th May
-     Ossett C &amp; AC           Littlemoor 'B'
+     Ossett C & AC           Littlemoor 'B'
 Robert Dunford       21  Alan Mazurke         5
 Ben Sweeney          21  Simon Wider          8
 Noel Whitaker        21  Paul Bowes          10
@@ -3023,7 +3023,7 @@ Wayne Kemp           20  Richard Firth       21
        Aggregate:   183        Aggregate:   147
 
       Division 3              Tue 16th May
-  The Harold Club 'A'        Elland C &amp; BC
+  The Harold Club 'A'        Elland C & BC
 Andrew Heenan        14  Gordon Bradford     21
 Eddie Hill           16  Tony Dubaj          21
 Darren Hickey        20  Justin Harris       21
@@ -3053,7 +3053,7 @@ Nigel Copping        15  Gerald Bromley      21
        Aggregate:   186        Aggregate:   164
 
       Division 4              Tue 16th May
-  Kirkheaton Con 'B'        Thornhill C &amp; BC
+  Kirkheaton Con 'B'        Thornhill C & BC
 Tom Gledhill         21  Graham Sheard       15
 Adrian Cooper        21  Brian Sweeney       17
 Tony Butterfield     21  Stephen Wainwright   6
@@ -3098,7 +3098,7 @@ Charlie Fisher       13  John Smith          21
        Aggregate:   185        Aggregate:   169
 
       Division 4              Tue 16th May
-Thongsbridge C &amp; BC 'B'    Crosland Moor 'B'
+Thongsbridge C & BC 'B'    Crosland Moor 'B'
 S Ross               17  Danny Radcliffe     21
 Ian Ross             21  Terry Fletcher       9
 Brian Moroney        21  Cameron Duffy        7
@@ -3139,7 +3139,7 @@ Barry Tinker         11  Paul Winterburn     21
        Aggregate:   144        Aggregate:   155
 
       Division 5              Tue 16th May
-  Slaithwaite C &amp; BC         Cowcliffe Lib
+  Slaithwaite C & BC         Cowcliffe Lib
 Trevor Eckersley     18  Chris Stoney        21
 Keith Bissell        21  Dennis Hufton       20
 Roy Sutton           21  Darryl Starkey      16
@@ -3204,7 +3204,7 @@ Andrew Livingstone   13  John Hodgson        21
        Aggregate:   133        Aggregate:   135
 
       Division 7              Tue 16th May
-     Dalton C &amp; BC         Springwood BC 'B'
+     Dalton C & BC         Springwood BC 'B'
 Keith Williamson     16  Alan Henderson      21
 Keith Clarkson       15  Graham Summers      21
 Richard Hill         17  Richard Lambert     21
@@ -3316,7 +3316,7 @@ Ernie Wearing        18  Stephen Walker      21
        Aggregate:   182        Aggregate:   154
 
       Division 1              Tue 23rd May
-Thongsbridge C &amp; BC 'A'      Dearne Sports
+Thongsbridge C & BC 'A'      Dearne Sports
 Chris Kelly          17  Jack Hill           21
 Craig Gant           17  Andrew Whittaker    21
 James Davison        21  Grant Herrington    20
@@ -3421,7 +3421,7 @@ Will Bedford         14  Gary Ashwell        21
        Aggregate:   196        Aggregate:   158
 
       Division 3              Tue 23rd May
-     Elland C &amp; BC           Ossett C &amp; AC
+     Elland C & BC           Ossett C & AC
 Adrian Kenyon        21  Ben Sweeney         19
 Tony Dubaj           21  Nigel Miller        14
 David Greenwood      14  Martin Cross        21
@@ -3511,7 +3511,7 @@ Steve Haigh          21  Ryan Pendlebury     16
        Aggregate:   180        Aggregate:   176
 
       Division 4              Tue 23rd May
-   Spen Victoria 'B'     Thongsbridge C &amp; BC 'B
+   Spen Victoria 'B'     Thongsbridge C & BC 'B
 Michael Potter       20  John Gant           21
 Mark Ellis           21  Brian Moroney       15
 David Billington     21  Tim Burton           4
@@ -3554,7 +3554,7 @@ David Pursell        21  Malcolm Wood         9
        Aggregate:   160        Aggregate:   115
 
       Division 5              Tue 23rd May
-  Slaithwaite C &amp; BC         Netherton Con
+  Slaithwaite C & BC         Netherton Con
 Keith Bissell        21  Paul Winterburn      7
 Adrian Palmer        21  Rob Parker          15
 Robert Morgan        21  Jimmy Nolan          9
@@ -3658,7 +3658,7 @@ David Cooper         19  Alan Coggin         21
        Aggregate:   162        Aggregate:   111
 
       Division 7              Tue 23rd May
-  Thorpe Green BC 'B'        Dalton C &amp; BC
+  Thorpe Green BC 'B'        Dalton C & BC
 Chris Jepson         21  Richard Hill         2
 Billy Beattie        21  Percy Harrison       5
 Peter Haythornewaite 21  Trevor Boothroyd     9
@@ -3716,7 +3716,7 @@ Rob Wiltshire        21  Josh Mordue         18
        Aggregate:   175        Aggregate:   184
 
       Division 1              Tue 30th May
-  Denby Grange BC 'A'    Thongsbridge C &amp; BC 'A
+  Denby Grange BC 'A'    Thongsbridge C & BC 'A
 Keith Hatzer         11  Chris Kelly         21
 Adam Conlon          12  Sam Day             21
 Brian Walker         21  Nick White          16
@@ -3821,7 +3821,7 @@ Danny Teale          21  Mark McGorlick       7
        Aggregate:   197        Aggregate:   157
 
       Division 3              Tue 30th May
-     Ossett C &amp; AC       Cleckheaton Sports 'A'
+     Ossett C & AC       Cleckheaton Sports 'A'
 Robert Dunford       21  Chris Blakeley      12
 Stuart Daniel        21  Tony Throup         10
 Chris Nuttall        21  Joe Bray            17
@@ -3836,7 +3836,7 @@ Noel Whitaker         8  Richard Toulson     21
        Aggregate:   182        Aggregate:   147
 
       Division 3              Tue 30th May
-  Almondbury Lib 'A'         Elland C &amp; BC
+  Almondbury Lib 'A'         Elland C & BC
 Michael Martin       21  Russell Broadbent   11
 Gary Ashwell         21  Stuart Rodd         10
 Mick Higgins         21  David Greenwood     11
@@ -3941,7 +3941,7 @@ Howard Rose          20  Darren Schofield    21
        Aggregate:   172        Aggregate:   162
 
       Division 4              Tue 30th May
-    Lowerhouses BC          Thornhill C &amp; BC
+    Lowerhouses BC          Thornhill C & BC
 Guy Beaumont         21  Aiden Fox           10
 Aidan Crawley        18  Ryan Mitchell       21
 Anthony Crawley      21  Gary Mountain        7
@@ -3956,7 +3956,7 @@ Zinedine Ayub        21  Johny Smith         18
        Aggregate:   189        Aggregate:   142
 
       Division 4              Tue 30th May
-Thongsbridge C &amp; BC 'B'   Denby Grange BC 'B'
+Thongsbridge C & BC 'B'   Denby Grange BC 'B'
 Andrew Davison       21  David Walker         6
 John Gant            21  Chris Shires        15
 Ben Hirst            17  Gary Eastwood       21
@@ -4101,7 +4101,7 @@ Scott Kavanagh       21  Steven Baldwin      14
        Aggregate:   164        Aggregate:   126
 
       Division 4              Mon 5th Jun
-   Thornhill C &amp; BC           Broad Oak BC
+   Thornhill C & BC           Broad Oak BC
 Gary Mountain        21  Michael Armitage    11
 Jason Woodhouse      21  Brendan Gilbert     17
 Ryan Mitchell        18  Connor Beaumont     21
@@ -4116,7 +4116,7 @@ Aiden Fox            21  Carl Taylor         18
        Aggregate:   202        Aggregate:   164
 
       Division 1              Tue 6th Jun
-     Pudsey BC 'A'       Thongsbridge C &amp; BC 'A
+     Pudsey BC 'A'       Thongsbridge C & BC 'A
 Jon Edmondson        14  Chris Kelly         21
 James Hanson         21  Craig Gant          10
 Tom Hanson           21  Mark Booth          17
@@ -4281,7 +4281,7 @@ Simon Wider          21  Andy Hodgson        16
        Aggregate:   206        Aggregate:   160
 
       Division 3              Tue 6th Jun
-     Elland C &amp; BC       Ossett Flying Horse 'B
+     Elland C & BC       Ossett Flying Horse 'B
 Stuart Carroll       21  Malcolm Preston      6
 Russell Broadbent    21  Graham Blenkinsop    8
 Justin Harris        21  Gareth Gidman       10
@@ -4311,7 +4311,7 @@ Andy Walker           7  Mally Fowler        21
        Aggregate:   161        Aggregate:   174
 
       Division 3              Tue 6th Jun
-     Morton House            Ossett C &amp; AC
+     Morton House            Ossett C & AC
 Wayne Kemp           14  Robert Dunford      21
 Chris Sweeney         5  Graeme Eyre         21
 Oscar Scott-Parker   21  Stuart Daniel       17
@@ -4341,7 +4341,7 @@ Chris Sowden         21  Andrew Heaume        7
        Aggregate:   175        Aggregate:   161
 
       Division 4              Tue 6th Jun
-    Heckmondwike BC         Thornhill C &amp; BC
+    Heckmondwike BC         Thornhill C & BC
 Gerald Bromley       20  Stephen Wainwright  21
 Sean Carter          21  Ben Gibson          13
 Phil Rayner          12  Mark Lofthouse      21
@@ -4401,7 +4401,7 @@ George Fisher        16  Nigel Copping       21
        Aggregate:   152        Aggregate:   161
 
       Division 4              Tue 6th Jun
-Thongsbridge C &amp; BC 'B'    Kirkheaton Con 'B'
+Thongsbridge C & BC 'B'    Kirkheaton Con 'B'
 John Gant            21  Chris Gamble        17
 Ian Ross             21  Richard Gledhill    12
 Ben Hirst             7  Andy Lumb           21
@@ -4520,7 +4520,7 @@ Steven Baldwin       21  Alan Coggin         14
        Aggregate:   167        Aggregate:   119
 
       Division 7              Tue 6th Jun
-     Almondbury BC           Dalton C &amp; BC
+     Almondbury BC           Dalton C & BC
 Richard Brook        21  Keith Williamson    16
 Richard Halliwell    21  Dave Matthews       13
 Chris Armitage       21  Percy Harrison      18
@@ -4606,7 +4606,7 @@ Stephen Walker       20  Jon Edmondson       21
        Aggregate:   191        Aggregate:   157
 
       Division 1              Tue 13th Jun
-Thongsbridge C &amp; BC 'A'   Alverthorpe WMC 'A'
+Thongsbridge C & BC 'A'   Alverthorpe WMC 'A'
 Ashley Daykin        21  Jeff Normanton      15
 Chris Kelly          21  David Cowsill        5
 Sam Day              21  Stuart Thomson      15
@@ -4696,7 +4696,7 @@ Rob McGuire          20  Oliver Fox          21
        Aggregate:   169        Aggregate:   195
 
       Division 3              Tue 13th Jun
-     Ossett C &amp; AC        The Harold Club 'A'
+     Ossett C & AC        The Harold Club 'A'
 Robert Dunford       21  Nigel Wormald        6
 Martin Cross         21  Tom Jagger          19
 Joshua Dunford       21  Jason Watters       19
@@ -4756,7 +4756,7 @@ James Szabo          12  John Armitage       21
        Aggregate:   182        Aggregate:   154
 
       Division 3              Tue 13th Jun
-   Crossgates BC 'B'         Elland C &amp; BC
+   Crossgates BC 'B'         Elland C & BC
 Grant Bartle         20  Adrian Kenyon       21
 Tony Sharpe          10  Russell Broadbent   21
 Kevin Siddle         21  Darren Hennessey    14
@@ -4771,7 +4771,7 @@ Ian Vickers           9  Tony Dubaj          21
        Aggregate:   186        Aggregate:   148
 
       Division 4              Tue 13th Jun
-     Thurgoland BC       Thongsbridge C &amp; BC 'B
+     Thurgoland BC       Thongsbridge C & BC 'B
 Brian Sharrock       21  John Gant           16
 Tommy Silcock        17  Roy Smith           21
 Eric Phillips        21  Andrew Davison       5
@@ -4831,7 +4831,7 @@ Dave Wike            21  Phillip Berry       20
        Aggregate:   191        Aggregate:   130
 
       Division 4              Tue 13th Jun
-   Thornhill C &amp; BC        Crosland Moor 'B'
+   Thornhill C & BC        Crosland Moor 'B'
 Ryan Mitchell        14  Danny Radcliffe     21
 Ben Gibson           17  Mark Rushworth      21
 Steve Davis          21  Andy Rose            9
@@ -4859,7 +4859,7 @@ Phillip Schofield    21  Darryl Starkey      15
        Aggregate:   158        Aggregate:   121
 
       Division 5              Tue 13th Jun
-      Longwood BC          Slaithwaite C &amp; BC
+      Longwood BC          Slaithwaite C & BC
 Gerry McLoughlin     20  Adrian Palmer       21
 Ian Gledhill         16  Trevor Eckersley    21
 James Lee            16  Robert Morgan       21
@@ -4950,7 +4950,7 @@ John Ramsden         21  Peter McWilliams    13
        Aggregate:    91        Aggregate:   160
 
       Division 7              Tue 13th Jun
-     Dalton C &amp; BC         Springwood BC 'A'
+     Dalton C & BC         Springwood BC 'A'
 Keith Williamson      9  Richard Lambert     21
 Keith Clarkson       11  Colin Hampshaw      21
 Percy Harrison       13  John Pix            21
@@ -5019,7 +5019,7 @@ Roger Norris         18  Darryl Harrap       21
        Aggregate:   191        Aggregate:   134
 
       Division 1              Tue 4th Jul
-Thongsbridge C &amp; BC 'A'   Lower Hopton WMC 'A'
+Thongsbridge C & BC 'A'   Lower Hopton WMC 'A'
 Chris Kelly          21  Ryan Clark          15
 Sam Day              21  Ben Stapleton       10
 James Davison        13  Graham Hickey       21
@@ -5139,7 +5139,7 @@ Scott Bloodworth     21  John Benson         15
        Aggregate:   155        Aggregate:   169
 
       Division 3              Tue 4th Jul
-Ossett Flying Horse 'B'      Ossett C &amp; AC
+Ossett Flying Horse 'B'      Ossett C & AC
 Gareth Gidman        21  Robert Dunford      15
 Roger Lunn           19  Joshua Dunford      21
 Gary Amatt           21  Laurie Woodlock     19
@@ -5154,7 +5154,7 @@ Andy Hoult           21  Ben Sweeney         11
        Aggregate:   149        Aggregate:   182
 
       Division 3              Tue 4th Jul
-   Spen Victoria 'A'         Elland C &amp; BC
+   Spen Victoria 'A'         Elland C & BC
 Mally Fowler         21  Adrian Kenyon       15
 Andrew Gallagher     21  Steve Kenworthy      9
 Phillip Smith        11  Tony Dubaj          21
@@ -5244,7 +5244,7 @@ Carl Taylor           9  Elliott Heap        21
        Aggregate:   151        Aggregate:   178
 
       Division 4              Tue 4th Jul
-   Thornhill C &amp; BC        Spen Victoria 'B'
+   Thornhill C & BC        Spen Victoria 'B'
 Ryan Mitchell        21  John Blackburn      16
 Mark Lofthouse       21  Peter Ellis         19
 Gary Mountain        10  David Billington    21
@@ -5274,7 +5274,7 @@ Adrian Cooper        21  Gary Eastwood       12
        Aggregate:   178        Aggregate:   145
 
       Division 4              Tue 4th Jul
-    Heckmondwike BC      Thongsbridge C &amp; BC 'B
+    Heckmondwike BC      Thongsbridge C & BC 'B
 Sean Carter          12  Ian Ross            21
 Paul Warwick         15  Joshua Stephens     21
 Gerald Bromley       21  Robert Schofield    17
@@ -5315,7 +5315,7 @@ Andy Malone          17  Harry Chadwick      21
        Aggregate:   148        Aggregate:   127
 
       Division 5              Tue 4th Jul
-  Alverthorpe WMC 'B'      Slaithwaite C &amp; BC
+  Alverthorpe WMC 'B'      Slaithwaite C & BC
 Keith Exley          21  Colin Haywood       15
 David Clarke         21  Adrian Palmer       11
 John Smart           21  Keith Bissell       14
@@ -5380,7 +5380,7 @@ Frank Griffin        21  Terry Leach         11
        Aggregate:   139        Aggregate:    95
 
       Division 7              Tue 4th Jul
-     Dalton C &amp; BC           Milnsbridge BC
+     Dalton C & BC           Milnsbridge BC
 Richard Hill         21  Robert Iredale      17
 Keith Clarkson       16  Andy Thornton       21
 Trevor Boothroyd     21  David Peacock       17
@@ -5479,7 +5479,7 @@ Graeme I Wilson      21  Danny Walker         9
        Aggregate:   180        Aggregate:   168
 
       Division 1              Tue 11th Jul
-Ossett Flying Horse 'A'  Thongsbridge C &amp; BC 'A
+Ossett Flying Horse 'A'  Thongsbridge C & BC 'A
 Andrew Evison         6  Chris Kelly         21
 Ernie Wearing        15  Sam Day             21
 Kevin Burns          21  James Davison       19
@@ -5569,7 +5569,7 @@ Conner Davis         20  Andy Jones          21
        Aggregate:   186        Aggregate:   164
 
       Division 3              Tue 11th Jul
-     Elland C &amp; BC           Littlemoor 'B'
+     Elland C & BC           Littlemoor 'B'
 Gordon Bradford      21  Martin Fulton       15
 Tony Dubaj           21  Lewis Cooper        17
 Russell Broadbent    21  Mark Allman         10
@@ -5584,7 +5584,7 @@ Stuart Rodd          21  Glen Pratt          20
        Aggregate:   180        Aggregate:   175
 
       Division 3              Tue 11th Jul
-     Ossett C &amp; AC         Almondbury Lib 'A'
+     Ossett C & AC         Almondbury Lib 'A'
 Robert Dunford       21  Michael Martin      15
 Joshua Dunford       21  Kyle Spencer         8
 Laurie Woodlock      21  Gary Ashwell        17
@@ -5674,7 +5674,7 @@ Richard Moore        20  Tom Gledhill        21
        Aggregate:   198        Aggregate:   123
 
       Division 4              Tue 11th Jul
-Thongsbridge C &amp; BC 'B'       Broad Oak BC
+Thongsbridge C & BC 'B'       Broad Oak BC
 Tim Burton           21  Kenneth Wilson      13
 Andrew Davison       17  Brendan Gilbert     21
 Ben Hirst            16  Howard Rose         21
@@ -5704,7 +5704,7 @@ Phil Bryant          21  Anthony Crawley     13
        Aggregate:   189        Aggregate:   167
 
       Division 4              Tue 11th Jul
-  Denby Grange BC 'B'       Thornhill C &amp; BC
+  Denby Grange BC 'B'       Thornhill C & BC
 Keith Hatzer         21  Ryan Mitchell       10
 Luke Gant            16  Mark Lofthouse      21
 Charlie Fisher       19  Gary Mountain       21
@@ -5745,7 +5745,7 @@ Derrick Hewitt       21  Rob Hirst           15
        Aggregate:   138        Aggregate:   157
 
       Division 5              Tue 11th Jul
-  Slaithwaite C &amp; BC      The Harold Club 'B'
+  Slaithwaite C & BC      The Harold Club 'B'
 Keith Bissell        21  Dave Halligan       16
 Trevor Eckersley     13  Joe Mellor          21
 Robert Morgan        21  Eddie Hill           4
@@ -5810,7 +5810,7 @@ Graham Clegg         21  Geoff Normanton     16
        Aggregate:   168        Aggregate:   125
 
       Division 7              Tue 11th Jul
-Cleckheaton Sports 'C'       Dalton C &amp; BC
+Cleckheaton Sports 'C'       Dalton C & BC
 Gary Blackburn       21  Keith Clarkson      14
 Richard Bentley      17  Trevor Boothroyd    21
 Greg Hutchinson      21  Keith Williamson     5
@@ -5909,7 +5909,7 @@ Dave Upton           20  Andrew Evison       21
        Aggregate:   200        Aggregate:   127
 
       Division 1              Tue 18th Jul
-Thongsbridge C &amp; BC 'A'    Crossgates BC 'A'
+Thongsbridge C & BC 'A'    Crossgates BC 'A'
 Chris Kelly          21  Gareth Lally         9
 Ashley Daykin        21  Mark Hughes         18
 James Davison        21  Steve Gilroy        20
@@ -5999,7 +5999,7 @@ Rob McGuire          21  Paul Rooks          16
        Aggregate:   188        Aggregate:   163
 
       Division 3              Tue 18th Jul
-   Spen Victoria 'A'         Ossett C &amp; AC
+   Spen Victoria 'A'         Ossett C & AC
 Chris Ellis          21  Graeme Eyre         13
 Peter Ellis          16  Noel Whitaker       21
 Andrew Gallagher     21  Sam Beresford        7
@@ -6029,7 +6029,7 @@ Terry Weston         16  Neil Slattery       21
        Aggregate:   175        Aggregate:   189
 
       Division 3              Tue 18th Jul
-     Elland C &amp; BC       Cleckheaton Sports 'A'
+     Elland C & BC       Cleckheaton Sports 'A'
 Mark Luford          21  Norman Swift        11
 Gordon Bradford      21  Chris Blakeley       3
 Stuart Carroll        8  Paul Fincher        21
@@ -6134,7 +6134,7 @@ Phil Rayner          18  Charlie Fisher      21
        Aggregate:   140        Aggregate:   193
 
       Division 4              Tue 18th Jul
-   Thornhill C &amp; BC      Thongsbridge C &amp; BC 'B
+   Thornhill C & BC      Thongsbridge C & BC 'B
 Gary Mountain        21  Joshua Stephens     10
 Graham Sheard        21  Mike Luty           10
 James McNeill        21  Chris Churm         20
@@ -6162,7 +6162,7 @@ Stuart Brook         21  Jim Chadwick        12
        Aggregate:   156        Aggregate:   107
 
       Division 5              Tue 18th Jul
-      Horbury WMC          Slaithwaite C &amp; BC
+      Horbury WMC          Slaithwaite C & BC
 Arthur Clarkson      18  Robert Gartside     21
 Paul Hawes           14  Oliver Barstow      21
 Dale Shaw            21  Colin Haywood       20
@@ -6253,7 +6253,7 @@ Malcolm Wadsworth    21  Gary Blackburn       8
        Aggregate:   143        Aggregate:   132
 
       Division 7              Tue 18th Jul
-     Dalton C &amp; BC            Golcar Libs
+     Dalton C & BC            Golcar Libs
 Keith Williamson      0  Mick Haigh          21
 Philip Battye        21  Danny Duce           7
 Trevor Boothroyd     10  Kevin Walsh         21
@@ -6339,7 +6339,7 @@ Liam Griffin         21  Liam Sykes          19
        Aggregate:   190        Aggregate:   140
 
       Division 1              Tue 25th Jul
-    Littlemoor 'A'       Thongsbridge C &amp; BC 'A
+    Littlemoor 'A'       Thongsbridge C & BC 'A
 Simon Wider           8  Andy Sorsby         21
 Marc Armitage        21  Jonathan Sneddon     8
 Ben Falkingham       14  Chris Kelly         21
@@ -6444,7 +6444,7 @@ Andy Robinson        18  Lewis Cooper        21
        Aggregate:   190        Aggregate:   155
 
       Division 3              Tue 25th Jul
-     Morton House            Elland C &amp; BC
+     Morton House            Elland C & BC
 Chris Sweeney        21  Tony Dubaj          19
 Doug Bulmer          21  Steve Kenworthy     10
 Oscar Scott-Parker   21  Stuart Rodd         10
@@ -6489,7 +6489,7 @@ Tom Jagger           21  Roger Lunn          15
        Aggregate:   188        Aggregate:   169
 
       Division 3              Tue 25th Jul
-     Ossett C &amp; AC         Crossgates BC 'B'
+     Ossett C & AC         Crossgates BC 'B'
 Joshua Dunford       21  Steve Hartley       20
 Stuart Daniel        18  Tony Sharpe         21
 Martin Cross         12  Joseph Cranston     21
@@ -6549,7 +6549,7 @@ A Dagg               13  Kenneth Wilson      21
        Aggregate:   192        Aggregate:   147
 
       Division 4              Tue 25th Jul
-Thongsbridge C &amp; BC 'B'      Lowerhouses BC
+Thongsbridge C & BC 'B'      Lowerhouses BC
 Tim Burton           21  Philip Hunter        8
 Lyndon Campbell      17  David Haigh         21
 John Gant            21  Anthony Crawley     15
@@ -6564,7 +6564,7 @@ Joshua Stephens      21  Matthew Armitage     9
        Aggregate:   200        Aggregate:   129
 
       Division 4              Tue 25th Jul
-     Thurgoland BC          Thornhill C &amp; BC
+     Thurgoland BC          Thornhill C & BC
 Eric Phillips        21  Steve Davis         17
 Brian Sharrock       21  Ben Gibson           7
 Jeff Moreland        21  Stephen Wainwright  11
@@ -6592,7 +6592,7 @@ Steve Halsall        21  Dale Shaw           13
        Aggregate:   154        Aggregate:   115
 
       Division 5              Tue 25th Jul
-  Slaithwaite C &amp; BC           Farsley BC
+  Slaithwaite C & BC           Farsley BC
 Robert Gartside       8  David Smalley       21
 Trevor Eckersley     13  Neil Nicholson      21
 Keith Bissell        16  Dave Rankin         21
@@ -6724,7 +6724,7 @@ Philip Wilsdon       12  Robbie Ellis        21
        Aggregate:   199        Aggregate:   127
 
       Division 1              Tue 1st Aug
-Thongsbridge C &amp; BC 'A'    Crosland Moor 'A'
+Thongsbridge C & BC 'A'    Crosland Moor 'A'
 Sam Day              21  Terry Brook          8
 Craig Gant           20  Liam Fallas         21
 Chris Kelly          10  Mark Bramall        21
@@ -6859,7 +6859,7 @@ Harry Lumb           21  James Teale          9
        Aggregate:   182        Aggregate:   154
 
       Division 3              Tue 1st Aug
-    Littlemoor 'B'           Ossett C &amp; AC
+    Littlemoor 'B'           Ossett C & AC
 Phillip Thornton     12  Stuart Daniel       21
 John Armitage        21  Martin Cross        17
 Paul Jacques         21  Graeme Eyre          7
@@ -6919,7 +6919,7 @@ Josh Walker          15  Adrian Leach        21
        Aggregate:   201        Aggregate:   153
 
       Division 3              Tue 1st Aug
-     Elland C &amp; BC        The Harold Club 'A'
+     Elland C & BC        The Harold Club 'A'
 Adrian Kenyon         7  Trevor Benn         21
 Stuart Carroll       12  Frank Cullen        21
 Mark Luford          13  Chris Sowden        21
@@ -6949,7 +6949,7 @@ Russell Harker       21  Gary Law            18
        Aggregate:   172        Aggregate:   194
 
       Division 4              Tue 1st Aug
-   Thornhill C &amp; BC        Kirkheaton Con 'B'
+   Thornhill C & BC        Kirkheaton Con 'B'
 Steve Davis          21  Martin Laycock       6
 Graham Sheard        21  Jordan Clayton       8
 Ryan Mitchell        21  Tom Gledhill        15
@@ -6994,7 +6994,7 @@ Kevin Wood           21  David Walker        20
        Aggregate:   176        Aggregate:   159
 
       Division 4              Tue 1st Aug
-   Crosland Moor 'B'     Thongsbridge C &amp; BC 'B
+   Crosland Moor 'B'     Thongsbridge C & BC 'B
 Trevor Boothroyd     21  Chris Churm         14
 Wayne Dews           21  Tim Burton           2
 Elliott Heap         19  Ben Hirst           21
@@ -7035,7 +7035,7 @@ Rob Parker           12  Lee Simpson         21
        Aggregate:   139        Aggregate:   130
 
       Division 5              Tue 1st Aug
-     Cowcliffe Lib         Slaithwaite C &amp; BC
+     Cowcliffe Lib         Slaithwaite C & BC
 Michael Higgins      21  Trevor Eckersley     2
 David Pollard        21  Roy Sutton           8
 Peter Beaumont       20  Robert Gartside     21
@@ -7100,7 +7100,7 @@ Michael Hick         21  Chris Hemingway     13
        Aggregate:   150        Aggregate:   135
 
       Division 7              Tue 1st Aug
-   Springwood BC 'B'         Dalton C &amp; BC
+   Springwood BC 'B'         Dalton C & BC
 John Stevenson       21  Richard Hill        20
 Gerry Beamond        21  Keith Williamson     1
 David Rudd           14  Trevor Boothroyd    21
@@ -7212,7 +7212,7 @@ James Makepeace      21  James Evison         8
        Aggregate:   198        Aggregate:   149
 
       Division 1              Tue 8th Aug
-     Dearne Sports       Thongsbridge C &amp; BC 'A
+     Dearne Sports       Thongsbridge C & BC 'A
 Darren Atkinson      21  Chris Kelly         15
 Paul Bailey          21  Ian Ross             8
 John Hardwick        21  Jonathan Sneddon    19
@@ -7317,7 +7317,7 @@ Neil Slattery        21  Martin Fulton       19
        Aggregate:   207        Aggregate:   128
 
       Division 3              Tue 8th Aug
-     Ossett C &amp; AC           Elland C &amp; BC
+     Ossett C & AC           Elland C & BC
 Robert Dunford       21  Steve Kenworthy     12
 Stuart Daniel        21  Tony Dubaj          10
 Joshua Dunford       11  Darren Hennessey    21
@@ -7407,7 +7407,7 @@ Nigel Copping        12  John Greenhalgh     21
        Aggregate:   175        Aggregate:   178
 
       Division 4              Tue 8th Aug
-Thongsbridge C &amp; BC 'B'    Spen Victoria 'B'
+Thongsbridge C & BC 'B'    Spen Victoria 'B'
 Tim Burton            3  John Blackburn      21
 Lyndon Campbell      15  Phil Bryant         21
 Chris Churm          21  Andy Bairstow       17
@@ -7437,7 +7437,7 @@ Andy Wike             6  Gary Eastwood       21
        Aggregate:   174        Aggregate:   155
 
       Division 4              Tue 8th Aug
-     Broad Oak BC           Thornhill C &amp; BC
+     Broad Oak BC           Thornhill C & BC
 Carl Taylor          18  Steve Davis         21
 Michael Howlett      21  Jason Woodhouse     18
 Russel Beaumont      21  Aiden Fox            3
@@ -7465,7 +7465,7 @@ David Clarke         21  David Horan         19
        Aggregate:   140        Aggregate:   146
 
       Division 5              Tue 8th Aug
-     Netherton Con         Slaithwaite C &amp; BC
+     Netherton Con         Slaithwaite C & BC
 Jimmy Nolan          17  Robert Morgan       21
 Tommy Whitaker       21  John Senior          7
 Paul Winterburn      21  Trevor Eckersley    13
@@ -7569,7 +7569,7 @@ John Pix             15  Chris Windle        21
        Aggregate:   114        Aggregate:   160
 
       Division 7              Tue 8th Aug
-     Dalton C &amp; BC        Thorpe Green BC 'B'
+     Dalton C & BC        Thorpe Green BC 'B'
 Richard Hill         13  Alan Hawkins        21
 Keith Williamson      3  Patrick Campbell    21
 Trevor Boothroyd     21  Chris Jepson        20
@@ -7627,7 +7627,7 @@ Philip Wilsdon       21  Roger Norris         9
        Aggregate:   197        Aggregate:   139
 
       Division 1              Tue 15th Aug
-Thongsbridge C &amp; BC 'A'   Denby Grange BC 'A'
+Thongsbridge C & BC 'A'   Denby Grange BC 'A'
 Sam Day              21  Nathan Conlon       17
 Chris Kelly          21  Adam Conlon         20
 Jonathan Sneddon     21  Gareth Coates       18
@@ -7732,7 +7732,7 @@ Julian Dawson        21  Danny Teale         12
        Aggregate:   157        Aggregate:   199
 
       Division 3              Tue 15th Aug
-Cleckheaton Sports 'A'       Ossett C &amp; AC
+Cleckheaton Sports 'A'       Ossett C & AC
 Andy Walker          21  Graeme Eyre         10
 Tony Throup          21  Stuart Daniel       11
 Norman Swift         21  Joshua Dunford      12
@@ -7747,7 +7747,7 @@ Andy Robinson         9  Robert Dunford      21
        Aggregate:   183        Aggregate:   173
 
       Division 3              Tue 15th Aug
-     Elland C &amp; BC         Almondbury Lib 'A'
+     Elland C & BC         Almondbury Lib 'A'
 Stuart Carroll       19  Michael Martin      21
 David Greenwood      11  Daniel Beeby        21
 Steve Kenworthy      13  Jason Shaw          21
@@ -7852,7 +7852,7 @@ Darren Schofield     21  Michael Armitage     9
        Aggregate:   175        Aggregate:   136
 
       Division 4              Tue 15th Aug
-   Thornhill C &amp; BC          Lowerhouses BC
+   Thornhill C & BC          Lowerhouses BC
 Jason Woodhouse      15  Andy Wike           21
 James McNeill        21  David Haigh         19
 Aiden Fox            21  Andrew Harper       19
@@ -7867,7 +7867,7 @@ Graham Sheard        21  Anthony Crawley     15
        Aggregate:   204        Aggregate:   168
 
       Division 4              Tue 15th Aug
-  Denby Grange BC 'B'    Thongsbridge C &amp; BC 'B
+  Denby Grange BC 'B'    Thongsbridge C & BC 'B
 Luke Gant            20  Ian Ross            21
 Charlie Fisher       14  Robert Schofield    21
 Daniel Dewhirst      14  Simon Hough         21
@@ -8012,7 +8012,7 @@ George Henry         13  Trevor Liversidge   21
        Aggregate:   139        Aggregate:   151
 
       Division 1              Tue 22nd Aug
-Thongsbridge C &amp; BC 'A'      Pudsey BC 'A'
+Thongsbridge C & BC 'A'      Pudsey BC 'A'
 Chris Kelly          21  Philip Wilsdon      12
 Sam Day              16  Ian Shaw            21
 Craig Gant           12  James Hanson        21
@@ -8177,7 +8177,7 @@ Nigel Cranston       21  Martin Fulton       19
        Aggregate:   190        Aggregate:   134
 
       Division 3              Tue 22nd Aug
-Ossett Flying Horse 'B'      Elland C &amp; BC
+Ossett Flying Horse 'B'      Elland C & BC
 David Armitage       21  Andrew Balmforth     5
 Roger Birdsall       21  Mark Luford         13
 Graham Blenkinsop    21  Stuart Rodd          8
@@ -8207,7 +8207,7 @@ Phillip Smith        12  Michael Rhodes      21
        Aggregate:   194        Aggregate:   148
 
       Division 3              Tue 22nd Aug
-     Ossett C &amp; AC            Morton House
+     Ossett C & AC            Morton House
 Stuart Daniel        21  Michael Robinson    16
 Robert Dunford       21  Marcus Leach         7
 Joshua Dunford       21  Chris Sweeney       18
@@ -8237,7 +8237,7 @@ Andrew Heaume        21  Nicky Jagger         7
        Aggregate:   199        Aggregate:   141
 
       Division 4              Tue 22nd Aug
-   Thornhill C &amp; BC         Heckmondwike BC
+   Thornhill C & BC         Heckmondwike BC
 Aiden Fox            21  Phil Rayner         10
 Mark Lofthouse       21  Gerald Bromley      14
 Andy Mitchell        21  Paul Warwick        20
@@ -8297,7 +8297,7 @@ Duncan Swift         21  Josh Bateman        11
        Aggregate:   200        Aggregate:   129
 
       Division 4              Tue 22nd Aug
-  Kirkheaton Con 'B'     Thongsbridge C &amp; BC 'B
+  Kirkheaton Con 'B'     Thongsbridge C & BC 'B
 A Dagg               16  Brian Moroney       21
 Gary Senior          21  Joshua Stephens      8
 Tony Butterfield     21  Simon Hough         19
@@ -8416,7 +8416,7 @@ John Pix             21  John Hall            8
        Aggregate:   142        Aggregate:   123
 
       Division 7              Tue 22nd Aug
-     Dalton C &amp; BC           Almondbury BC
+     Dalton C & BC           Almondbury BC
 Glen Morris          10  Richard Brook       21
 Richard Hill         13  Richard Halliwell   21
 Keith Williamson      9  Chris Armitage      21
@@ -8502,7 +8502,7 @@ Philip Wilsdon       21  Danny Walker        11
        Aggregate:   190        Aggregate:   135
 
       Division 1              Tue 29th Aug
-  Alverthorpe WMC 'A'    Thongsbridge C &amp; BC 'A
+  Alverthorpe WMC 'A'    Thongsbridge C & BC 'A
 Jeff Normanton       21  Chris Kelly         12
 Robert Lloyd         16  Jack Dyson          21
 David Thomas         17  Sam Day             21
@@ -8592,7 +8592,7 @@ Tom Gledhill         21  Martin Wilson        7
        Aggregate:   174        Aggregate:   180
 
       Division 3              Tue 29th Aug
-  The Harold Club 'A'        Ossett C &amp; AC
+  The Harold Club 'A'        Ossett C & AC
 Nicky Jagger         12  Noel Whitaker       21
 Chris Sowden         12  Chris Nuttall       21
 Andrew Heenan        10  Robert Dunford      21
@@ -8652,7 +8652,7 @@ Nicky Dewhirst       21  Mark McGuire        14
        Aggregate:   174        Aggregate:   159
 
       Division 3              Tue 29th Aug
-     Elland C &amp; BC         Crossgates BC 'B'
+     Elland C & BC         Crossgates BC 'B'
 Andy Brewer          21  Ian Vickers         11
 Andrew Balmforth     21  Steve Hartley       12
 Adrian Kenyon        21  Chris Broughton     12
@@ -8667,7 +8667,7 @@ Stuart Carroll       14  Nigel Cranston      21
        Aggregate:   196        Aggregate:   157
 
       Division 4              Tue 29th Aug
-Thongsbridge C &amp; BC 'B'      Thurgoland BC
+Thongsbridge C & BC 'B'      Thurgoland BC
 Simon Hough          21  Richard Moore       20
 Ian Ross             11  Tommy Silcock       21
 Brian Moroney        21  Duncan Swift         8
@@ -8727,7 +8727,7 @@ David Bentley        18  Callum Wadsworth    21
        Aggregate:   167        Aggregate:   173
 
       Division 4              Tue 29th Aug
-   Crosland Moor 'B'        Thornhill C &amp; BC
+   Crosland Moor 'B'        Thornhill C & BC
 Ross Mallinson       21  Andy Mitchell       17
 Steve Haigh          21  Gary Mountain       12
 Trevor Boothroyd     21  Jason Woodhouse     10
@@ -8755,7 +8755,7 @@ Derrick Hewitt       21  James Tiler         15
        Aggregate:   166        Aggregate:    79
 
       Division 5              Tue 29th Aug
-  Slaithwaite C &amp; BC          Longwood BC
+  Slaithwaite C & BC          Longwood BC
 Keith Bissell        21  James Lee           15
 Trevor Eckersley     21  Barry Tinker         9
 Mick Mozley          21  Chris Hanley        11
@@ -8846,7 +8846,7 @@ Michael Hick         20  David Stuart        21
        Aggregate:   158        Aggregate:   147
 
       Division 7              Tue 29th Aug
-   Springwood BC 'A'         Dalton C &amp; BC
+   Springwood BC 'A'         Dalton C & BC
 David Cooper         21  Richard Hill         4
 Damien Balderson     21  Keith Williamson     8
 Chris Windle         21  Andrew Mann         11
@@ -8938,7 +8938,7 @@ Nathan Haigh         21  Colin Scorah        12
 
  Allan Thompson Trophy        Tue 12th Sep
       Round of 16          On HECKMONDWIKE BC
-      Shipley BC         Thongsbridge C &amp; BC 'A
+      Shipley BC         Thongsbridge C & BC 'A
 Craig Fenton         21  James Davison       17
 Steve Cooper         19  Jonathan Sneddon    21
 Danny Metcalfe       14  Ashley Daykin       21
@@ -9003,7 +9003,7 @@ Philip Wilsdon       21  Ben Halliday        20
 
  Allan Thompson Trophy        Tue 19th Sep
       Qtr-Finals           On LOWERHOUSES BC
-Thongsbridge C &amp; BC 'A'    Kirkheaton Con 'A'
+Thongsbridge C & BC 'A'    Kirkheaton Con 'A'
 Jack Dyson           21  Oliver Fox          15
 Mark Booth           21  Tom Gledhill        10
 Craig Gant           12  Daniel Kilburn      21
@@ -9042,7 +9042,7 @@ David Poole          21  Terry Brook         13
 
  Allan Thompson Trophy        Tue 26th Sep
       Semi-Finals             On BRIGHOUSE
-     Pudsey BC 'A'       Thongsbridge C &amp; BC 'A
+     Pudsey BC 'A'       Thongsbridge C & BC 'A
 Tom Hanson           20  Ashley Daykin       21
 Josh Mordue          10  Chris Kelly         21
 Philip Wilsdon       21  Jonathan Sneddon    20
@@ -9068,7 +9068,7 @@ Andrew Whittaker     21  Ian Booth            8
 
  Allan Thompson Trophy        Thu 28th Sep
          Final              On MIRFIELD O B
-Thongsbridge C &amp; BC 'A'    Crosland Moor 'A'
+Thongsbridge C & BC 'A'    Crosland Moor 'A'
 Ashley Daykin        14  Ian Booth           21
 Nick White           15  Nathan Haigh        21
 Chris Kelly          21  Mark Bramall        14

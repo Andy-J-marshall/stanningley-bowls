@@ -1,4 +1,4 @@
-=== West Riding &amp; Spen Valley 2016
+=== West Riding & Spen Valley 2016
 === League Report
 
 
@@ -17,13 +17,13 @@ Mirfield Old Bank 'A'      5   129   v.   Crossgates 'A'             6   135
 Spen Victoria 'B'          7   145   v.   Guiseley BC                3   145     
 Harold Club 'A'            6   149   v.   Pudsey BC 'B'              4   144     
 Cleckheaton Sports 'A'     6   149   v.   Shipley Club 'B'           4   142     
-Crossgates 'B'             7   148   v.   Thornhill CB &amp; C           3   120     
+Crossgates 'B'             7   148   v.   Thornhill CB & C           3   120     
 Overthorpe Sports          9   163   v.   Brighouse Sports 'A'       1   115     
 ----------------------------------------------------------------------------------
            Wed 13th Apr                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'      8   161   v.   Mirfield Old Bank 'B'      2   130     
-Farsley 'A'                8   155   v.   Littlemoor S &amp; SC 'A'      2   106     
+Littlemoor S & SC 'B'      8   161   v.   Mirfield Old Bank 'B'      2   130     
+Farsley 'A'                8   155   v.   Littlemoor S & SC 'A'      2   106     
 Hightown Club              4   136   v.   Drighlington 'A'           7   145     
 New Farnley 'A'           10   168   v.   Rastrick 'A'               0   128     
 Brighouse Sports 'B'       9   161   v.   Horsforth Woodside         1   102     
@@ -70,8 +70,8 @@ Guiseley BC                9   159   v.   Cleckheaton Sports 'A'     1   116
 ----------------------------------------------------------------------------------
            Wed 20th Apr                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'      9   165   v.   New Farnley 'A'            1    84     
-Drighlington 'A'           8   158   v.   Littlemoor S &amp; SC 'B'      2   106     
+Littlemoor S & SC 'A'      9   165   v.   New Farnley 'A'            1    84     
+Drighlington 'A'           8   158   v.   Littlemoor S & SC 'B'      2   106     
 Rastrick 'A'               8   145   v.   Horsforth Woodside         2   119     
 Mirfield Old Bank 'B'      7   149   v.   Hightown Club              3   105     
 ----------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ Mirfield Old Bank 'A'      9   163   v.   Scatcherd Park 'A'         1   133
 ----------------------------------------------------------------------------------
            Wed 27th Apr                               Division 1                 
 ----------------------------------------------------------------------------------
-Spen Victoria 'B'          9   163   v.   Thornhill CB &amp; C           1   115     
+Spen Victoria 'B'          9   163   v.   Thornhill CB & C           1   115     
 Cleckheaton Sports 'A'     6   143   v.   Pudsey BC 'B'              4   121     
 Crossgates 'B'             8   150   v.   Harold Club 'A'            2   116     
 Overthorpe Sports          8   161   v.   Guiseley BC                2   109     
@@ -127,7 +127,7 @@ Overthorpe Sports          8   161   v.   Guiseley BC                2   109
            Wed 27th Apr                               Division 2                 
 ----------------------------------------------------------------------------------
 Drighlington 'A'           7   138   v.   Brighouse Sports 'B'       3   133     
-Hightown Club              3   142   v.   Littlemoor S &amp; SC 'A'      8   155     
+Hightown Club              3   142   v.   Littlemoor S & SC 'A'      8   155     
 New Farnley 'A'            8   147   v.   Farsley 'A'                2   129     
 Horsforth Woodside         6   138   v.   Mirfield Old Bank 'B'      4   137     
 ----------------------------------------------------------------------------------
@@ -167,13 +167,13 @@ Scatcherd Park 'A'         4   134   v.   Ossett Flying Horse        7   136
 ----------------------------------------------------------------------------------
 Pudsey BC 'B'              5   140   v.   Overthorpe Sports          5   138     
 Harold Club 'A'            5   144   v.   Cleckheaton Sports 'A'     6   147     
-Thornhill CB &amp; C           9   154   v.   Shipley Club 'B'           1    92     
+Thornhill CB & C           9   154   v.   Shipley Club 'B'           1    92     
 Brighouse Sports 'A'       4   128   v.   Spen Victoria 'B'          7   134     
 Guiseley BC                9   159   v.   Crossgates 'B'             1   112     
 ----------------------------------------------------------------------------------
            Wed 4th May                                Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'      9   165   v.   Horsforth Woodside         1   103     
+Littlemoor S & SC 'A'      9   165   v.   Horsforth Woodside         1   103     
 Farsley 'A'                9   159   v.   Hightown Club              1    78     
 Rastrick 'A'               9   167   v.   Drighlington 'A'           1    87     
 Mirfield Old Bank 'B'      4   129   v.   New Farnley 'A'            7   141     
@@ -202,7 +202,7 @@ Cleckheaton Sports 'C'     3   122   v.   Heckmondwike 'B'           8   154
 ----------------------------------------------------------------------------------
            Thu 5th May                                Division 2                 
 ----------------------------------------------------------------------------------
-Brighouse Sports 'B'       6   143   v.   Littlemoor S &amp; SC 'B'      4   119     
+Brighouse Sports 'B'       6   143   v.   Littlemoor S & SC 'B'      4   119     
 ----------------------------------------------------------------------------------
            Thu 5th May                                Division 4                 
 ----------------------------------------------------------------------------------
@@ -235,13 +235,13 @@ Mirfield Old Bank 'A'      2   142   v.   Shipley Club 'A'           9   156
 ----------------------------------------------------------------------------------
 Spen Victoria 'B'          9   156   v.   Pudsey BC 'B'              1   118     
 Shipley Club 'B'           5   142   v.   Guiseley BC                5   140     
-Thornhill CB &amp; C           9   157   v.   Brighouse Sports 'A'       1   102     
+Thornhill CB & C           9   157   v.   Brighouse Sports 'A'       1   102     
 Crossgates 'B'             7   159   v.   Cleckheaton Sports 'A'     3   137     
 Overthorpe Sports          8   160   v.   Harold Club 'A'            2   119     
 ----------------------------------------------------------------------------------
            Wed 11th May                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'      5   140   v.   Littlemoor S &amp; SC 'A'      5   130     
+Littlemoor S & SC 'B'      5   140   v.   Littlemoor S & SC 'A'      5   130     
 Drighlington 'A'           7   156   v.   Mirfield Old Bank 'B'      3   114     
 Rastrick 'A'               7   143   v.   Brighouse Sports 'B'       3   126     
 New Farnley 'A'            8   162   v.   Hightown Club              2    87     
@@ -273,7 +273,7 @@ South Leeds Cons 'B'       3   125   v.   Drighlington 'B'           8   140
 ----------------------------------------------------------------------------------
            Thu 12th May                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'      9   164   v.   Rastrick 'A'               1   113     
+Littlemoor S & SC 'B'      9   164   v.   Rastrick 'A'               1   113     
 ----------------------------------------------------------------------------------
            Thu 12th May                               Division 4                 
 ----------------------------------------------------------------------------------
@@ -295,16 +295,16 @@ Scatcherd Park 'A'         3   133   v.   Crossgates 'A'             8   138
            Wed 18th May                               Division 1                 
 ----------------------------------------------------------------------------------
 Pudsey BC 'B'              7   150   v.   Shipley Club 'B'           3   112     
-Harold Club 'A'            6   151   v.   Thornhill CB &amp; C           4   131     
+Harold Club 'A'            6   151   v.   Thornhill CB & C           4   131     
 Cleckheaton Sports 'A'     3   136   v.   Spen Victoria 'B'          8   147     
 Crossgates 'B'             6   138   v.   Overthorpe Sports          4   117     
 Guiseley BC                7   154   v.   Brighouse Sports 'A'       3   144     
 ----------------------------------------------------------------------------------
            Wed 18th May                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'     10   168   v.   Drighlington 'A'           0    94     
+Littlemoor S & SC 'A'     10   168   v.   Drighlington 'A'           0    94     
 Farsley 'A'               10   168   v.   Rastrick 'A'               0    79     
-Hightown Club              8   161   v.   Littlemoor S &amp; SC 'B'      2   133     
+Hightown Club              8   161   v.   Littlemoor S & SC 'B'      2   133     
 New Farnley 'A'            8   155   v.   Horsforth Woodside         2   117     
 Mirfield Old Bank 'B'      3   138   v.   Brighouse Sports 'B'       8   149     
 ----------------------------------------------------------------------------------
@@ -343,7 +343,7 @@ Pudsey BC 'A'              9   162   v.   Hanging Heaton 'A'         1   119
 ----------------------------------------------------------------------------------
            Fri 20th May                               Division 1                 
 ----------------------------------------------------------------------------------
-Thornhill CB &amp; C           6   138   v.   Overthorpe Sports          4   135     
+Thornhill CB & C           6   138   v.   Overthorpe Sports          4   135     
 
 ----------------------------------------------------------------------------------
            Wed 25th May                                Premier                   
@@ -358,16 +358,16 @@ Mirfield Old Bank 'A'      7   155   v.   Eccleshill                 3   115
 ----------------------------------------------------------------------------------
 Spen Victoria 'B'          7   151   v.   Crossgates 'B'             3   150     
 Shipley Club 'B'           6   134   v.   Harold Club 'A'            4   130     
-Thornhill CB &amp; C           7   147   v.   Guiseley BC                3   112     
+Thornhill CB & C           7   147   v.   Guiseley BC                3   112     
 Brighouse Sports 'A'       8   158   v.   Pudsey BC 'B'              2   119     
 Overthorpe Sports          9   166   v.   Cleckheaton Sports 'A'     1   120     
 ----------------------------------------------------------------------------------
            Wed 25th May                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'      7   154   v.   New Farnley 'A'            3   115     
+Littlemoor S & SC 'B'      7   154   v.   New Farnley 'A'            3   115     
 Drighlington 'A'           4   132   v.   Farsley 'A'                7   139     
 Rastrick 'A'               3   128   v.   Mirfield Old Bank 'B'      8   138     
-Brighouse Sports 'B'       4   147   v.   Littlemoor S &amp; SC 'A'      7   149     
+Brighouse Sports 'B'       4   147   v.   Littlemoor S & SC 'A'      7   149     
 Horsforth Woodside         8   160   v.   Hightown Club              2   122     
 ----------------------------------------------------------------------------------
            Wed 25th May                               Division 3                 
@@ -412,7 +412,7 @@ Mirfield Old Bank 'A'      8   153   v.   Pudsey BC 'A'              2   120
 ----------------------------------------------------------------------------------
            Wed 1st Jun                                Division 1                 
 ----------------------------------------------------------------------------------
-Pudsey BC 'B'              8   142   v.   Thornhill CB &amp; C           2   120     
+Pudsey BC 'B'              8   142   v.   Thornhill CB & C           2   120     
 Harold Club 'A'            7   151   v.   Guiseley BC                3   136     
 Cleckheaton Sports 'A'     8   159   v.   Brighouse Sports 'A'       2   127     
 Crossgates 'B'             8   152   v.   Shipley Club 'B'           2   106     
@@ -420,11 +420,11 @@ Overthorpe Sports          4   125   v.   Spen Victoria 'B'          7   128
 ----------------------------------------------------------------------------------
            Wed 1st Jun                                Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'      9   163   v.   Rastrick 'A'               1   104     
+Littlemoor S & SC 'A'      9   163   v.   Rastrick 'A'               1   104     
 Farsley 'A'               10   168   v.   Mirfield Old Bank 'B'      0    77     
 Hightown Club              4   140   v.   Brighouse Sports 'B'       7   141     
 New Farnley 'A'            8   162   v.   Drighlington 'A'           2   108     
-Horsforth Woodside         6   134   v.   Littlemoor S &amp; SC 'B'      4   128     
+Horsforth Woodside         6   134   v.   Littlemoor S & SC 'B'      4   128     
 ----------------------------------------------------------------------------------
            Wed 1st Jun                                Division 3                 
 ----------------------------------------------------------------------------------
@@ -463,17 +463,17 @@ Scatcherd Park 'A'         1   118   v.   Spen Victoria 'A'         10   165
 ----------------------------------------------------------------------------------
 Spen Victoria 'B'          8   148   v.   Harold Club 'A'            2    99     
 Shipley Club 'B'           8   145   v.   Overthorpe Sports          2   115     
-Thornhill CB &amp; C           9   163   v.   Cleckheaton Sports 'A'     1    73     
+Thornhill CB & C           9   163   v.   Cleckheaton Sports 'A'     1    73     
 Brighouse Sports 'A'       8   152   v.   Crossgates 'B'             2   118     
 Guiseley BC                7   138   v.   Pudsey BC 'B'              3   136     
 ----------------------------------------------------------------------------------
            Wed 8th Jun                                Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'      9   167   v.   Farsley 'A'                1   101     
+Littlemoor S & SC 'B'      9   167   v.   Farsley 'A'                1   101     
 Drighlington 'A'           6   147   v.   Horsforth Woodside         4   123     
 Rastrick 'A'               4   140   v.   Hightown Club              6   140     
 Brighouse Sports 'B'       6   147   v.   New Farnley 'A'            4   122     
-Mirfield Old Bank 'B'      2    97   v.   Littlemoor S &amp; SC 'A'      9   158     
+Mirfield Old Bank 'B'      2    97   v.   Littlemoor S & SC 'A'      9   158     
 ----------------------------------------------------------------------------------
            Wed 8th Jun                                Division 3                 
 ----------------------------------------------------------------------------------
@@ -524,12 +524,12 @@ Crossgates 'A'             8   152   v.   Mirfield Old Bank 'A'      2   129
 Guiseley BC                8   145   v.   Spen Victoria 'B'          2   127     
 Pudsey BC 'B'              7   147   v.   Harold Club 'A'            3   138     
 Shipley Club 'B'           6   140   v.   Cleckheaton Sports 'A'     4   128     
-Thornhill CB &amp; C           8   161   v.   Crossgates 'B'             2   122     
+Thornhill CB & C           8   161   v.   Crossgates 'B'             2   122     
 Brighouse Sports 'A'       7   149   v.   Overthorpe Sports          3   134     
 ----------------------------------------------------------------------------------
            Wed 29th Jun                               Division 2                 
 ----------------------------------------------------------------------------------
-Mirfield Old Bank 'B'      6   144   v.   Littlemoor S &amp; SC 'B'      4   135     
+Mirfield Old Bank 'B'      6   144   v.   Littlemoor S & SC 'B'      4   135     
 Drighlington 'A'          10   168   v.   Hightown Club              0   112     
 Rastrick 'A'               8   158   v.   New Farnley 'A'            2   113     
 Horsforth Woodside         8   159   v.   Brighouse Sports 'B'       2   128     
@@ -583,8 +583,8 @@ Cleckheaton Sports 'A'    10   168   v.   Guiseley BC                0   105
 ----------------------------------------------------------------------------------
            Wed 6th Jul                                Division 2                 
 ----------------------------------------------------------------------------------
-New Farnley 'A'            2   126   v.   Littlemoor S &amp; SC 'A'      9   151     
-Littlemoor S &amp; SC 'B'      8   157   v.   Drighlington 'A'           2   111     
+New Farnley 'A'            2   126   v.   Littlemoor S & SC 'A'      9   151     
+Littlemoor S & SC 'B'      8   157   v.   Drighlington 'A'           2   111     
 Horsforth Woodside         7   162   v.   Rastrick 'A'               3   116     
 Farsley 'A'               10   168   v.   Brighouse Sports 'B'       0   109     
 Hightown Club              5   146   v.   Mirfield Old Bank 'B'      5   146     
@@ -624,7 +624,7 @@ Scatcherd Park 'A'         3   132   v.   Mirfield Old Bank 'A'      8   151
 ----------------------------------------------------------------------------------
            Wed 13th Jul                               Division 1                 
 ----------------------------------------------------------------------------------
-Thornhill CB &amp; C           8   152   v.   Spen Victoria 'B'          2   106     
+Thornhill CB & C           8   152   v.   Spen Victoria 'B'          2   106     
 Brighouse Sports 'A'       9   157   v.   Shipley Club 'B'           1   108     
 Pudsey BC 'B'              8   147   v.   Cleckheaton Sports 'A'     2   127     
 Harold Club 'A'            7   151   v.   Crossgates 'B'             3   117     
@@ -632,8 +632,8 @@ Guiseley BC                8   159   v.   Overthorpe Sports          2   123
 ----------------------------------------------------------------------------------
            Wed 13th Jul                               Division 2                 
 ----------------------------------------------------------------------------------
-Rastrick 'A'               6   146   v.   Littlemoor S &amp; SC 'B'      4   120     
-Littlemoor S &amp; SC 'A'      9   157   v.   Hightown Club              1    69     
+Rastrick 'A'               6   146   v.   Littlemoor S & SC 'B'      4   120     
+Littlemoor S & SC 'A'      9   157   v.   Hightown Club              1    69     
 Farsley 'A'                8   152   v.   New Farnley 'A'            2   120     
 Mirfield Old Bank 'B'      5   140   v.   Horsforth Woodside         5   140     
 ----------------------------------------------------------------------------------
@@ -662,7 +662,7 @@ Drighlington 'B'           9   167   v.   Cleckheaton Sports 'F'     1    98
            Thu 14th Jul                               Division 2                 
 ----------------------------------------------------------------------------------
 Brighouse Sports 'B'      10   168   v.   Rastrick 'A'               0   120     
-Littlemoor S &amp; SC 'A'      7   152   v.   Farsley 'A'                3   108     
+Littlemoor S & SC 'A'      7   152   v.   Farsley 'A'                3   108     
 ----------------------------------------------------------------------------------
            Thu 14th Jul                               Division 4                 
 ----------------------------------------------------------------------------------
@@ -696,16 +696,16 @@ Ossett Flying Horse        9   164   v.   Scatcherd Park 'A'         1   114
 ----------------------------------------------------------------------------------
 Overthorpe Sports          9   164   v.   Pudsey BC 'B'              1   121     
 Cleckheaton Sports 'A'     8   154   v.   Harold Club 'A'            2   123     
-Shipley Club 'B'           8   160   v.   Thornhill CB &amp; C           2   120     
+Shipley Club 'B'           8   160   v.   Thornhill CB & C           2   120     
 Spen Victoria 'B'          8   150   v.   Brighouse Sports 'A'       2   118     
 Crossgates 'B'             8   155   v.   Guiseley BC                2   143     
 ----------------------------------------------------------------------------------
            Wed 20th Jul                               Division 2                 
 ----------------------------------------------------------------------------------
-Horsforth Woodside         4   136   v.   Littlemoor S &amp; SC 'A'      7   148     
+Horsforth Woodside         4   136   v.   Littlemoor S & SC 'A'      7   148     
 Hightown Club              2   130   v.   Farsley 'A'                9   159     
 Drighlington 'A'           4   151   v.   Rastrick 'A'               7   155     
-Littlemoor S &amp; SC 'B'      8   156   v.   Brighouse Sports 'B'       2   118     
+Littlemoor S & SC 'B'      8   156   v.   Brighouse Sports 'B'       2   118     
 New Farnley 'A'            7   144   v.   Mirfield Old Bank 'B'      3   118     
 ----------------------------------------------------------------------------------
            Wed 20th Jul                               Division 3                 
@@ -750,13 +750,13 @@ Shipley Club 'A'           8   144   v.   Mirfield Old Bank 'A'      2   137
 ----------------------------------------------------------------------------------
 Pudsey BC 'B'              5   148   v.   Spen Victoria 'B'          6   150     
 Guiseley BC                4   147   v.   Shipley Club 'B'           6   147     
-Brighouse Sports 'A'       9   160   v.   Thornhill CB &amp; C           1   117     
+Brighouse Sports 'A'       9   160   v.   Thornhill CB & C           1   117     
 Cleckheaton Sports 'A'     1   128   v.   Crossgates 'B'            10   161     
 Harold Club 'A'            3   113   v.   Overthorpe Sports          8   143     
 ----------------------------------------------------------------------------------
            Wed 27th Jul                               Division 2                 
 ----------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'      8   154   v.   Littlemoor S &amp; SC 'B'      2   117     
+Littlemoor S & SC 'A'      8   154   v.   Littlemoor S & SC 'B'      2   117     
 Mirfield Old Bank 'B'      8   164   v.   Drighlington 'A'           2   148     
 Hightown Club              7   142   v.   New Farnley 'A'            3   125     
 Farsley 'A'                9   159   v.   Horsforth Woodside         1    98     
@@ -799,16 +799,16 @@ Crossgates 'A'             7   151   v.   Scatcherd Park 'A'         3   123
            Wed 3rd Aug                                Division 1                 
 ----------------------------------------------------------------------------------
 Shipley Club 'B'           6   153   v.   Pudsey BC 'B'              4   149     
-Thornhill CB &amp; C           6   146   v.   Harold Club 'A'            4   140     
+Thornhill CB & C           6   146   v.   Harold Club 'A'            4   140     
 Spen Victoria 'B'          6   149   v.   Cleckheaton Sports 'A'     4   133     
 Overthorpe Sports          6   154   v.   Crossgates 'B'             4   130     
 Brighouse Sports 'A'       2   128   v.   Guiseley BC                9   160     
 ----------------------------------------------------------------------------------
            Wed 3rd Aug                                Division 2                 
 ----------------------------------------------------------------------------------
-Drighlington 'A'           2   118   v.   Littlemoor S &amp; SC 'A'      9   152     
+Drighlington 'A'           2   118   v.   Littlemoor S & SC 'A'      9   152     
 Rastrick 'A'               3   139   v.   Farsley 'A'                8   153     
-Littlemoor S &amp; SC 'B'      8   143   v.   Hightown Club              2   111     
+Littlemoor S & SC 'B'      8   143   v.   Hightown Club              2   111     
 Horsforth Woodside         8   154   v.   New Farnley 'A'            2   122     
 Brighouse Sports 'B'       7   156   v.   Mirfield Old Bank 'B'      3   129     
 ----------------------------------------------------------------------------------
@@ -835,7 +835,7 @@ Cleckheaton Sports 'C'     2   126   v.   Cleckheaton Sports 'D'     9   146
 ----------------------------------------------------------------------------------
            Thu 4th Aug                                Division 1                 
 ----------------------------------------------------------------------------------
-Overthorpe Sports          8   153   v.   Thornhill CB &amp; C           2   104     
+Overthorpe Sports          8   153   v.   Thornhill CB & C           2   104     
 ----------------------------------------------------------------------------------
            Thu 4th Aug                                Division 5                 
 ----------------------------------------------------------------------------------
@@ -853,16 +853,16 @@ Eccleshill                 7   148   v.   Mirfield Old Bank 'A'      3   124
 ----------------------------------------------------------------------------------
 Crossgates 'B'             8   157   v.   Spen Victoria 'B'          2   115     
 Harold Club 'A'            7   147   v.   Shipley Club 'B'           3   121     
-Guiseley BC                8   157   v.   Thornhill CB &amp; C           2   116     
+Guiseley BC                8   157   v.   Thornhill CB & C           2   116     
 Pudsey BC 'B'              7   142   v.   Brighouse Sports 'A'       3   120     
 Cleckheaton Sports 'A'     3   135   v.   Overthorpe Sports          8   149     
 ----------------------------------------------------------------------------------
            Wed 10th Aug                               Division 2                 
 ----------------------------------------------------------------------------------
-New Farnley 'A'            8   150   v.   Littlemoor S &amp; SC 'B'      2   105     
+New Farnley 'A'            8   150   v.   Littlemoor S & SC 'B'      2   105     
 Farsley 'A'                9   159   v.   Drighlington 'A'           1   118     
 Mirfield Old Bank 'B'      6   143   v.   Rastrick 'A'               4   139     
-Littlemoor S &amp; SC 'A'      9   162   v.   Brighouse Sports 'B'       1    69     
+Littlemoor S & SC 'A'      9   162   v.   Brighouse Sports 'B'       1    69     
 Hightown Club              8   149   v.   Horsforth Woodside         2   119     
 ----------------------------------------------------------------------------------
            Wed 10th Aug                               Division 3                 
@@ -904,7 +904,7 @@ Pudsey BC 'A'              8   159   v.   Mirfield Old Bank 'A'      2   131
 ----------------------------------------------------------------------------------
            Wed 17th Aug                               Division 1                 
 ----------------------------------------------------------------------------------
-Thornhill CB &amp; C           9   167   v.   Pudsey BC 'B'              1    96     
+Thornhill CB & C           9   167   v.   Pudsey BC 'B'              1    96     
 Guiseley BC                8   151   v.   Harold Club 'A'            2   116     
 Brighouse Sports 'A'       6   150   v.   Cleckheaton Sports 'A'     4   140     
 Shipley Club 'B'           7   145   v.   Crossgates 'B'             3   129     
@@ -912,11 +912,11 @@ Spen Victoria 'B'          4   135   v.   Overthorpe Sports          7   146
 ----------------------------------------------------------------------------------
            Wed 17th Aug                               Division 2                 
 ----------------------------------------------------------------------------------
-Rastrick 'A'               4   127   v.   Littlemoor S &amp; SC 'A'      7   141     
+Rastrick 'A'               4   127   v.   Littlemoor S & SC 'A'      7   141     
 Mirfield Old Bank 'B'      4   138   v.   Farsley 'A'                7   146     
 Brighouse Sports 'B'       7   143   v.   Hightown Club              3   124     
 Drighlington 'A'           3   124   v.   New Farnley 'A'            8   138     
-Littlemoor S &amp; SC 'B'      8   162   v.   Horsforth Woodside         2   129     
+Littlemoor S & SC 'B'      8   162   v.   Horsforth Woodside         2   129     
 ----------------------------------------------------------------------------------
            Wed 17th Aug                               Division 3                 
 ----------------------------------------------------------------------------------
@@ -963,17 +963,17 @@ Spen Victoria 'A'          8   159   v.   Scatcherd Park 'A'         2   107
 ----------------------------------------------------------------------------------
 Harold Club 'A'            6   151   v.   Spen Victoria 'B'          4   140     
 Overthorpe Sports          9   162   v.   Shipley Club 'B'           1   134     
-Cleckheaton Sports 'A'     5   149   v.   Thornhill CB &amp; C           5   140     
+Cleckheaton Sports 'A'     5   149   v.   Thornhill CB & C           5   140     
 Crossgates 'B'             7   162   v.   Brighouse Sports 'A'       3   110     
 Pudsey BC 'B'              3   122   v.   Guiseley BC                8   151     
 ----------------------------------------------------------------------------------
            Wed 24th Aug                               Division 2                 
 ----------------------------------------------------------------------------------
-Farsley 'A'                3   145   v.   Littlemoor S &amp; SC 'B'      8   149     
+Farsley 'A'                3   145   v.   Littlemoor S & SC 'B'      8   149     
 Horsforth Woodside         9   166   v.   Drighlington 'A'           1   110     
 Hightown Club              4   148   v.   Rastrick 'A'               7   153     
 New Farnley 'A'            9   167   v.   Brighouse Sports 'B'       1   108     
-Littlemoor S &amp; SC 'A'      9   154   v.   Mirfield Old Bank 'B'      1   106     
+Littlemoor S & SC 'A'      9   154   v.   Mirfield Old Bank 'B'      1   106     
 ----------------------------------------------------------------------------------
            Wed 24th Aug                               Division 3                 
 ----------------------------------------------------------------------------------
@@ -1038,7 +1038,7 @@ Spen Victoria 'C'          9   157   v.   Hanging Heaton 'B'         1   104
   2.  Spen Victoria 'B'         18   12    6    107
   3.  Guiseley BC               18   10    7    103
   4.  Crossgates 'B'            18   10    8     97
-  5.  Thornhill CB &amp; C          18    9    8     93
+  5.  Thornhill CB & C          18    9    8     93
   6.  Brighouse Sports 'A'      18    8   10     85
   7.  Pudsey BC 'B'             18    6   11     80
   8.  Shipley Club 'B'          18    8    9     79
@@ -1049,9 +1049,9 @@ Spen Victoria 'C'          9   157   v.   Hanging Heaton 'B'         1   104
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Littlemoor S &amp; SC 'A'     18   16    1    142
+  1.  Littlemoor S & SC 'A'     18   16    1    142
   2.  Farsley 'A'               18   14    4    130
-  3.  Littlemoor S &amp; SC 'B'     18    9    8    102
+  3.  Littlemoor S & SC 'B'     18    9    8    102
   4.  New Farnley 'A'           18   10    8    100
   5.  Brighouse Sports 'B'      18    9    9     85
   6.  Horsforth Woodside        18    7   10     78
@@ -1212,7 +1212,7 @@ John Ineson         21  Tracy (Lad) Preston     14
          Points:     6               Points:     4
 
       Division 1               Wed 13th Apr
-    Crossgates 'B'           Thornhill CB &amp; C
+    Crossgates 'B'           Thornhill CB & C
 Chris Broughton     21  Brian Sweeney           14
 Daniel Wood         21  Jason Woodhouse         10
 Steve Hartley       21  Gary Mountain           10
@@ -1238,7 +1238,7 @@ James Martin        21  John Bloomer             9
          Points:     9               Points:     1
 
       Division 2               Wed 13th Apr
-Littlemoor S &amp; SC 'B'     Mirfield Old Bank 'B'
+Littlemoor S & SC 'B'     Mirfield Old Bank 'B'
 Jeff Goodall        21  Graham Sheard           19
 Carl Goodall        18  Duncan Terry            21
 Alan Mazurke        21  Walter Morgan           18
@@ -1251,7 +1251,7 @@ Brian Richards      21  David Bentley            6
          Points:     8               Points:     2
 
       Division 2               Wed 13th Apr
-     Farsley 'A'          Littlemoor S &amp; SC 'A'
+     Farsley 'A'          Littlemoor S & SC 'A'
 Neil Nicholson      21  John Armitage           16
 Duncan McPhail      21  Glen Pratt               8
 Ken Lee             14  Craig Hebbard           21
@@ -1615,7 +1615,7 @@ Joe Stockdale       21  Joe Bray                10
          Points:     9               Points:     1
 
       Division 2               Wed 20th Apr
-Littlemoor S &amp; SC 'A'        New Farnley 'A'
+Littlemoor S & SC 'A'        New Farnley 'A'
 Marc Armitage       21  Ian Worrall              5
 Paul Bowes          21  Tony Atkinson            9
 Steven Bowes        21  Worrall Sophie (lad)    10
@@ -1628,7 +1628,7 @@ Glen Smith          21  Paul Jagger             11
          Points:     9               Points:     1
 
       Division 2               Wed 20th Apr
-   Drighlington 'A'       Littlemoor S &amp; SC 'B'
+   Drighlington 'A'       Littlemoor S & SC 'B'
 David Billington    21  Alan Mazurke            12
 Jonathan Gamble     21  Philip Richards          9
 John Cash           21  Angela (Lad) Carter      6
@@ -1914,7 +1914,7 @@ Steve Cooper        16  Adam Ward               21
          Points:     9               Points:     1
 
       Division 1               Wed 27th Apr
-  Spen Victoria 'B'          Thornhill CB &amp; C
+  Spen Victoria 'B'          Thornhill CB & C
 Mark Ellis          16  Andy Mitchell           21
 Peter Ellis         21  Brian Sweeney           10
 John Blackburn      21  Gary Mountain            7
@@ -1979,7 +1979,7 @@ Robert Sharp        21  John Horsley            12
          Points:     7               Points:     3
 
       Division 2               Wed 27th Apr
-    Hightown Club         Littlemoor S &amp; SC 'A'
+    Hightown Club         Littlemoor S & SC 'A'
 Les Mitchell        16  Glen Smith              21
 Stephen Holmes      21  Glen Pratt              20
 Gareth Harwood      21  John Armitage           20
@@ -2291,7 +2291,7 @@ Andy Walker         14  David Marshall          21
          Points:     5               Points:     6
 
       Division 1               Wed 4th May
-   Thornhill CB &amp; C          Shipley Club 'B'
+   Thornhill CB & C          Shipley Club 'B'
 Clive Hirst         21  Michael Kane             9
 Gary Mountain        7  John Sample             21
 Jack Green          21  Bernie Criddle           7
@@ -2330,7 +2330,7 @@ Joe Stockdale       21  Thomas Scorah           11
          Points:     9               Points:     1
 
       Division 2               Wed 4th May
-Littlemoor S &amp; SC 'A'       Horsforth Woodside
+Littlemoor S & SC 'A'       Horsforth Woodside
 John Armitage       21  Mandy (Lad) Wilson       9
 Marc Armitage       21  David Hill              12
 Paul Bowes          21  Steven Bottomley        11
@@ -2538,7 +2538,7 @@ David Holmes        21  Steven Holmes           20
          Points:     3               Points:     8
 
       Division 2               Thu 5th May
- Brighouse Sports 'B'     Littlemoor S &amp; SC 'B'
+ Brighouse Sports 'B'     Littlemoor S & SC 'B'
 Gary Barraclough     6  Carl Goodall            21
 Mark Connolly       21  Billy Thorpe             9
 John Horsley        21  Jim Moorin               8
@@ -2707,7 +2707,7 @@ Chris Jacques       10  Joe Stockdale           21
          Points:     5               Points:     5
 
       Division 1               Wed 11th May
-   Thornhill CB &amp; C        Brighouse Sports 'A'
+   Thornhill CB & C        Brighouse Sports 'A'
 Mark Thompson       21  John Bloomer             3
 Ross Ingham         21  Neal Hopper              4
 James Makepeace     21  Janet Hopper            14
@@ -2746,7 +2746,7 @@ Mark Lofthouse      21  Eddie Hill              20
          Points:     8               Points:     2
 
       Division 2               Wed 11th May
-Littlemoor S &amp; SC 'B'     Littlemoor S &amp; SC 'A'
+Littlemoor S & SC 'B'     Littlemoor S & SC 'A'
 Jack Bowes          21  John Armitage            9
 Jim Moorin          21  Lee Wider               11
 Terry Laidlaw       15  Glen Smith              21
@@ -2993,7 +2993,7 @@ Brenda (Lad) Moscrop13  Trevor Worsman          21
          Points:     3               Points:     8
 
       Division 2               Thu 12th May
-Littlemoor S &amp; SC 'B'          Rastrick 'A'
+Littlemoor S & SC 'B'          Rastrick 'A'
 Brian Richards      21  Geoff Normanton          8
 Jim Moorin          21  Keith Terry             13
 Angela (Lad) Carter 21  Ian Swallow             10
@@ -3110,7 +3110,7 @@ Steve Emmett        21  Tracy (Lad) Preston     14
          Points:     7               Points:     3
 
       Division 1               Wed 18th May
-   Harold Club 'A'           Thornhill CB &amp; C
+   Harold Club 'A'           Thornhill CB & C
 Neil Tordoff        10  Andy Mitchell           21
 Andrew Fowler       20  Graham Hirst            21
 Eddie Hill          18  Ryan Mitchell           21
@@ -3162,7 +3162,7 @@ Joe Stockdale       21  Neal Hopper             14
          Points:     7               Points:     3
 
       Division 2               Wed 18th May
-Littlemoor S &amp; SC 'A'        Drighlington 'A'
+Littlemoor S & SC 'A'        Drighlington 'A'
 Marc Armitage       21  Charles Wood             9
 Paul Bowes          21  Ann Lad Billington      14
 Craig Hebbard       21  David Billington         8
@@ -3188,7 +3188,7 @@ Chris Hight         21  Anthony Sutcliffe        9
          Points:    10               Points:     0
 
       Division 2               Wed 18th May
-    Hightown Club         Littlemoor S &amp; SC 'B'
+    Hightown Club         Littlemoor S & SC 'B'
 Vinnie Smith        15  Terry Laidlaw           21
 Lee Collinson       21  Philip Richards         14
 Gareth Harwood      20  Nicky Dewhirst          21
@@ -3435,7 +3435,7 @@ James Hanson        21  Tony Render              2
          Points:     9               Points:     1
 
       Division 1               Fri 20th May
-   Thornhill CB &amp; C         Overthorpe Sports
+   Thornhill CB & C         Overthorpe Sports
 Ross Ingham         21  Matt Hollingworth        8
 Andy Mitchell       11  James Martin            21
 Ryan Mitchell       21  Mark Lofthouse          20
@@ -3539,7 +3539,7 @@ Michael Kane        21  Malcolm Fowler          11
          Points:     6               Points:     4
 
       Division 1               Wed 25th May
-   Thornhill CB &amp; C            Guiseley BC
+   Thornhill CB & C            Guiseley BC
 Jason Woodhouse     21  Marie Sutcliffe          3
 Gary Mountain       21  Ben Stockdale            7
 James Makepeace     18  Graham Oliver           21
@@ -3578,7 +3578,7 @@ Aidan Haley         19  Greg Hutchinson         21
          Points:     9               Points:     1
 
       Division 2               Wed 25th May
-Littlemoor S &amp; SC 'B'        New Farnley 'A'
+Littlemoor S & SC 'B'        New Farnley 'A'
 Terry Laidlaw       21  Andrew Thompson         10
 Neil McPhail        21  Worrall Sophie (lad)     3
 Jim Moorin          18  John Ingham             21
@@ -3617,7 +3617,7 @@ Keith Terry         21  Brian Scarth            10
          Points:     3               Points:     8
 
       Division 2               Wed 25th May
- Brighouse Sports 'B'     Littlemoor S &amp; SC 'A'
+ Brighouse Sports 'B'     Littlemoor S & SC 'A'
 Gary Barraclough    21  Glen Smith              20
 William Muslek      21  Craig Hebbard           16
 Pamela (Lad) Campbell                                                                                                                                                                                                                                                               14  Steven Bowes            21
@@ -3903,7 +3903,7 @@ Andrew Sykes        21  Chris Mordue            20
          Points:     8               Points:     2
 
       Division 1               Wed 1st Jun
-    Pudsey BC 'B'            Thornhill CB &amp; C
+    Pudsey BC 'B'            Thornhill CB & C
 Daniel Beardsworth  21  Ross Ingham             11
 Stewart Watson      21  Mark Thompson           14
 Lisa Rice            5  Graham Hirst            21
@@ -3968,7 +3968,7 @@ Chris Rose           0  Peter Ellis             21
          Points:     4               Points:     7
 
       Division 2               Wed 1st Jun
-Littlemoor S &amp; SC 'A'          Rastrick 'A'
+Littlemoor S & SC 'A'          Rastrick 'A'
 Neil McPhail        21  Jack Humpleby            9
 Marc Armitage       16  Richard Humpleby        21
 Craig Hebbard       21  Geoff Normanton          7
@@ -4020,7 +4020,7 @@ Ian Worrall         21  Ronnie Benton           14
          Points:     8               Points:     2
 
       Division 2               Wed 1st Jun
-  Horsforth Woodside      Littlemoor S &amp; SC 'B'
+  Horsforth Woodside      Littlemoor S & SC 'B'
 Graham A Chaffer    21  Angela (Lad) Carter      8
 Carol Matthews      11  Terry Laidlaw           21
 Brian Dowling       15  Philip Richards         21
@@ -4319,7 +4319,7 @@ Rachel (Lad) Telford 8  Matt Hollingworth       21
          Points:     8               Points:     2
 
       Division 1               Wed 8th Jun
-   Thornhill CB &amp; C       Cleckheaton Sports 'A'
+   Thornhill CB & C       Cleckheaton Sports 'A'
 Andy Mitchell       21  Andrew Page              1
 Mark Thompson       21  Jack Glazzard            6
 Steve Wainwright    21  John Barraclough         8
@@ -4358,7 +4358,7 @@ Joe Stockdale       21  Andy Hodgson            13
          Points:     7               Points:     3
 
       Division 2               Wed 8th Jun
-Littlemoor S &amp; SC 'B'          Farsley 'A'
+Littlemoor S & SC 'B'          Farsley 'A'
 Carl Goodall        21  Daniel Teale            13
 Terry Laidlaw       21  Duncan McPhail          11
 Angela (Lad) Carter 21  Luke Teale               6
@@ -4410,7 +4410,7 @@ Pamela (Lad) Campbell                                                           
          Points:     6               Points:     4
 
       Division 2               Wed 8th Jun
-Mirfield Old Bank 'B'     Littlemoor S &amp; SC 'A'
+Mirfield Old Bank 'B'     Littlemoor S & SC 'A'
 Andrew Foggo         5  Marc Armitage           21
 Mel Stradling       14  Glen Smith              21
 John Green          13  Steven Bowes            21
@@ -4722,7 +4722,7 @@ Michael Kane        21  Michael Rhodes           8
          Points:     6               Points:     4
 
       Division 1               Wed 29th Jun
-   Thornhill CB &amp; C           Crossgates 'B'
+   Thornhill CB & C           Crossgates 'B'
 Ross Ingham         21  Chris Broughton          8
 Ryan Mitchell       21  Nigel Cranston          17
 Andy Mitchell       21  Mick Wood               19
@@ -4748,7 +4748,7 @@ Neal Hopper         21  Michael Sweeney         16
          Points:     7               Points:     3
 
       Division 2               Wed 29th Jun
-Mirfield Old Bank 'B'     Littlemoor S &amp; SC 'B'
+Mirfield Old Bank 'B'     Littlemoor S & SC 'B'
 Graham Sheard       20  Jeff Goodall            21
 Duncan Terry        21  Angela (Lad) Carter      8
 Walter Morgan        9  Philip Richards         21
@@ -5112,7 +5112,7 @@ Chris Bray          21  Martin Wilson           18
          Points:    10               Points:     0
 
       Division 2               Wed 6th Jul
-   New Farnley 'A'        Littlemoor S &amp; SC 'A'
+   New Farnley 'A'        Littlemoor S & SC 'A'
 Simon Lavan         17  Glen Smith              21
 Ian Lynch           16  Steven Bowes            21
 Paul Jagger         18  Jack Bowes              21
@@ -5125,7 +5125,7 @@ Ryan Lynch          21  Philip Vayro            11
          Points:     2               Points:     9
 
       Division 2               Wed 6th Jul
-Littlemoor S &amp; SC 'B'        Drighlington 'A'
+Littlemoor S & SC 'B'        Drighlington 'A'
 Jim Moorin          21  John Cash                8
 Philip Richards     21  Ray O'Connor             7
 John Armitage       21  Derek Goor               8
@@ -5437,7 +5437,7 @@ Darren Cookson      21  Frank Griffin           20
          Points:     3               Points:     8
 
       Division 1               Wed 13th Jul
-   Thornhill CB &amp; C         Spen Victoria 'B'
+   Thornhill CB & C         Spen Victoria 'B'
 Andy Mitchell       21  James McNeil             2
 Jason Woodhouse     21  Harry Lumb              11
 Mark Thompson       21  Paul Blackburn          10
@@ -5502,7 +5502,7 @@ Joe Stockdale       21  Neil Slattery           20
          Points:     8               Points:     2
 
       Division 2               Wed 13th Jul
-     Rastrick 'A'         Littlemoor S &amp; SC 'B'
+     Rastrick 'A'         Littlemoor S & SC 'B'
 Ian Swallow         18  Alan Mazurke            21
 Geoff Normanton     21  Terry Laidlaw           13
 Anthony Sutcliffe   21  Jeff Goodall             5
@@ -5515,7 +5515,7 @@ Gaye Wood           16  Jim Moorin              21
          Points:     6               Points:     4
 
       Division 2               Wed 13th Jul
-Littlemoor S &amp; SC 'A'         Hightown Club
+Littlemoor S & SC 'A'         Hightown Club
 Jack Bowes          21  Lee Collinson           10
 Paul Bowes          21  Paul Warwick            10
 Steven Bowes        21  Stephen Parkin          10
@@ -5723,7 +5723,7 @@ Peter Owen          21  Keith Terry             19
          Points:    10               Points:     0
 
       Division 2               Thu 14th Jul
-Littlemoor S &amp; SC 'A'          Farsley 'A'
+Littlemoor S & SC 'A'          Farsley 'A'
 Glen Smith          10  Neil Nicholson          21
 Glen Pratt          21  Luke Teale               7
 Neil McPhail        21  Duncan McPhail          10
@@ -5892,7 +5892,7 @@ Chris Bray          21  Paul Garside             9
          Points:     8               Points:     2
 
       Division 1               Wed 20th Jul
-   Shipley Club 'B'          Thornhill CB &amp; C
+   Shipley Club 'B'          Thornhill CB & C
 Chris Jacques       21  Steve Wainwright         9
 John Sample         21  Gary Mountain           12
 Tracy (Lad) Preston 21  Andy Mitchell           12
@@ -5931,7 +5931,7 @@ Brian Walton        21  Andrew Durkin           18
          Points:     8               Points:     2
 
       Division 2               Wed 20th Jul
-  Horsforth Woodside      Littlemoor S &amp; SC 'A'
+  Horsforth Woodside      Littlemoor S & SC 'A'
 Graham A Chaffer    21  Glen Pratt              18
 Ian Matthews        21  Jack Bowes              16
 Simon Chaffer       21  Glen Smith              17
@@ -5970,7 +5970,7 @@ Robert Sharp        21  Anne (Lad) Heley        18
          Points:     4               Points:     7
 
       Division 2               Wed 20th Jul
-Littlemoor S &amp; SC 'B'      Brighouse Sports 'B'
+Littlemoor S & SC 'B'      Brighouse Sports 'B'
 Terry Laidlaw       21  William Muslek          17
 Philip Richards     11  Peter Owen              21
 Angela (Lad) Carter 21  John Horsley            10
@@ -6295,7 +6295,7 @@ Joe Stockdale       21  Daniel Metcalfe         17
          Points:     4               Points:     6
 
       Division 1               Wed 27th Jul
- Brighouse Sports 'A'        Thornhill CB &amp; C
+ Brighouse Sports 'A'        Thornhill CB & C
 Alan Broadbent      21  Jason Woodhouse         17
 Janet Hopper        21  James Makepeace          4
 John Bloomer        21  Mark Thompson           20
@@ -6334,7 +6334,7 @@ Eddie Hill          21  Chris Rose              14
          Points:     3               Points:     8
 
       Division 2               Wed 27th Jul
-Littlemoor S &amp; SC 'A'     Littlemoor S &amp; SC 'B'
+Littlemoor S & SC 'A'     Littlemoor S & SC 'B'
 Marc Armitage       16  John Armitage           21
 Jack Bowes          21  Jim Moorin              12
 Paul Bowes          21  Kath (Lad) Mazurke      11
@@ -6633,7 +6633,7 @@ Robert Wilkinson    14  Mark Morris             21
          Points:     6               Points:     4
 
       Division 1               Wed 3rd Aug
-   Thornhill CB &amp; C          Harold Club 'A'
+   Thornhill CB & C          Harold Club 'A'
 James Makepeace      9  Trevor Benn             21
 Ross Ingham         21  Nick Jagger             18
 Ryan Mitchell       21  Eddie Hill              15
@@ -6685,7 +6685,7 @@ Robert Hopper        8  Joe Stockdale           21
          Points:     2               Points:     9
 
       Division 2               Wed 3rd Aug
-   Drighlington 'A'       Littlemoor S &amp; SC 'A'
+   Drighlington 'A'       Littlemoor S & SC 'A'
 Ronnie Benton       17  Glen Smith              21
 Ann Lad Billington  10  Paul Bowes              21
 David Billington    21  Steven Bowes             6
@@ -6711,7 +6711,7 @@ Trevor Heley        21  Chris Hight             15
          Points:     3               Points:     8
 
       Division 2               Wed 3rd Aug
-Littlemoor S &amp; SC 'B'         Hightown Club
+Littlemoor S & SC 'B'         Hightown Club
 Terry Laidlaw       21  Les Mitchell            16
 Jim Moorin          21  Gareth Harwood           9
 *No Player*          0  Paul Warwick            21
@@ -6893,7 +6893,7 @@ Alan Holmes         19  Ian Meskimmon           21
          Points:     2               Points:     9
 
       Division 1               Thu 4th Aug
-  Overthorpe Sports          Thornhill CB &amp; C
+  Overthorpe Sports          Thornhill CB & C
 Neil Slattery       13  Clive Hirst             21
 Darren Ripley       21  Alan Mountain           18
 Mark Lofthouse      21  Andy Mitchell            6
@@ -6997,7 +6997,7 @@ Nick Jagger         21  Michael Kane            12
          Points:     7               Points:     3
 
       Division 1               Wed 10th Aug
-     Guiseley BC             Thornhill CB &amp; C
+     Guiseley BC             Thornhill CB & C
 Graham Oliver       11  Mark Thompson           21
 Gary Whelan         20  Andy Mitchell           21
 Martin Wilson       21  Jordan Rock              5
@@ -7036,7 +7036,7 @@ John Ineson         17  Mark Lofthouse          21
          Points:     3               Points:     8
 
       Division 2               Wed 10th Aug
-   New Farnley 'A'        Littlemoor S &amp; SC 'B'
+   New Farnley 'A'        Littlemoor S & SC 'B'
 David Taylor        10  Angela (Lad) Carter     21
 Ian Worrall         21  Terry Laidlaw            4
 Andrew Thompson     21  John Armitage           11
@@ -7075,7 +7075,7 @@ Walter Morgan       15  Trevor Heley            21
          Points:     6               Points:     4
 
       Division 2               Wed 10th Aug
-Littlemoor S &amp; SC 'A'      Brighouse Sports 'B'
+Littlemoor S & SC 'A'      Brighouse Sports 'B'
 Marc Armitage       21  John Lunt                6
 Jack Bowes          21  Grace (Lad) Barraclough 11
 Paul Bowes          21  Pamela (Lad) Campbell    6
@@ -7361,7 +7361,7 @@ Dean Scarth         16  Frank Griffin           21
          Points:     8               Points:     2
 
       Division 1               Wed 17th Aug
-   Thornhill CB &amp; C           Pudsey BC 'B'
+   Thornhill CB & C           Pudsey BC 'B'
 Mark Thompson       21  Sue (Lad) Chadwick      13
 Ben Sweeney         20  Colin Dibb              21
 Robert Collomosse   21  Steve Emmett            16
@@ -7426,7 +7426,7 @@ Danny Kilburn       21  Neil Slattery           19
          Points:     4               Points:     7
 
       Division 2               Wed 17th Aug
-     Rastrick 'A'         Littlemoor S &amp; SC 'A'
+     Rastrick 'A'         Littlemoor S & SC 'A'
 Geoff Normanton     11  Glen Smith              21
 Neil Broadbent      21  Jack Bowes               8
 Anne (Lad) Heley    21  Paul Bowes              16
@@ -7478,7 +7478,7 @@ Charles Wood        21  Ian Worrall             15
          Points:     3               Points:     8
 
       Division 2               Wed 17th Aug
-Littlemoor S &amp; SC 'B'       Horsforth Woodside
+Littlemoor S & SC 'B'       Horsforth Woodside
 Jim Moorin          21  Brian Dowling           16
 Brian Richards      18  Graham A Chaffer        21
 Kath (Lad) Mazurke  18  Andy Wood               21
@@ -7790,7 +7790,7 @@ Neil Gomersall      21  Michael Kane            16
          Points:     9               Points:     1
 
       Division 1               Wed 24th Aug
-Cleckheaton Sports 'A'       Thornhill CB &amp; C
+Cleckheaton Sports 'A'       Thornhill CB & C
 Michael Rhodes      18  Andy Mitchell           21
 Chris Bray          19  Mark Thompson           21
 Norman Swift        21  Steve Wainwright        19
@@ -7829,7 +7829,7 @@ Mark Morris         14  Paul Hill               21
          Points:     3               Points:     8
 
       Division 2               Wed 24th Aug
-     Farsley 'A'          Littlemoor S &amp; SC 'B'
+     Farsley 'A'          Littlemoor S & SC 'B'
 Luke Teale          15  Terry Laidlaw           21
 Duncan McPhail      15  Jim Moorin              21
 Ken Lee             21  John Armitage           17
@@ -7881,7 +7881,7 @@ Ryan Lynch          21  Helen (Lad) Simpson     14
          Points:     9               Points:     1
 
       Division 2               Wed 24th Aug
-Littlemoor S &amp; SC 'A'     Mirfield Old Bank 'B'
+Littlemoor S & SC 'A'     Mirfield Old Bank 'B'
 Nigel Roper         21  Graham Sheard           14
 Neil McPhail        21  Duncan Terry            14
 Steven Bowes        21  Brian Scarth             2

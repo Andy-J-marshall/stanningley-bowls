@@ -6,7 +6,7 @@
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 17th Apr                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
-  1:30pm  Littlemoor S&amp;SC 'A'     8   100   v.   Littlemoor S&amp;SC 'B'    18   115     
+  1:30pm  Littlemoor S&SC 'A'     8   100   v.   Littlemoor S&SC 'B'    18   115     
   1:30pm  Eccleshill 'A'         14    98   v.   Hove Edge              12    91     
   1:30pm  Clayton 'A'            16   111   v.   Queensbury 'A'         10    97     
   1:30pm  Wyke                    8    89   v.   Wibsey 'A'             18   113     
@@ -35,7 +35,7 @@
   1:30pm  Asa Briggs 'A'         17   112   v.   Wyke                    9    92     
   1:30pm  Wibsey 'A'             14    98   v.   Clayton 'A'            12    97     
   1:30pm  Queensbury 'A'         10    98   v.   Eccleshill 'A'         16   107     
-  1:30pm  Hove Edge              12   111   v.   Littlemoor S&amp;SC 'A'    14   115     
+  1:30pm  Hove Edge              12   111   v.   Littlemoor S&SC 'A'    14   115     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 24th Apr                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -57,10 +57,10 @@
   Time              Wed 1st May                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Hove Edge              21   125   v.   Queensbury 'A'          5    87     
-  1:30pm  Littlemoor S&amp;SC 'A'    19   123   v.   Wibsey 'A'              7   100     
+  1:30pm  Littlemoor S&SC 'A'    19   123   v.   Wibsey 'A'              7   100     
   1:30pm  Eccleshill 'A'         11    95   v.   Asa Briggs 'A'         15   108     
   1:30pm  Clayton 'A'            10    96   v.   Pudsey 'A'             16   117     
-  1:30pm  Heckmondwike           19   115   v.   Littlemoor S&amp;SC 'B'     7    82     
+  1:30pm  Heckmondwike           19   115   v.   Littlemoor S&SC 'B'     7    82     
 ------------------------------------------------------------------------------------------------------------------------
   Time              Wed 1st May                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -82,10 +82,10 @@
   Time              Wed 8th May                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Pudsey 'A'             16   108   v.   Eccleshill 'A'         10    94     
-  1:30pm  Asa Briggs 'A'         12   102   v.   Littlemoor S&amp;SC 'A'    14   107     
+  1:30pm  Asa Briggs 'A'         12   102   v.   Littlemoor S&SC 'A'    14   107     
   1:30pm  Wibsey 'A'             16   118   v.   Hove Edge              10   108     
   1:30pm  Heckmondwike           19   118   v.   Wyke                    7    84     
-  1:30pm  Littlemoor S&amp;SC 'B'    19   115   v.   Queensbury 'A'          7    86     
+  1:30pm  Littlemoor S&SC 'B'    19   115   v.   Queensbury 'A'          7    86     
 ------------------------------------------------------------------------------------------------------------------------
   Time              Wed 8th May                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -106,11 +106,11 @@
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 15th May                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
-  1:30pm  Pudsey 'A'              9    87   v.   Littlemoor S&amp;SC 'B'    17   106     
+  1:30pm  Pudsey 'A'              9    87   v.   Littlemoor S&SC 'B'    17   106     
   1:30pm  Wibsey 'A'             15   111   v.   Heckmondwike           11   109     
   1:30pm  Queensbury 'A'         17   113   v.   Wyke                    9    89     
   1:30pm  Hove Edge              10    93   v.   Clayton 'A'            16   107     
-  1:30pm  Littlemoor S&amp;SC 'A'    20   115   v.   Eccleshill 'A'          6    86     
+  1:30pm  Littlemoor S&SC 'A'    20   115   v.   Eccleshill 'A'          6    86     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 15th May                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -133,9 +133,9 @@
 ------------------------------------------------------------------------------------------------------------------------
           Queensbury 'A'                    v.   Wibsey 'A'                          To Wed 19th Jun
           Hove Edge                         v.   Asa Briggs 'A'                      To Wed 19th Jun
-          Littlemoor S&amp;SC 'A'               v.   Pudsey 'A'                          To Wed 19th Jun
+          Littlemoor S&SC 'A'               v.   Pudsey 'A'                          To Wed 19th Jun
           Clayton 'A'                       v.   Heckmondwike                        To Wed 31st Jul
-  1:30pm  Wyke                    8   101   v.   Littlemoor S&amp;SC 'B'    18   117     
+  1:30pm  Wyke                    8   101   v.   Littlemoor S&SC 'B'    18   117     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 22nd May                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -165,7 +165,7 @@
   1:30pm  Asa Briggs 'A'         13   106   v.   Queensbury 'A'         13   106     
   1:30pm  Wyke                   14   103   v.   Clayton 'A'            12   102     
   1:30pm  Heckmondwike           14   103   v.   Eccleshill 'A'         12   101     
-  1:30pm  Littlemoor S&amp;SC 'B'     9    97   v.   Wibsey 'A'             17   118     
+  1:30pm  Littlemoor S&SC 'B'     9    97   v.   Wibsey 'A'             17   118     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 29th May                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -188,8 +188,8 @@
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Pudsey 'A'             23   118   v.   Wyke                    3    57     
   1:30pm  Wibsey 'A'             14   108   v.   Eccleshill 'A'         12   108     
-  1:30pm  Queensbury 'A'         12    94   v.   Littlemoor S&amp;SC 'A'    14    95     
-  1:30pm  Littlemoor S&amp;SC 'B'    17   113   v.   Hove Edge               9    93     
+  1:30pm  Queensbury 'A'         12    94   v.   Littlemoor S&SC 'A'    14    95     
+  1:30pm  Littlemoor S&SC 'B'    17   113   v.   Hove Edge               9    93     
 ------------------------------------------------------------------------------------------------------------------------
   Time              Wed 5th Jun                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -217,9 +217,9 @@
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Wibsey 'A'             18   114   v.   Asa Briggs 'A'          8    95     
   1:30pm  Queensbury 'A'          4    89   v.   Pudsey 'A'             22   126     
-          Littlemoor S&amp;SC 'A'               v.   Heckmondwike                        To Fri 21st Jun
+          Littlemoor S&SC 'A'               v.   Heckmondwike                        To Fri 21st Jun
   1:30pm  Eccleshill 'A'         21   125   v.   Wyke                    5    86     
-  1:30pm  Clayton 'A'            13   101   v.   Littlemoor S&amp;SC 'B'    13   101     
+  1:30pm  Clayton 'A'            13   101   v.   Littlemoor S&SC 'B'    13   101     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 12th Jun                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -242,7 +242,7 @@
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Queensbury 'A'          9    98   v.   Wibsey 'A'             17   113     From Wed 22nd May
   1:30pm  Hove Edge              14   102   v.   Asa Briggs 'A'         12    99     From Wed 22nd May
-  1:30pm  Littlemoor S&amp;SC 'A'     5    78   v.   Pudsey 'A'             21   119     From Wed 22nd May
+  1:30pm  Littlemoor S&SC 'A'     5    78   v.   Pudsey 'A'             21   119     From Wed 22nd May
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 19th Jun                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -257,16 +257,16 @@
 ------------------------------------------------------------------------------------------------------------------------
   Time             Fri 21st Jun                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
-  1:30pm  Littlemoor S&amp;SC 'A'    16   103   v.   Heckmondwike           10    92     From Wed 12th Jun
+  1:30pm  Littlemoor S&SC 'A'    16   103   v.   Heckmondwike           10    92     From Wed 12th Jun
 
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 26th Jun                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Pudsey 'A'             23   112   v.   Wibsey 'A'              3    58     
   1:30pm  Clayton 'A'            14   109   v.   Eccleshill 'A'         12   105     
-  1:30pm  Wyke                   15   108   v.   Littlemoor S&amp;SC 'A'    11   106     
+  1:30pm  Wyke                   15   108   v.   Littlemoor S&SC 'A'    11   106     
   1:30pm  Heckmondwike           22   121   v.   Hove Edge               4    74     
-  1:30pm  Littlemoor S&amp;SC 'B'    11   101   v.   Asa Briggs 'A'         15   109     
+  1:30pm  Littlemoor S&SC 'B'    11   101   v.   Asa Briggs 'A'         15   109     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 26th Jun                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -290,8 +290,8 @@
   1:30pm  Asa Briggs 'A'         11   108   v.   Pudsey 'A'             15   114     
   1:30pm  Queensbury 'A'         12   102   v.   Heckmondwike           14   104     
   1:30pm  Hove Edge              24   125   v.   Wyke                    2    65     
-  1:30pm  Littlemoor S&amp;SC 'A'    16   106   v.   Clayton 'A'            10    95     
-  1:30pm  Eccleshill 'A'         20   120   v.   Littlemoor S&amp;SC 'B'     6    82     
+  1:30pm  Littlemoor S&SC 'A'    16   106   v.   Clayton 'A'            10    95     
+  1:30pm  Eccleshill 'A'         20   120   v.   Littlemoor S&SC 'B'     6    82     
 ------------------------------------------------------------------------------------------------------------------------
   Time              Wed 3rd Jul                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -312,7 +312,7 @@
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 10th Jul                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
-  1:30pm  Littlemoor S&amp;SC 'B'    13   108   v.   Littlemoor S&amp;SC 'A'    13   111     
+  1:30pm  Littlemoor S&SC 'B'    13   108   v.   Littlemoor S&SC 'A'    13   111     
   1:30pm  Hove Edge              12   101   v.   Eccleshill 'A'         14   102     
   1:30pm  Queensbury 'A'         19   111   v.   Clayton 'A'             7    80     
   1:30pm  Wibsey 'A'             23   126   v.   Wyke                    3    77     
@@ -341,7 +341,7 @@
   1:30pm  Wyke                   12   111   v.   Asa Briggs 'A'         14   114     
   1:30pm  Clayton 'A'            10    94   v.   Wibsey 'A'             16   106     
   1:30pm  Eccleshill 'A'         17   109   v.   Queensbury 'A'          9    90     
-  1:30pm  Littlemoor S&amp;SC 'A'    21   124   v.   Hove Edge               5    88     
+  1:30pm  Littlemoor S&SC 'A'    21   124   v.   Hove Edge               5    88     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 17th Jul                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -368,10 +368,10 @@
   Time             Wed 24th Jul                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Queensbury 'A'         12   104   v.   Hove Edge              14   105     
-  1:30pm  Wibsey 'A'             24   126   v.   Littlemoor S&amp;SC 'A'     2    70     
+  1:30pm  Wibsey 'A'             24   126   v.   Littlemoor S&SC 'A'     2    70     
   1:30pm  Asa Briggs 'A'         17   106   v.   Eccleshill 'A'          9    91     
   1:30pm  Pudsey 'A'             22   119   v.   Clayton 'A'             4    73     
-  1:30pm  Littlemoor S&amp;SC 'B'     8    95   v.   Heckmondwike           18   120     
+  1:30pm  Littlemoor S&SC 'B'     8    95   v.   Heckmondwike           18   120     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 24th Jul                    Division 2 (Sheila Johnson)                        
 ------------------------------------------------------------------------------------------------------------------------
@@ -393,10 +393,10 @@
   Time             Wed 31st Jul                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Eccleshill 'A'         11   111   v.   Pudsey 'A'             15   115     
-  1:30pm  Littlemoor S&amp;SC 'A'    25   126   v.   Asa Briggs 'A'          1    64     
+  1:30pm  Littlemoor S&SC 'A'    25   126   v.   Asa Briggs 'A'          1    64     
   1:30pm  Hove Edge              16   110   v.   Wibsey 'A'             10    97     
   1:30pm  Wyke                    3    65   v.   Heckmondwike           23   119     
-  1:30pm  Queensbury 'A'         15   111   v.   Littlemoor S&amp;SC 'B'    11   106     
+  1:30pm  Queensbury 'A'         15   111   v.   Littlemoor S&SC 'B'    11   106     
  10:30am  Clayton 'A'            16   109   v.   Heckmondwike           10    89     From Wed 22nd May
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 31st Jul                    Division 2 (Sheila Johnson)                        
@@ -429,10 +429,10 @@
   1.  Heckmondwike           14   10    4    230
   2.  Pudsey 'A'             13   11    2    228
   3.  Wibsey 'A'             14   11    3    212
-  4.  Littlemoor S&amp;SC 'A'    14    9    4    198
+  4.  Littlemoor S&SC 'A'    14    9    4    198
   5.  Eccleshill 'A'         14    6    8    185
   6.  Hove Edge              14    5    9    171
-  7.  Littlemoor S&amp;SC 'B'    13    5    6    167
+  7.  Littlemoor S&SC 'B'    13    5    6    167
   8.  Queensbury 'A'         14    3   10    154
   9.  Asa Briggs 'A'         13    5    7    141
  10.  Clayton 'A'            12    4    7    140
@@ -473,7 +473,7 @@
 
 === FULL RESULTS: Wed 17th Apr to Wed 25th Sep
 Division 1 (Ed Foster)       Wed 17th Apr
- Littlemoor S&amp;SC 'A'      Littlemoor S&amp;SC 'B'
+ Littlemoor S&SC 'A'      Littlemoor S&SC 'B'
 John Armitage       19  Kevin Siddle         21
 Jim Moorin          21  Thomas Powell        10
 Philip A Richards    9  Jeff Goodhall        21
@@ -701,7 +701,7 @@ Michael Clare       19  Ken Wilson           21
           Points:   10             Points:   16
 
 Division 1 (Ed Foster)       Wed 24th Apr
-      Hove Edge           Littlemoor S&amp;SC 'A'
+      Hove Edge           Littlemoor S&SC 'A'
 Richard Hopley      18  Angela Carter        21
 Steve Rothwell      21  Jim Moorin           19
 Jim Warne           21  Philip A Richards    15
@@ -845,7 +845,7 @@ Jim Warne           21  David Clough         14
           Points:   21             Points:    5
 
 Division 1 (Ed Foster)        Wed 1st May
- Littlemoor S&amp;SC 'A'          Wibsey 'A'
+ Littlemoor S&SC 'A'          Wibsey 'A'
 John Armitage       21  Peter Crowther       10
 Philip A Richards   21  Tasawar Hussain      10
 Alan Mazurke        21  David Southwell      19
@@ -881,7 +881,7 @@ Bev Shutt            8  Jonathan Orbell      21
           Points:   10             Points:   16
 
 Division 1 (Ed Foster)        Wed 1st May
-     Heckmondwike         Littlemoor S&amp;SC 'B'
+     Heckmondwike         Littlemoor S&SC 'B'
 Darren Goodall      12  Jeff Goodhall        21
 Jacob Hatfield-Goodall                                                                                                                                                                                                                                                              19  Jack Glazzard        21
 Eddie Temple        21  Glen Merrick          5
@@ -1025,7 +1025,7 @@ Richard Hodgson     21  Mark Reynolds        13
           Points:   16             Points:   10
 
 Division 1 (Ed Foster)        Wed 8th May
-    Asa Briggs 'A'        Littlemoor S&amp;SC 'A'
+    Asa Briggs 'A'        Littlemoor S&SC 'A'
 David Trudgill      21  Jim Moorin           20
 Kath Sansom         21  Angela Carter         9
 Steve Fleming       15  Glenn Miller         21
@@ -1061,7 +1061,7 @@ Harley Tattersley   21  Malcolm Park          3
           Points:   19             Points:    7
 
 Division 1 (Ed Foster)        Wed 8th May
- Littlemoor S&amp;SC 'B'        Queensbury 'A'
+ Littlemoor S&SC 'B'        Queensbury 'A'
 Steve Bowes         14  David Smalley        21
 Jack Glazzard       21  David Clough          4
 Glen Merrick        21  Barbara Wardman       8
@@ -1193,7 +1193,7 @@ William Watson       7  David Marsh          21
           Points:    3             Points:   23
 
 Division 1 (Ed Foster)       Wed 15th May
-      Pudsey 'A'          Littlemoor S&amp;SC 'B'
+      Pudsey 'A'          Littlemoor S&SC 'B'
 Pam Lindley          6  Stuart Watson        21
 Melissa Morris       8  Jack Glazzard        21
 Tom Morris          14  William Swailes      21
@@ -1241,7 +1241,7 @@ Richard Hopley      21  Peter Oliver         18
           Points:   10             Points:   16
 
 Division 1 (Ed Foster)       Wed 15th May
- Littlemoor S&amp;SC 'A'        Eccleshill 'A'
+ Littlemoor S&SC 'A'        Eccleshill 'A'
 Jim Moorin          10  Mark Reynolds        21
 Kath Mazurke        21  Peter Jefferson      18
 Glenn Miller        21  Ken Wilson           11
@@ -1373,7 +1373,7 @@ Brenda Hudson       11  Jeff Hodgson         21
           Points:    7             Points:   19
 
 Division 1 (Ed Foster)       Wed 22nd May
-         Wyke             Littlemoor S&amp;SC 'B'
+         Wyke             Littlemoor S&SC 'B'
 Malcolm Park        15  Glen Merrick         21
 Colin White          9  Steve Bowes          21
 Dean Helliwell      20  Thomas Powell        21
@@ -1493,7 +1493,7 @@ Gareth Harwood      10  John Griffin         21
           Points:   14             Points:   12
 
 Division 1 (Ed Foster)       Wed 29th May
- Littlemoor S&amp;SC 'B'          Wibsey 'A'
+ Littlemoor S&SC 'B'          Wibsey 'A'
 Jack Glazzard       15  John Stocks          21
 Steve Longley       10  David Southwell      21
 Glen Merrick        13  Tasawar Hussain      21
@@ -1649,7 +1649,7 @@ Nicola Stocks       21  Mick Angus           20
           Points:   14             Points:   12
 
 Division 1 (Ed Foster)        Wed 5th Jun
-    Queensbury 'A'        Littlemoor S&amp;SC 'A'
+    Queensbury 'A'        Littlemoor S&SC 'A'
 David Smalley       21  William Swailes       5
 Barbara Wardman     10  Jim Moorin           21
 Irene Bulman        13  Alan Mazurke         21
@@ -1661,7 +1661,7 @@ Michael Clare       21  Glenn Miller         16
           Points:   12             Points:   14
 
 Division 1 (Ed Foster)        Wed 5th Jun
- Littlemoor S&amp;SC 'B'           Hove Edge
+ Littlemoor S&SC 'B'           Hove Edge
 Steve Bowes         20  Nigel Firth          21
 Jack Glazzard        9  Steve Rothwell       21
 Jeff Goodhall       21  Richard Hopley       20
@@ -1841,7 +1841,7 @@ John Griffin        21  Vincent Kerr         10
           Points:   21             Points:    5
 
 Division 1 (Ed Foster)       Wed 12th Jun
-     Clayton 'A'          Littlemoor S&amp;SC 'B'
+     Clayton 'A'          Littlemoor S&SC 'B'
 Simon Russell       21  Susan Powell         10
 Paul Gill           21  Jack Glazzard        13
 Bev Shutt           18  Steve Bowes          21
@@ -1997,7 +1997,7 @@ Nigel Firth         21  Kevin Burrage        15
           Points:   14             Points:   12
 
 Division 1 (Ed Foster)       Wed 19th Jun
- Littlemoor S&amp;SC 'A'          Pudsey 'A'
+ Littlemoor S&SC 'A'          Pudsey 'A'
 Angela Carter       21  Tom Morris           14
 Philip A Richards    4  Andrew Sykes         21
 Kath Mazurke         6  Pam Lindley          21
@@ -2057,7 +2057,7 @@ David Marsh         21  Patrick McNally       9
           Points:   25             Points:    1
 
 Division 1 (Ed Foster)       Fri 21st Jun
- Littlemoor S&amp;SC 'A'         Heckmondwike
+ Littlemoor S&SC 'A'         Heckmondwike
 Glenn Miller         7  Harley Tattersley    21
 Jim Moorin          21  Darren Goodall        7
 John Armitage       21  Gerald Bromley       20
@@ -2093,7 +2093,7 @@ Peter Oliver        21  Ken Wilson           15
           Points:   14             Points:   12
 
 Division 1 (Ed Foster)       Wed 26th Jun
-         Wyke             Littlemoor S&amp;SC 'A'
+         Wyke             Littlemoor S&SC 'A'
 Richard Kerr        21  Philip A Richards    17
 Colin White         15  Glenn Miller         21
 Malcolm Park        21  Kath Mazurke         15
@@ -2117,7 +2117,7 @@ Roy Carter          16  Steve Rothwell       21
           Points:   22             Points:    4
 
 Division 1 (Ed Foster)       Wed 26th Jun
- Littlemoor S&amp;SC 'B'        Asa Briggs 'A'
+ Littlemoor S&SC 'B'        Asa Briggs 'A'
 Steve Longley       16  Arthur Schofield     21
 Jeff Goodhall       21  Steve Fleming        16
 Glen Merrick        13  Paula Graham         21
@@ -2285,7 +2285,7 @@ Richard Hopley      21  Vincent Kerr          1
           Points:   24             Points:    2
 
 Division 1 (Ed Foster)        Wed 3rd Jul
- Littlemoor S&amp;SC 'A'          Clayton 'A'
+ Littlemoor S&SC 'A'          Clayton 'A'
 Kath Mazurke        21  David Moore          14
 William Swailes     21  Bev Shutt             9
 Philip A Richards   11  June Wilson          21
@@ -2297,7 +2297,7 @@ Glenn Miller        21  Simon Russell        14
           Points:   16             Points:   10
 
 Division 1 (Ed Foster)        Wed 3rd Jul
-    Eccleshill 'A'        Littlemoor S&amp;SC 'B'
+    Eccleshill 'A'        Littlemoor S&SC 'B'
 Peter Howroyd       17  Steve Bowes          21
 Pauline Gilroy      21  Jack Glazzard        11
 Ken Wilson          21  Jeff Goodhall        18
@@ -2417,7 +2417,7 @@ Barry Clough         4  David Marsh          21
           Points:    0             Points:   26
 
 Division 1 (Ed Foster)       Wed 10th Jul
- Littlemoor S&amp;SC 'B'      Littlemoor S&amp;SC 'A'
+ Littlemoor S&SC 'B'      Littlemoor S&SC 'A'
 Jeff Goodhall       21  Alan Mazurke         13
 Steve Bowes         21  Angela Carter        17
 Thomas Powell       19  Kath Mazurke         21
@@ -2645,7 +2645,7 @@ Mark Reynolds       21  Margaret Lee          2
           Points:   17             Points:    9
 
 Division 1 (Ed Foster)       Wed 17th Jul
- Littlemoor S&amp;SC 'A'           Hove Edge
+ Littlemoor S&SC 'A'           Hove Edge
 Glenn Miller        21  Jim Warne            13
 Kath Mazurke        21  Steve Rothwell       13
 Jim Moorin          21  Christine Barker     12
@@ -2789,7 +2789,7 @@ David Smalley       21  Peter Barstow        18
           Points:   12             Points:   14
 
 Division 1 (Ed Foster)       Wed 24th Jul
-      Wibsey 'A'          Littlemoor S&amp;SC 'A'
+      Wibsey 'A'          Littlemoor S&SC 'A'
 Peter Crowther      21  Angela Carter        11
 John Stocks         21  Glenn Miller          4
 Alison Stocks       21  Kath Mazurke         13
@@ -2825,7 +2825,7 @@ Melissa Morris      14  Paul Gill            21
           Points:   22             Points:    4
 
 Division 1 (Ed Foster)       Wed 24th Jul
- Littlemoor S&amp;SC 'B'         Heckmondwike
+ Littlemoor S&SC 'B'         Heckmondwike
 Thomas Powell        7  Gerald Bromley       21
 Jack Glazzard       15  Jacob Hatfield-Goodall                                                                                                                                                                                                                                                               21
 Billy Thorpe        15  Eddie Gilbert        21
@@ -2969,7 +2969,7 @@ Pauline Gilroy      19  Steve Emmett         21
           Points:   11             Points:   15
 
 Division 1 (Ed Foster)       Wed 31st Jul
- Littlemoor S&amp;SC 'A'        Asa Briggs 'A'
+ Littlemoor S&SC 'A'        Asa Briggs 'A'
 Angela Carter       21  Arthur Schofield      5
 Kath Mazurke        21  Kath Sansom           9
 Jim Moorin          21  Steve Fleming         4
@@ -3005,7 +3005,7 @@ Colin White          6  Jacob Hatfield-Goodall                                  
           Points:    3             Points:   23
 
 Division 1 (Ed Foster)       Wed 31st Jul
-    Queensbury 'A'        Littlemoor S&amp;SC 'B'
+    Queensbury 'A'        Littlemoor S&SC 'B'
 David Smalley       21  Phil Thornton        13
 Barbara Wardman     21  Jeff Goodhall        19
 Irene Bulman        21  Thomas Powell        20

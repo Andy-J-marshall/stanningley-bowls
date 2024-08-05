@@ -16,7 +16,7 @@
   Time             Thu 2nd May                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Guiseley A           22   153   v.   Eccleshill A          6   119     
-  1:30pm  Wyke A               26   164   v.   Littlemoor S &amp; SC     2    94     
+  1:30pm  Wyke A               26   164   v.   Littlemoor S & SC     2    94     
   1:30pm  Ilkley               25   168   v.   Asa Briggs A          3   124     
   1:30pm  Wibsey               12   138   v.   Clayton A            16   139     
   1:30pm  Salts A               4   109   v.   Pudsey A             24   160     
@@ -51,7 +51,7 @@
   1:30pm  Pudsey A             25   165   v.   Wibsey                3   106     
   1:30pm  Clayton A            25   154   v.   Ilkley                3    92     
   1:30pm  Asa Briggs A         20   157   v.   Wyke A                8   134     
-  1:30pm  Littlemoor S &amp; SC    26   158   v.   Guiseley A            2    83     
+  1:30pm  Littlemoor S & SC    26   158   v.   Guiseley A            2    83     
   1:30pm  Eccleshill A         26   158   v.   Salts A               2    99     
 -------------------------------------------------------------------------------------------------------------------
   Time             Thu 9th May                         Division Two                               
@@ -81,7 +81,7 @@
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 16th May                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
-  1:30pm  Eccleshill A         22   147   v.   Littlemoor S &amp; SC     6   107     
+  1:30pm  Eccleshill A         22   147   v.   Littlemoor S & SC     6   107     
   1:30pm  Guiseley A           16   129   v.   Asa Briggs A         12   123     
   1:30pm  Wyke A               13   149   v.   Clayton A            15   153     
   1:30pm  Ilkley               22   159   v.   Pudsey A              6   121     
@@ -123,7 +123,7 @@
   1:30pm  Clayton A            26   157   v.   Guiseley A            2    97     
   1:30pm  Asa Briggs A         21   147   v.   Eccleshill A          7   115     
   1:30pm  Wibsey               16   150   v.   Ilkley               12   141     
-  1:30pm  Salts A              27   155   v.   Littlemoor S &amp; SC     1    83     
+  1:30pm  Salts A              27   155   v.   Littlemoor S & SC     1    83     
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 23rd May                         Division Two                               
 -------------------------------------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 30th May                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
-  1:30pm  Littlemoor S &amp; SC     5   114   v.   Asa Briggs A         23   159     
+  1:30pm  Littlemoor S & SC     5   114   v.   Asa Briggs A         23   159     
   1:30pm  Eccleshill A          9   131   v.   Clayton A            19   155     
   1:30pm  Guiseley A            5   118   v.   Pudsey A             23   163     
   1:30pm  Wyke A               17   144   v.   Wibsey               11   131     
@@ -186,7 +186,7 @@
   Time             Thu 6th Jun                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Pudsey A             20   160   v.   Eccleshill A          8   128     
-  1:30pm  Clayton A            22   160   v.   Littlemoor S &amp; SC     6   124     
+  1:30pm  Clayton A            22   160   v.   Littlemoor S & SC     6   124     
   1:30pm  Ilkley               23   159   v.   Wyke A                5   117     
   1:30pm  Wibsey               24   161   v.   Guiseley A            4   114     
   1:30pm  Salts A               5   117   v.   Asa Briggs A         23   163     
@@ -219,7 +219,7 @@
   Time            Thu 13th Jun                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Asa Briggs A         11   130   v.   Clayton A            17   146     
-  1:30pm  Littlemoor S &amp; SC    11   126   v.   Pudsey A             17   142     
+  1:30pm  Littlemoor S & SC    11   126   v.   Pudsey A             17   142     
   1:30pm  Eccleshill A         19   154   v.   Wibsey                9   137     
   1:30pm  Guiseley A            9   120   v.   Ilkley               19   143     
   1:30pm  Wyke A               26   161   v.   Salts A               2    86     
@@ -253,7 +253,7 @@
   1:30pm  Pudsey A             19   155   v.   Asa Briggs A          9   127     
   1:30pm  Wyke A               19   144   v.   Guiseley A            9   120     
   1:30pm  Ilkley               23   159   v.   Eccleshill A          5   123     
-  1:30pm  Wibsey               21   157   v.   Littlemoor S &amp; SC     7   119     
+  1:30pm  Wibsey               21   157   v.   Littlemoor S & SC     7   119     
   1:30pm  Salts A               8   114   v.   Clayton A            20   148     
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 20th Jun                         Division Two                               
@@ -285,7 +285,7 @@
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Clayton A            17   146   v.   Pudsey A             11   138     
   1:30pm  Asa Briggs A         24   165   v.   Wibsey                4   117     
-  1:30pm  Littlemoor S &amp; SC    17   140   v.   Ilkley               11   127     
+  1:30pm  Littlemoor S & SC    17   140   v.   Ilkley               11   127     
   1:30pm  Eccleshill A         18   154   v.   Wyke A               10   137     
   1:30pm  Guiseley A           19   159   v.   Salts A               9   132     
 -------------------------------------------------------------------------------------------------------------------
@@ -349,7 +349,7 @@
   1:30pm  Pudsey A             27   166   v.   Salts A               1   101     
   1:30pm  Clayton A            26   157   v.   Wibsey                2    98     
   1:30pm  Asa Briggs A         20   161   v.   Ilkley                8   133     
-  1:30pm  Littlemoor S &amp; SC    21   155   v.   Wyke A                7   126     
+  1:30pm  Littlemoor S & SC    21   155   v.   Wyke A                7   126     
   1:30pm  Eccleshill A         19   153   v.   Guiseley A            9   129     
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 18th Jul                         Division Two                               
@@ -379,7 +379,7 @@
 -------------------------------------------------------------------------------------------------------------------
   Time            Thu 25th Jul                         Division One                               
 -------------------------------------------------------------------------------------------------------------------
-  1:30pm  Guiseley A           21   154   v.   Littlemoor S &amp; SC     7   125     
+  1:30pm  Guiseley A           21   154   v.   Littlemoor S & SC     7   125     
   1:30pm  Wyke A               13   147   v.   Asa Briggs A         15   153     
   1:30pm  Ilkley               16   156   v.   Clayton A            12   146     
   1:30pm  Wibsey                9   132   v.   Pudsey A             19   153     
@@ -414,7 +414,7 @@
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Clayton A            25   168   v.   Wyke A                3   119     
   1:30pm  Asa Briggs A         24   161   v.   Guiseley A            4   115     
-  1:30pm  Littlemoor S &amp; SC    15   143   v.   Eccleshill A         13   140     
+  1:30pm  Littlemoor S & SC    15   143   v.   Eccleshill A         13   140     
   1:30pm  Salts A              18   147   v.   Wibsey               10   134     
 -------------------------------------------------------------------------------------------------------------------
   Time             Thu 1st Aug                         Division Two                               
@@ -453,7 +453,7 @@
   5.  Eccleshill A         12    6    6    168
   6.  Wyke A               12    4    8    152
   7.  Wibsey               12    4    8    141
-  8.  Littlemoor S &amp; SC    12    4    8    124
+  8.  Littlemoor S & SC    12    4    8    124
   9.  Guiseley A           12    4    8    122
  10.  Salts A              12    2   10     98
 
@@ -580,7 +580,7 @@ Andy Durkin            21  Ken Wilson             20
             Points:    22               Points:    6
 
       Division One                Thu 2nd May
-         Wyke A                Littlemoor S &amp; SC
+         Wyke A                Littlemoor S & SC
 Kevin Wood             21  Phillip Richards        4
 Mike Lambert           21  Jack Glazzard          10
 Gerry Hird             21  Kath Mazurke            4
@@ -864,7 +864,7 @@ Clive Foord            21  Mike Lambert           16
             Points:    20               Points:    8
 
       Division One                Thu 9th May
-    Littlemoor S &amp; SC             Guiseley A
+    Littlemoor S & SC             Guiseley A
 Phillip Richards       19  Graham Oliver          21
 Alan Mazurke           21  Lynne Ogden            14
 James Moorin           13  Barry McCourt          21
@@ -1092,7 +1092,7 @@ Brian Denning          21  Anthony Lockwood        8
             Points:    23               Points:    3
 
       Division One               Thu 16th May
-      Eccleshill A             Littlemoor S &amp; SC
+      Eccleshill A             Littlemoor S & SC
 Peter Jefferson        21  Glenn Miller           17
 Ken Wilson             21  Angela Carter           6
 Peter Howroyd          21  Kath Mazurke            5
@@ -1418,7 +1418,7 @@ Tasawar Hussain        21  Andy Thornton          19
             Points:    16               Points:   12
 
       Division One               Thu 23rd May
-         Salts A               Littlemoor S &amp; SC
+         Salts A               Littlemoor S & SC
 Brian Tempest          21  Alan Mazurke           16
 Carol Royston           8  Glenn Pratt            21
 Simon Cowley           21  James Moorin            8
@@ -1632,7 +1632,7 @@ John Roberts           21  John Coppin             6
             Points:    16               Points:   10
 
       Division One               Thu 30th May
-    Littlemoor S &amp; SC            Asa Briggs A
+    Littlemoor S & SC            Asa Briggs A
 Glenn Miller           10  Kevin Burrage          21
 Kath Mazurke           12  Malcolm Iles           21
 Angela Carter          10  Mick Gadd              21
@@ -1916,7 +1916,7 @@ Stewart Watson         21  Peter Jefferson        16
             Points:    20               Points:    8
 
       Division One                Thu 6th Jun
-        Clayton A              Littlemoor S &amp; SC
+        Clayton A              Littlemoor S & SC
 Philip Lister          21  Glenn Miller           18
 Peter Oliver           20  Alan Mazurke           21
 Tony Riley             21  Phillip Richards        9
@@ -2186,7 +2186,7 @@ Clive Foord            21  Andrew Walker          18
             Points:    11               Points:   17
 
       Division One               Thu 13th Jun
-    Littlemoor S &amp; SC              Pudsey A
+    Littlemoor S & SC              Pudsey A
 James Moorin           21  Stewart Watson         16
 Bill Thorpe            11  Kevin Rankin           21
 Kath Mazurke            7  David Poole            21
@@ -2472,7 +2472,7 @@ Hedley Chapman         21  Ken Wilson             18
             Points:    23               Points:    5
 
       Division One               Thu 20th Jun
-         Wibsey                Littlemoor S &amp; SC
+         Wibsey                Littlemoor S & SC
 Ann Billington         14  Thomas Powell          21
 John Stocks            21  Alan Mazurke           13
 John Stevenson         21  Phillip Richards        6
@@ -2728,7 +2728,7 @@ Phil Smith             21  Tasawar Hussain        19
             Points:    24               Points:    4
 
       Division One               Thu 27th Jun
-    Littlemoor S &amp; SC               Ilkley
+    Littlemoor S & SC               Ilkley
 Bill Swales            21  Bob Jeffrey            15
 Alan Mazurke           21  Rod Bastow             11
 Angela Carter          21  Mick Bastow            16
@@ -3146,7 +3146,7 @@ Mark Barnett           15  Andy Thornton          21
             Points:    20               Points:    8
 
       Division One               Thu 18th Jul
-    Littlemoor S &amp; SC               Wyke A
+    Littlemoor S & SC               Wyke A
 Alan Mazurke           21  Nigel Wormald          14
 Bob Baines             13  David Rayner           21
 Bill Swales            21  Mike Lambert            9
@@ -3374,7 +3374,7 @@ Gordon Daniel          21  Deryck Welch           11
             Points:    19               Points:    7
 
       Division One               Thu 25th Jul
-       Guiseley A              Littlemoor S &amp; SC
+       Guiseley A              Littlemoor S & SC
 Graham Oliver          21  James Moorin           14
 Barry McCourt          19  Kath Mazurke           21
 Peter Storey           21  Glenn Miller           13
@@ -3672,7 +3672,7 @@ Malcolm Iles           21  Lynne Ogden            12
             Points:    24               Points:    4
 
       Division One                Thu 1st Aug
-    Littlemoor S &amp; SC            Eccleshill A
+    Littlemoor S & SC            Eccleshill A
 Kath Mazurke           21  Peter Jefferson         9
 Phillip Richards        4  Michael Hall           21
 Thomas Powell          21  Peter Howroyd          20
