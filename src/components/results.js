@@ -14,6 +14,7 @@ function Results(props) {
     let resultsFound = false;
     let resultsArray;
 
+    // TODO change the python code to remove date too?
     if (teamResults) {
         resultsArray = teamResults.map((team) => {
             const results = team.results.map((result) => {
@@ -22,13 +23,11 @@ function Results(props) {
                 const homeScore = homePart.match(/[0-9]+/g)[0].trim();
                 const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
                 const awayPart = resultParts[1].split(' (')[0];
-                let date = resultParts[1].split(' (')[1];
-                date = date.slice(0, -1);
                 const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
                 const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
-    
+
                 resultsFound = true;
-    
+
                 return {
                     home: {
                         homeTeam,
@@ -38,12 +37,11 @@ function Results(props) {
                         awayTeam,
                         awayScore,
                     },
-                    date,
                 };
             });
-    
+
             return {
-                day: config.days[team.day.toLowerCase()],
+                day: config.allTeamsInLeaguesSince2013.find(e => e.toLowerCase().includes(team.day.toLowerCase())),
                 results: results,
             };
         });
@@ -59,12 +57,6 @@ function Results(props) {
                 />
                 <h1>RESULTS</h1>
                 {resultsArray.map((resultTeam, idx) => {
-                    const teamConfig = config.teams.find((configTeam) =>
-                        resultTeam.day
-                            .toLowerCase()
-                            .includes(configTeam.name.toLowerCase())
-                    );
-
                     return (
                         <div className="teamResult" key={idx}>
                             {resultTeam.results.length > 0 && (
@@ -75,7 +67,6 @@ function Results(props) {
                                     <Table striped bordered hover>
                                         <thead>
                                             <tr>
-                                                <th>DATE</th>
                                                 <th>HOME</th>
                                                 <th></th>
                                                 <th></th>
@@ -88,21 +79,10 @@ function Results(props) {
                                                     result.home.homeTeam;
                                                 const awayTeam =
                                                     result.away.awayTeam;
-                                                const date = result.date;
 
                                                 return (
                                                     <tbody key={idx}>
                                                         <tr>
-                                                            <td
-                                                                style={{
-                                                                    borderRightStyle:
-                                                                        'solid',
-                                                                    borderRightColor:
-                                                                        'black',
-                                                                }}
-                                                            >
-                                                                {date}
-                                                            </td>
                                                             {homeTeam
                                                                 .toLowerCase()
                                                                 .includes(
@@ -170,19 +150,10 @@ function Results(props) {
                                             }
                                         )}
                                     </Table>
-                                    <p className="footnote">
-                                        The full league results can be found on{' '}
-                                        <a
-                                            style={{ textDecoration: 'none' }}
-                                            target="_blank"
-                                            href={teamConfig.link}
-                                        >
-                                            Bowlsnet
-                                        </a>
-                                        .
-                                    </p>
                                 </div>
                             )}
+                            <br />
+                            <hr/>
                         </div>
                     );
                 })}
