@@ -211,100 +211,112 @@ function PlayerRecords(props) {
         }
     }
 
-    function returnTeamRecordComponent(possibleTeamNames, bTeamForLeagueBool) {
-        let teamName = '';
-        let displayname = returnTabName(possibleTeamNames[0]);
-        let teamRecord = null;
+    function returnAllComponentsForTeams() {
+        return config.historicTeamInfo.map((teamData) => {
+            let teamName = '';
+            let displayname = returnTabName(teamData.teamNames[0]);
+            let teamRecord = null;
 
-        // Find A team stats
-        for (const team of possibleTeamNames) {
-            const tn = team.toLowerCase();
-            const tr = teamRecords[tn];
-            if (tr) {
-                if (tr.bestTeamAverage > -21) {
-                    teamRecord = tr;
+            // Find A team stats
+            for (const team of teamData.teamNames) {
+                const tn = team.toLowerCase();
+                const tr = teamRecords[tn];
+                if (tr) {
+                    if (tr.bestTeamAverage > -21) {
+                        teamRecord = tr;
+                        teamName = tn;
+                        break;
+                    }
+                }
+
+                // Check for a team with an (a) suffix if no team found
+                const trWithASuffix = teamRecords[tn + ' (a)'];
+                if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+                    teamRecord = trWithASuffix;
                     teamName = tn;
                     break;
                 }
             }
 
-            // Check for a team with an (a) suffix if no team found
-            const trWithASuffix = teamRecords[tn + ' (a)'];
-            if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
-                teamRecord = trWithASuffix;
-                teamName = tn;
-                break;
+            // Find B team stats if they exist
+            let bTeamRecord = null;
+            if (teamData.bTeamForLeagueBool) {
+                bTeamRecord =
+                    teamRecords[teamName.replace(' (a)', '') + ' (b)'];
             }
-        }
 
-        // Find B team stats if they exist
-        let bTeamRecord = null;
-        if (bTeamForLeagueBool) {
-            bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
-        }
-
-        if (teamRecord || bTeamRecord) {
-            if (
-                teamRecord.bestTeamAveragePlayer.length > 0 ||
-                bTeamRecord.bestTeamAveragePlayer.length > 0
-            ) {
+            if (teamRecord || bTeamRecord) {
+                if (
+                    teamRecord.bestTeamAveragePlayer.length > 0 ||
+                    bTeamRecord.bestTeamAveragePlayer.length > 0
+                ) {
+                    return (
+                        <div displayname={displayname}>
+                            {teamRecord && teamRecord.bestTeamAverage > -21 && (
+                                <RecordsTableDisplay
+                                    day={teamName.replace(' (a)', '')}
+                                    minGames={teamRecord.minTeamGames}
+                                    mostWins={teamRecord.mostTeamWins}
+                                    mostWinsPlayer={
+                                        teamRecord.mostTeamWinsPlayer
+                                    }
+                                    bestWinPerc={teamRecord.bestTeamWinPerc}
+                                    bestWinPercPlayer={
+                                        teamRecord.bestTeamWinPercPlayer
+                                    }
+                                    bestAverage={teamRecord.bestTeamAverage}
+                                    bestAveragePlayer={
+                                        teamRecord.bestTeamAveragePlayer
+                                    }
+                                />
+                            )}
+                            {bTeamRecord && (
+                                <div>
+                                    <br />
+                                    <hr />
+                                </div>
+                            )}
+                            {bTeamRecord &&
+                                bTeamRecord.bestTeamAverage > -21 && (
+                                    <RecordsTableDisplay
+                                        day={
+                                            teamName.replace(' (a)', '') +
+                                            ' (b)'
+                                        }
+                                        minGames={bTeamRecord.minTeamGames}
+                                        mostWins={bTeamRecord.mostTeamWins}
+                                        mostWinsPlayer={
+                                            bTeamRecord.mostTeamWinsPlayer
+                                        }
+                                        bestWinPerc={
+                                            bTeamRecord.bestTeamWinPerc
+                                        }
+                                        bestWinPercPlayer={
+                                            bTeamRecord.bestTeamWinPercPlayer
+                                        }
+                                        bestAverage={
+                                            bTeamRecord.bestTeamAverage
+                                        }
+                                        bestAveragePlayer={
+                                            bTeamRecord.bestTeamAveragePlayer
+                                        }
+                                    />
+                                )}
+                        </div>
+                    );
+                } else {
+                    return <p displayname={displayname}>No games played</p>;
+                }
+            } else {
                 return (
                     <div displayname={displayname}>
-                        {teamRecord && teamRecord.bestTeamAverage > -21 && (
-                            <RecordsTableDisplay
-                                day={teamName.replace(' (a)', '')}
-                                minGames={teamRecord.minTeamGames}
-                                mostWins={teamRecord.mostTeamWins}
-                                mostWinsPlayer={teamRecord.mostTeamWinsPlayer}
-                                bestWinPerc={teamRecord.bestTeamWinPerc}
-                                bestWinPercPlayer={
-                                    teamRecord.bestTeamWinPercPlayer
-                                }
-                                bestAverage={teamRecord.bestTeamAverage}
-                                bestAveragePlayer={
-                                    teamRecord.bestTeamAveragePlayer
-                                }
-                            />
-                        )}
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <RecordsTableDisplay
-                                day={teamName.replace(' (a)', '') + ' (b)'}
-                                minGames={bTeamRecord.minTeamGames}
-                                mostWins={bTeamRecord.mostTeamWins}
-                                mostWinsPlayer={bTeamRecord.mostTeamWinsPlayer}
-                                bestWinPerc={bTeamRecord.bestTeamWinPerc}
-                                bestWinPercPlayer={
-                                    bTeamRecord.bestTeamWinPercPlayer
-                                }
-                                bestAverage={bTeamRecord.bestTeamAverage}
-                                bestAveragePlayer={
-                                    bTeamRecord.bestTeamAveragePlayer
-                                }
-                            />
-                        )}
+                        <p>
+                            {config.teamNames.shortName} did not play on this
+                            day for the selected year
+                        </p>
                     </div>
                 );
-            } else {
-                return <p displayname={displayname}>No games played</p>;
             }
-        } else {
-            return (
-                <div displayname={displayname}>
-                    <p>
-                        {config.teamNames.shortName} did not play on this day
-                        for the selected year
-                    </p>
-                </div>
-            );
-        }
-    }
-
-    function returnAllComponentsForTeams() {
-        return config.historicTeamInfo.map((teamData) => {
-            return returnTeamRecordComponent(
-                teamData.teamNames,
-                teamData.bTeamForLeagueBool
-            );
         });
     }
 
