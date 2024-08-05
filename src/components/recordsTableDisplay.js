@@ -3,8 +3,6 @@ import { capitalizeText } from '../helpers/utils';
 
 function RecordsTableDisplay(props) {
     const day = props.day;
-    const aTeam = props.aTeam;
-    const bTeam = props.bTeam;
     const minGames = props.minGames;
     const bestWinPerc = props.bestWinPerc;
     const bestWinPercPlayer = props.bestWinPercPlayer;
@@ -17,14 +15,12 @@ function RecordsTableDisplay(props) {
 
     return (
         <div className="center" style={{ width: '97%' }}>
-            {day && aTeam && (
+            {day && (
                 <div>
                     <br />
                     <h4>{day.toUpperCase()}</h4>
                 </div>
             )}
-            <br />
-            {day && !aTeam && bTeam && <h4>B TEAM</h4>}
             <Table striped bordered hover>
                 <thead>
                     <tr>
