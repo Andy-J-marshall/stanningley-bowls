@@ -31,6 +31,12 @@ test('Player records has correct records for Tuesday Vets in 2022', async () => 
   playerRecordsPage.playerRecordsHasCorrectValuesForTuesVets2022();
 });
 
+test('Player records not show for Wednesday Pairs in 2023 as team did not exist', async () => {
+  await basePage.select2023Year();
+  await teamTabsPage.selectWedPairsTeamFromRecordsTabs();
+  playerRecordsPage.playerRecordsDoNotExistForWednesdayPairsIn2023();
+});
+
 test(`Records year dropdown appears if there are multiple years of records available`, async () => {
   await basePage.checkYearDropdownHasAllYearOptions(11);
 });

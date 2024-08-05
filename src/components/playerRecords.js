@@ -213,16 +213,21 @@ function PlayerRecords(props) {
 
     function returnTeamRecordComponent(possibleTeamNames, bTeamForLeagueBool) {
         let teamName = '';
+        let displayname = '';
         let teamRecord = null;
 
         for (const team of possibleTeamNames) {
             const tn = team.toLowerCase();
             const tr = teamRecords[tn];
-            if (tr && tr.bestTeamAverage > -21) {
-                teamRecord = tr;
-                teamName = tn;
-                break;
+            if (tr) {
+                displayname = returnTabName(tn);
+                if (tr.bestTeamAverage > -21) {
+                    teamRecord = tr;
+                    teamName = tn;
+                    break;
+                }
             }
+
             // Check for a team with an (a) suffix if no team found
             const trWithASuffix = teamRecords[tn + ' (a)'];
             if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
@@ -243,7 +248,7 @@ function PlayerRecords(props) {
                 bTeamRecord.bestTeamAveragePlayer.length > 0
             ) {
                 return (
-                    <div displayname={returnTabName(teamName)}>
+                    <div displayname={displayname}>
                         {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
                             <h3>FIRST TEAM</h3>
                         )}
@@ -290,10 +295,12 @@ function PlayerRecords(props) {
             }
         } else {
             return (
-                <p>
-                    {config.teamNames.shortName} did not play in this league for
-                    the selected year
-                </p>
+                <div displayname={displayname}>
+                    <p>
+                        {config.teamNames.shortName} did not play in this league
+                        for the selected year
+                    </p>
+                </div>
             );
         }
     }

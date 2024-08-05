@@ -28,6 +28,8 @@ export class PlayerRecordsPage {
   private readonly thurVetsAverageRecord: Locator;
   private readonly thurVetsAverageRecordPlayer: Locator;
 
+  private readonly wedPairsNoGamesPlayedMessage: Locator;
+
   constructor(page: Page) {
     this.page = page;
     this.overallGamesRecord = page.locator(
@@ -92,6 +94,10 @@ export class PlayerRecordsPage {
     this.thurVetsAverageRecordPlayer = page.locator(
       '#team-select-tabs-tabpane-thuvets #bestAveragePlayer'
     );
+
+    this.wedPairsNoGamesPlayedMessage = page.locator(
+      '#team-select-tabs-tabpane-wedpairs p'
+    );
   }
 
   async goto() {
@@ -134,5 +140,11 @@ export class PlayerRecordsPage {
     expect(this.tuesVetsWinPercRecordPlayer).toContainText('John Armitage');
     expect(this.tuesVetsAverageRecord).toContainText('12.36');
     expect(this.tuesVetsAverageRecordPlayer).toContainText('John Armitage');
+  }
+
+  playerRecordsDoNotExistForWednesdayPairsIn2023() {
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(
+      `${teamName} did not play in this league for the selected year`
+    );
   }
 }
