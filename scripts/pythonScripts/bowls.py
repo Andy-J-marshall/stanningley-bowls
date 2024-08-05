@@ -6,7 +6,7 @@ import utils
 import re
 
 # year = str(date.today().year) TODO revert
-year = str(2013)
+year = str(2021)
 
 # TODO 
 # Mabel - add in Leeds ladies league for Westroyd
