@@ -1,6 +1,7 @@
 import TeamTabs from './teamTabs';
 import RecordsTableDisplay from './recordsTableDisplay';
 import config from '../config';
+import { returnTabName } from '../helpers/teamsHelper';
 
 function PlayerRecords(props) {
     const stats = props.stats;
@@ -190,7 +191,7 @@ function PlayerRecords(props) {
         }
     });
 
-    function allComponent() {
+    function combinedRecordsComponent() {
         if (mostGames > 0) {
             return (
                 <RecordsTableDisplay
@@ -210,91 +211,113 @@ function PlayerRecords(props) {
         }
     }
 
-    function returnTeamComponent(possibleTeamNames, bTeamForLeagueBool) {
-        let teamName = '';
-        let teamRecord = null;
-        
-        for (const team of possibleTeamNames) {
-            const tn = team.toLowerCase();
-            const tr = teamRecords[tn];
-            if (tr && tr.bestTeamAverage > -21) {
-                teamRecord = tr;
-                teamName = tn;
-                break;
-            }
-            // Check for a team with an (a) suffix if no team found
-            const trWithASuffix = teamRecords[tn + ' (a)'];
-            if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
-                teamRecord = trWithASuffix;
-                teamName = tn;
-                break;
-            }
-        }
-        
-        let bTeamRecord = null;
-        if (bTeamForLeagueBool) {
-            bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
-        }
+    function returnAllComponentsForTeams() {
+        return config.historicTeamInfo.map((teamData) => {
+            let teamName = '';
+            let displayname = returnTabName(teamData.teamNames[0]);
+            let teamRecord = null;
 
-        if (teamRecord || bTeamRecord) {
-            if (
-                teamRecord.bestTeamAveragePlayer.length > 0 ||
-                bTeamRecord.bestTeamAveragePlayer.length > 0
-            ) {
+            // Find A team stats
+            for (const team of teamData.teamNames) {
+                const tn = team.toLowerCase();
+                const tr = teamRecords[tn];
+                if (tr) {
+                    if (tr.bestTeamAverage > -21) {
+                        teamRecord = tr;
+                        teamName = tn;
+                        break;
+                    }
+                }
+
+                // Check for a team with an (a) suffix if no team found
+                const trWithASuffix = teamRecords[tn + ' (a)'];
+                if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+                    teamRecord = trWithASuffix;
+                    teamName = tn;
+                    break;
+                }
+            }
+
+            // Find B team stats if they exist
+            let bTeamRecord = null;
+            if (teamData.bTeamForLeagueBool) {
+                bTeamRecord =
+                    teamRecords[teamName.replace(' (a)', '') + ' (b)'];
+            }
+
+            if (teamRecord || bTeamRecord) {
+                if (
+                    teamRecord.bestTeamAveragePlayer.length > 0 ||
+                    bTeamRecord.bestTeamAveragePlayer.length > 0
+                ) {
+                    return (
+                        <div displayname={displayname}>
+                            {teamRecord && teamRecord.bestTeamAverage > -21 && (
+                                <RecordsTableDisplay
+                                    day={teamName.replace(' (a)', '')}
+                                    minGames={teamRecord.minTeamGames}
+                                    mostWins={teamRecord.mostTeamWins}
+                                    mostWinsPlayer={
+                                        teamRecord.mostTeamWinsPlayer
+                                    }
+                                    bestWinPerc={teamRecord.bestTeamWinPerc}
+                                    bestWinPercPlayer={
+                                        teamRecord.bestTeamWinPercPlayer
+                                    }
+                                    bestAverage={teamRecord.bestTeamAverage}
+                                    bestAveragePlayer={
+                                        teamRecord.bestTeamAveragePlayer
+                                    }
+                                />
+                            )}
+                            {bTeamRecord && (
+                                <div>
+                                    <br />
+                                    <hr />
+                                </div>
+                            )}
+                            {bTeamRecord &&
+                                bTeamRecord.bestTeamAverage > -21 && (
+                                    <RecordsTableDisplay
+                                        day={
+                                            teamName.replace(' (a)', '') +
+                                            ' (b)'
+                                        }
+                                        minGames={bTeamRecord.minTeamGames}
+                                        mostWins={bTeamRecord.mostTeamWins}
+                                        mostWinsPlayer={
+                                            bTeamRecord.mostTeamWinsPlayer
+                                        }
+                                        bestWinPerc={
+                                            bTeamRecord.bestTeamWinPerc
+                                        }
+                                        bestWinPercPlayer={
+                                            bTeamRecord.bestTeamWinPercPlayer
+                                        }
+                                        bestAverage={
+                                            bTeamRecord.bestTeamAverage
+                                        }
+                                        bestAveragePlayer={
+                                            bTeamRecord.bestTeamAveragePlayer
+                                        }
+                                    />
+                                )}
+                        </div>
+                    );
+                } else {
+                    return <p displayname={displayname}>No games played</p>;
+                }
+            } else {
                 return (
-                    <div>
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <h3>FIRST TEAM</h3>
-                        )}
-                        {teamRecord && teamRecord.bestTeamAverage > -21 && (
-                            <RecordsTableDisplay
-                                minGames={teamRecord.minTeamGames}
-                                mostWins={teamRecord.mostTeamWins}
-                                mostWinsPlayer={teamRecord.mostTeamWinsPlayer}
-                                bestWinPerc={teamRecord.bestTeamWinPerc}
-                                bestWinPercPlayer={
-                                    teamRecord.bestTeamWinPercPlayer
-                                }
-                                bestAverage={teamRecord.bestTeamAverage}
-                                bestAveragePlayer={
-                                    teamRecord.bestTeamAveragePlayer
-                                }
-                            />
-                        )}
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <div>
-                                <br />
-                                <h3>SECOND TEAM</h3>
-                            </div>
-                        )}
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <RecordsTableDisplay
-                                minGames={bTeamRecord.minTeamGames}
-                                mostWins={bTeamRecord.mostTeamWins}
-                                mostWinsPlayer={bTeamRecord.mostTeamWinsPlayer}
-                                bestWinPerc={bTeamRecord.bestTeamWinPerc}
-                                bestWinPercPlayer={
-                                    bTeamRecord.bestTeamWinPercPlayer
-                                }
-                                bestAverage={bTeamRecord.bestTeamAverage}
-                                bestAveragePlayer={
-                                    bTeamRecord.bestTeamAveragePlayer
-                                }
-                            />
-                        )}
+                    <div displayname={displayname}>
+                        <p>
+                            {config.teamNames.shortName} did not play on this
+                            day for the selected year
+                        </p>
                     </div>
                 );
-            } else {
-                return <p>No games played</p>;
             }
-        } else {
-            return (
-                <p>
-                    {config.teamNames.shortName} did not play in this league for
-                    the selected year
-                </p>
-            );
-        }
+        });
     }
 
     if (mostGames > 0) {
@@ -302,42 +325,8 @@ function PlayerRecords(props) {
             <div id="player-records">
                 <h1>PLAYER RECORDS</h1>
                 <TeamTabs
-                    id="player-record"
-                    allComponent={allComponent()}
-                    team1Component={returnTeamComponent(
-                        [
-                            'monday combined leeds',
-                            'monday airedale & wharfedale',
-                        ],
-                        true
-                    )}
-                    team2Component={returnTeamComponent(
-                        ['tuesday vets leeds'],
-                        false
-                    )}
-                    team3Component={returnTeamComponent(
-                        ['tuesday leeds'],
-                        false
-                    )}
-                    team4Component={returnTeamComponent(
-                        [
-                            'wednesday half holiday leeds',
-                            'wednesday half holiday bradford',
-                        ],
-                        true
-                    )}
-                    team7Component={returnTeamComponent(
-                        ['wednesday pairs airewharfe'],
-                        true
-                    )}
-                    team5Component={returnTeamComponent(
-                        ['thursday vets leeds'],
-                        true
-                    )}
-                    team6Component={returnTeamComponent(
-                        ['saturday leeds', 'saturday bradford'],
-                        true
-                    )}
+                    allCombinedComponent={combinedRecordsComponent()}
+                    teamComponents={returnAllComponentsForTeams()}
                 />
             </div>
         );
