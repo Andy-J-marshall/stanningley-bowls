@@ -40,6 +40,8 @@ export class TeamStatsPage {
   private readonly tuesVetsOpponentAggValue: Locator;
   private readonly tuesVetsLeaguePositionValue: Locator;
 
+  private readonly wedPairsNoGamesPlayedMessage: Locator;
+
   constructor(page: Page) {
     this.page = page;
     this.totalGamesValue = page.locator(
@@ -72,7 +74,7 @@ export class TeamStatsPage {
     this.totalOpponentAggValue = page.locator(
       '#combined-team-win-losses #totalOpponentAggValue'
     );
-    
+
     this.mondayGamesValue = page.locator(
       '#mondaycombinedleeds-team-results #totalGamesValue'
     );
@@ -140,6 +142,9 @@ export class TeamStatsPage {
     this.tuesVetsLeaguePositionValue = page.locator(
       '#tuesdayvetsleeds-team-results #leaguePosition'
     );
+    this.wedPairsNoGamesPlayedMessage = page.locator(
+      '#team-select-tabs-tabpane-wed p'
+    );
   }
 
   async goto() {
@@ -194,5 +199,11 @@ export class TeamStatsPage {
     expect(this.mondayCupWinPercValue).toHaveCount(0);
     expect(this.mondayAggValue).toContainText('2077');
     expect(this.mondayOpponentAggValue).toContainText('1797');
+  }
+
+  teamStatsDoNotExistForWednesdayPairsIn2023() {
+    expect(this.wedPairsNoGamesPlayedMessage).toContainText(
+      `${teamName} did not play in this league for the selected year`
+    );
   }
 }

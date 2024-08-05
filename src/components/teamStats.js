@@ -23,15 +23,29 @@ function TeamStats(props) {
     function returnTeamComponents() {
         const possibleTeamNames = config.allTeamsInLeaguesSince2013;
 
-        return teamResults.map((teamResult) => {
-            if (possibleTeamNames.includes(teamResult.day.toLowerCase())) {
+        const days = Object.keys(config.days);
+        return days.map((day) => {
+            const teamResult = teamResults.find(
+                (e) => e.day.toLowerCase() === day
+            );
+            if (
+                teamResult &&
+                possibleTeamNames.includes(teamResult.day.toLowerCase())
+            ) {
                 return (
                     <IndividualTeamStats
-                        displayname={returnTabName(teamResult.day)}
-                        day={teamResult.day}
+                        displayname={returnTabName(day)}
+                        day={day}
                         stats={teamResult}
                         playerStats={playerResults}
                     />
+                );
+            } else {
+                return (
+                    <p displayname={returnTabName(day)}>
+                        {config.teamNames.shortName} did not play in this league
+                        for the selected year
+                    </p>
                 );
             }
         });
