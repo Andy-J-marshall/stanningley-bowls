@@ -14,7 +14,10 @@ function Results(props) {
     let resultsFound = false;
     let resultsArray;
 
-    // TODO change the python code to remove date too?
+    // TODO the script is failing:
+    // e.g. when Stanningley B playing against Stanningley A, it shows the same result for both A and B e.g. 2017 Thursday vets
+    // e.g. when Stanningley is home and away team it does not display the away team e.g. 2017 Thursday vets
+
     if (teamResults) {
         resultsArray = teamResults.map((team) => {
             const results = team.results.map((result) => {
@@ -41,7 +44,9 @@ function Results(props) {
             });
 
             return {
-                day: config.allTeamsInLeaguesSince2013.find(e => e.toLowerCase().includes(team.day.toLowerCase())),
+                day: config.allTeamsInLeaguesSince2013.find((e) =>
+                    e.toLowerCase().includes(team.day.toLowerCase())
+                ),
                 results: results,
             };
         });
@@ -75,35 +80,41 @@ function Results(props) {
                                         </thead>
                                         {resultTeam.results.map(
                                             (result, idx) => {
-                                                const homeTeam =
+                                                let homeTeam =
                                                     result.home.homeTeam;
-                                                const awayTeam =
+                                                let awayTeam =
                                                     result.away.awayTeam;
+                                                if (homeTeam.toLowerCase().includes(teamName.toLowerCase())) {
+                                                    let aOrBHome = '';
+                                                    if (homeTeam.endsWith(' A')) {
+                                                        aOrBHome = ' A';
+                                                    }
+                                                    if (homeTeam.endsWith(' B')) {
+                                                        aOrBHome = ' B';
+                                                    }
+                                                    homeTeam = teamName.toUpperCase() + aOrBHome;
+                                                }
+                                                if (awayTeam.toLowerCase().includes(teamName.toLowerCase())) {
+                                                    let aOrBAway = '';
+                                                    if (awayTeam.endsWith(' A')) {
+                                                        aOrBAway = ' A';
+                                                    }
+                                                    if (awayTeam.endsWith(' B')) {
+                                                        aOrBAway = ' B';
+                                                    }
+                                                    awayTeam = teamName.toUpperCase() + aOrBAway;
+                                                }
 
                                                 return (
                                                     <tbody key={idx}>
                                                         <tr>
-                                                            {homeTeam
-                                                                .toLowerCase()
-                                                                .includes(
-                                                                    teamName.toLowerCase()
-                                                                ) ? (
-                                                                <td
-                                                                    style={{
-                                                                        width: '38%',
-                                                                    }}
-                                                                >
-                                                                    {teamName.toUpperCase()}
-                                                                </td>
-                                                            ) : (
-                                                                <td
-                                                                    style={{
-                                                                        width: '38%',
-                                                                    }}
-                                                                >
-                                                                    {homeTeam}
-                                                                </td>
-                                                            )}
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {homeTeam}
+                                                            </td>
                                                             <td
                                                                 style={{
                                                                     borderRightStyle:
@@ -123,27 +134,13 @@ function Results(props) {
                                                                         .awayScore
                                                                 }
                                                             </td>
-                                                            {awayTeam
-                                                                .toLowerCase()
-                                                                .includes(
-                                                                    teamName.toLowerCase()
-                                                                ) ? (
-                                                                <td
-                                                                    style={{
-                                                                        width: '38%',
-                                                                    }}
-                                                                >
-                                                                    {teamName.toUpperCase()}
-                                                                </td>
-                                                            ) : (
-                                                                <td
-                                                                    style={{
-                                                                        width: '38%',
-                                                                    }}
-                                                                >
-                                                                    {awayTeam}
-                                                                </td>
-                                                            )}
+                                                            <td
+                                                                style={{
+                                                                    width: '38%',
+                                                                }}
+                                                            >
+                                                                {awayTeam}
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 );
@@ -153,7 +150,7 @@ function Results(props) {
                                 </div>
                             )}
                             <br />
-                            <hr/>
+                            <hr />
                         </div>
                     );
                 })}
