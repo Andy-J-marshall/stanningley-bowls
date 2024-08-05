@@ -43,8 +43,7 @@ function TeamStats(props) {
             } else {
                 return (
                     <p displayname={returnTabName(day)}>
-                        {config.teamNames.shortName} did not play in this league
-                        for the selected year
+                        {config.teamNames.shortName} did not play on this day for the selected year
                     </p>
                 );
             }

@@ -211,6 +211,7 @@ function PlayerRecords(props) {
         }
     }
 
+    // TODO refactor this
     function returnTeamRecordComponent(possibleTeamNames, bTeamForLeagueBool) {
         let teamName = '';
         let displayname = '';
@@ -238,8 +239,10 @@ function PlayerRecords(props) {
         }
 
         let bTeamRecord = null;
+        let bTeamInLeague = false;
         if (bTeamForLeagueBool) {
             bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
+            bTeamInLeague = true;
         }
 
         if (teamRecord || bTeamRecord) {
@@ -249,11 +252,11 @@ function PlayerRecords(props) {
             ) {
                 return (
                     <div displayname={displayname}>
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <h3>FIRST TEAM</h3>
-                        )}
                         {teamRecord && teamRecord.bestTeamAverage > -21 && (
                             <RecordsTableDisplay
+                                day={teamName}
+                                aTeam={true}
+                                bTeam={bTeamInLeague}
                                 minGames={teamRecord.minTeamGames}
                                 mostWins={teamRecord.mostTeamWins}
                                 mostWinsPlayer={teamRecord.mostTeamWinsPlayer}
@@ -268,13 +271,10 @@ function PlayerRecords(props) {
                             />
                         )}
                         {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
-                            <div>
-                                <br />
-                                <h3>SECOND TEAM</h3>
-                            </div>
-                        )}
-                        {bTeamRecord && bTeamRecord.bestTeamAverage > -21 && (
                             <RecordsTableDisplay
+                                day={teamName}
+                                aTeam={false}
+                                bTeam={true}
                                 minGames={bTeamRecord.minTeamGames}
                                 mostWins={bTeamRecord.mostTeamWins}
                                 mostWinsPlayer={bTeamRecord.mostTeamWinsPlayer}
@@ -297,7 +297,7 @@ function PlayerRecords(props) {
             return (
                 <div displayname={displayname}>
                     <p>
-                        {config.teamNames.shortName} did not play in this league
+                        {config.teamNames.shortName} did not play on this day
                         for the selected year
                     </p>
                 </div>

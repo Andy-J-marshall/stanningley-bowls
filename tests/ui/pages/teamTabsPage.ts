@@ -13,14 +13,14 @@ export class TeamTabsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.mondayTeamStats = page.locator(`text=MON`);
-    this.mondayTeamRecords = page.locator(`text=MON`);
-    this.tuesVetsTeamStats = page.locator(`text=TUE (VETS)`);
-    this.tuesVetsTeamRecords = page.locator(`text=TUE (VETS)`);
-    this.wedPairsTeamStats = page.locator(`text=WED (PAIRS)`);
-    this.wedPairsTeamRecords = page.locator(`text=WED (PAIRS)`);
-    this.thurVetsTeamStats = page.locator(`text=THU (VETS)`);
-    this.thurVetsTeamRecords = page.locator(`text=THU (VETS)`);
+    this.mondayTeamStats = page.locator(`#team-select-tabs-tab-mon`);
+    this.mondayTeamRecords = page.locator(`#team-select-tabs-tab-mon`);
+    this.tuesVetsTeamStats = page.locator(`#team-select-tabs-tab-tuevets`);
+    this.tuesVetsTeamRecords = page.locator(`#team-select-tabs-tab-tuevets`);
+    this.wedPairsTeamStats = page.locator(`#team-select-tabs-tab-wedpairs`);
+    this.wedPairsTeamRecords = page.locator(`#team-select-tabs-tab-wedpairs`);
+    this.thurVetsTeamStats = page.locator(`#team-select-tabs-tab-thuvets`);
+    this.thurVetsTeamRecords = page.locator(`#team-select-tabs-tab-thuvets`);
   }
 
   async selectMondayTeamFromStatsTabs() {

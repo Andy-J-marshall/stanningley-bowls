@@ -51,6 +51,8 @@ function IndividualTeamStats(props) {
                 <div
                     id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}
                 >
+                    <br />
+                    <h3>{day.toUpperCase()}</h3>
                     <StatsTableDisplay
                         totalGames={totalGames}
                         totalWins={totalWins}
@@ -79,7 +81,7 @@ function IndividualTeamStats(props) {
     } else {
         return (
             <p>
-                {config.teamNames.shortName} did not play in this league for the
+                {config.teamNames.shortName} did not play on this day for the
                 selected year
             </p>
         );

@@ -144,7 +144,7 @@ export class PlayerRecordsPage {
 
   playerRecordsDoNotExistForWednesdayPairsIn2023() {
     expect(this.wedPairsNoGamesPlayedMessage).toContainText(
-      `${teamName} did not play in this league for the selected year`
+      `${teamName} did not play on this day for the selected year`
     );
   }
 }
