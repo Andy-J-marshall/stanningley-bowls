@@ -20,13 +20,11 @@ function RecordsTableDisplay(props) {
             {day && aTeam && (
                 <div>
                     <br />
-                    <h3>{day.toUpperCase()}</h3>
+                    <h4>{day.toUpperCase()}</h4>
                 </div>
             )}
-            {/* TODO refactor this? */}
             <br />
-            {day && aTeam && bTeam && <h4>FIRST TEAM</h4>}
-            {day && !aTeam && bTeam && <h4>SECOND TEAM</h4>}
+            {day && !aTeam && bTeam && <h4>B TEAM</h4>}
             <Table striped bordered hover>
                 <thead>
                     <tr>

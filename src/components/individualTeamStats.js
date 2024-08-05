@@ -52,7 +52,7 @@ function IndividualTeamStats(props) {
                     id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}
                 >
                     <br />
-                    <h3>{day.toUpperCase()}</h3>
+                    <h4>{day.toUpperCase()}</h4>
                     <StatsTableDisplay
                         totalGames={totalGames}
                         totalWins={totalWins}

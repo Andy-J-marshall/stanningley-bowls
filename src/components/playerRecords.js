@@ -211,7 +211,6 @@ function PlayerRecords(props) {
         }
     }
 
-    // TODO refactor this
     function returnTeamRecordComponent(possibleTeamNames, bTeamForLeagueBool) {
         let teamName = '';
         let displayname = '';
@@ -232,6 +231,7 @@ function PlayerRecords(props) {
             // Check for a team with an (a) suffix if no team found
             const trWithASuffix = teamRecords[tn + ' (a)'];
             if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+                displayname = returnTabName(tn);
                 teamRecord = trWithASuffix;
                 teamName = tn;
                 break;
