@@ -35,7 +35,6 @@ traitorPlayers = {
 otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
                 'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
                 'Thursday Vets Bradford', 'Saturday Bradford']
-leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 allDays = teamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
 players = players + extraPlayers
