@@ -2,7 +2,6 @@ leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 
 cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32', 'round of 64']
 
-# TODO move this to team details
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
         name = 'Duncan McPhail'
