@@ -207,6 +207,7 @@ function PlayerStatsWinsLosses(props) {
                     )}
                     {displayHomeGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>HOME</h3>
                             <p>Games: {displayHomeGamesPlayed}</p>
                             <p>Wins: {displayHomeWins}</p>
@@ -224,6 +225,7 @@ function PlayerStatsWinsLosses(props) {
                     )}
                     {displayAwayGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>AWAY</h3>
                             <p>Games: {displayAwayGamesPlayed}</p>
                             <p>Wins: {displayAwayWins}</p>
@@ -239,9 +241,9 @@ function PlayerStatsWinsLosses(props) {
                             </p>
                         </div>
                     )}
-
                     {displayCupGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>CUP</h3>
                             <p>Games: {displayCupGamesPlayed}</p>
                             <p>Wins: {displayCupWins}</p>
@@ -259,6 +261,7 @@ function PlayerStatsWinsLosses(props) {
                     )}
                     {displayPairsPartners && pairsGames > 0 && (
                         <div>
+                            <hr />
                             {Object.keys(pairsPartnersCount).length > 0 && (
                                 <div>
                                     <h3>PAIRS PARTNERS</h3>

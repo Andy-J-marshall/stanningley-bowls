@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sun 4th Aug)
+=== League Report (as of Tue 6th Aug)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -518,6 +518,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 27th Jul                              Division 1 (Naylor Premier)                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+          Littlemoor S&amp;SC 'A'                         v.   Spen Victoria 'A'                             To Sat 3rd Aug
   2:00pm  Asa Briggs 'A'                   21   191   v.   Farsley                           9   143     
   2:00pm  Wyke 'A'                         15   180   v.   Shipley Club                     15   183     
           Guiseley 'A'                                v.   Cononley                                      To Sat 3rd Aug
@@ -563,6 +564,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 3rd Aug                              Division 1 (Naylor Premier)                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Littlemoor S&amp;SC 'A'              20   179   v.   Spen Victoria 'A'                10   154     From Sat 27th Jul
   2:00pm  Guiseley 'A'                     21   199   v.   Cononley                          9   174     From Sat 27th Jul
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 3rd Aug                                  Division 3 (Mellor)                                 
@@ -590,10 +592,10 @@
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Pudsey 'A'                        9    8    1    185
-  2.  Cononley                         10    7    2    171
-  3.  Littlemoor S&amp;SC 'A'               9    6    3    163
-  4.  Shipley Club                     10    4    5    163
-  5.  Spen Victoria 'A'                 9    6    3    162
+  2.  Littlemoor S&amp;SC 'A'              10    7    3    183
+  3.  Spen Victoria 'A'                10    6    4    172
+  4.  Cononley                         10    7    2    171
+  5.  Shipley Club                     10    4    5    163
   6.  Guiseley 'A'                     10    5    5    153
   7.  Asa Briggs 'A'                   10    2    8    109
   8.  Wyke 'A'                         10    2    6     97
@@ -5095,6 +5097,22 @@ Mel Blackburn       21  Christine Kilner       3
           Games:     6              Games:     2
       Aggregate:   161          Aggregate:    95
          Points:    23             Points:     5
+
+Division 1 (Naylor Pre        Sat 3rd Aug
+ Littlemoor S&amp;SC 'A'       Spen Victoria 'A'
+Alex Wolfenden      21  Andrew Wood           17
+Stephen Walker      21  Garry Walker           5
+Marc Armitage 'A'   21  Andy Hodgson          10
+Jack Bowes          21  Andrew Gallagher      16
+Adam Wider 'A'       9  Mark Goodall          21
+John Armitage 'A'   21  Harley Tattersley      9
+Will Bedford        21  Mally Fowler          18
+Nicole Farrar       21  Mark Regan            16
+Lee Wider           11  Chris Ellis           21
+Aaron Brine         12  Ash Tattersley        21
+          Games:     7              Games:     3
+      Aggregate:   179          Aggregate:   154
+         Points:    20             Points:    10
 
 Division 1 (Naylor Pre        Sat 3rd Aug
      Guiseley 'A'               Cononley

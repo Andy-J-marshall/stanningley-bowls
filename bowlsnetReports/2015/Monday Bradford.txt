@@ -20,7 +20,7 @@ West Bradford A       4    71   v.   Myrtle A             22   117
 ------------------------------------------------------------------------------------------------------
         Mon 13th Apr                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
-Myrtle B             16   113   v.   Littlemoor S &amp; SC    10    92     
+Myrtle B             16   113   v.   Littlemoor S & SC    10    92     
 Royd House           18   116   v.   Birkenshaw B          8    91     
 Crowghyll B          14   116   v.   Wibsey B             12   114     
 ------------------------------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ Birkenshaw A         12   111   v.   West Bradford A      14   117
 ------------------------------------------------------------------------------------------------------
         Mon 27th Apr                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    15   108   v.   Birkenshaw B         11   101     
+Littlemoor S & SC    15   108   v.   Birkenshaw B         11   101     
 Royd House           17   116   v.   Wibsey B              9   102     
 Bowling A             8    87   v.   Tyersal A            18   115     
 ------------------------------------------------------------------------------------------------------
@@ -168,7 +168,7 @@ Shipley Club C        7    95   v.   West Bradford A      19   122
 ------------------------------------------------------------------------------------------------------
         Mon 18th May                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC    21   117   v.   Wibsey B              5    76     
+Littlemoor S & SC    21   117   v.   Wibsey B              5    76     
 Myrtle B             22   120   v.   Tyersal A             4    77     
 Royd House           21   126   v.   Crowghyll B           5    92     
 ------------------------------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ West Bradford A      21   119   v.   Heckmondwike A        5    83
 ------------------------------------------------------------------------------------------------------
          Mon 1st Jun                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
-Tyersal A            26   126   v.   Littlemoor S &amp; SC     0    53     
+Tyersal A            26   126   v.   Littlemoor S & SC     0    53     
 Wibsey B              6    90   v.   Birkenshaw B         20   120     
 Bowling A            15   105   v.   Royd House           11    93     
 Crowghyll B          20   117   v.   Myrtle B              6    84     
@@ -244,7 +244,7 @@ Spen Victoria        22   125   v.   West Bradford A       4    77
          Mon 8th Jun                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Birkenshaw B          4    85   v.   Tyersal A            22   126     
-Littlemoor S &amp; SC    18   122   v.   Crowghyll B           8   101     
+Littlemoor S & SC    18   122   v.   Crowghyll B           8   101     
 Myrtle B             20   119   v.   Bowling A             6    85     
 ------------------------------------------------------------------------------------------------------
          Mon 8th Jun                 Division 4 (Carter's Sports)                     
@@ -281,7 +281,7 @@ Birkenshaw A         18   117   v.   Eccleshill            8    91
         Mon 15th Jun                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Royd House           20   118   v.   Myrtle B              6    87     
-Bowling A            15    96   v.   Littlemoor S &amp; SC    11    94     
+Bowling A            15    96   v.   Littlemoor S & SC    11    94     
 Crowghyll B          23   126   v.   Birkenshaw B          3    81     
 ------------------------------------------------------------------------------------------------------
         Mon 15th Jun                 Division 4 (Carter's Sports)                     
@@ -319,7 +319,7 @@ Drighlington B        7   100   v.   West Bradford A      19   124
 ------------------------------------------------------------------------------------------------------
 Wibsey B              9    98   v.   Tyersal A            17   114     
 Birkenshaw B         17   111   v.   Bowling A             9    95     
-Littlemoor S &amp; SC    16   119   v.   Royd House           10   109     
+Littlemoor S & SC    16   119   v.   Royd House           10   109     
 ------------------------------------------------------------------------------------------------------
         Mon 22nd Jun                 Division 4 (Carter's Sports)                     
 ------------------------------------------------------------------------------------------------------
@@ -356,7 +356,7 @@ Peel A               14   107   v.   Drighlington B       12   106
 ------------------------------------------------------------------------------------------------------
 Wibsey B             12    93   v.   Crowghyll B          14   100     
 Birkenshaw B         16   110   v.   Royd House           10   102     
-Littlemoor S &amp; SC    21   124   v.   Myrtle B              5    84     
+Littlemoor S & SC    21   124   v.   Myrtle B              5    84     
 ------------------------------------------------------------------------------------------------------
         Mon 29th Jun                 Division 4 (Carter's Sports)                     
 ------------------------------------------------------------------------------------------------------
@@ -430,7 +430,7 @@ West Bradford A      17   116   v.   Birkenshaw A          9   107
 ------------------------------------------------------------------------------------------------------
 Tyersal A            22   114   v.   Bowling A             4    70     
 Wibsey B             11    92   v.   Royd House           15   106     
-Birkenshaw B         16   116   v.   Littlemoor S &amp; SC    10   105     
+Birkenshaw B         16   116   v.   Littlemoor S & SC    10   105     
 ------------------------------------------------------------------------------------------------------
         Mon 13th Jul                 Division 4 (Carter's Sports)                     
 ------------------------------------------------------------------------------------------------------
@@ -503,7 +503,7 @@ West Bradford A      14   103   v.   Shipley Club C       12   101
         Mon 27th Jul                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Tyersal A            25   126   v.   Myrtle B              1    66     
-Wibsey B             15   107   v.   Littlemoor S &amp; SC    11   101     
+Wibsey B             15   107   v.   Littlemoor S & SC    11   101     
 Crowghyll B          20   118   v.   Royd House            6    81     
 ------------------------------------------------------------------------------------------------------
         Mon 27th Jul                 Division 4 (Carter's Sports)                     
@@ -540,7 +540,7 @@ Spen Victoria        19   119   v.   Shipley Club C        7    86
          Mon 3rd Aug                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Birkenshaw B          9    98   v.   Wibsey B             17   115     
-Littlemoor S &amp; SC    22   126   v.   Tyersal A             4    89     
+Littlemoor S & SC    22   126   v.   Tyersal A             4    89     
 Myrtle B             14   106   v.   Crowghyll B          12   100     
 Royd House           11   101   v.   Bowling A            15   105     
 ------------------------------------------------------------------------------------------------------
@@ -579,7 +579,7 @@ West Bradford A      15   112   v.   Spen Victoria        11    99
 ------------------------------------------------------------------------------------------------------
 Tyersal A            17   112   v.   Birkenshaw B          9    92     
 Bowling A            14   116   v.   Myrtle B             12   111     
-Crowghyll B           5    84   v.   Littlemoor S &amp; SC    21   121     
+Crowghyll B           5    84   v.   Littlemoor S & SC    21   121     
 ------------------------------------------------------------------------------------------------------
         Mon 10th Aug                 Division 4 (Carter's Sports)                     
 ------------------------------------------------------------------------------------------------------
@@ -615,7 +615,7 @@ Drighlington B        5    84   v.   Spen Victoria        21   122
         Mon 17th Aug                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Birkenshaw B         10    90   v.   Crowghyll B          16   108     
-Littlemoor S &amp; SC    26   126   v.   Bowling A             0    55     
+Littlemoor S & SC    26   126   v.   Bowling A             0    55     
 Myrtle B              0    59   v.   Royd House           26   126     
 ------------------------------------------------------------------------------------------------------
         Mon 17th Aug                 Division 4 (Carter's Sports)                     
@@ -652,7 +652,7 @@ West Bradford A      11    95   v.   Drighlington B       15    99
         Mon 24th Aug                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
 Tyersal A            20   114   v.   Wibsey B              6    80     
-Royd House           16   106   v.   Littlemoor S &amp; SC    10    89     
+Royd House           16   106   v.   Littlemoor S & SC    10    89     
 Bowling A            19   113   v.   Birkenshaw B          7    88     
 ------------------------------------------------------------------------------------------------------
         Mon 24th Aug                 Division 4 (Carter's Sports)                     
@@ -716,7 +716,7 @@ Bradford Moor B      11   101   v.   Wibsey C             15   113     From Mon 
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
   1.  Tyersal A            14   12    2    247
-  2.  Littlemoor S &amp; SC    14    8    6    212
+  2.  Littlemoor S & SC    14    8    6    212
   3.  Royd House           14    7    7    202
   4.  Crowghyll B          14    6    8    169
   5.  Birkenshaw B         14    5    9    161
@@ -845,7 +845,7 @@ John Ramsey           6  Gary Bowdin         21
           Points:     4           Points:    22
 
 Division 3 (City Sports       Mon 13th Apr
-       Myrtle B            Littlemoor S &amp; SC
+       Myrtle B            Littlemoor S & SC
 Irene Bird           21  Kath Mazurke        13
 Carol Royston        21  Billy Thorpe         8
 David Earl           17  Angela Carter       21
@@ -1307,7 +1307,7 @@ David Griffiths 'A'  14  John Ramsey         21
           Points:    12           Points:    14
 
 Division 3 (City Sports       Mon 27th Apr
-   Littlemoor S &amp; SC          Birkenshaw B
+   Littlemoor S & SC          Birkenshaw B
 Angela Carter        21  George Hunter        9
 Billy Thorpe         16  Harry Hall          21
 Terri Durrans        21  David Kent          12
@@ -1769,7 +1769,7 @@ Bernard Criddle      21  Kevin Burrage 'A'   17
           Points:     7           Points:    19
 
 Division 3 (City Sports       Mon 18th May
-   Littlemoor S &amp; SC            Wibsey B
+   Littlemoor S & SC            Wibsey B
 Kath Mazurke         21  Jackie Richards 'B' 13
 Billy Thorpe         21  Michael Sansome     14
 Angela Carter        21  Malcolm Wilkinson    6
@@ -2000,7 +2000,7 @@ John Ramsey          14  Trevor Jackson      21
           Points:    21           Points:     5
 
 Division 3 (City Sports       Mon 1st Jun
-       Tyersal A           Littlemoor S &amp; SC
+       Tyersal A           Littlemoor S & SC
 Peter Page           21  Billy Thorpe         6
 Gerry Smith 'A'      21  Kath Mazurke         8
 John Smith           21  Angela Carter        1
@@ -2253,7 +2253,7 @@ Richard Hunter       14  Peter Simpson       21
           Points:     4           Points:    22
 
 Division 3 (City Sports       Mon 8th Jun
-   Littlemoor S &amp; SC          Crowghyll B
+   Littlemoor S & SC          Crowghyll B
 Billy Thorpe         21  Sylvia Halliday     19
 Angela Carter        21  Kathleen Stockdale  10
 Terri Durrans        21  Fred Dalby          19
@@ -2484,7 +2484,7 @@ Cliff White          21  Matthew Dickerson   17
           Points:    20           Points:     6
 
 Division 3 (City Sports       Mon 15th Jun
-       Bowling A           Littlemoor S &amp; SC
+       Bowling A           Littlemoor S & SC
 Christine Kilner 'A' 21  Billy Thorpe         9
 Syd Spencer 'A'      21  Philip A Richards   20
 Annie Wragg           6  Angela Carter       21
@@ -2726,7 +2726,7 @@ David Kent           21  Elliott Yates       14
           Points:    17           Points:     9
 
 Division 3 (City Sports       Mon 22nd Jun
-   Littlemoor S &amp; SC           Royd House
+   Littlemoor S & SC           Royd House
 Angela Carter        15  Cliff White         21
 Billy Thorpe         21  Geoff Woodfine      13
 Philip A Richards    20  Andrew Matthews     21
@@ -2957,7 +2957,7 @@ Richard Hunter       21  Andrew Matthews     14
           Points:    16           Points:    10
 
 Division 3 (City Sports       Mon 29th Jun
-   Littlemoor S &amp; SC            Myrtle B
+   Littlemoor S & SC            Myrtle B
 Billy Thorpe         19  Carol Royston       21
 Philip A Richards    21  Irene Bird           9
 Angela Carter        21  Michael Slater      18
@@ -3419,7 +3419,7 @@ George Gledhill      10  Andrew Matthews     21
           Points:    11           Points:    15
 
 Division 3 (City Sports       Mon 13th Jul
-     Birkenshaw B          Littlemoor S &amp; SC
+     Birkenshaw B          Littlemoor S & SC
 George Hunter        15  Angela Carter       21
 Harry Hall           21  Billy Thorpe        13
 Yvonne Northrop      21  Kath Mazurke        19
@@ -3870,7 +3870,7 @@ Peter Page           21  Jim Kelly           11
           Points:    25           Points:     1
 
 Division 3 (City Sports       Mon 27th Jul
-       Wibsey B            Littlemoor S &amp; SC
+       Wibsey B            Littlemoor S & SC
 Douglas Maclean      21  Terri Durrans       16
 George Gledhill      21  Kath Mazurke        11
 John Stevenson 'B'   21  Billy Thorpe        12
@@ -4101,7 +4101,7 @@ George Hunter        14  Michael Gill        21
           Points:     9           Points:    17
 
 Division 3 (City Sports       Mon 3rd Aug
-   Littlemoor S &amp; SC           Tyersal A
+   Littlemoor S & SC           Tyersal A
 Billy Thorpe         21  John Smith          18
 Terri Durrans        21  Gerry Smith 'A'     18
 Angela Carter        21  Wendy Shimbles      14
@@ -4354,7 +4354,7 @@ Darryl McCormick     21  Ronnie Bowdin       16
           Points:    14           Points:    12
 
 Division 3 (City Sports       Mon 10th Aug
-      Crowghyll B          Littlemoor S &amp; SC
+      Crowghyll B          Littlemoor S & SC
 Archie Wishart       19  Terry Laidlaw       21
 Kathleen Stockdale   11  Kath Mazurke        21
 Fred Dalby           21  Terri Durrans       16
@@ -4574,7 +4574,7 @@ Richard Hunter       13  David Firth         21
           Points:    10           Points:    16
 
 Division 3 (City Sports       Mon 17th Aug
-   Littlemoor S &amp; SC           Bowling A
+   Littlemoor S & SC           Bowling A
 Kath Mazurke         21  Ken Parker 'A'      11
 Billy Thorpe         21  Roy Dennison        17
 Angela Carter        21  Harry Peel           6
@@ -4805,7 +4805,7 @@ Peter Page           21  John Stevenson 'B'  17
           Points:    20           Points:     6
 
 Division 3 (City Sports       Mon 24th Aug
-      Royd House           Littlemoor S &amp; SC
+      Royd House           Littlemoor S & SC
 Gordon Preston       18  Philip A Richards   21
 David Hogg           21  Billy Thorpe         6
 Gordan Evans         11  Nicky Dewhirst      21

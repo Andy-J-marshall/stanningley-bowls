@@ -194,6 +194,7 @@ function PlayerStatsAggregates(props) {
                     </p>
                     {displayHomeGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>HOME</h3>
                             <p>
                                 Aggregate scored: {displayTotalHomeAgg}
@@ -207,6 +208,7 @@ function PlayerStatsAggregates(props) {
                     )}
                     {displayAwayGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>AWAY</h3>
                             <p>
                                 Aggregate scored: {displayTotalAwayAgg}
@@ -220,6 +222,7 @@ function PlayerStatsAggregates(props) {
                     )}
                     {displayCupGamesPlayed > 0 && (
                         <div>
+                            <hr />
                             <h3>CUP</h3>
                             <p>
                                 Aggregate scored: {displayCupAgg}
