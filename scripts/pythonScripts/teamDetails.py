@@ -31,3 +31,14 @@ traitorPlayers = {
     'Thursday Vets Leeds': ['neil porter'],
     'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
+
+otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
+                'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
+                'Thursday Vets Bradford', 'Saturday Bradford']
+allDays = teamDays + otherLeagues
+extraPlayers = []  # this is to track players who only play for a different team
+players = players + extraPlayers
+otherDuplicatePlayers = []
+duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
+otherTeams = ['new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
+teamsTracking = teamNames + otherTeams

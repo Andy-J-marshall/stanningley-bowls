@@ -1,23 +1,6 @@
-import teamDetails
-
-teamPlayers = teamDetails.players
-duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
-currentTeamDays = teamDetails.teamDays
-
-# Add Saturday AireDale & Wharfedale and Monday Pairs?
-otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
-                'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
-                'Thursday Vets Bradford', 'Saturday Bradford']
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
-teamDays = currentTeamDays + otherLeagues
-extraPlayers = []  # this is to track players who only play for a different team
-players = teamPlayers + extraPlayers
-otherDuplicatePlayers = []
-duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
-otherTeams = ['new wortley', 'new armley', 'pudsey', 'pudsey park', 'burley', 'wibsey', 'littlemoor', 'farsley', 'bramley']
-teamsTracking = teamDetails.teamNames + otherTeams
 
-cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
+cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32', 'round of 64']
 
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':
@@ -46,6 +29,10 @@ def standardiseName(name):
     name = name.replace('\'A\'', '')
     name = name.replace(' \'a\'', '')
     name = name.replace('\'a\'', '')
+    name = name.replace(' \'B\'', '')
+    name = name.replace('\'B\'', '')
+    name = name.replace(' \'b\'', '')
+    name = name.replace('\'b\'', '')
     return name
 
 def formatName(name):
@@ -58,7 +45,7 @@ def returnTotalAggAvailablePerGame(team):
         return 26
     return 21
 
-def returnListOfPlayerStats(days, includeTeamData):
+def returnListOfPlayerStats(days, includeTeamData, players):
     players.sort()
     playerStats = {}
     for player in players:
