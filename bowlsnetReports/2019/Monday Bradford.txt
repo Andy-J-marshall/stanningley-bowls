@@ -18,7 +18,7 @@ Salts 'A'            17   118   v.   Myrtle 'B'            9   102
 Royd House           12   104   v.   Shipley Club 'B'     14   107     
 Bowling 'A'          14    97   v.   Pudsey               12    93     
 Spen Victoria 'B'    12    96   v.   Oakenshaw 'A'        14   100     
-Littlemoor S &amp; SC    20   113   v.   Birkenshaw 'A'        6    73     
+Littlemoor S & SC    20   113   v.   Birkenshaw 'A'        6    73     
 ----------------------------------------------------------------------------------------------------------------------------
          Mon 8th Apr                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Birkenshaw 'A'        7    88   v.   Spen Victoria 'B'    19   120
 Oakenshaw 'A'        17   112   v.   Bowling 'A'           9   100     
 Pudsey               26   126   v.   Royd House            0    58     
 Shipley Club 'B'     12   101   v.   Salts 'A'            14   102     
-Myrtle 'B'            7    98   v.   Littlemoor S &amp; SC    19   121     
+Myrtle 'B'            7    98   v.   Littlemoor S & SC    19   121     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 15th Apr                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ Myrtle 'B'                      v.   Shipley Club 'B'                  To Fri 10
 Salts 'A'                       v.   Pudsey                            To Fri 10th May (Changed)
 Royd House                      v.   Oakenshaw 'A'                     To Mon 6th May (Changed)
 Bowling 'A'          19   115   v.   Birkenshaw 'A'        7    89     
-Spen Victoria 'B'    17   116   v.   Littlemoor S &amp; SC     9    96     
+Spen Victoria 'B'    17   116   v.   Littlemoor S & SC     9    96     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 22nd Apr                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ Birkenshaw 'A'       17   111   v.   Royd House            9    92
 Oakenshaw 'A'        18   123   v.   Salts 'A'             8   101     
 Pudsey               26   126   v.   Myrtle 'B'            0    47     
 Spen Victoria 'B'    18   120   v.   Bowling 'A'           8    95     
-Littlemoor S &amp; SC    24   126   v.   Shipley Club 'B'      2    74     
+Littlemoor S & SC    24   126   v.   Shipley Club 'B'      2    74     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 29th Apr                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -187,7 +187,7 @@ Shipley Club 'B'      5    82   v.   Pudsey               21   119
 Myrtle 'B'           10    99   v.   Oakenshaw 'A'        16   109     
 Salts 'A'            20   114   v.   Birkenshaw 'A'        6    79     
 Royd House            3    55   v.   Spen Victoria 'B'    23   106     
-Bowling 'A'          23   122   v.   Littlemoor S &amp; SC     3    66     
+Bowling 'A'          23   122   v.   Littlemoor S & SC     3    66     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 13th May                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -220,7 +220,7 @@ Birkenshaw 'A'       15   113   v.   Myrtle 'B'           11   101
 Oakenshaw 'A'        11   103   v.   Shipley Club 'B'     15   106     
 Bowling 'A'          21   114   v.   Royd House            5    70     
 Spen Victoria 'B'    21   121   v.   Salts 'A'             5    81     
-Littlemoor S &amp; SC    14   111   v.   Pudsey               12   111     
+Littlemoor S & SC    14   111   v.   Pudsey               12   111     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 20th May                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -271,7 +271,7 @@ Pudsey                          v.   Oakenshaw 'A'                     To Fri 14
 Shipley Club 'B'     16   103   v.   Birkenshaw 'A'       10    87     
 Myrtle 'B'            3    74   v.   Spen Victoria 'B'    23   124     
 Salts 'A'            20   120   v.   Bowling 'A'           6    81     
-Royd House           14    95   v.   Littlemoor S &amp; SC    12    94     
+Royd House           14    95   v.   Littlemoor S & SC    12    94     
 ----------------------------------------------------------------------------------------------------------------------------
          Mon 3rd Jun                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -309,7 +309,7 @@ Birkenshaw 'A'        3    62   v.   Pudsey               23   114
 Royd House            8    80   v.   Salts 'A'            18   104     
 Bowling 'A'          16   103   v.   Myrtle 'B'           10    87     
 Spen Victoria 'B'    15   113   v.   Shipley Club 'B'     11   102     
-Littlemoor S &amp; SC    24   126   v.   Oakenshaw 'A'         2    71     
+Littlemoor S & SC    24   126   v.   Oakenshaw 'A'         2    71     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 10th Jun                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -350,7 +350,7 @@ Tyersal 'A'          13   100   v.   Asa Briggs 'B'       13   100
 Oakenshaw 'A'        16   119   v.   Birkenshaw 'A'       10   110     
 Shipley Club 'B'     14    96   v.   Bowling 'A'          12    91     
 Myrtle 'B'           18   121   v.   Royd House            8    96     
-Salts 'A'            15   102   v.   Littlemoor S &amp; SC    11    95     
+Salts 'A'            15   102   v.   Littlemoor S & SC    11    95     
 Spen Victoria 'B'    12   103   v.   Pudsey               14   107     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 17th Jun                   Division 3 (City Sports)                                  
@@ -385,7 +385,7 @@ Asa Briggs 'B'       14   101   v.   Asa Briggs 'A'       12   100
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 24th Jun                   Division 2 (Robert Bland)                                 
 ----------------------------------------------------------------------------------------------------------------------------
-Birkenshaw 'A'        8    92   v.   Littlemoor S &amp; SC    18   109     
+Birkenshaw 'A'        8    92   v.   Littlemoor S & SC    18   109     
 Oakenshaw 'A'        16   100   v.   Spen Victoria 'B'    10    89     
 Pudsey               19   110   v.   Bowling 'A'           7    78     
 Shipley Club 'B'     21   122   v.   Royd House            5    75     
@@ -422,7 +422,7 @@ Salts 'A'            16   119   v.   Shipley Club 'B'     10   103
 Royd House            8    88   v.   Pudsey               18   113     
 Bowling 'A'          16   110   v.   Oakenshaw 'A'        10    90     
 Spen Victoria 'B'    26   126   v.   Birkenshaw 'A'        0    51     
-Littlemoor S &amp; SC    16   113   v.   Myrtle 'B'           10    98     
+Littlemoor S & SC    16   113   v.   Myrtle 'B'           10    98     
 ----------------------------------------------------------------------------------------------------------------------------
          Mon 1st Jul                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -464,7 +464,7 @@ Birkenshaw 'A'        6    88   v.   Bowling 'A'          20   120
 Oakenshaw 'A'        25   122   v.   Royd House            1    54     
 Pudsey               26   126   v.   Salts 'A'             0    55     
 Shipley Club 'B'     19   123   v.   Myrtle 'B'            7    98     
-Littlemoor S &amp; SC    12    94   v.   Spen Victoria 'B'    14   101     
+Littlemoor S & SC    12    94   v.   Spen Victoria 'B'    14   101     
 ----------------------------------------------------------------------------------------------------------------------------
          Mon 8th Jul                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -498,7 +498,7 @@ Heckmondwike 'A'     14   114   v.   Myrtle 'A'           12   113
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 15th Jul                   Division 2 (Robert Bland)                                 
 ----------------------------------------------------------------------------------------------------------------------------
-Shipley Club 'B'     18   121   v.   Littlemoor S &amp; SC     8   102     
+Shipley Club 'B'     18   121   v.   Littlemoor S & SC     8   102     
 Myrtle 'B'            8    84   v.   Pudsey               18   109     
 Salts 'A'            16   110   v.   Oakenshaw 'A'        10   101     
 Royd House           18   108   v.   Birkenshaw 'A'        8    82     
@@ -535,7 +535,7 @@ Birkenshaw 'A'        9    98   v.   Salts 'A'            17   118
 Oakenshaw 'A'        17   115   v.   Myrtle 'B'            9    97     
 Pudsey               20   122   v.   Shipley Club 'B'      6    91     
 Spen Victoria 'B'    25   126   v.   Royd House            1    64     
-Littlemoor S &amp; SC    19   111   v.   Bowling 'A'           7    77     
+Littlemoor S & SC    19   111   v.   Bowling 'A'           7    77     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 22nd Jul                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -564,7 +564,7 @@ Tyersal 'A'           7    91   v.   Shipley Club' A'     19   115
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 29th Jul                   Division 2 (Robert Bland)                                 
 ----------------------------------------------------------------------------------------------------------------------------
-Pudsey               18   120   v.   Littlemoor S &amp; SC     8    92     
+Pudsey               18   120   v.   Littlemoor S & SC     8    92     
 Shipley Club 'B'     16   108   v.   Oakenshaw 'A'        10    91     
 Myrtle 'B'           10    97   v.   Birkenshaw 'A'       16   110     
 Salts 'A'            12   104   v.   Spen Victoria 'B'    14   108     
@@ -601,7 +601,7 @@ Birkenshaw 'A'        9   105   v.   Shipley Club 'B'     17   123
 Oakenshaw 'A'         9    91   v.   Pudsey               17   106     
 Bowling 'A'          16   111   v.   Salts 'A'            10    98     
 Spen Victoria 'B'    16   112   v.   Myrtle 'B'           10    95     
-Littlemoor S &amp; SC    26   126   v.   Royd House            0    54     
+Littlemoor S & SC    26   126   v.   Royd House            0    54     
 ----------------------------------------------------------------------------------------------------------------------------
          Mon 5th Aug                   Division 3 (City Sports)                                  
 ----------------------------------------------------------------------------------------------------------------------------
@@ -630,7 +630,7 @@ Tyersal 'A'          12   101   v.   Heckmondwike 'A'     14   103
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 12th Aug                   Division 2 (Robert Bland)                                 
 ----------------------------------------------------------------------------------------------------------------------------
-Oakenshaw 'A'        19   114   v.   Littlemoor S &amp; SC     7    89     
+Oakenshaw 'A'        19   114   v.   Littlemoor S & SC     7    89     
 Pudsey               23   123   v.   Birkenshaw 'A'        3    71     
 Shipley Club 'B'     19   122   v.   Spen Victoria 'B'     7    97     
 Myrtle 'B'           11    96   v.   Bowling 'A'          15   104     
@@ -666,7 +666,7 @@ Asa Briggs 'B'       11    95   v.   Tyersal 'A'          15   100
 Birkenshaw 'A'       15   104   v.   Oakenshaw 'A'        11    95     
 Royd House           10    99   v.   Myrtle 'B'           16   109     
 Bowling 'A'           9    80   v.   Shipley Club 'B'     17   105     
-Littlemoor S &amp; SC    22   119   v.   Salts 'A'             4    73     
+Littlemoor S & SC    22   119   v.   Salts 'A'             4    73     
 Pudsey               10    95   v.   Spen Victoria 'B'    16   109     
 ----------------------------------------------------------------------------------------------------------------------------
         Mon 19th Aug                   Division 3 (City Sports)                                  
@@ -745,7 +745,7 @@ Wibsey B              9    93   v.   Salts 'B'            17   111
 ====  ==================  ===  ===  ===  =====  
   1.  Pudsey               18   15    3    341
   2.  Spen Victoria 'B'    18   14    4    306
-  3.  Littlemoor S &amp; SC    18   10    8    272
+  3.  Littlemoor S & SC    18   10    8    272
   4.  Shipley Club 'B'     18   12    6    249
   5.  Oakenshaw 'A'        18   10    8    246
   6.  Bowling 'A'          18    9    9    238
@@ -887,7 +887,7 @@ Lucas Wood           4  Paul Tillyer        21
           Points:   12           Points:    14
 
 Division 2 (Robert Bla       Mon 8th Apr
-  Littlemoor S &amp; SC         Birkenshaw 'A'
+  Littlemoor S & SC         Birkenshaw 'A'
 Billy Thorpe        21  Keith Woodhead      12
 Angela Carter       12  Richard Hunter 'A'  21
 Philip A Richards   21  David Holmes         7
@@ -1107,7 +1107,7 @@ Sharon Gadd         21  David Firth 'A'     19
           Points:   12           Points:    14
 
 Division 2 (Robert Bla       Mon 15th Apr
-      Myrtle 'B'          Littlemoor S &amp; SC
+      Myrtle 'B'          Littlemoor S & SC
 Carol Royston       12  Billy Thorpe        21
 Maureen Wood        19  Graham Swithenbank  21
 Irene Bird          13  Kath Mazurke        21
@@ -1283,7 +1283,7 @@ James Dennison 'A'  21  Alan Holmes         20
           Points:   19           Points:     7
 
 Division 2 (Robert Bla       Mon 22nd Apr
-  Spen Victoria 'B'       Littlemoor S &amp; SC
+  Spen Victoria 'B'       Littlemoor S & SC
 Robert Sharp        21  Angela Carter       16
 David Hutton        21  Billy Thorpe        10
 John Smith          21  Terri Durrans       18
@@ -1492,7 +1492,7 @@ Andrew Wood         21  Darryl McCormick    15
           Points:   18           Points:     8
 
 Division 2 (Robert Bla       Mon 29th Apr
-  Littlemoor S &amp; SC        Shipley Club 'B'
+  Littlemoor S & SC        Shipley Club 'B'
 Mark Allman         21  Sharon Gadd          7
 Angela Carter       21  Wendy Spivey         7
 Philip Thornton     21  James Welsh         18
@@ -1888,7 +1888,7 @@ Geoff Woodfine       6  Tim Miller          21
           Points:    3           Points:    23
 
 Division 2 (Robert Bla       Mon 13th May
-     Bowling 'A'          Littlemoor S &amp; SC
+     Bowling 'A'          Littlemoor S & SC
 Christine Kilner    21  Terri Durrans        6
 Michael Feeley      21  Philip Thornton      6
 David McCormick 'A' 21  Billy Thorpe        10
@@ -2108,7 +2108,7 @@ Andrew Wood         21  Andy Firth           5
           Points:   21           Points:     5
 
 Division 2 (Robert Bla       Mon 20th May
-  Littlemoor S &amp; SC             Pudsey
+  Littlemoor S & SC             Pudsey
 Angela Carter       21  Gary Wike           18
 Terri Durrans       21  Sue Chadwick        20
 Kath Mazurke        21  Alex Edmondson      20
@@ -2427,7 +2427,7 @@ Geoff Shores        19  Andrew Fenton       21
           Points:   20           Points:     6
 
 Division 2 (Robert Bla       Mon 3rd Jun
-      Royd House          Littlemoor S &amp; SC
+      Royd House          Littlemoor S & SC
 Gordan Evans        21  Billy Thorpe         9
 Gillian Holt        20  Graham Swithenbank  21
 Jillian Winter       7  Philip A Richards   21
@@ -2647,7 +2647,7 @@ Andrew Wood         13  Sharon Gadd         21
           Points:   15           Points:    11
 
 Division 2 (Robert Bla       Mon 10th Jun
-  Littlemoor S &amp; SC         Oakenshaw 'A'
+  Littlemoor S & SC         Oakenshaw 'A'
 Graham Swithenbank  21  Paul Tillyer         8
 Philip A Richards   21  Marian Firth 'A'    15
 Angela Carter       21  Pat Priestley 'A'   12
@@ -2867,7 +2867,7 @@ Irene Bird          21  David Hogg          19
           Points:   18           Points:     8
 
 Division 2 (Robert Bla       Mon 17th Jun
-      Salts 'A'           Littlemoor S &amp; SC
+      Salts 'A'           Littlemoor S & SC
 Bernard Greaves     10  Angela Carter       21
 Patricia Allison    21  Billy Thorpe        16
 David Firth 'A'     21  Philip Thornton     13
@@ -3054,7 +3054,7 @@ Paula Graham 'B'    14  Peter Wilkinson 'B' 21
           Points:   14           Points:    12
 
 Division 2 (Robert Bla       Mon 24th Jun
-    Birkenshaw 'A'        Littlemoor S &amp; SC
+    Birkenshaw 'A'        Littlemoor S & SC
 Harry Hall          19  Terri Durrans       21
 Richard Hunter 'A'  21  Billy Thorpe         4
 David Holmes        11  Angela Carter       21
@@ -3296,7 +3296,7 @@ Kevin Wood          21  Richard Hunter 'A'  10
           Points:   26           Points:     0
 
 Division 2 (Robert Bla       Mon 1st Jul
-  Littlemoor S &amp; SC           Myrtle 'B'
+  Littlemoor S & SC           Myrtle 'B'
 Billy Thorpe        12  Carol Royston       21
 Philip Thornton     21  Miles Berry         14
 Philip A Richards   21  Ronnie Bowdin       10
@@ -3538,7 +3538,7 @@ Sharon Gadd         21  Miles Berry          3
           Points:   19           Points:     7
 
 Division 2 (Robert Bla       Mon 8th Jul
-  Littlemoor S &amp; SC       Spen Victoria 'B'
+  Littlemoor S & SC       Spen Victoria 'B'
 Billy Thorpe        21  Robert Sharp        17
 Philip A Richards   16  Andrew Wood         21
 Angela Carter       21  Michael Griffiths    6
@@ -3725,7 +3725,7 @@ Roy Carter          18  Michael Upton       21
           Points:   14           Points:    12
 
 Division 2 (Robert Bla       Mon 15th Jul
-   Shipley Club 'B'       Littlemoor S &amp; SC
+   Shipley Club 'B'       Littlemoor S & SC
 Barry Fenton        16  Kath Mazurke        21
 David Dorman        21  Angela Carter       17
 Michael Gadd        21  Terri Durrans       10
@@ -3989,7 +3989,7 @@ Michael Griffiths   21  Harry Ashley        10
           Points:   25           Points:     1
 
 Division 2 (Robert Bla       Mon 22nd Jul
-  Littlemoor S &amp; SC          Bowling 'A'
+  Littlemoor S & SC          Bowling 'A'
 Philip Thornton     21  Michael Feeley       7
 Billy Thorpe        21  James Dennison 'A'  14
 Graham Swithenbank  21  David McCormick 'A'  9
@@ -4165,7 +4165,7 @@ Peter Simpson       18  Ian Jacques         21
           Points:    7           Points:    19
 
 Division 2 (Robert Bla       Mon 29th Jul
-        Pudsey            Littlemoor S &amp; SC
+        Pudsey            Littlemoor S & SC
 Sue Chadwick        21  Philip A Richards   16
 Alex Edmondson      21  Graham Swithenbank  13
 Jon Edmondson       21  Terri Durrans       14
@@ -4429,7 +4429,7 @@ Kevin Wood          19  Miles Berry         21
           Points:   16           Points:    10
 
 Division 2 (Robert Bla       Mon 5th Aug
-  Littlemoor S &amp; SC           Royd House
+  Littlemoor S & SC           Royd House
 Philip Thornton     21  Gordan Evans        11
 Billy Thorpe        21  Geoff Woodfine      12
 Angela Carter       21  Brian Neale          3
@@ -4605,7 +4605,7 @@ Gary Carter          9  Debora Sturman 'A'  21
           Points:   12           Points:    14
 
 Division 2 (Robert Bla       Mon 12th Aug
-    Oakenshaw 'A'         Littlemoor S &amp; SC
+    Oakenshaw 'A'         Littlemoor S & SC
 Gordon Akroyd 'A'   21  Billy Thorpe         7
 Paul Tillyer         9  Philip Thornton     21
 Marian Firth 'A'    21  Philip A Richards    8
@@ -4858,7 +4858,7 @@ James Dennison 'A'  21  Sharon Gadd         15
           Points:    9           Points:    17
 
 Division 2 (Robert Bla       Mon 19th Aug
-  Littlemoor S &amp; SC           Salts 'A'
+  Littlemoor S & SC           Salts 'A'
 Kath Mazurke        21  Bernard Greaves      7
 Angela Carter       21  Patricia Allison     1
 Graham Swithenbank  14  David Firth 'A'     21

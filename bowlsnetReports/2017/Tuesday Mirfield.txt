@@ -8,7 +8,7 @@
 ------------------------------------------------------------------------------------------------------------
 Bradley 'B'              8   149   v.   Huddersfield RUBC        2    98     
 Broad Oak 'B'            3   129   v.   Thorpe Green 'B'         7   151     
-Dalton C &amp; BC            4   142   v.   Longwood 'B'             6   142     
+Dalton C & BC            4   142   v.   Longwood 'B'             6   142     
 Grange Moor BC           8   161   v.   Heckmondwike 'B'         2    98     
 Shepley 'B'              7   159   v.   Springwood 'B'           3   128     
 
@@ -32,10 +32,10 @@ Whitkirk BC              6   184   v.   Crosland Moor            6   162
           Tue 18th Apr                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Barnsley                12   210   v.   Hanging Heaton           0   125     
-Bradley &amp; Colne          8   188   v.   Rothwell BC              4   175     
+Bradley & Colne          8   188   v.   Rothwell BC              4   175     
 Dodworth MW              7   176   v.   The Harold Club          5   162     
 Horbury WMC              9   200   v.   Crossgates 'B'           3   137     
-Lower Hopton 'B'        10   198   v.   Elland C &amp; BC            2   147     
+Lower Hopton 'B'        10   198   v.   Elland C & BC            2   147     
 ------------------------------------------------------------------------------------------------------------
           Tue 18th Apr                             Division 4                               
 ------------------------------------------------------------------------------------------------------------
@@ -47,10 +47,10 @@ Shepley BC               3   144   v.   Denby Grange BC          9   200
           Tue 18th Apr                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
 Broad Oak BC             9   195   v.   Kirkheaton 'B'           3   158     
-Harold Club 'B'          8   200   v.   Slaithwaite C &amp; BC       4   157     
+Harold Club 'B'          8   200   v.   Slaithwaite C & BC       4   157     
 Hove Edge BC            10   192   v.   Mirfield OB 'B'          2   164     
-Moorend WMC              9   194   v.   Ossett C &amp; AC            3   160     
-Thornhill C &amp; BC         4   175   v.   Spen Victoria 'B'        8   187     
+Moorend WMC              9   194   v.   Ossett C & AC            3   160     
+Thornhill C & BC         4   175   v.   Spen Victoria 'B'        8   187     
 ------------------------------------------------------------------------------------------------------------
           Tue 18th Apr                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ Cleckheaton Spts 'C'     3   138   v.   Broad Oak 'B'            7   143
 Heckmondwike 'B'         3   134   v.   Shepley 'B'              7   152     
 Huddersfield RUBC        3   127   v.   Grange Moor BC           7   148     
 Springwood 'B'           6   134   v.   Bradley 'B'              4   131     
-Thorpe Green 'B'         7   154   v.   Dalton C &amp; BC            3   122     
+Thorpe Green 'B'         7   154   v.   Dalton C & BC            3   122     
 
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Apr                             Division 1                               
@@ -95,8 +95,8 @@ Pudsey 'B'               5   163   v.   Kirkheaton Con           7   163
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Apr                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Crossgates 'B'           8   185   v.   Elland C &amp; BC            4   162     
-Dodworth MW              3   172   v.   Bradley &amp; Colne          9   192     
+Crossgates 'B'           8   185   v.   Elland C & BC            4   162     
+Dodworth MW              3   172   v.   Bradley & Colne          9   192     
 Hanging Heaton           2   144   v.   Lower Hopton 'B'        10   203     
 Rothwell BC             11   203   v.   Horbury WMC              1   153     
 The Harold Club          8   195   v.   Barnsley                 4   170     
@@ -110,10 +110,10 @@ Shepley BC               4   149   v.   Brighouse Sports 'B'     8   166
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Apr                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
-Hove Edge BC             9   187   v.   Thornhill C &amp; BC         3   171     
-Kirkheaton 'B'           8   176   v.   Slaithwaite C &amp; BC       4   157     
+Hove Edge BC             9   187   v.   Thornhill C & BC         3   171     
+Kirkheaton 'B'           8   176   v.   Slaithwaite C & BC       4   157     
 Mirfield OB 'B'          9   179   v.   Broad Oak BC             3   156     
-Ossett C &amp; AC           11   195   v.   Harold Club 'B'          1   128     
+Ossett C & AC           11   195   v.   Harold Club 'B'          1   128     
 Spen Victoria 'B'       10   192   v.   Moorend WMC              2   131     
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Apr                             Division 6                               
@@ -136,7 +136,7 @@ Wakefield Sports         6   144   v.   Thongsbridge 'B'         4   123
 ------------------------------------------------------------------------------------------------------------
 Bradley 'B'              2   106   v.   Shepley 'B'              8   140     
 Broad Oak 'B'            7   141   v.   Huddersfield RUBC        3   110     
-Dalton C &amp; BC            6   154   v.   Heckmondwike 'B'         4   118     
+Dalton C & BC            6   154   v.   Heckmondwike 'B'         4   118     
 Grange Moor BC           9   165   v.   Springwood 'B'           1   126     
 Longwood 'B'             6   133   v.   Cleckheaton Spts 'C'     4   119     
 
@@ -160,8 +160,8 @@ Whitkirk BC              6   177   v.   Alverthorpe              6   167
           Tue 2nd May                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Barnsley                 9   193   v.   Rothwell BC              3   163     
-Bradley &amp; Colne          5   171   v.   The Harold Club          7   178     
-Elland C &amp; BC            9   191   v.   Dodworth MW              3   169     
+Bradley & Colne          5   171   v.   The Harold Club          7   178     
+Elland C & BC            9   191   v.   Dodworth MW              3   169     
 Horbury WMC             10   204   v.   Hanging Heaton           2   143     
 Lower Hopton 'B'        11   204   v.   Crossgates 'B'           1   151     
 ------------------------------------------------------------------------------------------------------------
@@ -177,8 +177,8 @@ Ossett FH 'B'            9   181   v.   Milnsbridge BC           3   156
 Broad Oak BC             6   194   v.   Spen Victoria 'B'        6   178     
 Harold Club 'B'          8   183   v.   Kirkheaton 'B'           4   158     
 Moorend WMC              6   173   v.   Hove Edge BC             6   172     
-Slaithwaite C &amp; BC       4   161   v.   Ossett C &amp; AC            8   173     
-Thornhill C &amp; BC         9   191   v.   Mirfield OB 'B'          3   152     
+Slaithwaite C & BC       4   161   v.   Ossett C & AC            8   173     
+Thornhill C & BC         9   191   v.   Mirfield OB 'B'          3   152     
 ------------------------------------------------------------------------------------------------------------
           Tue 2nd May                              Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -201,7 +201,7 @@ Thongsbridge 'B'         7   149   v.   Moldgreen Con            3   123
 Grange Moor BC           9   157   v.   Bradley 'B'              1   115     
 Heckmondwike 'B'         9   149   v.   Broad Oak 'B'            1   104     
 Huddersfield RUBC        8   154   v.   Cleckheaton Spts 'C'     2   115     
-Shepley 'B'              8   148   v.   Dalton C &amp; BC            2    97     
+Shepley 'B'              8   148   v.   Dalton C & BC            2    97     
 Thorpe Green 'B'         6   129   v.   Longwood 'B'             4   129     
 
 ------------------------------------------------------------------------------------------------------------
@@ -223,9 +223,9 @@ Meltham BC               7   179   v.   Kirkheaton Con           5   174
 ------------------------------------------------------------------------------------------------------------
           Tue 9th May                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Barnsley                 9   199   v.   Bradley &amp; Colne          3   154     
+Barnsley                 9   199   v.   Bradley & Colne          3   154     
 Crossgates 'B'           9   192   v.   Hanging Heaton           3   152     
-Elland C &amp; BC            9   176   v.   Horbury WMC              3   134     
+Elland C & BC            9   176   v.   Horbury WMC              3   134     
 Rothwell BC             10   193   v.   Dodworth MW              2   158     
 The Harold Club          8   186   v.   Lower Hopton 'B'         4   155     
 ------------------------------------------------------------------------------------------------------------
@@ -240,8 +240,8 @@ Longwood BC             10   197   v.   Ossett FH 'B'            2   116
 ------------------------------------------------------------------------------------------------------------
 Kirkheaton 'B'           8   176   v.   Moorend WMC              4   164     
 Mirfield OB 'B'          8   188   v.   Harold Club 'B'          4   159     
-Ossett C &amp; AC           10   196   v.   Thornhill C &amp; BC         2   160     
-Slaithwaite C &amp; BC       5   185   v.   Broad Oak BC             7   188     
+Ossett C & AC           10   196   v.   Thornhill C & BC         2   160     
+Slaithwaite C & BC       5   185   v.   Broad Oak BC             7   188     
 Spen Victoria 'B'        9   173   v.   Hove Edge BC             3   167     
 ------------------------------------------------------------------------------------------------------------
           Tue 9th May                              Division 6                               
@@ -265,7 +265,7 @@ Wakefield Sports         3   121   v.   Royds Park BC            7   141
 Bradley 'B'              6   151   v.   Heckmondwike 'B'         4   133     
 Broad Oak 'B'            4   140   v.   Longwood 'B'             6   143     
 Cleckheaton Spts 'C'     7   134   v.   Thorpe Green 'B'         3   110     
-Dalton C &amp; BC            2   123   v.   Springwood 'B'           8   147     
+Dalton C & BC            2   123   v.   Springwood 'B'           8   147     
 Shepley 'B'              7   138   v.   Grange Moor BC           3   127     
 
 ------------------------------------------------------------------------------------------------------------
@@ -287,9 +287,9 @@ Spen Victoria            9   196   v.   Whitkirk BC              3   169
 ------------------------------------------------------------------------------------------------------------
           Tue 16th May                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Bradley &amp; Colne         10   203   v.   Crossgates 'B'           2   153     
+Bradley & Colne         10   203   v.   Crossgates 'B'           2   153     
 Dodworth MW              5   157   v.   Barnsley                 7   169     
-Hanging Heaton           3   153   v.   Elland C &amp; BC            9   175     
+Hanging Heaton           3   153   v.   Elland C & BC            9   175     
 Horbury WMC              7   172   v.   Lower Hopton 'B'         5   170     
 The Harold Club         11   196   v.   Rothwell BC              1   146     
 ------------------------------------------------------------------------------------------------------------
@@ -303,10 +303,10 @@ Shepley BC               7   184   v.   Lindley Lib              5   179
           Tue 16th May                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
 Broad Oak BC            10   195   v.   Harold Club 'B'          2   112     
-Hove Edge BC             4   157   v.   Ossett C &amp; AC            8   176     
+Hove Edge BC             4   157   v.   Ossett C & AC            8   176     
 Mirfield OB 'B'          4   168   v.   Spen Victoria 'B'        8   178     
-Moorend WMC              4   158   v.   Slaithwaite C &amp; BC       8   169     
-Thornhill C &amp; BC        11   203   v.   Kirkheaton 'B'           1   124     
+Moorend WMC              4   158   v.   Slaithwaite C & BC       8   169     
+Thornhill C & BC        11   203   v.   Kirkheaton 'B'           1   124     
 ------------------------------------------------------------------------------------------------------------
           Tue 16th May                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -327,7 +327,7 @@ Royds Park BC            6   137   v.   Thongsbridge 'B'         4   127
           Tue 16th May                             Division 8                               
 ------------------------------------------------------------------------------------------------------------
 Cleckheaton Spts 'C'     4   135   v.   Grange Moor BC           6   152     
-Dalton C &amp; BC            1    99   v.   Bradley 'B'              9   165     
+Dalton C & BC            1    99   v.   Bradley 'B'              9   165     
 Longwood 'B'             7   136   v.   Shepley 'B'              3   134     
 Springwood 'B'           7   151   v.   Heckmondwike 'B'         3   116     
 Thorpe Green 'B'         6   140   v.   Huddersfield RUBC        4   115     
@@ -352,10 +352,10 @@ Whitkirk BC              6   172   v.   Kirkheaton Con           6   180
           Tue 23rd May                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Crossgates 'B'           8   176   v.   Dodworth MW              4   156     
-Elland C &amp; BC            7   178   v.   Barnsley                 5   172     
+Elland C & BC            7   178   v.   Barnsley                 5   172     
 Hanging Heaton           8   175   v.   Rothwell BC              4   163     
 Horbury WMC              9   195   v.   The Harold Club          3   156     
-Lower Hopton 'B'         8   197   v.   Bradley &amp; Colne          4   180     
+Lower Hopton 'B'         8   197   v.   Bradley & Colne          4   180     
 ------------------------------------------------------------------------------------------------------------
           Tue 23rd May                             Division 4                               
 ------------------------------------------------------------------------------------------------------------
@@ -368,9 +368,9 @@ Ossett FH 'B'            8   181   v.   Lindley Lib              4   146
 ------------------------------------------------------------------------------------------------------------
 Broad Oak BC             7   186   v.   Hove Edge BC             5   176     
 Harold Club 'B'          2   149   v.   Spen Victoria 'B'       10   194     
-Kirkheaton 'B'           7   190   v.   Ossett C &amp; AC            5   175     
-Moorend WMC              9   185   v.   Thornhill C &amp; BC         3   154     
-Slaithwaite C &amp; BC       9   176   v.   Mirfield OB 'B'          3   167     
+Kirkheaton 'B'           7   190   v.   Ossett C & AC            5   175     
+Moorend WMC              9   185   v.   Thornhill C & BC         3   154     
+Slaithwaite C & BC       9   176   v.   Mirfield OB 'B'          3   167     
 ------------------------------------------------------------------------------------------------------------
           Tue 23rd May                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -390,7 +390,7 @@ Wakefield Sports         5   144   v.   Moldgreen Con            5   154
 ------------------------------------------------------------------------------------------------------------
           Tue 23rd May                             Division 8                               
 ------------------------------------------------------------------------------------------------------------
-Grange Moor BC           8   164   v.   Dalton C &amp; BC            2   144     
+Grange Moor BC           8   164   v.   Dalton C & BC            2   144     
 Heckmondwike 'B'         3   121   v.   Thorpe Green 'B'         7   134     
 Huddersfield RUBC        7   146   v.   Longwood 'B'             3   141     
 Shepley 'B'              8   146   v.   Broad Oak 'B'            2   101     
@@ -416,9 +416,9 @@ Pudsey 'B'               9   188   v.   Whitkirk BC              3   156
           Tue 30th May                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Barnsley                10   199   v.   Crossgates 'B'           2   156     
-Bradley &amp; Colne          8   184   v.   Horbury WMC              4   147     
+Bradley & Colne          8   184   v.   Horbury WMC              4   147     
 Dodworth MW              9   183   v.   Lower Hopton 'B'         3   151     
-Rothwell BC              7   188   v.   Elland C &amp; BC            5   149     
+Rothwell BC              7   188   v.   Elland C & BC            5   149     
 The Harold Club         10   207   v.   Hanging Heaton           2   129     
 ------------------------------------------------------------------------------------------------------------
           Tue 30th May                             Division 4                               
@@ -430,11 +430,11 @@ Shepley BC               5   179   v.   Littlemoor 'B'           7   183
 ------------------------------------------------------------------------------------------------------------
           Tue 30th May                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
-Hove Edge BC             8   183   v.   Slaithwaite C &amp; BC       4   142     
+Hove Edge BC             8   183   v.   Slaithwaite C & BC       4   142     
 Mirfield OB 'B'          8   198   v.   Moorend WMC              4   144     
-Ossett C &amp; AC            7   179   v.   Broad Oak BC             5   159     
+Ossett C & AC            7   179   v.   Broad Oak BC             5   159     
 Spen Victoria 'B'       11   209   v.   Kirkheaton 'B'           1   111     
-Thornhill C &amp; BC        10   193   v.   Harold Club 'B'          2   144     
+Thornhill C & BC        10   193   v.   Harold Club 'B'          2   144     
 ------------------------------------------------------------------------------------------------------------
           Tue 30th May                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -480,7 +480,7 @@ Whitkirk BC              8   187   v.   Eccleshill               4   179
           Tue 6th Jun                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Crossgates 'B'           7   183   v.   The Harold Club          5   183     
-Elland C &amp; BC            6   180   v.   Bradley &amp; Colne          6   167     
+Elland C & BC            6   180   v.   Bradley & Colne          6   167     
 Hanging Heaton           9   172   v.   Dodworth MW              3   138     
 Horbury WMC              3   175   v.   Barnsley                 9   191     
 Lower Hopton 'B'        10   200   v.   Rothwell BC              2   175     
@@ -497,8 +497,8 @@ Ossett FH 'B'            5   173   v.   Denby Grange BC          7   178
 Broad Oak BC             8   188   v.   Moorend WMC              4   154     
 Harold Club 'B'          3   174   v.   Hove Edge BC             9   182     
 Kirkheaton 'B'           5   161   v.   Mirfield OB 'B'          7   177     
-Ossett C &amp; AC           10   207   v.   Spen Victoria 'B'        2   141     
-Slaithwaite C &amp; BC       9   187   v.   Thornhill C &amp; BC         3   139     
+Ossett C & AC           10   207   v.   Spen Victoria 'B'        2   141     
+Slaithwaite C & BC       9   187   v.   Thornhill C & BC         3   139     
 ------------------------------------------------------------------------------------------------------------
           Tue 6th Jun                              Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -519,7 +519,7 @@ Wakefield Sports         4   148   v.   Heckmondwike BC          6   152
           Tue 6th Jun                              Division 8                               
 ------------------------------------------------------------------------------------------------------------
 Bradley 'B'              9   156   v.   Longwood 'B'             1    98     
-Dalton C &amp; BC            2   138   v.   Cleckheaton Spts 'C'     8   150     
+Dalton C & BC            2   138   v.   Cleckheaton Spts 'C'     8   150     
 Grange Moor BC           6   145   v.   Thorpe Green 'B'         4   127     
 Shepley 'B'              8   164   v.   Huddersfield RUBC        2   124     
 Springwood 'B'           9   148   v.   Broad Oak 'B'            1   120     
@@ -544,10 +544,10 @@ Pudsey 'B'               4   162   v.   Spen Victoria            8   174
           Tue 13th Jun                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Barnsley                 9   189   v.   Lower Hopton 'B'         3   155     
-Bradley &amp; Colne         12   210   v.   Hanging Heaton           0   127     
+Bradley & Colne         12   210   v.   Hanging Heaton           0   127     
 Dodworth MW              9   191   v.   Horbury WMC              3   140     
 Rothwell BC             10   180   v.   Crossgates 'B'           2   168     
-The Harold Club         10   208   v.   Elland C &amp; BC            2   147     
+The Harold Club         10   208   v.   Elland C & BC            2   147     
 ------------------------------------------------------------------------------------------------------------
           Tue 13th Jun                             Division 4                               
 ------------------------------------------------------------------------------------------------------------
@@ -559,10 +559,10 @@ Shepley BC               7   164   v.   Ossett FH 'B'            5   151
           Tue 13th Jun                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
 Hove Edge BC            10   201   v.   Kirkheaton 'B'           2   125     
-Mirfield OB 'B'          4   161   v.   Ossett C &amp; AC            8   184     
+Mirfield OB 'B'          4   161   v.   Ossett C & AC            8   184     
 Moorend WMC              9   177   v.   Harold Club 'B'          3   158     
-Spen Victoria 'B'        8   193   v.   Slaithwaite C &amp; BC       4   185     
-Thornhill C &amp; BC         9   186   v.   Broad Oak BC             3   132     
+Spen Victoria 'B'        8   193   v.   Slaithwaite C & BC       4   185     
+Thornhill C & BC         9   186   v.   Broad Oak BC             3   132     
 ------------------------------------------------------------------------------------------------------------
           Tue 13th Jun                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -582,7 +582,7 @@ Springwood BC            4   136   v.   Wakefield Sports         6   149
 ------------------------------------------------------------------------------------------------------------
           Tue 13th Jun                             Division 8                               
 ------------------------------------------------------------------------------------------------------------
-Broad Oak 'B'            8   151   v.   Dalton C &amp; BC            2   123     
+Broad Oak 'B'            8   151   v.   Dalton C & BC            2   123     
 Cleckheaton Spts 'C'     2   130   v.   Shepley 'B'              8   143     
 Huddersfield RUBC        9   160   v.   Springwood 'B'           1   107     
 Longwood 'B'             7   152   v.   Heckmondwike 'B'         3   142     
@@ -592,7 +592,7 @@ Thorpe Green 'B'         6   145   v.   Bradley 'B'              4   141
           Tue 20th Jun                             Division 8                               
 ------------------------------------------------------------------------------------------------------------
 Bradley 'B'              8   152   v.   Broad Oak 'B'            2   115     
-Dalton C &amp; BC            7   145   v.   Huddersfield RUBC        3   144     
+Dalton C & BC            7   145   v.   Huddersfield RUBC        3   144     
 Grange Moor BC           8   140   v.   Longwood 'B'             2   132     
 Heckmondwike 'B'         6   126   v.   Cleckheaton Spts 'C'     4   125     
 Springwood 'B'           7   153   v.   Thorpe Green 'B'         3   113     
@@ -602,7 +602,7 @@ Springwood 'B'           7   153   v.   Thorpe Green 'B'         3   113
 ------------------------------------------------------------------------------------------------------------
 Huddersfield RUBC        4   116   v.   Bradley 'B'              6   147     
 Thorpe Green 'B'         8   154   v.   Broad Oak 'B'            2   119     
-Longwood 'B'             8   161   v.   Dalton C &amp; BC            2   135     
+Longwood 'B'             8   161   v.   Dalton C & BC            2   135     
 Heckmondwike 'B'         4   137   v.   Grange Moor BC           6   151     
 Springwood 'B'           6   134   v.   Shepley 'B'              4   132     
 
@@ -626,10 +626,10 @@ Crosland Moor            9   204   v.   Whitkirk BC              3   157
           Tue 4th Jul                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Hanging Heaton           8   190   v.   Barnsley                 4   170     
-Rothwell BC             10   201   v.   Bradley &amp; Colne          2   135     
+Rothwell BC             10   201   v.   Bradley & Colne          2   135     
 The Harold Club         12   210   v.   Dodworth MW              0   137     
 Crossgates 'B'           9   197   v.   Horbury WMC              3   152     
-Elland C &amp; BC            8   182   v.   Lower Hopton 'B'         4   179     
+Elland C & BC            8   182   v.   Lower Hopton 'B'         4   179     
 ------------------------------------------------------------------------------------------------------------
           Tue 4th Jul                              Division 4                               
 ------------------------------------------------------------------------------------------------------------
@@ -641,10 +641,10 @@ Denby Grange BC          8   188   v.   Shepley BC               4   147
           Tue 4th Jul                              Division 5                               
 ------------------------------------------------------------------------------------------------------------
 Kirkheaton 'B'           5   186   v.   Broad Oak BC             7   190     
-Slaithwaite C &amp; BC      11   203   v.   Harold Club 'B'          1   134     
+Slaithwaite C & BC      11   203   v.   Harold Club 'B'          1   134     
 Mirfield OB 'B'          4   173   v.   Hove Edge BC             8   174     
-Ossett C &amp; AC           10   199   v.   Moorend WMC              2   123     
-Spen Victoria 'B'        8   183   v.   Thornhill C &amp; BC         4   148     
+Ossett C & AC           10   199   v.   Moorend WMC              2   123     
+Spen Victoria 'B'        8   183   v.   Thornhill C & BC         4   148     
 ------------------------------------------------------------------------------------------------------------
           Tue 4th Jul                              Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -668,7 +668,7 @@ Broad Oak 'B'            4   120   v.   Cleckheaton Spts 'C'     6   136
 Shepley 'B'              8   161   v.   Heckmondwike 'B'         2    93     
 Grange Moor BC           4   130   v.   Huddersfield RUBC        6   132     
 Bradley 'B'              8   155   v.   Springwood 'B'           2   101     
-Dalton C &amp; BC            5   144   v.   Thorpe Green 'B'         5   143     
+Dalton C & BC            5   144   v.   Thorpe Green 'B'         5   143     
 
 ------------------------------------------------------------------------------------------------------------
           Tue 11th Jul                             Division 1                               
@@ -689,8 +689,8 @@ Kirkheaton Con           8   175   v.   Pudsey 'B'               4   152
 ------------------------------------------------------------------------------------------------------------
           Tue 11th Jul                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Elland C &amp; BC           10   192   v.   Crossgates 'B'           2   140     
-Bradley &amp; Colne          9   190   v.   Dodworth MW              3   154     
+Elland C & BC           10   192   v.   Crossgates 'B'           2   140     
+Bradley & Colne          9   190   v.   Dodworth MW              3   154     
 Lower Hopton 'B'        10   195   v.   Hanging Heaton           2   134     
 Horbury WMC              8   194   v.   Rothwell BC              4   157     
 Barnsley                 8   195   v.   The Harold Club          4   154     
@@ -704,10 +704,10 @@ Brighouse Sports 'B'    12   210   v.   Shepley BC               0   117
 ------------------------------------------------------------------------------------------------------------
           Tue 11th Jul                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
-Thornhill C &amp; BC         8   171   v.   Hove Edge BC             4   163     
-Slaithwaite C &amp; BC      10   191   v.   Kirkheaton 'B'           2   134     
+Thornhill C & BC         8   171   v.   Hove Edge BC             4   163     
+Slaithwaite C & BC      10   191   v.   Kirkheaton 'B'           2   134     
 Broad Oak BC             9   187   v.   Mirfield OB 'B'          3   170     
-Harold Club 'B'          3   161   v.   Ossett C &amp; AC            9   194     
+Harold Club 'B'          3   161   v.   Ossett C & AC            9   194     
 Moorend WMC              8   185   v.   Spen Victoria 'B'        4   157     
 ------------------------------------------------------------------------------------------------------------
           Tue 11th Jul                             Division 6                               
@@ -730,7 +730,7 @@ Thongsbridge 'B'         8   149   v.   Wakefield Sports         2   125
 ------------------------------------------------------------------------------------------------------------
 Shepley 'B'              7   145   v.   Bradley 'B'              3   122     
 Huddersfield RUBC        5   147   v.   Broad Oak 'B'            5   130     
-Heckmondwike 'B'         7   133   v.   Dalton C &amp; BC            3   132     
+Heckmondwike 'B'         7   133   v.   Dalton C & BC            3   132     
 Springwood 'B'           0   123   v.   Grange Moor BC          10   168     
 Cleckheaton Spts 'C'     7   145   v.   Longwood 'B'             3   120     
 
@@ -754,8 +754,8 @@ Alverthorpe             11   209   v.   Whitkirk BC              1   151
           Tue 18th Jul                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Rothwell BC              8   178   v.   Barnsley                 4   150     
-The Harold Club          5   170   v.   Bradley &amp; Colne          7   178     
-Dodworth MW              8   195   v.   Elland C &amp; BC            4   151     
+The Harold Club          5   170   v.   Bradley & Colne          7   178     
+Dodworth MW              8   195   v.   Elland C & BC            4   151     
 Hanging Heaton           9   180   v.   Horbury WMC              3   151     
 Crossgates 'B'           5   166   v.   Lower Hopton 'B'         7   184     
 ------------------------------------------------------------------------------------------------------------
@@ -771,8 +771,8 @@ Milnsbridge BC           9   193   v.   Ossett FH 'B'            3   141
 Spen Victoria 'B'        9   199   v.   Broad Oak BC             3   158     
 Kirkheaton 'B'           6   185   v.   Harold Club 'B'          6   176     
 Hove Edge BC            12   210   v.   Moorend WMC              0    83     
-Ossett C &amp; AC           10   200   v.   Slaithwaite C &amp; BC       2   133     
-Mirfield OB 'B'          9   180   v.   Thornhill C &amp; BC         3   168     
+Ossett C & AC           10   200   v.   Slaithwaite C & BC       2   133     
+Mirfield OB 'B'          9   180   v.   Thornhill C & BC         3   168     
 ------------------------------------------------------------------------------------------------------------
           Tue 18th Jul                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -795,7 +795,7 @@ Moldgreen Con           10   168   v.   Thongsbridge 'B'         0    79
 Bradley 'B'              6   153   v.   Grange Moor BC           4   147     
 Broad Oak 'B'            8   152   v.   Heckmondwike 'B'         2   106     
 Cleckheaton Spts 'C'     6   140   v.   Huddersfield RUBC        4   140     
-Dalton C &amp; BC            2   129   v.   Shepley 'B'              8   157     
+Dalton C & BC            2   129   v.   Shepley 'B'              8   157     
 Longwood 'B'             7   143   v.   Thorpe Green 'B'         3   132     
 
 ------------------------------------------------------------------------------------------------------------
@@ -817,9 +817,9 @@ Kirkheaton Con          10   193   v.   Meltham BC               2   155
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Jul                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Bradley &amp; Colne          5   175   v.   Barnsley                 7   180     
+Bradley & Colne          5   175   v.   Barnsley                 7   180     
 Hanging Heaton           3   163   v.   Crossgates 'B'           9   190     
-Horbury WMC              2   114   v.   Elland C &amp; BC           10   188     
+Horbury WMC              2   114   v.   Elland C & BC           10   188     
 Dodworth MW              7   180   v.   Rothwell BC              5   154     
 Lower Hopton 'B'         8   184   v.   The Harold Club          4   153     
 ------------------------------------------------------------------------------------------------------------
@@ -834,8 +834,8 @@ Ossett FH 'B'            8   185   v.   Longwood BC              4   151
 ------------------------------------------------------------------------------------------------------------
 Moorend WMC              8   195   v.   Kirkheaton 'B'           4   160     
 Harold Club 'B'          8   168   v.   Mirfield OB 'B'          4   166     
-Thornhill C &amp; BC         9   182   v.   Ossett C &amp; AC            3   149     
-Broad Oak BC             9   186   v.   Slaithwaite C &amp; BC       3   162     
+Thornhill C & BC         9   182   v.   Ossett C & AC            3   149     
+Broad Oak BC             9   186   v.   Slaithwaite C & BC       3   162     
 Hove Edge BC             8   180   v.   Spen Victoria 'B'        4   178     
 ------------------------------------------------------------------------------------------------------------
           Tue 25th Jul                             Division 6                               
@@ -859,7 +859,7 @@ Royds Park BC            9   164   v.   Wakefield Sports         1   114
 Heckmondwike 'B'         3   117   v.   Bradley 'B'              7   143     
 Longwood 'B'             4   138   v.   Broad Oak 'B'            6   138     
 Thorpe Green 'B'         2   120   v.   Cleckheaton Spts 'C'     8   145     
-Springwood 'B'          10   168   v.   Dalton C &amp; BC            0   108     
+Springwood 'B'          10   168   v.   Dalton C & BC            0   108     
 Grange Moor BC           7   151   v.   Shepley 'B'              3   132     
 
 ------------------------------------------------------------------------------------------------------------
@@ -881,9 +881,9 @@ Whitkirk BC             12   210   v.   Spen Victoria            0   118
 ------------------------------------------------------------------------------------------------------------
           Tue 1st Aug                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
-Crossgates 'B'           7   174   v.   Bradley &amp; Colne          5   161     
+Crossgates 'B'           7   174   v.   Bradley & Colne          5   161     
 Barnsley                 6   173   v.   Dodworth MW              6   173     
-Elland C &amp; BC            9   186   v.   Hanging Heaton           3   152     
+Elland C & BC            9   186   v.   Hanging Heaton           3   152     
 Lower Hopton 'B'         7   173   v.   Horbury WMC              5   172     
 Rothwell BC              8   180   v.   The Harold Club          4   169     
 ------------------------------------------------------------------------------------------------------------
@@ -897,10 +897,10 @@ Lindley Lib              9   201   v.   Shepley BC               3   141
           Tue 1st Aug                              Division 5                               
 ------------------------------------------------------------------------------------------------------------
 Harold Club 'B'                    v.   Broad Oak BC                         To Tue 5th Sep (Rearranged)
-Ossett C &amp; AC            8   186   v.   Hove Edge BC             4   135     
+Ossett C & AC            8   186   v.   Hove Edge BC             4   135     
 Spen Victoria 'B'        9   195   v.   Mirfield OB 'B'          3   157     
-Slaithwaite C &amp; BC       9   191   v.   Moorend WMC              3   153     
-Kirkheaton 'B'           3   154   v.   Thornhill C &amp; BC         9   185     
+Slaithwaite C & BC       9   191   v.   Moorend WMC              3   153     
+Kirkheaton 'B'           3   154   v.   Thornhill C & BC         9   185     
 ------------------------------------------------------------------------------------------------------------
           Tue 1st Aug                              Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -921,7 +921,7 @@ Thongsbridge 'B'         5   135   v.   Royds Park BC            5   132
           Tue 1st Aug                              Division 8                               
 ------------------------------------------------------------------------------------------------------------
 Grange Moor BC           8   156   v.   Cleckheaton Spts 'C'     2   127     
-Bradley 'B'              9   162   v.   Dalton C &amp; BC            1   102     
+Bradley 'B'              9   162   v.   Dalton C & BC            1   102     
 Shepley 'B'              9   163   v.   Longwood 'B'             1   102     
 Heckmondwike 'B'         3   132   v.   Springwood 'B'           7   144     
 Huddersfield RUBC        8   159   v.   Thorpe Green 'B'         2   121     
@@ -946,10 +946,10 @@ Kirkheaton Con           7   174   v.   Whitkirk BC              5   172
           Tue 8th Aug                              Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Dodworth MW                        v.   Crossgates 'B'                       To Tue 5th Sep (Rearranged)
-Barnsley                 4   165   v.   Elland C &amp; BC            8   197     
+Barnsley                 4   165   v.   Elland C & BC            8   197     
 Rothwell BC              8   183   v.   Hanging Heaton           4   156     
 The Harold Club         11   203   v.   Horbury WMC              1   134     
-Bradley &amp; Colne         10   189   v.   Lower Hopton 'B'         2   141     
+Bradley & Colne         10   189   v.   Lower Hopton 'B'         2   141     
 ------------------------------------------------------------------------------------------------------------
           Tue 8th Aug                              Division 4                               
 ------------------------------------------------------------------------------------------------------------
@@ -962,9 +962,9 @@ Lindley Lib              6   181   v.   Ossett FH 'B'            6   166
 ------------------------------------------------------------------------------------------------------------
 Hove Edge BC             7   182   v.   Broad Oak BC             5   159     
 Spen Victoria 'B'        8   179   v.   Harold Club 'B'          4   157     
-Ossett C &amp; AC           11   209   v.   Kirkheaton 'B'           1   106     
-Thornhill C &amp; BC        11   200   v.   Moorend WMC              1   127     
-Mirfield OB 'B'          8   188   v.   Slaithwaite C &amp; BC       4   173     
+Ossett C & AC           11   209   v.   Kirkheaton 'B'           1   106     
+Thornhill C & BC        11   200   v.   Moorend WMC              1   127     
+Mirfield OB 'B'          8   188   v.   Slaithwaite C & BC       4   173     
 ------------------------------------------------------------------------------------------------------------
           Tue 8th Aug                              Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -984,7 +984,7 @@ Moldgreen Con                      v.   Wakefield Sports                     To 
 ------------------------------------------------------------------------------------------------------------
           Tue 8th Aug                              Division 8                               
 ------------------------------------------------------------------------------------------------------------
-Dalton C &amp; BC            0    98   v.   Grange Moor BC          10   168     
+Dalton C & BC            0    98   v.   Grange Moor BC          10   168     
 Thorpe Green 'B'         9   166   v.   Heckmondwike 'B'         1   124     
 Longwood 'B'             2   128   v.   Huddersfield RUBC        8   150     
 Broad Oak 'B'            3   131   v.   Shepley 'B'              7   147     
@@ -1010,9 +1010,9 @@ Whitkirk BC             11   201   v.   Pudsey 'B'               1   120
           Tue 15th Aug                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Crossgates 'B'           7   170   v.   Barnsley                 5   166     
-Horbury WMC              8   176   v.   Bradley &amp; Colne          4   172     
+Horbury WMC              8   176   v.   Bradley & Colne          4   172     
 Lower Hopton 'B'         7   183   v.   Dodworth MW              5   173     
-Elland C &amp; BC           11   195   v.   Rothwell BC              1   150     
+Elland C & BC           11   195   v.   Rothwell BC              1   150     
 Hanging Heaton           5   160   v.   The Harold Club          7   189     
 ------------------------------------------------------------------------------------------------------------
           Tue 15th Aug                             Division 4                               
@@ -1024,11 +1024,11 @@ Littlemoor 'B'          12   210   v.   Shepley BC               0   106
 ------------------------------------------------------------------------------------------------------------
           Tue 15th Aug                             Division 5                               
 ------------------------------------------------------------------------------------------------------------
-Slaithwaite C &amp; BC       7   180   v.   Hove Edge BC             5   166     
+Slaithwaite C & BC       7   180   v.   Hove Edge BC             5   166     
 Moorend WMC             10   196   v.   Mirfield OB 'B'          2   153     
-Broad Oak BC             9   190   v.   Ossett C &amp; AC            3   161     
+Broad Oak BC             9   190   v.   Ossett C & AC            3   161     
 Kirkheaton 'B'           3   126   v.   Spen Victoria 'B'        9   192     
-Harold Club 'B'          8   195   v.   Thornhill C &amp; BC         4   142     
+Harold Club 'B'          8   195   v.   Thornhill C & BC         4   142     
 ------------------------------------------------------------------------------------------------------------
           Tue 15th Aug                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -1079,7 +1079,7 @@ Eccleshill              10   194   v.   Whitkirk BC              2   148
           Tue 22nd Aug                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 The Harold Club          6   180   v.   Crossgates 'B'           6   173     
-Bradley &amp; Colne          3   156   v.   Elland C &amp; BC            9   199     
+Bradley & Colne          3   156   v.   Elland C & BC            9   199     
 Dodworth MW              9   194   v.   Hanging Heaton           3   140     
 Barnsley                11   204   v.   Horbury WMC              1   136     
 Rothwell BC              9   191   v.   Lower Hopton 'B'         3   170     
@@ -1096,8 +1096,8 @@ Denby Grange BC          9   199   v.   Ossett FH 'B'            3   154
 Moorend WMC              4   147   v.   Broad Oak BC             8   171     
 Hove Edge BC            10   204   v.   Harold Club 'B'          2   152     
 Mirfield OB 'B'         10   195   v.   Kirkheaton 'B'           2   140     
-Spen Victoria 'B'        9   188   v.   Ossett C &amp; AC            3   161     
-Thornhill C &amp; BC        10   195   v.   Slaithwaite C &amp; BC       2   127     
+Spen Victoria 'B'        9   188   v.   Ossett C & AC            3   161     
+Thornhill C & BC        10   195   v.   Slaithwaite C & BC       2   127     
 ------------------------------------------------------------------------------------------------------------
           Tue 22nd Aug                             Division 6                               
 ------------------------------------------------------------------------------------------------------------
@@ -1118,7 +1118,7 @@ Heckmondwike BC          7   146   v.   Wakefield Sports         3   109
           Tue 22nd Aug                             Division 8                               
 ------------------------------------------------------------------------------------------------------------
 Longwood 'B'             2   114   v.   Bradley 'B'              8   156     
-Cleckheaton Spts 'C'     9   159   v.   Dalton C &amp; BC            1   101     
+Cleckheaton Spts 'C'     9   159   v.   Dalton C & BC            1   101     
 Thorpe Green 'B'         3   140   v.   Grange Moor BC           7   142     
 Huddersfield RUBC        8   146   v.   Shepley 'B'              2   106     
 Broad Oak 'B'            2   130   v.   Springwood 'B'           8   155     
@@ -1143,4 +1143,4 @@ Spen Victoria           10   191   v.   Pudsey 'B'               2   156
           Tue 29th Aug                             Division 3                               
 ------------------------------------------------------------------------------------------------------------
 Lower Hopton 'B'         5   173   v.   Barnsley                 7   180     
-Hanging Heaton           9   185   v.   Bradley &amp; Colne          3   161     
+Hanging Heaton           9   185   v.   Bradley & Colne          3   161     

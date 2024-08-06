@@ -1,4 +1,4 @@
-=== Leeds &amp; District (Tuesday Over 55s) 2015
+=== Leeds & District (Tuesday Over 55s) 2015
 === League Report
 
 
@@ -9,28 +9,28 @@
 Middleton Pk            1   129   v.   Horsforth Woodside.    11   204     
 Harehills Park          7   177   v.   West Royd Pk A          5   154     
 Stanningley Pk A       10   198   v.   Gildersome              2   116     
-Western Flatts A        2   157   v.   The Hollies S &amp; SC     10   203     
+Western Flatts A        2   157   v.   The Hollies S & SC     10   203     
 
 ----------------------------------------------------------------------------
          Tue 21st Apr                                                      
 ----------------------------------------------------------------------------
 West Royd Pk A         12   210   v.   Middleton Pk            0   106     
 Gildersome              1   146   v.   Harehills Park         11   206     
-The Hollies S &amp; SC      6   176   v.   Armley Pk               6   170     
+The Hollies S & SC      6   176   v.   Armley Pk               6   170     
 Holbeck Moor            8   179   v.   Western Flatts A        4   162     
 
 ----------------------------------------------------------------------------
          Tue 28th Apr                                                      
 ----------------------------------------------------------------------------
 Middleton Pk            7   183   v.   Gildersome              5   164     
-Stanningley Pk A       10   195   v.   The Hollies S &amp; SC      2   133     
+Stanningley Pk A       10   195   v.   The Hollies S & SC      2   133     
 Armley Pk               2   152   v.   Holbeck Moor           10   189     
 Western Flatts A        3   182   v.   Horsforth Woodside.     9   189     
 
 ----------------------------------------------------------------------------
           Tue 5th May                                                      
 ----------------------------------------------------------------------------
-The Hollies S &amp; SC      2   167   v.   Harehills Park         10   200     
+The Hollies S & SC      2   167   v.   Harehills Park         10   200     
 Holbeck Moor            9   195   v.   Stanningley Pk A        3   165     
 Horsforth Woodside.     4   161   v.   Armley Pk               8   180     
 West Royd Pk A         12   210   v.   Western Flatts A        0   109     
@@ -38,7 +38,7 @@ West Royd Pk A         12   210   v.   Western Flatts A        0   109
 ----------------------------------------------------------------------------
          Tue 12th May                                                      
 ----------------------------------------------------------------------------
-Middleton Pk            2   163   v.   The Hollies S &amp; SC     10   198     
+Middleton Pk            2   163   v.   The Hollies S & SC     10   198     
 Harehills Park          9   186   v.   Holbeck Moor            3   144     
 Stanningley Pk A        7   177   v.   Horsforth Woodside.     5   154     
 Armley Pk               4   143   v.   West Royd Pk A          8   194     
@@ -57,7 +57,7 @@ West Royd Pk A         11   207   v.   Stanningley Pk A        1   124
 ----------------------------------------------------------------------------
 Middleton Pk            3   121   v.   Armley Pk               9   189     
 Harehills Park          9   177   v.   Stanningley Pk A        3   130     
-The Hollies S &amp; SC      7   177   v.   Holbeck Moor            5   166     
+The Hollies S & SC      7   177   v.   Holbeck Moor            5   166     
 Gildersome              1   120   v.   West Royd Pk A         11   202     
 
 ----------------------------------------------------------------------------
@@ -66,7 +66,7 @@ Gildersome              1   120   v.   West Royd Pk A         11   202
 Stanningley Pk A        9   192   v.   Middleton Pk            3   122     
 Western Flatts A        4   161   v.   Harehills Park          8   187     
 Horsforth Woodside.    11   204   v.   Gildersome              1   136     
-West Royd Pk A          9   176   v.   The Hollies S &amp; SC      3   166     
+West Royd Pk A          9   176   v.   The Hollies S & SC      3   166     
 
 ----------------------------------------------------------------------------
           Tue 9th Jun                                                      
@@ -82,7 +82,7 @@ Horsforth Woodside.     8   186   v.   West Royd Pk A          4   173
 Middleton Pk            5   152   v.   Western Flatts A        7   188     
 Stanningley Pk A       10   201   v.   Armley Pk               2   141     
 Holbeck Moor            8   186   v.   West Royd Pk A          4   182     
-The Hollies S &amp; SC      9   189   v.   Horsforth Woodside.     3   157     
+The Hollies S & SC      9   189   v.   Horsforth Woodside.     3   157     
 
 ----------------------------------------------------------------------------
          Tue 23rd Jun                                                      
@@ -90,7 +90,7 @@ The Hollies S &amp; SC      9   189   v.   Horsforth Woodside.     3   157
 Armley Pk               7   158   v.   Harehills Park          5   152     
 Western Flatts A        1   161   v.   Stanningley Pk A       11   203     
 Horsforth Woodside.     7   193   v.   Holbeck Moor            5   152     
-Gildersome              4   154   v.   The Hollies S &amp; SC      8   187     
+Gildersome              4   154   v.   The Hollies S & SC      8   187     
 
 ----------------------------------------------------------------------------
          Tue 30th Jun                                                      
@@ -98,28 +98,28 @@ Gildersome              4   154   v.   The Hollies S &amp; SC      8   187
 Horsforth Woodside.    12   210   v.   Middleton Pk            0    80     
 West Royd Pk A          8   179   v.   Harehills Park          4   154     
 Gildersome              4   133   v.   Stanningley Pk A        8   174     
-The Hollies S &amp; SC      9   187   v.   Western Flatts A        3   145     
+The Hollies S & SC      9   187   v.   Western Flatts A        3   145     
 
 ----------------------------------------------------------------------------
          Tue 14th Jul                                                      
 ----------------------------------------------------------------------------
 Middleton Pk            1   135   v.   West Royd Pk A         11   202     
 Harehills Park         12   210   v.   Gildersome              0   127     
-Armley Pk               7   184   v.   The Hollies S &amp; SC      5   182     
+Armley Pk               7   184   v.   The Hollies S & SC      5   182     
 Western Flatts A        8   183   v.   Holbeck Moor            4   159     
 
 ----------------------------------------------------------------------------
          Tue 21st Jul                                                      
 ----------------------------------------------------------------------------
 Gildersome              9   188   v.   Middleton Pk            3   123     
-The Hollies S &amp; SC     10   198   v.   Stanningley Pk A        2   142     
+The Hollies S & SC     10   198   v.   Stanningley Pk A        2   142     
 Horsforth Woodside.    11   204   v.   Western Flatts A        1   129     
 Holbeck Moor            9   182   v.   Armley Pk               3   156     
 
 ----------------------------------------------------------------------------
          Tue 28th Jul                                                      
 ----------------------------------------------------------------------------
-Harehills Park          5   150   v.   The Hollies S &amp; SC      7   165     
+Harehills Park          5   150   v.   The Hollies S & SC      7   165     
 Stanningley Pk A        4   140   v.   Holbeck Moor            8   183     
 Armley Pk               9   178   v.   Horsforth Woodside.     3   128     
 Western Flatts A        7   185   v.   West Royd Pk A          5   153     
@@ -127,7 +127,7 @@ Western Flatts A        7   185   v.   West Royd Pk A          5   153
 ----------------------------------------------------------------------------
           Tue 4th Aug                                                      
 ----------------------------------------------------------------------------
-The Hollies S &amp; SC     11   204   v.   Middleton Pk            1    93     
+The Hollies S & SC     11   204   v.   Middleton Pk            1    93     
 Holbeck Moor            5   176   v.   Harehills Park          7   185     
 Horsforth Woodside.     8   175   v.   Stanningley Pk A        4   155     
 West Royd Pk A          9   195   v.   Armley Pk               3   137     
@@ -146,7 +146,7 @@ Armley Pk               6   181   v.   Gildersome              6   183
 ----------------------------------------------------------------------------
 Armley Pk              10   193   v.   Middleton Pk            2   127     
 Stanningley Pk A        7   163   v.   Harehills Park          5   147     
-Holbeck Moor            7   172   v.   The Hollies S &amp; SC      5   165     
+Holbeck Moor            7   172   v.   The Hollies S & SC      5   165     
 West Royd Pk A         10   197   v.   Gildersome              2   112     
 
 ----------------------------------------------------------------------------
@@ -155,7 +155,7 @@ West Royd Pk A         10   197   v.   Gildersome              2   112
 Middleton Pk            8   167   v.   Stanningley Pk A        4   159     
 Harehills Park          9   197   v.   Western Flatts A        3   163     
 Gildersome              9   189   v.   Horsforth Woodside.     3   151     
-The Hollies S &amp; SC      7   179   v.   West Royd Pk A          5   176     
+The Hollies S & SC      7   179   v.   West Royd Pk A          5   176     
 
 ----------------------------------------------------------------------------
           Tue 1st Sep                                                      
@@ -171,7 +171,7 @@ West Royd Pk A         12   210   v.   Horsforth Woodside.     0   139
 Western Flatts A       10   200   v.   Middleton Pk            2   117     
 Armley Pk               8   170   v.   Stanningley Pk A        4   168     
 West Royd Pk A          9   192   v.   Holbeck Moor            3   144     
-Horsforth Woodside.     4   173   v.   The Hollies S &amp; SC      8   191     
+Horsforth Woodside.     4   173   v.   The Hollies S & SC      8   191     
 
 ----------------------------------------------------------------------------
          Tue 15th Sep                                                      
@@ -179,7 +179,7 @@ Horsforth Woodside.     4   173   v.   The Hollies S &amp; SC      8   191
 Harehills Park          9   189   v.   Armley Pk               3   125     
 Stanningley Pk A        4   159   v.   Western Flatts A        8   191     
 Holbeck Moor            5   174   v.   Horsforth Woodside.     7   177     
-The Hollies S &amp; SC      7   183   v.   Gildersome              5   161     
+The Hollies S & SC      7   183   v.   Gildersome              5   161     
 
 
 === Current LEAGUE TABLE
@@ -188,7 +188,7 @@ The Hollies S &amp; SC      7   183   v.   Gildersome              5   161
 ====  ====================  ===  ===  ===  =====  
   1.  West Royd Pk A         18   12    5    151
   2.  Harehills Park         18   13    5    147
-  3.  The Hollies S &amp; SC     18   12    5    126
+  3.  The Hollies S & SC     18   12    5    126
   4.  Holbeck Moor           18   11    7    125
   5.  Horsforth Woodside.    18   10    8    114
   6.  Stanningley Pk A       18    8    9    107
@@ -245,7 +245,7 @@ Stewart Watson        21  Derek Walker          16
            Points:    10             Points:     2
 
                                 Tue 14th Apr
-    Western Flatts A         The Hollies S &amp; SC
+    Western Flatts A         The Hollies S & SC
 Eddie Sidberry        17  Ken Watkin            21
 Hazel Goodall         17  Carol Robinson        21
 Ray Ellerker           8  Cedric Briggs         21
@@ -290,7 +290,7 @@ Derek Walker          16  Mike Sherman          21
            Points:     1             Points:    11
 
                                 Tue 21st Apr
-   The Hollies S &amp; SC            Armley Pk
+   The Hollies S & SC            Armley Pk
 Bruce Vayro           16  Gerry Faller          21
 Carol Robinson        11  Alison Stocks         21
 Ken Stockhill         21  Betty Hirst           10
@@ -335,7 +335,7 @@ Marjorie Kay          16  Derek Walker          21
            Points:     7             Points:     5
 
                                 Tue 28th Apr
-    Stanningley Pk A         The Hollies S &amp; SC
+    Stanningley Pk A         The Hollies S & SC
 Jack Roberts          21  Carol Robinson         9
 Jim Moorin            21  George Richmond       17
 Ken Walker            21  Elaine Hill           13
@@ -380,7 +380,7 @@ Terry Blakeley        19  Brian Dowling         21
            Points:     3             Points:     9
 
                                 Tue 5th May
-   The Hollies S &amp; SC          Harehills Park
+   The Hollies S & SC          Harehills Park
 Bruce Vayro           16  Irene Cavavagh        21
 Elaine Hill           15  Paddy Glover          21
 George Richmond       21  Brian Higgins         17
@@ -440,7 +440,7 @@ Dave Norris           21  John Manson           20
            Points:    12             Points:     0
 
                                 Tue 12th May
-      Middleton Pk           The Hollies S &amp; SC
+      Middleton Pk           The Hollies S & SC
 Colin Bramley         20  Ken Stockhill         21
 Robert Cooper          8  Carol Robinson        21
 Annice Wood           21  Ken Watkin            16
@@ -605,7 +605,7 @@ Mike Sherman          21  Keith Worrall         13
            Points:     9             Points:     3
 
                                 Tue 26th May
-   The Hollies S &amp; SC           Holbeck Moor
+   The Hollies S & SC           Holbeck Moor
 John Lambert          21  Colin Batterham        7
 Josie Burden          10  Pat Parker            21
 Maureen Morris        21  Graham Dunwell        18
@@ -680,7 +680,7 @@ Colin Hargreaves      21  Derek Walker          19
            Points:    11             Points:     1
 
                                 Tue 2nd Jun
-     West Royd Pk A          The Hollies S &amp; SC
+     West Royd Pk A          The Hollies S & SC
 Eddie Stead           21  George Richmond       10
 Colin Whitley         21  David Gregory          6
 Linda Crawford        21  Carol Robinson        17
@@ -800,7 +800,7 @@ David Burns           21  Norman Shaw           17
            Points:     8             Points:     4
 
                                 Tue 16th Jun
-   The Hollies S &amp; SC       Horsforth Woodside.
+   The Hollies S & SC       Horsforth Woodside.
 John Lambert          21  Mike Froggatt         10
 Elaine Hill           12  Irene Stancliffe      21
 Shirley Biancardo     21  David Lyons           18
@@ -860,7 +860,7 @@ David Lyons           15  David Burns           21
            Points:     7             Points:     5
 
                                 Tue 23rd Jun
-       Gildersome            The Hollies S &amp; SC
+       Gildersome            The Hollies S & SC
 Phillip Lucas          8  John Lambert          21
 Clifford Pitts        21  Carol Robinson        20
 Patricia Cooper       11  Ken Stockhill         21
@@ -920,7 +920,7 @@ Dennis Wainwright     21  Keith Worrall         20
            Points:     4             Points:     8
 
                                 Tue 30th Jun
-   The Hollies S &amp; SC         Western Flatts A
+   The Hollies S & SC         Western Flatts A
 Shirley Biancardo     21  Eddie Sidberry        11
 Duncan McPhail        21  Lillian Pickles       12
 Elaine Hill           19  Doreen Hunter         21
@@ -965,7 +965,7 @@ Mike Sherman          21  Derek Walker          20
            Points:    12             Points:     0
 
                                 Tue 14th Jul
-       Armley Pk             The Hollies S &amp; SC
+       Armley Pk             The Hollies S & SC
 Alison Stocks         21  Len Robinson          17
 Norman Forsyth        10  Shirley Biancardo     21
 Arthur Senior         20  Ken Watkin            21
@@ -1010,7 +1010,7 @@ Michael Ross          21  Marjorie Kay           1
            Points:     9             Points:     3
 
                                 Tue 21st Jul
-   The Hollies S &amp; SC         Stanningley Pk A
+   The Hollies S & SC         Stanningley Pk A
 Elaine Hill           21  Marion Worrall        14
 Ken Watkin            21  Ken Walker            18
 Bruce Vayro           21  Jim Moorin            17
@@ -1055,7 +1055,7 @@ David Burns           21  David Broadbent       18
            Points:     9             Points:     3
 
                                 Tue 28th Jul
-     Harehills Park          The Hollies S &amp; SC
+     Harehills Park          The Hollies S & SC
 Jim Spalding          21  Shirley Biancardo     11
 Ray Dixon             14  Carol Robinson        21
 Paddy Glover          21  Bruce Vayro           16
@@ -1115,7 +1115,7 @@ John Manson           12  Dave Norris           21
            Points:     7             Points:     5
 
                                 Tue 4th Aug
-   The Hollies S &amp; SC           Middleton Pk
+   The Hollies S & SC           Middleton Pk
 Ken Stockhill         21  Robert Cooper         12
 Carol Robinson        21  Valerie Darwin         6
 Cedric Briggs         15  Steven Ballance       21
@@ -1280,7 +1280,7 @@ donald shaw              21  Mike Sherman          10
            Points:     7             Points:     5
 
                                 Tue 18th Aug
-      Holbeck Moor           The Hollies S &amp; SC
+      Holbeck Moor           The Hollies S & SC
 Pat Parker             5  Duncan McPhail        21
 Barbara Rowe          13  Ken Watkin            21
 Hilary Campbell       21  Carol Robinson         5
@@ -1355,7 +1355,7 @@ Derek Walker          21  Stuart Tennant        14
            Points:     9             Points:     3
 
                                 Tue 25th Aug
-   The Hollies S &amp; SC          West Royd Pk A
+   The Hollies S & SC          West Royd Pk A
 Walter Stockhill      21  Eddie Stead           14
 Len Robinson          21  Ron Witham            18
 Bruce Vayro           17  John Hainsworth       21
@@ -1475,7 +1475,7 @@ Dave Norris           14  David Burns           21
            Points:     9             Points:     3
 
                                 Tue 8th Sep
-  Horsforth Woodside.        The Hollies S &amp; SC
+  Horsforth Woodside.        The Hollies S & SC
 Kath Bywell           19  Shirley Biancardo     21
 David Lyons           21  Ken Watkin            16
 Irene Stancliffe      21  Carol Robinson        16
@@ -1535,7 +1535,7 @@ Brian Thompson        21  David Lyons           15
            Points:     5             Points:     7
 
                                 Tue 15th Sep
-   The Hollies S &amp; SC            Gildersome
+   The Hollies S & SC            Gildersome
 Elaine Hill           21  David Rawson           9
 Carol Robinson        17  Sandra Deegan         21
 Ken Watkin            20  Michael Ross          21

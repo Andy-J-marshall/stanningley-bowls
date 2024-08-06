@@ -104,7 +104,6 @@ for league in leaguesDays:
                 opponentsName = ''
                 pairsGame = False
                 pairsPartner = ''
-                opponentTeam = ''
                 correctPlayerFound = False
                 homeGame = None
                 awayGame = None

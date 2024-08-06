@@ -15,7 +15,7 @@ Asa Briggs A         20   114   v.   Heckmondwike A        6    78
         Mon 10th Apr                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Tyersal A            15   106   v.   Drighlington A       11    94     
-Littlemoor S &amp; SC    15   108   v.   Eccleshill           11    99     
+Littlemoor S & SC    15   108   v.   Eccleshill           11    99     
 Wibsey A             22   120   v.   Wibsey B              4    75     
 Peel                 11    99   v.   West Bradford A      15   111     
 Drighlington B        6    82   v.   Royd House           20   111     
@@ -54,7 +54,7 @@ Asa Briggs B          3    71   v.   Asa Briggs A         23   121
 ------------------------------------------------------------------------------------------------------
 Royd House           14    97   v.   Peel                 12    94     
 West Bradford A      11   100   v.   Wibsey A             15   112     
-Wibsey B             19   123   v.   Littlemoor S &amp; SC     7   100     
+Wibsey B             19   123   v.   Littlemoor S & SC     7   100     
 Eccleshill           11   104   v.   Tyersal A            15   107     
 Drighlington A       24   119   v.   Drighlington B        2    59     
 ------------------------------------------------------------------------------------------------------
@@ -92,7 +92,7 @@ Crowghyll A          11    95   v.   Asa Briggs A         15   108
 ------------------------------------------------------------------------------------------------------
 Drighlington A       26   126   v.   Eccleshill            0    61     
 Tyersal A            20   116   v.   Wibsey B              6    84     
-Littlemoor S &amp; SC    25   126   v.   West Bradford A       1    68     
+Littlemoor S & SC    25   126   v.   West Bradford A       1    68     
 Wibsey A             23   124   v.   Royd House            3    69     
 Peel                 14   102   v.   Drighlington B       12   101     
 ------------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ Asa Briggs A         21   115   v.   Myrtle A              5    79
 ------------------------------------------------------------------------------------------------------
          Mon 8th May                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
-Royd House           11    87   v.   Littlemoor S &amp; SC    15   100     
+Royd House           11    87   v.   Littlemoor S & SC    15   100     
 West Bradford A      15   114   v.   Tyersal A            11   105     
 Wibsey B              7    78   v.   Drighlington A       19   111     
 Peel                  3    72   v.   Wibsey A             23   125     
@@ -169,7 +169,7 @@ Spen Victoria A      12   105   v.   Asa Briggs A         14   110
 Eccleshill           17   107   v.   Wibsey B              9    90     
 Drighlington A       24   126   v.   West Bradford A       2    74     
 Tyersal A            24   122   v.   Royd House            2    64     
-Littlemoor S &amp; SC    20   116   v.   Peel                  6    79     
+Littlemoor S & SC    20   116   v.   Peel                  6    79     
 Wibsey A             26   126   v.   Drighlington B        0    56     
 ------------------------------------------------------------------------------------------------------
         Mon 15th May                   Division 3 (City Sports)                       
@@ -206,7 +206,7 @@ Asa Briggs A         18   121   v.   Spen Victoria B       8   101
 ------------------------------------------------------------------------------------------------------
 Royd House            6    84   v.   Drighlington A       20   119     
 West Bradford A      15   108   v.   Eccleshill           11    96     
-Wibsey A             19   112   v.   Littlemoor S &amp; SC     7    82     
+Wibsey A             19   112   v.   Littlemoor S & SC     7    82     
 Peel                  3    81   v.   Tyersal A            23   126     
 Drighlington B       22   121   v.   Wibsey B              4    77     
 ------------------------------------------------------------------------------------------------------
@@ -256,7 +256,7 @@ Wibsey B             18   113   v.   West Bradford A       8    91
 Eccleshill           12    95   v.   Royd House           14    99     
 Drighlington A       22   112   v.   Peel                  4    65     
 Tyersal A            10    99   v.   Wibsey A             16   107     
-Littlemoor S &amp; SC    20   118   v.   Drighlington B        6    81     
+Littlemoor S & SC    20   118   v.   Drighlington B        6    81     
 ------------------------------------------------------------------------------------------------------
          Mon 5th Jun                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
@@ -291,7 +291,7 @@ Asa Briggs A         14   106   v.   Shipley Club A       12    97
         Mon 12th Jun                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Royd House           20   123   v.   Wibsey B              6    81     
-Littlemoor S &amp; SC    16   108   v.   Tyersal A            10    94     
+Littlemoor S & SC    16   108   v.   Tyersal A            10    94     
 Wibsey A             14   103   v.   Drighlington A       12    97     
 Peel                  5    70   v.   Eccleshill           21   110     
 Drighlington B       11   101   v.   West Bradford A      15   109     
@@ -336,7 +336,7 @@ Ladyhill             18   115   v.   Asa Briggs A          8    92
 West Bradford A      17   122   v.   Royd House            9   105     
 Wibsey B             16   114   v.   Peel                 10   102     
 Eccleshill           16   110   v.   Wibsey A             10   102     
-Drighlington A       21   121   v.   Littlemoor S &amp; SC     5    80     
+Drighlington A       21   121   v.   Littlemoor S & SC     5    80     
 Tyersal A            15    98   v.   Drighlington B       11    90     
 ------------------------------------------------------------------------------------------------------
         Mon 19th Jun                   Division 3 (City Sports)                       
@@ -374,7 +374,7 @@ Asa Briggs B          6    78   v.   Ladyhill             20   120
 Royd House            7    79   v.   Drighlington B       19   108     
 West Bradford A      24   124   v.   Peel                  2    67     
 Wibsey B             11    97   v.   Wibsey A             15   107     
-Eccleshill           20   122   v.   Littlemoor S &amp; SC     6    91     
+Eccleshill           20   122   v.   Littlemoor S & SC     6    91     
 Drighlington A       15   114   v.   Tyersal A            11   103     
 ------------------------------------------------------------------------------------------------------
         Mon 26th Jun                   Division 3 (City Sports)                       
@@ -410,7 +410,7 @@ Asa Briggs A         15   107   v.   Asa Briggs B         11    94
          Mon 3rd Jul                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Tyersal A            17   109   v.   Eccleshill            9    92     
-Littlemoor S &amp; SC    21   119   v.   Wibsey B              5    77     
+Littlemoor S & SC    21   119   v.   Wibsey B              5    77     
 Wibsey A             16   117   v.   West Bradford A      10    97     
 Peel                 10    90   v.   Royd House           16   102     
 Drighlington B                  v.   Drighlington A                    To Wed 12th Jul (Rearranged)
@@ -448,7 +448,7 @@ Asa Briggs A         26   126   v.   Crowghyll A           0    54
         Mon 10th Jul                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Royd House           11    99   v.   Wibsey A             15   106     
-West Bradford A      23   126   v.   Littlemoor S &amp; SC     3    81     
+West Bradford A      23   126   v.   Littlemoor S & SC     3    81     
 Wibsey B              6    93   v.   Tyersal A            20   123     
 Eccleshill                      v.   Drighlington A                    To Thu 20th Jul (Rearranged)
 Drighlington B       26   126   v.   Peel                  0    50     
@@ -493,7 +493,7 @@ Spen Victoria A      20   120   v.   Crowghyll A           6    82
 Eccleshill           20   119   v.   Drighlington B        6    87     
 Drighlington A       26   126   v.   Wibsey B              0    58     
 Tyersal A            17   119   v.   West Bradford A       9    98     
-Littlemoor S &amp; SC    17   105   v.   Royd House            9    87     
+Littlemoor S & SC    17   105   v.   Royd House            9    87     
 Wibsey A             23   119   v.   Peel                  3    66     
 ------------------------------------------------------------------------------------------------------
         Mon 17th Jul                   Division 3 (City Sports)                       
@@ -536,7 +536,7 @@ Asa Briggs A         17   118   v.   Spen Victoria A       9   109
 Royd House            9    96   v.   Tyersal A            17   116     
 West Bradford A       8    92   v.   Drighlington A       18   119     
 Wibsey B             11   107   v.   Eccleshill           15   116     
-Peel                  6    79   v.   Littlemoor S &amp; SC    20   117     
+Peel                  6    79   v.   Littlemoor S & SC    20   117     
 Drighlington B        6    94   v.   Wibsey A             20   123     
 ------------------------------------------------------------------------------------------------------
         Mon 24th Jul                   Division 3 (City Sports)                       
@@ -580,7 +580,7 @@ Wibsey B             10    95   v.   Drighlington B       16   108
 Eccleshill           15   105   v.   West Bradford A      11    91     
 Drighlington A       20   119   v.   Royd House            6    83     
 Tyersal A            26   126   v.   Peel                  0    56     
-Littlemoor S &amp; SC    15   106   v.   Wibsey A             11   102     
+Littlemoor S & SC    15   106   v.   Wibsey A             11   102     
 ------------------------------------------------------------------------------------------------------
         Mon 31st Jul                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
@@ -618,7 +618,7 @@ Royd House            7    91   v.   Eccleshill           19   116
 West Bradford A      22   125   v.   Wibsey B              4    76     
 Wibsey A             18   115   v.   Tyersal A             8    89     
 Peel                  8    95   v.   Drighlington A       18   118     
-Drighlington B       22   118   v.   Littlemoor S &amp; SC     4    70     
+Drighlington B       22   118   v.   Littlemoor S & SC     4    70     
 ------------------------------------------------------------------------------------------------------
          Mon 7th Aug                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
@@ -656,7 +656,7 @@ West Bradford A       5    81   v.   Drighlington B       21   120
 Wibsey B             19   118   v.   Royd House            7    89     
 Eccleshill                      v.   Peel                              To Tue 15th Aug (Rearranged)
 Drighlington A       18   119   v.   Wibsey A              8    94     
-Tyersal A            22   115   v.   Littlemoor S &amp; SC     4    72     
+Tyersal A            22   115   v.   Littlemoor S & SC     4    72     
 ------------------------------------------------------------------------------------------------------
         Mon 14th Aug                   Division 3 (City Sports)                       
 ------------------------------------------------------------------------------------------------------
@@ -701,7 +701,7 @@ Asa Briggs A         15   105   v.   Ladyhill             11    95
         Mon 21st Aug                   Division 2 (Robert Bland)                      
 ------------------------------------------------------------------------------------------------------
 Royd House           17   114   v.   West Bradford A       9    88     
-Littlemoor S &amp; SC     6    80   v.   Drighlington A       20   113     
+Littlemoor S & SC     6    80   v.   Drighlington A       20   113     
 Wibsey A             16   113   v.   Eccleshill           10   102     
 Peel                 20   117   v.   Wibsey B              6    80     
 Drighlington B        8   101   v.   Tyersal A            18   122     
@@ -752,7 +752,7 @@ Thornton B           16   103   v.   Wibsey C             10    84
   2.  Wibsey A             18   15    3    310
   3.  Tyersal A            18   13    5    299
   4.  Eccleshill           18    9    9    247
-  5.  Littlemoor S &amp; SC    18   10    8    226
+  5.  Littlemoor S & SC    18   10    8    226
   6.  West Bradford A      18    8   10    220
   7.  Drighlington B       18    7   11    215
   8.  Royd House           18    6   12    188
@@ -870,7 +870,7 @@ Peter Simpson       21  Andy Bailey          3
          Points:    15            Points:   11
 
 Division 2 (Robert Bla       Mon 10th Apr
-  Littlemoor S &amp; SC           Eccleshill
+  Littlemoor S & SC           Eccleshill
 Billy Thorpe        14  Peter Jefferson     21
 Graham Swithenbank  20  Peter Howroyd       21
 Angela Carter       21  Jim Head             8
@@ -1123,7 +1123,7 @@ John Ramsey         10  Gary Woodhead       21
          Points:    11            Points:   15
 
 Division 2 (Robert Bla       Mon 17th Apr
-       Wibsey B           Littlemoor S &amp; SC
+       Wibsey B           Littlemoor S & SC
 Charles Fell        18  Angela Carter       21
 George Gledhill     21  Terri Durrans       15
 Iain Brown          21  Billy Thorpe        17
@@ -1365,7 +1365,7 @@ Peter Simpson       21  Thomas Bailey       13
          Points:    20            Points:    6
 
 Division 2 (Robert Bla       Mon 24th Apr
-  Littlemoor S &amp; SC        West Bradford A
+  Littlemoor S & SC        West Bradford A
 Philip A Richards   21  Pat Edden            5
 Angela Carter       21  Val Riley           11
 Graham Swithenbank  21  John Ramsey         15
@@ -1585,7 +1585,7 @@ Ashley Southwell    21  Ronnie Bowdin       13
          Points:    21            Points:    5
 
 Division 2 (Robert Bla       Mon 8th May
-      Royd House          Littlemoor S &amp; SC
+      Royd House          Littlemoor S & SC
 Gillian Holt         6  Terri Durrans       21
 Andrew Matthews     21  Billy Thorpe        10
 Cliff White         15  David Burns         21
@@ -1860,7 +1860,7 @@ Simon Metcalfe      21  David Hogg          12
          Points:    24            Points:    2
 
 Division 2 (Robert Bla       Mon 15th May
-  Littlemoor S &amp; SC              Peel
+  Littlemoor S & SC              Peel
 David Burns         21  Tom Sayer            5
 Angela Carter       21  Michael Mathers      7
 Terri Durrans       21  Bob Denby           19
@@ -2080,7 +2080,7 @@ Kevin Burrage        9  Peter Jefferson     21
          Points:    15            Points:   11
 
 Division 2 (Robert Bla       Mon 22nd May
-       Wibsey A           Littlemoor S &amp; SC
+       Wibsey A           Littlemoor S & SC
 Kevin Arundale      21  Terri Durrans        8
 Michael Sansome     21  Billy Thorpe         5
 John Stevenson      14  Graham Swithenbank  21
@@ -2355,7 +2355,7 @@ Peter Simpson        7  Kevin Arundale      21
          Points:    10            Points:   16
 
 Division 2 (Robert Bla       Mon 5th Jun
-  Littlemoor S &amp; SC         Drighlington B
+  Littlemoor S & SC         Drighlington B
 Billy Thorpe        21  Brian Day            3
 Terri Durrans       19  Rod Fox             21
 David Burns         21  Richard Jones        9
@@ -2542,7 +2542,7 @@ Cliff White         21  Iain Brown           9
          Points:    20            Points:    6
 
 Division 2 (Robert Bla       Mon 12th Jun
-  Littlemoor S &amp; SC           Tyersal A
+  Littlemoor S & SC           Tyersal A
 Billy Thorpe        21  Gerry Smith         13
 Terry Laidlaw       21  Wendy Shimbles      13
 David Burns         21  John Smith          15
@@ -2817,7 +2817,7 @@ Allen Bottomley     21  John Stevenson      10
          Points:    16            Points:   10
 
 Division 2 (Robert Bla       Mon 19th Jun
-    Drighlington A        Littlemoor S &amp; SC
+    Drighlington A        Littlemoor S & SC
 Andy Bailey         21  Terri Durrans        5
 John Bailey         21  Philip A Richards   18
 Ann Billington      16  Graham Swithenbank  21
@@ -3059,7 +3059,7 @@ James Klenk         21  Ryan Exley          12
          Points:    11            Points:   15
 
 Division 2 (Robert Bla       Mon 26th Jun
-      Eccleshill          Littlemoor S &amp; SC
+      Eccleshill          Littlemoor S & SC
 Peter Jefferson     17  Angela Carter       21
 Donald Firth        21  Graham Swithenbank   3
 Jim Head            21  Billy Thorpe        18
@@ -3279,7 +3279,7 @@ Peter Simpson       16  Neil Mylan          21
          Points:    17            Points:    9
 
 Division 2 (Robert Bla       Mon 3rd Jul
-  Littlemoor S &amp; SC            Wibsey B
+  Littlemoor S & SC            Wibsey B
 Billy Thorpe        21  George Gledhill     13
 Graham Swithenbank  21  Iain Brown          12
 David Burns         21  Curtis Brown         5
@@ -3510,7 +3510,7 @@ Andrew Matthews     21  Ryan Exley           9
          Points:    11            Points:   15
 
 Division 2 (Robert Bla       Mon 10th Jul
-   West Bradford A        Littlemoor S &amp; SC
+   West Bradford A        Littlemoor S & SC
 Pat Edden           21  Terri Durrans       20
 John Ramsey         21  Billy Thorpe        11
 Val Riley           21  Graham Swithenbank   8
@@ -3774,7 +3774,7 @@ Gerry Smith         21  John Ramsey         13
          Points:    17            Points:    9
 
 Division 2 (Robert Bla       Mon 17th Jul
-  Littlemoor S &amp; SC           Royd House
+  Littlemoor S & SC           Royd House
 Graham Swithenbank  10  Andrew Matthews     21
 Billy Thorpe        21  Ivan Larkins        11
 David Burns         21  David Hogg          13
@@ -4027,7 +4027,7 @@ Iain Brown          14  Neil Mylan          21
          Points:    11            Points:   15
 
 Division 2 (Robert Bla       Mon 24th Jul
-         Peel             Littlemoor S &amp; SC
+         Peel             Littlemoor S & SC
 Bob Denby           21  Terri Durrans       13
 Michael Mathers      3  David Burns         21
 Keith Goodall       10  Billy Thorpe        21
@@ -4280,7 +4280,7 @@ Peter Simpson       21  Bob Denby           13
          Points:    26            Points:    0
 
 Division 2 (Robert Bla       Mon 31st Jul
-  Littlemoor S &amp; SC            Wibsey A
+  Littlemoor S & SC            Wibsey A
 Alan Mazurke        21  Michael Frost       15
 Billy Thorpe        12  Ryan Exley          21
 Maurice Carter      10  Gary Woodhead       21
@@ -4522,7 +4522,7 @@ Tony Southern       21  Andy Bailey         20
          Points:     8            Points:   18
 
 Division 2 (Robert Bla       Mon 7th Aug
-    Drighlington B        Littlemoor S &amp; SC
+    Drighlington B        Littlemoor S & SC
 David Scott         21  Graham Swithenbank   9
 Richard Jones       21  Terri Durrans        5
 Andrew Lee          21  Billy Thorpe        11
@@ -4753,7 +4753,7 @@ Derek Goor          21  Gary Woodhead       14
          Points:    18            Points:    8
 
 Division 2 (Robert Bla       Mon 14th Aug
-      Tyersal A           Littlemoor S &amp; SC
+      Tyersal A           Littlemoor S & SC
 Pam Lindley         21  Kath Mazurke         6
 Wendy Shimbles      21  Terri Durrans        6
 Gerry Smith         10  Angela Carter       21
@@ -4984,7 +4984,7 @@ Gillian Holt        18  Stuart Graham       21
          Points:    17            Points:    9
 
 Division 2 (Robert Bla       Mon 21st Aug
-  Littlemoor S &amp; SC         Drighlington A
+  Littlemoor S & SC         Drighlington A
 Angela Carter       21  John Bailey          8
 Billy Thorpe        12  David Billington    21
 Graham Swithenbank  11  Andy Bailey         21

@@ -98,7 +98,7 @@ for team in teamDays:
                         break
 
         #### TEAM STATS ####
-        # Find Stanningley games
+        # Find team's home and away games
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -106,7 +106,12 @@ for team in teamDays:
                 continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                # This ignores cup games hosted on Stanningley
+                if row.lower().count(displayTeamName.lower()) > 1:
+                    # This is a safeguard as the script won't work yet if the A team plays the B team.
+                    # If this happens, need to implement a way to differentiate between the two teams
+                    raise Exception('Team name appears more than once in the row')
+
+                # This ignores cup games hosted by the club
                 hostedCupGame = False
                 for cupText in cupTextList:
                     if cupText.lower() in row.lower():
@@ -114,7 +119,7 @@ for team in teamDays:
                         break
                 if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
-                    firstWord = words[0].lower() 
+                    firstWord = words[0].lower()
                     if firstWord == displayTeamName.lower():
                         homeRow.append(rowNumber)
                     else:
@@ -214,44 +219,14 @@ for team in teamDays:
                     homeAgg = int(matchAgg[0].strip())
                     awayAgg = int(matchAgg[1].strip())
 
-            # Finds the date of the match
-            gameDate = ''
-            if (rowNumber in homeRow or rowNumber in awayRow) and rowNumber > startingRow:
-                gameDateRowModifier = 1
-                if 'saturday leeds' in team.lower():
-                    gameDateRowModifier += 1
-
-                gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                
-                if type(gameDate) is str:
-                    if 'On ' in gameDate or '(from ' in gameDate:
-                        gameDateRowModifier += 1
-                        gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                        
-                else:
-                    gameDate = ''
-                    
-            if gameDate:
-                gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
-                gameDate = gameDateParts[2]
-                # This might happen if date if cup text includes the day
-                if len(gameDateParts) > 4:
-                    gameDate = gameDateParts[4]
-                
-                gameDate = gameDate.strip()
-                
-                # Sanity check on the date
-                dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
-                if dateContainsDayOfWeekBool is None:
-                    raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
-
             # Home games
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1].strip()
+                opponent = opponent.replace('&amp;', '&')
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + opponent + ' (' + gameDate + ')'
+                    ' ' + opponent
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGame:
@@ -273,7 +248,7 @@ for team in teamDays:
                 opponent = rowText.split(teamNameUsedForLeague)[0].strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + teamNameToUse + ' (' + gameDate + ')'
+                    ' ' + teamNameToUse
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGame:
@@ -371,7 +346,6 @@ for team in teamDays:
             opponentsName = ''
             pairsGame = False
             pairsPartner = ''
-            opponentTeam = ''
             homeGame = None
             awayGame = None
             cupGame = False
