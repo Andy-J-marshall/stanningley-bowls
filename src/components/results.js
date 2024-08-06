@@ -17,6 +17,7 @@ function Results(props) {
     // TODO the script is failing:
     // e.g. when Stanningley B playing against Stanningley A, it shows the same result for both A and B e.g. 2017 Thursday vets
     // e.g. when Stanningley is home and away team it does not display the away team e.g. 2017 Thursday vets
+    // TODO deal with & in script
 
     if (teamResults) {
         resultsArray = teamResults.map((team) => {
