@@ -106,6 +106,11 @@ for team in teamDays:
                 continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
+                if row.lower().count(displayTeamName.lower()) > 1:
+                    # This is a safeguard as the script won't work yet if the A team plays the B team.
+                    # If this happens, need to implement a way to differentiate between the two teams
+                    raise Exception('Team name appears more than once in the row')
+
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
                 for cupText in cupTextList:
@@ -114,7 +119,7 @@ for team in teamDays:
                         break
                 if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
-                    firstWord = words[0].lower() 
+                    firstWord = words[0].lower()
                     if firstWord == displayTeamName.lower():
                         homeRow.append(rowNumber)
                     else:
