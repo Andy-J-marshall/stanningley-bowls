@@ -2,7 +2,7 @@ import { Table } from 'react-bootstrap';
 import YearSelectDropdown from './yearSelectDropdown';
 import config from '../config';
 
-const teamName = config.teamNames.shortName;
+const teamName = config.teamNames.shortName.toLowerCase();
 
 function Results(props) {
     const stats = props.stats;
@@ -58,97 +58,93 @@ function Results(props) {
                 />
                 <h1>RESULTS</h1>
                 {resultsArray.map((resultTeam, idx) => {
-                    return (
-                        <div className="teamResult" key={idx}>
-                            {resultTeam.results.length > 0 && (
-                                <div>
-                                    <h3 style={{ paddingTop: '1rem' }}>
-                                        {resultTeam.day.toUpperCase()}
-                                    </h3>
-                                    <Table striped bordered hover>
-                                        <thead>
-                                            <tr>
-                                                <th>HOME</th>
-                                                <th></th>
-                                                <th></th>
-                                                <th>AWAY</th>
-                                            </tr>
-                                        </thead>
-                                        {resultTeam.results.map(
-                                            (result, idx) => {
-                                                let homeTeam =
-                                                    result.home.homeTeam;
-                                                let awayTeam =
-                                                    result.away.awayTeam;
-                                                if (homeTeam.toLowerCase().includes(teamName.toLowerCase())) {
-                                                    let aOrBHome = '';
-                                                    if (homeTeam.endsWith(' A')) {
-                                                        aOrBHome = ' A';
-                                                    }
-                                                    if (homeTeam.endsWith(' B')) {
-                                                        aOrBHome = ' B';
-                                                    }
-                                                    homeTeam = teamName.toUpperCase() + aOrBHome;
-                                                }
-                                                if (awayTeam.toLowerCase().includes(teamName.toLowerCase())) {
-                                                    let aOrBAway = '';
-                                                    if (awayTeam.endsWith(' A')) {
-                                                        aOrBAway = ' A';
-                                                    }
-                                                    if (awayTeam.endsWith(' B')) {
-                                                        aOrBAway = ' B';
-                                                    }
-                                                    awayTeam = teamName.toUpperCase() + aOrBAway;
-                                                }
-
-                                                return (
-                                                    <tbody key={idx}>
-                                                        <tr>
-                                                            <td
-                                                                style={{
-                                                                    width: '38%',
-                                                                }}
-                                                            >
-                                                                {homeTeam}
-                                                            </td>
-                                                            <td
-                                                                style={{
-                                                                    borderRightStyle:
-                                                                        'solid',
-                                                                    borderRightColor:
-                                                                        'black',
-                                                                }}
-                                                            >
-                                                                {
-                                                                    result.home
-                                                                        .homeScore
-                                                                }
-                                                            </td>
-                                                            <td>
-                                                                {
-                                                                    result.away
-                                                                        .awayScore
-                                                                }
-                                                            </td>
-                                                            <td
-                                                                style={{
-                                                                    width: '38%',
-                                                                }}
-                                                            >
-                                                                {awayTeam}
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                );
+                    if (resultTeam.results.length > 0) {
+                        return (
+                            <div className="teamResult" key={idx}>
+                                <h3 style={{ paddingTop: '1rem' }}>
+                                    {resultTeam.day.toUpperCase()}
+                                </h3>
+                                <Table striped bordered hover>
+                                    <thead>
+                                        <tr>
+                                            <th>HOME</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>AWAY</th>
+                                        </tr>
+                                    </thead>
+                                    {resultTeam.results.map((result, idx) => {
+                                        let homeTeam = result.home.homeTeam;
+                                        let awayTeam = result.away.awayTeam;
+                                        if (
+                                            homeTeam
+                                                .toLowerCase()
+                                                .includes(teamName)
+                                        ) {
+                                            let aOrBHome = '';
+                                            if (homeTeam.endsWith(' A')) {
+                                                aOrBHome = ' A';
                                             }
-                                        )}
-                                    </Table>
-                                </div>
-                            )}
-                            <br />
-                            <hr />
-                        </div>
-                    );
+                                            if (homeTeam.endsWith(' B')) {
+                                                aOrBHome = ' B';
+                                            }
+                                            homeTeam = `${teamName.toUpperCase()}${aOrBHome}`;
+                                        }
+                                        if (
+                                            awayTeam
+                                                .toLowerCase()
+                                                .includes(teamName)
+                                        ) {
+                                            let aOrBAway = '';
+                                            if (awayTeam.endsWith(' A')) {
+                                                aOrBAway = ' A';
+                                            }
+                                            if (awayTeam.endsWith(' B')) {
+                                                aOrBAway = ' B';
+                                            }
+                                            awayTeam = `${teamName.toUpperCase()}${aOrBAway}`;
+                                        }
+
+                                        return (
+                                            <tbody key={idx}>
+                                                <tr>
+                                                    <td
+                                                        style={{
+                                                            width: '38%',
+                                                        }}
+                                                    >
+                                                        {homeTeam}
+                                                    </td>
+                                                    <td
+                                                        style={{
+                                                            borderRightStyle:
+                                                                'solid',
+                                                            borderRightColor:
+                                                                'black',
+                                                        }}
+                                                    >
+                                                        {result.home.homeScore}
+                                                    </td>
+                                                    <td>
+                                                        {result.away.awayScore}
+                                                    </td>
+                                                    <td
+                                                        style={{
+                                                            width: '38%',
+                                                        }}
+                                                    >
+                                                        {awayTeam}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        );
+                                    })}
+                                </Table>
+                                <br />
+                                <hr />
+                            </div>
+                        );
+                    }
                 })}
                 <br />
                 <p className="footnote">Last Updated: {stats.lastUpdated}</p>
