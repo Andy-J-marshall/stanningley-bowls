@@ -1,7 +1,7 @@
 from datetime import date
 import os
-import utils
-teamDays = utils.teamDays
+import teamDetails
+teamDays = teamDetails.allDays
 
 year = str(date.today().year)
 
