@@ -98,7 +98,7 @@ for team in teamDays:
                         break
 
         #### TEAM STATS ####
-        # Find Stanningley games
+        # Find team's home and away games
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -106,7 +106,7 @@ for team in teamDays:
                 continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                # This ignores cup games hosted on Stanningley
+                # This ignores cup games hosted by the club
                 hostedCupGame = False
                 for cupText in cupTextList:
                     if cupText.lower() in row.lower():
@@ -218,6 +218,7 @@ for team in teamDays:
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1].strip()
+                opponent = opponent.replace('&amp;', '&')
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent
@@ -340,7 +341,6 @@ for team in teamDays:
             opponentsName = ''
             pairsGame = False
             pairsPartner = ''
-            opponentTeam = ''
             homeGame = None
             awayGame = None
             cupGame = False
