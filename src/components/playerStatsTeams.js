@@ -26,6 +26,7 @@ function PlayerStatsTeams(props) {
                                             Win percentage:{' '}
                                             {team.teamWinPerc.toFixed(0)}%
                                         </p>
+                                        <hr />
                                     </div>
                                 )
                         )}
