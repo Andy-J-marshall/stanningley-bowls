@@ -12,20 +12,20 @@ preferredTeamName = 'Stanningley'
 
 # Days played (duplicate days for second teams)
 teamDays = [
-            'Monday AireDale & Wharfedale', 
-            # 'Monday AireDale & Wharfedale (A)', 
-            # 'Monday AireDale & Wharfedale (B)', 
+            # 'Monday AireDale & Wharfedale', 
+            'Monday AireDale & Wharfedale (A)', 
+            'Monday AireDale & Wharfedale (B)', 
             'Tuesday Vets Leeds',
-            'Thursday Vets Leeds',
-            # 'Thursday Vets Leeds (A)',
-            # 'Thursday Vets Leeds (B)',
-            # 'Saturday Bradford',
-            # 'Saturday Bradford (A)', 
-            # 'Saturday Bradford (B)',
-            # 'Wednesday Pairs AireWharfe',
-            # 'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
             # 'Wednesday Half Holiday Bradford',
             # 'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
+            # 'Wednesday Pairs AireWharfe',
+            'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
+            # 'Thursday Vets Leeds',
+            'Thursday Vets Leeds (A)',
+            'Thursday Vets Leeds (B)',
+            # 'Saturday Bradford',
+            'Saturday Bradford (A)', 
+            'Saturday Bradford (B)',
             ]
 
 

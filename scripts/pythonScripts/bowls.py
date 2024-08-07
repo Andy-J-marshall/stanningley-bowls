@@ -177,6 +177,13 @@ for team in teamDays:
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt = 2
 
+
+            if 'saturday bradford' in team.lower() and 'B' not in team.lower():
+                rowsUpAdjustmentInt = 3
+
+            if 'monday airedale' in team.lower():
+                rowsUpAdjustmentInt = 3
+
             # AireWharfe pairs league display scores differently
             if 'pairs airewharfe' in team.lower():
                 rowsUpAdjustmentInt = 1
