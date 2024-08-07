@@ -37,13 +37,6 @@ test('Player records not show for Wednesday Pairs in 2023 as team did not exist'
   playerRecordsPage.playerRecordsDoNotExistForWednesdayPairsIn2023();
 });
 
-test('Club cup winner is displayed correctly', async () => {
-  await basePage.select2023Year();
-  playerRecordsPage.clubCupWinnerIsDisplayedFor2023();
-  await basePage.select2022Year();
-  playerRecordsPage.clubCupWinnerIsDisplayedFor2022();
-});
-
 test(`Records year dropdown appears if there are multiple years of records available`, async () => {
   await basePage.checkYearDropdownHasAllYearOptions(11);
 });

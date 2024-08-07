@@ -5,10 +5,9 @@ import config from '../config';
 
 function IndividualTeamStats(props) {
     const day = props.day;
+    const displayName = props.displayname; // this is used by TeamTabs component
     const stats = props.stats;
     const playerStats = props.playerStats;
-    const url = props.url;
-    const displayUrl = props.displayUrl;
 
     if (stats) {
         const {
@@ -52,6 +51,8 @@ function IndividualTeamStats(props) {
                 <div
                     id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}
                 >
+                    <br />
+                    <h4>{day.toUpperCase()}</h4>
                     <StatsTableDisplay
                         totalGames={totalGames}
                         totalWins={totalWins}
@@ -70,22 +71,8 @@ function IndividualTeamStats(props) {
                         leaguePosition={leaguePosition}
                     />
                     <br />
-                    <h3>PLAYERS</h3>
+                    <h4>PLAYERS</h4>
                     <PlayerStatSummary playerStats={allPlayerStats} />
-                    <br />
-                    {displayUrl && (
-                        <p className="footnote">
-                            The full league stats can be found on{' '}
-                            <a
-                                style={{ textDecoration: 'none' }}
-                                target="_blank"
-                                href={url}
-                            >
-                                Bowlsnet
-                            </a>
-                            .
-                        </p>
-                    )}
                 </div>
             );
         } else {
@@ -94,7 +81,7 @@ function IndividualTeamStats(props) {
     } else {
         return (
             <p>
-                {config.teamNames.shortName} did not play in this league for the
+                {config.teamNames.shortName} did not play on this day for the
                 selected year
             </p>
         );

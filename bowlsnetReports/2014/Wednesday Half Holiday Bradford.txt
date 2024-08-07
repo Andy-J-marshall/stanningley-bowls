@@ -18,7 +18,7 @@ Peel                    7    95   v.   Ladyhill A             19   120
 Tyersal A              18   119   v.   Clayton B               8    92     
 Horton A               18   108   v.   West A                  8    84     
 Oakenshaw A            18   119   v.   Queensbury B            8    93     
-Pudsey Littlemoor A    21   117   v.   Bradford Moor A         5    76     
+Littlemoor A    21   117   v.   Bradford Moor A         5    76     
 Brackenhill             9    93   v.   West Royd A            17   113     
 Eccleshill A           16   118   v.   Crowghyll B            10   105     
 ----------------------------------------------------------------------------
@@ -35,7 +35,7 @@ West B                 17   106   v.   Bowling A               9    86
 Bowling B              19   109   v.   Wibsey C                7    82     
 Calverley              12   105   v.   Eccleshill B           14   107     
 West Royd B            15   116   v.   Queensbury C           11   102     
-Bradford Moor B        18   113   v.   Pudsey Littlemoor B     8    84     
+Bradford Moor B        18   113   v.   Littlemoor B     8    84     
 Thornton B             10   105   v.   Oakenshaw C            16   116     
 Lister B                9    96   v.   Tyersal B              17   113     
 
@@ -54,7 +54,7 @@ Ladyhill A             17   111   v.   Clayton A               9    94
 Clayton B              14   113   v.   Eccleshill A           12   112     
 West Royd A            23   120   v.   Tyersal A               3    66     
 Bradford Moor A        20   107   v.   Brackenhill             6    70     
-Queensbury B            8    87   v.   Pudsey Littlemoor A    18   110     
+Queensbury B            8    87   v.   Littlemoor A    18   110     
 West A                 10   102   v.   Oakenshaw A            16   110     
 Crowghyll B            15   106   v.   Horton A               11    98     
 ----------------------------------------------------------------------------
@@ -70,7 +70,7 @@ Lister A               12    91   v.   Wibsey B               14    94
 ----------------------------------------------------------------------------
 Wibsey C               16   112   v.   Lister B               10    97     
 Oakenshaw C            20   117   v.   Bowling B               6    78     
-Pudsey Littlemoor B    20   113   v.   Thornton B              6    72     
+Littlemoor B    20   113   v.   Thornton B              6    72     
 Queensbury C            1    69   v.   Bradford Moor B        25   126     
 Eccleshill B           17   112   v.   West Royd B             9    90     
 Tyersal B              15   107   v.   Calverley              11    95     
@@ -90,7 +90,7 @@ Peel                   10   107   v.   Clayton A              16   120
 Tyersal A              14   104   v.   Bradford Moor A        12   102     
 Clayton B               7    92   v.   West Royd A            19   118     
 Oakenshaw A            18   115   v.   Crowghyll B             8    88     
-Pudsey Littlemoor A    24   125   v.   West A                  2    65     
+Littlemoor A    24   125   v.   West A                  2    65     
 Brackenhill             9    83   v.   Queensbury B           17   102     
 Eccleshill A           19   124   v.   Horton A                7   101     
 ----------------------------------------------------------------------------
@@ -104,7 +104,7 @@ West Bradford B        18   111   v.   Thornton A              8    87
 ----------------------------------------------------------------------------
          Wed 30th Apr                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
-Bowling B              10    80   v.   Pudsey Littlemoor B    16    88     
+Bowling B              10    80   v.   Littlemoor B    16    88     
 Wibsey C                6    78   v.   Oakenshaw C            20   116     
 West Royd B            11   101   v.   Tyersal B              15   110     
 Bradford Moor B         8    79   v.   Eccleshill B           18   102     
@@ -127,7 +127,7 @@ West Royd A            22   125   v.   Eccleshill A            4    76
 Bradford Moor A        19   111   v.   Clayton B               7    77     
 Queensbury B           16   110   v.   Tyersal A              10   102     
 West A                 15   105   v.   Brackenhill            11    95     
-Crowghyll B            15   115   v.   Pudsey Littlemoor A    11   101     
+Crowghyll B            15   115   v.   Littlemoor A    11   101     
 Horton A               11   104   v.   Oakenshaw A            15   110     
 ----------------------------------------------------------------------------
           Wed 7th May                     Division 3 (Peter Gilroy)        
@@ -141,7 +141,7 @@ Bowling A               9    90   v.   Salts                  17   109
           Wed 7th May                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Oakenshaw C            22   124   v.   Lister B                4    74     
-Pudsey Littlemoor B    24   121   v.   Wibsey C                2    64     
+Littlemoor B    24   121   v.   Wibsey C                2    64     
 Queensbury C            1    66   v.   Bowling B              25   126     
 Eccleshill B           19   112   v.   Thornton B              7    79     
 Tyersal B              10    90   v.   Bradford Moor B        16   106     
@@ -162,7 +162,7 @@ Peel                   12   102   v.   Stanningley            14   103
 Tyersal A              19   110   v.   West A                  7    76     
 Clayton B              15   103   v.   Queensbury B           11    99     
 West Royd A            15   108   v.   Bradford Moor A        11   106     
-Pudsey Littlemoor A    23   124   v.   Horton A                3    74     
+Littlemoor A    23   124   v.   Horton A                3    74     
 Brackenhill             4    76   v.   Crowghyll B            22   121     
 Eccleshill A           11   113   v.   Oakenshaw A            15   116     
 ----------------------------------------------------------------------------
@@ -178,7 +178,7 @@ West B                  8    89   v.   Wibsey B               18   111
 ----------------------------------------------------------------------------
 Bowling B              14   112   v.   Eccleshill B           12   106     
 Wibsey C               11    96   v.   Queensbury C           15   103     
-Oakenshaw C            17   105   v.   Pudsey Littlemoor B     9    88     
+Oakenshaw C            17   105   v.   Littlemoor B     9    88     
 Bradford Moor B        15   111   v.   Calverley              11   109     
 Thornton B             10    99   v.   Tyersal B              16   113     
 Lister B               11    97   v.   West Royd B            15   107     
@@ -200,7 +200,7 @@ Queensbury B           14   103   v.   West Royd A            12   100
 West A                 15   104   v.   Clayton B              11   102     
 Crowghyll B            19   113   v.   Tyersal A               7    86     
 Horton A               23   117   v.   Brackenhill             3    62     
-Oakenshaw A            17   114   v.   Pudsey Littlemoor A     9    93     
+Oakenshaw A            17   114   v.   Littlemoor A     9    93     
 ----------------------------------------------------------------------------
          Wed 21st May                     Division 3 (Peter Gilroy)        
 ----------------------------------------------------------------------------
@@ -212,7 +212,7 @@ Wibsey B               19   110   v.   Salts                   7    82
 ----------------------------------------------------------------------------
          Wed 21st May                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
-Pudsey Littlemoor B    25   126   v.   Lister B                1    69     
+Littlemoor B    25   126   v.   Lister B                1    69     
 Queensbury C           17   118   v.   Oakenshaw C             9    98     
 Eccleshill B           25   124   v.   Wibsey C                1    57     
 Tyersal B              15   102   v.   Bowling B              11    99     
@@ -236,7 +236,7 @@ Clayton B              19   113   v.   Crowghyll B             7    81
 West Royd A            16   100   v.   West A                 10    87     
 Bradford Moor A        22   126   v.   Queensbury B            4    86     
 Brackenhill             5    77   v.   Oakenshaw A            21   119     
-Eccleshill A           10   115   v.   Pudsey Littlemoor A    16   123     
+Eccleshill A           10   115   v.   Littlemoor A    16   123     
 ----------------------------------------------------------------------------
          Wed 28th May                     Division 3 (Peter Gilroy)        
 ----------------------------------------------------------------------------
@@ -251,7 +251,7 @@ West B                  3    68   v.   Salts                  23   124
 Bowling B               9    75   v.   Calverley              17    95     
 Wibsey C               14   100   v.   Tyersal B              12    96     
 Oakenshaw C            19   117   v.   Eccleshill B            7    89     
-Pudsey Littlemoor B    22   113   v.   Queensbury C            4    61     
+Littlemoor B    22   113   v.   Queensbury C            4    61     
 Thornton B              5    82   v.   West Royd B            21   119     
 Lister B                9    96   v.   Bradford Moor B        17   116     
 
@@ -272,7 +272,7 @@ West A                  5    72   v.   Bradford Moor A        21   117
 Crowghyll B            17   110   v.   West Royd A             9    82     
 Horton A               22   125   v.   Clayton B               4    82     
 Oakenshaw A            17   116   v.   Tyersal A               9    94     
-Pudsey Littlemoor A    24   125   v.   Brackenhill             2    67     
+Littlemoor A    24   125   v.   Brackenhill             2    67     
 ----------------------------------------------------------------------------
           Wed 4th Jun                     Division 3 (Peter Gilroy)        
 ----------------------------------------------------------------------------
@@ -285,7 +285,7 @@ Salts                  19   113   v.   West Bradford B         7    82
           Wed 4th Jun                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Queensbury C            7    85   v.   Lister B               19   115     
-Eccleshill B           17   121   v.   Pudsey Littlemoor B     9   105     
+Eccleshill B           17   121   v.   Littlemoor B     9   105     
 Tyersal B               1    68   v.   Oakenshaw C            25   126     
 Calverley              23   125   v.   Wibsey C                3    75     
 West Royd B            22   117   v.   Bowling B               4    71     
@@ -303,7 +303,7 @@ Peel                   19   114   v.   Queensbury A            7    92
 ----------------------------------------------------------------------------
          Wed 11th Jun                    Division 2 (Sheila Johnson)       
 ----------------------------------------------------------------------------
-Tyersal A               9   105   v.   Pudsey Littlemoor A    17   114     
+Tyersal A               9   105   v.   Littlemoor A    17   114     
 Clayton B               5    73   v.   Oakenshaw A            21   115     
 West Royd A            17   115   v.   Horton A                9    96     
 Bradford Moor A        16   106   v.   Crowghyll B            10    93     
@@ -323,7 +323,7 @@ West B                 19   118   v.   West Bradford B         7    87
 Bowling B              16   107   v.   Bradford Moor B        10    93     
 Wibsey C                6    74   v.   West Royd B            20   110     
 Oakenshaw C            17   117   v.   Calverley               9    91     
-Pudsey Littlemoor B    24   125   v.   Tyersal B               2    63     
+Littlemoor B    24   125   v.   Tyersal B               2    63     
 Queensbury C           22   110   v.   Eccleshill B            4    57     
 Lister B               12    96   v.   Thornton B             14   101     
 
@@ -342,7 +342,7 @@ Peel                    9    95   v.   Drighlington           17   114
 Crowghyll B            18   114   v.   Queensbury B            8    91     
 Horton A               11   103   v.   Bradford Moor A        15   109     
 Oakenshaw A            22   117   v.   West Royd A             4    68     
-Pudsey Littlemoor A    25   120   v.   Clayton B               1    54     
+Littlemoor A    25   120   v.   Clayton B               1    54     
 Brackenhill            10    91   v.   Tyersal A              16   110     
 Eccleshill A           13    97   v.   West A                 13    97     
 ----------------------------------------------------------------------------
@@ -357,7 +357,7 @@ West B                 11    96   v.   Lister A               15   104
          Wed 25th Jun                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Tyersal B              25   126   v.   Queensbury C            1    63     
-Calverley              19   115   v.   Pudsey Littlemoor B     7    85     
+Calverley              19   115   v.   Littlemoor B     7    85     
 West Royd B            19   109   v.   Oakenshaw C             7    83     
 Bradford Moor B        17   113   v.   Wibsey C                9    95     
 Thornton B             22   124   v.   Bowling B               4    78     
@@ -377,7 +377,7 @@ Drighlington            3    81   v.   Ladyhill A             23   126
 ----------------------------------------------------------------------------
 Tyersal A               8    96   v.   Eccleshill A           18   116     
 Clayton B              21   119   v.   Brackenhill             5    73     
-West Royd A            14   108   v.   Pudsey Littlemoor A    12   104     
+West Royd A            14   108   v.   Littlemoor A    12   104     
 Bradford Moor A        14    94   v.   Oakenshaw A            12    87     
 Queensbury B           19   120   v.   Horton A                7    97     
 West A                 19   119   v.   Crowghyll B             7    97     
@@ -395,7 +395,7 @@ Lister A               18   119   v.   Bowling A               8    95
 Bowling B              17   110   v.   Lister B                9    94     
 Wibsey C               12   101   v.   Thornton B             14   114     
 Oakenshaw C            16   100   v.   Bradford Moor B        10    88     
-Pudsey Littlemoor B    15    98   v.   West Royd B            11    94     
+Littlemoor B    15    98   v.   West Royd B            11    94     
 Queensbury C            7    75   v.   Calverley              19   108     
 Eccleshill B           18   108   v.   Tyersal B               8    85     
 
@@ -413,7 +413,7 @@ Ladyhill A             22   121   v.   Peel                    4    77
 ----------------------------------------------------------------------------
 Clayton B              12    99   v.   Tyersal A              14   100     
 West Royd A            26   126   v.   Brackenhill             0    50     
-Bradford Moor A         9    86   v.   Pudsey Littlemoor A    17   108     
+Bradford Moor A         9    86   v.   Littlemoor A    17   108     
 Queensbury B           12   107   v.   Oakenshaw A            14   113     
 West A                 12   111   v.   Horton A               14   111     
 Crowghyll B            12   104   v.   Eccleshill A           14   107     
@@ -430,7 +430,7 @@ Bowling A              26   126   v.   West B                  0    59
 ----------------------------------------------------------------------------
 Wibsey C               17   115   v.   Bowling B               9    94     
 Oakenshaw C            21   118   v.   Thornton B              5    79     
-Pudsey Littlemoor B    23   110   v.   Bradford Moor B         3    55     
+Littlemoor B    23   110   v.   Bradford Moor B         3    55     
 Queensbury C           16   100   v.   West Royd B            10    92     
 Eccleshill B            8    85   v.   Calverley              18   109     
 Tyersal B              12    95   v.   Lister B               14   101     
@@ -450,7 +450,7 @@ Peel                   14   103   v.   Royd House A           12   100
 Tyersal A              19   117   v.   West Royd A             7    86     
 Horton A               17   113   v.   Crowghyll B             9    98     
 Oakenshaw A            21   120   v.   West A                  5    82     
-Pudsey Littlemoor A    18   110   v.   Queensbury B            8    86     
+Littlemoor A    18   110   v.   Queensbury B            8    86     
 Brackenhill            13   101   v.   Bradford Moor A        13   101     
 Eccleshill A           26   126   v.   Clayton B               0    58     
 ----------------------------------------------------------------------------
@@ -468,7 +468,7 @@ Bowling B               8    83   v.   Oakenshaw C            18   107
 Calverley              21   120   v.   Tyersal B               5    81     
 West Royd B             7    94   v.   Eccleshill B           19   121     
 Bradford Moor B        21   122   v.   Queensbury C            5    86     
-Thornton B             20   120   v.   Pudsey Littlemoor B     6    81     
+Thornton B             20   120   v.   Littlemoor B     6    81     
 Lister B               13    89   v.   Wibsey C               13    89     
 
 ----------------------------------------------------------------------------
@@ -486,7 +486,7 @@ Clayton A              18   112   v.   Peel                    8    90
 West Royd A            26   126   v.   Clayton B               0    42     
 Bradford Moor A        20   123   v.   Tyersal A               6    89     
 Queensbury B           22   122   v.   Brackenhill             4    79     
-West A                  3    81   v.   Pudsey Littlemoor A    23   126     
+West A                  3    81   v.   Littlemoor A    23   126     
 Crowghyll B            10    99   v.   Oakenshaw A            16   117     
 Horton A               14   107   v.   Eccleshill A           12   103     
 ----------------------------------------------------------------------------
@@ -501,7 +501,7 @@ Bowling A               6    89   v.   Wibsey B               20   124
          Wed 23rd Jul                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Oakenshaw C            20   116   v.   Wibsey C                6    79     
-Pudsey Littlemoor B    20   112   v.   Bowling B               6    73     
+Littlemoor B    20   112   v.   Bowling B               6    73     
 Queensbury C            7    92   v.   Thornton B             19   120     
 Eccleshill B           14   106   v.   Bradford Moor B        12   103     
 Tyersal B               9    79   v.   West Royd B            17   107     
@@ -522,7 +522,7 @@ Peel                   17   122   v.   Wibsey A                9   109
 Tyersal A              17   112   v.   Queensbury B            9    96     
 Clayton B               4    73   v.   Bradford Moor A        22   122     
 Oakenshaw A            17   104   v.   Horton A                9    89     
-Pudsey Littlemoor A    24   126   v.   Crowghyll B             2    70     
+Littlemoor A    24   126   v.   Crowghyll B             2    70     
 Brackenhill            10    90   v.   West A                 16   107     
 Eccleshill A           14   108   v.   West Royd A            12   107     
 ----------------------------------------------------------------------------
@@ -537,7 +537,7 @@ West B                  9    91   v.   Oakenshaw B            17   115
          Wed 30th Jul                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Bowling B              12   100   v.   Queensbury C           14   106     
-Wibsey C               15    98   v.   Pudsey Littlemoor B    11    92     
+Wibsey C               15    98   v.   Littlemoor B    11    92     
 West Royd B            14   106   v.   Calverley              12   102     
 Bradford Moor B        18   116   v.   Tyersal B               8    98     
 Thornton B              6    94   v.   Eccleshill B           20   123     
@@ -559,7 +559,7 @@ Bradford Moor A        21   123   v.   West Royd A             5    82
 Queensbury B           18   119   v.   Clayton B               8    91     
 West A                 11    96   v.   Tyersal A              15   105     
 Crowghyll B            21   114   v.   Brackenhill             5    70     
-Horton A                6    83   v.   Pudsey Littlemoor A    20   114     
+Horton A                6    83   v.   Littlemoor A    20   114     
 Oakenshaw A            15   109   v.   Eccleshill A           11   103     
 ----------------------------------------------------------------------------
           Wed 6th Aug                     Division 3 (Peter Gilroy)        
@@ -572,7 +572,7 @@ Wibsey B               21   120   v.   West B                  5    81
 ----------------------------------------------------------------------------
           Wed 6th Aug                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
-Pudsey Littlemoor B    14   101   v.   Oakenshaw C            12    96     
+Littlemoor B    14   101   v.   Oakenshaw C            12    96     
 Queensbury C           11    88   v.   Wibsey C               15    96     
 Eccleshill B           20   110   v.   Bowling B               6    80     
 Tyersal B              11   105   v.   Thornton B             15   112     
@@ -594,7 +594,7 @@ Peel                   13    94   v.   Asa Briggs B           13    95
 Tyersal A              20   115   v.   Crowghyll B             6    75     
 Clayton B              14   105   v.   West A                 12   103     
 West Royd A            25   126   v.   Queensbury B            1    67     
-Pudsey Littlemoor A    21   113   v.   Oakenshaw A             5    75     
+Littlemoor A    21   113   v.   Oakenshaw A             5    75     
 Brackenhill             6    78   v.   Horton A               20   114     
 Eccleshill A           12   117   v.   Bradford Moor A        14   119     
 ----------------------------------------------------------------------------
@@ -613,7 +613,7 @@ Wibsey C               11   103   v.   Eccleshill B           15   105
 Oakenshaw C            25   122   v.   Queensbury C            1    53     
 Bradford Moor B        12    93   v.   West Royd B            14    99     
 Thornton B             11    96   v.   Calverley              15   104     
-Lister B                6    79   v.   Pudsey Littlemoor B    20   118     
+Lister B                6    79   v.   Littlemoor B    20   118     
 
 ----------------------------------------------------------------------------
          Wed 20th Aug                      Division 1 (Ed Foster)          
@@ -632,7 +632,7 @@ West A                 14   115   v.   West Royd A            12   108
 Crowghyll B            22   125   v.   Clayton B               4    80     
 Horton A               15   111   v.   Tyersal A              11   103     
 Oakenshaw A            22   119   v.   Brackenhill             4    74     
-Pudsey Littlemoor A    26   126   v.   Eccleshill A            0    34     
+Littlemoor A    26   126   v.   Eccleshill A            0    34     
 ----------------------------------------------------------------------------
          Wed 20th Aug                     Division 3 (Peter Gilroy)        
 ----------------------------------------------------------------------------
@@ -644,7 +644,7 @@ Salts                  16   115   v.   West B                 10    99
 ----------------------------------------------------------------------------
          Wed 20th Aug                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
-Queensbury C           17   103   v.   Pudsey Littlemoor B     9    88     
+Queensbury C           17   103   v.   Littlemoor B     9    88     
 Eccleshill B           17   104   v.   Oakenshaw C             9    85     
 Tyersal B              18   119   v.   Wibsey C                8    95     
 Calverley              17   106   v.   Bowling B               9    86     
@@ -667,7 +667,7 @@ Tyersal A              20   122   v.   Oakenshaw A             6    87
 Clayton B              11    97   v.   Horton A               15   111     
 West Royd A            22   119   v.   Crowghyll B             4    76     
 Bradford Moor A        13   105   v.   West A                 13   103     
-Brackenhill            14    88   v.   Pudsey Littlemoor A    12    83     
+Brackenhill            14    88   v.   Littlemoor A    12    83     
 Eccleshill A           12    98   v.   Queensbury B           14   109     
 ----------------------------------------------------------------------------
          Wed 27th Aug                     Division 3 (Peter Gilroy)        
@@ -683,7 +683,7 @@ West B                 11   108   v.   Thornton A             15   109
 Bowling B              16   117   v.   West Royd B            10   103     
 Wibsey C                5    73   v.   Calverley              21   122     
 Oakenshaw C            18   117   v.   Tyersal B               8    91     
-Pudsey Littlemoor B    21   109   v.   Eccleshill B            5    71     
+Littlemoor B    21   109   v.   Eccleshill B            5    71     
 Thornton B             23   126   v.   Bradford Moor B         3    82     
 Lister B                6    90   v.   Queensbury C           20   125     
 
@@ -703,7 +703,7 @@ West A                 10    99   v.   Queensbury B           16   116
 Crowghyll B            15   100   v.   Bradford Moor A        11    90     
 Horton A               14   113   v.   West Royd A            12   102     
 Oakenshaw A            15   115   v.   Clayton B              11   102     
-Pudsey Littlemoor A    23   125   v.   Tyersal A               3    71     
+Littlemoor A    23   125   v.   Tyersal A               3    71     
 Brackenhill             7    82   v.   Eccleshill A           19   115     
 ----------------------------------------------------------------------------
           Wed 3rd Sep                     Division 3 (Peter Gilroy)        
@@ -717,7 +717,7 @@ West Bradford B        17   110   v.   West B                  9    95
           Wed 3rd Sep                        Division 4 (Walker)           
 ----------------------------------------------------------------------------
 Eccleshill B           22   119   v.   Queensbury C            4    75     
-Tyersal B               4    78   v.   Pudsey Littlemoor B    22   122     
+Tyersal B               4    78   v.   Littlemoor B    22   122     
 Calverley              15   110   v.   Oakenshaw C            11   104     
 West Royd B            22   116   v.   Wibsey C                4    67     
 Bradford Moor B        23   114   v.   Bowling B               3    58     
@@ -736,7 +736,7 @@ Drighlington           20   123   v.   Peel                    6    83
          Wed 10th Sep                    Division 2 (Sheila Johnson)       
 ----------------------------------------------------------------------------
 Tyersal A              17   110   v.   Brackenhill             9    93     
-Clayton B               4    90   v.   Pudsey Littlemoor A    22   126     
+Clayton B               4    90   v.   Littlemoor A    22   126     
 West Royd A            22   123   v.   Oakenshaw A             4    79     
 Bradford Moor A        19   113   v.   Horton A                7    87     
 Queensbury B           23   125   v.   Crowghyll B             3    75     
@@ -755,7 +755,7 @@ Lister A               22   126   v.   West B                  4    86
 Bowling B               7    80   v.   Thornton B             19   114     
 Wibsey C               15   110   v.   Bradford Moor B        11   105     
 Oakenshaw C            23   125   v.   West Royd B             3    70     
-Pudsey Littlemoor B    23   124   v.   Calverley               3    72     
+Littlemoor B    23   124   v.   Calverley               3    72     
 Queensbury C           11    97   v.   Tyersal B              15   111     
 Eccleshill B           23   122   v.   Lister B                3    71     
 
@@ -774,7 +774,7 @@ Peel                   13   100   v.   Crowghyll A            13   100
 Crowghyll B            15   109   v.   West A                 11    95     
 Horton A               17   116   v.   Queensbury B            9   101     
 Oakenshaw A            19   122   v.   Bradford Moor A         7    97     
-Pudsey Littlemoor A    20   119   v.   West Royd A             6    85     
+Littlemoor A    20   119   v.   West Royd A             6    85     
 Brackenhill            12   101   v.   Clayton B              14   106     
 Eccleshill A           19   118   v.   Tyersal A               7    83     
 ----------------------------------------------------------------------------
@@ -790,7 +790,7 @@ West B                  5    72   v.   Ladyhill B             21   117
 ----------------------------------------------------------------------------
 Tyersal B              11   103   v.   Eccleshill B           15   113     
 Calverley              23   126   v.   Queensbury C            3    80     
-West Royd B            17   113   v.   Pudsey Littlemoor B     9    97     
+West Royd B            17   113   v.   Littlemoor B     9    97     
 Bradford Moor B         8   100   v.   Oakenshaw C            18   118     
 Thornton B             17   107   v.   Wibsey C                9    91     
 Lister B               14    98   v.   Bowling B              12    91     
@@ -818,7 +818,7 @@ Lister B               14    98   v.   Bowling B              12    91
                                Matches     Pnts
  Pos  Team                   Pl    W    L    For
 ====  ====================  ===  ===  ===  =====  
-  1.  Pudsey Littlemoor A    22   18    4    426
+  1.  Littlemoor A    22   18    4    426
   2.  Oakenshaw A            22   18    4    346
   3.  West Royd A            22   13    9    343
   4.  Bradford Moor A        22   14    6    334
@@ -853,7 +853,7 @@ Lister B               14    98   v.   Bowling B              12    91
 ====  ====================  ===  ===  ===  =====  
   1.  Oakenshaw C            22   17    5    377
   2.  Calverley              22   16    6    363
-  3.  Pudsey Littlemoor B    22   14    8    357
+  3.  Littlemoor B    22   14    8    357
   4.  Eccleshill B           22   17    5    346
   5.  Bradford Moor B        22   12   10    313
   6.  West Royd B            22   13    9    311
@@ -966,7 +966,7 @@ David Hammond      20  John Armitage         21
          Points:   18              Points:    8
 
 Division 2 (Sheila Jo        Wed 16th Apr
- Pudsey Littlemoor A       Bradford Moor A
+ Littlemoor A       Bradford Moor A
 Kath Mazurke       21  Kenneth Smith         12
 Margaret Slater    21  Brenda Chaffer        15
 Kath Bywell (a)    21  Michael Holleran       9
@@ -1087,7 +1087,7 @@ Ian Coulthard      21  Leslie Springham       6
          Points:   15              Points:   11
 
  Division 4 (Walker)         Wed 16th Apr
-   Bradford Moor B       Pudsey Littlemoor B
+   Bradford Moor B       Littlemoor B
 Marjorie Leeming   18  Ian Hibbert           21
 Brian Parkin       12  Michael Barr          21
 Shirley Hudson     21  Ray Mears              7
@@ -1219,7 +1219,7 @@ Derek Briggs       13  Madeline Gamble       21
          Points:   20              Points:    6
 
 Division 2 (Sheila Jo        Wed 23rd Apr
-    Queensbury B         Pudsey Littlemoor A
+    Queensbury B         Littlemoor A
 John Armitage       7  Alan Mazurke          21
 Marion Ingham      21  Kath Mazurke           9
 Trevor Smith        5  Bob Scott             21
@@ -1329,7 +1329,7 @@ Geoff Hanson       18  Violet Rodgers        21
          Points:   20              Points:    6
 
  Division 4 (Walker)         Wed 23rd Apr
- Pudsey Littlemoor B          Thornton B
+ Littlemoor B          Thornton B
 Michael Barr       21  Margaret Sutcliffe     4
 Ian Hibbert        21  Moira Ridewood        11
 Brian Stott        21  Barry Harrison         7
@@ -1472,7 +1472,7 @@ Malcolm Calam      14  Philip Robinson       21
          Points:   18              Points:    8
 
 Division 2 (Sheila Jo        Wed 30th Apr
- Pudsey Littlemoor A            West A
+ Littlemoor A            West A
 Margaret Slater    21  Jeff Gott             10
 Angela Carter (a)  21  Kath Standing         12
 Kath Mazurke       21  Don Wilson             7
@@ -1560,7 +1560,7 @@ Simon Muncaster    21  Eric Farr              6
          Points:   18              Points:    8
 
  Division 4 (Walker)         Wed 30th Apr
-      Bowling B          Pudsey Littlemoor B
+      Bowling B          Littlemoor B
 Ann Drake           4  Billy Thorpe          21
 Violet Rodgers      7  Michael Barr          21
 Sheila Krysik      19  Ian Hibbert           21
@@ -1736,7 +1736,7 @@ Don Wilson         12  Kathy Wilford         21
          Points:   15              Points:   11
 
 Division 2 (Sheila Jo        Wed 7th May
-     Crowghyll B         Pudsey Littlemoor A
+     Crowghyll B         Littlemoor A
 Philip Robinson    13  Angela Carter (a)     21
 Malcolm Throup     21  Margaret Slater       13
 Sheila Chaplin     21  Bob Scott             10
@@ -1824,7 +1824,7 @@ Ernest Tiffany     21  Ken Nicholls           6
          Points:   22              Points:    4
 
  Division 4 (Walker)         Wed 7th May
- Pudsey Littlemoor B           Wibsey C
+ Littlemoor B           Wibsey C
 Steve Smith        21  David Booth           11
 Billy Thorpe       21  Rita Mackrill          7
 Michael Barr       21  Karen Brame           14
@@ -1978,7 +1978,7 @@ Terry Williams     14  Trevor Dunwell        21
          Points:   15              Points:   11
 
 Division 2 (Sheila Jo        Wed 14th May
- Pudsey Littlemoor A           Horton A
+ Littlemoor A           Horton A
 Alan Mazurke       19  Eileen Willoughby     21
 Bob Scott          21  Roy Dennison (a)       5
 Kath Bywell (a)    21  David Lee (a)         18
@@ -2088,7 +2088,7 @@ Karen Brame        21  Stuart McGuffie       14
          Points:   11              Points:   15
 
  Division 4 (Walker)         Wed 14th May
-     Oakenshaw C         Pudsey Littlemoor B
+     Oakenshaw C         Littlemoor B
 Les Kear            5  Billy Thorpe          21
 Eric Oldroyd       16  Michael Barr          21
 John Tiffany       21  Steve Smith           14
@@ -2253,7 +2253,7 @@ Roy Dennison (a)   21  Graham Wilkinson       7
          Points:   23              Points:    3
 
 Division 2 (Sheila Jo        Wed 21st May
-     Oakenshaw A         Pudsey Littlemoor A
+     Oakenshaw A         Littlemoor A
 Stuart England     13  Margaret Slater       21
 Marian Firth       21  Kath Mazurke          15
 Malcolm Calam      21  Kath Bywell (a)        9
@@ -2319,7 +2319,7 @@ John Stevenson     21  Peter Smith           16
          Points:   19              Points:    7
 
  Division 4 (Walker)         Wed 21st May
- Pudsey Littlemoor B           Lister B
+ Littlemoor B           Lister B
 Barry Correll      21  Len Seaton            17
 Alan Parker        21  Joan Seaton           17
 Michael Barr       21  Harold Barber         11
@@ -2506,7 +2506,7 @@ Madeline Gamble    21  David Hammond         14
          Points:    5              Points:   21
 
 Division 2 (Sheila Jo        Wed 28th May
-    Eccleshill A         Pudsey Littlemoor A
+    Eccleshill A         Littlemoor A
 Brian Conway (a)   20  Angela Carter (a)     21
 Malcolm Hamilton   20  Kath Mazurke          21
 Graham Foster      17  Bob Scott             21
@@ -2605,7 +2605,7 @@ Allan Johnson      12  John Knight           21
          Points:   19              Points:    7
 
  Division 4 (Walker)         Wed 28th May
- Pudsey Littlemoor B         Queensbury C
+ Littlemoor B         Queensbury C
 Michael Barr       18  Judy Hogg             21
 Billy Thorpe       21  Stuart McGuffie        1
 Brian Stott        21  Saville Kershaw        4
@@ -2759,7 +2759,7 @@ Ted Piskozub       16  Simon Metcalfe        21
          Points:   17              Points:    9
 
 Division 2 (Sheila Jo        Wed 4th Jun
- Pudsey Littlemoor A         Brackenhill
+ Littlemoor A         Brackenhill
 Margaret Slater    21  Jackie Wilkinson       3
 Kath Bywell (a)    21  Gordon McLennon        5
 Alan Mazurke       20  Alan Holdsworth       21
@@ -2836,7 +2836,7 @@ Alan Haigh          7  Ken Nicholls          21
          Points:    7              Points:   19
 
  Division 4 (Walker)         Wed 4th Jun
-    Eccleshill B         Pudsey Littlemoor B
+    Eccleshill B         Littlemoor B
 Alan Wright        19  Michael Barr          21
 John Keighley      21  Alan Parker           11
 Tony Whiteoak      21  Clifford Francis      19
@@ -2957,7 +2957,7 @@ Donald Firth       21  Brian Hemingway        8
          Points:   19              Points:    7
 
 Division 2 (Sheila Jo        Wed 11th Jun
-      Tyersal A          Pudsey Littlemoor A
+      Tyersal A          Littlemoor A
 John Waugh         15  Bob Scott             21
 Terry Wilsdon      21  Kath Bywell (a)        9
 Eddie Foster       18  Alan Mazurke          21
@@ -3111,7 +3111,7 @@ Allan Johnson      18  Roy Whiteley          21
          Points:   17              Points:    9
 
  Division 4 (Walker)         Wed 11th Jun
- Pudsey Littlemoor B          Tyersal B
+ Littlemoor B          Tyersal B
 Alan Parker        21  Sheila Bairstow        3
 Brian Stott        21  Gordon King           12
 Steve Smith        21  Joan Reid             12
@@ -3243,7 +3243,7 @@ Marian Firth       21  John Hainsworth        4
          Points:   22              Points:    4
 
 Division 2 (Sheila Jo        Wed 25th Jun
- Pudsey Littlemoor A          Clayton B
+ Littlemoor A          Clayton B
 Kath Mazurke       21  Nona Brogden           5
 Angela Carter (a)  21  Marie Kitson           9
 Bob Scott          21  Freda Topham          10
@@ -3342,7 +3342,7 @@ William Conroy     21  Terry Keeys            2
          Points:   25              Points:    1
 
  Division 4 (Walker)         Wed 25th Jun
-      Calverley          Pudsey Littlemoor B
+      Calverley          Littlemoor B
 John Spilsbury     21  Michael Barr          12
 Geoff Dixon        14  Billy Thorpe          21
 Barry Briggs       17  Clifford Francis      21
@@ -3485,7 +3485,7 @@ David Lord         15  Kathy Wilford         21
          Points:   21              Points:    5
 
 Division 2 (Sheila Jo        Wed 2nd Jul
-     West Royd A         Pudsey Littlemoor A
+     West Royd A         Littlemoor A
 Aubrey Coldrey     17  Kath Mazurke          21
 Geoff Lacey        14  Alan Mazurke          21
 Margaret Gardner   21  Margaret Slater       19
@@ -3617,7 +3617,7 @@ Alan Cousen         6  Alan Naylor           21
          Points:   16              Points:   10
 
  Division 4 (Walker)         Wed 2nd Jul
- Pudsey Littlemoor B         West Royd B
+ Littlemoor B         West Royd B
 Billy Thorpe       21  Colin Pontefract       8
 Clifford Francis   21  Barbara Hunt           5
 Steve Smith        21  Margaret Jeffrey      19
@@ -3738,7 +3738,7 @@ Alan Layfield      21  Kathy Wilford          6
          Points:   26              Points:    0
 
 Division 2 (Sheila Jo        Wed 9th Jul
-   Bradford Moor A       Pudsey Littlemoor A
+   Bradford Moor A       Littlemoor A
 Kenneth Smith      10  Angela Carter (a)     21
 Brenda Chaffer     21  Margaret Slater       17
 Graham Wood         7  Alan Mazurke          21
@@ -3859,7 +3859,7 @@ Allan Johnson      21  Moira Ridewood        12
          Points:   21              Points:    5
 
  Division 4 (Walker)         Wed 9th Jul
- Pudsey Littlemoor B       Bradford Moor B
+ Littlemoor B       Bradford Moor B
 Michael Barr       21  Marjorie Leeming       1
 Billy Thorpe       21  Janet Gatenby         10
 Clifford Francis   21  John Waite             8
@@ -4002,7 +4002,7 @@ David Hammond      21  Kath Standing         15
          Points:   21              Points:    5
 
 Division 2 (Sheila Jo        Wed 16th Jul
- Pudsey Littlemoor A         Queensbury B
+ Littlemoor A         Queensbury B
 Margaret Slater    21  Marion Ingham         15
 Kath Mazurke       17  Chloe Hirst           21
 Bob Scott          21  Michael Clare         13
@@ -4134,7 +4134,7 @@ John Waite         21  Stuart McGuffie        7
          Points:   21              Points:    5
 
  Division 4 (Walker)         Wed 16th Jul
-     Thornton B          Pudsey Littlemoor B
+     Thornton B          Littlemoor B
 Anita Lyman        18  Billy Thorpe          21
 Moira Ridewood     21  Michael Barr          15
 Tony Lyman         21  Brian Stott           10
@@ -4255,7 +4255,7 @@ Barbara Wardman    21  Jackie Wilkinson      15
          Points:   22              Points:    4
 
 Division 2 (Sheila Jo        Wed 23rd Jul
-       West A            Pudsey Littlemoor A
+       West A            Littlemoor A
 Jeff Gott          17  Margaret Slater       21
 Audrey Healy       15  Alan Mazurke          21
 Kath Standing      16  Bob Scott             21
@@ -4354,7 +4354,7 @@ Ian Gomersal       21  Raymond Leadbetter     7
          Points:   20              Points:    6
 
  Division 4 (Walker)         Wed 23rd Jul
- Pudsey Littlemoor B          Bowling B
+ Littlemoor B          Bowling B
 Billy Thorpe       21  Ann Drake              7
 Michael Barr       21  Lesley Cordingley     13
 Brian Stott        21  Marjorie Whatmough     4
@@ -4508,7 +4508,7 @@ Malcolm Calam      14  David Lee (a)         21
          Points:   17              Points:    9
 
 Division 2 (Sheila Jo        Wed 30th Jul
- Pudsey Littlemoor A         Crowghyll B
+ Littlemoor A         Crowghyll B
 Alan Mazurke       21  Dennis Brown           6
 Kath Bywell (a)    21  Malcolm Throup        15
 William Swailes    21  Sheila Chaplin        12
@@ -4607,7 +4607,7 @@ Dennis Tiffany     21  Alan Haigh            17
          Points:   12              Points:   14
 
  Division 4 (Walker)         Wed 30th Jul
-      Wibsey C           Pudsey Littlemoor B
+      Wibsey C           Littlemoor B
 Rita Mackrill      21  Billy Thorpe          14
 Brian Turner        8  Terry Laidlaw         21
 David Booth        21  Barry Correll         11
@@ -4772,7 +4772,7 @@ Fred Dalby         14  Madeline Gamble       21
          Points:   21              Points:    5
 
 Division 2 (Sheila Jo        Wed 6th Aug
-      Horton A           Pudsey Littlemoor A
+      Horton A           Littlemoor A
 Pat Cates          19  Margaret Slater       21
 Jean Briggs         3  Bob Scott             21
 Joe Walbran        21  Kath Mazurke           9
@@ -4849,7 +4849,7 @@ John Stevenson     21  Bob Thompson          11
          Points:   21              Points:    5
 
  Division 4 (Walker)         Wed 6th Aug
- Pudsey Littlemoor B         Oakenshaw C
+ Littlemoor B         Oakenshaw C
 Clifford Francis   21  John Tiffany          19
 Billy Thorpe       21  Allan Johnson          8
 Terry Laidlaw      21  Eric Oldroyd           6
@@ -5014,7 +5014,7 @@ Terry Williams     21  Marion Ingham         19
          Points:   25              Points:    1
 
 Division 2 (Sheila Jo        Wed 13th Aug
- Pudsey Littlemoor A         Oakenshaw A
+ Littlemoor A         Oakenshaw A
 Alan Mazurke       21  Marian Firth          15
 Bob Scott           8  Malcolm Calam         21
 Margaret Slater    21  Gerald Bywater         5
@@ -5157,7 +5157,7 @@ Bill Fox           21  Jack Hawley            7
          Points:   11              Points:   15
 
  Division 4 (Walker)         Wed 13th Aug
-      Lister B           Pudsey Littlemoor B
+      Lister B           Littlemoor B
 Ken Nicholls       21  Billy Thorpe          20
 Len Seaton          4  Terry Laidlaw         21
 Norma Schofield    19  Clifford Francis      21
@@ -5289,7 +5289,7 @@ Harry Foster       14  Madeline Gamble       21
          Points:   22              Points:    4
 
 Division 2 (Sheila Jo        Wed 20th Aug
- Pudsey Littlemoor A         Eccleshill A
+ Littlemoor A         Eccleshill A
 Alan Mazurke       21  Wendy Ward             4
 Kath Bywell (a)    21  Graham Foster          0
 Margaret Slater    21  Brian Conway (a)       5
@@ -5355,7 +5355,7 @@ Peter Smith        14  John Metcalfe         21
          Points:   16              Points:   10
 
  Division 4 (Walker)         Wed 20th Aug
-    Queensbury C         Pudsey Littlemoor B
+    Queensbury C         Littlemoor B
 Judy Hogg          16  Steve Smith           21
 David Glass        21  Barry Correll         18
 Terry Keeys        21  Michael Barr          13
@@ -5531,7 +5531,7 @@ Brenda Chaffer     21  Jeff Gott              6
          Points:   13              Points:   13
 
 Division 2 (Sheila Jo        Wed 27th Aug
-     Brackenhill         Pudsey Littlemoor A
+     Brackenhill         Littlemoor A
 Marjorie Spaven     3  Alan Mazurke          21
 Carole Gibson      13  Margaret Slater       21
 Alan Holdsworth     9  Kath Bywell (a)       21
@@ -5641,7 +5641,7 @@ Ian Gomersal       21  Pam Fergus             3
          Points:   18              Points:    8
 
  Division 4 (Walker)         Wed 27th Aug
- Pudsey Littlemoor B         Eccleshill B
+ Littlemoor B         Eccleshill B
 Michael Barr       21  Jim Head              14
 Billy Thorpe       21  Mary Nellist           3
 Clifford Francis   21  Alan Wright           14
@@ -5784,7 +5784,7 @@ Ted Piskozub       21  Colin McGregor        15
          Points:   15              Points:   11
 
 Division 2 (Sheila Jo        Wed 3rd Sep
- Pudsey Littlemoor A          Tyersal A
+ Littlemoor A          Tyersal A
 Kath Bywell (a)    21  John Waugh             6
 Alan Mazurke       20  Terry Wilsdon         21
 Margaret Slater    21  Arnie Bennett          6
@@ -5872,7 +5872,7 @@ John Knight        21  David Glass            2
          Points:   22              Points:    4
 
  Division 4 (Walker)         Wed 3rd Sep
-      Tyersal B          Pudsey Littlemoor B
+      Tyersal B          Littlemoor B
 Pam Fergus          8  Billy Thorpe          21
 Joan Reid          15  Clifford Francis      21
 Sheila Bairstow     8  Brian Stott           21
@@ -6004,7 +6004,7 @@ Gerry Smith        21  Madeline Gamble       20
          Points:   17              Points:    9
 
 Division 2 (Sheila Jo        Wed 10th Sep
-      Clayton B          Pudsey Littlemoor A
+      Clayton B          Littlemoor A
 David Lord          6  Angela Carter (a)     21
 Donald Hodgson     15  Kath Mazurke          21
 Freda Topham       20  Kath Bywell (a)       21
@@ -6147,7 +6147,7 @@ Allan Johnson      21  Barbara Hunt           7
          Points:   23              Points:    3
 
  Division 4 (Walker)         Wed 10th Sep
- Pudsey Littlemoor B          Calverley
+ Littlemoor B          Calverley
 Bob Dove           21  John Spilsbury         5
 Terry Laidlaw      21  Geoff Dixon            9
 Billy Thorpe       21  Roy Whiteley          18
@@ -6279,7 +6279,7 @@ Marian Firth       21  Alan Farrow           17
          Points:   19              Points:    7
 
 Division 2 (Sheila Jo        Wed 17th Sep
- Pudsey Littlemoor A         West Royd A
+ Littlemoor A         West Royd A
 Bob Scott          21  Aubrey Coldrey        20
 Margaret Slater    21  Margaret Gardner      13
 Alan Mazurke       21  Alan Layfield         15
@@ -6389,7 +6389,7 @@ John Spilsbury     21  David Glass           11
          Points:   23              Points:    3
 
  Division 4 (Walker)         Wed 17th Sep
-     West Royd B         Pudsey Littlemoor B
+     West Royd B         Littlemoor B
 Ian Coulthard      20  Billy Thorpe          21
 Audrey Womersley    9  Terry Laidlaw         21
 Colin Pontefract   21  Bob Dove              20

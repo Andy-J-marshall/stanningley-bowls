@@ -41,7 +41,7 @@ function PlayerStats(props) {
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = collatePlayerStats(statsToUse, players, stats.statsYear);
+    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
 
     useEffect(() => {
         if (!loaded) {
@@ -169,7 +169,6 @@ function PlayerStats(props) {
                         name={playerName}
                         playersStats={statsToUse}
                         showStatSummary={showStatSummary}
-                        year={stats.statsYear}
                     ></Players>
                 </ListGroup>
             );
@@ -308,7 +307,9 @@ function PlayerStats(props) {
                 !showPairsOnlyBool &&
                 !showStatSummary &&
                 !showStatsSinceStart && (
-                    <p id='total-player-count'>Total players: {totalPlayersUsed}</p>
+                    <p id="total-player-count">
+                        Total players: {totalPlayersUsed}
+                    </p>
                 )}
 
             <PlayerStatsOptions
@@ -318,6 +319,9 @@ function PlayerStats(props) {
                 onlyPairsCallback={onlyPairsCallback}
                 playerSearchedFor={searchedPlayerName}
             />
+            <br />
+            <p className="footnote">Last Updated: {stats.lastUpdated}</p>
+            <br />
         </div>
     );
 }

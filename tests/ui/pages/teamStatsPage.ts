@@ -74,7 +74,7 @@ export class TeamStatsPage {
     this.totalOpponentAggValue = page.locator(
       '#combined-team-win-losses #totalOpponentAggValue'
     );
-    
+
     this.mondayGamesValue = page.locator(
       '#mondaycombinedleeds-team-results #totalGamesValue'
     );
@@ -142,9 +142,8 @@ export class TeamStatsPage {
     this.tuesVetsLeaguePositionValue = page.locator(
       '#tuesdayvetsleeds-team-results #leaguePosition'
     );
-
     this.wedPairsNoGamesPlayedMessage = page.locator(
-      '#team-stat-tabpane-wednesday-pairs p'
+      '#team-select-tabs-tabpane-wed p'
     );
   }
 
@@ -204,7 +203,7 @@ export class TeamStatsPage {
 
   teamStatsDoNotExistForWednesdayPairsIn2023() {
     expect(this.wedPairsNoGamesPlayedMessage).toContainText(
-      `${teamName} did not play in this league for the selected year`
+      `${teamName} did not play on this day for the selected year`
     );
   }
 }

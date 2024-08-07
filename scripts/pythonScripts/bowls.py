@@ -18,10 +18,9 @@ displayTeamName = teamDetails.preferredTeamName
 players = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 traitorPlayers = teamDetails.traitorPlayers
-playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True)
+playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, players)
 formatName = utils.formatName
 cupTextList = utils.cupText
-clubCupWinners = teamDetails.clubCupWinners
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
@@ -105,7 +104,8 @@ for team in teamDays:
                         break
 
         #### TEAM STATS ####
-        # Find Stanningley games
+        # TODO total agg for and against not working for Mon AW and Sat Brad
+        # Find team's home and away games
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -113,7 +113,12 @@ for team in teamDays:
                 continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                # This ignores cup games hosted on Stanningley
+                if row.lower().count(displayTeamName.lower()) > 1:
+                    # This is a safeguard as the script won't work yet if the A team plays the B team.
+                    # If this happens, need to implement a way to differentiate between the two teams
+                    raise Exception('Team name appears more than once in the row')
+
+                # This ignores cup games hosted by the club
                 hostedCupGame = False
                 for cupText in cupTextList:
                     if cupText.lower() in row.lower():
@@ -121,7 +126,7 @@ for team in teamDays:
                         break
                 if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
-                    firstWord = words[0].lower() 
+                    firstWord = words[0].lower()
                     if firstWord == displayTeamName.lower():
                         homeRow.append(rowNumber)
                     else:
@@ -260,6 +265,7 @@ for team in teamDays:
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1].strip()
+                opponent = opponent.replace('&amp;', '&')
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent
@@ -394,7 +400,6 @@ for team in teamDays:
             opponentsName = ''
             pairsGame = False
             pairsPartner = ''
-            opponentTeam = ''
             homeGame = None
             awayGame = None
             cupGame = False
@@ -568,16 +573,10 @@ for team in teamDays:
                         'Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
     file.close()
 
-if year in clubCupWinners:
-    clubCupWinner = clubCupWinners[year]
-else:
-    clubCupWinner = ''
-
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
-    'clubCupWinner': clubCupWinner,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
     'statsYear': year,
 }

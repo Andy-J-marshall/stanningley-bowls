@@ -100,6 +100,10 @@ def standardiseName(name):
     name = name.replace('\'B\'', '')
     name = name.replace(' \'b\'', '')
     name = name.replace('\'b\'', '')
+    name = name.replace(' \'B\'', '')
+    name = name.replace('\'B\'', '')
+    name = name.replace(' \'b\'', '')
+    name = name.replace('\'b\'', '')
     return name
 
 def formatName(name):
@@ -112,7 +116,7 @@ def returnTotalAggAvailablePerGame(team):
         return 31
     return 21
 
-def returnListOfPlayerStats(days, includeTeamData):
+def returnListOfPlayerStats(days, includeTeamData, players):
     players.sort()
     playerStats = {}
     for player in players:

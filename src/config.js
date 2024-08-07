@@ -90,7 +90,67 @@ const live = {
         'saturday leeds': 'Saturday',
         'saturday leeds (b)': 'Saturday B',
     },
-    leagues: 'Leeds Parks',
+    leagues: 'Leeds',
+    allTeamsInLeaguesSince2013: [
+        'monday combined leeds',
+        'monday airedale & wharfedale',
+        'monday airedale & wharfedale (a)',
+        'monday airedale & wharfedale (b)',
+        'tuesday vets leeds',
+        'tuesday leeds',
+        'wednesday half holiday leeds',
+        'wednesday half holiday bradford',
+        'wednesday half holiday bradford (a)',
+        'wednesday half holiday bradford (b)',
+        'wednesday pairs airewharfe',
+        'wednesday pairs airewharfe (a)',
+        'wednesday pairs airewharfe (b)',
+        'thursday vets leeds',
+        'thursday vets leeds (a)',
+        'thursday vets leeds (b)',
+        'saturday leeds',
+        'saturday leeds (a)',
+        'saturday leeds (b)',
+        'saturday bradford',
+        'saturday bradford (a)',
+        'saturday bradford (b)',
+    ],
+    historicTeamInfo: [
+        {
+            teamNames: [
+                'monday combined leeds',
+                'monday airedale & wharfedale',
+            ],
+            bTeamForLeagueBool: true,
+        },
+        {
+            teamNames: ['tuesday vets leeds'],
+            bTeamForLeagueBool: false,
+        },
+        {
+            teamNames: ['tuesday leeds'],
+            bTeamForLeagueBool: false,
+        },
+        {
+            teamNames: [
+                'wednesday half holiday leeds',
+                'wednesday half holiday bradford',
+            ],
+            bTeamForLeagueBool: true,
+        },
+        {
+            teamNames: ['wednesday pairs airewharfe'],
+            bTeamForLeagueBool: true,
+        },
+        {
+            teamNames: ['thursday vets leeds'],
+            bTeamForLeagueBool: true,
+        },
+        {
+            teamNames: ['saturday leeds', 'saturday bradford'],
+            bTeamForLeagueBool: true,
+        },
+    ],
 };
 
 export default live;

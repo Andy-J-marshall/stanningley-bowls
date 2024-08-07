@@ -1,4 +1,4 @@
-=== West Riding &amp; Spen Valley 2014
+=== West Riding & Spen Valley 2014
 === League Report
 
 
@@ -15,10 +15,10 @@ Crossgates A            8   155   v.   Shipley Club A          2    90
           Wed 9th Apr                            Division 1                
 ----------------------------------------------------------------------------
 Brighouse Sports A      3   126   v.   Pudsey BC B             8   142     
-Elland CA &amp; BC          6   137   v.   Hunslet Moor            4   135     
+Elland CA & BC          6   137   v.   Hunslet Moor            4   135     
 Lower Hopton            8   154   v.   Cleck Sports A          2   109     
 Rastrick 'A'            7   145   v.   Crossgates B            3   110     
-Thornhill CB &amp; C        8   145   v.   Pudsey Littlemoor       2   114     
+Thornhill CB & C        8   145   v.   Littlemoor       2   114     
 ----------------------------------------------------------------------------
           Wed 9th Apr                            Division 2                
 ----------------------------------------------------------------------------
@@ -54,10 +54,10 @@ Shipley Club A          9   167   v.   Spen Victoria A         1    96
          Wed 16th Apr                            Division 1                
 ----------------------------------------------------------------------------
 Cleck Sports A          2   129   v.   Brighouse Sports A      9   165     
-Crossgates B            6   137   v.   Elland CA &amp; BC          4   130     
+Crossgates B            6   137   v.   Elland CA & BC          4   130     
 Hunslet Moor            7   163   v.   Rastrick 'A'            3   116     
-Pudsey BC B             7   146   v.   Thornhill CB &amp; C        3   135     
-Pudsey Littlemoor       7   149   v.   Lower Hopton            3   115     
+Pudsey BC B             7   146   v.   Thornhill CB & C        3   135     
+Littlemoor       7   149   v.   Lower Hopton            3   115     
 ----------------------------------------------------------------------------
          Wed 16th Apr                            Division 2                
 ----------------------------------------------------------------------------
@@ -111,10 +111,10 @@ Spen Victoria A         6   145   v.   Eccleshill B            4   128
          Wed 23rd Apr                            Division 1                
 ----------------------------------------------------------------------------
 Brighouse Sports A      4   139   v.   Rastrick 'A'            7   156     
-Crossgates B            8   146   v.   Pudsey Littlemoor       2    99     
-Elland CA &amp; BC          4   120   v.   Pudsey BC B             7   131     
+Crossgates B            8   146   v.   Littlemoor       2    99     
+Elland CA & BC          4   120   v.   Pudsey BC B             7   131     
 Lower Hopton            4   122   v.   Hunslet Moor            7   133     
-Thornhill CB &amp; C        7   149   v.   Cleck Sports A          3    96     
+Thornhill CB & C        7   149   v.   Cleck Sports A          3    96     
 ----------------------------------------------------------------------------
          Wed 23rd Apr                            Division 2                
 ----------------------------------------------------------------------------
@@ -168,9 +168,9 @@ Shipley Club A          6   149   v.   Mirfield Old Bank A     4   140
          Wed 30th Apr                            Division 1                
 ----------------------------------------------------------------------------
 Cleck Sports A          8   147   v.   Crossgates B            2   140     
-Elland CA &amp; BC          8   159   v.   Brighouse Sports A      2   109     
-Hunslet Moor            9   152   v.   Thornhill CB &amp; C        1   109     
-Pudsey BC B             8   160   v.   Pudsey Littlemoor       2   122     
+Elland CA & BC          8   159   v.   Brighouse Sports A      2   109     
+Hunslet Moor            9   152   v.   Thornhill CB & C        1   109     
+Pudsey BC B             8   160   v.   Littlemoor       2   122     
 Rastrick 'A'            8   145   v.   Lower Hopton            2   129     
 ----------------------------------------------------------------------------
          Wed 30th Apr                            Division 2                
@@ -226,9 +226,9 @@ Spen Victoria A         8   156   v.   Hanging Heaton A        2   130
 ----------------------------------------------------------------------------
 Brighouse Sports A      3   121   v.   Hunslet Moor            8   140     
 Lower Hopton            4   136   v.   Pudsey BC B             7   137     
-Pudsey Littlemoor       7   147   v.   Cleck Sports A          3   101     
-Rastrick 'A'            3   138   v.   Elland CA &amp; BC          8   140     
-Thornhill CB &amp; C        7   144   v.   Crossgates B            3   134     
+Littlemoor       7   147   v.   Cleck Sports A          3   101     
+Rastrick 'A'            3   138   v.   Elland CA & BC          8   140     
+Thornhill CB & C        7   144   v.   Crossgates B            3   134     
 ----------------------------------------------------------------------------
           Wed 7th May                            Division 2                
 ----------------------------------------------------------------------------
@@ -285,8 +285,8 @@ Spen Victoria A         3   142   v.   Harold Club A           8   148
 Cleck Sports A          8   149   v.   Pudsey BC B             2   118     
 Crossgates B            7   150   v.   Hunslet Moor            3   120     
 Lower Hopton            7   131   v.   Brighouse Sports A      3   126     
-Pudsey Littlemoor       6   145   v.   Rastrick 'A'            4   120     
-Thornhill CB &amp; C        8   156   v.   Elland CA &amp; BC          2   107     
+Littlemoor       6   145   v.   Rastrick 'A'            4   120     
+Thornhill CB & C        8   156   v.   Elland CA & BC          2   107     
 ----------------------------------------------------------------------------
          Wed 14th May                            Division 2                
 ----------------------------------------------------------------------------
@@ -339,11 +339,11 @@ Shipley Club A          9   164   v.   Hanging Heaton A        1   124
 ----------------------------------------------------------------------------
          Wed 21st May                            Division 1                
 ----------------------------------------------------------------------------
-Brighouse Sports A      7   150   v.   Pudsey Littlemoor       3   127     
-Elland CA &amp; BC          8   163   v.   Lower Hopton            2   105     
+Brighouse Sports A      7   150   v.   Littlemoor       3   127     
+Elland CA & BC          8   163   v.   Lower Hopton            2   105     
 Hunslet Moor            7   140   v.   Cleck Sports A          3   122     
 Pudsey BC B             8   164   v.   Crossgates B            2   118     
-Rastrick 'A'            7   153   v.   Thornhill CB &amp; C        3   126     
+Rastrick 'A'            7   153   v.   Thornhill CB & C        3   126     
 ----------------------------------------------------------------------------
          Wed 21st May                            Division 2                
 ----------------------------------------------------------------------------
@@ -399,8 +399,8 @@ Spen Victoria A         2   122   v.   Pudsey BC A             9   147
 Cleck Sports A          8   154   v.   Rastrick 'A'            2   120     
 Crossgates B            7   140   v.   Brighouse Sports A      3   125     
 Pudsey BC B             6   133   v.   Hunslet Moor            4   127     
-Pudsey Littlemoor       4   125   v.   Elland CA &amp; BC          6   125     
-Thornhill CB &amp; C        7   141   v.   Lower Hopton            3   121     
+Littlemoor       4   125   v.   Elland CA & BC          6   125     
+Thornhill CB & C        7   141   v.   Lower Hopton            3   121     
 ----------------------------------------------------------------------------
          Wed 28th May                            Division 2                
 ----------------------------------------------------------------------------
@@ -453,9 +453,9 @@ Pudsey BC A             8   162   v.   Eccleshill B            2    92
 ----------------------------------------------------------------------------
           Wed 4th Jun                            Division 1                
 ----------------------------------------------------------------------------
-Brighouse Sports A      8   157   v.   Thornhill CB &amp; C        2   118     
-Elland CA &amp; BC          3   124   v.   Cleck Sports A          8   142     
-Hunslet Moor            9   158   v.   Pudsey Littlemoor       1   110     
+Brighouse Sports A      8   157   v.   Thornhill CB & C        2   118     
+Elland CA & BC          3   124   v.   Cleck Sports A          8   142     
+Hunslet Moor            9   158   v.   Littlemoor       1   110     
 Lower Hopton            3   138   v.   Crossgates B            8   139     
 Rastrick 'A'            7   161   v.   Pudsey BC B             3   126     
 ----------------------------------------------------------------------------
@@ -493,10 +493,10 @@ Mirfield Old Bank A     8   163   v.   Spen Victoria A         2   126
          Wed 25th Jun                            Division 1                
 ----------------------------------------------------------------------------
 Pudsey BC B             7   154   v.   Brighouse Sports A      3   146     
-Hunslet Moor            6   149   v.   Elland CA &amp; BC          4   139     
+Hunslet Moor            6   149   v.   Elland CA & BC          4   139     
 Cleck Sports A          6   138   v.   Lower Hopton            4   137     
 Crossgates B            9   159   v.   Rastrick 'A'            1   107     
-Pudsey Littlemoor       8   151   v.   Thornhill CB &amp; C        2   117     
+Littlemoor       8   151   v.   Thornhill CB & C        2   117     
 ----------------------------------------------------------------------------
          Wed 25th Jun                            Division 2                
 ----------------------------------------------------------------------------
@@ -532,10 +532,10 @@ Spen Victoria A         7   148   v.   Shipley Club A          3   123
           Wed 2nd Jul                            Division 1                
 ----------------------------------------------------------------------------
 Brighouse Sports A      6   140   v.   Cleck Sports A          4   114     
-Elland CA &amp; BC          6   141   v.   Crossgates B            4   139     
+Elland CA & BC          6   141   v.   Crossgates B            4   139     
 Rastrick 'A'            7   141   v.   Hunslet Moor            3   114     
-Thornhill CB &amp; C        9   163   v.   Pudsey BC B             1    87     
-Lower Hopton            9   162   v.   Pudsey Littlemoor       1   128     
+Thornhill CB & C        9   163   v.   Pudsey BC B             1    87     
+Lower Hopton            9   162   v.   Littlemoor       1   128     
 ----------------------------------------------------------------------------
           Wed 2nd Jul                            Division 2                
 ----------------------------------------------------------------------------
@@ -589,10 +589,10 @@ Eccleshill B            8   152   v.   Spen Victoria A         2   148
           Wed 9th Jul                            Division 1                
 ----------------------------------------------------------------------------
 Rastrick 'A'            7   154   v.   Brighouse Sports A      3   118     
-Pudsey Littlemoor       8   153   v.   Crossgates B            2   127     
-Pudsey BC B             6   140   v.   Elland CA &amp; BC          4   116     
+Littlemoor       8   153   v.   Crossgates B            2   127     
+Pudsey BC B             6   140   v.   Elland CA & BC          4   116     
 Hunslet Moor            8   148   v.   Lower Hopton            2   115     
-Cleck Sports A          9   162   v.   Thornhill CB &amp; C        1   105     
+Cleck Sports A          9   162   v.   Thornhill CB & C        1   105     
 ----------------------------------------------------------------------------
           Wed 9th Jul                            Division 2                
 ----------------------------------------------------------------------------
@@ -646,9 +646,9 @@ Mirfield Old Bank A    10   168   v.   Shipley Club A          0    96
          Wed 16th Jul                            Division 1                
 ----------------------------------------------------------------------------
 Crossgates B            9   153   v.   Cleck Sports A          1   121     
-Brighouse Sports A      8   161   v.   Elland CA &amp; BC          2   122     
-Thornhill CB &amp; C        9   166   v.   Hunslet Moor            1   114     
-Pudsey Littlemoor       2   142   v.   Pudsey BC B             9   143     
+Brighouse Sports A      8   161   v.   Elland CA & BC          2   122     
+Thornhill CB & C        9   166   v.   Hunslet Moor            1   114     
+Littlemoor       2   142   v.   Pudsey BC B             9   143     
 Lower Hopton            4   135   v.   Rastrick 'A'            7   149     
 ----------------------------------------------------------------------------
          Wed 16th Jul                            Division 2                
@@ -704,9 +704,9 @@ Hanging Heaton A        5   130   v.   Spen Victoria A         5   130
 ----------------------------------------------------------------------------
 Hunslet Moor            2   120   v.   Brighouse Sports A      9   151     
 Pudsey BC B             7   146   v.   Lower Hopton            3   119     
-Cleck Sports A          9   164   v.   Pudsey Littlemoor       1   115     
-Elland CA &amp; BC          5   132   v.   Rastrick 'A'            6   133     
-Crossgates B            6   149   v.   Thornhill CB &amp; C        4   127     
+Cleck Sports A          9   164   v.   Littlemoor       1   115     
+Elland CA & BC          5   132   v.   Rastrick 'A'            6   133     
+Crossgates B            6   149   v.   Thornhill CB & C        4   127     
 ----------------------------------------------------------------------------
          Wed 23rd Jul                            Division 2                
 ----------------------------------------------------------------------------
@@ -763,8 +763,8 @@ Harold Club A           7   151   v.   Spen Victoria A         3   119
 Pudsey BC B             6   133   v.   Cleck Sports A          4   131     
 Hunslet Moor            7   159   v.   Crossgates B            3   151     
 Brighouse Sports A      7   152   v.   Lower Hopton            3   125     
-Rastrick 'A'           10   168   v.   Pudsey Littlemoor       0    88     
-Elland CA &amp; BC          6   141   v.   Thornhill CB &amp; C        4   136     
+Rastrick 'A'           10   168   v.   Littlemoor       0    88     
+Elland CA & BC          6   141   v.   Thornhill CB & C        4   136     
 ----------------------------------------------------------------------------
          Wed 30th Jul                            Division 2                
 ----------------------------------------------------------------------------
@@ -817,11 +817,11 @@ Hanging Heaton A        9   165   v.   Shipley Club A          1   122
 ----------------------------------------------------------------------------
           Wed 6th Aug                            Division 1                
 ----------------------------------------------------------------------------
-Pudsey Littlemoor       8   153   v.   Brighouse Sports A      2   115     
-Lower Hopton            9   164   v.   Elland CA &amp; BC          1   120     
+Littlemoor       8   153   v.   Brighouse Sports A      2   115     
+Lower Hopton            9   164   v.   Elland CA & BC          1   120     
 Cleck Sports A          4   135   v.   Hunslet Moor            7   143     
 Crossgates B            9   164   v.   Pudsey BC B             1   125     
-Thornhill CB &amp; C        9   162   v.   Rastrick 'A'            1    91     
+Thornhill CB & C        9   162   v.   Rastrick 'A'            1    91     
 ----------------------------------------------------------------------------
           Wed 6th Aug                            Division 2                
 ----------------------------------------------------------------------------
@@ -877,8 +877,8 @@ Pudsey BC A             8   154   v.   Spen Victoria A         2   119
 Rastrick 'A'            8   158   v.   Cleck Sports A          2   107     
 Brighouse Sports A      7   148   v.   Crossgates B            3   131     
 Hunslet Moor            7   153   v.   Pudsey BC B             3   135     
-Elland CA &amp; BC          6   145   v.   Pudsey Littlemoor       4   142     
-Lower Hopton            7   127   v.   Thornhill CB &amp; C        3   112     
+Elland CA & BC          6   145   v.   Littlemoor       4   142     
+Lower Hopton            7   127   v.   Thornhill CB & C        3   112     
 ----------------------------------------------------------------------------
          Wed 13th Aug                            Division 2                
 ----------------------------------------------------------------------------
@@ -931,9 +931,9 @@ Eccleshill B            3   118   v.   Pudsey BC A             8   149
 ----------------------------------------------------------------------------
          Wed 20th Aug                            Division 1                
 ----------------------------------------------------------------------------
-Thornhill CB &amp; C        9   167   v.   Brighouse Sports A      1   129     
-Cleck Sports A          6   150   v.   Elland CA &amp; BC          4   124     
-Pudsey Littlemoor       9   159   v.   Hunslet Moor            1   136     
+Thornhill CB & C        9   167   v.   Brighouse Sports A      1   129     
+Cleck Sports A          6   150   v.   Elland CA & BC          4   124     
+Littlemoor       9   159   v.   Hunslet Moor            1   136     
 Crossgates B            4   132   v.   Lower Hopton            7   139     
 Pudsey BC B             6   149   v.   Rastrick 'A'            4   135     
 ----------------------------------------------------------------------------
@@ -983,13 +983,13 @@ Drighlington B          7   156   v.   Western Flatts          3   125
   1.  Pudsey BC B            18   13    5    102
   2.  Hunslet Moor           18   11    7    100
   3.  Rastrick 'A'           18   11    7     99
-  4.  Thornhill CB &amp; C       18    9    9     96
+  4.  Thornhill CB & C       18    9    9     96
   5.  Crossgates B           18    9    9     95
   6.  Cleck Sports A         18    8   10     90
   7.  Brighouse Sports A     18    8   10     88
-  8.  Elland CA &amp; BC         18    8   10     87
+  8.  Elland CA & BC         18    8   10     87
   9.  Lower Hopton           18    6   12     84
- 10.  Pudsey Littlemoor      18    7   11     75
+ 10.  Littlemoor      18    7   11     75
 
 === Division 2
                                Matches     Pnts
@@ -1141,7 +1141,7 @@ Kevin Wood          21  Richard Hodgson      13
          Points:     3            Points:     8
 
       Division 1              Wed 9th Apr
-    Elland CA &amp; BC           Hunslet Moor
+    Elland CA & BC           Hunslet Moor
 Steven R Kenworthy  12  Darren Cookson       21
 Adrian Kenyon       21  Gordon Monk           7
 Roger Stopford      21  Mick Hall             9
@@ -1180,7 +1180,7 @@ Anthony Sutcliffe   14  Garreth Lally        21
          Points:     7            Points:     3
 
       Division 1              Wed 9th Apr
-   Thornhill CB &amp; C        Pudsey Littlemoor
+   Thornhill CB & C        Littlemoor
 Ryan Mitchell       21  Terry Laidlaw        13
 D Makepeace         21  Alan Mazurke          5
 Simon Collomosse     8  Jim Moorin           21
@@ -1440,7 +1440,7 @@ Tony Quinn          16  Nigel Bloomer        21
          Points:     2            Points:     9
 
       Division 1             Wed 16th Apr
-     Crossgates B           Elland CA &amp; BC
+     Crossgates B           Elland CA & BC
 Steve Mason         21  Darren Hennessey     12
 Garreth Lally       21  David Greenwood      13
 Desmond Kearney     11  Anthony Dubaj        21
@@ -1466,7 +1466,7 @@ Darren Cookson      20  Anthony Sutcliffe    21
          Points:     7            Points:     3
 
       Division 1             Wed 16th Apr
-     Pudsey BC B           Thornhill CB &amp; C
+     Pudsey BC B           Thornhill CB & C
 Darren Crawley      21  Brian Sweeney        14
 Tom Lawrence        21  Ryan Mitchell        15
 Stewart Watson      21  Ben Sweeney          18
@@ -1479,7 +1479,7 @@ Richard Hodgson     10  Mark Thompson        21
          Points:     7            Points:     3
 
       Division 1             Wed 16th Apr
-  Pudsey Littlemoor          Lower Hopton
+  Littlemoor          Lower Hopton
 Alan Mazurke        18  Graham A Hirst       21
 Terry Laidlaw       21  Steve Pollard        10
 Jim Moorin          20  Martin Laycock       21
@@ -1843,7 +1843,7 @@ Robert Hopper       21  Anthony Sutcliffe    14
          Points:     4            Points:     7
 
       Division 1             Wed 23rd Apr
-     Crossgates B          Pudsey Littlemoor
+     Crossgates B          Littlemoor
 Desmond Kearney     13  Terry Laidlaw        21
 Colin Scorah        21  Alan Mazurke         13
 Steve Hartley       21  Jim Moorin            7
@@ -1856,7 +1856,7 @@ Ian Vickers         21  John Armitage         2
          Points:     8            Points:     2
 
       Division 1             Wed 23rd Apr
-    Elland CA &amp; BC            Pudsey BC B
+    Elland CA & BC            Pudsey BC B
 A Nicholson          3  Tom Lawrence         21
 Adrian Kenyon       10  Dave Smith           21
 Julian Robertshaw   11  Darren Crawley       21
@@ -1882,7 +1882,7 @@ Richard Gleghorn    10  Danny Towning        21
          Points:     4            Points:     7
 
       Division 1             Wed 23rd Apr
-   Thornhill CB &amp; C         Cleck Sports A
+   Thornhill CB & C         Cleck Sports A
 Amanda (L) Mitchell 21  Norman Swift         10
 Simon Collomosse    11  Andrew Page          21
 Ross Ingham         21  Tony Quinn            4
@@ -2246,7 +2246,7 @@ Robert Icke         12  Steve Mason          21
          Points:     8            Points:     2
 
       Division 1             Wed 30th Apr
-    Elland CA &amp; BC        Brighouse Sports A
+    Elland CA & BC        Brighouse Sports A
 Steven R Kenworthy  17  Nigel Bloomer        21
 Adrian Kenyon       21  Kevin Wood            9
 David Greenwood     21  Neal Hopper          10
@@ -2259,7 +2259,7 @@ Barry Nicholl       16  Glynn Hopper         21
          Points:     8            Points:     2
 
       Division 1             Wed 30th Apr
-     Hunslet Moor          Thornhill CB &amp; C
+     Hunslet Moor          Thornhill CB & C
 Robert Spink        21  Ross Ingham           8
 Luke Thompson        5  Andy Mitchell        21
 Darren Cookson      21  Ben Sweeney          14
@@ -2272,7 +2272,7 @@ Simon Walder        21  Steve Wainwright     20
          Points:     9            Points:     1
 
       Division 1             Wed 30th Apr
-     Pudsey BC B           Pudsey Littlemoor
+     Pudsey BC B           Littlemoor
 Joe Bray            21  Jim Moorin            3
 Connor Davis        21  John Armitage        20
 Jeff Ramsden        21  Craig Hebbard        17
@@ -2662,7 +2662,7 @@ Ian Newby           21  Darren Crawley       20
          Points:     4            Points:     7
 
       Division 1              Wed 7th May
-  Pudsey Littlemoor         Cleck Sports A
+  Littlemoor         Cleck Sports A
 Alan Mazurke        21  David Marshall        6
 Andy (A) Smith      21  Stuart Johnson        8
 Craig Hebbard       21  Michael Rhodes        5
@@ -2675,7 +2675,7 @@ Philip Vayro        21  Andrew Page          13
          Points:     7            Points:     3
 
       Division 1              Wed 7th May
-     Rastrick 'A'           Elland CA &amp; BC
+     Rastrick 'A'           Elland CA & BC
 Rachel Smyth        15  Steven R Kenworthy   21
 Frank Cullen        21  Eric Grant            4
 Anthony Sutcliffe   19  Russell Broadbent    21
@@ -2688,7 +2688,7 @@ David Wood          13  Roger Stopford       21
          Points:     3            Points:     8
 
       Division 1              Wed 7th May
-   Thornhill CB &amp; C          Crossgates B
+   Thornhill CB & C          Crossgates B
 Ross Ingham         14  Garreth Lally        21
 Mark Thompson       21  Steve Mason          16
 Brian Sweeney       21  Steve Hartley        18
@@ -3091,7 +3091,7 @@ Cliver Hirst        21  Kevin Wood           17
          Points:     7            Points:     3
 
       Division 1             Wed 14th May
-  Pudsey Littlemoor          Rastrick 'A'
+  Littlemoor          Rastrick 'A'
 Alan Mazurke        10  David Wood           21
 Philip Vayro        19  Frank Cullen         21
 Glen Pratt          21  Ian Swallow          12
@@ -3104,7 +3104,7 @@ Andy (A) Smith      15  Alastair Fox         21
          Points:     6            Points:     4
 
       Division 1             Wed 14th May
-   Thornhill CB &amp; C         Elland CA &amp; BC
+   Thornhill CB & C         Elland CA & BC
 Andy Mitchell       15  Adrian Kenyon        21
 Mark Thompson       21  Barry Nicholl        10
 Jason Woodhouse     21  David Greenwood      12
@@ -3455,7 +3455,7 @@ Ian Jacques         21  Tony Throup          10
          Points:     9            Points:     1
 
       Division 1             Wed 21st May
-  Brighouse Sports A       Pudsey Littlemoor
+  Brighouse Sports A       Littlemoor
 John Bloomer        18  Terry Laidlaw        21
 Nigel Bloomer       21  Philip Vayro         14
 Janet Hopper        11  Jim Moorin           21
@@ -3468,7 +3468,7 @@ Graham Roberts      16  Glen Pratt           21
          Points:     7            Points:     3
 
       Division 1             Wed 21st May
-    Elland CA &amp; BC           Lower Hopton
+    Elland CA & BC           Lower Hopton
 Steven R Kenworthy  21  Cliver Hirst         15
 Anthony Dubaj       21  Graham A Hirst        8
 Russell Broadbent   21  David Whitehead       6
@@ -3507,7 +3507,7 @@ Jeff Ramsden        18  Desmond Kearney      21
          Points:     8            Points:     2
 
       Division 1             Wed 21st May
-     Rastrick 'A'          Thornhill CB &amp; C
+     Rastrick 'A'          Thornhill CB & C
 David Wood          21  G Mountain           10
 Alastair Fox        14  Mark Thompson        21
 Ian Swallow         21  Ryan Mitchell        14
@@ -3897,7 +3897,7 @@ Connor Davis        21  *No Player*           0
          Points:     6            Points:     4
 
       Division 1             Wed 28th May
-  Pudsey Littlemoor         Elland CA &amp; BC
+  Littlemoor         Elland CA & BC
 Glen Pratt          11  Steven R Kenworthy   21
 Terry Laidlaw       21  Anthony Dubaj         9
 Andy (A) Smith      13  Roger Stopford       21
@@ -3910,7 +3910,7 @@ Jim Moorin          21  David Greenwood       7
          Points:     4            Points:     6
 
       Division 1             Wed 28th May
-   Thornhill CB &amp; C          Lower Hopton
+   Thornhill CB & C          Lower Hopton
 Ross Ingham         21  Graham A Hirst       19
 Jason Woodhouse     21  Steve Pollard         7
 Ryan Mitchell       12  Robert Maude         21
@@ -4261,7 +4261,7 @@ Ian Kemp            18  Rachel Telford       21
          Points:     8            Points:     2
 
       Division 1              Wed 4th Jun
-  Brighouse Sports A       Thornhill CB &amp; C
+  Brighouse Sports A       Thornhill CB & C
 John Bloomer        21  Mark Thompson        19
 Nigel Bloomer       21  Brian Sweeney         4
 Janet Hopper        21  G Mountain           13
@@ -4274,7 +4274,7 @@ Nigel Briggs        13  Andy Mitchell        21
          Points:     8            Points:     2
 
       Division 1              Wed 4th Jun
-    Elland CA &amp; BC          Cleck Sports A
+    Elland CA & BC          Cleck Sports A
 Steven R Kenworthy  13  John Ineson          21
 Andrew Balmforth    21  Norman Swift         19
 Barry Nicholl       11  John Barraclough     21
@@ -4287,7 +4287,7 @@ James Parkinson     20  Phil Brooke          21
          Points:     3            Points:     8
 
       Division 1              Wed 4th Jun
-     Hunslet Moor          Pudsey Littlemoor
+     Hunslet Moor          Littlemoor
 Phil Hill           21  Marc Armitage        17
 Danny Towning       21  Craig Hebbard        13
 Darren Cookson      21  Jim Moorin            9
@@ -4573,7 +4573,7 @@ Darren Crawley      19  David Southwell      21
          Points:     7            Points:     3
 
       Division 1             Wed 25th Jun
-     Hunslet Moor           Elland CA &amp; BC
+     Hunslet Moor           Elland CA & BC
 Darren Cookson      14  Andrew Balmforth     21
 Robert Spink        19  Roger Stopford       21
 Jim Bootland        21  Adrian Kenyon        17
@@ -4612,7 +4612,7 @@ Ashley Wilcock      12  Frank Cullen         21
          Points:     9            Points:     1
 
       Division 1             Wed 25th Jun
-  Pudsey Littlemoor        Thornhill CB &amp; C
+  Littlemoor        Thornhill CB & C
 John Armitage       21  Ryan Mitchell         8
 Philip Richards     21  Ben Sweeney          10
 Terry Laidlaw       21  Ross Ingham          10
@@ -4872,7 +4872,7 @@ Kevin Wood          21  Norman Swift          8
          Points:     6            Points:     4
 
       Division 1              Wed 2nd Jul
-    Elland CA &amp; BC           Crossgates B
+    Elland CA & BC           Crossgates B
 Steven R Kenworthy  18  Mick Wood            21
 Adrian Kenyon       21  Dave Tinker          11
 Anthony Dubaj       11  Garreth Lally        21
@@ -4898,7 +4898,7 @@ Anthony Sutcliffe   21  Graham Hainsworth    14
          Points:     7            Points:     3
 
       Division 1              Wed 2nd Jul
-   Thornhill CB &amp; C           Pudsey BC B
+   Thornhill CB & C           Pudsey BC B
 Andy Mitchell       21  Alan Bell             2
 Brian Sweeney       16  Paul Bowes           21
 Mark Thompson       21  Connor Davis          1
@@ -4911,7 +4911,7 @@ Ryan Mitchell       21  Tom Lawrence         20
          Points:     9            Points:     1
 
       Division 1              Wed 2nd Jul
-     Lower Hopton          Pudsey Littlemoor
+     Lower Hopton          Littlemoor
 Cliver Hirst        21  Glen Pratt           20
 Robert Maude        21  Terry Laidlaw        20
 Martin Laycock      21  Jim Moorin           14
@@ -5275,7 +5275,7 @@ Neil Broadbent      19  John Bloomer         21
          Points:     7            Points:     3
 
       Division 1              Wed 9th Jul
-  Pudsey Littlemoor          Crossgates B
+  Littlemoor          Crossgates B
 Alan Mazurke         8  Steve Mason          21
 Glen Pratt          21  Garreth Lally        20
 Terry Laidlaw       21  Desmond Kearney       9
@@ -5288,7 +5288,7 @@ Craig Hebbard       21  Ian Vickers          17
          Points:     8            Points:     2
 
       Division 1              Wed 9th Jul
-     Pudsey BC B            Elland CA &amp; BC
+     Pudsey BC B            Elland CA & BC
 Paul Bowes          21  David Greenwood       2
 Alan Bell            6  Adrian Kenyon        21
 Steve Emmett        21  Roger Stopford       12
@@ -5314,7 +5314,7 @@ Danny Towning       21  Robert Maude         16
          Points:     8            Points:     2
 
       Division 1              Wed 9th Jul
-    Cleck Sports A         Thornhill CB &amp; C
+    Cleck Sports A         Thornhill CB & C
 Jack Glazzard       21  Amanda (L) Mitchell   7
 John Ineson         21  Brian Sweeney         5
 Andrew Page         21  Andy Mitchell        13
@@ -5678,7 +5678,7 @@ Dave Tinker          6  Michael Rhodes       21
          Points:     9            Points:     1
 
       Division 1             Wed 16th Jul
-  Brighouse Sports A        Elland CA &amp; BC
+  Brighouse Sports A        Elland CA & BC
 John Bloomer        21  Andrew Balmforth     16
 Nigel Bloomer       21  Roger Stopford        3
 Alan Broadbent      21  Anthony Dubaj        12
@@ -5691,7 +5691,7 @@ Helen (Lad) Simpson 18  David Greenwood      21
          Points:     8            Points:     2
 
       Division 1             Wed 16th Jul
-   Thornhill CB &amp; C          Hunslet Moor
+   Thornhill CB & C          Hunslet Moor
 Jason Woodhouse     21  Graham Hainsworth    20
 G Mountain          21  Phil Hill            16
 Ryan Mitchell       21  Jim Bootland         12
@@ -5704,7 +5704,7 @@ Steve Wainwright    19  Danny Towning        21
          Points:     9            Points:     1
 
       Division 1             Wed 16th Jul
-  Pudsey Littlemoor           Pudsey BC B
+  Littlemoor           Pudsey BC B
 Terry Laidlaw        6  James Hanson         21
 Philip Richards     18  Paul Bowes           21
 Jim Moorin          18  Tom Lawrence         21
@@ -6094,7 +6094,7 @@ Paul Bowes          21  Richard Gleghorn     17
          Points:     7            Points:     3
 
       Division 1             Wed 23rd Jul
-    Cleck Sports A         Pudsey Littlemoor
+    Cleck Sports A         Littlemoor
 John Barraclough    21  Marc Armitage        20
 Phil Brooke         21  Jim Moorin           12
 Michael Rhodes      21  Craig Hebbard        10
@@ -6107,7 +6107,7 @@ Andrew Page         21  Glen Pratt            6
          Points:     9            Points:     1
 
       Division 1             Wed 23rd Jul
-    Elland CA &amp; BC           Rastrick 'A'
+    Elland CA & BC           Rastrick 'A'
 Russell Broadbent   21  Ian Swallow           8
 David Greenwood     21  Frank Cullen         11
 Steven R Kenworthy  21  Anthony Sutcliffe    16
@@ -6120,7 +6120,7 @@ A Nicholson          4  Alastair Fox         21
          Points:     5            Points:     6
 
       Division 1             Wed 23rd Jul
-     Crossgates B          Thornhill CB &amp; C
+     Crossgates B          Thornhill CB & C
 Mick Wood           21  Ryan Mitchell        16
 Dave Tinker         21  Steve Wainwright      9
 Chris Broughton     21  Ross Ingham          10
@@ -6523,7 +6523,7 @@ Kevin Wood          16  Robert Maude         21
          Points:     7            Points:     3
 
       Division 1             Wed 30th Jul
-     Rastrick 'A'          Pudsey Littlemoor
+     Rastrick 'A'          Littlemoor
 Jack Humpleby       21  Terry Laidlaw        15
 Joel Adby           21  Philip Richards      12
 Frank Cullen        21  John Armitage         3
@@ -6536,7 +6536,7 @@ David Wood          21  Philip Vayro         15
          Points:    10            Points:     0
 
       Division 1             Wed 30th Jul
-    Elland CA &amp; BC         Thornhill CB &amp; C
+    Elland CA & BC         Thornhill CB & C
 Adrian Kenyon       21  G Mountain            8
 Steven R Kenworthy  21  Brian Sweeney         8
 Roger Stopford      21  Jason Woodhouse      17
@@ -6887,7 +6887,7 @@ Michael Wood        21  Neil Nicholson       19
          Points:     9            Points:     1
 
       Division 1              Wed 6th Aug
-  Pudsey Littlemoor       Brighouse Sports A
+  Littlemoor       Brighouse Sports A
 Terry Laidlaw       21  Kevin Wood           11
 Philip Richards      8  Janet Hopper         21
 Jim Moorin          21  John Bloomer         11
@@ -6900,7 +6900,7 @@ Alan Mazurke        21  Helen (Lad) Simpson   9
          Points:     8            Points:     2
 
       Division 1              Wed 6th Aug
-     Lower Hopton           Elland CA &amp; BC
+     Lower Hopton           Elland CA & BC
 Cliver Hirst        21  Barry Nicholl         6
 Robert Maude        17  Adrian Kenyon        21
 David Whitehead     21  Stuart Carroll       15
@@ -6939,7 +6939,7 @@ Dave Tinker         17  Joe Bray             21
          Points:     9            Points:     1
 
       Division 1              Wed 6th Aug
-   Thornhill CB &amp; C          Rastrick 'A'
+   Thornhill CB & C          Rastrick 'A'
 Andy Mitchell       21  Trevor Heley          5
 Jason Woodhouse     15  Louise Whiteley      21
 Mark Thompson       21  David Wood           16
@@ -7329,7 +7329,7 @@ Danny Towning       21  Kevin Rankin          9
          Points:     7            Points:     3
 
       Division 1             Wed 13th Aug
-    Elland CA &amp; BC         Pudsey Littlemoor
+    Elland CA & BC         Littlemoor
 Adrian Kenyon       21  Alan Mazurke          9
 Anthony Dubaj       21  Jim Moorin           13
 Steven R Kenworthy  21  Andy (A) Smith       18
@@ -7342,7 +7342,7 @@ Nigel Mitchell      11  Craig Hebbard        21
          Points:     6            Points:     4
 
       Division 1             Wed 13th Aug
-     Lower Hopton          Thornhill CB &amp; C
+     Lower Hopton          Thornhill CB & C
 Cliver Hirst        21  Jason Woodhouse       8
 Robert Maude        21  D Makepeace           3
 Ian Newby           21  Mark Thompson        20
@@ -7693,7 +7693,7 @@ Andrew Howie        21  Jon Edmondson        13
          Points:     3            Points:     8
 
       Division 1             Wed 20th Aug
-   Thornhill CB &amp; C       Brighouse Sports A
+   Thornhill CB & C       Brighouse Sports A
 Jason Woodhouse     21  Janet Hopper          7
 Andy Mitchell       20  Nigel Bloomer        21
 Brian Sweeney       21  Robert Hopper        20
@@ -7706,7 +7706,7 @@ Ross Ingham         21  Alan Broadbent       15
          Points:     9            Points:     1
 
       Division 1             Wed 20th Aug
-    Cleck Sports A          Elland CA &amp; BC
+    Cleck Sports A          Elland CA & BC
 Michael Rhodes      21  David Greenwood      18
 John Barraclough    16  Anthony Dubaj        21
 Phil Brooke         21  A Nicholson           5
@@ -7719,7 +7719,7 @@ Mick Walton         17  Peter King           21
          Points:     6            Points:     4
 
       Division 1             Wed 20th Aug
-  Pudsey Littlemoor          Hunslet Moor
+  Littlemoor          Hunslet Moor
 Andy (A) Smith      21  Phil Hill            19
 Philip Vayro        21  Graham Hainsworth    14
 John Armitage       12  Danny Towning        21

@@ -8,15 +8,15 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
 Ladyhill 'B'                     23   193   v.   Greengates 'A'                    7   136                  
 Drighlington                     18   191   v.   Peel                             12   161                  
-Horsforth Woodside 'A'           21   180   v.   Littlemoor S &amp; SC 'B'             9   144                  
-Asa Briggs 'B'                   19   186   v.   Hipperholme &amp; Lightcliffe 'A'    11   168                  
+Horsforth Woodside 'A'           21   180   v.   Littlemoor S & SC 'B'             9   144                  
+Asa Briggs 'B'                   19   186   v.   Hipperholme & Lightcliffe 'A'    11   168                  
 Wyke 'B'                         20   189   v.   Hove Edge 'A'                    10   170                  
 Shipley Club 'B'                 25   202   v.   Hightown                          5   141                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 2nd Apr                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Pudsey 'C'                       22   190   v.   Rufford 'B'                       8   149                  
-Hollies S &amp; SC                   13   168   v.   Tyersal 'A'                      17   179                  
+Hollies S & SC                   13   168   v.   Tyersal 'A'                      17   179                  
 West Bradford 'A'                12   161   v.   South Leeds Cons                 18   179                  
 Harold Park                      16   156   v.   Crowghyll 'A'                    14   155                  
 Armley Cons                      19   178   v.   Harold Club                      11   156                  
@@ -48,25 +48,25 @@ Ladyhill 'A'                      3   148   v.   Pudsey 'A'                     
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 9th Apr                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Pudsey 'B'                       27   204   v.   Elland CA &amp; BC                    3   122                  
+Pudsey 'B'                       27   204   v.   Elland CA & BC                    3   122                  
 Akroydon Victoria 'A'            26   199   v.   Guiseley 'A'                      4   124                  
-Littlemoor S &amp; SC 'A'                       v.   Brighouse Sports 'B'                                       To Sat 23rd Jul (Rearranged)
+Littlemoor S & SC 'A'                       v.   Brighouse Sports 'B'                                       To Sat 23rd Jul (Rearranged)
 Rufford 'A'                      23   198   v.   Eccleshill 'B'                    7   150                  
 Cononley                         29   209   v.   Clayton 'B'                       1    93                  
-Brighouse Sports 'B'              7   150   v.   Littlemoor S &amp; SC 'A'            23   198                  From Sat 23rd Jul (Rearranged)
+Brighouse Sports 'B'              7   150   v.   Littlemoor S & SC 'A'            23   198                  From Sat 23rd Jul (Rearranged)
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 9th Apr                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Drighlington                     17   181   v.   Greengates 'A'                   13   173                  
 Horsforth Woodside 'A'           15   183   v.   Ladyhill 'B'                     15   174                  
 Asa Briggs 'B'                   17   180   v.   Peel                             13   168                  
-Wyke 'B'                         27   203   v.   Littlemoor S &amp; SC 'B'             3   130                  
-Shipley Club 'B'                 18   188   v.   Hipperholme &amp; Lightcliffe 'A'    12   162                  
+Wyke 'B'                         27   203   v.   Littlemoor S & SC 'B'             3   130                  
+Shipley Club 'B'                 18   188   v.   Hipperholme & Lightcliffe 'A'    12   162                  
 Hightown                         14   170   v.   Hove Edge 'A'                    16   178                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 9th Apr                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hollies S &amp; SC                   18   168   v.   Wibsey 'A'                       12   141                  
+Hollies S & SC                   18   168   v.   Wibsey 'A'                       12   141                  
 West Bradford 'A'                21   193   v.   Rufford 'B'                       9   159                  
 Harold Park                      21   192   v.   Tyersal 'A'                       9   150                  
 South Leeds Cons                 22   199   v.   Armley Cons                       8   152                  
@@ -91,7 +91,7 @@ Wibsey 'B'                        7   128   v.   Horsforth Woodside 'B'         
                Sat 9th Apr                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'B'                    24   194   v.   Queensbury 'B'                    6   134                  
-Hipperholme &amp; Lightcliffe 'B'    18   178   v.   Shelf                            12   164                  
+Hipperholme & Lightcliffe 'B'    18   178   v.   Shelf                            12   164                  
 Farsley                          18   184   v.   Cleckheaton Sports 'B'           12   159                  
 Guiseley 'C'                     18   168   v.   West Bradford 'B'                12   143                  
 West Royd                        23   196   v.   Horton                            7   150                  
@@ -115,16 +115,16 @@ Whitkirk                         23   189   v.   Ladyhill 'A'                   
               Sat 16th Apr                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      21   201   v.   Rufford 'A'                       9   168                  
-Eccleshill 'B'                   10   156   v.   Littlemoor S &amp; SC 'A'            20   183                  
+Eccleshill 'B'                   10   156   v.   Littlemoor S & SC 'A'            20   183                  
 Brighouse Sports 'B'             10   174   v.   Akroydon Victoria 'A'            20   190                  
 Guiseley 'A'                     18   183   v.   Pudsey 'B'                       12   164                  
-Elland CA &amp; BC                   13   169   v.   Cononley                         17   177                  
+Elland CA & BC                   13   169   v.   Cononley                         17   177                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 16th Apr                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    18   190   v.   Shipley Club 'B'                 12   176                  
-Hipperholme &amp; Lightcliffe 'A'    21   198   v.   Wyke 'B'                          9   155                  
-Littlemoor S &amp; SC 'B'            24   193   v.   Asa Briggs 'B'                    6   130                  
+Hipperholme & Lightcliffe 'A'    21   198   v.   Wyke 'B'                          9   155                  
+Littlemoor S & SC 'B'            24   193   v.   Asa Briggs 'B'                    6   130                  
 Peel                             19   180   v.   Horsforth Woodside 'A'           11   150                  
 Ladyhill 'B'                     24   194   v.   Drighlington                      6   136                  
 Greengates 'A'                   18   182   v.   Hightown                         12   169                  
@@ -134,7 +134,7 @@ Greengates 'A'                   18   182   v.   Hightown                       
 Crowghyll 'A'                    28   193   v.   Armley Cons                       2   104                  
 South Leeds Cons                 19   176   v.   Harold Park                      11   162                  
 Tyersal 'A'                      24   192   v.   West Bradford 'A'                 6   131                  
-Rufford 'B'                      22   195   v.   Hollies S &amp; SC                    8   138                  
+Rufford 'B'                      22   195   v.   Hollies S & SC                    8   138                  
 Wibsey 'A'                       26   201   v.   Pudsey 'C'                        4   124                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 16th Apr                                  Division 5 (Haigh)                                             
@@ -157,7 +157,7 @@ Cleckheaton Moorend              21   196   v.   Greengates 'B'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Horton                           20   174   v.   Guiseley 'C'                     10   142                  
 West Bradford 'B'                 9   146   v.   Farsley                          21   185                  
-Cleckheaton Sports 'B'           14   161   v.   Hipperholme &amp; Lightcliffe 'B'    16   167                  
+Cleckheaton Sports 'B'           14   161   v.   Hipperholme & Lightcliffe 'B'    16   167                  
 Shelf                            22   190   v.   Crowghyll 'B'                     8   151                  
 Queensbury 'B'                   12   138   v.   West Royd                        18   152                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -179,17 +179,17 @@ Crossgates                       24   186   v.   Ladyhill 'A'                   
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 30th Apr                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Elland CA &amp; BC                   22   191   v.   Guiseley 'A'                      8   141                  
+Elland CA & BC                   22   191   v.   Guiseley 'A'                      8   141                  
 Pudsey 'B'                       26   208   v.   Brighouse Sports 'B'              4   133                  
 Akroydon Victoria 'A'            28   197   v.   Eccleshill 'B'                    2   115                  
-Littlemoor S &amp; SC 'A'            22   191   v.   Clayton 'B'                       8   136                  
+Littlemoor S & SC 'A'            22   191   v.   Clayton 'B'                       8   136                  
 Rufford 'A'                      13   176   v.   Cononley                         17   185                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 30th Apr                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Ladyhill 'B'                     19   177   v.   Peel                             11   155                  
-Drighlington                     20   176   v.   Littlemoor S &amp; SC 'B'            10   153                  
-Horsforth Woodside 'A'           21   187   v.   Hipperholme &amp; Lightcliffe 'A'     9   156                  
+Drighlington                     20   176   v.   Littlemoor S & SC 'B'            10   153                  
+Horsforth Woodside 'A'           21   187   v.   Hipperholme & Lightcliffe 'A'     9   156                  
 Asa Briggs 'B'                   11   172   v.   Hove Edge 'A'                    19   189                  
 Wyke 'B'                         20   179   v.   Hightown                         10   142                  
 Shipley Club 'B'                 22   200   v.   Greengates 'A'                    8   154                  
@@ -198,7 +198,7 @@ Shipley Club 'B'                 22   200   v.   Greengates 'A'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Wibsey 'A'                       27   196   v.   Rufford 'B'                       3   114                  
 Pudsey 'C'                       13   176   v.   Tyersal 'A'                      17   182                  
-Hollies S &amp; SC                   14   172   v.   South Leeds Cons                 16   190                  
+Hollies S & SC                   14   172   v.   South Leeds Cons                 16   190                  
 West Bradford 'A'                11   159   v.   Crowghyll 'A'                    19   184                  
 Harold Park                      24   193   v.   Harold Club                       6   141                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -222,7 +222,7 @@ Bailiff Bridge 'A'               23   195   v.   Wibsey 'B'                     
 -------------------------------------------------------------------------------------------------------------------------------------------
 Queensbury 'B'                   16   172   v.   Shelf                            14   165                  
 Crowghyll 'B'                    21   185   v.   Cleckheaton Sports 'B'            9   152                  
-Hipperholme &amp; Lightcliffe 'B'    24   198   v.   West Bradford 'B'                 6   130                  
+Hipperholme & Lightcliffe 'B'    24   198   v.   West Bradford 'B'                 6   130                  
 Farsley                          24   198   v.   Horton                            6   133                  
 Guiseley 'C'                     21   179   v.   West Royd                         9   143                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -246,22 +246,22 @@ Ladyhill 'A'                     17   183   v.   Shipley Club 'A'               
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      15   175   v.   Akroydon Victoria 'A'            15   168                  
 Eccleshill 'B'                   12   162   v.   Pudsey 'B'                       18   179                  
-Brighouse Sports 'B'              9   146   v.   Elland CA &amp; BC                   21   179                  
-Rufford 'A'                      23   199   v.   Littlemoor S &amp; SC 'A'             7   149                  
+Brighouse Sports 'B'              9   146   v.   Elland CA & BC                   21   179                  
+Rufford 'A'                      23   199   v.   Littlemoor S & SC 'A'             7   149                  
 Cononley                         23   190   v.   Guiseley 'A'                      7   140                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 7th May                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    24   209   v.   Horsforth Woodside 'A'            6   167                  
-Hipperholme &amp; Lightcliffe 'A'    19   177   v.   Drighlington                     11   150                  
-Littlemoor S &amp; SC 'B'            25   197   v.   Ladyhill 'B'                      5   132                  
+Hipperholme & Lightcliffe 'A'    19   177   v.   Drighlington                     11   150                  
+Littlemoor S & SC 'B'            25   197   v.   Ladyhill 'B'                      5   132                  
 Shipley Club 'B'                 26   191   v.   Wyke 'B'                          4   113                  
 Hightown                         22   204   v.   Asa Briggs 'B'                    8   161                  
 Greengates 'A'                   22   189   v.   Peel                              8   144                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 7th May                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Crowghyll 'A'                    25   202   v.   Hollies S &amp; SC                    5   137                  
+Crowghyll 'A'                    25   202   v.   Hollies S & SC                    5   137                  
 South Leeds Cons                 17   179   v.   Pudsey 'C'                       13   168                  
 Tyersal 'A'                      22   198   v.   Wibsey 'A'                        8   155                  
 Armley Cons                      16   171   v.   Harold Park                      14   164                  
@@ -285,7 +285,7 @@ Wibsey 'B'                       10   148   v.   Asa Briggs 'C'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 7th May                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Horton                           17   159   v.   Hipperholme &amp; Lightcliffe 'B'    13   146                  
+Horton                           17   159   v.   Hipperholme & Lightcliffe 'B'    13   146                  
 West Bradford 'B'                21   197   v.   Crowghyll 'B'                     9   162                  
 Cleckheaton Sports 'B'           18   187   v.   Queensbury 'B'                   12   164                  
 Guiseley 'C'                      9   148   v.   Farsley                          21   183                  
@@ -310,15 +310,15 @@ Brighouse Sports 'A'             22   187   v.   Ladyhill 'A'                   
               Sat 21st May                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley 'A'                     28   210   v.   Brighouse Sports 'B'              2   136                  
-Elland CA &amp; BC                   19   177   v.   Eccleshill 'B'                   11   147                  
+Elland CA & BC                   19   177   v.   Eccleshill 'B'                   11   147                  
 Pudsey 'B'                       19   175   v.   Clayton 'B'                      11   150                  
 Akroydon Victoria 'A'            18   188   v.   Rufford 'A'                      12   167                  
-Littlemoor S &amp; SC 'A'            19   186   v.   Cononley                         11   163                  
+Littlemoor S & SC 'A'            19   186   v.   Cononley                         11   163                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 21st May                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Peel                             15   184   v.   Littlemoor S &amp; SC 'B'            15   188                  
-Ladyhill 'B'                     23   189   v.   Hipperholme &amp; Lightcliffe 'A'     7   138                  
+Peel                             15   184   v.   Littlemoor S & SC 'B'            15   188                  
+Ladyhill 'B'                     23   189   v.   Hipperholme & Lightcliffe 'A'     7   138                  
 Drighlington                     12   172   v.   Hove Edge 'A'                    18   188                  
 Horsforth Woodside 'A'           17   190   v.   Hightown                         13   173                  
 Asa Briggs 'B'                    8   142   v.   Shipley Club 'B'                 22   192                  
@@ -329,7 +329,7 @@ Wyke 'B'                         12   170   v.   Greengates 'A'                 
 Rufford 'B'                      17   168   v.   Tyersal 'A'                      13   158                  
 Wibsey 'A'                       16   175   v.   South Leeds Cons                 14   172                  
 Pudsey 'C'                       12   165   v.   Crowghyll 'A'                    18   181                  
-Hollies S &amp; SC                   10   150   v.   Harold Club                      20   180                  
+Hollies S & SC                   10   150   v.   Harold Club                      20   180                  
 West Bradford 'A'                30   210   v.   Armley Cons                       0   115                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 21st May                                  Division 5 (Haigh)                                             
@@ -353,7 +353,7 @@ Asa Briggs 'C'                   18   175   v.   Bowling 'A'                    
 Shelf                            19   168   v.   Cleckheaton Sports 'B'           11   141                  
 Queensbury 'B'                   22   191   v.   West Bradford 'B'                 8   140                  
 Crowghyll 'B'                    26   204   v.   Horton                            4   142                  
-Hipperholme &amp; Lightcliffe 'B'               v.   Guiseley 'C'                                               To Sat 28th May (Rearranged)
+Hipperholme & Lightcliffe 'B'               v.   Guiseley 'C'                                               To Sat 28th May (Rearranged)
 Farsley                          29   209   v.   West Royd                         1   100                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 21st May                                  Division 8 (Mellor)                                            
@@ -370,14 +370,14 @@ Wibsey 'A'                       23   193   v.   West Bradford 'A'              
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 28th May                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hipperholme &amp; Lightcliffe 'B'    22   193   v.   Guiseley 'C'                      8   151                  From Sat 21st May (Rearranged)
+Hipperholme & Lightcliffe 'B'    22   193   v.   Guiseley 'C'                      8   151                  From Sat 21st May (Rearranged)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 4th Jun                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    23   187   v.   Greengates 'A'                    7   141                  
-Hipperholme &amp; Lightcliffe 'A'    14   168   v.   Hightown                         16   172                  
-Littlemoor S &amp; SC 'B'            19   186   v.   Shipley Club 'B'                 11   160                  
+Hipperholme & Lightcliffe 'A'    14   168   v.   Hightown                         16   172                  
+Littlemoor S & SC 'B'            19   186   v.   Shipley Club 'B'                 11   160                  
 Peel                             24   196   v.   Wyke 'B'                          6   136                  
 Ladyhill 'B'                     17   184   v.   Asa Briggs 'B'                   13   178                  
 Drighlington                     17   188   v.   Horsforth Woodside 'A'           13   179                  
@@ -388,7 +388,7 @@ South Leeds Cons                 25   203   v.   Harold Club                    
 Tyersal 'A'                      19   181   v.   Armley Cons                      11   154                  
 Rufford 'B'                      18   175   v.   Harold Park                      12   154                  
 Wibsey 'A'                                  v.   West Bradford 'A'                                          To Sat 28th May (Rearranged)
-Pudsey 'C'                       20   188   v.   Hollies S &amp; SC                   10   156                  
+Pudsey 'C'                       20   188   v.   Hollies S & SC                   10   156                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 4th Jun                                  Division 5 (Haigh)                                             
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -417,27 +417,27 @@ Ladyhill 'A'                     18   183   v.   Wyke 'A'                       
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 11th Jun                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Clayton 'B'                      11   158   v.   Elland CA &amp; BC                   19   181                  
+Clayton 'B'                      11   158   v.   Elland CA & BC                   19   181                  
 Eccleshill 'B'                   16   172   v.   Guiseley 'A'                     14   166                  
-Littlemoor S &amp; SC 'A'            21   189   v.   Akroydon Victoria 'A'             9   152                  
+Littlemoor S & SC 'A'            21   189   v.   Akroydon Victoria 'A'             9   152                  
 Rufford 'A'                      21   189   v.   Pudsey 'B'                        9   157                  
 Cononley                         29   208   v.   Brighouse Sports 'B'              1   116                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 11th Jun                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    28   210   v.   Ladyhill 'B'                      2   133                  
-Hipperholme &amp; Lightcliffe 'A'    23   183   v.   Peel                              7   132                  
+Hipperholme & Lightcliffe 'A'    23   183   v.   Peel                              7   132                  
 Wyke 'B'                         19   183   v.   Asa Briggs 'B'                   11   154                  
 Shipley Club 'B'                 24   199   v.   Horsforth Woodside 'A'            6   141                  
 Hightown                         13   171   v.   Drighlington                     17   181                  
-Greengates 'A'                   24   195   v.   Littlemoor S &amp; SC 'B'             6   135                  
+Greengates 'A'                   24   195   v.   Littlemoor S & SC 'B'             6   135                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 11th Jun                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'A'                    16   178   v.   Wibsey 'A'                       14   176                  
 South Leeds Cons                 25   189   v.   Rufford 'B'                       5   136                  
 Harold Park                      21   191   v.   West Bradford 'A'                 9   151                  
-Armley Cons                      21   187   v.   Hollies S &amp; SC                    9   144                  
+Armley Cons                      21   187   v.   Hollies S & SC                    9   144                  
 Harold Club                      22   187   v.   Pudsey 'C'                        8   144                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 11th Jun                                  Division 5 (Haigh)                                             
@@ -460,7 +460,7 @@ Wibsey 'B'                       11   165   v.   Greengates 'B'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Horton                           13   172   v.   Queensbury 'B'                   17   175                  
 West Bradford 'B'                11   151   v.   Shelf                            19   182                  
-Farsley                          23   190   v.   Hipperholme &amp; Lightcliffe 'B'     7   144                  
+Farsley                          23   190   v.   Hipperholme & Lightcliffe 'B'     7   144                  
 Guiseley 'C'                      7   144   v.   Crowghyll 'B'                    23   189                  
 West Royd                        16   167   v.   Cleckheaton Sports 'B'           14   164                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -489,13 +489,13 @@ Eccleshill 'A'                   11   150   v.   Ladyhill 'A'                   
 -------------------------------------------------------------------------------------------------------------------------------------------
 Brighouse Sports 'B'             22   195   v.   Eccleshill 'B'                    8   145                  
 Guiseley 'A'                     19   189   v.   Clayton 'B'                      11   160                  
-Elland CA &amp; BC                   18   177   v.   Rufford 'A'                      12   161                  
-Pudsey 'B'                       15   171   v.   Littlemoor S &amp; SC 'A'            15   174                  
+Elland CA & BC                   18   177   v.   Rufford 'A'                      12   161                  
+Pudsey 'B'                       15   171   v.   Littlemoor S & SC 'A'            15   174                  
 Akroydon Victoria 'A'            16   169   v.   Cononley                         14   168                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 18th Jun                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'            28   196   v.   Hipperholme &amp; Lightcliffe 'A'     2   101                  
+Littlemoor S & SC 'B'            28   196   v.   Hipperholme & Lightcliffe 'A'     2   101                  
 Peel                             12   155   v.   Hove Edge 'A'                    18   169                  
 Ladyhill 'B'                     12   172   v.   Hightown                         18   183                  
 Drighlington                     14   189   v.   Shipley Club 'B'                 16   184                  
@@ -508,7 +508,7 @@ Tyersal 'A'                      19   187   v.   South Leeds Cons               
 Rufford 'B'                      18   183   v.   Crowghyll 'A'                    12   173                  
 Wibsey 'A'                       20   185   v.   Harold Club                      10   147                  
 Pudsey 'C'                       22   193   v.   Armley Cons                       8   149                  
-Hollies S &amp; SC                   13   160   v.   Harold Park                      17   176                  
+Hollies S & SC                   13   160   v.   Harold Park                      17   176                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 18th Jun                                  Division 5 (Haigh)                                             
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -532,7 +532,7 @@ Cleckheaton Sports 'B'           19   181   v.   West Bradford 'B'              
 Shelf                            13   145   v.   Horton                           17   161                  
 Queensbury 'B'                   19   184   v.   Guiseley 'C'                     11   154                  
 Crowghyll 'B'                    14   179   v.   Farsley                          16   183                  
-Hipperholme &amp; Lightcliffe 'B'    29   203   v.   West Royd                         1   106                  
+Hipperholme & Lightcliffe 'B'    29   203   v.   West Royd                         1   106                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 18th Jun                                  Division 8 (Mellor)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -544,14 +544,14 @@ Shipley Club 'C'                  6    90   v.   Oakenshaw 'B'                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Thu 23rd Jun                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'            19   191   v.   Horsforth Woodside 'A'           11   159                  From Sat 25th Jun (Rearranged)
+Littlemoor S & SC 'B'            19   191   v.   Horsforth Woodside 'A'           11   159                  From Sat 25th Jun (Rearranged)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 25th Jun                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    29   208   v.   Wyke 'B'                          1   115                  
-Hipperholme &amp; Lightcliffe 'A'    22   180   v.   Asa Briggs 'B'                    8   127                  
-Littlemoor S &amp; SC 'B'                       v.   Horsforth Woodside 'A'                                     To Thu 23rd Jun (Rearranged)
+Hipperholme & Lightcliffe 'A'    22   180   v.   Asa Briggs 'B'                    8   127                  
+Littlemoor S & SC 'B'                       v.   Horsforth Woodside 'A'                                     To Thu 23rd Jun (Rearranged)
 Peel                             14   173   v.   Drighlington                     16   175                  
 Hightown                         11   157   v.   Shipley Club 'B'                 19   187                  
 Greengates 'A'                   27   206   v.   Ladyhill 'B'                      3   123                  
@@ -560,7 +560,7 @@ Greengates 'A'                   27   206   v.   Ladyhill 'B'                   
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'A'                    15   171   v.   Harold Park                      15   176                  
 South Leeds Cons                            v.   West Bradford 'A'                                          To Sat 27th Aug (Rearranged)
-Tyersal 'A'                      17   191   v.   Hollies S &amp; SC                   13   175                  
+Tyersal 'A'                      17   191   v.   Hollies S & SC                   13   175                  
 Rufford 'B'                      21   191   v.   Pudsey 'C'                        9   158                  
 Harold Club                      23   197   v.   Armley Cons                       7   141                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -598,23 +598,23 @@ Ladyhill 'A'                     18   170   v.   Asa Briggs 'A'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      14   160   v.   Brighouse Sports 'B'             16   177                  
 Akroydon Victoria 'A'            17   170   v.   Pudsey 'B'                       13   166                  
-Littlemoor S &amp; SC 'A'            12   155   v.   Elland CA &amp; BC                   18   172                  
+Littlemoor S & SC 'A'            12   155   v.   Elland CA & BC                   18   172                  
 Rufford 'A'                      17   180   v.   Guiseley 'A'                     13   176                  
 Cononley                         30   210   v.   Eccleshill 'B'                    0   101                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 2nd Jul                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hove Edge 'A'                    26   204   v.   Littlemoor S &amp; SC 'B'             4   126                  
+Hove Edge 'A'                    26   204   v.   Littlemoor S & SC 'B'             4   126                  
 Asa Briggs 'B'                   21   191   v.   Horsforth Woodside 'A'            9   160                  
 Wyke 'B'                         17   183   v.   Drighlington                     13   180                  
 Shipley Club 'B'                 22   195   v.   Ladyhill 'B'                      8   146                  
 Hightown                         23   190   v.   Peel                              7   145                  
-Greengates 'A'                   11   163   v.   Hipperholme &amp; Lightcliffe 'A'    19   175                  
+Greengates 'A'                   11   163   v.   Hipperholme & Lightcliffe 'A'    19   175                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 2nd Jul                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'A'                    20   190   v.   Tyersal 'A'                      10   163                  
-West Bradford 'A'                15   179   v.   Hollies S &amp; SC                   15   173                  
+West Bradford 'A'                15   179   v.   Hollies S & SC                   15   173                  
 Harold Park                      20   180   v.   Pudsey 'C'                       10   146                  
 Armley Cons                       7   128   v.   Wibsey 'A'                       23   186                  
 Harold Club                      21   192   v.   Rufford 'B'                       9   153                  
@@ -638,7 +638,7 @@ Wibsey 'B'                       20   188   v.   Rufford 'C'                    
                Sat 2nd Jul                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Horton                           12   176   v.   Cleckheaton Sports 'B'           18   185                  
-Hipperholme &amp; Lightcliffe 'B'    21   191   v.   Crowghyll 'B'                     9   149                  
+Hipperholme & Lightcliffe 'B'    21   191   v.   Crowghyll 'B'                     9   149                  
 Farsley                          26   207   v.   Queensbury 'B'                    4   130                  
 Guiseley 'C'                     19   174   v.   Shelf                            11   148                  
 West Royd                        23   195   v.   West Bradford 'B'                 7   154                  
@@ -663,14 +663,14 @@ Clayton 'A'                      25   204   v.   Ladyhill 'A'                   
 -------------------------------------------------------------------------------------------------------------------------------------------
 Eccleshill 'B'                   13   159   v.   Clayton 'B'                      17   166                  
 Brighouse Sports 'B'             17   169   v.   Rufford 'A'                      13   154                  
-Guiseley 'A'                     15   175   v.   Littlemoor S &amp; SC 'A'            15   175                  
-Elland CA &amp; BC                   12   164   v.   Akroydon Victoria 'A'            18   178                  
+Guiseley 'A'                     15   175   v.   Littlemoor S & SC 'A'            15   175                  
+Elland CA & BC                   12   164   v.   Akroydon Victoria 'A'            18   178                  
 Pudsey 'B'                       19   195   v.   Cononley                         11   168                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 9th Jul                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hipperholme &amp; Lightcliffe 'A'    19   191   v.   Hove Edge 'A'                    11   167                  
-Littlemoor S &amp; SC 'B'            15   170   v.   Hightown                         15   165                  
+Hipperholme & Lightcliffe 'A'    19   191   v.   Hove Edge 'A'                    11   167                  
+Littlemoor S & SC 'B'            15   170   v.   Hightown                         15   165                  
 Peel                             10   159   v.   Shipley Club 'B'                 20   186                  
 Ladyhill 'B'                     18   181   v.   Wyke 'B'                         12   162                  
 Drighlington                     20   192   v.   Asa Briggs 'B'                   10   155                  
@@ -705,7 +705,7 @@ Greengates 'B'                   22   178   v.   Asa Briggs 'C'                 
 West Bradford 'B'                15   176   v.   Horton                           15   176                  
 Cleckheaton Sports 'B'           17   181   v.   Guiseley 'C'                     13   162                  
 Shelf                            11   147   v.   Farsley                          19   169                  
-Queensbury 'B'                   13   152   v.   Hipperholme &amp; Lightcliffe 'B'    17   169                  
+Queensbury 'B'                   13   152   v.   Hipperholme & Lightcliffe 'B'    17   169                  
 Crowghyll 'B'                    25   199   v.   West Royd                         5   131                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 9th Jul                                  Division 8 (Mellor)                                            
@@ -721,13 +721,13 @@ Bradford Moor 'B'                12   133   v.   Oakenshaw 'B'                  
 Horsforth Woodside 'A'           22   193   v.   Drighlington                      8   140                  
 Asa Briggs 'B'                   13   179   v.   Ladyhill 'B'                     17   187                  
 Wyke 'B'                         21   171   v.   Peel                              9   126                  
-Shipley Club 'B'                            v.   Littlemoor S &amp; SC 'B'                                      To Sun 24th Jul (Rearranged)
-Hightown                         19   191   v.   Hipperholme &amp; Lightcliffe 'A'    11   173                  
+Shipley Club 'B'                            v.   Littlemoor S & SC 'B'                                      To Sun 24th Jul (Rearranged)
+Hightown                         19   191   v.   Hipperholme & Lightcliffe 'A'    11   173                  
 Greengates 'A'                   12   172   v.   Hove Edge 'A'                    18   183                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 16th Jul                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hollies S &amp; SC                   20   174   v.   Pudsey 'C'                       10   153                  
+Hollies S & SC                   20   174   v.   Pudsey 'C'                       10   153                  
 West Bradford 'A'                14   174   v.   Wibsey 'A'                       16   178                  
 Harold Park                      24   198   v.   Rufford 'B'                       6   145                  
 Armley Cons                      10   148   v.   Tyersal 'A'                      20   186                  
@@ -763,16 +763,16 @@ Whitkirk                         20   191   v.   Clayton 'A'                    
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      11   142   v.   Cononley                         19   166                  
 Eccleshill 'B'                   19   190   v.   Rufford 'A'                      11   165                  
-Brighouse Sports 'B'                        v.   Littlemoor S &amp; SC 'A'                                      To Sat 9th Apr (Rearranged)
+Brighouse Sports 'B'                        v.   Littlemoor S & SC 'A'                                      To Sat 9th Apr (Rearranged)
 Guiseley 'A'                     21   188   v.   Akroydon Victoria 'A'             9   157                  
-Elland CA &amp; BC                   12   162   v.   Pudsey 'B'                       18   191                  
-Littlemoor S &amp; SC 'A'            29   208   v.   Brighouse Sports 'B'              1    93                  From Sat 9th Apr (Rearranged)
+Elland CA & BC                   12   162   v.   Pudsey 'B'                       18   191                  
+Littlemoor S & SC 'A'            29   208   v.   Brighouse Sports 'B'              1    93                  From Sat 9th Apr (Rearranged)
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 23rd Jul                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    29   203   v.   Hightown                          1    93                  
-Hipperholme &amp; Lightcliffe 'A'    18   179   v.   Shipley Club 'B'                 12   157                  
-Littlemoor S &amp; SC 'B'            24   205   v.   Wyke 'B'                          6   153                  
+Hipperholme & Lightcliffe 'A'    18   179   v.   Shipley Club 'B'                 12   157                  
+Littlemoor S & SC 'B'            24   205   v.   Wyke 'B'                          6   153                  
 Peel                             17   173   v.   Asa Briggs 'B'                   13   166                  
 Ladyhill 'B'                     15   168   v.   Horsforth Woodside 'A'           15   170                  
 Greengates 'A'                   29   206   v.   Drighlington                      1   107                  
@@ -782,7 +782,7 @@ Greengates 'A'                   29   206   v.   Drighlington                   
 Crowghyll 'A'                    20   191   v.   Harold Club                      10   162                  
 Tyersal 'A'                      12   164   v.   Harold Park                      18   171                  
 Rufford 'B'                      22   178   v.   West Bradford 'A'                 8   135                  
-Wibsey 'A'                       21   192   v.   Hollies S &amp; SC                    9   161                  
+Wibsey 'A'                       21   192   v.   Hollies S & SC                    9   161                  
 Armley Cons                      12   169   v.   South Leeds Cons                 18   189                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 23rd Jul                                  Division 5 (Haigh)                                             
@@ -806,7 +806,7 @@ Cleckheaton Moorend              14   165   v.   Hove Edge 'C'                  
 Horton                           20   194   v.   West Royd                        10   165                  
 West Bradford 'B'                 8   150   v.   Guiseley 'C'                     22   191                  
 Cleckheaton Sports 'B'            6   148   v.   Farsley                          24   200                  
-Shelf                            11   138   v.   Hipperholme &amp; Lightcliffe 'B'    19   161                  
+Shelf                            11   138   v.   Hipperholme & Lightcliffe 'B'    19   161                  
 Queensbury 'B'                   19   180   v.   Crowghyll 'B'                    11   164                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 23rd Jul                                  Division 8 (Mellor)                                            
@@ -819,7 +819,7 @@ Queensbury 'C'                    9   134   v.   Bradford Moor 'B'              
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sun 24th Jul                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Shipley Club 'B'                 21   191   v.   Littlemoor S &amp; SC 'B'             9   152                  From Sat 16th Jul (Rearranged)
+Shipley Club 'B'                 21   191   v.   Littlemoor S & SC 'B'             9   152                  From Sat 16th Jul (Rearranged)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
               Fri 29th Jul                                    Pairs Knock-Out                                              
@@ -843,23 +843,23 @@ Ladyhill 'A'                     19   177   v.   Whitkirk                       
 -------------------------------------------------------------------------------------------------------------------------------------------
 Pudsey 'B'                       28   209   v.   Guiseley 'A'                      2   119                  
 Akroydon Victoria 'A'            20   187   v.   Brighouse Sports 'B'             10   153                  
-Littlemoor S &amp; SC 'A'            26   205   v.   Eccleshill 'B'                    4   143                  
+Littlemoor S & SC 'A'            26   205   v.   Eccleshill 'B'                    4   143                  
 Rufford 'A'                      21   190   v.   Clayton 'B'                       9   154                  
-Cononley                         21   183   v.   Elland CA &amp; BC                    9   141                  
+Cononley                         21   183   v.   Elland CA & BC                    9   141                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 30th Jul                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Drighlington                     12   166   v.   Ladyhill 'B'                     18   182                  
 Horsforth Woodside 'A'           20   186   v.   Peel                             10   162                  
-Asa Briggs 'B'                   15   194   v.   Littlemoor S &amp; SC 'B'            15   188                  
-Wyke 'B'                         20   184   v.   Hipperholme &amp; Lightcliffe 'A'    10   144                  
+Asa Briggs 'B'                   15   194   v.   Littlemoor S & SC 'B'            15   188                  
+Wyke 'B'                         20   184   v.   Hipperholme & Lightcliffe 'A'    10   144                  
 Shipley Club 'B'                 22   192   v.   Hove Edge 'A'                     8   145                  
 Hightown                         15   181   v.   Greengates 'A'                   15   179                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 30th Jul                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Pudsey 'C'                       17   188   v.   Wibsey 'A'                       13   161                  
-Hollies S &amp; SC                   17   174   v.   Rufford 'B'                      13   168                  
+Hollies S & SC                   17   174   v.   Rufford 'B'                      13   168                  
 West Bradford 'A'                21   190   v.   Tyersal 'A'                       9   153                  
 Harold Park                      23   187   v.   South Leeds Cons                  7   141                  
 Armley Cons                      18   168   v.   Crowghyll 'A'                    12   155                  
@@ -883,7 +883,7 @@ Bowling 'A'                      19   185   v.   Horsforth Woodside 'B'         
               Sat 30th Jul                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'B'                    17   182   v.   Shelf                            13   165                  
-Hipperholme &amp; Lightcliffe 'B'    27   199   v.   Cleckheaton Sports 'B'            3   122                  
+Hipperholme & Lightcliffe 'B'    27   199   v.   Cleckheaton Sports 'B'            3   122                  
 Farsley                          29   208   v.   West Bradford 'B'                 1   115                  
 Guiseley 'C'                     21   188   v.   Horton                            9   151                  
 West Royd                        18   183   v.   Queensbury 'B'                   12   164                  
@@ -906,17 +906,17 @@ Ladyhill 'A'                                v.   Crossgates                     
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 6th Aug                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
-Clayton 'B'                      10   154   v.   Littlemoor S &amp; SC 'A'            20   179                  
+Clayton 'B'                      10   154   v.   Littlemoor S & SC 'A'            20   179                  
 Eccleshill 'B'                   20   196   v.   Akroydon Victoria 'A'            10   173                  
 Brighouse Sports 'B'             14   174   v.   Pudsey 'B'                       16   181                  
-Guiseley 'A'                     22   199   v.   Elland CA &amp; BC                    8   145                  
+Guiseley 'A'                     22   199   v.   Elland CA & BC                    8   145                  
 Cononley                         18   184   v.   Rufford 'A'                      12   154                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 6th Aug                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    26   200   v.   Asa Briggs 'B'                    4   126                  
-Hipperholme &amp; Lightcliffe 'A'    24   201   v.   Horsforth Woodside 'A'            6   142                  
-Littlemoor S &amp; SC 'B'            19   186   v.   Drighlington                     11   170                  
+Hipperholme & Lightcliffe 'A'    24   201   v.   Horsforth Woodside 'A'            6   142                  
+Littlemoor S & SC 'B'            19   186   v.   Drighlington                     11   170                  
 Peel                             22   197   v.   Ladyhill 'B'                      8   154                  
 Hightown                         27   209   v.   Wyke 'B'                          3   135                  
 Greengates 'A'                   17   174   v.   Shipley Club 'B'                 13   173                  
@@ -924,7 +924,7 @@ Greengates 'A'                   17   174   v.   Shipley Club 'B'               
                Sat 6th Aug                                  Division 4 (Bartle)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'A'                    19   185   v.   West Bradford 'A'                11   158                  
-South Leeds Cons                 20   189   v.   Hollies S &amp; SC                   10   154                  
+South Leeds Cons                 20   189   v.   Hollies S & SC                   10   154                  
 Tyersal 'A'                      20   191   v.   Pudsey 'C'                       10   167                  
 Rufford 'B'                      30   210   v.   Wibsey 'A'                        0   115                  
 Harold Club                      13   164   v.   Harold Park                      17   177                  
@@ -948,7 +948,7 @@ Wibsey 'B'                       13   165   v.   Bailiff Bridge 'A'             
                Sat 6th Aug                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Horton                           16   159   v.   Farsley                          14   152                  
-West Bradford 'B'                15   172   v.   Hipperholme &amp; Lightcliffe 'B'    15   177                  
+West Bradford 'B'                15   172   v.   Hipperholme & Lightcliffe 'B'    15   177                  
 Cleckheaton Sports 'B'           17   190   v.   Crowghyll 'B'                    13   170                  
 Shelf                            20   179   v.   Queensbury 'B'                   10   149                  
 West Royd                        16   156   v.   Guiseley 'C'                     14   150                  
@@ -985,16 +985,16 @@ Brighouse Sports 'A'             13   175   v.   Crossgates                     
               Sat 20th Aug                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Guiseley 'A'                     19   175   v.   Cononley                         11   161                  
-Elland CA &amp; BC                   16   172   v.   Brighouse Sports 'B'             14   165                  
+Elland CA & BC                   16   172   v.   Brighouse Sports 'B'             14   165                  
 Pudsey 'B'                       27   199   v.   Eccleshill 'B'                    3   115                  
 Akroydon Victoria 'A'            20   200   v.   Clayton 'B'                      10   164                  
-Littlemoor S &amp; SC 'A'            19   197   v.   Rufford 'A'                      11   166                  
+Littlemoor S & SC 'A'            19   197   v.   Rufford 'A'                      11   166                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 20th Aug                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Peel                             12   148   v.   Greengates 'A'                   18   171                  
-Ladyhill 'B'                     27   206   v.   Littlemoor S &amp; SC 'B'             3   134                  
-Drighlington                     22   204   v.   Hipperholme &amp; Lightcliffe 'A'     8   158                  
+Ladyhill 'B'                     27   206   v.   Littlemoor S & SC 'B'             3   134                  
+Drighlington                     22   204   v.   Hipperholme & Lightcliffe 'A'     8   158                  
 Horsforth Woodside 'A'           16   174   v.   Hove Edge 'A'                    14   169                  
 Asa Briggs 'B'                   14   168   v.   Hightown                         16   175                  
 Wyke 'B'                         10   167   v.   Shipley Club 'B'                 20   197                  
@@ -1003,7 +1003,7 @@ Wyke 'B'                         10   167   v.   Shipley Club 'B'               
 -------------------------------------------------------------------------------------------------------------------------------------------
 Wibsey 'A'                       21   199   v.   Tyersal 'A'                       9   161                  
 Pudsey 'C'                       12   162   v.   South Leeds Cons                 18   184                  
-Hollies S &amp; SC                   13   168   v.   Crowghyll 'A'                    17   186                  
+Hollies S & SC                   13   168   v.   Crowghyll 'A'                    17   186                  
 West Bradford 'A'                15   187   v.   Harold Club                      15   189                  
 Harold Park                      28   201   v.   Armley Cons                       2   120                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1028,7 +1028,7 @@ Bailiff Bridge 'A'               12   156   v.   Bowling 'A'                    
 Shelf                            19   175   v.   West Royd                        11   157                  
 Queensbury 'B'                   11   151   v.   Cleckheaton Sports 'B'           19   174                  
 Crowghyll 'B'                    27   191   v.   West Bradford 'B'                 3   110                  
-Hipperholme &amp; Lightcliffe 'B'    27   204   v.   Horton                            3   122                  
+Hipperholme & Lightcliffe 'B'    27   204   v.   Horton                            3   122                  
 Farsley                          28   204   v.   Guiseley 'C'                      2   118                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 20th Aug                                  Division 8 (Mellor)                                            
@@ -1050,16 +1050,16 @@ Ladyhill 'A'                     17   185   v.   Brighouse Sports 'A'           
               Sat 27th Aug                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      18   175   v.   Pudsey 'B'                       12   163                  
-Eccleshill 'B'                   13   164   v.   Elland CA &amp; BC                   17   165                  
+Eccleshill 'B'                   13   164   v.   Elland CA & BC                   17   165                  
 Brighouse Sports 'B'             14   169   v.   Guiseley 'A'                     16   172                  
 Rufford 'A'                      16   172   v.   Akroydon Victoria 'A'            14   164                  
-Cononley                         24   208   v.   Littlemoor S &amp; SC 'A'             6   159                  
+Cononley                         24   208   v.   Littlemoor S & SC 'A'             6   159                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 27th Aug                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    28   198   v.   Drighlington                      2   110                  
-Hipperholme &amp; Lightcliffe 'A'    19   178   v.   Ladyhill 'B'                     11   155                  
-Littlemoor S &amp; SC 'B'            23   188   v.   Peel                              7   131                  
+Hipperholme & Lightcliffe 'A'    19   178   v.   Ladyhill 'B'                     11   155                  
+Littlemoor S & SC 'B'            23   188   v.   Peel                              7   131                  
 Shipley Club 'B'                            v.   Asa Briggs 'B'                                             To Sat 13th Aug (Rearranged)
 Hightown                         21   199   v.   Horsforth Woodside 'A'            9   149                  
 Greengates 'A'                   11   155   v.   Wyke 'B'                         19   180                  
@@ -1070,7 +1070,7 @@ Crowghyll 'A'                    13   165   v.   Pudsey 'C'                     
 South Leeds Cons                 19   181   v.   Wibsey 'A'                       11   154                  
 Tyersal 'A'                      24   201   v.   Rufford 'B'                       6   142                  
 Armley Cons                      15   164   v.   West Bradford 'A'                15   168                  
-Harold Club                      10   153   v.   Hollies S &amp; SC                   20   176                  
+Harold Club                      10   153   v.   Hollies S & SC                   20   176                  
 South Leeds Cons                 19   182   v.   West Bradford 'A'                11   159                  From Sat 25th Jun (Rearranged)
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 27th Aug                                  Division 5 (Haigh)                                             
@@ -1094,7 +1094,7 @@ Wibsey 'B'                       16   182   v.   Hove Edge 'C'                  
 Horton                           12   149   v.   Crowghyll 'B'                    18   178                  
 West Bradford 'B'                11   151   v.   Queensbury 'B'                   19   181                  
 Cleckheaton Sports 'B'           16   169   v.   Shelf                            14   162                  
-Guiseley 'C'                     11   159   v.   Hipperholme &amp; Lightcliffe 'B'    19   179                  
+Guiseley 'C'                     11   159   v.   Hipperholme & Lightcliffe 'B'    19   179                  
 West Royd                         0    81   v.   Farsley                          30   210                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 27th Aug                                  Division 8 (Mellor)                                            
@@ -1117,14 +1117,14 @@ Eccleshill 'A'                              v.   Brighouse Sports 'A'           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Brighouse Sports 'B'             17   194   v.   Cononley                         13   178                  
 Guiseley 'A'                     24   199   v.   Eccleshill 'B'                    6   139                  
-Elland CA &amp; BC                   20   184   v.   Clayton 'B'                      10   148                  
+Elland CA & BC                   20   184   v.   Clayton 'B'                      10   148                  
 Pudsey 'B'                       19   199   v.   Rufford 'A'                      11   163                  
-Akroydon Victoria 'A'            16   161   v.   Littlemoor S &amp; SC 'A'            14   157                  
+Akroydon Victoria 'A'            16   161   v.   Littlemoor S & SC 'A'            14   157                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 3rd Sep                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'B'            15   162   v.   Greengates 'A'                   15   166                  
-Peel                             21   188   v.   Hipperholme &amp; Lightcliffe 'A'     9   144                  
+Littlemoor S & SC 'B'            15   162   v.   Greengates 'A'                   15   166                  
+Peel                             21   188   v.   Hipperholme & Lightcliffe 'A'     9   144                  
 Ladyhill 'B'                      6   123   v.   Hove Edge 'A'                    24   184                  
 Drighlington                     20   179   v.   Hightown                         10   144                  
 Horsforth Woodside 'A'           16   182   v.   Shipley Club 'B'                 14   172                  
@@ -1135,7 +1135,7 @@ Asa Briggs 'B'                   20   177   v.   Wyke 'B'                       
 Rufford 'B'                      20   180   v.   South Leeds Cons                 10   149                  
 Wibsey 'A'                       13   160   v.   Crowghyll 'A'                    17   172                  
 Pudsey 'C'                       14   160   v.   Harold Club                      16   165                  
-Hollies S &amp; SC                   13   153   v.   Armley Cons                      17   170                  
+Hollies S & SC                   13   153   v.   Armley Cons                      17   170                  
 West Bradford 'A'                 6   135   v.   Harold Park                      24   194                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 3rd Sep                                  Division 5 (Haigh)                                             
@@ -1160,7 +1160,7 @@ Cleckheaton Sports 'B'           21   184   v.   West Royd                      
 Shelf                                       v.   West Bradford 'B'                                          To Tue 13th Sep (Rearranged)
 Queensbury 'B'                   24   194   v.   Horton                            6   139                  
 Crowghyll 'B'                    24   194   v.   Guiseley 'C'                      6   139                  
-Hipperholme &amp; Lightcliffe 'B'    20   192   v.   Farsley                          10   178                  
+Hipperholme & Lightcliffe 'B'    20   192   v.   Farsley                          10   178                  
 -------------------------------------------------------------------------------------------------------------------------------------------
                Sat 3rd Sep                                  Division 8 (Mellor)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1182,14 +1182,14 @@ Ladyhill 'A'                     15   183   v.   Eccleshill 'A'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      20   181   v.   Guiseley 'A'                     10   150                  
 Eccleshill 'B'                   17   183   v.   Brighouse Sports 'B'             13   177                  
-Littlemoor S &amp; SC 'A'            25   205   v.   Pudsey 'B'                        5   142                  
-Rufford 'A'                      29   196   v.   Elland CA &amp; BC                    1    77                  
+Littlemoor S & SC 'A'            25   205   v.   Pudsey 'B'                        5   142                  
+Rufford 'A'                      29   196   v.   Elland CA & BC                    1    77                  
 Cononley                         22   197   v.   Akroydon Victoria 'A'             8   141                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 10th Sep                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hove Edge 'A'                    24   190   v.   Peel                              6   127                  
-Hipperholme &amp; Lightcliffe 'A'    13   180   v.   Littlemoor S &amp; SC 'B'            17   185                  
+Hipperholme & Lightcliffe 'A'    13   180   v.   Littlemoor S & SC 'B'            17   185                  
 Wyke 'B'                         14   165   v.   Horsforth Woodside 'A'           16   167                  
 Shipley Club 'B'                 26   208   v.   Drighlington                      4   144                  
 Hightown                         21   196   v.   Ladyhill 'B'                      9   158                  
@@ -1199,7 +1199,7 @@ Greengates 'A'                   20   189   v.   Asa Briggs 'B'                 
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crowghyll 'A'                    27   199   v.   Rufford 'B'                       3   122                  
 South Leeds Cons                 17   185   v.   Tyersal 'A'                      13   176                  
-Harold Park                      22   175   v.   Hollies S &amp; SC                    8   129                  
+Harold Park                      22   175   v.   Hollies S & SC                    8   129                  
 Armley Cons                      12   153   v.   Pudsey 'C'                       18   166                  
 Harold Club                      11   165   v.   Wibsey 'A'                       19   184                  
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1225,7 +1225,7 @@ Horton                           10   139   v.   Shelf                          
 West Bradford 'B'                20   185   v.   Cleckheaton Sports 'B'           10   150                  
 Farsley                          14   181   v.   Crowghyll 'B'                    16   182                  
 Guiseley 'C'                     10   151   v.   Queensbury 'B'                   20   186                  
-West Royd                        11   151   v.   Hipperholme &amp; Lightcliffe 'B'    19   174                  
+West Royd                        11   151   v.   Hipperholme & Lightcliffe 'B'    19   174                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 10th Sep                                  Division 8 (Mellor)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1264,13 +1264,13 @@ Ladyhill 'A'                     13   173   v.   Crossgates                     
 Eccleshill 'B'                    8   156   v.   Cononley                         22   187                  
 Brighouse Sports 'B'             19   187   v.   Clayton 'B'                      11   165                  
 Guiseley 'A'                     24   196   v.   Rufford 'A'                       6   143                  
-Elland CA &amp; BC                    8   154   v.   Littlemoor S &amp; SC 'A'            22   198                  
+Elland CA & BC                    8   154   v.   Littlemoor S & SC 'A'            22   198                  
 Pudsey 'B'                       27   204   v.   Akroydon Victoria 'A'             3   125                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 17th Sep                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hipperholme &amp; Lightcliffe 'A'    14   181   v.   Greengates 'A'                   16   183                  
-Littlemoor S &amp; SC 'B'            19   191   v.   Hove Edge 'A'                    11   163                  
+Hipperholme & Lightcliffe 'A'    14   181   v.   Greengates 'A'                   16   183                  
+Littlemoor S & SC 'B'            19   191   v.   Hove Edge 'A'                    11   163                  
 Peel                             13   174   v.   Hightown                         17   175                  
 Ladyhill 'B'                      8   162   v.   Shipley Club 'B'                 22   196                  
 Drighlington                     17   188   v.   Wyke 'B'                         13   173                  
@@ -1282,7 +1282,7 @@ Tyersal 'A'                      18   173   v.   Crowghyll 'A'                  
 Rufford 'B'                      27   204   v.   Harold Club                       3   127                  
 Wibsey 'A'                       30   210   v.   Armley Cons                       0    97                  
 Pudsey 'C'                       12   183   v.   Harold Park                      18   195                  
-Hollies S &amp; SC                    9   161   v.   West Bradford 'A'                21   195                  
+Hollies S & SC                    9   161   v.   West Bradford 'A'                21   195                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 17th Sep                                  Division 5 (Haigh)                                             
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1306,7 +1306,7 @@ West Bradford 'B'                24   199   v.   West Royd                      
 Cleckheaton Sports 'B'           20   178   v.   Horton                           10   153                  
 Shelf                            25   193   v.   Guiseley 'C'                      5   131                  
 Queensbury 'B'                    9   164   v.   Farsley                          21   188                  
-Crowghyll 'B'                    26   204   v.   Hipperholme &amp; Lightcliffe 'B'     4   143                  
+Crowghyll 'B'                    26   204   v.   Hipperholme & Lightcliffe 'B'     4   143                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 17th Sep                                  Division 8 (Mellor)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -1344,18 +1344,18 @@ Wyke 'A'                         13   179   v.   Clayton 'A'                    
               Sat 24th Sep                                  Division 2 (Godwin)                                            
 -------------------------------------------------------------------------------------------------------------------------------------------
 Clayton 'B'                      21   182   v.   Eccleshill 'B'                    9   148                  
-Akroydon Victoria 'A'            13   167   v.   Elland CA &amp; BC                   17   178                  
-Littlemoor S &amp; SC 'A'            27   204   v.   Guiseley 'A'                      3   133                  
+Akroydon Victoria 'A'            13   167   v.   Elland CA & BC                   17   178                  
+Littlemoor S & SC 'A'            27   204   v.   Guiseley 'A'                      3   133                  
 Rufford 'A'                      19   196   v.   Brighouse Sports 'B'             11   172                  
 Cononley                         25   208   v.   Pudsey 'B'                        5   150                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 24th Sep                                 Division 3 (Observer)                                           
 -------------------------------------------------------------------------------------------------------------------------------------------
-Hove Edge 'A'                    22   182   v.   Hipperholme &amp; Lightcliffe 'A'     8   128                  
+Hove Edge 'A'                    22   182   v.   Hipperholme & Lightcliffe 'A'     8   128                  
 Asa Briggs 'B'                   12   156   v.   Drighlington                     18   183                  
 Wyke 'B'                         22   190   v.   Ladyhill 'B'                      8   148                  
 Shipley Club 'B'                 27   209   v.   Peel                              3   137                  
-Hightown                         21   195   v.   Littlemoor S &amp; SC 'B'             9   158                  
+Hightown                         21   195   v.   Littlemoor S & SC 'B'             9   158                  
 Greengates 'A'                   12   163   v.   Horsforth Woodside 'A'           18   184                  
 -------------------------------------------------------------------------------------------------------------------------------------------
               Sat 24th Sep                                  Division 4 (Bartle)                                            
@@ -1385,7 +1385,7 @@ Wibsey 'B'                        9   153   v.   Salts                          
               Sat 24th Sep                             Division 7 (Field Packaging)                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Horton                           18   180   v.   West Bradford 'B'                12   170                  
-Hipperholme &amp; Lightcliffe 'B'    23   202   v.   Queensbury 'B'                    7   150                  
+Hipperholme & Lightcliffe 'B'    23   202   v.   Queensbury 'B'                    7   150                  
 Farsley                          25   195   v.   Shelf                             5   129                  
 Guiseley 'C'                     22   185   v.   Cleckheaton Sports 'B'            8   138                  
 West Royd                        10   173   v.   Crowghyll 'B'                    20   195                  
@@ -1419,12 +1419,12 @@ Oakenshaw 'B'                    18   146   v.   Bradford Moor 'B'              
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Cononley                         18   13    5    356
-  2.  Littlemoor S &amp; SC 'A'            18   12    4    342
+  2.  Littlemoor S & SC 'A'            18   12    4    342
   3.  Pudsey 'B'                       18   11    6    315
   4.  Akroydon Victoria 'A'            18   10    7    280
   5.  Rufford 'A'                      18    8   10    279
   6.  Guiseley 'A'                     18    9    8    267
-  7.  Elland CA &amp; BC                   18   10    8    253
+  7.  Elland CA & BC                   18   10    8    253
   8.  Clayton 'B'                      18    5   12    229
   9.  Brighouse Sports 'B'             18    5   13    201
  10.  Eccleshill 'B'                   18    4   14    178
@@ -1437,9 +1437,9 @@ Oakenshaw 'B'                    18   146   v.   Bradford Moor 'B'              
   2.  Shipley Club 'B'                 22   17    5    442
   3.  Greengates 'A'                   22   11    9    349
   4.  Hightown                         22   11    9    340
-  5.  Littlemoor S &amp; SC 'B'            22   10    8    330
+  5.  Littlemoor S & SC 'B'            22   10    8    330
   6.  Horsforth Woodside 'A'           22   12    8    330
-  7.  Hipperholme &amp; Lightcliffe 'A'    22    9   13    312
+  7.  Hipperholme & Lightcliffe 'A'    22    9   13    312
   8.  Ladyhill 'B'                     22    9   11    296
   9.  Drighlington                     22   11   11    296
  10.  Wyke 'B'                         22    9   13    292
@@ -1459,7 +1459,7 @@ Oakenshaw 'B'                    18   146   v.   Bradford Moor 'B'              
   7.  Pudsey 'C'                       20    8   12    283
   8.  Harold Club                      20    7   11    272
   9.  West Bradford 'A'                20    4   13    267
- 10.  Hollies S &amp; SC                   20    4   15    247
+ 10.  Hollies S & SC                   20    4   15    247
  11.  Armley Cons                      20    6   13    214
 
 === Division 5 (Haigh)
@@ -1499,7 +1499,7 @@ Oakenshaw 'B'                    18   146   v.   Bradford Moor 'B'              
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Farsley                          18   15    3    392
-  2.  Hipperholme &amp; Lightcliffe 'B'    18   14    3    340
+  2.  Hipperholme & Lightcliffe 'B'    18   14    3    340
   3.  Crowghyll 'B'                    18   12    6    331
   4.  Shelf                            18    9    9    290
   5.  Cleckheaton Sports 'B'           18    9    9    252
@@ -1556,7 +1556,7 @@ Charles Wood        20  John Stocks           21
          Points:    18             Points:    12
 
 Division 3 (Observer)         Sat 2nd Apr
-Horsforth Woodside 'A'   Littlemoor S &amp; SC 'B'
+Horsforth Woodside 'A'   Littlemoor S & SC 'B'
 Chris Wood 'A'      21  Philip A Richards     15
 Brian Dowling       21  Craig Farquharson     11
 Simon Chaffer 'A'   21  Alan Mazurke           7
@@ -1571,7 +1571,7 @@ James Crosland      15  William Swailes       21
          Points:    21             Points:     9
 
 Division 3 (Observer)         Sat 2nd Apr
-    Asa Briggs 'B'      Hipperholme &amp; Lightcliff
+    Asa Briggs 'B'      Hipperholme & Lightcliff
 Ryan Bradley         7  Adrian Megson         21
 Mark Pearson        21  Steve Swallow         11
 Kathleen Sansom     13  Nick Crowther         21
@@ -1631,7 +1631,7 @@ Brian Russell       21  Carole Wright         16
          Points:    22             Points:     8
 
  Division 4 (Bartle)          Sat 2nd Apr
-    Hollies S &amp; SC            Tyersal 'A'
+    Hollies S & SC            Tyersal 'A'
 Ken Stockhill       20  Gerry Smith 'A'       21
 Shirley Biancardo   21  Terry Wilsdon         12
 Duncan McPhail      21  Mason Lindley         13
@@ -1916,7 +1916,7 @@ Shawn Frewin        18  Gary Wike             21
          Points:     3             Points:    27
 
  Division 2 (Godwin)          Sat 9th Apr
-      Pudsey 'B'             Elland CA &amp; BC
+      Pudsey 'B'             Elland CA & BC
 Andy Hodgson        21  Tony Wilson            4
 Dan Beardsworth     21  James Senior          13
 Mark Dobson         21  Dave Greenwood        10
@@ -1976,7 +1976,7 @@ Rob Scarr           21  David Moore            7
          Points:    29             Points:     1
 
  Division 2 (Godwin)          Sat 9th Apr
- Brighouse Sports 'B'    Littlemoor S &amp; SC 'A'
+ Brighouse Sports 'B'    Littlemoor S & SC 'A'
 John Bloomer        21  John Armitage         13
 Peter Owen          20  Neil McPhail          21
 John Horsley        15  Lee Wider 'A'         21
@@ -2036,7 +2036,7 @@ Kathleen Sansom     12  Donald Shorten        21
          Points:    17             Points:    13
 
 Division 3 (Observer)         Sat 9th Apr
-       Wyke 'B'          Littlemoor S &amp; SC 'B'
+       Wyke 'B'          Littlemoor S & SC 'B'
 Ian Wilson          21  Alan Mazurke          20
 Glenn Molineux      21  Philip A Richards      5
 Vincent Kerr        21  William Swailes       13
@@ -2051,7 +2051,7 @@ Robert Benn         21  Kath Bywell            8
          Points:    27             Points:     3
 
 Division 3 (Observer)         Sat 9th Apr
-   Shipley Club 'B'     Hipperholme &amp; Lightcliff
+   Shipley Club 'B'     Hipperholme & Lightcliff
 Sharon Gadd         20  Adrian Megson         21
 Kevin Wood 'B'      21  Ian Ryding             6
 Peter Mountain      16  Nick Crowther         21
@@ -2081,7 +2081,7 @@ Stephen Holmes      17  Suzi Ladbrooke        21
          Points:    14             Points:    16
 
  Division 4 (Bartle)          Sat 9th Apr
-    Hollies S &amp; SC             Wibsey 'A'
+    Hollies S & SC             Wibsey 'A'
 David Gregory        6  Michael Frost         21
 Carol Robinson      21  Michael Gill           3
 Duncan McPhail      21  Jackie Richards        8
@@ -2321,7 +2321,7 @@ Malcolm Throup      21  Patricia Wright       20
          Points:    24             Points:     6
 
 Division 7 (Field Pack        Sat 9th Apr
-Hipperholme &amp; Lightcli           Shelf
+Hipperholme & Lightcli           Shelf
 James Wriggles      21  Leslie Pawson          6
 Paul Barnes         21  Claire Broadbent      20
 Martin Brenchley    21  Alan Etheridge        14
@@ -2523,7 +2523,7 @@ Myles Summers       21  Guy Barrie            20
          Points:    21             Points:     9
 
  Division 2 (Godwin)          Sat 16th Apr
-    Eccleshill 'B'       Littlemoor S &amp; SC 'A'
+    Eccleshill 'B'       Littlemoor S & SC 'A'
 Ken Gilroy          11  Neil McPhail          21
 Martin Hayton       13  Nigel Roper 'A'       21
 Steve Kane          15  Marc Armitage         21
@@ -2568,7 +2568,7 @@ Andrew Durkin       12  Tom Lawrence          21
          Points:    18             Points:    12
 
  Division 2 (Godwin)          Sat 16th Apr
-    Elland CA &amp; BC              Cononley
+    Elland CA & BC              Cononley
 Darren Hennessy     12  Graham Raey           21
 Andy Speechley      16  Steve Wood            21
 Adrian Kenyon       21  John Parkin           16
@@ -2598,7 +2598,7 @@ Suzi Ladbrooke      14  Craig Fenton          21
          Points:    18             Points:    12
 
 Division 3 (Observer)         Sat 16th Apr
-Hipperholme &amp; Lightcli          Wyke 'B'
+Hipperholme & Lightcli          Wyke 'B'
 Ian Ryding          21  Michael Walton        17
 Nick Crowther       21  Robert Benn            8
 John Denham         19  Nigel Wormald         21
@@ -2613,7 +2613,7 @@ Wilf Murgatroyd     21  Vincent Kerr           4
          Points:    21             Points:     9
 
 Division 3 (Observer)         Sat 16th Apr
-Littlemoor S &amp; SC 'B'        Asa Briggs 'B'
+Littlemoor S & SC 'B'        Asa Briggs 'B'
 William Swailes     21  Ryan Bradley          16
 Kath Bywell          9  Paula Graham          21
 Angela Carter       21  Clive Foord           12
@@ -2718,7 +2718,7 @@ Peter Simpson       13  Bill Hutchinson       21
          Points:    24             Points:     6
 
  Division 4 (Bartle)          Sat 16th Apr
-     Rufford 'B'             Hollies S &amp; SC
+     Rufford 'B'             Hollies S & SC
 Kelvin Grace 'B'    21  Cedric Briggs         20
 David Greenwood     18  David Hurd            21
 Cath New            21  David Gregory          4
@@ -2928,7 +2928,7 @@ Tony Wills           5  Graham Petty          21
          Points:     9             Points:    21
 
 Division 7 (Field Pack        Sat 16th Apr
-Cleckheaton Sports 'B'  Hipperholme &amp; Lightcliff
+Cleckheaton Sports 'B'  Hipperholme & Lightcliff
 David Collins       13  Paul Barnes           21
 Lou Dunk            21  Mark Crowther          9
 Les Binns           18  Janet M Hopper        21
@@ -3100,7 +3100,7 @@ Jon Wood             8  Neil Simpson 'A'      21
          Points:    24             Points:     6
 
  Division 2 (Godwin)          Sat 30th Apr
-    Elland CA &amp; BC            Guiseley 'A'
+    Elland CA & BC            Guiseley 'A'
 Andy Balmforth      13  Graham Oliver         21
 Dave Greenwood      18  David Norris 'A'      21
 Barry Nicholl       21  Dave Rankin            8
@@ -3145,7 +3145,7 @@ Martin Steele 'A'   21  Ken Gilroy             9
          Points:    28             Points:     2
 
  Division 2 (Godwin)          Sat 30th Apr
-Littlemoor S &amp; SC 'A'         Clayton 'B'
+Littlemoor S & SC 'A'         Clayton 'B'
 Marc Armitage       21  Ken Brenkley           4
 John Armitage       21  Myles Summers          9
 Jack Bowes          17  Alan Peel             21
@@ -3190,7 +3190,7 @@ Eric Butler         11  Keith Goodall         21
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 30th Apr
-     Drighlington        Littlemoor S &amp; SC 'B'
+     Drighlington        Littlemoor S & SC 'B'
 Patricia Sunderland  6  Craig Farquharson     21
 Charles Wood        21  Nicky Dewhirst         4
 Ronnie Benton       21  Angela Carter         20
@@ -3205,7 +3205,7 @@ Robert Sharp        21  Alan Mazurke          18
          Points:    20             Points:    10
 
 Division 3 (Observer)         Sat 30th Apr
-Horsforth Woodside 'A'  Hipperholme &amp; Lightcliff
+Horsforth Woodside 'A'  Hipperholme & Lightcliff
 David Hill          17  Ian Ryding            21
 Chris Wood 'A'      21  Adrian Megson         11
 Graham Chaffer 'A'  21  Nick Crowther         16
@@ -3295,7 +3295,7 @@ Peter Harding       10  Philip Wilsdon 'A'    21
          Points:    13             Points:    17
 
  Division 4 (Bartle)          Sat 30th Apr
-    Hollies S &amp; SC          South Leeds Cons
+    Hollies S & SC          South Leeds Cons
 Ken Stockhill        6  Paul Sitlinton        21
 Duncan McPhail      21  Ian Richardson        19
 David Hurd          21  Brian Newton          17
@@ -3520,7 +3520,7 @@ Malcolm Throup      21  Claire Dunk            4
          Points:    21             Points:     9
 
 Division 7 (Field Pack        Sat 30th Apr
-Hipperholme &amp; Lightcli     West Bradford 'B'
+Hipperholme & Lightcli     West Bradford 'B'
 Pauline Tankard     21  Maureen Riley         10
 James Wriggles      21  Eric Dooley           11
 Janet M Hopper      12  Sydney North          21
@@ -3722,7 +3722,7 @@ Andrew Howie        15  Tom Lawrence          21
          Points:    12             Points:    18
 
  Division 2 (Godwin)          Sat 7th May
- Brighouse Sports 'B'        Elland CA &amp; BC
+ Brighouse Sports 'B'        Elland CA & BC
 Danny Fountain      21  Andy Speechley        13
 John Bloomer        19  Gordon Bradford       21
 Anthony Naylor      13  Barry Nicholl         21
@@ -3737,7 +3737,7 @@ Daniel Dunkerley     5  James Senior          21
          Points:     9             Points:    21
 
  Division 2 (Godwin)          Sat 7th May
-     Rufford 'A'         Littlemoor S &amp; SC 'A'
+     Rufford 'A'         Littlemoor S & SC 'A'
 James Teale 'A'     21  John Armitage         13
 Martyn Benson 'A'   21  Philip A Richards      6
 Steve Ainley        21  Neil McPhail          14
@@ -3782,7 +3782,7 @@ Richard Hopley      21  James Crosland        20
          Points:    24             Points:     6
 
 Division 3 (Observer)         Sat 7th May
-Hipperholme &amp; Lightcli        Drighlington
+Hipperholme & Lightcli        Drighlington
 Adrian Megson       11  Patricia Sunderland   21
 Nick Crowther       13  John Bailey           21
 Ian Ryding          21  Ronnie Benton          9
@@ -3797,7 +3797,7 @@ Wilf Murgatroyd     21  Josh Gamble           19
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 7th May
-Littlemoor S &amp; SC 'B'         Ladyhill 'B'
+Littlemoor S & SC 'B'         Ladyhill 'B'
 Neil Porter         20  Kim Ramsden           21
 Kath Mazurke        21  Chris Wilson          16
 Angela Carter       21  Peter Finnie          16
@@ -3857,7 +3857,7 @@ Neil Howlett        13  Bob Denby             21
          Points:    22             Points:     8
 
  Division 4 (Bartle)          Sat 7th May
-    Crowghyll 'A'            Hollies S &amp; SC
+    Crowghyll 'A'            Hollies S & SC
 Kenny Bedford       21  Doreen Hogg           11
 Derek Carroll       21  Duncan McPhail        18
 Barry Fenton        21  Carol Robinson         8
@@ -4082,7 +4082,7 @@ Stephen Bailey       3  Bob Hiley             21
          Points:    10             Points:    20
 
 Division 7 (Field Pack        Sat 7th May
-        Horton          Hipperholme &amp; Lightcliff
+        Horton          Hipperholme & Lightcliff
 Marion Ingham       21  Dougie Gordon          3
 Eric Jefferson      21  David Healey           6
 Eileen Willoughby   21  Janet M Hopper        12
@@ -4299,7 +4299,7 @@ Joe Stockdale 'A'   21  David Stansfield      10
          Points:    28             Points:     2
 
  Division 2 (Godwin)          Sat 21st May
-    Elland CA &amp; BC           Eccleshill 'B'
+    Elland CA & BC           Eccleshill 'B'
 Andy Speechley      20  Will Gilroy           21
 Gordon Bradford     21  Carol Matthews         9
 Stuart Carroll      21  Andrew Howie          20
@@ -4344,7 +4344,7 @@ David Avery         20  David Kirkbright      21
          Points:    18             Points:    12
 
  Division 2 (Godwin)          Sat 21st May
-Littlemoor S &amp; SC 'A'           Cononley
+Littlemoor S & SC 'A'           Cononley
 Neil Porter         16  John Parkin           21
 Steve Gardner       10  Steve Wood            21
 Neil McPhail        21  Graham Raey           15
@@ -4359,7 +4359,7 @@ Richard Firth       18  Philip Dowgill        21
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 21st May
-         Peel            Littlemoor S &amp; SC 'B'
+         Peel            Littlemoor S & SC 'B'
 Malcolm Jowett      21  Kath Mazurke          16
 David Burns         21  Philip A Richards     17
 Bob Denby           21  Alan Mazurke          20
@@ -4374,7 +4374,7 @@ Donald Shorten       8  Angela Carter         21
          Points:    15             Points:    15
 
 Division 3 (Observer)         Sat 21st May
-     Ladyhill 'B'       Hipperholme &amp; Lightcliff
+     Ladyhill 'B'       Hipperholme & Lightcliff
 Sam Holmes          21  Nick Crowther          6
 Andrew Bailey       21  Roger Bernard         10
 Paul Owthwaite      15  Ian Ryding            21
@@ -4494,7 +4494,7 @@ Steve Emmett        21  David Hodgson         11
          Points:    12             Points:    18
 
  Division 4 (Bartle)          Sat 21st May
-    Hollies S &amp; SC            Harold Club
+    Hollies S & SC            Harold Club
 David Gregory        8  Barbara Bairstow      21
 Kevin Heseltine     14  Tom Jagger            21
 Duncan McPhail      21  Jim Boocock           10
@@ -4801,7 +4801,7 @@ Jordan Brown        21  David Bottomley       10
          Points:    23             Points:     7
 
 Division 7 (Field Pack        Sat 28th May
-Hipperholme &amp; Lightcli        Guiseley 'C'
+Hipperholme & Lightcli        Guiseley 'C'
 Paul Barnes         21  Norman Lickley         8
 Pauline Tankard     18  Margaret Orchard      21
 James Wriggles      21  Margaret Cooper       20
@@ -4831,7 +4831,7 @@ Julie Mallinson 'A' 21  Neil Howlett          17
          Points:    23             Points:     7
 
 Division 3 (Observer)         Sat 4th Jun
-Hipperholme &amp; Lightcli          Hightown
+Hipperholme & Lightcli          Hightown
 Adrian Megson       21  Vinnie Smith          12
 Ian Ryding          13  Richard Crossland     21
 Wilf Murgatroyd     19  Jenny Miller          21
@@ -4846,7 +4846,7 @@ Nigel Parker        12  Roy Carter            21
          Points:    14             Points:    16
 
 Division 3 (Observer)         Sat 4th Jun
-Littlemoor S &amp; SC 'B'       Shipley Club 'B'
+Littlemoor S & SC 'B'       Shipley Club 'B'
 John Armitage       21  Michael Kane           8
 Jim Moorin          21  Sharon Gadd            9
 Nicky Dewhirst      17  Paul Wilczynski       21
@@ -4951,7 +4951,7 @@ John Fletcher       17  Andrew Walker         21
          Points:    18             Points:    12
 
  Division 4 (Bartle)          Sat 4th Jun
-      Pudsey 'C'             Hollies S &amp; SC
+      Pudsey 'C'             Hollies S & SC
 Sue Chadwick        21  Carol Robinson         9
 Colin Dibb          21  Ken Goodwill          11
 David Elliott       10  Gary Dixon            21
@@ -5176,7 +5176,7 @@ Scott Haynes 'A'    19  Nigel Swales          21
          Points:    18             Points:    12
 
  Division 2 (Godwin)          Sat 11th Jun
-     Clayton 'B'             Elland CA &amp; BC
+     Clayton 'B'             Elland CA & BC
 Tom Harney           7  James Senior          21
 Chris Wilson        21  Stuart Carroll        16
 Ken Brenkley        21  Dave Greenwood        17
@@ -5206,7 +5206,7 @@ Andy Woodhead       12  David Norris 'A'      21
          Points:    16             Points:    14
 
  Division 2 (Godwin)          Sat 11th Jun
-Littlemoor S &amp; SC 'A'    Akroydon Victoria 'A'
+Littlemoor S & SC 'A'    Akroydon Victoria 'A'
 Craig Hebbard       16  Mark McGorlick 'A'    21
 Brian Richards 'A'  21  Martin Steele 'A'     15
 Steven Bowes        21  Dale Holdsworth       13
@@ -5266,7 +5266,7 @@ John Butterworth    21  Chris Wilson          16
          Points:    28             Points:     2
 
 Division 3 (Observer)         Sat 11th Jun
-Hipperholme &amp; Lightcli            Peel
+Hipperholme & Lightcli            Peel
 Adrian Megson       21  Malcolm Jowett         7
 Ian Hawtin          21  Mary Hemsley          20
 David Healey        13  John Stocks           21
@@ -5326,7 +5326,7 @@ Gerald Bromley      10  Josh Gamble           21
          Points:    13             Points:    17
 
 Division 3 (Observer)         Sat 11th Jun
-    Greengates 'A'       Littlemoor S &amp; SC 'B'
+    Greengates 'A'       Littlemoor S & SC 'B'
 Carl Goodall        21  Nicky Dewhirst        11
 Chris Lodge         21  Alan Mazurke           9
 Stuart Wilson       15  Philip A Richards     21
@@ -5386,7 +5386,7 @@ Stewart Firth       21  Bill Hutchinson       10
          Points:    21             Points:     9
 
  Division 4 (Bartle)          Sat 11th Jun
-     Armley Cons             Hollies S &amp; SC
+     Armley Cons             Hollies S & SC
 Thomas Parr         21  Carol Robinson         4
 Barry Brown         11  Ken Stockhill         21
 John Gilroy         21  Duncan McPhail        17
@@ -5596,7 +5596,7 @@ Pat Edden           21  Bryan Cook            18
          Points:    11             Points:    19
 
 Division 7 (Field Pack        Sat 11th Jun
-       Farsley          Hipperholme &amp; Lightcliff
+       Farsley          Hipperholme & Lightcliff
 Terry Lilley        21  Pauline Tankard       17
 David Lawrence      21  Martin Brenchley       6
 Peter Mylan         21  Paul Iredale          15
@@ -5813,7 +5813,7 @@ Joe Stockdale 'A'   21  Tom McCarthy          17
          Points:    19             Points:    11
 
  Division 2 (Godwin)          Sat 18th Jun
-    Elland CA &amp; BC            Rufford 'A'
+    Elland CA & BC            Rufford 'A'
 Andy Speechley       8  Martyn Benson 'A'     21
 Darren Hennessy     18  Helen Gilroy          21
 Andy Brewer         14  Ken Lee               21
@@ -5828,7 +5828,7 @@ Gordon Bradford     21  James Teale 'A'       17
          Points:    18             Points:    12
 
  Division 2 (Godwin)          Sat 18th Jun
-      Pudsey 'B'         Littlemoor S &amp; SC 'A'
+      Pudsey 'B'         Littlemoor S & SC 'A'
 Dan Beardsworth     11  Jack Bowes            21
 Darren Crawley      11  Marc Armitage         21
 Mark Dobson         21  John Armitage         15
@@ -5858,7 +5858,7 @@ Julian Dawson        7  Stuart Myers          21
          Points:    16             Points:    14
 
 Division 3 (Observer)         Sat 18th Jun
-Littlemoor S &amp; SC 'B'   Hipperholme &amp; Lightcliff
+Littlemoor S & SC 'B'   Hipperholme & Lightcliff
 Neil McPhail        21  Nigel Parker           9
 Jim Moorin          21  John Wilson            1
 Angela Carter       21  Roger Bernard         17
@@ -5993,7 +5993,7 @@ Jordan Wike         21  Nigel Partington      12
          Points:    22             Points:     8
 
  Division 4 (Bartle)          Sat 18th Jun
-    Hollies S &amp; SC            Harold Park
+    Hollies S & SC            Harold Park
 David Gregory        3  Philip Darvill        21
 Kevin Heseltine     12  Brian Kettle          21
 Len Robinson        21  Arthur McGuire        13
@@ -6218,7 +6218,7 @@ Malcolm Throup      18  Peter Scott           21
          Points:    14             Points:    16
 
 Division 7 (Field Pack        Sat 18th Jun
-Hipperholme &amp; Lightcli         West Royd
+Hipperholme & Lightcli         West Royd
 Pauline Tankard     21  Margaret Williams      6
 Janet M Hopper      14  Eileen Coldrey        21
 Martin Brenchley    21  Pauline Eccleshall     7
@@ -6285,7 +6285,7 @@ Jim Crow            17  Gordon Akroyd         21
          Points:     6             Points:    22
 
 Division 3 (Observer)         Thu 23rd Jun
-Littlemoor S &amp; SC 'B'    Horsforth Woodside 'A'
+Littlemoor S & SC 'B'    Horsforth Woodside 'A'
 Alan Mazurke        21  Graham Chaffer 'A'    17
 Angela Carter       21  Jeremy Waller          4
 Robert Baines       21  David Hill             7
@@ -6315,7 +6315,7 @@ Lynne Saxby 'A'     21  Stephen Ward           5
          Points:    29             Points:     1
 
 Division 3 (Observer)         Sat 25th Jun
-Hipperholme &amp; Lightcli       Asa Briggs 'B'
+Hipperholme & Lightcli       Asa Briggs 'B'
 Nick Crowther        8  Ryan Bradley          21
 Ian Ryding          21  Joyce Appleton         8
 John Denham         18  Clive Foord           21
@@ -6390,7 +6390,7 @@ Archie Wishart      21  Philip Darvill        15
          Points:    15             Points:    15
 
  Division 4 (Bartle)          Sat 25th Jun
-     Tyersal 'A'             Hollies S &amp; SC
+     Tyersal 'A'             Hollies S & SC
 Gerry Smith 'A'     21  David Gregory         13
 Wendy Shimbles 'A'  21  Ken Stockhill         15
 Terry Wilsdon       21  Kevin Heseltine       14
@@ -6690,7 +6690,7 @@ Dale Holdsworth     21  Tom Morris             8
          Points:    17             Points:    13
 
  Division 2 (Godwin)          Sat 2nd Jul
-Littlemoor S &amp; SC 'A'        Elland CA &amp; BC
+Littlemoor S & SC 'A'        Elland CA & BC
 Steven Bowes         8  Paul Demetriades      21
 John Armitage       21  Peter Lea             12
 Marc Armitage       16  Barry Nicholl         21
@@ -6735,7 +6735,7 @@ Rob Scarr           21  Steve Kane            10
          Points:    30             Points:     0
 
 Division 3 (Observer)         Sat 2nd Jul
-    Hove Edge 'A'        Littlemoor S &amp; SC 'B'
+    Hove Edge 'A'        Littlemoor S & SC 'B'
 Peter Martin        21  Jim Moorin            15
 Christine Barker    21  Billy Thorpe           0
 Kenny Barker        21  William Swailes        3
@@ -6810,7 +6810,7 @@ Julie Best          21  John Stocks           17
          Points:    23             Points:     7
 
 Division 3 (Observer)         Sat 2nd Jul
-    Greengates 'A'      Hipperholme &amp; Lightcliff
+    Greengates 'A'      Hipperholme & Lightcliff
 Carl Goodall        21  Nick Crowther          7
 Neil Howlett        15  Steve Swallow         21
 Bryn Jones          18  Martin Firth          21
@@ -6840,7 +6840,7 @@ Archie Wishart      15  Peter Simpson         21
          Points:    20             Points:    10
 
  Division 4 (Bartle)          Sat 2nd Jul
-  West Bradford 'A'          Hollies S &amp; SC
+  West Bradford 'A'          Hollies S & SC
 Tony Oldfield       20  Carol Robinson        21
 Malcolm Crotty      21  Shirley Biancardo     11
 Geoff Dickson       21  Beverley Watt         10
@@ -7065,7 +7065,7 @@ Joe Walbran         21  Terence Atkins        13
          Points:    12             Points:    18
 
 Division 7 (Field Pack        Sat 2nd Jul
-Hipperholme &amp; Lightcli       Crowghyll 'B'
+Hipperholme & Lightcli       Crowghyll 'B'
 Paul Barnes         21  Alan Clements         12
 Janet M Hopper      21  Pamela Robinson       14
 Simon Clayton       20  Malcolm Throup        21
@@ -7282,7 +7282,7 @@ William Muslek      21  Martyn Benson 'A'      7
          Points:    17             Points:    13
 
  Division 2 (Godwin)          Sat 9th Jul
-     Guiseley 'A'        Littlemoor S &amp; SC 'A'
+     Guiseley 'A'        Littlemoor S & SC 'A'
 Luke Teale 'A'      21  John Armitage         16
 Andrew Durkin       21  Craig Farquharson      1
 Gary Whelan 'A'     16  Brian Richards 'A'    21
@@ -7297,7 +7297,7 @@ Joe Stockdale 'A'    9  Marc Armitage         21
          Points:    15             Points:    15
 
  Division 2 (Godwin)          Sat 9th Jul
-    Elland CA &amp; BC       Akroydon Victoria 'A'
+    Elland CA & BC       Akroydon Victoria 'A'
 James Senior        21  Andrew Wood            8
 Stuart Carroll      20  Steve Livesey         21
 Andy Speechley      21  Les Holmes            15
@@ -7327,7 +7327,7 @@ Stewart Watson      21  Stuart Myers          18
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 9th Jul
-Hipperholme &amp; Lightcli       Hove Edge 'A'
+Hipperholme & Lightcli       Hove Edge 'A'
 Adrian Megson       13  Tom Gasson            21
 Ian Ryding          21  Kenny Barker          18
 Nick Crowther       13  John Butterworth      21
@@ -7342,7 +7342,7 @@ Nigel Parker        21  Stephen Rothwell      11
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 9th Jul
-Littlemoor S &amp; SC 'B'           Hightown
+Littlemoor S & SC 'B'           Hightown
 Jim Moorin          21  David Rayner          11
 Robert Baines       20  Jenny Miller          21
 Terry Laidlaw       21  Phillip Rayner         8
@@ -7687,7 +7687,7 @@ John Brook          10  Graham Petty          21
          Points:    11             Points:    19
 
 Division 7 (Field Pack        Sat 9th Jul
-    Queensbury 'B'      Hipperholme &amp; Lightcliff
+    Queensbury 'B'      Hipperholme & Lightcliff
 Brian Raistrick     13  James Wriggles        21
 Michael Clare       21  Pauline Tankard       12
 Hazel Kershaw       12  Paul Barnes           21
@@ -7814,7 +7814,7 @@ Nigel Swales        17  John Stocks           21
          Points:    21             Points:     9
 
 Division 3 (Observer)         Sat 16th Jul
-       Hightown         Hipperholme &amp; Lightcliff
+       Hightown         Hipperholme & Lightcliff
 Jenny Miller        21  Nick Crowther         13
 Tim Miller          21  John Denham           13
 Phillip Rayner      21  Wilf Murgatroyd       18
@@ -7844,7 +7844,7 @@ Stuart Wilson       12  Peter Martin          21
          Points:    12             Points:    18
 
  Division 4 (Bartle)          Sat 16th Jul
-    Hollies S &amp; SC             Pudsey 'C'
+    Hollies S & SC             Pudsey 'C'
 Raymond McCartney    4  Ian Kemp              21
 Duncan McPhail      21  Richard Hodgson        9
 Beverley Watt       21  Sam Hunak              6
@@ -8204,7 +8204,7 @@ Joe Stockdale 'A'   16  Mark McGorlick 'A'    21
          Points:    21             Points:     9
 
  Division 2 (Godwin)          Sat 23rd Jul
-    Elland CA &amp; BC             Pudsey 'B'
+    Elland CA & BC             Pudsey 'B'
 James Senior        21  Tom Lawrence          11
 Paul Demetriades    20  Andy Hodgson          21
 Andy Speechley      16  Lisa Rice             21
@@ -8219,7 +8219,7 @@ Barry Nicholl        5  Kevin Rankin          21
          Points:    12             Points:    18
 
  Division 2 (Godwin)          Sat 23rd Jul
-Littlemoor S &amp; SC 'A'     Brighouse Sports 'B'
+Littlemoor S & SC 'A'     Brighouse Sports 'B'
 John Armitage       21  Peter McGowan          2
 Steven Bowes        21  Peter Owen             2
 Jack Bowes          21  John Horsley          18
@@ -8249,7 +8249,7 @@ Stephen Rothwell    21  Gerald Bromley        11
          Points:    29             Points:     1
 
 Division 3 (Observer)         Sat 23rd Jul
-Hipperholme &amp; Lightcli      Shipley Club 'B'
+Hipperholme & Lightcli      Shipley Club 'B'
 Adrian Megson       21  Kevin Wood 'B'        13
 Ian Ryding          19  David Jacques         21
 Nick Crowther       21  Tracy Preston          9
@@ -8264,7 +8264,7 @@ Nigel Parker        11  Chris Jacques         21
          Points:    18             Points:    12
 
 Division 3 (Observer)         Sat 23rd Jul
-Littlemoor S &amp; SC 'B'           Wyke 'B'
+Littlemoor S & SC 'B'           Wyke 'B'
 Kath Mazurke        20  David Greenwood       21
 Jim Moorin          21  Brian Smith           17
 Terry Laidlaw       21  Michael Walton        20
@@ -8369,7 +8369,7 @@ Bill Slater 'B'     11  Bill Hutchinson       21
          Points:    22             Points:     8
 
  Division 4 (Bartle)          Sat 23rd Jul
-      Wibsey 'A'             Hollies S &amp; SC
+      Wibsey 'A'             Hollies S & SC
 Jordan Brown        17  Walter Stockhill      21
 James Klenk         21  Ken Stockhill         20
 Curtis Brown         9  Len Robinson          21
@@ -8594,7 +8594,7 @@ John Skirrow         4  Stuart Brook          21
          Points:     6             Points:    24
 
 Division 7 (Field Pack        Sat 23rd Jul
-        Shelf           Hipperholme &amp; Lightcliff
+        Shelf           Hipperholme & Lightcliff
 John Brook          21  Pauline Tankard        4
 Jack Farley         18  Janet M Hopper        21
 Steve Jackson       21  David Healey           6
@@ -8676,7 +8676,7 @@ Keith Wrightson     10  Ken Smith             21
          Points:     9             Points:    19
 
 Division 3 (Observer)         Sun 24th Jul
-   Shipley Club 'B'      Littlemoor S &amp; SC 'B'
+   Shipley Club 'B'      Littlemoor S & SC 'B'
 David Jacques       16  Jim Moorin            21
 Tracy Preston       20  Kath Mazurke          21
 John Sample 'B'     21  Terry Laidlaw         18
@@ -8833,7 +8833,7 @@ Danny Barker        17  Mark Connolly         21
          Points:    20             Points:    10
 
  Division 2 (Godwin)          Sat 30th Jul
-Littlemoor S &amp; SC 'A'        Eccleshill 'B'
+Littlemoor S & SC 'A'        Eccleshill 'B'
 John Armitage       21  Adam Mellor 'B'       14
 Jack Bowes          21  Will Gilroy           17
 Neil Porter         16  Mark Reynolds         21
@@ -8863,7 +8863,7 @@ Daniel Teale        21  Nino Esposito         18
          Points:    21             Points:     9
 
  Division 2 (Godwin)          Sat 30th Jul
-       Cononley              Elland CA &amp; BC
+       Cononley              Elland CA & BC
 Steve Wood          21  Adrian Kenyon         13
 Jim Calvert         21  Andy Balmforth        12
 Wayne Lee           21  Vicki Senior           8
@@ -8908,7 +8908,7 @@ Andy Wood 'A'       21  Mary Hemsley          17
          Points:    20             Points:    10
 
 Division 3 (Observer)         Sat 30th Jul
-    Asa Briggs 'B'       Littlemoor S &amp; SC 'B'
+    Asa Briggs 'B'       Littlemoor S & SC 'B'
 Alan Forrest        21  Angela Carter         12
 Joyce Appleton      18  Terry Laidlaw         21
 Jeff Hargrave       21  Philip A Richards     15
@@ -8923,7 +8923,7 @@ Mark Pearson        19  Nicky Dewhirst        21
          Points:    15             Points:    15
 
 Division 3 (Observer)         Sat 30th Jul
-       Wyke 'B'         Hipperholme &amp; Lightcliff
+       Wyke 'B'         Hipperholme & Lightcliff
 Robert K Wilkinson  21  Nigel Parker          14
 Mike Lambert        21  Roger Bernard         10
 Nigel Wormald       21  Mark Crowther          8
@@ -8983,7 +8983,7 @@ Gary Thornton       20  David Lupton          21
          Points:    17             Points:    13
 
  Division 4 (Bartle)          Sat 30th Jul
-    Hollies S &amp; SC            Rufford 'B'
+    Hollies S & SC            Rufford 'B'
 Beverley Watt       15  James Greenwood       21
 Carol Robinson      21  David Greenwood       13
 Duncan McPhail      21  Janice Waite          10
@@ -9208,7 +9208,7 @@ Jeffrey Townend     21  Terry Allington        2
          Points:    17             Points:    13
 
 Division 7 (Field Pack        Sat 30th Jul
-Hipperholme &amp; Lightcli   Cleckheaton Sports 'B'
+Hipperholme & Lightcli   Cleckheaton Sports 'B'
 Janet M Hopper      10  Lou Dunk              21
 Paul Barnes         21  John Skirrow           5
 David Healey        21  Lynn Seddon           12
@@ -9350,7 +9350,7 @@ Kieran Bannister    17  Phil Cooper           21
          Points:    27             Points:     3
 
  Division 2 (Godwin)          Sat 6th Aug
-     Clayton 'B'         Littlemoor S &amp; SC 'A'
+     Clayton 'B'         Littlemoor S & SC 'A'
 Chris Wilson        15  John Armitage         21
 Alan Peel           15  Marc Armitage         21
 John Lister          7  Jack Bowes            21
@@ -9395,7 +9395,7 @@ Helen Simpson       21  Tom Lawrence          19
          Points:    14             Points:    16
 
  Division 2 (Godwin)          Sat 6th Aug
-     Guiseley 'A'            Elland CA &amp; BC
+     Guiseley 'A'            Elland CA & BC
 Michael Hall 'A'    21  Andy Brewer           11
 Gary Whelan 'A'     21  Dave Greenwood        15
 Luke Teale 'A'      21  James Senior          15
@@ -9440,7 +9440,7 @@ Julie Mallinson 'A' 14  Matthew Pearson       21
          Points:    26             Points:     4
 
 Division 3 (Observer)         Sat 6th Aug
-Hipperholme &amp; Lightcli   Horsforth Woodside 'A'
+Hipperholme & Lightcli   Horsforth Woodside 'A'
 Adrian Megson       21  Brian Dowling         15
 Dougie Gordon       21  David Hill            18
 Nick Crowther       14  Simon Chaffer 'A'     21
@@ -9455,7 +9455,7 @@ Tom Roper           19  Ian Bolton 'A'        21
          Points:    24             Points:     6
 
 Division 3 (Observer)         Sat 6th Aug
-Littlemoor S &amp; SC 'B'         Drighlington
+Littlemoor S & SC 'B'         Drighlington
 Jim Moorin          21  Ray O'Connor           6
 Kath Bywell         21  Andrew Lee            17
 Kath Mazurke        21  John Bailey           18
@@ -9530,7 +9530,7 @@ Archie Wishart      14  Bill Hutchinson       21
          Points:    19             Points:    11
 
  Division 4 (Bartle)          Sat 6th Aug
-   South Leeds Cons          Hollies S &amp; SC
+   South Leeds Cons          Hollies S & SC
 Ian Richardson      21  David Gregory          3
 Tony Auty           15  Walter Stockhill      21
 Tim Newton          21  Duncan McPhail        19
@@ -9755,7 +9755,7 @@ Ken Briggs          13  Peter Scott           21
          Points:    16             Points:    14
 
 Division 7 (Field Pack        Sat 6th Aug
-  West Bradford 'B'     Hipperholme &amp; Lightcliff
+  West Bradford 'B'     Hipperholme & Lightcliff
 Simon Muncaster     21  John Duncanson        12
 Linda Wills         21  Jennifer Moffat       20
 Archie Gracie       13  Pauline Tankard       21
@@ -10011,7 +10011,7 @@ Martin Laycock 'B'   5  Derek Seed            21
          Points:    19             Points:    11
 
  Division 2 (Godwin)          Sat 20th Aug
-    Elland CA &amp; BC        Brighouse Sports 'B'
+    Elland CA & BC        Brighouse Sports 'B'
 James Senior        12  Peter Owen            21
 Gordon Bradford     21  John Bloomer          19
 Adrian Kenyon       21  Dale Dyson            11
@@ -10056,7 +10056,7 @@ Andrew Wood         21  Nino Esposito          7
          Points:    20             Points:    10
 
  Division 2 (Godwin)          Sat 20th Aug
-Littlemoor S &amp; SC 'A'         Rufford 'A'
+Littlemoor S & SC 'A'         Rufford 'A'
 Jack Bowes          21  Dave Whelan           11
 Craig Farquharson   18  James Teale 'A'       21
 John Armitage       17  Martyn Benson 'A'     21
@@ -10086,7 +10086,7 @@ Nicola Stocks       21  Neil Howlett          16
          Points:    12             Points:    18
 
 Division 3 (Observer)         Sat 20th Aug
-     Ladyhill 'B'        Littlemoor S &amp; SC 'B'
+     Ladyhill 'B'        Littlemoor S & SC 'B'
 Alan Pennington     21  Andy Smith            10
 Vince Cleary        21  Jim Moorin             9
 Peter Finnie        21  Terri Durrans          8
@@ -10101,7 +10101,7 @@ Peter Oliver        21  Alan Mazurke          10
          Points:    27             Points:     3
 
 Division 3 (Observer)         Sat 20th Aug
-     Drighlington       Hipperholme &amp; Lightcliff
+     Drighlington       Hipperholme & Lightcliff
 John Bailey         21  Beverley Clayton       8
 Ronnie Benton       21  Wilf Murgatroyd       17
 Ann Billington      18  Mark Crowther         21
@@ -10191,7 +10191,7 @@ Jordan Wike         16  Derek McCormack       21
          Points:    12             Points:    18
 
  Division 4 (Bartle)          Sat 20th Aug
-    Hollies S &amp; SC           Crowghyll 'A'
+    Hollies S & SC           Crowghyll 'A'
 Cedric Briggs       16  Tony Walton           21
 Ken Stockhill       21  Eddie Prince          14
 Doreen Hogg         16  Alan Clements         21
@@ -10416,7 +10416,7 @@ Alan Clements       21  Pat Edden              4
          Points:    27             Points:     3
 
 Division 7 (Field Pack        Sat 20th Aug
-Hipperholme &amp; Lightcli           Horton
+Hipperholme & Lightcli           Horton
 Paul Barnes         20  Eric Jefferson        21
 Janet M Hopper      16  Eileen Willoughby     21
 David Healey        21  Pat Cates             15
@@ -10573,7 +10573,7 @@ Bev Shutt           11  Tom Lawrence          21
          Points:    18             Points:    12
 
  Division 2 (Godwin)          Sat 27th Aug
-    Eccleshill 'B'           Elland CA &amp; BC
+    Eccleshill 'B'           Elland CA & BC
 Andrew Howie        19  Gordon Bradford       21
 Stephen Gilroy      13  Dave Greenwood        21
 Ian Matthews 'B'    10  Darren Hennessy       21
@@ -10618,7 +10618,7 @@ Andy Newell 'A'     10  Martin Steele 'A'     21
          Points:    16             Points:    14
 
  Division 2 (Godwin)          Sat 27th Aug
-       Cononley          Littlemoor S &amp; SC 'A'
+       Cononley          Littlemoor S & SC 'A'
 Philip Dowgill      21  Martin Fulton         17
 Graham Raey         21  Craig Farquharson      9
 Steve Wood          19  Craig Hebbard         21
@@ -10648,7 +10648,7 @@ Richard Hopley      21  Robert Sharp           6
          Points:    28             Points:     2
 
 Division 3 (Observer)         Sat 27th Aug
-Hipperholme &amp; Lightcli        Ladyhill 'B'
+Hipperholme & Lightcli        Ladyhill 'B'
 Ian Ryding           8  Lee Hicks             21
 Adrian Megson       16  Darren Owthwaite      21
 Nick Crowther       21  Alan Pennington        7
@@ -10663,7 +10663,7 @@ Steve Swallow       21  Adrian Holmes         11
          Points:    19             Points:    11
 
 Division 3 (Observer)         Sat 27th Aug
-Littlemoor S &amp; SC 'B'             Peel
+Littlemoor S & SC 'B'             Peel
 Alan Mazurke        21  David Burns           11
 Terry Laidlaw       21  Bob Denby             15
 Kath Mazurke        21  Mary Hemsley          12
@@ -10768,7 +10768,7 @@ John Gilroy         21  Tony Wills            10
          Points:    15             Points:    15
 
  Division 4 (Bartle)          Sat 27th Aug
-     Harold Club             Hollies S &amp; SC
+     Harold Club             Hollies S & SC
 David Leaper        21  June Lambert          16
 Joan Spence         19  Gary Dixon            21
 Pat Jagger          11  Ken Stockhill         21
@@ -10993,7 +10993,7 @@ Gary Blackburn      20  Steve Jackson         21
          Points:    16             Points:    14
 
 Division 7 (Field Pack        Sat 27th Aug
-     Guiseley 'C'       Hipperholme &amp; Lightcliff
+     Guiseley 'C'       Hipperholme & Lightcliff
 Stan Marsden        15  James Wriggles        21
 John Stead          21  David Healey           6
 Ben Falkingham       9  Janet M Hopper        21
@@ -11150,7 +11150,7 @@ Joe Stockdale 'A'   21  Mark Reynolds         10
          Points:    24             Points:     6
 
  Division 2 (Godwin)          Sat 3rd Sep
-    Elland CA &amp; BC            Clayton 'B'
+    Elland CA & BC            Clayton 'B'
 Gordon Bradford     21  Hilary Seward          6
 Stuart Carroll       5  Ken Brenkley          21
 Dave Greenwood      21  Bev Shutt             17
@@ -11180,7 +11180,7 @@ Stewart Watson      21  Dave Whelan           18
          Points:    19             Points:    11
 
  Division 2 (Godwin)          Sat 3rd Sep
-Akroydon Victoria 'A'    Littlemoor S &amp; SC 'A'
+Akroydon Victoria 'A'    Littlemoor S & SC 'A'
 Mark McGorlick 'A'  21  Steve Gardner         11
 Steve Livesey       12  Jack Bowes            21
 Chris Wilmott       21  Craig Farquharson      9
@@ -11195,7 +11195,7 @@ Julian Dawson        3  Lee Wider 'A'         21
          Points:    16             Points:    14
 
 Division 3 (Observer)         Sat 3rd Sep
-Littlemoor S &amp; SC 'B'        Greengates 'A'
+Littlemoor S & SC 'B'        Greengates 'A'
 Jim Moorin          17  Colin Rhodes          21
 Terry Laidlaw       21  Darren Metcalf         7
 Kath Bywell         13  Peter Wilson          21
@@ -11210,7 +11210,7 @@ Alan Mazurke        21  Stuart Wilson         19
          Points:    15             Points:    15
 
 Division 3 (Observer)         Sat 3rd Sep
-         Peel           Hipperholme &amp; Lightcliff
+         Peel           Hipperholme & Lightcliff
 David Burns         21  Nick Crowther         10
 Pauline Wilkinson   19  Adrian Megson         21
 Mary Hemsley        14  John Denham           21
@@ -11330,7 +11330,7 @@ Gary Thornton       21  Jim Boocock            8
          Points:    14             Points:    16
 
  Division 4 (Bartle)          Sat 3rd Sep
-    Hollies S &amp; SC            Armley Cons
+    Hollies S & SC            Armley Cons
 Carol Robinson       8  Peter Whitrick        21
 Beverley Watt       21  Granville Stoyles     14
 Gary Dixon          21  Bob Davison           15
@@ -11555,7 +11555,7 @@ Dennis Brown        21  John Stead            17
          Points:    24             Points:     6
 
 Division 7 (Field Pack        Sat 3rd Sep
-Hipperholme &amp; Lightcli          Farsley
+Hipperholme & Lightcli          Farsley
 Paul Barnes         21  Terry Lilley          19
 Janet M Hopper      12  Margaret Gardner      21
 Jennifer Moffat     21  Peter Mylan           15
@@ -11727,7 +11727,7 @@ Derek Relton        21  Mark Connolly         17
          Points:    17             Points:    13
 
  Division 2 (Godwin)          Sat 10th Sep
-Littlemoor S &amp; SC 'A'          Pudsey 'B'
+Littlemoor S & SC 'A'          Pudsey 'B'
 Jack Bowes          21  Mark Morris           17
 Jeffrey Goodall     21  Stewart Watson        16
 Craig Farquharson   21  Tom Lawrence           9
@@ -11742,7 +11742,7 @@ John Armitage       21  Lisa Rice              5
          Points:    25             Points:     5
 
  Division 2 (Godwin)          Sat 10th Sep
-     Rufford 'A'             Elland CA &amp; BC
+     Rufford 'A'             Elland CA & BC
 Dave Whelan         21  Andy Speechley        18
 Guy Barrie          21  Gordon Bradford        5
 Martyn Benson 'A'   21  Vicki Senior           5
@@ -11787,7 +11787,7 @@ Richard Hopley      15  David Burns           21
          Points:    24             Points:     6
 
 Division 3 (Observer)         Sat 10th Sep
-Hipperholme &amp; Lightcli   Littlemoor S &amp; SC 'B'
+Hipperholme & Lightcli   Littlemoor S & SC 'B'
 Nick Crowther       21  William Swailes       20
 Roger Bernard       14  Jim Moorin            21
 Dougie Gordon       21  Alan Mazurke          11
@@ -11892,7 +11892,7 @@ Damian Wright       21  Gerry Smith 'A'       19
          Points:    17             Points:    13
 
  Division 4 (Bartle)          Sat 10th Sep
-     Harold Park             Hollies S &amp; SC
+     Harold Park             Hollies S & SC
 Andrew Walker       21  Cedric Briggs          3
 Stuart Harrison     21  June Lambert           9
 Arthur McGuire      10  Beverley Watt         21
@@ -12147,7 +12147,7 @@ Stan Marsden        13  Peter Ingham          21
          Points:    10             Points:    20
 
 Division 7 (Field Pack        Sat 10th Sep
-      West Royd         Hipperholme &amp; Lightcliff
+      West Royd         Hipperholme & Lightcliff
 Margaret Williams    6  Chris Cox             21
 Jeff Linley         10  Beverley Clayton      21
 Pauline Eccleshall  21  Paul Iredale          10
@@ -12394,7 +12394,7 @@ Joe Stockdale 'A'   21  Guy Barrie            11
          Points:    24             Points:     6
 
  Division 2 (Godwin)          Sat 17th Sep
-    Elland CA &amp; BC       Littlemoor S &amp; SC 'A'
+    Elland CA & BC       Littlemoor S & SC 'A'
 James Senior         9  Martin Fulton         21
 Gordon Bradford     21  Steve Gardner         20
 Andy Speechley      19  Craig Hebbard         21
@@ -12424,7 +12424,7 @@ Steve Emmett        21  Dale Holdsworth       15
          Points:    27             Points:     3
 
 Division 3 (Observer)         Sat 17th Sep
-Hipperholme &amp; Lightcli       Greengates 'A'
+Hipperholme & Lightcli       Greengates 'A'
 Roger Bernard       21  Les Ward              13
 Nick Crowther       18  Tom Powell            21
 Dougie Gordon       16  Colin Rhodes          21
@@ -12439,7 +12439,7 @@ Chris Cox            9  Stuart Wilson         21
          Points:    14             Points:    16
 
 Division 3 (Observer)         Sat 17th Sep
-Littlemoor S &amp; SC 'B'        Hove Edge 'A'
+Littlemoor S & SC 'B'        Hove Edge 'A'
 Robert Baines       12  John Beverley         21
 Jim Moorin          21  Lynne Saxby 'A'       11
 Kath Mazurke        17  Kenny Barker          21
@@ -12574,7 +12574,7 @@ Steve Emmett        21  Stewart Firth         20
          Points:    12             Points:    18
 
  Division 4 (Bartle)          Sat 17th Sep
-    Hollies S &amp; SC         West Bradford 'A'
+    Hollies S & SC         West Bradford 'A'
 John Lambert        19  Bill Hutchinson       21
 Ken Stockhill       21  John Ramsey           12
 Walter Stockhill    21  David Bottomley       17
@@ -12799,7 +12799,7 @@ Peter Ingham        16  Stuart Brook          21
          Points:     9             Points:    21
 
 Division 7 (Field Pack        Sat 17th Sep
-    Crowghyll 'B'       Hipperholme &amp; Lightcliff
+    Crowghyll 'B'       Hipperholme & Lightcliff
 Fred Dalby          15  James Wriggles        21
 Pamela Robinson     21  Mark Crowther         20
 Zoe Brook           21  Janet M Hopper        17
@@ -13031,7 +13031,7 @@ Tom Harney          21  Steve Kane            13
          Points:    21             Points:     9
 
  Division 2 (Godwin)          Sat 24th Sep
-Akroydon Victoria 'A'        Elland CA &amp; BC
+Akroydon Victoria 'A'        Elland CA & BC
 Martin Steele 'A'   18  Gordon Bradford       21
 Gareth Coates 'A'   11  James Senior          21
 Julian Dawson       16  Paul Demetriades      21
@@ -13046,7 +13046,7 @@ Graham Halliday     21  Vicki Senior          12
          Points:    13             Points:    17
 
  Division 2 (Godwin)          Sat 24th Sep
-Littlemoor S &amp; SC 'A'         Guiseley 'A'
+Littlemoor S & SC 'A'         Guiseley 'A'
 John Armitage       21  Gary Whelan 'A'        7
 Jim Moorin          21  Ralph Sissons 'B'     15
 Brian Richards 'A'  21  Andrew Baxter 'B'     10
@@ -13091,7 +13091,7 @@ Stuart Myers        21  Mark Morris           13
          Points:    25             Points:     5
 
 Division 3 (Observer)         Sat 24th Sep
-    Hove Edge 'A'       Hipperholme &amp; Lightcliff
+    Hove Edge 'A'       Hipperholme & Lightcliff
 Peter Martin        19  David Ryding          21
 Christine Barker    11  Martin Firth          21
 Kenny Barker        21  Nick Crowther          0
@@ -13151,7 +13151,7 @@ David Jacques       21  Pauline Wilkinson     12
          Points:    27             Points:     3
 
 Division 3 (Observer)         Sat 24th Sep
-       Hightown          Littlemoor S &amp; SC 'B'
+       Hightown          Littlemoor S & SC 'B'
 Paul Warwick        21  Martin Fulton         16
 Richard Crossland   21  Kath Mazurke          10
 Vinnie Smith        21  Angela Carter         14
@@ -13421,7 +13421,7 @@ Eddie Pells         21  John Dale             13
          Points:    18             Points:    12
 
 Division 7 (Field Pack        Sat 24th Sep
-Hipperholme &amp; Lightcli       Queensbury 'B'
+Hipperholme & Lightcli       Queensbury 'B'
 Paul Barnes         21  John Moore             5
 David Healey        21  Leslie Springham      11
 Janet M Hopper      21  Hazel Kershaw         15

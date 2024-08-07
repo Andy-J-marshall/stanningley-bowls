@@ -10,7 +10,7 @@ Bradford Moor A         3    67   v.   Asa Briggs A           23   120
 Pudsey A               19   107   v.   Crowghyll Park          7    74     
 West Bradford A         7    83   v.   Eccleshill A           19   117     
 Asa Briggs B           17   112   v.   Wibsey A                9    96     
-Littlemoor S &amp; SC A    15   117   v.   Clayton A              11   105     
+Littlemoor S & SC A    15   117   v.   Clayton A              11   105     
 
 --------------------------------------------------------------------------------------------------------------
          Wed 12th May                      Division 1 (Ed Foster)                           
@@ -19,12 +19,12 @@ Wibsey A               11   107   v.   Pudsey A               15   111
 Clayton A              26   126   v.   Bradford Moor A         0    53     
 Eccleshill A           21   109   v.   Asa Briggs B            5    69     
 Asa Briggs A           25   121   v.   West Bradford A         1    57     
-Crowghyll Park         17   107   v.   Littlemoor S &amp; SC A     9    87     
+Crowghyll Park         17   107   v.   Littlemoor S & SC A     9    87     
 --------------------------------------------------------------------------------------------------------------
          Wed 12th May                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury A           17   107   v.   Wyke                    9    80     
-Littlemoor S &amp; SC B    20   124   v.   Salts                   6    89     
+Littlemoor S & SC B    20   124   v.   Salts                   6    89     
 Royd House             14    88   v.   Oakenshaw A            12    87     
 Brackenhill            11    99   v.   Queensbury B           15   113     
 --------------------------------------------------------------------------------------------------------------
@@ -49,14 +49,14 @@ Bradford Moor A         4    74   v.   Wibsey A               22   120
 Pudsey A               22   125   v.   Asa Briggs B            4    76     
 West Bradford A        15   105   v.   Crowghyll Park         11    94     
 Asa Briggs A            8    82   v.   Clayton A              18   109     
-Littlemoor S &amp; SC A    24   126   v.   Eccleshill A            2    75     
+Littlemoor S & SC A    24   126   v.   Eccleshill A            2    75     
 --------------------------------------------------------------------------------------------------------------
          Wed 19th May                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury B           18   107   v.   Royd House              8    84     
 Salts                  18   103   v.   Brackenhill             8    76     
 Oakenshaw A            10    90   v.   Queensbury A           16    98     
-Wyke                   20   113   v.   Littlemoor S &amp; SC B     6    74     
+Wyke                   20   113   v.   Littlemoor S & SC B     6    74     
 --------------------------------------------------------------------------------------------------------------
          Wed 19th May                     Division 3 (Peter Gilroy)                         
 --------------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ West Park              19   113   v.   Bradford Moor B         7    81
 --------------------------------------------------------------------------------------------------------------
          Wed 26th May                      Division 1 (Ed Foster)                           
 --------------------------------------------------------------------------------------------------------------
-Wibsey A               16   115   v.   Littlemoor S &amp; SC A    10    99     
+Wibsey A               16   115   v.   Littlemoor S & SC A    10    99     
 Pudsey A               11    96   v.   Clayton A              15   103     
 Eccleshill A           17   113   v.   Asa Briggs A            9    95     
 Asa Briggs B           21   122   v.   West Bradford A         5    79     
@@ -83,7 +83,7 @@ Crowghyll Park         13   112   v.   Bradford Moor A        13   115
 --------------------------------------------------------------------------------------------------------------
          Wed 26th May                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC B     9    93   v.   Queensbury A           17   112     
+Littlemoor S & SC B     9    93   v.   Queensbury A           17   112     
 Royd House                        v.   Wyke                                To Sun 30th May
 Brackenhill            10    96   v.   Oakenshaw A            16   109     
 Queensbury B            6    88   v.   Salts                  20   121     
@@ -114,12 +114,12 @@ Bradford Moor A        12   104   v.   Eccleshill A           14   110
 Clayton A              26   126   v.   Crowghyll Park          0    61     
 West Bradford A         7    99   v.   Pudsey A               19   125     
 Asa Briggs A           20   119   v.   Wibsey A                6    85     
-Littlemoor S &amp; SC A    26   126   v.   Asa Briggs B            0    38     
+Littlemoor S & SC A    26   126   v.   Asa Briggs B            0    38     
 --------------------------------------------------------------------------------------------------------------
           Wed 2nd Jun                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury A           22   119   v.   Queensbury B            4    74     
-Royd House              9    86   v.   Littlemoor S &amp; SC B    17   106     
+Royd House              9    86   v.   Littlemoor S & SC B    17   106     
 Oakenshaw A            22   119   v.   Salts                   4    74     
 Wyke                   17   118   v.   Brackenhill             9    97     
 --------------------------------------------------------------------------------------------------------------
@@ -141,7 +141,7 @@ Thornton B              9    89   v.   Drighlington           17   106
           Wed 9th Jun                      Division 1 (Ed Foster)                           
 --------------------------------------------------------------------------------------------------------------
 Wibsey A               19   119   v.   West Bradford A         7    90     
-Pudsey A               18   116   v.   Littlemoor S &amp; SC A     8    95     
+Pudsey A               18   116   v.   Littlemoor S & SC A     8    95     
 Eccleshill A           11   106   v.   Clayton A              15   117     
 Asa Briggs B           18   121   v.   Bradford Moor A         8    94     
 Crowghyll Park         12   107   v.   Asa Briggs A           14   119     
@@ -149,7 +149,7 @@ Crowghyll Park         12   107   v.   Asa Briggs A           14   119
           Wed 9th Jun                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Royd House              6    83   v.   Queensbury A           20   121     
-Brackenhill            15   110   v.   Littlemoor S &amp; SC B    11   105     
+Brackenhill            15   110   v.   Littlemoor S & SC B    11   105     
 Queensbury B            5    88   v.   Oakenshaw A            21   124     
 Salts                  14    99   v.   Wyke                   12    97     
 --------------------------------------------------------------------------------------------------------------
@@ -179,11 +179,11 @@ Bradford Moor A         6    86   v.   Pudsey A               20   121
 Clayton A              17   112   v.   Wibsey A                9    92     
 Eccleshill A            7    78   v.   Crowghyll Park         19   112     
 Asa Briggs A            8    86   v.   Asa Briggs B           18   113     
-Littlemoor S &amp; SC A    25   124   v.   West Bradford A         1    48     
+Littlemoor S & SC A    25   124   v.   West Bradford A         1    48     
 --------------------------------------------------------------------------------------------------------------
          Wed 16th Jun                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC B    15   103   v.   Queensbury B           11    93     
+Littlemoor S & SC B    15   103   v.   Queensbury B           11    93     
 Queensbury A           17   111   v.   Salts                   9    85     
 Royd House             17   113   v.   Brackenhill             9    96     
 Wyke                   10    87   v.   Oakenshaw A            16   106     
@@ -209,14 +209,14 @@ Wibsey A               18   114   v.   Eccleshill A            8    86
 Pudsey A               23   126   v.   Asa Briggs A            3    78     
 West Bradford A         6    92   v.   Clayton A              20   121     
 Asa Briggs B            9    81   v.   Crowghyll Park         17    99     
-Littlemoor S &amp; SC A    20   119   v.   Bradford Moor A         6    86     
+Littlemoor S & SC A    20   119   v.   Bradford Moor A         6    86     
 --------------------------------------------------------------------------------------------------------------
          Wed 23rd Jun                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Brackenhill            11   105   v.   Queensbury A           15   110     
 Queensbury B            6    86   v.   Wyke                   20   122     
 Salts                  21   123   v.   Royd House              5    81     
-Oakenshaw A            18   112   v.   Littlemoor S &amp; SC B     8    87     
+Oakenshaw A            18   112   v.   Littlemoor S & SC B     8    87     
 --------------------------------------------------------------------------------------------------------------
          Wed 23rd Jun                     Division 3 (Peter Gilroy)                         
 --------------------------------------------------------------------------------------------------------------
@@ -238,7 +238,7 @@ West Park              11    94   v.   Peel                   15   103
 Bradford Moor A        14    98   v.   West Bradford A        12    96     
 Clayton A              22   122   v.   Asa Briggs B            4    75     
 Eccleshill A            6    85   v.   Pudsey A               20   120     
-Asa Briggs A           19   116   v.   Littlemoor S &amp; SC A     7    88     
+Asa Briggs A           19   116   v.   Littlemoor S & SC A     7    88     
 Crowghyll Park         16   112   v.   Wibsey A               10   103     
 --------------------------------------------------------------------------------------------------------------
          Wed 30th Jun                    Division 2 (Sheila Johnson)                        
@@ -261,7 +261,7 @@ Asa Briggs A           15   102   v.   Bradford Moor A        11    93
 Crowghyll Park          3    69   v.   Pudsey A               23   121     
 Eccleshill A           14    95   v.   West Bradford A        12    90     
 Wibsey A               15   107   v.   Asa Briggs B           11   101     
-Clayton A              22   122   v.   Littlemoor S &amp; SC A     4    76     
+Clayton A              22   122   v.   Littlemoor S & SC A     4    76     
 
 --------------------------------------------------------------------------------------------------------------
          Wed 14th Jul                      Division 1 (Ed Foster)                           
@@ -270,12 +270,12 @@ Pudsey A               21   124   v.   Wibsey A                5    85
 Bradford Moor A         5    79   v.   Clayton A              21   121     
 Asa Briggs B           16   115   v.   Eccleshill A           10   106     
 West Bradford A         7    69   v.   Asa Briggs A           19   104     
-Littlemoor S &amp; SC A    20   113   v.   Crowghyll Park          6    73     
+Littlemoor S & SC A    20   113   v.   Crowghyll Park          6    73     
 --------------------------------------------------------------------------------------------------------------
          Wed 14th Jul                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury B           19   114   v.   Brackenhill             7    85     
-Salts                  25   126   v.   Littlemoor S &amp; SC B     1    65     
+Salts                  25   126   v.   Littlemoor S & SC B     1    65     
 Oakenshaw A            26   126   v.   Royd House              0    43     
 Wyke                   12   115   v.   Queensbury A           14   117     
 --------------------------------------------------------------------------------------------------------------
@@ -300,12 +300,12 @@ Wibsey A               22   125   v.   Bradford Moor A         4    81
 Asa Briggs B           11   106   v.   Pudsey A               15   116     
 Crowghyll Park         23   126   v.   West Bradford A         3    78     
 Clayton A              20   111   v.   Asa Briggs A            6    77     
-Eccleshill A           15   102   v.   Littlemoor S &amp; SC A    11    96     
+Eccleshill A           15   102   v.   Littlemoor S & SC A    11    96     
 --------------------------------------------------------------------------------------------------------------
          Wed 21st Jul                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury A           25   126   v.   Oakenshaw A             1    66     
-Littlemoor S &amp; SC B    15    98   v.   Wyke                   11    89     
+Littlemoor S & SC B    15    98   v.   Wyke                   11    89     
 Royd House             10    93   v.   Queensbury B           16   110     
 Brackenhill            11    93   v.   Salts                  15   104     
 --------------------------------------------------------------------------------------------------------------
@@ -326,7 +326,7 @@ Bradford Moor B         9    84   v.   West Park              17   106
 --------------------------------------------------------------------------------------------------------------
          Wed 28th Jul                      Division 1 (Ed Foster)                           
 --------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC A    19   111   v.   Wibsey A                7    83     
+Littlemoor S & SC A    19   111   v.   Wibsey A                7    83     
 Clayton A              16   117   v.   Pudsey A               10   101     
 Asa Briggs A           15   100   v.   Eccleshill A           11    98     
 West Bradford A        11    92   v.   Asa Briggs B           15    95     
@@ -334,7 +334,7 @@ Bradford Moor A        10   106   v.   Crowghyll Park         16   116
 --------------------------------------------------------------------------------------------------------------
          Wed 28th Jul                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
-Queensbury A           25   126   v.   Littlemoor S &amp; SC B     1    63     
+Queensbury A           25   126   v.   Littlemoor S & SC B     1    63     
 Salts                  15   104   v.   Queensbury B           11    96     
 Oakenshaw A            11    95   v.   Brackenhill            15   105     
 Wyke                   17    99   v.   Royd House              9    84     
@@ -360,11 +360,11 @@ Eccleshill A           18   114   v.   Bradford Moor A         8    88
 Crowghyll Park                    v.   Clayton A                           To Fri 13th Aug
 Pudsey A               26   126   v.   West Bradford A         0    59     
 Wibsey A               20   119   v.   Asa Briggs A            6    84     
-Asa Briggs B           11    91   v.   Littlemoor S &amp; SC A    15   101     
+Asa Briggs B           11    91   v.   Littlemoor S & SC A    15   101     
 --------------------------------------------------------------------------------------------------------------
           Wed 4th Aug                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC B    18   114   v.   Royd House              8    89     
+Littlemoor S & SC B    18   114   v.   Royd House              8    89     
 Brackenhill            17   124   v.   Wyke                    9   110     
 Queensbury B            8    96   v.   Queensbury A           18   119     
 Salts                  15    96   v.   Oakenshaw A            11    85     
@@ -392,7 +392,7 @@ West Bradford B         4    87   v.   Calverley              22   126     From 
          Wed 11th Aug                      Division 1 (Ed Foster)                           
 --------------------------------------------------------------------------------------------------------------
 West Bradford A         6    80   v.   Wibsey A               20   121     
-Littlemoor S &amp; SC A     9    98   v.   Pudsey A               17   116     
+Littlemoor S & SC A     9    98   v.   Pudsey A               17   116     
 Clayton A              25   126   v.   Eccleshill A            1    69     
 Bradford Moor A        16   109   v.   Asa Briggs B           10   101     
 Asa Briggs A           18   117   v.   Crowghyll Park          8    90     
@@ -400,7 +400,7 @@ Asa Briggs A           18   117   v.   Crowghyll Park          8    90
          Wed 11th Aug                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury A           26   126   v.   Royd House              0    60     
-Littlemoor S &amp; SC B    23   113   v.   Brackenhill             3    62     
+Littlemoor S & SC B    23   113   v.   Brackenhill             3    62     
 Oakenshaw A            19   123   v.   Queensbury B            7    93     
 Wyke                   14   108   v.   Salts                  12   106     
 --------------------------------------------------------------------------------------------------------------
@@ -430,12 +430,12 @@ Pudsey A               26   126   v.   Bradford Moor A         0    52
 Wibsey A                9   109   v.   Clayton A              17   124     
 Crowghyll Park          4    71   v.   Eccleshill A           22   117     
 Asa Briggs B           10    96   v.   Asa Briggs A           16   112     
-West Bradford A         6    88   v.   Littlemoor S &amp; SC A    20   119     
+West Bradford A         6    88   v.   Littlemoor S & SC A    20   119     
 --------------------------------------------------------------------------------------------------------------
          Wed 18th Aug                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Brackenhill            20   109   v.   Royd House              6    80     
-Queensbury B            9   101   v.   Littlemoor S &amp; SC B    17   116     
+Queensbury B            9   101   v.   Littlemoor S & SC B    17   116     
 Salts                  12    99   v.   Queensbury A           14   105     
 Oakenshaw A            11    99   v.   Wyke                   15   112     
 --------------------------------------------------------------------------------------------------------------
@@ -464,12 +464,12 @@ Eccleshill A           18   115   v.   Wibsey A                8    87
 Asa Briggs A            6    82   v.   Pudsey A               20   118     
 Clayton A              26   126   v.   West Bradford A         0    59     
 Crowghyll Park          4    90   v.   Asa Briggs B           22   126     
-Bradford Moor A        10    96   v.   Littlemoor S &amp; SC A    16   110     
+Bradford Moor A        10    96   v.   Littlemoor S & SC A    16   110     
 --------------------------------------------------------------------------------------------------------------
          Wed 25th Aug                    Division 2 (Sheila Johnson)                        
 --------------------------------------------------------------------------------------------------------------
 Queensbury A           20   125   v.   Brackenhill             6    90     
-Littlemoor S &amp; SC B     9    86   v.   Oakenshaw A            17   105     
+Littlemoor S & SC B     9    86   v.   Oakenshaw A            17   105     
 Royd House              9    93   v.   Salts                  17   109     
 Wyke                   19   110   v.   Queensbury B            7    75     
 --------------------------------------------------------------------------------------------------------------
@@ -498,7 +498,7 @@ Crowghyll Park          6    80   v.   Clayton A              20   115     From 
 West Bradford A         4    79   v.   Bradford Moor A        22   124     
 Asa Briggs B           10    95   v.   Clayton A              16   113     
 Pudsey A               20   120   v.   Eccleshill A            6    87     
-Littlemoor S &amp; SC A    26   126   v.   Asa Briggs A            0    48     
+Littlemoor S & SC A    26   126   v.   Asa Briggs A            0    48     
 Wibsey A               20   116   v.   Crowghyll Park          6    77     
 
 
@@ -509,7 +509,7 @@ Wibsey A               20   116   v.   Crowghyll Park          6    77
 ====  ====================  ===  ===  ===  =====  
   1.  Clayton A              18   17    1    353
   2.  Pudsey A               18   16    2    345
-  3.  Littlemoor S &amp; SC A    18   11    7    284
+  3.  Littlemoor S & SC A    18   11    7    284
   4.  Wibsey A               18    9    9    246
   5.  Asa Briggs A           18   10    8    230
   6.  Eccleshill A           18    9    9    220
@@ -526,7 +526,7 @@ Wibsey A               20   116   v.   Crowghyll Park          6    77
   2.  Oakenshaw A            14    8    6    211
   3.  Salts                  14    9    5    203
   4.  Wyke                   14    8    6    203
-  5.  Littlemoor S &amp; SC B    14    7    7    170
+  5.  Littlemoor S & SC B    14    7    7    170
   6.  Brackenhill            14    4   10    152
   7.  Queensbury B           14    4   10    142
   8.  Royd House             14    2   12    109
@@ -604,7 +604,7 @@ Garry Woodhead      21  Vince Cleary       14
          Points:    17           Points:    9
 
 Division 1 (Ed Foster)       Wed 5th May
- Littlemoor S &amp; SC A          Clayton A
+ Littlemoor S & SC A          Clayton A
 Kath Bywell         20  Tony Riley         21
 Glenn Miller        21  June Wilson        10
 Kath Mazurke        21  Mick Skwarek       17
@@ -659,7 +659,7 @@ Dave Jowett         16  Kevin Burrage      21
          Points:    25           Points:    1
 
 Division 1 (Ed Foster)      Wed 12th May
-    Crowghyll Park       Littlemoor S &amp; SC A
+    Crowghyll Park       Littlemoor S & SC A
 Dennis Brown        21  Glenn Miller       15
 David Hodgson       21  Angela Carter       9
 Pam Robinson        21  Kath Bywell        13
@@ -681,7 +681,7 @@ Brian Raistrick     16  Stuart Buckle      21
          Points:    17           Points:    9
 
 Division 2 (Sheila Joh      Wed 12th May
- Littlemoor S &amp; SC B            Salts
+ Littlemoor S & SC B            Salts
 Barry Wild          21  Colin White        16
 Billy Thorpe        21  Joan Dean          13
 Michael Jones       21  Brian Tempest      15
@@ -846,7 +846,7 @@ Dave Jowett         21  Jack Summers       12
          Points:     8           Points:   18
 
 Division 1 (Ed Foster)      Wed 19th May
- Littlemoor S &amp; SC A        Eccleshill A
+ Littlemoor S & SC A        Eccleshill A
 John Armitage       21  Mark Reynolds       6
 Glenn Miller        21  Peter Howroyd      18
 Kath Mazurke        21  Robert Renton      12
@@ -890,7 +890,7 @@ Stuart England      11  David Clough       21
          Points:    10           Points:   16
 
 Division 2 (Sheila Joh      Wed 19th May
-         Wyke            Littlemoor S &amp; SC B
+         Wyke            Littlemoor S & SC B
 Malcolm Park        21  Barry Wild          6
 Brian Smith         21  Billy Thorpe       17
 Richard Kerr        21  Michael Jones       1
@@ -989,7 +989,7 @@ Jim Cutbill         16  Malcolm Leeming    21
          Points:    19           Points:    7
 
 Division 1 (Ed Foster)      Wed 26th May
-       Wibsey A          Littlemoor S &amp; SC A
+       Wibsey A          Littlemoor S & SC A
 John Simpson        16  John Armitage      21
 Geoff Hanson        19  Glenn Miller       21
 Peter Crowther      21  Kath Mazurke        6
@@ -1044,7 +1044,7 @@ Archie Wishart      21  John Hainsworth    15
          Points:    13           Points:   13
 
 Division 2 (Sheila Joh      Wed 26th May
- Littlemoor S &amp; SC B        Queensbury A
+ Littlemoor S & SC B        Queensbury A
 Michael Jones        4  Dennis Robinson    21
 Terry Laidlaw       18  Irene Bulman       21
 Barry Wild          16  David Clough       21
@@ -1198,7 +1198,7 @@ Dave Jowett         21  Vince Cleary        6
          Points:    20           Points:    6
 
 Division 1 (Ed Foster)       Wed 2nd Jun
- Littlemoor S &amp; SC A        Asa Briggs B
+ Littlemoor S & SC A        Asa Briggs B
 Philip A Richards   21  Iain Brown          7
 John Armitage       21  Alan Marsden        3
 Alan Mazurke        21  Graham Heede        5
@@ -1220,7 +1220,7 @@ Jeff Hargrave       21  Brian Raistrick    19
          Points:    22           Points:    4
 
 Division 2 (Sheila Joh       Wed 2nd Jun
-      Royd House         Littlemoor S &amp; SC B
+      Royd House         Littlemoor S & SC B
 Harry Ashley        16  Barry Wild         21
 Susan Nasir          8  Billy Thorpe       21
 Jillian Winter      21  Susan Powell        7
@@ -1352,7 +1352,7 @@ Charles Fell        17  Kevin Burrage      21
          Points:    19           Points:    7
 
 Division 1 (Ed Foster)       Wed 9th Jun
-       Pudsey A          Littlemoor S &amp; SC A
+       Pudsey A          Littlemoor S & SC A
 Steve Emmett        21  Jack Glazzard      13
 Pam Lindley         21  Alan Mazurke       20
 Jonathan Orbell     21  Glenn Miller       18
@@ -1407,7 +1407,7 @@ Jeff Hodgson        21  David Smalley      20
          Points:     6           Points:   20
 
 Division 2 (Sheila Joh       Wed 9th Jun
-     Brackenhill         Littlemoor S &amp; SC B
+     Brackenhill         Littlemoor S & SC B
 Jackie Wilkinson    21  Terry Laidlaw      10
 Darryl Bowles       20  Billy Thorpe       21
 Michael Feeley      21  Barry Wild         13
@@ -1572,7 +1572,7 @@ Peter Wilkinson     10  Garry Woodhead     21
          Points:     8           Points:   18
 
 Division 1 (Ed Foster)      Wed 16th Jun
- Littlemoor S &amp; SC A       West Bradford A
+ Littlemoor S & SC A       West Bradford A
 John Armitage       21  Colin Illes         2
 Jack Glazzard       21  Eddie Pells        10
 Alan Mazurke        21  Tony Oldfield       2
@@ -1583,7 +1583,7 @@ Glenn Miller        19  Greg Fairhead      21
          Points:    25           Points:    1
 
 Division 2 (Sheila Joh      Wed 16th Jun
- Littlemoor S &amp; SC B        Queensbury B
+ Littlemoor S & SC B        Queensbury B
 Michael Jones       10  Maureen Holmes     21
 Barry Wild          17  Joan Law           21
 Susan Powell        13  Barbara Wardman    21
@@ -1748,7 +1748,7 @@ Peter Wilkinson     15  David Hodgson      21
          Points:     9           Points:   17
 
 Division 1 (Ed Foster)      Wed 23rd Jun
- Littlemoor S &amp; SC A       Bradford Moor A
+ Littlemoor S & SC A       Bradford Moor A
 Alan Mazurke        21  Mark Durrans       20
 Philip A Richards   21  Alan Naylor         9
 John Armitage       21  Graham Wood        12
@@ -1792,7 +1792,7 @@ Colin White         21  Jeff Hodgson       13
          Points:    21           Points:    5
 
 Division 2 (Sheila Joh      Wed 23rd Jun
-     Oakenshaw A         Littlemoor S &amp; SC B
+     Oakenshaw A         Littlemoor S & SC B
 Stuart Coates       13  Billy Thorpe       21
 John Garside        21  Susan Powell       12
 Malcolm Calam       21  Barry Wild          8
@@ -1913,7 +1913,7 @@ Donald Firth        12  Pam Lindley        21
          Points:     6           Points:   20
 
 Division 1 (Ed Foster)      Wed 30th Jun
-     Asa Briggs A        Littlemoor S &amp; SC A
+     Asa Briggs A        Littlemoor S & SC A
 Peter Wilkinson     11  John Armitage      21
 Kath Sansom         21  Alan Mazurke       13
 Trevor Kendal       21  Glenn Miller        8
@@ -2023,7 +2023,7 @@ John Simpson        18  Garry Woodhead     21
          Points:    15           Points:   11
 
 Division 1 (Ed Foster)       Wed 7th Jul
-      Clayton A          Littlemoor S &amp; SC A
+      Clayton A          Littlemoor S & SC A
 Paul Gill           21  Angela Carter       8
 Jack Summers        21  Jack Glazzard      11
 Peter Oliver        21  Glenn Miller       11
@@ -2078,7 +2078,7 @@ Greg Fairhead        8  Clive Foord        21
          Points:     7           Points:   19
 
 Division 1 (Ed Foster)      Wed 14th Jul
- Littlemoor S &amp; SC A       Crowghyll Park
+ Littlemoor S & SC A       Crowghyll Park
 John Armitage       21  Dennis Brown       12
 Philip A Richards   16  David Hodgson      21
 Kath Mazurke        13  Trevor Hodgson     21
@@ -2100,7 +2100,7 @@ John Armitage       21  Kathy Wilford      15
          Points:    19           Points:    7
 
 Division 2 (Sheila Joh      Wed 14th Jul
-        Salts            Littlemoor S &amp; SC B
+        Salts            Littlemoor S & SC B
 Deryck Welch        21  Barry Wild          3
 Patricia Allison    21  Billy Thorpe        6
 Sue Rymer           21  Glen Merrick       20
@@ -2265,7 +2265,7 @@ Chris Wilson         6  Clive Foord        21
          Points:    20           Points:    6
 
 Division 1 (Ed Foster)      Wed 21st Jul
-     Eccleshill A        Littlemoor S &amp; SC A
+     Eccleshill A        Littlemoor S & SC A
 Robert Renton        2  John Armitage      21
 Peter Howroyd       21  Philip A Richards  14
 Mark Reynolds       21  Kath Mazurke       19
@@ -2287,7 +2287,7 @@ Michael Clare       21  Stuart Coates       6
          Points:    25           Points:    1
 
 Division 2 (Sheila Joh      Wed 21st Jul
- Littlemoor S &amp; SC B            Wyke
+ Littlemoor S & SC B            Wyke
 Terry Laidlaw       21  Malcolm Park        6
 Susan Powell        12  Brian Smith        21
 Michael Jones       18  Stuart Buckle      21
@@ -2408,7 +2408,7 @@ Geraldine Sephton   15  Steve Tomkinson    21
          Points:     9           Points:   17
 
 Division 1 (Ed Foster)      Wed 28th Jul
- Littlemoor S &amp; SC A          Wibsey A
+ Littlemoor S & SC A          Wibsey A
 Philip A Richards    6  Peter Crowther     21
 John Armitage       21  Jason Townend      13
 Alan Mazurke        21  Charles Fell       10
@@ -2463,7 +2463,7 @@ Mark Durrans        21  Archie Wishart     15
          Points:    10           Points:   16
 
 Division 2 (Sheila Joh      Wed 28th Jul
-     Queensbury A        Littlemoor S &amp; SC B
+     Queensbury A        Littlemoor S & SC B
 David Clough        21  Billy Thorpe        8
 Irene Bulman        21  Terry Laidlaw      13
 Michael Clare       21  Barry Wild          8
@@ -2628,7 +2628,7 @@ David Lupton        21  Peter Wilkinson    19
          Points:    20           Points:    6
 
 Division 1 (Ed Foster)       Wed 4th Aug
-     Asa Briggs B        Littlemoor S &amp; SC A
+     Asa Briggs B        Littlemoor S & SC A
 Iain Brown           3  John Armitage      21
 Alan Marsden        21  Kath Mazurke       14
 Graham Heede         5  Glenn Miller       21
@@ -2639,7 +2639,7 @@ Garry Woodhead      20  Angela Carter      21
          Points:    11           Points:   15
 
 Division 2 (Sheila Joh       Wed 4th Aug
- Littlemoor S &amp; SC B         Royd House
+ Littlemoor S & SC B         Royd House
 Barry Wild          13  Nuala Pritchard    21
 Michael Jones       21  Janet Green        20
 Susan Powell        17  Susan Nasir        21
@@ -2782,7 +2782,7 @@ Kevin Burrage       21  Jason Townend      19
          Points:     6           Points:   20
 
 Division 1 (Ed Foster)      Wed 11th Aug
- Littlemoor S &amp; SC A          Pudsey A
+ Littlemoor S & SC A          Pudsey A
 Jack Glazzard        8  Tom Lawrence       21
 John Armitage       21  Luke Sandland      20
 Kath Mazurke        18  Duncan Reeves      21
@@ -2837,7 +2837,7 @@ David Smalley       21  Ivan Larkins        4
          Points:    26           Points:    0
 
 Division 2 (Sheila Joh      Wed 11th Aug
- Littlemoor S &amp; SC B         Brackenhill
+ Littlemoor S & SC B         Brackenhill
 Terry Laidlaw       21  Kathy Wilford       4
 Billy Thorpe        21  Jackie Wilkinson    9
 Michael Jones        8  Darryl Bowles      21
@@ -2991,7 +2991,7 @@ Iain Brown          13  Clive Foord        21
          Points:    10           Points:   16
 
 Division 1 (Ed Foster)      Wed 18th Aug
-   West Bradford A       Littlemoor S &amp; SC A
+   West Bradford A       Littlemoor S & SC A
 Eddie Pells          6  Glenn Miller       21
 Michael Flaherty    10  Philip A Richards  21
 Patrick McNally     17  Kath Mazurke       21
@@ -3013,7 +3013,7 @@ Michael Feeley      21  Nuala Pritchard    12
          Points:    20           Points:    6
 
 Division 2 (Sheila Joh      Wed 18th Aug
-     Queensbury B        Littlemoor S &amp; SC B
+     Queensbury B        Littlemoor S & SC B
 Maureen Holmes      17  Terry Laidlaw      21
 Gerry Hill          10  Billy Thorpe       21
 Barbara Wardman     16  Barry Wild         21
@@ -3178,7 +3178,7 @@ Phil Robinson       16  Garry Woodhead     21
          Points:     4           Points:   22
 
 Division 1 (Ed Foster)      Wed 25th Aug
-   Bradford Moor A       Littlemoor S &amp; SC A
+   Bradford Moor A       Littlemoor S & SC A
 Alan Naylor          8  John Armitage      21
 Mark Durrans        21  Philip A Richards  18
 Derek Briggs        13  Alan Mazurke       21
@@ -3200,7 +3200,7 @@ Irene Bulman        20  Kathy Wilford      21
          Points:    20           Points:    6
 
 Division 2 (Sheila Joh      Wed 25th Aug
- Littlemoor S &amp; SC B         Oakenshaw A
+ Littlemoor S & SC B         Oakenshaw A
 Billy Thorpe        21  John Garside        1
 Susan Powell        16  Stuart England     21
 Michael Jones        6  Marian Firth       21
@@ -3365,7 +3365,7 @@ Pam Lindley         21  Donald Firth       18
          Points:    20           Points:    6
 
 Division 1 (Ed Foster)       Wed 1st Sep
- Littlemoor S &amp; SC A        Asa Briggs A
+ Littlemoor S & SC A        Asa Briggs A
 Jack Glazzard       21  Alan Standing      10
 Glenn Miller        21  Kath Sansom         7
 John Armitage       21  Joyce Appleton      8

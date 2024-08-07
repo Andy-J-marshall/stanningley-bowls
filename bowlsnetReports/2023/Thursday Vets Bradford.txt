@@ -7,7 +7,7 @@
        Thu 4th May                       Division One                                   
 ---------------------------------------------------------------------------------------------------------------
 Ilkley                 131   v.   Wyke A                 124     
-Pudsey A               151   v.   Pudsey Littlemoor A    127     
+Pudsey A               151   v.   Littlemoor A    127     
 Eccleshill A           155   v.   Guiseley A             131     
 Crowghyll A            161   v.   Calverley A            114     
 Asa Briggs A           163   v.   Clayton A              118     
@@ -17,7 +17,7 @@ Asa Briggs A           163   v.   Clayton A              118
 West Bradford A        135   v.   Salts A                140     
 Oakenshaw A            137   v.   Queensbury A           127     
 Wibsey                 149   v.   Harold Club            112     
-Pudsey Littlemoor B    168   v.   Asa Briggs B            65     
+Littlemoor B    168   v.   Asa Briggs B            65     
 Idle A                 159   v.   New Greengates A        94     
 ---------------------------------------------------------------------------------------------------------------
        Thu 4th May                      Division Three                                  
@@ -42,13 +42,13 @@ Drighlington                 v.   Thornton                       To Tue 16th May
 Guiseley A             114   v.   Pudsey A               156     
 Wyke A                 123   v.   Crowghyll A            137     
 Clayton A              137   v.   Eccleshill A           135     
-Pudsey Littlemoor A    124   v.   Ilkley                 144     
+Littlemoor A    124   v.   Ilkley                 144     
 Calverley A            125   v.   Asa Briggs A           155     
 ---------------------------------------------------------------------------------------------------------------
        Thu 11th May                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
 Harold Club            151   v.   Oakenshaw A            123     
-Salts A                152   v.   Pudsey Littlemoor B    121     
+Salts A                152   v.   Littlemoor B    121     
 New Greengates A       113   v.   Wibsey                 157     
 Queensbury A           129   v.   West Bradford A        135     
 Asa Briggs B           160   v.   Idle A                 120     
@@ -78,7 +78,7 @@ Drighlington           126   v.   Thornton                61     From Thu 4th Ma
        Thu 18th May                      Division One                                   
 ---------------------------------------------------------------------------------------------------------------
 Ilkley                 155   v.   Clayton A              106     
-Wyke A                 168   v.   Pudsey Littlemoor A    113     
+Wyke A                 168   v.   Littlemoor A    113     
 Eccleshill A           149   v.   Calverley A            135     
 Crowghyll A            112   v.   Pudsey A               158     
 Asa Briggs A           160   v.   Guiseley A             112     
@@ -88,7 +88,7 @@ Asa Briggs A           160   v.   Guiseley A             112
 West Bradford A        142   v.   New Greengates A       143     
 Salts A                133   v.   Queensbury A           127     
 Wibsey                 162   v.   Asa Briggs B            99     
-Pudsey Littlemoor B    153   v.   Oakenshaw A            114     
+Littlemoor B    153   v.   Oakenshaw A            114     
 Idle A                 143   v.   Harold Club            124     
 ---------------------------------------------------------------------------------------------------------------
        Thu 18th May                     Division Three                                  
@@ -113,12 +113,12 @@ Thornton               100   v.   Bowling                102
 Guiseley A             131   v.   Crowghyll A            125     
 Pudsey A               168   v.   Eccleshill A            99     
 Clayton A              141   v.   Wyke A                 135     
-Pudsey Littlemoor A    155   v.   Asa Briggs A           118     
+Littlemoor A    155   v.   Asa Briggs A           118     
 Calverley A            129   v.   Ilkley                 147     
 ---------------------------------------------------------------------------------------------------------------
        Thu 25th May                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
-Harold Club            117   v.   Pudsey Littlemoor B    150     
+Harold Club            117   v.   Littlemoor B    150     
 Oakenshaw A            113   v.   Wibsey                 164     
 New Greengates A       113   v.   Salts A                154     
 Queensbury A           121   v.   Idle A                 126     
@@ -145,7 +145,7 @@ West Park               94   v.   Thornton                99
 ---------------------------------------------------------------------------------------------------------------
 Ilkley                 152   v.   Guiseley A             113     
 Wyke A                 156   v.   Calverley A            139     
-Clayton A              162   v.   Pudsey Littlemoor A     94     
+Clayton A              162   v.   Littlemoor A     94     
 Crowghyll A            140   v.   Eccleshill A           153     
 Asa Briggs A           149   v.   Pudsey A               120     
 ---------------------------------------------------------------------------------------------------------------
@@ -154,7 +154,7 @@ Asa Briggs A           149   v.   Pudsey A               120
 West Bradford A        163   v.   Harold Club            143     
 Salts A                153   v.   Asa Briggs B           104     
 New Greengates A       150   v.   Queensbury A           148     
-Pudsey Littlemoor B    147   v.   Wibsey                 126     
+Littlemoor B    147   v.   Wibsey                 126     
 Idle A                 153   v.   Oakenshaw A            127     
 ---------------------------------------------------------------------------------------------------------------
        Thu 1st Jun                      Division Three                                  
@@ -176,7 +176,7 @@ Thornton               105   v.   Tyersal                 90
 ---------------------------------------------------------------------------------------------------------------
        Thu 8th Jun                       Division One                                   
 ---------------------------------------------------------------------------------------------------------------
-Guiseley A             137   v.   Pudsey Littlemoor A    110     
+Guiseley A             137   v.   Littlemoor A    110     
 Pudsey A               164   v.   Wyke A                 128     
 Eccleshill A           126   v.   Ilkley                 146     
 Crowghyll A             96   v.   Asa Briggs A           168     
@@ -187,7 +187,7 @@ Calverley A            146   v.   Clayton A              143
 Harold Club            142   v.   Queensbury A           121     
 Oakenshaw A            139   v.   Salts A                150     
 Wibsey                 158   v.   West Bradford A        125     
-Pudsey Littlemoor B    160   v.   Idle A                 122     
+Littlemoor B    160   v.   Idle A                 122     
 Asa Briggs B           164   v.   New Greengates A       110     
 ---------------------------------------------------------------------------------------------------------------
        Thu 8th Jun                      Division Three                                  
@@ -212,14 +212,14 @@ Salts B                109   v.   Thornton               101
 Ilkley                 155   v.   Pudsey A               111     
 Wyke A                 168   v.   Guiseley A             113     
 Clayton A              145   v.   Crowghyll A            131     
-Pudsey Littlemoor A    157   v.   Calverley A             99     
+Littlemoor A    157   v.   Calverley A             99     
 Asa Briggs A           148   v.   Eccleshill A           123     
 ---------------------------------------------------------------------------------------------------------------
        Thu 15th Jun                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
 West Bradford A        149   v.   Oakenshaw A            145     
 Salts A                135   v.   Harold Club            153     
-New Greengates A       128   v.   Pudsey Littlemoor B    149     
+New Greengates A       128   v.   Littlemoor B    149     
 Queensbury A           149   v.   Asa Briggs B           112     
 Idle A                 132   v.   Wibsey                 142     
 ---------------------------------------------------------------------------------------------------------------
@@ -245,7 +245,7 @@ Thornton                78   v.   Bradford Moor          112
 Guiseley A             158   v.   Calverley A            128     
 Pudsey A               150   v.   Clayton A              110     
 Eccleshill A           134   v.   Wyke A                 149     
-Crowghyll A            126   v.   Pudsey Littlemoor A    141     
+Crowghyll A            126   v.   Littlemoor A    141     
 Asa Briggs A           154   v.   Ilkley                 139     
 ---------------------------------------------------------------------------------------------------------------
        Thu 22nd Jun                      Division Two                                   
@@ -253,7 +253,7 @@ Asa Briggs A           154   v.   Ilkley                 139
 Harold Club                  v.   Asa Briggs B                   To Fri 21st Jul
 Oakenshaw A            141   v.   New Greengates A       113     
 Wibsey                 126   v.   Salts A                134     
-Pudsey Littlemoor B    139   v.   Queensbury A           115     
+Littlemoor B    139   v.   Queensbury A           115     
 Idle A                 148   v.   West Bradford A        122     
 ---------------------------------------------------------------------------------------------------------------
        Thu 22nd Jun                     Division Three                                  
@@ -283,12 +283,12 @@ Salts B                102   v.   West Park               86     From Thu 22nd J
 Ilkley                 168   v.   Crowghyll A             89     
 Wyke A                 119   v.   Asa Briggs A           147     
 Clayton A              155   v.   Guiseley A              97     
-Pudsey Littlemoor A    158   v.   Eccleshill A           135     
+Littlemoor A    158   v.   Eccleshill A           135     
 Calverley A             98   v.   Pudsey A               168     
 ---------------------------------------------------------------------------------------------------------------
        Thu 29th Jun                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
-West Bradford A        139   v.   Pudsey Littlemoor B    159     
+West Bradford A        139   v.   Littlemoor B    159     
 Salts A                157   v.   Idle A                 110     
 New Greengates A       146   v.   Harold Club            148     
 Queensbury A           139   v.   Wibsey                 152     
@@ -314,7 +314,7 @@ Thornton                96   v.   Calverley B            115
        Thu 6th Jul                       Division One                                   
 ---------------------------------------------------------------------------------------------------------------
 Wyke A                 145   v.   Ilkley                 143     
-Pudsey Littlemoor A    128   v.   Pudsey A               154     
+Littlemoor A    128   v.   Pudsey A               154     
 Guiseley A             146   v.   Eccleshill A           138     
 Calverley A            111   v.   Crowghyll A            128     
 Clayton A              121   v.   Asa Briggs A           148     
@@ -324,7 +324,7 @@ Clayton A              121   v.   Asa Briggs A           148
 Salts A                161   v.   West Bradford A        128     
 Queensbury A           144   v.   Oakenshaw A            123     
 Harold Club            134   v.   Wibsey                 140     
-Asa Briggs B           143   v.   Pudsey Littlemoor B    123     
+Asa Briggs B           143   v.   Littlemoor B    123     
 New Greengates A       139   v.   Idle A                 147     
 ---------------------------------------------------------------------------------------------------------------
        Thu 6th Jul                      Division Three                                  
@@ -354,13 +354,13 @@ Drighlington            98   v.   Salts B                110     From Thu 15th J
 Pudsey A                     v.   Guiseley A                     To Mon 7th Aug
 Crowghyll A            145   v.   Wyke A                 151     
 Eccleshill A                 v.   Clayton A                      To Fri 21st Jul
-Ilkley                 159   v.   Pudsey Littlemoor A    101     
+Ilkley                 159   v.   Littlemoor A    101     
 Asa Briggs A           161   v.   Calverley A            124     
 ---------------------------------------------------------------------------------------------------------------
        Thu 13th Jul                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
 Oakenshaw A            144   v.   Harold Club            133     
-Pudsey Littlemoor B    146   v.   Salts A                137     
+Littlemoor B    146   v.   Salts A                137     
 Wibsey                 152   v.   New Greengates A       107     
 West Bradford A        147   v.   Queensbury A           150     
 Idle A                 164   v.   Asa Briggs B           115     
@@ -385,7 +385,7 @@ Queensbury B           107   v.   Thornton               106
        Thu 20th Jul                      Division One                                   
 ---------------------------------------------------------------------------------------------------------------
 Clayton A              152   v.   Ilkley                 129     
-Pudsey Littlemoor A    144   v.   Wyke A                 132     
+Littlemoor A    144   v.   Wyke A                 132     
 Calverley A            124   v.   Eccleshill A           137     
 Pudsey A               150   v.   Crowghyll A             97     
 Guiseley A             110   v.   Asa Briggs A           152     
@@ -395,7 +395,7 @@ Guiseley A             110   v.   Asa Briggs A           152
 New Greengates A       143   v.   West Bradford A        144     
 Queensbury A           150   v.   Salts A                122     
 Asa Briggs B           127   v.   Wibsey                 142     
-Oakenshaw A            137   v.   Pudsey Littlemoor B    146     
+Oakenshaw A            137   v.   Littlemoor B    146     
 Harold Club            119   v.   Idle A                 128     
 ---------------------------------------------------------------------------------------------------------------
        Thu 20th Jul                     Division Three                                  
@@ -433,12 +433,12 @@ Clayton B              161   v.   Eccleshill B            89     From Thu 13th J
 Crowghyll A            142   v.   Guiseley A             137     
 Eccleshill A           120   v.   Pudsey A               167     
 Wyke A                 148   v.   Clayton A              142     
-Asa Briggs A           166   v.   Pudsey Littlemoor A    112     
+Asa Briggs A           166   v.   Littlemoor A    112     
 Ilkley                 149   v.   Calverley A            140     
 ---------------------------------------------------------------------------------------------------------------
        Thu 27th Jul                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
-Pudsey Littlemoor B    167   v.   Harold Club             95     
+Littlemoor B    167   v.   Harold Club             95     
 Wibsey                 150   v.   Oakenshaw A            119     
 Salts A                160   v.   New Greengates A       102     
 Idle A                 158   v.   Queensbury A           117     
@@ -470,7 +470,7 @@ Guiseley B             137   v.   Crowghyll B            107     From Thu 13th J
 ---------------------------------------------------------------------------------------------------------------
 Guiseley A             119   v.   Ilkley                 145     
 Calverley A            131   v.   Wyke A                 128     
-Pudsey Littlemoor A    111   v.   Clayton A              159     
+Littlemoor A    111   v.   Clayton A              159     
 Eccleshill A           154   v.   Crowghyll A            137     
 Pudsey A               156   v.   Asa Briggs A           125     
 ---------------------------------------------------------------------------------------------------------------
@@ -479,7 +479,7 @@ Pudsey A               156   v.   Asa Briggs A           125
 Harold Club            139   v.   West Bradford A        140     
 Asa Briggs B           167   v.   Salts A                122     
 Queensbury A           154   v.   New Greengates A       110     
-Wibsey                 122   v.   Pudsey Littlemoor B    115     
+Wibsey                 122   v.   Littlemoor B    115     
 Oakenshaw A            148   v.   Idle A                 139     
 ---------------------------------------------------------------------------------------------------------------
        Thu 3rd Aug                      Division Three                                  
@@ -511,7 +511,7 @@ Idle B                 137   v.   Royd House             139     From Thu 6th Ju
 ---------------------------------------------------------------------------------------------------------------
        Thu 10th Aug                      Division One                                   
 ---------------------------------------------------------------------------------------------------------------
-Pudsey Littlemoor A    148   v.   Guiseley A             112     
+Littlemoor A    148   v.   Guiseley A             112     
 Wyke A                 147   v.   Pudsey A               158     
 Ilkley                 166   v.   Eccleshill A           102     
 Asa Briggs A           157   v.   Crowghyll A            108     
@@ -522,7 +522,7 @@ Clayton A              167   v.   Calverley A             99
 Queensbury A           154   v.   Harold Club            114     
 Salts A                147   v.   Oakenshaw A            123     
 West Bradford A        146   v.   Wibsey                 152     
-Idle A                 140   v.   Pudsey Littlemoor B    120     
+Idle A                 140   v.   Littlemoor B    120     
 New Greengates A       124   v.   Asa Briggs B           155     
 ---------------------------------------------------------------------------------------------------------------
        Thu 10th Aug                     Division Three                                  
@@ -552,14 +552,14 @@ Salts B                101   v.   Drighlington            88     From Thu 17th A
 Pudsey A               162   v.   Ilkley                 109     
 Guiseley A             113   v.   Wyke A                 138     
 Crowghyll A            131   v.   Clayton A              143     
-Calverley A            149   v.   Pudsey Littlemoor A    134     
+Calverley A            149   v.   Littlemoor A    134     
 Eccleshill A           136   v.   Asa Briggs A           161     
 ---------------------------------------------------------------------------------------------------------------
        Thu 17th Aug                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
 Oakenshaw A            159   v.   West Bradford A        134     
 Harold Club            118   v.   Salts A                136     
-Pudsey Littlemoor B    158   v.   New Greengates A       124     
+Littlemoor B    158   v.   New Greengates A       124     
 Asa Briggs B           138   v.   Queensbury A           115     
 Wibsey                 144   v.   Idle A                 130     
 ---------------------------------------------------------------------------------------------------------------
@@ -590,7 +590,7 @@ Eccleshill A           140   v.   Clayton A              151     From Fri 21st J
 Calverley A            144   v.   Guiseley A             151     
 Clayton A              127   v.   Pudsey A               141     
 Wyke A                 138   v.   Eccleshill A           141     
-Pudsey Littlemoor A    159   v.   Crowghyll A             95     
+Littlemoor A    159   v.   Crowghyll A             95     
 Ilkley                 153   v.   Asa Briggs A           128     
 ---------------------------------------------------------------------------------------------------------------
        Thu 24th Aug                      Division Two                                   
@@ -598,7 +598,7 @@ Ilkley                 153   v.   Asa Briggs A           128
 Asa Briggs B           148   v.   Harold Club            128     
 New Greengates A       141   v.   Oakenshaw A            130     
 Salts A                143   v.   Wibsey                 137     
-Queensbury A           149   v.   Pudsey Littlemoor B    118     
+Queensbury A           149   v.   Littlemoor B    118     
 West Bradford A        141   v.   Idle A                 114     
 ---------------------------------------------------------------------------------------------------------------
        Thu 24th Aug                     Division Three                                  
@@ -628,12 +628,12 @@ West Park              126   v.   Salts B                  0     From Thu 24th A
 Crowghyll A            137   v.   Ilkley                 138     
 Asa Briggs A           144   v.   Wyke A                 120     
 Guiseley A             139   v.   Clayton A              141     
-Eccleshill A           161   v.   Pudsey Littlemoor A    108     
+Eccleshill A           161   v.   Littlemoor A    108     
 Pudsey A               166   v.   Calverley A            117     
 ---------------------------------------------------------------------------------------------------------------
        Thu 31st Aug                      Division Two                                   
 ---------------------------------------------------------------------------------------------------------------
-Pudsey Littlemoor B    168   v.   West Bradford A         89     
+Littlemoor B    168   v.   West Bradford A         89     
 Idle A                 159   v.   Salts A                100     
 Harold Club            142   v.   New Greengates A       101     
 Wibsey                 155   v.   Queensbury A            95     
@@ -677,7 +677,7 @@ West Park                    v.   Queensbury B                   From Thu 15th J
   4.  Clayton A              18   11    7    2520
   5.  Wyke A                 18    8   10    2517
   6.  Eccleshill A           18    7   11    2438
-  7.  Pudsey Littlemoor A    18    7   11    2324
+  7.  Littlemoor A    18    7   11    2324
   8.  Guiseley A             18    6   12    2266
   9.  Calverley A            18    3   15    2252
  10.  Crowghyll A            18    4   14    2237
@@ -687,7 +687,7 @@ West Park                    v.   Queensbury B                   From Thu 15th J
  Pos  Team                   Pl    W    L     For
 ====  ====================  ===  ===  ===  ======  
   1.  Wibsey                 18   15    3    2630
-  2.  Pudsey Littlemoor B    18   13    5    2607
+  2.  Littlemoor B    18   13    5    2607
   3.  Salts A                18   13    5    2536
   4.  Idle A                 18   11    7    2492
   5.  West Bradford A        18    7   11    2434
@@ -742,7 +742,7 @@ Paul Hillam          16  Michael Walton     21
         Aggregate:  131        Aggregate:  124
 
      Division One             Thu 4th May
-       Pudsey A           Pudsey Littlemoor A
+       Pudsey A           Littlemoor A
 Stewart Watson       21  Gerald Bromley      8
 Andrew Sykes         21  Alan Mazurke       14
 Dave Rankin          16  Brian Richards     21
@@ -826,7 +826,7 @@ Charles Fell         21  Ken Tindall        11
         Aggregate:  149        Aggregate:  112
 
      Division Two             Thu 4th May
-  Pudsey Littlemoor B        Asa Briggs B
+  Littlemoor B        Asa Briggs B
 Bill Thorpe          21  Iain Brown          1
 Kath Mazurke         21  Bert Haigh          8
 Thomas Powell        21  Steve Fleming       8
@@ -986,7 +986,7 @@ Ian Johnson          21  Ken Gilroy         18
         Aggregate:  137        Aggregate:  135
 
      Division One            Thu 11th May
-  Pudsey Littlemoor A           Ilkley
+  Littlemoor A           Ilkley
 James Moorin          8  Paul Hillam        21
 Phillip Richards     18  Mick Bastow        21
 Glenn Miller         21  Rod Bastow         11
@@ -1022,7 +1022,7 @@ Ken Tindall          21  Ian Gomersal       14
         Aggregate:  151        Aggregate:  123
 
      Division Two            Thu 11th May
-        Salts A           Pudsey Littlemoor B
+        Salts A           Littlemoor B
 Colin White          21  Bill Thorpe        14
 Chris Womersley      21  Alison Stocks       9
 Brian Tempest        21  Bob Baines         14
@@ -1202,7 +1202,7 @@ Mick Bastow          15  Tony Riley         21
         Aggregate:  155        Aggregate:  106
 
      Division One            Thu 18th May
-        Wyke A            Pudsey Littlemoor A
+        Wyke A            Littlemoor A
 Tim Miller           21  Glenn Miller        9
 Steven Ward          21  Bill Swales        18
 Michael Walton       21  Brian Richards     18
@@ -1286,7 +1286,7 @@ Michael Sansome      21  Alan Standing       8
         Aggregate:  162        Aggregate:   99
 
      Division Two            Thu 18th May
-  Pudsey Littlemoor B         Oakenshaw A
+  Littlemoor B         Oakenshaw A
 Alison Stocks        21  Jim Gomersal       17
 Bob Baines            7  Richard Crossland  21
 Glen Merrick         20  Tony Smith         21
@@ -1456,7 +1456,7 @@ Peter Ellis          21  Ian Wilson         20
         Aggregate:  141        Aggregate:  135
 
      Division One            Thu 25th May
-  Pudsey Littlemoor A        Asa Briggs A
+  Littlemoor A        Asa Briggs A
 Bill Swales          18  Kevin Burrage      21
 Roy Carter           21  Malcolm Iles       18
 James Moorin         21  Mick Sansom         1
@@ -1480,7 +1480,7 @@ Adrian Newlove       21  Bob Jeffrey        15
         Aggregate:  129        Aggregate:  147
 
      Division Two            Thu 25th May
-      Harold Club         Pudsey Littlemoor B
+      Harold Club         Littlemoor B
 Sue Williamson       21  Bill Thorpe        14
 Granville Kellett    10  Alison Stocks      21
 Stuart Harrison      14  Thomas Powell      21
@@ -1674,7 +1674,7 @@ David Rayner         21  Roger French       14
         Aggregate:  156        Aggregate:  139
 
      Division One             Thu 1st Jun
-       Clayton A          Pudsey Littlemoor A
+       Clayton A          Littlemoor A
 Alan Peel            21  Kath Mazurke        3
 Tom Harney           21  Alan Mazurke       18
 Peter Oliver         21  Bill Swales        11
@@ -1746,7 +1746,7 @@ Tom Sayer            21  Barbara Wardman    18
         Aggregate:  150        Aggregate:  148
 
      Division Two             Thu 1st Jun
-  Pudsey Littlemoor B           Wibsey
+  Littlemoor B           Wibsey
 Bob Baines           14  Peter Crowther     21
 Bill Thorpe          21  Michael Sansome    11
 Thomas Powell        21  Ann Billington     20
@@ -1880,7 +1880,7 @@ Ronald Broadbent     16  Gerry Smith        21
         Aggregate:  105        Aggregate:   90
 
      Division One             Thu 8th Jun
-      Guiseley A          Pudsey Littlemoor A
+      Guiseley A          Littlemoor A
 Colin Matthewman     21  Roy Carter          9
 Andy Durkin          21  Glenn Miller        5
 Carolyn Matthewman   14  Phillip Richards   21
@@ -1976,7 +1976,7 @@ John Stevenson       21  Susan Cavallari    15
         Aggregate:  158        Aggregate:  125
 
      Division Two             Thu 8th Jun
-  Pudsey Littlemoor B           Idle A
+  Littlemoor B           Idle A
 Brian Richards       21  Alan Sinfield       6
 Bill Thorpe          21  John Rawnsley      15
 Alison Stocks        21  Valerie Riley      13
@@ -2146,7 +2146,7 @@ Tony Riley           21  Dennis Brown        5
         Aggregate:  145        Aggregate:  131
 
      Division One            Thu 15th Jun
-  Pudsey Littlemoor A         Calverley A
+  Littlemoor A         Calverley A
 James Moorin         21  Marion Walton       3
 Phillip Richards     21  Colin Whitley      12
 Bill Swales          13  Derek Whittaker    21
@@ -2194,7 +2194,7 @@ Carol Royston        15  Ken Tindall        21
         Aggregate:  135        Aggregate:  153
 
      Division Two            Thu 15th Jun
-   New Greengates A       Pudsey Littlemoor B
+   New Greengates A       Littlemoor B
 Pauline Wilkinson    21  Bill Thorpe        17
 Alan Broscombe        9  Alison Stocks      21
 Tom Sayer            21  Bob Baines         20
@@ -2356,7 +2356,7 @@ Mick Angus           21  Kevin Wood         14
         Aggregate:  134        Aggregate:  149
 
      Division One            Thu 22nd Jun
-      Crowghyll A         Pudsey Littlemoor A
+      Crowghyll A         Littlemoor A
 Dennis Brown         11  James Moorin       21
 Sylvia Halliday      20  Glen Merrick       21
 Alan Haley           21  Glenn Miller       16
@@ -2404,7 +2404,7 @@ David Billington     15  Maureen Adams      21
         Aggregate:  126        Aggregate:  134
 
      Division Two            Thu 22nd Jun
-  Pudsey Littlemoor B        Queensbury A
+  Littlemoor B        Queensbury A
 Bill Thorpe           8  Norman Swift       21
 Ray Myers            14  Barbara Wardman    21
 Alison Stocks        21  Peter Howell       13
@@ -2574,7 +2574,7 @@ Tom Harney           21  Colin Matthewman   17
         Aggregate:  155        Aggregate:   97
 
      Division One            Thu 29th Jun
-  Pudsey Littlemoor A        Eccleshill A
+  Littlemoor A        Eccleshill A
 Glenn Miller         21  Ken Wilson         10
 James Moorin         21  Steve Alred        13
 Brian Richards       21  Mick Angus         10
@@ -2598,7 +2598,7 @@ Roger French         12  Andrew Sykes       21
         Aggregate:   98        Aggregate:  168
 
      Division Two            Thu 29th Jun
-    West Bradford A       Pudsey Littlemoor B
+    West Bradford A       Littlemoor B
 Geoff Dickson        21  Bill Thorpe        18
 Derek Carroll        16  Steve Bowes        21
 Susan Cavallari      19  Alison Stocks      21
@@ -2780,7 +2780,7 @@ Steven Ward          12  Brian Wheeler      21
         Aggregate:  145        Aggregate:  143
 
      Division One             Thu 6th Jul
-  Pudsey Littlemoor A          Pudsey A
+  Littlemoor A          Pudsey A
 Phillip Richards     14  David Poole        21
 Susan Powell          3  Steve Emmett       21
 Glenn Miller         17  Stuart Hanson      21
@@ -2864,7 +2864,7 @@ Brian Kettle         21  Michael Sansome    12
         Aggregate:  134        Aggregate:  140
 
      Division Two             Thu 6th Jul
-     Asa Briggs B         Pudsey Littlemoor B
+     Asa Briggs B         Littlemoor B
 Alan Marsden         19  Bill Thorpe        21
 Donald Harrison      21  Ray Myers           6
 Paula Graham         21  Alison Stocks      11
@@ -3008,7 +3008,7 @@ Richard Briggs       21  Nigel Wormald      15
         Aggregate:  145        Aggregate:  151
 
      Division One            Thu 13th Jul
-        Ilkley            Pudsey Littlemoor A
+        Ilkley            Littlemoor A
 Paul Hillam          14  Glen Merrick       21
 Alister Keighley     19  James Moorin       21
 Rod Bastow           21  Bill Swales        10
@@ -3044,7 +3044,7 @@ Richard Stewart      21  Brian Kettle       17
         Aggregate:  144        Aggregate:  133
 
      Division Two            Thu 13th Jul
-  Pudsey Littlemoor B           Salts A
+  Littlemoor B           Salts A
 Susan Powell         20  Vanda Greenwood    21
 Alison Stocks        14  John Greenwood     21
 Gerald Bromley       17  Dennis Thorpe      21
@@ -3190,7 +3190,7 @@ Ian Johnson          21  Denis Henderson    13
         Aggregate:  152        Aggregate:  129
 
      Division One            Thu 20th Jul
-  Pudsey Littlemoor A           Wyke A
+  Littlemoor A           Wyke A
 James Moorin         21  Steven Ward         6
 Brian Richards       19  Kevin Wood         21
 Kath Mazurke         21  Richard Kerr       19
@@ -3274,7 +3274,7 @@ Mick Sansom          14  Vince Cleary       21
         Aggregate:  127        Aggregate:  142
 
      Division Two            Thu 20th Jul
-      Oakenshaw A         Pudsey Littlemoor B
+      Oakenshaw A         Littlemoor B
 Tony Smith           18  Bill Thorpe        21
 Peter Brennan        21  Alison Stocks      16
 Jim Gomersal         21  Bob Baines         12
@@ -3468,7 +3468,7 @@ Nigel Wormald        14  Mally Fowler       21
         Aggregate:  148        Aggregate:  142
 
      Division One            Thu 27th Jul
-     Asa Briggs A         Pudsey Littlemoor A
+     Asa Briggs A         Littlemoor A
 John Beverley        21  Angela Carter      16
 Mark Barnett         21  Phillip Richards    8
 Kevin Burrage        21  Bill Swales        18
@@ -3492,7 +3492,7 @@ Andy Thornton        21  Brian Hodgson      17
         Aggregate:  149        Aggregate:  140
 
      Division Two            Thu 27th Jul
-  Pudsey Littlemoor B         Harold Club
+  Littlemoor B         Harold Club
 Bob Baines           21  Stuart Harrison    11
 Bill Thorpe          20  Barbara Bairstow   21
 Alison Stocks        21  Brian Kettle       10
@@ -3698,7 +3698,7 @@ Roger French         21  Nigel Swales       16
         Aggregate:  131        Aggregate:  128
 
      Division One             Thu 3rd Aug
-  Pudsey Littlemoor A          Clayton A
+  Littlemoor A          Clayton A
 Kath Mazurke          6  Mally Fowler       21
 Bill Swales          21  Tony Riley         16
 Alan Mazurke          4  Andrew Walker      21
@@ -3770,7 +3770,7 @@ Peter Howell         21  Chris Burnett      12
         Aggregate:  154        Aggregate:  110
 
      Division Two             Thu 3rd Aug
-        Wibsey            Pudsey Littlemoor B
+        Wibsey            Littlemoor B
 Geoff Hanson         21  Alison Stocks      14
 Michael Skwarek       6  John Stocks        21
 John Stevenson       21  Susan Powell        0
@@ -3928,7 +3928,7 @@ John Coppin          21  Andrew Lancaster   17
         Aggregate:  137        Aggregate:  139
 
      Division One            Thu 10th Aug
-  Pudsey Littlemoor A         Guiseley A
+  Littlemoor A         Guiseley A
 James Moorin         21  Ralph Sissons       6
 Angela Carter        21  Lynne Ogden        11
 Bill Thorpe          10  Barry McCourt      21
@@ -4024,7 +4024,7 @@ Bill Hutchinson      19  Vince Cleary       21
         Aggregate:  146        Aggregate:  152
 
      Division Two            Thu 10th Aug
-        Idle A            Pudsey Littlemoor B
+        Idle A            Littlemoor B
 Colin Richardson     21  Bob Baines         19
 Valerie Riley        21  Alison Stocks      19
 John Rawnsley        21  Susan Powell        2
@@ -4204,7 +4204,7 @@ Eddie Prince         21  Andrew Walker      17
         Aggregate:  131        Aggregate:  143
 
      Division One            Thu 17th Aug
-      Calverley A         Pudsey Littlemoor A
+      Calverley A         Littlemoor A
 Geoff Yewdall         9  Bill Swales        21
 Margaret Wood        21  Glenn Miller       16
 Ricky Kearns         15  James Moorin       21
@@ -4252,7 +4252,7 @@ Granville Kellett     2  John Greenwood     21
         Aggregate:  118        Aggregate:  136
 
      Division Two            Thu 17th Aug
-  Pudsey Littlemoor B      New Greengates A
+  Littlemoor B      New Greengates A
 Bill Thorpe          19  Robert Denby       21
 Susan Powell         13  Vincent Bussingham 21
 Thomas Powell        21  Tom Sayer          10
@@ -4436,7 +4436,7 @@ Jack Bentley          5  Derek Relton       21
         Aggregate:  138        Aggregate:  141
 
      Division One            Thu 24th Aug
-  Pudsey Littlemoor A         Crowghyll A
+  Littlemoor A         Crowghyll A
 Phillip Richards     21  Eddie Prince       16
 Angela Carter        21  Dennis Brown       13
 Susan Powell         12  Sylvia Halliday    21
@@ -4496,7 +4496,7 @@ Chris Womersley      21  Vince Cleary       13
         Aggregate:  143        Aggregate:  137
 
      Division Two            Thu 24th Aug
-     Queensbury A         Pudsey Littlemoor B
+     Queensbury A         Littlemoor B
 Irene Bulman         20  Steve Bowes        21
 Barbara Wardman      17  Gerald Bromley     21
 David Clough         21  Bob Baines          9
@@ -4666,7 +4666,7 @@ Barry McCourt        18  Andrew Walker      21
         Aggregate:  139        Aggregate:  141
 
      Division One            Thu 31st Aug
-     Eccleshill A         Pudsey Littlemoor A
+     Eccleshill A         Littlemoor A
 Peter Jefferson      16  Glenn Miller       21
 Peter Howroyd        21  Bill Swales         9
 Steve Alred          21  Alan Mazurke        9
@@ -4690,7 +4690,7 @@ Stewart Watson       21  Ricky Kearns       19
         Aggregate:  166        Aggregate:  117
 
      Division Two            Thu 31st Aug
-  Pudsey Littlemoor B       West Bradford A
+  Littlemoor B       West Bradford A
 John Stocks          21  John Shoesmith     13
 Thomas Powell        21  Susan Cavallari    13
 Alison Stocks        21  Patrick McNally     8

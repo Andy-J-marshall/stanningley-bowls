@@ -2,18 +2,19 @@ import json
 import os
 from datetime import date
 import utils
+import teamDetails
 import re
 
 # year = str(date.today().year) TODO revert
 year = str(2018)
 
-leaguesDays = utils.teamDays
-players = utils.players
-duplicatePlayerNames = utils.duplicatePlayerNames
-playerResults = utils.returnListOfPlayerStats(utils.teamDays, False)
+leaguesDays = teamDetails.allDays
+players = teamDetails.players
+duplicatePlayerNames = teamDetails.duplicatePlayerNames
+teamsTracking = teamDetails.teamsTracking
+playerResults = utils.returnListOfPlayerStats(leaguesDays, False, players)
 formatName = utils.formatName
 standardiseName = utils.standardiseName
-teamsTracking = utils.teamsTracking
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
 checkFileSize = utils.checkFileSize
@@ -105,7 +106,6 @@ for league in leaguesDays:
                 opponentsName = ''
                 pairsGame = False
                 pairsPartner = ''
-                opponentTeam = ''
                 correctPlayerFound = False
                 homeGame = None
                 awayGame = None

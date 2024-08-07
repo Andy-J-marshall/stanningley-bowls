@@ -1,4 +1,4 @@
-=== West Riding &amp; Spen Valley 2021
+=== West Riding & Spen Valley 2021
 === League Report
 
 
@@ -9,7 +9,7 @@
 Shipley Club 'A'           8   151   v.   Guiseley BC                2   111                     
 Crossgates                           v.   Whitkirk                                               To Wed 21st Jul
 Castleford Town            4   145   v.   Pudsey BC 'A'              7   153                     
-Littlemoor S &amp; SC 'A'      6   149   v.   Spen Victoria 'A'          4   146                     
+Littlemoor S & SC 'A'      6   149   v.   Spen Victoria 'A'          4   146                     
 Pudsey BC 'B'              7   141   v.   Mirfield Old Bank 'A'      3   119                     
 Whitkirk                   4   128   v.   Crossgates                 7   135                     From Wed 21st Jul
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ Whitkirk                   4   128   v.   Crossgates                 7   135    
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hanging Heaton             3   133   v.   Chapel Street              8   144                     
 Farsley                    4   143   v.   Eccleshill                 7   145                     
-Heckmondwike 'A'           9   162   v.   Littlemoor S &amp; SC 'B'      1    92                     
+Heckmondwike 'A'           9   162   v.   Littlemoor S & SC 'B'      1    92                     
 Harold Club 'A'            8   160   v.   Drighlington               2   123                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 19th May                               Division 2                                                      
@@ -56,7 +56,7 @@ Cleckheaton Sports 'C'     7   158   v.   Harold Club 'C'            3   113
 -------------------------------------------------------------------------------------------------------------------------------------------
 Whitkirk                  10   168   v.   Pudsey BC 'B'              0   118                     
 Guiseley BC                          v.   Castleford Town                                        To Wed 28th Jul
-Mirfield Old Bank 'A'      7   154   v.   Littlemoor S &amp; SC 'A'      3   139                     
+Mirfield Old Bank 'A'      7   154   v.   Littlemoor S & SC 'A'      3   139                     
 Spen Victoria 'A'          2   117   v.   Shipley Club 'A'           9   155                     
 Pudsey BC 'A'              8   144   v.   Crossgates                 2   111                     
 Castleford Town            1   134   v.   Guiseley BC               10   161                     From Wed 28th Jul
@@ -66,7 +66,7 @@ Castleford Town            1   134   v.   Guiseley BC               10   161    
 Brighouse Sports 'A'       7   152   v.   Harold Club 'A'            3   120                     
 Chapel Street              9   166   v.   Farsley                    1   125                     
 Drighlington               3   116   v.   Heckmondwike 'A'           8   145                     
-Littlemoor S &amp; SC 'B'      6   152   v.   Hanging Heaton             4   128                     
+Littlemoor S & SC 'B'      6   152   v.   Hanging Heaton             4   128                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 26th May                               Division 2                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,13 +105,13 @@ Pudsey BC 'D'              0    64   v.   Heckmondwike 'C'          11   168
 Shipley Club 'A'           8   161   v.   Mirfield Old Bank 'A'      2   105                     
 Guiseley BC                8   156   v.   Spen Victoria 'A'          2   117                     
 Castleford Town            8   162   v.   Whitkirk                   2   107                     
-Littlemoor S &amp; SC 'A'      7   156   v.   Crossgates                 3   119                     
+Littlemoor S & SC 'A'      7   156   v.   Crossgates                 3   119                     
 Pudsey BC 'B'              3   131   v.   Pudsey BC 'A'              8   159                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 2nd Jun                                Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hanging Heaton             9   167   v.   Drighlington               1   119                     
-Chapel Street              9   165   v.   Littlemoor S &amp; SC 'B'      1   135                     
+Chapel Street              9   165   v.   Littlemoor S & SC 'B'      1   135                     
 Farsley                    5   144   v.   Brighouse Sports 'A'       5   144                     
 Harold Club 'A'            6   149   v.   Eccleshill                 4   128                     
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -149,12 +149,12 @@ Cleckheaton Sports 'C'    10   168   v.   Pudsey BC 'D'              0    85
 -------------------------------------------------------------------------------------------------------------------------------------------
            Fri 4th Jun                                 Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Whitkirk                   8   139   v.   Littlemoor S &amp; SC 'A'      2   132                     From Wed 9th Jun
+Whitkirk                   8   139   v.   Littlemoor S & SC 'A'      2   132                     From Wed 9th Jun
 
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 9th Jun                                 Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Whitkirk                             v.   Littlemoor S &amp; SC 'A'                                  To Fri 4th Jun
+Whitkirk                             v.   Littlemoor S & SC 'A'                                  To Fri 4th Jun
 Crossgates                 8   166   v.   Castleford Town            2   113                     
 Mirfield Old Bank 'A'      8   151   v.   Guiseley BC                2   121                     
 Spen Victoria 'A'          9   155   v.   Pudsey BC 'B'              1   116                     
@@ -164,7 +164,7 @@ Pudsey BC 'A'              6   150   v.   Shipley Club 'A'           4   121
 -------------------------------------------------------------------------------------------------------------------------------------------
 Brighouse Sports 'A'       8   156   v.   Heckmondwike 'A'           2   112                     
 Drighlington               3   116   v.   Chapel Street              8   146                     
-Littlemoor S &amp; SC 'B'      7   140   v.   Harold Club 'A'            3   124                     
+Littlemoor S & SC 'B'      7   140   v.   Harold Club 'A'            3   124                     
 Eccleshill                 9   166   v.   Hanging Heaton             1   110                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 9th Jun                                Division 2                                                      
@@ -201,14 +201,14 @@ Pudsey BC 'D'              1   111   v.   Cleckheaton Sports 'F'    10   167
 Shipley Club 'A'          10   168   v.   Whitkirk                   0   105                     
 Guiseley BC                3   135   v.   Pudsey BC 'A'              8   141                     
 Mirfield Old Bank 'A'      8   150   v.   Spen Victoria 'A'          2   105                     
-Littlemoor S &amp; SC 'A'      9   167   v.   Castleford Town            1    96                     
+Littlemoor S & SC 'A'      9   167   v.   Castleford Town            1    96                     
 Pudsey BC 'B'              6   136   v.   Crossgates                 4   124                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 16th Jun                               Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hanging Heaton             7   131   v.   Brighouse Sports 'A'       3   104                     
 Chapel Street              3   131   v.   Eccleshill                 8   139                     
-Drighlington               7   155   v.   Littlemoor S &amp; SC 'B'      3   106                     
+Drighlington               7   155   v.   Littlemoor S & SC 'B'      3   106                     
 Heckmondwike 'A'           8   159   v.   Farsley                    2   124                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 16th Jun                               Division 2                                                      
@@ -248,7 +248,7 @@ Cleckheaton Sports 'C'     9   163   v.   Heckmondwike 'C'           1   105
 Whitkirk                             v.   Guiseley BC                                            To Fri 30th Jul
 Crossgates                 8   159   v.   Spen Victoria 'A'          2   117                     
 Castleford Town            2   130   v.   Shipley Club 'A'           9   157                     
-Littlemoor S &amp; SC 'A'      9   151   v.   Pudsey BC 'B'              1   105                     
+Littlemoor S & SC 'A'      9   151   v.   Pudsey BC 'B'              1   105                     
 Pudsey BC 'A'             10   168   v.   Mirfield Old Bank 'A'      0    80                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 23rd Jun                               Division 1                                                      
@@ -290,7 +290,7 @@ Pudsey BC 'D'              3    98   v.   Harold Club 'C'            8   162
            Wed 30th Jun                                Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Shipley Club 'A'           7   149   v.   Crossgates                 3   124                     
-Guiseley BC                8   154   v.   Littlemoor S &amp; SC 'A'      2   111                     
+Guiseley BC                8   154   v.   Littlemoor S & SC 'A'      2   111                     
 Mirfield Old Bank 'A'      6   148   v.   Whitkirk                   4   139                     
 Spen Victoria 'A'          4   117   v.   Pudsey BC 'A'              7   150                     
 Pudsey BC 'B'              9   163   v.   Castleford Town            1   126                     
@@ -299,7 +299,7 @@ Pudsey BC 'B'              9   163   v.   Castleford Town            1   126
 -------------------------------------------------------------------------------------------------------------------------------------------
 Chapel Street              9   159   v.   Heckmondwike 'A'           1   108                     
 Drighlington               7   135   v.   Brighouse Sports 'A'       3   133                     
-Littlemoor S &amp; SC 'B'      5   142   v.   Eccleshill                 5   141                     
+Littlemoor S & SC 'B'      5   142   v.   Eccleshill                 5   141                     
 Harold Club 'A'            8   152   v.   Farsley                    2   108                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 30th Jun                               Division 2                                                      
@@ -340,13 +340,13 @@ Cleckheaton Sports 'C'     9   157   v.   Spen Victoria 'D'          1   119
 Whitkirk                             v.   Pudsey BC 'A'                                          To Sat 31st Jul
 Crossgates                           v.   Mirfield Old Bank 'A'                                  To Sun 22nd Aug
 Castleford Town                      v.   Spen Victoria 'A'                                      To Fri 16th Jul
-Littlemoor S &amp; SC 'A'                v.   Shipley Club 'A'                                       To Fri 16th Jul
+Littlemoor S & SC 'A'                v.   Shipley Club 'A'                                       To Fri 16th Jul
 Pudsey BC 'B'                        v.   Guiseley BC                                            To Mon 6th Sep
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 7th Jul                                Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Brighouse Sports 'A'                 v.   Eccleshill                                             To Thu 8th Jul
-Farsley                    8   147   v.   Littlemoor S &amp; SC 'B'      2   118                     
+Farsley                    8   147   v.   Littlemoor S & SC 'B'      2   118                     
 Heckmondwike 'A'                     v.   Hanging Heaton                                         To Thu 15th Jul
 Harold Club 'A'                      v.   Chapel Street                                          To Fri 23rd Jul
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -403,14 +403,14 @@ Shipley Club 'A'           9   160   v.   Pudsey BC 'B'              1   101
 Guiseley BC                          v.   Crossgates                                             To Wed 15th Sep
 Mirfield Old Bank 'A'      6   157   v.   Castleford Town            4   132                     
 Spen Victoria 'A'          8   157   v.   Whitkirk                   2   124                     
-Pudsey BC 'A'              6   133   v.   Littlemoor S &amp; SC 'A'      4   127                     
+Pudsey BC 'A'              6   133   v.   Littlemoor S & SC 'A'      4   127                     
 Crossgates                10   168   v.   Guiseley BC                0    83                     From Wed 15th Sep
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 14th Jul                               Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Hanging Heaton             8   147   v.   Harold Club 'A'            2   122                     
 Drighlington               7   151   v.   Farsley                    3   135                     
-Littlemoor S &amp; SC 'B'      6   149   v.   Brighouse Sports 'A'       4   129                     
+Littlemoor S & SC 'B'      6   149   v.   Brighouse Sports 'A'       4   129                     
 Eccleshill                 8   155   v.   Heckmondwike 'A'           2   134                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 14th Jul                               Division 2                                                      
@@ -457,7 +457,7 @@ Heckmondwike 'C'           4   138   v.   Harold Club 'C'            7   146    
            Fri 16th Jul                                Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Castleford Town            6   145   v.   Spen Victoria 'A'          4   114                     From Wed 7th Jul
-Littlemoor S &amp; SC 'A'      7   156   v.   Shipley Club 'A'           3   126                     From Wed 7th Jul
+Littlemoor S & SC 'A'      7   156   v.   Shipley Club 'A'           3   126                     From Wed 7th Jul
 -------------------------------------------------------------------------------------------------------------------------------------------
            Fri 16th Jul                               Division 3                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -470,7 +470,7 @@ Cleckheaton Moorend        9   161   v.   Royds Park 'B'             1   120    
 Guiseley BC                2   127   v.   Shipley Club 'A'           9   144                     
 Whitkirk                             v.   Crossgates                                             To Wed 19th May
 Pudsey BC 'A'              8   155   v.   Castleford Town            2    95                     
-Spen Victoria 'A'          3   124   v.   Littlemoor S &amp; SC 'A'      8   148                     
+Spen Victoria 'A'          3   124   v.   Littlemoor S & SC 'A'      8   148                     
 Mirfield Old Bank 'A'      8   161   v.   Pudsey BC 'B'              2   120                     
 Crossgates                 8   157   v.   Whitkirk                   2   113                     From Wed 19th May
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -478,7 +478,7 @@ Crossgates                 8   157   v.   Whitkirk                   2   113    
 -------------------------------------------------------------------------------------------------------------------------------------------
 Chapel Street              9   161   v.   Hanging Heaton             1   112                     
 Eccleshill                 9   165   v.   Farsley                    1   120                     
-Littlemoor S &amp; SC 'B'     10   168   v.   Heckmondwike 'A'           0    97                     
+Littlemoor S & SC 'B'     10   168   v.   Heckmondwike 'A'           0    97                     
 Drighlington               3   123   v.   Harold Club 'A'            8   148                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 21st Jul                               Division 2                                                      
@@ -522,7 +522,7 @@ Harold Club 'A'                      v.   Chapel Street                         
 -------------------------------------------------------------------------------------------------------------------------------------------
 Pudsey BC 'B'              7   139   v.   Whitkirk                   3   134                     
 Castleford Town                      v.   Guiseley BC                                            To Wed 26th May
-Littlemoor S &amp; SC 'A'      9   167   v.   Mirfield Old Bank 'A'      1   100                     
+Littlemoor S & SC 'A'      9   167   v.   Mirfield Old Bank 'A'      1   100                     
 Shipley Club 'A'           9   165   v.   Spen Victoria 'A'          1   131                     
 Crossgates                 8   162   v.   Pudsey BC 'A'              2   123                     
 Guiseley BC                3   137   v.   Castleford Town            8   140                     From Wed 26th May
@@ -532,7 +532,7 @@ Guiseley BC                3   137   v.   Castleford Town            8   140    
 Harold Club 'A'            9   163   v.   Brighouse Sports 'A'       1   127                     
 Farsley                    5   142   v.   Chapel Street              5   142                     
 Heckmondwike 'A'           8   150   v.   Drighlington               2   100                     
-Hanging Heaton            10   168   v.   Littlemoor S &amp; SC 'B'      0    97                     
+Hanging Heaton            10   168   v.   Littlemoor S & SC 'B'      0    97                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 28th Jul                               Division 2                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -589,13 +589,13 @@ Whitkirk                   6   147   v.   Pudsey BC 'A'              4   131    
 Mirfield Old Bank 'A'      6   148   v.   Shipley Club 'A'           4   138                     
 Spen Victoria 'A'          3   123   v.   Guiseley BC                8   152                     
 Whitkirk                   8   162   v.   Castleford Town            2   134                     
-Crossgates                           v.   Littlemoor S &amp; SC 'A'                                  To Fri 3rd Sep
+Crossgates                           v.   Littlemoor S & SC 'A'                                  To Fri 3rd Sep
 Pudsey BC 'A'              8   160   v.   Pudsey BC 'B'              2   116                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 4th Aug                                Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Drighlington               3   134   v.   Hanging Heaton             8   148                     
-Littlemoor S &amp; SC 'B'      2   118   v.   Chapel Street              9   154                     
+Littlemoor S & SC 'B'      2   118   v.   Chapel Street              9   154                     
 Brighouse Sports 'A'       9   162   v.   Farsley                    1   103                     
 Eccleshill                 7   161   v.   Harold Club 'A'            3   138                     
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -630,7 +630,7 @@ Pudsey BC 'D'              4   110   v.   Cleckheaton Sports 'C'     7   139
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 11th Aug                                Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Littlemoor S &amp; SC 'A'      8   152   v.   Whitkirk                   2   147                     
+Littlemoor S & SC 'A'      8   152   v.   Whitkirk                   2   147                     
 Castleford Town            2   129   v.   Crossgates                 9   162                     
 Guiseley BC                5   154   v.   Mirfield Old Bank 'A'      5   139                     
 Pudsey BC 'B'              6   140   v.   Spen Victoria 'A'          4   138                     
@@ -640,7 +640,7 @@ Shipley Club 'A'           7   152   v.   Pudsey BC 'A'              3   127
 -------------------------------------------------------------------------------------------------------------------------------------------
 Heckmondwike 'A'           7   158   v.   Brighouse Sports 'A'       3   131                     
 Chapel Street             10   168   v.   Drighlington               0    90                     
-Harold Club 'A'            8   155   v.   Littlemoor S &amp; SC 'B'      2    90                     
+Harold Club 'A'            8   155   v.   Littlemoor S & SC 'B'      2    90                     
 Hanging Heaton             8   150   v.   Eccleshill                 2   130                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 11th Aug                               Division 2                                                      
@@ -685,14 +685,14 @@ Cleckheaton Sports 'C'     9   162   v.   Heckmondwike 'B'           1   102
 Whitkirk                   7   159   v.   Shipley Club 'A'           3   136                     
 Pudsey BC 'A'              8   153   v.   Guiseley BC                2   100                     
 Spen Victoria 'A'          6   150   v.   Mirfield Old Bank 'A'      4   140                     
-Castleford Town            8   153   v.   Littlemoor S &amp; SC 'A'      2   123                     
+Castleford Town            8   153   v.   Littlemoor S & SC 'A'      2   123                     
 Crossgates                 8   157   v.   Pudsey BC 'B'              2   120                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 18th Aug                               Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Brighouse Sports 'A'       6   145   v.   Hanging Heaton             4   142                     
 Eccleshill                 5   133   v.   Chapel Street              6   135                     
-Littlemoor S &amp; SC 'B'      5   148   v.   Drighlington               5   134                     
+Littlemoor S & SC 'B'      5   148   v.   Drighlington               5   134                     
 Farsley                    9   158   v.   Heckmondwike 'A'           1   124                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 18th Aug                               Division 2                                                      
@@ -742,7 +742,7 @@ Crossgates                 7   148   v.   Mirfield Old Bank 'A'      3   135    
 Guiseley BC                7   145   v.   Whitkirk                   3   139                     
 Spen Victoria 'A'          5   144   v.   Crossgates                 5   143                     
 Shipley Club 'A'           9   165   v.   Castleford Town            1   107                     
-Pudsey BC 'B'              3   139   v.   Littlemoor S &amp; SC 'A'      8   144                     
+Pudsey BC 'B'              3   139   v.   Littlemoor S & SC 'A'      8   144                     
 Mirfield Old Bank 'A'      1   102   v.   Pudsey BC 'A'             10   167                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 25th Aug                               Division 1                                                      
@@ -787,7 +787,7 @@ Cleckheaton Sports 'C'     9   165   v.   Gildersome 'B'             1    89
            Wed 1st Sep                                 Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
 Crossgates                 9   165   v.   Shipley Club 'A'           1   104                     
-Littlemoor S &amp; SC 'A'     10   168   v.   Guiseley BC                0    82                     
+Littlemoor S & SC 'A'     10   168   v.   Guiseley BC                0    82                     
 Whitkirk                   8   162   v.   Mirfield Old Bank 'A'      2   118                     
 Pudsey BC 'A'              9   167   v.   Spen Victoria 'A'          1   114                     
 Castleford Town            9   163   v.   Pudsey BC 'B'              1    99                     
@@ -796,7 +796,7 @@ Castleford Town            9   163   v.   Pudsey BC 'B'              1    99
 -------------------------------------------------------------------------------------------------------------------------------------------
 Heckmondwike 'A'           5   132   v.   Chapel Street              6   144                     
 Brighouse Sports 'A'       9   157   v.   Drighlington               1    85                     
-Eccleshill                 9   166   v.   Littlemoor S &amp; SC 'B'      1   113                     
+Eccleshill                 9   166   v.   Littlemoor S & SC 'B'      1   113                     
 Farsley                    7   151   v.   Harold Club 'A'            3   118                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 1st Sep                                Division 2                                                      
@@ -831,7 +831,7 @@ Pudsey BC 'D'              5   126   v.   Heckmondwike 'B'           6   135
 -------------------------------------------------------------------------------------------------------------------------------------------
            Fri 3rd Sep                                 Premier                                                        
 -------------------------------------------------------------------------------------------------------------------------------------------
-Crossgates                 8   153   v.   Littlemoor S &amp; SC 'A'      2   107                     From Wed 4th Aug
+Crossgates                 8   153   v.   Littlemoor S & SC 'A'      2   107                     From Wed 4th Aug
 
 -------------------------------------------------------------------------------------------------------------------------------------------
            Sun 5th Sep                                Division 3                                                      
@@ -854,13 +854,13 @@ Rastrick 'B'               3   128   v.   Cleckheaton Sports 'C'     8   148    
 Pudsey BC 'A'             10   168   v.   Whitkirk                   0   100                     
 Mirfield Old Bank 'A'      1   117   v.   Crossgates                10   154                     
 Spen Victoria 'A'          8   147   v.   Castleford Town            2   125                     
-Shipley Club 'A'          10   168   v.   Littlemoor S &amp; SC 'A'      0    80                     
+Shipley Club 'A'          10   168   v.   Littlemoor S & SC 'A'      0    80                     
 Guiseley BC                8   153   v.   Pudsey BC 'B'              2   118                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 8th Sep                                Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Eccleshill                 8   163   v.   Brighouse Sports 'A'       2   120                     
-Littlemoor S &amp; SC 'B'      6   140   v.   Farsley                    4   135                     
+Littlemoor S & SC 'B'      6   140   v.   Farsley                    4   135                     
 Hanging Heaton             7   155   v.   Heckmondwike 'A'           3   140                     
 Chapel Street                        v.   Harold Club 'A'                                        To Fri 30th Jul
 Harold Club 'A'                      v.   Chapel Street                                          From Fri 23rd Jul. To Tue 14th Sep
@@ -917,14 +917,14 @@ Pudsey BC 'B'              7   155   v.   Shipley Club 'A'           3   136
 Crossgates                           v.   Guiseley BC                                            To Wed 14th Jul
 Castleford Town            7   151   v.   Mirfield Old Bank 'A'      3   124                     
 Whitkirk                   7   151   v.   Spen Victoria 'A'          3   128                     
-Littlemoor S &amp; SC 'A'      2   127   v.   Pudsey BC 'A'              9   136                     
+Littlemoor S & SC 'A'      2   127   v.   Pudsey BC 'A'              9   136                     
 Guiseley BC                7   150   v.   Crossgates                 3   126                     From Wed 14th Jul
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 15th Sep                               Division 1                                                      
 -------------------------------------------------------------------------------------------------------------------------------------------
 Harold Club 'A'            8   154   v.   Hanging Heaton             2   105                     
 Farsley                    9   167   v.   Drighlington               1    81                     
-Brighouse Sports 'A'       9   159   v.   Littlemoor S &amp; SC 'B'      1   103                     
+Brighouse Sports 'A'       9   159   v.   Littlemoor S & SC 'B'      1   103                     
 Heckmondwike 'A'           3   140   v.   Eccleshill                 8   152                     
 -------------------------------------------------------------------------------------------------------------------------------------------
            Wed 15th Sep                               Division 2                                                      
@@ -972,7 +972,7 @@ Cleckheaton Sports 'C'     8   142   v.   Cleckheaton Sports 'F'     2   113
   1.  Pudsey BC 'A'             18   15    3    131
   2.  Shipley Club 'A'          18   12    6    122
   3.  Crossgates                18   12    6    120
-  4.  Littlemoor S &amp; SC 'A'     18   10    8     98
+  4.  Littlemoor S & SC 'A'     18   10    8     98
   5.  Guiseley BC               18    9    9     86
   6.  Whitkirk                  18    8   10     84
   7.  Mirfield Old Bank 'A'     18    7   11     74
@@ -991,7 +991,7 @@ Cleckheaton Sports 'C'     8   142   v.   Cleckheaton Sports 'F'     2   113
   5.  Brighouse Sports 'A'      16    6    8     79
   6.  Farsley                   16    5    9     71
   7.  Heckmondwike 'A'          16    6   10     68
-  8.  Littlemoor S &amp; SC 'B'     16    7    9     58
+  8.  Littlemoor S & SC 'B'     16    7    9     58
   9.  Drighlington              16    4   12     52
 
 === Division 2
@@ -1068,7 +1068,7 @@ Neil Wood           16  Chris Mordue        21
          Points:     4           Points:     7
 
        Premier               Wed 19th May
-Littlemoor S &amp; SC 'A'     Spen Victoria 'A'
+Littlemoor S & SC 'A'     Spen Victoria 'A'
 Simon Wider         21  Peter Ellis         20
 Marc Armitage       21  Malcolm Fowler      15
 John Armitage       21  Kevin Wood          16
@@ -1133,7 +1133,7 @@ Chris Hight         15  Andy Wood           21
          Points:     4           Points:     7
 
       Division 1             Wed 19th May
-   Heckmondwike 'A'     Littlemoor S &amp; SC 'B'
+   Heckmondwike 'A'     Littlemoor S & SC 'B'
 Roy Carter          21  Philip Richards     16
 Philip Berry        21  Jim Moorin           6
 Sean Carter         21  Philip Thornton      9
@@ -1367,7 +1367,7 @@ Phil Hill           21  Dave Rankin         18
          Points:    10           Points:     0
 
        Premier               Wed 26th May
-Mirfield Old Bank 'A'   Littlemoor S &amp; SC 'A'
+Mirfield Old Bank 'A'   Littlemoor S & SC 'A'
 John Hopkinson      21  John Armitage       16
 Andrew Sykes        21  Steven Bowes        20
 Andrew Mitchell     15  Nathan Dobson       21
@@ -1458,7 +1458,7 @@ Tony Carpenter      10  Philip Rayner       21
          Points:     3           Points:     8
 
       Division 1             Wed 26th May
-Littlemoor S &amp; SC 'B'       Hanging Heaton
+Littlemoor S & SC 'B'       Hanging Heaton
 Kath Mazurke        18  Michael Wood        21
 Angela Carter       21  Keith Pinchbeck      4
 Philip Thornton     21  David Armitage       8
@@ -1705,7 +1705,7 @@ Alwyn Beedel        20  Simon Cahill        21
          Points:     8           Points:     2
 
        Premier               Wed 2nd Jun
-Littlemoor S &amp; SC 'A'         Crossgates
+Littlemoor S & SC 'A'         Crossgates
 Paul Bowes          19  Mark A Hughes       21
 John Armitage       21  Ira Jeffers          8
 Jack Bowes          21  Dave Tinker         11
@@ -1744,7 +1744,7 @@ Malcolm Preston     20  Charles Wood        21
          Points:     9           Points:     1
 
       Division 1             Wed 2nd Jun
-    Chapel Street       Littlemoor S &amp; SC 'B'
+    Chapel Street       Littlemoor S & SC 'B'
 David Lightfoot     21  Thomas Powell       19
 Howard Broadbent    21  Philip Richards     19
 Dale Hardcastle     21  Kath Mazurke        18
@@ -1978,7 +1978,7 @@ Stephen Archer      21  Steve Harwood       16
          Points:    10           Points:     0
 
        Premier               Fri 4th Jun
-       Whitkirk         Littlemoor S &amp; SC 'A'
+       Whitkirk         Littlemoor S & SC 'A'
 Simon Cahill         7  Aaron Brine         21
 Emma Tobin          21  Ben Falkingham      10
 Lewis Cooper        21  Steven Bowes        11
@@ -2069,7 +2069,7 @@ Charles Wood        14  Owen Laurie         21
          Points:     3           Points:     8
 
       Division 1             Wed 9th Jun
-Littlemoor S &amp; SC 'B'      Harold Club 'A'
+Littlemoor S & SC 'B'      Harold Club 'A'
 Angela Carter       19  Nigel Swailes       21
 Jim Moorin           7  Jimmy Hearne        21
 Philip Richards     21  Chris Sowden        16
@@ -2329,7 +2329,7 @@ Steve Cooper        21  Malcolm Fowler       9
          Points:     8           Points:     2
 
        Premier               Wed 16th Jun
-Littlemoor S &amp; SC 'A'      Castleford Town
+Littlemoor S & SC 'A'      Castleford Town
 John Armitage       21  Steve Williams      13
 Ben Falkingham      21  Peter Farrar        12
 Jack Bowes          21  Alwyn Beedel         5
@@ -2381,7 +2381,7 @@ David Lightfoot     17  Daniel Teale        21
          Points:     3           Points:     8
 
       Division 1             Wed 16th Jun
-     Drighlington       Littlemoor S &amp; SC 'B'
+     Drighlington       Littlemoor S & SC 'B'
 Jonathan Gamble     21  Angela Carter        1
 Tony Carpenter      21  Kath Mazurke        15
 Trevor Worsman      15  Philip Thornton     21
@@ -2628,7 +2628,7 @@ Alwyn Beedel        19  Graeme Dytiche      21
          Points:     2           Points:     9
 
        Premier               Wed 23rd Jun
-Littlemoor S &amp; SC 'A'       Pudsey BC 'B'
+Littlemoor S & SC 'A'       Pudsey BC 'B'
 Steven Bowes         4  Wendy Shimbles      21
 Jack Bowes          21  Simon Metcalfe      14
 Ben Falkingham      21  Andy Hodgson        11
@@ -2914,7 +2914,7 @@ Paul Wilczynski     21  Nigel Cranston      10
          Points:     7           Points:     3
 
        Premier               Wed 30th Jun
-     Guiseley BC        Littlemoor S &amp; SC 'A'
+     Guiseley BC        Littlemoor S & SC 'A'
 Graham Oliver       21  John Armitage       15
 Joe Stockdale       21  Glen Pratt           7
 Bob Jeffries        13  Ben Falkingham      21
@@ -2992,7 +2992,7 @@ Tony Carpenter      12  Nigel Briggs        21
          Points:     7           Points:     3
 
       Division 1             Wed 30th Jun
-Littlemoor S &amp; SC 'B'         Eccleshill
+Littlemoor S & SC 'B'         Eccleshill
 Philip Thornton     19  Paul Hillam         21
 Jim Moorin          21  Graham Chaffer       9
 Angela Carter       19  Will Gilroy         21
@@ -3200,7 +3200,7 @@ John Bradley        21  Darren Munt         19
          Points:     9           Points:     1
 
       Division 1             Wed 7th Jul
-       Farsley          Littlemoor S &amp; SC 'B'
+       Farsley          Littlemoor S & SC 'B'
 Richard Whitaker    11  Philip Thornton     21
 Derek Pickering     21  Glenn Miller        17
 Jim Swailes         21  Thomas Powell       15
@@ -3369,7 +3369,7 @@ Chris Ellis         21  Simon Cahill         8
          Points:     8           Points:     2
 
        Premier               Wed 14th Jul
-    Pudsey BC 'A'       Littlemoor S &amp; SC 'A'
+    Pudsey BC 'A'       Littlemoor S & SC 'A'
 Stuart Hanson       12  Aaron Brine         21
 Thomas Hanson       21  Glen Pratt           5
 Josh Mordue         21  Simon Wider         17
@@ -3421,7 +3421,7 @@ David Scott         21  Peter Scott         15
          Points:     7           Points:     3
 
       Division 1             Wed 14th Jul
-Littlemoor S &amp; SC 'B'    Brighouse Sports 'A'
+Littlemoor S & SC 'B'    Brighouse Sports 'A'
 Alan Mazurke        16  Mark Connolly       21
 Jim Moorin          14  Nigel Marshall      21
 Thomas Powell       20  Simon Cresswell     21
@@ -3694,7 +3694,7 @@ Steve Cox           19  Mark Goodall        21
          Points:     6           Points:     4
 
        Premier               Fri 16th Jul
-Littlemoor S &amp; SC 'A'      Shipley Club 'A'
+Littlemoor S & SC 'A'      Shipley Club 'A'
 Steven Bowes        19  Matthew Jacques     21
 Mark Allman         21  Daniel Metcalfe     14
 John Armitage       19  Craig Fenton        21
@@ -3759,7 +3759,7 @@ Ian Shaw            21  Neil Wood            7
          Points:     8           Points:     2
 
        Premier               Wed 21st Jul
-  Spen Victoria 'A'     Littlemoor S &amp; SC 'A'
+  Spen Victoria 'A'     Littlemoor S & SC 'A'
 Philip Smith        16  Simon Wider         21
 Mark Ellis          12  Marc Armitage       21
 Malcolm Fowler       8  John Armitage       21
@@ -3824,7 +3824,7 @@ Andy Wood           18  Chris Hight         21
          Points:     9           Points:     1
 
       Division 1             Wed 21st Jul
-Littlemoor S &amp; SC 'B'      Heckmondwike 'A'
+Littlemoor S & SC 'B'      Heckmondwike 'A'
 Kath Mazurke        21  John Stocks         11
 Angela Carter       21  Philip Rayner       20
 Philip Thornton     21  Russell Harker      17
@@ -4058,7 +4058,7 @@ Pam Lindley         11  Kristian Walder     21
          Points:     7           Points:     3
 
        Premier               Wed 28th Jul
-Littlemoor S &amp; SC 'A'   Mirfield Old Bank 'A'
+Littlemoor S & SC 'A'   Mirfield Old Bank 'A'
 Jack Bowes          21  Christopher Davies   9
 Marc Armitage       21  Andrew Sykes         5
 John Armitage       20  Andrew Mitchell     21
@@ -4149,7 +4149,7 @@ Russell Harker      21  Derek Goor           1
          Points:     8           Points:     2
 
       Division 1             Wed 28th Jul
-    Hanging Heaton      Littlemoor S &amp; SC 'B'
+    Hanging Heaton      Littlemoor S & SC 'B'
 Jennifer Pitchforth 21  Philip Richards     11
 David Armitage      21  Jim Moorin          10
 Jack Green          21  Angela Carter       19
@@ -4448,7 +4448,7 @@ Ann Billington      11  Stephen Wainwright  21
          Points:     3           Points:     8
 
       Division 1             Wed 4th Aug
-Littlemoor S &amp; SC 'B'       Chapel Street
+Littlemoor S & SC 'B'       Chapel Street
 Philip Thornton     10  Roger Birdsall      21
 Jim Moorin          21  Owen Laurie         14
 Kath Mazurke         9  Kyle Rennison       21
@@ -4656,7 +4656,7 @@ Mary Spears          2  David Griffiths     21
          Points:     4           Points:     7
 
        Premier               Wed 11th Aug
-Littlemoor S &amp; SC 'A'          Whitkirk
+Littlemoor S & SC 'A'          Whitkirk
 Simon Wider         21  Craig Hebberd       18
 Aaron Brine         21  Lewis Cooper        16
 Jack Bowes          17  Kristian Walder     21
@@ -4747,7 +4747,7 @@ Howard Broadbent    21  Derek Goor          12
          Points:    10           Points:     0
 
       Division 1             Wed 11th Aug
-   Harold Club 'A'      Littlemoor S &amp; SC 'B'
+   Harold Club 'A'      Littlemoor S & SC 'B'
 Nigel Wormald       21  Thomas Powell        5
 Chris Sowden        21  Angela Carter       10
 Jimmy Hearne        21  Jim Moorin           8
@@ -5033,7 +5033,7 @@ Jason McMahon       21  Christopher Davies  10
          Points:     6           Points:     4
 
        Premier               Wed 18th Aug
-   Castleford Town      Littlemoor S &amp; SC 'A'
+   Castleford Town      Littlemoor S & SC 'A'
 Steve Williams      21  Marc Armitage       15
 Alwyn Beedel        21  Jack Bowes          12
 Peter Farrar        21  Ben Falkingham      20
@@ -5085,7 +5085,7 @@ Andy Wood           21  Scott Bailey        10
          Points:     5           Points:     6
 
       Division 1             Wed 18th Aug
-Littlemoor S &amp; SC 'B'        Drighlington
+Littlemoor S & SC 'B'        Drighlington
 Jim Moorin          16  Jonathan Gamble     21
 Glenn Miller        17  Derek Goor          21
 Angela Carter       16  Trevor Worsman      21
@@ -5384,7 +5384,7 @@ Paul Wilczynski     21  Alwyn Beedel         6
          Points:     9           Points:     1
 
        Premier               Wed 25th Aug
-    Pudsey BC 'B'       Littlemoor S &amp; SC 'A'
+    Pudsey BC 'B'       Littlemoor S & SC 'A'
 Andy Hodgson        21  Ben Falkingham      10
 Stewart Watson      19  John Armitage       21
 Wendy Shimbles      15  Nathan Dobson       21
@@ -5670,7 +5670,7 @@ Andy Limbert        18  Daniel Metcalfe     21
          Points:     9           Points:     1
 
        Premier               Wed 1st Sep
-Littlemoor S &amp; SC 'A'        Guiseley BC
+Littlemoor S & SC 'A'        Guiseley BC
 Aaron Brine         21  Andrew Durkin        8
 Steven Bowes        21  Tommy Cater          9
 Simon Wider         21  Martin Wilson       12
@@ -5748,7 +5748,7 @@ Peter Owen          21  Tony Carpenter       8
          Points:     9           Points:     1
 
       Division 1             Wed 1st Sep
-      Eccleshill        Littlemoor S &amp; SC 'B'
+      Eccleshill        Littlemoor S & SC 'B'
 Will Gilroy         21  Glenn Miller        20
 Daniel Teale        21  Jim Moorin           4
 Andy Howie          21  Alan Mazurke        15
@@ -5969,7 +5969,7 @@ Josie Wadsworth      7  Trevor Jackson      21
          Points:     5           Points:     6
 
        Premier               Fri 3rd Sep
-      Crossgates        Littlemoor S &amp; SC 'A'
+      Crossgates        Littlemoor S & SC 'A'
 Garreth Lally       21  Simon Wider         13
 Peter Wilcox        21  Adam Wider          14
 Mark A Hughes       17  Aaron Brine         21
@@ -6060,7 +6060,7 @@ Andy Gallagher      17  Martin Fulton       21
          Points:     8           Points:     2
 
        Premier               Wed 8th Sep
-   Shipley Club 'A'     Littlemoor S &amp; SC 'A'
+   Shipley Club 'A'     Littlemoor S & SC 'A'
 Chris Bedford       21  John Armitage        4
 David Bland         21  Aaron Brine         14
 Graeme Dytiche      21  Glen Pratt           8
@@ -6099,7 +6099,7 @@ Daniel Teale        21  Mark Connolly        2
          Points:     8           Points:     2
 
       Division 1             Wed 8th Sep
-Littlemoor S &amp; SC 'B'          Farsley
+Littlemoor S & SC 'B'          Farsley
 Alan Mazurke        21  Stuart Brook        12
 Philip Thornton     21  Derek Pickering     18
 Angela Carter        2  Chris Hight         21
@@ -6386,7 +6386,7 @@ Simon Cahill        21  Mark Goodall         5
          Points:     7           Points:     3
 
        Premier               Wed 15th Sep
-Littlemoor S &amp; SC 'A'       Pudsey BC 'A'
+Littlemoor S & SC 'A'       Pudsey BC 'A'
 Marc Armitage       21  Luke Sandland        6
 Jack Bowes          20  Stuart Hanson       21
 Steven Bowes        18  James Hanson        21
@@ -6438,7 +6438,7 @@ Chris Hight         21  Charles Wood         4
          Points:     9           Points:     1
 
       Division 1             Wed 15th Sep
- Brighouse Sports 'A'   Littlemoor S &amp; SC 'B'
+ Brighouse Sports 'A'   Littlemoor S & SC 'B'
 Nigel Marshall      21  Billy Thorpe         4
 Nigel Briggs        21  Angela Carter        5
 Stuart Fletcher     21  Philip Richards     11

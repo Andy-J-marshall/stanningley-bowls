@@ -157,7 +157,7 @@ Update the `teamDetails.py` script with the updated list of players, traitorPlay
 
 Create a directory for the new year in the `/bowlsnetReports`.
 
-Update the `Utils.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to teamDays in `teamDetails.py` will need to be removed from here).
+Update the `teamDetails.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
 
 After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
@@ -168,8 +168,6 @@ If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js
 
 Add fixtures to Google calendar for all teams.
 
-Add the `clubCupWinner` for the current year in `teamDetails.py`.
-
 Update `History.js` with any trophies won and `clubCupWinners.json` with the club cup winner.
 
 Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
@@ -179,9 +177,9 @@ If adding or removing a second team, updated the following properties in `teamDe
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 
 Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
+Change the `historicTeamData` property in `config.js` to include league data for any new teams or second teams.
+Update the `allTeamsInLeaguesSince2013` array in `config.js` to include an extra keys (second team teams need to be suffixed with ' (b)'). 
 Update any URLs if the Bowlsnet link has changed.
-Update `playersHelper.js` with the stats for the second team. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
-Update `teamStats.js` to add the new team inside a `IndividualTeamStats` component for the desired day.
-Update `playerRecords.js` add the new team inside a `RecordsTableDisplay` component for the desired day.
+Update `playersHelper.js` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
 
 Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.
