@@ -93,9 +93,9 @@ const live = {
     leagues: 'Leeds',
     allTeamsInLeaguesSince2013: [
         'monday combined leeds',
-        'monday airedale & wharfedale',
-        'monday airedale & wharfedale (a)',
-        'monday airedale & wharfedale (b)',
+        'monday airewharfe',
+        'monday airewharfe (a)',
+        'monday airewharfe (b)',
         'tuesday vets leeds',
         'tuesday leeds',
         'wednesday half holiday leeds',
@@ -117,10 +117,7 @@ const live = {
     ],
     historicTeamInfo: [
         {
-            teamNames: [
-                'monday combined leeds',
-                'monday airedale & wharfedale',
-            ],
+            teamNames: ['monday combined leeds', 'monday airewharfe'],
             bTeamForLeagueBool: true,
         },
         {

@@ -49,13 +49,13 @@ function YearSelectDropdown(props) {
                     <Dropdown.Item id="option2017" eventKey="2017">
                         2017
                     </Dropdown.Item>
+                    <Dropdown.Item id="option2016" eventKey="2016">
+                        2016
+                    </Dropdown.Item>
                 </div>
                 {/* These years don't have team stats or results */}
                 {showOldYears && (
                     <div id="legacy-stat-years-options">
-                        <Dropdown.Item id="option2016" eventKey="2016">
-                            2016
-                        </Dropdown.Item>
                         <Dropdown.Item id="option2015" eventKey="2015">
                             2015
                         </Dropdown.Item>

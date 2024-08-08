@@ -16,9 +16,65 @@ function sleep() {
 
 const teams = [
   {
-    day: 'Leeds Ladies',
-    url: '/LeedsLadies?DB=' + year,
-  }
+    day: 'Monday Combined Leeds',
+    url: '/Leeds-MonComb',
+  },
+  {
+    day: 'Tuesday Vets Leeds',
+    url: '/Leeds-TueVets',
+  },
+  {
+    day: 'Tuesday Leeds',
+    url: '/Leeds-Tue',
+  },
+  {
+    day: 'Wednesday Half Holiday Leeds',
+    url: '/Leeds-Wed',
+  },
+  {
+    day: 'Wednesday Pairs AireWharfe',
+    url: '/AW-WedPairs',
+  },
+  {
+    day: 'Thursday Vets Leeds',
+    url: '/Leeds-ThuVets',
+  },
+  {
+    day: 'Saturday Leeds',
+    url: '/Leeds-Sat',
+  },
+  {
+    day: 'Tuesday Mirfield',
+    url: '/Mirfield',
+  },
+  {
+    day: 'Wednesday Spen Valley',
+    url: '/WestRiding',
+  },
+  {
+    day: 'Monday AireWharfe',
+    url: '/AW-Mon',
+  },
+  {
+    day: 'Tuesday AireWharfe',
+    url: '/AW-Vets',
+  },
+  {
+    day: 'Monday Bradford',
+    url: '/Bradford-Mon',
+  },
+  {
+    day: 'Wednesday Half Holiday Bradford',
+    url: '/Bradford-HalfHol',
+  },
+  {
+    day: 'Thursday Vets Bradford',
+    url: '/Bradford-Vets',
+  },
+  {
+    day: 'Saturday Bradford',
+    url: '/Bradford-Sat',
+  },
 ];
 
 for (const team of teams) {
@@ -45,7 +101,7 @@ for (const team of teams) {
     } catch (error) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
-    
+
     // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
@@ -94,9 +150,9 @@ for (const team of teams) {
     ]);
 
     // Create text file
-    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     await newPage.bringToFront();
-    const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
-    fs.writeFileSync(filePath, value);
+    const value = await newPage.$eval('body > pre', (el) => el.textContent);
+    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
+    fs.writeFileSync(filePath, value as string);
   });
 }

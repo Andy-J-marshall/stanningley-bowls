@@ -14,7 +14,7 @@ const config: PlaywrightTestConfig = {
   forbidOnly: !!process.env.CI,
   retries: 1,
   workers: process.env.CI ? 5 : 8,
-  maxFailures: 10,
+  maxFailures: 8,
   reporter: 'html',
   outputDir: 'test-results/',
   webServer: {

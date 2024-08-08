@@ -145,6 +145,7 @@ function History() {
                     <h5>League</h5>
                     <ListGroup>
                         <ListGroupItem>2017</ListGroupItem>
+                        <ListGroupItem>2019</ListGroupItem>
                         <ListGroupItem>2023</ListGroupItem>
                     </ListGroup>
                 </Col>
