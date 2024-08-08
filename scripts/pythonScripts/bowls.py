@@ -98,6 +98,7 @@ for team in teamDays:
                         break
 
         #### TEAM STATS ####
+        # TODO total agg for and against not working for Mon AW and Sat Brad
         # Find team's home and away games
         homeRow = []
         awayRow = []

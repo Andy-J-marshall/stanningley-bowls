@@ -4,8 +4,16 @@ teamNames = ['Stanningley', 'Stanningley A', 'Stanningley B',
 preferredTeamName = 'Stanningley'
 
 # Days played (duplicate days for second teams)
-teamDays = ['Monday Combined Leeds', 'Tuesday Vets Leeds', 'Tuesday Leeds',
-            'Wednesday Half Holiday Leeds', 'Wednesday Pairs AireWharfe', 'Thursday Vets Leeds', 'Saturday Leeds (A)', 'Saturday Leeds (B)' ]
+teamDays = [
+    'Monday Combined Leeds',
+    'Tuesday Vets Leeds',
+    'Tuesday Leeds',
+    'Wednesday Half Holiday Leeds',
+    'Wednesday Pairs AireWharfe', 
+    'Thursday Vets Leeds', 
+    'Saturday Leeds (A)', 
+    'Saturday Leeds (B)' 
+]
 
 # Every player (lowercase)
 players = [
@@ -32,9 +40,16 @@ traitorPlayers = {
     'Saturday Leeds': ['clifford brogie', 'neil porter']
 }
 
-otherLeagues = ['Tuesday Mirfield', 'Wednesday Spen Valley', 'Monday AireDale & Wharfedale',
-                'Tuesday AireDale & Wharfedale', 'Monday Bradford', 'Wednesday Half Holiday Bradford',
-                'Thursday Vets Bradford', 'Saturday Bradford']
+otherLeagues = [
+    'Tuesday Mirfield', 
+    'Wednesday Spen Valley',
+    'Monday AireDale & Wharfedale',
+    'Tuesday AireDale & Wharfedale',
+    'Monday Bradford',
+    'Wednesday Half Holiday Bradford',
+    'Thursday Vets Bradford', 
+    'Saturday Bradford'
+]
 allDays = teamDays + otherLeagues
 extraPlayers = []  # this is to track players who only play for a different team
 players = players + extraPlayers
