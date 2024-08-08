@@ -2,7 +2,7 @@ import json
 import os
 from datetime import date
 import teamDetailsPudsey
-import utilsPudsey
+import utils
 import re
 
 year = str(date.today().year)
@@ -13,12 +13,12 @@ displayTeamName = teamDetailsPudsey.preferredTeamName
 players = teamDetailsPudsey.players
 duplicateTeamMemberNames = teamDetailsPudsey.duplicateTeamMemberNames
 traitorPlayers = teamDetailsPudsey.traitorPlayers
-playerStats = utilsPudsey.returnListOfPlayerStats(teamDetailsPudsey.teamDays, True)
-formatName = utilsPudsey.formatName
-cupTextList = utilsPudsey.cupText
-returnTotalAggAvailablePerGame = utilsPudsey.returnTotalAggAvailablePerGame
-sanityChecksOnPlayerStats = utilsPudsey.sanityChecksOnPlayerStats
-checkFileSize = utilsPudsey.checkFileSize
+playerStats = utils.returnListOfPlayerStats(teamDays, True, players)
+formatName = utils.formatName
+cupTextList = utils.cupText
+returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
+sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
+checkFileSize = utils.checkFileSize
 teamsProcessed = []
 
 print('UPDATING STATS:', teamNames[0].upper())
@@ -26,8 +26,7 @@ print('UPDATING STATS:', teamNames[0].upper())
 for team in teamDays:
     print('Updating Stats: ' + team)
     
-    # TODO add the (A') back onto the team name for Pudsey players
-    
+    teamNameToStoreData = team.replace(' (A)', '').lower()
     league = team.replace(' (A)', '').replace(' (B)', '').replace(' (C)', '').replace(' (D)', '')
 
     if team in teamsProcessed:
@@ -260,7 +259,7 @@ for team in teamDays:
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
-                playerStats[playerName][team.lower()]['games'] += 1
+                playerStats[playerName][teamNameToStoreData]['games'] += 1
                 playerStats[playerName]['totalGamesPlayed'] += 1
 
                 playersResult = playerNameForResult + ' ' + \
@@ -271,7 +270,7 @@ for team in teamDays:
 
                 # Wins
                 if aggregate > opponentAggregate:
-                    playerStats[playerName][team.lower()]['wins'] += 1
+                    playerStats[playerName][teamNameToStoreData]['wins'] += 1
                     if pairsGame:
                         playerStats[playerName]['winningPairsPartners'].append(pairsPartner)
                         playerStats[playerName]['pairWins'] += 1
@@ -309,7 +308,7 @@ for team in teamDays:
                 playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
-                playerStats[playerName][team.lower()]['aggDiff'] += aggregate - \
+                playerStats[playerName][teamNameToStoreData]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
                     playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(team)

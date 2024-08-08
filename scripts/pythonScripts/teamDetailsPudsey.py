@@ -18,6 +18,7 @@ teamDays = [
     'Thursday Vets Bradford (A)', 'Thursday Vets Bradford (B)',
     'Saturday Bradford (A)', 'Saturday Bradford (B)', 'Saturday Bradford (C)'
 ]
+# TODO remove comments
 # No AW Mon B team pre 2023
 # No AW Vets team pre 2023
 
@@ -28,7 +29,7 @@ players = [
     'stewart watson',
     'linda barrand',
     'richard hodgson',
-    'chris mordue'
+    'chris mordue',
     'josh mordue',
     'jon edmondson',
     'ian smith',
@@ -61,3 +62,22 @@ traitorPlayers = {
     'Thursday Vets Bradford': [ 'stewart watson'],
     'Saturday Bradford': [ 'stewart watson'],
 }
+
+otherLeagues = [
+    'Monday Combined Leeds',
+    'Tuesday Vets Leeds',
+    'Tuesday Leeds',
+    'Wednesday Half Holiday Leeds',
+    'Wednesday Pairs AireWharfe',
+    'Thursday Vets Leeds',
+    'Saturday Leeds'
+]
+
+leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
+allDays = teamDays + otherLeagues
+extraPlayers = []  # this is to track players who only play for a different team
+players = players + extraPlayers
+otherDuplicatePlayers = []
+duplicatePlayerNames = duplicateTeamMemberNames + otherDuplicatePlayers
+otherTeams = ['stanningley', 'littlemoor', 'farsley', 'tyersal', 'mirfield']
+teamsTracking = teamNames + otherTeams

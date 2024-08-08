@@ -1,22 +1,23 @@
 import json
 import os
 from datetime import date
-import utilsPudsey
+import utils
+import teamDetailsPudsey
 import re
 
 year = str(date.today().year)
 
-leaguesDays = utilsPudsey.teamDays
-players = utilsPudsey.players
-duplicatePlayerNames = utilsPudsey.duplicatePlayerNames
-playerResults = utilsPudsey.returnListOfPlayerStats(utilsPudsey.teamDays, False)
-formatName = utilsPudsey.formatName
-standardiseName = utilsPudsey.standardiseName
-teamsTracking = utilsPudsey.teamsTracking
-returnTotalAggAvailablePerGame = utilsPudsey.returnTotalAggAvailablePerGame
-sanityChecksOnPlayerStats = utilsPudsey.sanityChecksOnPlayerStats
-checkFileSize = utilsPudsey.checkFileSize
-cupTextList = utilsPudsey.cupText
+leaguesDays = teamDetailsPudsey.allDays
+players = teamDetailsPudsey.players
+duplicatePlayerNames = teamDetailsPudsey.duplicatePlayerNames
+playerResults = utils.returnListOfPlayerStats(leaguesDays, False, players)
+formatName = utils.formatName
+standardiseName = utils.standardiseName
+teamsTracking = teamDetailsPudsey.teamsTracking
+returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
+sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
+checkFileSize = utils.checkFileSize
+cupTextList = utils.cupText
 leaguesProcessed = []
 
 print('UPDATING ALL PUDSEY PLAYER STATS')

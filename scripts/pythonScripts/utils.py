@@ -21,6 +21,24 @@ def deduplicateNames(name):
         name = 'Phil Thornton'
     if name == 'Phillip Thornton':
         name = 'Phil Thornton'
+    if name == 'Tom Hanson':
+        name = 'Thomas Hanson'
+    if name == 'Stuart Watson':
+        name = 'Stewart Watson'
+    if name == 'David Smith':
+        name = 'Dave Smith'
+    if name == 'Christopher Mordue':
+        name = 'Chris Mordue'
+    if name == 'Joshua Mordue':
+        name = 'Josh Mordue'
+    if name == 'Jonathon Edmondson':
+        name = 'Jon Edmondson'
+    if name == 'Andy Sykes':
+        name = 'Andrew Sykes'
+    if name == 'Phil Wilsdon':
+        name = 'Philip Wilsdon'
+    if name == 'Dave Poole':
+        name = 'David Poole'
     return name.lower()
 
 def standardiseName(name):
