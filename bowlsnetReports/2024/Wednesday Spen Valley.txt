@@ -1,4 +1,4 @@
-=== West Riding &amp; Spen Valley 2024
+=== West Riding & Spen Valley 2024
 === League Report (as of Thu 8th Aug)
 
 
@@ -853,6 +853,7 @@
  7:00pm  Guiseley                   6   149   v.   Eccleshill - A             4   141     
  7:00pm  Crossgates                 9   157   v.   Castleford Town            1   100     
  7:00pm  Littlemoor - A             9   164   v.   Swillington                1   115     
+ 7:00pm  Heckmondwike - A           9   164   v.   Whitkirk                   1   112     
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 7th Aug                                Division 1                                
 ------------------------------------------------------------------------------------------------------------------------
@@ -872,6 +873,7 @@
  Time               Wed 7th Aug                                Division 3                                
 ------------------------------------------------------------------------------------------------------------------------
  7:00pm  New Farnley - B            6   141   v.   Spen Victoria - C          4   138     
+ 7:00pm  Cleckheaton Moorend        7   143   v.   Rastrick - A               3   110     
  7:00pm  Brighouse Sports - C       7   144   v.   Royds Park - B             3   115     
  7:00pm  Royds Park - A             4   134   v.   Heckmondwike - B           6   134     
 ------------------------------------------------------------------------------------------------------------------------
@@ -881,6 +883,7 @@
  7:00pm  Gildersome - A             9   164   v.   Drighlington               1    98     
  7:00pm  Rastrick - B               7   135   v.   Cleckheaton Sports - E     3   124     
  7:00pm  Eccleshill - B             3   123   v.   Harold Club - C            8   132     
+ 7:00pm  Heckmondwike - C           7   150   v.   Gildersome - B             3   120     
 
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 14th Aug                               Division 3                                
@@ -896,12 +899,12 @@
   1.  Crossgates                16   12    3    117
   2.  Littlemoor - A            16   12    4    107
   3.  Pudsey BC - A             16    8    7     91
-  4.  Eccleshill - A            16    9    7     85
-  5.  Shipley - A               16    7    9     78
-  6.  Heckmondwike - A          15    8    7     77
+  4.  Heckmondwike - A          16    9    7     86
+  5.  Eccleshill - A            16    9    7     85
+  6.  Shipley - A               16    7    9     78
   7.  Guiseley                  16    6   10     71
   8.  Swillington               16    5   11     62
-  9.  Whitkirk                  15    5   10     60
+  9.  Whitkirk                  16    5   11     61
  10.  Castleford Town           16    6   10     57
 
 === Division 1
@@ -938,11 +941,11 @@
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Rastrick - A              16   13    3    106
+  1.  Rastrick - A              17   13    4    109
   2.  New Farnley - B           16   11    5     99
   3.  Brighouse Sports - C      17    8    8     90
-  4.  Spen Victoria - C         16    7    9     83
-  5.  Cleckheaton Moorend       15    9    6     82
+  4.  Cleckheaton Moorend       16   10    6     89
+  5.  Spen Victoria - C         16    7    9     83
   6.  Royds Park - B            16    8    8     82
   7.  Royds Park - A            16    8    8     77
   8.  Cleckheaton Sports - C    15    6    9     71
@@ -957,12 +960,12 @@
   2.  Rastrick - B              17   15    2    129
   3.  Harold Club - C           18   11    6    101
   4.  Cleckheaton Sports - F    17    9    6     95
-  5.  Spen Victoria - D         17    8    9     88
-  6.  Cleckheaton Sports - E    17    7   10     87
-  7.  Heckmondwike - C          16    7    8     85
+  5.  Heckmondwike - C          17    8    8     92
+  6.  Spen Victoria - D         17    8    9     88
+  7.  Cleckheaton Sports - E    17    7   10     87
   8.  Cleckheaton Sports - D    17    7    9     83
   9.  Eccleshill - B            18    4   12     70
- 10.  Gildersome - B            17    3   13     58
+ 10.  Gildersome - B            18    3   14     61
  11.  Drighlington              17    4   13     54
 
 
@@ -6102,6 +6105,19 @@ Lee Wider           21  Matthew Littleton   16
       Aggregate:   164        Aggregate:   115
          Points:     9           Points:     1
 
+       Premier               Wed 7th Aug
+   Heckmondwike - A            Whitkirk
+Sean Carter         17  Emma Tobin          21
+Jude Goodall        21  Lewis Cooper        19
+Graham Higgins      21  Nichole Farrar      19
+Harley Tattersley   21  Amy Tobin           19
+Charlie Ripley      21  Paul Hardy          14
+Sam Beresford       21  Simon Cahill        10
+Jacob Goodall       21  Thomas Johnson       8
+Alex Wolfenden      21  Adam Sharpe          2
+      Aggregate:   164        Aggregate:   112
+         Points:     9           Points:     1
+
       Division 1             Wed 7th Aug
     Chapel Street         Spen Victoria - A
 Stan Elwell         21  Peter Ellis         18
@@ -6233,6 +6249,19 @@ Andy Gardener       13  Rodney Allinson     21
          Points:     6           Points:     4
 
       Division 3             Wed 7th Aug
+ Cleckheaton Moorend         Rastrick - A
+Lee Collinson       21  Michael Wood        12
+Frank Turnbull      11  David Wood          21
+Ian Northrop        18  Roy Chapman         21
+Martin Bailey        9  Paul Pendleton      21
+Tyler James         21  Derek Hanner        11
+Philip Long         21  David Stuart        17
+David Lloyd         21  Robert Laycock       6
+Robert Spink        21  Joshua Smith         1
+      Aggregate:   143        Aggregate:   110
+         Points:     7           Points:     3
+
+      Division 3             Wed 7th Aug
  Brighouse Sports - C       Royds Park - B
 Richard Hobson      21  Ray Downes          15
 Max Delarrosa       21  Chris Kennedy       13
@@ -6293,7 +6322,7 @@ Michael Hollingdrake14  Graham Ward         21
 Chris Stanley       21  Helen Seed           7
 Michael Carter      21  Callum Brook        19
 *No Player*          0  Lynn Seddon         21
-Graeme Rimmer       16  David Porritt       21
+Graeme Rimmer       16  Joe Brook           21
       Aggregate:   135        Aggregate:   124
          Points:     7           Points:     3
 
@@ -6309,5 +6338,18 @@ Andrew Smith        21  Carl Maguire        17
 Roger Binks         21  Tony Godfrey         5
       Aggregate:   123        Aggregate:   132
          Points:     3           Points:     8
+
+      Division 4             Wed 7th Aug
+   Heckmondwike - C         Gildersome - B
+Kath Field          21  Neil Schofield       7
+Steven Sugden       21  David Rawson         6
+Hayley Lay          21  Glenda Holmes       14
+Steven Kidd         21  Kay Stewart         13
+George Tozer        12  David Holmes        21
+Eddie Temple        18  Frank Hales         21
+Roger Jackson       15  John Ackroyd        21
+Paul Cooper         21  Tony Morris         17
+      Aggregate:   150        Aggregate:   120
+         Points:     7           Points:     3
 
 
