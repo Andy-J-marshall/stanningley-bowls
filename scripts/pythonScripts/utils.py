@@ -55,7 +55,7 @@ otherTeams = [
     ]
 teamsTracking = teamDetails.teamNames + otherTeams
 
-cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
+cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'round one', 'semi final','semi-final', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32']
 
 def deduplicateNames(name):
     if name == 'Duncan Mc Phail':

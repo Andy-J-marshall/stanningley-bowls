@@ -6,11 +6,7 @@ import utils
 import re
 
 # year = str(date.today().year) TODO revert
-year = str(2021)
-
-# TODO 
-# Mabel - add in Leeds ladies league for Westroyd
-
+year = str(2016)
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
@@ -177,9 +173,13 @@ for team in teamDays:
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt = 2
 
-
-            if 'saturday bradford' in team.lower() and 'B' not in team.lower():
+            # B team only has 8 players
+            if 'saturday bradford' in team.lower() and 'b' not in teamNameToUse.lower():
                 rowsUpAdjustmentInt = 3
+
+            # Only required for 2016 and before
+            # if 'tuesday vets' in team.lower():
+            #     rowsUpAdjustmentInt = 3
 
             if 'monday airedale' in team.lower():
                 rowsUpAdjustmentInt = 3
@@ -199,6 +199,9 @@ for team in teamDays:
                         break
             
             if cupGame:
+                
+                if 'tuesday vets' in team.lower():
+                    rowsDownAdjustmentInt -= 2
                 # To account for handicap row in cup games
                 checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
@@ -226,6 +229,7 @@ for team in teamDays:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
+                # TODO Change this number for the leagues with 10 players
                 text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
@@ -243,30 +247,6 @@ for team in teamDays:
                 #     if rowNumber in cupGameRows:
                 #         gameDateRowModifier += 1
 
-                # TODO fix
-                # gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                
-                # if type(gameDate) is str:
-                #     if 'On ' in gameDate or '(from ' in gameDate:
-                #         gameDateRowModifier += 1
-                #         gameDate = allRowsInFile[rowNumber - gameDateRowModifier]
-                        
-                # else:
-                #     gameDate = ''
-                    
-            # if gameDate:
-            #     gameDateParts = re.split(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+", gameDate)
-            #     gameDate = gameDateParts[2]
-            #     # This might happen if date if cup text includes the day
-            #     if len(gameDateParts) > 4:
-            #         gameDate = gameDateParts[4]
-                
-            #     gameDate = gameDate.strip()
-                
-            #     # Sanity check on the date
-            #     dateContainsDayOfWeekBool = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", gameDate)
-            #     if dateContainsDayOfWeekBool is None:
-            #         raise Exception(gameDate + ' date is incorrect for row: ' + str(row))
 
             # Home games
             rowText = allRowsInFile[rowNumber]

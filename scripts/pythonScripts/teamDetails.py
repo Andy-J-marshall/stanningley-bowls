@@ -16,7 +16,7 @@ teamDays = [
             'Monday AireDale & Wharfedale (A)', 
             'Monday AireDale & Wharfedale (B)', 
             'Tuesday Vets Leeds',
-            # 'Wednesday Half Holiday Bradford',
+            'Wednesday Half Holiday Bradford',
             # 'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
             # 'Wednesday Pairs AireWharfe',
             'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
@@ -39,8 +39,8 @@ teamDays = [
 
 # Every player (lowercase)
 players = [
-    'andy waller',
-    # 'jack roberts', 'mabel shaw',  'donald shaw',
+    # 'andy waller',
+    'jack roberts', 'mabel shaw',  'donald shaw',
     'jim moorin', 'clifford brogie', 'paul bowes',
     'bernie miller', 'dave hudson','alison woodfine',
     'craig clarkson', 'steve gardner', 'duncan mcphail', 'stewart watson', 'derek wilson'
