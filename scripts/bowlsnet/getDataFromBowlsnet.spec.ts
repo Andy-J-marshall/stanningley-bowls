@@ -149,9 +149,9 @@ for (const team of teams) {
     ]);
 
     // Create text file
-    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     await newPage.bringToFront();
-    const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
-    fs.writeFileSync(filePath, value);
+    const value = await newPage.$eval('body > pre', (el) => el.textContent);
+    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
+    fs.writeFileSync(filePath, value as string);
   });
 }
