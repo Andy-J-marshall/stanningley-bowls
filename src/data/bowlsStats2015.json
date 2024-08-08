@@ -183,7 +183,7 @@
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (A)",
-                "Thursday Vets Leeds (B)",
+                "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (B)",
                 "Thursday Vets Leeds (B)",
                 "Saturday Bradford (B)",
@@ -285,6 +285,7 @@
                 "bernie miller 21 - 7 colin arnold",
                 "bernie miller 21 - 8 brian ragan",
                 "bernie miller 21 - 15 bob davison",
+                "bernie miller 21 - 15 leslie leak",
                 "bernie miller 21 - 9 kathleen vince",
                 "bernie miller 21 - 17 sandra deegan",
                 "bernie miller 21 - 8 leslie deighton",
@@ -292,7 +293,6 @@
                 "bernie miller 21 - 6 brenda walton",
                 "bernie miller 13 - 21 joanc crampton",
                 "bernie miller 21 - 13 ron burton",
-                "bernie miller 21 - 15 leslie leak",
                 "bernie miller 21 - 13 keith corp",
                 "bernie miller 21 - 1 doreen parkin",
                 "bernie miller 13 - 21 chris burnett",
@@ -338,14 +338,14 @@
                 "aggDiff": -36
             },
             "thursday vets leeds": {
-                "games": 13,
-                "wins": 10,
-                "aggDiff": 99
+                "games": 14,
+                "wins": 11,
+                "aggDiff": 105
             },
             "thursday vets leeds (b)": {
-                "games": 3,
-                "wins": 3,
-                "aggDiff": 22
+                "games": 2,
+                "wins": 2,
+                "aggDiff": 16
             },
             "saturday bradford": {
                 "games": 0,
@@ -2864,6 +2864,6 @@
             }
         }
     },
-    "lastUpdated": "26/07/2024",
+    "lastUpdated": "08/08/2024",
     "statsYear": "2015"
 }
