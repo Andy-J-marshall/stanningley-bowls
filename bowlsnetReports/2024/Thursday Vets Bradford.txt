@@ -1,5 +1,5 @@
 === Bradford (Vets) 2024
-=== League Report (as of Thu 8th Aug)
+=== League Report (as of Fri 9th Aug)
 
 
 === RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -468,6 +468,7 @@
 -------------------------------------------------------------------------------------------------------------------
   1:30pm  Crowghyll Park B     27   160   v.   West Bradford B       1    93     
   1:30pm  Royd House           22   149   v.   Brackenhill           6   107     
+  1:30pm  Calverley B           2   110   v.   New Greengates       26   167     
   1:30pm  Bradford Moor        11   127   v.   Guiseley B           17   138     
   1:30pm  Idle B               17   147   v.   Oakenshaw A          11   129     
 -------------------------------------------------------------------------------------------------------------------
@@ -516,16 +517,16 @@
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
-  1.  Oakenshaw A          13    8    4    221
-  2.  New Greengates       12    8    2    221
+  1.  New Greengates       13    9    2    247
+  2.  Oakenshaw A          13    8    4    221
   3.  Idle B               13    8    5    216
   4.  Crowghyll Park B     13    8    5    208
   5.  Royd House           13    7    6    186
   6.  West Bradford B      13    6    7    180
   7.  Guiseley B           13    5    8    153
   8.  Bradford Moor        13    5    7    146
-  9.  Brackenhill          12    3    9    117
- 10.  Calverley B          11    3    8    116
+  9.  Calverley B          12    3    9    118
+ 10.  Brackenhill          12    3    9    117
 
 === Division Four ( 6 Players)
                              Matches     Pnts
@@ -4106,6 +4107,20 @@ David Hogg          21  Bob Armitage        7
       Aggregate:   149        Aggregate:  107
           Games:     6            Games:    2
          Points:    22           Points:    6
+
+    Division Three           Thu 8th Aug
+     Calverley B           New Greengates
+Susie Jarosz         5  Keith Goodall      21
+Ken Paley           17  Robert Denby       21
+Alan Horsfield      21  Chris Burnett      20
+Margaret Whitaker   12  Tom Sayer          21
+June Whittaker       6  Allan Smith        21
+Paul Hanson         14  Alan Broscombe     21
+David Burton        18  Pauline Wilkinson  21
+Geoff Yewdall       17  Mary Hemsley       21
+      Aggregate:   110        Aggregate:  167
+          Games:     1            Games:    7
+         Points:     2           Points:   26
 
     Division Three           Thu 8th Aug
     Bradford Moor            Guiseley B
