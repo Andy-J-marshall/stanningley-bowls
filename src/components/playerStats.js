@@ -15,8 +15,6 @@ import config from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
-// TODO might want to remove the team stats option for Pudsey? Or can I refactor it?
-
 function PlayerStats(props) {
     const combinedStats = props.combinedStats;
     const stats = props.stats;
