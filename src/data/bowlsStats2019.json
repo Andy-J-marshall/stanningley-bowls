@@ -35,20 +35,20 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 51,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -178,12 +178,12 @@
                 "alison woodfine & derek wilson 27 - 31 john hardisty & peter thornton",
                 "alison woodfine 21 - 15 david saville"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 14,
                 "wins": 12,
                 "aggDiff": 90
@@ -259,20 +259,20 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 57,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (B)",
                 "Thursday Vets Leeds (B)",
@@ -398,12 +398,12 @@
                 "bernie miller 21 - 11 tom sayer",
                 "bernie miller 21 - 15 steve tomkinson"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 14,
                 "wins": 6,
                 "aggDiff": -19
@@ -479,19 +479,19 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 62,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (A)",
@@ -638,12 +638,12 @@
                 "clifford brogie & donald shaw 18 - 31 sandra hall & michael hall",
                 "clifford brogie 18 - 21 barrie clough"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 13,
                 "wins": 4,
                 "aggDiff": -41
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -719,21 +719,21 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 15,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)"
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
@@ -755,12 +755,12 @@
                 "craig clarkson 21 - 6 lynn scholes loan",
                 "craig clarkson 19 - 21 lynette hall"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 15,
                 "wins": 10,
                 "aggDiff": 36
@@ -836,21 +836,21 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 61,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Tuesday Vets Leeds",
                 "Thursday Vets Leeds (A)",
                 "Thursday Vets Leeds (A)",
@@ -997,12 +997,12 @@
                 "dave hudson & kenneth stockhill 31 - 10 trevor haley & derek hewitt",
                 "dave hudson & brian fish 13 - 31 michael wardle & brian wardle"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 15,
                 "wins": 4,
                 "aggDiff": -52
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1078,19 +1078,19 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 92,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
-                "Monday AireDale & Wharfedale (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
+                "Monday AireWharfe (B)",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1301,12 +1301,12 @@
                 "derek wilson 21 - 7 sheila bairstow",
                 "derek wilson 21 - 11 raymond fields"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 13,
                 "wins": 7,
                 "aggDiff": 37
@@ -1382,22 +1382,22 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 94,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1611,12 +1611,12 @@
                 "donald shaw 13 - 21 david hodgson",
                 "donald shaw 21 - 7 steven horne"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 16,
                 "wins": 8,
                 "aggDiff": 3
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1776,12 +1776,12 @@
                 "duncan mcphail 21 - 18 trevor hodgson",
                 "duncan mcphail 21 - 7 malcolm grainger"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1857,10 +1857,10 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 15,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1897,12 +1897,12 @@
                 "jack roberts 21 - 15 jim head",
                 "jack roberts 13 - 21 angela carter"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 4,
                 "wins": 1,
                 "aggDiff": -13
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1978,22 +1978,22 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 55,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2094,12 +2094,12 @@
                 "jim moorin 6 - 21 tony smith",
                 "jim moorin 18 - 21 andrew denton"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 16,
                 "wins": 12,
                 "aggDiff": 54
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2175,16 +2175,16 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 79,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2360,12 +2360,12 @@
                 "mabel shaw 14 - 21 alan clements",
                 "mabel shaw 13 - 21 ian matthews"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 10,
                 "wins": 2,
                 "aggDiff": -80
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2441,22 +2441,22 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 16,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)"
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
@@ -2479,12 +2479,12 @@
                 "paul bowes 21 - 5 joan holden",
                 "paul bowes 21 - 9 jean long"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 16,
                 "wins": 14,
                 "aggDiff": 119
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2560,16 +2560,16 @@
             "pairCupLosses": 0,
             "totalGamesPlayed": 31,
             "dayPlayed": [
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
-                "Monday AireDale & Wharfedale (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
+                "Monday AireWharfe (A)",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -2628,12 +2628,12 @@
                 "steve gardner 21 - 20 sylvia halliday",
                 "steve gardner 21 - 8 malcolm hamilton"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 10,
                 "wins": 3,
                 "aggDiff": -23
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2795,12 +2795,12 @@
                 "stewart watson 12 - 21 andrew matthews",
                 "stewart watson 21 - 13 peter wilson"
             ],
-            "monday airedale & wharfedale": {
+            "monday airewharfe": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airedale & wharfedale (b)": {
+            "monday airewharfe (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -2844,7 +2844,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday AireDale & Wharfedale",
+            "day": "Monday AireWharfe",
             "awayWins": 3,
             "homeWins": 2,
             "wins": 5,
@@ -2880,7 +2880,7 @@
             ]
         },
         {
-            "day": "Monday AireDale & Wharfedale (B)",
+            "day": "Monday AireWharfe (B)",
             "awayWins": 2,
             "homeWins": 6,
             "wins": 8,

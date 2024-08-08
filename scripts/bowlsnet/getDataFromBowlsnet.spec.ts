@@ -51,11 +51,11 @@ const teams = [
     url: '/WestRiding',
   },
   {
-    day: 'Monday AireDale & Wharfedale',
+    day: 'Monday AireWharfe',
     url: '/AW-Mon',
   },
   {
-    day: 'Tuesday AireDale & Wharfedale',
+    day: 'Tuesday AireWharfe',
     url: '/AW-Vets',
   },
   {
@@ -100,7 +100,7 @@ for (const team of teams) {
     } catch (error) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
-    
+
     // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
