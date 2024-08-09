@@ -4,7 +4,7 @@ teamPlayers = teamDetails.players
 duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
 currentTeamDays = teamDetails.teamDays
 
-# Add Saturday AireDale & Wharfedale and Monday Pairs?
+# Add Saturday AireWharfe and Monday Pairs?
 otherLeagues = [
     'Leeds Ladies',
     'Monday Combined Leeds', 
@@ -12,13 +12,13 @@ otherLeagues = [
     'Wednesday Half Holiday Leeds',
                 'Tuesday Mirfield', 
                 'Wednesday Spen Valley',
-                'Wednesday AireDale & Wharfedale',
-                # 'Tuesday AireDale & Wharfedale',
+                'Wednesday AireWharfe',
+                # 'Tuesday AireWharfe',
                 'Monday Bradford',
                 # 'Thursday Vets Bradford',
                 'Saturday Leeds', 
                 # 'Saturday Barkston Ash',
-                'Saturday AireDale & Wharfedale'
+                'Saturday AireWharfe'
                 ]
 
 leaguesWithGamesTo31 = ['wednesday pairs airewharfe', 'wednesday pairs airewharfe (a)', 'wednesday pairs airewharfe (b)']

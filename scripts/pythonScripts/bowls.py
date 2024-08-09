@@ -180,7 +180,7 @@ for team in teamDays:
             # if 'tuesday vets' in team.lower():
             #     rowsUpAdjustmentInt = 3
 
-            if 'monday airedale' in team.lower():
+            if 'monday airewharfe' in team.lower():
                 rowsUpAdjustmentInt = 3
 
             # AireWharfe pairs league display scores differently

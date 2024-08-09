@@ -12,9 +12,9 @@ preferredTeamName = 'Stanningley'
 
 # Days played (duplicate days for second teams)
 teamDays = [
-            # 'Monday AireDale & Wharfedale', 
-            'Monday AireDale & Wharfedale (A)', 
-            'Monday AireDale & Wharfedale (B)', 
+            # 'Monday AireWharfe', 
+            'Monday AireWharfe (A)', 
+            'Monday AireWharfe (B)', 
             'Tuesday Vets Leeds',
             'Wednesday Half Holiday Bradford',
             # 'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
@@ -32,7 +32,7 @@ teamDays = [
 # TODO these are the teams
 # Tuesday Vets Leeds 2013 - 2024 (no B team)
 # Thursday Vets Leeds 2013 - 2024 (B team 2013-2019) (no A team in 2013-2014)
-# Monday AireDale & Wharfedale 2013 - 2021 (B team 2013-2019)
+# Monday AireWharfe 2013 - 2021 (B team 2013-2019)
 # Wednesday airewharfe 2013 - 2019 (B team 2013-2017)
 # bradford half holiday - 2013 - 2019 (B team 2018-2019)
 # bradford saturday - 2013 - 2019 (B team 2015 - 2017)
@@ -54,7 +54,7 @@ duplicateTeamMemberNames = [
                             ]
 
 traitorPlayers = {
-    'Monday AireDale & Wharfedale': [],
+    'Monday AireWharfe': [],
     'Tuesday Vets Leeds': [], # 'duncan mcphail' pre 2017
     'Thursday Vets Leeds': [], # 'duncan mcphail' pre 2017
     'Saturday Bradford': ['paul bowes', 'stewart watson', 'jim swailes', 'jim moorin', 'duncan mcphail'],
