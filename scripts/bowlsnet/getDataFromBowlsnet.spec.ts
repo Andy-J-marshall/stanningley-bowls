@@ -51,11 +51,11 @@ const teams = [
     url: '/WestRiding',
   },
   {
-    day: 'Monday AireDale & Wharfedale',
+    day: 'Monday AireWharfe',
     url: '/AW-Mon',
   },
   {
-    day: 'Tuesday AireDale & Wharfedale',
+    day: 'Tuesday AireWharfe',
     url: '/AW-Vets',
   },
   {
@@ -100,7 +100,7 @@ for (const team of teams) {
     } catch (error) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
-    
+
     // Navigate to reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
@@ -149,9 +149,14 @@ for (const team of teams) {
     ]);
 
     // Create text file
-    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     await newPage.bringToFront();
-    const value = await newPage.$eval('body > pre', (el) => el.innerHTML);
-    fs.writeFileSync(filePath, value);
+    await newPage.waitForLoadState('domcontentloaded');
+    const value = await newPage.evaluate(() => document.querySelector('body > pre')?.textContent);
+    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
+    fs.writeFile(filePath, value as string, (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
   });
 }

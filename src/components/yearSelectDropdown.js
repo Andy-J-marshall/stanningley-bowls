@@ -4,7 +4,6 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 function YearSelectDropdown(props) {
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
-    const showOldYears = props.showOldYears;
 
     const [year, setYear] = useState(yearToDisplay);
 
@@ -49,24 +48,19 @@ function YearSelectDropdown(props) {
                     <Dropdown.Item id="option2017" eventKey="2017">
                         2017
                     </Dropdown.Item>
+                    <Dropdown.Item id="option2016" eventKey="2016">
+                        2016
+                    </Dropdown.Item>
+                    <Dropdown.Item id="option2015" eventKey="2015">
+                        2015
+                    </Dropdown.Item>
+                    <Dropdown.Item id="option2014" eventKey="2014">
+                        2014
+                    </Dropdown.Item>
+                    <Dropdown.Item id="option2013" eventKey="2013">
+                        2013
+                    </Dropdown.Item>
                 </div>
-                {/* These years don't have team stats or results */}
-                {showOldYears && (
-                    <div id="legacy-stat-years-options">
-                        <Dropdown.Item id="option2016" eventKey="2016">
-                            2016
-                        </Dropdown.Item>
-                        <Dropdown.Item id="option2015" eventKey="2015">
-                            2015
-                        </Dropdown.Item>
-                        <Dropdown.Item id="option2014" eventKey="2014">
-                            2014
-                        </Dropdown.Item>
-                        <Dropdown.Item id="option2013" eventKey="2013">
-                            2013
-                        </Dropdown.Item>
-                    </div>
-                )}
             </DropdownButton>
         </div>
     );

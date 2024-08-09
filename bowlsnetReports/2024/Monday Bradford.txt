@@ -1,5 +1,5 @@
 === Bradford (Mon. Evening) 2024
-=== League Report (as of Tue 6th Aug)
+=== League Report (as of Fri 9th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 19th Aug
@@ -9,7 +9,7 @@
  6:30pm  Shipley Club A       11   107   v.   Hightown             15   115     
  6:30pm  Idle 'A'             10    92   v.   Wibsey               16   109     
  6:30pm  Asa Briggs 'B'        6    89   v.   Asa Briggs 'A'       20   119     
- 6:30pm  Littlemoor S&amp;SC       4    73   v.   Spen Victoria 'A'    22   120     
+ 6:30pm  Littlemoor S&SC       4    73   v.   Spen Victoria 'A'    22   120     
  6:30pm  Crowghyll Park        3    82   v.   Tyersal 'A'          23   126     
 ------------------------------------------------------------------------------------------------------------------
  Time             Mon 8th Apr                 Division 2 (Robert Bland)7.00                      
@@ -30,7 +30,7 @@
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 15th Apr                 Division 1 (Thurston) 7.00PM                       
 ------------------------------------------------------------------------------------------------------------------
- 6:30pm  Tyersal 'A'          26   126   v.   Littlemoor S&amp;SC       0    45     
+ 6:30pm  Tyersal 'A'          26   126   v.   Littlemoor S&SC       0    45     
  6:30pm  Spen Victoria 'A'    22   126   v.   Asa Briggs 'B'        4    88     
  6:30pm  Asa Briggs 'A'       25   126   v.   Idle 'A'              1    65     
          Wibsey                          v.   Shipley Club A                    To Fri 3rd May
@@ -57,7 +57,7 @@
  7:00pm  Shipley Club A       24   126   v.   Asa Briggs 'A'        2    73     
  7:00pm  Idle 'A'              9    90   v.   Spen Victoria 'A'    17   107     
  7:00pm  Asa Briggs 'B'        6    83   v.   Tyersal 'A'          20   116     
- 7:00pm  Littlemoor S&amp;SC      17   118   v.   Crowghyll Park        9   103     
+ 7:00pm  Littlemoor S&SC      17   118   v.   Crowghyll Park        9   103     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 22nd Apr                 Division 2 (Robert Bland)7.00                      
 ------------------------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@
  7:00pm  Tyersal 'A'          26   126   v.   Idle 'A'              0    49     
  7:00pm  Spen Victoria 'A'    12   110   v.   Shipley Club A       14   111     
          Asa Briggs 'A'                  v.   Hightown                          To Mon 6th May
- 7:00pm  Littlemoor S&amp;SC      23   126   v.   Asa Briggs 'B'        3    79     
+ 7:00pm  Littlemoor S&SC      23   126   v.   Asa Briggs 'B'        3    79     
  7:00pm  Crowghyll Park       15    96   v.   Wibsey               11    90     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 29th Apr                 Division 2 (Robert Bland)7.00                      
@@ -121,7 +121,7 @@
  7:00pm  Wibsey               15   112   v.   Asa Briggs 'A'       11    98     
  7:00pm  Hightown              8    92   v.   Spen Victoria 'A'    18   114     
  7:00pm  Shipley Club A       22   118   v.   Tyersal 'A'           4    73     
- 7:00pm  Idle 'A'             16   111   v.   Littlemoor S&amp;SC      10    92     
+ 7:00pm  Idle 'A'             16   111   v.   Littlemoor S&SC      10    92     
  7:00pm  Asa Briggs 'B'       11   101   v.   Crowghyll Park       15   112     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 13th May                 Division 2 (Robert Bland)7.00                      
@@ -144,7 +144,7 @@
  7:00pm  Tyersal 'A'          18   112   v.   Hightown              8    86     
  7:00pm  Spen Victoria 'A'    17   120   v.   Wibsey                9    99     
  7:00pm  Asa Briggs 'B'       14   102   v.   Idle 'A'             12    99     
- 7:00pm  Littlemoor S&amp;SC       8    86   v.   Shipley Club A       18   114     
+ 7:00pm  Littlemoor S&SC       8    86   v.   Shipley Club A       18   114     
  7:00pm  Crowghyll Park       16   112   v.   Asa Briggs 'A'       10   103     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 20th May                 Division 2 (Robert Bland)7.00                      
@@ -171,7 +171,7 @@
 ------------------------------------------------------------------------------------------------------------------
  7:00pm  Asa Briggs 'A'       17   114   v.   Spen Victoria 'A'     9    98     
  7:00pm  Wibsey                7    86   v.   Tyersal 'A'          19   111     
- 7:00pm  Hightown             22   108   v.   Littlemoor S&amp;SC       4    64     
+ 7:00pm  Hightown             22   108   v.   Littlemoor S&SC       4    64     
  7:00pm  Shipley Club A       26   126   v.   Asa Briggs 'B'        0    51     
  7:00pm  Idle 'A'             12    95   v.   Crowghyll Park       14   100     
 ------------------------------------------------------------------------------------------------------------------
@@ -195,7 +195,7 @@
  7:00pm  Tyersal 'A'          22   125   v.   Asa Briggs 'A'        4    81     
  7:00pm  Idle 'A'              0    38   v.   Shipley Club A       26   126     
  7:00pm  Asa Briggs 'B'        5    87   v.   Hightown             21   124     
- 7:00pm  Littlemoor S&amp;SC      10    96   v.   Wibsey               16   107     
+ 7:00pm  Littlemoor S&SC      10    96   v.   Wibsey               16   107     
  7:00pm  Crowghyll Park        1    55   v.   Spen Victoria 'A'    25   121     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 10th Jun                 Division 2 (Robert Bland)7.00                      
@@ -216,7 +216,7 @@
  Time            Mon 17th Jun                 Division 1 (Thurston) 7.00PM                       
 ------------------------------------------------------------------------------------------------------------------
  7:00pm  Spen Victoria 'A'    12    97   v.   Tyersal 'A'          14   102     
- 7:00pm  Asa Briggs 'A'       22   121   v.   Littlemoor S&amp;SC       4    76     
+ 7:00pm  Asa Briggs 'A'       22   121   v.   Littlemoor S&SC       4    76     
  7:00pm  Wibsey               26   126   v.   Asa Briggs 'B'        0    53     
  7:00pm  Hightown             22   120   v.   Idle 'A'              4    72     
  7:00pm  Shipley Club A       24   126   v.   Crowghyll Park        2    74     
@@ -239,7 +239,7 @@
  Time            Mon 24th Jun                 Division 1 (Thurston) 7.00PM                       
 ------------------------------------------------------------------------------------------------------------------
  7:00pm  Tyersal 'A'          18   111   v.   Crowghyll Park        8    85     
- 7:00pm  Spen Victoria 'A'    22   124   v.   Littlemoor S&amp;SC       4    80     
+ 7:00pm  Spen Victoria 'A'    22   124   v.   Littlemoor S&SC       4    80     
  7:00pm  Asa Briggs 'A'       22   125   v.   Asa Briggs 'B'        4    78     
  7:00pm  Wibsey               24   122   v.   Idle 'A'              2    62     
  7:00pm  Hightown             15   114   v.   Shipley Club A       11   108     
@@ -265,7 +265,7 @@
  7:00pm  Shipley Club A       21   121   v.   Wibsey                5    79     
  7:00pm  Idle 'A'              5    80   v.   Asa Briggs 'A'       21   122     
  7:00pm  Asa Briggs 'B'        2    67   v.   Spen Victoria 'A'    24   124     
- 7:00pm  Littlemoor S&amp;SC       6    82   v.   Tyersal 'A'          20   112     
+ 7:00pm  Littlemoor S&SC       6    82   v.   Tyersal 'A'          20   112     
  7:00pm  Crowghyll Park       16   113   v.   Hightown             10   101     
 ------------------------------------------------------------------------------------------------------------------
  Time             Mon 1st Jul                 Division 2 (Robert Bland)7.00                      
@@ -294,7 +294,7 @@
  7:00pm  Spen Victoria 'A'    24   125   v.   Idle 'A'              2    64     
  7:00pm  Asa Briggs 'A'       10    98   v.   Shipley Club A       16   110     
  7:00pm  Wibsey               19   123   v.   Hightown              7    98     
- 7:00pm  Crowghyll Park       20   108   v.   Littlemoor S&amp;SC       6    71     
+ 7:00pm  Crowghyll Park       20   108   v.   Littlemoor S&SC       6    71     
 ------------------------------------------------------------------------------------------------------------------
  Time             Mon 8th Jul                 Division 2 (Robert Bland)7.00                      
 ------------------------------------------------------------------------------------------------------------------
@@ -317,7 +317,7 @@
  7:00pm  Hightown              6    89   v.   Asa Briggs 'A'       20   123     
  7:00pm  Shipley Club A       16   109   v.   Spen Victoria 'A'    10    95     
  7:00pm  Idle 'A'              2    70   v.   Tyersal 'A'          24   126     
- 7:00pm  Asa Briggs 'B'        8    94   v.   Littlemoor S&amp;SC      18   122     
+ 7:00pm  Asa Briggs 'B'        8    94   v.   Littlemoor S&SC      18   122     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 15th Jul                 Division 2 (Robert Bland)7.00                      
 ------------------------------------------------------------------------------------------------------------------
@@ -339,7 +339,7 @@
  7:00pm  Tyersal 'A'          12   107   v.   Shipley Club A       14   112     
  7:00pm  Spen Victoria 'A'    17   123   v.   Hightown              9   102     
  7:00pm  Asa Briggs 'A'       19   115   v.   Wibsey                7    93     
- 7:00pm  Littlemoor S&amp;SC      26   126   v.   Idle 'A'              0    56     
+ 7:00pm  Littlemoor S&SC      26   126   v.   Idle 'A'              0    56     
  7:00pm  Crowghyll Park       13   115   v.   Asa Briggs 'B'       13   111     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 22nd Jul                 Division 2 (Robert Bland)7.00                      
@@ -362,7 +362,7 @@
  7:00pm  Asa Briggs 'A'       20   108   v.   Crowghyll Park        6    77     
  7:00pm  Wibsey                5    75   v.   Spen Victoria 'A'    21   124     
  7:00pm  Hightown              7    89   v.   Tyersal 'A'          19   116     
- 7:00pm  Shipley Club A       26   126   v.   Littlemoor S&amp;SC       0    51     
+ 7:00pm  Shipley Club A       26   126   v.   Littlemoor S&SC       0    51     
  7:00pm  Idle 'A'             15   100   v.   Asa Briggs 'B'       11    92     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 29th Jul                 Division 2 (Robert Bland)7.00                      
@@ -385,7 +385,7 @@
  7:00pm  Tyersal 'A'          26   126   v.   Wibsey                0    48     
  7:00pm  Spen Victoria 'A'    19   123   v.   Asa Briggs 'A'        7    89     
  7:00pm  Asa Briggs 'B'        5    79   v.   Shipley Club A       21   120     
- 7:00pm  Littlemoor S&amp;SC      15    99   v.   Hightown             11    90     
+ 7:00pm  Littlemoor S&SC      15    99   v.   Hightown             11    90     
  7:00pm  Crowghyll Park       25   126   v.   Idle 'A'              1    64     
 ------------------------------------------------------------------------------------------------------------------
  Time             Mon 5th Aug                 Division 2 (Robert Bland)7.00                      
@@ -415,7 +415,7 @@
   5.  Wibsey               16    8    8    208
   6.  Hightown             16    6   10    200
   7.  Crowghyll Park       16    7    8    171
-  8.  Littlemoor S&amp;SC      16    5   11    155
+  8.  Littlemoor S&SC      16    5   11    155
   9.  Asa Briggs 'B'       16    1   14     92
  10.  Idle 'A'             16    2   14     91
 
@@ -486,7 +486,7 @@ Ryan Bradley          21  Carl Smith          14
             Points:    6           Points:    20
 
 Division 1 (Thurston) 7.       Mon 8th Apr
-    Littlemoor S&amp;SC         Spen Victoria 'A'
+    Littlemoor S&SC         Spen Victoria 'A'
 Jim Moorin            21  Daz Ripley          15
 Angela Carter         20  Kevin Wood          21
 Philip Thornton       10  Andy Hodgson        21
@@ -606,7 +606,7 @@ Tracy Duxbury         18  John Sample         21
             Points:    4           Points:    22
 
 Division 1 (Thurston) 7.       Mon 15th Apr
-      Tyersal 'A'            Littlemoor S&amp;SC
+      Tyersal 'A'            Littlemoor S&SC
 Simon Metcalfe        21  Alan Mazurke         7
 Philip Wilsdon        21  Jim Moorin           8
 Gary Wike             21  John Armitage       17
@@ -786,7 +786,7 @@ Andy Southwell        20  Mason Lindley       21
             Points:    6           Points:    20
 
 Division 1 (Thurston) 7.       Mon 22nd Apr
-    Littlemoor S&amp;SC           Crowghyll Park
+    Littlemoor S&SC           Crowghyll Park
 Philip A Richards     21  Phil Robinson       12
 Kath Mazurke          18  Trevor Hodgson      21
 Philip Thornton       21  Richard Briggs      17
@@ -930,7 +930,7 @@ Debi Davis            21  Ian Jacques         20
             Points:   12           Points:    14
 
 Division 1 (Thurston) 7.       Mon 29th Apr
-    Littlemoor S&amp;SC           Asa Briggs 'B'
+    Littlemoor S&SC           Asa Briggs 'B'
 Jim Moorin            21  James Klenk          9
 Angela Carter         21  Bert Haigh          10
 Philip A Richards     21  Debra Pearson       11
@@ -1110,7 +1110,7 @@ Craig Fenton          21  Mason Lindley       10
             Points:   22           Points:     4
 
 Division 1 (Thurston) 7.       Mon 13th May
-        Idle 'A'             Littlemoor S&amp;SC
+        Idle 'A'             Littlemoor S&SC
 Roy Barlow            21  Philip A Richards    7
 Alan Sinfield         21  Terri Durrans        5
 Michael Leach         21  Angela Carter       17
@@ -1254,7 +1254,7 @@ Arthur Schofield      10  Roy Barlow          21
             Points:   14           Points:    12
 
 Division 1 (Thurston) 7.       Mon 20th May
-    Littlemoor S&amp;SC           Shipley Club A
+    Littlemoor S&SC           Shipley Club A
 Philip A Richards     21  Graham Baggley      15
 Angela Carter         10  Stuart Wilson       21
 Kath Mazurke          14  Matthew Jacques     21
@@ -1410,7 +1410,7 @@ Alison Stocks         10  Pam Lindley         21
             Points:    7           Points:    19
 
 Division 1 (Thurston) 7.       Mon 3rd Jun
-        Hightown             Littlemoor S&amp;SC
+        Hightown             Littlemoor S&SC
 Hayley Wood            3  Jim Moorin          21
 Peter Simpson         21  Terri Durrans       19
 Logan Preston         21  Angela Carter       11
@@ -1578,7 +1578,7 @@ Arthur Schofield      15  Darren Goodall      21
             Points:    5           Points:    21
 
 Division 1 (Thurston) 7.       Mon 10th Jun
-    Littlemoor S&amp;SC               Wibsey
+    Littlemoor S&SC               Wibsey
 Philip A Richards     18  John Stocks         21
 Jim Moorin            16  Tasawir Hussain     21
 Kath Mazurke           8  Alison Stocks       21
@@ -1710,7 +1710,7 @@ Kevin Wood            21  Mason Lindley       16
             Points:   12           Points:    14
 
 Division 1 (Thurston) 7.       Mon 17th Jun
-     Asa Briggs 'A'          Littlemoor S&amp;SC
+     Asa Briggs 'A'          Littlemoor S&SC
 Michael Frost         21  Angela Carter        9
 James Klenk           21  Terri Durrans       10
 Gary Woodhead         21  Kath Mazurke        12
@@ -1866,7 +1866,7 @@ Mason Lindley         21  Trevor Hodgson       8
             Points:   18           Points:     8
 
 Division 1 (Thurston) 7.       Mon 24th Jun
-   Spen Victoria 'A'         Littlemoor S&amp;SC
+   Spen Victoria 'A'         Littlemoor S&SC
 Andrew Wood           21  Terri Durrans        9
 Andy Hodgson          21  Angela Carter       19
 Kevin Wood            21  Philip A Richards   15
@@ -2058,7 +2058,7 @@ Arthur Schofield       7  Debi Davis          21
             Points:    2           Points:    24
 
 Division 1 (Thurston) 7.       Mon 1st Jul
-    Littlemoor S&amp;SC            Tyersal 'A'
+    Littlemoor S&SC            Tyersal 'A'
 Alan Mazurke           6  Chris Mordue        21
 Angela Carter         17  Simon Metcalfe      21
 Jim Moorin            21  Wendy Shimbles       7
@@ -2238,7 +2238,7 @@ John Stocks           21  Daren Munt           7
             Points:   19           Points:     7
 
 Division 1 (Thurston) 7.       Mon 8th Jul
-     Crowghyll Park          Littlemoor S&amp;SC
+     Crowghyll Park          Littlemoor S&SC
 Andy Matthews         21  Kath Mazurke         0
 Eddie Prince          21  Terri Durrans       19
 Richard Briggs        21  Philip A Richards    6
@@ -2394,7 +2394,7 @@ Alan Sinfield         15  Gary Wike           21
             Points:    2           Points:    24
 
 Division 1 (Thurston) 7.       Mon 15th Jul
-     Asa Briggs 'B'          Littlemoor S&amp;SC
+     Asa Briggs 'B'          Littlemoor S&SC
 Kenny McCafferty      14  Angela Carter       21
 Debra Pearson         11  Terri Durrans       21
 Sean Achofield        21  Kath Mazurke        18
@@ -2538,7 +2538,7 @@ Gary Woodhead         21  John Stevenson      14
             Points:   19           Points:     7
 
 Division 1 (Thurston) 7.       Mon 22nd Jul
-    Littlemoor S&amp;SC              Idle 'A'
+    Littlemoor S&SC              Idle 'A'
 Alan Mazurke          21  Dave Duckett        11
 Angela Carter         21  Michael Leach       18
 Jim Moorin            21  Alan Sinfield        6
@@ -2694,7 +2694,7 @@ Daren Munt             6  Chris Mordue        21
             Points:    7           Points:    19
 
 Division 1 (Thurston) 7.       Mon 29th Jul
-     Shipley Club A          Littlemoor S&amp;SC
+     Shipley Club A          Littlemoor S&SC
 John Sample           21  Kath Mazurke         5
 Graham Baggley        21  Angela Carter       15
 Craig Fenton          21  Terri Durrans        9
@@ -2850,7 +2850,7 @@ Arthur Schofield       4  Matthew Jacques     21
             Points:    5           Points:    21
 
 Division 1 (Thurston) 7.       Mon 5th Aug
-    Littlemoor S&amp;SC              Hightown
+    Littlemoor S&SC              Hightown
 Jim Moorin            21  Logan Preston        7
 Alan Mazurke           8  Jude Hatfield-Goodall                                                                                                                                                                                                                                                               21
 Angela Carter         21  Darren Goodall      15

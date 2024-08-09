@@ -163,7 +163,8 @@ If entering a new league, make sure the `bowls.py` script will still work e.g. d
 
 If Stanningley A and Stanningley B play one another then the `bowls.py` script will currently fail. The exception will need to be removed and the issue around the scoring and results if they play one another fixed.
 
-After generating the stats file for the new year, import the file into `App.js` and update `allYearStats`, `allYearCombinedStats` and `statsCallback` with the reference to the new year's stats file.
+After generating the stats file for the new year, import the file into `statsData.js`. Update `allYearStats` and `allYearCombinedStats`.
+Update `statsCallback` in `App.js` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
 
 Add a dropdown item for the new year in the `yearSelectDropdown.js` component.

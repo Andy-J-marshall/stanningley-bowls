@@ -1,5 +1,5 @@
-=== AireDale &amp; Wharfedale (Wed. Pairs) 2024
-=== League Report (as of Tue 6th Aug)
+=== AireDale & Wharfedale (Wed. Pairs) 2024
+=== League Report (as of Fri 9th Aug)
 
 
 === RESULTS: Wed 3rd Apr to Wed 4th Sep
@@ -132,6 +132,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
           Guiseley                                    v.   Burley in Wharfedale A                                              To Sat 3rd Aug
           Ilkley A                                    v.   Rufford A                                                           To Thu 20th Jun
+          Grove Hill                                  v.   Menston A                                                           To Fri 9th Aug
           Rufford B                                   v.   Bramhope                                                            To Fri 5th Jul
           Adel A                                      v.   Ilkley B                                                            To Mon 10th Jun (Postponed)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -390,41 +391,70 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
   9:30am  Guiseley                         12    87   v.   Burley in Wharfedale A           12    82                           From Wed 22nd May
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                   Wed 7th Aug                                      Division 1                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  6:30pm  Meanwood Park A                  20   104   v.   Burley in Wharfedale B            4    63                           
+  6:30pm  Burley in Wharfedale A           11    82   v.   Guiseley                         13    88                           
+  6:30pm  Rufford A                        17   103   v.   Ilkley A                          7    80                           
+  6:30pm  Menston A                        22   104   v.   Grove Hill                        2    53                           
+  6:30pm  Bramhope                         16    82   v.   Rufford B                         8    66                           
+  6:30pm  Ilkley B                          9    76   v.   Adel A                           15    90                           
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                   Wed 7th Aug                                      Division 2                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  6:30pm  Adel B                            9    80   v.   Idle                             15    91                           
+  6:30pm  Horsforth Hall Park              19    98   v.   Menston B                         5    57                           
+  6:30pm  Yeadon Park B                    14   100   v.   Holt Park                        10    86                           
+  6:30pm  Greenbottom                      11    89   v.   Rawdon                           13    95                           
+  6:30pm  Stanningley Park                  5    72   v.   Yeadon Park A                    19   104                           
+  6:30pm  New Armley                       10    81   v.   Meanwood Park B                  14    92                           
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                   Fri 9th Aug                                      Division 1                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  6:30pm  Grove Hill                       14    89   v.   Menston A                        10    79                           From Wed 22nd May
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Time                   Fri 9th Aug                                  Wednesday pairs ko                                                      
+                                                                             Final                                                            
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+  6:45pm  Ilkley A                         85         v.   Burley in Wharfedale A           91        On Yeadon Park           
+
 
 === Current LEAGUE TABLES
 === Division 1
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Rufford A                 17   14    3    297
-  2.  Burley in Wharfedale A    16   14    1    270
-  3.  Meanwood Park A           16   11    5    251
-  4.  Ilkley A                  17    9    7    230
-  5.  Guiseley                  16    7    7    186
-  6.  Ilkley B                  17    7    9    170
-  7.  Grove Hill                16    6   10    169
-  8.  Adel A                    17    6   10    167
-  9.  Bramhope                  17    6   10    164
- 10.  Rufford B                 17    3   13    162
- 11.  Burley in Wharfedale B    15    7    7    152
- 12.  Menston A                 15    3   11    134
+  1.  Rufford A                 18   15    3    314
+  2.  Burley in Wharfedale A    17   14    2    281
+  3.  Meanwood Park A           17   12    5    271
+  4.  Ilkley A                  18    9    8    237
+  5.  Guiseley                  17    8    7    199
+  6.  Grove Hill                18    7   11    185
+  7.  Adel A                    18    7   10    182
+  8.  Bramhope                  18    7   10    180
+  9.  Ilkley B                  18    7   10    179
+ 10.  Rufford B                 18    3   14    170
+ 11.  Menston A                 17    4   12    166
+ 12.  Burley in Wharfedale B    16    7    8    156
 
 === Division 2
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Horsforth Hall Park       17   16    1    299
-  2.  Rawdon                    17   14    3    286
-  3.  Meanwood Park B           17   14    3    274
-  4.  Greenbottom               17   10    5    257
-  5.  Yeadon Park A             17    9    8    225
-  6.  Idle                      17    9    7    201
-  7.  Holt Park                 17    6    9    189
-  8.  Yeadon Park B             17    7    9    178
-  9.  Stanningley Park          17    5   12    168
- 10.  Menston B                 17    5   12    147
- 11.  New Armley                17    3   14    119
- 12.  Adel B                    17    0   15    105
+  1.  Horsforth Hall Park       18   17    1    318
+  2.  Rawdon                    18   15    3    299
+  3.  Meanwood Park B           18   15    3    288
+  4.  Greenbottom               18   10    6    268
+  5.  Yeadon Park A             18   10    8    244
+  6.  Idle                      18   10    7    216
+  7.  Holt Park                 18    6   10    199
+  8.  Yeadon Park B             18    8    9    192
+  9.  Stanningley Park          18    5   13    173
+ 10.  Menston B                 18    5   13    152
+ 11.  New Armley                18    3   15    129
+ 12.  Adel B                    18    0   16    114
 
 
 === FULL RESULTS: Wed 3rd Apr to Wed 4th Sep
@@ -3390,5 +3420,200 @@ Roger Waite            Brian Wheeler
       Aggregate:   87        Aggregate:   82
           Games:    1            Games:    3
          Points:   12           Points:   12
+
+     Division 1             Wed 7th Aug
+   Meanwood Park A     Burley in Wharfedale 
+Karen Portman      26  Brian Wheeler      17
+Andy Swain             Alan Goodenough      
+Lynda Heath        26  Paul Hill          24
+Ian Howard             Robert Hartley       
+Steve Portman      26  Alwyn Robertson    13
+Peter Whipp            Robert Wheeler       
+Michael Gregory    26  Brian Wardle        9
+Ian Macfarlane         Nigel Steels         
+      Aggregate:  104        Aggregate:   63
+          Games:    4            Games:    0
+         Points:   20           Points:    4
+
+     Division 1             Wed 7th Aug
+Burley in Wharfedale         Guiseley
+Roy Knowles        26  Peter Storey       13
+Joe Ullock             Jeremy Jones         
+Mark Ullock        26  Lynne Ogden        23
+Andrew Shaw            Guy Smith            
+Pete Thornton      24  Carolyn Matthewman 26
+John Hardisty          Colin Matthewman     
+Richard Kellett     6  Luke Teale         26
+Ben Ullock             Billy Cater          
+      Aggregate:   82        Aggregate:   88
+          Games:    2            Games:    2
+         Points:   11           Points:   13
+
+     Division 1             Wed 7th Aug
+      Rufford A              Ilkley A
+Brian Teale        25  Andrew Breare      26
+Tim Bennett            Terry Almond         
+Christopher Sims   26  Steve Senior       14
+Dianne Teale           Andrew Cook          
+Allan Caine        26  Steve Birch 'A'    21
+Val Grace              Bernie Connor        
+Tom Broadbent      26  Steve Ackroyd      19
+David Norris           Darren Thompson      
+      Aggregate:  103        Aggregate:   80
+          Games:    3            Games:    1
+         Points:   17           Points:    7
+
+     Division 1             Wed 7th Aug
+      Menston A             Grove Hill
+Peter Hammond      26  John Chippindale    4
+Ian Smith              Tony Farrar          
+Gail Singh         26  David Locke        24
+Amrik Singh            Katherine Lodge      
+Gary Skeet         26  Neil Jameson       21
+Nigel Buckley          Charles Holden       
+Shaun Johnson      26  David Samuel        4
+Gwen Smith             Zoe Armstrong        
+      Aggregate:  104        Aggregate:   53
+          Games:    4            Games:    0
+         Points:   22           Points:    2
+
+     Division 1             Wed 7th Aug
+      Bramhope               Rufford B
+Anne Mackman       26  Mick Snowden       11
+Bob Williams           Alexander Waite      
+Antonio Sanna      26  Catherine New      10
+Ian Warner             Angela Bennett       
+Billy Webb         26  Pauline Ingleson   19
+Stewart Sunman         Pauline Gilroy       
+Linda Porter        4  Helen Gilroy       26
+Pam Wood               Stuart Parker        
+      Aggregate:   82        Aggregate:   66
+          Games:    3            Games:    1
+         Points:   16           Points:    8
+
+     Division 1             Wed 7th Aug
+      Ilkley B                Adel A
+Andrew Cobb        18  Jean Shepherd      26
+Andrew Hinchcliffe     Trevor Sargison      
+Debbie Shuttleworth12  Royston Lewis      26
+Deborah Swann          Howard Rew           
+Steve Morton       26  Wendy Allison      12
+Lee Stevens            Kathryn Jones        
+Colin Spooner      20  Meryl Auty         26
+Alan Strachan          David Pike           
+      Aggregate:   76        Aggregate:   90
+          Games:    1            Games:    3
+         Points:    9           Points:   15
+
+     Division 2             Wed 7th Aug
+       Adel B                  Idle
+Graham Clough      18  Roy Barlow         26
+Gordon Robinson        Val Leach            
+Phil Hayward       15  Dave Duckett       26
+Sue Pagdin             Mark Paxton          
+John Auty          21  Linda Brandon      26
+Steve Richardson       Steve Horne          
+Ken Garrett        26  Michael Barrett    13
+Paul Kaufman           Tekla England        
+      Aggregate:   80        Aggregate:   91
+          Games:    1            Games:    3
+         Points:    9           Points:   15
+
+     Division 2             Wed 7th Aug
+ Horsforth Hall Park         Menston B
+Phil Clayton       26  Christine Hughes   14
+Paul Stoyles           Mike Ripley          
+Frank Sutcliffe    20  Jim Hughes         26
+Peter Allen            Joyce Bishop         
+Ruth Sutcliffe     26  Monty Navias        7
+Nigel Stockdale        Margaret Ripley      
+Kath Crompton      26  Barbara Harrison   10
+David Firth            Rosemary Cowley      
+      Aggregate:   98        Aggregate:   57
+          Games:    3            Games:    1
+         Points:   19           Points:    5
+
+     Division 2             Wed 7th Aug
+    Yeadon Park B            Holt Park
+Shirley Nicholson  26  Peter Byford       16
+Julie Watson           Kathleen Haley       
+Reid Haddow        25  Barry Norcliffe    26
+Mark Sample            Trevor Haley         
+David Poole        26  David Lyons        18
+Marian Poole           Geraldine Lyons      
+Stuart Norris      23  Michelle Norcliffe 26
+Barry Slater           Debbie Sandles       
+      Aggregate:  100        Aggregate:   86
+          Games:    2            Games:    2
+         Points:   14           Points:   10
+
+     Division 2             Wed 7th Aug
+     Greenbottom              Rawdon
+Alan Bishop        18  Lindsay Rosendale  26
+Gary Poucher           Ken Garbett          
+Ann Ryley          26  Terry Waite-Pullan 24
+Edgar Ryley            Brian Minogue        
+Karen Whitelaw     19  Bernard Harrison   26
+Mike Whitelaw          Stan Parker          
+Elinor Newhouse    26  Graham Hogg        19
+Bill Lovedale          John Collins         
+      Aggregate:   89        Aggregate:   95
+          Games:    2            Games:    2
+         Points:   11           Points:   13
+
+     Division 2             Wed 7th Aug
+  Stanningley Park         Yeadon Park A
+Rob Packer         15  David Baldwin      26
+Phil Sutcliffe         Mark Wilson          
+Ken Green          19  Tracy Wilson       26
+Nicola Bona            Richard Gosnay       
+Paul Leonard       18  John Hutton        26
+Stephen Tiernan        Allen Hardcastle     
+Colin Haque        20  Frank Baker        26
+Tracey Marshall        Joan Baker           
+      Aggregate:   72        Aggregate:  104
+          Games:    0            Games:    4
+         Points:    5           Points:   19
+
+     Division 2             Wed 7th Aug
+     New Armley           Meanwood Park B
+Mark Aspin         26  David L Miller     24
+Maureen Morris         Pat Blackburn        
+Josie Burdon       21  John Hindle        26
+Karl Chapman           Philip McStay        
+Carol Robinson     26  Kathy Hey          16
+David Hurd             Graham Hey           
+Walter Stockhill    8  Douglas Blair      26
+David Gregory          Jeff Blackburn       
+      Aggregate:   81        Aggregate:   92
+          Games:    2            Games:    2
+         Points:   10           Points:   14
+
+     Division 1             Fri 9th Aug
+     Grove Hill              Menston A
+Charles Holden     23  Gail Singh         26
+Neil Jameson           Amrik Singh          
+David Locke        26  Peter Hammond       4
+Belinda Mitchell       Ian Smith            
+Daniel Twist       14  Shaun Johnson      26
+Tony Farrar            Gwen Smith           
+David Samuel       26  Gary Skeet         23
+John Chippindale       Nigel Buckley        
+      Aggregate:   89        Aggregate:   79
+          Games:    2            Games:    2
+         Points:   14           Points:   10
+
+ Wednesday pairs ko         Fri 9th Aug
+        Final             On Yeadon Park
+      Ilkley A         Burley in Wharfedale 
+Andrew Cook        26  Andrew Shaw        25
+Steve Senior           Mark Ullock          
+Andrew Breare      17  Brian Wheeler      26
+Terry Almond           Pete Thornton        
+Steve Ackroyd      26  Joe Ullock         14
+Darren Thompson        Roy Knowles          
+Bernie Connor      16  Richard Kellett    26
+Steve Birch 'A'        Ben Ullock           
+      Aggregate:   85        Aggregate:   91
 
 

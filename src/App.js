@@ -16,7 +16,15 @@ import PlayerStats from './components/playerStats';
 import History from './components/history';
 import YearSelectDropdown from './components/yearSelectDropdown';
 import statsData from './statsData';
+import statsData from './statsData';
 import './app.css';
+
+const {
+    allYearStats,
+    allYearCombinedStats,
+    statsForEveryYearArray,
+    combinedStatsForEveryYearArray,
+} = statsData;
 
 function App() {
     const [teamStats, setTeamStats] = useState(statsData.dataFiles.bowlsStats24);
@@ -146,7 +154,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={true}
                                 />
                                 <PlayerStats
                                     url="/#/stats/player"
@@ -192,7 +199,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={false}
                                 />
                                 <TeamStats
                                     stats={teamStats}
@@ -209,7 +215,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={true}
                                 />
                                 <PlayerRecords
                                     stats={teamStats}

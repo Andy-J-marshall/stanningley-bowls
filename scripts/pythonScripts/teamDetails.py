@@ -43,8 +43,8 @@ traitorPlayers = {
 otherLeagues = [
     'Tuesday Mirfield', 
     'Wednesday Spen Valley',
-    'Monday AireDale & Wharfedale',
-    'Tuesday AireDale & Wharfedale',
+    'Monday AireWharfe',
+    'Tuesday AireWharfe',
     'Monday Bradford',
     'Wednesday Half Holiday Bradford',
     'Thursday Vets Bradford', 
