@@ -2866,7 +2866,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday AireDale & Wharfedale",
+            "day": "Monday AireWharfe",
             "awayWins": 5,
             "homeWins": 9,
             "wins": 14,
@@ -2904,7 +2904,7 @@
             ]
         },
         {
-            "day": "Monday AireDale & Wharfedale (B)",
+            "day": "Monday AireWharfe (B)",
             "awayWins": 0,
             "homeWins": 6,
             "wins": 6,
@@ -3145,7 +3145,7 @@
             "opponentAgg": 2328,
             "leaguePosition": 8,
             "results": [
-                "Stanningley Park A B 7 - 3 Stanningley B",
+                "Stanningley Park A 7 - 3 Stanningley B",
                 "Stanningley B 5 - 5 Bramley Pk B",
                 "Stanningley B 6 - 4 West Royd Park'B'",
                 "Cross Flatts Pk A 8 - 2 Stanningley B",
