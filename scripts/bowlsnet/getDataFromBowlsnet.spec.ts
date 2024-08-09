@@ -152,6 +152,10 @@ for (const team of teams) {
     await newPage.bringToFront();
     const value = await newPage.$eval('body > pre', (el) => el.textContent);
     const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
-    fs.writeFile(filePath, value as string, (err) => {  console.log(err); }); 
+    fs.writeFile(filePath, value as string, (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
   });
 }
