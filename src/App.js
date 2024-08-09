@@ -126,7 +126,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={true}
                                 />
                                 <PlayerStats
                                     stats={teamStats}
@@ -148,7 +147,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={false}
                                 />
                                 <TeamStats
                                     stats={teamStats}
@@ -165,7 +163,6 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    showOldYears={true}
                                 />
                                 <PlayerRecords
                                     stats={teamStats}
