@@ -223,4 +223,3 @@ def checkFileSize(fileName):
     if newEndRow == 0:
         raise Exception('JSON is empty')
     return newEndRow
-                    
