@@ -1,5 +1,5 @@
 === Leeds & District (Thursday Over 55s) 2024
-=== League Report (as of Thu 8th Aug)
+=== League Report (as of Fri 9th Aug)
 
 
 === RESULTS: Thu 11th Apr to Thu 29th Aug
@@ -213,9 +213,11 @@
 ------------------------------------------------------------------------------------------------------------------------------
  1:30pm  Pudsey Park A           30   143   v.   Burley Prk              29   135                           
  1:30pm  Western Flatts          31   148   v.   Scatcherd Pk A          30   140                           
+ 1:30pm  Gildersome              34   150   v.   Stanningley Park A      25   122                           
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 8th Aug                              Division 2                                               
 ------------------------------------------------------------------------------------------------------------------------------
+ 1:30pm  New Armley              16    88   v.   Cross Flatts Pk         35   147                           
  1:30pm  Bramley Park            28   134   v.   West Royd Park          31   139                           
  1:30pm  New Wortley             36   158   v.   Cranmore BC             26   123                           
  1:30pm  Middleton Park          33   147   v.   Pudsey Park B           27   130                           
@@ -226,10 +228,10 @@
                                Matches     Pnts
  Pos  Team                   Pl    W    L    For
 ====  ====================  ===  ===  ===  =====  
-  1.  Stanningley Park A     11    8    3    359
-  2.  Middleton Community    11    8    3    348
-  3.  Burley Prk             11    5    6    339
-  4.  Gildersome             10    8    2    325
+  1.  Stanningley Park A     12    8    4    384
+  2.  Gildersome             11    9    2    359
+  3.  Middleton Community    11    8    3    348
+  4.  Burley Prk             11    5    6    339
   5.  Pudsey Park A          11    3    7    304
   6.  Western Flatts         11    4    6    290
   7.  Scatcherd Pk A         11    1   10    263
@@ -241,11 +243,11 @@
   1.  New Wortley            13   13    0    443
   2.  Cranmore BC            12    6    5    366
   3.  West Royd Park         13    7    6    355
-  4.  Bramley Park           13    4    8    341
-  5.  Middleton Park         13    4    9    337
-  6.  Cross Flatts Pk        11    8    2    317
+  4.  Cross Flatts Pk        12    9    2    352
+  5.  Bramley Park           13    4    8    341
+  6.  Middleton Park         13    4    9    337
   7.  Pudsey Park B          13    2   10    308
-  8.  New Armley             12    4    8    291
+  8.  New Armley             13    4    9    307
 
 
 === FULL RESULTS: Thu 11th Apr to Thu 29th Aug
@@ -1470,6 +1472,32 @@ Anne Lucas            21  Michael Geary        16
 Glynis Ash            21  Keith Kincaid        20
         Aggregate:   148         Aggregate:   140
            Points:    31            Points:    30
+
+       Division 1               Thu 8th Aug
+       Gildersome           Stanningley Park A
+David Norton          21  Alison Woodfine      12
+David Holmes          21  Donald Shaw           8
+David Charlesworth     9  David Eaton          21
+Frank Hales           15  Cliff Brogie         21
+Sandra Deegan         21  Malvin Miller        15
+Linda Gaunt           21  Jim Swailes          10
+Kevin Smales          21  Andy Waller          17
+Simon Hampshaw        21  Duncan McPhail       18
+        Aggregate:   150         Aggregate:   122
+           Points:    34            Points:    25
+
+       Division 2               Thu 8th Aug
+       New Armley             Cross Flatts Pk
+Fred Hargreaves        8  Shirley Biancardo    21
+Josie M Burdon         7  John Harvey          21
+Maureen Morris        21  *No Player*           0
+Richard Aspin          5  Mario Biancardo      21
+Carol Robinson        17  Monica Buckroyd      21
+Gordon Sadler         15  Peter Griffin        21
+Gerry Faller           9  Jim Bootland         21
+David Hurd             6  Ian Wood             21
+        Aggregate:    88         Aggregate:   147
+           Points:    16            Points:    35
 
        Division 2               Thu 8th Aug
       Bramley Park            West Royd Park
