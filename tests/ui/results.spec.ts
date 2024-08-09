@@ -17,5 +17,5 @@ test('Teams results appear for previous years', async () => {
 });
 
 test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
-  await yearSelectPage.checkYearDropdownHasAllYearOptions(10);
+  await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
 });

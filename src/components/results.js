@@ -54,7 +54,6 @@ function Results(props) {
                 <YearSelectDropdown
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
-                    showOldYears={false}
                 />
                 <h1>RESULTS</h1>
                 {resultsArray.map((resultTeam, idx) => {
@@ -156,7 +155,6 @@ function Results(props) {
                 <YearSelectDropdown
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
-                    showOldYears={false}
                 />
                 <h1>RESULTS</h1>
                 <p>No results for {yearToDisplay}</p>
