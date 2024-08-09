@@ -38,5 +38,5 @@ test('Team stats not show for Wednesday Pairs in 2023 as team did not exist', as
 });
 
 test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
-  await basePage.checkYearDropdownHasAllYearOptions(9);
+  await basePage.checkYearDropdownHasAllYearOptions(10);
 });
