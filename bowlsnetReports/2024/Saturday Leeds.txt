@@ -386,11 +386,13 @@
   2:00pm  Cross Flatts A         27   126   v.   Sth Leeds Cons A       30   137                        
   2:00pm  Holbeck Ltd A          24   116   v.   Stanningley Park A     30   133                        
   2:00pm  New Wortley            26   129   v.   Scatcherd Park A       31   143                        
+  2:00pm  Meanwood               35   157   v.   Gildersome A           17    94                        
 --------------------------------------------------------------------------------------------------------------------------
   Time             Sat 10th Aug                               Div 1                                              
                                                           League Div 2                                           
 --------------------------------------------------------------------------------------------------------------------------
   2:00pm  Pudsey Park            25   129   v.   Western Flatts         32   144                        
+  2:00pm  Gildersome B           30   141   v.   Middleton Park         28   128                        
   2:00pm  New Armley             16    95   v.   New Farnley            40   168                        
   2:00pm  Stanningley Park B     29   137   v.   Middleton Comm         29   131                        
 
@@ -405,10 +407,10 @@
   3.  Cross Flatts A        15   12    3    496
   4.  New Wortley           16    8    8    470
   5.  Sth Leeds Cons A      15    9    6    434
-  6.  Holbeck Moor          15    7    8    420
-  7.  Holbeck Ltd A         15    5   10    412
-  8.  Gildersome A          15    5   10    394
-  9.  Meanwood              14    5    9    387
+  6.  Meanwood              15    6    9    422
+  7.  Holbeck Moor          15    7    8    420
+  8.  Holbeck Ltd A         15    5   10    412
+  9.  Gildersome A          16    5   11    411
  10.  Sth Leeds Cons B      16    0   15    345
 
 === League Div 2
@@ -419,11 +421,11 @@
   2.  Pudsey Park           16   11    5    514
   3.  Western Flatts        16    7    8    458
   4.  Middleton Comm        14    9    4    436
-  5.  Cranmore              14    8    6    423
-  6.  Bramley Park          15    5    9    417
-  7.  Stanningley Park B    15    7    6    400
-  8.  Gildersome B          15    4   10    399
-  9.  Middleton Park        15    5   10    367
+  5.  Gildersome B          16    5   10    429
+  6.  Cranmore              14    8    6    423
+  7.  Bramley Park          15    5    9    417
+  8.  Stanningley Park B    15    7    6    400
+  9.  Middleton Park        16    5   11    395
  10.  New Armley            16    1   15    356
 
 
@@ -2658,6 +2660,20 @@ Keith Sellars       11  Michael Stott       21
          Points:    26           Points:    31
 
         Div 1                Sat 10th Aug
+     League Div 1                  
+       Meanwood              Gildersome A
+Barbara Gray        21  Harvey Lockwood     10
+Oliver Devaney      21  Dougie Cooper        9
+John Hindle         21  Frank Hales          9
+Julie Keightley     17  Sandra Deegan       21
+Pat Blackburn       21  Diane Hales          9
+David L Miller      14  Linda Gaunt         21
+Jeff Blackburn      21  Kevin Smales         8
+Douglas Blair       21  Graham Gaunt         7
+      Aggregate:   157        Aggregate:    94
+         Points:    35           Points:    17
+
+        Div 1                Sat 10th Aug
      League Div 2                  
      Pudsey Park            Western Flatts
 Dennis Walters       9  Anne Lucas          21
@@ -2670,6 +2686,20 @@ Frank Lindsay       13  Margaret McPhail    21
 Stephen Morris      14  Mary Horrocks       21
       Aggregate:   129        Aggregate:   144
          Points:    25           Points:    32
+
+        Div 1                Sat 10th Aug
+     League Div 2                  
+     Gildersome B           Middleton Park
+Frank Tempest       21  Trevor Sackett      12
+Neil Schofield      21  James King          11
+Rachel Barnard       8  Kath Burdett        21
+Barbara Hall        12  Ian Dickinson       21
+John Ackroyd        21  Bill Lovett         11
+David Charlesworth  20  Philip Rowe         21
+Bev Hampshaw        17  Beryl Butterfield   21
+Tony Morris         21  Allan Blue          10
+      Aggregate:   141        Aggregate:   128
+         Points:    30           Points:    28
 
         Div 1                Sat 10th Aug
      League Div 2                  
