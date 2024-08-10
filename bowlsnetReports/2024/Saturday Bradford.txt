@@ -579,11 +579,21 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                              Division 1 (Naylor Premier)                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Pudsey 'A'                       24   203   v.   Asa Briggs 'A'                    6   144     
   2:00pm  Farsley                           4   135   v.   Littlemoor S&SC 'A'              26   199     
+  2:00pm  Guiseley 'A'                     21   196   v.   Wyke 'A'                          9   162     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Clayton A                        17   174   v.   Pudsey 'B'                       13   161     
   2:00pm  Eccleshill 'A'                   21   192   v.   Rufford 'A'                       9   154     
+  2:00pm  Harold Club 'A'                  12   170   v.   Brighouse Sports A               18   189     
+-------------------------------------------------------------------------------------------------------------------------------------------
+  Time                  Sat 10th Aug                                  Division 3 (Mellor)                                 
+-------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Wibsey                            6   166   v.   Hipperholme & Lightcliffe 'A'    24   209     
+  2:00pm  Wyke 'B'                         20   184   v.   Guiseley 'B'                     10   149     
+  2:00pm  Hightown                         19   175   v.   Spen Victoria 'B'                11   141     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                             Division 4 (Bartle) 8 Player                             
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -591,15 +601,21 @@
   2:00pm  Crowghyll Park                   21   158   v.   Cleckheaton Moorend               7   116     
   2:00pm  Hove Edge 'B'                    24   165   v.   Oakenshaw                         4   100     
   2:00pm  Queensbury                       10   140   v.   Hill Crest 'B'                   18   157     
+  2:00pm  Brighouse Sports B               23   163   v.   Burley Park                       5   104     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                              Division 5 (Haigh) 8 Player                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Hipperholme & Lightcliffe 'B'    22   162   v.   Eccleshill 'C'                    6   108     
  12:00pm  Asa Briggs 'C'                   14   132   v.   Bailiff Bridge                   14   134     
   2:00pm  Brackenhill                      16   134   v.   Luddendenfoot                    12   124     
+  2:00pm  Birkenshaw                       11   130   v.   New Greengates                   17   150     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                              Division 6 (Riley) 8 Player                             
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Bowling                          21   153   v.   West Bradford 'C'                 7   111     
+  2:00pm  Tyersal                           7   104   v.   Clayton B                        21   150     
   2:00pm  West Bradford 'B'                11   124   v.   Cleckheaton Sports 'B'           17   141     
+  2:00pm  Bradford Moor                    15   131   v.   Guiseley 'C'                     13   127     
  12:00pm  West Bradford 'B'                 5    96   v.   Spen Victoria C                  23   158     From Sat 6th Jul
 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -619,13 +635,13 @@
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Littlemoor S&SC 'A'              11    8    3    209
-  2.  Pudsey 'A'                        9    8    1    185
-  3.  Spen Victoria 'A'                10    6    4    172
-  4.  Cononley                         10    7    2    171
-  5.  Shipley Club                     10    4    5    163
-  6.  Guiseley 'A'                     10    5    5    153
-  7.  Asa Briggs 'A'                   10    2    8    109
-  8.  Wyke 'A'                         10    2    6     97
+  2.  Pudsey 'A'                       10    9    1    209
+  3.  Guiseley 'A'                     11    6    5    174
+  4.  Spen Victoria 'A'                10    6    4    172
+  5.  Cononley                         10    7    2    171
+  6.  Shipley Club                     10    4    5    163
+  7.  Asa Briggs 'A'                   11    2    9    115
+  8.  Wyke 'A'                         11    2    7    106
   9.  Farsley                          10    1    9     91
 
 === Division 2 (Godwin)
@@ -633,38 +649,38 @@
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Hill Crest 'A'                   11   10    1    219
-  2.  Eccleshill 'A'                   12    8    4    205
-  3.  Brighouse Sports A               11    7    4    193
-  4.  Hove Edge 'A'                    11    6    5    177
-  5.  Rufford 'A'                      12    7    5    176
-  6.  Pudsey 'B'                       11    6    5    166
-  7.  Clayton A                        11    4    7    146
-  8.  Rastrick                         11    3    8    142
-  9.  Harold Club 'A'                  11    2    9    141
+  2.  Brighouse Sports A               12    8    4    211
+  3.  Eccleshill 'A'                   12    8    4    205
+  4.  Pudsey 'B'                       12    6    6    179
+  5.  Hove Edge 'A'                    11    6    5    177
+  6.  Rufford 'A'                      12    7    5    176
+  7.  Clayton A                        12    5    7    163
+  8.  Harold Club 'A'                  12    2   10    153
+  9.  Rastrick                         11    3    8    142
  10.  Littlemoor S&SC 'B'              11    3    8    115
 
 === Division 3 (Mellor)
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Hightown                         13   11    2    267
-  2.  Hipperholme & Lightcliffe 'A'    11    8    3    217
-  3.  Spen Victoria 'B'                11   10    0    214
+  1.  Hightown                         14   12    2    286
+  2.  Hipperholme & Lightcliffe 'A'    12    9    3    241
+  3.  Spen Victoria 'B'                12   10    1    225
   4.  Eccleshill 'B'                   12    5    7    189
   5.  Pudsey 'C'                       11    4    6    164
   6.  Asa Briggs 'B'                   11    5    6    157
-  7.  Wibsey                           11    3    8    130
-  8.  Rufford 'B'                      11    4    7    128
-  9.  Guiseley 'B'                     11    3    8    123
- 10.  Wyke 'B'                         12    3    9    121
+  7.  Wyke 'B'                         13    4    9    141
+  8.  Wibsey                           12    3    9    136
+  9.  Guiseley 'B'                     12    3    9    133
+ 10.  Rufford 'B'                      11    4    7    128
 
 === Division 4 (Bartle) 8 Player
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Burley Park                      11    9    1    213
-  2.  Queensbury                       12    8    4    201
-  3.  Brighouse Sports B               11    9    2    190
+  1.  Burley Park                      12    9    2    218
+  2.  Brighouse Sports B               12   10    2    213
+  3.  Queensbury                       12    8    4    201
   4.  Hove Edge 'B'                    12    7    5    185
   5.  Hill Crest 'B'                   12    6    6    180
   6.  West Bradford 'A'                12    4    7    152
@@ -679,13 +695,13 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Luddendenfoot                    11    8    2    199
   2.  Asa Briggs 'C'                   11    6    4    169
-  3.  Brackenhill                      11    6    5    151
-  4.  Hipperholme & Lightcliffe 'B'     9    6    3    137
-  5.  Bailiff Bridge                   11    4    6    134
-  6.  Harold Club 'B'                  10    3    7    132
-  7.  Birkenshaw                       10    4    6    125
-  8.  New Greengates                    9    3    5    122
-  9.  Eccleshill 'C'                   10    4    6    119
+  3.  Hipperholme & Lightcliffe 'B'    10    7    3    159
+  4.  Brackenhill                      11    6    5    151
+  5.  New Greengates                   10    4    5    139
+  6.  Birkenshaw                       11    4    7    136
+  7.  Bailiff Bridge                   11    4    6    134
+  8.  Harold Club 'B'                  10    3    7    132
+  9.  Eccleshill 'C'                   11    4    7    125
 
 === Division 6 (Riley) 8 Player
                                          Matches     Pnts
@@ -693,13 +709,13 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Spen Victoria C                  10   10    0    207
   2.  Cleckheaton Sports 'B'           11    9    2    200
-  3.  West Bradford 'B'                11    6    3    167
-  4.  Bradford Moor                    10    4    6    154
-  5.  West Bradford 'C'                10    4    6    132
-  6.  Bowling                           9    5    4    130
-  7.  Clayton B                        10    3    6    126
-  8.  Tyersal                          10    1    9     73
-  9.  Guiseley 'C'                      9    1    7     71
+  3.  Bradford Moor                    11    5    6    169
+  4.  West Bradford 'B'                11    6    3    167
+  5.  Bowling                          10    6    4    151
+  6.  Clayton B                        11    4    6    147
+  7.  West Bradford 'C'                11    4    7    139
+  8.  Guiseley 'C'                     10    1    8     84
+  9.  Tyersal                          11    1   10     80
 
 
 === FULL RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -5188,6 +5204,22 @@ Paul Wood            14  John French         21
            Points:   19           Points:     9
 
 Division 1 (Naylor Prem       Sat 10th Aug
+      Pudsey 'A'             Asa Briggs 'A'
+Stuart Hanson        21  Clive Foord 'A'     13
+Jon Edmondson        21  Jordan Brown 'B'    11
+Mason Lindley        20  Michael Frost       21
+Chris Mordue         21  Carl Smith          16
+Andrew Sykes         21  Kevin Burrage       18
+Gary Wike            21  Gary Woodhead       11
+Philip Wilsdon       21  Paula Graham         6
+Jamie Winterburn     15  Malcolm Iles 'A'    21
+Tom Morris           21  James Klenk         10
+Pam Lindley          21  Mark Hirst          17
+            Games:    8            Games:     2
+        Aggregate:  203        Aggregate:   144
+           Points:   24           Points:     6
+
+Division 1 (Naylor Prem       Sat 10th Aug
         Farsley           Littlemoor S&SC 'A'
 Stephen Gilroy       21  Mark Allman         10
 Ian Swinfield        11  Lee Wider           21
@@ -5202,6 +5234,38 @@ Dean Helliwell        9  Phil Vayro          21
             Games:    1            Games:     9
         Aggregate:  135        Aggregate:   199
            Points:    4           Points:    26
+
+Division 1 (Naylor Prem       Sat 10th Aug
+     Guiseley 'A'               Wyke 'A'
+James Teale          21  Nigel Wormald       10
+Will Gilroy          21  Trevor Benn 'A'     19
+Graham Oliver 'A'    20  Neil Tordoff 'A'    21
+Martin Wilson        21  Frank Cullen 'A'    10
+Daniel Teale         18  Daniel Barker       21
+Luke Teale           11  Ian Wilson 'A'      21
+Ben Stockdale        21  Darren Hickey       19
+Thomas Cater         21  Matthew Hicks        5
+Joe Stockdale        21  Chris Sowden        17
+Richard Stockdale    21  Gareth Metcalf      19
+            Games:    7            Games:     3
+        Aggregate:  196        Aggregate:   162
+           Points:   21           Points:     9
+
+  Division 2 (Godwin)         Sat 10th Aug
+       Clayton A               Pudsey 'B'
+Tom Harney           21  Lynn Noonan          8
+Joe Bray             21  Wendy Shimbles       9
+Paul Gill            21  Sue Chadwick        11
+June Wilson          21  Logan Preston       14
+Jack Summers         21  Matthew Leaf        14
+Myles Summers        20  Pam Lindley         21
+Paul Demetriades     17  Peter Simpson       21
+Bev Clayton          14  David Hilliam       21
+Andy Walker          10  Tom Morris          21
+Chris Wilson          8  Simon Metcalfe      21
+            Games:    5            Games:     5
+        Aggregate:  174        Aggregate:   161
+           Points:   17           Points:    13
 
   Division 2 (Godwin)         Sat 10th Aug
     Eccleshill 'A'            Rufford 'A'
@@ -5218,6 +5282,70 @@ Mick Angus           21  David Waite          8
             Games:    7            Games:     3
         Aggregate:  192        Aggregate:   154
            Points:   21           Points:     9
+
+  Division 2 (Godwin)         Sat 10th Aug
+    Harold Club 'A'        Brighouse Sports A
+Tom Jagger           21  John Bloomer        12
+Shaun Godfrey        21  Tony Riley          12
+David Halligan       21  David Southwell     19
+Paul Garside         18  Gordon Bradford     21
+Joe Mellor           17  Daniel Dunkerley    21
+Eddie Hill           21  Richard Hobson 'A'  20
+Andy Malone          18  Robert Hopper       21
+Stuart Harrison      15  Helen Simpson       21
+Nicky Jagger         10  Bailey Dawson       21
+Martin Watson         8  Julian Dawson       21
+            Games:    4            Games:     6
+        Aggregate:  170        Aggregate:   189
+           Points:   12           Points:    18
+
+  Division 3 (Mellor)         Sat 10th Aug
+        Wibsey           Hipperholme & Lightcli
+John Stocks          20  Nick Crowther       21
+Andrea McHenry       21  Adrian Megson       20
+David Moore          14  Ian Ryding          21
+Tasawar Hussain      17  Mathew Parker       21
+John Exley           14  John Denham         21
+John Simpson         14  Nigel Parker        21
+Sandra Cooper        15  Steve Swallow       21
+John Stevenson       18  Ian Hawtin          21
+Rich Hunter          16  Nigel Broadbent     21
+Alison Stocks        17  Chris Cox           21
+            Games:    1            Games:     9
+        Aggregate:  166        Aggregate:   209
+           Points:    6           Points:    24
+
+  Division 3 (Mellor)         Sat 10th Aug
+       Wyke 'B'               Guiseley 'B'
+Nigel Swales         21  Lynne Ogden          4
+Colin Fallows        21  Jeremy Jones         5
+Stephen Ward         21  Guy Smith            9
+Michael Walton       21  John French         12
+Gerry Hird           21  Ralph Sissons       16
+Richard Kerr         21  Andrew Durkin       19
+Dominic Hanson       16  Caroline Corbett    21
+John Winstanley      16  Carolyn Matthewman  21
+Vincent Kerr         15  Colin Matthewman    21
+Mike Lambert         11  Peter Storey        21
+            Games:    6            Games:     4
+        Aggregate:  184        Aggregate:   149
+           Points:   20           Points:    10
+
+  Division 3 (Mellor)         Sat 10th Aug
+       Hightown            Spen Victoria 'B'
+Gerald Bromley        1  Darren Ripley       21
+Poppy Fox            15  Kevin Wood          21
+Eddie Gilbert        16  Lewis Pember        21
+Roy Carter           18  Paul Blackburn      21
+Jacob Hatfield-Goodall                                                                                                                                                                                                                                                               20  Harley Tattersley   21
+Scott Fisher         21  John Smith           1
+Sean Carter          21  Terry Varney         3
+Darren Goodall       21  Steve Kemp           7
+Tom Gilbert          21  John Blackburn      11
+Jude Hatfield-Goodall21  Richard Brooke      14
+            Games:    5            Games:     5
+        Aggregate:  175        Aggregate:   141
+           Points:   19           Points:    11
 
 Division 4 (Bartle) 8 P       Sat 10th Aug
 Cleckheaton Sports 'A'     West Bradford 'A'
@@ -5275,6 +5403,34 @@ Michael Clare        21  Gary Jackson        11
         Aggregate:  140        Aggregate:   157
            Points:   10           Points:    18
 
+Division 4 (Bartle) 8 P       Sat 10th Aug
+  Brighouse Sports B          Burley Park
+Nigel Marshall       21  Tommy Parr          19
+Anthony Naylor       16  Mark McCann         21
+Peter Owen           21  Jordan Edmondson    15
+Mark Connolly        21  Barry Palmer         6
+Micheal Wood         21  Pauline Stockdale    6
+Jason Horsley        21  Stephen Pickersgill 13
+Dale Dyson           21  James Miller        12
+Neal Hopper          21  Kevin Gilroy        12
+            Games:    7            Games:     1
+        Aggregate:  163        Aggregate:   104
+           Points:   23           Points:     5
+
+Division 5 (Haigh) 8 Pl       Sat 10th Aug
+Hipperholme & Lightclif      Eccleshill 'C'
+Mark Crowther        21  Ken Binder          15
+Kate Palmer          18  Shirley Rooks       21
+John Donovan         18  Keith Cooksey       21
+Alan Jacques         21  Mark Stevens         7
+David Healey         21  Robert Renton       11
+Chris Marlow         21  Sue Butler           6
+Luke Britton         21  Andrew Smith        10
+Roger Bernard        21  Sarah Harrison      17
+            Games:    6            Games:     2
+        Aggregate:  162        Aggregate:   108
+           Points:   22           Points:     6
+
 Division 5 (Haigh) 8 Pl       Sat 10th Aug
     Asa Briggs 'C'           Bailiff Bridge
 David Trudgill       21  Terry Firth          9
@@ -5303,6 +5459,48 @@ Andrew Mackrill      21  Clive Austin        19
         Aggregate:  134        Aggregate:   124
            Points:   16           Points:    12
 
+Division 5 (Haigh) 8 Pl       Sat 10th Aug
+      Birkenshaw             New Greengates
+Anthony Hatherley     9  Vincent Bussingham  21
+Audrey Firth         16  Chris J Burnett     21
+Steven Smith          7  Sharon Queripel     21
+Linda Pickering      21  Tom Sayer           12
+George Hunter        21  Steven Bussingham   17
+Tom Pickering        16  Allan Smith         21
+Jean Mortimer        19  Alan Broscombe      21
+Jack Holdsworth      21  Keith Goodall       16
+            Games:    3            Games:     5
+        Aggregate:  130        Aggregate:   150
+           Points:   11           Points:    17
+
+Division 6 (Riley) 8 Pl       Sat 10th Aug
+        Bowling            West Bradford 'C'
+Tracy Duxbury        21  Sheila Edden         9
+Keith Robertson      21  Hugh Chambers        9
+Brian Metcalfe       21  *No Player*          0
+Bill Graham          21  Anne Mullaney       15
+Sheila Krysik        21  Lesley Lalor        16
+Violet Rodgers        7  Colin Isles         21
+Neil Duxbury         21  Gerry Peel          20
+Trevor Yeadon        20  Patrick McNally     21
+            Games:    6            Games:     2
+        Aggregate:  153        Aggregate:   111
+           Points:   21           Points:     7
+
+Division 6 (Riley) 8 Pl       Sat 10th Aug
+        Tyersal                Clayton B
+Colin Wright         21  Sue Findlay          4
+Russell Hudson       21  Lee Greenwood       20
+Pam Fergus           13  Simon Russell       21
+Aleisha Martin        3  Joe Midgley         21
+Christine Hillas     16  Pauline McGregor    21
+Margaret Wilson       5  Peter Barker        21
+Brenda Hudson        13  Steve Edgley        21
+Terry King           12  Malcolm Riggs       21
+            Games:    2            Games:     6
+        Aggregate:  104        Aggregate:   150
+           Points:    7           Points:    21
+
 Division 6 (Riley) 8 Pl       Sat 10th Aug
    West Bradford 'B'     Cleckheaton Sports 'B'
 John Dale            21  Andrea Brearley     12
@@ -5316,6 +5514,20 @@ Brian Woolner         7  Helen Seed          21
             Games:    3            Games:     5
         Aggregate:  124        Aggregate:   141
            Points:   11           Points:    17
+
+Division 6 (Riley) 8 Pl       Sat 10th Aug
+     Bradford Moor            Guiseley 'C'
+Martin Barraclough   17  Norman Lickley      21
+Janet Gatenby        12  Alan Whitehouse     21
+Marjorie Leeming     12  Anne Brown          21
+Diane Barraclough     6  Doreen Lawson       21
+Doreen Parkin        21  Bridget Hopkinson   17
+Alan Naylor          21  Jean Perry          16
+Alan Farrow 'A'      21  Roger Garnett        6
+Mark Durrans 'A'     21  Paul Gains           4
+            Games:    4            Games:     4
+        Aggregate:  131        Aggregate:   127
+           Points:   15           Points:    13
 
 Division 6 (Riley) 8 Pl       Sat 10th Aug
    West Bradford 'B'        Spen Victoria C
