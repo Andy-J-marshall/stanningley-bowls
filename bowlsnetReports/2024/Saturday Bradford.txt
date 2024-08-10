@@ -581,16 +581,21 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Pudsey 'A'                       24   203   v.   Asa Briggs 'A'                    6   144     
   2:00pm  Farsley                           4   135   v.   Littlemoor S&SC 'A'              26   199     
+  2:00pm  Spen Victoria 'A'                21   197   v.   Cononley                          9   156     
   2:00pm  Guiseley 'A'                     21   196   v.   Wyke 'A'                          9   162     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Littlemoor S&SC 'B'              17   181   v.   Hove Edge 'A'                    13   175     
   2:00pm  Clayton A                        17   174   v.   Pudsey 'B'                       13   161     
   2:00pm  Eccleshill 'A'                   21   192   v.   Rufford 'A'                       9   154     
   2:00pm  Harold Club 'A'                  12   170   v.   Brighouse Sports A               18   189     
+  2:00pm  Hill Crest 'A'                   21   191   v.   Rastrick                          9   151     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 10th Aug                                  Division 3 (Mellor)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
+  2:00pm  Rufford 'B'                      14   170   v.   Eccleshill 'B'                   16   174     
+  2:30pm  Asa Briggs 'B'                   22   188   v.   Pudsey 'C'                        8   141     
   2:00pm  Wibsey                            6   166   v.   Hipperholme & Lightcliffe 'A'    24   209     
   2:00pm  Wyke 'B'                         20   184   v.   Guiseley 'B'                     10   149     
   2:00pm  Hightown                         19   175   v.   Spen Victoria 'B'                11   141     
@@ -636,9 +641,9 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Littlemoor S&SC 'A'              11    8    3    209
   2.  Pudsey 'A'                       10    9    1    209
-  3.  Guiseley 'A'                     11    6    5    174
-  4.  Spen Victoria 'A'                10    6    4    172
-  5.  Cononley                         10    7    2    171
+  3.  Spen Victoria 'A'                11    7    4    193
+  4.  Cononley                         11    7    3    180
+  5.  Guiseley 'A'                     11    6    5    174
   6.  Shipley Club                     10    4    5    163
   7.  Asa Briggs 'A'                   11    2    9    115
   8.  Wyke 'A'                         11    2    7    106
@@ -648,16 +653,16 @@
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Hill Crest 'A'                   11   10    1    219
+  1.  Hill Crest 'A'                   12   11    1    240
   2.  Brighouse Sports A               12    8    4    211
   3.  Eccleshill 'A'                   12    8    4    205
-  4.  Pudsey 'B'                       12    6    6    179
-  5.  Hove Edge 'A'                    11    6    5    177
+  4.  Hove Edge 'A'                    12    6    6    190
+  5.  Pudsey 'B'                       12    6    6    179
   6.  Rufford 'A'                      12    7    5    176
   7.  Clayton A                        12    5    7    163
   8.  Harold Club 'A'                  12    2   10    153
-  9.  Rastrick                         11    3    8    142
- 10.  Littlemoor S&SC 'B'              11    3    8    115
+  9.  Rastrick                         12    3    9    151
+ 10.  Littlemoor S&SC 'B'              12    4    8    132
 
 === Division 3 (Mellor)
                                          Matches     Pnts
@@ -666,13 +671,13 @@
   1.  Hightown                         14   12    2    286
   2.  Hipperholme & Lightcliffe 'A'    12    9    3    241
   3.  Spen Victoria 'B'                12   10    1    225
-  4.  Eccleshill 'B'                   12    5    7    189
-  5.  Pudsey 'C'                       11    4    6    164
-  6.  Asa Briggs 'B'                   11    5    6    157
-  7.  Wyke 'B'                         13    4    9    141
-  8.  Wibsey                           12    3    9    136
-  9.  Guiseley 'B'                     12    3    9    133
- 10.  Rufford 'B'                      11    4    7    128
+  4.  Eccleshill 'B'                   13    6    7    205
+  5.  Asa Briggs 'B'                   12    6    6    179
+  6.  Pudsey 'C'                       12    4    7    172
+  7.  Rufford 'B'                      12    4    8    142
+  8.  Wyke 'B'                         13    4    9    141
+  9.  Wibsey                           12    3    9    136
+ 10.  Guiseley 'B'                     12    3    9    133
 
 === Division 4 (Bartle) 8 Player
                                          Matches     Pnts
@@ -5236,6 +5241,22 @@ Dean Helliwell        9  Phil Vayro          21
            Points:    4           Points:    26
 
 Division 1 (Naylor Prem       Sat 10th Aug
+   Spen Victoria 'A'            Cononley
+Ash Tattersley       21  Jim Calvert          3
+Chris Ellis          16  Robbie Ellis        21
+Mally Fowler         21  Mike Gadd            9
+Andrew Gallagher     21  Sharon Gadd          4
+Andrew Wood          20  Paul Drinkall       21
+Phil Bryant          21  Ian Dewhirst        20
+Phil Smith           17  Philip Dowgill      21
+Andy Hodgson         21  Matt Carter         19
+Mark Goodall         18  Steve Clamp         21
+Mark Regan           21  John Whitaker       17
+            Games:    6            Games:     4
+        Aggregate:  197        Aggregate:   156
+           Points:   21           Points:     9
+
+Division 1 (Naylor Prem       Sat 10th Aug
      Guiseley 'A'               Wyke 'A'
 James Teale          21  Nigel Wormald       10
 Will Gilroy          21  Trevor Benn 'A'     19
@@ -5250,6 +5271,22 @@ Richard Stockdale    21  Gareth Metcalf      19
             Games:    7            Games:     3
         Aggregate:  196        Aggregate:   162
            Points:   21           Points:     9
+
+  Division 2 (Godwin)         Sat 10th Aug
+  Littlemoor S&SC 'B'        Hove Edge 'A'
+Stuart Watson        14  Andy Carter         21
+Glenn Merrick        21  Chloe Hirst         20
+Kath Mazurke         21  Suzi Ladbrooke      18
+Angela Carter        21  Jacquie Haigh       12
+Thomas Powell        21  Linda Gledhill      18
+Billy Thorpe         14  Christine Barker    21
+Jim Moorin           14  Steve Haigh         21
+Philip Thornton      21  Lynn Carter         13
+William Swailes      21  Steve Mallinson     10
+Alan Mazurke         13  Julie Mallinson     21
+            Games:    6            Games:     4
+        Aggregate:  181        Aggregate:   175
+           Points:   17           Points:    13
 
   Division 2 (Godwin)         Sat 10th Aug
        Clayton A               Pudsey 'B'
@@ -5298,6 +5335,54 @@ Martin Watson         8  Julian Dawson       21
             Games:    4            Games:     6
         Aggregate:  170        Aggregate:   189
            Points:   12           Points:    18
+
+  Division 2 (Godwin)         Sat 10th Aug
+    Hill Crest 'A'              Rastrick
+Mark Luford          21  Damien Talbot       19
+Ben Halliday         21  Mark Sykes          15
+Aaron Bottomley      21  Karen Gant          13
+Gary Murphy          21  Jane Hollingworth   13
+David Barnes         21  Lorraine Hirst       7
+Alan Bray            21  Lynda Drury         10
+Rebecca Woodhead     21  Carole Harpin       11
+Stuart Carrol        14  Stacey Dyson        21
+John Halliday        14  Bernie Toon         21
+Martin Murphy        16  Debbie Farrar       21
+            Games:    7            Games:     3
+        Aggregate:  191        Aggregate:   151
+           Points:   21           Points:     9
+
+  Division 3 (Mellor)         Sat 10th Aug
+      Rufford 'B'            Eccleshill 'B'
+Carole Wright 'B'    21  Diane Emery         17
+Alexander Waite      18  Peter Howroyd       21
+Eileen Beck           6  Martin Hayton       21
+Angela Bennett       15  Paul Hillam 'A'     21
+Stuart Parker        17  Pauline Gilroy      21
+Pauline Ingleson     21  Theo Moyes          12
+John McHale           9  Peter Jefferson     21
+Dianne Teale         21  Ken Wilson           7
+Graham Ingleson      21  John Griffin        18
+Brian Teale          21  Lee Hicks           15
+            Games:    5            Games:     5
+        Aggregate:  170        Aggregate:   174
+           Points:   14           Points:    16
+
+  Division 3 (Mellor)         Sat 10th Aug
+    Asa Briggs 'B'             Pudsey 'C'
+Alan Standing        21  John Atkinson       10
+Peter Wilkinson      21  Janice Connaleigh    8
+John Beverley        21  Colin Dibb          14
+Debra Pearson        21  David Elliott       12
+Bob Hiley             4  Steve Emmett        21
+Mathew Pearson       20  Steve Harwood       21
+Scott Sansom         21  Hannah Leaf          4
+Kathleen Sansom      21  David McDonald      20
+Alan Marsden         17  Sebastian Mordue    21
+Michael Sansom       21  Melissa Morris      10
+            Games:    7            Games:     3
+        Aggregate:  188        Aggregate:   141
+           Points:   22           Points:     8
 
   Division 3 (Mellor)         Sat 10th Aug
         Wibsey           Hipperholme & Lightcli
