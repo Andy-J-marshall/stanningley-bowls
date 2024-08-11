@@ -13,23 +13,17 @@ preferredTeamName = 'Stanningley'
 # Days played (duplicate days for second teams)
 teamDays = [
             # 'Monday AireWharfe', 
-            'Monday AireWharfe (A)', 
-            'Monday AireWharfe (B)', 
+            'Monday AireWharfe (A)', 'Monday AireWharfe (B)', 
             'Tuesday Vets Leeds',
             # 'Thursday Vets Leeds',
-            'Thursday Vets Leeds (A)',
-            'Thursday Vets Leeds (B)',
-            'Saturday Bradford',
-            # 'Saturday Bradford (A)', 
-            # 'Saturday Bradford (B)',
-            'Wednesday Pairs AireWharfe',
-            # 'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
+            'Thursday Vets Leeds (A)', 'Thursday Vets Leeds (B)',
+            # 'Saturday Bradford',
+            'Saturday Bradford (A)', 'Saturday Bradford (B)',
+            # 'Wednesday Pairs AireWharfe',
+            'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
             # 'Wednesday Half Holiday Bradford',
-            'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
+            # 'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
             ]
-
-# TODO players to fix:
-# Keith Worrall - 2019 (spelling difference) - be careful of which team he plays for!
 
 # TODO these are the teams
 # Tuesday Vets Leeds 2013 - 2024 (no B team)
@@ -49,7 +43,7 @@ players = [
     # 'ben falkingham',
     'jack bowes',
     # 'barry palmer',
-    'keith worrall',
+    # 'keith worrall',
     'anthony heslewood',
     'bob taylor', 'carol butters', 'ken stockhill', 'leslie leak', 
     'colin butterfield', 'ken walker', 'adam sandilands', 'shirley sandilands', 

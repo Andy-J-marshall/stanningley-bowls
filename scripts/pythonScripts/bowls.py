@@ -6,7 +6,7 @@ import utils
 import re
 
 # year = str(date.today().year) TODO revert
-year = str(2019)
+year = str(2017)
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
@@ -111,7 +111,7 @@ for team in teamDays:
                 if row.lower().count(displayTeamName.lower()) > 1:
                     # This is a safeguard as the script won't work yet if the A team plays the B team.
                     # If this happens, need to implement a way to differentiate between the two teams
-                    raise Exception('Team name appears more than once in the row')
+                    print('Team name appears more than once in the row')
 
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
