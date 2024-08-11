@@ -88,6 +88,20 @@ def deduplicateNames(name):
         name = 'Bernie Miller'
     if name == 'David Hudson':
         name = 'Dave Hudson'
+    if 'Bernard Palmer' in name:
+        name = 'Barry Palmer'
+    if 'Kenneth Stockhill' in name:
+        name = ' Ken Stockhill'
+    if 'Dave Parker' in name:
+        name = 'David Parker'
+    if 'Andy Robertson' in name:
+        name = 'Andrew Robertson'
+    if 'Tony Heslewood' in name:
+        name = 'Anthony Heslewood'
+    if 'Rob Taylor' in name:
+        name = 'Bob Taylor'
+    if 'Robert Taylor' in name:
+        name = 'Bob Taylor'    
     return name.lower()
 
 def standardiseName(name):
