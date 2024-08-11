@@ -43,7 +43,7 @@ players = [
     # 'ben falkingham',
     'jack bowes',
     # 'barry palmer',
-    # 'keith worrall',
+    'keith worrall',
     'anthony heslewood',
     'bob taylor', 'carol butters', 'ken stockhill', 'leslie leak', 
     'colin butterfield', 'ken walker', 'adam sandilands', 'shirley sandilands', 
@@ -51,7 +51,9 @@ players = [
     'andrew robertson', 'david parker', 'june mitchell', 'robin miller', 'kevin miller',
     'brian fish', 'alan parker', 
     'marjory taylor',
-    'david wainwright'
+    'david wainwright', 'gordon taylor',
+    'maureen boyce',
+    'james butters'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -60,7 +62,7 @@ duplicateTeamMemberNames = [
                             # 'phillip thornton', 'philip thornton',
                             'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin', 'andrew waller', 'bernard miller', 'steven gardner',
                             'bernard palmer', 'kenneth stockhill', 'dave parker', 'andy robertson', 'tony heslewood', 
-                            'rob taylor', 'robert taylor', 'dave wainwright'
+                            'rob taylor', 'robert taylor', 'dave wainwright', 'marjorie taylor'
                             ]
 
 traitorPlayers = {

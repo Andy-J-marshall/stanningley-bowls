@@ -104,6 +104,8 @@ def deduplicateNames(name):
         name = 'Bob Taylor'
     if 'Dave Wainwright' in name:
         name = 'David Wainwright'
+    if 'Marjorie Taylor' in name:
+        name = 'Marjory Taylor'
     return name.lower()
 
 def standardiseName(name):
