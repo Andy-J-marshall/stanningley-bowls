@@ -50,7 +50,8 @@ players = [
     'terry powell', 'geoff lee', 'brian barker', 'graham dawson',
     'andrew robertson', 'david parker', 'june mitchell', 'robin miller', 'kevin miller',
     'brian fish', 'alan parker', 
-    'marjory taylor'
+    'marjory taylor',
+    'david wainwright'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -59,7 +60,7 @@ duplicateTeamMemberNames = [
                             # 'phillip thornton', 'philip thornton',
                             'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin', 'andrew waller', 'bernard miller', 'steven gardner',
                             'bernard palmer', 'kenneth stockhill', 'dave parker', 'andy robertson', 'tony heslewood', 
-                            'rob taylor', 'robert taylor'
+                            'rob taylor', 'robert taylor', 'dave wainwright'
                             ]
 
 traitorPlayers = {
