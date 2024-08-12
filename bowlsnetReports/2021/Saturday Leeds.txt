@@ -317,7 +317,7 @@ Jeff Allman         21  Carol Robinson      15
 Peter Sandles       21  Carol Butters        7
 Mick Howsam         12  Cedric Briggs       21
 Deborah Sandles     21  Len Robinson        11
-Keith Worral        16  Ken Stockhill       21
+Keith Worrall       16  Ken Stockhill       21
 Les Sheppard        21  *A.N.Other*         20
 Eric Ralph          17  Walter Stockhill    21
       Aggregate:   150        Aggregate:   126
@@ -443,7 +443,7 @@ David Howard        21  Kath Burdett         7
 
       Division 2             Sat 19th Jun
     Western Flatts           Bramley Park
-Barbara Moss        20  Keith Worral        21
+Barbara Moss        20  Keith Worrall       21
 Dawn Peters         13  Peter Sandles       21
 Ian Penman          11  Mick Howsam         21
 Lillian Pickles     21  Les Sheppard        17
@@ -524,7 +524,7 @@ Daniel Howcroft     21  Jeff Blackburn      20
 Shirley Allman      21  Peter Nicholson     19
 Jeff Allman         21  Albert Beggs        18
 Peter Ritchie       21  Phillip Marshall    11
-Keith Worral        21  Barry Baldwin       17
+Keith Worrall       21  Barry Baldwin       17
 Eric Ralph          21  Garry Marshall      11
 Deborah Sandles     21  John Hodgson         7
 Peter Sandles       21  John Gillett         4
@@ -733,7 +733,7 @@ Graham Goodhall     21  Paul Hatch          14
 Deborah Sandles     21  Christine Glynn     20
 Peter Ritchie       21  Martin Burling      14
 Les Sheppard        21  Elaine Burling       5
-Keith Worral        21  Gordon Monk         15
+Keith Worrall       21  Gordon Monk         15
 Mick Howsam         21  Malcolm Hallas      16
 Hugh Callard        21  Terry Maher         14
 Keith Bradley       21  Peter Burling        4
@@ -932,7 +932,7 @@ J Walker            11  Beryl Butterfield   21
 Les Sheppard        21  Jean Cooper         16
 Peter Ritchie        6  Bill Lovett         21
 Jeff Allman         16  James King          21
-Keith Worral        21  Val Darwin           9
+Keith Worrall       21  Val Darwin           9
 Eric Ralph          21  Marjorie Kay        16
       Aggregate:   129        Aggregate:   146
          Points:    27           Points:    32
@@ -1032,7 +1032,7 @@ Richard Perry       21  *A.N.Other*          9
       Division 2             Sat 31st Jul
                             On Armley park
       New Armley             Bramley Park
-Carol Robinson      21  Keith Worral        19
+Carol Robinson      21  Keith Worrall       19
 Cedric Briggs       16  Jeff Allman         21
 Shirley Rhodes       6  Peter Sandles       21
 Carol Butters        9  Shirley Allman      21
@@ -1163,7 +1163,7 @@ William Mewse       12  Ken Stockhill       21
 
       Division 2             Sat 7th Aug
      Bramley Park           Western Flatts
-Keith Worral        21  *A.N.Other*         11
+Keith Worrall       21  *A.N.Other*         11
 Les Sheppard         6  Terry Blakeley      21
 Peter Ritchie       15  Steve Caley         21
 Mick Howsam         21  Ron Lavan           13
@@ -1246,7 +1246,7 @@ Graham Bluff        21  Eric Ralph          14
 Peter Nicholson     11  Shirley Allman      21
 Phillip Marshall    21  Mick Howsam         11
 John Gillett         9  Deborah Sandles     21
-Bob Pearson         10  Keith Worral        21
+Bob Pearson         10  Keith Worrall       21
 Garry Marshall      21  Jeff Allman          4
 Barry Baldwin       19  Peter Sandles       21
       Aggregate:   133        Aggregate:   131
@@ -1361,7 +1361,7 @@ Philip Rowe         14  Tony Morris         21
 Shirley Allman      11  Julie Cavalli       21
 Peter Ritchie       20  Mark Raistrick      21
 Les Sheppard        14  Reece Pratt         21
-Keith Worral        21  Tim Harris          14
+Keith Worrall       21  Tim Harris          14
 Mick Howsam         21  Malcolm Whipp        6
 Jeff Allman         16  Peter Clarkson      21
 Peter Sandles       21  *A.N.Other*         18
@@ -1412,7 +1412,7 @@ Paul Hatch          21  Jeff Holt            7
       Division 2             Sat 28th Aug
     Middleton Comm           Bramley Park
 Gordon Monk         21  Peter Sandles       10
-Andrew Sykes         7  Keith Worral        21
+Andrew Sykes         7  Keith Worrall       21
 Martin Burling      21  Shirley Allman      11
 Peter Burling       21  Peter Ritchie       14
 Malcolm Cameron     21  Mick Howsam         16
@@ -1532,7 +1532,7 @@ Walter Stockhill    21  Barbara Ragan        7
 Hugh Callard        17  Clifford Pitts      21
 Mick Howsam         21  David Charlesworth  11
 Peter Sandles       21  Michael Ross         4
-Keith Worral        21  Neil Schofield      12
+Keith Worrall       21  Neil Schofield      12
 Deborah Sandles     21  David Holmes         5
 Eric Ralph          18  Kevin Smales        21
 Peter Ritchie       21  David Taylor        15
@@ -1625,7 +1625,7 @@ Jean Cooper         21  Shirley Allman      19
 William Mewse       21  Les Sheppard        18
 James King          15  Jeff Allman         21
 Beryl Butterfield   21  Deborah Sandles     14
-Bill Lovett         21  Keith Worral        15
+Bill Lovett         21  Keith Worrall       15
 Marjorie Kay        21  Mick Howsam          9
 Kath Burdett        15  Peter Sandles       21
       Aggregate:   144        Aggregate:   138

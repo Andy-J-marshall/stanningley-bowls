@@ -181,10 +181,16 @@ function PlayerStats(props) {
         const gamesPlayedThisYear = statsToDisplayArray.find(
             (player) => player.games > 0
         );
-        if (gamesPlayedThisYear) {
+        const pairsGamesThisYear = statsToDisplayArray.find(
+            (player) => player.pairsGames > 0
+        );
+
+        if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
             return (
                 <div>
-                    <h3 style={{ padding: '2rem 0 0 0' }}>SUMMARY</h3>
+                    <h3 style={{ padding: '2rem 0 0 0' }}>
+                        {stats.statsYear} SUMMARY
+                    </h3>
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}

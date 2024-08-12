@@ -887,7 +887,7 @@ David Bark              15  Cliff Brogie           21
 Kevin Miller             9  Peter Mylan            21
 Bernard Miller          10  Donald Thorp           21
 Adam Sandilands         21  Graham Womersley       11
-Allison Woodfine        21  Ian Coulthard           1
+Alison Woodfine        21  Ian Coulthard           1
 Robin Miller            15  Richard Tatum          21
 Chris Gardner           21  John Hainsworth        20
 Andrew Robertson        21  Geoff Lacey            19
@@ -1188,10 +1188,10 @@ Mavis Robinson          21  Michael Land           16
 Anne Pickersgill        21  Robin Miller           20
 Martin Stocker          21  Kevin Miller            4
 Ann Wrigglesworth       21  Bernard Miller         10
-Geoff Helliwell         21  Donald Sturgeon        12
+Geoff Helliwell         21  Don Sturgeon        12
 John Parker             21  Maureen Boyce           5
 Barbara Scholes         21  David Bark             19
-Nell Skelley             7  Allison Woodfine       21
+Nell Skelley             7  Alison Woodfine       21
 Margaret Greenwood      21  *No Player*             0
 John Harrison           21  *No Player*             0
 Howard Gardiner         21  Andrew Robertson       15
@@ -1479,7 +1479,7 @@ David Bark               9  Susan Bristow          21
 Robin Miller            21  Doris Robinson          6
 Dorothy Heslewood        7  Jack Marshall          21
 Anthony Heslewood       21  Margaret Ellis         19
-Allison Woodfine        21  Trevor Roberts          8
+Alison Woodfine        21  Trevor Roberts          8
 Maureen Boyce           12  Barbara Firth          21
 Bernard Miller          21  Andrew Mortimer        11
 Andrew Robertson        14  Ron Whiteley           21
@@ -1719,7 +1719,7 @@ Paul Thulliez           20  Craig Clarkson         21
 Louise Wright           14  Brian Barker           21
 Corine Thulliez         15  Robin Miller           21
 Ann B Postlethwaite     21  Shirley Sandilands     10
-Dorothy Wise            21  Allison Woodfine       16
+Dorothy Wise            21  Alison Woodfine       16
 Brian Denny             21  David Bark              7
 Wilfred Thurlby         21  Kevin Miller            9
 David Parsons            4  Andrew Robertson       21
@@ -2039,7 +2039,7 @@ Kevin Miller             5  Terry Lillywhite       21
 Robin Miller            14  Pat Penman             21
 Brian Barker            21  Chris Power             8
 Craig Clarkson          21  Mavis Robinson         13
-Allison Woodfine        21  Sylvia Taylor           1
+Alison Woodfine        21  Sylvia Taylor           1
 Anthony Heslewood       10  Keith Bennett          21
 Bernard Miller          21  Derek Hewett           12
 Andrew Robertson        21  Jeff Taylor            11
@@ -2615,7 +2615,7 @@ Shirley Sandilands      21  Edward Artist          12
 Kevin Miller             6  Ian Kennedy            21
 Dorothy Heslewood       19  Julia Artist           21
 Robin Miller            13  Brian Robinson         21
-Allison Woodfine        21  Roger Cowley            4
+Alison Woodfine        21  Roger Cowley            4
 Anthony Heslewood       19  Geoff Winter           21
 Bernard Miller          21  David Pickles          11
 Andrew Robertson        21  Mike Rogers            10
@@ -3193,7 +3193,7 @@ Shirley Sandilands      21  Jack Hawley             6
 Dorothy Heslewood       21  Norma Whiteley         15
 Leslie Leak             11  Margaret Hawley        21
 Andrew Robertson        21  Jennifer Briggs        10
-Allison Woodfine        21  June Whitaker          18
+Alison Woodfine        21  June Whitaker          18
 Craig Clarkson          20  Marjorie Scott         21
               Games:     6               Games:     4
           Aggregate:   178           Aggregate:   146
@@ -3479,7 +3479,7 @@ Margaret Gardner        21  Craig Clarkson         12
 Colin Pontefract        18  Shirley Sandilands     21
 Paul Womersley          13  Maureen Boyce          21
 Ian Coulthard           21  Anthony Heslewood      20
-Graham Womersley         9  Allison Woodfine       21
+Graham Womersley         9  Alison Woodfine       21
 John Birtles            21  Bernard Miller         14
 Nigel Peel              21  Robin Miller            7
 Peter Mylan             21  Andrew Robertson        8
@@ -3779,7 +3779,7 @@ Ron Whiteley            21  Betty Sparkes          12
       Stanningley B              Wharfemeadows B
 Kevin Miller            21  Margaret Greenwood     18
 Anthony Heslewood       21  Ray Smith              18
-Allison Woodfine        12  Mark Silvester         21
+Alison Woodfine        12  Mark Silvester         21
 Leslie Leak             19  John Parker            21
 Andrew Robertson        21  Geoff Helliwell        18
 Shirley Sandilands      18  John Harrison          21
@@ -4311,7 +4311,7 @@ Marjorie Taylor          3  Brian Denny            21
 Shirley Sandilands      21  Paul Thulliez          17
 Craig Clarkson          21  Corine Thulliez         7
 Anthony Heslewood       17  Jean Dews              21
-Allison Woodfine        21  Patricia Sedman         9
+Alison Woodfine        21  Patricia Sedman         9
 Leslie Leak             13  Wilfred Thurlby        21
 Gordon Taylor           20  David Parsons          21
 Andrew Robertson        21  Ian Coombs              8
@@ -4631,7 +4631,7 @@ Sylvia Taylor           21  Maureen Boyce          20
 Mavis Robinson          16  Craig Clarkson         21
 Chris Power             15  Shirley Sandilands     21
 Joyce Adamson           21  Dorothy Heslewood       6
-Pat Penman              21  Allison Woodfine       15
+Pat Penman              21  Alison Woodfine       15
 Keith Bennett           12  Dave Hudson            21
 Betty Sparkes           17  Anthony Heslewood      21
 John Miller              8  Andrew Robertson       21

@@ -311,7 +311,7 @@ donald shaw             21  David Wilkinson     15
 Duncan McPhail       21  Hilary Maxim        12
 Jack Roberts         10  Margaret Finister   21
 Mabel Shaw           21  Lynda Wright        18
-Keith Worrell        21  Ken Maxim           11
+Keith Worrall        21  Ken Maxim           11
 Stewart Watson       21  Jack Finister       11
 Brian Fish           21  Pam Binns           11
        Aggregate:   157        Aggregate:   112
@@ -375,7 +375,7 @@ Barry Hogg            6  donald shaw            21
 Steve Caley          21  Mabel Shaw          19
 Keith Hunter          5  Duncan McPhail      21
 Cedric Ash           21  Jack Roberts        20
-Doreen Hunter        19  Keith Worrell       21
+Doreen Hunter        19  Keith Worrall       21
 Margaret McPhail     19  Stewart Watson      21
 Terry Blakeley       14  Jim Moorin          21
 John Manson          21  Brian Fish           5
@@ -416,7 +416,7 @@ Derek Wilson         21  Carl Mahon          17
 Jack Roberts         17  Paul Lawson         21
 Ken Walker            2  Jim Jordan          21
 Mabel Shaw           15  Tony Boyes          21
-Keith Worrell        10  Margaret Higgins    21
+Keith Worrall        10  Margaret Higgins    21
 Stewart Watson       21  Mike Sherman        10
        Aggregate:   119        Aggregate:   153
           Points:    24           Points:    35
@@ -494,7 +494,7 @@ Dougie Cooper        21  Derek Wilson        10
 Tony Morris          13  Brian Fish          21
 Frank Tempest        10  donald shaw            21
 Bob Bearpark         21  Duncan McPhail      15
-Harvey Lockwood      21  Keith Worrell       12
+Harvey Lockwood      21  Keith Worrall       12
 Dennis Wainwright    15  Stewart Watson      21
        Aggregate:   138        Aggregate:   142
           Points:    30           Points:    32
@@ -606,7 +606,7 @@ Dougie Cooper        21  Cedric Briggs       11
                               Tue 21st May
        Cranmore             Stanningley Park
 Ray Watson            6  Jim Moorin          21
-Barry Baldwin        20  Keith Worrell       21
+Barry Baldwin        20  Keith Worrall       21
 Peter Nicholson      13  Derek Wilson        21
 Harry Gillett        21  Mabel Shaw          20
 Steven Ballance       3  donald shaw            21
@@ -723,7 +723,7 @@ Roy Tebbutt          21  Philip Marshall     19
                               Tue 28th May
    Stanningley Park           Holbeck Moor
 Jim Moorin           21  Graham Dunwell       6
-Keith Worrell        21  Pat Parker           7
+Keith Worrall        21  Pat Parker           7
 Derek Wilson         16  Frank Armitage      21
 donald shaw             16  Allan Nicholson     21
 Brian Fish           14  Hilary Campbell     21
@@ -740,7 +740,7 @@ Barry Palmer         21  Josie Burdon        19
 Derek Wilson         21  Marion Worrall      13
 donald shaw             21  Maureen Morris      15
 Brian Fish           19  Cedric Briggs       21
-Keith Worrell        21  David Johnson        9
+Keith Worrall        21  David Johnson        9
 Duncan McPhail       21  Roy Tebbutt         13
 Stewart Watson       17  Len Robinson        21
        Aggregate:   162        Aggregate:   114
@@ -842,7 +842,7 @@ Jeoff Higgins         8  Pam Binns           21
 Mabel Shaw           20  Terry Williams      21
 Jim Moorin           19  Bill Robson         21
 Derek Wilson         14  John Hainsworth     21
-Keith Worrell        21  Ken Lee             18
+Keith Worrall        21  Ken Lee             18
 donald shaw             21  Ron Witham          10
 Brian Fish           21  Christine Robson    16
 Barry Palmer         10  Brian Dowling       21
@@ -1144,7 +1144,7 @@ Graham Dunwell       21  Mabel Shaw          17
 Frank Armitage       21  Ken Walker           8
 Steve Milton         21  Derek Wilson         4
 Hilary Campbell      21  dave hudson        11
-Allan Nicholson      11  Keith Worrell       21
+Allan Nicholson      11  Keith Worrall       21
 Arthur Hutchinson    21  Duncan McPhail      17
 Brian Thompson       21  donald shaw            16
        Aggregate:   143        Aggregate:   115
@@ -1168,7 +1168,7 @@ Jim Moorin           21  Clifford Pitts       5
 donald shaw             21  David Rawson        18
 Derek Wilson         19  Dennis Wainwright   21
 Brian Fish           21  Dougie Cooper        9
-Keith Worrell         8  Tony Morris         21
+Keith Worrall         8  Tony Morris         21
 Mabel Shaw           21  Kevin Smales        13
 Duncan McPhail       18  Frank Tempest       21
 Stewart Watson       10  Harvey Lockwood     21
@@ -1234,7 +1234,7 @@ Shirley Biancardo    21  Derek Wilson        13
 Colin Davison        12  Jim Moorin          21
 Mike Froggatt        12  Brian Fish          21
 Graham Hey           17  Mabel Shaw          21
-Kath Hey             14  Keith Worrell       21
+Kath Hey             14  Keith Worrall       21
 Jean Long            11  donald shaw            21
 David Lyons          11  Stewart Watson      21
        Aggregate:   117        Aggregate:   160
@@ -1285,7 +1285,7 @@ Jim Moorin           21  Ray Watson          12
 Brian Fish           21  Graham Bluff         9
 donald shaw             21  Peter Nicholson     14
 Derek Wilson         21  Steven Ballance      8
-Keith Worrell        21  Jeoff Higgins       16
+Keith Worrall        21  Jeoff Higgins       16
 Mabel Shaw           21  Harry Gillett       17
 Stewart Watson       21  Barry Baldwin       18
 Duncan McPhail       21  John Hodgson         7
@@ -1429,7 +1429,7 @@ Pat Parker           12  Jim Moorin          21
 Allan Nicholson      21  Derek Wilson        11
 Graham Dunwell       21  Brian Fish          17
 Hilary Campbell      19  donald shaw            21
-Steve Milton         21  Keith Worrell        5
+Steve Milton         21  Keith Worrall        5
 Arthur Hutchinson    12  Duncan McPhail      21
 Brian Thompson       21  Stewart Watson      19
        Aggregate:   148        Aggregate:   129
@@ -1441,7 +1441,7 @@ Geoff Ashton         21  Jim Moorin           6
 Marion Worrall        8  Mabel Shaw          21
 John Lambert         21  Derek Wilson        11
 Barry Lee            11  Brian Fish          21
-Len Robinson         21  Keith Worrell        9
+Len Robinson         21  Keith Worrall        9
 David Johnson         3  donald shaw            21
 Roy Tebbutt           7  Duncan McPhail      21
 David Howard         20  Stewart Watson      21
