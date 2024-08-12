@@ -3788,6 +3788,104 @@
                 "aggDiff": 0
             }
         },
+        "jack bowes": {
+            "totalAgg": 63,
+            "totalAggAgainst": 29,
+            "availableAgg": 63,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 42,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 42,
+            "totalHomeAggAgainst": 17,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 21,
+            "totalAwayAggAgainst": 12,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 2,
+            "homeLosses": 0,
+            "awayWins": 1,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 3,
+            "dayPlayed": [
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "jack bowes 21 - 7 michael gill",
+                "jack bowes 21 - 10 geoff hodgson",
+                "jack bowes 21 - 12 david arundale"
+            ],
+            "monday airewharfe": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airewharfe (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets leeds (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 3,
+                "wins": 3,
+                "aggDiff": 34
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday pairs airewharfe": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday pairs airewharfe (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
         "jack roberts": {
             "totalAgg": 1716,
             "totalAggAgainst": 1665,
@@ -6145,28 +6243,28 @@
             }
         },
         "paul bowes": {
-            "totalAgg": 349,
-            "totalAggAgainst": 221,
-            "availableAgg": 357,
+            "totalAgg": 424,
+            "totalAggAgainst": 278,
+            "availableAgg": 441,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 168,
-            "availableAwayAgg": 189,
+            "availableHomeAgg": 210,
+            "availableAwayAgg": 231,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 163,
-            "totalHomeAggAgainst": 100,
+            "totalHomeAgg": 205,
+            "totalHomeAggAgainst": 125,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 186,
-            "totalAwayAggAgainst": 121,
+            "totalAwayAgg": 219,
+            "totalAwayAggAgainst": 153,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 7,
+            "homeWins": 9,
             "homeLosses": 1,
-            "awayWins": 8,
-            "awayLosses": 1,
+            "awayWins": 9,
+            "awayLosses": 2,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
@@ -6177,7 +6275,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 17,
+            "totalGamesPlayed": 21,
             "dayPlayed": [
                 "Monday AireWharfe (A)",
                 "Monday AireWharfe (A)",
@@ -6195,7 +6293,11 @@
                 "Monday AireWharfe (A)",
                 "Monday AireWharfe (A)",
                 "Monday AireWharfe (A)",
-                "Monday AireWharfe (A)"
+                "Monday AireWharfe (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)",
+                "Saturday Bradford (A)"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
@@ -6217,7 +6319,11 @@
                 "paul bowes 21 - 16 stuart norris",
                 "paul bowes 18 - 21 daniel carter",
                 "paul bowes 21 - 17 ken gilroy",
-                "paul bowes 21 - 13 jack beck"
+                "paul bowes 21 - 13 jack beck",
+                "paul bowes 21 - 11 robert denby",
+                "paul bowes 21 - 12 george gledhill",
+                "paul bowes 21 - 13 mark morris",
+                "paul bowes 12 - 21 ralph sissons"
             ],
             "monday airewharfe": {
                 "games": 17,
@@ -6245,9 +6351,9 @@
                 "aggDiff": 0
             },
             "saturday bradford": {
-                "games": 0,
-                "wins": 0,
-                "aggDiff": 0
+                "games": 4,
+                "wins": 3,
+                "aggDiff": 18
             },
             "saturday bradford (b)": {
                 "games": 0,
