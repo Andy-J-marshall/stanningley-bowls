@@ -59,7 +59,8 @@ players = [
     'marion worrall',
     'chris gardner',
     'brian chamberlain',
-    'don sturgeon', 'eric routh'
+    'don sturgeon', 'eric routh',
+    'geoff hodgson',
 ]
 
 # Players with different spellings of name (lowercase)
