@@ -41,8 +41,8 @@ players = [
     'bernie miller', 'dave hudson','alison woodfine',
     'craig clarkson', 'steve gardner', 'duncan mcphail', 'stewart watson', 'derek wilson',
     # 'ben falkingham',
-    'jack bowes',
-    # 'barry palmer',
+    # 'jack bowes',
+    'barry palmer',
     'keith worrall',
     'anthony heslewood',
     'bob taylor', 'carol butters', 'ken stockhill', 'leslie leak', 
@@ -55,6 +55,8 @@ players = [
     'maureen boyce',
     'james butters',
     'dorothy heslewood',
+    'david bark',
+    'marion worrall',
 ]
 
 # Players with different spellings of name (lowercase)
