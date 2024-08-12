@@ -2211,12 +2211,12 @@
             }
         },
         "don sturgeon": {
-            "totalAgg": 29,
-            "totalAggAgainst": 36,
-            "availableAgg": 42,
+            "totalAgg": 41,
+            "totalAggAgainst": 57,
+            "availableAgg": 63,
             "availablePairsAgg": 0,
             "availableHomeAgg": 21,
-            "availableAwayAgg": 21,
+            "availableAwayAgg": 42,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -2225,14 +2225,14 @@
             "totalHomeAggAgainst": 21,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 21,
-            "totalAwayAggAgainst": 15,
+            "totalAwayAgg": 33,
+            "totalAwayAggAgainst": 36,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 0,
             "homeLosses": 1,
             "awayWins": 1,
-            "awayLosses": 0,
+            "awayLosses": 1,
             "cupWins": 0,
             "cupLosses": 0,
             "pairWins": 0,
@@ -2243,8 +2243,9 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 2,
+            "totalGamesPlayed": 3,
             "dayPlayed": [
+                "Monday AireWharfe (B)",
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds"
             ],
@@ -2252,6 +2253,7 @@
             "winningPairsPartners": [],
             "losingPairsPartners": [],
             "results": [
+                "don sturgeon 12 - 21 geoff helliwell",
                 "don sturgeon 21 - 15 barbara blackmore",
                 "don sturgeon 8 - 21 dennis shutt"
             ],
@@ -2261,9 +2263,9 @@
                 "aggDiff": 0
             },
             "monday airewharfe (b)": {
-                "games": 0,
+                "games": 1,
                 "wins": 0,
-                "aggDiff": 0
+                "aggDiff": -9
             },
             "tuesday vets leeds": {
                 "games": 0,
