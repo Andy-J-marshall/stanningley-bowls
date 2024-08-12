@@ -6,12 +6,12 @@ import teamDetails
 import re
 
 # year = str(date.today().year) TODO revert
-year = str(2018)
+year = str(2013)
 
-leaguesDays = teamDetails.allDays
+leaguesDays = utils.teamDays
 players = teamDetails.players
-duplicatePlayerNames = teamDetails.duplicatePlayerNames
-teamsTracking = teamDetails.teamsTracking
+duplicatePlayerNames = utils.duplicatePlayerNames
+teamsTracking = utils.teamsTracking
 playerResults = utils.returnListOfPlayerStats(leaguesDays, False, players)
 formatName = utils.formatName
 standardiseName = utils.standardiseName
@@ -309,7 +309,7 @@ dataToExport = {
     'statsYear': year
 }
 
-filename = 'src/data/allPlayerStats' + year + '.json'
+filename = 'src/data/allPlayerStatsLEGACYPLAYERS' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
     previousFileSize = checkFileSize(filename)
