@@ -38,7 +38,7 @@ def standardiseName(name):
 def formatName(name):
     name = standardiseName(name)
     name = deduplicateNames(name)
-    return name.lower()
+    return name.lower().strip()
 
 def returnTotalAggAvailablePerGame(team):
     if team.lower() in leaguesWithGamesTo26:
