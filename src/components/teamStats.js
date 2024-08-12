@@ -11,6 +11,10 @@ function TeamStats(props) {
     const teamName = config.teamNames.shortName;
     const { playerResults, teamResults } = stats;
 
+    const currentYear = new Date().getFullYear();
+    const yearInTitle =
+        currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
+
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -113,7 +117,7 @@ function TeamStats(props) {
     if (teamResults) {
         return (
             <div id="team-stats" className="center page-component">
-                <h1>TEAM STATS</h1>
+                <h1>{yearInTitle} TEAM STATS</h1>
                 <TeamTabs
                     allCombinedComponent={allComponent()}
                     teamComponents={returnTeamComponents()}
@@ -124,7 +128,7 @@ function TeamStats(props) {
     } else {
         return (
             <div id="team-stats-unavailable" className="center page-component">
-                <h1>TEAM STATS</h1>
+                <h1>{yearInTitle} TEAM STATS</h1>
                 <p>
                     No {teamName} team stats available, please select another
                     year.

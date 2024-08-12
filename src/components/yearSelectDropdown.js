@@ -19,7 +19,7 @@ function YearSelectDropdown(props) {
                 variant="light"
                 onSelect={changeStatsYear}
                 id="year-select-dropdown-button"
-                title={year + ' Stats'}
+                title={year}
                 style={{
                     display: 'flex',
                     justifyContent: 'right',

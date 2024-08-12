@@ -9,6 +9,10 @@ function Results(props) {
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
 
+    const currentYear = new Date().getFullYear();
+    const yearInTitle =
+        currentYear !== Number(yearToDisplay) ? `${yearToDisplay}` : '';
+
     const { teamResults } = stats;
 
     let resultsFound = false;
@@ -55,7 +59,7 @@ function Results(props) {
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
                 />
-                <h1>RESULTS</h1>
+                <h1>{yearInTitle} RESULTS</h1>
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (

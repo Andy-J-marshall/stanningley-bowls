@@ -43,6 +43,10 @@ function PlayerStats(props) {
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
     const statsToDisplayArray = collatePlayerStats(statsToUse, players);
 
+    const currentYear = new Date().getFullYear();
+    const yearInTitle =
+        currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
+
     useEffect(() => {
         if (!loaded) {
             window.scrollTo(0, 0);
@@ -188,9 +192,7 @@ function PlayerStats(props) {
         if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
             return (
                 <div>
-                    <h3 style={{ padding: '2rem 0 0 0' }}>
-                        {stats.statsYear} SUMMARY
-                    </h3>
+                    <br />
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
@@ -212,7 +214,7 @@ function PlayerStats(props) {
 
     return (
         <div id="player-stat" className="center">
-            <h1>PLAYER STATS</h1>
+            <h1>{yearInTitle} PLAYER STATS</h1>
             <Form
                 id="player-search-form"
                 className="center"
