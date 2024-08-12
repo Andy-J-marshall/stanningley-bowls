@@ -2,10 +2,10 @@
 teamNames = [
         'Stanningley', 'Stanningley A', 'Stanningley B', 'Stanningley BC', 
         'Stanningley Pk A', 'Stanningley Pk', 'Stanningley Park', 
-             'Stanningley Park A', 'Stanningley Pk B', 
-             'Stanningley Park B', 'Stanningley \'B\'', 
-             'Stanningley \'A\'', 'Stanningley Park \'A\'', 'Stanningley Park \'B\'',
-             ]
+        'Stanningley Park A', 'Stanningley Pk B', 
+        'Stanningley Park B', 'Stanningley \'B\'', 
+        'Stanningley \'A\'', 'Stanningley Park \'A\'', 'Stanningley Park \'B\'',
+]
 preferredTeamName = 'Stanningley'
 
 # TODO remove team stats section from each old file?
@@ -15,10 +15,10 @@ teamDays = [
             # 'Monday AireWharfe', 
             'Monday AireWharfe (A)', 'Monday AireWharfe (B)', 
             'Tuesday Vets Leeds',
-            # 'Thursday Vets Leeds',
-            'Thursday Vets Leeds (A)', 'Thursday Vets Leeds (B)',
-            # 'Saturday Bradford',
-            'Saturday Bradford (A)', 'Saturday Bradford (B)',
+            'Thursday Vets Leeds',
+            # 'Thursday Vets Leeds (A)', 'Thursday Vets Leeds (B)',
+            'Saturday Bradford',
+            # 'Saturday Bradford (A)', 'Saturday Bradford (B)',
             # 'Wednesday Pairs AireWharfe',
             'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
             'Wednesday Half Holiday Bradford',
@@ -57,6 +57,8 @@ players = [
     'dorothy heslewood',
     'david bark',
     'marion worrall',
+    'chris gardner',
+    'brian chamberlain',
 ]
 
 # Players with different spellings of name (lowercase)
@@ -65,7 +67,7 @@ duplicateTeamMemberNames = [
                             # 'phillip thornton', 'philip thornton',
                             'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin', 'andrew waller', 'bernard miller', 'steven gardner',
                             'bernard palmer', 'kenneth stockhill', 'dave parker', 'andy robertson', 'tony heslewood', 
-                            'rob taylor', 'robert taylor', 'dave wainwright', 'marjorie taylor'
+                            'rob taylor', 'robert taylor', 'dave wainwright', 'marjorie taylor', 'christopher gardner'
                             ]
 
 traitorPlayers = {
