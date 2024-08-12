@@ -188,7 +188,9 @@ function PlayerStats(props) {
         if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
             return (
                 <div>
-                    <h3 style={{ padding: '2rem 0 0 0' }}>SUMMARY</h3>
+                    <h3 style={{ padding: '2rem 0 0 0' }}>
+                        {stats.statsYear} SUMMARY
+                    </h3>
                     <PlayerStatSummary
                         callback={displayPlayerCallback}
                         playerStats={statsToDisplayArray}
