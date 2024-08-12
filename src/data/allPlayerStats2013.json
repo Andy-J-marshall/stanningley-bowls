@@ -1198,6 +1198,50 @@
                 "eric routh 6 - 21 malcolm brown"
             ]
         },
+        "geoff hodgson": {
+            "totalAgg": 31,
+            "totalAggAgainst": 23,
+            "availableAgg": 31,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 31,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 31,
+            "totalAwayAggAgainst": 23,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 1,
+            "awayLosses": 0,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 1,
+            "dayPlayed": [
+                "Wednesday Pairs AireWharfe"
+            ],
+            "pairsPartners": [],
+            "winningPairsPartners": [],
+            "losingPairsPartners": [],
+            "results": [
+                "geoff hodgson 31 - 23 kathy hey"
+            ]
+        },
         "geoff lee": {
             "totalAgg": 398,
             "totalAggAgainst": 533,
