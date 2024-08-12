@@ -21,7 +21,7 @@ teamDays = [
             'Saturday Bradford (A)', 'Saturday Bradford (B)',
             # 'Wednesday Pairs AireWharfe',
             'Wednesday Pairs AireWharfe (A)', 'Wednesday Pairs AireWharfe (B)',
-            # 'Wednesday Half Holiday Bradford',
+            'Wednesday Half Holiday Bradford',
             # 'Wednesday Half Holiday Bradford (A)', 'Wednesday Half Holiday Bradford (B)',
             ]
 
@@ -53,7 +53,8 @@ players = [
     'marjory taylor',
     'david wainwright', 'gordon taylor',
     'maureen boyce',
-    'james butters'
+    'james butters',
+    'dorothy heslewood',
 ]
 
 # Players with different spellings of name (lowercase)

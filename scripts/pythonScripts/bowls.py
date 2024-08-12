@@ -6,7 +6,7 @@ import utils
 import re
 
 # year = str(date.today().year) TODO revert
-year = str(2017)
+year = str(2016)
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
