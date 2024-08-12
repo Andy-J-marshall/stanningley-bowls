@@ -108,6 +108,8 @@ def deduplicateNames(name):
         name = 'Marjory Taylor'
     if 'Christopher Gardner' in name:
         name = 'Chris Gardner'
+    if 'Terence Powell' in name:
+        name = 'Terry Powell'
     return name.lower()
 
 def standardiseName(name):

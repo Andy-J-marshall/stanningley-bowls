@@ -59,6 +59,7 @@ players = [
     'marion worrall',
     'chris gardner',
     'brian chamberlain',
+    'don sturgeon', 'eric routh'
 ]
 
 # Players with different spellings of name (lowercase)
@@ -67,7 +68,7 @@ duplicateTeamMemberNames = [
                             # 'phillip thornton', 'philip thornton',
                             'stuart watson', 'andrew marshall', 'cliff brogie', 'james moorin', 'andrew waller', 'bernard miller', 'steven gardner',
                             'bernard palmer', 'kenneth stockhill', 'dave parker', 'andy robertson', 'tony heslewood', 
-                            'rob taylor', 'robert taylor', 'dave wainwright', 'marjorie taylor', 'christopher gardner'
+                            'rob taylor', 'robert taylor', 'dave wainwright', 'marjorie taylor', 'christopher gardner', 'terrence powell',
                             ]
 
 traitorPlayers = {
