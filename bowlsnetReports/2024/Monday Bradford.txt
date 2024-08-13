@@ -1,5 +1,5 @@
 === Bradford (Mon. Evening) 2024
-=== League Report (as of Mon 12th Aug)
+=== League Report (as of Tue 13th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 19th Aug
@@ -406,8 +406,10 @@
  Time            Mon 12th Aug                 Division 1 (Thurston) 7.00PM                       
 ------------------------------------------------------------------------------------------------------------------
  6:30pm  Spen Victoria 'A'    22   126   v.   Crowghyll Park        4    85     
+ 6:30pm  Asa Briggs 'A'        6    87   v.   Tyersal 'A'          20   119     
  6:30pm  Wibsey               15   103   v.   Littlemoor S&SC      11    93     
  6:30pm  Hightown             26   126   v.   Asa Briggs 'B'        0    43     
+ 6:30pm  Shipley Club A       25   126   v.   Idle 'A'              1    63     
 ------------------------------------------------------------------------------------------------------------------
  Time            Mon 12th Aug                 Division 2 (Robert Bland)7.00                      
 ------------------------------------------------------------------------------------------------------------------
@@ -429,16 +431,16 @@
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
-  1.  Tyersal 'A'          16   14    2    317
-  2.  Spen Victoria 'A'    17   13    4    313
-  3.  Shipley Club A       16   14    2    309
-  4.  Asa Briggs 'A'       16   10    6    246
+  1.  Tyersal 'A'          17   15    2    337
+  2.  Shipley Club A       17   15    2    334
+  3.  Spen Victoria 'A'    17   13    4    313
+  4.  Asa Briggs 'A'       17   10    7    252
   5.  Hightown             17    7   10    226
   6.  Wibsey               17    9    8    223
   7.  Crowghyll Park       17    7    9    175
   8.  Littlemoor S&SC      17    5   12    166
   9.  Asa Briggs 'B'       17    1   15     92
- 10.  Idle 'A'             16    2   14     91
+ 10.  Idle 'A'             17    2   15     92
 
 === Division 2 (Robert Bland)7.00PM
                              Matches     Pnts
@@ -3003,6 +3005,18 @@ Mark Goodall       21  Trevor Hodgson      17
          Points:   22           Points:     4
 
 Division 1 (Thurston)       Mon 12th Aug
+   Asa Briggs 'A'           Tyersal 'A'
+Michael Frost      21  Simon Metcalfe      14
+Carl Smith         11  Chris Mordue        21
+James Klenk        19  Pam Lindley         21
+Paula Graham       11  Philip Wilsdon      21
+Gary Woodhead      14  Mason Lindley       21
+Clive Foord        11  Gary Wike           21
+      Aggregate:   87        Aggregate:   119
+          Games:    1            Games:     5
+         Points:    6           Points:    20
+
+Division 1 (Thurston)       Mon 12th Aug
        Wibsey             Littlemoor S&SC
 John Stocks        21  Angela Carter       10
 Tasawir Hussain    21  Kath Mazurke        13
@@ -3025,6 +3039,18 @@ Logan Preston      21  Sean Achofield      10
       Aggregate:  126        Aggregate:    43
           Games:    6            Games:     0
          Points:   26           Points:     0
+
+Division 1 (Thurston)       Mon 12th Aug
+   Shipley Club A             Idle 'A'
+David Bland        21  Dave Duckett         8
+Craig Fenton       21  Alan Sinfield        4
+Chris Jacques      21  Yvonne Coppin       12
+Ian Jacques        21  Pam Barlow          16
+Matthew Jacques    21  Michael Leach       10
+Stuart Wilson      21  Roy Barlow          13
+      Aggregate:  126        Aggregate:    63
+          Games:    6            Games:     0
+         Points:   25           Points:     1
 
 Division 2 (Robert Bl       Mon 12th Aug
       Clayton A             Brackenhill

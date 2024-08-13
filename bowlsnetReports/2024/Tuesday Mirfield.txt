@@ -1,5 +1,5 @@
 === Mirfield District Bowling Association 2024
-=== League Report (as of Mon 12th Aug)
+=== League Report (as of Tue 13th Aug)
 
 
 === RESULTS: Tue 16th Apr to Sat 21st Sep
@@ -820,6 +820,33 @@
  7:00pm  Dalton C & BC                 2   108   v.   Springwood BC 'A'             8   155     
  7:00pm  Milnsbridge BC                4   132   v.   Cleckheaton Sports 'C'        6   138     
 
+-------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 13th Aug                                  Division 2                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Almondbury Lib 'A'            7   170   v.   Lower Hopton WMC 'B'          5   153     
+-------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 13th Aug                                  Division 3                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Crosland Moor 'B'             8   189   v.   Brighouse Sports 'A'          4   143     
+ 7:00pm  The Harold Club 'A'           8   174   v.   Ossett C & AC                 4   143     
+ 7:00pm  Thurgoland BC                 7   177   v.   Spen Victoria 'A'             5   166     
+-------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 13th Aug                                  Division 5                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Brighouse Sports 'B'          9   167   v.   Netherton Con                 1    98     
+ 7:00pm  Horbury WMC                   3   122   v.   Cowcliffe Lib                 7   149     
+-------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 13th Aug                                  Division 6                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Waterloo BC                   8   154   v.   The Harold Club 'B'           2    94     
+ 7:00pm  Shepley BC                    9   163   v.   Grange Moor BC                1   102     
+ 7:00pm  Royds Park BC                 7   155   v.   Cleckheaton Sports 'B'        3   132     
+-------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 13th Aug                                  Division 7                                     
+-------------------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Slazengers at Grange Moor     8   146   v.   Brighouse Sports 'C'          2   128     
+ 7:00pm  Cleckheaton Sports 'C'        8   157   v.   Springwood BC 'A'             2   118     
+
 
 === Current LEAGUE TABLES
 === Division 1
@@ -842,29 +869,29 @@
  Pos  Team                         Pl    W    L    For
 ====  ==========================  ===  ===  ===  =====  
   1.  Eccleshill                   15    9    6    105
-  2.  Kirkheaton Con 'A'           15    8    5    101
-  3.  Rothwell BC                  15    8    7     96
-  4.  Almondbury Lib 'A'           15    8    7     95
+  2.  Almondbury Lib 'A'           16    9    7    102
+  3.  Kirkheaton Con 'A'           15    8    5    101
+  4.  Rothwell BC                  15    8    7     96
   5.  Crossgates BC 'B'            15    7    7     92
   6.  Shipley BC                   15    6    7     90
   7.  Pudsey BC 'B'                15    7    7     89
-  8.  Whitkirk BC                  15    5    9     80
-  9.  Lower Hopton WMC 'B'         15    8    7     79
+  8.  Lower Hopton WMC 'B'         16    8    8     84
+  9.  Whitkirk BC                  15    5    9     80
  10.  Ossett Flying Horse 'A'      15    4    8     73
 
 === Division 3
                                      Matches     Pnts
  Pos  Team                         Pl    W    L    For
 ====  ==========================  ===  ===  ===  =====  
-  1.  Brighouse Sports 'A'         15    9    6    109
-  2.  Sandal BC                    15    8    7    104
-  3.  Morton House                 15   10    5    101
-  4.  The Harold Club 'A'          15    8    6     97
-  5.  Crosland Moor 'B'            15    9    6     96
-  6.  Spen Victoria 'A'            15    6    8     89
-  7.  Ossett C & AC                15    7    8     86
-  8.  Littlemoor 'B'               15    6    9     77
-  9.  Thurgoland BC                15    6    9     74
+  1.  Brighouse Sports 'A'         16    9    7    113
+  2.  The Harold Club 'A'          16    9    6    105
+  3.  Sandal BC                    15    8    7    104
+  4.  Crosland Moor 'B'            16   10    6    104
+  5.  Morton House                 15   10    5    101
+  6.  Spen Victoria 'A'            16    6    9     94
+  7.  Ossett C & AC                16    7    9     90
+  8.  Thurgoland BC                16    7    9     81
+  9.  Littlemoor 'B'               15    6    9     77
  10.  Elland Sports                15    5   10     67
 
 === Division 4
@@ -887,36 +914,36 @@
  Pos  Team                         Pl    W    L    For
 ====  ==========================  ===  ===  ===  =====  
   1.  Pudsey BC 'C' at Tyersal     13   13    0     94
-  2.  Brighouse Sports 'B'         13    8    5     83
+  2.  Brighouse Sports 'B'         14    9    5     92
   3.  Broad Oak BC                 14    8    5     81
   4.  Almondbury Lib 'B'           13    8    4     76
   5.  Heckmondwike BC              14    8    6     75
-  6.  Cowcliffe Lib                13    5    7     63
-  7.  Netherton Con                13    5    7     59
-  8.  Horbury WMC                  13    1   11     38
+  6.  Cowcliffe Lib                14    6    7     70
+  7.  Netherton Con                14    5    8     60
+  8.  Horbury WMC                  14    1   12     41
   9.  Denby Grange BC 'B'          14    1   12     31
 
 === Division 6
                                      Matches     Pnts
  Pos  Team                         Pl    W    L    For
 ====  ==========================  ===  ===  ===  =====  
-  1.  The Harold Club 'B'          12   10    2     75
-  2.  Shepley BC                   11    8    3     73
-  3.  Waterloo BC                  11    7    3     70
-  4.  Thorpe Green BC              13    6    7     65
-  5.  Cleckheaton Sports 'B'       11    8    3     64
+  1.  Shepley BC                   12    9    3     82
+  2.  Waterloo BC                  12    8    3     78
+  3.  The Harold Club 'B'          13   10    3     77
+  4.  Cleckheaton Sports 'B'       12    8    4     67
+  5.  Thorpe Green BC              13    6    7     65
   6.  Almondbury BC                12    4    7     55
-  7.  Grange Moor BC               12    2   10     40
-  8.  Royds Park BC                12    1   11     28
+  7.  Grange Moor BC               13    2   11     41
+  8.  Royds Park BC                13    2   11     35
 
 === Division 7
                                      Matches     Pnts
  Pos  Team                         Pl    W    L    For
 ====  ==========================  ===  ===  ===  =====  
-  1.  Slazengers at Grange Moor    13   13    0    102
-  2.  Brighouse Sports 'C'         13   12    1     95
-  3.  Springwood BC 'A'            13    9    4     77
-  4.  Cleckheaton Sports 'C'       14    7    7     75
+  1.  Slazengers at Grange Moor    14   14    0    110
+  2.  Brighouse Sports 'C'         14   12    2     97
+  3.  Cleckheaton Sports 'C'       15    8    7     83
+  4.  Springwood BC 'A'            14    9    5     79
   5.  Golcar Libs                  13    8    5     72
   6.  Rastrick BC                  13    5    8     64
   7.  Milnsbridge BC               14    5    9     53
@@ -7595,5 +7622,156 @@ Howard Young        21  Nick Robinson       14
 David Hyde          21  Richard Bentley     11
          Points:     4           Points:     6
       Aggregate:   132        Aggregate:   138
+
+      Division 2             Tue 13th Aug
+  Almondbury Lib 'A'     Lower Hopton WMC 'B'
+Jordan Ramsden      12  Paul Arthurs        21
+Jason Shaw          12  Simon Anderson      21
+Kyle Spencer        21  Jacob Hatfield Goodall                                                                                                                                                                                                                                                               5
+Conor McGowan       21  Jude Hatfield Goodall                                                                                                                                                                                                                                                               11
+Bradley Ramsden     15  Graham Hirst        21
+Mick Higgins        14  Wayne Hirst         21
+James Martin        21  Richard Crowther    10
+Daniel Beeby        21  Paul Ingleby        17
+Matt Hollingworth   12  Harley Tattersley   21
+Andrew Heaume       21  Allan Thompson       5
+         Points:     7           Points:     5
+      Aggregate:   170        Aggregate:   153
+
+      Division 3             Tue 13th Aug
+  Crosland Moor 'B'      Brighouse Sports 'A'
+Justin Harris       21  Peter Clarke        12
+Andy Rose           21  Mark McGorlick      15
+Wayne Dews          21  Jamie Hulley         3
+Ross Mallinson      11  Robert Hopper       21
+Tom Fowler          21  Daniel Dunkerley     8
+Ray Whitwam         21  Julian Dawson        9
+Trevor Boothroyd    16  Richard Hobson      21
+Steve Haigh         16  Jon Gamble          21
+Elliott Heap        21  Bailey Dawson       12
+Rhys Beaumont       20  Connor Davis        21
+         Points:     8           Points:     4
+      Aggregate:   189        Aggregate:   143
+
+      Division 3             Tue 13th Aug
+ The Harold Club 'A'        Ossett C & AC
+Trevor Benn         21  Stuart Daniel       14
+Frank Cullen        21  Sam Beresford        3
+Andrew Heenan       21  Oscar Scott-Parker   8
+Darren Hickey       20  Joshua Dunford      21
+Nicky Jagger        14  Chris Nuttall       21
+Tom Jagger           7  Noel Whitaker       21
+Gareth Metcalf       7  Robert Dunford      21
+Chris Sowden        21  Nigel Miller        11
+Neil Tordoff        21  Martin Cross         8
+Ian Wilson          21  Graeme Eyre         15
+         Points:     8           Points:     4
+      Aggregate:   174        Aggregate:   143
+
+      Division 3             Tue 13th Aug
+    Thurgoland BC         Spen Victoria 'A'
+Jim Norris          21  Phillip Smith       10
+Brian Sharrock      21  John Smith          13
+Ryan Pendlebury     21  Harry Brooke        11
+Fred Tippett        15  Neil Wood Snr       21
+Daniel Marsland     16  Chris Ellis         21
+Tommy Silcock        8  Andrew Wood         21
+Jeff Moreland       15  Lewis Pember        21
+Eric Phillips       18  Andrew Gallagher    21
+Richard Moore       21  Mark Goodall         7
+Tom Wiltshire       21  Garry Walker        20
+         Points:     7           Points:     5
+      Aggregate:   177        Aggregate:   166
+
+      Division 5             Tue 13th Aug
+ Brighouse Sports 'B'       Netherton Con
+Jamie Horsley       21  Rob Parker          17
+Jason Horsley       21  Graham Brook        17
+Stuart Fletcher     21  Rob Hirst            5
+Dale Dyson          21  Paul Brennan        15
+Michael Wood        21  Jimmy Nolan         12
+Corey Fountain      21  G Dyson              5
+Tony Riley          21  Tommy Whitaker       6
+John Bloomer        20  Paul Winterburn     21
+         Points:     9           Points:     1
+      Aggregate:   167        Aggregate:    98
+
+      Division 5             Tue 13th Aug
+     Horbury WMC            Cowcliffe Lib
+David Ingham        11  David Pollard       21
+David Pursell       11  Malcolm Stead       21
+Arthur Clarkson     21  Stephen Cameron     16
+David Horan          6  John Burnett        21
+Martin Barlow       12  Graham Radcliffe    21
+Steven Cummack      19  Wayne Garside       21
+Nathan Cook         21  Alan Brown          14
+Mark Young          21  Steve Halsall       14
+         Points:     3           Points:     7
+      Aggregate:   122        Aggregate:   149
+
+      Division 6             Tue 13th Aug
+     Waterloo BC         The Harold Club 'B'
+Kris Lunn           21  Andy Bairstow       10
+Ian Lunn            21  Eddie Hill          10
+David Lunn          21  Nigel Swales        10
+Robert Mudd         17  Joe Mellor          21
+John Shackcloth     21  Mick Walton         11
+Craig Beachill      11  Shaun Godfrey       21
+Paul Hartley        21  Matthew Hicks        9
+Rob Making          21  Andy Malone          2
+         Points:     8           Points:     2
+      Aggregate:   154        Aggregate:    94
+
+      Division 6             Tue 13th Aug
+      Shepley BC            Grange Moor BC
+Andrew Astbury      21  Mel Kirton           5
+Keith Hague         21  Eddie Gilbert       12
+Geoffrey Ryder      21  Graham Shaw         12
+Adrian Frain        21  Craig Caygill       18
+Stanley Hoyle       21  David Bolger        14
+John Hodgson        21  Simon Shaw           7
+Graham Clegg        16  Darren Hardcastle   21
+Paul Van Leeuwen    21  Russell Gilbert     13
+         Points:     9           Points:     1
+      Aggregate:   163        Aggregate:   102
+
+      Division 6             Tue 13th Aug
+    Royds Park BC       Cleckheaton Sports 'B'
+David Broadhead     21  Gary Sharp          16
+Stephen Busz        21  Dave Marshall       11
+Gareth Harwood      21  Keith Barlow        11
+David Nightingale   18  Jason Townend       21
+Phillip Rann        21  Shaun Suthers       12
+Mark Seed           21  John Bradley        19
+Tim Rann            17  Tim Hall            21
+James Senior        15  Stephen Archer      21
+         Points:     7           Points:     3
+      Aggregate:   155        Aggregate:   132
+
+      Division 7             Tue 13th Aug
+Slazengers at Grange M   Brighouse Sports 'C'
+Gary Eastwood       21  Gordon Johnson      18
+Andy Hoult          21  Neal Hopper         15
+Gary Larner         21  Dave Scott          12
+Wayne Bond          21  Max Dellourosa      15
+Zak Bond            16  Ian Moxon           21
+Michael Redican     21  Tony Naylor         15
+Liam Redican        21  David Marsh         11
+Steve Powell         4  Nigel Marshall      21
+         Points:     8           Points:     2
+      Aggregate:   146        Aggregate:   128
+
+      Division 7             Tue 13th Aug
+Cleckheaton Sports 'C'    Springwood BC 'A'
+Chris Bray          21  Colin Hampshaw      14
+Richard Bentley     19  Mick Stout          21
+John Dyson          21  Chris Windle        14
+Nick Robinson       21  Mick Price           7
+Bradley Throup      21  Jeff Mellor         13
+Richard Oldroyd     21  David Turner         9
+Gary Blackburn      12  Michael Brammah     21
+Jack Glazzard       21  David Cooper        19
+         Points:     8           Points:     2
+      Aggregate:   157        Aggregate:   118
 
 

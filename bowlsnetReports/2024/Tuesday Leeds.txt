@@ -1,5 +1,5 @@
 === Leeds & District (Tuesday) 2024
-=== League Report (as of Mon 12th Aug)
+=== League Report (as of Tue 13th Aug)
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -423,6 +423,28 @@
  6:15pm  East End Park A            32   147   v.   Meanwood A                  30   142                        From Tue 9th Jul
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Tue 13th Aug                                 Division 1                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 6:15pm  Calverley YP               22   111   v.   New Farnley A               38   163                        
+ 6:15pm  Churwell Park              35   152   v.   East End Park A             24   123                        
+ 6:15pm  Rothwell BC                31   137   v.   Roundhay Pk A               25   120                        
+ 6:15pm  Meanwood A                 39   167   v.   Saville Park                14    76                        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Tue 13th Aug                                 Division 2                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 6:15pm  Holbeck Ltd A              30   131   v.   New Wortley A               24   122                        
+ 6:15pm  New Farnley B              34   152   v.   Chapel Allerton A           23   111                        
+ 6:15pm  Crossgates Rec A           35   154   v.   Holt Park                   19    95                        
+ 6:15pm  Sth Leeds Cons A           33   148   v.   Gildersome A                24   121                        
+ 6:15pm  Cross Flatts               37   158   v.   Holbeck Moor                20   101                        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Tue 13th Aug                                 Division 3                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 6:15pm  Pudsey Park A              30   140   v.   Pudsey Park B               32   146                        
+ 6:15pm  Middleton Comm             29   136   v.   Manston Pk                  27   130                        
+ 6:15pm  Stanningley Park           34   148   v.   Meanwood B                  20   101                        
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
  Time               Tue 10th Sep                                 Division 2                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------------------
          Sth Leeds Cons A                      v.   New Farnley B                                               From Tue 18th Jun. To Tue 30th Jul
@@ -433,45 +455,45 @@
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
-  1.  Chapel Street        14   10    4    456
-  2.  Roundhay Pk A        13   12    1    434
-  3.  Meanwood A           14    8    5    419
-  4.  New Farnley A        12    8    3    385
-  5.  Saville Park         13    4    7    369
-  6.  Churwell Park        13    3    7    367
-  7.  Calverley YP         12    2    8    312
-  8.  Rothwell BC          11    4    6    293
-  9.  East End Park A      12    1   11    292
+  1.  Roundhay Pk A        14   12    2    459
+  2.  Meanwood A           15    9    5    458
+  3.  Chapel Street        14   10    4    456
+  4.  New Farnley A        13    9    3    423
+  5.  Churwell Park        14    4    7    402
+  6.  Saville Park         14    4    8    383
+  7.  Calverley YP         13    2    9    334
+  8.  Rothwell BC          12    5    6    324
+  9.  East End Park A      13    1   12    316
 
 === Division 2
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
-  1.  Holbeck Ltd A        15   13    2    506
-  2.  Cross Flatts         15   11    4    467
-  3.  Crossgates Rec A     15    9    5    463
-  4.  New Wortley A        15    9    5    457
-  5.  Holt Park            15    7    7    432
-  6.  Gildersome A         15    8    7    428
-  7.  Sth Leeds Cons A     15    7    8    423
-  8.  Chapel Allerton A    15    4   10    414
-  9.  Holbeck Moor         15    1   12    400
- 10.  New Farnley B        15    2   11    387
+  1.  Holbeck Ltd A        16   14    2    536
+  2.  Cross Flatts         16   12    4    504
+  3.  Crossgates Rec A     16   10    5    498
+  4.  New Wortley A        16    9    6    481
+  5.  Sth Leeds Cons A     16    8    8    456
+  6.  Gildersome A         16    8    8    452
+  7.  Holt Park            16    7    8    451
+  8.  Chapel Allerton A    16    4   11    437
+  9.  New Farnley B        16    3   11    421
+ 10.  Holbeck Moor         16    1   13    420
 
 === Division 3
                              Matches     Pnts
  Pos  Team                 Pl    W    L    For
 ====  ==================  ===  ===  ===  =====  
-  1.  Stanningley Park     15   13    2    511
-  2.  Middleton Comm       15   12    3    473
-  3.  Manston Pk           15   10    5    469
+  1.  Stanningley Park     16   14    2    545
+  2.  Middleton Comm       16   13    3    502
+  3.  Manston Pk           16   10    6    496
   4.  Colton               15    7    8    440
   5.  Moor Allerton        15    8    7    429
-  6.  Meanwood B           14    8    6    400
-  7.  Pudsey Park A        15    3   12    395
+  6.  Pudsey Park A        16    3   13    425
+  7.  Meanwood B           15    8    7    420
   8.  Gildersome B         15    4   10    392
-  9.  Garforth C C         14    6    8    372
- 10.  Pudsey Park B        15    2   12    351
+  9.  Pudsey Park B        16    3   12    383
+ 10.  Garforth C C         14    6    8    372
 
 
 === FULL RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -3389,5 +3411,161 @@ Darran Baker        21  Andy Swain          17
 Scott Sellars       13  Simon Walder        21
       Aggregate:   147        Aggregate:   142
          Points:    32           Points:    30
+
+      Division 1             Tue 13th Aug
+     Calverley YP           New Farnley A
+Clifford Wheatley   13  Harry Dixon         21
+Lindsey Rosendale   17  Ian Worrall         21
+Rory Bligh           6  Ian Lynch           21
+Brian Hodgson       21  Andy Thompson       19
+Ricky Kearns        11  Andy Gardiner       21
+Paul Haigh          12  David Taylor        21
+Stephen Spurr       21  Paul Jagger         18
+Roger French        10  Ryan Lynch          21
+      Aggregate:   111        Aggregate:   163
+         Points:    22           Points:    38
+
+      Division 1             Tue 13th Aug
+    Churwell Park          East End Park A
+Steve Briggs        21  Dave Howard          9
+Ellen Barraclough   15  Steve Olivant       21
+Sue Harrison        21  Brian Berry         16
+Martin Huxley       21  Josey Olivant        9
+Kath Andrews        21  Matt Ramsey         20
+Mick Harrison       21  Paul Reynard        11
+Graham Hainsworth   11  Sophie Olivant      21
+Robert Spink        21  Darran Baker        16
+      Aggregate:   152        Aggregate:   123
+         Points:    35           Points:    24
+
+      Division 1             Tue 13th Aug
+     Rothwell BC            Roundhay Pk A
+Georgina Holmes     21  Andrew Ford          6
+Lyn Dye             21  Andy Sharratt       19
+Katie Turner        21  John Bates          10
+Mick Goodhall       21  Paul Burke           9
+Ron Owen            21  Martin Lally        13
+Charlotte Holmes    10  Andrew Lloyd        21
+Geoff Newbould      12  Jim Bird            21
+Alan Box            10  Paul Johnson        21
+      Aggregate:   137        Aggregate:   120
+         Points:    31           Points:    25
+
+      Division 1             Tue 13th Aug
+      Meanwood A             Saville Park
+Tina Howard         21  Lynne Hopps          7
+Simon Walder        21  Mark Hopps           6
+Michael Gregory     21  David Steel          2
+Lynda Heath         21  Steve Portman       16
+Douglas Blair       21  Karen Portman       16
+David Milnes        20  Ellis Owen          21
+Andy Swain          21  Gary Haley           5
+Ian Howard          21  Liam Massey          3
+      Aggregate:   167        Aggregate:    76
+         Points:    39           Points:    14
+
+      Division 2             Tue 13th Aug
+    Holbeck Ltd A           New Wortley A
+Lisa Hogan          21  Keith Sellars       14
+Paul Hainsworth     16  Andrew Cole         21
+Richard Perry       21  Iain Baker          12
+Daniel Owen         21  Danny Dawson        14
+Simon Linsell        5  Stuart Reardon      21
+James Cuffe          5  Jerry Wood          21
+Alex Perry          21  Neil Porter         11
+Kyle Hainsworth     21  Stephen Morley       8
+      Aggregate:   131        Aggregate:   122
+         Points:    30           Points:    24
+
+      Division 2             Tue 13th Aug
+    New Farnley B         Chapel Allerton A
+Hazel Goodall       21  Steven Bottomley    10
+Barbara Taylor      15  David Burke         21
+Pat Skelton         16  Matthew Watson      21
+Graham Davison      21  Alex McSheehy       11
+Howard Fowler       21  David Blackwell      9
+Roger Milner        21  Tommy Massey         7
+Bob Taylor          16  Mandy Wilson        21
+John Ingham         21  Colin Wilson        11
+      Aggregate:   152        Aggregate:   111
+         Points:    34           Points:    23
+
+      Division 2             Tue 13th Aug
+   Crossgates Rec A           Holt Park
+Dave Farman         21  Sylvia Petty         8
+Bob Patterson       21  Dave Lyons           1
+Alan Wood           15  Debbie Sandles      21
+Terry Rock          21  Graham Hill          9
+Maria Durkan        19  Peter Byford        21
+Dave Sharp          15  John Patrick        21
+Graham Scholes      21  Peter Sandles        3
+James Tayolr        21  Mike Cox            11
+      Aggregate:   154        Aggregate:    95
+         Points:    35           Points:    19
+
+      Division 2             Tue 13th Aug
+   Sth Leeds Cons A          Gildersome A
+Mark Rastrick       21  Harvey Lockwood     17
+Joe Adams           13  Linda Gaunt         21
+Brenda Moscrop      21  Diane Hales         11
+Chloe Grant         21  Kevin Smales        13
+Janet Stockdale      9  Alan Procter        21
+Reece Pratt         21  David Norton        12
+Tim Newton          21  Simon Hampshaw       8
+Michael Gore        21  Beverley Hampshaw   18
+      Aggregate:   148        Aggregate:   121
+         Points:    33           Points:    24
+
+      Division 2             Tue 13th Aug
+     Cross Flatts            Holbeck Moor
+Jim Bootland        21  Jim Barker           8
+Mario Biancardo     21  Albert Beggs        10
+Peter Griffin       11  Wayne Warburton     21
+Paul Hatch          21  Steve Milton        10
+Stephanie Wood      21  Ian Smith            5
+John Lister         21  Geoff Warbuton      17
+Shirley Biancardo   21  Steve Brown         15
+Jason Potter        21  John Binns          15
+      Aggregate:   158        Aggregate:   101
+         Points:    37           Points:    20
+
+      Division 3             Tue 13th Aug
+    Pudsey Park A           Pudsey Park B
+Peter Colley        10  Derek Howell        21
+David Turner        14  Carl Birkin         21
+Darren Lowe         21  Callum Birkin       15
+Brian Stevens       16  Bill Pyett          21
+Dennis Walters      21  Frank Lindsay       12
+Barbara Moss        21  Stephen Morris      20
+Elaine Hill         16  James Drury         21
+Maureen Bradshaw    21  David Milner        15
+      Aggregate:   140        Aggregate:   146
+         Points:    30           Points:    32
+
+      Division 3             Tue 13th Aug
+    Middleton Comm            Manston Pk
+Mick Hall           13  John Townsend       21
+Les Oddy             7  Jim Jordan          21
+Mark Aspin          21  Elizabeth Quigley    9
+Malcolm Hallas      21  David Wall          12
+Darren Cookson      21  David Clarke         8
+Christine Glyn      16  Jonathan Moriaty    21
+Barbara Ragan       21  John Wilson         17
+Malcolm Cameron     16  Alan Taylor         21
+      Aggregate:   136        Aggregate:   130
+         Points:    29           Points:    27
+
+      Division 3             Tue 13th Aug
+   Stanningley Park           Meanwood B
+Alyssa Randell      21  Julie Keightley     12
+Stuart Potter       21  Pat Blackburn       12
+Andrew Marshall     21  Pat Prosser          2
+Colin Haque         18  Oliver Devaney      21
+Jim Swailes          4  Paul Dishman        21
+Paul Leonard        21  Ian Macfarlane      11
+Malvin Miller       21  Phil McStay         15
+Richard Hodgson     21  Jeff Blackburn       7
+      Aggregate:   148        Aggregate:   101
+         Points:    34           Points:    20
 
 

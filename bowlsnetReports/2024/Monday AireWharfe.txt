@@ -1,5 +1,5 @@
 === AireDale & Wharfedale (Mon. Evening) 2024
-=== League Report (as of Mon 12th Aug)
+=== League Report (as of Tue 13th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -677,6 +677,7 @@
   Time                  Mon 12th Aug                                      Division 4                                                     
 --------------------------------------------------------------------------------------------------------------------------------------------------
   6:15pm  Menston B                         1    95   v.   Burley in Wharfedale B           29   197                            
+  6:15pm  Myrtle Park                      17   183   v.   Wharfemeadows B                  13   165                            
   6:15pm  Adel B                           18   180   v.   Calverley                        12   169                            
   6:15pm  Greenbottom B                    20   187   v.   Holt Park B                      10   149                            
 
@@ -731,11 +732,11 @@
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
   1.  Burley in Wharfedale B    15   15    0    341
-  2.  Myrtle Park               14   11    3    271
+  2.  Myrtle Park               15   12    3    288
   3.  Holt Park B               16    6    9    234
   4.  Calverley                 15    6    8    221
-  5.  Adel B                    15    6    9    211
-  6.  Wharfemeadows B           14    5    6    207
+  5.  Wharfemeadows B           15    5    7    220
+  6.  Adel B                    15    6    9    211
   7.  Greenbottom B             15    5   10    191
   8.  Yeadon Park B             15    5    9    168
   9.  Menston B                 15    5   10    166
@@ -877,7 +878,7 @@ Andrew Cook          21  Howard Platt            4
 Terry Almond         21  Ben Smith              13
 Deborah Swann        21  Pauline Barnett        13
 Clive Swan           16  Raymond Smith Jr       21
-Bernard Connor       21  John Chippindale 'A'   16
+Bernie Connor        21  John Chippindale 'A'   16
 Simon Whitehead      21  Mark Silvester         16
 Steven Senior        21  Graham Tansley         13
 Robert Garth         21  Michael Smith'A'       17
@@ -1116,7 +1117,7 @@ Stephen Bastow'A'    21  Clive Swan              3
 Paul Rooks           21  Eddie Wray              7
 Jeremy Knowles       21  Terry Almond           19
 Peter Jefferson      21  Deborah Swann           2
-Michael Hall         21  Bernard Connor         12
+Michael Hall         21  Bernie Connor          12
 Mick Angus           21  Andrew Cook             8
 Neil Mylan 'A'       21  Simon Whitehead        18
 Graham Chaffer'A'    21  Steve Birch            11
@@ -1419,7 +1420,7 @@ David Pike           21  Richard Sunley          9
        Ilkley B                 Holt Park A
 Eddie Wray           21  David Lyons            16
 Terry Almond         21  Debbie Sandles          7
-Bernard Connor       21  Peter Byford 'A'       16
+Bernie Connor        21  Peter Byford 'A'       16
 Steven Senior        20  Tony Watson            21
 Deborah Swann        21  Sylvia Petty 'A'       15
 Geoff Howard         21  John Gilroy'A'         16
@@ -1662,7 +1663,7 @@ John Sutton          20  Clive Swan             21
 Richard Sunley       21  Deborah Swann           3
 Nigel Stockdale 'A'  17  Terry Almond           21
 David Ascough         5  Steven Senior          21
-Bruce Callard        21  Bernard Connor         13
+Bruce Callard        21  Bernie Connor          13
 Phillip Clayton      21  Simon Whitehead         8
 Wayne Shipley        21  Geoff Howard           20
 Frank Sutcliffe       9  Robert Garth           21
@@ -2179,7 +2180,7 @@ David Pike           21  Colin Matthewman        7
        Ilkley B                  Rawdon A
 Eddie Wray           20  Gordon Longfellow      21
 *No Player*           0  Ian Scott              21
-Bernard Connor       19  Lindsay Rosendale      21
+Bernie Connor        19  Lindsay Rosendale      21
 Andrew Cook          14  Ken Garbett'A'         21
 David Emerson        21  Stephen Bottomley      10
 Geoff Howard         21  Dave Hill               6
@@ -2420,7 +2421,7 @@ Richard Garth 'A'    21  Tracy Wilson            4
 Steve Cooper 'A'         Patrick Campbell         
 Andy Thornton 'A'    21  Barry Slater           12
 Terry Almond             Michael Burnett          
-Bernard Connor       21  Ian Robertson'A'       15
+Bernie Connor        21  Ian Robertson'A'       15
 Steve Birch              ----------               
 Geoff Howard         21  Robert North'A'        15
 Robert Garth             Allen Hardcastle         
@@ -2542,7 +2543,7 @@ Richard Lawrence     18  Marc Armitage          21
       Guiseley B                 Ilkley B
 Carolyn Matthewman   21  Eddie Wray             14
 Ralph Sissons        21  Terry Almond           15
-Lynn Ogden           21  Bernard Connor         15
+Lynn Ogden           21  Bernie Connor          15
 Jeremy Jones         21  Andrew Cook            19
 Roger Waite          15  Geoff Howard           21
 Andy Baxter          15  David Emerson          21
@@ -2880,7 +2881,7 @@ Eddie Wray           21  Peter Forshaw           6
 Allan Hughes         21  Brian Ward             14
 Jonathan Wilson      21  Phil Hynes'A'          14
 Deborah Swann        14  Royston Lewis 'A'      21
-Bernard Connor        8  Dave Cooper            21
+Bernie Connor         8  Dave Cooper            21
 Andrew Cook          13  John Binns'A'          21
 Hedley Chapman       21  Andy Jones             18
 Clive Swan            9  Lynda Heath            21
@@ -3187,7 +3188,7 @@ Deborah Swann         6  John Armitage          21
 Andrew Cook          19  Simon Wider            21
 Simon Whitehead       4  Will Bedford           21
 Clive Swan           11  Lewis Cooper           21
-Bernard Connor        8  Mark Allman            21
+Bernie Connor         8  Mark Allman            21
 Robert Garth         10  Marc Armitage          21
 Steve Birch          18  Craig Hebberd          21
        Aggregate:   136           Aggregate:   199
@@ -3574,7 +3575,7 @@ Andy Thornton 'A'    21  Melissa Morris          5
 Andrew Breare        21  Hannah Leaf             4
 Phil Hall'A'         21  David McDonald         19
 Danny Barker         18  Stewart Watson         21
-Bernard Connor       15  Sue Chadwick           21
+Bernie Connor        15  Sue Chadwick           21
 Steve Ackroyd        21  Sam Hunak               9
 Jamie Cunningham     21  Richard Hodgson         9
 Martin Bailey        21  Matthew Leaf           12
@@ -3943,7 +3944,7 @@ Corrine Thuilliez    21  Simon Whitehead        19
 Howard Gardiner 'A'  20  Steven Senior          21
 John Chippindale 'A' 21  Andrew Cook            11
 Garrie Bolton        21  Clive Swan             18
-Michael Smith'A'     21  Bernard Connor         19
+Michael Smith'A'     21  Bernie Connor          19
 Graham Tansley       12  Steve Birch            21
 Raymond Smith Jr     16  Robert Garth           21
 Paul Crawford        17  Terry Almond           21
@@ -4197,7 +4198,7 @@ Allan Hughes         17  Mick Angus             21
 Deborah Swann        21  Steve Bowes            20
 Andrew Cook          10  Graham Chaffer'A'      21
 Eddie Wray           16  Peter Jefferson        21
-Bernard Connor       10  Michael Hall           21
+Bernie Connor        10  Michael Hall           21
 Simon Whitehead      17  Neil Mylan 'A'         21
 Clive Swan           17  Stephen Bastow'A'      21
 David Emerson        13  Jeremy Knowles         21
@@ -4501,7 +4502,7 @@ Sylvia Petty 'A'     21  Robert Garth           16
 David Lyons          12  Allan Hughes           21
 Peter Sandles        21  Simon Whitehead        12
 Debbie Sandles       21  Deborah Swann          16
-Ernest Johnson 'A'   21  Bernard Connor          7
+Ernest Johnson 'A'   21  Bernie Connor           7
 Carol Matthews       18  Eddie Wray             21
 Tony Watson          21  David Emerson           8
 Peter Byford 'A'     21  Steven Senior           8
@@ -5035,7 +5036,7 @@ James Teale              Darren Thompson
 Thomas Cater         21  Andy Thornton 'A'      11
 Luke Teale 'A'           Terry Almond             
 Guy Smith            21  Steve Birch             2
-Gary Whelan              Bernard Connor           
+Gary Whelan              Bernie Connor            
 Ian Howard'A'        21  Martin Bailey           5
 Chris Daysh'A'           Robert Garth             
 Joe Stockdale 'A'    21  Richard Garth 'A'       2
@@ -6069,7 +6070,7 @@ Guy Barrie           21  John Binns'A'          17
     Littlemoor S&SC              Ilkley B
 Martin Fulton        21  Robert Garth            8
 Simon Wider          21  Steve Birch             5
-Ben Falkingham       21  Bernard Connor          9
+Ben Falkingham       21  Bernie Connor           9
 Will Bedford         21  Andrew Cook             3
 Glen Pratt           21  Simon Whitehead         7
 Craig Hebberd        21  Clive Swan              6
@@ -6160,6 +6161,22 @@ Peter Gaston          5  Pete Thornton          21
        Aggregate:    95           Aggregate:   197
            Games:     1               Games:     9
           Points:     1              Points:    29
+
+      Division 4               Mon 12th Aug
+      Myrtle Park             Wharfemeadows B
+Margaret Allen       17  Lynne Harper           21
+Harrison Charles     17  Tim Marshall           21
+Nick Gilleard        13  Gill Godden            21
+Maureen Wood         18  John Parker            21
+Mike Wilson          21  Jane Bowden            16
+Keith Brown          21  Ray Smith Snr          17
+Andrew Lancaster     13  Belinda Mitchell       21
+Tom Barnes           21  Malolm Levi             7
+Chris Dickerson      21  David Warburton         8
+Stephen Turner       21  Linda Smith            12
+       Aggregate:   183           Aggregate:   165
+           Games:     5               Games:     5
+          Points:    17              Points:    13
 
       Division 4               Mon 12th Aug
         Adel B                   Calverley
