@@ -100,18 +100,18 @@ ul {
 }
 
 @media (min-width: 100px) {
-  #player-search-form {
+  #search-form {
     width: 90%;
   }
 }
 @media (min-width: 700px) {
-  #player-search-form {
+  #search-form {
     width: 70%;
   }
 }
 
 @media (min-width: 1000px) {
-  #player-search-form {
+  #search-form {
     width: 50%;
   }
 }

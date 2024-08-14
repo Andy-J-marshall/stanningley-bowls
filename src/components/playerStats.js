@@ -1,15 +1,10 @@
 import { useState, useEffect } from 'react';
-import { ListGroup, Form, Button, Spinner } from 'react-bootstrap';
-import {
-    ClearButton,
-    Typeahead,
-    Menu,
-    MenuItem,
-} from 'react-bootstrap-typeahead';
+import { ListGroup, Spinner } from 'react-bootstrap';
 import Players from './players';
 import PlayerStatSummary from './playerStatSummary';
 import PlayerStatsOptions from './playerStatsOptions';
 import AllTimePlayerStats from './allTimePlayerStats';
+import Search from './search';
 import { collatePlayerStats } from '../helpers/playersHelper';
 import config from '../config';
 
@@ -215,61 +210,16 @@ function PlayerStats(props) {
     return (
         <div id="player-stat" className="center">
             <h1>{yearInTitle} PLAYER STATS</h1>
-            <Form
-                id="player-search-form"
-                className="center"
-                onSubmit={handleSubmit}
-            >
-                <Form.Group className="mb-3">
-                    <Typeahead
-                        id="player-search"
-                        placeholder="Player..."
-                        onChange={handleChange}
-                        options={['SHOW ALL'].concat(playerSearchNameArray)}
-                        selected={value}
-                        size="lg"
-                        renderMenu={(players, menuProps) => (
-                            <Menu {...menuProps}>
-                                {players.map((result, index) => (
-                                    <MenuItem
-                                        key={index}
-                                        onClick={(e) => e.target.focus()}
-                                        option={result}
-                                        position={index}
-                                    >
-                                        {result}
-                                    </MenuItem>
-                                ))}
-                            </Menu>
-                        )}
-                    >
-                        {({ onClear, selected }) => (
-                            <div className="rbt-aux">
-                                {!!selected.length && selected[0] && (
-                                    <ClearButton onClick={onClear} />
-                                )}
-                            </div>
-                        )}
-                    </Typeahead>
-                </Form.Group>
-                <Button id="search-button" variant="light" type="submit">
-                    Search
-                </Button>
-                {searchedPlayerName && (
-                    <Button
-                        id="back-button"
-                        style={{
-                            margin: '1rem',
-                            backgroundColor: '#e7f1ff',
-                            color: 'black',
-                        }}
-                        variant="secondary"
-                        onClick={closeButtonCallback}
-                    >
-                        Back to summary
-                    </Button>
-                )}
-            </Form>
+            {!showStatsSinceStart && (
+                <Search
+                    searchList={playerSearchNameArray}
+                    value={value}
+                    searchedName={searchedPlayerName}
+                    handleSubmitCallback={handleSubmit}
+                    handleChangeCallback={handleChange}
+                    closeButtonCallback={closeButtonCallback}
+                />
+            )}
             {loading && (
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>

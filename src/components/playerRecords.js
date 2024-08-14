@@ -272,12 +272,7 @@ function PlayerRecords(props) {
                                     }
                                 />
                             )}
-                            {bTeamRecord && (
-                                <div>
-                                    <br />
-                                    <hr />
-                                </div>
-                            )}
+                            {bTeamRecord && <hr />}
                             {bTeamRecord &&
                                 bTeamRecord.bestTeamAverage > -21 && (
                                     <RecordsTableDisplay

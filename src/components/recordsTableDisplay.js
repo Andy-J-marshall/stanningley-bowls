@@ -69,6 +69,7 @@ function RecordsTableDisplay(props) {
                 </tbody>
             </Table>
             <p className="footnote">* Minimum of {minGames} games</p>
+            <br />
         </div>
     );
 }

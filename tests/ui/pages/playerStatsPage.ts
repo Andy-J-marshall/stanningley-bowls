@@ -41,9 +41,9 @@ export class PlayerStatsPage {
   constructor(page: Page) {
     this.page = page;
     this.searchBar = page.locator(
-      '#player-search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
+      '#search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
     );
-    this.playerListInDropdown = page.locator('#player-search');
+    this.playerListInDropdown = page.locator('#search');
     this.searchButton = page.locator('#search-button');
     this.backButton = page.locator('#back-button');
     this.playerStatsItem = page.locator('#detailed-player-stats .list-group-item');
