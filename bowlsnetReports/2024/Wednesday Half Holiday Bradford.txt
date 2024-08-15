@@ -1,5 +1,5 @@
 === Bradford (Half Holiday) 2024
-=== League Report (as of Wed 14th Aug)
+=== League Report (as of Thu 15th Aug)
 
 
 === RESULTS: Wed 17th Apr to Wed 25th Sep
@@ -458,6 +458,7 @@
   1:30pm  Wibsey 'A'             15    94   v.   Queensbury 'A'         11    86     
   1:30pm  Asa Briggs 'A'         13   104   v.   Hove Edge              13   105     
   1:30pm  Pudsey 'A'             23   122   v.   Littlemoor S&SC 'A'     3    72     
+  1:30pm  Heckmondwike           23   117   v.   Clayton 'A'             3    66     
   1:30pm  Littlemoor S&SC 'B'    24   115   v.   Wyke                    2    56     
 ------------------------------------------------------------------------------------------------------------------------
   Time             Wed 14th Aug                    Division 2 (Sheila Johnson)                        
@@ -482,15 +483,15 @@
                                Matches     Pnts
  Pos  Team                   Pl    W    L    For
 ====  ====================  ===  ===  ===  =====  
-  1.  Pudsey 'A'             15   12    3    259
-  2.  Heckmondwike           15   11    4    246
+  1.  Heckmondwike           16   12    4    269
+  2.  Pudsey 'A'             15   12    3    259
   3.  Wibsey 'A'             16   12    4    237
   4.  Littlemoor S&SC 'A'    16    9    6    210
   5.  Littlemoor S&SC 'B'    15    7    6    209
   6.  Eccleshill 'A'         15    7    8    202
   7.  Hove Edge              16    6    9    199
   8.  Queensbury 'A'         16    4   11    179
-  9.  Clayton 'A'            14    5    8    171
+  9.  Clayton 'A'            15    5    9    174
  10.  Asa Briggs 'A'         15    5    8    160
  11.  Wyke                   15    2   13    112
 
@@ -3441,6 +3442,18 @@ Steve Emmett          21  Glen Merrick        12
 Melissa Morris        21  Jim Moorin          18
 Dean Scarth           17  Angela Carter       21
         Aggregate:   122        Aggregate:    72
+            Games:     5            Games:     1
+           Points:    23           Points:     3
+
+ Division 1 (Ed Foster)        Wed 14th Aug
+      Heckmondwike             Clayton 'A'
+Jude Hatfield-Goodall 12  David Moore         21
+Gerald Bromley        21  Paul Gill            4
+Gareth Harwood        21  June Wilson          7
+Jacob Hatfield-Goodall21  Peter Oliver        10
+Eddie Gilbert         21  Bev Shutt           12
+Harley Tattersley     21  Chris Wilson        12
+        Aggregate:   117        Aggregate:    66
             Games:     5            Games:     1
            Points:    23           Points:     3
 
