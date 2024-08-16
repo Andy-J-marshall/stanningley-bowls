@@ -1,5 +1,5 @@
 === West Riding & Spen Valley 2024
-=== League Report (as of Thu 15th Aug)
+=== League Report (as of Fri 16th Aug)
 
 
 === RESULTS: Sat 30th Mar to Sun 29th Sep
@@ -897,6 +897,7 @@
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 14th Aug                                Premier                                  
 ------------------------------------------------------------------------------------------------------------------------
+ 6:30pm  Castleford Town            8   155   v.   Whitkirk                   2   121     
  7:00pm  Eccleshill - A             5   145   v.   Shipley - A                5   145     
  7:00pm  Crossgates                 9   163   v.   Guiseley                   1    92     
  7:00pm  Pudsey BC - A              3   142   v.   Littlemoor - A             8   145     
@@ -954,9 +955,9 @@
   5.  Eccleshill - A            17    9    7     90
   6.  Shipley - A               17    7    9     83
   7.  Guiseley                  17    6   11     72
-  8.  Swillington               17    5   12     63
-  9.  Whitkirk                  16    5   11     61
- 10.  Castleford Town           16    6   10     57
+  8.  Castleford Town           17    7   10     65
+  9.  Whitkirk                  17    5   12     63
+ 10.  Swillington               17    5   12     63
 
 === Division 1
                                   Matches     Pnts
@@ -6428,6 +6429,19 @@ Jack Glazzard       16  Janice Connaleigh   21
 John Bradley         8  Sebastian Mordue    21
       Aggregate:   143        Aggregate:   120
          Points:     7           Points:     3
+
+       Premier               Wed 14th Aug
+   Castleford Town             Whitkirk
+Robert McGuire      21  Dave McGourty        6
+Mark Lewis          21  Amy Tobin           19
+Steve Williams      21  Paul Hardy           8
+Alwyn Beedel        21  Emma Tobin          13
+Darryl Harrap       18  Nichole Farrar      21
+Calum Fennell       11  Kristian Walder     21
+Liam Sykes          21  Simon Cahill        14
+Rob Lloyd           21  Adam Sharpe         19
+      Aggregate:   155        Aggregate:   121
+         Points:     8           Points:     2
 
        Premier               Wed 14th Aug
     Eccleshill - A           Shipley - A
