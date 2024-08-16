@@ -6,7 +6,6 @@ import Footer from './components/footer';
 import Membership from './components/membership';
 import Header from './components/header';
 import Contact from './components/contact';
-import Fixtures from './components/fixtures';
 import Results from './components/results';
 import Navigation from './components/navigation';
 import PlayerRecords from './components/playerRecords';
@@ -108,7 +107,6 @@ function App() {
                     <Route path="/home" element={<Home />} />
                     <Route path="/membership" element={<Membership />} />
                     <Route path="/team-and-social" element={<TeamInfo />} />
-                    <Route path="/fixtures" element={<Fixtures />} />
                     <Route
                         path="/results"
                         element={

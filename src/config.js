@@ -90,7 +90,6 @@ const live = {
         'saturday leeds': 'Saturday',
         'saturday leeds (b)': 'Saturday B',
     },
-    leagues: 'Leeds',
     allTeamsInLeaguesSince2013: [
         'monday combined leeds',
         'monday airewharfe',

@@ -57,40 +57,20 @@ function Navigation() {
                                 </Nav.Link>
                             </Nav.Item>
                         </NavDropdown>
-                        <NavDropdown
-                            title="FIXTURES & RESULTS"
-                            id="basic-nav-dropdown"
-                            className="navigation"
+                        <Nav.Item
+                            as={Link}
+                            to="/results"
+                            className="tabs navigation"
+                            style={{ textDecoration: 'none' }}
                         >
-                            <Nav.Item
-                                as={Link}
-                                to="/fixtures"
-                                className="tabs navigation"
-                                style={{ textDecoration: 'none' }}
+                            <Nav.Link
+                                as="div"
+                                href="/results"
+                                eventKey="/results"
                             >
-                                <Nav.Link
-                                    as="div"
-                                    href="/fixtures"
-                                    eventKey="/fixtures"
-                                >
-                                    FIXTURES
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item
-                                as={Link}
-                                to="/results"
-                                className="tabs navigation"
-                                style={{ textDecoration: 'none' }}
-                            >
-                                <Nav.Link
-                                    as="div"
-                                    href="/results"
-                                    eventKey="/results"
-                                >
-                                    RESULTS
-                                </Nav.Link>
-                            </Nav.Item>
-                        </NavDropdown>
+                                RESULTS
+                            </Nav.Link>
+                        </Nav.Item>
                         <NavDropdown
                             title="STATS"
                             id="basic-nav-dropdown"
