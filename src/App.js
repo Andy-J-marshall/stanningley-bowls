@@ -6,10 +6,9 @@ import Footer from './components/footer';
 import Membership from './components/membership';
 import Header from './components/header';
 import Contact from './components/contact';
-import Fixtures from './components/fixtures';
 import Results from './components/results';
 import Navigation from './components/navigation';
-import PlayerRecords from './components/playerRecords';
+import Records from './components/records';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
@@ -17,6 +16,8 @@ import History from './components/history';
 import YearSelectDropdown from './components/yearSelectDropdown';
 import statsData from './statsData';
 import './app.css';
+import SocialInfo from './components/socialInfo';
+import Fixtures from './components/fixtures';
 
 const {
     allYearStats,
@@ -26,8 +27,12 @@ const {
 } = statsData;
 
 function App() {
-    const [teamStats, setTeamStats] = useState(statsData.dataFiles.bowlsStats24);
-    const [combinedStats, setCombinedStats] = useState(statsData.dataFiles.combinedBowlsStats24);
+    const [teamStats, setTeamStats] = useState(
+        statsData.dataFiles.bowlsStats24
+    );
+    const [combinedStats, setCombinedStats] = useState(
+        statsData.dataFiles.combinedBowlsStats24
+    );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
@@ -107,7 +112,8 @@ function App() {
                     <Route path="" element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/membership" element={<Membership />} />
-                    <Route path="/team-and-social" element={<TeamInfo />} />
+                    <Route path="/teams" element={<TeamInfo />} />
+                    <Route path="/social" element={<SocialInfo />} />
                     <Route path="/fixtures" element={<Fixtures />} />
                     <Route
                         path="/results"
@@ -164,7 +170,7 @@ function App() {
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />
-                                <PlayerRecords
+                                <Records
                                     stats={teamStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}

@@ -24,48 +24,28 @@ function Navigation() {
                         navbarScroll
                     >
                         <NavDropdown
-                            title="MEMBERSHIP & TEAMS"
+                            title="TEAMS"
                             id="basic-nav-dropdown"
                             className="navigation"
                         >
                             <Nav.Item
                                 as={Link}
-                                to="/membership"
-                                className="tabs navigation"
+                                to="/teams"
+                                className="tabs"
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
                                     as="div"
-                                    href="/membership"
-                                    eventKey="/membership"
+                                    href="/teams"
+                                    eventKey="/teams"
                                 >
-                                    MEMBERSHIP
+                                    INFORMATION
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item
-                                as={Link}
-                                to="/team-and-social"
-                                className="tabs navigation"
-                                style={{ textDecoration: 'none' }}
-                            >
-                                <Nav.Link
-                                    as="div"
-                                    href="/team-and-social"
-                                    eventKey="/team-and-social"
-                                >
-                                    TEAM & SOCIAL BOWLING
-                                </Nav.Link>
-                            </Nav.Item>
-                        </NavDropdown>
-                        <NavDropdown
-                            title="FIXTURES & RESULTS"
-                            id="basic-nav-dropdown"
-                            className="navigation"
-                        >
                             <Nav.Item
                                 as={Link}
                                 to="/fixtures"
-                                className="tabs navigation"
+                                className="tabs"
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
@@ -79,7 +59,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/results"
-                                className="tabs navigation"
+                                className="tabs"
                                 style={{ textDecoration: 'none' }}
                             >
                                 <Nav.Link
@@ -88,26 +68,6 @@ function Navigation() {
                                     eventKey="/results"
                                 >
                                     RESULTS
-                                </Nav.Link>
-                            </Nav.Item>
-                        </NavDropdown>
-                        <NavDropdown
-                            title="STATS"
-                            id="basic-nav-dropdown"
-                            className="navigation"
-                        >
-                            <Nav.Item
-                                as={Link}
-                                to="/stats/player"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
-                            >
-                                <Nav.Link
-                                    as="div"
-                                    href="/stats/player"
-                                    eventKey="/stats/player"
-                                >
-                                    PLAYER STATS
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item
@@ -121,7 +81,7 @@ function Navigation() {
                                     href="/stats/team"
                                     eventKey="/stats/team"
                                 >
-                                    TEAM STATS
+                                    STATS
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item
@@ -139,6 +99,68 @@ function Navigation() {
                                 </Nav.Link>
                             </Nav.Item>
                         </NavDropdown>
+                        <NavDropdown
+                            title="THE CLUB"
+                            id="basic-nav-dropdown"
+                            className="navigation"
+                        >
+                            <Nav.Item
+                                as={Link}
+                                to="/membership"
+                                className="tabs"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Nav.Link
+                                    as="div"
+                                    href="/membership"
+                                    eventKey="/membership"
+                                >
+                                    MEMBERSHIP
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item
+                                as={Link}
+                                to="/social"
+                                className="tabs"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Nav.Link
+                                    as="div"
+                                    href="/social"
+                                    eventKey="/social"
+                                >
+                                    SOCIAL BOWLING
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item
+                                as={Link}
+                                to="/history"
+                                className="tabs"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Nav.Link
+                                    as="div"
+                                    href="/history"
+                                    eventKey="/history"
+                                >
+                                    HISTORY
+                                </Nav.Link>
+                            </Nav.Item>
+                        </NavDropdown>
+                        <Nav.Item
+                            as={Link}
+                            to="/stats/player"
+                            className="navigation"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Nav.Link
+                                as="div"
+                                href="/stats/player"
+                                eventKey="/stats/player"
+                            >
+                                PLAYER STATS
+                            </Nav.Link>
+                        </Nav.Item>
                         <Nav.Item
                             as={Link}
                             to="/contact"
@@ -151,20 +173,6 @@ function Navigation() {
                                 eventKey="/contact"
                             >
                                 CONTACT
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item
-                            as={Link}
-                            to="/history"
-                            className="navigation"
-                            style={{ textDecoration: 'none' }}
-                        >
-                            <Nav.Link
-                                as="div"
-                                href="/history"
-                                eventKey="/history"
-                            >
-                                HISTORY
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>

@@ -144,7 +144,7 @@ Update tests:
 Update team info in all components:
 
 - Change hardcoded references and variable names (e.g. "Monday", "Tuesday", "Thursday", "Saturday") to the correct team names
-- Add/remove teams if there are more/fewer teams than Stanningley in `playerRecords` component
+- Add/remove teams if there are more/fewer teams than Stanningley in `records` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `players` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamInfo` component
