@@ -8,6 +8,10 @@ h6 {
   font-family: 'Alegreya SC';
 }
 
+h1 {
+  padding: 0.7rem 0 0.9rem 0;
+}
+
 h3 {
   padding: 0.5rem 0 0 0;
 }

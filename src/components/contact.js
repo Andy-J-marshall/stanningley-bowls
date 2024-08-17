@@ -19,7 +19,6 @@ function Contact() {
                 {emailAddress}
             </a>
             <br />
-            <br />
             <p style={{ margin: 0 }}>
                 Keep up to date with the latest news via our social media pages:
             </p>
@@ -37,7 +36,6 @@ function Contact() {
             >
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
-            <br />
             <br />
             <p>
                 See our upcoming{' '}
