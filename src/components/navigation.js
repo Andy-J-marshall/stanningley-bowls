@@ -150,7 +150,7 @@ function Navigation() {
                         <Nav.Item
                             as={Link}
                             to="/stats/player"
-                            className="tabs"
+                            className="navigation"
                             style={{ textDecoration: 'none' }}
                         >
                             <Nav.Link
