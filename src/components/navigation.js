@@ -44,6 +44,20 @@ function Navigation() {
                             </Nav.Item>
                             <Nav.Item
                                 as={Link}
+                                to="/fixtures"
+                                className="tabs"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Nav.Link
+                                    as="div"
+                                    href="/fixtures"
+                                    eventKey="/fixtures"
+                                >
+                                    FIXTURES
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item
+                                as={Link}
                                 to="/results"
                                 className="tabs"
                                 style={{ textDecoration: 'none' }}

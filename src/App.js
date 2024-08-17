@@ -17,6 +17,7 @@ import YearSelectDropdown from './components/yearSelectDropdown';
 import statsData from './statsData';
 import './app.css';
 import SocialInfo from './components/socialInfo';
+import Fixtures from './components/fixtures';
 
 const {
     allYearStats,
@@ -109,6 +110,7 @@ function App() {
                     <Route path="/membership" element={<Membership />} />
                     <Route path="/teams" element={<TeamInfo />} />
                     <Route path="/social" element={<SocialInfo />} />
+                    <Route path="/fixtures" element={<Fixtures />} />
                     <Route
                         path="/results"
                         element={
