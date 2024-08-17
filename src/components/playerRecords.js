@@ -319,7 +319,7 @@ function PlayerRecords(props) {
 
     if (mostGames > 0) {
         return (
-            <div id="player-records">
+            <div id="records">
                 <h1>{yearInTitle} RECORDS</h1>
                 <TeamTabs
                     allCombinedComponent={combinedRecordsComponent()}
