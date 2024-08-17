@@ -627,12 +627,15 @@
   Time                  Sat 17th Aug                              Division 1 (Naylor Premier)                             
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Spen Victoria 'A'                13   166   v.   Guiseley 'A'                     17   181     
+  2:00pm  Cononley                         30   210   v.   Farsley                           0   119     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Harold Club 'A'                   9   167   v.   Hill Crest 'A'                   21   200     
   2:00pm  Brighouse Sports A               13   163   v.   Eccleshill 'A'                   17   170     
   2:00pm  Rufford 'A'                      26   198   v.   Clayton A                         4   119     
+  2:30pm  Pudsey 'B'                       16   168   v.   Littlemoor S&SC 'B'              14   163     
+  2:00pm  Hove Edge 'A'                    17   185   v.   Rastrick                         13   167     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                                  Division 3 (Mellor)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -640,12 +643,14 @@
   2:30pm  Guiseley 'B'                     20   180   v.   Wibsey                           10   151     
   2:00pm  Hipperholme & Lightcliffe 'A'    24   189   v.   Asa Briggs 'B'                    6   130     
  12:00pm  Pudsey 'C'                       22   200   v.   Rufford 'B'                       8   156     
+  2:30pm  Eccleshill 'B'                   14   164   v.   Spen Victoria 'B'                16   178     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                             Division 4 (Bartle) 8 Player                             
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Hill Crest 'B'                   20   146   v.   Hove Edge 'B'                     8   110     
   2:00pm  Oakenshaw                        11   120   v.   Crowghyll Park                   17   139     
   2:00pm  Cleckheaton Moorend              12   131   v.   Cleckheaton Sports 'A'           16   137     
+  2:30pm  West Bradford 'A'                18   148   v.   Burley Park                      10   119     
   2:00pm  Queensbury                       17   142   v.   Brighouse Sports B               11   124     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                              Division 5 (Haigh) 8 Player                             
@@ -672,15 +677,15 @@
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Littlemoor S&SC 'A'              11    8    3    209
-  2.  Pudsey 'A'                       10    9    1    209
-  3.  Spen Victoria 'A'                12    7    5    206
-  4.  Guiseley 'A'                     12    7    5    191
-  5.  Cononley                         11    7    3    180
+  1.  Cononley                         12    8    3    210
+  2.  Littlemoor S&SC 'A'              11    8    3    209
+  3.  Pudsey 'A'                       10    9    1    209
+  4.  Spen Victoria 'A'                12    7    5    206
+  5.  Guiseley 'A'                     12    7    5    191
   6.  Shipley Club                     10    4    5    163
   7.  Asa Briggs 'A'                   11    2    9    115
   8.  Wyke 'A'                         11    2    7    106
-  9.  Farsley                          10    1    9     91
+  9.  Farsley                          11    1   10     91
 
 === Division 2 (Godwin)
                                          Matches     Pnts
@@ -689,13 +694,13 @@
   1.  Hill Crest 'A'                   13   12    1    261
   2.  Brighouse Sports A               13    8    5    224
   3.  Eccleshill 'A'                   13    9    4    222
-  4.  Rufford 'A'                      13    8    5    202
-  5.  Hove Edge 'A'                    12    6    6    190
-  6.  Pudsey 'B'                       12    6    6    179
+  4.  Hove Edge 'A'                    13    7    6    207
+  5.  Rufford 'A'                      13    8    5    202
+  6.  Pudsey 'B'                       13    7    6    195
   7.  Clayton A                        13    5    8    167
-  8.  Harold Club 'A'                  13    2   11    162
-  9.  Rastrick                         12    3    9    151
- 10.  Littlemoor S&SC 'B'              12    4    8    132
+  8.  Rastrick                         13    3   10    164
+  9.  Harold Club 'A'                  13    2   11    162
+ 10.  Littlemoor S&SC 'B'              13    4    9    146
 
 === Division 3 (Mellor)
                                          Matches     Pnts
@@ -703,8 +708,8 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Hightown                         14   12    2    286
   2.  Hipperholme & Lightcliffe 'A'    13   10    3    265
-  3.  Spen Victoria 'B'                12   10    1    225
-  4.  Eccleshill 'B'                   13    6    7    205
+  3.  Spen Victoria 'B'                13   11    1    241
+  4.  Eccleshill 'B'                   14    6    8    219
   5.  Pudsey 'C'                       13    5    7    194
   6.  Asa Briggs 'B'                   13    6    7    185
   7.  Guiseley 'B'                     13    4    9    153
@@ -716,15 +721,15 @@
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Brighouse Sports B               13   10    3    224
-  2.  Burley Park                      12    9    2    218
+  1.  Burley Park                      13    9    3    228
+  2.  Brighouse Sports B               13   10    3    224
   3.  Queensbury                       13    9    4    218
   4.  Hill Crest 'B'                   13    7    6    200
   5.  Hove Edge 'B'                    13    7    6    193
-  6.  Crowghyll Park                   13    6    7    168
-  7.  Cleckheaton Sports 'A'           13    5    8    167
-  8.  Cleckheaton Moorend              13    5    6    158
-  9.  West Bradford 'A'                12    4    7    152
+  6.  West Bradford 'A'                13    5    7    170
+  7.  Crowghyll Park                   13    6    7    168
+  8.  Cleckheaton Sports 'A'           13    5    8    167
+  9.  Cleckheaton Moorend              13    5    6    158
  10.  Oakenshaw                        13    0   13     94
 
 === Division 5 (Haigh) 8 Player
@@ -5677,6 +5682,22 @@ Mark Regan           15  Daniel Teale          21
        Aggregate:   166          Aggregate:   181
           Points:    13             Points:    17
 
+Division 1 (Naylor Prem        Sat 17th Aug
+       Cononley                  Farsley
+Rob Scarr            21  Duncan McPhail        13
+Philip Dowgill       21  Helen Gilroy          18
+John Whitaker        21  Stephen Gilroy        14
+Mike Gadd            21  Derek Pickering        7
+Alister Keighley     21  Andy Wood             16
+Jim Calvert          21  Neil Nicholson        14
+Sharon Gadd          21  Dean Helliwell         9
+David Brown          21  Stuart Brook          11
+Steve Clamp          21  Peter Crowther         5
+Daryl Wright         21  Graham Petty          12
+           Games:    10              Games:     0
+       Aggregate:   210          Aggregate:   119
+          Points:    30             Points:     0
+
   Division 2 (Godwin)          Sat 17th Aug
     Harold Club 'A'           Hill Crest 'A'
 David Halligan       20  John Halliday         21
@@ -5724,6 +5745,38 @@ Thomas Johnson       14  Myles Summers         21
            Games:     8              Games:     2
        Aggregate:   198          Aggregate:   119
           Points:    26             Points:     4
+
+  Division 2 (Godwin)          Sat 17th Aug
+      Pudsey 'B'           Littlemoor S&SC 'B'
+Sue Chadwick         12  Angela Carter         21
+Lynn Noonan          21  Stuart Watson         16
+Simon Metcalfe       21  Kath Mazurke          14
+Pam Lindley          13  Nicky Dewhirst        21
+Wendy Shimbles       13  Thomas Powell         21
+Sarah Edmondson      20  Philip Thornton       21
+Alex Edmondson       21  Glenn Merrick          6
+Peter Simpson        21  William Swailes       17
+Tom Morris            5  Jim Moorin            21
+Matthew Leaf         21  Alan Mazurke           5
+           Games:     5              Games:     5
+       Aggregate:   168          Aggregate:   163
+          Points:    16             Points:    14
+
+  Division 2 (Godwin)          Sat 17th Aug
+     Hove Edge 'A'               Rastrick
+Chloe Hirst          21  Les Mitchell          11
+Julie Mallinson      21  Stuart Rodd           18
+Linda Gledhill       13  Lynda Drury           21
+Andy Carter          21  Stacey Dyson          12
+Lynn Carter          17  Karen Gant            21
+Steve Haigh          12  Damien Talbot         21
+Steve Mallinson      20  Mark Sykes            21
+Julie Best           18  Lorraine Hirst        21
+Suzi Ladbrooke       21  Debbie Farrar         12
+Christine Barker     21  Carole Harpin          9
+           Games:     5              Games:     5
+       Aggregate:   185          Aggregate:   167
+          Points:    17             Points:    13
 
   Division 3 (Mellor)          Sat 17th Aug
      Guiseley 'B'                 Wibsey
@@ -5773,6 +5826,22 @@ Taylor Smith         21  Angela Bennett         7
        Aggregate:   200          Aggregate:   156
           Points:    22             Points:     8
 
+  Division 3 (Mellor)          Sat 17th Aug
+    Eccleshill 'B'          Spen Victoria 'B'
+John Griffin         21  Darren Ripley         14
+Peter Howroyd         6  Kevin Wood            21
+Martin Hayton        21  Paul Blackburn        18
+Diane Emery          11  John Smith            21
+Peter Jefferson      11  Terry Varney          21
+Pauline Gilroy       10  John Blackburn        21
+Lee Hicks            21  Steve Kemp            13
+Ian Matthews 'B'     21  Richard Brooke        13
+Nicky Rooks          21  Lewis Pember          20
+Andrew Howie         21  Peter Ellis           16
+           Games:     6              Games:     4
+       Aggregate:   164          Aggregate:   178
+          Points:    14             Points:    16
+
 Division 4 (Bartle) 8 P        Sat 17th Aug
     Hill Crest 'B'            Hove Edge 'B'
 Richard Buxton       21  Terry Keast           12
@@ -5814,6 +5883,20 @@ John Parkinson       21  Dave Marshall          6
            Games:     3              Games:     5
        Aggregate:   131          Aggregate:   137
           Points:    12             Points:    16
+
+Division 4 (Bartle) 8 P        Sat 17th Aug
+   West Bradford 'A'           Burley Park
+Iain Brown           16  Tommy Parr            21
+Eddie Pells          15  Mark McCann           21
+Lesley Pawson        12  Cheryl Smith          21
+Malcolm Crotty       21  Barry Palmer          10
+Kevin Buckley        21  James Miller          20
+Bill Hutchinson      21  Joan Crampton          6
+John Shoesmith       21  Pauline Stockdale     20
+Mark Woolner         21  *No Player*            0
+           Games:     5              Games:     3
+       Aggregate:   148          Aggregate:   119
+          Points:    18             Points:    10
 
 Division 4 (Bartle) 8 P        Sat 17th Aug
       Queensbury            Brighouse Sports B
