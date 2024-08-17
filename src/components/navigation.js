@@ -39,7 +39,7 @@ function Navigation() {
                                     href="/teams"
                                     eventKey="/teams"
                                 >
-                                    TEAM INFORMATION
+                                    INFORMATION
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item
@@ -81,7 +81,7 @@ function Navigation() {
                                     href="/stats/team"
                                     eventKey="/stats/team"
                                 >
-                                    TEAM STATS
+                                    STATS
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item

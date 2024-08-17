@@ -320,7 +320,7 @@ function PlayerRecords(props) {
     if (mostGames > 0) {
         return (
             <div id="player-records">
-                <h1>{yearInTitle} PLAYER RECORDS</h1>
+                <h1>{yearInTitle} RECORDS</h1>
                 <TeamTabs
                     allCombinedComponent={combinedRecordsComponent()}
                     teamComponents={returnAllComponentsForTeams()}
@@ -330,7 +330,7 @@ function PlayerRecords(props) {
     } else {
         return (
             <div className="center">
-                <h1>{yearInTitle} PLAYER RECORDS</h1>
+                <h1>{yearInTitle} RECORDS</h1>
                 <p>No games played</p>
             </div>
         );
