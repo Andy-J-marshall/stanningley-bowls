@@ -69,7 +69,6 @@ function Home() {
                 then we are always looking for dedicated bowlers to join our
                 teams.
             </p>
-            <br />
             <Fixtures />
             <Supporters />
         </div>
