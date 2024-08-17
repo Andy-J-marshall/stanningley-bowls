@@ -3,7 +3,7 @@ import config from '../../../src/config';
 
 const teamName = config.teamNames.shortName;
 
-export class PlayerRecordsPage {
+export class RecordsPage {
   private readonly page: Page;
   private readonly overallWinRecord: Locator;
   private readonly overallWinsRecordPlayer: Locator;
@@ -104,7 +104,7 @@ export class PlayerRecordsPage {
     await this.page.goto('/#/stats/records');
   }
 
-  playerRecordsOverviewHasCorrectValuesFor2023() {
+  recordsOverviewHasCorrectValuesFor2023() {
     expect(this.overallGamesRecord).toBeVisible();
     expect(this.thurVetsWinRecord).toBeVisible({ visible: false });
 
@@ -118,7 +118,7 @@ export class PlayerRecordsPage {
     expect(this.overallAverageRecordPlayer).toContainText('Mario Biancardo');
   }
 
-  playerRecordsHasCorrectValuesForThurVets2023() {
+  recordsHasCorrectValuesForThurVets2023() {
     expect(this.thurVetsWinRecord).toBeVisible();
     expect(this.overallGamesRecord).toBeVisible({ visible: false });
 
@@ -130,7 +130,7 @@ export class PlayerRecordsPage {
     expect(this.thurVetsAverageRecordPlayer).toContainText('Mario Biancardo');
   }
 
-  playerRecordsHasCorrectValuesForTuesVets2022() {
+  recordsHasCorrectValuesForTuesVets2022() {
     expect(this.tuesVetsWinRecord).toBeVisible();
     expect(this.overallGamesRecord).toBeVisible({ visible: false });
 
@@ -142,7 +142,7 @@ export class PlayerRecordsPage {
     expect(this.tuesVetsAverageRecordPlayer).toContainText('John Armitage');
   }
 
-  playerRecordsDoNotExistForWednesdayPairsIn2023() {
+  recordsDoNotExistForWednesdayPairsIn2023() {
     expect(this.wedPairsNoGamesPlayedMessage).toContainText(
       `${teamName} did not play on this day for the selected year`
     );

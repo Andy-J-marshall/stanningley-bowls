@@ -1,40 +1,40 @@
 import { test } from '@playwright/test';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { TeamTabsPage } from './pages/teamTabsPage';
-import { PlayerRecordsPage } from './pages/playerRecordsPage';
+import { RecordsPage } from './pages/recordsPage';
 
 let basePage: YearSelectPage;
-let playerRecordsPage: PlayerRecordsPage;
+let recordsPage: RecordsPage;
 let teamTabsPage: TeamTabsPage;
 
 test.beforeEach(async ({ page }) => {
   basePage = new YearSelectPage(page);
-  playerRecordsPage = new PlayerRecordsPage(page);
+  recordsPage = new RecordsPage(page);
   teamTabsPage = new TeamTabsPage(page);
-  await playerRecordsPage.goto();
+  await recordsPage.goto();
 });
 
-test('Player records overview has correct records for 2023', async () => {
+test('Records overview has correct records for 2023', async () => {
   await basePage.select2023Year();
-  playerRecordsPage.playerRecordsOverviewHasCorrectValuesFor2023();
+  recordsPage.recordsOverviewHasCorrectValuesFor2023();
 });
 
-test('Player records has correct records for Thursday Vets in 2023', async () => {
+test('Records has correct records for Thursday Vets in 2023', async () => {
   await basePage.select2023Year();
   await teamTabsPage.selectThurVetsTeamFromRecordsTabs();
-  playerRecordsPage.playerRecordsHasCorrectValuesForThurVets2023();
+  recordsPage.recordsHasCorrectValuesForThurVets2023();
 });
 
-test('Player records has correct records for Tuesday Vets in 2022', async () => {
+test('Records has correct records for Tuesday Vets in 2022', async () => {
   await basePage.select2022Year();
   await teamTabsPage.selectTuesVetsTeamFromRecordsTabs();
-  playerRecordsPage.playerRecordsHasCorrectValuesForTuesVets2022();
+  recordsPage.recordsHasCorrectValuesForTuesVets2022();
 });
 
-test('Player records not show for Wednesday Pairs in 2023 as team did not exist', async () => {
+test('Records not show for Wednesday Pairs in 2023 as team did not exist', async () => {
   await basePage.select2023Year();
   await teamTabsPage.selectWedPairsTeamFromRecordsTabs();
-  playerRecordsPage.playerRecordsDoNotExistForWednesdayPairsIn2023();
+  recordsPage.recordsDoNotExistForWednesdayPairsIn2023();
 });
 
 test(`Records year dropdown appears if there are multiple years of records available`, async () => {

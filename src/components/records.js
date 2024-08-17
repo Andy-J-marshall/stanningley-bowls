@@ -3,7 +3,7 @@ import RecordsTableDisplay from './recordsTableDisplay';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
 
-function PlayerRecords(props) {
+function Records(props) {
     const stats = props.stats;
 
     const playerResults = stats.playerResults;
@@ -337,4 +337,4 @@ function PlayerRecords(props) {
     }
 }
 
-export default PlayerRecords;
+export default Records;

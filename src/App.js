@@ -8,7 +8,7 @@ import Header from './components/header';
 import Contact from './components/contact';
 import Results from './components/results';
 import Navigation from './components/navigation';
-import PlayerRecords from './components/playerRecords';
+import Records from './components/records';
 import TeamStats from './components/teamStats';
 import TeamInfo from './components/teamInfo';
 import PlayerStats from './components/playerStats';
@@ -27,8 +27,12 @@ const {
 } = statsData;
 
 function App() {
-    const [teamStats, setTeamStats] = useState(statsData.dataFiles.bowlsStats24);
-    const [combinedStats, setCombinedStats] = useState(statsData.dataFiles.combinedBowlsStats24);
+    const [teamStats, setTeamStats] = useState(
+        statsData.dataFiles.bowlsStats24
+    );
+    const [combinedStats, setCombinedStats] = useState(
+        statsData.dataFiles.combinedBowlsStats24
+    );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
     useEffect(() => {
@@ -166,7 +170,7 @@ function App() {
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />
-                                <PlayerRecords
+                                <Records
                                     stats={teamStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
