@@ -450,13 +450,13 @@
   3.  Meanwood Park A           18   13    5    287
   4.  Ilkley A                  19   10    8    259
   5.  Guiseley                  18    9    7    215
-  6.  Grove Hill                19    7   12    193
-  7.  Rufford B                 19    4   14    190
-  8.  Adel A                    19    7   11    188
-  9.  Ilkley B                  19    7   11    187
- 10.  Bramhope                  19    7   11    182
- 11.  Menston A                 18    4   13    170
- 12.  Burley in Wharfedale B    17    7    9    165
+  6.  Rufford B                 19    4   14    190
+  7.  Adel A                    19    7   11    188
+  8.  Ilkley B                  19    7   11    187
+  9.  Bramhope                  19    7   11    182
+ 10.  Menston A                 18    4   13    170
+ 11.  Grove Hill                18    6   12    169
+ 12.  Burley in Wharfedale B    16    7    8    165
 
 === Division 2
                                   Matches     Pnts
