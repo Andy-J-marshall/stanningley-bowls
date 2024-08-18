@@ -24,25 +24,23 @@ function CombinedTeamStats(props) {
 
     if (totalGames > 0) {
         return (
-            <div id="combined-team-results">
-                <div id="combined-team-win-losses">
-                    <StatsTableDisplay
-                        totalGames={totalGames}
-                        totalWins={totalWins}
-                        totalLosses={totalLosses}
-                        totalDraws={totalDraws}
-                        agg={combinedAgg}
-                        opponentAgg={combinedOpponentAgg}
-                        homeWins={combinedHomeWins}
-                        awayWins={combinedAwayWins}
-                        cupWins={combinedCupWins}
-                        homeLosses={combinedHomeLosses}
-                        awayLosses={combinedAwayLosses}
-                        cupLosses={combinedCupLosses}
-                        homeDraws={combinedHomeDraws}
-                        awayDraws={combinedAwayDraws}
-                    />
-                </div>
+            <div id="combined-team-win-losses">
+                <StatsTableDisplay
+                    totalGames={totalGames}
+                    totalWins={totalWins}
+                    totalLosses={totalLosses}
+                    totalDraws={totalDraws}
+                    agg={combinedAgg}
+                    opponentAgg={combinedOpponentAgg}
+                    homeWins={combinedHomeWins}
+                    awayWins={combinedAwayWins}
+                    cupWins={combinedCupWins}
+                    homeLosses={combinedHomeLosses}
+                    awayLosses={combinedAwayLosses}
+                    cupLosses={combinedCupLosses}
+                    homeDraws={combinedHomeDraws}
+                    awayDraws={combinedAwayDraws}
+                />
             </div>
         );
     } else {

@@ -19,10 +19,6 @@ function TeamStats(props) {
         window.scrollTo(0, 0);
     });
 
-    function allComponent() {
-        return <CombinedTeamStats stats={teamResults} />;
-    }
-
     function returnTeamComponents() {
         return config.historicTeamInfo.map((teamData) => {
             let teamName = '';
@@ -119,7 +115,9 @@ function TeamStats(props) {
             <div id="team-stats" className="center page-component">
                 <h1>{yearInTitle} TEAM STATS</h1>
                 <TeamTabs
-                    allCombinedComponent={allComponent()}
+                    allCombinedComponent={
+                        <CombinedTeamStats stats={teamResults} />
+                    }
                     teamComponents={returnTeamComponents()}
                 />
                 <br />
