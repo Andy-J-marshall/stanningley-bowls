@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sat 17th Aug)
+=== League Report (as of Sun 18th Aug)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -628,6 +628,8 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Spen Victoria 'A'                13   166   v.   Guiseley 'A'                     17   181     
   2:00pm  Cononley                         30   210   v.   Farsley                           0   119     
+  2:00pm  Littlemoor S&SC 'A'              17   187   v.   Pudsey 'A'                       13   175     
+  2:00pm  Asa Briggs 'A'                   12   164   v.   Shipley Club                     18   185     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 17th Aug                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -677,13 +679,13 @@
                                          Matches     Pnts
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
-  1.  Cononley                         12    8    3    210
-  2.  Littlemoor S&SC 'A'              11    8    3    209
-  3.  Pudsey 'A'                       10    9    1    209
+  1.  Littlemoor S&SC 'A'              12    9    3    226
+  2.  Pudsey 'A'                       11    9    2    222
+  3.  Cononley                         12    8    3    210
   4.  Spen Victoria 'A'                12    7    5    206
   5.  Guiseley 'A'                     12    7    5    191
-  6.  Shipley Club                     10    4    5    163
-  7.  Asa Briggs 'A'                   11    2    9    115
+  6.  Shipley Club                     11    5    5    181
+  7.  Asa Briggs 'A'                   12    2   10    127
   8.  Wyke 'A'                         11    2    7    106
   9.  Farsley                          11    1   10     91
 
@@ -5697,6 +5699,38 @@ Daryl Wright         21  Graham Petty          12
            Games:    10              Games:     0
        Aggregate:   210          Aggregate:   119
           Points:    30             Points:     0
+
+Division 1 (Naylor Prem        Sat 17th Aug
+  Littlemoor S&SC 'A'           Pudsey 'A'
+Will Bedford         21  Mason Lindley          8
+Jack Bowes           21  Thomas Hanson         12
+Ben Falkingham       21  Stuart Hanson         15
+Marc Armitage 'A'    21  Andrew Sykes          17
+Fern Beaumont        21  Dave Smith            18
+Nathan Dobson 'A'    19  Chris Mordue          21
+Alex Wolfenden       17  Gary Wike             21
+John Armitage 'A'    17  Josh Mordue           21
+Mark Allman          16  Philip Wilsdon        21
+Lee Wider            13  Ian Shaw              21
+           Games:     5              Games:     5
+       Aggregate:   187          Aggregate:   175
+          Points:    17             Points:    13
+
+Division 1 (Naylor Prem        Sat 17th Aug
+    Asa Briggs 'A'             Shipley Club
+Clive Foord 'A'      21  Chris Bedford         19
+Jordan Brown 'B'     10  David Bland           21
+Scott Sansom         21  Scott Bloodworth      12
+Malcolm Iles 'A'     21  Graeme Dytiche 'A'    16
+Kevin Burrage        11  Craig Fenton          21
+Gary Woodhead        11  Matthew Jacques 'A'   21
+Carl Smith            9  Chris Jacques         21
+Andrew Heenan        21  Ian Jacques           19
+Michael Frost        18  John Sample           21
+Glen McCafferty      21  Neil Simpson          14
+           Games:     5              Games:     5
+       Aggregate:   164          Aggregate:   185
+          Points:    12             Points:    18
 
   Division 2 (Godwin)          Sat 17th Aug
     Harold Club 'A'           Hill Crest 'A'

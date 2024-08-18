@@ -2348,18 +2348,18 @@
             ]
         },
         "john armitage": {
-            "totalAgg": 1282,
-            "totalAggAgainst": 970,
-            "availableAgg": 1407,
+            "totalAgg": 1299,
+            "totalAggAgainst": 991,
+            "availableAgg": 1428,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 693,
+            "availableHomeAgg": 714,
             "availableAwayAgg": 651,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 678,
-            "totalHomeAggAgainst": 406,
+            "totalHomeAgg": 695,
+            "totalHomeAggAgainst": 427,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 554,
@@ -2367,7 +2367,7 @@
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 29,
-            "homeLosses": 4,
+            "homeLosses": 5,
             "awayWins": 15,
             "awayLosses": 16,
             "cupWins": 2,
@@ -2380,7 +2380,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 67,
+            "totalGamesPlayed": 68,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2437,6 +2437,7 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -2520,7 +2521,8 @@
                 "john armitage 21 - 16 kevin siddle",
                 "john armitage 21 - 19 sharon gadd",
                 "john armitage 21 - 9 harley tattersley",
-                "john armitage 21 - 15 graham petty"
+                "john armitage 21 - 15 graham petty",
+                "john armitage 17 - 21 josh mordue"
             ]
         },
         "karl chapman": {
@@ -3763,9 +3765,9 @@
             ]
         },
         "paul leonard": {
-            "totalAgg": 1190,
-            "totalAggAgainst": 984,
-            "availableAgg": 1408,
+            "totalAgg": 1211,
+            "totalAggAgainst": 998,
+            "availableAgg": 1429,
             "availablePairsAgg": 631,
             "availableHomeAgg": 665,
             "availableAwayAgg": 607,
@@ -3785,7 +3787,7 @@
             "homeLosses": 6,
             "awayWins": 12,
             "awayLosses": 15,
-            "cupWins": 5,
+            "cupWins": 6,
             "cupLosses": 1,
             "pairWins": 14,
             "pairLosses": 12,
@@ -3795,7 +3797,7 @@
             "pairAwayLosses": 9,
             "pairCupWins": 2,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 63,
+            "totalGamesPlayed": 64,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -3846,6 +3848,7 @@
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
+                "Saturday Leeds",
                 "Saturday Leeds",
                 "Saturday Leeds",
                 "Saturday Leeds",
@@ -3982,13 +3985,14 @@
                 "paul leonard 21 - 15 bill lovett",
                 "paul leonard 21 - 19 peter nicholson",
                 "paul leonard 21 - 12 janet stockdale",
-                "paul leonard 21 - 11 christine glynn"
+                "paul leonard 21 - 11 christine glynn",
+                "paul leonard 21 - 14 ryan lynch"
             ]
         },
         "peter crowther": {
-            "totalAgg": 1789,
-            "totalAggAgainst": 1754,
-            "availableAgg": 2184,
+            "totalAgg": 1768,
+            "totalAggAgainst": 1740,
+            "availableAgg": 2163,
             "availablePairsAgg": 0,
             "availableHomeAgg": 1071,
             "availableAwayAgg": 966,
@@ -4008,7 +4012,7 @@
             "homeLosses": 16,
             "awayWins": 13,
             "awayLosses": 33,
-            "cupWins": 4,
+            "cupWins": 3,
             "cupLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
@@ -4018,7 +4022,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 104,
+            "totalGamesPlayed": 103,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -4035,7 +4039,6 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
-                "Saturday Leeds",
                 "Tuesday Mirfield",
                 "Tuesday Mirfield",
                 "Wednesday Spen Valley",
@@ -4144,7 +4147,6 @@
                 "peter crowther 21 - 12 jim barker",
                 "peter crowther 21 - 4 john harvey",
                 "peter crowther 21 - 14 derek harding",
-                "peter crowther 21 - 14 ryan lynch",
                 "peter crowther 12 - 21 ryan mitchell",
                 "peter crowther 21 - 11 keith bissell",
                 "peter crowther 11 - 21 andrew walker",
@@ -5686,6 +5688,6 @@
             ]
         }
     },
-    "lastUpdated": "17/08/2024",
+    "lastUpdated": "18/08/2024",
     "statsYear": "2024"
 }

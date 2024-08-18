@@ -4020,9 +4020,9 @@
             }
         },
         "paul leonard": {
-            "totalAgg": 1190,
-            "totalAggAgainst": 984,
-            "availableAgg": 1408,
+            "totalAgg": 1211,
+            "totalAggAgainst": 998,
+            "availableAgg": 1429,
             "availablePairsAgg": 631,
             "availableHomeAgg": 665,
             "availableAwayAgg": 607,
@@ -4042,7 +4042,7 @@
             "homeLosses": 6,
             "awayWins": 12,
             "awayLosses": 15,
-            "cupWins": 5,
+            "cupWins": 6,
             "cupLosses": 1,
             "pairWins": 14,
             "pairLosses": 12,
@@ -4052,7 +4052,7 @@
             "pairAwayLosses": 9,
             "pairCupWins": 2,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 63,
+            "totalGamesPlayed": 64,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -4104,6 +4104,7 @@
                 "Wednesday Pairs AireWharfe",
                 "Wednesday Pairs AireWharfe",
                 "Saturday Leeds (A)",
+                "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
@@ -4239,7 +4240,8 @@
                 "paul leonard 21 - 9 carl birkin",
                 "paul leonard 21 - 15 bill lovett",
                 "paul leonard 21 - 19 peter nicholson",
-                "paul leonard 21 - 11 christine glynn"
+                "paul leonard 21 - 11 christine glynn",
+                "paul leonard 21 - 14 ryan lynch"
             ],
             "monday combined leeds": {
                 "games": 15,
@@ -4277,15 +4279,15 @@
                 "aggDiff": 9
             },
             "saturday leeds (b)": {
-                "games": 13,
-                "wins": 12,
-                "aggDiff": 100
+                "games": 14,
+                "wins": 13,
+                "aggDiff": 107
             }
         },
         "peter crowther": {
-            "totalAgg": 292,
-            "totalAggAgainst": 204,
-            "availableAgg": 336,
+            "totalAgg": 271,
+            "totalAggAgainst": 190,
+            "availableAgg": 315,
             "availablePairsAgg": 0,
             "availableHomeAgg": 147,
             "availableAwayAgg": 105,
@@ -4305,7 +4307,7 @@
             "homeLosses": 0,
             "awayWins": 3,
             "awayLosses": 2,
-            "cupWins": 2,
+            "cupWins": 1,
             "cupLosses": 2,
             "pairWins": 0,
             "pairLosses": 0,
@@ -4315,7 +4317,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 16,
+            "totalGamesPlayed": 15,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -4331,8 +4333,7 @@
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
-                "Tuesday Vets Leeds",
-                "Saturday Leeds (B)"
+                "Tuesday Vets Leeds"
             ],
             "pairsPartners": [],
             "winningPairsPartners": [],
@@ -4352,8 +4353,7 @@
                 "peter crowther 21 - 4 david lyons",
                 "peter crowther 21 - 12 jim barker",
                 "peter crowther 21 - 4 john harvey",
-                "peter crowther 21 - 14 derek harding",
-                "peter crowther 21 - 14 ryan lynch"
+                "peter crowther 21 - 14 derek harding"
             ],
             "monday combined leeds": {
                 "games": 0,
@@ -4391,9 +4391,9 @@
                 "aggDiff": 0
             },
             "saturday leeds (b)": {
-                "games": 1,
-                "wins": 1,
-                "aggDiff": 7
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
             }
         },
         "phil sutcliffe": {
@@ -6255,6 +6255,6 @@
             ]
         }
     ],
-    "lastUpdated": "17/08/2024",
+    "lastUpdated": "18/08/2024",
     "statsYear": "2024"
 }
