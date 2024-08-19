@@ -123,10 +123,12 @@ function CombinedTeamStats(props) {
         return (
             // TODO these aren't centered
             <div className="center" id="combined-team-win-losses">
-                <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
+                <Row>
                     <h3>GAMES PLAYED</h3>
                     <p>{totalGames}</p>
-                    <h3>WINS & LOSSES</h3>
+                </Row>
+                <h3>WINS & LOSSES</h3>
+                <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
                     <Col>
                         <div style={{ width: '90%' }}>
                             <h4>TOTAL</h4>
