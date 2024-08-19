@@ -80,33 +80,6 @@ function CombinedTeamStats(props) {
     } else {
         return <p>No games played</p>;
     }
-
-    if (totalGames > 0) {
-        return (
-            <div id="combined-team-win-losses">
-                <Pie data={data} />
-
-                <StatsTableDisplay
-                    totalGames={totalGames}
-                    totalWins={totalWins}
-                    totalLosses={totalLosses}
-                    totalDraws={totalDraws}
-                    agg={combinedAgg}
-                    opponentAgg={combinedOpponentAgg}
-                    homeWins={combinedHomeWins}
-                    awayWins={combinedAwayWins}
-                    cupWins={combinedCupWins}
-                    homeLosses={combinedHomeLosses}
-                    awayLosses={combinedAwayLosses}
-                    cupLosses={combinedCupLosses}
-                    homeDraws={combinedHomeDraws}
-                    awayDraws={combinedAwayDraws}
-                />
-            </div>
-        );
-    } else {
-        return <p>No games played</p>;
-    }
 }
 
 export default CombinedTeamStats;
