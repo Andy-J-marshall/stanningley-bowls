@@ -1,5 +1,5 @@
 === Leeds & District (Mon. Combined) 2024
-=== League Report (as of Mon 19th Aug)
+=== League Report (as of Tue 20th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 16th Sep
@@ -219,6 +219,7 @@
  Time           Mon 19th Aug                                                            
 -------------------------------------------------------------------------------------------------------
  6:15pm  Western Flatts    14    72   v.   Rothwell BC A     27   118     
+ 6:15pm  New Farnley A     21    91   v.   Crossgates BC     22   109     
  6:15pm  New Wortley       11    69   v.   Stanningley       30   126     
  6:15pm  Rothwell BC B     19    95   v.   Gildersome        23   106     
  6:15pm  Harehills         20   100   v.   Garforth C C      27   117     
@@ -232,13 +233,13 @@
   1.  Rothwell BC A     19   17    2    505
   2.  Whitkirk A        19   14    4    469
   3.  Stanningley       20   15    5    468
-  4.  Garforth C C      20   10   10    443
-  5.  Crossgates BC     17   14    3    435
+  4.  Crossgates BC     18   15    3    457
+  5.  Garforth C C      20   10   10    443
   6.  Harehills         20   12    8    435
   7.  Gildersome        20   10   10    411
   8.  Meanwood A        20    6   13    381
   9.  New Wortley       20    7   12    377
- 10.  New Farnley A     19    4   15    334
+ 10.  New Farnley A     20    4   16    355
  11.  Rothwell BC B     19    4   14    328
  12.  Western Flatts    19    1   18    326
 
@@ -1701,6 +1702,19 @@ Joanna Rochester       Ellis Owen
          Points:   14           Points:    27
 
                             Mon 19th Aug
+    New Farnley A          Crossgates BC
+Paul Jagger        21  Chris Broughton     14
+Simon Lavan        21  Tom Smith           19
+Dave Taylor        21  Luke Bellamy        20
+Ryan Lynch         21  Peter Wilcox        14
+Keith Walker        0  Louie Taylor        21
+Bob Taylor             Mark Taylor           
+Emma Dixon          7  Lynn Wilcox         21
+Pat Skelton            Rachel Wilcox         
+      Aggregate:   91        Aggregate:   109
+         Points:   21           Points:    22
+
+                            Mon 19th Aug
      New Wortley            Stanningley
 Joe Aylesbury      13  Phil Sutcliffe      21
 Alan Collins        7  Jim Swailes         21
@@ -1732,10 +1746,10 @@ Jade Kerry         17  David Horsey        21
 Peter Simmons      16  Julie Matthews      21
 Laura Love         21  Stuart Cranston     12
 David Tinker       15  Rob Carroll         21
-Sharon Kerry       11  Neil Robinson       21
-David Smith            David Bisby           
-Nigel Rawlings     20  Joe Doughty         21
-Raymond Swallow        Phil Lodge            
+Sharon Kerry       11  Joe Doughty         21
+David Smith            Phil Lodge            
+Nigel Rawlings     20  David Bisby         21
+Raymond Swallow        Neil Robinson         
       Aggregate:  100        Aggregate:   117
          Points:   20           Points:    27
 
