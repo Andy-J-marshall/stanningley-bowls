@@ -23,7 +23,7 @@ function StatsTableDisplay(props) {
     const cupGames = cupWins + cupLosses;
 
     return (
-        <div className="center table" style={{ width: '98%' }}>
+        <div className="center table">
             <Table striped bordered hover>
                 <thead>
                     <tr>

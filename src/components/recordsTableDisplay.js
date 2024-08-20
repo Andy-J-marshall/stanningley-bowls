@@ -14,7 +14,7 @@ function RecordsTableDisplay(props) {
     const bestAveragePlayer = props.bestAveragePlayer;
 
     return (
-        <div className="center" style={{ width: '97%' }}>
+        <div className="center" style={{ width: '99%' }}>
             {day && (
                 <div>
                     <br />

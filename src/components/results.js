@@ -54,7 +54,7 @@ function Results(props) {
 
     if (resultsFound) {
         return (
-            <div className="center" id="result">
+            <div style={{ width: '99%' }} className="center" id="result">
                 <YearSelectDropdown
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
@@ -63,7 +63,7 @@ function Results(props) {
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
-                            <div className="teamResult" key={idx}>
+                            <div key={idx}>
                                 <h3 style={{ paddingTop: '1rem' }}>
                                     {resultTeam.day.toUpperCase()}
                                 </h3>
