@@ -1,5 +1,5 @@
 === AireDale & Wharfedale (Mon. Evening) 2024
-=== League Report (as of Mon 19th Aug)
+=== League Report (as of Tue 20th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 26th Aug
@@ -687,6 +687,7 @@
   6:15pm  Skipton Craven                   18   191   v.   Burley in Wharfedale A           12   168                            
   6:15pm  Farsley B                         7   145   v.   Pudsey A                         23   191                            
   6:15pm  Cross Roads                      18   190   v.   Guiseley A                       12   169                            
+  6:15pm  Rufford A                        11   175   v.   Farsley A                        19   190                            
   6:15pm  Pudsey B                          9   163   v.   Ilkley A                         21   195                            
 --------------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Mon 19th Aug                                      Division 2                                                     
@@ -719,9 +720,9 @@
 ====  =======================  ===  ===  ===  =====  
   1.  Pudsey A                  18   12    5    343
   2.  Guiseley A                18   12    4    339
-  3.  Rufford A                 17   10    7    313
-  4.  Skipton Craven            18   11    6    301
-  5.  Farsley A                 17   11    6    298
+  3.  Rufford A                 18   10    8    324
+  4.  Farsley A                 18   12    6    317
+  5.  Skipton Craven            18   11    6    301
   6.  Cross Roads               18   11    7    286
   7.  Ilkley A                  18   11    7    277
   8.  Burley in Wharfedale A    18    3   15    212
@@ -6289,6 +6290,22 @@ Neil Madden          10  Nick Bastow           21
           Points:    18             Points:    12
 
       Division 1               Mon 19th Aug
+       Rufford A                Farsley A
+Tony Beeden          12  Daniel Beardsworth'A' 21
+Martyn Benson        12  Andy Gilroy           21
+John Benson 'A'      18  Paul Jacques          21
+Andrew Haran         16  Stephen Gilroy        21
+David Kirkbright     21  Lee Wider             10
+David Norris         21  Duncan McPhail        20
+Debbie Kirkbright    19  Will Gilroy           21
+Tim Bennett          17  Chris Hight           21
+Daniel Teale'A'      18  Helen Gilroy          21
+Ryan Benson 'A'      21  Andy Wood             13
+       Aggregate:   175          Aggregate:   190
+           Games:     3              Games:     7
+          Points:    11             Points:    19
+
+      Division 1               Mon 19th Aug
        Pudsey B                  Ilkley A
 Sue Chadwick         16  Andy Thornton 'A'     21
 Hannah Leaf          16  Andrew Breare         21
@@ -6440,7 +6457,7 @@ Sue Bird              5  Joan Holden           21
 Bob Williams         21  Peter Brearley        14
 Linda Porter         21  Billy Hartley         13
 Billy Webb            8  David Samuel          21
-Stewart Sunman       21  Charles Holden        18
+Anne Mackman         21  Charles Holden        18
 Pam Wood             11  Neil Howlett          21
 Antonio Sanna        21  Neil Jameson          16
 Sabrina Piggott      21  Daniel Twist           9
