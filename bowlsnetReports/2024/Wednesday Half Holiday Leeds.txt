@@ -1,5 +1,5 @@
 === Leeds & District (Half Holiday) 2024
-=== League Report (as of Tue 20th Aug)
+=== League Report (as of Wed 21st Aug)
 
 
 === RESULTS: Wed 10th Apr to Wed 11th Sep
@@ -529,6 +529,28 @@
  Time                Wed 21st Aug                                    Div 1                                                
 -----------------------------------------------------------------------------------------------------------------------------------
          Holbeck Moor                            v.   Cross Flatts A                                             To Wed 14th Aug
+ 1:30pm  South Leeds Cons A           20    91   v.   Meanwood Park A            21   101                        
+ 1:30pm  Colton                       23   106   v.   Rothwell BC A              21   102                        
+-----------------------------------------------------------------------------------------------------------------------------------
+ Time                Wed 21st Aug                                    Div 2                                                
+-----------------------------------------------------------------------------------------------------------------------------------
+ 1:30pm  Gildersome A                 26   117   v.   Churwell Park              24   111                        
+ 1:30pm  Moor Allerton A              27   118   v.   Grove Road A               17    83                        
+ 1:30pm  Meanwood Park B              15    77   v.   Stanningley Park           28   121                        
+ 1:30pm  Harehills Park               27   119   v.   Pudsey Park A              14    70                        
+-----------------------------------------------------------------------------------------------------------------------------------
+ Time                Wed 21st Aug                                    Div 3                                                
+-----------------------------------------------------------------------------------------------------------------------------------
+ 1:30pm  Scatcherd Park A             23   104   v.   Gildersome B               16    77                        
+ 1:30pm  Whitkirk BC B                26   118   v.   Chapel Allerton            22   105                        
+ 1:30pm  Middleton Comm A             22   105   v.   Moor Allerton B            24   109                        
+-----------------------------------------------------------------------------------------------------------------------------------
+ Time                Wed 21st Aug                                    Div 4                                                
+-----------------------------------------------------------------------------------------------------------------------------------
+ 1:30pm  New Wortley A                27   116   v.   Scatcherd Park B           17    85                        
+ 1:30pm  Cranmore                     25   114   v.   Bramley Park               24   110                        
+ 1:30pm  Grove Road B                 20    95   v.   South Leeds Cons B         23   107                        
+ 1:30pm  Potternewton                 24   108   v.   Rothwell Park              22   103                        
 
 
 === Current LEAGUE TABLES
@@ -536,55 +558,55 @@
                               Matches     Pnts
  Pos  Team                  Pl    W    L    For
 ====  ===================  ===  ===  ===  =====  
-  1.  Rothwell BC B         13   10    3    322
-  2.  Meanwood Park A       13    8    4    317
-  3.  Whitkirk BC A         13    7    6    281
-  4.  Cross Flatts A        12    7    5    275
-  5.  Holbeck Moor          13    5    7    271
-  6.  Rothwell BC A         11    6    5    267
-  7.  South Leeds Cons A    13    3   10    242
-  8.  Colton                12    2    8    241
+  1.  Meanwood Park A       14    9    4    338
+  2.  Rothwell BC B         13   10    3    322
+  3.  Rothwell BC A         12    6    6    288
+  4.  Whitkirk BC A         13    7    6    281
+  5.  Cross Flatts A        12    7    5    275
+  6.  Holbeck Moor          13    5    7    271
+  7.  Colton                13    3    8    264
+  8.  South Leeds Cons A    14    3   11    262
 
 === Div 2
                               Matches     Pnts
  Pos  Team                  Pl    W    L    For
 ====  ===================  ===  ===  ===  =====  
-  1.  Moor Allerton A       15   12    2    370
-  2.  Stanningley Park      14   12    2    368
-  3.  Gildersome A          14    8    5    323
-  4.  Churwell Park         14    6    8    314
-  5.  Pudsey Park A         14    5    8    295
-  6.  Grove Road A          14    3    9    295
-  7.  Harehills Park        14    7    7    286
-  8.  Burley Park           14    2   12    276
-  9.  Meanwood Park B       13    5    7    271
+  1.  Moor Allerton A       16   13    2    397
+  2.  Stanningley Park      15   13    2    396
+  3.  Gildersome A          15    9    5    349
+  4.  Churwell Park         15    6    9    338
+  5.  Harehills Park        15    8    7    313
+  6.  Grove Road A          15    3   10    312
+  7.  Pudsey Park A         15    5    9    309
+  8.  Meanwood Park B       14    5    8    286
+  9.  Burley Park           14    2   12    276
 
 === Div 3
                               Matches     Pnts
  Pos  Team                  Pl    W    L    For
 ====  ===================  ===  ===  ===  =====  
-  1.  Chapel Allerton       12    8    2    300
-  2.  Scatcherd Park A      12   10    1    290
-  3.  Whitkirk BC B         13    7    5    289
-  4.  Methley               13    6    7    286
-  5.  Moor Allerton B       13    5    8    283
+  1.  Chapel Allerton       13    8    3    322
+  2.  Whitkirk BC B         14    8    5    315
+  3.  Scatcherd Park A      13   11    1    313
+  4.  Moor Allerton B       14    6    8    307
+  5.  Methley               13    6    7    286
   6.  Fearnville            13    7    5    273
-  7.  Middleton Comm A      12    2    8    228
-  8.  Gildersome B          12    1   10    197
+  7.  Middleton Comm A      13    2    9    250
+  8.  Gildersome B          13    1   11    213
 
 === Div 4
                               Matches     Pnts
  Pos  Team                  Pl    W    L    For
 ====  ===================  ===  ===  ===  =====  
-  1.  Rothwell Park         14   13    1    375
-  2.  Cranmore              15    8    7    328
-  3.  South Leeds Cons B    14    7    7    328
-  4.  Potternewton          14   11    3    312
-  5.  Bramley Park          14    6    8    296
-  6.  New Wortley A         13    7    6    284
-  7.  Pudsey Park B         14    5    9    267
-  8.  Grove Road B          14    2   12    264
-  9.  Scatcherd Park B      14    4   10    251
+  1.  Rothwell Park         15   13    2    397
+  2.  Cranmore              16    9    7    353
+  3.  South Leeds Cons B    15    8    7    351
+  4.  Potternewton          15   12    3    336
+  5.  Bramley Park          15    6    9    320
+  6.  New Wortley A         14    8    6    311
+  7.  Grove Road B          15    2   13    284
+  8.  Scatcherd Park B      15    4   11    268
+  9.  Pudsey Park B         14    5    9    267
 
 
 === FULL RESULTS: Wed 10th Apr to Wed 11th Sep
@@ -3383,5 +3405,148 @@ Malcolm Collinson     19  Michael Gomersall     21
 Alan Goodhall         14  Karl Dutton           21
         Aggregate:   103          Aggregate:   124
            Points:    21             Points:    29
+
+         Div 1                  Wed 21st Aug
+   South Leeds Cons A         Meanwood Park A
+David Brooke          15  Mick Gregory          21
+Reece Pratt           21  Tina Howard           14
+Joe Adams             21  Karen Portman          9
+Chloe Grant            7  Jeff Blackburn        21
+Tim Newton            21  Steve Portman         15
+Bob Emerson            6  Ian Howard            21
+        Aggregate:    91          Aggregate:   101
+           Points:    20             Points:    21
+
+         Div 1                  Wed 21st Aug
+         Colton                Rothwell BC A
+David Clarkson        15  Alan Box              21
+Gary Mahoney          12  Phil Wilsher          21
+Jack Render           21  David Smith           14
+Michael Noble         21  Geoff Newbould         9
+Andrea Ryder          16  David Kaye            21
+Tony Ward             21  Gareth Gidman         16
+        Aggregate:   106          Aggregate:   102
+           Points:    23             Points:    21
+
+         Div 2                  Wed 21st Aug
+      Gildersome A             Churwell Park
+Harvey Lockwood       18  Sue Harrison          21
+Tony Morris           21  Dawn Peters           20
+Linda Gaunt           21  Glen Scott            16
+Diane Hales           17  Mick Harrison         21
+David Norton          19  Kath Andrews          21
+Kevin Smales          21  Stewart Wardlaw       12
+        Aggregate:   117          Aggregate:   111
+           Points:    26             Points:    24
+
+         Div 2                  Wed 21st Aug
+    Moor Allerton A             Grove Road A
+Keith Harbage         21  Lynne Mattison        20
+Martin Kaitcer        21  John West              3
+Paul Shafar           21  Ray Mattison          12
+Richard Mansell       15  Peter Allanson        21
+Geoff West            21  Tony Boyes             6
+John Alper            19  Martin Murdoch        21
+        Aggregate:   118          Aggregate:    83
+           Points:    27             Points:    17
+
+         Div 2                  Wed 21st Aug
+    Meanwood Park B           Stanningley Park
+Julie Keightley       21  Alyssa Randell        16
+John King             19  Neil Porter           21
+John Hindle            9  David Eaton           21
+Ian Macfarlaine        8  Steve Gardner         21
+Rory Bligh            10  Malvin Miller         21
+Paul Dishman          10  Andy Waller           21
+        Aggregate:    77          Aggregate:   121
+           Points:    15             Points:    28
+
+         Div 2                  Wed 21st Aug
+     Harehills Park            Pudsey Park A
+Maurice Sykes         14  Elaine Hill           21
+Peter Simmons         21  Brian Stevens         15
+Raymond Swallow       21  Dennis Walters         7
+David Clarke          21  Calum Birkin           5
+David Smith           21  Carl Birkin           11
+Laura Love            21  Frank Lindsay         11
+        Aggregate:   119          Aggregate:    70
+           Points:    27             Points:    14
+
+         Div 3                  Wed 21st Aug
+    Scatcherd Park A            Gildersome B
+Marilyn Robinson      21  Bev Farrar             3
+Geoff Fitth            7  Douglas Cooper        21
+Kevin Taylor          21  Frank Tempest          4
+Joan Middleton        19  Neil Schofield        21
+Jeff Holt             21  Frank Hales            7
+Ray Ball              15  Simon Hampshaw        21
+        Aggregate:   104          Aggregate:    77
+           Points:    23             Points:    16
+
+         Div 3                  Wed 21st Aug
+     Whitkirk BC B            Chapel Allerton
+Pauline Farrar        17  Andrew Paxton         21
+Kevin Collins         17  Graham Pickles        21
+Pamela Stevenson      21  Adrienne Blackwell    14
+Jenny Mullins         21  Royce Jackson         18
+John Hardwick         21  Alex McSheehy         18
+Martin Costello       21  Chris Jones           13
+        Aggregate:   118          Aggregate:   105
+           Points:    26             Points:    22
+
+         Div 3                  Wed 21st Aug
+    Middleton Comm A          Moor Allerton B
+Barbara Ragan         17  Tim Milner            21
+Malcolm Cameron       21  Ian Lee               17
+Terry Maher           17  George Ramsden        21
+Malcolm Hallas        21  Stephen Lee            8
+Brian Ragan           10  Ian Franklin          21
+Christine Glynn       19  Mike Gould            21
+        Aggregate:   105          Aggregate:   109
+           Points:    22             Points:    24
+
+         Div 4                  Wed 21st Aug
+     New Wortley A            Scatcherd Park B
+Keith Sellars         21  Ken Dunning           20
+Cliff Pitts           21  Michael Geary         11
+Angela Morley         21  Derek Ludlam          10
+Beryl Wainman         11  Kevin Chadwick        21
+Danny Dawson          21  Ken McRae             20
+Stuart Reardon        21  Roy Mitchell           3
+        Aggregate:   116          Aggregate:    85
+           Points:    27             Points:    17
+
+         Div 4                  Wed 21st Aug
+        Cranmore                Bramley Park
+Ray Watson            21  Hugh Callard          18
+Philip Marshall       11  Keith Davison         21
+Harry Gillett         20  Shirley Allman        21
+Jeff Higgins          21  Peter Richie          13
+Peter Nicholson       21  Bob Davison           16
+Robert Pearson        20  Jeff Allman           21
+        Aggregate:   114          Aggregate:   110
+           Points:    25             Points:    24
+
+         Div 4                  Wed 21st Aug
+      Grove Road B           South Leeds Cons B
+Lyn Carr              13  Alan Goodhall         21
+Pat Harrison          21  Barbara Wherrett      16
+Sylvia Bartlett        9  Janet Stockdale       21
+Bev Shillito          21  Mal Stockdale         17
+Ian Stavely           10  Neville Salmon        21
+John Carr             21  Malcolm Collinson     11
+        Aggregate:    95          Aggregate:   107
+           Points:    20             Points:    23
+
+         Div 4                  Wed 21st Aug
+      Potternewton             Rothwell Park
+Gail Schofield        21  Martin Atkinson        9
+Frank Powell          14  Diane Gomersal        21
+David Curland         21  David Wilson          19
+David Miller          21  Michael Mason         15
+Phillip Schofield     21  Michael Gomersall     18
+Alan Smith            10  Karl Dutton           21
+        Aggregate:   108          Aggregate:   103
+           Points:    24             Points:    22
 
 
