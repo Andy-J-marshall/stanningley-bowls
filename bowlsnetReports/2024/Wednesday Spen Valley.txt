@@ -1,5 +1,5 @@
 === West Riding & Spen Valley 2024
-=== League Report (as of Thu 22nd Aug)
+=== League Report (as of Fri 23rd Aug)
 
 
 === RESULTS: Sat 30th Mar to Sun 29th Sep
@@ -961,6 +961,7 @@
 ------------------------------------------------------------------------------------------------------------------------
  Time               Wed 21st Aug                               Division 2                                
 ------------------------------------------------------------------------------------------------------------------------
+ 6:30pm  New Farnley - A            9   165   v.   Farsley                    1    94     
  7:00pm  Spen Victoria - B          7   154   v.   Mirfield Old Bank - B      3   116     
  7:00pm  Cleckheaton Sports - B     6   145   v.   Harold Club - B            4   131     
  6:30pm  Scatcherd Park             8   150   v.   Holbeck                    2   122     
@@ -1026,9 +1027,9 @@
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
   1.  Spen Victoria - B         18   15    3    133
-  2.  Shipley - B               18   14    4    120
-  3.  New Farnley - A           17   13    4    111
-  4.  Farsley                   17   10    5    103
+  2.  New Farnley - A           18   14    4    120
+  3.  Shipley - B               18   14    4    120
+  4.  Farsley                   18   10    6    104
   5.  Cleckheaton Sports - B    18    9    8     97
   6.  Harold Club - B           18    8   10     93
   7.  Pudsey BC - C             18    7   11     84
@@ -6343,7 +6344,7 @@ Jean Milner         21  Mel Blackburn       18
 Dave Taylor         19  Steve Kemp          21
 Roger Milner         9  Michael Griffiths   21
 David J Taylor      16  Paul Walker         21
-Andy Gardener       13  Rodney Allinson     21
+Andy Gardener       13  Lewis Pember        21
       Aggregate:   141        Aggregate:   138
          Points:     6           Points:     4
 
@@ -6918,6 +6919,19 @@ James Cosgrave      21  Gordon Johnson       7
 Gary Wike           21  John Bloomer         7
       Aggregate:   168        Aggregate:   103
          Points:    10           Points:     0
+
+      Division 2             Wed 21st Aug
+   New Farnley - A             Farsley
+Ryan Lynch          21  Peter Scott         12
+Andrew Thompson     21  Jim Swailes          9
+Simon Lavan         21  Richard Whitaker     6
+Paul Jagger         21  Stuart Brook         8
+Sophie Worrall      21  Peter Crowther      13
+Paul Wood           21  Graham Petty        14
+Harry Dixon         18  Ian Swinfield       21
+Ian Lynch           21  Duncan McPhail      11
+      Aggregate:   165        Aggregate:    94
+         Points:     9           Points:     1
 
       Division 2             Wed 21st Aug
   Spen Victoria - B     Mirfield Old Bank - B
