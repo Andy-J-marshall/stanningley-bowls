@@ -1,10 +1,9 @@
 import { Nav, Carousel } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import Supporters from './supporters';
+import Supporters from '../components/supporters';
 import Fixtures from './fixtures';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
-import fixturesImg from '../images/websiteImages/carousel-03.webp';
 import eventsImg from '../images/websiteImages/carousel-05.webp';
 import config from '../config';
 

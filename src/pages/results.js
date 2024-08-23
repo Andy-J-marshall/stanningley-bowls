@@ -1,5 +1,5 @@
 import { Table } from 'react-bootstrap';
-import YearSelectDropdown from './yearSelectDropdown';
+import YearSelectDropdown from '../components/yearSelectDropdown';
 import config from '../config';
 
 const teamName = config.teamNames.shortName.toLowerCase();
@@ -63,7 +63,7 @@ function Results(props) {
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
-                            <div key={idx}>
+                            <div key={idx} className='teamResult'>
                                 <h3 style={{ paddingTop: '1rem' }}>
                                     {resultTeam.day.toUpperCase()}
                                 </h3>

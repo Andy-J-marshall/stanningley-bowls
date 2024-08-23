@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import IndividualTeamStats from './individualTeamStats';
-import CombinedTeamStats from './combinedTeamStats';
-import TeamTabs from './teamTabs';
+import IndividualTeamStats from '../components/individualTeamStats';
+import CombinedTeamStats from '../components/combinedTeamStats';
+import TeamTabs from '../components/teamTabs';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
 

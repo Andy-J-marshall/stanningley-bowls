@@ -9,7 +9,7 @@ import PlayerStatsTeams from './playerStatsTeams';
 import PlayerStatsAggregates from './playerStatsAggregates';
 import PlayerStatsResults from './playerStatsResults';
 
-function Players(props) {
+function IndividualPlayerStats(props) {
     const player = props.player;
     const playersStats = props.playersStats;
     const name = props.name;
@@ -62,4 +62,4 @@ function Players(props) {
     }
 }
 
-export default Players;
+export default IndividualPlayerStats;

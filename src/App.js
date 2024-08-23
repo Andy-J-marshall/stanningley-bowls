@@ -1,23 +1,23 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import WebFont from 'webfontloader';
-import Home from './components/home';
+import Home from './pages/home';
 import Footer from './components/footer';
-import Membership from './components/membership';
+import Membership from './pages/membership';
 import Header from './components/header';
-import Contact from './components/contact';
-import Results from './components/results';
+import Contact from './pages/contact';
+import Results from './pages/results';
 import Navigation from './components/navigation';
-import Records from './components/records';
-import TeamStats from './components/teamStats';
-import TeamInfo from './components/teamInfo';
-import PlayerStats from './components/playerStats';
-import History from './components/history';
+import Records from './pages/records';
+import TeamStats from './pages/teamStats';
+import TeamInfo from './pages/teamInfo';
+import PlayerStats from './pages/playerStats';
+import History from './pages/history';
 import YearSelectDropdown from './components/yearSelectDropdown';
 import statsData from './statsData';
 import './app.css';
-import SocialInfo from './components/socialInfo';
-import Fixtures from './components/fixtures';
+import SocialInfo from './pages/socialInfo';
+import Fixtures from './pages/fixtures';
 
 const {
     allYearStats,

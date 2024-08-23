@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { ListGroup, Spinner } from 'react-bootstrap';
-import Players from './players';
-import PlayerStatSummary from './playerStatSummary';
-import PlayerStatsOptions from './playerStatsOptions';
-import AllTimePlayerStats from './allTimePlayerStats';
-import Search from './search';
+import IndividualPlayerStats from '../components/IndividualPlayerStats';
+import PlayerStatSummary from '../components/playerStatSummary';
+import PlayerStatsOptions from '../components/playerStatsOptions';
+import AllTimePlayerStats from '../components/allTimePlayerStats';
+import Search from '../components/search';
 import { collatePlayerStats } from '../helpers/playersHelper';
 import config from '../config';
 
@@ -162,13 +162,13 @@ function PlayerStats(props) {
         if (validPlayer) {
             return (
                 <ListGroup>
-                    <Players
+                    <IndividualPlayerStats
                         key={playerName}
                         player={playerName}
                         name={playerName}
                         playersStats={statsToUse}
                         showStatSummary={showStatSummary}
-                    ></Players>
+                    ></IndividualPlayerStats>
                 </ListGroup>
             );
         } else {
