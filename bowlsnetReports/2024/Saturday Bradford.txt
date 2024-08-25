@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sat 24th Aug)
+=== League Report (as of Sun 25th Aug)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -673,11 +673,13 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Shipley Club                     22   190   v.   Littlemoor S&SC 'A'               8   145     
   2:00pm  Farsley                          20   190   v.   Spen Victoria 'A'                10   165     
+  2:00pm  Wyke 'A'                         20   201   v.   Asa Briggs 'A'                   10   169     
 -------------------------------------------------------------------------------------------------------------------------------------------
   Time                  Sat 24th Aug                                  Division 2 (Godwin)                                 
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Littlemoor S&SC 'B'              17   170   v.   Rufford 'A'                      13   157     
   2:00pm  Clayton A                         9   157   v.   Brighouse Sports A               21   192     
+  2:00pm  Eccleshill 'A'                   19   186   v.   Harold Club 'A'                  11   162     
   2:00pm  Rastrick                         13   169   v.   Pudsey 'B'                       17   179     
   2:00pm  Hill Crest 'A'                   22   192   v.   Hove Edge 'A'                     8   156     
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -700,6 +702,7 @@
   Time                  Sat 24th Aug                              Division 5 (Haigh) 8 Player                             
 -------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Hipperholme & Lightcliffe 'B'    16   148   v.   Luddendenfoot                    12   137     
+ 12:00pm  Asa Briggs 'C'                   22   152   v.   New Greengates                    6   110     
   2:00pm  Brackenhill                      21   159   v.   Birkenshaw                        7   117     
   2:00pm  Harold Club 'B'                  15   145   v.   Bailiff Bridge                   13   137     
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -722,9 +725,9 @@
   4.  Cononley                         12    8    3    210
   5.  Shipley Club                     12    6    5    203
   6.  Guiseley 'A'                     12    7    5    191
-  7.  Asa Briggs 'A'                   12    2   10    127
-  8.  Farsley                          12    2   10    111
-  9.  Wyke 'A'                         11    2    7    106
+  7.  Asa Briggs 'A'                   13    2   11    137
+  8.  Wyke 'A'                         12    3    7    126
+  9.  Farsley                          12    2   10    111
 
 === Division 2 (Godwin)
                                          Matches     Pnts
@@ -732,14 +735,14 @@
 ====  ==============================  ===  ===  ===  =====  
   1.  Hill Crest 'A'                   14   13    1    283
   2.  Brighouse Sports A               14    9    5    245
-  3.  Eccleshill 'A'                   13    9    4    222
+  3.  Eccleshill 'A'                   14   10    4    241
   4.  Hove Edge 'A'                    14    7    7    215
   5.  Rufford 'A'                      14    8    6    215
   6.  Pudsey 'B'                       14    8    6    212
   7.  Rastrick                         14    3   11    177
   8.  Clayton A                        14    5    9    176
-  9.  Littlemoor S&SC 'B'              14    5    9    163
- 10.  Harold Club 'A'                  13    2   11    162
+  9.  Harold Club 'A'                  14    2   12    173
+ 10.  Littlemoor S&SC 'B'              14    5    9    163
 
 === Division 3 (Mellor)
                                          Matches     Pnts
@@ -776,12 +779,12 @@
  Pos  Team                             Pl    W    L    For
 ====  ==============================  ===  ===  ===  =====  
   1.  Luddendenfoot                    13    9    3    231
-  2.  Brackenhill                      13    7    5    186
-  3.  Hipperholme & Lightcliffe 'B'    12    8    4    185
-  4.  Asa Briggs 'C'                   12    6    5    177
+  2.  Asa Briggs 'C'                   13    7    5    199
+  3.  Brackenhill                      13    7    5    186
+  4.  Hipperholme & Lightcliffe 'B'    12    8    4    185
   5.  Bailiff Bridge                   13    5    7    165
   6.  Harold Club 'B'                  12    4    7    161
-  7.  New Greengates                   11    4    5    153
+  7.  New Greengates                   12    4    6    159
   8.  Birkenshaw                       12    4    8    143
   9.  Eccleshill 'C'                   12    4    7    139
 
@@ -6113,6 +6116,22 @@ Peter Scott         17  Ash Tattersley      21
       Aggregate:   190        Aggregate:   165
          Points:    20           Points:    10
 
+Division 1 (Naylor Pre       Sat 24th Aug
+       Wyke 'A'             Asa Briggs 'A'
+Gareth Metcalf      21  Jordan Brown 'B'    13
+Nigel Wormald       21  Jason Watters       17
+Nigel Swales        21  Michael Frost       11
+Daniel Barker       21  Andrew Heenan       10
+Martin Atkinson     21  Carl Smith          16
+Neil Tordoff 'A'    21  Malcolm Iles 'A'    18
+Ian Wilson 'A'      18  Kevin Burrage       21
+Chris Sowden        19  Scott Sansom        21
+Darren Hickey       18  Glen McCafferty     21
+Trevor Benn 'A'     20  Gary Woodhead       21
+          Games:     6            Games:     4
+      Aggregate:   201        Aggregate:   169
+         Points:    20           Points:    10
+
  Division 2 (Godwin)         Sat 24th Aug
  Littlemoor S&SC 'B'         Rufford 'A'
 Nicky Dewhirst      21  Allan Caine          7
@@ -6144,6 +6163,22 @@ Jack Summers         9  Robert Hopper       21
           Games:     3            Games:     7
       Aggregate:   157        Aggregate:   192
          Points:     9           Points:    21
+
+ Division 2 (Godwin)         Sat 24th Aug
+    Eccleshill 'A'         Harold Club 'A'
+Nicky Bastow 'A'    17  Stewart Firth       21
+Andy Haran          15  Paul Garside        21
+Ian Matthews 'B'    14  David Halligan      21
+John Griffin        14  Nicky Jagger        21
+Nicky Rooks         21  Andy Bairstow        7
+Mick Angus          21  Eddie Hill          20
+Neil Mylan 'A'      21  Martin Watson       15
+Paul Rooks          21  Andy Malone         10
+Mark Reynolds 'B'   21  Shaun Godfrey       10
+Ken Gilroy          21  Joe Mellor          16
+          Games:     6            Games:     4
+      Aggregate:   186        Aggregate:   162
+         Points:    19           Points:    11
 
  Division 2 (Godwin)         Sat 24th Aug
        Rastrick               Pudsey 'B'
@@ -6324,6 +6359,20 @@ David Healey        21  Julie Marsden       18
           Games:     4            Games:     4
       Aggregate:   148        Aggregate:   137
          Points:    16           Points:    12
+
+Division 5 (Haigh) 8 P       Sat 24th Aug
+    Asa Briggs 'C'          New Greengates
+Bob Hiley           21  James Burnett       15
+Michael Sansom      21  Sharon Queripel      9
+Lorraine Birch      21  Tom Sayer           13
+Alan Standing       21  Allan Smith         12
+Graham Heede        21  Steven Bussingham   10
+Neil Morritt         5  Chris J Burnett     21
+Donald Harrison     21  Vincent Bussingham  18
+Arthur Schofield    21  Keith Goodall       12
+          Games:     7            Games:     1
+      Aggregate:   152        Aggregate:   110
+         Points:    22           Points:     6
 
 Division 5 (Haigh) 8 P       Sat 24th Aug
      Brackenhill              Birkenshaw
