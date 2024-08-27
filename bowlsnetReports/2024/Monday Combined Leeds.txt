@@ -1,5 +1,5 @@
 === Leeds & District (Mon. Combined) 2024
-=== League Report (as of Mon 26th Aug)
+=== League Report (as of Tue 27th Aug)
 
 
 === RESULTS: Mon 8th Apr to Mon 16th Sep
@@ -232,16 +232,17 @@
  6:15pm  Garforth C C      30   126   v.   New Wortley       16    81     
  6:15pm  Stanningley       29   125   v.   New Farnley A     21   101     
  6:15pm  Gildersome        28   121   v.   Meanwood A        15    82     
+ 6:15pm  Rothwell BC A     28   122   v.   Whitkirk A        17    89     
 
 
 === Current LEAGUE TABLE
                           Matches     Pnts
  Pos  Team              Pl    W    L    For
 ====  ===============  ===  ===  ===  =====  
-  1.  Rothwell BC A     19   17    2    505
+  1.  Rothwell BC A     20   18    2    533
   2.  Stanningley       21   16    5    497
-  3.  Garforth C C      21   11   10    473
-  4.  Whitkirk A        19   14    4    469
+  3.  Whitkirk A        20   14    5    486
+  4.  Garforth C C      21   11   10    473
   5.  Harehills         21   13    8    459
   6.  Crossgates BC     18   15    3    457
   7.  Gildersome        21   11   10    439
@@ -1825,5 +1826,18 @@ Linda Gaunt         21  Julie Keightley    16
 Tracey Norton           Ian Macfarlane       
       Aggregate:   121        Aggregate:   82
          Points:    28           Points:   15
+
+                            Mon 26th Aug
+    Rothwell BC A            Whitkirk A
+Peter Burrows       21  S Cahill            7
+Mick Goodhall       21  Phil Cox           17
+Lyn Dye             17  G Hodder           21
+Michael Hill        21  P Hatch            12
+Gary Dennison       21  Andy Johnson       13
+Nicola Pearson          Jason Richards       
+Ellis Owen          21  Helen Johnson      19
+Katie Turner            Thomas Johnson       
+      Aggregate:   122        Aggregate:   89
+         Points:    28           Points:   17
 
 
