@@ -1,5 +1,5 @@
 === West Riding & Spen Valley 2024
-=== League Report (as of Tue 27th Aug)
+=== League Report (as of Thu 29th Aug)
 
 
 === RESULTS: Sat 30th Mar to Sun 29th Sep
@@ -990,6 +990,14 @@
 ------------------------------------------------------------------------------------------------------------------------
  7:00pm  Cleckheaton Sports - C     3   119   v.   Brighouse Sports - C       8   143     
 
+------------------------------------------------------------------------------------------------------------------------
+ Time               Wed 28th Aug                               Division 4                                
+------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Rastrick - B               7   144   v.   Spen Victoria - D          3    96     
+ 6:30pm  Drighlington               7   149   v.   Cleckheaton Sports - D     3   137     
+ 6:30pm  Gildersome - A             9   159   v.   Eccleshill - B             1    79     
+ 7:00pm  Cleckheaton Sports - F     9   164   v.   Gildersome - B             1   126     
+
 
 === Current LEAGUE TABLES
 === Premier
@@ -1056,17 +1064,17 @@
                                   Matches     Pnts
  Pos  Team                      Pl    W    L    For
 ====  =======================  ===  ===  ===  =====  
-  1.  Gildersome - A            19   15    1    145
-  2.  Rastrick - B              19   16    2    143
-  3.  Harold Club - C           20   12    6    113
-  4.  Cleckheaton Sports - F    19   10    7    106
+  1.  Gildersome - A            20   16    1    154
+  2.  Rastrick - B              20   17    2    150
+  3.  Cleckheaton Sports - F    20   11    7    115
+  4.  Harold Club - C           20   12    6    113
   5.  Cleckheaton Sports - E    19    9   10    103
   6.  Heckmondwike - C          19    9    9    102
-  7.  Spen Victoria - D         19    9   10     97
-  8.  Cleckheaton Sports - D    19    7   11     88
-  9.  Eccleshill - B            19    4   13     72
- 10.  Gildersome - B            19    3   14     66
- 11.  Drighlington              19    4   15     59
+  7.  Spen Victoria - D         20    9   11    100
+  8.  Cleckheaton Sports - D    20    7   12     91
+  9.  Eccleshill - B            20    4   14     73
+ 10.  Gildersome - B            20    3   15     67
+ 11.  Drighlington              20    5   15     66
 
 
 === FULL RESULTS: Sat 30th Mar to Sun 29th Sep
@@ -7114,5 +7122,57 @@ Jack Glazzard       21  Simon Cresswell     12
 David Griffiths     10  Sarha Horsley       21
       Aggregate:   119        Aggregate:   143
          Points:     3           Points:     8
+
+      Division 4             Wed 28th Aug
+     Rastrick - B         Spen Victoria - D
+Graham Hall         18  Leigh Manton        21
+Jack Marsden        10  Laura Wood          21
+Michael Hollingdrake11  Justine Wood        21
+Michael Carter      21  Ken Spencer          4
+Paul Rimmer         21  Anthony Tolson       1
+Keith Richards      21  Archie Wood          7
+Gaye Wood           21  Derek Warriner      19
+Chris Stanley       21  Lexie Gould          2
+      Aggregate:   144        Aggregate:    96
+         Points:     7           Points:     3
+
+      Division 4             Wed 28th Aug
+     Drighlington       Cleckheaton Sports - D
+Vicky Haigh         21  Jacqui Bateson      14
+Andy Brooke         21  Michael Binns       13
+Karl Denville       21  Linda Potter        18
+Peter Thompson      21  Gillian Shore       10
+Andrew Haigh        17  Alan Holmes         21
+David Dowse         21  David Priestley     19
+Philip Keating      10  Chris Piercy        21
+Ken Oates           17  Elaine Binns        21
+      Aggregate:   149        Aggregate:   137
+         Points:     7           Points:     3
+
+      Division 4             Wed 28th Aug
+    Gildersome - A          Eccleshill - B
+David Norton        21  Dot Shaw             9
+Harvey Lockwood     21  Rachel Curtis        6
+Beveley Hampshaw    21  Jenson Gilroy        6
+Linda Gaunt         21  Brian Barker        18
+Graham Gaunt        21  Sally Goodall        7
+Kevin Smales        21  Sue Steward         10
+Ian Stocks          12  Sarah Harrison      21
+Alan Procter        21  Andrew Smith         2
+      Aggregate:   159        Aggregate:    79
+         Points:     9           Points:     1
+
+      Division 4             Wed 28th Aug
+Cleckheaton Sports - F      Gildersome - B
+Steve Smith         21  Frank Hales         11
+Richard Oldroyd     21  Kay Stewart         20
+Ryan Piercy         21  David Rawson        16
+Neil Gillan         21  Glenda Holmes       16
+Richard Simpson     21  Neil Schofield      17
+Ian Webb            21  David Holmes        14
+Nick Robinson       21  Michael Ross        11
+Mark Wright         17  Barbara Hall        21
+      Aggregate:   164        Aggregate:   126
+         Points:     9           Points:     1
 
 

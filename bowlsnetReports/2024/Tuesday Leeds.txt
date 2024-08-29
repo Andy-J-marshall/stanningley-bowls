@@ -1,5 +1,5 @@
 === Leeds & District (Tuesday) 2024
-=== League Report (as of Tue 27th Aug)
+=== League Report (as of Thu 29th Aug)
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -311,6 +311,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------
  6:45pm  Pudsey Park A              24   114   v.   Colton                      33   150                        
  6:45pm  Stanningley Park           40   168   v.   Pudsey Park B               16    89                        
+         Meanwood B                            v.   Garforth C C                                                To Tue 27th Aug
  6:45pm  Manston Pk                 39   165   v.   Gildersome B                18    98                        
  6:45pm  Middleton Comm             37   160   v.   Moor Allerton               19   102                        
 
@@ -470,11 +471,24 @@
  6:15pm  Colton                     34   151   v.   Moor Allerton               24   117                        
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Tue 27th Aug                                 Division 2                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 6:15pm  New Farnley B              28   133   v.   Gildersome A                35   154                        From Tue 3rd Sep
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time               Tue 27th Aug                                 Division 3                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 6:15pm  Meanwood B                 28   133   v.   Garforth C C                33   148                        From Tue 9th Jul
+---------------------------------------------------------------------------------------------------------------------------------------------------
  Time               Tue 27th Aug                               Cyril Worsnop                                                     
                                                                 Semi-Finals                                                      
 ---------------------------------------------------------------------------------------------------------------------------------------------------
  6:15pm  Stanningley Park (+30)    165         v.   Middleton Comm (+30)       183        On Gildersome         
  6:15pm  Meanwood A (scr)          161         v.   Cross Flatts (+20)         123        On Chapel Allerton    
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Time                Tue 3rd Sep                                 Division 2                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+         New Farnley B                         v.   Gildersome A                                                To Tue 27th Aug
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
  Time               Tue 10th Sep                                 Division 2                                                      
@@ -504,12 +518,12 @@
   1.  Holbeck Ltd A        17   14    3    558
   2.  Cross Flatts         17   12    5    533
   3.  Crossgates Rec A     17   10    6    525
-  4.  New Wortley A        17   10    6    518
-  5.  Sth Leeds Cons A     17    9    8    489
-  6.  Gildersome A         17    9    8    486
+  4.  Gildersome A         18   10    8    521
+  5.  New Wortley A        17   10    6    518
+  6.  Sth Leeds Cons A     17    9    8    489
   7.  Holt Park            17    8    8    485
-  8.  Chapel Allerton A    17    5   11    471
-  9.  New Farnley B        17    3   12    447
+  8.  New Farnley B        18    3   13    475
+  9.  Chapel Allerton A    17    5   11    471
  10.  Holbeck Moor         17    1   14    440
 
 === Division 3
@@ -521,10 +535,10 @@
   3.  Manston Pk           17   11    6    531
   4.  Colton               17    9    8    509
   5.  Moor Allerton        17    8    9    482
-  6.  Pudsey Park A        17    3   14    450
-  7.  Meanwood B           16    8    8    446
-  8.  Gildersome B         17    5   11    441
-  9.  Garforth C C         16    7    9    428
+  6.  Meanwood B           17    8    9    474
+  7.  Garforth C C         17    8    9    461
+  8.  Pudsey Park A        17    3   14    450
+  9.  Gildersome B         17    5   11    441
  10.  Pudsey Park B        17    3   13    407
 
 
@@ -3794,6 +3808,32 @@ James Watkins       21  Martin Kaitcer         8
 Stuart Birch         9  Ian Franllin          21
       Aggregate:   151          Aggregate:   117
          Points:    34             Points:    24
+
+      Division 2              Tue 27th Aug
+    New Farnley B             Gildersome A
+Hazel Goodall       12  David Norton          21
+Pat Skelton         21  Diane Hales           18
+Bob Taylor          21  Harvey Lockwood       19
+Roger Milner        19  Linda Gaunt           21
+Jean Milner         11  Beverley Hampshaw     21
+Keith Skelton       20  Kevin Smales          21
+Graham Davison       8  Ian Stocks            21
+John Ingham         21  Alan Procter          12
+      Aggregate:   133          Aggregate:   154
+         Points:    28             Points:    35
+
+      Division 3              Tue 27th Aug
+      Meanwood B              Garforth C C
+Julie Keightley     19  Craig White           21
+Ian Macfarlane      21  Andrew Grunwell       20
+Anne M Miller       14  Doughty Ian           21
+Oliver Devaney      19  Lee Prentice          21
+Jeff Blackburn      21  Phil Lodge            13
+Pat Blackburn       21  Ann Doughty           10
+David L Miller      12  Helen Dickinson       21
+Pat Prosser          6  Nigel Turner          21
+      Aggregate:   133          Aggregate:   148
+         Points:    28             Points:    33
 
     Cyril Worsnop             Tue 27th Aug
      Semi-Finals             On Gildersome
