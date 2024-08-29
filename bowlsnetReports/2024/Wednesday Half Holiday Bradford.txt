@@ -506,6 +506,7 @@
   Time             Wed 28th Aug                      Division 1 (Ed Foster)                           
 ------------------------------------------------------------------------------------------------------------------------
   1:30pm  Wyke                    0    51   v.   Pudsey 'A'             26   126     
+  1:30pm  Asa Briggs 'A'          7   100   v.   Clayton 'A'            19   123     
   1:30pm  Eccleshill 'A'         14    96   v.   Wibsey 'A'             12    95     
   1:30pm  Littlemoor S&SC 'A'    22   125   v.   Queensbury 'A'          4    80     
   1:30pm  Hove Edge              10   100   v.   Littlemoor S&SC 'B'    16   112     
@@ -539,9 +540,9 @@
   5.  Eccleshill 'A'         17    9    8    235
   6.  Littlemoor S&SC 'A'    17   10    6    232
   7.  Hove Edge              18    6   11    218
-  8.  Queensbury 'A'         18    5   12    203
-  9.  Clayton 'A'            16    6    9    192
- 10.  Asa Briggs 'A'         16    5    9    166
+  8.  Clayton 'A'            17    7    9    211
+  9.  Queensbury 'A'         18    5   12    203
+ 10.  Asa Briggs 'A'         17    5   10    173
  11.  Wyke                   17    2   15    120
 
 === Division 2 (Sheila Johnson)
@@ -3829,6 +3830,18 @@ Colin Fallows          2  Gary Wike          21
         Aggregate:    51        Aggregate:  126
             Games:     0            Games:    6
            Points:     0           Points:   26
+
+ Division 1 (Ed Foster)       Wed 28th Aug
+     Asa Briggs 'A'            Clayton 'A'
+Kevin Burrage         20  David Moore        21
+Steve Fleming         16  June Wilson        21
+Michael Sansom        11  Paul Gill          21
+Kath Sansom           18  Alan Peel          21
+Paula Graham          14  Chris Wilson       21
+Arthur Schofield      21  Peter Oliver       18
+        Aggregate:   100        Aggregate:  123
+            Games:     1            Games:    5
+           Points:     7           Points:   19
 
  Division 1 (Ed Foster)       Wed 28th Aug
      Eccleshill 'A'            Wibsey 'A'

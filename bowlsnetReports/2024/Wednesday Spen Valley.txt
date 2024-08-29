@@ -998,6 +998,11 @@
  6:30pm  Gildersome - A             9   159   v.   Eccleshill - B             1    79     
  7:00pm  Cleckheaton Sports - F     9   164   v.   Gildersome - B             1   126     
 
+------------------------------------------------------------------------------------------------------------------------
+ Time               Thu 29th Aug                               Division 4                                
+------------------------------------------------------------------------------------------------------------------------
+ 7:00pm  Cleckheaton Sports - E     6   128   v.   Heckmondwike - C           4   123     
+
 
 === Current LEAGUE TABLES
 === Premier
@@ -1068,8 +1073,8 @@
   2.  Rastrick - B              20   17    2    150
   3.  Cleckheaton Sports - F    20   11    7    115
   4.  Harold Club - C           20   12    6    113
-  5.  Cleckheaton Sports - E    19    9   10    103
-  6.  Heckmondwike - C          19    9    9    102
+  5.  Cleckheaton Sports - E    20   10   10    109
+  6.  Heckmondwike - C          20    9   10    106
   7.  Spen Victoria - D         20    9   11    100
   8.  Cleckheaton Sports - D    20    7   12     91
   9.  Eccleshill - B            20    4   14     73
@@ -7174,5 +7179,18 @@ Nick Robinson       21  Michael Ross        11
 Mark Wright         17  Barbara Hall        21
       Aggregate:   164        Aggregate:   126
          Points:     9           Points:     1
+
+      Division 4             Thu 29th Aug
+Cleckheaton Sports - E     Heckmondwike - C
+Callum Brook        21  Steven Sugden        8
+Carol Turner         8  Paul Cooper         21
+Joe Brook           21  Roger Jackson       11
+Rowena Oakey        18  Hayley Lay          21
+Lynn Seddon          9  George Tozer        21
+Graham Ward         21  Eddie Temple        10
+Geoff Akerman        9  Steven Kidd         21
+Mark Bailey         21  Kath Field          10
+      Aggregate:   128        Aggregate:   123
+         Points:     6           Points:     4
 
 
