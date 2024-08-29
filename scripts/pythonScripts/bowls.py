@@ -136,7 +136,7 @@ for team in teamDays:
                 leagueTableText = re.search(r"\d\.\s", row.lower())
                 if leagueTableText:
                     if teamNameUsedForLeague.lower() in row.lower():
-                        leaguePosition = leagueTableText[0].split('.')[0]
+                        leaguePosition = row.split('.')[0].strip()
                         currentLeaguePosition = int(leaguePosition)
                         break
 
