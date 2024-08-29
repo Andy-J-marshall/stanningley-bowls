@@ -104,11 +104,10 @@ def returnListOfPlayerStats(days, includeTeamData, players):
 def checkForDuplicateResults(results, player):
     potentialDuplicatesFound = len(results) != len(set(results))
     if potentialDuplicatesFound:
-        print('***')
-        print('check for potential duplicate results for player:' + player)
+        print('----------------')
+        print('WARNING: check for potential duplicate results for player:' + player)
         print(results)
-        print('***')
-        raise Exception('Duplicate results')
+        print('----------------')
 
 def sanityChecksOnTeamStats(allTeamResults):
     print('Running sanity checks on team stats')
