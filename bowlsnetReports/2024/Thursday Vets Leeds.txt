@@ -58,9 +58,9 @@
  Time              Thu 9th May                          Albert Stubley Cup                                           
                                                             Qtr-Finals                                               
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  Pudsey Park A          131         v.   Scatcherd Pk A         130        On Cross Flatts Pk       
- 1:30pm  Gildersome             132         v.   Stanningley Park A     148        On New Wortley           
- 1:30pm  Western Flatts         110         v.   Middleton Community    162        On Armley Park           
+ 1:30pm  Pudsey Park A                131   v.   Scatcherd Pk A               130  On Cross Flatts Pk       
+ 1:30pm  Gildersome                   132   v.   Stanningley Park A           148  On New Wortley           
+ 1:30pm  Western Flatts               110   v.   Middleton Community          162  On Armley Park           
 
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 16th May                             Division 1                                               
@@ -94,9 +94,9 @@
  Time              Thu 30th May                          Harrison Trophy                                             
                                                             Qtr-Finals                                               
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  Cross Flatts Pk        126         v.   Bramley Park           108        On Western Flatts        
- 1:30pm  New Armley             128         v.   West Royd Park         145        On Middleton Community   
- 1:30pm  New Wortley            158         v.   Pudsey Park B           98        On Scatcherd Park        
+ 1:30pm  Cross Flatts Pk              126   v.   Bramley Park                 108  On Western Flatts        
+ 1:30pm  New Armley                   128   v.   West Royd Park               145  On Middleton Community   
+ 1:30pm  New Wortley                  158   v.   Pudsey Park B                 98  On Scatcherd Park        
 
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 6th Jun                              Division 1                                               
@@ -144,8 +144,8 @@
  Time              Thu 27th Jun                         Albert Stubley Cup                                           
                                                            Semi-Finals                                               
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  Pudsey Park A          126         v.   Stanningley Park A     147        On Bramley Park          
- 1:30pm  Burley Prk             136         v.   Middleton Community    144        On West Royd Park        
+ 1:30pm  Pudsey Park A                126   v.   Stanningley Park A           147  On Bramley Park          
+ 1:30pm  Burley Prk                   136   v.   Middleton Community          144  On West Royd Park        
 
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 4th Jul                              Division 1                                               
@@ -179,7 +179,7 @@
  Time              Thu 18th Jul                          Harrison Trophy                                             
                                                            Semi-Finals                                               
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  New Wortley            149         v.   Cranmore BC            106        On Gildersome B.C.       
+ 1:30pm  New Wortley                  149   v.   Cranmore BC                  106  On Gildersome B.C.       
 
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 25th Jul                             Division 1                                               
@@ -245,13 +245,13 @@
  Time              Thu 22nd Aug                         Albert Stubley Cup                                           
                                                               Final                                                  
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  Stanningley Park A     130         v.   Middleton Community    138        On Burley Park           
+ 1:30pm  Stanningley Park A           130   v.   Middleton Community          138  On Burley Park           
 
 ------------------------------------------------------------------------------------------------------------------------------
  Time              Thu 29th Aug                          Harrison Trophy                                             
                                                               Final                                                  
 ------------------------------------------------------------------------------------------------------------------------------
- 1:30pm  West Royd Park          87         v.   New Wortley            166        On Cross Flatts Pk       
+ 1:30pm  West Royd Park                87   v.   New Wortley                  166  On Cross Flatts Pk       
 
 
 === Current LEAGUE TABLES
