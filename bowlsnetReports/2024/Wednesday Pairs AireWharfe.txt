@@ -522,6 +522,7 @@
   6:15pm  Meanwood Park B               23   104   v.   Menston B                      1    44                           
   6:15pm  Greenbottom                   18    96   v.   Holt Park                      6    67                           
   6:15pm  Stanningley Park              10    83   v.   Rawdon                        14    91                           
+  6:15pm  New Armley                    12    90   v.   Yeadon Park B                 12    88                           
   6:15pm  Horsforth Hall Park           23   104   v.   Adel B                         1    45                           
 
 
@@ -554,10 +555,10 @@
   5.  Yeadon Park A             22   12   10    294
   6.  Idle                      22   12    9    266
   7.  Holt Park                 22    9   11    257
-  8.  Yeadon Park B             21    8   12    216
+  8.  Yeadon Park B             22    8   12    228
   9.  Stanningley Park          22    5   17    200
  10.  Menston B                 22    8   14    200
- 11.  New Armley                21    3   18    152
+ 11.  New Armley                22    3   18    164
  12.  Adel B                    22    1   19    136
 
 
@@ -4419,6 +4420,20 @@ Harvey Leonard          Brian Minogue
       Aggregate:    83        Aggregate:   91
           Games:     2            Games:    2
          Points:    10           Points:   14
+
+      Division 2             Wed 4th Sep
+      New Armley            Yeadon Park B
+Walter Stockhill    23  David Poole        26
+David Gregory           Marian Poole         
+Carol Robinson      19  Shirley Nicholson  26
+David Hurd              Tim Nicholson        
+Matthew Rollinson   26  Sandra Taylor      10
+Fred Hargreaves         Trevor Taylor        
+Karl Chapman        22  Robert North       26
+Josie Burdon            Reid Haddow          
+      Aggregate:    90        Aggregate:   88
+          Games:     1            Games:    3
+         Points:    12           Points:   12
 
       Division 2             Wed 4th Sep
  Horsforth Hall Park           Adel B
