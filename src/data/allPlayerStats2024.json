@@ -1604,12 +1604,12 @@
             ]
         },
         "duncan mcphail": {
-            "totalAgg": 1520,
-            "totalAggAgainst": 1254,
-            "availableAgg": 1722,
+            "totalAgg": 1534,
+            "totalAggAgainst": 1275,
+            "availableAgg": 1743,
             "availablePairsAgg": 0,
             "availableHomeAgg": 777,
-            "availableAwayAgg": 777,
+            "availableAwayAgg": 798,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -1618,14 +1618,14 @@
             "totalHomeAggAgainst": 510,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 641,
-            "totalAwayAggAgainst": 651,
+            "totalAwayAgg": 655,
+            "totalAwayAggAgainst": 672,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 25,
             "homeLosses": 12,
             "awayWins": 17,
-            "awayLosses": 20,
+            "awayLosses": 21,
             "cupWins": 8,
             "cupLosses": 0,
             "pairWins": 0,
@@ -1636,7 +1636,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 82,
+            "totalGamesPlayed": 83,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1707,6 +1707,7 @@
                 "Monday AireWharfe",
                 "Monday AireWharfe",
                 "Tuesday AireWharfe",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -1806,7 +1807,8 @@
                 "duncan mcphail 16 - 21 jack bowes",
                 "duncan mcphail 13 - 21 rob scarr",
                 "duncan mcphail 21 - 13 mark regan",
-                "duncan mcphail 20 - 21 will gilroy"
+                "duncan mcphail 20 - 21 will gilroy",
+                "duncan mcphail 14 - 21 philip wilsdon"
             ]
         },
         "harvey leonard": {
@@ -4386,12 +4388,12 @@
             ]
         },
         "peter crowther": {
-            "totalAgg": 2038,
-            "totalAggAgainst": 1987,
-            "availableAgg": 2478,
+            "totalAgg": 2041,
+            "totalAggAgainst": 2008,
+            "availableAgg": 2499,
             "availablePairsAgg": 0,
             "availableHomeAgg": 1218,
-            "availableAwayAgg": 1134,
+            "availableAwayAgg": 1155,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -4400,14 +4402,14 @@
             "totalHomeAggAgainst": 904,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 825,
-            "totalAwayAggAgainst": 994,
+            "totalAwayAgg": 828,
+            "totalAwayAggAgainst": 1015,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 39,
             "homeLosses": 19,
             "awayWins": 16,
-            "awayLosses": 38,
+            "awayLosses": 39,
             "cupWins": 3,
             "cupLosses": 3,
             "pairWins": 0,
@@ -4418,7 +4420,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 118,
+            "totalGamesPlayed": 119,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -4526,6 +4528,7 @@
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -4660,7 +4663,8 @@
                 "peter crowther 18 - 21 will bedford",
                 "peter crowther 5 - 21 steve clamp",
                 "peter crowther 16 - 21 kevin wood",
-                "peter crowther 21 - 17 thomas cater"
+                "peter crowther 21 - 17 thomas cater",
+                "peter crowther 3 - 21 thomas hanson"
             ]
         },
         "phil sutcliffe": {
@@ -6250,6 +6254,6 @@
             ]
         }
     },
-    "lastUpdated": "07/09/2024",
+    "lastUpdated": "08/09/2024",
     "statsYear": "2024"
 }
