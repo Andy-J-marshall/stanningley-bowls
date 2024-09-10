@@ -1,5 +1,5 @@
 === Leeds & District (Tuesday) 2024
-=== League Report (as of Mon 9th Sep)
+=== League Report (as of Tue 10th Sep)
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -236,8 +236,10 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------
   Time              Tue 18th Jun                              Division 1                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------
+          Rothwell BC                         v.   Calverley YP                                             To Tue 10th Sep
   6:45pm  Churwell Park            31   140   v.   Chapel Street            28   132                        
   6:45pm  Roundhay Pk A            34   155   v.   Meanwood A               22   110                        
+          East End Park A                     v.   Saville Park                                             To Tue 10th Sep
 -----------------------------------------------------------------------------------------------------------------------------------------------
   Time              Tue 18th Jun                              Division 2                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -516,6 +518,11 @@
   6:15pm  Middleton Comm           33   148   v.   Stanningley Park         29   142                        
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+  Time              Tue 10th Sep                              Division 1                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------
+  6:15pm  Rothwell BC              36   156   v.   Calverley YP             19    98                        From Tue 18th Jun
+  6:15pm  East End Park A          28   129   v.   Saville Park             30   137                        From Tue 18th Jun
+-----------------------------------------------------------------------------------------------------------------------------------------------
   Time              Tue 10th Sep                              Division 2                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------
           Sth Leeds Cons A                    v.   New Farnley B                                            From Tue 18th Jun. To Tue 30th Jul
@@ -530,11 +537,11 @@
   2.  Chapel Street        16   11    5    520
   3.  Meanwood A           16    9    5    489
   4.  New Farnley A        15   10    4    480
-  5.  Churwell Park        16    4    9    444
-  6.  Saville Park         15    5    8    416
-  7.  Calverley YP         15    3    9    402
-  8.  Rothwell BC          14    6    6    388
-  9.  East End Park A      15    1   13    365
+  5.  Saville Park         16    6    8    446
+  6.  Churwell Park        16    4    9    444
+  7.  Rothwell BC          15    7    6    424
+  8.  Calverley YP         16    3   10    421
+  9.  East End Park A      16    1   14    393
 
 === Division 2
                              Matches     Pnts
@@ -4069,5 +4076,31 @@ Malcolm Cameron     21  Stuart Potter       17
 Barbara Ragan       14  Craig Clarkson      21
       Aggregate:   148        Aggregate:   142
          Points:    33           Points:    29
+
+      Division 1             Tue 10th Sep
+     Rothwell BC             Calverley YP
+Mick Goodhall       21  Lindsey Rosendale   10
+Peter Linley        21  Stephen Spurr       11
+John Ainsley        21  Brian Hodgson       12
+June Johnson        21  Paul Haigh           7
+David Bentley       18  Rory Bligh          21
+Katie Turner        21  Clifford Wheatley    4
+Ron Owen            12  Ricky Kearns        21
+Geoff Newbould      21  Roger French        12
+      Aggregate:   156        Aggregate:    98
+         Points:    36           Points:    19
+
+      Division 1             Tue 10th Sep
+   East End Park A           Saville Park
+Scott Sellars       21  Mark Hopps           8
+Josey Olivant       18  David Steel         21
+Steve Olivant       12  Ellis Owen          21
+Brian Berry         12  Gary Haley          21
+Paul Reynard        21  Peter Whipp         17
+Dave Smith           5  Lynne Hopps         21
+Sophie Olivant      19  Karen Portman       21
+Darran Baker        21  Liam Massey          7
+      Aggregate:   129        Aggregate:   137
+         Points:    28           Points:    30
 
 

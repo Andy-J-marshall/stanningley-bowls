@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Mon 9th Sep)
+=== League Report (as of Tue 10th Sep)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -785,6 +785,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 7th Sep                                   Division 3 (Mellor)                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------
+          Rufford 'B'                                  v.   Wyke 'B'                                       To Tue 10th Sep
   2:30pm  Asa Briggs 'B'                    19   181   v.   Wibsey                            11   159     
   2:30pm  Eccleshill 'B'                    18   193   v.   Hipperholme & Lightcliffe 'A'     12   175     
   2:00pm  Spen Victoria 'B'                 24   188   v.   Guiseley 'B'                       6   120     
@@ -816,6 +817,11 @@
   Time                   Sun 8th Sep                                   Division 3 (Mellor)                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Spen Victoria 'B'                 20   178   v.   Wibsey                            10   139     From Sat 21st Sep
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+  Time                   Tue 10th Sep                                  Division 3 (Mellor)                                  
+---------------------------------------------------------------------------------------------------------------------------------------------
+  6:00pm  Rufford 'B'                       23   197   v.   Wyke 'B'                           7   154     From Sat 7th Sep
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 21st Sep                                  Division 3 (Mellor)                                  
@@ -863,10 +869,10 @@
   4.  Eccleshill 'B'                   16    7    9    250
   5.  Asa Briggs 'B'                   16    8    8    238
   6.  Pudsey 'C'                       16    6    9    216
-  7.  Guiseley 'B'                     16    6   10    195
-  8.  Wibsey                           17    3   13    187
-  9.  Rufford 'B'                      15    4   11    176
- 10.  Wyke 'B'                         15    4   10    164
+  7.  Rufford 'B'                      16    5   11    199
+  8.  Guiseley 'B'                     16    6   10    195
+  9.  Wibsey                           17    3   13    187
+ 10.  Wyke 'B'                         16    4   11    171
 
 === Division 4 (Bartle) 8 Player
                                          Matches     Pnts
@@ -7408,5 +7414,21 @@ Peter Ellis         21  *No Player*          0
           Games:     6            Games:     4
       Aggregate:   178        Aggregate:   139
          Points:    20           Points:    10
+
+ Division 3 (Mellor)         Tue 10th Sep
+     Rufford 'B'               Wyke 'B'
+Cath New            21  John Winstanley     20
+Angela Burnam       21  Dominic Hanson      16
+David Waite         15  Richard Kerr        21
+Ioana Nister        14  Gerry Hird          21
+Alexander Waite     21  Michael Walton      17
+Dianne Teale        21  Colin Fallows        8
+Eileen Beck         21  Stephen Ward        14
+Glynn Goodyear      21  Vincent Kerr         7
+Val Grace           21  Nigel Swales        15
+Brian Teale         21  Matthew Hicks       15
+          Games:     8            Games:     2
+      Aggregate:   197        Aggregate:   154
+         Points:    23           Points:     7
 
 

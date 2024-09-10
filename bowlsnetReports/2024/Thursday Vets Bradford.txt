@@ -1,5 +1,5 @@
 === Bradford (Vets) 2024
-=== League Report (as of Mon 9th Sep)
+=== League Report (as of Tue 10th Sep)
 
 
 === RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -397,7 +397,7 @@
   Time             Thu 25th Jul                         Division Three                              
 ---------------------------------------------------------------------------------------------------------------------
   1:30pm  Calverley B           12   145   v.   Crowghyll Park B      16   149     
-  1:30pm  Bradford Moor          9   121   v.   Brackenhill           19   146     
+  1:30pm  Bradford Moor         10   121   v.   Brackenhill           18   136     
   1:30pm  Idle B                18   149   v.   New Greengates        10   125     
   1:30pm  Oakenshaw A           27   165   v.   Guiseley B             1    92     
   1:30pm  West Bradford B       26   162   v.   Royd House             2   102     
@@ -606,7 +606,7 @@
   Time             Thu 5th Sep                          Division Three                              
 ---------------------------------------------------------------------------------------------------------------------
   1:30pm  New Greengates        18   142   v.   West Bradford B       10   131     
-  1:30pm  Brackenhill           23   159   v.   Guiseley B             5   112     
+  1:30pm  Brackenhill           26   159   v.   Guiseley B             2    94     
   1:30pm  Crowghyll Park B       1    95   v.   Oakenshaw A           27   160     
           Royd House                       v.   Idle B                             To Fri 6th Sep
   1:30pm  Calverley B           17   141   v.   Bradford Moor         11   140     
@@ -670,9 +670,9 @@
   4.  Crowghyll Park B     17   11    6    267
   5.  Royd House           17    8    9    228
   6.  West Bradford B      17    7   10    226
-  7.  Guiseley B           17    6   11    202
-  8.  Bradford Moor        17    6   10    193
-  9.  Brackenhill          17    6   11    182
+  7.  Guiseley B           17    6   11    199
+  8.  Bradford Moor        17    6   10    194
+  9.  Brackenhill          17    6   11    184
  10.  Calverley B          17    5   12    171
 
 === Division Four ( 6 Players)
@@ -3724,10 +3724,10 @@ Martin Barraclough    6  Michael Feeley       21
 Alan Naylor          21  Bob Armitage         12
 Alan Farrow          21  Madeline Gamble      19
 Michael Jarvis       15  Kathy Wilford        21
-Mark Durrans         21  *A.N.Other*          10
-       Aggregate:   121         Aggregate:   146
+Mark Durrans         21  *A.N.Other*           0
+       Aggregate:   121         Aggregate:   136
            Games:     3             Games:     5
-          Points:     9            Points:    19
+          Points:    10            Points:    18
 
     Division Three            Thu 25th Jul
         Idle B               New Greengates
@@ -5338,14 +5338,14 @@ Alan Wright          21  Lesley Lalor         17
 Bob Armitage         18  Andrew Baxter        21
 John Howarth         21  Mo Jarvis             9
 Gordon McLennon      21  Norman Lickley       14
-Steve Hillam         21  *A.N.Other*          18
+Steve Hillam         21  *A.N.Other*           0
 Michael Feeley       21  Dave Kerton           8
 Madeline Gamble      15  Caroline Corbett     21
 Jackie Wilkinson     21  John Boyd             8
 Graham Wilkinson     21  Ralph Sissons        13
-       Aggregate:   159         Aggregate:   112
+       Aggregate:   159         Aggregate:    94
            Games:     6             Games:     2
-          Points:    23            Points:     5
+          Points:    26            Points:     2
 
     Division Three             Thu 5th Sep
    Crowghyll Park B            Oakenshaw A
