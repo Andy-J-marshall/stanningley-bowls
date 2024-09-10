@@ -1,5 +1,5 @@
 === Leeds & District (Tuesday Over 55s) 2024
-=== League Report (as of Mon 9th Sep)
+=== League Report (as of Tue 10th Sep)
 
 
 === RESULTS: Tue 2nd Apr to Tue 24th Sep
@@ -219,22 +219,31 @@
  1:30pm  Barwick BC              39   165   v.   Horsforth Woodside.     21   112                          
  1:30pm  Sth Lds Cons            34   153   v.   Western Flatts          25   120                          
 
+-----------------------------------------------------------------------------------------------------------------------------
+ Time              Tue 10th Sep                                                                                     
+-----------------------------------------------------------------------------------------------------------------------------
+ 1:30pm  Bramley Park            25   122   v.   Barwick BC              34   150                          
+ 1:30pm  Holbeck Moor            30   135   v.   Sth Lds Cons            19    93                          
+ 1:30pm  Stanningley Park        34   150   v.   Harehills Park A        26   127                          
+ 1:30pm  Gildersome              30   139   v.   Saville Park            32   148                          
+ 1:30pm  Horsforth Woodside.     38   163   v.   Western Flatts          20   101                          
+
 
 === Current LEAGUE TABLE
                                Matches     Pnts
  Pos  Team                   Pl    W    L    For
 ====  ====================  ===  ===  ===  =====  
-  1.  Harehills Park A       18   17    1    658
-  2.  Stanningley Park       17   15    2    620
-  3.  Saville Park           17   14    3    541
-  4.  Drighlington           19   10    8    517
-  5.  Gildersome             18   10    7    513
-  6.  Barwick BC             18    7   10    503
-  7.  Horsforth Woodside.    18    6   10    497
-  8.  Sth Lds Cons           19    3   15    458
-  9.  Holbeck Moor           17    5   12    454
- 10.  Bramley Park           18    4   14    417
- 11.  Western Flatts         17    4   13    401
+  1.  Harehills Park A       19   17    2    684
+  2.  Stanningley Park       18   16    2    654
+  3.  Saville Park           18   15    3    573
+  4.  Gildersome             19   10    8    543
+  5.  Barwick BC             19    8   10    537
+  6.  Horsforth Woodside.    19    7   10    535
+  7.  Drighlington           19   10    8    517
+  8.  Holbeck Moor           18    6   12    484
+  9.  Sth Lds Cons           20    3   16    477
+ 10.  Bramley Park           19    4   15    442
+ 11.  Western Flatts         18    4   14    421
 
 
 === FULL RESULTS: Tue 2nd Apr to Tue 24th Sep
@@ -1628,5 +1637,70 @@ Paul Sittlinton     16  Margaret McPhail      21
 Dave Brooke         21  Anne Lucas            14
       Aggregate:   153          Aggregate:   120
          Points:    34             Points:    25
+
+                              Tue 10th Sep
+     Bramley Park              Barwick BC
+John McDermott      13  Jane Boyd             21
+Malcolm Woodcock     4  Chris Boyd            21
+Peter Caine         21  Jack Finister         18
+Jeffrey Allman      21  Jeff Binns            18
+Bob Davison         11  Margaret Finister     21
+Shirley Allman      16  David Wright          21
+Barry Palmer        21  Jennifer Dodgson       9
+Brian Fish          15  Derek Harding         21
+      Aggregate:   122          Aggregate:   150
+         Points:    25             Points:    34
+
+                              Tue 10th Sep
+     Holbeck Moor             Sth Lds Cons
+Carl Mahon          10  Barbara Wherret       21
+Jim Barker          21  Mal Stockdale          5
+John Harvey         21  David Kellett          8
+Steve Brown         21  Malcolm Whipp          7
+Steve Milton        21  Janet Stockdale        3
+George Ellener       4  Derek McCormack       21
+Julie Mathews       21  Bob Emerson            7
+Albert Beggs        16  Dave Brooke           21
+      Aggregate:   135          Aggregate:    93
+         Points:    30             Points:    19
+
+                              Tue 10th Sep
+   Stanningley Park         Harehills Park A
+Peter Crowther      21  Tony Groves            7
+Steve Gardner       21  Graham Hodder         13
+Andy Waller         21  Brian Thompson        17
+Paul Bowes          21  Jim Jordan            10
+Duncan McPhail      21  Paul Lawson           17
+Jim Moorin          18  Paul Hatch            21
+Stewart Watson       8  Ralph Taylor          21
+John Armitage       19  Tony Green            21
+      Aggregate:   150          Aggregate:   127
+         Points:    34             Points:    26
+
+                              Tue 10th Sep
+      Gildersome              Saville Park
+Tony Morris         20  Mark Hopps            21
+David Norton        21  Sylvia Bickerdike     11
+Simon Hampshaw      21  Lynne Hopps           19
+Graham Gaunt        21  John Peacock          17
+Kevin Smales        21  Jack Sharp            17
+Frank Hales         12  David Beck            21
+Harvey Lockwood     13  Graham Bickerdike     21
+Linda Gaunt         10  Gary Haley            21
+      Aggregate:   139          Aggregate:   148
+         Points:    30             Points:    32
+
+                              Tue 10th Sep
+ Horsforth Woodside.         Western Flatts
+John King           21  Gary Reddyhoff        12
+David Lyons         21  Lillian Pickles        3
+Paul Stoyles        21  Andrew Ash             1
+Stuart Tennant      21  Susan Reddyhoff       13
+Graham Hey          19  Anne Lucas            21
+Carol Matthews      21  Margaret McPhail      12
+Julie Keightley     18  Glennys Ash           21
+Ian Tindal          21  Granville Stoyles     18
+      Aggregate:   163          Aggregate:   101
+         Points:    38             Points:    20
 
 
