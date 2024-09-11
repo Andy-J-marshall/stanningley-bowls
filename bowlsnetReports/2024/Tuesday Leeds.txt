@@ -1,5 +1,5 @@
 === Leeds & District (Tuesday) 2024
-=== League Report (as of Tue 10th Sep)
+=== League Report
 
 
 === RESULTS: Tue 9th Apr to Wed 11th Sep
@@ -297,6 +297,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------
   Time               Tue 9th Jul                              Division 1                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------
+          Rothwell BC                         v.   New Farnley A                                            To Wed 11th Sep
   6:45pm  Roundhay Pk A            39   166   v.   Chapel Street            21   115                        
           East End Park A                     v.   Meanwood A                                               To Fri 9th Aug
   6:45pm  Churwell Park            25   123   v.   Saville Park             34   153                        
@@ -526,6 +527,16 @@
   Time              Tue 10th Sep                              Division 2                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------
           Sth Leeds Cons A                    v.   New Farnley B                                            From Tue 18th Jun. To Tue 30th Jul
+-----------------------------------------------------------------------------------------------------------------------------------------------
+  Time              Tue 10th Sep                             Cyril Worsnop                                                   
+                                                                 Final                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------
+  6:15pm  Middleton Comm       (+30)    114   v.   Meanwood A           (scr)    144  On Holbeck Ltd        
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+  Time              Wed 11th Sep                              Division 1                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------
+  6:15pm  Rothwell BC              38   162   v.   New Farnley A            26   129                        From Tue 9th Jul
 
 
 === Current LEAGUE TABLES
@@ -535,11 +546,11 @@
 ====  ==================  ===  ===  ===  =====  
   1.  Roundhay Pk A        16   13    3    526
   2.  Chapel Street        16   11    5    520
-  3.  Meanwood A           16    9    5    489
-  4.  New Farnley A        15   10    4    480
-  5.  Saville Park         16    6    8    446
-  6.  Churwell Park        16    4    9    444
-  7.  Rothwell BC          15    7    6    424
+  3.  New Farnley A        16   10    5    506
+  4.  Meanwood A           16    9    5    489
+  5.  Rothwell BC          16    8    6    462
+  6.  Saville Park         16    6    8    446
+  7.  Churwell Park        16    4    9    444
   8.  Calverley YP         16    3   10    421
   9.  East End Park A      16    1   14    393
 
@@ -4102,5 +4113,32 @@ Sophie Olivant      19  Karen Portman       21
 Darran Baker        21  Liam Massey          7
       Aggregate:   129        Aggregate:   137
          Points:    28           Points:    30
+
+    Cyril Worsnop            Tue 10th Sep
+        Final               On Holbeck Ltd
+    Middleton Comm            Meanwood A
+Malcolm Cameron      4  Chris Daysh         21
+Les Oddy             3  Michael Gregory     21
+Mark Aspin           4  Douglas Blair       21
+Barbara Ragan       10  Andy Swain          21
+Darren Cookson      21  David Milnes         8
+Malcolm Hallas      21  Lynda Heath         10
+Mick Hall           12  Simon Walder        21
+Christine Glyn       9  Ian Howard          21
+       Handicap:   +30         Handicap:   Scr
+      Aggregate:   114        Aggregate:   144
+
+      Division 1             Wed 11th Sep
+     Rothwell BC            New Farnley A
+Gary Dennison       21  Simon Lavan         15
+Peter Burrows       18  Paul Wood           21
+Peter Linley        21  Andy Thompson        8
+Mick Goodhall       21  David Taylor        18
+David Bentley       21  Harry Dixon         12
+John Ainsley        21  Paul Jagger         20
+Katie Turner        18  Ryan Lynch          21
+Geoff Newbould      21  Ian Lynch           14
+      Aggregate:   162        Aggregate:   129
+         Points:    38           Points:    26
 
 
