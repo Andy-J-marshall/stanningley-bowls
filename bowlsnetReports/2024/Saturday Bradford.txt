@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Thu 12th Sep)
+=== League Report (as of Fri 13th Sep)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -144,7 +144,7 @@
  12:00pm  Guiseley 'C'                       7   113   v.   Bradford Moor                     21   161     
   2:00pm  Cleckheaton Sports 'B'            15   141   v.   West Bradford 'B'                 13   132     
   2:00pm  Clayton B                         21   154   v.   Tyersal                            7   113     
- 12:00pm  West Bradford 'C'                 18   131   v.   Bowling                           10   107     
+ 12:00pm  West Bradford 'C'                 21   152   v.   Bowling                            7   104     
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
   Time                   Sat 11th May                              Division 4 (Bartle) 8 Player                             
@@ -786,7 +786,7 @@
   Time                   Sat 7th Sep                                   Division 3 (Mellor)                                  
 ---------------------------------------------------------------------------------------------------------------------------------------------
           Rufford 'B'                                  v.   Wyke 'B'                                       To Tue 10th Sep
-  2:30pm  Asa Briggs 'B'                    19   181   v.   Wibsey                            11   159     
+  2:30pm  Asa Briggs 'B'                    13   160   v.   Wibsey                            17   174     
   2:30pm  Eccleshill 'B'                    18   193   v.   Hipperholme & Lightcliffe 'A'     12   175     
   2:00pm  Spen Victoria 'B'                 24   188   v.   Guiseley 'B'                       6   120     
   2:00pm  Hightown                          29   207   v.   Pudsey 'C'                         1    97     
@@ -867,11 +867,11 @@
   2.  Spen Victoria 'B'                17   15    1    327
   3.  Hipperholme & Lightcliffe 'A'    16   11    5    307
   4.  Eccleshill 'B'                   16    7    9    250
-  5.  Asa Briggs 'B'                   16    8    8    238
+  5.  Asa Briggs 'B'                   16    7    9    232
   6.  Pudsey 'C'                       16    6    9    216
   7.  Rufford 'B'                      16    5   11    199
   8.  Guiseley 'B'                     16    6   10    195
-  9.  Wibsey                           17    3   13    187
+  9.  Wibsey                           17    4   12    193
  10.  Wyke 'B'                         16    4   11    171
 
 === Division 4 (Bartle) 8 Player
@@ -911,9 +911,9 @@
   2.  Cleckheaton Sports 'B'           15   12    3    270
   3.  West Bradford 'B'                14    9    3    219
   4.  Bradford Moor                    14    7    7    217
-  5.  Bowling                          14    7    6    205
+  5.  Bowling                          14    7    6    202
   6.  Clayton B                        14    6    7    194
-  7.  West Bradford 'C'                14    4    9    169
+  7.  West Bradford 'C'                14    4    9    172
   8.  Guiseley 'C'                     14    2   10    123
   9.  Tyersal                          15    1   14    113
 
@@ -2117,11 +2117,11 @@ Jacqui Wood         21  Elaine Houlbrook    14
 Lesley Lalor        21  Brian Metcalfe      12
 Gerry Peel          21  Violet Rodgers       2
 Patrick McNally     21  Stuart Houlbrook    10
-Paul Wood            0  Christine Kilner    21
+Paul Wood           21  Christine Kilner    18
 Sheila Edden        17  Trevor Yeadon       21
-          Games:     5            Games:     3
-      Aggregate:   131        Aggregate:   107
-         Points:    18           Points:    10
+          Games:     6            Games:     2
+      Aggregate:   152        Aggregate:   104
+         Points:    21           Points:     7
 
 Division 4 (Bartle) 8        Sat 11th May
  Cleckheaton Moorend        Crowghyll Park
@@ -7155,7 +7155,7 @@ Stuart Carrol       18  Sue Chadwick        21
 
  Division 3 (Mellor)         Sat 7th Sep
     Asa Briggs 'B'              Wibsey
-Scott Sansom        21  Michael Sansome      6
+Scott Sansom         0  Michael Sansome     21
 Peter Wilkinson     21  John Simpson        14
 Kathleen Sansom     18  Andrea McHenry      21
 Kenny McCafferty    14  John Stocks         21
@@ -7165,9 +7165,9 @@ James Klenk         21  Tasawar Hussain     19
 Steve Peers         21  David Moore         11
 Arthur Schofield    21  John May             5
 Michael Sansom      10  John Stevenson      21
-          Games:     6            Games:     4
-      Aggregate:   181        Aggregate:   159
-         Points:    19           Points:    11
+          Games:     5            Games:     5
+      Aggregate:   160        Aggregate:   174
+         Points:    13           Points:    17
 
  Division 3 (Mellor)         Sat 7th Sep
     Eccleshill 'B'      Hipperholme & Lightcli
