@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Sat 14th Sep)
+=== League Report (as of Sun 15th Sep)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -835,6 +835,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------
   2:00pm  Clayton A                         19   197   v.   Hill Crest 'A'                    11   172     
   2:00pm  Eccleshill 'A'                    28   198   v.   Littlemoor S&SC 'B'                2   111     
+  2:00pm  Harold Club 'A'                   13   174   v.   Rastrick                          17   182     
   2:00pm  Brighouse Sports A                23   195   v.   Hove Edge 'A'                      7   152     
   2:00pm  Rufford 'A'                       22   202   v.   Pudsey 'B'                         8   166     
  10:30am  Hove Edge 'A'                     19   189   v.   Harold Club 'A'                   11   165     From Sat 21st Sep
@@ -904,9 +905,9 @@
   4.  Hove Edge 'A'                    18    9    8    275
   5.  Rufford 'A'                      17   10    7    273
   6.  Pudsey 'B'                       17    8    8    248
-  7.  Clayton A                        17    6   11    216
-  8.  Harold Club 'A'                  17    3   14    212
-  9.  Rastrick                         16    3   13    194
+  7.  Harold Club 'A'                  18    3   15    225
+  8.  Clayton A                        17    6   11    216
+  9.  Rastrick                         17    4   13    211
  10.  Littlemoor S&SC 'B'              17    6   11    186
 
 === Division 3 (Mellor)
@@ -7576,6 +7577,22 @@ Paul Rooks          21  Jim Moorin          11
           Games:     9            Games:     1
       Aggregate:   198        Aggregate:   111
          Points:    28           Points:     2
+
+ Division 2 (Godwin)         Sat 14th Sep
+   Harold Club 'A'             Rastrick
+Paul Garside        14  Lynda Drury         21
+Stewart Firth       20  Damien Talbot       21
+Eddie Hill          21  Lorraine Hirst      17
+David Halligan      14  Mark Sykes          21
+Tom Jagger          21  Bernie Toon          8
+Joe Mellor          16  Katy Atkinson       21
+Andy Malone         21  Andrea Buckley      17
+Nicky Jagger        21  Carole Harpin       14
+Shaun Godfrey       14  Debbie Farrar       21
+Andy Bairstow       12  Mark Sykes          21
+          Games:     4            Games:     6
+      Aggregate:   174        Aggregate:   182
+         Points:    13           Points:    17
 
  Division 2 (Godwin)         Sat 14th Sep
   Brighouse Sports A        Hove Edge 'A'
