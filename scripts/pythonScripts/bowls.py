@@ -133,7 +133,7 @@ for team in teamDays:
                 break
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                leagueTableText = re.search(r"\d\.\s", row.lower())
+                leagueTableText = re.search(r"\d+\.\|", row.lower())
                 if leagueTableText:
                     if teamNameUsedForLeague.lower() in row.lower():
                         leaguePosition = row.split('.')[0].strip()
@@ -222,7 +222,7 @@ for team in teamDays:
             # Home games
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
-                opponent = rowText.split(teamNameUsedForLeague)[1].strip()
+                opponent = rowText.split(teamNameUsedForLeague)[1].replace('|', '').strip()
                 opponent = opponent.replace('&amp;', '&')
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
@@ -245,7 +245,7 @@ for team in teamDays:
 
             # Away games
             if rowNumber in awayRow:
-                opponent = rowText.split(teamNameUsedForLeague)[0].strip()
+                opponent = rowText.split(teamNameUsedForLeague)[0].replace('|', '').strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + teamNameToUse
