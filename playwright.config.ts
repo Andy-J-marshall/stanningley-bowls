@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: process.env.CI ? 'https://stanningleybowlsclub.co.uk' : 'http://localhost:5173',
+    baseURL: 'http://localhost:5173',
     actionTimeout: 0,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
