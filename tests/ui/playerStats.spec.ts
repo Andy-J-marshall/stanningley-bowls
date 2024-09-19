@@ -12,6 +12,11 @@ test.beforeEach(async ({ page }) => {
   await playerStatsPage.goto();
 });
 
+import { expect } from 'chai';
+test('example failing test', async () => {
+  expect(true).to.be.false;
+});
+
 const players: Array<string> = [
   'Andy Marshall',
   'Andy Waller',
