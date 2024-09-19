@@ -1,8 +1,6 @@
-name: Run UI Tests
+name: Run UI Tests on PR
 on:
   workflow_dispatch:
-  push:
-    branches: ['master']
   pull_request:
       branches:
       - master
