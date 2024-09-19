@@ -1,5 +1,5 @@
 === Bradford (Vets) 2024
-=== League Report (as of Wed 18th Sep)
+=== League Report
 
 
 === RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -661,6 +661,15 @@
  1:30pm|Oakenshaw B       |10| 91| v.|Shipley Club      |16|110|                                 |
 11:00am|Salts B           |17|121| v.|Eccleshill B      | 9|101|                                 |
 
+-------------------------------------------------------------------------------------------------
+ Time  |      Thu 19th Sep       |   |Division Four ( 6 Players|                                 |
+-------------------------------------------------------------------------------------------------
+ 1:30pm|Shipley Club      |26|126| v.|Bowling           | 0| 58|                                 |
+11:00am|Eccleshill B      |26|126| v.|Queensbury B      | 0| 54|                                 |
+ 1:30pm|Tyersal           | 9| 83| v.|Salts B           |17|103|                                 |
+11:00am|Idle C            |18|106| v.|Thornton          | 8| 80|                                 |
+ 1:30pm|Oakenshaw B       |15|106| v.|Drighlington      |11| 94|                                 |
+
 
 === Current LEAGUE TABLES
 === Division One
@@ -712,17 +721,17 @@ Pos|Team             |Pl| W| L| For|
                      |Matches |Pnts|
 Pos|Team             |Pl| W| L| For|
 ===|=================|==|==|==|====|
- 1.|Shipley Club     |19|17| 2| 402|
- 2.|Eccleshill B     |19|13| 6| 297|
- 3.|Drighlington     |19|12| 7| 287|
- 4.|Salts B          |19|13| 6| 277|
- 5.|Idle C           |19|10| 7| 258|
+ 1.|Shipley Club     |20|18| 2| 428|
+ 2.|Eccleshill B     |20|14| 6| 323|
+ 3.|Drighlington     |20|12| 8| 298|
+ 4.|Salts B          |20|14| 6| 294|
+ 5.|Idle C           |20|11| 7| 276|
  6.|Clayton C        |20| 6|13| 226|
- 7.|Thornton         |19| 9|10| 216|
- 8.|Oakenshaw B      |19| 7|11| 207|
- 9.|Queensbury B     |19| 6|12| 203|
-10.|Bowling          |19| 4|14| 202|
-11.|Tyersal          |19| 5|14| 155|
+ 7.|Thornton         |20| 9|11| 224|
+ 8.|Oakenshaw B      |20| 8|11| 222|
+ 9.|Queensbury B     |20| 6|13| 203|
+10.|Bowling          |20| 4|15| 202|
+11.|Tyersal          |20| 5|15| 164|
 
 
 === FULL RESULTS: Thu 25th Apr to Thu 19th Sep
@@ -5765,5 +5774,65 @@ Philip Peel               | 21|Keith Cooksey      | 10|
                 Aggregate:|121|         Aggregate:|101|
                     Games:|  4|             Games:|  2|
                    Points:| 17|            Points:|  9|
+
+Division Four ( 6 Players)|   |   Thu 19th Sep    |   |
+       Shipley Club       |   |      Bowling      |   |
+Richard Shaw              | 21|Sheila Krysik      |  4|
+Steve West                | 21|Carol Chisholm     | 13|
+Allan Thorpe              | 21|Keith Robertson    | 12|
+Pam Nellist               | 21|Brian Metcalfe     |  8|
+Alan Outlaw               | 21|David Waggett      | 13|
+Lynn Shaw                 | 21|Christine Kilner   |  8|
+                Aggregate:|126|         Aggregate:| 58|
+                    Games:|  6|             Games:|  0|
+                   Points:| 26|            Points:|  0|
+
+Division Four ( 6 Players)|   |   Thu 19th Sep    |   |
+       Eccleshill B       |   |   Queensbury B    |   |
+Pauline Gilroy            | 21|Gerry Hill         |  6|
+Derek Relton              | 21|Peter Dennison     |  8|
+Kevin Ackroyd             | 21|Felicity Kennedy   |  9|
+Shirley Rooks             | 21|Geraldine Cooke    |  7|
+Andrew Smith              | 21|Pauline Brown      | 10|
+John Griffin              | 21|David Glass        | 14|
+                Aggregate:|126|         Aggregate:| 54|
+                    Games:|  6|             Games:|  0|
+                   Points:| 26|            Points:|  0|
+
+Division Four ( 6 Players)|   |   Thu 19th Sep    |   |
+         Tyersal          |   |      Salts B      |   |
+Edgar Rhodes              | 21|Vanda Greenwood    | 10|
+Shiela Bairstow           |  9|Brian Denning      | 21|
+Terry King                | 12|Nuala Pritchard    | 21|
+Christine Hillas          | 21|Jim Philipson      |  9|
+Pam Fergus                |  5|Philip Peel        | 21|
+Barry Clough              | 15|Sue Rymer          | 21|
+                Aggregate:| 83|         Aggregate:|103|
+                    Games:|  2|             Games:|  4|
+                   Points:|  9|            Points:| 17|
+
+Division Four ( 6 Players)|   |   Thu 19th Sep    |   |
+          Idle C          |   |     Thornton      |   |
+David Priestley           | 21|Anthony Lockwood   |  5|
+Elizabeth Rawnsley        |  9|Philip Ford        | 21|
+Alan Briggs               | 21|Moira Ridewood     | 14|
+Margaret Austin           | 13|Karen Brame        | 21|
+Valerie Leach             | 21|Ronald Broadbent   | 15|
+Michael Barrett           | 21|Steve Tomkinson    |  4|
+                Aggregate:|106|         Aggregate:| 80|
+                    Games:|  4|             Games:|  2|
+                   Points:| 18|            Points:|  8|
+
+Division Four ( 6 Players)|   |   Thu 19th Sep    |   |
+       Oakenshaw B        |   |   Drighlington    |   |
+Les Kear                  | 21|Ian Fairhurst      | 16|
+Geoff Forder              | 21|Peter Thompson     |  7|
+Graham Wright             | 20|Steve Wrigglesworth| 21|
+Eric Oldroyd              | 18|Graham Fuller      | 21|
+Maureen Robinson          |  5|Karl Denville      | 21|
+Peter Brennan             | 21|Michael Warren     |  8|
+                Aggregate:|106|         Aggregate:| 94|
+                    Games:|  3|             Games:|  3|
+                   Points:| 15|            Points:| 11|
 
 
