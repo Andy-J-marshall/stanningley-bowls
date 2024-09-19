@@ -32,8 +32,8 @@ Run the following:
 
 ## Pipelines
 There are several GitHub Action jobs that run. These can be found in `/.github/workflows`.
-* `deploy-master.yml` - this deploys to prod whenever there is a push to master
-* `run-ui-tests.yml` - this runs the UI tests against prod whenever there is a push to master or a PR is opened/changed
+* `deploy-master.yml` - this deploys to prod whenever there is a push to master and then runs the tests
+* `run-ui-tests-on-pr.yml` - this runs the UI tests against prod whenever a PR is opened or changed
 * `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
 
 Note, if the branch names change (e.g. `update_stats_prod` or `master`) then the jobs will need to be updated.

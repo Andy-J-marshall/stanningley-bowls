@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: 'http://localhost:5173',
+    baseURL: process.env.URL ?? 'http://localhost:5173',
     actionTimeout: 0,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
