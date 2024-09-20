@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Thu 19th Sep)
+=== League Report (as of Fri 20th Sep)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -871,6 +871,11 @@
  2:00pm|Cleckheaton Sports 'B'        |12|135| v.|Clayton B                     |16|140|                                 |
 
 -------------------------------------------------------------------------------------------------------------------------
+ Time  |            Fri 20th Sep             |   |    Division 4 (Bartle) 8 Player     |                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Cleckheaton Sports 'A'        |17|143| v.|Crowghyll Park                |11|125|From Sat 21st Sep                |
+
+-------------------------------------------------------------------------------------------------------------------------
  Time  |            Sat 21st Sep             |   |         Division 2 (Godwin)         |                                 |
 -------------------------------------------------------------------------------------------------------------------------
  ------|Hove Edge 'A'                 |  |   | v.|Harold Club 'A'               |  |   |To Sat 14th Sep                  |
@@ -878,6 +883,10 @@
  Time  |            Sat 21st Sep             |   |         Division 3 (Mellor)         |                                 |
 -------------------------------------------------------------------------------------------------------------------------
  ------|Spen Victoria 'B'             |  |   | v.|Wibsey                        |  |   |To Sun 8th Sep                   |
+-------------------------------------------------------------------------------------------------------------------------
+ Time  |            Sat 21st Sep             |   |    Division 4 (Bartle) 8 Player     |                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ ------|Cleckheaton Sports 'A'        |  |   | v.|Crowghyll Park                |  |   |To Fri 20th Sep                  |
 
 
 === Current LEAGUE TABLES
@@ -933,9 +942,9 @@ Pos|Team                         |Pl| W| L| For|
  2.|Burley Park                  |17|12| 4| 306|
  3.|Queensbury                   |17|12| 5| 276|
  4.|Hill Crest 'B'               |17| 9| 8| 256|
- 5.|Hove Edge 'B'                |17| 8| 9| 238|
- 6.|Crowghyll Park               |17| 8| 9| 226|
- 7.|Cleckheaton Sports 'A'       |17| 7|10| 224|
+ 5.|Cleckheaton Sports 'A'       |18| 8|10| 241|
+ 6.|Hove Edge 'B'                |17| 8| 9| 238|
+ 7.|Crowghyll Park               |18| 8|10| 237|
  8.|West Bradford 'A'            |17| 6|10| 213|
  9.|Cleckheaton Moorend          |17| 7| 8| 198|
 10.|Oakenshaw                    |17| 0|17| 126|
@@ -7903,5 +7912,19 @@ Alex Green                   | 21|Malcolm Riggs                | 15|
                        Games:|  3|                       Games:|  5|
                    Aggregate:|135|                   Aggregate:|140|
                       Points:| 12|                      Points:| 16|
+
+Division 4 (Bartle) 8 Player |   |        Fri 20th Sep         |   |
+   Cleckheaton Sports 'A'    |   |       Crowghyll Park        |   |
+Liz Ellis                    | 21|Trevor Hodgson               | 12|
+Dave Marshall                | 21|Pam Robinson                 | 15|
+Kath Icke                    | 21|Lek Fletcher                 | 16|
+David Griffiths              | 15|Dennis Brown                 | 21|
+Elaine Binns                 | 21|Flo Johnston                 | 11|
+Alan Potter                  | 15|Derek Carroll                | 21|
+Kath Wilson                  |  8|Andy Matthews                | 21|
+Janice Walton                | 21|Phil Robinson                |  8|
+                       Games:|  5|                       Games:|  3|
+                   Aggregate:|143|                   Aggregate:|125|
+                      Points:| 17|                      Points:| 11|
 
 
