@@ -1,5 +1,5 @@
 === Bradford (Saturday) 2024
-=== League Report (as of Fri 20th Sep)
+=== League Report (as of Sat 21st Sep)
 
 
 === RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -876,17 +876,47 @@
  2:00pm|Cleckheaton Sports 'A'        |17|143| v.|Crowghyll Park                |11|125|From Sat 21st Sep                |
 
 -------------------------------------------------------------------------------------------------------------------------
+ Time  |            Sat 21st Sep             |   |     Division 1 (Naylor Premier)     |                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Shipley Club                  |16|163| v.|Pudsey 'A'                    |14|155|                                 |
+ 2:00pm|Asa Briggs 'A'                |18|193| v.|Cononley                      |12|173|                                 |
+ 2:00pm|Wyke 'A'                      |21|197| v.|Farsley                       | 9|154|                                 |
+ 2:00pm|Guiseley 'A'                  |21|197| v.|Littlemoor S&SC 'A'           | 9|161|                                 |
+-------------------------------------------------------------------------------------------------------------------------
  Time  |            Sat 21st Sep             |   |         Division 2 (Godwin)         |                                 |
 -------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Littlemoor S&SC 'B'           |18|172| v.|Clayton A                     |12|158|                                 |
  ------|Hove Edge 'A'                 |  |   | v.|Harold Club 'A'               |  |   |To Sat 14th Sep                  |
+ 2:00pm|Rastrick                      |17|179| v.|Eccleshill 'A'                |13|177|                                 |
+ 2:00pm|Hill Crest 'A'                |29|208| v.|Rufford 'A'                   | 1|115|                                 |
 -------------------------------------------------------------------------------------------------------------------------
  Time  |            Sat 21st Sep             |   |         Division 3 (Mellor)         |                                 |
 -------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Rufford 'B'                   |18|193| v.|Asa Briggs 'B'                |12|177|                                 |
+12:00pm|Pudsey 'C'                    |15|192| v.|Guiseley 'B'                  |15|185|                                 |
  ------|Spen Victoria 'B'             |  |   | v.|Wibsey                        |  |   |To Sun 8th Sep                   |
+ 2:00pm|Hightown                      |13|171| v.|Hipperholme & Lightcliffe 'A' |17|184|                                 |
 -------------------------------------------------------------------------------------------------------------------------
  Time  |            Sat 21st Sep             |   |    Division 4 (Bartle) 8 Player     |                                 |
 -------------------------------------------------------------------------------------------------------------------------
  ------|Cleckheaton Sports 'A'        |  |   | v.|Crowghyll Park                |  |   |To Fri 20th Sep                  |
+ 2:00pm|Cleckheaton Moorend           |11|119| v.|Hill Crest 'B'                |17|142|                                 |
+ 2:00pm|Burley Park                   |19|151| v.|Hove Edge 'B'                 | 9|118|                                 |
+ 2:00pm|Brighouse Sports B            |28|168| v.|Oakenshaw                     | 0| 70|                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ Time  |            Sat 21st Sep             |   |     Division 5 (Haigh) 8 Player     |                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Hipperholme & Lightcliffe 'B' |17|147| v.|Asa Briggs 'C'                |11|133|                                 |
+ 2:00pm|Bailiff Bridge                |16|152| v.|New Greengates                |12|143|                                 |
+12:00pm|Eccleshill 'C'                |22|164| v.|Birkenshaw                    | 6|105|                                 |
+ 2:00pm|Brackenhill                   | 9|126| v.|Harold Club 'B'               |19|147|                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ Time  |            Sat 21st Sep             |   |     Division 6 (Riley) 8 Player     |                                 |
+-------------------------------------------------------------------------------------------------------------------------
+ 2:00pm|Bowling                       |21|135| v.|Tyersal                       | 7| 89|                                 |
+ 2:00pm|Clayton B                     |20|156| v.|Guiseley 'C'                  | 8|122|                                 |
+12:00pm|West Bradford 'C'             | 9|105| v.|Bradford Moor                 |19|136|                                 |
+ 2:00pm|Spen Victoria C               |25|168| v.|West Bradford 'B'             | 3|104|                                 |
 
 
 === Current LEAGUE TABLES
@@ -894,43 +924,43 @@
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
- 1.|Pudsey 'A'                   |15|13| 2| 310|
- 2.|Littlemoor S&SC 'A'          |15|11| 4| 281|
- 3.|Spen Victoria 'A'            |16| 9| 7| 265|
- 4.|Cononley                     |15| 9| 5| 259|
- 5.|Shipley Club                 |15| 7| 7| 240|
- 6.|Guiseley 'A'                 |15| 9| 6| 234|
- 7.|Wyke 'A'                     |15| 4| 9| 161|
- 8.|Asa Briggs 'A'               |15| 2|13| 147|
- 9.|Farsley                      |15| 2|13| 143|
+ 1.|Pudsey 'A'                   |16|13| 3| 324|
+ 2.|Littlemoor S&SC 'A'          |16|11| 5| 290|
+ 3.|Cononley                     |16| 9| 6| 271|
+ 4.|Spen Victoria 'A'            |16| 9| 7| 265|
+ 5.|Shipley Club                 |16| 8| 7| 256|
+ 6.|Guiseley 'A'                 |16|10| 6| 255|
+ 7.|Wyke 'A'                     |16| 5| 9| 182|
+ 8.|Asa Briggs 'A'               |16| 3|13| 165|
+ 9.|Farsley                      |16| 2|14| 152|
 
 === Division 2 (Godwin)
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
- 1.|Hill Crest 'A'               |17|14| 3| 325|
- 2.|Brighouse Sports A           |17|12| 5| 314|
- 3.|Eccleshill 'A'               |17|13| 4| 307|
+ 1.|Hill Crest 'A'               |18|15| 3| 354|
+ 2.|Eccleshill 'A'               |18|13| 5| 320|
+ 3.|Brighouse Sports A           |17|12| 5| 314|
  4.|Hove Edge 'A'                |18| 9| 8| 275|
- 5.|Rufford 'A'                  |17|10| 7| 273|
+ 5.|Rufford 'A'                  |18|10| 8| 274|
  6.|Pudsey 'B'                   |17| 8| 8| 248|
- 7.|Harold Club 'A'              |18| 3|15| 225|
- 8.|Clayton A                    |17| 6|11| 216|
- 9.|Rastrick                     |17| 4|13| 211|
-10.|Littlemoor S&SC 'B'          |17| 6|11| 186|
+ 7.|Rastrick                     |18| 5|13| 228|
+ 8.|Clayton A                    |18| 6|12| 228|
+ 9.|Harold Club 'A'              |18| 3|15| 225|
+10.|Littlemoor S&SC 'B'          |18| 7|11| 204|
 
 === Division 3 (Mellor)
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
- 1.|Hightown                     |17|14| 3| 349|
- 2.|Spen Victoria 'B'            |18|16| 1| 343|
- 3.|Hipperholme & Lightcliffe 'A'|17|12| 5| 332|
- 4.|Eccleshill 'B'               |17| 7|10| 260|
- 5.|Asa Briggs 'B'               |17| 8| 9| 253|
- 6.|Pudsey 'C'                   |17| 6|10| 221|
- 7.|Guiseley 'B'                 |17| 7|10| 215|
- 8.|Rufford 'B'                  |17| 5|12| 211|
+ 1.|Hightown                     |18|14| 4| 362|
+ 2.|Hipperholme & Lightcliffe 'A'|18|13| 5| 349|
+ 3.|Spen Victoria 'B'            |18|16| 1| 343|
+ 4.|Asa Briggs 'B'               |18| 8|10| 265|
+ 5.|Eccleshill 'B'               |17| 7|10| 260|
+ 6.|Pudsey 'C'                   |18| 6|10| 236|
+ 7.|Guiseley 'B'                 |18| 7|10| 230|
+ 8.|Rufford 'B'                  |18| 6|12| 229|
  9.|Wibsey                       |18| 5|12| 211|
 10.|Wyke 'B'                     |17| 4|12| 185|
 
@@ -938,44 +968,44 @@ Pos|Team                         |Pl| W| L| For|
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
- 1.|Brighouse Sports B           |17|14| 3| 317|
- 2.|Burley Park                  |17|12| 4| 306|
+ 1.|Brighouse Sports B           |18|15| 3| 345|
+ 2.|Burley Park                  |18|13| 4| 325|
  3.|Queensbury                   |17|12| 5| 276|
- 4.|Hill Crest 'B'               |17| 9| 8| 256|
- 5.|Cleckheaton Sports 'A'       |18| 8|10| 241|
- 6.|Hove Edge 'B'                |17| 8| 9| 238|
+ 4.|Hill Crest 'B'               |18|10| 8| 273|
+ 5.|Hove Edge 'B'                |18| 8|10| 247|
+ 6.|Cleckheaton Sports 'A'       |18| 8|10| 241|
  7.|Crowghyll Park               |18| 8|10| 237|
  8.|West Bradford 'A'            |17| 6|10| 213|
- 9.|Cleckheaton Moorend          |17| 7| 8| 198|
-10.|Oakenshaw                    |17| 0|17| 126|
+ 9.|Cleckheaton Moorend          |18| 7| 9| 209|
+10.|Oakenshaw                    |18| 0|18| 126|
 
 === Division 5 (Haigh) 8 Player
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
  1.|Luddendenfoot                |16|12| 3| 292|
- 2.|Hipperholme & Lightcliffe 'B'|15|11| 4| 241|
- 3.|Asa Briggs 'C'               |15| 9| 5| 236|
- 4.|Harold Club 'B'              |15| 6| 8| 212|
- 5.|Brackenhill                  |15| 7| 7| 207|
- 6.|New Greengates               |15| 5| 8| 201|
- 7.|Bailiff Bridge               |15| 6| 8| 189|
- 8.|Birkenshaw                   |15| 4|11| 164|
- 9.|Eccleshill 'C'               |15| 4|10| 162|
+ 2.|Hipperholme & Lightcliffe 'B'|16|12| 4| 258|
+ 3.|Asa Briggs 'C'               |16| 9| 6| 247|
+ 4.|Harold Club 'B'              |16| 7| 8| 231|
+ 5.|Brackenhill                  |16| 7| 8| 216|
+ 6.|New Greengates               |16| 5| 9| 213|
+ 7.|Bailiff Bridge               |16| 7| 8| 205|
+ 8.|Eccleshill 'C'               |16| 5|10| 184|
+ 9.|Birkenshaw                   |16| 4|12| 170|
 
 === Division 6 (Riley) 8 Player
                                  |Matches |Pnts|
 Pos|Team                         |Pl| W| L| For|
 ===|=============================|==|==|==|====|
- 1.|Spen Victoria C              |15|12| 2| 295|
+ 1.|Spen Victoria C              |16|13| 2| 320|
  2.|Cleckheaton Sports 'B'       |16|12| 4| 282|
- 3.|West Bradford 'B'            |15|10| 3| 241|
- 4.|Bradford Moor                |15| 8| 7| 232|
- 5.|Clayton B                    |15| 7| 7| 210|
- 6.|Bowling                      |15| 7| 7| 208|
- 7.|West Bradford 'C'            |15| 4|10| 183|
- 8.|Guiseley 'C'                 |15| 3|10| 140|
- 9.|Tyersal                      |15| 1|14| 113|
+ 3.|Bradford Moor                |16| 9| 7| 251|
+ 4.|West Bradford 'B'            |16|10| 4| 244|
+ 5.|Clayton B                    |16| 8| 7| 230|
+ 6.|Bowling                      |16| 8| 7| 229|
+ 7.|West Bradford 'C'            |16| 4|11| 192|
+ 8.|Guiseley 'C'                 |16| 3|11| 148|
+ 9.|Tyersal                      |16| 1|15| 120|
 
 
 === FULL RESULTS: Thu 21st Mar to Sat 5th Oct
@@ -7926,5 +7956,319 @@ Janice Walton                | 21|Phil Robinson                |  8|
                        Games:|  5|                       Games:|  3|
                    Aggregate:|143|                   Aggregate:|125|
                       Points:| 17|                      Points:| 11|
+
+ Division 1 (Naylor Premier) |   |        Sat 21st Sep         |   |
+        Shipley Club         |   |         Pudsey 'A'          |   |
+David Bland                  | 21|Chris Mordue                 |  8|
+Scott Bloodworth             | 11|Thomas Hanson                | 21|
+Barry Fenton                 |  6|Jamie Winterburn             | 21|
+Matthew Jacques 'A'          | 15|Stuart Hanson                | 21|
+Chris Jacques                | 10|Jon Edmondson                | 21|
+Ian Jacques                  | 21|Mason Lindley                | 11|
+Daniel Metcalfe              | 21|Pam Lindley                  |  6|
+John Sample                  | 21|Andrew Sykes                 | 10|
+Neil Simpson                 | 16|Philip Wilsdon               | 21|
+Stuart Wilson                | 21|Ian Shaw                     | 15|
+                       Games:|  5|                       Games:|  5|
+                   Aggregate:|163|                   Aggregate:|155|
+                      Points:| 16|                      Points:| 14|
+
+ Division 1 (Naylor Premier) |   |        Sat 21st Sep         |   |
+       Asa Briggs 'A'        |   |          Cononley           |   |
+Jordan Brown 'B'             | 17|Rob Scarr                    | 21|
+Scott Sansom                 | 21|Philip Dowgill               | 14|
+Clive Foord 'A'              | 21|Jim Calvert                  | 14|
+Michael Frost                | 20|Mike Gadd                    | 21|
+Gary Woodhead                | 11|Bryan Harrison               | 21|
+Malcolm Iles 'A'             | 21|Sharon Gadd                  | 17|
+Jason Watters                | 21|Alister Keighley             |  9|
+Andrew Heenan                | 19|Ian Dewhirst                 | 21|
+Glen McCafferty              | 21|Robbie Ellis                 | 17|
+Andy Denton                  | 21|Paul Drinkall                | 18|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|193|                   Aggregate:|173|
+                      Points:| 18|                      Points:| 12|
+
+ Division 1 (Naylor Premier) |   |        Sat 21st Sep         |   |
+          Wyke 'A'           |   |           Farsley           |   |
+Trevor Benn 'A'              | 21|Peter Scott                  |  8|
+Matthew Hicks                | 21|Duncan McPhail               |  4|
+Darren Hickey                | 21|Stuart Brook                 | 12|
+Neil Tordoff 'A'             | 21|Peter Crowther               |  9|
+Ian Wilson 'A'               | 21|Daniel Beardsworth           | 19|
+Daniel Barker                | 21|Neil Nicholson               | 18|
+Chris Sowden                 | 17|Graham Petty                 | 21|
+Nigel Swales                 | 14|Helen Gilroy                 | 21|
+Gareth Metcalf               | 20|Derek Pickering              | 21|
+Nigel Wormald                | 20|Stephen Gilroy               | 21|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|197|                   Aggregate:|154|
+                      Points:| 21|                      Points:|  9|
+
+ Division 1 (Naylor Premier) |   |        Sat 21st Sep         |   |
+        Guiseley 'A'         |   |     Littlemoor S&SC 'A'     |   |
+James Teale                  | 20|Nicky Dewhirst               | 21|
+Thomas Cater                 | 21|Alan Mazurke                 |  6|
+Daniel Teale                 | 21|Mark Allman                  |  4|
+Ben Stockdale                | 21|John Armitage 'A'            | 20|
+Luke Teale                   | 21|Will Bedford                 | 17|
+Kevin Siddle                 | 21|Lee Wider                    | 13|
+Joe Stockdale                | 17|Marc Armitage 'A'            | 21|
+Martin Wilson                | 21|Fern Beaumont                | 20|
+Graham Oliver 'A'            | 21|Nathan Dobson 'A'            | 18|
+Will Gilroy                  | 13|Alex Wolfenden               | 21|
+                       Games:|  7|                       Games:|  3|
+                   Aggregate:|197|                   Aggregate:|161|
+                      Points:| 21|                      Points:|  9|
+
+     Division 2 (Godwin)     |   |        Sat 21st Sep         |   |
+     Littlemoor S&SC 'B'     |   |          Clayton A          |   |
+William Swailes              |  4|Myles Summers                | 21|
+Kath Mazurke                 | 10|Paul Gill                    | 21|
+Alan Mazurke                 | 14|Steve Wilkinson              | 21|
+Angela Carter                | 18|Jack Summers                 | 21|
+Glenn Merrick                | 21|John Smith                   | 18|
+Billy Thorpe                 | 21|Philip Lister                | 15|
+Stuart Watson                | 21|Paul Demetriades             | 14|
+Craig Hebberd                | 21|Andy Walker                  | 12|
+Brian Richards               | 21|Joe Bray                     | 11|
+Nicky Dewhirst               | 21|Peter Oliver                 |  4|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|172|                   Aggregate:|158|
+                      Points:| 18|                      Points:| 12|
+
+     Division 2 (Godwin)     |   |        Sat 21st Sep         |   |
+          Rastrick           |   |       Eccleshill 'A'        |   |
+Damien Talbot                | 21|Ian Matthews 'B'             | 13|
+Debbie Farrar                | 13|Neil Mylan 'A'               | 21|
+Gaye Wood                    | 16|Graham Chaffer 'B'           | 21|
+Jane Hollingworth            | 21|Mark Reynolds 'B'            | 11|
+Karen Gant                   | 13|Paul Rooks                   | 21|
+Katy Atkinson                | 11|Nicky Bastow 'A'             | 21|
+Mark Sykes                   | 21|Andy Haran                   | 16|
+Paul Toon                    | 21|Ken Gilroy                   | 20|
+Stuart Rodd                  | 21|Mick Angus                   | 15|
+*A.N.Other*                  | 21|Nicky Rooks                  | 18|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|179|                   Aggregate:|177|
+                      Points:| 17|                      Points:| 13|
+
+     Division 2 (Godwin)     |   |        Sat 21st Sep         |   |
+       Hill Crest 'A'        |   |         Rufford 'A'         |   |
+Stuart Carrol                | 21|Andy Johnson                 | 16|
+Martin Murphy                | 21|David Norris                 | 12|
+David Barnes                 | 21|Ken Lee                      |  7|
+Alan Bray                    | 19|Martyn Benson 'A'            | 21|
+John Halliday                | 21|Guy Barrie                   | 15|
+Rebecca Woodhead             | 21|Debbie Kirkbright            |  9|
+Mark Luford                  | 21|David Kirkbright             | 12|
+Ben Halliday                 | 21|Tim Bennett                  | 11|
+Scott Haynes                 | 21|Allan Caine                  |  3|
+Gary Murphy                  | 21|Thomas Johnson               |  9|
+                       Games:|  9|                       Games:|  1|
+                   Aggregate:|208|                   Aggregate:|115|
+                      Points:| 29|                      Points:|  1|
+
+     Division 3 (Mellor)     |   |        Sat 21st Sep         |   |
+         Rufford 'B'         |   |       Asa Briggs 'B'        |   |
+Val Grace                    | 19|Donald Harrison              | 21|
+Cath New                     | 21|Paula Graham                 | 20|
+Angela Bennett               | 21|Andy Denton                  | 19|
+Pauline Ingleson             | 21|Alan Marsden                 | 17|
+David Waite                  | 21|Kenny McCafferty             | 11|
+Eileen Beck                  | 18|Steve Peers                  | 21|
+Carole Wright 'B'            | 10|James Klenk                  | 21|
+Dianne Teale                 | 21|Peter Wrightson              |  8|
+Glynn Goodyear               | 21|*A.N.Other*                  | 18|
+Brian Teale                  | 20|Michael Sansom               | 21|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|193|                   Aggregate:|177|
+                      Points:| 18|                      Points:| 12|
+
+     Division 3 (Mellor)     |   |        Sat 21st Sep         |   |
+         Pudsey 'C'          |   |        Guiseley 'B'         |   |
+John Atkinson                | 21|Alan Whitehouse              | 13|
+Jake Daggett                 | 20|Andrew Durkin                | 21|
+Colin Dibb                   | 16|Bob Jeffrey                  | 21|
+David Elliott                | 21|Caroline Corbett             | 12|
+Steve Harwood                | 21|Roger Waite                  | 15|
+Sam Hunak                    | 21|Peter Storey                 | 19|
+Hannah Leaf                  | 20|Carolyn Matthewman           | 21|
+David McDonald               | 18|John French                  | 21|
+Melissa Morris               | 17|Ralph Sissons                | 21|
+Sebastian Mordue             | 17|Colin Matthewman             | 21|
+                       Games:|  4|                       Games:|  6|
+                   Aggregate:|192|                   Aggregate:|185|
+                      Points:| 15|                      Points:| 15|
+
+     Division 3 (Mellor)     |   |        Sat 21st Sep         |   |
+          Hightown           |   |Hipperholme & Lightcliffe 'A'|   |
+Jacob Hatfield-Goodall       |  9|Adrian Megson                | 21|
+Eddie Gilbert                | 11|Ian Hawtin                   | 21|
+Poppy Fox                    | 13|Nigel Parker                 | 21|
+Jude Hatfield-Goodall        | 15|Nick Crowther                | 21|
+Roy Carter                   | 18|Steve Swallow                | 21|
+Sean Carter                  | 21|Ian Ryding                   | 12|
+Daren Munt                   | 21|John Denham                  | 14|
+Tom Gilbert                  | 21|Rob Sandie                   | 17|
+David Rayner                 | 21|Nigel Broadbent              | 17|
+Darren Goodall               | 21|Chris Cox                    | 19|
+                       Games:|  5|                       Games:|  5|
+                   Aggregate:|171|                   Aggregate:|184|
+                      Points:| 13|                      Points:| 17|
+
+Division 4 (Bartle) 8 Player |   |        Sat 21st Sep         |   |
+     Cleckheaton Moorend     |   |       Hill Crest 'B'        |   |
+Margaret Lloyd               |  3|Robert Woodhead              | 21|
+Barbara Woodcock             | 21|Stephen Balmforth            | 15|
+Mick Stewart                 | 21|Craig Thomasson              | 14|
+Phil Long                    | 21|Matt Bowe                    |  9|
+Eric Franks                  | 10|Mark Cartwright              | 21|
+Marie Franks                 | 11|Richard Buxton               | 21|
+John Parkinson               | 11|Nikki Conway                 | 21|
+David Lloyd                  | 21|Gary Jackson                 | 20|
+                       Games:|  4|                       Games:|  4|
+                   Aggregate:|119|                   Aggregate:|142|
+                      Points:| 11|                      Points:| 17|
+
+Division 4 (Bartle) 8 Player |   |        Sat 21st Sep         |   |
+         Burley Park         |   |        Hove Edge 'B'        |   |
+Tommy Parr                   | 18|Jim Warne                    | 21|
+Mark McCann                  | 21|Terry Allington              |  7|
+Kevin Gilroy                 | 21|Judy Cockroft                | 13|
+Barry Palmer                 | 21|Janet Carney                 | 10|
+Cheryl Smith                 | 21|Ian Moxon                    | 19|
+James Miller                 | 16|Kevin Longbottom             | 21|
+Stephen Pickersgill          | 12|Peter Barstow                | 21|
+Steven Gilroy                | 21|Chris Illingworth            |  6|
+                       Games:|  5|                       Games:|  3|
+                   Aggregate:|151|                   Aggregate:|118|
+                      Points:| 19|                      Points:|  9|
+
+Division 4 (Bartle) 8 Player |   |        Sat 21st Sep         |   |
+     Brighouse Sports B      |   |          Oakenshaw          |   |
+Jamie Horsley                | 21|Peter Brennan                |  4|
+Anthony Naylor               | 21|Pat Priestley 'A'            |  3|
+Peter Owen                   | 21|Jim Gomersal                 | 17|
+Nigel Briggs                 | 21|Richard Stewart              | 13|
+David Southwell              | 21|Ian Gomersal                 | 12|
+Ryan Collins                 | 21|Les Kear                     |  4|
+Dale Dyson                   | 21|John Priestley               |  7|
+Micheal Wood                 | 21|John Garside                 | 10|
+                       Games:|  8|                       Games:|  0|
+                   Aggregate:|168|                   Aggregate:| 70|
+                      Points:| 28|                      Points:|  0|
+
+ Division 5 (Haigh) 8 Player |   |        Sat 21st Sep         |   |
+Hipperholme & Lightcliffe 'B'|   |       Asa Briggs 'C'        |   |
+David Healey                 | 21|Alan Standing                | 12|
+Luke Britton                 | 21|Bob Hiley                    | 16|
+Kate Palmer                  | 16|Michael Sansom               | 21|
+Robin Sugden                 |  6|Neil Morritt                 | 21|
+Alan Jacques                 | 21|Kathleen Sansom              | 17|
+Beth Healey                  | 21|Sean Schofield               | 17|
+Steve Oakes                  | 21|Graham Heede                 |  8|
+Roger Bernard                | 20|Arthur Schofield             | 21|
+                       Games:|  5|                       Games:|  3|
+                   Aggregate:|147|                   Aggregate:|133|
+                      Points:| 17|                      Points:| 11|
+
+ Division 5 (Haigh) 8 Player |   |        Sat 21st Sep         |   |
+       Bailiff Bridge        |   |       New Greengates        |   |
+Sandra Franz                 | 19|Alan Broscombe               | 21|
+Malcolm Park                 | 21|Tom Sayer                    | 17|
+Sue Wingate                  | 16|Sharon Queripel              | 21|
+Bob Foalks                   | 21|Allan Smith                  | 14|
+Richard Sugden               | 21|Chris Burnett                | 15|
+David Franz                  | 21|Steven Bussingham            | 15|
+Ed Davison                   | 21|Chris J Burnett              | 19|
+Graham Whitworth             | 12|Keith Goodall                | 21|
+                       Games:|  5|                       Games:|  3|
+                   Aggregate:|152|                   Aggregate:|143|
+                      Points:| 16|                      Points:| 12|
+
+ Division 5 (Haigh) 8 Player |   |        Sat 21st Sep         |   |
+       Eccleshill 'C'        |   |         Birkenshaw          |   |
+Mark Stevens                 | 21|Anthony Hatherley            | 16|
+Brian Barker                 | 21|William Naven                |  8|
+Shirley Rooks                | 21|Alan Holmes                  |  5|
+Andrew Smith                 | 18|Peter Mortimer               | 21|
+Ken Binder                   | 21|George Hunter                |  3|
+Sue Butler                   | 21|Jean Mortimer                | 13|
+Theo Moyes                   | 21|Jack Holdsworth              | 18|
+Sarah Harrison               | 20|Jeff Parkinson               | 21|
+                       Games:|  6|                       Games:|  2|
+                   Aggregate:|164|                   Aggregate:|105|
+                      Points:| 22|                      Points:|  6|
+
+ Division 5 (Haigh) 8 Player |   |        Sat 21st Sep         |   |
+         Brackenhill         |   |       Harold Club 'B'       |   |
+Jackie Wilkinson             | 13|Tony Godfrey                 | 21|
+Bob Armitage                 | 14|Martin Watson                | 21|
+Michael Feeley               |  8|Andrew Jacobs                | 21|
+Andrew Mackrill              | 21|Lee Boocock                  |  7|
+Kathy Wilford                | 16|Stephen Council              | 21|
+Tony Cockcroft               | 20|Stuart Davis                 | 21|
+Madeline Gamble              | 21|Dave Hill                    | 14|
+Graham Wilkinson             | 13|Mark Gummery                 | 21|
+                       Games:|  2|                       Games:|  6|
+                   Aggregate:|126|                   Aggregate:|147|
+                      Points:|  9|                      Points:| 19|
+
+ Division 6 (Riley) 8 Player |   |        Sat 21st Sep         |   |
+           Bowling           |   |           Tyersal           |   |
+Lesley Cordingley            |  1|Colin Wright                 | 21|
+Keith Robertson              | 21|Sheila Bairstow              |  3|
+Christine Kilner             | 21|Margaret Wilson              |  7|
+Tracy Duxbury                | 21|Aleisha Martin               |  6|
+Violet Rodgers               |  8|Russell Hudson               | 21|
+Neil Duxbury                 | 21|Pam Fergus                   |  0|
+Trevor Yeadon                | 21|Barry Clough                 | 13|
+Bill Graham                  | 21|Edgar Rhodes                 | 18|
+                       Games:|  6|                       Games:|  2|
+                   Aggregate:|135|                   Aggregate:| 89|
+                      Points:| 21|                      Points:|  7|
+
+ Division 6 (Riley) 8 Player |   |        Sat 21st Sep         |   |
+          Clayton B          |   |        Guiseley 'C'         |   |
+Joe Midgley                  | 21|Norman Lickley               | 14|
+Kevin Flanagan               | 21|Christine Fountain           | 19|
+Sue Findlay                  | 11|Paul Gains                   | 21|
+Malcolm Riggs                | 21|Bridget Hopkinson            | 10|
+Lesley Holmes                | 19|Earl Delany                  | 21|
+Ian Findlay                  | 21|Doreen Lawson                | 13|
+Peter Barker                 | 21|Jean Perry                   | 15|
+Steve Edgley                 | 21|Anne Brown                   |  9|
+                       Games:|  6|                       Games:|  2|
+                   Aggregate:|156|                   Aggregate:|122|
+                      Points:| 20|                      Points:|  8|
+
+ Division 6 (Riley) 8 Player |   |        Sat 21st Sep         |   |
+      West Bradford 'C'      |   |        Bradford Moor        |   |
+Paul Wood                    | 21|Marjorie Leeming             |  5|
+Iain Brown                   | 21|Janet Gatenby                | 14|
+Jacqui Wood                  | 18|Diane Barraclough            | 21|
+Hugh Chambers                |  2|Martin Barraclough           | 21|
+Lesley Lalor                 | 15|Edward East                  | 21|
+Colin Isles                  | 21|Doreen Parkin                | 12|
+Sheila Edden                 |  1|Alan Naylor                  | 21|
+Gerry Peel                   |  6|Mark Durrans 'A'             | 21|
+                       Games:|  3|                       Games:|  5|
+                   Aggregate:|105|                   Aggregate:|136|
+                      Points:|  9|                      Points:| 19|
+
+ Division 6 (Riley) 8 Player |   |        Sat 21st Sep         |   |
+       Spen Victoria C       |   |      West Bradford 'B'      |   |
+Ken Spencer                  | 21|Simon Muncaster              | 19|
+Lucas Wood                   | 21|Anne Mullaney                |  3|
+Archie Wood                  | 21|John Dale                    | 16|
+Chloe Morton                 | 21|Geraldine Sephton            |  7|
+Mel Blackburn                | 21|Patrick McNally              | 16|
+Richard Morton               | 21|Malcolm Leeming              | 15|
+Lexie Gould                  | 21|Susan Cavallari              | 11|
+Justine Wood                 | 21|Brian Woolner                | 17|
+                       Games:|  8|                       Games:|  0|
+                   Aggregate:|168|                   Aggregate:|104|
+                      Points:| 25|                      Points:|  3|
 
 

@@ -1628,12 +1628,12 @@
             ]
         },
         "duncan mcphail": {
-            "totalAgg": 1609,
-            "totalAggAgainst": 1327,
-            "availableAgg": 1827,
+            "totalAgg": 1613,
+            "totalAggAgainst": 1348,
+            "availableAgg": 1848,
             "availablePairsAgg": 0,
             "availableHomeAgg": 819,
-            "availableAwayAgg": 840,
+            "availableAwayAgg": 861,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -1642,14 +1642,14 @@
             "totalHomeAggAgainst": 548,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 697,
-            "totalAwayAggAgainst": 686,
+            "totalAwayAgg": 701,
+            "totalAwayAggAgainst": 707,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 26,
             "homeLosses": 13,
             "awayWins": 19,
-            "awayLosses": 21,
+            "awayLosses": 22,
             "cupWins": 8,
             "cupLosses": 0,
             "pairWins": 0,
@@ -1660,7 +1660,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 87,
+            "totalGamesPlayed": 88,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1734,6 +1734,7 @@
                 "Monday AireWharfe",
                 "Monday AireWharfe",
                 "Tuesday AireWharfe",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -1840,7 +1841,8 @@
                 "duncan mcphail 21 - 13 mark regan",
                 "duncan mcphail 20 - 21 will gilroy",
                 "duncan mcphail 14 - 21 philip wilsdon",
-                "duncan mcphail 12 - 21 neil simpson"
+                "duncan mcphail 12 - 21 neil simpson",
+                "duncan mcphail 4 - 21 matthew hicks"
             ]
         },
         "harvey leonard": {
@@ -2624,12 +2626,12 @@
             ]
         },
         "john armitage": {
-            "totalAgg": 1519,
-            "totalAggAgainst": 1175,
-            "availableAgg": 1680,
+            "totalAgg": 1539,
+            "totalAggAgainst": 1196,
+            "availableAgg": 1701,
             "availablePairsAgg": 0,
             "availableHomeAgg": 840,
-            "availableAwayAgg": 777,
+            "availableAwayAgg": 798,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -2638,14 +2640,14 @@
             "totalHomeAggAgainst": 508,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 655,
-            "totalAwayAggAgainst": 623,
+            "totalAwayAgg": 675,
+            "totalAwayAggAgainst": 644,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 33,
             "homeLosses": 7,
             "awayWins": 18,
-            "awayLosses": 19,
+            "awayLosses": 20,
             "cupWins": 2,
             "cupLosses": 1,
             "pairWins": 0,
@@ -2656,7 +2658,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 80,
+            "totalGamesPlayed": 81,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2722,6 +2724,7 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -2822,7 +2825,8 @@
                 "john armitage 17 - 21 josh mordue",
                 "john armitage 21 - 13 scott bloodworth",
                 "john armitage 21 - 14 chris sowden",
-                "john armitage 16 - 21 clive foord"
+                "john armitage 16 - 21 clive foord",
+                "john armitage 20 - 21 ben stockdale"
             ]
         },
         "karl chapman": {
@@ -4466,12 +4470,12 @@
             ]
         },
         "peter crowther": {
-            "totalAgg": 2161,
-            "totalAggAgainst": 2085,
-            "availableAgg": 2625,
+            "totalAgg": 2170,
+            "totalAggAgainst": 2106,
+            "availableAgg": 2646,
             "availablePairsAgg": 0,
             "availableHomeAgg": 1281,
-            "availableAwayAgg": 1218,
+            "availableAwayAgg": 1239,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
@@ -4480,14 +4484,14 @@
             "totalHomeAggAgainst": 942,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
-            "totalAwayAgg": 891,
-            "totalAwayAggAgainst": 1054,
+            "totalAwayAgg": 900,
+            "totalAwayAggAgainst": 1075,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 41,
             "homeLosses": 20,
             "awayWins": 19,
-            "awayLosses": 39,
+            "awayLosses": 40,
             "cupWins": 3,
             "cupLosses": 3,
             "pairWins": 0,
@@ -4498,7 +4502,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 125,
+            "totalGamesPlayed": 126,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -4612,6 +4616,7 @@
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -4754,7 +4759,8 @@
                 "peter crowther 5 - 21 steve clamp",
                 "peter crowther 16 - 21 kevin wood",
                 "peter crowther 21 - 17 thomas cater",
-                "peter crowther 3 - 21 thomas hanson"
+                "peter crowther 3 - 21 thomas hanson",
+                "peter crowther 9 - 21 neil tordoff"
             ]
         },
         "phil sutcliffe": {
@@ -5643,25 +5649,25 @@
             ]
         },
         "stewart watson": {
-            "totalAgg": 2318,
-            "totalAggAgainst": 2151,
-            "availableAgg": 2751,
+            "totalAgg": 2339,
+            "totalAggAgainst": 2165,
+            "availableAgg": 2772,
             "availablePairsAgg": 0,
-            "availableHomeAgg": 1302,
+            "availableHomeAgg": 1323,
             "availableAwayAgg": 1302,
             "availablePairsHomeAgg": 0,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "totalHomeAgg": 1155,
-            "totalHomeAggAgainst": 969,
+            "totalHomeAgg": 1176,
+            "totalHomeAggAgainst": 983,
             "totalPairsHomeAgg": 0,
             "totalPairsHomeAggAgainst": 0,
             "totalAwayAgg": 1044,
             "totalAwayAggAgainst": 1066,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
-            "homeWins": 38,
+            "homeWins": 39,
             "homeLosses": 24,
             "awayWins": 33,
             "awayLosses": 29,
@@ -5675,7 +5681,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 131,
+            "totalGamesPlayed": 132,
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -5791,6 +5797,7 @@
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
                 "Thursday Vets Bradford",
+                "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
                 "Saturday Bradford",
@@ -5943,7 +5950,8 @@
                 "stewart watson 13 - 21 ken lee",
                 "stewart watson 11 - 21 nigel marshall",
                 "stewart watson 21 - 20 david halligan",
-                "stewart watson 12 - 21 mick angus"
+                "stewart watson 12 - 21 mick angus",
+                "stewart watson 21 - 14 paul demetriades"
             ]
         },
         "stuart potter": {
@@ -6380,6 +6388,6 @@
             ]
         }
     },
-    "lastUpdated": "20/09/2024",
+    "lastUpdated": "21/09/2024",
     "statsYear": "2024"
 }
