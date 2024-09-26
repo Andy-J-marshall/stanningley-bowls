@@ -26,7 +26,6 @@ export class TeamStatsPage {
   private readonly mondayCupWinPercValue: Locator;
   private readonly mondayAggValue: Locator;
   private readonly mondayOpponentAggValue: Locator;
-  private readonly mondayLeaguePositionValue: Locator;
 
   private readonly tuesVetsGamesValue: Locator;
   private readonly tuesVetsWinsValue: Locator;
@@ -38,7 +37,6 @@ export class TeamStatsPage {
   private readonly tuesVetsCupWinPercValue: Locator;
   private readonly tuesVetsAggValue: Locator;
   private readonly tuesVetsOpponentAggValue: Locator;
-  private readonly tuesVetsLeaguePositionValue: Locator;
 
   private readonly wedPairsNoGamesPlayedMessage: Locator;
 
@@ -105,9 +103,6 @@ export class TeamStatsPage {
     this.mondayOpponentAggValue = page.locator(
       '#mondaycombinedleeds-team-results #totalOpponentAggValue'
     );
-    this.mondayLeaguePositionValue = page.locator(
-      '#mondaycombinedleeds-team-results #leaguePosition'
-    );
 
     this.tuesVetsGamesValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalGamesValue'
@@ -139,9 +134,6 @@ export class TeamStatsPage {
     this.tuesVetsOpponentAggValue = page.locator(
       '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
     );
-    this.tuesVetsLeaguePositionValue = page.locator(
-      '#tuesdayvetsleeds-team-results #leaguePosition'
-    );
     this.wedPairsNoGamesPlayedMessage = page.locator(
       '#team-select-tabs-tabpane-wed p'
     );
@@ -172,7 +164,6 @@ export class TeamStatsPage {
     expect(this.totalGamesValue).toBeVisible({ visible: false });
 
     expect(this.tuesVetsGamesValue).toContainText('22');
-    expect(this.tuesVetsLeaguePositionValue).toContainText('1');
     expect(this.tuesVetsWinsValue).toContainText('21');
     expect(this.tuesVetsLossesValue).toContainText('1');
     expect(this.tuesVetsDrawsValue).toHaveCount(0);
@@ -189,7 +180,6 @@ export class TeamStatsPage {
     expect(this.totalGamesValue).toBeVisible({ visible: false });
 
     expect(this.mondayGamesValue).toContainText('20');
-    expect(this.mondayLeaguePositionValue).toContainText('4');
     expect(this.mondayWinsValue).toContainText('12');
     expect(this.mondayLossesValue).toContainText('5');
     expect(this.mondayDrawsValue).toContainText('3');

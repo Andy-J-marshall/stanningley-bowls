@@ -16,7 +16,6 @@ function StatsTableDisplay(props) {
     const awayDraws = props.awayDraws || 0;
     const agg = props.agg;
     const opponentAgg = props.opponentAgg;
-    const leaguePosition = props.leaguePosition;
 
     const homeGames = homeDraws + homeWins + homeLosses;
     const awayGames = awayDraws + awayWins + awayLosses;
@@ -36,12 +35,6 @@ function StatsTableDisplay(props) {
                         <tr>
                             <td>Games</td>
                             <td id="totalGamesValue">{totalGames}</td>
-                        </tr>
-                    ) : null}
-                    {leaguePosition >= 0 ? (
-                        <tr>
-                            <td>League position</td>
-                            <td id="leaguePosition">{leaguePosition}</td>
                         </tr>
                     ) : null}
                     {totalWins >= 0 ? (

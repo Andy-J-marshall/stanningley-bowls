@@ -125,21 +125,6 @@ for team in teamDays:
                     else:
                         awayRow.append(rowNumber)
 
-        # Find league position for teams
-        currentLeaguePosition = -1
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            # League position appears before player results
-            if rowNumber > startingRow:
-                break
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                leagueTableText = re.search(r"\d+\.\|", row.lower())
-                if leagueTableText:
-                    if teamNameUsedForLeague.lower() in row.lower():
-                        leaguePosition = row.split('.')[0].strip()
-                        currentLeaguePosition = int(leaguePosition)
-                        break
-
         # Find team results and scores
         awayWins = 0
         awayLosses = 0
@@ -220,6 +205,7 @@ for team in teamDays:
                     awayAgg = int(matchAgg[1].strip())
 
             # Home games
+            # TODO revert changes for "|" in both this and other file
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
@@ -283,7 +269,6 @@ for team in teamDays:
             'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
             'agg': teamAgg,
             'opponentAgg': opponentAgg,
-            'leaguePosition': currentLeaguePosition,
             'results': results
         }
         allTeamResults.append(teamResults)

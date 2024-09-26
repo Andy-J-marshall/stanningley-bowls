@@ -114,8 +114,6 @@ def sanityChecksOnTeamStats(allTeamResults):
     for team in allTeamResults:
         dayForTeam = team['day']
 
-        if team['totalGamesPlayed'] > 0 and (team['leaguePosition'] <= 0 or team['leaguePosition'] > 13):
-            raise Exception(f'leaguePosition for {dayForTeam} incorrect?')
         if team['agg'] < 0 or team['agg'] > 4000:
             raise Exception(f'agg for {dayForTeam} incorrect?')
         if team['opponentAgg'] < 0 or team['opponentAgg'] > 4000:

@@ -6898,7 +6898,6 @@
             "totalGamesPlayed": 18,
             "agg": 3197,
             "opponentAgg": 2724,
-            "leaguePosition": 2,
             "results": [
                 "Stanningley A 20 - 10 Tarnfield A",
                 "Greenbottom B 3 - 27 Stanningley A",
@@ -6936,7 +6935,6 @@
             "totalGamesPlayed": 18,
             "agg": 2785,
             "opponentAgg": 3040,
-            "leaguePosition": 9,
             "results": [
                 "Tarnfield B 12 - 18 Stanningley B",
                 "Stanningley B 18 - 12 Eccleshill",
@@ -6974,7 +6972,6 @@
             "totalGamesPlayed": 18,
             "agg": 3145,
             "opponentAgg": 2902,
-            "leaguePosition": 5,
             "results": [
                 "West Royd Pk 35 - 36 Stanningley",
                 "Stanningley 45 - 22 Middleton Pk",
@@ -7012,7 +7009,6 @@
             "totalGamesPlayed": 22,
             "agg": 2346,
             "opponentAgg": 2153,
-            "leaguePosition": 4,
             "results": [
                 "Stanningley 5 - 21 Clayton A",
                 "Wibsey A 15 - 11 Stanningley",
@@ -7054,7 +7050,6 @@
             "totalGamesPlayed": 16,
             "agg": 1717,
             "opponentAgg": 1560,
-            "leaguePosition": 4,
             "results": [
                 "Rufford B 13 - 11 Stanningley A",
                 "Stanningley A 4 - 20 Rawdon",
@@ -7090,7 +7085,6 @@
             "totalGamesPlayed": 14,
             "agg": 1172,
             "opponentAgg": 1578,
-            "leaguePosition": 8,
             "results": [
                 "Stanningley B 16 - 8 Hall Park B",
                 "Greenbottom B 17 - 7 Stanningley B",
@@ -7124,7 +7118,6 @@
             "totalGamesPlayed": 22,
             "agg": 2701,
             "opponentAgg": 3171,
-            "leaguePosition": 10,
             "results": [
                 "Armley Cons 37 - 12 Stanningley A",
                 "Stanningley A 21 - 34 Churwell Pk",
@@ -7166,7 +7159,6 @@
             "totalGamesPlayed": 17,
             "agg": 1954,
             "opponentAgg": 2467,
-            "leaguePosition": 9,
             "results": [
                 "Stanningley B 31 - 30 New Wortley",
                 "Cross Flatts Pk 36 - 20 Stanningley B",
@@ -7203,7 +7195,6 @@
             "totalGamesPlayed": 20,
             "agg": 3084,
             "opponentAgg": 3629,
-            "leaguePosition": 10,
             "results": [
                 "Stanningley A 25 - 5 Eccleshill 'C'",
                 "Stanningley A 15 - 15 Birkenshaw",
@@ -7243,7 +7234,6 @@
             "totalGamesPlayed": 16,
             "agg": 1946,
             "opponentAgg": 2144,
-            "leaguePosition": 6,
             "results": [
                 "Stanningley B 15 - 13 Tyersal 'B'",
                 "Shipley Club 'C' 18 - 10 Stanningley B",
