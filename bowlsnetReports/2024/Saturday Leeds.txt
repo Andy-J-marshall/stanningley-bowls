@@ -493,7 +493,7 @@
  Time  |       Sat 14th Sep       |   |          Div 1           |                   |                                  |
        |                          |   |       League Div 2       |                   |                                  |
 ------------------------------------------------------------------------------------------------------------------------
- 2:00pm|Middleton Comm     |30|138| v.|Stanningley Park B |22|102|                   |From Sat 25th May                 |
+ 2:00pm|Middleton Comm     |27|127| v.|Stanningley Park B |27|123|                   |From Sat 25th May                 |
 ------------------------------------------------------------------------------------------------------------------------
  Time  |       Sat 14th Sep       |   |        Sat Div 2         |                   |                                  |
        |                          |   |          Final           |                   |                                  |
@@ -530,11 +530,11 @@ Pos|Team              |Pl| W| L| For|
 ===|==================|==|==|==|====|
  1.|New Farnley       |18|18| 0| 636|
  2.|Pudsey Park       |18|12| 6| 569|
- 3.|Middleton Comm    |18|11| 6| 545|
+ 3.|Middleton Comm    |18|10| 6| 542|
  4.|Cranmore          |18| 9| 9| 524|
  5.|Western Flatts    |18| 9| 8| 518|
  6.|Bramley Park      |18| 6|11| 496|
- 7.|Stanningley Park B|18| 9| 7| 487|
+ 7.|Stanningley Park B|18| 9| 6| 492|
  8.|Gildersome B      |18| 6|11| 480|
  9.|Middleton Park    |18| 6|12| 449|
 10.|New Armley        |18| 1|17| 406|
@@ -3271,9 +3271,9 @@ Roy Tebbutt       | 21|Laila Packer       | 11|
 Charlotte Doris   |  7|Donald Shaw        | 21|
 Christine Glynn   | 21|Rob Packer         | 10|
 Sue Harrison      | 21|Colin Haque        |  5|
-Terry Maher       | 21|*No Player*        |  0|
-        Aggregate:|138|         Aggregate:|102|
-           Points:| 30|            Points:| 22|
+Terry Maher       | 10|Malvin Miller      | 21|
+        Aggregate:|127|         Aggregate:|123|
+           Points:| 27|            Points:| 27|
 
     Sat Div 2     |   |   Sat 14th Sep    |   |
       Final       |   |  On Holbeck Moor  |   |

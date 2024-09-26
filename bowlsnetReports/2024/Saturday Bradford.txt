@@ -1009,6 +1009,10 @@ Pos|Team                         |Pl| W| L| For|
 
 
 === FULL RESULTS: Thu 21st Mar to Sat 5th Oct
+=== Bradford (Saturday) 2024
+=== League Calendar (as of Thu 26th Sep)
+=== Complete List
+
  Division 1 (Naylor Premier) |   |        Sat 13th Apr         |   |
      Littlemoor S&SC 'A'     |   |          Cononley           |   |
 Marc Armitage 'A'            | 21|Sharon Gadd                  |  9|
@@ -8010,7 +8014,7 @@ Nigel Wormald                | 20|Stephen Gilroy               | 21|
 James Teale                  | 20|Nicky Dewhirst               | 21|
 Thomas Cater                 | 21|Alan Mazurke                 |  6|
 Daniel Teale                 | 21|Mark Allman                  |  4|
-Ben Stockdale                | 21|John Armitage 'A'            | 20|
+Ben Stockdale                | 21|A.N. ANOTHER                 | 20|
 Luke Teale                   | 21|Will Bedford                 | 17|
 Kevin Siddle                 | 21|Lee Wider                    | 13|
 Joe Stockdale                | 17|Marc Armitage 'A'            | 21|
@@ -8038,6 +8042,22 @@ Nicky Dewhirst               | 21|Peter Oliver                 |  4|
                       Points:| 18|                      Points:| 12|
 
      Division 2 (Godwin)     |   |        Sat 21st Sep         |   |
+         Pudsey 'B'          |   |     Brighouse Sports A      |   |
+Dave Smith                   | 16|Robert Hopper                | 21|
+Wendy Shimbles               | 17|Richard Hobson 'A'           | 21|
+Sue Chadwick                 | 15|Julian Dawson                | 21|
+Logan Preston                | 10|Gordon Bradford              | 21|
+Steve Emmett                 | 21|Helen Simpson                | 17|
+David Hilliam                | 21|Conner Davis                 |  7|
+Matthew Leaf                 | 21|Mark Connolly                | 18|
+Simon Metcalfe               | 21|Graham Roberts               | 12|
+Peter Simpson                | 21|Jon Gamble                   | 19|
+Sebastian Mordue             | 21|Bailey Dawson                | 19|
+                       Games:|  6|                       Games:|  4|
+                   Aggregate:|184|                   Aggregate:|176|
+                      Points:| 17|                      Points:| 13|
+
+     Division 2 (Godwin)     |   |        Sat 21st Sep         |   |
           Rastrick           |   |       Eccleshill 'A'        |   |
 Damien Talbot                | 21|Ian Matthews 'B'             | 13|
 Debbie Farrar                | 13|Neil Mylan 'A'               | 21|
@@ -8048,7 +8068,7 @@ Katy Atkinson                | 11|Nicky Bastow 'A'             | 21|
 Mark Sykes                   | 21|Andy Haran                   | 16|
 Paul Toon                    | 21|Ken Gilroy                   | 20|
 Stuart Rodd                  | 21|Mick Angus                   | 15|
-*A.N.Other*                  | 21|Nicky Rooks                  | 18|
+Jane Hollingworth            | 21|Nicky Rooks                  | 18|
                        Games:|  6|                       Games:|  4|
                    Aggregate:|179|                   Aggregate:|177|
                       Points:| 17|                      Points:| 13|
@@ -8079,7 +8099,7 @@ David Waite                  | 21|Kenny McCafferty             | 11|
 Eileen Beck                  | 18|Steve Peers                  | 21|
 Carole Wright 'B'            | 10|James Klenk                  | 21|
 Dianne Teale                 | 21|Peter Wrightson              |  8|
-Glynn Goodyear               | 21|*A.N.Other*                  | 18|
+Glynn Goodyear               | 21|Bob Hiley                    | 18|
 Brian Teale                  | 20|Michael Sansom               | 21|
                        Games:|  6|                       Games:|  4|
                    Aggregate:|193|                   Aggregate:|177|
@@ -8100,6 +8120,22 @@ Sebastian Mordue             | 17|Colin Matthewman             | 21|
                        Games:|  4|                       Games:|  6|
                    Aggregate:|192|                   Aggregate:|185|
                       Points:| 15|                      Points:| 15|
+
+     Division 3 (Mellor)     |   |        Sat 21st Sep         |   |
+       Eccleshill 'B'        |   |          Wyke 'B'           |   |
+Peter Jefferson              | 21|Dominic Hanson               | 15|
+Diane Emery                  | 21|Mike Lambert                 | 18|
+Peter Howroyd                | 21|Richard Kerr                 | 18|
+Roger Binks                  | 21|Colin Fallows                |  6|
+Kevin Ackroyd                | 21|Michael Walton               | 15|
+Derek Relton                 | 21|Richard Bell                 |  5|
+John Griffin                 | 21|Stephen Ward                 | 15|
+Pauline Gilroy               | 21|Brian Metcalf                | 10|
+Ken Wilson                   | 21|Vincent Kerr                 |  9|
+Stephen Bastow               |  6|Matthew Hicks                | 21|
+                       Games:|  9|                       Games:|  1|
+                   Aggregate:|195|                   Aggregate:|132|
+                      Points:| 26|                      Points:|  4|
 
      Division 3 (Mellor)     |   |        Sat 21st Sep         |   |
           Hightown           |   |Hipperholme & Lightcliffe 'A'|   |
@@ -8130,6 +8166,20 @@ David Lloyd                  | 21|Gary Jackson                 | 20|
                        Games:|  4|                       Games:|  4|
                    Aggregate:|119|                   Aggregate:|142|
                       Points:| 11|                      Points:| 17|
+
+Division 4 (Bartle) 8 Player |   |        Sat 21st Sep         |   |
+      West Bradford 'A'      |   |         Queensbury          |   |
+Mark Woolner                 | 21|Gerry Hill                   |  7|
+John Shoesmith               | 20|Peter Howell                 | 21|
+Bill Hutchinson              |  9|David Clough                 | 21|
+Kevin Buckley                | 21|Barbara Wardman              | 19|
+Lesley Pawson                |  6|Michael Jagger               | 21|
+Eddie Pells                  | 19|Michael Clare                | 21|
+Mark Chambers                | 10|David Smalley                | 21|
+Paul Wood                    | 16|Dennis Robinson              | 21|
+                       Games:|  2|                       Games:|  6|
+                   Aggregate:|122|                   Aggregate:|152|
+                      Points:|  9|                      Points:| 19|
 
 Division 4 (Bartle) 8 Player |   |        Sat 21st Sep         |   |
          Burley Park         |   |        Hove Edge 'B'        |   |
@@ -8270,5 +8320,4 @@ Justine Wood                 | 21|Brian Woolner                | 17|
                        Games:|  8|                       Games:|  0|
                    Aggregate:|168|                   Aggregate:|104|
                       Points:| 25|                      Points:|  3|
-
 
