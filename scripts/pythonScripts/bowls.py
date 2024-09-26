@@ -44,6 +44,7 @@ for team in teamDays:
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
+            # This is required for the pre-2024 reports. Alternatively, regenerate the reports in the new format
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
