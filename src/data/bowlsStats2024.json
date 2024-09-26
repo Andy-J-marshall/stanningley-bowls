@@ -3443,12 +3443,12 @@
             }
         },
         "malvin miller": {
-            "totalAgg": 1178,
-            "totalAggAgainst": 1048,
-            "availableAgg": 1365,
+            "totalAgg": 1199,
+            "totalAggAgainst": 1058,
+            "availableAgg": 1386,
             "availablePairsAgg": 21,
             "availableHomeAgg": 651,
-            "availableAwayAgg": 462,
+            "availableAwayAgg": 483,
             "availablePairsHomeAgg": 21,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 21,
@@ -3457,13 +3457,13 @@
             "totalHomeAggAgainst": 454,
             "totalPairsHomeAgg": 21,
             "totalPairsHomeAggAgainst": 20,
-            "totalAwayAgg": 373,
-            "totalAwayAggAgainst": 377,
+            "totalAwayAgg": 394,
+            "totalAwayAggAgainst": 387,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 22,
             "homeLosses": 9,
-            "awayWins": 12,
+            "awayWins": 13,
             "awayLosses": 10,
             "cupWins": 5,
             "cupLosses": 7,
@@ -3475,7 +3475,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 65,
+            "totalGamesPlayed": 66,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Tuesday Leeds",
@@ -3534,6 +3534,7 @@
                 "Saturday Leeds (A)",
                 "Saturday Leeds (A)",
                 "Saturday Leeds (A)",
+                "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
@@ -3615,7 +3616,8 @@
                 "malvin miller 21 - 9 bob pearson",
                 "malvin miller 14 - 21 margaret mcphail",
                 "malvin miller 20 - 21 sue harrison",
-                "malvin miller 21 - 11 james king"
+                "malvin miller 21 - 11 james king",
+                "malvin miller 21 - 10 terry maher"
             ],
             "monday combined leeds": {
                 "games": 1,
@@ -3653,9 +3655,9 @@
                 "aggDiff": -23
             },
             "saturday leeds (b)": {
-                "games": 8,
-                "wins": 4,
-                "aggDiff": 4
+                "games": 9,
+                "wins": 5,
+                "aggDiff": 15
             }
         },
         "martin fulton": {
@@ -6740,17 +6742,17 @@
             "awayWins": 5,
             "homeWins": 4,
             "wins": 10,
-            "awayLosses": 4,
+            "awayLosses": 3,
             "homeLosses": 3,
             "homeDraws": 2,
-            "awayDraws": 0,
-            "draws": 2,
+            "awayDraws": 1,
+            "draws": 3,
             "cupWins": 1,
             "cupLosses": 1,
-            "losses": 8,
+            "losses": 7,
             "totalGamesPlayed": 20,
-            "agg": 2544,
-            "opponentAgg": 2669,
+            "agg": 2565,
+            "opponentAgg": 2658,
             "results": [
                 "Stanningley B 32 - 28 Gildersome B",
                 "New Armley 24 - 31 Stanningley B",
@@ -6771,7 +6773,7 @@
                 "New Farnley 150 - 110 Stanningley B",
                 "Middleton Park 22 - 33 Stanningley B",
                 "Stanningley B 32 - 30 Bramley Park",
-                "Middleton Comm 30 - 22 Stanningley B"
+                "Middleton Comm 27 - 27 Stanningley B"
             ]
         }
     ],
