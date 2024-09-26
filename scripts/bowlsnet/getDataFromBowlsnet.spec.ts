@@ -119,9 +119,6 @@ for (const team of teams) {
       .getByRole('button', { name: 'Export MatchCards...' })
       .click();
 
-    // TODO add results too
-
-
     // View report in new tab
     const newPagePromise = page.waitForEvent('popup');
     await page
