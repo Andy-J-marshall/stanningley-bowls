@@ -205,11 +205,10 @@ for team in teamDays:
                     awayAgg = int(matchAgg[1].strip())
 
             # Home games
-            # TODO revert changes for "|" in both this and other file
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
-                opponent = opponent.replace('|', '').replace('&amp;', '&').strip()
+                opponent = opponent.replace('&amp;', '&').strip()
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent
@@ -232,7 +231,7 @@ for team in teamDays:
             # Away games
             if rowNumber in awayRow:
                 opponent = rowText.split(teamNameUsedForLeague)[0]
-                opponent = opponent.replace('|', '').replace('&amp;', '&').strip()
+                opponent = opponent.replace('&amp;', '&').strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + teamNameToUse
