@@ -83,7 +83,6 @@ describe('#StatsHelper Tests', () => {
           cupLosses: 0,
           agg: 1949,
           opponentAgg: 1572,
-          leaguePosition: 2,
           results: [
             'Stanningley 26 - 14 Sth Lds Cons (Mon 11th Apr (6:15))',
             'Gildersome 14 - 26 Stanningley (Mon 18th Apr (6:15))',
@@ -117,7 +116,6 @@ describe('#StatsHelper Tests', () => {
           cupLosses: 1,
           agg: 1866,
           opponentAgg: 1233,
-          leaguePosition: 2,
           results: [
             'Horsforth Woodside. 21 - 38 Stanningley (Tue 26th Apr (1:30))',
             'New Armley 13 - 40 Stanningley (Tue 10th May (1:30))',
@@ -145,7 +143,6 @@ describe('#StatsHelper Tests', () => {
           cupLosses: 1,
           agg: 1567,
           opponentAgg: 1347,
-          leaguePosition: 1,
           results: [
             'Stanningley 24 - 36 Churwell Pk (Thu 21st Apr (1:30))',
             'Pudsey Park A 30 - 26 Stanningley (Thu 28th Apr (1:30))',
@@ -172,7 +169,6 @@ describe('#StatsHelper Tests', () => {
           cupLosses: 1,
           agg: 2298,
           opponentAgg: 1546,
-          leaguePosition: 1,
           results: [
             'Sth Leeds Cons B 18 - 35 Stanningley (Sat 2nd Apr (2:00))',
             'Stanningley 37 - 22 Gildersome B (Sat 16th Apr (2:00))',

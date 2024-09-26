@@ -61,14 +61,10 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
   - Advanced: You can also get, update and commit the stats, then create a PR, by running `npm run get-stats-update-pr`. Once the PR is merged it should automatically deploy master to prod.
     - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
-  - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
-  - Create new sheets for each day the team plays (ensure the names match the team names used by the `bowls.py` script, but remove any A/B suffix)
-  - Navigate to the Bowlsnet league URLs, go to Info, then Reports:
-  - Click Output Tables
-  - Select the full From and To date ranges
-  - Click Output Full Results
-  - Copy the outputted reports to the corresponding sheet in the Excel workbook
-  - Save the Excel file
+  - Navigate to the Bowlsnet league URLs
+  - Go to Fixtures, then click the "..." dropdown and select Export matchcards, then select In text format
+  - Copy the outputted reports to a text file
+  - Save the file in the `/bowlsnetReports/{year}` directory
   - Run `npm run update-stats`
 
 You can also set up a Cron scheduled job:
@@ -86,7 +82,7 @@ If a new player joins or a team is entered into a new league, you'll need to upd
 
 e.g. a new player would have to be added into the `players` list.
 
-If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array and `deduplicateNames` function.
+If a player has multiple spellings, enter them into the `duplicatePlayerNames` array and `deduplicateNames` function.
 
 If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
 
@@ -105,7 +101,7 @@ Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 - preferredTeamName
 - teamDays
 - players
-- duplicateTeamMemberNames
+- duplicatePlayerNames
 - traitorPlayers (also update the days)
 
 Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
@@ -153,15 +149,15 @@ Update team info in all components:
 
 # Updates required at end of each calendar year
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicatePlayerNames and teamDays.
 
 Create a directory for the new year in the `/bowlsnetReports`.
 
-Update the `teamDetails.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
+Update the `teamDetails.py` script: deduplicateNames, otherTeams, and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
 
 If entering a new league, make sure the `bowls.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
 
-If Stanningley A and Stanningley B play one another then the `bowls.py` script will currently fail. The exception will need to be removed and the issue around the scoring and results if they play one another fixed.
+If the A and B team play one another then the `bowls.py` script will currently fail. The exception will need to be removed and the issue around the scoring and results if they play one another fixed.
 
 After generating the stats file for the new year, import the file into `statsData.js`. Update `allYearStats` and `allYearCombinedStats`.
 Update `statsCallback` in `App.js` with the reference to the new year's stats file.

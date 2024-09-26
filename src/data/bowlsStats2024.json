@@ -6470,7 +6470,6 @@
             "totalGamesPlayed": 22,
             "agg": 2359,
             "opponentAgg": 2037,
-            "leaguePosition": 3,
             "results": [
                 "Rothwell BC A 25 - 17 Stanningley",
                 "Stanningley 26 - 14 Whitkirk A",
@@ -6512,7 +6511,6 @@
             "totalGamesPlayed": 24,
             "agg": 3717,
             "opponentAgg": 2381,
-            "leaguePosition": 2,
             "results": [
                 "Gildersome 18 - 36 Stanningley",
                 "Stanningley 36 - 12 Western Flatts",
@@ -6556,7 +6554,6 @@
             "totalGamesPlayed": 22,
             "agg": 3415,
             "opponentAgg": 2673,
-            "leaguePosition": 1,
             "results": [
                 "Pudsey Park A 17 - 37 Stanningley",
                 "Stanningley 37 - 20 Garforth C C",
@@ -6598,7 +6595,6 @@
             "totalGamesPlayed": 21,
             "agg": 2445,
             "opponentAgg": 1856,
-            "leaguePosition": 1,
             "results": [
                 "Stanningley 25 - 17 Burley Park",
                 "Gildersome A 24 - 23 Stanningley",
@@ -6639,7 +6635,6 @@
             "totalGamesPlayed": 24,
             "agg": 1846,
             "opponentAgg": 2166,
-            "leaguePosition": 9,
             "results": [
                 "Stanningley 15 - 9 Adel B",
                 "Yeadon Park B 15 - 9 Stanningley",
@@ -6683,7 +6678,6 @@
             "totalGamesPlayed": 15,
             "agg": 2153,
             "opponentAgg": 1938,
-            "leaguePosition": 2,
             "results": [
                 "Stanningley 33 - 29 Pudsey Park A",
                 "Western Flatts 22 - 33 Stanningley",
@@ -6718,7 +6712,6 @@
             "totalGamesPlayed": 22,
             "agg": 3354,
             "opponentAgg": 2505,
-            "leaguePosition": 1,
             "results": [
                 "Cross Flatts A 37 - 21 Stanningley A",
                 "Stanningley A 40 - 13 Gildersome A",
@@ -6760,7 +6753,6 @@
             "totalGamesPlayed": 20,
             "agg": 2565,
             "opponentAgg": 2658,
-            "leaguePosition": 7,
             "results": [
                 "Stanningley B 32 - 28 Gildersome B",
                 "New Armley 24 - 31 Stanningley B",
@@ -6785,6 +6777,6 @@
             ]
         }
     ],
-    "lastUpdated": "26/09/2024",
+    "lastUpdated": "27/09/2024",
     "statsYear": "2024"
 }

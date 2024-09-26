@@ -11,10 +11,10 @@ teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
 displayTeamName = teamDetails.preferredTeamName
 players = teamDetails.players
-duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
+duplicatePlayerNames = teamDetails.duplicatePlayerNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, players)
-formatName = utils.formatName
+deduplicateNames = teamDetails.deduplicateNames
 cupTextList = utils.cupText
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
@@ -44,6 +44,7 @@ for team in teamDays:
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
+            # This is required for the pre-2024 reports. Alternatively, regenerate the reports in the new format
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
@@ -124,21 +125,6 @@ for team in teamDays:
                         homeRow.append(rowNumber)
                     else:
                         awayRow.append(rowNumber)
-
-        # Find league position for teams
-        currentLeaguePosition = -1
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            # League position appears before player results
-            if rowNumber > startingRow:
-                break
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                leagueTableText = re.search(r"\d+\.\|", row.lower())
-                if leagueTableText:
-                    if teamNameUsedForLeague.lower() in row.lower():
-                        leaguePosition = row.split('.')[0].strip()
-                        currentLeaguePosition = int(leaguePosition)
-                        break
 
         # Find team results and scores
         awayWins = 0
@@ -223,7 +209,7 @@ for team in teamDays:
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
-                opponent = opponent.replace('|', '').replace('&amp;', '&').strip()
+                opponent = opponent.replace('&amp;', '&').strip()
                 result = teamNameToUse + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + opponent
@@ -246,7 +232,7 @@ for team in teamDays:
             # Away games
             if rowNumber in awayRow:
                 opponent = rowText.split(teamNameUsedForLeague)[0]
-                opponent = opponent.replace('|', '').replace('&amp;', '&').strip()
+                opponent = opponent.replace('&amp;', '&').strip()
                 result = opponent + ' ' + \
                     str(homeScore) + ' - ' + str(awayScore) + \
                     ' ' + teamNameToUse
@@ -283,7 +269,6 @@ for team in teamDays:
             'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
             'agg': teamAgg,
             'opponentAgg': opponentAgg,
-            'leaguePosition': currentLeaguePosition,
             'results': results
         }
         allTeamResults.append(teamResults)
@@ -292,7 +277,7 @@ for team in teamDays:
         
         def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
             # Checks if player plays for team on selected day
-            playerName = formatName(playerName)
+            playerName = deduplicateNames(playerName)
             if playerName in traitorPlayers[league]:
                 return False
             
@@ -322,15 +307,15 @@ for team in teamDays:
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
                 if len(findPossiblePlayerNames) > 1:                
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = formatName(possiblePlayerNameHome).lower()
-                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicateTeamMemberNames:
+                    possiblePlayerNameHome = deduplicateNames(possiblePlayerNameHome).lower()
+                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home')
                         if validPlayer:
                             homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = formatName(possiblePlayerNameAway).lower()
-                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicateTeamMemberNames:
+                    possiblePlayerNameAway = deduplicateNames(possiblePlayerNameAway).lower()
+                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away')
                         if validPlayer:
                             awayPlayerRow.append(rowNumber)
@@ -431,10 +416,10 @@ for team in teamDays:
                             pairsPartner = findPossiblePairsPlayerNames[1]
                             secondOpponent = findPossiblePairsPlayerNames[0]
 
-                playerName = formatName(playerName)
-                opponentsName = formatName(opponentsName)
-                pairsPartner = formatName(pairsPartner)
-                secondOpponent = formatName(secondOpponent)
+                playerName = deduplicateNames(playerName)
+                opponentsName = deduplicateNames(opponentsName)
+                pairsPartner = deduplicateNames(pairsPartner)
+                secondOpponent = deduplicateNames(secondOpponent)
                     
                 # Store player stats
                 playerNameForResult = playerName

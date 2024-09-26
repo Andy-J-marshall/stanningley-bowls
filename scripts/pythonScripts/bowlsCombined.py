@@ -12,7 +12,7 @@ players = teamDetails.players
 duplicatePlayerNames = teamDetails.duplicatePlayerNames
 teamsTracking = teamDetails.teamsTracking
 playerResults = utils.returnListOfPlayerStats(leaguesDays, False, players)
-formatName = utils.formatName
+deduplicateNames = teamDetails.deduplicateNames
 standardiseName = utils.standardiseName
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
@@ -39,6 +39,7 @@ for league in leaguesDays:
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
+            # This is required for the pre-2024 reports. Alternatively, regenerate the reports in the new format
             if row and type(row) is str and 'FULL RESULTS' in row.upper():
                 startingRow = rowNumber
             endRow = rowNumber
@@ -70,12 +71,12 @@ for league in leaguesDays:
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
                 if len(findPossiblePlayerNames) > 1:                
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = standardiseName(possiblePlayerNameHome).lower()
+                    possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
                     if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
                         homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = standardiseName(possiblePlayerNameAway).lower()
+                    possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
                     if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
                         awayPlayerRow.append(rowNumber)
 
@@ -218,10 +219,10 @@ for league in leaguesDays:
                                     pairsPartner = findPossiblePairsPlayerNames[1]
                                     secondOpponent = findPossiblePairsPlayerNames[0]
 
-                        playerName = formatName(playerName)
-                        opponentsName = formatName(opponentsName)
-                        pairsPartner = formatName(pairsPartner)
-                        secondOpponent = formatName(secondOpponent)
+                        playerName = deduplicateNames(playerName)
+                        opponentsName = deduplicateNames(opponentsName)
+                        pairsPartner = deduplicateNames(pairsPartner)
+                        secondOpponent = deduplicateNames(secondOpponent)
 
                         # Store player stats
                         playerNameForResult = playerName
