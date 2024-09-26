@@ -6507,11 +6507,11 @@
             "awayDraws": 0,
             "draws": 0,
             "cupWins": 3,
-            "cupLosses": 1,
-            "losses": 3,
-            "totalGamesPlayed": 24,
-            "agg": 3717,
-            "opponentAgg": 2381,
+            "cupLosses": 0,
+            "losses": 2,
+            "totalGamesPlayed": 23,
+            "agg": 3591,
+            "opponentAgg": 2254,
             "leaguePosition": 2,
             "results": [
                 "Gildersome 18 - 36 Stanningley",
@@ -6536,8 +6536,7 @@
                 "Saville Park 32 - 31 Stanningley",
                 "Stanningley 34 - 26 Harehills Park A",
                 "Western Flatts 15 - 40 Stanningley",
-                "Drighlington 28 - 29 Stanningley",
-                "Stanningley 126 - 127 Saville Park"
+                "Drighlington 28 - 29 Stanningley"
             ]
         },
         {
