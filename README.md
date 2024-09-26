@@ -82,7 +82,7 @@ If a new player joins or a team is entered into a new league, you'll need to upd
 
 e.g. a new player would have to be added into the `players` list.
 
-If a player has multiple spellings, enter them into the `duplicateTeamMemberNames` array and `deduplicateNames` function.
+If a player has multiple spellings, enter them into the `duplicatePlayerNames` array and `deduplicateNames` function.
 
 If a player plays for another team on a different day, enter them into the `traitorPlayers` array.
 
@@ -101,7 +101,7 @@ Update `scripts/pythonScripts/teamDetails.py`/`utils`:
 - preferredTeamName
 - teamDays
 - players
-- duplicateTeamMemberNames
+- duplicatePlayerNames
 - traitorPlayers (also update the days)
 
 Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
@@ -149,11 +149,11 @@ Update team info in all components:
 
 # Updates required at end of each calendar year
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicateTeamMemberNames and teamDays.
+Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicatePlayerNames and teamDays.
 
 Create a directory for the new year in the `/bowlsnetReports`.
 
-Update the `teamDetails.py` script: deduplicateNames, otherTeams, otherDuplicatePlayers and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
+Update the `teamDetails.py` script: deduplicateNames, otherTeams, and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
 
 If entering a new league, make sure the `bowls.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
 

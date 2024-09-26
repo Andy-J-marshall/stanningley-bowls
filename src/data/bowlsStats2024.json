@@ -494,13 +494,13 @@
             "losingPairsPartners": [],
             "results": [
                 "andy marshall 21 - 20 tyler patrick",
-                "andy marshall 21 - 6 phil hatch",
+                "andy marshall 21 - 6 p hatch",
                 "andy marshall & tracey marshall 21 - 8 alfie hutchinson & lucas waite",
                 "andy marshall 20 - 21 g hodder",
                 "andy marshall & alyssa randell 21 - 8 harvey lockwood & graham gaunt",
                 "andy marshall & alyssa randell 21 - 9 trevor hawkin & mick bagshaw",
                 "andy marshall 21 - 20 dennis walters",
-                "andy marshall 21 - 15 ian doughty",
+                "andy marshall 21 - 15 doughty ian",
                 "andy marshall 21 - 3 stephen morris",
                 "andy marshall 21 - 19 george ramsden",
                 "andy marshall 21 - 7 mick galley",
@@ -1411,7 +1411,7 @@
                 "craig clarkson 19 - 21 kay stewart",
                 "craig clarkson 21 - 11 david turner",
                 "craig clarkson 21 - 13 john durkan",
-                "craig clarkson 7 - 21 ian doughty",
+                "craig clarkson 7 - 21 doughty ian",
                 "craig clarkson 21 - 19 martin kaitcer",
                 "craig clarkson 21 - 16 brian scholes",
                 "craig clarkson 21 - 15 peter sandles",
@@ -3443,12 +3443,12 @@
             }
         },
         "malvin miller": {
-            "totalAgg": 1199,
-            "totalAggAgainst": 1058,
-            "availableAgg": 1386,
+            "totalAgg": 1178,
+            "totalAggAgainst": 1048,
+            "availableAgg": 1365,
             "availablePairsAgg": 21,
             "availableHomeAgg": 651,
-            "availableAwayAgg": 483,
+            "availableAwayAgg": 462,
             "availablePairsHomeAgg": 21,
             "availablePairsAwayAgg": 0,
             "totalPairsAgg": 21,
@@ -3457,13 +3457,13 @@
             "totalHomeAggAgainst": 454,
             "totalPairsHomeAgg": 21,
             "totalPairsHomeAggAgainst": 20,
-            "totalAwayAgg": 394,
-            "totalAwayAggAgainst": 387,
+            "totalAwayAgg": 373,
+            "totalAwayAggAgainst": 377,
             "totalPairsAwayAgg": 0,
             "totalPairsAwayAggAgainst": 0,
             "homeWins": 22,
             "homeLosses": 9,
-            "awayWins": 13,
+            "awayWins": 12,
             "awayLosses": 10,
             "cupWins": 5,
             "cupLosses": 7,
@@ -3475,7 +3475,7 @@
             "pairAwayLosses": 0,
             "pairCupWins": 0,
             "pairCupLosses": 0,
-            "totalGamesPlayed": 66,
+            "totalGamesPlayed": 65,
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Tuesday Leeds",
@@ -3534,7 +3534,6 @@
                 "Saturday Leeds (A)",
                 "Saturday Leeds (A)",
                 "Saturday Leeds (A)",
-                "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
                 "Saturday Leeds (B)",
@@ -3616,8 +3615,7 @@
                 "malvin miller 21 - 9 bob pearson",
                 "malvin miller 14 - 21 margaret mcphail",
                 "malvin miller 20 - 21 sue harrison",
-                "malvin miller 21 - 11 james king",
-                "malvin miller 21 - 10 terry maher"
+                "malvin miller 21 - 11 james king"
             ],
             "monday combined leeds": {
                 "games": 1,
@@ -3655,9 +3653,9 @@
                 "aggDiff": -23
             },
             "saturday leeds (b)": {
-                "games": 9,
-                "wins": 5,
-                "aggDiff": 15
+                "games": 8,
+                "wins": 4,
+                "aggDiff": 4
             }
         },
         "martin fulton": {
@@ -6049,7 +6047,7 @@
                 "stuart potter 21 - 13 david bisby",
                 "stuart potter & paul leonard 9 - 21 trevor dawson & neil porter",
                 "stuart potter & paul leonard 21 - 3 pat skelton & sue jones",
-                "stuart potter 9 - 21 phil hatch",
+                "stuart potter 9 - 21 p hatch",
                 "stuart potter & vanessa lancaster 14 - 21 louie taylor & mark taylor",
                 "stuart potter & harvey leonard 20 - 21 pat prosser & graham hey",
                 "stuart potter 21 - 7 david rawson",
@@ -6470,7 +6468,6 @@
             "totalGamesPlayed": 22,
             "agg": 2359,
             "opponentAgg": 2037,
-            "leaguePosition": 3,
             "results": [
                 "Rothwell BC A 25 - 17 Stanningley",
                 "Stanningley 26 - 14 Whitkirk A",
@@ -6512,7 +6509,6 @@
             "totalGamesPlayed": 24,
             "agg": 3717,
             "opponentAgg": 2381,
-            "leaguePosition": 2,
             "results": [
                 "Gildersome 18 - 36 Stanningley",
                 "Stanningley 36 - 12 Western Flatts",
@@ -6556,7 +6552,6 @@
             "totalGamesPlayed": 22,
             "agg": 3415,
             "opponentAgg": 2673,
-            "leaguePosition": 1,
             "results": [
                 "Pudsey Park A 17 - 37 Stanningley",
                 "Stanningley 37 - 20 Garforth C C",
@@ -6598,7 +6593,6 @@
             "totalGamesPlayed": 21,
             "agg": 2445,
             "opponentAgg": 1856,
-            "leaguePosition": 1,
             "results": [
                 "Stanningley 25 - 17 Burley Park",
                 "Gildersome A 24 - 23 Stanningley",
@@ -6639,7 +6633,6 @@
             "totalGamesPlayed": 24,
             "agg": 1846,
             "opponentAgg": 2166,
-            "leaguePosition": 9,
             "results": [
                 "Stanningley 15 - 9 Adel B",
                 "Yeadon Park B 15 - 9 Stanningley",
@@ -6683,7 +6676,6 @@
             "totalGamesPlayed": 15,
             "agg": 2153,
             "opponentAgg": 1938,
-            "leaguePosition": 2,
             "results": [
                 "Stanningley 33 - 29 Pudsey Park A",
                 "Western Flatts 22 - 33 Stanningley",
@@ -6718,7 +6710,6 @@
             "totalGamesPlayed": 22,
             "agg": 3354,
             "opponentAgg": 2505,
-            "leaguePosition": 1,
             "results": [
                 "Cross Flatts A 37 - 21 Stanningley A",
                 "Stanningley A 40 - 13 Gildersome A",
@@ -6749,18 +6740,17 @@
             "awayWins": 5,
             "homeWins": 4,
             "wins": 10,
-            "awayLosses": 3,
+            "awayLosses": 4,
             "homeLosses": 3,
             "homeDraws": 2,
-            "awayDraws": 1,
-            "draws": 3,
+            "awayDraws": 0,
+            "draws": 2,
             "cupWins": 1,
             "cupLosses": 1,
-            "losses": 7,
+            "losses": 8,
             "totalGamesPlayed": 20,
-            "agg": 2565,
-            "opponentAgg": 2658,
-            "leaguePosition": 7,
+            "agg": 2544,
+            "opponentAgg": 2669,
             "results": [
                 "Stanningley B 32 - 28 Gildersome B",
                 "New Armley 24 - 31 Stanningley B",
@@ -6781,10 +6771,10 @@
                 "New Farnley 150 - 110 Stanningley B",
                 "Middleton Park 22 - 33 Stanningley B",
                 "Stanningley B 32 - 30 Bramley Park",
-                "Middleton Comm 27 - 27 Stanningley B"
+                "Middleton Comm 30 - 22 Stanningley B"
             ]
         }
     ],
-    "lastUpdated": "26/09/2024",
+    "lastUpdated": "27/09/2024",
     "statsYear": "2024"
 }

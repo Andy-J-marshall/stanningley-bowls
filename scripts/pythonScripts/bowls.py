@@ -11,10 +11,10 @@ teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
 displayTeamName = teamDetails.preferredTeamName
 players = teamDetails.players
-duplicateTeamMemberNames = teamDetails.duplicateTeamMemberNames
+duplicatePlayerNames = teamDetails.duplicatePlayerNames
 traitorPlayers = teamDetails.traitorPlayers
 playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, players)
-formatName = utils.formatName
+deduplicateNames = teamDetails.deduplicateNames
 cupTextList = utils.cupText
 returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
 sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
@@ -277,7 +277,7 @@ for team in teamDays:
         
         def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
             # Checks if player plays for team on selected day
-            playerName = formatName(playerName)
+            playerName = deduplicateNames(playerName)
             if playerName in traitorPlayers[league]:
                 return False
             
@@ -307,15 +307,15 @@ for team in teamDays:
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
                 if len(findPossiblePlayerNames) > 1:                
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = formatName(possiblePlayerNameHome).lower()
-                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicateTeamMemberNames:
+                    possiblePlayerNameHome = deduplicateNames(possiblePlayerNameHome).lower()
+                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home')
                         if validPlayer:
                             homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = formatName(possiblePlayerNameAway).lower()
-                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicateTeamMemberNames:
+                    possiblePlayerNameAway = deduplicateNames(possiblePlayerNameAway).lower()
+                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away')
                         if validPlayer:
                             awayPlayerRow.append(rowNumber)
@@ -416,10 +416,10 @@ for team in teamDays:
                             pairsPartner = findPossiblePairsPlayerNames[1]
                             secondOpponent = findPossiblePairsPlayerNames[0]
 
-                playerName = formatName(playerName)
-                opponentsName = formatName(opponentsName)
-                pairsPartner = formatName(pairsPartner)
-                secondOpponent = formatName(secondOpponent)
+                playerName = deduplicateNames(playerName)
+                opponentsName = deduplicateNames(opponentsName)
+                pairsPartner = deduplicateNames(pairsPartner)
+                secondOpponent = deduplicateNames(secondOpponent)
                     
                 # Store player stats
                 playerNameForResult = playerName

@@ -1,27 +1,20 @@
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 
-cupText = ['prelims', 'pre lim', 'pre-lim', 'preliminary', 'qtr-finals', 'quarter finals', 'quarter-finals', 'semi-finals', 'semi finals', 'final', 'round of 16', 'round of 32', 'round of 64']
-
-def deduplicateNames(name):
-    if name == 'Duncan Mc Phail':
-        name = 'Duncan McPhail'
-    if name == 'Andrew Marshall':
-        name = 'Andy Marshall'
-    if name == 'Stuart Watson':
-        name = 'Stewart Watson'
-    if name == 'Cliff Brogie':
-        name = 'Clifford Brogie'
-    if name == 'Andrew Waller':
-        name = 'Andy Waller'
-    if name == 'Don Shaw':
-        name = 'Donald Shaw'
-    if name == 'James Moorin':
-        name = 'Jim Moorin'
-    if name == 'Philip Thornton':
-        name = 'Phil Thornton'
-    if name == 'Phillip Thornton':
-        name = 'Phil Thornton'
-    return name.lower()
+cupText = [
+    'prelims',
+    'pre lim',
+    'pre-lim',
+    'preliminary',
+    'qtr-finals',
+    'quarter finals',
+    'quarter-finals',
+    'semi-finals',
+    'semi finals',
+    'final',
+    'round of 16',
+    'round of 32',
+    'round of 64'
+]
 
 def standardiseName(name):
     name = name.replace(' - ', '-')
@@ -33,11 +26,6 @@ def standardiseName(name):
     name = name.replace('\'B\'', '')
     name = name.replace(' \'b\'', '')
     name = name.replace('\'b\'', '')
-    return name
-
-def formatName(name):
-    name = standardiseName(name)
-    name = deduplicateNames(name)
     return name.lower().strip()
 
 def returnTotalAggAvailablePerGame(team):
@@ -148,7 +136,7 @@ def sanityChecksOnTeamStats(allTeamResults):
 def sanityChecksOnPlayerStats(playerStats, players):
     print('Running sanity checks on player stats')
     for p in players:
-        player = formatName(p)
+        player = standardiseName(p)
         stats = playerStats[player]
         # check games played
         if stats['totalGamesPlayed'] < 0 or stats['totalGamesPlayed'] > 200:
