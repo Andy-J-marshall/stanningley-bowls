@@ -263,7 +263,7 @@ Lynn Wilcox            Jade Kerry
                              Mon 10th Apr
     New Farnley B             Whitkirk A
 Pat Skelton         6  S Cahill              21
-Barbara Taylor     12  P Hatch               21
+Barbara Taylor     12 Phil Hatch              21
 Bob Taylor         17  G Hodder              21
 Keith Skelton      21  Phil Cox              12
 Emma Dixon         16  Thomas Johnson        21
@@ -303,7 +303,7 @@ Paul Bowes             Joe Doughty
      Whitkirk A             Crossgates BC
 G Hodder           11  Gareth Lally          21
 Andy Johnson       16  Adam Sharpe           21
-P Hatch            18  Peter Wilcox          21
+Phil Hatch           18  Peter Wilcox          21
 Phil Cox           21  Natalie Sanderson     19
 Chloe Jackson      14  Lynn Wilcox           21
 S Cahill               Rachel Quirk            
@@ -393,7 +393,7 @@ Joe Doughty            Angela Morley
                              Mon 24th Apr
    Western Flatts             Whitkirk A
 Hazel Goodall      21  Phil Cox              14
-Granville Stoyles  19  P Hatch               21
+Granville Stoyles  19 Phil Hatch              21
 Dawn Peters         4  S Cahill              21
 Peter Colley        7  G Hodder              21
 Anne Lucas         10  Chloe Jackson         21
@@ -432,7 +432,7 @@ Alyssa Randell         Oliver Delaney
                              Mon 1st May
      Whitkirk A             Rothwell BC A
 Phil Cox           21  Nigel Richardson       5
-P Hatch            21  Darren Robinson       14
+Phil Hatch           21  Darren Robinson       14
 Andy Johnson       20  Trevor Hawkin         21
 P Hardy            21  Tyler Patrick         18
 Chloe Jackson      16  Gary Dennison         21
@@ -537,7 +537,7 @@ Gary Dennison          Louie Taylor
      Stanningley              Whitkirk A
 Paul Bowes         21  S Cahill              12
 Mario Biancardo    21  G Hodder              12
-Shirley Biancardo  21  P Hatch                5
+Shirley Biancardo  21 Phil Hatch               5
 Andrew Marshall    21  Phil Cox               9
 Paul Leonard       21  Helen Johnson         18
 Steve Gardner          Thomas Johnson          
@@ -550,7 +550,7 @@ Craig Clarkson         T Newsome
      Whitkirk A               Gildersome
 Chloe Jackson      21  David Rawson           6
 Phil Cox           21  Linda Gaunt           18
-P Hatch            21  Frank Hales            3
+Phil Hatch           21  Frank Hales            3
 S Cahill           21  Sandra Deegan          5
 Helen Johnson      19  David Norton          21
 Thomas Johnson         Ian Stocks              
@@ -652,7 +652,7 @@ Neil Robinson          Graham Hey
 
                              Mon 22nd May
      New Wortley              Whitkirk A
-Angela Morley      17  P Hatch               21
+Angela Morley      17 Phil Hatch              21
 Stephanie Mundell   9  G Hodder              21
 Brian Marshall      8  S Cahill              21
 Stephen Morley      9  Phil Cox              21
@@ -772,7 +772,7 @@ Joe Doughty            Shirley Barker
 Nigel Rawlings     21  Phil Cox              14
 Ahmed Hassoun      15  S Cahill              21
 Raymond Swallow    21  Andy Johnson          20
-Laura Love         19  P Hatch               21
+Laura Love         19 Phil Hatch              21
 Dave Smith         21  Helen Johnson         18
 Gina Long              Thomas Johnson          
 Jade Kerry          8  P Hardy               21
@@ -808,7 +808,7 @@ Alyssa Randell         Nicola Pearson
 
                              Mon 12th Jun
      Whitkirk A              Garforth C C
-P Hatch            21  Gary Kerrigan          6
+Phil Hatch           21  Gary Kerrigan          6
 G Hodder           21  Joe Doughty            6
 Phil Cox           21  David Horsey          12
 S Cahill           18  Rob Carroll           21
@@ -965,7 +965,7 @@ Gina Long              Mark Taylor
                              Mon 26th Jun
      Whitkirk A             New Farnley B
 Chloe Jackson      21  Ron Lavan              3
-P Hatch            21  Dave Taylor           14
+Phil Hatch           21  Dave Taylor           14
 Phil Cox           21  Harry Dixon            4
 S Cahill           21  Keith Skelton          1
 T Newsome          21  Pat Skelton            9
@@ -1097,7 +1097,7 @@ Malcolm Crowson        Neil Robinson
 Chloe Jackson      21  Hazel Goodall         19
 Andy Johnson       21  Peter Colley           6
 G Hodder           21  Andrew Ash            11
-P Hatch            21  Granville Stoyles      9
+Phil Hatch           21  Granville Stoyles      9
 T Newsome          21  Glennys Ash            6
 P Hardy                Dot Taylor              
 Helen Johnson      21  Dawn Peters            9
@@ -1136,7 +1136,7 @@ Graham Hey             Craig Clarkson
 Ellis Owen         21  G Hodder              17
 Nigel Richardson    6  S Cahill              21
 Mark Scruton        7  Chloe Jackson         21
-Claire Robinson    13  P Hatch               21
+Claire Robinson    13 Phil Hatch              21
 Tyler Patrick      21  Jason Richards        11
 Darren Robinson        M Sheerin               
 Gary Dennison      21  T Newsome             12
@@ -1253,7 +1253,7 @@ Louie Taylor           Gary Dennison
 Chloe Jackson      13  Paul Bowes            21
 G Hodder           21  Shirley Biancardo     16
 Phil Cox           20  Mario Biancardo       21
-P Hatch            21  Malvin Miller          4
+Phil Hatch           21  Malvin Miller          4
 Helen Johnson      21  Alyssa Randell        15
 S Cahill               Andrew Marshall         
 T Newsome          21  Stuart Potter          5
@@ -1360,7 +1360,7 @@ G Hodder           21  Stephen Morley         3
 Andy Johnson       21  Danny Dawson          20
 Helen Johnson      21  Stuart Reardon        16
 Thomas Johnson         Keith Sellars           
-P Hatch            21  Paul Shackleton       13
+Phil Hatch           21  Paul Shackleton       13
 P Hardy                Malcolm Crowson         
       Aggregate:  126          Aggregate:    77
          Points:   30             Points:    13
@@ -1487,7 +1487,7 @@ Shirley Barker         Neil Robinson
 Phil Cox           21  Nigel Rawlings        12
 Chloe Jackson      21  Raymond Swallow       13
 G Hodder           21  Ahmed Hassoun         17
-P Hatch            21  Laura Love            16
+Phil Hatch           21  Laura Love            16
 Helen Johnson      21  Jade Kerry            13
 Thomas Johnson         Jim Spalding            
 T Newsome          21  Sharon Kerry          11
@@ -1523,7 +1523,7 @@ Gary Dennison          Stuart Potter
 
                              Mon 28th Aug
     Garforth C C              Whitkirk A
-Joe Doughty         7  P Hatch               21
+Joe Doughty         7 Phil Hatch              21
 Phil Lodge         21  Phil Cox              14
 Craig White        21  Chloe Jackson         14
 Neil Robinson      11  G Hodder              21
@@ -1641,7 +1641,7 @@ Keith Skelton          Martin Heys
                              Mon 4th Sep
      Whitkirk A               Meanwood B
 Chloe Jackson      20  Rory Bligh            21
-P Hatch            21  Julie Keightley       12
+Phil Hatch           21  Julie Keightley       12
 Andy Johnson       12  Oliver Delaney        21
 G Hodder           21  John Hindle            4
 Helen Johnson      21  Graham Hey            17
