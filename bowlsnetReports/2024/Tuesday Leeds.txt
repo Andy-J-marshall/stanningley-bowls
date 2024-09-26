@@ -150,7 +150,7 @@ Dennis Walters      20 Andrew Marshall     21
 Steve Barltrop      20 Barbara Ragan       21 
 Helen Dickinson     21 Martin Atkinson     14 
 Andrew Grunwell      1 Mick Hall           21 
-Doughty Ian         21 Malcolm Hallas      18 
+Ian Doughty          21 Malcolm Hallas      18 
 Phil Lodge          19 Darren Cookson      21 
 Craig White         20 Malcolm Cameron     21 
 Nigel Ware          21 Brian Ragan         12 
@@ -349,7 +349,7 @@ Vanessa Lancaster   14 Phil Lodge          21
 Richard Hodgson     21 Thomas Cranston     16 
 Colin Haque         21 Helen Dickinson     14 
 Malvin Miller       21 Nigel Ware           6 
-Andrew Marshall     21 Doughty Ian         15 
+Andrew Marshall     21 Ian Doughty          15 
         Aggregate: 161         Aggregate: 104 
            Points:  37            Points:  20 
 
@@ -502,7 +502,7 @@ Thomas Cranston     10 Phil McStay         21
 Helen Dickinson     11 Graham Hey          21 
 Ann Doughty          9 Julie Keightley     21 
 Andrew Grunwell     15 Pat Prosser         21 
-Doughty Ian         21 Oliver Devaney       7 
+Ian Doughty          21 Oliver Devaney       7 
 Nigel Ware          21 Kathy Hey           10 
 Craig White         17 Ian Macfarlane      21 
 Ian Thornhill       20 Jeff Blackburn      21 
@@ -674,7 +674,7 @@ Maureen Bradshaw    21 Andrew Grunwell     16
 David Turner        21 Thomas Cranston     15 
 Dennis Walters      21 Helen Dickinson      8 
 Brian Stevens       21 Nigel Ware           4 
-Barbara Nellis      11 Doughty Ian         21 
+Barbara Nellis      11 Ian Doughty          21 
         Aggregate: 158         Aggregate: 113 
            Points:  37            Points:  22 
 
@@ -895,7 +895,7 @@ Ian Lee             21 John Robson         14
 Stephen Lee         21 Craig White         12 
 George Ramsden      21 Steve Barltrop      17 
 Martin Kaitcer      12 Phil Lodge          21 
-Steven Jones        21 Doughty Ian          6 
+Steven Jones        21 Ian Doughty           6 
         Aggregate: 159         Aggregate: 108 
            Points:  37            Points:  20 
 
@@ -1130,7 +1130,7 @@ Barbara Nellis       8 Steven Jones        21
 Helen Dickinson      7 Tracy Norton        21 
 Ann Doughty          7 Alison Lockwood     21 
 Andrew Grunwell     21 Simon Malins        16 
-Doughty Ian         21 Tony Morris          7 
+Ian Doughty          21 Tony Morris          7 
 Phil Lodge          21 Daphne Scott        14 
 John Robson         21 Neil Schofield       6 
 Nigel Ware          19 Stuart Wardlaw      21 
@@ -1482,7 +1482,7 @@ Ann Doughty         11 Stephen Morris      21
 Helen Dickinson      7 Derek Howell        21 
 Steve Barltrop      20 Bill Pyett          21 
 Andrew Grunwell     12 Carl Birkin         21 
-Doughty Ian         21 *No Player*          0 
+Ian Doughty          21 *No Player*          0 
 Phil Lodge          21 James Drury         15 
 Nigel Ware          21 Callum Birkin        7 
 Craig White         21 David Milner         2 
@@ -1667,7 +1667,7 @@ Jonathan Moriaty    21 Craig White         19
 John Townsend       21 Nigel Ware          12 
 Jim Jordan          21 Phil Lodge          13 
 Elizabeth Quigley   21 Steve Barltrop      19 
-Anthony Marsden     11 Doughty Ian         21 
+Anthony Marsden     11 Ian Doughty          21 
         Aggregate: 137         Aggregate: 125 
            Points:  32            Points:  25 
 
@@ -2104,7 +2104,7 @@ Helen Dickinson     15 Stuart Potter       21
 Craig White          9 Richard Hodgson     21 
 Steve Barltrop      21 Vanessa Lancaster   17 
 Phil Lodge          21 Paul Leonard         2 
-Doughty Ian         21 Craig Clarkson       7 
+Ian Doughty          21 Craig Clarkson       7 
         Aggregate: 118         Aggregate: 131 
            Points:  24            Points:  29 
 
@@ -2375,7 +2375,7 @@ Ann Doughty          9 Dennis Walters      21
 Nigel Turner        21 Darren Lowe         15 
 Helen Dickinson      2 Maveen Tomlinson    21 
 Steve Barltrop      21 Peter Colley        19 
-Doughty Ian         21 David Turner        17 
+Ian Doughty          21 David Turner        17 
 Phil Lodge          21 Maureen Bradshaw     3 
 Nigel Ware          21 Elaine Hill          5 
         Aggregate: 137         Aggregate: 118 
@@ -2611,7 +2611,7 @@ Thomas Cranston     21 Etta Cohen           8
 Nigel Turner        21 Ian Lee             10 
 Andrew Grunwell     21 Stephen Lee         10 
 Nigel Ware          21 George Ramsden       9 
-Doughty Ian         21 Martin Kaitcer       6 
+Ian Doughty          21 Martin Kaitcer       6 
         Aggregate: 155         Aggregate: 106 
            Points:  35            Points:  22 
 
@@ -2874,7 +2874,7 @@ Neil Schofield      21 Helen Dickinson      9
 Glenda Holmes       21 Steve Barltrop       7 
 Alison Lockwood     21 Nigel Turner        15 
 John Ackroyd        15 Nigel Ware          21 
-Tony Morris          6 Doughty Ian         21 
+Tony Morris          6 Ian Doughty          21 
         Aggregate: 132         Aggregate: 136 
            Points:  29            Points:  30 
 
@@ -3043,7 +3043,7 @@ Nigel Ware          20 David Ryder         21
 Steve Barltrop      11 Andrew Stocks       21 
 Phil Lodge          16 James Watkins       21 
 Craig White         13 Nicholas Ryder      21 
-Doughty Ian         21 Mick Galley         18 
+Ian Doughty          21 Mick Galley         18 
         Aggregate: 133         Aggregate: 150 
            Points:  27            Points:  35 
 
@@ -3285,7 +3285,7 @@ John Ingham         21 Alan Procter        12
       Meanwood B            Garforth C C      
 Julie Keightley     19 Craig White         21 
 Ian Macfarlane      21 Andrew Grunwell     20 
-Anne M Miller       14 Doughty Ian         21 
+Anne M Miller       14 Ian Doughty          21 
 Oliver Devaney      19 Lee Prentice        21 
 Jeff Blackburn      21 Phil Lodge          13 
 Pat Blackburn       21 Ann Doughty         10 
@@ -3474,7 +3474,7 @@ Helen Dickinson      5 John Townsend       21
 Craig White         10 David Clarke        21 
 Nigel Ware          20 John Wilson         21 
 Steve Barltrop      16 Alan Taylor         21 
-Doughty Ian         16 David Wall          21 
+Ian Doughty          16 David Wall          21 
         Aggregate: 112         Aggregate: 168 
            Points:  21            Points:  40 
 
