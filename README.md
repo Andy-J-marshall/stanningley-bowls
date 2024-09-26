@@ -61,14 +61,10 @@ Generate the reports on bowlsnet. This can either by running the automated Playw
   - Advanced: You can also get, update and commit the stats, then create a PR, by running `npm run get-stats-update-pr`. Once the PR is merged it should automatically deploy master to prod.
     - A PR will automatically be created in Github before the updated stats can be merged into master
 - To generate the reports manually:
-  - Create an Excel workbook called bowlsresults{year}.xlsx and store it in the `/files` directory
-  - Create new sheets for each day the team plays (ensure the names match the team names used by the `bowls.py` script, but remove any A/B suffix)
-  - Navigate to the Bowlsnet league URLs, go to Info, then Reports:
-  - Click Output Tables
-  - Select the full From and To date ranges
-  - Click Output Full Results
-  - Copy the outputted reports to the corresponding sheet in the Excel workbook
-  - Save the Excel file
+  - Navigate to the Bowlsnet league URLs
+  - Go to Fixtures, then click the "..." dropdown and select Export matchcards, then select In text format
+  - Copy the outputted reports to a text file
+  - Save the file in the `/bowlsnetReports/{year}` directory
   - Run `npm run update-stats`
 
 You can also set up a Cron scheduled job:
