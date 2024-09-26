@@ -101,57 +101,43 @@ for (const team of teams) {
       console.log(`No popup to click for ${team.day}, continuing...`);
     }
 
-    // Navigate to reports
+    // Find match reports
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Info.')
+      .getByText('Fixtures', { exact: true })
       .click();
+
+    await page
+      .frameLocator('iframe[title="BowlsNet Page"]')
+      .locator('div')
+      .filter({ hasText: /^\.\.\. ▼$/ })
+      .click();
+
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .frameLocator('iframe[title="BowlsNet Dlg"]')
-      .getByRole('button', { name: 'League Report...' })
+      .getByRole('button', { name: 'Export MatchCards...' })
       .click();
 
-    // Choose report options
+    // TODO add results too
+
+
+    // View report in new tab
+    const newPagePromise = page.waitForEvent('popup');
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Output Tables')
-      .click();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Output Selected Results')
-      .click();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByText('Output Full Results')
-      .click();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .locator('select[name="oResF"]')
-      .selectOption({ index: 1 });
-    const dateOptionCount = await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .locator('select[name="oResT"] > option')
-      .count();
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .locator('select[name="oResT"]')
-      .selectOption({ index: dateOptionCount - 1 });
-    await page
-      .frameLocator('iframe[title="BowlsNet Page"]')
-      .getByRole('button', { name: 'Generate Report' })
+      .frameLocator('iframe[title="BowlsNet Dlg"]')
+      .getByRole('button', { name: 'In Text Format' })
       .click();
 
-    await page.frameLocator('#x-Pframe').locator('#oResFull').check();
-    const [newPage] = await Promise.all([
-      context.waitForEvent('page'),
-      await page.frameLocator('#x-Pframe').locator('#dRBtn').click(),
-    ]);
-
-    // Create text file
+    const newPage = await newPagePromise;
     await newPage.bringToFront();
     await newPage.waitForLoadState('domcontentloaded');
-    const value = await newPage.evaluate(() => document.querySelector('body > pre')?.textContent);
+
+    // Create text file
+    const value = await newPage.evaluate(
+      () => document.querySelector('body > pre')?.textContent
+    );
     const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
     fs.writeFile(filePath, value as string, (err) => {
       if (err) {
