@@ -171,7 +171,7 @@ Add fixtures to Google calendar for all teams.
 
 Update `History.js` with any trophies won and `clubCupWinners.json` with the club cup winner.
 
-Update `checkYearDropdownHasAllYearOptions` function in basePage.ts.
+Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.ts`.
 
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
 * `teamNames` - Add the lowercase team names for the B team 
