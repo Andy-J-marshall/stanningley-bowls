@@ -97,6 +97,19 @@ function History() {
                 className="g-4 tabs align-items-start"
             >
                 <Col>
+                    <h5>League</h5>
+                    <ListGroup>
+                        <ListGroupItem>1926</ListGroupItem>
+                        <ListGroupItem>1928</ListGroupItem>
+                        <ListGroupItem>1929</ListGroupItem>
+                        <ListGroupItem>1932</ListGroupItem>
+                        <ListGroupItem>1933</ListGroupItem>
+                        <ListGroupItem>1935</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                        <ListGroupItem>2024</ListGroupItem>
+                    </ListGroup>
+                </Col>
+                <Col>
                     <h5>Cup</h5>
                     <ListGroup>
                         <ListGroupItem>1925</ListGroupItem>
@@ -110,18 +123,7 @@ function History() {
                         <ListGroupItem>1936</ListGroupItem>
                         <ListGroupItem>1937</ListGroupItem>
                         <ListGroupItem>2023</ListGroupItem>
-                    </ListGroup>
-                </Col>
-                <Col>
-                    <h5>League</h5>
-                    <ListGroup>
-                        <ListGroupItem>1926</ListGroupItem>
-                        <ListGroupItem>1928</ListGroupItem>
-                        <ListGroupItem>1929</ListGroupItem>
-                        <ListGroupItem>1932</ListGroupItem>
-                        <ListGroupItem>1933</ListGroupItem>
-                        <ListGroupItem>1935</ListGroupItem>
-                        <ListGroupItem>2023</ListGroupItem>
+                        <ListGroupItem>2024</ListGroupItem>
                     </ListGroup>
                 </Col>
             </Row>
@@ -135,17 +137,17 @@ function History() {
                 className="g-4 tabs align-items-start"
             >
                 <Col>
-                    <h5>Clegg Cup</h5>
-                    <ListGroup>
-                        <ListGroupItem>2017</ListGroupItem>
-                        <ListGroupItem>2023</ListGroupItem>
-                    </ListGroup>
-                </Col>
-                <Col>
                     <h5>League</h5>
                     <ListGroup>
                         <ListGroupItem>2017</ListGroupItem>
                         <ListGroupItem>2019</ListGroupItem>
+                        <ListGroupItem>2023</ListGroupItem>
+                    </ListGroup>
+                </Col>
+                <Col>
+                    <h5>Clegg Cup</h5>
+                    <ListGroup>
+                        <ListGroupItem>2017</ListGroupItem>
                         <ListGroupItem>2023</ListGroupItem>
                     </ListGroup>
                 </Col>
