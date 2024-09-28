@@ -8,83 +8,107 @@ import {
 import fs from 'fs';
 
 const year = new Date().getFullYear();
+const previousYearBool = false; // Set to true to get data from previous year
+
+let queryParam = '';
+
+if (previousYearBool) {
+  queryParam = `?DB=${year}`;
+}
 
 function sleep() {
   return new Promise((resolve) => setTimeout(resolve, 1000));
 }
 
-const teams = [
+const leagues = [
   {
     day: 'Monday Combined Leeds',
-    url: '/Leeds-MonComb',
+    url: `/Leeds-MonComb${queryParam}`,
   },
   {
     day: 'Tuesday Vets Leeds',
-    url: '/Leeds-TueVets',
+    url: `/Leeds-TueVets${queryParam}`,
   },
   {
     day: 'Tuesday Leeds',
-    url: '/Leeds-Tue',
+    url: `/Leeds-Tue${queryParam}`,
   },
   {
     day: 'Wednesday Half Holiday Leeds',
-    url: '/Leeds-Wed',
+    url: `/Leeds-Wed${queryParam}`,
   },
   {
     day: 'Wednesday Pairs AireWharfe',
-    url: '/AW-WedPairs',
+    url: `/AW-WedPairs${queryParam}`,
   },
   {
     day: 'Thursday Vets Leeds',
-    url: '/Leeds-ThuVets',
+    url: `/Leeds-ThuVets${queryParam}`,
   },
   {
     day: 'Saturday Leeds',
-    url: '/Leeds-Sat',
+    url: `/Leeds-Sat${queryParam}`,
   },
   {
     day: 'Tuesday Mirfield',
-    url: '/Mirfield',
+    url: `/Mirfield${queryParam}`,
   },
   {
     day: 'Wednesday Spen Valley',
-    url: '/WestRiding',
+    url: `/WestRiding${queryParam}`,
   },
   {
     day: 'Monday AireWharfe',
-    url: '/AW-Mon',
+    url: `/AW-Mon${queryParam}`,
   },
   {
     day: 'Tuesday AireWharfe',
-    url: '/AW-Vets',
+    url: `/AW-Vets${queryParam}`,
   },
   {
     day: 'Monday Bradford',
-    url: '/Bradford-Mon',
+    url: `/Bradford-Mon${queryParam}`,
   },
   {
     day: 'Wednesday Half Holiday Bradford',
-    url: '/Bradford-HalfHol',
+    url: `/Bradford-HalfHol${queryParam}`,
   },
   {
     day: 'Thursday Vets Bradford',
-    url: '/Bradford-Vets',
+    url: `/Bradford-Vets${queryParam}`,
   },
   {
     day: 'Saturday Bradford',
-    url: '/Bradford-Sat',
+    url: `/Bradford-Sat${queryParam}`,
   },
+  // Other leagues of interest
+  // {
+  //   day: 'Leeds Ladies',
+  //   url: `/LeedsLadies${queryParam}`,
+  // },
+  // {
+  //   day: 'Saturday AireWharfe',
+  //   url: `/AW-Sat${queryParam}`,
+  // },
+  // {
+  //   day: 'Wednesday AireWharfe',
+  //   url: `/AW-WedSingles${queryParam}`,
+  // },
+  // {
+  //   day: 'Saturday Barkston Ash',
+  //   url: `/BarkstonAsh${queryParam}`,
+  // },
 ];
 
-for (const team of teams) {
-  test(`${team.day} Stats`, async () => {
+for (const league of leagues) {
+  test(`${league.day} Stats`, async () => {
     // Browser set up
     const browser: Browser = await chromium.launch();
     const context: BrowserContext = await browser.newContext();
     let page: Page = await context.newPage();
 
     // Test
-    await page.goto(team.url);
+    await page.goto(league.url);
     await sleep();
 
     // Click pop up if present
@@ -98,7 +122,7 @@ for (const team of teams) {
         await popUp.click();
       }
     } catch (error) {
-      console.log(`No popup to click for ${team.day}, continuing...`);
+      console.log(`No popup to click for ${league.day}, continuing...`);
     }
 
     // Find match reports
@@ -135,7 +159,7 @@ for (const team of teams) {
     const value = await newPage.evaluate(
       () => document.querySelector('body > pre')?.textContent
     );
-    const filePath = `./bowlsnetReports/${year}/${team.day}.txt`;
+    const filePath = `./bowlsnetReports/${year}/${league.day}.txt`;
     fs.writeFile(filePath, value as string, (err) => {
       if (err) {
         console.log(err);

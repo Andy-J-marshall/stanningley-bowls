@@ -40,6 +40,7 @@ for team in teamDays:
         allRowsInFile = file.readlines()
         
         # Find the number of rows in the file and the stating row to check the stats
+        #  TODO remove startingRow
         startingRow = 0
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
