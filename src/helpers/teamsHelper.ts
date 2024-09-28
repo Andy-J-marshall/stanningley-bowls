@@ -1,4 +1,4 @@
-export function returnTabName(teamName) {
+export function returnTabName(teamName: string) {
     let displayName = teamName.substring(0, 3).toUpperCase();
     if (teamName.toLowerCase().includes(' vets')) {
         displayName += ' (VETS)';

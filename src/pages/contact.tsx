@@ -73,7 +73,7 @@ function Contact() {
                 src={googleMapsIframeUrl}
                 width="90%"
                 height="450"
-                allowFullScreen=""
+                allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

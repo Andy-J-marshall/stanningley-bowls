@@ -253,6 +253,7 @@ function Records(props) {
                     bTeamRecord.bestTeamAveragePlayer.length > 0
                 ) {
                     return (
+                        // TODO why is it complaining about this?
                         <div displayname={displayname}>
                             {teamRecord && teamRecord.bestTeamAverage > -21 && (
                                 <RecordsTableDisplay

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import {
   combineTeamStats,
   findBiggestWin,
-} from '../../src/helpers/statsHelper.js';
+} from '../../src/helpers/statsHelper';
 
 describe('#StatsHelper Tests', () => {
   describe('#findBiggestWin()', () => {

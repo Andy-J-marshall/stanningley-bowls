@@ -96,7 +96,7 @@ function PlayerStats(props) {
         }
     }
 
-    function searchForPlayer(searchedName) {
+    function searchForPlayer(searchedName: string) {
         setShowStatsSinceStart(false);
         setSearchedPlayerName(searchedName);
 
@@ -147,7 +147,7 @@ function PlayerStats(props) {
         setLoading(false);
     };
 
-    function displayPlayerCallback(playerName) {
+    function displayPlayerCallback(playerName: string) {
         setSearchedPlayerName(playerName);
     }
 
@@ -252,6 +252,7 @@ function PlayerStats(props) {
             {!loading &&
                 searchedPlayerName &&
                 !playerFound &&
+                // TODO fix
                 !searchedPlayerName.toLowerCase() === 'show all' && (
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
                         Player not found

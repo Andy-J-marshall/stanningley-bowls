@@ -1,5 +1,6 @@
 import { Accordion } from 'react-bootstrap';
-import { capitalizeText, arrayToList } from '../helpers/utils';
+import { capitalizeText } from '../helpers/utils';
+import List from './list';
 
 function PlayerStatsOverview(props) {
     const stats = props.stats;
@@ -44,7 +45,7 @@ function PlayerStatsOverview(props) {
                             <div id="teamsPlayedFor">
                                 <hr />
                                 <h3 style={{ paddingTop: '1rem' }}>LEAGUES PLAYED IN</h3>
-                                <p>{arrayToList(allTeamsPlayedFor)}</p>
+                                <List stringArray={allTeamsPlayedFor}></List>
                             </div>
                         )}
                     </div>

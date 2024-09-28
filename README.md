@@ -45,7 +45,7 @@ Note, if the branch names change (e.g. `update_stats_prod` or `master`) then the
 
 ## Maintenance
 
-Most of the club details are stored in the `config.js` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.js` file and year drop down will need to be configured to support more years.
+Most of the club details are stored in the `config.ts` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.tsx` file and year drop down will need to be configured to support more years.
 
 # Bowls script
 
@@ -117,7 +117,7 @@ Update `public` folder:
 
 Update all images in the `/images` folder
 
-Update the `History.js` component, including the links in the config file, and the `clubCupWinners.json` file
+Update the `History.tsx` component, including the links in the config file, and the `clubCupWinners.json` file
 
 Update `homepage` in `package.json`
 
@@ -125,7 +125,7 @@ Check `bowls.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
 
-Update `src/config.js`:
+Update `src/config.ts`:
 
 - all data in this file
 - membership info
@@ -159,28 +159,28 @@ If entering a new league, make sure the `bowls.py` script will still work e.g. d
 
 If the A and B team play one another then the `bowls.py` script will currently fail. The exception will need to be removed and the issue around the scoring and results if they play one another fixed.
 
-After generating the stats file for the new year, import the file into `statsData.js`. Update `allYearStats` and `allYearCombinedStats`.
-Update `statsCallback` in `App.js` with the reference to the new year's stats file.
+After generating the stats file for the new year, import the file into `statsData.ts`. Update `allYearStats` and `allYearCombinedStats`.
+Update `statsCallback` in `App.tsx` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
 
-Add a dropdown item for the new year in the `yearSelectDropdown.js` component.
+Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component.
 
-If there are any new teams added, update the `teamTabs.js`, `playerStatsTeams.js`, `teamStats.js`, and `teamInfo.js` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
+If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
 
 Add fixtures to Google calendar for all teams.
 
-Update `History.js` with any trophies won and `clubCupWinners.json` with the club cup winner.
+Update `History.tsx` with any trophies won and `clubCupWinners.json` with the club cup winner.
 
-Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.ts`.
+Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.tsx`.
 
 If adding or removing a second team, updated the following properties in `teamDetails.py`:
 * `teamNames` - Add the lowercase team names for the B team 
 * `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 
-Change the `days` property in `config.js` to include an extra key for the second team (suffixed with ' (b)').
-Change the `historicTeamInfo` property in `config.js` to include league data for any new teams or second teams.
-Update the `allTeamsInLeaguesSince2013` array in `config.js` to include an extra keys (second team teams need to be suffixed with ' (b)'). 
+Change the `days` property in `config.ts` to include an extra key for the second team (suffixed with ' (b)').
+Change the `historicTeamInfo` property in `config.ts` to include league data for any new teams or second teams.
+Update the `allTeamsInLeaguesSince2013` array in `config.ts` to include an extra keys (second team teams need to be suffixed with ' (b)'). 
 Update any URLs if the Bowlsnet link has changed.
-Update `playersHelper.js` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.js`.
+Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`.
 
 Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.

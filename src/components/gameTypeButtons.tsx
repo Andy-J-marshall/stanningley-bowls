@@ -58,6 +58,8 @@ function GameTypeButton(props) {
     return (
         <ButtonGroup size="lg" className="mb-2">
             <ToggleButton
+                id="all-button"
+                value="All"
                 className="toggle-button"
                 onClick={displayAll}
                 type="checkbox"
@@ -67,6 +69,8 @@ function GameTypeButton(props) {
                 All
             </ToggleButton>
             <ToggleButton
+                id="singles-button"
+                value="Singles"
                 onClick={displaySingles}
                 type="checkbox"
                 checked={singlesChecked}
@@ -75,6 +79,8 @@ function GameTypeButton(props) {
                 Singles
             </ToggleButton>
             <ToggleButton
+                id="pairs-button"
+                value="Pairs"
                 onClick={displayPairs}
                 type="checkbox"
                 checked={pairsChecked}
