@@ -1,1277 +1,985 @@
 === Leeds & District Ladies Bowling League 2021
-=== League Report
-
-
-=== RESULTS: Thu 15th Apr to Thu 9th Sep
----------------------------------------------------------------------------------------------------------
-     Thu 15th Apr                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley                  v.   Grove Hill                  To Thu 19th Aug
-Rufford Park 'B'          v.   Gildersome A                To Thu 19th Aug
-Calverley                 v.   Rufford Park 'A'            To Thu 19th Aug
-
----------------------------------------------------------------------------------------------------------
-     Thu 22nd Apr                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Western Flatts            v.   Guiseley                    To Sun 22nd Aug
-Rufford Park 'A'          v.   Rufford Park 'B'            To Thu 26th Aug
-Grove Hill                v.   Calverley                   To Thu 26th Aug
-
----------------------------------------------------------------------------------------------------------
-     Thu 29th Apr                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley                  v.   Shipley Club                To Thu 26th Aug
-Western Flatts            v.   Rufford Park 'A'            To Fri 13th Aug
-Rufford Park 'B'          v.   Grove Hill                  To Thu 2nd Sep
----------------------------------------------------------------------------------------------------------
-     Thu 29th Apr                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B              v.   Eccleshill                  To Sun 8th Aug (Postponed)
-Hall Park                 v.   Tarnfield                   To Thu 5th Aug (Postponed)
-Holt Park                 v.   New Farnley                 To Thu 5th Aug
-
----------------------------------------------------------------------------------------------------------
-      Thu 6th May                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Gildersome A         96   v.   Calverley           119     
-Rufford Park 'A'    123   v.   Guiseley             52     
-Shipley Club        112   v.   Western Flatts       74     
----------------------------------------------------------------------------------------------------------
-      Thu 6th May                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Eccleshill          106   v.   Greenbottom          89     
-New Farnley         108   v.   Gildersome B         64     
-Tarnfield           110   v.   Holt Park            88     
-
----------------------------------------------------------------------------------------------------------
-     Thu 13th May                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley             83   v.   Gildersome A        114     
-Western Flatts      119   v.   Grove Hill           84     
-Rufford Park 'A'     90   v.   Shipley Club        112     
-Calverley           108   v.   Rufford Park 'B'     90     
----------------------------------------------------------------------------------------------------------
-     Thu 13th May                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B         96   v.   Tarnfield           123     
-Eccleshill          114   v.   New Farnley          92     
-Hall Park           104   v.   Greenbottom          97     
-
----------------------------------------------------------------------------------------------------------
-     Thu 20th May                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Gildersome A        120   v.   Western Flatts       76     
-Calverley           120   v.   Shipley Club         88     
-Grove Hill          101   v.   Rufford Park 'A'     94     
----------------------------------------------------------------------------------------------------------
-     Thu 20th May                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Greenbottom         118   v.   Gildersome B         77     
-Tarnfield                 v.   New Farnley                 To Thu 12th Aug
-
----------------------------------------------------------------------------------------------------------
-     Thu 27th May                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley             90   v.   Rufford Park 'B'    103     
-Rufford Park 'A'    122   v.   Gildersome A         65     
-Shipley Club        126   v.   Grove Hill           56     
----------------------------------------------------------------------------------------------------------
-     Thu 27th May                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B         89   v.   Hall Park           111     
-Eccleshill          112   v.   Tarnfield            69     
-Holt Park           100   v.   Greenbottom          92     
-
----------------------------------------------------------------------------------------------------------
-      Thu 3rd Jun                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Gildersome A        114   v.   Shipley Club         97     
-Rufford Park 'B'    126   v.   Western Flatts       81     
-Calverley           126   v.   Guiseley             58     
----------------------------------------------------------------------------------------------------------
-      Thu 3rd Jun                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Greenbottom         123   v.   Tarnfield            63     
-Hall Park           117   v.   New Farnley          83     
-Holt Park            92   v.   Eccleshill          113     
-
----------------------------------------------------------------------------------------------------------
-     Thu 10th Jun                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Western Flatts       82   v.   Calverley           114     
-Shipley Club        102   v.   Rufford Park 'B'     98     
-Grove Hill           81   v.   Gildersome A        116     
----------------------------------------------------------------------------------------------------------
-     Thu 10th Jun                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B         87   v.   Holt Park           108     
-Eccleshill          107   v.   Hall Park            83     
-New Farnley         109   v.   Greenbottom          83     
-
----------------------------------------------------------------------------------------------------------
-     Thu 17th Jun                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Grove Hill          116   v.   Guiseley             75     
-Gildersome A         93   v.   Rufford Park 'B'    110     
-Rufford Park 'A'    118   v.   Calverley            92     
----------------------------------------------------------------------------------------------------------
-     Thu 17th Jun                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Eccleshill          105   v.   Gildersome B         75     
-Tarnfield           112   v.   Hall Park           104     
-New Farnley         106   v.   Holt Park            77     
-
----------------------------------------------------------------------------------------------------------
-     Thu 24th Jun                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley             99   v.   Western Flatts      109     
-Rufford Park 'B'     96   v.   Rufford Park 'A'    119     
-Calverley           126   v.   Grove Hill           67     
----------------------------------------------------------------------------------------------------------
-     Thu 24th Jun                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Greenbottom         104   v.   Eccleshill           99     
-Gildersome B         88   v.   New Farnley         104     
-Holt Park            99   v.   Tarnfield           115     
-
----------------------------------------------------------------------------------------------------------
-      Thu 1st Jul                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Shipley Club        118   v.   Guiseley             66     
-Rufford Park 'A'    126   v.   Western Flatts       50     
-Grove Hill          102   v.   Rufford Park 'B'    101     
----------------------------------------------------------------------------------------------------------
-      Thu 1st Jul                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Tarnfield           113   v.   Gildersome B         64     
-New Farnley         111   v.   Eccleshill           95     
-Greenbottom         124   v.   Hall Park            82     
-
----------------------------------------------------------------------------------------------------------
-      Thu 8th Jul                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Calverley           122   v.   Gildersome A         59     
-Guiseley             82   v.   Rufford Park 'A'    119     
-Western Flatts       68   v.   Shipley Club        121     
----------------------------------------------------------------------------------------------------------
-      Thu 8th Jul                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B         94   v.   Greenbottom         116     
-Holt Park            84   v.   Hall Park           124     
-New Farnley         108   v.   Tarnfield            95     
-
----------------------------------------------------------------------------------------------------------
-     Thu 15th Jul                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Gildersome A        126   v.   Guiseley             70     
-Grove Hill          105   v.   Western Flatts       99     
-Shipley Club        117   v.   Rufford Park 'A'     78     
-Rufford Park 'B'     91   v.   Calverley           122     
----------------------------------------------------------------------------------------------------------
-     Thu 15th Jul                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Hall Park           122   v.   Gildersome B         58     
-Tarnfield           102   v.   Eccleshill           92     
-Greenbottom         124   v.   Holt Park            78     
-
----------------------------------------------------------------------------------------------------------
-     Thu 22nd Jul                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Western Flatts       80   v.   Gildersome A        114     
-Shipley Club        113   v.   Calverley            88     
-Rufford Park 'A'    126   v.   Grove Hill           41     
----------------------------------------------------------------------------------------------------------
-     Thu 22nd Jul                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Tarnfield           105   v.   Greenbottom          94     
-New Farnley               v.   Hall Park                   To Fri 6th Aug
-Eccleshill          104   v.   Holt Park            77     
-
----------------------------------------------------------------------------------------------------------
-     Thu 29th Jul                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Rufford Park 'B'    114   v.   Guiseley             64     
-Gildersome A        115   v.   Rufford Park 'A'    101     
-Grove Hill           92   v.   Shipley Club        107     
----------------------------------------------------------------------------------------------------------
-     Thu 29th Jul                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Holt Park           100   v.   Gildersome B        104     
-Hall Park           104   v.   Eccleshill           86     
-Greenbottom         103   v.   New Farnley          84     
-
----------------------------------------------------------------------------------------------------------
-      Thu 5th Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Shipley Club        118   v.   Gildersome A         94     
-Western Flatts       91   v.   Rufford Park 'B'    111     
-Guiseley             69   v.   Calverley           118     
----------------------------------------------------------------------------------------------------------
-      Thu 5th Aug                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B         83   v.   Eccleshill          111     From Sun 8th Aug
-Hall Park           120   v.   Tarnfield           103     From Thu 29th Apr (Postponed)
-Holt Park           109   v.   New Farnley          96     From Thu 29th Apr
-
----------------------------------------------------------------------------------------------------------
-      Fri 6th Aug                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-New Farnley         103   v.   Hall Park            78     From Thu 22nd Jul
-
----------------------------------------------------------------------------------------------------------
-      Sun 8th Aug                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Gildersome B              v.   Eccleshill                  From Thu 29th Apr (Postponed). To Thu 5th Aug
-
----------------------------------------------------------------------------------------------------------
-     Thu 12th Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Calverley           126   v.   Western Flatts       46     
-Rufford Park 'B'    124   v.   Shipley Club         92     
-Gildersome A        118   v.   Grove Hill           90     
----------------------------------------------------------------------------------------------------------
-     Thu 12th Aug                    Division 2                                   
----------------------------------------------------------------------------------------------------------
-Tarnfield            77   v.   New Farnley         116     From Thu 20th May
-
----------------------------------------------------------------------------------------------------------
-     Fri 13th Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Western Flatts       84   v.   Rufford Park 'A'    126     From Thu 29th Apr
-
----------------------------------------------------------------------------------------------------------
-     Thu 19th Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley             89   v.   Grove Hill          112     From Thu 15th Apr
-Rufford Park 'B'    111   v.   Gildersome A         77     From Thu 15th Apr
-Calverley           104   v.   Rufford Park 'A'     89     From Thu 15th Apr
-
----------------------------------------------------------------------------------------------------------
-     Sun 22nd Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Western Flatts      100   v.   Guiseley             76     From Thu 22nd Apr
-
----------------------------------------------------------------------------------------------------------
-     Thu 26th Aug                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Guiseley            108   v.   Shipley Club         94     From Thu 29th Apr
-Rufford Park 'A'    115   v.   Rufford Park 'B'     87     From Thu 22nd Apr
-Grove Hill           81   v.   Calverley           120     From Thu 22nd Apr
-
----------------------------------------------------------------------------------------------------------
-      Thu 2nd Sep                    Division 1                                   
----------------------------------------------------------------------------------------------------------
-Rufford Park 'B'    126   v.   Grove Hill           47     From Thu 29th Apr
-
-
-=== Current LEAGUE TABLES
-=== Division 1
-                            Matches     Aggr.
- Pos  Team                Pl    W    L     For
-====  =================  ===  ===  ===  ======  
-  1.  Calverley           14   12    2    1605
-  2.  Rufford Park 'A'    14    9    5    1546
-  3.  Shipley Club        14   10    4    1517
-  4.  Rufford Park 'B'    14    8    6    1488
-  5.  Gildersome A        14    8    6    1421
-  6.  Grove Hill          14    5    9    1175
-  7.  Western Flatts      14    3   11    1159
-  8.  Guiseley            14    1   13    1081
-
-=== Division 2
-                            Matches     Aggr.
- Pos  Team                Pl    W    L     For
-====  =================  ===  ===  ===  ======  
-  1.  Greenbottom         12    7    5    1267
-  2.  Eccleshill          12    8    4    1244
-  3.  New Farnley         12    8    4    1220
-  4.  Tarnfield           12    7    5    1187
-  5.  Hall Park           11    7    4    1149
-  6.  Holt Park           11    3    8    1012
-  7.  Gildersome B        12    1   11     979
- =8.  Armley Cons.         0    0    0       0
- =8.  Harehills            0    0    0       0
-
-
-=== FULL RESULTS: Thu 15th Apr to Thu 9th Sep
-      Division 1              Thu 6th May
-     Gildersome A              Calverley
-Sandra Deegan        21  Lindsey Rosendale  19
-Glenda Holmes        20  Mandy Wilson       21
-Daphne Scott         15  Tina Howard        21
-Karen Taylor          4  Carol Matthews     21
-Diane Hales          15  Margaret Wood      21
-Linda Gaunt          21  Shirley Biancardo  16
-*No Player*           0  *No Player*         0
-*No Player*           0  *No Player*         0
-       Aggregate:    96        Aggregate:  119
-
-      Division 1              Thu 6th May
-   Rufford Park 'A'            Guiseley
-Janice Waite         18  Jean Perry         21
-Eileen Beck          21  Betty Marshall      7
-Catherine New        21  Maureen Jarvis      9
-Angela Carter        21  Christine Boyd      6
-Val Grace            21  Lynne Ogden         4
-Diane Teale          21  Lynette Hall        5
-*No Player*           0  *No Player*         0
-*No Player*           0  *No Player*         0
-       Aggregate:   123        Aggregate:   52
-
-      Division 1              Thu 6th May
-     Shipley Club           Western Flatts
-Vanessa Ratcliffe    18  Barbara Nellis     21
-Rachel Telford       21  Mary Horrocks      13
-Val Riley            21  Lillian Pickles     4
-Maxine Welsh         10  Glennys Ash        21
-Sylvia Halliday      21  Doreen Hogg        10
-Dianne Halliday      21  Hazel Goodall       5
-*No Player*           0  *No Player*         0
-*No Player*           0  *No Player*         0
-       Aggregate:   112        Aggregate:   74
-
-      Division 2              Thu 6th May
-      Eccleshill              Greenbottom
-Melissa Gilroy       14  Barbara Harrison   21
-Rachel Curtis        12  Maureen Poucher    21
-Mary Nellist         21  Mavis Harwood       7
-Sarah Harrison       21  Karen Whitelaw     18
-Diane Emery          21  Isabel Douglas      1
-Pauline Gilroy       17  Gwen Smith         21
-       Aggregate:   106        Aggregate:   89
-
-      Division 2              Thu 6th May
-      New Farnley            Gildersome B
-Lynda Ward           21  Beverley Farrar     9
-Barbara Taylor       21  Alison Lockwood    10
-Jan Ingham           21  Margaret Johnstone  4
-Linda Taylor          3  Kay Stewart        21
-Jean Milner          21  Barbara Hall        5
-Sophie Worrall       21  Bev Hampshaw       15
-*No Player*           0  *No Player*         0
-*No Player*           0  *No Player*         0
-       Aggregate:   108        Aggregate:   64
-
-      Division 2              Thu 6th May
-       Tarnfield               Holt Park
-Pam Ratcliffe        21  *A.N.Other*         2
-Susan Whelan         21  Rita Bennett        8
-Glenys Howden         8  Betty Sparkes      21
-Beryl Howden         18  Michelle Norcliffe 21
-Beryl Dent           21  Pat Penman         20
-May Metcalfe         21  Joyce Adamson      16
-*No Player*           0  *No Player*         0
-*No Player*           0  *No Player*         0
-       Aggregate:   110        Aggregate:   88
-
-      Division 1             Thu 13th May
-       Guiseley              Gildersome A
-Christine Boyd       21  Karen Taylor       13
-Lynne Ogden          21  Glenda Holmes      19
-Margaret Jones        5  Daphne Scott       21
-Christine Fountain    2  Diane Hales        21
-Jean Perry           13  Linda Gaunt        21
-Lynette Hall         21  Sandra Deegan      19
-       Aggregate:    83        Aggregate:  114
-
-      Division 1             Thu 13th May
-    Western Flatts            Grove Hill
-Dawn Peters          15  Gill Godden        21
-Glennys Ash          21  Linda Yates         3
-Mary Horrocks        21  Brenda Appleyard   14
-Doreen Hogg          21  Lynne Harper       15
-Hazel Goodall        21  Joey Crawford      10
-Barbara Nellis       20  Diane Farrar       21
-       Aggregate:   119        Aggregate:   84
-
-      Division 1             Thu 13th May
-   Rufford Park 'A'          Shipley Club
-Carolyn Matthewman   14  Sylvia Halliday    21
-Eileen Beck           9  Dianne Halliday    21
-Catherine New         7  Brenda Chaffer     21
-Kath Bywell          19  Val Riley          21
-Debbie Kirkbright    20  Wendy Spivey       21
-Diane Teale          21  Rachel Telford      7
-       Aggregate:    90        Aggregate:  112
-
-      Division 1             Thu 13th May
-       Calverley           Rufford Park 'B'
-Mandy Wilson         21  Pauline Ingleson    4
-Margaret Wood         8  Sue Newell         21
-Lindsey Rosendale    16  Adele Hart-Woods   21
-Shirley Biancardo    21  Angela Burnham     18
-Carol Matthews       21  Christine Dobson    7
-Tina Howard          21  Angela Bennett     19
-       Aggregate:   108        Aggregate:   90
-
-      Division 2             Thu 13th May
-     Gildersome B              Tarnfield
-Janice Farrar         7  Beryl Dent         21
-Tracey Norton        16  May Metcalfe       21
-Helen Thomas         18  Susan Whelan       21
-Barbara Hall         17  Dorcas Kirk        21
-Bev Hampshaw         17  Linda Utley        21
-Kay Stewart          21  Pam Ratcliffe      18
-       Aggregate:    96        Aggregate:  123
-
-      Division 2             Thu 13th May
-      Eccleshill              New Farnley
-Jan Smith            21  Ann Scotter        16
-Shirley Rooks        21  Lynda Ward          8
-Mary Nellist          9  Barbara Taylor     21
-Sue Butler           21  Pat Skelton        19
-Melissa Gilroy       21  Jan Ingham         11
-Myra Humpleby        21  Sophie Worrall     17
-       Aggregate:   114        Aggregate:   92
-
-      Division 2             Thu 13th May
-       Hall Park              Greenbottom
-Linda Stoyles        21  Dorothy Jackson     7
-Ruth Owen            21  Margaret Greenwood  9
-Ruth Sutcliffe       16  Karen Whitelaw     21
-Sandra Griffiths      7  Gwen Smith         21
-Kath Crompton        21  Maureen Poucher    18
-Joyce Banks          18  Barbara Harrison   21
-       Aggregate:   104        Aggregate:   97
-
-      Division 1             Thu 20th May
-     Gildersome A           Western Flatts
-Karen Taylor         21  Mary Wilson        12
-Glenda Holmes        21  Dawn Peters         7
-Sandra Deegan        21  Mary Horrocks      16
-Daphne Scott         21  Hazel Goodall      13
-Linda Gaunt          15  Barbara Nellis     21
-Diane Hales          21  Doreen Hogg         7
-       Aggregate:   120        Aggregate:   76
-
-      Division 1             Thu 20th May
-       Calverley             Shipley Club
-Shirley Biancardo    21  Sylvia Halliday    17
-Tina Howard          21  Maxine Welsh        9
-Carol Matthews       21  Rachel Telford     20
-Lindsey Rosendale    21  Dianne Halliday     9
-Mandy Wilson         21  Wendy Spivey       12
-Margaret Wood        15  Brenda Chaffer     21
-       Aggregate:   120        Aggregate:   88
-
-      Division 1             Thu 20th May
-      Grove Hill           Rufford Park 'A'
-Joey Crawford        17  Catherine New      21
-Joan Holden           8  Janice Waite       21
-Lynne Harper         21  Kath Bywell        10
-Linda Smith          13  Diane Teale        21
-Diane Farrar         21  Carolyn Matthewman  7
-Kay Lodge            21  Debbie Kirkbright  14
-       Aggregate:   101        Aggregate:   94
-
-      Division 2             Thu 20th May
-      Greenbottom            Gildersome B
-Gwen Smith           21  Beverley Farrar     6
-Mavis Harwood        13  Alison Lockwood    21
-Isabel Douglas       21  Margaret Johnstone 16
-Barbara Harrison     21  Helen Thomas       11
-Karen Whitelaw       21  Bev Hampshaw       16
-Audrey Macgregor     21  Kay Stewart         7
-       Aggregate:   118        Aggregate:   77
-
-      Division 1             Thu 27th May
-       Guiseley            Rufford Park 'B'
-Christine Fountain   19  Angela Bennett     21
-Doreen Lawson        21  Aileen Pawley       8
-Caroline Corbett     21  Pauline Ingleson   17
-Margaret Jones        4  Sally Clarke       21
-Barbara Firth         4  Christine Dobson   21
-Christine Boyd       21  Angela Burnham     15
-       Aggregate:    90        Aggregate:  103
-
-      Division 1             Thu 27th May
-   Rufford Park 'A'          Gildersome A
-Janice Waite         21  Helen Thomas        6
-Angela Carter        21  Linda Gaunt         5
-Eileen Beck          21  Sandra Deegan      13
-Debbie Kirkbright    21  Daphne Scott       10
-Diane Teale          21  Glenda Holmes      10
-Val Grace            17  Diane Hales        21
-       Aggregate:   122        Aggregate:   65
-
-      Division 1             Thu 27th May
-     Shipley Club             Grove Hill
-Vanessa Ratcliffe    21  Toni Johnston       0
-Dianne Halliday      21  Zoe Armstrong       2
-Val Riley            21  Linda Yates        10
-Brenda Chaffer       21  Lynne Harper       18
-Sylvia Halliday      21  Jean Harrison      20
-Rachel Telford       21  Joey Crawford       6
-       Aggregate:   126        Aggregate:   56
-
-      Division 2             Thu 27th May
-     Gildersome B              Hall Park
-Janice Farrar         6  Joyce Banks        21
-Tracey Norton        11  Ruth Sutcliffe     21
-Margaret Johnstone   21  Marion Rider       12
-Barbara Hall         17  Linda Stoyles      21
-Bev Hampshaw         21  Ruth Owen          15
-Alison Lockwood      13  Kath Crompton      21
-       Aggregate:    89        Aggregate:  111
-
-      Division 2             Thu 27th May
-      Eccleshill               Tarnfield
-Diane Emery          21  Pam Ratcliffe       7
-Sue Steward          21  Glenys Howden       9
-Sally Goodall         7  Linda Utley        21
-Rachel Curtis        21  May Metcalfe       18
-Pauline Gilroy       21  Dorcas Kirk         7
-Sarah Harrison       21  Beryl Dent          7
-       Aggregate:   112        Aggregate:   69
-
-      Division 2             Thu 27th May
-       Holt Park              Greenbottom
-Michelle Norcliffe   21  Isabel Douglas      7
-Pat Penman           21  Audrey Macgregor   16
-Joyce Adamson        21  Maureen Poucher    15
-Geraldine Lyons      12  Dorothy Jackson    21
-Sue Megson            4  Gwen Smith         21
-Betty Sparkes        21  Barbara Harrison   12
-       Aggregate:   100        Aggregate:   92
-
-      Division 1              Thu 3rd Jun
-     Gildersome A            Shipley Club
-Linda Gaunt          21  Sylvia Halliday    16
-Karen Taylor         21  Val Riley          20
-Daphne Scott         21  Maxine Welsh        8
-Glenda Holmes        10  Wendy Spivey       21
-Sandra Deegan        20  Dianne Halliday    21
-Diane Hales          21  Rachel Telford     11
-       Aggregate:   114        Aggregate:   97
-
-      Division 1              Thu 3rd Jun
-   Rufford Park 'B'         Western Flatts
-Sue Newell           21  Mary Wilson         2
-Kirsten Clapham      21  Maveen Tomlinson   13
-Pauline Ingleson     21  Doreen Hogg        19
-Angela Bennett       21  Dawn Peters        19
-Christine Dobson     21  Glennys Ash         9
-Adele Hart-Woods     21  Hazel Goodall      19
-       Aggregate:   126        Aggregate:   81
-
-      Division 1              Thu 3rd Jun
-       Calverley               Guiseley
-Margaret Wood        21  Doreen Lawson      10
-Shirley Biancardo    21  Lynette Hall        8
-Tina Howard          21  Barbara Firth      10
-Mandy Wilson         21  Caroline Corbett   19
-Lindsey Rosendale    21  Jean Perry         10
-Carol Matthews       21  Bridget Hopkinson   1
-       Aggregate:   126        Aggregate:   58
-
-      Division 2              Thu 3rd Jun
-      Greenbottom              Tarnfield
-Margaret Greenwood   21  Pam Ratcliffe      12
-Dorothy Jackson      21  Susan Whelan        6
-Maureen Poucher      18  May Metcalfe       21
-Gwen Smith           21  Dorcas Kirk         6
-Audrey Macgregor     21  Beryl Dent         14
-Karen Whitelaw       21  Glenys Howden       4
-       Aggregate:   123        Aggregate:   63
-
-      Division 2              Thu 3rd Jun
-       Hall Park              New Farnley
-Ruth Owen            21  Catherine Crane    14
-Marion Rider         21  Linda Taylor       17
-Ruth Sutcliffe       21  Ann Scotter         4
-Joyce Banks          14  Pat Skelton        21
-Kath Crompton        21  Barbara Taylor      6
-Linda Stoyles        19  Jan Ingham         21
-       Aggregate:   117        Aggregate:   83
-
-      Division 2              Thu 3rd Jun
-       Holt Park              Eccleshill
-Sue Megson           21  Sue Butler         13
-Betty Sparkes        21  Mary Nellist       18
-Geraldine Lyons      11  Jan Smith          21
-Pat Penman           21  Shirley Rooks      19
-Joyce Adamson         1  Myra Humpleby      21
-Michelle Norcliffe   17  Melissa Gilroy     21
-       Aggregate:    92        Aggregate:  113
-
-      Division 1             Thu 10th Jun
-    Western Flatts             Calverley
-Hazel Goodall        13  Lindsey Rosendale  21
-Doreen Hogg          21  Tina Howard        20
-Mary Horrocks        21  Gail Schofield     10
-Barbara Nellis       10  Lynda Heath        21
-Dawn Peters          16  Carol Matthews     21
-Maveen Tomlinson      1  Shirley Biancardo  21
-       Aggregate:    82        Aggregate:  114
-
-      Division 1             Thu 10th Jun
-     Shipley Club          Rufford Park 'B'
-Wendy Spivey         21  Adele Hart-Woods   20
-Dianne Halliday      21  Angela Burnham      3
-Maxine Welsh         10  Kirsten Clapham    21
-Sylvia Halliday      16  Christine Dobson   21
-Val Riley            13  Pauline Ingleson   21
-Lynn Shaw            21  Sue Newell         12
-       Aggregate:   102        Aggregate:   98
-
-      Division 1             Thu 10th Jun
-      Grove Hill             Gildersome A
-Gill Godden          21  Barbara Hall       18
-Brenda Appleyard      8  Bev Hampshaw       21
-Toni Johnston         9  Karen Taylor       21
-Linda Yates          17  Linda Gaunt        21
-Linda Smith           5  Diane Hales        21
-Diane Farrar         21  Daphne Scott       14
-       Aggregate:    81        Aggregate:  116
-
-      Division 2             Thu 10th Jun
-     Gildersome B              Holt Park
-Beverley Farrar       9  Pat Penman         21
-Kay Stewart          12  Joyce Adamson      21
-Tracey Norton        21  Michelle Norcliffe 19
-Helen Thomas          6  Sue Megson         21
-Alison Lockwood      18  Betty Sparkes      21
-Margaret Johnstone   21  Geraldine Lyons     5
-       Aggregate:    87        Aggregate:  108
-
-      Division 2             Thu 10th Jun
-      Eccleshill               Hall Park
-Myra Humpleby        21  Kath McCourt        5
-Sue Butler            8  Linda Stoyles      21
-Mary Nellist         21  Joyce Banks        12
-Sally Goodall        15  Ruth Owen          21
-Pauline Gilroy       21  Ruth Sutcliffe      9
-Diane Emery          21  Kath Crompton      15
-       Aggregate:   107        Aggregate:   83
-
-      Division 2             Thu 10th Jun
-      New Farnley             Greenbottom
-Pat Skelton          21  Mavis Harwood      20
-Lynda Ward            8  Isabel Douglas     21
-Catherine Crane      17  Barbara Harrison   21
-Linda Taylor         21  Audrey Macgregor   14
-Sophie Worrall       21  Karen Whitelaw      4
-Jean Milner          21  Dorothy Jackson     3
-       Aggregate:   109        Aggregate:   83
-
-      Division 1             Thu 17th Jun
-      Grove Hill               Guiseley
-Joan Holden          21  Christine Fountain  4
-Brenda Appleyard     20  Doreen Lawson      21
-Zoe Armstrong        21  Margaret Jones     11
-Jean Harrison        12  Lynne Ogden        21
-Pauline Barnett      21  Bridget Hopkinson  13
-Kay Lodge            21  Christine Boyd      5
-       Aggregate:   116        Aggregate:   75
-
-      Division 1             Thu 17th Jun
-     Gildersome A          Rufford Park 'B'
-Margaret Johnstone    7  Sue Newell         21
-Karen Taylor         19  Kirsten Clapham    21
-Sandra Deegan        10  Angela Burnham     21
-Linda Gaunt          15  Carolyn Matthewman 21
-Glenda Holmes        21  Angela Bennett     19
-Diane Hales          21  Christine Dobson    7
-       Aggregate:    93        Aggregate:  110
-
-      Division 1             Thu 17th Jun
-   Rufford Park 'A'            Calverley
-Janice Waite         21  Tina Howard         9
-Val Grace            21  Mandy Wilson       16
-Kath Bywell          17  Lynda Heath        21
-Eileen Beck          21  Gail Schofield      9
-Angela Carter        21  Margaret Wood      16
-Debbie Kirkbright    17  Carol Matthews     21
-       Aggregate:   118        Aggregate:   92
-
-      Division 2             Thu 17th Jun
-      Eccleshill             Gildersome B
-Sarah Harrison       21  Beverley Farrar     8
-Melissa Gilroy       21  Helen Thomas        9
-Myra Humpleby        21  Kay Stewart         6
-Shirley Rooks        21  Alison Lockwood    10
-Rachel Curtis         3  Bev Hampshaw       21
-Jan Smith            18  Tracey Norton      21
-       Aggregate:   105        Aggregate:   75
-
-      Division 2             Thu 17th Jun
-       Tarnfield               Hall Park
-May Metcalfe         18  Ruth Sutcliffe     21
-Glenys Howden        13  Marion Rider       21
-Susan Whelan         19  Ruth Owen          21
-Pam Ratcliffe        20  Joyce Banks        21
-Anita Howard         21  Kath Crompton      17
-Linda Utley          21  Linda Stoyles       3
-       Aggregate:   112        Aggregate:  104
-
-      Division 2             Thu 17th Jun
-      New Farnley              Holt Park
-Marjorie Kay         19  Betty Sparkes      21
-Ann Scotter           3  Geraldine Lyons    21
-Barbara Taylor       21  Sue Megson          8
-Jan Ingham           21  Joyce Adamson      10
-Sophie Worrall       21  Michelle Norcliffe 11
-Linda Taylor         21  Pat Penman          6
-       Aggregate:   106        Aggregate:   77
-
-      Division 1             Thu 24th Jun
-       Guiseley             Western Flatts
-Barbara Firth        21  Doreen Hogg        15
-Christine Boyd       19  Dawn Peters        21
-Jean Perry           10  Maveen Tomlinson   21
-Margaret Jones       11  Mary Horrocks      21
-Doreen Lawson        17  Deborah Sandals    21
-Lynette Hall         21  Hazel Goodall      10
-       Aggregate:    99        Aggregate:  109
-
-      Division 1             Thu 24th Jun
-   Rufford Park 'B'        Rufford Park 'A'
-Sally Clarke         21  Janice Waite       17
-Angela Bennett       16  Eileen Beck        21
-Pauline Ingleson     21  Kath Bywell        18
-Sue Newell           18  Carole Wright      21
-Kirsten Clapham      10  Debbie Kirkbright  21
-Christine Dobson     10  Val Grace          21
-       Aggregate:    96        Aggregate:  119
-
-      Division 1             Thu 24th Jun
-       Calverley              Grove Hill
-Tina Howard          21  Linda Smith        12
-Lindsey Rosendale    21  Jean Harrison      18
-Margaret Wood        21  Gill Godden        15
-Shirley Biancardo    21  Toni Johnston       5
-Carol Matthews       21  Joan Holden         5
-Lynda Heath          21  Brenda Appleyard   12
-       Aggregate:   126        Aggregate:   67
-
-      Division 2             Thu 24th Jun
-      Greenbottom             Eccleshill
-Gwen Smith           12  Pauline Gilroy     21
-Karen Whitelaw       21  Diane Emery        17
-Mavis Harwood         8  Sarah Harrison     21
-Maureen Poucher      21  Sally Goodall      12
-Barbara Harrison     21  Rachel Curtis      11
-Audrey Macgregor     21  Sue Steward        17
-       Aggregate:   104        Aggregate:   99
-
-      Division 2             Thu 24th Jun
-     Gildersome B             New Farnley
-Janice Farrar        15  Catherine Crane    21
-Beverley Farrar      21  Lynda Ward          7
-Alison Lockwood       9  Pat Skelton        21
-Tracey Norton        10  Jean Milner        21
-Margaret Johnstone   12  Sophie Worrall     21
-Bev Hampshaw         21  Linda Taylor       13
-       Aggregate:    88        Aggregate:  104
-
-      Division 2             Thu 24th Jun
-       Holt Park               Tarnfield
-Joyce Adamson        18  Beryl Dent         21
-Michelle Norcliffe   21  Glenys Howden      15
-Pat Penman           19  Pam Ratcliffe      21
-Betty Sparkes        18  Linda Utley        21
-Geraldine Lyons       2  May Metcalfe       21
-Sue Megson           21  Susan Whelan       16
-       Aggregate:    99        Aggregate:  115
-
-      Division 1              Thu 1st Jul
-     Shipley Club              Guiseley
-Lynn Shaw            21  Doreen Lawson       7
-Wendy Spivey         21  Lynne Ogden        15
-Sylvia Halliday      21  Bridget Hopkinson   4
-Dianne Halliday      21  Jean Perry          4
-Val Riley            21  Barbara Firth      15
-Brenda Chaffer       13  Lynette Hall       21
-       Aggregate:   118        Aggregate:   66
-
-      Division 1              Thu 1st Jul
-   Rufford Park 'A'         Western Flatts
-Kath Bywell          21  Dawn Peters        10
-Eileen Beck          21  Mary Horrocks      10
-Carole Wright        21  Deborah Sandals    13
-Angela Carter        21  Barbara Nellis      8
-Carolyn Matthewman   21  Glennys Ash         8
-Val Grace            21  Maveen Tomlinson    1
-       Aggregate:   126        Aggregate:   50
-
-      Division 1              Thu 1st Jul
-      Grove Hill           Rufford Park 'B'
-Lynne Harper         21  Pauline Ingleson    8
-Zoe Armstrong        15  Adele Hart-Woods   21
-Brenda Appleyard      5  Sue Newell         21
-Linda Yates          19  Christine Dobson   21
-Pauline Barnett      21  Angela Burnham     10
-Diane Farrar         21  Angela Bennett     20
-       Aggregate:   102        Aggregate:  101
-
-      Division 2              Thu 1st Jul
-       Tarnfield             Gildersome B
-Pam Ratcliffe        21  Helen Thomas       10
-Glenys Howden        21  Alison Lockwood    12
-Linda Utley          21  Tracey Norton      13
-Susan Whelan         21  Janice Farrar       2
-Beryl Dent            8  Bev Hampshaw       21
-May Metcalfe         21  Beverley Farrar     6
-       Aggregate:   113        Aggregate:   64
-
-      Division 2              Thu 1st Jul
-      New Farnley             Eccleshill
-Barbara Taylor        8  Myra Humpleby      21
-Ann Scotter          19  Mary Nellist       21
-Catherine Crane      21  Jan Smith          20
-Sophie Worrall       21  Shirley Rooks      13
-Jan Ingham           21  Sue Butler          7
-Jean Milner          21  Pauline Gilroy     13
-       Aggregate:   111        Aggregate:   95
-
-      Division 2              Thu 1st Jul
-      Greenbottom              Hall Park
-Audrey Macgregor     21  Kath Crompton      17
-Margaret Greenwood   21  Linda Stoyles      14
-Barbara Harrison     21  Kath McCourt        4
-Dorothy Jackson      19  Ruth Sutcliffe     21
-Gwen Smith           21  Joyce Banks        13
-Karen Whitelaw       21  Ruth Owen          13
-       Aggregate:   124        Aggregate:   82
-
-      Division 1              Thu 8th Jul
-       Calverley             Gildersome A
-Tina Howard          17  Glenda Holmes      21
-Lindsey Rosendale    21  Daphne Scott        6
-Lynda Heath          21  Linda Gaunt         5
-Carol Matthews       21  Diane Hales        11
-Mandy Wilson         21  Sandra Deegan       9
-Shirley Biancardo    21  Karen Taylor        7
-       Aggregate:   122        Aggregate:   59
-
-      Division 1              Thu 8th Jul
-       Guiseley            Rufford Park 'A'
-Margaret Jones        2  Janice Waite       21
-Caroline Corbett     21  Angela Carter      15
-Christine Fountain   16  Catherine New      21
-Bridget Hopkinson    11  Eileen Beck        21
-Lynette Hall         21  Carolyn Matthewman 20
-Christine Boyd       11  Debbie Kirkbright  21
-       Aggregate:    82        Aggregate:  119
-
-      Division 1              Thu 8th Jul
-    Western Flatts           Shipley Club
-Doreen Hogg           6  Dianne Halliday    21
-Dawn Peters          17  Lynn Shaw          21
-Mary Horrocks        21  Rachael Slater     16
-Hazel Goodall        13  Sylvia Halliday    21
-Deborah Sandals       3  Wendy Spivey       21
-Glennys Ash           8  Rachel Telford     21
-       Aggregate:    68        Aggregate:  121
-
-      Division 2              Thu 8th Jul
-     Gildersome B             Greenbottom
-Kay Stewart          19  Isabel Douglas     21
-Helen Thomas          5  Audrey Macgregor   21
-Alison Lockwood      21  Mavis Harwood      18
-Tracey Norton        21  Maureen Poucher    14
-Barbara Hall          8  Gwen Smith         21
-Bev Hampshaw         20  Barbara Harrison   21
-       Aggregate:    94        Aggregate:  116
-
-      Division 2              Thu 8th Jul
-       Holt Park               Hall Park
-Geraldine Lyons      10  Ruth Owen          21
-Sue Megson           13  Joyce Banks        21
-Betty Sparkes        21  Ruth Sutcliffe     19
-Michelle Norcliffe    9  Chris Gill         21
-Pat Penman           17  Linda Stoyles      21
-Joyce Adamson        14  Kath Crompton      21
-       Aggregate:    84        Aggregate:  124
-
-      Division 2              Thu 8th Jul
-      New Farnley              Tarnfield
-Ann Scotter          12  Beryl Dent         21
-Lynda Ward           14  May Metcalfe       21
-Catherine Crane      21  Dorcas Kirk        18
-Pat Skelton          19  Linda Utley        21
-Linda Taylor         21  Pam Ratcliffe       6
-Jan Ingham           21  Susan Whelan        8
-       Aggregate:   108        Aggregate:   95
-
-      Division 1             Thu 15th Jul
-     Gildersome A              Guiseley
-Linda Gaunt          21  Jean Perry          6
-Daphne Scott         21  Lynne Ogden        16
-Karen Taylor         21  Christine Boyd      7
-Sandra Deegan        21  Christine Fountain  8
-Diane Hales          21  Caroline Corbett   16
-Glenda Holmes        21  Lynette Hall       17
-       Aggregate:   126        Aggregate:   70
-
-      Division 1             Thu 15th Jul
-      Grove Hill            Western Flatts
-Brenda Appleyard     21  Dawn Peters        14
-Zoe Armstrong        21  Maveen Tomlinson    9
-Linda Yates          16  Barbara Nellis     21
-Jean Harrison        15  Hazel Goodall      21
-Lynne Harper         11  Mary Horrocks      21
-Pauline Barnett      21  Glennys Ash        13
-       Aggregate:   105        Aggregate:   99
-
-      Division 1             Thu 15th Jul
-     Shipley Club          Rufford Park 'A'
-Sylvia Halliday      21  Janice Waite       17
-Dianne Halliday      21  Kath Bywell         4
-Wendy Spivey         21  Diane Teale         8
-Lynn Shaw            21  Angela Carter      18
-Val Riley            21  Eileen Beck        10
-Rachel Telford       12  Debbie Kirkbright  21
-       Aggregate:   117        Aggregate:   78
-
-      Division 1             Thu 15th Jul
-   Rufford Park 'B'            Calverley
-Pauline Ingleson     19  Lindsey Rosendale  21
-Christine Dobson     21  Shirley Biancardo  17
-Sally Clarke          9  Lynda Heath        21
-Angela Bennett       10  Carol Matthews     21
-Angela Burnham       13  Mandy Wilson       21
-Kirsten Clapham      19  Margaret Wood      21
-       Aggregate:    91        Aggregate:  122
-
-      Division 2             Thu 15th Jul
-       Hall Park             Gildersome B
-Ruth Owen            21  Janice Farrar       4
-Marion Rider         21  Beverley Farrar    11
-Joyce Banks          21  Margaret Johnstone  4
-Ruth Sutcliffe       21  Alison Lockwood     7
-Kath Crompton        21  Tracey Norton      11
-Chris Gill           17  Bev Hampshaw       21
-       Aggregate:   122        Aggregate:   58
-
-      Division 2             Thu 15th Jul
-       Tarnfield              Eccleshill
-Linda Utley          21  Diane Emery         6
-Susan Whelan         21  Sally Goodall      10
-May Metcalfe         18  Pauline Gilroy     21
-Dorcas Kirk          21  Sue Butler         13
-Pam Ratcliffe        17  Melissa Gilroy     21
-Beryl Dent            4  Myra Humpleby      21
-       Aggregate:   102        Aggregate:   92
-
-      Division 2             Thu 15th Jul
-      Greenbottom              Holt Park
-Dorothy Jackson      19  Michelle Norcliffe 21
-Margaret Greenwood   21  Pat Penman         20
-Isabel Douglas       21  Joyce Adamson      11
-Audrey Macgregor     21  Geraldine Lyons    10
-Karen Whitelaw       21  Sue Megson         12
-Gwen Smith           21  Betty Sparkes       4
-       Aggregate:   124        Aggregate:   78
-
-      Division 1             Thu 22nd Jul
-    Western Flatts           Gildersome A
-Doreen Hogg           7  Glenda Holmes      21
-Barbara Nellis       21  Daphne Scott       19
-Dawn Peters           6  Diane Hales        21
-Deborah Sandals      14  Sandra Deegan      21
-Hazel Goodall        21  Karen Taylor       11
-Mary Horrocks        11  Linda Gaunt        21
-       Aggregate:    80        Aggregate:  114
-
-      Division 1             Thu 22nd Jul
-     Shipley Club              Calverley
-Wendy Spivey         21  Shirley Biancardo  14
-Maxine Welsh         21  Mandy Wilson        9
-Val Riley            21  Tina Howard        12
-Rachael Slater       10  Margaret Wood      21
-Dianne Halliday      19  Lynda Heath        21
-Rachel Telford       21  Lindsey Rosendale  11
-       Aggregate:   113        Aggregate:   88
-
-      Division 1             Thu 22nd Jul
-   Rufford Park 'A'           Grove Hill
-Janice Waite         21  Linda Smith         5
-Angela Carter        21  Joan Holden         8
-Carolyn Matthewman   21  Gill Godden        15
-Carole Wright        21  Diane Farrar        5
-Debbie Kirkbright    21  Linda Smith         5
-Val Grace            21  Kay Lodge           3
-       Aggregate:   126        Aggregate:   41
-
-      Division 2             Thu 22nd Jul
-       Tarnfield              Greenbottom
-Linda Utley          21  Maureen Poucher     7
-May Metcalfe         15  Mavis Harwood      21
-Pam Ratcliffe        21  Isabel Douglas      5
-Dorcas Kirk          21  Audrey Macgregor   19
-Beryl Dent           12  Barbara Harrison   21
-Susan Whelan         15  Karen Whitelaw     21
-       Aggregate:   105        Aggregate:   94
-
-      Division 2             Thu 22nd Jul
-      Eccleshill               Holt Park
-Jan Smith            21  Sue Megson          4
-Diane Emery          21  Betty Sparkes      13
-Mary Nellist         10  Geraldine Lyons    21
-Rachel Curtis        10  Pat Penman         21
-Sarah Harrison       21  Joyce Adamson      18
-Pauline Gilroy       21  Michelle Norcliffe  0
-       Aggregate:   104        Aggregate:   77
-
-      Division 1             Thu 29th Jul
-   Rufford Park 'B'            Guiseley
-Kirsten Clapham       9  Christine Boyd     21
-Pauline Ingleson     21  Jean Perry         12
-Angela Bennett       21  Bridget Hopkinson   2
-Angela Burnham       21  Christine Fountain 16
-Sue Newell           21  Doreen Lawson       3
-Christine Dobson     21  Barbara Firth      10
-       Aggregate:   114        Aggregate:   64
-
-      Division 1             Thu 29th Jul
-     Gildersome A          Rufford Park 'A'
-Karen Taylor         21  Janice Waite       20
-Daphne Scott         21  Eileen Beck        11
-Sandra Deegan        21  Carole Wright      10
-Linda Gaunt          15  Angela Carter      21
-Glenda Holmes        21  Debbie Kirkbright  18
-Diane Hales          16  Val Grace          21
-       Aggregate:   115        Aggregate:  101
-
-      Division 1             Thu 29th Jul
-      Grove Hill             Shipley Club
-Diane Farrar         21  Maxine Welsh        3
-Zoe Armstrong        21  Dianne Halliday    20
-Linda Yates          15  Brenda Chaffer     21
-Lynne Harper         15  Val Riley          21
-Jean Harrison        15  Wendy Spivey       21
-Pauline Barnett       5  Rachel Telford     21
-       Aggregate:    92        Aggregate:  107
-
-      Division 2             Thu 29th Jul
-       Holt Park             Gildersome B
-Jean Fairhall        18  Helen Thomas       21
-Carol Mottershead    15  Barbara Hall       21
-Michelle Norcliffe   21  Alison Lockwood     9
-Sue Megson           21  Margaret Johnstone 20
-Betty Sparkes        21  Tracey Norton      12
-Geraldine Lyons       4  Bev Hampshaw       21
-       Aggregate:   100        Aggregate:  104
-
-      Division 2             Thu 29th Jul
-       Hall Park              Eccleshill
-Linda Stoyles        21  Sue Steward         8
-Ruth Sutcliffe       21  Sally Goodall       4
-Marion Rider         21  Shirley Rooks      14
-Joyce Banks           9  Pauline Gilroy     21
-Kath Crompton        21  Sue Butler         18
-Ruth Owen            11  Melissa Gilroy     21
-       Aggregate:   104        Aggregate:   86
-
-      Division 2             Thu 29th Jul
-      Greenbottom             New Farnley
-Margaret Greenwood   21  Rosalyn Walsh      14
-Mavis Harwood        21  Ann Scotter         9
-Karen Whitelaw       21  Lynda Ward          3
-Dorothy Jackson       9  Linda Taylor       21
-Barbara Harrison     10  Barbara Taylor     21
-Gwen Smith           21  Pat Skelton        16
-       Aggregate:   103        Aggregate:   84
-
-      Division 1              Thu 5th Aug
-     Shipley Club            Gildersome A
-Brenda Chaffer       21  Linda Gaunt        15
-Dianne Halliday      21  Diane Hales         9
-Rachael Slater       18  Karen Taylor       21
-Maxine Welsh         21  Glenda Holmes      13
-Lynn Shaw            16  Daphne Scott       21
-Rachel Telford       21  Sandra Deegan      15
-       Aggregate:   118        Aggregate:   94
-
-      Division 1              Thu 5th Aug
-    Western Flatts         Rufford Park 'B'
-Maveen Tomlinson      8  Angela Burnham     21
-Dawn Peters          13  Angela Bennett     21
-Mary Horrocks        16  Pauline Ingleson   21
-Deborah Sandals      12  Christine Dobson   21
-Barbara Nellis       21  Amy Elizabeth Lawrence                                                                                                                                                                                                                                                             11
-Doreen Hogg          21  Adele Hart-Woods   16
-       Aggregate:    91        Aggregate:  111
-
-      Division 1              Thu 5th Aug
-       Guiseley                Calverley
-Doreen Lawson         2  Carol Matthews     21
-Caroline Corbett     21  Margaret Wood      15
-Lynne Ogden          10  Shirley Biancardo  21
-Jean Perry           21  Lindsey Rosendale  19
-Lynette Hall         11  Mandy Wilson       21
-Christine Boyd        4  Tina Howard        21
-       Aggregate:    69        Aggregate:  118
-
-      Division 2              Thu 5th Aug
-     Gildersome B             Eccleshill
-Janice Farrar         7  Melissa Gilroy     21
-Beverley Farrar       7  Shirley Rooks      21
-Kay Stewart          21  Rachel Curtis       7
-Barbara Hall         15  Sue Butler         21
-Margaret Johnstone   12  Jan Smith          21
-Bev Hampshaw         21  Pauline Gilroy     20
-       Aggregate:    83        Aggregate:  111
-
-      Division 2              Thu 5th Aug
-       Hall Park               Tarnfield
-Joyce Banks          21  Pam Ratcliffe      18
-Ruth Owen            21  Dorcas Kirk        17
-Kath Crompton        21  Linda Utley        19
-Marion Rider         15  Susan Whelan       21
-Ruth Sutcliffe       21  Beryl Dent         18
-Linda Stoyles        21  Dorcas Kirk        10
-       Aggregate:   120        Aggregate:  103
-
-      Division 2              Thu 5th Aug
-       Holt Park              New Farnley
-Geraldine Lyons      18  Ann Scotter        21
-Kathleen Haley       16  Barbara Taylor     21
-Joyce Adamson        21  Catherine Crane    13
-Betty Sparkes        21  Pat Skelton         9
-Michelle Norcliffe   21  Jan Ingham         11
-Sue Megson           12  Linda Taylor       21
-       Aggregate:   109        Aggregate:   96
-
-      Division 2              Fri 6th Aug
-      New Farnley              Hall Park
-Rosalyn Walsh        21  Marion Rider       19
-Lynda Ward           10  Ruth Sutcliffe     21
-Sophie Worrall       21  Linda Stoyles       1
-Catherine Crane       9  Joyce Banks        21
-Linda Taylor         21  Ruth Owen           3
-Barbara Taylor       21  Kath Crompton      13
-       Aggregate:   103        Aggregate:   78
-
-      Division 1             Thu 12th Aug
-       Calverley            Western Flatts
-Shirley Biancardo    21  Doreen Hogg         3
-Lynda Heath          21  Barbara Nellis      5
-Carol Matthews       21  Deborah Sandals    14
-Tina Howard          21  Mary Horrocks       3
-Lindsey Rosendale    21  Glennys Ash        18
-Mandy Wilson         21  Dawn Peters         3
-       Aggregate:   126        Aggregate:   46
-
-      Division 1             Thu 12th Aug
-   Rufford Park 'B'          Shipley Club
-Angela Burnham       21  Lynn Shaw          19
-Diane Teale          21  Rachael Slater     11
-Kirsten Clapham      21  Maxine Welsh        8
-Christine Dobson     21  Dianne Halliday    18
-Sue Newell           21  Sylvia Halliday    15
-Pauline Ingleson     19  Val Riley          21
-       Aggregate:   124        Aggregate:   92
-
-      Division 1             Thu 12th Aug
-     Gildersome A             Grove Hill
-Kay Stewart          13  Joan Holden        21
-Diane Hales          21  Gill Godden        15
-Sandra Deegan        21  Linda Smith        19
-Glenda Holmes        21  Brenda Appleyard   18
-Karen Taylor         21  Linda Yates        11
-Daphne Scott         21  Lynne Harper        6
-       Aggregate:   118        Aggregate:   90
-
-      Division 2             Thu 12th Aug
-       Tarnfield              New Farnley
-Beryl Dent            5  Jan Ingham         21
-Glenys Howden         2  Linda Taylor       21
-Dorcas Kirk          21  Jean Milner        13
-Linda Utley          21  Barbara Taylor     19
-Pam Ratcliffe        17  Pat Skelton        21
-Susan Whelan         11  Ann Scotter        21
-       Aggregate:    77        Aggregate:  116
-
-      Division 1             Fri 13th Aug
-    Western Flatts         Rufford Park 'A'
-Deborah Sandals      15  Janice Waite       21
-Maveen Tomlinson     17  Angela Carter      21
-Dawn Peters          16  Kath Bywell        21
-Hazel Goodall        14  Eileen Beck        21
-Barbara Nellis       17  Carolyn Matthewman 21
-Glennys Ash           5  Debbie Kirkbright  21
-       Aggregate:    84        Aggregate:  126
-
-      Division 1             Thu 19th Aug
-       Guiseley               Grove Hill
-Doreen Lawson         6  Diane Farrar       21
-Caroline Corbett     21  Pauline Barnett    14
-Bridget Hopkinson    21  Zoe Armstrong      14
-Lynne Ogden          13  Jean Harrison      21
-Margaret Jones       14  Lynne Harper       21
-Lynette Hall         14  Kay Lodge          21
-       Aggregate:    89        Aggregate:  112
-
-      Division 1             Thu 19th Aug
-   Rufford Park 'B'          Gildersome A
-Amy Elizabeth Lawrence                                                                                                                                                                                                                                                               21  Tracey Norton       8
-Pauline Ingleson     21  Bev Hampshaw       16
-Angela Bennett       21  Sandra Deegan       5
-Christine Dobson     21  Glenda Holmes       6
-Kirsten Clapham      10  Diane Hales        21
-Sue Newell           17  Daphne Scott       21
-       Aggregate:   111        Aggregate:   77
-
-      Division 1             Thu 19th Aug
-       Calverley           Rufford Park 'A'
-Tina Howard          21  Carole Wright      11
-Lindsey Rosendale    10  Debbie Kirkbright  21
-Mandy Wilson         10  Diane Teale        21
-Lynda Heath          21  Janice Waite       12
-Carol Matthews       21  Val Grace           9
-Shirley Biancardo    21  Angela Carter      15
-       Aggregate:   104        Aggregate:   89
-
-      Division 1             Sun 22nd Aug
-    Western Flatts             Guiseley
-Maveen Tomlinson     11  Christine Boyd     21
-Hazel Goodall        21  Margaret Jones     12
-Mary Horrocks         5  Lynne Ogden        21
-Dawn Peters          21  Bridget Hopkinson   1
-Deborah Sandals      21  Barbara Firth       2
-Glennys Ash          21  Lynne Ogden        19
-       Aggregate:   100        Aggregate:   76
-
-      Division 1             Thu 26th Aug
-       Guiseley              Shipley Club
-Caroline Corbett     21  Rachael Slater     11
-Lynne Ogden          21  Janet Welsh         6
-Christine Boyd       19  Val Riley          21
-Doreen Lawson        21  Brenda Chaffer     14
-Barbara Firth         6  Sylvia Halliday    21
-Lynette Hall         20  Lynn Shaw          21
-       Aggregate:   108        Aggregate:   94
-
-      Division 1             Thu 26th Aug
-   Rufford Park 'A'        Rufford Park 'B'
-Kath Bywell          10  Sue Newell         21
-Janice Waite         21  Pauline Ingleson    9
-Carolyn Matthewman   21  Angela Bennett      6
-Eileen Beck          21  Kirsten Clapham    20
-Debbie Kirkbright    21  Christine Dobson   14
-Diane Teale          21  Adele Hart-Woods   17
-       Aggregate:   115        Aggregate:   87
-
-      Division 1             Thu 26th Aug
-      Grove Hill               Calverley
-Diane Farrar         17  Margaret Wood      21
-Brenda Appleyard     12  Mandy Wilson       21
-Joan Holden          11  Tina Howard        21
-Jean Harrison         4  Shirley Biancardo  21
-Kay Lodge            16  Carol Matthews     21
-Linda Smith          21  Lynda Heath        15
-       Aggregate:    81        Aggregate:  120
-
-      Division 1              Thu 2nd Sep
-   Rufford Park 'B'           Grove Hill
-Kirsten Clapham      21  Gill Godden         8
-Angela Bennett       21  Lynne Harper        6
-Pauline Ingleson     21  Linda Smith         5
-Angela Burnham       21  Linda Yates        13
-Sue Newell           21  Judith Highcock     1
-Christine Dobson     21  Joan Holden        14
-       Aggregate:   126        Aggregate:   47
+=== League Calendar
+=== Complete List
+
+        Division 1                Thu 6th May         
+       Gildersome A                Calverley          
+Sandra Deegan           21 Lindsey Rosendale       19 
+Glenda Holmes           20 Mandy Wilson            21 
+Daphne Scott            15 Tina Howard             21 
+Karen Taylor             4 Carol Matthews          21 
+Diane Hales             15 Margaret Wood           21 
+Linda Gaunt             21 Shirley Biancardo       16 
+*No Player*              0 *No Player*              0 
+*No Player*              0 *No Player*              0 
+            Aggregate:  96             Aggregate: 119 
+
+        Division 1                Thu 6th May         
+     Rufford Park 'A'               Guiseley          
+Janice Waite            18 Jean Perry              21 
+Eileen Beck             21 Betty Marshall           7 
+Catherine New           21 Maureen Jarvis           9 
+Angela Carter           21 Christine Boyd           6 
+Val Grace               21 Lynne Ogden              4 
+Diane Teale             21 Lynette Hall             5 
+*No Player*              0 *No Player*              0 
+*No Player*              0 *No Player*              0 
+            Aggregate: 123             Aggregate:  52 
+
+        Division 1                Thu 6th May         
+       Shipley Club              Western Flatts       
+Vanessa Ratcliffe       18 Barbara Nellis          21 
+Rachel Telford          21 Mary Horrocks           13 
+Val Riley               21 Lillian Pickles          4 
+Maxine Welsh            10 Glennys Ash             21 
+Sylvia Halliday         21 Doreen Hogg             10 
+Dianne Halliday         21 Hazel Goodall            5 
+*No Player*              0 *No Player*              0 
+*No Player*              0 *No Player*              0 
+            Aggregate: 112             Aggregate:  74 
+
+        Division 2                Thu 6th May         
+        Eccleshill                Greenbottom         
+Melissa Gilroy          14 Barbara Harrison        21 
+Rachel Curtis           12 Maureen Poucher         21 
+Mary Nellist            21 Mavis Harwood            7 
+Sarah Harrison          21 Karen Whitelaw          18 
+Diane Emery             21 Isabel Douglas           1 
+Pauline Gilroy          17 Gwen Smith              21 
+            Aggregate: 106             Aggregate:  89 
+
+        Division 2                Thu 6th May         
+       New Farnley                Gildersome B        
+Lynda Ward              21 Beverley Farrar          9 
+Barbara Taylor          21 Alison Lockwood         10 
+Jan Ingham              21 Margaret Johnstone       4 
+Linda Taylor             3 Kay Stewart             21 
+Jean Milner             21 Barbara Hall             5 
+Sophie Worrall          21 Bev Hampshaw            15 
+*No Player*              0 *No Player*              0 
+*No Player*              0 *No Player*              0 
+            Aggregate: 108             Aggregate:  64 
+
+        Division 2                Thu 6th May         
+        Tarnfield                  Holt Park          
+Pam Ratcliffe           21 *A.N.Other*              2 
+Susan Whelan            21 Rita Bennett             8 
+Glenys Howden            8 Betty Sparkes           21 
+Beryl Howden            18 Michelle Norcliffe      21 
+Beryl Dent              21 Pat Penman              20 
+May Metcalfe            21 Joyce Adamson           16 
+*No Player*              0 *No Player*              0 
+*No Player*              0 *No Player*              0 
+            Aggregate: 110             Aggregate:  88 
+
+        Division 1                Thu 13th May        
+         Guiseley                 Gildersome A        
+Christine Boyd          21 Karen Taylor            13 
+Lynne Ogden             21 Glenda Holmes           19 
+Margaret Jones           5 Daphne Scott            21 
+Christine Fountain       2 Diane Hales             21 
+Jean Perry              13 Linda Gaunt             21 
+Lynette Hall            21 Sandra Deegan           19 
+            Aggregate:  83             Aggregate: 114 
+
+        Division 1                Thu 13th May        
+      Western Flatts               Grove Hill         
+Dawn Peters             15 Gill Godden             21 
+Glennys Ash             21 Linda Yates              3 
+Mary Horrocks           21 Brenda Appleyard        14 
+Doreen Hogg             21 Lynne Harper            15 
+Hazel Goodall           21 Joey Crawford           10 
+Barbara Nellis          20 Diane Farrar            21 
+            Aggregate: 119             Aggregate:  84 
+
+        Division 1                Thu 13th May        
+     Rufford Park 'A'             Shipley Club        
+Carolyn Matthewman      14 Sylvia Halliday         21 
+Eileen Beck              9 Dianne Halliday         21 
+Catherine New            7 Brenda Chaffer          21 
+Kath Bywell             19 Val Riley               21 
+Debbie Kirkbright       20 Wendy Spivey            21 
+Diane Teale             21 Rachel Telford           7 
+            Aggregate:  90             Aggregate: 112 
+
+        Division 1                Thu 13th May        
+        Calverley               Rufford Park 'B'      
+Mandy Wilson            21 Pauline Ingleson         4 
+Margaret Wood            8 Sue Newell              21 
+Lindsey Rosendale       16 Adele Hart-Woods        21 
+Shirley Biancardo       21 Angela Burnham          18 
+Carol Matthews          21 Christine Dobson         7 
+Tina Howard             21 Angela Bennett          19 
+            Aggregate: 108             Aggregate:  90 
+
+        Division 2                Thu 13th May        
+       Gildersome B                Tarnfield          
+Janice Farrar            7 Beryl Dent              21 
+Tracey Norton           16 May Metcalfe            21 
+Helen Thomas            18 Susan Whelan            21 
+Barbara Hall            17 Dorcas Kirk             21 
+Bev Hampshaw            17 Linda Utley             21 
+Kay Stewart             21 Pam Ratcliffe           18 
+            Aggregate:  96             Aggregate: 123 
+
+        Division 2                Thu 13th May        
+        Eccleshill                New Farnley         
+Jan Smith               21 Ann Scotter             16 
+Shirley Rooks           21 Lynda Ward               8 
+Mary Nellist             9 Barbara Taylor          21 
+Sue Butler              21 Pat Skelton             19 
+Melissa Gilroy          21 Jan Ingham              11 
+Myra Humpleby           21 Sophie Worrall          17 
+            Aggregate: 114             Aggregate:  92 
+
+        Division 2                Thu 13th May        
+        Hall Park                 Greenbottom         
+Linda Stoyles           21 Dorothy Jackson          7 
+Ruth Owen               21 Margaret Greenwood       9 
+Ruth Sutcliffe          16 Karen Whitelaw          21 
+Sandra Griffiths         7 Gwen Smith              21 
+Kath Crompton           21 Maureen Poucher         18 
+Joyce Banks             18 Barbara Harrison        21 
+            Aggregate: 104             Aggregate:  97 
+
+        Division 1                Thu 20th May        
+       Gildersome A              Western Flatts       
+Karen Taylor            21 Mary Wilson             12 
+Glenda Holmes           21 Dawn Peters              7 
+Sandra Deegan           21 Mary Horrocks           16 
+Daphne Scott            21 Hazel Goodall           13 
+Linda Gaunt             15 Barbara Nellis          21 
+Diane Hales             21 Doreen Hogg              7 
+            Aggregate: 120             Aggregate:  76 
+
+        Division 1                Thu 20th May        
+        Calverley                 Shipley Club        
+Shirley Biancardo       21 Sylvia Halliday         17 
+Tina Howard             21 Maxine Welsh             9 
+Carol Matthews          21 Rachel Telford          20 
+Lindsey Rosendale       21 Dianne Halliday          9 
+Mandy Wilson            21 Wendy Spivey            12 
+Margaret Wood           15 Brenda Chaffer          21 
+            Aggregate: 120             Aggregate:  88 
+
+        Division 1                Thu 20th May        
+        Grove Hill              Rufford Park 'A'      
+Joey Crawford           17 Catherine New           21 
+Joan Holden              8 Janice Waite            21 
+Lynne Harper            21 Kath Bywell             10 
+Linda Smith             13 Diane Teale             21 
+Diane Farrar            21 Carolyn Matthewman       7 
+Kay Lodge               21 Debbie Kirkbright       14 
+            Aggregate: 101             Aggregate:  94 
+
+        Division 2                Thu 20th May        
+       Greenbottom                Gildersome B        
+Gwen Smith              21 Beverley Farrar          6 
+Mavis Harwood           13 Alison Lockwood         21 
+Isabel Douglas          21 Margaret Johnstone      16 
+Barbara Harrison        21 Helen Thomas            11 
+Karen Whitelaw          21 Bev Hampshaw            16 
+Audrey Macgregor        21 Kay Stewart              7 
+            Aggregate: 118             Aggregate:  77 
+
+        Division 1                Thu 27th May        
+         Guiseley               Rufford Park 'B'      
+Christine Fountain      19 Angela Bennett          21 
+Doreen Lawson           21 Aileen Pawley            8 
+Caroline Corbett        21 Pauline Ingleson        17 
+Margaret Jones           4 Sally Clarke            21 
+Barbara Firth            4 Christine Dobson        21 
+Christine Boyd          21 Angela Burnham          15 
+            Aggregate:  90             Aggregate: 103 
+
+        Division 1                Thu 27th May        
+     Rufford Park 'A'             Gildersome A        
+Janice Waite            21 Helen Thomas             6 
+Angela Carter           21 Linda Gaunt              5 
+Eileen Beck             21 Sandra Deegan           13 
+Debbie Kirkbright       21 Daphne Scott            10 
+Diane Teale             21 Glenda Holmes           10 
+Val Grace               17 Diane Hales             21 
+            Aggregate: 122             Aggregate:  65 
+
+        Division 1                Thu 27th May        
+       Shipley Club                Grove Hill         
+Vanessa Ratcliffe       21 Toni Johnston            0 
+Dianne Halliday         21 Zoe Armstrong            2 
+Val Riley               21 Linda Yates             10 
+Brenda Chaffer          21 Lynne Harper            18 
+Sylvia Halliday         21 Jean Harrison           20 
+Rachel Telford          21 Joey Crawford            6 
+            Aggregate: 126             Aggregate:  56 
+
+        Division 2                Thu 27th May        
+       Gildersome B                Hall Park          
+Janice Farrar            6 Joyce Banks             21 
+Tracey Norton           11 Ruth Sutcliffe          21 
+Margaret Johnstone      21 Marion Rider            12 
+Barbara Hall            17 Linda Stoyles           21 
+Bev Hampshaw            21 Ruth Owen               15 
+Alison Lockwood         13 Kath Crompton           21 
+            Aggregate:  89             Aggregate: 111 
+
+        Division 2                Thu 27th May        
+        Eccleshill                 Tarnfield          
+Diane Emery             21 Pam Ratcliffe            7 
+Sue Steward             21 Glenys Howden            9 
+Sally Goodall            7 Linda Utley             21 
+Rachel Curtis           21 May Metcalfe            18 
+Pauline Gilroy          21 Dorcas Kirk              7 
+Sarah Harrison          21 Beryl Dent               7 
+            Aggregate: 112             Aggregate:  69 
+
+        Division 2                Thu 27th May        
+        Holt Park                 Greenbottom         
+Michelle Norcliffe      21 Isabel Douglas           7 
+Pat Penman              21 Audrey Macgregor        16 
+Joyce Adamson           21 Maureen Poucher         15 
+Geraldine Lyons         12 Dorothy Jackson         21 
+Sue Megson               4 Gwen Smith              21 
+Betty Sparkes           21 Barbara Harrison        12 
+            Aggregate: 100             Aggregate:  92 
+
+        Division 1                Thu 3rd Jun         
+       Gildersome A               Shipley Club        
+Linda Gaunt             21 Sylvia Halliday         16 
+Karen Taylor            21 Val Riley               20 
+Daphne Scott            21 Maxine Welsh             8 
+Glenda Holmes           10 Wendy Spivey            21 
+Sandra Deegan           20 Dianne Halliday         21 
+Diane Hales             21 Rachel Telford          11 
+            Aggregate: 114             Aggregate:  97 
+
+        Division 1                Thu 3rd Jun         
+     Rufford Park 'B'            Western Flatts       
+Sue Newell              21 Mary Wilson              2 
+Kirsten Clapham         21 Maveen Tomlinson        13 
+Pauline Ingleson        21 Doreen Hogg             19 
+Angela Bennett          21 Dawn Peters             19 
+Christine Dobson        21 Glennys Ash              9 
+Adele Hart-Woods        21 Hazel Goodall           19 
+            Aggregate: 126             Aggregate:  81 
+
+        Division 1                Thu 3rd Jun         
+        Calverley                   Guiseley          
+Margaret Wood           21 Doreen Lawson           10 
+Shirley Biancardo       21 Lynette Hall             8 
+Tina Howard             21 Barbara Firth           10 
+Mandy Wilson            21 Caroline Corbett        19 
+Lindsey Rosendale       21 Jean Perry              10 
+Carol Matthews          21 Bridget Hopkinson        1 
+            Aggregate: 126             Aggregate:  58 
+
+        Division 2                Thu 3rd Jun         
+       Greenbottom                 Tarnfield          
+Margaret Greenwood      21 Pam Ratcliffe           12 
+Dorothy Jackson         21 Susan Whelan             6 
+Maureen Poucher         18 May Metcalfe            21 
+Gwen Smith              21 Dorcas Kirk              6 
+Audrey Macgregor        21 Beryl Dent              14 
+Karen Whitelaw          21 Glenys Howden            4 
+            Aggregate: 123             Aggregate:  63 
+
+        Division 2                Thu 3rd Jun         
+        Hall Park                 New Farnley         
+Ruth Owen               21 Catherine Crane         14 
+Marion Rider            21 Linda Taylor            17 
+Ruth Sutcliffe          21 Ann Scotter              4 
+Joyce Banks             14 Pat Skelton             21 
+Kath Crompton           21 Barbara Taylor           6 
+Linda Stoyles           19 Jan Ingham              21 
+            Aggregate: 117             Aggregate:  83 
+
+        Division 2                Thu 3rd Jun         
+        Holt Park                  Eccleshill         
+Sue Megson              21 Sue Butler              13 
+Betty Sparkes           21 Mary Nellist            18 
+Geraldine Lyons         11 Jan Smith               21 
+Pat Penman              21 Shirley Rooks           19 
+Joyce Adamson            1 Myra Humpleby           21 
+Michelle Norcliffe      17 Melissa Gilroy          21 
+            Aggregate:  92             Aggregate: 113 
+
+        Division 1                Thu 10th Jun        
+      Western Flatts               Calverley          
+Hazel Goodall           13 Lindsey Rosendale       21 
+Doreen Hogg             21 Tina Howard             20 
+Mary Horrocks           21 Gail Schofield          10 
+Barbara Nellis          10 Lynda Heath             21 
+Dawn Peters             16 Carol Matthews          21 
+Maveen Tomlinson         1 Shirley Biancardo       21 
+            Aggregate:  82             Aggregate: 114 
+
+        Division 1                Thu 10th Jun        
+       Shipley Club             Rufford Park 'B'      
+Wendy Spivey            21 Adele Hart-Woods        20 
+Dianne Halliday         21 Angela Burnham           3 
+Maxine Welsh            10 Kirsten Clapham         21 
+Sylvia Halliday         16 Christine Dobson        21 
+Val Riley               13 Pauline Ingleson        21 
+Lynn Shaw               21 Sue Newell              12 
+            Aggregate: 102             Aggregate:  98 
+
+        Division 1                Thu 10th Jun        
+        Grove Hill                Gildersome A        
+Gill Godden             21 Barbara Hall            18 
+Brenda Appleyard         8 Bev Hampshaw            21 
+Toni Johnston            9 Karen Taylor            21 
+Linda Yates             17 Linda Gaunt             21 
+Linda Smith              5 Diane Hales             21 
+Diane Farrar            21 Daphne Scott            14 
+            Aggregate:  81             Aggregate: 116 
+
+        Division 2                Thu 10th Jun        
+       Gildersome B                Holt Park          
+Beverley Farrar          9 Pat Penman              21 
+Kay Stewart             12 Joyce Adamson           21 
+Tracey Norton           21 Michelle Norcliffe      19 
+Helen Thomas             6 Sue Megson              21 
+Alison Lockwood         18 Betty Sparkes           21 
+Margaret Johnstone      21 Geraldine Lyons          5 
+            Aggregate:  87             Aggregate: 108 
+
+        Division 2                Thu 10th Jun        
+        Eccleshill                 Hall Park          
+Myra Humpleby           21 Kath McCourt             5 
+Sue Butler               8 Linda Stoyles           21 
+Mary Nellist            21 Joyce Banks             12 
+Sally Goodall           15 Ruth Owen               21 
+Pauline Gilroy          21 Ruth Sutcliffe           9 
+Diane Emery             21 Kath Crompton           15 
+            Aggregate: 107             Aggregate:  83 
+
+        Division 2                Thu 10th Jun        
+       New Farnley                Greenbottom         
+Pat Skelton             21 Mavis Harwood           20 
+Lynda Ward               8 Isabel Douglas          21 
+Catherine Crane         17 Barbara Harrison        21 
+Linda Taylor            21 Audrey Macgregor        14 
+Sophie Worrall          21 Karen Whitelaw           4 
+Jean Milner             21 Dorothy Jackson          3 
+            Aggregate: 109             Aggregate:  83 
+
+        Division 1                Thu 17th Jun        
+        Grove Hill                  Guiseley          
+Joan Holden             21 Christine Fountain       4 
+Brenda Appleyard        20 Doreen Lawson           21 
+Zoe Armstrong           21 Margaret Jones          11 
+Jean Harrison           12 Lynne Ogden             21 
+Pauline Barnett         21 Bridget Hopkinson       13 
+Kay Lodge               21 Christine Boyd           5 
+            Aggregate: 116             Aggregate:  75 
+
+        Division 1                Thu 17th Jun        
+       Gildersome A             Rufford Park 'B'      
+Margaret Johnstone       7 Sue Newell              21 
+Karen Taylor            19 Kirsten Clapham         21 
+Sandra Deegan           10 Angela Burnham          21 
+Linda Gaunt             15 Carolyn Matthewman      21 
+Glenda Holmes           21 Angela Bennett          19 
+Diane Hales             21 Christine Dobson         7 
+            Aggregate:  93             Aggregate: 110 
+
+        Division 1                Thu 17th Jun        
+     Rufford Park 'A'              Calverley          
+Janice Waite            21 Tina Howard              9 
+Val Grace               21 Mandy Wilson            16 
+Kath Bywell             17 Lynda Heath             21 
+Eileen Beck             21 Gail Schofield           9 
+Angela Carter           21 Margaret Wood           16 
+Debbie Kirkbright       17 Carol Matthews          21 
+            Aggregate: 118             Aggregate:  92 
+
+        Division 2                Thu 17th Jun        
+        Eccleshill                Gildersome B        
+Sarah Harrison          21 Beverley Farrar          8 
+Melissa Gilroy          21 Helen Thomas             9 
+Myra Humpleby           21 Kay Stewart              6 
+Shirley Rooks           21 Alison Lockwood         10 
+Rachel Curtis            3 Bev Hampshaw            21 
+Jan Smith               18 Tracey Norton           21 
+            Aggregate: 105             Aggregate:  75 
+
+        Division 2                Thu 17th Jun        
+        Tarnfield                  Hall Park          
+May Metcalfe            18 Ruth Sutcliffe          21 
+Glenys Howden           13 Marion Rider            21 
+Susan Whelan            19 Ruth Owen               21 
+Pam Ratcliffe           20 Joyce Banks             21 
+Anita Howard            21 Kath Crompton           17 
+Linda Utley             21 Linda Stoyles            3 
+            Aggregate: 112             Aggregate: 104 
+
+        Division 2                Thu 17th Jun        
+       New Farnley                 Holt Park          
+Marjorie Kay            19 Betty Sparkes           21 
+Ann Scotter              3 Geraldine Lyons         21 
+Barbara Taylor          21 Sue Megson               8 
+Jan Ingham              21 Joyce Adamson           10 
+Sophie Worrall          21 Michelle Norcliffe      11 
+Linda Taylor            21 Pat Penman               6 
+            Aggregate: 106             Aggregate:  77 
+
+        Division 1                Thu 24th Jun        
+         Guiseley                Western Flatts       
+Barbara Firth           21 Doreen Hogg             15 
+Christine Boyd          19 Dawn Peters             21 
+Jean Perry              10 Maveen Tomlinson        21 
+Margaret Jones          11 Mary Horrocks           21 
+Doreen Lawson           17 Deborah Sandals         21 
+Lynette Hall            21 Hazel Goodall           10 
+            Aggregate:  99             Aggregate: 109 
+
+        Division 1                Thu 24th Jun        
+     Rufford Park 'B'           Rufford Park 'A'      
+Sally Clarke            21 Janice Waite            17 
+Angela Bennett          16 Eileen Beck             21 
+Pauline Ingleson        21 Kath Bywell             18 
+Sue Newell              18 Carole Wright           21 
+Kirsten Clapham         10 Debbie Kirkbright       21 
+Christine Dobson        10 Val Grace               21 
+            Aggregate:  96             Aggregate: 119 
+
+        Division 1                Thu 24th Jun        
+        Calverley                  Grove Hill         
+Tina Howard             21 Linda Smith             12 
+Lindsey Rosendale       21 Jean Harrison           18 
+Margaret Wood           21 Gill Godden             15 
+Shirley Biancardo       21 Toni Johnston            5 
+Carol Matthews          21 Joan Holden              5 
+Lynda Heath             21 Brenda Appleyard        12 
+            Aggregate: 126             Aggregate:  67 
+
+        Division 2                Thu 24th Jun        
+       Greenbottom                 Eccleshill         
+Gwen Smith              12 Pauline Gilroy          21 
+Karen Whitelaw          21 Diane Emery             17 
+Mavis Harwood            8 Sarah Harrison          21 
+Maureen Poucher         21 Sally Goodall           12 
+Barbara Harrison        21 Rachel Curtis           11 
+Audrey Macgregor        21 Sue Steward             17 
+            Aggregate: 104             Aggregate:  99 
+
+        Division 2                Thu 24th Jun        
+       Gildersome B               New Farnley         
+Janice Farrar           15 Catherine Crane         21 
+Beverley Farrar         21 Lynda Ward               7 
+Alison Lockwood          9 Pat Skelton             21 
+Tracey Norton           10 Jean Milner             21 
+Margaret Johnstone      12 Sophie Worrall          21 
+Bev Hampshaw            21 Linda Taylor            13 
+            Aggregate:  88             Aggregate: 104 
+
+        Division 2                Thu 24th Jun        
+        Holt Park                  Tarnfield          
+Joyce Adamson           18 Beryl Dent              21 
+Michelle Norcliffe      21 Glenys Howden           15 
+Pat Penman              19 Pam Ratcliffe           21 
+Betty Sparkes           18 Linda Utley             21 
+Geraldine Lyons          2 May Metcalfe            21 
+Sue Megson              21 Susan Whelan            16 
+            Aggregate:  99             Aggregate: 115 
+
+        Division 1                Thu 1st Jul         
+       Shipley Club                 Guiseley          
+Lynn Shaw               21 Doreen Lawson            7 
+Wendy Spivey            21 Lynne Ogden             15 
+Sylvia Halliday         21 Bridget Hopkinson        4 
+Dianne Halliday         21 Jean Perry               4 
+Val Riley               21 Barbara Firth           15 
+Brenda Chaffer          13 Lynette Hall            21 
+            Aggregate: 118             Aggregate:  66 
+
+        Division 1                Thu 1st Jul         
+     Rufford Park 'A'            Western Flatts       
+Kath Bywell             21 Dawn Peters             10 
+Eileen Beck             21 Mary Horrocks           10 
+Carole Wright           21 Deborah Sandals         13 
+Angela Carter           21 Barbara Nellis           8 
+Carolyn Matthewman      21 Glennys Ash              8 
+Val Grace               21 Maveen Tomlinson         1 
+            Aggregate: 126             Aggregate:  50 
+
+        Division 1                Thu 1st Jul         
+        Grove Hill              Rufford Park 'B'      
+Lynne Harper            21 Pauline Ingleson         8 
+Zoe Armstrong           15 Adele Hart-Woods        21 
+Brenda Appleyard         5 Sue Newell              21 
+Linda Yates             19 Christine Dobson        21 
+Pauline Barnett         21 Angela Burnham          10 
+Diane Farrar            21 Angela Bennett          20 
+            Aggregate: 102             Aggregate: 101 
+
+        Division 2                Thu 1st Jul         
+        Tarnfield                 Gildersome B        
+Pam Ratcliffe           21 Helen Thomas            10 
+Glenys Howden           21 Alison Lockwood         12 
+Linda Utley             21 Tracey Norton           13 
+Susan Whelan            21 Janice Farrar            2 
+Beryl Dent               8 Bev Hampshaw            21 
+May Metcalfe            21 Beverley Farrar          6 
+            Aggregate: 113             Aggregate:  64 
+
+        Division 2                Thu 1st Jul         
+       New Farnley                 Eccleshill         
+Barbara Taylor           8 Myra Humpleby           21 
+Ann Scotter             19 Mary Nellist            21 
+Catherine Crane         21 Jan Smith               20 
+Sophie Worrall          21 Shirley Rooks           13 
+Jan Ingham              21 Sue Butler               7 
+Jean Milner             21 Pauline Gilroy          13 
+            Aggregate: 111             Aggregate:  95 
+
+        Division 2                Thu 1st Jul         
+       Greenbottom                 Hall Park          
+Audrey Macgregor        21 Kath Crompton           17 
+Margaret Greenwood      21 Linda Stoyles           14 
+Barbara Harrison        21 Kath McCourt             4 
+Dorothy Jackson         19 Ruth Sutcliffe          21 
+Gwen Smith              21 Joyce Banks             13 
+Karen Whitelaw          21 Ruth Owen               13 
+            Aggregate: 124             Aggregate:  82 
+
+        Division 1                Thu 8th Jul         
+        Calverley                 Gildersome A        
+Tina Howard             17 Glenda Holmes           21 
+Lindsey Rosendale       21 Daphne Scott             6 
+Lynda Heath             21 Linda Gaunt              5 
+Carol Matthews          21 Diane Hales             11 
+Mandy Wilson            21 Sandra Deegan            9 
+Shirley Biancardo       21 Karen Taylor             7 
+            Aggregate: 122             Aggregate:  59 
+
+        Division 1                Thu 8th Jul         
+         Guiseley               Rufford Park 'A'      
+Margaret Jones           2 Janice Waite            21 
+Caroline Corbett        21 Angela Carter           15 
+Christine Fountain      16 Catherine New           21 
+Bridget Hopkinson       11 Eileen Beck             21 
+Lynette Hall            21 Carolyn Matthewman      20 
+Christine Boyd          11 Debbie Kirkbright       21 
+            Aggregate:  82             Aggregate: 119 
+
+        Division 1                Thu 8th Jul         
+      Western Flatts              Shipley Club        
+Doreen Hogg              6 Dianne Halliday         21 
+Dawn Peters             17 Lynn Shaw               21 
+Mary Horrocks           21 Rachael Slater          16 
+Hazel Goodall           13 Sylvia Halliday         21 
+Deborah Sandals          3 Wendy Spivey            21 
+Glennys Ash              8 Rachel Telford          21 
+            Aggregate:  68             Aggregate: 121 
+
+        Division 2                Thu 8th Jul         
+       Gildersome B               Greenbottom         
+Kay Stewart             19 Isabel Douglas          21 
+Helen Thomas             5 Audrey Macgregor        21 
+Alison Lockwood         21 Mavis Harwood           18 
+Tracey Norton           21 Maureen Poucher         14 
+Barbara Hall             8 Gwen Smith              21 
+Bev Hampshaw            20 Barbara Harrison        21 
+            Aggregate:  94             Aggregate: 116 
+
+        Division 2                Thu 8th Jul         
+        Holt Park                  Hall Park          
+Geraldine Lyons         10 Ruth Owen               21 
+Sue Megson              13 Joyce Banks             21 
+Betty Sparkes           21 Ruth Sutcliffe          19 
+Michelle Norcliffe       9 Chris Gill              21 
+Pat Penman              17 Linda Stoyles           21 
+Joyce Adamson           14 Kath Crompton           21 
+            Aggregate:  84             Aggregate: 124 
+
+        Division 2                Thu 8th Jul         
+       New Farnley                 Tarnfield          
+Ann Scotter             12 Beryl Dent              21 
+Lynda Ward              14 May Metcalfe            21 
+Catherine Crane         21 Dorcas Kirk             18 
+Pat Skelton             19 Linda Utley             21 
+Linda Taylor            21 Pam Ratcliffe            6 
+Jan Ingham              21 Susan Whelan             8 
+            Aggregate: 108             Aggregate:  95 
+
+        Division 1                Thu 15th Jul        
+       Gildersome A                 Guiseley          
+Linda Gaunt             21 Jean Perry               6 
+Daphne Scott            21 Lynne Ogden             16 
+Karen Taylor            21 Christine Boyd           7 
+Sandra Deegan           21 Christine Fountain       8 
+Diane Hales             21 Caroline Corbett        16 
+Glenda Holmes           21 Lynette Hall            17 
+            Aggregate: 126             Aggregate:  70 
+
+        Division 1                Thu 15th Jul        
+        Grove Hill               Western Flatts       
+Brenda Appleyard        21 Dawn Peters             14 
+Zoe Armstrong           21 Maveen Tomlinson         9 
+Linda Yates             16 Barbara Nellis          21 
+Jean Harrison           15 Hazel Goodall           21 
+Lynne Harper            11 Mary Horrocks           21 
+Pauline Barnett         21 Glennys Ash             13 
+            Aggregate: 105             Aggregate:  99 
+
+        Division 1                Thu 15th Jul        
+       Shipley Club             Rufford Park 'A'      
+Sylvia Halliday         21 Janice Waite            17 
+Dianne Halliday         21 Kath Bywell              4 
+Wendy Spivey            21 Diane Teale              8 
+Lynn Shaw               21 Angela Carter           18 
+Val Riley               21 Eileen Beck             10 
+Rachel Telford          12 Debbie Kirkbright       21 
+            Aggregate: 117             Aggregate:  78 
+
+        Division 1                Thu 15th Jul        
+     Rufford Park 'B'              Calverley          
+Pauline Ingleson        19 Lindsey Rosendale       21 
+Christine Dobson        21 Shirley Biancardo       17 
+Sally Clarke             9 Lynda Heath             21 
+Angela Bennett          10 Carol Matthews          21 
+Angela Burnham          13 Mandy Wilson            21 
+Kirsten Clapham         19 Margaret Wood           21 
+            Aggregate:  91             Aggregate: 122 
+
+        Division 2                Thu 15th Jul        
+        Hall Park                 Gildersome B        
+Ruth Owen               21 Janice Farrar            4 
+Marion Rider            21 Beverley Farrar         11 
+Joyce Banks             21 Margaret Johnstone       4 
+Ruth Sutcliffe          21 Alison Lockwood          7 
+Kath Crompton           21 Tracey Norton           11 
+Chris Gill              17 Bev Hampshaw            21 
+            Aggregate: 122             Aggregate:  58 
+
+        Division 2                Thu 15th Jul        
+        Tarnfield                  Eccleshill         
+Linda Utley             21 Diane Emery              6 
+Susan Whelan            21 Sally Goodall           10 
+May Metcalfe            18 Pauline Gilroy          21 
+Dorcas Kirk             21 Sue Butler              13 
+Pam Ratcliffe           17 Melissa Gilroy          21 
+Beryl Dent               4 Myra Humpleby           21 
+            Aggregate: 102             Aggregate:  92 
+
+        Division 2                Thu 15th Jul        
+       Greenbottom                 Holt Park          
+Dorothy Jackson         19 Michelle Norcliffe      21 
+Margaret Greenwood      21 Pat Penman              20 
+Isabel Douglas          21 Joyce Adamson           11 
+Audrey Macgregor        21 Geraldine Lyons         10 
+Karen Whitelaw          21 Sue Megson              12 
+Gwen Smith              21 Betty Sparkes            4 
+            Aggregate: 124             Aggregate:  78 
+
+        Division 1                Thu 22nd Jul        
+      Western Flatts              Gildersome A        
+Doreen Hogg              7 Glenda Holmes           21 
+Barbara Nellis          21 Daphne Scott            19 
+Dawn Peters              6 Diane Hales             21 
+Deborah Sandals         14 Sandra Deegan           21 
+Hazel Goodall           21 Karen Taylor            11 
+Mary Horrocks           11 Linda Gaunt             21 
+            Aggregate:  80             Aggregate: 114 
+
+        Division 1                Thu 22nd Jul        
+       Shipley Club                Calverley          
+Wendy Spivey            21 Shirley Biancardo       14 
+Maxine Welsh            21 Mandy Wilson             9 
+Val Riley               21 Tina Howard             12 
+Rachael Slater          10 Margaret Wood           21 
+Dianne Halliday         19 Lynda Heath             21 
+Rachel Telford          21 Lindsey Rosendale       11 
+            Aggregate: 113             Aggregate:  88 
+
+        Division 1                Thu 22nd Jul        
+     Rufford Park 'A'              Grove Hill         
+Janice Waite            21 Linda Smith              5 
+Angela Carter           21 Joan Holden              8 
+Carolyn Matthewman      21 Gill Godden             15 
+Carole Wright           21 Diane Farrar             5 
+Debbie Kirkbright       21 Linda Smith              5 
+Val Grace               21 Kay Lodge                3 
+            Aggregate: 126             Aggregate:  41 
+
+        Division 2                Thu 22nd Jul        
+        Tarnfield                 Greenbottom         
+Linda Utley             21 Maureen Poucher          7 
+May Metcalfe            15 Mavis Harwood           21 
+Pam Ratcliffe           21 Isabel Douglas           5 
+Dorcas Kirk             21 Audrey Macgregor        19 
+Beryl Dent              12 Barbara Harrison        21 
+Susan Whelan            15 Karen Whitelaw          21 
+            Aggregate: 105             Aggregate:  94 
+
+        Division 2                Thu 22nd Jul        
+        Eccleshill                 Holt Park          
+Jan Smith               21 Sue Megson               4 
+Diane Emery             21 Betty Sparkes           13 
+Mary Nellist            10 Geraldine Lyons         21 
+Rachel Curtis           10 Pat Penman              21 
+Sarah Harrison          21 Joyce Adamson           18 
+Pauline Gilroy          21 Michelle Norcliffe       0 
+            Aggregate: 104             Aggregate:  77 
+
+        Division 1                Thu 29th Jul        
+     Rufford Park 'B'               Guiseley          
+Kirsten Clapham          9 Christine Boyd          21 
+Pauline Ingleson        21 Jean Perry              12 
+Angela Bennett          21 Bridget Hopkinson        2 
+Angela Burnham          21 Christine Fountain      16 
+Sue Newell              21 Doreen Lawson            3 
+Christine Dobson        21 Barbara Firth           10 
+            Aggregate: 114             Aggregate:  64 
+
+        Division 1                Thu 29th Jul        
+       Gildersome A             Rufford Park 'A'      
+Karen Taylor            21 Janice Waite            20 
+Daphne Scott            21 Eileen Beck             11 
+Sandra Deegan           21 Carole Wright           10 
+Linda Gaunt             15 Angela Carter           21 
+Glenda Holmes           21 Debbie Kirkbright       18 
+Diane Hales             16 Val Grace               21 
+            Aggregate: 115             Aggregate: 101 
+
+        Division 1                Thu 29th Jul        
+        Grove Hill                Shipley Club        
+Diane Farrar            21 Maxine Welsh             3 
+Zoe Armstrong           21 Dianne Halliday         20 
+Linda Yates             15 Brenda Chaffer          21 
+Lynne Harper            15 Val Riley               21 
+Jean Harrison           15 Wendy Spivey            21 
+Pauline Barnett          5 Rachel Telford          21 
+            Aggregate:  92             Aggregate: 107 
+
+        Division 2                Thu 29th Jul        
+        Holt Park                 Gildersome B        
+Jean Fairhall           18 Helen Thomas            21 
+Carol Mottershead       15 Barbara Hall            21 
+Michelle Norcliffe      21 Alison Lockwood          9 
+Sue Megson              21 Margaret Johnstone      20 
+Betty Sparkes           21 Tracey Norton           12 
+Geraldine Lyons          4 Bev Hampshaw            21 
+            Aggregate: 100             Aggregate: 104 
+
+        Division 2                Thu 29th Jul        
+        Hall Park                  Eccleshill         
+Linda Stoyles           21 Sue Steward              8 
+Ruth Sutcliffe          21 Sally Goodall            4 
+Marion Rider            21 Shirley Rooks           14 
+Joyce Banks              9 Pauline Gilroy          21 
+Kath Crompton           21 Sue Butler              18 
+Ruth Owen               11 Melissa Gilroy          21 
+            Aggregate: 104             Aggregate:  86 
+
+        Division 2                Thu 29th Jul        
+       Greenbottom                New Farnley         
+Margaret Greenwood      21 Rosalyn Walsh           14 
+Mavis Harwood           21 Ann Scotter              9 
+Karen Whitelaw          21 Lynda Ward               3 
+Dorothy Jackson          9 Linda Taylor            21 
+Barbara Harrison        10 Barbara Taylor          21 
+Gwen Smith              21 Pat Skelton             16 
+            Aggregate: 103             Aggregate:  84 
+
+        Division 1                Thu 5th Aug         
+       Shipley Club               Gildersome A        
+Brenda Chaffer          21 Linda Gaunt             15 
+Dianne Halliday         21 Diane Hales              9 
+Rachael Slater          18 Karen Taylor            21 
+Maxine Welsh            21 Glenda Holmes           13 
+Lynn Shaw               16 Daphne Scott            21 
+Rachel Telford          21 Sandra Deegan           15 
+            Aggregate: 118             Aggregate:  94 
+
+        Division 1                Thu 5th Aug         
+      Western Flatts            Rufford Park 'B'      
+Maveen Tomlinson         8 Angela Burnham          21 
+Dawn Peters             13 Angela Bennett          21 
+Mary Horrocks           16 Pauline Ingleson        21 
+Deborah Sandals         12 Christine Dobson        21 
+Barbara Nellis          21 Amy Elizabeth Lawrence  11 
+Doreen Hogg             21 Adele Hart-Woods        16 
+            Aggregate:  91             Aggregate: 111 
+
+        Division 1                Thu 5th Aug         
+         Guiseley                  Calverley          
+Doreen Lawson            2 Carol Matthews          21 
+Caroline Corbett        21 Margaret Wood           15 
+Lynne Ogden             10 Shirley Biancardo       21 
+Jean Perry              21 Lindsey Rosendale       19 
+Lynette Hall            11 Mandy Wilson            21 
+Christine Boyd           4 Tina Howard             21 
+            Aggregate:  69             Aggregate: 118 
+
+        Division 2                Thu 5th Aug         
+       Gildersome B                Eccleshill         
+Janice Farrar            7 Melissa Gilroy          21 
+Beverley Farrar          7 Shirley Rooks           21 
+Kay Stewart             21 Rachel Curtis            7 
+Barbara Hall            15 Sue Butler              21 
+Margaret Johnstone      12 Jan Smith               21 
+Bev Hampshaw            21 Pauline Gilroy          20 
+            Aggregate:  83             Aggregate: 111 
+
+        Division 2                Thu 5th Aug         
+        Hall Park                  Tarnfield          
+Joyce Banks             21 Pam Ratcliffe           18 
+Ruth Owen               21 Dorcas Kirk             17 
+Kath Crompton           21 Linda Utley             19 
+Marion Rider            15 Susan Whelan            21 
+Ruth Sutcliffe          21 Beryl Dent              18 
+Linda Stoyles           21 Dorcas Kirk             10 
+            Aggregate: 120             Aggregate: 103 
+
+        Division 2                Thu 5th Aug         
+        Holt Park                 New Farnley         
+Geraldine Lyons         18 Ann Scotter             21 
+Kathleen Haley          16 Barbara Taylor          21 
+Joyce Adamson           21 Catherine Crane         13 
+Betty Sparkes           21 Pat Skelton              9 
+Michelle Norcliffe      21 Jan Ingham              11 
+Sue Megson              12 Linda Taylor            21 
+            Aggregate: 109             Aggregate:  96 
+
+        Division 2                Fri 6th Aug         
+       New Farnley                 Hall Park          
+Rosalyn Walsh           21 Marion Rider            19 
+Lynda Ward              10 Ruth Sutcliffe          21 
+Sophie Worrall          21 Linda Stoyles            1 
+Catherine Crane          9 Joyce Banks             21 
+Linda Taylor            21 Ruth Owen                3 
+Barbara Taylor          21 Kath Crompton           13 
+            Aggregate: 103             Aggregate:  78 
+
+        Division 1                Thu 12th Aug        
+        Calverley                Western Flatts       
+Shirley Biancardo       21 Doreen Hogg              3 
+Lynda Heath             21 Barbara Nellis           5 
+Carol Matthews          21 Deborah Sandals         14 
+Tina Howard             21 Mary Horrocks            3 
+Lindsey Rosendale       21 Glennys Ash             18 
+Mandy Wilson            21 Dawn Peters              3 
+            Aggregate: 126             Aggregate:  46 
+
+        Division 1                Thu 12th Aug        
+     Rufford Park 'B'             Shipley Club        
+Angela Burnham          21 Lynn Shaw               19 
+Diane Teale             21 Rachael Slater          11 
+Kirsten Clapham         21 Maxine Welsh             8 
+Christine Dobson        21 Dianne Halliday         18 
+Sue Newell              21 Sylvia Halliday         15 
+Pauline Ingleson        19 Val Riley               21 
+            Aggregate: 124             Aggregate:  92 
+
+        Division 1                Thu 12th Aug        
+       Gildersome A                Grove Hill         
+Kay Stewart             13 Joan Holden             21 
+Diane Hales             21 Gill Godden             15 
+Sandra Deegan           21 Linda Smith             19 
+Glenda Holmes           21 Brenda Appleyard        18 
+Karen Taylor            21 Linda Yates             11 
+Daphne Scott            21 Lynne Harper             6 
+            Aggregate: 118             Aggregate:  90 
+
+        Division 2                Thu 12th Aug        
+        Tarnfield                 New Farnley         
+Beryl Dent               5 Jan Ingham              21 
+Glenys Howden            2 Linda Taylor            21 
+Dorcas Kirk             21 Jean Milner             13 
+Linda Utley             21 Barbara Taylor          19 
+Pam Ratcliffe           17 Pat Skelton             21 
+Susan Whelan            11 Ann Scotter             21 
+            Aggregate:  77             Aggregate: 116 
+
+        Division 1                Fri 13th Aug        
+      Western Flatts            Rufford Park 'A'      
+Deborah Sandals         15 Janice Waite            21 
+Maveen Tomlinson        17 Angela Carter           21 
+Dawn Peters             16 Kath Bywell             21 
+Hazel Goodall           14 Eileen Beck             21 
+Barbara Nellis          17 Carolyn Matthewman      21 
+Glennys Ash              5 Debbie Kirkbright       21 
+            Aggregate:  84             Aggregate: 126 
+
+        Division 1                Thu 19th Aug        
+         Guiseley                  Grove Hill         
+Doreen Lawson            6 Diane Farrar            21 
+Caroline Corbett        21 Pauline Barnett         14 
+Bridget Hopkinson       21 Zoe Armstrong           14 
+Lynne Ogden             13 Jean Harrison           21 
+Margaret Jones          14 Lynne Harper            21 
+Lynette Hall            14 Kay Lodge               21 
+            Aggregate:  89             Aggregate: 112 
+
+        Division 1                Thu 19th Aug        
+     Rufford Park 'B'             Gildersome A        
+Amy Elizabeth Lawrence  21 Tracey Norton            8 
+Pauline Ingleson        21 Bev Hampshaw            16 
+Angela Bennett          21 Sandra Deegan            5 
+Christine Dobson        21 Glenda Holmes            6 
+Kirsten Clapham         10 Diane Hales             21 
+Sue Newell              17 Daphne Scott            21 
+            Aggregate: 111             Aggregate:  77 
+
+        Division 1                Thu 19th Aug        
+        Calverley               Rufford Park 'A'      
+Tina Howard             21 Carole Wright           11 
+Lindsey Rosendale       10 Debbie Kirkbright       21 
+Mandy Wilson            10 Diane Teale             21 
+Lynda Heath             21 Janice Waite            12 
+Carol Matthews          21 Val Grace                9 
+Shirley Biancardo       21 Angela Carter           15 
+            Aggregate: 104             Aggregate:  89 
+
+        Division 1                Sun 22nd Aug        
+      Western Flatts                Guiseley          
+Maveen Tomlinson        11 Christine Boyd          21 
+Hazel Goodall           21 Margaret Jones          12 
+Mary Horrocks            5 Lynne Ogden             21 
+Dawn Peters             21 Bridget Hopkinson        1 
+Deborah Sandals         21 Barbara Firth            2 
+Glennys Ash             21 Lynne Ogden             19 
+            Aggregate: 100             Aggregate:  76 
+
+        Division 1                Thu 26th Aug        
+         Guiseley                 Shipley Club        
+Caroline Corbett        21 Rachael Slater          11 
+Lynne Ogden             21 Janet Welsh              6 
+Christine Boyd          19 Val Riley               21 
+Doreen Lawson           21 Brenda Chaffer          14 
+Barbara Firth            6 Sylvia Halliday         21 
+Lynette Hall            20 Lynn Shaw               21 
+            Aggregate: 108             Aggregate:  94 
+
+        Division 1                Thu 26th Aug        
+     Rufford Park 'A'           Rufford Park 'B'      
+Kath Bywell             10 Sue Newell              21 
+Janice Waite            21 Pauline Ingleson         9 
+Carolyn Matthewman      21 Angela Bennett           6 
+Eileen Beck             21 Kirsten Clapham         20 
+Debbie Kirkbright       21 Christine Dobson        14 
+Diane Teale             21 Adele Hart-Woods        17 
+            Aggregate: 115             Aggregate:  87 
+
+        Division 1                Thu 26th Aug        
+        Grove Hill                 Calverley          
+Diane Farrar            17 Margaret Wood           21 
+Brenda Appleyard        12 Mandy Wilson            21 
+Joan Holden             11 Tina Howard             21 
+Jean Harrison            4 Shirley Biancardo       21 
+Kay Lodge               16 Carol Matthews          21 
+Linda Smith             21 Lynda Heath             15 
+            Aggregate:  81             Aggregate: 120 
+
+        Division 1                Thu 2nd Sep         
+     Rufford Park 'B'              Grove Hill         
+Kirsten Clapham         21 Gill Godden              8 
+Angela Bennett          21 Lynne Harper             6 
+Pauline Ingleson        21 Linda Smith              5 
+Angela Burnham          21 Linda Yates             13 
+Sue Newell              21 Judith Highcock          1 
+Christine Dobson        21 Joan Holden             14 
+            Aggregate: 126             Aggregate:  47 
 
 

@@ -1,3 +1,7 @@
+from datetime import date
+
+year = str(date.today().year)
+
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 
 cupText = [

@@ -5,7 +5,7 @@ import utils
 import teamDetails
 import re
 
-year = str(date.today().year)
+year = utils.year
 
 leaguesDays = teamDetails.allDays
 players = teamDetails.players
@@ -35,23 +35,17 @@ for league in leaguesDays:
         allRowsInFile = file.readlines()
 
         # Find the number of rows in the file and the stating row to check the stats
-        startingRow = 0
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
-            # This is required for the pre-2024 reports. Alternatively, regenerate the reports in the new format
-            if row and type(row) is str and 'FULL RESULTS' in row.upper():
-                startingRow = rowNumber
             endRow = rowNumber
             
         if endRow == 0:
-            raise Exception('Report file is empty')
+            raise Exception(league + ': Report file is empty')
 
         # Find the cup games in the stats
         cupGameRows = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 for cupText in cupTextList:
@@ -64,8 +58,6 @@ for league in leaguesDays:
         homePlayerRow = []
         awayPlayerRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if (row and type(row) is str):
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
@@ -81,7 +73,7 @@ for league in leaguesDays:
                         awayPlayerRow.append(rowNumber)
 
         # Find each players' results
-        for rowNumber in range(startingRow, endRow + 1):
+        for rowNumber in range(0, endRow + 1):
             # Create list as players may be playing against one another
             playerRows = []
             playerToProcess = False
@@ -131,9 +123,6 @@ for league in leaguesDays:
 
                 # Checks player plays for expected team
                 for i in range(0, 13):
-                    if rowNumber - i <= startingRow:
-                        break
-
                     possibleTeamText = allRowsInFile[rowNumber - i]
                     
                     if type(possibleTeamText) is str:

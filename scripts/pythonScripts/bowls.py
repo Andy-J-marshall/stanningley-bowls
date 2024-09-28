@@ -5,7 +5,7 @@ import teamDetails
 import utils
 import re
 
-year = str(date.today().year)
+year = utils.year
 
 teamDays = teamDetails.teamDays
 teamNames = teamDetails.teamNames
@@ -40,17 +40,13 @@ for team in teamDays:
         allRowsInFile = file.readlines()
         
         # Find the number of rows in the file and the stating row to check the stats
-        startingRow = 0
         endRow = 0
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
-            # This is required for the pre-2024 reports. Alternatively, regenerate the reports in the new format
-            if row and type(row) is str and 'FULL RESULTS' in row.upper():
-                startingRow = rowNumber
             endRow = rowNumber
                     
         if endRow == 0:
-            raise Exception('Report file is empty')
+            raise Exception(league + ': Report file is empty')
         
         # Find team name used by Stanningley in this league
         possibleTeamNamesUsed = []
@@ -58,8 +54,6 @@ for team in teamDays:
         teamNameToUse = displayTeamName
     
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 for teamName in teamNames:
@@ -88,8 +82,6 @@ for team in teamDays:
         # Find the cup games in the stats
         cupGameRows = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 for cupText in cupTextList:
@@ -103,8 +95,6 @@ for team in teamDays:
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 if row.lower().count(displayTeamName.lower()) > 1:
@@ -144,8 +134,6 @@ for team in teamDays:
         totalGamesPlayed = 0
 
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber <= startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             
             rowsDownAdjustmentInt = 0
@@ -282,9 +270,6 @@ for team in teamDays:
                 return False
             
             for i in range(1, 13):
-                if rowNumber - i <= startingRow:
-                    break
-                
                 # Checks player is playing for correct team
                 previousRowValue = allRowsInFile[rowNumber - i]
                 if previousRowValue and type(previousRowValue) is str:
@@ -300,8 +285,6 @@ for team in teamDays:
         homePlayerRow = []
         awayPlayerRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
-            if rowNumber < startingRow:
-                continue
             row = allRowsInFile[rowNumber]
             if (row and type(row) is str):
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
