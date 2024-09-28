@@ -113,7 +113,7 @@ for (const league of leagues) {
 
     // Click pop up if present
     try {
-      const popUp = await page
+      const popUp = page
         .frameLocator('iframe[title="BowlsNet Page"]')
         .frameLocator('iframe[title="BowlsNet Dlg"]')
         .getByRole('button', { name: 'Close' });
