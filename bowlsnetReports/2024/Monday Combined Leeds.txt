@@ -70,7 +70,7 @@ Oliver Delaney         Luke Bellamy
                             Mon 8th Apr       
       Whitkirk A             Gildersome       
 Phil Cox            21 Tracey Norton        2 
-P Hatch             21 David Taylor         7 
+Phil Hatch             21 David Taylor         7 
 Andy Johnson        21 Linda Gaunt          9 
 G Hodder            21 Alan Procter        10 
 Helen Johnson       21 David Norton         6 
@@ -110,7 +110,7 @@ Eddie Fisher           Ellis Owen
      Stanningley             Whitkirk A       
 Vanessa Lancaster    9 G Hodder            21 
 Andy Waller         21 Phil Cox            11 
-Andrew Marshall     21 P Hatch              6 
+Andrew Marshall     21 Phil Hatch              6 
 Joey Broadbent      21 Jason Richards      12 
 Clifford Brogie     21 Chloe Jackson       17 
 Craig Clarkson         P Hardy                
@@ -241,7 +241,7 @@ G Hodder               Neil Robinson
 Lyn Dye             21 Chloe Jackson        5 
 Ian Smith            8 Phil Cox            21 
 Nigel Richardson     7 G Hodder            21 
-John Ainsley        21 P Hatch             13 
+John Ainsley        21 Phil Hatch             13 
 Mick Bagshaw        21 Andy Johnson         8 
 Ron Owen               Jason Richards         
 Alfie Hutchinson    14 Thomas Johnson      21 
@@ -357,7 +357,7 @@ Pamela Collins         Joanna Rochester
     New Farnley A            Whitkirk A       
 Sue Jones            4 Jason Richards      21 
 Emma Dixon          21 Chloe Jackson       20 
-Pat Skelton          3 P Hatch             21 
+Pat Skelton          3 Phil Hatch             21 
 Barbara Taylor      11 Thomas Johnson      21 
 Isaac Shillito       5 T Newsome           21 
 John Ingham            P Hardy                
@@ -472,7 +472,7 @@ Ian Macfarlane         John Ingham
 
                             Mon 20th May      
       Whitkirk A           Western Flatts     
-P Hatch             21 Maveen Tomlinson     3 
+Phil Hatch             21 Maveen Tomlinson     3 
 Phil Cox            21 Peter Colley         5 
 Chloe Jackson       21 Granville Stoyles    1 
 G Hodder            21 Glennys Ash          6 
@@ -499,7 +499,7 @@ Trevor Hawkin          Alyssa Randell
                             Mon 27th May      
      New Wortley             Whitkirk A       
 Keith Sellars       21 Chloe Jackson       17 
-Trevor Dawson       18 P Hatch             21 
+Trevor Dawson       18 Phil Hatch             21 
 Angela Morley        4 G Hodder            21 
 Danny Dawson        21 P Sheerin           12 
 Stephen Morley       7 Helen Johnson       21 
@@ -564,7 +564,7 @@ Laura Love             Lynn Wilcox
                             Fri 31st May      
       Whitkirk A             Harehills        
 Phil Cox            21 Raymond Swallow      4 
-P Hatch             16 Danny Love          21 
+Phil Hatch             16 Danny Love          21 
 Chloe Jackson        9 David Tinker        21 
 Jason Richards      19 Laura Love          21 
 Helen Johnson       11 David Smith         21 
@@ -615,7 +615,7 @@ Joe Doughty            Raymond Swallow
 
                             Mon 3rd Jun       
       Whitkirk A             Meanwood A       
-P Hatch             21 Jenny Holiday       18 
+Phil Hatch             21 Jenny Holiday       18 
 Phil Cox            21 Oliver Delaney      13 
 Chloe Jackson       21 John Hindle         11 
 G Hodder            21 Ian Macfarlane      14 
@@ -694,7 +694,7 @@ Oliver Delaney         Jan Farrar
                             Mon 10th Jun      
       Whitkirk A           Rothwell BC A      
 Chloe Jackson       14 Claire Robinson     21 
-P Hatch             21 John Ainsley        13 
+Phil Hatch             21 John Ainsley        13 
 M Sheerin           21 Matthew Turner      16 
 G Hodder            21 Mick Goodhall       18 
 Jason Richards       3 Nicola Pearson      21 
@@ -851,7 +851,7 @@ Gareth Lally           Pat Prosser
       Gildersome             Whitkirk A       
 Frank Hales         10 Phil Cox            21 
 David Rawson        11 Chloe Jackson       21 
-Linda Gaunt         17 P Hatch             21 
+Linda Gaunt         17 Phil Hatch             21 
 Alan Procter        21 G Hodder            11 
 Harvey Lockwood     21 Thomas Johnson      18 
 Bev Farrar             Helen Johnson          
@@ -901,7 +901,7 @@ Ian Smith              Mark Taylor
 
                             Mon 1st Jul       
       Whitkirk A            Stanningley       
-P Hatch             21 Stuart Potter        9 
+Phil Hatch             21 Stuart Potter        9 
 Chloe Jackson       11 Paul Bowes          21 
 G Hodder            21 Andrew Marshall     20 
 P Hardy             21 Joey Broadbent      19 
@@ -1019,7 +1019,7 @@ Jade Kerry             Rory Bligh
                             Mon 8th Jul       
      Garforth C C            Whitkirk A       
 David Horsey        21 Phil Cox            19 
-Julie Matthews      18 P Hatch             21 
+Julie Matthews      18 Phil Hatch             21 
 Les Hudson          21 Dale Williamson     12 
 Thomas Cranston     16 Jason Richards      21 
 Neil Robinson       10 P Hardy             21 
@@ -1033,7 +1033,7 @@ Ian Doughty            G Scholes
       Whitkirk A           Rothwell BC B      
 Chloe Jackson       21 John Hemingway       2 
 Phil Cox            21 Ian Smith           15 
-P Hatch             21 Nigel Richardson     6 
+Phil Hatch             21 Nigel Richardson     6 
 G Hodder            21 Sam Waite            8 
 Jason Richards      21 Mick Bagshaw        14 
 M Sheerin              Trevor Hawkin          
@@ -1174,7 +1174,7 @@ Colin Peace            Graham Hey
 
                             Mon 22nd Jul      
       Harehills              Whitkirk A       
-Raymond Swallow      9 P Hatch             21 
+Raymond Swallow      9 Phil Hatch             21 
 David Smith         17 Chloe Jackson       21 
 David Tinker        21 G Hodder            14 
 Laura Love          21 Phil Cox            15 
@@ -1228,7 +1228,7 @@ Glennys Ash            Stephanie Mundell
       Whitkirk A           New Farnley A      
 G Hodder            21 Pat Skelton          9 
 Phil Cox            21 Sue Jones            3 
-P Hatch             21 Emma Dixon           1 
+Phil Hatch             21 Emma Dixon           1 
 P Hardy             21 Dave Taylor         15 
 Jason Richards      21 Keith Walker        18 
 Andy Johnson           Howard Fowler          
@@ -1383,7 +1383,7 @@ Paul Leonard           Lucas Waite
                             Mon 12th Aug      
       Whitkirk A            New Wortley       
 Phil Cox            21 Trevor Dawson        6 
-P Hatch             21 Brian Marshall      10 
+Phil Hatch             21 Brian Marshall      10 
 S Cahill            21 Angela Morley        5 
 G Hodder            11 Danny Dawson        21 
 Jason Richards      21 Stuart Reardon      19 
@@ -1514,7 +1514,7 @@ Raymond Swallow        Neil Robinson
       Meanwood A             Whitkirk A       
 Jenny Holiday       14 S Cahill            21 
 Pat Prosser         13 G Hodder            21 
-Rory Bligh          13 P Hatch             21 
+Rory Bligh          13 Phil Hatch             21 
 David L Miller      13 Chloe Jackson       21 
 Julie Keightley     21 Helen Johnson        8 
 Ian Macfarlane         Thomas Johnson         
@@ -1580,7 +1580,7 @@ Tracey Norton          Ian Macfarlane
 Peter Burrows       21 S Cahill             7 
 Mick Goodhall       21 Phil Cox            17 
 Lyn Dye             17 G Hodder            21 
-Michael Hill        21 P Hatch             12 
+Michael Hill        21 Phil Hatch             12 
 Gary Dennison       21 Andy Johnson        13 
 Nicola Pearson         Jason Richards         
 Ellis Owen          21 Helen Johnson       19 
@@ -1616,7 +1616,7 @@ Rory Bligh             Lynne Best
 
                             Mon 2nd Sep       
       Whitkirk A           Crossgates BC      
-P Hatch             14 Tom Smith           21 
+Phil Hatch             14 Tom Smith           21 
 Chloe Jackson       19 Lynn Wilcox         21 
 Phil Cox            17 Adam Sharpe         21 
 G Hodder            12 Rachel Wilcox       21 
@@ -1709,7 +1709,7 @@ Natalie Sanderson      Trevor Hawkin
     Crossgates BC            Whitkirk A       
 Liam Griffin        21 G Hodder            15 
 Lynn Wilcox         21 Chloe Jackson        9 
-Adam Sharpe         21 P Hatch             10 
+Adam Sharpe         21 Phil Hatch             10 
 Rachel Wilcox       21 Phil Cox            10 
 Mark Taylor         21 S Cahill             1 
 Louie Taylor           Thomas Johnson         
