@@ -88,6 +88,11 @@ function History() {
             </ListGroup>
             <br />
             <h2>TROPHIES</h2>
+            <h4>Brotherton Cup</h4>
+            <ListGroup>
+                <ListGroupItem>1927</ListGroupItem>
+            </ListGroup>
+            <br />
             <h4>Leeds Saturday</h4>
             <Row
                 sm={1}
@@ -154,38 +159,18 @@ function History() {
             </Row>
             <br />
             <h4>Leeds Half Holiday</h4>
-            <Row
-                sm={1}
-                md={2}
-                lg={3}
-                xl={4}
-                className="g-4 tabs align-items-start"
-            >
-                <Col>
-                    <h5>Penrose Green Cup</h5>
-                    <ListGroup>
-                        <ListGroupItem>1970</ListGroupItem>
-                        <ListGroupItem>2023</ListGroupItem>
-                    </ListGroup>
-                </Col>
-            </Row>
+            <h5>Penrose Green Cup</h5>
+            <ListGroup>
+                <ListGroupItem>1970</ListGroupItem>
+                <ListGroupItem>2023</ListGroupItem>
+            </ListGroup>
             <br />
             <h4>Leeds Thursday Vets</h4>
-            <Row
-                sm={1}
-                md={2}
-                lg={3}
-                xl={4}
-                className="g-4 tabs align-items-start"
-            >
-                <Col>
-                    <h5>Harrison Cup</h5>
-                    <ListGroup>
-                        <ListGroupItem>1995</ListGroupItem>
-                        <ListGroupItem>2017</ListGroupItem>
-                    </ListGroup>
-                </Col>
-            </Row>
+            <h5>Harrison Cup</h5>
+            <ListGroup>
+                <ListGroupItem>1995</ListGroupItem>
+                <ListGroupItem>2017</ListGroupItem>
+            </ListGroup>
             <br />
         </div>
     );
