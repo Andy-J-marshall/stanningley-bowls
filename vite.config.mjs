@@ -9,7 +9,7 @@ export default defineConfig({
             async transform(code, id) {
                 if (!id.match(/src\/.*\.js$/)) return null;
                 return transformWithEsbuild(code, id, {
-                    loader: 'jsx', // TODO should be tsx?
+                    loader: 'tsx', // TODO should be tsx or jsx?
                     jsx: 'automatic',
                 });
             },
