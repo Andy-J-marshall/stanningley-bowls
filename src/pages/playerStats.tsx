@@ -252,8 +252,7 @@ function PlayerStats(props) {
             {!loading &&
                 searchedPlayerName &&
                 !playerFound &&
-                // TODO fix
-                !searchedPlayerName.toLowerCase() === 'show all' && (
+                !(searchedPlayerName.toLowerCase() === 'show all') && (
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
                         Player not found
                     </h2>
