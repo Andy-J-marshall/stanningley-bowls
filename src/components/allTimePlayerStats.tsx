@@ -12,8 +12,8 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
     const showPairsOnlyBool = props.showPairsOnly;
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
-    const statsToDisplayArray = [];
-    let playerNames = [];
+    const statsToDisplayArray: any = [];
+    let playerNames: string[] = [];
 
     statsArray.forEach((stat) => {
         playerNames = playerNames.concat(Object.keys(stat.playerResults));
@@ -91,7 +91,7 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
 
     useEffect(() => {
         const playersWithGames = statsToDisplayArray.filter(
-            (player) => player.games > 0
+            (player: any) => player.games > 0
         );
         setTotalPlayersUsed(playersWithGames.length);
     });

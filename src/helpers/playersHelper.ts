@@ -1,7 +1,7 @@
 import { findBiggestWin } from './statsHelper';
 import config from '../config';
 
-export function returnPlayerStats(playersStats, player: string) {
+export function returnPlayerStats(playersStats: any, player: string) {
     const stats = playersStats[player];
     if (!stats) {
         return null;
@@ -109,8 +109,8 @@ export function returnPlayerStats(playersStats, player: string) {
         };
     });
 
-    let allTeamsPlayedFor = [];
-    dayPlayed.forEach((day) => {
+    let allTeamsPlayedFor: any = [];
+    dayPlayed.forEach((day: any) => {
         if (!allTeamsPlayedFor.includes(day)) {
             allTeamsPlayedFor.push(day);
         }
@@ -261,16 +261,16 @@ export function returnPlayerStats(playersStats, player: string) {
     };
 }
 
-export function calculatePairsPartnersCount(allPairsPartners) {
-    const uniquePartners = allPairsPartners.filter((partner, index) => {
+export function calculatePairsPartnersCount(allPairsPartners: any) {
+    const uniquePartners = allPairsPartners.filter((partner: any, index: number) => {
         return allPairsPartners.indexOf(partner) === index;
     });
-    const partnersReturnObj = uniquePartners.reduce((partnerObj, player) => {
+    const partnersReturnObj = uniquePartners.reduce((partnerObj: any, player: any) => {
         partnerObj[player] = { timesPaired: 0 };
         return partnerObj;
     }, {});
 
-    allPairsPartners.forEach((partner) => {
+    allPairsPartners.forEach((partner: string) => {
         if (uniquePartners.includes(partner)) {
             partnersReturnObj[partner].timesPaired += 1;
         }
@@ -278,7 +278,7 @@ export function calculatePairsPartnersCount(allPairsPartners) {
     return partnersReturnObj;
 }
 
-export function checkWinPercAndAverageAreNumbers(stats) {
+export function checkWinPercAndAverageAreNumbers(stats: any) {
     let verifiedStats = stats;
 
     if (isNaN(verifiedStats.winPerc)) {
@@ -303,8 +303,8 @@ export function checkWinPercAndAverageAreNumbers(stats) {
     return verifiedStats;
 }
 
-export function collatePlayerStats(statsToUse, players) {
-    const statsArray = [];
+export function collatePlayerStats(statsToUse: any, players: string[]) {
+    const statsArray: any = [];
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {

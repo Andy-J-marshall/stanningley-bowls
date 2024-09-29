@@ -22,7 +22,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         }
     });
 
-    function toggleAllTeamStats(event) {
+    function toggleAllTeamStats(event: any) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
@@ -58,7 +58,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         onlyPairsCallback(false);
     }
 
-    function toggleAllYearStats(event) {
+    function toggleAllYearStats(event: any) {
         const allYearStatsToggle = event.currentTarget.checked;
         setAllYearToggle(allYearStatsToggle);
         allYearStatsCallback(allYearStatsToggle);

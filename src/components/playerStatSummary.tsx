@@ -11,8 +11,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
     playerStats = playerStats.filter((player) => player.games > 0);
 
-    let style;
-    let href;
+    let style: any;
+    let href: string;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
@@ -20,15 +20,15 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
 
-    function displayPlayer(event) {
+    function displayPlayer(event: any) {
         const playerName = event.target.innerHTML;
         if (displayPlayerStatsCallback) {
             displayPlayerStatsCallback(playerName);
         }
     }
 
-    function orderPlayers(orderByStatPropertyName) {
-        const order = [...playerStats].sort((p1, p2) =>
+    function orderPlayers(orderByStatPropertyName: string) {
+        const order = [...playerStats].sort((p1: any, p2: any) =>
             p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
                 ? 1
                 : p1[orderByStatPropertyName] > p2[orderByStatPropertyName]

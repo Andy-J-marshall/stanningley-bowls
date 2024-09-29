@@ -8,7 +8,7 @@ function YearSelectDropdown(props: YearSelectDropdownProps) {
 
     const [year, setYear] = useState(yearToDisplay);
 
-    function changeStatsYear(event) {
+    function changeStatsYear(event: any) {
         const year = event.replace('#', '').toString();
         setYear(year);
         statsCallback(year);

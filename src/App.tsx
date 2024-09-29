@@ -19,12 +19,10 @@ import './app.css';
 import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
-const {
-    allYearStats,
-    allYearCombinedStats,
-    statsForEveryYearArray,
-    combinedStatsForEveryYearArray,
-} = statsData;
+const allYearStats: any = statsData.allYearStats;
+const allYearCombinedStats: any = statsData.allYearCombinedStats;
+const statsForEveryYearArray: any[] = statsData.statsForEveryYearArray;
+const combinedStatsForEveryYearArray: any[] = statsData.combinedStatsForEveryYearArray;
 
 function App() {
     const [teamStats, setTeamStats] = useState(
@@ -45,8 +43,8 @@ function App() {
 
     function statsSelectCallback(year: string) {
         const currentYear = new Date().getFullYear();
-        let statsForSelectedYear;
-        let combinedStatsForSelectedYear;
+        let statsForSelectedYear: any;
+        let combinedStatsForSelectedYear: any;
         switch (year.toString()) {
             case '2013':
                 statsForSelectedYear = allYearStats['year2013'];

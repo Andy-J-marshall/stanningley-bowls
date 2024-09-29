@@ -25,12 +25,12 @@ function Search(props: SearchProps) {
                     options={['SHOW ALL'].concat(searchList)}
                     selected={value}
                     size="lg"
-                    renderMenu={(players, menuProps) => (
+                    renderMenu={(players: string[], menuProps: any) => (
                         <Menu {...menuProps}>
                             {players.map((result, index) => (
                                 <MenuItem
                                     key={index}
-                                    onClick={(e) => e.target.focus()}
+                                    onClick={(e: any) => e.target.focus()}
                                     option={result}
                                     position={index}
                                 >

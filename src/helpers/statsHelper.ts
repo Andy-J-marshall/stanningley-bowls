@@ -1,4 +1,4 @@
-export function combineTeamStats(statsArray) {
+export function combineTeamStats(statsArray: any[]) {
     let combinedAwayWins = 0;
     let combinedHomeWins = 0;
     let combinedCupWins = 0;
@@ -10,7 +10,7 @@ export function combineTeamStats(statsArray) {
     let combinedAgg = 0;
     let combinedOpponentAgg = 0;
 
-    statsArray.forEach((stats) => {
+    statsArray.forEach((stats: any) => {
         const {
             awayWins,
             homeWins,
@@ -59,11 +59,11 @@ export function combineTeamStats(statsArray) {
     };
 }
 
-export function findBiggestWin(playerResults) {
+export function findBiggestWin(playerResults: any): any {
     let bestWin = null;
     if (playerResults) {
         let bestWinMargin = 0;
-        playerResults.forEach((result) => {
+        playerResults.forEach((result: any) => {
             const resultParts = result.split(' - ', 2);
 
             const teamPart = resultParts[0];

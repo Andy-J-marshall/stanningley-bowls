@@ -19,19 +19,19 @@ function Records(props: RecordsProps) {
 
     // Total
     let minTotalGames = 1;
-    let mostGamesPlayer = [];
+    let mostGamesPlayer: string[] = [];
     let mostGames = 0;
-    let mostWinsPlayer = [];
+    let mostWinsPlayer: string[] = [];
     let mostWins = 0;
-    let bestWinPercPlayer = [];
+    let bestWinPercPlayer: string[] = [];
     let bestWinPerc = 0;
-    let bestAveragePlayer = [];
+    let bestAveragePlayer: string[] = [];
     let bestAverage = -27;
     let highestTotalGames = 0;
 
     // This finds the leagues available in the data
-    const teamRecords = {};
-    let teamsFound = [];
+    const teamRecords: any = {};
+    let teamsFound: string[] = [];
     players.forEach((player) => {
         const p = playerResults[player];
 
@@ -73,7 +73,7 @@ function Records(props: RecordsProps) {
             highestTotalGames = totalGames;
         }
 
-        teamsFound.forEach((team) => {
+        teamsFound.forEach((team: string) => {
             const teamRecord = teamRecords[team];
             const playerStats = p[team];
 

@@ -50,7 +50,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         setLoaded(true);
 
         const playersWithGames = statsToDisplayArray.filter(
-            (player) => player.games > 0
+            (player: any) => player.games > 0
         );
         setTotalPlayersUsed(playersWithGames.length);
 
@@ -63,7 +63,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     });
 
-    function allTeamStatsCallback(showAllBoolean) {
+    function allTeamStatsCallback(showAllBoolean: boolean) {
         if (showAllBoolean) {
             setStatsToUse(combinedPlayerResults);
             setShowStatSummary(true);
@@ -73,7 +73,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     }
 
-    function onlySinglesCallback(showSinglesBoolean) {
+    function onlySinglesCallback(showSinglesBoolean: boolean) {
         if (showSinglesBoolean) {
             setShowSinglesOnlyBool(true);
         } else {
@@ -81,7 +81,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     }
 
-    function onlyPairsCallback(showPairsBoolean) {
+    function onlyPairsCallback(showPairsBoolean: boolean) {
         if (showPairsBoolean) {
             setShowPairsOnlyBool(true);
         } else {
@@ -89,7 +89,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     }
 
-    function allYearStatsCallback(showAllBoolean) {
+    function allYearStatsCallback(showAllBoolean: boolean) {
         if (showAllBoolean) {
             setShowStatsSinceStart(true);
         } else {
@@ -111,7 +111,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
             const teamDaysPlayed = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
-            daysPlayed.forEach((day) => {
+            daysPlayed.forEach((day: string) => {
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
                 if (teamDaysPlayed.includes(formattedDay)) {
                     anyTeamDays = true;
@@ -126,7 +126,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     }
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: any) => {
         setLoading(true);
         event.preventDefault();
         const searchedName = event.target[0].value.toLowerCase().trim();
@@ -136,7 +136,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         setLoading(false);
     };
 
-    const handleChange = async (selected) => {
+    const handleChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
         if (searchedPlayerName) {
@@ -157,7 +157,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         setSearchedPlayerName(null);
     }
 
-    function showPlayerStats(playerName) {
+    function showPlayerStats(playerName: string) {
         const validPlayer = players.find((player) => player == playerName);
 
         if (validPlayer) {
@@ -179,10 +179,10 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
 
     function returnStatsTable() {
         const gamesPlayedThisYear = statsToDisplayArray.find(
-            (player) => player.games > 0
+            (player: any) => player.games > 0
         );
         const pairsGamesThisYear = statsToDisplayArray.find(
-            (player) => player.pairsGames > 0
+            (player: any) => player.pairsGames > 0
         );
 
         if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
@@ -206,7 +206,8 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
         }
     }
 
-    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    const delay = (ms: number) =>
+        new Promise((resolve) => setTimeout(resolve, ms));
 
     return (
         <div id="player-stat" className="center">
@@ -250,6 +251,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
             )}
 
+            {/* TODO not working correctly? */}
             {!loading &&
                 searchedPlayerName &&
                 !playerFound &&
