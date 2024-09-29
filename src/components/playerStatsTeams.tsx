@@ -1,6 +1,7 @@
 import { Accordion } from 'react-bootstrap';
+import { PlayerStatsTeamsProps, TeamStats } from '../types/interfaces';
 
-function PlayerStatsTeams(props) {
+function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
 
     const { allTeamStats } = stats;

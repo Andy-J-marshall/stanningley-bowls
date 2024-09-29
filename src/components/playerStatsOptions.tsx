@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Form, InputGroup, Row, Col, Accordion } from 'react-bootstrap';
+import { PlayerStatsOptionsProps } from '../types/interfaces';
 
-function PlayerStatsOptions(props) {
+function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const onlySinglesCallback = props.onlySinglesCallback;

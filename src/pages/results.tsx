@@ -1,10 +1,11 @@
 import { Table } from 'react-bootstrap';
 import YearSelectDropdown from '../components/yearSelectDropdown';
 import config from '../config';
+import { ResultsProps } from '../types/interfaces';
 
 const teamName = config.teamNames.shortName.toLowerCase();
 
-function Results(props) {
+function Results(props: ResultsProps) {
     const stats = props.stats;
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;

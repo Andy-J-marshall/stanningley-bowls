@@ -4,8 +4,9 @@ import CombinedTeamStats from '../components/combinedTeamStats';
 import TeamTabs from '../components/teamTabs';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
+import { TeamStatsProps } from '../types/interfaces';
 
-function TeamStats(props) {
+function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;
 
     const teamName = config.teamNames.shortName;

@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import GameTypeButton from './gameTypeButtons';
+import { PlayerStatsWinLossesProps } from '../types/interfaces';
 
-function PlayerStatsWinsLosses(props) {
+function PlayerStatsWinsLosses(props: PlayerStatsWinLossesProps) {
     const stats = props.stats;
 
     const {

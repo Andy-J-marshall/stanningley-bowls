@@ -1,6 +1,4 @@
 {
-  // TODO formatter not working for tsx
-
   "compilerOptions": {
     "allowJs": false,
     "outDir": "build",

@@ -1,4 +1,4 @@
-export function capitalizeText(stringArray) {
+export function capitalizeText(stringArray: string[]) {
     let stringArrayAsString = '';
     stringArray.forEach((originalString, index) => {
         const splitString = originalString.split(' ');

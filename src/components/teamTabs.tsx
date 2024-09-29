@@ -1,6 +1,7 @@
 import { Tabs, Tab } from 'react-bootstrap';
+import { TeamTabsProps } from '../types/interfaces';
 
-function TeamTabs(props) {
+function TeamTabs(props: TeamTabsProps) {
     const allCombinedComponent = props.allCombinedComponent;
     const teamComponents = props.teamComponents;
 

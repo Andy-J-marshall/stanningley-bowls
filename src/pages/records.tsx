@@ -2,8 +2,9 @@ import TeamTabs from '../components/teamTabs';
 import RecordsTableDisplay from '../components/recordsTableDisplay';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
+import { RecordsProps } from '../types/interfaces';
 
-function Records(props) {
+function Records(props: RecordsProps) {
     const stats = props.stats;
 
     const playerResults = stats.playerResults;

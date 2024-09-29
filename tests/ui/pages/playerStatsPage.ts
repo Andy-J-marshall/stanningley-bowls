@@ -1,11 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-
-interface PlayerStats {
-  totalGamesPlayed: number;
-  totalWins: number;
-  totalLosses: number;
-  totalAverage: number;
-}
+import { PlayerStats } from '../../../src/types/interfaces';
 
 export class PlayerStatsPage {
   private readonly page: Page;

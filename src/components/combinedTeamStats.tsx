@@ -1,7 +1,8 @@
 import { combineTeamStats } from '../helpers/statsHelper';
+import { CombinedTeamStatsProps } from '../types/interfaces';
 import StatsTableDisplay from './statsTableDisplay';
 
-function CombinedTeamStats(props) {
+function CombinedTeamStats(props: CombinedTeamStatsProps) {
     const stats = props.stats;
 
     const combinedStats = combineTeamStats(stats);

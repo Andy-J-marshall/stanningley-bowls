@@ -43,7 +43,7 @@ function App() {
         });
     }, []);
 
-    function statsSelectCallback(year) {
+    function statsSelectCallback(year: string) {
         const currentYear = new Date().getFullYear();
         let statsForSelectedYear;
         let combinedStatsForSelectedYear;

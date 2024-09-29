@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ToggleButton, ButtonGroup } from 'react-bootstrap';
+import { GameTypeButtonProps } from '../types/interfaces';
 
-function GameTypeButton(props) {
+function GameTypeButton(props: GameTypeButtonProps) {
     const displayAllCallback = props.displayAllCallback;
     const displaySinglesCallback = props.displaySinglesCallback;
     const displayPairsCallback = props.displayPairsCallback;

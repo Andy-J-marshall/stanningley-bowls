@@ -8,8 +8,9 @@ import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsTeams from './playerStatsTeams';
 import PlayerStatsAggregates from './playerStatsAggregates';
 import PlayerStatsResults from './playerStatsResults';
+import { IndividualPlayerStatsProps } from '../types/interfaces';
 
-function IndividualPlayerStats(props) {
+function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const player = props.player;
     const playersStats = props.playersStats;
     const name = props.name;

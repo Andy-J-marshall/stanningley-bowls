@@ -4,8 +4,9 @@ import {
     returnPlayerStats,
     checkWinPercAndAverageAreNumbers,
 } from '../helpers/playersHelper';
+import { AllTimePlayerStatsProps } from '../types/interfaces';
 
-function AllTimePlayerStats(props) {
+function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;

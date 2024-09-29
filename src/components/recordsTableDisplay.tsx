@@ -1,7 +1,8 @@
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
+import { RecordsTableDisplayProps } from '../types/interfaces';
 
-function RecordsTableDisplay(props) {
+function RecordsTableDisplay(props: RecordsTableDisplayProps) {
     const day = props.day;
     const minGames = props.minGames;
     const bestWinPerc = props.bestWinPerc;

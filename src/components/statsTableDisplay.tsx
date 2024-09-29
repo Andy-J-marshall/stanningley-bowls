@@ -1,7 +1,8 @@
 import { Table } from 'react-bootstrap';
 import config from '../config';
+import { StatsTableDisplayProps } from '../types/interfaces';
 
-function StatsTableDisplay(props) {
+function StatsTableDisplay(props: StatsTableDisplayProps) {
     const totalGames = props.totalGames;
     const totalWins = props.totalWins;
     const homeWins = props.homeWins || 0;

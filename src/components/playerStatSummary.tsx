@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
+import { PlayerStatSummaryProps } from '../types/interfaces';
 
-function PlayerStatSummary(props) {
+function PlayerStatSummary(props: PlayerStatSummaryProps) {
     let playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;

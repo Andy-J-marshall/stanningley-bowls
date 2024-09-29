@@ -2,8 +2,9 @@ import StatsTableDisplay from './statsTableDisplay';
 import PlayerStatSummary from './playerStatSummary';
 import { checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
 import config from '../config';
+import { IndividualTeamStatsProps } from '../types/interfaces';
 
-function IndividualTeamStats(props) {
+function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const day = props.day;
     const displayName = props.displayname; // this is used by TeamTabs component
     const stats = props.stats;
