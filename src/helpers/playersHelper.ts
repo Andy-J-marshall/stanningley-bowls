@@ -96,9 +96,17 @@ export function returnPlayerStats(playersStats, player) {
         const teamGames = teamStats.games;
 
         const teamAvg = teamGames > 0 ? teamStats.aggDiff / teamGames : null;
-        const teamWinPerc = teamWins && teamGames > 0 ? teamWins / teamGames * 100 : 0;
+        const teamWinPerc =
+            teamWins && teamGames > 0 ? (teamWins / teamGames) * 100 : 0;
 
-        return { teamName, teamWins, teamLosses, teamGames, teamAvg, teamWinPerc };
+        return {
+            teamName,
+            teamWins,
+            teamLosses,
+            teamGames,
+            teamAvg,
+            teamWinPerc,
+        };
     });
 
     let allTeamsPlayedFor = [];

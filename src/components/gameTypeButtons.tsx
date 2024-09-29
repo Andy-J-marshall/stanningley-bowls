@@ -48,7 +48,7 @@ function GameTypeButton(props) {
 
         setSinglesChecked(false);
         setSinglesColour(notSelectedColour);
-        
+
         setPairsChecked(true);
         setPairsColour(selectedColour);
 

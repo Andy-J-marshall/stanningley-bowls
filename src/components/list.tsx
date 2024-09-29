@@ -1,7 +1,7 @@
-import { capitalizeText} from '../helpers/utils';
+import { capitalizeText } from '../helpers/utils';
 
 function List(props) {
-const stringArray = props.stringArray;
+    const stringArray = props.stringArray;
 
     let returnList;
     // TODO this is wrong?
@@ -14,7 +14,6 @@ const stringArray = props.stringArray;
         ));
     }
     return returnList;
-
 }
 
 export default List;

@@ -63,7 +63,7 @@ function Results(props) {
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
-                            <div key={idx} className='teamResult'>
+                            <div key={idx} className="teamResult">
                                 <h3 style={{ paddingTop: '1rem' }}>
                                     {resultTeam.day.toUpperCase()}
                                 </h3>

@@ -121,7 +121,9 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-singles-radio"
-                                                    onChange={toggleSinglesOnlyMatches}
+                                                    onChange={
+                                                        toggleSinglesOnlyMatches
+                                                    }
                                                     name="gameTypeOptions"
                                                     type="radio"
                                                     label="Singles"
@@ -132,7 +134,9 @@ function PlayerStatsOptions(props) {
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-pairs-radio"
-                                                    onChange={togglePairsOnlyMatches}
+                                                    onChange={
+                                                        togglePairsOnlyMatches
+                                                    }
                                                     name="gameTypeOptions"
                                                     type="radio"
                                                     label="Pairs"

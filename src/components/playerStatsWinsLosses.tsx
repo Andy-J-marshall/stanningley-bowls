@@ -64,9 +64,12 @@ function PlayerStatsWinsLosses(props) {
     const [displayCupLosses, setDisplayCupLosses] = useState(cupLosses);
 
     const [displayGamesPlayed, setDisplayGamesPlayed] = useState(gamesPlayed);
-    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
-    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
-    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
+    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] =
+        useState(homeGamesPlayed);
+    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] =
+        useState(awayGamesPlayed);
+    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
+        useState(cupGamesPlayed);
 
     const [displayAverage, setDisplayAverage] = useState(average);
     const [displayHomeAverage, setDisplayHomeAverage] = useState(homeAverage);
@@ -139,7 +142,7 @@ function PlayerStatsWinsLosses(props) {
         setDisplayingPairs(true);
         setDisplayingSingles(false);
         setDisplayingAll(false);
-        
+
         setDisplayTotalWins(pairWins);
         setDisplayHomeWins(pairHomeWins);
         setDisplayAwayWins(pairAwayWins);
@@ -178,7 +181,9 @@ function PlayerStatsWinsLosses(props) {
     return (
         <div id="player-stats-wins-losses">
             <Accordion.Item eventKey="1">
-                <Accordion.Header onClick={refreshStats} id="stats-wl">WINS & LOSSES</Accordion.Header>
+                <Accordion.Header onClick={refreshStats} id="stats-wl">
+                    WINS & LOSSES
+                </Accordion.Header>
                 <Accordion.Body>
                     {pairsGames > 0 && singlesGames > 0 && (
                         <GameTypeButton

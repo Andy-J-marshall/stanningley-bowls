@@ -54,26 +54,39 @@ function PlayerStatsAggregates(props) {
     const [displayingSingles, setDisplayingSingles] = useState(false);
     const [displayingPairs, setDisplayingPairs] = useState(false);
     const [displayingAll, setDisplayingAll] = useState(true);
-    
-    const [displayAvailableAgg, setDisplayAvailableAgg] = useState(availableAgg);
+
+    const [displayAvailableAgg, setDisplayAvailableAgg] =
+        useState(availableAgg);
     const [displayTotalAgg, setDisplayTotalAgg] = useState(totalAgg);
-    const [displayTotalAggAgainst, setDisplayTotalAggAgainst] = useState(totalAggAgainst);
+    const [displayTotalAggAgainst, setDisplayTotalAggAgainst] =
+        useState(totalAggAgainst);
 
-    const [displayAvailableHomeAgg, setDisplayAvailableHomeAgg] = useState(availableHomeAgg);
-    const [displayTotalHomeAgg, setDisplayTotalHomeAgg] = useState(totalHomeAgg);
-    const [displayTotalHomeAggAgainst, setDisplayTotalHomeAggAgainst] = useState(totalHomeAggAgainst);
-    
-    const [displayAvailableAwayAgg, setDisplayAvailableAwayAgg] = useState(availableAwayAgg);
-    const [displayTotalAwayAgg, setDisplayTotalAwayAgg] = useState(totalAwayAgg);
-    const [displayTotalAwayAggAgainst, setDisplayTotalAwayAggAgainst] = useState(totalAwayAggAgainst);
+    const [displayAvailableHomeAgg, setDisplayAvailableHomeAgg] =
+        useState(availableHomeAgg);
+    const [displayTotalHomeAgg, setDisplayTotalHomeAgg] =
+        useState(totalHomeAgg);
+    const [displayTotalHomeAggAgainst, setDisplayTotalHomeAggAgainst] =
+        useState(totalHomeAggAgainst);
 
-    const [displayAvailableCupAgg, setDisplayAvailableCupAgg] = useState(availableCupAgg);
+    const [displayAvailableAwayAgg, setDisplayAvailableAwayAgg] =
+        useState(availableAwayAgg);
+    const [displayTotalAwayAgg, setDisplayTotalAwayAgg] =
+        useState(totalAwayAgg);
+    const [displayTotalAwayAggAgainst, setDisplayTotalAwayAggAgainst] =
+        useState(totalAwayAggAgainst);
+
+    const [displayAvailableCupAgg, setDisplayAvailableCupAgg] =
+        useState(availableCupAgg);
     const [displayCupAgg, setDisplayCupAgg] = useState(cupAgg);
-    const [displayCupAggAgainst, setDisplayCupAggAgainst] = useState(cupAggAgainst);
+    const [displayCupAggAgainst, setDisplayCupAggAgainst] =
+        useState(cupAggAgainst);
 
-    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] = useState(homeGamesPlayed);
-    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] = useState(awayGamesPlayed);
-    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] = useState(cupGamesPlayed);
+    const [displayHomeGamesPlayed, setDisplayHomeGamesPlayed] =
+        useState(homeGamesPlayed);
+    const [displayAwayGamesPlayed, setDisplayAwayGamesPlayed] =
+        useState(awayGamesPlayed);
+    const [displayCupGamesPlayed, setDisplayCupGamesPlayed] =
+        useState(cupGamesPlayed);
 
     useEffect(() => {
         refreshStats();
@@ -186,11 +199,15 @@ function PlayerStatsAggregates(props) {
                     <h3>TOTAL</h3>
                     <p>
                         Aggregate scored: {displayTotalAgg}
-                        {displayAvailableAgg ? " / " + displayAvailableAgg : null}
+                        {displayAvailableAgg
+                            ? ' / ' + displayAvailableAgg
+                            : null}
                     </p>
                     <p>
                         Aggregate conceded: {displayTotalAggAgainst}
-                        {displayAvailableAgg ? " / " + displayAvailableAgg : null}
+                        {displayAvailableAgg
+                            ? ' / ' + displayAvailableAgg
+                            : null}
                     </p>
                     {displayHomeGamesPlayed > 0 && (
                         <div>
@@ -198,11 +215,15 @@ function PlayerStatsAggregates(props) {
                             <h3>HOME</h3>
                             <p>
                                 Aggregate scored: {displayTotalHomeAgg}
-                                {displayAvailableHomeAgg ? " / " + displayAvailableHomeAgg : null}
+                                {displayAvailableHomeAgg
+                                    ? ' / ' + displayAvailableHomeAgg
+                                    : null}
                             </p>
                             <p>
                                 Aggregate conceded: {displayTotalHomeAggAgainst}
-                                {displayAvailableHomeAgg ? " / " + displayAvailableHomeAgg  : null}
+                                {displayAvailableHomeAgg
+                                    ? ' / ' + displayAvailableHomeAgg
+                                    : null}
                             </p>
                         </div>
                     )}
@@ -212,11 +233,15 @@ function PlayerStatsAggregates(props) {
                             <h3>AWAY</h3>
                             <p>
                                 Aggregate scored: {displayTotalAwayAgg}
-                                {displayAvailableAwayAgg ? " / " + displayAvailableAwayAgg : null}
+                                {displayAvailableAwayAgg
+                                    ? ' / ' + displayAvailableAwayAgg
+                                    : null}
                             </p>
                             <p>
                                 Aggregate conceded: {displayTotalAwayAggAgainst}
-                                {displayAvailableAwayAgg ? " / " +  displayAvailableAwayAgg : null}
+                                {displayAvailableAwayAgg
+                                    ? ' / ' + displayAvailableAwayAgg
+                                    : null}
                             </p>
                         </div>
                     )}
@@ -226,11 +251,15 @@ function PlayerStatsAggregates(props) {
                             <h3>CUP</h3>
                             <p>
                                 Aggregate scored: {displayCupAgg}
-                                {displayAvailableCupAgg ? " / " +  displayAvailableCupAgg : null}
+                                {displayAvailableCupAgg
+                                    ? ' / ' + displayAvailableCupAgg
+                                    : null}
                             </p>
                             <p>
                                 Aggregate conceded: {displayCupAggAgainst}
-                                {displayAvailableCupAgg ? " / " + displayAvailableCupAgg : null}
+                                {displayAvailableCupAgg
+                                    ? ' / ' + displayAvailableCupAgg
+                                    : null}
                             </p>
                         </div>
                     )}

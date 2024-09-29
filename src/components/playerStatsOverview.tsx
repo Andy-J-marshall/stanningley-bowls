@@ -44,7 +44,9 @@ function PlayerStatsOverview(props) {
                         {allTeamsPlayedFor.length > 0 && (
                             <div id="teamsPlayedFor">
                                 <hr />
-                                <h3 style={{ paddingTop: '1rem' }}>LEAGUES PLAYED IN</h3>
+                                <h3 style={{ paddingTop: '1rem' }}>
+                                    LEAGUES PLAYED IN
+                                </h3>
                                 <List stringArray={allTeamsPlayedFor}></List>
                             </div>
                         )}
