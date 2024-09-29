@@ -1,4 +1,3 @@
-// TODO improve this
 declare module '*.webp' {
     const value: string;
 

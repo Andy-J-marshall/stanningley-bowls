@@ -40,7 +40,9 @@ export class PlayerStatsPage {
     this.playerListInDropdown = page.locator('#search');
     this.searchButton = page.locator('#search-button');
     this.backButton = page.locator('#back-button');
-    this.playerStatsItem = page.locator('#detailed-player-stats .list-group-item');
+    this.playerStatsItem = page.locator(
+      '#detailed-player-stats .list-group-item'
+    );
     this.playerStatsRows = page.locator('#player-stats-per-team tbody');
     this.playerNameTitle = page.locator('#playerNameTitle');
     this.overviewAccordionButton = page.locator('#stats-overview');

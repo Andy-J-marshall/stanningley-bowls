@@ -135,7 +135,9 @@ export class RecordsPage {
     expect(this.overallGamesRecord).toBeVisible({ visible: false });
 
     expect(this.tuesVetsWinRecord).toContainText('15');
-    expect(this.tuesVetsWinsRecordPlayer).toContainText('Jim Moorin, Shirley Biancardo, Stewart Watson');
+    expect(this.tuesVetsWinsRecordPlayer).toContainText(
+      'Jim Moorin, Shirley Biancardo, Stewart Watson'
+    );
     expect(this.tuesVetsWinPercRecord).toContainText('100%');
     expect(this.tuesVetsWinPercRecordPlayer).toContainText('John Armitage');
     expect(this.tuesVetsAverageRecord).toContainText('12.36');
