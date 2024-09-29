@@ -308,12 +308,10 @@ function Records(props: RecordsProps) {
                 }
             } else {
                 return (
-                    <div displayname={displayname}>
-                        <p>
-                            {config.teamNames.shortName} did not play on this
-                            day for the selected year
-                        </p>
-                    </div>
+                    <p displayname={displayname}>
+                        {config.teamNames.shortName} did not play on this day
+                        for the selected year
+                    </p>
                 );
             }
         });
