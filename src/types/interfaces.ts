@@ -306,3 +306,8 @@ export interface PlayerStats {
     totalLosses: number;
     totalAverage: number;
 }
+
+export interface WrapperProps {
+    displayname: string;
+    children: React.ReactNode;
+}

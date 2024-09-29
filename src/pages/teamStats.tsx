@@ -5,6 +5,7 @@ import TeamTabs from '../components/teamTabs';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
 import { TeamStatsProps } from '../types/interfaces';
+import Wrapper from '../components/wrapper';
 
 function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;
@@ -72,38 +73,56 @@ function TeamStats(props: TeamStatsProps) {
                     bTeamStats.totalGamesPlayed > 0
                 ) {
                     return (
-                        <div displayname={displayname}>
-                            {teamStats && (
-                                <IndividualTeamStats
-                                    day={teamName}
-                                    stats={teamStats}
-                                    playerStats={playerResults}
-                                />
-                            )}
-                            {bTeamStats && (
+                        <Wrapper
+                            displayname={displayname}
+                            children={
                                 <div>
-                                    <br />
-                                    <hr />
+                                    {teamStats && (
+                                        <IndividualTeamStats
+                                            day={teamName}
+                                            stats={teamStats}
+                                            playerStats={playerResults}
+                                        />
+                                    )}
+                                    {bTeamStats && (
+                                        <div>
+                                            <br />
+                                            <hr />
+                                        </div>
+                                    )}
+                                    {bTeamStats && (
+                                        <IndividualTeamStats
+                                            day={
+                                                teamName.replace(' (a)', '') +
+                                                ' (b)'
+                                            }
+                                            stats={bTeamStats}
+                                            playerStats={playerResults}
+                                        />
+                                    )}
                                 </div>
-                            )}
-                            {bTeamStats && (
-                                <IndividualTeamStats
-                                    day={teamName.replace(' (a)', '') + ' (b)'}
-                                    stats={bTeamStats}
-                                    playerStats={playerResults}
-                                />
-                            )}
-                        </div>
+                            }
+                        ></Wrapper>
                     );
                 } else {
-                    return <p displayname={displayname}>No games played</p>;
+                    return (
+                        <Wrapper
+                            displayname={displayname}
+                            children={<p>No games played</p>}
+                        ></Wrapper>
+                    );
                 }
             } else {
                 return (
-                    <p displayname={displayname}>
-                        {config.teamNames.shortName} did not play on this day
-                        for the selected year
-                    </p>
+                    <Wrapper
+                        displayname={displayname}
+                        children={
+                            <p>
+                                {config.teamNames.shortName} did not play on
+                                this day for the selected year
+                            </p>
+                        }
+                    ></Wrapper>
                 );
             }
         });
