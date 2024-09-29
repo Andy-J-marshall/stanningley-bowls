@@ -1,5 +1,6 @@
 import TeamTabs from '../components/teamTabs';
 import RecordsTableDisplay from '../components/recordsTableDisplay';
+import Wrapper from '../components/wrapper';
 import config from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
 import { RecordsProps } from '../types/interfaces';
@@ -254,64 +255,96 @@ function Records(props: RecordsProps) {
                     bTeamRecord.bestTeamAveragePlayer.length > 0
                 ) {
                     return (
-                        // TODO why is it complaining about this?
-                        <div displayname={displayname}>
-                            {teamRecord && teamRecord.bestTeamAverage > -21 && (
-                                <RecordsTableDisplay
-                                    day={teamName.replace(' (a)', '')}
-                                    minGames={teamRecord.minTeamGames}
-                                    mostWins={teamRecord.mostTeamWins}
-                                    mostWinsPlayer={
-                                        teamRecord.mostTeamWinsPlayer
-                                    }
-                                    bestWinPerc={teamRecord.bestTeamWinPerc}
-                                    bestWinPercPlayer={
-                                        teamRecord.bestTeamWinPercPlayer
-                                    }
-                                    bestAverage={teamRecord.bestTeamAverage}
-                                    bestAveragePlayer={
-                                        teamRecord.bestTeamAveragePlayer
-                                    }
-                                />
-                            )}
-                            {bTeamRecord && <hr />}
-                            {bTeamRecord &&
-                                bTeamRecord.bestTeamAverage > -21 && (
-                                    <RecordsTableDisplay
-                                        day={
-                                            teamName.replace(' (a)', '') +
-                                            ' (b)'
-                                        }
-                                        minGames={bTeamRecord.minTeamGames}
-                                        mostWins={bTeamRecord.mostTeamWins}
-                                        mostWinsPlayer={
-                                            bTeamRecord.mostTeamWinsPlayer
-                                        }
-                                        bestWinPerc={
-                                            bTeamRecord.bestTeamWinPerc
-                                        }
-                                        bestWinPercPlayer={
-                                            bTeamRecord.bestTeamWinPercPlayer
-                                        }
-                                        bestAverage={
-                                            bTeamRecord.bestTeamAverage
-                                        }
-                                        bestAveragePlayer={
-                                            bTeamRecord.bestTeamAveragePlayer
-                                        }
-                                    />
-                                )}
-                        </div>
+                        <Wrapper
+                            displayname={displayname}
+                            children={
+                                <div>
+                                    {teamRecord &&
+                                        teamRecord.bestTeamAverage > -21 && (
+                                            <RecordsTableDisplay
+                                                day={teamName.replace(
+                                                    ' (a)',
+                                                    ''
+                                                )}
+                                                minGames={
+                                                    teamRecord.minTeamGames
+                                                }
+                                                mostWins={
+                                                    teamRecord.mostTeamWins
+                                                }
+                                                mostWinsPlayer={
+                                                    teamRecord.mostTeamWinsPlayer
+                                                }
+                                                bestWinPerc={
+                                                    teamRecord.bestTeamWinPerc
+                                                }
+                                                bestWinPercPlayer={
+                                                    teamRecord.bestTeamWinPercPlayer
+                                                }
+                                                bestAverage={
+                                                    teamRecord.bestTeamAverage
+                                                }
+                                                bestAveragePlayer={
+                                                    teamRecord.bestTeamAveragePlayer
+                                                }
+                                            />
+                                        )}
+                                    {bTeamRecord && <hr />}
+                                    {bTeamRecord &&
+                                        bTeamRecord.bestTeamAverage > -21 && (
+                                            <RecordsTableDisplay
+                                                day={
+                                                    teamName.replace(
+                                                        ' (a)',
+                                                        ''
+                                                    ) + ' (b)'
+                                                }
+                                                minGames={
+                                                    bTeamRecord.minTeamGames
+                                                }
+                                                mostWins={
+                                                    bTeamRecord.mostTeamWins
+                                                }
+                                                mostWinsPlayer={
+                                                    bTeamRecord.mostTeamWinsPlayer
+                                                }
+                                                bestWinPerc={
+                                                    bTeamRecord.bestTeamWinPerc
+                                                }
+                                                bestWinPercPlayer={
+                                                    bTeamRecord.bestTeamWinPercPlayer
+                                                }
+                                                bestAverage={
+                                                    bTeamRecord.bestTeamAverage
+                                                }
+                                                bestAveragePlayer={
+                                                    bTeamRecord.bestTeamAveragePlayer
+                                                }
+                                            />
+                                        )}
+                                </div>
+                            }
+                        ></Wrapper>
                     );
                 } else {
-                    return <p displayname={displayname}>No games played</p>;
+                    return (
+                        <Wrapper
+                            displayname={displayname}
+                            children={<p>No games played</p>}
+                        ></Wrapper>
+                    );
                 }
             } else {
                 return (
-                    <p displayname={displayname}>
-                        {config.teamNames.shortName} did not play on this day
-                        for the selected year
-                    </p>
+                    <Wrapper
+                        displayname={displayname}
+                        children={
+                            <p>
+                                {config.teamNames.shortName} did not play on
+                                this day for the selected year
+                            </p>
+                        }
+                    ></Wrapper>
                 );
             }
         });
