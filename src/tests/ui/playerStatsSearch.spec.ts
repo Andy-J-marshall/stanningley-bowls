@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import bowlsStats from '../../src/data/bowlsStats2023.json';
+import bowlsStats from '../../data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 

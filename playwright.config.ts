@@ -5,7 +5,7 @@ import { devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: './tests/ui',
+  testDir: './src/tests/ui',
   timeout: 20 * 1000,
   expect: {
     timeout: 5000,

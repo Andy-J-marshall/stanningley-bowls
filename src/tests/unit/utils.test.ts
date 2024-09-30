@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { capitalizeText } from '../../src/helpers/utils';
+import { capitalizeText } from '../../helpers/utils';
 
 describe('#Utils Tests', () => {
     describe('#capitalizeText()', () => {

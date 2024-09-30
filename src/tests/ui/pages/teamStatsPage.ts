@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-import config from '../../../src/config';
+import config from '../../../config';
 
 const teamName = config.teamNames.shortName;
 

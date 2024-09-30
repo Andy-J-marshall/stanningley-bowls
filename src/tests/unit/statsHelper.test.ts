@@ -1,8 +1,5 @@
 import { expect } from 'chai';
-import {
-    combineTeamStats,
-    findBiggestWin,
-} from '../../src/helpers/statsHelper';
+import { combineTeamStats, findBiggestWin } from '../../helpers/statsHelper';
 
 describe('#StatsHelper Tests', () => {
     describe('#findBiggestWin()', () => {
