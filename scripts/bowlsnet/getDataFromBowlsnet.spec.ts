@@ -131,6 +131,25 @@ for (const league of leagues) {
       .getByText('Fixtures', { exact: true })
       .click();
 
+    // Click League Calendar if present
+    try {
+      const leagueCalendarButton = page
+        .frameLocator('iframe[title="BowlsNet Page"]')
+        .getByText('League Calendar');
+      const buttonCount = await leagueCalendarButton.count();
+      if (buttonCount > 0) {
+        await leagueCalendarButton.click();
+        await page
+          .frameLocator('iframe[title="BowlsNet Page"]')
+          .frameLocator('iframe[title="BowlsNet Dlg"]')
+          .getByRole('button', { name: 'League Fixtures' })
+          .click();
+      }
+    } catch (error) {
+      console.log(`Fixtures already selected for ${league.day}, continuing...`);
+    }
+
+    // Export MatchCards
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
       .locator('div')
@@ -143,7 +162,6 @@ for (const league of leagues) {
       .getByRole('button', { name: 'Export MatchCards...' })
       .click();
 
-    // View report in new tab
     const newPagePromise = page.waitForEvent('popup');
     await page
       .frameLocator('iframe[title="BowlsNet Page"]')
@@ -151,6 +169,7 @@ for (const league of leagues) {
       .getByRole('button', { name: 'In Text Format' })
       .click();
 
+    // View report in new tab
     const newPage = await newPagePromise;
     await newPage.bringToFront();
     await newPage.waitForLoadState('domcontentloaded');
