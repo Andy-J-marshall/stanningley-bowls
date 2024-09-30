@@ -112,7 +112,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day: string) => {
-                if (teamDaysPlayed.includes(day)) {
+                if (teamDaysPlayed.includes(day.toLowerCase().trim())) {
                     anyTeamDays = true;
                 }
             });
