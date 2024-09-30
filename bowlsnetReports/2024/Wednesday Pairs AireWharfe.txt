@@ -1,6 +1,5 @@
 === AireDale & Wharfedale (Wed. Pairs) 2024
-=== League Calendar
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
        Division 1                Wed 3rd Apr        
         Menston A                 Rufford A         
@@ -814,8 +813,8 @@ Graham Hey                Bill Lovedale
                Games:   4                Games:   0 
               Points:  17               Points:   7 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16             On Greenbottom       
+       Round of 16               Wed 8th May        
+                               On Greenbottom       
      Meanwood Park A              Rufford A         
 Tina Howard            26 Brian Teale            15 
 Andy Swain                Tim Bennett               
@@ -827,8 +826,8 @@ Karen Portman          23 Tom Broadbent          26
 Steve Portman             Ken Lee                   
            Aggregate:  84            Aggregate:  93 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16                 On Idle          
+       Round of 16               Wed 8th May        
+                                   On Idle          
          Rawdon               Stanningley Park      
 Bernard Harrison       13 Harvey Leonard         26 
 Graham Hogg               Paul Leonard              
@@ -841,15 +840,8 @@ Terry Waite-Pullan        Laila Packer
             Handicap: +20             Handicap: +20 
            Aggregate: 100            Aggregate: 107 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16                                  
-        Rufford B                 Holt Park         
-            Handicap: Scr             Handicap: +20 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16              On Grove Hill       
+       Round of 16               Wed 8th May        
+                                On Grove Hill       
         Ilkley A                  Menston B         
 Steve Ackroyd          26 Peter Gaston           17 
 Darren Thompson           Stuart Davies             
@@ -862,8 +854,8 @@ Andrew Cook               Mike Ripley
             Handicap: Scr             Handicap: +20 
            Aggregate: 104            Aggregate:  75 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16              On Holt Park        
+       Round of 16               Wed 8th May        
+                                On Holt Park        
  Burley in Wharfedale B        Meanwood Park B      
 Robert Wheeler         26 Pat Blackburn          16 
 Alwyn Robertson           David L Miller            
@@ -876,8 +868,8 @@ Sue Knowles               John Hindle
             Handicap: Scr             Handicap: +20 
            Aggregate:  74            Aggregate: 103 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16               On Guiseley        
+       Round of 16               Wed 8th May        
+                                 On Guiseley        
    Horsforth Hall Park            Ilkley B          
 Bruce Callard          14 Richard Garth          26 
 Richard Sunley            Deborah Swann             
@@ -890,8 +882,8 @@ Ruth Sutcliffe            Lee Stevens
             Handicap: +20             Handicap: Scr 
            Aggregate: 112            Aggregate:  72 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16         On Horsforth Hall Park   
+       Round of 16               Wed 8th May        
+                           On Horsforth Hall Park   
        Grove Hill          Burley in Wharfedale A   
 John Chippindale       19 Mark Ullock            26 
 David Samuel              Andrew Shaw               
@@ -903,8 +895,8 @@ Diane Farrar           15 Ben Ullock             26
 Tony Farrar               Richard Kellett           
            Aggregate:  65            Aggregate: 104 
 
-   Wednesday pairs ko            Wed 8th May        
-       Round of 16             On Yeadon Park       
+       Round of 16               Wed 8th May        
+                               On Yeadon Park       
         Menston A                New Armley         
 Shaun Johnson          25 Walter Stockhill       26 
 Gwen Smith                David Gregory             
@@ -1449,8 +1441,8 @@ Tekla England             Alan Nicholson
                Games:   3                Games:   1 
               Points:  17               Points:   7 
 
-   Wednesday pairs ko            Fri 7th Jun        
-       Qtr-Finals             On Meanwood Park      
+       Qtr-Finals                Fri 7th Jun        
+                              On Meanwood Park      
         Rufford A             Stanningley Park      
 Val Grace              26 Tracey Marshall        18 
 Allan Caine               Colin Haque               
@@ -1463,8 +1455,8 @@ Tom Broadbent             Paul Leonard
             Handicap: Scr             Handicap: +20 
            Aggregate:  97            Aggregate:  94 
 
-   Wednesday pairs ko            Fri 7th Jun        
-       Qtr-Finals            On Stanningley Park    
+       Qtr-Finals                Fri 7th Jun        
+                             On Stanningley Park    
         Rufford B                 Ilkley A          
 Mick Snowden           11 Steve Ackroyd          26 
 Catherine New             Darren Thompson           
@@ -1476,8 +1468,8 @@ Pauline Gilroy         26 David Emerson          18
 Pauline Ingleson          Andrew Breare             
            Aggregate:  71            Aggregate:  96 
 
-   Wednesday pairs ko            Fri 7th Jun        
-       Qtr-Finals                On Menston         
+       Qtr-Finals                Fri 7th Jun        
+                                 On Menston         
      Meanwood Park B         Horsforth Hall Park    
 Kathy Hey               5 Paul Stoyles           26 
 Graham Hey                Phil Clayton              
@@ -1490,8 +1482,8 @@ John Hindle               Nigel Stockdale
             Handicap: +20             Handicap: +20 
            Aggregate:  96            Aggregate:  99 
 
-   Wednesday pairs ko            Fri 7th Jun        
-       Qtr-Finals              On Rawdon Park       
+       Qtr-Finals                Fri 7th Jun        
+                               On Rawdon Park       
  Burley in Wharfedale A           Menston A         
 Mark Ullock            26 Laurie Robinson        12 
 Andrew Shaw               Jim Hughes                
@@ -2413,8 +2405,8 @@ John Auty                 Philip McStay
                Games:   0                Games:   4 
               Points:   2               Points:  22 
 
-   Wednesday pairs ko           Fri 12th Jul        
-       Semi-Finals               On Menston         
+       Semi-Finals              Fri 12th Jul        
+                                 On Menston         
         Rufford A                 Ilkley A          
 Ken Lee                14 Terry Almond           26 
 David Norris              Andrew Breare             
@@ -2426,8 +2418,8 @@ Glynn Goodyear         16 David Emerson          26
 Allan Caine               Andrew Thornton           
            Aggregate:  82            Aggregate:  89 
 
-   Wednesday pairs ko           Fri 12th Jul        
-       Semi-Finals              On Grove Hill       
+       Semi-Finals              Fri 12th Jul        
+                                On Grove Hill       
    Horsforth Hall Park     Burley in Wharfedale A   
 Nigel Stockdale        11 Joe Ullock             26 
 Kath Crompton             Roy Knowles               
@@ -3154,8 +3146,8 @@ John Chippindale          Nigel Buckley
                Games:   2                Games:   2 
               Points:  14               Points:  10 
 
-   Wednesday pairs ko            Fri 9th Aug        
-          Final                On Yeadon Park       
+          Final                  Fri 9th Aug        
+                               On Yeadon Park       
         Ilkley A           Burley in Wharfedale A   
 Andrew Cook            26 Andrew Shaw            25 
 Steve Senior              Mark Ullock               

@@ -1,6 +1,5 @@
 === AireDale & Wharfedale (Mon. Evening) 2024
-=== League Calendar
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
        Division 1                Mon 8th Apr        
         Pudsey B                  Farsley A         
@@ -514,9 +513,7 @@ Mike Ripley            21 Malcolm Pratt          16
                Games:   4                Games:   6 
               Points:  12               Points:  18 
 
-     MONDAY EVENING             Fri 19th Apr        
-     WHEATLEY TROPHY                                
-       Round of 32                                  
+     WHEATLEY TROPHY            Fri 19th Apr        
        Holt Park A           Horsforth Hall Park    
 John Gilroy'A'         21 Nigel Stockdale 'A'    20 
 Debbie Sandles         15 Ruth Sutcliffe         21 
@@ -836,12 +833,6 @@ Ryan Benson 'A'        21 Matthew Leaf            7
                Games:   8                Games:   2 
               Points:  28               Points:   2 
 
-       MARIA OGDEN              Sun 28th Apr        
-       Round of 16                                  
-       Guiseley A          Burley in Wharfedale A   
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
        Division 1               Mon 29th Apr        
         Rufford A              Skipton Craven       
 Martyn Benson          21 Paul Kaye              14 
@@ -1146,8 +1137,8 @@ Michael Smith'A'       11 Tom Broadbent          21
                Games:   6                Games:   4 
               Points:  20               Points:  10 
 
-     RONNIE COLLINS              Fri 3rd May        
-         Round 1                 On Farsley         
+         Round 1                 Fri 3rd May        
+                                 On Farsley         
      Littlemoor S&SC            Eccleshill A        
 Kevin Siddle           18 Paul Rooks             21 
 Glen Pratt             21 John Griffin           18 
@@ -1161,9 +1152,7 @@ Mark Allman            16 Michael Hall           21
 Craig Hebberd             Mick Angus                
               Points: 5.0               Points: 3.5 
 
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
+     WHEATLEY TROPHY             Mon 6th May        
         Pudsey A                  Rawdon A          
 Dave Upton'A'          21 Paul Haigh 'A'         17 
 Duncan Reeves          21 Roger French'A'        19 
@@ -1178,9 +1167,7 @@ Tom Lawrence           20 Dave Hill              21
             Handicap:  +4             Handicap: +26 
            Aggregate: 200            Aggregate: 170 
 
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
+     WHEATLEY TROPHY             Mon 6th May        
         Ilkley A                  Rufford A         
 Rod Bastow             13 Martyn Benson          21 
 Dave Scott             10 Ryan Benson 'A'        21 
@@ -1195,17 +1182,7 @@ Steve Cooper 'A'       19 Daniel Teale'A'        21
             Handicap: +10             Handicap:  +2 
            Aggregate: 167            Aggregate: 198 
 
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
-      Eccleshill A                Farsley B         
-            Handicap: +20             Handicap: +16 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
+     WHEATLEY TROPHY             Mon 6th May        
      Littlemoor S&SC             Guiseley A         
 Ben Falkingham          3 Luke Teale 'A'         21 
 Glen Pratt             21 Thomas Cater            9 
@@ -1220,9 +1197,7 @@ Martin Fulton          21 James Teale             7
             Handicap: +24             Handicap: Scr 
            Aggregate: 200            Aggregate: 148 
 
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
+     WHEATLEY TROPHY             Mon 6th May        
         Farsley A                 Pudsey B          
 Stephen Gilroy         21 Rick Pearson            6 
 Neil Nicholson         21 Jonathan Orbell        11 
@@ -1237,41 +1212,7 @@ Lee Wider              21 Stewart Watson         17
             Handicap:  +6             Handicap: +18 
            Aggregate: 205            Aggregate: 152 
 
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
-       Guiseley B          Burley in Wharfedale A   
-            Handicap: +30             Handicap: +14 
-              Result: ---               Result: BYE 
-      Manual Award                                  
-
-     MONDAY EVENING              Mon 6th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
-        Rufford B                 Ilkley B          
-            Handicap: +22             Handicap: +34 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
-      Greenbottom A                [FREE]           
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-*No Player*             0 *No Player*             0 
-              Result: BYE               Result: --- 
-
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
+     CARLISLE SHIELD             Mon 6th May        
         Menston A               Yeadon Park B       
 Gail Singh             21 Stan Parker            10 
 Mike Ripley            13 Barry Slater           21 
@@ -1286,9 +1227,7 @@ Shaun Johnson'A'       21 Julie Watson           10
             Handicap:  +2             Handicap: +34 
            Aggregate: 196            Aggregate: 172 
 
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
+     CARLISLE SHIELD             Mon 6th May        
       Greenbottom B                Baildon          
 Elinor Newhouse        20 Jim Whittle            21 
 Linda Summers          16 Joan Dean              21 
@@ -1303,9 +1242,7 @@ Bill Lovedale           1 James Greenwood        21
             Handicap: +24             Handicap: +10 
            Aggregate: 146            Aggregate: 212 
 
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
+     CARLISLE SHIELD             Mon 6th May        
        Grove Hill                 Menston B         
 Peter Brearley         21 Rosemary Cowley         3 
 Tony Farrar            14 Peter Gaston           21 
@@ -1320,9 +1257,7 @@ David Locke            21 Barbara Harrison        5
             Handicap: Scr             Handicap: +28 
            Aggregate: 198            Aggregate: 149 
 
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
+     CARLISLE SHIELD             Mon 6th May        
        Myrtle Park              Eccleshill B        
 Maureen Wood           19 Diane Emery            21 
 Tom Barnes             21 Brian Barker           10 
@@ -1337,17 +1272,7 @@ Stephen Turner         11 Peter Howroyd          21
             Handicap: +20             Handicap: +16 
            Aggregate: 157            Aggregate: 204 
 
-     MONDAY EVENING              Mon 6th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
-     Wharfemeadows B             Holt Park B        
-            Handicap: +26             Handicap: +30 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-     MONDAY EVENING              Thu 9th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
+     CARLISLE SHIELD             Thu 9th May        
       Yeadon Park A                 Salts           
 Reid Haddow            21 Thomas Kilerminster     8 
 Patrick Campbell       21 Patricia Allison       19 
@@ -1634,9 +1559,7 @@ David Sadler           21 Linda Smith            14
                Games:   4                Games:   6 
               Points:  15               Points:  15 
 
-     MONDAY EVENING             Mon 13th May        
-     WHEATLEY TROPHY                                
-       Round of 16                                  
+     WHEATLEY TROPHY            Mon 13th May        
    Horsforth Hall Park         Wharfemeadows A      
 John Sutton            13 Ben Smith              21 
 Kath Crompton          21 Pauline Barnett        14 
@@ -1651,16 +1574,8 @@ Wayne Shipley          15 John Chippindale 'A'   21
             Handicap: +38             Handicap: +36 
            Aggregate: 216            Aggregate: 215 
 
-     MONDAY EVENING             Thu 16th May        
-     CARLISLE SHIELD                                
-         Round 1                                    
-        Rawdon B           Burley in Wharfedale B   
-            Handicap: +12             Handicap: +18 
-              Result: ---               Result: BYE 
-      Manual Award                                  
-
-     RONNIE COLLINS             Fri 17th May        
-       Qtr-Finals              On Greenbottom       
+       Qtr-Finals               Fri 17th May        
+                               On Greenbottom       
       Yeadon Park A               Farsley A         
 Reid Haddow            16 Chris Hight            21 
 Robert North'A'         7 Peter Scott            21 
@@ -1674,8 +1589,8 @@ David Keighley         12 Graham Petty           21
 Mark Wilson               Richard Whitaker          
               Points: 0.0               Points: 8.5 
 
-     RONNIE COLLINS             Fri 17th May        
-       Qtr-Finals               On Eccleshill       
+       Qtr-Finals               Fri 17th May        
+                                On Eccleshill       
         Pudsey A           Burley in Wharfedale A   
 Andrew Sykes'A'        21 Brian Wheeler 'A'       9 
 Stewart Watson         21 Robert Wheeler         12 
@@ -1689,14 +1604,13 @@ Thomas Morris          16 Andrew Shaw 'A'        21
 Duncan Reeves             Mark Ullock               
               Points: 4.5               Points: 4.0 
 
-     RONNIE COLLINS             Fri 17th May        
-       Qtr-Finals                                   
+       Qtr-Finals               Fri 17th May        
        Skipton BR                 Rufford A         
               Points: 5.0               Points: 3.5 
       Manual Result                                 
 
-     RONNIE COLLINS             Fri 17th May        
-       Qtr-Finals              On Yeadon Park       
+       Qtr-Finals               Fri 17th May        
+                               On Yeadon Park       
      Littlemoor S&SC             Guiseley A         
 Lewis Cooper           10 Joe Stockdale 'A'      21 
 Nicole Farrer          13 Gary Whelan            21 
@@ -1710,8 +1624,8 @@ Will Bedford           21 Luke Teale 'A'         16
 Simon Wider               Nick Bastow               
               Points: 5.0               Points: 3.5 
 
-       MARIA OGDEN              Sun 19th May        
-       Qtr-Finals                On Farsley         
+       Qtr-Finals               Sun 19th May        
+                                 On Farsley         
        Guiseley A                 Rufford A         
 Gary Whelan            21 David Norris           18 
 Chris Daysh'A'            Barry McCourt             
@@ -1725,14 +1639,13 @@ Joe Stockdale 'A'      21 Tim Bennett             9
 Ben Stockdale             Brian Teale               
                Games:   3                Games:   2 
 
-       MARIA OGDEN              Sun 19th May        
-       Qtr-Finals                                   
+       Qtr-Finals               Sun 19th May        
        Skipton BR               Shipley Club        
                Games:   3                Games:   2 
       Manual Result                                 
 
-       MARIA OGDEN              Sun 19th May        
-       Qtr-Finals                On Guiseley        
+       Qtr-Finals               Sun 19th May        
+                                 On Guiseley        
         Farsley A                  Baildon          
 David Smalley          21 Joan Dean               2 
 Ian Swinfield             Geoff Hanson              
@@ -1746,8 +1659,8 @@ Neil Nicholson         21 Richard Briggs         18
 Colin Rhodes              Sue Farrell               
                Games:   4                Games:   1 
 
-       MARIA OGDEN              Sun 19th May        
-       Qtr-Finals                On Baildon         
+       Qtr-Finals               Sun 19th May        
+                                 On Baildon         
         Ilkley A                Yeadon Park A       
 Mick Bastow            21 Mark Wilson             6 
 Dennis Henderson          Maureen Slater            
@@ -2657,9 +2570,7 @@ David Sadler           21 Gary Poucher           16
                Games:   7                Games:   3 
               Points:  22               Points:   8 
 
-     MONDAY EVENING             Mon 10th Jun        
-     WHEATLEY TROPHY                                
-       Qtr-Finals                                   
+     WHEATLEY TROPHY            Mon 10th Jun        
         Rufford B            Horsforth Hall Park    
 Stuart Parker          12 John Sutton            21 
 Brian Teale            21 Peter Allen 'A'        13 
@@ -2674,9 +2585,7 @@ Christopher Sims       21 Wayne Shipley          14
             Handicap: +22             Handicap: +38 
            Aggregate: 210            Aggregate: 190 
 
-     MONDAY EVENING             Mon 10th Jun        
-     WHEATLEY TROPHY                                
-       Qtr-Finals                                   
+     WHEATLEY TROPHY            Mon 10th Jun        
         Farsley A                 Rufford A         
 Duncan McPhail         21 Martyn Benson          18 
 Neil Nicholson         16 Andrew Haran           21 
@@ -2691,9 +2600,7 @@ Andy Wood              19 Daniel Teale'A'        21
             Handicap:  +6             Handicap:  +2 
            Aggregate: 186            Aggregate: 191 
 
-     MONDAY EVENING             Mon 10th Jun        
-     WHEATLEY TROPHY                                
-       Qtr-Finals                                   
+     WHEATLEY TROPHY            Mon 10th Jun        
  Burley in Wharfedale A        Littlemoor S&SC      
 Susan Knowles          10 Marc Armitage          21 
 Andrew Wilson          21 Will Bedford           15 
@@ -2708,9 +2615,7 @@ Joe Ullock'A'           5 Martin Fulton          21
             Handicap: +14             Handicap: +24 
            Aggregate: 164            Aggregate: 216 
 
-     MONDAY EVENING             Mon 10th Jun        
-     WHEATLEY TROPHY                                
-       Qtr-Finals                                   
+     WHEATLEY TROPHY            Mon 10th Jun        
         Pudsey A                Eccleshill A        
 Craig Farquharson      21 Graham Chaffer'A'      19 
 Dave Upton'A'          21 Stephen Bastow'A'      13 
@@ -2725,9 +2630,7 @@ Dean Scarth            20 Steve Bowes            21
             Handicap:  +4             Handicap: +20 
            Aggregate: 203            Aggregate: 164 
 
-     MONDAY EVENING             Mon 10th Jun        
-     CARLISLE SHIELD                                
-       Qtr-Finals                                   
+     CARLISLE SHIELD            Mon 10th Jun        
       Yeadon Park A        Burley in Wharfedale B   
 Frank Baker 'A'        16 Alwyn Robertson        21 
 Robert North'A'        11 Michael Mitchell       21 
@@ -2742,9 +2645,7 @@ David Keighley         21 John Hardisty          16
             Handicap: +14             Handicap: +18 
            Aggregate: 184            Aggregate: 193 
 
-     MONDAY EVENING             Mon 10th Jun        
-     CARLISLE SHIELD                                
-       Qtr-Finals                                   
+     CARLISLE SHIELD            Mon 10th Jun        
       Greenbottom A                Baildon          
 Janice Waite           21 Maureen Kitson         13 
 Audrey McGregor        18 Joan Dean              21 
@@ -2759,9 +2660,7 @@ Peter Haxby            14 James Greenwood        21
             Handicap:  +4             Handicap: +10 
            Aggregate: 169            Aggregate: 198 
 
-     MONDAY EVENING             Mon 10th Jun        
-     CARLISLE SHIELD                                
-       Qtr-Finals                                   
+     CARLISLE SHIELD            Mon 10th Jun        
      Wharfemeadows B             Grove Hill         
 Ray Smith Snr          20 Tony Farrar            21 
 Brenda Appleyard       21 Diane Farrar           15 
@@ -2776,9 +2675,7 @@ Linda Smith             6 Daniel Twist           21
             Handicap: +26             Handicap: Scr 
            Aggregate: 149            Aggregate: 201 
 
-     MONDAY EVENING             Mon 10th Jun        
-     CARLISLE SHIELD                                
-       Qtr-Finals                                   
+     CARLISLE SHIELD            Mon 10th Jun        
         Menston A               Eccleshill B        
 Geoff Winter           10 Pauline Gilroy         21 
 Roger Sayers 'A'       11 Roger Binks            21 
@@ -2793,8 +2690,8 @@ Nigel Buckley'A'       11 Peter Howroyd          21
             Handicap:  +2             Handicap: +16 
            Aggregate: 181            Aggregate: 169 
 
-     RONNIE COLLINS             Fri 14th Jun        
-       Semi-Finals               On Rufford         
+       Semi-Finals              Fri 14th Jun        
+                                 On Rufford         
         Farsley A              Littlemoor S&SC      
 Ian Swinfield          16 Kevin Siddle           21 
 Chris Hight            21 Mark Allman            13 
@@ -2808,14 +2705,13 @@ Lee Wider              19 Scott Normington       21
 Daniel Beardsworth'A'     Jack Bowes                
               Points: 3.5               Points: 5.0 
 
-     RONNIE COLLINS             Fri 14th Jun        
-       Semi-Finals                                  
+       Semi-Finals              Fri 14th Jun        
         Pudsey A                 Skipton BR         
               Points: 3.5               Points: 5.0 
       Manual Result                                 
 
-       MARIA OGDEN              Sun 16th Jun        
-       Semi-Finals             On Shipley Club      
+       Semi-Finals              Sun 16th Jun        
+                               On Shipley Club      
        Guiseley A                Skipton BR         
 Nick Bastow            21 B Titerenko            18 
 Joe Stockdale 'A'         D Gore                    
@@ -2829,8 +2725,8 @@ Ian Howard'A'          20 K Burnett              21
 Chris Daysh'A'            P Peacock                 
                Games:   4                Games:   1 
 
-       MARIA OGDEN              Sun 16th Jun        
-       Semi-Finals              On Skipton BR       
+       Semi-Finals              Sun 16th Jun        
+                                On Skipton BR       
         Farsley A                 Ilkley A          
 Neil Nicholson         21 Steve Birch             8 
 Colin Rhodes              Clive Swan                
@@ -4300,9 +4196,7 @@ Mark Sample            16 Bob Williams           21
                Games:   7                Games:   3 
               Points:  20               Points:  10 
 
-     MONDAY EVENING             Fri 19th Jul        
-     WHEATLEY TROPHY                                
-       Semi-Finals                                  
+     WHEATLEY TROPHY            Fri 19th Jul        
         Rufford B                 Rufford A         
 Glynn Goodyear         19 Tony Beeden            21 
 Carole Wright          16 Allan Caine            21 
@@ -4317,9 +4211,8 @@ Christopher Sims       21 Daniel Teale'A'        12
             Handicap: +22             Handicap:  +2 
            Aggregate: 163            Aggregate: 203 
 
-     MONDAY EVENING             Fri 19th Jul        
-     WHEATLEY TROPHY                                
-       Semi-Finals                On Salts          
+     WHEATLEY TROPHY            Fri 19th Jul        
+                                  On Salts          
      Littlemoor S&SC              Pudsey A          
 John Armitage          21 Dave Upton'A'          15 
 Nicole Farrer           6 Dave Poole 'A'         21 
@@ -4334,9 +4227,8 @@ Simon Wider            17 Steve Emmett           21
             Handicap: +24             Handicap:  +4 
            Aggregate: 202            Aggregate: 184 
 
-     MONDAY EVENING             Fri 19th Jul        
-     CARLISLE SHIELD                                
-       Semi-Finals             On Greenbottom       
+     CARLISLE SHIELD            Fri 19th Jul        
+                               On Greenbottom       
  Burley in Wharfedale B          Grove Hill         
 Alwyn Robertson        17 Diane Farrar           21 
 Pete Thornton          21 Peter Brearley          8 
@@ -4351,9 +4243,8 @@ John Hardisty          21 Daniel Twist            4
             Handicap: +18             Handicap: Scr 
            Aggregate: 210            Aggregate: 137 
 
-     MONDAY EVENING             Fri 19th Jul        
-     CARLISLE SHIELD                                
-       Semi-Finals             On Myrtle Park       
+     CARLISLE SHIELD            Fri 19th Jul        
+                               On Myrtle Park       
         Menston A                  Baildon          
 Gary Skeet             21 Jim Whittle            12 
 Gail Singh             21 Joan Dean              11 
@@ -4368,8 +4259,8 @@ Shaun Johnson'A'        7 James Greenwood        21
             Handicap:  +2             Handicap: +10 
            Aggregate: 149            Aggregate: 177 
 
-       MARIA OGDEN              Sun 21st Jul        
-          Final            On Burley in Wharfedale  
+          Final                 Sun 21st Jul        
+                           On Burley in Wharfedale  
        Guiseley A                 Ilkley A          
 Nick Bastow            21 Hedley Chapman         18 
 James Teale               Darren Thompson           
@@ -4671,8 +4562,8 @@ Linda Smith            12 Geoff Megson           21
                Games:   7                Games:   3 
               Points:  22               Points:   8 
 
-     RONNIE COLLINS             Fri 26th Jul        
-          Final                   On Rawdon         
+          Final                 Fri 26th Jul        
+                                  On Rawdon         
      Littlemoor S&SC             Skipton BR         
 John Armitage           8 T Harrison             21 
 Craig Hebberd          21 D Leeming              15 
@@ -5838,9 +5729,8 @@ Belinda Mitchell       21 Ian Kennedy             9
                Games:   9                Games:   1 
               Points:  27               Points:   3 
 
-     MONDAY EVENING             Mon 26th Aug        
-     WHEATLEY TROPHY                                
-          Final                  On Menston         
+     WHEATLEY TROPHY            Mon 26th Aug        
+                                 On Menston         
         Rufford A              Littlemoor S&SC      
 David Kirkbright       16 Nathan Dobson          21 
 David Norris           13 Will Bedford           21 
@@ -5855,9 +5745,8 @@ Daniel Teale'A'        21 John Armitage          15
             Handicap:  +2             Handicap: +24 
            Aggregate: 160            Aggregate: 203 
 
-     MONDAY EVENING             Mon 26th Aug        
-     CARLISLE SHIELD                                
-          Final                  On Farsley         
+     CARLISLE SHIELD            Mon 26th Aug        
+                                 On Farsley         
  Burley in Wharfedale B            Baildon          
 Alwyn Robertson        20 Jim Whittle            21 
 Robert Hartley         21 Joan Dean              18 

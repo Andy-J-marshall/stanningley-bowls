@@ -1,6 +1,5 @@
 === Leeds & District (Tuesday) 2024
-=== League Calendar
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
       Division 1            Tue 9th Apr       
      Calverley YP           Rothwell BC       
@@ -150,7 +149,7 @@ Dennis Walters      20 Andrew Marshall     21
 Steve Barltrop      20 Barbara Ragan       21 
 Helen Dickinson     21 Martin Atkinson     14 
 Andrew Grunwell      1 Mick Hall           21 
-Ian Doughty          21 Malcolm Hallas      18 
+Ian Doughty         21 Malcolm Hallas      18 
 Phil Lodge          19 Darren Cookson      21 
 Craig White         20 Malcolm Cameron     21 
 Nigel Ware          21 Brian Ragan         12 
@@ -349,7 +348,7 @@ Vanessa Lancaster   14 Phil Lodge          21
 Richard Hodgson     21 Thomas Cranston     16 
 Colin Haque         21 Helen Dickinson     14 
 Malvin Miller       21 Nigel Ware           6 
-Andrew Marshall     21 Ian Doughty          15 
+Andrew Marshall     21 Ian Doughty         15 
         Aggregate: 161         Aggregate: 104 
            Points:  37            Points:  20 
 
@@ -502,7 +501,7 @@ Thomas Cranston     10 Phil McStay         21
 Helen Dickinson     11 Graham Hey          21 
 Ann Doughty          9 Julie Keightley     21 
 Andrew Grunwell     15 Pat Prosser         21 
-Ian Doughty          21 Oliver Devaney       7 
+Ian Doughty         21 Oliver Devaney       7 
 Nigel Ware          21 Kathy Hey           10 
 Craig White         17 Ian Macfarlane      21 
 Ian Thornhill       20 Jeff Blackburn      21 
@@ -674,7 +673,7 @@ Maureen Bradshaw    21 Andrew Grunwell     16
 David Turner        21 Thomas Cranston     15 
 Dennis Walters      21 Helen Dickinson      8 
 Brian Stevens       21 Nigel Ware           4 
-Barbara Nellis      11 Ian Doughty          21 
+Barbara Nellis      11 Ian Doughty         21 
         Aggregate: 158         Aggregate: 113 
            Points:  37            Points:  22 
 
@@ -895,7 +894,7 @@ Ian Lee             21 John Robson         14
 Stephen Lee         21 Craig White         12 
 George Ramsden      21 Steve Barltrop      17 
 Martin Kaitcer      12 Phil Lodge          21 
-Steven Jones        21 Ian Doughty           6 
+Steven Jones        21 Ian Doughty          6 
         Aggregate: 159         Aggregate: 108 
            Points:  37            Points:  20 
 
@@ -912,8 +911,8 @@ Stephen Lee         20 David Clarke        21
         Aggregate: 135         Aggregate: 129 
            Points:  29            Points:  27 
 
-    Cyril Worsnop           Tue 14th May      
-     Round of 32        On Stanningley Park   
+     Round of 32            Tue 14th May      
+                        On Stanningley Park   
       Holt Park          Chapel Allerton A    
 Dave Lyons          21 Graham Pickles      14 
 John Patrick        19 Matthew Watson      21 
@@ -926,8 +925,8 @@ Mike Cox            13 Royce Jackson       21
          Handicap: +20          Handicap: +20 
         Aggregate: 165         Aggregate: 151 
 
-    Cyril Worsnop           Tue 14th May      
-     Round of 32         On East End Park 1   
+     Round of 32            Tue 14th May      
+                         On East End Park 1   
       Meanwood B            Rothwell BC       
 Jeff Blackburn      13 Mick Goodhall       21 
 Ian Macfarlane      21 Peter Linley        16 
@@ -940,8 +939,8 @@ Graham Hey          20 Geoff Newbould      21
          Handicap: +30          Handicap: Scr 
         Aggregate: 144         Aggregate: 161 
 
-    Cyril Worsnop           Tue 14th May      
-     Round of 32         On Sth Leeds Cons    
+     Round of 32            Tue 14th May      
+                         On Sth Leeds Cons    
    Stanningley Park            Colton         
 Alyssa Randell      21 Andrew Stocks        7 
 Stuart Potter       21 Mick Galley         12 
@@ -954,8 +953,8 @@ Craig Clarkson      21 Stuart Birch        14
          Handicap: +30          Handicap: +30 
         Aggregate: 198         Aggregate: 115 
 
-    Cyril Worsnop           Tue 14th May      
-     Round of 32           On Gildersome      
+     Round of 32            Tue 14th May      
+                           On Gildersome      
    Crossgates Rec A        New Farnley B      
 Alan Wood           21 Pat Skelton         14 
 Maria Durkan         7 Keith Skelton       21 
@@ -968,8 +967,8 @@ Andy Walton         21 Jean Milner         13
          Handicap: +20          Handicap: +20 
         Aggregate: 164         Aggregate: 150 
 
-    Cyril Worsnop           Tue 14th May      
-     Round of 32         On Middleton Comm    
+     Round of 32            Tue 14th May      
+                         On Middleton Comm    
    Sth Leeds Cons A         Gildersome B      
 Malcolm Collinson   21 Barbara Hall        12 
 Reece Pratt         21 David Charlesworth   8 
@@ -1130,7 +1129,7 @@ Barbara Nellis       8 Steven Jones        21
 Helen Dickinson      7 Tracy Norton        21 
 Ann Doughty          7 Alison Lockwood     21 
 Andrew Grunwell     21 Simon Malins        16 
-Ian Doughty          21 Tony Morris          7 
+Ian Doughty         21 Tony Morris          7 
 Phil Lodge          21 Daphne Scott        14 
 John Robson         21 Neil Schofield       6 
 Nigel Ware          19 Stuart Wardlaw      21 
@@ -1482,7 +1481,7 @@ Ann Doughty         11 Stephen Morris      21
 Helen Dickinson      7 Derek Howell        21 
 Steve Barltrop      20 Bill Pyett          21 
 Andrew Grunwell     12 Carl Birkin         21 
-Ian Doughty          21 *No Player*          0 
+Ian Doughty         21 *No Player*          0 
 Phil Lodge          21 James Drury         15 
 Nigel Ware          21 Callum Birkin        7 
 Craig White         21 David Milner         2 
@@ -1667,7 +1666,7 @@ Jonathan Moriaty    21 Craig White         19
 John Townsend       21 Nigel Ware          12 
 Jim Jordan          21 Phil Lodge          13 
 Elizabeth Quigley   21 Steve Barltrop      19 
-Anthony Marsden     11 Ian Doughty          21 
+Anthony Marsden     11 Ian Doughty         21 
         Aggregate: 137         Aggregate: 125 
            Points:  32            Points:  25 
 
@@ -1814,8 +1813,8 @@ John Townsend       21 Martin Kaitcer      10
         Aggregate: 137         Aggregate: 112 
            Points:  31            Points:  24 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16           On New Wortley     
+     Round of 16            Tue 25th Jun      
+                           On New Wortley     
       Holt Park             Rothwell BC       
 Debbie Sandles      16 John Ainsley        21 
 Peter Byford         7 June Johnson        21 
@@ -1828,8 +1827,8 @@ Graham Hill         21 *No Player*          0
          Handicap: +20          Handicap: Scr 
         Aggregate: 144         Aggregate: 136 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16          On Cross Flatts     
+     Round of 16            Tue 25th Jun      
+                          On Cross Flatts     
    Stanningley Park       Crossgates Rec A    
 Stuart Potter       21 Roy Beverley         9 
 Alyssa Randell      21 Bob Patterson       15 
@@ -1842,8 +1841,8 @@ Richard Hodgson     19 Andy Walton         21
          Handicap: +30          Handicap: +20 
         Aggregate: 157         Aggregate: 153 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16             On Colton        
+     Round of 16            Tue 25th Jun      
+                             On Colton        
    Sth Leeds Cons A        Middleton Comm     
 Mark Rastrick       21 Malcolm Cameron     12 
 Michael Gore        19 Christine Glyn      21 
@@ -1856,8 +1855,8 @@ Reece Pratt          5 Darren Cookson      21
          Handicap: +20          Handicap: +30 
         Aggregate: 125         Aggregate: 188 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16            On Holt Park      
+     Round of 16            Tue 25th Jun      
+                            On Holt Park      
     Moor Allerton         East End Park A     
 Steven Jones        21 Paul Reynard        18 
 Ian Franllin        21 Josey Olivant        9 
@@ -1870,8 +1869,8 @@ George Ramsden       3 Scott Sellars       21
          Handicap: +30          Handicap: Scr 
         Aggregate: 125         Aggregate: 153 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16          On Holbeck Moor     
+     Round of 16            Tue 25th Jun      
+                          On Holbeck Moor     
       Meanwood A           New Wortley A      
 Chris Daysh         21 Stephen Morley       6 
 Tina Howard         17 Neil Porter         21 
@@ -1884,8 +1883,8 @@ Michael Gregory     21 Danny Dawson         5
          Handicap: Scr          Handicap: +20 
         Aggregate: 140         Aggregate: 132 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16            On Roundhay       
+     Round of 16            Tue 25th Jun      
+                            On Roundhay       
      Gildersome A          New Farnley A      
 Linda Gaunt         11 John Ingham         21 
 Alison Lockwood     14 Ian Worrall         21 
@@ -1898,8 +1897,8 @@ Alan Procter        21 Ryan Lynch          17
          Handicap: +20          Handicap: Scr 
         Aggregate: 118         Aggregate: 164 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16            On Meanwood       
+     Round of 16            Tue 25th Jun      
+                            On Meanwood       
      Holbeck Moor          Roundhay Pk A      
 Wayne Warburton     15 Andrew Ford         21 
 Geoff Warbuton      11 Andy Sharratt       21 
@@ -1912,8 +1911,8 @@ Helen Milton         7 Paul Johnson        21
          Handicap: +20          Handicap: Scr 
         Aggregate: 126         Aggregate: 143 
 
-    Cyril Worsnop           Tue 25th Jun      
-     Round of 16         On Chapel Allerton   
+     Round of 16            Tue 25th Jun      
+                         On Chapel Allerton   
      Cross Flatts          Chapel Street      
 Jim Bootland        21 Jon Lucas           18 
 Mario Biancardo     21 Mick Cooper         19 
@@ -2104,7 +2103,7 @@ Helen Dickinson     15 Stuart Potter       21
 Craig White          9 Richard Hodgson     21 
 Steve Barltrop      21 Vanessa Lancaster   17 
 Phil Lodge          21 Paul Leonard         2 
-Ian Doughty          21 Craig Clarkson       7 
+Ian Doughty         21 Craig Clarkson       7 
         Aggregate: 118         Aggregate: 131 
            Points:  24            Points:  29 
 
@@ -2375,7 +2374,7 @@ Ann Doughty          9 Dennis Walters      21
 Nigel Turner        21 Darren Lowe         15 
 Helen Dickinson      2 Maveen Tomlinson    21 
 Steve Barltrop      21 Peter Colley        19 
-Ian Doughty          21 David Turner        17 
+Ian Doughty         21 David Turner        17 
 Phil Lodge          21 Maureen Bradshaw     3 
 Nigel Ware          21 Elaine Hill          5 
         Aggregate: 137         Aggregate: 118 
@@ -2611,7 +2610,7 @@ Thomas Cranston     21 Etta Cohen           8
 Nigel Turner        21 Ian Lee             10 
 Andrew Grunwell     21 Stephen Lee         10 
 Nigel Ware          21 George Ramsden       9 
-Ian Doughty          21 Martin Kaitcer       6 
+Ian Doughty         21 Martin Kaitcer       6 
         Aggregate: 155         Aggregate: 106 
            Points:  35            Points:  22 
 
@@ -2667,8 +2666,8 @@ Jeff Blackburn      21 Tracy Norton        10
         Aggregate: 161         Aggregate: 113 
            Points:  37            Points:  22 
 
-    Cyril Worsnop           Tue 30th Jul      
-      Qtr-Finals          On Chapel Street    
+      Qtr-Finals            Tue 30th Jul      
+                          On Chapel Street    
       Holt Park           Stanningley Park    
 Graham Hill          6 Richard Hodgson     21 
 Peter Byford        21 Jim Swailes         19 
@@ -2681,8 +2680,8 @@ Dave Lyons           4 Andrew Marshall     21
          Handicap: +20          Handicap: +30 
         Aggregate: 136         Aggregate: 179 
 
-    Cyril Worsnop           Tue 30th Jul      
-      Qtr-Finals         On Crossgates Rec    
+      Qtr-Finals            Tue 30th Jul      
+                         On Crossgates Rec    
     Middleton Comm        East End Park A     
 Malcolm Cameron     21 Steve Olivant       17 
 Christine Glyn      20 Josey Olivant       21 
@@ -2695,8 +2694,8 @@ Darren Cookson      21 Scott Sellars       17
          Handicap: +30          Handicap: Scr 
         Aggregate: 176         Aggregate: 145 
 
-    Cyril Worsnop           Tue 30th Jul      
-      Qtr-Finals          On Moor Allerton    
+      Qtr-Finals            Tue 30th Jul      
+                          On Moor Allerton    
       Meanwood A           New Farnley A      
 David Milnes        19 Andy Gardiner       21 
 Michael Gregory     21 Paul Wood           15 
@@ -2708,8 +2707,8 @@ Ian Howard          21 Jake Skelton         4
 Andy Swain          14 Ryan Lynch          21 
         Aggregate: 150         Aggregate: 128 
 
-    Cyril Worsnop           Tue 30th Jul      
-      Qtr-Finals           On New Farnley     
+      Qtr-Finals            Tue 30th Jul      
+                           On New Farnley     
     Roundhay Pk A           Cross Flatts      
 Paul Johnson         9 Mario Biancardo     21 
 Ralph Taylor        21 Stephanie Wood      10 
@@ -2874,7 +2873,7 @@ Neil Schofield      21 Helen Dickinson      9
 Glenda Holmes       21 Steve Barltrop       7 
 Alison Lockwood     21 Nigel Turner        15 
 John Ackroyd        15 Nigel Ware          21 
-Tony Morris          6 Ian Doughty          21 
+Tony Morris          6 Ian Doughty         21 
         Aggregate: 132         Aggregate: 136 
            Points:  29            Points:  30 
 
@@ -3043,7 +3042,7 @@ Nigel Ware          20 David Ryder         21
 Steve Barltrop      11 Andrew Stocks       21 
 Phil Lodge          16 James Watkins       21 
 Craig White         13 Nicholas Ryder      21 
-Ian Doughty          21 Mick Galley         18 
+Ian Doughty         21 Mick Galley         18 
         Aggregate: 133         Aggregate: 150 
            Points:  27            Points:  35 
 
@@ -3285,7 +3284,7 @@ John Ingham         21 Alan Procter        12
       Meanwood B            Garforth C C      
 Julie Keightley     19 Craig White         21 
 Ian Macfarlane      21 Andrew Grunwell     20 
-Anne M Miller       14 Ian Doughty          21 
+Anne M Miller       14 Ian Doughty         21 
 Oliver Devaney      19 Lee Prentice        21 
 Jeff Blackburn      21 Phil Lodge          13 
 Pat Blackburn       21 Ann Doughty         10 
@@ -3294,8 +3293,8 @@ Pat Prosser          6 Nigel Turner        21
         Aggregate: 133         Aggregate: 148 
            Points:  28            Points:  33 
 
-    Cyril Worsnop           Tue 27th Aug      
-     Semi-Finals           On Gildersome      
+     Semi-Finals            Tue 27th Aug      
+                           On Gildersome      
    Stanningley Park        Middleton Comm     
 Richard Hodgson      5 Mick Hall           21 
 Jim Swailes         15 Les Oddy            21 
@@ -3308,8 +3307,8 @@ Andrew Marshall     14 Darren Cookson      21
          Handicap: +30          Handicap: +30 
         Aggregate: 165         Aggregate: 183 
 
-    Cyril Worsnop           Tue 27th Aug      
-     Semi-Finals         On Chapel Allerton   
+     Semi-Finals            Tue 27th Aug      
+                         On Chapel Allerton   
       Meanwood A            Cross Flatts      
 Michael Gregory     20 Mario Biancardo     21 
 Simon Walder        21 Shirley Biancardo    8 
@@ -3474,7 +3473,7 @@ Helen Dickinson      5 John Townsend       21
 Craig White         10 David Clarke        21 
 Nigel Ware          20 John Wilson         21 
 Steve Barltrop      16 Alan Taylor         21 
-Ian Doughty          16 David Wall          21 
+Ian Doughty         16 David Wall          21 
         Aggregate: 112         Aggregate: 168 
            Points:  21            Points:  40 
 
@@ -3530,8 +3529,8 @@ Darran Baker        21 Liam Massey          7
         Aggregate: 129         Aggregate: 137 
            Points:  28            Points:  30 
 
-    Cyril Worsnop           Tue 10th Sep      
-        Final              On Holbeck Ltd     
+        Final               Tue 10th Sep      
+                           On Holbeck Ltd     
     Middleton Comm           Meanwood A       
 Malcolm Cameron      4 Chris Daysh         21 
 Les Oddy             3 Michael Gregory     21 
