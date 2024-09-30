@@ -5,6 +5,11 @@ year = str(date.today().year)
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 
 cupText = [
+    ' trophy',
+    ' shield',
+    ' plate',
+    ' cup',
+    ' on ',
     'prelims',
     'pre lim',
     'pre-lim',

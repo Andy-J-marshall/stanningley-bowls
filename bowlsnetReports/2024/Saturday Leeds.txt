@@ -1,6 +1,5 @@
 === Leeds & District (Saturday) 2024
-=== League Calendar
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
         Div 1               Sat 13th Apr      
      League Div 1                             
@@ -1025,7 +1024,7 @@ Jim Bootland        21 Alan Goodall         4
            Points:  36            Points:  15 
 
     Sat Cup Div 1           Sat 8th Jun       
-     Round of 16           On Gildersome      
+                           On Gildersome      
   Stanningley Park A        New Wortley       
 Alyssa Randell      11 Steve Longley       21 
 Paul Bowes          21 Andrew Cole         17 
@@ -1038,7 +1037,7 @@ Andrew Marshall     21 Paul Shackleton     15
         Aggregate: 147         Aggregate: 139 
 
     Sat Cup Div 1           Sat 8th Jun       
-     Round of 16        On Stanningley Park   
+                        On Stanningley Park   
    Sth Leeds Cons A           Meanwood        
 Derek McCormack     21 Barbara Gray        10 
 Simon Hemmingway    21 Julie Keightley      6 
@@ -1051,7 +1050,7 @@ Tony Auty           21 John Hindle         14
         Aggregate: 158         Aggregate: 123 
 
       Sat Div 2             Sat 8th Jun       
-     Round of 16         On Sth Leeds Cons    
+                         On Sth Leeds Cons    
       New Armley            Bramley Park      
 Josie Burdon         7 Keith Worrall       21 
 Maureen Morris       9 Ken Stockhill       21 
@@ -1064,7 +1063,7 @@ Karl Chapman        15 Brian Fish          21
         Aggregate: 123         Aggregate: 142 
 
       Sat Div 2             Sat 8th Jun       
-     Round of 16         On Western Flatts    
+                         On Western Flatts    
     Middleton Comm          Pudsey Park       
 Terry Maher         14 Bill Pyett          21 
 Ellen Barraclough   21 David Turner         8 
@@ -1805,7 +1804,7 @@ Walter Stockhill    21 Terry Maher          1
            Points:  28            Points:  33 
 
     Sat Cup Div 1           Sat 20th Jul      
-      Qtr-Finals          On Holbeck Moor     
+                          On Holbeck Moor     
   Stanningley Park A      Sth Leeds Cons A    
 Paul Bowes          21 Barbara Wherret      7 
 Joey Broadbent      21 Malcolm Whipp        2 
@@ -1818,7 +1817,7 @@ Martin Fulton       17 Reece Pratt         21
         Aggregate: 143         Aggregate: 117 
 
     Sat Cup Div 1           Sat 20th Jul      
-      Qtr-Finals         On Scatcherd Park    
+                         On Scatcherd Park    
     Cross Flatts A          Gildersome A      
 Shirley Biancardo   21 Dougie Cooper        3 
 Ian Wood            21 Frank Hales          3 
@@ -1831,13 +1830,7 @@ Stephanie Wood       2 Kevin Smales        21
         Aggregate: 139         Aggregate:  79 
 
     Sat Cup Div 1           Sat 20th Jul      
-      Qtr-Finals                              
-     Holbeck Moor         Sth Leeds Cons B    
-           Result: BYE            Result: --- 
-     Manual Award                             
-
-    Sat Cup Div 1           Sat 20th Jul      
-      Qtr-Finals           On New Wortley     
+                           On New Wortley     
     Holbeck Ltd A         Scatcherd Park A    
 Richard Perry       15 Graham Hainsworth   21 
 Joanne Unwin        10 Jeff Holt           21 
@@ -1850,7 +1843,7 @@ Paul Hainsworth     21 Michael Stott       16
         Aggregate: 140         Aggregate: 152 
 
       Sat Div 2             Sat 20th Jul      
-      Qtr-Finals            On Cranmore       
+                            On Cranmore       
      Bramley Park           Pudsey Park       
 Keith Worrall        5 Dennis Walters      21 
 Hugh Callard        19 Bill Pyett          21 
@@ -1863,7 +1856,7 @@ Brian Fish          21 James Drury          3
         Aggregate: 103         Aggregate: 141 
 
       Sat Div 2             Sat 20th Jul      
-      Qtr-Finals          On Bramley Park     
+                          On Bramley Park     
     Western Flatts          Gildersome B      
 Mary Horrocks       21 Alison Lockwood     18 
 Susan Reddyhoff     13 David Charlesworth  21 
@@ -1876,7 +1869,7 @@ Peter Page          21 Tony Morris         14
         Aggregate: 148         Aggregate: 134 
 
       Sat Div 2             Sat 20th Jul      
-      Qtr-Finals           On Armley park     
+                           On Armley park     
        Cranmore             New Farnley       
 Garry Marshall      15 Sophie Worral       21 
 John Harvey         20 Linda Taylor        21 
@@ -1889,7 +1882,7 @@ Harry Gillett       18 Ryan Lynch          21
         Aggregate: 114         Aggregate: 168 
 
       Sat Div 2             Sat 20th Jul      
-      Qtr-Finals           On Pudsey Park     
+                           On Pudsey Park     
     Middleton Park       Stanningley Park B   
 Val Darwin           7 Harvey Leonard      21 
 Trevor Sackett      21 Laila Packer         9 
@@ -2336,7 +2329,7 @@ Mick Harrison       21 Peter Nicholson      7
            Points:  35            Points:  20 
 
     Sat Cup Div 1           Sat 17th Aug      
-     Semi-Finals         On Sth Leeds Cons    
+                         On Sth Leeds Cons    
   Stanningley Park A       Cross Flatts A     
 Paul Bowes          21 Ian Wood             9 
 David Eaton         21 Shirley Biancardo   15 
@@ -2349,7 +2342,7 @@ Alyssa Randell      21 Stephanie Wood       7
         Aggregate: 156         Aggregate: 110 
 
     Sat Cup Div 1           Sat 17th Aug      
-     Semi-Finals           On Holbeck Ltd     
+                           On Holbeck Ltd     
      Holbeck Moor         Scatcherd Park A    
 John Binns          21 Steve Briggs        19 
 Brian Thompson      21 Ian Dufton          12 
@@ -2362,7 +2355,7 @@ Steve Brown         21 Michael Stott       18
         Aggregate: 123         Aggregate: 145 
 
       Sat Div 2             Sat 17th Aug      
-     Semi-Finals           On Gildersome      
+                           On Gildersome      
      Pudsey Park           Western Flatts     
 David Turner        17 Mary Horrocks       21 
 Stephen Morris      21 Hazel Goodall       19 
@@ -2375,7 +2368,7 @@ James Drury         12 Peter Page          21
         Aggregate: 145         Aggregate: 153 
 
       Sat Div 2             Sat 17th Aug      
-     Semi-Finals          On Bramley Park     
+                          On Bramley Park     
      New Farnley         Stanningley Park B   
 Andy Thompson       21 Harvey Leonard      12 
 Sophie Worral       21 Nicola Bona          6 
@@ -2682,7 +2675,7 @@ Barbara Gray        19 Jason Ream          21
            Points:  23            Points:  33 
 
     Sat Cup Div 1           Sat 7th Sep       
-        Final            On Middleton Park    
+                         On Middleton Park    
   Stanningley Park A      Scatcherd Park A    
 Joey Broadbent      21 Steve Briggs        16 
 Martin Fulton       21 Ian Dufton           9 
@@ -2737,7 +2730,7 @@ Terry Maher         10 Malvin Miller       21
            Points:  27            Points:  27 
 
       Sat Div 2             Sat 14th Sep      
-        Final             On Holbeck Moor     
+                          On Holbeck Moor     
     Western Flatts          New Farnley       
 Peter Page          21 Andy Thompson       15 
 Gary Reddyhoff      17 Linda Taylor        21 

@@ -84,7 +84,6 @@ for team in teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                # TODO this no longer works for every league.
                 for cupText in cupTextList:
                     if cupText in row.lower():
                         for i in range(0, 11):

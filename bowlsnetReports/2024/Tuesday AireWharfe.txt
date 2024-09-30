@@ -1,6 +1,5 @@
 === AireDale & Wharfedale (Tues. Vets) 2024
-=== League Calendar
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
         Division 1                Tue 2nd Apr         
    Horsforth Hall Park           Yeadon Park A        
@@ -1022,9 +1021,8 @@ Andrew Cobb             20 Bob Williams            21
 David Emerson           21 George McClaren 'A'     20 
                Points:  31                Points:  35 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 1                                
-         Round 1                   On Ilkley          
+    TUESDAY VETS DIV 1            Tue 14th May        
+                                   On Ilkley          
        Shipley Club              Myrtle Park A        
 Cindy Rapinczuk         17 Richard Berry           21 
 Barry Fenton             4 Pete Hepworth           21 
@@ -1037,9 +1035,8 @@ John Sample             21 Ken Pollard             13
                 Games:   4                 Games:   4 
     Result Overridden                                 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 1                                
-         Round 1                    On Salts          
+    TUESDAY VETS DIV 1            Tue 14th May        
+                                    On Salts          
          Farsley                     Rawdon           
 Stuart Brook            20 Philip Leadbeater       21 
 Derek Pickering         21 Steve Calvert           13 
@@ -1051,9 +1048,8 @@ Graham Petty            21 Ken Garbett             15
 Dave Rankin             21 *No Player*              0 
                 Games:   7                 Games:   1 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 1                                
-         Round 1                On Rufford Park       
+    TUESDAY VETS DIV 1            Tue 14th May        
+                                On Rufford Park       
       Yeadon Park A                Baildon A          
 Reid Haddow             13 Richard Briggs 'A'      21 
 John Hutton'A'          21 Joan Dean                3 
@@ -1065,9 +1061,8 @@ Patrick Campbell        13 Sue Farrell             21
 Richard Gosnay          18 Derek Bridge            21 
                 Games:   2                 Games:   6 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 2                                
-         Round 1                  On Calverley        
+    TUESDAY VETS DIV 2            Tue 14th May        
+                                  On Calverley        
           Wibsey              Bingley Sleningford     
 David Southwell         21 Brenda Minney           12 
 John Stevenson          21 David Whitwham           6 
@@ -1079,9 +1074,8 @@ Vinny Cleary            21 Barbara Brook           19
 John Stocks             21 Margaret Tetley          5 
                 Games:   7                 Games:   1 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 2                                
-         Round 1                   On Baildon         
+    TUESDAY VETS DIV 2            Tue 14th May        
+                                   On Baildon         
         Grove Hill               New Greengates       
 Peter Gledhill          12 Robert Denby            21 
 Ray Smith                8 Mary Hemsley            21 
@@ -1093,16 +1087,8 @@ Alan Byers              21 Tom Sayer               19
 Neil Jameson            21 Steven Bussingham       14 
                 Games:   5                 Games:   3 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 3                                
-         Round 1                                      
-          [FREE]                    Ilkley B          
-               Result: ---                Result: BYE 
-       Manual Award                                   
-
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 3                                
-         Round 1                    On Idle           
+    TUESDAY VETS DIV 3            Tue 14th May        
+                                    On Idle           
           Pudsey                 Low Harrogate        
 John Atkinson           21 Den Morris               7 
 Linda Barrand            5 Margaret Shuttleworth   21 
@@ -1114,9 +1100,8 @@ Susan Watkins           18 Greg O'Mahony           21
 Martin Bethell           5 Robin Addis             21 
                 Games:   3                 Games:   5 
 
-       TUESDAY VETS               Tue 14th May        
-    TUESDAY VETS DIV 3                                
-         Round 1                  On Guiseley         
+    TUESDAY VETS DIV 3            Tue 14th May        
+                                  On Guiseley         
           Idle A                 Yeadon Park B        
 Colin Richardson'A'     21 Kenneth Yeadon          15 
 Michael Leach           21 Lynne Myers             12 
@@ -1464,9 +1449,8 @@ Tony Foster             21 Susan Watkins           13
 Debbie Shuttleworth     21 Frank Harwood            5 
                Points:  37                Points:  23 
 
-       TUESDAY VETS               Mon 3rd Jun         
-    TUESDAY VETS DIV 2                                
-         Round 1            On Burley in Wharfedale   
+    TUESDAY VETS DIV 2            Mon 3rd Jun         
+                            On Burley in Wharfedale   
          Menston                 Wharfemeadows        
 Roger Sayers            21 Alan Broadwell          12 
 Mike Ripley             18 Linda Yates             21 
@@ -1646,9 +1630,8 @@ Jack Boyd               16 Tony Foster             21
 Jeremy Jones            15 David Emerson           21 
                Points:  29                Points:  26 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 1                                
-        Qtr-Finals                 On Menston         
+    TUESDAY VETS DIV 1            Tue 11th Jun        
+                                   On Menston         
        Shipley Club                 Farsley           
 John Sample             21 Kevin Rankin            17 
 Pam Nellist              5 Peter Crowther          21 
@@ -1660,9 +1643,8 @@ Tony Spivey              9 Derek Pickering         21
 Mike Kane               21 Stewart Watson          18 
                 Games:   2                 Games:   6 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 1                                
-        Qtr-Finals                 On Farsley         
+    TUESDAY VETS DIV 1            Tue 11th Jun        
+                                   On Farsley         
         Baildon A                  Rufford A          
 Derek Bridge             5 Val Grace               21 
 Sue Farrell             21 Ken Lee                 10 
@@ -1674,9 +1656,8 @@ Keith Haigh             13 David Norris 'A'        21
 Richard Briggs 'A'      18 Allan Caine'A'          21 
                 Games:   2                 Games:   6 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 1                                
-        Qtr-Finals           On Bingley Sleningford   
+    TUESDAY VETS DIV 1            Tue 11th Jun        
+                             On Bingley Sleningford   
          Salts A                    Ilkley A          
 Chris Womersley         21 Mick Bastow             10 
 Sandra Womersley        10 Hedley Chapman          21 
@@ -1688,9 +1669,8 @@ Richard Lonsdale        12 Terry Almond            21
 David Bottomley 'A'     20 Andy Thornton'A'        21 
                 Games:   1                 Games:   7 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 1                                
-        Qtr-Finals              On Shipley Club       
+    TUESDAY VETS DIV 1            Tue 11th Jun        
+                                On Shipley Club       
       Greenbottom A           Horsforth Hall Park     
 Alan Bishop             13 Frank Sutcliffe         21 
 Edgar Ryley             10 Kath Crompton           21 
@@ -1703,9 +1683,8 @@ Gary Poucher            11 Nigel Stockdale         21
                 Games:   4                 Games:   4 
     Result Overridden                                 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 2                                
-        Qtr-Finals               On Myrtle Park       
+    TUESDAY VETS DIV 2            Tue 11th Jun        
+                                 On Myrtle Park       
           Wibsey                    Menston           
 Vinny Cleary            21 Les Schofield           10 
 John Exley              21 Laurie Robinson         12 
@@ -1717,9 +1696,8 @@ Alison Stocks           14 Gwen Smith              21
 John Stocks             21 Mike Ripley              5 
                 Games:   5                 Games:   3 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 2                                
-        Qtr-Finals             On Crowghyll Park      
+    TUESDAY VETS DIV 2            Tue 11th Jun        
+                               On Crowghyll Park      
         Grove Hill                 Calverley          
 Billy Hartley           19 Michael Bennett         21 
 Joan Holden             21 Colin Whitley           15 
@@ -1731,9 +1709,8 @@ David Warburton          8 Brian Hodgson           21
 Neil Jameson            10 Roger French            21 
                 Games:   2                 Games:   6 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 2                                
-        Qtr-Finals             On New Greengates      
+    TUESDAY VETS DIV 2            Tue 11th Jun        
+                               On New Greengates      
       Crowghyll Park               Baildon B          
 Lek Fletcher            21 Ron Wilkinson           12 
 Pamela Robinson         21 Linda Bakes             13 
@@ -1745,9 +1722,8 @@ Jeffrey Townend         13 Sue Adamthwaite         21
 Alan Clements           21 Dorothy Walker          18 
                 Games:   6                 Games:   2 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 2                                
-        Qtr-Finals               On Grove Hill        
+    TUESDAY VETS DIV 2            Tue 11th Jun        
+                                 On Grove Hill        
    Burley in Wharfedale          Myrtle Park B        
 Sue Knowles             21 Malcolm Smith           12 
 Patricia Sedman         21 Nick Gilleard           10 
@@ -1759,9 +1735,8 @@ Brian Wardle            17 Denise Kelt             21
 John Hardisty           21 Michael Czuba            8 
                 Games:   4                 Games:   4 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 3                                
-        Qtr-Finals                On Tarnfield        
+    TUESDAY VETS DIV 3            Tue 11th Jun        
+                                  On Tarnfield        
          Ilkley B                Low Harrogate        
 Patrick Clarke           7 Den Morris              21 
 Sue Emerson             21 Glenys Old              14 
@@ -1773,9 +1748,8 @@ Debbie Shuttleworth     17 Peter Hicks             21
 Tony Foster             18 Robin Addis             21 
                 Games:   5                 Games:   3 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 3                                
-        Qtr-Finals                 On Pudsey          
+    TUESDAY VETS DIV 3            Tue 11th Jun        
+                                   On Pudsey          
           Idle A                   Rufford B          
 Roy Barlow'A'           21 John Arundel            14 
 Colin Richardson'A'      8 Pauline Ingleson        21 
@@ -1787,9 +1761,8 @@ Dave Duckett            21 Peter O'Brien           13
 Bryn Jones'A'           21 Mick Snowden            10 
                 Games:   7                 Games:   1 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 3                                
-        Qtr-Finals               On Yeadon Park       
+    TUESDAY VETS DIV 3            Tue 11th Jun        
+                                 On Yeadon Park       
           Idle B                   Tarnfield          
 Ann Muggeridge          21 Pam Ratcliffe            4 
 Tekla England           21 Stan Southern           18 
@@ -1801,9 +1774,8 @@ Michael Barrett         21 John Illingworth         7
 David Priestley         21 *No Player*              0 
                 Games:   5                 Games:   3 
 
-       TUESDAY VETS               Tue 11th Jun        
-    TUESDAY VETS DIV 3                                
-        Qtr-Finals                 On Rawdon          
+    TUESDAY VETS DIV 3            Tue 11th Jun        
+                                   On Rawdon          
          Salts B                    Guiseley          
 Debbie Sandles          17 Caroline Corbett        21 
 Nuala Pritchard          8 Jeremy Jones            21 
@@ -2319,9 +2291,8 @@ Christine Fountain      12 Peter O'Brien           21
 Lynette Hall            21 *No Player*              0 
                Points:  33                Points:  19 
 
-       TUESDAY VETS               Tue 9th Jul         
-    TUESDAY VETS DIV 2                                
-       Semi-Finals                 On Rawdon          
+    TUESDAY VETS DIV 2            Tue 9th Jul         
+                                   On Rawdon          
       Crowghyll Park          Burley in Wharfedale    
 Peter Mitchell           9 Michael Mitchell        21 
 Pamela Robinson         21 Ken Sedman              20 
@@ -2333,9 +2304,8 @@ Jeffrey Townend         21 Brian Wardle            15
 Alan Clements           21 John Hardisty           14 
                 Games:   4                 Games:   4 
 
-       TUESDAY VETS               Fri 12th Jul        
-    TUESDAY VETS DIV 1                                
-       Semi-Finals               On Greenbottom       
+    TUESDAY VETS DIV 1            Fri 12th Jul        
+                                 On Greenbottom       
          Farsley                   Rufford A          
 Kevin Rankin            21 Ken Lee                 11 
 Peter Crowther          21 David Kirkbright        17 
@@ -2515,9 +2485,8 @@ Joan Baker               9 Debbie Shuttleworth     21
 Julie Watson            21 Tony Foster              9 
                Points:  21                Points:  33 
 
-       TUESDAY VETS               Thu 18th Jul        
-    TUESDAY VETS DIV 1                                
-       Semi-Finals                On Guiseley         
+    TUESDAY VETS DIV 1            Thu 18th Jul        
+                                  On Guiseley         
          Ilkley A             Horsforth Hall Park     
 Allan Hughes            21 Keith Barran            10 
 Hedley Chapman          21 Frank Sutcliffe          6 
@@ -2529,9 +2498,8 @@ Brian Wheeler'A'        14 Nigel Stockdale         21
 Martin Bailey           21 Kath Crompton           10 
                 Games:   7                 Games:   1 
 
-       TUESDAY VETS               Fri 19th Jul        
-    TUESDAY VETS DIV 3                                
-       Semi-Finals                  On Salts          
+    TUESDAY VETS DIV 3            Fri 19th Jul        
+                                    On Salts          
          Ilkley B                    Idle A           
 David Emerson           21 Alan Sinfield           18 
 Sue Emerson              9 Dave Duckett            21 
@@ -2711,9 +2679,8 @@ David Kirk              11 Roy Barlow'A'           21
 Bob Williams            14 Bryn Jones'A'           21 
                Points:  18                Points:  40 
 
-       TUESDAY VETS               Fri 26th Jul        
-    TUESDAY VETS DIV 3                                
-       Semi-Finals                 On Baildon         
+    TUESDAY VETS DIV 3            Fri 26th Jul        
+                                   On Baildon         
           Idle B                    Guiseley          
 Roger Morgan-Williams   20 Jeremy Jones            21 
 Alan Briggs             13 Caroline Corbett        21 
@@ -2893,9 +2860,8 @@ John Arundel             6 Tony Foster             21
 Peter O'Brien           21 Debbie Shuttleworth     17 
                Points:  36                Points:  17 
 
-       TUESDAY VETS               Fri 2nd Aug         
-    TUESDAY VETS DIV 2                                
-       Semi-Finals                 On Farsley         
+    TUESDAY VETS DIV 2            Fri 2nd Aug         
+                                   On Farsley         
           Wibsey                   Calverley          
 John Simpson            14 Michael Bennett         21 
 John Stocks             13 Derek Whitaker          21 
@@ -3087,9 +3053,8 @@ Anita Howard            21 Anne Brown              14
 Bob Williams            21 Jack Boyd                5 
                Points:  33                Points:  21 
 
-       TUESDAY VETS               Tue 13th Aug        
-    TUESDAY VETS DIV 1                                
-          Final              On Horsforth Hall Park   
+    TUESDAY VETS DIV 1            Tue 13th Aug        
+                             On Horsforth Hall Park   
          Farsley                    Ilkley A          
 Kevin Rankin            20 Rod Bastow 'A'          21 
 Peter Crowther          12 Allan Hughes            21 
@@ -3101,9 +3066,8 @@ Dave Rankin             16 Andy Thornton'A'        21
 Stewart Watson          12 Hedley Chapman          21 
                 Games:   2                 Games:   6 
 
-       TUESDAY VETS               Tue 13th Aug        
-    TUESDAY VETS DIV 2                                
-          Final                    On Baildon         
+    TUESDAY VETS DIV 2            Tue 13th Aug        
+                                   On Baildon         
         Calverley             Burley in Wharfedale    
 Ricky Kearns            21 Alwyn Robertson         12 
 Margaret Whitaker       21 Michael Littlejohn      20 
@@ -3115,9 +3079,8 @@ Steve Spurr             21 Brian Wardle            11
 Roger French            21 John Hardisty           10 
                 Games:   5                 Games:   3 
 
-       TUESDAY VETS               Tue 13th Aug        
-    TUESDAY VETS DIV 3                                
-          Final                    On Ilkley          
+    TUESDAY VETS DIV 3            Tue 13th Aug        
+                                   On Ilkley          
           Idle A                    Guiseley          
 Roy Barlow'A'           20 Lynn Ogden              21 
 Dave Duckett            16 Norman Lickley          21 
