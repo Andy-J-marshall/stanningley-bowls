@@ -172,8 +172,13 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 </ListGroup>
             );
         } else {
-            // TODO wrong when selecting all players in search
-            return <h4>Player not found</h4>;
+            return (
+                searchedPlayerName.toLowerCase() !== 'show all' && (
+                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
+                        Player not found
+                    </h2>
+                )
+            );
         }
     }
 
@@ -250,16 +255,6 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
             {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
             )}
-
-            {/* TODO not working correctly? */}
-            {!loading &&
-                searchedPlayerName &&
-                !playerFound &&
-                !(searchedPlayerName.toLowerCase() === 'show all') && (
-                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found XXX
-                    </h2>
-                )}
 
             {/* Shows total player count */}
             <br />
