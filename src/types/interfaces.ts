@@ -264,12 +264,12 @@ export interface PlayerStatSummaryProps {
         games: number;
         wins: number;
         average: number | undefined;
-        singleGames: number;
+        singleGames?: number;
         singlesAverage?: number;
-        singlesWins: number;
-        pairsGames: number;
+        singlesWins?: number;
+        pairsGames?: number;
         pairsAverage?: number;
-        pairsWins: number;
+        pairsWins?: number;
         singlesWinPerc?: number;
         pairsWinPerc?: number;
         winPerc?: number;

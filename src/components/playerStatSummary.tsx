@@ -179,9 +179,9 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         }
 
         return stats?.map((player, key) => {
-            let gamesPlayed = player.games;
-            let average = player.average;
-            let wins = player.wins;
+            let gamesPlayed: number | undefined = player.games;
+            let average: number | undefined = player.average;
+            let wins: number | undefined = player.wins;
 
             if (showSinglesOnlyBool) {
                 gamesPlayed = player.singleGames;
@@ -197,7 +197,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
             return (
                 <tbody key={key}>
-                    {gamesPlayed > 0 && (
+                    {gamesPlayed && gamesPlayed > 0 && (
                         <tr>
                             <td>
                                 <a
@@ -220,7 +220,9 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                     '-'
                                 )}-win-perc`}
                             >
-                                {((wins / gamesPlayed) * 100).toFixed(0)}%
+                                {wins &&
+                                    ((wins / gamesPlayed) * 100).toFixed(0)}
+                                %
                             </td>
                             <td id={`${player.player.replace(' ', '-')}-avg`}>
                                 {average?.toFixed(2)}
