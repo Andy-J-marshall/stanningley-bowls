@@ -12,7 +12,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     playerStats = playerStats.filter((player) => player.games > 0);
 
     let style: any;
-    let href: string | null;
+    let href: string | undefined;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
@@ -178,7 +178,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             stats = orderPlayersByAverage();
         }
 
-        return stats.map((player, key) => {
+        return stats?.map((player, key) => {
             let gamesPlayed = player.games;
             let average = player.average;
             let wins = player.wins;
@@ -223,7 +223,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                 {((wins / gamesPlayed) * 100).toFixed(0)}%
                             </td>
                             <td id={`${player.player.replace(' ', '-')}-avg`}>
-                                {average.toFixed(2)}
+                                {average?.toFixed(2)}
                             </td>
                         </tr>
                     )}
@@ -243,7 +243,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             textDecoration: 'none',
             color: 'black',
         };
-        href = null;
+        href = '';
     }
 
     if (playerStats) {

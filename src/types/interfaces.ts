@@ -263,13 +263,13 @@ export interface PlayerStatSummaryProps {
         player: string;
         games: number;
         wins: number;
-        average: number;
-        singleGames?: number;
+        average: number | undefined;
+        singleGames: number;
         singlesAverage?: number;
-        singlesWins?: number;
-        pairsGames?: number;
+        singlesWins: number;
+        pairsGames: number;
         pairsAverage?: number;
-        pairsWins?: number;
+        pairsWins: number;
         singlesWinPerc?: number;
         pairsWinPerc?: number;
         winPerc?: number;
