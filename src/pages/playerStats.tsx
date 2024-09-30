@@ -112,9 +112,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day: string) => {
-                // TODO don't need this anymore
-                const formattedDay = day.split(' (')[0].toLowerCase().trim();
-                if (teamDaysPlayed.includes(formattedDay)) {
+                if (teamDaysPlayed.includes(day)) {
                     anyTeamDays = true;
                 }
             });
