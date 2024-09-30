@@ -1,6 +1,5 @@
 === AireDale & Wharfedale (Saturday) 2024
-=== League Calendar (as of Fri 27th Sep)
-=== Complete List
+=== League Fixtures. Full MatchCards.
 
          Premier                 Sat 6th Apr        
        Black Swan                 Rawdon A          
@@ -1134,8 +1133,7 @@ Peter Gledhill         21 *No Player*             0
            Aggregate: 161            Aggregate:  70 
               Points:  26               Points:   2 
 
-         DOBSON                 Fri 26th Apr        
-         Round 1                                    
+         Round 1                Fri 26th Apr        
  Burley in Wharfedale B      Horsforth Woodside     
 Michael Mitchell'Ab'   20 Colin Davison          21 
 Ken Sedman             21 Kath Hey                6 
@@ -1150,8 +1148,7 @@ Anthony Postlethwaite  21 Ian Tindal             17
             Handicap: +30             Handicap: +40 
            Aggregate: 220            Aggregate: 206 
 
-         DOBSON                 Fri 26th Apr        
-         Round 1                                    
+         Round 1                Fri 26th Apr        
         Wayside B            Skipton Broughton B    
 Joan Forbes            13 Paul Kaye              21 
 Hayden Whitehouse      11 Peter Finnie           21 
@@ -1166,8 +1163,7 @@ Lee Singleton          11 Kevin Burnett          21
             Handicap: +28             Handicap: +32 
            Aggregate: 165            Aggregate: 231 
 
-         DOBSON                 Fri 26th Apr        
-         Round 1                                    
+         Round 1                Fri 26th Apr        
         Ilkley B                 Holt Park B        
 Bernard Connor         21 Brendan Clarke         10 
 Alison Wailes          21 Michelle Norcliffe     13 
@@ -1182,8 +1178,7 @@ Robert Garth'Ab'       21 Mick Sadler             6
             Handicap: Scr             Handicap: +42 
            Aggregate: 210            Aggregate: 142 
 
-         DOBSON                 Fri 26th Apr        
-         Round 1                                    
+         Round 1                Fri 26th Apr        
      Wharfemeadows B               Idle B           
 Paul Bowden            20 Mark Paxton            21 
 Susan Ward             21 Elizabeth Rawnsley     11 
@@ -1198,8 +1193,7 @@ Malcolm Levi           21 John Coppin            15
             Handicap: +38             Handicap: +22 
            Aggregate: 197            Aggregate: 214 
 
-         DOBSON                 Fri 26th Apr        
-         Round 1                                    
+         Round 1                Fri 26th Apr        
       Knaresborough             Yeadon Park A       
 Paul Passman           21 Allen Hardcastle        7 
 David Moore            21 Robert North           14 
@@ -1896,8 +1890,8 @@ Gerry Harper           21 Sylvia Davies          19
            Aggregate: 130            Aggregate: 154 
               Points:  10               Points:  18 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1               On Sutton Park       
+         Round 1                Sat 11th May        
+                               On Sutton Park       
        Sutton Park                Rawdon A          
 Martin Loftus          21 Paul Haigh'A'           5 
 James Jennings         21 Dave Hill 'A'           6 
@@ -1912,8 +1906,8 @@ Amanda Beeden           6 Ian Scott              21
             Handicap: Scr             Handicap:  +8 
            Aggregate: 174            Aggregate: 156 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1                 On Baildon         
+         Round 1                Sat 11th May        
+                                 On Baildon         
         Baildon A                Holt Park A        
 Jason Bridge'Ab'       12 John Gilroy            21 
 Dorothy Walker 'A'     14 Peter Sandles          21 
@@ -1928,8 +1922,8 @@ Rae Heddle             10 Tony Watson 'A'        21
             Handicap: +30             Handicap: +32 
            Aggregate: 205            Aggregate: 195 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1                  On Ilkley         
+         Round 1                Sat 11th May        
+                                  On Ilkley         
         Ilkley A               Wharfemeadows A      
 Simon Whitehead'A'     21 Mark Silvester         10 
 Terry Aldmond 'Ab'     21 Jean Harrison           6 
@@ -1944,8 +1938,8 @@ Mick Bastow            21 John Chippindale 'A'    9
             Handicap:  +6             Handicap: +34 
            Aggregate: 215            Aggregate: 146 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1           On Horsforth Hall Park   
+         Round 1                Sat 11th May        
+                           On Horsforth Hall Park   
    Horsforth Hall Park             Idle A           
 Bruce Callard           3 Roy Barlow 'A'         21 
 Richard Sunley         19 Colin Richardson       21 
@@ -1960,8 +1954,8 @@ John Sutton            15 Alan Sinfield 'A'      21
             Handicap: +26             Handicap: +28 
            Aggregate: 179            Aggregate: 226 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1                 On Menston         
+         Round 1                Sat 11th May        
+                                 On Menston         
         Menston A               Greenbottom A       
 Peter Hammond           9 Fiona Haxby'A'         21 
 Gwen Smith             21 Colin Mann             12 
@@ -1976,8 +1970,8 @@ Nigel Buckley          21 Brian Hall             17
             Handicap: +38             Handicap: +40 
            Aggregate: 229            Aggregate: 191 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1                On Black Swan       
+         Round 1                Sat 11th May        
+                                On Black Swan       
        Black Swan               Myrtle Park A       
 Tom Beecroft           21 Michael Upton 'A'      14 
 Chaz Charleton         21 Denise Kelt            11 
@@ -1992,15 +1986,8 @@ Adam Varley            21 Tom Barnes              6
             Handicap:  +2             Handicap: +24 
            Aggregate: 211            Aggregate: 155 
 
-    JENNINGS CRACKLES           Sat 11th May        
-         Round 1                                    
-     Shipley Club A             Low Harrogate       
-            Handicap: +16             Handicap: +22 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-      HEDDLE TROPHY             Sat 11th May        
-         Round 1                On Calverley        
+         Round 1                Sat 11th May        
+                                On Calverley        
         Calverley                 Ilkley C          
 Malcolm Pratt          21 Alan Picken            20 
 Alan Horsfield         21 Colin Spooner          10 
@@ -2013,8 +2000,8 @@ Clifford Wheatley      18 Andrew Hinchcliffe     21
             Handicap:  +2             Handicap:  +8 
            Aggregate: 155            Aggregate: 109 
 
-      HEDDLE TROPHY             Sat 11th May        
-         Round 1              On Wharfemeadows      
+         Round 1                Sat 11th May        
+                              On Wharfemeadows      
      Wharfemeadows C            Myrtle Park C       
 Lynne Harper           21 Michael Czuba          13 
 Jean Crawford          20 Dorothy Brook          21 
@@ -2027,15 +2014,8 @@ David Warburton        21 Andrew Lancaster       17
             Handicap: +18             Handicap: +14 
            Aggregate: 161            Aggregate: 151 
 
-      HEDDLE TROPHY             Sat 11th May        
-         Round 1                                    
-         Idle C            Burley in Wharfedale C   
-            Handicap:  +6             Handicap: +20 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-      HEDDLE TROPHY             Sat 11th May        
-         Round 1                  On Salts          
+         Round 1                Sat 11th May        
+                                  On Salts          
          Salts B                  Baildon C         
 John Tillotson         21 Barbara Kedward        12 
 Steve Lonsdale          0 June Catterall         21 
@@ -2048,15 +2028,7 @@ Nuala Pritchard        11 Jim Whittle            21
             Handicap: Scr             Handicap: +16 
            Aggregate: 137            Aggregate: 113 
 
-         DOBSON                 Sat 11th May        
-         Round 2                                    
-      Dacre Banks A             Bingley Glen        
-            Handicap: +24             Handicap: +16 
-              Result: BYE               Result: --- 
-      Manual Award                                  
-
-         DOBSON                 Sat 11th May        
-         Round 2                                    
+         Round 2                Sat 11th May        
    Skipton Broughton B            Menston B         
 Archie Lambert         21 John Beaumont          13 
 David Gordon           21 Stuart Davies          11 
@@ -2071,8 +2043,7 @@ Joanne Ellis           21 Geoff Winter           12
             Handicap: +32             Handicap: +36 
            Aggregate: 242            Aggregate: 147 
 
-         DOBSON                 Sat 11th May        
-         Round 2                                    
+         Round 2                Sat 11th May        
         Starbeck                  Rawdon B          
 Sue Green              21 Graham Hogg            15 
 Ken Firth               3 Philip Jackson         21 
@@ -2087,8 +2058,7 @@ Tony Hawkes            21 John Illingworth       14
             Handicap: +10             Handicap: +20 
            Aggregate: 170            Aggregate: 202 
 
-         DOBSON                 Sat 11th May        
-         Round 2                                    
+         Round 2                Sat 11th May        
         Baildon B               Bilton Dragon       
 Sue Adamthwaite 'Ab'   21 Peter White            18 
 Malcolm Throup         21 Phillip Boreham        17 
@@ -2103,8 +2073,7 @@ James Greenwood        21 Maurice Skaife         17
             Handicap: +12             Handicap:  +4 
            Aggregate: 173            Aggregate: 175 
 
-         DOBSON                 Sat 11th May        
-         Round 2                                    
+         Round 2                Sat 11th May        
          Idle B                 Rufford Park        
 John Coppin             2 Christine Dobson       21 
 Margaret Austin        21 Sue Newell             20 
@@ -2119,8 +2088,8 @@ David Turner 'Ab'      21 Alexander Waite        19
             Handicap: +22             Handicap: +26 
            Aggregate: 174            Aggregate: 198 
 
-         DOBSON                 Sat 11th May        
-         Round 2               On Shipley Club      
+         Round 2                Sat 11th May        
+                               On Shipley Club      
      Shipley Club B             Myrtle Park B       
 Joyce Jowett           11 Christine Pollard      21 
 Steve West             17 Malcolm Waite          21 
@@ -2135,8 +2104,7 @@ Kevin Cullerton        21 Martin Slater          13
             Handicap: +34             Handicap: +14 
            Aggregate: 213            Aggregate: 197 
 
-         DOBSON                 Sat 11th May        
-         Round 2                                    
+         Round 2                Sat 11th May        
        Grove Hill               Knaresborough       
 Neil Jameson           21 Paul Passman           18 
 Peter Brearley         21 Alan Bowman             9 
@@ -2553,8 +2521,8 @@ Colin Spooner          21 Stephen Holliday        8
            Aggregate: 153            Aggregate:  89 
               Points:  24               Points:   4 
 
-    JENNINGS CRACKLES           Thu 23rd May        
-         Round 1                  On Salts          
+         Round 1                Thu 23rd May        
+                                  On Salts          
          Salts A           Burley in Wharfedale A   
 Steve Crossley          9 Roy Knowles            21 
 Martin Sherred         18 Alan Goodenough'A'     21 
@@ -2957,8 +2925,7 @@ Susan Ward             10 Michael Burnett        21
            Aggregate: 127            Aggregate: 150 
               Points:  10               Points:  18 
 
-         DOBSON                 Sun 26th May        
-         Round 2                                    
+         Round 2                Sun 26th May        
  Burley in Wharfedale B           Ilkley B          
 Mark Firth 'Ab'        21 Cliff Taylor           19 
 Michael Mitchell'Ab'   19 Dave Nicholson         21 
@@ -3005,8 +2972,8 @@ Mark Paxton            21 Alwyn Robertson'Ab'     9
            Aggregate: 163            Aggregate: 129 
               Points:  20               Points:  10 
 
-    JENNINGS CRACKLES            Sat 1st Jun        
-       Qtr-Finals                 On Ilkley         
+       Qtr-Finals                Sat 1st Jun        
+                                  On Ilkley         
         Ilkley A               Shipley Club A       
 Phil Hall              21 Garry Nellist           7 
 Andy Thornton'A'       19 John Sample'A'         21 
@@ -3021,8 +2988,8 @@ Richard Garth 'A'      21 David Dorman            8
             Handicap:  +6             Handicap: +16 
            Aggregate: 214            Aggregate: 147 
 
-    JENNINGS CRACKLES            Sat 1st Jun        
-       Qtr-Finals               On Black Swan       
+       Qtr-Finals                Sat 1st Jun        
+                                On Black Swan       
        Black Swan                 Baildon A         
 Tom Beecroft           21 Jim Whittle             7 
 Chaz Charleton         21 Robert Ramsden         14 
@@ -3037,8 +3004,8 @@ Tony Derrick           21 Trev Worsman           13
             Handicap:  +2             Handicap: +30 
            Aggregate: 212            Aggregate: 153 
 
-    JENNINGS CRACKLES            Sat 1st Jun        
-       Qtr-Finals                  On Idle          
+       Qtr-Finals                Sat 1st Jun        
+                                   On Idle          
          Idle A            Burley in Wharfedale A   
 Roy Barlow 'A'          7 Andrew Shaw'A'         21 
 Ian Watson             15 Bob Hartley            21 
@@ -3053,8 +3020,8 @@ Alan Sinfield 'A'      21 Brian Wheeler'A'       20
             Handicap: +28             Handicap: +14 
            Aggregate: 171            Aggregate: 218 
 
-    JENNINGS CRACKLES            Sat 1st Jun        
-       Qtr-Finals              On Sutton Park       
+       Qtr-Finals                Sat 1st Jun        
+                               On Sutton Park       
        Sutton Park                Menston A         
 Craig Smith            21 Peter Hammond           9 
 Jason Jennings         21 John Beaumont           4 
@@ -3069,8 +3036,8 @@ David Cadwallader      21 Shaun Johnson          15
             Handicap: Scr             Handicap: +38 
            Aggregate: 210            Aggregate: 146 
 
-      HEDDLE TROPHY              Sat 1st Jun        
-       Qtr-Finals                 On Salts          
+       Qtr-Finals                Sat 1st Jun        
+                                  On Salts          
          Salts B                   Idle C           
 Vanda Greenwood         8 Steven Miles Turner    21 
 Philip Peel            21 Linda Brandon          12 
@@ -3083,8 +3050,8 @@ Thomas Kilerminster    21 Ann Muggeridge         16
             Handicap: Scr             Handicap:  +6 
            Aggregate: 127            Aggregate: 134 
 
-      HEDDLE TROPHY              Sat 1st Jun        
-       Qtr-Finals              On Greenbottom       
+       Qtr-Finals                Sat 1st Jun        
+                               On Greenbottom       
       Greenbottom B                Adel B           
 Dorothy Jackson        21 Christina Levy         10 
 Stan Marsden           21 Sue Pagdin             13 
@@ -3097,8 +3064,8 @@ Dave Whelan            21 John Auty              19
             Handicap:  +4             Handicap: +12 
            Aggregate: 143            Aggregate: 137 
 
-      HEDDLE TROPHY              Sat 1st Jun        
-       Qtr-Finals             On Wharfemeadows      
+       Qtr-Finals                Sat 1st Jun        
+                              On Wharfemeadows      
      Wharfemeadows C            Dacre Banks B       
 David Warburton        21 Amanda Sloane           7 
 Jean Crawford           0 Stephen Tucker         21 
@@ -3111,8 +3078,8 @@ Peter Gledhill          5 Will Tulley            21
             Handicap: +18             Handicap: +22 
            Aggregate: 121            Aggregate: 170 
 
-      HEDDLE TROPHY              Sat 1st Jun        
-       Qtr-Finals              On Yeadon Park       
+       Qtr-Finals                Sat 1st Jun        
+                               On Yeadon Park       
       Yeadon Park B               Calverley         
 Christine Scott         3 Colin Whitley          21 
 Kenneth Yeadon          7 Alan Horsfield         21 
@@ -3125,8 +3092,7 @@ Michael Burnett         9 Eddie Prince           21
             Handicap: +10             Handicap:  +2 
            Aggregate:  70            Aggregate: 164 
 
-         DOBSON                  Sat 1st Jun        
-       Qtr-Finals                                   
+       Qtr-Finals                Sat 1st Jun        
    Skipton Broughton B         Shipley Club B       
 Cath Rushton           19 Pam Nellist            21 
 Robert Ellis           21 Steve West             17 
@@ -3141,8 +3107,7 @@ Archie Lambert         14 Diane Halliday         21
             Handicap: +32             Handicap: +34 
            Aggregate: 205            Aggregate: 219 
 
-         DOBSON                  Sat 1st Jun        
-       Qtr-Finals                                   
+       Qtr-Finals                Sat 1st Jun        
       Dacre Banks A               Rawdon B          
 Keith Hardcastle       21 Terry Waite-Pullan     16 
 Julia Heaton           21 Ray Weldrand           10 
@@ -3157,8 +3122,7 @@ David Brockhill        20 Philip Leadbeater      21
             Handicap: +24             Handicap: +20 
            Aggregate: 222            Aggregate: 160 
 
-         DOBSON                  Sat 1st Jun        
-       Qtr-Finals                                   
+       Qtr-Finals                Sat 1st Jun        
        Grove Hill               Rufford Park        
 Peter Brearley         21 Kerstin Clapham        13 
 Billy Hartley          21 Sheila Hudson          10 
@@ -3173,8 +3137,7 @@ Daniel Twist           21 Stuart Parker           6
             Handicap:  +2             Handicap: +26 
            Aggregate: 197            Aggregate: 155 
 
-         DOBSON                  Sat 1st Jun        
-       Qtr-Finals                                   
+       Qtr-Finals                Sat 1st Jun        
       Bilton Dragon               Ilkley B          
 Colin Rudd             12 Deborah Swann          21 
 Hazel Parker           20 Allan Hughes           21 
@@ -4307,8 +4270,8 @@ Mark Firth 'Ab'         7 Robert Ellis           21
            Aggregate: 133            Aggregate: 203 
               Points:   4               Points:  26 
 
-    JENNINGS CRACKLES           Sat 29th Jun        
-       Semi-Finals               On Baildon         
+       Semi-Finals              Sat 29th Jun        
+                                 On Baildon         
        Sutton Park                Ilkley A          
 Tony Beeden            21 Dave Smith             16 
 Pete Hepworth          21 Terry Aldmond 'Ab'     12 
@@ -4323,8 +4286,8 @@ James Jennings         18 Richard Garth 'A'      21
             Handicap: Scr             Handicap:  +6 
            Aggregate: 193            Aggregate: 163 
 
-      HEDDLE TROPHY             Sat 29th Jun        
-       Semi-Finals                On Rawdon         
+       Semi-Finals              Sat 29th Jun        
+                                  On Rawdon         
       Dacre Banks B               Calverley         
 Will Tulley            21 Anne Newlove            8 
 Teresa Smith           21 Alan Horsfield         14 
@@ -4337,8 +4300,8 @@ Duncan Sloane          13 Clifford Wheatley      21
             Handicap: +22             Handicap:  +2 
            Aggregate: 144            Aggregate: 134 
 
-      HEDDLE TROPHY             Sat 29th Jun        
-       Semi-Finals             On Myrtle Park       
+       Semi-Finals              Sat 29th Jun        
+                               On Myrtle Park       
          Idle C                 Greenbottom B       
 Val Leach               9 Dave Whelan            21 
 Ken Muggeridge          9 Linda Summers          21 
@@ -4351,8 +4314,8 @@ Margaret Austin        10 Stan Marsden           21
             Handicap:  +6             Handicap:  +4 
            Aggregate: 123            Aggregate: 137 
 
-         DOBSON                 Sat 29th Jun        
-       Semi-Finals          On Horsforth Woodside   
+       Semi-Finals              Sat 29th Jun        
+                            On Horsforth Woodside   
       Bilton Dragon              Grove Hill         
 David Aldous           21 Peter Brearley         16 
 Alan Blackburn         21 Tony Farrar            20 
@@ -4367,8 +4330,8 @@ Stephen Mudd           17 Daniel Twist           21
             Handicap:  +4             Handicap:  +2 
            Aggregate: 148            Aggregate: 192 
 
-         DOBSON                 Sat 29th Jun        
-       Semi-Finals                On Ilkley         
+       Semi-Finals              Sat 29th Jun        
+                                  On Ilkley         
      Shipley Club B             Dacre Banks A       
 Joyce Jowett            6 Pauline Hook           21 
 Scott Ker              21 Margaret Moorhouse     20 
@@ -5593,8 +5556,8 @@ Tim Nicholson          16 Andrew Cobb            21
            Aggregate: 146            Aggregate: 138 
               Points:  14               Points:  14 
 
-    JENNINGS CRACKLES           Fri 26th Jul        
-       Semi-Finals                 On Adel          
+       Semi-Finals              Fri 26th Jul        
+                                   On Adel          
        Black Swan          Burley in Wharfedale A   
 Tom Beecroft           21 Brian Wheeler'A'       11 
 David Hodgson          21 John Hardisty 'A'      15 
@@ -9213,4 +9176,50 @@ Granville Thornton     21 Andrew Hinchcliffe     20
                Games:   6                Games:   2 
            Aggregate: 156            Aggregate: 126 
               Points:  19               Points:   9 
+
+          Final                 Sat 28th Sep        
+                                  On Salts          
+       Sutton Park         Burley in Wharfedale A   
+Bryan Harrison         21 Brian Wheeler'A'       15 
+Kevin Mackie           21 John Hardisty 'A'      13 
+Jason Jennings         21 Richard Kellett         9 
+James Jennings         20 Pete Thornton          21 
+Pete Hepworth          21 Anthony Postlethwaite  14 
+Craig Smith            21 Sue Knowles             3 
+Guy Greene             19 Alan Goodenough'A'     21 
+David Cadwallader      21 Robert Wheeler          9 
+Denis Mackie           16 Roy Knowles            21 
+Antony Emmott          21 Andrew Shaw'A'          5 
+            Handicap: Scr             Handicap: +14 
+           Aggregate: 202            Aggregate: 145 
+
+          Final                 Sat 28th Sep        
+                                 On Rufford         
+      Dacre Banks B             Greenbottom B       
+Teresa Smith           15 Stan Marsden           21 
+Nick Coutts            21 Linda Summers          16 
+Amanda Sloane          21 Dorothy Jackson        15 
+Will Tulley            21 Sandy Watson           10 
+Jean Rintoul           15 Kate Jukes             21 
+Stephen Brown          15 Anita Kingham          21 
+Deborah Parker         21 Alan Jukes              8 
+Duncan Sloane          10 Dave Whelan            21 
+            Handicap: +22             Handicap:  +4 
+           Aggregate: 161            Aggregate: 137 
+
+          Final                 Sat 28th Sep        
+                                   On Idle          
+       Grove Hill              Shipley Club B       
+Neil Jameson           21 Steve West             15 
+Belinda Mitchell       16 Scott Ker              21 
+Tony Farrar            21 Alan Outlaw             6 
+David Locke            21 Tony Greenwood         13 
+Diane Farrar           16 Mick Criddle           21 
+Alan Dawson            11 Pam Nellist            21 
+Katherine Lodge        21 Mathew Johnson          4 
+Charles Holden         18 Diane Halliday         21 
+David Samuel           21 Ian Greenwood          19 
+Daniel Twist           14 Mark Cunningham        21 
+            Handicap:  +2             Handicap: +34 
+           Aggregate: 182            Aggregate: 196 
 
