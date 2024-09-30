@@ -11,11 +11,13 @@ function PlayerStatsResults(props: PlayerStatsResultsProps) {
         const resultParts = result.split(' - ');
 
         const teamPart = resultParts[0];
-        const playerScore = teamPart.match(/[0-9]+/g)[0].trim();
+        const playerScoreMatch = teamPart.match(/[0-9]+/g);
+        const playerScore = playerScoreMatch ? playerScoreMatch[0].trim() : '';
         const player = teamPart.split(/[0-9]+/g)[0].trim();
 
         const opponentPart = resultParts[1].split(' (')[0];
-        const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();
+        const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
+        const opponentScore = opponentScoreMatch ? opponentScoreMatch[0].trim() : '';
         const opponent = opponentPart.split(/[0-9]+/g)[1].trim();
 
         return {

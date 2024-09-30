@@ -29,7 +29,6 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
     const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
         statsForEveryYearArray
     );
-    const [playerFound, setPlayerFound] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const players = Object.keys(combinedPlayerResults).sort();
@@ -107,7 +106,6 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 ? true
                 : false;
         if (validPlayer && !searchedName.includes('show all')) {
-            setPlayerFound(true);
             const teamDaysPlayed = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
@@ -120,8 +118,6 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 setStatsToUse(combinedPlayerResults);
                 setShowStatSummary(true);
             }
-        } else {
-            setPlayerFound(false);
         }
     }
 
@@ -153,7 +149,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
 
     function closeButtonCallback() {
         setValue(['']);
-        setSearchedPlayerName(null);
+        setSearchedPlayerName('');
     }
 
     function showPlayerStats(playerName: string) {

@@ -24,10 +24,12 @@ function Results(props: ResultsProps) {
             const results = team.results.map((result) => {
                 const resultParts = result.split(' - ');
                 const homePart = resultParts[0];
-                const homeScore = homePart.match(/[0-9]+/g)[0].trim();
+                const homeScoreMatch = homePart.match(/[0-9]+/g);
+                const homeScore = homeScoreMatch ? homeScoreMatch[0].trim() : '';
                 const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
                 const awayPart = resultParts[1].split(' (')[0];
-                const awayScore = awayPart.match(/[0-9]+/g)[0].trim();
+                const awayScoreMatch = awayPart.match(/[0-9]+/g);
+                const awayScore = awayScoreMatch ? awayScoreMatch[0].trim() : '';
                 const awayTeam = awayPart.split(/[0-9]+/g)[1].trim();
 
                 resultsFound = true;
@@ -61,12 +63,12 @@ function Results(props: ResultsProps) {
                     yearToDisplay={yearToDisplay}
                 />
                 <h1>{yearInTitle} RESULTS</h1>
-                {resultsArray.map((resultTeam, idx) => {
+                {resultsArray && resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
                             <div key={idx} className="teamResult">
                                 <h3 style={{ paddingTop: '1rem' }}>
-                                    {resultTeam.day.toUpperCase()}
+                                    {resultTeam.day?.toUpperCase()}
                                 </h3>
                                 <Table striped bordered hover>
                                     <thead>

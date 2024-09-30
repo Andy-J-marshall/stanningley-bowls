@@ -12,7 +12,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     playerStats = playerStats.filter((player) => player.games > 0);
 
     let style: any;
-    let href: string;
+    let href: string | null;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);

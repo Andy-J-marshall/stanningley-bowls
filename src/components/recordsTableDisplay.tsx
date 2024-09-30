@@ -58,7 +58,7 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
                             </td>
                         </tr>
                     ) : null}
-                    {bestAveragePlayer && bestAverage > -27 ? (
+                    {bestAveragePlayer && bestAverage && bestAverage > -27 ? (
                         <tr>
                             <td>Best average</td>
                             <td id="bestAverage">{bestAverage.toFixed(2)}</td>

@@ -284,7 +284,7 @@ export interface TeamStats {
     teamGames: number;
     teamWins: number;
     teamLosses: number;
-    teamAvg: number;
+    teamAvg: number | null;
     teamWinPerc: number;
 }
 

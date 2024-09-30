@@ -1,5 +1,5 @@
 import { Accordion } from 'react-bootstrap';
-import { PlayerStatsTeamsProps, TeamStats } from '../types/interfaces';
+import { PlayerStatsTeamsProps } from '../types/interfaces';
 
 function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
@@ -21,7 +21,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                                         <p>Wins: {team.teamWins}</p>
                                         <p>Losses: {team.teamLosses}</p>
                                         <p>
-                                            Average: {team.teamAvg.toFixed(2)}
+                                            Average: {team.teamAvg?.toFixed(2)}
                                         </p>
                                         <p>
                                             Win percentage:{' '}
