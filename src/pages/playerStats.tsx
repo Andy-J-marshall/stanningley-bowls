@@ -112,6 +112,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
             daysPlayed.forEach((day: string) => {
+                // TODO don't need this anymore
                 const formattedDay = day.split(' (')[0].toLowerCase().trim();
                 if (teamDaysPlayed.includes(formattedDay)) {
                     anyTeamDays = true;
@@ -173,7 +174,8 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 </ListGroup>
             );
         } else {
-            return <h5>Player not found</h5>;
+            // TODO wrong when selecting all players in search
+            return <h4>Player not found</h4>;
         }
     }
 
@@ -257,7 +259,7 @@ function PlayerStats(props: DetailedPlayerStatsProps) {
                 !playerFound &&
                 !(searchedPlayerName.toLowerCase() === 'show all') && (
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found
+                        Player not found XXX
                     </h2>
                 )}
 
