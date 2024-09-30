@@ -1,5 +1,5 @@
 import { findBiggestWin } from './statsHelper';
-import config from '../config';
+import { config } from '../config';
 
 export function returnPlayerStats(playersStats: any, player: string) {
     const stats = playersStats[player];
@@ -262,13 +262,18 @@ export function returnPlayerStats(playersStats: any, player: string) {
 }
 
 export function calculatePairsPartnersCount(allPairsPartners: any) {
-    const uniquePartners = allPairsPartners.filter((partner: any, index: number) => {
-        return allPairsPartners.indexOf(partner) === index;
-    });
-    const partnersReturnObj = uniquePartners.reduce((partnerObj: any, player: any) => {
-        partnerObj[player] = { timesPaired: 0 };
-        return partnerObj;
-    }, {});
+    const uniquePartners = allPairsPartners.filter(
+        (partner: any, index: number) => {
+            return allPairsPartners.indexOf(partner) === index;
+        }
+    );
+    const partnersReturnObj = uniquePartners.reduce(
+        (partnerObj: any, player: any) => {
+            partnerObj[player] = { timesPaired: 0 };
+            return partnerObj;
+        },
+        {}
+    );
 
     allPairsPartners.forEach((partner: string) => {
         if (uniquePartners.includes(partner)) {

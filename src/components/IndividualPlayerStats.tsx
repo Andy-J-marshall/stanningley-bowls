@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ListGroup, Accordion } from 'react-bootstrap';
-import config from '../config';
+import { config } from '../config';
 import { returnPlayerStats } from '../helpers/playersHelper';
 import { capitalizeText } from '../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';

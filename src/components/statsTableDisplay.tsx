@@ -1,5 +1,5 @@
 import { Table } from 'react-bootstrap';
-import config from '../config';
+import { config } from '../config';
 import { StatsTableDisplayProps } from '../types/interfaces';
 
 function StatsTableDisplay(props: StatsTableDisplayProps) {

@@ -1,7 +1,7 @@
 import StatsTableDisplay from './statsTableDisplay';
 import PlayerStatSummary from './playerStatSummary';
 import { checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
-import config from '../config';
+import { config } from '../config';
 import { IndividualTeamStatsProps } from '../types/interfaces';
 
 function IndividualTeamStats(props: IndividualTeamStatsProps) {

@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import config from '../config';
+import { config } from '../config';
 
 function Navigation() {
     return (

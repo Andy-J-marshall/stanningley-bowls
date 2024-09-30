@@ -5,7 +5,7 @@ import Fixtures from './fixtures';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
 import eventsImg from '../images/websiteImages/carousel-05.webp';
-import config from '../config';
+import { config } from '../config';
 
 function Home() {
     return (

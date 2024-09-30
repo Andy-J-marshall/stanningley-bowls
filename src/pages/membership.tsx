@@ -1,4 +1,4 @@
-import config from '../config';
+import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
 
 const { leedsCouncilFee, bowlingPriceOnly } = config.membership;

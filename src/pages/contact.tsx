@@ -1,7 +1,7 @@
 import facebook from '../images/socials/facebook_blue.png';
 import instagram from '../images/socials/insta_blue.png';
 import email from '../images/socials/email_blue.png';
-import config from '../config';
+import { config } from '../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsIframeUrl } =
     config.socialLinks;

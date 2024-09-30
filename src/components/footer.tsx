@@ -2,7 +2,7 @@ import google from '../images/socials/maps_white.png';
 import facebook from '../images/socials/facebook_white.png';
 import instagram from '../images/socials/insta_white.png';
 import email from '../images/socials/email_white.png';
-import config from '../config';
+import { config } from '../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsUrl } =
     config.socialLinks;

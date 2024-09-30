@@ -6,7 +6,7 @@ import {
     ListGroup,
     ListGroupItem,
 } from 'react-bootstrap';
-import config from '../config';
+import { config } from '../config';
 import historicTeamImage from '../images/websiteImages/historic-team-photo.webp';
 import historicStatsImage from '../images/websiteImages/historic-stats.webp';
 import clubCupWinners from '../data/clubCupWinners.json';

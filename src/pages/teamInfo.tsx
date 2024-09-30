@@ -6,7 +6,7 @@ import satImg from '../images/websiteImages/sat-team.webp';
 import tuesImg from '../images/websiteImages/tues-team.webp';
 import wedImg from '../images/websiteImages/wed-team.webp';
 import wedPairsImg from '../images/websiteImages/wedPairs-team.webp';
-import config from '../config';
+import { config } from '../config';
 
 const { teams } = config;
 

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import IndividualTeamStats from '../components/individualTeamStats';
 import CombinedTeamStats from '../components/combinedTeamStats';
 import TeamTabs from '../components/teamTabs';
-import config from '../config';
+import { config } from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
 import { TeamStatsProps } from '../types/interfaces';
 import Wrapper from '../components/wrapper';

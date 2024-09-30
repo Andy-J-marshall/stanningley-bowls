@@ -6,7 +6,7 @@ import PlayerStatsOptions from '../components/playerStatsOptions';
 import AllTimePlayerStats from '../components/allTimePlayerStats';
 import Search from '../components/search';
 import { collatePlayerStats } from '../helpers/playersHelper';
-import config from '../config';
+import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { DetailedPlayerStatsProps } from '../types/interfaces';
