@@ -1,3 +1,5 @@
+// TODO replace some of the : any with actual types in the components
+
 export interface TeamStatsProps {
     stats: any; // TODO - type this
     statsSelectCallback: (year: string) => void;
@@ -29,7 +31,7 @@ export interface RecordsProps {
                 cupLosses: number;
                 totalAgg: number;
                 totalAggAgainst: number;
-                [key: string]: any;
+                [key: string]: any; // TODO change
             };
         };
         statsYear: string;
@@ -45,9 +47,9 @@ export interface AllTimePlayerStatsProps {
     showPairsOnly: boolean;
 }
 
-// TODO type thistoo
+// TODO type this too - team stats
 export interface CombinedTeamStatsProps {
-    stats: any;
+    stats: teamStats[];
 }
 
 export interface GameTypeButtonProps {
@@ -64,21 +66,24 @@ export interface IndividualPlayerStatsProps {
     showStatSummary: boolean;
 }
 
+export interface teamStats {
+    awayWins: number;
+    homeWins: number;
+    cupWins: number;
+    cupLosses: number;
+    awayLosses: number;
+    homeLosses: number;
+    homeDraws: number;
+    awayDraws: number;
+    agg: number;
+    opponentAgg: number;
+}
+
 export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
-    stats: {
-        awayWins: number;
-        homeWins: number;
-        cupWins: number;
-        cupLosses: number;
-        awayLosses: number;
-        homeLosses: number;
-        homeDraws: number;
-        awayDraws: number;
-        agg: number;
-        opponentAgg: number;
-    };
+    stats: teamStats;
+    // TODO change this?
     playerStats: {
         [key: string]: {
             [day: string]: {
@@ -267,23 +272,25 @@ export interface PlayerStatsWinLossesProps {
     };
 }
 
-// TODO player stats again
+// TODO can be combined with something else?
+export interface PlayerStatsSummary {
+    player: string;
+    games: number;
+    wins: number;
+    average: number | undefined;
+    singleGames?: number;
+    singlesAverage?: number;
+    singlesWins?: number;
+    pairsGames?: number;
+    pairsAverage?: number;
+    pairsWins?: number;
+    singlesWinPerc?: number;
+    pairsWinPerc?: number;
+    winPerc?: number;
+}
+
 export interface PlayerStatSummaryProps {
-    playerStats: Array<{
-        player: string;
-        games: number;
-        wins: number;
-        average: number | undefined;
-        singleGames?: number;
-        singlesAverage?: number;
-        singlesWins?: number;
-        pairsGames?: number;
-        pairsAverage?: number;
-        pairsWins?: number;
-        singlesWinPerc?: number;
-        pairsWinPerc?: number;
-        winPerc?: number;
-    }>;
+    playerStats: Array<PlayerStatsSummary>;
     callback?: (playerName: string) => void;
     showSinglesOnly?: boolean;
     showPairsOnly?: boolean;
