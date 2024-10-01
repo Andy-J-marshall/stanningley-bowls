@@ -29,7 +29,7 @@ function Results(props: ResultsProps) {
                     ? homeScoreMatch[0].trim()
                     : '';
                 const homeTeam = homePart.split(/[0-9]+/g)[0].trim();
-                const awayPart = resultParts[1].split(' (')[0];
+                const awayPart = resultParts[1];
                 const awayScoreMatch = awayPart.match(/[0-9]+/g);
                 const awayScore = awayScoreMatch
                     ? awayScoreMatch[0].trim()
