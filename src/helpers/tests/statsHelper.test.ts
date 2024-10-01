@@ -60,13 +60,13 @@ describe('#StatsHelper Tests', () => {
         });
 
         it('Empty string returned if player has no results', () => {
-            const results: Array<string> = [];
+            const results: string[] = [];
             const biggestWin = findBiggestWin(results);
             expect(biggestWin).to.equal('');
         });
 
         it('Empty string returned if player has invalid result', () => {
-            const results = ['ali 21 - roy tebbutt'];
+            const results = ['ali 21 - roy tebbutt', 'ali - 21 roy tebbutt'];
             const biggestWin = findBiggestWin(results);
             expect(biggestWin).to.equal('');
         });
