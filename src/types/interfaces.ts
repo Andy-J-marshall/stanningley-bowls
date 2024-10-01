@@ -51,16 +51,7 @@ export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
     stats: TeamStats;
-    // TODO change this?
-    playerStats: {
-        [key: string]: {
-            [day: string]: {
-                games: number;
-                wins: number;
-                aggDiff: number;
-            };
-        };
-    };
+    playerStats: PlayerResults;
 }
 
 export interface ListProps {
@@ -270,21 +261,12 @@ export interface PlayerStatsTeamsProps {
     };
 }
 
-// TODO could reuse this
-export interface PlayerStatsResultsProps {
-    stats: {
-        results: string[];
-    };
-}
-
 export interface WrapperProps {
     displayname: string;
     children: React.ReactNode;
 }
 
-// TODO could use this some where else?
-
-// TODO move non-props types to different file?
+// TODO rename some of these?
 
 export interface PlayerTeamStats {
     // TODO check naming

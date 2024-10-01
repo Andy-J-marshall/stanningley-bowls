@@ -1,13 +1,13 @@
 import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import { PlayerStatsResultsProps } from '../types/interfaces';
+import { PlayerResults } from '../types/interfaces';
 
-function PlayerStatsResults(props: PlayerStatsResultsProps) {
+function PlayerStatsResults(props: PlayerResults) {
     const stats = props.stats;
 
     const { results } = stats;
-    const resultsArray = results.map((result) => {
+    const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
 
         const teamPart = resultParts[0];
@@ -49,7 +49,8 @@ function PlayerStatsResults(props: PlayerStatsResultsProps) {
                                         <th>OPPONENT</th>
                                     </tr>
                                 </thead>
-                                {resultsArray.map((result, idx) => {
+                                {/* TODO create type for result */}
+                                {resultsArray.map((result: any, idx: number) => {
                                     const player = capitalizeText([
                                         result.team.name,
                                     ]);
