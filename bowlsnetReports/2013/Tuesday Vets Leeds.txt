@@ -18,7 +18,7 @@ Walter Stokhill     21 Roger Milner        13
            Points:   9            Points:   3 
 
                             Tue 9th Apr       
- Horsforth Woodside.         Gildersome       
+ Horsforth Woodside         Gildersome       
 John Stancliffe     21 Tony Morris         19 
 Stuart Tennant      21 Frank Tempest       13 
 Kath Bywell         21 Barry Ainsley        4 
@@ -93,7 +93,7 @@ Frank Hales         19 Colin Firth         21
            Points:   1            Points:  11 
 
                             Tue 16th Apr      
-    West Royd Pk A      Horsforth Woodside.   
+    West Royd Pk A      Horsforth Woodside   
 Eddie Stead         21 Joan Bottomley      15 
 Linda Crawford      21 Colin Davison       20 
 Bill Robson         21 Irene Stancliffe    10 
@@ -183,7 +183,7 @@ Colin Firth         21 Peter Mylan          8
            Points:  10            Points:   2 
 
                             Tue 23rd Apr      
- Horsforth Woodside.       Harehills Park     
+ Horsforth Woodside       Harehills Park     
 Colin Davison       16 Irene Cavavagh      21 
 Jean Long           21 Chris Cook           2 
 Brenda Chaffer      21 Jim Spalding        16 
@@ -258,7 +258,7 @@ Mike Sherman        21 Colin Firth         10
            Points:   9            Points:   3 
 
                             Tue 30th Apr      
-      Armley Pk         Horsforth Woodside.   
+      Armley Pk         Horsforth Woodside   
 Fred Hargreaves      6 Irene Stancliffe    21 
 Don Richards        21 Stuart Tennant      15 
 John Hayes          12 Jean Long           21 
@@ -333,7 +333,7 @@ Graham Goodall      21 Brian Hirst          4
            Points:  11            Points:   1 
 
                             Tue 7th May       
- Horsforth Woodside.      Western Flatts A    
+ Horsforth Woodside      Western Flatts A    
 Kath Bywell         21 Lillian Pickles     13 
 Brenda Chaffer      21 Barry Brown         16 
 John Stancliffe     21 Joan Crampton       10 
@@ -483,7 +483,7 @@ Colin Firth         21 Gordon Taylor        8
            Points:   7            Points:   5 
 
                             Tue 21st May      
- Horsforth Woodside.        Holbeck Moor      
+ Horsforth Woodside        Holbeck Moor      
 Stuart Tennant       9 Steve Hopper        21 
 Peggy Stoddart       8 Hilary Cambell      21 
 Joan Bottomley      10 Barbara Rowe        21 
@@ -558,7 +558,7 @@ Allan Nicholson     20 Colin Firth         21
            Points:   6            Points:   6 
 
                             Tue 28th May      
-     Middleton Pk       Horsforth Woodside.   
+     Middleton Pk       Horsforth Woodside   
 Colin Bramley       21 Joan Bottomley       4 
 Sheila Huggins      15 Peggy Stoddart      21 
 Robert Cooper       14 Irene Stancliffe    21 
@@ -618,7 +618,7 @@ Walter Stokhill     21 Steve Milton        14
            Points:   5            Points:   7 
 
                             Tue 4th Jun       
- Horsforth Woodside.       Scatcherd Pk A     
+ Horsforth Woodside       Scatcherd Pk A     
 Jean Long           19 Pauline Crabtree    21 
 Peggy Stoddart      21 Christine Smith      9 
 Kath Bywell         21 Alan Buckle         19 
@@ -678,7 +678,7 @@ Brian Hirst         14 Mike Sherman        21
            Points:   7            Points:   5 
 
                             Tue 11th Jun      
- Horsforth Woodside.     The Hollies S & SC   
+ Horsforth Woodside     The Hollies S & SC   
 Joan Bottomley      20 George Richmond     21 
 Stuart Tennant      21 Elain Hill           4 
 Irene Stancliffe    21 Ken Watkin          18 
@@ -768,7 +768,7 @@ Duncan McPhail      20 Graham Goodall      21
            Points:   8            Points:   4 
 
                             Tue 18th Jun      
-   Stanningley Pk A     Horsforth Woodside.   
+   Stanningley Pk A     Horsforth Woodside   
 Jack Roberts         6 Peggy Stoddart      21 
 Keith Worrall       21 Irene Stancliffe     9 
 Derek Wilson        21 Joan Bottomley       5 
@@ -843,7 +843,7 @@ Roger Milner        16 Walter Stokhill     21
            Points:   2            Points:  10 
 
                             Tue 2nd Jul       
-      Gildersome        Horsforth Woodside.   
+      Gildersome        Horsforth Woodside   
 Tony Morris         16 Jean Long           21 
 Patricia Cooper     15 Stuart Tennant      21 
 Frank Tempest       16 Irene Stancliffe    21 
@@ -918,7 +918,7 @@ Colin Firth         21 Derek Walker         8
            Points:   9            Points:   3 
 
                             Tue 16th Jul      
- Horsforth Woodside.       West Royd Pk A     
+ Horsforth Woodside       West Royd Pk A     
 Brenda Chaffer      10 Linda Crawford      21 
 Kath Bywell         18 Ronnie Whitham      21 
 Irene Stancliffe    21 Ken Lee             19 
@@ -1008,7 +1008,7 @@ Eddie Stead         17 Graham Goodall      21
            Points:   9            Points:   3 
 
                             Tue 23rd Jul      
-    Harehills Park      Horsforth Woodside.   
+    Harehills Park      Horsforth Woodside   
 Alan Hall           10 Kath Bywell         21 
 Paddy Glover        21 Jean Long           16 
 Colin Kelly         21 Peggy Stoddart       6 
@@ -1083,7 +1083,7 @@ Graham Goodall      21 Jim Jordan          17
            Points:   9            Points:   3 
 
                             Tue 30th Jul      
- Horsforth Woodside.         Armley Pk        
+ Horsforth Woodside         Armley Pk        
 Brenda Chaffer      16 Arthur Senior       21 
 Peggy Stoddart      21 Shirley Bromley      8 
 Jean Long           21 Brian Hirst         16 
@@ -1158,7 +1158,7 @@ David Hurd          21 Graham Goodall      20
            Points:   6            Points:   6 
 
                             Tue 6th Aug       
-   Western Flatts A     Horsforth Woodside.   
+   Western Flatts A     Horsforth Woodside   
 Lillian Pickles     12 Jean Long           21 
 Hazel Goodall       21 Colin Davison       10 
 Barry Brown         17 Brenda Chaffer      21 
@@ -1308,7 +1308,7 @@ Shirley Sandilands   3 Graham Goodall      21
            Points:   5            Points:   7 
 
                             Tue 27th Aug      
-     Holbeck Moor       Horsforth Woodside.   
+     Holbeck Moor       Horsforth Woodside   
 Trevor Crawford     21 Kath Bywell         13 
 Pat Parker          21 Jean Long           14 
 Steve Hopper        21 Peggy Stoddart      17 
@@ -1383,7 +1383,7 @@ Colin Firth         13 Brian Thompson      21
            Points:   6            Points:   6 
 
                             Tue 3rd Sep       
- Horsforth Woodside.        Middleton Pk      
+ Horsforth Woodside        Middleton Pk      
 Joan Bottomley      21 Robert Cooper        7 
 Irene Stancliffe    21 Valerie Darwin       8 
 Jean Long           21 Geoffrey Barber      8 
@@ -1443,7 +1443,7 @@ Brian Thompson      13 Duncan McPhail      21
            Points:   8            Points:   4 
 
                             Tue 10th Sep      
-    Scatcherd Pk A      Horsforth Woodside.   
+    Scatcherd Pk A      Horsforth Woodside   
 Margaret Saunders   21 Jean Long            6 
 John Crabtree       21 Joan Bottomley       7 
 Geoff Firth         21 Kath Bywell          0 
@@ -1503,7 +1503,7 @@ Mike Sherman        21 Eric Oakley          9
            Points:  11            Points:   1 
 
                             Tue 17th Sep      
-  The Hollies S & SC    Horsforth Woodside.   
+  The Hollies S & SC    Horsforth Woodside   
 Ken Watkin          21 Stuart Tennant      12 
 Elain Hill          21 Joan Bottomley       4 
 Margaret Stockhill  18 Brian Dowling       21 
@@ -1593,7 +1593,7 @@ Colin Firth         18 Duncan McPhail      21
            Points:   9            Points:   3 
 
                             Tue 24th Sep      
- Horsforth Woodside.      Stanningley Pk A    
+ Horsforth Woodside      Stanningley Pk A    
 Irene Stancliffe    21 Jack Roberts         6 
 Stuart Tennant      21 Brian Chamberlain   18 
 Peggy Stoddart      21 Geoff Lee            7 

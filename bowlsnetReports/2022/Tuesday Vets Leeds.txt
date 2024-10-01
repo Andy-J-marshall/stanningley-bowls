@@ -16,7 +16,7 @@ Peter Crowther     18 Steve Milton       21
           Points:  38           Points:  27 
 
                           Tue 19th Apr      
-     Barwick BC        Horsforth Woodside.  
+     Barwick BC        Horsforth Woodside  
 Margaret Finister  15 Colin Davison      21 
 David Wright       21 Brian Dowling      19 
 Pam Binns          21 Graham Hey          6 
@@ -55,7 +55,7 @@ John Manson        20 David Howard       21
           Points:  35           Points:  21 
 
                           Tue 26th Apr      
- Horsforth Woodside.    Stanningley Park    
+ Horsforth Woodside    Stanningley Park    
 Colin Davison       8 Jim Moorin         21 
 Kath Hey            8 Shirley Biancardo  21 
 Stuart Tennant     10 John Armitage      21 
@@ -121,7 +121,7 @@ Bill Robson        21 Cedric Briggs      18
           Points:  39           Points:  22 
 
                            Tue 3rd May      
-  Harehills Park A     Horsforth Woodside.  
+  Harehills Park A     Horsforth Woodside  
 Paul Lawson        21 Graham Hey         10 
 Jim Jordan         21 Stuart Tennant      3 
 Graham Hodder      21 Carol Matthews     14 
@@ -147,7 +147,7 @@ Steve Caley        21 Kevin Smales       20
           Points:  33           Points:  30 
 
                           Tue 10th May      
- Horsforth Woodside.     Western Flatts     
+ Horsforth Woodside     Western Flatts     
 Colin Davison      17 Terry Blakeley     21 
 Ian Tindal         21 Lillian Pickles     8 
 Brian Dowling      13 Joan Crampton      21 
@@ -200,7 +200,7 @@ Keith Worrall      14 Mario Biancardo    21
           Points:  13           Points:  40 
 
                           Tue 17th May      
-   West Royd Park      Horsforth Woodside.  
+   West Royd Park      Horsforth Woodside  
 Ron Witham         21 Colin Davison      16 
 John Hainsworth    21 Brian Dowling      12 
 Martin McGowan     16 Stuart Tennant     21 
@@ -252,7 +252,7 @@ Terry Blakeley     21 Jeff Binns         12
           Points:  29           Points:  30 
 
                           Tue 24th May      
- Horsforth Woodside.      Holbeck Moor      
+ Horsforth Woodside      Holbeck Moor      
 Brian Dowling      21 Pat Parker         17 
 Stuart Tennant      9 Hilary Campbell    21 
 Brenda Chaffer     21 Frank Armitage     11 
@@ -331,7 +331,7 @@ Steve Milton        9 Ralph Taylor       21
           Points:  13           Points:  40 
 
                           Tue 31st May      
-     Gildersome        Horsforth Woodside.  
+     Gildersome        Horsforth Woodside  
 Clifford Pitts     17 Colin Davison      21 
 Bob Bearpark       21 Brian Dowling      16 
 Archie McCafferty   8 Carol Matthews     21 
@@ -383,7 +383,7 @@ Paul Lawson        21 Terry Blakeley      6
        Aggregate: 155        Aggregate:  67 
 
                           Tue 14th Jun      
- Horsforth Woodside.       New Armley       
+ Horsforth Woodside       New Armley       
 Colin Davison      21 Carol Robinson     10 
 Brian Dowling      21 Marion Worrall     10 
 Ray Rundle          6 Cedric Briggs      21 
@@ -501,7 +501,7 @@ Jeff Warburton     21 Peter Crowther      8
           Points:  38           Points:  22 
 
                           Tue 28th Jun      
- Horsforth Woodside.       Barwick BC       
+ Horsforth Woodside       Barwick BC       
 Colin Davison      20 Derek Dobson       21 
 Stuart Tennant     12 Pam Binns          21 
 Carol Matthews     12 David Wright       21 
@@ -568,7 +568,7 @@ Bill Robson        21 Keith Worrall      20
 
       Clegg Cup            Tue 5th Jul      
      Qtr-Finals         On Western Flatts   
-     Gildersome        Horsforth Woodside.  
+     Gildersome        Horsforth Woodside  
 Kevin Smales       17 Graham Hey         21 
 Clifford Pitts     19 Brian Dowling      21 
 David Rawson       12 Colin Davison      21 
@@ -593,7 +593,7 @@ Steve Brown        21 Margaret Finister   6
        Aggregate: 118        Aggregate: 142 
 
                           Tue 12th Jul      
-  Stanningley Park     Horsforth Woodside.  
+  Stanningley Park     Horsforth Woodside  
 Shirley Biancardo  21 Graham Hey         17 
 John Armitage      21 Colin Davison       3 
 Steve Gardner      21 Ian Tindal          7 
@@ -645,7 +645,7 @@ Pam Binns          21 Hugh Callard        7
           Points:  34           Points:  23 
 
                           Tue 26th Jul      
-   Western Flatts      Horsforth Woodside.  
+   Western Flatts      Horsforth Woodside  
 Ken Stockhill      21 Brenda Chaffer     12 
 Lillian Pickles     8 Brian Dowling      21 
 Eddie Siberry       8 David Hurd         21 
@@ -711,7 +711,7 @@ Ralph Taylor        8 Christine Robson   21
 
       Clegg Cup            Tue 2nd Aug      
      Semi-Finals         On Holbeck Moor    
- Horsforth Woodside.       Barwick BC       
+ Horsforth Woodside       Barwick BC       
 Carol Matthews     15 Pam Binns          21 
 Graham Hey          5 Derek Dobson       21 
 Colin Davison      19 Jack Finister      21 
@@ -723,7 +723,7 @@ David Lyons        15 Margaret Finister  21
        Aggregate: 126        Aggregate: 154 
 
                            Tue 9th Aug      
- Horsforth Woodside.     West Royd Park     
+ Horsforth Woodside     West Royd Park     
 David Hurd         21 John Hainsworth    10 
 Carol Matthews     18 Christine Robson   21 
 Colin Davison      21 Ron Witham         16 
@@ -776,7 +776,7 @@ Margaret Finister  17 Terry Blakeley     21
           Points:  35           Points:  26 
 
                           Tue 16th Aug      
-    Holbeck Moor       Horsforth Woodside.  
+    Holbeck Moor       Horsforth Woodside  
 Pat Parker         19 David Lyons        21 
 Jim Barker          8 David Hurd         21 
 Graham Dunwell      9 Colin Davison      21 
@@ -854,7 +854,7 @@ Graham Hodder      21 Arthur Hutchinson  20
           Points:  40           Points:  11 
 
                           Tue 23rd Aug      
- Horsforth Woodside.       Gildersome       
+ Horsforth Woodside       Gildersome       
 David Lyons        21 Archie McCafferty   2 
 Stuart Tennant     21 David Rawson       13 
 Brian Dowling      16 Frank Tempest      21 
@@ -933,7 +933,7 @@ Steve Milton        5 Paul Bowes         21
 
                            Tue 6th Sep      
                          On Armley Park     
-     New Armley        Horsforth Woodside.  
+     New Armley        Horsforth Woodside  
 Carol Robinson     21 Brian Dowling       1 
 Gordon Sadler      21 Stuart Tennant      9 
 Marion Worrall      3 Graham Hey         21 
@@ -1011,7 +1011,7 @@ Kevin Smales       21 David Wright       13
           Points:  24           Points:  32 
 
                           Tue 20th Sep      
- Horsforth Woodside.    Harehills Park A    
+ Horsforth Woodside    Harehills Park A    
 Carol Matthews     21 Jim Jordan         14 
 Brian Dowling      13 Paul Lawson        21 
 Graham Hey          2 Tony Green         21 
