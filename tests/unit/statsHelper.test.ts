@@ -51,20 +51,20 @@ describe('#StatsHelper Tests', () => {
             expect(biggestWin).to.equal('21 - 10');
         });
 
-        it('Null returned if player has no wins', () => {
+        it('Empty string returned if player has no wins', () => {
             const results = [
                 "ali 20 - 21 leslie strang ('A')",
                 'ali 13 - 21 shirley biancardo',
                 'ali 0 - 21 roy tebbutt',
             ];
             const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.be.null;
+            expect(biggestWin).to.equal('');
         });
 
-        it('Null returned if player has no results', () => {
+        it('Empty string returned if player has no results', () => {
             const results: Array<string> = [];
             const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.be.null;
+            expect(biggestWin).to.equal('');
         });
     });
 
@@ -73,6 +73,10 @@ describe('#StatsHelper Tests', () => {
             teamResults: [
                 {
                     day: 'Monday Combined Leeds',
+                    wins: 13,
+                    draws: 3,
+                    losses: 3,
+                    totalGamesPlayed: 19,
                     awayWins: 5,
                     homeWins: 7,
                     awayLosses: 2,
@@ -106,6 +110,10 @@ describe('#StatsHelper Tests', () => {
                 },
                 {
                     day: 'Tuesday Vets Leeds',
+                    wins: 10,
+                    draws: 1,
+                    losses: 2,
+                    totalGamesPlayed: 13,
                     awayWins: 4,
                     homeWins: 6,
                     awayLosses: 1,
@@ -133,6 +141,10 @@ describe('#StatsHelper Tests', () => {
                 },
                 {
                     day: 'Thursday Vets Leeds',
+                    wins: 6,
+                    draws: 0,
+                    losses: 4,
+                    totalGamesPlayed: 10,
                     awayWins: 2,
                     homeWins: 4,
                     awayLosses: 3,
@@ -159,6 +171,10 @@ describe('#StatsHelper Tests', () => {
                 },
                 {
                     day: 'Saturday Leeds',
+                    wins: 14,
+                    draws: 0,
+                    losses: 1,
+                    totalGamesPlayed: 15,
                     awayWins: 6,
                     homeWins: 7,
                     awayLosses: 0,
