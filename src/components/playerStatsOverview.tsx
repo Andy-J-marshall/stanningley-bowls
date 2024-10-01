@@ -1,9 +1,9 @@
 import { Accordion } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import List from './list';
-import { PlayerResults } from '../types/interfaces';
+import { AggregatedStats } from '../types/interfaces';
 
-function PlayerStatsOverview(props: PlayerResults) {
+function PlayerStatsOverview(props: AggregatedStats) {
     const stats = props.stats;
 
     const {

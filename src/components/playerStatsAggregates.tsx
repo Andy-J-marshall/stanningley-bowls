@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
-import { PlayerResults } from '../types/interfaces';
+import { AggregatedStats } from '../types/interfaces';
 
-function PlayerStatsAggregates(props: PlayerResults) {
+function PlayerStatsAggregates(props: AggregatedStats) {
     const stats = props.stats;
 
     const {
