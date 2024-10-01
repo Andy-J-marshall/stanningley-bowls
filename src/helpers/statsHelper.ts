@@ -59,18 +59,24 @@ export function combineTeamStats(statsArray: any[]) {
     };
 }
 
-export function findBiggestWin(playerResults: any): any {
-    let bestWin = null;
+export function findBiggestWin(playerResults: string[]): string {
+    let bestWin = '';
     if (playerResults) {
         let bestWinMargin = 0;
-        playerResults.forEach((result: any) => {
+        playerResults.forEach((result) => {
             const resultParts = result.split(' - ', 2);
 
             const teamPart = resultParts[0];
-            const teamScore = teamPart.match(/[0-9]+/g)[0].trim();
+            const teamScoreMatch = teamPart.match(/[0-9]+/g);
+            const teamScore = teamScoreMatch
+                ? parseInt(teamScoreMatch[0].trim())
+                : 0;
 
             const opponentPart = resultParts[1].split(' (')[0];
-            const opponentScore = opponentPart.match(/[0-9]+/g)[0].trim();
+            const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
+            const opponentScore = opponentScoreMatch
+                ? parseInt(opponentScoreMatch[0].trim())
+                : 1000; // Ensures invalid scores are not considered
 
             const scoreDiff = teamScore - opponentScore;
             if (scoreDiff > 0 && scoreDiff > bestWinMargin) {
