@@ -21,7 +21,7 @@ function Results(props: ResultsProps) {
 
     if (teamResults) {
         resultsArray = teamResults.map((team) => {
-            const results = team.results.map((result) => {
+            const results = team.results.map((result: string) => {
                 const resultParts = result.split(' - ');
                 const homePart = resultParts[0];
                 const homeScoreMatch = homePart.match(/[0-9]+/g);
@@ -85,7 +85,8 @@ function Results(props: ResultsProps) {
                                             </tr>
                                         </thead>
                                         {resultTeam.results.map(
-                                            (result, idx) => {
+                                            // TODO set this type
+                                            (result: any, idx: number) => {
                                                 let homeTeam =
                                                     result.home.homeTeam;
                                                 let awayTeam =

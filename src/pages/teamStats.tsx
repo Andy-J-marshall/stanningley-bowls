@@ -31,7 +31,7 @@ function TeamStats(props: TeamStatsProps) {
             // Find A team stats
             for (const team of teamData.teamNames) {
                 const tn = team.toLowerCase();
-                const ts = teamResults.find((teamResult: any) => {
+                const ts = teamResults?.find((teamResult: any) => {
                     return teamResult.day.toLowerCase() === tn;
                 });
 
@@ -44,7 +44,7 @@ function TeamStats(props: TeamStatsProps) {
                 }
 
                 // Check for a team with an (a) suffix if no team found
-                const tsWithASuffix = teamResults.find((teamResult: any) => {
+                const tsWithASuffix = teamResults?.find((teamResult: any) => {
                     return teamResult.day.toLowerCase() === tn + ' (a)';
                 });
                 if (tsWithASuffix && tsWithASuffix.totalGamesPlayed > 0) {
@@ -58,7 +58,7 @@ function TeamStats(props: TeamStatsProps) {
             let bTeamStats = null;
             let bTeamInLeague = false;
             if (teamData.bTeamForLeagueBool) {
-                bTeamStats = teamResults.find((teamResult: any) => {
+                bTeamStats = teamResults?.find((teamResult: any) => {
                     return (
                         teamResult.day.toLowerCase() ===
                         teamName.replace(' (a)', '') + ' (b)'

@@ -7,13 +7,7 @@ export interface TeamStatsProps {
 }
 
 export interface ResultsProps {
-    stats: {
-        teamResults: Array<{
-            day: string;
-            results: string[];
-        }>;
-        lastUpdated: string;
-    };
+    stats: FullStats;
     statsCallback: (year: string) => void;
     yearToDisplay: string;
 }
@@ -127,12 +121,11 @@ export interface PlayerStatsProps {
     };
 }
 
-// TODO can type this
 export interface DetailedPlayerStatsProps {
-    combinedStats: any;
-    stats: any;
-    statsForEveryYearArray: any[];
-    combinedStatsForEveryYearArray: any[];
+    stats: FullStats;
+    combinedStats: FullStats;
+    statsForEveryYearArray: FullStats[];
+    combinedStatsForEveryYearArray: FullStats[];
 }
 
 export interface YearSelectDropdownProps {
@@ -185,50 +178,8 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
-// TODO player stats again
 export interface PlayerStatsWinLossesProps {
-    stats: {
-        awayLosses: number;
-        homeLosses: number;
-        pairLosses: number;
-        cupLosses: number;
-        totalLosses: number;
-        pairHomeLosses: number;
-        pairAwayLosses: number;
-        pairCupLosses: number;
-        homeWins: number;
-        awayWins: number;
-        cupWins: number;
-        pairWins: number;
-        totalWins: number;
-        pairHomeWins: number;
-        pairAwayWins: number;
-        pairCupWins: number;
-        gamesPlayed: number;
-        homeGamesPlayed: number;
-        awayGamesPlayed: number;
-        pairHomeGamesPlayed: number;
-        pairAwayGamesPlayed: number;
-        pairCupGamesPlayed: number;
-        cupGamesPlayed: number;
-        singlesGames: number;
-        pairsGames: number;
-        pairsPartnersCount: Record<string, { timesPaired: number }>;
-        pairsPartnersCountWins: Record<string, { timesPaired: number }>;
-        pairsPartnersCountLosses: Record<string, { timesPaired: number }>;
-        average: number;
-        homeAverage: number;
-        awayAverage: number;
-        cupAverage: number;
-        singlesAvg: number;
-        pairsAvg: number;
-        singlesHomeAverage: number;
-        singlesAwayAverage: number;
-        singlesCupAverage: number;
-        pairsHomeAverage: number;
-        pairsAwayAverage: number;
-        pairsCupAverage: number;
-    };
+    stats: PlayerResults;
 }
 
 // TODO can be combined with something else?
@@ -268,6 +219,7 @@ export interface WrapperProps {
 
 // TODO rename some of these?
 
+// TODO this is from playerHelpers file
 export interface PlayerTeamStats {
     // TODO check naming
     teamName: string;
@@ -280,9 +232,9 @@ export interface PlayerTeamStats {
 
 export interface FullStats {
     playerResults: PlayerResults;
-
-    teamResults: any[]; // TODO change
+    teamResults?: any[]; // TODO change
     statsYear: string;
+    lastUpdated: string;
 }
 
 export interface PlayerResults {
