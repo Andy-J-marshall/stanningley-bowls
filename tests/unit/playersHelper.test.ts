@@ -3,7 +3,7 @@ import {
     returnPlayerStats,
     calculatePairsPartnersCount,
     checkWinPercAndAverageAreNumbers,
-} from '../../helpers/playersHelper';
+} from '../../src/helpers/playersHelper';
 
 describe('#Players Tests', () => {
     describe('#calculatePairsPartnersCount()', () => {
