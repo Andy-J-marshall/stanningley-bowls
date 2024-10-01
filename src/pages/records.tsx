@@ -352,7 +352,7 @@ function Records(props: RecordsProps) {
 
     if (mostGames > 0) {
         return (
-            <div id="records">
+            <div className="center page-component" id="records">
                 <h1>{yearInTitle} RECORDS</h1>
                 <TeamTabs
                     allCombinedComponent={combinedRecordsComponent()}
@@ -362,7 +362,7 @@ function Records(props: RecordsProps) {
         );
     } else {
         return (
-            <div className="center">
+            <div className="center page-component">
                 <h1>{yearInTitle} RECORDS</h1>
                 <p>No games played</p>
             </div>
