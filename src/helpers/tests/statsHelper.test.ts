@@ -1,8 +1,5 @@
 import { expect } from 'chai';
-import {
-    combineTeamStats,
-    findBiggestWin,
-} from '../../src/helpers/statsHelper';
+import { combineTeamStats, findBiggestWin } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
     describe('#findBiggestWin()', () => {
@@ -68,9 +65,7 @@ describe('#StatsHelper Tests', () => {
         });
 
         it('Empty string returned if player has invalid result', () => {
-            const results = [
-                'ali 21 - roy tebbutt',
-            ];
+            const results = ['ali 21 - roy tebbutt'];
             const biggestWin = findBiggestWin(results);
             expect(biggestWin).to.equal('');
         });

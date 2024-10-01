@@ -3,8 +3,8 @@ import {
     returnPlayerStats,
     calculatePairsPartnersCount,
     checkWinPercAndAverageAreNumbers,
-} from '../../src/helpers/playersHelper';
-import stats2022 from '../../src/data/bowlsStats2022.json'
+} from '../playersHelper';
+import stats2022 from '../../data/bowlsStats2022.json';
 
 describe('#Players Tests', () => {
     describe('#calculatePairsPartnersCount()', () => {

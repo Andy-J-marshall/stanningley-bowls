@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { returnTabName } from '../../src/helpers/teamsHelper';
+import { returnTabName } from '../teamsHelper';
 
 describe('returnTabName', () => {
     it('should return the display name without any modifications', () => {
