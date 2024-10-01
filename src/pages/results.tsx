@@ -85,8 +85,7 @@ function Results(props: ResultsProps) {
                                             </tr>
                                         </thead>
                                         {resultTeam.results.map(
-                                            // TODO set this type
-                                            (result: any, idx: number) => {
+                                            (result, idx) => {
                                                 let homeTeam =
                                                     result.home.homeTeam;
                                                 let awayTeam =

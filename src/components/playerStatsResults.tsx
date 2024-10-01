@@ -49,8 +49,7 @@ function PlayerStatsResults(props: AggregatedStats) {
                                         <th>OPPONENT</th>
                                     </tr>
                                 </thead>
-                                {/* TODO create type for result */}
-                                {resultsArray.map((result: any, idx: number) => {
+                                {resultsArray.map((result, idx) => {
                                     const player = capitalizeText([
                                         result.team.name,
                                     ]);

@@ -1,5 +1,3 @@
-// TODO replace some of the : any with actual types in the components
-
 export interface TeamStatsProps {
     stats: FullStatsFile;
     statsSelectCallback: (year: string) => void;

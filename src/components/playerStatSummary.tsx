@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatSummaryProps } from '../types/interfaces';
@@ -11,7 +11,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
     playerStats = playerStats.filter((player) => player.games > 0);
 
-    let style: any;
+    let style: CSSProperties;
     let href: string | undefined;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);

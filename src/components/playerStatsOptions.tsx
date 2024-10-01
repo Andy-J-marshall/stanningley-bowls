@@ -21,8 +21,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setKey(playerSearchedFor);
         }
     });
-
-    function toggleAllTeamStats(event: any) {
+    function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
@@ -58,7 +57,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         onlyPairsCallback(false);
     }
 
-    function toggleAllYearStats(event: any) {
+    function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allYearStatsToggle = event.currentTarget.checked;
         setAllYearToggle(allYearStatsToggle);
         allYearStatsCallback(allYearStatsToggle);
