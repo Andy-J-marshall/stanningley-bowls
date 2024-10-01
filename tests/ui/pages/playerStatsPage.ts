@@ -1,5 +1,11 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { PlayerStats } from '../../../src/types/interfaces';
+
+export interface PlayerStatsToCheck {
+    totalGamesPlayed: number;
+    totalWins: number;
+    totalLosses: number;
+    totalAverage: number;
+}
 
 export class PlayerStatsPage {
     private readonly page: Page;
@@ -170,7 +176,7 @@ export class PlayerStatsPage {
         await expect(this.totalPlayerCount).toBeHidden();
     }
 
-    async validateSummaryStats(playerStats: PlayerStats) {
+    async validateSummaryStats(playerStats: PlayerStatsToCheck) {
         await expect(this.totalGamesPlayed).toHaveText(
             `Games played: ${playerStats.totalGamesPlayed}`
         );

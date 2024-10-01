@@ -1,5 +1,5 @@
 export interface TeamStatsProps {
-    stats: any;
+    stats: any; // TODO - type this
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
@@ -16,6 +16,7 @@ export interface ResultsProps {
     yearToDisplay: string;
 }
 
+// TODO stats is the same as TeamStatsProps?
 export interface RecordsProps {
     stats: {
         playerResults: {
@@ -37,12 +38,14 @@ export interface RecordsProps {
     yearToDisplay: string;
 }
 
+// TODO statsArray is same as stats in RecordsProps?
 export interface AllTimePlayerStatsProps {
     statsArray: Array<any>;
     showSinglesOnly: boolean;
     showPairsOnly: boolean;
 }
 
+// TODO type thistoo
 export interface CombinedTeamStatsProps {
     stats: any;
 }
@@ -53,6 +56,7 @@ export interface GameTypeButtonProps {
     displayPairsCallback: () => void;
 }
 
+// TODO playerStats will be same as PlayerStatsProps?
 export interface IndividualPlayerStatsProps {
     player: string;
     playersStats: any;
@@ -90,6 +94,7 @@ export interface ListProps {
     stringArray: string[];
 }
 
+// TODO can reuse this?
 export interface PlayerStatsAggregatesProps {
     stats: {
         totalAgg: number;
@@ -146,6 +151,7 @@ export interface PlayerStatsOptionsProps {
     playerSearchedFor: string;
 }
 
+// TODO duplicate again
 export interface PlayerStatsProps {
     stats: {
         totalLosses: number;
@@ -157,6 +163,7 @@ export interface PlayerStatsProps {
     };
 }
 
+// TODO can type this
 export interface DetailedPlayerStatsProps {
     combinedStats: any;
     stats: any;
@@ -174,6 +181,7 @@ export interface TeamTabsProps {
     teamComponents: Array<React.ReactElement<{ displayname: string }>>;
 }
 
+// TODO this same as teamStatsProps?
 export interface StatsTableDisplayProps {
     totalGames: number;
     totalWins: number;
@@ -213,6 +221,7 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
+// TODO player stats again
 export interface PlayerStatsWinLossesProps {
     stats: {
         awayLosses: number;
@@ -258,6 +267,7 @@ export interface PlayerStatsWinLossesProps {
     };
 }
 
+// TODO player stats again
 export interface PlayerStatSummaryProps {
     playerStats: Array<{
         player: string;
@@ -279,6 +289,7 @@ export interface PlayerStatSummaryProps {
     showPairsOnly?: boolean;
 }
 
+// TODO could use this some where else?
 export interface TeamStats {
     teamName: string;
     teamGames: number;
@@ -288,23 +299,18 @@ export interface TeamStats {
     teamWinPerc: number;
 }
 
+// TODO could reuse this
 export interface PlayerStatsTeamsProps {
     stats: {
         allTeamStats: TeamStats[];
     };
 }
 
+// TODO could reuse this
 export interface PlayerStatsResultsProps {
     stats: {
         results: string[];
     };
-}
-
-export interface PlayerStats {
-    totalGamesPlayed: number;
-    totalWins: number;
-    totalLosses: number;
-    totalAverage: number;
 }
 
 export interface WrapperProps {
