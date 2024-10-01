@@ -66,6 +66,14 @@ describe('#StatsHelper Tests', () => {
             const biggestWin = findBiggestWin(results);
             expect(biggestWin).to.equal('');
         });
+
+        it('Empty string returned if player has invalid result', () => {
+            const results = [
+                'ali 21 - roy tebbutt',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('');
+        });
     });
 
     describe('#CombinedTeamStats()', () => {
