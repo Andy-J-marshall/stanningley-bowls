@@ -1,13 +1,13 @@
 import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import { PlayerStatsResultsProps } from '../types/interfaces';
+import { AggregatedStats } from '../types/interfaces';
 
-function PlayerStatsResults(props: PlayerStatsResultsProps) {
+function PlayerStatsResults(props: AggregatedStats) {
     const stats = props.stats;
 
     const { results } = stats;
-    const resultsArray = results.map((result) => {
+    const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
 
         const teamPart = resultParts[0];

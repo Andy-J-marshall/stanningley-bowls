@@ -1,6 +1,6 @@
 {
   "extension": ["ts"],
-  "spec": "tests/unit/*.test.ts",  
+  "spec": "src/helpers/tests/*.test.ts",  
   "diff": true,
   "package": "./package.json",
   "reporter": "spec",

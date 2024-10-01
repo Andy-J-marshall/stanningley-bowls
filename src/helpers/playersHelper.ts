@@ -1,7 +1,14 @@
 import { findBiggestWin } from './statsHelper';
 import { config } from '../config';
+import {
+    PlayerResultsStatsFile,
+    PlayerStatsSummary,
+} from '../types/interfaces';
 
-export function returnPlayerStats(playersStats: any, player: string) {
+export function returnPlayerStats(
+    playersStats: PlayerResultsStatsFile,
+    player: string
+) {
     const stats = playersStats[player];
     if (!stats) {
         return null;
@@ -109,8 +116,8 @@ export function returnPlayerStats(playersStats: any, player: string) {
         };
     });
 
-    let allTeamsPlayedFor: any = [];
-    dayPlayed.forEach((day: any) => {
+    let allTeamsPlayedFor: string[] = [];
+    dayPlayed.forEach((day: string) => {
         if (!allTeamsPlayedFor.includes(day)) {
             allTeamsPlayedFor.push(day);
         }
@@ -261,14 +268,14 @@ export function returnPlayerStats(playersStats: any, player: string) {
     };
 }
 
-export function calculatePairsPartnersCount(allPairsPartners: any) {
+export function calculatePairsPartnersCount(allPairsPartners: string[]) {
     const uniquePartners = allPairsPartners.filter(
-        (partner: any, index: number) => {
+        (partner, index) => {
             return allPairsPartners.indexOf(partner) === index;
         }
     );
     const partnersReturnObj = uniquePartners.reduce(
-        (partnerObj: any, player: any) => {
+        (partnerObj: any, player: string) => {
             partnerObj[player] = { timesPaired: 0 };
             return partnerObj;
         },
@@ -308,8 +315,11 @@ export function checkWinPercAndAverageAreNumbers(stats: any) {
     return verifiedStats;
 }
 
-export function collatePlayerStats(statsToUse: any, players: string[]) {
-    const statsArray: any = [];
+export function collatePlayerStats(
+    statsToUse: PlayerResultsStatsFile,
+    players: string[]
+) {
+    const statsArray: PlayerStatsSummary[] = [];
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {

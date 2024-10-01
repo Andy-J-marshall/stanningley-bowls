@@ -4,7 +4,10 @@ import {
     returnPlayerStats,
     checkWinPercAndAverageAreNumbers,
 } from '../helpers/playersHelper';
-import { AllTimePlayerStatsProps } from '../types/interfaces';
+import {
+    AllTimePlayerStatsProps,
+    PlayerStatsSummary,
+} from '../types/interfaces';
 
 function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
     const statsArray = props.statsArray;
@@ -12,7 +15,7 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
     const showPairsOnlyBool = props.showPairsOnly;
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
-    const statsToDisplayArray: any = [];
+    const statsToDisplayArray: PlayerStatsSummary[] = [];
     let playerNames: string[] = [];
 
     statsArray.forEach((stat) => {
@@ -91,7 +94,7 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
 
     useEffect(() => {
         const playersWithGames = statsToDisplayArray.filter(
-            (player: any) => player.games > 0
+            (player) => player.games > 0
         );
         setTotalPlayersUsed(playersWithGames.length);
     });

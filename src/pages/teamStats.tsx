@@ -4,7 +4,7 @@ import CombinedTeamStats from '../components/combinedTeamStats';
 import TeamTabs from '../components/teamTabs';
 import { config } from '../config';
 import { returnTabName } from '../helpers/teamsHelper';
-import { TeamStatsProps } from '../types/interfaces';
+import { TeamResultsStatsFile, TeamStatsProps } from '../types/interfaces';
 import Wrapper from '../components/wrapper';
 
 function TeamStats(props: TeamStatsProps) {
@@ -31,9 +31,11 @@ function TeamStats(props: TeamStatsProps) {
             // Find A team stats
             for (const team of teamData.teamNames) {
                 const tn = team.toLowerCase();
-                const ts = teamResults.find((teamResult: any) => {
-                    return teamResult.day.toLowerCase() === tn;
-                });
+                const ts = teamResults?.find(
+                    (teamResult: TeamResultsStatsFile) => {
+                        return teamResult.day.toLowerCase() === tn;
+                    }
+                );
 
                 if (ts) {
                     if (ts.totalGamesPlayed > 0) {
@@ -44,9 +46,11 @@ function TeamStats(props: TeamStatsProps) {
                 }
 
                 // Check for a team with an (a) suffix if no team found
-                const tsWithASuffix = teamResults.find((teamResult: any) => {
-                    return teamResult.day.toLowerCase() === tn + ' (a)';
-                });
+                const tsWithASuffix = teamResults?.find(
+                    (teamResult: TeamResultsStatsFile) => {
+                        return teamResult.day.toLowerCase() === tn + ' (a)';
+                    }
+                );
                 if (tsWithASuffix && tsWithASuffix.totalGamesPlayed > 0) {
                     teamStats = tsWithASuffix;
                     teamName = tn;
@@ -58,19 +62,21 @@ function TeamStats(props: TeamStatsProps) {
             let bTeamStats = null;
             let bTeamInLeague = false;
             if (teamData.bTeamForLeagueBool) {
-                bTeamStats = teamResults.find((teamResult: any) => {
-                    return (
-                        teamResult.day.toLowerCase() ===
-                        teamName.replace(' (a)', '') + ' (b)'
-                    );
-                });
+                bTeamStats = teamResults?.find(
+                    (teamResult: TeamResultsStatsFile) => {
+                        return (
+                            teamResult.day.toLowerCase() ===
+                            teamName.replace(' (a)', '') + ' (b)'
+                        );
+                    }
+                );
                 bTeamInLeague = true;
             }
 
             if (teamStats || bTeamStats) {
                 if (
-                    teamStats.totalGamesPlayed > 0 ||
-                    bTeamStats.totalGamesPlayed > 0
+                    (teamStats && teamStats.totalGamesPlayed > 0) ||
+                    (bTeamStats && bTeamStats.totalGamesPlayed > 0)
                 ) {
                     return (
                         <Wrapper

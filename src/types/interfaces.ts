@@ -1,50 +1,29 @@
 export interface TeamStatsProps {
-    stats: any;
+    stats: FullStatsFile;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface ResultsProps {
-    stats: {
-        teamResults: Array<{
-            day: string;
-            results: string[];
-        }>;
-        lastUpdated: string;
-    };
+    stats: FullStatsFile;
     statsCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface RecordsProps {
-    stats: {
-        playerResults: {
-            [key: string]: {
-                awayWins: number;
-                homeWins: number;
-                cupWins: number;
-                awayLosses: number;
-                homeLosses: number;
-                cupLosses: number;
-                totalAgg: number;
-                totalAggAgainst: number;
-                [key: string]: any;
-            };
-        };
-        statsYear: string;
-    };
+    stats: FullStatsFile;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface AllTimePlayerStatsProps {
-    statsArray: Array<any>;
+    statsArray: FullStatsFile[];
     showSinglesOnly: boolean;
     showPairsOnly: boolean;
 }
 
 export interface CombinedTeamStatsProps {
-    stats: any;
+    stats: TeamResultsStatsFile[];
 }
 
 export interface GameTypeButtonProps {
@@ -55,7 +34,7 @@ export interface GameTypeButtonProps {
 
 export interface IndividualPlayerStatsProps {
     player: string;
-    playersStats: any;
+    playersStats: PlayerResultsStatsFile;
     name: string;
     showStatSummary: boolean;
 }
@@ -63,79 +42,12 @@ export interface IndividualPlayerStatsProps {
 export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
-    stats: {
-        awayWins: number;
-        homeWins: number;
-        cupWins: number;
-        cupLosses: number;
-        awayLosses: number;
-        homeLosses: number;
-        homeDraws: number;
-        awayDraws: number;
-        agg: number;
-        opponentAgg: number;
-    };
-    playerStats: {
-        [key: string]: {
-            [day: string]: {
-                games: number;
-                wins: number;
-                aggDiff: number;
-            };
-        };
-    };
+    stats: TeamResultsStatsFile;
+    playerStats: PlayerResultsStatsFile;
 }
 
 export interface ListProps {
     stringArray: string[];
-}
-
-export interface PlayerStatsAggregatesProps {
-    stats: {
-        totalAgg: number;
-        totalAggAgainst: number;
-        totalPairsAgg: number;
-        totalPairsAggAgainst: number;
-        totalHomeAgg: number;
-        totalHomeAggAgainst: number;
-        totalAwayAgg: number;
-        totalAwayAggAgainst: number;
-        singlesAgg: number;
-        singlesAggAgainst: number;
-        totalPairsHomeAgg: number;
-        totalPairsHomeAggAgainst: number;
-        totalPairsAwayAgg: number;
-        totalPairsAwayAggAgainst: number;
-        totalPairsCupAgg: number;
-        totalPairsCupAggAgainst: number;
-        totalSinglesHomeAgg: number;
-        totalSinglesHomeAggAgainst: number;
-        totalSinglesAwayAgg: number;
-        totalSinglesAwayAggAgainst: number;
-        totalSinglesCupAgg: number;
-        totalSinglesCupAggAgainst: number;
-        cupAgg: number;
-        cupAggAgainst: number;
-        homeGamesPlayed: number;
-        awayGamesPlayed: number;
-        singlesHomeGamesPlayed: number;
-        singlesAwayGamesPlayed: number;
-        singlesCupGamesPlayed: number;
-        pairHomeGamesPlayed: number;
-        pairAwayGamesPlayed: number;
-        pairCupGamesPlayed: number;
-        cupGamesPlayed: number;
-        pairsGames: number;
-        singlesGames: number;
-        availableAgg: number;
-        availablePairsAgg: number;
-        availableHomeAgg: number;
-        availableAwayAgg: number;
-        availableCupAgg: number;
-        availablePairsHomeAgg: number;
-        availablePairsAwayAgg: number;
-        availablePairsCupAgg: number;
-    };
 }
 
 export interface PlayerStatsOptionsProps {
@@ -147,21 +59,10 @@ export interface PlayerStatsOptionsProps {
 }
 
 export interface PlayerStatsProps {
-    stats: {
-        totalLosses: number;
-        totalWins: number;
-        gamesPlayed: number;
-        average: number;
-        allTeamsPlayedFor: string[];
-        biggestWin: string;
-    };
-}
-
-export interface DetailedPlayerStatsProps {
-    combinedStats: any;
-    stats: any;
-    statsForEveryYearArray: any[];
-    combinedStatsForEveryYearArray: any[];
+    stats: FullStatsFile;
+    combinedStats: FullStatsFile;
+    statsForEveryYearArray: FullStatsFile[];
+    combinedStatsForEveryYearArray: FullStatsFile[];
 }
 
 export interface YearSelectDropdownProps {
@@ -171,7 +72,7 @@ export interface YearSelectDropdownProps {
 
 export interface TeamTabsProps {
     allCombinedComponent: React.ReactNode;
-    teamComponents: Array<React.ReactElement<{ displayname: string }>>;
+    teamComponents: React.ReactElement<{ displayname: string }>[];
 }
 
 export interface StatsTableDisplayProps {
@@ -213,8 +114,143 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
-export interface PlayerStatsWinLossesProps {
+export interface PlayerStatsSummary {
+    player: string;
+    games: number;
+    wins: number;
+    average: number | undefined;
+    singleGames?: number;
+    singlesAverage?: number;
+    singlesWins?: number;
+    pairsGames?: number;
+    pairsAverage?: number;
+    pairsWins?: number;
+    singlesWinPerc?: number;
+    pairsWinPerc?: number;
+    winPerc?: number;
+}
+
+export interface PlayerStatSummaryProps {
+    playerStats: PlayerStatsSummary[];
+    callback?: (playerName: string) => void;
+    showSinglesOnly?: boolean;
+    showPairsOnly?: boolean;
+}
+
+export interface WrapperProps {
+    displayname: string;
+    children: React.ReactNode;
+}
+
+export interface PlayerStatsTeamsProps {
     stats: {
+        allTeamStats: {
+            teamName: string;
+            teamGames: number;
+            teamWins: number;
+            teamLosses: number;
+            teamAvg: number | null;
+            teamWinPerc: number;
+        }[];
+    };
+}
+
+export interface FullStatsFile {
+    playerResults: PlayerResultsStatsFile;
+    teamResults?: TeamResultsStatsFile[];
+    statsYear: string;
+    lastUpdated: string;
+}
+
+export interface PlayerResultsStatsFile {
+    [key: string]: {
+        totalAgg: number;
+        totalAggAgainst: number;
+        availableAgg: number;
+        availablePairsAgg: number;
+        availableHomeAgg: number;
+        availableAwayAgg: number;
+        availablePairsHomeAgg: number;
+        availablePairsAwayAgg: number;
+        totalPairsAgg: number;
+        totalPairsAggAgainst: number;
+        totalHomeAgg: number;
+        totalHomeAggAgainst: number;
+        totalPairsHomeAgg: number;
+        totalPairsHomeAggAgainst: number;
+        totalAwayAgg: number;
+        totalAwayAggAgainst: number;
+        totalPairsAwayAgg: number;
+        totalPairsAwayAggAgainst: number;
+        homeWins: number;
+        homeLosses: number;
+        awayWins: number;
+        awayLosses: number;
+        cupWins: number;
+        cupLosses: number;
+        pairWins: number;
+        pairLosses: number;
+        pairHomeWins: number;
+        pairHomeLosses: number;
+        pairAwayWins: number;
+        pairAwayLosses: number;
+        pairCupWins: number;
+        pairCupLosses: number;
+        totalGamesPlayed: number;
+        dayPlayed: string[];
+        pairsPartners: string[];
+        winningPairsPartners: string[];
+        losingPairsPartners: string[];
+        results: string[];
+        [key: string]: any;
+    };
+}
+
+export interface TeamResultsStatsFile {
+    day: string;
+    awayWins: number;
+    homeWins: number;
+    wins: number;
+    awayLosses: number;
+    homeLosses: number;
+    homeDraws: number;
+    awayDraws: number;
+    draws: number;
+    cupWins: number;
+    cupLosses: number;
+    losses: number;
+    totalGamesPlayed: number;
+    agg: number;
+    opponentAgg: number;
+    results: string[];
+}
+
+export interface AggregatedStats {
+    stats: {
+        totalAgg: number;
+        totalAggAgainst: number;
+        totalPairsAgg: number;
+        totalPairsAggAgainst: number;
+        totalHomeAgg: number;
+        totalHomeAggAgainst: number;
+        totalAwayAgg: number;
+        totalAwayAggAgainst: number;
+        singlesAgg: number;
+        singlesAggAgainst: number;
+        totalPairsHomeAgg: number;
+        totalPairsHomeAggAgainst: number;
+        totalPairsAwayAgg: number;
+        totalPairsAwayAggAgainst: number;
+        totalPairsCupAgg: number;
+        totalPairsCupAggAgainst: number;
+        totalSinglesHomeAgg: number;
+        totalSinglesHomeAggAgainst: number;
+        totalSinglesAwayAgg: number;
+        totalSinglesAwayAggAgainst: number;
+        totalSinglesCupAgg: number;
+        totalSinglesCupAggAgainst: number;
+        cupAgg: number;
+        cupAggAgainst: number;
         awayLosses: number;
         homeLosses: number;
         pairLosses: number;
@@ -234,15 +270,15 @@ export interface PlayerStatsWinLossesProps {
         gamesPlayed: number;
         homeGamesPlayed: number;
         awayGamesPlayed: number;
+        singlesHomeGamesPlayed: number;
+        singlesAwayGamesPlayed: number;
+        singlesCupGamesPlayed: number;
         pairHomeGamesPlayed: number;
         pairAwayGamesPlayed: number;
         pairCupGamesPlayed: number;
         cupGamesPlayed: number;
-        singlesGames: number;
         pairsGames: number;
-        pairsPartnersCount: Record<string, { timesPaired: number }>;
-        pairsPartnersCountWins: Record<string, { timesPaired: number }>;
-        pairsPartnersCountLosses: Record<string, { timesPaired: number }>;
+        singlesGames: number;
         average: number;
         homeAverage: number;
         awayAverage: number;
@@ -255,59 +291,20 @@ export interface PlayerStatsWinLossesProps {
         pairsHomeAverage: number;
         pairsAwayAverage: number;
         pairsCupAverage: number;
-    };
-}
-
-export interface PlayerStatSummaryProps {
-    playerStats: Array<{
-        player: string;
-        games: number;
-        wins: number;
-        average: number | undefined;
-        singleGames?: number;
-        singlesAverage?: number;
-        singlesWins?: number;
-        pairsGames?: number;
-        pairsAverage?: number;
-        pairsWins?: number;
-        singlesWinPerc?: number;
-        pairsWinPerc?: number;
-        winPerc?: number;
-    }>;
-    callback?: (playerName: string) => void;
-    showSinglesOnly?: boolean;
-    showPairsOnly?: boolean;
-}
-
-export interface TeamStats {
-    teamName: string;
-    teamGames: number;
-    teamWins: number;
-    teamLosses: number;
-    teamAvg: number | null;
-    teamWinPerc: number;
-}
-
-export interface PlayerStatsTeamsProps {
-    stats: {
-        allTeamStats: TeamStats[];
-    };
-}
-
-export interface PlayerStatsResultsProps {
-    stats: {
+        allTeamStats: any;
+        allTeamsPlayedFor: any;
+        pairsPartnersCount: any;
+        pairsPartnersCountWins: any;
+        pairsPartnersCountLosses: any;
+        biggestWin: string;
         results: string[];
+        availableAgg: number;
+        availablePairsAgg: number;
+        availableHomeAgg: number;
+        availableAwayAgg: number;
+        availableCupAgg: number;
+        availablePairsHomeAgg: number;
+        availablePairsAwayAgg: number;
+        availablePairsCupAgg: number;
     };
-}
-
-export interface PlayerStats {
-    totalGamesPlayed: number;
-    totalWins: number;
-    totalLosses: number;
-    totalAverage: number;
-}
-
-export interface WrapperProps {
-    displayname: string;
-    children: React.ReactNode;
 }
