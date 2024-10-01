@@ -9,9 +9,9 @@ import { collatePlayerStats } from '../helpers/playersHelper';
 import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import { DetailedPlayerStatsProps } from '../types/interfaces';
+import { PlayerStatsProps } from '../types/interfaces';
 
-function PlayerStats(props: DetailedPlayerStatsProps) {
+function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
     const stats = props.stats;
     const statsForEveryYearArray = props.statsForEveryYearArray;

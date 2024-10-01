@@ -52,55 +52,6 @@ export interface ListProps {
     stringArray: string[];
 }
 
-// TODO can reuse this?
-export interface PlayerStatsAggregatesProps {
-    stats: {
-        totalAgg: number;
-        totalAggAgainst: number;
-        totalPairsAgg: number;
-        totalPairsAggAgainst: number;
-        totalHomeAgg: number;
-        totalHomeAggAgainst: number;
-        totalAwayAgg: number;
-        totalAwayAggAgainst: number;
-        singlesAgg: number;
-        singlesAggAgainst: number;
-        totalPairsHomeAgg: number;
-        totalPairsHomeAggAgainst: number;
-        totalPairsAwayAgg: number;
-        totalPairsAwayAggAgainst: number;
-        totalPairsCupAgg: number;
-        totalPairsCupAggAgainst: number;
-        totalSinglesHomeAgg: number;
-        totalSinglesHomeAggAgainst: number;
-        totalSinglesAwayAgg: number;
-        totalSinglesAwayAggAgainst: number;
-        totalSinglesCupAgg: number;
-        totalSinglesCupAggAgainst: number;
-        cupAgg: number;
-        cupAggAgainst: number;
-        homeGamesPlayed: number;
-        awayGamesPlayed: number;
-        singlesHomeGamesPlayed: number;
-        singlesAwayGamesPlayed: number;
-        singlesCupGamesPlayed: number;
-        pairHomeGamesPlayed: number;
-        pairAwayGamesPlayed: number;
-        pairCupGamesPlayed: number;
-        cupGamesPlayed: number;
-        pairsGames: number;
-        singlesGames: number;
-        availableAgg: number;
-        availablePairsAgg: number;
-        availableHomeAgg: number;
-        availableAwayAgg: number;
-        availableCupAgg: number;
-        availablePairsHomeAgg: number;
-        availablePairsAwayAgg: number;
-        availablePairsCupAgg: number;
-    };
-}
-
 export interface PlayerStatsOptionsProps {
     allTeamStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
@@ -109,19 +60,7 @@ export interface PlayerStatsOptionsProps {
     playerSearchedFor: string;
 }
 
-// TODO duplicate again
 export interface PlayerStatsProps {
-    stats: {
-        totalLosses: number;
-        totalWins: number;
-        gamesPlayed: number;
-        average: number;
-        allTeamsPlayedFor: string[];
-        biggestWin: string;
-    };
-}
-
-export interface DetailedPlayerStatsProps {
     stats: FullStats;
     combinedStats: FullStats;
     statsForEveryYearArray: FullStats[];
