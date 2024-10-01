@@ -1,4 +1,6 @@
-export function combineTeamStats(statsArray: any[]) {
+import { TeamResultsStatsFile } from "../types/interfaces";
+
+export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     let combinedAwayWins = 0;
     let combinedHomeWins = 0;
     let combinedCupWins = 0;
@@ -10,7 +12,7 @@ export function combineTeamStats(statsArray: any[]) {
     let combinedAgg = 0;
     let combinedOpponentAgg = 0;
 
-    statsArray.forEach((stats: any) => {
+    statsArray.forEach((stats) => {
         const {
             awayWins,
             homeWins,

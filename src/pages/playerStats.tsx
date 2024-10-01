@@ -9,7 +9,7 @@ import { collatePlayerStats } from '../helpers/playersHelper';
 import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import { PlayerStatsProps } from '../types/interfaces';
+import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -36,7 +36,10 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray = collatePlayerStats(statsToUse, players);
+    const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
+        statsToUse,
+        players
+    );
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
@@ -49,7 +52,7 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         const playersWithGames = statsToDisplayArray.filter(
-            (player: any) => player.games > 0
+            (player) => player.games > 0
         );
         setTotalPlayersUsed(playersWithGames.length);
 
@@ -180,10 +183,10 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function returnStatsTable() {
         const gamesPlayedThisYear = statsToDisplayArray.find(
-            (player: any) => player.games > 0
+            (player) => player.games > 0
         );
         const pairsGamesThisYear = statsToDisplayArray.find(
-            (player: any) => player.pairsGames > 0
+            (player) => player.pairsGames && player.pairsGames > 0
         );
 
         if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {

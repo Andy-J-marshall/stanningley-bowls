@@ -116,8 +116,8 @@ export function returnPlayerStats(
         };
     });
 
-    let allTeamsPlayedFor: any = [];
-    dayPlayed.forEach((day: any) => {
+    let allTeamsPlayedFor: string[] = [];
+    dayPlayed.forEach((day: string) => {
         if (!allTeamsPlayedFor.includes(day)) {
             allTeamsPlayedFor.push(day);
         }
@@ -268,14 +268,14 @@ export function returnPlayerStats(
     };
 }
 
-export function calculatePairsPartnersCount(allPairsPartners: any) {
+export function calculatePairsPartnersCount(allPairsPartners: string[]) {
     const uniquePartners = allPairsPartners.filter(
-        (partner: any, index: number) => {
+        (partner, index) => {
             return allPairsPartners.indexOf(partner) === index;
         }
     );
     const partnersReturnObj = uniquePartners.reduce(
-        (partnerObj: any, player: any) => {
+        (partnerObj: any, player: string) => {
             partnerObj[player] = { timesPaired: 0 };
             return partnerObj;
         },
