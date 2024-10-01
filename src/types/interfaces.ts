@@ -1,7 +1,7 @@
 // TODO replace some of the : any with actual types in the components
 
 export interface TeamStatsProps {
-    stats: any; // TODO - type this
+    stats: FullStats;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
@@ -18,38 +18,20 @@ export interface ResultsProps {
     yearToDisplay: string;
 }
 
-// TODO stats is the same as TeamStatsProps?
 export interface RecordsProps {
-    stats: {
-        playerResults: {
-            [key: string]: {
-                awayWins: number;
-                homeWins: number;
-                cupWins: number;
-                awayLosses: number;
-                homeLosses: number;
-                cupLosses: number;
-                totalAgg: number;
-                totalAggAgainst: number;
-                [key: string]: any; // TODO change
-            };
-        };
-        statsYear: string;
-    };
+    stats: FullStats;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
-// TODO statsArray is same as stats in RecordsProps?
 export interface AllTimePlayerStatsProps {
-    statsArray: Array<any>;
+    statsArray: Array<FullStats>;
     showSinglesOnly: boolean;
     showPairsOnly: boolean;
 }
 
-// TODO type this too - team stats
 export interface CombinedTeamStatsProps {
-    stats: teamStats[];
+    stats: TeamStats[];
 }
 
 export interface GameTypeButtonProps {
@@ -58,31 +40,17 @@ export interface GameTypeButtonProps {
     displayPairsCallback: () => void;
 }
 
-// TODO playerStats will be same as PlayerStatsProps?
 export interface IndividualPlayerStatsProps {
     player: string;
-    playersStats: any;
+    playersStats: PlayerResults;
     name: string;
     showStatSummary: boolean;
-}
-
-export interface teamStats {
-    awayWins: number;
-    homeWins: number;
-    cupWins: number;
-    cupLosses: number;
-    awayLosses: number;
-    homeLosses: number;
-    homeDraws: number;
-    awayDraws: number;
-    agg: number;
-    opponentAgg: number;
 }
 
 export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
-    stats: teamStats;
+    stats: TeamStats;
     // TODO change this?
     playerStats: {
         [key: string]: {
@@ -296,20 +264,9 @@ export interface PlayerStatSummaryProps {
     showPairsOnly?: boolean;
 }
 
-// TODO could use this some where else?
-export interface TeamStats {
-    teamName: string;
-    teamGames: number;
-    teamWins: number;
-    teamLosses: number;
-    teamAvg: number | null;
-    teamWinPerc: number;
-}
-
-// TODO could reuse this
 export interface PlayerStatsTeamsProps {
     stats: {
-        allTeamStats: TeamStats[];
+        allTeamStats: PlayerTeamStats[];
     };
 }
 
@@ -323,4 +280,56 @@ export interface PlayerStatsResultsProps {
 export interface WrapperProps {
     displayname: string;
     children: React.ReactNode;
+}
+
+// TODO could use this some where else?
+
+// TODO move non-props types to different file?
+
+export interface PlayerTeamStats {
+    // TODO check naming
+    teamName: string;
+    teamGames: number;
+    teamWins: number;
+    teamLosses: number;
+    teamAvg: number | null;
+    teamWinPerc: number;
+}
+
+export interface FullStats {
+    playerResults: PlayerResults;
+
+    teamResults: any[]; // TODO change
+    statsYear: string;
+}
+
+export interface PlayerResults {
+    [key: string]: any;
+    // e.g.
+    // {
+    //     [key: string]: {
+    //         awayWins: number;
+    //         homeWins: number;
+    //         cupWins: number;
+    //         awayLosses: number;
+    //         homeLosses: number;
+    //         cupLosses: number;
+    //         totalAgg: number;
+    //         totalAggAgainst: number;
+    //         [key: string]: any; // TODO change
+    //     };
+    // };
+}
+
+export interface TeamStats {
+    awayWins: number;
+    homeWins: number;
+    cupWins: number;
+    cupLosses: number;
+    awayLosses: number;
+    homeLosses: number;
+    homeDraws: number;
+    awayDraws: number;
+    agg: number;
+    opponentAgg: number;
 }
