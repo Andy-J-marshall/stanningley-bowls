@@ -1,8 +1,14 @@
 import { findBiggestWin } from './statsHelper';
 import { config } from '../config';
-import { PlayerResults, PlayerStatsSummary } from '../types/interfaces';
+import {
+    PlayerResultsStatsFile,
+    PlayerStatsSummary,
+} from '../types/interfaces';
 
-export function returnPlayerStats(playersStats: PlayerResults, player: string) {
+export function returnPlayerStats(
+    playersStats: PlayerResultsStatsFile,
+    player: string
+) {
     const stats = playersStats[player];
     if (!stats) {
         return null;
@@ -309,7 +315,10 @@ export function checkWinPercAndAverageAreNumbers(stats: any) {
     return verifiedStats;
 }
 
-export function collatePlayerStats(statsToUse: PlayerResults, players: string[]) {
+export function collatePlayerStats(
+    statsToUse: PlayerResultsStatsFile,
+    players: string[]
+) {
     const statsArray: PlayerStatsSummary[] = [];
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);

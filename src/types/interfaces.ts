@@ -1,31 +1,31 @@
 // TODO replace some of the : any with actual types in the components
 
 export interface TeamStatsProps {
-    stats: FullStats;
+    stats: FullStatsFile;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface ResultsProps {
-    stats: FullStats;
+    stats: FullStatsFile;
     statsCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface RecordsProps {
-    stats: FullStats;
+    stats: FullStatsFile;
     statsSelectCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
 export interface AllTimePlayerStatsProps {
-    statsArray: FullStats[];
+    statsArray: FullStatsFile[];
     showSinglesOnly: boolean;
     showPairsOnly: boolean;
 }
 
 export interface CombinedTeamStatsProps {
-    stats: TeamStats[];
+    stats: TeamResultsStatsFile[];
 }
 
 export interface GameTypeButtonProps {
@@ -36,7 +36,7 @@ export interface GameTypeButtonProps {
 
 export interface IndividualPlayerStatsProps {
     player: string;
-    playersStats: PlayerResults;
+    playersStats: PlayerResultsStatsFile;
     name: string;
     showStatSummary: boolean;
 }
@@ -44,8 +44,8 @@ export interface IndividualPlayerStatsProps {
 export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
-    stats: TeamStats;
-    playerStats: PlayerResults;
+    stats: TeamResultsStatsFile;
+    playerStats: PlayerResultsStatsFile;
 }
 
 export interface ListProps {
@@ -61,10 +61,10 @@ export interface PlayerStatsOptionsProps {
 }
 
 export interface PlayerStatsProps {
-    stats: FullStats;
-    combinedStats: FullStats;
-    statsForEveryYearArray: FullStats[];
-    combinedStatsForEveryYearArray: FullStats[];
+    stats: FullStatsFile;
+    combinedStats: FullStatsFile;
+    statsForEveryYearArray: FullStatsFile[];
+    combinedStatsForEveryYearArray: FullStatsFile[];
 }
 
 export interface YearSelectDropdownProps {
@@ -139,34 +139,32 @@ export interface PlayerStatSummaryProps {
     showPairsOnly?: boolean;
 }
 
-export interface PlayerStatsTeamsProps {
-    stats: {
-        allTeamStats: PlayerTeamStats[];
-    };
-}
-
 export interface WrapperProps {
     displayname: string;
     children: React.ReactNode;
 }
 
-export interface PlayerTeamStats {
-    teamName: string;
-    teamGames: number;
-    teamWins: number;
-    teamLosses: number;
-    teamAvg: number | null;
-    teamWinPerc: number;
+export interface PlayerStatsTeamsProps {
+    stats: {
+        allTeamStats: {
+            teamName: string;
+            teamGames: number;
+            teamWins: number;
+            teamLosses: number;
+            teamAvg: number | null;
+            teamWinPerc: number;
+        }[];
+    };
 }
 
-export interface FullStats {
-    playerResults: PlayerResults;
-    teamResults?: TeamResults[];
+export interface FullStatsFile {
+    playerResults: PlayerResultsStatsFile;
+    teamResults?: TeamResultsStatsFile[];
     statsYear: string;
     lastUpdated: string;
 }
 
-export interface PlayerResults {
+export interface PlayerResultsStatsFile {
     [key: string]: {
         totalAgg: number;
         totalAggAgainst: number;
@@ -210,20 +208,7 @@ export interface PlayerResults {
     };
 }
 
-export interface TeamStats {
-    awayWins: number;
-    homeWins: number;
-    cupWins: number;
-    cupLosses: number;
-    awayLosses: number;
-    homeLosses: number;
-    homeDraws: number;
-    awayDraws: number;
-    agg: number;
-    opponentAgg: number;
-}
-
-export interface TeamResults {
+export interface TeamResultsStatsFile {
     day: string;
     awayWins: number;
     homeWins: number;
