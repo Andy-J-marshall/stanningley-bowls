@@ -3,7 +3,7 @@
 === Complete List
 
                           Tue 14th Apr      
-    Middleton Pk       Horsforth Woodside.  
+    Middleton Pk       Horsforth Woodside  
 Robert Cooper      13 Mike Froggatt      21 
 Marjorie Kay       17 Irene Stancliffe   21 
 Jean Cooper        10 David Lyons        21 
@@ -168,7 +168,7 @@ David Broadbent     4 Brian Thompson     21
           Points:   2           Points:  10 
 
                           Tue 28th Apr      
-  Western Flatts A     Horsforth Woodside.  
+  Western Flatts A     Horsforth Woodside  
 Eddie Sidberry     20 Mike Froggatt      21 
 Doreen Hunter      14 Irene Stancliffe   21 
 Keith Hunter       21 David Lyons        11 
@@ -213,7 +213,7 @@ Brian Thompson     21 Stewart Watson     18
           Points:   9           Points:   3 
 
                            Tue 5th May      
- Horsforth Woodside.        Armley Pk       
+ Horsforth Woodside        Armley Pk       
 Mike Froggatt       7 Arthur Senior      21 
 Irene Stancliffe   21 Betty Hirst        13 
 Kath Bywell        21 Alison Stocks      16 
@@ -273,7 +273,7 @@ Mike Sherman       21 Brian Thompson     14
           Points:   9           Points:   3 
 
                           Tue 12th May      
-  Stanningley Pk A     Horsforth Woodside.  
+  Stanningley Pk A     Horsforth Woodside  
 Adam Sandilands    18 Ian Tindal         21 
 Bernard Miller     21 Irene Stancliffe    4 
 Marion Worrall     21 Colin Davison      19 
@@ -333,7 +333,7 @@ David Burns        21 Steven Ballance    17
           Points:   9           Points:   3 
 
                           Tue 19th May      
- Horsforth Woodside.     Harehills Park     
+ Horsforth Woodside     Harehills Park     
 Brenda Chaffer     15 Paddy Glover       21 
 Irene Stancliffe   16 Ray Dixon          21 
 John Stancliffe    16 Ken Jordan         21 
@@ -468,7 +468,7 @@ Bob Davison        21 Mike Sherman       13
           Points:   4           Points:   8 
 
                            Tue 2nd Jun      
- Horsforth Woodside.       Gildersome       
+ Horsforth Woodside       Gildersome       
 Irene Stancliffe   21 Tony Morris        15 
 John Stancliffe    21 Patricia Cooper    17 
 Stuart Tennant     21 Ron Burton          2 
@@ -543,7 +543,7 @@ Dennis Wainwright  21 Brian Thompson     19
           Points:   4           Points:   8 
 
                            Tue 9th Jun      
- Horsforth Woodside.     West Royd Pk A     
+ Horsforth Woodside     West Royd Pk A     
 Mike Froggatt      18 Ron Witham         21 
 Colin Davison      21 Aubrey Coldrey     15 
 David Lyons        10 Colin Whitley      21 
@@ -603,7 +603,7 @@ David Burns        21 Norman Shaw        17
           Points:   8           Points:   4 
 
                           Tue 16th Jun      
- The Hollies S & SC    Horsforth Woodside.  
+ The Hollies S & SC    Horsforth Woodside  
 John Lambert       21 Mike Froggatt      10 
 Elaine Hill        12 Irene Stancliffe   21 
 Shirley Biancardo  21 David Lyons        18 
@@ -648,7 +648,7 @@ Bob Davison        19 Don Shaw           21
           Points:   1           Points:  11 
 
                           Tue 23rd Jun      
- Horsforth Woodside.      Holbeck Moor      
+ Horsforth Woodside      Holbeck Moor      
 Brenda Chaffer     21 Colin Batterham     4 
 Kath Bywell        21 Barbara Rowe       18 
 Jean Long          21 Brian Alderson     13 
@@ -678,7 +678,7 @@ Derek Walker       21 Walter Stockhill   20
           Points:   4           Points:   8 
 
                           Tue 30th Jun      
- Horsforth Woodside.      Middleton Pk      
+ Horsforth Woodside      Middleton Pk      
 Mike Froggatt      21 Yvonne Heseltine    4 
 David Lyons        21 Marjorie Kay       12 
 Kath Bywell        21 Fred Leckenby      10 
@@ -828,7 +828,7 @@ George Richmond    21 Stewart Watson     10
           Points:  10           Points:   2 
 
                           Tue 21st Jul      
- Horsforth Woodside.    Western Flatts A    
+ Horsforth Woodside    Western Flatts A    
 Kath Bywell        21 Lillian Pickles     6 
 Irene Stancliffe   21 Joan Crampton      16 
 David Lyons        21 Cedric Ash         20 
@@ -888,7 +888,7 @@ Keith Worrall      10 David Burns        21
           Points:   4           Points:   8 
 
                           Tue 28th Jul      
-      Armley Pk        Horsforth Woodside.  
+      Armley Pk        Horsforth Woodside  
 Arthur Senior       9 Irene Stancliffe   21 
 Norman Forsyth      5 David Lyons        21 
 Alison Stocks      21 Kath Bywell         1 
@@ -948,7 +948,7 @@ Brian Thompson     21 Mike Sherman       15
           Points:   5           Points:   7 
 
                            Tue 4th Aug      
- Horsforth Woodside.    Stanningley Pk A    
+ Horsforth Woodside    Stanningley Pk A    
 Irene Stancliffe    2 Jim Moorin         21 
 Mike Froggatt      17 Ken Walker         21 
 Kath Bywell        21 Gordon Taylor       5 
@@ -1008,7 +1008,7 @@ Marjorie Kay       10 Brian Thompson     21
           Points:   2           Points:  10 
 
                           Tue 11th Aug      
-   Harehills Park      Horsforth Woodside.  
+   Harehills Park      Horsforth Woodside  
 Paddy Glover       12 John Stancliffe    21 
 Jim Spalding       21 David Lyons        14 
 Irene Cavavagh     16 Kath Bywell        21 
@@ -1143,7 +1143,7 @@ Mike Sherman       13 Lillian Pickles    21
           Points:   9           Points:   3 
 
                           Tue 25th Aug      
-     Gildersome        Horsforth Woodside.  
+     Gildersome        Horsforth Woodside  
 Patricia Cooper    13 Kath Bywell        21 
 David Rawson       12 Irene Stancliffe   21 
 Phillip Lucas      21 David Lyons        17 
@@ -1218,7 +1218,7 @@ Steve Milton       21 Dennis Wainwright  16
           Points:   9           Points:   3 
 
                            Tue 1st Sep      
-   West Royd Pk A      Horsforth Woodside.  
+   West Royd Pk A      Horsforth Woodside  
 Eddie Stead        21 John Stancliffe    14 
 Ron Witham         21 Brenda Chaffer     20 
 Linda Crawford     21 Kath Bywell        15 
@@ -1278,7 +1278,7 @@ Dave Norris        14 David Burns        21
           Points:   9           Points:   3 
 
                            Tue 8th Sep      
- Horsforth Woodside.   The Hollies S & SC   
+ Horsforth Woodside   The Hollies S & SC   
 Kath Bywell        19 Shirley Biancardo  21 
 David Lyons        21 Ken Watkin         16 
 Irene Stancliffe   21 Carol Robinson     16 
@@ -1323,7 +1323,7 @@ Stewart Watson     18 Terry Blakeley     21
           Points:   4           Points:   8 
 
                           Tue 15th Sep      
-    Holbeck Moor       Horsforth Woodside.  
+    Holbeck Moor       Horsforth Woodside  
 Hilary Campbell    15 Kath Bywell        21 
 Barbara Rowe       21 Colin Davison      16 
 Graham Dunwell     19 Irene Stancliffe   21 

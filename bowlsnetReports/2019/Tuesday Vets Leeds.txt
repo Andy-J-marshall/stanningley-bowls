@@ -16,7 +16,7 @@ Jim Jordan          21 Dennis Wainwright   10
            Points:  35            Points:  22 
 
                             Tue 9th Apr       
-    Western Flatts      Horsforth Woodside.   
+    Western Flatts      Horsforth Woodside   
 Keith Hunter        13 David Lyons         21 
 Granville Stoyles   15 Shirley Biancardo   21 
 Steve Caley         21 Kath Hey            20 
@@ -68,7 +68,7 @@ Brian Thompson      21 Len Robinson        17
            Points:  40            Points:  16 
 
                             Tue 16th Apr      
- Horsforth Woodside.       Harehills Park     
+ Horsforth Woodside       Harehills Park     
 Mario Biancardo     21 Carl Mahon           9 
 Shirley Biancardo   21 Tony Boyes          19 
 Colin Davison       21 Paddy Glover        11 
@@ -120,7 +120,7 @@ Bob Bearpark        21 Steve Milton        17
            Points:  33            Points:  26 
 
                             Tue 23rd Apr      
-      Gildersome        Horsforth Woodside.   
+      Gildersome        Horsforth Woodside   
 Patricia Cooper      9 Shirley Biancardo   21 
 David Rawson         9 David Lyons         21 
 Dougie Cooper       18 Ian Tindal          21 
@@ -237,7 +237,7 @@ Len Robinson        11 Margaret McPhail    21
            Points:  28            Points:  35 
 
                             Tue 30th Apr      
- Horsforth Woodside.        Holbeck Moor      
+ Horsforth Woodside        Holbeck Moor      
 Graham Hey          21 Allan Nicholson     15 
 Kath Hey            11 Arthur Hutchinson   21 
 Mario Biancardo     21 Steve Milton         9 
@@ -250,7 +250,7 @@ Jean Long           21 George Ellener      20
            Points:  32            Points:  31 
 
                             Tue 7th May       
- Horsforth Woodside.          Cranmore        
+ Horsforth Woodside          Cranmore        
 Jean Long           21 Harry Gillett       16 
 Shirley Biancardo   21 Graham Bluff        13 
 Stuart Tennant      21 Jeoff Higgins       16 
@@ -328,7 +328,7 @@ Norman Shaw         15 Eric Massey         21
            Points:  36            Points:  26 
 
                             Tue 14th May      
-   Stanningley Park     Horsforth Woodside.   
+   Stanningley Park     Horsforth Woodside   
 Jim Moorin          21 Ian Tindal          19 
 Don Shaw            21 Stuart Tennant      12 
 Derek Wilson        21 Graham Hey          20 
@@ -393,7 +393,7 @@ Jeoff Higgins        6 Stewart Watson      21
            Points:  16            Points:  39 
 
                             Tue 21st May      
- Horsforth Woodside.         New Armley       
+ Horsforth Woodside         New Armley       
 Shirley Biancardo   21 Marion Worrall       6 
 Kath Hey            21 David Johnson       19 
 David Lyons         21 John Lambert         9 
@@ -471,7 +471,7 @@ David Plaskitt      21 Dennis Wainwright    9
            Points:  37            Points:  23 
 
                             Tue 28th May      
-    West Royd Park      Horsforth Woodside.   
+    West Royd Park      Horsforth Woodside   
 Colin Whitley       19 Shirley Biancardo   21 
 Norman Shaw         21 Ian Tindal           8 
 Christine Robson    21 Colin Davison        6 
@@ -536,7 +536,7 @@ Graham Bluff        21 Norman Shaw         17
            Points:  31            Points:  29 
 
                             Tue 4th Jun       
- Horsforth Woodside.         Barwick BC       
+ Horsforth Woodside         Barwick BC       
 Mario Biancardo     17 Pam Binns           21 
 Shirley Biancardo   21 David Plaskitt      11 
 Colin Davison       17 Jack Finister       21 
@@ -588,7 +588,7 @@ John Ackroyd        12 Tony Boyes          21
            Points:  20            Points:  39 
 
                             Tue 11th Jun      
- Horsforth Woodside.       Western Flatts     
+ Horsforth Woodside       Western Flatts     
 Mario Biancardo     21 John Manson         12 
 Shirley Biancardo   21 Granville Stoyles   12 
 Colin Davison       14 Cedric Ash          21 
@@ -654,7 +654,7 @@ Graham Bluff        18 Norman Shaw         21
 
       Clegg Cup             Tue 18th Jun      
         Prelim          On Stanningley Park   
-      New Armley        Horsforth Woodside.   
+      New Armley        Horsforth Woodside   
 David Johnson        8 Shirley Biancardo   21 
 Dorothy Ford         7 Mike Froggatt       21 
 Maureen Morris      15 Jean Long           21 
@@ -666,7 +666,7 @@ Len Robinson        18 Mario Biancardo     21
         Aggregate: 123         Aggregate: 163 
 
                             Tue 25th Jun      
-    Harehills Park      Horsforth Woodside.   
+    Harehills Park      Horsforth Woodside   
 Margaret West       12 David Lyons         21 
 Bill Mewes          10 Shirley Biancardo   21 
 Derek Green         21 Mike Froggatt        3 
@@ -718,7 +718,7 @@ Brian Thompson      21 Dennis Wainwright   13
            Points:  36            Points:  22 
 
                             Tue 2nd Jul       
- Horsforth Woodside.         Gildersome       
+ Horsforth Woodside         Gildersome       
 David Lyons         18 Dennis Wainwright   21 
 Kath Hey            14 John Ackroyd        21 
 Ian Tindal          21 Harvey Lockwood     18 
@@ -835,7 +835,7 @@ Margaret McPhail    21 Len Robinson         6
            Points:  33            Points:  29 
 
                             Tue 9th Jul       
-     Holbeck Moor       Horsforth Woodside.   
+     Holbeck Moor       Horsforth Woodside   
 Steve Milton        21 Kath Hey             9 
 Hilary Campbell     21 Graham Hey          17 
 Allan Nicholson     21 Mike Froggatt        6 
@@ -875,7 +875,7 @@ John Manson         21 Barry Baldwin       12
 
       Clegg Cup             Tue 23rd Jul      
     Quarter Final        On Western Flatts    
-    West Royd Park      Horsforth Woodside.   
+    West Royd Park      Horsforth Woodside   
 Colin Whitley       15 Shirley Biancardo   21 
 Bill Robson         21 Mike Froggatt        5 
 Brenda Chaffer      15 Jean Long           21 
@@ -926,7 +926,7 @@ Brian Thompson      21 Don Shaw            16
         Aggregate: 143         Aggregate: 115 
 
                             Tue 30th Jul      
-       Cranmore         Horsforth Woodside.   
+       Cranmore         Horsforth Woodside   
 Peter Nicholson     11 Mario Biancardo     21 
 Harry Gillett       21 Mike Froggatt       12 
 Barry Baldwin       21 David Lyons         19 
@@ -1004,7 +1004,7 @@ Bill Mewes          21 Terry Lilley        20
            Points:  35            Points:  31 
 
                             Tue 6th Aug       
- Horsforth Woodside.      Stanningley Park    
+ Horsforth Woodside      Stanningley Park    
 Mario Biancardo     19 Duncan McPhail      21 
 Shirley Biancardo   21 Derek Wilson        13 
 Colin Davison       12 Jim Moorin          21 
@@ -1069,7 +1069,7 @@ Duncan McPhail      21 John Hodgson         7
            Points:  40            Points:  17 
 
                             Tue 13th Aug      
-      New Armley        Horsforth Woodside.   
+      New Armley        Horsforth Woodside   
 David Johnson        8 Shirley Biancardo   21 
 Dorothy Ford         2 Mario Biancardo     21 
 Marion Worrall       9 David Lyons         21 
@@ -1173,7 +1173,7 @@ John Ackroyd        21 Margaret Finister   18
            Points:  31            Points:  31 
 
                             Tue 27th Aug      
- Horsforth Woodside.       West Royd Park     
+ Horsforth Woodside       West Royd Park     
 Mario Biancardo     21 Norman Shaw         12 
 Shirley Biancardo   21 Ron Witham           9 
 Colin Davison       16 Colin Whitley       21 
@@ -1238,7 +1238,7 @@ Brian Dowling        8 Harry Gillett       21
            Points:  36            Points:  19 
 
                             Tue 3rd Sep       
-      Barwick BC        Horsforth Woodside.   
+      Barwick BC        Horsforth Woodside   
 Margaret Finister   21 Shirley Biancardo   18 
 David Wilkinson     21 Arthur Roundhill    11 
 Hilary Maxim        21 David Lyons         19 
