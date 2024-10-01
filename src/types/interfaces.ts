@@ -153,7 +153,6 @@ export interface WrapperProps {
 
 // TODO this is from playerHelpers file
 export interface PlayerTeamStats {
-    // TODO check naming
     teamName: string;
     teamGames: number;
     teamWins: number;
@@ -164,7 +163,7 @@ export interface PlayerTeamStats {
 
 export interface FullStats {
     playerResults: PlayerResults;
-    teamResults?: any[]; // TODO change
+    teamResults?: TeamResults[];
     statsYear: string;
     lastUpdated: string;
 }
@@ -198,4 +197,23 @@ export interface TeamStats {
     awayDraws: number;
     agg: number;
     opponentAgg: number;
+}
+
+export interface TeamResults {
+    day: string;
+    awayWins: number;
+    homeWins: number;
+    wins: number;
+    awayLosses: number;
+    homeLosses: number;
+    homeDraws: number;
+    awayDraws: number;
+    draws: number;
+    cupWins: number;
+    cupLosses: number;
+    losses: number;
+    totalGamesPlayed: number;
+    agg: number;
+    opponentAgg: number;
+    results: string[];
 }
