@@ -117,10 +117,6 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
-export interface PlayerStatsWinLossesProps {
-    stats: PlayerResults;
-}
-
 // TODO can be combined with something else?
 export interface PlayerStatsSummary {
     player: string;
@@ -155,8 +151,6 @@ export interface WrapperProps {
     displayname: string;
     children: React.ReactNode;
 }
-
-// TODO rename some of these?
 
 // TODO this is from playerHelpers file
 export interface PlayerTeamStats {
