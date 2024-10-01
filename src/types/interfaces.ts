@@ -77,7 +77,6 @@ export interface TeamTabsProps {
     teamComponents: Array<React.ReactElement<{ displayname: string }>>;
 }
 
-// TODO this same as teamStatsProps?
 export interface StatsTableDisplayProps {
     totalGames: number;
     totalWins: number;
