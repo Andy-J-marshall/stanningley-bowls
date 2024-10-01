@@ -20,8 +20,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
 
-    function displayPlayer(event: any) {
-        const playerName = event.target.innerHTML;
+    function displayPlayer(event: React.MouseEvent<HTMLAnchorElement>) {
+        const playerName = event.currentTarget.innerHTML;
         if (displayPlayerStatsCallback) {
             displayPlayerStatsCallback(playerName);
         }
