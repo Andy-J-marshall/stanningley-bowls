@@ -19,7 +19,7 @@ export interface RecordsProps {
 }
 
 export interface AllTimePlayerStatsProps {
-    statsArray: Array<FullStats>;
+    statsArray: FullStats[];
     showSinglesOnly: boolean;
     showPairsOnly: boolean;
 }
@@ -74,7 +74,7 @@ export interface YearSelectDropdownProps {
 
 export interface TeamTabsProps {
     allCombinedComponent: React.ReactNode;
-    teamComponents: Array<React.ReactElement<{ displayname: string }>>;
+    teamComponents: React.ReactElement<{ displayname: string }>[];
 }
 
 export interface StatsTableDisplayProps {
@@ -134,7 +134,7 @@ export interface PlayerStatsSummary {
 }
 
 export interface PlayerStatSummaryProps {
-    playerStats: Array<PlayerStatsSummary>;
+    playerStats: PlayerStatsSummary[];
     callback?: (playerName: string) => void;
     showSinglesOnly?: boolean;
     showPairsOnly?: boolean;
