@@ -9,7 +9,7 @@ teamNames = [
     'Stanningley Park A', 
     'Stanningley Park B'
 ]
-preferredTeamName = 'Stanningley'
+displayTeamName = 'Stanningley'
 
 # Days played (add duplicate days for second teams suffixed with (A) or (B) etc.)
 teamDays = [

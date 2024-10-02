@@ -7,25 +7,14 @@ import re
 
 year = utils.year
 
-teamDays = teamDetails.teamDays
-teamNames = teamDetails.teamNames
-displayTeamName = teamDetails.preferredTeamName
-players = teamDetails.players
-duplicatePlayerNames = teamDetails.duplicatePlayerNames
-traitorPlayers = teamDetails.traitorPlayers
-playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, players)
-deduplicateNames = teamDetails.deduplicateNames
-cupTextList = utils.cupText
-returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
-sanityChecksOnTeamStats = utils.sanityChecksOnTeamStats
-sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-checkFileSize = utils.checkFileSize
+playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
+
 teamsProcessed = []
 
 allTeamResults = []
-print('UPDATING STATS:', teamNames[0].upper())
+print('UPDATING STATS:', teamDetails.teamNames[0].upper())
 
-for team in teamDays:
+for team in teamDetails.teamDays:
     print('Updating Stats: ' + team)
     
     league = team.replace(' (A)', '').replace(' (B)', '')
@@ -51,12 +40,12 @@ for team in teamDays:
         # Find team name used by Stanningley in this league
         possibleTeamNamesUsed = []
         teamNameUsedForLeague = ''
-        teamNameToUse = displayTeamName
+        teamNameToUse = teamDetails.displayTeamName
     
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                for teamName in teamNames:
+                for teamName in teamDetails.teamNames:
                     name = row.lower().strip()
                     if name.startswith(teamName.lower()):
                         name = teamName.lower()
@@ -67,16 +56,16 @@ for team in teamDays:
                         if teamName.lower() in name:
                             possibleTeamNamesUsed.append(teamName)
                             if '(A)' in team:
-                                teamNameToUse = displayTeamName + ' A'
+                                teamNameToUse = teamDetails.displayTeamName + ' A'
                             if '(B)' in team:
-                                teamNameToUse = displayTeamName + ' B'
+                                teamNameToUse = teamDetails.displayTeamName + ' B'
         
     
         if len(possibleTeamNamesUsed) == 0:
             raise Exception('No team name found')
         
         teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
-        if displayTeamName.lower() not in teamNameUsedForLeague.lower():
+        if teamDetails.displayTeamName.lower() not in teamNameUsedForLeague.lower():
             raise Exception('Incorrect team name found')
 
         # Find the cup games in the stats
@@ -84,7 +73,7 @@ for team in teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                for cupText in cupTextList:
+                for cupText in utils.cupText:
                     if cupText in row.lower():
                         for i in range(0, 11):
                             cupGameRows.append(rowNumber + i)
@@ -97,21 +86,21 @@ for team in teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                if row.lower().count(displayTeamName.lower()) > 1:
+                if row.lower().count(teamDetails.displayTeamName.lower()) > 1:
                     # This is a safeguard as the script won't work yet if the A team plays the B team.
                     # If this happens, need to implement a way to differentiate between the two teams
                     raise Exception('Team name appears more than once in the row')
 
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
-                for cupText in cupTextList:
+                for cupText in utils.cupText:
                     if cupText.lower() in row.lower():
                         hostedCupGame = True
                         break
                 if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
                     firstWord = words[0].lower()
-                    if firstWord == displayTeamName.lower():
+                    if firstWord == teamDetails.displayTeamName.lower():
                         homeRow.append(rowNumber)
                     else:
                         awayRow.append(rowNumber)
@@ -153,7 +142,7 @@ for team in teamDays:
             cupGame = False
             cupRow = allRowsInFile[rowNumber - 1]
             if cupRow and type(cupRow) is str:
-                for cupText in cupTextList:
+                for cupText in utils.cupText:
                     if cupText.lower() in cupRow.lower():
                         cupGame = True
                         break
@@ -265,8 +254,8 @@ for team in teamDays:
         
         def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
             # Checks if player plays for team on selected day
-            playerName = deduplicateNames(playerName)
-            if playerName in traitorPlayers[league]:
+            playerName = teamDetails.deduplicateNames(playerName)
+            if playerName in teamDetails.traitorPlayers[league]:
                 return False
             
             for i in range(1, 13):
@@ -290,15 +279,15 @@ for team in teamDays:
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
                 if len(findPossiblePlayerNames) > 1:                
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = deduplicateNames(possiblePlayerNameHome).lower()
-                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                    possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
+                    if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home')
                         if validPlayer:
                             homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = deduplicateNames(possiblePlayerNameAway).lower()
-                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                    possiblePlayerNameAway = teamDetails.deduplicateNames(possiblePlayerNameAway).lower()
+                    if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
                         validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away')
                         if validPlayer:
                             awayPlayerRow.append(rowNumber)
@@ -399,10 +388,10 @@ for team in teamDays:
                             pairsPartner = findPossiblePairsPlayerNames[1]
                             secondOpponent = findPossiblePairsPlayerNames[0]
 
-                playerName = deduplicateNames(playerName)
-                opponentsName = deduplicateNames(opponentsName)
-                pairsPartner = deduplicateNames(pairsPartner)
-                secondOpponent = deduplicateNames(secondOpponent)
+                playerName = teamDetails.deduplicateNames(playerName)
+                opponentsName = teamDetails.deduplicateNames(opponentsName)
+                pairsPartner = teamDetails.deduplicateNames(pairsPartner)
+                secondOpponent = teamDetails.deduplicateNames(secondOpponent)
                     
                 # Store player stats
                 playerNameForResult = playerName
@@ -410,7 +399,7 @@ for team in teamDays:
                     playerStats[playerName]['pairsPartners'].append(pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
-                    playerStats[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availablePairsAgg'] += utils.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
@@ -460,25 +449,25 @@ for team in teamDays:
                             playerStats[playerName]['pairCupLosses'] += 1
 
                 # Averages
-                playerStats[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(team)
+                playerStats[playerName]['availableAgg'] += utils.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
                 playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
-                    playerStats[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availableHomeAgg'] += utils.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalHomeAgg'] += aggregate
                     playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(team)
+                        playerStats[playerName]['availablePairsHomeAgg'] += utils.returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsHomeAgg'] += aggregate
                         playerStats[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
                 if awayGame:
-                    playerStats[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availableAwayAgg'] += utils.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalAwayAgg'] += aggregate
                     playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(team)
+                        playerStats[playerName]['availablePairsAwayAgg'] += utils.returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
                 playerStats[playerName]['dayPlayed'].append(team)
@@ -499,7 +488,7 @@ dataToExport = {
 filename = 'src/data/bowlsStats' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
-    previousFileSize = checkFileSize(filename)
+    previousFileSize = utils.checkFileSize(filename)
     os.remove(filename)    
 
 with open(filename, 'w') as jsonFile:
@@ -509,10 +498,10 @@ with open(filename, 'w') as jsonFile:
     jsonFile.close()
 
 # Sanity checks on the data
-sanityChecksOnTeamStats(allTeamResults)
-sanityChecksOnPlayerStats(playerStats, players)
-newFileSize = checkFileSize(filename)
+utils.sanityChecksOnTeamStats(allTeamResults)
+utils.sanityChecksOnPlayerStats(playerStats, teamDetails.players)
+newFileSize = utils.checkFileSize(filename)
 if newFileSize < previousFileSize:
     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
-print(f'Sanity checks for {displayTeamName} stats complete')
+print(f'Sanity checks for {teamDetails.displayTeamName} stats complete')
 print('------')

@@ -7,22 +7,12 @@ import re
 
 year = utils.year
 
-leaguesDays = teamDetails.allDays
-players = teamDetails.players
-duplicatePlayerNames = teamDetails.duplicatePlayerNames
-teamsTracking = teamDetails.teamsTracking
-playerResults = utils.returnListOfPlayerStats(leaguesDays, False, players)
-deduplicateNames = teamDetails.deduplicateNames
-standardiseName = utils.standardiseName
-returnTotalAggAvailablePerGame = utils.returnTotalAggAvailablePerGame
-sanityChecksOnPlayerStats = utils.sanityChecksOnPlayerStats
-checkFileSize = utils.checkFileSize
-cupTextList = utils.cupText
+playerResults = utils.returnListOfPlayerStats(teamDetails.allDays, False, teamDetails.players)
 leaguesProcessed = []
 
 print('UPDATING ALL PLAYER STATS')
 
-for league in leaguesDays:
+for league in teamDetails.allDays:
     # To prevent duplication
     league = league.replace(' (A)', '').replace(' (B)', '')
     if league in leaguesProcessed:
@@ -48,7 +38,7 @@ for league in leaguesDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                for cupText in cupTextList:
+                for cupText in utils.cupText:
                     if cupText in row.lower():
                         for i in range(0, 11):
                             cupGameRows.append(rowNumber + i)
@@ -63,13 +53,13 @@ for league in leaguesDays:
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
                 if len(findPossiblePlayerNames) > 1:                
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
-                    if possiblePlayerNameHome in players or possiblePlayerNameHome in duplicatePlayerNames:
+                    possiblePlayerNameHome = utils.standardiseName(possiblePlayerNameHome)
+                    if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
                         homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
-                    if possiblePlayerNameAway in players or possiblePlayerNameAway in duplicatePlayerNames:
+                    possiblePlayerNameAway = utils.standardiseName(possiblePlayerNameAway)
+                    if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
                         awayPlayerRow.append(rowNumber)
 
         # Find each players' results
@@ -129,7 +119,7 @@ for league in leaguesDays:
                         possibleTeamText = possibleTeamText.lower().strip()
                         
                         # Checks against full team name first
-                        for team in teamsTracking:
+                        for team in teamDetails.teamsTracking:
                             team = team.lower()
                             if team in possibleTeamText:
                                 if (homeGame or cupHome) and possibleTeamText.startswith(team):
@@ -208,10 +198,10 @@ for league in leaguesDays:
                                     pairsPartner = findPossiblePairsPlayerNames[1]
                                     secondOpponent = findPossiblePairsPlayerNames[0]
 
-                        playerName = deduplicateNames(playerName)
-                        opponentsName = deduplicateNames(opponentsName)
-                        pairsPartner = deduplicateNames(pairsPartner)
-                        secondOpponent = deduplicateNames(secondOpponent)
+                        playerName = teamDetails.deduplicateNames(playerName)
+                        opponentsName = teamDetails.deduplicateNames(opponentsName)
+                        pairsPartner = teamDetails.deduplicateNames(pairsPartner)
+                        secondOpponent = teamDetails.deduplicateNames(secondOpponent)
 
                         # Store player stats
                         playerNameForResult = playerName
@@ -219,7 +209,7 @@ for league in leaguesDays:
                             playerResults[playerName]['pairsPartners'].append(pairsPartner)
                             playerNameForResult = playerName + ' & ' + pairsPartner
                             opponentsName = opponentsName + ' & ' + secondOpponent
-                            playerResults[playerName]['availablePairsAgg'] += returnTotalAggAvailablePerGame(league)
+                            playerResults[playerName]['availablePairsAgg'] += utils.returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalPairsAgg'] += aggregate
                             playerResults[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
@@ -266,23 +256,23 @@ for league in leaguesDays:
                                     playerResults[playerName]['pairCupLosses'] += 1
 
                         # Averages
-                        playerResults[playerName]['availableAgg'] += returnTotalAggAvailablePerGame(league)
+                        playerResults[playerName]['availableAgg'] += utils.returnTotalAggAvailablePerGame(league)
                         playerResults[playerName]['totalAgg'] += aggregate
                         playerResults[playerName]['totalAggAgainst'] += opponentAggregate
                         if homeGame:
-                            playerResults[playerName]['availableHomeAgg'] += returnTotalAggAvailablePerGame(league)
+                            playerResults[playerName]['availableHomeAgg'] += utils.returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalHomeAgg'] += aggregate
                             playerResults[playerName]['totalHomeAggAgainst'] += opponentAggregate
                             if pairsGame:
-                                playerResults[playerName]['availablePairsHomeAgg'] += returnTotalAggAvailablePerGame(league)
+                                playerResults[playerName]['availablePairsHomeAgg'] += utils.returnTotalAggAvailablePerGame(league)
                                 playerResults[playerName]['totalPairsHomeAgg'] += aggregate
                                 playerResults[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
                         if awayGame:
-                            playerResults[playerName]['availableAwayAgg'] += returnTotalAggAvailablePerGame(league)
+                            playerResults[playerName]['availableAwayAgg'] += utils.returnTotalAggAvailablePerGame(league)
                             playerResults[playerName]['totalAwayAgg'] += aggregate
                             playerResults[playerName]['totalAwayAggAgainst'] += opponentAggregate
                             if pairsGame:
-                                playerResults[playerName]['availablePairsAwayAgg'] += returnTotalAggAvailablePerGame(league)
+                                playerResults[playerName]['availablePairsAwayAgg'] += utils.returnTotalAggAvailablePerGame(league)
                                 playerResults[playerName]['totalPairsAwayAgg'] += aggregate
                                 playerResults[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
                         playerResults[playerName]['dayPlayed'].append(league)
@@ -298,7 +288,7 @@ dataToExport = {
 filename = 'src/data/allPlayerStats' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
-    previousFileSize = checkFileSize(filename)
+    previousFileSize = utils.checkFileSize(filename)
     os.remove(filename)
 
 with open(filename, 'w') as jsonFile:
@@ -308,8 +298,8 @@ with open(filename, 'w') as jsonFile:
     jsonFile.close()
 
 # Sanity checks on the data
-sanityChecksOnPlayerStats(playerResults, players)
-newFileSize = checkFileSize(filename)
+utils.sanityChecksOnPlayerStats(playerResults, teamDetails.players)
+newFileSize = utils.checkFileSize(filename)
 if newFileSize < previousFileSize:
     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print('Sanity checks for all teams stats complete')
