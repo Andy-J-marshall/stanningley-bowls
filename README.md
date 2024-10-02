@@ -184,3 +184,9 @@ Update any URLs if the Bowlsnet link has changed.
 Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`.
 
 Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.
+
+## Ideas for future improvements
+* Home/away/cup breakdown on stat summary options
+* All years detailed stats (not just summary):
+  * Players best ever season
+* How easy to add a new team?
