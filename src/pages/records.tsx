@@ -339,7 +339,7 @@ function Records(props: RecordsProps) {
                     <Wrapper
                         displayname={displayname}
                         children={
-                            <p>
+                            <p className="center page-component">
                                 {config.teamNames.shortName} did not play on
                                 this day for the selected year
                             </p>
@@ -352,7 +352,7 @@ function Records(props: RecordsProps) {
 
     if (mostGames > 0) {
         return (
-            <div className="center page-component" id="records">
+            <div className="center" id="records">
                 <h1>{yearInTitle} RECORDS</h1>
                 <TeamTabs
                     allCombinedComponent={combinedRecordsComponent()}
@@ -364,7 +364,10 @@ function Records(props: RecordsProps) {
         return (
             <div className="center page-component">
                 <h1>{yearInTitle} RECORDS</h1>
-                <p>No games played</p>
+                <p>
+                    No {config.teamNames.shortName} team stats available for the
+                    selected year
+                </p>
             </div>
         );
     }

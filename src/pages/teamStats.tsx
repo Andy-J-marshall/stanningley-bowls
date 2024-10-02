@@ -123,7 +123,7 @@ function TeamStats(props: TeamStatsProps) {
                     <Wrapper
                         displayname={displayname}
                         children={
-                            <p>
+                            <p className="center page-component">
                                 {config.teamNames.shortName} did not play on
                                 this day for the selected year
                             </p>
@@ -136,7 +136,7 @@ function TeamStats(props: TeamStatsProps) {
 
     if (teamResults) {
         return (
-            <div id="team-stats" className="center page-component">
+            <div id="team-stats" className="center">
                 <h1>{yearInTitle} TEAM STATS</h1>
                 <TeamTabs
                     allCombinedComponent={
@@ -152,8 +152,8 @@ function TeamStats(props: TeamStatsProps) {
             <div id="team-stats-unavailable" className="center page-component">
                 <h1>{yearInTitle} TEAM STATS</h1>
                 <p>
-                    No {teamName} team stats available, please select another
-                    year.
+                    No {config.teamNames.shortName} team stats available for the
+                    selected year
                 </p>
             </div>
         );
