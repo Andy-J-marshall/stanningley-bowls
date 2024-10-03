@@ -187,6 +187,7 @@ Consider whether to add league reports for any non-tracked leagues e.g. Barkston
 
 ## Ideas for future improvements
 * Home/away/cup breakdown on stat summary options
+* Improve homepage
 * All years detailed stats (not just summary):
   * Players best ever season
 * How easy to add a new team?
