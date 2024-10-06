@@ -1,7 +1,8 @@
 import json
 import os
 from datetime import date
-import teamDetails
+# TODO need a long term solution for this
+import teamDetailsLittlemoor as teamDetails
 import utils
 import re
 
@@ -89,10 +90,11 @@ for team in teamDetails.teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
+                # TODO fix
                 if row.lower().count(teamDetails.displayTeamName.lower()) > 1:
                     # This is a safeguard as the script won't work yet if the A team plays the B team.
                     # If this happens, need to implement a way to differentiate between the two teams
-                    raise Exception('Team name appears more than once in the row')
+                    print('Team name appears more than once in the row')
 
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
@@ -488,7 +490,8 @@ dataToExport = {
     'statsYear': year,
 }
 
-filename = 'src/data/bowlsStats' + year + '.json'
+# TODO need a long term solution for this
+filename = 'src/data/bowlsStatsLittlemoor' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
     previousFileSize = utils.checkFileSize(filename)
