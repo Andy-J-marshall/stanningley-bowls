@@ -46,19 +46,17 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 for teamName in teamDetails.teamNames:
-                    name = row.lower().strip()
-                    if name.startswith(teamName.lower()):
-                        name = teamName.lower()
-                        if '(a)' in team.lower() and name.endswith(' b'):
+                    rowValue = row.lower().strip().replace('\'', '')
+                    if teamName.lower() in rowValue:
+                        if team.lower().endswith(' (a)') and rowValue.endswith(' b'):
                             continue
-                        if '(b)' in team.lower() and name.endswith(' a'):
+                        if team.lower().endswith(' (b)') and rowValue.endswith(' a'):
                             continue
-                        if teamName.lower() in name:
-                            possibleTeamNamesUsed.append(teamName)
-                            if '(A)' in team:
-                                teamNameToUse = teamDetails.displayTeamName + ' A'
-                            if '(B)' in team:
-                                teamNameToUse = teamDetails.displayTeamName + ' B'
+                        possibleTeamNamesUsed.append(teamName)
+                        if team.lower().endswith(' (a)'):
+                            teamNameToUse = teamDetails.displayTeamName + ' A'
+                        if team.lower().endswith(' (b)'):
+                            teamNameToUse = teamDetails.displayTeamName + ' B'
         
     
         if len(possibleTeamNamesUsed) == 0:
