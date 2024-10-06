@@ -27,7 +27,7 @@ Colin Matthewman      21 Allen Bottomley       11
           Aggregate: 140           Aggregate: 133 
 
       Division One             Thu 22nd Apr       
-   Pudsey Littlemoor             Pudsey A         
+   Littlemoor             Pudsey A         
 Jack Glazzard         15 Stewart Watson        21 
 Bill Swales           21 Dave Rankin           18 
 Alan Mazurke          21 Sue Chadwick          14 
@@ -277,7 +277,7 @@ Kevin Rankin          21 Andy Denton            7
           Aggregate: 140           Aggregate: 121 
 
       Division One             Thu 29th Apr       
-      Crowghyll A           Pudsey Littlemoor     
+      Crowghyll A           Littlemoor     
 Robert Ramsden        17 Alan Mazurke          21 
 Jeff Townend          21 Bill Swales            8 
 David Hodgson         21 Jack Glazzard          2 
@@ -465,7 +465,7 @@ Dennis Thorp          21 Mike Lambert          11
           Aggregate: 160           Aggregate: 120 
 
       Division One             Thu 6th May        
-        Wibsey A            Pudsey Littlemoor     
+        Wibsey A            Littlemoor     
 John Stevenson        21 Alan Mazurke          20 
 Geoff Hanson          16 Bill Swales           21 
 Peter Crowther        21 Glenn Miller          12 
@@ -691,7 +691,7 @@ Sylvia Halliday        8 Rod Bastow            21
           Aggregate: 143           Aggregate: 140 
 
       Division One             Thu 13th May       
-   Pudsey Littlemoor           Asa Briggs A       
+   Littlemoor           Asa Briggs A       
 James Moorin          10 John Beverley         21 
 Phillip Richards      13 Dennis Robinson       21 
 Bill Swales           21 Alan Marsden           5 
@@ -859,7 +859,7 @@ Chris Wilson          21 Harry Foster           9
           Aggregate: 168           Aggregate:  78 
 
       Division One             Thu 20th May       
-         Ilkley             Pudsey Littlemoor     
+         Ilkley             Littlemoor     
 Brian Wheeler         21 Kath Mazurke           7 
 Mick Bastow           21 Jack Glazzard         20 
 Rod Bastow            21 Phillip Richards      14 
@@ -1061,7 +1061,7 @@ David Hodgson         11 Peter Storey          21
           Aggregate: 134           Aggregate: 130 
 
       Division One             Thu 27th May       
-   Pudsey Littlemoor         West Bradford A      
+   Littlemoor         West Bradford A      
 Alan Mazurke          21 Mike Kane             15 
 Jack Glazzard         21 David Bottomley       20 
 Bill Swales           21 Derek Carroll         20 
@@ -1215,7 +1215,7 @@ Brian Tempest         21 Robert Musgrave       18
           Aggregate: 168           Aggregate: 114 
 
       Division One             Thu 3rd Jun        
-       Guiseley A           Pudsey Littlemoor     
+       Guiseley A           Littlemoor     
 Christine Boyd        11 Alan Mazurke          21 
 John Stead            15 James Moorin          21 
 Carolyn Matthewman    20 Jack Glazzard         21 
@@ -1453,7 +1453,7 @@ Jeff Townend          20 Alan Peel             21
           Aggregate: 117           Aggregate: 161 
 
       Division One             Thu 10th Jun       
-   Pudsey Littlemoor           Eccleshill A       
+   Littlemoor           Eccleshill A       
 Glen Merrick          21 Les Ward               9 
 Jack Glazzard         21 Peter Howroyd         16 
 Glenn Miller          20 Allen Bottomley       21 
@@ -1643,7 +1643,7 @@ Peter Jefferson       19 Malcolm Iles          21
           Aggregate: 149           Aggregate: 111 
 
       Division One             Thu 17th Jun       
-       Clayton A            Pudsey Littlemoor     
+       Clayton A            Littlemoor     
 Alan Peel             21 Phillip Richards       7 
 Andrew Walker         21 Glenn Miller           9 
 Paul Gill             21 Alan Mazurke          17 
@@ -1833,7 +1833,7 @@ Steve Alred           21 John Winstanley        3
           Aggregate: 152           Aggregate: 135 
 
       Division One             Thu 24th Jun       
-   Pudsey Littlemoor           Oakenshaw A        
+   Littlemoor           Oakenshaw A        
 Kath Mazurke          21 John Priestley         5 
 Glen Merrick           9 Paula Graham          21 
 Jack Glazzard         21 Pat Priestley         16 
@@ -2071,7 +2071,7 @@ Ian Gomersal          11 Malcolm Iles          21
           Aggregate: 129           Aggregate: 143 
 
       Division One             Thu 1st Jul        
-         Wyke A             Pudsey Littlemoor     
+         Wyke A             Littlemoor     
 David Rayner          21 Bill Swales           14 
 Michael Walton        19 Jack Glazzard         21 
 Steven Ward           16 Phillip Richards      21 
@@ -2251,7 +2251,7 @@ Steven Ward           15 Clive Foord           21
           Aggregate: 139           Aggregate: 137 
 
       Division One             Thu 8th Jul        
-        Pudsey A            Pudsey Littlemoor     
+        Pudsey A            Littlemoor     
 David Elliott         21 Alan Mazurke          20 
 Gerry Smith           15 Glenn Miller          21 
 Dave Rankin           21 Phillip Richards      10 
@@ -2429,7 +2429,7 @@ Graham Oliver         14 Andrew Walker         21
           Aggregate: 141           Aggregate: 158 
 
       Division One             Thu 15th Jul       
-   Pudsey Littlemoor           Crowghyll A        
+   Littlemoor           Crowghyll A        
 Bill Swales           21 Sylvia Halliday       13 
 Kath Mazurke          21 Flo Johnston           6 
 Glenn Miller          21 Steve Alred            3 
@@ -2677,7 +2677,7 @@ Steve Alred           14 John Beverley         21
           Aggregate: 108           Aggregate: 153 
 
       Division One             Thu 22nd Jul       
-   Pudsey Littlemoor             Wibsey A         
+   Littlemoor             Wibsey A         
 Thomas Powell         21 Michael Sansome       16 
 James Moorin          21 Vince Cleary           8 
 Bill Swales           21 Katherine Bartle      18 
@@ -2843,7 +2843,7 @@ Pauline Gilroy        21 John Garside          12
           Aggregate: 163           Aggregate:  92 
 
       Division One             Thu 29th Jul       
-      Asa Briggs A          Pudsey Littlemoor     
+      Asa Briggs A          Littlemoor     
 Clive Foord           20 James Moorin          21 
 Andy Denton           21 Bill Swales            6 
 Dennis Robinson       17 Kath Mazurke          21 
@@ -3035,7 +3035,7 @@ Dennis Brown          21 John Shoesmith        13
           Aggregate: 147           Aggregate: 133 
 
       Division One             Thu 5th Aug        
-   Pudsey Littlemoor              Ilkley          
+   Littlemoor              Ilkley          
 James Moorin          21 Derek Metcalfe         5 
 Kath Mazurke          21 Denis Henderson       16 
 Angela Carter         12 Mick Bastow           21 
@@ -3249,7 +3249,7 @@ Brian Wheeler         21 Mick Sansom            8
           Aggregate: 160           Aggregate: 113 
 
       Division One             Thu 12th Aug       
-    West Bradford A         Pudsey Littlemoor     
+    West Bradford A         Littlemoor     
 Tony Smith            21 Phillip Richards       4 
 David Bottomley       21 Alan Mazurke          11 
 Kevin Wood            21 Glenn Miller          16 
@@ -3451,7 +3451,7 @@ Archie Wishart        12 Peter Jefferson       21
           Aggregate: 124           Aggregate: 145 
 
       Division One             Thu 19th Aug       
-   Pudsey Littlemoor            Guiseley A        
+   Littlemoor            Guiseley A        
 Phillip Richards      19 Dave Whelan           21 
 Kath Mazurke          21 Lynne Ogden            5 
 Bill Thorpe           21 Graham Oliver         13 
@@ -3653,7 +3653,7 @@ Colin Matthewman      17 Peter Wilkinson       21
           Aggregate: 121           Aggregate: 140 
 
       Division One             Thu 26th Aug       
-      Eccleshill A          Pudsey Littlemoor     
+      Eccleshill A          Littlemoor     
 Peter Jefferson       21 Bill Swales           11 
 Allen Bottomley       21 Glenn Miller           8 
 Ian Matthews          21 Angela Carter         10 
@@ -3867,7 +3867,7 @@ Jeff Townend          13 Marian Firth          21
           Aggregate: 134           Aggregate:  98 
 
       Division One             Thu 2nd Sep        
-   Pudsey Littlemoor            Clayton A         
+   Littlemoor            Clayton A         
 Bill Swales           21 Tony Riley            17 
 Angela Carter         21 Tom Harney             1 
 Kath Mazurke          19 Mally Fowler          21 
@@ -4093,7 +4093,7 @@ Mally Fowler          21 Peter Wilkinson       18
           Aggregate: 161           Aggregate: 114 
 
       Division One             Thu 9th Sep        
-      Oakenshaw A           Pudsey Littlemoor     
+      Oakenshaw A           Littlemoor     
 Marlene Hughes        21 James Moorin          18 
 John Garside          21 Kath Mazurke           8 
 Pat Priestley         17 Phillip Richards      21 
@@ -4259,7 +4259,7 @@ Jeff Townend          21 Gerry Smith           11
           Aggregate: 121           Aggregate: 138 
 
       Division One             Thu 16th Sep       
-   Pudsey Littlemoor              Wyke A          
+   Littlemoor              Wyke A          
 Bill Swales           21 Michael Walton         5 
 Jack Glazzard         21 David Rayner          20 
 Thomas Powell         14 Jenny Miller          21 

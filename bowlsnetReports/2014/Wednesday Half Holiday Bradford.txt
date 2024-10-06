@@ -102,7 +102,7 @@ David Hammond         20 John Armitage         21
              Points:  18              Points:   8 
 
 Division 2 (Sheila Johns       Wed 16th Apr       
-  Pudsey Littlemoor A        Bradford Moor A      
+  Littlemoor A        Bradford Moor A      
 Kath Mazurke          21 Kenneth Smith         12 
 Margaret Slater       21 Brenda Chaffer        15 
 Kath Bywell (a)       21 Michael Holleran       9 
@@ -223,7 +223,7 @@ Ian Coulthard         21 Leslie Springham       6
              Points:  15              Points:  11 
 
   Division 4 (Walker)          Wed 16th Apr       
-    Bradford Moor B        Pudsey Littlemoor B    
+    Bradford Moor B        Littlemoor B    
 Marjorie Leeming      18 Ian Hibbert           21 
 Brian Parkin          12 Michael Barr          21 
 Shirley Hudson        21 Ray Mears              7 
@@ -355,7 +355,7 @@ Derek Briggs          13 Madeline Gamble       21
              Points:  20              Points:   6 
 
 Division 2 (Sheila Johns       Wed 23rd Apr       
-      Queensbury B         Pudsey Littlemoor A    
+      Queensbury B         Littlemoor A    
 John Armitage          7 Alan Mazurke          21 
 Marion Ingham         21 Kath Mazurke           9 
 Trevor Smith           5 Bob Scott             21 
@@ -465,7 +465,7 @@ Geoff Hanson          18 Violet Rodgers        21
              Points:  20              Points:   6 
 
   Division 4 (Walker)          Wed 23rd Apr       
-  Pudsey Littlemoor B           Thornton B        
+  Littlemoor B           Thornton B        
 Michael Barr          21 Margaret Sutcliffe     4 
 Ian Hibbert           21 Moira Ridewood        11 
 Brian Stott           21 Barry Harrison         7 
@@ -608,7 +608,7 @@ Malcolm Calam         14 Philip Robinson       21
              Points:  18              Points:   8 
 
 Division 2 (Sheila Johns       Wed 30th Apr       
-  Pudsey Littlemoor A             West A          
+  Littlemoor A             West A          
 Margaret Slater       21 Jeff Gott             10 
 Angela Carter (a)     21 Kath Standing         12 
 Kath Mazurke          21 Don Wilson             7 
@@ -696,7 +696,7 @@ Simon Muncaster       21 Eric Farr              6
              Points:  18              Points:   8 
 
   Division 4 (Walker)          Wed 30th Apr       
-       Bowling B           Pudsey Littlemoor B    
+       Bowling B           Littlemoor B    
 Ann Drake              4 Billy Thorpe          21 
 Violet Rodgers         7 Michael Barr          21 
 Sheila Krysik         19 Ian Hibbert           21 
@@ -872,7 +872,7 @@ Don Wilson            12 Kathy Wilford         21
              Points:  15              Points:  11 
 
 Division 2 (Sheila Johns       Wed 7th May        
-      Crowghyll B          Pudsey Littlemoor A    
+      Crowghyll B          Littlemoor A    
 Philip Robinson       13 Angela Carter (a)     21 
 Malcolm Throup        21 Margaret Slater       13 
 Sheila Chaplin        21 Bob Scott             10 
@@ -960,7 +960,7 @@ Ernest Tiffany        21 Ken Nicholls           6
              Points:  22              Points:   4 
 
   Division 4 (Walker)          Wed 7th May        
-  Pudsey Littlemoor B            Wibsey C         
+  Littlemoor B            Wibsey C         
 Steve Smith           21 David Booth           11 
 Billy Thorpe          21 Rita Mackrill          7 
 Michael Barr          21 Karen Brame           14 
@@ -1114,7 +1114,7 @@ Terry Williams        14 Trevor Dunwell        21
              Points:  15              Points:  11 
 
 Division 2 (Sheila Johns       Wed 14th May       
-  Pudsey Littlemoor A            Horton A         
+  Littlemoor A            Horton A         
 Alan Mazurke          19 Eileen Willoughby     21 
 Bob Scott             21 Roy Dennison (a)       5 
 Kath Bywell (a)       21 David Lee (a)         18 
@@ -1224,7 +1224,7 @@ Karen Brame           21 Stuart McGuffie       14
              Points:  11              Points:  15 
 
   Division 4 (Walker)          Wed 14th May       
-      Oakenshaw C          Pudsey Littlemoor B    
+      Oakenshaw C          Littlemoor B    
 Les Kear               5 Billy Thorpe          21 
 Eric Oldroyd          16 Michael Barr          21 
 John Tiffany          21 Steve Smith           14 
@@ -1389,7 +1389,7 @@ Roy Dennison (a)      21 Graham Wilkinson       7
              Points:  23              Points:   3 
 
 Division 2 (Sheila Johns       Wed 21st May       
-      Oakenshaw A          Pudsey Littlemoor A    
+      Oakenshaw A          Littlemoor A    
 Stuart England        13 Margaret Slater       21 
 Marian Firth          21 Kath Mazurke          15 
 Malcolm Calam         21 Kath Bywell (a)        9 
@@ -1455,7 +1455,7 @@ John Stevenson        21 Peter Smith           16
              Points:  19              Points:   7 
 
   Division 4 (Walker)          Wed 21st May       
-  Pudsey Littlemoor B            Lister B         
+  Littlemoor B            Lister B         
 Barry Correll         21 Len Seaton            17 
 Alan Parker           21 Joan Seaton           17 
 Michael Barr          21 Harold Barber         11 
@@ -1642,7 +1642,7 @@ Madeline Gamble       21 David Hammond         14
              Points:   5              Points:  21 
 
 Division 2 (Sheila Johns       Wed 28th May       
-      Eccleshill A         Pudsey Littlemoor A    
+      Eccleshill A         Littlemoor A    
 Brian Conway (a)      20 Angela Carter (a)     21 
 Malcolm Hamilton      20 Kath Mazurke          21 
 Graham Foster         17 Bob Scott             21 
@@ -1741,7 +1741,7 @@ Allan Johnson         12 John Knight           21
              Points:  19              Points:   7 
 
   Division 4 (Walker)          Wed 28th May       
-  Pudsey Littlemoor B          Queensbury C       
+  Littlemoor B          Queensbury C       
 Michael Barr          18 Judy Hogg             21 
 Billy Thorpe          21 Stuart McGuffie        1 
 Brian Stott           21 Saville Kershaw        4 
@@ -1895,7 +1895,7 @@ Ted Piskozub          16 Simon Metcalfe        21
              Points:  17              Points:   9 
 
 Division 2 (Sheila Johns       Wed 4th Jun        
-  Pudsey Littlemoor A          Brackenhill        
+  Littlemoor A          Brackenhill        
 Margaret Slater       21 Jackie Wilkinson       3 
 Kath Bywell (a)       21 Gordon McLennon        5 
 Alan Mazurke          20 Alan Holdsworth       21 
@@ -1972,7 +1972,7 @@ Alan Haigh             7 Ken Nicholls          21
              Points:   7              Points:  19 
 
   Division 4 (Walker)          Wed 4th Jun        
-      Eccleshill B         Pudsey Littlemoor B    
+      Eccleshill B         Littlemoor B    
 Alan Wright           19 Michael Barr          21 
 John Keighley         21 Alan Parker           11 
 Tony Whiteoak         21 Clifford Francis      19 
@@ -2093,7 +2093,7 @@ Donald Firth          21 Brian Hemingway        8
              Points:  19              Points:   7 
 
 Division 2 (Sheila Johns       Wed 11th Jun       
-       Tyersal A           Pudsey Littlemoor A    
+       Tyersal A           Littlemoor A    
 John Waugh            15 Bob Scott             21 
 Terry Wilsdon         21 Kath Bywell (a)        9 
 Eddie Foster          18 Alan Mazurke          21 
@@ -2247,7 +2247,7 @@ Allan Johnson         18 Roy Whiteley          21
              Points:  17              Points:   9 
 
   Division 4 (Walker)          Wed 11th Jun       
-  Pudsey Littlemoor B           Tyersal B         
+  Littlemoor B           Tyersal B         
 Alan Parker           21 Sheila Bairstow        3 
 Brian Stott           21 Gordon King           12 
 Steve Smith           21 Joan Reid             12 
@@ -2379,7 +2379,7 @@ Marian Firth          21 John Hainsworth        4
              Points:  22              Points:   4 
 
 Division 2 (Sheila Johns       Wed 25th Jun       
-  Pudsey Littlemoor A           Clayton B         
+  Littlemoor A           Clayton B         
 Kath Mazurke          21 Nona Brogden           5 
 Angela Carter (a)     21 Marie Kitson           9 
 Bob Scott             21 Freda Topham          10 
@@ -2478,7 +2478,7 @@ William Conroy        21 Terry Keeys            2
              Points:  25              Points:   1 
 
   Division 4 (Walker)          Wed 25th Jun       
-       Calverley           Pudsey Littlemoor B    
+       Calverley           Littlemoor B    
 John Spilsbury        21 Michael Barr          12 
 Geoff Dixon           14 Billy Thorpe          21 
 Barry Briggs          17 Clifford Francis      21 
@@ -2621,7 +2621,7 @@ David Lord            15 Kathy Wilford         21
              Points:  21              Points:   5 
 
 Division 2 (Sheila Johns       Wed 2nd Jul        
-      West Royd A          Pudsey Littlemoor A    
+      West Royd A          Littlemoor A    
 Aubrey Coldrey        17 Kath Mazurke          21 
 Geoff Lacey           14 Alan Mazurke          21 
 Margaret Gardner      21 Margaret Slater       19 
@@ -2753,7 +2753,7 @@ Alan Cousen            6 Alan Naylor           21
              Points:  16              Points:  10 
 
   Division 4 (Walker)          Wed 2nd Jul        
-  Pudsey Littlemoor B          West Royd B        
+  Littlemoor B          West Royd B        
 Billy Thorpe          21 Colin Pontefract       8 
 Clifford Francis      21 Barbara Hunt           5 
 Steve Smith           21 Margaret Jeffrey      19 
@@ -2874,7 +2874,7 @@ Alan Layfield         21 Kathy Wilford          6
              Points:  26              Points:   0 
 
 Division 2 (Sheila Johns       Wed 9th Jul        
-    Bradford Moor A        Pudsey Littlemoor A    
+    Bradford Moor A        Littlemoor A    
 Kenneth Smith         10 Angela Carter (a)     21 
 Brenda Chaffer        21 Margaret Slater       17 
 Graham Wood            7 Alan Mazurke          21 
@@ -2995,7 +2995,7 @@ Allan Johnson         21 Moira Ridewood        12
              Points:  21              Points:   5 
 
   Division 4 (Walker)          Wed 9th Jul        
-  Pudsey Littlemoor B        Bradford Moor B      
+  Littlemoor B        Bradford Moor B      
 Michael Barr          21 Marjorie Leeming       1 
 Billy Thorpe          21 Janet Gatenby         10 
 Clifford Francis      21 John Waite             8 
@@ -3138,7 +3138,7 @@ David Hammond         21 Kath Standing         15
              Points:  21              Points:   5 
 
 Division 2 (Sheila Johns       Wed 16th Jul       
-  Pudsey Littlemoor A          Queensbury B       
+  Littlemoor A          Queensbury B       
 Margaret Slater       21 Marion Ingham         15 
 Kath Mazurke          17 Chloe Hirst           21 
 Bob Scott             21 Michael Clare         13 
@@ -3270,7 +3270,7 @@ John Waite            21 Stuart McGuffie        7
              Points:  21              Points:   5 
 
   Division 4 (Walker)          Wed 16th Jul       
-       Thornton B          Pudsey Littlemoor B    
+       Thornton B          Littlemoor B    
 Anita Lyman           18 Billy Thorpe          21 
 Moira Ridewood        21 Michael Barr          15 
 Tony Lyman            21 Brian Stott           10 
@@ -3391,7 +3391,7 @@ Barbara Wardman       21 Jackie Wilkinson      15
              Points:  22              Points:   4 
 
 Division 2 (Sheila Johns       Wed 23rd Jul       
-         West A            Pudsey Littlemoor A    
+         West A            Littlemoor A    
 Jeff Gott             17 Margaret Slater       21 
 Audrey Healy          15 Alan Mazurke          21 
 Kath Standing         16 Bob Scott             21 
@@ -3490,7 +3490,7 @@ Ian Gomersal          21 Raymond Leadbetter     7
              Points:  20              Points:   6 
 
   Division 4 (Walker)          Wed 23rd Jul       
-  Pudsey Littlemoor B           Bowling B         
+  Littlemoor B           Bowling B         
 Billy Thorpe          21 Ann Drake              7 
 Michael Barr          21 Lesley Cordingley     13 
 Brian Stott           21 Marjorie Whatmough     4 
@@ -3644,7 +3644,7 @@ Malcolm Calam         14 David Lee (a)         21
              Points:  17              Points:   9 
 
 Division 2 (Sheila Johns       Wed 30th Jul       
-  Pudsey Littlemoor A          Crowghyll B        
+  Littlemoor A          Crowghyll B        
 Alan Mazurke          21 Dennis Brown           6 
 Kath Bywell (a)       21 Malcolm Throup        15 
 William Swailes       21 Sheila Chaplin        12 
@@ -3743,7 +3743,7 @@ Dennis Tiffany        21 Alan Haigh            17
              Points:  12              Points:  14 
 
   Division 4 (Walker)          Wed 30th Jul       
-        Wibsey C           Pudsey Littlemoor B    
+        Wibsey C           Littlemoor B    
 Rita Mackrill         21 Billy Thorpe          14 
 Brian Turner           8 Terry Laidlaw         21 
 David Booth           21 Barry Correll         11 
@@ -3908,7 +3908,7 @@ Fred Dalby            14 Madeline Gamble       21
              Points:  21              Points:   5 
 
 Division 2 (Sheila Johns       Wed 6th Aug        
-        Horton A           Pudsey Littlemoor A    
+        Horton A           Littlemoor A    
 Pat Cates             19 Margaret Slater       21 
 Jean Briggs            3 Bob Scott             21 
 Joe Walbran           21 Kath Mazurke           9 
@@ -3985,7 +3985,7 @@ John Stevenson        21 Bob Thompson          11
              Points:  21              Points:   5 
 
   Division 4 (Walker)          Wed 6th Aug        
-  Pudsey Littlemoor B          Oakenshaw C        
+  Littlemoor B          Oakenshaw C        
 Clifford Francis      21 John Tiffany          19 
 Billy Thorpe          21 Allan Johnson          8 
 Terry Laidlaw         21 Eric Oldroyd           6 
@@ -4150,7 +4150,7 @@ Terry Williams        21 Marion Ingham         19
              Points:  25              Points:   1 
 
 Division 2 (Sheila Johns       Wed 13th Aug       
-  Pudsey Littlemoor A          Oakenshaw A        
+  Littlemoor A          Oakenshaw A        
 Alan Mazurke          21 Marian Firth          15 
 Bob Scott              8 Malcolm Calam         21 
 Margaret Slater       21 Gerald Bywater         5 
@@ -4293,7 +4293,7 @@ Bill Fox              21 Jack Hawley            7
              Points:  11              Points:  15 
 
   Division 4 (Walker)          Wed 13th Aug       
-        Lister B           Pudsey Littlemoor B    
+        Lister B           Littlemoor B    
 Ken Nicholls          21 Billy Thorpe          20 
 Len Seaton             4 Terry Laidlaw         21 
 Norma Schofield       19 Clifford Francis      21 
@@ -4425,7 +4425,7 @@ Harry Foster          14 Madeline Gamble       21
              Points:  22              Points:   4 
 
 Division 2 (Sheila Johns       Wed 20th Aug       
-  Pudsey Littlemoor A          Eccleshill A       
+  Littlemoor A          Eccleshill A       
 Alan Mazurke          21 Wendy Ward             4 
 Kath Bywell (a)       21 Graham Foster          0 
 Margaret Slater       21 Brian Conway (a)       5 
@@ -4491,7 +4491,7 @@ Peter Smith           14 John Metcalfe         21
              Points:  16              Points:  10 
 
   Division 4 (Walker)          Wed 20th Aug       
-      Queensbury C         Pudsey Littlemoor B    
+      Queensbury C         Littlemoor B    
 Judy Hogg             16 Steve Smith           21 
 David Glass           21 Barry Correll         18 
 Terry Keeys           21 Michael Barr          13 
@@ -4667,7 +4667,7 @@ Brenda Chaffer        21 Jeff Gott              6
              Points:  13              Points:  13 
 
 Division 2 (Sheila Johns       Wed 27th Aug       
-      Brackenhill          Pudsey Littlemoor A    
+      Brackenhill          Littlemoor A    
 Marjorie Spaven        3 Alan Mazurke          21 
 Carole Gibson         13 Margaret Slater       21 
 Alan Holdsworth        9 Kath Bywell (a)       21 
@@ -4777,7 +4777,7 @@ Ian Gomersal          21 Pam Fergus             3
              Points:  18              Points:   8 
 
   Division 4 (Walker)          Wed 27th Aug       
-  Pudsey Littlemoor B          Eccleshill B       
+  Littlemoor B          Eccleshill B       
 Michael Barr          21 Jim Head              14 
 Billy Thorpe          21 Mary Nellist           3 
 Clifford Francis      21 Alan Wright           14 
@@ -4920,7 +4920,7 @@ Ted Piskozub          21 Colin McGregor        15
              Points:  15              Points:  11 
 
 Division 2 (Sheila Johns       Wed 3rd Sep        
-  Pudsey Littlemoor A           Tyersal A         
+  Littlemoor A           Tyersal A         
 Kath Bywell (a)       21 John Waugh             6 
 Alan Mazurke          20 Terry Wilsdon         21 
 Margaret Slater       21 Arnie Bennett          6 
@@ -5008,7 +5008,7 @@ John Knight           21 David Glass            2
              Points:  22              Points:   4 
 
   Division 4 (Walker)          Wed 3rd Sep        
-       Tyersal B           Pudsey Littlemoor B    
+       Tyersal B           Littlemoor B    
 Pam Fergus             8 Billy Thorpe          21 
 Joan Reid             15 Clifford Francis      21 
 Sheila Bairstow        8 Brian Stott           21 
@@ -5140,7 +5140,7 @@ Gerry Smith           21 Madeline Gamble       20
              Points:  17              Points:   9 
 
 Division 2 (Sheila Johns       Wed 10th Sep       
-       Clayton B           Pudsey Littlemoor A    
+       Clayton B           Littlemoor A    
 David Lord             6 Angela Carter (a)     21 
 Donald Hodgson        15 Kath Mazurke          21 
 Freda Topham          20 Kath Bywell (a)       21 
@@ -5283,7 +5283,7 @@ Allan Johnson         21 Barbara Hunt           7
              Points:  23              Points:   3 
 
   Division 4 (Walker)          Wed 10th Sep       
-  Pudsey Littlemoor B           Calverley         
+  Littlemoor B           Calverley         
 Bob Dove              21 John Spilsbury         5 
 Terry Laidlaw         21 Geoff Dixon            9 
 Billy Thorpe          21 Roy Whiteley          18 
@@ -5415,7 +5415,7 @@ Marian Firth          21 Alan Farrow           17
              Points:  19              Points:   7 
 
 Division 2 (Sheila Johns       Wed 17th Sep       
-  Pudsey Littlemoor A          West Royd A        
+  Littlemoor A          West Royd A        
 Bob Scott             21 Aubrey Coldrey        20 
 Margaret Slater       21 Margaret Gardner      13 
 Alan Mazurke          21 Alan Layfield         15 
@@ -5525,7 +5525,7 @@ John Spilsbury        21 David Glass           11
              Points:  23              Points:   3 
 
   Division 4 (Walker)          Wed 17th Sep       
-      West Royd B          Pudsey Littlemoor B    
+      West Royd B          Littlemoor B    
 Ian Coulthard         20 Billy Thorpe          21 
 Audrey Womersley       9 Terry Laidlaw         21 
 Colin Pontefract      21 Bob Dove              20 

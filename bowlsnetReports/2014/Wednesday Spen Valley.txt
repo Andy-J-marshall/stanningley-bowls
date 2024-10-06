@@ -120,7 +120,7 @@ Anthony Sutcliffe        14 Garreth Lally            21
                 Points:   7                 Points:   3 
 
         Division 1                  Wed 9th Apr         
-     Thornhill CB & C            Pudsey Littlemoor      
+     Thornhill CB & C            Littlemoor      
 Ryan Mitchell            21 Terry Laidlaw            13 
 D Makepeace              21 Alan Mazurke              5 
 Simon Collomosse          8 Jim Moorin               21 
@@ -419,7 +419,7 @@ Richard Hodgson          10 Mark Thompson            21
                 Points:   7                 Points:   3 
 
         Division 1                 Wed 16th Apr         
-     Pudsey Littlemoor             Lower Hopton         
+     Littlemoor             Lower Hopton         
 Alan Mazurke             18 Graham A Hirst           21 
 Terry Laidlaw            21 Steve Pollard            10 
 Jim Moorin               20 Martin Laycock           21 
@@ -783,7 +783,7 @@ Robert Hopper            21 Anthony Sutcliffe        14
                 Points:   4                 Points:   7 
 
         Division 1                 Wed 23rd Apr         
-       Crossgates B              Pudsey Littlemoor      
+       Crossgates B              Littlemoor      
 Desmond Kearney          13 Terry Laidlaw            21 
 Colin Scorah             21 Alan Mazurke             13 
 Steve Hartley            21 Jim Moorin                7 
@@ -1212,7 +1212,7 @@ Simon Walder             21 Steve Wainwright         20
                 Points:   9                 Points:   1 
 
         Division 1                 Wed 30th Apr         
-        Pudsey BC B              Pudsey Littlemoor      
+        Pudsey BC B              Littlemoor      
 Joe Bray                 21 Jim Moorin                3 
 Connor Davis             21 John Armitage            20 
 Jeff Ramsden             21 Craig Hebbard            17 
@@ -1602,7 +1602,7 @@ Ian Newby                21 Darren Crawley           20
                 Points:   4                 Points:   7 
 
         Division 1                  Wed 7th May         
-     Pudsey Littlemoor            Cleck Sports A        
+     Littlemoor            Cleck Sports A        
 Alan Mazurke             21 David Marshall            6 
 Andy (A) Smith           21 Stuart Johnson            8 
 Craig Hebbard            21 Michael Rhodes            5 
@@ -2031,7 +2031,7 @@ Cliver Hirst             21 Kevin Wood               17
                 Points:   7                 Points:   3 
 
         Division 1                 Wed 14th May         
-     Pudsey Littlemoor             Rastrick 'A'         
+     Littlemoor             Rastrick 'A'         
 Alan Mazurke             10 David Wood               21 
 Philip Vayro             19 Frank Cullen             21 
 Glen Pratt               21 Ian Swallow              12 
@@ -2395,7 +2395,7 @@ Ian Jacques              21 Tony Throup              10
                 Points:   9                 Points:   1 
 
         Division 1                 Wed 21st May         
-    Brighouse Sports A           Pudsey Littlemoor      
+    Brighouse Sports A           Littlemoor      
 John Bloomer             18 Terry Laidlaw            21 
 Nigel Bloomer            21 Philip Vayro             14 
 Janet Hopper             11 Jim Moorin               21 
@@ -2837,7 +2837,7 @@ Connor Davis             21 *No Player*               0
                 Points:   6                 Points:   4 
 
         Division 1                 Wed 28th May         
-     Pudsey Littlemoor            Elland CA & BC        
+     Littlemoor            Elland CA & BC        
 Glen Pratt               11 Steven R Kenworthy       21 
 Terry Laidlaw            21 Anthony Dubaj             9 
 Andy (A) Smith           13 Roger Stopford           21 
@@ -3227,7 +3227,7 @@ James Parkinson          20 Phil Brooke              21
                 Points:   3                 Points:   8 
 
         Division 1                  Wed 4th Jun         
-       Hunslet Moor              Pudsey Littlemoor      
+       Hunslet Moor              Littlemoor      
 Phil Hill                21 Marc Armitage            17 
 Danny Towning            21 Craig Hebbard            13 
 Darren Cookson           21 Jim Moorin                9 
@@ -3552,7 +3552,7 @@ Ashley Wilcock           12 Frank Cullen             21
                 Points:   9                 Points:   1 
 
         Division 1                 Wed 25th Jun         
-     Pudsey Littlemoor           Thornhill CB & C       
+     Littlemoor           Thornhill CB & C       
 John Armitage            21 Ryan Mitchell             8 
 Philip Richards          21 Ben Sweeney              10 
 Terry Laidlaw            21 Ross Ingham              10 
@@ -3851,7 +3851,7 @@ Ryan Mitchell            21 Tom Lawrence             20
                 Points:   9                 Points:   1 
 
         Division 1                  Wed 2nd Jul         
-       Lower Hopton              Pudsey Littlemoor      
+       Lower Hopton              Littlemoor      
 Cliver Hirst             21 Glen Pratt               20 
 Robert Maude             21 Terry Laidlaw            20 
 Martin Laycock           21 Jim Moorin               14 
@@ -4215,7 +4215,7 @@ Neil Broadbent           19 John Bloomer             21
                 Points:   7                 Points:   3 
 
         Division 1                  Wed 9th Jul         
-     Pudsey Littlemoor             Crossgates B         
+     Littlemoor             Crossgates B         
 Alan Mazurke              8 Steve Mason              21 
 Glen Pratt               21 Garreth Lally            20 
 Terry Laidlaw            21 Desmond Kearney           9 
@@ -4644,7 +4644,7 @@ Steve Wainwright         19 Danny Towning            21
                 Points:   9                 Points:   1 
 
         Division 1                 Wed 16th Jul         
-     Pudsey Littlemoor              Pudsey BC B         
+     Littlemoor              Pudsey BC B         
 Terry Laidlaw             6 James Hanson             21 
 Philip Richards          18 Paul Bowes               21 
 Jim Moorin               18 Tom Lawrence             21 
@@ -5034,7 +5034,7 @@ Paul Bowes               21 Richard Gleghorn         17
                 Points:   7                 Points:   3 
 
         Division 1                 Wed 23rd Jul         
-      Cleck Sports A             Pudsey Littlemoor      
+      Cleck Sports A             Littlemoor      
 John Barraclough         21 Marc Armitage            20 
 Phil Brooke              21 Jim Moorin               12 
 Michael Rhodes           21 Craig Hebbard            10 
@@ -5463,7 +5463,7 @@ Kevin Wood               16 Robert Maude             21
                 Points:   7                 Points:   3 
 
         Division 1                 Wed 30th Jul         
-       Rastrick 'A'              Pudsey Littlemoor      
+       Rastrick 'A'              Littlemoor      
 Jack Humpleby            21 Terry Laidlaw            15 
 Joel Adby                21 Philip Richards          12 
 Frank Cullen             21 John Armitage             3 
@@ -5827,7 +5827,7 @@ Michael Wood             21 Neil Nicholson           19
                 Points:   9                 Points:   1 
 
         Division 1                  Wed 6th Aug         
-     Pudsey Littlemoor          Brighouse Sports A      
+     Littlemoor          Brighouse Sports A      
 Terry Laidlaw            21 Kevin Wood               11 
 Philip Richards           8 Janet Hopper             21 
 Jim Moorin               21 John Bloomer             11 
@@ -6269,7 +6269,7 @@ Danny Towning            21 Kevin Rankin              9
                 Points:   7                 Points:   3 
 
         Division 1                 Wed 13th Aug         
-      Elland CA & BC             Pudsey Littlemoor      
+      Elland CA & BC             Littlemoor      
 Adrian Kenyon            21 Alan Mazurke              9 
 Anthony Dubaj            21 Jim Moorin               13 
 Steven R Kenworthy       21 Andy (A) Smith           18 
@@ -6659,7 +6659,7 @@ Mick Walton              17 Peter King               21
                 Points:   6                 Points:   4 
 
         Division 1                 Wed 20th Aug         
-     Pudsey Littlemoor             Hunslet Moor         
+     Littlemoor             Hunslet Moor         
 Andy (A) Smith           21 Phil Hill                19 
 Philip Vayro             21 Graham Hainsworth        14 
 John Armitage            12 Danny Towning            21 

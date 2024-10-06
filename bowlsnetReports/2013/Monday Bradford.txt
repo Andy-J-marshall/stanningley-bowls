@@ -377,7 +377,7 @@ Tony Smith (a)          10 Lee Murgatroyd          21
                Points:  10                Points:  16 
 
  Division 3 (City Sports)         Mon 22nd Apr        
-      Brackenhill A            Pudsey Littlemoor      
+      Brackenhill A            Littlemoor      
 Alan Marsh              21 Kath Mazurke            19 
 Ken Marsh               11 Angela Carter           21 
 Gillian Benson          21 Bob Dove                17 
@@ -685,7 +685,7 @@ Susan Rymer             21 Graham Wilkinson (a)    15
                Points:  19                Points:   7 
 
  Division 3 (City Sports)         Mon 29th Apr        
-    Pudsey Littlemoor             Birkenshaw A        
+    Littlemoor             Birkenshaw A        
 Bob Dove                21 David Griffiths         15 
 Ken Walker              21 Ronald Ellis            15 
 Angela Carter           11 Stuart Blaylock (a)     21 
@@ -949,7 +949,7 @@ Alan Farrow (a)         21 Peter Simpson (a)       13
                Points:  10                Points:  16 
 
  Division 3 (City Sports)         Mon 6th May         
-    Pudsey Littlemoor                Peel B           
+    Littlemoor                Peel B           
 Angela Carter           18 David Firth             21 
 Billy Thorpe            15 James Dennison (b)      21 
 Ian Hibbert             21 Robert Denby            15 
@@ -1224,7 +1224,7 @@ Trevor Hodgson          21 Graham Wilkinson (a)     8
                Points:  18                Points:   8 
 
  Division 3 (City Sports)         Mon 13th May        
-      Shipley Club C           Pudsey Littlemoor      
+      Shipley Club C           Littlemoor      
 Peter Linaker           14 Kath Mazurke            21 
 Derek Overall           21 Billy Thorpe            19 
 Wendy Spivey            21 Bob Dove                19 
@@ -1499,7 +1499,7 @@ Robert Denby            15 Peter Linaker           21
                Points:  21                Points:   5 
 
  Division 3 (City Sports)         Mon 20th May        
-    Pudsey Littlemoor             Crowghyll B         
+    Littlemoor             Crowghyll B         
 Philip A Richards       14 Sylvia Halliday         21 
 Billy Thorpe            10 Kathleen Stockdale      21 
 Ken Walker              21 Fred Dalby              17 
@@ -1763,7 +1763,7 @@ David Earl              21 Graham Wilkinson (a)    12
                Points:  16                Points:  10 
 
  Division 3 (City Sports)         Mon 3rd Jun         
-        Tyersal A              Pudsey Littlemoor      
+        Tyersal A              Littlemoor      
 Patrick Brannan         10 Angela Carter           21 
 Wendy Shimbles (a)      21 Billy Thorpe             5 
 Simon Metcalfe          21 Kath Mazurke            14 
@@ -2027,7 +2027,7 @@ Neil Rankin (a)         21 Mick Frost (a)          13
                Points:  14                Points:  12 
 
  Division 3 (City Sports)         Mon 10th Jun        
-     Bradford Moor A           Pudsey Littlemoor      
+     Bradford Moor A           Littlemoor      
 Barry Durrans (a)       21 Billy Thorpe            18 
 Colin Wright            21 Angela Carter            5 
 Elaine Farrow           18 Ian Hibbert             21 
@@ -2335,7 +2335,7 @@ Robert Denby             9 Wayne Woodhead          21
                Points:  14                Points:  12 
 
  Division 3 (City Sports)         Mon 17th Jun        
-    Pudsey Littlemoor               Myrtle B          
+    Littlemoor               Myrtle B          
 Angela Carter           21 Irene Bird              19 
 Terry Laidlaw           21 Brian Royston           19 
 Ian Hibbert              7 Michael Wilson          21 
@@ -2610,7 +2610,7 @@ David Earl              20 Simon Metcalfe          21
                Points:  12                Points:  14 
 
  Division 3 (City Sports)         Mon 24th Jun        
-       Birkenshaw A            Pudsey Littlemoor      
+       Birkenshaw A            Littlemoor      
 Donald Whiteley         21 Bob Dove                15 
 Anthony Hatherley (a)   21 Billy Thorpe             8 
 Laurie Taylor           21 Philip A Richards       16 
@@ -2885,7 +2885,7 @@ Derek Edon              21 Graham Wilkinson (a)    13
                Points:  20                Points:   6 
 
  Division 3 (City Sports)         Mon 1st Jul         
-          Peel B               Pudsey Littlemoor      
+          Peel B               Littlemoor      
 James Dennison (b)      16 Angela Carter           21 
 Robert Denby            21 Billy Thorpe             7 
 Andrew Dennison (b)     21 Philip A Richards       14 
@@ -3149,7 +3149,7 @@ Graham Wood             21 Jim Kelly               13
                Points:  22                Points:   4 
 
  Division 3 (City Sports)         Mon 8th Jul         
-    Pudsey Littlemoor            Shipley Club C       
+    Littlemoor            Shipley Club C       
 Angela Carter           21 Ben Spivey               8 
 Kath Mazurke            12 Paul Colman             21 
 Philip A Richards       21 Derek Edon               7 
@@ -3424,7 +3424,7 @@ Wayne Woodhead          20 Graham Wilkinson (a)    21
                Points:  20                Points:   6 
 
  Division 3 (City Sports)         Mon 15th Jul        
-       Crowghyll B             Pudsey Littlemoor      
+       Crowghyll B             Littlemoor      
 Geoff Shores            18 Terry Laidlaw           21 
 Fred Dalby              21 Billy Thorpe            15 
 Kathleen Stockdale      17 Angela Carter           21 
@@ -3699,7 +3699,7 @@ Andrew Firth (b)        21 Steve Alred             15
                Points:  26                Points:   0 
 
  Division 3 (City Sports)         Mon 22nd Jul        
-    Pudsey Littlemoor              Tyersal A          
+    Littlemoor              Tyersal A          
 Bob Dove                10 Wayne Woodhead          21 
 Alan Mazurke            21 Gerry Smith             16 
 Philip A Richards       10 Wendy Shimbles (a)      21 
@@ -3974,7 +3974,7 @@ David Firth             21 David Earl              16
                Points:  22                Points:   4 
 
  Division 3 (City Sports)         Mon 29th Jul        
-    Pudsey Littlemoor           Bradford Moor A       
+    Littlemoor           Bradford Moor A       
 Billy Thorpe            21 Kenneth Smith           19 
 Alan Mazurke            21 Alan Naylor             18 
 Bob Dove                21 Derek Briggs (a)        20 
@@ -4238,7 +4238,7 @@ Alan Farrow (a)         16 Graham Wilkinson (a)    21
                Points:  14                Points:  12 
 
  Division 3 (City Sports)         Mon 5th Aug         
-         Myrtle B              Pudsey Littlemoor      
+         Myrtle B              Littlemoor      
 Brian Royston            6 Angela Carter           21 
 Irene Bird              21 Kath Mazurke             8 
 Jim Kelly               21 Billy Thorpe            11 
@@ -4799,7 +4799,7 @@ Stephen Town            21 Barry Durrans (a)       17
                Points:  20                Points:   6 
 
  Division 3 (City Sports)         Mon 19th Aug        
-    Pudsey Littlemoor            Brackenhill A        
+    Littlemoor            Brackenhill A        
 Angela Carter           21 Darryl Bowles           18 
 Kath Mazurke            21 Ken Marsh               15 
 Billy Thorpe             8 Andrew Mackrill (a)     21 

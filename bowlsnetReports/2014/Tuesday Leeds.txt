@@ -16,7 +16,7 @@ Adrian Brier            9 Ian Brine              21
               Points:   4               Points:  14 
 
        Division 1                Tue 8th Apr        
-      Horsforth W/S             Roundhay Pk A       
+      Horsforth Woodside             Roundhay Pk A       
 Simon Chaffer          15 Andy Sharrett          21 
 Graham Chaffer         21 Martin Lally           15 
 Andy Wood              21 Richard Hey            19 
@@ -367,7 +367,7 @@ Ian McFarlane           4 Robert Spink           21
               Points:  15               Points:   3 
 
        Division 1               Tue 15th Apr        
-     Scatcherd Pk A             Horsforth W/S       
+     Scatcherd Pk A             Horsforth Woodside       
 David Woodhead         21 Graham Chaffer         19 
 Pauline Crabtree       21 Brian Dowling          19 
 Mark Maguire           21 Paul Rosser            17 
@@ -653,7 +653,7 @@ Graham Hainsworth      21 Mark Maguire            8
               Points:  17               Points:   1 
 
        Division 1               Tue 22nd Apr        
-      Horsforth W/S              Meanwood A         
+      Horsforth Woodside              Meanwood A         
 Chris Wood             21 Steve Kane              7 
 Brian Dowling          17 John Sanders           21 
 Norman Shaw            21 Neil Porter            20 
@@ -991,7 +991,7 @@ Steven Bottomley        6 Robert Spink           21
               Points:   3               Points:  15 
 
        Division 1               Tue 29th Apr        
-      New Farnley A             Horsforth W/S       
+      New Farnley A             Horsforth Woodside       
 Ron Lavan              21 Chris Wood             13 
 Jake Skelton           21 Graham Chaffer          9 
 John Ingham            21 Norman Shaw            15 
@@ -1290,7 +1290,7 @@ Les Oddy               21 Jake Skelton           13
               Points:   5               Points:  13 
 
        Division 1                Tue 6th May        
-      Horsforth W/S           Chapel Allerton A     
+      Horsforth Woodside           Chapel Allerton A     
 Simon Chaffer          14 Steven Bottomley       21 
 Chris Wood             21 Mandy Wilson           16 
 Andy McMahon           21 Kathleen Taylor        12 
@@ -1615,7 +1615,7 @@ Billy Beddard          11 Robert Spink           21
               Points:  14               Points:   4 
 
        Division 1               Tue 13th May        
-       Armley Park              Horsforth W/S       
+       Armley Park              Horsforth Woodside       
 John Stocks            21 Brian Dowling          16 
 Mark King              21 David Hill             18 
 David Hurd             13 Chris Wood             21 
@@ -1927,7 +1927,7 @@ Adrian Brier           21 Paul King              11
               Points:  13               Points:   5 
 
        Division 1               Tue 20th May        
-      Horsforth W/S             Chapel Street       
+      Horsforth Woodside             Chapel Street       
 Simon Chaffer          17 Neil Wood Jnr          21 
 Graham Chaffer         21 Billy Beddard          12 
 Andy Wood              21 Neil Goodhall           9 
@@ -2239,7 +2239,7 @@ Ian Worrall            21 John Crabtree           9
               Points:  15               Points:   3 
 
        Division 1               Tue 27th May        
-       Cranmore A               Horsforth W/S       
+       Cranmore A               Horsforth Woodside       
 Michael Goodhall       21 Graham Chaffer         11 
 Lyn Dye                21 Paul Rosser            11 
 Katie Turner           21 Brian Dowling           5 
@@ -2564,7 +2564,7 @@ Adrian Brier           21 Robert Spink           17
               Points:  15               Points:   3 
 
        Division 1                Tue 3rd Jun        
-      Saville Park              Horsforth W/S       
+      Saville Park              Horsforth Woodside       
 John Campey            21 Chris Wood             15 
 Peter Whipp            21 Simon Chaffer          14 
 Robert Gore            18 Graham Chaffer         21 
@@ -2824,7 +2824,7 @@ Matthew Leaf           21 Barry Driscoll          5
               Points:  16               Points:   2 
 
        Division 1               Tue 10th Jun        
-      Horsforth W/S            Hunslet Moor A       
+      Horsforth Woodside            Hunslet Moor A       
 Graham Chaffer         21 Michelle Bolton        10 
 David Hill             14 Jim Bootland           21 
 Andy McMahon           21 Gordon Monk            19 
@@ -3201,7 +3201,7 @@ Richard Hey            15 Robert Spink           21
               Points:  16               Points:   2 
 
        Division 1               Tue 17th Jun        
-      Rothwell BC A             Horsforth W/S       
+      Rothwell BC A             Horsforth Woodside       
 Graham Butterfield     21 Norman Shaw            20 
 Gary Dennison          21 Chris Wood              9 
 Peter Linley           21 David Hill             20 
@@ -3474,7 +3474,7 @@ Brendan Keville        21 Adrian Brier           12
               Points:  17               Points:   1 
 
        Division 1               Tue 24th Jun        
-      Roundhay Pk A             Horsforth W/S       
+      Roundhay Pk A             Horsforth Woodside       
 Martin Lally           21 Brian Dowling           6 
 Mick Firth             19 Graham Chaffer         21 
 Danny Love             21 Chris Wood             12 
@@ -3825,7 +3825,7 @@ Darren Cookson          9 Ian Howard             21
               Points:  15               Points:   3 
 
        Division 1                Tue 1st Jul        
-      Horsforth W/S            Scatcherd Pk A       
+      Horsforth Woodside            Scatcherd Pk A       
 Simon Chaffer          21 Laurie Walsh           16 
 Graham Chaffer         21 George Bentley         13 
 Brian Dowling          21 Colin Firth            16 
@@ -4111,7 +4111,7 @@ Adam Ward              21 Jim Bootland            2
               Points:   2               Points:  16 
 
        Division 1                Tue 8th Jul        
-       Meanwood A               Horsforth W/S       
+       Meanwood A               Horsforth Woodside       
 Ian Howard             21 Brian Dowling          12 
 Bill Shaw              10 Norman Shaw            21 
 John Sanders           19 Simon Chaffer          21 
@@ -4449,7 +4449,7 @@ Darren Cookson         14 Alex McSheehy          21
               Points:  17               Points:   1 
 
        Division 1               Tue 15th Jul        
-      Horsforth W/S             New Farnley A       
+      Horsforth Woodside             New Farnley A       
 Chris Wood             21 Jake Skelton            8 
 Simon Chaffer          21 Paul Wood              10 
 Brian Dowling          21 John Ingham            14 
@@ -4748,7 +4748,7 @@ Ryan Lynch             21 Gordon Monk            12
               Points:  17               Points:   1 
 
        Division 1               Tue 22nd Jul        
-    Chapel Allerton A           Horsforth W/S       
+    Chapel Allerton A           Horsforth Woodside       
 Paul Burke              6 Chris Wood             21 
 Andrew Limbert         21 Graham Chaffer         14 
 Mandy Wilson           21 Brian Dowling          13 
@@ -5073,7 +5073,7 @@ Robert Spink           21 Dave Waldron            9
               Points:  14               Points:   4 
 
        Division 1               Tue 29th Jul        
-      Horsforth W/S              Armley Park        
+      Horsforth Woodside              Armley Park        
 Graham Chaffer         21 Alison Stocks          10 
 Chris Wood             15 John Stocks            21 
 Paul Rosser            21 Nicola Stocks           8 
@@ -5385,7 +5385,7 @@ Mark King              11 Michelle Bolton        21
               Points:   2               Points:  16 
 
        Division 1                Tue 5th Aug        
-      Chapel Street             Horsforth W/S       
+      Chapel Street             Horsforth Woodside       
 Neil Wood Jnr          21 Chris Wood             12 
 Kevin Larner           21 Norman Shaw            16 
 Mick Bailey            19 Brian Dowling          21 
@@ -5697,7 +5697,7 @@ Laurie Walsh           13 Ian Worrall            21
               Points:   2               Points:  16 
 
        Division 1               Tue 12th Aug        
-      Horsforth W/S              Cranmore A         
+      Horsforth Woodside              Cranmore A         
 Graham Chaffer         21 Darren Cookson         20 
 Brian Dowling          21 Mick Turner            14 
 Norman Shaw            21 Matthew Turner         12 
@@ -6022,7 +6022,7 @@ Robert Spink           21 Graham Hainsworth      14
               Points:   3               Points:  15 
 
        Division 1               Tue 19th Aug        
-      Horsforth W/S             Saville Park        
+      Horsforth Woodside             Saville Park        
 Graham Chaffer         21 Peter Whipp            11 
 Chris Wood             21 Steve Portman          13 
 Brian Dowling          21 Nicola Portman          6 
@@ -6282,7 +6282,7 @@ Evelyn Driscoll        15 Tony Barker            21
               Points:   2               Points:  16 
 
        Division 1               Tue 26th Aug        
-     Hunslet Moor A             Horsforth W/S       
+     Hunslet Moor A             Horsforth Woodside       
 Les Oddy               21 Brian Dowling          11 
 Phil Hill              21 Chris Wood             20 
 Graham Hainsworth      21 Paul Rosser             8 
@@ -6659,7 +6659,7 @@ Joanne Speight         17 Andrew Ford            21
               Points:   3               Points:  15 
 
        Division 1                Tue 2nd Sep        
-      Horsforth W/S             Rothwell BC A       
+      Horsforth Woodside             Rothwell BC A       
 Brian Dowling          21 Ian Brine              20 
 Chris Wood             21 Graham Butterfield     12 
 Simon Chaffer          13 Brendan Keville        21 

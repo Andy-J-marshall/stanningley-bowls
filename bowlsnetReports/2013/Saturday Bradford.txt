@@ -453,7 +453,7 @@ Chris Hatton            21 Dave Fisher             20
                Points:  23                Points:   7 
 
    Division 1 - Naylor            Sat 20th Apr        
-   Pudsey Littlemoor A         Brighouse Sports A     
+   Littlemoor A         Brighouse Sports A     
 Duncan Reeves           21 Tony Riley              10 
 Brian Richards          21 Steve Foster (a)        19 
 Robbie Ellis            18 Ronnie Wormald (a)      21 
@@ -468,7 +468,7 @@ Danny Towning (a)       21 Andrew Wood             20
                Points:  19                Points:  11 
 
    Division 2 - Godwin            Sat 20th Apr        
-    Brighouse Sports B        Pudsey Littlemoor B     
+    Brighouse Sports B        Littlemoor B     
 Anthony Naylor          21 Terry Laidlaw           14 
 Kevin Wood              21 Ken Walker               5 
 Raymond Stansfield      21 Kath Bywell             17 
@@ -1053,7 +1053,7 @@ Stephen Gilroy          21 Mark Senior             13
                Points:  18                Points:  12 
 
    Division 1 - Naylor            Sat 27th Apr        
-        Clayton A             Pudsey Littlemoor A     
+        Clayton A             Littlemoor A     
 Steve Wilkinson         21 Brian Richards          20 
 Paul Kaye               20 Paul Jacques            21 
 Paul Gill               21 Danny Towning (a)       20 
@@ -1128,7 +1128,7 @@ Jeff Ramsden            21 Helen Simpson           16
                Points:  25                Points:   5 
 
    Division 2 - Godwin            Sat 27th Apr        
-   Pudsey Littlemoor B             Rufford A          
+   Littlemoor B             Rufford A          
 Alan Mazurke            11 Guy Barrie (a)          21 
 Kath Mazurke            17 Donald Jones            21 
 Angela Carter            9 Allan Caine             21 
@@ -1623,7 +1623,7 @@ John Preston            13 Andrew Wood             21
                Points:  20                Points:  10 
 
    Division 1 - Naylor            Sat 11th May        
-       Eccleshill A           Pudsey Littlemoor A     
+       Eccleshill A           Littlemoor A     
 Nicky Bastow            18 Brian Richards          21 
 Keith Hall (b)          13 Adam Mellor             21 
 Andrew Davison (a)      18 John Armitage           21 
@@ -1728,7 +1728,7 @@ Dan Beardsworth (b)     21 Richard Firth           17
                Points:  30                Points:   0 
 
    Division 2 - Godwin            Sat 11th May        
-   Pudsey Littlemoor B              Whitkirk          
+   Littlemoor B              Whitkirk          
 Alan Mazurke            21 Phil Vayro              16 
 Kath Mazurke            21 Brian Sunter            19 
 Kath Bywell             19 Nichole Farrar          21 
@@ -2208,7 +2208,7 @@ Chris Hatton            21 Paul Rooks              19
                Points:  22                Points:   8 
 
    Division 1 - Naylor            Sat 18th May        
-   Pudsey Littlemoor A           Shipley Club A       
+   Littlemoor A           Shipley Club A       
 Duncan Reeves           18 David Jacques (a)       21 
 Martin Fulton           21 Matthew Jacques          7 
 Robbie Ellis             7 Danny Carter (a)        21 
@@ -2328,7 +2328,7 @@ Jimmy Hearne             6 Dan Beardsworth (b)     21
                Points:  10                Points:  20 
 
    Division 2 - Godwin            Sat 18th May        
-       Greengates A           Pudsey Littlemoor B     
+       Greengates A           Littlemoor B     
 Stuart Wilson (a)       21 Brian Richards          10 
 Colin Rhodes (a)        21 Bob Scott               14 
 Tommy Powell            21 Ken Walker               5 
@@ -2823,7 +2823,7 @@ Neil Nicholson          21 Andy Denton (a)         15
                Points:  27                Points:   3 
 
    Division 1 - Naylor            Sat 8th Jun         
-   Pudsey Littlemoor A             Crossgates         
+   Littlemoor A             Crossgates         
 John Armitage            6 Dave Morris             21 
 Duncan Reeves           21 Joe Cranston            12 
 Martin Fulton           19 Peter Wilcox            21 
@@ -2928,7 +2928,7 @@ John Butterworth        21 Paul Ridealgh (a)       13
                Points:  25                Points:   5 
 
    Division 2 - Godwin            Sat 8th Jun         
-          Wyke A              Pudsey Littlemoor B     
+          Wyke A              Littlemoor B     
 Mike Lambert            16 Angela Carter           21 
 John Armitage           21 Margaret Slater          5 
 Richard Crowther (a)    21 William Swailes         12 
@@ -3393,7 +3393,7 @@ Ben Stockdale           21 Brian Smith              7
                Points:  15                Points:  13 
 
    Division 1 - Naylor            Sat 15th Jun        
-       Asa Briggs A           Pudsey Littlemoor A     
+       Asa Briggs A           Littlemoor A     
 Andy Denton (a)         21 Brian Richards          15 
 Scott Sansom            21 Robbie Ellis            19 
 Glen McCafferty (a)     21 Adam Mellor             20 
@@ -3528,7 +3528,7 @@ Dan Beardsworth (b)     21 John Butterworth        17
                Points:  21                Points:   9 
 
    Division 2 - Godwin            Sat 15th Jun        
-   Pudsey Littlemoor B              Cranmore          
+   Littlemoor B              Cranmore          
 Robert Baines           21 Matthew Turner          13 
 Bob Scott               17 Michael Goodall         21 
 Bob Dove                21 Michael Turner           8 
@@ -4428,7 +4428,7 @@ Chris Hatton            21 Neil Mylan              16
                Points:  27                Points:   3 
 
    Division 1 - Naylor            Sat 29th Jun        
-   Pudsey Littlemoor A             Ladyhill A         
+   Littlemoor A             Ladyhill A         
 John Armitage            9 Mick Hall               21 
 Robbie Ellis            21 Scott Haynes            19 
 Martin Fulton           19 Richard Bloodworth (a)  21 
@@ -4518,7 +4518,7 @@ Donald Jones            21 Jimmy Hearne            13
                Points:  20                Points:  10 
 
    Division 2 - Godwin            Sat 29th Jun        
-       Hove Edge A            Pudsey Littlemoor B     
+       Hove Edge A            Littlemoor B     
 Graham Jackson          18 Kath Bywell             21 
 Lynne Saxby             21 Angela Carter           13 
 Peter Martin            21 Kath Mazurke             9 
@@ -5013,7 +5013,7 @@ Dave Fisher             21 Raymond Stansfield      12
                Points:  24                Points:   6 
 
    Division 1 - Naylor            Sat 6th Jul         
-       Eccleshill B           Pudsey Littlemoor A     
+       Eccleshill B           Littlemoor A     
 Keith Hall (b)          21 Martin Fulton           19 
 Mark Reynolds           21 Duncan Reeves           11 
 Ken Gilroy              16 Robbie Ellis            21 
@@ -5118,7 +5118,7 @@ Dan Beardsworth (b)     11 Stan Elwell             21
                Points:  16                Points:  14 
 
    Division 2 - Godwin            Sat 6th Jul         
-   Pudsey Littlemoor B             Guiseley A         
+   Littlemoor B             Guiseley A         
 Alan Mazurke             2 Michael Hall            21 
 Luke Thompson           19 Thomas Cater            21 
 William Swailes         16 David Leather           21 
@@ -6033,7 +6033,7 @@ James Davison (a)       21 Raymond Stansfield      11
                Points:  15                Points:  15 
 
    Division 1 - Naylor            Sat 20th Jul        
-         Pudsey A             Pudsey Littlemoor A     
+         Pudsey A             Littlemoor A     
 John Spinks             21 Adam Mellor             10 
 Ian Shaw                21 Duncan Reeves           18 
 Paul Bowes              21 John Armitage           19 
@@ -6123,7 +6123,7 @@ Mick Bailey             13 Andy Newell (b)         21
                Points:  26                Points:   4 
 
    Division 2 - Godwin            Sat 20th Jul        
-   Pudsey Littlemoor B              Pudsey B          
+   Littlemoor B              Pudsey B          
 Alan Mazurke             9 Connor Davis            21 
 Kath Mazurke            21 Stewart Watson (b)      15 
 Luke Thompson           11 Dan Beardsworth (b)     21 
@@ -6588,7 +6588,7 @@ Betty Nicholls           3 John Dale               21
                Points:  13                Points:  15 
 
    Division 1 - Naylor            Sat 27th Jul        
-   Pudsey Littlemoor A              Pudsey A          
+   Littlemoor A              Pudsey A          
 Brian Richards           9 John Spinks             21 
 Luke Thompson           15 Ian Shaw                21 
 John Armitage            8 Gary Wike               21 
@@ -6723,7 +6723,7 @@ Paul Ridealgh (a)       12 Kevin Wood              21
                Points:  22                Points:   8 
 
    Division 2 - Godwin            Sat 27th Jul        
-         Pudsey B             Pudsey Littlemoor B     
+         Pudsey B             Littlemoor B     
 Richard Hodgson (b)     21 Kath Mazurke            10 
 Neil Nicholson          14 Terry Laidlaw           21 
 Stuart Hanson           21 Angela Carter            8 
@@ -7248,7 +7248,7 @@ James Hanson            21 Andrew Wood             10
                Points:  18                Points:  12 
 
    Division 1 - Naylor            Sat 3rd Aug         
-   Pudsey Littlemoor A             Clayton A          
+   Littlemoor A             Clayton A          
 Danny Towning (a)       16 Andrew Tate             21 
 Martin Fulton           21 Steve Wilkinson         18 
 Duncan Reeves           15 Philip Lister           21 
@@ -7323,7 +7323,7 @@ Mick Bailey             21 Donald Whiteley         10
                Points:  29                Points:   1 
 
    Division 2 - Godwin            Sat 3rd Aug         
-        Rufford A             Pudsey Littlemoor B     
+        Rufford A             Littlemoor B     
 David Whelan (b)        21 Alan Mazurke            14 
 Martyn Benson (a)       21 Terry Laidlaw           13 
 David Kirkbright        21 Angela Carter           20 
@@ -7788,7 +7788,7 @@ Betty Jefferson         21 Janet Barnard           14
                Points:  16                Points:  12 
 
    Division 1 - Naylor            Sat 10th Aug        
-    Brighouse Sports A        Pudsey Littlemoor A     
+    Brighouse Sports A        Littlemoor A     
 Ronnie Wormald (a)      18 Brian Richards          21 
 Alan Bray               21 Martin Fulton           19 
 Danny Fountain          21 Paul Jacques             9 
@@ -7923,7 +7923,7 @@ Dan Beardsworth (b)     19 Graham Oliver (a)       21
                Points:  23                Points:   7 
 
    Division 2 - Godwin            Sat 10th Aug        
-   Pudsey Littlemoor B         Brighouse Sports B     
+   Littlemoor B         Brighouse Sports B     
 Alan Mazurke            16 Ben Wood                21 
 Kath Mazurke            19 Andrew Wood             21 
 Kath Bywell             21 Peter Owen              10 
@@ -8403,7 +8403,7 @@ Andy Denton (a)         21 Andrew Wood              9
                Points:  17                Points:  13 
 
    Division 1 - Naylor            Sat 17th Aug        
-      Shipley Club A          Pudsey Littlemoor A     
+      Shipley Club A          Littlemoor A     
 Peter Mountain          14 David Cooper (a)        21 
 Steve Wood (a)          21 Craig Hebbard           19 
 David Jacques (a)       21 Duncan Reeves           15 
@@ -8523,7 +8523,7 @@ Richard Hodgson (b)     17 Peter Senior            21
                Points:   9                Points:  21 
 
    Division 2 - Godwin            Sat 17th Aug        
-   Pudsey Littlemoor B            Greengates A        
+   Littlemoor B            Greengates A        
 Alan Mazurke            13 Tommy Powell            21 
 Kath Mazurke            12 Martin Wilson           21 
 Kath Bywell             13 Colin Rhodes (a)        21 
@@ -9003,7 +9003,7 @@ Chris Mordue (a)        21 Paul Gill               17
                Points:  22                Points:   8 
 
    Division 1 - Naylor            Sat 24th Aug        
-   Pudsey Littlemoor A            Eccleshill A        
+   Littlemoor A            Eccleshill A        
 David Cooper (a)        21 Nicky Bastow            15 
 Duncan Reeves           21 Paul Hillam             17 
 Adam Mellor             21 Justin Holgate (b)      11 
@@ -9063,7 +9063,7 @@ Ian Matthews             6 James Wilcox            21
                Points:   1                Points:  29 
 
    Division 2 - Godwin            Sat 24th Aug        
-         Whitkirk             Pudsey Littlemoor B     
+         Whitkirk             Littlemoor B     
 Phil Cooper             21 Adam Mellor             14 
 Nichole Farrar          21 Robert Baines           12 
 Phil Hill               21 Kath Bywell             16 
@@ -9633,7 +9633,7 @@ Keith Hall (b)          17 Andrew Wood             21
                Points:  11                Points:  19 
 
    Division 1 - Naylor            Sat 31st Aug        
-        Crossgates            Pudsey Littlemoor A     
+        Crossgates            Littlemoor A     
 Terry Kelly             21 Andy Smith              11 
 Joe Cranston            21 Danny Towning (a)        6 
 Nigel Cranston          21 Luke Thompson           18 
@@ -9723,7 +9723,7 @@ Andy Hodgson            16 Ryan Benson (a)         21
                Points:  21                Points:   9 
 
    Division 2 - Godwin            Sat 31st Aug        
-   Pudsey Littlemoor B               Wyke A           
+   Littlemoor B               Wyke A           
 Alan Mazurke             8 Mike Lambert            21 
 Kath Mazurke            13 Robert Wilkinson        21 
 Kath Bywell             14 Stephen Ward            21 
@@ -10218,7 +10218,7 @@ James Hanson            21 Chris Jacques            9
                Points:  24                Points:   6 
 
    Division 1 - Naylor            Sat 7th Sep         
-   Pudsey Littlemoor A            Asa Briggs A        
+   Littlemoor A            Asa Briggs A        
 David Cooper (a)        21 Jim Fleming              4 
 Duncan Reeves           17 Andrew Heenan           21 
 Neil McPhail            21 Steve Wilkinson          6 
@@ -10263,7 +10263,7 @@ Scott Haynes            21 Jeff Goodall            15
                Points:  20                Points:  10 
 
    Division 2 - Godwin            Sat 7th Sep         
-         Cranmore             Pudsey Littlemoor B     
+         Cranmore             Littlemoor B     
 Michael Goodall         21 Alan Mazurke             9 
 Les Oddy                21 Terry Laidlaw           15 
 Craig Oddy              21 Bob Dove                 8 
@@ -10803,7 +10803,7 @@ Glen McCafferty (a)     21 Danny Carter (a)        11
                Points:  23                Points:   7 
 
    Division 1 - Naylor            Sat 14th Sep        
-        Ladyhill A            Pudsey Littlemoor A     
+        Ladyhill A            Littlemoor A     
 Alec Byrnes             21 Glen Smith               6 
 Steve Cooper            19 Paul Jacques            21 
 Robbie Fitzpatrick      21 Craig Hebbard           16 
@@ -10923,7 +10923,7 @@ Ian Shaw                21 Michael Goodall         16
                Points:  24                Points:   6 
 
    Division 2 - Godwin            Sat 14th Sep        
-   Pudsey Littlemoor B            Hove Edge A         
+   Littlemoor B            Hove Edge A         
 Kath Mazurke            21 Richard Hopley          17 
 Terry Laidlaw           10 Lynne Saxby             21 
 Kath Bywell             21 Kenny Barker (a)        14 
@@ -11433,7 +11433,7 @@ James Hanson            21 Nigel Cranston          13
                Points:  26                Points:   4 
 
    Division 1 - Naylor            Sat 21st Sep        
-   Pudsey Littlemoor A            Eccleshill B        
+   Littlemoor A            Eccleshill B        
 John Armitage           20 Ken Gilroy              21 
 Marc Armitage           15 Roger Binks             21 
 Neil McPhail            14 Mark Reynolds           21 
@@ -11463,7 +11463,7 @@ Andrew Wood             21 Malcolm Fowler (a)      12
                Points:  18                Points:  12 
 
    Division 2 - Godwin            Sat 21st Sep        
-        Guiseley A            Pudsey Littlemoor B     
+        Guiseley A            Littlemoor B     
 Colin Matthewman        21 Terry Laidlaw           17 
 Joe Stockdale           21 Robert Baines            7 
 Ralph Sissons           21 Kath Mazurke            10 

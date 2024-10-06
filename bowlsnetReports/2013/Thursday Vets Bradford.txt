@@ -15,7 +15,7 @@ Mary Hemsley         21 Tony Walton           18
          Aggregate: 136           Aggregate: 141 
 
       Division 1              Thu 4th Apr        
-      Guiseley B          Pudsey Littlemoor A    
+      Guiseley B          Littlemoor A    
 Margaret Wood        21 Colin Wailes          15 
 Colin Hargreaves     18 Colin Lally           21 
 Marie Sutcliffe      21 Kath Bywell            2 
@@ -63,7 +63,7 @@ Gerry Hird           11 Paul Hillam           21
          Aggregate: 119           Aggregate: 137 
 
       Division 1              Thu 4th Apr        
-  Pudsey Littlemoor B          Guiseley A        
+  Littlemoor B          Guiseley A        
 Arthur Roundhill     13 Ronnie Witham         21 
 Bob Baines           21 John Fletcher         12 
 Bill Thorpe          13 Bill Hardwick         21 
@@ -87,7 +87,7 @@ Sylvia Halliday       3 Tony Riley            21
          Aggregate:  59           Aggregate: 168 
 
       Division 1              Thu 11th Apr       
-       Clayton A          Pudsey Littlemoor B    
+       Clayton A          Littlemoor B    
 Mel Fielding         21 Arthur Roundhill      11 
 Tony Riley           21 Bob Dove              11 
 Barry Turnbull       21 Jack Roberts           9 
@@ -147,7 +147,7 @@ Nino Esposito        21 Micheal Bennett       11
          Aggregate: 154           Aggregate: 135 
 
       Division 1              Thu 11th Apr       
-  Pudsey Littlemoor A         Royd House A       
+  Littlemoor A         Royd House A       
 Colin Wailes         13 Paul Barker           21 
 Stephen Holmes       21 Gordon Preston        17 
 Colin Lally          13 Gordon Evans          21 
@@ -171,7 +171,7 @@ William Hutchinson   21 Peter Stockdale       10
          Aggregate: 157           Aggregate: 118 
 
       Division 1              Thu 18th Apr       
-      Crowghyll A         Pudsey Littlemoor A    
+      Crowghyll A         Littlemoor A    
 Derek Carroll        21 Peter Brown            5 
 Alan Clements        15 Angela Carter         21 
 David Hodgson        21 Roy Carter            18 
@@ -243,7 +243,7 @@ Leonard Hanson       13 Ian Johnson           21
          Aggregate: 129           Aggregate: 164 
 
       Division 1              Thu 18th Apr       
-  Pudsey Littlemoor B         Crowghyll B        
+  Littlemoor B         Crowghyll B        
 Arthur Roundhill     21 Archie Wishart        11 
 Bob Baines           21 Tony Allan            13 
 Terry Laidlaw        21 Jennie Allan           8 
@@ -471,7 +471,7 @@ Barry Turnbull       21 Gerald Bromley        11
          Aggregate: 146           Aggregate: 122 
 
       Division 1              Thu 25th Apr       
-      Crowghyll B         Pudsey Littlemoor A    
+      Crowghyll B         Littlemoor A    
 Jeff Townend         14 Angela Carter         21 
 Steve Alred          21 Kath Bywell           14 
 Jennie Allan         18 Margaret Slater       21 
@@ -531,7 +531,7 @@ Gerald Webster       18 Patricia Allison      21
          Aggregate: 162           Aggregate: 115 
 
       Division 1              Thu 25th Apr       
-  Pudsey Littlemoor B            Wyke A          
+  Littlemoor B            Wyke A          
 Arthur Roundhill     18 Robert Benn           21 
 Bob Baines           21 Peter Walker          12 
 Terry Laidlaw        21 Micheal Walton         4 
@@ -783,7 +783,7 @@ Micheal Dixon        14 David Leather         21
          Aggregate: 111           Aggregate: 142 
 
       Division 1              Thu 2nd May        
-        Peel A            Pudsey Littlemoor B    
+        Peel A            Littlemoor B    
 Donald Firth         21 Arthur Roundhill      19 
 Malcolm Jowett       17 Bob Baines            21 
 Mario Biancardo      21 Bob Dove               8 
@@ -795,7 +795,7 @@ Donald Shorton       17 Terry Laidlaw         21
          Aggregate: 160           Aggregate: 124 
 
       Division 1              Thu 2nd May        
-  Pudsey Littlemoor A          Ladyhill A        
+  Littlemoor A          Ladyhill A        
 Peter Brown           8 Alec Byrnes           21 
 Kath Bywell          21 Alan Hughes           20 
 David Beardswith     18 Alan Pennington       21 
@@ -1083,7 +1083,7 @@ David Leather        21 Peter Smith            3
          Aggregate: 163           Aggregate:  84 
 
       Division 1              Thu 9th May        
-       Pudsey A           Pudsey Littlemoor A    
+       Pudsey A           Littlemoor A    
 John Atkinson        14 Stephen Holmes        21 
 Brian Russell         8 Colin Wailes          21 
 Alan Jessop          21 Maurice Carter        12 
@@ -1095,7 +1095,7 @@ Alan Bell            21 Angela Carter         11
          Aggregate: 148           Aggregate: 121 
 
       Division 1              Thu 9th May        
-  Pudsey Littlemoor B         Asa Briggs A       
+  Littlemoor B         Asa Briggs A       
 Arthur Roundhill     21 Jeffery Hargrave      12 
 Bob Baines           21 Jim Fleming           19 
 Terry Laidlaw        17 Arthur Schofield      21 
@@ -1347,7 +1347,7 @@ Tony Walton          21 Bill Hardwick          8
          Aggregate: 139           Aggregate: 143 
 
       Division 1              Thu 16th May       
-      Guiseley B          Pudsey Littlemoor B    
+      Guiseley B          Littlemoor B    
 Barry McCourt        14 Bob Baines            21 
 Micheal Bennett       9 Arthur Roundhill      21 
 Micheal Dixon        20 Bob Dove              21 
@@ -1383,7 +1383,7 @@ James Mellor          4 Steve Alred           21
          Aggregate: 132           Aggregate: 112 
 
       Division 1              Thu 16th May       
-  Pudsey Littlemoor A         Eccleshill A       
+  Littlemoor A         Eccleshill A       
 Stephen Holmes       21 Paul Hillam           11 
 David Beardswith     21 Brian Conway          20 
 Colin Wailes         11 Mick Bastow           21 
@@ -1647,7 +1647,7 @@ Rod Bastow           21 Nino Esposito          7
          Aggregate: 139           Aggregate: 105 
 
       Division 1              Thu 23rd May       
-      Guiseley A          Pudsey Littlemoor A    
+      Guiseley A          Littlemoor A    
 Dave Whelan          21 Angela Carter         16 
 Bill Hardwick        21 Stephen Holmes        15 
 Ronnie Witham        21 Robert Renton         13 
@@ -1671,7 +1671,7 @@ Gerald Bromley       12 Malcolm Iles          21
          Aggregate: 137           Aggregate: 142 
 
       Division 1              Thu 23rd May       
-  Pudsey Littlemoor B         Royd House A       
+  Littlemoor B         Royd House A       
 Arthur Roundhill     21 Paul Barker           15 
 Bob Baines           21 Geoff Woodfine        14 
 Bob Dove             21 Gordon Evans          12 
@@ -1911,7 +1911,7 @@ Brian Madden         21 Alan Clements         18
          Aggregate: 156           Aggregate: 118 
 
       Division 1              Thu 30th May       
-      Crowghyll A         Pudsey Littlemoor B    
+      Crowghyll A         Littlemoor B    
 Brian Jennings       21 Bob Baines            14 
 David Bottomley      21 Arthur Roundhill      15 
 Tony Walton          21 Bob Dove              13 
@@ -1959,7 +1959,7 @@ Alan Bell            15 Paul Hillam           21
          Aggregate: 128           Aggregate: 153 
 
       Division 1              Thu 30th May       
-  Pudsey Littlemoor A          Clayton A         
+  Littlemoor A          Clayton A         
 Stephen Holmes       13 Mel Fielding          21 
 Angela Carter        21 Tom Harney            14 
 Robert Renton        19 David Moore           21 
@@ -2247,7 +2247,7 @@ David Burns          21 David Hogg            12
          Aggregate: 158           Aggregate: 114 
 
       Division 1              Thu 6th Jun        
-  Pudsey Littlemoor B     Pudsey Littlemoor A    
+  Littlemoor B     Littlemoor A    
 Arthur Roundhill     21 Colin Wailes           5 
 Bob Baines           21 Robert Renton         17 
 Terry Laidlaw        21 Roy Carter            13 
@@ -2511,7 +2511,7 @@ Ralph Sissons        20 Steve Alred           21
          Aggregate: 164           Aggregate: 104 
 
       Division 1              Thu 13th Jun       
-      Ladyhill A          Pudsey Littlemoor B    
+      Ladyhill A          Littlemoor B    
 Nino Esposito        21 Bob Baines            19 
 Paul Outhwaite       21 Arthur Roundhill      20 
 Alec Byrnes          20 Bob Dove              21 
@@ -2535,7 +2535,7 @@ Alan Bell            19 Hedley Kettlewell     21
          Aggregate: 116           Aggregate: 166 
 
       Division 1              Thu 13th Jun       
-  Pudsey Littlemoor A            Wyke A          
+  Littlemoor A            Wyke A          
 Stephen Holmes       21 Mike Lambert          14 
 Colin Lally          21 Robert Benn           19 
 David Beardswith     21 Ray Wilkes             6 
@@ -2811,7 +2811,7 @@ Micheal Dixon        21 Cliff White           15
          Aggregate: 161           Aggregate: 126 
 
       Division 1              Thu 20th Jun       
-        Peel A            Pudsey Littlemoor A    
+        Peel A            Littlemoor A    
 Laurie Walsh         21 Colin Wailes          15 
 Mario Biancardo      21 Kath Bywell            5 
 Malcolm Jowett       21 Stephen Holmes        13 
@@ -2823,7 +2823,7 @@ Donald Firth         21 Keith Farrell         18
          Aggregate: 167           Aggregate: 117 
 
       Division 1              Thu 20th Jun       
-  Pudsey Littlemoor B           Pudsey A         
+  Littlemoor B           Pudsey A         
 Arthur Roundhill     13 John Atkinson         21 
 Bob Baines           21 Brian Russell         13 
 Terry Laidlaw        21 Alan Bell             14 
@@ -3063,7 +3063,7 @@ Tony Walton          17 Micheal Dixon         21
          Aggregate: 141           Aggregate: 154 
 
       Division 1              Thu 27th Jun       
-     Eccleshill A         Pudsey Littlemoor B    
+     Eccleshill A         Littlemoor B    
 Allen Bottomley      21 Jack Roberts          16 
 Derek Relton         21 Bob Baines            12 
 Brian Conway         17 Ken Walker            21 
@@ -3111,7 +3111,7 @@ Alan Bell            15 Gerry Hird            21
          Aggregate: 132           Aggregate: 156 
 
       Division 1              Thu 27th Jun       
-  Pudsey Littlemoor A         Asa Briggs A       
+  Littlemoor A         Asa Briggs A       
 David Beardswith     21 Jim Fleming           20 
 Kath Bywell          21 Arthur Schofield      13 
 Colin Lally          21 Kath Sansom           10 
@@ -3375,7 +3375,7 @@ Derek Relton         21 Ken Bairstow          11
          Aggregate: 165           Aggregate: 103 
 
       Division 1              Thu 4th Jul        
-      Guiseley A          Pudsey Littlemoor B    
+      Guiseley A          Littlemoor B    
 Bill Hardwick        21 Bob Baines            13 
 Ronnie Witham        21 Arthur Roundhill      15 
 Ken Bull             21 Bob Dove               9 
@@ -3411,7 +3411,7 @@ Alan Bell            21 Keith Goodall          4
          Aggregate: 121           Aggregate: 135 
 
       Division 1              Thu 4th Jul        
-  Pudsey Littlemoor A          Guiseley B        
+  Littlemoor A          Guiseley B        
 Kath Bywell          21 Marie Sutcliffe        6 
 Colin Wailes         18 Micheal Bennett       21 
 Robert Renton        12 Barry McCourt         21 
@@ -3675,7 +3675,7 @@ Keith Goodall        21 Mick Bastow           11
          Aggregate: 136           Aggregate: 131 
 
       Division 1              Thu 11th Jul       
-  Pudsey Littlemoor B          Clayton A         
+  Littlemoor B          Clayton A         
 Arthur Roundhill     19 Barry Turnbull        21 
 Bob Baines           21 David Moore           11 
 Ken Walker           20 Mel Fielding          21 
@@ -3687,7 +3687,7 @@ Terry Laidlaw        11 Alan Peel             21
          Aggregate: 120           Aggregate: 158 
 
       Division 1              Thu 11th Jul       
-     Royd House A         Pudsey Littlemoor A    
+     Royd House A         Littlemoor A    
 Pat White            18 Stephen Holmes        21 
 Patricia Allison     21 Colin Wailes           7 
 Paul Barker          21 Robert Renton         17 
@@ -3963,7 +3963,7 @@ Graham Oliver        21 Ralph Sissons         14
          Aggregate: 150           Aggregate: 127 
 
       Division 1              Thu 18th Jul       
-      Ladyhill A          Pudsey Littlemoor A    
+      Ladyhill A          Littlemoor A    
 Alec Byrnes          21 Roy Carter             7 
 John Rawnsley        21 Robert Renton          6 
 Alan Hughes          21 Kath Bywell            6 
@@ -3987,7 +3987,7 @@ Alan Bell            21 Brian Jennings        13
          Aggregate: 125           Aggregate: 157 
 
       Division 1              Thu 18th Jul       
-  Pudsey Littlemoor B            Peel A          
+  Littlemoor B            Peel A          
 Bob Baines           21 Malcolm Jowett        14 
 Bob Dove             21 Laurie Walsh           5 
 Ken Walker           21 Donald Shorton        16 
@@ -4203,7 +4203,7 @@ Robert Thompson      12 Alan Farrow           21
          Aggregate: 104           Aggregate: 145 
 
       Division 1              Thu 25th Jul       
-     Asa Briggs A         Pudsey Littlemoor B    
+     Asa Briggs A         Littlemoor B    
 Malcolm Iles         21 Bill Thorpe            3 
 Jim Fleming          21 Jack Roberts          15 
 Dennis Robinson      21 Bill Swales           10 
@@ -4263,7 +4263,7 @@ Derek Walker          1 Mike Lambert          21
          Aggregate: 148           Aggregate: 135 
 
       Division 1              Thu 25th Jul       
-  Pudsey Littlemoor A           Pudsey A         
+  Littlemoor A           Pudsey A         
 Keith Farrell         9 John Atkinson         21 
 Stephen Holmes       21 Brian Russell         13 
 David Beardswith     10 Alan Jessop           21 
@@ -4515,7 +4515,7 @@ Alan Clements        17 Donald Firth          21
          Aggregate: 123           Aggregate: 149 
 
       Division 1              Thu 1st Aug        
-     Eccleshill A         Pudsey Littlemoor A    
+     Eccleshill A         Littlemoor A    
 Allen Bottomley      21 Peter Brown            6 
 Ian Matthews         21 Angela Carter          5 
 Ken Wilson           16 Robert Renton         21 
@@ -4551,7 +4551,7 @@ Alan Bell            21 Eric Butler           16
          Aggregate: 116           Aggregate: 145 
 
       Division 1              Thu 1st Aug        
-  Pudsey Littlemoor B          Guiseley B        
+  Littlemoor B          Guiseley B        
 Arthur Roundhill     21 Colin Hargreaves      13 
 Bob Baines           21 John Stead            15 
 Bob Dove             21 Micheal Bennett       16 
@@ -4839,7 +4839,7 @@ Alan Bell            21 Sheila Chaplin        13
          Aggregate: 159           Aggregate: 139 
 
       Division 1              Thu 8th Aug        
-  Pudsey Littlemoor A          Guiseley A        
+  Littlemoor A          Guiseley A        
 Stephen Holmes       16 Dave Whelan           21 
 Robert Renton        21 Bill Hardwick         16 
 Kath Bywell          11 Ronnie Witham         21 
@@ -4851,7 +4851,7 @@ Colin Lally           5 Bill Robson           21
          Aggregate: 127           Aggregate: 147 
 
       Division 1              Thu 8th Aug        
-     Royd House A         Pudsey Littlemoor B    
+     Royd House A         Littlemoor B    
 Paul Barker          21 Arthur Roundhill      17 
 Gordon Preston       21 Bob Dove              17 
 Gordon Evans          7 Ken Walker            21 
@@ -5067,7 +5067,7 @@ Audrey Healey        21 George Artist          8
          Aggregate: 135           Aggregate: 134 
 
       Division 1              Thu 15th Aug       
-       Clayton A          Pudsey Littlemoor A    
+       Clayton A          Littlemoor A    
 Ian Johnson          21 Stephen Holmes        11 
 Mel Fielding         19 Angela Carter         21 
 Bev Shutt            21 Kath Bywell           11 
@@ -5127,7 +5127,7 @@ Donald Firth         21 Barry McCourt          6
          Aggregate: 158           Aggregate: 108 
 
       Division 1              Thu 15th Aug       
-  Pudsey Littlemoor B         Crowghyll A        
+  Littlemoor B         Crowghyll A        
 Arthur Roundhill     21 David Bottomley       14 
 Bob Dove             14 Robert Ramsden        21 
 Jack Roberts         18 Derek Carroll         21 
@@ -5415,7 +5415,7 @@ Alan Bell            21 David Leather          8
          Aggregate: 113           Aggregate: 151 
 
       Division 1              Thu 22nd Aug       
-  Pudsey Littlemoor A     Pudsey Littlemoor B    
+  Littlemoor A     Littlemoor B    
 Stephen Holmes       21 Arthur Roundhill      13 
 Colin Lally          14 Ken Walker            21 
 Kath Bywell          21 Bob Dove              18 
@@ -5703,7 +5703,7 @@ Malcolm Jowett       14 William Hutchinson    21
          Aggregate: 142           Aggregate: 125 
 
       Division 1              Thu 29th Aug       
-  Pudsey Littlemoor B          Ladyhill A        
+  Littlemoor B          Ladyhill A        
 Arthur Roundhill      5 Alec Byrnes           21 
 Bob Dove             21 Nino Esposito         10 
 Jack Roberts         15 John Ramsey           21 
@@ -5715,7 +5715,7 @@ Bill Swales          21 Eric Butler           15
          Aggregate: 136           Aggregate: 151 
 
       Division 1              Thu 29th Aug       
-        Wyke A            Pudsey Littlemoor A    
+        Wyke A            Littlemoor A    
 Gerry Hird           18 Stephen Holmes        21 
 Brian Smith          21 Colin Lally           17 
 Ian Fraser           14 Kath Bywell           21 
@@ -5979,7 +5979,7 @@ David Barber         21 Leonard Hanson        13
          Aggregate: 134           Aggregate: 141 
 
       Division 1              Thu 5th Sep        
-       Pudsey A           Pudsey Littlemoor B    
+       Pudsey A           Littlemoor B    
 John Atkinson        21 Bill Swales           16 
 Brian Russell        19 Bob Dove              21 
 David Elliot         21 Jack Roberts          17 
@@ -5991,7 +5991,7 @@ Alan Bell            16 Terry Laidlaw         21
          Aggregate: 160           Aggregate: 131 
 
       Division 1              Thu 5th Sep        
-  Pudsey Littlemoor A            Peel A          
+  Littlemoor A            Peel A          
 Colin Wailes          8 Donald Shorton        21 
 Stephen Holmes       10 Mario Biancardo       21 
 Robert Renton        21 Malcolm Jowett        14 
@@ -6219,7 +6219,7 @@ Alf Crabtree          5 Keith Robertson       21
          Aggregate: 117           Aggregate: 156 
 
       Division 1              Thu 12th Sep       
-     Asa Briggs A         Pudsey Littlemoor A    
+     Asa Briggs A         Littlemoor A    
 Jim Fleming          21 Peter Brown            3 
 Graham Pearson       21 Kath Bywell           11 
 Brian Madden         21 Roy Carter            20 
@@ -6279,7 +6279,7 @@ Derek Walker         21 Jim Smith             10
          Aggregate: 141           Aggregate: 122 
 
       Division 1              Thu 12th Sep       
-  Pudsey Littlemoor B         Eccleshill A       
+  Littlemoor B         Eccleshill A       
 Arthur Roundhill      9 Derek Relton          21 
 Bob Baines           21 Allen Bottomley       18 
 Bob Dove             21 Brian Conway          19 
@@ -6519,7 +6519,7 @@ Tony Riley           21 Gerry Hird            17
          Aggregate: 162           Aggregate: 124 
 
       Division 1              Thu 19th Sep       
-      Crowghyll B         Pudsey Littlemoor B    
+      Crowghyll B         Littlemoor B    
 Barbara Slingsby     15 Bob Baines            21 
 Rowland Scott         8 Bob Dove              21 
 Jeff Townend          8 Arthur Roundhill      21 
@@ -6579,7 +6579,7 @@ John West             2 Marie Sutcliffe       21
          Aggregate: 139           Aggregate: 157 
 
       Division 1              Thu 19th Sep       
-  Pudsey Littlemoor A         Crowghyll A        
+  Littlemoor A         Crowghyll A        
 Colin Wailes          9 Steve Alred           21 
 Robert Renton        14 Tony Walton           21 
 Angela Carter        19 Robert Ramsden        21 
@@ -6639,7 +6639,7 @@ Donald Firth          7 Tony Riley            21
          Aggregate: 123           Aggregate: 150 
 
       Division 1              Thu 26th Sep       
-  Pudsey Littlemoor A         Crowghyll B        
+  Littlemoor A         Crowghyll B        
 Stephen Holmes       14 Archie Wishart        21 
 Kath Bywell          21 Jennie Allan           2 
 David Beardswith     21 Tony Allan             6 
@@ -6663,7 +6663,7 @@ David Hogg           21 John Atkinson         14
          Aggregate: 155           Aggregate: 104 
 
       Division 1              Thu 26th Sep       
-        Wyke A            Pudsey Littlemoor B    
+        Wyke A            Littlemoor B    
 Peter Walker         21 Bob Baines            15 
 Brian Smith          21 Arthur Roundhill      19 
 Ray Wilkes           21 Bob Dove              10 
