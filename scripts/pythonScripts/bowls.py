@@ -37,7 +37,7 @@ for team in teamDetails.teamDays:
         if endRow == 0:
             raise Exception(league + ': Report file is empty')
         
-        # Find team name used by Stanningley in this league
+        # Find team name used by team in this league
         possibleTeamNamesUsed = []
         teamNameUsedForLeague = ''
         teamNameToUse = teamDetails.displayTeamName
