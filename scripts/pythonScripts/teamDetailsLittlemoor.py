@@ -1,30 +1,39 @@
 import utils
 
 # Team info (lowercase)
+# TODO the ' in the name is causing issues?
 teamNames = [
     'Littlemoor', 
     'Littlemoor A', 
-    'Littlemoor B',
     'Littlemoor - A', 
+    'Littlemoor \'A\'', 
+    'Littlemoor B',
     'Littlemoor - B', 
+    'Littlemoor \'B\'', 
     'Littlemoor Sports and Social', 
     'Littlemoor Sports and Social',
     'Littlemoor Sports and Social',
     'Littlemoor Sports & Social', 
     'Littlemoor Sports & Social A',
-    'Littlemoor Sports & Social B',
     'Littlemoor Sports & Social - A',
+    'Littlemoor Sports & Social \'A\'',
+    'Littlemoor Sports & Social B',
     'Littlemoor Sports & Social - B',
+    'Littlemoor Sports & Social \'B\'',
     'Littlemoor S&SC',
     'Littlemoor S&SC A',
-    'Littlemoor S&SC B',
     'Littlemoor S&SC - A',
+    'Littlemoor S&SC \'A\'',
+    'Littlemoor S&SC B',
     'Littlemoor S&SC - B',
+    'Littlemoor S&SC \'B\'',
     'Littlemoor S & SC',
     'Littlemoor S & SC A',
-    'Littlemoor S & SC B',
     'Littlemoor S & SC - A',
+    'Littlemoor S & SC \'A\'',
+    'Littlemoor S & SC B',
     'Littlemoor S & SC - B',
+    'Littlemoor S & SC \'B\'',
 ]
 displayTeamName = 'Littlemoor'
 
