@@ -46,7 +46,7 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 for possibleTeamName in teamDetails.teamNames:
-                    rowValue = row.lower().strip().replace('\'', '').replace(' - ', ' ')
+                    rowValue = row.lower().strip().replace('\'', '')
                     if possibleTeamName.lower() in rowValue:
                         if team.lower().endswith(' (a)'):
                             if possibleTeamName.lower().endswith(' b'):
