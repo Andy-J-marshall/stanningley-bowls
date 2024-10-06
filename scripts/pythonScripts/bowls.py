@@ -45,24 +45,29 @@ for team in teamDetails.teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                for teamName in teamDetails.teamNames:
-                    rowValue = row.lower().strip().replace('\'', '')
-                    if teamName.lower() in rowValue:
-                        if team.lower().endswith(' (a)') and rowValue.endswith(' b'):
-                            continue
-                        if team.lower().endswith(' (b)') and rowValue.endswith(' a'):
-                            continue
-                        possibleTeamNamesUsed.append(teamName)
+                for possibleTeamName in teamDetails.teamNames:
+                    rowValue = row.lower().strip().replace('\'', '').replace(' - ', ' ')
+                    if possibleTeamName.lower() in rowValue:
                         if team.lower().endswith(' (a)'):
+                            if possibleTeamName.lower().endswith(' b'):
+                                continue
                             teamNameToUse = teamDetails.displayTeamName + ' A'
                         if team.lower().endswith(' (b)'):
+                            if possibleTeamName.lower().endswith(' a'):
+                                continue
                             teamNameToUse = teamDetails.displayTeamName + ' B'
-        
+                        possibleTeamNamesUsed.append(possibleTeamName)
     
         if len(possibleTeamNamesUsed) == 0:
             raise Exception('No team name found')
         
         teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
+        
+        # Check correct team name is used for each day
+        if team.lower().endswith(' (a)') and teamNameUsedForLeague.lower().endswith(' b'):
+            raise Exception('B team found for A team stats')
+        if team.lower().endswith(' (b)') and teamNameUsedForLeague.lower().endswith(' a'):
+            raise Exception('A team found for B team stats')
         if teamDetails.displayTeamName.lower() not in teamNameUsedForLeague.lower():
             raise Exception('Incorrect team name found')
 
