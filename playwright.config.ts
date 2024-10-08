@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
   retries: 1,
   workers: process.env.CI ? 5 : 8,
   maxFailures: 8,
-  reporter: 'html',
+  reporter: [["html", { open: "never" }]],
   outputDir: 'test-results/',
   webServer: {
     command: 'npm run start',
