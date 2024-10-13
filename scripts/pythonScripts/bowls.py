@@ -85,6 +85,7 @@ for team in teamDetails.teamDays:
 
         #### TEAM STATS ####
         # Find team's home and away games
+        # TODO team results wrong (showing a player's game as a team game. Try changing the row number to accommodate 10 player teams)
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -133,14 +134,36 @@ for team in teamDetails.teamDays:
             rowsDownAdjustmentInt = 0
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
+            
+            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 1
 
             # Leeds half holiday team only has 6 players
             if 'half holiday' in team.lower():
-                rowsDownAdjustmentInt = 2
+                rowsDownAdjustmentInt += 2
 
             # AireWharfe pairs league display scores differently
-            if 'pairs airewharfe' in team.lower():
-                rowsUpAdjustmentInt = 1
+            if 'monday airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 2
+                # TODO check this - especially cup games
+
+            # TODO check if this works
+            # Mirfield team has 10 players
+            if 'mirfield' in team.lower():
+                rowsUpAdjustmentInt += 2
+                rowsDownAdjustmentInt += 1
+                # TODO doesn't work for cup games?
+
+            # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
+            # some B team results not working
+
+            # Bradford saturday team has 10 players
+            if 'saturday bradford' in team.lower():
+                rowsUpAdjustmentInt += 2
+
+            # Bradford monday team has 6 players
+            if 'monday bradford' in team.lower():
+                rowsDownAdjustmentInt += 2
 
             # Check if cup game
             # Cup games are based on aggregate, not score, and are played on neutral greens
