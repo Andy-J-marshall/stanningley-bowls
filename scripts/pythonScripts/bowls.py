@@ -133,6 +133,8 @@ for team in teamDetails.teamDays:
             rowsDownAdjustmentInt = 0
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
+            
+            # TODO refactor how this is done?
 
             # AireWharfe and Bradford leagues display scores differently
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
@@ -178,6 +180,9 @@ for team in teamDetails.teamDays:
                         break
             
             if cupGame:
+                if 'wednesday pairs' in team.lower():
+                    rowsUpAdjustmentInt -= 1
+                
                 # To account for handicap row in cup games
                 checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
