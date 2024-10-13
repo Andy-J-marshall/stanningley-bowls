@@ -129,46 +129,6 @@ for team in teamDetails.teamDays:
 
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
-            
-            baseAdjustment = 10
-            rowsDownAdjustmentInt = 0
-            rowsUpAdjustmentInt = 0
-            totalNumberOfRowsAdjustmentInt = 0
-            
-            # TODO refactor how this is done?
-
-            # AireWharfe and Bradford leagues display scores differently
-            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
-                rowsUpAdjustmentInt += 1
-
-            # TODO move these to a separate function?
-            
-            # TODO AW half hol team has 8 players
-            # Leeds and Bradford half holiday team only has 6 players
-            if 'half holiday' in team.lower():
-                rowsDownAdjustmentInt += 2
-
-            # AireWharfe Monday team has 10 players
-            if 'monday airewharfe' in team.lower():
-                rowsUpAdjustmentInt += 2
-                # TODO check this - especially cup games
-
-            # Mirfield team has 10 players
-            if 'mirfield' in team.lower():
-                rowsUpAdjustmentInt += 2
-                rowsDownAdjustmentInt += 1
-                # TODO doesn't work for cup games?
-
-            # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
-
-            # Bradford saturday team has 10 players
-            # TODO not every bradford saturday team has 10 players
-            if 'saturday bradford' in team.lower():
-                rowsUpAdjustmentInt += 2
-
-            # Bradford monday team has 6 players
-            if 'monday bradford' in team.lower():
-                rowsDownAdjustmentInt += 2
 
             # Check if cup game
             # Cup games are based on aggregate, not score, and are played on neutral greens
@@ -180,6 +140,39 @@ for team in teamDetails.teamDays:
                         cupGame = True
                         break
             
+            # Find the number of rows down for the team scores                       
+            baseAdjustment = 10
+            rowsDownAdjustmentInt = 0
+            rowsUpAdjustmentInt = 0
+            totalNumberOfRowsAdjustmentInt = 0
+            
+            # AireWharfe and Bradford leagues display scores differently
+            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 1
+
+            # Leeds and Bradford half holiday team only has 6 players
+            if 'half holiday' in team.lower():
+                rowsDownAdjustmentInt += 2
+
+            # AireWharfe Monday team has 10 players
+            if 'monday airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 2
+
+            # Mirfield team has 10 players except it low divisions
+            if 'mirfield' in team.lower():
+                rowsUpAdjustmentInt += 2
+                rowsDownAdjustmentInt += 1
+
+            # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
+
+            # Bradford saturday team has 10 players except in low divisions
+            if 'saturday bradford' in team.lower():
+                rowsUpAdjustmentInt += 2
+
+            # Bradford monday team has 6 players
+            if 'monday bradford' in team.lower():
+                rowsDownAdjustmentInt += 2
+            
             if cupGame:
                 baseAdjustment = 9
 
@@ -187,11 +180,10 @@ for team in teamDetails.teamDays:
                     rowsUpAdjustmentInt -= 1
                 
                 # To account for handicap row in cup games
-                checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
+                checkForTeamHandicap = allRowsInFile[rowNumber + baseAdjustment - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
                     rowsDownAdjustmentInt -= 1
 
-            # Find the number of rows down for the team scores
             totalNumberOfRowsAdjustmentInt = baseAdjustment - rowsDownAdjustmentInt + rowsUpAdjustmentInt
             
             # Prevents attempting to process a line that doesn't exist
