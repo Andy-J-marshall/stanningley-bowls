@@ -1645,18 +1645,18 @@
             "day": "Tuesday Mirfield",
             "awayWins": 0,
             "homeWins": 5,
-            "wins": 6,
+            "wins": 5,
             "awayLosses": 9,
             "homeLosses": 3,
             "homeDraws": 1,
             "awayDraws": 0,
             "draws": 1,
-            "cupWins": 1,
-            "cupLosses": 0,
-            "losses": 12,
+            "cupWins": 0,
+            "cupLosses": 1,
+            "losses": 13,
             "totalGamesPlayed": 19,
-            "agg": 270,
-            "opponentAgg": 371,
+            "agg": 402,
+            "opponentAgg": 514,
             "results": [
                 "Littlemoor A 5 - 7 Crossgates BC 'A'",
                 "Pudsey BC 'A' 10 - 2 Littlemoor A",
@@ -1676,7 +1676,7 @@
                 "Littlemoor A 10 - 2 Denby Grange BC 'A'",
                 "Thongsbridge C & BC 'A' 9 - 3 Littlemoor A",
                 "Littlemoor A 2 - 10 Crosland Moor 'A'",
-                "Eccleshill 12 - 21 Littlemoor A"
+                "Eccleshill 155 - 153 Littlemoor A"
             ]
         },
         {

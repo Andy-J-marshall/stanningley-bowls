@@ -178,11 +178,9 @@ for team in teamDetails.teamDays:
                         break
             
             if cupGame:
-                # TODO fix mirfield too
-                # if 'mirfield' in team.lower():
-                #     rowsDownAdjustmentInt += 1
+                if 'mirfield' in team.lower():
+                    rowsDownAdjustmentInt -= 1
                 
-                # TODO still missing 1 cup game?
                 if 'monday airewharfe' in team.lower():
                     rowsDownAdjustmentInt -= 2
 
@@ -202,6 +200,7 @@ for team in teamDetails.teamDays:
             
             # Save the scores
             text = allRowsInFile[rowNumber + totalNumberOfRowsAdjustmentInt]
+            # TODO issue is with the decimal point!
             if text and type(text) is str:
                 matchScore = re.findall(r'\d+', text)
             if len(matchScore) == 2:
