@@ -52,6 +52,7 @@ teamDays = [
 ]
 
 # Every player (lowercase)
+# TODO add more players
 players = [
     'john armitage',
     'paul bowes',
@@ -65,6 +66,7 @@ players = [
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
+# TODO add players to these
 duplicatePlayerNames = [
     'phillip thornton',
     'philip thornton',
@@ -89,6 +91,7 @@ def deduplicateNames(name):
     return name
 
 # Add players who play for other teams in leagues the team player in (lowercase)
+# TODO add players to this
 traitorPlayers = {
     'Monday Bradford': [''],
     'Monday AireWharfe': [''],
