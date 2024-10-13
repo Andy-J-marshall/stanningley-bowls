@@ -139,7 +139,7 @@ for team in teamDetails.teamDays:
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
                 rowsUpAdjustmentInt += 1
 
-            # Leeds half holiday team only has 6 players
+            # Leeds and Bradford half holiday team only has 6 players
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt += 2
 
