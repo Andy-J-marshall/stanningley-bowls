@@ -131,6 +131,8 @@ for team in teamDetails.teamDays:
             rowsDownAdjustmentInt = 0
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
+            
+            # TODO refactor how this is done?
 
             # AireWharfe and Bradford leagues display scores differently
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
