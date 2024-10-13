@@ -18,9 +18,9 @@ export const config = {
     },
     membership: {
         socialPrice: '20',
-        bowlingPrice: '52',
+        bowlingPrice: '55',
         bowlingPriceOnly: '10',
-        leedsCouncilFee: '42',
+        leedsCouncilFee: '45',
     },
     teams: [
         {
