@@ -152,8 +152,6 @@ for team in teamDetails.teamDays:
 
             if 'mirfield' in league.lower():
                 rowsDownAdjustmentInt += 1
-
-            # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
                 
             if utils.leagueHave10Players(league):
                 rowsUpAdjustmentInt += 2
