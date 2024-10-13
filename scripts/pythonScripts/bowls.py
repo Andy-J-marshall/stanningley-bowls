@@ -49,11 +49,11 @@ for team in teamDetails.teamDays:
                     rowValue = row.lower().strip()
                     if possibleTeamName.lower() in rowValue:
                         if team.lower().endswith(' (a)'):
-                            if possibleTeamName.lower().endswith(' b'):
+                            if possibleTeamName.lower().endswith(' b') or possibleTeamName.lower().endswith(' \'b\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' A'
                         if team.lower().endswith(' (b)'):
-                            if possibleTeamName.lower().endswith(' a'):
+                            if possibleTeamName.lower().endswith(' a') or possibleTeamName.lower().endswith(' \'a\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' B'
                         possibleTeamNamesUsed.append(possibleTeamName)
