@@ -178,6 +178,14 @@ for team in teamDetails.teamDays:
                         break
             
             if cupGame:
+                # TODO fix mirfield too
+                # if 'mirfield' in team.lower():
+                #     rowsDownAdjustmentInt += 1
+                
+                # TODO still missing 1 cup game?
+                if 'monday airewharfe' in team.lower():
+                    rowsDownAdjustmentInt -= 2
+
                 # To account for handicap row in cup games
                 checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
