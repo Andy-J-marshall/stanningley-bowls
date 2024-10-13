@@ -49,7 +49,6 @@ for team in teamDetails.teamDays:
                 for possibleTeamName in teamDetails.teamNames:
                     rowValue = row.lower().strip()
                     if possibleTeamName.lower() in rowValue:
-                        # TODO move this to master branch too
                         if team.lower().endswith(' (a)'):
                             if possibleTeamName.lower().endswith(' b') or possibleTeamName.lower().endswith(' \'b\''):
                                 continue

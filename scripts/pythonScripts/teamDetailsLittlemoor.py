@@ -1,7 +1,6 @@
 import utils
 
 # Team info (lowercase)
-# TODO the ' in the name is causing issues?
 teamNames = [
     'Littlemoor', 
     'Littlemoor A', 
