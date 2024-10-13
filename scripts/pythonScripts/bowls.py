@@ -139,6 +139,9 @@ for team in teamDetails.teamDays:
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
                 rowsUpAdjustmentInt += 1
 
+            # TODO move these to a separate function?
+            
+            # TODO AW half hol team has 8 players
             # Leeds and Bradford half holiday team only has 6 players
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt += 2
@@ -159,6 +162,7 @@ for team in teamDetails.teamDays:
             # some B team results not working
 
             # Bradford saturday team has 10 players
+            # TODO not every bradford saturday team has 10 players
             if 'saturday bradford' in team.lower():
                 rowsUpAdjustmentInt += 2
 
