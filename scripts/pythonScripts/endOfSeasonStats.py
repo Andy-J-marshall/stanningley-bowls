@@ -1,7 +1,8 @@
 from pathlib import Path
 import json
+import utils
 
-path = str(Path.cwd()) + '/src/data/bowlsStats2023.json'
+path = str(Path.cwd()) + '/src/data/bowlsStats' + utils.year + '.json'
 data = open(path)
 jsonStats = json.load(data)
 
@@ -43,6 +44,8 @@ totalGames = totalPairsGames + totalSinglesGames
 singleFigureWinsTotal = singleFigureWinsInSingles + singleFigureWinsInPairs
 totalNillings = nillingsInSingles + nillingsInPairs
 
+print(utils.year + " end of season stats")
+print('========================')
 print("total games played: " + str(totalGames))
 print("Total single figure winners: " + str(singleFigureWinsTotal))
 print("Total nillings: " + str(totalNillings))

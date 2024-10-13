@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
   forbidOnly: true,
   retries: 2,
   workers: 4,
-  reporter: 'html',
+  reporter: [["html", { open: "never" }]],
   use: {
     actionTimeout: 0,
     baseURL: 'https://bowlsnet.uk',
