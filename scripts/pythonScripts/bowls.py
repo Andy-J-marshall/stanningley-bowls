@@ -147,36 +147,24 @@ for team in teamDetails.teamDays:
             totalNumberOfRowsAdjustmentInt = 0
             
             # AireWharfe and Bradford leagues display scores differently
-            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+            if 'bradford' in league.lower() or 'airewharfe' in league.lower():
                 rowsUpAdjustmentInt += 1
 
-            # Leeds and Bradford half holiday team only has 6 players
-            if 'half holiday' in team.lower():
-                rowsDownAdjustmentInt += 2
-
-            # AireWharfe Monday team has 10 players
-            if 'monday airewharfe' in team.lower():
-                rowsUpAdjustmentInt += 2
-
-            # Mirfield team has 10 players except it low divisions
-            if 'mirfield' in team.lower():
-                rowsUpAdjustmentInt += 2
+            if 'mirfield' in league.lower():
                 rowsDownAdjustmentInt += 1
 
             # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
-
-            # Bradford saturday team has 10 players except in low divisions
-            if 'saturday bradford' in team.lower():
+                
+            if utils.leagueHave10Players(league):
                 rowsUpAdjustmentInt += 2
-
-            # Bradford monday team has 6 players
-            if 'monday bradford' in team.lower():
+            
+            if utils.leagueHave6Players(league):
                 rowsDownAdjustmentInt += 2
             
             if cupGame:
                 baseAdjustment = 9
 
-                if 'wednesday pairs' in team.lower():
+                if 'wednesday pairs' in league.lower():
                     rowsUpAdjustmentInt -= 1
                 
                 # To account for handicap row in cup games
@@ -210,6 +198,7 @@ for team in teamDetails.teamDays:
                     homeAgg = homeScore
                     awayAgg = awayScore
             else:
+                # TODO is this the agg issue?
                 text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
