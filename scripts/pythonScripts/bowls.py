@@ -132,13 +132,13 @@ for team in teamDetails.teamDays:
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
 
+            # AireWharfe and Bradford leagues display scores differently
+            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 1
+
             # Leeds half holiday team only has 6 players
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt = 2
-
-            # AireWharfe pairs league display scores differently
-            if 'pairs airewharfe' in team.lower():
-                rowsUpAdjustmentInt = 1
 
             # Check if cup game
             # Cup games are based on aggregate, not score, and are played on neutral greens
