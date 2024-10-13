@@ -134,7 +134,12 @@ for team in teamDetails.teamDays:
             rowsDownAdjustmentInt = 0
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
-            
+
+            # AireWharfe and Bradford leagues display scores differently
+            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+                rowsUpAdjustmentInt += 1
+
+            # AireWharfe and Bradford leagues display scores differently
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
                 rowsUpAdjustmentInt += 1
 
