@@ -192,18 +192,23 @@ for team in teamDetails.teamDays:
             
             # Save the scores
             text = allRowsInFile[rowNumber + totalNumberOfRowsAdjustmentInt]
-            # TODO issue is with the decimal point!
             if text and type(text) is str:
-                matchScore = re.findall(r'\d+', text)
+                matchScore = re.findall(r'\d+\.?\d*', text)
             if len(matchScore) == 2:
-                homeScore = int(matchScore[0].strip())
-                awayScore = int(matchScore[1].strip())
+                # Check whether score is an integer or float (needed for Ronnie Collins cup)
+                if '.' in matchScore[0] or '.' in matchScore[1]:
+                    homeScore = float(matchScore[0].strip())
+                    awayScore = float(matchScore[1].strip())
+                else:
+                    homeScore = int(matchScore[0].strip())
+                    awayScore = int(matchScore[1].strip())
                 
             # Save the aggregates
             if cupGame:
-                homeAgg = homeScore
-                awayAgg = awayScore
-                # TODO this won't work for AW cup that doesn't use aggregates!
+                # Only save the score as the aggregate if it's an integer
+                if isinstance(homeScore, int) and isinstance(awayScore, int):
+                    homeAgg = homeScore
+                    awayAgg = awayScore
             else:
                 text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if text and type(text) is str:
