@@ -145,17 +145,19 @@ for team in teamDetails.teamDays:
             totalNumberOfRowsAdjustmentInt = 0
 
             # AireWharfe and Bradford leagues display scores differently
-            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
+            if 'bradford' in league.lower() or 'airewharfe' in league.lower():
                 rowsUpAdjustmentInt += 1
 
-            # Leeds half holiday team only has 6 players
-            if 'half holiday' in team.lower():
-                rowsDownAdjustmentInt = 2
+            if utils.leagueHave10Players(league):
+                rowsUpAdjustmentInt += 2
+            
+            if utils.leagueHave6Players(league):
+                rowsDownAdjustmentInt += 2
             
             if cupGame:
                 baseAdjustment = 9
 
-                if 'wednesday pairs' in team.lower():
+                if 'wednesday pairs' in league.lower():
                     rowsUpAdjustmentInt -= 1
                 
                 # To account for handicap row in cup games
