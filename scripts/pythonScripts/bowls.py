@@ -78,7 +78,7 @@ for team in teamDetails.teamDays:
             if row and type(row) is str:
                 for cupText in utils.cupText:
                     if cupText in row.lower():
-                        for i in range(0, 11):
+                        for i in range(0, 13):
                             cupGameRows.append(rowNumber + i)
                         break
 
@@ -261,7 +261,7 @@ for team in teamDetails.teamDays:
             if playerName in teamDetails.traitorPlayers[league]:
                 return False
             
-            for i in range(1, 13):
+            for i in range(0, 13):
                 # Checks player is playing for correct team
                 previousRowValue = allRowsInFile[rowNumber - i]
                 if previousRowValue and type(previousRowValue) is str:
