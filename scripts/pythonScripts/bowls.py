@@ -49,12 +49,13 @@ for team in teamDetails.teamDays:
                 for possibleTeamName in teamDetails.teamNames:
                     rowValue = row.lower().strip()
                     if possibleTeamName.lower() in rowValue:
+                        # TODO move this to master branch too
                         if team.lower().endswith(' (a)'):
-                            if possibleTeamName.lower().endswith(' b'):
+                            if possibleTeamName.lower().endswith(' b') or possibleTeamName.lower().endswith(' \'b\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' A'
                         if team.lower().endswith(' (b)'):
-                            if possibleTeamName.lower().endswith(' a'):
+                            if possibleTeamName.lower().endswith(' a') or possibleTeamName.lower().endswith(' \'a\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' B'
                         possibleTeamNamesUsed.append(possibleTeamName)
@@ -85,7 +86,6 @@ for team in teamDetails.teamDays:
 
         #### TEAM STATS ####
         # Find team's home and away games
-        # TODO team results wrong (showing a player's game as a team game. Try changing the row number to accommodate 10 player teams)
         homeRow = []
         awayRow = []
         for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -151,7 +151,6 @@ for team in teamDetails.teamDays:
                 rowsUpAdjustmentInt += 2
                 # TODO check this - especially cup games
 
-            # TODO check if this works
             # Mirfield team has 10 players
             if 'mirfield' in team.lower():
                 rowsUpAdjustmentInt += 2
@@ -159,7 +158,6 @@ for team in teamDetails.teamDays:
                 # TODO doesn't work for cup games?
 
             # TODO agg is wrong for Mirfield, AW Mon, and Bradford Sat
-            # some B team results not working
 
             # Bradford saturday team has 10 players
             # TODO not every bradford saturday team has 10 players
