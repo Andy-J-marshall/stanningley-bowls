@@ -139,15 +139,11 @@ for team in teamDetails.teamDays:
             if 'bradford' in team.lower() or 'airewharfe' in team.lower():
                 rowsUpAdjustmentInt += 1
 
-            # AireWharfe and Bradford leagues display scores differently
-            if 'bradford' in team.lower() or 'airewharfe' in team.lower():
-                rowsUpAdjustmentInt += 1
-
             # Leeds half holiday team only has 6 players
             if 'half holiday' in team.lower():
                 rowsDownAdjustmentInt += 2
 
-            # AireWharfe pairs league display scores differently
+            # AireWharfe Monday team has 10 players
             if 'monday airewharfe' in team.lower():
                 rowsUpAdjustmentInt += 2
                 # TODO check this - especially cup games
