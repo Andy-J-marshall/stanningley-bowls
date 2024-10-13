@@ -57,6 +57,17 @@ def leagueHave6Players(league):
         return True
     return False
 
+def adjustRowForAgg(league):
+    if league.lower() == 'monday airewharfe':
+        return 2
+    if league.lower() == 'saturday airewharfe':
+        return 2
+    if league.lower() == 'saturday bradford':
+        return 3
+    if league.lower() == 'tuesday mirfield':
+        return 4
+    return 0
+
 def returnListOfPlayerStats(days, includeTeamData, players):
     players.sort()
     playerStats = {}
