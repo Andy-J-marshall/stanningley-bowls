@@ -40,7 +40,7 @@ for league in teamDetails.allDays:
             if row and type(row) is str:
                 for cupText in utils.cupText:
                     if cupText in row.lower():
-                        for i in range(0, 11):
+                        for i in range(0, 13):
                             cupGameRows.append(rowNumber + i)
                         break
 

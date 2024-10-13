@@ -14,6 +14,8 @@ cupText = [
     'pre lim',
     'pre-lim',
     'preliminary',
+    'round 1',
+    'round 2',
     'qtr-finals',
     'quarter finals',
     'quarter-finals',
