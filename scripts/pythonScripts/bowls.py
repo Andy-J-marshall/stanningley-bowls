@@ -184,7 +184,8 @@ for team in teamDetails.teamDays:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
-                text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
+                adjustmentForLeague = utils.adjustRowForAgg(league)
+                text = allRowsInFile[rowNumber + 9 + adjustmentForLeague - rowsDownAdjustmentInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
                 if len(matchAgg) == 2:
