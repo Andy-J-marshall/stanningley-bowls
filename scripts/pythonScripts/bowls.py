@@ -128,6 +128,7 @@ for team in teamDetails.teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             
+            baseAdjustment = 10
             rowsDownAdjustmentInt = 0
             rowsUpAdjustmentInt = 0
             totalNumberOfRowsAdjustmentInt = 0
@@ -153,18 +154,18 @@ for team in teamDetails.teamDays:
                         break
             
             if cupGame:
+                baseAdjustment = 9
+
                 if 'wednesday pairs' in team.lower():
                     rowsUpAdjustmentInt -= 1
                 
                 # To account for handicap row in cup games
                 checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
-                    rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
+                    rowsDownAdjustmentInt -= 1
 
-                # Find the number of rows down for the team scores
-                totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
-            else:
-                totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+            # Find the number of rows down for the team scores
+            totalNumberOfRowsAdjustmentInt = baseAdjustment - rowsDownAdjustmentInt + rowsUpAdjustmentInt
             
             # Prevents attempting to process a line that doesn't exist
             if rowNumber + totalNumberOfRowsAdjustmentInt >= endRow:
