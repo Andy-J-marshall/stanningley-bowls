@@ -203,6 +203,7 @@ for team in teamDetails.teamDays:
             if cupGame:
                 homeAgg = homeScore
                 awayAgg = awayScore
+                # TODO this won't work for AW cup that doesn't use aggregates!
             else:
                 text = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if text and type(text) is str:
