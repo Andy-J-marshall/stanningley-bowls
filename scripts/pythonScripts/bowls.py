@@ -151,13 +151,16 @@ for team in teamDetails.teamDays:
                         break
             
             if cupGame:
+                if 'wednesday pairs' in team.lower():
+                    rowsUpAdjustmentInt -= 1
+                
                 # To account for handicap row in cup games
                 checkForTeamHandicap = allRowsInFile[rowNumber + 9 - rowsDownAdjustmentInt]
                 if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
                     rowsDownAdjustmentInt = rowsDownAdjustmentInt - 1
 
                 # Find the number of rows down for the team scores
-                totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt
+                totalNumberOfRowsAdjustmentInt = 9 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
             else:
                 totalNumberOfRowsAdjustmentInt = 10 - rowsDownAdjustmentInt + rowsUpAdjustmentInt
             
