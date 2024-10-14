@@ -45,12 +45,12 @@ def returnTotalAggAvailablePerGame(team):
         return 26
     return 21
 
-def leagueHave10Players(league):
+def leagueHas10Players(league):
     if league.lower() in leaguesWith10Players:
         return True
     return False
 
-def leagueHave6Players(league):
+def leagueHas6Players(league):
     if league.lower() in leaguesWith6Players:
         return True
     return False

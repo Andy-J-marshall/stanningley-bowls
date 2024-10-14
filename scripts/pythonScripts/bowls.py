@@ -134,10 +134,10 @@ for team in teamDetails.teamDays:
             if 'bradford' in league.lower() or 'airewharfe' in league.lower():
                 rowsUpAdjustmentInt += 1
 
-            if statsHelper.leagueHave10Players(league):
+            if statsHelper.leagueHas10Players(league):
                 rowsUpAdjustmentInt += 2
             
-            if statsHelper.leagueHave6Players(league):
+            if statsHelper.leagueHas6Players(league):
                 rowsDownAdjustmentInt += 2
             
             if cupGame:
