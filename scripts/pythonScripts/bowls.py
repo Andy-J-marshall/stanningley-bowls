@@ -3,12 +3,12 @@ import os
 from datetime import date
 import re
 import teamDetails
-import utils
+import statsHelper
 import sanityChecks
 
-year = utils.year
+year = statsHelper.year
 
-playerStats = utils.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
+playerStats = statsHelper.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
 
 teamsProcessed = []
 
@@ -77,7 +77,7 @@ for team in teamDetails.teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                for cupText in utils.cupText:
+                for cupText in statsHelper.cupText:
                     if cupText in row.lower():
                         for i in range(0, 13):
                             cupGameRows.append(rowNumber + i)
@@ -97,7 +97,7 @@ for team in teamDetails.teamDays:
 
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
-                for cupText in utils.cupText:
+                for cupText in statsHelper.cupText:
                     if cupText.lower() in row.lower():
                         hostedCupGame = True
                         break
@@ -134,7 +134,7 @@ for team in teamDetails.teamDays:
             cupGame = False
             cupRow = allRowsInFile[rowNumber - 1]
             if cupRow and type(cupRow) is str:
-                for cupText in utils.cupText:
+                for cupText in statsHelper.cupText:
                     if cupText.lower() in cupRow.lower():
                         cupGame = True
                         break
@@ -149,10 +149,10 @@ for team in teamDetails.teamDays:
             if 'bradford' in league.lower() or 'airewharfe' in league.lower():
                 rowsUpAdjustmentInt += 1
 
-            if utils.leagueHave10Players(league):
+            if statsHelper.leagueHave10Players(league):
                 rowsUpAdjustmentInt += 2
             
-            if utils.leagueHave6Players(league):
+            if statsHelper.leagueHave6Players(league):
                 rowsDownAdjustmentInt += 2
             
             if cupGame:
@@ -185,7 +185,7 @@ for team in teamDetails.teamDays:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
-                adjustmentForLeague = utils.adjustRowForAgg(league)
+                adjustmentForLeague = statsHelper.adjustRowForAgg(league)
                 text = allRowsInFile[rowNumber + 9 + adjustmentForLeague - rowsDownAdjustmentInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
@@ -410,7 +410,7 @@ for team in teamDetails.teamDays:
                     playerStats[playerName]['pairsPartners'].append(pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
-                    playerStats[playerName]['availablePairsAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availablePairsAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
@@ -460,25 +460,25 @@ for team in teamDetails.teamDays:
                             playerStats[playerName]['pairCupLosses'] += 1
 
                 # Averages
-                playerStats[playerName]['availableAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                playerStats[playerName]['availableAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
                 playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - \
                     opponentAggregate
                 if homeGame:
-                    playerStats[playerName]['availableHomeAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availableHomeAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalHomeAgg'] += aggregate
                     playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsHomeAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                        playerStats[playerName]['availablePairsHomeAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsHomeAgg'] += aggregate
                         playerStats[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
                 if awayGame:
-                    playerStats[playerName]['availableAwayAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                    playerStats[playerName]['availableAwayAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalAwayAgg'] += aggregate
                     playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
                     if pairsGame:
-                        playerStats[playerName]['availablePairsAwayAgg'] += utils.returnTotalAggAvailablePerGame(team)
+                        playerStats[playerName]['availablePairsAwayAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                         playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
                 playerStats[playerName]['dayPlayed'].append(team)
