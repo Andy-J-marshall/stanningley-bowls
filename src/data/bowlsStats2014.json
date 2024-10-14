@@ -37,13 +37,6 @@
             "dayPlayed": [
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "terry powell"
-            ],
-            "winningPairsPartners": [
-                "terry powell"
-            ],
-            "losingPairsPartners": [],
             "results": [
                 "adam sandilands & terry powell 31 - 29 william shears & charles holden"
             ],
@@ -124,13 +117,6 @@
             "totalGamesPlayed": 1,
             "dayPlayed": [
                 "Wednesday Pairs AireWharfe (A)"
-            ],
-            "pairsPartners": [
-                "jack roberts"
-            ],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "jack roberts"
             ],
             "results": [
                 "alan parker & jack roberts 10 - 31 john lambert & josie burdon"
@@ -259,44 +245,6 @@
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)"
-            ],
-            "pairsPartners": [
-                "colin butterfield",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie"
-            ],
-            "winningPairsPartners": [
-                "colin butterfield",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie"
-            ],
-            "losingPairsPartners": [
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie",
-                "clifford brogie"
             ],
             "results": [
                 "andrew robertson 15 - 21 colin adamthwaite",
@@ -453,9 +401,6 @@
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "anthony heslewood 13 - 21 joan dean",
                 "anthony heslewood 4 - 21 tommy powell",
@@ -631,44 +576,6 @@
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Half Holiday Bradford"
-            ],
-            "pairsPartners": [
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "clifford brogie",
-                "clifford brogie",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson"
-            ],
-            "winningPairsPartners": [
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson"
-            ],
-            "losingPairsPartners": [
-                "dave hudson",
-                "dave hudson",
-                "clifford brogie",
-                "clifford brogie",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson",
-                "dave hudson"
             ],
             "results": [
                 "barry palmer 21 - 5 colin pontefract",
@@ -871,38 +778,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "clifford brogie",
-                "clifford brogie",
-                "leslie leak",
-                "geoff lee",
-                "leslie leak",
-                "leslie leak",
-                "leslie leak",
-                "terry powell",
-                "terry powell",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker"
-            ],
-            "winningPairsPartners": [
-                "clifford brogie",
-                "clifford brogie",
-                "leslie leak",
-                "terry powell",
-                "brian barker"
-            ],
-            "losingPairsPartners": [
-                "leslie leak",
-                "geoff lee",
-                "leslie leak",
-                "leslie leak",
-                "terry powell",
-                "brian barker",
-                "brian barker",
-                "brian barker"
-            ],
             "results": [
                 "bernie miller 21 - 6 kenneth hubbert",
                 "bernie miller 16 - 21 gary nellist",
@@ -1066,42 +941,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "jack roberts",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "bernie miller",
-                "bernie miller",
-                "gordon taylor",
-                "bernie miller",
-                "bernie miller"
-            ],
-            "winningPairsPartners": [
-                "jack roberts",
-                "shirley sandilands",
-                "bernie miller"
-            ],
-            "losingPairsPartners": [
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "bernie miller",
-                "gordon taylor",
-                "bernie miller",
-                "bernie miller"
-            ],
             "results": [
                 "brian barker 21 - 9 elaine higham",
                 "brian barker 13 - 21 jeff goodall",
@@ -1239,20 +1078,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "colin butterfield",
-                "terry powell",
-                "gordon taylor",
-                "gordon taylor"
-            ],
-            "winningPairsPartners": [
-                "colin butterfield"
-            ],
-            "losingPairsPartners": [
-                "terry powell",
-                "gordon taylor",
-                "gordon taylor"
-            ],
             "results": [
                 "brian chamberlain 5 - 21 cedric briggs",
                 "brian chamberlain 21 - 15 jeff warburton",
@@ -1360,9 +1185,6 @@
             "dayPlayed": [
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "chris gardner 14 - 21 ken hudson"
             ],
@@ -1494,40 +1316,6 @@
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "barry palmer",
-                "barry palmer",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "bernie miller",
-                "bernie miller"
-            ],
-            "winningPairsPartners": [
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "bernie miller",
-                "bernie miller"
-            ],
-            "losingPairsPartners": [
-                "barry palmer",
-                "barry palmer",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson",
-                "andrew robertson"
             ],
             "results": [
                 "clifford brogie 16 - 21 ian coulthard",
@@ -1706,38 +1494,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "andrew robertson",
-                "donald shaw",
-                "brian chamberlain",
-                "derek wilson",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee"
-            ],
-            "winningPairsPartners": [
-                "andrew robertson",
-                "donald shaw",
-                "brian chamberlain",
-                "derek wilson",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee",
-                "geoff lee"
-            ],
-            "losingPairsPartners": [
-                "geoff lee",
-                "geoff lee"
-            ],
             "results": [
                 "colin butterfield 21 - 10 billy webb",
                 "colin butterfield 21 - 6 steven sheppard",
@@ -1877,9 +1633,6 @@
                 "Monday AireWharfe (B)",
                 "Monday AireWharfe (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "craig clarkson 17 - 21 brian hall",
                 "craig clarkson 21 - 10 roy whiteley",
@@ -2018,40 +1771,6 @@
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)"
-            ],
-            "pairsPartners": [
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer"
-            ],
-            "winningPairsPartners": [
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer"
-            ],
-            "losingPairsPartners": [
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer",
-                "barry palmer"
             ],
             "results": [
                 "dave hudson 16 - 21 richard tatum",
@@ -2193,13 +1912,6 @@
                 "Monday AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "leslie leak"
-            ],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "leslie leak"
-            ],
             "results": [
                 "david bark 21 - 14 elinor newhouse",
                 "david bark 19 - 21 jennifer briggs",
@@ -2320,38 +2032,6 @@
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)",
                 "Wednesday Pairs AireWharfe (A)"
-            ],
-            "pairsPartners": [
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw"
-            ],
-            "winningPairsPartners": [
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "donald shaw",
-                "donald shaw"
-            ],
-            "losingPairsPartners": [
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "donald shaw",
-                "donald shaw"
             ],
             "results": [
                 "david parker 10 - 21 nigel peel",
@@ -2508,32 +2188,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
-            ],
-            "pairsPartners": [
-                "geoff lee",
-                "colin butterfield",
-                "robin miller",
-                "robin miller",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "leslie leak",
-                "geoff lee"
-            ],
-            "winningPairsPartners": [
-                "colin butterfield",
-                "robin miller",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "geoff lee"
-            ],
-            "losingPairsPartners": [
-                "geoff lee",
-                "robin miller",
-                "gordon taylor",
-                "leslie leak"
             ],
             "results": [
                 "derek wilson 21 - 5 audrey womersley",
@@ -2735,42 +2389,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "david parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "colin butterfield"
-            ],
-            "winningPairsPartners": [
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "david parker",
-                "david parker",
-                "colin butterfield"
-            ],
-            "losingPairsPartners": [
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "david parker",
-                "david parker"
-            ],
             "results": [
                 "donald shaw 21 - 10 paul womersley",
                 "donald shaw 21 - 9 malcolm milner",
@@ -2934,9 +2552,6 @@
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "dorothy heslewood 19 - 21 maureen kitson",
                 "dorothy heslewood 8 - 21 darren metcalf",
@@ -3043,9 +2658,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "duncan mcphail 21 - 13 robin smith",
                 "duncan mcphail 14 - 21 trevor worsman",
@@ -3188,36 +2800,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "derek wilson",
-                "bernie miller",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "derek wilson"
-            ],
-            "winningPairsPartners": [
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "colin butterfield",
-                "derek wilson"
-            ],
-            "losingPairsPartners": [
-                "derek wilson",
-                "bernie miller",
-                "colin butterfield",
-                "colin butterfield"
             ],
             "results": [
                 "geoff lee 3 - 21 john hainsworth",
@@ -3390,42 +2972,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "shirley sandilands",
-                "shirley sandilands",
-                "brian chamberlain",
-                "brian chamberlain",
-                "derek wilson",
-                "derek wilson",
-                "derek wilson",
-                "derek wilson",
-                "robin miller",
-                "robin miller",
-                "robin miller",
-                "robin miller",
-                "brian barker",
-                "robin miller",
-                "robin miller"
-            ],
-            "winningPairsPartners": [
-                "derek wilson",
-                "derek wilson",
-                "derek wilson",
-                "robin miller",
-                "robin miller"
-            ],
-            "losingPairsPartners": [
-                "shirley sandilands",
-                "shirley sandilands",
-                "brian chamberlain",
-                "brian chamberlain",
-                "derek wilson",
-                "robin miller",
-                "robin miller",
-                "robin miller",
-                "brian barker",
-                "robin miller"
             ],
             "results": [
                 "gordon taylor 17 - 21 alex mccartney",
@@ -3635,44 +3181,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
-            ],
-            "pairsPartners": [
-                "david parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "brian barker",
-                "alan parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw"
-            ],
-            "winningPairsPartners": [
-                "david parker",
-                "david parker",
-                "david parker",
-                "david parker",
-                "brian barker",
-                "david parker",
-                "david parker",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw",
-                "mabel shaw"
-            ],
-            "losingPairsPartners": [
-                "david parker",
-                "david parker",
-                "alan parker",
-                "david parker",
-                "mabel shaw"
             ],
             "results": [
                 "jack roberts 17 - 21 john birtles",
@@ -3894,9 +3402,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "jim moorin 21 - 3 graham womersley",
                 "jim moorin 21 - 2 jim dobson",
@@ -4044,9 +3549,6 @@
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "june mitchell 14 - 21 mildred canning",
                 "june mitchell 12 - 21 maureen kitson",
@@ -4199,9 +3701,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "keith worrall 8 - 21 william schuler",
                 "keith worrall 21 - 9 keith barran",
@@ -4350,13 +3849,6 @@
                 "Monday AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
             ],
-            "pairsPartners": [
-                "robin miller"
-            ],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "robin miller"
-            ],
             "results": [
                 "kevin miller 18 - 21 jeff driver",
                 "kevin miller 8 - 21 pamela nellist",
@@ -4470,24 +3962,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "bernie miller",
-                "bernie miller",
-                "bernie miller",
-                "bernie miller",
-                "derek wilson",
-                "david bark"
-            ],
-            "winningPairsPartners": [
-                "bernie miller"
-            ],
-            "losingPairsPartners": [
-                "bernie miller",
-                "bernie miller",
-                "bernie miller",
-                "derek wilson",
-                "david bark"
             ],
             "results": [
                 "leslie leak 5 - 21 bryn jones",
@@ -4669,42 +4143,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts"
-            ],
-            "winningPairsPartners": [
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts",
-                "jack roberts"
-            ],
-            "losingPairsPartners": [
-                "donald shaw",
-                "donald shaw",
-                "donald shaw",
-                "jack roberts"
-            ],
             "results": [
                 "mabel shaw 21 - 2 terry watson",
                 "mabel shaw 21 - 13 keith barran",
@@ -4884,9 +4322,6 @@
                 "Saturday Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "marion worrall 16 - 21 ruth ellis",
                 "marion worrall 8 - 21 elain hill",
@@ -4996,9 +4431,6 @@
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "marjory taylor 15 - 21 keith wakelin",
                 "marjory taylor 8 - 21 hazel goodall",
@@ -5106,13 +4538,6 @@
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "robin miller"
-            ],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "robin miller"
             ],
             "results": [
                 "maureen boyce 7 - 21 malcolm watts",
@@ -5243,34 +4668,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "derek wilson",
-                "derek wilson",
-                "kevin miller",
-                "maureen boyce",
-                "terry powell",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor"
-            ],
-            "winningPairsPartners": [
-                "derek wilson",
-                "gordon taylor",
-                "gordon taylor"
-            ],
-            "losingPairsPartners": [
-                "derek wilson",
-                "kevin miller",
-                "maureen boyce",
-                "terry powell",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor",
-                "gordon taylor"
             ],
             "results": [
                 "robin miller 13 - 21 anita kingham",
@@ -5417,38 +4814,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "gordon taylor",
-                "gordon taylor",
-                "terry powell",
-                "terry powell",
-                "terry powell",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "terry powell",
-                "terry powell",
-                "terry powell",
-                "terry powell"
-            ],
-            "winningPairsPartners": [
-                "terry powell",
-                "brian barker",
-                "terry powell"
-            ],
-            "losingPairsPartners": [
-                "gordon taylor",
-                "gordon taylor",
-                "terry powell",
-                "terry powell",
-                "brian barker",
-                "brian barker",
-                "brian barker",
-                "terry powell",
-                "terry powell",
-                "terry powell"
             ],
             "results": [
                 "shirley sandilands 21 - 18 maureen adams",
@@ -5621,13 +4986,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [
-                "terry powell"
-            ],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "terry powell"
-            ],
             "results": [
                 "steve gardner 21 - 5 david greenwood",
                 "steve gardner 21 - 4 brian minogue",
@@ -5794,9 +5152,6 @@
                 "Wednesday Half Holiday Bradford",
                 "Wednesday Half Holiday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "stewart watson 21 - 2 len robinson",
                 "stewart watson 21 - 20 brian thompson",
@@ -5956,38 +5311,6 @@
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)",
                 "Wednesday Pairs AireWharfe (B)"
-            ],
-            "pairsPartners": [
-                "steve gardner",
-                "brian chamberlain",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "robin miller",
-                "bernie miller",
-                "bernie miller",
-                "adam sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands"
-            ],
-            "winningPairsPartners": [
-                "shirley sandilands",
-                "bernie miller",
-                "adam sandilands",
-                "shirley sandilands"
-            ],
-            "losingPairsPartners": [
-                "steve gardner",
-                "brian chamberlain",
-                "shirley sandilands",
-                "shirley sandilands",
-                "robin miller",
-                "bernie miller",
-                "shirley sandilands",
-                "shirley sandilands",
-                "shirley sandilands"
             ],
             "results": [
                 "terry powell 20 - 21 terry waite-pullan",
