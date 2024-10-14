@@ -1,9 +1,10 @@
 import json
 import os
 from datetime import date
-import utils
-import teamDetails
 import re
+import utils
+import sanityChecks
+import teamDetails
 
 year = utils.year
 
@@ -288,7 +289,7 @@ dataToExport = {
 filename = 'src/data/allPlayerStats' + year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
-    previousFileSize = utils.checkFileSize(filename)
+    previousFileSize = sanityChecks.checkFileSize(filename)
     os.remove(filename)
 
 with open(filename, 'w') as jsonFile:
@@ -298,8 +299,8 @@ with open(filename, 'w') as jsonFile:
     jsonFile.close()
 
 # Sanity checks on the data
-utils.sanityChecksOnPlayerStats(playerResults, teamDetails.players)
-newFileSize = utils.checkFileSize(filename)
+sanityChecks.sanityChecksOnPlayerStats(playerResults, teamDetails.players)
+newFileSize = sanityChecks.checkFileSize(filename)
 if newFileSize < previousFileSize:
     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
 print('Sanity checks for all teams stats complete')
