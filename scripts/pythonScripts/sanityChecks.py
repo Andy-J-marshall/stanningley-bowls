@@ -113,3 +113,18 @@ def checkForDuplicateResults(results, player):
         print('WARNING: check for potential duplicate results for player:' + player)
         print(results)
         print('----------------')
+
+def checkTeamName(team, teamNameUsedForLeague, expectedTeamDisplayName):
+    if team.lower().endswith(' (a)') and teamNameUsedForLeague.lower().endswith(' b'):
+        raise Exception('B team found for A team stats')
+    if team.lower().endswith(' (b)') and teamNameUsedForLeague.lower().endswith(' a'):
+        raise Exception('A team found for B team stats')
+    if expectedTeamDisplayName.lower() not in teamNameUsedForLeague.lower():
+        raise Exception('Incorrect team name found')
+    
+def checkFileSizeHasGrown(previousFileSize, newFileSize):
+    if newFileSize < previousFileSize:
+        raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
+    print('Sanity checks complete')
+    print('-------------------------')
+    

@@ -1,7 +1,3 @@
-from datetime import date
-
-year = str(date.today().year)
-
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
 leaguesWith10Players = ['monday airewharfe', 'saturday airewharfe', 'saturday bradford', 'tuesday mirfield']
@@ -120,4 +116,3 @@ def returnListOfPlayerStats(days, includeTeamData, players):
                 }
         playerStats[player] = playerObj
     return playerStats
-                

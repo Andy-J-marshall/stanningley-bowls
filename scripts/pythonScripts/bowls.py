@@ -1,12 +1,12 @@
-import json
 import os
 from datetime import date
 import re
 import teamDetails
 import statsHelper
 import sanityChecks
+import utils
 
-year = statsHelper.year
+year = utils.year
 
 playerStats = statsHelper.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
 
@@ -28,15 +28,9 @@ for team in teamDetails.teamDays:
     
     with open('bowlsnetReports/' + year + '/' + league + '.txt', 'r') as file:
         allRowsInFile = file.readlines()
-        
-        # Find the number of rows in the file and the stating row to check the stats
-        endRow = 0
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            endRow = rowNumber
-                    
-        if endRow == 0:
-            raise Exception(league + ': Report file is empty')
+
+        # Find the number of rows in the file
+        endRow = utils.findEndRowOfFile(league, allRowsInFile)
         
         # Find team name used by team in this league
         possibleTeamNamesUsed = []
@@ -64,13 +58,7 @@ for team in teamDetails.teamDays:
         
         teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
         
-        # Check correct team name is used for each day
-        if team.lower().endswith(' (a)') and teamNameUsedForLeague.lower().endswith(' b'):
-            raise Exception('B team found for A team stats')
-        if team.lower().endswith(' (b)') and teamNameUsedForLeague.lower().endswith(' a'):
-            raise Exception('A team found for B team stats')
-        if teamDetails.displayTeamName.lower() not in teamNameUsedForLeague.lower():
-            raise Exception('Incorrect team name found')
+        sanityChecks.checkTeamName(team, teamNameUsedForLeague, teamDetails.displayTeamName)        
 
         # Find the cup games in the stats
         cupGameRows = []
@@ -499,17 +487,10 @@ if os.path.exists(filename):
     previousFileSize = sanityChecks.checkFileSize(filename)
     os.remove(filename)    
 
-with open(filename, 'w') as jsonFile:
-    json.dump(dataToExport, jsonFile, indent=4)
-    print(filename + ' created')
-    print('------')
-    jsonFile.close()
+utils.saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 sanityChecks.checksTeamStats(allTeamResults)
 sanityChecks.checkPlayerStats(playerStats, teamDetails.players)
 newFileSize = sanityChecks.checkFileSize(filename)
-if newFileSize < previousFileSize:
-    raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
-print(f'Sanity checks for {teamDetails.displayTeamName} stats complete')
-print('------')
+sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)

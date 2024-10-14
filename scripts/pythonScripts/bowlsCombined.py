@@ -5,8 +5,9 @@ import re
 import statsHelper
 import sanityChecks
 import teamDetails
+import utils
 
-year = statsHelper.year
+year = utils.year
 
 playerResults = statsHelper.returnListOfPlayerStats(teamDetails.allDays, False, teamDetails.players)
 leaguesProcessed = []
@@ -25,14 +26,8 @@ for league in teamDetails.allDays:
         print('Updating Stats: ' + league)
         allRowsInFile = file.readlines()
 
-        # Find the number of rows in the file and the stating row to check the stats
-        endRow = 0
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            endRow = rowNumber
-            
-        if endRow == 0:
-            raise Exception(league + ': Report file is empty')
+        # Find the number of rows in the file
+        endRow = utils.findEndRowOfFile(league, allRowsInFile)
 
         # Find the cup games in the stats
         cupGameRows = []
@@ -289,15 +284,9 @@ if os.path.exists(filename):
     previousFileSize = sanityChecks.checkFileSize(filename)
     os.remove(filename)
 
-with open(filename, 'w') as jsonFile:
-    json.dump(dataToExport, jsonFile, indent=4)
-    print(filename + ' created')
-    print('------')
-    jsonFile.close()
+utils.saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 sanityChecks.checkPlayerStats(playerResults, teamDetails.players)
 newFileSize = sanityChecks.checkFileSize(filename)
-if newFileSize < previousFileSize:
-    raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')
-print('Sanity checks for all teams stats complete')
+sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)
