@@ -6,13 +6,10 @@ import statsHelper
 import sanityChecks
 import utils
 
-year = utils.year
-
 playerStats = statsHelper.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
-
 teamsProcessed = []
-
 allTeamResults = []
+
 print('UPDATING STATS:', teamDetails.teamNames[0].upper())
 
 for team in teamDetails.teamDays:
@@ -26,7 +23,7 @@ for team in teamDetails.teamDays:
         raise Exception('team is being processed twice: ' + team)
     teamsProcessed.append(team)
     
-    with open('bowlsnetReports/' + year + '/' + league + '.txt', 'r') as file:
+    with open('bowlsnetReports/' + utils.year + '/' + league + '.txt', 'r') as file:
         allRowsInFile = file.readlines()
 
         # Find the number of rows in the file
@@ -251,24 +248,6 @@ for team in teamDetails.teamDays:
         
         #### PLAYER STATS ####
         
-        def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway):
-            # Checks if player plays for team on selected day
-            playerName = teamDetails.deduplicateNames(playerName)
-            if playerName in teamDetails.traitorPlayers[league]:
-                return False
-            
-            for i in range(0, 13):
-                # Checks player is playing for correct team
-                previousRowValue = allRowsInFile[rowNumber - i]
-                if previousRowValue and type(previousRowValue) is str:
-                    previousRowValue = previousRowValue.lower().strip()
-                    if teamNameUsedForLeague.lower() in previousRowValue:
-                        if homeOrAway.lower() == 'home' and previousRowValue.startswith(teamNameUsedForLeague.lower()):
-                            return True
-                        if homeOrAway.lower() == 'away' and not previousRowValue.startswith(teamNameUsedForLeague.lower()):
-                            return True
-                        return False
-
         # Find rows in spreadsheet for players' games
         homePlayerRow = []
         awayPlayerRow = []
@@ -280,14 +259,14 @@ for team in teamDetails.teamDays:
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                     possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
                     if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
-                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home')
+                        validPlayer = statsHelper.checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home', teamNameUsedForLeague, league, allRowsInFile)
                         if validPlayer:
                             homePlayerRow.append(rowNumber)
 
                     possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
                     possiblePlayerNameAway = teamDetails.deduplicateNames(possiblePlayerNameAway).lower()
                     if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
-                        validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away')
+                        validPlayer = statsHelper.checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away', teamNameUsedForLeague, league, allRowsInFile)
                         if validPlayer:
                             awayPlayerRow.append(rowNumber)
         
@@ -468,9 +447,7 @@ for team in teamDetails.teamDays:
                         playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
                 playerStats[playerName]['dayPlayed'].append(team)
 
-                if rowNumber in homePlayerRow and rowNumber in awayPlayerRow:
-                    raise Exception(
-                        'Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
+                sanityChecks.validatePlayerNotProcessedTwice(rowNumber, homePlayerRow, awayPlayerRow)
     file.close()
 
 # Create JSON file
@@ -478,13 +455,13 @@ dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
-    'statsYear': year,
+    'statsYear': utils.year,
 }
 
-filename = 'src/data/bowlsStats' + year + '.json'
+filename = 'src/data/bowlsStats' + utils.year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
-    previousFileSize = sanityChecks.checkFileSize(filename)
+    previousFileSize = sanityChecks.getFileSize(filename)
     os.remove(filename)    
 
 utils.saveFile(filename, dataToExport)
@@ -492,5 +469,5 @@ utils.saveFile(filename, dataToExport)
 # Sanity checks on the data
 sanityChecks.checksTeamStats(allTeamResults)
 sanityChecks.checkPlayerStats(playerStats, teamDetails.players)
-newFileSize = sanityChecks.checkFileSize(filename)
+newFileSize = sanityChecks.getFileSize(filename)
 sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)

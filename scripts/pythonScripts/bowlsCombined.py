@@ -1,4 +1,3 @@
-import json
 import os
 from datetime import date
 import re
@@ -6,8 +5,6 @@ import statsHelper
 import sanityChecks
 import teamDetails
 import utils
-
-year = utils.year
 
 playerResults = statsHelper.returnListOfPlayerStats(teamDetails.allDays, False, teamDetails.players)
 leaguesProcessed = []
@@ -22,7 +19,7 @@ for league in teamDetails.allDays:
     leaguesProcessed.append(league)
 
     # Goes through each sheet in turn
-    with open('bowlsnetReports/' + year + '/' + league + '.txt', 'r') as file:
+    with open('bowlsnetReports/' + utils.year + '/' + league + '.txt', 'r') as file:
         print('Updating Stats: ' + league)
         allRowsInFile = file.readlines()
 
@@ -275,18 +272,18 @@ for league in teamDetails.allDays:
 dataToExport = {
     'playerResults': playerResults,
     'lastUpdated': date.today().strftime("%d/%m/%Y"),
-    'statsYear': year
+    'statsYear': utils.year
 }
 
-filename = 'src/data/allPlayerStats' + year + '.json'
+filename = 'src/data/allPlayerStats' + utils.year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
-    previousFileSize = sanityChecks.checkFileSize(filename)
+    previousFileSize = sanityChecks.getFileSize(filename)
     os.remove(filename)
 
 utils.saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 sanityChecks.checkPlayerStats(playerResults, teamDetails.players)
-newFileSize = sanityChecks.checkFileSize(filename)
+newFileSize = sanityChecks.getFileSize(filename)
 sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)

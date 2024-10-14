@@ -1,3 +1,5 @@
+import teamDetails
+
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
 leaguesWith10Players = ['monday airewharfe', 'saturday airewharfe', 'saturday bradford', 'tuesday mirfield']
@@ -116,3 +118,20 @@ def returnListOfPlayerStats(days, includeTeamData, players):
                 }
         playerStats[player] = playerObj
     return playerStats
+
+def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile):
+    playerName = teamDetails.deduplicateNames(playerName)
+    if playerName in teamDetails.traitorPlayers[league]:
+        return False
+    
+    for i in range(0, 13):
+        # Checks player is playing for correct team
+        previousRowValue = allRowsInFile[rowNumber - i]
+        if previousRowValue and type(previousRowValue) is str:
+            previousRowValue = previousRowValue.lower().strip()
+            if teamNameUsedForLeague.lower() in previousRowValue:
+                if homeOrAway.lower() == 'home' and previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                    return True
+                if homeOrAway.lower() == 'away' and not previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                    return True
+                return False

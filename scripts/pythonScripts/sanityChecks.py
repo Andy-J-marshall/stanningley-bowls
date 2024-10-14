@@ -1,6 +1,6 @@
 import statsHelper
 
-def checkFileSize(fileName):
+def getFileSize(fileName):
     newEndRow = 0
     with open(fileName, 'r') as jsonFile:
         allRowsInFile = jsonFile.readlines()    
@@ -128,3 +128,6 @@ def checkFileSizeHasGrown(previousFileSize, newFileSize):
     print('Sanity checks complete')
     print('-------------------------')
     
+def validatePlayerNotProcessedTwice(rowNumber, homePlayerRow, awayPlayerRow):
+    if rowNumber in homePlayerRow and rowNumber in awayPlayerRow:
+        raise Exception('Row appears in home row and away row. Check the opponent name. Row: ' + str(rowNumber))
