@@ -1,30 +1,11 @@
 import { expect } from 'chai';
 import {
     returnPlayerStats,
-    calculatePairsPartnersCount,
     checkWinPercAndAverageAreNumbers,
 } from '../playersHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
 describe('#Players Tests', () => {
-    describe('#calculatePairsPartnersCount()', () => {
-        it('Calculate pairs partners count', () => {
-            const pairs = [
-                'Andy',
-                'Alyssa',
-                'Vanessa',
-                'Andy',
-                'Vanessa',
-                'Vanessa',
-            ];
-            const pairsObj = calculatePairsPartnersCount(pairs);
-            expect(Object.keys(pairsObj)).to.have.lengthOf(3);
-            expect(pairsObj.Andy.timesPaired).to.equal(2);
-            expect(pairsObj.Vanessa.timesPaired).to.equal(3);
-            expect(pairsObj.Alyssa.timesPaired).to.equal(1);
-        });
-    });
-
     describe('#returnPlayerStats()', () => {
         let playerStats: any = stats2022.playerResults;
         let stats: any = returnPlayerStats(playerStats, 'paul bowes');
@@ -160,38 +141,6 @@ describe('#Players Tests', () => {
             expect(wednesday.teamAvg).to.equal(21);
         });
 
-        it('Pairs partners calculated correctly', () => {
-            const {
-                pairsPartnersCount,
-                pairsPartnersCountWins,
-                pairsPartnersCountLosses,
-                pairLosses,
-                pairWins,
-                pairsGames,
-            } = stats;
-            expect(pairLosses).to.equal(5);
-            expect(pairWins).to.equal(5);
-            expect(pairsGames).to.equal(10);
-            expect(pairsPartnersCount['alyssa randell'].timesPaired).to.equal(
-                6
-            );
-            expect(
-                pairsPartnersCount['vanessa lancaster'].timesPaired
-            ).to.equal(4);
-            expect(
-                pairsPartnersCountWins['alyssa randell'].timesPaired
-            ).to.equal(4);
-            expect(
-                pairsPartnersCountWins['vanessa lancaster'].timesPaired
-            ).to.equal(1);
-            expect(
-                pairsPartnersCountLosses['alyssa randell'].timesPaired
-            ).to.equal(2);
-            expect(
-                pairsPartnersCountLosses['vanessa lancaster'].timesPaired
-            ).to.equal(3);
-        });
-
         it('Days Played', () => {
             expect(stats.allTeamsPlayedFor).to.deep.equal([
                 'Monday Combined Leeds',
@@ -235,26 +184,6 @@ describe('#Players Tests', () => {
             expect(saturday.teamLosses).to.equal(0);
             expect(saturday.teamGames).to.equal(17);
             expect(saturday.teamAvg.toFixed(2)).to.equal('13.41');
-        });
-    });
-
-    describe('calculatePairsPartnersCount', () => {
-        it('should calculate pairs partners count', () => {
-            const allPairsPartners = [
-                'partner1',
-                'partner2',
-                'partner1',
-                'partner3',
-            ];
-
-            const expectedResult = {
-                partner1: { timesPaired: 2 },
-                partner2: { timesPaired: 1 },
-                partner3: { timesPaired: 1 },
-            };
-
-            const result = calculatePairsPartnersCount(allPairsPartners);
-            expect(result).to.deep.equal(expectedResult);
         });
     });
 

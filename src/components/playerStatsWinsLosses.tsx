@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
 import GameTypeButton from './gameTypeButtons';
 import { AggregatedStats } from '../types/interfaces';
 
@@ -33,9 +32,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
         cupGamesPlayed,
         singlesGames,
         pairsGames,
-        pairsPartnersCount,
-        pairsPartnersCountWins,
-        pairsPartnersCountLosses,
         average,
         homeAverage,
         awayAverage,
@@ -77,8 +73,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
     const [displayAwayAverage, setDisplayAwayAverage] = useState(awayAverage);
     const [displayCupAverage, setDisplayCupAverage] = useState(cupAverage);
 
-    const [displayPairsPartners, setDisplayPairsPartners] = useState(false);
-
     useEffect(() => {
         refreshStats();
     });
@@ -107,8 +101,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
         setDisplayHomeAverage(homeAverage);
         setDisplayAwayAverage(awayAverage);
         setDisplayCupAverage(cupAverage);
-
-        setDisplayPairsPartners(false);
     }
 
     function displaySingles() {
@@ -135,8 +127,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
         setDisplayHomeAverage(singlesHomeAverage);
         setDisplayAwayAverage(singlesAwayAverage);
         setDisplayCupAverage(singlesCupAverage);
-
-        setDisplayPairsPartners(false);
     }
 
     function displayPairs() {
@@ -163,8 +153,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
         setDisplayHomeAverage(pairsHomeAverage);
         setDisplayAwayAverage(pairsAwayAverage);
         setDisplayCupAverage(pairsCupAverage);
-
-        setDisplayPairsPartners(true);
     }
 
     function refreshStats() {
@@ -263,61 +251,6 @@ function PlayerStatsWinsLosses(props: AggregatedStats) {
                                 ).toFixed(0)}
                                 %
                             </p>
-                        </div>
-                    )}
-                    {displayPairsPartners && pairsGames > 0 && (
-                        <div>
-                            <hr />
-                            {Object.keys(pairsPartnersCount).length > 0 && (
-                                <div>
-                                    <h3>PAIRS PARTNERS</h3>
-                                    {Object.keys(pairsPartnersCount).map(
-                                        (partner, key) => {
-                                            return (
-                                                <p key={key}>
-                                                    {
-                                                        pairsPartnersCount[
-                                                            partner
-                                                        ].timesPaired
-                                                    }{' '}
-                                                    played with{' '}
-                                                    {capitalizeText([partner])}
-                                                </p>
-                                            );
-                                        }
-                                    )}
-                                    {Object.keys(pairsPartnersCountWins).map(
-                                        (partner, key) => {
-                                            return (
-                                                <p key={key}>
-                                                    {
-                                                        pairsPartnersCountWins[
-                                                            partner
-                                                        ].timesPaired
-                                                    }{' '}
-                                                    won with{' '}
-                                                    {capitalizeText([partner])}
-                                                </p>
-                                            );
-                                        }
-                                    )}
-                                    {Object.keys(pairsPartnersCountLosses).map(
-                                        (partner, key) => {
-                                            return (
-                                                <p key={key}>
-                                                    {
-                                                        pairsPartnersCountLosses[
-                                                            partner
-                                                        ].timesPaired
-                                                    }{' '}
-                                                    lost with{' '}
-                                                    {capitalizeText([partner])}
-                                                </p>
-                                            );
-                                        }
-                                    )}
-                                </div>
-                            )}
                         </div>
                     )}
                 </Accordion.Body>
