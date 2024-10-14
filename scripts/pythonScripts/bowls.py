@@ -509,8 +509,8 @@ with open(filename, 'w') as jsonFile:
     jsonFile.close()
 
 # Sanity checks on the data
-sanityChecks.sanityChecksOnTeamStats(allTeamResults)
-sanityChecks.sanityChecksOnPlayerStats(playerStats, teamDetails.players)
+sanityChecks.checksTeamStats(allTeamResults)
+sanityChecks.checkPlayerStats(playerStats, teamDetails.players)
 newFileSize = sanityChecks.checkFileSize(filename)
 if newFileSize < previousFileSize:
     raise Exception(f'JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}')

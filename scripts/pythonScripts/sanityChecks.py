@@ -11,7 +11,7 @@ def checkFileSize(fileName):
         raise Exception('JSON is empty')
     return newEndRow
 
-def sanityChecksOnPlayerStats(playerStats, players):
+def checkPlayerStats(playerStats, players):
     print('Running sanity checks on player stats')
     for p in players:
         player = utils.standardiseName(p)
@@ -76,7 +76,7 @@ def sanityChecksOnPlayerStats(playerStats, players):
         
         checkForDuplicateResults(stats['results'], player)
 
-def sanityChecksOnTeamStats(allTeamResults):
+def checksTeamStats(allTeamResults):
     print('Running sanity checks on team stats')
     for team in allTeamResults:
         dayForTeam = team['day']
