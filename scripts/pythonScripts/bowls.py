@@ -407,7 +407,6 @@ for team in teamDetails.teamDays:
                 # Store player stats
                 playerNameForResult = playerName
                 if pairsGame:
-                    playerStats[playerName]['pairsPartners'].append(pairsPartner)
                     playerNameForResult = playerName + ' & ' + pairsPartner
                     opponentsName = opponentsName + ' & ' + secondOpponent
                     playerStats[playerName]['availablePairsAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
@@ -427,7 +426,6 @@ for team in teamDetails.teamDays:
                 if aggregate > opponentAggregate:
                     playerStats[playerName][teamNameToStoreData.lower()]['wins'] += 1
                     if pairsGame:
-                        playerStats[playerName]['winningPairsPartners'].append(pairsPartner)
                         playerStats[playerName]['pairWins'] += 1
                     if homeGame:
                         playerStats[playerName]['homeWins'] += 1
@@ -444,7 +442,6 @@ for team in teamDetails.teamDays:
                 # Losses
                 else:
                     if pairsGame:
-                        playerStats[playerName]['losingPairsPartners'].append(pairsPartner)
                         playerStats[playerName]['pairLosses'] += 1
                     if homeGame:
                         playerStats[playerName]['homeLosses'] += 1
