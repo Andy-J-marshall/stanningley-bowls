@@ -67,12 +67,6 @@ def checkPlayerStats(playerStats, players):
             raise Exception(f'results for {player} incorrect?')
         if len(stats['dayPlayed']) != stats['totalGamesPlayed']:
             raise Exception(f'dayPlayed for {player} incorrect?')
-        if len(stats['pairsPartners']) != (stats['pairWins'] + stats['pairLosses']):
-            raise Exception(f'pairsPartners for {player} incorrect?')
-        if len(stats['winningPairsPartners']) != stats['pairWins']:
-            raise Exception(f'winningPairsPartners for {player} incorrect?')
-        if len(stats['losingPairsPartners']) != stats['pairLosses']:
-            raise Exception(f'losingPairsPartners for {player} incorrect?')
         
         checkForDuplicateResults(stats['results'], player)
 
