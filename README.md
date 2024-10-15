@@ -157,8 +157,6 @@ Update the `teamDetails.py` script: deduplicateNames, otherTeams, and otherLeagu
 
 If entering a new league, make sure the `bowls.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
 
-If the A and B team play one another then the `bowls.py` script will currently fail. The exception will need to be removed and the issue around the scoring and results if they play one another fixed.
-
 After generating the stats file for the new year, import the file into `statsData.ts`. Update `allYearStats` and `allYearCombinedStats`.
 Update `statsCallback` in `App.tsx` with the reference to the new year's stats file.
 Update the default stats to display for `teamStats` and `combinedStats`.
