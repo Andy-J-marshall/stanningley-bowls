@@ -134,7 +134,7 @@ for team in teamDetails.teamDays:
                 rowsDownAdjustmentInt += 2
             
             if cupGame:
-                baseAdjustment = 9
+                rowsDownAdjustmentInt += 1
 
                 if 'wednesday pairs' in league.lower():
                     rowsUpAdjustmentInt -= 1
