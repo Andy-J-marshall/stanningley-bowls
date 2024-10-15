@@ -40,6 +40,7 @@ for team in teamDetails.teamDays:
                 for possibleTeamName in teamDetails.teamNames:
                     rowValue = row.lower().strip()
                     if possibleTeamName.lower() in rowValue:
+                        # Filter out A team stats for B team and vice versa
                         if team.lower().endswith(' (a)'):
                             if possibleTeamName.lower().endswith(' b') or possibleTeamName.lower().endswith(' \'b\''):
                                 continue
@@ -247,7 +248,7 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
             if (row and type(row) is str):
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
-                if len(findPossiblePlayerNames) > 1:                
+                if len(findPossiblePlayerNames) > 1:
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                     possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
                     if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:

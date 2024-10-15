@@ -36,7 +36,7 @@ for league in teamDetails.allDays:
             row = allRowsInFile[rowNumber]
             if (row and type(row) is str):
                 findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
-                if len(findPossiblePlayerNames) > 1:                
+                if len(findPossiblePlayerNames) > 1:
                     possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                     possiblePlayerNameHome = statsHelper.standardiseName(possiblePlayerNameHome)
                     if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
