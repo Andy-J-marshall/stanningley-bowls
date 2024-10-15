@@ -80,10 +80,10 @@ for team in teamDetails.teamDays:
                 aTeamPlayingBTeamBool = False
                 if hostedCupGame is False and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
                     aTeamPlayingBTeamBool = True
-                    # Figure out whether A or B team is playing at home
                     teamLower = teamNameUsedForLeague.lower()
                     rowLower = row.lower().strip()
                     if teamLower in rowLower:
+                        # Figure out whether A or B team is playing at home and store the rows
                         if rowLower.endswith(' a') or rowLower.endswith(' \'a\''):
                             if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
                                 awayRow.append(rowNumber)
@@ -95,6 +95,7 @@ for team in teamDetails.teamDays:
                             if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
                                 homeRow.append(rowNumber)
                 
+                # Store home and away game rows
                 if aTeamPlayingBTeamBool is False and hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
                     firstWord = words[0].lower()
