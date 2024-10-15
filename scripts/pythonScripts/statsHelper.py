@@ -184,5 +184,4 @@ def isCupGame(allRowsInFile, rowNumber):
         for text in cupText:
             if text.lower() in cupRow.lower():
                 return True
-                break
     return False
