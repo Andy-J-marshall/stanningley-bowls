@@ -78,21 +78,21 @@ for team in teamDetails.teamDays:
 
                 # Check if A and B team are playing each other
                 aTeamPlayingBTeamBool = False
-                if hostedCupGame is False and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
+                if not hostedCupGame and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
                     aTeamPlayingBTeamBool = True
                     teamLower = teamNameUsedForLeague.lower()
                     rowLower = row.lower().strip()
                     if teamLower in rowLower:
-                        # Figure out whether A or B team is playing at home and store the rows
-                        if rowLower.endswith(' a') or rowLower.endswith(' \'a\''):
-                            if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
+                        # Determine if A or B team is playing at home and store the rows
+                        if rowLower.endswith((' a', " 'a'")):
+                            if teamLower.endswith((' a', " 'a'")):
                                 awayRow.append(rowNumber)
-                            if teamLower.endswith(' b') or teamLower.endswith(' \'b\''):
+                            elif teamLower.endswith((' b', " 'b'")):
                                 homeRow.append(rowNumber)
-                        if rowLower.endswith(' b') or rowLower.endswith(' \'b\''):
-                            if teamLower.endswith(' b') or teamLower.endswith(' \'b\''):
+                        elif rowLower.endswith((' b', " 'b'")):
+                            if teamLower.endswith((' b', " 'b'")):
                                 awayRow.append(rowNumber)
-                            if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
+                            elif teamLower.endswith((' a', " 'a'")):
                                 homeRow.append(rowNumber)
                 
                 # Store home and away game rows
