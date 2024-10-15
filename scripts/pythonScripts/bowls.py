@@ -73,6 +73,7 @@ for team in teamDetails.teamDays:
                 hostedCupGame = statsHelper.isCupGame(row.lower())
 
                 # Check if A and B team are playing each other
+                # TODO create a function?
                 aTeamPlayingBTeamBool = False
                 if not hostedCupGame and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
                     aTeamPlayingBTeamBool = True
