@@ -108,43 +108,10 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
 
             # Check if cup game
-            # Cup games are based on aggregate, not score, and are played on neutral greens
-            cupGame = False
-            cupRow = allRowsInFile[rowNumber - 1]
-            if cupRow and type(cupRow) is str:
-                for cupText in statsHelper.cupText:
-                    if cupText.lower() in cupRow.lower():
-                        cupGame = True
-                        break
+            cupGameBool = statsHelper.isCupGame(allRowsInFile, rowNumber)
             
             # Find the number of rows down for the team scores                       
-            baseAdjustment = 10
-            rowsDownAdjustmentInt = 0
-            rowsUpAdjustmentInt = 0
-            totalNumberOfRowsAdjustmentInt = 0
-
-            # AireWharfe and Bradford leagues display scores differently
-            if 'bradford' in league.lower() or 'airewharfe' in league.lower():
-                rowsUpAdjustmentInt += 1
-
-            if statsHelper.leagueHas10Players(league):
-                rowsUpAdjustmentInt += 2
-            
-            if statsHelper.leagueHas6Players(league):
-                rowsDownAdjustmentInt += 2
-            
-            if cupGame:
-                rowsDownAdjustmentInt += 1
-
-                if 'wednesday pairs' in league.lower():
-                    rowsUpAdjustmentInt -= 1
-                
-                # To account for handicap row in cup games
-                checkForTeamHandicap = allRowsInFile[rowNumber + baseAdjustment - rowsDownAdjustmentInt]
-                if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
-                    rowsDownAdjustmentInt -= 1
-
-            totalNumberOfRowsAdjustmentInt = baseAdjustment - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+            totalNumberOfRowsAdjustmentInt = statsHelper.returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league)
             
             # Prevents attempting to process a line that doesn't exist
             if rowNumber + totalNumberOfRowsAdjustmentInt >= endRow:
@@ -159,12 +126,14 @@ for team in teamDetails.teamDays:
                 awayScore = int(matchScore[1].strip())
                 
             # Save the aggregates
-            if cupGame:
+            if cupGameBool:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
-                adjustmentForLeague = statsHelper.adjustRowForAgg(league)
-                text = allRowsInFile[rowNumber + 9 + adjustmentForLeague - rowsDownAdjustmentInt]
+                adjustmentForLeagueInt = statsHelper.returnAggRowDownNumber(league)
+                adjustFor6PlayerTeamsInt = statsHelper.adjustRowNumberFor6PlayerTeams(league, 0)
+                # TODO hardcoded 9 here
+                text = allRowsInFile[rowNumber + 9 + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
                 if len(matchAgg) == 2:
@@ -181,12 +150,12 @@ for team in teamDetails.teamDays:
                     ' ' + opponent
                 results.append(result)
                 if homeScore > awayScore:
-                    if cupGame:
+                    if cupGameBool:
                         cupWins = cupWins + 1
                     else:
                         homeWins = homeWins + 1
                 if homeScore < awayScore:
-                    if cupGame:
+                    if cupGameBool:
                         cupLosses = cupLosses + 1
                     else:
                         homeLosses = homeLosses + 1
@@ -204,12 +173,12 @@ for team in teamDetails.teamDays:
                     ' ' + teamNameToUse
                 results.append(result)
                 if awayScore > homeScore:
-                    if cupGame:
+                    if cupGameBool:
                         cupWins = cupWins + 1
                     else:
                         awayWins = awayWins + 1
                 if awayScore < homeScore:
-                    if cupGame:
+                    if cupGameBool:
                         cupLosses = cupLosses + 1
                     else:
                         awayLosses = awayLosses + 1
@@ -277,24 +246,24 @@ for team in teamDetails.teamDays:
             pairsPartner = ''
             homeGame = None
             awayGame = None
-            cupGame = False
+            cupGameBool = False
             cupHome = False
             cupAway = False
 
             # Find columns
             if rowNumber in cupGameRows:
-                cupGame = True
+                cupGameBool = True
                 if rowNumber in homePlayerRow:
                     cupHome = True
                 if rowNumber in awayPlayerRow:
                     cupAway = True
 
             if rowNumber in homePlayerRow:
-                if not cupGame:
+                if not cupGameBool:
                     homeGame = True
 
             if rowNumber in awayPlayerRow:
-                if not cupGame:
+                if not cupGameBool:
                     awayGame = True
 
             # Find result details
@@ -395,7 +364,7 @@ for team in teamDetails.teamDays:
                         playerStats[playerName]['awayWins'] += 1
                         if pairsGame:
                             playerStats[playerName]['pairAwayWins'] += 1
-                    if cupGame:
+                    if cupGameBool:
                         playerStats[playerName]['cupWins'] += 1
                         if pairsGame:
                             playerStats[playerName]['pairCupWins'] += 1
@@ -411,7 +380,7 @@ for team in teamDetails.teamDays:
                         playerStats[playerName]['awayLosses'] += 1
                         if pairsGame:
                             playerStats[playerName]['pairAwayLosses'] += 1
-                    if cupGame:
+                    if cupGameBool:
                         playerStats[playerName]['cupLosses'] += 1
                         if pairsGame:
                             playerStats[playerName]['pairCupLosses'] += 1

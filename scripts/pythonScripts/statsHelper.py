@@ -45,27 +45,6 @@ def returnTotalAggAvailablePerGame(team):
         return 26
     return 21
 
-def leagueHas10Players(league):
-    if league.lower() in leaguesWith10Players:
-        return True
-    return False
-
-def leagueHas6Players(league):
-    if league.lower() in leaguesWith6Players:
-        return True
-    return False
-
-def adjustRowForAgg(league):
-    if league.lower() == 'monday airewharfe':
-        return 2
-    if league.lower() == 'saturday airewharfe':
-        return 2
-    if league.lower() == 'saturday bradford':
-        return 3
-    if league.lower() == 'tuesday mirfield':
-        return 4
-    return 0
-
 def returnListOfPlayerStats(days, includeTeamData, players):
     players.sort()
     playerStats = {}
@@ -147,3 +126,60 @@ def findCupGameRows(allRowsInFile):
                         cupGameRows.append(rowNumber + i)
                     break
     return cupGameRows
+
+def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
+    baseAdjustment = 10
+    rowsDownAdjustmentInt = 0
+    rowsUpAdjustmentInt = 0
+    totalNumberOfRowsAdjustmentInt = 0
+    
+    # AireWharfe and Bradford leagues display scores differently
+    if 'bradford' in league.lower() or 'airewharfe' in league.lower():
+        rowsUpAdjustmentInt += 1
+        
+    rowsUpAdjustmentInt = adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt)
+    rowsDownAdjustmentInt = adjustRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
+
+    if cupGameBool:
+        rowsDownAdjustmentInt += 1
+
+        if 'wednesday pairs' in league.lower():
+            rowsUpAdjustmentInt -= 1
+        
+        # To account for handicap row in cup games
+        checkForTeamHandicap = allRowsInFile[rowNumber + baseAdjustment - rowsDownAdjustmentInt]
+        if type(checkForTeamHandicap) is str and 'handicap' in checkForTeamHandicap.lower():
+            rowsDownAdjustmentInt -= 1
+
+    totalNumberOfRowsAdjustmentInt = baseAdjustment - rowsDownAdjustmentInt + rowsUpAdjustmentInt
+    return totalNumberOfRowsAdjustmentInt
+
+def adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt):
+    if league.lower() in leaguesWith10Players:
+        return rowsUpAdjustmentInt + 2
+    return rowsUpAdjustmentInt
+
+def adjustRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt):
+    if league.lower() in leaguesWith6Players:
+        return rowsDownAdjustmentInt + 2
+    return rowsDownAdjustmentInt
+
+def returnAggRowDownNumber(league):
+    if league.lower() == 'monday airewharfe':
+        return 2
+    if league.lower() == 'saturday airewharfe':
+        return 2
+    if league.lower() == 'saturday bradford':
+        return 3
+    if league.lower() == 'tuesday mirfield':
+        return 4
+    return 0
+
+def isCupGame(allRowsInFile, rowNumber):
+    cupRow = allRowsInFile[rowNumber - 1]
+    if cupRow and type(cupRow) is str:
+        for text in cupText:
+            if text.lower() in cupRow.lower():
+                return True
+                break
+    return False
