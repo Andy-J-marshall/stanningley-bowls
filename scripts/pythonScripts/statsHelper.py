@@ -135,3 +135,15 @@ def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeag
                 if homeOrAway.lower() == 'away' and not previousRowValue.startswith(teamNameUsedForLeague.lower()):
                     return True
                 return False
+
+def findCupGameRows(allRowsInFile):
+    cupGameRows = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if row and type(row) is str:
+            for text in cupText:
+                if text in row.lower():
+                    for i in range(0, 13):
+                        cupGameRows.append(rowNumber + i)
+                    break
+    return cupGameRows

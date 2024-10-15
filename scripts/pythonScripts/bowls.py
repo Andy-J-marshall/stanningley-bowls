@@ -58,15 +58,7 @@ for team in teamDetails.teamDays:
         sanityChecks.checkTeamName(team, teamNameUsedForLeague, teamDetails.displayTeamName)        
 
         # Find the cup games in the stats
-        cupGameRows = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                for cupText in statsHelper.cupText:
-                    if cupText in row.lower():
-                        for i in range(0, 13):
-                            cupGameRows.append(rowNumber + i)
-                        break
+        cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
 
         #### TEAM STATS ####
         # Find team's home and away games
