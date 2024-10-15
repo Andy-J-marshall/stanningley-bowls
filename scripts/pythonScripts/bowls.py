@@ -130,10 +130,10 @@ for team in teamDetails.teamDays:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
+                baseRowDownAdjustment = statsHelper.returnBaseRowDownNumber(False, True)
                 adjustmentForLeagueInt = statsHelper.returnAggRowDownNumber(league)
                 adjustFor6PlayerTeamsInt = statsHelper.adjustRowNumberFor6PlayerTeams(league, 0)
-                # TODO hardcoded 9 here
-                text = allRowsInFile[rowNumber + 9 + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
+                text = allRowsInFile[rowNumber + baseRowDownAdjustment + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
                 if len(matchAgg) == 2:

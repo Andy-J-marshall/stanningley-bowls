@@ -127,8 +127,13 @@ def findCupGameRows(allRowsInFile):
                     break
     return cupGameRows
 
+def returnBaseRowDownNumber(cupGameBool, forAggAdjustmentBool):
+    if cupGameBool or forAggAdjustmentBool:
+        return 9
+    return 10
+
 def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
-    baseAdjustment = 10
+    baseAdjustment = returnBaseRowDownNumber(cupGameBool, False)
     rowsDownAdjustmentInt = 0
     rowsUpAdjustmentInt = 0
     totalNumberOfRowsAdjustmentInt = 0
@@ -141,8 +146,6 @@ def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
     rowsDownAdjustmentInt = adjustRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
 
     if cupGameBool:
-        rowsDownAdjustmentInt += 1
-
         if 'wednesday pairs' in league.lower():
             rowsUpAdjustmentInt -= 1
         
