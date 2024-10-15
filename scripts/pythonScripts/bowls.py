@@ -69,19 +69,33 @@ for team in teamDetails.teamDays:
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
-                # TODO fix
-                if row.lower().count(teamDetails.displayTeamName.lower()) > 1:
-                    # This is a safeguard as the script won't work yet if the A team plays the B team.
-                    # If this happens, need to implement a way to differentiate between the two teams
-                    print('Team name appears more than once in the row')
-
                 # This ignores cup games hosted by the club
                 hostedCupGame = False
                 for cupText in statsHelper.cupText:
                     if cupText.lower() in row.lower():
                         hostedCupGame = True
                         break
-                if hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
+
+                # Check if A and B team are playing each other
+                aTeamPlayingBTeamBool = False
+                if hostedCupGame is False and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
+                    aTeamPlayingBTeamBool = True
+                    # Figure out whether A or B team is playing at home
+                    teamLower = teamNameUsedForLeague.lower()
+                    rowLower = row.lower().strip()
+                    if teamLower in rowLower:
+                        if rowLower.endswith(' a') or rowLower.endswith(' \'a\''):
+                            if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
+                                awayRow.append(rowNumber)
+                            if teamLower.endswith(' b') or teamLower.endswith(' \'b\''):
+                                homeRow.append(rowNumber)
+                        if rowLower.endswith(' b') or rowLower.endswith(' \'b\''):
+                            if teamLower.endswith(' b') or teamLower.endswith(' \'b\''):
+                                awayRow.append(rowNumber)
+                            if teamLower.endswith(' a') or teamLower.endswith(' \'a\''):
+                                homeRow.append(rowNumber)
+                
+                if aTeamPlayingBTeamBool is False and hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
                     words = row.strip().lower().split()
                     firstWord = words[0].lower()
                     if firstWord == teamDetails.displayTeamName.lower():
@@ -152,6 +166,7 @@ for team in teamDetails.teamDays:
             # Home games
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
+                # TODO check if opponent has displayTeamName in it?
                 opponent = rowText.split(teamNameUsedForLeague)[1]
                 opponent = opponent.replace('&amp;', '&').strip()
                 result = teamNameToUse + ' ' + \
