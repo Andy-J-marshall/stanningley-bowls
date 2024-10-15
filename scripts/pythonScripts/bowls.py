@@ -167,7 +167,6 @@ for team in teamDetails.teamDays:
             # Home games
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRow:
-                # TODO check if opponent has displayTeamName in it?
                 opponent = rowText.split(teamNameUsedForLeague)[1]
                 opponent = opponent.replace('&amp;', '&').strip()
                 result = teamNameToUse + ' ' + \
