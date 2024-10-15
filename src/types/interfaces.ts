@@ -198,9 +198,6 @@ export interface PlayerResultsStatsFile {
         pairCupLosses: number;
         totalGamesPlayed: number;
         dayPlayed: string[];
-        pairsPartners: string[];
-        winningPairsPartners: string[];
-        losingPairsPartners: string[];
         results: string[];
         [key: string]: any;
     };
@@ -293,9 +290,6 @@ export interface AggregatedStats {
         pairsCupAverage: number;
         allTeamStats: any;
         allTeamsPlayedFor: any;
-        pairsPartnersCount: any;
-        pairsPartnersCountWins: any;
-        pairsPartnersCountLosses: any;
         biggestWin: string;
         results: string[];
         availableAgg: number;

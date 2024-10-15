@@ -11,7 +11,6 @@
             "awayLosses": 5,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds",
@@ -44,8 +43,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 253,
             "totalHomeAggAgainst": 187,
             "totalPairsHomeAgg": 0,
@@ -114,27 +111,6 @@
             "awayLosses": 8,
             "pairWins": 12,
             "pairLosses": 7,
-            "pairsPartners": [
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -164,29 +140,6 @@
             ],
             "totalPairsAgg": 339,
             "totalPairsAggAgainst": 281,
-            "winningPairsPartners": [
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall"
-            ],
-            "losingPairsPartners": [
-                "paul bowes",
-                "paul bowes",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall"
-            ],
             "totalHomeAgg": 174,
             "totalHomeAggAgainst": 141,
             "totalPairsHomeAgg": 160,
@@ -252,27 +205,6 @@
             "awayLosses": 7,
             "pairWins": 12,
             "pairLosses": 7,
-            "pairsPartners": [
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -310,29 +242,6 @@
             ],
             "totalPairsAgg": 334,
             "totalPairsAggAgainst": 261,
-            "winningPairsPartners": [
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "andy waller",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell"
-            ],
-            "losingPairsPartners": [
-                "andy waller",
-                "andy waller",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell"
-            ],
             "totalHomeAgg": 241,
             "totalHomeAggAgainst": 189,
             "totalPairsHomeAgg": 160,
@@ -406,14 +315,6 @@
             "awayLosses": 14,
             "pairWins": 4,
             "pairLosses": 2,
-            "pairsPartners": [
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -478,16 +379,6 @@
             ],
             "totalPairsAgg": 113,
             "totalPairsAggAgainst": 70,
-            "winningPairsPartners": [
-                "andy marshall",
-                "andy marshall",
-                "andy marshall",
-                "andy marshall"
-            ],
-            "losingPairsPartners": [
-                "andy marshall",
-                "andy marshall"
-            ],
             "totalHomeAgg": 592,
             "totalHomeAggAgainst": 386,
             "totalPairsHomeAgg": 59,
@@ -588,19 +479,12 @@
             "awayLosses": 1,
             "pairWins": 0,
             "pairLosses": 1,
-            "pairsPartners": [
-                "jeff allman"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds"
             ],
             "totalPairsAgg": 8,
             "totalPairsAggAgainst": 21,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [
-                "jeff allman"
-            ],
             "totalHomeAgg": 8,
             "totalHomeAggAgainst": 21,
             "totalPairsHomeAgg": 8,
@@ -643,7 +527,6 @@
             "awayLosses": 15,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -703,8 +586,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 409,
             "totalHomeAggAgainst": 476,
             "totalPairsHomeAgg": 0,
@@ -800,7 +681,6 @@
             "awayLosses": 7,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -821,8 +701,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 135,
             "totalHomeAggAgainst": 117,
             "totalPairsHomeAgg": 0,
@@ -879,7 +757,6 @@
             "awayLosses": 17,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Thursday Vets Leeds",
                 "Thursday Vets Leeds",
@@ -932,8 +809,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 365,
             "totalHomeAggAgainst": 349,
             "totalPairsHomeAgg": 0,
@@ -1022,7 +897,6 @@
             "awayLosses": 7,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1059,8 +933,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 288,
             "totalHomeAggAgainst": 171,
             "totalPairsHomeAgg": 0,
@@ -1133,7 +1005,6 @@
             "awayLosses": 19,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1213,8 +1084,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 662,
             "totalHomeAggAgainst": 515,
             "totalPairsHomeAgg": 0,
@@ -1330,7 +1199,6 @@
             "awayLosses": 1,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Thursday Vets Leeds",
                 "Saturday Leeds",
@@ -1338,8 +1206,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 7,
             "totalHomeAggAgainst": 21,
             "totalPairsHomeAgg": 0,
@@ -1383,18 +1249,6 @@
             "awayLosses": 7,
             "pairWins": 4,
             "pairLosses": 6,
-            "pairsPartners": [
-                "shirley allman",
-                "shirley allman",
-                "bernie miller",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -1426,20 +1280,6 @@
             ],
             "totalPairsAgg": 139,
             "totalPairsAggAgainst": 193,
-            "winningPairsPartners": [
-                "shirley allman",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman"
-            ],
-            "losingPairsPartners": [
-                "shirley allman",
-                "shirley allman",
-                "bernie miller",
-                "shirley allman",
-                "shirley allman",
-                "shirley allman"
-            ],
             "totalHomeAgg": 185,
             "totalHomeAggAgainst": 250,
             "totalPairsHomeAgg": 71,
@@ -1507,7 +1347,6 @@
             "awayLosses": 22,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -1608,8 +1447,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 1004,
             "totalHomeAggAgainst": 512,
             "totalPairsHomeAgg": 0,
@@ -1831,15 +1668,6 @@
                 "Saturday Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [
-                "stuart brook",
-                "neil nicholson"
-            ],
-            "winningPairsPartners": [
-                "stuart brook",
-                "neil nicholson"
-            ],
-            "losingPairsPartners": [],
             "results": [
                 "jim swailes 15 - 21 angela carter",
                 "jim swailes 21 - 8 calum fennell",
@@ -1914,7 +1742,6 @@
             "awayLosses": 3,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Saturday Leeds",
                 "Saturday Leeds",
@@ -1941,8 +1768,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 288,
             "totalHomeAggAgainst": 177,
             "totalPairsHomeAgg": 0,
@@ -2005,7 +1830,6 @@
             "awayLosses": 15,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -2083,8 +1907,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 666,
             "totalHomeAggAgainst": 373,
             "totalPairsHomeAgg": 0,
@@ -2198,7 +2020,6 @@
             "awayLosses": 1,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Thursday Vets Leeds",
                 "Saturday Leeds",
@@ -2217,8 +2038,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 102,
             "totalHomeAggAgainst": 64,
             "totalPairsHomeAgg": 0,
@@ -2308,9 +2127,6 @@
                 "Thursday Vets Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "linda barrand 8 - 21 janet inness",
                 "linda barrand 12 - 21 david rawson",
@@ -2335,7 +2151,6 @@
             "awayLosses": 14,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -2433,8 +2248,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 840,
             "totalHomeAggAgainst": 543,
             "totalPairsHomeAgg": 0,
@@ -2625,9 +2438,6 @@
                 "Saturday Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "martin fulton 21 - 16 nigel miller",
                 "martin fulton 21 - 14 tom jagger",
@@ -2701,9 +2511,6 @@
                 "Wednesday Spen Valley",
                 "Wednesday Spen Valley"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "mary spears 11 - 21 tony godfrey",
                 "mary spears 3 - 21 scott price"
@@ -2720,7 +2527,6 @@
             "awayLosses": 1,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Saturday Leeds",
                 "Saturday Leeds",
@@ -2739,8 +2545,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 147,
             "totalHomeAggAgainst": 59,
             "totalPairsHomeAgg": 0,
@@ -2795,18 +2599,6 @@
             "awayLosses": 7,
             "pairWins": 5,
             "pairLosses": 5,
-            "pairsPartners": [
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "vanessa lancaster",
-                "vanessa lancaster",
-                "vanessa lancaster",
-                "vanessa lancaster"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -2864,20 +2656,6 @@
             ],
             "totalPairsAgg": 175,
             "totalPairsAggAgainst": 161,
-            "winningPairsPartners": [
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "alyssa randell",
-                "vanessa lancaster"
-            ],
-            "losingPairsPartners": [
-                "alyssa randell",
-                "alyssa randell",
-                "vanessa lancaster",
-                "vanessa lancaster",
-                "vanessa lancaster"
-            ],
             "totalHomeAgg": 498,
             "totalHomeAggAgainst": 236,
             "totalPairsHomeAgg": 88,
@@ -2971,7 +2749,6 @@
             "awayLosses": 31,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -3082,8 +2859,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 994,
             "totalHomeAggAgainst": 776,
             "totalPairsHomeAgg": 0,
@@ -3321,9 +3096,6 @@
                 "Saturday Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "phil thornton 12 - 21 stuart daniel",
                 "phil thornton 7 - 21 trevor benn",
@@ -3404,17 +3176,6 @@
             "awayLosses": 3,
             "pairWins": 4,
             "pairLosses": 5,
-            "pairsPartners": [
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -3433,19 +3194,6 @@
             ],
             "totalPairsAgg": 131,
             "totalPairsAggAgainst": 172,
-            "winningPairsPartners": [
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman"
-            ],
-            "losingPairsPartners": [
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman",
-                "jeff allman"
-            ],
             "totalHomeAgg": 89,
             "totalHomeAggAgainst": 143,
             "totalPairsHomeAgg": 63,
@@ -3500,7 +3248,6 @@
             "awayLosses": 14,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -3599,8 +3346,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 849,
             "totalHomeAggAgainst": 498,
             "totalPairsHomeAgg": 0,
@@ -3809,9 +3554,6 @@
                 "Saturday Bradford",
                 "Saturday Bradford"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "richard hodgson 9 - 21 billy ward",
                 "richard hodgson 21 - 19 chris jacques",
@@ -3875,7 +3617,6 @@
             "awayLosses": 4,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -3923,8 +3664,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 427,
             "totalHomeAggAgainst": 225,
             "totalPairsHomeAgg": 0,
@@ -4008,7 +3747,6 @@
             "awayLosses": 16,
             "pairWins": 0,
             "pairLosses": 0,
-            "pairsPartners": [],
             "dayPlayed": [
                 "Tuesday Vets Leeds",
                 "Tuesday Vets Leeds",
@@ -4113,8 +3851,6 @@
             ],
             "totalPairsAgg": 0,
             "totalPairsAggAgainst": 0,
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "totalHomeAgg": 922,
             "totalHomeAggAgainst": 748,
             "totalPairsHomeAgg": 0,
@@ -4255,12 +3991,6 @@
             "awayLosses": 2,
             "pairWins": 1,
             "pairLosses": 3,
-            "pairsPartners": [
-                "paul bowes",
-                "paul bowes",
-                "paul bowes",
-                "paul bowes"
-            ],
             "dayPlayed": [
                 "Monday Combined Leeds",
                 "Monday Combined Leeds",
@@ -4269,14 +3999,6 @@
             ],
             "totalPairsAgg": 57,
             "totalPairsAggAgainst": 71,
-            "winningPairsPartners": [
-                "paul bowes"
-            ],
-            "losingPairsPartners": [
-                "paul bowes",
-                "paul bowes",
-                "paul bowes"
-            ],
             "totalHomeAgg": 29,
             "totalHomeAggAgainst": 29,
             "totalPairsHomeAgg": 29,

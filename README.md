@@ -95,7 +95,7 @@ JSON file will be created: `src/data/bowlsStats{year}.json`.
 # How to use this repo as a template for other clubs
 Change the Git credentials in the GitHub action `update-stats.yml`.
 
-Update `scripts/pythonScripts/teamDetails.py`/`utils`:
+Update `scripts/pythonScripts/teamDetails.py`/`statsHelper.py`:
 
 - teamNames
 - preferredTeamName

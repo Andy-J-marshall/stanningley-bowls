@@ -31,11 +31,8 @@ export function returnPlayerStats(
         pairHomeLosses,
         pairAwayLosses,
         pairCupLosses,
-        winningPairsPartners,
-        losingPairsPartners,
         pairLosses,
         pairWins,
-        pairsPartners,
         totalHomeAgg,
         totalHomeAggAgainst,
         totalAwayAgg,
@@ -122,13 +119,6 @@ export function returnPlayerStats(
             allTeamsPlayedFor.push(day);
         }
     });
-
-    // Pairs partners
-    const pairsPartnersCount = calculatePairsPartnersCount(pairsPartners);
-    const pairsPartnersCountWins =
-        calculatePairsPartnersCount(winningPairsPartners);
-    const pairsPartnersCountLosses =
-        calculatePairsPartnersCount(losingPairsPartners);
 
     // Pairs & singles
     const singlesAgg = totalAgg - totalPairsAgg;
@@ -252,9 +242,6 @@ export function returnPlayerStats(
         pairsCupAverage,
         allTeamStats,
         allTeamsPlayedFor,
-        pairsPartnersCount,
-        pairsPartnersCountWins,
-        pairsPartnersCountLosses,
         biggestWin,
         results,
         availableAgg,
@@ -266,28 +253,6 @@ export function returnPlayerStats(
         availablePairsAwayAgg,
         availablePairsCupAgg,
     };
-}
-
-export function calculatePairsPartnersCount(allPairsPartners: string[]) {
-    const uniquePartners = allPairsPartners.filter(
-        (partner, index) => {
-            return allPairsPartners.indexOf(partner) === index;
-        }
-    );
-    const partnersReturnObj = uniquePartners.reduce(
-        (partnerObj: any, player: string) => {
-            partnerObj[player] = { timesPaired: 0 };
-            return partnerObj;
-        },
-        {}
-    );
-
-    allPairsPartners.forEach((partner: string) => {
-        if (uniquePartners.includes(partner)) {
-            partnersReturnObj[partner].timesPaired += 1;
-        }
-    });
-    return partnersReturnObj;
 }
 
 export function checkWinPercAndAverageAreNumbers(stats: any) {
