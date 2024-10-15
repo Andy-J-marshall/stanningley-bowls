@@ -46,7 +46,7 @@ for team in teamDetails.teamDays:
                             if possibleTeamName.lower().endswith(' b') or possibleTeamName.lower().endswith(' \'b\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' A'
-                        if team.lower().endswith(' (b)'):
+                        elif team.lower().endswith(' (b)'):
                             if possibleTeamName.lower().endswith(' a') or possibleTeamName.lower().endswith(' \'a\''):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' B'
@@ -179,12 +179,12 @@ for team in teamDetails.teamDays:
                         cupWins = cupWins + 1
                     else:
                         homeWins = homeWins + 1
-                if homeScore < awayScore:
+                elif homeScore < awayScore:
                     if cupGameBool:
                         cupLosses = cupLosses + 1
                     else:
                         homeLosses = homeLosses + 1
-                if awayScore == homeScore:
+                elif awayScore == homeScore:
                     homeDraws = homeDraws + 1
                 teamAgg = teamAgg + homeAgg
                 opponentAgg = opponentAgg + awayAgg
@@ -202,12 +202,12 @@ for team in teamDetails.teamDays:
                         cupWins = cupWins + 1
                     else:
                         awayWins = awayWins + 1
-                if awayScore < homeScore:
+                elif awayScore < homeScore:
                     if cupGameBool:
                         cupLosses = cupLosses + 1
                     else:
                         awayLosses = awayLosses + 1
-                if awayScore == homeScore:
+                elif awayScore == homeScore:
                     awayDraws = awayDraws + 1
                 opponentAgg = opponentAgg + homeAgg
                 teamAgg = teamAgg + awayAgg
