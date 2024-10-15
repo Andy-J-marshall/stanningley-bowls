@@ -70,11 +70,7 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
             if row and type(row) is str:
                 # This ignores cup games hosted by the club
-                hostedCupGame = False
-                for cupText in statsHelper.cupText:
-                    if cupText.lower() in row.lower():
-                        hostedCupGame = True
-                        break
+                hostedCupGame = statsHelper.isCupGame(row.lower())
 
                 # Check if A and B team are playing each other
                 aTeamPlayingBTeamBool = False
@@ -125,7 +121,8 @@ for team in teamDetails.teamDays:
             row = allRowsInFile[rowNumber]
 
             # Check if cup game
-            cupGameBool = statsHelper.isCupGame(allRowsInFile, rowNumber)
+            cupRow = allRowsInFile[rowNumber - 1]
+            cupGameBool = statsHelper.isCupGame(cupRow)
             
             # Find the number of rows down for the team scores                       
             totalNumberOfRowsAdjustmentInt = statsHelper.returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league)

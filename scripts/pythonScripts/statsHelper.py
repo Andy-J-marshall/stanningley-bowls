@@ -181,11 +181,9 @@ def returnAggRowDownNumber(league):
         return 4
     return 0
 
-def isCupGame(allRowsInFile, rowNumber):
-    cupRow = allRowsInFile[rowNumber - 1]
+def isCupGame(cupRow):
     if cupRow and type(cupRow) is str:
         for text in cupText:
             if text.lower() in cupRow.lower():
                 return True
-                break
     return False
