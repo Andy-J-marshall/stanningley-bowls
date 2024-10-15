@@ -29,16 +29,13 @@ cupText = [
 ]
 
 def standardiseName(name):
+    name = name.lower().strip()
     name = name.replace(' - ', '-')
-    name = name.replace(" 'A'", '')
-    name = name.replace("'A'", '')
     name = name.replace(" 'a'", '')
     name = name.replace("'a'", '')
-    name = name.replace(" 'B'", '')
-    name = name.replace("'B'", '')
     name = name.replace(" 'b'", '')
     name = name.replace("'b'", '')
-    return name.lower().strip()
+    return name
 
 def returnTotalAggAvailablePerGame(team):
     if team.lower() in leaguesWithGamesTo26:
