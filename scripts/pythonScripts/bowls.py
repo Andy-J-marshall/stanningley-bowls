@@ -43,11 +43,11 @@ for team in teamDetails.teamDays:
                     if possibleTeamName.lower() in rowValue:
                         # Filter out A team stats for B team and vice versa
                         if team.lower().endswith(' (a)'):
-                            if possibleTeamName.lower().endswith((' b', ' \'b\'')):
+                            if possibleTeamName.lower().endswith((' b', " 'b'")):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' A'
                         elif team.lower().endswith(' (b)'):
-                            if possibleTeamName.lower().endswith((' a', ' \'a\'')):
+                            if possibleTeamName.lower().endswith((' a', " 'a'")):
                                 continue
                             teamNameToUse = teamDetails.displayTeamName + ' B'
                         possibleTeamNamesUsed.append(possibleTeamName)
