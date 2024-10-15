@@ -1,6 +1,7 @@
 import os
 from datetime import date
 import re
+# TODO find long term solution
 import teamDetailsLittlemoor as teamDetails
 import statsHelper
 import sanityChecks
@@ -428,7 +429,8 @@ dataToExport = {
     'statsYear': utils.year,
 }
 
-filename = 'src/data/bowlsStats' + utils.year + '.json'
+# TODO find long term solution
+filename = 'src/data/bowlsStatsLittlemoor' + utils.year + '.json'
 previousFileSize = 0
 if os.path.exists(filename):
     previousFileSize = sanityChecks.getFileSize(filename)

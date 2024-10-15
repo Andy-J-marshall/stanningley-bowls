@@ -38,9 +38,6 @@
                 "Wednesday Spen Valley (B)",
                 "Wednesday Spen Valley (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "alyssa randell 18 - 21 david armitage",
                 "alyssa randell 16 - 21 scott bailey"
@@ -153,9 +150,6 @@
                 "Wednesday Spen Valley (B)",
                 "Wednesday Spen Valley (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "andy marshall 21 - 14 aiden fox",
                 "andy marshall 9 - 21 daniel dunkerley",
@@ -357,9 +351,6 @@
                 "Saturday Bradford (B)",
                 "Saturday Bradford (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "jim moorin 21 - 15 daz ripley",
                 "jim moorin 8 - 21 philip wilsdon",
@@ -613,9 +604,6 @@
                 "Saturday Bradford (B)",
                 "Saturday Bradford (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "john armitage 17 - 21 gary wike",
                 "john armitage 21 - 6 deborah swann",
@@ -814,9 +802,6 @@
                 "Wednesday Spen Valley (A)",
                 "Wednesday Half Holiday Bradford (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "martin fulton 16 - 21 tony watson",
                 "martin fulton 21 - 8 peter jefferson",
@@ -977,9 +962,6 @@
                 "Wednesday Spen Valley (B)",
                 "Wednesday Spen Valley (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "paul bowes 21 - 14 ross mallinson",
                 "paul bowes 21 - 6 jason horsley",
@@ -1159,9 +1141,6 @@
                 "Saturday Bradford (B)",
                 "Saturday Bradford (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "phil thornton 10 - 21 andy hodgson",
                 "phil thornton 21 - 17 richard briggs",
@@ -1354,9 +1333,6 @@
                 "Saturday Bradford (B)",
                 "Saturday Bradford (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "stewart watson 21 - 15 neil shaw",
                 "stewart watson 16 - 21 jon gamble",
@@ -1495,9 +1471,6 @@
             "dayPlayed": [
                 "Wednesday Spen Valley (B)"
             ],
-            "pairsPartners": [],
-            "winningPairsPartners": [],
-            "losingPairsPartners": [],
             "results": [
                 "stuart potter 3 - 21 eddie hill"
             ],
@@ -1978,6 +1951,6 @@
             ]
         }
     ],
-    "lastUpdated": "14/10/2024",
+    "lastUpdated": "15/10/2024",
     "statsYear": "2024"
 }
