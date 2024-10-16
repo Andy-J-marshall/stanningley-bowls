@@ -179,7 +179,7 @@ def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
         rowsUpAdjustmentInt += 1
         
     rowsUpAdjustmentInt = adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt)
-    rowsDownAdjustmentInt = adjustRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
+    rowsDownAdjustmentInt = returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
 
     if cupGameBool:
         if 'wednesday pairs' in league.lower():
@@ -198,7 +198,7 @@ def adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt):
         return rowsUpAdjustmentInt + 2
     return rowsUpAdjustmentInt
 
-def adjustRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt):
+def returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt):
     if league.lower() in leaguesWith6Players:
         return rowsDownAdjustmentInt + 2
     return rowsDownAdjustmentInt

@@ -87,7 +87,7 @@ for team in teamDetails.teamDays:
             else:
                 baseRowDownAdjustment = statsHelper.returnBaseRowDownNumber(False, True)
                 adjustmentForLeagueInt = statsHelper.returnAggRowDownNumber(league)
-                adjustFor6PlayerTeamsInt = statsHelper.adjustRowNumberFor6PlayerTeams(league, 0)
+                adjustFor6PlayerTeamsInt = statsHelper.returnAdjustedRowNumberFor6PlayerTeams(league, 0)
                 text = allRowsInFile[rowNumber + baseRowDownAdjustment + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
