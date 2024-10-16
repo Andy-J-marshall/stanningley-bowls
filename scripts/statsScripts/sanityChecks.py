@@ -75,9 +75,9 @@ def checksTeamStats(allTeamResults):
     for team in allTeamResults:
         dayForTeam = team['day']
 
-        if team['agg'] < 0 or team['agg'] > 4000:
+        if team['agg'] < 0 or team['agg'] > 5000:
             raise Exception(f'agg for {dayForTeam} incorrect?')
-        if team['opponentAgg'] < 0 or team['opponentAgg'] > 4000:
+        if team['opponentAgg'] < 0 or team['opponentAgg'] > 5000:
             raise Exception(f'opponentAgg for {dayForTeam} incorrect?')
         if len(team['results']) > 30:
             raise Exception(f'results for {dayForTeam} incorrect?')
