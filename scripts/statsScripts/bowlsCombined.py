@@ -30,22 +30,7 @@ for league in teamDetails.allDays:
         cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
 
         # Find rows in spreadsheet for players' games
-        homePlayerRow = []
-        awayPlayerRow = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if (row and type(row) is str):
-                findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
-                if len(findPossiblePlayerNames) > 1:
-                    possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = statsHelper.standardiseName(possiblePlayerNameHome)
-                    if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
-                        homePlayerRow.append(rowNumber)
-
-                    possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = statsHelper.standardiseName(possiblePlayerNameAway)
-                    if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
-                        awayPlayerRow.append(rowNumber)
+        homePlayerRow, awayPlayerRow = statsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
 
         # Find each players' results
         for rowNumber in range(0, endRow + 1):
@@ -97,28 +82,7 @@ for league in teamDetails.allDays:
                         awayGame = True
 
                 # Checks player plays for expected team
-                for i in range(0, 13):
-                    possibleTeamText = allRowsInFile[rowNumber - i]
-                    
-                    if type(possibleTeamText) is str:
-                        possibleTeamText = possibleTeamText.lower().strip()
-                        
-                        # Checks against full team name first
-                        for team in teamDetails.teamsTracking:
-                            team = team.lower()
-                            if team in possibleTeamText:
-                                if (homeGame or cupHome) and possibleTeamText.startswith(team):
-                                    correctPlayerFound = True
-                                    break
-                                if (awayGame or cupAway) and not possibleTeamText.startswith(team):
-                                    correctPlayerFound = True
-                                    break
-                                if possibleTeamText.count(team) == 2:
-                                    correctPlayerFound = True
-                                    break
-                        
-                        if correctPlayerFound is True:
-                            break
+                correctPlayerFound = statsHelper.checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
 
                 # Find result details
                 if correctPlayerFound:
@@ -149,40 +113,19 @@ for league in teamDetails.allDays:
                                 opponentAggregate = int(aggregateMatch[0].strip())
 
                         # Checks whether it's a pairs game
-                        pairsGame = False
-                        scoreFoundInText = any(char.isdigit() for char in text)
-                        if scoreFoundInText is False:
-                            pairsGame = True
-                            rowBelowText = allRowsInFile[rowNumber - 1]
-                            
-                            findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
-                            pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
-                            if homeGame or cupHome:
-                                pairsPartner = findPossiblePairsPlayerNames[0]
-                                secondOpponent = findPossiblePairsPlayerNames[1]
-                                aggregate = int(pairsAggregateMatch[0].strip())
-                                opponentAggregate = int(pairsAggregateMatch[1].strip())
-                    
-                            if awayGame or cupAway:
-                                pairsPartner = findPossiblePairsPlayerNames[1]
-                                secondOpponent = findPossiblePairsPlayerNames[0]
-                                aggregate = int(pairsAggregateMatch[1].strip())
-                                opponentAggregate = int(pairsAggregateMatch[0].strip())
-                                
-                        else:
-                            rowBelowText = allRowsInFile[rowNumber + 1]
-                            
-                            findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
-                            pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
-                            if len(pairsAggregateMatch) == 0:
-                                pairsGame = True
-                                if homeGame or cupHome:
-                                    pairsPartner = findPossiblePairsPlayerNames[0]
-                                    secondOpponent = findPossiblePairsPlayerNames[1]
-                                if awayGame or cupAway:
-                                    pairsPartner = findPossiblePairsPlayerNames[1]
-                                    secondOpponent = findPossiblePairsPlayerNames[0]
-
+                        pairsGame = statsHelper.isPairsGame(allRowsInFile, rowNumber, text)                  
+                        if pairsGame:
+                            pairsDetails = statsHelper.handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
+                            if pairsDetails['aggregate'] > 0:
+                                aggregate = pairsDetails['aggregate']
+                            if pairsDetails['opponentAggregate'] > 0:
+                                opponentAggregate = pairsDetails['opponentAggregate']
+                            if pairsDetails['pairsPartner'] != '':
+                                pairsPartner = pairsDetails['pairsPartner']
+                            if pairsDetails['secondOpponent'] != '':
+                                secondOpponent = pairsDetails['secondOpponent']
+                        
+                        # Format player names
                         playerName = teamDetails.deduplicateNames(playerName)
                         opponentsName = teamDetails.deduplicateNames(opponentsName)
                         pairsPartner = teamDetails.deduplicateNames(pairsPartner)
