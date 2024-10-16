@@ -30,32 +30,8 @@ for team in teamDetails.teamDays:
         endRow = utils.findEndRowOfFile(league, allRowsInFile)
         
         # Find team name used by team in this league
-        possibleTeamNamesUsed = []
-        teamNameUsedForLeague = ''
-        teamNameToUse = teamDetails.displayTeamName
+        teamNameUsedForLeague, teamNameToUse = statsHelper.returnTeamNameForLeague(allRowsInFile, team)
     
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                for possibleTeamName in teamDetails.teamNames:
-                    rowValue = row.lower().strip()
-                    if possibleTeamName.lower() in rowValue:
-                        # Filter out A team stats for B team and vice versa
-                        if team.lower().endswith(' (a)'):
-                            if possibleTeamName.lower().endswith((' b', " 'b'")):
-                                continue
-                            teamNameToUse = teamDetails.displayTeamName + ' A'
-                        elif team.lower().endswith(' (b)'):
-                            if possibleTeamName.lower().endswith((' a', " 'a'")):
-                                continue
-                            teamNameToUse = teamDetails.displayTeamName + ' B'
-                        possibleTeamNamesUsed.append(possibleTeamName)
-    
-        if len(possibleTeamNamesUsed) == 0:
-            raise Exception('No team name found')
-        
-        teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
-        
         sanityChecks.checkTeamName(team, teamNameUsedForLeague, teamDetails.displayTeamName)        
 
         # Find the cup games in the stats
