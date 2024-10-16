@@ -130,7 +130,7 @@ def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
 
     if 'mirfield' in league.lower():
         rowsDownAdjustmentInt += 1
-    
+
     rowsUpAdjustmentInt = adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt)
     rowsDownAdjustmentInt = returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
 
