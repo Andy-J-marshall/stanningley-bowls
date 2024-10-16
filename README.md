@@ -47,9 +47,9 @@ Note, if the branch names change (e.g. `update_stats_prod` or `master`) then the
 
 Most of the club details are stored in the `config.ts` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, the `stats.tsx` file and year drop down will need to be configured to support more years.
 
-# Bowls script
+# Bowls scripts
 
-The script that collates stats from all club teams can be found in the `/scripts/pythonScripts` directory.
+The script that collates stats from all club teams can be found in the `/scripts/statsScripts` directory.
 
 
 ## Update the player stats
@@ -95,7 +95,7 @@ JSON file will be created: `src/data/bowlsStats{year}.json`.
 # How to use this repo as a template for other clubs
 Change the Git credentials in the GitHub action `update-stats.yml`.
 
-Update `scripts/pythonScripts/teamDetails.py`/`statsHelper.py`:
+Update `scripts/statsScripts/teamDetails.py`/`statsHelper.py`:
 
 - teamNames
 - preferredTeamName
@@ -121,7 +121,7 @@ Update the `History.tsx` component, including the links in the config file, and 
 
 Update `homepage` in `package.json`
 
-Check `bowls.py`/`bowlsCombined.py`:
+Check `bowlsTeam.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
 
@@ -155,7 +155,7 @@ Create a directory for the new year in the `/bowlsnetReports`.
 
 Update the `teamDetails.py` script: deduplicateNames, otherTeams, and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
 
-If entering a new league, make sure the `bowls.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
+If entering a new league, make sure the `bowlsTeam.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
 
 After generating the stats file for the new year, import the file into `statsData.ts`. Update `allYearStats` and `allYearCombinedStats`.
 Update `statsCallback` in `App.tsx` with the reference to the new year's stats file.
