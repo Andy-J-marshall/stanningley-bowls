@@ -124,9 +124,12 @@ def returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league):
     rowsUpAdjustmentInt = 0
     totalNumberOfRowsAdjustmentInt = 0
     
-    # AireWharfe and Bradford leagues display scores differently
+    # AireWharfe, Mirfield and Bradford leagues display scores differently
     if 'bradford' in league.lower() or 'airewharfe' in league.lower():
         rowsUpAdjustmentInt += 1
+
+    if 'mirfield' in league.lower():
+        rowsDownAdjustmentInt += 1
         
     rowsUpAdjustmentInt = adjustRowNumberFor10PlayerTeams(league, rowsUpAdjustmentInt)
     rowsDownAdjustmentInt = returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt)
