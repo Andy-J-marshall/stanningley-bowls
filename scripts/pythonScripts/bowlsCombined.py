@@ -125,6 +125,7 @@ for league in teamDetails.allDays:
                             if pairsDetails['secondOpponent'] != '':
                                 secondOpponent = pairsDetails['secondOpponent']
                         
+                        # Format player names
                         playerName = teamDetails.deduplicateNames(playerName)
                         opponentsName = teamDetails.deduplicateNames(opponentsName)
                         pairsPartner = teamDetails.deduplicateNames(pairsPartner)
