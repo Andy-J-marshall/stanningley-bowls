@@ -166,7 +166,7 @@ for team in teamDetails.teamDays:
         #### PLAYER STATS ####
         
         # Find rows in spreadsheet for players' games
-        homePlayerRow, awayPlayerRow, combinedRows = statsHelper.returnHomeAndAwayPlayerRows(allRowsInFile, teamNameUsedForLeague, league)
+        homePlayerRow, awayPlayerRow, combinedRows = statsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
         
         # Find each players' results
         for rowNumber in sorted(combinedRows):

@@ -30,22 +30,7 @@ for league in teamDetails.allDays:
         cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
 
         # Find rows in spreadsheet for players' games
-        homePlayerRow = []
-        awayPlayerRow = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if (row and type(row) is str):
-                findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
-                if len(findPossiblePlayerNames) > 1:
-                    possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = statsHelper.standardiseName(possiblePlayerNameHome)
-                    if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
-                        homePlayerRow.append(rowNumber)
-
-                    possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = statsHelper.standardiseName(possiblePlayerNameAway)
-                    if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
-                        awayPlayerRow.append(rowNumber)
+        homePlayerRow, awayPlayerRow = statsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
 
         # Find each players' results
         for rowNumber in range(0, endRow + 1):
@@ -96,6 +81,7 @@ for league in teamDetails.allDays:
                     if not cupGame:
                         awayGame = True
 
+                # TODO this
                 # Checks player plays for expected team
                 for i in range(0, 13):
                     possibleTeamText = allRowsInFile[rowNumber - i]

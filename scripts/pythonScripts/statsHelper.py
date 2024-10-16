@@ -250,7 +250,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
 
     return homeRow, awayRow
 
-def returnHomeAndAwayPlayerRows(allRowsInFile, teamNameUsedForLeague, league):
+def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league):
     homePlayerRow = []
     awayPlayerRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -274,3 +274,22 @@ def returnHomeAndAwayPlayerRows(allRowsInFile, teamNameUsedForLeague, league):
                         
     combinedRows = homePlayerRow + awayPlayerRow
     return homePlayerRow, awayPlayerRow, combinedRows
+
+def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
+    homePlayerRow = []
+    awayPlayerRow = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if (row and type(row) is str):
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
+            if len(findPossiblePlayerNames) > 1:
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
+                if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
+                    homePlayerRow.append(rowNumber)
+
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
+                if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
+                    awayPlayerRow.append(rowNumber)
+    return homePlayerRow, awayPlayerRow
