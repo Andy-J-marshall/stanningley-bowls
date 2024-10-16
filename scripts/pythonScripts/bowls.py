@@ -63,41 +63,7 @@ for team in teamDetails.teamDays:
 
         #### TEAM STATS ####
         # Find team's home and away games
-        homeRow = []
-        awayRow = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if row and type(row) is str:
-                # This ignores cup games hosted by the club
-                hostedCupGame = statsHelper.isCupGame(row.lower())
-
-                # Check if A and B team are playing each other
-                aTeamPlayingBTeamBool = False
-                if not hostedCupGame and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
-                    aTeamPlayingBTeamBool = True
-                    teamLower = teamNameUsedForLeague.lower()
-                    rowLower = row.lower().strip()
-                    if teamLower in rowLower:
-                        # Determine if A or B team is playing at home and store the rows
-                        if rowLower.endswith((' a', " 'a'")):
-                            if teamLower.endswith((' a', " 'a'")):
-                                awayRow.append(rowNumber)
-                            elif teamLower.endswith((' b', " 'b'")):
-                                homeRow.append(rowNumber)
-                        elif rowLower.endswith((' b', " 'b'")):
-                            if teamLower.endswith((' b', " 'b'")):
-                                awayRow.append(rowNumber)
-                            elif teamLower.endswith((' a', " 'a'")):
-                                homeRow.append(rowNumber)
-                
-                # Store home and away game rows
-                if aTeamPlayingBTeamBool is False and hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
-                    words = row.strip().lower().split()
-                    firstWord = words[0].lower()
-                    if firstWord == teamDetails.displayTeamName.lower():
-                        homeRow.append(rowNumber)
-                    else:
-                        awayRow.append(rowNumber)
+        homeRow, awayRow = statsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
 
         # Find team results and scores
         awayWins = 0
