@@ -293,3 +293,22 @@ def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
                 if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
                     awayPlayerRow.append(rowNumber)
     return homePlayerRow, awayPlayerRow
+
+def checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway):
+    for i in range(0, 13):
+        possibleTeamText = allRowsInFile[rowNumber - i]
+        
+        if type(possibleTeamText) is str:
+            possibleTeamText = possibleTeamText.lower().strip()
+            
+            # Checks against full team name first
+            for team in teamDetails.teamsTracking:
+                team = team.lower()
+                if team in possibleTeamText:
+                    if (homeGame or cupHome) and possibleTeamText.startswith(team):
+                        return True
+                    if (awayGame or cupAway) and not possibleTeamText.startswith(team):
+                        return True
+                    if possibleTeamText.count(team) == 2:
+                        return True
+    return False

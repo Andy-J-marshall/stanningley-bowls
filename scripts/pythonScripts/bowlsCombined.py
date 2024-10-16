@@ -81,30 +81,8 @@ for league in teamDetails.allDays:
                     if not cupGame:
                         awayGame = True
 
-                # TODO this
                 # Checks player plays for expected team
-                for i in range(0, 13):
-                    possibleTeamText = allRowsInFile[rowNumber - i]
-                    
-                    if type(possibleTeamText) is str:
-                        possibleTeamText = possibleTeamText.lower().strip()
-                        
-                        # Checks against full team name first
-                        for team in teamDetails.teamsTracking:
-                            team = team.lower()
-                            if team in possibleTeamText:
-                                if (homeGame or cupHome) and possibleTeamText.startswith(team):
-                                    correctPlayerFound = True
-                                    break
-                                if (awayGame or cupAway) and not possibleTeamText.startswith(team):
-                                    correctPlayerFound = True
-                                    break
-                                if possibleTeamText.count(team) == 2:
-                                    correctPlayerFound = True
-                                    break
-                        
-                        if correctPlayerFound is True:
-                            break
+                correctPlayerFound = statsHelper.checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
 
                 # Find result details
                 if correctPlayerFound:
