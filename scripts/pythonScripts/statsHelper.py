@@ -1,3 +1,4 @@
+import re
 import teamDetails
 
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
@@ -112,57 +113,6 @@ def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeag
                     return True
                 return False
 
-def findCupGameRows(allRowsInFile):
-    cupGameRows = []
-    for rowNumber, line in enumerate(allRowsInFile, start=0):
-        row = allRowsInFile[rowNumber]
-        if row and type(row) is str:
-            for text in cupText:
-                if text in row.lower():
-                    for i in range(0, 13):
-                        cupGameRows.append(rowNumber + i)
-                    break
-    return cupGameRows
-
-def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
-    homeRow = []
-    awayRow = []
-    for rowNumber, line in enumerate(allRowsInFile, start=0):
-        row = allRowsInFile[rowNumber]
-        if row and type(row) is str:
-            # This ignores cup games hosted by the club
-            hostedCupGame = isCupGame(row.lower())
-
-            # Check if A and B team are playing each other
-            aTeamPlayingBTeamBool = False
-            if not hostedCupGame and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
-                aTeamPlayingBTeamBool = True
-                teamLower = teamNameUsedForLeague.lower()
-                rowLower = row.lower().strip()
-                if teamLower in rowLower:
-                    # Determine if A or B team is playing at home and store the rows
-                    if rowLower.endswith((' a', " 'a'")):
-                        if teamLower.endswith((' a', " 'a'")):
-                            awayRow.append(rowNumber)
-                        elif teamLower.endswith((' b', " 'b'")):
-                            homeRow.append(rowNumber)
-                    elif rowLower.endswith((' b', " 'b'")):
-                        if teamLower.endswith((' b', " 'b'")):
-                            awayRow.append(rowNumber)
-                        elif teamLower.endswith((' a', " 'a'")):
-                            homeRow.append(rowNumber)
-            
-            # Store home and away game rows
-            if aTeamPlayingBTeamBool is False and hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
-                words = row.strip().lower().split()
-                firstWord = words[0].lower()
-                if firstWord == teamDetails.displayTeamName.lower():
-                    homeRow.append(rowNumber)
-                else:
-                    awayRow.append(rowNumber)
-
-    return homeRow, awayRow
-
 def returnBaseRowDownNumber(cupGameBool, forAggAdjustmentBool):
     if cupGameBool or forAggAdjustmentBool:
         return 9
@@ -248,3 +198,79 @@ def returnTeamNameForLeague(allRowsInFile, teamNameForLeague):
     
     teamNameUsedForLeague = max(possibleTeamNamesUsed, key=len)
     return teamNameUsedForLeague, teamNameToUse
+
+def findCupGameRows(allRowsInFile):
+    cupGameRows = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if row and type(row) is str:
+            for text in cupText:
+                if text in row.lower():
+                    for i in range(0, 13):
+                        cupGameRows.append(rowNumber + i)
+                    break
+    return cupGameRows
+
+def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
+    homeRow = []
+    awayRow = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if row and type(row) is str:
+            # This ignores cup games hosted by the club
+            hostedCupGame = isCupGame(row.lower())
+
+            # Check if A and B team are playing each other
+            aTeamPlayingBTeamBool = False
+            if not hostedCupGame and row.lower().count(teamDetails.displayTeamName.lower()) > 1:
+                aTeamPlayingBTeamBool = True
+                teamLower = teamNameUsedForLeague.lower()
+                rowLower = row.lower().strip()
+                if teamLower in rowLower:
+                    # Determine if A or B team is playing at home and store the rows
+                    if rowLower.endswith((' a', " 'a'")):
+                        if teamLower.endswith((' a', " 'a'")):
+                            awayRow.append(rowNumber)
+                        elif teamLower.endswith((' b', " 'b'")):
+                            homeRow.append(rowNumber)
+                    elif rowLower.endswith((' b', " 'b'")):
+                        if teamLower.endswith((' b', " 'b'")):
+                            awayRow.append(rowNumber)
+                        elif teamLower.endswith((' a', " 'a'")):
+                            homeRow.append(rowNumber)
+            
+            # Store home and away game rows
+            if aTeamPlayingBTeamBool is False and hostedCupGame is False and teamNameUsedForLeague.lower() in row.lower():
+                words = row.strip().lower().split()
+                firstWord = words[0].lower()
+                if firstWord == teamDetails.displayTeamName.lower():
+                    homeRow.append(rowNumber)
+                else:
+                    awayRow.append(rowNumber)
+
+    return homeRow, awayRow
+
+def returnHomeAndAwayPlayerRows(allRowsInFile, teamNameUsedForLeague, league):
+    homePlayerRow = []
+    awayPlayerRow = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if (row and type(row) is str):
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
+            if len(findPossiblePlayerNames) > 1:
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
+                if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
+                    validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home', teamNameUsedForLeague, league, allRowsInFile)
+                    if validPlayer:
+                        homePlayerRow.append(rowNumber)
+
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = teamDetails.deduplicateNames(possiblePlayerNameAway).lower()
+                if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
+                    validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away', teamNameUsedForLeague, league, allRowsInFile)
+                    if validPlayer:
+                        awayPlayerRow.append(rowNumber)
+                        
+    combinedRows = homePlayerRow + awayPlayerRow
+    return homePlayerRow, awayPlayerRow, combinedRows

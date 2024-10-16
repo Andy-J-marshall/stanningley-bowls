@@ -166,30 +166,9 @@ for team in teamDetails.teamDays:
         #### PLAYER STATS ####
         
         # Find rows in spreadsheet for players' games
-        homePlayerRow = []
-        awayPlayerRow = []
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            row = allRowsInFile[rowNumber]
-            if (row and type(row) is str):
-                findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
-                if len(findPossiblePlayerNames) > 1:
-                    possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                    possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
-                    if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
-                        validPlayer = statsHelper.checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home', teamNameUsedForLeague, league, allRowsInFile)
-                        if validPlayer:
-                            homePlayerRow.append(rowNumber)
-
-                    possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                    possiblePlayerNameAway = teamDetails.deduplicateNames(possiblePlayerNameAway).lower()
-                    if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
-                        validPlayer = statsHelper.checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away', teamNameUsedForLeague, league, allRowsInFile)
-                        if validPlayer:
-                            awayPlayerRow.append(rowNumber)
+        homePlayerRow, awayPlayerRow, combinedRows = statsHelper.returnHomeAndAwayPlayerRows(allRowsInFile, teamNameUsedForLeague, league)
         
         # Find each players' results
-        combinedRows = homePlayerRow + awayPlayerRow
-        
         for rowNumber in sorted(combinedRows):
             # reset variable values
             aggregate = 0
