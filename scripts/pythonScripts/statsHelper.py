@@ -313,7 +313,6 @@ def checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupH
                         return True
     return False
 
-# TODO combine with the below?
 def isPairsGame(allRowsInFile, rowNumber, text):
     scoreFoundInText = any(char.isdigit() for char in text)
     if scoreFoundInText is False:
