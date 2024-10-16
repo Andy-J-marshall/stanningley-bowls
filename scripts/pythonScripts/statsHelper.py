@@ -312,3 +312,58 @@ def checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupH
                     if possibleTeamText.count(team) == 2:
                         return True
     return False
+
+# TODO combine with the below?
+def isPairsGame(allRowsInFile, rowNumber, text):
+    scoreFoundInText = any(char.isdigit() for char in text)
+    if scoreFoundInText is False:
+        return True
+    else:
+        rowBelowText = allRowsInFile[rowNumber + 1]
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        if len(pairsAggregateMatch) == 0:
+            return True
+    return False
+
+def handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway):
+    scoreFoundInText = any(char.isdigit() for char in text)
+    pairsPartner = ''
+    secondOpponent = ''
+    aggregate = 0
+    opponentAggregate = 0
+    
+    if scoreFoundInText is False:
+        rowBelowText = allRowsInFile[rowNumber - 1]
+        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        
+        if homeGame or cupHome:
+            pairsPartner = findPossiblePairsPlayerNames[0]
+            secondOpponent = findPossiblePairsPlayerNames[1]
+            aggregate = int(pairsAggregateMatch[0].strip())
+            opponentAggregate = int(pairsAggregateMatch[1].strip())
+        elif awayGame or cupAway:
+            pairsPartner = findPossiblePairsPlayerNames[1]
+            secondOpponent = findPossiblePairsPlayerNames[0]
+            aggregate = int(pairsAggregateMatch[1].strip())
+            opponentAggregate = int(pairsAggregateMatch[0].strip())
+            
+    else:
+        rowBelowText = allRowsInFile[rowNumber + 1]
+        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        
+        if len(pairsAggregateMatch) == 0:
+            if homeGame or cupHome:
+                pairsPartner = findPossiblePairsPlayerNames[0]
+                secondOpponent = findPossiblePairsPlayerNames[1]
+            elif awayGame or cupAway:
+                pairsPartner = findPossiblePairsPlayerNames[1]
+                secondOpponent = findPossiblePairsPlayerNames[0]
+
+    return {
+        'pairsPartner': pairsPartner,
+        'secondOpponent': secondOpponent,
+        'aggregate': aggregate,
+        'opponentAggregate': opponentAggregate
+    }
