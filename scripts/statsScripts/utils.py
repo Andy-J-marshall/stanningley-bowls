@@ -1,5 +1,7 @@
 import json
 from datetime import date
+import os
+import sanityChecks
 
 year = str(date.today().year)
 
@@ -22,3 +24,9 @@ def saveFile(filename, dataToExport):
         
 def returnTodayDate():
     return date.today().strftime("%d/%m/%Y")
+
+def returnFileSize(filename):
+    if os.path.exists(filename):
+        previousFileSize = sanityChecks.getFileSize(filename)
+        return previousFileSize
+    return 0

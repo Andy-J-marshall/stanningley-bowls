@@ -1,4 +1,3 @@
-import os
 import re
 import teamDetails
 import teamStatsHelper
@@ -205,11 +204,7 @@ dataToExport = {
 }
 
 filename = 'src/data/bowlsStats' + utils.year + '.json'
-previousFileSize = 0
-if os.path.exists(filename):
-    previousFileSize = sanityChecks.getFileSize(filename)
-    os.remove(filename)    
-
+previousFileSize = utils.returnFileSize(filename)
 utils.saveFile(filename, dataToExport)
 
 # Sanity checks on the data
