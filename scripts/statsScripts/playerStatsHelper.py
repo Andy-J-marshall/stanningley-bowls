@@ -56,7 +56,7 @@ def returnListOfPlayerStats(days, includeTeamData, players):
         playerStats[player] = playerObj
     return playerStats
 
-def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, awayGame, cupHome, cupAway, cupGameBool, includeTeamStatsBool):    
+def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, awayGame, cupHome, cupAway, cupGameBool, includeTeamStatsBool):
     text = allRowsInFile[rowNumber]
     findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
     if homeGame or cupHome:
