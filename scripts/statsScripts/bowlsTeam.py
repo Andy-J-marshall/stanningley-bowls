@@ -163,7 +163,7 @@ for team in teamDetails.teamDays:
         #### PLAYER STATS ####
         
         # Find rows in spreadsheet for players' games
-        homePlayerRow, awayPlayerRow, combinedRows = playerStatsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
+        homePlayerRows, awayPlayerRows, combinedRows = playerStatsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
         
         # Find each players' results
         for rowNumber in sorted(combinedRows):
@@ -177,23 +177,23 @@ for team in teamDetails.teamDays:
             # Find columns
             if rowNumber in cupGameRows:
                 cupGameBool = True
-                if rowNumber in homePlayerRow:
+                if rowNumber in homePlayerRows:
                     cupHome = True
-                if rowNumber in awayPlayerRow:
+                if rowNumber in awayPlayerRows:
                     cupAway = True
 
-            if rowNumber in homePlayerRow:
+            if rowNumber in homePlayerRows:
                 if not cupGameBool:
                     homeGame = True
 
-            if rowNumber in awayPlayerRow:
+            if rowNumber in awayPlayerRows:
                 if not cupGameBool:
                     awayGame = True
 
             # Find result details
             playerStatsHelper.calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, awayGame, cupHome, cupAway, cupGameBool, True)
 
-            sanityChecks.validatePlayerNotProcessedTwice(rowNumber, homePlayerRow, awayPlayerRow)
+            sanityChecks.validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
     file.close()
 
 # Create JSON file
