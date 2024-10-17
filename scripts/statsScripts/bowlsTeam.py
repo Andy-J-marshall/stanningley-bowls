@@ -51,13 +51,9 @@ for team in teamDetails.teamDays:
         awayDraws = 0
         cupWins = 0
         cupLosses = 0
-        wins = 0
-        draws = 0
-        losses = 0
         teamAgg = 0
         opponentAgg = 0
         results = []
-        totalGamesPlayed = 0
 
         for rowNumber, line in enumerate(allRowsInFile, start=0):
             row = allRowsInFile[rowNumber]
