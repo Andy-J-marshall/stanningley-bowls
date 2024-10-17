@@ -2,9 +2,10 @@ import os
 from datetime import date
 import re
 import teamDetails
-import statsHelper
+import teamStatsHelper
 import sanityChecks
 import utils
+import statsHelper
 import playerStatsHelper
 
 playerStats = playerStatsHelper.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
@@ -40,7 +41,7 @@ for team in teamDetails.teamDays:
 
         #### TEAM STATS ####
         # Find team's home and away games
-        homeRow, awayRow = statsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
+        homeRow, awayRow = teamStatsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
 
         # Find team results and scores
         awayWins = 0
@@ -64,10 +65,10 @@ for team in teamDetails.teamDays:
 
             # Check if cup game
             cupRow = allRowsInFile[rowNumber - 1]
-            cupGameBool = statsHelper.isCupGame(cupRow)
+            cupGameBool = teamStatsHelper.isCupGame(cupRow)
             
             # Find the number of rows down for the team scores                       
-            totalNumberOfRowsAdjustmentInt = statsHelper.returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league)
+            totalNumberOfRowsAdjustmentInt = teamStatsHelper.returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league)
             
             # Prevents attempting to process a line that doesn't exist
             if rowNumber + totalNumberOfRowsAdjustmentInt >= endRow:
@@ -86,9 +87,9 @@ for team in teamDetails.teamDays:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
-                baseRowDownAdjustment = statsHelper.returnBaseRowDownNumber(False, True)
-                adjustmentForLeagueInt = statsHelper.returnAggRowDownNumber(league)
-                adjustFor6PlayerTeamsInt = statsHelper.returnAdjustedRowNumberFor6PlayerTeams(league, 0)
+                baseRowDownAdjustment = teamStatsHelper.returnBaseRowDownNumber(False, True)
+                adjustmentForLeagueInt = teamStatsHelper.returnAggRowDownNumber(league)
+                adjustFor6PlayerTeamsInt = teamStatsHelper.returnAdjustedRowNumberFor6PlayerTeams(league, 0)
                 text = allRowsInFile[rowNumber + baseRowDownAdjustment + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
                 if text and type(text) is str:
                     matchAgg = re.findall(r'\d+', text)
@@ -167,7 +168,7 @@ for team in teamDetails.teamDays:
         #### PLAYER STATS ####
         
         # Find rows in spreadsheet for players' games
-        homePlayerRow, awayPlayerRow, combinedRows = statsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
+        homePlayerRow, awayPlayerRow, combinedRows = playerStatsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
         
         # Find each players' results
         for rowNumber in sorted(combinedRows):

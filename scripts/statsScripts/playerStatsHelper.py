@@ -83,9 +83,9 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
                 opponentAggregate = int(matchAggregate[0].strip())
 
         # Checks whether it's a pairs game
-        pairsGame = statsHelper.isPairsGame(allRowsInFile, rowNumber, text)
+        pairsGame = isPairsGame(allRowsInFile, rowNumber, text)
         if pairsGame:
-            pairsDetails = statsHelper.handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
+            pairsDetails = handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
             if pairsDetails['aggregate'] > 0:
                 aggregate = pairsDetails['aggregate']
             if pairsDetails['opponentAggregate'] > 0:
@@ -181,3 +181,146 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
                 playerStats[playerName][teamNameToStoreData]['wins'] += 1
 
     return playerStats
+
+def standardiseName(name):
+    name = name.lower().strip()
+    name = name.replace(' - ', '-')
+    name = name.replace(" 'a'", '')
+    name = name.replace("'a'", '')
+    name = name.replace(" 'b'", '')
+    name = name.replace("'b'", '')
+    return name
+
+def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile):
+    playerName = teamDetails.deduplicateNames(playerName)
+    if playerName in teamDetails.traitorPlayers[league]:
+        return False
+    
+    for i in range(0, 13):
+        # Checks player is playing for correct team
+        previousRowValue = allRowsInFile[rowNumber - i]
+        if previousRowValue and type(previousRowValue) is str:
+            previousRowValue = previousRowValue.lower().strip()
+            if teamNameUsedForLeague.lower() in previousRowValue:
+                if homeOrAway.lower() == 'home' and previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                    return True
+                if homeOrAway.lower() == 'away' and not previousRowValue.startswith(teamNameUsedForLeague.lower()):
+                    return True
+                return False
+
+def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league):
+    homePlayerRow = []
+    awayPlayerRow = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if (row and type(row) is str):
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
+            if len(findPossiblePlayerNames) > 1:
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = teamDetails.deduplicateNames(possiblePlayerNameHome).lower()
+                if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
+                    validPlayer = checkValidPlayerOnDay(possiblePlayerNameHome, rowNumber, 'home', teamNameUsedForLeague, league, allRowsInFile)
+                    if validPlayer:
+                        homePlayerRow.append(rowNumber)
+
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = teamDetails.deduplicateNames(possiblePlayerNameAway).lower()
+                if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
+                    validPlayer = checkValidPlayerOnDay(possiblePlayerNameAway, rowNumber, 'away', teamNameUsedForLeague, league, allRowsInFile)
+                    if validPlayer:
+                        awayPlayerRow.append(rowNumber)
+                        
+    combinedRows = homePlayerRow + awayPlayerRow
+    return homePlayerRow, awayPlayerRow, combinedRows
+
+def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
+    homePlayerRow = []
+    awayPlayerRow = []
+    for rowNumber, line in enumerate(allRowsInFile, start=0):
+        row = allRowsInFile[rowNumber]
+        if (row and type(row) is str):
+            findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
+            if len(findPossiblePlayerNames) > 1:
+                possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
+                possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
+                if possiblePlayerNameHome in teamDetails.players or possiblePlayerNameHome in teamDetails.duplicatePlayerNames:
+                    homePlayerRow.append(rowNumber)
+
+                possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
+                possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
+                if possiblePlayerNameAway in teamDetails.players or possiblePlayerNameAway in teamDetails.duplicatePlayerNames:
+                    awayPlayerRow.append(rowNumber)
+    return homePlayerRow, awayPlayerRow
+
+def checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway):
+    for i in range(0, 13):
+        possibleTeamText = allRowsInFile[rowNumber - i]
+        
+        if type(possibleTeamText) is str:
+            possibleTeamText = possibleTeamText.lower().strip()
+            
+            # Checks against full team name first
+            for team in teamDetails.teamsTracking:
+                team = team.lower()
+                if team in possibleTeamText:
+                    if (homeGame or cupHome) and possibleTeamText.startswith(team):
+                        return True
+                    if (awayGame or cupAway) and not possibleTeamText.startswith(team):
+                        return True
+                    if possibleTeamText.count(team) == 2:
+                        return True
+    return False
+
+def isPairsGame(allRowsInFile, rowNumber, text):
+    scoreFoundInText = any(char.isdigit() for char in text)
+    if scoreFoundInText is False:
+        return True
+    else:
+        rowBelowText = allRowsInFile[rowNumber + 1]
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        if len(pairsAggregateMatch) == 0:
+            return True
+    return False
+
+def handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway):
+    scoreFoundInText = any(char.isdigit() for char in text)
+    pairsPartner = ''
+    secondOpponent = ''
+    aggregate = 0
+    opponentAggregate = 0
+    
+    if scoreFoundInText is False:
+        rowBelowText = allRowsInFile[rowNumber - 1]
+        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        
+        if homeGame or cupHome:
+            pairsPartner = findPossiblePairsPlayerNames[0]
+            secondOpponent = findPossiblePairsPlayerNames[1]
+            aggregate = int(pairsAggregateMatch[0].strip())
+            opponentAggregate = int(pairsAggregateMatch[1].strip())
+        elif awayGame or cupAway:
+            pairsPartner = findPossiblePairsPlayerNames[1]
+            secondOpponent = findPossiblePairsPlayerNames[0]
+            aggregate = int(pairsAggregateMatch[1].strip())
+            opponentAggregate = int(pairsAggregateMatch[0].strip())
+            
+    else:
+        rowBelowText = allRowsInFile[rowNumber + 1]
+        findPossiblePairsPlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", rowBelowText)
+        pairsAggregateMatch = re.findall(r'\d+', rowBelowText)
+        
+        if len(pairsAggregateMatch) == 0:
+            if homeGame or cupHome:
+                pairsPartner = findPossiblePairsPlayerNames[0]
+                secondOpponent = findPossiblePairsPlayerNames[1]
+            elif awayGame or cupAway:
+                pairsPartner = findPossiblePairsPlayerNames[1]
+                secondOpponent = findPossiblePairsPlayerNames[0]
+
+    return {
+        'pairsPartner': pairsPartner,
+        'secondOpponent': secondOpponent,
+        'aggregate': aggregate,
+        'opponentAggregate': opponentAggregate
+    }

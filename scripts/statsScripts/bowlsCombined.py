@@ -1,10 +1,10 @@
 import os
 from datetime import date
-import statsHelper
-import sanityChecks
 import teamDetails
-import playerStatsHelper
+import sanityChecks
 import utils
+import statsHelper
+import playerStatsHelper
 
 playerStats = playerStatsHelper.returnListOfPlayerStats(teamDetails.allDays, False, teamDetails.players)
 leaguesProcessed = []
@@ -30,7 +30,7 @@ for league in teamDetails.allDays:
         cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
 
         # Find rows in spreadsheet for players' games
-        homePlayerRow, awayPlayerRow = statsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
+        homePlayerRow, awayPlayerRow = playerStatsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
 
         # Find each players' results
         for rowNumber in range(0, endRow + 1):
@@ -75,7 +75,7 @@ for league in teamDetails.allDays:
                         awayGame = True
 
                 # Checks player plays for expected team
-                correctPlayerFound = statsHelper.checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
+                correctPlayerFound = playerStatsHelper.checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
 
                 # Find result details
                 if correctPlayerFound:
