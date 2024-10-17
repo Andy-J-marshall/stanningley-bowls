@@ -99,18 +99,18 @@ for league in teamDetails.allDays:
                         if homeGame or cupHome:
                             playerName = findPossiblePlayerNames[0]
                             
-                            aggregateMatch = re.findall(r'\d+', text)
-                            if aggregateMatch:
-                                aggregate = int(aggregateMatch[0].strip())
-                                opponentAggregate = int(aggregateMatch[1].strip())
+                            matchAggregate = re.findall(r'\d+', text)
+                            if matchAggregate:
+                                aggregate = int(matchAggregate[0].strip())
+                                opponentAggregate = int(matchAggregate[1].strip())
 
                         if awayGame or cupAway:
                             playerName = findPossiblePlayerNames[1]
                             
-                            aggregateMatch = re.findall(r'\d+', text)
-                            if aggregateMatch:
-                                aggregate = int(aggregateMatch[1].strip())
-                                opponentAggregate = int(aggregateMatch[0].strip())
+                            matchAggregate = re.findall(r'\d+', text)
+                            if matchAggregate:
+                                aggregate = int(matchAggregate[1].strip())
+                                opponentAggregate = int(matchAggregate[0].strip())
 
                         # Checks whether it's a pairs game
                         pairsGame = statsHelper.isPairsGame(allRowsInFile, rowNumber, text)                  

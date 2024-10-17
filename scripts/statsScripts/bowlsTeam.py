@@ -201,6 +201,7 @@ for team in teamDetails.teamDays:
                     awayGame = True
 
             # Find result details
+            # TODO same from here?
             text = allRowsInFile[rowNumber]
 
             findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
@@ -214,22 +215,21 @@ for team in teamDetails.teamDays:
                 if homeGame or cupHome:
                     playerName = findPossiblePlayerNames[0]
                     
-                    matchScore = re.findall(r'\d+', text)
-                    if matchScore:
-                        aggregate = int(matchScore[0].strip())
-                        opponentAggregate = int(matchScore[1].strip())
+                    matchAggregate = re.findall(r'\d+', text)
+                    if matchAggregate:
+                        aggregate = int(matchAggregate[0].strip())
+                        opponentAggregate = int(matchAggregate[1].strip())
 
                 if awayGame or cupAway:
                     playerName = findPossiblePlayerNames[1]
                     
-                    matchScore = re.findall(r'\d+', text)
-                    if matchScore:
-                        aggregate = int(matchScore[1].strip())
-                        opponentAggregate = int(matchScore[0].strip())
+                    matchAggregate = re.findall(r'\d+', text)
+                    if matchAggregate:
+                        aggregate = int(matchAggregate[1].strip())
+                        opponentAggregate = int(matchAggregate[0].strip())
 
                 # Checks whether it's a pairs game
                 pairsGame = statsHelper.isPairsGame(allRowsInFile, rowNumber, text)
-                
                 if pairsGame:
                     pairsDetails = statsHelper.handlePairsGame(text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
                     if pairsDetails['aggregate'] > 0:
@@ -256,6 +256,7 @@ for team in teamDetails.teamDays:
                     playerStats[playerName]['totalPairsAgg'] += aggregate
                     playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
+                # TODO this
                 playerStats[playerName][teamNameToStoreData.lower()]['games'] += 1
                 playerStats[playerName]['totalGamesPlayed'] += 1
 
@@ -267,6 +268,7 @@ for team in teamDetails.teamDays:
 
                 # Wins
                 if aggregate > opponentAggregate:
+                    # TODO this
                     playerStats[playerName][teamNameToStoreData.lower()]['wins'] += 1
                     if pairsGame:
                         playerStats[playerName]['pairWins'] += 1
@@ -303,8 +305,8 @@ for team in teamDetails.teamDays:
                 playerStats[playerName]['availableAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalAgg'] += aggregate
                 playerStats[playerName]['totalAggAgainst'] += opponentAggregate
-                playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - \
-                    opponentAggregate
+                # TODO this
+                playerStats[playerName][teamNameToStoreData.lower()]['aggDiff'] += aggregate - opponentAggregate
                 if homeGame:
                     playerStats[playerName]['availableHomeAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                     playerStats[playerName]['totalHomeAgg'] += aggregate
