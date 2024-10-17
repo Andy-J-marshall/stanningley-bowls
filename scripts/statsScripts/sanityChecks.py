@@ -1,4 +1,4 @@
-import statsHelper
+import playerStatsHelper
 
 def getFileSize(fileName):
     newEndRow = 0
@@ -14,7 +14,7 @@ def getFileSize(fileName):
 def checkPlayerStats(playerStats, players):
     print('Running sanity checks on player stats')
     for p in players:
-        player = statsHelper.standardiseName(p)
+        player = playerStatsHelper.standardiseName(p)
         stats = playerStats[player]
         # check games played
         if stats['totalGamesPlayed'] < 0 or stats['totalGamesPlayed'] > 200:

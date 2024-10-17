@@ -1,4 +1,4 @@
-import statsHelper
+import playerStatsHelper
 
 # Team info (lowercase)
 teamNames = [
@@ -79,7 +79,7 @@ duplicatePlayerNames = [
 
 # Add alternative names for players (lowercase)
 def deduplicateNames(name):
-    name = statsHelper.standardiseName(name)
+    name = playerStatsHelper.standardiseName(name)
     if name == 'duncan mc phail':
         name = 'duncan mcphail'
     if name == 'andrew marshall':

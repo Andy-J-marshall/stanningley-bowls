@@ -1,9 +1,9 @@
-from datetime import date
 import os
 import teamDetails
-teamDays = teamDetails.allDays
+import utils
 
-year = str(date.today().year)
+teamDays = teamDetails.allDays
+year = utils.year
 
 files = []
 for team in teamDays:
