@@ -29,6 +29,12 @@ cupText = [
     'round of 64'
 ]
 
+def returnTeamNameToStoreData(team):
+    return team.replace(' (A)', '')
+
+def removeSuffixFromTeamName(team):
+    return team.replace(' (A)', '').replace(' (B)', '').replace(' (C)', '').replace(' (D)', '')
+
 def standardiseName(name):
     name = name.lower().strip()
     name = name.replace(' - ', '-')
@@ -42,59 +48,6 @@ def returnTotalAggAvailablePerGame(team):
     if team.lower() in leaguesWithGamesTo26:
         return 26
     return 21
-
-def returnListOfPlayerStats(days, includeTeamData, players):
-    players.sort()
-    playerStats = {}
-    for player in players:
-        playerObj = {
-            'totalAgg': 0,
-            'totalAggAgainst': 0,
-            'availableAgg': 0,
-            'availablePairsAgg': 0,
-            'availableHomeAgg': 0,
-            'availableAwayAgg': 0,
-            'availablePairsHomeAgg': 0,
-            'availablePairsAwayAgg': 0,
-            'totalPairsAgg': 0,
-            'totalPairsAggAgainst': 0,
-            'totalHomeAgg': 0,
-            'totalHomeAggAgainst': 0,
-            'totalPairsHomeAgg': 0,
-            'totalPairsHomeAggAgainst': 0,
-            'totalAwayAgg': 0,
-            'totalAwayAggAgainst': 0,
-            'totalPairsAwayAgg': 0,
-            'totalPairsAwayAggAgainst': 0,
-            'homeWins': 0,
-            'homeLosses': 0,
-            'awayWins': 0,
-            'awayLosses': 0,
-            'cupWins': 0,
-            'cupLosses': 0,
-            'pairWins': 0,
-            'pairLosses': 0,
-            'pairHomeWins': 0,
-            'pairHomeLosses': 0,
-            'pairAwayWins': 0,
-            'pairAwayLosses': 0,
-            'pairCupWins': 0,
-            'pairCupLosses': 0,
-            'totalGamesPlayed': 0,
-            'dayPlayed': [],
-            'results': [],
-        }
-
-        if includeTeamData == True:
-            for team in days:
-                # this is to store first team data under the old name, to help with backward compatibility
-                playerObj[team.replace(' (A)', '').lower()] = {
-                    'games': 0,
-                    'wins': 0,
-                    'aggDiff': 0,
-                }
-        playerStats[player] = playerObj
-    return playerStats
 
 def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile):
     playerName = teamDetails.deduplicateNames(playerName)
