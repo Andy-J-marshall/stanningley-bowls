@@ -41,7 +41,7 @@ for team in teamDetails.teamDays:
 
         #### TEAM STATS ####
         # Find team's home and away games
-        homeRow, awayRow = teamStatsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
+        homeRows, awayRows = teamStatsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
 
         # Find team results and scores
         awayWins = 0
@@ -99,7 +99,7 @@ for team in teamDetails.teamDays:
 
             # Home games
             rowText = allRowsInFile[rowNumber]
-            if rowNumber in homeRow:
+            if rowNumber in homeRows:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
                 opponent = opponent.replace('&amp;', '&').strip()
                 result = teamNameToUse + ' ' + \
@@ -122,7 +122,7 @@ for team in teamDetails.teamDays:
                 opponentAgg = opponentAgg + awayAgg
 
             # Away games
-            if rowNumber in awayRow:
+            if rowNumber in awayRows:
                 opponent = rowText.split(teamNameUsedForLeague)[0]
                 opponent = opponent.replace('&amp;', '&').strip()
                 result = opponent + ' ' + \
