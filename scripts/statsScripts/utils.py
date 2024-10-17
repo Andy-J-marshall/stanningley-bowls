@@ -19,3 +19,6 @@ def saveFile(filename, dataToExport):
         print(filename + ' created')
         print('------')
         jsonFile.close()
+        
+def returnTodayDate():
+    return date.today().strftime("%d/%m/%Y")

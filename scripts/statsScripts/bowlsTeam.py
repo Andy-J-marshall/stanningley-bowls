@@ -1,5 +1,4 @@
 import os
-from datetime import date
 import re
 import teamDetails
 import teamStatsHelper
@@ -205,7 +204,7 @@ for team in teamDetails.teamDays:
 dataToExport = {
     'playerResults': playerStats,
     'teamResults': allTeamResults,
-    'lastUpdated': date.today().strftime("%d/%m/%Y"),
+    'lastUpdated': utils.returnTodayDate(),
     'statsYear': utils.year,
 }
 

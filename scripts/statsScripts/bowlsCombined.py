@@ -1,5 +1,4 @@
 import os
-from datetime import date
 import teamDetails
 import sanityChecks
 import utils
@@ -85,7 +84,7 @@ for league in teamDetails.allDays:
 # Create JSON file
 dataToExport = {
     'playerResults': playerStats,
-    'lastUpdated': date.today().strftime("%d/%m/%Y"),
+    'lastUpdated': utils.returnTodayDate(),
     'statsYear': utils.year
 }
 
