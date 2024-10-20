@@ -251,7 +251,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     if (playerStats) {
         return (
             <div id="player-stats-per-team">
-                <div className="center table" style={{ width: '99%' }}>
+                <div className="center table">
                     <Table striped bordered hover>
                         <thead>
                             <tr>
