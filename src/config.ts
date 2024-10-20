@@ -1,6 +1,5 @@
 export const config = {
     teamNames: {
-        abbreviatedName: 'S.P.B.C.',
         fullName: 'Stanningley Park Bowling Club',
         shortName: 'Stanningley',
     },

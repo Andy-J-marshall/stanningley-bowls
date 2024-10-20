@@ -61,7 +61,7 @@ function Results(props: ResultsProps) {
 
     if (resultsFound) {
         return (
-            <div style={{ width: '99%' }} className="center" id="result">
+            <div id="result">
                 <YearSelectDropdown
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}

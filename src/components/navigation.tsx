@@ -1,6 +1,6 @@
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { config } from '../config';
+import logoImg from '../images/logos/brand-logo-blue-bg.png';
 
 function Navigation() {
     return (
@@ -14,7 +14,7 @@ function Navigation() {
         >
             <Container fluid>
                 <Navbar.Brand as={Link} to="/" href="/home">
-                    {config.teamNames.abbreviatedName}
+                    <Image style={{ height: '2.3rem' }} src={logoImg} rounded fluid />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

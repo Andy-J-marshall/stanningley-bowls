@@ -1,14 +1,13 @@
-import logo from '../images/logos/brand-logo.png';
+import { Image } from 'react-bootstrap';
+import logo from '../images/logos/brand-banner-logo.png';
 
 function Header() {
     return (
         <div id="header">
-            <img
-                alt="header logo"
+            <Image
+                style={{ height: '200px', width: 'auto' }}
                 src={logo}
-                width="170"
-                height="170"
-                className="d-inline-block align-top"
+                fluid
             />
         </div>
     );

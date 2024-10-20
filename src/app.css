@@ -26,36 +26,22 @@ body {
   width: 100%;
 }
 
-@media (min-width: 100px) {
-  .carousel {
-    width: 99%;
-  }
-}
-
-@media (min-width: 500px) {
-  .carousel {
-    width: 90%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .carousel {
-    width: 80%;
-  }
-}
 @media (min-width: 1200px) {
   .carousel {
-    width: 70%;
+    width: 100%;
+    height: auto;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1275px) {
   .carousel {
-    width: 60%;
+    width: 67%;
+    height: auto;
   }
 }
 
 .carousel-item img {
   width: 100%;
+  height: auto;
 }
 
 .navigation {
@@ -63,9 +49,13 @@ body {
 }
 
 .page-component {
-  margin-top: 1rem;
+  margin-top: 4.1rem;
   margin-bottom: 2rem;
   width: 96%;
+}
+
+.page-year-dropdown-component {
+  margin-top: 4rem;
 }
 
 #footer {
@@ -92,8 +82,8 @@ body {
 }
 
 #header {
-  padding: 0.4rem;
-  margin-top: 3.2rem;
+  margin-top: 4rem;
+  margin-bottom: 0.7rem;
   background-color: #0081a4;
   color: #ffffff;
 }
@@ -103,20 +93,15 @@ ul {
   list-style: inside;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 10px) {
   #search-form {
-    width: 90%;
-  }
-}
-@media (min-width: 700px) {
-  #search-form {
-    width: 70%;
+    width: 80%;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1075px) {
   #search-form {
-    width: 50%;
+    width: 55%;
   }
 }
 

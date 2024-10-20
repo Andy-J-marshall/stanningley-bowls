@@ -77,7 +77,7 @@ function History() {
             <br />
             <br />
             <h2>CLUB CUP WINNERS</h2>
-            <ListGroup className="page-center">
+            <ListGroup>
                 {clubCupWinners.map((record, idx) => {
                     return (
                         <ListGroupItem key={idx}>

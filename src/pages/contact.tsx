@@ -50,7 +50,7 @@ function Contact() {
                 </a>{' '}
                 on Facebook.
             </p>
-            <div className="page-component center">
+            <div>
                 <h1>LOCATION</h1>
                 <p>
                     {config.teamNames.fullName} is situated within Stanningley

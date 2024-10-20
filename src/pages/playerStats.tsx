@@ -203,7 +203,7 @@ function PlayerStats(props: PlayerStatsProps) {
             );
         } else {
             return (
-                <div className="page-component center">
+                <div>
                     <h5>No stats available for {stats.statsYear}</h5>
                 </div>
             );
@@ -214,7 +214,7 @@ function PlayerStats(props: PlayerStatsProps) {
         new Promise((resolve) => setTimeout(resolve, ms));
 
     return (
-        <div id="player-stat" className="center">
+        <div id="player-stat">
             <h1>{yearInTitle} PLAYER STATS</h1>
             {!showStatsSinceStart && (
                 <Search
