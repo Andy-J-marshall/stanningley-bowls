@@ -26,31 +26,14 @@ body {
   width: 100%;
 }
 
-@media (min-width: 100px) {
-  .carousel {
-    width: 99%;
-  }
-}
-
-@media (min-width: 500px) {
-  .carousel {
-    width: 90%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .carousel {
-    width: 80%;
-  }
-}
 @media (min-width: 1200px) {
   .carousel {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (min-width: 1500px) {
   .carousel {
-    width: 60%;
+    width: 70%;
   }
 }
 
