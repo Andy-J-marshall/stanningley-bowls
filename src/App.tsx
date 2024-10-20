@@ -4,7 +4,6 @@ import WebFont from 'webfontloader';
 import Home from './pages/home';
 import Footer from './components/footer';
 import Membership from './pages/membership';
-import Header from './components/header';
 import Contact from './pages/contact';
 import Results from './pages/results';
 import Navigation from './components/navigation';
@@ -22,7 +21,8 @@ import Fixtures from './pages/fixtures';
 const allYearStats: any = statsData.allYearStats;
 const allYearCombinedStats: any = statsData.allYearCombinedStats;
 const statsForEveryYearArray: any[] = statsData.statsForEveryYearArray;
-const combinedStatsForEveryYearArray: any[] = statsData.combinedStatsForEveryYearArray;
+const combinedStatsForEveryYearArray: any[] =
+    statsData.combinedStatsForEveryYearArray;
 
 function App() {
     const [teamStats, setTeamStats] = useState(
@@ -103,7 +103,6 @@ function App() {
 
     return (
         <div id="app">
-            <Header />
             <main>
                 <Navigation />
                 <Routes>
@@ -116,17 +115,19 @@ function App() {
                     <Route
                         path="/results"
                         element={
-                            <Results
-                                stats={teamStats}
-                                statsCallback={statsSelectCallback}
-                                yearToDisplay={yearToDisplay}
-                            />
+                            <div className="page-year-dropdown-component center">
+                                <Results
+                                    stats={teamStats}
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                />
+                            </div>
                         }
                     />
                     <Route
                         path="/stats/player"
                         element={
-                            <div>
+                            <div className="page-year-dropdown-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
@@ -147,7 +148,7 @@ function App() {
                     <Route
                         path="/stats/team"
                         element={
-                            <div>
+                            <div className="page-year-dropdown-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
@@ -163,7 +164,7 @@ function App() {
                     <Route
                         path="/stats/records"
                         element={
-                            <div>
+                            <div className="page-year-dropdown-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}

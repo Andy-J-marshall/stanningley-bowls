@@ -2,6 +2,7 @@ import { Nav, Carousel, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import Supporters from '../components/supporters';
 import Fixtures from './fixtures';
+import Header from '../components/header';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
 import eventsImg from '../images/websiteImages/carousel-05.webp';
@@ -9,7 +10,8 @@ import { config } from '../config';
 
 function Home() {
     return (
-        <div className="center page-component" id="home-page">
+        <div className="center" id="home-page">
+            <Header />
             <Nav defaultActiveKey="/home" className="tabs">
                 <Carousel fade>
                     <Carousel.Item>

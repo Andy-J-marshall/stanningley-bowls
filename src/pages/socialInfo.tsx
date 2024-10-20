@@ -3,8 +3,8 @@ import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
 
 function SocialInfo() {
     return (
-        <div id="social-membership">
-            <div id="social-info" className="center page-component">
+        <div id="social-membership" className="center page-component">
+            <div id="social-info">
                 <h1>SOCIAL BOWLING</h1>
                 <p>
                     Come along to one of our open social bowling sessions,
@@ -17,7 +17,7 @@ function SocialInfo() {
                 </p>
                 <img style={{ width: '95%' }} src={socialBowlingImg}></img>
             </div>
-            <div id="group-info" className="center page-component">
+            <div id="group-info">
                 <h1>GROUP SESSIONS</h1>
                 <p>
                     We are happy to accommodate groups of up to 15 with
