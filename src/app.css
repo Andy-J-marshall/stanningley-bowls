@@ -93,20 +93,15 @@ ul {
   list-style: inside;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 10px) {
   #search-form {
-    width: 90%;
-  }
-}
-@media (min-width: 700px) {
-  #search-form {
-    width: 70%;
+    width: 80%;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1075px) {
   #search-form {
-    width: 50%;
+    width: 55%;
   }
 }
 
