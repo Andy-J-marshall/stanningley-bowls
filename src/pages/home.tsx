@@ -1,7 +1,6 @@
 import { Nav, Carousel, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import Supporters from '../components/supporters';
-import Fixtures from './fixtures';
 import Header from '../components/header';
 import statsImg from '../images/websiteImages/carousel-01.webp';
 import membershipImg from '../images/websiteImages/carousel-02.webp';
@@ -60,8 +59,6 @@ function Home() {
                 </Carousel>
             </Nav>
             <br />
-            <hr />
-            <Fixtures />
             <hr />
             <Supporters />
         </div>
