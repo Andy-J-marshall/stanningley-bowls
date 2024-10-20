@@ -1,4 +1,4 @@
-import teamDetailsLittlemoor as teamDetails
+import teamDetails
 
 leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
 

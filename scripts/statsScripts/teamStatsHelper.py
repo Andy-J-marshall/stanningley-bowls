@@ -1,4 +1,4 @@
-import teamDetailsLittlemoor as teamDetails
+import teamDetails
 import statsHelper
 
 # Bradford saturday and Mirfield teams have 10 players except in low divisions

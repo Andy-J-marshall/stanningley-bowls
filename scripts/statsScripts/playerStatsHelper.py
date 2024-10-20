@@ -1,5 +1,5 @@
 import re
-import teamDetailsLittlemoor as teamDetails
+import teamDetails
 import statsHelper
 
 def returnListOfPlayerStats(days, includeTeamData, players):

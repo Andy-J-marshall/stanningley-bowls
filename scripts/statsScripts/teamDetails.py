@@ -2,96 +2,86 @@ import playerStatsHelper
 
 # Team info (lowercase)
 teamNames = [
-    'Stanningley', 
-    'Stanningley A', 
-    'Stanningley B',
-    'Stanningley Park', 
-    'Stanningley Park A', 
-    'Stanningley Park B'
+    'Littlemoor', 
+    'Littlemoor A', 
+    'Littlemoor - A', 
+    'Littlemoor \'A\'', 
+    'Littlemoor B',
+    'Littlemoor - B', 
+    'Littlemoor \'B\'', 
+    'Littlemoor Sports and Social', 
+    'Littlemoor Sports and Social',
+    'Littlemoor Sports and Social',
+    'Littlemoor Sports & Social', 
+    'Littlemoor Sports & Social A',
+    'Littlemoor Sports & Social - A',
+    'Littlemoor Sports & Social \'A\'',
+    'Littlemoor Sports & Social B',
+    'Littlemoor Sports & Social - B',
+    'Littlemoor Sports & Social \'B\'',
+    'Littlemoor S&SC',
+    'Littlemoor S&SC A',
+    'Littlemoor S&SC - A',
+    'Littlemoor S&SC \'A\'',
+    'Littlemoor S&SC B',
+    'Littlemoor S&SC - B',
+    'Littlemoor S&SC \'B\'',
+    'Littlemoor S & SC',
+    'Littlemoor S & SC A',
+    'Littlemoor S & SC - A',
+    'Littlemoor S & SC \'A\'',
+    'Littlemoor S & SC B',
+    'Littlemoor S & SC - B',
+    'Littlemoor S & SC \'B\'',
 ]
-displayTeamName = 'Stanningley'
+displayTeamName = 'Littlemoor'
 
 # Days played (add duplicate days for second teams suffixed with (A) or (B) etc.)
 teamDays = [
-    'Monday Combined Leeds',
-    'Tuesday Vets Leeds',
-    'Tuesday Leeds',
-    'Wednesday Half Holiday Leeds',
-    'Wednesday Pairs AireWharfe', 
-    'Thursday Vets Leeds', 
-    'Saturday Leeds (A)', 
-    'Saturday Leeds (B)' 
+    'Monday Bradford',
+    'Monday AireWharfe',
+    'Tuesday Mirfield (A)',
+    'Tuesday Mirfield (B)',
+    'Wednesday Spen Valley (A)',
+    'Wednesday Spen Valley (B)',
+    'Wednesday Half Holiday Bradford (A)',
+    'Wednesday Half Holiday Bradford (B)',
+    'Thursday Vets Bradford',
+    'Saturday Bradford (A)',
+    'Saturday Bradford (B)',
 ]
 
 # Every player (lowercase)
+# TODO add more players
 players = [
-    'john armitage', 
-    'paul bowes', 
-    'clifford brogie', 
-    'harvey leonard', 
-    'rob packer', 
-    'neil porter',
-    'craig clarkson', 
-    'steve gardner', 
-    'andy marshall', 
-    'alyssa randell', 
-    'andy waller', 
-    'phil sutcliffe',
-    'jim moorin', 
-    'duncan mcphail', 
-    'stewart watson', 
-    'tracey marshall', 
-    'derek wilson', 
-    'donald shaw',
-    'alison woodfine', 
-    'joey broadbent', 
-    'vanessa lancaster', 
-    'paul leonard', 
+    'john armitage',
+    'paul bowes',
+    'andy marshall',
+    'alyssa randell',
+    'jim moorin',
+    'stewart watson',
     'martin fulton',
-    'malvin miller', 
-    'stuart potter', 
-    'colin haque', 
-    'ken green', 
-    'robin mcdermott', 
-    'stephen tiernan',
-    'david eaton', 
-    'mary spears', 
-    'peter crowther', 
-    'laila packer', 
-    'richard hodgson', 
-    'jim swailes',
-    'nicola bona', 
-    'karl chapman', 
-    'phil thornton', 
-    'linda barrand'
+    'stuart potter',
+    'phil thornton',
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
+# TODO add players to these
 duplicatePlayerNames = [
-    'duncan mc phail', 
-    'phillip thornton', 
+    'phillip thornton',
     'philip thornton',
-    'stuart watson', 
-    'andrew marshall', 
-    'cliff brogie', 
+    'stuart watson',
+    'andrew marshall',
     'james moorin'
 ]
 
 # Add alternative names for players (lowercase)
 def deduplicateNames(name):
     name = playerStatsHelper.standardiseName(name)
-    if name == 'duncan mc phail':
-        name = 'duncan mcphail'
     if name == 'andrew marshall':
         name = 'andy marshall'
     if name == 'stuart watson':
         name = 'stewart watson'
-    if name == 'cliff brogie':
-        name = 'clifford brogie'
-    if name == 'andrew waller':
-        name = 'andy waller'
-    if name == 'don shaw':
-        name = 'donald shaw'
     if name == 'james moorin':
         name = 'jim moorin'
     if name == 'philip thornton':
@@ -101,39 +91,31 @@ def deduplicateNames(name):
     return name
 
 # Add players who play for other teams in leagues the team player in (lowercase)
+# TODO add players to this
 traitorPlayers = {
-    'Monday Combined Leeds': ['neil porter'],
-    'Tuesday Vets Leeds': [],
-    'Tuesday Leeds': ['neil porter'],
-    'Wednesday Half Holiday Leeds': ['clifford brogie'],
-    'Wednesday Pairs AireWharfe': [],
-    'Thursday Vets Leeds': ['neil porter'],
-    'Saturday Leeds': ['clifford brogie', 'neil porter']
+    'Monday Bradford': [''],
+    'Monday AireWharfe': ['stewart watson', 'lee wider', 'paul jacques'],
+    'Tuesday Mirfield': ['stewart watson'],
+    'Wednesday Half Holiday Bradford': [''],
+    'Wednesday Spen Valley': [''],
+    'Thursday Vets Bradford': [''],
+    'Saturday Bradford': ['robbie ellis'],
 }
 
 # Other leagues that players play in for other teams (lowercase)
 otherLeagues = [
-    'Tuesday Mirfield', 
-    'Wednesday Spen Valley',
-    'Monday AireWharfe',
     'Tuesday AireWharfe',
-    'Monday Bradford',
-    'Wednesday Half Holiday Bradford',
-    'Thursday Vets Bradford', 
-    'Saturday Bradford'
+    'Monday Combined Leeds',
+    'Tuesday Vets Leeds',
+    'Tuesday Leeds',
+    'Wednesday Half Holiday Leeds',
+    'Wednesday Pairs AireWharfe', 
+    'Thursday Vets Leeds', 
+    'Saturday Leeds',
 ]
 
 # Other teams that players play for (lowercase)
 otherTeams = [
-    'new wortley', 
-    'new armley', 
-    'pudsey', 
-    'pudsey park', 
-    'burley', 
-    'wibsey', 
-    'littlemoor', 
-    'farsley', 
-    'bramley'
 ]
 
 allDays = teamDays + otherLeagues

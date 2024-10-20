@@ -1,5 +1,5 @@
 import re
-import teamDetailsLittlemoor as teamDetails
+import teamDetails
 import teamStatsHelper
 import sanityChecks
 import utils
@@ -210,7 +210,7 @@ dataToExport = {
     'statsYear': utils.year,
 }
 
-filename = 'src/data/bowlsStatsLittlemoor' + utils.year + '.json'
+filename = 'src/data/bowlsStats' + utils.year + '.json'
 previousFileSize = utils.returnFileSize(filename)
 utils.saveFile(filename, dataToExport)
 
