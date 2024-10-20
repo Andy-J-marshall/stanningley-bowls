@@ -29,16 +29,19 @@ body {
 @media (min-width: 1200px) {
   .carousel {
     width: 100%;
+    height: auto;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1275px) {
   .carousel {
-    width: 70%;
+    width: 67%;
+    height: auto;
   }
 }
 
 .carousel-item img {
   width: 100%;
+  height: auto;
 }
 
 .navigation {
