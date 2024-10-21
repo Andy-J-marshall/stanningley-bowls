@@ -2,6 +2,7 @@ import { Card } from 'react-bootstrap';
 import agmImage from '../images/news/agm-2024.png';
 import volunteeringImage from '../images/news/volunteering.png';
 
+// TODO improve image dimensions
 function News() {
     return (
         <div id="news">
@@ -24,7 +25,10 @@ function News() {
             <Card bg="light">
                 <Card.Body>
                     <Card.Title>VOLUNTEER DAYS</Card.Title>
-                    <Card.Text>We are looking for volunteers to help keep the club clean and tidy over winter.</Card.Text>
+                    <Card.Text>
+                        We are looking for volunteers to help keep the club
+                        clean and tidy over winter.
+                    </Card.Text>
                     <Card.Img
                         style={{ width: '100%', height: 'auto' }}
                         variant="bottom"

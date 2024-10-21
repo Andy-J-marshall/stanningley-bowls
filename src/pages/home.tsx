@@ -13,6 +13,7 @@ function Home() {
         <div className="center" id="home-page">
             <Header />
             <News />
+            {/* // improve image dimensions */}
             <Nav defaultActiveKey="/home" className="tabs">
                 <Carousel fade>
                     <Carousel.Item>
