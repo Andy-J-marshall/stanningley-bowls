@@ -60,6 +60,7 @@ function Home() {
             </Nav>
             <br />
             <hr />
+            <br />
             <Supporters />
         </div>
     );
