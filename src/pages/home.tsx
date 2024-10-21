@@ -7,9 +7,11 @@ function Home() {
     return (
         <div className="center" id="home-page">
             <Header />
-            <News />
             <HomePageCarousel />
-            <hr />
+            <br />
+            <br />
+            <News />
+            <br />
             <Supporters />
         </div>
     );

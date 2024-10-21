@@ -39,7 +39,7 @@ function TeamInfo() {
     return (
         <div id="team-info" className="page-component center">
             <h1>TEAM INFORMATION</h1>
-            <Row sm={1} md={2} lg={3} xl={4} className="g-4 tabs">
+            <Row sm={1} md={2} lg={3} className="g-4 tabs">
                 {teams.map((team, idx) => (
                     <Col key={idx}>
                         <Card bg="light" style={{ width: '18rem' }}>
