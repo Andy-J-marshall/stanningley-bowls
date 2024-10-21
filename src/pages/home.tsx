@@ -60,9 +60,7 @@ function Home() {
                     </Carousel.Item>
                 </Carousel>
             </Nav>
-            <br />
             <hr />
-            <br />
             <Supporters />
         </div>
     );
