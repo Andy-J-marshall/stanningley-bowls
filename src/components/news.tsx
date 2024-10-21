@@ -11,7 +11,7 @@ function News() {
             <Row
                 xs={1}
                 sm={1}
-                md={2}
+                md={2} //  TODO this looks weird when only 2 appear
                 lg={3}
                 className="g-4 align-items-start tabs"
             >
@@ -22,7 +22,7 @@ function News() {
                 />
                 <NewsItem
                     title="VOLUNTEER DAYS"
-                    text="We are looking for volunteers to help keep the club clean and tidy over winter. Regular volunteer days are planed every other Saturday between 10am and 12pm. Members and non-members are welcome to help out."
+                    text="Volunteer days are planned to help keep the club clean and tidy over winter. Regular volunteer days are planed every other Saturday between 10am and 12pm. Members and non-members are welcome to help out."
                     imgSrc={volunteeringImage}
                 />
                 <NewsItem
