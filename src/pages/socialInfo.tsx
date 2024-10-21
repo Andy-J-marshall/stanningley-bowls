@@ -1,5 +1,6 @@
-import socialBowlingImg from '../images/websiteImages/social-bowling2.webp';
-import groupBowlingImg from '../images/websiteImages/group-bowling.webp';
+// TODO improve image size
+import socialBowlingImg from '../images/websiteImages/social-bowling2.png';
+import groupBowlingImg from '../images/websiteImages/group-bowling.png';
 
 function SocialInfo() {
     return (

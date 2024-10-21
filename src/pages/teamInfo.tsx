@@ -1,11 +1,11 @@
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import monImg from '../images/websiteImages/mon-team.webp';
-import tuesVetsImg from '../images/websiteImages/tuesVets-team.webp';
-import thurVetsImg from '../images/websiteImages/thursVets-team.webp';
-import satImg from '../images/websiteImages/sat-team.webp';
-import tuesImg from '../images/websiteImages/tues-team.webp';
-import wedImg from '../images/websiteImages/wed-team.webp';
-import wedPairsImg from '../images/websiteImages/wedPairs-team.webp';
+import monImg from '../images/websiteImages/mon-team.png';
+import tuesVetsImg from '../images/websiteImages/tuesVets-team.png';
+import thurVetsImg from '../images/websiteImages/thursVets-team.png';
+import satImg from '../images/websiteImages/sat-team.png';
+import tuesImg from '../images/websiteImages/tues-team.png';
+import wedImg from '../images/websiteImages/wed-team.png';
+import wedPairsImg from '../images/websiteImages/wedPairs-team.png';
 import { config } from '../config';
 
 const { teams } = config;

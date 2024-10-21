@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 import Supporters from '../components/supporters';
 import Header from '../components/header';
 import News from '../components/news';
-import statsImg from '../images/websiteImages/carousel-01.webp';
-import membershipImg from '../images/websiteImages/carousel-02.webp';
-import eventsImg from '../images/websiteImages/carousel-05.webp';
+import statsImg from '../images/websiteImages/carousel-01.png';
+import membershipImg from '../images/websiteImages/carousel-02.png';
+import eventsImg from '../images/websiteImages/carousel-05.png';
 import { config } from '../config';
 
 function Home() {
@@ -13,7 +13,8 @@ function Home() {
         <div className="center" id="home-page">
             <Header />
             <News />
-            {/* // improve image dimensions */}
+            {/* TODO improve image size */}
+            {/* TODO improve image dimensions */}
             <Nav defaultActiveKey="/home" className="tabs">
                 <Carousel fade>
                     <Carousel.Item>
