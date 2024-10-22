@@ -9,7 +9,6 @@ export interface PlayerStatsToCheck {
 
 export class PlayerStatsPage {
     private readonly page: Page;
-    private readonly searchButton: Locator;
     private readonly backButton: Locator;
     private readonly searchBar: Locator;
     private readonly playerListInDropdown: Locator;
@@ -44,7 +43,6 @@ export class PlayerStatsPage {
             '#search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
         );
         this.playerListInDropdown = page.locator('#search');
-        this.searchButton = page.locator('#search-button');
         this.backButton = page.locator('#back-button');
         this.playerStatsItem = page.locator(
             '#detailed-player-stats .list-group-item'
@@ -101,10 +99,6 @@ export class PlayerStatsPage {
     async searchForPlayer(playerName: string) {
         await this.searchBar.fill(playerName);
         await this.playerListInDropdown.click();
-    }
-
-    async clickSearch() {
-        await this.searchButton.click();
     }
 
     async clickBackToSummary() {
