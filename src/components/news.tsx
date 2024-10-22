@@ -16,7 +16,7 @@ function News() {
                 />
                 <NewsItem
                     title="VOLUNTEERING"
-                    firstParagraph="Volunteer days are planned to help keep the club clean and tidy over winter. These will be every other Saturday between 10am and 12pm. Members and non-members are welcome to help out."
+                    firstParagraph="Volunteer days are planned to help keep the club clean and tidy over winter. These will be every other Saturday between 10am and 12pm, starting on the 19th October. Members and non-members are welcome to help out."
                     imgSrc={volunteeringImage}
                 />
                 <NewsItem
