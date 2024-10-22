@@ -142,6 +142,13 @@ export interface WrapperProps {
     children: React.ReactNode;
 }
 
+export type NewsItemProps = {
+    title: string;
+    firstParagraph: string;
+    secondParagraph?: string;
+    imgSrc: string;
+};
+
 export interface PlayerStatsTeamsProps {
     stats: {
         allTeamStats: {
