@@ -276,7 +276,6 @@ function PlayerStats(props: PlayerStatsProps) {
             />
             <br />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
-            <br />
         </div>
     );
 }
