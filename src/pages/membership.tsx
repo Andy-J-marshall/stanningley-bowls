@@ -1,5 +1,5 @@
 import { config } from '../config';
-import socialBowlingImg from '../images/websiteImages/social-bowling.webp';
+import socialBowlingImg from '../images/websiteImages/social-bowling.png';
 
 const { leedsCouncilFee, bowlingPriceOnly } = config.membership;
 

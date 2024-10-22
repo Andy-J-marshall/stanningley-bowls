@@ -49,9 +49,6 @@ function Search(props: SearchProps) {
                     )}
                 </Typeahead>
             </Form.Group>
-            <Button id="search-button" variant="light" type="submit">
-                Search
-            </Button>
             {searchedName && (
                 <Button
                     id="back-button"
@@ -63,7 +60,7 @@ function Search(props: SearchProps) {
                     variant="secondary"
                     onClick={closeButtonCallback}
                 >
-                    Back to summary
+                    BACK TO SUMMARY
                 </Button>
             )}
         </Form>

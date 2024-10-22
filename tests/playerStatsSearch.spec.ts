@@ -24,8 +24,6 @@ test.beforeEach(async ({ page }) => {
 test('All players appear by default', async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
-    await playerStatsPage.clickSearch();
-    await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
 test(`Stats search bar can show all player stats`, async () => {
@@ -38,14 +36,12 @@ test(`Stats search bar can show all player stats`, async () => {
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
-test(`Clicking search with no player returns all stats`, async () => {
+test(`Clicking back to summary button returns all stats`, async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.searchForPlayer('Alyssa Randell');
     await playerStatsPage.checkPlayerIsReturned();
 
-    await playerStatsPage.clickSearch();
-    await playerStatsPage.checkPlayerIsReturned();
-    await playerStatsPage.clickSearch();
+    await playerStatsPage.clickBackToSummary();
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 

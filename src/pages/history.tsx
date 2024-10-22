@@ -7,8 +7,8 @@ import {
     ListGroupItem,
 } from 'react-bootstrap';
 import { config } from '../config';
-import historicTeamImage from '../images/websiteImages/historic-team-photo.webp';
-import historicStatsImage from '../images/websiteImages/historic-stats.webp';
+import historicTeamImage from '../images/websiteImages/historic-team-photo.png';
+import historicStatsImage from '../images/websiteImages/historic-stats.png';
 import clubCupWinners from '../data/clubCupWinners.json';
 
 const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;

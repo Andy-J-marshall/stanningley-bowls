@@ -26,19 +26,6 @@ body {
   width: 100%;
 }
 
-@media (min-width: 1200px) {
-  .carousel {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 1275px) {
-  .carousel {
-    width: 67%;
-    height: auto;
-  }
-}
-
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -49,13 +36,13 @@ body {
 }
 
 .page-component {
-  margin-top: 4.1rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
-  width: 96%;
+  width: 90%;
 }
 
 .page-year-dropdown-component {
-  margin-top: 4rem;
+  margin-top: 3.8rem;
 }
 
 #footer {
@@ -103,10 +90,6 @@ ul {
   #search-form {
     width: 55%;
   }
-}
-
-.upcoming-fixtures {
-  width: 100%;
 }
 
 .nav-tabs .nav-link {
