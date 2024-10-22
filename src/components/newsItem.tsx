@@ -25,10 +25,10 @@ function NewsItem(props) {
                         <br />
                         {!open && (
                             <Button
-                                variant="secondary"
+                                variant="light"
                                 onClick={() => setOpen(true)}
                             >
-                                SHOW MORE...
+                                READ MORE...
                             </Button>
                         )}
                         <Collapse in={open}>
@@ -36,10 +36,10 @@ function NewsItem(props) {
                         </Collapse>
                         {open && (
                             <Button
-                                variant="secondary"
+                                variant="light"
                                 onClick={() => setOpen(false)}
                             >
-                                HIDE...
+                                CLOSE
                             </Button>
                         )}
                     </Card.Body>
