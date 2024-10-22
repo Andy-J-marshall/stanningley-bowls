@@ -115,7 +115,7 @@ function App() {
                     <Route
                         path="/results"
                         element={
-                            <div className="page-year-dropdown-component center">
+                            <div className="stats-data-page-component center">
                                 <Results
                                     stats={teamStats}
                                     statsCallback={statsSelectCallback}
@@ -127,7 +127,7 @@ function App() {
                     <Route
                         path="/stats/player"
                         element={
-                            <div className="page-year-dropdown-component center">
+                            <div className="stats-data-page-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
@@ -148,7 +148,7 @@ function App() {
                     <Route
                         path="/stats/team"
                         element={
-                            <div className="page-year-dropdown-component center">
+                            <div className="stats-data-page-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
@@ -164,7 +164,7 @@ function App() {
                     <Route
                         path="/stats/records"
                         element={
-                            <div className="page-year-dropdown-component center">
+                            <div className="stats-data-page-component center">
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}

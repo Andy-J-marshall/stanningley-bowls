@@ -38,11 +38,12 @@ body {
 .page-component {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  width: 90%;
+  width: 85%;
 }
 
-.page-year-dropdown-component {
+.stats-data-page-component {
   margin-top: 3.8rem;
+  margin-bottom: 2rem;
 }
 
 #footer {
