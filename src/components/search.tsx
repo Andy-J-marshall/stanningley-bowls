@@ -60,7 +60,7 @@ function Search(props: SearchProps) {
                     variant="secondary"
                     onClick={closeButtonCallback}
                 >
-                    Back to summary
+                    BACK TO SUMMARY
                 </Button>
             )}
         </Form>
