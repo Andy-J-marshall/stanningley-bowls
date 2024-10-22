@@ -117,7 +117,7 @@ Update `public` folder:
 
 Update all images in the `/images` folder
 
-Update the `History.tsx` component, including the links in the config file, and the `clubCupWinners.json` file
+Link the Fixtures calendar to the correct one.
 
 Update `homepage` in `package.json`
 
@@ -125,13 +125,22 @@ Check `bowlsTeam.py`/`bowlsCombined.py`:
 
 - Is the `cupText` array correct of the leagues the team is in?
 
-Update `src/config.ts`:
+Update `src/config.ts` e.g.
 
-- all data in this file
 - membership info
-- home page
-- contact page info
-- all images
+- social links
+- team names
+- team info
+
+Update `contact.tsx` page with correct information.
+
+Update `membership.tsx` and `socialInfo.tsx` pages.
+
+Update the `History.tsx` component, including the links in the config file, and the `clubCupWinners.json` file
+
+Update news items in `news.tsx`.
+
+Update list of supporters and images items in `supporters.tsx`
 
 Update tests:
 
@@ -139,7 +148,6 @@ Update tests:
 
 Update team info in all components:
 
-- Change hardcoded references and variable names (e.g. "Monday", "Tuesday", "Thursday", "Saturday") to the correct team names
 - Add/remove teams if there are more/fewer teams than Stanningley in `records` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `players` component
 - Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component
