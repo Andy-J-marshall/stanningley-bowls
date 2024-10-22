@@ -1,11 +1,11 @@
 import { Nav, Carousel, Image, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import statsImg from '../images/carousel/carousel-4.png';
-import membershipImg from '../images/carousel/carousel-2.png';
-import eventsImg from '../images/carousel/carousel-3.png';
+import statsImg from '../images/carousel/carousel-04.png';
+import membershipImg from '../images/carousel/carousel-02.png';
+import eventsImg from '../images/carousel/carousel-03.png';
 import { config } from '../config';
 
-// TODO improve image dimensions?
+// TODO delete image files not using
 
 function HomePageCarousel() {
     return (
