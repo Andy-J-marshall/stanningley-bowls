@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Button, Card, Col, Collapse } from 'react-bootstrap';
+import { NewsItemProps } from '../types/interfaces';
 
-// TODO add a link to FB event?
-// TODO add type for props
-function NewsItem(props) {
+function NewsItem(props: NewsItemProps) {
     const title = props.title.toUpperCase();
-    const text = props.text;
+    const text = props.firstParagraph;
+    const text2 = props.secondParagraph;
     const imgSrc = props.imgSrc;
 
     const [open, setOpen] = useState(false);
@@ -32,7 +32,10 @@ function NewsItem(props) {
                             </Button>
                         )}
                         <Collapse in={open}>
-                            <Card.Text>{text}</Card.Text>
+                            <div>
+                                <Card.Text>{text}</Card.Text>
+                                <Card.Text>{text2}</Card.Text>
+                            </div>
                         </Collapse>
                         {open && (
                             <Button
