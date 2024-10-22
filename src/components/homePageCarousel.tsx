@@ -5,8 +5,6 @@ import membershipImg from '../images/carousel/carousel-02.png';
 import eventsImg from '../images/carousel/carousel-03.png';
 import { config } from '../config';
 
-// TODO delete image files not using
-
 function HomePageCarousel() {
     return (
         <Container fluid>
