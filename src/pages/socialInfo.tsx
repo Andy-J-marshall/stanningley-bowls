@@ -19,6 +19,7 @@ function SocialInfo() {
                 <img style={{ width: '95%' }} src={socialBowlingImg}></img>
             </div>
             <div id="group-info">
+                <br />
                 <h1>GROUP SESSIONS</h1>
                 <p>
                     We are happy to accommodate groups of up to 15 with
