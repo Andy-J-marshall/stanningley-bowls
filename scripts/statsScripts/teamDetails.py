@@ -115,8 +115,7 @@ otherLeagues = [
 ]
 
 # Other teams that players play for (lowercase)
-otherTeams = [
-]
+otherTeams = [ 'stanningley' ]
 
 allDays = teamDays + otherLeagues
 teamsTracking = teamNames + otherTeams

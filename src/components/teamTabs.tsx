@@ -7,6 +7,8 @@ function TeamTabs(props: TeamTabsProps) {
 
     return (
         <div>
+            {/* TODO this isn't working for half holiday and spen teams e.g. team stats/records */}
+            {/* TODO also AW Mon vs Bradford Mon */}
             {teamComponents && (
                 <Tabs
                     defaultActiveKey="Combined"

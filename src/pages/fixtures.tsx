@@ -1,5 +1,6 @@
 function Fixtures() {
     return (
+        // TODO update this to use the new google calendar
         <div id="fixture" className="center page-component">
             <h1>FIXTURES</h1>
             <iframe

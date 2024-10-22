@@ -5,6 +5,9 @@ import { ResultsProps } from '../types/interfaces';
 
 const teamName = config.teamNames.shortName.toLowerCase();
 
+// AW Mon results showing incorrect opponent name
+// Spen results showing incorrect opponent name and score
+
 function Results(props: ResultsProps) {
     const stats = props.stats;
     const statsCallback = props.statsCallback;

@@ -8,6 +8,7 @@ import wedImg from '../images/websiteImages/wed-team.png';
 import wedPairsImg from '../images/websiteImages/wedPairs-team.png';
 import { config } from '../config';
 
+// TODO need to update all images for every page
 const { teams } = config;
 
 teams.forEach((team) => {
