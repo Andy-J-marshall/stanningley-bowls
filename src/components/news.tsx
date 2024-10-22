@@ -11,7 +11,7 @@ function News() {
             <Row
                 xs={1}
                 sm={1}
-                md={2} //  TODO this looks weird when only 2 appear
+                md={3}
                 lg={3}
                 className="g-4 align-items-start tabs"
             >
