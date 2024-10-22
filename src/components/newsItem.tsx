@@ -15,7 +15,7 @@ function NewsItem(props) {
             <Col>
                 <Card bg="light">
                     <Card.Body>
-                        <h3>{title}</h3>
+                        <h4>{title}</h4>
                         <Card.Img
                             style={{ width: '100%', height: 'auto' }}
                             variant="top"

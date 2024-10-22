@@ -10,7 +10,7 @@ import { config } from '../config';
 function HomePageCarousel() {
     return (
         <Container fluid>
-            <Nav defaultActiveKey="/home" className="tabs">
+            <Nav defaultActiveKey="/home">
                 <Carousel fade>
                     <Carousel.Item>
                         <Image src={statsImg} fluid />

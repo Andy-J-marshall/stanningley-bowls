@@ -8,11 +8,13 @@ function Home() {
     return (
         <div className="center" id="home-page">
             <Header />
-            <HomePageCarousel />
-            <br />
-            <News />
-            <br />
-            <Supporters />
+            <div style={{ width: '93%' }} className="center">
+                <HomePageCarousel />
+                <br />
+                <News />
+                <br />
+                <Supporters />
+            </div>
         </div>
     );
 }
