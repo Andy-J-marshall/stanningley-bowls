@@ -1,5 +1,6 @@
 import { Row } from 'react-bootstrap';
 import agmImage from '../images/news/agm-2024.png';
+import ladiesTeamImage from '../images/news/ladies-team.png';
 import volunteeringImage from '../images/news/volunteering.png';
 import NewsItem from './newsItem';
 
@@ -28,7 +29,7 @@ function News() {
                 <NewsItem
                     title="LADIES TEAM"
                     text="We are looking to enter a team into the Leeds Ladies League for the 2025 season. If you are interested in playing then please contact a club member. No experience is necessary."
-                    imgSrc={volunteeringImage}
+                    imgSrc={ladiesTeamImage}
                 />
             </Row>
         </div>
