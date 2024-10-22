@@ -187,4 +187,3 @@ Consider whether to add league reports for any non-tracked leagues e.g. Barkston
 * Home/away/cup breakdown on stat summary options
 * All years detailed stats (not just summary):
 * Players best ever season
-* Fix or remove Google analytics
