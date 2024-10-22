@@ -10,7 +10,6 @@ function Home() {
             <Header />
             <HomePageCarousel />
             <br />
-            <br />
             <News />
             <br />
             <Supporters />
