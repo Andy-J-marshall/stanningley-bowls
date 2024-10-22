@@ -7,7 +7,6 @@ import {
     ListGroupItem,
 } from 'react-bootstrap';
 import { config } from '../config';
-// TODO improve file size
 import historicTeamImage from '../images/websiteImages/historic-team-photo.png';
 import historicStatsImage from '../images/websiteImages/historic-stats.png';
 import clubCupWinners from '../data/clubCupWinners.json';
