@@ -19,7 +19,7 @@ function History() {
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
             <p>
-                There has been a crown green bowling at {fullName} for over 100
+                There has been crown green bowling at {fullName} for over 100
                 years. Below is a selection of photos, statistics, records and
                 trophies over that period.
             </p>
