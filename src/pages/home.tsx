@@ -7,12 +7,16 @@ function Home() {
     return (
         <div className="center" id="home-page">
             <Header />
-            <div style={{ width: '94%' }} className="center">
+            <div
+                style={{ width: '98%', overflowX: 'hidden' }}
+                className="center"
+            >
                 <HomePageCarousel />
                 <br />
                 <News />
                 <br />
                 <Supporters />
+                <br />
             </div>
         </div>
     );
