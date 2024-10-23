@@ -1,45 +1,51 @@
 import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.png';
 
-const { leedsCouncilFee, bowlingPriceOnly } = config.membership;
+const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } = config.membership;
 
 function Membership() {
     return (
         <div id="members" className="center page-component">
             <h1>MEMBERSHIP</h1>
+            <p>{config.teamNames.fullName} welcomes new members of any age or experience level.</p>
             <p>
-                {config.teamNames.fullName} welcomes new members of any age.
-                Fees apply to adults over 16, children are welcome but must be
-                accompanied by an adult member. Membership is valid per season
-                and runs from 1st April until 30th September. Please{' '}
+                Fees apply to anyone over 16; children are welcome but must be
+                accompanied by an adult member.
+            </p>
+            <p>
+                Membership is valid per season and runs from 1st April until
+                30th September.
+            </p>
+            <p>
+                Please{' '}
                 <a style={{ textDecoration: 'none' }} href="/#/contact">
-                    contact
+                    contact us
                 </a>{' '}
-                us or speak to us at one of the open sessions to apply.
+                or speak to a member if you are interested in joining.
             </p>
             <br />
-            <h3>FULL BOWLING MEMBERSHIP</h3>
+            <h3>FULL BOWLING MEMBERSHIP - £{bowlingPrice}</h3>
             <p>
-                Team players and/ or anytime green access Leeds Council season
-                fee - £{leedsCouncilFee}* + membership fee - £{bowlingPriceOnly}
-                .
+                For members who want to play in one of our teams and have full
+                green access.
             </p>
             <p>
-                *If you have already paid your green fee at another Leeds Parks
-                bowling club then you only need to pay £{bowlingPriceOnly},
-                please bring proof you have paid this at another club.
+                This includes the £{bowlingPriceOnly} membership fee plus the £{leedsCouncilFee}{' '}
+                Leeds Council season fee.
+            </p>
+            <p>
+                If you have already paid your annual green fee at another Leeds
+                Parks bowling club then you only need to pay the £
+                {bowlingPriceOnly} membership fee.
             </p>
             <br />
-            <h3>SOCIAL MEMBERSHIP</h3>
-            <p>For new/ infrequent bowlers</p>
+            <h3>SOCIAL MEMBERSHIP - £{socialPrice}</h3>
             <p>
-                Access to social bowling sessions and club tournaments only.
-                Bowl hire included, no session fees. Under 16’s are free but
-                must be accompanied by an adult member. Membership fee - £20 per
-                person or £30 joint membership.
+                For new or infrequent bowlers who want to attend social sessions
+                and club tournaments.
             </p>
-            <p>~ Optional non-bowling membership - £10 ~</p>
-            <img style={{ width: '95%' }} src={socialBowlingImg}></img>
+            <p>Free equipment hire is available.</p>
+            <img style={{ width: '98%' }} src={socialBowlingImg}></img>
         </div>
     );
 }
