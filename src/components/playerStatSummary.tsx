@@ -12,7 +12,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     playerStats = playerStats.filter((player) => player.games > 0);
 
     let style: CSSProperties;
-    let href: string | undefined;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
@@ -202,7 +201,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                             <td>
                                 <a
                                     style={style}
-                                    href={href}
+                                    href='/#/stats/player'
                                     onClick={displayPlayer}
                                 >
                                     {capitalizeText([player.player])}
@@ -239,13 +238,11 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             textDecoration: 'underline',
             color: '#004558',
         };
-        href = '/#/stats/player';
     } else {
         style = {
             textDecoration: 'none',
             color: 'black',
         };
-        href = '';
     }
 
     if (playerStats) {
