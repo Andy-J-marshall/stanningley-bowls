@@ -8,7 +8,7 @@ import {
 import fs from 'fs';
 
 const year = new Date().getFullYear();
-const previousYearBool = false; // Set to true to get data from previous year
+const previousYearBool = false; // Set to true to get data from previous year and change year variable to the year you want
 
 let queryParam = '';
 
@@ -82,6 +82,10 @@ const leagues = [
         url: `/Bradford-Sat${queryParam}`,
     },
     // Other leagues of interest
+    // {
+    //     day: 'Tadcaster Thursday',
+    //     url: `/Tadcaster${queryParam}`,
+    // },
     // {
     //   day: 'Leeds Ladies',
     //   url: `/LeedsLadies${queryParam}`,

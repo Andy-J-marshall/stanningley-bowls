@@ -203,4 +203,3 @@ Update team info in all components:
 -   Players best ever season
 -   Include winter league option
 -   Add Guiseley/ Wetherby winter league?
--   Add Tad league?
