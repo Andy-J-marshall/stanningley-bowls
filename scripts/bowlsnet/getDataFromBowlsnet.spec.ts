@@ -102,6 +102,14 @@ const leagues = [
     //   day: 'Saturday Barkston Ash',
     //   url: `/BarkstonAsh${queryParam}`,
     // },
+    // {
+    //   day: 'Guiseley Winter',
+    //   url: `/GuiseleyWinter${queryParam}`,
+    // },
+    // {
+    //   day: 'Wetherby Autumn',
+    //   url: `/WetherbyAutumn${queryParam}`,
+    // },
 ];
 
 for (const league of leagues) {
