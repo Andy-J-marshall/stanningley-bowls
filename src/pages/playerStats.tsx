@@ -53,7 +53,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
+        currentYear !== Number(stats.statsYear) && !showStatsSinceStart ? `${stats.statsYear}` : '';
 
     useEffect(() => {
         if (!loaded) {
@@ -155,10 +155,6 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoading(false);
     };
 
-    function displayPlayerCallback(playerName: string) {
-        setSearchedPlayerName(playerName);
-    }
-
     function closeButtonCallback() {
         setValue(['']);
         setSearchedPlayerName('');
@@ -237,7 +233,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 <div>
                     <br />
                     <PlayerStatSummary
-                        callback={displayPlayerCallback}
+                        callback={setSearchedPlayerName}
                         playerStats={statsToDisplayArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
