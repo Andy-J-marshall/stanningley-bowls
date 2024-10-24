@@ -1,4 +1,8 @@
-import { TeamResultsStatsFile } from "../types/interfaces";
+import {
+    FullStatsFile,
+    PlayerResultsStatsFile,
+    TeamResultsStatsFile,
+} from '../types/interfaces';
 
 export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     let combinedAwayWins = 0;
@@ -88,4 +92,79 @@ export function findBiggestWin(playerResults: string[]): string {
         });
     }
     return bestWin;
+}
+
+export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
+    const collatedStats: PlayerResultsStatsFile = {};
+
+    statsArray.forEach((yearStats) => {
+        Object.keys(yearStats.playerResults).forEach((player) => {
+            if (!collatedStats[player]) {
+                collatedStats[player] = { ...yearStats.playerResults[player] };
+            } else {
+                const playerStats = collatedStats[player];
+                const yearPlayerStats = yearStats.playerResults[player];
+
+                playerStats.totalAgg += yearPlayerStats.totalAgg;
+                playerStats.totalAggAgainst += yearPlayerStats.totalAggAgainst;
+                playerStats.availableAgg += yearPlayerStats.availableAgg;
+                playerStats.availablePairsAgg +=
+                    yearPlayerStats.availablePairsAgg;
+                playerStats.availableHomeAgg +=
+                    yearPlayerStats.availableHomeAgg;
+                playerStats.availableAwayAgg +=
+                    yearPlayerStats.availableAwayAgg;
+                playerStats.availablePairsHomeAgg +=
+                    yearPlayerStats.availablePairsHomeAgg;
+                playerStats.availablePairsAwayAgg +=
+                    yearPlayerStats.availablePairsAwayAgg;
+                playerStats.totalPairsAgg += yearPlayerStats.totalPairsAgg;
+                playerStats.totalPairsAggAgainst +=
+                    yearPlayerStats.totalPairsAggAgainst;
+                playerStats.totalHomeAgg += yearPlayerStats.totalHomeAgg;
+                playerStats.totalHomeAggAgainst +=
+                    yearPlayerStats.totalHomeAggAgainst;
+                playerStats.totalPairsHomeAgg +=
+                    yearPlayerStats.totalPairsHomeAgg;
+                playerStats.totalPairsHomeAggAgainst +=
+                    yearPlayerStats.totalPairsHomeAggAgainst;
+                playerStats.totalAwayAgg += yearPlayerStats.totalAwayAgg;
+                playerStats.totalAwayAggAgainst +=
+                    yearPlayerStats.totalAwayAggAgainst;
+                playerStats.totalPairsAwayAgg +=
+                    yearPlayerStats.totalPairsAwayAgg;
+                playerStats.totalPairsAwayAggAgainst +=
+                    yearPlayerStats.totalPairsAwayAggAgainst;
+                playerStats.homeWins += yearPlayerStats.homeWins;
+                playerStats.homeLosses += yearPlayerStats.homeLosses;
+                playerStats.awayWins += yearPlayerStats.awayWins;
+                playerStats.awayLosses += yearPlayerStats.awayLosses;
+                playerStats.cupWins += yearPlayerStats.cupWins;
+                playerStats.cupLosses += yearPlayerStats.cupLosses;
+                playerStats.pairWins += yearPlayerStats.pairWins;
+                playerStats.pairLosses += yearPlayerStats.pairLosses;
+                playerStats.pairHomeWins += yearPlayerStats.pairHomeWins;
+                playerStats.pairHomeLosses += yearPlayerStats.pairHomeLosses;
+                playerStats.pairAwayWins += yearPlayerStats.pairAwayWins;
+                playerStats.pairAwayLosses += yearPlayerStats.pairAwayLosses;
+                playerStats.pairCupWins += yearPlayerStats.pairCupWins;
+                playerStats.pairCupLosses += yearPlayerStats.pairCupLosses;
+                playerStats.totalGamesPlayed +=
+                    yearPlayerStats.totalGamesPlayed;
+                // TODO fix. Or remove and hide team info?
+                // playerStats.dayPlayed = [
+                //     ...new Set([
+                //         ...playerStats.dayPlayed,
+                //         ...yearPlayerStats.dayPlayed,
+                //     ]),
+                // ];
+                playerStats.results = [
+                    ...playerStats.results,
+                    ...yearPlayerStats.results,
+                ];
+            }
+        });
+    });
+
+    return collatedStats;
 }

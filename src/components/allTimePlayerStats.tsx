@@ -9,12 +9,16 @@ import {
     PlayerStatsSummary,
 } from '../types/interfaces';
 
+// TODO rename to AllTimePlayerStatsSummary
+// TODO or might be able to get rid of this component and just use PlayerStatSummary?
 function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
     const statsArray = props.statsArray;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
+    // const [searchedPlayerName, setSearchedPlayerName] = useState('');
 
+    // TODO move this to a helper function?
     const statsToDisplayArray: PlayerStatsSummary[] = [];
     let playerNames: string[] = [];
 
@@ -92,6 +96,10 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
         statsToDisplayArray.push(stats);
     });
 
+    // function displayPlayerCallback(playerName: string) {
+    //     setSearchedPlayerName(playerName);
+    // }
+
     useEffect(() => {
         const playersWithGames = statsToDisplayArray.filter(
             (player) => player.games > 0
@@ -103,6 +111,7 @@ function AllTimePlayerStats(props: AllTimePlayerStatsProps) {
         <div id="all-time-player-stats" className="center">
             <h3 style={{ padding: '2rem 0 0 0' }}>STATS SINCE 2013</h3>
             <PlayerStatSummary
+                // callback={displayPlayerCallback}
                 playerStats={statsToDisplayArray}
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}

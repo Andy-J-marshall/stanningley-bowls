@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from 'react';
+import { useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatSummaryProps } from '../types/interfaces';
@@ -10,9 +10,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const showPairsOnlyBool = props.showPairsOnly;
 
     playerStats = playerStats.filter((player) => player.games > 0);
-
-    let style: CSSProperties;
-    let href: string | undefined;
 
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
@@ -201,8 +198,11 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                         <tr>
                             <td>
                                 <a
-                                    style={style}
-                                    href={href}
+                                    style={{
+                                        textDecoration: 'underline',
+                                        color: '#004558',
+                                    }}
+                                    href="/#/stats/player"
                                     onClick={displayPlayer}
                                 >
                                     {capitalizeText([player.player])}
@@ -234,19 +234,19 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         });
     }
 
-    if (displayPlayerStatsCallback) {
-        style = {
-            textDecoration: 'underline',
-            color: '#004558',
-        };
-        href = '/#/stats/player';
-    } else {
-        style = {
-            textDecoration: 'none',
-            color: 'black',
-        };
-        href = '';
-    }
+    // if (displayPlayerStatsCallback) {
+    //     style = {
+    //         textDecoration: 'underline',
+    //         color: '#004558',
+    //     };
+    //     href = '/#/stats/player';
+    // } else {
+    //     style = {
+    //         textDecoration: 'none',
+    //         color: 'black',
+    //     };
+    //     href = '';
+    // }
 
     if (playerStats) {
         return (

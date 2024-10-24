@@ -10,6 +10,7 @@ import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
+import { collateStatsFromAllYears } from '../helpers/statsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -32,7 +33,16 @@ function PlayerStats(props: PlayerStatsProps) {
     const [loading, setLoading] = useState(false);
 
     const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase());
+    const playerSearchNameArray = players.map((p) => p.toUpperCase()); // TODO need to move this, or use state?
+    // TODO fix
+    // const a: string[] = [];
+    // combinedStatsForEveryYearArray.forEach(s => {
+    //     const allYearsPlayers = Object.keys(s.playerResults);
+    //     const players = allYearsPlayers.map((p) => p.toUpperCase());
+    //     console.log(players);
+    //     a.push(players);
+    // });
+    // console.log(a)
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
@@ -100,7 +110,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function searchForPlayer(searchedName: string) {
-        setShowStatsSinceStart(false);
         setSearchedPlayerName(searchedName);
 
         const validPlayer =
@@ -181,6 +190,40 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
+    {
+        /* TODO change */
+    }
+    function showPlayerStatsSinceStart(playerName: string) {
+        console.log("HERE");
+        // TODO add check back in
+        // const validPlayer = players.find((player) => player == playerName);
+
+        // TODO would need a way of generating the stats to use for all years
+        const s = collateStatsFromAllYears(allYearsStatsToUse);
+        
+        // if (validPlayer) {
+        return (
+            <ListGroup>
+                <IndividualPlayerStats
+                    key={playerName}
+                    player={playerName}
+                    name={playerName}
+                    playersStats={s} // TODO change
+                    showStatSummary={showStatSummary}
+                ></IndividualPlayerStats>
+            </ListGroup>
+        );
+        // } else {
+        //     return (
+        //         searchedPlayerName.toLowerCase() !== 'show all' && (
+        //             <h2 style={{ padding: '1rem 0 4rem 0' }}>
+        //                 Player not found
+        //             </h2>
+        //         )
+        //     );
+        // }
+    }
+
     function returnStatsTable() {
         const gamesPlayedThisYear = statsToDisplayArray.find(
             (player) => player.games > 0
@@ -216,16 +259,14 @@ function PlayerStats(props: PlayerStatsProps) {
     return (
         <div id="player-stat">
             <h1>{yearInTitle} PLAYER STATS</h1>
-            {!showStatsSinceStart && (
-                <Search
-                    searchList={playerSearchNameArray}
-                    value={value}
-                    searchedName={searchedPlayerName}
-                    handleSubmitCallback={handleSubmit}
-                    handleChangeCallback={handleChange}
-                    closeButtonCallback={closeButtonCallback}
-                />
-            )}
+            <Search
+                searchList={playerSearchNameArray}
+                value={value}
+                searchedName={searchedPlayerName}
+                handleSubmitCallback={handleSubmit}
+                handleChangeCallback={handleChange}
+                closeButtonCallback={closeButtonCallback}
+            />
             {loading && (
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
@@ -242,6 +283,7 @@ function PlayerStats(props: PlayerStatsProps) {
             {/* Shows Summary of all players stats since 2013 */}
             {showStatsSinceStart &&
                 !loading &&
+                !searchedPlayerName && // TODO this correct?
                 statsForEveryYearArray.length >= 1 && (
                     <AllTimePlayerStats
                         statsArray={allYearsStatsToUse}
@@ -253,6 +295,15 @@ function PlayerStats(props: PlayerStatsProps) {
             {/* Shows detailed stats for searched player */}
             {!showStatsSinceStart && !loading && searchedPlayerName && (
                 <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
+            )}
+
+            {/* Shows detailed stats since start for searched player */}
+            {showStatsSinceStart && !loading && searchedPlayerName && (
+                <div>
+                    {showPlayerStatsSinceStart(
+                        searchedPlayerName.toLowerCase()
+                    )}
+                </div>
             )}
 
             {/* Shows total player count */}
