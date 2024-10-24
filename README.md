@@ -201,3 +201,6 @@ Update team info in all components:
 -   Home/away/cup breakdown on stat summary options
 -   All years detailed stats (not just summary):
 -   Players best ever season
+-   Include winter league option
+-   Add Guiseley/ Wetherby winter league?
+-   Add Tad league?

@@ -189,6 +189,8 @@ def standardiseName(name):
     name = name.replace("'a'", '')
     name = name.replace(" 'b'", '')
     name = name.replace("'b'", '')
+    name = name.replace(" 'ab'", '')
+    name = name.replace("'ab'", '')
     return name
 
 def checkValidPlayerOnDay(playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile):
