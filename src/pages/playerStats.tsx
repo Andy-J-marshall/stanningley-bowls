@@ -3,14 +3,16 @@ import { ListGroup, Spinner } from 'react-bootstrap';
 import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
-import AllTimePlayerStats from '../components/allTimePlayerStats';
 import Search from '../components/search';
 import { collatePlayerStats } from '../helpers/playersHelper';
 import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
-import { collateStatsFromAllYears } from '../helpers/statsHelper';
+import {
+    collateStatsFromAllYears,
+    returnStatsForPlayersInAllYears,
+} from '../helpers/statsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -32,6 +34,8 @@ function PlayerStats(props: PlayerStatsProps) {
     );
     const [loading, setLoading] = useState(false);
 
+    const everyYearCombinedStats: PlayerStatsSummary[] =
+        returnStatsForPlayersInAllYears(allYearsStatsToUse); // TODO need to handle team vs all-team stats
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase()); // TODO need to move this, or use state?
     // TODO fix
@@ -39,10 +43,8 @@ function PlayerStats(props: PlayerStatsProps) {
     // combinedStatsForEveryYearArray.forEach(s => {
     //     const allYearsPlayers = Object.keys(s.playerResults);
     //     const players = allYearsPlayers.map((p) => p.toUpperCase());
-    //     console.log(players);
     //     a.push(players);
     // });
-    // console.log(a)
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
@@ -53,7 +55,9 @@ function PlayerStats(props: PlayerStatsProps) {
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) && !showStatsSinceStart ? `${stats.statsYear}` : '';
+        currentYear !== Number(stats.statsYear) && !showStatsSinceStart
+            ? `${stats.statsYear}`
+            : '';
 
     useEffect(() => {
         if (!loaded) {
@@ -190,13 +194,12 @@ function PlayerStats(props: PlayerStatsProps) {
         /* TODO change */
     }
     function showPlayerStatsSinceStart(playerName: string) {
-        console.log("HERE");
         // TODO add check back in
         // const validPlayer = players.find((player) => player == playerName);
 
         // TODO would need a way of generating the stats to use for all years
         const s = collateStatsFromAllYears(allYearsStatsToUse);
-        
+
         // if (validPlayer) {
         return (
             <ListGroup>
@@ -280,10 +283,11 @@ function PlayerStats(props: PlayerStatsProps) {
             {/* TODO replace this with PlayerStatSummary? */}
             {showStatsSinceStart &&
                 !loading &&
-                !searchedPlayerName && // TODO this correct?
+                !searchedPlayerName &&
                 statsForEveryYearArray.length >= 1 && (
-                    <AllTimePlayerStats
-                        statsArray={allYearsStatsToUse}
+                    <PlayerStatSummary
+                        callback={setSearchedPlayerName}
+                        playerStats={everyYearCombinedStats}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                     />
@@ -309,6 +313,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
                 !showStatSummary &&
+                // TODO this is incorrect for all years
                 !showStatsSinceStart && (
                     <p id="total-player-count">
                         Total players: {totalPlayersUsed}

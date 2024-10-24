@@ -16,12 +16,6 @@ export interface RecordsProps {
     yearToDisplay: string;
 }
 
-export interface AllTimePlayerStatsProps {
-    statsArray: FullStatsFile[];
-    showSinglesOnly: boolean;
-    showPairsOnly: boolean;
-}
-
 export interface CombinedTeamStatsProps {
     stats: TeamResultsStatsFile[];
 }
