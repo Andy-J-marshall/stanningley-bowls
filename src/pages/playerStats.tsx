@@ -277,6 +277,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 returnStatsTable()}
 
             {/* Shows Summary of all players stats since 2013 */}
+            {/* TODO replace this with PlayerStatSummary? */}
             {showStatsSinceStart &&
                 !loading &&
                 !searchedPlayerName && // TODO this correct?
