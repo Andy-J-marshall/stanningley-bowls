@@ -201,5 +201,6 @@ Update team info in all components:
 -   Home/away/cup breakdown on stat summary options
 -   All years detailed stats (not just summary):
 -   Players best ever season
--   Include winter league option
--   Add Guiseley/ Wetherby winter league?
+-   Include winter league option?
+-   Add Guiseley/ Wetherby winter league for 2024?
+-   Split the script into a separate repo and create an API?
