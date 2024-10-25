@@ -190,9 +190,15 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    {
-        /* TODO change */
-    }
+    // TODO why are these NAN for some players?
+    // availableAgg: NaN
+    // availableAwayAgg: NaN
+    // availableHomeAgg: NaN
+    // availablePairsAgg: NaN
+    // availablePairsAwayAgg: NaN
+    // availablePairsHomeAgg: NaN
+    
+    // TODO change
     function showPlayerStatsSinceStart(playerName: string) {
         // TODO add check back in
         // const validPlayer = players.find((player) => player == playerName);
