@@ -204,3 +204,4 @@ Update team info in all components:
 -   Include winter league option?
 -   Add Guiseley/ Wetherby winter league for 2024?
 -   Split the script into a separate repo and create an API?
+-   Remove AllTimePlayerStats and refactor to use PlayerStats instead

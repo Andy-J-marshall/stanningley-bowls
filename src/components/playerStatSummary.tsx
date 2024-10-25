@@ -194,7 +194,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
             return (
                 <tbody key={key}>
-                    {gamesPlayed && gamesPlayed > 0 && (
+                    {gamesPlayed && gamesPlayed > 0 ? (
                         <tr>
                             <td>
                                 <a
@@ -228,7 +228,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                 {average?.toFixed(2)}
                             </td>
                         </tr>
-                    )}
+                    ) : null}
                 </tbody>
             );
         });
