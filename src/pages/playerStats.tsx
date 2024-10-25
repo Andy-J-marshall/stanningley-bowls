@@ -198,7 +198,7 @@ function PlayerStats(props: PlayerStatsProps) {
         // const validPlayer = players.find((player) => player == playerName);
 
         // TODO would need a way of generating the stats to use for all years
-        const s = collateStatsFromAllYears(allYearsStatsToUse);
+        const allYearStats = collateStatsFromAllYears(allYearsStatsToUse);
 
         // if (validPlayer) {
         return (
@@ -207,7 +207,7 @@ function PlayerStats(props: PlayerStatsProps) {
                     key={playerName}
                     player={playerName}
                     name={playerName}
-                    playersStats={s} // TODO change
+                    playersStats={allYearStats} // TODO change
                     showStatSummary={showStatSummary}
                 ></IndividualPlayerStats>
             </ListGroup>
