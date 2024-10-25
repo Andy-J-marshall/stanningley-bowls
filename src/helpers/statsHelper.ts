@@ -237,13 +237,10 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                 playerStats.pairCupLosses += yearPlayerStats.pairCupLosses;
                 playerStats.totalGamesPlayed +=
                     yearPlayerStats.totalGamesPlayed;
-                // TODO fix. Or remove and hide team info?
-                // playerStats.dayPlayed = [
-                //     ...new Set([
-                //         ...playerStats.dayPlayed,
-                //         ...yearPlayerStats.dayPlayed,
-                //     ]),
-                // ];
+                playerStats.dayPlayed = [
+                    ...playerStats.dayPlayed,
+                    ...yearPlayerStats.dayPlayed,
+                ];
                 playerStats.results = [
                     ...playerStats.results,
                     ...yearPlayerStats.results,
