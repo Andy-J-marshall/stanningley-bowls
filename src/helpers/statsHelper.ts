@@ -191,6 +191,7 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                 const playerStats = collatedStats[player];
                 const yearPlayerStats = yearStats.playerResults[player];
 
+                // TODO teams stats not showing here
                 playerStats.totalAgg += yearPlayerStats.totalAgg;
                 playerStats.totalAggAgainst += yearPlayerStats.totalAggAgainst;
                 playerStats.availableAgg += yearPlayerStats.availableAgg;
