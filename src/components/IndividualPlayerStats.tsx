@@ -16,6 +16,7 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const name = props.name;
     const showStatSummary = props.showStatSummary;
 
+    // TODO not displaying stats if player has not played for Stanningley
     const [loaded, setLoaded] = useState(false);
 
     const stats = returnPlayerStats(playersStats, player);
@@ -43,6 +44,7 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
                             {showStatSummary && <p>No games played</p>}
                         </div>
                     )}
+                    {/* TODO add a message here if no games played */}
                     {stats.gamesPlayed > 0 && (
                         <Accordion defaultActiveKey="0">
                             <PlayerStatsOverview stats={stats} />
