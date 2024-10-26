@@ -161,19 +161,19 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
+        const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
             ? collateStatsFromAllYears(allYearsStatsToUseArray)
             : statsToUse;
 
         const playersListToUse = showStatsSinceStart ? allPlayers : players;
         const validPlayer = playersListToUse.find(
-            (player) => player.toLowerCase() === playerName.toLowerCase()
+            (player) => player.toLowerCase() === playerLower
         );
+        const hasPlayedGames =
+            individualStats[playerLower]?.totalGamesPlayed > 0 ? true : false;
 
-        const playerHasGames =
-            individualStats[playerName]?.totalGamesPlayed > 0 ? true : false;
-
-        if (validPlayer && playerHasGames) {
+        if (validPlayer && hasPlayedGames) {
             return (
                 <ListGroup>
                     <IndividualPlayerStats
@@ -265,9 +265,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
             {/* Shows detailed stats for searched player */}
             {!loading && searchedPlayerName && (
-                <div>
-                    {showDetailedPlayerStats(searchedPlayerName.toLowerCase())}
-                </div>
+                <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
             {/* Shows total player count */}
