@@ -198,33 +198,30 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsHomeAgg: NaN
 
     function showPlayerStatsSinceStart(playerName: string) {
-        // TODO add check back in
-        // const validPlayer = players.find((player) => player == playerName);
-
-        // TODO would need a way of generating the stats to use for all years
         const allYearStats = collateStatsFromAllYears(allYearsStatsToUse);
 
-        // if (validPlayer) {
-        return (
-            <ListGroup>
-                <IndividualPlayerStats
-                    key={playerName}
-                    player={playerName}
-                    name={playerName}
-                    playersStats={allYearStats} // TODO change
-                    showStatSummary={showStatSummary}
-                ></IndividualPlayerStats>
-            </ListGroup>
-        );
-        // } else {
-        //     return (
-        //         searchedPlayerName.toLowerCase() !== 'show all' && (
-        //             <h2 style={{ padding: '1rem 0 4rem 0' }}>
-        //                 Player not found
-        //             </h2>
-        //         )
-        //     );
-        // }
+        const validPlayer = allPlayers.find((player) => player.toLowerCase() === playerName.toLowerCase());
+        if (validPlayer) {
+            return (
+                <ListGroup>
+                    <IndividualPlayerStats
+                        key={playerName}
+                        player={playerName}
+                        name={playerName}
+                        playersStats={allYearStats}
+                        showStatSummary={showStatSummary}
+                    ></IndividualPlayerStats>
+                </ListGroup>
+            );
+        } else {
+            return (
+                searchedPlayerName.toLowerCase() !== 'show all' && (
+                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
+                        Player not found
+                    </h2>
+                )
+            );
+        }
     }
 
     function returnStatsTable() {
