@@ -48,7 +48,7 @@ function PlayerStats(props: PlayerStatsProps) {
     });
     const allPlayers = Array.from(allPlayersSet).sort();
 
-    const everyYearStats: PlayerStatsSummary[] =
+    const everyYearStatsToDisplayArray: PlayerStatsSummary[] =
         returnStatsForPlayersInAllYears(allYearsStatsToUse);
     const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
         statsToUse,
@@ -67,9 +67,16 @@ function PlayerStats(props: PlayerStatsProps) {
         }
         setLoaded(true);
 
-        const playersWithGames = statsToDisplayArray.filter(
-            (player) => player.games > 0
-        );
+        let playersWithGames = [];
+        if (showStatsSinceStart) {
+            playersWithGames = everyYearStatsToDisplayArray.filter(
+                (player) => player.games > 0
+            );
+        } else {
+            playersWithGames = statsToDisplayArray.filter(
+                (player) => player.games > 0
+            );
+        }
         setTotalPlayersUsed(playersWithGames.length);
 
         if (showStatSummary) {
@@ -163,6 +170,7 @@ function PlayerStats(props: PlayerStatsProps) {
         setSearchedPlayerName('');
     }
 
+    // TODO refactor this and the below?
     function showPlayerStats(playerName: string) {
         const validPlayer = players.find((player) => player == playerName);
 
@@ -200,7 +208,9 @@ function PlayerStats(props: PlayerStatsProps) {
     function showPlayerStatsSinceStart(playerName: string) {
         const allYearStats = collateStatsFromAllYears(allYearsStatsToUse);
 
-        const validPlayer = allPlayers.find((player) => player.toLowerCase() === playerName.toLowerCase());
+        const validPlayer = allPlayers.find(
+            (player) => player.toLowerCase() === playerName.toLowerCase()
+        );
         if (validPlayer) {
             return (
                 <ListGroup>
@@ -289,7 +299,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 statsForEveryYearArray.length >= 1 && (
                     <PlayerStatSummary
                         callback={setSearchedPlayerName}
-                        playerStats={everyYearStats}
+                        playerStats={everyYearStatsToDisplayArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                     />
@@ -314,9 +324,7 @@ function PlayerStats(props: PlayerStatsProps) {
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
-                !showStatSummary &&
-                // TODO this is incorrect for all years
-                !showStatsSinceStart && (
+                !showStatSummary && (
                     <p id="total-player-count">
                         Total players: {totalPlayersUsed}
                     </p>
