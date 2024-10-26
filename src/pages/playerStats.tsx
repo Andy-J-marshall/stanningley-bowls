@@ -214,10 +214,13 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsHomeAgg: NaN
 
     function returnStatsTable() {
-        const gamesPlayedThisYear = statsToDisplayArray.find(
+        const statsArray = showStatsSinceStart
+            ? everyYearStatsToDisplayArray
+            : statsToDisplayArray;
+        const gamesPlayedThisYear = statsArray.find(
             (player) => player.games > 0
         );
-        const pairsGamesThisYear = statsToDisplayArray.find(
+        const pairsGamesThisYear = statsArray.find(
             (player) => player.pairsGames && player.pairsGames > 0
         );
 
@@ -227,7 +230,7 @@ function PlayerStats(props: PlayerStatsProps) {
                     <br />
                     <PlayerStatSummary
                         callback={setSearchedPlayerName}
-                        playerStats={statsToDisplayArray}
+                        playerStats={statsArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                     />
@@ -264,25 +267,11 @@ function PlayerStats(props: PlayerStatsProps) {
                 </Spinner>
             )}
 
-            {/* Shows Summary of all players stats for selected year */}
-            {!showStatsSinceStart &&
-                !loading &&
+            {/* Shows Summary of all players stats */}
+            {!loading &&
                 (!searchedPlayerName ||
                     searchedPlayerName.toLowerCase() === 'show all') &&
                 returnStatsTable()}
-
-            {/* Shows Summary of all players stats since 2013 */}
-            {showStatsSinceStart &&
-                !loading &&
-                !searchedPlayerName &&
-                statsForEveryYearArray.length >= 1 && (
-                    <PlayerStatSummary
-                        callback={setSearchedPlayerName}
-                        playerStats={everyYearStatsToDisplayArray}
-                        showSinglesOnly={showSinglesOnlyBool}
-                        showPairsOnly={showPairsOnlyBool}
-                    />
-                )}
 
             {/* Shows detailed stats for searched player */}
             {!loading && searchedPlayerName && (
