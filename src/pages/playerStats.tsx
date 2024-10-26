@@ -203,14 +203,6 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    // TODO why are these NAN for some players?
-    // availableAgg: NaN
-    // availableAwayAgg: NaN
-    // availableHomeAgg: NaN
-    // availablePairsAgg: NaN
-    // availablePairsAwayAgg: NaN
-    // availablePairsHomeAgg: NaN
-
     function returnStatSummaryTable() {
         const statsArray = showStatsSinceStart
             ? everyYearStatsToDisplayArray

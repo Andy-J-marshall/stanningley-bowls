@@ -194,6 +194,8 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                 const playerStats = collatedStats[player];
                 const yearPlayerStats = yearStats.playerResults[player];
 
+                // TODO need to regenerate 2022 player stats
+                // TODO could these cause issues if not a number? Getting some log errors
                 playerStats.totalAgg += yearPlayerStats.totalAgg;
                 playerStats.totalAggAgainst += yearPlayerStats.totalAggAgainst;
                 playerStats.availableAgg += yearPlayerStats.availableAgg;
