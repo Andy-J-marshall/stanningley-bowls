@@ -7,7 +7,7 @@ cupText = [
     ' shield',
     ' plate',
     ' cup',
-    ' on ',
+    ' on ', # TODO this is sometimes confusing
     'prelims',
     'pre lim',
     'pre-lim',
