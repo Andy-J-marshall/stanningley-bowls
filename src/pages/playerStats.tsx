@@ -161,9 +161,9 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
-        const allYearStatsToUse = collateStatsFromAllYears(
-            allYearsStatsToUseArray
-        );
+        const individualStats = showStatsSinceStart
+            ? collateStatsFromAllYears(allYearsStatsToUseArray)
+            : statsToUse;
 
         const playersListToUse = showStatsSinceStart ? allPlayers : players;
         const validPlayer = playersListToUse.find(
@@ -177,9 +177,7 @@ function PlayerStats(props: PlayerStatsProps) {
                         key={playerName}
                         player={playerName}
                         name={playerName}
-                        playersStats={
-                            showStatsSinceStart ? allYearStatsToUse : statsToUse
-                        }
+                        playersStats={individualStats}
                         showStatSummary={showStatSummary}
                     ></IndividualPlayerStats>
                 </ListGroup>
@@ -188,7 +186,7 @@ function PlayerStats(props: PlayerStatsProps) {
             return (
                 searchedPlayerName.toLowerCase() !== 'show all' && (
                     <h2 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found
+                        Player not found for {stats.statsYear}
                     </h2>
                 )
             );
