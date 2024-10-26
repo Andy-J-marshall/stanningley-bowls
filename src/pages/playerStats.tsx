@@ -33,23 +33,23 @@ function PlayerStats(props: PlayerStatsProps) {
         statsForEveryYearArray
     );
     const [loading, setLoading] = useState(false);
-
-    const everyYearCombinedStats: PlayerStatsSummary[] =
-        returnStatsForPlayersInAllYears(allYearsStatsToUse); // TODO need to handle team vs all-team stats
-    const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase()); // TODO can this be moved?
-    const allPlayersSinceStart = new Set<string>();
-    allYearsStatsToUse.forEach((yearStats) => {
-        Object.keys(yearStats.playerResults).forEach((playerName) => {
-            allPlayersSinceStart.add(playerName.toUpperCase());
-        });
-    });
-    const allPlayersSinceStartSearchNameArray =
-        Array.from(allPlayersSinceStart).sort();
-
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
+
+    // Find list of players and save to an array
+    const players = Object.keys(combinedPlayerResults).sort();
+    const playerSearchNameArray = players.map((p) => p.toUpperCase());
+    const allPlayersSet = new Set<string>();
+    allYearsStatsToUse.forEach((yearStats) => {
+        Object.keys(yearStats.playerResults).forEach((playerName) => {
+            allPlayersSet.add(playerName.toUpperCase());
+        });
+    });
+    const allPlayers = Array.from(allPlayersSet).sort();
+
+    const everyYearStats: PlayerStatsSummary[] =
+        returnStatsForPlayersInAllYears(allYearsStatsToUse);
     const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
         statsToUse,
         players
@@ -117,22 +117,18 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function searchForPlayer(searchedName: string) {
         setSearchedPlayerName(searchedName);
-
-        // TODO need this now?
-        // const validPlayer =
-        // searchedName && nameSearchArray.includes(searchedName.toUpperCase())
-        //     ? true
-        //     : false;
         // TODO need to handle if player has no games for year e.g. Andy W in 2013  . What to show?
         if (searchedName && !searchedName.includes('show all')) {
             const teamDaysPlayed = Object.keys(config.days);
-            const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
+            const daysPlayed = combinedPlayerResults[searchedName]?.dayPlayed;
             let anyTeamDays = false;
-            daysPlayed.forEach((day: string) => {
-                if (teamDaysPlayed.includes(day.toLowerCase().trim())) {
-                    anyTeamDays = true;
-                }
-            });
+            if (daysPlayed) {
+                daysPlayed.forEach((day: string) => {
+                    if (teamDaysPlayed.includes(day.toLowerCase().trim())) {
+                        anyTeamDays = true;
+                    }
+                });
+            }
             if (!anyTeamDays) {
                 setStatsToUse(combinedPlayerResults);
                 setShowStatSummary(true);
@@ -201,7 +197,6 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsAwayAgg: NaN
     // availablePairsHomeAgg: NaN
 
-    // TODO change
     function showPlayerStatsSinceStart(playerName: string) {
         // TODO add check back in
         // const validPlayer = players.find((player) => player == playerName);
@@ -269,9 +264,7 @@ function PlayerStats(props: PlayerStatsProps) {
             <h1>{yearInTitle} PLAYER STATS</h1>
             <Search
                 searchList={
-                    showStatsSinceStart
-                        ? allPlayersSinceStartSearchNameArray
-                        : playerSearchNameArray
+                    showStatsSinceStart ? allPlayers : playerSearchNameArray
                 }
                 value={value}
                 searchedName={searchedPlayerName}
@@ -293,14 +286,13 @@ function PlayerStats(props: PlayerStatsProps) {
                 returnStatsTable()}
 
             {/* Shows Summary of all players stats since 2013 */}
-            {/* TODO replace this with PlayerStatSummary? */}
             {showStatsSinceStart &&
                 !loading &&
                 !searchedPlayerName &&
                 statsForEveryYearArray.length >= 1 && (
                     <PlayerStatSummary
                         callback={setSearchedPlayerName}
-                        playerStats={everyYearCombinedStats}
+                        playerStats={everyYearStats}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                     />
