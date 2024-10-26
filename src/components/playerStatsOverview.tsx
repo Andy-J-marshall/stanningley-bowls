@@ -11,7 +11,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
         totalWins,
         gamesPlayed,
         average,
-        allTeamsPlayedFor,
+        allTeamsPlayedFor, // TODO sort into alphabetical order?
         biggestWin,
     } = stats;
 
