@@ -29,7 +29,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
+    const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
     const [loading, setLoading] = useState(false);
@@ -41,7 +41,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const allPlayersSet = new Set<string>();
-    allYearsStatsToUse.forEach((yearStats) => {
+    allYearsStatsToUseArray.forEach((yearStats) => {
         Object.keys(yearStats.playerResults).forEach((playerName) => {
             allPlayersSet.add(playerName.toUpperCase());
         });
@@ -49,7 +49,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const allPlayers = Array.from(allPlayersSet).sort();
 
     const everyYearStatsToDisplayArray: PlayerStatsSummary[] =
-        returnStatsForPlayersInAllYears(allYearsStatsToUse);
+        returnStatsForPlayersInAllYears(allYearsStatsToUseArray);
     const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
         statsToUse,
         players
@@ -81,10 +81,10 @@ function PlayerStats(props: PlayerStatsProps) {
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
-            setAllYearsStatsToUse(combinedStatsForEveryYearArray);
+            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
-            setAllYearsStatsToUse(statsForEveryYearArray);
+            setAllYearsStatsToUseArray(statsForEveryYearArray);
         }
     });
 
@@ -170,9 +170,15 @@ function PlayerStats(props: PlayerStatsProps) {
         setSearchedPlayerName('');
     }
 
-    // TODO refactor this and the below?
     function showPlayerStats(playerName: string) {
-        const validPlayer = players.find((player) => player == playerName);
+        const allYearStatsToUse = collateStatsFromAllYears(
+            allYearsStatsToUseArray
+        );
+
+        const playersListToUse = showStatsSinceStart ? allPlayers : players;
+        const validPlayer = playersListToUse.find(
+            (player) => player.toLowerCase() === playerName.toLowerCase()
+        );
 
         if (validPlayer) {
             return (
@@ -181,7 +187,9 @@ function PlayerStats(props: PlayerStatsProps) {
                         key={playerName}
                         player={playerName}
                         name={playerName}
-                        playersStats={statsToUse}
+                        playersStats={
+                            showStatsSinceStart ? allYearStatsToUse : statsToUse
+                        }
                         showStatSummary={showStatSummary}
                     ></IndividualPlayerStats>
                 </ListGroup>
@@ -204,35 +212,6 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsAgg: NaN
     // availablePairsAwayAgg: NaN
     // availablePairsHomeAgg: NaN
-
-    function showPlayerStatsSinceStart(playerName: string) {
-        const allYearStats = collateStatsFromAllYears(allYearsStatsToUse);
-
-        const validPlayer = allPlayers.find(
-            (player) => player.toLowerCase() === playerName.toLowerCase()
-        );
-        if (validPlayer) {
-            return (
-                <ListGroup>
-                    <IndividualPlayerStats
-                        key={playerName}
-                        player={playerName}
-                        name={playerName}
-                        playersStats={allYearStats}
-                        showStatSummary={showStatSummary}
-                    ></IndividualPlayerStats>
-                </ListGroup>
-            );
-        } else {
-            return (
-                searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found
-                    </h2>
-                )
-            );
-        }
-    }
 
     function returnStatsTable() {
         const gamesPlayedThisYear = statsToDisplayArray.find(
@@ -306,17 +285,8 @@ function PlayerStats(props: PlayerStatsProps) {
                 )}
 
             {/* Shows detailed stats for searched player */}
-            {!showStatsSinceStart && !loading && searchedPlayerName && (
+            {!loading && searchedPlayerName && (
                 <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
-            )}
-
-            {/* Shows detailed stats since start for searched player */}
-            {showStatsSinceStart && !loading && searchedPlayerName && (
-                <div>
-                    {showPlayerStatsSinceStart(
-                        searchedPlayerName.toLowerCase()
-                    )}
-                </div>
             )}
 
             {/* Shows total player count */}
