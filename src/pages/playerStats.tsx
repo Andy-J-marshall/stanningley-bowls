@@ -176,9 +176,9 @@ function PlayerStats(props: PlayerStatsProps) {
             return (
                 <ListGroup>
                     <IndividualPlayerStats
-                        key={playerName}
-                        player={playerName}
-                        name={playerName}
+                        key={playerLower}
+                        player={playerLower}
+                        name={playerLower}
                         playersStats={individualStats}
                         showStatSummary={showStatSummary}
                     ></IndividualPlayerStats>
