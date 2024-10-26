@@ -143,7 +143,7 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    const handleSubmit = async (event: any) => {
+    const handleSearchSubmit = async (event: any) => {
         setLoading(true);
         event.preventDefault();
         const searchedName = event.target[0].value.toLowerCase().trim();
@@ -153,7 +153,7 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoading(false);
     };
 
-    const handleChange = async (selected: any) => {
+    const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
         if (searchedPlayerName) {
@@ -170,7 +170,7 @@ function PlayerStats(props: PlayerStatsProps) {
         setSearchedPlayerName('');
     }
 
-    function showPlayerStats(playerName: string) {
+    function showDetailedPlayerStats(playerName: string) {
         const allYearStatsToUse = collateStatsFromAllYears(
             allYearsStatsToUseArray
         );
@@ -213,7 +213,7 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsAwayAgg: NaN
     // availablePairsHomeAgg: NaN
 
-    function returnStatsTable() {
+    function returnStatSummaryTable() {
         const statsArray = showStatsSinceStart
             ? everyYearStatsToDisplayArray
             : statsToDisplayArray;
@@ -257,8 +257,8 @@ function PlayerStats(props: PlayerStatsProps) {
                 }
                 value={value}
                 searchedName={searchedPlayerName}
-                handleSubmitCallback={handleSubmit}
-                handleChangeCallback={handleChange}
+                handleSubmitCallback={handleSearchSubmit}
+                handleChangeCallback={handleSearchChange}
                 closeButtonCallback={closeButtonCallback}
             />
             {loading && (
@@ -271,11 +271,11 @@ function PlayerStats(props: PlayerStatsProps) {
             {!loading &&
                 (!searchedPlayerName ||
                     searchedPlayerName.toLowerCase() === 'show all') &&
-                returnStatsTable()}
+                returnStatSummaryTable()}
 
             {/* Shows detailed stats for searched player */}
             {!loading && searchedPlayerName && (
-                <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
+                <div>{showDetailedPlayerStats(searchedPlayerName.toLowerCase())}</div>
             )}
 
             {/* Shows total player count */}
