@@ -149,7 +149,7 @@ function PlayerStats(props: PlayerStatsProps) {
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
             setLoading(true);
-            await delay(400);
+            await delay(300);
             searchForPlayer(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);
