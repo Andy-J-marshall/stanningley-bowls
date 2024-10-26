@@ -143,16 +143,6 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    const handleSearchSubmit = async (event: any) => {
-        setLoading(true);
-        event.preventDefault();
-        const searchedName = event.target[0].value.toLowerCase().trim();
-        setValue(['']);
-        await delay(200);
-        searchForPlayer(searchedName);
-        setLoading(false);
-    };
-
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -257,7 +247,6 @@ function PlayerStats(props: PlayerStatsProps) {
                 }
                 value={value}
                 searchedName={searchedPlayerName}
-                handleSubmitCallback={handleSearchSubmit}
                 handleChangeCallback={handleSearchChange}
                 closeButtonCallback={closeButtonCallback}
             />
@@ -275,7 +264,9 @@ function PlayerStats(props: PlayerStatsProps) {
 
             {/* Shows detailed stats for searched player */}
             {!loading && searchedPlayerName && (
-                <div>{showDetailedPlayerStats(searchedPlayerName.toLowerCase())}</div>
+                <div>
+                    {showDetailedPlayerStats(searchedPlayerName.toLowerCase())}
+                </div>
             )}
 
             {/* Shows total player count */}

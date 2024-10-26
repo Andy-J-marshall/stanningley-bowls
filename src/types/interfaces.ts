@@ -90,7 +90,6 @@ export interface SearchProps {
     searchList: string[];
     value: string[];
     searchedName: string;
-    handleSubmitCallback: (event: React.FormEvent<HTMLFormElement>) => void;
     handleChangeCallback: (selected: string[]) => void;
     closeButtonCallback: () => void;
 }
