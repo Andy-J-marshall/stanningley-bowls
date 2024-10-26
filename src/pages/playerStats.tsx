@@ -37,14 +37,16 @@ function PlayerStats(props: PlayerStatsProps) {
     const everyYearCombinedStats: PlayerStatsSummary[] =
         returnStatsForPlayersInAllYears(allYearsStatsToUse); // TODO need to handle team vs all-team stats
     const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase()); // TODO need to move this, or use state?
-    // TODO fix
-    // const a: string[] = [];
-    // combinedStatsForEveryYearArray.forEach(s => {
-    //     const allYearsPlayers = Object.keys(s.playerResults);
-    //     const players = allYearsPlayers.map((p) => p.toUpperCase());
-    //     a.push(players);
-    // });
+    const playerSearchNameArray = players.map((p) => p.toUpperCase()); // TODO can this be moved?
+    const allPlayersSinceStart = new Set<string>();
+    allYearsStatsToUse.forEach((yearStats) => {
+        Object.keys(yearStats.playerResults).forEach((playerName) => {
+            allPlayersSinceStart.add(playerName.toUpperCase());
+        });
+    });
+    const allPlayersSinceStartSearchNameArray =
+        Array.from(allPlayersSinceStart).sort();
+
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
@@ -116,12 +118,13 @@ function PlayerStats(props: PlayerStatsProps) {
     function searchForPlayer(searchedName: string) {
         setSearchedPlayerName(searchedName);
 
-        const validPlayer =
-            searchedName &&
-            playerSearchNameArray.includes(searchedName.toUpperCase())
-                ? true
-                : false;
-        if (validPlayer && !searchedName.includes('show all')) {
+        // TODO need this now?
+        // const validPlayer =
+        // searchedName && nameSearchArray.includes(searchedName.toUpperCase())
+        //     ? true
+        //     : false;
+        // TODO need to handle if player has no games for year e.g. Andy W in 2013  . What to show?
+        if (searchedName && !searchedName.includes('show all')) {
             const teamDaysPlayed = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
             let anyTeamDays = false;
@@ -197,7 +200,7 @@ function PlayerStats(props: PlayerStatsProps) {
     // availablePairsAgg: NaN
     // availablePairsAwayAgg: NaN
     // availablePairsHomeAgg: NaN
-    
+
     // TODO change
     function showPlayerStatsSinceStart(playerName: string) {
         // TODO add check back in
@@ -265,7 +268,11 @@ function PlayerStats(props: PlayerStatsProps) {
         <div id="player-stat">
             <h1>{yearInTitle} PLAYER STATS</h1>
             <Search
-                searchList={playerSearchNameArray}
+                searchList={
+                    showStatsSinceStart
+                        ? allPlayersSinceStartSearchNameArray
+                        : playerSearchNameArray
+                }
                 value={value}
                 searchedName={searchedPlayerName}
                 handleSubmitCallback={handleSubmit}

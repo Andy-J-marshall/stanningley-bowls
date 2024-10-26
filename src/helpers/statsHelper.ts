@@ -1,3 +1,4 @@
+import { config } from '../config';
 import {
     FullStatsFile,
     PlayerResultsStatsFile,
@@ -8,6 +9,8 @@ import {
     checkWinPercAndAverageAreNumbers,
     returnPlayerStats,
 } from './playersHelper';
+
+// TODO split this file up
 
 export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     let combinedAwayWins = 0;
@@ -191,7 +194,6 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                 const playerStats = collatedStats[player];
                 const yearPlayerStats = yearStats.playerResults[player];
 
-                // TODO teams stats not showing here correctly 
                 playerStats.totalAgg += yearPlayerStats.totalAgg;
                 playerStats.totalAggAgainst += yearPlayerStats.totalAggAgainst;
                 playerStats.availableAgg += yearPlayerStats.availableAgg;
@@ -246,6 +248,29 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                     ...playerStats.results,
                     ...yearPlayerStats.results,
                 ];
+                // TODO this isn't working for some teams e.g. monday, saturday
+                // TODO too many loops?
+                config.allTeamsInLeaguesSince2013.forEach((team) => {
+                    if (
+                        yearPlayerStats[team] &&
+                        yearPlayerStats[team].games > 0
+                    ) {
+                        if (!playerStats[team]) {
+                            playerStats[team] = {
+                                aggDiff: yearPlayerStats[team].aggDiff,
+                                games: yearPlayerStats[team].games,
+                                wins: yearPlayerStats[team].wins,
+                            };
+                        } else {
+                            playerStats[team].aggDiff +=
+                                yearPlayerStats[team].aggDiff;
+                            playerStats[team].games +=
+                                yearPlayerStats[team].games;
+                            playerStats[team].wins +=
+                                yearPlayerStats[team].wins;
+                        }
+                    }
+                });
             }
         });
     });
