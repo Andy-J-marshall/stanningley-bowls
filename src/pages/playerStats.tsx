@@ -4,7 +4,10 @@ import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
 import Search from '../components/search';
-import { collatePlayerStats } from '../helpers/playersHelper';
+import {
+    collatePlayerStats,
+    returnPlayerStats,
+} from '../helpers/playersHelper';
 import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
@@ -169,17 +172,22 @@ function PlayerStats(props: PlayerStatsProps) {
         const validPlayer = playersListToUse.find(
             (player) => player.toLowerCase() === playerLower
         );
-        const hasPlayedGames =
-            individualStats[playerLower]?.totalGamesPlayed > 0 ? true : false;
 
-        if (validPlayer && hasPlayedGames) {
+        const detailedPlayerStats = returnPlayerStats(
+            individualStats,
+            playerLower
+        );
+
+        if (
+            validPlayer &&
+            detailedPlayerStats &&
+            detailedPlayerStats.gamesPlayed > 0
+        ) {
             return (
                 <ListGroup>
                     <IndividualPlayerStats
-                        key={playerLower}
-                        player={playerLower}
                         name={playerLower}
-                        playersStats={individualStats}
+                        playersStats={detailedPlayerStats}
                         showStatSummary={showStatSummary}
                     ></IndividualPlayerStats>
                 </ListGroup>

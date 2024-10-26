@@ -1,9 +1,9 @@
 import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import { AggregatedStats } from '../types/interfaces';
+import { PlayerStatsComponentsProps } from '../types/interfaces';
 
-function PlayerStatsResults(props: AggregatedStats) {
+function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
 
     const { results } = stats;
@@ -17,7 +17,9 @@ function PlayerStatsResults(props: AggregatedStats) {
 
         const opponentPart = resultParts[1].split(' (')[0];
         const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
-        const opponentScore = opponentScoreMatch ? opponentScoreMatch[0].trim() : '';
+        const opponentScore = opponentScoreMatch
+            ? opponentScoreMatch[0].trim()
+            : '';
         const opponent = opponentPart.split(/[0-9]+/g)[1].trim();
 
         return {
