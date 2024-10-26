@@ -124,7 +124,6 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function searchForPlayer(searchedName: string) {
         setSearchedPlayerName(searchedName);
-        // TODO need to handle if player has no games for year e.g. Andy W in 2013  . What to show?
         if (searchedName && !searchedName.includes('show all')) {
             const teamDaysPlayed = Object.keys(config.days);
             const daysPlayed = combinedPlayerResults[searchedName]?.dayPlayed;
