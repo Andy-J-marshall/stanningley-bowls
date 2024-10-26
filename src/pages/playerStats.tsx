@@ -170,7 +170,10 @@ function PlayerStats(props: PlayerStatsProps) {
             (player) => player.toLowerCase() === playerName.toLowerCase()
         );
 
-        if (validPlayer) {
+        const playerHasGames =
+            individualStats[playerName]?.totalGamesPlayed > 0 ? true : false;
+
+        if (validPlayer && playerHasGames) {
             return (
                 <ListGroup>
                     <IndividualPlayerStats
