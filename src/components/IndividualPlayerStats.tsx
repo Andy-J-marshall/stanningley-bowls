@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ListGroup, Accordion } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import { config } from '../config';
 import { capitalizeText } from '../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';
@@ -25,28 +25,24 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
 
     return (
         <div id="detailed-player-stats">
-            <ListGroup.Item>
-                <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
-                {stats.gamesPlayed === 0 && (
-                    <div>
-                        {!showStatSummary && (
-                            <p>
-                                No games played for {config.teamNames.shortName}
-                            </p>
-                        )}
-                        {showStatSummary && <p>No games played</p>}
-                    </div>
-                )}
-                {stats.gamesPlayed > 0 && (
-                    <Accordion defaultActiveKey="0">
-                        <PlayerStatsOverview stats={stats} />
-                        <PlayerStatsWinsLosses stats={stats} />
-                        <PlayerStatsAggregates stats={stats} />
-                        {!showStatSummary && <PlayerStatsTeams stats={stats} />}
-                        <PlayerStatsResults stats={stats} />
-                    </Accordion>
-                )}
-            </ListGroup.Item>
+            <h2 id="playerNameTitle">{capitalizeText([name])}</h2>
+            {stats.gamesPlayed === 0 && (
+                <div>
+                    {!showStatSummary && (
+                        <p>No games played for {config.teamNames.shortName}</p>
+                    )}
+                    {showStatSummary && <p>No games played</p>}
+                </div>
+            )}
+            {stats.gamesPlayed > 0 && (
+                <Accordion defaultActiveKey="0">
+                    <PlayerStatsOverview stats={stats} />
+                    <PlayerStatsWinsLosses stats={stats} />
+                    <PlayerStatsAggregates stats={stats} />
+                    {!showStatSummary && <PlayerStatsTeams stats={stats} />}
+                    <PlayerStatsResults stats={stats} />
+                </Accordion>
+            )}
             <br />
         </div>
     );

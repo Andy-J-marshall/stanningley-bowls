@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ListGroup, Spinner } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
@@ -184,13 +184,11 @@ function PlayerStats(props: PlayerStatsProps) {
             detailedPlayerStats.gamesPlayed > 0
         ) {
             return (
-                <ListGroup>
-                    <IndividualPlayerStats
-                        name={playerLower}
-                        playersStats={detailedPlayerStats}
-                        showStatSummary={showStatSummary}
-                    ></IndividualPlayerStats>
-                </ListGroup>
+                <IndividualPlayerStats
+                    name={playerLower}
+                    playersStats={detailedPlayerStats}
+                    showStatSummary={showStatSummary}
+                ></IndividualPlayerStats>
             );
         } else {
             return (
