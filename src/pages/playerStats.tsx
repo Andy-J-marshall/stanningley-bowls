@@ -51,9 +51,9 @@ function PlayerStats(props: PlayerStatsProps) {
     });
     const allPlayers = Array.from(allPlayersSet).sort();
 
-    const everyYearStatsToDisplayArray: PlayerStatsSummary[] =
+    const everyYearStatsSummaryArray: PlayerStatsSummary[] =
         returnStatsForPlayersInAllYears(allYearsStatsToUseArray);
-    const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
+    const statsSummaryArray: PlayerStatsSummary[] = collatePlayerStats(
         statsToUse,
         players
     );
@@ -72,11 +72,11 @@ function PlayerStats(props: PlayerStatsProps) {
 
         let playersWithGames = [];
         if (showStatsSinceStart) {
-            playersWithGames = everyYearStatsToDisplayArray.filter(
+            playersWithGames = everyYearStatsSummaryArray.filter(
                 (player) => player.games > 0
             );
         } else {
-            playersWithGames = statsToDisplayArray.filter(
+            playersWithGames = statsSummaryArray.filter(
                 (player) => player.games > 0
             );
         }
@@ -203,8 +203,8 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function returnStatSummaryTable() {
         const statsArray = showStatsSinceStart
-            ? everyYearStatsToDisplayArray
-            : statsToDisplayArray;
+            ? everyYearStatsSummaryArray
+            : statsSummaryArray;
         const gamesPlayedThisYear = statsArray.find(
             (player) => player.games > 0
         );
