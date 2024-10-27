@@ -1,4 +1,4 @@
-import { combineTeamStats } from '../helpers/statsHelper';
+import { combineTeamStats } from '../helpers/teamStatsHelper';
 import { CombinedTeamStatsProps } from '../types/interfaces';
 import StatsTableDisplay from './statsTableDisplay';
 

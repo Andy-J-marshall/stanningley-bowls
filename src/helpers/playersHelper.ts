@@ -1,4 +1,4 @@
-import { findBiggestWin } from './statsHelper';
+import { findBiggestWin } from './playerStatsHelper';
 import { config } from '../config';
 import {
     PlayerResultsStatsFile,

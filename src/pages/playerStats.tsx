@@ -15,7 +15,7 @@ import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
 import {
     collateStatsFromAllYears,
     returnStatsForPlayersInAllYears,
-} from '../helpers/statsHelper';
+} from '../helpers/playerStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
