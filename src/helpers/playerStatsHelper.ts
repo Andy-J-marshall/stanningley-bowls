@@ -119,6 +119,8 @@ export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
 }
 
 // TODO add a test for this
+// // TODO this doesn't work when processing a team that already exists in collated stats
+// Seems to be an issue with collated stats going up every time the method is called?
 export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
     const collatedStats: PlayerResultsStatsFile = {};
 
@@ -202,7 +204,6 @@ export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
                         ...collatedStats[player].results,
                         ...yearPlayerStats.results,
                     ];
-                    // TODO this doesn't work when processing a team that already exists in collated stats
                     config.allTeamsInLeaguesSince2013.forEach((team) => {
                         if (
                             yearPlayerStats[team] &&
