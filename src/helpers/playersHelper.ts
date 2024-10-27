@@ -5,6 +5,7 @@ import {
     PlayerStatsSummary,
 } from '../types/interfaces';
 
+// TODO combined with playerStatsHelper file?
 export function returnPlayerStats(
     playersStats: PlayerResultsStatsFile,
     player: string
@@ -119,6 +120,7 @@ export function returnPlayerStats(
             allTeamsPlayedFor.push(day);
         }
     });
+     // TODO sort allTeamsPlayedFor?
 
     // Pairs & singles
     const singlesAgg = totalAgg - totalPairsAgg;
