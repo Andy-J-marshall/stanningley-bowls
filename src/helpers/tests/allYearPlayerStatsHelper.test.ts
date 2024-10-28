@@ -6,11 +6,12 @@ import {
 import { FullStatsFile } from '../../types/interfaces';
 import stats2022 from '../../data/bowlsStats2022.json';
 import stats2023 from '../../data/bowlsStats2023.json';
-const statsArray = [stats2022, stats2023];
+import stats2024 from '../../data/bowlsStats2024.json';
 
 describe('#allYearPlayerStatsHelper Tests', () => {
     describe('#returnPlayerStatSummaryForAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
+            const statsArray = [stats2022, stats2023];
             const result = returnPlayerStatSummaryForAllYears(statsArray);
 
             expect(result.length).to.equal(36);
@@ -61,46 +62,47 @@ describe('#allYearPlayerStatsHelper Tests', () => {
     });
 
     describe('#returnPlayerStatsForAllYears()', () => {
+        const statsArray = [stats2022, stats2023, stats2024];
         const result = returnPlayerStatsForAllYears(statsArray);
 
         const players = Object.keys(result);
 
-        expect(players.length).to.equal(36);
+        expect(players.length).to.equal(48);
 
         expect(result['vanessa lancaster']).to.deep.equal({
-            totalAgg: 315,
-            totalAggAgainst: 357,
-            availableAgg: 441,
-            availablePairsAgg: 147,
-            availableHomeAgg: 210,
-            availableAwayAgg: 210,
-            availablePairsHomeAgg: 84,
-            availablePairsAwayAgg: 63,
-            totalPairsAgg: 100,
-            totalPairsAggAgainst: 126,
-            totalHomeAgg: 174,
-            totalHomeAggAgainst: 161,
-            totalPairsHomeAgg: 68,
-            totalPairsHomeAggAgainst: 63,
-            totalAwayAgg: 138,
-            totalAwayAggAgainst: 175,
-            totalPairsAwayAgg: 32,
-            totalPairsAwayAggAgainst: 63,
-            homeWins: 6,
-            homeLosses: 4,
-            awayWins: 3,
-            awayLosses: 7,
+            totalAgg: 725,
+            totalAggAgainst: 788,
+            availableAgg: 975,
+            availablePairsAgg: 408,
+            availableHomeAgg: 451,
+            availableAwayAgg: 477,
+            availablePairsHomeAgg: 220,
+            availablePairsAwayAgg: 162,
+            totalPairsAgg: 309,
+            totalPairsAggAgainst: 336,
+            totalHomeAgg: 353,
+            totalHomeAggAgainst: 346,
+            totalPairsHomeAgg: 170,
+            totalPairsHomeAggAgainst: 159,
+            totalAwayAgg: 345,
+            totalAwayAggAgainst: 395,
+            totalPairsAwayAgg: 115,
+            totalPairsAwayAggAgainst: 151,
+            homeWins: 11,
+            homeLosses: 10,
+            awayWins: 9,
+            awayLosses: 13,
             cupWins: 0,
-            cupLosses: 1,
-            pairWins: 2,
-            pairLosses: 5,
-            pairHomeWins: 2,
-            pairHomeLosses: 2,
-            pairAwayWins: 0,
-            pairAwayLosses: 3,
+            cupLosses: 2,
+            pairWins: 7,
+            pairLosses: 11,
+            pairHomeWins: 5,
+            pairHomeLosses: 5,
+            pairAwayWins: 2,
+            pairAwayLosses: 5,
             pairCupWins: 0,
-            pairCupLosses: 0,
-            totalGamesPlayed: 21,
+            pairCupLosses: 1,
+            totalGamesPlayed: 45,
             dayPlayed: [
                 'Monday Combined Leeds',
                 'Monday Combined Leeds',
@@ -123,6 +125,30 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 'Tuesday Leeds',
                 'Tuesday Leeds',
                 'Tuesday Leeds',
+                'Monday Combined Leeds',
+                'Monday Combined Leeds',
+                'Monday Combined Leeds',
+                'Monday Combined Leeds',
+                'Monday Combined Leeds',
+                'Monday Combined Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Tuesday Leeds',
+                'Wednesday Pairs AireWharfe',
+                'Wednesday Pairs AireWharfe',
+                'Wednesday Pairs AireWharfe',
+                'Wednesday Pairs AireWharfe',
+                'Wednesday Pairs AireWharfe',
+                'Wednesday Pairs AireWharfe',
+                'Saturday Leeds (B)',
+                'Saturday Leeds (B)',
+                'Saturday Leeds (B)',
             ],
             results: [
                 'vanessa lancaster & paul bowes 21 - 8 james wright-green & peter simmons',
@@ -146,12 +172,38 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 'vanessa lancaster 6 - 21 nicholas ryder',
                 'vanessa lancaster 21 - 10 margaret johnstone',
                 'vanessa lancaster 21 - 11 nigel fotherby',
+                'vanessa lancaster 9 - 21 g hodder',
+                'vanessa lancaster & colin haque 21 - 16 graham hey & pat prosser',
+                'vanessa lancaster & colin haque 10 - 21 gina long & david smith',
+                'vanessa lancaster & colin haque 21 - 4 maveen tomlinson & peter colley',
+                'vanessa lancaster & colin haque 9 - 21 lyn dye & ron owen',
+                'vanessa lancaster & stuart potter 14 - 21 mark taylor & louie taylor',
+                'vanessa lancaster 21 - 9 maveen tomlinson',
+                'vanessa lancaster 14 - 21 phil lodge',
+                'vanessa lancaster 12 - 21 carl birkin',
+                'vanessa lancaster 21 - 12 brian scholes',
+                'vanessa lancaster 21 - 10 edward gerngross',
+                'vanessa lancaster 5 - 21 john ackroyd',
+                'vanessa lancaster 12 - 21 malcolm hallas',
+                'vanessa lancaster 17 - 21 steve barltrop',
+                'vanessa lancaster 6 - 21 ian lee',
+                'vanessa lancaster & laila packer 11 - 26 wendy allison & alan wittrick',
+                'vanessa lancaster & ken green 26 - 8 maureen morris & alan taylor',
+                'vanessa lancaster & colin haque 24 - 26 christine scott & ian scott',
+                'vanessa lancaster & derek wilson 26 - 25 frank baker & joan baker',
+                'vanessa lancaster & stuart potter 26 - 16 steve richardson & gordon robinson',
+                'vanessa lancaster & ken green 21 - 26 john hindle & philip mcstay',
+                'vanessa lancaster 21 - 16 tony morris',
+                'vanessa lancaster 21 - 10 gerry faller',
+                'vanessa lancaster 21 - 17 deborah stafford',
             ],
-            'monday combined leeds': { games: 7, wins: 2, aggDiff: -26 },
+            'monday combined leeds': { games: 13, wins: 4, aggDiff: -46 },
             'tuesday vets leeds': { games: 0, wins: 0, aggDiff: 0 },
             'thursday vets leeds': { games: 0, wins: 0, aggDiff: 0 },
             'saturday leeds': { games: 0, wins: 0, aggDiff: 0 },
-            'tuesday leeds': { aggDiff: -16, games: 14, wins: 7 },
+            'tuesday leeds': { aggDiff: -44, games: 23, wins: 10 },
+            'wednesday pairs airewharfe': { aggDiff: 7, games: 6, wins: 3 },
+            'saturday leeds (b)': { aggDiff: 20, games: 3, wins: 3 },
         });
     });
 });
