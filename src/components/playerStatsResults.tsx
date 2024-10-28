@@ -30,13 +30,13 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
                                 </thead>
                                 {structuredResultsArray.map((result, idx) => {
                                     const player = capitalizeText([
-                                        result.team.name,
+                                        result.home.name,
                                     ]);
-                                    const teamScore = result.team.score;
+                                    const teamScore = result.home.score;
                                     const opponent = capitalizeText([
-                                        result.opponent.name,
+                                        result.away.name,
                                     ]);
-                                    const opponentScore = result.opponent.score;
+                                    const opponentScore = result.away.score;
                                     return (
                                         <tbody key={idx}>
                                             <tr>

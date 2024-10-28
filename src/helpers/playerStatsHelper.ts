@@ -335,26 +335,26 @@ export function returnStructuredResultsArray(results: string[]) {
     const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
 
-        const teamPart = resultParts[0];
-        const playerScoreMatch = teamPart.match(/[0-9]+/g);
-        const playerScore = playerScoreMatch ? playerScoreMatch[0].trim() : '';
-        const player = teamPart.split(/[0-9]+/g)[0].trim();
+        const homePart = resultParts[0];
+        const homeScoreMatch = homePart.match(/[0-9]+/g);
+        const homeScore = homeScoreMatch ? homeScoreMatch[0].trim() : '';
+        const homePlayer = homePart.split(/[0-9]+/g)[0].trim();
 
-        const opponentPart = resultParts[1].split(' (')[0];
-        const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
-        const opponentScore = opponentScoreMatch
-            ? opponentScoreMatch[0].trim()
+        const awayPart = resultParts[1].split(' (')[0];
+        const awayScoreMatch = awayPart.match(/[0-9]+/g);
+        const awayScore = awayScoreMatch
+            ? awayScoreMatch[0].trim()
             : '';
-        const opponent = opponentPart.split(/[0-9]+/g)[1].trim();
+        const awayPlayer = awayPart.split(/[0-9]+/g)[1].trim();
 
         return {
-            team: {
-                name: player,
-                score: playerScore,
+            home: {
+                name: homePlayer,
+                score: homeScore,
             },
-            opponent: {
-                name: opponent,
-                score: opponentScore,
+            away: {
+                name: awayPlayer,
+                score: awayScore,
             },
         };
     });
