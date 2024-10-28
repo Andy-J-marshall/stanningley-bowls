@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatSummaryProps } from '../types/interfaces';
@@ -17,8 +17,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
 
-    let style;
-    let href;
+    let style: CSSProperties;
+    let href: string;
 
     if (displayPlayerStatsCallback) {
         style = {
