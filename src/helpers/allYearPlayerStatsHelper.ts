@@ -90,7 +90,6 @@ export function returnPlayerStatSummaryForAllYears(
 }
 
 // TODO also add UI test?
-// TODO add a test for this
 export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     // Create a deep copy of the statsArray to avoid modifying the original
     const statsArrayCopy: FullStatsFile[] = JSON.parse(
