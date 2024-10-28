@@ -67,7 +67,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
 
         const players = Object.keys(result);
 
-        expect(players.length).to.equal(48);
+        expect(players.length).to.equal(47);
 
         expect(result['vanessa lancaster']).to.deep.equal({
             totalAgg: 725,

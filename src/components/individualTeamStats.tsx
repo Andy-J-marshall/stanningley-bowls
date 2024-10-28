@@ -1,16 +1,14 @@
 import StatsTableDisplay from './statsTableDisplay';
 import PlayerStatSummary from './playerStatSummary';
-import { checkWinPercAndAverageAreNumbers } from '../helpers/statsHelper';
 import { config } from '../config';
 import { IndividualTeamStatsProps } from '../types/interfaces';
+import { returnPlayerStatsForTeam } from '../helpers/teamStatsHelper';
 
 function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const day = props.day;
     const displayName = props.displayname; // this is used by TeamTabs component
     const stats = props.stats;
     const playerStats = props.playerStats;
-
-    // TODO move to a helper function?
 
     if (stats) {
         const {
@@ -26,22 +24,7 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
             opponentAgg,
         } = stats;
 
-        const allPlayerStats = Object.keys(playerStats)
-            .sort()
-            .map((player) => {
-                const stats = playerStats[player][day.toLowerCase()];
-                const { games, wins, aggDiff } = stats;
-                let playerDayStats = {
-                    player,
-                    games,
-                    wins,
-                    average: aggDiff / games,
-                    winPerc: (wins / games) * 100,
-                };
-                playerDayStats =
-                    checkWinPercAndAverageAreNumbers(playerDayStats);
-                return playerDayStats;
-            });
+        const playerStatsForDay = returnPlayerStatsForTeam(playerStats, day);
 
         const totalDraws = awayDraws + homeDraws;
         const totalWins = awayWins + homeWins + cupWins;
@@ -73,7 +56,7 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
                     />
                     <br />
                     <h4>PLAYERS</h4>
-                    <PlayerStatSummary playerStats={allPlayerStats} />
+                    <PlayerStatSummary playerStats={playerStatsForDay} />
                 </div>
             );
         } else {

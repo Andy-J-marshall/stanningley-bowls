@@ -1,4 +1,8 @@
-import { TeamResultsStatsFile } from '../types/interfaces';
+import {
+    PlayerResultsStatsFile,
+    TeamResultsStatsFile,
+} from '../types/interfaces';
+import { checkWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     let combinedAwayWins = 0;
@@ -59,4 +63,26 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
         totalLosses,
         totalGames,
     };
+}
+
+export function returnPlayerStatsForTeam(
+    playerStats: PlayerResultsStatsFile,
+    day: string
+) {
+    const allPlayerStats = Object.keys(playerStats)
+        .sort()
+        .map((player) => {
+            const stats = playerStats[player][day.toLowerCase()];
+            const { games, wins, aggDiff } = stats;
+            let playerDayStats = {
+                player,
+                games,
+                wins,
+                average: aggDiff / games,
+                winPerc: (wins / games) * 100,
+            };
+            playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
+            return playerDayStats;
+        });
+    return allPlayerStats;
 }
