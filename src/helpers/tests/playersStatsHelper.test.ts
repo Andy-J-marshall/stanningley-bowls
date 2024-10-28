@@ -2,10 +2,10 @@ import { expect } from 'chai';
 import {
     returnPlayerStats,
     checkWinPercAndAverageAreNumbers,
-} from '../playersHelper';
+} from '../playerStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
-describe('#Players Tests', () => {
+describe('#playersStatsHelper Tests', () => {
     describe('#returnPlayerStats()', () => {
         let playerStats: any = stats2022.playerResults;
         let stats: any = returnPlayerStats(playerStats, 'paul bowes');
@@ -144,9 +144,9 @@ describe('#Players Tests', () => {
         it('Days Played', () => {
             expect(stats.allTeamsPlayedFor).to.deep.equal([
                 'Monday Combined Leeds',
-                'Tuesday Vets Leeds',
-                'Thursday Vets Leeds',
                 'Saturday Leeds',
+                'Thursday Vets Leeds',
+                'Tuesday Vets Leeds',
             ]);
         });
 

@@ -2,10 +2,10 @@ import { expect } from 'chai';
 import {
     findBiggestWin,
     returnStatsForPlayersInAllYears,
-} from '../playerStatsHelper';
+} from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
 
-describe('#StatsHelper Tests', () => {
+describe('#allYearPlayerStatsHelper Tests', () => {
     describe('#findBiggestWin()', () => {
         it('Biggest win found successfully', () => {
             const results = [

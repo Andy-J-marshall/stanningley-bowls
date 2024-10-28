@@ -1,6 +1,6 @@
 import StatsTableDisplay from './statsTableDisplay';
 import PlayerStatSummary from './playerStatSummary';
-import { checkWinPercAndAverageAreNumbers } from '../helpers/playersHelper';
+import { checkWinPercAndAverageAreNumbers } from '../helpers/playerStatsHelper';
 import { config } from '../config';
 import { IndividualTeamStatsProps } from '../types/interfaces';
 

@@ -1,232 +1,338 @@
+import { findBiggestWin } from './allYearPlayerStatsHelper';
 import { config } from '../config';
 import {
-    FullStatsFile,
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
-import {
-    checkWinPercAndAverageAreNumbers,
-    returnPlayerStats,
-} from './playersHelper';
 
-export function findBiggestWin(playerResults: string[]): string {
-    let bestWin = '';
-    if (playerResults) {
-        let bestWinMargin = 0;
-        playerResults.forEach((result) => {
-            const resultParts = result.split(' - ', 2);
-
-            const teamPart = resultParts[0];
-            const teamScoreMatch = teamPart.match(/[0-9]+/g);
-            const teamScore = teamScoreMatch
-                ? parseInt(teamScoreMatch[0].trim())
-                : 0;
-
-            const opponentPart = resultParts[1].split(' (')[0];
-            const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
-            const opponentScore = opponentScoreMatch
-                ? parseInt(opponentScoreMatch[0].trim())
-                : 1000; // Ensures invalid scores are not considered
-
-            const scoreDiff = teamScore - opponentScore;
-            if (scoreDiff > 0 && scoreDiff > bestWinMargin) {
-                bestWinMargin = scoreDiff;
-                bestWin = `${teamScore} - ${opponentScore}`;
-            }
-        });
-    }
-    return bestWin;
-}
-
-export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
-    const statsToDisplayArray: PlayerStatsSummary[] = [];
-    let playerNames: string[] = [];
-
-    statsArray.forEach((stat) => {
-        playerNames = playerNames.concat(Object.keys(stat.playerResults));
-    });
-    for (var i = 0; i < playerNames.length; ++i) {
-        for (var j = i + 1; j < playerNames.length; ++j) {
-            if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
-        }
+// TODO combined with playerStatsHelper file?
+export function returnPlayerStats(
+    playersStats: PlayerResultsStatsFile,
+    player: string
+) {
+    const stats = playersStats[player];
+    if (!stats) {
+        return null;
     }
 
-    playerNames.sort().forEach((player) => {
-        let stats = {
-            player,
-            games: 0,
-            wins: 0,
-            agg: 0,
-            aggAgainst: 0,
-            average: 0,
-            winPerc: 0,
-            singleGames: 0,
-            singlesWins: 0,
-            singlesAgg: 0,
-            singlesAggAgainst: 0,
-            singlesAverage: 0,
-            singlesWinPerc: 0,
-            pairsGames: 0,
-            pairsWins: 0,
-            pairsAgg: 0,
-            pairsAggAgainst: 0,
-            pairsAverage: 0,
-            pairsWinPerc: 0,
-        };
+    const {
+        totalAgg,
+        totalAggAgainst,
+        totalPairsAgg,
+        totalPairsAggAgainst,
+        awayLosses,
+        homeLosses,
+        cupLosses,
+        homeWins,
+        awayWins,
+        cupWins,
+        pairHomeWins,
+        pairAwayWins,
+        pairCupWins,
+        pairHomeLosses,
+        pairAwayLosses,
+        pairCupLosses,
+        pairLosses,
+        pairWins,
+        totalHomeAgg,
+        totalHomeAggAgainst,
+        totalAwayAgg,
+        totalAwayAggAgainst,
+        results,
+        dayPlayed,
+        totalPairsHomeAgg,
+        totalPairsHomeAggAgainst,
+        totalPairsAwayAgg,
+        totalPairsAwayAggAgainst,
+        availableAgg,
+        availablePairsAgg,
+        availableHomeAgg,
+        availableAwayAgg,
+        availablePairsHomeAgg,
+        availablePairsAwayAgg,
+    } = stats;
+    const p = playersStats[player];
 
-        statsArray.forEach((yearStats) => {
-            const playerStats = returnPlayerStats(
-                yearStats.playerResults,
-                player
-            );
+    // Wins and losses
+    const totalWins = awayWins + homeWins + cupWins;
+    const totalLosses = awayLosses + homeLosses + cupLosses;
+    const biggestWin = findBiggestWin(results);
 
-            if (playerStats) {
-                // All
-                stats.agg += playerStats.totalAgg;
-                stats.aggAgainst += playerStats.totalAggAgainst;
-                stats.wins += playerStats.totalWins;
-                stats.games += playerStats.gamesPlayed;
+    // Games played
+    const homeGamesPlayed = homeWins + homeLosses;
+    const awayGamesPlayed = awayWins + awayLosses;
+    const cupGamesPlayed = cupWins + cupLosses;
+    const gamesPlayed = homeGamesPlayed + awayGamesPlayed + cupGamesPlayed;
+    const pairsGames = pairLosses + pairWins;
+    const singlesGames = gamesPlayed - pairsGames;
 
-                // Singles
-                stats.singlesAgg += playerStats.singlesAgg;
-                stats.singlesAggAgainst += playerStats.singlesAggAgainst;
-                stats.singlesWins +=
-                    playerStats.totalWins - playerStats.pairWins;
-                stats.singleGames += playerStats.singlesGames;
+    const pairHomeGamesPlayed = pairHomeWins + pairHomeLosses;
+    const pairAwayGamesPlayed = pairAwayWins + pairAwayLosses;
+    const pairCupGamesPlayed = pairCupWins + pairCupLosses;
 
-                // Pairs
-                stats.pairsAgg += playerStats.totalPairsAgg;
-                stats.pairsAggAgainst += playerStats.totalPairsAggAgainst;
-                stats.pairsWins += playerStats.pairWins;
-                stats.pairsGames += playerStats.pairsGames;
-            }
-        });
-        (stats.winPerc = (stats.wins / stats.games) * 100),
-            (stats.singlesWinPerc =
-                (stats.singlesWins / stats.singleGames) * 100),
-            (stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100),
-            (stats.average = (stats.agg - stats.aggAgainst) / stats.games);
-        stats.singlesAverage =
-            (stats.singlesAgg - stats.singlesAggAgainst) / stats.singleGames;
-        stats.pairsAverage =
-            (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
+    const singlesHomeGamesPlayed = homeGamesPlayed - pairHomeGamesPlayed;
+    const singlesAwayGamesPlayed = awayGamesPlayed - pairAwayGamesPlayed;
+    const singlesCupGamesPlayed =
+        singlesGames - singlesHomeGamesPlayed - singlesAwayGamesPlayed;
 
-        stats = checkWinPercAndAverageAreNumbers(stats);
+    // Averages
+    const average = (totalAgg - totalAggAgainst) / gamesPlayed;
+    const homeAverage = (totalHomeAgg - totalHomeAggAgainst) / homeGamesPlayed;
+    const awayAverage = (totalAwayAgg - totalAwayAggAgainst) / awayGamesPlayed;
+    const cupAgg = totalAgg - totalAwayAgg - totalHomeAgg;
+    const cupAggAgainst =
+        totalAggAgainst - totalAwayAggAgainst - totalHomeAggAgainst;
+    const cupAverage = (cupAgg - cupAggAgainst) / cupGamesPlayed;
 
-        statsToDisplayArray.push(stats);
-    });
-    return statsToDisplayArray;
-}
+    // Team specific stats
+    const possibleTeamNames = config.allTeamsInLeaguesSince2013;
 
-// TODO add a test for this
-export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
-    // Create a deep copy of the statsArray to avoid modifying the original
-    const statsArrayCopy: FullStatsFile[] = JSON.parse(
-        JSON.stringify(statsArray)
+    const propertyNames = Object.keys(p);
+    const teamsFound = propertyNames.filter((property) =>
+        possibleTeamNames.includes(property.toLowerCase())
     );
 
-    const collatedStats: PlayerResultsStatsFile = {};
+    const allTeamStats = teamsFound.map((team) => {
+        const teamStats = p[team];
+        const teamName = team;
 
-    statsArrayCopy.forEach((yearStats) => {
-        Object.keys(yearStats.playerResults).forEach((player) => {
-            const yearPlayerStats = yearStats.playerResults[player];
+        const teamWins = teamStats.wins;
+        const teamLosses = teamStats.games - teamStats.wins;
+        const teamGames = teamStats.games;
 
-            if (!collatedStats[player]) {
-                collatedStats[player] = {
-                    ...yearPlayerStats,
-                };
-            } else {
-                collatedStats[player].totalAgg += yearPlayerStats.totalAgg;
-                collatedStats[player].totalAggAgainst +=
-                    yearPlayerStats.totalAggAgainst;
-                collatedStats[player].availableAgg +=
-                    yearPlayerStats.availableAgg;
-                collatedStats[player].availablePairsAgg +=
-                    yearPlayerStats.availablePairsAgg;
-                collatedStats[player].availableHomeAgg +=
-                    yearPlayerStats.availableHomeAgg;
-                collatedStats[player].availableAwayAgg +=
-                    yearPlayerStats.availableAwayAgg;
-                collatedStats[player].availablePairsHomeAgg +=
-                    yearPlayerStats.availablePairsHomeAgg;
-                collatedStats[player].availablePairsAwayAgg +=
-                    yearPlayerStats.availablePairsAwayAgg;
-                collatedStats[player].totalPairsAgg +=
-                    yearPlayerStats.totalPairsAgg;
-                collatedStats[player].totalPairsAggAgainst +=
-                    yearPlayerStats.totalPairsAggAgainst;
-                collatedStats[player].totalHomeAgg +=
-                    yearPlayerStats.totalHomeAgg;
-                collatedStats[player].totalHomeAggAgainst +=
-                    yearPlayerStats.totalHomeAggAgainst;
-                collatedStats[player].totalPairsHomeAgg +=
-                    yearPlayerStats.totalPairsHomeAgg;
-                collatedStats[player].totalPairsHomeAggAgainst +=
-                    yearPlayerStats.totalPairsHomeAggAgainst;
-                collatedStats[player].totalAwayAgg +=
-                    yearPlayerStats.totalAwayAgg;
-                collatedStats[player].totalAwayAggAgainst +=
-                    yearPlayerStats.totalAwayAggAgainst;
-                collatedStats[player].totalPairsAwayAgg +=
-                    yearPlayerStats.totalPairsAwayAgg;
-                collatedStats[player].totalPairsAwayAggAgainst +=
-                    yearPlayerStats.totalPairsAwayAggAgainst;
-                collatedStats[player].homeWins += yearPlayerStats.homeWins;
-                collatedStats[player].homeLosses += yearPlayerStats.homeLosses;
-                collatedStats[player].awayWins += yearPlayerStats.awayWins;
-                collatedStats[player].awayLosses += yearPlayerStats.awayLosses;
-                collatedStats[player].cupWins += yearPlayerStats.cupWins;
-                collatedStats[player].cupLosses += yearPlayerStats.cupLosses;
-                collatedStats[player].pairWins += yearPlayerStats.pairWins;
-                collatedStats[player].pairLosses += yearPlayerStats.pairLosses;
-                collatedStats[player].pairHomeWins +=
-                    yearPlayerStats.pairHomeWins;
-                collatedStats[player].pairHomeLosses +=
-                    yearPlayerStats.pairHomeLosses;
-                collatedStats[player].pairAwayWins +=
-                    yearPlayerStats.pairAwayWins;
-                collatedStats[player].pairAwayLosses +=
-                    yearPlayerStats.pairAwayLosses;
-                collatedStats[player].pairCupWins +=
-                    yearPlayerStats.pairCupWins;
-                collatedStats[player].pairCupLosses +=
-                    yearPlayerStats.pairCupLosses;
-                collatedStats[player].totalGamesPlayed +=
-                    yearPlayerStats.totalGamesPlayed;
-                collatedStats[player].dayPlayed = [
-                    ...collatedStats[player].dayPlayed,
-                    ...yearPlayerStats.dayPlayed,
-                ];
-                collatedStats[player].results = [
-                    ...collatedStats[player].results,
-                    ...yearPlayerStats.results,
-                ];
-                config.allTeamsInLeaguesSince2013.forEach((team) => {
-                    if (
-                        yearPlayerStats[team] &&
-                        yearPlayerStats[team].games > 0
-                    ) {
-                        if (!collatedStats[player][team]) {
-                            // Initialize the team's stats if they don't exist in collatedStats
-                            collatedStats[player][team] = {
-                                aggDiff: yearPlayerStats[team].aggDiff,
-                                games: yearPlayerStats[team].games,
-                                wins: yearPlayerStats[team].wins,
-                            };
-                        } else {
-                            // Accumulate the team's stats
-                            collatedStats[player][team].aggDiff +=
-                                yearPlayerStats[team].aggDiff;
-                            collatedStats[player][team].games +=
-                                yearPlayerStats[team].games;
-                            collatedStats[player][team].wins +=
-                                yearPlayerStats[team].wins;
-                        }
-                    }
-                });
-            }
-        });
+        const teamAvg = teamGames > 0 ? teamStats.aggDiff / teamGames : null;
+        const teamWinPerc =
+            teamWins && teamGames > 0 ? (teamWins / teamGames) * 100 : 0;
+
+        return {
+            teamName,
+            teamWins,
+            teamLosses,
+            teamGames,
+            teamAvg,
+            teamWinPerc,
+        };
     });
 
-    return collatedStats;
+    let allTeamsPlayedFor: string[] = [];
+    dayPlayed.forEach((day: string) => {
+        if (!allTeamsPlayedFor.includes(day)) {
+            allTeamsPlayedFor.push(day);
+        }
+    });
+    allTeamsPlayedFor.sort();
+
+    // Pairs & singles
+    const singlesAgg = totalAgg - totalPairsAgg;
+    const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
+
+    const singlesAvg = (singlesAgg - singlesAggAgainst) / singlesGames;
+    const pairsAvg = (totalPairsAgg - totalPairsAggAgainst) / pairsGames;
+
+    const totalSinglesHomeAgg = totalHomeAgg - totalPairsHomeAgg;
+    const totalSinglesHomeAggAgainst =
+        totalHomeAggAgainst - totalPairsHomeAggAgainst;
+    const totalSinglesAwayAgg = totalAwayAgg - totalPairsAwayAgg;
+    const totalSinglesAwayAggAgainst =
+        totalAwayAggAgainst - totalPairsAwayAggAgainst;
+
+    const availableCupAgg = availableAgg - availableHomeAgg - availableAwayAgg;
+    const availablePairsCupAgg =
+        availablePairsAgg - availablePairsHomeAgg - availablePairsAwayAgg;
+    const totalPairsCupAgg =
+        totalPairsAgg - totalPairsHomeAgg - totalPairsAwayAgg;
+    const totalPairsCupAggAgainst =
+        totalPairsAggAgainst -
+        totalPairsHomeAggAgainst -
+        totalPairsAwayAggAgainst;
+    const totalSinglesCupAgg = cupAgg - totalPairsCupAgg;
+    const totalSinglesCupAggAgainst = cupAggAgainst - totalPairsCupAggAgainst;
+
+    const pairsCupAgg = totalPairsAgg - totalPairsAwayAgg - totalPairsHomeAgg;
+    const pairsCupAggAgainst =
+        totalPairsAggAgainst -
+        totalPairsAwayAggAgainst -
+        totalPairsHomeAggAgainst;
+
+    // Singles averages
+    const singlesHomeAverage =
+        (totalHomeAgg -
+            totalPairsHomeAgg -
+            (totalHomeAggAgainst - totalPairsHomeAggAgainst)) /
+        (homeGamesPlayed - pairHomeGamesPlayed);
+    const singlesAwayAverage =
+        (totalAwayAgg -
+            totalPairsAwayAgg -
+            (totalAwayAggAgainst - totalPairsAwayAggAgainst)) /
+        (awayGamesPlayed - pairAwayGamesPlayed);
+    const singlesCupAverage =
+        (cupAgg - pairsCupAgg - (cupAggAgainst - pairsCupAggAgainst)) /
+        (cupGamesPlayed - pairCupGamesPlayed);
+
+    // Pairs averages
+    const pairsHomeAverage =
+        (totalPairsHomeAgg - totalPairsHomeAggAgainst) / pairHomeGamesPlayed;
+    const pairsAwayAverage =
+        (totalPairsAwayAgg - totalPairsAwayAggAgainst) / pairAwayGamesPlayed;
+    const pairsCupAverage =
+        (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
+
+    return {
+        totalAgg,
+        totalAggAgainst,
+        totalPairsAgg,
+        totalPairsAggAgainst,
+        totalHomeAgg,
+        totalHomeAggAgainst,
+        totalAwayAgg,
+        totalAwayAggAgainst,
+        singlesAgg,
+        singlesAggAgainst,
+        totalPairsHomeAgg,
+        totalPairsHomeAggAgainst,
+        totalPairsAwayAgg,
+        totalPairsAwayAggAgainst,
+        totalPairsCupAgg,
+        totalPairsCupAggAgainst,
+        totalSinglesHomeAgg,
+        totalSinglesHomeAggAgainst,
+        totalSinglesAwayAgg,
+        totalSinglesAwayAggAgainst,
+        totalSinglesCupAgg,
+        totalSinglesCupAggAgainst,
+        cupAgg,
+        cupAggAgainst,
+        awayLosses,
+        homeLosses,
+        pairLosses,
+        cupLosses,
+        totalLosses,
+        pairHomeLosses,
+        pairAwayLosses,
+        pairCupLosses,
+        homeWins,
+        awayWins,
+        cupWins,
+        pairWins,
+        totalWins,
+        pairHomeWins,
+        pairAwayWins,
+        pairCupWins,
+        gamesPlayed,
+        homeGamesPlayed,
+        awayGamesPlayed,
+        singlesHomeGamesPlayed,
+        singlesAwayGamesPlayed,
+        singlesCupGamesPlayed,
+        pairHomeGamesPlayed,
+        pairAwayGamesPlayed,
+        pairCupGamesPlayed,
+        cupGamesPlayed,
+        pairsGames,
+        singlesGames,
+        average,
+        homeAverage,
+        awayAverage,
+        cupAverage,
+        singlesAvg,
+        pairsAvg,
+        singlesHomeAverage,
+        singlesAwayAverage,
+        singlesCupAverage,
+        pairsHomeAverage,
+        pairsAwayAverage,
+        pairsCupAverage,
+        allTeamStats,
+        allTeamsPlayedFor,
+        biggestWin,
+        results,
+        availableAgg,
+        availablePairsAgg,
+        availableHomeAgg,
+        availableAwayAgg,
+        availableCupAgg,
+        availablePairsHomeAgg,
+        availablePairsAwayAgg,
+        availablePairsCupAgg,
+    };
+}
+
+export function checkWinPercAndAverageAreNumbers(stats: any) {
+    let verifiedStats = stats;
+
+    if (isNaN(verifiedStats.winPerc)) {
+        verifiedStats.winPerc = 0;
+    }
+    if (isNaN(verifiedStats.average)) {
+        verifiedStats.average = -99;
+    }
+    if (isNaN(verifiedStats.singlesWinPerc)) {
+        verifiedStats.singlesWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.singlesAverage)) {
+        verifiedStats.singlesAverage = -99;
+    }
+    if (isNaN(verifiedStats.pairsWinPerc)) {
+        verifiedStats.pairsWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.pairsAverage)) {
+        verifiedStats.pairsAverage = -99;
+    }
+
+    return verifiedStats;
+}
+
+export function collatePlayerStats(
+    statsToUse: PlayerResultsStatsFile,
+    players: string[]
+) {
+    const statsArray: PlayerStatsSummary[] = [];
+    players.sort().forEach((player) => {
+        const playerStats = returnPlayerStats(statsToUse, player);
+        if (playerStats) {
+            let stats = {
+                // Total
+                player,
+                games: playerStats.gamesPlayed,
+                wins: playerStats.totalWins,
+                winPerc:
+                    (playerStats.totalWins / playerStats.gamesPlayed) * 100,
+                agg: playerStats.totalAgg,
+                aggAgainst: playerStats.totalAggAgainst,
+                average:
+                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
+                    playerStats.gamesPlayed,
+
+                // Singles
+                singleGames: playerStats.singlesGames,
+                singlesWins: playerStats.totalWins - playerStats.pairWins,
+                singlesWinPerc:
+                    ((playerStats.totalWins - playerStats.pairWins) /
+                        playerStats.singlesGames) *
+                    100,
+                singlesAgg: playerStats.singlesAgg,
+                singlesAggAgainst: playerStats.singlesAggAgainst,
+                singlesAverage:
+                    (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
+                    playerStats.singlesGames,
+
+                // Pairs
+                pairsGames: playerStats.pairsGames,
+                pairsWins: playerStats.pairWins,
+                pairsWinPerc:
+                    (playerStats.pairWins / playerStats.pairsGames) * 100,
+                pairsAgg: playerStats.totalPairsAgg,
+                pairsAggAgainst: playerStats.totalPairsAggAgainst,
+                pairsAverage:
+                    (playerStats.totalPairsAgg -
+                        playerStats.totalPairsAggAgainst) /
+                    playerStats.pairsGames,
+            };
+
+            stats = checkWinPercAndAverageAreNumbers(stats);
+
+            statsArray.push(stats);
+        }
+    });
+    return statsArray;
 }

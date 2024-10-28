@@ -7,7 +7,7 @@ import Search from '../components/search';
 import {
     collatePlayerStats,
     returnPlayerStats,
-} from '../helpers/playersHelper';
+} from '../helpers/playerStatsHelper';
 import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
@@ -15,7 +15,7 @@ import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
 import {
     collateStatsFromAllYears,
     returnStatsForPlayersInAllYears,
-} from '../helpers/playerStatsHelper';
+} from '../helpers/allYearPlayerStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
