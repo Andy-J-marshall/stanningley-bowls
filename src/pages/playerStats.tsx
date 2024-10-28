@@ -13,7 +13,7 @@ import { config } from '../config';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
 import {
-    collateStatsFromAllYears,
+    returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
 
@@ -165,7 +165,7 @@ function PlayerStats(props: PlayerStatsProps) {
     function showDetailedPlayerStats(playerName: string) {
         const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
-            ? collateStatsFromAllYears(allYearsStatsToUseArray)
+            ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
             : statsToUse;
 
         const playersListToUse = showStatsSinceStart ? allPlayers : players;
