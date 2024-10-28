@@ -2,11 +2,11 @@ import playerStatsHelper
 
 # Team info (lowercase)
 teamNames = [
-    'Stanningley', 
-    'Stanningley A', 
+    'Stanningley',
+    'Stanningley A',
     'Stanningley B',
-    'Stanningley Park', 
-    'Stanningley Park A', 
+    'Stanningley Park',
+    'Stanningley Park A',
     'Stanningley Park B'
 ]
 displayTeamName = 'Stanningley'
@@ -67,12 +67,12 @@ players = [
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
 duplicatePlayerNames = [
     'duncan mc phail', 
-    'phillip thornton', 
-    'philip thornton',
     'stuart watson', 
     'andrew marshall', 
     'cliff brogie', 
-    'james moorin'
+    'james moorin',
+    'phillip thornton', 
+    'philip thornton',
 ]
 
 # Add alternative names for players (lowercase)
@@ -111,27 +111,26 @@ traitorPlayers = {
 
 # Other leagues that players play in for other teams (lowercase)
 otherLeagues = [
-    'Tuesday Mirfield', 
+    'Tuesday Mirfield',
     'Wednesday Spen Valley',
     'Monday AireWharfe',
     'Tuesday AireWharfe',
     'Monday Bradford',
     'Wednesday Half Holiday Bradford',
-    'Thursday Vets Bradford', 
-    'Saturday Bradford'
+    'Thursday Vets Bradford',
+    'Saturday Bradford',
 ]
 
 # Other teams that players play for (lowercase)
 otherTeams = [
-    'new wortley', 
-    'new armley', 
-    'pudsey', 
-    'pudsey park', 
-    'burley', 
-    'wibsey', 
-    'littlemoor', 
-    'farsley', 
-    'bramley'
+    'pudsey',
+    'burley',
+    'littlemoor',
+    'farsley',
+    'new wortley',
+    'wibsey',
+    'bramley',
+    'new armley',
 ]
 
 allDays = teamDays + otherLeagues
