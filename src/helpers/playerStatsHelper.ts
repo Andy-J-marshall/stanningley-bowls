@@ -119,113 +119,111 @@ export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
 }
 
 // TODO add a test for this
-// // TODO this doesn't work when processing a team that already exists in collated stats
-// Seems to be an issue with collated stats going up every time the method is called?
 export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
+    // Create a deep copy of the statsArray to avoid modifying the original
+    const statsArrayCopy: FullStatsFile[] = JSON.parse(
+        JSON.stringify(statsArray)
+    );
+
     const collatedStats: PlayerResultsStatsFile = {};
 
-    statsArray.forEach((yearStats) => {
+    statsArrayCopy.forEach((yearStats) => {
         Object.keys(yearStats.playerResults).forEach((player) => {
-            // TODO remove
-            if (player.toLowerCase() === 'andy marshall') {
-                const yearPlayerStats = yearStats.playerResults[player];
+            const yearPlayerStats = yearStats.playerResults[player];
 
-                if (!collatedStats[player]) {
-                    collatedStats[player] = {
-                        ...yearPlayerStats,
-                    };
-                } else {
-                    collatedStats[player].totalAgg += yearPlayerStats.totalAgg;
-                    collatedStats[player].totalAggAgainst +=
-                        yearPlayerStats.totalAggAgainst;
-                    collatedStats[player].availableAgg +=
-                        yearPlayerStats.availableAgg;
-                    collatedStats[player].availablePairsAgg +=
-                        yearPlayerStats.availablePairsAgg;
-                    collatedStats[player].availableHomeAgg +=
-                        yearPlayerStats.availableHomeAgg;
-                    collatedStats[player].availableAwayAgg +=
-                        yearPlayerStats.availableAwayAgg;
-                    collatedStats[player].availablePairsHomeAgg +=
-                        yearPlayerStats.availablePairsHomeAgg;
-                    collatedStats[player].availablePairsAwayAgg +=
-                        yearPlayerStats.availablePairsAwayAgg;
-                    collatedStats[player].totalPairsAgg +=
-                        yearPlayerStats.totalPairsAgg;
-                    collatedStats[player].totalPairsAggAgainst +=
-                        yearPlayerStats.totalPairsAggAgainst;
-                    collatedStats[player].totalHomeAgg +=
-                        yearPlayerStats.totalHomeAgg;
-                    collatedStats[player].totalHomeAggAgainst +=
-                        yearPlayerStats.totalHomeAggAgainst;
-                    collatedStats[player].totalPairsHomeAgg +=
-                        yearPlayerStats.totalPairsHomeAgg;
-                    collatedStats[player].totalPairsHomeAggAgainst +=
-                        yearPlayerStats.totalPairsHomeAggAgainst;
-                    collatedStats[player].totalAwayAgg +=
-                        yearPlayerStats.totalAwayAgg;
-                    collatedStats[player].totalAwayAggAgainst +=
-                        yearPlayerStats.totalAwayAggAgainst;
-                    collatedStats[player].totalPairsAwayAgg +=
-                        yearPlayerStats.totalPairsAwayAgg;
-                    collatedStats[player].totalPairsAwayAggAgainst +=
-                        yearPlayerStats.totalPairsAwayAggAgainst;
-                    collatedStats[player].homeWins += yearPlayerStats.homeWins;
-                    collatedStats[player].homeLosses +=
-                        yearPlayerStats.homeLosses;
-                    collatedStats[player].awayWins += yearPlayerStats.awayWins;
-                    collatedStats[player].awayLosses +=
-                        yearPlayerStats.awayLosses;
-                    collatedStats[player].cupWins += yearPlayerStats.cupWins;
-                    collatedStats[player].cupLosses +=
-                        yearPlayerStats.cupLosses;
-                    collatedStats[player].pairWins += yearPlayerStats.pairWins;
-                    collatedStats[player].pairLosses +=
-                        yearPlayerStats.pairLosses;
-                    collatedStats[player].pairHomeWins +=
-                        yearPlayerStats.pairHomeWins;
-                    collatedStats[player].pairHomeLosses +=
-                        yearPlayerStats.pairHomeLosses;
-                    collatedStats[player].pairAwayWins +=
-                        yearPlayerStats.pairAwayWins;
-                    collatedStats[player].pairAwayLosses +=
-                        yearPlayerStats.pairAwayLosses;
-                    collatedStats[player].pairCupWins +=
-                        yearPlayerStats.pairCupWins;
-                    collatedStats[player].pairCupLosses +=
-                        yearPlayerStats.pairCupLosses;
-                    collatedStats[player].totalGamesPlayed +=
-                        yearPlayerStats.totalGamesPlayed;
-                    collatedStats[player].dayPlayed = [
-                        ...collatedStats[player].dayPlayed,
-                        ...yearPlayerStats.dayPlayed,
-                    ];
-                    collatedStats[player].results = [
-                        ...collatedStats[player].results,
-                        ...yearPlayerStats.results,
-                    ];
-                    config.allTeamsInLeaguesSince2013.forEach((team) => {
-                        if (
-                            yearPlayerStats[team] &&
-                            yearPlayerStats[team].games > 0
-                        ) {
-                            if (!collatedStats[player][team]) {
-                                collatedStats[player][team] = {
-                                    aggDiff: yearPlayerStats[team].aggDiff,
-                                    games: yearPlayerStats[team].games,
-                                    wins: yearPlayerStats[team].wins,
-                                };
-                            } else {
-                                collatedStats[player][team].aggDiff +=
-                                    yearPlayerStats[team].aggDiff;
-                                collatedStats[player][team].games +=
-                                    yearPlayerStats[team].games;
-                                collatedStats[player][team].wins +=
-                                    yearPlayerStats[team].wins;
-                            }
+            if (!collatedStats[player]) {
+                collatedStats[player] = {
+                    ...yearPlayerStats,
+                };
+            } else {
+                collatedStats[player].totalAgg += yearPlayerStats.totalAgg;
+                collatedStats[player].totalAggAgainst +=
+                    yearPlayerStats.totalAggAgainst;
+                collatedStats[player].availableAgg +=
+                    yearPlayerStats.availableAgg;
+                collatedStats[player].availablePairsAgg +=
+                    yearPlayerStats.availablePairsAgg;
+                collatedStats[player].availableHomeAgg +=
+                    yearPlayerStats.availableHomeAgg;
+                collatedStats[player].availableAwayAgg +=
+                    yearPlayerStats.availableAwayAgg;
+                collatedStats[player].availablePairsHomeAgg +=
+                    yearPlayerStats.availablePairsHomeAgg;
+                collatedStats[player].availablePairsAwayAgg +=
+                    yearPlayerStats.availablePairsAwayAgg;
+                collatedStats[player].totalPairsAgg +=
+                    yearPlayerStats.totalPairsAgg;
+                collatedStats[player].totalPairsAggAgainst +=
+                    yearPlayerStats.totalPairsAggAgainst;
+                collatedStats[player].totalHomeAgg +=
+                    yearPlayerStats.totalHomeAgg;
+                collatedStats[player].totalHomeAggAgainst +=
+                    yearPlayerStats.totalHomeAggAgainst;
+                collatedStats[player].totalPairsHomeAgg +=
+                    yearPlayerStats.totalPairsHomeAgg;
+                collatedStats[player].totalPairsHomeAggAgainst +=
+                    yearPlayerStats.totalPairsHomeAggAgainst;
+                collatedStats[player].totalAwayAgg +=
+                    yearPlayerStats.totalAwayAgg;
+                collatedStats[player].totalAwayAggAgainst +=
+                    yearPlayerStats.totalAwayAggAgainst;
+                collatedStats[player].totalPairsAwayAgg +=
+                    yearPlayerStats.totalPairsAwayAgg;
+                collatedStats[player].totalPairsAwayAggAgainst +=
+                    yearPlayerStats.totalPairsAwayAggAgainst;
+                collatedStats[player].homeWins += yearPlayerStats.homeWins;
+                collatedStats[player].homeLosses += yearPlayerStats.homeLosses;
+                collatedStats[player].awayWins += yearPlayerStats.awayWins;
+                collatedStats[player].awayLosses += yearPlayerStats.awayLosses;
+                collatedStats[player].cupWins += yearPlayerStats.cupWins;
+                collatedStats[player].cupLosses += yearPlayerStats.cupLosses;
+                collatedStats[player].pairWins += yearPlayerStats.pairWins;
+                collatedStats[player].pairLosses += yearPlayerStats.pairLosses;
+                collatedStats[player].pairHomeWins +=
+                    yearPlayerStats.pairHomeWins;
+                collatedStats[player].pairHomeLosses +=
+                    yearPlayerStats.pairHomeLosses;
+                collatedStats[player].pairAwayWins +=
+                    yearPlayerStats.pairAwayWins;
+                collatedStats[player].pairAwayLosses +=
+                    yearPlayerStats.pairAwayLosses;
+                collatedStats[player].pairCupWins +=
+                    yearPlayerStats.pairCupWins;
+                collatedStats[player].pairCupLosses +=
+                    yearPlayerStats.pairCupLosses;
+                collatedStats[player].totalGamesPlayed +=
+                    yearPlayerStats.totalGamesPlayed;
+                collatedStats[player].dayPlayed = [
+                    ...collatedStats[player].dayPlayed,
+                    ...yearPlayerStats.dayPlayed,
+                ];
+                collatedStats[player].results = [
+                    ...collatedStats[player].results,
+                    ...yearPlayerStats.results,
+                ];
+                config.allTeamsInLeaguesSince2013.forEach((team) => {
+                    if (
+                        yearPlayerStats[team] &&
+                        yearPlayerStats[team].games > 0
+                    ) {
+                        if (!collatedStats[player][team]) {
+                            // Initialize the team's stats if they don't exist in collatedStats
+                            collatedStats[player][team] = {
+                                aggDiff: yearPlayerStats[team].aggDiff,
+                                games: yearPlayerStats[team].games,
+                                wins: yearPlayerStats[team].wins,
+                            };
+                        } else {
+                            // Accumulate the team's stats
+                            collatedStats[player][team].aggDiff +=
+                                yearPlayerStats[team].aggDiff;
+                            collatedStats[player][team].games +=
+                                yearPlayerStats[team].games;
+                            collatedStats[player][team].wins +=
+                                yearPlayerStats[team].wins;
                         }
-                    });
-                }
+                    }
+                });
             }
         });
     });
