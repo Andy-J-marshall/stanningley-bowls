@@ -89,7 +89,6 @@ export function returnPlayerStatSummaryForAllYears(
     return statsToDisplayArray;
 }
 
-// TODO also add UI test?
 export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     // Create a deep copy of the statsArray to avoid modifying the original
     const statsArrayCopy: FullStatsFile[] = JSON.parse(

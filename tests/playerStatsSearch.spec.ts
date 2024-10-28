@@ -26,7 +26,7 @@ test('All players appear by default', async () => {
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
-test(`Stats search bar can show all player stats`, async () => {
+test('Stats search bar can show all player stats', async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.searchForPlayer('Paul Bowes');
     await playerStatsPage.checkPlayerIsReturned();
@@ -36,7 +36,7 @@ test(`Stats search bar can show all player stats`, async () => {
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
-test(`Clicking back to summary button returns all stats`, async () => {
+test('Clicking back to summary button returns all stats', async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.searchForPlayer('Alyssa Randell');
     await playerStatsPage.checkPlayerIsReturned();
@@ -45,6 +45,6 @@ test(`Clicking back to summary button returns all stats`, async () => {
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
-test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
+test('Stats year dropdown appears if there are multiple years of stats available', async () => {
     await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
 });
