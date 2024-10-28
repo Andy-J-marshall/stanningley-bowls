@@ -97,7 +97,6 @@ export interface PlayerStatsComponentsProps {
     stats: AggregatedPlayerStats;
 }
 
-
 export interface RecordsTableDisplayProps {
     day?: string;
     minGames: number;
@@ -157,6 +156,11 @@ export interface PlayerStatsTeamsProps {
             teamWinPerc: number;
         }[];
     };
+}
+
+export interface ConfigTeamData {
+    teamNames: string[];
+    bTeamForLeagueBool: boolean;
 }
 
 export interface FullStatsFile {
