@@ -21,6 +21,7 @@ function TeamStats(props: TeamStatsProps) {
         window.scrollTo(0, 0);
     });
 
+    // TODO move to a helper function?
     function returnTeamComponents() {
         return config.historicTeamInfo.map((teamData) => {
             let teamName = '';

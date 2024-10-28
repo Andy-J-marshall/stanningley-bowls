@@ -24,6 +24,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         }
     }
 
+    // TODO move to a helper function?
     function orderPlayers(orderByStatPropertyName: string) {
         const order = [...playerStats].sort((p1: any, p2: any) =>
             p1[orderByStatPropertyName] < p2[orderByStatPropertyName]

@@ -14,6 +14,8 @@ function Records(props: RecordsProps) {
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
     const players = Object.keys(playerResults);
 
+    // TODO move to a helper function?
+
     const minGamesForOverallRecords = 15;
     const minGamesForTeamRecords = 11;
 

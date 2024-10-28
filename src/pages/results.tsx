@@ -16,6 +16,8 @@ function Results(props: ResultsProps) {
 
     const { teamResults } = stats;
 
+    // TODO move to a helper function?
+
     let resultsFound = false;
     let resultsArray;
 

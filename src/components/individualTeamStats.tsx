@@ -10,6 +10,8 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const stats = props.stats;
     const playerStats = props.playerStats;
 
+    // TODO move to a helper function?
+
     if (stats) {
         const {
             awayWins,

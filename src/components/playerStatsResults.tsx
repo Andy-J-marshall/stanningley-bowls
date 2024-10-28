@@ -7,6 +7,8 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
 
     const { results } = stats;
+
+    // TODO move to a helper function?
     const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
 
