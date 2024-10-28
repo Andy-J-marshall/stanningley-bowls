@@ -166,7 +166,7 @@ describe('#playersStatsHelper Tests', () => {
             expect(biggestWin).to.equal('21 - 0');
         });
 
-        it('Days with no games show as are not returned', () => {
+        it('Days with no games are not returned', () => {
             const { allTeamStats } = stats;
             const tuesdayEvening = allTeamStats.find((team: any) => {
                 return team.teamName === 'tuesday leeds';

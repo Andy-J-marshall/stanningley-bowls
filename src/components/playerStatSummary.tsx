@@ -8,15 +8,14 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
-
-    playerStats = playerStats.filter((player) => player.games > 0);
-
+    
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
     const [orderByAverageBool, setOrderByAverageBool] = useState(false);
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
-
+    
+    playerStats = playerStats.filter((player) => player.games > 0);
     let style: CSSProperties;
     let href: string;
 
@@ -41,7 +40,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         }
     }
 
-    // TODO move to a helper function?
     function orderPlayers(orderByStatPropertyName: string) {
         const order = [...playerStats].sort((p1: any, p2: any) =>
             p1[orderByStatPropertyName] < p2[orderByStatPropertyName]

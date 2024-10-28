@@ -2,7 +2,7 @@ import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
-import { returnResultsArray as returnStructuredResultsArray } from '../helpers/playerStatsHelper';
+import { returnStructuredResultsArray } from '../helpers/playerStatsHelper';
 
 function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const stats = props.stats;

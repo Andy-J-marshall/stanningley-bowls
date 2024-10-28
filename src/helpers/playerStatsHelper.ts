@@ -331,7 +331,7 @@ export function returnPlayerStatSummary(
 }
 
 // TODO create test
-export function returnResultsArray(results: string[]) {
+export function returnStructuredResultsArray(results: string[]) {
     const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
 
