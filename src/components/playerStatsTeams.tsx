@@ -5,8 +5,8 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
 
     const { allTeamStats } = stats;
+    allTeamStats.sort((a, b) => a.teamName.localeCompare(b.teamName));
 
-    // TODO order the allTeamStats by team name
     return (
         <div id="player-stats-teams">
             <Accordion.Item eventKey="4">

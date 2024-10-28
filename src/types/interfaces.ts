@@ -292,7 +292,6 @@ export interface AggregatedPlayerStats {
     pairsAwayAverage: number;
     pairsCupAverage: number;
     allTeamStats: any;
-    allTeamsPlayedFor: any;
     biggestWin: string;
     results: string[];
     availableAgg: number;

@@ -211,15 +211,6 @@ describe('#playersStatsHelper Tests', () => {
             expect(wednesday.teamAvg).to.equal(21);
         });
 
-        it('Days Played', () => {
-            expect(stats.allTeamsPlayedFor).to.deep.equal([
-                'Monday Combined Leeds',
-                'Saturday Leeds',
-                'Thursday Vets Leeds',
-                'Tuesday Vets Leeds',
-            ]);
-        });
-
         it('Days with games show correct values', () => {
             const { allTeamStats } = stats;
             const monday = allTeamStats.find((team: any) => {

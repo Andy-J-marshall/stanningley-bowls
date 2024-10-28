@@ -142,14 +142,6 @@ export function returnPlayerStats(
         };
     });
 
-    let allTeamsPlayedFor: string[] = [];
-    dayPlayed.forEach((day: string) => {
-        if (!allTeamsPlayedFor.includes(day)) {
-            allTeamsPlayedFor.push(day);
-        }
-    });
-    allTeamsPlayedFor.sort();
-
     // Pairs & singles
     const singlesAgg = totalAgg - totalPairsAgg;
     const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
@@ -271,7 +263,6 @@ export function returnPlayerStats(
         pairsAwayAverage,
         pairsCupAverage,
         allTeamStats,
-        allTeamsPlayedFor,
         biggestWin,
         results,
         availableAgg,
