@@ -172,9 +172,9 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             return (
                 searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
+                    <h5 style={{ padding: '1rem 0 4rem 0' }}>
                         Player not found for {stats.statsYear}
-                    </h2>
+                    </h5>
                 )
             );
         }
