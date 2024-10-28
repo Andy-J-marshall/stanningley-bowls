@@ -8,7 +8,6 @@ import {
     returnPlayerStatSummary,
     returnPlayerStats,
 } from '../helpers/playerStatsHelper';
-import { config } from '../config';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
@@ -125,26 +124,6 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    function searchForPlayer(searchedName: string) {
-        setSearchedPlayerName(searchedName);
-        if (searchedName && !searchedName.includes('show all')) {
-            const teamDaysPlayed = Object.keys(config.days);
-            const daysPlayed = combinedPlayerResults[searchedName]?.dayPlayed;
-            let anyTeamDays = false;
-            if (daysPlayed) {
-                daysPlayed.forEach((day: string) => {
-                    if (teamDaysPlayed.includes(day.toLowerCase().trim())) {
-                        anyTeamDays = true;
-                    }
-                });
-            }
-            if (!anyTeamDays) {
-                setStatsToUse(combinedPlayerResults);
-                setShowStatSummary(true);
-            }
-        }
-    }
-
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -152,7 +131,7 @@ function PlayerStats(props: PlayerStatsProps) {
             setValue([searchedPlayerName]);
             setLoading(true);
             await delay(300);
-            searchForPlayer(searchedPlayerName.toLowerCase().trim());
+            setSearchedPlayerName(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);
     };
@@ -163,7 +142,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
-        // TODO for some reason this isn't working after searching for a player twice. Is showStatSummary being set to true?
         const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
             ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
