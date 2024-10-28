@@ -163,6 +163,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
+        // TODO for some reason this isn't working after searching for a player twice. Is showStatSummary being set to true?
         const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
             ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
