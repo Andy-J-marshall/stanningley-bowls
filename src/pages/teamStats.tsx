@@ -61,7 +61,6 @@ function TeamStats(props: TeamStatsProps) {
 
             // Find B team stats if they exist
             let bTeamStats = null;
-            let bTeamInLeague = false;
             if (teamData.bTeamForLeagueBool) {
                 bTeamStats = teamResults?.find(
                     (teamResult: TeamResultsStatsFile) => {
@@ -71,7 +70,6 @@ function TeamStats(props: TeamStatsProps) {
                         );
                     }
                 );
-                bTeamInLeague = true;
             }
 
             if (teamStats || bTeamStats) {
