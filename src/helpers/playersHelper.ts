@@ -120,7 +120,7 @@ export function returnPlayerStats(
             allTeamsPlayedFor.push(day);
         }
     });
-     // TODO sort allTeamsPlayedFor?
+    allTeamsPlayedFor.sort();
 
     // Pairs & singles
     const singlesAgg = totalAgg - totalPairsAgg;
