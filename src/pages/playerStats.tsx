@@ -5,7 +5,7 @@ import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
 import Search from '../components/search';
 import {
-    collatePlayerStats,
+    collatePlayerStatSummary,
     returnPlayerStats,
 } from '../helpers/playerStatsHelper';
 import { config } from '../config';
@@ -14,7 +14,7 @@ import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
 import {
     collateStatsFromAllYears,
-    returnStatsForPlayersInAllYears,
+    returnPlayerStatSummaryForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
@@ -52,8 +52,8 @@ function PlayerStats(props: PlayerStatsProps) {
     const allPlayers = Array.from(allPlayersSet).sort();
 
     const everyYearStatsSummaryArray: PlayerStatsSummary[] =
-        returnStatsForPlayersInAllYears(allYearsStatsToUseArray);
-    const statsSummaryArray: PlayerStatsSummary[] = collatePlayerStats(
+        returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
+    const statsSummaryArray: PlayerStatsSummary[] = collatePlayerStatSummary(
         statsToUse,
         players
     );

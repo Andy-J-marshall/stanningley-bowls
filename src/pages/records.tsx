@@ -2,7 +2,7 @@ import TeamTabs from '../components/teamTabs';
 import RecordsTableDisplay from '../components/recordsTableDisplay';
 import Wrapper from '../components/wrapper';
 import { config } from '../config';
-import { returnTabName } from '../helpers/teamsHelper';
+import { returnTabName } from '../helpers/statsHelper';
 import { RecordsProps } from '../types/interfaces';
 
 function Records(props: RecordsProps) {

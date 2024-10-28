@@ -4,12 +4,12 @@ import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
-import {
-    checkWinPercAndAverageAreNumbers,
-    returnPlayerStats,
-} from './playerStatsHelper';
+import { returnPlayerStats } from './playerStatsHelper';
+import { checkWinPercAndAverageAreNumbers } from './statsHelper';
 
-export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
+export function returnPlayerStatSummaryForAllYears(
+    statsArray: FullStatsFile[]
+) {
     const statsToDisplayArray: PlayerStatsSummary[] = [];
     let playerNames: string[] = [];
 

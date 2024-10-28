@@ -1,8 +1,34 @@
 import { expect } from 'chai';
 import { combineTeamStats } from '../teamStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
+import { checkWinPercAndAverageAreNumbers } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
+    describe('checkWinPercAndAverageAreNumbers', () => {
+        it('should verify win percentage and average are numbers and set defaults if not', () => {
+            const stats = {
+                winPerc: 'NaN',
+                average: 'NaN',
+                singlesWinPerc: 'NaN',
+                singlesAverage: 'NaN',
+                pairsWinPerc: 'NaN',
+                pairsAverage: 'NaN',
+            };
+
+            const expectedResult = {
+                winPerc: 0,
+                average: -99,
+                singlesWinPerc: 0,
+                singlesAverage: -99,
+                pairsWinPerc: 0,
+                pairsAverage: -99,
+            };
+
+            const result = checkWinPercAndAverageAreNumbers(stats);
+            expect(result).to.deep.equal(expectedResult);
+        });
+    });
+
     describe('#CombinedTeamStats()', () => {
         const stats: any = stats2022;
 

@@ -1,9 +1,9 @@
 import { expect } from 'chai';
-import { returnStatsForPlayersInAllYears } from '../allYearPlayerStatsHelper';
+import { returnPlayerStatSummaryForAllYears } from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
 
 describe('#allYearPlayerStatsHelper Tests', () => {
-    describe('#returnStatsForPlayersInAllYears()', () => {
+    describe('#returnPlayerStatSummaryForAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const statsArray = [
                 {
@@ -106,7 +106,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 },
             ];
 
-            const result = returnStatsForPlayersInAllYears(statsArray);
+            const result = returnPlayerStatSummaryForAllYears(statsArray);
 
             expect(result).to.deep.equal([
                 {
@@ -135,7 +135,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
 
         it('Handles empty stats array', () => {
             const statsArray: FullStatsFile[] = [];
-            const result = returnStatsForPlayersInAllYears(statsArray);
+            const result = returnPlayerStatSummaryForAllYears(statsArray);
             expect(result).to.deep.equal([]);
         });
 
@@ -147,7 +147,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                     playerResults: {},
                 },
             ];
-            const result = returnStatsForPlayersInAllYears(statsArray);
+            const result = returnPlayerStatSummaryForAllYears(statsArray);
             expect(result).to.deep.equal([]);
         });
     });

@@ -3,7 +3,7 @@ import IndividualTeamStats from '../components/individualTeamStats';
 import CombinedTeamStats from '../components/combinedTeamStats';
 import TeamTabs from '../components/teamTabs';
 import { config } from '../config';
-import { returnTabName } from '../helpers/teamsHelper';
+import { returnTabName } from '../helpers/statsHelper';
 import { TeamResultsStatsFile, TeamStatsProps } from '../types/interfaces';
 import Wrapper from '../components/wrapper';
 

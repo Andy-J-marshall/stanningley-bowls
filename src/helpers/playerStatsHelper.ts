@@ -3,6 +3,7 @@ import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
+import { checkWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function findBiggestWin(playerResults: string[]): string {
     let bestWin = '';
@@ -284,32 +285,7 @@ export function returnPlayerStats(
     };
 }
 
-export function checkWinPercAndAverageAreNumbers(stats: any) {
-    let verifiedStats = stats;
-
-    if (isNaN(verifiedStats.winPerc)) {
-        verifiedStats.winPerc = 0;
-    }
-    if (isNaN(verifiedStats.average)) {
-        verifiedStats.average = -99;
-    }
-    if (isNaN(verifiedStats.singlesWinPerc)) {
-        verifiedStats.singlesWinPerc = 0;
-    }
-    if (isNaN(verifiedStats.singlesAverage)) {
-        verifiedStats.singlesAverage = -99;
-    }
-    if (isNaN(verifiedStats.pairsWinPerc)) {
-        verifiedStats.pairsWinPerc = 0;
-    }
-    if (isNaN(verifiedStats.pairsAverage)) {
-        verifiedStats.pairsAverage = -99;
-    }
-
-    return verifiedStats;
-}
-
-export function collatePlayerStats(
+export function collatePlayerStatSummary(
     statsToUse: PlayerResultsStatsFile,
     players: string[]
 ) {

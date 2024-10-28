@@ -1,9 +1,5 @@
 import { expect } from 'chai';
-import {
-    returnPlayerStats,
-    checkWinPercAndAverageAreNumbers,
-    findBiggestWin,
-} from '../playerStatsHelper';
+import { returnPlayerStats, findBiggestWin } from '../playerStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
 describe('#playersStatsHelper Tests', () => {
@@ -254,31 +250,6 @@ describe('#playersStatsHelper Tests', () => {
             expect(saturday.teamLosses).to.equal(0);
             expect(saturday.teamGames).to.equal(17);
             expect(saturday.teamAvg.toFixed(2)).to.equal('13.41');
-        });
-    });
-
-    describe('checkWinPercAndAverageAreNumbers', () => {
-        it('should verify win percentage and average are numbers and set defaults if not', () => {
-            const stats = {
-                winPerc: 'NaN',
-                average: 'NaN',
-                singlesWinPerc: 'NaN',
-                singlesAverage: 'NaN',
-                pairsWinPerc: 'NaN',
-                pairsAverage: 'NaN',
-            };
-
-            const expectedResult = {
-                winPerc: 0,
-                average: -99,
-                singlesWinPerc: 0,
-                singlesAverage: -99,
-                pairsWinPerc: 0,
-                pairsAverage: -99,
-            };
-
-            const result = checkWinPercAndAverageAreNumbers(stats);
-            expect(result).to.deep.equal(expectedResult);
         });
     });
 });
