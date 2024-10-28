@@ -9,35 +9,6 @@ import {
     returnPlayerStats,
 } from './playerStatsHelper';
 
-export function findBiggestWin(playerResults: string[]): string {
-    let bestWin = '';
-    if (playerResults) {
-        let bestWinMargin = 0;
-        playerResults.forEach((result) => {
-            const resultParts = result.split(' - ', 2);
-
-            const teamPart = resultParts[0];
-            const teamScoreMatch = teamPart.match(/[0-9]+/g);
-            const teamScore = teamScoreMatch
-                ? parseInt(teamScoreMatch[0].trim())
-                : 0;
-
-            const opponentPart = resultParts[1].split(' (')[0];
-            const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
-            const opponentScore = opponentScoreMatch
-                ? parseInt(opponentScoreMatch[0].trim())
-                : 1000; // Ensures invalid scores are not considered
-
-            const scoreDiff = teamScore - opponentScore;
-            if (scoreDiff > 0 && scoreDiff > bestWinMargin) {
-                bestWinMargin = scoreDiff;
-                bestWin = `${teamScore} - ${opponentScore}`;
-            }
-        });
-    }
-    return bestWin;
-}
-
 export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
     const statsToDisplayArray: PlayerStatsSummary[] = [];
     let playerNames: string[] = [];
@@ -118,6 +89,7 @@ export function returnStatsForPlayersInAllYears(statsArray: FullStatsFile[]) {
     return statsToDisplayArray;
 }
 
+// TODO also add UI test?
 // TODO add a test for this
 export function collateStatsFromAllYears(statsArray: FullStatsFile[]) {
     // Create a deep copy of the statsArray to avoid modifying the original

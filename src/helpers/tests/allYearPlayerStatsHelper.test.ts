@@ -1,80 +1,8 @@
 import { expect } from 'chai';
-import {
-    findBiggestWin,
-    returnStatsForPlayersInAllYears,
-} from '../allYearPlayerStatsHelper';
+import { returnStatsForPlayersInAllYears } from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
 
 describe('#allYearPlayerStatsHelper Tests', () => {
-    describe('#findBiggestWin()', () => {
-        it('Biggest win found successfully', () => {
-            const results = [
-                'ali 15 - 21 leslie strang',
-                'ali 1 - 21 shirley biancardo',
-                'ali 0 - 21 roy tebbutt',
-                'ali 21 - 4 alan taylor',
-                'ali 18 - 10 billy ward',
-                'ali 21 - 19 brian golden',
-                'ali 21 - 20 brian golden',
-            ];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('21 - 4');
-        });
-
-        it('Biggest win found with double barrelled home names', () => {
-            const results = [
-                'ali-double-barrel 21 - 0 leslie strang',
-                'ali 1 - 21 shirley double-barrel-biancardo',
-            ];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('21 - 0');
-        });
-
-        it('Biggest win found with double barrelled away names', () => {
-            const results = [
-                'ali 21 - 10 leslie strang',
-                'ali 21 - 2 shirley double-barrel-biancardo',
-            ];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('21 - 2');
-        });
-
-        it('Biggest win found successfully when there are duplicates', () => {
-            const results = [
-                'ali 21 - 10 alan taylor',
-                'ali 21 - 10 alan taylor',
-                'ali 10 - 21 alan taylor',
-                'ali 21 - 19 brian golden',
-                'ali 19 - 21 brian golden',
-                'ali 19 - 21 brian golden',
-            ];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('21 - 10');
-        });
-
-        it('Empty string returned if player has no wins', () => {
-            const results = [
-                "ali 20 - 21 leslie strang ('A')",
-                'ali 13 - 21 shirley biancardo',
-                'ali 0 - 21 roy tebbutt',
-            ];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('');
-        });
-
-        it('Empty string returned if player has no results', () => {
-            const results: string[] = [];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('');
-        });
-
-        it('Empty string returned if player has invalid result', () => {
-            const results = ['ali 21 - roy tebbutt', 'ali - 21 roy tebbutt'];
-            const biggestWin = findBiggestWin(results);
-            expect(biggestWin).to.equal('');
-        });
-    });
-
     describe('#returnStatsForPlayersInAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const statsArray = [
