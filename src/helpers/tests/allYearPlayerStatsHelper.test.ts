@@ -1,136 +1,41 @@
 import { expect } from 'chai';
 import { returnPlayerStatSummaryForAllYears } from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
+import stats2022 from '../../data/bowlsStats2022.json';
+import stats2023 from '../../data/bowlsStats2023.json';
+const statsArray = [stats2022, stats2023];
 
 describe('#allYearPlayerStatsHelper Tests', () => {
     describe('#returnPlayerStatSummaryForAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
-            const statsArray = [
-                {
-                    statsYear: '2021',
-                    lastUpdated: '2021-12-31',
-                    playerResults: {
-                        player1: {
-                            totalAgg: 100,
-                            totalAggAgainst: 50,
-                            totalWins: 10,
-                            gamesPlayed: 15,
-                            singlesAgg: 60,
-                            singlesAggAgainst: 30,
-                            pairWins: 3,
-                            singlesGames: 10,
-                            totalPairsAgg: 40,
-                            totalPairsAggAgainst: 20,
-                            pairsGames: 5,
-                            availableAgg: 500,
-                            availablePairsAgg: 250,
-                            availableHomeAgg: 300,
-                            availableAwayAgg: 200,
-                            availablePairsHomeAgg: 150,
-                            availablePairsAwayAgg: 100,
-                            totalHomeAgg: 300,
-                            totalHomeAggAgainst: 150,
-                            totalPairsHomeAgg: 100,
-                            totalPairsHomeAggAgainst: 50,
-                            totalAwayAgg: 200,
-                            totalAwayAggAgainst: 100,
-                            totalPairsAwayAgg: 50,
-                            totalPairsAwayAggAgainst: 25,
-                            homeWins: 5,
-                            homeLosses: 2,
-                            awayWins: 3,
-                            awayLosses: 1,
-                            cupWins: 2,
-                            cupLosses: 1,
-                            pairLosses: 2,
-                            pairHomeWins: 2,
-                            pairHomeLosses: 1,
-                            pairAwayWins: 1,
-                            pairAwayLosses: 1,
-                            pairCupWins: 1,
-                            pairCupLosses: 1,
-                            totalGamesPlayed: 10,
-                            results: ['ali 21 - 10 leslie strang'],
-                            dayPlayed: ['Monday', 'Tuesday'],
-                        },
-                    },
-                },
-                {
-                    statsYear: '2021',
-                    lastUpdated: '2021-12-31',
-                    playerResults: {
-                        player1: {
-                            totalAgg: 1000,
-                            totalAggAgainst: 50,
-                            totalWins: 10,
-                            gamesPlayed: 15,
-                            singlesAgg: 60,
-                            singlesAggAgainst: 30,
-                            pairWins: 3,
-                            singlesGames: 10,
-                            totalPairsAgg: 40,
-                            totalPairsAggAgainst: 20,
-                            pairsGames: 5,
-                            availableAgg: 500,
-                            availablePairsAgg: 250,
-                            availableHomeAgg: 300,
-                            availableAwayAgg: 200,
-                            availablePairsHomeAgg: 150,
-                            availablePairsAwayAgg: 100,
-                            totalHomeAgg: 300,
-                            totalHomeAggAgainst: 150,
-                            totalPairsHomeAgg: 100,
-                            totalPairsHomeAggAgainst: 50,
-                            totalAwayAgg: 100,
-                            totalAwayAggAgainst: 200,
-                            totalPairsAwayAgg: 50,
-                            totalPairsAwayAggAgainst: 25,
-                            homeWins: 4,
-                            homeLosses: 5,
-                            awayWins: 7,
-                            awayLosses: 15,
-                            cupWins: 2,
-                            cupLosses: 1,
-                            pairLosses: 2,
-                            pairHomeWins: 2,
-                            pairHomeLosses: 3,
-                            pairAwayWins: 1,
-                            pairAwayLosses: 1,
-                            pairCupWins: 1,
-                            pairCupLosses: 1,
-                            totalGamesPlayed: 10,
-                            results: ['ali 21 - 10 leslie strang'],
-                            dayPlayed: ['Monday', 'Tuesday'],
-                        },
-                    },
-                },
-            ];
-
             const result = returnPlayerStatSummaryForAllYears(statsArray);
 
-            expect(result).to.deep.equal([
-                {
-                    player: 'player1',
-                    games: 48,
-                    wins: 23,
-                    agg: 1100,
-                    aggAgainst: 100,
-                    average: 20.833333333333332,
-                    winPerc: 47.91666666666667,
-                    singleGames: 38,
-                    singlesWins: 17,
-                    singlesAgg: 1020,
-                    singlesAggAgainst: 60,
-                    singlesAverage: 25.263157894736842,
-                    singlesWinPerc: 44.73684210526316,
-                    pairsGames: 10,
-                    pairsWins: 6,
-                    pairsAgg: 80,
-                    pairsAggAgainst: 40,
-                    pairsAverage: 4,
-                    pairsWinPerc: 60,
-                },
-            ]);
+            expect(result.length).to.equal(36);
+            const player = result.find(
+                (player) => player.player === 'vanessa lancaster'
+            );
+
+            expect(player).to.deep.equal({
+                agg: 315,
+                aggAgainst: 357,
+                average: -2,
+                games: 21,
+                pairsAgg: 100,
+                pairsAggAgainst: 126,
+                pairsAverage: -3.7142857142857144,
+                pairsGames: 7,
+                pairsWinPerc: 28.57142857142857,
+                pairsWins: 2,
+                player: 'vanessa lancaster',
+                singleGames: 14,
+                singlesAgg: 215,
+                singlesAggAgainst: 231,
+                singlesAverage: -1.1428571428571428,
+                singlesWinPerc: 50,
+                singlesWins: 7,
+                winPerc: 42.857142857142854,
+                wins: 9,
+            });
         });
 
         it('Handles empty stats array', () => {
