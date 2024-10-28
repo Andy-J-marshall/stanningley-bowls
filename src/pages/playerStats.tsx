@@ -5,7 +5,7 @@ import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
 import Search from '../components/search';
 import {
-    collatePlayerStatSummary,
+    returnPlayerStatSummary,
     returnPlayerStats,
 } from '../helpers/playerStatsHelper';
 import { config } from '../config';
@@ -53,7 +53,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     const everyYearStatsSummaryArray: PlayerStatsSummary[] =
         returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
-    const statsSummaryArray: PlayerStatsSummary[] = collatePlayerStatSummary(
+    const statsSummaryArray: PlayerStatsSummary[] = returnPlayerStatSummary(
         statsToUse,
         players
     );

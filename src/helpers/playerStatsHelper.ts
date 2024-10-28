@@ -285,7 +285,7 @@ export function returnPlayerStats(
     };
 }
 
-export function collatePlayerStatSummary(
+export function returnPlayerStatSummary(
     statsToUse: PlayerResultsStatsFile,
     players: string[]
 ) {
