@@ -67,7 +67,6 @@ export function returnPlayerStats(
         totalAwayAgg,
         totalAwayAggAgainst,
         results,
-        dayPlayed,
         totalPairsHomeAgg,
         totalPairsHomeAggAgainst,
         totalPairsAwayAgg,

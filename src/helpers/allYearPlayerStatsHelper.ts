@@ -163,10 +163,6 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
                     yearPlayerStats.pairCupLosses;
                 collatedStats[player].totalGamesPlayed +=
                     yearPlayerStats.totalGamesPlayed;
-                collatedStats[player].dayPlayed = [
-                    ...collatedStats[player].dayPlayed,
-                    ...yearPlayerStats.dayPlayed,
-                ];
                 collatedStats[player].results = [
                     ...collatedStats[player].results,
                     ...yearPlayerStats.results,

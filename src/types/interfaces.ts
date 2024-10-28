@@ -201,7 +201,6 @@ export interface PlayerResultsStatsFile {
         pairCupWins: number;
         pairCupLosses: number;
         totalGamesPlayed: number;
-        dayPlayed: string[];
         results: string[];
         [key: string]: any;
     };
