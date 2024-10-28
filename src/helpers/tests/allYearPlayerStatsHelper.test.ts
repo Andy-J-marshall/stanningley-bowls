@@ -16,6 +16,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             );
 
             expect(player).to.deep.equal({
+                player: 'vanessa lancaster',
                 agg: 315,
                 aggAgainst: 357,
                 average: -2,
@@ -26,7 +27,6 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 pairsGames: 7,
                 pairsWinPerc: 28.57142857142857,
                 pairsWins: 2,
-                player: 'vanessa lancaster',
                 singleGames: 14,
                 singlesAgg: 215,
                 singlesAggAgainst: 231,

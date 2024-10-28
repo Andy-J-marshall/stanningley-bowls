@@ -1,5 +1,9 @@
 import { expect } from 'chai';
-import { returnPlayerStats, findBiggestWin } from '../playerStatsHelper';
+import {
+    returnPlayerStats,
+    findBiggestWin,
+    returnPlayerStatSummary,
+} from '../playerStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
 describe('#playersStatsHelper Tests', () => {
@@ -250,6 +254,43 @@ describe('#playersStatsHelper Tests', () => {
             expect(saturday.teamLosses).to.equal(0);
             expect(saturday.teamGames).to.equal(17);
             expect(saturday.teamAvg.toFixed(2)).to.equal('13.41');
+        });
+    });
+
+    describe('#returnPlayerStatSummary()', () => {
+        it('Correctly aggregates stats for players across multiple years', () => {
+            const result = returnPlayerStatSummary(stats2022.playerResults, [
+                'vanessa lancaster',
+                'paul bowes',
+                'alison woodfine',
+            ]);
+
+            expect(result.length).to.equal(3);
+            const player = result.find(
+                (player) => player.player === 'vanessa lancaster'
+            );
+
+            expect(player).to.deep.equal({
+                player: 'vanessa lancaster',
+                singleGames: 0,
+                singlesAgg: 0,
+                singlesAggAgainst: 0,
+                singlesAverage: -99,
+                singlesWinPerc: 0,
+                singlesWins: 0,
+                winPerc: 25,
+                wins: 1,
+                agg: 57,
+                aggAgainst: 71,
+                average: -3.5,
+                games: 4,
+                pairsAgg: 57,
+                pairsAggAgainst: 71,
+                pairsAverage: -3.5,
+                pairsGames: 4,
+                pairsWinPerc: 25,
+                pairsWins: 1,
+            });
         });
     });
 });
