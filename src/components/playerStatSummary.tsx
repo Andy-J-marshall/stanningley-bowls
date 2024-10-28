@@ -17,6 +17,23 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
 
+    let style;
+    let href;
+
+    if (displayPlayerStatsCallback) {
+        style = {
+            textDecoration: 'underline',
+            color: '#004558',
+        };
+        href = '/#/stats/player';
+    } else {
+        style = {
+            textDecoration: 'none',
+            color: 'black',
+        };
+        href = '/#/stats/team';
+    }
+
     function displayPlayer(event: React.MouseEvent<HTMLAnchorElement>) {
         const playerName = event.currentTarget.innerHTML;
         if (displayPlayerStatsCallback) {
@@ -199,11 +216,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                         <tr>
                             <td>
                                 <a
-                                    style={{
-                                        textDecoration: 'underline',
-                                        color: '#004558',
-                                    }}
-                                    href="/#/stats/player"
+                                    style={style}
+                                    href={href}
                                     onClick={displayPlayer}
                                 >
                                     {capitalizeText([player.player])}
@@ -234,20 +248,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             );
         });
     }
-
-    // if (displayPlayerStatsCallback) {
-    //     style = {
-    //         textDecoration: 'underline',
-    //         color: '#004558',
-    //     };
-    //     href = '/#/stats/player';
-    // } else {
-    //     style = {
-    //         textDecoration: 'none',
-    //         color: 'black',
-    //     };
-    //     href = '';
-    // }
 
     if (playerStats) {
         return (

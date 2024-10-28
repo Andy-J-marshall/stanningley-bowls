@@ -2,39 +2,14 @@ import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
+import { returnResultsArray as returnStructuredResultsArray } from '../helpers/playerStatsHelper';
 
 function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
 
     const { results } = stats;
 
-    // TODO move to a helper function?
-    const resultsArray = results.map((result: string) => {
-        const resultParts = result.split(' - ');
-
-        const teamPart = resultParts[0];
-        const playerScoreMatch = teamPart.match(/[0-9]+/g);
-        const playerScore = playerScoreMatch ? playerScoreMatch[0].trim() : '';
-        const player = teamPart.split(/[0-9]+/g)[0].trim();
-
-        const opponentPart = resultParts[1].split(' (')[0];
-        const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
-        const opponentScore = opponentScoreMatch
-            ? opponentScoreMatch[0].trim()
-            : '';
-        const opponent = opponentPart.split(/[0-9]+/g)[1].trim();
-
-        return {
-            team: {
-                name: player,
-                score: playerScore,
-            },
-            opponent: {
-                name: opponent,
-                score: opponentScore,
-            },
-        };
-    });
+    const structuredResultsArray = returnStructuredResultsArray(results);
 
     return (
         <div id="player-stats-results">
@@ -53,7 +28,7 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
                                         <th>OPPONENT</th>
                                     </tr>
                                 </thead>
-                                {resultsArray.map((result, idx) => {
+                                {structuredResultsArray.map((result, idx) => {
                                     const player = capitalizeText([
                                         result.team.name,
                                     ]);
