@@ -47,7 +47,7 @@ export function findMinNumberOfGames(
     initialTeamRecords: Records
 ) {
     const players = Object.keys(playerResults);
-    const teamRecords = initialTeamRecords;
+    const teamRecordsWithMinGames = initialTeamRecords;
     let highestTotalGames = 0;
 
     players.forEach((player) => {
@@ -66,7 +66,7 @@ export function findMinNumberOfGames(
         }
 
         teamsFound.forEach((team: string) => {
-            const teamRecord = teamRecords[team];
+            const teamRecord = teamRecordsWithMinGames[team];
             const playerStats = p[team];
 
             if (
@@ -74,12 +74,16 @@ export function findMinNumberOfGames(
                 playerStats &&
                 playerStats.games >= teamRecord.highestTeamGames
             ) {
-                teamRecords[team].highestTeamGames = playerStats.games;
+                teamRecordsWithMinGames[team].highestTeamGames =
+                    playerStats.games;
             }
         });
     });
 
-    return { highestTotalGames, teamRecords };
+    return {
+        highestTotalGames,
+        teamRecordsWithMinGames,
+    };
 }
 
 export function findPlayerRecords(
@@ -212,6 +216,7 @@ export function findPlayerRecords(
     });
 
     return {
+        teamRecords,
         minTotalGames,
         mostGamesPlayer,
         mostGames,
@@ -256,6 +261,10 @@ export function findTeamRecords(
     let bTeamRecord = null;
     if (teamData.bTeamForLeagueBool) {
         bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
+    }
+
+    if (!bTeamRecord) {
+        bTeamRecord = null;
     }
 
     return { teamName, teamRecord, bTeamRecord };

@@ -22,13 +22,14 @@ function Records(props: RecordsProps) {
         stats.playerResults
     );
 
-    const { highestTotalGames, teamRecords } = findMinNumberOfGames(
+    const { highestTotalGames, teamRecordsWithMinGames } = findMinNumberOfGames(
         stats.playerResults,
         teamsFound,
         initialTeamRecords
     );
 
     const {
+        teamRecords,
         minTotalGames,
         mostGames,
         mostGamesPlayer,
@@ -41,7 +42,7 @@ function Records(props: RecordsProps) {
     } = findPlayerRecords(
         stats.playerResults,
         teamsFound,
-        teamRecords,
+        teamRecordsWithMinGames,
         highestTotalGames
     );
 
