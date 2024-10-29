@@ -88,7 +88,6 @@ export function returnPlayerStatsForTeam(
     return allPlayerStats;
 }
 
-// TODO create a test for this function
 export function findTeamStats(
     teamData: ConfigTeamData,
     teamResults: TeamResultsStatsFile[] | undefined
@@ -133,6 +132,10 @@ export function findTeamStats(
                 teamName.replace(' (a)', '') + ' (b)'
             );
         });
+    }
+
+    if (!bTeamStats) {
+        bTeamStats = null;
     }
 
     return { teamName, teamStats, bTeamStats };

@@ -1,7 +1,13 @@
-import { expect } from 'chai';
-import { combineTeamStats, returnPlayerStatsForTeam } from '../teamStatsHelper';
-import stats2022 from '../../data/bowlsStats2022.json';
+import { assert, expect } from 'chai';
+import {
+    combineTeamStats,
+    findTeamStats,
+    returnPlayerStatsForTeam,
+} from '../teamStatsHelper';
 import { PlayerResultsStatsFile } from '../../types/interfaces';
+import { config } from '../../config';
+import stats2022 from '../../data/bowlsStats2022.json';
+import stats2024 from '../../data/bowlsStats2024.json';
 
 describe('#teamStatsHelper Tests', () => {
     describe('#CombinedTeamStats()', () => {
@@ -66,6 +72,74 @@ describe('#teamStatsHelper Tests', () => {
                 average: 1.0714285714285714,
                 winPerc: 42.857142857142854,
             });
+        });
+    });
+
+    describe('#findTeamStats()', () => {
+        it('B team stats should be null when there is no B team on that day', () => {
+            for (const teamInfo of config.historicTeamInfo) {
+                // There were no B teams in 2022
+                const teamStats = findTeamStats(
+                    teamInfo,
+                    stats2022.teamResults
+                );
+                
+                expect(teamStats.bTeamStats).to.be.null;
+            }
+        });
+
+        it('Team name should be correctly returned', () => {
+            const teamInfo = config.historicTeamInfo.find((t) =>
+                t.teamNames.includes('monday combined leeds')
+            );
+
+            if (!teamInfo) {
+                assert.fail('Team info not found in config file');
+            }
+
+            const teamStats = findTeamStats(teamInfo!, stats2024.teamResults);
+
+            expect(teamStats.teamName).to.equal('monday combined leeds');
+        });
+
+        it('Team stats should be correct', () => {
+            const teamStatsJson = stats2024.teamResults.find((t) =>
+                t.day.toLowerCase().includes('saturday leeds')
+            );
+
+            const teamInfo = config.historicTeamInfo.find((t) =>
+                t.teamNames.includes('saturday leeds')
+            );
+
+            if (!teamInfo) {
+                assert.fail('Team info not found in config file');
+            }
+
+            const teamStats = findTeamStats(teamInfo!, stats2024.teamResults);
+
+            const stats = teamStats.teamStats;
+
+            expect(stats).to.deep.equal(teamStatsJson);
+        });
+
+        it('B team stats should be correct', () => {
+            const teamStatsJson = stats2024.teamResults.find((t) =>
+                t.day.toLowerCase().includes('saturday leeds (b)')
+            );
+
+            const teamInfo = config.historicTeamInfo.find((t) =>
+                t.teamNames.includes('saturday leeds')
+            );
+
+            if (!teamInfo) {
+                assert.fail('Team info not found in config file');
+            }
+
+            const teamStats = findTeamStats(teamInfo!, stats2024.teamResults);
+
+            const stats = teamStats.bTeamStats;
+
+            expect(stats).to.deep.equal(teamStatsJson);
         });
     });
 });
