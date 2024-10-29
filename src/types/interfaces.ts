@@ -229,6 +229,21 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
+export interface PlayerRecords {
+    [key: string]: {
+        day: string;
+        minTeamGames: number;
+        bestTeamWinPerc: number;
+        bestTeamWinPercPlayer: string[];
+        mostTeamWins: number;
+        mostTeamWinsPlayer: string[];
+        highestTeamGames: number;
+        mostTeamGamesPlayer: string[];
+        bestTeamAverage: number;
+        bestTeamAveragePlayer: string[];
+    };
+}
+
 export interface AggregatedPlayerStats {
     totalAgg: number;
     totalAggAgainst: number;

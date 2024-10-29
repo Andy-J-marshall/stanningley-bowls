@@ -4,198 +4,45 @@ import Wrapper from '../components/wrapper';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
 import { RecordsProps } from '../types/interfaces';
+import {
+    findLeaguesAvailableInData,
+    findMinNumberOfGames,
+    findPlayerRecords,
+} from '../helpers/recordsHelper';
 
 function Records(props: RecordsProps) {
     const stats = props.stats;
 
-    const playerResults = stats.playerResults;
     const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
-    const players = Object.keys(playerResults);
 
-    // TODO move to a helper function?
+    const { initialTeamRecords, teamsFound } = findLeaguesAvailableInData(
+        stats.playerResults
+    );
 
-    const minGamesForOverallRecords = 15;
-    const minGamesForTeamRecords = 11;
+    const { highestTotalGames, teamRecords } = findMinNumberOfGames(
+        stats.playerResults,
+        teamsFound,
+        initialTeamRecords
+    );
 
-    // Total
-    let minTotalGames = 1;
-    let mostGamesPlayer: string[] = [];
-    let mostGames = 0;
-    let mostWinsPlayer: string[] = [];
-    let mostWins = 0;
-    let bestWinPercPlayer: string[] = [];
-    let bestWinPerc = 0;
-    let bestAveragePlayer: string[] = [];
-    let bestAverage = -27;
-    let highestTotalGames = 0;
-
-    // This finds the leagues available in the data
-    const teamRecords: any = {};
-    let teamsFound: string[] = [];
-    players.forEach((player) => {
-        const p = playerResults[player];
-
-        // Find list of team stats
-        const possibleTeamNames = config.allTeamsInLeaguesSince2013;
-
-        const propertyNames = Object.keys(p);
-        teamsFound = propertyNames.filter((property) =>
-            possibleTeamNames.includes(property.toLowerCase())
-        );
-
-        possibleTeamNames.forEach((team) => {
-            teamRecords[team] = {
-                minTeamGames: 1,
-                highestTeamGames: 0,
-                mostTeamWins: 0,
-                bestTeamAverage: -27,
-                bestTeamWinPerc: 0,
-                mostTeamWinsPlayer: [],
-                bestTeamAveragePlayer: [],
-                bestTeamWinPercPlayer: [],
-            };
-        });
-    });
-
-    // This sets the minimum number of games required for the stats to be counted
-    players.forEach((player) => {
-        const p = playerResults[player];
-
-        const totalGames =
-            p.awayWins +
-            p.homeWins +
-            p.cupWins +
-            p.awayLosses +
-            p.homeLosses +
-            p.cupLosses;
-
-        if (totalGames >= highestTotalGames) {
-            highestTotalGames = totalGames;
-        }
-
-        teamsFound.forEach((team: string) => {
-            const teamRecord = teamRecords[team];
-            const playerStats = p[team];
-
-            if (
-                teamRecord &&
-                playerStats &&
-                playerStats.games >= teamRecord.highestTeamGames
-            ) {
-                teamRecords[team].highestTeamGames = playerStats.games;
-            }
-        });
-    });
-
-    // This finds the records for the players
-    players.forEach((player) => {
-        const p = playerResults[player];
-
-        // Team specific stats
-        teamsFound.forEach((team) => {
-            const teamStats = p[team];
-
-            const games = teamStats.games;
-            if (games > 0) {
-                const wins = teamStats.wins;
-                const avg = teamStats.aggDiff / games;
-                const winPerc = (wins / games) * 100;
-
-                let teamRecord = teamRecords[team];
-                let minTeamGames = teamRecord.minTeamGames;
-                let highestTeamGames = teamRecord.highestTeamGames;
-                let mostTeamWins = teamRecord.mostTeamWins;
-                let bestTeamAverage = teamRecord.bestTeamAverage;
-                let bestTeamWinPerc = teamRecord.bestTeamWinPerc;
-
-                if (highestTeamGames > minTeamGames) {
-                    if (highestTeamGames >= minGamesForTeamRecords) {
-                        minTeamGames = minGamesForTeamRecords;
-                    } else {
-                        minTeamGames = highestTeamGames;
-                    }
-                }
-
-                if (avg >= bestTeamAverage && games >= minTeamGames) {
-                    if (avg > bestTeamAverage) {
-                        teamRecords[team].bestTeamAveragePlayer = [];
-                        bestTeamAverage = avg;
-                    }
-                    teamRecords[team].bestTeamAveragePlayer.push(player);
-                }
-
-                if (wins >= mostTeamWins) {
-                    if (wins > mostTeamWins) {
-                        teamRecords[team].mostTeamWinsPlayer = [];
-                        mostTeamWins = wins;
-                    }
-                    teamRecords[team].mostTeamWinsPlayer.push(player);
-                }
-
-                if (winPerc >= bestTeamWinPerc && games >= minTeamGames) {
-                    if (winPerc > bestTeamWinPerc) {
-                        teamRecords[team].bestTeamWinPercPlayer = [];
-                        bestTeamWinPerc = winPerc;
-                    }
-                    teamRecords[team].bestTeamWinPercPlayer.push(player);
-                }
-
-                teamRecords[team].minTeamGames = minTeamGames;
-                teamRecords[team].highestTeamGames = highestTeamGames;
-                teamRecords[team].mostTeamWins = mostTeamWins;
-                teamRecords[team].bestTeamAverage = bestTeamAverage;
-                teamRecords[team].bestTeamWinPerc = bestTeamWinPerc;
-            }
-        });
-
-        // Total
-        const totalWins = p.awayWins + p.homeWins + p.cupWins;
-        const totalLosses = p.awayLosses + p.homeLosses + p.cupLosses;
-        const totalGames = totalWins + totalLosses;
-
-        const winPerc = (totalWins / totalGames) * 100;
-        const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
-
-        if (highestTotalGames > minTotalGames) {
-            if (highestTotalGames >= minGamesForOverallRecords) {
-                minTotalGames = minGamesForOverallRecords;
-            } else {
-                minTotalGames = highestTotalGames;
-            }
-        }
-        const playedMinGames = totalGames >= minTotalGames ? true : false;
-
-        if (totalGames >= mostGames) {
-            if (totalGames > mostGames) {
-                mostGamesPlayer = [];
-                mostGames = totalGames;
-            }
-            mostGamesPlayer.push(player);
-        }
-        if (totalWins >= mostWins) {
-            if (totalWins > mostWins) {
-                mostWinsPlayer = [];
-                mostWins = totalWins;
-            }
-            mostWinsPlayer.push(player);
-        }
-        if (winPerc >= bestWinPerc && playedMinGames) {
-            if (winPerc > bestWinPerc) {
-                bestWinPercPlayer = [];
-                bestWinPerc = winPerc;
-            }
-            bestWinPercPlayer.push(player);
-        }
-        if (average >= bestAverage && playedMinGames) {
-            if (average > bestAverage) {
-                bestAveragePlayer = [];
-                bestAverage = average;
-            }
-            bestAveragePlayer.push(player);
-        }
-    });
+    const {
+        minTotalGames,
+        mostGames,
+        mostGamesPlayer,
+        mostWins,
+        mostWinsPlayer,
+        bestWinPerc,
+        bestWinPercPlayer,
+        bestAverage,
+        bestAveragePlayer,
+    } = findPlayerRecords(
+        stats.playerResults,
+        teamsFound,
+        teamRecords,
+        highestTotalGames
+    );
 
     function combinedRecordsComponent() {
         if (mostGames > 0) {
@@ -223,6 +70,7 @@ function Records(props: RecordsProps) {
             let displayname = returnTabName(teamData.teamNames[0]);
             let teamRecord = null;
 
+            // TODO possibly refactor this to a helper function?
             // Find A team stats
             for (const team of teamData.teamNames) {
                 const tn = team.toLowerCase();
@@ -253,8 +101,10 @@ function Records(props: RecordsProps) {
 
             if (teamRecord || bTeamRecord) {
                 if (
-                    teamRecord.bestTeamAveragePlayer.length > 0 ||
-                    bTeamRecord.bestTeamAveragePlayer.length > 0
+                    (teamRecord &&
+                        teamRecord.bestTeamAveragePlayer.length > 0) ||
+                    (bTeamRecord &&
+                        bTeamRecord.bestTeamAveragePlayer.length > 0)
                 ) {
                     return (
                         <Wrapper
