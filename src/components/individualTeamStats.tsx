@@ -1,4 +1,4 @@
-import StatsTableDisplay from './statsTableDisplay';
+import TeamStatsTable from './teamStatsTable';
 import PlayerStatSummary from './playerStatSummary';
 import { config } from '../config';
 import { IndividualTeamStatsProps } from '../types/interfaces';
@@ -38,7 +38,7 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
                 >
                     <br />
                     <h4>{day.toUpperCase()}</h4>
-                    <StatsTableDisplay
+                    <TeamStatsTable
                         totalGames={totalGames}
                         totalWins={totalWins}
                         totalLosses={totalLosses}
