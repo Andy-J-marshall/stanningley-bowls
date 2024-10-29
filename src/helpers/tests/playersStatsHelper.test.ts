@@ -3,6 +3,7 @@ import {
     returnPlayerStats,
     findBiggestWin,
     returnPlayerStatSummary,
+    returnStructuredResultsArray,
 } from '../playerStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
@@ -245,6 +246,41 @@ describe('#playersStatsHelper Tests', () => {
             expect(saturday.teamLosses).to.equal(0);
             expect(saturday.teamGames).to.equal(17);
             expect(saturday.teamAvg.toFixed(2)).to.equal('13.41');
+        });
+    });
+
+    describe('#returnStructuredResultsArray()', () => {
+        it('Correctly structures results array', () => {
+            const results = [
+                'ali 21 - 10 mr alan taylor',
+                "barry o'geary 1 - 21 steve smith-rowe",
+            ];
+
+            const structuredResult = returnStructuredResultsArray(results);
+
+            const expectedResult = [
+                {
+                    home: {
+                        name: 'ali',
+                        score: '21',
+                    },
+                    away: {
+                        name: 'mr alan taylor',
+                        score: '10',
+                    },
+                },
+                {
+                    home: {
+                        name: "barry o'geary",
+                        score: '1',
+                    },
+                    away: {
+                        name: 'steve smith-rowe',
+                        score: '21',
+                    },
+                },
+            ];
+            expect(structuredResult).to.deep.equal(expectedResult);
         });
     });
 

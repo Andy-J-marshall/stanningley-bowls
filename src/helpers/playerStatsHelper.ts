@@ -330,7 +330,6 @@ export function returnPlayerStatSummary(
     return statsArray;
 }
 
-// TODO create test
 export function returnStructuredResultsArray(results: string[]) {
     const resultsArray = results.map((result: string) => {
         const resultParts = result.split(' - ');
