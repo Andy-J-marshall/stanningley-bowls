@@ -103,6 +103,11 @@ describe('#RecordsHelper Tests', () => {
                 highestTotalGames
             );
 
+            const teamsInTeamRecords = Object.keys(teamRecords);
+            const teamsInRecordsWithGames = teamsInTeamRecords.filter(
+                (t) => teamRecords[t].mostTeamWins > 0
+            );
+
             expect(minTotalGames).to.equal(15);
             expect(mostGamesPlayer).to.deep.equal(['paul bowes']);
             expect(mostGames).to.equal(53);
@@ -112,7 +117,9 @@ describe('#RecordsHelper Tests', () => {
             expect(bestWinPercPlayer).to.deep.equal(['john armitage']);
             expect(bestAverage).to.equal(11.666666666666666);
             expect(bestAveragePlayer).to.deep.equal(['john armitage']);
-            expect(teamRecords).to.have.length(22);
+
+            expect(teamsInTeamRecords).to.have.length(22);
+            expect(teamsInRecordsWithGames).to.have.length(4);
         });
     });
 
