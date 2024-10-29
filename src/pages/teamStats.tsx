@@ -61,6 +61,10 @@ function TeamStats(props: TeamStatsProps) {
                                             playerStats={playerResults}
                                         />
                                     )}
+                                    <br />
+                                    <p className="footnote">
+                                        Last Updated: {stats.lastUpdated}
+                                    </p>
                                 </div>
                             }
                         ></Wrapper>
@@ -95,7 +99,13 @@ function TeamStats(props: TeamStatsProps) {
                 <h1>{yearInTitle} TEAM STATS</h1>
                 <TeamTabs
                     allCombinedComponent={
-                        <CombinedTeamStats stats={teamResults} />
+                        <div>
+                            <CombinedTeamStats stats={teamResults} />
+                            <br />
+                            <p className="footnote">
+                                Last Updated: {stats.lastUpdated}
+                            </p>
+                        </div>
                     }
                     teamComponents={returnTeamComponents()}
                 />

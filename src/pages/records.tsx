@@ -49,17 +49,24 @@ function Records(props: RecordsProps) {
     function combinedRecordsComponent() {
         if (mostGames > 0) {
             return (
-                <RecordsTableDisplay
-                    minGames={minTotalGames}
-                    mostGames={mostGames}
-                    mostGamesPlayer={mostGamesPlayer}
-                    mostWins={mostWins}
-                    mostWinsPlayer={mostWinsPlayer}
-                    bestWinPerc={bestWinPerc}
-                    bestWinPercPlayer={bestWinPercPlayer}
-                    bestAverage={bestAverage}
-                    bestAveragePlayer={bestAveragePlayer}
-                />
+                <div>
+                    <RecordsTableDisplay
+                        minGames={minTotalGames}
+                        mostGames={mostGames}
+                        mostGamesPlayer={mostGamesPlayer}
+                        mostWins={mostWins}
+                        mostWinsPlayer={mostWinsPlayer}
+                        bestWinPerc={bestWinPerc}
+                        bestWinPercPlayer={bestWinPercPlayer}
+                        bestAverage={bestAverage}
+                        bestAveragePlayer={bestAveragePlayer}
+                    />
+                    <hr />
+                    <br />
+                    <p className="footnote">
+                        Last Updated: {stats.lastUpdated}
+                    </p>
+                </div>
             );
         } else {
             return <p>No games played</p>;
@@ -117,7 +124,10 @@ function Records(props: RecordsProps) {
                                                 }
                                             />
                                         )}
-                                    {bTeamRecord && <hr />}
+                                    {bTeamRecord &&
+                                        bTeamRecord.highestTeamGames > 0 && (
+                                            <hr />
+                                        )}
                                     {bTeamRecord &&
                                         bTeamRecord.bestTeamAverage > -21 && (
                                             <RecordsTableDisplay
@@ -150,6 +160,11 @@ function Records(props: RecordsProps) {
                                                 }
                                             />
                                         )}
+                                    <hr />
+                                    <br />
+                                    <p className="footnote">
+                                        Last Updated: {stats.lastUpdated}
+                                    </p>
                                 </div>
                             }
                         ></Wrapper>
