@@ -134,5 +134,6 @@ export function findTeamStats(
             );
         });
     }
+
     return { teamName, teamStats, bTeamStats };
 }

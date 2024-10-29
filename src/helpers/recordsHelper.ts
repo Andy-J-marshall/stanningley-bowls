@@ -4,7 +4,6 @@ import {
     PlayerResultsStatsFile,
     ConfigTeamData,
 } from '../types/interfaces';
-import { returnTabName } from './statsHelper';
 
 // TODO add tests for this file
 
