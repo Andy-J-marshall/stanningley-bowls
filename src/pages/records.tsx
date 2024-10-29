@@ -8,6 +8,7 @@ import {
     findLeaguesAvailableInData,
     findMinNumberOfGames,
     findPlayerRecords,
+    findTeamRecords,
 } from '../helpers/recordsHelper';
 
 function Records(props: RecordsProps) {
@@ -66,38 +67,12 @@ function Records(props: RecordsProps) {
 
     function returnAllComponentsForTeams() {
         return config.historicTeamInfo.map((teamData) => {
-            let teamName = '';
             let displayname = returnTabName(teamData.teamNames[0]);
-            let teamRecord = null;
 
-            // TODO possibly refactor this to a helper function?
-            // Find A team stats
-            for (const team of teamData.teamNames) {
-                const tn = team.toLowerCase();
-                const tr = teamRecords[tn];
-                if (tr) {
-                    if (tr.bestTeamAverage > -21) {
-                        teamRecord = tr;
-                        teamName = tn;
-                        break;
-                    }
-                }
-
-                // Check for a team with an (a) suffix if no team found
-                const trWithASuffix = teamRecords[tn + ' (a)'];
-                if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
-                    teamRecord = trWithASuffix;
-                    teamName = tn;
-                    break;
-                }
-            }
-
-            // Find B team stats if they exist
-            let bTeamRecord = null;
-            if (teamData.bTeamForLeagueBool) {
-                bTeamRecord =
-                    teamRecords[teamName.replace(' (a)', '') + ' (b)'];
-            }
+            const { teamName, teamRecord, bTeamRecord } = findTeamRecords(
+                teamData,
+                teamRecords
+            );
 
             if (teamRecord || bTeamRecord) {
                 if (

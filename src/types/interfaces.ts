@@ -229,7 +229,7 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
-export interface PlayerRecords {
+export interface Records {
     [key: string]: {
         day: string;
         minTeamGames: number;

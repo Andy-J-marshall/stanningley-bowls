@@ -1,5 +1,10 @@
 import { config } from '../config';
-import { PlayerRecords, PlayerResultsStatsFile } from '../types/interfaces';
+import {
+    Records,
+    PlayerResultsStatsFile,
+    ConfigTeamData,
+} from '../types/interfaces';
+import { returnTabName } from './statsHelper';
 
 // TODO add tests for this file
 
@@ -42,7 +47,7 @@ export function findLeaguesAvailableInData(
 export function findMinNumberOfGames(
     playerResults: PlayerResultsStatsFile,
     teamsFound: string[],
-    initialTeamRecords: PlayerRecords
+    initialTeamRecords: Records
 ) {
     const players = Object.keys(playerResults);
     const teamRecords = initialTeamRecords;
@@ -83,7 +88,7 @@ export function findMinNumberOfGames(
 export function findPlayerRecords(
     playerResults: PlayerResultsStatsFile,
     teamsFound: string[],
-    teamRecords: PlayerRecords,
+    teamRecords: Records,
     highestTotalGames: number
 ) {
     const players = Object.keys(playerResults);
@@ -220,4 +225,41 @@ export function findPlayerRecords(
         bestAveragePlayer,
         bestAverage,
     };
+}
+
+export function findTeamRecords(
+    teamData: ConfigTeamData,
+    teamRecords: Records
+) {
+    let teamName = '';
+    let teamRecord = null;
+
+    // Find A team stats
+    for (const team of teamData.teamNames) {
+        const nameLowerCase = team.toLowerCase();
+        const tr = teamRecords[nameLowerCase];
+        if (tr) {
+            if (tr.bestTeamAverage > -21) {
+                teamRecord = tr;
+                teamName = nameLowerCase;
+                break;
+            }
+        }
+
+        // Check for a team with an (a) suffix if no team found
+        const trWithASuffix = teamRecords[nameLowerCase + ' (a)'];
+        if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+            teamRecord = trWithASuffix;
+            teamName = nameLowerCase;
+            break;
+        }
+    }
+
+    // Find B team stats if they exist
+    let bTeamRecord = null;
+    if (teamData.bTeamForLeagueBool) {
+        bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
+    }
+
+    return { teamName, teamRecord, bTeamRecord };
 }
