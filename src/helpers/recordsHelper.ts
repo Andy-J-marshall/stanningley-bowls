@@ -5,8 +5,6 @@ import {
     ConfigTeamData,
 } from '../types/interfaces';
 
-// TODO add tests for this file
-
 export function findLeaguesAvailableInData(
     playerResults: PlayerResultsStatsFile
 ) {
