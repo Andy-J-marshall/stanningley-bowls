@@ -71,12 +71,6 @@ export function returnPlayerStats(
         totalPairsHomeAggAgainst,
         totalPairsAwayAgg,
         totalPairsAwayAggAgainst,
-        availableAgg,
-        availablePairsAgg,
-        availableHomeAgg,
-        availableAwayAgg,
-        availablePairsHomeAgg,
-        availablePairsAwayAgg,
     } = stats;
     const p = playersStats[player];
 
@@ -155,9 +149,6 @@ export function returnPlayerStats(
     const totalSinglesAwayAggAgainst =
         totalAwayAggAgainst - totalPairsAwayAggAgainst;
 
-    const availableCupAgg = availableAgg - availableHomeAgg - availableAwayAgg;
-    const availablePairsCupAgg =
-        availablePairsAgg - availablePairsHomeAgg - availablePairsAwayAgg;
     const totalPairsCupAgg =
         totalPairsAgg - totalPairsHomeAgg - totalPairsAwayAgg;
     const totalPairsCupAggAgainst =
@@ -264,14 +255,6 @@ export function returnPlayerStats(
         allTeamStats,
         biggestWin,
         results,
-        availableAgg,
-        availablePairsAgg,
-        availableHomeAgg,
-        availableAwayAgg,
-        availableCupAgg,
-        availablePairsHomeAgg,
-        availablePairsAwayAgg,
-        availablePairsCupAgg,
     };
 }
 

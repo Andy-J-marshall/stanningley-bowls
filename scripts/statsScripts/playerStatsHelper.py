@@ -9,12 +9,6 @@ def returnListOfPlayerStats(days, includeTeamData, players):
         playerObj = {
             'totalAgg': 0,
             'totalAggAgainst': 0,
-            'availableAgg': 0,
-            'availablePairsAgg': 0,
-            'availableHomeAgg': 0,
-            'availableAwayAgg': 0,
-            'availablePairsHomeAgg': 0,
-            'availablePairsAwayAgg': 0,
             'totalPairsAgg': 0,
             'totalPairsAggAgainst': 0,
             'totalHomeAgg': 0,
@@ -105,7 +99,6 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
         if pairsGame:
             playerNameForResult = playerName + ' & ' + pairsPartner
             opponentsName = opponentsName + ' & ' + secondOpponent
-            playerStats[playerName]['availablePairsAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
             playerStats[playerName]['totalPairsAgg'] += aggregate
             playerStats[playerName]['totalPairsAggAgainst'] += opponentAggregate
 
@@ -151,23 +144,18 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
                     playerStats[playerName]['pairCupLosses'] += 1
 
         # Averages
-        playerStats[playerName]['availableAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
         playerStats[playerName]['totalAgg'] += aggregate
         playerStats[playerName]['totalAggAgainst'] += opponentAggregate
         if homeGame:
-            playerStats[playerName]['availableHomeAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
             playerStats[playerName]['totalHomeAgg'] += aggregate
             playerStats[playerName]['totalHomeAggAgainst'] += opponentAggregate
             if pairsGame:
-                playerStats[playerName]['availablePairsHomeAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalPairsHomeAgg'] += aggregate
                 playerStats[playerName]['totalPairsHomeAggAgainst'] += opponentAggregate
         if awayGame:
-            playerStats[playerName]['availableAwayAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
             playerStats[playerName]['totalAwayAgg'] += aggregate
             playerStats[playerName]['totalAwayAggAgainst'] += opponentAggregate
             if pairsGame:
-                playerStats[playerName]['availablePairsAwayAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                 playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
         

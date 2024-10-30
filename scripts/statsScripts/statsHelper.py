@@ -1,7 +1,5 @@
 import teamDetails
 
-leaguesWithGamesTo26 = ['wednesday pairs airewharfe']
-
 cupText = [
     ' trophy',
     ' shield',
@@ -35,11 +33,6 @@ def returnTeamNameToStoreData(team):
 
 def removeSuffixFromTeamName(team):
     return team.replace(' (A)', '').replace(' (B)', '').replace(' (C)', '').replace(' (D)', '')
-
-def returnTotalAggAvailablePerGame(team):
-    if team.lower() in leaguesWithGamesTo26:
-        return 26
-    return 21
 
 def findCupGameRows(allRowsInFile):
     cupGameRows = []

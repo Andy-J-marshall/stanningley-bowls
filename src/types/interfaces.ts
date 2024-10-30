@@ -174,12 +174,6 @@ export interface PlayerResultsStatsFile {
     [key: string]: {
         totalAgg: number;
         totalAggAgainst: number;
-        availableAgg: number;
-        availablePairsAgg: number;
-        availableHomeAgg: number;
-        availableAwayAgg: number;
-        availablePairsHomeAgg: number;
-        availablePairsAwayAgg: number;
         totalPairsAgg: number;
         totalPairsAggAgainst: number;
         totalHomeAgg: number;
@@ -312,12 +306,4 @@ export interface AggregatedPlayerStats {
     allTeamStats: any;
     biggestWin: string;
     results: string[];
-    availableAgg: number;
-    availablePairsAgg: number;
-    availableHomeAgg: number;
-    availableAwayAgg: number;
-    availableCupAgg: number;
-    availablePairsHomeAgg: number;
-    availablePairsAwayAgg: number;
-    availablePairsCupAgg: number;
 }

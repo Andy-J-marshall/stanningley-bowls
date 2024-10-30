@@ -109,18 +109,6 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
                 collatedStats[player].totalAgg += yearPlayerStats.totalAgg;
                 collatedStats[player].totalAggAgainst +=
                     yearPlayerStats.totalAggAgainst;
-                collatedStats[player].availableAgg +=
-                    yearPlayerStats.availableAgg;
-                collatedStats[player].availablePairsAgg +=
-                    yearPlayerStats.availablePairsAgg;
-                collatedStats[player].availableHomeAgg +=
-                    yearPlayerStats.availableHomeAgg;
-                collatedStats[player].availableAwayAgg +=
-                    yearPlayerStats.availableAwayAgg;
-                collatedStats[player].availablePairsHomeAgg +=
-                    yearPlayerStats.availablePairsHomeAgg;
-                collatedStats[player].availablePairsAwayAgg +=
-                    yearPlayerStats.availablePairsAwayAgg;
                 collatedStats[player].totalPairsAgg +=
                     yearPlayerStats.totalPairsAgg;
                 collatedStats[player].totalPairsAggAgainst +=

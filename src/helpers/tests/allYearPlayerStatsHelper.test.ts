@@ -72,12 +72,6 @@ describe('#allYearPlayerStatsHelper Tests', () => {
         expect(result['vanessa lancaster']).to.deep.equal({
             totalAgg: 725,
             totalAggAgainst: 788,
-            availableAgg: 975,
-            availablePairsAgg: 408,
-            availableHomeAgg: 451,
-            availableAwayAgg: 477,
-            availablePairsHomeAgg: 220,
-            availablePairsAwayAgg: 162,
             totalPairsAgg: 309,
             totalPairsAggAgainst: 336,
             totalHomeAgg: 353,
