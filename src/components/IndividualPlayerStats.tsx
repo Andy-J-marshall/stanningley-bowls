@@ -23,7 +23,6 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
         setLoaded(true);
     });
 
-    // TODO issue for players who haven't played any games in previous years when selecting all year stats
     return (
         <div id="detailed-player-stats">
             <h2 style={{ padding: '0.5rem' }} id="playerNameTitle">
