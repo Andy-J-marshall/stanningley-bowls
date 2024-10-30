@@ -184,6 +184,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {/* TODO create a component? */}
                     {/* TODO check how it looks on mobile */}
+                    {/* TODO maybe put TOTAL on 1 row and the rest on the next row? */}
 
                     {displayGamesPlayed > 0 && (
                         <div>
