@@ -201,3 +201,4 @@ Update team info in all components:
 -   Home/away/cup breakdown on stat summary options
 -   Add team specific filters to player stats (and remove from team stats?)
 -   Split the script into a separate repo and create an API?
+-   Add better stats for aggregate scored and conceded (e.g. average per game), and improve the ui for this
