@@ -68,7 +68,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                         {biggestWin && totalWins > 0 && (
                             <Card bg="light">
                                 <Card.Body>
-                                    <Card.Title>AVERAGE</Card.Title>
+                                    <Card.Title>BEST WIN</Card.Title>
                                     <Card.Text id="biggestWin">
                                         {capitalizeText([biggestWin])}
                                     </Card.Text>
