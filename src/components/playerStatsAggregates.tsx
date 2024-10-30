@@ -200,11 +200,11 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                     <h3>TOTAL</h3>
                     <p>
                         Aggregate scored: {displayTotalAgg}
-                        {displayAvailableAgg > 0 && ` / ${displayAvailableAgg}`}
+                        {` / ${displayAvailableAgg}`}
                     </p>
                     <p>
                         Aggregate conceded: {displayTotalAggAgainst}
-                        {displayAvailableAgg > 0 && ` / ${displayAvailableAgg}`}
+                        {` / ${displayAvailableAgg}`}
                     </p>
                     {displayHomeGamesPlayed > 0 && (
                         <div>
@@ -212,13 +212,11 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <h3>HOME</h3>
                             <p>
                                 Aggregate scored: {displayTotalHomeAgg}
-                                {displayAvailableHomeAgg > 0 &&
-                                    ` / ${displayAvailableHomeAgg}`}
+                                {` / ${displayAvailableHomeAgg}`}
                             </p>
                             <p>
                                 Aggregate conceded: {displayTotalHomeAggAgainst}
-                                {displayAvailableHomeAgg > 0 &&
-                                    ` / ${displayAvailableHomeAgg}`}
+                                {` / ${displayAvailableHomeAgg}`}
                             </p>
                         </div>
                     )}
@@ -228,13 +226,11 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <h3>AWAY</h3>
                             <p>
                                 Aggregate scored: {displayTotalAwayAgg}
-                                {displayAvailableAwayAgg > 0 &&
-                                    ` / ${displayAvailableAwayAgg}`}
+                                {` / ${displayAvailableAwayAgg}`}
                             </p>
                             <p>
                                 Aggregate conceded: {displayTotalAwayAggAgainst}
-                                {displayAvailableAwayAgg > 0 &&
-                                    ` / ${displayAvailableAwayAgg}`}
+                                {` / ${displayAvailableAwayAgg}`}
                             </p>
                         </div>
                     )}
@@ -244,13 +240,11 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <h3>CUP</h3>
                             <p>
                                 Aggregate scored: {displayCupAgg}
-                                {displayAvailableCupAgg > 0 &&
-                                    ` / ${displayAvailableCupAgg}`}
+                                {` / ${displayAvailableCupAgg}`}
                             </p>
                             <p>
                                 Aggregate conceded: {displayCupAggAgainst}
-                                {displayAvailableCupAgg > 0 &&
-                                    ` / ${displayAvailableCupAgg}`}
+                                {` / ${displayAvailableCupAgg}`}
                             </p>
                         </div>
                     )}
