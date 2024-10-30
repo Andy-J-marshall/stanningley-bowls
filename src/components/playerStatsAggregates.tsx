@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Card, Row } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -197,55 +197,135 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             displayPairsCallback={displayPairs}
                         />
                     )}
+
                     <h3>TOTAL</h3>
-                    <p>
-                        Aggregate scored: {displayTotalAgg}
-                        {` / ${displayAvailableAgg}`}
-                    </p>
-                    <p>
-                        Aggregate conceded: {displayTotalAggAgainst}
-                        {` / ${displayAvailableAgg}`}
-                    </p>
+                    <Row
+                        style={{ margin: '0.7rem' }}
+                        xs={2}
+                        className="g-4 align-items-start"
+                    >
+                        <Card bg="light">
+                            <Card.Body>
+                                <Card.Title>AGGREGATED SCORED</Card.Title>
+                                <Card.Text>
+                                    {displayTotalAgg}
+                                    {` / ${displayAvailableAgg}`}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                        <Card bg="light">
+                            <Card.Body>
+                                <Card.Title>AGGREGATED CONCEDED</Card.Title>
+                                <Card.Text>
+                                    {displayTotalAggAgainst}
+                                    {` / ${displayAvailableAgg}`}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Row>
+
                     {displayHomeGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>HOME</h3>
-                            <p>
-                                Aggregate scored: {displayTotalHomeAgg}
-                                {` / ${displayAvailableHomeAgg}`}
-                            </p>
-                            <p>
-                                Aggregate conceded: {displayTotalHomeAggAgainst}
-                                {` / ${displayAvailableHomeAgg}`}
-                            </p>
+                            <Row
+                                style={{ margin: '0.7rem' }}
+                                xs={2}
+                                className="g-4 align-items-start"
+                            >
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED SCORED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayTotalHomeAgg}
+                                            {` / ${displayAvailableHomeAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED CONCEDED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayTotalHomeAggAgainst}
+                                            {` / ${displayAvailableHomeAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Row>
                         </div>
                     )}
+
                     {displayAwayGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>AWAY</h3>
-                            <p>
-                                Aggregate scored: {displayTotalAwayAgg}
-                                {` / ${displayAvailableAwayAgg}`}
-                            </p>
-                            <p>
-                                Aggregate conceded: {displayTotalAwayAggAgainst}
-                                {` / ${displayAvailableAwayAgg}`}
-                            </p>
+                            <Row
+                                style={{ margin: '0.7rem' }}
+                                xs={2}
+                                className="g-4 align-items-start"
+                            >
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED SCORED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayTotalAwayAgg}
+                                            {` / ${displayAvailableAwayAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED CONCEDED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayTotalAwayAggAgainst}
+                                            {` / ${displayAvailableAwayAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Row>
                         </div>
                     )}
+
                     {displayCupGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>CUP</h3>
-                            <p>
-                                Aggregate scored: {displayCupAgg}
-                                {` / ${displayAvailableCupAgg}`}
-                            </p>
-                            <p>
-                                Aggregate conceded: {displayCupAggAgainst}
-                                {` / ${displayAvailableCupAgg}`}
-                            </p>
+                            <Row
+                                style={{ margin: '0.7rem' }}
+                                xs={2}
+                                className="g-4 align-items-start"
+                            >
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED SCORED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayCupAgg}
+                                            {` / ${displayAvailableCupAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                                <Card bg="light">
+                                    <Card.Body>
+                                        <Card.Title>
+                                            AGGREGATED CONCEDED
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {displayCupAggAgainst}
+                                            {` / ${displayAvailableCupAgg}`}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Row>
                         </div>
                     )}
                 </Accordion.Body>
