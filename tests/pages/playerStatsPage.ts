@@ -44,9 +44,7 @@ export class PlayerStatsPage {
         );
         this.playerListInDropdown = page.locator('#search');
         this.backButton = page.locator('#back-button');
-        this.playerStatsItem = page.locator(
-            '#detailed-player-stats .list-group-item'
-        );
+        this.playerStatsItem = page.locator('#detailed-player-stats');
         this.playerStatsRows = page.locator('#player-stats-per-team tbody');
         this.playerNameTitle = page.locator('#playerNameTitle');
         this.overviewAccordionButton = page.locator('#stats-overview');
@@ -119,15 +117,16 @@ export class PlayerStatsPage {
 
     async checkTeamAccordionHeadersExist() {
         await expect(this.accordionButtons).toHaveCount(5);
-        await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
-        await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
+        await this.checkAccordionHeaderExists();
         await expect(this.teamAccordionButton).toHaveText('TEAMS');
-        await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
-        await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     }
 
-    async checkOnlyBasicAccordionHeadersExist() {
+    async checkTeamAccordionHeadersNotExists() {
         await expect(this.accordionButtons).toHaveCount(4);
+        await this.checkAccordionHeaderExists();
+    }
+
+    private async checkAccordionHeaderExists() {
         await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
         await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
         await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
@@ -162,8 +161,8 @@ export class PlayerStatsPage {
         await this.allYearCheckBox.uncheck();
     }
 
-    async totalPlayerCountIsCorrect(playerCount: string) {
-        await expect(this.totalPlayerCount).toContainText(playerCount);
+    async totalPlayerCountIsCorrect(playerCount: number) {
+        await expect(this.totalPlayerCount).toContainText(playerCount.toString());
     }
 
     async totalPlayerCountIsNotVisible() {
@@ -188,14 +187,14 @@ export class PlayerStatsPage {
     }
 
     playerStatsAreCorrectInTable(
-        games: string,
-        wins: string,
+        games: number,
+        wins: number,
         winPerc: string,
-        avg: string
+        avg: number
     ) {
-        expect(this.games).toContainText(games);
-        expect(this.wins).toContainText(wins);
-        expect(this.winPerc).toContainText(winPerc);
-        expect(this.avg).toContainText(avg);
+        expect(this.games).toContainText(games.toString());
+        expect(this.wins).toContainText(wins.toString());
+        expect(this.winPerc).toContainText(winPerc.toString());
+        expect(this.avg).toContainText(avg.toString());
     }
 }

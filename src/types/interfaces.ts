@@ -16,12 +16,6 @@ export interface RecordsProps {
     yearToDisplay: string;
 }
 
-export interface AllTimePlayerStatsProps {
-    statsArray: FullStatsFile[];
-    showSinglesOnly: boolean;
-    showPairsOnly: boolean;
-}
-
 export interface CombinedTeamStatsProps {
     stats: TeamResultsStatsFile[];
 }
@@ -33,8 +27,7 @@ export interface GameTypeButtonProps {
 }
 
 export interface IndividualPlayerStatsProps {
-    player: string;
-    playersStats: PlayerResultsStatsFile;
+    playersStats: AggregatedPlayerStats;
     name: string;
     showStatSummary: boolean;
 }
@@ -96,9 +89,12 @@ export interface SearchProps {
     searchList: string[];
     value: string[];
     searchedName: string;
-    handleSubmitCallback: (event: React.FormEvent<HTMLFormElement>) => void;
     handleChangeCallback: (selected: string[]) => void;
     closeButtonCallback: () => void;
+}
+
+export interface PlayerStatsComponentsProps {
+    stats: AggregatedPlayerStats;
 }
 
 export interface RecordsTableDisplayProps {
@@ -162,6 +158,11 @@ export interface PlayerStatsTeamsProps {
     };
 }
 
+export interface ConfigTeamData {
+    teamNames: string[];
+    bTeamForLeagueBool: boolean;
+}
+
 export interface FullStatsFile {
     playerResults: PlayerResultsStatsFile;
     teamResults?: TeamResultsStatsFile[];
@@ -204,7 +205,6 @@ export interface PlayerResultsStatsFile {
         pairCupWins: number;
         pairCupLosses: number;
         totalGamesPlayed: number;
-        dayPlayed: string[];
         results: string[];
         [key: string]: any;
     };
@@ -229,83 +229,95 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
-export interface AggregatedStats {
-    stats: {
-        totalAgg: number;
-        totalAggAgainst: number;
-        totalPairsAgg: number;
-        totalPairsAggAgainst: number;
-        totalHomeAgg: number;
-        totalHomeAggAgainst: number;
-        totalAwayAgg: number;
-        totalAwayAggAgainst: number;
-        singlesAgg: number;
-        singlesAggAgainst: number;
-        totalPairsHomeAgg: number;
-        totalPairsHomeAggAgainst: number;
-        totalPairsAwayAgg: number;
-        totalPairsAwayAggAgainst: number;
-        totalPairsCupAgg: number;
-        totalPairsCupAggAgainst: number;
-        totalSinglesHomeAgg: number;
-        totalSinglesHomeAggAgainst: number;
-        totalSinglesAwayAgg: number;
-        totalSinglesAwayAggAgainst: number;
-        totalSinglesCupAgg: number;
-        totalSinglesCupAggAgainst: number;
-        cupAgg: number;
-        cupAggAgainst: number;
-        awayLosses: number;
-        homeLosses: number;
-        pairLosses: number;
-        cupLosses: number;
-        totalLosses: number;
-        pairHomeLosses: number;
-        pairAwayLosses: number;
-        pairCupLosses: number;
-        homeWins: number;
-        awayWins: number;
-        cupWins: number;
-        pairWins: number;
-        totalWins: number;
-        pairHomeWins: number;
-        pairAwayWins: number;
-        pairCupWins: number;
-        gamesPlayed: number;
-        homeGamesPlayed: number;
-        awayGamesPlayed: number;
-        singlesHomeGamesPlayed: number;
-        singlesAwayGamesPlayed: number;
-        singlesCupGamesPlayed: number;
-        pairHomeGamesPlayed: number;
-        pairAwayGamesPlayed: number;
-        pairCupGamesPlayed: number;
-        cupGamesPlayed: number;
-        pairsGames: number;
-        singlesGames: number;
-        average: number;
-        homeAverage: number;
-        awayAverage: number;
-        cupAverage: number;
-        singlesAvg: number;
-        pairsAvg: number;
-        singlesHomeAverage: number;
-        singlesAwayAverage: number;
-        singlesCupAverage: number;
-        pairsHomeAverage: number;
-        pairsAwayAverage: number;
-        pairsCupAverage: number;
-        allTeamStats: any;
-        allTeamsPlayedFor: any;
-        biggestWin: string;
-        results: string[];
-        availableAgg: number;
-        availablePairsAgg: number;
-        availableHomeAgg: number;
-        availableAwayAgg: number;
-        availableCupAgg: number;
-        availablePairsHomeAgg: number;
-        availablePairsAwayAgg: number;
-        availablePairsCupAgg: number;
+export interface Records {
+    [key: string]: {
+        day: string;
+        minTeamGames: number;
+        bestTeamWinPerc: number;
+        bestTeamWinPercPlayer: string[];
+        mostTeamWins: number;
+        mostTeamWinsPlayer: string[];
+        highestTeamGames: number;
+        mostTeamGamesPlayer: string[];
+        bestTeamAverage: number;
+        bestTeamAveragePlayer: string[];
     };
+}
+
+export interface AggregatedPlayerStats {
+    totalAgg: number;
+    totalAggAgainst: number;
+    totalPairsAgg: number;
+    totalPairsAggAgainst: number;
+    totalHomeAgg: number;
+    totalHomeAggAgainst: number;
+    totalAwayAgg: number;
+    totalAwayAggAgainst: number;
+    singlesAgg: number;
+    singlesAggAgainst: number;
+    totalPairsHomeAgg: number;
+    totalPairsHomeAggAgainst: number;
+    totalPairsAwayAgg: number;
+    totalPairsAwayAggAgainst: number;
+    totalPairsCupAgg: number;
+    totalPairsCupAggAgainst: number;
+    totalSinglesHomeAgg: number;
+    totalSinglesHomeAggAgainst: number;
+    totalSinglesAwayAgg: number;
+    totalSinglesAwayAggAgainst: number;
+    totalSinglesCupAgg: number;
+    totalSinglesCupAggAgainst: number;
+    cupAgg: number;
+    cupAggAgainst: number;
+    awayLosses: number;
+    homeLosses: number;
+    pairLosses: number;
+    cupLosses: number;
+    totalLosses: number;
+    pairHomeLosses: number;
+    pairAwayLosses: number;
+    pairCupLosses: number;
+    homeWins: number;
+    awayWins: number;
+    cupWins: number;
+    pairWins: number;
+    totalWins: number;
+    pairHomeWins: number;
+    pairAwayWins: number;
+    pairCupWins: number;
+    gamesPlayed: number;
+    homeGamesPlayed: number;
+    awayGamesPlayed: number;
+    singlesHomeGamesPlayed: number;
+    singlesAwayGamesPlayed: number;
+    singlesCupGamesPlayed: number;
+    pairHomeGamesPlayed: number;
+    pairAwayGamesPlayed: number;
+    pairCupGamesPlayed: number;
+    cupGamesPlayed: number;
+    pairsGames: number;
+    singlesGames: number;
+    average: number;
+    homeAverage: number;
+    awayAverage: number;
+    cupAverage: number;
+    singlesAvg: number;
+    pairsAvg: number;
+    singlesHomeAverage: number;
+    singlesAwayAverage: number;
+    singlesCupAverage: number;
+    pairsHomeAverage: number;
+    pairsAwayAverage: number;
+    pairsCupAverage: number;
+    allTeamStats: any;
+    biggestWin: string;
+    results: string[];
+    availableAgg: number;
+    availablePairsAgg: number;
+    availableHomeAgg: number;
+    availableAwayAgg: number;
+    availableCupAgg: number;
+    availablePairsHomeAgg: number;
+    availablePairsAwayAgg: number;
+    availablePairsCupAgg: number;
 }

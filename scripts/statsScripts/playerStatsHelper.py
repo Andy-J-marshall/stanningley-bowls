@@ -40,7 +40,6 @@ def returnListOfPlayerStats(days, includeTeamData, players):
             'pairCupWins': 0,
             'pairCupLosses': 0,
             'totalGamesPlayed': 0,
-            'dayPlayed': [],
             'results': [],
         }
 
@@ -171,7 +170,6 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
                 playerStats[playerName]['availablePairsAwayAgg'] += statsHelper.returnTotalAggAvailablePerGame(team)
                 playerStats[playerName]['totalPairsAwayAgg'] += aggregate
                 playerStats[playerName]['totalPairsAwayAggAgainst'] += opponentAggregate
-        playerStats[playerName]['dayPlayed'].append(team)
         
         if includeTeamStatsBool:
             teamNameToStoreData = statsHelper.returnTeamNameToStoreData(team).lower()

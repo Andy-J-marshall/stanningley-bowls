@@ -1,9 +1,38 @@
-import { findBiggestWin } from './statsHelper';
 import { config } from '../config';
 import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
+import { checkWinPercAndAverageAreNumbers } from './statsHelper';
+
+export function findBiggestWin(playerResults: string[]): string {
+    let bestWin = '';
+    if (playerResults) {
+        let bestWinMargin = 0;
+        playerResults.forEach((result) => {
+            const resultParts = result.split(' - ', 2);
+
+            const teamPart = resultParts[0];
+            const teamScoreMatch = teamPart.match(/[0-9]+/g);
+            const teamScore = teamScoreMatch
+                ? parseInt(teamScoreMatch[0].trim())
+                : 0;
+
+            const opponentPart = resultParts[1].split(' (')[0];
+            const opponentScoreMatch = opponentPart.match(/[0-9]+/g);
+            const opponentScore = opponentScoreMatch
+                ? parseInt(opponentScoreMatch[0].trim())
+                : 1000; // Ensures invalid scores are not considered
+
+            const scoreDiff = teamScore - opponentScore;
+            if (scoreDiff > 0 && scoreDiff > bestWinMargin) {
+                bestWinMargin = scoreDiff;
+                bestWin = `${teamScore} - ${opponentScore}`;
+            }
+        });
+    }
+    return bestWin;
+}
 
 export function returnPlayerStats(
     playersStats: PlayerResultsStatsFile,
@@ -38,7 +67,6 @@ export function returnPlayerStats(
         totalAwayAgg,
         totalAwayAggAgainst,
         results,
-        dayPlayed,
         totalPairsHomeAgg,
         totalPairsHomeAggAgainst,
         totalPairsAwayAgg,
@@ -111,13 +139,6 @@ export function returnPlayerStats(
             teamAvg,
             teamWinPerc,
         };
-    });
-
-    let allTeamsPlayedFor: string[] = [];
-    dayPlayed.forEach((day: string) => {
-        if (!allTeamsPlayedFor.includes(day)) {
-            allTeamsPlayedFor.push(day);
-        }
     });
 
     // Pairs & singles
@@ -241,7 +262,6 @@ export function returnPlayerStats(
         pairsAwayAverage,
         pairsCupAverage,
         allTeamStats,
-        allTeamsPlayedFor,
         biggestWin,
         results,
         availableAgg,
@@ -255,32 +275,7 @@ export function returnPlayerStats(
     };
 }
 
-export function checkWinPercAndAverageAreNumbers(stats: any) {
-    let verifiedStats = stats;
-
-    if (isNaN(verifiedStats.winPerc)) {
-        verifiedStats.winPerc = 0;
-    }
-    if (isNaN(verifiedStats.average)) {
-        verifiedStats.average = -99;
-    }
-    if (isNaN(verifiedStats.singlesWinPerc)) {
-        verifiedStats.singlesWinPerc = 0;
-    }
-    if (isNaN(verifiedStats.singlesAverage)) {
-        verifiedStats.singlesAverage = -99;
-    }
-    if (isNaN(verifiedStats.pairsWinPerc)) {
-        verifiedStats.pairsWinPerc = 0;
-    }
-    if (isNaN(verifiedStats.pairsAverage)) {
-        verifiedStats.pairsAverage = -99;
-    }
-
-    return verifiedStats;
-}
-
-export function collatePlayerStats(
+export function returnPlayerStatSummary(
     statsToUse: PlayerResultsStatsFile,
     players: string[]
 ) {
@@ -333,4 +328,34 @@ export function collatePlayerStats(
         }
     });
     return statsArray;
+}
+
+export function returnStructuredResultsArray(results: string[]) {
+    const resultsArray = results.map((result: string) => {
+        const resultParts = result.split(' - ');
+
+        const homePart = resultParts[0];
+        const homeScoreMatch = homePart.match(/[0-9]+/g);
+        const homeScore = homeScoreMatch ? homeScoreMatch[0].trim() : '';
+        const homePlayer = homePart.split(/[0-9]+/g)[0].trim();
+
+        const awayPart = resultParts[1].split(' (')[0];
+        const awayScoreMatch = awayPart.match(/[0-9]+/g);
+        const awayScore = awayScoreMatch
+            ? awayScoreMatch[0].trim()
+            : '';
+        const awayPlayer = awayPart.split(/[0-9]+/g)[1].trim();
+
+        return {
+            home: {
+                name: homePlayer,
+                score: homeScore,
+            },
+            away: {
+                name: awayPlayer,
+                score: awayScore,
+            },
+        };
+    });
+    return resultsArray;
 }

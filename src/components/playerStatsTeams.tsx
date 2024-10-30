@@ -5,6 +5,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
 
     const { allTeamStats } = stats;
+    allTeamStats.sort((a, b) => a.teamName.localeCompare(b.teamName));
 
     return (
         <div id="player-stats-teams">

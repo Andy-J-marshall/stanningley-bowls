@@ -2,7 +2,7 @@ import { Table } from 'react-bootstrap';
 import { config } from '../config';
 import { StatsTableDisplayProps } from '../types/interfaces';
 
-function StatsTableDisplay(props: StatsTableDisplayProps) {
+function TeamStatsTable(props: StatsTableDisplayProps) {
     const totalGames = props.totalGames;
     const totalWins = props.totalWins;
     const homeWins = props.homeWins || 0;
@@ -106,4 +106,4 @@ function StatsTableDisplay(props: StatsTableDisplayProps) {
     );
 }
 
-export default StatsTableDisplay;
+export default TeamStatsTable;

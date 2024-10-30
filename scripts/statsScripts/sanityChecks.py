@@ -65,8 +65,6 @@ def checkPlayerStats(playerStats, players):
         # checks arrays
         if len(stats['results']) != stats['totalGamesPlayed']:
             raise Exception(f'results for {player} incorrect?')
-        if len(stats['dayPlayed']) != stats['totalGamesPlayed']:
-            raise Exception(f'dayPlayed for {player} incorrect?')
         
         checkForDuplicateResults(stats['results'], player)
 

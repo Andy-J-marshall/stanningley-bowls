@@ -7,6 +7,7 @@ cupText = [
     ' shield',
     ' plate',
     ' cup',
+    'knockout',
     ' on ',
     'prelims',
     'pre lim',
@@ -14,11 +15,15 @@ cupText = [
     'preliminary',
     'round 1',
     'round 2',
+    '1st round',
+    '2nd round',
     'qtr-finals',
     'quarter finals',
     'quarter-finals',
     'semi-finals',
     'semi finals',
+    'q/finals',
+    's/finals',
     'final',
     'round of 16',
     'round of 32',
@@ -44,6 +49,9 @@ def findCupGameRows(allRowsInFile):
             for text in cupText:
                 if text in row.lower():
                     for i in range(0, 13):
+                        # check if row above is a bye
+                        if 'manual award' in allRowsInFile[rowNumber + i].lower():
+                            break
                         cupGameRows.append(rowNumber + i)
                     break
     return cupGameRows

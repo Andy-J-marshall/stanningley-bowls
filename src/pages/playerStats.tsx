@@ -1,15 +1,20 @@
 import { useState, useEffect } from 'react';
-import { ListGroup, Spinner } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
-import AllTimePlayerStats from '../components/allTimePlayerStats';
 import Search from '../components/search';
-import { collatePlayerStats } from '../helpers/playersHelper';
-import { config } from '../config';
+import {
+    returnPlayerStatSummary,
+    returnPlayerStats,
+} from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
+import {
+    returnPlayerStatsForAllYears,
+    returnPlayerStatSummaryForAllYears,
+} from '../helpers/allYearPlayerStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -26,24 +31,37 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [allYearsStatsToUse, setAllYearsStatsToUse] = useState(
+    const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
     const [loading, setLoading] = useState(false);
-
-    const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase());
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
-    const statsToDisplayArray: PlayerStatsSummary[] = collatePlayerStats(
+
+    // Find list of players and save to an array
+    const players = Object.keys(combinedPlayerResults).sort();
+    const playerSearchNameArray = players.map((p) => p.toUpperCase());
+    const allPlayersSet = new Set<string>();
+    allYearsStatsToUseArray.forEach((yearStats) => {
+        Object.keys(yearStats.playerResults).forEach((playerName) => {
+            allPlayersSet.add(playerName.toUpperCase());
+        });
+    });
+    const allPlayers = Array.from(allPlayersSet).sort();
+
+    const everyYearStatsSummaryArray: PlayerStatsSummary[] =
+        returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
+    const statsSummaryArray: PlayerStatsSummary[] = returnPlayerStatSummary(
         statsToUse,
         players
     );
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) && !showStatsSinceStart ? `${stats.statsYear}` : '';
+        currentYear !== Number(stats.statsYear) && !showStatsSinceStart
+            ? `${stats.statsYear}`
+            : '';
 
     useEffect(() => {
         if (!loaded) {
@@ -51,17 +69,24 @@ function PlayerStats(props: PlayerStatsProps) {
         }
         setLoaded(true);
 
-        const playersWithGames = statsToDisplayArray.filter(
-            (player) => player.games > 0
-        );
+        let playersWithGames = [];
+        if (showStatsSinceStart) {
+            playersWithGames = everyYearStatsSummaryArray.filter(
+                (player) => player.games > 0
+            );
+        } else {
+            playersWithGames = statsSummaryArray.filter(
+                (player) => player.games > 0
+            );
+        }
         setTotalPlayersUsed(playersWithGames.length);
 
         if (showStatSummary) {
             setStatsToUse(combinedPlayerResults);
-            setAllYearsStatsToUse(combinedStatsForEveryYearArray);
+            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
-            setAllYearsStatsToUse(statsForEveryYearArray);
+            setAllYearsStatsToUseArray(statsForEveryYearArray);
         }
     });
 
@@ -99,49 +124,14 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    function searchForPlayer(searchedName: string) {
-        setShowStatsSinceStart(false);
-        setSearchedPlayerName(searchedName);
-
-        const validPlayer =
-            searchedName &&
-            playerSearchNameArray.includes(searchedName.toUpperCase())
-                ? true
-                : false;
-        if (validPlayer && !searchedName.includes('show all')) {
-            const teamDaysPlayed = Object.keys(config.days);
-            const daysPlayed = combinedPlayerResults[searchedName].dayPlayed;
-            let anyTeamDays = false;
-            daysPlayed.forEach((day: string) => {
-                if (teamDaysPlayed.includes(day.toLowerCase().trim())) {
-                    anyTeamDays = true;
-                }
-            });
-            if (!anyTeamDays) {
-                setStatsToUse(combinedPlayerResults);
-                setShowStatSummary(true);
-            }
-        }
-    }
-
-    const handleSubmit = async (event: any) => {
-        setLoading(true);
-        event.preventDefault();
-        const searchedName = event.target[0].value.toLowerCase().trim();
-        setValue(['']);
-        await delay(200);
-        searchForPlayer(searchedName);
-        setLoading(false);
-    };
-
-    const handleChange = async (selected: any) => {
+    const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
             setLoading(true);
-            await delay(400);
-            searchForPlayer(searchedPlayerName.toLowerCase().trim());
+            await delay(300);
+            setSearchedPlayerName(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);
     };
@@ -151,37 +141,53 @@ function PlayerStats(props: PlayerStatsProps) {
         setSearchedPlayerName('');
     }
 
-    function showPlayerStats(playerName: string) {
-        const validPlayer = players.find((player) => player == playerName);
+    function showDetailedPlayerStats(playerName: string) {
+        const playerLower = playerName.toLowerCase();
+        const individualStats = showStatsSinceStart
+            ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
+            : statsToUse;
 
-        if (validPlayer) {
+        const playersListToUse = showStatsSinceStart ? allPlayers : players;
+        const validPlayer = playersListToUse.find(
+            (player) => player.toLowerCase() === playerLower
+        );
+
+        const detailedPlayerStats = returnPlayerStats(
+            individualStats,
+            playerLower
+        );
+
+        if (
+            validPlayer &&
+            detailedPlayerStats &&
+            detailedPlayerStats.gamesPlayed > 0
+        ) {
             return (
-                <ListGroup>
-                    <IndividualPlayerStats
-                        key={playerName}
-                        player={playerName}
-                        name={playerName}
-                        playersStats={statsToUse}
-                        showStatSummary={showStatSummary}
-                    ></IndividualPlayerStats>
-                </ListGroup>
+                <IndividualPlayerStats
+                    name={playerLower}
+                    playersStats={detailedPlayerStats}
+                    showStatSummary={showStatSummary}
+                ></IndividualPlayerStats>
             );
         } else {
             return (
                 searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h2 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found
-                    </h2>
+                    <h5 style={{ padding: '1rem 0 4rem 0' }}>
+                        Player not found for {stats.statsYear}
+                    </h5>
                 )
             );
         }
     }
 
-    function returnStatsTable() {
-        const gamesPlayedThisYear = statsToDisplayArray.find(
+    function returnStatSummaryTable() {
+        const statsArray = showStatsSinceStart
+            ? everyYearStatsSummaryArray
+            : statsSummaryArray;
+        const gamesPlayedThisYear = statsArray.find(
             (player) => player.games > 0
         );
-        const pairsGamesThisYear = statsToDisplayArray.find(
+        const pairsGamesThisYear = statsArray.find(
             (player) => player.pairsGames && player.pairsGames > 0
         );
 
@@ -191,7 +197,7 @@ function PlayerStats(props: PlayerStatsProps) {
                     <br />
                     <PlayerStatSummary
                         callback={setSearchedPlayerName}
-                        playerStats={statsToDisplayArray}
+                        playerStats={statsArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
                     />
@@ -212,43 +218,30 @@ function PlayerStats(props: PlayerStatsProps) {
     return (
         <div id="player-stat">
             <h1>{yearInTitle} PLAYER STATS</h1>
-            {!showStatsSinceStart && (
-                <Search
-                    searchList={playerSearchNameArray}
-                    value={value}
-                    searchedName={searchedPlayerName}
-                    handleSubmitCallback={handleSubmit}
-                    handleChangeCallback={handleChange}
-                    closeButtonCallback={closeButtonCallback}
-                />
-            )}
+            <Search
+                searchList={
+                    showStatsSinceStart ? allPlayers : playerSearchNameArray
+                }
+                value={value}
+                searchedName={searchedPlayerName}
+                handleChangeCallback={handleSearchChange}
+                closeButtonCallback={closeButtonCallback}
+            />
             {loading && (
                 <Spinner animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </Spinner>
             )}
 
-            {/* Shows Summary of all players stats for selected year */}
-            {!showStatsSinceStart &&
-                !loading &&
+            {/* Shows Summary of all players stats */}
+            {!loading &&
                 (!searchedPlayerName ||
                     searchedPlayerName.toLowerCase() === 'show all') &&
-                returnStatsTable()}
-
-            {/* Shows Summary of all players stats since 2013 */}
-            {showStatsSinceStart &&
-                !loading &&
-                statsForEveryYearArray.length >= 1 && (
-                    <AllTimePlayerStats
-                        statsArray={allYearsStatsToUse}
-                        showSinglesOnly={showSinglesOnlyBool}
-                        showPairsOnly={showPairsOnlyBool}
-                    />
-                )}
+                returnStatSummaryTable()}
 
             {/* Shows detailed stats for searched player */}
-            {!showStatsSinceStart && !loading && searchedPlayerName && (
-                <div>{showPlayerStats(searchedPlayerName.toLowerCase())}</div>
+            {!loading && searchedPlayerName && (
+                <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
             {/* Shows total player count */}
@@ -256,8 +249,7 @@ function PlayerStats(props: PlayerStatsProps) {
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
-                !showStatSummary &&
-                !showStatsSinceStart && (
+                !showStatSummary && (
                     <p id="total-player-count">
                         Total players: {totalPlayersUsed}
                     </p>

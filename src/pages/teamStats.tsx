@@ -3,16 +3,15 @@ import IndividualTeamStats from '../components/individualTeamStats';
 import CombinedTeamStats from '../components/combinedTeamStats';
 import TeamTabs from '../components/teamTabs';
 import { config } from '../config';
-import { returnTabName } from '../helpers/teamsHelper';
-import { TeamResultsStatsFile, TeamStatsProps } from '../types/interfaces';
+import { returnTabName } from '../helpers/statsHelper';
+import { TeamStatsProps } from '../types/interfaces';
 import Wrapper from '../components/wrapper';
+import { findTeamStats } from '../helpers/teamStatsHelper';
 
 function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;
 
-    const teamName = config.teamNames.shortName;
     const { playerResults, teamResults } = stats;
-
     const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
@@ -23,55 +22,11 @@ function TeamStats(props: TeamStatsProps) {
 
     function returnTeamComponents() {
         return config.historicTeamInfo.map((teamData) => {
-            let teamName = '';
-            let displayname = '';
-            let teamStats = null;
-            displayname = returnTabName(teamData.teamNames[0]);
-
-            // Find A team stats
-            for (const team of teamData.teamNames) {
-                const tn = team.toLowerCase();
-                const ts = teamResults?.find(
-                    (teamResult: TeamResultsStatsFile) => {
-                        return teamResult.day.toLowerCase() === tn;
-                    }
-                );
-
-                if (ts) {
-                    if (ts.totalGamesPlayed > 0) {
-                        teamStats = ts;
-                        teamName = tn;
-                        break;
-                    }
-                }
-
-                // Check for a team with an (a) suffix if no team found
-                const tsWithASuffix = teamResults?.find(
-                    (teamResult: TeamResultsStatsFile) => {
-                        return teamResult.day.toLowerCase() === tn + ' (a)';
-                    }
-                );
-                if (tsWithASuffix && tsWithASuffix.totalGamesPlayed > 0) {
-                    teamStats = tsWithASuffix;
-                    teamName = tn;
-                    break;
-                }
-            }
-
-            // Find B team stats if they exist
-            let bTeamStats = null;
-            let bTeamInLeague = false;
-            if (teamData.bTeamForLeagueBool) {
-                bTeamStats = teamResults?.find(
-                    (teamResult: TeamResultsStatsFile) => {
-                        return (
-                            teamResult.day.toLowerCase() ===
-                            teamName.replace(' (a)', '') + ' (b)'
-                        );
-                    }
-                );
-                bTeamInLeague = true;
-            }
+            const displayname = returnTabName(teamData.teamNames[0]);
+            const { teamName, teamStats, bTeamStats } = findTeamStats(
+                teamData,
+                teamResults
+            );
 
             if (teamStats || bTeamStats) {
                 if (
@@ -106,6 +61,10 @@ function TeamStats(props: TeamStatsProps) {
                                             playerStats={playerResults}
                                         />
                                     )}
+                                    <br />
+                                    <p className="footnote">
+                                        Last Updated: {stats.lastUpdated}
+                                    </p>
                                 </div>
                             }
                         ></Wrapper>
@@ -140,7 +99,13 @@ function TeamStats(props: TeamStatsProps) {
                 <h1>{yearInTitle} TEAM STATS</h1>
                 <TeamTabs
                     allCombinedComponent={
-                        <CombinedTeamStats stats={teamResults} />
+                        <div>
+                            <CombinedTeamStats stats={teamResults} />
+                            <br />
+                            <p className="footnote">
+                                Last Updated: {stats.lastUpdated}
+                            </p>
+                        </div>
                     }
                     teamComponents={returnTeamComponents()}
                 />

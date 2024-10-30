@@ -8,16 +8,30 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
-
-    playerStats = playerStats.filter((player) => player.games > 0);
-
-    let style: CSSProperties;
-
+    
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
     const [orderByAverageBool, setOrderByAverageBool] = useState(false);
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
+    
+    playerStats = playerStats.filter((player) => player.games > 0);
+    let style: CSSProperties;
+    let href: string;
+
+    if (displayPlayerStatsCallback) {
+        style = {
+            textDecoration: 'underline',
+            color: '#004558',
+        };
+        href = '/#/stats/player';
+    } else {
+        style = {
+            textDecoration: 'none',
+            color: 'black',
+        };
+        href = '/#/stats/team';
+    }
 
     function displayPlayer(event: React.MouseEvent<HTMLAnchorElement>) {
         const playerName = event.currentTarget.innerHTML;
@@ -201,7 +215,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                             <td>
                                 <a
                                     style={style}
-                                    href="/#/stats/player"
+                                    href={href}
                                     onClick={displayPlayer}
                                 >
                                     {capitalizeText([player.player])}
@@ -231,18 +245,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                 </tbody>
             );
         });
-    }
-
-    if (displayPlayerStatsCallback) {
-        style = {
-            textDecoration: 'underline',
-            color: '#004558',
-        };
-    } else {
-        style = {
-            textDecoration: 'none',
-            color: 'black',
-        };
     }
 
     if (playerStats) {

@@ -27,7 +27,7 @@ for (const player of players) {
         await yearSelectPage.select2023Year();
         await playerStatsPage.selectAllTeamStatsCheckbox();
         await playerStatsPage.searchForPlayer(player);
-        await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
+        await playerStatsPage.checkTeamAccordionHeadersNotExists();
         const {
             totalAgg,
             totalAggAgainst,
@@ -37,10 +37,10 @@ for (const player of players) {
             homeLosses,
             awayLosses,
             cupLosses,
+            totalGamesPlayed,
         } = allBowlsStats.playerResults[player.toLowerCase()];
         const totalWins = cupWins + homeWins + awayWins;
         const totalLosses = cupLosses + homeLosses + awayLosses;
-        const totalGamesPlayed = totalLosses + totalWins;
         const totalAverage = (totalAgg - totalAggAgainst) / totalGamesPlayed;
         const stats = {
             totalGamesPlayed,
@@ -58,7 +58,7 @@ test('Can switch between team and all stats', async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.selectAllTeamStatsCheckbox();
     await playerStatsPage.searchForPlayer(player);
-    await playerStatsPage.checkOnlyBasicAccordionHeadersExist();
+    await playerStatsPage.checkTeamAccordionHeadersNotExists();
 
     await playerStatsPage.clickBackToSummary();
     await playerStatsPage.deselectTeamStatsCheckbox();
@@ -71,10 +71,10 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
     await playerStatsPage.selectAllTeamStatsCheckbox();
 
     await yearSelectPage.select2023Year();
-    playerStatsPage.playerStatsAreCorrectInTable('111', '66', '59%', '2.23');
+    playerStatsPage.playerStatsAreCorrectInTable(111, 66, '59%', 2.23);
 
     await yearSelectPage.select2022Year();
-    playerStatsPage.playerStatsAreCorrectInTable('96', '69', '72%', '5.35');
+    playerStatsPage.playerStatsAreCorrectInTable(96, 69, '72%', 5.35);
 });
 
 test('Summary of Andy Marshall stats for singles and pairs games for all teams is correct', async () => {
@@ -83,13 +83,13 @@ test('Summary of Andy Marshall stats for singles and pairs games for all teams i
     await yearSelectPage.select2023Year();
 
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('37', '30', '81%', '5.57');
+    playerStatsPage.playerStatsAreCorrectInTable(37, 30, '81%', 5.57);
 
     await playerStatsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('52', '40', '77%', '5.33');
+    playerStatsPage.playerStatsAreCorrectInTable(52, 40, '77%', 5.33);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('15', '10', '67%', '4.73');
+    playerStatsPage.playerStatsAreCorrectInTable(15, 10, '67%', 4.73);
 });
 
 test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
@@ -98,13 +98,13 @@ test('Summary of Neil Porter stats for singles and pairs games for all teams is 
     await yearSelectPage.select2023Year();
 
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('31', '20', '65%', '4.74');
+    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 4.74);
 
     await playerStatsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('33', '22', '67%', '5.03');
+    playerStatsPage.playerStatsAreCorrectInTable(33, 22, '67%', 5.03);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('2', '2', '100%', '9.5');
+    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
 });
 
 test('Summary of Dave Hudson stats since 2013 for all teams is correct', async () => {
@@ -112,7 +112,28 @@ test('Summary of Dave Hudson stats since 2013 for all teams is correct', async (
     await playerStatsPage.selectAllTeamStatsCheckbox();
 
     await playerStatsPage.selectSince2013Checkbox();
-    playerStatsPage.playerStatsAreCorrectInTable('463', '174', '38%', '-2.48');
+    playerStatsPage.playerStatsAreCorrectInTable(463, 174, '38%', -2.48);
+});
+
+test('Detailed player stats for all teams and years for Dave Hudson', async () => {
+    const player = 'Dave Hudson';
+
+    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.searchForPlayer(player);
+
+    await playerStatsPage.checkPlayerIsReturned();
+    await playerStatsPage.checkPlayerName(player);
+    await playerStatsPage.checkTeamAccordionHeadersNotExists();
+
+    const stats = {
+        totalGamesPlayed: 463,
+        totalWins: 174,
+        totalLosses: 289,
+        totalAverage: -2.48,
+    };
+
+    await playerStatsPage.validateSummaryStats(stats);
 });
 
 test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
@@ -120,13 +141,13 @@ test('Summary of Bernie Miller stats since 2013 for all teams is correct', async
     await playerStatsPage.selectAllTeamStatsCheckbox();
 
     await playerStatsPage.selectSince2013Checkbox();
-    playerStatsPage.playerStatsAreCorrectInTable('416', '242', '58%', '2.37');
+    playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
 
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('354', '211', '60%', '2.42');
+    playerStatsPage.playerStatsAreCorrectInTable(354, 211, '60%', 2.42);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable('62', '31', '50%', '2.08');
+    playerStatsPage.playerStatsAreCorrectInTable(62, 31, '50%', 2.08);
 });
 
 test('Total player count is not visible for all team stats', async () => {

@@ -1,9 +1,8 @@
 import { Accordion } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import List from './list';
-import { AggregatedStats } from '../types/interfaces';
+import { PlayerStatsComponentsProps } from '../types/interfaces';
 
-function PlayerStatsOverview(props: AggregatedStats) {
+function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
 
     const {
@@ -11,7 +10,6 @@ function PlayerStatsOverview(props: AggregatedStats) {
         totalWins,
         gamesPlayed,
         average,
-        allTeamsPlayedFor,
         biggestWin,
     } = stats;
 
@@ -41,15 +39,6 @@ function PlayerStatsOverview(props: AggregatedStats) {
                             <p id="biggestWin">
                                 Biggest win: {capitalizeText([biggestWin])}
                             </p>
-                        )}
-                        {allTeamsPlayedFor.length > 0 && (
-                            <div id="teamsPlayedFor">
-                                <hr />
-                                <h3 style={{ paddingTop: '1rem' }}>
-                                    LEAGUES PLAYED IN
-                                </h3>
-                                <List stringArray={allTeamsPlayedFor}></List>
-                            </div>
                         )}
                     </div>
                 </Accordion.Body>

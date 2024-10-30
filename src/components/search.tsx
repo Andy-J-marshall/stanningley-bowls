@@ -11,12 +11,11 @@ function Search(props: SearchProps) {
     const searchList = props.searchList;
     const value = props.value;
     const searchedName = props.searchedName;
-    const handleSubmit = props.handleSubmitCallback;
     const handleChange = props.handleChangeCallback;
     const closeButtonCallback = props.closeButtonCallback;
 
     return (
-        <Form id="search-form" className="center" onSubmit={handleSubmit}>
+        <Form id="search-form" className="center">
             <Form.Group className="mb-3">
                 <Typeahead
                     id="search"

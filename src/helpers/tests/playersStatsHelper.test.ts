@@ -1,11 +1,82 @@
 import { expect } from 'chai';
 import {
     returnPlayerStats,
-    checkWinPercAndAverageAreNumbers,
-} from '../playersHelper';
+    findBiggestWin,
+    returnPlayerStatSummary,
+    returnStructuredResultsArray,
+} from '../playerStatsHelper';
 import stats2022 from '../../data/bowlsStats2022.json';
 
-describe('#Players Tests', () => {
+describe('#playersStatsHelper Tests', () => {
+    describe('#findBiggestWin()', () => {
+        it('Biggest win found successfully', () => {
+            const results = [
+                'ali 15 - 21 leslie strang',
+                'ali 1 - 21 shirley biancardo',
+                'ali 0 - 21 roy tebbutt',
+                'ali 21 - 4 alan taylor',
+                'ali 18 - 10 billy ward',
+                'ali 21 - 19 brian golden',
+                'ali 21 - 20 brian golden',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('21 - 4');
+        });
+
+        it('Biggest win found with double barrelled home names', () => {
+            const results = [
+                'ali-double-barrel 21 - 0 leslie strang',
+                'ali 1 - 21 shirley double-barrel-biancardo',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('21 - 0');
+        });
+
+        it('Biggest win found with double barrelled away names', () => {
+            const results = [
+                'ali 21 - 10 leslie strang',
+                'ali 21 - 2 shirley double-barrel-biancardo',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('21 - 2');
+        });
+
+        it('Biggest win found successfully when there are duplicates', () => {
+            const results = [
+                'ali 21 - 10 alan taylor',
+                'ali 21 - 10 alan taylor',
+                'ali 10 - 21 alan taylor',
+                'ali 21 - 19 brian golden',
+                'ali 19 - 21 brian golden',
+                'ali 19 - 21 brian golden',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('21 - 10');
+        });
+
+        it('Empty string returned if player has no wins', () => {
+            const results = [
+                "ali 20 - 21 leslie strang ('A')",
+                'ali 13 - 21 shirley biancardo',
+                'ali 0 - 21 roy tebbutt',
+            ];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('');
+        });
+
+        it('Empty string returned if player has no results', () => {
+            const results: string[] = [];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('');
+        });
+
+        it('Empty string returned if player has invalid result', () => {
+            const results = ['ali 21 - roy tebbutt', 'ali - 21 roy tebbutt'];
+            const biggestWin = findBiggestWin(results);
+            expect(biggestWin).to.equal('');
+        });
+    });
+
     describe('#returnPlayerStats()', () => {
         let playerStats: any = stats2022.playerResults;
         let stats: any = returnPlayerStats(playerStats, 'paul bowes');
@@ -96,7 +167,7 @@ describe('#Players Tests', () => {
             expect(biggestWin).to.equal('21 - 0');
         });
 
-        it('Days with no games show as are not returned', () => {
+        it('Days with no games are not returned', () => {
             const { allTeamStats } = stats;
             const tuesdayEvening = allTeamStats.find((team: any) => {
                 return team.teamName === 'tuesday leeds';
@@ -141,15 +212,6 @@ describe('#Players Tests', () => {
             expect(wednesday.teamAvg).to.equal(21);
         });
 
-        it('Days Played', () => {
-            expect(stats.allTeamsPlayedFor).to.deep.equal([
-                'Monday Combined Leeds',
-                'Tuesday Vets Leeds',
-                'Thursday Vets Leeds',
-                'Saturday Leeds',
-            ]);
-        });
-
         it('Days with games show correct values', () => {
             const { allTeamStats } = stats;
             const monday = allTeamStats.find((team: any) => {
@@ -187,28 +249,75 @@ describe('#Players Tests', () => {
         });
     });
 
-    describe('checkWinPercAndAverageAreNumbers', () => {
-        it('should verify win percentage and average are numbers and set defaults if not', () => {
-            const stats = {
-                winPerc: 'NaN',
-                average: 'NaN',
-                singlesWinPerc: 'NaN',
-                singlesAverage: 'NaN',
-                pairsWinPerc: 'NaN',
-                pairsAverage: 'NaN',
-            };
+    describe('#returnStructuredResultsArray()', () => {
+        it('Correctly structures results array', () => {
+            const results = [
+                'ali 21 - 10 mr alan taylor',
+                "barry o'geary 1 - 21 steve smith-rowe",
+            ];
 
-            const expectedResult = {
-                winPerc: 0,
-                average: -99,
-                singlesWinPerc: 0,
+            const structuredResult = returnStructuredResultsArray(results);
+
+            const expectedResult = [
+                {
+                    home: {
+                        name: 'ali',
+                        score: '21',
+                    },
+                    away: {
+                        name: 'mr alan taylor',
+                        score: '10',
+                    },
+                },
+                {
+                    home: {
+                        name: "barry o'geary",
+                        score: '1',
+                    },
+                    away: {
+                        name: 'steve smith-rowe',
+                        score: '21',
+                    },
+                },
+            ];
+            expect(structuredResult).to.deep.equal(expectedResult);
+        });
+    });
+
+    describe('#returnPlayerStatSummary()', () => {
+        it('Correctly aggregates stats for players across multiple years', () => {
+            const result = returnPlayerStatSummary(stats2022.playerResults, [
+                'vanessa lancaster',
+                'paul bowes',
+                'alison woodfine',
+            ]);
+
+            expect(result.length).to.equal(3);
+            const player = result.find(
+                (player) => player.player === 'vanessa lancaster'
+            );
+
+            expect(player).to.deep.equal({
+                player: 'vanessa lancaster',
+                singleGames: 0,
+                singlesAgg: 0,
+                singlesAggAgainst: 0,
                 singlesAverage: -99,
-                pairsWinPerc: 0,
-                pairsAverage: -99,
-            };
-
-            const result = checkWinPercAndAverageAreNumbers(stats);
-            expect(result).to.deep.equal(expectedResult);
+                singlesWinPerc: 0,
+                singlesWins: 0,
+                winPerc: 25,
+                wins: 1,
+                agg: 57,
+                aggAgainst: 71,
+                average: -3.5,
+                games: 4,
+                pairsAgg: 57,
+                pairsAggAgainst: 71,
+                pairsAverage: -3.5,
+                pairsGames: 4,
+                pairsWinPerc: 25,
+                pairsWins: 1,
+            });
         });
     });
 });

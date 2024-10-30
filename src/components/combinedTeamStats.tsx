@@ -1,6 +1,6 @@
-import { combineTeamStats } from '../helpers/statsHelper';
+import { combineTeamStats } from '../helpers/teamStatsHelper';
 import { CombinedTeamStatsProps } from '../types/interfaces';
-import StatsTableDisplay from './statsTableDisplay';
+import TeamStatsTable from './teamStatsTable';
 
 function CombinedTeamStats(props: CombinedTeamStatsProps) {
     const stats = props.stats;
@@ -26,7 +26,7 @@ function CombinedTeamStats(props: CombinedTeamStatsProps) {
     if (totalGames > 0) {
         return (
             <div id="combined-team-win-losses">
-                <StatsTableDisplay
+                <TeamStatsTable
                     totalGames={totalGames}
                     totalWins={totalWins}
                     totalLosses={totalLosses}
