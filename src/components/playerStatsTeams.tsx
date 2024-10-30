@@ -1,4 +1,4 @@
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Card, Row } from 'react-bootstrap';
 import { PlayerStatsTeamsProps } from '../types/interfaces';
 
 function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
@@ -12,27 +12,65 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
             <Accordion.Item eventKey="4">
                 <Accordion.Header id="stats-teams">TEAMS</Accordion.Header>
                 <Accordion.Body>
-                    <div>
-                        {allTeamStats.map(
-                            (team, idx) =>
-                                team.teamGames > 0 && (
-                                    <div key={idx}>
-                                        <h3>{team.teamName.toUpperCase()}</h3>
-                                        <p>Games: {team.teamGames}</p>
-                                        <p>Wins: {team.teamWins}</p>
-                                        <p>Losses: {team.teamLosses}</p>
-                                        <p>
-                                            Average: {team.teamAvg?.toFixed(2)}
-                                        </p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {team.teamWinPerc.toFixed(0)}%
-                                        </p>
-                                        <hr />
-                                    </div>
-                                )
-                        )}
-                    </div>
+                    {allTeamStats.map(
+                        (team, idx) =>
+                            team.teamGames > 0 && (
+                                <div key={idx}>
+                                    <h3>{team.teamName.toUpperCase()}</h3>
+                                    <Row
+                                        style={{ margin: '0.2rem' }}
+                                        xs={2}
+                                        md={5}
+                                        className="g-4 align-items-start"
+                                    >
+                                        <Card bg="light">
+                                            <Card.Body>
+                                                <Card.Title>GAMES</Card.Title>
+                                                <Card.Text>
+                                                    {team.teamGames}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card bg="light">
+                                            <Card.Body>
+                                                <Card.Title>WINS</Card.Title>
+                                                <Card.Text>
+                                                    {team.teamWins}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card bg="light">
+                                            <Card.Body>
+                                                <Card.Title>LOSSES</Card.Title>
+                                                <Card.Text>
+                                                    {team.teamLosses}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card bg="light">
+                                            <Card.Body>
+                                                <Card.Title>AVERAGE</Card.Title>
+                                                <Card.Text>
+                                                    {team.teamAvg?.toFixed(2)}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card bg="light">
+                                            <Card.Body>
+                                                <Card.Title>WIN %</Card.Title>
+                                                <Card.Text>
+                                                    {team.teamWinPerc.toFixed(
+                                                        0
+                                                    )}
+                                                    %
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Row>
+                                    <hr />
+                                </div>
+                            )
+                    )}
                 </Accordion.Body>
             </Accordion.Item>
         </div>
