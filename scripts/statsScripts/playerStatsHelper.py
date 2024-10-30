@@ -57,6 +57,7 @@ def returnListOfPlayerStats(days, includeTeamData, players):
 
 def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, awayGame, cupHome, cupAway, cupGameBool, includeTeamStatsBool):
     text = allRowsInFile[rowNumber]
+    text = sanitisePlayerNames(text)
     findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", text)
     if homeGame or cupHome:
         opponentsName = findPossiblePlayerNames[1]
@@ -180,6 +181,9 @@ def calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, 
 
     return playerStats
 
+def sanitisePlayerNames(text):
+    return text.replace('*A.N.Other*', 'a n other')
+
 def standardiseName(name):
     name = name.lower().strip()
     name = name.replace(' - ', '-')
@@ -239,6 +243,7 @@ def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
     for rowNumber, line in enumerate(allRowsInFile, start=0):
         row = allRowsInFile[rowNumber]
         if (row and type(row) is str):
+            row = sanitisePlayerNames(row)
             findPossiblePlayerNames = re.findall(r"([A-za-z'\-()]+(?: [A-Za-z'\-()]+)+)", row)
             if len(findPossiblePlayerNames) > 1:
                 possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
