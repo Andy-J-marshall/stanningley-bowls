@@ -198,7 +198,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         />
                     )}
 
-                    <h3>TOTAL</h3>
+                    <h3 style={{ marginTop: '0.5rem' }}>TOTAL</h3>
                     <Row
                         style={{ padding: 0, margin: '0.4rem' }}
                         xs={2}
