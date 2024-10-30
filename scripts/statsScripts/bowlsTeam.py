@@ -35,7 +35,7 @@ for team in teamDetails.teamDays:
         sanityChecks.checkTeamName(team, teamNameUsedForLeague, teamDetails.displayTeamName)        
 
         # Find the cup games in the stats
-        cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
+        cupGameRows = statsHelper.findCupGameRows(allRowsInFile, endRow)
 
         #### TEAM STATS ####
         # Find team's home and away games

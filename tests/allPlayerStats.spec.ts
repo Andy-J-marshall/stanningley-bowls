@@ -74,7 +74,7 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
     playerStatsPage.playerStatsAreCorrectInTable(111, 66, '59%', 2.23);
 
     await yearSelectPage.select2022Year();
-    playerStatsPage.playerStatsAreCorrectInTable(96, 69, '72%', 5.35);
+    playerStatsPage.playerStatsAreCorrectInTable(114, 83, '73%', 5.57);
 });
 
 test('Summary of Andy Marshall stats for singles and pairs games for all teams is correct', async () => {

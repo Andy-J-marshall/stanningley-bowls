@@ -40,8 +40,8 @@ players = [
     'craig clarkson', 
     'steve gardner', 
     'neil porter',
-    'david eaton',
     'stewart watson',
+    'david eaton',
     'tracey marshall',
     'derek wilson',
     'peter crowther',
@@ -69,10 +69,12 @@ duplicatePlayerNames = [
     'duncan mc phail', 
     'stuart watson', 
     'andrew marshall', 
+    'andrew waller',
     'cliff brogie', 
     'james moorin',
     'phillip thornton', 
     'philip thornton',
+    'jim swales',
 ]
 
 # Add alternative names for players (lowercase)
@@ -96,6 +98,8 @@ def deduplicateNames(name):
         name = 'phil thornton'
     if name == 'phillip thornton':
         name = 'phil thornton'
+    if name == 'jim swales':
+        name = 'jim swailes'
     return name
 
 # Add players who play for other teams in leagues the team player in (lowercase)

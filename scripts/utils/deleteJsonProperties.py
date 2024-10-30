@@ -7,7 +7,7 @@ import json
 data_folder = 'src/data'
 
 # Set the name of the property to delete
-propertyNameToDelete = 'availablePairsAwayAgg'
+propertyNameToDelete = 'totalPairsAwayPointsAgainst'
 
 # Iterate through each file in the folder
 for filename in os.listdir(data_folder):

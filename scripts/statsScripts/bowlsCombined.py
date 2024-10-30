@@ -25,7 +25,7 @@ for league in teamDetails.allDays:
         endRow = utils.findEndRowOfFile(league, allRowsInFile)
 
         # Find the cup games in the stats
-        cupGameRows = statsHelper.findCupGameRows(allRowsInFile)
+        cupGameRows = statsHelper.findCupGameRows(allRowsInFile, endRow)
 
         # Find rows in spreadsheet for players' games
         homePlayerRow, awayPlayerRow = playerStatsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
