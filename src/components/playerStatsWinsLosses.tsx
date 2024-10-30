@@ -246,7 +246,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayHomeGamesPlayed > 0 && (
                         <div>
-                            <hr />
                             <h3>HOME</h3>
                             <Row
                                 style={{ margin: '0.2rem' }}
@@ -303,7 +302,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayAwayGamesPlayed > 0 && (
                         <div>
-                            <hr />
                             <h3>AWAY</h3>
                             <Row
                                 style={{ margin: '0.2rem' }}
@@ -360,7 +358,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayCupGamesPlayed > 0 && (
                         <div>
-                            <hr />
                             <h3>CUP</h3>
                             <Row
                                 style={{ margin: '0.2rem' }}
