@@ -18,7 +18,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                                 <div key={idx}>
                                     <h3>{team.teamName.toUpperCase()}</h3>
                                     <Row
-                                        style={{ margin: '0.2rem' }}
+                                        style={{ padding: 0 }}
                                         xs={2}
                                         md={5}
                                         className="g-4 align-items-start"

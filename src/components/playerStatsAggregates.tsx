@@ -200,13 +200,13 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
 
                     <h3>TOTAL</h3>
                     <Row
-                        style={{ margin: '0.7rem' }}
+                        style={{ padding: 0 }}
                         xs={2}
                         className="g-4 align-items-start"
                     >
                         <Card bg="light">
                             <Card.Body>
-                                <Card.Title>AGGREGATED SCORED</Card.Title>
+                                <Card.Title>FOR</Card.Title>
                                 <Card.Text>
                                     {displayTotalAgg}
                                     {` / ${displayAvailableAgg}`}
@@ -215,7 +215,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         </Card>
                         <Card bg="light">
                             <Card.Body>
-                                <Card.Title>AGGREGATED CONCEDED</Card.Title>
+                                <Card.Title>AGAINST</Card.Title>
                                 <Card.Text>
                                     {displayTotalAggAgainst}
                                     {` / ${displayAvailableAgg}`}
@@ -229,15 +229,13 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>HOME</h3>
                             <Row
-                                style={{ margin: '0.7rem' }}
+                                style={{ padding: 0 }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED SCORED
-                                        </Card.Title>
+                                        <Card.Title>FOR</Card.Title>
                                         <Card.Text>
                                             {displayTotalHomeAgg}
                                             {` / ${displayAvailableHomeAgg}`}
@@ -246,9 +244,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 </Card>
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED CONCEDED
-                                        </Card.Title>
+                                        <Card.Title>AGAINST</Card.Title>
                                         <Card.Text>
                                             {displayTotalHomeAggAgainst}
                                             {` / ${displayAvailableHomeAgg}`}
@@ -264,15 +260,13 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>AWAY</h3>
                             <Row
-                                style={{ margin: '0.7rem' }}
+                                style={{ padding: 0 }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED SCORED
-                                        </Card.Title>
+                                        <Card.Title>FOR</Card.Title>
                                         <Card.Text>
                                             {displayTotalAwayAgg}
                                             {` / ${displayAvailableAwayAgg}`}
@@ -281,9 +275,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 </Card>
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED CONCEDED
-                                        </Card.Title>
+                                        <Card.Title>AGAINST</Card.Title>
                                         <Card.Text>
                                             {displayTotalAwayAggAgainst}
                                             {` / ${displayAvailableAwayAgg}`}
@@ -299,15 +291,13 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>CUP</h3>
                             <Row
-                                style={{ margin: '0.7rem' }}
+                                style={{ padding: 0 }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED SCORED
-                                        </Card.Title>
+                                        <Card.Title>FOR</Card.Title>
                                         <Card.Text>
                                             {displayCupAgg}
                                             {` / ${displayAvailableCupAgg}`}
@@ -316,9 +306,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 </Card>
                                 <Card bg="light">
                                     <Card.Body>
-                                        <Card.Title>
-                                            AGGREGATED CONCEDED
-                                        </Card.Title>
+                                        <Card.Title>AGAINST</Card.Title>
                                         <Card.Text>
                                             {displayCupAggAgainst}
                                             {` / ${displayAvailableCupAgg}`}
