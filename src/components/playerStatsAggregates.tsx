@@ -200,7 +200,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
 
                     <h3>TOTAL</h3>
                     <Row
-                        style={{ padding: 0 }}
+                        style={{ padding: 0, margin: '0.4rem' }}
                         xs={2}
                         className="g-4 align-items-start"
                     >
@@ -229,7 +229,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>HOME</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
@@ -260,7 +260,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>AWAY</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
@@ -291,7 +291,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>CUP</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 className="g-4 align-items-start"
                             >

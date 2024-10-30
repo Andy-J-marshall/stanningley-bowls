@@ -183,14 +183,13 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     )}
 
                     {/* TODO create a component? */}
-                    {/* TODO check how it looks on mobile */}
-                    {/* TODO maybe put TOTAL on 1 row and the rest on the next row? */}
+                    {/* TODO create a css for the cards? */}
 
                     {displayGamesPlayed > 0 && (
                         <div>
                             <h3>TOTAL</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -249,7 +248,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>HOME</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -306,7 +305,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>AWAY</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -363,7 +362,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>CUP</h3>
                             <Row
-                                style={{ padding: 0 }}
+                                style={{ padding: 0, margin: '0.4rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
