@@ -162,7 +162,9 @@ export class PlayerStatsPage {
     }
 
     async totalPlayerCountIsCorrect(playerCount: number) {
-        await expect(this.totalPlayerCount).toContainText(playerCount.toString());
+        await expect(this.totalPlayerCount).toContainText(
+            playerCount.toString()
+        );
     }
 
     async totalPlayerCountIsNotVisible() {
@@ -171,16 +173,12 @@ export class PlayerStatsPage {
 
     async validateSummaryStats(playerStats: PlayerStatsToCheck) {
         await expect(this.totalGamesPlayed).toHaveText(
-            `Games played: ${playerStats.totalGamesPlayed}`
+            `${playerStats.totalGamesPlayed}`
         );
-        await expect(this.totalWins).toHaveText(
-            `Wins: ${playerStats.totalWins}`
-        );
-        await expect(this.totalLosses).toHaveText(
-            `Losses: ${playerStats.totalLosses}`
-        );
+        await expect(this.totalWins).toHaveText(`${playerStats.totalWins}`);
+        await expect(this.totalLosses).toHaveText(`${playerStats.totalLosses}`);
         await expect(this.totalAverage).toHaveText(
-            `Average: ${playerStats.totalAverage.toFixed(2)}`
+            `${playerStats.totalAverage.toFixed(2)}`
         );
         expect(playerStats.totalAverage).toBeGreaterThan(-22);
         expect(playerStats.totalAverage).toBeLessThan(22);

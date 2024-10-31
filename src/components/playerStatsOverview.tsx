@@ -57,7 +57,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                         <Card bg="light">
                             <Card.Body>
                                 <Card.Title>WIN %</Card.Title>
-                                <Card.Text id="totalLosses">
+                                <Card.Text id="winPerc">
                                     {((totalWins / gamesPlayed) * 100).toFixed(
                                         0
                                     )}
