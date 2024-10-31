@@ -15,7 +15,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                 </Accordion.Header>
                 <Accordion.Body>
                     <Row
-                        style={{ padding: 0, margin: '0.4rem' }}
+                        style={{ padding: 0, margin: '0 0.5rem' }}
                         xs={2}
                         md={3}
                         className="g-4 align-items-start"
