@@ -183,8 +183,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         />
                     )}
 
-                    {/* TODO create a css for the cards? */}
-
                     {displayGamesPlayed > 0 && (
                         <div>
                             <h3 style={{ marginTop: '0.5rem' }}>TOTAL</h3>
