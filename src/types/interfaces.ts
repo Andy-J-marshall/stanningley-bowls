@@ -43,6 +43,12 @@ export interface ListProps {
     stringArray: string[];
 }
 
+export interface StatsTileProps {
+    title: string;
+    bodyText: string;
+    id?: string;
+}
+
 export interface PlayerStatsOptionsProps {
     allTeamStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
