@@ -1,4 +1,5 @@
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import { PlayerStatsTeamsProps } from '../types/interfaces';
 
 function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
@@ -12,27 +13,48 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
             <Accordion.Item eventKey="4">
                 <Accordion.Header id="stats-teams">TEAMS</Accordion.Header>
                 <Accordion.Body>
-                    <div>
-                        {allTeamStats.map(
-                            (team, idx) =>
-                                team.teamGames > 0 && (
-                                    <div key={idx}>
-                                        <h3>{team.teamName.toUpperCase()}</h3>
-                                        <p>Games: {team.teamGames}</p>
-                                        <p>Wins: {team.teamWins}</p>
-                                        <p>Losses: {team.teamLosses}</p>
-                                        <p>
-                                            Average: {team.teamAvg?.toFixed(2)}
-                                        </p>
-                                        <p>
-                                            Win percentage:{' '}
-                                            {team.teamWinPerc.toFixed(0)}%
-                                        </p>
-                                        <hr />
-                                    </div>
-                                )
-                        )}
-                    </div>
+                    {allTeamStats.map(
+                        (team, idx) =>
+                            team.teamGames > 0 && (
+                                <div key={idx}>
+                                    <h3>{team.teamName.toUpperCase()}</h3>
+                                    <Row
+                                        style={{
+                                            padding: 0,
+                                            margin: '0 0.5rem',
+                                        }}
+                                        xs={2}
+                                        md={5}
+                                        className="g-4 align-items-start"
+                                    >
+                                        <StatTile
+                                            title="GAMES"
+                                            bodyText={team.teamGames}
+                                        />
+                                        <StatTile
+                                            title="AVERAGE"
+                                            bodyText={team.teamAvg?.toFixed(2)}
+                                        />
+                                        <StatTile
+                                            title="WINS"
+                                            bodyText={team.teamWins}
+                                        />
+                                        <StatTile
+                                            title="LOSSES"
+                                            bodyText={team.teamLosses}
+                                        />
+                                        <StatTile
+                                            title="WIN %"
+                                            bodyText={
+                                                team.teamWinPerc.toFixed(0) +
+                                                '%'
+                                            }
+                                        />
+                                    </Row>
+                                    <hr />
+                                </div>
+                            )
+                    )}
                 </Accordion.Body>
             </Accordion.Item>
         </div>

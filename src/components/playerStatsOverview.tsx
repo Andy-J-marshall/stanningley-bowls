@@ -1,17 +1,12 @@
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
 function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
 
-    const {
-        totalLosses,
-        totalWins,
-        gamesPlayed,
-        average,
-        biggestWin,
-    } = stats;
+    const { totalLosses, totalWins, gamesPlayed, average, biggestWin } = stats;
 
     return (
         <div id="player-stats-overview">
@@ -20,27 +15,50 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                     OVERVIEW
                 </Accordion.Header>
                 <Accordion.Body>
-                    <div>
-                        <h3>STATS</h3>
-                        <p id="totalGamesPlayed">Games played: {gamesPlayed}</p>
-                        <p id="totalWins">Wins: {totalWins}</p>
-                        <p id="totalLosses">Losses: {totalLosses}</p>
+                    <Row
+                        style={{ padding: 0, margin: '0 0.5rem' }}
+                        xs={2}
+                        md={3}
+                        className="g-4 align-items-start"
+                    >
+                        <StatTile
+                            title="GAMES"
+                            bodyText={gamesPlayed}
+                            id="totalGamesPlayed"
+                        />
                         {average >= -26 && average <= 26 && (
-                            <p id="totalAverage">
-                                Average: {average.toFixed(2)}
-                            </p>
+                            <StatTile
+                                title="AVERAGE"
+                                bodyText={average.toFixed(2)}
+                                id="totalAverage"
+                            />
                         )}
-                        <p>
-                            {' '}
-                            Win percentage:{' '}
-                            {((totalWins / gamesPlayed) * 100).toFixed(0)}%
-                        </p>
+                        <StatTile
+                            title="WINS"
+                            bodyText={totalWins}
+                            id="totalWins"
+                        />
+                        <StatTile
+                            title="LOSSES"
+                            bodyText={totalLosses}
+                            id="totalLosses"
+                        />
+                        <StatTile
+                            title="WIN %"
+                            bodyText={
+                                ((totalWins / gamesPlayed) * 100).toFixed(0) +
+                                '%'
+                            }
+                            id="WinPerc"
+                        />
                         {biggestWin && totalWins > 0 && (
-                            <p id="biggestWin">
-                                Biggest win: {capitalizeText([biggestWin])}
-                            </p>
+                            <StatTile
+                                title="BEST WIN"
+                                bodyText={capitalizeText([biggestWin])}
+                                id="biggestWin"
+                            />
                         )}
-                    </div>
+                    </Row>
                 </Accordion.Body>
             </Accordion.Item>
         </div>

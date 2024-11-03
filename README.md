@@ -68,11 +68,13 @@ The scripts to automate the process can be found in the `package.json` file.
 A stats JSON file will be created/updated here: `src/data/bowlsStats{year}.json`.
 
 #### Update stats automatically
+
 Run `npm run get-stats-and-update`. This will use Playwright to generate text reports from Bowlsnet, save them locally, and then run the scripts to update the stats JSON files.
 
 Advanced: You can also run `npm run get-stats-update-pr` to get, update and commit the stats, then create a pull request in GitHub. Once the PR is merged it should automatically deploy master to prod.
 
 #### Update stats manually
+
 If the step to generate the reports from Bowlsnet fails, you can manually update the stats:
 
 -   Navigate to the Bowlsnet league URLs
@@ -86,6 +88,7 @@ If the step to generate the reports from Bowlsnet fails, you can manually update
 The pipeline will run the `update-stats.yml` job on a schedule (see the cron schedule in that file for details). This will update the stats and create a PR. Once the PR is merged it will automatically deploy master to prod.
 
 #### Update stats via local Cron job
+
 You can also set up a cron job on your local machine to run the script automatically:
 
 -   run `crontab -e` from your terminal
@@ -201,4 +204,5 @@ Update team info in all components:
 -   Home/away/cup breakdown on stat summary options
 -   Add team specific filters to player stats (and remove from team stats?)
 -   Split the script into a separate repo and create an API?
--   Add better stats for aggregate scored and conceded (e.g. average per game), and improve the ui for this
+-   Add other teams to the stats and add a filter
+-   Add a documents page e.g. membership form, useful links, rules etc.

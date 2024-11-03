@@ -43,6 +43,12 @@ export interface ListProps {
     stringArray: string[];
 }
 
+export interface StatsTileProps {
+    title: string;
+    bodyText: string | number;
+    id?: string;
+}
+
 export interface PlayerStatsOptionsProps {
     allTeamStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
@@ -152,7 +158,7 @@ export interface PlayerStatsTeamsProps {
             teamGames: number;
             teamWins: number;
             teamLosses: number;
-            teamAvg: number | null;
+            teamAvg: number;
             teamWinPerc: number;
         }[];
     };

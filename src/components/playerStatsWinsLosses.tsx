@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Accordion } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -184,73 +185,160 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayGamesPlayed > 0 && (
                         <div>
-                            <h3>TOTAL</h3>
-                            <p>Games: {displayGamesPlayed}</p>
-                            <p>Wins: {displayTotalWins}</p>
-                            <p>Losses: {displayTotalLosses}</p>
-                            <p>Average: {displayAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayTotalWins / displayGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
+                            <h3 style={{ marginTop: '0.5rem' }}>TOTAL</h3>
+                            <Row
+                                style={{ padding: 0, margin: '0 0.5rem' }}
+                                xs={2}
+                                md={5}
+                                className="g-4 align-items-start"
+                            >
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayGamesPlayed}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayTotalWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayTotalLosses}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayTotalWins /
+                                                displayGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
+                            </Row>
                         </div>
                     )}
+
                     {displayHomeGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>HOME</h3>
-                            <p>Games: {displayHomeGamesPlayed}</p>
-                            <p>Wins: {displayHomeWins}</p>
-                            <p>Losses: {displayHomeLosses}</p>
-                            <p>Average: {displayHomeAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayHomeWins / displayHomeGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
+                            <Row
+                                style={{ padding: 0, margin: '0 0.5rem' }}
+                                xs={2}
+                                md={5}
+                                className="g-4 align-items-start"
+                            >
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayHomeGamesPlayed}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayHomeAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayHomeWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayHomeLosses}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayHomeWins /
+                                                displayHomeGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
+                            </Row>
                         </div>
                     )}
+
                     {displayAwayGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>AWAY</h3>
-                            <p>Games: {displayAwayGamesPlayed}</p>
-                            <p>Wins: {displayAwayWins}</p>
-                            <p>Losses: {displayAwayLosses}</p>
-                            <p>Average: {displayAwayAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayAwayWins / displayAwayGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
+                            <Row
+                                style={{ padding: 0, margin: '0 0.5rem' }}
+                                xs={2}
+                                md={5}
+                                className="g-4 align-items-start"
+                            >
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayAwayGamesPlayed}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAwayAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayAwayWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayAwayLosses}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayAwayWins /
+                                                displayAwayGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
+                            </Row>
                         </div>
                     )}
+
                     {displayCupGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>CUP</h3>
-                            <p>Games: {displayCupGamesPlayed}</p>
-                            <p>Wins: {displayCupWins}</p>
-                            <p>Losses: {displayCupLosses}</p>
-                            <p>Average: {displayCupAverage.toFixed(2)}</p>
-                            <p>
-                                Win percentage:{' '}
-                                {(
-                                    (displayCupWins / displayCupGamesPlayed) *
-                                    100
-                                ).toFixed(0)}
-                                %
-                            </p>
+                            <Row
+                                style={{ padding: 0, margin: '0 0.5rem' }}
+                                xs={2}
+                                md={5}
+                                className="g-4 align-items-start"
+                            >
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayCupGamesPlayed}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayCupAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayCupWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayCupLosses}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayCupWins /
+                                                displayCupGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
+                            </Row>
                         </div>
                     )}
                 </Accordion.Body>
