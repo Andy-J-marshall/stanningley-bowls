@@ -45,7 +45,7 @@ export interface ListProps {
 
 export interface StatsTileProps {
     title: string;
-    bodyText: string;
+    bodyText: string | number;
     id?: string;
 }
 
@@ -158,7 +158,7 @@ export interface PlayerStatsTeamsProps {
             teamGames: number;
             teamWins: number;
             teamLosses: number;
-            teamAvg: number | null;
+            teamAvg: number;
             teamWinPerc: number;
         }[];
     };
