@@ -15,6 +15,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
     const [allGameTypesToggle, setAllGameTypesToggle] = useState(true);
+    const [allVenuesToggle, setAllVenuesToggle] = useState(true);
+    const [homeOnlyToggle, setHomeOnlyToggle] = useState(false);
+    const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
+    const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
 
     useEffect(() => {
         if (playerSearchedFor !== key) {
@@ -55,6 +59,66 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
         setPairsOnlyToggle(false);
         onlyPairsCallback(false);
+    }
+
+    function toggleAllVenuesMatches() {
+        setAllGameTypesToggle(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setAllVenuesToggle(true);
+        setHomeOnlyToggle(false);
+        setAwayOnlyToggle(false);
+        setCupOnlyToggle(false);
+    }
+
+    function toggleHomeOnlyMatches() {
+        setAllGameTypesToggle(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setHomeOnlyToggle(true);
+        setAllVenuesToggle(false);
+        setAwayOnlyToggle(false);
+        setCupOnlyToggle(false);
+    }
+
+    function toggleAwayOnlyMatches() {
+        setAllGameTypesToggle(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setAwayOnlyToggle(true);
+        setAllVenuesToggle(false);
+        setHomeOnlyToggle(false);
+        setCupOnlyToggle(false);
+    }
+
+    function toggleCupOnlyMatches() {
+        setAllGameTypesToggle(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setCupOnlyToggle(true);
+        setAllVenuesToggle(false);
+        setHomeOnlyToggle(false);
+        setAwayOnlyToggle(false);
     }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
@@ -141,6 +205,63 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     type="radio"
                                                     label="Pairs"
                                                     checked={pairsOnlyToggle}
+                                                />
+                                            </Col>
+                                        </InputGroup>
+                                    </Row>
+                                    <Row>
+                                        <h6>VENUE</h6>
+                                        <InputGroup>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#all-venues-radio"
+                                                    onChange={
+                                                        toggleAllVenuesMatches
+                                                    }
+                                                    name="gameVenueOptions"
+                                                    type="radio"
+                                                    label="All"
+                                                    checked={allVenuesToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#only-home-radio"
+                                                    onChange={
+                                                        toggleHomeOnlyMatches
+                                                    }
+                                                    name="gameVenueOptions"
+                                                    type="radio"
+                                                    label="Home"
+                                                    checked={homeOnlyToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#only-away-radio"
+                                                    onChange={
+                                                        toggleAwayOnlyMatches
+                                                    }
+                                                    name="gameVenueOptions"
+                                                    type="radio"
+                                                    label="Away"
+                                                    checked={awayOnlyToggle}
+                                                />
+                                            </Col>
+                                            <Col>
+                                                <Form.Check
+                                                    key={key}
+                                                    id="#only-cup-radio"
+                                                    onChange={
+                                                        toggleCupOnlyMatches
+                                                    }
+                                                    name="gameVenueOptions"
+                                                    type="radio"
+                                                    label="Cup"
+                                                    checked={cupOnlyToggle}
                                                 />
                                             </Col>
                                         </InputGroup>
