@@ -1,4 +1,5 @@
-import { Accordion, Card, Row } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import { capitalizeText } from '../helpers/utils';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -20,60 +21,42 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                         md={3}
                         className="g-4 align-items-start"
                     >
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>GAMES</Card.Title>
-                                <Card.Text id="totalGamesPlayed">
-                                    {gamesPlayed}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>WINS</Card.Title>
-                                <Card.Text id="totalWins">
-                                    {totalWins}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>LOSSES</Card.Title>
-                                <Card.Text id="totalLosses">
-                                    {totalLosses}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <StatTile
+                            title="GAMES"
+                            bodyText={gamesPlayed}
+                            id="totalGamesPlayed"
+                        />
+                        <StatTile
+                            title="WINS"
+                            bodyText={totalWins}
+                            id="totalWins"
+                        />
+                        <StatTile
+                            title="LOSSES"
+                            bodyText={totalLosses}
+                            id="totalLosses"
+                        />
                         {average >= -26 && average <= 26 && (
-                            <Card bg="light">
-                                <Card.Body>
-                                    <Card.Title>AVERAGE</Card.Title>
-                                    <Card.Text id="totalAverage">
-                                        {average.toFixed(2)}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <StatTile
+                                title="AVERAGE"
+                                bodyText={average.toFixed(2)}
+                                id="totalAverage"
+                            />
                         )}
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>WIN %</Card.Title>
-                                <Card.Text id="winPerc">
-                                    {((totalWins / gamesPlayed) * 100).toFixed(
-                                        0
-                                    )}
-                                    %
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <StatTile
+                            title="WIN %"
+                            bodyText={
+                                ((totalWins / gamesPlayed) * 100).toFixed(0) +
+                                '%'
+                            }
+                            id="WinPerc"
+                        />
                         {biggestWin && totalWins > 0 && (
-                            <Card bg="light">
-                                <Card.Body>
-                                    <Card.Title>BEST WIN</Card.Title>
-                                    <Card.Text id="biggestWin">
-                                        {capitalizeText([biggestWin])}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <StatTile
+                                title="BEST WIN"
+                                bodyText={capitalizeText([biggestWin])}
+                                id="biggestWin"
+                            />
                         )}
                     </Row>
                 </Accordion.Body>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Accordion, Card, Row } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -182,7 +183,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         />
                     )}
 
-                    {/* TODO create a component? */}
                     {/* TODO create a css for the cards? */}
 
                     {displayGamesPlayed > 0 && (
@@ -194,51 +194,32 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                 md={5}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>GAMES</Card.Title>
-                                        <Card.Text>
-                                            {displayGamesPlayed}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WINS</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalWins}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>LOSSES</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalLosses}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AVERAGE</Card.Title>
-                                        <Card.Text>
-                                            {displayAverage.toFixed(2)}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WIN %</Card.Title>
-                                        <Card.Text>
-                                            {(
-                                                (displayTotalWins /
-                                                    displayGamesPlayed) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayGamesPlayed}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayTotalWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayTotalLosses}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayTotalWins /
+                                                displayGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
@@ -253,49 +234,32 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                 md={5}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>GAMES</Card.Title>
-                                        <Card.Text>
-                                            {displayHomeGamesPlayed}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WINS</Card.Title>
-                                        <Card.Text>{displayHomeWins}</Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>LOSSES</Card.Title>
-                                        <Card.Text>
-                                            {displayHomeLosses}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AVERAGE</Card.Title>
-                                        <Card.Text>
-                                            {displayHomeAverage.toFixed(2)}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WIN %</Card.Title>
-                                        <Card.Text>
-                                            {(
-                                                (displayHomeWins /
-                                                    displayHomeGamesPlayed) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayHomeGamesPlayed}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayHomeWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayHomeLosses}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayHomeAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayHomeWins /
+                                                displayHomeGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
@@ -310,49 +274,32 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                 md={5}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>GAMES</Card.Title>
-                                        <Card.Text>
-                                            {displayAwayGamesPlayed}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WINS</Card.Title>
-                                        <Card.Text>{displayAwayWins}</Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>LOSSES</Card.Title>
-                                        <Card.Text>
-                                            {displayAwayLosses}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AVERAGE</Card.Title>
-                                        <Card.Text>
-                                            {displayAwayAverage.toFixed(2)}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WIN %</Card.Title>
-                                        <Card.Text>
-                                            {(
-                                                (displayAwayWins /
-                                                    displayAwayGamesPlayed) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayAwayGamesPlayed}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayAwayWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayAwayLosses}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAwayAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayAwayWins /
+                                                displayAwayGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
@@ -367,49 +314,32 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                 md={5}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>GAMES</Card.Title>
-                                        <Card.Text>
-                                            {displayCupGamesPlayed}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WINS</Card.Title>
-                                        <Card.Text>{displayCupWins}</Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>LOSSES</Card.Title>
-                                        <Card.Text>
-                                            {displayCupLosses}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AVERAGE</Card.Title>
-                                        <Card.Text>
-                                            {displayCupAverage.toFixed(2)}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>WIN %</Card.Title>
-                                        <Card.Text>
-                                            {(
-                                                (displayCupWins /
-                                                    displayCupGamesPlayed) *
-                                                100
-                                            ).toFixed(0)}
-                                            %
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="GAMES"
+                                    bodyText={displayCupGamesPlayed}
+                                />
+                                <StatTile
+                                    title="WINS"
+                                    bodyText={displayCupWins}
+                                />
+                                <StatTile
+                                    title="LOSSES"
+                                    bodyText={displayCupLosses}
+                                />
+                                <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayCupAverage.toFixed(2)}
+                                />
+                                <StatTile
+                                    title="WIN %"
+                                    bodyText={
+                                        (
+                                            (displayCupWins /
+                                                displayCupGamesPlayed) *
+                                            100
+                                        ).toFixed(0) + '%'
+                                    }
+                                />
                             </Row>
                         </div>
                     )}

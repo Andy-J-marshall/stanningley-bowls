@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Accordion, Card, Row } from 'react-bootstrap';
+import { Accordion, Row } from 'react-bootstrap';
+import StatTile from './statTile';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -204,24 +205,20 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         xs={2}
                         className="g-4 align-items-start"
                     >
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>FOR</Card.Title>
-                                <Card.Text>
-                                    {displayTotalAgg}
-                                    {` / ${displayAvailableAgg}`}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card bg="light">
-                            <Card.Body>
-                                <Card.Title>AGAINST</Card.Title>
-                                <Card.Text>
-                                    {displayTotalAggAgainst}
-                                    {` / ${displayAvailableAgg}`}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <StatTile
+                            title="FOR"
+                            bodyText={
+                                displayTotalAgg + ' / ' + displayAvailableAgg
+                            }
+                        />
+                        <StatTile
+                            title="AGAINST"
+                            bodyText={
+                                displayTotalAggAgainst +
+                                ' / ' +
+                                displayAvailableAgg
+                            }
+                        />
                     </Row>
 
                     {displayHomeGamesPlayed > 0 && (
@@ -233,24 +230,22 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>FOR</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalHomeAgg}
-                                            {` / ${displayAvailableHomeAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AGAINST</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalHomeAggAgainst}
-                                            {` / ${displayAvailableHomeAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="FOR"
+                                    bodyText={
+                                        displayTotalHomeAgg +
+                                        ' / ' +
+                                        displayAvailableHomeAgg
+                                    }
+                                />
+                                <StatTile
+                                    title="AGAINST"
+                                    bodyText={
+                                        displayTotalHomeAggAgainst +
+                                        ' / ' +
+                                        displayAvailableHomeAgg
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
@@ -264,24 +259,22 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>FOR</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalAwayAgg}
-                                            {` / ${displayAvailableAwayAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AGAINST</Card.Title>
-                                        <Card.Text>
-                                            {displayTotalAwayAggAgainst}
-                                            {` / ${displayAvailableAwayAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="FOR"
+                                    bodyText={
+                                        displayTotalAwayAgg +
+                                        ' / ' +
+                                        displayAvailableAwayAgg
+                                    }
+                                />
+                                <StatTile
+                                    title="AGAINST"
+                                    bodyText={
+                                        displayTotalAwayAggAgainst +
+                                        ' / ' +
+                                        displayAvailableAwayAgg
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
@@ -295,24 +288,22 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                 xs={2}
                                 className="g-4 align-items-start"
                             >
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>FOR</Card.Title>
-                                        <Card.Text>
-                                            {displayCupAgg}
-                                            {` / ${displayAvailableCupAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card bg="light">
-                                    <Card.Body>
-                                        <Card.Title>AGAINST</Card.Title>
-                                        <Card.Text>
-                                            {displayCupAggAgainst}
-                                            {` / ${displayAvailableCupAgg}`}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <StatTile
+                                    title="FOR"
+                                    bodyText={
+                                        displayCupAgg +
+                                        ' / ' +
+                                        displayAvailableCupAgg
+                                    }
+                                />
+                                <StatTile
+                                    title="AGAINST"
+                                    bodyText={
+                                        displayCupAggAgainst +
+                                        ' / ' +
+                                        displayAvailableCupAgg
+                                    }
+                                />
                             </Row>
                         </div>
                     )}
