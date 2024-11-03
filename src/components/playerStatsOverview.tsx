@@ -26,6 +26,13 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                             bodyText={gamesPlayed}
                             id="totalGamesPlayed"
                         />
+                        {average >= -26 && average <= 26 && (
+                            <StatTile
+                                title="AVERAGE"
+                                bodyText={average.toFixed(2)}
+                                id="totalAverage"
+                            />
+                        )}
                         <StatTile
                             title="WINS"
                             bodyText={totalWins}
@@ -36,13 +43,6 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                             bodyText={totalLosses}
                             id="totalLosses"
                         />
-                        {average >= -26 && average <= 26 && (
-                            <StatTile
-                                title="AVERAGE"
-                                bodyText={average.toFixed(2)}
-                                id="totalAverage"
-                            />
-                        )}
                         <StatTile
                             title="WIN %"
                             bodyText={

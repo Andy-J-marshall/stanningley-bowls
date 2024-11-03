@@ -32,16 +32,16 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                                             bodyText={team.teamGames}
                                         />
                                         <StatTile
+                                            title="AVERAGE"
+                                            bodyText={team.teamAvg?.toFixed(2)}
+                                        />
+                                        <StatTile
                                             title="WINS"
                                             bodyText={team.teamWins}
                                         />
                                         <StatTile
                                             title="LOSSES"
                                             bodyText={team.teamLosses}
-                                        />
-                                        <StatTile
-                                            title="AVERAGE"
-                                            bodyText={team.teamAvg?.toFixed(2)}
                                         />
                                         <StatTile
                                             title="WIN %"

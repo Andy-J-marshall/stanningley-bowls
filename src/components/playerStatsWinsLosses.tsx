@@ -197,16 +197,16 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                     bodyText={displayGamesPlayed}
                                 />
                                 <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAverage.toFixed(2)}
+                                />
+                                <StatTile
                                     title="WINS"
                                     bodyText={displayTotalWins}
                                 />
                                 <StatTile
                                     title="LOSSES"
                                     bodyText={displayTotalLosses}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayAverage.toFixed(2)}
                                 />
                                 <StatTile
                                     title="WIN %"
@@ -237,16 +237,16 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                     bodyText={displayHomeGamesPlayed}
                                 />
                                 <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayHomeAverage.toFixed(2)}
+                                />
+                                <StatTile
                                     title="WINS"
                                     bodyText={displayHomeWins}
                                 />
                                 <StatTile
                                     title="LOSSES"
                                     bodyText={displayHomeLosses}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayHomeAverage.toFixed(2)}
                                 />
                                 <StatTile
                                     title="WIN %"
@@ -277,16 +277,16 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                     bodyText={displayAwayGamesPlayed}
                                 />
                                 <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayAwayAverage.toFixed(2)}
+                                />
+                                <StatTile
                                     title="WINS"
                                     bodyText={displayAwayWins}
                                 />
                                 <StatTile
                                     title="LOSSES"
                                     bodyText={displayAwayLosses}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayAwayAverage.toFixed(2)}
                                 />
                                 <StatTile
                                     title="WIN %"
@@ -317,16 +317,16 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                                     bodyText={displayCupGamesPlayed}
                                 />
                                 <StatTile
+                                    title="AVERAGE"
+                                    bodyText={displayCupAverage.toFixed(2)}
+                                />
+                                <StatTile
                                     title="WINS"
                                     bodyText={displayCupWins}
                                 />
                                 <StatTile
                                     title="LOSSES"
                                     bodyText={displayCupLosses}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayCupAverage.toFixed(2)}
                                 />
                                 <StatTile
                                     title="WIN %"
