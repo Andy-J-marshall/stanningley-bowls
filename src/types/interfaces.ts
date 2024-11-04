@@ -123,32 +123,34 @@ export interface PlayerStatsSummary {
     player: string;
 
     games: number;
-    singleGames?: number;
-    pairsGames?: number;
-    homeGames?: number;
-    awayGames?: number;
-    cupGames?: number;
-
-    average: number | undefined;
-    singlesAverage?: number;
-    pairsAverage?: number;
-    homeAverage?: number;
-    awayAverage?: number;
-    cupAverage?: number;
-    
     wins: number;
-    singlesWins?: number;
-    pairsWins?: number;
-    homeWins?: number;
-    awayWins?: number;
-    cupWins?: number;
-
     winPerc?: number;
+    average: number | undefined;
+
+    singleGames?: number;
+    singlesWins?: number;
     singlesWinPerc?: number;
+    singlesAverage?: number;
+
+    pairsGames?: number;
+    pairsWins?: number;
     pairsWinPerc?: number;
+    pairsAverage?: number;
+
+    homeGames?: number;
+    homeWins?: number;
     homeWinPerc?: number;
+    homeAverage?: number;
+
+    awayGames?: number;
+    awayWins?: number;
     awayWinPerc?: number;
+    awayAverage?: number;
+
+    cupGames?: number;
+    cupWins?: number;
     cupWinPerc?: number;
+    cupAverage?: number;
 }
 
 export interface PlayerStatSummaryProps {
