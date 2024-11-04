@@ -291,14 +291,11 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             let average: number | undefined = player.average;
             let wins: number | undefined = player.wins;
 
-            // TODO refactor this logic?
-
             if (showSinglesOnlyBool) {
                 gamesPlayed = player.singlesGames;
                 average = player.singlesAverage;
                 wins = player.singlesWins;
             }
-
             if (showPairsOnlyBool) {
                 gamesPlayed = player.pairsGames;
                 average = player.pairsAverage;
@@ -306,60 +303,51 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             }
 
             if (showHomeOnlyBool) {
-                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
-                    gamesPlayed = player.homeGames;
-                    average = player.homeAverage;
-                    wins = player.homeWins;
-                }
-
-                if (showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesHomeGames;
-                    average = player.singlesHomeAverage;
-                    wins = player.singlesHomeWins;
-                }
-                if (showPairsOnlyBool) {
-                    gamesPlayed = player.pairsHomeGames;
-                    average = player.pairsHomeAverage;
-                    wins = player.pairsHomeWins;
-                }
+                gamesPlayed = player.homeGames;
+                average = player.homeAverage;
+                wins = player.homeWins;
+            }
+            if (showHomeOnlyBool && showSinglesOnlyBool) {
+                gamesPlayed = player.singlesHomeGames;
+                average = player.singlesHomeAverage;
+                wins = player.singlesHomeWins;
+            }
+            if (showHomeOnlyBool && showPairsOnlyBool) {
+                gamesPlayed = player.pairsHomeGames;
+                average = player.pairsHomeAverage;
+                wins = player.pairsHomeWins;
             }
 
             if (showAwayOnlyBool) {
-                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
-                    gamesPlayed = player.awayGames;
-                    average = player.awayAverage;
-                    wins = player.awayWins;
-                }
-
-                if (showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesAwayGames;
-                    average = player.singlesAwayAverage;
-                    wins = player.singlesAwayWins;
-                }
-                if (showPairsOnlyBool) {
-                    gamesPlayed = player.pairsAwayGames;
-                    average = player.pairsAwayAverage;
-                    wins = player.pairsAwayWins;
-                }
+                gamesPlayed = player.awayGames;
+                average = player.awayAverage;
+                wins = player.awayWins;
+            }
+            if (showAwayOnlyBool && showSinglesOnlyBool) {
+                gamesPlayed = player.singlesAwayGames;
+                average = player.singlesAwayAverage;
+                wins = player.singlesAwayWins;
+            }
+            if (showAwayOnlyBool && showPairsOnlyBool) {
+                gamesPlayed = player.pairsAwayGames;
+                average = player.pairsAwayAverage;
+                wins = player.pairsAwayWins;
             }
 
             if (showCupOnlyBool) {
-                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
-                    gamesPlayed = player.cupGames;
-                    average = player.cupAverage;
-                    wins = player.cupWins;
-                }
-
-                if (showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesCupGames;
-                    average = player.singlesCupAverage;
-                    wins = player.singlesCupWins;
-                }
-                if (showPairsOnlyBool) {
-                    gamesPlayed = player.pairsCupGames;
-                    average = player.pairsCupAverage;
-                    wins = player.pairsCupWins;
-                }
+                gamesPlayed = player.cupGames;
+                average = player.cupAverage;
+                wins = player.cupWins;
+            }
+            if (showCupOnlyBool && showSinglesOnlyBool) {
+                gamesPlayed = player.singlesCupGames;
+                average = player.singlesCupAverage;
+                wins = player.singlesCupWins;
+            }
+            if (showCupOnlyBool && showPairsOnlyBool) {
+                gamesPlayed = player.pairsCupGames;
+                average = player.pairsCupAverage;
+                wins = player.pairsCupWins;
             }
 
             return (
