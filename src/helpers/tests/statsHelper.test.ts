@@ -29,7 +29,6 @@ describe('#StatsHelper Tests', () => {
         });
     });
 
-    // TODO change tests
     describe('checkWinPercAndAverageAreNumbers', () => {
         it('should verify win percentage and average are numbers and set defaults if not', () => {
             const stats = {
@@ -39,6 +38,24 @@ describe('#StatsHelper Tests', () => {
                 singlesAverage: 'NaN',
                 pairsWinPerc: 'NaN',
                 pairsAverage: 'NaN',
+                homeWinPerc: 'NAN',
+                homeAverage: 'NAN',
+                awayWinPerc: 'NAN',
+                awayAverage: 'NAN',
+                cupAverage: 'NAN',
+                cupWinPerc: 'NAN',
+                singlesHomeWinPerc: 'NAN',
+                singlesHomeAverage: 'NAN',
+                singlesAwayWinPerc: 'NAN',
+                singlesAwayAverage: 'NAN',
+                singlesCupWinPerc: 'NAN',
+                singlesCupAverage: 'NAN',
+                pairsHomeWinPerc: 'NAN',
+                pairsHomeAverage: 'NAN',
+                pairsAwayWinPerc: 'NAN',
+                pairsAwayAverage: 'NAN',
+                pairsCupWinPerc: 'NAN',
+                pairsCupAverage: 'NAN',
             };
 
             const expectedResult = {
@@ -52,8 +69,20 @@ describe('#StatsHelper Tests', () => {
                 homeAverage: -99,
                 awayWinPerc: 0,
                 awayAverage: -99,
-                cupAverage: 0,
                 cupWinPerc: 0,
+                cupAverage: -99,
+                singlesHomeWinPerc: 0,
+                singlesHomeAverage: -99,
+                singlesAwayWinPerc: 0,
+                singlesAwayAverage: -99,
+                singlesCupWinPerc: 0,
+                singlesCupAverage: -99,
+                pairsHomeWinPerc: 0,
+                pairsHomeAverage: -99,
+                pairsAwayWinPerc: 0,
+                pairsAwayAverage: -99,
+                pairsCupWinPerc: 0,
+                pairsCupAverage: -99,
             };
 
             const result = checkWinPercAndAverageAreNumbers(stats);

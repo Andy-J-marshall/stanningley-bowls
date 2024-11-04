@@ -82,7 +82,7 @@ export function returnPlayerStatsForTeam(
                 average: aggDiff / games,
                 winPerc: (wins / games) * 100,
             };
-            playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats); // TODO fix
+            playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
             return playerDayStats;
         });
     return allPlayerStats;
