@@ -29,6 +29,7 @@ describe('#StatsHelper Tests', () => {
         });
     });
 
+    // TODO change tests
     describe('checkWinPercAndAverageAreNumbers', () => {
         it('should verify win percentage and average are numbers and set defaults if not', () => {
             const stats = {

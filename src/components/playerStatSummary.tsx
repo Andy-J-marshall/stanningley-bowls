@@ -51,6 +51,12 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                 ? -1
                 : 0
         );
+        // TODO remove logging
+        playerStats.forEach((player) => {
+            console.log(player.player);
+            console.log(player[orderByStatPropertyName]);
+            console.log('----------------');
+        });
         return order;
     }
 
@@ -61,8 +67,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByWinPercBool(false);
         setOrderByAverageBool(false);
     }
-
-    // TODO order is wrong
 
     function orderPlayersByName() {
         const playerOrder = [...playerStats].sort();
@@ -78,17 +82,44 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     }
 
     function orderPlayersByGames() {
-        let gameOrder;
+        let gameOrder = orderPlayers('games');
 
-        if (showSinglesOnlyBool || showPairsOnlyBool) {
+        // TODO remove this if statement?
+        if (!showHomeOnlyBool && !showHomeOnlyBool && !showCupOnlyBool) {
             if (showSinglesOnlyBool) {
                 gameOrder = orderPlayers('singlesGames');
             }
             if (showPairsOnlyBool) {
                 gameOrder = orderPlayers('pairsGames');
             }
-        } else {
-            gameOrder = orderPlayers('games');
+            if (showHomeOnlyBool) {
+                gameOrder = orderPlayers('homeGames');
+            }
+            if (showAwayOnlyBool) {
+                gameOrder = orderPlayers('awayGames');
+            }
+            if (showCupOnlyBool) {
+                gameOrder = orderPlayers('cupGames');
+            }
+        }
+
+        if (showSinglesOnlyBool && showHomeOnlyBool) {
+            gameOrder = orderPlayers('singlesHomeGames');
+        }
+        if (showSinglesOnlyBool && showAwayOnlyBool) {
+            gameOrder = orderPlayers('singlesAwayGames');
+        }
+        if (showSinglesOnlyBool && showCupOnlyBool) {
+            gameOrder = orderPlayers('singlesCupGames');
+        }
+        if (showPairsOnlyBool && showHomeOnlyBool) {
+            gameOrder = orderPlayers('pairsHomeGames');
+        }
+        if (showPairsOnlyBool && showAwayOnlyBool) {
+            gameOrder = orderPlayers('pairsAwayGames');
+        }
+        if (showPairsOnlyBool && showCupOnlyBool) {
+            gameOrder = orderPlayers('pairsCupGames');
         }
 
         return gameOrder;
@@ -103,17 +134,43 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     }
 
     function orderPlayersByWins() {
-        let winOrder;
+        let winOrder = orderPlayers('wins');
 
-        if (showSinglesOnlyBool || showPairsOnlyBool) {
+        if (!showHomeOnlyBool && !showHomeOnlyBool && !showCupOnlyBool) {
             if (showSinglesOnlyBool) {
                 winOrder = orderPlayers('singlesWins');
             }
             if (showPairsOnlyBool) {
                 winOrder = orderPlayers('pairsWins');
             }
-        } else {
-            winOrder = orderPlayers('wins');
+            if (showHomeOnlyBool) {
+                winOrder = orderPlayers('homeWins');
+            }
+            if (showAwayOnlyBool) {
+                winOrder = orderPlayers('awayWins');
+            }
+            if (showCupOnlyBool) {
+                winOrder = orderPlayers('cupWins');
+            }
+        }
+
+        if (showSinglesOnlyBool && showHomeOnlyBool) {
+            winOrder = orderPlayers('singlesHomeWins');
+        }
+        if (showSinglesOnlyBool && showAwayOnlyBool) {
+            winOrder = orderPlayers('singlesAwayWins');
+        }
+        if (showSinglesOnlyBool && showCupOnlyBool) {
+            winOrder = orderPlayers('singlesCupWins');
+        }
+        if (showPairsOnlyBool && showHomeOnlyBool) {
+            winOrder = orderPlayers('pairsHomeWins');
+        }
+        if (showPairsOnlyBool && showAwayOnlyBool) {
+            winOrder = orderPlayers('pairsAwayWins');
+        }
+        if (showPairsOnlyBool && showCupOnlyBool) {
+            winOrder = orderPlayers('pairsCupWins');
         }
 
         return winOrder;
@@ -127,18 +184,45 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
+    // TODO singles cup order is wrong
     function orderPlayersByWinPerc() {
-        let winPercOrder;
+        let winPercOrder = orderPlayers('winPerc');
 
-        if (showSinglesOnlyBool || showPairsOnlyBool) {
+        if (!showHomeOnlyBool && !showHomeOnlyBool && !showCupOnlyBool) {
             if (showSinglesOnlyBool) {
                 winPercOrder = orderPlayers('singlesWinPerc');
             }
             if (showPairsOnlyBool) {
                 winPercOrder = orderPlayers('pairsWinPerc');
             }
-        } else {
-            winPercOrder = orderPlayers('winPerc');
+            if (showHomeOnlyBool) {
+                winPercOrder = orderPlayers('homeWinPerc');
+            }
+            if (showAwayOnlyBool) {
+                winPercOrder = orderPlayers('awayWinPerc');
+            }
+            if (showCupOnlyBool) {
+                winPercOrder = orderPlayers('cupWinPerc');
+            }
+        }
+
+        if (showSinglesOnlyBool && showHomeOnlyBool) {
+            winPercOrder = orderPlayers('singlesHomeWinPerc');
+        }
+        if (showSinglesOnlyBool && showAwayOnlyBool) {
+            winPercOrder = orderPlayers('singlesAwayWinPerc');
+        }
+        if (showSinglesOnlyBool && showCupOnlyBool) {
+            winPercOrder = orderPlayers('singlesCupWinPerc');
+        }
+        if (showPairsOnlyBool && showHomeOnlyBool) {
+            winPercOrder = orderPlayers('pairsHomeWinPerc');
+        }
+        if (showPairsOnlyBool && showAwayOnlyBool) {
+            winPercOrder = orderPlayers('pairsAwayWinPerc');
+        }
+        if (showPairsOnlyBool && showCupOnlyBool) {
+            winPercOrder = orderPlayers('pairsCupWinPerc');
         }
 
         return winPercOrder;
@@ -152,34 +236,54 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByWinPercBool(false);
     }
 
+    // TODO order by pairs average incorrect
+    // TODO singles cup order is wrong
     function orderPlayersByAverage() {
-        let averageOrder;
+        let averageOrder = orderPlayers('average');
 
-        if (showSinglesOnlyBool || showPairsOnlyBool) {
+        if (!showHomeOnlyBool && !showHomeOnlyBool && !showCupOnlyBool) {
             if (showSinglesOnlyBool) {
                 averageOrder = orderPlayers('singlesAverage');
             }
             if (showPairsOnlyBool) {
                 averageOrder = orderPlayers('pairsAverage');
             }
-        } else {
-            averageOrder = orderPlayers('average');
+            if (showHomeOnlyBool) {
+                averageOrder = orderPlayers('homeAverage');
+            }
+            if (showAwayOnlyBool) {
+                averageOrder = orderPlayers('awayAverage');
+            }
+            if (showCupOnlyBool) {
+                averageOrder = orderPlayers('cupAverage');
+            }
+        }
+
+        if (showSinglesOnlyBool && showHomeOnlyBool) {
+            averageOrder = orderPlayers('singlesHomeAverage');
+        }
+        if (showSinglesOnlyBool && showAwayOnlyBool) {
+            averageOrder = orderPlayers('singlesAwayAverage');
+        }
+        if (showSinglesOnlyBool && showCupOnlyBool) {
+            averageOrder = orderPlayers('singlesCupAverage');
+        }
+        if (showPairsOnlyBool && showHomeOnlyBool) {
+            averageOrder = orderPlayers('pairsHomeAverage');
+        }
+        if (showPairsOnlyBool && showAwayOnlyBool) {
+            averageOrder = orderPlayers('pairsAwayAverage');
+        }
+        if (showPairsOnlyBool && showCupOnlyBool) {
+            averageOrder = orderPlayers('pairsCupAverage');
         }
 
         return averageOrder;
     }
 
     function displayPlayers() {
-        let stats;
-        if (
-            !orderByPlayerBool &&
-            !orderByGamesBool &&
-            !orderByWinsBool &&
-            !orderByWinPercBool &&
-            !orderByAverageBool
-        ) {
-            stats = orderPlayersByName();
-        }
+        let stats = orderPlayersByName();
+
         if (orderByPlayerBool) {
             stats = orderPlayersByName();
         }
@@ -200,6 +304,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             let gamesPlayed: number | undefined = player.games;
             let average: number | undefined = player.average;
             let wins: number | undefined = player.wins;
+
+            // TODO refactor this logic?
 
             if (showSinglesOnlyBool) {
                 gamesPlayed = player.singlesGames;

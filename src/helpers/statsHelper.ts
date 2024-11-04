@@ -1,3 +1,5 @@
+import { PlayerStatsSummary } from '../types/interfaces';
+
 export function returnTabName(teamName: string) {
     let displayName = teamName.substring(0, 3).toUpperCase();
     if (teamName.toLowerCase().includes(' vets')) {
@@ -12,95 +14,134 @@ export function returnTabName(teamName: string) {
     return displayName;
 }
 
-export function checkWinPercAndAverageAreNumbers(stats: any) {
+export function checkWinPercAndAverageAreNumbers(stats: PlayerStatsSummary) {
     let verifiedStats = stats;
 
+    // TODO still want the null checks?
     // Overall
-    if (isNaN(verifiedStats.winPerc)) {
+    if (verifiedStats.winPerc && isNaN(verifiedStats.winPerc)) {
         verifiedStats.winPerc = 0;
     }
-    if (isNaN(verifiedStats.average)) {
+    if (verifiedStats.average && isNaN(verifiedStats.average)) {
         verifiedStats.average = -99;
     }
 
     // Singles
-    if (isNaN(verifiedStats.singlesWinPerc)) {
+    if (verifiedStats.singlesWinPerc && isNaN(verifiedStats.singlesWinPerc)) {
         verifiedStats.singlesWinPerc = 0;
     }
-    if (isNaN(verifiedStats.singlesAverage)) {
+    if (verifiedStats.singlesAverage && isNaN(verifiedStats.singlesAverage)) {
         verifiedStats.singlesAverage = -99;
     }
 
     // Pairs
-    if (isNaN(verifiedStats.pairsWinPerc)) {
+    if (verifiedStats.pairsWinPerc && isNaN(verifiedStats.pairsWinPerc)) {
         verifiedStats.pairsWinPerc = 0;
     }
-    if (isNaN(verifiedStats.pairsAverage)) {
+    if (verifiedStats.pairsAverage && isNaN(verifiedStats.pairsAverage)) {
         verifiedStats.pairsAverage = -99;
     }
 
     // Home
-    if (isNaN(verifiedStats.homeWinPerc)) {
+    if (verifiedStats.homeWinPerc && isNaN(verifiedStats.homeWinPerc)) {
         verifiedStats.homeWinPerc = 0;
     }
-    if (isNaN(verifiedStats.homeAverage)) {
+    if (verifiedStats.homeAverage && isNaN(verifiedStats.homeAverage)) {
         verifiedStats.homeAverage = -99;
     }
 
     // Singles Home
-    if (isNaN(verifiedStats.singlesHomeWinPerc)) {
+    if (
+        verifiedStats.singlesHomeWinPerc &&
+        isNaN(verifiedStats.singlesHomeWinPerc)
+    ) {
         verifiedStats.singlesHomeWinPerc = 0;
     }
-    if (isNaN(verifiedStats.singlesHomeAverage)) {
+    if (
+        verifiedStats.singlesHomeAverage &&
+        isNaN(verifiedStats.singlesHomeAverage)
+    ) {
         verifiedStats.singlesHomeAverage = -99;
     }
 
     // Pairs Home
-    if (isNaN(verifiedStats.pairsHomeWinPerc)) {
+    if (
+        verifiedStats.pairsHomeWinPerc &&
+        isNaN(verifiedStats.pairsHomeWinPerc)
+    ) {
         verifiedStats.pairsHomeWinPerc = 0;
     }
-    if (isNaN(verifiedStats.pairsHomeAverage)) {
+    if (
+        verifiedStats.pairsHomeAverage &&
+        isNaN(verifiedStats.pairsHomeAverage)
+    ) {
         verifiedStats.pairsHomeAverage = -99;
     }
 
     // Away
-    if (isNaN(verifiedStats.awayWinPerc)) {
+    if (verifiedStats.awayWinPerc && isNaN(verifiedStats.awayWinPerc)) {
         verifiedStats.awayWinPerc = 0;
     }
-    if (isNaN(verifiedStats.awayAverage)) {
+    if (verifiedStats.awayAverage && isNaN(verifiedStats.awayAverage)) {
         verifiedStats.awayAverage = -99;
     }
 
     // Singles Away
-    if (isNaN(verifiedStats.singlesAwayWinPerc)) {
+    if (
+        verifiedStats.singlesAwayWinPerc &&
+        isNaN(verifiedStats.singlesAwayWinPerc)
+    ) {
         verifiedStats.singlesAwayWinPerc = 0;
     }
-    if (isNaN(verifiedStats.singlesAwayAverage)) {
+    if (
+        verifiedStats.singlesAwayAverage &&
+        isNaN(verifiedStats.singlesAwayAverage)
+    ) {
         verifiedStats.singlesAwayAverage = -99;
     }
 
     // Pairs Away
-    if (isNaN(verifiedStats.pairsAwayWinPerc)) {
+    if (
+        verifiedStats.pairsAwayWinPerc &&
+        isNaN(verifiedStats.pairsAwayWinPerc)
+    ) {
         verifiedStats.pairsAwayWinPerc = 0;
     }
-    if (isNaN(verifiedStats.pairsAwayAverage)) {
+    if (
+        verifiedStats.pairsAwayAverage &&
+        isNaN(verifiedStats.pairsAwayAverage)
+    ) {
         verifiedStats.pairsAwayAverage = -99;
     }
 
     // Cup
-    if (isNaN(verifiedStats.cupAverage)) {
+    if (verifiedStats.cupAverage && isNaN(verifiedStats.cupAverage)) {
         verifiedStats.cupAverage = 0;
     }
-    if (isNaN(verifiedStats.cupWinPerc)) {
+    if (verifiedStats.cupWinPerc && isNaN(verifiedStats.cupWinPerc)) {
         verifiedStats.cupWinPerc = 0;
     }
 
     // Singles Cup
-    if (isNaN(verifiedStats.singlesCupAverage)) {
-        verifiedStats.singlesCupAverage = 0;
+    if (
+        verifiedStats.singlesCupAverage &&
+        isNaN(verifiedStats.singlesCupAverage)
+    ) {
+        verifiedStats.singlesCupAverage = -99;
     }
-    if (isNaN(verifiedStats.singlesCupWinPerc)) {
+    if (
+        verifiedStats.singlesCupWinPerc &&
+        isNaN(verifiedStats.singlesCupWinPerc)
+    ) {
         verifiedStats.singlesCupWinPerc = 0;
+    }
+
+    // Pairs Cup
+    if (verifiedStats.pairsCupAverage && isNaN(verifiedStats.pairsCupAverage)) {
+        verifiedStats.pairsCupAverage = -99;
+    }
+    if (verifiedStats.pairsCupWinPerc && isNaN(verifiedStats.pairsCupWinPerc)) {
+        verifiedStats.pairsCupWinPerc = 0;
     }
 
     return verifiedStats;
