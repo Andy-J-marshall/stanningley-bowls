@@ -23,6 +23,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
 
+    // TODO refactor how this looks
+    // TODO also create tests for this
+
     useEffect(() => {
         if (playerSearchedFor !== key) {
             setKey(playerSearchedFor);
