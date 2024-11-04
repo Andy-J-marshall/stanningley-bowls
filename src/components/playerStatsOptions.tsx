@@ -7,6 +7,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allYearStatsCallback = props.allYearStatsCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
+    const onlyHomeCallback = props.onlyHomeCallback;
+    const onlyAwayCallback = props.onlyAwayCallback;
+    const onlyCupCallback = props.onlyCupCallback;
     const playerSearchedFor = props.playerSearchedFor;
 
     const [key, setKey] = useState(playerSearchedFor);
@@ -62,63 +65,55 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     function toggleAllVenuesMatches() {
-        setAllGameTypesToggle(false);
-
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
-
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
-
         setAllVenuesToggle(true);
+
         setHomeOnlyToggle(false);
+        onlyHomeCallback(false);
+
         setAwayOnlyToggle(false);
+        onlyAwayCallback(false);
+
         setCupOnlyToggle(false);
+        onlyCupCallback(false);
     }
 
     function toggleHomeOnlyMatches() {
-        setAllGameTypesToggle(false);
-
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
-
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
+        setAllVenuesToggle(false);
 
         setHomeOnlyToggle(true);
-        setAllVenuesToggle(false);
+        onlyHomeCallback(true);
+
         setAwayOnlyToggle(false);
+        onlyAwayCallback(false);
+
         setCupOnlyToggle(false);
+        onlyCupCallback(false);
     }
 
     function toggleAwayOnlyMatches() {
-        setAllGameTypesToggle(false);
+        setAllVenuesToggle(false);
 
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
-
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
+        setHomeOnlyToggle(false);
+        onlyHomeCallback(false);
 
         setAwayOnlyToggle(true);
-        setAllVenuesToggle(false);
-        setHomeOnlyToggle(false);
+        onlyAwayCallback(true);
+
         setCupOnlyToggle(false);
+        onlyCupCallback(false);
     }
 
     function toggleCupOnlyMatches() {
-        setAllGameTypesToggle(false);
+        setAllVenuesToggle(false);
 
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
+        setHomeOnlyToggle(false);
+        onlyHomeCallback(false);
 
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
+        setAwayOnlyToggle(false);
+        onlyAwayCallback(false);
 
         setCupOnlyToggle(true);
-        setAllVenuesToggle(false);
-        setHomeOnlyToggle(false);
-        setAwayOnlyToggle(false);
+        onlyCupCallback(true);
     }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {

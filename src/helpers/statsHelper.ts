@@ -34,5 +34,7 @@ export function checkWinPercAndAverageAreNumbers(stats: any) {
         verifiedStats.pairsAverage = -99;
     }
 
+    // TODO update this
+
     return verifiedStats;
 }

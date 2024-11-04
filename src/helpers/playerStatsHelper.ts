@@ -320,6 +320,39 @@ export function returnPlayerStatSummary(
                     (playerStats.totalPairsAgg -
                         playerStats.totalPairsAggAgainst) /
                     playerStats.pairsGames,
+
+                // Home
+                homeGames: playerStats.homeGamesPlayed,
+                homeWins: playerStats.homeWins,
+                homeWinPerc:
+                    (playerStats.homeWins / playerStats.homeGamesPlayed) * 100,
+                homeAgg: playerStats.totalHomeAgg,
+                homeAggAgainst: playerStats.totalHomeAggAgainst,
+                homeAverage:
+                    (playerStats.totalHomeAgg - playerStats.totalHomeAggAgainst) /
+                    playerStats.homeGamesPlayed,
+                
+                // Away
+                awayGames: playerStats.awayGamesPlayed,
+                awayWins: playerStats.awayWins,
+                awayWinPerc:
+                    (playerStats.awayWins / playerStats.awayGamesPlayed) * 100,
+                awayAgg: playerStats.totalAwayAgg,
+                awayAggAgainst: playerStats.totalAwayAggAgainst,
+                awayAverage:
+                    (playerStats.totalAwayAgg - playerStats.totalAwayAggAgainst) /
+                    playerStats.awayGamesPlayed,
+
+                // Cup
+                cupGames: playerStats.cupGamesPlayed,
+                cupWins: playerStats.cupWins,
+                cupWinPerc:
+                    (playerStats.cupWins / playerStats.cupGamesPlayed) * 100,
+                cupAgg: playerStats.cupAgg,
+                cupAggAgainst: playerStats.cupAggAgainst,
+                cupAverage:
+                    (playerStats.cupAgg - playerStats.cupAggAgainst) /
+                    playerStats.cupGamesPlayed,
             };
 
             stats = checkWinPercAndAverageAreNumbers(stats);

@@ -37,6 +37,9 @@ function PlayerStats(props: PlayerStatsProps) {
     const [loading, setLoading] = useState(false);
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
+    const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
+    const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
+    const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     // Find list of players and save to an array
@@ -124,6 +127,30 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
+    function homeOnlyCallback(showHomeBoolean: boolean) {
+        if (showHomeBoolean) {
+            setShowHomeOnlyBool(true);
+        } else {
+            setShowHomeOnlyBool(false);
+        }
+    }
+
+    function awayOnlyCallback(showAwayBoolean: boolean) {
+        if (showAwayBoolean) {
+            setShowAwayOnlyBool(true);
+        } else {
+            setShowAwayOnlyBool(false);
+        }
+    }
+
+    function cupOnlyCallback(showCupBoolean: boolean) {
+        if (showCupBoolean) {
+            setShowCupOnlyBool(true);
+        } else {
+            setShowCupOnlyBool(false);
+        }
+    }
+
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -200,6 +227,9 @@ function PlayerStats(props: PlayerStatsProps) {
                         playerStats={statsArray}
                         showSinglesOnly={showSinglesOnlyBool}
                         showPairsOnly={showPairsOnlyBool}
+                        showHomeOnly={showHomeOnlyBool}
+                        showAwayOnly={showAwayOnlyBool}
+                        showCupOnly={showCupOnlyBool}
                     />
                 </div>
             );
@@ -260,6 +290,9 @@ function PlayerStats(props: PlayerStatsProps) {
                 allYearStatsCallback={allYearStatsCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
+                onlyHomeCallback={homeOnlyCallback}
+                onlyAwayCallback={awayOnlyCallback}
+                onlyCupCallback={cupOnlyCallback}
                 playerSearchedFor={searchedPlayerName}
             />
             <br />

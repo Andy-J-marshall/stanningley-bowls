@@ -8,13 +8,16 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
-    
+    const showHomeOnlyBool = props.showHomeOnly;
+    const showAwayOnlyBool = props.showAwayOnly;
+    const showCupOnlyBool = props.showCupOnly;
+
     const [orderByPlayerBool, setOrderByPlayerBool] = useState(false);
     const [orderByGamesBool, setOrderByGamesBool] = useState(false);
     const [orderByAverageBool, setOrderByAverageBool] = useState(false);
     const [orderByWinsBool, setOrderByWinsBool] = useState(false);
     const [orderByWinPercBool, setOrderByWinPercBool] = useState(false);
-    
+
     playerStats = playerStats.filter((player) => player.games > 0);
     let style: CSSProperties;
     let href: string;
@@ -195,17 +198,36 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             let gamesPlayed: number | undefined = player.games;
             let average: number | undefined = player.average;
             let wins: number | undefined = player.wins;
-
+            
             if (showSinglesOnlyBool) {
                 gamesPlayed = player.singleGames;
                 average = player.singlesAverage;
                 wins = player.singlesWins;
             }
-
+            
             if (showPairsOnlyBool) {
                 gamesPlayed = player.pairsGames;
                 average = player.pairsAverage;
                 wins = player.pairsWins;
+            }
+            
+            // TODO make sure this can handle combinations e.g. home and singles, away and pairs etc.
+            if (showHomeOnlyBool) {
+                gamesPlayed = player.homeGames;
+                average = player.homeAverage;
+                wins = player.homeWins;
+            }
+
+            if (showAwayOnlyBool) {
+                gamesPlayed = player.awayGames;
+                average = player.awayAverage;
+                wins = player.awayWins;
+            }
+
+            if (showCupOnlyBool) {
+                gamesPlayed = player.cupGames;
+                average = player.cupAverage;
+                wins = player.cupWins;
             }
 
             return (

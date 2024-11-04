@@ -54,6 +54,9 @@ export interface PlayerStatsOptionsProps {
     allYearStatsCallback: (toggle: boolean) => void;
     onlySinglesCallback: (toggle: boolean) => void;
     onlyPairsCallback: (toggle: boolean) => void;
+    onlyHomeCallback: (toggle: boolean) => void;
+    onlyAwayCallback: (toggle: boolean) => void;
+    onlyCupCallback: (toggle: boolean) => void;
     playerSearchedFor: string;
 }
 
@@ -118,18 +121,34 @@ export interface RecordsTableDisplayProps {
 
 export interface PlayerStatsSummary {
     player: string;
+
     games: number;
-    wins: number;
-    average: number | undefined;
     singleGames?: number;
-    singlesAverage?: number;
-    singlesWins?: number;
     pairsGames?: number;
+    homeGames?: number;
+    awayGames?: number;
+    cupGames?: number;
+
+    average: number | undefined;
+    singlesAverage?: number;
     pairsAverage?: number;
+    homeAverage?: number;
+    awayAverage?: number;
+    cupAverage?: number;
+    
+    wins: number;
+    singlesWins?: number;
     pairsWins?: number;
+    homeWins?: number;
+    awayWins?: number;
+    cupWins?: number;
+
+    winPerc?: number;
     singlesWinPerc?: number;
     pairsWinPerc?: number;
-    winPerc?: number;
+    homeWinPerc?: number;
+    awayWinPerc?: number;
+    cupWinPerc?: number;
 }
 
 export interface PlayerStatSummaryProps {
@@ -137,6 +156,9 @@ export interface PlayerStatSummaryProps {
     callback?: (playerName: string) => void;
     showSinglesOnly?: boolean;
     showPairsOnly?: boolean;
+    showHomeOnly?: boolean;
+    showAwayOnly?: boolean;
+    showCupOnly?: boolean;
 }
 
 export interface WrapperProps {
