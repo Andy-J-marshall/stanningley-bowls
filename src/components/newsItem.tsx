@@ -13,6 +13,7 @@ function NewsItem(props: NewsItemProps) {
     return (
         <div>
             <Col>
+            {/* TODO add a text preview to the news item */}
                 <Card bg="light">
                     <Card.Body>
                         <h4>{title}</h4>
