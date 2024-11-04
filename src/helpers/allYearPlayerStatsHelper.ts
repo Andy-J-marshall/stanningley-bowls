@@ -256,7 +256,7 @@ export function returnPlayerStatSummaryForAllYears(
             (stats.pairsCupAgg - stats.pairsCupAggAgainst) /
             stats.pairsCupGames;
 
-        stats = checkWinPercAndAverageAreNumbers(stats); // TODO fix
+        stats = checkWinPercAndAverageAreNumbers(stats);
 
         statsToDisplayArray.push(stats);
     });

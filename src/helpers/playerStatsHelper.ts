@@ -445,7 +445,7 @@ export function returnPlayerStatSummary(
                     playerStats.pairCupGamesPlayed,
             };
 
-            stats = checkWinPercAndAverageAreNumbers(stats); // TODO fix
+            stats = checkWinPercAndAverageAreNumbers(stats);
 
             statsArray.push(stats);
         }
