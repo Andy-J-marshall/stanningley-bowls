@@ -284,7 +284,6 @@ describe('#playersStatsHelper Tests', () => {
         });
     });
 
-    // TODO update tests
     describe('#returnPlayerStatSummary()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const result = returnPlayerStatSummary(stats2022.playerResults, [
@@ -300,24 +299,47 @@ describe('#playersStatsHelper Tests', () => {
 
             expect(player).to.deep.equal({
                 player: 'vanessa lancaster',
-                singleGames: 0,
-                singlesAgg: 0,
-                singlesAggAgainst: 0,
-                singlesAverage: -99,
-                singlesWinPerc: 0,
-                singlesWins: 0,
-                winPerc: 25,
+                games: 4,
                 wins: 1,
+                winPerc: 25,
+                average: -3.5,
                 agg: 57,
                 aggAgainst: 71,
-                average: -3.5,
-                games: 4,
+
+                singleGames: 0,
+                singlesWins: 0,
+                singlesWinPerc: 0,
+                singlesAverage: -99,
+                singlesAgg: 0,
+                singlesAggAgainst: 0,
+
+                pairsGames: 4,
+                pairsWins: 1,
+                pairsWinPerc: 25,
+                pairsAverage: -3.5,
                 pairsAgg: 57,
                 pairsAggAgainst: 71,
-                pairsAverage: -3.5,
-                pairsGames: 4,
-                pairsWinPerc: 25,
-                pairsWins: 1,
+
+                homeGames: 2,
+                homeWins: 1,
+                homeWinPerc: 50,
+                homeAverage: 0,
+                homeAgg: 29,
+                homeAggAgainst: 29,
+
+                awayGames: 2,
+                awayWins: 0,
+                awayWinPerc: 0,
+                awayAverage: -7,
+                awayAgg: 28,
+                awayAggAgainst: 42,
+
+                cupGames: 0,
+                cupWins: 0,
+                cupWinPerc: 0,
+                cupAverage: 0,
+                cupAgg: 0,
+                cupAggAgainst: 0,
             });
         });
     });

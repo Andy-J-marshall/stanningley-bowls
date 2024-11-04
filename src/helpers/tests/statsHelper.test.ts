@@ -47,6 +47,12 @@ describe('#StatsHelper Tests', () => {
                 singlesAverage: -99,
                 pairsWinPerc: 0,
                 pairsAverage: -99,
+                homeWinPerc: 0,
+                homeAverage: -99,
+                awayWinPerc: 0,
+                awayAverage: -99,
+                cupAverage: 0,
+                cupWinPerc: 0,
             };
 
             const result = checkWinPercAndAverageAreNumbers(stats);

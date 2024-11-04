@@ -15,18 +15,23 @@ export function returnTabName(teamName: string) {
 export function checkWinPercAndAverageAreNumbers(stats: any) {
     let verifiedStats = stats;
 
+    // Overall
     if (isNaN(verifiedStats.winPerc)) {
         verifiedStats.winPerc = 0;
     }
     if (isNaN(verifiedStats.average)) {
         verifiedStats.average = -99;
     }
+
+    // Singles
     if (isNaN(verifiedStats.singlesWinPerc)) {
         verifiedStats.singlesWinPerc = 0;
     }
     if (isNaN(verifiedStats.singlesAverage)) {
         verifiedStats.singlesAverage = -99;
     }
+
+    // Pairs
     if (isNaN(verifiedStats.pairsWinPerc)) {
         verifiedStats.pairsWinPerc = 0;
     }
@@ -34,7 +39,29 @@ export function checkWinPercAndAverageAreNumbers(stats: any) {
         verifiedStats.pairsAverage = -99;
     }
 
-    // TODO update this
+    // Home
+    if (isNaN(verifiedStats.homeWinPerc)) {
+        verifiedStats.homeWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.homeAverage)) {
+        verifiedStats.homeAverage = -99;
+    }
+
+    // Away
+    if (isNaN(verifiedStats.awayWinPerc)) {
+        verifiedStats.awayWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.awayAverage)) {
+        verifiedStats.awayAverage = -99;
+    }
+
+    // Cup
+    if (isNaN(verifiedStats.cupAverage)) {
+        verifiedStats.cupAverage = 0;
+    }
+    if (isNaN(verifiedStats.cupWinPerc)) {
+        verifiedStats.cupWinPerc = 0;
+    }
 
     return verifiedStats;
 }
