@@ -62,6 +62,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
+    // TODO order is wrong
+
     function orderPlayersByName() {
         const playerOrder = [...playerStats].sort();
         return playerOrder;
@@ -80,7 +82,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
         if (showSinglesOnlyBool || showPairsOnlyBool) {
             if (showSinglesOnlyBool) {
-                gameOrder = orderPlayers('singleGames');
+                gameOrder = orderPlayers('singlesGames');
             }
             if (showPairsOnlyBool) {
                 gameOrder = orderPlayers('pairsGames');
@@ -198,36 +200,74 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             let gamesPlayed: number | undefined = player.games;
             let average: number | undefined = player.average;
             let wins: number | undefined = player.wins;
-            
+
             if (showSinglesOnlyBool) {
-                gamesPlayed = player.singleGames;
+                gamesPlayed = player.singlesGames;
                 average = player.singlesAverage;
                 wins = player.singlesWins;
             }
-            
+
             if (showPairsOnlyBool) {
                 gamesPlayed = player.pairsGames;
                 average = player.pairsAverage;
                 wins = player.pairsWins;
             }
-            
-            // TODO make sure this can handle combinations e.g. home and singles, away and pairs etc.
+
             if (showHomeOnlyBool) {
-                gamesPlayed = player.homeGames;
-                average = player.homeAverage;
-                wins = player.homeWins;
+                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
+                    gamesPlayed = player.homeGames;
+                    average = player.homeAverage;
+                    wins = player.homeWins;
+                }
+
+                if (showSinglesOnlyBool) {
+                    gamesPlayed = player.singlesHomeGames;
+                    average = player.singlesHomeAverage;
+                    wins = player.singlesHomeWins;
+                }
+                if (showPairsOnlyBool) {
+                    gamesPlayed = player.pairsHomeGames;
+                    average = player.pairsHomeAverage;
+                    wins = player.pairsHomeWins;
+                }
             }
 
             if (showAwayOnlyBool) {
-                gamesPlayed = player.awayGames;
-                average = player.awayAverage;
-                wins = player.awayWins;
+                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
+                    gamesPlayed = player.awayGames;
+                    average = player.awayAverage;
+                    wins = player.awayWins;
+                }
+
+                if (showSinglesOnlyBool) {
+                    gamesPlayed = player.singlesAwayGames;
+                    average = player.singlesAwayAverage;
+                    wins = player.singlesAwayWins;
+                }
+                if (showPairsOnlyBool) {
+                    gamesPlayed = player.pairsAwayGames;
+                    average = player.pairsAwayAverage;
+                    wins = player.pairsAwayWins;
+                }
             }
 
             if (showCupOnlyBool) {
-                gamesPlayed = player.cupGames;
-                average = player.cupAverage;
-                wins = player.cupWins;
+                if (!showSinglesOnlyBool && !showPairsOnlyBool) {
+                    gamesPlayed = player.cupGames;
+                    average = player.cupAverage;
+                    wins = player.cupWins;
+                }
+
+                if (showSinglesOnlyBool) {
+                    gamesPlayed = player.singlesCupGames;
+                    average = player.singlesCupAverage;
+                    wins = player.singlesCupWins;
+                }
+                if (showPairsOnlyBool) {
+                    gamesPlayed = player.pairsCupGames;
+                    average = player.pairsCupAverage;
+                    wins = player.pairsCupWins;
+                }
             }
 
             return (
@@ -278,7 +318,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                             <tr>
                                 <th>
                                     <Button
-                                        id="order-by-win%-button"
+                                        id="order-by-name%-button"
                                         variant="light"
                                         onClick={orderByName}
                                         style={{

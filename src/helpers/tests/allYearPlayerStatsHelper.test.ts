@@ -9,6 +9,7 @@ import stats2023 from '../../data/bowlsStats2023.json';
 import stats2024 from '../../data/bowlsStats2024.json';
 
 describe('#allYearPlayerStatsHelper Tests', () => {
+    // TODO - change tests
     describe('#returnPlayerStatSummaryForAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const statsArray = [stats2022, stats2023];
@@ -35,7 +36,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 pairsAgg: 100,
                 pairsAggAgainst: 126,
 
-                singleGames: 14,
+                singlesGames: 14,
                 singlesWins: 7,
                 singlesWinPerc: 50,
                 singlesAverage: -1.1428571428571428,
