@@ -284,7 +284,6 @@ describe('#playersStatsHelper Tests', () => {
         });
     });
 
-    // TODO update tests
     describe('#returnPlayerStatSummary()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const result = returnPlayerStatSummary(stats2022.playerResults, [
@@ -338,9 +337,51 @@ describe('#playersStatsHelper Tests', () => {
                 cupGames: 0,
                 cupWins: 0,
                 cupWinPerc: 0,
-                cupAverage: 0,
+                cupAverage: -99,
                 cupAgg: 0,
                 cupAggAgainst: 0,
+
+                pairsHomeAgg: 29,
+                pairsHomeAggAgainst: 29,
+                pairsHomeAverage: 0,
+                pairsHomeGames: 2,
+                pairsHomeWinPerc: 50,
+                pairsHomeWins: 1,
+
+                pairsAwayAgg: 28,
+                pairsAwayAggAgainst: 42,
+                pairsAwayAverage: -7,
+                pairsAwayGames: 2,
+                pairsAwayWinPerc: 0,
+                pairsAwayWins: 0,
+
+                pairsCupAgg: 0,
+                pairsCupAggAgainst: 0,
+                pairsCupAverage: -99,
+                pairsCupGames: 0,
+                pairsCupWinPerc: 0,
+                pairsCupWins: 0,
+
+                singlesHomeAgg: 0,
+                singlesHomeAggAgainst: 0,
+                singlesHomeAverage: -99,
+                singlesHomeGames: 0,
+                singlesHomeWinPerc: 0,
+                singlesHomeWins: 0,
+
+                singlesAwayAgg: 0,
+                singlesAwayAggAgainst: 0,
+                singlesAwayAverage: -99,
+                singlesAwayGames: 0,
+                singlesAwayWinPerc: 0,
+                singlesAwayWins: 0,
+
+                singlesCupAgg: 0,
+                singlesCupAggAgainst: 0,
+                singlesCupAverage: -99,
+                singlesCupGames: 0,
+                singlesCupWinPerc: 0,
+                singlesCupWins: 0,
             });
         });
     });

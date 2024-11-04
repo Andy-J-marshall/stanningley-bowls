@@ -9,7 +9,6 @@ import stats2023 from '../../data/bowlsStats2023.json';
 import stats2024 from '../../data/bowlsStats2024.json';
 
 describe('#allYearPlayerStatsHelper Tests', () => {
-    // TODO - change tests
     describe('#returnPlayerStatSummaryForAllYears()', () => {
         it('Correctly aggregates stats for players across multiple years', () => {
             const statsArray = [stats2022, stats2023];
@@ -63,6 +62,48 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 cupAverage: -18,
                 cupAgg: 3,
                 cupAggAgainst: 21,
+
+                pairsHomeAgg: 68,
+                pairsHomeAggAgainst: 63,
+                pairsHomeAverage: 1.25,
+                pairsHomeGames: 4,
+                pairsHomeWinPerc: 50,
+                pairsHomeWins: 2,
+
+                pairsAwayAgg: 32,
+                pairsAwayAggAgainst: 63,
+                pairsAwayAverage: -10.333333333333334,
+                pairsAwayGames: 3,
+                pairsAwayWinPerc: 0,
+                pairsAwayWins: 0,
+
+                pairsCupAgg: 0,
+                pairsCupAggAgainst: 0,
+                pairsCupAverage: -99,
+                pairsCupGames: 0,
+                pairsCupWinPerc: 0,
+                pairsCupWins: 0,
+
+                singlesHomeAgg: 106,
+                singlesHomeAggAgainst: 98,
+                singlesHomeAverage: 1.3333333333333333,
+                singlesHomeGames: 6,
+                singlesHomeWinPerc: 66.66666666666666,
+                singlesHomeWins: 4,
+
+                singlesAwayAgg: 106,
+                singlesAwayAggAgainst: 112,
+                singlesAwayAverage: -0.8571428571428571,
+                singlesAwayGames: 7,
+                singlesAwayWinPerc: 42.857142857142854,
+                singlesAwayWins: 3,
+
+                singlesCupAgg: 3,
+                singlesCupAggAgainst: 21,
+                singlesCupAverage: -18,
+                singlesCupGames: 1,
+                singlesCupWinPerc: 0,
+                singlesCupWins: 0,
             });
         });
 
