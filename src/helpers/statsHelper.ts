@@ -89,27 +89,27 @@ export function checkWinPercAndAverageAreNumbers(stats: any) {
     }
 
     // Cup
-    if (isNaN(verifiedStats.cupAverage)) {
-        verifiedStats.cupAverage = 0;
-    }
     if (isNaN(verifiedStats.cupWinPerc)) {
         verifiedStats.cupWinPerc = 0;
     }
+    if (isNaN(verifiedStats.cupAverage)) {
+        verifiedStats.cupAverage = -99;
+    }
 
     // Singles Cup
-    if (isNaN(verifiedStats.singlesCupAverage)) {
-        verifiedStats.singlesCupAverage = -99;
-    }
     if (isNaN(verifiedStats.singlesCupWinPerc)) {
         verifiedStats.singlesCupWinPerc = 0;
     }
+    if (isNaN(verifiedStats.singlesCupAverage)) {
+        verifiedStats.singlesCupAverage = -99;
+    }
 
     // Pairs Cup
-    if (isNaN(verifiedStats.pairsCupAverage)) {
-        verifiedStats.pairsCupAverage = -99;
-    }
     if (isNaN(verifiedStats.pairsCupWinPerc)) {
         verifiedStats.pairsCupWinPerc = 0;
+    }
+    if (isNaN(verifiedStats.pairsCupAverage)) {
+        verifiedStats.pairsCupAverage = -99;
     }
 
     return verifiedStats;
