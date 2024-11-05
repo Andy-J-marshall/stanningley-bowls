@@ -218,6 +218,8 @@ function PlayerStats(props: PlayerStatsProps) {
             (player) => player.pairsGames && player.pairsGames > 0
         );
 
+        // TODO need to handle when no games played for selected filter e.g. pairs and cup games for 2022
+
         if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
             return (
                 <div>
