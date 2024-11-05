@@ -23,7 +23,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
 
-    // TODO refactor how this looks
     useEffect(() => {
         if (playerSearchedFor !== key) {
             setKey(playerSearchedFor);
@@ -131,28 +130,35 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 fontSize: '15px',
             }}
         >
+            {/* TODO improve layout */}
             {!playerSearchedFor && (
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header>OPTIONS</Accordion.Header>
+                        <Accordion.Header>FILTERS</Accordion.Header>
                         <Accordion.Body>
                             <Form style={{ display: 'inline-block' }}>
                                 <Form.Group
                                     className="mb-2"
                                     controlId="searchOptions"
                                 >
-                                    <Row>
-                                        <Col className="mb-3">
+                                    {/* TODO */}
+                                    {/* flex-wrap: wrap; This is causing an issue */}
+                                    {/* box-sizing: border-box; Mabe this too? */}
+                                    {/* TODO try .form-check padding */}
+                                    <Row className="g-4 align-items-start">
+                                        <Col xs={6}>
+                                            <h6>TEAMS</h6>
                                             <Form.Check
                                                 key={key}
                                                 id="#all-stats-select-checkbox"
                                                 onChange={toggleAllTeamStats}
                                                 type="checkbox"
-                                                label="Include stats from other teams"
+                                                label="Include other team stats"
                                                 checked={allTeamsToggle}
                                             />
                                         </Col>
-                                        <Col>
+                                        <Col xs={6}>
+                                            <h6>YEARS</h6>
                                             <Form.Check
                                                 key={key}
                                                 id="#all-years-select-checkbox"
@@ -162,11 +168,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 checked={allYearToggle}
                                             />
                                         </Col>
-                                    </Row>
-                                    <Row>
-                                        <h6>GAME TYPES</h6>
-                                        <InputGroup>
-                                            <Col>
+                                        <Col xs={6}>
+                                            <h6>GAME TYPES</h6>
+                                            <InputGroup>
                                                 <Form.Check
                                                     key={key}
                                                     id="#all-matches-radio"
@@ -176,8 +180,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="All"
                                                     checked={allGameTypesToggle}
                                                 />
-                                            </Col>
-                                            <Col>
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-singles-radio"
@@ -189,8 +191,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="Singles"
                                                     checked={singlesOnlyToggle}
                                                 />
-                                            </Col>
-                                            <Col>
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-pairs-radio"
@@ -202,13 +202,11 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="Pairs"
                                                     checked={pairsOnlyToggle}
                                                 />
-                                            </Col>
-                                        </InputGroup>
-                                    </Row>
-                                    <Row>
-                                        <h6>VENUE</h6>
-                                        <InputGroup>
-                                            <Col>
+                                            </InputGroup>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <h6>VENUE</h6>
+                                            <InputGroup>
                                                 <Form.Check
                                                     key={key}
                                                     id="#all-venues-radio"
@@ -220,8 +218,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="All"
                                                     checked={allVenuesToggle}
                                                 />
-                                            </Col>
-                                            <Col>
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-home-radio"
@@ -233,8 +229,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="Home"
                                                     checked={homeOnlyToggle}
                                                 />
-                                            </Col>
-                                            <Col>
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-away-radio"
@@ -246,8 +240,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="Away"
                                                     checked={awayOnlyToggle}
                                                 />
-                                            </Col>
-                                            <Col>
                                                 <Form.Check
                                                     key={key}
                                                     id="#only-cup-radio"
@@ -259,8 +251,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     label="Cup"
                                                     checked={cupOnlyToggle}
                                                 />
-                                            </Col>
-                                        </InputGroup>
+                                            </InputGroup>
+                                        </Col>
                                     </Row>
                                 </Form.Group>
                             </Form>
