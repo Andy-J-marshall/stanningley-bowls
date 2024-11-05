@@ -86,6 +86,11 @@ export function returnPlayerStats(
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const biggestWin = findBiggestWin(results);
 
+    const singlesWins = totalWins - pairWins;
+    const singlesHomeWins = homeWins - pairHomeWins;
+    const singlesAwayWins = awayWins - pairAwayWins;
+    const singlesCupWins = cupWins - pairCupWins;
+
     // Games played
     const homeGamesPlayed = homeWins + homeLosses;
     const awayGamesPlayed = awayWins + awayLosses;
@@ -197,9 +202,7 @@ export function returnPlayerStats(
     const pairsCupAverage =
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
-
-        // TODO here: singlesHomeWins, singlesWins, singlesAwayWins, singlesCupWins
-        // TODO also calculate averages and win % here instead
+    // TODO also calculate averages and win % here instead?
     return {
         totalAgg,
         totalAggAgainst,
@@ -233,11 +236,15 @@ export function returnPlayerStats(
         pairHomeLosses,
         pairAwayLosses,
         pairCupLosses,
+        totalWins,
         homeWins,
         awayWins,
         cupWins,
+        singlesWins,
+        singlesHomeWins,
+        singlesAwayWins,
+        singlesCupWins,
         pairWins,
-        totalWins,
         pairHomeWins,
         pairAwayWins,
         pairCupWins,
@@ -302,7 +309,7 @@ export function returnPlayerStatSummary(
 
                 // Singles
                 singlesGames: playerStats.singlesGames,
-                singlesWins: playerStats.totalWins - playerStats.pairWins,
+                singlesWins: playerStats.singlesWins,
                 singlesWinPerc:
                     ((playerStats.totalWins - playerStats.pairWins) /
                         playerStats.singlesGames) *
@@ -341,8 +348,7 @@ export function returnPlayerStatSummary(
 
                 // Singles Home
                 singlesHomeGames: playerStats.singlesHomeGamesPlayed,
-                singlesHomeWins:
-                    playerStats.homeWins - playerStats.pairHomeWins,
+                singlesHomeWins: playerStats.singlesHomeWins,
                 singlesHomeWinPerc:
                     ((playerStats.homeWins - playerStats.pairHomeWins) /
                         playerStats.singlesHomeGamesPlayed) *
@@ -382,8 +388,7 @@ export function returnPlayerStatSummary(
 
                 // Singles Away
                 singlesAwayGames: playerStats.singlesAwayGamesPlayed,
-                singlesAwayWins:
-                    playerStats.awayWins - playerStats.pairAwayWins,
+                singlesAwayWins: playerStats.singlesAwayWins,
                 singlesAwayWinPerc:
                     ((playerStats.awayWins - playerStats.pairAwayWins) /
                         playerStats.singlesAwayGamesPlayed) *
@@ -422,7 +427,7 @@ export function returnPlayerStatSummary(
 
                 // Singles Cup
                 singlesCupGames: playerStats.singlesCupGamesPlayed,
-                singlesCupWins: playerStats.cupWins - playerStats.pairCupWins,
+                singlesCupWins: playerStats.singlesCupWins,
                 singlesCupWinPerc:
                     ((playerStats.cupWins - playerStats.pairCupWins) /
                         playerStats.singlesCupGamesPlayed) *

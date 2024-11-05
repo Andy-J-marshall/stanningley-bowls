@@ -128,8 +128,7 @@ export function returnPlayerStatSummaryForAllYears(
 
                 // Singles
                 stats.singlesGames += playerStats.singlesGames;
-                stats.singlesWins +=
-                    playerStats.totalWins - playerStats.pairWins;
+                stats.singlesWins += playerStats.singlesWins;
                 stats.singlesAgg += playerStats.singlesAgg;
                 stats.singlesAggAgainst += playerStats.singlesAggAgainst;
 
@@ -149,8 +148,7 @@ export function returnPlayerStatSummaryForAllYears(
 
                 // Singles Home
                 stats.singlesHomeGames += playerStats.singlesHomeGamesPlayed;
-                stats.singlesHomeWins +=
-                    playerStats.homeWins - playerStats.pairHomeWins;
+                stats.singlesHomeWins += playerStats.singlesHomeWins;
                 stats.singlesHomeAgg += playerStats.totalSinglesHomeAgg;
                 stats.singlesHomeAggAgainst +=
                     playerStats.totalSinglesHomeAggAgainst;
@@ -170,8 +168,7 @@ export function returnPlayerStatSummaryForAllYears(
 
                 // Singles Away
                 stats.singlesAwayGames += playerStats.singlesAwayGamesPlayed;
-                stats.singlesAwayWins +=
-                    playerStats.awayWins - playerStats.pairAwayWins;
+                stats.singlesAwayWins += playerStats.singlesAwayWins;
                 stats.singlesAwayAgg += playerStats.totalSinglesAwayAgg;
                 stats.singlesAwayAggAgainst +=
                     playerStats.totalSinglesAwayAggAgainst;
@@ -191,8 +188,7 @@ export function returnPlayerStatSummaryForAllYears(
 
                 // Singles Cup
                 stats.singlesCupGames += playerStats.singlesCupGamesPlayed;
-                stats.singlesCupWins +=
-                    playerStats.cupWins - playerStats.pairCupWins;
+                stats.singlesCupWins += playerStats.singlesCupWins;
                 stats.singlesCupAgg += playerStats.totalSinglesCupAgg;
                 stats.singlesCupAggAgainst +=
                     playerStats.totalSinglesCupAggAgainst;
