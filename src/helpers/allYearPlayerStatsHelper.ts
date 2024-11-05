@@ -8,7 +8,7 @@ import {
     calculateWinPercAndAverage,
     returnPlayerStats,
 } from './playerStatsHelper';
-import { checkWinPercAndAverageAreNumbers } from './statsHelper';
+import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
@@ -201,7 +201,7 @@ export function returnPlayerStatSummaryForAllYears(
         });
 
         stats = calculateWinPercAndAverage(stats);
-        stats = checkWinPercAndAverageAreNumbers(stats);
+        stats = checkAllWinPercAndAverageAreNumbers(stats);
 
         statsToDisplayArray.push(stats);
     });

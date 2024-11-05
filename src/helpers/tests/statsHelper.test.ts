@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { returnTabName } from '../statsHelper';
-import { checkWinPercAndAverageAreNumbers } from '../statsHelper';
+import { checkAllWinPercAndAverageAreNumbers } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
     describe('returnTabName', () => {
@@ -32,30 +32,91 @@ describe('#StatsHelper Tests', () => {
     describe('checkWinPercAndAverageAreNumbers', () => {
         it('should verify win percentage and average are numbers and set defaults if not', () => {
             const stats = {
-                winPerc: 'NaN',
-                average: 'NaN',
-                singlesWinPerc: 'NaN',
-                singlesAverage: 'NaN',
-                pairsWinPerc: 'NaN',
-                pairsAverage: 'NaN',
-                homeWinPerc: 'NAN',
-                homeAverage: 'NAN',
-                awayWinPerc: 'NAN',
-                awayAverage: 'NAN',
-                cupAverage: 'NAN',
-                cupWinPerc: 'NAN',
-                singlesHomeWinPerc: 'NAN',
-                singlesHomeAverage: 'NAN',
-                singlesAwayWinPerc: 'NAN',
-                singlesAwayAverage: 'NAN',
-                singlesCupWinPerc: 'NAN',
-                singlesCupAverage: 'NAN',
-                pairsHomeWinPerc: 'NAN',
-                pairsHomeAverage: 'NAN',
-                pairsAwayWinPerc: 'NAN',
-                pairsAwayAverage: 'NAN',
-                pairsCupWinPerc: 'NAN',
-                pairsCupAverage: 'NAN',
+                player: 'string',
+
+                games: NaN,
+                wins: NaN,
+                winPerc: NaN,
+                average: NaN,
+                agg: NaN,
+                aggAgainst: NaN,
+
+                singlesGames: NaN,
+                singlesWins: NaN,
+                singlesWinPerc: NaN,
+                singlesAverage: NaN,
+                singlesAgg: NaN,
+                singlesAggAgainst: NaN,
+
+                pairsGames: NaN,
+                pairsWins: NaN,
+                pairsWinPerc: NaN,
+                pairsAverage: NaN,
+                pairsAgg: NaN,
+                pairsAggAgainst: NaN,
+
+                homeGames: NaN,
+                homeWins: NaN,
+                homeWinPerc: NaN,
+                homeAverage: NaN,
+                homeAgg: NaN,
+                homeAggAgainst: NaN,
+
+                singlesHomeGames: NaN,
+                singlesHomeWins: NaN,
+                singlesHomeWinPerc: NaN,
+                singlesHomeAverage: NaN,
+                singlesHomeAgg: NaN,
+                singlesHomeAggAgainst: NaN,
+
+                pairsHomeGames: NaN,
+                pairsHomeWins: NaN,
+                pairsHomeWinPerc: NaN,
+                pairsHomeAverage: NaN,
+                pairsHomeAgg: NaN,
+                pairsHomeAggAgainst: NaN,
+
+                awayGames: NaN,
+                awayWins: NaN,
+                awayWinPerc: NaN,
+                awayAverage: NaN,
+                awayAgg: NaN,
+                awayAggAgainst: NaN,
+
+                singlesAwayGames: NaN,
+                singlesAwayWins: NaN,
+                singlesAwayWinPerc: NaN,
+                singlesAwayAverage: NaN,
+                singlesAwayAgg: NaN,
+                singlesAwayAggAgainst: NaN,
+
+                pairsAwayGames: NaN,
+                pairsAwayWins: NaN,
+                pairsAwayWinPerc: NaN,
+                pairsAwayAverage: NaN,
+                pairsAwayAgg: NaN,
+                pairsAwayAggAgainst: NaN,
+
+                cupGames: NaN,
+                cupWins: NaN,
+                cupWinPerc: NaN,
+                cupAverage: NaN,
+                cupAgg: NaN,
+                cupAggAgainst: NaN,
+
+                singlesCupGames: NaN,
+                singlesCupWins: NaN,
+                singlesCupWinPerc: NaN,
+                singlesCupAverage: NaN,
+                singlesCupAgg: NaN,
+                singlesCupAggAgainst: NaN,
+
+                pairsCupGames: NaN,
+                pairsCupWins: NaN,
+                pairsCupWinPerc: NaN,
+                pairsCupAverage: NaN,
+                pairsCupAgg: NaN,
+                pairsCupAggAgainst: NaN,
             };
 
             const expectedResult = {
@@ -85,8 +146,8 @@ describe('#StatsHelper Tests', () => {
                 pairsCupAverage: -99,
             };
 
-            const result = checkWinPercAndAverageAreNumbers(stats);
-            expect(result).to.deep.equal(expectedResult);
+            const result = checkAllWinPercAndAverageAreNumbers(stats);
+            expect(result).to.deep.contain(expectedResult);
         });
     });
 });

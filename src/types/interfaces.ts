@@ -132,85 +132,85 @@ export interface PlayerStatsSummary {
 
     games: number;
     wins: number;
-    winPerc: number | null;
-    average: number | null;
+    winPerc: number;
+    average: number;
     agg: number;
     aggAgainst: number;
 
     singlesGames: number;
     singlesWins: number;
-    singlesWinPerc: number | null;
-    singlesAverage: number | null;
+    singlesWinPerc: number;
+    singlesAverage: number;
     singlesAgg: number;
     singlesAggAgainst: number;
 
     pairsGames: number;
     pairsWins: number;
-    pairsWinPerc: number | null;
-    pairsAverage: number | null;
+    pairsWinPerc: number;
+    pairsAverage: number;
     pairsAgg: number;
     pairsAggAgainst: number;
 
     homeGames: number;
     homeWins: number;
-    homeWinPerc: number | null;
-    homeAverage: number | null;
+    homeWinPerc: number;
+    homeAverage: number;
     homeAgg: number;
     homeAggAgainst: number;
 
     singlesHomeGames: number;
     singlesHomeWins: number;
-    singlesHomeWinPerc: number | null;
-    singlesHomeAverage: number | null;
+    singlesHomeWinPerc: number;
+    singlesHomeAverage: number;
     singlesHomeAgg: number;
     singlesHomeAggAgainst: number;
 
     pairsHomeGames: number;
     pairsHomeWins: number;
-    pairsHomeWinPerc: number | null;
-    pairsHomeAverage: number | null;
+    pairsHomeWinPerc: number;
+    pairsHomeAverage: number;
     pairsHomeAgg: number;
     pairsHomeAggAgainst: number;
 
     awayGames: number;
     awayWins: number;
-    awayWinPerc: number | null;
-    awayAverage: number | null;
+    awayWinPerc: number;
+    awayAverage: number;
     awayAgg: number;
     awayAggAgainst: number;
 
     singlesAwayGames: number;
     singlesAwayWins: number;
-    singlesAwayWinPerc: number | null;
-    singlesAwayAverage: number | null;
+    singlesAwayWinPerc: number;
+    singlesAwayAverage: number;
     singlesAwayAgg: number;
     singlesAwayAggAgainst: number;
 
     pairsAwayGames: number;
     pairsAwayWins: number;
-    pairsAwayWinPerc: number | null;
-    pairsAwayAverage: number | null;
+    pairsAwayWinPerc: number;
+    pairsAwayAverage: number;
     pairsAwayAgg: number;
     pairsAwayAggAgainst: number;
 
     cupGames: number;
     cupWins: number;
-    cupWinPerc: number | null;
-    cupAverage: number | null;
+    cupWinPerc: number;
+    cupAverage: number;
     cupAgg: number;
     cupAggAgainst: number;
 
     singlesCupGames: number;
     singlesCupWins: number;
-    singlesCupWinPerc: number | null;
-    singlesCupAverage: number | null;
+    singlesCupWinPerc: number;
+    singlesCupAverage: number;
     singlesCupAgg: number;
     singlesCupAggAgainst: number;
 
     pairsCupGames: number;
     pairsCupWins: number;
-    pairsCupWinPerc: number | null;
-    pairsCupAverage: number | null;
+    pairsCupWinPerc: number;
+    pairsCupAverage: number;
     pairsCupAgg: number;
     pairsCupAggAgainst: number;
 }

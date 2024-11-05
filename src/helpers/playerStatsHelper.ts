@@ -3,7 +3,7 @@ import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
-import { checkWinPercAndAverageAreNumbers } from './statsHelper';
+import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function findBiggestWin(playerResults: string[]): string {
     let bestWin = '';
@@ -293,6 +293,7 @@ export function returnPlayerStatSummary(
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
+            // TODO could setting to -99 cause issues?
             let stats: PlayerStatsSummary = {
                 // Total
                 player,
@@ -300,100 +301,100 @@ export function returnPlayerStatSummary(
                 wins: playerStats.totalWins,
                 agg: playerStats.totalAgg,
                 aggAgainst: playerStats.totalAggAgainst,
-                average: null,
-                winPerc: null,
+                average: -99,
+                winPerc: -99,
 
                 // Singles
                 singlesGames: playerStats.singlesGames,
                 singlesWins: playerStats.singlesWins,
                 singlesAgg: playerStats.singlesAgg,
                 singlesAggAgainst: playerStats.singlesAggAgainst,
-                singlesAverage: null,
-                singlesWinPerc: null,
+                singlesAverage: -99,
+                singlesWinPerc: -99,
 
                 // Pairs
                 pairsGames: playerStats.pairsGames,
                 pairsWins: playerStats.pairWins,
                 pairsAgg: playerStats.totalPairsAgg,
                 pairsAggAgainst: playerStats.totalPairsAggAgainst,
-                pairsAverage: null,
-                pairsWinPerc: null,
+                pairsAverage: -99,
+                pairsWinPerc: -99,
 
                 // Home
                 homeGames: playerStats.homeGamesPlayed,
                 homeWins: playerStats.homeWins,
                 homeAgg: playerStats.totalHomeAgg,
                 homeAggAgainst: playerStats.totalHomeAggAgainst,
-                homeAverage: null,
-                homeWinPerc: null,
+                homeAverage: -99,
+                homeWinPerc: -99,
 
                 // Singles Home
                 singlesHomeGames: playerStats.singlesHomeGamesPlayed,
                 singlesHomeWins: playerStats.singlesHomeWins,
                 singlesHomeAgg: playerStats.totalSinglesHomeAgg,
                 singlesHomeAggAgainst: playerStats.totalSinglesHomeAggAgainst,
-                singlesHomeAverage: null,
-                singlesHomeWinPerc: null,
+                singlesHomeAverage: -99,
+                singlesHomeWinPerc: -99,
 
                 // Pairs Home
                 pairsHomeGames: playerStats.pairHomeGamesPlayed,
                 pairsHomeWins: playerStats.pairHomeWins,
                 pairsHomeAgg: playerStats.totalPairsHomeAgg,
                 pairsHomeAggAgainst: playerStats.totalPairsHomeAggAgainst,
-                pairsHomeAverage: null,
-                pairsHomeWinPerc: null,
+                pairsHomeAverage: -99,
+                pairsHomeWinPerc: -99,
 
                 // Away
                 awayGames: playerStats.awayGamesPlayed,
                 awayWins: playerStats.awayWins,
                 awayAgg: playerStats.totalAwayAgg,
                 awayAggAgainst: playerStats.totalAwayAggAgainst,
-                awayAverage: null,
-                awayWinPerc: null,
+                awayAverage: -99,
+                awayWinPerc: -99,
 
                 // Singles Away
                 singlesAwayGames: playerStats.singlesAwayGamesPlayed,
                 singlesAwayWins: playerStats.singlesAwayWins,
                 singlesAwayAgg: playerStats.totalSinglesAwayAgg,
                 singlesAwayAggAgainst: playerStats.totalSinglesAwayAggAgainst,
-                singlesAwayAverage: null,
-                singlesAwayWinPerc: null,
+                singlesAwayAverage: -99,
+                singlesAwayWinPerc: -99,
 
                 // Pairs Away
                 pairsAwayGames: playerStats.pairAwayGamesPlayed,
                 pairsAwayWins: playerStats.pairAwayWins,
                 pairsAwayAgg: playerStats.totalPairsAwayAgg,
                 pairsAwayAggAgainst: playerStats.totalPairsAwayAggAgainst,
-                pairsAwayAverage: null,
-                pairsAwayWinPerc: null,
+                pairsAwayAverage: -99,
+                pairsAwayWinPerc: -99,
 
                 // Cup
                 cupGames: playerStats.cupGamesPlayed,
                 cupWins: playerStats.cupWins,
                 cupAgg: playerStats.cupAgg,
                 cupAggAgainst: playerStats.cupAggAgainst,
-                cupAverage: null,
-                cupWinPerc: null,
+                cupAverage: -99,
+                cupWinPerc: -99,
 
                 // Singles Cup
                 singlesCupGames: playerStats.singlesCupGamesPlayed,
                 singlesCupWins: playerStats.singlesCupWins,
                 singlesCupAgg: playerStats.totalSinglesCupAgg,
                 singlesCupAggAgainst: playerStats.totalSinglesCupAggAgainst,
-                singlesCupAverage: null,
-                singlesCupWinPerc: null,
+                singlesCupAverage: -99,
+                singlesCupWinPerc: -99,
 
                 // Pairs Cup
                 pairsCupGames: playerStats.pairCupGamesPlayed,
                 pairsCupWins: playerStats.pairCupWins,
                 pairsCupAgg: playerStats.totalPairsCupAgg,
                 pairsCupAggAgainst: playerStats.totalPairsCupAggAgainst,
-                pairsCupAverage: null,
-                pairsCupWinPerc: null,
+                pairsCupAverage: -99,
+                pairsCupWinPerc: -99,
             };
 
             stats = calculateWinPercAndAverage(stats);
-            stats = checkWinPercAndAverageAreNumbers(stats);
+            stats = checkAllWinPercAndAverageAreNumbers(stats);
 
             statsArray.push(stats);
         }
