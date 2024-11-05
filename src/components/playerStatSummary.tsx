@@ -402,86 +402,84 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
     if (filteredPlayerStats) {
         return (
-            <div id="player-stats-per-team">
-                <div className="center table">
-                    <Table striped bordered hover>
-                        <thead>
-                            <tr>
-                                <th>
-                                    <Button
-                                        id="order-by-name%-button"
-                                        variant="light"
-                                        onClick={orderByName}
-                                        style={{
-                                            backgroundColor: 'white',
-                                            border: 'none',
-                                            padding: '0',
-                                        }}
-                                    >
-                                        PLAYER
-                                    </Button>
-                                </th>
-                                <th>
-                                    <Button
-                                        id="order-by-win%-button"
-                                        variant="light"
-                                        onClick={orderByGames}
-                                        style={{
-                                            backgroundColor: 'white',
-                                            border: 'none',
-                                            padding: '0',
-                                        }}
-                                    >
-                                        GAMES
-                                    </Button>
-                                </th>
-                                <th>
-                                    <Button
-                                        id="order-by-wins-button"
-                                        variant="light"
-                                        onClick={orderByWins}
-                                        style={{
-                                            backgroundColor: 'white',
-                                            border: 'none',
-                                            padding: '0',
-                                        }}
-                                    >
-                                        WINS
-                                    </Button>
-                                </th>
-                                <th>
-                                    <Button
-                                        id="order-by-win%-button"
-                                        variant="light"
-                                        onClick={orderByWinPerc}
-                                        style={{
-                                            backgroundColor: 'white',
-                                            border: 'none',
-                                            padding: '0',
-                                        }}
-                                    >
-                                        WIN %
-                                    </Button>
-                                </th>
-                                <th>
-                                    <Button
-                                        id="order-by-win%-button"
-                                        variant="light"
-                                        onClick={orderByAverage}
-                                        style={{
-                                            backgroundColor: 'white',
-                                            border: 'none',
-                                            padding: '0',
-                                        }}
-                                    >
-                                        AVERAGE
-                                    </Button>
-                                </th>
-                            </tr>
-                        </thead>
-                        {displayPlayers()}
-                    </Table>
-                </div>
+            <div id="player-stats-per-team" className="center table">
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th>
+                                <Button
+                                    id="order-by-name%-button"
+                                    variant="light"
+                                    onClick={orderByName}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        border: 'none',
+                                        padding: '0',
+                                    }}
+                                >
+                                    PLAYER
+                                </Button>
+                            </th>
+                            <th>
+                                <Button
+                                    id="order-by-win%-button"
+                                    variant="light"
+                                    onClick={orderByGames}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        border: 'none',
+                                        padding: '0',
+                                    }}
+                                >
+                                    GAMES
+                                </Button>
+                            </th>
+                            <th>
+                                <Button
+                                    id="order-by-wins-button"
+                                    variant="light"
+                                    onClick={orderByWins}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        border: 'none',
+                                        padding: '0',
+                                    }}
+                                >
+                                    WINS
+                                </Button>
+                            </th>
+                            <th>
+                                <Button
+                                    id="order-by-win%-button"
+                                    variant="light"
+                                    onClick={orderByWinPerc}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        border: 'none',
+                                        padding: '0',
+                                    }}
+                                >
+                                    WIN %
+                                </Button>
+                            </th>
+                            <th>
+                                <Button
+                                    id="order-by-win%-button"
+                                    variant="light"
+                                    onClick={orderByAverage}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        border: 'none',
+                                        padding: '0',
+                                    }}
+                                >
+                                    AVERAGE
+                                </Button>
+                            </th>
+                        </tr>
+                    </thead>
+                    {displayPlayers()}
+                </Table>
             </div>
         );
     } else {
