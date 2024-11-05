@@ -114,8 +114,6 @@ export function returnPlayerStatSummaryForAllYears(
             pairsCupAggAgainst: 0,
         };
 
-        // TODO could I call returnPlayerStatSummary from this?
-
         statsArray.forEach((yearStats) => {
             const playerStats = returnPlayerStats(
                 yearStats.playerResults,

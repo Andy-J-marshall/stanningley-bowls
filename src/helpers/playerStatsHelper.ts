@@ -202,7 +202,6 @@ export function returnPlayerStats(
     const pairsCupAverage =
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
-    // TODO also calculate averages and win % here instead?
     return {
         totalAgg,
         totalAggAgainst,
