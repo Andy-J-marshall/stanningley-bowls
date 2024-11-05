@@ -1,3 +1,8 @@
+import {
+    PlayerStatsSummary,
+    PlayerStatsTeamSummary,
+} from '../types/interfaces';
+
 export function returnTabName(teamName: string) {
     let displayName = teamName.substring(0, 3).toUpperCase();
     if (teamName.toLowerCase().includes(' vets')) {
@@ -10,6 +15,12 @@ export function returnTabName(teamName: string) {
         displayName += ' (PAIRS)';
     }
     return displayName;
+}
+
+export function isPlayerStatsSummaryType(
+    stats: PlayerStatsSummary | PlayerStatsTeamSummary
+): stats is PlayerStatsSummary {
+    return (stats as PlayerStatsSummary).agg !== undefined;
 }
 
 // TODO change type to PlayerStatsSummary

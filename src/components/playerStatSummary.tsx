@@ -1,11 +1,8 @@
 import { CSSProperties, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import {
-    PlayerStatsSummary,
-    PlayerStatsTeamSummary,
-    PlayerStatSummaryProps,
-} from '../types/interfaces';
+import { PlayerStatSummaryProps } from '../types/interfaces';
+import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     let playerStats = props.playerStats;
@@ -28,12 +25,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const filteredPlayerStats = playerStats.filter(
         (player) => player.games > 0
     );
-
-    function isPlayerStatsSummaryType(
-        stats: PlayerStatsSummary | PlayerStatsTeamSummary
-    ): stats is PlayerStatsSummary {
-        return (stats as PlayerStatsSummary).agg !== undefined;
-    }
 
     if (displayPlayerStatsCallback) {
         style = {
