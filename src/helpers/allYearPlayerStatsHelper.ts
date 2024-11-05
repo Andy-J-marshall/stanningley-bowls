@@ -26,7 +26,7 @@ export function returnPlayerStatSummaryForAllYears(
     }
 
     playerNames.sort().forEach((player) => {
-        let stats = {
+        let stats: PlayerStatsSummary = {
             player,
 
             games: 0,

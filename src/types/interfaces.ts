@@ -119,72 +119,104 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
+export interface PlayerStatsTeamSummary {
+    player: string;
+    games: number;
+    wins: number;
+    winPerc: number;
+    average: number;
+}
+
 export interface PlayerStatsSummary {
     player: string;
 
     games: number;
     wins: number;
-    winPerc?: number;
-    average?: number | undefined;
+    winPerc: number | null;
+    average: number | null;
+    agg: number;
+    aggAgainst: number;
 
-    singlesGames?: number;
-    singlesWins?: number;
-    singlesWinPerc?: number;
-    singlesAverage?: number;
+    singlesGames: number;
+    singlesWins: number;
+    singlesWinPerc: number | null;
+    singlesAverage: number | null;
+    singlesAgg: number;
+    singlesAggAgainst: number;
 
-    pairsGames?: number;
-    pairsWins?: number;
-    pairsWinPerc?: number;
-    pairsAverage?: number;
+    pairsGames: number;
+    pairsWins: number;
+    pairsWinPerc: number | null;
+    pairsAverage: number | null;
+    pairsAgg: number;
+    pairsAggAgainst: number;
 
-    homeGames?: number;
-    homeWins?: number;
-    homeWinPerc?: number;
-    homeAverage?: number;
+    homeGames: number;
+    homeWins: number;
+    homeWinPerc: number | null;
+    homeAverage: number | null;
+    homeAgg: number;
+    homeAggAgainst: number;
 
-    singlesHomeGames?: number;
-    singlesHomeWins?: number;
-    singlesHomeWinPerc?: number;
-    singlesHomeAverage?: number;
+    singlesHomeGames: number;
+    singlesHomeWins: number;
+    singlesHomeWinPerc: number | null;
+    singlesHomeAverage: number | null;
+    singlesHomeAgg: number;
+    singlesHomeAggAgainst: number;
 
-    pairsHomeGames?: number;
-    pairsHomeWins?: number;
-    pairsHomeWinPerc?: number;
-    pairsHomeAverage?: number;
+    pairsHomeGames: number;
+    pairsHomeWins: number;
+    pairsHomeWinPerc: number | null;
+    pairsHomeAverage: number | null;
+    pairsHomeAgg: number;
+    pairsHomeAggAgainst: number;
 
-    awayGames?: number;
-    awayWins?: number;
-    awayWinPerc?: number;
-    awayAverage?: number;
+    awayGames: number;
+    awayWins: number;
+    awayWinPerc: number | null;
+    awayAverage: number | null;
+    awayAgg: number;
+    awayAggAgainst: number;
 
-    singlesAwayGames?: number;
-    singlesAwayWins?: number;
-    singlesAwayWinPerc?: number;
-    singlesAwayAverage?: number;
+    singlesAwayGames: number;
+    singlesAwayWins: number;
+    singlesAwayWinPerc: number | null;
+    singlesAwayAverage: number | null;
+    singlesAwayAgg: number;
+    singlesAwayAggAgainst: number;
 
-    pairsAwayGames?: number;
-    pairsAwayWins?: number;
-    pairsAwayWinPerc?: number;
-    pairsAwayAverage?: number;
+    pairsAwayGames: number;
+    pairsAwayWins: number;
+    pairsAwayWinPerc: number | null;
+    pairsAwayAverage: number | null;
+    pairsAwayAgg: number;
+    pairsAwayAggAgainst: number;
 
-    cupGames?: number;
-    cupWins?: number;
-    cupWinPerc?: number;
-    cupAverage?: number;
+    cupGames: number;
+    cupWins: number;
+    cupWinPerc: number | null;
+    cupAverage: number | null;
+    cupAgg: number;
+    cupAggAgainst: number;
 
-    singlesCupGames?: number;
-    singlesCupWins?: number;
-    singlesCupWinPerc?: number;
-    singlesCupAverage?: number;
+    singlesCupGames: number;
+    singlesCupWins: number;
+    singlesCupWinPerc: number | null;
+    singlesCupAverage: number | null;
+    singlesCupAgg: number;
+    singlesCupAggAgainst: number;
 
-    pairsCupGames?: number;
-    pairsCupWins?: number;
-    pairsCupWinPerc?: number;
-    pairsCupAverage?: number;
+    pairsCupGames: number;
+    pairsCupWins: number;
+    pairsCupWinPerc: number | null;
+    pairsCupAverage: number | null;
+    pairsCupAgg: number;
+    pairsCupAggAgainst: number;
 }
 
 export interface PlayerStatSummaryProps {
-    playerStats: PlayerStatsSummary[];
+    playerStats: PlayerStatsSummary[] | PlayerStatsTeamSummary[];
     callback?: (playerName: string) => void;
     showSinglesOnly?: boolean;
     showPairsOnly?: boolean;
