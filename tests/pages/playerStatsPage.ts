@@ -30,6 +30,10 @@ export class PlayerStatsPage {
     private readonly singlesOnlyRadio: Locator;
     private readonly pairsOnlyRadio: Locator;
     private readonly allGameTypesRadio: Locator;
+    private readonly homeOnlyRadio: Locator;
+    private readonly awayOnlyRadio: Locator;
+    private readonly cupOnlyRadio: Locator;
+    private readonly allVenuesRadio: Locator;
     private readonly totalPlayerCount: Locator;
 
     private games: Locator;
@@ -73,6 +77,18 @@ export class PlayerStatsPage {
         );
         this.allYearCheckBox = page.locator(
             ".form-check input[id='#all-years-select-checkbox']"
+        );
+        this.homeOnlyRadio = page.locator(
+            ".form-check input[id='#only-home-radio']"
+        );
+        this.awayOnlyRadio = page.locator(
+            ".form-check input[id='#only-away-radio']"
+        );
+        this.cupOnlyRadio = page.locator(
+            ".form-check input[id='#only-cup-radio']"
+        );
+        this.allVenuesRadio = page.locator(
+            ".form-check input[id='#all-venues-radio']"
         );
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
@@ -151,6 +167,22 @@ export class PlayerStatsPage {
 
     async selectAllGameTypesRadio() {
         await this.allGameTypesRadio.check();
+    }
+
+    async selectHomeOnlyRadio() {
+        await this.homeOnlyRadio.check();
+    }
+
+    async selectAwayOnlyRadio() {
+        await this.awayOnlyRadio.check();
+    }
+
+    async selectCupOnlyRadio() {
+        await this.cupOnlyRadio.check();
+    }
+
+    async selectAllVenuesRadio() {
+        await this.allVenuesRadio.check();
     }
 
     async selectSince2013Checkbox() {

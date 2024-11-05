@@ -61,17 +61,52 @@ test('Summary of Steve Gardner stats for team are correct', async () => {
     playerStatsPage.playerStatsAreCorrectInTable(43, 35, '81%', 7.86);
 });
 
-test('Summary of Andy Marshall stats for singles games for team are correct', async () => {
+test('Summary of Andy Marshall stats for team with filters are correct', async () => {
     playerStatsPage.setPlayerToFind('andy marshall');
 
     await yearSelectPage.select2023Year();
+
+    // All venues
     playerStatsPage.playerStatsAreCorrectInTable(51, 40, '78%', 5.49);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(36, 30, '83%', 5.81);
 
     await playerStatsPage.selectPairsOnlyRadio();
     playerStatsPage.playerStatsAreCorrectInTable(15, 10, '67%', 4.73);
 
+    // Home only
+    await playerStatsPage.selectHomeOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(24, 21, '88%', 7.96);
+
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(36, 30, '83%', 5.81);
+    playerStatsPage.playerStatsAreCorrectInTable(16, 14, '88%', 7.94);
+
+    await playerStatsPage.selectPairsOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(8, 7, '88%', 8.0);
+
+    // Away only
+    await playerStatsPage.selectAwayOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(20, 14, '70%', 4.0);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(13, 11, '85%', 5.62);
+
+    await playerStatsPage.selectPairsOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(7, 3, '43%', 1.0);
+
+    // Cup only
+    await playerStatsPage.selectCupOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(7, 5, '71%', 1.29);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(7, 5, '71%', 1.29);
 });
 
 test('Summary of Dave Hudson stats since 2013 for team are correct', async () => {

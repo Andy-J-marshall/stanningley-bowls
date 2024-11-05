@@ -77,19 +77,52 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
     playerStatsPage.playerStatsAreCorrectInTable(114, 83, '73%', 5.57);
 });
 
-test('Summary of Andy Marshall stats for singles and pairs games for all teams is correct', async () => {
-    playerStatsPage.setPlayerToFind('andy marshall');
+test('Summary of Richard Hodgson stats for all teams with filters are correct', async () => {
+    playerStatsPage.setPlayerToFind('richard hodgson');
     await playerStatsPage.selectAllTeamStatsCheckbox();
     await yearSelectPage.select2023Year();
 
-    await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(37, 30, '81%', 5.57);
+    // All venues
+    playerStatsPage.playerStatsAreCorrectInTable(58, 33, '57%', 1.86);
 
-    await playerStatsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(52, 40, '77%', 5.33);
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(55, 32, '58%', 1.96);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(15, 10, '67%', 4.73);
+    playerStatsPage.playerStatsAreCorrectInTable(3, 1, '33%', 0.00);
+
+    // Home only
+    await playerStatsPage.selectHomeOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.90);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.90);
+
+    // Away only
+    await playerStatsPage.selectAwayOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(25, 11, '44%', -1.28);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(23, 11, '48%', -0.91);
+
+    await playerStatsPage.selectPairsOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(2, 0, '0%', -5.5);
+
+    // Cup only
+    await playerStatsPage.selectCupOnlyRadio();
+
+    await playerStatsPage.selectAllGameTypesRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.50);
+
+    await playerStatsPage.selectSinglesOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 8.00);
+
+    await playerStatsPage.selectPairsOnlyRadio();
+    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 11.00);
 });
 
 test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
