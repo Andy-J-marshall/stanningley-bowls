@@ -125,7 +125,7 @@ export interface PlayerStatsSummary {
     games: number;
     wins: number;
     winPerc?: number;
-    average: number | undefined;
+    average?: number | undefined;
 
     singlesGames?: number;
     singlesWins?: number;

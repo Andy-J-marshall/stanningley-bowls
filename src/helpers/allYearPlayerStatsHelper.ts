@@ -201,6 +201,7 @@ export function returnPlayerStatSummaryForAllYears(
             }
         });
 
+        // TODO refactor this to do the singles calculations in the other method?
         // Win percentages
         stats.winPerc = (stats.wins / stats.games) * 100;
         stats.singlesWinPerc = (stats.singlesWins / stats.singlesGames) * 100;
