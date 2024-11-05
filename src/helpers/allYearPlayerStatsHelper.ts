@@ -4,7 +4,10 @@ import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
-import { returnPlayerStats } from './playerStatsHelper';
+import {
+    calculateWinPercAndAverage,
+    returnPlayerStats,
+} from './playerStatsHelper';
 import { checkWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
@@ -201,58 +204,7 @@ export function returnPlayerStatSummaryForAllYears(
             }
         });
 
-        // TODO refactor this to do the singles calculations in the other method?
-        // Win percentages
-        stats.winPerc = (stats.wins / stats.games) * 100;
-        stats.singlesWinPerc = (stats.singlesWins / stats.singlesGames) * 100;
-        stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100;
-        stats.homeWinPerc = (stats.homeWins / stats.homeGames) * 100;
-        stats.singlesHomeWinPerc =
-            (stats.singlesHomeWins / stats.singlesHomeGames) * 100;
-        stats.pairsHomeWinPerc =
-            (stats.pairsHomeWins / stats.pairsHomeGames) * 100;
-        stats.awayWinPerc = (stats.awayWins / stats.awayGames) * 100;
-        stats.singlesAwayWinPerc =
-            (stats.singlesAwayWins / stats.singlesAwayGames) * 100;
-        stats.pairsAwayWinPerc =
-            (stats.pairsAwayWins / stats.pairsAwayGames) * 100;
-        stats.cupWinPerc = (stats.cupWins / stats.cupGames) * 100;
-        stats.singlesCupWinPerc =
-            (stats.singlesCupWins / stats.singlesCupGames) * 100;
-        stats.pairsCupWinPerc =
-            (stats.pairsCupWins / stats.pairsCupGames) * 100;
-
-        // Averages
-        stats.average = (stats.agg - stats.aggAgainst) / stats.games;
-        stats.singlesAverage =
-            (stats.singlesAgg - stats.singlesAggAgainst) / stats.singlesGames;
-        stats.pairsAverage =
-            (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
-        stats.homeAverage =
-            (stats.homeAgg - stats.homeAggAgainst) / stats.homeGames;
-        stats.singlesHomeAverage =
-            (stats.singlesHomeAgg - stats.singlesHomeAggAgainst) /
-            stats.singlesHomeGames;
-        stats.pairsHomeAverage =
-            (stats.pairsHomeAgg - stats.pairsHomeAggAgainst) /
-            stats.pairsHomeGames;
-        stats.awayAverage =
-            (stats.awayAgg - stats.awayAggAgainst) / stats.awayGames;
-        stats.singlesAwayAverage =
-            (stats.singlesAwayAgg - stats.singlesAwayAggAgainst) /
-            stats.singlesAwayGames;
-        stats.pairsAwayAverage =
-            (stats.pairsAwayAgg - stats.pairsAwayAggAgainst) /
-            stats.pairsAwayGames;
-        stats.cupAverage =
-            (stats.cupAgg - stats.cupAggAgainst) / stats.cupGames;
-        stats.singlesCupAverage =
-            (stats.singlesCupAgg - stats.singlesCupAggAgainst) /
-            stats.singlesCupGames;
-        stats.pairsCupAverage =
-            (stats.pairsCupAgg - stats.pairsCupAggAgainst) /
-            stats.pairsCupGames;
-
+        stats = calculateWinPercAndAverage(stats);
         stats = checkWinPercAndAverageAreNumbers(stats);
 
         statsToDisplayArray.push(stats);
