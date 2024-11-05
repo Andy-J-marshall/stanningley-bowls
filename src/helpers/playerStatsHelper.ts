@@ -197,6 +197,9 @@ export function returnPlayerStats(
     const pairsCupAverage =
         (pairsCupAgg - pairsCupAggAgainst) / pairCupGamesPlayed;
 
+
+        // TODO here: singlesHomeWins, singlesWins, singlesAwayWins, singlesCupWins
+        // TODO also calculate averages and win % here instead
     return {
         totalAgg,
         totalAggAgainst,
