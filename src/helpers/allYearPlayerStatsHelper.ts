@@ -147,8 +147,6 @@ export function returnPlayerStatSummaryForAllYears(
                 stats.homeAgg += playerStats.totalHomeAgg;
                 stats.homeAggAgainst += playerStats.totalHomeAggAgainst;
 
-                // TODO refactor this to do the singles calculations in the other method?
-
                 // Singles Home
                 stats.singlesHomeGames += playerStats.singlesHomeGamesPlayed;
                 stats.singlesHomeWins += playerStats.singlesHomeWins;
