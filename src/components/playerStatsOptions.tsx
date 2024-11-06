@@ -130,7 +130,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>FILTERS</Accordion.Header>
                         <Accordion.Body>
-                            <Form style={{ display: 'inline-block' }}>
+                            {/* TODO remove */}
+                            {/* <Form style={{ display: 'inline-block' }}> */}
+                            <Form>
                                 <Form.Group
                                     className="mb-2"
                                     controlId="searchOptions"
@@ -140,7 +142,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     {/* box-sizing: border-box; Mabe this too? */}
                                     {/* TODO try .form-check padding */}
                                     <Row className="g-4 align-items-start">
-                                        <Col xs={6}>
+                                        <Col xs={12} sm={6} lg={3}>
                                             <h6>TEAMS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
@@ -151,7 +153,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 checked={allTeamsToggle}
                                             />
                                         </Col>
-                                        <Col xs={6}>
+                                        <Col xs={12} sm={6} lg={3}>
                                             <h6>YEARS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
@@ -162,7 +164,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 checked={allYearToggle}
                                             />
                                         </Col>
-                                        <Col xs={6}>
+                                        <Col xs={12} sm={6} lg={3}>
                                             <h6>GAME TYPES</h6>
                                             <InputGroup>
                                                 <Form.Check
@@ -198,7 +200,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 />
                                             </InputGroup>
                                         </Col>
-                                        <Col xs={6}>
+                                        <Col xs={12} sm={6} lg={3}>
                                             <h6>VENUE</h6>
                                             <InputGroup>
                                                 <Form.Check
