@@ -103,54 +103,6 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     }
 
-    function onlySinglesCallback(showSinglesBoolean: boolean) {
-        if (showSinglesBoolean) {
-            setShowSinglesOnlyBool(true);
-        } else {
-            setShowSinglesOnlyBool(false);
-        }
-    }
-
-    function onlyPairsCallback(showPairsBoolean: boolean) {
-        if (showPairsBoolean) {
-            setShowPairsOnlyBool(true);
-        } else {
-            setShowPairsOnlyBool(false);
-        }
-    }
-
-    function allYearStatsCallback(showAllBoolean: boolean) {
-        if (showAllBoolean) {
-            setShowStatsSinceStart(true);
-        } else {
-            setShowStatsSinceStart(false);
-        }
-    }
-
-    function homeOnlyCallback(showHomeBoolean: boolean) {
-        if (showHomeBoolean) {
-            setShowHomeOnlyBool(true);
-        } else {
-            setShowHomeOnlyBool(false);
-        }
-    }
-
-    function awayOnlyCallback(showAwayBoolean: boolean) {
-        if (showAwayBoolean) {
-            setShowAwayOnlyBool(true);
-        } else {
-            setShowAwayOnlyBool(false);
-        }
-    }
-
-    function cupOnlyCallback(showCupBoolean: boolean) {
-        if (showCupBoolean) {
-            setShowCupOnlyBool(true);
-        } else {
-            setShowCupOnlyBool(false);
-        }
-    }
-
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -270,12 +222,12 @@ function PlayerStats(props: PlayerStatsProps) {
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={allYearStatsCallback}
-                onlySinglesCallback={onlySinglesCallback}
-                onlyPairsCallback={onlyPairsCallback}
-                onlyHomeCallback={homeOnlyCallback}
-                onlyAwayCallback={awayOnlyCallback}
-                onlyCupCallback={cupOnlyCallback}
+                allYearStatsCallback={setShowStatsSinceStart}
+                onlySinglesCallback={setShowSinglesOnlyBool}
+                onlyPairsCallback={setShowPairsOnlyBool}
+                onlyHomeCallback={setShowHomeOnlyBool}
+                onlyAwayCallback={setShowAwayOnlyBool}
+                onlyCupCallback={setShowCupOnlyBool}
                 playerSearchedFor={searchedPlayerName}
             />
             <br />
