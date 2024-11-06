@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Form, InputGroup, Row, Col, Accordion } from 'react-bootstrap';
 import { PlayerStatsOptionsProps } from '../types/interfaces';
 
@@ -12,7 +12,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const onlyCupCallback = props.onlyCupCallback;
     const playerSearchedFor = props.playerSearchedFor;
 
-    const [key, setKey] = useState(playerSearchedFor);
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
@@ -23,11 +22,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
 
-    useEffect(() => {
-        if (playerSearchedFor !== key) {
-            setKey(playerSearchedFor);
-        }
-    });
     function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
@@ -149,7 +143,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         <Col xs={6}>
                                             <h6>TEAMS</h6>
                                             <Form.Check
-                                                key={key}
+                                                key={crypto.randomUUID()}
                                                 id="#all-stats-select-checkbox"
                                                 onChange={toggleAllTeamStats}
                                                 type="checkbox"
@@ -160,7 +154,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         <Col xs={6}>
                                             <h6>YEARS</h6>
                                             <Form.Check
-                                                key={key}
+                                                key={crypto.randomUUID()}
                                                 id="#all-years-select-checkbox"
                                                 onChange={toggleAllYearStats}
                                                 type="checkbox"
@@ -172,7 +166,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>GAME TYPES</h6>
                                             <InputGroup>
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#all-matches-radio"
                                                     onChange={toggleAllMatches}
                                                     name="gameTypeOptions"
@@ -181,7 +175,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={allGameTypesToggle}
                                                 />
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#only-singles-radio"
                                                     onChange={
                                                         toggleSinglesOnlyMatches
@@ -192,7 +186,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={singlesOnlyToggle}
                                                 />
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#only-pairs-radio"
                                                     onChange={
                                                         togglePairsOnlyMatches
@@ -208,7 +202,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>VENUE</h6>
                                             <InputGroup>
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#all-venues-radio"
                                                     onChange={
                                                         toggleAllVenuesMatches
@@ -219,7 +213,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={allVenuesToggle}
                                                 />
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#only-home-radio"
                                                     onChange={
                                                         toggleHomeOnlyMatches
@@ -230,7 +224,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={homeOnlyToggle}
                                                 />
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#only-away-radio"
                                                     onChange={
                                                         toggleAwayOnlyMatches
@@ -241,7 +235,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={awayOnlyToggle}
                                                 />
                                                 <Form.Check
-                                                    key={key}
+                                                    key={crypto.randomUUID()}
                                                     id="#only-cup-radio"
                                                     onChange={
                                                         toggleCupOnlyMatches

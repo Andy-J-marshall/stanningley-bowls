@@ -293,11 +293,6 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             stats = orderPlayersByAverage();
         }
 
-        // TODO issue with key:
-        // index.tsx:7 Warning: Encountered two children with the same key, ``.
-        //  Keys should be unique so that components maintain their identity across updates.
-        //  Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version
-
         const statsToUse = stats?.map((player) => {
             let games = player.games;
             let average = player.average;
