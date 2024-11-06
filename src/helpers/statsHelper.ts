@@ -26,10 +26,10 @@ export function isPlayerStatsSummaryType(
 export function checkWinPercAndAverageAreNumbers(
     stats: PlayerStatsTeamSummary
 ) {
-    if (isNaN(stats.winPerc) || stats.winPerc < 0) {
+    if (isNaN(stats.winPerc)) {
         stats.winPerc = 0;
     }
-    if (isNaN(stats.average) || stats.average < -31) {
+    if (isNaN(stats.average)) {
         stats.average = -99;
     }
 
