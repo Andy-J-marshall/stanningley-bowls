@@ -147,7 +147,7 @@ export function returnPlayerStats(
         };
     });
 
-    // Pairs & singles
+    // Pairs & singles aggregates
     const singlesAgg = totalAgg - totalPairsAgg;
     const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
 
