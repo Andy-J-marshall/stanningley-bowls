@@ -293,7 +293,7 @@ export function returnPlayerStatSummary(
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
-            // TODO could setting to -99 cause issues?
+            // The averages and win percentages are set to -99 until they are calculated in at the end
             let stats: PlayerStatsSummary = {
                 // Total
                 player,
