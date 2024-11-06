@@ -4,8 +4,8 @@ import { NewsItemProps } from '../types/interfaces';
 
 function NewsItem(props: NewsItemProps) {
     const title = props.title.toUpperCase();
-    const text = props.firstParagraph;
-    const text2 = props.secondParagraph;
+    const openingLine = props.openingLine;
+    const mainText = props.mainText;
     const imgSrc = props.imgSrc;
 
     const [open, setOpen] = useState(false);
@@ -13,7 +13,6 @@ function NewsItem(props: NewsItemProps) {
     return (
         <div>
             <Col>
-            {/* TODO add a text preview to the news item */}
                 <Card bg="light">
                     <Card.Body>
                         <h4>{title}</h4>
@@ -24,6 +23,7 @@ function NewsItem(props: NewsItemProps) {
                         />
                         <br />
                         <br />
+                        <Card.Text>{openingLine}</Card.Text>
                         {!open && (
                             <Button
                                 variant="light"
@@ -33,10 +33,7 @@ function NewsItem(props: NewsItemProps) {
                             </Button>
                         )}
                         <Collapse in={open}>
-                            <div>
-                                <Card.Text>{text}</Card.Text>
-                                <Card.Text>{text2}</Card.Text>
-                            </div>
+                            <Card.Text>{mainText}</Card.Text>
                         </Collapse>
                         {open && (
                             <Button

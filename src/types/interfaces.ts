@@ -232,8 +232,8 @@ export interface WrapperProps {
 
 export type NewsItemProps = {
     title: string;
-    firstParagraph: string;
-    secondParagraph?: string;
+    openingLine: string;
+    mainText?: string;
     imgSrc: string;
 };
 
