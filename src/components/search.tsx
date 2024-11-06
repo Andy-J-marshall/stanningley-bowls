@@ -15,7 +15,11 @@ function Search(props: SearchProps) {
     const closeButtonCallback = props.closeButtonCallback;
 
     return (
-        <Form id="search-form" className="center">
+        <Form
+            id="search-form"
+            className="center"
+            style={{ paddingBottom: '0.8rem' }}
+        >
             <Form.Group className="mb-3">
                 <Typeahead
                     id="search"

@@ -211,37 +211,18 @@ function PlayerStats(props: PlayerStatsProps) {
         const statsArray = showStatsSinceStart
             ? everyYearStatsSummaryArray
             : statsSummaryArray;
-        const gamesPlayedThisYear = statsArray.find(
-            (player) => player.games > 0
-        );
-        const pairsGamesThisYear = statsArray.find(
-            (player) => player.pairsGames && player.pairsGames > 0
-        );
 
-        // TODO need to handle when no games played for selected filter e.g. pairs and cup games for 2022
-
-        if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
-            return (
-                <div>
-                    <br />
-                    <PlayerStatSummary
-                        callback={setSearchedPlayerName}
-                        playerStats={statsArray}
-                        showSinglesOnly={showSinglesOnlyBool}
-                        showPairsOnly={showPairsOnlyBool}
-                        showHomeOnly={showHomeOnlyBool}
-                        showAwayOnly={showAwayOnlyBool}
-                        showCupOnly={showCupOnlyBool}
-                    />
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <h5>No stats available for {stats.statsYear}</h5>
-                </div>
-            );
-        }
+        return (
+            <PlayerStatSummary
+                callback={setSearchedPlayerName}
+                playerStats={statsArray}
+                showSinglesOnly={showSinglesOnlyBool}
+                showPairsOnly={showPairsOnlyBool}
+                showHomeOnly={showHomeOnlyBool}
+                showAwayOnly={showAwayOnlyBool}
+                showCupOnly={showCupOnlyBool}
+            />
+        );
     }
 
     const delay = (ms: number) =>

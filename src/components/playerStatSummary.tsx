@@ -1,7 +1,10 @@
 import { CSSProperties, useState } from 'react';
 import { Button, Table } from 'react-bootstrap';
 import { capitalizeText } from '../helpers/utils';
-import { PlayerStatSummaryProps } from '../types/interfaces';
+import {
+    PlayerStatsTeamSummary,
+    PlayerStatSummaryProps,
+} from '../types/interfaces';
 import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
@@ -271,7 +274,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         return averageOrder;
     }
 
-    function displayPlayers() {
+    function findStatsToUse() {
         let stats = orderPlayersByName();
 
         if (orderByPlayerBool) {
@@ -295,75 +298,85 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         //  Keys should be unique so that components maintain their identity across updates.
         //  Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version
 
-        return stats?.map((player, key) => {
-            let gamesPlayed = player.games;
+        const statsToUse = stats?.map((player) => {
+            let games = player.games;
             let average = player.average;
             let wins = player.wins;
 
             if (isPlayerStatsSummaryType(player)) {
                 if (showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesGames;
+                    games = player.singlesGames;
                     average = player.singlesAverage;
                     wins = player.singlesWins;
                 }
                 if (showPairsOnlyBool) {
-                    gamesPlayed = player.pairsGames;
+                    games = player.pairsGames;
                     average = player.pairsAverage;
                     wins = player.pairsWins;
                 }
 
                 if (showHomeOnlyBool) {
-                    gamesPlayed = player.homeGames;
+                    games = player.homeGames;
                     average = player.homeAverage;
                     wins = player.homeWins;
                 }
                 if (showHomeOnlyBool && showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesHomeGames;
+                    games = player.singlesHomeGames;
                     average = player.singlesHomeAverage;
                     wins = player.singlesHomeWins;
                 }
                 if (showHomeOnlyBool && showPairsOnlyBool) {
-                    gamesPlayed = player.pairsHomeGames;
+                    games = player.pairsHomeGames;
                     average = player.pairsHomeAverage;
                     wins = player.pairsHomeWins;
                 }
 
                 if (showAwayOnlyBool) {
-                    gamesPlayed = player.awayGames;
+                    games = player.awayGames;
                     average = player.awayAverage;
                     wins = player.awayWins;
                 }
                 if (showAwayOnlyBool && showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesAwayGames;
+                    games = player.singlesAwayGames;
                     average = player.singlesAwayAverage;
                     wins = player.singlesAwayWins;
                 }
                 if (showAwayOnlyBool && showPairsOnlyBool) {
-                    gamesPlayed = player.pairsAwayGames;
+                    games = player.pairsAwayGames;
                     average = player.pairsAwayAverage;
                     wins = player.pairsAwayWins;
                 }
 
                 if (showCupOnlyBool) {
-                    gamesPlayed = player.cupGames;
+                    games = player.cupGames;
                     average = player.cupAverage;
                     wins = player.cupWins;
                 }
                 if (showCupOnlyBool && showSinglesOnlyBool) {
-                    gamesPlayed = player.singlesCupGames;
+                    games = player.singlesCupGames;
                     average = player.singlesCupAverage;
                     wins = player.singlesCupWins;
                 }
                 if (showCupOnlyBool && showPairsOnlyBool) {
-                    gamesPlayed = player.pairsCupGames;
+                    games = player.pairsCupGames;
                     average = player.pairsCupAverage;
                     wins = player.pairsCupWins;
                 }
             }
+            const winPerc = wins && (wins / games) * 100;
+            const playerName = player.player;
 
+            return { player: playerName, games, average, wins, winPerc };
+        });
+
+        return statsToUse;
+    }
+
+    function displayStats(statsToUse: PlayerStatsTeamSummary[]) {
+        return statsToUse.map((p, key) => {
             return (
                 <tbody key={key}>
-                    {gamesPlayed && gamesPlayed > 0 ? (
+                    {p.games && p.games > 0 ? (
                         <tr>
                             <td>
                                 <a
@@ -371,27 +384,22 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                     href={href}
                                     onClick={displayPlayer}
                                 >
-                                    {capitalizeText([player.player])}
+                                    {capitalizeText([p.player])}
                                 </a>
                             </td>
-                            <td id={`${player.player.replace(' ', '-')}-games`}>
-                                {gamesPlayed}
+                            <td id={`${p.player.replace(' ', '-')}-games`}>
+                                {p.games}
                             </td>
-                            <td id={`${player.player.replace(' ', '-')}-wins`}>
-                                {wins}
+                            <td id={`${p.player.replace(' ', '-')}-wins`}>
+                                {p.wins}
                             </td>
-                            <td
-                                id={`${player.player.replace(
-                                    ' ',
-                                    '-'
-                                )}-win-perc`}
-                            >
-                                {wins &&
-                                    ((wins / gamesPlayed) * 100).toFixed(0)}
+                            <td id={`${p.player.replace(' ', '-')}-win-perc`}>
+                                {p.wins &&
+                                    ((p.wins / p.games) * 100).toFixed(0)}
                                 %
                             </td>
-                            <td id={`${player.player.replace(' ', '-')}-avg`}>
-                                {average?.toFixed(2)}
+                            <td id={`${p.player.replace(' ', '-')}-avg`}>
+                                {p.average?.toFixed(2)}
                             </td>
                         </tr>
                     ) : null}
@@ -401,87 +409,94 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     }
 
     if (filteredPlayerStats) {
-        return (
-            <div id="player-stats-per-team" className="center table">
-                <Table striped bordered hover>
-                    <thead>
-                        <tr>
-                            <th>
-                                <Button
-                                    id="order-by-name%-button"
-                                    variant="light"
-                                    onClick={orderByName}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    PLAYER
-                                </Button>
-                            </th>
-                            <th>
-                                <Button
-                                    id="order-by-win%-button"
-                                    variant="light"
-                                    onClick={orderByGames}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    GAMES
-                                </Button>
-                            </th>
-                            <th>
-                                <Button
-                                    id="order-by-wins-button"
-                                    variant="light"
-                                    onClick={orderByWins}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    WINS
-                                </Button>
-                            </th>
-                            <th>
-                                <Button
-                                    id="order-by-win%-button"
-                                    variant="light"
-                                    onClick={orderByWinPerc}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    WIN %
-                                </Button>
-                            </th>
-                            <th>
-                                <Button
-                                    id="order-by-win%-button"
-                                    variant="light"
-                                    onClick={orderByAverage}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    AVERAGE
-                                </Button>
-                            </th>
-                        </tr>
-                    </thead>
-                    {displayPlayers()}
-                </Table>
-            </div>
-        );
+        const statsToUse = findStatsToUse();
+        const playerCount = statsToUse.filter((p) => p.games > 0).length;
+
+        if (playerCount === 0) {
+            return <h5>No player stats found</h5>;
+        } else {
+            return (
+                <div id="player-stats-per-team" className="center table">
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <Button
+                                        id="order-by-name%-button"
+                                        variant="light"
+                                        onClick={orderByName}
+                                        style={{
+                                            backgroundColor: 'white',
+                                            border: 'none',
+                                            padding: '0',
+                                        }}
+                                    >
+                                        PLAYER
+                                    </Button>
+                                </th>
+                                <th>
+                                    <Button
+                                        id="order-by-win%-button"
+                                        variant="light"
+                                        onClick={orderByGames}
+                                        style={{
+                                            backgroundColor: 'white',
+                                            border: 'none',
+                                            padding: '0',
+                                        }}
+                                    >
+                                        GAMES
+                                    </Button>
+                                </th>
+                                <th>
+                                    <Button
+                                        id="order-by-wins-button"
+                                        variant="light"
+                                        onClick={orderByWins}
+                                        style={{
+                                            backgroundColor: 'white',
+                                            border: 'none',
+                                            padding: '0',
+                                        }}
+                                    >
+                                        WINS
+                                    </Button>
+                                </th>
+                                <th>
+                                    <Button
+                                        id="order-by-win%-button"
+                                        variant="light"
+                                        onClick={orderByWinPerc}
+                                        style={{
+                                            backgroundColor: 'white',
+                                            border: 'none',
+                                            padding: '0',
+                                        }}
+                                    >
+                                        WIN %
+                                    </Button>
+                                </th>
+                                <th>
+                                    <Button
+                                        id="order-by-win%-button"
+                                        variant="light"
+                                        onClick={orderByAverage}
+                                        style={{
+                                            backgroundColor: 'white',
+                                            border: 'none',
+                                            padding: '0',
+                                        }}
+                                    >
+                                        AVERAGE
+                                    </Button>
+                                </th>
+                            </tr>
+                        </thead>
+                        {displayStats(statsToUse)}
+                    </Table>
+                </div>
+            );
+        }
     } else {
         return <h5>No stats available</h5>;
     }
