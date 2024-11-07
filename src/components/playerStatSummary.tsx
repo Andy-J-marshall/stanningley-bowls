@@ -50,7 +50,52 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         }
     }
 
-    function orderPlayers(orderByStatPropertyName: string) {
+    function orderPlayersBy(orderByStatPropertyName: string) {
+        let propertyName = orderByStatPropertyName;
+
+        if (showSinglesOnlyBool) {
+            propertyName = 'singles' + orderByStatPropertyName;
+        }
+        if (showPairsOnlyBool) {
+            propertyName = 'pairs' + orderByStatPropertyName;
+        }
+        if (showHomeOnlyBool) {
+            propertyName = 'home' + orderByStatPropertyName;
+        }
+        if (showAwayOnlyBool) {
+            propertyName = 'away' + orderByStatPropertyName;
+        }
+        if (showCupOnlyBool) {
+            propertyName = 'cup' + orderByStatPropertyName;
+        }
+
+        if (showSinglesOnlyBool && showHomeOnlyBool) {
+            propertyName = 'singlesHome' + orderByStatPropertyName;
+        }
+        if (showSinglesOnlyBool && showAwayOnlyBool) {
+            propertyName = 'singlesAway' + orderByStatPropertyName;
+        }
+        if (showSinglesOnlyBool && showCupOnlyBool) {
+            propertyName = 'singlesCup' + orderByStatPropertyName;
+        }
+
+        if (showPairsOnlyBool && showHomeOnlyBool) {
+            propertyName = 'pairsHome' + orderByStatPropertyName;
+        }
+        if (showPairsOnlyBool && showAwayOnlyBool) {
+            propertyName = 'pairsAway' + orderByStatPropertyName;
+        }
+        if (showPairsOnlyBool && showCupOnlyBool) {
+            propertyName = 'pairsCup' + orderByStatPropertyName;
+        }
+
+        const propertyLowerFirstChar =
+            propertyName.charAt(0).toLowerCase() + propertyName.slice(1);
+
+        return orderBy(propertyLowerFirstChar);
+    }
+
+    function orderBy(orderByStatPropertyName: string) {
         const order = [...filteredPlayerStats].sort((p1: any, p2: any) =>
             p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
                 ? 1
@@ -69,7 +114,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
-    function orderPlayersByName() {
+    function returnPlayersOrderedByName() {
         const playerOrder = [...filteredPlayerStats].sort();
         return playerOrder;
     }
@@ -82,46 +127,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
-    function orderPlayersByGames() {
-        let gameOrder = orderPlayers('games');
-
-        if (showSinglesOnlyBool) {
-            gameOrder = orderPlayers('singlesGames');
-        }
-        if (showPairsOnlyBool) {
-            gameOrder = orderPlayers('pairsGames');
-        }
-        if (showHomeOnlyBool) {
-            gameOrder = orderPlayers('homeGames');
-        }
-        if (showAwayOnlyBool) {
-            gameOrder = orderPlayers('awayGames');
-        }
-        if (showCupOnlyBool) {
-            gameOrder = orderPlayers('cupGames');
-        }
-
-        if (showSinglesOnlyBool && showHomeOnlyBool) {
-            gameOrder = orderPlayers('singlesHomeGames');
-        }
-        if (showSinglesOnlyBool && showAwayOnlyBool) {
-            gameOrder = orderPlayers('singlesAwayGames');
-        }
-        if (showSinglesOnlyBool && showCupOnlyBool) {
-            gameOrder = orderPlayers('singlesCupGames');
-        }
-
-        if (showPairsOnlyBool && showHomeOnlyBool) {
-            gameOrder = orderPlayers('pairsHomeGames');
-        }
-        if (showPairsOnlyBool && showAwayOnlyBool) {
-            gameOrder = orderPlayers('pairsAwayGames');
-        }
-        if (showPairsOnlyBool && showCupOnlyBool) {
-            gameOrder = orderPlayers('pairsCupGames');
-        }
-
-        return gameOrder;
+    function returnPlayersOrderedByGames() {
+        return orderPlayersBy('Games');
     }
 
     function orderByWins() {
@@ -132,46 +139,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
-    function orderPlayersByWins() {
-        let winOrder = orderPlayers('wins');
-
-        if (showSinglesOnlyBool) {
-            winOrder = orderPlayers('singlesWins');
-        }
-        if (showPairsOnlyBool) {
-            winOrder = orderPlayers('pairsWins');
-        }
-        if (showHomeOnlyBool) {
-            winOrder = orderPlayers('homeWins');
-        }
-        if (showAwayOnlyBool) {
-            winOrder = orderPlayers('awayWins');
-        }
-        if (showCupOnlyBool) {
-            winOrder = orderPlayers('cupWins');
-        }
-
-        if (showSinglesOnlyBool && showHomeOnlyBool) {
-            winOrder = orderPlayers('singlesHomeWins');
-        }
-        if (showSinglesOnlyBool && showAwayOnlyBool) {
-            winOrder = orderPlayers('singlesAwayWins');
-        }
-        if (showSinglesOnlyBool && showCupOnlyBool) {
-            winOrder = orderPlayers('singlesCupWins');
-        }
-
-        if (showPairsOnlyBool && showHomeOnlyBool) {
-            winOrder = orderPlayers('pairsHomeWins');
-        }
-        if (showPairsOnlyBool && showAwayOnlyBool) {
-            winOrder = orderPlayers('pairsAwayWins');
-        }
-        if (showPairsOnlyBool && showCupOnlyBool) {
-            winOrder = orderPlayers('pairsCupWins');
-        }
-
-        return winOrder;
+    function returnPlayersOrderedByWins() {
+        return orderPlayersBy('Wins');
     }
 
     function orderByWinPerc() {
@@ -182,46 +151,8 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByAverageBool(false);
     }
 
-    function orderPlayersByWinPerc() {
-        let winPercOrder = orderPlayers('winPerc');
-
-        if (showSinglesOnlyBool) {
-            winPercOrder = orderPlayers('singlesWinPerc');
-        }
-        if (showPairsOnlyBool) {
-            winPercOrder = orderPlayers('pairsWinPerc');
-        }
-        if (showHomeOnlyBool) {
-            winPercOrder = orderPlayers('homeWinPerc');
-        }
-        if (showAwayOnlyBool) {
-            winPercOrder = orderPlayers('awayWinPerc');
-        }
-        if (showCupOnlyBool) {
-            winPercOrder = orderPlayers('cupWinPerc');
-        }
-
-        if (showSinglesOnlyBool && showHomeOnlyBool) {
-            winPercOrder = orderPlayers('singlesHomeWinPerc');
-        }
-        if (showSinglesOnlyBool && showAwayOnlyBool) {
-            winPercOrder = orderPlayers('singlesAwayWinPerc');
-        }
-        if (showSinglesOnlyBool && showCupOnlyBool) {
-            winPercOrder = orderPlayers('singlesCupWinPerc');
-        }
-
-        if (showPairsOnlyBool && showHomeOnlyBool) {
-            winPercOrder = orderPlayers('pairsHomeWinPerc');
-        }
-        if (showPairsOnlyBool && showAwayOnlyBool) {
-            winPercOrder = orderPlayers('pairsAwayWinPerc');
-        }
-        if (showPairsOnlyBool && showCupOnlyBool) {
-            winPercOrder = orderPlayers('pairsCupWinPerc');
-        }
-
-        return winPercOrder;
+    function returnPlayersOrderedByWinPerc() {
+        return orderPlayersBy('WinPerc');
     }
 
     function orderByAverage() {
@@ -232,65 +163,27 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         setOrderByWinPercBool(false);
     }
 
-    function orderPlayersByAverage() {
-        let averageOrder = orderPlayers('average');
-
-        if (showSinglesOnlyBool) {
-            averageOrder = orderPlayers('singlesAverage');
-        }
-        if (showPairsOnlyBool) {
-            averageOrder = orderPlayers('pairsAverage');
-        }
-        if (showHomeOnlyBool) {
-            averageOrder = orderPlayers('homeAverage');
-        }
-        if (showAwayOnlyBool) {
-            averageOrder = orderPlayers('awayAverage');
-        }
-        if (showCupOnlyBool) {
-            averageOrder = orderPlayers('cupAverage');
-        }
-
-        if (showSinglesOnlyBool && showHomeOnlyBool) {
-            averageOrder = orderPlayers('singlesHomeAverage');
-        }
-        if (showSinglesOnlyBool && showAwayOnlyBool) {
-            averageOrder = orderPlayers('singlesAwayAverage');
-        }
-        if (showSinglesOnlyBool && showCupOnlyBool) {
-            averageOrder = orderPlayers('singlesCupAverage');
-        }
-
-        if (showPairsOnlyBool && showHomeOnlyBool) {
-            averageOrder = orderPlayers('pairsHomeAverage');
-        }
-        if (showPairsOnlyBool && showAwayOnlyBool) {
-            averageOrder = orderPlayers('pairsAwayAverage');
-        }
-        if (showPairsOnlyBool && showCupOnlyBool) {
-            averageOrder = orderPlayers('pairsCupAverage');
-        }
-
-        return averageOrder;
+    function returnPlayersOrderedByAverage() {
+        return orderPlayersBy('Average');
     }
 
     function findStatsToUse() {
-        let stats = orderPlayersByName();
+        let stats = returnPlayersOrderedByName();
 
         if (orderByPlayerBool) {
-            stats = orderPlayersByName();
+            stats = returnPlayersOrderedByName();
         }
         if (orderByGamesBool) {
-            stats = orderPlayersByGames();
+            stats = returnPlayersOrderedByGames();
         }
         if (orderByWinsBool) {
-            stats = orderPlayersByWins();
+            stats = returnPlayersOrderedByWins();
         }
         if (orderByWinPercBool) {
-            stats = orderPlayersByWinPerc();
+            stats = returnPlayersOrderedByWinPerc();
         }
         if (orderByAverageBool) {
-            stats = orderPlayersByAverage();
+            stats = returnPlayersOrderedByAverage();
         }
 
         const statsToUse = stats?.map((player) => {
