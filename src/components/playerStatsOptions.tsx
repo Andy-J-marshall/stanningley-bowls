@@ -124,23 +124,16 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 fontSize: '15px',
             }}
         >
-            {/* TODO improve layout */}
             {!playerSearchedFor && (
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>FILTERS</Accordion.Header>
                         <Accordion.Body>
-                            {/* TODO remove */}
-                            {/* <Form style={{ display: 'inline-block' }}> */}
                             <Form>
                                 <Form.Group
                                     className="mb-2"
                                     controlId="searchOptions"
                                 >
-                                    {/* TODO */}
-                                    {/* flex-wrap: wrap; This is causing an issue */}
-                                    {/* box-sizing: border-box; Mabe this too? */}
-                                    {/* TODO try .form-check padding */}
                                     <Row className="g-4 align-items-start">
                                         <Col xs={12} sm={6} lg={3}>
                                             <h6>TEAMS</h6>
@@ -168,6 +161,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>GAME TYPES</h6>
                                             <InputGroup>
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#all-matches-radio"
                                                     onChange={toggleAllMatches}
@@ -177,6 +171,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={allGameTypesToggle}
                                                 />
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#only-singles-radio"
                                                     onChange={
@@ -188,6 +183,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={singlesOnlyToggle}
                                                 />
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#only-pairs-radio"
                                                     onChange={
@@ -204,6 +200,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>VENUE</h6>
                                             <InputGroup>
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#all-venues-radio"
                                                     onChange={
@@ -215,6 +212,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={allVenuesToggle}
                                                 />
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#only-home-radio"
                                                     onChange={
@@ -226,6 +224,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={homeOnlyToggle}
                                                 />
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#only-away-radio"
                                                     onChange={
@@ -237,6 +236,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                     checked={awayOnlyToggle}
                                                 />
                                                 <Form.Check
+                                                    inline
                                                     key={crypto.randomUUID()}
                                                     id="#only-cup-radio"
                                                     onChange={
