@@ -31,8 +31,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/teams"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -45,8 +44,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/fixtures"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -59,8 +57,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/results"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -73,8 +70,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/stats/team"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -87,8 +83,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/stats/records"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -107,8 +102,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/membership"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -121,8 +115,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/social"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -135,8 +128,7 @@ function Navigation() {
                             <Nav.Item
                                 as={Link}
                                 to="/history"
-                                className="tabs"
-                                style={{ textDecoration: 'none' }}
+                                className="tabs link"
                             >
                                 <Nav.Link
                                     as="div"
@@ -150,8 +142,7 @@ function Navigation() {
                         <Nav.Item
                             as={Link}
                             to="/stats/player"
-                            className="navigation"
-                            style={{ textDecoration: 'none' }}
+                            className="navigation link"
                         >
                             <Nav.Link
                                 as="div"
@@ -164,8 +155,7 @@ function Navigation() {
                         <Nav.Item
                             as={Link}
                             to="/contact"
-                            className="navigation"
-                            style={{ textDecoration: 'none' }}
+                            className="navigation link"
                         >
                             <Nav.Link
                                 as="div"

@@ -16,11 +16,7 @@ function SocialInfo() {
                 </p>
                 <p>
                     See the{' '}
-                    <a
-                        style={{ textDecoration: 'none' }}
-                        target="_blank"
-                        href={facebookUrl}
-                    >
+                    <a className="link" target="_blank" href={facebookUrl}>
                         Facebook
                     </a>{' '}
                     page for the latest dates and times.
@@ -42,7 +38,7 @@ function SocialInfo() {
                 </p>
                 <p>
                     Please{' '}
-                    <a style={{ textDecoration: 'none' }} href="/#/contact">
+                    <a className="link" href="/#/contact">
                         contact
                     </a>{' '}
                     us to discuss availability.

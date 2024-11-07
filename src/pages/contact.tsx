@@ -14,7 +14,7 @@ function Contact() {
         <div id="contact-page" className="page-component center">
             <h1>CONTACT US</h1>
             <p style={{ margin: 0 }}>Get in touch via email:</p>
-            <a style={{ textDecoration: 'none' }} href={emailUrl}>
+            <a className="link" href={emailUrl}>
                 <img className="logos" src={email} alt="Email link" />
                 {emailAddress}
             </a>
@@ -23,29 +23,17 @@ function Contact() {
             <p style={{ margin: 0 }}>
                 Keep up to date with the latest news via our social media pages:
             </p>
-            <a
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                href={instagramUrl}
-            >
+            <a className="link" target="_blank" href={instagramUrl}>
                 <img className="logos" src={instagram} alt="Instagram link" />
             </a>
-            <a
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                href={facebookUrl}
-            >
+            <a className="link" target="_blank" href={facebookUrl}>
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
             <br />
             <br />
             <p>
                 See our upcoming{' '}
-                <a
-                    target="_blank"
-                    style={{ textDecoration: 'none' }}
-                    href={facebookEventsUrl}
-                >
+                <a target="_blank" className="link" href={facebookEventsUrl}>
                     events
                 </a>{' '}
                 on Facebook.

@@ -91,6 +91,15 @@ ul {
   }
 }
 
+.carousel-link {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .stats-filters {
   width: 95%;
   text-align: left;

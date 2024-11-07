@@ -14,11 +14,8 @@ function HomePageCarousel() {
                         <Image src={statsImg} fluid />
                         <Carousel.Caption>
                             <NavLink
+                                className="carousel-link"
                                 to="/stats/player"
-                                style={{
-                                    color: 'white',
-                                    textDecoration: 'none',
-                                }}
                             >
                                 <h2>PLAYER STATS</h2>
                             </NavLink>
@@ -27,13 +24,7 @@ function HomePageCarousel() {
                     <Carousel.Item>
                         <Image src={membershipImg} fluid />
                         <Carousel.Caption>
-                            <NavLink
-                                to="/membership"
-                                style={{
-                                    color: 'white',
-                                    textDecoration: 'none',
-                                }}
-                            >
+                            <NavLink to="/membership" className="carousel-link">
                                 <h2>MEMBERSHIP</h2>
                             </NavLink>
                         </Carousel.Caption>
@@ -43,10 +34,7 @@ function HomePageCarousel() {
                         <Carousel.Caption>
                             <a
                                 target="_blank"
-                                style={{
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                }}
+                                className="carousel-link"
                                 href={`${config.socialLinks.facebookUrl}/events`}
                             >
                                 <h2 style={{ margin: '16px' }}>EVENTS</h2>

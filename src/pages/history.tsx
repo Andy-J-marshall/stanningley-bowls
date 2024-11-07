@@ -25,7 +25,7 @@ function History() {
             </p>
             <p>
                 There are a number of years missing,{' '}
-                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                <a className="link" href={emailUrl}>
                     contact us
                 </a>{' '}
                 if you can help fill in the gaps.
