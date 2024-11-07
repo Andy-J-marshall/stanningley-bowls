@@ -135,8 +135,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     controlId="searchOptions"
                                 >
                                     <Row className="g-4 align-items-start">
-                                        <Col xs={12} sm={6} lg={3}>
-                                            <h6>TEAMS</h6>
+                                        <Col sm={12} md={4}>
+                                            <h6>OPTIONS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
                                                 id="#all-stats-select-switch"
@@ -145,9 +145,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 label="Include other team stats"
                                                 checked={allTeamsToggle}
                                             />
-                                        </Col>
-                                        <Col xs={12} sm={6} lg={3}>
-                                            <h6>YEARS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
                                                 id="#all-years-select-switch"
@@ -157,7 +154,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 checked={allYearToggle}
                                             />
                                         </Col>
-                                        <Col xs={12} sm={6} lg={3}>
+                                        <Col xs={12} md={4}>
                                             <h6>GAME TYPES</h6>
                                             <InputGroup>
                                                 <Form.Check
@@ -196,7 +193,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 />
                                             </InputGroup>
                                         </Col>
-                                        <Col xs={12} sm={6} lg={3}>
+                                        <Col xs={12} md={4}>
                                             <h6>VENUE</h6>
                                             <InputGroup>
                                                 <Form.Check
