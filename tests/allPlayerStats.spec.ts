@@ -25,7 +25,7 @@ const players: Array<string> = [
 for (const player of players) {
     test(`Summary of player's all team stats are correct for ${player} in 2023`, async () => {
         await yearSelectPage.select2023Year();
-        await playerStatsPage.selectAllTeamStatsCheckbox();
+        await playerStatsPage.selectAllTeamStatsSwitch();
         await playerStatsPage.searchForPlayer(player);
         await playerStatsPage.checkTeamAccordionHeadersNotExists();
         const {
@@ -56,19 +56,19 @@ test('Can switch between team and all stats', async () => {
     const player = 'Clifford Brogie';
 
     await yearSelectPage.select2023Year();
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersNotExists();
 
     await playerStatsPage.clickBackToSummary();
-    await playerStatsPage.deselectTeamStatsCheckbox();
+    await playerStatsPage.deselectTeamStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
 });
 
 test('Summary of Jim Moorin stats for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('jim moorin');
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
 
     await yearSelectPage.select2023Year();
     playerStatsPage.playerStatsAreCorrectInTable(111, 66, '59%', 2.23);
@@ -79,7 +79,7 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
 
 test('Summary of Richard Hodgson stats for all teams with filters are correct', async () => {
     playerStatsPage.setPlayerToFind('richard hodgson');
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await yearSelectPage.select2023Year();
 
     // All venues
@@ -127,7 +127,7 @@ test('Summary of Richard Hodgson stats for all teams with filters are correct', 
 
 test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('neil porter');
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await yearSelectPage.select2023Year();
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -142,17 +142,17 @@ test('Summary of Neil Porter stats for singles and pairs games for all teams is 
 
 test('Summary of Dave Hudson stats since 2013 for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('dave hudson');
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
 
-    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectSince2013Switch();
     playerStatsPage.playerStatsAreCorrectInTable(463, 174, '38%', -2.48);
 });
 
 test('Detailed player stats for all teams and years for Dave Hudson', async () => {
     const player = 'Dave Hudson';
 
-    await playerStatsPage.selectSince2013Checkbox();
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
@@ -171,9 +171,9 @@ test('Detailed player stats for all teams and years for Dave Hudson', async () =
 
 test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('bernie miller');
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
 
-    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectSince2013Switch();
     playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -184,6 +184,6 @@ test('Summary of Bernie Miller stats since 2013 for all teams is correct', async
 });
 
 test('Total player count is not visible for all team stats', async () => {
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await playerStatsPage.totalPlayerCountIsNotVisible();
 });

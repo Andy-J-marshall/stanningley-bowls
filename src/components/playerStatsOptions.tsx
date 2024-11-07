@@ -146,9 +146,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>TEAMS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
-                                                id="#all-stats-select-checkbox"
+                                                id="#all-stats-select-switch"
                                                 onChange={toggleAllTeamStats}
-                                                type="checkbox"
+                                                type="switch"
                                                 label="Include other team stats"
                                                 checked={allTeamsToggle}
                                             />
@@ -157,9 +157,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             <h6>YEARS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
-                                                id="#all-years-select-checkbox"
+                                                id="#all-years-select-switch"
                                                 onChange={toggleAllYearStats}
-                                                type="checkbox"
+                                                type="switch"
                                                 label="Stats since 2013"
                                                 checked={allYearToggle}
                                             />

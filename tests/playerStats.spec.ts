@@ -112,14 +112,14 @@ test('Summary of Andy Marshall stats for team with filters are correct', async (
 test('Summary of Dave Hudson stats since 2013 for team are correct', async () => {
     playerStatsPage.setPlayerToFind('dave hudson');
 
-    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectSince2013Switch();
     playerStatsPage.playerStatsAreCorrectInTable(385, 147, '38%', -2.34);
 });
 
 test('Detailed player stats for all years for Dave Hudson', async () => {
     const player = 'Dave Hudson';
 
-    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectSince2013Switch();
     await playerStatsPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
@@ -139,7 +139,7 @@ test('Detailed player stats for all years for Dave Hudson', async () => {
 test('Summary of Bernie Miller stats since 2013 for team are correct', async () => {
     playerStatsPage.setPlayerToFind('bernie miller');
 
-    await playerStatsPage.selectSince2013Checkbox();
+    await playerStatsPage.selectSince2013Switch();
     playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -166,6 +166,6 @@ test('Total player count is not visible if filtering player stats', async () => 
 
     await playerStatsPage.selectAllGameTypesRadio();
 
-    await playerStatsPage.selectAllTeamStatsCheckbox();
+    await playerStatsPage.selectAllTeamStatsSwitch();
     await playerStatsPage.totalPlayerCountIsNotVisible();
 });
