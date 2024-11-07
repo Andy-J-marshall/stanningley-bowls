@@ -136,13 +136,13 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 >
                                     <Row className="g-4 align-items-start">
                                         <Col sm={12} md={4}>
-                                            <h6>OPTIONS</h6>
+                                            <h6>STAT OPTIONS</h6>
                                             <Form.Check
                                                 key={crypto.randomUUID()}
                                                 id="#all-stats-select-switch"
                                                 onChange={toggleAllTeamStats}
                                                 type="switch"
-                                                label="Include other team stats"
+                                                label="Include other teams"
                                                 checked={allTeamsToggle}
                                             />
                                             <Form.Check
@@ -150,7 +150,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 id="#all-years-select-switch"
                                                 onChange={toggleAllYearStats}
                                                 type="switch"
-                                                label="Stats since 2013"
+                                                label="Combine all years"
                                                 checked={allYearToggle}
                                             />
                                         </Col>
