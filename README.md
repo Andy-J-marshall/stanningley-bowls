@@ -201,8 +201,6 @@ Update team info in all components:
 
 # Ideas for future improvements
 
--   Add team specific filters to player stats (and remove from team stats?)
--   Split the script into a separate repo and create an API?
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
 -   Add a documents page e.g. membership form, useful links, rules etc.
