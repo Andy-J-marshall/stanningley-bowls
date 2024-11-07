@@ -15,15 +15,11 @@ function Search(props: SearchProps) {
     const closeButtonCallback = props.closeButtonCallback;
 
     return (
-        <Form
-            id="search-form"
-            className="center"
-            style={{ paddingBottom: '0.8rem' }}
-        >
+        <Form id="search-form" className="center">
             <Form.Group className="mb-3">
                 <Typeahead
                     id="search"
-                    placeholder="Player..."
+                    placeholder="Player Search..."
                     onChange={handleChange}
                     options={['SHOW ALL'].concat(searchList)}
                     selected={value}
@@ -56,11 +52,11 @@ function Search(props: SearchProps) {
                 <Button
                     id="back-button"
                     style={{
-                        margin: '1rem',
-                        backgroundColor: '#e7f1ff',
-                        color: 'black',
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
                     }}
-                    variant="secondary"
+                    variant="outline-dark"
                     onClick={closeButtonCallback}
                 >
                     BACK TO SUMMARY

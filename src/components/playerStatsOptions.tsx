@@ -117,13 +117,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     return (
-        <div
-            style={{
-                margin: '0.8rem',
-                textAlign: 'left',
-                fontSize: '15px',
-            }}
-        >
+        <div className="stats-filters center">
             {!playerSearchedFor && (
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">

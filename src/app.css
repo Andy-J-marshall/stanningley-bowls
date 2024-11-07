@@ -80,13 +80,22 @@ ul {
 @media (min-width: 10px) {
   #search-form {
     width: 80%;
+    padding-bottom: 1rem;
   }
 }
 
 @media (min-width: 1075px) {
   #search-form {
     width: 55%;
+    padding-bottom: 1rem;
   }
+}
+
+.stats-filters {
+  width: 95%;
+  text-align: left;
+  font-size: 15px;
+  padding: 1rem 0;
 }
 
 .nav-tabs .nav-link {

@@ -210,7 +210,6 @@ function PlayerStats(props: PlayerStatsProps) {
             )}
 
             {/* Shows total player count */}
-            <br />
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
@@ -230,7 +229,6 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyCupCallback={setShowCupOnlyBool}
                 playerSearchedFor={searchedPlayerName}
             />
-            <br />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );
