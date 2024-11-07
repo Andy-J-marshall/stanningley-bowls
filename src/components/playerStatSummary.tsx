@@ -51,6 +51,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
     }
 
     function orderPlayersBy(orderByStatPropertyName: string) {
+        // orderByStatPropertyName must exactly match a property name in the PlayerStatsSummary interface
         let propertyName = orderByStatPropertyName;
 
         if (showSinglesOnlyBool) {
