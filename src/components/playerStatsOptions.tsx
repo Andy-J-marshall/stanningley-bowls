@@ -132,6 +132,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         <Col sm={12} md={4}>
                                             <h6>STAT OPTIONS</h6>
                                             <Form.Check
+                                                inline
                                                 key={crypto.randomUUID()}
                                                 id="#all-stats-select-switch"
                                                 onChange={toggleAllTeamStats}
@@ -140,6 +141,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 checked={allTeamsToggle}
                                             />
                                             <Form.Check
+                                                inline
                                                 key={crypto.randomUUID()}
                                                 id="#all-years-select-switch"
                                                 onChange={toggleAllYearStats}
