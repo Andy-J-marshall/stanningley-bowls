@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import socialBowlingImg from '../images/websiteImages/social-bowling2.png';
 import groupBowlingImg from '../images/websiteImages/group-bowling.png';
 import { config } from '../config';
@@ -5,6 +6,10 @@ import { config } from '../config';
 const { facebookUrl } = config.socialLinks;
 
 function SocialInfo() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="social-membership" className="center page-component">
             <div id="social-info">

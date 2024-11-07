@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { config } from '../config';
 import { capitalizeText } from '../helpers/utils';
@@ -14,13 +14,8 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const stats = props.playersStats;
     const showStatSummary = props.showStatSummary;
 
-    const [loaded, setLoaded] = useState(false);
-
     useEffect(() => {
-        if (!loaded) {
-            window.scrollTo(0, 0);
-        }
-        setLoaded(true);
+        window.scrollTo(0, 0);
     });
 
     return (

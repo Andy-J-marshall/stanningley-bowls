@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.png';
 
@@ -5,6 +6,10 @@ const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } =
     config.membership;
 
 function Membership() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="members" className="center page-component">
             <h1>MEMBERSHIP</h1>

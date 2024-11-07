@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     Card,
     Button,
@@ -15,6 +16,10 @@ const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 const { fullName } = config.teamNames;
 
 function History() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
