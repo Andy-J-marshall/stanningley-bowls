@@ -15,12 +15,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                     OVERVIEW
                 </Accordion.Header>
                 <Accordion.Body>
-                    <Row
-                        style={{ padding: 0, margin: '0 0.5rem' }}
-                        xs={2}
-                        md={3}
-                        className="g-4 align-items-start"
-                    >
+                    <Row xs={2} md={3} className="g-4 align-items-start">
                         <StatTile
                             title="GAMES"
                             bodyText={gamesPlayed}

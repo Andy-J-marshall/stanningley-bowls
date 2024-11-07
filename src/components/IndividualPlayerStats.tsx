@@ -20,9 +20,9 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
 
     return (
         <div id="detailed-player-stats">
-            <h2 style={{ padding: '0.5rem' }} id="playerNameTitle">
+            <h3 style={{ padding: '0.7rem' }} id="playerNameTitle">
                 {capitalizeText([name])}
-            </h2>
+            </h3>
             {stats.gamesPlayed === 0 && (
                 <div>
                     {!showStatSummary && (

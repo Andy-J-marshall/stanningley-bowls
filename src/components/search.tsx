@@ -51,11 +51,6 @@ function Search(props: SearchProps) {
             {searchedName && (
                 <Button
                     id="back-button"
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                    }}
                     variant="outline-dark"
                     onClick={closeButtonCallback}
                 >

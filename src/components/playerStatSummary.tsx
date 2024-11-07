@@ -302,7 +302,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         const playerCount = statsToUse.filter((p) => p.games > 0).length;
 
         if (playerCount === 0) {
-            return <h5>No player stats found</h5>;
+            return <h3>No player stats found</h3>;
         } else {
             return (
                 <div id="player-stats-per-team" className="center table">
@@ -387,7 +387,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             );
         }
     } else {
-        return <h5>No stats available</h5>;
+        return <h3>No stats available</h3>;
     }
 }
 

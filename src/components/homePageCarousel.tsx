@@ -37,7 +37,7 @@ function HomePageCarousel() {
                                 className="carousel-link"
                                 href={`${config.socialLinks.facebookUrl}/events`}
                             >
-                                <h2 style={{ margin: '16px' }}>EVENTS</h2>
+                                <h2>EVENTS</h2>
                             </a>
                         </Carousel.Caption>
                     </Carousel.Item>

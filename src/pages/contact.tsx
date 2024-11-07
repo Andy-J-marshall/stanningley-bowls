@@ -18,15 +18,20 @@ function Contact() {
     return (
         <div id="contact-page" className="page-component center">
             <h1>CONTACT US</h1>
-            <p style={{ margin: 0 }}>Get in touch via email:</p>
-            <a className="link" href={emailUrl}>
-                <img className="logos" src={email} alt="Email link" />
-                {emailAddress}
-            </a>
-            <br />
-            <br />
-            <p style={{ margin: 0 }}>
-                Keep up to date with the latest news via our social media pages:
+            <p>
+                Get in touch via email:{' '}
+                <a className="link" href={emailUrl}>
+                    <img className="logos" src={email} alt="Email link" />
+                    {emailAddress}
+                </a>
+            </p>
+            <p>
+                See our upcoming{' '}
+                <a target="_blank" className="link" href={facebookEventsUrl}>
+                    events
+                </a>{' '}
+                on Facebook and keep up to date with the latest news via our
+                social media pages:
             </p>
             <a className="link" target="_blank" href={instagramUrl}>
                 <img className="logos" src={instagram} alt="Instagram link" />
@@ -34,15 +39,6 @@ function Contact() {
             <a className="link" target="_blank" href={facebookUrl}>
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
-            <br />
-            <br />
-            <p>
-                See our upcoming{' '}
-                <a target="_blank" className="link" href={facebookEventsUrl}>
-                    events
-                </a>{' '}
-                on Facebook.
-            </p>
             <div>
                 <h1>LOCATION</h1>
                 <p>

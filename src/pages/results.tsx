@@ -51,9 +51,7 @@ function Results(props: ResultsProps) {
                     if (resultTeam.results.length > 0) {
                         return (
                             <div key={idx} className="teamResult">
-                                <h3 style={{ paddingTop: '1rem' }}>
-                                    {resultTeam.day?.toUpperCase()}
-                                </h3>
+                                <h3>{resultTeam.day?.toUpperCase()}</h3>
                                 <Table striped bordered hover>
                                     <thead>
                                         <tr>
