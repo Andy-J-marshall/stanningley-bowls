@@ -37,6 +37,9 @@ function PlayerStats(props: PlayerStatsProps) {
     const [loading, setLoading] = useState(false);
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
+    const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
+    const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
+    const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
     const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     // Find list of players and save to an array
@@ -65,6 +68,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     useEffect(() => {
         if (!loaded) {
+            // this prevents scrolling to the top when a different stat filter is selected
             window.scrollTo(0, 0);
         }
         setLoaded(true);
@@ -97,30 +101,6 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             setStatsToUse(playerResults);
             setShowStatSummary(false);
-        }
-    }
-
-    function onlySinglesCallback(showSinglesBoolean: boolean) {
-        if (showSinglesBoolean) {
-            setShowSinglesOnlyBool(true);
-        } else {
-            setShowSinglesOnlyBool(false);
-        }
-    }
-
-    function onlyPairsCallback(showPairsBoolean: boolean) {
-        if (showPairsBoolean) {
-            setShowPairsOnlyBool(true);
-        } else {
-            setShowPairsOnlyBool(false);
-        }
-    }
-
-    function allYearStatsCallback(showAllBoolean: boolean) {
-        if (showAllBoolean) {
-            setShowStatsSinceStart(true);
-        } else {
-            setShowStatsSinceStart(false);
         }
     }
 
@@ -172,9 +152,7 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             return (
                 searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h5 style={{ padding: '1rem 0 4rem 0' }}>
-                        Player not found for {stats.statsYear}
-                    </h5>
+                    <h3>Player not found for {stats.statsYear}</h3>
                 )
             );
         }
@@ -184,32 +162,18 @@ function PlayerStats(props: PlayerStatsProps) {
         const statsArray = showStatsSinceStart
             ? everyYearStatsSummaryArray
             : statsSummaryArray;
-        const gamesPlayedThisYear = statsArray.find(
-            (player) => player.games > 0
-        );
-        const pairsGamesThisYear = statsArray.find(
-            (player) => player.pairsGames && player.pairsGames > 0
-        );
 
-        if (gamesPlayedThisYear && (!showPairsOnlyBool || pairsGamesThisYear)) {
-            return (
-                <div>
-                    <br />
-                    <PlayerStatSummary
-                        callback={setSearchedPlayerName}
-                        playerStats={statsArray}
-                        showSinglesOnly={showSinglesOnlyBool}
-                        showPairsOnly={showPairsOnlyBool}
-                    />
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <h5>No stats available for {stats.statsYear}</h5>
-                </div>
-            );
-        }
+        return (
+            <PlayerStatSummary
+                callback={setSearchedPlayerName}
+                playerStats={statsArray}
+                showSinglesOnly={showSinglesOnlyBool}
+                showPairsOnly={showPairsOnlyBool}
+                showHomeOnly={showHomeOnlyBool}
+                showAwayOnly={showAwayOnlyBool}
+                showCupOnly={showCupOnlyBool}
+            />
+        );
     }
 
     const delay = (ms: number) =>
@@ -245,7 +209,6 @@ function PlayerStats(props: PlayerStatsProps) {
             )}
 
             {/* Shows total player count */}
-            <br />
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
@@ -257,12 +220,14 @@ function PlayerStats(props: PlayerStatsProps) {
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={allYearStatsCallback}
-                onlySinglesCallback={onlySinglesCallback}
-                onlyPairsCallback={onlyPairsCallback}
+                allYearStatsCallback={setShowStatsSinceStart}
+                onlySinglesCallback={setShowSinglesOnlyBool}
+                onlyPairsCallback={setShowPairsOnlyBool}
+                onlyHomeCallback={setShowHomeOnlyBool}
+                onlyAwayCallback={setShowAwayOnlyBool}
+                onlyCupCallback={setShowCupOnlyBool}
                 playerSearchedFor={searchedPlayerName}
             />
-            <br />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );

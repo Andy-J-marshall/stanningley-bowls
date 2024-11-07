@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import YearSelectDropdown from '../components/yearSelectDropdown';
 import { config } from '../config';
@@ -5,17 +6,21 @@ import { ResultsProps } from '../types/interfaces';
 import { returnStructuredResultsArray } from '../helpers/playerStatsHelper';
 
 const teamName = config.teamNames.shortName.toLowerCase();
+const currentYear = new Date().getFullYear();
 
 function Results(props: ResultsProps) {
     const stats = props.stats;
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
 
-    const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(yearToDisplay) ? `${yearToDisplay}` : '';
 
     const { teamResults } = stats;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     let resultsArray;
     if (teamResults) {
@@ -46,9 +51,7 @@ function Results(props: ResultsProps) {
                     if (resultTeam.results.length > 0) {
                         return (
                             <div key={idx} className="teamResult">
-                                <h3 style={{ paddingTop: '1rem' }}>
-                                    {resultTeam.day?.toUpperCase()}
-                                </h3>
+                                <h3>{resultTeam.day?.toUpperCase()}</h3>
                                 <Table striped bordered hover>
                                     <thead>
                                         <tr>
@@ -110,9 +113,7 @@ function Results(props: ResultsProps) {
                                                     >
                                                         {result.home.score}
                                                     </td>
-                                                    <td>
-                                                        {result.away.score}
-                                                    </td>
+                                                    <td>{result.away.score}</td>
                                                     <td
                                                         style={{
                                                             width: '38%',

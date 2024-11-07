@@ -9,15 +9,11 @@ h6 {
 }
 
 h1 {
-  padding: 0.7rem 0 0.9rem 0;
+  padding: 0.7rem 0;
 }
 
-h3 {
+h3, h5 {
   padding: 0.5rem 0 0 0;
-}
-
-h5 {
-  padding: 0.6rem 0 0 0;
 }
 
 body {
@@ -84,13 +80,31 @@ ul {
 @media (min-width: 10px) {
   #search-form {
     width: 80%;
+    padding-bottom: 1rem;
   }
 }
 
 @media (min-width: 1075px) {
   #search-form {
     width: 55%;
+    padding-bottom: 1rem;
   }
+}
+
+.carousel-link {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.stats-filters {
+  width: 95%;
+  text-align: left;
+  font-size: 15px;
+  padding: 1rem 0;
 }
 
 .nav-tabs .nav-link {

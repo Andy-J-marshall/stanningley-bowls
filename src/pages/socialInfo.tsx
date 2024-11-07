@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import socialBowlingImg from '../images/websiteImages/social-bowling2.png';
 import groupBowlingImg from '../images/websiteImages/group-bowling.png';
 import { config } from '../config';
@@ -5,6 +6,10 @@ import { config } from '../config';
 const { facebookUrl } = config.socialLinks;
 
 function SocialInfo() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="social-membership" className="center page-component">
             <div id="social-info">
@@ -16,11 +21,7 @@ function SocialInfo() {
                 </p>
                 <p>
                     See the{' '}
-                    <a
-                        style={{ textDecoration: 'none' }}
-                        target="_blank"
-                        href={facebookUrl}
-                    >
+                    <a className="link" target="_blank" href={facebookUrl}>
                         Facebook
                     </a>{' '}
                     page for the latest dates and times.
@@ -42,7 +43,7 @@ function SocialInfo() {
                 </p>
                 <p>
                     Please{' '}
-                    <a style={{ textDecoration: 'none' }} href="/#/contact">
+                    <a className="link" href="/#/contact">
                         contact
                     </a>{' '}
                     us to discuss availability.

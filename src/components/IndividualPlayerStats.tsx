@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
 import { config } from '../config';
 import { capitalizeText } from '../helpers/utils';
@@ -14,20 +14,15 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const stats = props.playersStats;
     const showStatSummary = props.showStatSummary;
 
-    const [loaded, setLoaded] = useState(false);
-
     useEffect(() => {
-        if (!loaded) {
-            window.scrollTo(0, 0);
-        }
-        setLoaded(true);
+        window.scrollTo(0, 0);
     });
 
     return (
         <div id="detailed-player-stats">
-            <h2 style={{ padding: '0.5rem' }} id="playerNameTitle">
+            <h3 style={{ padding: '0.7rem' }} id="playerNameTitle">
                 {capitalizeText([name])}
-            </h2>
+            </h3>
             {stats.gamesPlayed === 0 && (
                 <div>
                     {!showStatSummary && (

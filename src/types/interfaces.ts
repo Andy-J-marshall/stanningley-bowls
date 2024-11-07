@@ -54,6 +54,9 @@ export interface PlayerStatsOptionsProps {
     allYearStatsCallback: (toggle: boolean) => void;
     onlySinglesCallback: (toggle: boolean) => void;
     onlyPairsCallback: (toggle: boolean) => void;
+    onlyHomeCallback: (toggle: boolean) => void;
+    onlyAwayCallback: (toggle: boolean) => void;
+    onlyCupCallback: (toggle: boolean) => void;
     playerSearchedFor: string;
 }
 
@@ -116,27 +119,110 @@ export interface RecordsTableDisplayProps {
     bestAveragePlayer?: string[];
 }
 
-export interface PlayerStatsSummary {
+export interface PlayerStatsTeamSummary {
     player: string;
     games: number;
     wins: number;
-    average: number | undefined;
-    singleGames?: number;
-    singlesAverage?: number;
-    singlesWins?: number;
-    pairsGames?: number;
-    pairsAverage?: number;
-    pairsWins?: number;
-    singlesWinPerc?: number;
-    pairsWinPerc?: number;
-    winPerc?: number;
+    winPerc: number;
+    average: number;
+}
+
+export interface PlayerStatsSummary {
+    player: string;
+
+    games: number;
+    wins: number;
+    winPerc: number;
+    average: number;
+    agg: number;
+    aggAgainst: number;
+
+    singlesGames: number;
+    singlesWins: number;
+    singlesWinPerc: number;
+    singlesAverage: number;
+    singlesAgg: number;
+    singlesAggAgainst: number;
+
+    pairsGames: number;
+    pairsWins: number;
+    pairsWinPerc: number;
+    pairsAverage: number;
+    pairsAgg: number;
+    pairsAggAgainst: number;
+
+    homeGames: number;
+    homeWins: number;
+    homeWinPerc: number;
+    homeAverage: number;
+    homeAgg: number;
+    homeAggAgainst: number;
+
+    singlesHomeGames: number;
+    singlesHomeWins: number;
+    singlesHomeWinPerc: number;
+    singlesHomeAverage: number;
+    singlesHomeAgg: number;
+    singlesHomeAggAgainst: number;
+
+    pairsHomeGames: number;
+    pairsHomeWins: number;
+    pairsHomeWinPerc: number;
+    pairsHomeAverage: number;
+    pairsHomeAgg: number;
+    pairsHomeAggAgainst: number;
+
+    awayGames: number;
+    awayWins: number;
+    awayWinPerc: number;
+    awayAverage: number;
+    awayAgg: number;
+    awayAggAgainst: number;
+
+    singlesAwayGames: number;
+    singlesAwayWins: number;
+    singlesAwayWinPerc: number;
+    singlesAwayAverage: number;
+    singlesAwayAgg: number;
+    singlesAwayAggAgainst: number;
+
+    pairsAwayGames: number;
+    pairsAwayWins: number;
+    pairsAwayWinPerc: number;
+    pairsAwayAverage: number;
+    pairsAwayAgg: number;
+    pairsAwayAggAgainst: number;
+
+    cupGames: number;
+    cupWins: number;
+    cupWinPerc: number;
+    cupAverage: number;
+    cupAgg: number;
+    cupAggAgainst: number;
+
+    singlesCupGames: number;
+    singlesCupWins: number;
+    singlesCupWinPerc: number;
+    singlesCupAverage: number;
+    singlesCupAgg: number;
+    singlesCupAggAgainst: number;
+
+    pairsCupGames: number;
+    pairsCupWins: number;
+    pairsCupWinPerc: number;
+    pairsCupAverage: number;
+    pairsCupAgg: number;
+    pairsCupAggAgainst: number;
 }
 
 export interface PlayerStatSummaryProps {
-    playerStats: PlayerStatsSummary[];
+    playerStats: PlayerStatsSummary[] | PlayerStatsTeamSummary[];
     callback?: (playerName: string) => void;
     showSinglesOnly?: boolean;
     showPairsOnly?: boolean;
+    showHomeOnly?: boolean;
+    showAwayOnly?: boolean;
+    showCupOnly?: boolean;
 }
 
 export interface WrapperProps {
@@ -146,8 +232,8 @@ export interface WrapperProps {
 
 export type NewsItemProps = {
     title: string;
-    firstParagraph: string;
-    secondParagraph?: string;
+    openingLine: string;
+    mainText?: string;
     imgSrc: string;
 };
 
@@ -197,19 +283,12 @@ export interface PlayerResultsStatsFile {
         totalPairsAwayAgg: number;
         totalPairsAwayAggAgainst: number;
         homeWins: number;
-        homeLosses: number;
         awayWins: number;
-        awayLosses: number;
         cupWins: number;
-        cupLosses: number;
         pairWins: number;
-        pairLosses: number;
         pairHomeWins: number;
-        pairHomeLosses: number;
         pairAwayWins: number;
-        pairAwayLosses: number;
         pairCupWins: number;
-        pairCupLosses: number;
         totalGamesPlayed: number;
         results: string[];
         [key: string]: any;

@@ -3,7 +3,7 @@ import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
 } from '../types/interfaces';
-import { checkWinPercAndAverageAreNumbers } from './statsHelper';
+import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
 
 export function findBiggestWin(playerResults: string[]): string {
     let bestWin = '';
@@ -82,8 +82,14 @@ export function returnPlayerStats(
 
     // Wins and losses
     const totalWins = awayWins + homeWins + cupWins;
+
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const biggestWin = findBiggestWin(results);
+
+    const singlesWins = totalWins - pairWins;
+    const singlesHomeWins = homeWins - pairHomeWins;
+    const singlesAwayWins = awayWins - pairAwayWins;
+    const singlesCupWins = cupWins - pairCupWins;
 
     // Games played
     const homeGamesPlayed = homeWins + homeLosses;
@@ -141,7 +147,7 @@ export function returnPlayerStats(
         };
     });
 
-    // Pairs & singles
+    // Pairs & singles aggregates
     const singlesAgg = totalAgg - totalPairsAgg;
     const singlesAggAgainst = totalAggAgainst - totalPairsAggAgainst;
 
@@ -229,11 +235,15 @@ export function returnPlayerStats(
         pairHomeLosses,
         pairAwayLosses,
         pairCupLosses,
+        totalWins,
         homeWins,
         awayWins,
         cupWins,
+        singlesWins,
+        singlesHomeWins,
+        singlesAwayWins,
+        singlesCupWins,
         pairWins,
-        totalWins,
         pairHomeWins,
         pairAwayWins,
         pairCupWins,
@@ -283,46 +293,108 @@ export function returnPlayerStatSummary(
     players.sort().forEach((player) => {
         const playerStats = returnPlayerStats(statsToUse, player);
         if (playerStats) {
-            let stats = {
+            // The averages and win percentages are calculated later
+            let stats: PlayerStatsSummary = {
                 // Total
                 player,
                 games: playerStats.gamesPlayed,
                 wins: playerStats.totalWins,
-                winPerc:
-                    (playerStats.totalWins / playerStats.gamesPlayed) * 100,
                 agg: playerStats.totalAgg,
                 aggAgainst: playerStats.totalAggAgainst,
-                average:
-                    (playerStats.totalAgg - playerStats.totalAggAgainst) /
-                    playerStats.gamesPlayed,
+                average: NaN,
+                winPerc: NaN,
 
                 // Singles
-                singleGames: playerStats.singlesGames,
-                singlesWins: playerStats.totalWins - playerStats.pairWins,
-                singlesWinPerc:
-                    ((playerStats.totalWins - playerStats.pairWins) /
-                        playerStats.singlesGames) *
-                    100,
+                singlesGames: playerStats.singlesGames,
+                singlesWins: playerStats.singlesWins,
                 singlesAgg: playerStats.singlesAgg,
                 singlesAggAgainst: playerStats.singlesAggAgainst,
-                singlesAverage:
-                    (playerStats.singlesAgg - playerStats.singlesAggAgainst) /
-                    playerStats.singlesGames,
+                singlesAverage: NaN,
+                singlesWinPerc: NaN,
 
                 // Pairs
                 pairsGames: playerStats.pairsGames,
                 pairsWins: playerStats.pairWins,
-                pairsWinPerc:
-                    (playerStats.pairWins / playerStats.pairsGames) * 100,
                 pairsAgg: playerStats.totalPairsAgg,
                 pairsAggAgainst: playerStats.totalPairsAggAgainst,
-                pairsAverage:
-                    (playerStats.totalPairsAgg -
-                        playerStats.totalPairsAggAgainst) /
-                    playerStats.pairsGames,
+                pairsAverage: NaN,
+                pairsWinPerc: NaN,
+
+                // Home
+                homeGames: playerStats.homeGamesPlayed,
+                homeWins: playerStats.homeWins,
+                homeAgg: playerStats.totalHomeAgg,
+                homeAggAgainst: playerStats.totalHomeAggAgainst,
+                homeAverage: NaN,
+                homeWinPerc: NaN,
+
+                // Singles Home
+                singlesHomeGames: playerStats.singlesHomeGamesPlayed,
+                singlesHomeWins: playerStats.singlesHomeWins,
+                singlesHomeAgg: playerStats.totalSinglesHomeAgg,
+                singlesHomeAggAgainst: playerStats.totalSinglesHomeAggAgainst,
+                singlesHomeAverage: NaN,
+                singlesHomeWinPerc: NaN,
+
+                // Pairs Home
+                pairsHomeGames: playerStats.pairHomeGamesPlayed,
+                pairsHomeWins: playerStats.pairHomeWins,
+                pairsHomeAgg: playerStats.totalPairsHomeAgg,
+                pairsHomeAggAgainst: playerStats.totalPairsHomeAggAgainst,
+                pairsHomeAverage: NaN,
+                pairsHomeWinPerc: NaN,
+
+                // Away
+                awayGames: playerStats.awayGamesPlayed,
+                awayWins: playerStats.awayWins,
+                awayAgg: playerStats.totalAwayAgg,
+                awayAggAgainst: playerStats.totalAwayAggAgainst,
+                awayAverage: NaN,
+                awayWinPerc: NaN,
+
+                // Singles Away
+                singlesAwayGames: playerStats.singlesAwayGamesPlayed,
+                singlesAwayWins: playerStats.singlesAwayWins,
+                singlesAwayAgg: playerStats.totalSinglesAwayAgg,
+                singlesAwayAggAgainst: playerStats.totalSinglesAwayAggAgainst,
+                singlesAwayAverage: NaN,
+                singlesAwayWinPerc: NaN,
+
+                // Pairs Away
+                pairsAwayGames: playerStats.pairAwayGamesPlayed,
+                pairsAwayWins: playerStats.pairAwayWins,
+                pairsAwayAgg: playerStats.totalPairsAwayAgg,
+                pairsAwayAggAgainst: playerStats.totalPairsAwayAggAgainst,
+                pairsAwayAverage: NaN,
+                pairsAwayWinPerc: NaN,
+
+                // Cup
+                cupGames: playerStats.cupGamesPlayed,
+                cupWins: playerStats.cupWins,
+                cupAgg: playerStats.cupAgg,
+                cupAggAgainst: playerStats.cupAggAgainst,
+                cupAverage: NaN,
+                cupWinPerc: NaN,
+
+                // Singles Cup
+                singlesCupGames: playerStats.singlesCupGamesPlayed,
+                singlesCupWins: playerStats.singlesCupWins,
+                singlesCupAgg: playerStats.totalSinglesCupAgg,
+                singlesCupAggAgainst: playerStats.totalSinglesCupAggAgainst,
+                singlesCupAverage: NaN,
+                singlesCupWinPerc: NaN,
+
+                // Pairs Cup
+                pairsCupGames: playerStats.pairCupGamesPlayed,
+                pairsCupWins: playerStats.pairCupWins,
+                pairsCupAgg: playerStats.totalPairsCupAgg,
+                pairsCupAggAgainst: playerStats.totalPairsCupAggAgainst,
+                pairsCupAverage: NaN,
+                pairsCupWinPerc: NaN,
             };
 
-            stats = checkWinPercAndAverageAreNumbers(stats);
+            stats = calculateWinPercAndAverage(stats);
+            stats = checkAllWinPercAndAverageAreNumbers(stats);
 
             statsArray.push(stats);
         }
@@ -341,9 +413,7 @@ export function returnStructuredResultsArray(results: string[]) {
 
         const awayPart = resultParts[1].split(' (')[0];
         const awayScoreMatch = awayPart.match(/[0-9]+/g);
-        const awayScore = awayScoreMatch
-            ? awayScoreMatch[0].trim()
-            : '';
+        const awayScore = awayScoreMatch ? awayScoreMatch[0].trim() : '';
         const awayPlayer = awayPart.split(/[0-9]+/g)[1].trim();
 
         return {
@@ -358,4 +428,75 @@ export function returnStructuredResultsArray(results: string[]) {
         };
     });
     return resultsArray;
+}
+
+export function calculateWinPercAndAverage(playerStats: PlayerStatsSummary) {
+    const stats = playerStats;
+
+    // Total
+    stats.winPerc = (stats.wins / stats.games) * 100;
+    stats.average = (stats.agg - stats.aggAgainst) / stats.games;
+
+    // Singles
+    stats.singlesWinPerc =
+        ((stats.wins - stats.pairsWins) / stats.singlesGames) * 100;
+    stats.singlesAverage =
+        (stats.singlesAgg - stats.singlesAggAgainst) / stats.singlesGames;
+
+    // Pairs
+    stats.pairsWinPerc = (stats.pairsWins / stats.pairsGames) * 100;
+    stats.pairsAverage =
+        (stats.pairsAgg - stats.pairsAggAgainst) / stats.pairsGames;
+
+    // Home
+    stats.homeWinPerc = (stats.homeWins / stats.homeGames) * 100;
+    stats.homeAverage =
+        (stats.homeAgg - stats.homeAggAgainst) / stats.homeGames;
+
+    // Singles Home
+    stats.singlesHomeWinPerc =
+        ((stats.homeWins - stats.pairsHomeWins) / stats.singlesHomeGames) * 100;
+    stats.singlesHomeAverage =
+        (stats.singlesHomeAgg - stats.singlesHomeAggAgainst) /
+        stats.singlesHomeGames;
+
+    // Pairs Home
+    stats.pairsHomeWinPerc = (stats.pairsHomeWins / stats.pairsHomeGames) * 100;
+    stats.pairsHomeAverage =
+        (stats.pairsHomeAgg - stats.pairsHomeAggAgainst) / stats.pairsHomeGames;
+
+    // Away
+    stats.awayWinPerc = (stats.awayWins / stats.awayGames) * 100;
+    stats.awayAverage =
+        (stats.awayAgg - stats.awayAggAgainst) / stats.awayGames;
+
+    // Singles Away
+    stats.singlesAwayWinPerc =
+        ((stats.awayWins - stats.pairsAwayWins) / stats.singlesAwayGames) * 100;
+    stats.singlesAwayAverage =
+        (stats.singlesAwayAgg - stats.singlesAwayAggAgainst) /
+        stats.singlesAwayGames;
+
+    // Pairs Away
+    stats.pairsAwayWinPerc = (stats.pairsAwayWins / stats.pairsAwayGames) * 100;
+    stats.pairsAwayAverage =
+        (stats.pairsAwayAgg - stats.pairsAwayAggAgainst) / stats.pairsAwayGames;
+
+    // Cup
+    stats.cupWinPerc = (stats.cupWins / stats.cupGames) * 100;
+    stats.cupAverage = (stats.cupAgg - stats.cupAggAgainst) / stats.cupGames;
+
+    // Singles Cup
+    stats.singlesCupWinPerc =
+        ((stats.cupWins - stats.pairsCupWins) / stats.singlesCupGames) * 100;
+    stats.singlesCupAverage =
+        (stats.singlesCupAgg - stats.singlesCupAggAgainst) /
+        stats.singlesCupGames;
+
+    // Pairs Cup
+    stats.pairsCupWinPerc = (stats.pairsCupWins / stats.pairsCupGames) * 100;
+    stats.pairsCupAverage =
+        (stats.pairsCupAgg - stats.pairsCupAggAgainst) / stats.pairsCupGames;
+
+    return stats;
 }

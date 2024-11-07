@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import facebook from '../images/socials/facebook_blue.png';
 import instagram from '../images/socials/insta_blue.png';
 import email from '../images/socials/email_blue.png';
@@ -10,46 +11,34 @@ const facebookEventsUrl = `${facebookUrl}/events`;
 const emailAddress = emailUrl.split('mailto:')[1];
 
 function Contact() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="contact-page" className="page-component center">
             <h1>CONTACT US</h1>
-            <p style={{ margin: 0 }}>Get in touch via email:</p>
-            <a style={{ textDecoration: 'none' }} href={emailUrl}>
-                <img className="logos" src={email} alt="Email link" />
-                {emailAddress}
-            </a>
-            <br />
-            <br />
-            <p style={{ margin: 0 }}>
-                Keep up to date with the latest news via our social media pages:
+            <p>
+                Get in touch via email:{' '}
+                <a className="link" href={emailUrl}>
+                    <img className="logos" src={email} alt="Email link" />
+                    {emailAddress}
+                </a>
             </p>
-            <a
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                href={instagramUrl}
-            >
-                <img className="logos" src={instagram} alt="Instagram link" />
-            </a>
-            <a
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                href={facebookUrl}
-            >
-                <img className="logos" src={facebook} alt="Facebook link" />
-            </a>
-            <br />
-            <br />
             <p>
                 See our upcoming{' '}
-                <a
-                    target="_blank"
-                    style={{ textDecoration: 'none' }}
-                    href={facebookEventsUrl}
-                >
+                <a target="_blank" className="link" href={facebookEventsUrl}>
                     events
                 </a>{' '}
-                on Facebook.
+                on Facebook and keep up to date with the latest news via our
+                social media pages:
             </p>
+            <a className="link" target="_blank" href={instagramUrl}>
+                <img className="logos" src={instagram} alt="Instagram link" />
+            </a>
+            <a className="link" target="_blank" href={facebookUrl}>
+                <img className="logos" src={facebook} alt="Facebook link" />
+            </a>
             <div>
                 <h1>LOCATION</h1>
                 <p>

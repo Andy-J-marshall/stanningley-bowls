@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     Card,
     Button,
@@ -15,6 +16,10 @@ const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 const { fullName } = config.teamNames;
 
 function History() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="history-page" className="page-component center">
             <h1>HISTORY</h1>
@@ -25,7 +30,7 @@ function History() {
             </p>
             <p>
                 There are a number of years missing,{' '}
-                <a style={{ textDecoration: 'none' }} href={emailUrl}>
+                <a className="link" href={emailUrl}>
                     contact us
                 </a>{' '}
                 if you can help fill in the gaps.

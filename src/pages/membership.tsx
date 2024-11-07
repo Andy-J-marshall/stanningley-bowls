@@ -1,13 +1,22 @@
+import { useEffect } from 'react';
 import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.png';
 
-const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } = config.membership;
+const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } =
+    config.membership;
 
 function Membership() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="members" className="center page-component">
             <h1>MEMBERSHIP</h1>
-            <p>{config.teamNames.fullName} welcomes new members of any age or experience level.</p>
+            <p>
+                {config.teamNames.fullName} welcomes new members of any age or
+                experience level.
+            </p>
             <p>
                 Fees apply to anyone over 16; children are welcome but must be
                 accompanied by an adult member.
@@ -18,7 +27,7 @@ function Membership() {
             </p>
             <p>
                 Please{' '}
-                <a style={{ textDecoration: 'none' }} href="/#/contact">
+                <a className="link" href="/#/contact">
                     contact us
                 </a>{' '}
                 or speak to a member if you are interested in joining.
@@ -30,8 +39,8 @@ function Membership() {
                 green access.
             </p>
             <p>
-                This includes the £{bowlingPriceOnly} membership fee plus the £{leedsCouncilFee}{' '}
-                Leeds Council season fee.
+                This includes the £{bowlingPriceOnly} membership fee plus the £
+                {leedsCouncilFee} Leeds Council season fee.
             </p>
             <p>
                 If you have already paid your annual green fee at another Leeds

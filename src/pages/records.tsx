@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import TeamTabs from '../components/teamTabs';
 import RecordsTableDisplay from '../components/recordsTableDisplay';
 import Wrapper from '../components/wrapper';
@@ -13,6 +14,10 @@ import {
 
 function Records(props: RecordsProps) {
     const stats = props.stats;
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =

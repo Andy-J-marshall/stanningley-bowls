@@ -185,9 +185,8 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayGamesPlayed > 0 && (
                         <div>
-                            <h3 style={{ marginTop: '0.5rem' }}>TOTAL</h3>
+                            <h3>TOTAL</h3>
                             <Row
-                                style={{ padding: 0, margin: '0 0.5rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -227,7 +226,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>HOME</h3>
                             <Row
-                                style={{ padding: 0, margin: '0 0.5rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -267,7 +265,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>AWAY</h3>
                             <Row
-                                style={{ padding: 0, margin: '0 0.5rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"
@@ -307,7 +304,6 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>CUP</h3>
                             <Row
-                                style={{ padding: 0, margin: '0 0.5rem' }}
                                 xs={2}
                                 md={5}
                                 className="g-4 align-items-start"

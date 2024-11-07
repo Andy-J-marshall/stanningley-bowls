@@ -19,7 +19,7 @@ function Search(props: SearchProps) {
             <Form.Group className="mb-3">
                 <Typeahead
                     id="search"
-                    placeholder="Player..."
+                    placeholder="Player Search..."
                     onChange={handleChange}
                     options={['SHOW ALL'].concat(searchList)}
                     selected={value}
@@ -51,12 +51,7 @@ function Search(props: SearchProps) {
             {searchedName && (
                 <Button
                     id="back-button"
-                    style={{
-                        margin: '1rem',
-                        backgroundColor: '#e7f1ff',
-                        color: 'black',
-                    }}
-                    variant="secondary"
+                    variant="outline-dark"
                     onClick={closeButtonCallback}
                 >
                     BACK TO SUMMARY

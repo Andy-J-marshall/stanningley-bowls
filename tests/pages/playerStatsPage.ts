@@ -25,11 +25,15 @@ export class PlayerStatsPage {
     private readonly totalWins: Locator;
     private readonly totalLosses: Locator;
     private readonly totalAverage: Locator;
-    private readonly teamCheckBox: Locator;
-    private readonly allYearCheckBox: Locator;
+    private readonly teamSwitch: Locator;
+    private readonly allYearSwitch: Locator;
     private readonly singlesOnlyRadio: Locator;
     private readonly pairsOnlyRadio: Locator;
     private readonly allGameTypesRadio: Locator;
+    private readonly homeOnlyRadio: Locator;
+    private readonly awayOnlyRadio: Locator;
+    private readonly cupOnlyRadio: Locator;
+    private readonly allVenuesRadio: Locator;
     private readonly totalPlayerCount: Locator;
 
     private games: Locator;
@@ -59,8 +63,8 @@ export class PlayerStatsPage {
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-        this.teamCheckBox = page.locator(
-            ".form-check input[id='#all-stats-select-checkbox']"
+        this.teamSwitch = page.locator(
+            ".form-check input[id='#all-stats-select-switch']"
         );
         this.singlesOnlyRadio = page.locator(
             ".form-check input[id='#only-singles-radio']"
@@ -71,8 +75,20 @@ export class PlayerStatsPage {
         this.allGameTypesRadio = page.locator(
             ".form-check input[id='#all-matches-radio']"
         );
-        this.allYearCheckBox = page.locator(
-            ".form-check input[id='#all-years-select-checkbox']"
+        this.allYearSwitch = page.locator(
+            ".form-check input[id='#all-years-select-switch']"
+        );
+        this.homeOnlyRadio = page.locator(
+            ".form-check input[id='#only-home-radio']"
+        );
+        this.awayOnlyRadio = page.locator(
+            ".form-check input[id='#only-away-radio']"
+        );
+        this.cupOnlyRadio = page.locator(
+            ".form-check input[id='#only-cup-radio']"
+        );
+        this.allVenuesRadio = page.locator(
+            ".form-check input[id='#all-venues-radio']"
         );
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
@@ -133,12 +149,12 @@ export class PlayerStatsPage {
         await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     }
 
-    async selectAllTeamStatsCheckbox() {
-        await this.teamCheckBox.check();
+    async selectAllTeamStatsSwitch() {
+        await this.teamSwitch.check();
     }
 
-    async deselectTeamStatsCheckbox() {
-        await this.teamCheckBox.uncheck();
+    async deselectTeamStatsSwitch() {
+        await this.teamSwitch.uncheck();
     }
 
     async selectSinglesOnlyRadio() {
@@ -153,12 +169,28 @@ export class PlayerStatsPage {
         await this.allGameTypesRadio.check();
     }
 
-    async selectSince2013Checkbox() {
-        await this.allYearCheckBox.check();
+    async selectHomeOnlyRadio() {
+        await this.homeOnlyRadio.check();
     }
 
-    async deselectSince2013Checkbox() {
-        await this.allYearCheckBox.uncheck();
+    async selectAwayOnlyRadio() {
+        await this.awayOnlyRadio.check();
+    }
+
+    async selectCupOnlyRadio() {
+        await this.cupOnlyRadio.check();
+    }
+
+    async selectAllVenuesRadio() {
+        await this.allVenuesRadio.check();
+    }
+
+    async selectSince2013Switch() {
+        await this.allYearSwitch.check();
+    }
+
+    async deselectSince2013Switch() {
+        await this.allYearSwitch.uncheck();
     }
 
     async totalPlayerCountIsCorrect(playerCount: number) {

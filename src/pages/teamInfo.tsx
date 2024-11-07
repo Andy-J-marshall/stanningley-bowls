@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import monImg from '../images/websiteImages/mon-team.png';
 import tuesVetsImg from '../images/websiteImages/tuesVets-team.png';
@@ -36,6 +37,10 @@ teams.forEach((team) => {
 });
 
 function TeamInfo() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div id="team-info" className="page-component center">
             <h1>TEAM INFORMATION</h1>
