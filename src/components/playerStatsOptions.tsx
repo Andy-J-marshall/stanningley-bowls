@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Form, InputGroup, Row, Col, Accordion } from 'react-bootstrap';
+import { Form, InputGroup, Row, Col } from 'react-bootstrap';
 import { PlayerStatsOptionsProps } from '../types/interfaces';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
@@ -119,135 +119,113 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     return (
         <div className="stats-filters center">
             {!playerSearchedFor && (
-                <Accordion defaultActiveKey="0">
-                    <Accordion.Item eventKey="0">
-                        <Accordion.Header>FILTERS</Accordion.Header>
-                        <Accordion.Body>
-                            <Form>
-                                <Form.Group
-                                    className="mb-2"
-                                    controlId="searchOptions"
-                                >
-                                    <Row className="g-4 align-items-start">
-                                        <Col sm={12} md={4}>
-                                            <h6>STAT OPTIONS</h6>
-                                            <Form.Check
-                                                inline
-                                                key={crypto.randomUUID()}
-                                                id="#all-stats-select-switch"
-                                                onChange={toggleAllTeamStats}
-                                                type="switch"
-                                                label="Include other teams"
-                                                checked={allTeamsToggle}
-                                            />
-                                            <Form.Check
-                                                inline
-                                                key={crypto.randomUUID()}
-                                                id="#all-years-select-switch"
-                                                onChange={toggleAllYearStats}
-                                                type="switch"
-                                                label="Combine all years"
-                                                checked={allYearToggle}
-                                            />
-                                        </Col>
-                                        <Col xs={12} md={4}>
-                                            <h6>GAME TYPES</h6>
-                                            <InputGroup>
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#all-matches-radio"
-                                                    onChange={toggleAllMatches}
-                                                    name="gameTypeOptions"
-                                                    type="radio"
-                                                    label="All"
-                                                    checked={allGameTypesToggle}
-                                                />
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#only-singles-radio"
-                                                    onChange={
-                                                        toggleSinglesOnlyMatches
-                                                    }
-                                                    name="gameTypeOptions"
-                                                    type="radio"
-                                                    label="Singles"
-                                                    checked={singlesOnlyToggle}
-                                                />
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#only-pairs-radio"
-                                                    onChange={
-                                                        togglePairsOnlyMatches
-                                                    }
-                                                    name="gameTypeOptions"
-                                                    type="radio"
-                                                    label="Pairs"
-                                                    checked={pairsOnlyToggle}
-                                                />
-                                            </InputGroup>
-                                        </Col>
-                                        <Col xs={12} md={4}>
-                                            <h6>VENUE</h6>
-                                            <InputGroup>
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#all-venues-radio"
-                                                    onChange={
-                                                        toggleAllVenuesMatches
-                                                    }
-                                                    name="gameVenueOptions"
-                                                    type="radio"
-                                                    label="All"
-                                                    checked={allVenuesToggle}
-                                                />
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#only-home-radio"
-                                                    onChange={
-                                                        toggleHomeOnlyMatches
-                                                    }
-                                                    name="gameVenueOptions"
-                                                    type="radio"
-                                                    label="Home"
-                                                    checked={homeOnlyToggle}
-                                                />
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#only-away-radio"
-                                                    onChange={
-                                                        toggleAwayOnlyMatches
-                                                    }
-                                                    name="gameVenueOptions"
-                                                    type="radio"
-                                                    label="Away"
-                                                    checked={awayOnlyToggle}
-                                                />
-                                                <Form.Check
-                                                    inline
-                                                    key={crypto.randomUUID()}
-                                                    id="#only-cup-radio"
-                                                    onChange={
-                                                        toggleCupOnlyMatches
-                                                    }
-                                                    name="gameVenueOptions"
-                                                    type="radio"
-                                                    label="Cup"
-                                                    checked={cupOnlyToggle}
-                                                />
-                                            </InputGroup>
-                                        </Col>
-                                    </Row>
-                                </Form.Group>
-                            </Form>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Accordion>
+                <Form>
+                    <Form.Group className="mb-2" controlId="searchOptions">
+                        <Row className="g-4 align-items-start">
+                            <Col xs={12} md={4}>
+                                <h6>OPTIONS</h6>
+                                <Form.Check
+                                    inline
+                                    key={crypto.randomUUID()}
+                                    id="#all-stats-select-switch"
+                                    onChange={toggleAllTeamStats}
+                                    type="switch"
+                                    label="Include other teams"
+                                    checked={allTeamsToggle}
+                                />
+                                <Form.Check
+                                    inline
+                                    key={crypto.randomUUID()}
+                                    id="#all-years-select-switch"
+                                    onChange={toggleAllYearStats}
+                                    type="switch"
+                                    label="Combine all years"
+                                    checked={allYearToggle}
+                                />
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <h6>GAME TYPES</h6>
+                                <InputGroup>
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#all-matches-radio"
+                                        onChange={toggleAllMatches}
+                                        name="gameTypeOptions"
+                                        type="radio"
+                                        label="All"
+                                        checked={allGameTypesToggle}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#only-singles-radio"
+                                        onChange={toggleSinglesOnlyMatches}
+                                        name="gameTypeOptions"
+                                        type="radio"
+                                        label="Singles"
+                                        checked={singlesOnlyToggle}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#only-pairs-radio"
+                                        onChange={togglePairsOnlyMatches}
+                                        name="gameTypeOptions"
+                                        type="radio"
+                                        label="Pairs"
+                                        checked={pairsOnlyToggle}
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <h6>VENUE</h6>
+                                <InputGroup>
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#all-venues-radio"
+                                        onChange={toggleAllVenuesMatches}
+                                        name="gameVenueOptions"
+                                        type="radio"
+                                        label="All"
+                                        checked={allVenuesToggle}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#only-home-radio"
+                                        onChange={toggleHomeOnlyMatches}
+                                        name="gameVenueOptions"
+                                        type="radio"
+                                        label="Home"
+                                        checked={homeOnlyToggle}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#only-away-radio"
+                                        onChange={toggleAwayOnlyMatches}
+                                        name="gameVenueOptions"
+                                        type="radio"
+                                        label="Away"
+                                        checked={awayOnlyToggle}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        key={crypto.randomUUID()}
+                                        id="#only-cup-radio"
+                                        onChange={toggleCupOnlyMatches}
+                                        name="gameVenueOptions"
+                                        type="radio"
+                                        label="Cup"
+                                        checked={cupOnlyToggle}
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                    </Form.Group>
+                </Form>
             )}
         </div>
     );
