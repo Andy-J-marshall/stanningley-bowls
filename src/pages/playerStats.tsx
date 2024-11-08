@@ -94,14 +94,57 @@ function PlayerStats(props: PlayerStatsProps) {
         }
     });
 
-    function allTeamStatsCallback(showAllBoolean: boolean) {
-        if (showAllBoolean) {
+    function scrollToBottom() {
+        setTimeout(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+        }, 0);
+    }
+
+    function allYearStatsCallback(showBool: boolean) {
+        setShowStatsSinceStart(showBool);
+
+        scrollToBottom();
+    }
+
+    function allTeamStatsCallback(showBool: boolean) {
+        setShowStatSummary(showBool);
+        if (showBool) {
             setStatsToUse(combinedPlayerResults);
-            setShowStatSummary(true);
         } else {
             setStatsToUse(playerResults);
-            setShowStatSummary(false);
         }
+
+        scrollToBottom();
+    }
+
+    function onlySinglesCallback(showBool: boolean) {
+        setShowSinglesOnlyBool(showBool);
+
+        scrollToBottom();
+    }
+
+    function onlyPairsCallback(showBool: boolean) {
+        setShowPairsOnlyBool(showBool);
+
+        scrollToBottom();
+    }
+
+    function onlyHomeCallback(showBool: boolean) {
+        setShowHomeOnlyBool(showBool);
+
+        scrollToBottom();
+    }
+
+    function onlyAwayCallback(showBool: boolean) {
+        setShowAwayOnlyBool(showBool);
+
+        scrollToBottom();
+    }
+
+    function onlyCupCallback(showBool: boolean) {
+        setShowCupOnlyBool(showBool);
+
+        scrollToBottom();
     }
 
     const handleSearchChange = async (selected: any) => {
@@ -220,12 +263,12 @@ function PlayerStats(props: PlayerStatsProps) {
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={setShowStatsSinceStart}
-                onlySinglesCallback={setShowSinglesOnlyBool}
-                onlyPairsCallback={setShowPairsOnlyBool}
-                onlyHomeCallback={setShowHomeOnlyBool}
-                onlyAwayCallback={setShowAwayOnlyBool}
-                onlyCupCallback={setShowCupOnlyBool}
+                allYearStatsCallback={allYearStatsCallback}
+                onlySinglesCallback={onlySinglesCallback}
+                onlyPairsCallback={onlyPairsCallback}
+                onlyHomeCallback={onlyHomeCallback}
+                onlyAwayCallback={onlyAwayCallback}
+                onlyCupCallback={onlyCupCallback}
                 playerSearchedFor={searchedPlayerName}
             />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
