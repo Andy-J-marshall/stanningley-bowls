@@ -205,6 +205,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
+        // TODO could do every year stats here too, but would need a new function to get returnPlayerStatsForTeam for all years
         const statsArrayForTeam = returnPlayerStatsForTeam(
             statsToUse,
             'tuesday leeds'
