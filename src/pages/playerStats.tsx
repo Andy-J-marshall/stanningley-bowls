@@ -15,6 +15,7 @@ import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
+import { returnPlayerStatsForTeam } from '../helpers/teamStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -31,6 +32,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
+    const [teamSpecificStats, setTeamSpecificStats] = useState(false);
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
@@ -142,6 +144,12 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
+    function teamSpecificCallback(showBool: boolean) {
+        setTeamSpecificStats(showBool);
+
+        scrollToBottom();
+    }
+
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -197,14 +205,20 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
+        const statsArrayForTeam = returnPlayerStatsForTeam(
+            statsToUse,
+            'tuesday leeds'
+        );
         const statsArray = showStatsSinceStart
             ? everyYearStatsSummaryArray
             : statsSummaryArray;
 
+        const stats = teamSpecificStats ? statsArrayForTeam : statsArray;
+
         return (
             <PlayerStatSummary
                 callback={setSearchedPlayerName}
-                playerStats={statsArray}
+                playerStats={stats}
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
                 showHomeOnly={showHomeOnlyBool}
@@ -253,6 +267,9 @@ function PlayerStats(props: PlayerStatsProps) {
                 !showHomeOnlyBool &&
                 !showAwayOnlyBool &&
                 !showCupOnlyBool &&
+                // TODO update this
+                !teamSpecificStats &&
+                // TODO this is showing as 0?
                 !showStatSummary && (
                     <p id="total-player-count">
                         Total players: {totalPlayersUsed}
@@ -262,6 +279,7 @@ function PlayerStats(props: PlayerStatsProps) {
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
+                teamSpecificCallback={teamSpecificCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
                 onlyHomeCallback={onlyHomeCallback}

@@ -5,6 +5,7 @@ import { PlayerStatsOptionsProps } from '../types/interfaces';
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
+    const teamSpecificCallback = props.teamSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
     const onlyHomeCallback = props.onlyHomeCallback;
@@ -14,6 +15,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
+    const [specificTeamToggle, setSpecificTeamToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
     const [allGameTypesToggle, setAllGameTypesToggle] = useState(true);
@@ -21,11 +23,35 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [homeOnlyToggle, setHomeOnlyToggle] = useState(false);
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
+    const [disableOption, setDisableOption] = useState(false);
 
     function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
+    }
+
+    function toggleSpecificTeamStats(
+        event: React.ChangeEvent<HTMLInputElement>
+    ) {
+        const specificTeamStatsToggle = event.currentTarget.checked;
+
+        setSpecificTeamToggle(specificTeamStatsToggle);
+        teamSpecificCallback(specificTeamStatsToggle);
+
+        setAllYearToggle(false);
+        setAllTeamsToggle(false);
+        
+        setAllGameTypesToggle(true);
+        setPairsOnlyToggle(false);
+        setSinglesOnlyToggle(false);
+
+        setAllVenuesToggle(true);
+        setHomeOnlyToggle(false);
+        setAwayOnlyToggle(false);
+        setCupOnlyToggle(false);
+
+        setDisableOption(specificTeamStatsToggle);
     }
 
     function toggleSinglesOnlyMatches() {
@@ -117,6 +143,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     return (
+        // TODO sort out display of options
         <div className="stats-filters center">
             {!playerSearchedFor && (
                 <Form>
@@ -132,7 +159,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     type="switch"
                                     label="Include other teams"
                                     checked={allTeamsToggle}
+                                    disabled={disableOption}
                                 />
+                                {/* TODO could possibly show all year options? */}
                                 <Form.Check
                                     inline
                                     key={crypto.randomUUID()}
@@ -141,6 +170,17 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     type="switch"
                                     label="Combine all years"
                                     checked={allYearToggle}
+                                    disabled={disableOption}
+                                />
+                                {/* TODO add a drop down for this? Or radio buttons? */}
+                                <Form.Check
+                                    inline
+                                    key={crypto.randomUUID()}
+                                    id="#team-select-switch"
+                                    onChange={toggleSpecificTeamStats}
+                                    type="switch"
+                                    label="Team specific"
+                                    checked={specificTeamToggle}
                                 />
                             </Col>
                             <Col xs={12} md={4}>
@@ -155,6 +195,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="All"
                                         checked={allGameTypesToggle}
+                                        disabled={disableOption}
                                     />
                                     <Form.Check
                                         inline
@@ -165,6 +206,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Singles"
                                         checked={singlesOnlyToggle}
+                                        disabled={disableOption}
                                     />
                                     <Form.Check
                                         inline
@@ -175,6 +217,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Pairs"
                                         checked={pairsOnlyToggle}
+                                        disabled={disableOption}
                                     />
                                 </InputGroup>
                             </Col>
@@ -190,6 +233,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="All"
                                         checked={allVenuesToggle}
+                                        disabled={disableOption}
                                     />
                                     <Form.Check
                                         inline
@@ -200,6 +244,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Home"
                                         checked={homeOnlyToggle}
+                                        disabled={disableOption}
                                     />
                                     <Form.Check
                                         inline
@@ -210,6 +255,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Away"
                                         checked={awayOnlyToggle}
+                                        disabled={disableOption}
                                     />
                                     <Form.Check
                                         inline
@@ -220,6 +266,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Cup"
                                         checked={cupOnlyToggle}
+                                        disabled={disableOption}
                                     />
                                 </InputGroup>
                             </Col>
