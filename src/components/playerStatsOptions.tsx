@@ -39,19 +39,31 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         setSpecificTeamToggle(specificTeamStatsToggle);
         teamSpecificCallback(specificTeamStatsToggle);
 
-        setAllYearToggle(false);
-        setAllTeamsToggle(false);
-        
         setAllGameTypesToggle(true);
-        setPairsOnlyToggle(false);
-        setSinglesOnlyToggle(false);
-
         setAllVenuesToggle(true);
-        setHomeOnlyToggle(false);
-        setAwayOnlyToggle(false);
-        setCupOnlyToggle(false);
 
         setDisableOption(specificTeamStatsToggle);
+
+        setAllYearToggle(false);
+        allYearStatsCallback(false);
+
+        setAllTeamsToggle(false);
+        allTeamStatsCallback(false);
+
+        setSinglesOnlyToggle(false);
+        onlySinglesCallback(false);
+
+        setPairsOnlyToggle(false);
+        onlyPairsCallback(false);
+
+        setHomeOnlyToggle(false);
+        onlyHomeCallback(false);
+
+        setAwayOnlyToggle(false);
+        onlyAwayCallback(false);
+
+        setCupOnlyToggle(false);
+        onlyCupCallback(false);
     }
 
     function toggleSinglesOnlyMatches() {
