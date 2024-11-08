@@ -204,3 +204,4 @@ Update team info in all components:
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
 -   Add a documents page e.g. membership form, useful links, rules etc.
+-   add team filter to player stats
