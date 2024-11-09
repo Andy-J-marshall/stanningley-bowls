@@ -208,11 +208,16 @@ function PlayerStats(props: PlayerStatsProps) {
         // TODO refactor
         let statsArrayForTeam;
         if (teamSpecificStats) {
+            if (!teamNames.includes(teamSpecificStats)) {
+                return <h3>Team not found</h3>;
+            }
+
             statsArrayForTeam = returnPlayerStatsForTeam(
                 statsToUse,
                 teamSpecificStats
             );
         }
+
         const statsArray = showStatsSinceStart
             ? everyYearStatsSummaryArray
             : statsSummaryArray;
