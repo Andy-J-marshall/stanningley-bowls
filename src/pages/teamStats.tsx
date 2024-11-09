@@ -11,7 +11,7 @@ import { findTeamStats } from '../helpers/teamStatsHelper';
 function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;
 
-    const { playerResults, teamResults } = stats;
+    const { teamResults } = stats;
     const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
@@ -42,7 +42,6 @@ function TeamStats(props: TeamStatsProps) {
                                         <IndividualTeamStats
                                             day={teamName}
                                             stats={teamStats}
-                                            playerStats={playerResults}
                                         />
                                     )}
                                     {bTeamStats && (
@@ -58,7 +57,6 @@ function TeamStats(props: TeamStatsProps) {
                                                 ' (b)'
                                             }
                                             stats={bTeamStats}
-                                            playerStats={playerResults}
                                         />
                                     )}
                                     <br />

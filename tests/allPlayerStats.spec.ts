@@ -182,8 +182,3 @@ test('Summary of Bernie Miller stats since 2013 for all teams is correct', async
     await playerStatsPage.selectPairsOnlyRadio();
     playerStatsPage.playerStatsAreCorrectInTable(62, 31, '50%', 2.08);
 });
-
-test('Total player count is not visible for all team stats', async () => {
-    await playerStatsPage.selectAllTeamStatsSwitch();
-    await playerStatsPage.totalPlayerCountIsNotVisible();
-});

@@ -1,14 +1,11 @@
 import TeamStatsTable from './teamStatsTable';
-import PlayerStatSummary from './playerStatSummary';
 import { config } from '../config';
 import { IndividualTeamStatsProps } from '../types/interfaces';
-import { returnPlayerStatsForTeam } from '../helpers/teamStatsHelper';
 
 function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const day = props.day;
     const displayName = props.displayname; // this is used by TeamTabs component
     const stats = props.stats;
-    const playerStats = props.playerStats;
 
     if (stats) {
         const {
@@ -23,8 +20,6 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
             agg,
             opponentAgg,
         } = stats;
-
-        const playerStatsForDay = returnPlayerStatsForTeam(playerStats, day);
 
         const totalDraws = awayDraws + homeDraws;
         const totalWins = awayWins + homeWins + cupWins;
@@ -54,9 +49,6 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
                         homeDraws={homeDraws}
                         awayDraws={awayDraws}
                     />
-                    <br />
-                    <h4>PLAYERS</h4>
-                    <PlayerStatSummary playerStats={playerStatsForDay} />
                 </div>
             );
         } else {

@@ -36,7 +36,6 @@ export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
     stats: TeamResultsStatsFile;
-    playerStats: PlayerResultsStatsFile;
 }
 
 export interface ListProps {
