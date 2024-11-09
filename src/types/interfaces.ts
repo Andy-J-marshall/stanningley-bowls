@@ -52,13 +52,14 @@ export interface StatsTileProps {
 export interface PlayerStatsOptionsProps {
     allTeamStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
-    teamSpecificCallback: (toggle: boolean) => void;
+    teamSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;
     onlyPairsCallback: (toggle: boolean) => void;
     onlyHomeCallback: (toggle: boolean) => void;
     onlyAwayCallback: (toggle: boolean) => void;
     onlyCupCallback: (toggle: boolean) => void;
     playerSearchedFor: string;
+    teamNames: string[];
 }
 
 export interface PlayerStatsProps {

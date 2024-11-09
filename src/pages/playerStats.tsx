@@ -15,7 +15,10 @@ import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
-import { returnPlayerStatsForTeam } from '../helpers/teamStatsHelper';
+import {
+    returnPlayerStatsForTeam,
+    returnTeamNamesWithGames,
+} from '../helpers/teamStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -32,7 +35,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [teamSpecificStats, setTeamSpecificStats] = useState(false);
+    const [teamSpecificStats, setTeamSpecificStats] = useState('');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
@@ -42,6 +45,8 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
+
+    // TODO refactor these a bit?
 
     // Find list of players and save to an array
     const players = Object.keys(combinedPlayerResults).sort();
@@ -53,6 +58,7 @@ function PlayerStats(props: PlayerStatsProps) {
         });
     });
     const allPlayers = Array.from(allPlayersSet).sort();
+    const teamNames = returnTeamNamesWithGames(playerResults);
 
     const everyYearStatsSummaryArray: PlayerStatsSummary[] =
         returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
@@ -136,8 +142,8 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
-    function teamSpecificCallback(showBool: boolean) {
-        setTeamSpecificStats(showBool);
+    function teamSpecificCallback(teamName: string) {
+        setTeamSpecificStats(teamName);
 
         scrollToBottom();
     }
@@ -198,10 +204,14 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function returnStatSummaryTable() {
         // TODO could do every year stats here too, but would need a new function to get returnPlayerStatsForTeam for all years
-        const statsArrayForTeam = returnPlayerStatsForTeam(
-            statsToUse,
-            'tuesday leeds'
-        );
+        // TODO refactor
+        let statsArrayForTeam;
+        if (teamSpecificStats) {
+            statsArrayForTeam = returnPlayerStatsForTeam(
+                statsToUse,
+                teamSpecificStats
+            );
+        }
         const statsArray = showStatsSinceStart
             ? everyYearStatsSummaryArray
             : statsSummaryArray;
@@ -263,6 +273,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
                 playerSearchedFor={searchedPlayerName}
+                teamNames={teamNames}
             />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
