@@ -8,7 +8,7 @@ import {
     Dropdown,
 } from 'react-bootstrap';
 import { PlayerStatsOptionsProps } from '../types/interfaces';
-import { capitalizeText } from '../helpers/utils';
+import { formatTeamName } from '../helpers/utils';
 
 // TODO create unit tests for 3(?) new functions
 // TODO create UI tests
@@ -35,7 +35,11 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
-    const [teamDropdownTitle, setTeamDropdownTitle] = useState('Teams');
+
+    const defaultTeamDropdownTitle = 'All Teams';
+    const [teamDropdownTitle, setTeamDropdownTitle] = useState(
+        defaultTeamDropdownTitle
+    );
 
     function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
@@ -48,9 +52,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllTeamsToggle(false);
             teamSpecificCallback('');
             setDisableOtherOptions(false);
-            setTeamDropdownTitle('Teams');
+            setTeamDropdownTitle(defaultTeamDropdownTitle);
         } else {
-            setTeamDropdownTitle(capitalizeText([teamName]));
+            setTeamDropdownTitle(formatTeamName(teamName));
             teamSpecificCallback(teamName);
 
             setAllGameTypesToggle(true);
@@ -197,7 +201,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                             <Col xs={12} md={3}>
                                 <h6>TEAMS</h6>
                                 {/* TODO fix the width of the button? */}
-                                {/* TODO direction of dropdown? */}
                                 <DropdownButton
                                     size="sm" // TODO or lg?
                                     // variant="Secondary" // TODO or secondary?
@@ -212,6 +215,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     >
                                         All Teams
                                     </Dropdown.Item>
+                                    <Dropdown.Divider />
                                     {teamNames.map((teamName, index) => (
                                         <Dropdown.Item
                                             key={index}
@@ -222,8 +226,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 )
                                             }
                                         >
-                                            {/* TODO also need to capitalise the (b)? */}
-                                            {capitalizeText([teamName])}
+                                            {formatTeamName(teamName)}
                                         </Dropdown.Item>
                                     ))}
                                 </DropdownButton>
