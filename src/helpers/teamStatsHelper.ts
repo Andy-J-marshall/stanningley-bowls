@@ -66,10 +66,6 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     };
 }
 
-export function returnPlayerStatsForAllYears() {
-    // TODO
-}
-
 export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     const playerNames = Object.keys(playerStats).sort();
     const daysPlayed: string[] = [];
@@ -103,6 +99,7 @@ export function returnPlayerStatsForTeam(
                 wins,
                 average: aggDiff / games,
                 winPerc: (wins / games) * 100,
+                aggDiff
             };
             playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
             return playerDayStats;

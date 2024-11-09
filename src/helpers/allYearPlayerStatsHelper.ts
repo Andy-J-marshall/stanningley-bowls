@@ -3,12 +3,16 @@ import {
     FullStatsFile,
     PlayerResultsStatsFile,
     PlayerStatsSummary,
+    PlayerStatsTeamSummary,
 } from '../types/interfaces';
 import {
     calculateWinPercAndAverage,
     returnPlayerStats,
 } from './playerStatsHelper';
-import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
+import {
+    checkAllWinPercAndAverageAreNumbers,
+    checkWinPercAndAverageAreNumbers,
+} from './statsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
@@ -314,4 +318,52 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     });
 
     return collatedStats;
+}
+
+export function returnTeamPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
+    const statsToDisplayArray: PlayerStatsTeamSummary[] = [];
+    let playerNames: string[] = [];
+
+    // TODO what is this doing?!
+    statsArray.forEach((stat) => {
+        playerNames = playerNames.concat(Object.keys(stat.playerResults));
+    });
+    for (var i = 0; i < playerNames.length; ++i) {
+        for (var j = i + 1; j < playerNames.length; ++j) {
+            if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
+        }
+    }
+
+    playerNames.sort().forEach((player) => {
+        let stats: PlayerStatsTeamSummary = {
+            player,
+            games: 0,
+            wins: 0,
+            winPerc: 0,
+            average: 0,
+            aggDiff: 0,
+        };
+
+        statsArray.forEach((yearStats) => {
+            const playerStats = returnPlayerStats(
+                yearStats.playerResults,
+                player
+            );
+
+            if (playerStats) {
+                // All
+                stats.games += playerStats.gamesPlayed;
+                stats.wins += playerStats.totalWins;
+            }
+        });
+
+        stats.winPerc = (stats.wins / stats.games) * 100;
+        stats.average = stats.aggDiff / stats.games;
+
+        stats = checkWinPercAndAverageAreNumbers(stats);
+
+        statsToDisplayArray.push(stats);
+    });
+
+    return statsToDisplayArray;
 }

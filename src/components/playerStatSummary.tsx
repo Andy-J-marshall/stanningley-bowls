@@ -255,7 +255,16 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             const winPerc = wins && (wins / games) * 100;
             const playerName = player.player;
 
-            return { player: playerName, games, average, wins, winPerc };
+            const playerObject = {
+                player: playerName,
+                games,
+                average,
+                wins,
+                winPerc,
+                aggDiff: NaN, // Not used in this component
+            };
+
+            return playerObject;
         });
 
         return statsToUse;

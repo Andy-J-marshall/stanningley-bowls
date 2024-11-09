@@ -127,6 +127,7 @@ export interface PlayerStatsTeamSummary {
     wins: number;
     winPerc: number;
     average: number;
+    aggDiff: number;
 }
 
 export interface PlayerStatsSummary {
