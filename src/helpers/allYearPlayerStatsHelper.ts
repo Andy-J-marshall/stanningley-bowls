@@ -317,6 +317,30 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     return collatedStats;
 }
 
+// TODO can I call the other function from this?
+export function returnTeamNamesWithGamesForAllYears(
+    playerStatsArray: FullStatsFile[]
+) {
+    const daysPlayed: string[] = [];
+
+    playerStatsArray.forEach((playerStats) => {
+        const playerNames = Object.keys(playerStats.playerResults).sort();
+
+        playerNames.forEach((player) => {
+            const possibleDays = Object.keys(playerStats.playerResults[player]);
+            possibleDays.forEach((day) => {
+                const stats = playerStats.playerResults[player][day];
+                if (stats?.games > 0) {
+                    daysPlayed.push(day);
+                }
+            });
+        });
+    });
+
+    const uniqueDays = Array.from(new Set(daysPlayed)).sort();
+    return uniqueDays;
+}
+
 export function returnTeamPlayerStatsForAllYears(
     statsArray: FullStatsFile[],
     day: string

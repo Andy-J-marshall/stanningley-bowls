@@ -100,7 +100,7 @@ export function returnPlayerStatsForTeam(
                 wins,
                 average: aggDiff / games,
                 winPerc: (wins / games) * 100,
-                aggDiff
+                aggDiff,
             };
             playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
             return playerDayStats;

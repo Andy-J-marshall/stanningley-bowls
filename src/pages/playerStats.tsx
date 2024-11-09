@@ -18,6 +18,7 @@ import {
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
+    returnTeamNamesWithGamesForAllYears,
     returnTeamPlayerStatsForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
 import {
@@ -64,6 +65,9 @@ function PlayerStats(props: PlayerStatsProps) {
     });
     const allPlayers = Array.from(allPlayersSet).sort();
     const teamNames = returnTeamNamesWithGames(playerResults);
+    const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
+        statsForEveryYearArray
+    );
 
     const everyYearStatsSummaryArray: PlayerStatsSummary[] =
         returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
@@ -149,10 +153,6 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function teamSpecificCallback(teamName: string) {
         setTeamSpecificStats(teamName);
-
-        const a = returnTeamPlayerStatsForAllYears(statsForEveryYearArray, teamName); // TODO remove
-        console.log(a);
-        
 
         scrollToBottom();
     }
