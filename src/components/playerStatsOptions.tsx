@@ -47,8 +47,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setDisableOtherOptions(false);
             setTeamDropdownTitle('Teams');
         } else {
-            teamSpecificCallback(teamName);
             setTeamDropdownTitle(capitalizeText([teamName]));
+            teamSpecificCallback(teamName);
 
             setAllGameTypesToggle(true);
             setAllVenuesToggle(true);

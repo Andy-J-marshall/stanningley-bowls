@@ -18,6 +18,7 @@ import {
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
+    returnTeamPlayerStatsForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
 import {
     returnPlayerStatsForTeam,
@@ -148,6 +149,10 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function teamSpecificCallback(teamName: string) {
         setTeamSpecificStats(teamName);
+
+        const a = returnTeamPlayerStatsForAllYears(statsForEveryYearArray, teamName); // TODO remove
+        console.log(a);
+        
 
         scrollToBottom();
     }

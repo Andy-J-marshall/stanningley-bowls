@@ -18,16 +18,13 @@ export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
 ) {
     const statsToDisplayArray: PlayerStatsSummary[] = [];
-    let playerNames: string[] = [];
 
+    let playerNames: string[] = [];
     statsArray.forEach((stat) => {
         playerNames = playerNames.concat(Object.keys(stat.playerResults));
     });
-    for (var i = 0; i < playerNames.length; ++i) {
-        for (var j = i + 1; j < playerNames.length; ++j) {
-            if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
-        }
-    }
+    // Remove duplicate player names
+    playerNames = Array.from(new Set(playerNames));
 
     playerNames.sort().forEach((player) => {
         let stats: PlayerStatsSummary = {
@@ -320,19 +317,18 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     return collatedStats;
 }
 
-export function returnTeamPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
+export function returnTeamPlayerStatsForAllYears(
+    statsArray: FullStatsFile[],
+    day: string
+) {
     const statsToDisplayArray: PlayerStatsTeamSummary[] = [];
-    let playerNames: string[] = [];
 
-    // TODO what is this doing?!
+    let playerNames: string[] = [];
     statsArray.forEach((stat) => {
         playerNames = playerNames.concat(Object.keys(stat.playerResults));
     });
-    for (var i = 0; i < playerNames.length; ++i) {
-        for (var j = i + 1; j < playerNames.length; ++j) {
-            if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
-        }
-    }
+    // Remove duplicate player names
+    playerNames = Array.from(new Set(playerNames));
 
     playerNames.sort().forEach((player) => {
         let stats: PlayerStatsTeamSummary = {
@@ -345,14 +341,12 @@ export function returnTeamPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
         };
 
         statsArray.forEach((yearStats) => {
-            const playerStats = returnPlayerStats(
-                yearStats.playerResults,
-                player
-            );
+            const dayStats = yearStats.playerResults[player]?.[day];
 
-            if (playerStats) {
-                stats.games += playerStats.gamesPlayed;
-                stats.wins += playerStats.totalWins;
+            if (dayStats) {
+                stats.games += dayStats.games;
+                stats.wins += dayStats.wins;
+                stats.aggDiff += dayStats.aggDiff;
             }
         });
 

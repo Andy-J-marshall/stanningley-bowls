@@ -66,6 +66,7 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     };
 }
 
+// TODO this method for all years too
 export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     const playerNames = Object.keys(playerStats).sort();
     const daysPlayed: string[] = [];
