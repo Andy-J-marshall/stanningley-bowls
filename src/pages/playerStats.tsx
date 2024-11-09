@@ -72,6 +72,26 @@ function PlayerStats(props: PlayerStatsProps) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
+
+        let playersWithGames = [];
+        if (showStatsSinceStart) {
+            playersWithGames = everyYearStatsSummaryArray.filter(
+                (player) => player.games > 0
+            );
+        } else {
+            playersWithGames = statsSummaryArray.filter(
+                (player) => player.games > 0
+            );
+        }
+        setTotalPlayersUsed(playersWithGames.length);
+
+        if (showStatSummary) {
+            setStatsToUse(combinedPlayerResults);
+            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
+        } else {
+            setStatsToUse(playerResults);
+            setAllYearsStatsToUseArray(statsForEveryYearArray);
+        }
     });
 
     function scrollToBottom() {
@@ -83,19 +103,6 @@ function PlayerStats(props: PlayerStatsProps) {
     function allYearStatsCallback(showBool: boolean) {
         setShowStatsSinceStart(showBool);
 
-        let playersWithGames = [];
-        if (showBool) {
-            playersWithGames = everyYearStatsSummaryArray.filter(
-                (player) => player.games > 0
-            );
-        } else {
-            playersWithGames = statsSummaryArray.filter(
-                (player) => player.games > 0
-            );
-        }
-
-        setTotalPlayersUsed(playersWithGames.length);
-
         scrollToBottom();
     }
 
@@ -103,10 +110,8 @@ function PlayerStats(props: PlayerStatsProps) {
         setShowStatSummary(showBool);
         if (showBool) {
             setStatsToUse(combinedPlayerResults);
-            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
-            setAllYearsStatsToUseArray(statsForEveryYearArray);
         }
 
         scrollToBottom();
@@ -250,9 +255,6 @@ function PlayerStats(props: PlayerStatsProps) {
             {!showSinglesOnlyBool &&
                 !searchedPlayerName &&
                 !showPairsOnlyBool &&
-                !showHomeOnlyBool &&
-                !showAwayOnlyBool &&
-                !showCupOnlyBool &&
                 !showStatSummary && (
                     <p id="total-player-count">
                         Total players: {totalPlayersUsed}
