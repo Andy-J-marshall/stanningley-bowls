@@ -66,7 +66,6 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     };
 }
 
-// TODO this method for all years too
 // TODO possible to reuse this method?
 export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     const playerNames = Object.keys(playerStats).sort();
@@ -90,6 +89,8 @@ export function returnPlayerStatsForTeam(
     playerStats: PlayerResultsStatsFile,
     day: string
 ) {
+    // TODO erroring here when switching back and forth between years?
+    // Uncaught TypeError: Cannot destructure property 'games' of 'stats' as it is undefined.
     const allPlayerStats = Object.keys(playerStats)
         .sort()
         .map((player) => {

@@ -13,6 +13,7 @@ import {
     checkAllWinPercAndAverageAreNumbers,
     checkWinPercAndAverageAreNumbers,
 } from './statsHelper';
+import { returnTeamNamesWithGames } from './teamStatsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
@@ -317,7 +318,6 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     return collatedStats;
 }
 
-// TODO can I call the other function from this?
 // TODO possible to reuse this method?
 export function returnTeamNamesWithGamesForAllYears(
     playerStatsArray: FullStatsFile[]
@@ -325,17 +325,8 @@ export function returnTeamNamesWithGamesForAllYears(
     const daysPlayed: string[] = [];
 
     playerStatsArray.forEach((playerStats) => {
-        const playerNames = Object.keys(playerStats.playerResults).sort();
-
-        playerNames.forEach((player) => {
-            const possibleDays = Object.keys(playerStats.playerResults[player]);
-            possibleDays.forEach((day) => {
-                const stats = playerStats.playerResults[player][day];
-                if (stats?.games > 0) {
-                    daysPlayed.push(day);
-                }
-            });
-        });
+        const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
+        daysPlayed.push(...teamNames);
     });
 
     const uniqueDays = Array.from(new Set(daysPlayed)).sort();
