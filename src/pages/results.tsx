@@ -27,8 +27,8 @@ function Results(props: ResultsProps) {
         resultsArray = teamResults.map((team) => {
             const results = returnStructuredResultsArray(team.results);
             return {
-                day: config.allTeamsInLeaguesSince2013.find((e) =>
-                    e.toLowerCase().includes(team.day.toLowerCase())
+                day: config.allTeamsInLeaguesSince2013.find((t) =>
+                    t.toLowerCase().includes(team.day.toLowerCase())
                 ),
                 results,
             };
