@@ -42,7 +42,6 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
-    const [totalPlayersUsed, setTotalPlayersUsed] = useState(0);
 
     // Find list of players and save to an array
     const players = Object.keys(combinedPlayerResults).sort();
@@ -74,6 +73,14 @@ function PlayerStats(props: PlayerStatsProps) {
             window.scrollTo(0, 0);
         }
         setLoaded(true);
+
+        if (showStatSummary) {
+            setStatsToUse(combinedPlayerResults);
+            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
+        } else {
+            setStatsToUse(playerResults);
+            setAllYearsStatsToUseArray(statsForEveryYearArray);
+        }
     });
 
     function scrollToBottom() {
@@ -85,19 +92,6 @@ function PlayerStats(props: PlayerStatsProps) {
     function allYearStatsCallback(showBool: boolean) {
         setShowStatsSinceStart(showBool);
 
-        let playersWithGames = [];
-        if (showBool) {
-            playersWithGames = everyYearStatsSummaryArray.filter(
-                (player) => player.games > 0
-            );
-        } else {
-            playersWithGames = statsSummaryArray.filter(
-                (player) => player.games > 0
-            );
-        }
-
-        setTotalPlayersUsed(playersWithGames.length);
-
         scrollToBottom();
     }
 
@@ -105,10 +99,8 @@ function PlayerStats(props: PlayerStatsProps) {
         setShowStatSummary(showBool);
         if (showBool) {
             setStatsToUse(combinedPlayerResults);
-            setAllYearsStatsToUseArray(combinedStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
-            setAllYearsStatsToUseArray(statsForEveryYearArray);
         }
 
         scrollToBottom();
@@ -260,22 +252,6 @@ function PlayerStats(props: PlayerStatsProps) {
             {!loading && searchedPlayerName && (
                 <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
-
-            {/* Shows total player count */}
-            {!showSinglesOnlyBool &&
-                !searchedPlayerName &&
-                !showPairsOnlyBool &&
-                !showHomeOnlyBool &&
-                !showAwayOnlyBool &&
-                !showCupOnlyBool &&
-                // TODO update this
-                !teamSpecificStats &&
-                // TODO this is showing as 0?
-                !showStatSummary && (
-                    <p id="total-player-count">
-                        Total players: {totalPlayersUsed}
-                    </p>
-                )}
 
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
