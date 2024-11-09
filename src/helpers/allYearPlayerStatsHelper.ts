@@ -351,7 +351,6 @@ export function returnTeamPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
             );
 
             if (playerStats) {
-                // All
                 stats.games += playerStats.gamesPlayed;
                 stats.wins += playerStats.totalWins;
             }
