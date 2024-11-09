@@ -143,6 +143,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function teamSpecificCallback(teamName: string) {
+        // TODO best way of handling falsey values?
         setTeamSpecificStats(teamName);
 
         scrollToBottom();

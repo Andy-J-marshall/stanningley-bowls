@@ -40,33 +40,39 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     function toggleSpecificTeamStats(teamName: string) {
-        teamSpecificCallback(teamName);
+        if (!teamName || teamName === '') {
+            setAllTeamsToggle(false);
+            teamSpecificCallback('');
+            setDisableOtherOptions(false);
+        } else {
+            teamSpecificCallback(teamName);
 
-        setAllGameTypesToggle(true);
-        setAllVenuesToggle(true);
-        setDisableOtherOptions(true);
+            setAllGameTypesToggle(true);
+            setAllVenuesToggle(true);
+            setDisableOtherOptions(true);
 
-        // TODO not necessarily be false?
-        setAllYearToggle(false);
-        allYearStatsCallback(false);
+            // TODO not necessarily be false?
+            setAllYearToggle(false);
+            allYearStatsCallback(false);
 
-        setAllTeamsToggle(false);
-        allTeamStatsCallback(false);
+            setAllTeamsToggle(false);
+            allTeamStatsCallback(false);
 
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
+            setSinglesOnlyToggle(false);
+            onlySinglesCallback(false);
 
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
+            setPairsOnlyToggle(false);
+            onlyPairsCallback(false);
 
-        setHomeOnlyToggle(false);
-        onlyHomeCallback(false);
+            setHomeOnlyToggle(false);
+            onlyHomeCallback(false);
 
-        setAwayOnlyToggle(false);
-        onlyAwayCallback(false);
+            setAwayOnlyToggle(false);
+            onlyAwayCallback(false);
 
-        setCupOnlyToggle(false);
-        onlyCupCallback(false);
+            setCupOnlyToggle(false);
+            onlyCupCallback(false);
+        }
     }
 
     function toggleSinglesOnlyMatches() {
@@ -164,7 +170,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
                                 <h6>OPTIONS</h6>
                                 <Form.Check
                                     inline
@@ -187,9 +193,12 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                     disabled={disableOtherOptions}
                                 />
+                            </Col>
+                            <Col xs={12} md={3}>
+                                <h6>TEAMS</h6>
                                 <DropdownButton
-                                    size="lg" // TODO or sm?
-                                    variant="Secondary-outline"
+                                    size="sm" // TODO or sm?
+                                    // variant="Secondary" // TODO or secondary?
                                     id="team-select-dropdown"
                                     title="Teams"
                                 >
@@ -207,9 +216,17 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             {capitalizeText([teamName])}
                                         </Dropdown.Item>
                                     ))}
+                                    <Dropdown.Item
+                                        id="#team-option-all"
+                                        onClick={() =>
+                                            toggleSpecificTeamStats('')
+                                        }
+                                    >
+                                        All Teams
+                                    </Dropdown.Item>
                                 </DropdownButton>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
                                 <h6>GAME TYPES</h6>
                                 <InputGroup>
                                     <Form.Check
@@ -247,7 +264,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
                                 <h6>VENUE</h6>
                                 <InputGroup>
                                     <Form.Check
