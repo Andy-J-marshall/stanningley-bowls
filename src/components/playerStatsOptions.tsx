@@ -32,6 +32,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
+    const [teamDropdownTitle, setTeamDropdownTitle] = useState('Teams');
 
     function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
@@ -44,8 +45,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllTeamsToggle(false);
             teamSpecificCallback('');
             setDisableOtherOptions(false);
+            setTeamDropdownTitle('Teams');
         } else {
             teamSpecificCallback(teamName);
+            setTeamDropdownTitle(capitalizeText([teamName]));
 
             setAllGameTypesToggle(true);
             setAllVenuesToggle(true);
@@ -197,10 +200,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                             <Col xs={12} md={3}>
                                 <h6>TEAMS</h6>
                                 <DropdownButton
-                                    size="sm" // TODO or sm?
+                                    size="sm" // TODO or lg?
                                     // variant="Secondary" // TODO or secondary?
                                     id="team-select-dropdown"
-                                    title="Teams"
+                                    title={teamDropdownTitle}
                                 >
                                     {teamNames.map((teamName, index) => (
                                         <Dropdown.Item

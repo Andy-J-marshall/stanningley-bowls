@@ -10,7 +10,11 @@ import {
 } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
+import {
+    PlayerStatsProps,
+    PlayerStatsSummary,
+    PlayerStatsTeamSummary,
+} from '../types/interfaces';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
@@ -143,7 +147,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function teamSpecificCallback(teamName: string) {
-        // TODO best way of handling falsey values?
         setTeamSpecificStats(teamName);
 
         scrollToBottom();
@@ -204,25 +207,20 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
+        let stats: PlayerStatsSummary[] | PlayerStatsTeamSummary[];
+
         // TODO could do every year stats here too, but would need a new function to get returnPlayerStatsForTeam for all years
         // TODO refactor
-        let statsArrayForTeam;
         if (teamSpecificStats) {
             if (!teamNames.includes(teamSpecificStats)) {
                 return <h3>Team not found</h3>;
             }
-
-            statsArrayForTeam = returnPlayerStatsForTeam(
-                statsToUse,
-                teamSpecificStats
-            );
+            stats = returnPlayerStatsForTeam(statsToUse, teamSpecificStats);
+        } else {
+            stats = showStatsSinceStart
+                ? everyYearStatsSummaryArray
+                : statsSummaryArray;
         }
-
-        const statsArray = showStatsSinceStart
-            ? everyYearStatsSummaryArray
-            : statsSummaryArray;
-
-        const stats = teamSpecificStats ? statsArrayForTeam : statsArray;
 
         return (
             <PlayerStatSummary
