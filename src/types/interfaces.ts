@@ -58,7 +58,6 @@ export interface PlayerStatsOptionsProps {
     onlyHomeCallback: (toggle: boolean) => void;
     onlyAwayCallback: (toggle: boolean) => void;
     onlyCupCallback: (toggle: boolean) => void;
-    playerSearchedFor: string;
     teamNames: string[];
 }
 

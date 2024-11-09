@@ -41,7 +41,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [teamSpecificStats, setTeamSpecificStats] = useState('');
+    const [teamNameForSpecificStats, setTeamSpecificStats] = useState('');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
@@ -212,17 +212,32 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
-        let stats: PlayerStatsSummary[] | PlayerStatsTeamSummary[];
+        let playerStatsForSummary:
+            | PlayerStatsSummary[]
+            | PlayerStatsTeamSummary[];
 
         // TODO could do every year stats here too, but would need a new function to get returnPlayerStatsForTeam for all years
         // TODO refactor
-        if (teamSpecificStats) {
-            if (!teamNames.includes(teamSpecificStats)) {
-                return <h3>Team not found</h3>;
+        if (teamNameForSpecificStats) {
+            if (showStatsSinceStart) {
+                if (!teamNamesAllYears.includes(teamNameForSpecificStats)) {
+                    return <h3>Team not found</h3>;
+                }
+                playerStatsForSummary = returnTeamPlayerStatsForAllYears(
+                    statsForEveryYearArray,
+                    teamNameForSpecificStats
+                );
+            } else {
+                if (!teamNames.includes(teamNameForSpecificStats)) {
+                    return <h3>Team not found</h3>;
+                }
+                playerStatsForSummary = returnPlayerStatsForTeam(
+                    statsToUse,
+                    teamNameForSpecificStats
+                );
             }
-            stats = returnPlayerStatsForTeam(statsToUse, teamSpecificStats);
         } else {
-            stats = showStatsSinceStart
+            playerStatsForSummary = showStatsSinceStart
                 ? everyYearStatsSummaryArray
                 : statsSummaryArray;
         }
@@ -230,7 +245,7 @@ function PlayerStats(props: PlayerStatsProps) {
         return (
             <PlayerStatSummary
                 callback={setSearchedPlayerName}
-                playerStats={stats}
+                playerStats={playerStatsForSummary}
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
                 showHomeOnly={showHomeOnlyBool}
@@ -272,18 +287,21 @@ function PlayerStats(props: PlayerStatsProps) {
                 <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
-            <PlayerStatsOptions
-                allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={allYearStatsCallback}
-                teamSpecificCallback={teamSpecificCallback}
-                onlySinglesCallback={onlySinglesCallback}
-                onlyPairsCallback={onlyPairsCallback}
-                onlyHomeCallback={onlyHomeCallback}
-                onlyAwayCallback={onlyAwayCallback}
-                onlyCupCallback={onlyCupCallback}
-                playerSearchedFor={searchedPlayerName}
-                teamNames={teamNames}
-            />
+            {!searchedPlayerName && (
+                <PlayerStatsOptions
+                    allTeamStatsCallback={allTeamStatsCallback}
+                    allYearStatsCallback={allYearStatsCallback}
+                    teamSpecificCallback={teamSpecificCallback}
+                    onlySinglesCallback={onlySinglesCallback}
+                    onlyPairsCallback={onlyPairsCallback}
+                    onlyHomeCallback={onlyHomeCallback}
+                    onlyAwayCallback={onlyAwayCallback}
+                    onlyCupCallback={onlyCupCallback}
+                    teamNames={
+                        showStatsSinceStart ? teamNamesAllYears : teamNames
+                    }
+                />
+            )}
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );
