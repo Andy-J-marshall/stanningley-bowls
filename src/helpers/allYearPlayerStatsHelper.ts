@@ -318,6 +318,7 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
 }
 
 // TODO can I call the other function from this?
+// TODO possible to reuse this method?
 export function returnTeamNamesWithGamesForAllYears(
     playerStatsArray: FullStatsFile[]
 ) {

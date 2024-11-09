@@ -67,6 +67,7 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
 }
 
 // TODO this method for all years too
+// TODO possible to reuse this method?
 export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     const playerNames = Object.keys(playerStats).sort();
     const daysPlayed: string[] = [];
