@@ -87,13 +87,14 @@ export function returnPlayerStatsForTeam(
     playerStats: PlayerResultsStatsFile,
     day: string
 ) {
-    // TODO erroring here when switching back and forth between years?
-    // Uncaught TypeError: Cannot destructure property 'games' of 'stats' as it is undefined.
     const allPlayerStats = Object.keys(playerStats)
         .sort()
         .map((player) => {
-            const stats = playerStats[player][day.toLowerCase()];
-            const { games, wins, aggDiff } = stats;
+            const stats = playerStats[player]?.[day.toLowerCase()];
+            const games = stats?.games || 0;
+            const wins = stats?.wins || 0;
+            const aggDiff = stats?.aggDiff || 0;
+
             let playerDayStats = {
                 player,
                 games,

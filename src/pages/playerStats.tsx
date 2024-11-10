@@ -25,7 +25,6 @@ import {
     returnPlayerStatsForTeam,
     returnTeamNamesWithGames,
 } from '../helpers/teamStatsHelper';
-import TeamStats from './teamStats';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;

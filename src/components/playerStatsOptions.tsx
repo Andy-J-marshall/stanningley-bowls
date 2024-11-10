@@ -170,7 +170,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     return (
-        // TODO sort out display of options
         !searchedPlayerName && (
             <div className="stats-filters center">
                 <Form>
@@ -202,7 +201,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 <h6>TEAMS</h6>
                                 {/* TODO fix the width of the button? */}
                                 <DropdownButton
-                                    size="sm" // TODO or lg?
+                                    size="sm"
                                     // variant="Secondary" // TODO or secondary?
                                     id="team-select-dropdown"
                                     title={teamDropdownTitle}
