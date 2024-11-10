@@ -1,3 +1,4 @@
+import { config } from '../config';
 import {
     ConfigTeamData,
     PlayerResultsStatsFile,
@@ -71,9 +72,9 @@ export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     const daysPlayed: string[] = [];
 
     playerNames.forEach((player) => {
-        const possibleDays = Object.keys(playerStats[player]);
+        const possibleDays = config.allTeamsInLeaguesSince2013;
         possibleDays.forEach((day) => {
-            const dayStats = playerStats[player][day];
+            const dayStats = playerStats[player]?.[day];
             if (dayStats?.games > 0) {
                 daysPlayed.push(day);
             }
