@@ -3,6 +3,7 @@ import { capitalizeText } from '../helpers/utils';
 import { RecordsTableDisplayProps } from '../types/interfaces';
 
 function RecordsTableDisplay(props: RecordsTableDisplayProps) {
+    const bTeam = props.bTeam;
     const day = props.day;
     const minGames = props.minGames;
     const bestWinPerc = props.bestWinPerc;
@@ -14,14 +15,18 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
     const bestAverage = props.bestAverage;
     const bestAveragePlayer = props.bestAveragePlayer;
 
+    if (bTeam && (!bestAverage || bestAverage < -26)) {
+        return null;
+    }
+
+    if (!bestAverage || bestAverage < -26) {
+        return <p>No games played</p>;
+    }
+
     return (
         <div className="center">
-            {day && (
-                <div>
-                    <br />
-                    <h4>{day.toLowerCase()}</h4>
-                </div>
-            )}
+            {bTeam && <hr />}
+            {day && <h4>{day.toLowerCase()}</h4>}
             <Table striped bordered hover>
                 <thead>
                     <tr>

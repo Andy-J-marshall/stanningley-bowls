@@ -109,7 +109,8 @@ export interface PlayerStatsComponentsProps {
 
 export interface RecordsTableDisplayProps {
     day?: string;
-    minGames: number;
+    bTeam?: boolean;
+    minGames?: number;
     bestWinPerc?: number;
     bestWinPercPlayer?: string[];
     mostWins?: number;
