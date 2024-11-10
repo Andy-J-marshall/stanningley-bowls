@@ -318,7 +318,6 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     return collatedStats;
 }
 
-// TODO possible to reuse this method?
 export function returnTeamNamesWithGamesForAllYears(
     playerStatsArray: FullStatsFile[]
 ) {

@@ -73,8 +73,8 @@ export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
     playerNames.forEach((player) => {
         const possibleDays = Object.keys(playerStats[player]);
         possibleDays.forEach((day) => {
-            const stats = playerStats[player][day];
-            if (stats?.games > 0) {
+            const dayStats = playerStats[player][day];
+            if (dayStats?.games > 0) {
                 daysPlayed.push(day);
             }
         });

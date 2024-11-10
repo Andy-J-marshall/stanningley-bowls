@@ -23,10 +23,11 @@ describe('#RecordsHelper Tests', () => {
             ]);
         });
 
-        it('Can correct teams records', () => {
+        it('Can return correct teams records', () => {
             const { initialTeamRecords } =
                 findLeaguesAvailableInData(playerResults22);
 
+            expect(Object.keys(initialTeamRecords).length).to.equal(22);
             const teamRecord = initialTeamRecords['monday combined leeds'];
 
             expect(teamRecord).to.deep.equal({

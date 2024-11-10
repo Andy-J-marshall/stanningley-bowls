@@ -217,7 +217,6 @@ function PlayerStats(props: PlayerStatsProps) {
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[];
 
-        // TODO could do every year stats here too, but would need a new function to get returnPlayerStatsForTeam for all years
         // TODO refactor
         // TODO there are still some crashes when switching years
         if (teamNameForSpecificStats) {
