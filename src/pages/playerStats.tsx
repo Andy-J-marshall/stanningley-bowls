@@ -265,18 +265,23 @@ function PlayerStats(props: PlayerStatsProps) {
                 <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
-            <PlayerStatsOptions
-                allTeamStatsCallback={allTeamStatsCallback}
-                allYearStatsCallback={allYearStatsCallback}
-                teamSpecificCallback={teamSpecificCallback}
-                onlySinglesCallback={onlySinglesCallback}
-                onlyPairsCallback={onlyPairsCallback}
-                onlyHomeCallback={onlyHomeCallback}
-                onlyAwayCallback={onlyAwayCallback}
-                onlyCupCallback={onlyCupCallback}
-                searchedPlayerName={searchedPlayerName}
-                teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
-            />
+            {!loading && (
+                <PlayerStatsOptions
+                    allTeamStatsCallback={allTeamStatsCallback}
+                    allYearStatsCallback={allYearStatsCallback}
+                    teamSpecificCallback={teamSpecificCallback}
+                    onlySinglesCallback={onlySinglesCallback}
+                    onlyPairsCallback={onlyPairsCallback}
+                    onlyHomeCallback={onlyHomeCallback}
+                    onlyAwayCallback={onlyAwayCallback}
+                    onlyCupCallback={onlyCupCallback}
+                    searchedPlayerName={searchedPlayerName}
+                    teamNames={
+                        showStatsSinceStart ? teamNamesAllYears : teamNames
+                    }
+                />
+            )}
+
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );
