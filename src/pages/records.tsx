@@ -54,24 +54,17 @@ function Records(props: RecordsProps) {
     function combinedRecordsComponent() {
         if (mostGames > 0) {
             return (
-                <div>
-                    <RecordsTableDisplay
-                        minGames={minTotalGames}
-                        mostGames={mostGames}
-                        mostGamesPlayer={mostGamesPlayer}
-                        mostWins={mostWins}
-                        mostWinsPlayer={mostWinsPlayer}
-                        bestWinPerc={bestWinPerc}
-                        bestWinPercPlayer={bestWinPercPlayer}
-                        bestAverage={bestAverage}
-                        bestAveragePlayer={bestAveragePlayer}
-                    />
-                    <hr />
-                    <br />
-                    <p className="footnote">
-                        Last Updated: {stats.lastUpdated}
-                    </p>
-                </div>
+                <RecordsTableDisplay
+                    minGames={minTotalGames}
+                    mostGames={mostGames}
+                    mostGamesPlayer={mostGamesPlayer}
+                    mostWins={mostWins}
+                    mostWinsPlayer={mostWinsPlayer}
+                    bestWinPerc={bestWinPerc}
+                    bestWinPercPlayer={bestWinPercPlayer}
+                    bestAverage={bestAverage}
+                    bestAveragePlayer={bestAveragePlayer}
+                />
             );
         } else {
             return <p>No games played</p>;
@@ -127,11 +120,6 @@ function Records(props: RecordsProps) {
                                         bTeamRecord?.bestTeamAveragePlayer
                                     }
                                 />
-                                <hr />
-                                <br />
-                                <p className="footnote">
-                                    Last Updated: {stats.lastUpdated}
-                                </p>
                             </div>
                         }
                     ></Wrapper>
@@ -160,6 +148,8 @@ function Records(props: RecordsProps) {
                     allCombinedComponent={combinedRecordsComponent()}
                     teamComponents={returnAllComponentsForTeams()}
                 />
+                <br />
+                <p className="footnote">Last Updated: {stats.lastUpdated}</p>
             </div>
         );
     } else {
