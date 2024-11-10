@@ -52,11 +52,11 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
 
-    // TODO refactor these a bit?
-
-    // Find list of players and save to an array
+    // Find list of players for current year
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
+
+    // Find list of players for all years
     const allPlayersSet = new Set<string>();
     allYearsStatsToUseArray.forEach((yearStats) => {
         Object.keys(yearStats.playerResults).forEach((playerName) => {
@@ -64,21 +64,16 @@ function PlayerStats(props: PlayerStatsProps) {
         });
     });
     const allPlayers = Array.from(allPlayersSet).sort();
+
+    // Find list of teams names used in the stats
     const teamNames = returnTeamNamesWithGames(playerResults);
     const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
         statsForEveryYearArray
     );
 
-    const everyYearStatsSummaryArray: PlayerStatsSummary[] =
-        returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
-    const statsSummaryArray: PlayerStatsSummary[] = returnPlayerStatSummary(
-        statsToUse,
-        players
-    );
-
-    const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) && !showStatsSinceStart
+        new Date().getFullYear() !== Number(stats.statsYear) &&
+        !showStatsSinceStart
             ? `${stats.statsYear}`
             : '';
 
@@ -247,6 +242,13 @@ function PlayerStats(props: PlayerStatsProps) {
                 );
             }
         } else {
+            const everyYearStatsSummaryArray =
+                returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
+            const statsSummaryArray = returnPlayerStatSummary(
+                statsToUse,
+                players
+            );
+
             playerStatsForSummary = showStatsSinceStart
                 ? everyYearStatsSummaryArray
                 : statsSummaryArray;
