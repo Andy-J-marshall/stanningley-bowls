@@ -36,6 +36,7 @@ export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
     stats: TeamResultsStatsFile;
+    bTeam: boolean;
 }
 
 export interface ListProps {

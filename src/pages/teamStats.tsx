@@ -29,52 +29,36 @@ function TeamStats(props: TeamStatsProps) {
             );
 
             if (teamStats || bTeamStats) {
-                if (
-                    (teamStats && teamStats.totalGamesPlayed > 0) ||
-                    (bTeamStats && bTeamStats.totalGamesPlayed > 0)
-                ) {
-                    return (
-                        <Wrapper
-                            displayname={displayname}
-                            children={
-                                <div>
-                                    {teamStats && (
-                                        <IndividualTeamStats
-                                            day={teamName}
-                                            stats={teamStats}
-                                        />
-                                    )}
-                                    {bTeamStats && (
-                                        <div>
-                                            <br />
-                                            <hr />
-                                        </div>
-                                    )}
-                                    {bTeamStats && (
-                                        <IndividualTeamStats
-                                            day={
-                                                teamName.replace(' (a)', '') +
-                                                ' (b)'
-                                            }
-                                            stats={bTeamStats}
-                                        />
-                                    )}
-                                    <br />
-                                    <p className="footnote">
-                                        Last Updated: {stats.lastUpdated}
-                                    </p>
-                                </div>
-                            }
-                        ></Wrapper>
-                    );
-                } else {
-                    return (
-                        <Wrapper
-                            displayname={displayname}
-                            children={<p>No games played</p>}
-                        ></Wrapper>
-                    );
-                }
+                return (
+                    <Wrapper
+                        displayname={displayname}
+                        children={
+                            <div>
+                                {teamStats && (
+                                    <IndividualTeamStats
+                                        day={teamName}
+                                        stats={teamStats}
+                                        bTeam={false}
+                                    />
+                                )}
+                                {bTeamStats && (
+                                    <IndividualTeamStats
+                                        day={
+                                            teamName.replace(' (a)', '') +
+                                            ' (b)'
+                                        }
+                                        stats={bTeamStats}
+                                        bTeam={true}
+                                    />
+                                )}
+                                <br />
+                                <p className="footnote">
+                                    Last Updated: {stats.lastUpdated}
+                                </p>
+                            </div>
+                        }
+                    ></Wrapper>
+                );
             } else {
                 return (
                     <Wrapper
@@ -107,7 +91,6 @@ function TeamStats(props: TeamStatsProps) {
                     }
                     teamComponents={returnTeamComponents()}
                 />
-                <br />
             </div>
         );
     } else {
