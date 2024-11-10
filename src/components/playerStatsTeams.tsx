@@ -17,7 +17,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                         (team, idx) =>
                             team.teamGames > 0 && (
                                 <div key={idx}>
-                                    <h3>{team.teamName.toUpperCase()}</h3>
+                                    <h3>{team.teamName.toLowerCase()}</h3>
                                     <Row
                                         xs={2}
                                         md={5}

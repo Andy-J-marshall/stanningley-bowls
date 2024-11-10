@@ -17,7 +17,7 @@ function HomePageCarousel() {
                                 className="carousel-link"
                                 to="/stats/player"
                             >
-                                <h2>PLAYER STATS</h2>
+                                <h2>player stats</h2>
                             </NavLink>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -25,7 +25,7 @@ function HomePageCarousel() {
                         <Image src={membershipImg} fluid />
                         <Carousel.Caption>
                             <NavLink to="/membership" className="carousel-link">
-                                <h2>MEMBERSHIP</h2>
+                                <h2>membership</h2>
                             </NavLink>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -37,7 +37,7 @@ function HomePageCarousel() {
                                 className="carousel-link"
                                 href={`${config.socialLinks.facebookUrl}/events`}
                             >
-                                <h2>EVENTS</h2>
+                                <h2>events</h2>
                             </a>
                         </Carousel.Caption>
                     </Carousel.Item>

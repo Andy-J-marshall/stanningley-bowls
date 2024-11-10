@@ -46,19 +46,19 @@ function Results(props: ResultsProps) {
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
                 />
-                <h1>{yearInTitle} RESULTS</h1>
+                <h1>{yearInTitle} results</h1>
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
                             <div key={idx} className="teamResult">
-                                <h3>{resultTeam.day?.toUpperCase()}</h3>
+                                <h3>{resultTeam.day?.toLowerCase()}</h3>
                                 <Table striped bordered hover>
                                     <thead>
                                         <tr>
-                                            <th>HOME</th>
+                                            <th>home</th>
                                             <th></th>
                                             <th></th>
-                                            <th>AWAY</th>
+                                            <th>away</th>
                                         </tr>
                                     </thead>
                                     {resultTeam.results.map((result, idx) => {
@@ -143,7 +143,7 @@ function Results(props: ResultsProps) {
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
                 />
-                <h1>RESULTS</h1>
+                <h1>results</h1>
                 <p>No results for {yearToDisplay}</p>
             </div>
         );

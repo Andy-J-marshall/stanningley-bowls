@@ -22,10 +22,10 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
-                                        <th>PLAYER</th>
+                                        <th>player</th>
                                         <th></th>
                                         <th></th>
-                                        <th>OPPONENT</th>
+                                        <th>opponent</th>
                                     </tr>
                                 </thead>
                                 {structuredResultsArray.map((result, idx) => {

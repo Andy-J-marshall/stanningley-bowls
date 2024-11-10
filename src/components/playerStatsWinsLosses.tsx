@@ -185,7 +185,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
 
                     {displayGamesPlayed > 0 && (
                         <div>
-                            <h3>TOTAL</h3>
+                            <h3>total</h3>
                             <Row
                                 xs={2}
                                 md={5}
@@ -224,7 +224,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     {displayHomeGamesPlayed > 0 && (
                         <div>
                             <hr />
-                            <h3>HOME</h3>
+                            <h3>home</h3>
                             <Row
                                 xs={2}
                                 md={5}
@@ -263,7 +263,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     {displayAwayGamesPlayed > 0 && (
                         <div>
                             <hr />
-                            <h3>AWAY</h3>
+                            <h3>away</h3>
                             <Row
                                 xs={2}
                                 md={5}
@@ -302,7 +302,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     {displayCupGamesPlayed > 0 && (
                         <div>
                             <hr />
-                            <h3>CUP</h3>
+                            <h3>cup</h3>
                             <Row
                                 xs={2}
                                 md={5}

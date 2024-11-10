@@ -22,7 +22,7 @@ function History() {
 
     return (
         <div id="history-page" className="page-component center">
-            <h1>HISTORY</h1>
+            <h1>history</h1>
             <p>
                 There has been crown green bowling at {fullName} for over 100
                 years. Below is a selection of photos, statistics, records and
@@ -81,7 +81,7 @@ function History() {
             </Row>
             <br />
             <br />
-            <h2>CLUB CUP WINNERS</h2>
+            <h2>club cup winners</h2>
             <ListGroup>
                 {clubCupWinners.map((record, idx) => {
                     return (
@@ -92,7 +92,7 @@ function History() {
                 })}
             </ListGroup>
             <br />
-            <h2>TROPHIES</h2>
+            <h2>trophies</h2>
             <h4>Brotherton Cup</h4>
             <ListGroup>
                 <ListGroupItem>1927</ListGroupItem>

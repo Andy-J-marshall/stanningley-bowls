@@ -12,7 +12,7 @@ function Membership() {
 
     return (
         <div id="members" className="center page-component">
-            <h1>MEMBERSHIP</h1>
+            <h1>membership</h1>
             <p>
                 {config.teamNames.fullName} welcomes new members of any age or
                 experience level.
@@ -33,7 +33,7 @@ function Membership() {
                 or speak to a member if you are interested in joining.
             </p>
             <br />
-            <h3>FULL BOWLING MEMBERSHIP - £{bowlingPrice}</h3>
+            <h3>full bowling membership - £{bowlingPrice}</h3>
             <p>
                 For members who want to play in one of our teams and have full
                 green access.
@@ -48,7 +48,7 @@ function Membership() {
                 {bowlingPriceOnly} membership fee.
             </p>
             <br />
-            <h3>SOCIAL MEMBERSHIP - £{socialPrice}</h3>
+            <h3>social membership - £{socialPrice}</h3>
             <p>
                 For new or infrequent bowlers who want to attend social sessions
                 and club tournaments.

@@ -329,7 +329,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        PLAYER
+                                        player
                                     </Button>
                                 </th>
                                 <th>
@@ -343,7 +343,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        GAMES
+                                        games
                                     </Button>
                                 </th>
                                 <th>
@@ -357,7 +357,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        WINS
+                                        wins
                                     </Button>
                                 </th>
                                 <th>
@@ -371,7 +371,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        WIN %
+                                        win %
                                     </Button>
                                 </th>
                                 <th>
@@ -385,7 +385,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        AVERAGE
+                                        average
                                     </Button>
                                 </th>
                             </tr>

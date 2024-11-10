@@ -27,8 +27,8 @@ function TeamStatsTable(props: StatsTableDisplayProps) {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>STATISTIC</th>
-                        <th>VALUE</th>
+                        <th>statistic</th>
+                        <th>value</th>
                     </tr>
                 </thead>
                 <tbody>
