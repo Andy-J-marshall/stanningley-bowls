@@ -10,8 +10,6 @@ import {
 import { PlayerStatsOptionsProps } from '../types/interfaces';
 import { formatTeamName } from '../helpers/utils';
 
-// TODO create UI tests
-
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;

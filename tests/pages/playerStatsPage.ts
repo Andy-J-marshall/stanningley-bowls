@@ -34,6 +34,7 @@ export class PlayerStatsPage {
     private readonly awayOnlyRadio: Locator;
     private readonly cupOnlyRadio: Locator;
     private readonly allVenuesRadio: Locator;
+    private readonly teamSelectDropdown: Locator;
 
     private games: Locator;
     private wins: Locator;
@@ -89,6 +90,7 @@ export class PlayerStatsPage {
         this.allVenuesRadio = page.locator(
             ".form-check input[id='#all-venues-radio']"
         );
+        this.teamSelectDropdown = page.getByRole('button', { name: 'All' });
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
         this.winPerc = page.locator('#steve-gardner-win-perc');
@@ -189,6 +191,32 @@ export class PlayerStatsPage {
 
     async deselectSince2013Switch() {
         await this.allYearSwitch.uncheck();
+    }
+
+    async optionsAreDisabledWhenSelectingSpecificTeam() {
+        await expect(this.teamSwitch).toBeDisabled();
+        await expect(this.singlesOnlyRadio).toBeDisabled();
+        await expect(this.pairsOnlyRadio).toBeDisabled();
+        await expect(this.allGameTypesRadio).toBeDisabled();
+        await expect(this.homeOnlyRadio).toBeDisabled();
+        await expect(this.awayOnlyRadio).toBeDisabled();
+        await expect(this.cupOnlyRadio).toBeDisabled();
+        await expect(this.allVenuesRadio).toBeDisabled();
+    }
+
+    async teamSelectDropDownIsDisabled() {
+        await expect(this.teamSelectDropdown).toBeDisabled();
+    }
+
+    async selectTeamFromDropdown(team: string) {
+        await this.teamSelectDropdown.click();
+        await this.page
+            .getByRole('button', { exact: true, name: team })
+            .click();
+    }
+
+    async selectAllTeamsFromTeamDropdown() {
+        await this.teamSelectDropdown.click();
     }
 
     async validateSummaryStats(playerStats: PlayerStatsToCheck) {

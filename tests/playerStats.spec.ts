@@ -148,3 +148,40 @@ test('Summary of Bernie Miller stats since 2013 for team are correct', async () 
     await playerStatsPage.selectPairsOnlyRadio();
     playerStatsPage.playerStatsAreCorrectInTable(62, 31, '50%', 2.08);
 });
+
+test('Can filter for team specific stats in 2024', async () => {
+    playerStatsPage.setPlayerToFind('alyssa randell');
+
+    await yearSelectPage.select2024Year();
+
+    await playerStatsPage.selectTeamFromDropdown('Saturday Leeds');
+    playerStatsPage.playerStatsAreCorrectInTable(19, 11, '58%', 2.37);
+
+});
+
+test('Can filter for team specific stats in 2013', async () => {
+    playerStatsPage.setPlayerToFind('chris gardner');
+
+    await yearSelectPage.select2013Year();
+
+    await playerStatsPage.selectTeamFromDropdown('Saturday Bradford');
+    playerStatsPage.playerStatsAreCorrectInTable(20, 16, '80%', 6.00);
+
+});
+
+test('Can filter for team specific stats for all years', async () => {
+    playerStatsPage.setPlayerToFind('adam sandilands');
+
+    await playerStatsPage.selectSince2013Switch();
+
+    await playerStatsPage.selectTeamFromDropdown('Monday Airewharfe (B)');
+    playerStatsPage.playerStatsAreCorrectInTable(60, 20, '33%', -4.03);
+
+});
+
+test('Other options are disabled when selecting specific team', async () => {
+    await yearSelectPage.select2023Year();
+    await playerStatsPage.selectTeamFromDropdown('Saturday Leeds');
+
+    await playerStatsPage.optionsAreDisabledWhenSelectingSpecificTeam();
+});
