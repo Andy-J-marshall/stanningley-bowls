@@ -34,7 +34,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
     const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
 
-    const defaultTeamDropdownTitle = 'All';
+    const defaultTeamDropdownTitle = 'All Teams';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
     );
@@ -198,7 +198,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                             </Col>
                             <Col xs={12} md={3}>
                                 <h6>TEAMS</h6>
-                                {/* TODO fix the width of the button? */}
                                 <DropdownButton
                                     drop="up"
                                     size="sm"
@@ -207,15 +206,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     title={teamDropdownTitle}
                                     disabled={disableTeamDropdown}
                                 >
-                                    <Dropdown.Item
-                                        id="#team-option-all"
-                                        onClick={() =>
-                                            toggleSpecificTeamStats('')
-                                        }
-                                    >
-                                        {defaultTeamDropdownTitle}
-                                    </Dropdown.Item>
-                                    <Dropdown.Divider />
                                     {teamNames.map((teamName, index) => (
                                         <Dropdown.Item
                                             key={index}
@@ -229,6 +219,15 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             {formatTeamName(teamName)}
                                         </Dropdown.Item>
                                     ))}
+                                    <Dropdown.Divider />
+                                    <Dropdown.Item
+                                        id="#team-option-all"
+                                        onClick={() =>
+                                            toggleSpecificTeamStats('')
+                                        }
+                                    >
+                                        {defaultTeamDropdownTitle}
+                                    </Dropdown.Item>
                                 </DropdownButton>
                             </Col>
                             <Col xs={12} md={3}>
