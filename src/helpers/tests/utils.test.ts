@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { capitalizeText } from '../utils';
+import { capitalizeText, formatTeamName } from '../utils';
 
 describe('#Utils Tests', () => {
     describe('#capitalizeText()', () => {
@@ -43,6 +43,18 @@ describe('#Utils Tests', () => {
         it('And becomes &', () => {
             const text = capitalizeText(['Salt and pepper']);
             expect(text).to.equal('Salt & Pepper');
+        });
+    });
+
+    describe('#formatTeamName()', () => {
+        it('Team name with (a)', () => {
+            const teamName = formatTeamName('team name (a)');
+            expect(teamName).to.equal('Team Name (A)');
+        });
+
+        it('Team name with (b)', () => {
+            const teamName = formatTeamName('team name (b)');
+            expect(teamName).to.equal('Team Name (B)');
         });
     });
 });
