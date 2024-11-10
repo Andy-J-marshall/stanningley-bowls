@@ -211,31 +211,25 @@ function PlayerStats(props: PlayerStatsProps) {
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[];
 
+        const names = showStatsSinceStart ? teamNamesAllYears : teamNames;
+
         // TODO refactor
         // TODO there are still some crashes when switching years
         if (teamNameForSpecificStats) {
+            if (!names.includes(teamNameForSpecificStats)) {
+                return (
+                    <h3>
+                        No stats for {teamNameForSpecificStats} stats in{' '}
+                        {stats.statsYear}
+                    </h3>
+                );
+            }
             if (showStatsSinceStart) {
-                if (!teamNamesAllYears.includes(teamNameForSpecificStats)) {
-                    return (
-                        <h3>
-                            No stats for {teamNameForSpecificStats} stats in{' '}
-                            {stats.statsYear}
-                        </h3>
-                    );
-                }
                 playerStatsForSummary = returnTeamPlayerStatsForAllYears(
                     statsForEveryYearArray,
                     teamNameForSpecificStats
                 );
             } else {
-                if (!teamNames.includes(teamNameForSpecificStats)) {
-                    return (
-                        <h3>
-                            No stats for {teamNameForSpecificStats} stats in{' '}
-                            {stats.statsYear}
-                        </h3>
-                    );
-                }
                 playerStatsForSummary = returnPlayerStatsForTeam(
                     statsToUse,
                     teamNameForSpecificStats
