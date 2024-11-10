@@ -212,6 +212,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 teamNameForStats
             );
         }
+
         if (!showStatsSinceStart && !teamNameForStats) {
             playerStatsForSummary = returnPlayerStatSummary(
                 statsToUse,
