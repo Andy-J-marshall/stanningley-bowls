@@ -321,15 +321,14 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
 export function returnTeamNamesWithGamesForAllYears(
     playerStatsArray: FullStatsFile[]
 ) {
-    const daysPlayed: string[] = [];
+    const daysPlayedSet: Set<string> = new Set();
 
     playerStatsArray.forEach((playerStats) => {
         const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
-        daysPlayed.push(...teamNames);
+        teamNames.forEach((teamName) => daysPlayedSet.add(teamName));
     });
 
-    const uniqueDays = Array.from(new Set(daysPlayed)).sort();
-    return uniqueDays;
+    return Array.from(daysPlayedSet).sort();
 }
 
 export function returnTeamPlayerStatsForAllYears(

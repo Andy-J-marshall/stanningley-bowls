@@ -68,21 +68,19 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
 }
 
 export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
-    const playerNames = Object.keys(playerStats).sort();
-    const daysPlayed: string[] = [];
+    const daysPlayed = new Set<string>();
 
-    playerNames.forEach((player) => {
+    for (const player in playerStats) {
         const possibleDays = config.allTeamsInLeaguesSince2013;
-        possibleDays.forEach((day) => {
+        for (const day of possibleDays) {
             const dayStats = playerStats[player]?.[day];
             if (dayStats?.games > 0) {
-                daysPlayed.push(day);
+                daysPlayed.add(day);
             }
-        });
-    });
+        }
+    }
 
-    const uniqueDays = Array.from(new Set(daysPlayed)).sort();
-    return uniqueDays;
+    return Array.from(daysPlayed).sort();
 }
 
 export function returnPlayerStatsForTeam(
