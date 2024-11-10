@@ -41,7 +41,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
-    const [teamNameForSpecificStats, setTeamSpecificStats] = useState('');
+    const [teamNameForStats, setTeamNameForStats] = useState('');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
@@ -147,7 +147,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function teamSpecificCallback(teamName: string) {
-        setTeamSpecificStats(teamName);
+        setTeamNameForStats(teamName);
 
         scrollToBottom();
     }
@@ -207,45 +207,45 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
+        const teamNamesUsed = showStatsSinceStart
+            ? teamNamesAllYears
+            : teamNames;
+        if (teamNameForStats && !teamNamesUsed.includes(teamNameForStats)) {
+            return (
+                <h3>
+                    No stats for {teamNameForStats} stats in {stats.statsYear}
+                </h3>
+            );
+        }
+
         let playerStatsForSummary:
             | PlayerStatsSummary[]
-            | PlayerStatsTeamSummary[];
+            | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
 
-        const names = showStatsSinceStart ? teamNamesAllYears : teamNames;
+        if (showStatsSinceStart && teamNameForStats) {
+            playerStatsForSummary = returnTeamPlayerStatsForAllYears(
+                statsForEveryYearArray,
+                teamNameForStats
+            );
+        }
 
-        // TODO refactor
-        // TODO there are still some crashes when switching years
-        if (teamNameForSpecificStats) {
-            if (!names.includes(teamNameForSpecificStats)) {
-                return (
-                    <h3>
-                        No stats for {teamNameForSpecificStats} stats in{' '}
-                        {stats.statsYear}
-                    </h3>
-                );
-            }
-            if (showStatsSinceStart) {
-                playerStatsForSummary = returnTeamPlayerStatsForAllYears(
-                    statsForEveryYearArray,
-                    teamNameForSpecificStats
-                );
-            } else {
-                playerStatsForSummary = returnPlayerStatsForTeam(
-                    statsToUse,
-                    teamNameForSpecificStats
-                );
-            }
-        } else {
-            const everyYearStatsSummaryArray =
-                returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
-            const statsSummaryArray = returnPlayerStatSummary(
+        if (showStatsSinceStart && !teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatSummaryForAllYears(
+                allYearsStatsToUseArray
+            );
+        }
+
+        if (!showStatsSinceStart && teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatsForTeam(
+                statsToUse,
+                teamNameForStats
+            );
+        }
+        if (!showStatsSinceStart && !teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatSummary(
                 statsToUse,
                 players
             );
-
-            playerStatsForSummary = showStatsSinceStart
-                ? everyYearStatsSummaryArray
-                : statsSummaryArray;
         }
 
         return (
