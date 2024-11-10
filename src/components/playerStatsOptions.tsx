@@ -199,11 +199,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                             <Col xs={12} md={3}>
                                 <h6>TEAMS</h6>
                                 {/* TODO fix the width of the button? */}
-                                {/* TODO possible to set this as a button? */}
                                 <DropdownButton
                                     drop="up"
                                     size="sm"
-                                    variant="Secondary"
+                                    variant="light"
                                     id="team-select-dropdown"
                                     title={teamDropdownTitle}
                                     disabled={disableTeamDropdown}
