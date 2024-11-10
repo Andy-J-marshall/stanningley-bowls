@@ -201,12 +201,12 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 {/* TODO fix the width of the button? */}
                                 {/* TODO possible to set this as a button? */}
                                 <DropdownButton
+                                    drop="up"
                                     size="sm"
                                     variant="Secondary"
                                     id="team-select-dropdown"
                                     title={teamDropdownTitle}
                                     disabled={disableTeamDropdown}
-                                    // TODO add a message to explain why disabled?
                                 >
                                     <Dropdown.Item
                                         id="#team-option-all"
@@ -232,7 +232,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     ))}
                                 </DropdownButton>
                             </Col>
-                            {/* TODO add a message explaining why disabled? */}
                             <Col xs={12} md={3}>
                                 <h6>GAME TYPES</h6>
                                 <InputGroup>

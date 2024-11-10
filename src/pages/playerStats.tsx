@@ -54,13 +54,13 @@ function PlayerStats(props: PlayerStatsProps) {
 
     // Find list of players for current year
     const players = Object.keys(combinedPlayerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toLowerCase());
+    const playerSearchNameArray = players.map((p) => p.toUpperCase());
 
     // Find list of players for all years
     const allPlayersSet = new Set<string>();
     allYearsStatsToUseArray.forEach((yearStats) => {
         Object.keys(yearStats.playerResults).forEach((playerName) => {
-            allPlayersSet.add(playerName.toLowerCase());
+            allPlayersSet.add(playerName.toUpperCase());
         });
     });
     const allPlayers = Array.from(allPlayersSet).sort();
