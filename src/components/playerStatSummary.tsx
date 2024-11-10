@@ -8,7 +8,7 @@ import {
 import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
-    let playerStats = props.playerStats;
+    const playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
