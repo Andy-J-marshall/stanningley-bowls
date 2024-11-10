@@ -10,11 +10,21 @@ import {
 } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import { PlayerStatsProps, PlayerStatsSummary } from '../types/interfaces';
+import {
+    PlayerStatsProps,
+    PlayerStatsSummary,
+    PlayerStatsTeamSummary,
+} from '../types/interfaces';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
+    returnTeamNamesWithGamesForAllYears,
+    returnTeamPlayerStatsForAllYears,
 } from '../helpers/allYearPlayerStatsHelper';
+import {
+    returnPlayerStatsForTeam,
+    returnTeamNamesWithGames,
+} from '../helpers/teamStatsHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;
@@ -31,6 +41,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showStatSummary, setShowStatSummary] = useState(false);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
+    const [teamNameForStats, setTeamNameForStats] = useState('');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
@@ -41,9 +52,11 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
 
-    // Find list of players and save to an array
+    // Find list of players for current year
     const players = Object.keys(combinedPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
+
+    // Find list of players for all years
     const allPlayersSet = new Set<string>();
     allYearsStatsToUseArray.forEach((yearStats) => {
         Object.keys(yearStats.playerResults).forEach((playerName) => {
@@ -52,16 +65,15 @@ function PlayerStats(props: PlayerStatsProps) {
     });
     const allPlayers = Array.from(allPlayersSet).sort();
 
-    const everyYearStatsSummaryArray: PlayerStatsSummary[] =
-        returnPlayerStatSummaryForAllYears(allYearsStatsToUseArray);
-    const statsSummaryArray: PlayerStatsSummary[] = returnPlayerStatSummary(
-        statsToUse,
-        players
+    // Find list of teams names used in the stats
+    const teamNames = returnTeamNamesWithGames(playerResults);
+    const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
+        statsForEveryYearArray
     );
 
-    const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) && !showStatsSinceStart
+        new Date().getFullYear() !== Number(stats.statsYear) &&
+        !showStatsSinceStart
             ? `${stats.statsYear}`
             : '';
 
@@ -134,6 +146,12 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
+    function teamSpecificCallback(teamName: string) {
+        setTeamNameForStats(teamName);
+
+        scrollToBottom();
+    }
+
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -152,51 +170,60 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
-        const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
             ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
             : statsToUse;
 
-        const playersListToUse = showStatsSinceStart ? allPlayers : players;
-        const validPlayer = playersListToUse.find(
-            (player) => player.toLowerCase() === playerLower
-        );
-
-        const detailedPlayerStats = returnPlayerStats(
+        const detailedStats = returnPlayerStats(
             individualStats,
-            playerLower
+            playerName.toLowerCase()
         );
 
-        if (
-            validPlayer &&
-            detailedPlayerStats &&
-            detailedPlayerStats.gamesPlayed > 0
-        ) {
-            return (
-                <IndividualPlayerStats
-                    name={playerLower}
-                    playersStats={detailedPlayerStats}
-                    showStatSummary={showStatSummary}
-                ></IndividualPlayerStats>
-            );
-        } else {
-            return (
-                searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h3>Player not found for {stats.statsYear}</h3>
-                )
-            );
-        }
+        return (
+            <IndividualPlayerStats
+                name={playerName.toLowerCase()}
+                playersStats={detailedStats}
+                showStatSummary={showStatSummary}
+            />
+        );
     }
 
     function returnStatSummaryTable() {
-        const statsArray = showStatsSinceStart
-            ? everyYearStatsSummaryArray
-            : statsSummaryArray;
+        let playerStatsForSummary:
+            | PlayerStatsSummary[]
+            | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
+
+        if (showStatsSinceStart && teamNameForStats) {
+            playerStatsForSummary = returnTeamPlayerStatsForAllYears(
+                statsForEveryYearArray,
+                teamNameForStats
+            );
+        }
+
+        if (showStatsSinceStart && !teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatSummaryForAllYears(
+                allYearsStatsToUseArray
+            );
+        }
+
+        if (!showStatsSinceStart && teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatsForTeam(
+                statsToUse,
+                teamNameForStats
+            );
+        }
+
+        if (!showStatsSinceStart && !teamNameForStats) {
+            playerStatsForSummary = returnPlayerStatSummary(
+                statsToUse,
+                players
+            );
+        }
 
         return (
             <PlayerStatSummary
                 callback={setSearchedPlayerName}
-                playerStats={statsArray}
+                playerStats={playerStatsForSummary}
                 showSinglesOnly={showSinglesOnlyBool}
                 showPairsOnly={showPairsOnlyBool}
                 showHomeOnly={showHomeOnlyBool}
@@ -211,7 +238,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     return (
         <div id="player-stat">
-            <h1>{yearInTitle} PLAYER STATS</h1>
+            <h1>{yearInTitle} player stats</h1>
             <Search
                 searchList={
                     showStatsSinceStart ? allPlayers : playerSearchNameArray
@@ -241,12 +268,14 @@ function PlayerStats(props: PlayerStatsProps) {
             <PlayerStatsOptions
                 allTeamStatsCallback={allTeamStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
+                teamSpecificCallback={teamSpecificCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
                 onlyHomeCallback={onlyHomeCallback}
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
-                playerSearchedFor={searchedPlayerName}
+                searchedPlayerName={searchedPlayerName}
+                teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
             />
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>

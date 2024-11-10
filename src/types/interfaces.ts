@@ -27,7 +27,7 @@ export interface GameTypeButtonProps {
 }
 
 export interface IndividualPlayerStatsProps {
-    playersStats: AggregatedPlayerStats;
+    playersStats?: AggregatedPlayerStats | null;
     name: string;
     showStatSummary: boolean;
 }
@@ -36,7 +36,6 @@ export interface IndividualTeamStatsProps {
     day: string;
     displayname?: string;
     stats: TeamResultsStatsFile;
-    playerStats: PlayerResultsStatsFile;
 }
 
 export interface ListProps {
@@ -52,12 +51,14 @@ export interface StatsTileProps {
 export interface PlayerStatsOptionsProps {
     allTeamStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
+    teamSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;
     onlyPairsCallback: (toggle: boolean) => void;
     onlyHomeCallback: (toggle: boolean) => void;
     onlyAwayCallback: (toggle: boolean) => void;
     onlyCupCallback: (toggle: boolean) => void;
-    playerSearchedFor: string;
+    searchedPlayerName: string;
+    teamNames: string[];
 }
 
 export interface PlayerStatsProps {
@@ -125,6 +126,7 @@ export interface PlayerStatsTeamSummary {
     wins: number;
     winPerc: number;
     average: number;
+    aggDiff: number;
 }
 
 export interface PlayerStatsSummary {

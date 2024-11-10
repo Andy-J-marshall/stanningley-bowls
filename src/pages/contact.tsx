@@ -17,7 +17,7 @@ function Contact() {
 
     return (
         <div id="contact-page" className="page-component center">
-            <h1>CONTACT US</h1>
+            <h1>contact us</h1>
             <p>
                 Get in touch via email:{' '}
                 <a className="link" href={emailUrl}>
@@ -40,7 +40,7 @@ function Contact() {
                 <img className="logos" src={facebook} alt="Facebook link" />
             </a>
             <div>
-                <h1>LOCATION</h1>
+                <h1>location</h1>
                 <p>
                     {config.teamNames.fullName} is situated within Stanningley
                     Park. Follow the footpath round and the entrance is between

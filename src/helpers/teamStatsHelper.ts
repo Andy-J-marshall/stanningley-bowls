@@ -1,3 +1,4 @@
+import { config } from '../config';
 import {
     ConfigTeamData,
     PlayerResultsStatsFile,
@@ -66,6 +67,22 @@ export function combineTeamStats(statsArray: TeamResultsStatsFile[]) {
     };
 }
 
+export function returnTeamNamesWithGames(playerStats: PlayerResultsStatsFile) {
+    const daysPlayed = new Set<string>();
+
+    for (const player in playerStats) {
+        const possibleDays = config.allTeamsInLeaguesSince2013;
+        for (const day of possibleDays) {
+            const dayStats = playerStats[player]?.[day];
+            if (dayStats?.games > 0) {
+                daysPlayed.add(day);
+            }
+        }
+    }
+
+    return Array.from(daysPlayed).sort();
+}
+
 export function returnPlayerStatsForTeam(
     playerStats: PlayerResultsStatsFile,
     day: string
@@ -73,14 +90,18 @@ export function returnPlayerStatsForTeam(
     const allPlayerStats = Object.keys(playerStats)
         .sort()
         .map((player) => {
-            const stats = playerStats[player][day.toLowerCase()];
-            const { games, wins, aggDiff } = stats;
+            const stats = playerStats[player]?.[day.toLowerCase()];
+            const games = stats?.games || 0;
+            const wins = stats?.wins || 0;
+            const aggDiff = stats?.aggDiff || 0;
+
             let playerDayStats = {
                 player,
                 games,
                 wins,
                 average: aggDiff / games,
                 winPerc: (wins / games) * 100,
+                aggDiff,
             };
             playerDayStats = checkWinPercAndAverageAreNumbers(playerDayStats);
             return playerDayStats;

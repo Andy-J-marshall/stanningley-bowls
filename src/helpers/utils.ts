@@ -15,3 +15,8 @@ export function capitalizeText(stringArray: string[]) {
     });
     return stringArrayAsString;
 }
+
+export function formatTeamName(teamName: string) {
+    const formatTeamName = capitalizeText([teamName]);
+    return formatTeamName.replace(' (a)', ' (A)').replace(' (b)', ' (B)');
+}

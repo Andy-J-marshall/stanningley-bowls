@@ -8,7 +8,7 @@ import {
 import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
-    let playerStats = props.playerStats;
+    const playerStats = props.playerStats;
     const displayPlayerStatsCallback = props.callback;
     const showSinglesOnlyBool = props.showSinglesOnly;
     const showPairsOnlyBool = props.showPairsOnly;
@@ -255,7 +255,16 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             const winPerc = wins && (wins / games) * 100;
             const playerName = player.player;
 
-            return { player: playerName, games, average, wins, winPerc };
+            const playerObject = {
+                player: playerName,
+                games,
+                average,
+                wins,
+                winPerc,
+                aggDiff: NaN, // Not used in this component
+            };
+
+            return playerObject;
         });
 
         return statsToUse;
@@ -320,7 +329,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        PLAYER
+                                        player
                                     </Button>
                                 </th>
                                 <th>
@@ -334,7 +343,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        GAMES
+                                        games
                                     </Button>
                                 </th>
                                 <th>
@@ -348,7 +357,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        WINS
+                                        wins
                                     </Button>
                                 </th>
                                 <th>
@@ -362,7 +371,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        WIN %
+                                        win %
                                     </Button>
                                 </th>
                                 <th>
@@ -376,7 +385,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                             padding: '0',
                                         }}
                                     >
-                                        AVERAGE
+                                        average
                                     </Button>
                                 </th>
                             </tr>

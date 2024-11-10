@@ -7,7 +7,7 @@ import NewsItem from './newsItem';
 function News() {
     return (
         <div id="news">
-            <h1>LATEST NEWS</h1>
+            <h1>latest news</h1>
             <Row xs={1} sm={1} md={3} lg={3} className="g-4 align-items-start">
                 <NewsItem
                     title="AGM DATE"

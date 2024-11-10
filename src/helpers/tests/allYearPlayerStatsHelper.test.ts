@@ -2,6 +2,8 @@ import { expect } from 'chai';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
+    returnTeamNamesWithGamesForAllYears,
+    returnTeamPlayerStatsForAllYears,
 } from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
 import stats2022 from '../../data/bowlsStats2022.json';
@@ -122,6 +124,90 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 },
             ];
             const result = returnPlayerStatSummaryForAllYears(statsArray);
+            expect(result).to.deep.equal([]);
+        });
+    });
+
+    describe('#returnTeamNamesWithGamesForAllYears()', () => {
+        it('Returns all unique team names with games across multiple years', () => {
+            const statsArray = [stats2022, stats2023, stats2024];
+            const result = returnTeamNamesWithGamesForAllYears(statsArray);
+
+            expect(result).to.deep.equal([
+                'monday combined leeds',
+                'saturday leeds',
+                'saturday leeds (b)',
+                'thursday vets leeds',
+                'tuesday leeds',
+                'tuesday vets leeds',
+                'wednesday half holiday leeds',
+                'wednesday pairs airewharfe',
+            ]);
+        });
+
+        it('Handles empty stats array', () => {
+            const statsArray: FullStatsFile[] = [];
+            const result = returnTeamNamesWithGamesForAllYears(statsArray);
+            expect(result).to.deep.equal([]);
+        });
+
+        it('Handles stats with no team games', () => {
+            const statsArray = [
+                {
+                    statsYear: '2021',
+                    lastUpdated: '2021-12-31',
+                    playerResults: {},
+                },
+            ];
+            const result = returnTeamNamesWithGamesForAllYears(statsArray);
+            expect(result).to.deep.equal([]);
+        });
+    });
+
+    describe('#returnTeamPlayerStatsForAllYears()', () => {
+        it('Correctly aggregates team player stats for a specific day across multiple years', () => {
+            const statsArray = [stats2022, stats2023, stats2024];
+            const result = returnTeamPlayerStatsForAllYears(
+                statsArray,
+                'monday combined leeds'
+            );
+
+            expect(result.length).to.equal(47);
+            const player = result.find(
+                (player) => player.player === 'vanessa lancaster'
+            );
+
+            expect(player).to.deep.equal({
+                player: 'vanessa lancaster',
+                games: 13,
+                wins: 4,
+                winPerc: 30.76923076923077,
+                average: -3.5384615384615383,
+                aggDiff: -46,
+            });
+        });
+
+        it('Handles empty stats array', () => {
+            const statsArray: FullStatsFile[] = [];
+            const result = returnTeamPlayerStatsForAllYears(
+                statsArray,
+                'monday combined leeds'
+            );
+            expect(result).to.deep.equal([]);
+        });
+
+        it('Handles players with no stats for the specified day', () => {
+            const statsArray = [
+                {
+                    statsYear: '2021',
+                    lastUpdated: '2021-12-31',
+                    playerResults: {},
+                },
+            ];
+            const result = returnTeamPlayerStatsForAllYears(
+                statsArray,
+                'monday combined leeds'
+            );
             expect(result).to.deep.equal([]);
         });
     });

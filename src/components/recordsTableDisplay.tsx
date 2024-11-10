@@ -19,15 +19,15 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
             {day && (
                 <div>
                     <br />
-                    <h4>{day.toUpperCase()}</h4>
+                    <h4>{day.toLowerCase()}</h4>
                 </div>
             )}
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>RECORD</th>
-                        <th>VALUE</th>
-                        <th>PLAYER</th>
+                        <th>record</th>
+                        <th>value</th>
+                        <th>player</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -3,10 +3,12 @@ import {
     combineTeamStats,
     findTeamStats,
     returnPlayerStatsForTeam,
+    returnTeamNamesWithGames,
 } from '../teamStatsHelper';
 import { PlayerResultsStatsFile } from '../../types/interfaces';
 import { config } from '../../config';
 import stats2022 from '../../data/bowlsStats2022.json';
+import stats2023 from '../../data/bowlsStats2023.json';
 import stats2024 from '../../data/bowlsStats2024.json';
 
 describe('#teamStatsHelper Tests', () => {
@@ -75,6 +77,22 @@ describe('#teamStatsHelper Tests', () => {
         });
     });
 
+    describe('#returnTeamNamesWithGames()', () => {
+        it('Correctly returns team names with games', () => {
+            const playerStats: PlayerResultsStatsFile = stats2023.playerResults;
+
+            const teamNames = returnTeamNamesWithGames(playerStats);
+            expect(teamNames).to.deep.equal([
+                'monday combined leeds',
+                'saturday leeds',
+                'thursday vets leeds',
+                'tuesday leeds',
+                'tuesday vets leeds',
+                'wednesday half holiday leeds',
+            ]);
+        });
+    });
+
     describe('#findTeamStats()', () => {
         it('B team stats should be null when there is no B team on that day', () => {
             for (const teamInfo of config.historicTeamInfo) {
@@ -83,7 +101,7 @@ describe('#teamStatsHelper Tests', () => {
                     teamInfo,
                     stats2022.teamResults
                 );
-                
+
                 expect(teamStats.bTeamStats).to.be.null;
             }
         });

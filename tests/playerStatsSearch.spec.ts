@@ -30,7 +30,6 @@ test('Stats search bar can show all player stats', async () => {
     await yearSelectPage.select2023Year();
     await playerStatsPage.searchForPlayer('Paul Bowes');
     await playerStatsPage.checkPlayerIsReturned();
-    await playerStatsPage.totalPlayerCountIsNotVisible();
 
     await playerStatsPage.searchForPlayer('Show All');
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);

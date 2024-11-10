@@ -3,27 +3,29 @@ import {
     FullStatsFile,
     PlayerResultsStatsFile,
     PlayerStatsSummary,
+    PlayerStatsTeamSummary,
 } from '../types/interfaces';
 import {
     calculateWinPercAndAverage,
     returnPlayerStats,
 } from './playerStatsHelper';
-import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
+import {
+    checkAllWinPercAndAverageAreNumbers,
+    checkWinPercAndAverageAreNumbers,
+} from './statsHelper';
+import { returnTeamNamesWithGames } from './teamStatsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
 ) {
     const statsToDisplayArray: PlayerStatsSummary[] = [];
-    let playerNames: string[] = [];
 
+    let playerNames: string[] = [];
     statsArray.forEach((stat) => {
         playerNames = playerNames.concat(Object.keys(stat.playerResults));
     });
-    for (var i = 0; i < playerNames.length; ++i) {
-        for (var j = i + 1; j < playerNames.length; ++j) {
-            if (playerNames[i] === playerNames[j]) playerNames.splice(j--, 1);
-        }
-    }
+    // Remove duplicate player names
+    playerNames = Array.from(new Set(playerNames));
 
     playerNames.sort().forEach((player) => {
         let stats: PlayerStatsSummary = {
@@ -314,4 +316,61 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
     });
 
     return collatedStats;
+}
+
+export function returnTeamNamesWithGamesForAllYears(
+    playerStatsArray: FullStatsFile[]
+) {
+    const daysPlayedSet: Set<string> = new Set();
+
+    playerStatsArray.forEach((playerStats) => {
+        const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
+        teamNames.forEach((teamName) => daysPlayedSet.add(teamName));
+    });
+
+    return Array.from(daysPlayedSet).sort();
+}
+
+export function returnTeamPlayerStatsForAllYears(
+    statsArray: FullStatsFile[],
+    day: string
+) {
+    const statsToDisplayArray: PlayerStatsTeamSummary[] = [];
+
+    let playerNames: string[] = [];
+    statsArray.forEach((stat) => {
+        playerNames = playerNames.concat(Object.keys(stat.playerResults));
+    });
+    // Remove duplicate player names
+    playerNames = Array.from(new Set(playerNames));
+
+    playerNames.sort().forEach((player) => {
+        let stats: PlayerStatsTeamSummary = {
+            player,
+            games: 0,
+            wins: 0,
+            winPerc: 0,
+            average: 0,
+            aggDiff: 0,
+        };
+
+        statsArray.forEach((yearStats) => {
+            const dayStats = yearStats.playerResults[player]?.[day];
+
+            if (dayStats) {
+                stats.games += dayStats.games;
+                stats.wins += dayStats.wins;
+                stats.aggDiff += dayStats.aggDiff;
+            }
+        });
+
+        stats.winPerc = (stats.wins / stats.games) * 100;
+        stats.average = stats.aggDiff / stats.games;
+
+        stats = checkWinPercAndAverageAreNumbers(stats);
+
+        statsToDisplayArray.push(stats);
+    });
+
+    return statsToDisplayArray;
 }

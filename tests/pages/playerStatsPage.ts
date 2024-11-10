@@ -34,7 +34,7 @@ export class PlayerStatsPage {
     private readonly awayOnlyRadio: Locator;
     private readonly cupOnlyRadio: Locator;
     private readonly allVenuesRadio: Locator;
-    private readonly totalPlayerCount: Locator;
+    private readonly teamSelectDropdown: Locator;
 
     private games: Locator;
     private wins: Locator;
@@ -90,11 +90,11 @@ export class PlayerStatsPage {
         this.allVenuesRadio = page.locator(
             ".form-check input[id='#all-venues-radio']"
         );
+        this.teamSelectDropdown = page.getByRole('button', { name: 'All' });
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
         this.winPerc = page.locator('#steve-gardner-win-perc');
         this.avg = page.locator('#steve-gardner-avg');
-        this.totalPlayerCount = page.locator('#total-player-count');
     }
 
     setPlayerToFind(name: string) {
@@ -193,14 +193,30 @@ export class PlayerStatsPage {
         await this.allYearSwitch.uncheck();
     }
 
-    async totalPlayerCountIsCorrect(playerCount: number) {
-        await expect(this.totalPlayerCount).toContainText(
-            playerCount.toString()
-        );
+    async optionsAreDisabledWhenSelectingSpecificTeam() {
+        await expect(this.teamSwitch).toBeDisabled();
+        await expect(this.singlesOnlyRadio).toBeDisabled();
+        await expect(this.pairsOnlyRadio).toBeDisabled();
+        await expect(this.allGameTypesRadio).toBeDisabled();
+        await expect(this.homeOnlyRadio).toBeDisabled();
+        await expect(this.awayOnlyRadio).toBeDisabled();
+        await expect(this.cupOnlyRadio).toBeDisabled();
+        await expect(this.allVenuesRadio).toBeDisabled();
     }
 
-    async totalPlayerCountIsNotVisible() {
-        await expect(this.totalPlayerCount).toBeHidden();
+    async teamSelectDropDownIsDisabled() {
+        await expect(this.teamSelectDropdown).toBeDisabled();
+    }
+
+    async selectTeamFromDropdown(team: string) {
+        await this.teamSelectDropdown.click();
+        await this.page
+            .getByRole('button', { exact: true, name: team })
+            .click();
+    }
+
+    async selectAllTeamsFromTeamDropdown() {
+        await this.teamSelectDropdown.click();
     }
 
     async validateSummaryStats(playerStats: PlayerStatsToCheck) {

@@ -201,7 +201,7 @@ function Records(props: RecordsProps) {
     if (mostGames > 0) {
         return (
             <div id="records">
-                <h1>{yearInTitle} RECORDS</h1>
+                <h1>{yearInTitle} records</h1>
                 <TeamTabs
                     allCombinedComponent={combinedRecordsComponent()}
                     teamComponents={returnAllComponentsForTeams()}
@@ -211,7 +211,7 @@ function Records(props: RecordsProps) {
     } else {
         return (
             <div>
-                <h1>{yearInTitle} RECORDS</h1>
+                <h1>{yearInTitle} records</h1>
                 <p>
                     No {config.teamNames.shortName} team stats available for the
                     selected year

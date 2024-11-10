@@ -1,16 +1,26 @@
 import { useState } from 'react';
-import { Form, InputGroup, Row, Col } from 'react-bootstrap';
+import {
+    Form,
+    InputGroup,
+    Row,
+    Col,
+    DropdownButton,
+    Dropdown,
+} from 'react-bootstrap';
 import { PlayerStatsOptionsProps } from '../types/interfaces';
+import { formatTeamName } from '../helpers/utils';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allTeamStatsCallback = props.allTeamStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
+    const teamSpecificCallback = props.teamSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
     const onlyHomeCallback = props.onlyHomeCallback;
     const onlyAwayCallback = props.onlyAwayCallback;
     const onlyCupCallback = props.onlyCupCallback;
-    const playerSearchedFor = props.playerSearchedFor;
+    const searchedPlayerName = props.searchedPlayerName;
+    const teamNames = props.teamNames;
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allTeamsToggle, setAllTeamsToggle] = useState(false);
@@ -21,11 +31,53 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [homeOnlyToggle, setHomeOnlyToggle] = useState(false);
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
+    const [disableOtherOptions, setDisableOtherOptions] = useState(false);
+    const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
+
+    const defaultTeamDropdownTitle = 'All Teams';
+    const [teamDropdownTitle, setTeamDropdownTitle] = useState(
+        defaultTeamDropdownTitle
+    );
 
     function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
+        setDisableTeamDropdown(allTeamStatsToggle);
+    }
+
+    function toggleSpecificTeamStats(teamName: string) {
+        if (!teamName || teamName === '') {
+            setAllTeamsToggle(false);
+            teamSpecificCallback('');
+            setDisableOtherOptions(false);
+            setTeamDropdownTitle(defaultTeamDropdownTitle);
+        } else {
+            setTeamDropdownTitle(formatTeamName(teamName));
+            teamSpecificCallback(teamName);
+
+            setAllGameTypesToggle(true);
+            setAllVenuesToggle(true);
+            setDisableOtherOptions(true);
+
+            setAllTeamsToggle(false);
+            allTeamStatsCallback(false);
+
+            setSinglesOnlyToggle(false);
+            onlySinglesCallback(false);
+
+            setPairsOnlyToggle(false);
+            onlyPairsCallback(false);
+
+            setHomeOnlyToggle(false);
+            onlyHomeCallback(false);
+
+            setAwayOnlyToggle(false);
+            onlyAwayCallback(false);
+
+            setCupOnlyToggle(false);
+            onlyCupCallback(false);
+        }
     }
 
     function toggleSinglesOnlyMatches() {
@@ -117,12 +169,12 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     }
 
     return (
-        <div className="stats-filters center">
-            {!playerSearchedFor && (
+        !searchedPlayerName && (
+            <div className="stats-filters center">
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
                                 <h6>OPTIONS</h6>
                                 <Form.Check
                                     inline
@@ -132,6 +184,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     type="switch"
                                     label="Include other teams"
                                     checked={allTeamsToggle}
+                                    disabled={disableOtherOptions}
                                 />
                                 <Form.Check
                                     inline
@@ -143,7 +196,41 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
+                                <h6>TEAMS</h6>
+                                <DropdownButton
+                                    drop="up"
+                                    size="sm"
+                                    variant="light"
+                                    id="team-select-dropdown"
+                                    title={teamDropdownTitle}
+                                    disabled={disableTeamDropdown}
+                                >
+                                    {teamNames.map((teamName, index) => (
+                                        <Dropdown.Item
+                                            key={index}
+                                            id={'#team-option-' + index}
+                                            onClick={() =>
+                                                toggleSpecificTeamStats(
+                                                    teamName
+                                                )
+                                            }
+                                        >
+                                            {formatTeamName(teamName)}
+                                        </Dropdown.Item>
+                                    ))}
+                                    <Dropdown.Divider />
+                                    <Dropdown.Item
+                                        id="#team-option-all"
+                                        onClick={() =>
+                                            toggleSpecificTeamStats('')
+                                        }
+                                    >
+                                        {defaultTeamDropdownTitle}
+                                    </Dropdown.Item>
+                                </DropdownButton>
+                            </Col>
+                            <Col xs={12} md={3}>
                                 <h6>GAME TYPES</h6>
                                 <InputGroup>
                                     <Form.Check
@@ -155,6 +242,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="All"
                                         checked={allGameTypesToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                     <Form.Check
                                         inline
@@ -165,6 +253,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Singles"
                                         checked={singlesOnlyToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                     <Form.Check
                                         inline
@@ -175,10 +264,11 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Pairs"
                                         checked={pairsOnlyToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3}>
                                 <h6>VENUE</h6>
                                 <InputGroup>
                                     <Form.Check
@@ -190,6 +280,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="All"
                                         checked={allVenuesToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                     <Form.Check
                                         inline
@@ -200,6 +291,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Home"
                                         checked={homeOnlyToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                     <Form.Check
                                         inline
@@ -210,6 +302,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Away"
                                         checked={awayOnlyToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                     <Form.Check
                                         inline
@@ -220,14 +313,15 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         type="radio"
                                         label="Cup"
                                         checked={cupOnlyToggle}
+                                        disabled={disableOtherOptions}
                                     />
                                 </InputGroup>
                             </Col>
                         </Row>
                     </Form.Group>
                 </Form>
-            )}
-        </div>
+            </div>
+        )
     );
 }
 

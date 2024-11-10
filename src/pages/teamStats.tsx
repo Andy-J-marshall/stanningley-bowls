@@ -11,7 +11,7 @@ import { findTeamStats } from '../helpers/teamStatsHelper';
 function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;
 
-    const { playerResults, teamResults } = stats;
+    const { teamResults } = stats;
     const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
@@ -42,7 +42,6 @@ function TeamStats(props: TeamStatsProps) {
                                         <IndividualTeamStats
                                             day={teamName}
                                             stats={teamStats}
-                                            playerStats={playerResults}
                                         />
                                     )}
                                     {bTeamStats && (
@@ -58,7 +57,6 @@ function TeamStats(props: TeamStatsProps) {
                                                 ' (b)'
                                             }
                                             stats={bTeamStats}
-                                            playerStats={playerResults}
                                         />
                                     )}
                                     <br />
@@ -96,7 +94,7 @@ function TeamStats(props: TeamStatsProps) {
     if (teamResults) {
         return (
             <div id="team-stats">
-                <h1>{yearInTitle} TEAM STATS</h1>
+                <h1>{yearInTitle} team stats</h1>
                 <TeamTabs
                     allCombinedComponent={
                         <div>
@@ -115,7 +113,7 @@ function TeamStats(props: TeamStatsProps) {
     } else {
         return (
             <div id="team-stats-unavailable">
-                <h1>{yearInTitle} TEAM STATS</h1>
+                <h1>{yearInTitle} team stats</h1>
                 <p>
                     No {config.teamNames.shortName} team stats available for the
                     selected year

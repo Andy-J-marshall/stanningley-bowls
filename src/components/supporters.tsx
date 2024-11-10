@@ -9,7 +9,7 @@ import wldLogo from '../images/supporters/west_leeds_dispatch.png';
 function Supporters() {
     return (
         <div id="socials">
-            <h1>SUPPORTERS</h1>
+            <h1>supporters</h1>
             <a target="_blank" href="https://www.joeysportsmassage.co.uk">
                 <img
                     className="supporters-logos"
