@@ -34,6 +34,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
+    const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
 
     const defaultTeamDropdownTitle = 'All';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
@@ -44,6 +45,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
+        setDisableTeamDropdown(allTeamStatsToggle);
     }
 
     function toggleSpecificTeamStats(teamName: string) {
@@ -205,6 +207,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     variant="Secondary"
                                     id="team-select-dropdown"
                                     title={teamDropdownTitle}
+                                    disabled={disableTeamDropdown}
+                                    // TODO add a message to explain why disabled?
                                 >
                                     <Dropdown.Item
                                         id="#team-option-all"
