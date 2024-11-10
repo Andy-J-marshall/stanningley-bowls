@@ -27,7 +27,7 @@ export interface GameTypeButtonProps {
 }
 
 export interface IndividualPlayerStatsProps {
-    playersStats: AggregatedPlayerStats;
+    playersStats?: AggregatedPlayerStats | null;
     name: string;
     showStatSummary: boolean;
 }

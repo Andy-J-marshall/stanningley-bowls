@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
-import { config } from '../config';
 import { capitalizeText } from '../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';
 import PlayerStatsWinsLosses from './playerStatsWinsLosses';
@@ -23,15 +22,8 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
             <h3 style={{ padding: '0.7rem' }} id="playerNameTitle">
                 {capitalizeText([name])}
             </h3>
-            {stats.gamesPlayed === 0 && (
-                <div>
-                    {!showStatSummary && (
-                        <p>No games played for {config.teamNames.shortName}</p>
-                    )}
-                    {showStatSummary && <p>No games played</p>}
-                </div>
-            )}
-            {stats.gamesPlayed > 0 && (
+            {!stats && <p>No games played this year</p>}
+            {stats && stats.gamesPlayed > 0 && (
                 <Accordion defaultActiveKey="0">
                     <PlayerStatsOverview stats={stats} />
                     <PlayerStatsWinsLosses stats={stats} />

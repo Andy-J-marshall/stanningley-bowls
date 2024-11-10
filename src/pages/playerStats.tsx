@@ -170,43 +170,26 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function showDetailedPlayerStats(playerName: string) {
-        const playerLower = playerName.toLowerCase();
         const individualStats = showStatsSinceStart
             ? returnPlayerStatsForAllYears(allYearsStatsToUseArray)
             : statsToUse;
 
-        const playersListToUse = showStatsSinceStart ? allPlayers : players;
-        const validPlayer = playersListToUse.find(
-            (player) => player.toLowerCase() === playerLower
-        );
-
-        const detailedPlayerStats = returnPlayerStats(
+        const detailedStats = returnPlayerStats(
             individualStats,
-            playerLower
+            playerName.toLowerCase()
         );
 
-        if (
-            validPlayer &&
-            detailedPlayerStats &&
-            detailedPlayerStats.gamesPlayed > 0
-        ) {
-            return (
-                <IndividualPlayerStats
-                    name={playerLower}
-                    playersStats={detailedPlayerStats}
-                    showStatSummary={showStatSummary}
-                ></IndividualPlayerStats>
-            );
-        } else {
-            return (
-                searchedPlayerName.toLowerCase() !== 'show all' && (
-                    <h3>Player not found for {stats.statsYear}</h3>
-                )
-            );
-        }
+        return (
+            <IndividualPlayerStats
+                name={playerName.toLowerCase()}
+                playersStats={detailedStats}
+                showStatSummary={showStatSummary}
+            />
+        );
     }
 
     function returnStatSummaryTable() {
+        // TODO possibly able to remove this check and move it to PlayerStatSummary
         const teamNamesUsed = showStatsSinceStart
             ? teamNamesAllYears
             : teamNames;
