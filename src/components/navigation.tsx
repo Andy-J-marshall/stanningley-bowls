@@ -14,7 +14,12 @@ function Navigation() {
         >
             <Container fluid>
                 <Navbar.Brand as={Link} to="/" href="/home">
-                    <Image style={{ height: '2.3rem' }} src={logoImg} rounded fluid />
+                    <Image
+                        style={{ height: '2.3rem' }}
+                        src={logoImg}
+                        rounded
+                        fluid
+                    />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -136,6 +141,19 @@ function Navigation() {
                                     eventKey="/history"
                                 >
                                     HISTORY
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item
+                                as={Link}
+                                to="/membership/documents"
+                                className="tabs link"
+                            >
+                                <Nav.Link
+                                    as="div"
+                                    href="/membership/documents"
+                                    eventKey="/membership/documents"
+                                >
+                                    DOCUMENTS
                                 </Nav.Link>
                             </Nav.Item>
                         </NavDropdown>

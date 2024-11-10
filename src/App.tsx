@@ -17,6 +17,7 @@ import statsData from './statsData';
 import './app.css';
 import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
+import MembershipDocs from './pages/membershipDocs';
 
 const allYearStats: any = statsData.allYearStats;
 const allYearCombinedStats: any = statsData.allYearCombinedStats;
@@ -109,6 +110,7 @@ function App() {
                     <Route path="" element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/membership" element={<Membership />} />
+                    <Route path="/membership/documents" element={<MembershipDocs />} />
                     <Route path="/teams" element={<TeamInfo />} />
                     <Route path="/social" element={<SocialInfo />} />
                     <Route path="/fixtures" element={<Fixtures />} />
