@@ -34,7 +34,6 @@ export class PlayerStatsPage {
     private readonly awayOnlyRadio: Locator;
     private readonly cupOnlyRadio: Locator;
     private readonly allVenuesRadio: Locator;
-    private readonly totalPlayerCount: Locator;
 
     private games: Locator;
     private wins: Locator;
@@ -94,7 +93,6 @@ export class PlayerStatsPage {
         this.wins = page.locator('#steve-gardner-wins');
         this.winPerc = page.locator('#steve-gardner-win-perc');
         this.avg = page.locator('#steve-gardner-avg');
-        this.totalPlayerCount = page.locator('#total-player-count');
     }
 
     setPlayerToFind(name: string) {
@@ -191,16 +189,6 @@ export class PlayerStatsPage {
 
     async deselectSince2013Switch() {
         await this.allYearSwitch.uncheck();
-    }
-
-    async totalPlayerCountIsCorrect(playerCount: number) {
-        await expect(this.totalPlayerCount).toContainText(
-            playerCount.toString()
-        );
-    }
-
-    async totalPlayerCountIsNotVisible() {
-        await expect(this.totalPlayerCount).toBeHidden();
     }
 
     async validateSummaryStats(playerStats: PlayerStatsToCheck) {
