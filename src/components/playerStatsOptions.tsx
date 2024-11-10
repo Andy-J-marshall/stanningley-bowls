@@ -36,7 +36,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
 
-    const defaultTeamDropdownTitle = 'All Teams';
+    const defaultTeamDropdownTitle = 'All';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
     );
@@ -213,7 +213,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             toggleSpecificTeamStats('')
                                         }
                                     >
-                                        All Teams
+                                        {defaultTeamDropdownTitle}
                                     </Dropdown.Item>
                                     <Dropdown.Divider />
                                     {teamNames.map((teamName, index) => (
