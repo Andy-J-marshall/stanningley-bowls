@@ -5,7 +5,7 @@ import TeamTabs from '../components/teamTabs';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
 import { TeamStatsProps } from '../types/interfaces';
-import Wrapper from '../components/wrapper';
+import TeamTabsWrapper from '../components/teamTabsWrapper';
 import { findTeamStats } from '../helpers/teamStatsHelper';
 
 function TeamStats(props: TeamStatsProps) {
@@ -30,7 +30,7 @@ function TeamStats(props: TeamStatsProps) {
 
             if (teamStats || bTeamStats) {
                 return (
-                    <Wrapper
+                    <TeamTabsWrapper
                         displayname={displayname}
                         children={
                             <div>
@@ -53,11 +53,11 @@ function TeamStats(props: TeamStatsProps) {
                                 )}
                             </div>
                         }
-                    ></Wrapper>
+                    ></TeamTabsWrapper>
                 );
             } else {
                 return (
-                    <Wrapper
+                    <TeamTabsWrapper
                         displayname={displayname}
                         children={
                             <p className="center" style={{ width: '95%' }}>
@@ -65,7 +65,7 @@ function TeamStats(props: TeamStatsProps) {
                                 this day for the selected year
                             </p>
                         }
-                    ></Wrapper>
+                    ></TeamTabsWrapper>
                 );
             }
         });

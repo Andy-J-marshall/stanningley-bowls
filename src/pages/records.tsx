@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import TeamTabs from '../components/teamTabs';
 import RecordsTableDisplay from '../components/recordsTableDisplay';
-import Wrapper from '../components/wrapper';
+import TeamTabsWrapper from '../components/teamTabsWrapper';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
 import { RecordsProps } from '../types/interfaces';
@@ -82,7 +82,7 @@ function Records(props: RecordsProps) {
 
             if (teamRecord || bTeamRecord) {
                 return (
-                    <Wrapper
+                    <TeamTabsWrapper
                         displayname={displayname}
                         children={
                             <div>
@@ -122,11 +122,11 @@ function Records(props: RecordsProps) {
                                 />
                             </div>
                         }
-                    ></Wrapper>
+                    ></TeamTabsWrapper>
                 );
             } else {
                 return (
-                    <Wrapper
+                    <TeamTabsWrapper
                         displayname={displayname}
                         children={
                             <p className="center" style={{ width: '95%' }}>
@@ -134,7 +134,7 @@ function Records(props: RecordsProps) {
                                 this day for the selected year
                             </p>
                         }
-                    ></Wrapper>
+                    ></TeamTabsWrapper>
                 );
             }
         });
