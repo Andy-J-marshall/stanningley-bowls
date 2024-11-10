@@ -129,7 +129,7 @@ function Records(props: RecordsProps) {
                     <Wrapper
                         displayname={displayname}
                         children={
-                            <p>
+                            <p className="center" style={{ width: '95%' }}>
                                 {config.teamNames.shortName} did not play on
                                 this day for the selected year
                             </p>
@@ -154,7 +154,7 @@ function Records(props: RecordsProps) {
         );
     } else {
         return (
-            <div>
+            <div className="center" style={{ width: '95%' }}>
                 <h1>{yearInTitle} records</h1>
                 <p>
                     No {config.teamNames.shortName} team stats available for the

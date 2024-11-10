@@ -60,7 +60,7 @@ function TeamStats(props: TeamStatsProps) {
                     <Wrapper
                         displayname={displayname}
                         children={
-                            <p>
+                            <p className="center" style={{ width: '95%' }}>
                                 {config.teamNames.shortName} did not play on
                                 this day for the selected year
                             </p>
@@ -87,7 +87,11 @@ function TeamStats(props: TeamStatsProps) {
         );
     } else {
         return (
-            <div id="team-stats-unavailable">
+            <div
+                className="center"
+                style={{ width: '95%' }}
+                id="team-stats-unavailable"
+            >
                 <h1>{yearInTitle} team stats</h1>
                 <p>
                     No {config.teamNames.shortName} team stats available for the
