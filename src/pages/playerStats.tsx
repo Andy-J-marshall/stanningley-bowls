@@ -189,19 +189,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
-        // TODO possibly able to remove this check and move it to PlayerStatSummary
-        const teamNamesUsed = showStatsSinceStart
-            ? teamNamesAllYears
-            : teamNames;
-
-        if (teamNameForStats && !teamNamesUsed.includes(teamNameForStats)) {
-            return (
-                <h3>
-                    No stats for {teamNameForStats} stats in {stats.statsYear}
-                </h3>
-            );
-        }
-
         let playerStatsForSummary:
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
