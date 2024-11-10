@@ -210,6 +210,7 @@ function PlayerStats(props: PlayerStatsProps) {
         const teamNamesUsed = showStatsSinceStart
             ? teamNamesAllYears
             : teamNames;
+
         if (teamNameForStats && !teamNamesUsed.includes(teamNameForStats)) {
             return (
                 <h3>
