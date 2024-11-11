@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Accordion, Row } from 'react-bootstrap';
-import StatsTile from './statsTile';
+import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
+import PlayerStatAggregateTiles from './PlayerStatAggregateTiles';
 
 function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -200,45 +200,31 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                     )}
 
                     <h3>total</h3>
-                    <Row xs={2} className="g-4 align-items-start">
-                        <StatsTile
-                            title="FOR"
-                            bodyText={
-                                displayTotalAgg + ' / ' + displayAvailableAgg
-                            }
-                        />
-                        <StatsTile
-                            title="AGAINST"
-                            bodyText={
-                                displayTotalAggAgainst +
-                                ' / ' +
-                                displayAvailableAgg
-                            }
-                        />
-                    </Row>
+                    <PlayerStatAggregateTiles
+                        aggFor={displayTotalAgg + ' / ' + displayAvailableAgg}
+                        aggAgainst={
+                            displayTotalAggAgainst + ' / ' + displayAvailableAgg
+                        }
+                        idPrefix="combined"
+                    />
 
                     {displayHomeGamesPlayed > 0 && (
                         <div>
                             <hr />
                             <h3>home</h3>
-                            <Row xs={2} className="g-4 align-items-start">
-                                <StatsTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayTotalHomeAgg +
-                                        ' / ' +
-                                        displayAvailableHomeAgg
-                                    }
-                                />
-                                <StatsTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayTotalHomeAggAgainst +
-                                        ' / ' +
-                                        displayAvailableHomeAgg
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatAggregateTiles
+                                aggFor={
+                                    displayTotalHomeAgg +
+                                    ' / ' +
+                                    displayAvailableHomeAgg
+                                }
+                                aggAgainst={
+                                    displayTotalHomeAggAgainst +
+                                    ' / ' +
+                                    displayAvailableHomeAgg
+                                }
+                                idPrefix="home"
+                            />
                         </div>
                     )}
 
@@ -246,24 +232,19 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>away</h3>
-                            <Row xs={2} className="g-4 align-items-start">
-                                <StatsTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayTotalAwayAgg +
-                                        ' / ' +
-                                        displayAvailableAwayAgg
-                                    }
-                                />
-                                <StatsTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayTotalAwayAggAgainst +
-                                        ' / ' +
-                                        displayAvailableAwayAgg
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatAggregateTiles
+                                aggFor={
+                                    displayTotalAwayAgg +
+                                    ' / ' +
+                                    displayAvailableAwayAgg
+                                }
+                                aggAgainst={
+                                    displayTotalAwayAggAgainst +
+                                    ' / ' +
+                                    displayAvailableAwayAgg
+                                }
+                                idPrefix="away"
+                            />
                         </div>
                     )}
 
@@ -271,24 +252,19 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>cup</h3>
-                            <Row xs={2} className="g-4 align-items-start">
-                                <StatsTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayCupAgg +
-                                        ' / ' +
-                                        displayAvailableCupAgg
-                                    }
-                                />
-                                <StatsTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayCupAggAgainst +
-                                        ' / ' +
-                                        displayAvailableCupAgg
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatAggregateTiles
+                                aggFor={
+                                    displayCupAgg +
+                                    ' / ' +
+                                    displayAvailableCupAgg
+                                }
+                                aggAgainst={
+                                    displayCupAggAgainst +
+                                    ' / ' +
+                                    displayAvailableCupAgg
+                                }
+                                idPrefix="cup"
+                            />
                         </div>
                     )}
                 </Accordion.Body>

@@ -1,9 +1,9 @@
 import { Row } from 'react-bootstrap';
-import { PlayerStatTilesProps } from '../types/interfaces';
+import { PlayerStatOverviewTilesProps } from '../types/interfaces';
 import StatsTile from './statsTile';
 import { capitalizeText } from '../helpers/utils';
 
-function PlayerStatOverviewTiles(props: PlayerStatTilesProps) {
+function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {
     const games = props.games;
     const average = props.average;
     const wins = props.wins;
