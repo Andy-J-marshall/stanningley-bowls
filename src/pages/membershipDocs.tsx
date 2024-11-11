@@ -25,6 +25,7 @@ function MembershipDocs() {
                                 target="_blank"
                                 href="https://drive.google.com/file/d/16t4A7AfzcBtd4s9TEEXvKuHFCoPYuakQ/view?usp=drive_link"
                                 download
+                                className="link"
                             >
                                 BCGBA Membership Registration Form
                             </a>
@@ -34,6 +35,7 @@ function MembershipDocs() {
                                 target="_blank"
                                 href="https://drive.google.com/file/d/17-JRHQfRHVJxphj8cDQhsx6pFdMh7u5o/view?usp=drive_link"
                                 download
+                                className="link"
                             >
                                 {config.teamNames.shortName} Constitution
                             </a>
@@ -43,6 +45,7 @@ function MembershipDocs() {
                                 target="_blank"
                                 href="https://drive.google.com/file/d/16kUu4uQ9X9ScvPTap4fRJRT8w28uqIQc/view?usp=drive_link"
                                 download
+                                className="link"
                             >
                                 Code of Conduct
                             </a>
@@ -52,6 +55,7 @@ function MembershipDocs() {
                                 target="_blank"
                                 href="https://drive.google.com/file/d/16vxyxvAqPH311HK6_5zQ0dRW5zfweB7N/view?usp=drive_link"
                                 download
+                                className="link"
                             >
                                 Safeguarding Policy
                             </a>
@@ -60,6 +64,7 @@ function MembershipDocs() {
                             <a
                                 target="_blank"
                                 href="https://www.bcgba.org.uk/laws-of-the-game/"
+                                className="link"
                             >
                                 Crown Green Bowling Rules
                             </a>

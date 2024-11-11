@@ -143,19 +143,6 @@ function Navigation() {
                                     HISTORY
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item
-                                as={Link}
-                                to="/membership/documents"
-                                className="tabs link"
-                            >
-                                <Nav.Link
-                                    as="div"
-                                    href="/membership/documents"
-                                    eventKey="/membership/documents"
-                                >
-                                    DOCUMENTS
-                                </Nav.Link>
-                            </Nav.Item>
                         </NavDropdown>
                         <Nav.Item
                             as={Link}
