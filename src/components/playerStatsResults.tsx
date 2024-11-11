@@ -16,7 +16,6 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
             <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
             <Accordion.Body>
                 <div id="player-results" className="center">
-                    <br />
                     <Table striped bordered hover>
                         <thead>
                             <tr>
