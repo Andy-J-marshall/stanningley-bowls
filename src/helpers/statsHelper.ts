@@ -135,3 +135,18 @@ export function checkAllWinPercAndAverageAreNumbers(stats: PlayerStatsSummary) {
 
     return stats;
 }
+
+export function orderBy(
+    orderByStatPropertyName: string,
+    playerStats: (PlayerStatsSummary | PlayerStatsTeamSummary)[]
+) {
+    const order = [...playerStats].sort((p1: any, p2: any) =>
+        p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
+            ? 1
+            : p1[orderByStatPropertyName] > p2[orderByStatPropertyName]
+            ? -1
+            : 0
+    );
+
+    return order;
+}

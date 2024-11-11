@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Accordion, Row } from 'react-bootstrap';
-import StatTile from './statTile';
+import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
+import PlayerStatAggregateTiles from './PlayerStatAggregateTiles';
 
 function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -185,124 +185,87 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
     }
 
     return (
-        <div id="player-stats-aggregates">
-            <Accordion.Item eventKey="3">
-                <Accordion.Header onClick={refreshStats} id="stats-aggregate">
-                    AGGREGATES
-                </Accordion.Header>
-                <Accordion.Body>
-                    {pairsGames > 0 && singlesGames > 0 && (
-                        <GameTypeButton
-                            displayAllCallback={displayAll}
-                            displaySinglesCallback={displaySingles}
-                            displayPairsCallback={displayPairs}
-                        />
-                    )}
+        <Accordion.Item eventKey="3">
+            <Accordion.Header onClick={refreshStats} id="stats-aggregate">
+                AGGREGATES
+            </Accordion.Header>
+            <Accordion.Body>
+                {pairsGames > 0 && singlesGames > 0 && (
+                    <GameTypeButton
+                        displayAllCallback={displayAll}
+                        displaySinglesCallback={displaySingles}
+                        displayPairsCallback={displayPairs}
+                    />
+                )}
 
-                    <h3>total</h3>
-                    <Row xs={2} className="g-4 align-items-start">
-                        <StatTile
-                            title="FOR"
-                            bodyText={
-                                displayTotalAgg + ' / ' + displayAvailableAgg
-                            }
-                        />
-                        <StatTile
-                            title="AGAINST"
-                            bodyText={
-                                displayTotalAggAgainst +
+                <h3>total</h3>
+                <PlayerStatAggregateTiles
+                    aggFor={displayTotalAgg + ' / ' + displayAvailableAgg}
+                    aggAgainst={
+                        displayTotalAggAgainst + ' / ' + displayAvailableAgg
+                    }
+                    idPrefix="combined"
+                />
+
+                {displayHomeGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>home</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayTotalHomeAgg +
                                 ' / ' +
-                                displayAvailableAgg
+                                displayAvailableHomeAgg
                             }
+                            aggAgainst={
+                                displayTotalHomeAggAgainst +
+                                ' / ' +
+                                displayAvailableHomeAgg
+                            }
+                            idPrefix="home"
                         />
-                    </Row>
+                    </div>
+                )}
 
-                    {displayHomeGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>home</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayTotalHomeAgg +
-                                        ' / ' +
-                                        displayAvailableHomeAgg
-                                    }
-                                />
-                                <StatTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayTotalHomeAggAgainst +
-                                        ' / ' +
-                                        displayAvailableHomeAgg
-                                    }
-                                />
-                            </Row>
-                        </div>
-                    )}
+                {displayAwayGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>away</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayTotalAwayAgg +
+                                ' / ' +
+                                displayAvailableAwayAgg
+                            }
+                            aggAgainst={
+                                displayTotalAwayAggAgainst +
+                                ' / ' +
+                                displayAvailableAwayAgg
+                            }
+                            idPrefix="away"
+                        />
+                    </div>
+                )}
 
-                    {displayAwayGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>away</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayTotalAwayAgg +
-                                        ' / ' +
-                                        displayAvailableAwayAgg
-                                    }
-                                />
-                                <StatTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayTotalAwayAggAgainst +
-                                        ' / ' +
-                                        displayAvailableAwayAgg
-                                    }
-                                />
-                            </Row>
-                        </div>
-                    )}
-
-                    {displayCupGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>cup</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="FOR"
-                                    bodyText={
-                                        displayCupAgg +
-                                        ' / ' +
-                                        displayAvailableCupAgg
-                                    }
-                                />
-                                <StatTile
-                                    title="AGAINST"
-                                    bodyText={
-                                        displayCupAggAgainst +
-                                        ' / ' +
-                                        displayAvailableCupAgg
-                                    }
-                                />
-                            </Row>
-                        </div>
-                    )}
-                </Accordion.Body>
-            </Accordion.Item>
-        </div>
+                {displayCupGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>cup</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayCupAgg + ' / ' + displayAvailableCupAgg
+                            }
+                            aggAgainst={
+                                displayCupAggAgainst +
+                                ' / ' +
+                                displayAvailableCupAgg
+                            }
+                            idPrefix="cup"
+                        />
+                    </div>
+                )}
+            </Accordion.Body>
+        </Accordion.Item>
     );
 }
 

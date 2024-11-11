@@ -5,7 +5,8 @@ import {
     PlayerStatsTeamSummary,
     PlayerStatSummaryProps,
 } from '../types/interfaces';
-import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
+import { orderBy } from '../helpers/statsHelper';
+import { returnPlayerSummaryDisplayStats } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const playerStats = props.playerStats;
@@ -93,18 +94,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         const propertyLowerFirstChar =
             propertyName.charAt(0).toLowerCase() + propertyName.slice(1);
 
-        return orderBy(propertyLowerFirstChar);
-    }
-
-    function orderBy(orderByStatPropertyName: string) {
-        const order = [...filteredPlayerStats].sort((p1: any, p2: any) =>
-            p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
-                ? 1
-                : p1[orderByStatPropertyName] > p2[orderByStatPropertyName]
-                ? -1
-                : 0
-        );
-        return order;
+        return orderBy(propertyLowerFirstChar, filteredPlayerStats);
     }
 
     function orderByName() {
@@ -187,85 +177,14 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             stats = returnPlayersOrderedByAverage();
         }
 
-        const statsToUse = stats?.map((player) => {
-            let games = player.games;
-            let average = player.average;
-            let wins = player.wins;
-
-            if (isPlayerStatsSummaryType(player)) {
-                if (showSinglesOnlyBool) {
-                    games = player.singlesGames;
-                    average = player.singlesAverage;
-                    wins = player.singlesWins;
-                }
-                if (showPairsOnlyBool) {
-                    games = player.pairsGames;
-                    average = player.pairsAverage;
-                    wins = player.pairsWins;
-                }
-
-                if (showHomeOnlyBool) {
-                    games = player.homeGames;
-                    average = player.homeAverage;
-                    wins = player.homeWins;
-                }
-                if (showHomeOnlyBool && showSinglesOnlyBool) {
-                    games = player.singlesHomeGames;
-                    average = player.singlesHomeAverage;
-                    wins = player.singlesHomeWins;
-                }
-                if (showHomeOnlyBool && showPairsOnlyBool) {
-                    games = player.pairsHomeGames;
-                    average = player.pairsHomeAverage;
-                    wins = player.pairsHomeWins;
-                }
-
-                if (showAwayOnlyBool) {
-                    games = player.awayGames;
-                    average = player.awayAverage;
-                    wins = player.awayWins;
-                }
-                if (showAwayOnlyBool && showSinglesOnlyBool) {
-                    games = player.singlesAwayGames;
-                    average = player.singlesAwayAverage;
-                    wins = player.singlesAwayWins;
-                }
-                if (showAwayOnlyBool && showPairsOnlyBool) {
-                    games = player.pairsAwayGames;
-                    average = player.pairsAwayAverage;
-                    wins = player.pairsAwayWins;
-                }
-
-                if (showCupOnlyBool) {
-                    games = player.cupGames;
-                    average = player.cupAverage;
-                    wins = player.cupWins;
-                }
-                if (showCupOnlyBool && showSinglesOnlyBool) {
-                    games = player.singlesCupGames;
-                    average = player.singlesCupAverage;
-                    wins = player.singlesCupWins;
-                }
-                if (showCupOnlyBool && showPairsOnlyBool) {
-                    games = player.pairsCupGames;
-                    average = player.pairsCupAverage;
-                    wins = player.pairsCupWins;
-                }
-            }
-            const winPerc = wins && (wins / games) * 100;
-            const playerName = player.player;
-
-            const playerObject = {
-                player: playerName,
-                games,
-                average,
-                wins,
-                winPerc,
-                aggDiff: NaN, // Not used in this component
-            };
-
-            return playerObject;
-        });
+        const statsToUse = returnPlayerSummaryDisplayStats(
+            stats,
+            showSinglesOnlyBool,
+            showPairsOnlyBool,
+            showHomeOnlyBool,
+            showAwayOnlyBool,
+            showCupOnlyBool
+        );
 
         return statsToUse;
     }
@@ -314,6 +233,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             return <h3>No player stats found</h3>;
         } else {
             return (
+                // TODO create component for this?
                 <div id="player-stats-per-team" className="center table">
                     <Table striped bordered hover>
                         <thead>

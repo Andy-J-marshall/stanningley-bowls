@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { returnTabName } from '../statsHelper';
+import { orderBy, returnTabName } from '../statsHelper';
 import { checkAllWinPercAndAverageAreNumbers } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
@@ -148,6 +148,69 @@ describe('#StatsHelper Tests', () => {
 
             const result = checkAllWinPercAndAverageAreNumbers(stats);
             expect(result).to.deep.contain(expectedResult);
+        });
+    });
+
+    describe('orderBy', () => {
+        it('should order player stats by the specified property in descending order', () => {
+            const playerStats = [
+                {
+                    player: 'Player A',
+                    games: 20,
+                    wins: 18,
+                    winPerc: 90,
+                    average: 10,
+                    aggDiff: 200,
+                },
+                {
+                    player: 'Player B',
+                    games: 30,
+                    wins: 0,
+                    winPerc: 0,
+                    average: -12,
+                    aggDiff: -360,
+                },
+                {
+                    player: 'Player C',
+                    games: 10,
+                    wins: 5,
+                    winPerc: 50,
+                    average: 0,
+                    aggDiff: 0,
+                },
+                {
+                    player: 'Player D',
+                    games: 11,
+                    wins: 11,
+                    winPerc: 100,
+                    average: 11,
+                    aggDiff: 121,
+                },
+            ];
+
+            const orderedStatsGames = orderBy('games', playerStats);
+            expect(orderedStatsGames[0].player).to.equal('Player B');
+            expect(orderedStatsGames[1].player).to.equal('Player A');
+            expect(orderedStatsGames[2].player).to.equal('Player D');
+            expect(orderedStatsGames[3].player).to.equal('Player C');
+
+            const orderedStatsWins = orderBy('wins', playerStats);
+            expect(orderedStatsWins[0].player).to.equal('Player A');
+            expect(orderedStatsWins[1].player).to.equal('Player D');
+            expect(orderedStatsWins[2].player).to.equal('Player C');
+            expect(orderedStatsWins[3].player).to.equal('Player B');
+
+            const orderedStatsWinPerc = orderBy('winPerc', playerStats);
+            expect(orderedStatsWinPerc[0].player).to.equal('Player D');
+            expect(orderedStatsWinPerc[1].player).to.equal('Player A');
+            expect(orderedStatsWinPerc[2].player).to.equal('Player C');
+            expect(orderedStatsWinPerc[3].player).to.equal('Player B');
+
+            const orderedStatsAverage = orderBy('average', playerStats);
+            expect(orderedStatsAverage[0].player).to.equal('Player D');
+            expect(orderedStatsAverage[1].player).to.equal('Player A');
+            expect(orderedStatsAverage[2].player).to.equal('Player C');
+            expect(orderedStatsAverage[3].player).to.equal('Player B');
         });
     });
 });

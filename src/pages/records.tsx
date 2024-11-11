@@ -53,6 +53,7 @@ function Records(props: RecordsProps) {
 
     function combinedRecordsComponent() {
         if (mostGames > 0) {
+            // TODO could create a component for this
             return (
                 <RecordsTableDisplay
                     minGames={minTotalGames}
@@ -86,6 +87,7 @@ function Records(props: RecordsProps) {
                         displayname={displayname}
                         children={
                             <div>
+                                {/* TODO could create a component for this */}
                                 <RecordsTableDisplay
                                     day={teamName.replace(' (a)', '')}
                                     bTeam={false}

@@ -46,7 +46,9 @@ function Results(props: ResultsProps) {
                     statsCallback={statsCallback}
                     yearToDisplay={yearToDisplay}
                 />
+
                 <h1>{yearInTitle} results</h1>
+
                 {resultsArray.map((resultTeam, idx) => {
                     if (resultTeam.results.length > 0) {
                         return (
