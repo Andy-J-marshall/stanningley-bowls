@@ -225,6 +225,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>home</h3>
+                            {/* TODO could create a component for this */}
                             <Row
                                 xs={2}
                                 md={5}
