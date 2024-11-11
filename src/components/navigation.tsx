@@ -14,7 +14,12 @@ function Navigation() {
         >
             <Container fluid>
                 <Navbar.Brand as={Link} to="/" href="/home">
-                    <Image style={{ height: '2.3rem' }} src={logoImg} rounded fluid />
+                    <Image
+                        style={{ height: '2.3rem' }}
+                        src={logoImg}
+                        rounded
+                        fluid
+                    />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

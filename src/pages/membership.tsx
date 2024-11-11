@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.png';
+import MembershipDocs from '../components/membershipDocs';
 
 const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } =
     config.membership;
@@ -32,7 +33,7 @@ function Membership() {
                 </a>{' '}
                 or speak to a member if you are interested in joining.
             </p>
-            <br />
+            <MembershipDocs />
             <h3>full bowling membership - £{bowlingPrice}</h3>
             <p>
                 For members who want to play in one of our teams and have full
@@ -47,7 +48,6 @@ function Membership() {
                 Parks bowling club then you only need to pay the £
                 {bowlingPriceOnly} membership fee.
             </p>
-            <br />
             <h3>social membership - £{socialPrice}</h3>
             <p>
                 For new or infrequent bowlers who want to attend social sessions

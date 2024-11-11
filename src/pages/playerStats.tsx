@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Spinner } from 'react-bootstrap';
 import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
@@ -45,7 +44,6 @@ function PlayerStats(props: PlayerStatsProps) {
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         statsForEveryYearArray
     );
-    const [loading, setLoading] = useState(false);
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
     const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
@@ -157,11 +155,8 @@ function PlayerStats(props: PlayerStatsProps) {
         const searchedPlayerName = selected[0];
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
-            setLoading(true);
-            await delay(300);
             setSearchedPlayerName(searchedPlayerName.toLowerCase().trim());
         }
-        setLoading(false);
     };
 
     function closeButtonCallback() {
@@ -233,9 +228,6 @@ function PlayerStats(props: PlayerStatsProps) {
         );
     }
 
-    const delay = (ms: number) =>
-        new Promise((resolve) => setTimeout(resolve, ms));
-
     return (
         <div id="player-stat">
             <h1>{yearInTitle} player stats</h1>
@@ -248,20 +240,14 @@ function PlayerStats(props: PlayerStatsProps) {
                 handleChangeCallback={handleSearchChange}
                 closeButtonCallback={closeButtonCallback}
             />
-            {loading && (
-                <Spinner animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
-            )}
 
             {/* Shows Summary of all players stats */}
-            {!loading &&
-                (!searchedPlayerName ||
-                    searchedPlayerName.toLowerCase() === 'show all') &&
+            {(!searchedPlayerName ||
+                searchedPlayerName.toLowerCase() === 'show all') &&
                 returnStatSummaryTable()}
 
             {/* Shows detailed stats for searched player */}
-            {!loading && searchedPlayerName && (
+            {searchedPlayerName && (
                 <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
@@ -277,6 +263,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 searchedPlayerName={searchedPlayerName}
                 teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
             />
+
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
     );
