@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
-import PlayerStatTiles from './playerStatTiles';
+import PlayerStatOverviewTiles from './PlayerStatOverviewTiles';
 
 function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -186,7 +186,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     {displayGamesPlayed > 0 && (
                         <div>
                             <h3>total</h3>
-                            <PlayerStatTiles
+                            <PlayerStatOverviewTiles
                                 games={displayGamesPlayed}
                                 average={displayAverage}
                                 wins={displayTotalWins}
@@ -200,7 +200,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>home</h3>
-                            <PlayerStatTiles
+                            <PlayerStatOverviewTiles
                                 games={displayHomeGamesPlayed}
                                 average={displayHomeAverage}
                                 wins={displayHomeWins}
@@ -214,7 +214,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>away</h3>
-                            <PlayerStatTiles
+                            <PlayerStatOverviewTiles
                                 games={displayAwayGamesPlayed}
                                 average={displayAwayAverage}
                                 wins={displayAwayWins}
@@ -228,7 +228,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>cup</h3>
-                            <PlayerStatTiles
+                            <PlayerStatOverviewTiles
                                 games={displayCupGamesPlayed}
                                 average={displayCupAverage}
                                 wins={displayCupWins}

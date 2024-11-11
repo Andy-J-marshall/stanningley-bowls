@@ -3,7 +3,7 @@ import { PlayerStatTilesProps } from '../types/interfaces';
 import StatsTile from './statsTile';
 import { capitalizeText } from '../helpers/utils';
 
-function PlayerStatTiles(props: PlayerStatTilesProps) {
+function PlayerStatOverviewTiles(props: PlayerStatTilesProps) {
     const games = props.games;
     const average = props.average;
     const wins = props.wins;
@@ -64,4 +64,4 @@ function PlayerStatTiles(props: PlayerStatTilesProps) {
     );
 }
 
-export default PlayerStatTiles;
+export default PlayerStatOverviewTiles;

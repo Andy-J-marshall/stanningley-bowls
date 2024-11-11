@@ -1,6 +1,6 @@
 import { Accordion } from 'react-bootstrap';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
-import PlayerStatTiles from './playerStatTiles';
+import PlayerStatOverviewTiles from './PlayerStatOverviewTiles';
 
 function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -14,7 +14,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                     OVERVIEW
                 </Accordion.Header>
                 <Accordion.Body>
-                    <PlayerStatTiles
+                    <PlayerStatOverviewTiles
                         games={gamesPlayed}
                         average={average}
                         wins={totalWins}

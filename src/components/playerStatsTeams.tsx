@@ -1,6 +1,6 @@
 import { Accordion } from 'react-bootstrap';
 import { PlayerStatsTeamsProps } from '../types/interfaces';
-import PlayerStatTiles from './playerStatTiles';
+import PlayerStatOverviewTiles from './PlayerStatOverviewTiles';
 
 function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
@@ -18,7 +18,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                             team.teamGames > 0 && (
                                 <div key={idx}>
                                     <h3>{team.teamName.toLowerCase()}</h3>
-                                    <PlayerStatTiles
+                                    <PlayerStatOverviewTiles
                                         games={team.teamGames}
                                         average={team.teamAvg}
                                         wins={team.teamWins}
