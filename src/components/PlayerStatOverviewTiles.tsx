@@ -15,7 +15,7 @@ function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {
         <Row
             xs={2}
             md={3}
-            xl={biggestWin ? 6 : 5}
+            xl={biggestWin ? 3 : 5} // Overview page looks better with 3 tiles
             className="g-4 align-items-start"
         >
             {games >= 0 && (
