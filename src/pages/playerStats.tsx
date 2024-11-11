@@ -158,7 +158,7 @@ function PlayerStats(props: PlayerStatsProps) {
         if (searchedPlayerName) {
             setValue([searchedPlayerName]);
             setLoading(true);
-            await delay(300);
+            await delay(250);
             setSearchedPlayerName(searchedPlayerName.toLowerCase().trim());
         }
         setLoading(false);
@@ -265,22 +265,18 @@ function PlayerStats(props: PlayerStatsProps) {
                 <div>{showDetailedPlayerStats(searchedPlayerName)}</div>
             )}
 
-            {!loading && (
-                <PlayerStatsOptions
-                    allTeamStatsCallback={allTeamStatsCallback}
-                    allYearStatsCallback={allYearStatsCallback}
-                    teamSpecificCallback={teamSpecificCallback}
-                    onlySinglesCallback={onlySinglesCallback}
-                    onlyPairsCallback={onlyPairsCallback}
-                    onlyHomeCallback={onlyHomeCallback}
-                    onlyAwayCallback={onlyAwayCallback}
-                    onlyCupCallback={onlyCupCallback}
-                    searchedPlayerName={searchedPlayerName}
-                    teamNames={
-                        showStatsSinceStart ? teamNamesAllYears : teamNames
-                    }
-                />
-            )}
+            <PlayerStatsOptions
+                allTeamStatsCallback={allTeamStatsCallback}
+                allYearStatsCallback={allYearStatsCallback}
+                teamSpecificCallback={teamSpecificCallback}
+                onlySinglesCallback={onlySinglesCallback}
+                onlyPairsCallback={onlyPairsCallback}
+                onlyHomeCallback={onlyHomeCallback}
+                onlyAwayCallback={onlyAwayCallback}
+                onlyCupCallback={onlyCupCallback}
+                searchedPlayerName={searchedPlayerName}
+                teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
+            />
 
             <p className="footnote">Last Updated: {stats.lastUpdated}</p>
         </div>
