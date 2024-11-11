@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { config } from '../config';
 import socialBowlingImg from '../images/websiteImages/social-bowling.png';
-import MembershipDocs from './membershipDocs';
+import MembershipDocs from '../components/membershipDocs';
 
 const { leedsCouncilFee, bowlingPriceOnly, bowlingPrice, socialPrice } =
     config.membership;
