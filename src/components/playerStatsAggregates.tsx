@@ -185,91 +185,87 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
     }
 
     return (
-        <div id="player-stats-aggregates">
-            <Accordion.Item eventKey="3">
-                <Accordion.Header onClick={refreshStats} id="stats-aggregate">
-                    AGGREGATES
-                </Accordion.Header>
-                <Accordion.Body>
-                    {pairsGames > 0 && singlesGames > 0 && (
-                        <GameTypeButton
-                            displayAllCallback={displayAll}
-                            displaySinglesCallback={displaySingles}
-                            displayPairsCallback={displayPairs}
-                        />
-                    )}
-
-                    <h3>total</h3>
-                    <PlayerStatAggregateTiles
-                        aggFor={displayTotalAgg + ' / ' + displayAvailableAgg}
-                        aggAgainst={
-                            displayTotalAggAgainst + ' / ' + displayAvailableAgg
-                        }
-                        idPrefix="combined"
+        <Accordion.Item eventKey="3" id="player-stats-aggregates">
+            <Accordion.Header onClick={refreshStats} id="stats-aggregate">
+                AGGREGATES
+            </Accordion.Header>
+            <Accordion.Body>
+                {pairsGames > 0 && singlesGames > 0 && (
+                    <GameTypeButton
+                        displayAllCallback={displayAll}
+                        displaySinglesCallback={displaySingles}
+                        displayPairsCallback={displayPairs}
                     />
+                )}
 
-                    {displayHomeGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>home</h3>
-                            <PlayerStatAggregateTiles
-                                aggFor={
-                                    displayTotalHomeAgg +
-                                    ' / ' +
-                                    displayAvailableHomeAgg
-                                }
-                                aggAgainst={
-                                    displayTotalHomeAggAgainst +
-                                    ' / ' +
-                                    displayAvailableHomeAgg
-                                }
-                                idPrefix="home"
-                            />
-                        </div>
-                    )}
+                <h3>total</h3>
+                <PlayerStatAggregateTiles
+                    aggFor={displayTotalAgg + ' / ' + displayAvailableAgg}
+                    aggAgainst={
+                        displayTotalAggAgainst + ' / ' + displayAvailableAgg
+                    }
+                    idPrefix="combined"
+                />
 
-                    {displayAwayGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>away</h3>
-                            <PlayerStatAggregateTiles
-                                aggFor={
-                                    displayTotalAwayAgg +
-                                    ' / ' +
-                                    displayAvailableAwayAgg
-                                }
-                                aggAgainst={
-                                    displayTotalAwayAggAgainst +
-                                    ' / ' +
-                                    displayAvailableAwayAgg
-                                }
-                                idPrefix="away"
-                            />
-                        </div>
-                    )}
+                {displayHomeGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>home</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayTotalHomeAgg +
+                                ' / ' +
+                                displayAvailableHomeAgg
+                            }
+                            aggAgainst={
+                                displayTotalHomeAggAgainst +
+                                ' / ' +
+                                displayAvailableHomeAgg
+                            }
+                            idPrefix="home"
+                        />
+                    </div>
+                )}
 
-                    {displayCupGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>cup</h3>
-                            <PlayerStatAggregateTiles
-                                aggFor={
-                                    displayCupAgg +
-                                    ' / ' +
-                                    displayAvailableCupAgg
-                                }
-                                aggAgainst={
-                                    displayCupAggAgainst +
-                                    ' / ' +
-                                    displayAvailableCupAgg
-                                }
-                                idPrefix="cup"
-                            />
-                        </div>
-                    )}
-                </Accordion.Body>
-            </Accordion.Item>
-        </div>
+                {displayAwayGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>away</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayTotalAwayAgg +
+                                ' / ' +
+                                displayAvailableAwayAgg
+                            }
+                            aggAgainst={
+                                displayTotalAwayAggAgainst +
+                                ' / ' +
+                                displayAvailableAwayAgg
+                            }
+                            idPrefix="away"
+                        />
+                    </div>
+                )}
+
+                {displayCupGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>cup</h3>
+                        <PlayerStatAggregateTiles
+                            aggFor={
+                                displayCupAgg + ' / ' + displayAvailableCupAgg
+                            }
+                            aggAgainst={
+                                displayCupAggAgainst +
+                                ' / ' +
+                                displayAvailableCupAgg
+                            }
+                            idPrefix="cup"
+                        />
+                    </div>
+                )}
+            </Accordion.Body>
+        </Accordion.Item>
     );
 }
 

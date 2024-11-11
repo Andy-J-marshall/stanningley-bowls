@@ -169,77 +169,75 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
     }
 
     return (
-        <div id="player-stats-wins-losses">
-            <Accordion.Item eventKey="1">
-                <Accordion.Header onClick={refreshStats} id="stats-wl">
-                    WINS & LOSSES
-                </Accordion.Header>
-                <Accordion.Body>
-                    {pairsGames > 0 && singlesGames > 0 && (
-                        <GameTypeButton
-                            displayAllCallback={displayAll}
-                            displaySinglesCallback={displaySingles}
-                            displayPairsCallback={displayPairs}
+        <Accordion.Item eventKey="1" id="player-stats-wins-losses">
+            <Accordion.Header onClick={refreshStats} id="stats-wl">
+                WINS & LOSSES
+            </Accordion.Header>
+            <Accordion.Body>
+                {pairsGames > 0 && singlesGames > 0 && (
+                    <GameTypeButton
+                        displayAllCallback={displayAll}
+                        displaySinglesCallback={displaySingles}
+                        displayPairsCallback={displayPairs}
+                    />
+                )}
+
+                {displayGamesPlayed > 0 && (
+                    <div>
+                        <h3>total</h3>
+                        <PlayerStatOverviewTiles
+                            games={displayGamesPlayed}
+                            average={displayAverage}
+                            wins={displayTotalWins}
+                            losses={displayTotalLosses}
+                            idPrefix="combined"
                         />
-                    )}
+                    </div>
+                )}
 
-                    {displayGamesPlayed > 0 && (
-                        <div>
-                            <h3>total</h3>
-                            <PlayerStatOverviewTiles
-                                games={displayGamesPlayed}
-                                average={displayAverage}
-                                wins={displayTotalWins}
-                                losses={displayTotalLosses}
-                                idPrefix="combined"
-                            />
-                        </div>
-                    )}
+                {displayHomeGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>home</h3>
+                        <PlayerStatOverviewTiles
+                            games={displayHomeGamesPlayed}
+                            average={displayHomeAverage}
+                            wins={displayHomeWins}
+                            losses={displayHomeLosses}
+                            idPrefix="home"
+                        />
+                    </div>
+                )}
 
-                    {displayHomeGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>home</h3>
-                            <PlayerStatOverviewTiles
-                                games={displayHomeGamesPlayed}
-                                average={displayHomeAverage}
-                                wins={displayHomeWins}
-                                losses={displayHomeLosses}
-                                idPrefix="home"
-                            />
-                        </div>
-                    )}
+                {displayAwayGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>away</h3>
+                        <PlayerStatOverviewTiles
+                            games={displayAwayGamesPlayed}
+                            average={displayAwayAverage}
+                            wins={displayAwayWins}
+                            losses={displayAwayLosses}
+                            idPrefix="away"
+                        />
+                    </div>
+                )}
 
-                    {displayAwayGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>away</h3>
-                            <PlayerStatOverviewTiles
-                                games={displayAwayGamesPlayed}
-                                average={displayAwayAverage}
-                                wins={displayAwayWins}
-                                losses={displayAwayLosses}
-                                idPrefix="away"
-                            />
-                        </div>
-                    )}
-
-                    {displayCupGamesPlayed > 0 && (
-                        <div>
-                            <hr />
-                            <h3>cup</h3>
-                            <PlayerStatOverviewTiles
-                                games={displayCupGamesPlayed}
-                                average={displayCupAverage}
-                                wins={displayCupWins}
-                                losses={displayCupLosses}
-                                idPrefix="cup"
-                            />
-                        </div>
-                    )}
-                </Accordion.Body>
-            </Accordion.Item>
-        </div>
+                {displayCupGamesPlayed > 0 && (
+                    <div>
+                        <hr />
+                        <h3>cup</h3>
+                        <PlayerStatOverviewTiles
+                            games={displayCupGamesPlayed}
+                            average={displayCupAverage}
+                            wins={displayCupWins}
+                            losses={displayCupLosses}
+                            idPrefix="cup"
+                        />
+                    </div>
+                )}
+            </Accordion.Body>
+        </Accordion.Item>
     );
 }
 

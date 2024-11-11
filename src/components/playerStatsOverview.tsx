@@ -8,23 +8,19 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
     const { totalLosses, totalWins, gamesPlayed, average, biggestWin } = stats;
 
     return (
-        <div id="player-stats-overview">
-            <Accordion.Item eventKey="0">
-                <Accordion.Header id="stats-overview">
-                    OVERVIEW
-                </Accordion.Header>
-                <Accordion.Body>
-                    <PlayerStatOverviewTiles
-                        games={gamesPlayed}
-                        average={average}
-                        wins={totalWins}
-                        losses={totalLosses}
-                        biggestWin={biggestWin}
-                        idPrefix="total"
-                    />
-                </Accordion.Body>
-            </Accordion.Item>
-        </div>
+        <Accordion.Item eventKey="0" id="player-stats-overview">
+            <Accordion.Header id="stats-overview">OVERVIEW</Accordion.Header>
+            <Accordion.Body>
+                <PlayerStatOverviewTiles
+                    games={gamesPlayed}
+                    average={average}
+                    wins={totalWins}
+                    losses={totalLosses}
+                    biggestWin={biggestWin}
+                    idPrefix="total"
+                />
+            </Accordion.Body>
+        </Accordion.Item>
     );
 }
 

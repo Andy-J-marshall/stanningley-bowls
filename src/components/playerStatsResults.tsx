@@ -12,71 +12,67 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const structuredResultsArray = returnStructuredResultsArray(results);
 
     return (
-        <div id="player-stats-results">
-            <Accordion.Item eventKey="5">
-                <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
-                <Accordion.Body>
-                    <div id="player-results" className="center">
-                        <div>
-                            <br />
-                            <Table striped bordered hover>
-                                <thead>
-                                    <tr>
-                                        <th>player</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th>opponent</th>
-                                    </tr>
-                                </thead>
-                                {structuredResultsArray.map((result, idx) => {
-                                    const player = capitalizeText([
-                                        result.home.name,
-                                    ]);
-                                    const teamScore = result.home.score;
-                                    const opponent = capitalizeText([
-                                        result.away.name,
-                                    ]);
-                                    const opponentScore = result.away.score;
-                                    return (
-                                        <tbody key={idx}>
-                                            <tr>
-                                                <td
-                                                    style={{
-                                                        width: '42%',
-                                                    }}
-                                                >
-                                                    {player}
-                                                </td>
+        <Accordion.Item eventKey="5" id="player-stats-results">
+            <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
+            <Accordion.Body>
+                <div id="player-results" className="center">
+                    <div>
+                        <br />
+                        <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th>player</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>opponent</th>
+                                </tr>
+                            </thead>
+                            {structuredResultsArray.map((result, idx) => {
+                                const player = capitalizeText([
+                                    result.home.name,
+                                ]);
+                                const teamScore = result.home.score;
+                                const opponent = capitalizeText([
+                                    result.away.name,
+                                ]);
+                                const opponentScore = result.away.score;
+                                return (
+                                    <tbody key={idx}>
+                                        <tr>
+                                            <td
+                                                style={{
+                                                    width: '42%',
+                                                }}
+                                            >
+                                                {player}
+                                            </td>
 
-                                                <td
-                                                    style={{
-                                                        borderRightStyle:
-                                                            'solid',
-                                                        borderRightColor:
-                                                            'black',
-                                                    }}
-                                                >
-                                                    {teamScore}
-                                                </td>
-                                                <td>{opponentScore}</td>
+                                            <td
+                                                style={{
+                                                    borderRightStyle: 'solid',
+                                                    borderRightColor: 'black',
+                                                }}
+                                            >
+                                                {teamScore}
+                                            </td>
+                                            <td>{opponentScore}</td>
 
-                                                <td
-                                                    style={{
-                                                        width: '42%',
-                                                    }}
-                                                >
-                                                    {opponent}
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    );
-                                })}
-                            </Table>
-                        </div>
+                                            <td
+                                                style={{
+                                                    width: '42%',
+                                                }}
+                                            >
+                                                {opponent}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                );
+                            })}
+                        </Table>
                     </div>
-                </Accordion.Body>
-            </Accordion.Item>
-        </div>
+                </div>
+            </Accordion.Body>
+        </Accordion.Item>
     );
 }
 
