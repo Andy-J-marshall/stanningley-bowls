@@ -39,10 +39,6 @@ export interface IndividualTeamStatsProps {
     bTeam: boolean;
 }
 
-export interface ListProps {
-    stringArray: string[];
-}
-
 export interface StatsTileProps {
     title: string;
     bodyText: string | number;
