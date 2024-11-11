@@ -3,10 +3,7 @@ import IndividualPlayerStats from '../components/IndividualPlayerStats';
 import PlayerStatSummary from '../components/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStatsOptions';
 import Search from '../components/search';
-import {
-    returnPlayerStatSummary,
-    returnPlayerStats,
-} from '../helpers/playerStatsHelper';
+import { returnPlayerStats } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {
@@ -24,6 +21,7 @@ import {
     returnPlayerStatsForTeam,
     returnTeamNamesWithGames,
 } from '../helpers/teamStatsHelper';
+import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const combinedStats = props.combinedStats;

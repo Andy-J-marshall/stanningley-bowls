@@ -6,7 +6,7 @@ import {
     PlayerStatSummaryProps,
 } from '../types/interfaces';
 import { orderBy } from '../helpers/statsHelper';
-import { returnPlayerSummaryDisplayStats } from '../helpers/playerStatsHelper';
+import { returnPlayerSummaryDisplayStats } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const playerStats = props.playerStats;
