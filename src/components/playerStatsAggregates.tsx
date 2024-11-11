@@ -221,10 +221,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>home</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
+                            <Row xs={2} className="g-4 align-items-start">
                                 <StatTile
                                     title="FOR"
                                     bodyText={
@@ -249,10 +246,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>away</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
+                            <Row xs={2} className="g-4 align-items-start">
                                 <StatTile
                                     title="FOR"
                                     bodyText={
@@ -277,10 +271,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>cup</h3>
-                            <Row
-                                xs={2}
-                                className="g-4 align-items-start"
-                            >
+                            <Row xs={2} className="g-4 align-items-start">
                                 <StatTile
                                     title="FOR"
                                     bodyText={

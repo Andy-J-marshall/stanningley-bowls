@@ -252,6 +252,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                     wins = player.pairsCupWins;
                 }
             }
+
             const winPerc = wins && (wins / games) * 100;
             const playerName = player.player;
 
