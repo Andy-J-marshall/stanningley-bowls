@@ -2,8 +2,12 @@ import { config } from '../config';
 import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
+    PlayerStatsTeamSummary,
 } from '../types/interfaces';
-import { checkAllWinPercAndAverageAreNumbers } from './statsHelper';
+import {
+    checkAllWinPercAndAverageAreNumbers,
+    isPlayerStatsSummaryType,
+} from './statsHelper';
 
 export function findBiggestWin(playerResults: string[]): string {
     let bestWin = '';
@@ -499,4 +503,98 @@ export function calculateWinPercAndAverage(playerStats: PlayerStatsSummary) {
         (stats.pairsCupAgg - stats.pairsCupAggAgainst) / stats.pairsCupGames;
 
     return stats;
+}
+
+export function returnPlayerSummaryDisplayStats(
+    stats: (PlayerStatsSummary | PlayerStatsTeamSummary)[],
+    showSinglesOnlyBool: boolean | undefined,
+    showPairsOnlyBool: boolean | undefined,
+    showHomeOnlyBool: boolean | undefined,
+    showAwayOnlyBool: boolean | undefined,
+    showCupOnlyBool: boolean | undefined
+) {
+    const statsToUse = stats?.map((player) => {
+        let games = player.games;
+        let average = player.average;
+        let wins = player.wins;
+
+        if (isPlayerStatsSummaryType(player)) {
+            if (showSinglesOnlyBool) {
+                games = player.singlesGames;
+                average = player.singlesAverage;
+                wins = player.singlesWins;
+            }
+            if (showPairsOnlyBool) {
+                games = player.pairsGames;
+                average = player.pairsAverage;
+                wins = player.pairsWins;
+            }
+
+            if (showHomeOnlyBool) {
+                games = player.homeGames;
+                average = player.homeAverage;
+                wins = player.homeWins;
+            }
+            if (showHomeOnlyBool && showSinglesOnlyBool) {
+                games = player.singlesHomeGames;
+                average = player.singlesHomeAverage;
+                wins = player.singlesHomeWins;
+            }
+            if (showHomeOnlyBool && showPairsOnlyBool) {
+                games = player.pairsHomeGames;
+                average = player.pairsHomeAverage;
+                wins = player.pairsHomeWins;
+            }
+
+            if (showAwayOnlyBool) {
+                games = player.awayGames;
+                average = player.awayAverage;
+                wins = player.awayWins;
+            }
+            if (showAwayOnlyBool && showSinglesOnlyBool) {
+                games = player.singlesAwayGames;
+                average = player.singlesAwayAverage;
+                wins = player.singlesAwayWins;
+            }
+            if (showAwayOnlyBool && showPairsOnlyBool) {
+                games = player.pairsAwayGames;
+                average = player.pairsAwayAverage;
+                wins = player.pairsAwayWins;
+            }
+
+            if (showCupOnlyBool) {
+                games = player.cupGames;
+                average = player.cupAverage;
+                wins = player.cupWins;
+            }
+            if (showCupOnlyBool && showSinglesOnlyBool) {
+                games = player.singlesCupGames;
+                average = player.singlesCupAverage;
+                wins = player.singlesCupWins;
+            }
+            if (showCupOnlyBool && showPairsOnlyBool) {
+                games = player.pairsCupGames;
+                average = player.pairsCupAverage;
+                wins = player.pairsCupWins;
+            }
+        }
+
+        const winPerc = wins && (wins / games) * 100;
+        const playerName = player.player;
+
+        const playerObject = {
+            player: playerName,
+            games,
+            average,
+            wins,
+            winPerc,
+            aggDiff: games * average,
+        };
+
+        console.log(playerObject);
+
+        return playerObject;
+    });
+
+    return statsToUse;
 }
