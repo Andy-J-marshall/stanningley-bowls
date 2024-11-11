@@ -3,7 +3,10 @@ import {
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
 } from '../types/interfaces';
-import { calculateWinPercAndAverage, returnPlayerStats } from './playerStatsHelper';
+import {
+    calculateWinPercAndAverage,
+    returnPlayerStats,
+} from './playerStatsHelper';
 import {
     checkAllWinPercAndAverageAreNumbers,
     isPlayerStatsSummaryType,
@@ -211,8 +214,6 @@ export function returnPlayerSummaryDisplayStats(
             winPerc,
             aggDiff: games * average,
         };
-
-        console.log(playerObject);
 
         return playerObject;
     });
