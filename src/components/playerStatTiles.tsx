@@ -12,8 +12,12 @@ function PlayerStatTiles(props: PlayerStatTilesProps) {
     const idPrefix = props.idPrefix;
 
     return (
-        // TODO sort out the layout here
-        <Row xs={2} md={3} xl={5} className="g-4 align-items-start">
+        <Row
+            xs={2}
+            md={3}
+            xl={biggestWin ? 6 : 5}
+            className="g-4 align-items-start"
+        >
             {games >= 0 && (
                 <StatsTile
                     title="GAMES"
