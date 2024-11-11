@@ -8,7 +8,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
     const { totalLosses, totalWins, gamesPlayed, average, biggestWin } = stats;
 
     return (
-        <Accordion.Item eventKey="0" id="player-stats-overview">
+        <Accordion.Item eventKey="0">
             <Accordion.Header id="stats-overview">OVERVIEW</Accordion.Header>
             <Accordion.Body>
                 <PlayerStatOverviewTiles

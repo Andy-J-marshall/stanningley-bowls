@@ -9,7 +9,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     allTeamStats.sort((a, b) => a.teamName.localeCompare(b.teamName));
 
     return (
-        <Accordion.Item eventKey="4" id="player-stats-teams">
+        <Accordion.Item eventKey="4">
             <Accordion.Header id="stats-teams">TEAMS</Accordion.Header>
             <Accordion.Body>
                 {allTeamStats.map(

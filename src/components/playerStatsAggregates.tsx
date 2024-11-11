@@ -185,7 +185,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
     }
 
     return (
-        <Accordion.Item eventKey="3" id="player-stats-aggregates">
+        <Accordion.Item eventKey="3">
             <Accordion.Header onClick={refreshStats} id="stats-aggregate">
                 AGGREGATES
             </Accordion.Header>

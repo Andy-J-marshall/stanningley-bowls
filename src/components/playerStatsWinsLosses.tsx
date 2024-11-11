@@ -169,7 +169,7 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
     }
 
     return (
-        <Accordion.Item eventKey="1" id="player-stats-wins-losses">
+        <Accordion.Item eventKey="1">
             <Accordion.Header onClick={refreshStats} id="stats-wl">
                 WINS & LOSSES
             </Accordion.Header>
