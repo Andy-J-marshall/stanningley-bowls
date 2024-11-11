@@ -5,7 +5,7 @@ import {
     PlayerStatsTeamSummary,
     PlayerStatSummaryProps,
 } from '../types/interfaces';
-import { isPlayerStatsSummaryType } from '../helpers/statsHelper';
+import { isPlayerStatsSummaryType, orderBy } from '../helpers/statsHelper';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const playerStats = props.playerStats;
@@ -93,19 +93,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         const propertyLowerFirstChar =
             propertyName.charAt(0).toLowerCase() + propertyName.slice(1);
 
-        return orderBy(propertyLowerFirstChar);
-    }
-
-    // TODO move to a helper?
-    function orderBy(orderByStatPropertyName: string) {
-        const order = [...filteredPlayerStats].sort((p1: any, p2: any) =>
-            p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
-                ? 1
-                : p1[orderByStatPropertyName] > p2[orderByStatPropertyName]
-                ? -1
-                : 0
-        );
-        return order;
+        return orderBy(propertyLowerFirstChar, filteredPlayerStats);
     }
 
     function orderByName() {
