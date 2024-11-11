@@ -80,7 +80,6 @@ function History() {
                 </Col>
             </Row>
             <br />
-            <br />
             <h2>club cup winners</h2>
             <ListGroup>
                 {clubCupWinners.map((record, idx) => {
@@ -93,12 +92,12 @@ function History() {
             </ListGroup>
             <br />
             <h2>trophies</h2>
-            <h4>Brotherton Cup</h4>
+            <h4>brotherton cup</h4>
             <ListGroup>
                 <ListGroupItem>1927</ListGroupItem>
             </ListGroup>
             <br />
-            <h4>Leeds Saturday</h4>
+            <h4>leeds saturday</h4>
             <Row
                 sm={1}
                 md={2}
@@ -107,7 +106,7 @@ function History() {
                 className="g-4 tabs align-items-start"
             >
                 <Col>
-                    <h5>League</h5>
+                    <h5>league</h5>
                     <ListGroup>
                         <ListGroupItem>1926</ListGroupItem>
                         <ListGroupItem>1928</ListGroupItem>
@@ -120,7 +119,7 @@ function History() {
                     </ListGroup>
                 </Col>
                 <Col>
-                    <h5>Cup</h5>
+                    <h5>cup</h5>
                     <ListGroup>
                         <ListGroupItem>1925</ListGroupItem>
                         <ListGroupItem>1926</ListGroupItem>
@@ -138,7 +137,7 @@ function History() {
                 </Col>
             </Row>
             <br />
-            <h4>Leeds Tuesday Vets</h4>
+            <h4>leeds tuesday vets</h4>
             <Row
                 sm={1}
                 md={2}
@@ -147,7 +146,7 @@ function History() {
                 className="g-4 tabs align-items-start"
             >
                 <Col>
-                    <h5>League</h5>
+                    <h5>league</h5>
                     <ListGroup>
                         <ListGroupItem>2017</ListGroupItem>
                         <ListGroupItem>2019</ListGroupItem>
@@ -155,7 +154,7 @@ function History() {
                     </ListGroup>
                 </Col>
                 <Col>
-                    <h5>Clegg Cup</h5>
+                    <h5>clegg cup</h5>
                     <ListGroup>
                         <ListGroupItem>2017</ListGroupItem>
                         <ListGroupItem>2023</ListGroupItem>
@@ -163,15 +162,15 @@ function History() {
                 </Col>
             </Row>
             <br />
-            <h4>Leeds Half Holiday</h4>
-            <h5>Penrose Green Cup</h5>
+            <h4>leeds half holiday</h4>
+            <h5>penrose green cup</h5>
             <ListGroup>
                 <ListGroupItem>1970</ListGroupItem>
                 <ListGroupItem>2023</ListGroupItem>
             </ListGroup>
             <br />
-            <h4>Leeds Thursday Vets</h4>
-            <h5>Harrison Cup</h5>
+            <h4>leeds thursday vets</h4>
+            <h5>harrison cup</h5>
             <ListGroup>
                 <ListGroupItem>1995</ListGroupItem>
                 <ListGroupItem>2017</ListGroupItem>
