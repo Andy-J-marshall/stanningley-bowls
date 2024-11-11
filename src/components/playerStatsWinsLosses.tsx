@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Accordion, Row } from 'react-bootstrap';
-import StatTile from './statTile';
+import { Accordion } from 'react-bootstrap';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
+import PlayerStatTiles from './playerStatTiles';
 
 function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -186,38 +186,13 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                     {displayGamesPlayed > 0 && (
                         <div>
                             <h3>total</h3>
-                            <Row
-                                xs={2}
-                                md={5}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="GAMES"
-                                    bodyText={displayGamesPlayed}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayAverage.toFixed(2)}
-                                />
-                                <StatTile
-                                    title="WINS"
-                                    bodyText={displayTotalWins}
-                                />
-                                <StatTile
-                                    title="LOSSES"
-                                    bodyText={displayTotalLosses}
-                                />
-                                <StatTile
-                                    title="WIN %"
-                                    bodyText={
-                                        (
-                                            (displayTotalWins /
-                                                displayGamesPlayed) *
-                                            100
-                                        ).toFixed(0) + '%'
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatTiles
+                                games={displayGamesPlayed}
+                                average={displayAverage}
+                                wins={displayTotalWins}
+                                losses={displayTotalLosses}
+                                idPrefix="combined"
+                            />
                         </div>
                     )}
 
@@ -225,39 +200,13 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>home</h3>
-                            {/* TODO could create a component for this */}
-                            <Row
-                                xs={2}
-                                md={5}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="GAMES"
-                                    bodyText={displayHomeGamesPlayed}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayHomeAverage.toFixed(2)}
-                                />
-                                <StatTile
-                                    title="WINS"
-                                    bodyText={displayHomeWins}
-                                />
-                                <StatTile
-                                    title="LOSSES"
-                                    bodyText={displayHomeLosses}
-                                />
-                                <StatTile
-                                    title="WIN %"
-                                    bodyText={
-                                        (
-                                            (displayHomeWins /
-                                                displayHomeGamesPlayed) *
-                                            100
-                                        ).toFixed(0) + '%'
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatTiles
+                                games={displayHomeGamesPlayed}
+                                average={displayHomeAverage}
+                                wins={displayHomeWins}
+                                losses={displayHomeLosses}
+                                idPrefix="home"
+                            />
                         </div>
                     )}
 
@@ -265,38 +214,13 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>away</h3>
-                            <Row
-                                xs={2}
-                                md={5}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="GAMES"
-                                    bodyText={displayAwayGamesPlayed}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayAwayAverage.toFixed(2)}
-                                />
-                                <StatTile
-                                    title="WINS"
-                                    bodyText={displayAwayWins}
-                                />
-                                <StatTile
-                                    title="LOSSES"
-                                    bodyText={displayAwayLosses}
-                                />
-                                <StatTile
-                                    title="WIN %"
-                                    bodyText={
-                                        (
-                                            (displayAwayWins /
-                                                displayAwayGamesPlayed) *
-                                            100
-                                        ).toFixed(0) + '%'
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatTiles
+                                games={displayAwayGamesPlayed}
+                                average={displayAwayAverage}
+                                wins={displayAwayWins}
+                                losses={displayAwayLosses}
+                                idPrefix="away"
+                            />
                         </div>
                     )}
 
@@ -304,38 +228,13 @@ function PlayerStatsWinsLosses(props: PlayerStatsComponentsProps) {
                         <div>
                             <hr />
                             <h3>cup</h3>
-                            <Row
-                                xs={2}
-                                md={5}
-                                className="g-4 align-items-start"
-                            >
-                                <StatTile
-                                    title="GAMES"
-                                    bodyText={displayCupGamesPlayed}
-                                />
-                                <StatTile
-                                    title="AVERAGE"
-                                    bodyText={displayCupAverage.toFixed(2)}
-                                />
-                                <StatTile
-                                    title="WINS"
-                                    bodyText={displayCupWins}
-                                />
-                                <StatTile
-                                    title="LOSSES"
-                                    bodyText={displayCupLosses}
-                                />
-                                <StatTile
-                                    title="WIN %"
-                                    bodyText={
-                                        (
-                                            (displayCupWins /
-                                                displayCupGamesPlayed) *
-                                            100
-                                        ).toFixed(0) + '%'
-                                    }
-                                />
-                            </Row>
+                            <PlayerStatTiles
+                                games={displayCupGamesPlayed}
+                                average={displayCupAverage}
+                                wins={displayCupWins}
+                                losses={displayCupLosses}
+                                idPrefix="cup"
+                            />
                         </div>
                     )}
                 </Accordion.Body>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Accordion, Row } from 'react-bootstrap';
-import StatTile from './statTile';
+import StatsTile from './statsTile';
 import GameTypeButton from './gameTypeButtons';
 import { PlayerStatsComponentsProps } from '../types/interfaces';
 
@@ -201,13 +201,13 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
 
                     <h3>total</h3>
                     <Row xs={2} className="g-4 align-items-start">
-                        <StatTile
+                        <StatsTile
                             title="FOR"
                             bodyText={
                                 displayTotalAgg + ' / ' + displayAvailableAgg
                             }
                         />
-                        <StatTile
+                        <StatsTile
                             title="AGAINST"
                             bodyText={
                                 displayTotalAggAgainst +
@@ -222,7 +222,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>home</h3>
                             <Row xs={2} className="g-4 align-items-start">
-                                <StatTile
+                                <StatsTile
                                     title="FOR"
                                     bodyText={
                                         displayTotalHomeAgg +
@@ -230,7 +230,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                         displayAvailableHomeAgg
                                     }
                                 />
-                                <StatTile
+                                <StatsTile
                                     title="AGAINST"
                                     bodyText={
                                         displayTotalHomeAggAgainst +
@@ -247,7 +247,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>away</h3>
                             <Row xs={2} className="g-4 align-items-start">
-                                <StatTile
+                                <StatsTile
                                     title="FOR"
                                     bodyText={
                                         displayTotalAwayAgg +
@@ -255,7 +255,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                         displayAvailableAwayAgg
                                     }
                                 />
-                                <StatTile
+                                <StatsTile
                                     title="AGAINST"
                                     bodyText={
                                         displayTotalAwayAggAgainst +
@@ -272,7 +272,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                             <hr />
                             <h3>cup</h3>
                             <Row xs={2} className="g-4 align-items-start">
-                                <StatTile
+                                <StatsTile
                                     title="FOR"
                                     bodyText={
                                         displayCupAgg +
@@ -280,7 +280,7 @@ function PlayerStatsAggregates(props: PlayerStatsComponentsProps) {
                                         displayAvailableCupAgg
                                     }
                                 />
-                                <StatTile
+                                <StatsTile
                                     title="AGAINST"
                                     bodyText={
                                         displayCupAggAgainst +

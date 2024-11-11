@@ -65,6 +65,15 @@ export interface PlayerStatsProps {
     combinedStatsForEveryYearArray: FullStatsFile[];
 }
 
+export interface PlayerStatTilesProps {
+    games: number;
+    average: number;
+    wins: number;
+    losses: number;
+    biggestWin?: string;
+    idPrefix?: string;
+}
+
 export interface YearSelectDropdownProps {
     statsCallback: (year: string) => void;
     yearToDisplay: string;

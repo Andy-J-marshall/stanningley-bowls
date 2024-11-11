@@ -1,6 +1,6 @@
-import { Accordion, Row } from 'react-bootstrap';
-import StatTile from './statTile';
+import { Accordion } from 'react-bootstrap';
 import { PlayerStatsTeamsProps } from '../types/interfaces';
+import PlayerStatTiles from './playerStatTiles';
 
 function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
     const stats = props.stats;
@@ -18,36 +18,13 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                             team.teamGames > 0 && (
                                 <div key={idx}>
                                     <h3>{team.teamName.toLowerCase()}</h3>
-                                    <Row
-                                        xs={2}
-                                        md={5}
-                                        className="g-4 align-items-start"
-                                    >
-                                        {/* TODO could use component here? */}
-                                        <StatTile
-                                            title="GAMES"
-                                            bodyText={team.teamGames}
-                                        />
-                                        <StatTile
-                                            title="AVERAGE"
-                                            bodyText={team.teamAvg?.toFixed(2)}
-                                        />
-                                        <StatTile
-                                            title="WINS"
-                                            bodyText={team.teamWins}
-                                        />
-                                        <StatTile
-                                            title="LOSSES"
-                                            bodyText={team.teamLosses}
-                                        />
-                                        <StatTile
-                                            title="WIN %"
-                                            bodyText={
-                                                team.teamWinPerc.toFixed(0) +
-                                                '%'
-                                            }
-                                        />
-                                    </Row>
+                                    <PlayerStatTiles
+                                        games={team.teamGames}
+                                        average={team.teamAvg}
+                                        wins={team.teamWins}
+                                        losses={team.teamLosses}
+                                        idPrefix={team.teamName}
+                                    />
                                     <hr />
                                 </div>
                             )
