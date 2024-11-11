@@ -16,6 +16,7 @@ function PlayerStatsOverview(props: PlayerStatsComponentsProps) {
                 </Accordion.Header>
                 <Accordion.Body>
                     <Row xs={2} md={3} className="g-4 align-items-start">
+                        {/* TODO could use component here? */}
                         <StatTile
                             title="GAMES"
                             bodyText={gamesPlayed}

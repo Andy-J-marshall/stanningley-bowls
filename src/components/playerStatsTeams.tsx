@@ -23,6 +23,7 @@ function PlayerStatsTeams(props: PlayerStatsTeamsProps) {
                                         md={5}
                                         className="g-4 align-items-start"
                                     >
+                                        {/* TODO could use component here? */}
                                         <StatTile
                                             title="GAMES"
                                             bodyText={team.teamGames}

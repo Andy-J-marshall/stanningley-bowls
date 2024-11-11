@@ -96,6 +96,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
         return orderBy(propertyLowerFirstChar);
     }
 
+    // TODO move to a helper?
     function orderBy(orderByStatPropertyName: string) {
         const order = [...filteredPlayerStats].sort((p1: any, p2: any) =>
             p1[orderByStatPropertyName] < p2[orderByStatPropertyName]
@@ -187,6 +188,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             stats = returnPlayersOrderedByAverage();
         }
 
+        // TODO move this to a helper?
         const statsToUse = stats?.map((player) => {
             let games = player.games;
             let average = player.average;
@@ -315,6 +317,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
             return <h3>No player stats found</h3>;
         } else {
             return (
+                // TODO create component for this?
                 <div id="player-stats-per-team" className="center table">
                     <Table striped bordered hover>
                         <thead>
