@@ -39,11 +39,17 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         defaultTeamDropdownTitle
     );
 
-    function toggleAllTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
+    function toggleOtherTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allTeamStatsToggle = event.currentTarget.checked;
         setAllTeamsToggle(allTeamStatsToggle);
         allTeamStatsCallback(allTeamStatsToggle);
         setDisableTeamDropdown(allTeamStatsToggle);
+    }
+
+    function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
+        const allYearStatsToggle = event.currentTarget.checked;
+        setAllYearToggle(allYearStatsToggle);
+        allYearStatsCallback(allYearStatsToggle);
     }
 
     function toggleSpecificTeamStats(teamName: string) {
@@ -63,109 +69,90 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllTeamsToggle(false);
             allTeamStatsCallback(false);
 
-            setSinglesOnlyToggle(false);
-            onlySinglesCallback(false);
-
-            setPairsOnlyToggle(false);
-            onlyPairsCallback(false);
-
-            setHomeOnlyToggle(false);
-            onlyHomeCallback(false);
-
-            setAwayOnlyToggle(false);
-            onlyAwayCallback(false);
-
-            setCupOnlyToggle(false);
-            onlyCupCallback(false);
+            singles(false);
+            pairs(false);
+            home(false);
+            home(false);
+            cup(false);
         }
     }
 
-    function toggleSinglesOnlyMatches() {
-        setAllGameTypesToggle(false);
-
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
-
-        setSinglesOnlyToggle(true);
-        onlySinglesCallback(true);
-    }
-
-    function togglePairsOnlyMatches() {
-        setAllGameTypesToggle(false);
-
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
-
-        setPairsOnlyToggle(true);
-        onlyPairsCallback(true);
-    }
-
-    function toggleAllMatches() {
+    function toggleAllMatchTypes() {
         setAllGameTypesToggle(true);
 
-        setSinglesOnlyToggle(false);
-        onlySinglesCallback(false);
-
-        setPairsOnlyToggle(false);
-        onlyPairsCallback(false);
+        singles(false);
+        pairs(false);
     }
 
-    function toggleAllVenuesMatches() {
+    function toggleSinglesOnly() {
+        setAllGameTypesToggle(false);
+        pairs(false);
+
+        singles(true);
+    }
+
+    function togglePairsOnly() {
+        setAllGameTypesToggle(false);
+        singles(false);
+
+        pairs(true);
+    }
+
+    function toggleAllVenues() {
         setAllVenuesToggle(true);
 
-        setHomeOnlyToggle(false);
-        onlyHomeCallback(false);
-
-        setAwayOnlyToggle(false);
-        onlyAwayCallback(false);
-
-        setCupOnlyToggle(false);
-        onlyCupCallback(false);
+        home(false);
+        away(false);
+        cup(false);
     }
 
-    function toggleHomeOnlyMatches() {
+    function toggleHomeOnly() {
         setAllVenuesToggle(false);
 
-        setHomeOnlyToggle(true);
-        onlyHomeCallback(true);
-
-        setAwayOnlyToggle(false);
-        onlyAwayCallback(false);
-
-        setCupOnlyToggle(false);
-        onlyCupCallback(false);
+        home(true);
+        away(false);
+        cup(false);
     }
 
     function toggleAwayOnlyMatches() {
         setAllVenuesToggle(false);
 
-        setHomeOnlyToggle(false);
-        onlyHomeCallback(false);
-
-        setAwayOnlyToggle(true);
-        onlyAwayCallback(true);
-
-        setCupOnlyToggle(false);
-        onlyCupCallback(false);
+        home(false);
+        away(true);
+        cup(false);
     }
 
     function toggleCupOnlyMatches() {
         setAllVenuesToggle(false);
 
-        setHomeOnlyToggle(false);
-        onlyHomeCallback(false);
-
-        setAwayOnlyToggle(false);
-        onlyAwayCallback(false);
-
-        setCupOnlyToggle(true);
-        onlyCupCallback(true);
+        home(false);
+        away(false);
+        cup(true);
     }
 
-    function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
-        const allYearStatsToggle = event.currentTarget.checked;
-        setAllYearToggle(allYearStatsToggle);
-        allYearStatsCallback(allYearStatsToggle);
+    function singles(flag: boolean) {
+        setSinglesOnlyToggle(flag);
+        onlySinglesCallback(flag);
+    }
+
+    function pairs(flag: boolean) {
+        setPairsOnlyToggle(flag);
+        onlyPairsCallback(flag);
+    }
+
+    function home(flag: boolean) {
+        setHomeOnlyToggle(flag);
+        onlyHomeCallback(flag);
+    }
+
+    function away(flag: boolean) {
+        setAwayOnlyToggle(flag);
+        onlyAwayCallback(flag);
+    }
+
+    function cup(flag: boolean) {
+        setCupOnlyToggle(flag);
+        onlyCupCallback(flag);
     }
 
     return (
@@ -180,7 +167,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     inline
                                     key={crypto.randomUUID()}
                                     id="#all-stats-select-switch"
-                                    onChange={toggleAllTeamStats}
+                                    onChange={toggleOtherTeamStats}
                                     type="switch"
                                     label="Include other teams"
                                     checked={allTeamsToggle}
@@ -237,7 +224,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         inline
                                         key={crypto.randomUUID()}
                                         id="#all-matches-radio"
-                                        onChange={toggleAllMatches}
+                                        onChange={toggleAllMatchTypes}
                                         name="gameTypeOptions"
                                         type="radio"
                                         label="All"
@@ -248,7 +235,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         inline
                                         key={crypto.randomUUID()}
                                         id="#only-singles-radio"
-                                        onChange={toggleSinglesOnlyMatches}
+                                        onChange={toggleSinglesOnly}
                                         name="gameTypeOptions"
                                         type="radio"
                                         label="Singles"
@@ -259,7 +246,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         inline
                                         key={crypto.randomUUID()}
                                         id="#only-pairs-radio"
-                                        onChange={togglePairsOnlyMatches}
+                                        onChange={togglePairsOnly}
                                         name="gameTypeOptions"
                                         type="radio"
                                         label="Pairs"
@@ -275,7 +262,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         inline
                                         key={crypto.randomUUID()}
                                         id="#all-venues-radio"
-                                        onChange={toggleAllVenuesMatches}
+                                        onChange={toggleAllVenues}
                                         name="gameVenueOptions"
                                         type="radio"
                                         label="All"
@@ -286,7 +273,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         inline
                                         key={crypto.randomUUID()}
                                         id="#only-home-radio"
-                                        onChange={toggleHomeOnlyMatches}
+                                        onChange={toggleHomeOnly}
                                         name="gameVenueOptions"
                                         type="radio"
                                         label="Home"
