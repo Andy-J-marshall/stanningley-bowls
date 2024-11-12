@@ -1,10 +1,13 @@
 import { expect } from 'chai';
 import stats2022 from '../../data/bowlsStats2022.json';
-import { returnPlayerStatSummary } from '../playerStatsSummaryHelper';
+import {
+    returnPlayerStatSummary,
+    returnPlayerSummaryDisplayStats,
+} from '../playerStatsSummaryHelper';
 
-describe('#playersStatsHelper Tests', () => {
+describe('#playersStatsSummaryHelper Tests', () => {
     describe('#returnPlayerStatSummary()', () => {
-        it('Correctly aggregates stats for players across multiple years', () => {
+        it('Correctly calculates stats for players for given year', () => {
             const result = returnPlayerStatSummary(stats2022.playerResults, [
                 'paul bowes',
                 'alison woodfine',
@@ -105,5 +108,223 @@ describe('#playersStatsHelper Tests', () => {
         });
     });
 
-    // TODO create test for returnPlayerSummaryDisplayStats
+    describe('#returnPlayerSummaryDisplayStats()', () => {
+        const playerName = 'paul bowes';
+
+        const stats = [
+            {
+                player: 'paul bowes',
+
+                games: 100,
+                wins: 70,
+                winPerc: 70,
+                average: 6,
+                agg: 2000,
+                aggAgainst: 1300,
+
+                singlesGames: 89,
+                singlesWins: 65,
+                singlesWinPerc: 73.03,
+                singlesAverage: 6.5,
+                singlesAgg: 1800,
+                singlesAggAgainst: 1110,
+
+                pairsGames: 11,
+                pairsWins: 5,
+                pairsWinPerc: 45.45,
+                pairsAverage: 0.8,
+                pairsAgg: 200,
+                pairsAggAgainst: 190,
+
+                homeGames: 40,
+                homeWins: 36,
+                homeWinPerc: 90,
+                homeAverage: 10,
+                homeAgg: 800,
+                homeAggAgainst: 400,
+
+                singlesHomeGames: 34,
+                singlesHomeWins: 30,
+                singlesHomeWinPerc: 88.23,
+                singlesHomeAverage: 10,
+                singlesHomeAgg: 700,
+                singlesHomeAggAgainst: 300,
+
+                pairsHomeGames: 6,
+                pairsHomeWins: 2,
+                pairsHomeWinPerc: 33.33,
+                pairsHomeAverage: -0.75,
+                pairsHomeAgg: 75,
+                pairsHomeAggAgainst: 80,
+
+                awayGames: 50,
+                awayWins: 30,
+                awayWinPerc: 60,
+                awayAverage: 1,
+                awayAgg: 900,
+                awayAggAgainst: 850,
+
+                singlesAwayGames: 45,
+                singlesAwayWins: 26,
+                singlesAwayWinPerc: 57.77,
+                singlesAwayAverage: 0.5,
+                singlesAwayAgg: 750,
+                singlesAwayAggAgainst: 765,
+
+                pairsAwayGames: 5,
+                pairsAwayWins: 4,
+                pairsAwayWinPerc: 80,
+                pairsAwayAverage: 3,
+                pairsAwayAgg: 100,
+                pairsAwayAggAgainst: 85,
+
+                cupGames: 10,
+                cupWins: 8,
+                cupWinPerc: 80,
+                cupAverage: 2,
+                cupAgg: 200,
+                cupAggAgainst: 180,
+
+                singlesCupGames: 10,
+                singlesCupWins: 8,
+                singlesCupWinPerc: 80,
+                singlesCupAverage: 2,
+                singlesCupAgg: 200,
+                singlesCupAggAgainst: 180,
+
+                pairsCupGames: 0,
+                pairsCupWins: 0,
+                pairsCupWinPerc: 0,
+                pairsCupAverage: 0,
+                pairsCupAgg: 0,
+                pairsCupAggAgainst: 0,
+            },
+        ];
+
+        it('Correctly determines which stats to display on the summary page - all', () => {
+            const result = returnPlayerSummaryDisplayStats(
+                stats,
+                false,
+                false,
+                false,
+                false,
+                false
+            );
+
+            expect(result.length).to.equal(1);
+            const player = result.find(
+                (player) => player.player === playerName
+            );
+
+            expect(player).to.deep.equal({
+                player: playerName,
+
+                games: 100,
+                wins: 70,
+                winPerc: 70,
+                average: 6.0,
+                aggDiff: 600,
+            });
+        });
+
+        it('Correctly determines which stats to display on the summary page - home', () => {
+            const result = returnPlayerSummaryDisplayStats(
+                stats,
+                false,
+                false,
+                true,
+                false,
+                false
+            );
+
+            const player = result.find(
+                (player) => player.player === playerName
+            );
+
+            expect(player).to.deep.equal({
+                player: playerName,
+
+                games: 40,
+                wins: 36,
+                winPerc: 90,
+                average: 10.0,
+                aggDiff: 400,
+            });
+        });
+
+        it('Correctly determines which stats to display on the summary page - singles', () => {
+            const result = returnPlayerSummaryDisplayStats(
+                stats,
+                true,
+                false,
+                false,
+                false,
+                false
+            );
+
+            const player = result.find(
+                (player) => player.player === playerName
+            );
+
+            expect(player).to.deep.equal({
+                player: playerName,
+
+                games: 89,
+                wins: 65,
+                winPerc: 73,
+                average: 6.5,
+                aggDiff: 579,
+            });
+        });
+
+        it('Correctly determines which stats to display on the summary page - away singles', () => {
+            const result = returnPlayerSummaryDisplayStats(
+                stats,
+                true,
+                false,
+                false,
+                true,
+                false
+            );
+
+            const player = result.find(
+                (player) => player.player === playerName
+            );
+
+            expect(player).to.deep.equal({
+                player: playerName,
+
+                games: 45,
+                wins: 26,
+                winPerc: 58,
+                average: 0.5,
+                aggDiff: 23,
+            });
+        });
+
+        it('Correctly determines which stats to display on the summary page - pairs cup', () => {
+            const result = returnPlayerSummaryDisplayStats(
+                stats,
+                false,
+                true,
+                false,
+                false,
+                true
+            );
+
+            const player = result.find(
+                (player) => player.player === playerName
+            );
+
+            expect(player).to.deep.equal({
+                player: playerName,
+
+                games: 0,
+                wins: 0,
+                winPerc: 0,
+                average: 0.0,
+                aggDiff: 0,
+            });
+        });
+    });
 });

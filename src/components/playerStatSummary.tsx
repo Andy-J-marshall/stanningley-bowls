@@ -191,6 +191,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
     function displayStats(statsToUse: PlayerStatsTeamSummary[]) {
         return statsToUse.map((p, key) => {
+            const idPrefix = p.player.replace(' ', '-');
             return (
                 <tbody key={key}>
                     {p.games && p.games > 0 ? (
@@ -204,18 +205,12 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                                     {capitalizeText([p.player])}
                                 </a>
                             </td>
-                            <td id={`${p.player.replace(' ', '-')}-games`}>
-                                {p.games}
+                            <td id={`${idPrefix}-games`}>{p.games}</td>
+                            <td id={`${idPrefix}-wins`}>{p.wins}</td>
+                            <td id={`${idPrefix}-win-perc`}>
+                                {p.wins && p.winPerc}%
                             </td>
-                            <td id={`${p.player.replace(' ', '-')}-wins`}>
-                                {p.wins}
-                            </td>
-                            <td id={`${p.player.replace(' ', '-')}-win-perc`}>
-                                {p.wins &&
-                                    ((p.wins / p.games) * 100).toFixed(0)}
-                                %
-                            </td>
-                            <td id={`${p.player.replace(' ', '-')}-avg`}>
+                            <td id={`${idPrefix}-avg`}>
                                 {p.average?.toFixed(2)}
                             </td>
                         </tr>
