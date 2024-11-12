@@ -90,6 +90,9 @@ function Records(props: RecordsProps) {
         });
     }
 
+    // TODO check everything looks fine in records and team stats if there are no games
+    // TODO move components to new folders
+
     if (combinedStats?.mostGames > 0) {
         return (
             <div id="records">
