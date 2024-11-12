@@ -99,7 +99,7 @@ describe('#RecordsHelper Tests', () => {
             );
 
             const {
-                minTotalGames,
+                minGames,
                 mostGamesPlayer,
                 mostGames,
                 mostWins,
@@ -110,7 +110,7 @@ describe('#RecordsHelper Tests', () => {
                 bestAveragePlayer,
             } = combinedStats;
 
-            expect(minTotalGames).to.equal(15);
+            expect(minGames).to.equal(15);
             expect(mostGamesPlayer).to.deep.equal(['paul bowes']);
             expect(mostGames).to.equal(53);
             expect(mostWins).to.equal(43);

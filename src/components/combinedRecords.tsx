@@ -5,7 +5,7 @@ function CombinedRecords(props: CombinedRecordsProps) {
     const stats = props.stats;
 
     const {
-        minTotalGames,
+        minGames,
         mostGames,
         mostGamesPlayer,
         mostWins,
@@ -16,10 +16,10 @@ function CombinedRecords(props: CombinedRecordsProps) {
         bestAveragePlayer,
     } = stats;
 
-    if (mostGames > 0) {
+    if (mostGames && mostGames > 0) {
         return (
             <RecordsTableDisplay
-                minGames={minTotalGames}
+                minGames={minGames}
                 mostGames={mostGames}
                 mostGamesPlayer={mostGamesPlayer}
                 mostWins={mostWins}

@@ -56,11 +56,13 @@ function Records(props: RecordsProps) {
                         displayname={displayname}
                         children={
                             <div>
-                                <IndividualRecords
-                                    stats={teamRecord}
-                                    teamName={teamName}
-                                    bTeam={false}
-                                />
+                                {teamRecord && (
+                                    <IndividualRecords
+                                        stats={teamRecord}
+                                        teamName={teamName}
+                                        bTeam={false}
+                                    />
+                                )}
                                 {bTeamRecord && (
                                     <IndividualRecords
                                         stats={bTeamRecord}

@@ -16,7 +16,7 @@ function IndividualRecords(props: IndividualRecordsProps) {
 
     if (stats || stats.bestAverage < -26) {
         const {
-            minTotalGames,
+            minGames,
             mostWins,
             mostWinsPlayer,
             bestWinPerc,
@@ -30,7 +30,7 @@ function IndividualRecords(props: IndividualRecordsProps) {
                 {bTeam && <hr />}
                 <RecordsTableDisplay
                     teamName={displayName}
-                    minGames={minTotalGames}
+                    minGames={minGames}
                     mostWins={mostWins}
                     mostWinsPlayer={mostWinsPlayer}
                     bestWinPerc={bestWinPerc}

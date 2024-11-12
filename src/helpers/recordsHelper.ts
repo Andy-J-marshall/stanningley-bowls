@@ -96,7 +96,7 @@ export function findPlayerRecords(
     const minGamesForOverallRecords = 15;
     const minGamesForTeamRecords = 11;
 
-    let minTotalGames = 1;
+    let minGames = 1;
     let mostGamesPlayer: string[] = [];
     let mostGames = 0;
     let mostWinsPlayer: string[] = [];
@@ -175,14 +175,14 @@ export function findPlayerRecords(
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
 
-        if (highestTotalGames > minTotalGames) {
+        if (highestTotalGames > minGames) {
             if (highestTotalGames >= minGamesForOverallRecords) {
-                minTotalGames = minGamesForOverallRecords;
+                minGames = minGamesForOverallRecords;
             } else {
-                minTotalGames = highestTotalGames;
+                minGames = highestTotalGames;
             }
         }
-        const playedMinGames = totalGames >= minTotalGames ? true : false;
+        const playedMinGames = totalGames >= minGames ? true : false;
 
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
@@ -215,7 +215,7 @@ export function findPlayerRecords(
     });
 
     const combinedStats = {
-        minTotalGames,
+        minGames,
         mostGamesPlayer,
         mostGames,
         mostWinsPlayer,

@@ -133,13 +133,13 @@ export interface RecordsTableDisplayProps {
 }
 
 export interface IndividualRecordsProps {
-    stats: any; // TODO fix
+    stats: RecordStats;
     teamName: string;
     bTeam: boolean;
 }
 
 export interface CombinedRecordsProps {
-    stats: any; // TODO fix
+    stats: RecordStats;
 }
 
 export interface PlayerStatsTeamSummary {
@@ -352,6 +352,18 @@ export interface TeamRecords {
         bestAverage: number;
         bestAveragePlayer: string[];
     };
+}
+
+export interface RecordStats {
+    mostGames?: number;
+    mostGamesPlayer?: string[];
+    minGames: number;
+    mostWins: number;
+    mostWinsPlayer: string[];
+    bestWinPerc: number;
+    bestWinPercPlayer: string[];
+    bestAverage: number;
+    bestAveragePlayer: string[];
 }
 
 export interface AggregatedPlayerStats {
