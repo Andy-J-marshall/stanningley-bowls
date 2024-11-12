@@ -33,20 +33,22 @@ function Results(props: ResultsProps) {
         });
     }
 
-    const hasResults = resultsArray?.some(
-        (resultTeam) => resultTeam.results.length > 0
-    );
+    const hasResults = resultsArray?.some((team) => team.results.length > 0);
 
-    if (resultsArray && hasResults) {
-        return (
-            <div id="result">
-                <h1>{yearInTitle} results</h1>
+    return (
+        <div id="result">
+            <h1>{yearInTitle} results</h1>
 
-                {resultsArray.map((resultTeam, idx) => {
-                    if (resultTeam.results.length > 0) {
+            {/* Show message if no results for selected year */}
+            {!hasResults && <p>No results for {yearToDisplay}</p>}
+
+            {/* Show results if found */}
+            {hasResults &&
+                resultsArray?.map((team, idx) => {
+                    if (team.results.length > 0) {
                         return (
                             <div key={idx} className="teamResult">
-                                <h3>{resultTeam.day?.toLowerCase()}</h3>
+                                <h3>{team.day?.toLowerCase()}</h3>
                                 <Table striped bordered hover>
                                     <thead>
                                         <tr>
@@ -56,7 +58,7 @@ function Results(props: ResultsProps) {
                                             <th>away</th>
                                         </tr>
                                     </thead>
-                                    {resultTeam.results.map((result, idx) => {
+                                    {team.results.map((result, idx) => {
                                         let homeTeam = result.home.name;
                                         let awayTeam = result.away.name;
                                         if (
@@ -127,18 +129,12 @@ function Results(props: ResultsProps) {
                         );
                     }
                 })}
-                <br />
+            <br />
+            {hasResults && (
                 <p className="footnote">Last Updated: {stats.lastUpdated}</p>
-            </div>
-        );
-    } else {
-        return (
-            <div>
-                <h1>results</h1>
-                <p>No results for {yearToDisplay}</p>
-            </div>
-        );
-    }
+            )}
+        </div>
+    );
 }
 
 export default Results;
