@@ -122,7 +122,6 @@ function App() {
                                 />
                                 <Results
                                     stats={teamStats}
-                                    statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />
                             </div>

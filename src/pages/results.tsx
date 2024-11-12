@@ -9,7 +9,6 @@ const currentYear = new Date().getFullYear();
 
 function Results(props: ResultsProps) {
     const stats = props.stats;
-    const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
 
     const yearInTitle =

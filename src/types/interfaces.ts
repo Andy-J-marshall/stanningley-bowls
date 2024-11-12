@@ -6,7 +6,6 @@ export interface TeamStatsProps {
 
 export interface ResultsProps {
     stats: FullStatsFile;
-    statsCallback: (year: string) => void;
     yearToDisplay: string;
 }
 
