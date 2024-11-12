@@ -1,7 +1,7 @@
 import { Row } from 'react-bootstrap';
-import { PlayerStatOverviewTilesProps } from '../types/interfaces';
+import { PlayerStatOverviewTilesProps } from '../../types/interfaces';
 import StatsTile from './statsTile';
-import { capitalizeText } from '../helpers/utils';
+import { capitalizeText } from '../../helpers/utils';
 
 function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {
     const games = props.games;

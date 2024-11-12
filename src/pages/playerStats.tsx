@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import IndividualPlayerStats from '../components/IndividualPlayerStats';
-import PlayerStatSummary from '../components/playerStatSummary';
-import PlayerStatsOptions from '../components/playerStatsOptions';
-import Search from '../components/search';
+import IndividualPlayerStats from '../components/playerStats/IndividualPlayerStats';
+import PlayerStatSummary from '../components/playerStats/playerStatSummary';
+import PlayerStatsOptions from '../components/playerStats/playerStatsOptions';
+import Search from '../components/playerStats/search';
 import { returnPlayerStats } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-import YearSelectDropdown from '../components/yearSelectDropdown';
+import YearSelectDropdown from '../components/homePage/yearSelectDropdown';
 import { config } from '../config';
 import { ResultsProps } from '../types/interfaces';
 import { returnStructuredResultsArray } from '../helpers/playerStatsHelper';

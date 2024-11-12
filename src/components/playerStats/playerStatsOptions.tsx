@@ -7,8 +7,8 @@ import {
     DropdownButton,
     Dropdown,
 } from 'react-bootstrap';
-import { PlayerStatsOptionsProps } from '../types/interfaces';
-import { formatTeamName } from '../helpers/utils';
+import { PlayerStatsOptionsProps } from '../../types/interfaces';
+import { formatTeamName } from '../../helpers/utils';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allTeamStatsCallback = props.allTeamStatsCallback;

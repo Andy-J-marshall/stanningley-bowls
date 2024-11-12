@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import IndividualTeamStats from '../components/individualTeamStats';
-import CombinedTeamStats from '../components/combinedTeamStats';
-import TeamTabs from '../components/teamTabs';
+import IndividualTeamStats from '../components/teams/teamStats/individualTeamStats';
+import CombinedTeamStats from '../components/teams/teamStats/combinedTeamStats';
+import TeamTabs from '../components/teams/teamTabs';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
 import { TeamStatsProps } from '../types/interfaces';
-import TeamTabsWrapper from '../components/teamTabsWrapper';
+import TeamTabsWrapper from '../components/teams/teamTabsWrapper';
 import { findTeamStats } from '../helpers/teamStatsHelper';
 
 function TeamStats(props: TeamStatsProps) {
@@ -15,6 +15,10 @@ function TeamStats(props: TeamStatsProps) {
     const currentYear = new Date().getFullYear();
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
+
+    const anyGamesPlayed = teamResults?.some(
+        (team) => team.totalGamesPlayed > 0
+    );
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -71,7 +75,7 @@ function TeamStats(props: TeamStatsProps) {
         });
     }
 
-    if (teamResults) {
+    if (teamResults && anyGamesPlayed) {
         return (
             <div id="team-stats">
                 <h1>{yearInTitle} team stats</h1>

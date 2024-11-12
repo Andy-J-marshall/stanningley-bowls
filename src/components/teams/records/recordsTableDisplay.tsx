@@ -1,32 +1,22 @@
 import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
-import { RecordsTableDisplayProps } from '../types/interfaces';
+import { capitalizeText } from '../../../helpers/utils';
+import { RecordsTableDisplayProps } from '../../../types/interfaces';
 
 function RecordsTableDisplay(props: RecordsTableDisplayProps) {
-    const bTeam = props.bTeam;
-    const day = props.day;
+    const teamName = props.teamName;
+    const mostGames = props.mostGames;
+    const mostGamesPlayer = props.mostGamesPlayer;
     const minGames = props.minGames;
     const bestWinPerc = props.bestWinPerc;
     const bestWinPercPlayer = props.bestWinPercPlayer;
     const mostWins = props.mostWins;
     const mostWinsPlayer = props.mostWinsPlayer;
-    const mostGames = props.mostGames;
-    const mostGamesPlayer = props.mostGamesPlayer;
     const bestAverage = props.bestAverage;
     const bestAveragePlayer = props.bestAveragePlayer;
 
-    if (bTeam && (!bestAverage || bestAverage < -26)) {
-        return null;
-    }
-
-    if (!bestAverage || bestAverage < -26) {
-        return <p>No games played</p>;
-    }
-
     return (
         <div className="center">
-            {bTeam && <hr />}
-            {day && <h4>{day.toLowerCase()}</h4>}
+            {teamName && <h4>{teamName.toLowerCase()}</h4>}
             <Table striped bordered hover>
                 <thead>
                     <tr>

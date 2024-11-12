@@ -1,6 +1,6 @@
 import { config } from '../config';
 import {
-    Records,
+    TeamRecords,
     PlayerResultsStatsFile,
     ConfigTeamData,
 } from '../types/interfaces';
@@ -26,14 +26,14 @@ export function findLeaguesAvailableInData(
 
         possibleTeamNames.forEach((team) => {
             initialTeamRecords[team] = {
-                minTeamGames: 1,
-                highestTeamGames: 0,
-                mostTeamWins: 0,
-                bestTeamAverage: -27,
-                bestTeamWinPerc: 0,
-                mostTeamWinsPlayer: [],
-                bestTeamAveragePlayer: [],
-                bestTeamWinPercPlayer: [],
+                minGames: 1,
+                mostGames: 0,
+                mostWins: 0,
+                bestAverage: -27,
+                bestWinPerc: 0,
+                mostWinsPlayer: [],
+                bestAveragePlayer: [],
+                bestWinPercPlayer: [],
             };
         });
     });
@@ -44,7 +44,7 @@ export function findLeaguesAvailableInData(
 export function findMinNumberOfGames(
     playerResults: PlayerResultsStatsFile,
     teamsFound: string[],
-    initialTeamRecords: Records
+    initialTeamRecords: TeamRecords
 ) {
     const players = Object.keys(playerResults);
     const teamRecordsWithMinGames = initialTeamRecords;
@@ -70,12 +70,11 @@ export function findMinNumberOfGames(
             const playerStats = p[team];
 
             if (
-                teamRecord &&
                 playerStats &&
-                playerStats.games >= teamRecord.highestTeamGames
+                teamRecord &&
+                playerStats.games >= teamRecord.mostGames
             ) {
-                teamRecordsWithMinGames[team].highestTeamGames =
-                    playerStats.games;
+                teamRecordsWithMinGames[team].mostGames = playerStats.games;
             }
         });
     });
@@ -89,7 +88,7 @@ export function findMinNumberOfGames(
 export function findPlayerRecords(
     playerResults: PlayerResultsStatsFile,
     teamsFound: string[],
-    teamRecords: Records,
+    teamRecords: TeamRecords,
     highestTotalGames: number
 ) {
     const players = Object.keys(playerResults);
@@ -97,7 +96,7 @@ export function findPlayerRecords(
     const minGamesForOverallRecords = 15;
     const minGamesForTeamRecords = 11;
 
-    let minTotalGames = 1;
+    let minGames = 1;
     let mostGamesPlayer: string[] = [];
     let mostGames = 0;
     let mostWinsPlayer: string[] = [];
@@ -122,49 +121,49 @@ export function findPlayerRecords(
                 const winPerc = (wins / games) * 100;
 
                 let teamRecord = teamRecords[team];
-                let minTeamGames = teamRecord.minTeamGames;
-                let highestTeamGames = teamRecord.highestTeamGames;
-                let mostTeamWins = teamRecord.mostTeamWins;
-                let bestTeamAverage = teamRecord.bestTeamAverage;
-                let bestTeamWinPerc = teamRecord.bestTeamWinPerc;
+                let minTeamGames = teamRecord.minGames;
+                let mostTeamGames = teamRecord.mostGames;
+                let mostTeamWins = teamRecord.mostWins;
+                let bestTeamAverage = teamRecord.bestAverage;
+                let bestTeamWinPerc = teamRecord.bestWinPerc;
 
-                if (highestTeamGames > minTeamGames) {
-                    if (highestTeamGames >= minGamesForTeamRecords) {
+                if (mostTeamGames && mostTeamGames > minTeamGames) {
+                    if (mostTeamGames >= minGamesForTeamRecords) {
                         minTeamGames = minGamesForTeamRecords;
                     } else {
-                        minTeamGames = highestTeamGames;
+                        minTeamGames = mostTeamGames;
                     }
                 }
 
                 if (avg >= bestTeamAverage && games >= minTeamGames) {
                     if (avg > bestTeamAverage) {
-                        teamRecords[team].bestTeamAveragePlayer = [];
+                        teamRecords[team].bestAveragePlayer = [];
                         bestTeamAverage = avg;
                     }
-                    teamRecords[team].bestTeamAveragePlayer.push(player);
+                    teamRecords[team].bestAveragePlayer.push(player);
                 }
 
                 if (wins >= mostTeamWins) {
                     if (wins > mostTeamWins) {
-                        teamRecords[team].mostTeamWinsPlayer = [];
+                        teamRecords[team].mostWinsPlayer = [];
                         mostTeamWins = wins;
                     }
-                    teamRecords[team].mostTeamWinsPlayer.push(player);
+                    teamRecords[team].mostWinsPlayer.push(player);
                 }
 
                 if (winPerc >= bestTeamWinPerc && games >= minTeamGames) {
                     if (winPerc > bestTeamWinPerc) {
-                        teamRecords[team].bestTeamWinPercPlayer = [];
+                        teamRecords[team].bestWinPercPlayer = [];
                         bestTeamWinPerc = winPerc;
                     }
-                    teamRecords[team].bestTeamWinPercPlayer.push(player);
+                    teamRecords[team].bestWinPercPlayer.push(player);
                 }
 
-                teamRecords[team].minTeamGames = minTeamGames;
-                teamRecords[team].highestTeamGames = highestTeamGames;
-                teamRecords[team].mostTeamWins = mostTeamWins;
-                teamRecords[team].bestTeamAverage = bestTeamAverage;
-                teamRecords[team].bestTeamWinPerc = bestTeamWinPerc;
+                teamRecords[team].minGames = minTeamGames;
+                teamRecords[team].mostGames = mostTeamGames;
+                teamRecords[team].mostWins = mostTeamWins;
+                teamRecords[team].bestAverage = bestTeamAverage;
+                teamRecords[team].bestWinPerc = bestTeamWinPerc;
             }
         });
 
@@ -176,14 +175,14 @@ export function findPlayerRecords(
         const winPerc = (totalWins / totalGames) * 100;
         const average = (p.totalAgg - p.totalAggAgainst) / totalGames;
 
-        if (highestTotalGames > minTotalGames) {
+        if (highestTotalGames > minGames) {
             if (highestTotalGames >= minGamesForOverallRecords) {
-                minTotalGames = minGamesForOverallRecords;
+                minGames = minGamesForOverallRecords;
             } else {
-                minTotalGames = highestTotalGames;
+                minGames = highestTotalGames;
             }
         }
-        const playedMinGames = totalGames >= minTotalGames ? true : false;
+        const playedMinGames = totalGames >= minGames ? true : false;
 
         if (totalGames >= mostGames) {
             if (totalGames > mostGames) {
@@ -215,9 +214,8 @@ export function findPlayerRecords(
         }
     });
 
-    return {
-        teamRecords,
-        minTotalGames,
+    const combinedStats = {
+        minGames,
         mostGamesPlayer,
         mostGames,
         mostWinsPlayer,
@@ -227,11 +225,16 @@ export function findPlayerRecords(
         bestAveragePlayer,
         bestAverage,
     };
+
+    return {
+        teamRecords,
+        combinedStats,
+    };
 }
 
 export function findTeamRecords(
     teamData: ConfigTeamData,
-    teamRecords: Records
+    teamRecords: TeamRecords
 ) {
     let teamName = '';
     let teamRecord = null;
@@ -241,7 +244,7 @@ export function findTeamRecords(
         const nameLowerCase = team.toLowerCase();
         const tr = teamRecords[nameLowerCase];
         if (tr) {
-            if (tr.bestTeamAverage > -21) {
+            if (tr.bestAverage > -21) {
                 teamRecord = tr;
                 teamName = nameLowerCase;
                 break;
@@ -250,7 +253,7 @@ export function findTeamRecords(
 
         // Check for a team with an (a) suffix if no team found
         const trWithASuffix = teamRecords[nameLowerCase + ' (a)'];
-        if (trWithASuffix && trWithASuffix.bestTeamAverage > -21) {
+        if (trWithASuffix && trWithASuffix.bestAverage > -21) {
             teamRecord = trWithASuffix;
             teamName = nameLowerCase;
             break;

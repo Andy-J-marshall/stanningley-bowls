@@ -1,5 +1,5 @@
 import { Image } from 'react-bootstrap';
-import logo from '../images/logos/brand-banner-logo.png';
+import logo from '../../images/logos/brand-banner-logo.png';
 
 function Header() {
     return (

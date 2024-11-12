@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { Accordion } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
+import { capitalizeText } from '../../helpers/utils';
 import PlayerStatsOverview from './playerStatsOverview';
 import PlayerStatsWinsLosses from './playerStatsWinsLosses';
 import PlayerStatsTeams from './playerStatsTeams';
 import PlayerStatsAggregates from './playerStatsAggregates';
 import PlayerStatsResults from './playerStatsResults';
-import { IndividualPlayerStatsProps } from '../types/interfaces';
+import { IndividualPlayerStatsProps } from '../../types/interfaces';
 
 function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const name = props.name;

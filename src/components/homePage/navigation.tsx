@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logoImg from '../images/logos/brand-logo-blue-bg.png';
+import logoImg from '../../images/logos/brand-logo-blue-bg.png';
 
 function Navigation() {
     return (

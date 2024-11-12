@@ -209,10 +209,10 @@ export function returnPlayerSummaryDisplayStats(
         const playerObject = {
             player: playerName,
             games,
-            average,
+            average: Number(average?.toFixed(2)),
             wins,
-            winPerc,
-            aggDiff: games * average,
+            winPerc: Number(winPerc?.toFixed(0)),
+            aggDiff: Number((games * average)?.toFixed(0)),
         };
 
         return playerObject;

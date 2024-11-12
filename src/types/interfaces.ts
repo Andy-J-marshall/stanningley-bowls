@@ -120,17 +120,26 @@ export interface PlayerStatsComponentsProps {
 }
 
 export interface RecordsTableDisplayProps {
-    day?: string;
-    bTeam?: boolean;
-    minGames?: number;
-    bestWinPerc?: number;
-    bestWinPercPlayer?: string[];
-    mostWins?: number;
-    mostWinsPlayer?: string[];
+    teamName?: string;
     mostGames?: number;
     mostGamesPlayer?: string[];
-    bestAverage?: number;
-    bestAveragePlayer?: string[];
+    minGames: number;
+    bestWinPerc: number;
+    bestWinPercPlayer: string[];
+    mostWins: number;
+    mostWinsPlayer: string[];
+    bestAverage: number;
+    bestAveragePlayer: string[];
+}
+
+export interface IndividualRecordsProps {
+    stats: RecordStats;
+    teamName: string;
+    bTeam: boolean;
+}
+
+export interface CombinedRecordsProps {
+    stats: RecordStats;
 }
 
 export interface PlayerStatsTeamSummary {
@@ -329,19 +338,20 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
-export interface Records {
-    [key: string]: {
-        day: string;
-        minTeamGames: number;
-        bestTeamWinPerc: number;
-        bestTeamWinPercPlayer: string[];
-        mostTeamWins: number;
-        mostTeamWinsPlayer: string[];
-        highestTeamGames: number;
-        mostTeamGamesPlayer: string[];
-        bestTeamAverage: number;
-        bestTeamAveragePlayer: string[];
-    };
+export interface TeamRecords {
+    [key: string]: RecordStats;
+}
+
+export interface RecordStats {
+    mostGames: number;
+    mostGamesPlayer?: string[];
+    minGames: number;
+    mostWins: number;
+    mostWinsPlayer: string[];
+    bestWinPerc: number;
+    bestWinPercPlayer: string[];
+    bestAverage: number;
+    bestAveragePlayer: string[];
 }
 
 export interface AggregatedPlayerStats {

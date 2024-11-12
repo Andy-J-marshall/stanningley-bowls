@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
-import { YearSelectDropdownProps } from '../types/interfaces';
+import { YearSelectDropdownProps } from '../../types/interfaces';
 
 function YearSelectDropdown(props: YearSelectDropdownProps) {
     const statsCallback = props.statsCallback;

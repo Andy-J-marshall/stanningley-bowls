@@ -5,7 +5,7 @@ import {
     Menu,
     MenuItem,
 } from 'react-bootstrap-typeahead';
-import { SearchProps } from '../types/interfaces';
+import { SearchProps } from '../../types/interfaces';
 
 function Search(props: SearchProps) {
     const searchList = props.searchList;
