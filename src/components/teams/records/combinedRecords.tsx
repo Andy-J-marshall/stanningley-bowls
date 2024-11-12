@@ -1,4 +1,4 @@
-import { CombinedRecordsProps } from '../types/interfaces';
+import { CombinedRecordsProps } from '../../../types/interfaces';
 import RecordsTableDisplay from './recordsTableDisplay';
 
 function CombinedRecords(props: CombinedRecordsProps) {

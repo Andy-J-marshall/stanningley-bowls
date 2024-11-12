@@ -1,5 +1,5 @@
 import { Row } from 'react-bootstrap';
-import { PlayerStatAggregatesTilesProps } from '../types/interfaces';
+import { PlayerStatAggregatesTilesProps } from '../../types/interfaces';
 import StatsTile from './statsTile';
 
 function PlayerStatAggregateTiles(props: PlayerStatAggregatesTilesProps) {

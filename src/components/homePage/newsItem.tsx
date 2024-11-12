@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Card, Col, Collapse } from 'react-bootstrap';
-import { NewsItemProps } from '../types/interfaces';
+import { NewsItemProps } from '../../types/interfaces';
 
 function NewsItem(props: NewsItemProps) {
     const title = props.title.toLowerCase();

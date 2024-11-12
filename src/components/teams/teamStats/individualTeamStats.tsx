@@ -1,5 +1,5 @@
 import TeamStatsTable from './teamStatsTable';
-import { IndividualTeamStatsProps } from '../types/interfaces';
+import { IndividualTeamStatsProps } from '../../../types/interfaces';
 
 function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const day = props.day;

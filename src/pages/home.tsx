@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import Supporters from '../components/supporters';
-import Header from '../components/header';
-import News from '../components/news';
-import HomePageCarousel from '../components/homePageCarousel';
+import Supporters from '../components/homePage/supporters';
+import Header from '../components/homePage/header';
+import News from '../components/homePage/news';
+import HomePageCarousel from '../components/homePage/homePageCarousel';
 
 function Home() {
     useEffect(() => {

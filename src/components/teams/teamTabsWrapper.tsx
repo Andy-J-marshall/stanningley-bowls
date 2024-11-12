@@ -1,4 +1,4 @@
-import { WrapperProps } from '../types/interfaces';
+import { WrapperProps } from '../../types/interfaces';
 
 function TeamTabsWrapper(props: WrapperProps) {
     // This is used to ensure the team tabs appear correctly on the team stats and record pages.

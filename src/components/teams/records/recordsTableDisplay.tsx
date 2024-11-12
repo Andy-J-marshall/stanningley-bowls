@@ -1,6 +1,6 @@
 import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../helpers/utils';
-import { RecordsTableDisplayProps } from '../types/interfaces';
+import { capitalizeText } from '../../../helpers/utils';
+import { RecordsTableDisplayProps } from '../../../types/interfaces';
 
 function RecordsTableDisplay(props: RecordsTableDisplayProps) {
     const teamName = props.teamName;

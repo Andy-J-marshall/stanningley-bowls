@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import TeamTabs from '../components/teamTabs';
-import TeamTabsWrapper from '../components/teamTabsWrapper';
+import TeamTabs from '../components/teams/teamTabs';
+import TeamTabsWrapper from '../components/teams/teamTabsWrapper';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
 import { RecordsProps } from '../types/interfaces';
@@ -10,8 +10,8 @@ import {
     findPlayerRecords,
     findTeamRecords,
 } from '../helpers/recordsHelper';
-import CombinedRecords from '../components/combinedRecords';
-import IndividualRecords from '../components/individualRecords';
+import CombinedRecords from '../components/teams/records/combinedRecords';
+import IndividualRecords from '../components/teams/records/individualRecords';
 
 function Records(props: RecordsProps) {
     const stats = props.stats;
@@ -89,9 +89,6 @@ function Records(props: RecordsProps) {
             }
         });
     }
-
-    // TODO check everything looks fine in records and team stats if there are no games
-    // TODO move components to new folders
 
     if (combinedStats?.mostGames > 0) {
         return (

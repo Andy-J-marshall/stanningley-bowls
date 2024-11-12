@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import { StatsTileProps } from '../types/interfaces';
+import { StatsTileProps } from '../../types/interfaces';
 
 function statsTile(props: StatsTileProps) {
     const title = props.title;
