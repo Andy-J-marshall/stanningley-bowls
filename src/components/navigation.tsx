@@ -12,7 +12,6 @@ function Navigation() {
             variant="light"
             expand="md"
         >
-            {/* TODO use Container fluid in more places where need full width */}
             <Container fluid>
                 <Navbar.Brand as={Link} to="/" href="/home">
                     <Image
