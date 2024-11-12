@@ -16,6 +16,10 @@ function TeamStats(props: TeamStatsProps) {
     const yearInTitle =
         currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
 
+    const anyGamesPlayed = teamResults?.some(
+        (team) => team.totalGamesPlayed > 0
+    );
+
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -71,7 +75,7 @@ function TeamStats(props: TeamStatsProps) {
         });
     }
 
-    if (teamResults) {
+    if (teamResults && anyGamesPlayed) {
         return (
             <div id="team-stats">
                 <h1>{yearInTitle} team stats</h1>

@@ -109,7 +109,7 @@ function Records(props: RecordsProps) {
             <div className="center" style={{ width: '95%' }}>
                 <h1>{yearInTitle} records</h1>
                 <p>
-                    No {config.teamNames.shortName} team stats available for the
+                    No {config.teamNames.shortName} records available for the
                     selected year
                 </p>
             </div>
