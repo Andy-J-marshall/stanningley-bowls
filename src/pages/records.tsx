@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import TeamTabs from '../components/teamTabs';
-import RecordsTableDisplay from '../components/recordsTableDisplay';
 import TeamTabsWrapper from '../components/teamTabsWrapper';
 import { config } from '../config';
 import { returnTabName } from '../helpers/statsHelper';
@@ -11,6 +10,8 @@ import {
     findPlayerRecords,
     findTeamRecords,
 } from '../helpers/recordsHelper';
+import CombinedRecords from '../components/combinedRecords';
+import IndividualRecords from '../components/individualRecords';
 
 function Records(props: RecordsProps) {
     const stats = props.stats;
@@ -33,44 +34,12 @@ function Records(props: RecordsProps) {
         initialTeamRecords
     );
 
-    const {
-        teamRecords,
-        minTotalGames,
-        mostGames,
-        mostGamesPlayer,
-        mostWins,
-        mostWinsPlayer,
-        bestWinPerc,
-        bestWinPercPlayer,
-        bestAverage,
-        bestAveragePlayer,
-    } = findPlayerRecords(
+    const { teamRecords, combinedStats } = findPlayerRecords(
         stats.playerResults,
         teamsFound,
         teamRecordsWithMinGames,
         highestTotalGames
     );
-
-    function combinedRecordsComponent() {
-        if (mostGames > 0) {
-            // TODO could create a component for this
-            return (
-                <RecordsTableDisplay
-                    minGames={minTotalGames}
-                    mostGames={mostGames}
-                    mostGamesPlayer={mostGamesPlayer}
-                    mostWins={mostWins}
-                    mostWinsPlayer={mostWinsPlayer}
-                    bestWinPerc={bestWinPerc}
-                    bestWinPercPlayer={bestWinPercPlayer}
-                    bestAverage={bestAverage}
-                    bestAveragePlayer={bestAveragePlayer}
-                />
-            );
-        } else {
-            return <p>No games played</p>;
-        }
-    }
 
     function returnAllComponentsForTeams() {
         return config.historicTeamInfo.map((teamData) => {
@@ -87,41 +56,18 @@ function Records(props: RecordsProps) {
                         displayname={displayname}
                         children={
                             <div>
-                                {/* TODO could create a component for this */}
-                                <RecordsTableDisplay
-                                    day={teamName.replace(' (a)', '')}
+                                <IndividualRecords
+                                    stats={teamRecord}
+                                    teamName={teamName}
                                     bTeam={false}
-                                    minGames={teamRecord?.minTeamGames}
-                                    mostWins={teamRecord?.mostTeamWins}
-                                    mostWinsPlayer={
-                                        teamRecord?.mostTeamWinsPlayer
-                                    }
-                                    bestWinPerc={teamRecord?.bestTeamWinPerc}
-                                    bestWinPercPlayer={
-                                        teamRecord?.bestTeamWinPercPlayer
-                                    }
-                                    bestAverage={teamRecord?.bestTeamAverage}
-                                    bestAveragePlayer={
-                                        teamRecord?.bestTeamAveragePlayer
-                                    }
                                 />
-                                <RecordsTableDisplay
-                                    day={teamName.replace(' (a)', '') + ' (b)'}
-                                    bTeam={true}
-                                    minGames={bTeamRecord?.minTeamGames}
-                                    mostWins={bTeamRecord?.mostTeamWins}
-                                    mostWinsPlayer={
-                                        bTeamRecord?.mostTeamWinsPlayer
-                                    }
-                                    bestWinPerc={bTeamRecord?.bestTeamWinPerc}
-                                    bestWinPercPlayer={
-                                        bTeamRecord?.bestTeamWinPercPlayer
-                                    }
-                                    bestAverage={bTeamRecord?.bestTeamAverage}
-                                    bestAveragePlayer={
-                                        bTeamRecord?.bestTeamAveragePlayer
-                                    }
-                                />
+                                {bTeamRecord && (
+                                    <IndividualRecords
+                                        stats={bTeamRecord}
+                                        teamName={teamName.replace(' (a)', '')} // TODO move logic to component
+                                        bTeam={true}
+                                    />
+                                )}
                             </div>
                         }
                     ></TeamTabsWrapper>
@@ -142,12 +88,14 @@ function Records(props: RecordsProps) {
         });
     }
 
-    if (mostGames > 0) {
+    if (combinedStats?.mostGames > 0) {
         return (
             <div id="records">
                 <h1>{yearInTitle} records</h1>
                 <TeamTabs
-                    allCombinedComponent={combinedRecordsComponent()}
+                    allCombinedComponent={
+                        <CombinedRecords stats={combinedStats} />
+                    }
                     teamComponents={returnAllComponentsForTeams()}
                 />
                 <br />

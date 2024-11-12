@@ -31,14 +31,14 @@ describe('#RecordsHelper Tests', () => {
             const teamRecord = initialTeamRecords['monday combined leeds'];
 
             expect(teamRecord).to.deep.equal({
-                minTeamGames: 1,
-                highestTeamGames: 0,
-                mostTeamWins: 0,
-                bestTeamAverage: -27,
-                bestTeamWinPerc: 0,
-                mostTeamWinsPlayer: [],
-                bestTeamAveragePlayer: [],
-                bestTeamWinPercPlayer: [],
+                minGames: 1,
+                highestGames: 0,
+                mostWins: 0,
+                bestAverage: -27,
+                bestWinPerc: 0,
+                mostWinsPlayer: [],
+                bestAveragePlayer: [],
+                bestWinPercPlayer: [],
             });
         });
     });
@@ -70,9 +70,9 @@ describe('#RecordsHelper Tests', () => {
             const teamWithNoStatsDataForYear =
                 teamRecordsWithMinGames['tuesday leeds'];
 
-            expect(teamRecord.highestTeamGames).to.equal(19);
-            expect(teamRecord2.highestTeamGames).to.equal(17);
-            expect(teamWithNoStatsDataForYear.highestTeamGames).to.equal(0);
+            expect(teamRecord.highestGames).to.equal(19);
+            expect(teamRecord2.highestGames).to.equal(17);
+            expect(teamWithNoStatsDataForYear.highestGames).to.equal(0);
         });
     });
 
@@ -86,8 +86,19 @@ describe('#RecordsHelper Tests', () => {
                     teamsFound,
                     initialTeamRecords
                 );
+            const { teamRecords, combinedStats } = findPlayerRecords(
+                playerResults22,
+                teamsFound,
+                teamRecordsWithMinGames,
+                highestTotalGames
+            );
+
+            const teamsInTeamRecords = Object.keys(teamRecords);
+            const teamsInRecordsWithGames = teamsInTeamRecords.filter(
+                (t) => teamRecords[t].mostWins > 0
+            );
+
             const {
-                teamRecords,
                 minTotalGames,
                 mostGamesPlayer,
                 mostGames,
@@ -97,17 +108,7 @@ describe('#RecordsHelper Tests', () => {
                 bestWinPercPlayer,
                 bestAverage,
                 bestAveragePlayer,
-            } = findPlayerRecords(
-                playerResults22,
-                teamsFound,
-                teamRecordsWithMinGames,
-                highestTotalGames
-            );
-
-            const teamsInTeamRecords = Object.keys(teamRecords);
-            const teamsInRecordsWithGames = teamsInTeamRecords.filter(
-                (t) => teamRecords[t].mostTeamWins > 0
-            );
+            } = combinedStats;
 
             expect(minTotalGames).to.equal(15);
             expect(mostGamesPlayer).to.deep.equal(['paul bowes']);
@@ -188,14 +189,14 @@ describe('#RecordsHelper Tests', () => {
             );
 
             expect(teamRecord).to.deep.equal({
-                minTeamGames: 11,
-                highestTeamGames: 21,
-                mostTeamWins: 18,
-                bestTeamAverage: 8.15,
-                bestTeamWinPerc: 85.71428571428571,
-                mostTeamWinsPlayer: ['andy marshall'],
-                bestTeamAveragePlayer: ['paul bowes'],
-                bestTeamWinPercPlayer: ['andy marshall'],
+                minGames: 11,
+                highestGames: 21,
+                mostWins: 18,
+                bestAverage: 8.15,
+                bestWinPerc: 85.71428571428571,
+                mostWinsPlayer: ['andy marshall'],
+                bestAveragePlayer: ['paul bowes'],
+                bestWinPercPlayer: ['andy marshall'],
             });
         });
 
@@ -214,14 +215,14 @@ describe('#RecordsHelper Tests', () => {
             );
 
             expect(bTeamRecord).to.deep.equal({
-                minTeamGames: 11,
-                highestTeamGames: 17,
-                mostTeamWins: 13,
-                bestTeamAverage: 6.4,
-                bestTeamWinPerc: 81.25,
-                mostTeamWinsPlayer: ['paul leonard'],
-                bestTeamAveragePlayer: ['alison woodfine'],
-                bestTeamWinPercPlayer: ['paul leonard'],
+                minGames: 11,
+                highestGames: 17,
+                mostWins: 13,
+                bestAverage: 6.4,
+                bestWinPerc: 81.25,
+                mostWinsPlayer: ['paul leonard'],
+                bestAveragePlayer: ['alison woodfine'],
+                bestWinPercPlayer: ['paul leonard'],
             });
         });
     });
