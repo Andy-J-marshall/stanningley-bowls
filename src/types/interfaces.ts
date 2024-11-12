@@ -338,24 +338,12 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
-// TODO create a CombinedRecords interface
 export interface TeamRecords {
-    [key: string]: {
-        teamName: string;
-        minGames: number;
-        bestWinPerc: number;
-        bestWinPercPlayer: string[];
-        mostWins: number;
-        mostWinsPlayer: string[];
-        highestGames: number;
-        mostGamesPlayer: string[];
-        bestAverage: number;
-        bestAveragePlayer: string[];
-    };
+    [key: string]: RecordStats;
 }
 
 export interface RecordStats {
-    mostGames?: number;
+    mostGames: number;
     mostGamesPlayer?: string[];
     minGames: number;
     mostWins: number;

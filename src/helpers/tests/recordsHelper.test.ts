@@ -32,7 +32,7 @@ describe('#RecordsHelper Tests', () => {
 
             expect(teamRecord).to.deep.equal({
                 minGames: 1,
-                highestGames: 0,
+                mostGames: 0,
                 mostWins: 0,
                 bestAverage: -27,
                 bestWinPerc: 0,
@@ -70,9 +70,9 @@ describe('#RecordsHelper Tests', () => {
             const teamWithNoStatsDataForYear =
                 teamRecordsWithMinGames['tuesday leeds'];
 
-            expect(teamRecord.highestGames).to.equal(19);
-            expect(teamRecord2.highestGames).to.equal(17);
-            expect(teamWithNoStatsDataForYear.highestGames).to.equal(0);
+            expect(teamRecord.mostGames).to.equal(19);
+            expect(teamRecord2.mostGames).to.equal(17);
+            expect(teamWithNoStatsDataForYear.mostGames).to.equal(0);
         });
     });
 
@@ -190,7 +190,7 @@ describe('#RecordsHelper Tests', () => {
 
             expect(teamRecord).to.deep.equal({
                 minGames: 11,
-                highestGames: 21,
+                mostGames: 21,
                 mostWins: 18,
                 bestAverage: 8.15,
                 bestWinPerc: 85.71428571428571,
@@ -216,7 +216,7 @@ describe('#RecordsHelper Tests', () => {
 
             expect(bTeamRecord).to.deep.equal({
                 minGames: 11,
-                highestGames: 17,
+                mostGames: 17,
                 mostWins: 13,
                 bestAverage: 6.4,
                 bestWinPerc: 81.25,

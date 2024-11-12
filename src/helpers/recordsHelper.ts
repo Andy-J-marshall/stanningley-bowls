@@ -27,7 +27,7 @@ export function findLeaguesAvailableInData(
         possibleTeamNames.forEach((team) => {
             initialTeamRecords[team] = {
                 minGames: 1,
-                highestGames: 0,
+                mostGames: 0,
                 mostWins: 0,
                 bestAverage: -27,
                 bestWinPerc: 0,
@@ -70,11 +70,11 @@ export function findMinNumberOfGames(
             const playerStats = p[team];
 
             if (
-                teamRecord &&
                 playerStats &&
-                playerStats.games >= teamRecord.highestGames
+                teamRecord &&
+                playerStats.games >= teamRecord.mostGames
             ) {
-                teamRecordsWithMinGames[team].highestGames = playerStats.games;
+                teamRecordsWithMinGames[team].mostGames = playerStats.games;
             }
         });
     });
@@ -122,16 +122,16 @@ export function findPlayerRecords(
 
                 let teamRecord = teamRecords[team];
                 let minTeamGames = teamRecord.minGames;
-                let highestTeamGames = teamRecord.highestGames;
+                let mostTeamGames = teamRecord.mostGames;
                 let mostTeamWins = teamRecord.mostWins;
                 let bestTeamAverage = teamRecord.bestAverage;
                 let bestTeamWinPerc = teamRecord.bestWinPerc;
 
-                if (highestTeamGames > minTeamGames) {
-                    if (highestTeamGames >= minGamesForTeamRecords) {
+                if (mostTeamGames && mostTeamGames > minTeamGames) {
+                    if (mostTeamGames >= minGamesForTeamRecords) {
                         minTeamGames = minGamesForTeamRecords;
                     } else {
-                        minTeamGames = highestTeamGames;
+                        minTeamGames = mostTeamGames;
                     }
                 }
 
@@ -160,7 +160,7 @@ export function findPlayerRecords(
                 }
 
                 teamRecords[team].minGames = minTeamGames;
-                teamRecords[team].highestGames = highestTeamGames;
+                teamRecords[team].mostGames = mostTeamGames;
                 teamRecords[team].mostWins = mostTeamWins;
                 teamRecords[team].bestAverage = bestTeamAverage;
                 teamRecords[team].bestWinPerc = bestTeamWinPerc;
