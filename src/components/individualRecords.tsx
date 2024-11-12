@@ -6,6 +6,10 @@ function IndividualRecords(props: IndividualRecordsProps) {
     const teamName = props.teamName;
     const bTeam = props.bTeam;
 
+    const displayName = bTeam
+        ? teamName.replace(' (a)', '') + ' (b)'
+        : teamName;
+
     if (bTeam && (!stats.bestAverage || stats.bestAverage < -26)) {
         return null;
     }
@@ -25,7 +29,7 @@ function IndividualRecords(props: IndividualRecordsProps) {
             <div>
                 {bTeam && <hr />}
                 <RecordsTableDisplay
-                    teamName={teamName}
+                    teamName={displayName}
                     minGames={minTotalGames}
                     mostWins={mostWins}
                     mostWinsPlayer={mostWinsPlayer}

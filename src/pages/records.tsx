@@ -64,7 +64,7 @@ function Records(props: RecordsProps) {
                                 {bTeamRecord && (
                                     <IndividualRecords
                                         stats={bTeamRecord}
-                                        teamName={teamName.replace(' (a)', '')} // TODO move logic to component
+                                        teamName={teamName}
                                         bTeam={true}
                                     />
                                 )}
