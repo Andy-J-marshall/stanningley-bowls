@@ -116,6 +116,10 @@ function App() {
                         path="/results"
                         element={
                             <div className="stats-data-page-component center">
+                                <YearSelectDropdown
+                                    statsCallback={statsSelectCallback}
+                                    yearToDisplay={yearToDisplay}
+                                />
                                 <Results
                                     stats={teamStats}
                                     statsCallback={statsSelectCallback}

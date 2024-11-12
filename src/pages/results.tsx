@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-import YearSelectDropdown from '../components/homePage/yearSelectDropdown';
 import { config } from '../config';
 import { ResultsProps } from '../types/interfaces';
 import { returnStructuredResultsArray } from '../helpers/playerStatsHelper';
@@ -42,11 +41,6 @@ function Results(props: ResultsProps) {
     if (resultsArray && hasResults) {
         return (
             <div id="result">
-                <YearSelectDropdown
-                    statsCallback={statsCallback}
-                    yearToDisplay={yearToDisplay}
-                />
-
                 <h1>{yearInTitle} results</h1>
 
                 {resultsArray.map((resultTeam, idx) => {
@@ -141,10 +135,6 @@ function Results(props: ResultsProps) {
     } else {
         return (
             <div>
-                <YearSelectDropdown
-                    statsCallback={statsCallback}
-                    yearToDisplay={yearToDisplay}
-                />
                 <h1>results</h1>
                 <p>No results for {yearToDisplay}</p>
             </div>
