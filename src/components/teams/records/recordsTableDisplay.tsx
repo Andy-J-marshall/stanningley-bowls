@@ -28,7 +28,7 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
                 <tbody>
                     {mostGames && mostGamesPlayer && mostGames > 0 ? (
                         <tr>
-                            <td>Most games</td>
+                            <td>Games</td>
                             <td id="mostGames">{mostGames}</td>
                             <td id="mostGamesPlayer">
                                 {capitalizeText(mostGamesPlayer)}
@@ -37,7 +37,7 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
                     ) : null}
                     {mostWins && mostWinsPlayer && mostWins > 0 ? (
                         <tr>
-                            <td>Most wins</td>
+                            <td>Wins</td>
                             <td id="mostWins">{mostWins}</td>
                             <td id="mostWinsPlayer">
                                 {capitalizeText(mostWinsPlayer)}
@@ -46,7 +46,7 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
                     ) : null}
                     {bestWinPerc && bestWinPercPlayer && bestWinPerc > 0 ? (
                         <tr>
-                            <td>Highest win percentage</td>
+                            <td>Win Percentage</td>
                             <td id="bestWinPerc">{bestWinPerc.toFixed(0)}%</td>
                             <td id="bestWinPercPlayer">
                                 {capitalizeText(bestWinPercPlayer)}
@@ -55,7 +55,7 @@ function RecordsTableDisplay(props: RecordsTableDisplayProps) {
                     ) : null}
                     {bestAveragePlayer && bestAverage && bestAverage > -27 ? (
                         <tr>
-                            <td>Best average</td>
+                            <td>Average</td>
                             <td id="bestAverage">{bestAverage.toFixed(2)}</td>
                             <td id="bestAveragePlayer">
                                 {capitalizeText(bestAveragePlayer)}
