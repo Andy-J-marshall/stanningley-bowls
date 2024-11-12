@@ -14,7 +14,7 @@ function IndividualRecords(props: IndividualRecordsProps) {
         return null;
     }
 
-    if (stats || stats.bestAverage < -26) {
+    if (stats && stats.bestAverage >= -26) {
         const {
             minGames,
             mostWins,
