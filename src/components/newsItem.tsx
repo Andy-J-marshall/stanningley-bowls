@@ -11,42 +11,34 @@ function NewsItem(props: NewsItemProps) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
-            <Col>
-                <Card bg="light">
-                    <Card.Body>
-                        <h4>{title}</h4>
-                        <Card.Img
-                            style={{ width: '100%', height: 'auto' }}
-                            variant="top"
-                            src={imgSrc}
-                        />
-                        <br />
-                        <br />
-                        <Card.Text>{openingLine}</Card.Text>
-                        {!open && (
-                            <Button
-                                variant="light"
-                                onClick={() => setOpen(true)}
-                            >
-                                READ MORE...
-                            </Button>
-                        )}
-                        <Collapse in={open}>
-                            <Card.Text>{mainText}</Card.Text>
-                        </Collapse>
-                        {open && (
-                            <Button
-                                variant="light"
-                                onClick={() => setOpen(false)}
-                            >
-                                CLOSE
-                            </Button>
-                        )}
-                    </Card.Body>
-                </Card>
-            </Col>
-        </div>
+        <Col>
+            <Card bg="light">
+                <Card.Body>
+                    <h4>{title}</h4>
+                    <Card.Img
+                        style={{ width: '100%', height: 'auto' }}
+                        variant="top"
+                        src={imgSrc}
+                    />
+                    <br />
+                    <br />
+                    <Card.Text>{openingLine}</Card.Text>
+                    {!open && (
+                        <Button variant="light" onClick={() => setOpen(true)}>
+                            READ MORE...
+                        </Button>
+                    )}
+                    <Collapse in={open}>
+                        <Card.Text>{mainText}</Card.Text>
+                    </Collapse>
+                    {open && (
+                        <Button variant="light" onClick={() => setOpen(false)}>
+                            CLOSE
+                        </Button>
+                    )}
+                </Card.Body>
+            </Card>
+        </Col>
     );
 }
 
