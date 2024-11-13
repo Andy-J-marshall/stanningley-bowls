@@ -233,7 +233,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                         <tr>
                             <th>
                                 <Button
-                                    id="order-by-name%-button"
+                                    id="order-by-name-button"
                                     variant="light"
                                     onClick={orderByName}
                                     style={{
@@ -247,7 +247,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                             </th>
                             <th>
                                 <Button
-                                    id="order-by-win%-button"
+                                    id="order-by-games-button"
                                     variant="light"
                                     onClick={orderByGames}
                                     style={{
@@ -289,7 +289,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                             </th>
                             <th>
                                 <Button
-                                    id="order-by-win%-button"
+                                    id="order-by-avg-button"
                                     variant="light"
                                     onClick={orderByAverage}
                                     style={{
