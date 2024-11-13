@@ -91,6 +91,11 @@ ul {
   }
 }
 
+.result-column {
+  border-right-style: solid;
+  border-right-color: black;
+}
+
 .carousel-link {
   color: white;
   text-decoration: none;

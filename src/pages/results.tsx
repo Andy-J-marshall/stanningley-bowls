@@ -66,6 +66,7 @@ function Results(props: ResultsProps) {
                             {team.results.map((result, idx) => {
                                 let homeTeam = result.home.name;
                                 let awayTeam = result.away.name;
+
                                 if (homeTeam.toLowerCase().includes(teamName)) {
                                     let aOrBHome = '';
                                     if (homeTeam.endsWith(' A')) {
@@ -76,6 +77,7 @@ function Results(props: ResultsProps) {
                                     }
                                     homeTeam = `${teamName.toUpperCase()}${aOrBHome}`;
                                 }
+
                                 if (awayTeam.toLowerCase().includes(teamName)) {
                                     let aOrBAway = '';
                                     if (awayTeam.endsWith(' A')) {
@@ -90,29 +92,12 @@ function Results(props: ResultsProps) {
                                 return (
                                     <tbody key={idx}>
                                         <tr>
-                                            <td
-                                                style={{
-                                                    width: '38%',
-                                                }}
-                                            >
-                                                {homeTeam}
-                                            </td>
-                                            <td
-                                                style={{
-                                                    borderRightStyle: 'solid',
-                                                    borderRightColor: 'black',
-                                                }}
-                                            >
+                                            <td>{homeTeam}</td>
+                                            <td className="result-column">
                                                 {result.home.score}
                                             </td>
                                             <td>{result.away.score}</td>
-                                            <td
-                                                style={{
-                                                    width: '38%',
-                                                }}
-                                            >
-                                                {awayTeam}
-                                            </td>
+                                            <td>{awayTeam}</td>
                                         </tr>
                                     </tbody>
                                 );
