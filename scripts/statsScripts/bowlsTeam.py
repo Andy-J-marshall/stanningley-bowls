@@ -1,10 +1,33 @@
 import re
-from teamDetails import *
-from teamStatsHelper import *
-from sanityChecks import *
-from utils import *
-from statsHelper import *
-from playerStatsHelper import *
+from teamDetails import teamNames, teamDays, players, displayTeamName
+from teamStatsHelper import (
+    findHomeAndAwayTeamGameRows,
+    isCupGame,
+    returnTeamScoreRowDownNumber,
+    returnBaseRowDownNumber,
+    returnAggRowDownNumber,
+    returnAdjustedRowNumberFor6PlayerTeams,
+)
+from sanityChecks import (
+    checksTeamStats,
+    checkPlayerStats,
+    checkTeamName,
+    checkFileSizeHasGrown,
+    getFileSize,
+    validatePlayerNotProcessedTwice,
+)
+from utils import findEndRowOfFile, returnFileSize, returnTodayDate, saveFile, year
+from statsHelper import (
+    findCupGameRows,
+    removeSuffixFromTeamName,
+    returnTeamNameToStoreData,
+    returnTeamNameForLeague,
+)
+from playerStatsHelper import (
+    returnListOfPlayerStats,
+    returnHomeAndAwayPlayerRowsForTeam,
+    calculatePlayerStats,
+)
 
 playerStats = returnListOfPlayerStats(teamDays, True, players)
 teamsProcessed = []
@@ -109,9 +132,7 @@ for team in teamDays:
             if rowNumber in homeRows:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
                 opponent = opponent.replace("&amp;", "&").strip()
-                result = (
-                    f"{teamNameToUse} {homeScore} - {awayScore} {opponent}"
-                )
+                result = f"{teamNameToUse} {homeScore} - {awayScore} {opponent}"
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGameBool:
