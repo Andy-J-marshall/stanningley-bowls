@@ -45,10 +45,10 @@ function Results(props: ResultsProps) {
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
-                                    <th>home</th>
+                                    <th className="result-column">home</th>
                                     <th></th>
                                     <th></th>
-                                    <th>away</th>
+                                    <th className="result-column">away</th>
                                 </tr>
                             </thead>
                             {team.results.map((result, idx) => {
@@ -66,7 +66,7 @@ function Results(props: ResultsProps) {
                                     <tbody key={idx}>
                                         <tr>
                                             <td>{homeTeam}</td>
-                                            <td className="result-column">
+                                            <td className="result-central-column">
                                                 {result.home.score}
                                             </td>
                                             <td>{result.away.score}</td>

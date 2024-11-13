@@ -19,10 +19,10 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                            <th>player</th>
+                            <th className="result-column">player</th>
                             <th></th>
                             <th></th>
-                            <th>opponent</th>
+                            <th className="result-column">opponent</th>
                         </tr>
                     </thead>
                     {structuredResultsArray.map((result, idx) => {
@@ -33,31 +33,13 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
                         return (
                             <tbody key={idx}>
                                 <tr>
-                                    <td
-                                        style={{
-                                            width: '42%',
-                                        }}
-                                    >
-                                        {player}
-                                    </td>
-
-                                    <td
-                                        style={{
-                                            borderRightStyle: 'solid',
-                                            borderRightColor: 'black',
-                                        }}
-                                    >
+                                    <td>{player}</td>
+                                    <td className="result-central-column">
                                         {teamScore}
                                     </td>
                                     <td>{opponentScore}</td>
 
-                                    <td
-                                        style={{
-                                            width: '42%',
-                                        }}
-                                    >
-                                        {opponent}
-                                    </td>
+                                    <td>{opponent}</td>
                                 </tr>
                             </tbody>
                         );

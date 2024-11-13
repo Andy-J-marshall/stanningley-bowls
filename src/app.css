@@ -91,9 +91,13 @@ ul {
   }
 }
 
-.result-column {
+.result-central-column {
   border-right-style: solid;
   border-right-color: black;
+}
+
+.result-column {
+  width: 43%;
 }
 
 .carousel-link {
