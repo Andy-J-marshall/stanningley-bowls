@@ -2,6 +2,7 @@ import { config } from '../config';
 import {
     PlayerResultsStatsFile,
     PlayerStatsSummary,
+    Result,
 } from '../types/interfaces';
 
 export function findBiggestWin(playerResults: string[]): string {
@@ -298,7 +299,7 @@ export function returnStructuredResultsArray(results: string[]) {
         const awayScore = awayScoreMatch ? awayScoreMatch[0].trim() : '';
         const awayPlayer = awayPart.split(/[0-9]+/g)[1].trim();
 
-        return {
+        const structuredResult: Result = {
             home: {
                 name: homePlayer,
                 score: homeScore,
@@ -308,7 +309,10 @@ export function returnStructuredResultsArray(results: string[]) {
                 score: awayScore,
             },
         };
+
+        return structuredResult;
     });
+
     return resultsArray;
 }
 

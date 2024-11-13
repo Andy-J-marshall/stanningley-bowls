@@ -337,6 +337,17 @@ export interface TeamResultsStatsFile {
     results: string[];
 }
 
+export interface Result {
+    home: {
+        name: string;
+        score: string;
+    };
+    away: {
+        name: string;
+        score: string;
+    };
+}
+
 export interface TeamRecords {
     [key: string]: RecordStats;
 }
