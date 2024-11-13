@@ -124,8 +124,8 @@ def calculatePlayerStats(
         # Store player stats
         playerNameForResult = playerName
         if pairsGame:
-            playerNameForResult = playerName + " & " + pairsPartner
-            opponentsName = opponentsName + " & " + secondOpponent
+            playerNameForResult = f"{playerName} & {pairsPartner}"
+            opponentsName += f" & {secondOpponent}"
             playerStats[playerName][
                 "availablePairsAgg"
             ] += statsHelper.returnTotalAggAvailablePerGame(team)
@@ -135,13 +135,7 @@ def calculatePlayerStats(
         playerStats[playerName]["totalGamesPlayed"] += 1
 
         playersResult = (
-            playerNameForResult
-            + " "
-            + str(aggregate)
-            + " - "
-            + str(opponentAggregate)
-            + " "
-            + opponentsName
+            f"{playerNameForResult} {aggregate} - {opponentAggregate} {opponentsName}"
         )
         playerStats[playerName]["results"].append(playersResult)
 
