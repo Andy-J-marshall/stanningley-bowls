@@ -25,7 +25,7 @@ export class PlayerStatsPage {
     private readonly totalWins: Locator;
     private readonly totalLosses: Locator;
     private readonly totalAverage: Locator;
-    private readonly teamSwitch: Locator;
+    private readonly clubSwitch: Locator;
     private readonly allYearSwitch: Locator;
     private readonly singlesOnlyRadio: Locator;
     private readonly pairsOnlyRadio: Locator;
@@ -63,8 +63,8 @@ export class PlayerStatsPage {
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-        this.teamSwitch = page.locator(
-            ".form-check input[id='#all-stats-select-switch']"
+        this.clubSwitch = page.locator(
+            ".form-check input[id='#all-club-stats-select-switch']"
         );
         this.singlesOnlyRadio = page.locator(
             ".form-check input[id='#only-singles-radio']"
@@ -149,12 +149,12 @@ export class PlayerStatsPage {
         await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     }
 
-    async selectAllTeamStatsSwitch() {
-        await this.teamSwitch.check();
+    async selectAllClubStatsSwitch() {
+        await this.clubSwitch.check();
     }
 
-    async deselectTeamStatsSwitch() {
-        await this.teamSwitch.uncheck();
+    async deselectClubStatsSwitch() {
+        await this.clubSwitch.uncheck();
     }
 
     async selectSinglesOnlyRadio() {
@@ -185,16 +185,16 @@ export class PlayerStatsPage {
         await this.allVenuesRadio.check();
     }
 
-    async selectSince2013Switch() {
+    async selectAllYearsSwitch() {
         await this.allYearSwitch.check();
     }
 
-    async deselectSince2013Switch() {
+    async deselectAllYearsSwitch() {
         await this.allYearSwitch.uncheck();
     }
 
     async optionsAreDisabledWhenSelectingSpecificTeam() {
-        await expect(this.teamSwitch).toBeDisabled();
+        await expect(this.clubSwitch).toBeDisabled();
         await expect(this.singlesOnlyRadio).toBeDisabled();
         await expect(this.pairsOnlyRadio).toBeDisabled();
         await expect(this.allGameTypesRadio).toBeDisabled();

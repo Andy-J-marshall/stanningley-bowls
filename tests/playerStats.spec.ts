@@ -112,14 +112,14 @@ test('Summary of Andy Marshall stats for team with filters are correct', async (
 test('Summary of Dave Hudson stats since 2013 for team are correct', async () => {
     playerStatsPage.setPlayerToFind('dave hudson');
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
     playerStatsPage.playerStatsAreCorrectInTable(385, 147, '38%', -2.34);
 });
 
 test('Detailed player stats for all years for Dave Hudson', async () => {
     const player = 'Dave Hudson';
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
     await playerStatsPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
@@ -139,7 +139,7 @@ test('Detailed player stats for all years for Dave Hudson', async () => {
 test('Summary of Bernie Miller stats since 2013 for team are correct', async () => {
     playerStatsPage.setPlayerToFind('bernie miller');
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
     playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -172,7 +172,7 @@ test('Can filter for team specific stats in 2013', async () => {
 test('Can filter for team specific stats for all years', async () => {
     playerStatsPage.setPlayerToFind('adam sandilands');
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
 
     await playerStatsPage.selectTeamFromDropdown('Monday Airewharfe (B)');
     playerStatsPage.playerStatsAreCorrectInTable(60, 20, '33%', -4.03);

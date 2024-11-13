@@ -25,7 +25,7 @@ const players: Array<string> = [
 for (const player of players) {
     test(`Summary of player's all team stats are correct for ${player} in 2023`, async () => {
         await yearSelectPage.select2023Year();
-        await playerStatsPage.selectAllTeamStatsSwitch();
+        await playerStatsPage.selectAllClubStatsSwitch();
         await playerStatsPage.searchForPlayer(player);
         await playerStatsPage.checkTeamAccordionHeadersNotExists();
         const {
@@ -56,19 +56,19 @@ test('Can switch between team and all stats', async () => {
     const player = 'Clifford Brogie';
 
     await yearSelectPage.select2023Year();
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersNotExists();
 
     await playerStatsPage.clickBackToSummary();
-    await playerStatsPage.deselectTeamStatsSwitch();
+    await playerStatsPage.deselectClubStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
 });
 
 test('Summary of Jim Moorin stats for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('jim moorin');
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
 
     await yearSelectPage.select2023Year();
     playerStatsPage.playerStatsAreCorrectInTable(111, 66, '59%', 2.23);
@@ -79,7 +79,7 @@ test('Summary of Jim Moorin stats for all teams is correct', async () => {
 
 test('Summary of Richard Hodgson stats for all teams with filters are correct', async () => {
     playerStatsPage.setPlayerToFind('richard hodgson');
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
     await yearSelectPage.select2023Year();
 
     // All venues
@@ -89,16 +89,16 @@ test('Summary of Richard Hodgson stats for all teams with filters are correct', 
     playerStatsPage.playerStatsAreCorrectInTable(55, 32, '58%', 1.96);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(3, 1, '33%', 0.00);
+    playerStatsPage.playerStatsAreCorrectInTable(3, 1, '33%', 0.0);
 
     // Home only
     await playerStatsPage.selectHomeOnlyRadio();
 
     await playerStatsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.90);
+    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
 
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.90);
+    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
 
     // Away only
     await playerStatsPage.selectAwayOnlyRadio();
@@ -116,18 +116,18 @@ test('Summary of Richard Hodgson stats for all teams with filters are correct', 
     await playerStatsPage.selectCupOnlyRadio();
 
     await playerStatsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.50);
+    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
 
     await playerStatsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 8.00);
+    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 8.0);
 
     await playerStatsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 11.00);
+    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 11.0);
 });
 
 test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('neil porter');
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
     await yearSelectPage.select2023Year();
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -142,17 +142,17 @@ test('Summary of Neil Porter stats for singles and pairs games for all teams is 
 
 test('Summary of Dave Hudson stats since 2013 for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('dave hudson');
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
     playerStatsPage.playerStatsAreCorrectInTable(463, 174, '38%', -2.48);
 });
 
 test('Detailed player stats for all teams and years for Dave Hudson', async () => {
     const player = 'Dave Hudson';
 
-    await playerStatsPage.selectSince2013Switch();
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllYearsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
@@ -171,9 +171,9 @@ test('Detailed player stats for all teams and years for Dave Hudson', async () =
 
 test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('bernie miller');
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
 
-    await playerStatsPage.selectSince2013Switch();
+    await playerStatsPage.selectAllYearsSwitch();
     playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
 
     await playerStatsPage.selectSinglesOnlyRadio();
@@ -185,7 +185,7 @@ test('Summary of Bernie Miller stats since 2013 for all teams is correct', async
 
 test('Team select dropdown is disabled when include other teams switch is enabled', async () => {
     await yearSelectPage.select2023Year();
-    await playerStatsPage.selectAllTeamStatsSwitch();
+    await playerStatsPage.selectAllClubStatsSwitch();
 
     await playerStatsPage.teamSelectDropDownIsDisabled();
 });

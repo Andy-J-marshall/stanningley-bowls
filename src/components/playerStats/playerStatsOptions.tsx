@@ -166,10 +166,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 <Form.Check
                                     inline
                                     key={crypto.randomUUID()}
-                                    id="#all-stats-select-switch"
+                                    id="#all-club-stats-select-switch"
                                     onChange={toggleOtherTeamStats}
                                     type="switch"
-                                    label="Include other teams"
+                                    label="Include other clubs"
                                     checked={allTeamsToggle}
                                     disabled={disableOtherOptions}
                                 />
