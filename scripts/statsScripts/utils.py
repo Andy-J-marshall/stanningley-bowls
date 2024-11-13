@@ -7,9 +7,7 @@ year = str(date.today().year)
 
 
 def findEndRowOfFile(league, allRowsInFile):
-    endRow = 0
-    for rowNumber, line in enumerate(allRowsInFile, start=0):
-        endRow = rowNumber
+    endRow = len(allRowsInFile)
 
     if endRow == 0:
         raise Exception(league + ": Report file is empty")
