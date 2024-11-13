@@ -1,5 +1,5 @@
 import { CSSProperties, useState } from 'react';
-import { Button, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../../helpers/utils';
 import {
     PlayerStatsTeamSummary,
@@ -7,6 +7,7 @@ import {
 } from '../../types/interfaces';
 import { orderBy } from '../../helpers/statsHelper';
 import { returnPlayerSummaryDisplayStats } from '../../helpers/playerStatsSummaryHelper';
+import OrderByButton from './orderByButton';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const playerStats = props.playerStats;
@@ -232,74 +233,34 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
                     <thead>
                         <tr>
                             <th>
-                                <Button
-                                    id="order-by-name-button"
-                                    variant="light"
-                                    onClick={orderByName}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    player
-                                </Button>
+                                <OrderByButton
+                                    name="name"
+                                    orderByCallback={orderByName}
+                                />
                             </th>
                             <th>
-                                <Button
-                                    id="order-by-games-button"
-                                    variant="light"
-                                    onClick={orderByGames}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    games
-                                </Button>
+                                <OrderByButton
+                                    name="games"
+                                    orderByCallback={orderByGames}
+                                />
                             </th>
                             <th>
-                                <Button
-                                    id="order-by-wins-button"
-                                    variant="light"
-                                    onClick={orderByWins}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    wins
-                                </Button>
+                                <OrderByButton
+                                    name="wins"
+                                    orderByCallback={orderByWins}
+                                />
                             </th>
                             <th>
-                                <Button
-                                    id="order-by-win%-button"
-                                    variant="light"
-                                    onClick={orderByWinPerc}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    win %
-                                </Button>
+                                <OrderByButton
+                                    name="win %"
+                                    orderByCallback={orderByWinPerc}
+                                />
                             </th>
                             <th>
-                                <Button
-                                    id="order-by-avg-button"
-                                    variant="light"
-                                    onClick={orderByAverage}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        border: 'none',
-                                        padding: '0',
-                                    }}
-                                >
-                                    average
-                                </Button>
+                                <OrderByButton
+                                    name="average"
+                                    orderByCallback={orderByAverage}
+                                />
                             </th>
                         </tr>
                     </thead>

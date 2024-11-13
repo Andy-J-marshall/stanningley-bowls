@@ -260,6 +260,11 @@ export type NewsItemProps = {
     imgSrc: string;
 };
 
+export interface orderByButtonProps {
+    name: string;
+    orderByCallback: () => void;
+}
+
 export interface PlayerStatsTeamsProps {
     stats: {
         allTeamStats: {
