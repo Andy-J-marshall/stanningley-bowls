@@ -2,7 +2,7 @@ import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { capitalizeText } from '../../helpers/utils';
 import { PlayerStatsComponentsProps } from '../../types/interfaces';
-import { returnStructuredResultsArray } from '../../helpers/playerStatsHelper';
+import { returnStructuredResultsArray } from '../../helpers/resultsHelper';
 
 function PlayerStatsResults(props: PlayerStatsComponentsProps) {
     const stats = props.stats;
@@ -15,6 +15,7 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
         <Accordion.Item eventKey="5">
             <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
             <Accordion.Body style={{ padding: '0' }}>
+                {/* TODO create a component for this and results? */}
                 <Table striped bordered hover>
                     <thead>
                         <tr>

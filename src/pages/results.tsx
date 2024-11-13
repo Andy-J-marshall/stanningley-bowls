@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import { config } from '../config';
-import { ResultsProps, Result } from '../types/interfaces';
-import { returnStructuredResultsArray } from '../helpers/playerStatsHelper';
+import { ResultsProps } from '../types/interfaces';
+import { returnResultsArrayForTeamsWithGames } from '../helpers/resultsHelper';
 
 const teamName = config.teamNames.shortName.toLowerCase();
 const currentYear = new Date().getFullYear();
@@ -20,19 +20,7 @@ function Results(props: ResultsProps) {
         window.scrollTo(0, 0);
     });
 
-    const allTeamResultsArray = teamResults?.map((team) => {
-        const results: Result[] = returnStructuredResultsArray(team.results);
-        return {
-            name: config.allTeamsInLeaguesSince2013.find((t) =>
-                t.toLowerCase().includes(team.day.toLowerCase())
-            ),
-            results,
-        };
-    });
-
-    const resultsArray = allTeamResultsArray?.filter(
-        (team) => team?.results?.length > 0
-    );
+    const resultsArray = returnResultsArrayForTeamsWithGames(teamResults);
 
     const hasResults = resultsArray && resultsArray?.length > 0;
 
@@ -66,22 +54,12 @@ function Results(props: ResultsProps) {
                             {team.results.map((result, idx) => {
                                 let homeTeam = result.home.name;
                                 if (homeTeam.toLowerCase().includes(teamName)) {
-                                    if (homeTeam.endsWith(' A')) {
-                                        homeTeam = `${teamName.toUpperCase()} A`;
-                                    }
-                                    if (homeTeam.endsWith(' B')) {
-                                        homeTeam = `${teamName.toUpperCase()} B`;
-                                    }
+                                    homeTeam = homeTeam.toUpperCase();
                                 }
 
                                 let awayTeam = result.away.name;
                                 if (awayTeam.toLowerCase().includes(teamName)) {
-                                    if (awayTeam.endsWith(' A')) {
-                                        awayTeam = `${teamName.toUpperCase()} A`;
-                                    }
-                                    if (awayTeam.endsWith(' B')) {
-                                        awayTeam = `${teamName.toUpperCase()} B`;
-                                    }
+                                    awayTeam = awayTeam.toUpperCase();
                                 }
 
                                 return (
