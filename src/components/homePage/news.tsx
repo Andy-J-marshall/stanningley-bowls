@@ -22,9 +22,11 @@ function News() {
                     imgSrc={ladiesTeamImage}
                 />
                 <NewsItem
-                    title="AGM DATE"
-                    openingLine="The 2024 AGM will be at 11am on the 9th November at Stanningley Park Bowling Club."
-                    mainText="If you have any proposals then contact a member of the committee before the 6th November."
+                    title="AGM"
+                    openingLine="The 2024 AGM was held on the 9th November."
+                    mainText="The club has decided to enter the AireWharfe league on a Monday evening instead of the Leeds Combined league.
+                    The team captains remain the same as last year, with Nicola Bona being chosen to captain the new ladies team on a Thursday, 
+                    and Stuart Potter was voted onto the committee."
                     imgSrc={agmImage}
                 />
             </Row>
