@@ -66,26 +66,22 @@ function Results(props: ResultsProps) {
                             {team.results.map((result, idx) => {
                                 let homeTeam = result.home.name;
                                 if (homeTeam.toLowerCase().includes(teamName)) {
-                                    let aOrBHome = '';
                                     if (homeTeam.endsWith(' A')) {
-                                        aOrBHome = ' A';
+                                        homeTeam = `${teamName.toUpperCase()} A`;
                                     }
                                     if (homeTeam.endsWith(' B')) {
-                                        aOrBHome = ' B';
+                                        homeTeam = `${teamName.toUpperCase()} B`;
                                     }
-                                    homeTeam = `${teamName.toUpperCase()}${aOrBHome}`;
                                 }
 
                                 let awayTeam = result.away.name;
                                 if (awayTeam.toLowerCase().includes(teamName)) {
-                                    let aOrBAway = '';
                                     if (awayTeam.endsWith(' A')) {
-                                        aOrBAway = ' A';
+                                        awayTeam = `${teamName.toUpperCase()} A`;
                                     }
                                     if (awayTeam.endsWith(' B')) {
-                                        aOrBAway = ' B';
+                                        awayTeam = `${teamName.toUpperCase()} B`;
                                     }
-                                    awayTeam = `${teamName.toUpperCase()}${aOrBAway}`;
                                 }
 
                                 return (
