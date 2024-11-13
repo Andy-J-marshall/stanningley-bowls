@@ -65,8 +65,6 @@ function Results(props: ResultsProps) {
                             </thead>
                             {team.results.map((result, idx) => {
                                 let homeTeam = result.home.name;
-                                let awayTeam = result.away.name;
-
                                 if (homeTeam.toLowerCase().includes(teamName)) {
                                     let aOrBHome = '';
                                     if (homeTeam.endsWith(' A')) {
@@ -78,6 +76,7 @@ function Results(props: ResultsProps) {
                                     homeTeam = `${teamName.toUpperCase()}${aOrBHome}`;
                                 }
 
+                                let awayTeam = result.away.name;
                                 if (awayTeam.toLowerCase().includes(teamName)) {
                                     let aOrBAway = '';
                                     if (awayTeam.endsWith(' A')) {
