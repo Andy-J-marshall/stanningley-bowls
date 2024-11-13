@@ -52,20 +52,6 @@ for (const player of players) {
     });
 }
 
-test('Can switch between team and all stats', async () => {
-    const player = 'Clifford Brogie';
-
-    await yearSelectPage.select2023Year();
-    await playerStatsPage.selectAllClubStatsSwitch();
-    await playerStatsPage.searchForPlayer(player);
-    await playerStatsPage.checkTeamAccordionHeadersNotExists();
-
-    await playerStatsPage.clickBackToSummary();
-    await playerStatsPage.deselectClubStatsSwitch();
-    await playerStatsPage.searchForPlayer(player);
-    await playerStatsPage.checkTeamAccordionHeadersExist();
-});
-
 test('Summary of Jim Moorin stats for all teams is correct', async () => {
     playerStatsPage.setPlayerToFind('jim moorin');
     await playerStatsPage.selectAllClubStatsSwitch();

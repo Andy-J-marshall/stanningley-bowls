@@ -8,7 +8,18 @@ export interface PlayerStatsToCheck {
 }
 
 export class PlayerStatsPage {
-    private readonly page: Page;
+    public readonly page: Page;
+    public readonly clubSwitch: Locator;
+    public readonly allYearSwitch: Locator;
+    public readonly singlesOnlyRadio: Locator;
+    public readonly pairsOnlyRadio: Locator;
+    public readonly allGameTypesRadio: Locator;
+    public readonly homeOnlyRadio: Locator;
+    public readonly awayOnlyRadio: Locator;
+    public readonly cupOnlyRadio: Locator;
+    public readonly allVenuesRadio: Locator;
+    public readonly teamSelectDropdown: Locator;
+
     private readonly backButton: Locator;
     private readonly searchBar: Locator;
     private readonly playerListInDropdown: Locator;
@@ -25,16 +36,6 @@ export class PlayerStatsPage {
     private readonly totalWins: Locator;
     private readonly totalLosses: Locator;
     private readonly totalAverage: Locator;
-    private readonly clubSwitch: Locator;
-    private readonly allYearSwitch: Locator;
-    private readonly singlesOnlyRadio: Locator;
-    private readonly pairsOnlyRadio: Locator;
-    private readonly allGameTypesRadio: Locator;
-    private readonly homeOnlyRadio: Locator;
-    private readonly awayOnlyRadio: Locator;
-    private readonly cupOnlyRadio: Locator;
-    private readonly allVenuesRadio: Locator;
-    private readonly teamSelectDropdown: Locator;
 
     private games: Locator;
     private wins: Locator;
