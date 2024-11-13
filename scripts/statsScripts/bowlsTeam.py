@@ -1,45 +1,49 @@
 import re
-import teamDetails
-import teamStatsHelper
-import sanityChecks
-import utils
-import statsHelper
-import playerStatsHelper
+from teamDetails import *
+from teamStatsHelper import *
+from sanityChecks import *
+from utils import *
+from statsHelper import *
+from playerStatsHelper import *
 
-playerStats = playerStatsHelper.returnListOfPlayerStats(teamDetails.teamDays, True, teamDetails.players)
+playerStats = returnListOfPlayerStats(teamDays, True, players)
 teamsProcessed = []
 allTeamResults = []
 
-print('UPDATING STATS:', teamDetails.teamNames[0].upper())
+print("UPDATING STATS:", teamNames[0].upper())
 
-for team in teamDetails.teamDays:
-    print('Updating Stats: ' + team)
-    
-    league = statsHelper.removeSuffixFromTeamName(team)
-     # this is to store first team data under the old name, to help with backward compatibility
-    teamNameToStoreData = statsHelper.returnTeamNameToStoreData(team)
+for team in teamDays:
+    print("Updating Stats: " + team)
+
+    league = removeSuffixFromTeamName(team)
+    # this is to store first team data under the old name, to help with backward compatibility
+    teamNameToStoreData = returnTeamNameToStoreData(team)
 
     if team in teamsProcessed:
-        raise Exception('team is being processed twice: ' + team)
+        raise Exception("team is being processed twice: " + team)
     teamsProcessed.append(team)
-    
-    with open('bowlsnetReports/' + utils.year + '/' + league + '.txt', 'r') as file:
+
+    with open("bowlsnetReports/" + year + "/" + league + ".txt", "r") as file:
         allRowsInFile = file.readlines()
 
         # Find the number of rows in the file
-        endRow = utils.findEndRowOfFile(league, allRowsInFile)
-        
+        endRow = findEndRowOfFile(league, allRowsInFile)
+
         # Find team name used by team in this league
-        teamNameUsedForLeague, teamNameToUse = statsHelper.returnTeamNameForLeague(allRowsInFile, team)
-    
-        sanityChecks.checkTeamName(team, teamNameUsedForLeague, teamDetails.displayTeamName)        
+        teamNameUsedForLeague, teamNameToUse = returnTeamNameForLeague(
+            allRowsInFile, team
+        )
+
+        checkTeamName(team, teamNameUsedForLeague, displayTeamName)
 
         # Find the cup games in the stats
-        cupGameRows = statsHelper.findCupGameRows(allRowsInFile, endRow)
+        cupGameRows = findCupGameRows(allRowsInFile, endRow)
 
         #### TEAM STATS ####
         # Find team's home and away games
-        homeRows, awayRows = teamStatsHelper.findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague)
+        homeRows, awayRows = findHomeAndAwayTeamGameRows(
+            allRowsInFile, teamNameUsedForLeague
+        )
 
         # Find team results and scores
         awayWins = 0
@@ -59,34 +63,43 @@ for team in teamDetails.teamDays:
 
             # Check if cup game
             cupRow = allRowsInFile[rowNumber - 1]
-            cupGameBool = teamStatsHelper.isCupGame(cupRow)
-            
-            # Find the number of rows down for the team scores                       
-            totalNumberOfRowsAdjustmentInt = teamStatsHelper.returnTeamScoreRowDownNumber(cupGameBool, allRowsInFile, rowNumber, league)
-            
+            cupGameBool = isCupGame(cupRow)
+
+            # Find the number of rows down for the team scores
+            totalNumberOfRowsAdjustmentInt = returnTeamScoreRowDownNumber(
+                cupGameBool, allRowsInFile, rowNumber, league
+            )
+
             # Prevents attempting to process a line that doesn't exist
             if rowNumber + totalNumberOfRowsAdjustmentInt >= endRow:
                 break
-            
+
             # Save the scores
             text = allRowsInFile[rowNumber + totalNumberOfRowsAdjustmentInt]
             if text and type(text) is str:
-                matchScore = re.findall(r'\d+', text)
+                matchScore = re.findall(r"\d+", text)
             if len(matchScore) == 2:
                 homeScore = int(matchScore[0].strip())
                 awayScore = int(matchScore[1].strip())
-                
+
             # Save the aggregates
             if cupGameBool:
                 homeAgg = homeScore
                 awayAgg = awayScore
             else:
-                baseRowDownAdjustment = teamStatsHelper.returnBaseRowDownNumber(False, True)
-                adjustmentForLeagueInt = teamStatsHelper.returnAggRowDownNumber(league)
-                adjustFor6PlayerTeamsInt = teamStatsHelper.returnAdjustedRowNumberFor6PlayerTeams(league, 0)
-                text = allRowsInFile[rowNumber + baseRowDownAdjustment + adjustmentForLeagueInt - adjustFor6PlayerTeamsInt]
+                baseRowDownAdjustment = returnBaseRowDownNumber(False, True)
+                adjustmentForLeagueInt = returnAggRowDownNumber(league)
+                adjustFor6PlayerTeamsInt = returnAdjustedRowNumberFor6PlayerTeams(
+                    league, 0
+                )
+                text = allRowsInFile[
+                    rowNumber
+                    + baseRowDownAdjustment
+                    + adjustmentForLeagueInt
+                    - adjustFor6PlayerTeamsInt
+                ]
                 if text and type(text) is str:
-                    matchAgg = re.findall(r'\d+', text)
+                    matchAgg = re.findall(r"\d+", text)
                 if len(matchAgg) == 2:
                     homeAgg = int(matchAgg[0].strip())
                     awayAgg = int(matchAgg[1].strip())
@@ -95,10 +108,10 @@ for team in teamDetails.teamDays:
             rowText = allRowsInFile[rowNumber]
             if rowNumber in homeRows:
                 opponent = rowText.split(teamNameUsedForLeague)[1]
-                opponent = opponent.replace('&amp;', '&').strip()
-                result = teamNameToUse + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + opponent
+                opponent = opponent.replace("&amp;", "&").strip()
+                result = (
+                    f"{teamNameToUse} {homeScore} - {awayScore} {opponent}"
+                )
                 results.append(result)
                 if homeScore > awayScore:
                     if cupGameBool:
@@ -118,10 +131,8 @@ for team in teamDetails.teamDays:
             # Away games
             if rowNumber in awayRows:
                 opponent = rowText.split(teamNameUsedForLeague)[0]
-                opponent = opponent.replace('&amp;', '&').strip()
-                result = opponent + ' ' + \
-                    str(homeScore) + ' - ' + str(awayScore) + \
-                    ' ' + teamNameToUse
+                opponent = opponent.replace("&amp;", "&").strip()
+                result = f"{opponent} {homeScore} - {awayScore} {teamNameToUse}"
                 results.append(result)
                 if awayScore > homeScore:
                     if cupGameBool:
@@ -140,30 +151,41 @@ for team in teamDetails.teamDays:
 
         # Store team result data
         teamResults = {
-            'day': teamNameToStoreData,
-            'awayWins': awayWins,
-            'homeWins': homeWins,
-            'wins': awayWins + homeWins + cupWins,
-            'awayLosses': awayLosses,
-            'homeLosses': homeLosses,
-            'homeDraws': homeDraws,
-            'awayDraws': awayDraws,
-            'draws': homeDraws + awayDraws,
-            'cupWins': cupWins,
-            'cupLosses': cupLosses,
-            'losses': homeLosses + awayLosses + cupLosses,
-            'totalGamesPlayed': awayWins + homeWins + cupWins + awayLosses + homeLosses + cupLosses + awayDraws + homeDraws,
-            'agg': teamAgg,
-            'opponentAgg': opponentAgg,
-            'results': results
+            "day": teamNameToStoreData,
+            "awayWins": awayWins,
+            "homeWins": homeWins,
+            "wins": awayWins + homeWins + cupWins,
+            "awayLosses": awayLosses,
+            "homeLosses": homeLosses,
+            "homeDraws": homeDraws,
+            "awayDraws": awayDraws,
+            "draws": homeDraws + awayDraws,
+            "cupWins": cupWins,
+            "cupLosses": cupLosses,
+            "losses": homeLosses + awayLosses + cupLosses,
+            "totalGamesPlayed": awayWins
+            + homeWins
+            + cupWins
+            + awayLosses
+            + homeLosses
+            + cupLosses
+            + awayDraws
+            + homeDraws,
+            "agg": teamAgg,
+            "opponentAgg": opponentAgg,
+            "results": results,
         }
         allTeamResults.append(teamResults)
-        
+
         #### PLAYER STATS ####
-        
+
         # Find rows in spreadsheet for players' games
-        homePlayerRows, awayPlayerRows, combinedRows = playerStatsHelper.returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league)
-        
+        homePlayerRows, awayPlayerRows, combinedRows = (
+            returnHomeAndAwayPlayerRowsForTeam(
+                allRowsInFile, teamNameUsedForLeague, league
+            )
+        )
+
         # Find each players' results
         for rowNumber in sorted(combinedRows):
             # reset variable values
@@ -190,25 +212,36 @@ for team in teamDetails.teamDays:
                     awayGame = True
 
             # Find result details
-            playerStatsHelper.calculatePlayerStats(playerStats, allRowsInFile, rowNumber, team, homeGame, awayGame, cupHome, cupAway, cupGameBool, True)
+            calculatePlayerStats(
+                playerStats,
+                allRowsInFile,
+                rowNumber,
+                team,
+                homeGame,
+                awayGame,
+                cupHome,
+                cupAway,
+                cupGameBool,
+                True,
+            )
 
-            sanityChecks.validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
+            validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
     file.close()
 
 # Create JSON file
 dataToExport = {
-    'playerResults': playerStats,
-    'teamResults': allTeamResults,
-    'lastUpdated': utils.returnTodayDate(),
-    'statsYear': utils.year,
+    "playerResults": playerStats,
+    "teamResults": allTeamResults,
+    "lastUpdated": returnTodayDate(),
+    "statsYear": year,
 }
 
-filename = 'src/data/bowlsStats' + utils.year + '.json'
-previousFileSize = utils.returnFileSize(filename)
-utils.saveFile(filename, dataToExport)
+filename = "src/data/bowlsStats" + year + ".json"
+previousFileSize = returnFileSize(filename)
+saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-sanityChecks.checksTeamStats(allTeamResults)
-sanityChecks.checkPlayerStats(playerStats, teamDetails.players)
-newFileSize = sanityChecks.getFileSize(filename)
-sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)
+checksTeamStats(allTeamResults)
+checkPlayerStats(playerStats, players)
+newFileSize = getFileSize(filename)
+checkFileSizeHasGrown(previousFileSize, newFileSize)

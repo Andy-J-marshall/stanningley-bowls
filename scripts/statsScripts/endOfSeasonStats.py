@@ -2,11 +2,11 @@ from pathlib import Path
 import json
 import utils
 
-path = str(Path.cwd()) + '/src/data/bowlsStats' + utils.year + '.json'
+path = str(Path.cwd()) + "/src/data/bowlsStats" + utils.year + ".json"
 data = open(path)
 jsonStats = json.load(data)
 
-playerStats = jsonStats['playerResults']
+playerStats = jsonStats["playerResults"]
 
 totalSinglesGames = 0
 totalPairsGames = 0
@@ -17,21 +17,21 @@ nillingsInPairs = 0
 
 for player in playerStats.keys():
 
-    results = playerStats[player]['results']
+    results = playerStats[player]["results"]
     for result in results:
-        opponentPart = result.split(' - ')[1]
-        opponentScore = int(opponentPart.split(' ')[0])
+        opponentPart = result.split(" - ")[1]
+        opponentScore = int(opponentPart.split(" ")[0])
 
         if "&" in result:
             totalPairsGames += 1
             if opponentScore < 10 and opponentScore >= 0:
-                singleFigureWinsInPairs +=1
+                singleFigureWinsInPairs += 1
                 if opponentScore == 0:
                     nillingsInPairs += 1
         else:
             totalSinglesGames += 1
             if opponentScore < 10 and opponentScore >= 0:
-                singleFigureWinsInSingles +=1
+                singleFigureWinsInSingles += 1
                 if opponentScore == 0:
                     nillingsInSingles += 1
 
@@ -45,7 +45,7 @@ singleFigureWinsTotal = singleFigureWinsInSingles + singleFigureWinsInPairs
 totalNillings = nillingsInSingles + nillingsInPairs
 
 print(utils.year + " end of season stats")
-print('========================')
+print("========================")
 print("total games played: " + str(totalGames))
 print("Total single figure winners: " + str(singleFigureWinsTotal))
 print("Total nillings: " + str(totalNillings))

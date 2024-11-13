@@ -1,49 +1,51 @@
-import teamDetails
-import sanityChecks
-import utils
-import statsHelper
-import playerStatsHelper
+from teamDetails import *
+from sanityChecks import *
+from utils import *
+from statsHelper import *
+from playerStatsHelper import *
 
-playerStats = playerStatsHelper.returnListOfPlayerStats(teamDetails.allDays, False, teamDetails.players)
+playerStats = returnListOfPlayerStats(allDays, False, players)
 leaguesProcessed = []
 
-print('UPDATING ALL PLAYER STATS')
+print("UPDATING ALL PLAYER STATS")
 
-for league in teamDetails.allDays:
+for league in allDays:
     # To prevent duplication
-    league = statsHelper.removeSuffixFromTeamName(league)
+    league = removeSuffixFromTeamName(league)
     if league in leaguesProcessed:
         continue
     leaguesProcessed.append(league)
 
     # Goes through each sheet in turn
-    with open('bowlsnetReports/' + utils.year + '/' + league + '.txt', 'r') as file:
-        print('Updating Stats: ' + league)
+    with open("bowlsnetReports/" + year + "/" + league + ".txt", "r") as file:
+        print("Updating Stats: " + league)
         allRowsInFile = file.readlines()
 
         # Find the number of rows in the file
-        endRow = utils.findEndRowOfFile(league, allRowsInFile)
+        endRow = findEndRowOfFile(league, allRowsInFile)
 
         # Find the cup games in the stats
-        cupGameRows = statsHelper.findCupGameRows(allRowsInFile, endRow)
+        cupGameRows = findCupGameRows(allRowsInFile, endRow)
 
         # Find rows in spreadsheet for players' games
-        homePlayerRow, awayPlayerRow = playerStatsHelper.returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile)
+        homePlayerRow, awayPlayerRow = returnHomeAndAwayPlayerRowsForAllTeams(
+            allRowsInFile
+        )
 
         # Find each players' results
         for rowNumber in range(0, endRow + 1):
             # Create list as players may be playing against one another
             playerRows = []
             playerToProcess = False
-            
+
             if rowNumber in homePlayerRow:
                 playerToProcess = True
-                playerRows.append('home')
+                playerRows.append("home")
 
             if rowNumber in awayPlayerRow:
                 playerToProcess = True
-                playerRows.append('away')
-            
+                playerRows.append("away")
+
             if playerToProcess is False:
                 continue
 
@@ -59,39 +61,52 @@ for league in teamDetails.allDays:
                 # Find columns
                 if rowNumber in cupGameRows:
                     cupGameBool = True
-                    if homeOrAway == 'home':
+                    if homeOrAway == "home":
                         cupHome = True
-                    if homeOrAway == 'away':
+                    if homeOrAway == "away":
                         cupAway = True
 
-                if homeOrAway == 'home':
+                if homeOrAway == "home":
                     if not cupGameBool:
                         homeGame = True
 
-                if homeOrAway == 'away':
+                if homeOrAway == "away":
                     if not cupGameBool:
                         awayGame = True
 
                 # Checks player plays for expected team
-                correctPlayerFound = playerStatsHelper.checkCorrectTeamForPlayer(allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway)
+                correctPlayerFound = checkCorrectTeamForPlayer(
+                    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
+                )
 
                 # Find result details
                 if correctPlayerFound:
-                   playerStatsHelper.calculatePlayerStats(playerStats, allRowsInFile, rowNumber, league, homeGame, awayGame, cupHome, cupAway, cupGameBool, False)
+                    calculatePlayerStats(
+                        playerStats,
+                        allRowsInFile,
+                        rowNumber,
+                        league,
+                        homeGame,
+                        awayGame,
+                        cupHome,
+                        cupAway,
+                        cupGameBool,
+                        False,
+                    )
     file.close()
 
 # Create JSON file
 dataToExport = {
-    'playerResults': playerStats,
-    'lastUpdated': utils.returnTodayDate(),
-    'statsYear': utils.year
+    "playerResults": playerStats,
+    "lastUpdated": returnTodayDate(),
+    "statsYear": year,
 }
 
-filename = 'src/data/allPlayerStats' + utils.year + '.json'
-previousFileSize = utils.returnFileSize(filename)
-utils.saveFile(filename, dataToExport)
+filename = "src/data/allPlayerStats" + year + ".json"
+previousFileSize = returnFileSize(filename)
+saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-sanityChecks.checkPlayerStats(playerStats, teamDetails.players)
-newFileSize = sanityChecks.getFileSize(filename)
-sanityChecks.checkFileSizeHasGrown(previousFileSize, newFileSize)
+checkPlayerStats(playerStats, players)
+newFileSize = getFileSize(filename)
+checkFileSizeHasGrown(previousFileSize, newFileSize)
