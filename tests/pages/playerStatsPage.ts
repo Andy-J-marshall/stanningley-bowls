@@ -7,7 +7,7 @@ export interface PlayerStatsToCheck {
     totalAverage: number;
 }
 
-export class PlayerStatsPage {
+export class IndividualPlayerStatsPage {
     public readonly page: Page;
     private readonly playerStatsItem: Locator;
     private readonly playerStatsRows: Locator;

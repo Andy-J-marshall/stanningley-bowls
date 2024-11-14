@@ -1,21 +1,21 @@
 import { test } from '@playwright/test';
 import allBowlsStats from '../src/data/allPlayerStats2023.json';
-import { PlayerStatsPage } from './pages/playerStatsPage';
+import { IndividualPlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSearchPage } from './pages/playerSearchPage';
 
-let playerStatsPage: PlayerStatsPage;
+let individualPlayerStatsPage: IndividualPlayerStatsPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
-    playerStatsPage = new PlayerStatsPage(page);
+    individualPlayerStatsPage = new IndividualPlayerStatsPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
     playerSearchPage = new PlayerSearchPage(page);
-    await playerStatsPage.goto();
+    await individualPlayerStatsPage.goto();
 });
 
 const players: Array<string> = [
@@ -33,7 +33,7 @@ for (const player of players) {
         await yearSelectPage.select2023Year();
         await statOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
-        await playerStatsPage.checkTeamAccordionHeadersNotExists();
+        await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
         const {
             totalAgg,
             totalAggAgainst,
@@ -54,90 +54,115 @@ for (const player of players) {
             totalLosses,
             totalAverage,
         };
-        await playerStatsPage.validateSummaryStats(stats);
+        await individualPlayerStatsPage.validateSummaryStats(stats);
     });
 }
 
 test('Summary of Jim Moorin stats for all teams is correct', async () => {
-    playerStatsPage.setPlayerToFind('jim moorin');
+    individualPlayerStatsPage.setPlayerToFind('jim moorin');
     await statOptionsPage.selectAllClubStatsSwitch();
 
     await yearSelectPage.select2023Year();
-    playerStatsPage.playerStatsAreCorrectInTable(111, 66, '59%', 2.23);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        111,
+        66,
+        '59%',
+        2.23
+    );
 
     await yearSelectPage.select2022Year();
-    playerStatsPage.playerStatsAreCorrectInTable(114, 83, '73%', 5.57);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        114,
+        83,
+        '73%',
+        5.57
+    );
 });
 
 test('Summary of Richard Hodgson stats for all teams with filters are correct', async () => {
-    playerStatsPage.setPlayerToFind('richard hodgson');
+    individualPlayerStatsPage.setPlayerToFind('richard hodgson');
     await statOptionsPage.selectAllClubStatsSwitch();
     await yearSelectPage.select2023Year();
 
     // All venues
-    playerStatsPage.playerStatsAreCorrectInTable(58, 33, '57%', 1.86);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(58, 33, '57%', 1.86);
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(55, 32, '58%', 1.96);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(55, 32, '58%', 1.96);
 
     await statOptionsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(3, 1, '33%', 0.0);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(3, 1, '33%', 0.0);
 
     // Home only
     await statOptionsPage.selectHomeOnlyRadio();
 
     await statOptionsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 3.9);
 
     // Away only
     await statOptionsPage.selectAwayOnlyRadio();
 
     await statOptionsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(25, 11, '44%', -1.28);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        25,
+        11,
+        '44%',
+        -1.28
+    );
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(23, 11, '48%', -0.91);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        23,
+        11,
+        '48%',
+        -0.91
+    );
 
     await statOptionsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(2, 0, '0%', -5.5);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(2, 0, '0%', -5.5);
 
     // Cup only
     await statOptionsPage.selectCupOnlyRadio();
 
     await statOptionsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 8.0);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 8.0);
 
     await statOptionsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 11.0);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(1, 1, '100%', 11.0);
 });
 
 test('Summary of Neil Porter stats for singles and pairs games for all teams is correct', async () => {
-    playerStatsPage.setPlayerToFind('neil porter');
+    individualPlayerStatsPage.setPlayerToFind('neil porter');
     await statOptionsPage.selectAllClubStatsSwitch();
     await yearSelectPage.select2023Year();
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 4.74);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(31, 20, '65%', 4.74);
 
     await statOptionsPage.selectAllGameTypesRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(33, 22, '67%', 5.03);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(33, 22, '67%', 5.03);
 
     await statOptionsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(2, 2, '100%', 9.5);
 });
 
 test('Summary of Dave Hudson stats since 2013 for all teams is correct', async () => {
-    playerStatsPage.setPlayerToFind('dave hudson');
+    individualPlayerStatsPage.setPlayerToFind('dave hudson');
     await statOptionsPage.selectAllClubStatsSwitch();
 
     await statOptionsPage.selectAllYearsSwitch();
-    playerStatsPage.playerStatsAreCorrectInTable(463, 174, '38%', -2.48);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        463,
+        174,
+        '38%',
+        -2.48
+    );
 });
 
 test('Detailed player stats for all teams and years for Dave Hudson', async () => {
@@ -147,9 +172,9 @@ test('Detailed player stats for all teams and years for Dave Hudson', async () =
     await statOptionsPage.selectAllClubStatsSwitch();
     await playerSearchPage.searchForPlayer(player);
 
-    await playerStatsPage.checkPlayerIsReturned();
-    await playerStatsPage.checkPlayerName(player);
-    await playerStatsPage.checkTeamAccordionHeadersNotExists();
+    await individualPlayerStatsPage.checkPlayerIsReturned();
+    await individualPlayerStatsPage.checkPlayerName(player);
+    await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
 
     const stats = {
         totalGamesPlayed: 463,
@@ -158,21 +183,31 @@ test('Detailed player stats for all teams and years for Dave Hudson', async () =
         totalAverage: -2.48,
     };
 
-    await playerStatsPage.validateSummaryStats(stats);
+    await individualPlayerStatsPage.validateSummaryStats(stats);
 });
 
 test('Summary of Bernie Miller stats since 2013 for all teams is correct', async () => {
-    playerStatsPage.setPlayerToFind('bernie miller');
+    individualPlayerStatsPage.setPlayerToFind('bernie miller');
     await statOptionsPage.selectAllClubStatsSwitch();
 
     await statOptionsPage.selectAllYearsSwitch();
-    playerStatsPage.playerStatsAreCorrectInTable(416, 242, '58%', 2.37);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        416,
+        242,
+        '58%',
+        2.37
+    );
 
     await statOptionsPage.selectSinglesOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(354, 211, '60%', 2.42);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+        354,
+        211,
+        '60%',
+        2.42
+    );
 
     await statOptionsPage.selectPairsOnlyRadio();
-    playerStatsPage.playerStatsAreCorrectInTable(62, 31, '50%', 2.08);
+    individualPlayerStatsPage.playerStatsAreCorrectInTable(62, 31, '50%', 2.08);
 });
 
 test('Team select dropdown is disabled when include other teams switch is enabled', async () => {
