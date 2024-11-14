@@ -36,7 +36,7 @@ export class PlayerSummaryPage {
         await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
     }
 
-    async playerStatsAreCorrectInTable(
+    async summaryStatsAreCorrect(
         games: number,
         wins: number,
         winPerc: string,
