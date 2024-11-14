@@ -4,7 +4,7 @@ import { IndividualPlayerStatsPage } from './pages/individualPlayerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSearchPage } from './pages/playerSearchPage';
-import { PlayerStatSummaryPage } from './pages/playerStatSummaryPage';
+import { PlayerSummaryPage } from './pages/playerSummaryPage';
 
 const allPlayers = Object.keys(bowlsStats.playerResults);
 
@@ -16,14 +16,14 @@ var totalNumberOfPlayers = allPlayers.filter((player) => {
 }).length;
 
 let individualPlayerStatsPage: IndividualPlayerStatsPage;
-let playerStatSummaryPage: PlayerStatSummaryPage;
+let playerStatSummaryPage: PlayerSummaryPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     individualPlayerStatsPage = new IndividualPlayerStatsPage(page);
-    playerStatSummaryPage = new PlayerStatSummaryPage(page);
+    playerStatSummaryPage = new PlayerSummaryPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
     playerSearchPage = new PlayerSearchPage(page);

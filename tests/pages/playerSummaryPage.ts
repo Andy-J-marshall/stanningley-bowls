@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 
 // TODO move assertions out of page where possible
-export class PlayerStatSummaryPage {
+export class PlayerSummaryPage {
     public readonly page: Page;
     private readonly playerStatsRows: Locator;
     private games: Locator;
