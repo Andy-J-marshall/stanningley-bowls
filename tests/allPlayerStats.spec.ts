@@ -3,15 +3,18 @@ import allBowlsStats from '../src/data/allPlayerStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
+import { PlayerSearchPage } from './pages/playerSearchPage';
 
 let playerStatsPage: PlayerStatsPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
+let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     playerStatsPage = new PlayerStatsPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
+    playerSearchPage = new PlayerSearchPage(page);
     await playerStatsPage.goto();
 });
 
@@ -29,7 +32,7 @@ for (const player of players) {
     test(`Summary of player's all team stats are correct for ${player} in 2023`, async () => {
         await yearSelectPage.select2023Year();
         await statOptionsPage.selectAllClubStatsSwitch();
-        await playerStatsPage.searchForPlayer(player);
+        await playerSearchPage.searchForPlayer(player);
         await playerStatsPage.checkTeamAccordionHeadersNotExists();
         const {
             totalAgg,
@@ -142,7 +145,7 @@ test('Detailed player stats for all teams and years for Dave Hudson', async () =
 
     await statOptionsPage.selectAllYearsSwitch();
     await statOptionsPage.selectAllClubStatsSwitch();
-    await playerStatsPage.searchForPlayer(player);
+    await playerSearchPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
     await playerStatsPage.checkPlayerName(player);

@@ -3,16 +3,19 @@ import bowlsStats from '../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage as StatOptionsPage } from './pages/statOptionsPage';
+import { PlayerSearchPage } from './pages/playerSearchPage';
 
 let playerStatsPage: PlayerStatsPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
+let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     // TODO create a fixture
     playerStatsPage = new PlayerStatsPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
+    playerSearchPage = new PlayerSearchPage(page);
     await playerStatsPage.goto();
 });
 
@@ -27,7 +30,7 @@ const players: Array<string> = [
 for (const player of players) {
     test(`Summary of player's team stats are correct for ${player} in 2023`, async () => {
         await yearSelectPage.select2023Year();
-        await playerStatsPage.searchForPlayer(player);
+        await playerSearchPage.searchForPlayer(player);
         await playerStatsPage.checkPlayerIsReturned();
         await playerStatsPage.checkPlayerName(player);
         await playerStatsPage.checkTeamAccordionHeadersExist();
@@ -124,7 +127,7 @@ test('Detailed player stats for all years for Dave Hudson', async () => {
     const player = 'Dave Hudson';
 
     await statOptionsPage.selectAllYearsSwitch();
-    await playerStatsPage.searchForPlayer(player);
+    await playerSearchPage.searchForPlayer(player);
 
     await playerStatsPage.checkPlayerIsReturned();
     await playerStatsPage.checkPlayerName(player);

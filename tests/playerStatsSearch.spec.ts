@@ -3,6 +3,7 @@ import bowlsStats from '../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
+import { PlayerSearchPage } from './pages/playerSearchPage';
 
 const allPlayers = Object.keys(bowlsStats.playerResults);
 
@@ -16,11 +17,13 @@ var totalNumberOfPlayers = allPlayers.filter((player) => {
 let playerStatsPage: PlayerStatsPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
+let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     playerStatsPage = new PlayerStatsPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
+    playerSearchPage = new PlayerSearchPage(page);
     await playerStatsPage.goto();
 });
 
@@ -31,19 +34,19 @@ test('All players appear by default', async () => {
 
 test('Stats search bar can show all player stats', async () => {
     await yearSelectPage.select2023Year();
-    await playerStatsPage.searchForPlayer('Paul Bowes');
+    await playerSearchPage.searchForPlayer('Paul Bowes');
     await playerStatsPage.checkPlayerIsReturned();
 
-    await playerStatsPage.searchForPlayer('Show All');
+    await playerSearchPage.searchForPlayer('Show All');
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
 test('Clicking back to summary button returns all stats', async () => {
     await yearSelectPage.select2023Year();
-    await playerStatsPage.searchForPlayer('Alyssa Randell');
+    await playerSearchPage.searchForPlayer('Alyssa Randell');
     await playerStatsPage.checkPlayerIsReturned();
 
-    await playerStatsPage.clickBackToSummary();
+    await playerSearchPage.clickBackToSummary();
     await playerStatsPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
@@ -58,8 +61,8 @@ test('Clicking back to summary button remembers state of all stat toggles', asyn
 
     playerStatsPage.playerStatsAreCorrectInTable(270, 149, '55%', 1.29);
 
-    await playerStatsPage.searchForPlayer(name);
-    await playerStatsPage.clickBackToSummary();
+    await playerSearchPage.searchForPlayer(name);
+    await playerSearchPage.clickBackToSummary();
 
     await expect(statOptionsPage.allYearSwitch).toBeChecked();
     await expect(statOptionsPage.singlesOnlyRadio).toBeChecked();
@@ -78,11 +81,11 @@ test('Can switch between team and all stats when searching', async () => {
 
     await yearSelectPage.select2023Year();
     await statOptionsPage.selectAllClubStatsSwitch();
-    await playerStatsPage.searchForPlayer(player);
+    await playerSearchPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersNotExists();
 
-    await playerStatsPage.clickBackToSummary();
+    await playerSearchPage.clickBackToSummary();
     await statOptionsPage.deselectClubStatsSwitch();
-    await playerStatsPage.searchForPlayer(player);
+    await playerSearchPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
 });
