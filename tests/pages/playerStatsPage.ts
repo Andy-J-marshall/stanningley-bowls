@@ -9,20 +9,11 @@ export interface PlayerStatsToCheck {
 
 export class PlayerStatsPage {
     public readonly page: Page;
-    public readonly clubSwitch: Locator;
-    public readonly allYearSwitch: Locator;
-    public readonly singlesOnlyRadio: Locator;
-    public readonly pairsOnlyRadio: Locator;
-    public readonly allGameTypesRadio: Locator;
-    public readonly homeOnlyRadio: Locator;
-    public readonly awayOnlyRadio: Locator;
-    public readonly cupOnlyRadio: Locator;
-    public readonly allVenuesRadio: Locator;
-    public readonly teamSelectDropdown: Locator;
 
     private readonly backButton: Locator;
     private readonly searchBar: Locator;
     private readonly playerListInDropdown: Locator;
+
     private readonly playerStatsItem: Locator;
     private readonly playerStatsRows: Locator;
     private readonly playerNameTitle: Locator;
@@ -64,38 +55,15 @@ export class PlayerStatsPage {
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-        this.clubSwitch = page.locator(
-            ".form-check input[id='#all-club-stats-select-switch']"
-        );
-        this.singlesOnlyRadio = page.locator(
-            ".form-check input[id='#only-singles-radio']"
-        );
-        this.pairsOnlyRadio = page.locator(
-            ".form-check input[id='#only-pairs-radio']"
-        );
-        this.allGameTypesRadio = page.locator(
-            ".form-check input[id='#all-matches-radio']"
-        );
-        this.allYearSwitch = page.locator(
-            ".form-check input[id='#all-years-select-switch']"
-        );
-        this.homeOnlyRadio = page.locator(
-            ".form-check input[id='#only-home-radio']"
-        );
-        this.awayOnlyRadio = page.locator(
-            ".form-check input[id='#only-away-radio']"
-        );
-        this.cupOnlyRadio = page.locator(
-            ".form-check input[id='#only-cup-radio']"
-        );
-        this.allVenuesRadio = page.locator(
-            ".form-check input[id='#all-venues-radio']"
-        );
-        this.teamSelectDropdown = page.getByRole('button', { name: 'All' });
+
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
         this.winPerc = page.locator('#steve-gardner-win-perc');
         this.avg = page.locator('#steve-gardner-avg');
+    }
+
+    async goto() {
+        await this.page.goto('/#/stats/player');
     }
 
     setPlayerToFind(name: string) {
@@ -105,10 +73,6 @@ export class PlayerStatsPage {
         this.wins = this.page.locator(`#${nameWithHyphen}-wins`);
         this.winPerc = this.page.locator(`#${nameWithHyphen}-win-perc`);
         this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
-    }
-
-    async goto() {
-        await this.page.goto('/#/stats/player');
     }
 
     async searchForPlayer(playerName: string) {
@@ -148,76 +112,6 @@ export class PlayerStatsPage {
         await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
         await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
         await expect(this.resultsAccordionButton).toHaveText('RESULTS');
-    }
-
-    async selectAllClubStatsSwitch() {
-        await this.clubSwitch.check();
-    }
-
-    async deselectClubStatsSwitch() {
-        await this.clubSwitch.uncheck();
-    }
-
-    async selectSinglesOnlyRadio() {
-        await this.singlesOnlyRadio.check();
-    }
-
-    async selectPairsOnlyRadio() {
-        await this.pairsOnlyRadio.check();
-    }
-
-    async selectAllGameTypesRadio() {
-        await this.allGameTypesRadio.check();
-    }
-
-    async selectHomeOnlyRadio() {
-        await this.homeOnlyRadio.check();
-    }
-
-    async selectAwayOnlyRadio() {
-        await this.awayOnlyRadio.check();
-    }
-
-    async selectCupOnlyRadio() {
-        await this.cupOnlyRadio.check();
-    }
-
-    async selectAllVenuesRadio() {
-        await this.allVenuesRadio.check();
-    }
-
-    async selectAllYearsSwitch() {
-        await this.allYearSwitch.check();
-    }
-
-    async deselectAllYearsSwitch() {
-        await this.allYearSwitch.uncheck();
-    }
-
-    async optionsAreDisabledWhenSelectingSpecificTeam() {
-        await expect(this.clubSwitch).toBeDisabled();
-        await expect(this.singlesOnlyRadio).toBeDisabled();
-        await expect(this.pairsOnlyRadio).toBeDisabled();
-        await expect(this.allGameTypesRadio).toBeDisabled();
-        await expect(this.homeOnlyRadio).toBeDisabled();
-        await expect(this.awayOnlyRadio).toBeDisabled();
-        await expect(this.cupOnlyRadio).toBeDisabled();
-        await expect(this.allVenuesRadio).toBeDisabled();
-    }
-
-    async teamSelectDropDownIsDisabled() {
-        await expect(this.teamSelectDropdown).toBeDisabled();
-    }
-
-    async selectTeamFromDropdown(team: string) {
-        await this.teamSelectDropdown.click();
-        await this.page
-            .getByRole('button', { exact: true, name: team })
-            .click();
-    }
-
-    async selectAllTeamsFromTeamDropdown() {
-        await this.teamSelectDropdown.click();
     }
 
     async validateSummaryStats(playerStats: PlayerStatsToCheck) {

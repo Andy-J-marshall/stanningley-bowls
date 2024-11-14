@@ -2,6 +2,7 @@ import { expect, test } from '@playwright/test';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import { PlayerStatsPage } from './pages/playerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
+import { StatOptionsPage } from './pages/statOptionsPage';
 
 const allPlayers = Object.keys(bowlsStats.playerResults);
 
@@ -14,10 +15,12 @@ var totalNumberOfPlayers = allPlayers.filter((player) => {
 
 let playerStatsPage: PlayerStatsPage;
 let yearSelectPage: YearSelectPage;
+let statOptionsPage: StatOptionsPage;
 
 test.beforeEach(async ({ page }) => {
     playerStatsPage = new PlayerStatsPage(page);
     yearSelectPage = new YearSelectPage(page);
+    statOptionsPage = new StatOptionsPage(page);
     await playerStatsPage.goto();
 });
 
@@ -48,20 +51,20 @@ test('Clicking back to summary button remembers state of all stat toggles', asyn
     const name = 'Mabel Shaw';
     playerStatsPage.setPlayerToFind(name);
 
-    await playerStatsPage.selectAllClubStatsSwitch();
-    await playerStatsPage.selectAllYearsSwitch();
-    await playerStatsPage.selectSinglesOnlyRadio();
-    await playerStatsPage.selectAwayOnlyRadio();
+    await statOptionsPage.selectAllClubStatsSwitch();
+    await statOptionsPage.selectAllYearsSwitch();
+    await statOptionsPage.selectSinglesOnlyRadio();
+    await statOptionsPage.selectAwayOnlyRadio();
 
     playerStatsPage.playerStatsAreCorrectInTable(270, 149, '55%', 1.29);
 
     await playerStatsPage.searchForPlayer(name);
     await playerStatsPage.clickBackToSummary();
 
-    await expect(playerStatsPage.allYearSwitch).toBeChecked();
-    await expect(playerStatsPage.singlesOnlyRadio).toBeChecked();
-    await expect(playerStatsPage.awayOnlyRadio).toBeChecked();
-    await expect(playerStatsPage.clubSwitch).toBeChecked();
+    await expect(statOptionsPage.allYearSwitch).toBeChecked();
+    await expect(statOptionsPage.singlesOnlyRadio).toBeChecked();
+    await expect(statOptionsPage.awayOnlyRadio).toBeChecked();
+    await expect(statOptionsPage.clubSwitch).toBeChecked();
 
     playerStatsPage.playerStatsAreCorrectInTable(270, 149, '55%', 1.29);
 });
@@ -74,12 +77,12 @@ test('Can switch between team and all stats when searching', async () => {
     const player = 'Clifford Brogie';
 
     await yearSelectPage.select2023Year();
-    await playerStatsPage.selectAllClubStatsSwitch();
+    await statOptionsPage.selectAllClubStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersNotExists();
 
     await playerStatsPage.clickBackToSummary();
-    await playerStatsPage.deselectClubStatsSwitch();
+    await statOptionsPage.deselectClubStatsSwitch();
     await playerStatsPage.searchForPlayer(player);
     await playerStatsPage.checkTeamAccordionHeadersExist();
 });
