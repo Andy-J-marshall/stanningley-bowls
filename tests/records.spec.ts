@@ -40,3 +40,5 @@ test('Records not show for Wednesday Pairs in 2023 as team did not exist', async
 test(`Records year dropdown appears if there are multiple years of records available`, async () => {
     await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
 });
+
+// TODO improve these tests

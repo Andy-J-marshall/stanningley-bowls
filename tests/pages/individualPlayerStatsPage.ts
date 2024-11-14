@@ -1,16 +1,9 @@
 import { expect, Locator, Page } from '@playwright/test';
-
-export interface PlayerStatsToCheck {
-    totalGamesPlayed: number;
-    totalWins: number;
-    totalLosses: number;
-    totalAverage: number;
-}
+import { PlayerStatsToCheck } from '../helpers/interfaces';
 
 export class IndividualPlayerStatsPage {
     public readonly page: Page;
     private readonly playerStatsItem: Locator;
-    private readonly playerStatsRows: Locator;
     private readonly playerNameTitle: Locator;
     private readonly overviewAccordionButton: Locator;
     private readonly winLossAccordionButton: Locator;
@@ -23,15 +16,9 @@ export class IndividualPlayerStatsPage {
     private readonly totalLosses: Locator;
     private readonly totalAverage: Locator;
 
-    private games: Locator;
-    private wins: Locator;
-    private winPerc: Locator;
-    private avg: Locator;
-
     constructor(page: Page) {
         this.page = page;
         this.playerStatsItem = page.locator('#detailed-player-stats');
-        this.playerStatsRows = page.locator('#player-stats-per-team tbody');
         this.playerNameTitle = page.locator('#playerNameTitle');
         this.overviewAccordionButton = page.locator('#stats-overview');
         this.winLossAccordionButton = page.locator('#stats-wl');
@@ -45,28 +32,6 @@ export class IndividualPlayerStatsPage {
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-
-        this.games = page.locator('#steve-gardner-games');
-        this.wins = page.locator('#steve-gardner-wins');
-        this.winPerc = page.locator('#steve-gardner-win-perc');
-        this.avg = page.locator('#steve-gardner-avg');
-    }
-
-    async goto() {
-        await this.page.goto('/#/stats/player');
-    }
-
-    setPlayerToFind(name: string) {
-        const nameWithHyphen = name.trim().toLowerCase().replace(' ', '-');
-
-        this.games = this.page.locator(`#${nameWithHyphen}-games`);
-        this.wins = this.page.locator(`#${nameWithHyphen}-wins`);
-        this.winPerc = this.page.locator(`#${nameWithHyphen}-win-perc`);
-        this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
-    }
-
-    async checkNumberOfPlayersReturned(expectedNumberOfPlayers: number) {
-        await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
     }
 
     async checkPlayerIsReturned() {
@@ -95,7 +60,7 @@ export class IndividualPlayerStatsPage {
         await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     }
 
-    async validateSummaryStats(playerStats: PlayerStatsToCheck) {
+    async validateOverviewStats(playerStats: PlayerStatsToCheck) {
         await expect(this.totalGamesPlayed).toHaveText(
             `${playerStats.totalGamesPlayed}`
         );
@@ -106,17 +71,5 @@ export class IndividualPlayerStatsPage {
         );
         expect(playerStats.totalAverage).toBeGreaterThan(-22);
         expect(playerStats.totalAverage).toBeLessThan(22);
-    }
-
-    playerStatsAreCorrectInTable(
-        games: number,
-        wins: number,
-        winPerc: string,
-        avg: number
-    ) {
-        expect(this.games).toContainText(games.toString());
-        expect(this.wins).toContainText(wins.toString());
-        expect(this.winPerc).toContainText(winPerc.toString());
-        expect(this.avg).toContainText(avg.toString());
     }
 }

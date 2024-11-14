@@ -1,9 +1,10 @@
 import { expect, test } from '@playwright/test';
 import bowlsStats from '../src/data/bowlsStats2023.json';
-import { IndividualPlayerStatsPage } from './pages/playerStatsPage';
+import { IndividualPlayerStatsPage } from './pages/individualPlayerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSearchPage } from './pages/playerSearchPage';
+import { PlayerStatSummaryPage } from './pages/playerStatSummaryPage';
 
 const allPlayers = Object.keys(bowlsStats.playerResults);
 
@@ -15,21 +16,23 @@ var totalNumberOfPlayers = allPlayers.filter((player) => {
 }).length;
 
 let individualPlayerStatsPage: IndividualPlayerStatsPage;
+let playerStatSummaryPage: PlayerStatSummaryPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     individualPlayerStatsPage = new IndividualPlayerStatsPage(page);
+    playerStatSummaryPage = new PlayerStatSummaryPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
     playerSearchPage = new PlayerSearchPage(page);
-    await individualPlayerStatsPage.goto();
+    await playerStatSummaryPage.goto();
 });
 
 test('All players appear by default', async () => {
     await yearSelectPage.select2023Year();
-    await individualPlayerStatsPage.checkNumberOfPlayersReturned(
+    await playerStatSummaryPage.checkNumberOfPlayersReturned(
         totalNumberOfPlayers
     );
 });
@@ -40,7 +43,7 @@ test('Stats search bar can show all player stats', async () => {
     await individualPlayerStatsPage.checkPlayerIsReturned();
 
     await playerSearchPage.searchForPlayer('Show All');
-    await individualPlayerStatsPage.checkNumberOfPlayersReturned(
+    await playerStatSummaryPage.checkNumberOfPlayersReturned(
         totalNumberOfPlayers
     );
 });
@@ -51,21 +54,21 @@ test('Clicking back to summary button returns all stats', async () => {
     await individualPlayerStatsPage.checkPlayerIsReturned();
 
     await playerSearchPage.clickBackToSummary();
-    await individualPlayerStatsPage.checkNumberOfPlayersReturned(
+    await playerStatSummaryPage.checkNumberOfPlayersReturned(
         totalNumberOfPlayers
     );
 });
 
 test('Clicking back to summary button remembers state of all stat toggles', async () => {
     const name = 'Mabel Shaw';
-    individualPlayerStatsPage.setPlayerToFind(name);
+    playerStatSummaryPage.setPlayerToFind(name);
 
     await statOptionsPage.selectAllClubStatsSwitch();
     await statOptionsPage.selectAllYearsSwitch();
     await statOptionsPage.selectSinglesOnlyRadio();
     await statOptionsPage.selectAwayOnlyRadio();
 
-    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+    await playerStatSummaryPage.playerStatsAreCorrectInTable(
         270,
         149,
         '55%',
@@ -80,7 +83,7 @@ test('Clicking back to summary button remembers state of all stat toggles', asyn
     await expect(statOptionsPage.awayOnlyRadio).toBeChecked();
     await expect(statOptionsPage.clubSwitch).toBeChecked();
 
-    individualPlayerStatsPage.playerStatsAreCorrectInTable(
+    await playerStatSummaryPage.playerStatsAreCorrectInTable(
         270,
         149,
         '55%',
