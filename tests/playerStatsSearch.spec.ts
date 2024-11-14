@@ -16,25 +16,23 @@ var totalNumberOfPlayers = allPlayers.filter((player) => {
 }).length;
 
 let individualPlayerStatsPage: IndividualPlayerStatsPage;
-let playerStatSummaryPage: PlayerSummaryPage;
+let playerSummaryPage: PlayerSummaryPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
 
 test.beforeEach(async ({ page }) => {
     individualPlayerStatsPage = new IndividualPlayerStatsPage(page);
-    playerStatSummaryPage = new PlayerSummaryPage(page);
+    playerSummaryPage = new PlayerSummaryPage(page);
     yearSelectPage = new YearSelectPage(page);
     statOptionsPage = new StatOptionsPage(page);
     playerSearchPage = new PlayerSearchPage(page);
-    await playerStatSummaryPage.goto();
+    await playerSummaryPage.goto();
 });
 
 test('All players appear by default', async () => {
     await yearSelectPage.select2023Year();
-    await playerStatSummaryPage.checkNumberOfPlayersReturned(
-        totalNumberOfPlayers
-    );
+    await playerSummaryPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
 test('Stats search bar can show all player stats', async () => {
@@ -43,9 +41,7 @@ test('Stats search bar can show all player stats', async () => {
     await individualPlayerStatsPage.checkPlayerIsReturned();
 
     await playerSearchPage.searchForPlayer('Show All');
-    await playerStatSummaryPage.checkNumberOfPlayersReturned(
-        totalNumberOfPlayers
-    );
+    await playerSummaryPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
 test('Clicking back to summary button returns all stats', async () => {
@@ -54,26 +50,19 @@ test('Clicking back to summary button returns all stats', async () => {
     await individualPlayerStatsPage.checkPlayerIsReturned();
 
     await playerSearchPage.clickBackToSummary();
-    await playerStatSummaryPage.checkNumberOfPlayersReturned(
-        totalNumberOfPlayers
-    );
+    await playerSummaryPage.checkNumberOfPlayersReturned(totalNumberOfPlayers);
 });
 
 test('Clicking back to summary button remembers state of all stat toggles', async () => {
     const name = 'Mabel Shaw';
-    playerStatSummaryPage.setPlayerToFind(name);
+    playerSummaryPage.setPlayerToFind(name);
 
     await statOptionsPage.selectAllClubStatsSwitch();
     await statOptionsPage.selectAllYearsSwitch();
     await statOptionsPage.selectSinglesOnlyRadio();
     await statOptionsPage.selectAwayOnlyRadio();
 
-    await playerStatSummaryPage.playerStatsAreCorrectInTable(
-        270,
-        149,
-        '55%',
-        1.29
-    );
+    await playerSummaryPage.playerStatsAreCorrectInTable(270, 149, '55%', 1.29);
 
     await playerSearchPage.searchForPlayer(name);
     await playerSearchPage.clickBackToSummary();
@@ -83,12 +72,7 @@ test('Clicking back to summary button remembers state of all stat toggles', asyn
     await expect(statOptionsPage.awayOnlyRadio).toBeChecked();
     await expect(statOptionsPage.clubSwitch).toBeChecked();
 
-    await playerStatSummaryPage.playerStatsAreCorrectInTable(
-        270,
-        149,
-        '55%',
-        1.29
-    );
+    await playerSummaryPage.playerStatsAreCorrectInTable(270, 149, '55%', 1.29);
 });
 
 test('Stats year dropdown appears if there are multiple years of stats available', async () => {
