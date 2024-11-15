@@ -48,6 +48,4 @@ test.describe('Team Stats', () => {
     }) => {
         await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
     });
-
-    // TODO improve these tests
 });

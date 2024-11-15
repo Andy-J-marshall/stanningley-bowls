@@ -13,5 +13,4 @@ test.describe('Results', () => {
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({ yearSelectPage }) => {
         await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
     });
-    // TODO improve these tests
 });
