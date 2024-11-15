@@ -15,7 +15,6 @@ let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
 
-// TODO add more player stat tests
 test.describe('Player stats - search', () => {
     test.beforeEach(async ({ page }) => {
         individualPlayerStatsPage = new IndividualPlayerStatsPage(page);

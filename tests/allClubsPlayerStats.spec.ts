@@ -180,7 +180,7 @@ test.describe('Player detailed  stats - include other clubs', () => {
         await playerSummaryPage.summaryStatsAreCorrect(62, 31, '50%', 2.08);
     });
 
-    test('Team select dropdown is disabled when include other teams switch is enabled', async () => {
+    test('Team select dropdown is disabled when include all club switch is enabled', async () => {
         await yearSelectPage.select2023Year();
         await statOptionsPage.selectAllClubStatsSwitch();
 
