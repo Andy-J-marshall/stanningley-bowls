@@ -82,4 +82,10 @@ test.describe('Player detailed stats - single club', () => {
 
         await individualPlayerStatsPage.validateOverviewStats(stats);
     });
+
+    test('Stats year dropdown appears if there are multiple years of stats available', async () => {
+        await yearSelectPage.select2022Year();
+        await playerSearchPage.searchForPlayer('Jack Roberts');
+        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
+    });
 });

@@ -31,4 +31,8 @@ test.describe('Player summary stats', () => {
         await statOptionsPage.selectAllYearsSwitch();
         await playerSummaryPage.summaryStatsAreCorrect(385, 147, '38%', -2.34);
     });
+
+    test('Stats year dropdown appears if there are multiple years of stats available', async () => {
+        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
+    });
 });

@@ -86,10 +86,6 @@ test.describe('Player stats - search', () => {
         await playerSummaryPage.summaryStatsAreCorrect(270, 149, '55%', 1.29);
     });
 
-    test('Stats year dropdown appears if there are multiple years of stats available', async () => {
-        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
-    });
-
     test('Can switch between team and all stats when searching', async () => {
         const player = 'Clifford Brogie';
 
