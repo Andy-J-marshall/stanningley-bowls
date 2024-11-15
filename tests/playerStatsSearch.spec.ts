@@ -7,7 +7,7 @@ import { PlayerSearchPage } from './pages/playerSearchPage';
 import { PlayerSummaryPage } from './pages/playerSummaryPage';
 import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
 
-const totalNumberOfPlayers = findTotalNumberOfPlayersForYears(bowlsStats);
+const totalPlayerCOunt = findTotalNumberOfPlayersForYears(bowlsStats);
 
 let individualPlayerStatsPage: IndividualPlayerStatsPage;
 let playerSummaryPage: PlayerSummaryPage;
@@ -31,9 +31,7 @@ test.describe('Player stats - search', () => {
         await individualPlayerStatsPage.checkPlayerIsReturned();
 
         await playerSearchPage.searchForPlayer('Show All');
-        await playerSummaryPage.checkNumberOfPlayersReturned(
-            totalNumberOfPlayers
-        );
+        await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);
     });
 
     test('Clicking back to summary button returns all stats', async () => {
@@ -42,9 +40,7 @@ test.describe('Player stats - search', () => {
         await individualPlayerStatsPage.checkPlayerIsReturned();
 
         await playerSearchPage.clickBackToSummary();
-        await playerSummaryPage.checkNumberOfPlayersReturned(
-            totalNumberOfPlayers
-        );
+        await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);
     });
 
     test('Can switch between team and all stats when searching', async () => {
