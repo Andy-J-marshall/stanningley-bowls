@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
-export class StatOptionsPage {
+export class PlayerStatOptionsPage {
     public readonly page: Page;
     public readonly clubSwitch: Locator;
     public readonly allYearSwitch: Locator;

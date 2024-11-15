@@ -1,23 +1,16 @@
-import { test } from '@playwright/test';
-import { ResultPage } from './pages/resultPage';
-import { YearSelectPage } from './pages/yearSelectPage';
-
-let yearSelectPage: YearSelectPage;
-let resultPage: ResultPage;
+import { test } from './utils/fixture';
 
 test.describe('Results', () => {
-    test.beforeEach(async ({ page }) => {
-        yearSelectPage = new YearSelectPage(page);
-        resultPage = new ResultPage(page);
+    test.beforeEach(async ({ resultPage }) => {
         await resultPage.goto();
     });
 
-    test('Teams results appear for previous years', async () => {
+    test('Teams results appear for previous years', async ({ resultPage, yearSelectPage }) => {
         await yearSelectPage.select2023Year();
         resultPage.resultsForAll2023TeamsAppear();
     });
 
-    test(`Stats year dropdown appears if there are multiple years of stats available`, async () => {
+    test(`Stats year dropdown appears if there are multiple years of stats available`, async ({ yearSelectPage }) => {
         await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
     });
     // TODO improve these tests
