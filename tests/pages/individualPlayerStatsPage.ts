@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { PlayerStatsToCheck } from '../helpers/interfaces';
+import { PlayerStatsToCheck } from '../utils/interfaces';
 
 export class IndividualPlayerStatsPage {
     public readonly page: Page;

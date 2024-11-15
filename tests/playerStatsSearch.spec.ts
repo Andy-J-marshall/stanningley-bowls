@@ -1,28 +1,19 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import { IndividualPlayerStatsPage } from './pages/individualPlayerStatsPage';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSearchPage } from './pages/playerSearchPage';
 import { PlayerSummaryPage } from './pages/playerSummaryPage';
+import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
 
-const allPlayers = Object.keys(bowlsStats.playerResults);
-
-var totalNumberOfPlayers = allPlayers.filter((player) => {
-    const playerStats = bowlsStats.playerResults[player];
-    if (playerStats.totalAgg > 0 || playerStats.totalAggAgainst > 0) {
-        return player;
-    }
-}).length;
+const totalNumberOfPlayers = findTotalNumberOfPlayersForYears(bowlsStats);
 
 let individualPlayerStatsPage: IndividualPlayerStatsPage;
 let playerSummaryPage: PlayerSummaryPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
 let playerSearchPage: PlayerSearchPage;
-
-
-// TODO reorganise what tests are in what file
 
 // TODO add more player stat tests
 test.describe('Player stats - search', () => {
@@ -33,13 +24,6 @@ test.describe('Player stats - search', () => {
         statOptionsPage = new StatOptionsPage(page);
         playerSearchPage = new PlayerSearchPage(page);
         await playerSummaryPage.goto();
-    });
-
-    test('All players appear by default', async () => {
-        await yearSelectPage.select2023Year();
-        await playerSummaryPage.checkNumberOfPlayersReturned(
-            totalNumberOfPlayers
-        );
     });
 
     test('Stats search bar can show all player stats', async () => {
@@ -62,28 +46,6 @@ test.describe('Player stats - search', () => {
         await playerSummaryPage.checkNumberOfPlayersReturned(
             totalNumberOfPlayers
         );
-    });
-
-    test('Clicking back to summary button remembers state of all stat toggles', async () => {
-        const name = 'Mabel Shaw';
-        playerSummaryPage.setPlayerToFind(name);
-
-        await statOptionsPage.selectAllClubStatsSwitch();
-        await statOptionsPage.selectAllYearsSwitch();
-        await statOptionsPage.selectSinglesOnlyRadio();
-        await statOptionsPage.selectAwayOnlyRadio();
-
-        await playerSummaryPage.summaryStatsAreCorrect(270, 149, '55%', 1.29);
-
-        await playerSearchPage.searchForPlayer(name);
-        await playerSearchPage.clickBackToSummary();
-
-        await expect(statOptionsPage.allYearSwitch).toBeChecked();
-        await expect(statOptionsPage.singlesOnlyRadio).toBeChecked();
-        await expect(statOptionsPage.awayOnlyRadio).toBeChecked();
-        await expect(statOptionsPage.clubSwitch).toBeChecked();
-
-        await playerSummaryPage.summaryStatsAreCorrect(270, 149, '55%', 1.29);
     });
 
     test('Can switch between team and all stats when searching', async () => {

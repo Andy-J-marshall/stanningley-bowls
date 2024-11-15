@@ -2,6 +2,10 @@ import { test } from '@playwright/test';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage as StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSummaryPage as PlayerSummaryPage } from './pages/playerSummaryPage';
+import bowlsStats from '../src/data/bowlsStats2023.json';
+import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
+
+const totalNumberOfPlayers = findTotalNumberOfPlayersForYears(bowlsStats);
 
 let playerSummaryPage: PlayerSummaryPage;
 let yearSelectPage: YearSelectPage;
@@ -30,6 +34,13 @@ test.describe('Player summary stats', () => {
 
         await statOptionsPage.selectAllYearsSwitch();
         await playerSummaryPage.summaryStatsAreCorrect(385, 147, '38%', -2.34);
+    });
+
+    test('All players appear by default', async () => {
+        await yearSelectPage.select2023Year();
+        await playerSummaryPage.checkNumberOfPlayersReturned(
+            totalNumberOfPlayers
+        );
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async () => {

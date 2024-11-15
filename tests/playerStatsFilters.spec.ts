@@ -1,17 +1,20 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { YearSelectPage } from './pages/yearSelectPage';
 import { StatOptionsPage as StatOptionsPage } from './pages/statOptionsPage';
 import { PlayerSummaryPage as PlayerSummaryPage } from './pages/playerSummaryPage';
+import { PlayerSearchPage } from './pages/playerSearchPage';
 
 let playerSummaryPage: PlayerSummaryPage;
 let yearSelectPage: YearSelectPage;
 let statOptionsPage: StatOptionsPage;
+let playerSearchPage: PlayerSearchPage;
 
 test.describe('Player summary stats - filters', () => {
     test.beforeEach(async ({ page }) => {
         playerSummaryPage = new PlayerSummaryPage(page);
         yearSelectPage = new YearSelectPage(page);
         statOptionsPage = new StatOptionsPage(page);
+        playerSearchPage = new PlayerSearchPage(page);
         await playerSummaryPage.goto();
     });
 
@@ -108,5 +111,27 @@ test.describe('Player summary stats - filters', () => {
         await statOptionsPage.selectTeamFromDropdown('Saturday Leeds');
 
         await statOptionsPage.optionsAreDisabledWhenSelectingSpecificTeam();
+    });
+
+    test('Clicking back to summary button remembers state of all stat toggles', async () => {
+        const name = 'Mabel Shaw';
+        playerSummaryPage.setPlayerToFind(name);
+
+        await statOptionsPage.selectAllClubStatsSwitch();
+        await statOptionsPage.selectAllYearsSwitch();
+        await statOptionsPage.selectSinglesOnlyRadio();
+        await statOptionsPage.selectAwayOnlyRadio();
+
+        await playerSummaryPage.summaryStatsAreCorrect(270, 149, '55%', 1.29);
+
+        await playerSearchPage.searchForPlayer(name);
+        await playerSearchPage.clickBackToSummary();
+
+        await expect(statOptionsPage.allYearSwitch).toBeChecked();
+        await expect(statOptionsPage.singlesOnlyRadio).toBeChecked();
+        await expect(statOptionsPage.awayOnlyRadio).toBeChecked();
+        await expect(statOptionsPage.clubSwitch).toBeChecked();
+
+        await playerSummaryPage.summaryStatsAreCorrect(270, 149, '55%', 1.29);
     });
 });
