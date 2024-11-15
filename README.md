@@ -203,3 +203,4 @@ Update team info in all components:
 
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
+-   Add better test coverage and move assertions into the test files where possible
