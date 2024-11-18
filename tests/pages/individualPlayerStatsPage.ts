@@ -1,5 +1,4 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { PlayerStatsToCheck } from '../utils/interfaces';
 
 export class IndividualPlayerStatsPage {
     public readonly page: Page;
@@ -13,6 +12,7 @@ export class IndividualPlayerStatsPage {
     public readonly accordions: Locator;
     private readonly totalGamesPlayed: Locator;
     private readonly totalWins: Locator;
+    private readonly totalWinPerc: Locator;
     private readonly totalLosses: Locator;
     private readonly totalAverage: Locator;
 
@@ -30,20 +30,19 @@ export class IndividualPlayerStatsPage {
         );
         this.totalGamesPlayed = page.locator('#totalGamesPlayed');
         this.totalWins = page.locator('#totalWins');
+        this.totalWinPerc = page.locator('#totalWinPerc');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
     }
 
-    async validateOverviewStats(playerStats: PlayerStatsToCheck) {
-        await expect(this.totalGamesPlayed).toHaveText(
-            `${playerStats.totalGamesPlayed}`
-        );
-        await expect(this.totalWins).toHaveText(`${playerStats.totalWins}`);
-        await expect(this.totalLosses).toHaveText(`${playerStats.totalLosses}`);
-        await expect(this.totalAverage).toHaveText(
-            `${playerStats.totalAverage.toFixed(2)}`
-        );
-        expect(playerStats.totalAverage).toBeGreaterThan(-22);
-        expect(playerStats.totalAverage).toBeLessThan(22);
+    async validateOverviewStats(games: number, wins: number, avg: number) {
+        const winPerc = ((wins / games) * 100).toFixed(0);
+        const losses = games - wins;
+
+        await expect(this.totalGamesPlayed).toHaveText(games.toString());
+        await expect(this.totalWins).toHaveText(wins.toString());
+        await expect(this.totalLosses).toHaveText(losses.toString());
+        await expect(this.totalWinPerc).toHaveText(`${winPerc}%`);
+        await expect(this.totalAverage).toHaveText(avg.toFixed(2).toString());
     }
 }

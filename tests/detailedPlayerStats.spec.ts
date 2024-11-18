@@ -33,24 +33,20 @@ test.describe('Player detailed stats', () => {
                 homeWins,
                 awayWins,
                 cupWins,
-                homeLosses,
-                awayLosses,
-                cupLosses,
                 totalGamesPlayed,
             } = bowlsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
-            const totalLosses = cupLosses + homeLosses + awayLosses;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
-            const stats = {
+
+            await individualPlayerStatsPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
-                totalLosses,
-                totalAverage,
-            };
-            await individualPlayerStatsPage.validateOverviewStats(stats);
+                totalAverage
+            );
         });
     }
+
     const allClubPlayers: Array<string> = [
         'Clifford Brogie',
         'Jim Moorin',
@@ -60,7 +56,6 @@ test.describe('Player detailed stats', () => {
         'Peter Crowther',
         'Andy Marshall',
     ];
-
     for (const player of allClubPlayers) {
         test(`Summary of player's all team stats are correct for ${player} in 2023`, async ({
             individualPlayerStatsPage,
@@ -78,22 +73,17 @@ test.describe('Player detailed stats', () => {
                 homeWins,
                 awayWins,
                 cupWins,
-                homeLosses,
-                awayLosses,
-                cupLosses,
                 totalGamesPlayed,
             } = allClubBowlsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
-            const totalLosses = cupLosses + homeLosses + awayLosses;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
-            const stats = {
+
+            await individualPlayerStatsPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
-                totalLosses,
-                totalAverage,
-            };
-            await individualPlayerStatsPage.validateOverviewStats(stats);
+                totalAverage
+            );
         });
     }
 
@@ -107,14 +97,7 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        const stats = {
-            totalGamesPlayed: 385,
-            totalWins: 147,
-            totalLosses: 238,
-            totalAverage: -2.34,
-        };
-
-        await individualPlayerStatsPage.validateOverviewStats(stats);
+        await individualPlayerStatsPage.validateOverviewStats(385, 147, -2.34);
     });
 
     test('Detailed player stats for all clubs and years for Dave Hudson', async ({
@@ -135,7 +118,7 @@ test.describe('Player detailed stats', () => {
             totalAverage: -2.48,
         };
 
-        await individualPlayerStatsPage.validateOverviewStats(stats);
+        await individualPlayerStatsPage.validateOverviewStats(463, 174, -2.48);
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
