@@ -1,8 +1,9 @@
+import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
 
-const totalPlayerCount = findTotalNumberOfPlayersForYears(bowlsStats);
+const playerCount = findTotalNumberOfPlayersForYears(bowlsStats);
 
 test.describe('Player summary stats', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -63,7 +64,7 @@ test.describe('Player summary stats', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
-        await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCount);
+        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async ({

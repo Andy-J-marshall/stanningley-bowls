@@ -2,7 +2,7 @@ import { expect, Locator, Page } from '@playwright/test';
 
 export class PlayerSummaryPage {
     public readonly page: Page;
-    private readonly playerStatsRows: Locator;
+    public readonly playerRows: Locator;
     private games: Locator;
     private wins: Locator;
     private winPerc: Locator;
@@ -10,7 +10,7 @@ export class PlayerSummaryPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.playerStatsRows = page.locator('#player-stats-per-team tbody');
+        this.playerRows = page.locator('#player-stats-per-team tbody');
 
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
@@ -29,10 +29,6 @@ export class PlayerSummaryPage {
         this.wins = this.page.locator(`#${nameWithHyphen}-wins`);
         this.winPerc = this.page.locator(`#${nameWithHyphen}-win-perc`);
         this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
-    }
-
-    async checkNumberOfPlayersReturned(expectedNumberOfPlayers: number) {
-        await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
     }
 
     async summaryStatsAreCorrect(

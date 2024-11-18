@@ -3,7 +3,7 @@ import { test } from './utils/fixture';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
 
-const totalPlayerCOunt = findTotalNumberOfPlayersForYears(bowlsStats);
+const playerCount = findTotalNumberOfPlayersForYears(bowlsStats);
 
 test.describe('Player stats - search', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -22,7 +22,7 @@ test.describe('Player stats - search', () => {
         await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
 
         await playerSearchPage.searchForPlayer('Show All');
-        await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);
+        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
     });
 
     test('Clicking back to summary button returns all stats', async ({
@@ -34,7 +34,7 @@ test.describe('Player stats - search', () => {
         await playerSearchPage.searchForPlayer('Alyssa Randell');
 
         await playerSearchPage.clickBackToSummary();
-        await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);
+        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
     });
 
     test('Can switch between team and all stats when searching', async ({
