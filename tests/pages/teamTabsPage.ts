@@ -1,7 +1,8 @@
 import { Locator, Page } from '@playwright/test';
 
 export class TeamTabsPage {
-    private readonly page: Page;
+    public readonly page: Page;
+
     private readonly mondayTeamStats: Locator;
     private readonly mondayTeamRecords: Locator;
     private readonly tuesVetsTeamStats: Locator;

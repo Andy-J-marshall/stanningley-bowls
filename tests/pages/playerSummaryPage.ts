@@ -2,6 +2,7 @@ import { expect, Locator, Page } from '@playwright/test';
 
 export class PlayerSummaryPage {
     public readonly page: Page;
+
     public readonly playerRows: Locator;
     private games: Locator;
     private wins: Locator;

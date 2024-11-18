@@ -18,6 +18,7 @@ export class IndividualPlayerStatsPage {
 
     constructor(page: Page) {
         this.page = page;
+
         this.playerStats = page.locator('#detailed-player-stats');
         this.title = page.locator('#playerNameTitle');
         this.overviewAccordion = page.locator('#stats-overview');

@@ -1,7 +1,7 @@
 import { Locator, Page } from '@playwright/test';
 
 export class TeamStatsPage {
-    private readonly page: Page;
+    public readonly page: Page;
 
     public readonly wedPairsNoGamesPlayedMessage: Locator;
 

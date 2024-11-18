@@ -2,6 +2,7 @@ import { Locator, Page } from '@playwright/test';
 
 export class ResultPage {
     public readonly page: Page;
+
     public readonly teamResultsSections: Locator;
 
     constructor(page: Page) {
