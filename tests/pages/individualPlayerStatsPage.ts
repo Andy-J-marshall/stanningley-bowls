@@ -53,5 +53,8 @@ export class IndividualPlayerStatsPage {
         await expect(this.totalLosses).toHaveText(losses.toString());
         await expect(this.totalWinPerc).toHaveText(`${winPerc}%`);
         await expect(this.totalAverage).toHaveText(avg.toFixed(2).toString());
+        // TODO also check biggest win
     }
 }
+
+// TODO improve locators for each page
