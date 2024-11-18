@@ -89,21 +89,6 @@ export class PlayerStatOptionsPage {
         await this.allYearSwitch.uncheck();
     }
 
-    async optionsAreDisabledWhenSelectingSpecificTeam() {
-        await expect(this.clubSwitch).toBeDisabled();
-        await expect(this.singlesOnlyRadio).toBeDisabled();
-        await expect(this.pairsOnlyRadio).toBeDisabled();
-        await expect(this.allGameTypesRadio).toBeDisabled();
-        await expect(this.homeOnlyRadio).toBeDisabled();
-        await expect(this.awayOnlyRadio).toBeDisabled();
-        await expect(this.cupOnlyRadio).toBeDisabled();
-        await expect(this.allVenuesRadio).toBeDisabled();
-    }
-
-    async teamSelectDropDownIsDisabled() {
-        await expect(this.teamSelectDropdown).toBeDisabled();
-    }
-
     async selectTeamFromDropdown(team: string) {
         await this.teamSelectDropdown.click();
         await this.page

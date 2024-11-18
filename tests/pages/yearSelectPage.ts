@@ -21,12 +21,6 @@ export class YearSelectPage {
         );
     }
 
-    async checkYearDropdownHasAllYearOptions(expectedNumber: number) {
-        await expect(this.yearSelectDropdown).toBeVisible();
-        await this.yearSelectDropdown.click();
-        await expect(this.allYearOptionsInDropdown).toHaveCount(expectedNumber);
-    }
-
     async select2024Year() {
         await this.yearSelectDropdown.click();
         await this.year2024InYearDropdown.click();
@@ -45,5 +39,11 @@ export class YearSelectPage {
     async select2013Year() {
         await this.yearSelectDropdown.click();
         await this.year2013InYearDropdown.click();
+    }
+
+    async checkYearDropdownHasAllYearOptions(expectedNumber: number) {
+        await expect(this.yearSelectDropdown).toBeVisible();
+        await this.yearSelectDropdown.click();
+        await expect(this.allYearOptionsInDropdown).toHaveCount(expectedNumber);
     }
 }

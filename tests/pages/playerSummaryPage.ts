@@ -31,7 +31,7 @@ export class PlayerSummaryPage {
         this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
     }
 
-    async summaryStatsAreCorrect(
+    async validateSummaryStats(
         games: number,
         wins: number,
         winPerc: string,
