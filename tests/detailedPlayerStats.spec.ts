@@ -111,13 +111,6 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        const stats = {
-            totalGamesPlayed: 463,
-            totalWins: 174,
-            totalLosses: 289,
-            totalAverage: -2.48,
-        };
-
         await individualPlayerStatsPage.validateOverviewStats(463, 174, -2.48);
     });
 
