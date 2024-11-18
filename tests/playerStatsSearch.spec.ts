@@ -19,7 +19,7 @@ test.describe('Player stats - search', () => {
         await yearSelectPage.select2023Year();
         await playerSearchPage.searchForPlayer('Paul Bowes');
 
-        await expect(individualPlayerStatsPage.playerStatsItem).toHaveCount(1);
+        await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
 
         await playerSearchPage.searchForPlayer('Show All');
         await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);

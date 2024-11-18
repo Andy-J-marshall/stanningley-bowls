@@ -24,13 +24,9 @@ test.describe('Player detailed stats', () => {
         }) => {
             await yearSelectPage.select2023Year();
             await playerSearchPage.searchForPlayer(player);
-            await expect(individualPlayerStatsPage.playerStatsItem).toHaveCount(
-                1
-            );
+            await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
 
-            await expect(individualPlayerStatsPage.playerNameTitle).toHaveText(
-                player
-            );
+            await expect(individualPlayerStatsPage.title).toHaveText(player);
 
             await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
             const {

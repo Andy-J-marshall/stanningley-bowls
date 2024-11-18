@@ -3,8 +3,8 @@ import { PlayerStatsToCheck } from '../utils/interfaces';
 
 export class IndividualPlayerStatsPage {
     public readonly page: Page;
-    public readonly playerStatsItem: Locator;
-    public readonly playerNameTitle: Locator;
+    public readonly playerStats: Locator;
+    public readonly title: Locator;
     private readonly overviewAccordionButton: Locator;
     private readonly winLossAccordionButton: Locator;
     private readonly teamAccordionButton: Locator;
@@ -18,8 +18,8 @@ export class IndividualPlayerStatsPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.playerStatsItem = page.locator('#detailed-player-stats');
-        this.playerNameTitle = page.locator('#playerNameTitle');
+        this.playerStats = page.locator('#detailed-player-stats');
+        this.title = page.locator('#playerNameTitle');
         this.overviewAccordionButton = page.locator('#stats-overview');
         this.winLossAccordionButton = page.locator('#stats-wl');
         this.teamAccordionButton = page.locator('#stats-teams');
