@@ -48,11 +48,40 @@ test.describe('Player stats - search', () => {
         await yearSelectPage.select2023Year();
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
-        await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
+
+        await expect(individualPlayerStatsPage.accordions).toHaveCount(4);
+        await expect(individualPlayerStatsPage.overviewAccordion).toHaveText(
+            'OVERVIEW'
+        );
+        await expect(individualPlayerStatsPage.winLossAccordion).toHaveText(
+            'WINS & LOSSES'
+        );
+        await expect(individualPlayerStatsPage.aggAccordion).toHaveText(
+            'AGGREGATES'
+        );
+        await expect(individualPlayerStatsPage.resultsAccordion).toHaveText(
+            'RESULTS'
+        );
 
         await playerSearchPage.clickBackToSummary();
         await playerStatOptionsPage.deselectClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
-        await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
+
+        await expect(individualPlayerStatsPage.accordions).toHaveCount(5);
+        await expect(individualPlayerStatsPage.overviewAccordion).toHaveText(
+            'OVERVIEW'
+        );
+        await expect(individualPlayerStatsPage.winLossAccordion).toHaveText(
+            'WINS & LOSSES'
+        );
+        await expect(individualPlayerStatsPage.aggAccordion).toHaveText(
+            'AGGREGATES'
+        );
+        await expect(individualPlayerStatsPage.teamAccordion).toHaveText(
+            'TEAMS'
+        );
+        await expect(individualPlayerStatsPage.resultsAccordion).toHaveText(
+            'RESULTS'
+        );
     });
 });

@@ -25,10 +25,8 @@ test.describe('Player detailed stats', () => {
             await yearSelectPage.select2023Year();
             await playerSearchPage.searchForPlayer(player);
             await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
-
             await expect(individualPlayerStatsPage.title).toHaveText(player);
 
-            await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
             const {
                 totalAgg,
                 totalAggAgainst,
@@ -73,7 +71,7 @@ test.describe('Player detailed stats', () => {
             await yearSelectPage.select2023Year();
             await playerStatOptionsPage.selectAllClubStatsSwitch();
             await playerSearchPage.searchForPlayer(player);
-            await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
+
             const {
                 totalAgg,
                 totalAggAgainst,
@@ -109,8 +107,6 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
-
         const stats = {
             totalGamesPlayed: 385,
             totalWins: 147,
@@ -131,8 +127,6 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
-
-        await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
 
         const stats = {
             totalGamesPlayed: 463,

@@ -5,12 +5,12 @@ export class IndividualPlayerStatsPage {
     public readonly page: Page;
     public readonly playerStats: Locator;
     public readonly title: Locator;
-    private readonly overviewAccordionButton: Locator;
-    private readonly winLossAccordionButton: Locator;
-    private readonly teamAccordionButton: Locator;
-    private readonly aggAccordionButton: Locator;
-    private readonly resultsAccordionButton: Locator;
-    private readonly accordionButtons: Locator;
+    public readonly overviewAccordion: Locator;
+    public readonly winLossAccordion: Locator;
+    public readonly teamAccordion: Locator;
+    public readonly aggAccordion: Locator;
+    public readonly resultsAccordion: Locator;
+    public readonly accordions: Locator;
     private readonly totalGamesPlayed: Locator;
     private readonly totalWins: Locator;
     private readonly totalLosses: Locator;
@@ -20,36 +20,18 @@ export class IndividualPlayerStatsPage {
         this.page = page;
         this.playerStats = page.locator('#detailed-player-stats');
         this.title = page.locator('#playerNameTitle');
-        this.overviewAccordionButton = page.locator('#stats-overview');
-        this.winLossAccordionButton = page.locator('#stats-wl');
-        this.teamAccordionButton = page.locator('#stats-teams');
-        this.aggAccordionButton = page.locator('#stats-aggregate');
-        this.resultsAccordionButton = page.locator('#stats-results');
-        this.accordionButtons = page.locator(
+        this.overviewAccordion = page.locator('#stats-overview');
+        this.winLossAccordion = page.locator('#stats-wl');
+        this.teamAccordion = page.locator('#stats-teams');
+        this.aggAccordion = page.locator('#stats-aggregate');
+        this.resultsAccordion = page.locator('#stats-results');
+        this.accordions = page.locator(
             '#detailed-player-stats .accordion-button'
         );
         this.totalGamesPlayed = page.locator('#totalGamesPlayed');
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-    }
-
-    async checkTeamAccordionHeadersExist() {
-        await expect(this.accordionButtons).toHaveCount(5);
-        await this.checkAccordionHeaderExists();
-        await expect(this.teamAccordionButton).toHaveText('TEAMS');
-    }
-
-    async checkTeamAccordionHeadersNotExists() {
-        await expect(this.accordionButtons).toHaveCount(4);
-        await this.checkAccordionHeaderExists();
-    }
-
-    private async checkAccordionHeaderExists() {
-        await expect(this.overviewAccordionButton).toHaveText('OVERVIEW');
-        await expect(this.winLossAccordionButton).toHaveText('WINS & LOSSES');
-        await expect(this.aggAccordionButton).toHaveText('AGGREGATES');
-        await expect(this.resultsAccordionButton).toHaveText('RESULTS');
     }
 
     async validateOverviewStats(playerStats: PlayerStatsToCheck) {
