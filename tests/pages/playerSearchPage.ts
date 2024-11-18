@@ -13,7 +13,7 @@ export class PlayerSearchPage {
             '#search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
         );
         this.playerListInDropdown = page.locator('#search');
-        this.backButton = page.locator('#back-button');
+        this.backButton = page.getByRole('button', { name: 'BACK TO SUMMARY' });
     }
 
     async goto() {

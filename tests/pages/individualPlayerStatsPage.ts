@@ -4,12 +4,14 @@ export class IndividualPlayerStatsPage {
     public readonly page: Page;
     public readonly playerStats: Locator;
     public readonly title: Locator;
+
     public readonly overviewAccordion: Locator;
     public readonly winLossAccordion: Locator;
-    public readonly teamAccordion: Locator;
     public readonly aggAccordion: Locator;
+    public readonly teamAccordion: Locator;
     public readonly resultsAccordion: Locator;
     public readonly accordions: Locator;
+
     private readonly totalGamesPlayed: Locator;
     private readonly totalWins: Locator;
     private readonly totalWinPerc: Locator;
@@ -21,14 +23,20 @@ export class IndividualPlayerStatsPage {
 
         this.playerStats = page.locator('#detailed-player-stats');
         this.title = page.locator('#playerNameTitle');
-        this.overviewAccordion = page.locator('#stats-overview');
-        this.winLossAccordion = page.locator('#stats-wl');
-        this.teamAccordion = page.locator('#stats-teams');
-        this.aggAccordion = page.locator('#stats-aggregate');
-        this.resultsAccordion = page.locator('#stats-results');
+
+        this.overviewAccordion = page.getByRole('heading', {
+            name: 'OVERVIEW',
+        });
+        this.winLossAccordion = page.getByRole('heading', {
+            name: 'WINS & LOSSES',
+        });
+        this.aggAccordion = page.getByRole('heading', { name: 'AGGREGATES' });
+        this.teamAccordion = page.getByRole('heading', { name: 'TEAMS' });
+        this.resultsAccordion = page.getByRole('heading', { name: 'RESULTS' });
         this.accordions = page.locator(
             '#detailed-player-stats .accordion-button'
         );
+
         this.totalGamesPlayed = page.locator('#totalGamesPlayed');
         this.totalWins = page.locator('#totalWins');
         this.totalWinPerc = page.locator('#totalWinPerc');
