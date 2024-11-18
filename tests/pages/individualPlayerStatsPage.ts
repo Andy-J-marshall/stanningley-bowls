@@ -3,8 +3,8 @@ import { PlayerStatsToCheck } from '../utils/interfaces';
 
 export class IndividualPlayerStatsPage {
     public readonly page: Page;
-    private readonly playerStatsItem: Locator;
-    private readonly playerNameTitle: Locator;
+    public readonly playerStatsItem: Locator;
+    public readonly playerNameTitle: Locator;
     private readonly overviewAccordionButton: Locator;
     private readonly winLossAccordionButton: Locator;
     private readonly teamAccordionButton: Locator;
@@ -32,14 +32,6 @@ export class IndividualPlayerStatsPage {
         this.totalWins = page.locator('#totalWins');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
-    }
-
-    async checkPlayerIsReturned() {
-        await expect(this.playerStatsItem).toHaveCount(1);
-    }
-
-    async checkPlayerName(expectedPlayer: string) {
-        await expect(this.playerNameTitle).toHaveText(expectedPlayer);
     }
 
     async checkTeamAccordionHeadersExist() {

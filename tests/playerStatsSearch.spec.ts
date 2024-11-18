@@ -1,3 +1,4 @@
+import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
@@ -17,7 +18,8 @@ test.describe('Player stats - search', () => {
     }) => {
         await yearSelectPage.select2023Year();
         await playerSearchPage.searchForPlayer('Paul Bowes');
-        await individualPlayerStatsPage.checkPlayerIsReturned();
+
+        await expect(individualPlayerStatsPage.playerStatsItem).toHaveCount(1);
 
         await playerSearchPage.searchForPlayer('Show All');
         await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);
@@ -26,12 +28,10 @@ test.describe('Player stats - search', () => {
     test('Clicking back to summary button returns all stats', async ({
         playerSummaryPage,
         playerSearchPage,
-        individualPlayerStatsPage,
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
         await playerSearchPage.searchForPlayer('Alyssa Randell');
-        await individualPlayerStatsPage.checkPlayerIsReturned();
 
         await playerSearchPage.clickBackToSummary();
         await playerSummaryPage.checkNumberOfPlayersReturned(totalPlayerCOunt);

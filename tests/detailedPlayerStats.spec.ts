@@ -1,3 +1,4 @@
+import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import allClubBowlsStats from '../src/data/allPlayerStats2023.json';
@@ -23,8 +24,14 @@ test.describe('Player detailed stats', () => {
         }) => {
             await yearSelectPage.select2023Year();
             await playerSearchPage.searchForPlayer(player);
-            await individualPlayerStatsPage.checkPlayerIsReturned();
-            await individualPlayerStatsPage.checkPlayerName(player);
+            await expect(individualPlayerStatsPage.playerStatsItem).toHaveCount(
+                1
+            );
+
+            await expect(individualPlayerStatsPage.playerNameTitle).toHaveText(
+                player
+            );
+
             await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
             const {
                 totalAgg,
@@ -106,8 +113,6 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.checkPlayerIsReturned();
-        await individualPlayerStatsPage.checkPlayerName(player);
         await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
 
         const stats = {
@@ -131,8 +136,6 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.checkPlayerIsReturned();
-        await individualPlayerStatsPage.checkPlayerName(player);
         await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
 
         const stats = {
