@@ -1,7 +1,5 @@
 import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
-import bowlsStats from '../src/data/bowlsStats2023.json';
-import allClubBowlsStats from '../src/data/allPlayerStats2023.json';
 
 test.describe('Player detailed stats overview', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -10,12 +8,33 @@ test.describe('Player detailed stats overview', () => {
 
     test('Detailed player stats overview show the wins & losses stats', async ({
         detailedPlayerStatsPage,
+        playerStatsWLPage,
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
-        await playerSearchPage.searchForPlayer('Alison Woodfine');
+        await yearSelectPage.select2022Year();
+        await playerSearchPage.searchForPlayer('Jeff Allman');
 
         await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
+
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('27');
+        await expect(playerStatsWLPage.average).toHaveText('-3.22');
+        await expect(playerStatsWLPage.wins).toHaveText('12');
+        await expect(playerStatsWLPage.losses).toHaveText('15');
+        await expect(playerStatsWLPage.winPerc).toHaveText('44%');
+
+        await playerStatsWLPage.clickSinglesButton();
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('17');
+        await expect(playerStatsWLPage.average).toHaveText('-1.94');
+        await expect(playerStatsWLPage.wins).toHaveText('8');
+        await expect(playerStatsWLPage.losses).toHaveText('9');
+        await expect(playerStatsWLPage.winPerc).toHaveText('47%');
+
+        await playerStatsWLPage.clickPairsButton();
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('10');
+        await expect(playerStatsWLPage.average).toHaveText('-5.40');
+        await expect(playerStatsWLPage.wins).toHaveText('4');
+        await expect(playerStatsWLPage.losses).toHaveText('6');
+        await expect(playerStatsWLPage.winPerc).toHaveText('40%');
     });
 });

@@ -1,6 +1,5 @@
 import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
-import { config } from '../src/config';
 
 test.describe('Records', () => {
     test.beforeEach(async ({ recordsPage }) => {
@@ -92,9 +91,8 @@ test.describe('Records', () => {
         await yearSelectPage.select2023Year();
         await teamTabsPage.selectWedPairsTeamTab();
 
-        const teamName = config.teamNames.shortName;
         expect(recordsPage.wedPairsNoGamesPlayedMessage).toContainText(
-            `${teamName} did not play on this day for the selected year`
+            'Stanningley did not play on this day for the selected year'
         );
     });
 
