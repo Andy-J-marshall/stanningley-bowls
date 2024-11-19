@@ -40,7 +40,7 @@ test.describe('Records', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
-        await teamTabsPage.selectThurVetsTeamFromRecordsTabs();
+        await teamTabsPage.selectThurVetsTeamTab();
 
         expect(recordsPage.thurVetsWinRecord).toBeVisible();
         expect(recordsPage.overallGamesRecord).toBeVisible({ visible: false });
@@ -65,7 +65,7 @@ test.describe('Records', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2022Year();
-        await teamTabsPage.selectTuesVetsTeamFromRecordsTabs();
+        await teamTabsPage.selectTuesVetsTeamTab();
 
         expect(recordsPage.tuesVetsWinRecord).toBeVisible();
         expect(recordsPage.overallGamesRecord).toBeVisible({ visible: false });
@@ -90,7 +90,7 @@ test.describe('Records', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
-        await teamTabsPage.selectWedPairsTeamFromRecordsTabs();
+        await teamTabsPage.selectWedPairsTeamTab();
 
         const teamName = config.teamNames.shortName;
         expect(recordsPage.wedPairsNoGamesPlayedMessage).toContainText(

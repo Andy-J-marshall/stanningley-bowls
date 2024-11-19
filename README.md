@@ -1,4 +1,4 @@
-# README
+# BOWLING CLUB WEBSITE
 
 This web app displays information and stats for the Crown Green Bowling club.
 There is also a python script that takes the raw data from bowlsnet.uk and generates a JSON file that the web app uses.
@@ -10,7 +10,6 @@ There is also a python script that takes the raw data from bowlsnet.uk and gener
     -   Run: `gh auth login` and login to GitHub
 -   Install NodeJS
 -   Install python 3
-    -   Run: `pip3 install openpyxl==2.6.2` (only need if updated stats for 2022 and 2023)
 
 # WEB APPLICATION
 
@@ -204,3 +203,4 @@ Update team info in all components:
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
 -   Add better test coverage
+-   Simplify the the pipeline jobs
