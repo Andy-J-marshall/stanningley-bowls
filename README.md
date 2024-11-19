@@ -1,8 +1,6 @@
-# STANNINGLEY PARK BOWLING CLUB
+# STANNINGLEY PARK BOWLING CLUB <img src="src/images/logos/brand-banner-logo.png" alt="Stanningley Park Bowling Club" height="90">
 
 Welcome to the website for Stanningley Park Bowling Club.
-
-<img src="src/images/logos/brand-banner-logo.png" alt="Stanningley Park Bowling Club" height="100">
 
 This repository contains multiple components:
 
