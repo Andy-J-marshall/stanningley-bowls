@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { IndividualPlayerStatsPage } from '../pages/individualPlayerStatsPage';
+import { DetailedPlayerStatsPage } from '../pages/detailedPlayerStatsPage';
 import { PlayerSearchPage } from '../pages/playerSearchPage';
 import { PlayerSummaryPage } from '../pages/playerSummaryPage';
 import { PlayerStatOptionsPage } from '../pages/playerStatOptionsPage';
@@ -10,7 +10,7 @@ import { TeamTabsPage } from '../pages/teamTabsPage';
 import { YearSelectPage } from '../pages/yearSelectPage';
 
 type testFixture = {
-    individualPlayerStatsPage: IndividualPlayerStatsPage;
+    detailedPlayerStatsPage: DetailedPlayerStatsPage;
     playerSearchPage: PlayerSearchPage;
     playerSummaryPage: PlayerSummaryPage;
     playerStatOptionsPage: PlayerStatOptionsPage;
@@ -22,8 +22,8 @@ type testFixture = {
 };
 
 const test = base.extend<testFixture>({
-    individualPlayerStatsPage: async ({ page }, use) => {
-        const individualPlayerStatsPage = new IndividualPlayerStatsPage(page);
+    detailedPlayerStatsPage: async ({ page }, use) => {
+        const individualPlayerStatsPage = new DetailedPlayerStatsPage(page);
         await use(individualPlayerStatsPage);
     },
     playerSearchPage: async ({ page }, use) => {

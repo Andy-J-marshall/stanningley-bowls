@@ -18,7 +18,7 @@ test.describe('Player detailed stats', () => {
     ];
     for (const player of clubPlayers) {
         test(`Summary of player's team stats are correct for ${player} in 2023`, async ({
-            individualPlayerStatsPage,
+            detailedPlayerStatsPage: individualPlayerStatsPage,
             playerSearchPage,
             yearSelectPage,
         }) => {
@@ -58,7 +58,7 @@ test.describe('Player detailed stats', () => {
     ];
     for (const player of allClubPlayers) {
         test(`Summary of player's all team stats are correct for ${player} in 2023`, async ({
-            individualPlayerStatsPage,
+            detailedPlayerStatsPage: individualPlayerStatsPage,
             playerSearchPage,
             playerStatOptionsPage,
             yearSelectPage,
@@ -88,7 +88,7 @@ test.describe('Player detailed stats', () => {
     }
 
     test('Detailed player stats for all years for Dave Hudson', async ({
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage: individualPlayerStatsPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -102,7 +102,7 @@ test.describe('Player detailed stats', () => {
     });
 
     test('Detailed player stats for all clubs and years for Dave Hudson', async ({
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage: individualPlayerStatsPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -117,7 +117,7 @@ test.describe('Player detailed stats', () => {
     });
 
     test('Detailed player stats show the wins & losses stats', async ({
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage: individualPlayerStatsPage,
         playerSearchPage,
         yearSelectPage,
     }) => {

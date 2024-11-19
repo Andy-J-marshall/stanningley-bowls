@@ -13,13 +13,13 @@ test.describe('Player stats - search', () => {
     test('Stats search bar can show all player stats', async ({
         playerSummaryPage,
         playerSearchPage,
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage,
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
         await playerSearchPage.searchForPlayer('Paul Bowes');
 
-        await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
+        await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
 
         await playerSearchPage.searchForPlayer('Show All');
         await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
@@ -39,7 +39,7 @@ test.describe('Player stats - search', () => {
 
     test('Can switch between team and all stats when searching', async ({
         playerSearchPage,
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage,
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
@@ -49,17 +49,17 @@ test.describe('Player stats - search', () => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await expect(individualPlayerStatsPage.accordions).toHaveCount(4);
-        await expect(individualPlayerStatsPage.overviewAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.accordions).toHaveCount(4);
+        await expect(detailedPlayerStatsPage.overviewAccordion).toHaveText(
             'OVERVIEW'
         );
-        await expect(individualPlayerStatsPage.winLossAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.winLossAccordion).toHaveText(
             'WINS & LOSSES'
         );
-        await expect(individualPlayerStatsPage.aggAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.aggAccordion).toHaveText(
             'AGGREGATES'
         );
-        await expect(individualPlayerStatsPage.resultsAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.resultsAccordion).toHaveText(
             'RESULTS'
         );
 
@@ -67,20 +67,20 @@ test.describe('Player stats - search', () => {
         await playerStatOptionsPage.deselectClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await expect(individualPlayerStatsPage.accordions).toHaveCount(5);
-        await expect(individualPlayerStatsPage.overviewAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.accordions).toHaveCount(5);
+        await expect(detailedPlayerStatsPage.overviewAccordion).toHaveText(
             'OVERVIEW'
         );
-        await expect(individualPlayerStatsPage.winLossAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.winLossAccordion).toHaveText(
             'WINS & LOSSES'
         );
-        await expect(individualPlayerStatsPage.aggAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.aggAccordion).toHaveText(
             'AGGREGATES'
         );
-        await expect(individualPlayerStatsPage.teamAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.teamAccordion).toHaveText(
             'TEAMS'
         );
-        await expect(individualPlayerStatsPage.resultsAccordion).toHaveText(
+        await expect(detailedPlayerStatsPage.resultsAccordion).toHaveText(
             'RESULTS'
         );
     });

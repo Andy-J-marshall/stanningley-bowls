@@ -12,7 +12,7 @@ test.describe('Player summary stats', () => {
 
     test('Can click on player to view detailed stats', async ({
         playerSummaryPage,
-        individualPlayerStatsPage,
+        detailedPlayerStatsPage,
         yearSelectPage,
     }) => {
         const player = 'Andy Waller';
@@ -20,8 +20,8 @@ test.describe('Player summary stats', () => {
 
         await playerSummaryPage.clickOnPlayerLink(player);
 
-        await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
-        await expect(individualPlayerStatsPage.title).toHaveText(player);
+        await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
+        await expect(detailedPlayerStatsPage.title).toHaveText(player);
     });
 
     test('Summary of Steve Gardner stats are correct', async ({
