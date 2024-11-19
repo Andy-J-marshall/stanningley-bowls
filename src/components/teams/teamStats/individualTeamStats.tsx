@@ -25,9 +25,16 @@ function IndividualTeamStats(props: IndividualTeamStatsProps) {
     const totalLosses = awayLosses + homeLosses + cupLosses;
     const totalGames = totalDraws + totalWins + totalLosses;
 
+    const id =
+        day
+            .toLowerCase()
+            .replaceAll(' ', '')
+            .replaceAll('(', '')
+            .replaceAll(')', '') + '-team-results';
+
     if (totalGames > 0) {
         return (
-            <div id={day.toLowerCase().replaceAll(' ', '') + '-team-results'}>
+            <div className='team-stats' id={id}>
                 {bTeam && <br />}
                 {bTeam && <hr />}
                 <h4>{day.toLowerCase()}</h4>

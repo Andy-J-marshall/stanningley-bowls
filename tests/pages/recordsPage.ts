@@ -5,6 +5,8 @@ export class RecordsPage {
 
     public readonly noGamesMessage: Locator;
 
+    public readonly mondayTeamRecords: Locator;
+
     public readonly overallWinRecord: Locator;
     public readonly overallWinsRecordPlayer: Locator;
     public readonly overallGamesRecord: Locator;
@@ -30,6 +32,15 @@ export class RecordsPage {
 
     constructor(page: Page) {
         this.page = page;
+
+        this.noGamesMessage = page.getByText(
+            'Stanningley did not play on this day for the selected year'
+        );
+
+        this.mondayTeamRecords = page.locator(
+            '#team-select-tabs-tabpane-mon .team-records'
+        );
+
         this.overallGamesRecord = page.locator(
             '#team-select-tabs-tabpane-Combined #mostGames'
         );
@@ -91,10 +102,6 @@ export class RecordsPage {
         );
         this.thurVetsAverageRecordPlayer = page.locator(
             '#team-select-tabs-tabpane-thuvets #bestAveragePlayer'
-        );
-
-        this.noGamesMessage = page.getByText(
-            'Stanningley did not play on this day for the selected year'
         );
     }
 

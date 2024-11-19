@@ -77,7 +77,7 @@ function TeamStats(props: TeamStatsProps) {
 
     if (teamResults && anyGamesPlayed) {
         return (
-            <div id="team-stats">
+            <div>
                 <h1>{yearInTitle} team stats</h1>
                 <TeamTabs
                     allCombinedComponent={
@@ -94,7 +94,6 @@ function TeamStats(props: TeamStatsProps) {
             <div
                 className="center"
                 style={{ width: '95%' }}
-                id="team-stats-unavailable"
             >
                 <h1>{yearInTitle} team stats</h1>
                 <p>

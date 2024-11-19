@@ -94,6 +94,20 @@ test.describe('Records', () => {
         await expect(recordsPage.noGamesMessage).toBeVisible();
     });
 
+    test('Team records show B team if there is one', async ({
+        recordsPage,
+        teamTabsPage,
+        yearSelectPage,
+    }) => {
+        await teamTabsPage.selectMondayTeamTab();
+
+        await yearSelectPage.select2013Year();
+        await expect(recordsPage.mondayTeamRecords).toHaveCount(2);
+
+        await yearSelectPage.select2021Year();
+        await expect(recordsPage.mondayTeamRecords).toHaveCount(1);
+    });
+
     test(`Records year dropdown appears if there are multiple years of records available`, async ({
         yearSelectPage,
     }) => {

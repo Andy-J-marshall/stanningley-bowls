@@ -86,6 +86,20 @@ test.describe('Team Stats', () => {
         await expect(teamStatsPage.noGamesMessage).toBeVisible();
     });
 
+    test('Team stats show B team if there is one', async ({
+        teamStatsPage,
+        teamTabsPage,
+        yearSelectPage,
+    }) => {
+        await teamTabsPage.selectMondayTeamTab();
+
+        await yearSelectPage.select2013Year();
+        await expect(teamStatsPage.mondayTeamStats).toHaveCount(2);
+
+        await yearSelectPage.select2021Year();
+        await expect(teamStatsPage.mondayTeamStats).toHaveCount(1);
+    });
+
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({
         yearSelectPage,
     }) => {

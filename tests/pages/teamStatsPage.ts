@@ -5,6 +5,8 @@ export class TeamStatsPage {
 
     public readonly noGamesMessage: Locator;
 
+    public readonly mondayTeamStats: Locator;
+
     public readonly totalGamesValue: Locator;
     public readonly totalWinsValue: Locator;
     public readonly totalLossesValue: Locator;
@@ -40,6 +42,15 @@ export class TeamStatsPage {
 
     constructor(page: Page) {
         this.page = page;
+
+        this.noGamesMessage = page.getByText(
+            'Stanningley did not play on this day for the selected year'
+        );
+
+        this.mondayTeamStats = page.locator(
+            '#team-select-tabs-tabpane-mon .team-stats'
+        );
+
         this.totalGamesValue = page.locator(
             '#combined-team-win-losses #totalGamesValue'
         );
@@ -131,9 +142,6 @@ export class TeamStatsPage {
         );
         this.tuesVetsOpponentAggValue = page.locator(
             '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
-        );
-        this.noGamesMessage = page.getByText(
-            'Stanningley did not play on this day for the selected year'
         );
     }
 
