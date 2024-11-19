@@ -3,7 +3,7 @@ import { test } from './utils/fixture';
 import bowlsStats from '../src/data/bowlsStats2023.json';
 import allClubBowlsStats from '../src/data/allPlayerStats2023.json';
 
-test.describe('Player detailed stats', () => {
+test.describe('Player detailed stats overview', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
     });
@@ -88,7 +88,7 @@ test.describe('Player detailed stats', () => {
         });
     }
 
-    test('Detailed player stats for all years for Dave Hudson', async ({
+    test('Detailed player stats overview for all years for Dave Hudson', async ({
         playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
@@ -102,7 +102,7 @@ test.describe('Player detailed stats', () => {
         await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
-    test('Detailed player stats for all clubs and years for Dave Hudson', async ({
+    test('Detailed player stats overview for all clubs and years for Dave Hudson', async ({
         playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
@@ -117,7 +117,7 @@ test.describe('Player detailed stats', () => {
         await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
-    test('Detailed player stats show the wins & losses stats', async ({
+    test('Detailed player stats overview show the wins & losses stats', async ({
         detailedPlayerStatsPage,
         playerSearchPage,
         yearSelectPage,
