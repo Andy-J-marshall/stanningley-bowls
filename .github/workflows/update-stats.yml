@@ -6,8 +6,8 @@ on:
     workflow_dispatch:
 
 env:
-    EMAIL: "stanningleybowlsclub@gmail.com"
-    USERNAME: "SPBC GitHub Action"
+    EMAIL: stanningleybowlsclub@gmail.com
+    USERNAME: SPBC GitHub Action
 
 jobs:
     Update-Stats:
@@ -27,8 +27,8 @@ jobs:
             - name: Configure Git
               run: |
                   git pull
-                  git config --global user.email ${{ env.EMAIL }}
-                  git config --global user.name ${{ env.USERNAME }}
+                  git config --global user.email "${{ env.EMAIL }}"
+                  git config --global user.name "${{ env.USERNAME }}"
             - name: Install dependencies
               run: |
                   npm ci

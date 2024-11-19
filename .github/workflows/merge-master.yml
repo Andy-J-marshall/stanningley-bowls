@@ -5,8 +5,8 @@ on:
     workflow_dispatch:
 
 env:
-    EMAIL: "stanningleybowlsclub@gmail.com"
-    USERNAME: "SPBC GitHub Action"
+    EMAIL: stanningleybowlsclub@gmail.com
+    USERNAME: SPBC GitHub Action
 
 jobs:
     Merge:
@@ -17,8 +17,8 @@ jobs:
                   ref: update_stats_prod
             - name: Configure Git
               run: |
-                  git config --global user.email ${{ env.EMAIL }}
-                  git config --global user.name ${{ env.USERNAME }}
+                  git config --global user.email "${{ env.EMAIL }}"
+                  git config --global user.name "${{ env.USERNAME }}"
             - name: Merge master
               run: |
                   git fetch origin master
