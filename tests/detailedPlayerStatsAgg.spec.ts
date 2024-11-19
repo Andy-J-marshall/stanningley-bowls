@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
 
-test.describe('Player detailed stats aggregate', () => {
+test.describe('Player detailed stats - aggregate', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
     });

@@ -12,6 +12,7 @@ import { PlayerStatsOverviewPage } from '../pages/playerStatsOverviewPage';
 import { PlayerStatsWLPage } from '../pages/playerStatsWLPage';
 import { PlayerStatsAggPage } from '../pages/playerStatsAggPage';
 import { PlayerStatsTeamPage } from '../pages/playerStatsTeamPage';
+import { PlayerStatsResultPage } from '../pages/playerStatsResultPage';
 
 type testFixture = {
     detailedPlayerStatsPage: DetailedPlayerStatsPage;
@@ -19,6 +20,7 @@ type testFixture = {
     playerStatsWLPage: PlayerStatsWLPage;
     playerStatsAggPage: PlayerStatsAggPage;
     playerStatsTeamPage: PlayerStatsTeamPage;
+    playerStatsResultPage: PlayerStatsResultPage;
     playerSearchPage: PlayerSearchPage;
     playerSummaryPage: PlayerSummaryPage;
     playerStatOptionsPage: PlayerStatOptionsPage;
@@ -49,6 +51,10 @@ const test = base.extend<testFixture>({
     playerStatsTeamPage: async ({ page }, use) => {
         const playerStatsTeamPage = new PlayerStatsTeamPage(page);
         await use(playerStatsTeamPage);
+    },
+    playerStatsResultPage: async ({ page }, use) => {
+        const playerStatsResultPage = new PlayerStatsResultPage(page);
+        await use(playerStatsResultPage);
     },
     playerSearchPage: async ({ page }, use) => {
         const playerSearch = new PlayerSearchPage(page);
