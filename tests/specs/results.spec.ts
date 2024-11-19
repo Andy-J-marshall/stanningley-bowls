@@ -6,13 +6,31 @@ test.describe('Results', () => {
         await resultPage.goto();
     });
 
-    test('Teams results appear for previous years', async ({
+    test('Teams results appear for 2023', async ({
         resultPage,
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
 
         expect(resultPage.teamResultsSections).toHaveCount(6);
+    });
+
+    test('Teams results appear for 2021', async ({
+        resultPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2021Year();
+
+        expect(resultPage.teamResultsSections).toHaveCount(3);
+    });
+
+    test('Teams results appear for 2013', async ({
+        resultPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2013Year();
+
+        expect(resultPage.teamResultsSections).toHaveCount(8);
     });
 
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({
