@@ -5,8 +5,8 @@ on:
     workflow_dispatch:
 
 env:
-    EMAIL: stanningleybowlsclub@gmail.com
-    USERNAME: SPBC GitHub Action
+    EMAIL: "stanningleybowlsclub@gmail.com"
+    USERNAME: "SPBC GitHub Action"
 
 jobs:
     Merge:
