@@ -12,6 +12,10 @@ export class DetailedPlayerStatsPage {
     public readonly resultsAccordion: Locator;
     public readonly accordions: Locator;
 
+    private readonly allButton: Locator;
+    private readonly singlesButton: Locator;
+    private readonly pairsButton: Locator;
+
     constructor(page: Page) {
         this.page = page;
 
@@ -30,6 +34,10 @@ export class DetailedPlayerStatsPage {
         this.accordions = page.locator(
             '#detailed-player-stats .accordion-button'
         );
+
+        this.allButton = page.getByRole('group').getByText('All');
+        this.singlesButton = page.getByRole('group').getByText('Singles');
+        this.pairsButton = page.getByRole('group').getByText('Pairs');
     }
 
     async clickWinsAndLossesAccordion() {
@@ -46,5 +54,17 @@ export class DetailedPlayerStatsPage {
 
     async clickResultsAccordion() {
         await this.resultsAccordion.click();
+    }
+
+    async clickAllButton() {
+        await this.allButton.click();
+    }
+
+    async clickSinglesButton() {
+        await this.singlesButton.click();
+    }
+
+    async clickPairsButton() {
+        await this.pairsButton.click();
     }
 }

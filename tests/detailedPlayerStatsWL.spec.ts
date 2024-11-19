@@ -1,12 +1,12 @@
 import { expect } from '@playwright/test';
 import { test } from './utils/fixture';
 
-test.describe('Player detailed stats overview', () => {
+test.describe('Player detailed stats wins and losses', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
     });
 
-    test('Detailed player stats overview show the wins & losses stats', async ({
+    test('Detailed player stats show the wins & losses stats', async ({
         detailedPlayerStatsPage,
         playerStatsWLPage,
         playerSearchPage,
@@ -23,14 +23,14 @@ test.describe('Player detailed stats overview', () => {
         await expect(playerStatsWLPage.losses).toHaveText('15');
         await expect(playerStatsWLPage.winPerc).toHaveText('44%');
 
-        await playerStatsWLPage.clickSinglesButton();
+        await detailedPlayerStatsPage.clickSinglesButton();
         await expect(playerStatsWLPage.gamesPlayed).toHaveText('17');
         await expect(playerStatsWLPage.average).toHaveText('-1.94');
         await expect(playerStatsWLPage.wins).toHaveText('8');
         await expect(playerStatsWLPage.losses).toHaveText('9');
         await expect(playerStatsWLPage.winPerc).toHaveText('47%');
 
-        await playerStatsWLPage.clickPairsButton();
+        await detailedPlayerStatsPage.clickPairsButton();
         await expect(playerStatsWLPage.gamesPlayed).toHaveText('10');
         await expect(playerStatsWLPage.average).toHaveText('-5.40');
         await expect(playerStatsWLPage.wins).toHaveText('4');
