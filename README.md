@@ -158,4 +158,3 @@ A number of manual changes are required at the end of each calendar year.
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
 -   Add better test coverage
--   Simplify the the pipeline jobs
