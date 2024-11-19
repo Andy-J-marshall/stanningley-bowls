@@ -35,12 +35,12 @@ export class PlayerSummaryPage {
     async validateSummaryStats(
         games: number,
         wins: number,
-        winPerc: string,
+        winPerc: number,
         avg: number
     ) {
         await expect(this.games).toContainText(games.toString());
         await expect(this.wins).toContainText(wins.toString());
-        await expect(this.winPerc).toContainText(winPerc.toString());
+        await expect(this.winPerc).toContainText(`${winPerc}%`);
         await expect(this.avg).toContainText(avg.toString());
     }
 }
