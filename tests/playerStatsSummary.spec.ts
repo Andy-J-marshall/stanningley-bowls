@@ -72,4 +72,6 @@ test.describe('Player summary stats', () => {
     }) => {
         await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
     });
+
+    // TODO add test to click on player link
 });

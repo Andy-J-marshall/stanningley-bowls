@@ -12,6 +12,7 @@ export class IndividualPlayerStatsPage {
     public readonly resultsAccordion: Locator;
     public readonly accordions: Locator;
 
+    public readonly biggestWin: Locator;
     private readonly totalGamesPlayed: Locator;
     private readonly totalWins: Locator;
     private readonly totalWinPerc: Locator;
@@ -42,6 +43,7 @@ export class IndividualPlayerStatsPage {
         this.totalWinPerc = page.locator('#totalWinPerc');
         this.totalLosses = page.locator('#totalLosses');
         this.totalAverage = page.locator('#totalAverage');
+        this.biggestWin = page.locator('#totalBiggestWin');
     }
 
     async validateOverviewStats(games: number, wins: number, avg: number) {
@@ -53,8 +55,5 @@ export class IndividualPlayerStatsPage {
         await expect(this.totalLosses).toHaveText(losses.toString());
         await expect(this.totalWinPerc).toHaveText(`${winPerc}%`);
         await expect(this.totalAverage).toHaveText(avg.toFixed(2).toString());
-        // TODO also check biggest win
     }
 }
-
-// TODO improve locators for each page

@@ -98,6 +98,7 @@ test.describe('Player detailed stats', () => {
         await playerSearchPage.searchForPlayer(player);
 
         await individualPlayerStatsPage.validateOverviewStats(385, 147, -2.34);
+        await expect(individualPlayerStatsPage.biggestWin).toHaveText('31 - 4');
     });
 
     test('Detailed player stats for all clubs and years for Dave Hudson', async ({
@@ -112,6 +113,7 @@ test.describe('Player detailed stats', () => {
         await playerSearchPage.searchForPlayer(player);
 
         await individualPlayerStatsPage.validateOverviewStats(463, 174, -2.48);
+        await expect(individualPlayerStatsPage.biggestWin).toHaveText('31 - 4');
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
