@@ -1,16 +1,28 @@
-# README
+# STANNINGLEY PARK BOWLING CLUB
 
-This web app displays information and stats for the Crown Green Bowling club.
-There is also a python script that takes the raw data from bowlsnet.uk and generates a JSON file that the web app uses.
+Welcome to the website for Stanningley Park Bowling Club.
+
+This repository contains multiple components:
+
+-   React web application to display club information and stats
+-   Scripts to scrape data from bowlsnet.uk and generate the stats
+-   GitHub Actions to automate the process of updating the stats and deploying the web app
+-   Playwright UI tests to ensure the web app is working as expected
+
+The flow of data is as follows:
+
+1. The Playwright script in `scripts/bowlsnet` generates text reports from bowlsnet.uk for each tracked league and saves them locally
+2. The python scripts in `scripts/statsScripts` reads the text reports and generates two JSON files for the stats, one for the club stats and one for all tracked club stats
+3. The react application in `src/` reads the JSON files and displays the data
 
 ## Pre-requisites
 
--   Install Git
--   Install GH CLI i.e. `brew install gh`
+-   Install git
+-   Install GH CLI:
+    -   `brew install gh`
     -   Run: `gh auth login` and login to GitHub
 -   Install NodeJS
 -   Install python 3
-    -   Run: `pip3 install openpyxl==2.6.2` (only need if updated stats for 2022 and 2023)
 
 # WEB APPLICATION
 
@@ -20,16 +32,16 @@ Run the following:
 
 -   `npm i`
 -   `npm run start`
--   Visit: http://localhost:5173
+-   The application should be running on: http://localhost:5173
 
 ## Deploy to Github Pages
 
 Run the following:
 
 -   `npm i`
--   `npm run build`
--   `npm run deploy`
--   Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain
+-   `npm run build-deploy`
+
+Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain
 
 ## Pipelines
 
@@ -40,17 +52,17 @@ There are several GitHub Action jobs that run. These can be found in `/.github/w
 -   `update-stats.yml` - this updates the stats on a branch and creates a PR, and is run on a schedule
 -   `merge-master.yml` - merges master into the release branch.
 
-Note, if the branch names change (e.g. `update_stats_prod` or `master`) then the jobs will need to be updated.
+Note: if the branch names change (e.g. `update_stats_prod` or `master`) then the jobs will need to be updated.
 
 ## Tests
 
--   Install Playwright using `npx playwright install --with-deps`
--   Run `npm run tests` to run the unit and UI tests
--   View reports using `npm run ui-test-reports`
+-   `npx playwright install --with-deps` - Installs Playwright
+-   `npm run tests` - Runs the unit and UI tests
+-   `npm run ui-test-reports` - View the UI test reports
 
 ## Maintenance
 
-Most of the club details are stored in the `config.ts` file (e.g. membership price, team names etc.), so any changes will need to be updated. Similarly, `statsData.ts` and `yearSelectDropdown.tsx` will need to be configured to support more years.
+Most of the club details are stored in the `config.ts` file (e.g. membership price, team names etc.), so any changes will need to be updated here. See the [END OF SEASON MAINTENANCE](#end-of-season-maintenance) section for more details on the changes required after each season.
 
 # STATS SCRIPTS
 
@@ -65,7 +77,7 @@ There are two stages to updating the player stats:
 
 The scripts to automate the process can be found in the `package.json` file.
 
-A stats JSON file will be created/updated here: `src/data/bowlsStats{year}.json`.
+The JSON file will be created/updated in `src/data/`.
 
 #### Update stats automatically
 
@@ -99,108 +111,49 @@ PATH=[insert path here]
 15 10,22 1-30 4-9 1,2,3,4,6 cd /path/to/repo && npm run get-stats-update-pr
 ```
 
-# Updates required at end of each calendar year
+# END OF SEASON MAINTENANCE
 
-Update the `teamDetails.py` script with the updated list of players, traitorPlayers, duplicatePlayerNames and teamDays.
+A number of manual changes are required at the end of each calendar year.
 
-Create a directory for the new year in the `/bowlsnetReports`.
+## Scripts
 
-Update the `teamDetails.py` script: deduplicateNames, otherTeams, and otherLeagues (any leagues added to `teamDays` will need to be removed from here).
-
-If entering a new league, make sure the `bowlsTeam.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
-
-After generating the stats file for the new year, import the file into `statsData.ts`. Update `allYearStats` and `allYearCombinedStats`.
-Update `statsCallback` in `App.tsx` with the reference to the new year's stats file.
-Update the default stats to display for `teamStats` and `combinedStats`.
-
-Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component.
-
-If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
-
-Add fixtures to Google calendar for all teams.
-
-Update `History.tsx` with any trophies won and `clubCupWinners.json` with the club cup winner.
-
-Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.tsx`.
-
-If adding or removing a second team, updated the following properties in `teamDetails.py`:
+1. Create a directory for the new year in the `/bowlsnetReports`.
+2. Update `teamDetails.py` script with any changes to the players i.e. `players`, `traitorPlayers`, `duplicatePlayerNames`, and `deduplicateNames` .
+3. Update `teamDetails.py` script with any changes to the teams i.e. `teamDays`, `otherTeams`, and `otherLeagues` (any leagues added to `teamDays` will need to be removed from here).
+4. If entering a new league, make sure the `bowlsTeam.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues.
+5. If adding or removing a second team, updated the following properties in `teamDetails.py`:
 
 -   `teamNames` - Add the lowercase team names for the B team
 -   `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
 
-Change the `days` property in `config.ts` to include an extra key for the second team (suffixed with ' (b)').
-Change the `historicTeamInfo` property in `config.ts` to include league data for any new teams or second teams.
-Update the `allTeamsInLeaguesSince2013` array in `config.ts` to include an extra keys (second team teams need to be suffixed with ' (b)').
-Update any URLs if the Bowlsnet link has changed.
-Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`.
+5. Consider whether to add league reports for any non-tracked leagues for the previous season e.g. Barkston Ash, AireWharfe Saturday. This might make it easier in the future to track these leagues if a new player joins who has played in them.
 
-Consider whether to add league reports for any non-tracked leagues e.g. Barkston Ash, AireWharfe Saturday, Leeds Ladies etc.
+## Web application
 
-# How to use this repo as a template for other clubs
+1. Import the new stats files into `statsData.ts`. Update `allYearStats` and `allYearCombinedStats`.
+2. Update `statsCallback` in `App.tsx` with the reference to the new year's stats file.
+   Update the default stats to display for `teamStats` and `combinedStats`.
+3. Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component.
+4. If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years.
+5. Update `History.tsx` with any trophies won.
+6. Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`.
+7. Configure the `config.ts` file with the new year's data:
 
-Change the Git credentials in the GitHub action `update-stats.yml`.
+    - Change the `days` to include an extra key for the second team (suffixed with ' (b)').
+    - Change the `historicTeamInfo` property include league data for any new teams or second teams.
+    - Update the `allTeamsInLeaguesSince2013` array to include an extra keys (second team teams need to be suffixed with ' (b)').
+    - Update URLs if any Bowlsnet links have changed.
 
-Update `scripts/statsScripts/teamDetails.py`/`statsHelper.py`:
+## Data
 
--   teamNames
--   preferredTeamName
--   teamDays
--   players
--   duplicatePlayerNames
--   traitorPlayers (also update the days)
+1. Update the `clubCupWinners.json` file with the club cup winner.
+2. Add fixtures to Google calendar for all teams.
 
-Update the playwright script (e.g. `teams` array) to get data from bowlsnet in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`
+## Tests
 
-Update `background-color` and `color` in `src/app.css`
-
-Update `public` folder:
-
--   CNAME
--   favicon.ico
--   title in `index.html`
--   short_name and name in `manifest.json`
-
-Update all images in the `/images` folder
-
-Link the Fixtures calendar to the correct one.
-
-Update `homepage` in `package.json`
-
-Check `bowlsTeam.py`/`bowlsCombined.py`:
-
--   Is the `cupText` array correct of the leagues the team is in?
-
-Update `src/config.ts` e.g.
-
--   membership info
--   social links
--   team names
--   team info
-
-Update `contact.tsx` page with correct information.
-
-Update `membership.tsx` and `socialInfo.tsx` pages.
-
-Update the `History.tsx` component, including the links in the config file, and the `clubCupWinners.json` file
-
-Update news items in `news.tsx`.
-
-Update list of supporters and images items in `supporters.tsx`
-
-Update tests:
-
--   players array in `playerStats.spec.ts`
-
-Update team info in all components:
-
--   Add/remove teams if there are more/fewer teams than Stanningley in `records` component
--   Add/remove teams if there are more/fewer teams than Stanningley in `players` component
--   Add/remove teams if there are more/fewer teams than Stanningley in `teamStats` component
--   Add/remove teams if there are more/fewer teams than Stanningley in `teamInfo` component
--   Add/remove teams if there are more/fewer teams than Stanningley in `teamTabs` component
+1. Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.tsx`.
 
 # Ideas for future improvements
 
 -   Consider creating a basic website template for other clubs to use, and how to make it maintainable
 -   Add other teams to the stats and add a filter
--   Add better test coverage and move assertions into the test files where possible

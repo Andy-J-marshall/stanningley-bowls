@@ -1,49 +1,48 @@
 import { expect, Locator, Page } from '@playwright/test';
 
 export class YearSelectPage {
-    private readonly page: Page;
+    public readonly page: Page;
+
     private readonly yearSelectDropdown: Locator;
-    private readonly year2013InYearDropdown: Locator;
-    private readonly year2022InYearDropdown: Locator;
-    private readonly year2023InYearDropdown: Locator;
-    private readonly year2024InYearDropdown: Locator;
-    private readonly allYearOptionsInDropdown: Locator;
+    private readonly year2013: Locator;
+    private readonly year2021: Locator;
+    private readonly year2022: Locator;
+    private readonly year2023: Locator;
+    private readonly allYears: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
-        this.year2013InYearDropdown = page.locator('#option2013');
-        this.year2022InYearDropdown = page.locator('#option2022');
-        this.year2023InYearDropdown = page.locator('#option2023');
-        this.year2024InYearDropdown = page.locator('#option2024');
-        this.allYearOptionsInDropdown = page.locator(
-            '.dropdown-menu .dropdown-item'
-        );
+        this.year2013 = page.getByRole('button', { name: '2013' });
+        this.year2021 = page.getByRole('button', { name: '2021' });
+        this.year2022 = page.getByRole('button', { name: '2022' });
+        this.year2023 = page.getByRole('button', { name: '2023' });
+        this.allYears = page.locator('.dropdown-menu .dropdown-item');
+    }
+
+    async select2021Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2021.click();
+    }
+
+    async select2023Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2023.click();
+    }
+
+    async select2022Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2022.click();
+    }
+
+    async select2013Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2013.click();
     }
 
     async checkYearDropdownHasAllYearOptions(expectedNumber: number) {
         await expect(this.yearSelectDropdown).toBeVisible();
         await this.yearSelectDropdown.click();
-        await expect(this.allYearOptionsInDropdown).toHaveCount(expectedNumber);
-    }
-
-    async select2024Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2024InYearDropdown.click();
-    }
-
-    async select2023Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2023InYearDropdown.click();
-    }
-
-    async select2022Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2022InYearDropdown.click();
-    }
-
-    async select2013Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2013InYearDropdown.click();
+        await expect(this.allYears).toHaveCount(expectedNumber);
     }
 }

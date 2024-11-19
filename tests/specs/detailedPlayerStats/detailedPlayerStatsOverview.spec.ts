@@ -1,8 +1,9 @@
-import { test } from './utils/fixture';
-import bowlsStats from '../src/data/bowlsStats2023.json';
-import allClubBowlsStats from '../src/data/allPlayerStats2023.json';
+import { expect } from '@playwright/test';
+import { test } from '../../utils/fixture';
+import bowlsStats from '../../../src/data/bowlsStats2023.json';
+import allClubBowlsStats from '../../../src/data/allPlayerStats2023.json';
 
-test.describe('Player detailed stats', () => {
+test.describe('Player detailed stats - overview', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
     });
@@ -17,39 +18,36 @@ test.describe('Player detailed stats', () => {
     ];
     for (const player of clubPlayers) {
         test(`Summary of player's team stats are correct for ${player} in 2023`, async ({
-            individualPlayerStatsPage,
+            detailedPlayerStatsPage,
+            playerStatsOverviewPage,
             playerSearchPage,
             yearSelectPage,
         }) => {
             await yearSelectPage.select2023Year();
             await playerSearchPage.searchForPlayer(player);
-            await individualPlayerStatsPage.checkPlayerIsReturned();
-            await individualPlayerStatsPage.checkPlayerName(player);
-            await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
+            await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
+            await expect(detailedPlayerStatsPage.title).toHaveText(player);
+
             const {
                 totalAgg,
                 totalAggAgainst,
                 homeWins,
                 awayWins,
                 cupWins,
-                homeLosses,
-                awayLosses,
-                cupLosses,
                 totalGamesPlayed,
             } = bowlsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
-            const totalLosses = cupLosses + homeLosses + awayLosses;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
-            const stats = {
+
+            await playerStatsOverviewPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
-                totalLosses,
-                totalAverage,
-            };
-            await individualPlayerStatsPage.validateOverviewStats(stats);
+                totalAverage
+            );
         });
     }
+
     const allClubPlayers: Array<string> = [
         'Clifford Brogie',
         'Jim Moorin',
@@ -59,10 +57,9 @@ test.describe('Player detailed stats', () => {
         'Peter Crowther',
         'Andy Marshall',
     ];
-
     for (const player of allClubPlayers) {
         test(`Summary of player's all team stats are correct for ${player} in 2023`, async ({
-            individualPlayerStatsPage,
+            playerStatsOverviewPage,
             playerSearchPage,
             playerStatOptionsPage,
             yearSelectPage,
@@ -70,34 +67,29 @@ test.describe('Player detailed stats', () => {
             await yearSelectPage.select2023Year();
             await playerStatOptionsPage.selectAllClubStatsSwitch();
             await playerSearchPage.searchForPlayer(player);
-            await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
+
             const {
                 totalAgg,
                 totalAggAgainst,
                 homeWins,
                 awayWins,
                 cupWins,
-                homeLosses,
-                awayLosses,
-                cupLosses,
                 totalGamesPlayed,
             } = allClubBowlsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
-            const totalLosses = cupLosses + homeLosses + awayLosses;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
-            const stats = {
+
+            await playerStatsOverviewPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
-                totalLosses,
-                totalAverage,
-            };
-            await individualPlayerStatsPage.validateOverviewStats(stats);
+                totalAverage
+            );
         });
     }
 
-    test('Detailed player stats for all years for Dave Hudson', async ({
-        individualPlayerStatsPage,
+    test('Detailed player stats overview for all years for Dave Hudson', async ({
+        playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -106,22 +98,12 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.checkPlayerIsReturned();
-        await individualPlayerStatsPage.checkPlayerName(player);
-        await individualPlayerStatsPage.checkTeamAccordionHeadersExist();
-
-        const stats = {
-            totalGamesPlayed: 385,
-            totalWins: 147,
-            totalLosses: 238,
-            totalAverage: -2.34,
-        };
-
-        await individualPlayerStatsPage.validateOverviewStats(stats);
+        await playerStatsOverviewPage.validateOverviewStats(385, 147, -2.34);
+        await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
-    test('Detailed player stats for all clubs and years for Dave Hudson', async ({
-        individualPlayerStatsPage,
+    test('Detailed player stats overview for all clubs and years for Dave Hudson', async ({
+        playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -131,18 +113,8 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.checkPlayerIsReturned();
-        await individualPlayerStatsPage.checkPlayerName(player);
-        await individualPlayerStatsPage.checkTeamAccordionHeadersNotExists();
-
-        const stats = {
-            totalGamesPlayed: 463,
-            totalWins: 174,
-            totalLosses: 289,
-            totalAverage: -2.48,
-        };
-
-        await individualPlayerStatsPage.validateOverviewStats(stats);
+        await playerStatsOverviewPage.validateOverviewStats(463, 174, -2.48);
+        await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async ({

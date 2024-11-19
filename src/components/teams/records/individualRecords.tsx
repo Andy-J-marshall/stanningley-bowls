@@ -26,7 +26,7 @@ function IndividualRecords(props: IndividualRecordsProps) {
         } = stats;
 
         return (
-            <div>
+            <div className="team-records">
                 {bTeam && <hr />}
                 <RecordsTableDisplay
                     teamName={displayName}

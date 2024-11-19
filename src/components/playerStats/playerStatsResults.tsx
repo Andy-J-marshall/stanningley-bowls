@@ -15,7 +15,7 @@ function PlayerStatsResults(props: PlayerStatsComponentsProps) {
         <Accordion.Item eventKey="5">
             <Accordion.Header id="stats-results">RESULTS</Accordion.Header>
             <Accordion.Body style={{ padding: '0' }}>
-                <Table striped bordered hover>
+                <Table id="player-results-table" striped bordered hover>
                     <thead>
                         <tr>
                             <th className="result-column">player</th>

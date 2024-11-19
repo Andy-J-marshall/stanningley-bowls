@@ -1,37 +1,46 @@
-import { expect, Locator, Page } from '@playwright/test';
-import { config } from '../../src/config';
-
-const teamName = config.teamNames.shortName;
+import { Locator, Page } from '@playwright/test';
 
 export class RecordsPage {
-    private readonly page: Page;
-    private readonly overallWinRecord: Locator;
-    private readonly overallWinsRecordPlayer: Locator;
-    private readonly overallGamesRecord: Locator;
-    private readonly overallGamesRecordPlayer: Locator;
-    private readonly overallWinPercRecord: Locator;
-    private readonly overallWinPercRecordPlayer: Locator;
-    private readonly overallAverageRecord: Locator;
-    private readonly overallAverageRecordPlayer: Locator;
+    public readonly page: Page;
 
-    private readonly tuesVetsWinRecord: Locator;
-    private readonly tuesVetsWinsRecordPlayer: Locator;
-    private readonly tuesVetsWinPercRecord: Locator;
-    private readonly tuesVetsWinPercRecordPlayer: Locator;
-    private readonly tuesVetsAverageRecord: Locator;
-    private readonly tuesVetsAverageRecordPlayer: Locator;
+    public readonly noGamesMessage: Locator;
 
-    private readonly thurVetsWinRecord: Locator;
-    private readonly thurVetsWinsRecordPlayer: Locator;
-    private readonly thurVetsWinPercRecord: Locator;
-    private readonly thurVetsWinPercRecordPlayer: Locator;
-    private readonly thurVetsAverageRecord: Locator;
-    private readonly thurVetsAverageRecordPlayer: Locator;
+    public readonly mondayTeamRecords: Locator;
 
-    private readonly wedPairsNoGamesPlayedMessage: Locator;
+    public readonly overallWinRecord: Locator;
+    public readonly overallWinsRecordPlayer: Locator;
+    public readonly overallGamesRecord: Locator;
+    public readonly overallGamesRecordPlayer: Locator;
+    public readonly overallWinPercRecord: Locator;
+    public readonly overallWinPercRecordPlayer: Locator;
+    public readonly overallAverageRecord: Locator;
+    public readonly overallAverageRecordPlayer: Locator;
+
+    public readonly tuesVetsWinRecord: Locator;
+    public readonly tuesVetsWinsRecordPlayer: Locator;
+    public readonly tuesVetsWinPercRecord: Locator;
+    public readonly tuesVetsWinPercRecordPlayer: Locator;
+    public readonly tuesVetsAverageRecord: Locator;
+    public readonly tuesVetsAverageRecordPlayer: Locator;
+
+    public readonly thurVetsWinRecord: Locator;
+    public readonly thurVetsWinsRecordPlayer: Locator;
+    public readonly thurVetsWinPercRecord: Locator;
+    public readonly thurVetsWinPercRecordPlayer: Locator;
+    public readonly thurVetsAverageRecord: Locator;
+    public readonly thurVetsAverageRecordPlayer: Locator;
 
     constructor(page: Page) {
         this.page = page;
+
+        this.noGamesMessage = page.getByText(
+            'Stanningley did not play on this day for the selected year'
+        );
+
+        this.mondayTeamRecords = page.locator(
+            '#team-select-tabs-tabpane-mon .team-records'
+        );
+
         this.overallGamesRecord = page.locator(
             '#team-select-tabs-tabpane-Combined #mostGames'
         );
@@ -94,67 +103,9 @@ export class RecordsPage {
         this.thurVetsAverageRecordPlayer = page.locator(
             '#team-select-tabs-tabpane-thuvets #bestAveragePlayer'
         );
-
-        this.wedPairsNoGamesPlayedMessage = page.locator(
-            '#team-select-tabs-tabpane-wedpairs p'
-        );
     }
 
     async goto() {
         await this.page.goto('/#/stats/records');
-    }
-
-    recordsOverviewHasCorrectValuesFor2023() {
-        expect(this.overallGamesRecord).toBeVisible();
-        expect(this.thurVetsWinRecord).toBeVisible({ visible: false });
-
-        expect(this.overallGamesRecord).toContainText('92');
-        expect(this.overallGamesRecordPlayer).toContainText(
-            'Shirley Biancardo'
-        );
-        expect(this.overallWinRecord).toContainText('81');
-        expect(this.overallWinsRecordPlayer).toContainText('Shirley Biancardo');
-        expect(this.overallWinPercRecord).toContainText('89%');
-        expect(this.overallWinPercRecordPlayer).toContainText('Peter Crowther');
-        expect(this.overallAverageRecord).toContainText('9.11');
-        expect(this.overallAverageRecordPlayer).toContainText(
-            'Mario Biancardo'
-        );
-    }
-
-    recordsHasCorrectValuesForThurVets2023() {
-        expect(this.thurVetsWinRecord).toBeVisible();
-        expect(this.overallGamesRecord).toBeVisible({ visible: false });
-
-        expect(this.thurVetsWinRecord).toContainText('12');
-        expect(this.thurVetsWinsRecordPlayer).toContainText('Mario Biancardo');
-        expect(this.thurVetsWinPercRecord).toContainText('92%');
-        expect(this.thurVetsWinPercRecordPlayer).toContainText(
-            'Mario Biancardo'
-        );
-        expect(this.thurVetsAverageRecord).toContainText('10.85');
-        expect(this.thurVetsAverageRecordPlayer).toContainText(
-            'Mario Biancardo'
-        );
-    }
-
-    recordsHasCorrectValuesForTuesVets2022() {
-        expect(this.tuesVetsWinRecord).toBeVisible();
-        expect(this.overallGamesRecord).toBeVisible({ visible: false });
-
-        expect(this.tuesVetsWinRecord).toContainText('15');
-        expect(this.tuesVetsWinsRecordPlayer).toContainText(
-            'Jim Moorin, Shirley Biancardo, Stewart Watson'
-        );
-        expect(this.tuesVetsWinPercRecord).toContainText('100%');
-        expect(this.tuesVetsWinPercRecordPlayer).toContainText('John Armitage');
-        expect(this.tuesVetsAverageRecord).toContainText('12.36');
-        expect(this.tuesVetsAverageRecordPlayer).toContainText('John Armitage');
-    }
-
-    recordsDoNotExistForWednesdayPairsIn2023() {
-        expect(this.wedPairsNoGamesPlayedMessage).toContainText(
-            `${teamName} did not play on this day for the selected year`
-        );
     }
 }

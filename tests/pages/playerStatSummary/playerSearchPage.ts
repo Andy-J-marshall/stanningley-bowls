@@ -3,17 +3,15 @@ import { Locator, Page } from '@playwright/test';
 export class PlayerSearchPage {
     public readonly page: Page;
 
+    public readonly noResultsMessage: Locator;
     private readonly backButton: Locator;
     private readonly searchBar: Locator;
-    private readonly playerListInDropdown: Locator;
 
     constructor(page: Page) {
         this.page = page;
-        this.searchBar = page.locator(
-            '#search-form input.rbt-input-main.form-control.rbt-input.form-control-lg'
-        );
-        this.playerListInDropdown = page.locator('#search');
-        this.backButton = page.locator('#back-button');
+        this.searchBar = page.getByPlaceholder('Player Search...');
+        this.backButton = page.getByRole('button', { name: 'BACK TO SUMMARY' });
+        this.noResultsMessage = page.getByText('No games played this year');
     }
 
     async goto() {
@@ -22,7 +20,7 @@ export class PlayerSearchPage {
 
     async searchForPlayer(playerName: string) {
         await this.searchBar.fill(playerName);
-        await this.playerListInDropdown.click();
+        await this.page.getByRole('option', { name: playerName }).click();
     }
 
     async clickBackToSummary() {

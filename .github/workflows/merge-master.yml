@@ -1,21 +1,26 @@
 name: Merge Master
 on:
-  push:
-    branches: ['master']
-  workflow_dispatch:
+    push:
+        branches: ['master']
+    workflow_dispatch:
+
+env:
+    EMAIL: stanningleybowlsclub@gmail.com
+    USERNAME: SPBC GitHub Action
+
 jobs:
-  Merge:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: update_stats_prod
-      - name: Configure Git
-        run: | 
-          git config --global user.email "stanningleybowlsclub@gmail.com"
-          git config --global user.name "SPBC GitHub Action"
-      - name: Merge master
-        run: | 
-          git fetch origin master
-          git merge origin/master
-          git push
+    Merge:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  ref: update_stats_prod
+            - name: Configure Git
+              run: |
+                  git config --global user.email ${{ env.EMAIL }}
+                  git config --global user.name ${{ env.USERNAME }}
+            - name: Merge master
+              run: |
+                  git fetch origin master
+                  git merge origin/master
+                  git push

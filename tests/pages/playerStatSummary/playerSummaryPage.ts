@@ -2,7 +2,10 @@ import { expect, Locator, Page } from '@playwright/test';
 
 export class PlayerSummaryPage {
     public readonly page: Page;
-    private readonly playerStatsRows: Locator;
+
+    public readonly playerRows: Locator;
+    public readonly noGamesMessage: Locator;
+
     private games: Locator;
     private wins: Locator;
     private winPerc: Locator;
@@ -10,7 +13,9 @@ export class PlayerSummaryPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.playerStatsRows = page.locator('#player-stats-per-team tbody');
+
+        this.playerRows = page.locator('#player-stats-per-team tbody');
+        this.noGamesMessage = page.getByText('no player stats found');
 
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
@@ -31,19 +36,19 @@ export class PlayerSummaryPage {
         this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
     }
 
-    async checkNumberOfPlayersReturned(expectedNumberOfPlayers: number) {
-        await expect(this.playerStatsRows).toHaveCount(expectedNumberOfPlayers);
+    async clickOnPlayerLink(playerName: string) {
+        await this.page.getByRole('link', { name: playerName }).click();
     }
 
-    async summaryStatsAreCorrect(
+    async validateSummaryStats(
         games: number,
         wins: number,
-        winPerc: string,
+        winPerc: number,
         avg: number
     ) {
         await expect(this.games).toContainText(games.toString());
         await expect(this.wins).toContainText(wins.toString());
-        await expect(this.winPerc).toContainText(winPerc.toString());
+        await expect(this.winPerc).toContainText(`${winPerc}%`);
         await expect(this.avg).toContainText(avg.toString());
     }
 }

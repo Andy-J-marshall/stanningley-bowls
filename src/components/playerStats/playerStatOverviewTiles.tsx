@@ -9,7 +9,12 @@ function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {
     const wins = props.wins;
     const losses = props.losses;
     const biggestWin = props.biggestWin;
-    const idPrefix = props.idPrefix;
+    let idPrefix = props.idPrefix;
+
+    idPrefix = idPrefix
+        ?.replaceAll(' ', '')
+        .replaceAll('(', '')
+        .replaceAll(')', '');
 
     return (
         <Row

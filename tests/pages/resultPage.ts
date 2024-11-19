@@ -1,19 +1,19 @@
-import { expect, Locator, Page } from '@playwright/test';
+import { Locator, Page } from '@playwright/test';
 
 export class ResultPage {
-    private readonly page: Page;
-    private readonly teamResultsSections: Locator;
+    public readonly page: Page;
+
+    public readonly teamResultsSections: Locator;
+    public readonly resultRows: Locator;
 
     constructor(page: Page) {
         this.page = page;
+
+        this.resultRows = page.locator('#result tbody tr');
         this.teamResultsSections = page.locator('#result > .teamResult');
     }
 
     async goto() {
         await this.page.goto('/#/results');
-    }
-
-    resultsForAll2023TeamsAppear() {
-        expect(this.teamResultsSections).toHaveCount(6);
     }
 }
