@@ -1,4 +1,4 @@
-# STANNINGLEY PARK BOWLING CLUB <img src="src/images/logos/brand-logo-blue-bg.png" alt="Stanningley Park Bowling Club" height="20">
+# STANNINGLEY PARK BOWLING CLUB
 
 Welcome to the website for Stanningley Park Bowling Club.
 
