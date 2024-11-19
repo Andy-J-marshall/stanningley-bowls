@@ -3,6 +3,10 @@ on:
     push:
         branches: ['master']
     workflow_dispatch:
+
+env:
+    URL: https://stanningleybowlsclub.co.uk
+
 jobs:
     Deploy:
         runs-on: ubuntu-latest
@@ -44,7 +48,7 @@ jobs:
                   npx playwright install
             - name: Run tests
               env:
-                  URL: 'https://stanningleybowlsclub.co.uk'
+                  URL: ${{ env.URL }}
               run: npm run tests
             - uses: actions/upload-artifact@v4
               if: ${{ !cancelled() }}

@@ -4,6 +4,11 @@ on:
         # Runs every day from April 1st to September 30th at 22:00 UTC
         - cron: '0 21 1-31 4-9 *'
     workflow_dispatch:
+
+env:
+    EMAIL: stanningleybowlsclub@gmail.com
+    USERNAME: SPBC GitHub Action
+
 jobs:
     Update-Stats:
         runs-on: ubuntu-latest
@@ -22,8 +27,8 @@ jobs:
             - name: Configure Git
               run: |
                   git pull
-                  git config --global user.email "stanningleybowlsclub@gmail.com"
-                  git config --global user.name "SPBC GitHub Action"
+                  git config --global user.email ${{ env.EMAIL }}
+                  git config --global user.name ${{ env.USERNAME }}
             - name: Install dependencies
               run: |
                   npm ci

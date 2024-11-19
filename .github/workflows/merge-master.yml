@@ -3,6 +3,11 @@ on:
     push:
         branches: ['master']
     workflow_dispatch:
+
+env:
+    EMAIL: stanningleybowlsclub@gmail.com
+    USERNAME: SPBC GitHub Action
+
 jobs:
     Merge:
         runs-on: ubuntu-latest
@@ -12,8 +17,8 @@ jobs:
                   ref: update_stats_prod
             - name: Configure Git
               run: |
-                  git config --global user.email "stanningleybowlsclub@gmail.com"
-                  git config --global user.name "SPBC GitHub Action"
+                  git config --global user.email ${{ env.EMAIL }}
+                  git config --global user.name ${{ env.USERNAME }}
             - name: Merge master
               run: |
                   git fetch origin master
