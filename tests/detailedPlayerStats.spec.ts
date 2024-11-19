@@ -18,14 +18,15 @@ test.describe('Player detailed stats', () => {
     ];
     for (const player of clubPlayers) {
         test(`Summary of player's team stats are correct for ${player} in 2023`, async ({
-            detailedPlayerStatsPage: individualPlayerStatsPage,
+            detailedPlayerStatsPage,
+            playerStatsOverviewPage,
             playerSearchPage,
             yearSelectPage,
         }) => {
             await yearSelectPage.select2023Year();
             await playerSearchPage.searchForPlayer(player);
-            await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
-            await expect(individualPlayerStatsPage.title).toHaveText(player);
+            await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
+            await expect(detailedPlayerStatsPage.title).toHaveText(player);
 
             const {
                 totalAgg,
@@ -39,7 +40,7 @@ test.describe('Player detailed stats', () => {
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
 
-            await individualPlayerStatsPage.validateOverviewStats(
+            await playerStatsOverviewPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
                 totalAverage
@@ -58,7 +59,7 @@ test.describe('Player detailed stats', () => {
     ];
     for (const player of allClubPlayers) {
         test(`Summary of player's all team stats are correct for ${player} in 2023`, async ({
-            detailedPlayerStatsPage: individualPlayerStatsPage,
+            playerStatsOverviewPage,
             playerSearchPage,
             playerStatOptionsPage,
             yearSelectPage,
@@ -79,7 +80,7 @@ test.describe('Player detailed stats', () => {
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
 
-            await individualPlayerStatsPage.validateOverviewStats(
+            await playerStatsOverviewPage.validateOverviewStats(
                 totalGamesPlayed,
                 totalWins,
                 totalAverage
@@ -88,7 +89,7 @@ test.describe('Player detailed stats', () => {
     }
 
     test('Detailed player stats for all years for Dave Hudson', async ({
-        detailedPlayerStatsPage: individualPlayerStatsPage,
+        playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -97,12 +98,12 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.validateOverviewStats(385, 147, -2.34);
-        await expect(individualPlayerStatsPage.biggestWin).toHaveText('31 - 4');
+        await playerStatsOverviewPage.validateOverviewStats(385, 147, -2.34);
+        await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
     test('Detailed player stats for all clubs and years for Dave Hudson', async ({
-        detailedPlayerStatsPage: individualPlayerStatsPage,
+        playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
     }) => {
@@ -112,19 +113,19 @@ test.describe('Player detailed stats', () => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
-        await individualPlayerStatsPage.validateOverviewStats(463, 174, -2.48);
-        await expect(individualPlayerStatsPage.biggestWin).toHaveText('31 - 4');
+        await playerStatsOverviewPage.validateOverviewStats(463, 174, -2.48);
+        await expect(playerStatsOverviewPage.biggestWin).toHaveText('31 - 4');
     });
 
     test('Detailed player stats show the wins & losses stats', async ({
-        detailedPlayerStatsPage: individualPlayerStatsPage,
+        detailedPlayerStatsPage,
         playerSearchPage,
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
         await playerSearchPage.searchForPlayer('Alison Woodfine');
 
-        await individualPlayerStatsPage.clickWinsAndLossesAccordion();
+        await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
     });
 
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
