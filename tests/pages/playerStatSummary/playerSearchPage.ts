@@ -3,6 +3,7 @@ import { Locator, Page } from '@playwright/test';
 export class PlayerSearchPage {
     public readonly page: Page;
 
+    public readonly noResultsMessage: Locator;
     private readonly backButton: Locator;
     private readonly searchBar: Locator;
 
@@ -10,6 +11,7 @@ export class PlayerSearchPage {
         this.page = page;
         this.searchBar = page.getByPlaceholder('Player Search...');
         this.backButton = page.getByRole('button', { name: 'BACK TO SUMMARY' });
+        this.noResultsMessage = page.getByText('No games played this year');
     }
 
     async goto() {

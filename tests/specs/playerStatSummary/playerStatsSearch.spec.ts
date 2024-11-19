@@ -37,6 +37,23 @@ test.describe('Player stats - search', () => {
         await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
     });
 
+    test('Searching for player who has played no games that year returns message', async ({
+        playerSearchPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+        await playerSearchPage.searchForPlayer('Andy Marshall');
+
+        await yearSelectPage.select2021Year();
+        await expect(playerSearchPage.noResultsMessage).toBeVisible();
+
+        await yearSelectPage.select2023Year();
+        await expect(playerSearchPage.noResultsMessage).not.toBeVisible();
+
+        await yearSelectPage.select2013Year();
+        await expect(playerSearchPage.noResultsMessage).toBeVisible();
+    });
+
     test('Can switch between team and all stats when searching', async ({
         playerSearchPage,
         detailedPlayerStatsPage,
