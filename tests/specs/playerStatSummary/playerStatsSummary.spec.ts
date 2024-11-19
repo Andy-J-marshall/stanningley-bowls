@@ -81,6 +81,19 @@ test.describe('Player summary stats', () => {
         await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
     });
 
+    test('No players are returned if filters exclude everyone', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2022Year();
+        await playerStatOptionsPage.selectPairsOnlyRadio();
+        await playerStatOptionsPage.selectCupOnlyRadio();
+
+        await expect(playerSummaryPage.playerRows).toHaveCount(0);
+        await expect(playerSummaryPage.noGamesMessage).toBeVisible();
+    });
+
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
         yearSelectPage,
     }) => {

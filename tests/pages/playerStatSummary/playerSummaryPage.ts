@@ -4,6 +4,8 @@ export class PlayerSummaryPage {
     public readonly page: Page;
 
     public readonly playerRows: Locator;
+    public readonly noGamesMessage: Locator;
+
     private games: Locator;
     private wins: Locator;
     private winPerc: Locator;
@@ -11,7 +13,9 @@ export class PlayerSummaryPage {
 
     constructor(page: Page) {
         this.page = page;
+
         this.playerRows = page.locator('#player-stats-per-team tbody');
+        this.noGamesMessage = page.getByText('no player stats found');
 
         this.games = page.locator('#steve-gardner-games');
         this.wins = page.locator('#steve-gardner-wins');
