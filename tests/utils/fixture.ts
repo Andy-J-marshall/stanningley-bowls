@@ -1,18 +1,18 @@
 import { test as base } from '@playwright/test';
-import { DetailedPlayerStatsPage } from '../pages/detailedPlayerStatsPage';
-import { PlayerSearchPage } from '../pages/playerSearchPage';
-import { PlayerSummaryPage } from '../pages/playerSummaryPage';
-import { PlayerStatOptionsPage } from '../pages/playerStatOptionsPage';
+import { DetailedPlayerStatsPage } from '../pages/detailedPlayerStats/detailedPlayerStatsPage';
+import { PlayerSearchPage } from '../pages/playerStatSummary/playerSearchPage';
+import { PlayerSummaryPage } from '../pages/playerStatSummary/playerSummaryPage';
+import { PlayerStatOptionsPage } from '../pages/playerStatSummary/playerStatOptionsPage';
 import { RecordsPage } from '../pages/recordsPage';
 import { ResultPage } from '../pages/resultPage';
 import { TeamStatsPage } from '../pages/teamStatsPage';
 import { TeamTabsPage } from '../pages/teamTabsPage';
 import { YearSelectPage } from '../pages/yearSelectPage';
-import { PlayerStatsOverviewPage } from '../pages/playerStatsOverviewPage';
-import { PlayerStatsWLPage } from '../pages/playerStatsWLPage';
-import { PlayerStatsAggPage } from '../pages/playerStatsAggPage';
-import { PlayerStatsTeamPage } from '../pages/playerStatsTeamPage';
-import { PlayerStatsResultPage } from '../pages/playerStatsResultPage';
+import { PlayerStatsOverviewPage } from '../pages/detailedPlayerStats/playerStatsOverviewPage';
+import { PlayerStatsWLPage } from '../pages/detailedPlayerStats/playerStatsWLPage';
+import { PlayerStatsAggPage } from '../pages/detailedPlayerStats/playerStatsAggPage';
+import { PlayerStatsTeamPage } from '../pages/detailedPlayerStats/playerStatsTeamPage';
+import { PlayerStatsResultPage } from '../pages/detailedPlayerStats/playerStatsResultPage';
 
 type testFixture = {
     detailedPlayerStatsPage: DetailedPlayerStatsPage;

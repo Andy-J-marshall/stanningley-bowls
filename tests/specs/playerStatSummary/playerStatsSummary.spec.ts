@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
-import { test } from './utils/fixture';
-import bowlsStats from '../src/data/bowlsStats2023.json';
-import { findTotalNumberOfPlayersForYears } from './utils/statsHelper';
+import { test } from '../../utils/fixture';
+import bowlsStats from '../../../src/data/bowlsStats2023.json';
+import { findTotalNumberOfPlayersForYears } from '../../utils/statsHelper';
 
 const playerCount = findTotalNumberOfPlayersForYears(bowlsStats);
 

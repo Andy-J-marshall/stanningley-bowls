@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
-import { test } from './utils/fixture';
-import { config } from '../src/config';
+import { test } from '../utils/fixture';
+import { config } from '../../src/config';
 
 test.describe('Team Stats', () => {
     test.beforeEach(async ({ teamStatsPage }) => {
