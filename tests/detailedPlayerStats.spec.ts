@@ -116,6 +116,17 @@ test.describe('Player detailed stats', () => {
         await expect(individualPlayerStatsPage.biggestWin).toHaveText('31 - 4');
     });
 
+    test('Detailed player stats show the wins & losses stats', async ({
+        individualPlayerStatsPage,
+        playerSearchPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+        await playerSearchPage.searchForPlayer('Alison Woodfine');
+
+        await individualPlayerStatsPage.clickWinsAndLossesAccordion();
+    });
+
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
         playerSearchPage,
         yearSelectPage,

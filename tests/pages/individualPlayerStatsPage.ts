@@ -46,6 +46,22 @@ export class IndividualPlayerStatsPage {
         this.biggestWin = page.locator('#totalBiggestWin');
     }
 
+    async clickWinsAndLossesAccordion() {
+        await this.winLossAccordion.click();
+    }
+
+    async clickAggAccordion() {
+        await this.aggAccordion.click();
+    }
+
+    async clickTeamAccordion() {
+        await this.teamAccordion.click();
+    }
+
+    async clickResultsAccordion() {
+        await this.resultsAccordion.click();
+    }
+
     async validateOverviewStats(games: number, wins: number, avg: number) {
         const winPerc = ((wins / games) * 100).toFixed(0);
         const losses = games - wins;
