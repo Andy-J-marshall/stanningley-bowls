@@ -37,4 +37,37 @@ test.describe('Player detailed stats - wins and losses', () => {
         await expect(playerStatsWLPage.losses).toHaveText('6');
         await expect(playerStatsWLPage.winPerc).toHaveText('40%');
     });
+
+    test('Detailed player stats show the wins & losses stats - all years, all clubs', async ({
+        detailedPlayerStatsPage,
+        playerStatsWLPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllYearsSwitch();
+        
+        await playerSearchPage.searchForPlayer('Mabel Shaw');
+        await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
+
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('636');
+        await expect(playerStatsWLPage.average).toHaveText('2.75');
+        await expect(playerStatsWLPage.wins).toHaveText('397');
+        await expect(playerStatsWLPage.losses).toHaveText('239');
+        await expect(playerStatsWLPage.winPerc).toHaveText('62%');
+
+        await detailedPlayerStatsPage.clickSinglesButton();
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('549');
+        await expect(playerStatsWLPage.average).toHaveText('2.65');
+        await expect(playerStatsWLPage.wins).toHaveText('344');
+        await expect(playerStatsWLPage.losses).toHaveText('205');
+        await expect(playerStatsWLPage.winPerc).toHaveText('63%');
+
+        await detailedPlayerStatsPage.clickPairsButton();
+        await expect(playerStatsWLPage.gamesPlayed).toHaveText('87');
+        await expect(playerStatsWLPage.average).toHaveText('3.34');
+        await expect(playerStatsWLPage.wins).toHaveText('53');
+        await expect(playerStatsWLPage.losses).toHaveText('34');
+        await expect(playerStatsWLPage.winPerc).toHaveText('61%');
+    });
 });

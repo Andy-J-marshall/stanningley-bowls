@@ -25,9 +25,7 @@ test.describe('Player detailed stats - results', () => {
         playerStatOptionsPage,
         playerStatsResultPage,
         playerSearchPage,
-        yearSelectPage,
     }) => {
-        await yearSelectPage.select2013Year();
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerStatOptionsPage.selectAllYearsSwitch();
 

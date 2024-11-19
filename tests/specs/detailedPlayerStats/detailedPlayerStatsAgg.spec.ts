@@ -13,8 +13,8 @@ test.describe('Player detailed stats - aggregate', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2022Year();
+        
         await playerSearchPage.searchForPlayer('Shirley Allman');
-
         await detailedPlayerStatsPage.clickAggAccordion();
 
         await expect(playerStatsAggPage.aggFor).toHaveText('187 / 294');

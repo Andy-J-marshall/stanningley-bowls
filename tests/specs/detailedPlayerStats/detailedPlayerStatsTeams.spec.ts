@@ -13,8 +13,8 @@ test.describe('Player detailed stats - teams', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2013Year();
+        
         await playerSearchPage.searchForPlayer('Jack Roberts');
-
         await detailedPlayerStatsPage.clickTeamAccordion();
 
         // AW Monday
