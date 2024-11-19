@@ -13,7 +13,7 @@ test.describe('Player detailed stats - teams', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2013Year();
-        
+
         await playerSearchPage.searchForPlayer('Jack Roberts');
         await detailedPlayerStatsPage.clickTeamAccordion();
 
@@ -51,5 +51,77 @@ test.describe('Player detailed stats - teams', () => {
         await expect(playerStatsTeamPage.wedPairsAWWins).toHaveText('3');
         await expect(playerStatsTeamPage.wedPairsAWLosses).toHaveText('9');
         await expect(playerStatsTeamPage.wedPairsAWWinPerc).toHaveText('25%');
+    });
+
+    test('Detailed player stats show the team stats - all years - Carole McDermott', async ({
+        detailedPlayerStatsPage,
+        playerStatsTeamPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSearchPage.searchForPlayer('Carole Mcdermott');
+        await detailedPlayerStatsPage.clickTeamAccordion();
+
+        await expect(playerStatsTeamPage.tuesdayLeedsGames).toHaveText('2');
+        await expect(playerStatsTeamPage.tuesdayLeedsAvg).toHaveText('-13.00');
+        await expect(playerStatsTeamPage.tuesdayLeedsWins).toHaveText('0');
+        await expect(playerStatsTeamPage.tuesdayLeedsLosses).toHaveText('2');
+        await expect(playerStatsTeamPage.tuesdayLeedsWinPerc).toHaveText('0%');
+    });
+
+    test('Detailed player stats show the team stats - all years - Marion Worrall', async ({
+        detailedPlayerStatsPage,
+        playerStatsTeamPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSearchPage.searchForPlayer('Marion Worrall');
+        await detailedPlayerStatsPage.clickTeamAccordion();
+
+        await expect(playerStatsTeamPage.mondayAWGames).toHaveText('1');
+        await expect(playerStatsTeamPage.mondayAWAvg).toHaveText('-5.00');
+        await expect(playerStatsTeamPage.mondayAWWins).toHaveText('0');
+        await expect(playerStatsTeamPage.mondayAWLosses).toHaveText('1');
+        await expect(playerStatsTeamPage.mondayAWWinPerc).toHaveText('0%');
+
+        await expect(playerStatsTeamPage.tueVetsLeedsGames).toHaveText('33');
+        await expect(playerStatsTeamPage.tueVetsLeedsAvg).toHaveText('-4.70');
+        await expect(playerStatsTeamPage.tueVetsLeedsWins).toHaveText('10');
+        await expect(playerStatsTeamPage.tueVetsLeedsLosses).toHaveText('23');
+        await expect(playerStatsTeamPage.tueVetsLeedsWinPerc).toHaveText('30%');
+
+        await expect(playerStatsTeamPage.satBradfordGames).toHaveText('19');
+        await expect(playerStatsTeamPage.satBradfordAvg).toHaveText('-7.63');
+        await expect(playerStatsTeamPage.satBradfordWins).toHaveText('2');
+        await expect(playerStatsTeamPage.satBradfordLosses).toHaveText('17');
+        await expect(playerStatsTeamPage.satBradfordWinPerc).toHaveText('11%');
+    });
+
+    test('Detailed player stats show the team stats - all years - Alan Parker', async ({
+        detailedPlayerStatsPage,
+        playerStatsTeamPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSearchPage.searchForPlayer('Alan Parker');
+        await detailedPlayerStatsPage.clickTeamAccordion();
+
+        await expect(playerStatsTeamPage.thuVetsLeedsGames).toHaveText('1');
+        await expect(playerStatsTeamPage.thuVetsLeedsAvg).toHaveText('7.00');
+        await expect(playerStatsTeamPage.thuVetsLeedsWins).toHaveText('1');
+        await expect(playerStatsTeamPage.thuVetsLeedsLosses).toHaveText('0');
+        await expect(playerStatsTeamPage.thuVetsLeedsWinPerc).toHaveText('100%');
+
+        await expect(playerStatsTeamPage.thuVetsBLeedsGames).toHaveText('8');
+        await expect(playerStatsTeamPage.thuVetsBLeedsAvg).toHaveText('9.75');
+        await expect(playerStatsTeamPage.thuVetsBLeedsWins).toHaveText('7');
+        await expect(playerStatsTeamPage.thuVetsBLeedsLosses).toHaveText('1');
+        await expect(playerStatsTeamPage.thuVetsBLeedsWinPerc).toHaveText('88%');
     });
 });

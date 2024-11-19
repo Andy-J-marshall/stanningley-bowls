@@ -11,7 +11,7 @@ function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {
     const biggestWin = props.biggestWin;
     let idPrefix = props.idPrefix;
 
-    idPrefix = idPrefix?.replaceAll(' ', '');
+    idPrefix = idPrefix?.replaceAll(' ', '').replaceAll('(', '').replaceAll(')', '');
 
     return (
         <Row
