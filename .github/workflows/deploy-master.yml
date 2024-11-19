@@ -26,7 +26,7 @@ jobs:
     needs: Deploy
     steps:
       - name: Waiting for deployment to complete before running tests
-        run: sleep 120
+        run: sleep 60
   Run-Tests:
     runs-on: ubuntu-latest
     needs: Sleep
