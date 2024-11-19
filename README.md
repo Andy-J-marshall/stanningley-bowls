@@ -24,7 +24,7 @@ The flow of data is as follows:
 -   Install NodeJS
 -   Install python 3
 
-# WEB APPLICATION <img src="https://reactjs.org/logo-og.png" alt="React Logo" height="20"> <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript Logo" height="20">
+# WEB APPLICATION
 
 ## Running Locally
 
@@ -64,7 +64,7 @@ Note: if the branch names change (e.g. `update_stats_prod` or `master`) then the
 
 Most of the club details are stored in the `config.ts` file (e.g. membership price, team names etc.), so any changes will need to be updated here. See the [END OF SEASON MAINTENANCE](#end-of-season-maintenance) section for more details on the changes required after each season.
 
-# STATS SCRIPTS <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" height="20">
+# STATS SCRIPTS
 
 The script that collates stats from all club teams can be found in the `/scripts/statsScripts` directory.
 
