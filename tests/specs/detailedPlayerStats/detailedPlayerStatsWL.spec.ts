@@ -17,12 +17,32 @@ test.describe('Player detailed stats - wins and losses', () => {
 
         await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
 
+        // Check the combined stats
         await expect(playerStatsWLPage.gamesPlayed).toHaveText('27');
         await expect(playerStatsWLPage.average).toHaveText('-3.22');
         await expect(playerStatsWLPage.wins).toHaveText('12');
         await expect(playerStatsWLPage.losses).toHaveText('15');
         await expect(playerStatsWLPage.winPerc).toHaveText('44%');
 
+        await expect(playerStatsWLPage.homeGamesPlayed).toHaveText('13');
+        await expect(playerStatsWLPage.homeAverage).toHaveText('-5.00');
+        await expect(playerStatsWLPage.homeWins).toHaveText('5');
+        await expect(playerStatsWLPage.homeLosses).toHaveText('8');
+        await expect(playerStatsWLPage.homeWinPerc).toHaveText('38%');
+
+        await expect(playerStatsWLPage.awayGamesPlayed).toHaveText('13');
+        await expect(playerStatsWLPage.awayAverage).toHaveText('-2.31');
+        await expect(playerStatsWLPage.awayWins).toHaveText('6');
+        await expect(playerStatsWLPage.awayLosses).toHaveText('7');
+        await expect(playerStatsWLPage.awayWinPerc).toHaveText('46%');
+
+        await expect(playerStatsWLPage.cupGamesPlayed).toHaveText('1');
+        await expect(playerStatsWLPage.cupAverage).toHaveText('8.00');
+        await expect(playerStatsWLPage.cupWins).toHaveText('1');
+        await expect(playerStatsWLPage.cupLosses).toHaveText('0');
+        await expect(playerStatsWLPage.cupWinPerc).toHaveText('100%');
+
+        // Check the singles stats
         await detailedPlayerStatsPage.clickSinglesButton();
         await expect(playerStatsWLPage.gamesPlayed).toHaveText('17');
         await expect(playerStatsWLPage.average).toHaveText('-1.94');
@@ -30,12 +50,49 @@ test.describe('Player detailed stats - wins and losses', () => {
         await expect(playerStatsWLPage.losses).toHaveText('9');
         await expect(playerStatsWLPage.winPerc).toHaveText('47%');
 
+        await expect(playerStatsWLPage.homeGamesPlayed).toHaveText('8');
+        await expect(playerStatsWLPage.homeAverage).toHaveText('-4.38');
+        await expect(playerStatsWLPage.homeWins).toHaveText('3');
+        await expect(playerStatsWLPage.homeLosses).toHaveText('5');
+        await expect(playerStatsWLPage.homeWinPerc).toHaveText('38%');
+
+        await expect(playerStatsWLPage.awayGamesPlayed).toHaveText('8');
+        await expect(playerStatsWLPage.awayAverage).toHaveText('-0.75');
+        await expect(playerStatsWLPage.awayWins).toHaveText('4');
+        await expect(playerStatsWLPage.awayLosses).toHaveText('4');
+        await expect(playerStatsWLPage.awayWinPerc).toHaveText('50%');
+
+        await expect(playerStatsWLPage.cupGamesPlayed).toHaveText('1');
+        await expect(playerStatsWLPage.cupAverage).toHaveText('8.00');
+        await expect(playerStatsWLPage.cupWins).toHaveText('1');
+        await expect(playerStatsWLPage.cupLosses).toHaveText('0');
+        await expect(playerStatsWLPage.cupWinPerc).toHaveText('100%');
+
+        // Check the pairs stats
         await detailedPlayerStatsPage.clickPairsButton();
         await expect(playerStatsWLPage.gamesPlayed).toHaveText('10');
         await expect(playerStatsWLPage.average).toHaveText('-5.40');
         await expect(playerStatsWLPage.wins).toHaveText('4');
         await expect(playerStatsWLPage.losses).toHaveText('6');
         await expect(playerStatsWLPage.winPerc).toHaveText('40%');
+
+        await expect(playerStatsWLPage.homeGamesPlayed).toHaveText('5');
+        await expect(playerStatsWLPage.homeAverage).toHaveText('-6.00');
+        await expect(playerStatsWLPage.homeWins).toHaveText('2');
+        await expect(playerStatsWLPage.homeLosses).toHaveText('3');
+        await expect(playerStatsWLPage.homeWinPerc).toHaveText('40%');
+
+        await expect(playerStatsWLPage.awayGamesPlayed).toHaveText('5');
+        await expect(playerStatsWLPage.awayAverage).toHaveText('-4.80');
+        await expect(playerStatsWLPage.awayWins).toHaveText('2');
+        await expect(playerStatsWLPage.awayLosses).toHaveText('3');
+        await expect(playerStatsWLPage.awayWinPerc).toHaveText('40%');
+
+        await expect(playerStatsWLPage.cupGamesPlayed).not.toBeVisible();
+        await expect(playerStatsWLPage.cupAverage).not.toBeVisible();
+        await expect(playerStatsWLPage.cupWins).not.toBeVisible();
+        await expect(playerStatsWLPage.cupLosses).not.toBeVisible();
+        await expect(playerStatsWLPage.cupWinPerc).not.toBeVisible();
     });
 
     test('Detailed player stats show the wins & losses stats - all years, all clubs', async ({
@@ -46,7 +103,7 @@ test.describe('Player detailed stats - wins and losses', () => {
     }) => {
         await playerStatOptionsPage.selectAllClubStatsSwitch();
         await playerStatOptionsPage.selectAllYearsSwitch();
-        
+
         await playerSearchPage.searchForPlayer('Mabel Shaw');
         await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
 
