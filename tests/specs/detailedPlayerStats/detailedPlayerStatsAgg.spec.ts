@@ -47,6 +47,23 @@ test.describe('Player detailed stats - aggregate', () => {
         await expect(playerStatsAggPage.cupAggAgainst).not.toBeVisible();
     });
 
+    test('Detailed player stats overview show the aggregate stats for cup pairs games', async ({
+        detailedPlayerStatsPage,
+        playerStatsAggPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSearchPage.searchForPlayer('Richard Hodgson');
+        await detailedPlayerStatsPage.clickAggAccordion();
+
+        await detailedPlayerStatsPage.clickPairsButton();
+        await expect(playerStatsAggPage.cupAggFor).toContainText('27 / 42');
+        await expect(playerStatsAggPage.cupAggAgainst).toContainText('31 / 42');
+    });
+
     test('Detailed player stats overview show the aggregate stats - all year, all clubs', async ({
         detailedPlayerStatsPage,
         playerStatsAggPage,
@@ -62,9 +79,13 @@ test.describe('Player detailed stats - aggregate', () => {
         await expect(playerStatsAggPage.aggFor).toHaveText('3067 / 4335');
         await expect(playerStatsAggPage.aggAgainst).toHaveText('3774 / 4335');
         await expect(playerStatsAggPage.homeAggFor).toHaveText('1672 / 2235');
-        await expect(playerStatsAggPage.homeAggAgainst).toHaveText('1883 / 2235');
+        await expect(playerStatsAggPage.homeAggAgainst).toHaveText(
+            '1883 / 2235'
+        );
         await expect(playerStatsAggPage.awayAggFor).toHaveText('1303 / 1995');
-        await expect(playerStatsAggPage.awayAggAgainst).toHaveText('1810 / 1995');
+        await expect(playerStatsAggPage.awayAggAgainst).toHaveText(
+            '1810 / 1995'
+        );
         await expect(playerStatsAggPage.cupAggFor).toHaveText('92 / 105');
         await expect(playerStatsAggPage.cupAggAgainst).toHaveText('81 / 105');
 
@@ -72,9 +93,13 @@ test.describe('Player detailed stats - aggregate', () => {
         await expect(playerStatsAggPage.aggFor).toHaveText('2533 / 3436');
         await expect(playerStatsAggPage.aggAgainst).toHaveText('2903 / 3436');
         await expect(playerStatsAggPage.homeAggFor).toHaveText('1339 / 1739');
-        await expect(playerStatsAggPage.homeAggAgainst).toHaveText('1415 / 1739');
+        await expect(playerStatsAggPage.homeAggAgainst).toHaveText(
+            '1415 / 1739'
+        );
         await expect(playerStatsAggPage.awayAggFor).toHaveText('1102 / 1592');
-        await expect(playerStatsAggPage.awayAggAgainst).toHaveText('1407 / 1592');
+        await expect(playerStatsAggPage.awayAggAgainst).toHaveText(
+            '1407 / 1592'
+        );
         await expect(playerStatsAggPage.cupAggFor).toHaveText('92 / 105');
         await expect(playerStatsAggPage.cupAggAgainst).toHaveText('81 / 105');
 

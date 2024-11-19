@@ -95,6 +95,26 @@ test.describe('Player detailed stats - wins and losses', () => {
         await expect(playerStatsWLPage.cupWinPerc).not.toBeVisible();
     });
 
+    test('Detailed player stats show the wins & losses stats for cup pairs games', async ({
+        detailedPlayerStatsPage,
+        playerStatsWLPage,
+        playerSearchPage,
+        playerStatOptionsPage,
+    }) => {
+        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSearchPage.searchForPlayer('Richard Hodgson');
+        await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
+
+        await detailedPlayerStatsPage.clickPairsButton();
+        await expect(playerStatsWLPage.cupGamesPlayed).toContainText('2');
+        await expect(playerStatsWLPage.cupAverage).toContainText('-2.00');
+        await expect(playerStatsWLPage.cupWins).toContainText('1');
+        await expect(playerStatsWLPage.cupLosses).toContainText('1');
+        await expect(playerStatsWLPage.cupWinPerc).toContainText('50%');
+    });
+
     test('Detailed player stats show the wins & losses stats - all years, all clubs', async ({
         detailedPlayerStatsPage,
         playerStatsWLPage,
