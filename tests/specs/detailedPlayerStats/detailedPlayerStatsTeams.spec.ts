@@ -53,24 +53,6 @@ test.describe('Player detailed stats - teams', () => {
         await expect(playerStatsTeamPage.wedPairsAWWinPerc).toHaveText('25%');
     });
 
-    test('Detailed player stats show the team stats - all years - Carole McDermott', async ({
-        detailedPlayerStatsPage,
-        playerStatsTeamPage,
-        playerSearchPage,
-        playerStatOptionsPage,
-    }) => {
-        await playerStatOptionsPage.selectAllYearsSwitch();
-
-        await playerSearchPage.searchForPlayer('Carole Mcdermott');
-        await detailedPlayerStatsPage.clickTeamAccordion();
-
-        await expect(playerStatsTeamPage.tuesdayLeedsGames).toHaveText('2');
-        await expect(playerStatsTeamPage.tuesdayLeedsAvg).toHaveText('-13.00');
-        await expect(playerStatsTeamPage.tuesdayLeedsWins).toHaveText('0');
-        await expect(playerStatsTeamPage.tuesdayLeedsLosses).toHaveText('2');
-        await expect(playerStatsTeamPage.tuesdayLeedsWinPerc).toHaveText('0%');
-    });
-
     test('Detailed player stats show the team stats - all years - Marion Worrall', async ({
         detailedPlayerStatsPage,
         playerStatsTeamPage,

@@ -9,12 +9,6 @@ export class PlayerStatsTeamPage {
     public readonly mondayAWLosses: Locator;
     public readonly mondayAWAvg: Locator;
 
-    public readonly tuesdayLeedsGames: Locator;
-    public readonly tuesdayLeedsWins: Locator;
-    public readonly tuesdayLeedsWinPerc: Locator;
-    public readonly tuesdayLeedsLosses: Locator;
-    public readonly tuesdayLeedsAvg: Locator;
-
     public readonly satBradfordGames: Locator;
     public readonly satBradfordWins: Locator;
     public readonly satBradfordWinPerc: Locator;
@@ -60,12 +54,6 @@ export class PlayerStatsTeamPage {
         this.mondayAWLosses = page.locator('#mondayairewharfeLosses');
         this.mondayAWAvg = page.locator('#mondayairewharfeAverage');
 
-        this.tuesdayLeedsGames = page.locator('#tuesdayleedsGamesPlayed');
-        this.tuesdayLeedsWins = page.locator('#tuesdayleedsWins');
-        this.tuesdayLeedsWinPerc = page.locator('#tuesdayleedsWinPerc');
-        this.tuesdayLeedsLosses = page.locator('#tuesdayleedsLosses');
-        this.tuesdayLeedsAvg = page.locator('#tuesdayleedsAverage');
-
         this.satBradfordGames = page.locator('#saturdaybradfordGamesPlayed');
         this.satBradfordWins = page.locator('#saturdaybradfordWins');
         this.satBradfordWinPerc = page.locator('#saturdaybradfordWinPerc');
@@ -84,7 +72,9 @@ export class PlayerStatsTeamPage {
         this.thuVetsLeedsLosses = page.locator('#thursdayvetsleedsLosses');
         this.thuVetsLeedsAvg = page.locator('#thursdayvetsleedsAverage');
 
-        this.thuVetsBLeedsGames = page.locator('#thursdayvetsleedsbGamesPlayed');
+        this.thuVetsBLeedsGames = page.locator(
+            '#thursdayvetsleedsbGamesPlayed'
+        );
         this.thuVetsBLeedsWins = page.locator('#thursdayvetsleedsbWins');
         this.thuVetsBLeedsWinPerc = page.locator('#thursdayvetsleedsbWinPerc');
         this.thuVetsBLeedsLosses = page.locator('#thursdayvetsleedsbLosses');
