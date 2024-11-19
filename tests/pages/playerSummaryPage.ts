@@ -32,6 +32,10 @@ export class PlayerSummaryPage {
         this.avg = this.page.locator(`#${nameWithHyphen}-avg`);
     }
 
+    async clickOnPlayerLink(playerName: string) {
+        await this.page.getByRole('link', { name: playerName }).click();
+    }
+
     async validateSummaryStats(
         games: number,
         wins: number,

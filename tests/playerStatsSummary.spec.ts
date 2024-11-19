@@ -10,6 +10,20 @@ test.describe('Player summary stats', () => {
         await playerSummaryPage.goto();
     });
 
+    test('Can click on player to view detailed stats', async ({
+        playerSummaryPage,
+        individualPlayerStatsPage,
+        yearSelectPage,
+    }) => {
+        const player = 'Andy Waller';
+        await yearSelectPage.select2023Year();
+
+        await playerSummaryPage.clickOnPlayerLink(player);
+
+        await expect(individualPlayerStatsPage.playerStats).toHaveCount(1);
+        await expect(individualPlayerStatsPage.title).toHaveText(player);
+    });
+
     test('Summary of Steve Gardner stats are correct', async ({
         playerSummaryPage,
         yearSelectPage,
@@ -72,6 +86,4 @@ test.describe('Player summary stats', () => {
     }) => {
         await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
     });
-
-    // TODO add test to click on player link
 });
