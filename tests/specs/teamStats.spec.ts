@@ -80,12 +80,10 @@ test.describe('Team Stats', () => {
         teamTabsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.select2023Year();
         await teamTabsPage.selectWedPairsTeamTab();
 
-        expect(teamStatsPage.wedPairsNoGamesPlayedMessage).toContainText(
-            'Stanningley did not play on this day for the selected year'
-        );
+        await expect(teamStatsPage.noGamesMessage).toBeVisible();
     });
 
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({

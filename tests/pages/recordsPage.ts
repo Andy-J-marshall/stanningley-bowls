@@ -3,6 +3,8 @@ import { Locator, Page } from '@playwright/test';
 export class RecordsPage {
     public readonly page: Page;
 
+    public readonly noGamesMessage: Locator;
+
     public readonly overallWinRecord: Locator;
     public readonly overallWinsRecordPlayer: Locator;
     public readonly overallGamesRecord: Locator;
@@ -25,8 +27,6 @@ export class RecordsPage {
     public readonly thurVetsWinPercRecordPlayer: Locator;
     public readonly thurVetsAverageRecord: Locator;
     public readonly thurVetsAverageRecordPlayer: Locator;
-
-    public readonly wedPairsNoGamesPlayedMessage: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -93,8 +93,8 @@ export class RecordsPage {
             '#team-select-tabs-tabpane-thuvets #bestAveragePlayer'
         );
 
-        this.wedPairsNoGamesPlayedMessage = page.locator(
-            '#team-select-tabs-tabpane-wedpairs p'
+        this.noGamesMessage = page.getByText(
+            'Stanningley did not play on this day for the selected year'
         );
     }
 

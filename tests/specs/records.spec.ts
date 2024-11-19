@@ -91,9 +91,7 @@ test.describe('Records', () => {
         await yearSelectPage.select2023Year();
         await teamTabsPage.selectWedPairsTeamTab();
 
-        expect(recordsPage.wedPairsNoGamesPlayedMessage).toContainText(
-            'Stanningley did not play on this day for the selected year'
-        );
+        await expect(recordsPage.noGamesMessage).toBeVisible();
     });
 
     test(`Records year dropdown appears if there are multiple years of records available`, async ({

@@ -3,7 +3,7 @@ import { Locator, Page } from '@playwright/test';
 export class TeamStatsPage {
     public readonly page: Page;
 
-    public readonly wedPairsNoGamesPlayedMessage: Locator;
+    public readonly noGamesMessage: Locator;
 
     public readonly totalGamesValue: Locator;
     public readonly totalWinsValue: Locator;
@@ -132,8 +132,8 @@ export class TeamStatsPage {
         this.tuesVetsOpponentAggValue = page.locator(
             '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
         );
-        this.wedPairsNoGamesPlayedMessage = page.locator(
-            '#team-select-tabs-tabpane-wed p'
+        this.noGamesMessage = page.getByText(
+            'Stanningley did not play on this day for the selected year'
         );
     }
 
