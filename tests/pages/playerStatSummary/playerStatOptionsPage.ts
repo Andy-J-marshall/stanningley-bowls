@@ -3,7 +3,7 @@ import { Locator, Page } from '@playwright/test';
 export class PlayerStatOptionsPage {
     public readonly page: Page;
 
-    public readonly clubSwitch: Locator;
+    public readonly allClubsSwitch: Locator;
     public readonly allYearSwitch: Locator;
     public readonly singlesOnlyRadio: Locator;
     public readonly pairsOnlyRadio: Locator;
@@ -16,7 +16,7 @@ export class PlayerStatOptionsPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clubSwitch = page.locator(
+        this.allClubsSwitch = page.locator(
             ".form-check input[id='#all-club-stats-select-switch']"
         );
         this.singlesOnlyRadio = page.locator(
@@ -47,11 +47,11 @@ export class PlayerStatOptionsPage {
     }
 
     async selectAllClubsStatsSwitch() {
-        await this.clubSwitch.check();
+        await this.allClubsSwitch.check();
     }
 
     async deselectClubStatsSwitch() {
-        await this.clubSwitch.uncheck();
+        await this.allClubsSwitch.uncheck();
     }
 
     async selectSinglesOnlyRadio() {
