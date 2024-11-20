@@ -65,7 +65,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('richard hodgson');
 
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await yearSelectPage.select2023Year();
 
         // All venues
@@ -134,7 +134,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('neil porter');
 
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await yearSelectPage.select2023Year();
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
@@ -152,7 +152,7 @@ test.describe('Player summary stats - filters', () => {
         playerStatOptionsPage,
     }) => {
         playerSummaryPage.setPlayerToFind('bernie miller');
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
 
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSummaryPage.validateSummaryStats(416, 242, 58, 2.37);
@@ -229,7 +229,7 @@ test.describe('Player summary stats - filters', () => {
         const name = 'Mabel Shaw';
         playerSummaryPage.setPlayerToFind(name);
 
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerStatOptionsPage.selectSinglesOnlyRadio();
         await playerStatOptionsPage.selectAwayOnlyRadio();
@@ -252,7 +252,7 @@ test.describe('Player summary stats - filters', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
 
         await expect(playerStatOptionsPage.teamSelectDropdown).toBeDisabled();
     });

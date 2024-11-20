@@ -26,7 +26,7 @@ test.describe('Player detailed stats - results', () => {
         playerStatsResultPage,
         playerSearchPage,
     }) => {
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await playerStatOptionsPage.selectAllYearsSwitch();
 
         await playerSearchPage.searchForPlayer('Jack Roberts');

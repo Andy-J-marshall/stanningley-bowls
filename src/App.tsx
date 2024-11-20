@@ -27,7 +27,7 @@ const allClubsStatsForEveryYearArray: any[] =
 function App() {
     const [clubStats, setClubStats] = useState(statsData.dataFiles.clubStats24);
     const [allClubsStats, setAllClubsStats] = useState(
-        statsData.dataFiles.allClubStats24
+        statsData.dataFiles.allClubsStats24
     );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 

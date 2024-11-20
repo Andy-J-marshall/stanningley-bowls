@@ -11,7 +11,7 @@ import { PlayerStatsOptionsProps } from '../../types/interfaces';
 import { formatTeamName } from '../../helpers/utils';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
-    const allTeamStatsCallback = props.allTeamStatsCallback;
+    const allClubsStatsCallback = props.allClubsStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const teamSpecificCallback = props.teamSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
@@ -23,7 +23,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const teamNames = props.teamNames;
 
     const [allYearToggle, setAllYearToggle] = useState(false);
-    const [allTeamsToggle, setAllTeamsToggle] = useState(false);
+    const [allClubsToggle, setAllClubsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
     const [allGameTypesToggle, setAllGameTypesToggle] = useState(true);
@@ -39,11 +39,11 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         defaultTeamDropdownTitle
     );
 
-    function toggleOtherTeamStats(event: React.ChangeEvent<HTMLInputElement>) {
-        const allTeamStatsToggle = event.currentTarget.checked;
-        setAllTeamsToggle(allTeamStatsToggle);
-        allTeamStatsCallback(allTeamStatsToggle);
-        setDisableTeamDropdown(allTeamStatsToggle);
+    function toggleAllClubsStats(event: React.ChangeEvent<HTMLInputElement>) {
+        const allClubsStatsToggle = event.currentTarget.checked;
+        setAllClubsToggle(allClubsStatsToggle);
+        allClubsStatsCallback(allClubsStatsToggle);
+        setDisableTeamDropdown(allClubsStatsToggle);
     }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
@@ -54,7 +54,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     function toggleSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
-            setAllTeamsToggle(false);
+            setAllClubsToggle(false);
             teamSpecificCallback('');
             setDisableOtherOptions(false);
             setTeamDropdownTitle(defaultTeamDropdownTitle);
@@ -66,8 +66,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllVenuesToggle(true);
             setDisableOtherOptions(true);
 
-            setAllTeamsToggle(false);
-            allTeamStatsCallback(false);
+            setAllClubsToggle(false);
+            allClubsStatsCallback(false);
 
             singles(false);
             pairs(false);
@@ -167,10 +167,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     inline
                                     key={crypto.randomUUID()}
                                     id="#all-club-stats-select-switch"
-                                    onChange={toggleOtherTeamStats}
+                                    onChange={toggleAllClubsStats}
                                     type="switch"
                                     label="Include other clubs"
-                                    checked={allTeamsToggle}
+                                    checked={allClubsToggle}
                                     disabled={disableOtherOptions}
                                 />
                                 <Form.Check

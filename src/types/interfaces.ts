@@ -45,7 +45,7 @@ export interface StatsTileProps {
 }
 
 export interface PlayerStatsOptionsProps {
-    allTeamStatsCallback: (toggle: boolean) => void;
+    allClubsStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
     teamSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;

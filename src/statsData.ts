@@ -1,50 +1,50 @@
 import clubStats13 from './data/stanningleyStats2013.json';
-import allClubStats13 from './data/allClubStats2013.json';
+import allClubsStats13 from './data/allClubsStats2013.json';
 import clubStats14 from './data/stanningleyStats2014.json';
-import allClubStats14 from './data/allClubStats2014.json';
+import allClubsStats14 from './data/allClubsStats2014.json';
 import clubStats15 from './data/stanningleyStats2015.json';
-import allClubStats15 from './data/allClubStats2015.json';
+import allClubsStats15 from './data/allClubsStats2015.json';
 import clubStats16 from './data/stanningleyStats2016.json';
-import allClubStats16 from './data/allClubStats2016.json';
+import allClubsStats16 from './data/allClubsStats2016.json';
 import clubStats17 from './data/stanningleyStats2017.json';
-import allClubStats17 from './data/allClubStats2017.json';
+import allClubsStats17 from './data/allClubsStats2017.json';
 import clubStats18 from './data/stanningleyStats2018.json';
-import allClubStats18 from './data/allClubStats2018.json';
+import allClubsStats18 from './data/allClubsStats2018.json';
 import clubStats19 from './data/stanningleyStats2019.json';
-import allClubStats19 from './data/allClubStats2019.json';
+import allClubsStats19 from './data/allClubsStats2019.json';
 import clubStats21 from './data/stanningleyStats2021.json';
-import allClubStats21 from './data/allClubStats2021.json';
+import allClubsStats21 from './data/allClubsStats2021.json';
 import clubStats22 from './data/stanningleyStats2022.json';
-import allClubStats22 from './data/allClubStats2022.json';
+import allClubsStats22 from './data/allClubsStats2022.json';
 import clubStats23 from './data/stanningleyStats2023.json';
-import allClubStats23 from './data/allClubStats2023.json';
+import allClubsStats23 from './data/allClubsStats2023.json';
 import clubStats24 from './data/stanningleyStats2024.json';
-import allClubStats24 from './data/allClubStats2024.json';
+import allClubsStats24 from './data/allClubsStats2024.json';
 
 // Stats for future years will need to be updated here
 const dataFiles = {
     clubStats13,
-    allClubStats13,
+    allClubsStats13,
     clubStats14,
-    allClubStats14,
+    allClubsStats14,
     clubStats15,
-    allClubStats15,
+    allClubsStats15,
     clubStats16,
-    allClubStats16,
+    allClubsStats16,
     clubStats17,
-    allClubStats17,
+    allClubsStats17,
     clubStats18,
-    allClubStats18,
+    allClubsStats18,
     clubStats19,
-    allClubStats19,
+    allClubsStats19,
     clubStats21,
-    allClubStats21,
+    allClubsStats21,
     clubStats22,
-    allClubStats22,
+    allClubsStats22,
     clubStats23,
-    allClubStats23,
+    allClubsStats23,
     clubStats24,
-    allClubStats24,
+    allClubsStats24,
 };
 
 const allYearClubStats = {
@@ -62,17 +62,17 @@ const allYearClubStats = {
 };
 
 const allYearAllClubsStats = {
-    year2013: dataFiles.allClubStats13,
-    year2014: dataFiles.allClubStats14,
-    year2015: dataFiles.allClubStats15,
-    year2016: dataFiles.allClubStats16,
-    year2017: dataFiles.allClubStats17,
-    year2018: dataFiles.allClubStats18,
-    year2019: dataFiles.allClubStats19,
-    year2021: dataFiles.allClubStats21,
-    year2022: dataFiles.allClubStats22,
-    year2023: dataFiles.allClubStats23,
-    year2024: dataFiles.allClubStats24,
+    year2013: dataFiles.allClubsStats13,
+    year2014: dataFiles.allClubsStats14,
+    year2015: dataFiles.allClubsStats15,
+    year2016: dataFiles.allClubsStats16,
+    year2017: dataFiles.allClubsStats17,
+    year2018: dataFiles.allClubsStats18,
+    year2019: dataFiles.allClubsStats19,
+    year2021: dataFiles.allClubsStats21,
+    year2022: dataFiles.allClubsStats22,
+    year2023: dataFiles.allClubsStats23,
+    year2024: dataFiles.allClubsStats24,
 };
 
 const clubStatsForEveryYearArray = [
@@ -90,17 +90,17 @@ const clubStatsForEveryYearArray = [
 ];
 
 const allClubsStatsForEveryYearArray = [
-    dataFiles.allClubStats13,
-    dataFiles.allClubStats14,
-    dataFiles.allClubStats15,
-    dataFiles.allClubStats16,
-    dataFiles.allClubStats17,
-    dataFiles.allClubStats18,
-    dataFiles.allClubStats19,
-    dataFiles.allClubStats21,
-    dataFiles.allClubStats22,
-    dataFiles.allClubStats23,
-    dataFiles.allClubStats24,
+    dataFiles.allClubsStats13,
+    dataFiles.allClubsStats14,
+    dataFiles.allClubsStats15,
+    dataFiles.allClubsStats16,
+    dataFiles.allClubsStats17,
+    dataFiles.allClubsStats18,
+    dataFiles.allClubsStats19,
+    dataFiles.allClubsStats21,
+    dataFiles.allClubsStats22,
+    dataFiles.allClubsStats23,
+    dataFiles.allClubsStats24,
 ];
 
 export default {

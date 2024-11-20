@@ -24,13 +24,13 @@ import {
 import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
-    const allClubStats = props.allClubsStats;
+    const allClubsStats = props.allClubsStats;
     const clubStats = props.clubStats;
     const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
-    const allClubStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
+    const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
 
     const { playerResults } = clubStats;
-    const allClubPlayerResults = allClubStats.playerResults;
+    const allClubsPlayerResults = allClubsStats.playerResults;
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
@@ -49,7 +49,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
 
     // Find list of players for current year
-    const players = Object.keys(allClubPlayerResults).sort();
+    const players = Object.keys(allClubsPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
 
     // Find list of players for all years
@@ -81,8 +81,8 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         if (showStatSummary) {
-            setStatsToUse(allClubPlayerResults);
-            setAllYearsStatsToUseArray(allClubStatsForEveryYearArray);
+            setStatsToUse(allClubsPlayerResults);
+            setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         } else {
             setStatsToUse(playerResults);
             setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
@@ -101,10 +101,10 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
-    function allClubStatsCallback(showBool: boolean) {
+    function allClubsStatsCallback(showBool: boolean) {
         setShowStatSummary(showBool);
         if (showBool) {
-            setStatsToUse(allClubPlayerResults);
+            setStatsToUse(allClubsPlayerResults);
         } else {
             setStatsToUse(playerResults);
         }
@@ -250,7 +250,7 @@ function PlayerStats(props: PlayerStatsProps) {
             )}
 
             <PlayerStatsOptions
-                allTeamStatsCallback={allClubStatsCallback}
+                allClubsStatsCallback={allClubsStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
                 teamSpecificCallback={teamSpecificCallback}
                 onlySinglesCallback={onlySinglesCallback}
