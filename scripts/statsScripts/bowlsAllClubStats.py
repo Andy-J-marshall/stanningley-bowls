@@ -1,4 +1,4 @@
-from teamDetails import allDays, players
+from clubDetails import allDays, players
 from sanityChecks import (
     checkPlayerStats,
     checkFileSizeHasGrown,

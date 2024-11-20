@@ -1,5 +1,5 @@
 import re
-import teamDetails
+import clubDetails
 import statsHelper
 
 
@@ -114,12 +114,12 @@ def calculatePlayerStats(
                 pairsPartner = pairsDetails["pairsPartner"]
             if pairsDetails["secondOpponent"] != "":
                 secondOpponent = pairsDetails["secondOpponent"]
-            pairsPartner = teamDetails.deduplicateNames(pairsPartner)
-            secondOpponent = teamDetails.deduplicateNames(secondOpponent)
+            pairsPartner = clubDetails.deduplicateNames(pairsPartner)
+            secondOpponent = clubDetails.deduplicateNames(secondOpponent)
 
         # Format player names
-        playerName = teamDetails.deduplicateNames(playerName)
-        opponentsName = teamDetails.deduplicateNames(opponentsName)
+        playerName = clubDetails.deduplicateNames(playerName)
+        opponentsName = clubDetails.deduplicateNames(opponentsName)
 
         # Store player stats
         playerNameForResult = playerName
@@ -234,8 +234,8 @@ def standardiseName(name):
 def checkValidPlayerOnDay(
     playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile
 ):
-    playerName = teamDetails.deduplicateNames(playerName)
-    if playerName in teamDetails.traitorPlayers[league]:
+    playerName = clubDetails.deduplicateNames(playerName)
+    if playerName in clubDetails.traitorPlayers[league]:
         return False
 
     for i in range(0, 13):
@@ -266,12 +266,12 @@ def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, lea
             )
             if len(findPossiblePlayerNames) > 1:
                 possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                possiblePlayerNameHome = teamDetails.deduplicateNames(
+                possiblePlayerNameHome = clubDetails.deduplicateNames(
                     possiblePlayerNameHome
                 ).lower()
                 if (
-                    possiblePlayerNameHome in teamDetails.players
-                    or possiblePlayerNameHome in teamDetails.duplicatePlayerNames
+                    possiblePlayerNameHome in clubDetails.players
+                    or possiblePlayerNameHome in clubDetails.duplicatePlayerNames
                 ):
                     validPlayer = checkValidPlayerOnDay(
                         possiblePlayerNameHome,
@@ -285,12 +285,12 @@ def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, lea
                         homePlayerRow.append(rowNumber)
 
                 possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                possiblePlayerNameAway = teamDetails.deduplicateNames(
+                possiblePlayerNameAway = clubDetails.deduplicateNames(
                     possiblePlayerNameAway
                 ).lower()
                 if (
-                    possiblePlayerNameAway in teamDetails.players
-                    or possiblePlayerNameAway in teamDetails.duplicatePlayerNames
+                    possiblePlayerNameAway in clubDetails.players
+                    or possiblePlayerNameAway in clubDetails.duplicatePlayerNames
                 ):
                     validPlayer = checkValidPlayerOnDay(
                         possiblePlayerNameAway,
@@ -321,16 +321,16 @@ def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
                 possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                 possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
                 if (
-                    possiblePlayerNameHome in teamDetails.players
-                    or possiblePlayerNameHome in teamDetails.duplicatePlayerNames
+                    possiblePlayerNameHome in clubDetails.players
+                    or possiblePlayerNameHome in clubDetails.duplicatePlayerNames
                 ):
                     homePlayerRow.append(rowNumber)
 
                 possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
                 possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
                 if (
-                    possiblePlayerNameAway in teamDetails.players
-                    or possiblePlayerNameAway in teamDetails.duplicatePlayerNames
+                    possiblePlayerNameAway in clubDetails.players
+                    or possiblePlayerNameAway in clubDetails.duplicatePlayerNames
                 ):
                     awayPlayerRow.append(rowNumber)
     return homePlayerRow, awayPlayerRow
@@ -346,7 +346,7 @@ def checkCorrectTeamForPlayer(
             possibleTeamText = possibleTeamText.lower().strip()
 
             # Checks against full team name first
-            for team in teamDetails.teamsTracking:
+            for team in clubDetails.teamsTracking:
                 team = team.lower()
                 if team in possibleTeamText:
                     if (homeGame or cupHome) and possibleTeamText.startswith(team):

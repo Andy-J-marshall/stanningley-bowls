@@ -1,5 +1,5 @@
 import re
-from teamDetails import teamNames, teamDays, players, displayTeamName
+from clubDetails import teamNames, teamDays, players, displayTeamName
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,
     isCupGame,

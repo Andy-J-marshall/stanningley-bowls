@@ -1,4 +1,4 @@
-import teamDetails
+import clubDetails
 import statsHelper
 
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
@@ -104,7 +104,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
             aTeamPlayingBTeamBool = False
             if (
                 not hostedCupGame
-                and row.lower().count(teamDetails.displayTeamName.lower()) > 1
+                and row.lower().count(clubDetails.displayTeamName.lower()) > 1
             ):
                 aTeamPlayingBTeamBool = True
                 teamLower = teamNameUsedForLeague.lower()
@@ -130,7 +130,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
             ):
                 words = row.strip().lower().split()
                 firstWord = words[0].lower()
-                if firstWord == teamDetails.displayTeamName.lower():
+                if firstWord == clubDetails.displayTeamName.lower():
                     homeRow.append(rowNumber)
                 else:
                     awayRow.append(rowNumber)
