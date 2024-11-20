@@ -1,6 +1,6 @@
 import { Row } from 'react-bootstrap';
-import { PlayerStatOverviewTilesProps } from '../../types/interfaces';
 import StatsTile from './statsTile';
+import { PlayerStatOverviewTilesProps } from '../../types/interfaces';
 import { capitalizeText } from '../../helpers/utils';
 
 function PlayerStatOverviewTiles(props: PlayerStatOverviewTilesProps) {

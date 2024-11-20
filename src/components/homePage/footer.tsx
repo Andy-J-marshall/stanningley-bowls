@@ -1,7 +1,7 @@
-import google from '../../images/socials/maps_white.png';
-import facebook from '../../images/socials/facebook_white.png';
-import instagram from '../../images/socials/insta_white.png';
-import email from '../../images/socials/email_white.png';
+import googleImg from '../../images/socials/maps_white.png';
+import facebookImg from '../../images/socials/facebook_white.png';
+import instagramImg from '../../images/socials/insta_white.png';
+import emailImg from '../../images/socials/email_white.png';
 import { config } from '../../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsUrl } =
@@ -13,20 +13,24 @@ function Footer() {
         <div id="footer">
             <div id="socials">
                 <a target="_blank" href={facebookUrl}>
-                    <img className="logos" src={facebook} alt="Facebook link" />
+                    <img
+                        className="logos"
+                        src={facebookImg}
+                        alt="Facebook link"
+                    />
                 </a>
                 <a target="_blank" href={instagramUrl}>
                     <img
                         className="logos"
-                        src={instagram}
+                        src={instagramImg}
                         alt="Instagram link"
                     />
                 </a>
                 <a target="_blank" href={googleMapsUrl}>
-                    <img className="logos" src={google} alt="Maps link" />
+                    <img className="logos" src={googleImg} alt="Maps link" />
                 </a>
                 <a href={emailUrl}>
-                    <img className="logos" src={email} alt="Email link" />
+                    <img className="logos" src={emailImg} alt="Email link" />
                 </a>
             </div>
             <p className="footnote">Copyright ©{currentYear} AJM</p>

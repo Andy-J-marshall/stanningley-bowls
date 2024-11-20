@@ -7,34 +7,46 @@ import satImg from '../images/websiteImages/sat-team.png';
 import tuesImg from '../images/websiteImages/tues-team.png';
 import wedImg from '../images/websiteImages/wed-team.png';
 import wedPairsImg from '../images/websiteImages/wedPairs-team.png';
-import { config } from '../config';
 
-const { teams } = config;
+const teams = [
+    {
+        name: 'Monday Airewharfe',
+        link: 'https://bowlsnet.uk/AW-Mon',
+        img: monImg,
+    },
+    {
+        name: 'Tuesday Vets Leeds',
+        link: 'https://bowlsnet.uk/Leeds-TueVets',
+        img: tuesVetsImg,
+    },
+    {
+        name: 'Tuesday Leeds',
+        link: 'https://bowlsnet.uk/Leeds-Tue',
+        img: tuesImg,
+    },
+    {
+        name: 'Half Holiday Leeds',
+        link: 'https://bowlsnet.uk/Leeds-Wed',
+        img: wedImg,
+    },
+    {
+        name: 'Wednesday Pairs AireWharfe',
+        link: 'https://bowlsnet.uk/AW-WedPairs',
+        img: wedPairsImg,
+    },
+    {
+        name: 'Thursday Vets Leeds',
+        link: 'https://bowlsnet.uk/leeds-ThuVets',
+        img: thurVetsImg,
+    },
+    {
+        name: 'Saturday Leeds',
+        link: 'https://bowlsnet.uk/Leeds-Sat',
+        img: satImg,
+    },
+];
 
-teams.forEach((team) => {
-    const teamName = team.name.toLowerCase();
-    if (teamName.includes('monday')) {
-        team.img = monImg;
-    }
-    if (teamName.includes('tuesday vets')) {
-        team.img = tuesVetsImg;
-    }
-    if (teamName === 'tuesday') {
-        team.img = tuesImg;
-    }
-    if (teamName.includes('wednesday half holiday')) {
-        team.img = wedImg;
-    }
-    if (teamName.includes('wednesday pairs')) {
-        team.img = wedPairsImg;
-    }
-    if (teamName.includes('thursday vets')) {
-        team.img = thurVetsImg;
-    }
-    if (teamName.includes('saturday')) {
-        team.img = satImg;
-    }
-});
+// TODO add leeds ladies league
 
 function TeamInfo() {
     useEffect(() => {
@@ -43,7 +55,7 @@ function TeamInfo() {
 
     return (
         <div id="team-info" className="page-component center">
-            <h1>team information</h1>
+            <h1>teams</h1>
             <Row sm={1} md={2} lg={3} className="g-4 tabs">
                 {teams.map((team, idx) => (
                     <Col key={idx}>
@@ -54,19 +66,11 @@ function TeamInfo() {
                                 src={team.img}
                             />
                             <Card.Body>
-                                <Card.Title>
-                                    {team.name.toUpperCase()}
-                                </Card.Title>
-                                <Card.Text>
-                                    {team.age}
-                                    <br /> {team.desc}
-                                    <br /> Start Time: {team.startTime}
-                                </Card.Text>
+                                <Card.Title>{team.name}</Card.Title>
                                 <Button
                                     style={{ backgroundColor: '#0081a4' }}
                                     href={team.link}
                                     target="_blank"
-                                    variant="secondary"
                                 >
                                     View on Bowlsnet
                                 </Button>

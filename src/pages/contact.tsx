@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import facebook from '../images/socials/facebook_blue.png';
-import instagram from '../images/socials/insta_blue.png';
-import email from '../images/socials/email_blue.png';
+import facebookImg from '../images/socials/facebook_blue.png';
+import instagramImg from '../images/socials/insta_blue.png';
+import emailImg from '../images/socials/email_blue.png';
 import { config } from '../config';
 
 const { instagramUrl, facebookUrl, emailUrl, googleMapsIframeUrl } =
@@ -21,7 +21,7 @@ function Contact() {
             <p>
                 Get in touch via email:{' '}
                 <a className="link" href={emailUrl}>
-                    <img className="logos" src={email} alt="Email link" />
+                    <img className="logos" src={emailImg} alt="Email link" />
                     {emailAddress}
                 </a>
             </p>
@@ -34,10 +34,14 @@ function Contact() {
                 social media pages:
             </p>
             <a className="link" target="_blank" href={instagramUrl}>
-                <img className="logos" src={instagram} alt="Instagram link" />
+                <img
+                    className="logos"
+                    src={instagramImg}
+                    alt="Instagram link"
+                />
             </a>
             <a className="link" target="_blank" href={facebookUrl}>
-                <img className="logos" src={facebook} alt="Facebook link" />
+                <img className="logos" src={facebookImg} alt="Facebook link" />
             </a>
             <div>
                 <h1>location</h1>

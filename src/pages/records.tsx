@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
 import TeamTabs from '../components/teams/teamTabs';
 import TeamTabsWrapper from '../components/teams/teamTabsWrapper';
-import { config } from '../config';
-import { returnTabName } from '../helpers/statsHelper';
+import CombinedRecords from '../components/teams/records/combinedRecords';
+import IndividualRecords from '../components/teams/records/individualRecords';
 import { RecordsProps } from '../types/interfaces';
+import { returnTabName } from '../helpers/statsHelper';
 import {
     findLeaguesAvailableInData,
     findMinNumberOfGames,
     findPlayerRecords,
     findTeamRecords,
 } from '../helpers/recordsHelper';
-import CombinedRecords from '../components/teams/records/combinedRecords';
-import IndividualRecords from '../components/teams/records/individualRecords';
+import { config } from '../config';
 
 function Records(props: RecordsProps) {
     const stats = props.stats;

@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import IndividualTeamStats from '../components/teams/teamStats/individualTeamStats';
 import CombinedTeamStats from '../components/teams/teamStats/combinedTeamStats';
 import TeamTabs from '../components/teams/teamTabs';
-import { config } from '../config';
-import { returnTabName } from '../helpers/statsHelper';
-import { TeamStatsProps } from '../types/interfaces';
 import TeamTabsWrapper from '../components/teams/teamTabsWrapper';
+import { TeamStatsProps } from '../types/interfaces';
+import { returnTabName } from '../helpers/statsHelper';
 import { findTeamStats } from '../helpers/teamStatsHelper';
+import { config } from '../config';
 
 function TeamStats(props: TeamStatsProps) {
     const stats = props.stats;

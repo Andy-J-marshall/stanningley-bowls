@@ -1,5 +1,5 @@
-import { IndividualRecordsProps } from '../../../types/interfaces';
 import RecordsTableDisplay from '../records/recordsTableDisplay';
+import { IndividualRecordsProps } from '../../../types/interfaces';
 
 function IndividualRecords(props: IndividualRecordsProps) {
     const stats = props.stats;

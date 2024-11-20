@@ -1,6 +1,6 @@
 import { Row } from 'react-bootstrap';
-import { PlayerStatAggregatesTilesProps } from '../../types/interfaces';
 import StatsTile from './statsTile';
+import { PlayerStatAggregatesTilesProps } from '../../types/interfaces';
 
 function PlayerStatAggregateTiles(props: PlayerStatAggregatesTilesProps) {
     const aggFor = props.aggFor;

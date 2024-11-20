@@ -1,6 +1,6 @@
-import { combineTeamStats } from '../../../helpers/teamStatsHelper';
-import { CombinedTeamStatsProps } from '../../../types/interfaces';
 import TeamStatsTable from './teamStatsTable';
+import { CombinedTeamStatsProps } from '../../../types/interfaces';
+import { combineTeamStats } from '../../../helpers/teamStatsHelper';
 
 function CombinedTeamStats(props: CombinedTeamStatsProps) {
     const stats = props.stats;

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-import { config } from '../config';
 import { ResultsProps } from '../types/interfaces';
 import { returnResultsArrayForTeamsWithGames } from '../helpers/resultsHelper';
+import { config } from '../config';
 
 const teamName = config.teamNames.shortName.toLowerCase();
 const currentYear = new Date().getFullYear();

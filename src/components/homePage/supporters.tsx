@@ -1,10 +1,10 @@
-import arnoldClarkLogo from '../../images/supporters/arnold_clark_grant.png';
-import asdaLogo from '../../images/supporters/asda_foundation.png';
-import joeyLogo from '../../images/supporters/joey.png';
-import beaLogo from '../../images/supporters/bramley_elderly_action.png';
-import heyNeighbourLogo from '../../images/supporters/hey_neighbour_grant.png';
-import squeakerLogo from '../../images/supporters/squeaker.png';
-import wldLogo from '../../images/supporters/west_leeds_dispatch.png';
+import arnoldClarkLogoImg from '../../images/supporters/arnold_clark_grant.png';
+import asdaLogoImg from '../../images/supporters/asda_foundation.png';
+import joeyLogoImg from '../../images/supporters/joey.png';
+import beaLogoImg from '../../images/supporters/bramley_elderly_action.png';
+import heyNeighbourLogoImg from '../../images/supporters/hey_neighbour_grant.png';
+import squeakerLogoImg from '../../images/supporters/squeaker.png';
+import wldLogoImg from '../../images/supporters/west_leeds_dispatch.png';
 
 function Supporters() {
     return (
@@ -13,21 +13,21 @@ function Supporters() {
             <a target="_blank" href="https://www.joeysportsmassage.co.uk">
                 <img
                     className="supporters-logos"
-                    src={joeyLogo}
+                    src={joeyLogoImg}
                     alt="support-logo0"
                 />
             </a>
             <a target="_blank" href="https://www.asdafoundation.org">
                 <img
                     className="supporters-logos"
-                    src={asdaLogo}
+                    src={asdaLogoImg}
                     alt="support-logo1"
                 />
             </a>
             <a target="_blank" href="https://bramleyea.org.uk">
                 <img
                     className="supporters-logos"
-                    src={beaLogo}
+                    src={beaLogoImg}
                     alt="support-logo2"
                 />
             </a>
@@ -37,28 +37,28 @@ function Supporters() {
             >
                 <img
                     className="supporters-logos"
-                    src={arnoldClarkLogo}
+                    src={arnoldClarkLogoImg}
                     alt="support-logo3"
                 />
             </a>
             <a target="_blank" href="https://www.heyneighbour.org.uk">
                 <img
                     className="supporters-logos"
-                    src={heyNeighbourLogo}
+                    src={heyNeighbourLogoImg}
                     alt="support-logo4"
                 />
             </a>
             <a target="_blank" href="http://www.thesqueaker.co.uk">
                 <img
                     className="supporters-logos"
-                    src={squeakerLogo}
+                    src={squeakerLogoImg}
                     alt="support-logo5"
                 />
             </a>
             <a target="_blank" href="https://westleedsdispatch.com">
                 <img
                     className="supporters-logos"
-                    src={wldLogo}
+                    src={wldLogoImg}
                     alt="support-logo6"
                 />
             </a>

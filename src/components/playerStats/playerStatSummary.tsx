@@ -1,13 +1,13 @@
 import { CSSProperties, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../../helpers/utils';
+import OrderByButton from './orderByButton';
 import {
     PlayerStatsTeamSummary,
     PlayerStatSummaryProps,
 } from '../../types/interfaces';
+import { capitalizeText } from '../../helpers/utils';
 import { orderBy } from '../../helpers/statsHelper';
 import { returnPlayerSummaryDisplayStats } from '../../helpers/playerStatsSummaryHelper';
-import OrderByButton from './orderByButton';
 
 function PlayerStatSummary(props: PlayerStatSummaryProps) {
     const playerStats = props.playerStats;

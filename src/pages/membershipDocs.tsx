@@ -10,7 +10,7 @@ function MembershipDocs() {
 
     return (
         <div className="center" style={{ padding: '1.5rem' }}>
-            <Button variant="primary" onClick={handleShow}>
+            <Button style={{ backgroundColor: '#0081a4' }} onClick={handleShow}>
                 Membership Documents
             </Button>
 

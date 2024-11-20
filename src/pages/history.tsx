@@ -7,10 +7,10 @@ import {
     ListGroup,
     ListGroupItem,
 } from 'react-bootstrap';
-import { config } from '../config';
-import historicTeamImage from '../images/websiteImages/historic-team-photo.png';
-import historicStatsImage from '../images/websiteImages/historic-stats.png';
+import historicTeamImg from '../images/websiteImages/historic-team-photo.png';
+import historicStatsImg from '../images/websiteImages/historic-stats.png';
 import clubCupWinners from '../data/clubCupWinners.json';
+import { config } from '../config';
 
 const { emailUrl, teamPhotosUrl, historicStatsUrl } = config.socialLinks;
 const { fullName } = config.teamNames;
@@ -41,7 +41,7 @@ function History() {
                         <Card.Img
                             alt="historic-team-photos"
                             variant="top"
-                            src={historicTeamImage}
+                            src={historicTeamImg}
                         />
                         <Card.Body>
                             <Card.Title>TEAM PHOTOS</Card.Title>
@@ -62,7 +62,7 @@ function History() {
                         <Card.Img
                             alt="historic-team-stats"
                             variant="top"
-                            src={historicStatsImage}
+                            src={historicStatsImg}
                         />
                         <Card.Body>
                             <Card.Title>HISTORIC STATS</Card.Title>

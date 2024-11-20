@@ -1,5 +1,5 @@
-import { CombinedRecordsProps } from '../../../types/interfaces';
 import RecordsTableDisplay from './recordsTableDisplay';
+import { CombinedRecordsProps } from '../../../types/interfaces';
 
 function CombinedRecords(props: CombinedRecordsProps) {
     const stats = props.stats;

@@ -1,7 +1,7 @@
 import { Accordion } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
-import { capitalizeText } from '../../helpers/utils';
 import { PlayerStatsComponentsProps } from '../../types/interfaces';
+import { capitalizeText } from '../../helpers/utils';
 import { returnStructuredResultsArray } from '../../helpers/resultsHelper';
 
 function PlayerStatsResults(props: PlayerStatsComponentsProps) {
