@@ -12,7 +12,7 @@ function NewsItem(props: NewsItemProps) {
 
     return (
         <Col>
-            <Card bg="light">
+            <Card style={{ minHeight: '500px' }} bg="light">
                 <Card.Body>
                     <h4>{title}</h4>
                     <Card.Img
@@ -23,11 +23,22 @@ function NewsItem(props: NewsItemProps) {
                     <br />
                     <br />
                     <Card.Text>{openingLine}</Card.Text>
-                    {!open && (
-                        <Button variant="light" onClick={() => setOpen(true)}>
-                            READ MORE...
-                        </Button>
-                    )}
+                    <div
+                        style={{
+                            position: 'absolute',
+                            bottom: '12px',
+                            width: '95%',
+                        }}
+                    >
+                        {!open && (
+                            <Button
+                                variant="light"
+                                onClick={() => setOpen(true)}
+                            >
+                                READ MORE...
+                            </Button>
+                        )}
+                    </div>
                     <Collapse in={open}>
                         <Card.Text>{mainText}</Card.Text>
                     </Collapse>
