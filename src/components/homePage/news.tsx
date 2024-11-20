@@ -1,8 +1,8 @@
 import { Row } from 'react-bootstrap';
 import NewsItem from './newsItem';
-import news1Img from '../../images/news/volunteering.png';
-import news2Img from '../../images/news/ladies-team.png';
-import news3Img from '../../images/news/agm-2024.png';
+import news1Img from '../../images/news/news-image1.png';
+import news2Img from '../../images/news/news-image2.png';
+import news3Img from '../../images/news/news-image3.png';
 
 function News() {
     return (
