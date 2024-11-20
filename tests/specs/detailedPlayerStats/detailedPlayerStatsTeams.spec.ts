@@ -64,18 +64,21 @@ test.describe('Player detailed stats - teams', () => {
         await playerSearchPage.searchForPlayer('Marion Worrall');
         await detailedPlayerStatsPage.clickTeamAccordion();
 
+        // AW Monday
         await expect(playerStatsTeamPage.mondayAWGames).toHaveText('1');
         await expect(playerStatsTeamPage.mondayAWAvg).toHaveText('-5.00');
         await expect(playerStatsTeamPage.mondayAWWins).toHaveText('0');
         await expect(playerStatsTeamPage.mondayAWLosses).toHaveText('1');
         await expect(playerStatsTeamPage.mondayAWWinPerc).toHaveText('0%');
 
+        // Leeds Tuesday Vets
         await expect(playerStatsTeamPage.tueVetsLeedsGames).toHaveText('33');
         await expect(playerStatsTeamPage.tueVetsLeedsAvg).toHaveText('-4.70');
         await expect(playerStatsTeamPage.tueVetsLeedsWins).toHaveText('10');
         await expect(playerStatsTeamPage.tueVetsLeedsLosses).toHaveText('23');
         await expect(playerStatsTeamPage.tueVetsLeedsWinPerc).toHaveText('30%');
 
+        // Bradford Saturday
         await expect(playerStatsTeamPage.satBradfordGames).toHaveText('19');
         await expect(playerStatsTeamPage.satBradfordAvg).toHaveText('-7.63');
         await expect(playerStatsTeamPage.satBradfordWins).toHaveText('2');
@@ -94,12 +97,14 @@ test.describe('Player detailed stats - teams', () => {
         await playerSearchPage.searchForPlayer('Alan Parker');
         await detailedPlayerStatsPage.clickTeamAccordion();
 
+        // Leeds Thursday Vets
         await expect(playerStatsTeamPage.thuVetsLeedsGames).toHaveText('1');
         await expect(playerStatsTeamPage.thuVetsLeedsAvg).toHaveText('7.00');
         await expect(playerStatsTeamPage.thuVetsLeedsWins).toHaveText('1');
         await expect(playerStatsTeamPage.thuVetsLeedsLosses).toHaveText('0');
         await expect(playerStatsTeamPage.thuVetsLeedsWinPerc).toHaveText('100%');
 
+        // Leeds Tuesday Vets (B)
         await expect(playerStatsTeamPage.thuVetsBLeedsGames).toHaveText('8');
         await expect(playerStatsTeamPage.thuVetsBLeedsAvg).toHaveText('9.75');
         await expect(playerStatsTeamPage.thuVetsBLeedsWins).toHaveText('7');
