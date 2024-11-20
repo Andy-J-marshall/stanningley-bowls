@@ -19,10 +19,10 @@ import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
 const allYearClubStats: any = statsData.allYearClubStats;
-const allYearAllClubsStats: any = statsData.allYearAllClubStats;
+const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
 const clubStatsForEveryYearArray: any[] = statsData.clubStatsForEveryYearArray;
-const allClubStatsForEveryYearArray: any[] =
-    statsData.allClubStatsForEveryYearArray;
+const allClubsStatsForEveryYearArray: any[] =
+    statsData.allClubsStatsForEveryYearArray;
 
 function App() {
     const [clubStats, setClubStats] = useState(statsData.dataFiles.clubStats24);
@@ -135,12 +135,12 @@ function App() {
                                 />
                                 <PlayerStats
                                     clubStats={clubStats}
-                                    allClubStats={allClubsStats}
+                                    allClubsStats={allClubsStats}
                                     clubStatsForEveryYearArray={
                                         clubStatsForEveryYearArray
                                     }
-                                    allClubStatsForEveryYearArray={
-                                        allClubStatsForEveryYearArray
+                                    allClubsStatsForEveryYearArray={
+                                        allClubsStatsForEveryYearArray
                                     }
                                 />
                             </div>

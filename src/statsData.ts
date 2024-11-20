@@ -61,7 +61,7 @@ const allYearClubStats = {
     year2024: dataFiles.clubStats24,
 };
 
-const allYearAllClubStats = {
+const allYearAllClubsStats = {
     year2013: dataFiles.allClubStats13,
     year2014: dataFiles.allClubStats14,
     year2015: dataFiles.allClubStats15,
@@ -89,7 +89,7 @@ const clubStatsForEveryYearArray = [
     dataFiles.clubStats24,
 ];
 
-const allClubStatsForEveryYearArray = [
+const allClubsStatsForEveryYearArray = [
     dataFiles.allClubStats13,
     dataFiles.allClubStats14,
     dataFiles.allClubStats15,
@@ -106,7 +106,7 @@ const allClubStatsForEveryYearArray = [
 export default {
     dataFiles,
     allYearClubStats,
-    allYearAllClubStats,
+    allYearAllClubsStats,
     clubStatsForEveryYearArray,
-    allClubStatsForEveryYearArray,
+    allClubsStatsForEveryYearArray,
 };

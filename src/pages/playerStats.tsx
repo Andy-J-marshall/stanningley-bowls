@@ -24,10 +24,10 @@ import {
 import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
-    const allClubStats = props.allClubStats;
+    const allClubStats = props.allClubsStats;
     const clubStats = props.clubStats;
     const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
-    const allClubStatsForEveryYearArray = props.allClubStatsForEveryYearArray;
+    const allClubStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
 
     const { playerResults } = clubStats;
     const allClubPlayerResults = allClubStats.playerResults;
