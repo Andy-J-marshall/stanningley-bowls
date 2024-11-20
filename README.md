@@ -3,6 +3,7 @@
 Welcome to the website for Stanningley Park Bowling Club.
 
 ### Overview
+
 This repository contains multiple components:
 
 -   React web application to display club information and stats
@@ -18,12 +19,18 @@ This repository contains multiple components:
 
 ## Pre-requisites
 
--   Install git
--   Install GH CLI:
-    -   `brew install gh`
-    -   Run: `gh auth login` and login to GitHub
--   Install NodeJS
--   Install python 3
+Install:
+
+-   git
+-   NodeJS
+-   python 3
+-   optional: GH CLI (e.g. on macOS, run: `brew install gh`)
+
+GitHub repo setup:
+
+-   `settings/actions` - grant Workflow permissions read/write access, and optionally allow GH Actions to create PRs.
+-   `settings/pages` - add the custom domain here.
+-   To deploy from your machine, you may need to run `gh auth login` and login to GitHub (this is required for the scripts to create PRs).
 
 # WEB APPLICATION
 
