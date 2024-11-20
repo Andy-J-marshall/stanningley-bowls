@@ -10,8 +10,8 @@ import wedPairsImg from '../images/websiteImages/wedPairs-team.png';
 
 const teams = [
     {
-        name: 'Monday Airewharfe',
-        link: 'https://bowlsnet.uk/AW-Mon',
+        name: 'Monday Combined Leeds',
+        link: 'https://bowlsnet.uk/Leeds-MonComb',
         img: monImg,
     },
     {
@@ -46,8 +46,6 @@ const teams = [
     },
 ];
 
-// TODO add leeds ladies league
-
 function TeamInfo() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -56,10 +54,10 @@ function TeamInfo() {
     return (
         <div id="team-info" className="page-component center">
             <h1>teams</h1>
-            <Row sm={1} md={2} lg={3} className="g-4 tabs">
+            <Row xs={1} sm={1} md={2} lg={3} className="g-4 tabs">
                 {teams.map((team, idx) => (
                     <Col key={idx}>
-                        <Card bg="light" style={{ width: '18rem' }}>
+                        <Card bg="light">
                             <Card.Img
                                 alt="team-photo"
                                 variant="top"
