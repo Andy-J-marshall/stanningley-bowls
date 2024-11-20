@@ -152,8 +152,3 @@ A number of manual changes are required at the end of each calendar year.
 ## Tests
 
 1. Update `checkYearDropdownHasAllYearOptions` function in `yearSelectPage.tsx`.
-
-# Ideas for future improvements
-
--   Consider creating a basic website template for other clubs to use, and how to make it maintainable
--   Add other teams to the stats and add a filter
