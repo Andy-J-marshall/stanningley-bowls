@@ -134,12 +134,12 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <PlayerStats
-                                    stats={clubStats}
-                                    combinedStats={allClubsStats}
-                                    statsForEveryYearArray={
+                                    clubStats={clubStats}
+                                    allClubStats={allClubsStats}
+                                    clubStatsForEveryYearArray={
                                         clubStatsForEveryYearArray
                                     }
-                                    combinedStatsForEveryYearArray={
+                                    allClubStatsForEveryYearArray={
                                         allClubStatsForEveryYearArray
                                     }
                                 />

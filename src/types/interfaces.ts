@@ -58,10 +58,10 @@ export interface PlayerStatsOptionsProps {
 }
 
 export interface PlayerStatsProps {
-    stats: FullStatsFile;
-    combinedStats: FullStatsFile;
-    statsForEveryYearArray: FullStatsFile[];
-    combinedStatsForEveryYearArray: FullStatsFile[];
+    clubStats: FullStatsFile;
+    allClubStats: FullStatsFile;
+    clubStatsForEveryYearArray: FullStatsFile[];
+    allClubStatsForEveryYearArray: FullStatsFile[];
 }
 
 export interface PlayerStatOverviewTilesProps {
