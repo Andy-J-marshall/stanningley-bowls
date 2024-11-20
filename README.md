@@ -2,6 +2,7 @@
 
 Welcome to the website for Stanningley Park Bowling Club.
 
+### Overview
 This repository contains multiple components:
 
 -   React web application to display club information and stats
@@ -9,7 +10,7 @@ This repository contains multiple components:
 -   GitHub Actions to automate the process of updating the stats and deploying the web app
 -   Playwright UI tests to ensure the web app is working as expected
 
-The flow of data is as follows:
+### Data flow
 
 1. The Playwright script in `scripts/bowlsnet` generates text reports from bowlsnet.uk for each tracked league and saves them locally
 2. The python scripts in `scripts/statsScripts` reads the text reports and generates two JSON files for the stats, one for the club stats and one for all tracked club stats
