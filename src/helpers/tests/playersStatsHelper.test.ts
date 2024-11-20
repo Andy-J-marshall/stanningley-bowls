@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { returnPlayerStats, findBiggestWin } from '../playerStatsHelper';
-import stats2022 from '../../data/bowlsStats2022.json';
+import stats2022 from '../../data/stanningleyStats2022.json';
 
 describe('#playersStatsHelper Tests', () => {
     describe('#findBiggestWin()', () => {

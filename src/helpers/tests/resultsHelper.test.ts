@@ -3,7 +3,7 @@ import {
     returnResultsArrayForTeamsWithGames,
     returnStructuredResultsArray,
 } from '../resultsHelper';
-import stats2021 from '../../data/bowlsStats2021.json';
+import stats2021 from '../../data/stanningleyStats2021.json';
 
 describe('#ResultsHelper Tests', () => {
     describe('#returnStructuredResultsArray()', () => {

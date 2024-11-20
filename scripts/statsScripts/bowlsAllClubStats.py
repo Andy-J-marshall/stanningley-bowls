@@ -115,7 +115,7 @@ dataToExport = {
     "statsYear": year,
 }
 
-filename = "src/data/allPlayerStats" + year + ".json"
+filename = f"src/data/allClubStats{year}.json"
 previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 
