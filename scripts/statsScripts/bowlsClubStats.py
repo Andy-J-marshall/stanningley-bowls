@@ -16,7 +16,7 @@ from sanityChecks import (
     getFileSize,
     validatePlayerNotProcessedTwice,
 )
-from utils import findEndRowOfFile, returnFileSize, returnTodayDate, saveFile, year
+from fileUtils import findEndRowOfFile, returnFileSize, returnTodayDate, saveFile, year
 from statsHelper import (
     findCupGameRows,
     removeSuffixFromTeamName,
