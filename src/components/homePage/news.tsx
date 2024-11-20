@@ -17,7 +17,7 @@ function News() {
                 />
                 <NewsItem
                     title="LADIES TEAM"
-                    openingLine="We are looking to enter a team into the Leeds Ladies League for the 2025 season."
+                    openingLine="We are entering a team into the Leeds Ladies League for the 2025 season."
                     mainText="If you are interested in playing then please contact a club member. No experience is necessary."
                     imgSrc={ladiesTeamImage}
                 />
