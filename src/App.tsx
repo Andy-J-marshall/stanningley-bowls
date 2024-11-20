@@ -41,62 +41,63 @@ function App() {
 
     function statsSelectCallback(year: string) {
         const currentYear = new Date().getFullYear();
-        let statsForSelectedYear: any;
-        let combinedStatsForSelectedYear: any;
+        let clubStatsForSelectedYear: any;
+        let allClubsStatsForSelectedYear: any;
         switch (year.toString()) {
             case '2013':
-                statsForSelectedYear = allYearClubStats['year2013'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2013'];
+                clubStatsForSelectedYear = allYearClubStats['year2013'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
                 break;
             case '2014':
-                statsForSelectedYear = allYearClubStats['year2014'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2014'];
+                clubStatsForSelectedYear = allYearClubStats['year2014'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2014'];
                 break;
             case '2015':
-                statsForSelectedYear = allYearClubStats['year2015'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2015'];
+                clubStatsForSelectedYear = allYearClubStats['year2015'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2015'];
                 break;
             case '2016':
-                statsForSelectedYear = allYearClubStats['year2016'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2016'];
+                clubStatsForSelectedYear = allYearClubStats['year2016'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2016'];
                 break;
             case '2017':
-                statsForSelectedYear = allYearClubStats['year2017'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2017'];
+                clubStatsForSelectedYear = allYearClubStats['year2017'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2017'];
                 break;
             case '2018':
-                statsForSelectedYear = allYearClubStats['year2018'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2018'];
+                clubStatsForSelectedYear = allYearClubStats['year2018'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2018'];
                 break;
             case '2019':
-                statsForSelectedYear = allYearClubStats['year2019'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2019'];
+                clubStatsForSelectedYear = allYearClubStats['year2019'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2019'];
                 break;
             case '2021':
-                statsForSelectedYear = allYearClubStats['year2021'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2021'];
+                clubStatsForSelectedYear = allYearClubStats['year2021'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2021'];
                 break;
             case '2022':
-                statsForSelectedYear = allYearClubStats['year2022'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2022'];
+                clubStatsForSelectedYear = allYearClubStats['year2022'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2022'];
                 break;
             case '2023':
-                statsForSelectedYear = allYearClubStats['year2023'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2023'];
+                clubStatsForSelectedYear = allYearClubStats['year2023'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
                 break;
             case '2024':
-                statsForSelectedYear = allYearClubStats['year2024'];
-                combinedStatsForSelectedYear = allYearAllClubsStats['year2024'];
+                clubStatsForSelectedYear = allYearClubStats['year2024'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
                 break;
             default:
-                statsForSelectedYear = allYearClubStats[`year${currentYear}`];
-                combinedStatsForSelectedYear =
+                clubStatsForSelectedYear =
+                    allYearClubStats[`year${currentYear}`];
+                allClubsStatsForSelectedYear =
                     allYearAllClubsStats[`year${currentYear}`];
                 break;
         }
         setYearToDisplay(year.toString());
-        setClubStats(statsForSelectedYear);
-        setAllClubsStats(combinedStatsForSelectedYear);
+        setClubStats(clubStatsForSelectedYear);
+        setAllClubsStats(allClubsStatsForSelectedYear);
     }
 
     return (
