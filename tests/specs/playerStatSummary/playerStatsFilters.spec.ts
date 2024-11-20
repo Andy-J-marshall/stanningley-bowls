@@ -211,7 +211,7 @@ test.describe('Player summary stats - filters', () => {
         await yearSelectPage.select2023Year();
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
 
-        await expect(playerStatOptionsPage.clubSwitch).toBeDisabled();
+        await expect(playerStatOptionsPage.allClubsSwitch).toBeDisabled();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.pairsOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.allGameTypesRadio).toBeDisabled();
@@ -242,7 +242,7 @@ test.describe('Player summary stats - filters', () => {
         await expect(playerStatOptionsPage.allYearSwitch).toBeChecked();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeChecked();
         await expect(playerStatOptionsPage.awayOnlyRadio).toBeChecked();
-        await expect(playerStatOptionsPage.clubSwitch).toBeChecked();
+        await expect(playerStatOptionsPage.allClubsSwitch).toBeChecked();
 
         await playerSummaryPage.validateSummaryStats(270, 149, 55, 1.29);
     });
