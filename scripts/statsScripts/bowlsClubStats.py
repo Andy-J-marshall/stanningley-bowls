@@ -1,5 +1,5 @@
 import re
-from teamDetails import teamNames, teamDays, players, displayTeamName
+from clubDetails import teamNames, teamDays, players, displayTeamName
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,
     isCupGame,
@@ -257,7 +257,7 @@ dataToExport = {
     "statsYear": year,
 }
 
-filename = "src/data/bowlsStats" + year + ".json"
+filename = f"src/data/{displayTeamName.lower()}Stats{year}.json"
 previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 

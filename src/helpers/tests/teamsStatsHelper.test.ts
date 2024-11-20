@@ -7,9 +7,9 @@ import {
 } from '../teamStatsHelper';
 import { PlayerResultsStatsFile } from '../../types/interfaces';
 import { config } from '../../config';
-import stats2022 from '../../data/bowlsStats2022.json';
-import stats2023 from '../../data/bowlsStats2023.json';
-import stats2024 from '../../data/bowlsStats2024.json';
+import stats2022 from '../../data/stanningleyStats2022.json';
+import stats2023 from '../../data/stanningleyStats2023.json';
+import stats2024 from '../../data/stanningleyStats2024.json';
 
 describe('#teamStatsHelper Tests', () => {
     describe('#CombinedTeamStats()', () => {

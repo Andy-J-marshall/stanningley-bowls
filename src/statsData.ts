@@ -1,112 +1,112 @@
-import bowlsStats13 from './data/bowlsStats2013.json';
-import combinedBowlsStats13 from './data/allPlayerStats2013.json';
-import bowlsStats14 from './data/bowlsStats2014.json';
-import combinedBowlsStats14 from './data/allPlayerStats2014.json';
-import bowlsStats15 from './data/bowlsStats2015.json';
-import combinedBowlsStats15 from './data/allPlayerStats2015.json';
-import bowlsStats16 from './data/bowlsStats2016.json';
-import combinedBowlsStats16 from './data/allPlayerStats2016.json';
-import bowlsStats17 from './data/bowlsStats2017.json';
-import combinedBowlsStats17 from './data/allPlayerStats2017.json';
-import bowlsStats18 from './data/bowlsStats2018.json';
-import combinedBowlsStats18 from './data/allPlayerStats2018.json';
-import bowlsStats19 from './data/bowlsStats2019.json';
-import combinedBowlsStats19 from './data/allPlayerStats2019.json';
-import bowlsStats21 from './data/bowlsStats2021.json';
-import combinedBowlsStats21 from './data/allPlayerStats2021.json';
-import bowlsStats22 from './data/bowlsStats2022.json';
-import combinedBowlsStats22 from './data/allPlayerStats2022.json';
-import bowlsStats23 from './data/bowlsStats2023.json';
-import combinedBowlsStats23 from './data/allPlayerStats2023.json';
-import bowlsStats24 from './data/bowlsStats2024.json';
-import combinedBowlsStats24 from './data/allPlayerStats2024.json';
+import clubStats13 from './data/stanningleyStats2013.json';
+import allClubsStats13 from './data/allClubsStats2013.json';
+import clubStats14 from './data/stanningleyStats2014.json';
+import allClubsStats14 from './data/allClubsStats2014.json';
+import clubStats15 from './data/stanningleyStats2015.json';
+import allClubsStats15 from './data/allClubsStats2015.json';
+import clubStats16 from './data/stanningleyStats2016.json';
+import allClubsStats16 from './data/allClubsStats2016.json';
+import clubStats17 from './data/stanningleyStats2017.json';
+import allClubsStats17 from './data/allClubsStats2017.json';
+import clubStats18 from './data/stanningleyStats2018.json';
+import allClubsStats18 from './data/allClubsStats2018.json';
+import clubStats19 from './data/stanningleyStats2019.json';
+import allClubsStats19 from './data/allClubsStats2019.json';
+import clubStats21 from './data/stanningleyStats2021.json';
+import allClubsStats21 from './data/allClubsStats2021.json';
+import clubStats22 from './data/stanningleyStats2022.json';
+import allClubsStats22 from './data/allClubsStats2022.json';
+import clubStats23 from './data/stanningleyStats2023.json';
+import allClubsStats23 from './data/allClubsStats2023.json';
+import clubStats24 from './data/stanningleyStats2024.json';
+import allClubsStats24 from './data/allClubsStats2024.json';
 
 // Stats for future years will need to be updated here
 const dataFiles = {
-    bowlsStats13,
-    combinedBowlsStats13,
-    bowlsStats14,
-    combinedBowlsStats14,
-    bowlsStats15,
-    combinedBowlsStats15,
-    bowlsStats16,
-    combinedBowlsStats16,
-    bowlsStats17,
-    combinedBowlsStats17,
-    bowlsStats18,
-    combinedBowlsStats18,
-    bowlsStats19,
-    combinedBowlsStats19,
-    bowlsStats21,
-    combinedBowlsStats21,
-    bowlsStats22,
-    combinedBowlsStats22,
-    bowlsStats23,
-    combinedBowlsStats23,
-    bowlsStats24,
-    combinedBowlsStats24,
+    clubStats13,
+    allClubsStats13,
+    clubStats14,
+    allClubsStats14,
+    clubStats15,
+    allClubsStats15,
+    clubStats16,
+    allClubsStats16,
+    clubStats17,
+    allClubsStats17,
+    clubStats18,
+    allClubsStats18,
+    clubStats19,
+    allClubsStats19,
+    clubStats21,
+    allClubsStats21,
+    clubStats22,
+    allClubsStats22,
+    clubStats23,
+    allClubsStats23,
+    clubStats24,
+    allClubsStats24,
 };
 
-const allYearStats = {
-    year2013: dataFiles.bowlsStats13,
-    year2014: dataFiles.bowlsStats14,
-    year2015: dataFiles.bowlsStats15,
-    year2016: dataFiles.bowlsStats16,
-    year2017: dataFiles.bowlsStats17,
-    year2018: dataFiles.bowlsStats18,
-    year2019: dataFiles.bowlsStats19,
-    year2021: dataFiles.bowlsStats21,
-    year2022: dataFiles.bowlsStats22,
-    year2023: dataFiles.bowlsStats23,
-    year2024: dataFiles.bowlsStats24,
+const allYearClubStats = {
+    year2013: dataFiles.clubStats13,
+    year2014: dataFiles.clubStats14,
+    year2015: dataFiles.clubStats15,
+    year2016: dataFiles.clubStats16,
+    year2017: dataFiles.clubStats17,
+    year2018: dataFiles.clubStats18,
+    year2019: dataFiles.clubStats19,
+    year2021: dataFiles.clubStats21,
+    year2022: dataFiles.clubStats22,
+    year2023: dataFiles.clubStats23,
+    year2024: dataFiles.clubStats24,
 };
 
-const allYearCombinedStats = {
-    year2013: dataFiles.combinedBowlsStats13,
-    year2014: dataFiles.combinedBowlsStats14,
-    year2015: dataFiles.combinedBowlsStats15,
-    year2016: dataFiles.combinedBowlsStats16,
-    year2017: dataFiles.combinedBowlsStats17,
-    year2018: dataFiles.combinedBowlsStats18,
-    year2019: dataFiles.combinedBowlsStats19,
-    year2021: dataFiles.combinedBowlsStats21,
-    year2022: dataFiles.combinedBowlsStats22,
-    year2023: dataFiles.combinedBowlsStats23,
-    year2024: dataFiles.combinedBowlsStats24,
+const allYearAllClubsStats = {
+    year2013: dataFiles.allClubsStats13,
+    year2014: dataFiles.allClubsStats14,
+    year2015: dataFiles.allClubsStats15,
+    year2016: dataFiles.allClubsStats16,
+    year2017: dataFiles.allClubsStats17,
+    year2018: dataFiles.allClubsStats18,
+    year2019: dataFiles.allClubsStats19,
+    year2021: dataFiles.allClubsStats21,
+    year2022: dataFiles.allClubsStats22,
+    year2023: dataFiles.allClubsStats23,
+    year2024: dataFiles.allClubsStats24,
 };
 
-const statsForEveryYearArray = [
-    dataFiles.bowlsStats13,
-    dataFiles.bowlsStats14,
-    dataFiles.bowlsStats15,
-    dataFiles.bowlsStats16,
-    dataFiles.bowlsStats17,
-    dataFiles.bowlsStats18,
-    dataFiles.bowlsStats19,
-    dataFiles.bowlsStats21,
-    dataFiles.bowlsStats22,
-    dataFiles.bowlsStats23,
-    dataFiles.bowlsStats24,
+const clubStatsForEveryYearArray = [
+    dataFiles.clubStats13,
+    dataFiles.clubStats14,
+    dataFiles.clubStats15,
+    dataFiles.clubStats16,
+    dataFiles.clubStats17,
+    dataFiles.clubStats18,
+    dataFiles.clubStats19,
+    dataFiles.clubStats21,
+    dataFiles.clubStats22,
+    dataFiles.clubStats23,
+    dataFiles.clubStats24,
 ];
 
-const combinedStatsForEveryYearArray = [
-    dataFiles.combinedBowlsStats13,
-    dataFiles.combinedBowlsStats14,
-    dataFiles.combinedBowlsStats15,
-    dataFiles.combinedBowlsStats16,
-    dataFiles.combinedBowlsStats17,
-    dataFiles.combinedBowlsStats18,
-    dataFiles.combinedBowlsStats19,
-    dataFiles.combinedBowlsStats21,
-    dataFiles.combinedBowlsStats22,
-    dataFiles.combinedBowlsStats23,
-    dataFiles.combinedBowlsStats24,
+const allClubsStatsForEveryYearArray = [
+    dataFiles.allClubsStats13,
+    dataFiles.allClubsStats14,
+    dataFiles.allClubsStats15,
+    dataFiles.allClubsStats16,
+    dataFiles.allClubsStats17,
+    dataFiles.allClubsStats18,
+    dataFiles.allClubsStats19,
+    dataFiles.allClubsStats21,
+    dataFiles.allClubsStats22,
+    dataFiles.allClubsStats23,
+    dataFiles.allClubsStats24,
 ];
 
 export default {
     dataFiles,
-    allYearStats,
-    allYearCombinedStats,
-    statsForEveryYearArray,
-    combinedStatsForEveryYearArray,
+    allYearClubStats,
+    allYearAllClubsStats,
+    clubStatsForEveryYearArray,
+    allClubsStatsForEveryYearArray,
 };

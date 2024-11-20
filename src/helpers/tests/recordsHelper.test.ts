@@ -6,8 +6,8 @@ import {
     findTeamRecords,
 } from '../recordsHelper';
 import { config } from '../../config';
-import stats2022 from '../../data/bowlsStats2022.json';
-import stats2024 from '../../data/bowlsStats2024.json';
+import stats2022 from '../../data/stanningleyStats2022.json';
+import stats2024 from '../../data/stanningleyStats2024.json';
 const playerResults22 = stats2022.playerResults;
 const playerResults24 = stats2024.playerResults;
 

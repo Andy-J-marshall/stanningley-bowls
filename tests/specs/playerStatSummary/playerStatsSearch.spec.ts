@@ -1,9 +1,9 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import bowlsStats from '../../../src/data/bowlsStats2023.json';
+import clubStats from '../../../src/data/stanningleyStats2023.json';
 import { findTotalNumberOfPlayersForYears } from '../../utils/statsHelper';
 
-const playerCount = findTotalNumberOfPlayersForYears(bowlsStats);
+const playerCount = findTotalNumberOfPlayersForYears(clubStats);
 
 test.describe('Player stats - search', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -63,7 +63,7 @@ test.describe('Player stats - search', () => {
         const player = 'Clifford Brogie';
 
         await yearSelectPage.select2023Year();
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
         await expect(detailedPlayerStatsPage.accordions).toHaveCount(4);

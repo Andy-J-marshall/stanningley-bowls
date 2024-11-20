@@ -45,7 +45,7 @@ export interface StatsTileProps {
 }
 
 export interface PlayerStatsOptionsProps {
-    allTeamStatsCallback: (toggle: boolean) => void;
+    allClubsStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
     teamSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;
@@ -58,10 +58,10 @@ export interface PlayerStatsOptionsProps {
 }
 
 export interface PlayerStatsProps {
-    stats: FullStatsFile;
-    combinedStats: FullStatsFile;
-    statsForEveryYearArray: FullStatsFile[];
-    combinedStatsForEveryYearArray: FullStatsFile[];
+    clubStats: FullStatsFile;
+    allClubsStats: FullStatsFile;
+    clubStatsForEveryYearArray: FullStatsFile[];
+    allClubsStatsForEveryYearArray: FullStatsFile[];
 }
 
 export interface PlayerStatOverviewTilesProps {

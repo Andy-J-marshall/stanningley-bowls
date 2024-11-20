@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import stats2022 from '../../data/bowlsStats2022.json';
+import stats2022 from '../../data/stanningleyStats2022.json';
 import {
     returnPlayerStatSummary,
     returnPlayerSummaryDisplayStats,

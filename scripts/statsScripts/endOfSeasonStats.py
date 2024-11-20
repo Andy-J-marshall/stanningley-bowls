@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 import utils
 
-path = str(Path.cwd()) + "/src/data/bowlsStats" + utils.year + ".json"
+path = str(Path.cwd()) + "/src/data/stanningleyStats" + utils.year + ".json"
 data = open(path)
 jsonStats = json.load(data)
 

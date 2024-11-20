@@ -18,18 +18,16 @@ import './app.css';
 import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
-const allYearStats: any = statsData.allYearStats;
-const allYearCombinedStats: any = statsData.allYearCombinedStats;
-const statsForEveryYearArray: any[] = statsData.statsForEveryYearArray;
-const combinedStatsForEveryYearArray: any[] =
-    statsData.combinedStatsForEveryYearArray;
+const allYearClubStats: any = statsData.allYearClubStats;
+const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
+const clubStatsForEveryYearArray: any[] = statsData.clubStatsForEveryYearArray;
+const allClubsStatsForEveryYearArray: any[] =
+    statsData.allClubsStatsForEveryYearArray;
 
 function App() {
-    const [teamStats, setTeamStats] = useState(
-        statsData.dataFiles.bowlsStats24
-    );
-    const [combinedStats, setCombinedStats] = useState(
-        statsData.dataFiles.combinedBowlsStats24
+    const [clubStats, setClubStats] = useState(statsData.dataFiles.clubStats24);
+    const [allClubsStats, setAllClubsStats] = useState(
+        statsData.dataFiles.allClubsStats24
     );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
@@ -43,62 +41,63 @@ function App() {
 
     function statsSelectCallback(year: string) {
         const currentYear = new Date().getFullYear();
-        let statsForSelectedYear: any;
-        let combinedStatsForSelectedYear: any;
+        let clubStatsForSelectedYear: any;
+        let allClubsStatsForSelectedYear: any;
         switch (year.toString()) {
             case '2013':
-                statsForSelectedYear = allYearStats['year2013'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2013'];
+                clubStatsForSelectedYear = allYearClubStats['year2013'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
                 break;
             case '2014':
-                statsForSelectedYear = allYearStats['year2014'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2014'];
+                clubStatsForSelectedYear = allYearClubStats['year2014'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2014'];
                 break;
             case '2015':
-                statsForSelectedYear = allYearStats['year2015'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2015'];
+                clubStatsForSelectedYear = allYearClubStats['year2015'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2015'];
                 break;
             case '2016':
-                statsForSelectedYear = allYearStats['year2016'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2016'];
+                clubStatsForSelectedYear = allYearClubStats['year2016'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2016'];
                 break;
             case '2017':
-                statsForSelectedYear = allYearStats['year2017'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2017'];
+                clubStatsForSelectedYear = allYearClubStats['year2017'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2017'];
                 break;
             case '2018':
-                statsForSelectedYear = allYearStats['year2018'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2018'];
+                clubStatsForSelectedYear = allYearClubStats['year2018'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2018'];
                 break;
             case '2019':
-                statsForSelectedYear = allYearStats['year2019'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2019'];
+                clubStatsForSelectedYear = allYearClubStats['year2019'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2019'];
                 break;
             case '2021':
-                statsForSelectedYear = allYearStats['year2021'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2021'];
+                clubStatsForSelectedYear = allYearClubStats['year2021'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2021'];
                 break;
             case '2022':
-                statsForSelectedYear = allYearStats['year2022'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2022'];
+                clubStatsForSelectedYear = allYearClubStats['year2022'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2022'];
                 break;
             case '2023':
-                statsForSelectedYear = allYearStats['year2023'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2023'];
+                clubStatsForSelectedYear = allYearClubStats['year2023'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
                 break;
             case '2024':
-                statsForSelectedYear = allYearStats['year2024'];
-                combinedStatsForSelectedYear = allYearCombinedStats['year2024'];
+                clubStatsForSelectedYear = allYearClubStats['year2024'];
+                allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
                 break;
             default:
-                statsForSelectedYear = allYearStats[`year${currentYear}`];
-                combinedStatsForSelectedYear =
-                    allYearCombinedStats[`year${currentYear}`];
+                clubStatsForSelectedYear =
+                    allYearClubStats[`year${currentYear}`];
+                allClubsStatsForSelectedYear =
+                    allYearAllClubsStats[`year${currentYear}`];
                 break;
         }
         setYearToDisplay(year.toString());
-        setTeamStats(statsForSelectedYear);
-        setCombinedStats(combinedStatsForSelectedYear);
+        setClubStats(clubStatsForSelectedYear);
+        setAllClubsStats(allClubsStatsForSelectedYear);
     }
 
     return (
@@ -121,7 +120,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <Results
-                                    stats={teamStats}
+                                    stats={clubStats}
                                     yearToDisplay={yearToDisplay}
                                 />
                             </div>
@@ -136,13 +135,13 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <PlayerStats
-                                    stats={teamStats}
-                                    combinedStats={combinedStats}
-                                    statsForEveryYearArray={
-                                        statsForEveryYearArray
+                                    clubStats={clubStats}
+                                    allClubsStats={allClubsStats}
+                                    clubStatsForEveryYearArray={
+                                        clubStatsForEveryYearArray
                                     }
-                                    combinedStatsForEveryYearArray={
-                                        combinedStatsForEveryYearArray
+                                    allClubsStatsForEveryYearArray={
+                                        allClubsStatsForEveryYearArray
                                     }
                                 />
                             </div>
@@ -157,7 +156,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <TeamStats
-                                    stats={teamStats}
+                                    stats={clubStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />
@@ -173,7 +172,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <Records
-                                    stats={teamStats}
+                                    stats={clubStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />

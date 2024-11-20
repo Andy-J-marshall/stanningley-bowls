@@ -1,8 +1,8 @@
 import os
-import teamDetails
+import clubDetails
 import utils
 
-teamDays = teamDetails.allDays
+teamDays = clubDetails.allDays
 year = utils.year
 
 files = []

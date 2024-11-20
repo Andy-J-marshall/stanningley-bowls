@@ -46,7 +46,7 @@ export class PlayerStatOptionsPage {
         this.teamSelectDropdown = page.getByRole('button', { name: 'All' });
     }
 
-    async selectAllClubStatsSwitch() {
+    async selectAllClubsStatsSwitch() {
         await this.clubSwitch.check();
     }
 

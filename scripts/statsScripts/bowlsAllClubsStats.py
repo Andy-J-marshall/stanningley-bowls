@@ -1,4 +1,4 @@
-from teamDetails import allDays, players
+from clubDetails import allDays, players
 from sanityChecks import (
     checkPlayerStats,
     checkFileSizeHasGrown,
@@ -115,7 +115,7 @@ dataToExport = {
     "statsYear": year,
 }
 
-filename = "src/data/allPlayerStats" + year + ".json"
+filename = f"src/data/allClubsStats{year}.json"
 previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 

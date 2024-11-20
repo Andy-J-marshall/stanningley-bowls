@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import bowlsStats from '../../../src/data/bowlsStats2023.json';
-import allClubBowlsStats from '../../../src/data/allPlayerStats2023.json';
+import clubStats from '../../../src/data/stanningleyStats2023.json';
+import allClubsStats from '../../../src/data/allClubsStats2023.json';
 
 test.describe('Player detailed stats - overview', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -35,7 +35,7 @@ test.describe('Player detailed stats - overview', () => {
                 awayWins,
                 cupWins,
                 totalGamesPlayed,
-            } = bowlsStats.playerResults[player.toLowerCase()];
+            } = clubStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
@@ -48,7 +48,7 @@ test.describe('Player detailed stats - overview', () => {
         });
     }
 
-    const allClubPlayers: Array<string> = [
+    const allClubsPlayers: Array<string> = [
         'Clifford Brogie',
         'Jim Moorin',
         'Stewart Watson',
@@ -57,7 +57,7 @@ test.describe('Player detailed stats - overview', () => {
         'Peter Crowther',
         'Andy Marshall',
     ];
-    for (const player of allClubPlayers) {
+    for (const player of allClubsPlayers) {
         test(`Summary of player's all team stats are correct for ${player} in 2023`, async ({
             playerStatsOverviewPage,
             playerSearchPage,
@@ -65,7 +65,7 @@ test.describe('Player detailed stats - overview', () => {
             yearSelectPage,
         }) => {
             await yearSelectPage.select2023Year();
-            await playerStatOptionsPage.selectAllClubStatsSwitch();
+            await playerStatOptionsPage.selectAllClubsStatsSwitch();
             await playerSearchPage.searchForPlayer(player);
 
             const {
@@ -75,7 +75,7 @@ test.describe('Player detailed stats - overview', () => {
                 awayWins,
                 cupWins,
                 totalGamesPlayed,
-            } = allClubBowlsStats.playerResults[player.toLowerCase()];
+            } = allClubsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
@@ -110,7 +110,7 @@ test.describe('Player detailed stats - overview', () => {
         const player = 'Dave Hudson';
 
         await playerStatOptionsPage.selectAllYearsSwitch();
-        await playerStatOptionsPage.selectAllClubStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsStatsSwitch();
         await playerSearchPage.searchForPlayer(player);
 
         await playerStatsOverviewPage.validateOverviewStats(463, 174, -2.48);
