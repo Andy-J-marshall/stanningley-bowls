@@ -45,9 +45,12 @@ The application should be running on: http://localhost:5173
 
 ## Deploy to Github Pages
 
-Run the following:
+You should use the pipeline to deploy to production. When you merge your PR to master the pipeline will automatically deploy and run the UI tests.
+
+However, if you need to deploy from your local machine, you can run the following:
 
 -   `npm i`
+-   `npm run tests` (not required but recommended)
 -   `npm run build-deploy`
 
 Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain (see above)
@@ -103,6 +106,7 @@ If the step to generate the reports from Bowlsnet fails, you can manually update
 -   Copy the outputted reports to a text file
 -   Save the file in the `/bowlsnetReports/{year}` directory
 -   Run `npm run update-stats` to generate the stats JSON files
+-   Commit the changes and merge to master
 
 #### Update stats via the Pipeline
 
@@ -126,11 +130,10 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Scripts
 
-1. Create a directory for the new year in the `/bowlsnetReports`
-2. Update `clubDetails.py` script with any changes to the players i.e. `players`, `traitorPlayers`, `duplicatePlayerNames`, and `deduplicateNames`
-3. Update `clubDetails.py` script with any changes to the teams i.e. `teamDays`, `otherTeams`, and `otherLeagues` (any leagues added to `teamDays` will need to be removed from here)
-4. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
-5. If adding or removing a second team, updated the following properties in `clubDetails.py`:
+1. Update `clubDetails.py` script with any changes to the players i.e. `players`, `traitorPlayers`, `duplicatePlayerNames`, and `deduplicateNames`
+2. Update `clubDetails.py` script with any changes to the teams i.e. `teamDays`, `otherTeams`, and `otherLeagues` (any leagues added to `teamDays` will need to be removed from here)
+3. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
+4. If adding or removing a second team, updated the following properties in `clubDetails.py`:
 
 -   `teamNames` - Add the lowercase team names for the B team
 -   `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
