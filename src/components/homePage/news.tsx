@@ -58,7 +58,7 @@ function News() {
     return (
         <div id="news">
             <h1>latest news</h1>
-            <Row xs={1} sm={1} md={3} lg={3} className="g-4 align-items-start">
+            <Row xs={1} lg={3} className="g-4 align-items-start">
                 {newsItems.map((item, index) => {
                     return (
                         <Col key={index}>
