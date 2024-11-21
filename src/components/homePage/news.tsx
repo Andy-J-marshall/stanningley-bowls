@@ -62,8 +62,8 @@ function News() {
                 {newsItems.map((item, index) => {
                     return (
                         <Col key={index}>
-                            <Card style={{ minHeight: '460px' }} bg="light">
-                                <Card.Body>
+                            <Card style={{ minHeight: '490px' }} bg="light">
+                                <Card.Body className="d-flex flex-column">
                                     <Card.Title>{item.title}</Card.Title>
                                     <Card.Img
                                         style={{ paddingBottom: '1rem' }}
@@ -71,12 +71,12 @@ function News() {
                                         src={item.imgSrc}
                                     />
                                     {item.expanded && (
-                                        <Card.Text>
+                                        <Card.Text className="flex-grow-1">
                                             {item.openingLine}
                                         </Card.Text>
                                     )}
                                     {!item.expanded && (
-                                        <Card.Text>
+                                        <Card.Text className="flex-grow-1">
                                             {item.openingLine.length > 100 &&
                                             !item.expanded
                                                 ? `${item.openingLine.substring(
@@ -84,13 +84,18 @@ function News() {
                                                       100
                                                   )}...`
                                                 : item.openingLine}
+                                        </Card.Text>
+                                    )}
+                                    {!item.expanded && (
+                                        <div className="d-flex justify-content-end mt-auto">
                                             <Button
                                                 variant="light"
                                                 onClick={() => item.callback()}
+                                                className="w-100"
                                             >
-                                                READ MORE...
+                                                READ MORE
                                             </Button>
-                                        </Card.Text>
+                                        </div>
                                     )}
                                     <Collapse in={item.expanded}>
                                         <Card.Text>{item.mainText}</Card.Text>
