@@ -88,7 +88,7 @@ function News() {
                                                 variant="light"
                                                 onClick={() => item.callback()}
                                             >
-                                                READ MORE
+                                                READ MORE...
                                             </Button>
                                         </Card.Text>
                                     )}
