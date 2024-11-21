@@ -35,7 +35,7 @@ function News() {
             mainText: news[0].mainText,
             imgSrc: news1Img,
             callback: handleNewsExpand1,
-            open: expandNews1,
+            expanded: expandNews1,
         },
         {
             title: news[1].title,
@@ -43,7 +43,7 @@ function News() {
             mainText: news[1].mainText,
             imgSrc: news2Img,
             callback: handleNewsExpand2,
-            open: expandNews2,
+            expanded: expandNews2,
         },
         {
             title: news[2].title,
@@ -51,7 +51,7 @@ function News() {
             mainText: news[2].mainText,
             imgSrc: news3Img,
             callback: handleNewsExpand3,
-            open: expandNews3,
+            expanded: expandNews3,
         },
     ];
 
@@ -70,15 +70,15 @@ function News() {
                                         variant="top"
                                         src={item.imgSrc}
                                     />
-                                    {item.open && (
+                                    {item.expanded && (
                                         <Card.Text>
                                             {item.openingLine}
                                         </Card.Text>
                                     )}
-                                    {!item.open && (
+                                    {!item.expanded && (
                                         <Card.Text>
                                             {item.openingLine.length > 100 &&
-                                            !item.open
+                                            !item.expanded
                                                 ? `${item.openingLine.substring(
                                                       0,
                                                       100
@@ -92,10 +92,10 @@ function News() {
                                             </Button>
                                         </Card.Text>
                                     )}
-                                    <Collapse in={item.open}>
+                                    <Collapse in={item.expanded}>
                                         <Card.Text>{item.mainText}</Card.Text>
                                     </Collapse>
-                                    {item.open && (
+                                    {item.expanded && (
                                         <Button
                                             variant="light"
                                             onClick={() => item.callback()}
