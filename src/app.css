@@ -180,3 +180,9 @@ h5 {
 .mt-auto {
     margin-top: auto;
 }
+
+.container-fluid,
+.nav,
+.carousel {
+    width: 100%;
+}
