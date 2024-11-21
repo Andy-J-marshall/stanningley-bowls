@@ -24,13 +24,10 @@ Install:
 -   git
 -   NodeJS
 -   python 3
--   optional: GH CLI (e.g. on macOS, run: `brew install gh`)
 
-GitHub repo setup:
+Optional:
 
--   `settings/actions` - grant Workflow permissions read/write access, and optionally allow GH Actions to create PRs
--   `settings/pages` - add the custom domain here
--   To deploy from your machine, you may need to run `gh auth login` and login to GitHub (this is required for the scripts to create PRs)
+-   GH CLI (e.g. on macOS, run: `brew install gh`)
 
 # WEB APPLICATION
 
@@ -53,7 +50,9 @@ However, if you need to deploy from your local machine, you can run the followin
 -   `npm run tests` (not required but recommended)
 -   `npm run build-deploy`
 
-Note: If the website isn't found then navigate to the Github repo settings and re-add the custom domain (see above)
+If this fails, then you may need to run `gh auth login` and login to GitHub (this is required for the scripts to create PRs).
+
+Note: If the website isn't found then navigate to the Github repository Pages settings and re-add the custom domain.
 
 ## Pipelines
 
