@@ -5,10 +5,14 @@ import fileUtils
 teamDays = clubDetails.allDays
 year = fileUtils.year
 
-files = []
-for team in teamDays:
-    files.append(f"{os.getcwd()}/bowlsnetReports/{year}/{team}.txt")
+dirName = f"bowlsnetReports/{year}"
+if not os.path.exists(dirName):
+    os.makedirs(dirName)
+else:
+    files = []
+    for team in teamDays:
+        files.append(f"{os.getcwd()}/{dirName}/{team}.txt")
 
-for file in files:
-    if os.path.exists(file):
-        os.remove(file)
+    for file in files:
+        if os.path.exists(file):
+            os.remove(file)
