@@ -257,8 +257,10 @@ dataToExport = {
 }
 
 filename = f"src/data/{displayTeamName.lower()}Stats{year}.json"
-saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 checksTeamStats(allTeamResults, filename)
 checkPlayerStats(playerStats, players, filename, True)
+
+# Save the file
+saveFile(filename, dataToExport)

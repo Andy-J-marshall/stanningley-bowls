@@ -1,7 +1,8 @@
+import json
+import os
 import playerStatsHelper
 import clubDetails
 import statsHelper
-import json
 
 
 def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
@@ -128,6 +129,10 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
 
 
 def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
+    if not os.path.exists(filePath):
+        print("No previous stats to compare against")
+        return
+
     with open(filePath, "r") as jsonFile:
         file = json.load(jsonFile)
         existingPlayerStats = file["playerResults"][player]
@@ -323,6 +328,10 @@ def checksTeamStats(allTeamResults, filePath):
 
 
 def checkTeamStatsValuesIncreased(updatedStats, filePath):
+    if not os.path.exists(filePath):
+        print("No previous stats to compare against")
+        return
+
     with open(filePath, "r") as jsonFile:
         file = json.load(jsonFile)
         existingTeamStats = file["teamResults"]
