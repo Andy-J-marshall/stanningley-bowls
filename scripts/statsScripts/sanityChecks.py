@@ -1,4 +1,6 @@
 import playerStatsHelper
+import clubDetails
+import json
 
 
 def getFileSize(fileName):
@@ -128,8 +130,63 @@ def checkPlayerStats(playerStats, players):
         checkForDuplicateResults(stats["results"], player)
 
 
-def checksTeamStats(allTeamResults):
+def checkTeamStatsValuesIncreased(updatedStats, filePath):
+    with open(filePath, "r") as json_file:
+        file = json.load(json_file)
+        teamResults = file["teamResults"]
+
+        if len(updatedStats) != len(clubDetails.teamDays):
+            raise Exception("Team missing from team stats")
+
+        for team in teamResults:
+            updatedTeam = next(
+                (t for t in updatedStats if t["day"] == team["day"]), None
+            )
+            if not updatedTeam:
+                raise Exception(f"No matching team found for day {team['day']}")
+
+            if team["awayWins"] > updatedTeam["awayWins"]:
+                raise Exception(f"awayWins for {team["day"]} lower than before")
+            if team["homeWins"] > updatedTeam["homeWins"]:
+                raise Exception(f"homeWins for {team["day"]} lower than before")
+            if team["cupWins"] > updatedTeam["cupWins"]:
+                raise Exception(f"cupWins for {team["day"]} lower than before")
+            if team["wins"] > updatedTeam["wins"]:
+                raise Exception(f"wins for {team["day"]} lower than before")
+
+            if team["awayLosses"] > updatedTeam["awayLosses"]:
+                raise Exception(f"awayLosses for {team["day"]} lower than before")
+            if team["homeLosses"] > updatedTeam["homeLosses"]:
+                raise Exception(f"homeLosses for {team["day"]} lower than before")
+            if team["cupLosses"] > updatedTeam["cupLosses"]:
+                raise Exception(f"cupLosses for {team["day"]} lower than before")
+            if team["losses"] > updatedTeam["losses"]:
+                raise Exception(f"losses for {team["day"]} lower than before")
+
+            if team["homeDraws"] > updatedTeam["homeDraws"]:
+                raise Exception(f"homeDraws for {team["day"]} lower than before")
+            if team["awayDraws"] > updatedTeam["awayDraws"]:
+                raise Exception(f"awayDraws for {team["day"]} lower than before")
+            if team["draws"] > updatedTeam["draws"]:
+                raise Exception(f"draws for {team["day"]} lower than before")
+
+            if team["totalGamesPlayed"] > updatedTeam["totalGamesPlayed"]:
+                raise Exception(f"totalGamesPlayed for {team["day"]} lower than before")
+
+            if team["agg"] > updatedTeam["agg"]:
+                raise Exception(f"agg for {team["day"]} lower than before")
+            if team["opponentAgg"] > updatedTeam["opponentAgg"]:
+                raise Exception(f"opponentAgg for {team["day"]} lower than before")
+
+            if len(team["results"]) > len(updatedTeam["results"]):
+                raise Exception(f"fewer results for {team["day"]} than before")
+
+
+def checksTeamStats(allTeamResults, filePath):
     print("Running sanity checks on team stats")
+
+    checkTeamStatsValuesIncreased(allTeamResults, filePath)
+
     for team in allTeamResults:
         dayForTeam = team["day"]
 

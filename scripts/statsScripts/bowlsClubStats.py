@@ -263,7 +263,7 @@ previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-checksTeamStats(allTeamResults)
+checksTeamStats(allTeamResults, filename)
 checkPlayerStats(playerStats, players)
 newFileSize = getFileSize(filename)
 checkFileSizeHasGrown(previousFileSize, newFileSize)
