@@ -247,6 +247,7 @@ for team in teamDays:
             )
 
             validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
+
     file.close()
 
 # Create JSON file
