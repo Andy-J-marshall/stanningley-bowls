@@ -4,6 +4,129 @@ import statsHelper
 import json
 
 
+def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
+    print("Running sanity checks on player stats")
+
+    for p in players:
+        player = playerStatsHelper.standardiseName(p)
+        stats = playerStats[player]
+
+        # Check values have increased or stayed the same compared to the previous stats in the file
+        checkPlayerStatsValuesIncreased(stats, player, filePath, checkTeamStatsBool)
+
+        if checkTeamStatsBool:
+            checkPlayerTeamStats(stats)
+
+        # check games played
+        if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
+            raise Exception(f"totalGamesPlayed for {player} incorrect?")
+        if stats["totalGamesPlayed"] != (
+            stats["homeWins"]
+            + stats["homeLosses"]
+            + stats["awayWins"]
+            + stats["awayLosses"]
+            + stats["cupWins"]
+            + stats["cupLosses"]
+        ):
+            raise Exception(
+                f"totalGamesPlayed value does not match wins/losses values for {player}"
+            )
+
+        # check wins/losses
+        if stats["pairWins"] != (
+            stats["pairHomeWins"] + stats["pairAwayWins"] + stats["pairCupWins"]
+        ):
+            raise Exception(
+                f"pairWins value does not match pairs home/away/cup wins values for {player}"
+            )
+        if stats["pairLosses"] != (
+            stats["pairHomeLosses"] + stats["pairAwayLosses"] + stats["pairCupLosses"]
+        ):
+            raise Exception(
+                f"pairLosses value does not match pairs home/away/cup losses values for {player}"
+            )
+
+        # check aggregates
+        if stats["totalAgg"] < 0 or stats["totalAgg"] > 3500:
+            raise Exception(f"totalAgg for {player} incorrect?")
+        if stats["totalAggAgainst"] < 0 or stats["totalAggAgainst"] > 3500:
+            raise Exception(f"totalAggAgainst for {player} incorrect?")
+        if (
+            stats["availableAgg"] < 0
+            or stats["availableAgg"] < stats["totalAgg"]
+            or stats["availableAgg"] < stats["totalAggAgainst"]
+        ):
+            raise Exception(f"availableAgg for {player} incorrect?")
+        if (
+            stats["totalHomeAgg"] < 0
+            or stats["totalHomeAgg"] > stats["availableHomeAgg"]
+        ):
+            raise Exception(f"totalHomeAgg for {player} incorrect?")
+        if (
+            stats["totalAwayAgg"] < 0
+            or stats["totalAwayAgg"] > stats["availableAwayAgg"]
+        ):
+            raise Exception(f"totalAwayAgg for {player} incorrect?")
+        if (
+            stats["totalHomeAggAgainst"] < 0
+            or stats["totalHomeAggAgainst"] > stats["availableHomeAgg"]
+        ):
+            raise Exception(f"totalHomeAggAgainst for {player} incorrect?")
+        if (
+            stats["totalAwayAggAgainst"] < 0
+            or stats["totalAwayAggAgainst"] > stats["availableAwayAgg"]
+        ):
+            raise Exception(f"totalAwayAggAgainst for {player} incorrect?")
+
+        # check pairs aggregates
+        if stats["totalPairsAgg"] < 0 or stats["totalPairsAgg"] > stats["totalAgg"]:
+            raise Exception(f"totalPairsAgg for {player} incorrect?")
+        if (
+            stats["availablePairsAgg"] < 0
+            or stats["availablePairsAgg"] < stats["totalPairsAgg"]
+            or stats["availablePairsAgg"] < stats["totalPairsAggAgainst"]
+            or stats["availablePairsAgg"] > stats["availableAgg"]
+        ):
+            raise Exception(f"availablePairsAgg for {player} incorrect?")
+        if (
+            stats["totalPairsAggAgainst"] < 0
+            or stats["totalPairsAggAgainst"] > stats["totalAggAgainst"]
+        ):
+            raise Exception(f"totalPairsAggAgainst for {player} incorrect?")
+        if (stats["availablePairsHomeAgg"] + stats["availablePairsAwayAgg"]) > stats[
+            "availablePairsAgg"
+        ]:
+            raise Exception(
+                f"availablePairsHomeAgg and/or availablePairsAwayAgg for {player} incorrect?"
+            )
+        if (
+            stats["totalPairsAwayAgg"] < 0
+            or stats["totalPairsAwayAgg"] > stats["totalPairsAgg"]
+        ):
+            raise Exception(f"totalPairsAwayAgg for {player} incorrect?")
+        if (
+            stats["totalPairsHomeAgg"] < 0
+            or stats["totalPairsHomeAgg"] > stats["totalPairsAgg"]
+        ):
+            raise Exception(f"totalPairsHomeAgg for {player} incorrect?")
+        if (
+            stats["totalPairsAwayAggAgainst"] < 0
+            or stats["totalPairsAwayAggAgainst"] > stats["totalPairsAggAgainst"]
+        ):
+            raise Exception(f"totalPairsAwayAggAgainst for {player} incorrect?")
+        if (
+            stats["totalPairsHomeAggAgainst"] < 0
+            or stats["totalPairsHomeAggAgainst"] > stats["totalPairsAggAgainst"]
+        ):
+            raise Exception(f"totalPairsHomeAggAgainst for {player} incorrect?")
+
+        # checks arrays
+        if len(stats["results"]) != stats["totalGamesPlayed"]:
+            raise Exception(f"results for {player} incorrect?")
+
+        checkForDuplicateResults(stats["results"], player)
+
+
 def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
     with open(filePath, "r") as json_file:
         file = json.load(json_file)
@@ -143,129 +266,6 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamSta
                     )
 
 
-def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
-    print("Running sanity checks on player stats")
-
-    for p in players:
-        player = playerStatsHelper.standardiseName(p)
-        stats = playerStats[player]
-
-        # Check values have increased or stayed the same compared to the previous stats in the file
-        checkPlayerStatsValuesIncreased(stats, player, filePath, checkTeamStatsBool)
-
-        if checkTeamStatsBool:
-            checkPlayerTeamStats(stats)
-
-        # check games played
-        if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
-            raise Exception(f"totalGamesPlayed for {player} incorrect?")
-        if stats["totalGamesPlayed"] != (
-            stats["homeWins"]
-            + stats["homeLosses"]
-            + stats["awayWins"]
-            + stats["awayLosses"]
-            + stats["cupWins"]
-            + stats["cupLosses"]
-        ):
-            raise Exception(
-                f"totalGamesPlayed value does not match wins/losses values for {player}"
-            )
-
-        # check wins/losses
-        if stats["pairWins"] != (
-            stats["pairHomeWins"] + stats["pairAwayWins"] + stats["pairCupWins"]
-        ):
-            raise Exception(
-                f"pairWins value does not match pairs home/away/cup wins values for {player}"
-            )
-        if stats["pairLosses"] != (
-            stats["pairHomeLosses"] + stats["pairAwayLosses"] + stats["pairCupLosses"]
-        ):
-            raise Exception(
-                f"pairLosses value does not match pairs home/away/cup losses values for {player}"
-            )
-
-        # check aggregates
-        if stats["totalAgg"] < 0 or stats["totalAgg"] > 3500:
-            raise Exception(f"totalAgg for {player} incorrect?")
-        if stats["totalAggAgainst"] < 0 or stats["totalAggAgainst"] > 3500:
-            raise Exception(f"totalAggAgainst for {player} incorrect?")
-        if (
-            stats["availableAgg"] < 0
-            or stats["availableAgg"] < stats["totalAgg"]
-            or stats["availableAgg"] < stats["totalAggAgainst"]
-        ):
-            raise Exception(f"availableAgg for {player} incorrect?")
-        if (
-            stats["totalHomeAgg"] < 0
-            or stats["totalHomeAgg"] > stats["availableHomeAgg"]
-        ):
-            raise Exception(f"totalHomeAgg for {player} incorrect?")
-        if (
-            stats["totalAwayAgg"] < 0
-            or stats["totalAwayAgg"] > stats["availableAwayAgg"]
-        ):
-            raise Exception(f"totalAwayAgg for {player} incorrect?")
-        if (
-            stats["totalHomeAggAgainst"] < 0
-            or stats["totalHomeAggAgainst"] > stats["availableHomeAgg"]
-        ):
-            raise Exception(f"totalHomeAggAgainst for {player} incorrect?")
-        if (
-            stats["totalAwayAggAgainst"] < 0
-            or stats["totalAwayAggAgainst"] > stats["availableAwayAgg"]
-        ):
-            raise Exception(f"totalAwayAggAgainst for {player} incorrect?")
-
-        # check pairs aggregates
-        if stats["totalPairsAgg"] < 0 or stats["totalPairsAgg"] > stats["totalAgg"]:
-            raise Exception(f"totalPairsAgg for {player} incorrect?")
-        if (
-            stats["availablePairsAgg"] < 0
-            or stats["availablePairsAgg"] < stats["totalPairsAgg"]
-            or stats["availablePairsAgg"] < stats["totalPairsAggAgainst"]
-            or stats["availablePairsAgg"] > stats["availableAgg"]
-        ):
-            raise Exception(f"availablePairsAgg for {player} incorrect?")
-        if (
-            stats["totalPairsAggAgainst"] < 0
-            or stats["totalPairsAggAgainst"] > stats["totalAggAgainst"]
-        ):
-            raise Exception(f"totalPairsAggAgainst for {player} incorrect?")
-        if (stats["availablePairsHomeAgg"] + stats["availablePairsAwayAgg"]) > stats[
-            "availablePairsAgg"
-        ]:
-            raise Exception(
-                f"availablePairsHomeAgg and/or availablePairsAwayAgg for {player} incorrect?"
-            )
-        if (
-            stats["totalPairsAwayAgg"] < 0
-            or stats["totalPairsAwayAgg"] > stats["totalPairsAgg"]
-        ):
-            raise Exception(f"totalPairsAwayAgg for {player} incorrect?")
-        if (
-            stats["totalPairsHomeAgg"] < 0
-            or stats["totalPairsHomeAgg"] > stats["totalPairsAgg"]
-        ):
-            raise Exception(f"totalPairsHomeAgg for {player} incorrect?")
-        if (
-            stats["totalPairsAwayAggAgainst"] < 0
-            or stats["totalPairsAwayAggAgainst"] > stats["totalPairsAggAgainst"]
-        ):
-            raise Exception(f"totalPairsAwayAggAgainst for {player} incorrect?")
-        if (
-            stats["totalPairsHomeAggAgainst"] < 0
-            or stats["totalPairsHomeAggAgainst"] > stats["totalPairsAggAgainst"]
-        ):
-            raise Exception(f"totalPairsHomeAggAgainst for {player} incorrect?")
-
-        # checks arrays
-        if len(stats["results"]) != stats["totalGamesPlayed"]:
-            raise Exception(f"results for {player} incorrect?")
-
-        checkForDuplicateResults(stats["results"], player)
-
-
 def checkPlayerTeamStats(updatedStats):
     for team in clubDetails.teamDays:
         teamName = statsHelper.returnTeamNameToStoreData(team)
@@ -277,6 +277,49 @@ def checkPlayerTeamStats(updatedStats):
             raise Exception(f"wins for {team} incorrect?")
         if playerTeamStats["aggDiff"] < -1000 or playerTeamStats["aggDiff"] > 1000:
             raise Exception(f"aggDiff for {team} incorrect?")
+
+
+def checksTeamStats(allTeamResults, filePath):
+    print("Running sanity checks on team stats")
+
+    # Check values have increased or stayed the same compared to the previous stats in the file
+    checkTeamStatsValuesIncreased(allTeamResults, filePath)
+
+    for team in allTeamResults:
+        dayForTeam = team["day"]
+
+        if team["agg"] < 0 or team["agg"] > 5000:
+            raise Exception(f"agg for {dayForTeam} incorrect?")
+        if team["opponentAgg"] < 0 or team["opponentAgg"] > 5000:
+            raise Exception(f"opponentAgg for {dayForTeam} incorrect?")
+        if team["totalGamesPlayed"] < 0 or team["totalGamesPlayed"] > 30:
+            raise Exception(f"totalGamesPlayed for {dayForTeam} incorrect?")
+        if team["wins"] < 0 or team["wins"] > 30:
+            raise Exception(f"wins for {dayForTeam} incorrect?")
+        if team["losses"] < 0 or team["losses"] > 30:
+            raise Exception(f"losses for {dayForTeam} incorrect?")
+        if team["draws"] < 0 or team["draws"] > 20:
+            raise Exception(f"draws for {dayForTeam} incorrect?")
+        if team["awayWins"] < 0 or team["awayWins"] > team["wins"]:
+            raise Exception(f"awayWins for {dayForTeam} incorrect?")
+        if team["homeWins"] < 0 or team["homeWins"] > team["wins"]:
+            raise Exception(f"homeWins for {dayForTeam} incorrect?")
+        if team["awayLosses"] < 0 or team["awayLosses"] > team["losses"]:
+            raise Exception(f"awayLosses for {dayForTeam} incorrect?")
+        if team["homeLosses"] < 0 or team["homeLosses"] > team["losses"]:
+            raise Exception(f"homeLosses for {dayForTeam} incorrect?")
+        if team["cupLosses"] < 0 or team["cupLosses"] > team["losses"]:
+            raise Exception(f"cupLosses for {dayForTeam} incorrect?")
+        if team["cupWins"] < 0 or team["cupWins"] > team["wins"]:
+            raise Exception(f"cupWins for {dayForTeam} incorrect?")
+        if team["homeDraws"] < 0 or team["homeDraws"] > team["draws"]:
+            raise Exception(f"homeDraws for {dayForTeam} incorrect?")
+        if team["awayDraws"] < 0 or team["awayDraws"] > team["draws"]:
+            raise Exception(f"awayDraws for {dayForTeam} incorrect?")
+        if len(team["results"]) != team["totalGamesPlayed"]:
+            raise Exception(f"results for {dayForTeam} incorrect?")
+
+        checkForDuplicateResults(team["results"], dayForTeam)
 
 
 def checkTeamStatsValuesIncreased(updatedStats, filePath):
@@ -335,49 +378,6 @@ def checkTeamStatsValuesIncreased(updatedStats, filePath):
             # Results
             if len(team["results"]) > len(updatedTeam["results"]):
                 raise Exception(f"fewer results for {team["day"]} than before")
-
-
-def checksTeamStats(allTeamResults, filePath):
-    print("Running sanity checks on team stats")
-
-    # Check values have increased or stayed the same compared to the previous stats in the file
-    checkTeamStatsValuesIncreased(allTeamResults, filePath)
-
-    for team in allTeamResults:
-        dayForTeam = team["day"]
-
-        if team["agg"] < 0 or team["agg"] > 5000:
-            raise Exception(f"agg for {dayForTeam} incorrect?")
-        if team["opponentAgg"] < 0 or team["opponentAgg"] > 5000:
-            raise Exception(f"opponentAgg for {dayForTeam} incorrect?")
-        if team["totalGamesPlayed"] < 0 or team["totalGamesPlayed"] > 30:
-            raise Exception(f"totalGamesPlayed for {dayForTeam} incorrect?")
-        if team["wins"] < 0 or team["wins"] > 30:
-            raise Exception(f"wins for {dayForTeam} incorrect?")
-        if team["losses"] < 0 or team["losses"] > 30:
-            raise Exception(f"losses for {dayForTeam} incorrect?")
-        if team["draws"] < 0 or team["draws"] > 20:
-            raise Exception(f"draws for {dayForTeam} incorrect?")
-        if team["awayWins"] < 0 or team["awayWins"] > team["wins"]:
-            raise Exception(f"awayWins for {dayForTeam} incorrect?")
-        if team["homeWins"] < 0 or team["homeWins"] > team["wins"]:
-            raise Exception(f"homeWins for {dayForTeam} incorrect?")
-        if team["awayLosses"] < 0 or team["awayLosses"] > team["losses"]:
-            raise Exception(f"awayLosses for {dayForTeam} incorrect?")
-        if team["homeLosses"] < 0 or team["homeLosses"] > team["losses"]:
-            raise Exception(f"homeLosses for {dayForTeam} incorrect?")
-        if team["cupLosses"] < 0 or team["cupLosses"] > team["losses"]:
-            raise Exception(f"cupLosses for {dayForTeam} incorrect?")
-        if team["cupWins"] < 0 or team["cupWins"] > team["wins"]:
-            raise Exception(f"cupWins for {dayForTeam} incorrect?")
-        if team["homeDraws"] < 0 or team["homeDraws"] > team["draws"]:
-            raise Exception(f"homeDraws for {dayForTeam} incorrect?")
-        if team["awayDraws"] < 0 or team["awayDraws"] > team["draws"]:
-            raise Exception(f"awayDraws for {dayForTeam} incorrect?")
-        if len(team["results"]) != team["totalGamesPlayed"]:
-            raise Exception(f"results for {dayForTeam} incorrect?")
-
-        checkForDuplicateResults(team["results"], dayForTeam)
 
 
 def checkForDuplicateResults(results, name):
