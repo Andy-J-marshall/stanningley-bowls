@@ -350,8 +350,6 @@ def checksTeamStats(allTeamResults, filePath):
             raise Exception(f"agg for {dayForTeam} incorrect?")
         if team["opponentAgg"] < 0 or team["opponentAgg"] > 5000:
             raise Exception(f"opponentAgg for {dayForTeam} incorrect?")
-        if len(team["results"]) > 30:
-            raise Exception(f"results for {dayForTeam} incorrect?")
         if team["totalGamesPlayed"] < 0 or team["totalGamesPlayed"] > 30:
             raise Exception(f"totalGamesPlayed for {dayForTeam} incorrect?")
         if team["wins"] < 0 or team["wins"] > 30:
@@ -376,13 +374,17 @@ def checksTeamStats(allTeamResults, filePath):
             raise Exception(f"homeDraws for {dayForTeam} incorrect?")
         if team["awayDraws"] < 0 or team["awayDraws"] > team["draws"]:
             raise Exception(f"awayDraws for {dayForTeam} incorrect?")
+        if len(team["results"]) != team["totalGamesPlayed"]:
+            raise Exception(f"results for {dayForTeam} incorrect?")
+
+        checkForDuplicateResults(team["results"], dayForTeam)
 
 
-def checkForDuplicateResults(results, player):
+def checkForDuplicateResults(results, name):
     potentialDuplicatesFound = len(results) != len(set(results))
     if potentialDuplicatesFound:
         print("----------------")
-        print("WARNING: check for potential duplicate results for player:" + player)
+        print("WARNING: check for potential duplicate results for player: " + name)
         print(results)
         print("----------------")
 
