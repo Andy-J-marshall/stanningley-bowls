@@ -46,7 +46,7 @@ for team in teamDays:
         raise Exception("team is being processed twice: " + team)
     teamsProcessed.append(team)
 
-    with open("bowlsnetReports/" + year + "/" + league + ".txt", "r") as file:
+    with open(f"bowlsnetReports/{year}/{league}.txt", "r") as file:
         allRowsInFile = file.readlines()
 
         # Find the number of rows in the file
