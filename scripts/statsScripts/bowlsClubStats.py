@@ -12,11 +12,9 @@ from sanityChecks import (
     checksTeamStats,
     checkPlayerStats,
     checkTeamName,
-    checkFileSizeHasGrown,
-    getFileSize,
     validatePlayerNotProcessedTwice,
 )
-from fileUtils import findEndRowOfFile, returnFileSize, returnTodayDate, saveFile, year
+from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
 from statsHelper import (
     findCupGameRows,
     removeSuffixFromTeamName,
@@ -259,11 +257,8 @@ dataToExport = {
 }
 
 filename = f"src/data/{displayTeamName.lower()}Stats{year}.json"
-previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-checksTeamStats(allTeamResults)
-checkPlayerStats(playerStats, players)
-newFileSize = getFileSize(filename)
-checkFileSizeHasGrown(previousFileSize, newFileSize)
+checksTeamStats(allTeamResults, filename)
+checkPlayerStats(playerStats, players, filename, True)

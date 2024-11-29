@@ -1,10 +1,6 @@
 from clubDetails import allDays, players
-from sanityChecks import (
-    checkPlayerStats,
-    checkFileSizeHasGrown,
-    getFileSize,
-)
-from fileUtils import findEndRowOfFile, returnFileSize, returnTodayDate, saveFile, year
+from sanityChecks import checkPlayerStats
+from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
 from statsHelper import (
     findCupGameRows,
     removeSuffixFromTeamName,
@@ -116,10 +112,7 @@ dataToExport = {
 }
 
 filename = f"src/data/allClubsStats{year}.json"
-previousFileSize = returnFileSize(filename)
 saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, players)
-newFileSize = getFileSize(filename)
-checkFileSizeHasGrown(previousFileSize, newFileSize)
+checkPlayerStats(playerStats, players, filename, False)
