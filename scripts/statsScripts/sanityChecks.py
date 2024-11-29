@@ -4,7 +4,7 @@ import statsHelper
 import json
 
 
-def checkPlayerStatsValuesIncreased(updatedStats, player, filePath):
+def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
     with open(filePath, "r") as json_file:
         file = json.load(json_file)
         existingPlayerStats = file["playerResults"][player]
@@ -109,8 +109,25 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath):
         if len(existingPlayerStats["results"]) > len(updatedStats["results"]):
             raise Exception(f"fewer results for {player} than before")
 
+        if checkTeamStatsBool:
+            for team in clubDetails.teamDays:
+                teamName = statsHelper.returnTeamNameToStoreData(team).lower()
+                playerTeamStats = updatedStats[teamName]
 
-def checkPlayerStats(playerStats, players, filePath, checkTeamStats):
+                if playerTeamStats["games"] > existingPlayerStats[teamName]["games"]:
+                    raise Exception(f"{teamName} games for {player} lower than before")
+                if playerTeamStats["wins"] > existingPlayerStats[teamName]["wins"]:
+                    raise Exception(f"{teamName} wins for {player} lower than before")
+                if (
+                    playerTeamStats["aggDiff"]
+                    > existingPlayerStats[teamName]["aggDiff"]
+                ):
+                    raise Exception(
+                        f"{teamName} aggDiff for {player} lower than before"
+                    )
+
+
+def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
     print("Running sanity checks on player stats")
 
     for p in players:
@@ -118,9 +135,9 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStats):
         stats = playerStats[player]
 
         # Check values have increased or stayed the same compared to the previous stats in the file
-        checkPlayerStatsValuesIncreased(stats, player, filePath)
+        checkPlayerStatsValuesIncreased(stats, player, filePath, checkTeamStatsBool)
 
-        if checkTeamStats:
+        if checkTeamStatsBool:
             checkPlayerTeamStats(stats)
 
         # check games played
