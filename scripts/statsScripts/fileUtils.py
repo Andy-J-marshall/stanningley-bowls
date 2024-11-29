@@ -1,7 +1,5 @@
 import json
 from datetime import date
-import os
-import sanityChecks
 
 year = str(date.today().year)
 
