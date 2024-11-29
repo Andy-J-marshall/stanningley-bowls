@@ -377,6 +377,5 @@ def checkTeamName(team, teamNameUsedForLeague, expectedTeamDisplayName):
 def validatePlayerNotProcessedTwice(rowNumber, homePlayerRow, awayPlayerRow):
     if rowNumber in homePlayerRow and rowNumber in awayPlayerRow:
         raise Exception(
-            "Row appears in home row and away row. Check the opponent name. Row: "
-            + str(rowNumber)
+            f"Row appears in home row and away row. Check the opponent name. Row: {rowNumber}"
         )
