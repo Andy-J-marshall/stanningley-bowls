@@ -80,137 +80,136 @@ def calculatePlayerStats(
     if awayGame or cupAway:
         opponentsName = findPossiblePlayerNames[0]
 
-    if (
-        "walkover" not in opponentsName.lower()
-        and "no player" not in opponentsName.lower()
-    ):
-        if homeGame or cupHome:
-            playerName = findPossiblePlayerNames[0]
+    if "walkover" in opponentsName.lower() or "no player" in opponentsName.lower():
+        return playerStats
 
-            matchAggregate = re.findall(r"\d+", text)
-            if matchAggregate:
-                aggregate = int(matchAggregate[0].strip())
-                opponentAggregate = int(matchAggregate[1].strip())
+    if homeGame or cupHome:
+        playerName = findPossiblePlayerNames[0]
 
-        if awayGame or cupAway:
-            playerName = findPossiblePlayerNames[1]
+        matchAggregate = re.findall(r"\d+", text)
+        if matchAggregate:
+            aggregate = int(matchAggregate[0].strip())
+            opponentAggregate = int(matchAggregate[1].strip())
 
-            matchAggregate = re.findall(r"\d+", text)
-            if matchAggregate:
-                aggregate = int(matchAggregate[1].strip())
-                opponentAggregate = int(matchAggregate[0].strip())
+    if awayGame or cupAway:
+        playerName = findPossiblePlayerNames[1]
 
-        # Checks whether it's a pairs game
-        pairsGame = isPairsGame(allRowsInFile, rowNumber, text)
-        if pairsGame:
-            pairsDetails = handlePairsGame(
-                text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
-            )
-            if pairsDetails["aggregate"] > 0:
-                aggregate = pairsDetails["aggregate"]
-            if pairsDetails["opponentAggregate"] > 0:
-                opponentAggregate = pairsDetails["opponentAggregate"]
-            if pairsDetails["pairsPartner"] != "":
-                pairsPartner = pairsDetails["pairsPartner"]
-            if pairsDetails["secondOpponent"] != "":
-                secondOpponent = pairsDetails["secondOpponent"]
-            pairsPartner = clubDetails.deduplicateNames(pairsPartner)
-            secondOpponent = clubDetails.deduplicateNames(secondOpponent)
+        matchAggregate = re.findall(r"\d+", text)
+        if matchAggregate:
+            aggregate = int(matchAggregate[1].strip())
+            opponentAggregate = int(matchAggregate[0].strip())
 
-        # Format player names
-        playerName = clubDetails.deduplicateNames(playerName)
-        opponentsName = clubDetails.deduplicateNames(opponentsName)
-
-        # Store player stats
-        playerNameForResult = playerName
-        if pairsGame:
-            playerNameForResult = f"{playerName} & {pairsPartner}"
-            opponentsName += f" & {secondOpponent}"
-            playerStats[playerName][
-                "availablePairsAgg"
-            ] += statsHelper.returnTotalAggAvailablePerGame(team)
-            playerStats[playerName]["totalPairsAgg"] += aggregate
-            playerStats[playerName]["totalPairsAggAgainst"] += opponentAggregate
-
-        playerStats[playerName]["totalGamesPlayed"] += 1
-
-        playersResult = (
-            f"{playerNameForResult} {aggregate} - {opponentAggregate} {opponentsName}"
+    # Checks whether it's a pairs game
+    pairsGame = isPairsGame(allRowsInFile, rowNumber, text)
+    if pairsGame:
+        pairsDetails = handlePairsGame(
+            text, allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
         )
-        playerStats[playerName]["results"].append(playersResult)
+        if pairsDetails["aggregate"] > 0:
+            aggregate = pairsDetails["aggregate"]
+        if pairsDetails["opponentAggregate"] > 0:
+            opponentAggregate = pairsDetails["opponentAggregate"]
+        if pairsDetails["pairsPartner"] != "":
+            pairsPartner = pairsDetails["pairsPartner"]
+        if pairsDetails["secondOpponent"] != "":
+            secondOpponent = pairsDetails["secondOpponent"]
+        pairsPartner = clubDetails.deduplicateNames(pairsPartner)
+        secondOpponent = clubDetails.deduplicateNames(secondOpponent)
 
-        # Wins
-        if aggregate > opponentAggregate:
-            if pairsGame:
-                playerStats[playerName]["pairWins"] += 1
-            if homeGame:
-                playerStats[playerName]["homeWins"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairHomeWins"] += 1
-            if awayGame:
-                playerStats[playerName]["awayWins"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairAwayWins"] += 1
-            if cupGameBool:
-                playerStats[playerName]["cupWins"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairCupWins"] += 1
-        # Losses
-        else:
-            if pairsGame:
-                playerStats[playerName]["pairLosses"] += 1
-            if homeGame:
-                playerStats[playerName]["homeLosses"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairHomeLosses"] += 1
-            if awayGame:
-                playerStats[playerName]["awayLosses"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairAwayLosses"] += 1
-            if cupGameBool:
-                playerStats[playerName]["cupLosses"] += 1
-                if pairsGame:
-                    playerStats[playerName]["pairCupLosses"] += 1
+    # Format player names
+    playerName = clubDetails.deduplicateNames(playerName)
+    opponentsName = clubDetails.deduplicateNames(opponentsName)
 
-        # Averages
+    # Store player stats
+    playerNameForResult = playerName
+    if pairsGame:
+        playerNameForResult = f"{playerName} & {pairsPartner}"
+        opponentsName += f" & {secondOpponent}"
         playerStats[playerName][
-            "availableAgg"
+            "availablePairsAgg"
         ] += statsHelper.returnTotalAggAvailablePerGame(team)
-        playerStats[playerName]["totalAgg"] += aggregate
-        playerStats[playerName]["totalAggAgainst"] += opponentAggregate
-        if homeGame:
-            playerStats[playerName][
-                "availableHomeAgg"
-            ] += statsHelper.returnTotalAggAvailablePerGame(team)
-            playerStats[playerName]["totalHomeAgg"] += aggregate
-            playerStats[playerName]["totalHomeAggAgainst"] += opponentAggregate
-            if pairsGame:
-                playerStats[playerName][
-                    "availablePairsHomeAgg"
-                ] += statsHelper.returnTotalAggAvailablePerGame(team)
-                playerStats[playerName]["totalPairsHomeAgg"] += aggregate
-                playerStats[playerName]["totalPairsHomeAggAgainst"] += opponentAggregate
-        if awayGame:
-            playerStats[playerName][
-                "availableAwayAgg"
-            ] += statsHelper.returnTotalAggAvailablePerGame(team)
-            playerStats[playerName]["totalAwayAgg"] += aggregate
-            playerStats[playerName]["totalAwayAggAgainst"] += opponentAggregate
-            if pairsGame:
-                playerStats[playerName][
-                    "availablePairsAwayAgg"
-                ] += statsHelper.returnTotalAggAvailablePerGame(team)
-                playerStats[playerName]["totalPairsAwayAgg"] += aggregate
-                playerStats[playerName]["totalPairsAwayAggAgainst"] += opponentAggregate
+        playerStats[playerName]["totalPairsAgg"] += aggregate
+        playerStats[playerName]["totalPairsAggAgainst"] += opponentAggregate
 
-        if includeTeamStatsBool:
-            teamNameToStoreData = statsHelper.returnTeamNameToStoreData(team).lower()
-            playerStats[playerName][teamNameToStoreData]["games"] += 1
-            playerStats[playerName][teamNameToStoreData]["aggDiff"] += (
-                aggregate - opponentAggregate
-            )
-            if aggregate > opponentAggregate:
-                playerStats[playerName][teamNameToStoreData]["wins"] += 1
+    playerStats[playerName]["totalGamesPlayed"] += 1
+
+    playersResult = (
+        f"{playerNameForResult} {aggregate} - {opponentAggregate} {opponentsName}"
+    )
+    playerStats[playerName]["results"].append(playersResult)
+
+    # Wins
+    if aggregate > opponentAggregate:
+        if pairsGame:
+            playerStats[playerName]["pairWins"] += 1
+        if homeGame:
+            playerStats[playerName]["homeWins"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairHomeWins"] += 1
+        if awayGame:
+            playerStats[playerName]["awayWins"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairAwayWins"] += 1
+        if cupGameBool:
+            playerStats[playerName]["cupWins"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairCupWins"] += 1
+    # Losses
+    else:
+        if pairsGame:
+            playerStats[playerName]["pairLosses"] += 1
+        if homeGame:
+            playerStats[playerName]["homeLosses"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairHomeLosses"] += 1
+        if awayGame:
+            playerStats[playerName]["awayLosses"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairAwayLosses"] += 1
+        if cupGameBool:
+            playerStats[playerName]["cupLosses"] += 1
+            if pairsGame:
+                playerStats[playerName]["pairCupLosses"] += 1
+
+    # Averages
+    playerStats[playerName][
+        "availableAgg"
+    ] += statsHelper.returnTotalAggAvailablePerGame(team)
+    playerStats[playerName]["totalAgg"] += aggregate
+    playerStats[playerName]["totalAggAgainst"] += opponentAggregate
+    if homeGame:
+        playerStats[playerName][
+            "availableHomeAgg"
+        ] += statsHelper.returnTotalAggAvailablePerGame(team)
+        playerStats[playerName]["totalHomeAgg"] += aggregate
+        playerStats[playerName]["totalHomeAggAgainst"] += opponentAggregate
+        if pairsGame:
+            playerStats[playerName][
+                "availablePairsHomeAgg"
+            ] += statsHelper.returnTotalAggAvailablePerGame(team)
+            playerStats[playerName]["totalPairsHomeAgg"] += aggregate
+            playerStats[playerName]["totalPairsHomeAggAgainst"] += opponentAggregate
+    if awayGame:
+        playerStats[playerName][
+            "availableAwayAgg"
+        ] += statsHelper.returnTotalAggAvailablePerGame(team)
+        playerStats[playerName]["totalAwayAgg"] += aggregate
+        playerStats[playerName]["totalAwayAggAgainst"] += opponentAggregate
+        if pairsGame:
+            playerStats[playerName][
+                "availablePairsAwayAgg"
+            ] += statsHelper.returnTotalAggAvailablePerGame(team)
+            playerStats[playerName]["totalPairsAwayAgg"] += aggregate
+            playerStats[playerName]["totalPairsAwayAggAgainst"] += opponentAggregate
+
+    if includeTeamStatsBool:
+        teamNameToStoreData = statsHelper.returnTeamNameToStoreData(team).lower()
+        playerStats[playerName][teamNameToStoreData]["games"] += 1
+        playerStats[playerName][teamNameToStoreData]["aggDiff"] += (
+            aggregate - opponentAggregate
+        )
+        if aggregate > opponentAggregate:
+            playerStats[playerName][teamNameToStoreData]["wins"] += 1
 
     return playerStats
 
