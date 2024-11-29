@@ -298,15 +298,6 @@ def checkTeamName(team, teamNameUsedForLeague, expectedTeamDisplayName):
         raise Exception("Incorrect team name found")
 
 
-def checkFileSizeHasGrown(previousFileSize, newFileSize):
-    if newFileSize < previousFileSize:
-        raise Exception(
-            f"JSON file has fewer rows than before. Updated: {newFileSize}, previous: {previousFileSize}"
-        )
-    print("Sanity checks complete")
-    print("-------------------------")
-
-
 def validatePlayerNotProcessedTwice(rowNumber, homePlayerRow, awayPlayerRow):
     if rowNumber in homePlayerRow and rowNumber in awayPlayerRow:
         raise Exception(
