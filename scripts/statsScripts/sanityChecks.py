@@ -128,8 +128,8 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
 
 
 def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
-    with open(filePath, "r") as json_file:
-        file = json.load(json_file)
+    with open(filePath, "r") as jsonFile:
+        file = json.load(jsonFile)
         existingPlayerStats = file["playerResults"][player]
 
         # Check total games
@@ -323,8 +323,8 @@ def checksTeamStats(allTeamResults, filePath):
 
 
 def checkTeamStatsValuesIncreased(updatedStats, filePath):
-    with open(filePath, "r") as json_file:
-        file = json.load(json_file)
+    with open(filePath, "r") as jsonFile:
+        file = json.load(jsonFile)
         existingTeamStats = file["teamResults"]
 
         if len(updatedStats) != len(clubDetails.teamDays):
