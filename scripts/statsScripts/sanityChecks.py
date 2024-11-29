@@ -1,5 +1,6 @@
 import playerStatsHelper
 import clubDetails
+import statsHelper
 import json
 
 
@@ -109,7 +110,7 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath):
             raise Exception(f"fewer results for {player} than before")
 
 
-def checkPlayerStats(playerStats, players, filePath):
+def checkPlayerStats(playerStats, players, filePath, checkTeamStats):
     print("Running sanity checks on player stats")
 
     for p in players:
@@ -118,6 +119,9 @@ def checkPlayerStats(playerStats, players, filePath):
 
         # Check values have increased or stayed the same compared to the previous stats in the file
         checkPlayerStatsValuesIncreased(stats, player, filePath)
+
+        if checkTeamStats:
+            checkPlayerTeamStats(stats)
 
         # check games played
         if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
@@ -227,6 +231,19 @@ def checkPlayerStats(playerStats, players, filePath):
             raise Exception(f"results for {player} incorrect?")
 
         checkForDuplicateResults(stats["results"], player)
+
+
+def checkPlayerTeamStats(updatedStats):
+    for team in clubDetails.teamDays:
+        teamName = statsHelper.returnTeamNameToStoreData(team)
+        playerTeamStats = updatedStats[teamName.lower()]
+
+        if playerTeamStats["games"] < 0 or playerTeamStats["games"] > 150:
+            raise Exception(f"games for {team} incorrect?")
+        if playerTeamStats["wins"] < 0 or playerTeamStats["wins"] > 140:
+            raise Exception(f"wins for {team} incorrect?")
+        if playerTeamStats["aggDiff"] < -1000 or playerTeamStats["aggDiff"] > 1000:
+            raise Exception(f"aggDiff for {team} incorrect?")
 
 
 def checkTeamStatsValuesIncreased(updatedStats, filePath):

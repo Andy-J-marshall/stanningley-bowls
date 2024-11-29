@@ -261,4 +261,4 @@ saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 checksTeamStats(allTeamResults, filename)
-checkPlayerStats(playerStats, players, filename)
+checkPlayerStats(playerStats, players, filename, True)
