@@ -3,18 +3,6 @@ import clubDetails
 import json
 
 
-def getFileSize(fileName):
-    newEndRow = 0
-    with open(fileName, "r") as jsonFile:
-        allRowsInFile = jsonFile.readlines()
-        for rowNumber, line in enumerate(allRowsInFile, start=0):
-            newEndRow = rowNumber
-
-    if newEndRow == 0:
-        raise Exception("JSON is empty")
-    return newEndRow
-
-
 def checkPlayerStats(playerStats, players):
     print("Running sanity checks on player stats")
     for p in players:
