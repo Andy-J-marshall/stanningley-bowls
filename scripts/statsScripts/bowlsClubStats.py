@@ -12,7 +12,6 @@ from sanityChecks import (
     checksTeamStats,
     checkPlayerStats,
     checkTeamName,
-    checkFileSizeHasGrown,
     validatePlayerNotProcessedTwice,
 )
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
@@ -262,4 +261,4 @@ saveFile(filename, dataToExport)
 
 # Sanity checks on the data
 checksTeamStats(allTeamResults, filename)
-checkPlayerStats(playerStats, players)
+checkPlayerStats(playerStats, players, filename)

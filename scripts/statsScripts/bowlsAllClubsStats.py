@@ -115,4 +115,4 @@ filename = f"src/data/allClubsStats{year}.json"
 saveFile(filename, dataToExport)
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, players)
+checkPlayerStats(playerStats, players, filename)

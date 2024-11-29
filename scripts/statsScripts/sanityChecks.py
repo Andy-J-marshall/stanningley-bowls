@@ -3,11 +3,80 @@ import clubDetails
 import json
 
 
-def checkPlayerStats(playerStats, players):
+def checkPlayerStatsValuesIncreased(updatedStats, player, filePath):
+    with open(filePath, "r") as json_file:
+        file = json.load(json_file)
+        existingPlayerStats = file["playerResults"][player]
+
+        if existingPlayerStats["totalGamesPlayed"] > updatedStats["totalGamesPlayed"]:
+            raise Exception(f"totalGamesPlayed for {player} lower than before")
+        if existingPlayerStats["totalAgg"] > updatedStats["totalAgg"]:
+            raise Exception(f"totalAgg for {player} lower than before")
+        if existingPlayerStats["totalAggAgainst"] > updatedStats["totalAggAgainst"]:
+            raise Exception(f"totalAggAgainst for {player} lower than before")
+        if existingPlayerStats["availableAgg"] > updatedStats["availableAgg"]:
+            raise Exception(f"availableAgg for {player} lower than before")
+        if existingPlayerStats["totalHomeAgg"] > updatedStats["totalHomeAgg"]:
+            raise Exception(f"totalHomeAgg for {player} lower than before")
+        if existingPlayerStats["totalAwayAgg"] > updatedStats["totalAwayAgg"]:
+            raise Exception(f"totalAwayAgg for {player} lower than before")
+        if (
+            existingPlayerStats["totalHomeAggAgainst"]
+            > updatedStats["totalHomeAggAgainst"]
+        ):
+            raise Exception(f"totalHomeAggAgainst for {player} lower than before")
+        if (
+            existingPlayerStats["totalAwayAggAgainst"]
+            > updatedStats["totalAwayAggAgainst"]
+        ):
+            raise Exception(f"totalAwayAggAgainst for {player} lower than before")
+        if existingPlayerStats["totalPairsAgg"] > updatedStats["totalPairsAgg"]:
+            raise Exception(f"totalPairsAgg for {player} lower than before")
+        if existingPlayerStats["availablePairsAgg"] > updatedStats["availablePairsAgg"]:
+            raise Exception(f"availablePairsAgg for {player} lower than before")
+        if (
+            existingPlayerStats["totalPairsAggAgainst"]
+            > updatedStats["totalPairsAggAgainst"]
+        ):
+            raise Exception(f"totalPairsAggAgainst for {player} lower than before")
+        if (
+            existingPlayerStats["availablePairsHomeAgg"]
+            > updatedStats["availablePairsHomeAgg"]
+        ):
+            raise Exception(f"availablePairsHomeAgg for {player} lower than before")
+        if (
+            existingPlayerStats["availablePairsAwayAgg"]
+            > updatedStats["availablePairsAwayAgg"]
+        ):
+            raise Exception(f"availablePairsAwayAgg for {player} lower than before")
+        if existingPlayerStats["totalPairsAwayAgg"] > updatedStats["totalPairsAwayAgg"]:
+            raise Exception(f"totalPairsAwayAgg for {player} lower than before")
+        if existingPlayerStats["totalPairsHomeAgg"] > updatedStats["totalPairsHomeAgg"]:
+            raise Exception(f"totalPairsHomeAgg for {player} lower than before")
+        if (
+            existingPlayerStats["totalPairsAwayAggAgainst"]
+            > updatedStats["totalPairsAwayAggAgainst"]
+        ):
+            raise Exception(f"totalPairsAwayAggAgainst for {player} lower than before")
+        if (
+            existingPlayerStats["totalPairsHomeAggAgainst"]
+            > updatedStats["totalPairsHomeAggAgainst"]
+        ):
+            raise Exception(f"totalPairsHomeAggAgainst for {player} lower than before")
+        if len(existingPlayerStats["results"]) > len(updatedStats["results"]):
+            raise Exception(f"fewer results for {player} than before")
+
+
+def checkPlayerStats(playerStats, players, filePath):
     print("Running sanity checks on player stats")
+
     for p in players:
         player = playerStatsHelper.standardiseName(p)
         stats = playerStats[player]
+
+        # Check values have increased or stayed the same compared to the previous stats in the file
+        checkPlayerStatsValuesIncreased(stats, player, filePath)
+
         # check games played
         if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
             raise Exception(f"totalGamesPlayed for {player} incorrect?")
@@ -121,12 +190,12 @@ def checkPlayerStats(playerStats, players):
 def checkTeamStatsValuesIncreased(updatedStats, filePath):
     with open(filePath, "r") as json_file:
         file = json.load(json_file)
-        teamResults = file["teamResults"]
+        existingTeamStats = file["teamResults"]
 
         if len(updatedStats) != len(clubDetails.teamDays):
             raise Exception("Team missing from team stats")
 
-        for team in teamResults:
+        for team in existingTeamStats:
             updatedTeam = next(
                 (t for t in updatedStats if t["day"] == team["day"]), None
             )
@@ -173,6 +242,7 @@ def checkTeamStatsValuesIncreased(updatedStats, filePath):
 def checksTeamStats(allTeamResults, filePath):
     print("Running sanity checks on team stats")
 
+    # Check values have increased or stayed the same compared to the previous stats in the file
     checkTeamStatsValuesIncreased(allTeamResults, filePath)
 
     for team in allTeamResults:
