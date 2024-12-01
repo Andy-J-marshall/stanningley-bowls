@@ -8,8 +8,8 @@ import statsHelper
 def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
     print("Running sanity checks on player stats")
 
-    if len(players) < 1:
-        raise Exception("No player stats to check")
+    if len(players) < len(clubDetails.players):
+        raise Exception("Missing players from player stats")
 
     for p in players:
         player = playerStatsHelper.standardiseName(p)
