@@ -5,6 +5,7 @@ import beaLogoImg from '../../images/supporters/bramley_elderly_action.png';
 import heyNeighbourLogoImg from '../../images/supporters/hey_neighbour_grant.png';
 import squeakerLogoImg from '../../images/supporters/squeaker.png';
 import wldLogoImg from '../../images/supporters/west_leeds_dispatch.png';
+import eastFundraisingImg from '../../images/supporters/easyFundraising.png';
 
 function Supporters() {
     return (
@@ -60,6 +61,13 @@ function Supporters() {
                     className="supporters-logos"
                     src={wldLogoImg}
                     alt="support-logo6"
+                />
+            </a>
+            <a target="_blank" href="https://www.easyfundraising.org.uk/support-a-good-cause/step-1/?char=370321&invite=7sk19t&referral-campaign=c2s&utm_campaign=web-referral">
+                <img
+                    className="supporters-logos"
+                    src={eastFundraisingImg}
+                    alt="support-logo7"
                 />
             </a>
         </div>
