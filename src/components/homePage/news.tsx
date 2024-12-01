@@ -33,6 +33,7 @@ function News() {
             title: news[0].title,
             openingLine: news[0].openingLine,
             mainText: news[0].mainText,
+            linkText: news[0].linkText,
             imgSrc: news1Img,
             callback: handleNewsExpand1,
             expanded: expandNews1,
@@ -41,6 +42,7 @@ function News() {
             title: news[1].title,
             openingLine: news[1].openingLine,
             mainText: news[1].mainText,
+            linkText: news[1].linkText,
             imgSrc: news2Img,
             callback: handleNewsExpand2,
             expanded: expandNews2,
@@ -49,6 +51,7 @@ function News() {
             title: news[2].title,
             openingLine: news[2].openingLine,
             mainText: news[2].mainText,
+            linkText: news[2].linkText,
             imgSrc: news3Img,
             callback: handleNewsExpand3,
             expanded: expandNews3,
@@ -64,7 +67,9 @@ function News() {
                         <Col key={index}>
                             <Card style={{ minHeight: '490px' }} bg="light">
                                 <Card.Body className="d-flex flex-column">
-                                    <Card.Title>{item.title}</Card.Title>
+                                    <Card.Title>
+                                        {item.title.toUpperCase()}
+                                    </Card.Title>
                                     <Card.Img
                                         style={{ paddingBottom: '1rem' }}
                                         variant="top"
@@ -98,7 +103,22 @@ function News() {
                                         </div>
                                     )}
                                     <Collapse in={item.expanded}>
-                                        <Card.Text>{item.mainText}</Card.Text>
+                                        <div>
+                                            <Card.Text>
+                                                {item.mainText}
+                                            </Card.Text>
+                                            {item.linkText && (
+                                                <Button
+                                                    style={{
+                                                        marginBottom: '1rem',
+                                                        backgroundColor:
+                                                            '#0081a4',
+                                                    }}
+                                                >
+                                                    {item.linkText}
+                                                </Button>
+                                            )}
+                                        </div>
                                     </Collapse>
                                     {item.expanded && (
                                         <Button
