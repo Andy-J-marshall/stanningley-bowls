@@ -34,6 +34,7 @@ function News() {
             openingLine: news[0].openingLine,
             mainText: news[0].mainText,
             linkText: news[0].linkText,
+            link: news[0].link,
             imgSrc: news1Img,
             callback: handleNewsExpand1,
             expanded: expandNews1,
@@ -43,6 +44,7 @@ function News() {
             openingLine: news[1].openingLine,
             mainText: news[1].mainText,
             linkText: news[1].linkText,
+            link: news[1].link,
             imgSrc: news2Img,
             callback: handleNewsExpand2,
             expanded: expandNews2,
@@ -52,6 +54,7 @@ function News() {
             openingLine: news[2].openingLine,
             mainText: news[2].mainText,
             linkText: news[2].linkText,
+            link: news[2].link,
             imgSrc: news3Img,
             callback: handleNewsExpand3,
             expanded: expandNews3,
@@ -115,7 +118,13 @@ function News() {
                                                             '#0081a4',
                                                     }}
                                                 >
-                                                    {item.linkText}
+                                                    <a
+                                                        className="carousel-link"
+                                                        href={item.link}
+                                                        target="_blank"
+                                                    >
+                                                        {item.linkText}
+                                                    </a>
                                                 </Button>
                                             )}
                                         </div>

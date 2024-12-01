@@ -3,18 +3,21 @@
         "title": "FUNDRAISING",
         "openingLine": "Stanningley has signed up to EasyFundraising to raise money for the club.",
         "mainText": "We will earn commission for everything you purchase online if you shop via the EasyFundraising app, and it won't cost you anything. Please sign up by clicking the below link.",
-        "linkText": "Sign up"
+        "linkText": "Sign up",
+        "link": "https://www.easyfundraising.org.uk/support-a-good-cause/step-1/?char=370321&invite=7sk19t&referral-campaign=c2s&utm_campaign=web-referral"
     },
     {
         "title": "VOLUNTEERING",
         "openingLine": "Volunteer days are planned to help keep the club clean and tidy over winter.",
         "mainText": "These will be every other Saturday between 10am and 12pm, starting on the 19th October. Members and non-members are welcome to help out.",
-        "linkText": ""
+        "linkText": "",
+        "link": ""
     },
     {
         "title": "LADIES TEAM",
         "openingLine": "We are entering a team into the Leeds Ladies League for the 2025 season.",
         "mainText": "If you are interested in playing then please contact a club member. No experience is necessary.",
-        "linkText": ""
+        "linkText": "",
+        "link": ""
     }
 ]
