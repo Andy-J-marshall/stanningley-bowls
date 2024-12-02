@@ -52,7 +52,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         allYearStatsCallback(allYearStatsToggle);
     }
 
-    function toggleSpecificTeamStats(teamName: string) {
+    function selectSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
             setAllClubsToggle(false);
             teamSpecificCallback('');
@@ -198,7 +198,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             key={index}
                                             id={'#team-option-' + index}
                                             onClick={() =>
-                                                toggleSpecificTeamStats(
+                                                selectSpecificTeamStats(
                                                     teamName
                                                 )
                                             }
@@ -210,7 +210,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     <Dropdown.Item
                                         id="#team-option-all"
                                         onClick={() =>
-                                            toggleSpecificTeamStats('')
+                                            selectSpecificTeamStats('')
                                         }
                                     >
                                         {defaultTeamDropdownTitle}
