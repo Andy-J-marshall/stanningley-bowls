@@ -48,20 +48,16 @@ function PlayerStats(props: PlayerStatsProps) {
         returnTeamNamesWithGames(clubStats?.playerResults)
     );
     const [players, setPlayers] = useState(['']);
-
-    const yearInTitle =
-        new Date().getFullYear() !== Number(clubStats.statsYear) &&
-        !showStatsSinceStart
-            ? `${clubStats.statsYear}`
-            : '';
+    const [yearInTitle, setYearInTitle] = useState('');
 
     useEffect(() => {
+        // Prevent scrolling to the top when a different stat filter is selected
         if (!loaded) {
-            // this prevents scrolling to the top when a different stat filter is selected
             window.scrollTo(0, 0);
         }
         setLoaded(true);
 
+        // Set whether to show club stats or all clubs stats
         if (showClubStats) {
             setStatsToUse(clubStats?.playerResults);
             setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
@@ -70,7 +66,10 @@ function PlayerStats(props: PlayerStatsProps) {
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
 
+        // Find the title, team names and players list fo the selected stats
         if (showStatsSinceStart) {
+            setYearInTitle('');
+
             setTeamNames(
                 returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
             );
@@ -80,6 +79,12 @@ function PlayerStats(props: PlayerStatsProps) {
             );
             setPlayers(Array.from(new Set(playerListAllYears)).sort());
         } else {
+            setYearInTitle(
+                new Date().getFullYear() !== Number(clubStats.statsYear)
+                    ? clubStats.statsYear
+                    : ''
+            );
+
             setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
 
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
