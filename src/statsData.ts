@@ -1,49 +1,49 @@
 import clubStats13 from './data/stanningleyStats2013.json';
-import allClubsStats13 from './data/allClubsStats2013.json';
 import clubStats14 from './data/stanningleyStats2014.json';
-import allClubsStats14 from './data/allClubsStats2014.json';
 import clubStats15 from './data/stanningleyStats2015.json';
-import allClubsStats15 from './data/allClubsStats2015.json';
 import clubStats16 from './data/stanningleyStats2016.json';
-import allClubsStats16 from './data/allClubsStats2016.json';
 import clubStats17 from './data/stanningleyStats2017.json';
-import allClubsStats17 from './data/allClubsStats2017.json';
 import clubStats18 from './data/stanningleyStats2018.json';
-import allClubsStats18 from './data/allClubsStats2018.json';
 import clubStats19 from './data/stanningleyStats2019.json';
-import allClubsStats19 from './data/allClubsStats2019.json';
 import clubStats21 from './data/stanningleyStats2021.json';
-import allClubsStats21 from './data/allClubsStats2021.json';
 import clubStats22 from './data/stanningleyStats2022.json';
-import allClubsStats22 from './data/allClubsStats2022.json';
 import clubStats23 from './data/stanningleyStats2023.json';
-import allClubsStats23 from './data/allClubsStats2023.json';
 import clubStats24 from './data/stanningleyStats2024.json';
+import allClubsStats13 from './data/allClubsStats2013.json';
+import allClubsStats14 from './data/allClubsStats2014.json';
+import allClubsStats15 from './data/allClubsStats2015.json';
+import allClubsStats16 from './data/allClubsStats2016.json';
+import allClubsStats17 from './data/allClubsStats2017.json';
+import allClubsStats18 from './data/allClubsStats2018.json';
+import allClubsStats19 from './data/allClubsStats2019.json';
+import allClubsStats21 from './data/allClubsStats2021.json';
+import allClubsStats22 from './data/allClubsStats2022.json';
+import allClubsStats23 from './data/allClubsStats2023.json';
 import allClubsStats24 from './data/allClubsStats2024.json';
 
 // Stats for future years will need to be updated here
 const dataFiles = {
     clubStats13,
-    allClubsStats13,
     clubStats14,
-    allClubsStats14,
     clubStats15,
-    allClubsStats15,
     clubStats16,
-    allClubsStats16,
     clubStats17,
-    allClubsStats17,
     clubStats18,
-    allClubsStats18,
     clubStats19,
-    allClubsStats19,
     clubStats21,
-    allClubsStats21,
     clubStats22,
-    allClubsStats22,
     clubStats23,
-    allClubsStats23,
     clubStats24,
+    allClubsStats13,
+    allClubsStats14,
+    allClubsStats15,
+    allClubsStats16,
+    allClubsStats17,
+    allClubsStats18,
+    allClubsStats19,
+    allClubsStats21,
+    allClubsStats22,
+    allClubsStats23,
     allClubsStats24,
 };
 
