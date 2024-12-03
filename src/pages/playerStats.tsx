@@ -172,7 +172,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function teamSpecificCallback(teamName: string) {
-        // TODO need to reset to showall if switching club
         setTeamNameForStats(teamName);
 
         scrollToBottom();
