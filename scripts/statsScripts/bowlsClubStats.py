@@ -2,7 +2,6 @@ import re
 
 # TODO paramaterize this
 # import littlemoorDetails as clubDetails
-# TODO only run team sanity checks and teamstats if club is stanningley
 import littlemoorDetails as clubDetails
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,

@@ -1,4 +1,4 @@
-import clubDetails
+import clubDetails # TODO split these things into a separate file?
 from sanityChecks import checkPlayerStats
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
 from statsHelper import (
