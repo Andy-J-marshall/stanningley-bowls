@@ -178,6 +178,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function teamSpecificCallback(teamName: string) {
+        // TODO need to reset to showall if switching club
         setTeamNameForStats(teamName);
 
         scrollToBottom();
@@ -234,10 +235,9 @@ function PlayerStats(props: PlayerStatsProps) {
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
 
-        // TODO here i.e. clubStatsForEveryYearArray
         if (showStatsSinceStart && teamNameForStats) {
             playerStatsForSummary = returnTeamPlayerStatsForAllYears(
-                clubStatsForEveryYearArray,
+                allYearsStatsToUseArray,
                 teamNameForStats
             );
         }
