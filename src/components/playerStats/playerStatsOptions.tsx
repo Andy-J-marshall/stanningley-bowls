@@ -88,6 +88,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
         setTeamDropdownTitle(defaultTeamDropdownTitle);
         teamSpecificCallback('');
+        setDisableOtherOptions(false);
     }
 
     function toggleAllMatchTypes() {
