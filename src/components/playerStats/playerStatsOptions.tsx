@@ -23,7 +23,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const onlyCupCallback = props.onlyCupCallback;
     const searchedPlayerName = props.searchedPlayerName;
     const teamNames = props.teamNames;
-    const clubOptions = props.clubOptions;
+    const clubNames = props.clubNames;
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allClubsToggle, setAllClubsToggle] = useState(false);
@@ -235,7 +235,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     title={clubDropdownTitle}
                                     disabled={disableTeamDropdown}
                                 >
-                                    {clubOptions.map((clubName, index) => (
+                                    {clubNames.map((clubName, index) => (
                                         <Dropdown.Item
                                             key={index}
                                             id={'#club-option-' + clubName}
