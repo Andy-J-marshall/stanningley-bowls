@@ -33,19 +33,16 @@ function PlayerStats(props: PlayerStatsProps) {
     const littlemoorStatsForEveryYearArray =
         props.littlemoorStatsForEveryYearArray;
 
-    const { playerResults } = clubStats;
-    const allClubsPlayerResults = allClubsStats.playerResults;
+    const clubName = config.teamNames.shortName.toLowerCase();
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
     const [showClubStats, setShowClubStats] = useState(true);
-    const [statsToUse, setStatsToUse] = useState(playerResults);
+    const [statsToUse, setStatsToUse] = useState(clubStats.playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
-    const [clubNameForStats, setClubNameForStats] = useState(
-        config.teamNames.shortName
-    );
+    const [clubNameForStats, setClubNameForStats] = useState(clubName);
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         clubStatsForEveryYearArray
     );
@@ -57,7 +54,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     // TODO need to change this too?
     // Find list of players for current year
-    const players = Object.keys(allClubsPlayerResults).sort();
+    const players = Object.keys(allClubsStats.playerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
 
     // Find list of players for all years
@@ -70,7 +67,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const allPlayers = Array.from(allPlayersSet).sort();
 
     // Find list of teams names used in the stats
-    const teamNames = returnTeamNamesWithGames(playerResults);
+    const teamNames = returnTeamNamesWithGames(clubStats.playerResults);
     const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
         clubStatsForEveryYearArray
     );
@@ -89,18 +86,24 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         if (showClubStats) {
-            // TODO refactor. Switch statement?
-            const s = clubNameForStats.includes('littlemoor')
-            ? littlemoorStats.playerResults
-            : playerResults;
-            setStatsToUse(s);
-            
-            const s2 = clubNameForStats.includes('littlemoor')
-            ? littlemoorStatsForEveryYearArray
-            : clubStatsForEveryYearArray;
-            setAllYearsStatsToUseArray(s2);
+            switch (clubNameForStats) {
+                case clubName:
+                    setStatsToUse(clubStats?.playerResults);
+                    setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    break;
+                case 'littlemoor':
+                    setStatsToUse(littlemoorStats?.playerResults);
+                    setAllYearsStatsToUseArray(
+                        littlemoorStatsForEveryYearArray
+                    );
+                    break;
+                default:
+                    setStatsToUse(clubStats?.playerResults);
+                    setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    break;
+            }
         } else {
-            setStatsToUse(allClubsPlayerResults);
+            setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
     });
@@ -120,9 +123,9 @@ function PlayerStats(props: PlayerStatsProps) {
     function allClubsStatsCallback(showBool: boolean) {
         setShowClubStats(!showBool);
         if (showBool) {
-            setStatsToUse(allClubsPlayerResults);
+            setStatsToUse(allClubsStats.playerResults);
         } else {
-            setStatsToUse(playerResults);
+            setStatsToUse(clubStats.playerResults);
         }
 
         scrollToBottom();
@@ -167,7 +170,11 @@ function PlayerStats(props: PlayerStatsProps) {
     function clubSpecificCallback(clubName: string) {
         // TODO handle allClubs here too?
 
-        // TODO create a switch statement to handle different clubs
+        if (!config.clubsForPlayersStats.includes(clubName.toLowerCase())) {
+            // Default to the main club if the selected club name is not recognised
+            setClubNameForStats(clubNameForStats);
+        }
+
         setClubNameForStats(clubName.toLowerCase());
 
         scrollToBottom();
@@ -207,7 +214,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
-        // TODO this is still showing Stanningley
         let playerStatsForSummary:
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
@@ -287,7 +293,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
                 teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
-                clubOptions={new Array<string>('Stanningley', 'Littlemoor')} // TODO change
+                clubOptions={config.clubsForPlayersStats}
             />
 
             <p className="footnote">Last Updated: {clubStats.lastUpdated}</p>

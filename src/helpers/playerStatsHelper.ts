@@ -37,11 +37,11 @@ export function returnPlayerStats(
     playersStats: PlayerResultsStatsFile,
     player: string
 ) {
-    const stats = playersStats[player];
-    if (!stats) {
+    if (!playersStats || !playersStats[player]) {
         return null;
     }
 
+    const stats = playersStats[player];
     const {
         totalAgg,
         totalAggAgainst,
