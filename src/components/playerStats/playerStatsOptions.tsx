@@ -35,7 +35,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
-    const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
+    const [disableTeamAndClubDropdown, setDisableTeamAndClubDropdown] =
+        useState(false);
 
     const defaultTeamDropdownTitle = 'All Teams';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
@@ -49,7 +50,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         const allClubsStatsToggle = event.currentTarget.checked;
         setAllClubsToggle(allClubsStatsToggle);
         allClubsStatsCallback(allClubsStatsToggle);
-        setDisableTeamDropdown(allClubsStatsToggle);
+        setDisableTeamAndClubDropdown(allClubsStatsToggle);
     }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
@@ -205,7 +206,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     variant="light"
                                     id="team-select-dropdown"
                                     title={teamDropdownTitle}
-                                    disabled={disableTeamDropdown}
+                                    disabled={disableTeamAndClubDropdown}
                                 >
                                     {teamNames.map((teamName, index) => (
                                         <Dropdown.Item
@@ -236,7 +237,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     variant="light"
                                     id="team-select-dropdown"
                                     title={clubDropdownTitle}
-                                    disabled={disableTeamDropdown}
+                                    disabled={disableTeamAndClubDropdown}
                                 >
                                     {clubNames.map((club, index) => (
                                         <Dropdown.Item
