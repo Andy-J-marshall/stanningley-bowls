@@ -1,5 +1,4 @@
 import re
-import clubDetails
 import statsHelper
 
 
@@ -70,6 +69,7 @@ def calculatePlayerStats(
     cupAway,
     cupGameBool,
     includeTeamStatsBool,
+    clubDetails,
 ):
     text = allRowsInFile[rowNumber]
     text = sanitisePlayerNames(text)
@@ -231,7 +231,13 @@ def standardiseName(name):
 
 
 def checkValidPlayerOnDay(
-    playerName, rowNumber, homeOrAway, teamNameUsedForLeague, league, allRowsInFile
+    playerName,
+    rowNumber,
+    homeOrAway,
+    teamNameUsedForLeague,
+    league,
+    allRowsInFile,
+    clubDetails,
 ):
     playerName = clubDetails.deduplicateNames(playerName)
     if playerName in clubDetails.traitorPlayers[league]:
@@ -254,7 +260,9 @@ def checkValidPlayerOnDay(
                 return False
 
 
-def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, league):
+def returnHomeAndAwayPlayerRowsForTeam(
+    allRowsInFile, teamNameUsedForLeague, league, clubDetails
+):
     homePlayerRow = []
     awayPlayerRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -279,6 +287,7 @@ def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, lea
                         teamNameUsedForLeague,
                         league,
                         allRowsInFile,
+                        clubDetails,
                     )
                     if validPlayer:
                         homePlayerRow.append(rowNumber)
@@ -298,6 +307,7 @@ def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, lea
                         teamNameUsedForLeague,
                         league,
                         allRowsInFile,
+                        clubDetails,
                     )
                     if validPlayer:
                         awayPlayerRow.append(rowNumber)
@@ -306,7 +316,7 @@ def returnHomeAndAwayPlayerRowsForTeam(allRowsInFile, teamNameUsedForLeague, lea
     return homePlayerRow, awayPlayerRow, combinedRows
 
 
-def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
+def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile, clubDetails):
     homePlayerRow = []
     awayPlayerRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -336,7 +346,7 @@ def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile):
 
 
 def checkCorrectTeamForPlayer(
-    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
+    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway, clubDetails
 ):
     for i in range(0, 13):
         possibleTeamText = allRowsInFile[rowNumber - i]

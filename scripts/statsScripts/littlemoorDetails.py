@@ -1,6 +1,5 @@
 import playerStatsHelper
 
-# Team info (lowercase)
 teamNames = [
     "Littlemoor",
     "Littlemoor A",
@@ -39,8 +38,9 @@ displayTeamName = "Littlemoor"
 teamDays = [
     "Monday Bradford",
     "Monday AireWharfe",
-    "Mirfield (A)",
-    "Mirfield (B)",
+    # TODO add back in
+    # "Mirfield (A)",
+    # "Mirfield (B)",
     "Wednesday Half Holiday Bradford (A)",
     "Wednesday Half Holiday Bradford (B)",
     "Spen Valley (A)",

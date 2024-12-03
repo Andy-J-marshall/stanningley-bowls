@@ -1,6 +1,5 @@
 import playerStatsHelper
 
-# Team info (lowercase)
 teamNames = [
     "Stanningley",
     "Stanningley A",

@@ -1,5 +1,3 @@
-import clubDetails
-
 leaguesWithGamesTo26 = ["wednesday pairs airewharfe"]
 
 cupText = [
@@ -68,7 +66,7 @@ def findCupGameRows(allRowsInFile, endRow):
     return cupGameRows
 
 
-def returnTeamNameForLeague(allRowsInFile, teamNameForLeague):
+def returnTeamNameForLeague(allRowsInFile, teamNameForLeague, clubDetails):
     possibleTeamNamesUsed = []
     teamNameToUse = clubDetails.displayTeamName
 

@@ -1,5 +1,9 @@
 import re
-from clubDetails import teamNames, teamDays, players, displayTeamName
+
+# TODO paramaterize this
+# import littlemoorDetails as clubDetails
+# TODO only run team sanity checks and teamstats if club is stanningley
+import littlemoorDetails as clubDetails
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,
     isCupGame,
@@ -27,13 +31,13 @@ from playerStatsHelper import (
     calculatePlayerStats,
 )
 
-playerStats = returnListOfPlayerStats(teamDays, True, players)
+playerStats = returnListOfPlayerStats(clubDetails.teamDays, True, clubDetails.players)
 teamsProcessed = []
 allTeamResults = []
 
-print("UPDATING STATS:", teamNames[0].upper())
+print("UPDATING STATS:", clubDetails.teamNames[0].upper())
 
-for team in teamDays:
+for team in clubDetails.teamDays:
     print("Updating Stats: " + team)
 
     league = removeSuffixFromTeamName(team)
@@ -52,10 +56,10 @@ for team in teamDays:
 
         # Find team name used by team in this league
         teamNameUsedForLeague, teamNameToUse = returnTeamNameForLeague(
-            allRowsInFile, team
+            allRowsInFile, team, clubDetails
         )
 
-        checkTeamName(team, teamNameUsedForLeague, displayTeamName)
+        checkTeamName(team, teamNameUsedForLeague, clubDetails.displayTeamName)
 
         # Find the cup games in the stats
         cupGameRows = findCupGameRows(allRowsInFile, endRow)
@@ -63,7 +67,7 @@ for team in teamDays:
         #### TEAM STATS ####
         # Find team's home and away games
         homeRows, awayRows = findHomeAndAwayTeamGameRows(
-            allRowsInFile, teamNameUsedForLeague
+            allRowsInFile, teamNameUsedForLeague, clubDetails
         )
 
         # Find team results and scores
@@ -201,7 +205,7 @@ for team in teamDays:
         # Find rows in spreadsheet for players' games
         homePlayerRows, awayPlayerRows, combinedRows = (
             returnHomeAndAwayPlayerRowsForTeam(
-                allRowsInFile, teamNameUsedForLeague, league
+                allRowsInFile, teamNameUsedForLeague, league, clubDetails
             )
         )
 
@@ -242,6 +246,7 @@ for team in teamDays:
                 cupAway,
                 cupGameBool,
                 True,
+                clubDetails,
             )
 
             validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
@@ -256,11 +261,11 @@ dataToExport = {
     "statsYear": year,
 }
 
-filename = f"src/data/{displayTeamName.lower()}Stats{year}.json"
+filename = f"src/data/{clubDetails.displayTeamName.lower()}Stats{year}.json"
 
 # Sanity checks on the data
-checksTeamStats(allTeamResults, filename)
-checkPlayerStats(playerStats, players, filename, True)
+checksTeamStats(allTeamResults, filename, clubDetails)
+checkPlayerStats(playerStats, clubDetails.players, filename, True, clubDetails)
 
 # Save the file
 saveFile(filename, dataToExport)

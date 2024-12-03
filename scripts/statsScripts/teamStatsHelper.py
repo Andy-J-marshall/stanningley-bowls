@@ -1,4 +1,3 @@
-import clubDetails
 import statsHelper
 
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
@@ -91,7 +90,7 @@ def isCupGame(cupRow):
     return False
 
 
-def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
+def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, clubDetails):
     homeRow = []
     awayRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):

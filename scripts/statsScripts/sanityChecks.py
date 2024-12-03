@@ -1,11 +1,10 @@
 import json
 import os
 import playerStatsHelper
-import clubDetails
 import statsHelper
 
 
-def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
+def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool, clubDetails):
     print("Running sanity checks on player stats")
 
     if len(players) != len(clubDetails.players):
@@ -16,10 +15,12 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
         stats = playerStats[player]
 
         # Check values have increased or stayed the same compared to the previous stats in the file
-        checkPlayerStatsValuesIncreased(stats, player, filePath, checkTeamStatsBool)
+        checkPlayerStatsValuesIncreased(
+            stats, player, filePath, checkTeamStatsBool, clubDetails
+        )
 
         if checkTeamStatsBool:
-            checkPlayerTeamStats(stats)
+            checkPlayerTeamStats(stats, clubDetails)
 
         # check games played
         if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
@@ -131,7 +132,9 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
         checkForDuplicateResults(stats["results"], player)
 
 
-def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
+def checkPlayerStatsValuesIncreased(
+    updatedStats, player, filePath, checkTeamStatsBool, clubDetails
+):
     if not os.path.exists(filePath):
         print("No previous stats to compare against")
         return
@@ -274,7 +277,7 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamSta
                     )
 
 
-def checkPlayerTeamStats(updatedStats):
+def checkPlayerTeamStats(updatedStats, clubDetails):
     for team in clubDetails.teamDays:
         teamName = statsHelper.returnTeamNameToStoreData(team)
         playerTeamStats = updatedStats[teamName.lower()]
@@ -287,11 +290,11 @@ def checkPlayerTeamStats(updatedStats):
             raise Exception(f"aggDiff for {team} incorrect?")
 
 
-def checksTeamStats(allTeamResults, filePath):
+def checksTeamStats(allTeamResults, filePath, clubDetails):
     print("Running sanity checks on team stats")
 
     # Check values have increased or stayed the same compared to the previous stats in the file
-    checkTeamStatsValuesIncreased(allTeamResults, filePath)
+    checkTeamStatsValuesIncreased(allTeamResults, filePath, clubDetails)
 
     for team in allTeamResults:
         dayForTeam = team["day"]
@@ -330,7 +333,7 @@ def checksTeamStats(allTeamResults, filePath):
         checkForDuplicateResults(team["results"], dayForTeam)
 
 
-def checkTeamStatsValuesIncreased(updatedStats, filePath):
+def checkTeamStatsValuesIncreased(updatedStats, filePath, clubDetails):
     if not os.path.exists(filePath):
         print("No previous stats to compare against")
         return

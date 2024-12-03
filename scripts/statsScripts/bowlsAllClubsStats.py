@@ -1,4 +1,4 @@
-from clubDetails import allDays, players
+import clubDetails
 from sanityChecks import checkPlayerStats
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
 from statsHelper import (
@@ -13,12 +13,12 @@ from playerStatsHelper import (
 )
 
 
-playerStats = returnListOfPlayerStats(allDays, False, players)
+playerStats = returnListOfPlayerStats(clubDetails.allDays, False, clubDetails.players)
 leaguesProcessed = []
 
 print("UPDATING ALL PLAYER STATS")
 
-for league in allDays:
+for league in clubDetails.allDays:
     # To prevent duplication
     league = removeSuffixFromTeamName(league)
     if league in leaguesProcessed:
@@ -38,7 +38,7 @@ for league in allDays:
 
         # Find rows in spreadsheet for players' games
         homePlayerRow, awayPlayerRow = returnHomeAndAwayPlayerRowsForAllTeams(
-            allRowsInFile
+            allRowsInFile, clubDetails
         )
 
         # Find each players' results
@@ -85,7 +85,13 @@ for league in allDays:
 
                 # Checks player plays for expected team
                 correctPlayerFound = checkCorrectTeamForPlayer(
-                    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
+                    allRowsInFile,
+                    rowNumber,
+                    homeGame,
+                    awayGame,
+                    cupHome,
+                    cupAway,
+                    clubDetails,
                 )
 
                 # Find result details
@@ -101,6 +107,7 @@ for league in allDays:
                         cupAway,
                         cupGameBool,
                         False,
+                        clubDetails,
                     )
     file.close()
 
@@ -114,7 +121,7 @@ dataToExport = {
 filename = f"src/data/allClubsStats{year}.json"
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, players, filename, False)
+checkPlayerStats(playerStats, clubDetails.players, filename, False, clubDetails)
 
 # Save the file
 saveFile(filename, dataToExport)
