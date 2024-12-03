@@ -117,12 +117,14 @@ for team in clubDetails.teamDays:
                 adjustFor6PlayerTeamsInt = returnAdjustedRowNumberFor6PlayerTeams(
                     league, 0
                 )
-                text = allRowsInFile[
-                    rowNumber
-                    + baseRowDownAdjustment
+                adjustment = (
+                    baseRowDownAdjustment
                     + adjustmentForLeagueInt
                     - adjustFor6PlayerTeamsInt
-                ]
+                )
+                if rowNumber + adjustment >= endRow:
+                    continue
+                text = allRowsInFile[rowNumber + adjustment]
                 if text and type(text) is str:
                     matchAgg = re.findall(r"\d+", text)
                 if len(matchAgg) == 2:
