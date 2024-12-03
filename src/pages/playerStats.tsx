@@ -64,22 +64,46 @@ function PlayerStats(props: PlayerStatsProps) {
         }
         setLoaded(true);
 
-        // Set whether to show club stats or all clubs stats
+        // Set which stats to show
         if (showClubStats) {
             switch (clubNameForStats) {
                 case clubName:
                     setStatsToUse(clubStats?.playerResults);
                     setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  clubStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(clubStats?.playerResults)
+                    );
                     break;
                 case 'littlemoor':
                     setStatsToUse(littlemoorStats?.playerResults);
                     setAllYearsStatsToUseArray(
                         littlemoorStatsForEveryYearArray
                     );
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  littlemoorStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(
+                                  littlemoorStats?.playerResults
+                              )
+                    );
                     break;
+                // TODO need the default?
                 default:
                     setStatsToUse(clubStats?.playerResults);
                     setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  clubStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(clubStats?.playerResults)
+                    );
                     break;
             }
         } else {
@@ -87,14 +111,9 @@ function PlayerStats(props: PlayerStatsProps) {
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
 
-        // Find the title, team names and players list fo the selected stats
+        // Find the title and players list fo the selected stats
         if (showStatsSinceStart) {
             setYearInTitle('');
-
-            // TODO here
-            setTeamNames(
-                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
-            );
 
             const playerListAllYears = allYearsStatsToUseArray.flatMap(
                 (yearStats) => Object.keys(yearStats.playerResults)
@@ -106,9 +125,6 @@ function PlayerStats(props: PlayerStatsProps) {
                     ? allClubsStats.statsYear
                     : ''
             );
-
-            // TODO here
-            setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
 
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         }
