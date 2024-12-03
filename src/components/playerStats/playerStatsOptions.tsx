@@ -7,9 +7,9 @@ import {
     DropdownButton,
     Dropdown,
 } from 'react-bootstrap';
+import { config } from '../../config';
 import { PlayerStatsOptionsProps } from '../../types/interfaces';
 import { capitalizeText, formatTeamName } from '../../helpers/utils';
-import { config } from '../../config';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allClubsStatsCallback = props.allClubsStatsCallback;

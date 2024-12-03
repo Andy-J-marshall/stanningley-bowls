@@ -3,14 +3,15 @@ import IndividualPlayerStats from '../components/playerStats/IndividualPlayerSta
 import PlayerStatSummary from '../components/playerStats/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStats/playerStatsOptions';
 import Search from '../components/playerStats/search';
-import { returnPlayerStats } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import { config } from '../config';
 import {
     PlayerStatsProps,
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
 } from '../types/interfaces';
+import { returnPlayerStats } from '../helpers/playerStatsHelper';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
@@ -22,7 +23,6 @@ import {
     returnTeamNamesWithGames,
 } from '../helpers/teamStatsHelper';
 import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
-import { config } from '../config';
 
 function PlayerStats(props: PlayerStatsProps) {
     const allClubsStats = props.allClubsStats;
