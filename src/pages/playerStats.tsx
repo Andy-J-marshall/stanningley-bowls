@@ -99,20 +99,6 @@ function PlayerStats(props: PlayerStatsProps) {
                 (yearStats) => Object.keys(yearStats.playerResults)
             );
             setPlayers(Array.from(new Set(playerListAllYears)).sort());
-        }
-
-        // Find the title, team names and players list fo the selected stats
-        if (showStatsSinceStart) {
-            setYearInTitle('');
-
-            setTeamNames(
-                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
-            );
-
-            const playerListAllYears = allYearsStatsToUseArray.flatMap(
-                (yearStats) => Object.keys(yearStats.playerResults)
-            );
-            setPlayers(Array.from(new Set(playerListAllYears)).sort());
         } else {
             setYearInTitle(
                 new Date().getFullYear() !== Number(clubStats.statsYear)
