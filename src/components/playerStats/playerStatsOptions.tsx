@@ -60,10 +60,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     function selectSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
-            setAllClubsToggle(false);
-            teamSpecificCallback('');
-            setDisableOtherOptions(false);
             setTeamDropdownTitle(defaultTeamDropdownTitle);
+            teamSpecificCallback('');
+            setAllClubsToggle(false);
+            setDisableOtherOptions(false);
         } else {
             setTeamDropdownTitle(formatTeamName(teamName));
             teamSpecificCallback(teamName);
@@ -86,6 +86,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     function selectClubStats(clubName: string) {
         setClubDropdownTitle(capitalizeText([clubName]));
         clubSpecificCallback(clubName);
+
+        setTeamDropdownTitle(defaultTeamDropdownTitle);
+        teamSpecificCallback('');
     }
 
     function toggleAllMatchTypes() {
@@ -235,15 +238,15 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     title={clubDropdownTitle}
                                     disabled={disableTeamDropdown}
                                 >
-                                    {clubNames.map((clubName, index) => (
+                                    {clubNames.map((club, index) => (
                                         <Dropdown.Item
                                             key={index}
-                                            id={'#club-option-' + clubName}
+                                            id={'#club-option-' + club}
                                             onClick={() =>
-                                                selectClubStats(clubName)
+                                                selectClubStats(club)
                                             }
                                         >
-                                            {capitalizeText([clubName])}
+                                            {capitalizeText([club])}
                                         </Dropdown.Item>
                                     ))}
                                 </DropdownButton>

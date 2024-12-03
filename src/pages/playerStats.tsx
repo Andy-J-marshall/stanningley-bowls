@@ -185,8 +185,6 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function clubSpecificCallback(clubName: string) {
-        // TODO handle allClubs here too?
-
         if (!config.clubsForPlayersStats.includes(clubName.toLowerCase())) {
             // Default to the main club if the selected club name is not recognised
             setClubNameForStats(clubNameForStats);
