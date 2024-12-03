@@ -76,7 +76,7 @@ def returnAggRowDownNumber(league):
         return 2
     if league.lower() == "saturday airewharfe":
         return 2
-    # TODO this won't work for B team from 2025 due to 8 players in lower leagues
+    # this won't work for saturday bradford teams in division 3 or below from 2025 due to 8 players in lower leagues
     if league.lower() == "saturday bradford":
         return 3
     if league.lower() == "mirfield":
