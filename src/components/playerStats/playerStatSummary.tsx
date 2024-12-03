@@ -223,6 +223,7 @@ function PlayerStatSummary(props: PlayerStatSummaryProps) {
 
     if (filteredPlayerStats) {
         const statsToUse = findStatsToUse();
+        
         const playerCount = statsToUse.filter((p) => p.games > 0).length;
 
         if (playerCount === 0) {

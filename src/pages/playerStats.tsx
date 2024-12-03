@@ -22,12 +22,16 @@ import {
     returnTeamNamesWithGames,
 } from '../helpers/teamStatsHelper';
 import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
+import { config } from '../config';
 
 function PlayerStats(props: PlayerStatsProps) {
     const allClubsStats = props.allClubsStats;
     const clubStats = props.clubStats;
+    const littlemoorStats = props.littlemoorStats;
     const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
     const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
+    const littlemoorStatsForEveryYearArray =
+        props.littlemoorStatsForEveryYearArray;
 
     const { playerResults } = clubStats;
     const allClubsPlayerResults = allClubsStats.playerResults;
@@ -39,6 +43,9 @@ function PlayerStats(props: PlayerStatsProps) {
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
+    const [clubNameForStats, setClubNameForStats] = useState(
+        config.teamNames.shortName
+    );
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         clubStatsForEveryYearArray
     );
@@ -48,6 +55,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
 
+    // TODO need to change this too?
     // Find list of players for current year
     const players = Object.keys(allClubsPlayerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
@@ -81,11 +89,20 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         if (showStatSummary) {
+            // TODO rename showStatSummary?
             setStatsToUse(allClubsPlayerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         } else {
-            setStatsToUse(playerResults);
-            setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+            // TODO refactor. Switch statement?
+            const s = clubNameForStats.includes('littlemoor')
+                ? littlemoorStats.playerResults
+                : playerResults;
+            setStatsToUse(s);
+
+            const s2 = clubNameForStats.includes('littlemoor')
+                ? littlemoorStatsForEveryYearArray
+                : clubStatsForEveryYearArray;
+            setAllYearsStatsToUseArray(s2);
         }
     });
 
@@ -148,6 +165,15 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
+    function clubSpecificCallback(clubName: string) {
+        // TODO handle allClubs here too?
+
+        // TODO create a switch statement to handle different clubs
+        setClubNameForStats(clubName.toLowerCase());
+
+        scrollToBottom();
+    }
+
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -182,6 +208,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function returnStatSummaryTable() {
+        // TODO this is still showing Stanningley
         let playerStatsForSummary:
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
@@ -253,6 +280,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 allClubsStatsCallback={allClubsStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
                 teamSpecificCallback={teamSpecificCallback}
+                clubSpecificCallback={clubSpecificCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
                 onlyHomeCallback={onlyHomeCallback}
@@ -260,6 +288,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
                 teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
+                clubOptions={new Array<string>('Stanningley', 'Littlemoor')} // TODO change
             />
 
             <p className="footnote">Last Updated: {clubStats.lastUpdated}</p>

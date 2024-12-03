@@ -1,0 +1,119 @@
+{
+    "playerResults": {
+        "alison woodfine": {
+            "totalAgg": 673,
+            "totalAggAgainst": 568,
+            "availableAgg": 791,
+            "availablePairsAgg": 182,
+            "availableHomeAgg": 372,
+            "availableAwayAgg": 262,
+            "availablePairsHomeAgg": 78,
+            "availablePairsAwayAgg": 52,
+            "totalPairsAgg": 139,
+            "totalPairsAggAgainst": 152,
+            "totalHomeAgg": 340,
+            "totalHomeAggAgainst": 244,
+            "totalPairsHomeAgg": 75,
+            "totalPairsHomeAggAgainst": 59,
+            "totalAwayAgg": 217,
+            "totalAwayAggAgainst": 197,
+            "totalPairsAwayAgg": 37,
+            "totalPairsAwayAggAgainst": 41,
+            "homeWins": 12,
+            "homeLosses": 5,
+            "awayWins": 7,
+            "awayLosses": 5,
+            "cupWins": 3,
+            "cupLosses": 4,
+            "pairWins": 3,
+            "pairLosses": 4,
+            "pairHomeWins": 2,
+            "pairHomeLosses": 1,
+            "pairAwayWins": 1,
+            "pairAwayLosses": 1,
+            "pairCupWins": 0,
+            "pairCupLosses": 2,
+            "totalGamesPlayed": 36,
+            "results": [
+                "alison woodfine & derek wilson 23 - 26 ken garrett & sue pagdin",
+                "alison woodfine & derek wilson 26 - 15 sandra taylor & shirley nicholson",
+                "alison woodfine & derek wilson 26 - 19 frank sutcliffe & peter allen",
+                "alison woodfine & derek wilson 11 - 26 edgar ryley & ann ryley",
+                "alison woodfine & derek wilson 26 - 14 david gregory & walter stockhill",
+                "alison woodfine & derek wilson 11 - 26 ken garbett & lindsay rosendale",
+                "alison woodfine & derek wilson 16 - 26 ken lee & david norris",
+                "alison woodfine 11 - 21 dennis walters",
+                "alison woodfine 21 - 10 carol butters",
+                "alison woodfine 21 - 5 barry brown",
+                "alison woodfine 21 - 9 david holmes",
+                "alison woodfine 21 - 18 marilyn robinson",
+                "alison woodfine 21 - 10 harvey lockwood",
+                "alison woodfine 7 - 21 elaine hill",
+                "alison woodfine 12 - 21 dennis walters",
+                "alison woodfine 21 - 10 lillian pickles",
+                "alison woodfine 20 - 21 keith fleming",
+                "alison woodfine 21 - 17 les oddy",
+                "alison woodfine 21 - 17 john rowberry",
+                "alison woodfine 12 - 21 david norton",
+                "alison woodfine 14 - 21 malcolm hallas",
+                "alison woodfine 21 - 8 clifford pitts",
+                "alison woodfine 21 - 4 paul jagger",
+                "alison woodfine 21 - 14 patricia rowe",
+                "alison woodfine 21 - 16 sean fish",
+                "alison woodfine 21 - 11 john ackroyd",
+                "alison woodfine 21 - 5 fred hargreaves",
+                "alison woodfine 15 - 21 ian worrall",
+                "alison woodfine 12 - 21 clifford brogie",
+                "alison woodfine 21 - 14 james king",
+                "alison woodfine 16 - 21 graham bluff",
+                "alison woodfine 21 - 9 susan reddyhoff",
+                "alison woodfine 16 - 21 malcolm cameron",
+                "alison woodfine 21 - 10 linda taylor",
+                "alison woodfine 21 - 9 allan blue",
+                "alison woodfine 21 - 10 peter caine"
+            ],
+            "monday combined leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday pairs airewharfe": {
+                "games": 7,
+                "wins": 3,
+                "aggDiff": -13
+            },
+            "thursday vets leeds": {
+                "games": 14,
+                "wins": 8,
+                "aggDiff": 22
+            },
+            "saturday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday leeds (b)": {
+                "games": 15,
+                "wins": 11,
+                "aggDiff": 96
+            }
+        }
+    },
+    "lastUpdated": "01/12/2024",
+    "statsYear": "2024"
+}

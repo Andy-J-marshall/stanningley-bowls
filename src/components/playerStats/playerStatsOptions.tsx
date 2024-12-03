@@ -8,12 +8,14 @@ import {
     Dropdown,
 } from 'react-bootstrap';
 import { PlayerStatsOptionsProps } from '../../types/interfaces';
-import { formatTeamName } from '../../helpers/utils';
+import { capitalizeText, formatTeamName } from '../../helpers/utils';
+import { config } from '../../config';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allClubsStatsCallback = props.allClubsStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const teamSpecificCallback = props.teamSpecificCallback;
+    const clubSpecificCallback = props.clubSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
     const onlyHomeCallback = props.onlyHomeCallback;
@@ -21,6 +23,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const onlyCupCallback = props.onlyCupCallback;
     const searchedPlayerName = props.searchedPlayerName;
     const teamNames = props.teamNames;
+    const clubOptions = props.clubOptions;
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allClubsToggle, setAllClubsToggle] = useState(false);
@@ -37,6 +40,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const defaultTeamDropdownTitle = 'All Teams';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
+    );
+    const [clubDropdownTitle, setClubDropdownTitle] = useState(
+        config.teamNames.shortName
     );
 
     function toggleAllClubsStats(event: React.ChangeEvent<HTMLInputElement>) {
@@ -75,6 +81,11 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             home(false);
             cup(false);
         }
+    }
+
+    function selectClubStats(clubName: string) {
+        setClubDropdownTitle(capitalizeText([clubName]));
+        clubSpecificCallback(clubName);
     }
 
     function toggleAllMatchTypes() {
@@ -184,7 +195,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 />
                             </Col>
                             <Col xs={12} md={3}>
-                                <h6>TEAMS</h6>
+                                <h6>CLUBS & TEAMS</h6>
                                 <DropdownButton
                                     drop="up"
                                     size="sm"
@@ -215,6 +226,26 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     >
                                         {defaultTeamDropdownTitle}
                                     </Dropdown.Item>
+                                </DropdownButton>
+                                <DropdownButton
+                                    drop="up"
+                                    size="sm"
+                                    variant="light"
+                                    id="team-select-dropdown"
+                                    title={clubDropdownTitle}
+                                    disabled={disableTeamDropdown}
+                                >
+                                    {clubOptions.map((clubName, index) => (
+                                        <Dropdown.Item
+                                            key={index}
+                                            id={'#club-option-' + clubName}
+                                            onClick={() =>
+                                                selectClubStats(clubName)
+                                            }
+                                        >
+                                            {capitalizeText([clubName])}
+                                        </Dropdown.Item>
+                                    ))}
                                 </DropdownButton>
                             </Col>
                             <Col xs={12} md={3}>

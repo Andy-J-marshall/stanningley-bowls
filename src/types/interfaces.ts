@@ -48,6 +48,7 @@ export interface PlayerStatsOptionsProps {
     allClubsStatsCallback: (toggle: boolean) => void;
     allYearStatsCallback: (toggle: boolean) => void;
     teamSpecificCallback: (teamName: string) => void;
+    clubSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;
     onlyPairsCallback: (toggle: boolean) => void;
     onlyHomeCallback: (toggle: boolean) => void;
@@ -55,12 +56,15 @@ export interface PlayerStatsOptionsProps {
     onlyCupCallback: (toggle: boolean) => void;
     searchedPlayerName: string;
     teamNames: string[];
+    clubOptions: string[];
 }
 
 export interface PlayerStatsProps {
     clubStats: FullStatsFile;
+    littlemoorStats: FullStatsFile;
     allClubsStats: FullStatsFile;
     clubStatsForEveryYearArray: FullStatsFile[];
+    littlemoorStatsForEveryYearArray: FullStatsFile[];
     allClubsStatsForEveryYearArray: FullStatsFile[];
 }
 

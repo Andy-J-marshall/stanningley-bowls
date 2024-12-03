@@ -19,13 +19,19 @@ import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
 const allYearClubStats: any = statsData.allYearClubStats;
+const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
 const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
 const clubStatsForEveryYearArray: any[] = statsData.clubStatsForEveryYearArray;
+const littlemoorStatsForEveryYearArray: any[] =
+    statsData.littlemoorStatsForEveryYearArray;
 const allClubsStatsForEveryYearArray: any[] =
     statsData.allClubsStatsForEveryYearArray;
 
 function App() {
     const [clubStats, setClubStats] = useState(statsData.dataFiles.clubStats24);
+    const [littlemoorStats, setLittlemoorStats] = useState(
+        statsData.dataFiles.littlemoorStats24
+    );
     const [allClubsStats, setAllClubsStats] = useState(
         statsData.dataFiles.allClubsStats24
     );
@@ -42,8 +48,11 @@ function App() {
     function statsSelectCallback(year: string) {
         const currentYear = new Date().getFullYear();
         let clubStatsForSelectedYear: any;
+        let littlemoorStatsForSelectedYear: any;
         let allClubsStatsForSelectedYear: any;
+
         switch (year.toString()) {
+            // TODO add littlemoor stats to other places here
             case '2013':
                 clubStatsForSelectedYear = allYearClubStats['year2013'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
@@ -86,6 +95,8 @@ function App() {
                 break;
             case '2024':
                 clubStatsForSelectedYear = allYearClubStats['year2024'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2024'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
                 break;
             default:
@@ -97,6 +108,7 @@ function App() {
         }
         setYearToDisplay(year.toString());
         setClubStats(clubStatsForSelectedYear);
+        setLittlemoorStats(littlemoorStatsForSelectedYear);
         setAllClubsStats(allClubsStatsForSelectedYear);
     }
 
@@ -136,9 +148,13 @@ function App() {
                                 />
                                 <PlayerStats
                                     clubStats={clubStats}
+                                    littlemoorStats={littlemoorStats}
                                     allClubsStats={allClubsStats}
                                     clubStatsForEveryYearArray={
                                         clubStatsForEveryYearArray
+                                    }
+                                    littlemoorStatsForEveryYearArray={
+                                        littlemoorStatsForEveryYearArray
                                     }
                                     allClubsStatsForEveryYearArray={
                                         allClubsStatsForEveryYearArray
