@@ -5,7 +5,7 @@
     "get-stats": "python3 ./scripts/statsScripts/createReportsYearDir.py && npx playwright test --config ./scripts/bowlsnet/playwright.config.ts",
     "get-stats-and-update": "npm run get-stats && npm run update-stats",
     "get-stats-update-pr": "npm run get-stats-and-update && npm run tests && npm run commit-updated-stats",
-    "update-stats": "python3 ./scripts/statsScripts/bowlsClubStats.py && python3 ./scripts/statsScripts/bowlsAllClubsStats.py",
+    "update-stats": "python3 ./scripts/statsScripts/bowlsClubStats.py --club stanningley && python3 ./scripts/statsScripts/bowlsClubStats.py --club littlemoor && python3 ./scripts/statsScripts/bowlsAllClubsStats.py",
     "commit-updated-stats": "git checkout update_stats_prod && git pull && git merge master && git add bowlsnetReports/* && git add src/data/* && git commit -m 'updated stats' && git push && gh pr create --fill && git checkout master && git pull",
     "start": "vite",
     "build": "vite build",

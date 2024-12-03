@@ -1,8 +1,6 @@
 import re
+import argparse
 
-# TODO paramaterize this
-# import littlemoorDetails as clubDetails
-import littlemoorDetails as clubDetails
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,
     isCupGame,
@@ -29,6 +27,23 @@ from playerStatsHelper import (
     returnHomeAndAwayPlayerRowsForTeam,
     calculatePlayerStats,
 )
+
+# Set up argument parser
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--club",
+    choices=["littlemoor", "stanningley"],
+    required=True,
+    help="Specify the club details to use.",
+)
+args = parser.parse_args()
+
+# Import the appropriate club details module based on the argument
+if args.club == "littlemoor":
+    import littlemoorDetails as clubDetails
+elif args.club == "stanningley":
+    import clubDetails as clubDetails
+
 
 playerStats = returnListOfPlayerStats(clubDetails.teamDays, True, clubDetails.players)
 teamsProcessed = []

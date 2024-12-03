@@ -4,6 +4,8 @@ Welcome to the Stanningley Park Bowling Club website.
 
 ### Overview
 
+<!-- TODO update readme to explain how the script now works and how to update -->
+<!-- TODO add tests -->
 This repository contains multiple components:
 
 -   React web application to display club information and stats
