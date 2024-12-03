@@ -67,17 +67,6 @@ function PlayerStats(props: PlayerStatsProps) {
         // Set which stats to show
         if (showClubStats) {
             switch (clubNameForStats) {
-                case clubName:
-                    setStatsToUse(clubStats?.playerResults);
-                    setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
-                    setTeamNames(
-                        showStatsSinceStart
-                            ? returnTeamNamesWithGamesForAllYears(
-                                  clubStatsForEveryYearArray
-                              )
-                            : returnTeamNamesWithGames(clubStats?.playerResults)
-                    );
-                    break;
                 case 'littlemoor':
                     setStatsToUse(littlemoorStats?.playerResults);
                     setAllYearsStatsToUseArray(
@@ -93,7 +82,7 @@ function PlayerStats(props: PlayerStatsProps) {
                               )
                     );
                     break;
-                // TODO need the default?
+                case clubName:
                 default:
                     setStatsToUse(clubStats?.playerResults);
                     setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
