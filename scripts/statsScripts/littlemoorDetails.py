@@ -50,9 +50,8 @@ displayTeamName = "Littlemoor"
 teamDays = [
     "Monday Bradford",
     "Monday AireWharfe",
-    # TODO add back in
-    # "Mirfield (A)",
-    # "Mirfield (B)",
+    "Mirfield (A)",
+    "Mirfield (B)",
     "Wednesday Half Holiday Bradford (A)",
     "Wednesday Half Holiday Bradford (B)",
     "Spen Valley (A)",
