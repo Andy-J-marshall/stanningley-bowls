@@ -39,7 +39,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
-    const [showStatSummary, setShowStatSummary] = useState(false);
+    const [showClubStats, setShowClubStats] = useState(true);
     const [statsToUse, setStatsToUse] = useState(playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
@@ -88,21 +88,20 @@ function PlayerStats(props: PlayerStatsProps) {
         }
         setLoaded(true);
 
-        if (showStatSummary) {
-            // TODO rename showStatSummary?
-            setStatsToUse(allClubsPlayerResults);
-            setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
-        } else {
+        if (showClubStats) {
             // TODO refactor. Switch statement?
             const s = clubNameForStats.includes('littlemoor')
-                ? littlemoorStats.playerResults
-                : playerResults;
+            ? littlemoorStats.playerResults
+            : playerResults;
             setStatsToUse(s);
-
+            
             const s2 = clubNameForStats.includes('littlemoor')
-                ? littlemoorStatsForEveryYearArray
-                : clubStatsForEveryYearArray;
+            ? littlemoorStatsForEveryYearArray
+            : clubStatsForEveryYearArray;
             setAllYearsStatsToUseArray(s2);
+        } else {
+            setStatsToUse(allClubsPlayerResults);
+            setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
     });
 
@@ -119,7 +118,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function allClubsStatsCallback(showBool: boolean) {
-        setShowStatSummary(showBool);
+        setShowClubStats(!showBool);
         if (showBool) {
             setStatsToUse(allClubsPlayerResults);
         } else {
@@ -202,7 +201,7 @@ function PlayerStats(props: PlayerStatsProps) {
             <IndividualPlayerStats
                 name={playerName.toLowerCase()}
                 playersStats={detailedStats}
-                showStatSummary={showStatSummary}
+                showClubStats={showClubStats}
             />
         );
     }
