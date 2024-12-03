@@ -52,7 +52,6 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
 
-    // TODO need to change this too?
     // Find list of players for current year
     const players = Object.keys(allClubsStats.playerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
