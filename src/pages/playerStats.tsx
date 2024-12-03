@@ -59,6 +59,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     useEffect(() => {
         // Prevent scrolling to the top when a different stat filter is selected
+        // Prevent scrolling to the top when a different stat filter is selected
         if (!loaded) {
             window.scrollTo(0, 0);
         }
@@ -85,6 +86,20 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
+        }
+
+        // Find the title, team names and players list fo the selected stats
+        if (showStatsSinceStart) {
+            setYearInTitle('');
+
+            setTeamNames(
+                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
+            );
+
+            const playerListAllYears = allYearsStatsToUseArray.flatMap(
+                (yearStats) => Object.keys(yearStats.playerResults)
+            );
+            setPlayers(Array.from(new Set(playerListAllYears)).sort());
         }
 
         // Find the title, team names and players list fo the selected stats

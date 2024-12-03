@@ -21,7 +21,9 @@ function Search(props: SearchProps) {
                     id="search"
                     placeholder="Player Search..."
                     onChange={handleChange}
-                    options={['SHOW ALL'].concat(searchList)}
+                    options={['SHOW ALL'].concat(
+                        searchList.map((player) => player.toUpperCase())
+                    )}
                     selected={value}
                     size="lg"
                     renderMenu={(players: string[], menuProps: any) => (
