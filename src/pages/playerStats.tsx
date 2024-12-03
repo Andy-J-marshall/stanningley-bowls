@@ -137,12 +137,6 @@ function PlayerStats(props: PlayerStatsProps) {
 
     function allClubsStatsCallback(showBool: boolean) {
         setShowClubStats(!showBool);
-        if (showBool) {
-            setStatsToUse(allClubsStats?.playerResults);
-        } else {
-            // TODO here
-            setStatsToUse(clubStats?.playerResults);
-        }
 
         scrollToBottom();
     }
