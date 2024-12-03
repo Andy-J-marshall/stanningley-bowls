@@ -117,8 +117,8 @@ traitorPlayers = {
 
 # Other leagues that players play in for other teams (lowercase)
 otherLeagues = [
-    "Tuesday Mirfield",
-    "Wednesday Spen Valley",
+    "Mirfield",
+    "Spen Valley",
     "Monday AireWharfe",
     "Tuesday AireWharfe",
     "Monday Bradford",

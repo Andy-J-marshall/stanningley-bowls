@@ -23,92 +23,96 @@ function sleep() {
 const leagues = [
     {
         day: 'Monday Combined Leeds',
-        url: `/Leeds-MonComb${queryParam}`,
+        url: '/Leeds-MonComb',
     },
     {
         day: 'Tuesday Vets Leeds',
-        url: `/Leeds-TueVets${queryParam}`,
+        url: '/Leeds-TueVets',
     },
     {
         day: 'Tuesday Leeds',
-        url: `/Leeds-Tue${queryParam}`,
+        url: '/Leeds-Tue',
     },
     {
         day: 'Wednesday Half Holiday Leeds',
-        url: `/Leeds-Wed${queryParam}`,
+        url: '/Leeds-Wed',
     },
     {
         day: 'Wednesday Pairs AireWharfe',
-        url: `/AW-WedPairs${queryParam}`,
+        url: '/AW-WedPairs',
     },
     {
         day: 'Thursday Vets Leeds',
-        url: `/Leeds-ThuVets${queryParam}`,
+        url: '/Leeds-ThuVets',
     },
     {
         day: 'Saturday Leeds',
-        url: `/Leeds-Sat${queryParam}`,
+        url: '/Leeds-Sat',
     },
     {
-        day: 'Tuesday Mirfield',
-        url: `/Mirfield${queryParam}`,
+        day: 'Mirfield',
+        url: '/Mirfield',
     },
     {
-        day: 'Wednesday Spen Valley',
-        url: `/WestRiding${queryParam}`,
+        day: 'Spen Valley',
+        url: '/WestRiding',
     },
     {
         day: 'Monday AireWharfe',
-        url: `/AW-Mon${queryParam}`,
+        url: '/AW-Mon',
     },
     {
         day: 'Tuesday AireWharfe',
-        url: `/AW-Vets${queryParam}`,
+        url: '/AW-Vets',
     },
     {
         day: 'Monday Bradford',
-        url: `/Bradford-Mon${queryParam}`,
+        url: '/Bradford-Mon',
     },
     {
         day: 'Wednesday Half Holiday Bradford',
-        url: `/Bradford-HalfHol${queryParam}`,
+        url: '/Bradford-HalfHol',
     },
     {
         day: 'Thursday Vets Bradford',
-        url: `/Bradford-Vets${queryParam}`,
+        url: '/Bradford-Vets',
     },
     {
         day: 'Saturday Bradford',
-        url: `/Bradford-Sat${queryParam}`,
+        url: '/Bradford-Sat',
     },
     // Other leagues of interest
     // {
-    //     day: 'Tadcaster Thursday',
-    //     url: `/Tadcaster${queryParam}`,
+    //     day: 'North East Leeds Vets',
+    //     url: '/NELeedsVets',
     // },
     // {
-    //   day: 'Leeds Ladies',
-    //   url: `/LeedsLadies${queryParam}`,
+    //     day: 'Tadcaster',
+    //     url: '/Tadcaster',
     // },
     // {
-    //   day: 'Saturday AireWharfe',
-    //   url: `/AW-Sat${queryParam}`,
+    //     day: 'Leeds Ladies',
+    //     url: '/LeedsLadies',
     // },
     // {
-    //   day: 'Wednesday AireWharfe',
-    //   url: `/AW-WedSingles${queryParam}`,
+    //     day: 'Saturday AireWharfe',
+    //     url: '/AW-Sat',
     // },
     // {
-    //   day: 'Saturday Barkston Ash',
-    //   url: `/BarkstonAsh${queryParam}`,
+    //     day: 'Wednesday AireWharfe',
+    //     url: '/AW-WedSingles',
     // },
     // {
-    //   day: 'Guiseley Winter',
-    //   url: `/GuiseleyWinter${queryParam}`,
+    //     day: 'Barkston Ash',
+    //     url: '/BarkstonAsh',
     // },
     // {
-    //   day: 'Wetherby Autumn',
-    //   url: `/WetherbyAutumn${queryParam}`,
+    //     day: 'Guiseley Winter',
+    //     url: '/GuiseleyWinter',
+    // },
+    // {
+    //     day: 'Wetherby Autumn',
+    //     url: '/WetherbyAutumn',
     // },
 ];
 
@@ -120,7 +124,7 @@ for (const league of leagues) {
         let page: Page = await context.newPage();
 
         // Navigate to Bowlsnet and wait for page to load
-        await page.goto(league.url);
+        await page.goto(`${league.url}${queryParam}`);
         await sleep();
 
         // Click pop up if present
