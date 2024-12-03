@@ -39,7 +39,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
     const [showClubStats, setShowClubStats] = useState(true);
-    const [statsToUse, setStatsToUse] = useState(clubStats.playerResults);
+    const [statsToUse, setStatsToUse] = useState(clubStats?.playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
     const [clubNameForStats, setClubNameForStats] = useState(clubName);
@@ -51,39 +51,20 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
-
-    // Find list of players for current year
-    const players = Object.keys(allClubsStats.playerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase());
-
-    // Find list of players for all years
-    const allPlayersSet = new Set<string>();
-    allYearsStatsToUseArray.forEach((yearStats) => {
-        Object.keys(yearStats.playerResults).forEach((playerName) => {
-            allPlayersSet.add(playerName.toUpperCase());
-        });
-    });
-    const allPlayers = Array.from(allPlayersSet).sort();
-
-    // Find list of teams names used in the stats
-    const teamNames = returnTeamNamesWithGames(clubStats.playerResults);
-    const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
-        clubStatsForEveryYearArray
+    const [teamNames, setTeamNames] = useState(
+        returnTeamNamesWithGames(clubStats?.playerResults)
     );
-
-    const yearInTitle =
-        new Date().getFullYear() !== Number(clubStats.statsYear) &&
-        !showStatsSinceStart
-            ? `${clubStats.statsYear}`
-            : '';
+    const [players, setPlayers] = useState(['']);
+    const [yearInTitle, setYearInTitle] = useState('');
 
     useEffect(() => {
+        // Prevent scrolling to the top when a different stat filter is selected
         if (!loaded) {
-            // this prevents scrolling to the top when a different stat filter is selected
             window.scrollTo(0, 0);
         }
         setLoaded(true);
 
+        // Set whether to show club stats or all clubs stats
         if (showClubStats) {
             switch (clubNameForStats) {
                 case clubName:
@@ -105,7 +86,40 @@ function PlayerStats(props: PlayerStatsProps) {
             setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
-    });
+
+        // Find the title, team names and players list fo the selected stats
+        if (showStatsSinceStart) {
+            setYearInTitle('');
+
+            setTeamNames(
+                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
+            );
+
+            const playerListAllYears = allYearsStatsToUseArray.flatMap(
+                (yearStats) => Object.keys(yearStats.playerResults)
+            );
+            setPlayers(Array.from(new Set(playerListAllYears)).sort());
+        } else {
+            setYearInTitle(
+                new Date().getFullYear() !== Number(clubStats.statsYear)
+                    ? clubStats.statsYear
+                    : ''
+            );
+
+            setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
+
+            setPlayers(Object.keys(allClubsStats?.playerResults).sort());
+        }
+    }, [
+        clubStats,
+        clubStatsForEveryYearArray,
+        littlemoorStats,
+        littlemoorStatsForEveryYearArray,
+        showClubStats,
+        showStatsSinceStart,
+        clubNameForStats,
+        loaded,
+    ]);
 
     function scrollToBottom() {
         setTimeout(() => {
@@ -122,9 +136,9 @@ function PlayerStats(props: PlayerStatsProps) {
     function allClubsStatsCallback(showBool: boolean) {
         setShowClubStats(!showBool);
         if (showBool) {
-            setStatsToUse(allClubsStats.playerResults);
+            setStatsToUse(allClubsStats?.playerResults);
         } else {
-            setStatsToUse(clubStats.playerResults);
+            setStatsToUse(clubStats?.playerResults);
         }
 
         scrollToBottom();
@@ -261,9 +275,7 @@ function PlayerStats(props: PlayerStatsProps) {
         <div id="player-stat">
             <h1>{yearInTitle} player stats</h1>
             <Search
-                searchList={
-                    showStatsSinceStart ? allPlayers : playerSearchNameArray
-                }
+                searchList={players}
                 value={value}
                 searchedName={searchedPlayerName}
                 handleChangeCallback={handleSearchChange}
@@ -291,7 +303,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
-                teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
+                teamNames={teamNames}
                 clubOptions={config.clubsForPlayersStats}
             />
 
