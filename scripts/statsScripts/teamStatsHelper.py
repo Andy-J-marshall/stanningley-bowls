@@ -6,7 +6,7 @@ leaguesWith10Players = [
     "monday airewharfe",
     "saturday airewharfe",
     "saturday bradford",
-    "tuesday mirfield",
+    "mirfield",
 ]
 leaguesWith6Players = [
     "monday bradford",
@@ -78,7 +78,7 @@ def returnAggRowDownNumber(league):
         return 2
     if league.lower() == "saturday bradford":
         return 3
-    if league.lower() == "tuesday mirfield":
+    if league.lower() == "mirfield":
         return 4
     return 0
 
