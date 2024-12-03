@@ -314,7 +314,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
-                teamNames={teamNames} // TODO also need to amend list of team names that are classed as valid i.e. in the config file?
+                teamNames={teamNames}
                 clubNames={config.clubsForPlayersStats}
             />
 

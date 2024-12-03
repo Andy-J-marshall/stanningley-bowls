@@ -35,6 +35,7 @@ export const config = {
         'saturday leeds (b)': 'Saturday B',
     },
     allTeamsInLeaguesSince2013: [
+        // Leagues for club
         'monday combined leeds',
         'monday airewharfe',
         'monday airewharfe (a)',
@@ -51,12 +52,30 @@ export const config = {
         'thursday vets leeds',
         'thursday vets leeds (a)',
         'thursday vets leeds (b)',
+        'leeds ladies',
         'saturday leeds',
         'saturday leeds (a)',
         'saturday leeds (b)',
         'saturday bradford',
         'saturday bradford (a)',
         'saturday bradford (b)',
+        
+        // Other leagues
+        'monday bradford',
+        'monday bradford (a)',
+        'monday bradford (b)',
+        'tuesday airewharfe',
+        'tuesday airewharfe (a)',
+        'tuesday airewharfe (b)',
+        'tuesday mirfield',
+        'tuesday mirfield (a)',
+        'tuesday mirfield (b)',
+        'wednesday spen valley',
+        'wednesday spen valley (a)',
+        'wednesday spen valley (b)',
+        'thursday vets bradford',
+        'thursday vets bradford (a)',
+        'thursday vets bradford (b)',
     ],
     historicTeamInfo: [
         {
