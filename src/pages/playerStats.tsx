@@ -59,7 +59,6 @@ function PlayerStats(props: PlayerStatsProps) {
 
     useEffect(() => {
         // Prevent scrolling to the top when a different stat filter is selected
-        // Prevent scrolling to the top when a different stat filter is selected
         if (!loaded) {
             window.scrollTo(0, 0);
         }
