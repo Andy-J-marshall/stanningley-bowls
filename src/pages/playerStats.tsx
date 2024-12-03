@@ -91,6 +91,7 @@ function PlayerStats(props: PlayerStatsProps) {
         if (showStatsSinceStart) {
             setYearInTitle('');
 
+            // TODO here
             setTeamNames(
                 returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
             );
@@ -102,10 +103,11 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             setYearInTitle(
                 new Date().getFullYear() !== Number(clubStats.statsYear)
-                    ? clubStats.statsYear
+                    ? clubStats.statsYear // TODO here
                     : ''
             );
 
+            // TODO here
             setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
 
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
@@ -138,6 +140,7 @@ function PlayerStats(props: PlayerStatsProps) {
         if (showBool) {
             setStatsToUse(allClubsStats?.playerResults);
         } else {
+            // TODO here
             setStatsToUse(clubStats?.playerResults);
         }
 
@@ -231,6 +234,7 @@ function PlayerStats(props: PlayerStatsProps) {
             | PlayerStatsSummary[]
             | PlayerStatsTeamSummary[] = new Array<PlayerStatsSummary>();
 
+        // TODO here i.e. clubStatsForEveryYearArray
         if (showStatsSinceStart && teamNameForStats) {
             playerStatsForSummary = returnTeamPlayerStatsForAllYears(
                 clubStatsForEveryYearArray,
