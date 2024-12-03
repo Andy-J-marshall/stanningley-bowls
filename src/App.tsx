@@ -52,45 +52,64 @@ function App() {
         let allClubsStatsForSelectedYear: any;
 
         switch (year.toString()) {
-            // TODO add littlemoor stats to other places here
             case '2013':
                 clubStatsForSelectedYear = allYearClubStats['year2013'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2013'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
                 break;
             case '2014':
                 clubStatsForSelectedYear = allYearClubStats['year2014'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2014'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2014'];
                 break;
             case '2015':
                 clubStatsForSelectedYear = allYearClubStats['year2015'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2015'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2015'];
                 break;
             case '2016':
                 clubStatsForSelectedYear = allYearClubStats['year2016'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2016'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2016'];
                 break;
             case '2017':
                 clubStatsForSelectedYear = allYearClubStats['year2017'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2017'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2017'];
                 break;
             case '2018':
                 clubStatsForSelectedYear = allYearClubStats['year2018'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2018'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2018'];
                 break;
             case '2019':
                 clubStatsForSelectedYear = allYearClubStats['year2019'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2019'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2019'];
                 break;
             case '2021':
                 clubStatsForSelectedYear = allYearClubStats['year2021'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2021'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2021'];
                 break;
             case '2022':
                 clubStatsForSelectedYear = allYearClubStats['year2022'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2022'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2022'];
                 break;
             case '2023':
                 clubStatsForSelectedYear = allYearClubStats['year2023'];
+                littlemoorStatsForSelectedYear =
+                    allYearLittlemoorStats['year2023'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
                 break;
             case '2024':
@@ -106,6 +125,7 @@ function App() {
                     allYearAllClubsStats[`year${currentYear}`];
                 break;
         }
+
         setYearToDisplay(year.toString());
         setClubStats(clubStatsForSelectedYear);
         setLittlemoorStats(littlemoorStatsForSelectedYear);

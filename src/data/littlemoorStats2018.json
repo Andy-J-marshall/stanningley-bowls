@@ -1,0 +1,132 @@
+{
+    "playerResults": {
+        "andy marshall": {
+            "totalAgg": 1012,
+            "totalAggAgainst": 655,
+            "availableAgg": 1039,
+            "availablePairsAgg": 115,
+            "availableHomeAgg": 451,
+            "availableAwayAgg": 420,
+            "availablePairsHomeAgg": 94,
+            "availablePairsAwayAgg": 21,
+            "totalPairsAgg": 115,
+            "totalPairsAggAgainst": 56,
+            "totalHomeAgg": 450,
+            "totalHomeAggAgainst": 268,
+            "totalPairsHomeAgg": 94,
+            "totalPairsHomeAggAgainst": 48,
+            "totalAwayAgg": 408,
+            "totalAwayAggAgainst": 269,
+            "totalPairsAwayAgg": 21,
+            "totalPairsAwayAggAgainst": 8,
+            "homeWins": 20,
+            "homeLosses": 1,
+            "awayWins": 17,
+            "awayLosses": 3,
+            "cupWins": 6,
+            "cupLosses": 2,
+            "pairWins": 5,
+            "pairLosses": 0,
+            "pairHomeWins": 4,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 1,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 49,
+            "results": [
+                "andy marshall 21 - 20 tyler patrick",
+                "andy marshall 21 - 6 phil hatch",
+                "andy marshall & tracey marshall 21 - 8 alfie hutchinson & lucas waite",
+                "andy marshall 20 - 21 g hodder",
+                "andy marshall & alyssa randell 21 - 8 harvey lockwood & graham gaunt",
+                "andy marshall & alyssa randell 21 - 9 trevor hawkin & mick bagshaw",
+                "andy marshall 21 - 20 dennis walters",
+                "andy marshall 21 - 15 ian doughty",
+                "andy marshall 21 - 3 stephen morris",
+                "andy marshall 21 - 19 george ramsden",
+                "andy marshall 21 - 7 mick galley",
+                "andy marshall 21 - 11 brian scholes",
+                "andy marshall 21 - 20 jim jordan",
+                "andy marshall 21 - 8 oliver devaney",
+                "andy marshall 21 - 10 mick hall",
+                "andy marshall 21 - 16 maveen tomlinson",
+                "andy marshall 21 - 12 alan wood",
+                "andy marshall 21 - 9 andrew grunwell",
+                "andy marshall 21 - 11 frank lindsay",
+                "andy marshall 21 - 20 steven jones",
+                "andy marshall 21 - 20 stuart birch",
+                "andy marshall 21 - 4 dave lyons",
+                "andy marshall 21 - 17 david clarke",
+                "andy marshall 21 - 2 pat prosser",
+                "andy marshall 14 - 21 darren cookson",
+                "andy marshall 17 - 21 mick hall",
+                "andy marshall & nicola bona 26 - 13 barbara harrison & keith powell",
+                "andy marshall & tracey marshall 26 - 18 graham hogg & allan sample",
+                "andy marshall 21 - 12 john lister",
+                "andy marshall 21 - 16 daphne scott",
+                "andy marshall 21 - 16 martin huxley",
+                "andy marshall 21 - 11 joe adams",
+                "andy marshall 21 - 5 alan goodall",
+                "andy marshall 20 - 21 alex perry",
+                "andy marshall 21 - 13 john hindle",
+                "andy marshall 21 - 15 paul shackleton",
+                "andy marshall 21 - 14 malcolm crowson",
+                "andy marshall 21 - 17 graham gaunt",
+                "andy marshall 21 - 5 mark rastrick",
+                "andy marshall 14 - 21 john binns",
+                "andy marshall 14 - 21 mark rastrick",
+                "andy marshall 21 - 13 michael stott",
+                "andy marshall 21 - 9 alan goodall",
+                "andy marshall 21 - 3 jason ream",
+                "andy marshall 21 - 17 jason potter",
+                "andy marshall 21 - 7 jeff blackburn",
+                "andy marshall 21 - 20 paul shackleton",
+                "andy marshall 21 - 17 michael stott",
+                "andy marshall 21 - 13 paul hatch"
+            ],
+            "monday bradford": {
+                "games": 6,
+                "wins": 5,
+                "aggDiff": 53
+            },
+            "tuesday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "tuesday leeds": {
+                "games": 20,
+                "wins": 18,
+                "aggDiff": 143
+            },
+            "wednesday half holiday leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 2,
+                "wins": 2,
+                "aggDiff": 21
+            },
+            "thursday vets leeds": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 21,
+                "wins": 18,
+                "aggDiff": 140
+            },
+            "saturday leeds (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        }
+    },
+    "lastUpdated": "01/12/2024",
+    "statsYear": "2018"
+}
