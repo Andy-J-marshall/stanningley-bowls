@@ -47,20 +47,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [teamNames, setTeamNames] = useState(
         returnTeamNamesWithGames(clubStats?.playerResults)
     );
-
-    // Find list of players for current year
-    // TODO also use state for this?
-    const players = Object.keys(allClubsStats?.playerResults).sort();
-    const playerSearchNameArray = players.map((p) => p.toUpperCase());
-
-    // Find list of players for all years
-    const allPlayersSet = new Set<string>();
-    allYearsStatsToUseArray.forEach((yearStats) => {
-        Object.keys(yearStats.playerResults).forEach((playerName) => {
-            allPlayersSet.add(playerName.toUpperCase());
-        });
-    });
-    const allPlayers = Array.from(allPlayersSet).sort();
+    const [players, setPlayers] = useState(['']);
 
     const yearInTitle =
         new Date().getFullYear() !== Number(clubStats.statsYear) &&
@@ -87,8 +74,15 @@ function PlayerStats(props: PlayerStatsProps) {
             setTeamNames(
                 returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
             );
+
+            const playerListAllYears = allYearsStatsToUseArray.flatMap(
+                (yearStats) => Object.keys(yearStats.playerResults)
+            );
+            setPlayers(Array.from(new Set(playerListAllYears)).sort());
         } else {
             setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
+
+            setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         }
     }, [
         clubStats,
@@ -239,9 +233,7 @@ function PlayerStats(props: PlayerStatsProps) {
         <div id="player-stat">
             <h1>{yearInTitle} player stats</h1>
             <Search
-                searchList={
-                    showStatsSinceStart ? allPlayers : playerSearchNameArray
-                }
+                searchList={players}
                 value={value}
                 searchedName={searchedPlayerName}
                 handleChangeCallback={handleSearchChange}
