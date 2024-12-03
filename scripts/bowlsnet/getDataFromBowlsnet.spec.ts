@@ -50,11 +50,11 @@ const leagues = [
         url: '/Leeds-Sat',
     },
     {
-        day: 'Tuesday Mirfield',
+        day: 'Mirfield',
         url: '/Mirfield',
     },
     {
-        day: 'Wednesday Spen Valley',
+        day: 'Spen Valley',
         url: '/WestRiding',
     },
     {
@@ -103,7 +103,7 @@ const leagues = [
     //     url: '/AW-WedSingles',
     // },
     // {
-    //     day: 'Saturday Barkston Ash',
+    //     day: 'Barkston Ash',
     //     url: '/BarkstonAsh',
     // },
     // {
