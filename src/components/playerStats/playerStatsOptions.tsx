@@ -54,7 +54,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     function selectSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
-            setAllClubsToggle(false);
             teamSpecificCallback('');
             setDisableOtherOptions(false);
             setTeamDropdownTitle(defaultTeamDropdownTitle);
