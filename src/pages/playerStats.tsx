@@ -29,14 +29,11 @@ function PlayerStats(props: PlayerStatsProps) {
     const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
     const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
 
-    const { playerResults } = clubStats;
-    const allClubsPlayerResults = allClubsStats.playerResults;
-
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
     const [showClubStats, setShowClubStats] = useState(true);
-    const [statsToUse, setStatsToUse] = useState(playerResults);
+    const [statsToUse, setStatsToUse] = useState(clubStats?.playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
@@ -47,9 +44,13 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showHomeOnlyBool, setShowHomeOnlyBool] = useState(false);
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
+    const [teamNames, setTeamNames] = useState(
+        returnTeamNamesWithGames(clubStats?.playerResults)
+    );
 
     // Find list of players for current year
-    const players = Object.keys(allClubsPlayerResults).sort();
+    // TODO also use state for this?
+    const players = Object.keys(allClubsStats?.playerResults).sort();
     const playerSearchNameArray = players.map((p) => p.toUpperCase());
 
     // Find list of players for all years
@@ -60,12 +61,6 @@ function PlayerStats(props: PlayerStatsProps) {
         });
     });
     const allPlayers = Array.from(allPlayersSet).sort();
-
-    // Find list of teams names used in the stats
-    const teamNames = returnTeamNamesWithGames(playerResults);
-    const teamNamesAllYears = returnTeamNamesWithGamesForAllYears(
-        clubStatsForEveryYearArray
-    );
 
     const yearInTitle =
         new Date().getFullYear() !== Number(clubStats.statsYear) &&
@@ -81,13 +76,27 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         if (showClubStats) {
-            setStatsToUse(playerResults);
+            setStatsToUse(clubStats?.playerResults);
             setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
         } else {
-            setStatsToUse(allClubsPlayerResults);
+            setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
-    });
+
+        if (showStatsSinceStart) {
+            setTeamNames(
+                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
+            );
+        } else {
+            setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
+        }
+    }, [
+        clubStats,
+        clubStatsForEveryYearArray,
+        showClubStats,
+        showStatsSinceStart,
+        loaded,
+    ]);
 
     function scrollToBottom() {
         setTimeout(() => {
@@ -104,9 +113,9 @@ function PlayerStats(props: PlayerStatsProps) {
     function allClubsStatsCallback(showBool: boolean) {
         setShowClubStats(!showBool);
         if (showBool) {
-            setStatsToUse(allClubsPlayerResults);
+            setStatsToUse(allClubsStats?.playerResults);
         } else {
-            setStatsToUse(playerResults);
+            setStatsToUse(clubStats?.playerResults);
         }
 
         scrollToBottom();
@@ -259,7 +268,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
-                teamNames={showStatsSinceStart ? teamNamesAllYears : teamNames}
+                teamNames={teamNames}
             />
 
             <p className="footnote">Last Updated: {clubStats.lastUpdated}</p>
