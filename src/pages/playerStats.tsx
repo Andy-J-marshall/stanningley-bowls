@@ -103,7 +103,7 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             setYearInTitle(
                 new Date().getFullYear() !== Number(clubStats.statsYear)
-                    ? clubStats.statsYear // TODO here
+                    ? allClubsStats.statsYear
                     : ''
             );
 
@@ -307,7 +307,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyAwayCallback={onlyAwayCallback}
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
-                teamNames={teamNames}
+                teamNames={teamNames} // TODO also need to amend list of team names that are classed as valid i.e. in the config file?
                 clubNames={config.clubsForPlayersStats}
             />
 
