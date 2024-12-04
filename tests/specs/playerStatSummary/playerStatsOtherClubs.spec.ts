@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
 
-test.describe('Player stats - Littlemoor', () => {
+test.describe('Player stats - Other Clubs', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
     });
