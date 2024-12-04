@@ -256,5 +256,6 @@ test.describe('Player summary stats - filters', () => {
         await playerStatOptionsPage.selectAllClubsStatsSwitch();
 
         await expect(playerStatOptionsPage.teamSelectDropdown).toBeDisabled();
+        await expect(playerStatOptionsPage.clubSelectDropdown).toBeDisabled();
     });
 });
