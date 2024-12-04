@@ -1,6 +1,5 @@
 import playerStatsHelper
 
-# Team info (lowercase)
 teamNames = [
     "Stanningley",
     "Stanningley A",
@@ -115,7 +114,7 @@ traitorPlayers = {
     "Saturday Leeds": ["clifford brogie", "neil porter"],
 }
 
-# Other leagues that players play in for other teams (lowercase)
+# Other leagues that players play in for other teams
 otherLeagues = [
     "Mirfield",
     "Spen Valley",
