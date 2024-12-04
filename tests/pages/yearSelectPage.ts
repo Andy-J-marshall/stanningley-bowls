@@ -17,7 +17,7 @@ export class YearSelectPage {
         this.year2021 = page.getByRole('button', { name: '2021' });
         this.year2022 = page.getByRole('button', { name: '2022' });
         this.year2023 = page.getByRole('button', { name: '2023' });
-        this.allYears = page.locator('.dropdown-menu .dropdown-item');
+        this.allYears = page.locator('#full-stat-years-options >.dropdown-item');
     }
 
     async select2021Year() {
