@@ -1,4 +1,5 @@
 import clubDetails # TODO split these things into a separate file?
+# allDays, players(?)
 from sanityChecks import checkPlayerStats
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
 from statsHelper import (
@@ -83,6 +84,7 @@ for league in clubDetails.allDays:
                     if not cupGameBool:
                         awayGame = True
 
+                # TODO here : clubDetails.teamsTracking
                 # Checks player plays for expected team
                 correctPlayerFound = checkCorrectTeamForPlayer(
                     allRowsInFile,
@@ -94,6 +96,7 @@ for league in clubDetails.allDays:
                     clubDetails,
                 )
 
+                # TODO deduplicateNames
                 # Find result details
                 if correctPlayerFound:
                     calculatePlayerStats(
@@ -121,7 +124,7 @@ dataToExport = {
 filename = f"src/data/allClubsStats{year}.json"
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, clubDetails.players, filename, False, clubDetails)
+checkPlayerStats(playerStats, filename, False, clubDetails)
 
 # Save the file
 saveFile(filename, dataToExport)

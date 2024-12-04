@@ -281,7 +281,7 @@ filename = f"src/data/{clubDetails.displayTeamName.lower()}Stats{year}.json"
 
 # Sanity checks on the data
 checksTeamStats(allTeamResults, filename, clubDetails)
-checkPlayerStats(playerStats, clubDetails.players, filename, True, clubDetails)
+checkPlayerStats(playerStats, filename, True, clubDetails)
 
 # Save the file
 saveFile(filename, dataToExport)

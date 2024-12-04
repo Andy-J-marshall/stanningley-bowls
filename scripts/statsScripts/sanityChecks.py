@@ -4,14 +4,14 @@ import playerStatsHelper
 import statsHelper
 
 
-def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool, clubDetails):
+def checkPlayerStats(playerStats, filePath, checkTeamStatsBool, clubDetails):
     print("Running sanity checks on player stats")
     print("------------")
 
-    if len(players) != len(clubDetails.players):
+    if len(clubDetails.players) != len(clubDetails.players):
         raise Exception("Missing players from player stats")
 
-    for p in players:
+    for p in clubDetails.players:
         player = playerStatsHelper.standardiseName(p)
         stats = playerStats[player]
 
