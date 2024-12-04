@@ -115,4 +115,23 @@ test.describe('Player stats - Littlemoor', () => {
         await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
         await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
+
+    test('Switching clubs reset the team dropdown', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await expect(playerSummaryPage.playerRows).toHaveCount(15);
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await expect(playerSummaryPage.playerRows).toHaveCount(7);
+        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
+        await expect(playerSummaryPage.playerRows).toHaveCount(1);
+
+
+        await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
+    });
 });
