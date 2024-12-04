@@ -198,6 +198,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
+                            {/* TODO improve layout */}
                             <Col xs={12} md={3}>
                                 <h6>CLUBS & TEAMS</h6>
                                 <DropdownButton
