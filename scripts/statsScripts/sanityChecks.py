@@ -8,7 +8,7 @@ def checkPlayerStats(playerStats, filePath, checkTeamStatsBool, clubDetails):
     print("Running sanity checks on player stats")
     print("------------")
 
-    if len(clubDetails.players) != len(clubDetails.players):
+    if len(clubDetails.players) == 0:
         raise Exception("Missing players from player stats")
 
     for p in clubDetails.players:
