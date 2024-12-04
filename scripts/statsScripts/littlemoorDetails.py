@@ -57,9 +57,9 @@ players = [
     "stewart watson",
     "paul bowes",
     "martin fulton",
+    "phil thornton",
     "john armitage",
     "jim moorin",
-    "phil thornton",
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function

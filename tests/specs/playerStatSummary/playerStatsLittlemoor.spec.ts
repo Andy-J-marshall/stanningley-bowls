@@ -78,16 +78,17 @@ test.describe('Player stats - Littlemoor', () => {
         await playerSummaryPage.validateSummaryStats(16, 10, 63, 2.63);
     });
 
-    // TODO not possible yet. Maybe try Pudsey stats? Or Jack Roberts?
-    // test('Summary of Dave Hudson stats since 2013 are correct', async ({
-    //     playerSummaryPage,
-    //     playerStatOptionsPage,
-    // }) => {
-    //     playerSummaryPage.setPlayerToFind('dave hudson');
+    test('Summary of Jack Roberts stats since 2013 are correct', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+    }) => {
+        playerSummaryPage.setPlayerToFind('jack roberts');
 
-    //     await playerStatOptionsPage.selectAllYearsSwitch();
-    //     await playerSummaryPage.validateSummaryStats(385, 147, 38, -2.34);
-    // });
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await playerStatOptionsPage.selectAllYearsSwitch();
+
+        await playerSummaryPage.validateSummaryStats(110, 40, 36, -2.06);
+    });
 
     test('All players appear by default', async ({
         playerSummaryPage,
