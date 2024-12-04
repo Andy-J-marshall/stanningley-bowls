@@ -6,6 +6,7 @@ import statsHelper
 
 def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool, clubDetails):
     print("Running sanity checks on player stats")
+    print("------------")
 
     if len(players) != len(clubDetails.players):
         raise Exception("Missing players from player stats")
@@ -292,9 +293,13 @@ def checkPlayerTeamStats(updatedStats, clubDetails):
 
 def checksTeamStats(allTeamResults, filePath, clubDetails):
     print("Running sanity checks on team stats")
+    print("------------")
 
     # Check values have increased or stayed the same compared to the previous stats in the file
     checkTeamStatsValuesIncreased(allTeamResults, filePath, clubDetails)
+
+    # Check the A and B teams are not mixed up
+    checkTeamNotProcessedTwice(allTeamResults)
 
     for team in allTeamResults:
         dayForTeam = team["day"]
@@ -395,13 +400,31 @@ def checkTeamStatsValuesIncreased(updatedStats, filePath, clubDetails):
                 raise Exception(f"fewer results for {team["day"]} than before")
 
 
+def checkTeamNotProcessedTwice(allTeamResults):
+    seenTeamStats = set()
+    for team in allTeamResults:
+        if team.get("totalGamesPlayed") < 2:
+            # Skip checks for teams with less than 2 games to avoid false positives
+            continue
+        statsToCheck = (
+            team.get("agg"),
+            team.get("opponentAgg"),
+            team.get("wins"),
+            team.get("losses"),
+            team.get("draws"),
+        )
+        if statsToCheck in seenTeamStats:
+            raise Exception(f"Has the team been processed twice? {team.get("day")}")
+        seenTeamStats.add(statsToCheck)
+    print("No duplicate agg values found")
+
+
 def checkForDuplicateResults(results, name):
     potentialDuplicatesFound = len(results) != len(set(results))
     if potentialDuplicatesFound:
-        print("----------------")
-        print("WARNING: check for potential duplicate results for player: " + name)
+        print("WARNING: check for potential duplicate results for: " + name)
         print(results)
-        print("----------------")
+        print("------------")
 
 
 def checkTeamName(team, teamNameUsedForLeague, expectedTeamDisplayName):
