@@ -1,13 +1,24 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import littlemoorStats from '../../../src/data/littlemoorStats2023.json';
-import { findTotalNumberOfPlayersForYears } from '../../utils/statsHelper';
-
-const playerCount = findTotalNumberOfPlayersForYears(littlemoorStats);
 
 test.describe('Player stats - Littlemoor', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
         await playerSummaryPage.goto();
+    });
+
+    test('Detailed stats for John Armitage stats are correct', async ({
+        playerSearchPage,
+        playerStatOptionsPage,
+        playerStatsOverviewPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+
+        await playerSearchPage.searchForPlayer('john armitage');
+
+        await playerStatsOverviewPage.validateOverviewStats(57, 43, 5.21);
+        await expect(playerStatsOverviewPage.biggestWin).toHaveText('21 - 3');
     });
 
     test('Summary of John Armitage stats are correct', async ({
@@ -54,7 +65,7 @@ test.describe('Player stats - Littlemoor', () => {
         await yearSelectPage.select2014Year();
         await playerStatOptionsPage.selectTeamFromDropdown('Mirfield (B)');
 
-        await expect(playerSummaryPage.playerRows).toHaveCount(2);
+        await expect(playerSummaryPage.playerRows).toHaveCount(3);
         await playerSummaryPage.validateSummaryStats(18, 11, 61, 1.83);
     });
 
@@ -90,13 +101,18 @@ test.describe('Player stats - Littlemoor', () => {
         await playerSummaryPage.validateSummaryStats(110, 40, 36, -2.06);
     });
 
-    test('All players appear by default', async ({
+    test('Can switch between different club stats', async ({
         playerSummaryPage,
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
         await yearSelectPage.select2023Year();
-        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await expect(playerSummaryPage.playerRows).toHaveCount(7);
+
+        await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 });

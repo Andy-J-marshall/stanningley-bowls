@@ -1,9 +1,5 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import clubStats from '../../../src/data/stanningleyStats2023.json';
-import { findTotalNumberOfPlayersForYears } from '../../utils/statsHelper';
-
-const playerCount = findTotalNumberOfPlayersForYears(clubStats);
 
 test.describe('Player stats - search', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -22,7 +18,7 @@ test.describe('Player stats - search', () => {
         await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
 
         await playerSearchPage.searchForPlayer('Show All');
-        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 
     test('Clicking back to summary button returns all stats', async ({
@@ -34,7 +30,7 @@ test.describe('Player stats - search', () => {
         await playerSearchPage.searchForPlayer('Alyssa Randell');
 
         await playerSearchPage.clickBackToSummary();
-        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 
     test('Searching for player who has played no games that year returns message', async ({

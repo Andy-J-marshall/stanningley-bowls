@@ -1,9 +1,5 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import clubStats from '../../../src/data/stanningleyStats2023.json';
-import { findTotalNumberOfPlayersForYears } from '../../utils/statsHelper';
-
-const playerCount = findTotalNumberOfPlayersForYears(clubStats);
 
 test.describe('Player summary stats', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -78,7 +74,7 @@ test.describe('Player summary stats', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
-        await expect(playerSummaryPage.playerRows).toHaveCount(playerCount);
+        await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 
     test('No players are returned if filters exclude everyone', async ({
