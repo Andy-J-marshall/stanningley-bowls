@@ -17,7 +17,7 @@ def saveFile(filename, dataToExport):
     with open(filename, "w") as jsonFile:
         json.dump(dataToExport, jsonFile, indent=4)
         print(filename + " created")
-        print("------")
+        print('------------')
         jsonFile.close()
 
 
