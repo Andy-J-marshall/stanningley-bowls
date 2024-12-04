@@ -137,15 +137,23 @@ A number of manual changes are required at the end of each calendar year.
 
 1. Update `clubDetails.py` and `littlemoorDetails.py`:
 
-    - Update the player information i.e. `players`, `traitorPlayers`, `duplicatePlayerNames`, and `deduplicateNames`
-    - Update the team information i.e. `teamDays`, `otherTeams`, and `otherLeagues` (any leagues added to `teamDays` will need to be removed from here)
+    - Update the player information:
+        - `players` - players who play for the club
+        - `traitorPlayers` - players who play for other clubs on certain days
+        - `duplicatePlayerNames` - alternative spellings for player names
     - If adding or removing a second team, updated the following:
         - `teamNames` - Add the lowercase team names for the B team
         - `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`. If there is no longer a B team, remove any suffixes
 
-2. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
-3. Check the scripts still work for the new season. The Bowlsnet website or text reports may have changed which could cause the scripts to fail
-4. Consider whether to add league reports for any non-tracked leagues for the previous season e.g. Barkston Ash, AireWharfe Saturday. This might make it easier in the future to track these leagues if a new player joins who has played in them
+2. Update `playerDetails.py`:
+
+    - Add names from `duplicatePlayerNames` above to `deduplicateNames` and assign the correct name
+    - Update `otherTeams` with any other club members plays for
+    - Update `allDays` for any other leagues that need tracking
+
+3. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
+4. Check the scripts still work for the new season. The Bowlsnet website or text reports may have changed which could cause the scripts to fail
+5. Consider whether to add league reports for any non-tracked leagues for the previous season e.g. Barkston Ash, AireWharfe Saturday. This might make it easier in the future to track these leagues if a new player joins who has played in them
 
 ## Web application
 

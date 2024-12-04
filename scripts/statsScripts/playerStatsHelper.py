@@ -1,5 +1,6 @@
 import re
 import statsHelper
+import playerDetails
 
 
 def returnListOfPlayerStats(days, includeTeamData, players):
@@ -69,7 +70,6 @@ def calculatePlayerStats(
     cupAway,
     cupGameBool,
     includeTeamStatsBool,
-    clubDetails,
 ):
     text = allRowsInFile[rowNumber]
     text = sanitisePlayerNames(text)
@@ -113,12 +113,12 @@ def calculatePlayerStats(
             pairsPartner = pairsDetails["pairsPartner"]
         if pairsDetails["secondOpponent"] != "":
             secondOpponent = pairsDetails["secondOpponent"]
-        pairsPartner = clubDetails.deduplicateNames(pairsPartner)
-        secondOpponent = clubDetails.deduplicateNames(secondOpponent)
+        pairsPartner = playerDetails.deduplicateNames(pairsPartner)
+        secondOpponent = playerDetails.deduplicateNames(secondOpponent)
 
     # Format player names
-    playerName = clubDetails.deduplicateNames(playerName)
-    opponentsName = clubDetails.deduplicateNames(opponentsName)
+    playerName = playerDetails.deduplicateNames(playerName)
+    opponentsName = playerDetails.deduplicateNames(opponentsName)
 
     # Store player stats
     playerNameForResult = playerName
@@ -237,10 +237,10 @@ def checkValidPlayerOnDay(
     teamNameUsedForLeague,
     league,
     allRowsInFile,
-    clubDetails,
+    traitorPlayers,
 ):
-    playerName = clubDetails.deduplicateNames(playerName)
-    if playerName in clubDetails.traitorPlayers[league]:
+    playerName = playerDetails.deduplicateNames(playerName)
+    if playerName in traitorPlayers[league]:
         return False
 
     for i in range(0, 13):
@@ -261,7 +261,12 @@ def checkValidPlayerOnDay(
 
 
 def returnHomeAndAwayPlayerRowsForTeam(
-    allRowsInFile, teamNameUsedForLeague, league, clubDetails
+    allRowsInFile,
+    teamNameUsedForLeague,
+    league,
+    players,
+    duplicatePlayerNames,
+    traitorPlayers,
 ):
     homePlayerRow = []
     awayPlayerRow = []
@@ -273,12 +278,13 @@ def returnHomeAndAwayPlayerRowsForTeam(
             )
             if len(findPossiblePlayerNames) > 1:
                 possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
-                possiblePlayerNameHome = clubDetails.deduplicateNames(
+                possiblePlayerNameHome = playerDetails.deduplicateNames(
                     possiblePlayerNameHome
                 ).lower()
+
                 if (
-                    possiblePlayerNameHome in clubDetails.players
-                    or possiblePlayerNameHome in clubDetails.duplicatePlayerNames
+                    possiblePlayerNameHome in players
+                    or possiblePlayerNameHome in duplicatePlayerNames
                 ):
                     validPlayer = checkValidPlayerOnDay(
                         possiblePlayerNameHome,
@@ -287,18 +293,19 @@ def returnHomeAndAwayPlayerRowsForTeam(
                         teamNameUsedForLeague,
                         league,
                         allRowsInFile,
-                        clubDetails,
+                        traitorPlayers,
                     )
                     if validPlayer:
                         homePlayerRow.append(rowNumber)
 
                 possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
-                possiblePlayerNameAway = clubDetails.deduplicateNames(
+                possiblePlayerNameAway = playerDetails.deduplicateNames(
                     possiblePlayerNameAway
                 ).lower()
+
                 if (
-                    possiblePlayerNameAway in clubDetails.players
-                    or possiblePlayerNameAway in clubDetails.duplicatePlayerNames
+                    possiblePlayerNameAway in players
+                    or possiblePlayerNameAway in duplicatePlayerNames
                 ):
                     validPlayer = checkValidPlayerOnDay(
                         possiblePlayerNameAway,
@@ -307,7 +314,7 @@ def returnHomeAndAwayPlayerRowsForTeam(
                         teamNameUsedForLeague,
                         league,
                         allRowsInFile,
-                        clubDetails,
+                        traitorPlayers,
                     )
                     if validPlayer:
                         awayPlayerRow.append(rowNumber)
@@ -316,7 +323,9 @@ def returnHomeAndAwayPlayerRowsForTeam(
     return homePlayerRow, awayPlayerRow, combinedRows
 
 
-def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile, clubDetails):
+def returnHomeAndAwayPlayerRowsForAllTeams(
+    allRowsInFile, players, duplicatePlayerNames
+):
     homePlayerRow = []
     awayPlayerRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -330,23 +339,23 @@ def returnHomeAndAwayPlayerRowsForAllTeams(allRowsInFile, clubDetails):
                 possiblePlayerNameHome = str(findPossiblePlayerNames[0]).strip()
                 possiblePlayerNameHome = standardiseName(possiblePlayerNameHome)
                 if (
-                    possiblePlayerNameHome in clubDetails.players
-                    or possiblePlayerNameHome in clubDetails.duplicatePlayerNames
+                    possiblePlayerNameHome in players
+                    or possiblePlayerNameHome in duplicatePlayerNames
                 ):
                     homePlayerRow.append(rowNumber)
 
                 possiblePlayerNameAway = str(findPossiblePlayerNames[1]).strip()
                 possiblePlayerNameAway = standardiseName(possiblePlayerNameAway)
                 if (
-                    possiblePlayerNameAway in clubDetails.players
-                    or possiblePlayerNameAway in clubDetails.duplicatePlayerNames
+                    possiblePlayerNameAway in players
+                    or possiblePlayerNameAway in duplicatePlayerNames
                 ):
                     awayPlayerRow.append(rowNumber)
     return homePlayerRow, awayPlayerRow
 
 
 def checkCorrectTeamForPlayer(
-    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway, clubDetails
+    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
 ):
     for i in range(0, 13):
         possibleTeamText = allRowsInFile[rowNumber - i]
@@ -355,7 +364,7 @@ def checkCorrectTeamForPlayer(
             possibleTeamText = possibleTeamText.lower().strip()
 
             # Checks against full team name first
-            for team in clubDetails.teamsTracking:
+            for team in playerDetails.teamsTracking:
                 team = team.lower()
                 if team in possibleTeamText:
                     if (homeGame or cupHome) and possibleTeamText.startswith(team):

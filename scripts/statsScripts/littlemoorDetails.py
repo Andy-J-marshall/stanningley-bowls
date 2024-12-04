@@ -1,5 +1,3 @@
-import playerStatsHelper
-
 teamNames = [
     "Littlemoor",
     "Littlemoor A",
@@ -71,23 +69,6 @@ duplicatePlayerNames = [
     "philip thornton",
 ]
 
-
-# Add alternative names for players (lowercase)
-def deduplicateNames(name):
-    name = playerStatsHelper.standardiseName(name)
-    if name == "andrew marshall":
-        name = "andy marshall"
-    if name == "stuart watson":
-        name = "stewart watson"
-    if name == "james moorin":
-        name = "jim moorin"
-    if name == "philip thornton":
-        name = "phil thornton"
-    if name == "phillip thornton":
-        name = "phil thornton"
-    return name
-
-
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
     "Monday Bradford": ["john stocks"],
@@ -108,27 +89,3 @@ traitorPlayers = {
         "paul wilczynski",
     ],
 }
-
-# Other leagues that players play in for other teams (lowercase)
-otherLeagues = [
-    "Tuesday AireWharfe",
-    "Monday Combined Leeds",
-    "Tuesday Vets Leeds",
-    "Tuesday Leeds",
-    "Wednesday Half Holiday Leeds",
-    "Wednesday Pairs AireWharfe",
-    "Thursday Vets Leeds",
-    "Saturday Leeds",
-]
-
-# Other teams that players play for (lowercase)
-otherTeams = [
-    "stanningley",
-    "pudsey",
-    "farsley",
-    "new wortley",
-    "wibsey",
-]
-
-allDays = teamDays + otherLeagues
-teamsTracking = teamNames + otherTeams

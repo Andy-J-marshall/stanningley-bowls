@@ -91,7 +91,7 @@ def isCupGame(cupRow):
     return False
 
 
-def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, clubDetails):
+def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, displayTeamName):
     homeRow = []
     awayRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -104,7 +104,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, clubDetail
             aTeamPlayingBTeamBool = False
             if (
                 not hostedCupGame
-                and row.lower().count(clubDetails.displayTeamName.lower()) > 1
+                and row.lower().count(displayTeamName.lower()) > 1
             ):
                 aTeamPlayingBTeamBool = True
                 teamLower = teamNameUsedForLeague.lower()
@@ -130,7 +130,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, clubDetail
             ):
                 words = row.strip().lower().split()
                 firstWord = words[0].lower()
-                if firstWord == clubDetails.displayTeamName.lower():
+                if firstWord == displayTeamName.lower():
                     homeRow.append(rowNumber)
                 else:
                     awayRow.append(rowNumber)

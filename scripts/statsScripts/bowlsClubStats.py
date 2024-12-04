@@ -42,8 +42,7 @@ args = parser.parse_args()
 if args.club == "littlemoor":
     import littlemoorDetails as clubDetails
 elif args.club == "stanningley":
-    import clubDetails as clubDetails
-
+    import clubDetails
 
 playerStats = returnListOfPlayerStats(clubDetails.teamDays, True, clubDetails.players)
 teamsProcessed = []
@@ -70,7 +69,7 @@ for team in clubDetails.teamDays:
 
         # Find team name used by team in this league
         teamNameUsedForLeague, teamNameToUse = returnTeamNameForLeague(
-            allRowsInFile, team, clubDetails
+            allRowsInFile, team, clubDetails.displayTeamName, clubDetails.teamNames
         )
 
         checkTeamName(team, teamNameUsedForLeague, clubDetails.displayTeamName)
@@ -81,7 +80,7 @@ for team in clubDetails.teamDays:
         #### TEAM STATS ####
         # Find team's home and away games
         homeRows, awayRows = findHomeAndAwayTeamGameRows(
-            allRowsInFile, teamNameUsedForLeague, clubDetails
+            allRowsInFile, teamNameUsedForLeague, clubDetails.displayTeamName
         )
 
         # Find team results and scores
@@ -221,7 +220,12 @@ for team in clubDetails.teamDays:
         # Find rows in spreadsheet for players' games
         homePlayerRows, awayPlayerRows, combinedRows = (
             returnHomeAndAwayPlayerRowsForTeam(
-                allRowsInFile, teamNameUsedForLeague, league, clubDetails
+                allRowsInFile,
+                teamNameUsedForLeague,
+                league,
+                clubDetails.players,
+                clubDetails.duplicatePlayerNames,
+                clubDetails.traitorPlayers,
             )
         )
 
@@ -262,7 +266,6 @@ for team in clubDetails.teamDays:
                 cupAway,
                 cupGameBool,
                 True,
-                clubDetails,
             )
 
             validatePlayerNotProcessedTwice(rowNumber, homePlayerRows, awayPlayerRows)
@@ -280,8 +283,8 @@ dataToExport = {
 filename = f"src/data/{clubDetails.displayTeamName.lower()}Stats{year}.json"
 
 # Sanity checks on the data
-checksTeamStats(allTeamResults, filename, clubDetails)
-checkPlayerStats(playerStats, filename, True, clubDetails)
+checksTeamStats(allTeamResults, filename, clubDetails.teamDays)
+checkPlayerStats(playerStats, filename, True, clubDetails.players, clubDetails.teamDays)
 
 # Save the file
 saveFile(filename, dataToExport)

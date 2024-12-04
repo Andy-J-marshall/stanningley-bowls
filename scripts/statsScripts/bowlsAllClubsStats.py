@@ -1,11 +1,7 @@
-import clubDetails # TODO split these things into a separate file?
-# allDays, players(?)
+import playerDetails
 from sanityChecks import checkPlayerStats
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
-from statsHelper import (
-    findCupGameRows,
-    removeSuffixFromTeamName,
-)
+from statsHelper import findCupGameRows
 from playerStatsHelper import (
     returnListOfPlayerStats,
     calculatePlayerStats,
@@ -14,18 +10,13 @@ from playerStatsHelper import (
 )
 
 
-playerStats = returnListOfPlayerStats(clubDetails.allDays, False, clubDetails.players)
-leaguesProcessed = []
+playerStats = returnListOfPlayerStats(
+    playerDetails.allDays, False, playerDetails.players
+)
 
 print("UPDATING ALL PLAYER STATS")
 
-for league in clubDetails.allDays:
-    # To prevent duplication
-    league = removeSuffixFromTeamName(league)
-    if league in leaguesProcessed:
-        continue
-    leaguesProcessed.append(league)
-
+for league in playerDetails.allDays:
     # Goes through each sheet in turn
     with open(f"bowlsnetReports/{year}/{league}.txt", "r") as file:
         print("Updating Stats: " + league)
@@ -39,7 +30,7 @@ for league in clubDetails.allDays:
 
         # Find rows in spreadsheet for players' games
         homePlayerRow, awayPlayerRow = returnHomeAndAwayPlayerRowsForAllTeams(
-            allRowsInFile, clubDetails
+            allRowsInFile, playerDetails.players, playerDetails.duplicatePlayerNames
         )
 
         # Find each players' results
@@ -84,7 +75,6 @@ for league in clubDetails.allDays:
                     if not cupGameBool:
                         awayGame = True
 
-                # TODO here : clubDetails.teamsTracking
                 # Checks player plays for expected team
                 correctPlayerFound = checkCorrectTeamForPlayer(
                     allRowsInFile,
@@ -93,10 +83,8 @@ for league in clubDetails.allDays:
                     awayGame,
                     cupHome,
                     cupAway,
-                    clubDetails,
                 )
 
-                # TODO deduplicateNames
                 # Find result details
                 if correctPlayerFound:
                     calculatePlayerStats(
@@ -110,7 +98,6 @@ for league in clubDetails.allDays:
                         cupAway,
                         cupGameBool,
                         False,
-                        clubDetails,
                     )
     file.close()
 
@@ -124,7 +111,7 @@ dataToExport = {
 filename = f"src/data/allClubsStats{year}.json"
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, filename, False, clubDetails)
+checkPlayerStats(playerStats, filename, False, playerDetails.players, playerDetails.allDays)
 
 # Save the file
 saveFile(filename, dataToExport)
