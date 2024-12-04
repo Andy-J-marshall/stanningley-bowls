@@ -146,14 +146,12 @@ export function findTeamStats(
     }
 
     // Find B team stats if they exist
-    if (teamData.bTeamForLeagueBool) {
-        bTeamStats = teamResults?.find((teamResult: TeamResultsStatsFile) => {
-            return (
-                teamResult.day.toLowerCase() ===
-                teamName.replace(' (a)', '') + ' (b)'
-            );
-        });
-    }
+    bTeamStats = teamResults?.find((teamResult: TeamResultsStatsFile) => {
+        return (
+            teamResult.day.toLowerCase() ===
+            teamName.replace(' (a)', '') + ' (b)'
+        );
+    });
 
     if (!bTeamStats) {
         bTeamStats = null;

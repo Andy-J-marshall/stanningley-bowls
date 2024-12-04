@@ -283,7 +283,6 @@ export interface PlayerStatsTeamsProps {
 
 export interface ConfigTeamData {
     teamNames: string[];
-    bTeamForLeagueBool: boolean;
 }
 
 export interface FullStatsFile {

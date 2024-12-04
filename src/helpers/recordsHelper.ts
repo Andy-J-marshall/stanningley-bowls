@@ -3,6 +3,7 @@ import {
     TeamRecords,
     PlayerResultsStatsFile,
     ConfigTeamData,
+    RecordStats,
 } from '../types/interfaces';
 
 export function findLeaguesAvailableInData(
@@ -261,10 +262,8 @@ export function findTeamRecords(
     }
 
     // Find B team stats if they exist
-    let bTeamRecord = null;
-    if (teamData.bTeamForLeagueBool) {
-        bTeamRecord = teamRecords[teamName.replace(' (a)', '') + ' (b)'];
-    }
+    let bTeamRecord: RecordStats | null =
+        teamRecords[teamName.replace(' (a)', '') + ' (b)'];
 
     if (!bTeamRecord) {
         bTeamRecord = null;

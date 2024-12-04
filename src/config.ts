@@ -49,7 +49,7 @@ export const config = {
         'saturday bradford',
         'saturday bradford (a)',
         'saturday bradford (b)',
-        
+
         // Other leagues
         'monday bradford',
         'monday bradford (a)',
@@ -70,34 +70,27 @@ export const config = {
     historicTeamInfo: [
         {
             teamNames: ['monday combined leeds', 'monday airewharfe'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['tuesday vets leeds'],
-            bTeamForLeagueBool: false,
         },
         {
             teamNames: ['tuesday leeds'],
-            bTeamForLeagueBool: false,
         },
         {
             teamNames: [
                 'wednesday half holiday leeds',
                 'wednesday half holiday bradford',
             ],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['wednesday pairs airewharfe'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['thursday vets leeds'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['saturday leeds', 'saturday bradford'],
-            bTeamForLeagueBool: true,
         },
     ],
 };
