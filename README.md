@@ -166,7 +166,6 @@ A number of manual changes are required at the end of each calendar year.
 6. Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`
 7. Configure the `config.ts` file with the new year's data:
 
-    - Change the `days` to include an extra key for the second team (suffixed with ' (b)')
     - Change the `historicTeamInfo` property include league data for any new teams or second teams
     - Update the `allTeamsInLeaguesSince2013` array to include an extra keys (second team teams need to be suffixed with ' (b)')
 

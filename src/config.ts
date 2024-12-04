@@ -24,16 +24,6 @@ export const config = {
         bowlingPriceOnly: '10',
         leedsCouncilFee: '45',
     },
-    days: {
-        'monday combined leeds': 'Monday Combined',
-        'tuesday vets leeds': 'Tuesday Vets',
-        'tuesday leeds': 'Tuesday',
-        'wednesday half holiday leeds': 'Wednesday Half Holiday',
-        'wednesday pairs airewharfe': 'Wednesday Pairs',
-        'thursday vets leeds': 'Thursday Vets',
-        'saturday leeds': 'Saturday',
-        'saturday leeds (b)': 'Saturday B',
-    },
     allTeamsInLeaguesSince2013: [
         // Leagues for club
         'monday combined leeds',
