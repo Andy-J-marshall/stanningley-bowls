@@ -63,14 +63,14 @@ teamDays = [
 
 # Every player (lowercase)
 players = [
-    "andy marshall",
     "alyssa randell",
+    "stuart potter",
+    "andy marshall",
+    "stewart watson",
     "paul bowes",
+    "martin fulton",
     "john armitage",
     "jim moorin",
-    "stewart watson",
-    "stuart potter",
-    "martin fulton",
     "phil thornton",
 ]
 
