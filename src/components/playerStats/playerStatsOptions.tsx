@@ -198,60 +198,62 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            {/* TODO improve layout */}
                             <Col xs={12} md={3}>
                                 <h6>CLUBS & TEAMS</h6>
-                                <DropdownButton
-                                    drop="up"
-                                    size="sm"
-                                    variant="light"
-                                    id="team-select-dropdown"
-                                    title={teamDropdownTitle}
-                                    disabled={disableTeamAndClubDropdown}
-                                >
-                                    {teamNames.map((teamName, index) => (
-                                        <Dropdown.Item
-                                            key={index}
-                                            id={'#team-option-' + index}
-                                            onClick={() =>
-                                                selectSpecificTeamStats(
-                                                    teamName
-                                                )
-                                            }
-                                        >
-                                            {formatTeamName(teamName)}
-                                        </Dropdown.Item>
-                                    ))}
-                                    <Dropdown.Divider />
-                                    <Dropdown.Item
-                                        id="#team-option-all"
-                                        onClick={() =>
-                                            selectSpecificTeamStats('')
-                                        }
+                                <InputGroup>
+                                    <DropdownButton
+                                        drop="up"
+                                        size="sm"
+                                        variant="light"
+                                        id="club-select-dropdown"
+                                        title={clubDropdownTitle}
+                                        disabled={disableTeamAndClubDropdown}
                                     >
-                                        {defaultTeamDropdownTitle}
-                                    </Dropdown.Item>
-                                </DropdownButton>
-                                <DropdownButton
-                                    drop="up"
-                                    size="sm"
-                                    variant="light"
-                                    id="team-select-dropdown"
-                                    title={clubDropdownTitle}
-                                    disabled={disableTeamAndClubDropdown}
-                                >
-                                    {clubNames.map((club, index) => (
+                                        {clubNames.map((club, index) => (
+                                            <Dropdown.Item
+                                                key={index}
+                                                id={'#club-option-' + club}
+                                                onClick={() =>
+                                                    selectClubStats(club)
+                                                }
+                                            >
+                                                {capitalizeText([club])}
+                                            </Dropdown.Item>
+                                        ))}
+                                    </DropdownButton>
+                                    <div style={{ padding: '0 0.5rem' }}></div>
+                                    <DropdownButton
+                                        drop="up"
+                                        size="sm"
+                                        variant="light"
+                                        id="team-select-dropdown"
+                                        title={teamDropdownTitle}
+                                        disabled={disableTeamAndClubDropdown}
+                                    >
+                                        {teamNames.map((teamName, index) => (
+                                            <Dropdown.Item
+                                                key={index}
+                                                id={'#team-option-' + index}
+                                                onClick={() =>
+                                                    selectSpecificTeamStats(
+                                                        teamName
+                                                    )
+                                                }
+                                            >
+                                                {formatTeamName(teamName)}
+                                            </Dropdown.Item>
+                                        ))}
+                                        <Dropdown.Divider />
                                         <Dropdown.Item
-                                            key={index}
-                                            id={'#club-option-' + club}
+                                            id="#team-option-all"
                                             onClick={() =>
-                                                selectClubStats(club)
+                                                selectSpecificTeamStats('')
                                             }
                                         >
-                                            {capitalizeText([club])}
+                                            {defaultTeamDropdownTitle}
                                         </Dropdown.Item>
-                                    ))}
-                                </DropdownButton>
+                                    </DropdownButton>
+                                </InputGroup>
                             </Col>
                             <Col xs={12} md={3}>
                                 <h6>GAME TYPES</h6>
