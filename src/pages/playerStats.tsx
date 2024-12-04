@@ -271,6 +271,8 @@ function PlayerStats(props: PlayerStatsProps) {
         );
     }
 
+    // TODO add stevie G into old stats
+    // TODO add Neil in too. Anyone else? Jack? 
     return (
         <div id="player-stat">
             <h1>{yearInTitle} player stats</h1>

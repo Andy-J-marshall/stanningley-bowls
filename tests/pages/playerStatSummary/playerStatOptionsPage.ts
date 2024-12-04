@@ -102,4 +102,11 @@ export class PlayerStatOptionsPage {
     async selectAllTeamsFromTeamDropdown() {
         await this.teamSelectDropdown.click();
     }
+
+    async selectClubFromDropdown(club: string) {
+        await this.clubSelectDropdown.click();
+        await this.page
+            .getByRole('button', { exact: true, name: club })
+            .click();
+    }
 }
