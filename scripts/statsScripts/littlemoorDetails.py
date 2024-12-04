@@ -102,13 +102,23 @@ def deduplicateNames(name):
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday Bradford": [],
+    "Monday Bradford": ["john stocks"],
     "Monday AireWharfe": ["stewart watson", "lee wider", "paul jacques"],
-    "Mirfield": [],
-    "Wednesday Half Holiday Bradford": [],
-    "Spen Valley": [],
-    "Thursday Vets Bradford": [],
-    "Saturday Bradford": ["robbie ellis"],
+    "Mirfield": ["stewart watson"],
+    "Wednesday Half Holiday Bradford": ["john stocks"],
+    "Spen Valley": [
+        "alex wolfenden",
+        "paul wilczynski",
+        "nichole farrar",
+        "lewis cooper",
+    ],
+    "Thursday Vets Bradford": ["john stocks"],
+    "Saturday Bradford": [
+        "kevin siddle",
+        "robbie ellis",
+        "john stocks",
+        "paul wilczynski",
+    ],
 }
 
 # Other leagues that players play in for other teams (lowercase)
