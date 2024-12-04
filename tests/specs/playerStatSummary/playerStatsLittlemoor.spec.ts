@@ -18,7 +18,7 @@ test.describe('Player stats - Littlemoor', () => {
         playerSummaryPage.setPlayerToFind('john armitage');
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        
+
         await yearSelectPage.select2023Year();
         await playerSummaryPage.validateSummaryStats(57, 43, 75, 5.21);
 
@@ -32,15 +32,50 @@ test.describe('Player stats - Littlemoor', () => {
         yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('jim moorin');
-        
+
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
         await playerStatOptionsPage.selectAllClubsStatsSwitch();
-        
+
         await yearSelectPage.select2023Year();
         await playerSummaryPage.validateSummaryStats(111, 66, 59, 2.23);
 
         await yearSelectPage.select2022Year();
         await playerSummaryPage.validateSummaryStats(114, 83, 73, 5.57);
+    });
+
+    test('Can filter for team specific stats in 2014', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        playerSummaryPage.setPlayerToFind('martin fulton');
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await yearSelectPage.select2014Year();
+        await playerStatOptionsPage.selectTeamFromDropdown('Mirfield (B)');
+
+        await expect(playerSummaryPage.playerRows).toHaveCount(2);
+        await playerSummaryPage.validateSummaryStats(18, 11, 61, 1.83);
+    });
+
+    test('Can filter venue stats in 2014', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        playerSummaryPage.setPlayerToFind('martin fulton');
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await yearSelectPage.select2014Year();
+
+        await playerStatOptionsPage.selectSinglesOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(31, 23, 74, 4.97);
+
+        await playerStatOptionsPage.selectHomeOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(15, 13, 87, 7.47);
+
+        await playerStatOptionsPage.selectAwayOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(16, 10, 63, 2.63);
     });
 
     // TODO not possible yet. Maybe try Pudsey stats? Or Jack Roberts?
@@ -52,17 +87,6 @@ test.describe('Player stats - Littlemoor', () => {
 
     //     await playerStatOptionsPage.selectAllYearsSwitch();
     //     await playerSummaryPage.validateSummaryStats(385, 147, 38, -2.34);
-    // });
-
-    // test('Summary of Dave Hudson stats since 2013 for all clubs is correct', async ({
-    //     playerSummaryPage,
-    //     playerStatOptionsPage,
-    // }) => {
-    //     playerSummaryPage.setPlayerToFind('dave hudson');
-    //     await playerStatOptionsPage.selectAllClubsStatsSwitch();
-
-    //     await playerStatOptionsPage.selectAllYearsSwitch();
-    //     await playerSummaryPage.validateSummaryStats(463, 174, 38, -2.48);
     // });
 
     test('All players appear by default', async ({
