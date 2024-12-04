@@ -304,7 +304,6 @@ function PlayerStats(props: PlayerStatsProps) {
                 onlyCupCallback={onlyCupCallback}
                 searchedPlayerName={searchedPlayerName}
                 teamNames={teamNames}
-                clubNames={config.clubsForPlayersStats}
             />
 
             <p className="footnote">Last Updated: {clubStats.lastUpdated}</p>

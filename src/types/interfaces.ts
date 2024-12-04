@@ -56,7 +56,6 @@ export interface PlayerStatsOptionsProps {
     onlyCupCallback: (toggle: boolean) => void;
     searchedPlayerName: string;
     teamNames: string[];
-    clubNames: string[];
 }
 
 export interface PlayerStatsProps {

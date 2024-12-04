@@ -23,7 +23,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const onlyCupCallback = props.onlyCupCallback;
     const searchedPlayerName = props.searchedPlayerName;
     const teamNames = props.teamNames;
-    const clubNames = props.clubNames;
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allClubsToggle, setAllClubsToggle] = useState(false);
@@ -209,17 +208,19 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         title={clubDropdownTitle}
                                         disabled={disableTeamAndClubDropdown}
                                     >
-                                        {clubNames.map((club, index) => (
-                                            <Dropdown.Item
-                                                key={index}
-                                                id={'#club-option-' + club}
-                                                onClick={() =>
-                                                    selectClubStats(club)
-                                                }
-                                            >
-                                                {capitalizeText([club])}
-                                            </Dropdown.Item>
-                                        ))}
+                                        {config.clubsForPlayersStats.map(
+                                            (club, index) => (
+                                                <Dropdown.Item
+                                                    key={index}
+                                                    id={'#club-option-' + club}
+                                                    onClick={() =>
+                                                        selectClubStats(club)
+                                                    }
+                                                >
+                                                    {capitalizeText([club])}
+                                                </Dropdown.Item>
+                                            )
+                                        )}
                                     </DropdownButton>
                                     <div style={{ padding: '0 0.5rem' }}></div>
                                     <DropdownButton
