@@ -138,7 +138,7 @@ Chris Hight             21 Peter Senior            19
             Aggregate: 194             Aggregate: 155 
 
         Division 2                Tue 15th Apr        
-      Littlemoor BC           Ossett Flying Horse     
+      Littlemoor 'A'         Ossett Flying Horse     
 Brian Richards          21 Gary Foulkes            14 
 Craig Hebbard           21 Kristian Shuttleworth    8 
 Danny Towning           14 Graham Blenkinsop       21 
@@ -648,7 +648,7 @@ Gary Wike               21 Chris Bedford            9
             Aggregate: 194             Aggregate: 142 
 
         Division 2                Tue 22nd Apr        
-       Garforth Rec              Littlemoor BC        
+       Garforth Rec              Littlemoor 'A'      
 Mark Luford             19 Paul Jacques            21 
 Rob Carrol              21 David Cooper            11 
 Steve Winterburn        18 Nigel Roper             21 
@@ -1263,7 +1263,7 @@ Richard Stockdale       17 S Hallas                21
             Aggregate: 200             Aggregate: 156 
 
         Division 2                Tue 29th Apr        
-      Littlemoor BC          Spen Victoria CB & AC    
+      Littlemoor 'A'        Spen Victoria CB & AC    
 Marc Armitage           16 Andy Ellis              21 
 Neil McPhail            16 Andy Mitchell           21 
 Glen Smith              18 Richard Crowther        21 
@@ -1848,7 +1848,7 @@ Mark Farmer             21 Ian Shuttleworth        14
             Aggregate: 188             Aggregate: 170 
 
         Division 2                Tue 6th May         
-      Woodland Park              Littlemoor BC        
+      Woodland Park              Littlemoor 'A'      
 Barry Connolly          19 Glen Smith              21 
 Tommy Boyd Jnr          21 Neil McPhail             7 
 Adam Jones              21 Gary Smith              15 
@@ -2388,7 +2388,7 @@ Richard Stockdale       21 Ian Vickers             12
             Aggregate: 202             Aggregate: 155 
 
         Division 2                Tue 13th May        
-      Littlemoor BC               Harold Club         
+      Littlemoor 'A'             Harold Club         
 David Cooper            21 Bailey Rice              5 
 Craig Hebbard           11 Andrew Fowler           21 
 Ian Jacques             21 Robert Wilkinson        19 
@@ -2943,7 +2943,7 @@ Colin Haywood            9 Richard Stockdale       21
             Aggregate: 197             Aggregate: 164 
 
         Division 2                Tue 20th May        
-      Crosland Moor              Littlemoor BC        
+      Crosland Moor              Littlemoor 'A'      
 Terry Brook             21 Neil McPhail            19 
 Liam Fallas             21 David Cooper            13 
 Shaun Price             10 Glen Smith              21 
@@ -3528,7 +3528,7 @@ Pete Burrows            16 Neil Simpson            21
             Aggregate: 193             Aggregate: 143 
 
         Division 2                Tue 27th May        
-      Littlemoor BC             Barnsley C & AC       
+      Littlemoor 'A'           Barnsley C & AC       
 Glen Smith              21 Dave Harrison           11 
 Duncan Reeves           16 Craig Beck              21 
 Brian Richards          21 Brian Cooper            20 
@@ -4113,7 +4113,7 @@ Mick Wood               10 Duncan Ruddlesden       21
             Aggregate: 173             Aggregate: 201 
 
         Division 2                Tue 3rd Jun         
-      Eccleshill BC              Littlemoor BC        
+      Eccleshill BC              Littlemoor 'A'      
 Ian Dewhirst            17 Glen Smith              21 
 John Benson             19 Paul Jacques            21 
 Chris Hight             21 Nigel Roper             18 
@@ -4668,7 +4668,7 @@ Steve Winterburn        14 Paul Rooks              21
             Aggregate: 138             Aggregate: 210 
 
         Division 2                Tue 10th Jun        
-      Littlemoor BC              Crossgates 'B'       
+      Littlemoor 'A'            Crossgates 'B'       
 Brian Richards          21 Steve Mason              9 
 Craig Hebbard           21 Nathon Conlon           10 
 Neil McPhail            21 Danny Wood              10 
@@ -5283,7 +5283,7 @@ Chris Ellis             21 Neil Mylan              19
             Aggregate: 178             Aggregate: 160 
 
         Division 2                Tue 1st Jul         
-   Ossett Flying Horse           Littlemoor BC        
+   Ossett Flying Horse           Littlemoor 'A'      
 Gary Amatt              21 Paul Jacques             6 
 Graham Blenkinsop       21 Neil McPhail             6 
 Kevin Burns             21 Duncan Reeves           20 
@@ -5793,7 +5793,7 @@ David Thomas            14 John Spinks             21
             Aggregate: 164             Aggregate: 191 
 
         Division 2                Tue 8th Jul         
-      Littlemoor BC               Garforth Rec        
+      Littlemoor 'A'             Garforth Rec        
 David Cooper            21 Dave Morris             15 
 Duncan Reeves           21 L Hudson                10 
 Gary Smith               9 Graeme Franklyn         21 
@@ -6408,7 +6408,7 @@ David Patrickson Snr    19 John Benson             21
             Aggregate: 186             Aggregate: 148 
 
         Division 2                Tue 15th Jul        
-  Spen Victoria CB & AC          Littlemoor BC        
+  Spen Victoria CB & AC          Littlemoor 'A'      
 Richard Crowther        21 Brian Richards          14 
 Gary Dawson             21 Danny Towning           15 
 Andy Ellis              21 Glen Smith              17 
@@ -6993,7 +6993,7 @@ Gordon Hird             19 Andy Ellis              21
             Aggregate: 184             Aggregate: 146 
 
         Division 2                Tue 22nd Jul        
-      Littlemoor BC              Woodland Park        
+      Littlemoor 'A'            Woodland Park        
 David Cooper            21 Barry Connolly           9 
 Craig Hebbard           21 Andrew Jones             9 
 Ian Jacques             21 R Lysons                10 
@@ -7533,7 +7533,7 @@ Mick Wood               21 Chris Hight             19
             Aggregate: 193             Aggregate: 173 
 
         Division 2                Tue 29th Jul        
-       Harold Club               Littlemoor BC        
+       Harold Club               Littlemoor 'A'      
 Glen McAfferty          21 Glen Smith              20 
 Andrew Fowler           21 Duncan Reeves           17 
 Neil Tordoff            21 Matthew Jacques         12 
@@ -8088,7 +8088,7 @@ Neil Mylan              21 Brian Cooper            16
             Aggregate: 205             Aggregate: 151 
 
         Division 2                Tue 5th Aug         
-      Littlemoor BC              Crosland Moor        
+      Littlemoor 'A'            Crosland Moor        
 David Cooper            21 Kieran O'Prey            9 
 Glen Smith              21 Terry Brook             20 
 Brian Richards          12 Gary Siswick            21 
@@ -8673,7 +8673,7 @@ Trevor Benn             21 Rob Carrol              20
             Aggregate: 207             Aggregate: 167 
 
         Division 2                Tue 12th Aug        
-     Barnsley C & AC             Littlemoor BC        
+     Barnsley C & AC             Littlemoor 'A'      
 Craig Beck              21 Glen Smith              12 
 Dave Harrison           21 Gary Smith              11 
 Mathew Parkes           21 David Cooper            16 
@@ -9258,7 +9258,7 @@ Dave Smith              14 Nathon Conlon           21
             Aggregate: 194             Aggregate: 160 
 
         Division 2                Tue 19th Aug        
-      Littlemoor BC              Eccleshill BC        
+      Littlemoor 'A'            Eccleshill BC        
 Glen Smith              21 Keith Hall              13 
 Nigel Roper             21 Paul Hillam             20 
 David Cooper            17 Ryan Benson             21 
@@ -9813,7 +9813,7 @@ Paul Hillam             21 Graeme Franklyn          5
             Aggregate: 183             Aggregate: 171 
 
         Division 2                Tue 26th Aug        
-      Crossgates 'B'             Littlemoor BC        
+      Crossgates 'B'             Littlemoor 'A'      
 Chris Broughton         19 E McGuiness             21 
 Nathon Conlon           11 Nigel Roper             21 
 Steve Hartley           13 Craig Hebbard           21 

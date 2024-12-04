@@ -93,7 +93,7 @@ Oliver Fox              21 Tom Marsland            17
             Aggregate: 184             Aggregate: 164 
 
         Division 2                Tue 17th Apr        
-        Littlemoor                 Eccleshill         
+        Littlemoor 'A'               Eccleshill         
 Neil McPhail            21 Neil Mylan              17 
 Craig Farquharson       21 Chris Hight             18 
 Alexander Wolfenden     21 James Teale              6 
@@ -672,7 +672,7 @@ Mark Regan              21 Terry Kelly              9
             Aggregate: 178             Aggregate: 162 
 
         Division 2                Tue 24th Apr        
-        Meltham BC                 Littlemoor         
+        Meltham BC                 Littlemoor 'A'       
 Colin Lloyd             18 Neil McPhail            21 
 Ian Haigh               20 Glen Pratt              21 
 Jack Wareing            11 Craig Farquharson       21 
@@ -1176,7 +1176,7 @@ Russell Broadbent       21 Robert Hopper           12
             Aggregate: 166             Aggregate: 171 
 
         Division 2                Tue 1st May         
-         Barnsley                  Littlemoor         
+         Barnsley                  Littlemoor 'A'       
 Shaun Goldthorpe        21 Jack Bowes              18 
 Colin Haywood           16 Paul Wilczynski         21 
 Jack Hill               16 Adam Wider              21 
@@ -1695,7 +1695,7 @@ Richard Stockdale       16 Andrew Peace            21
             Aggregate: 183             Aggregate: 179 
 
         Division 2                Tue 8th May         
-        Littlemoor                Morton House        
+        Littlemoor 'A'              Morton House        
 Nigel Roper             19 Adam Mellor             21 
 Jack Bowes              15 Robert Dunford          21 
 Mark Allman             21 Marcus Leach            10 
@@ -2274,7 +2274,7 @@ Michael Parker          11 Mark Johnson            21
             Aggregate: 171             Aggregate: 175 
 
         Division 2                Tue 15th May        
-       Whitkirk BC                 Littlemoor         
+       Whitkirk BC                 Littlemoor 'A'       
 Lewis Cooper            21 Jack Bowes              15 
 Kristian Walder         21 Mark Allman             15 
 Dave Tinker             21 Marc Armitage           15 
@@ -2763,7 +2763,7 @@ Richard Stockdale       20 Gordon Bradford         21
             Aggregate: 193             Aggregate: 161 
 
         Division 2                Tue 22nd May        
-        Littlemoor              Brighouse Sports      
+        Littlemoor 'A'            Brighouse Sports      
 Marc Armitage           14 Ronnie Wormald          21 
 Craig Farquharson       14 Bob Whitfield           21 
 John Armitage           20 Mark Regan              21 
@@ -3284,7 +3284,7 @@ John Gant                8 Robert Dunford          21
             Aggregate: 178             Aggregate: 148 
 
         Division 2                Tue 29th May        
-      Elland C & BC                Littlemoor         
+      Elland C & BC                Littlemoor 'A'       
 Russell Broadbent        8 Marc Armitage           21 
 Stuart Carroll          21 Neil McPhail            14 
 Gordon Bradford         16 Paul Wilczynski         21 
@@ -3831,7 +3831,7 @@ Richard Stockdale       21 Peter Clarke            16
             Aggregate: 182             Aggregate: 173 
 
         Division 2                Tue 5th Jun         
-        Littlemoor              The Harold Club       
+        Littlemoor 'A'            The Harold Club       
 Ian Jacques             18 Mally Fowler            21 
 Mark Allman             21 Trevor Benn             12 
 Paul Wilczynski         21 Glen McCafferty         12 
@@ -4350,7 +4350,7 @@ Alan Procter            21 Andrew Whittaker        13
             Aggregate: 179             Aggregate: 172 
 
         Division 2                Tue 12th Jun        
-      Kirkheaton Con               Littlemoor         
+      Kirkheaton Con               Littlemoor 'A'       
 Shaun Fox               21 Alexander Wolfenden     19 
 Paul Berry              21 Paul Wilczynski          6 
 John Gant               21 Craig Farquharson       10 
@@ -4899,7 +4899,7 @@ Steven Haigh            21 *No Player*              0
             Aggregate: 202             Aggregate: 136 
 
         Division 2                Tue 3rd Jul         
-        Eccleshill                 Littlemoor         
+        Eccleshill                 Littlemoor 'A'       
 Richard Stockdale       15 Dave Robson             21 
 James Teale             21 Alexander Wolfenden     18 
 Danny Teale             21 Neil McPhail            12 
@@ -5478,7 +5478,7 @@ Kristian Walder         20 Robert Hopper           21
             Aggregate: 163             Aggregate: 189 
 
         Division 2                Tue 10th Jul        
-        Littlemoor                 Meltham BC         
+        Littlemoor 'A'               Meltham BC         
 Neil McPhail            20 Colin Lloyd             21 
 Matthew Jacques         19 Nathan Haigh            21 
 Glen Pratt              14 Barry Holland           21 
@@ -5982,7 +5982,7 @@ Hedley Kettlewell        9 Gordon Bradford         21
             Aggregate: 197             Aggregate: 143 
 
         Division 2                Tue 17th Jul        
-        Littlemoor                  Barnsley          
+        Littlemoor 'A'                Barnsley          
 Mark Allman             12 Colin Haywood           21 
 Adam Wider              21 Eric Phillips           16 
 Dave Robson             21 Mathew Parkes           16 
@@ -6501,7 +6501,7 @@ Tom Silcock             18 Paul Rooks              21
             Aggregate: 193             Aggregate: 176 
 
         Division 2                Tue 24th Jul        
-       Morton House                Littlemoor         
+       Morton House                Littlemoor 'A'       
 Chris Sweeney           21 Matthew Jacques         13 
 Josh Dunford            18 Dave Robson             21 
 Michael Parker          15 Alexander Wolfenden     21 
@@ -7080,7 +7080,7 @@ Tony Whitelam           21 Aiden Haley             12
             Aggregate: 179             Aggregate: 165 
 
         Division 2                Tue 31st Jul        
-        Littlemoor                Whitkirk BC         
+        Littlemoor 'A'              Whitkirk BC         
 Alexander Wolfenden     17 Dave Tinker             21 
 Mark Allman             17 Phil Vayro              21 
 Dave Robson             21 Kristian Walder         20 
@@ -7569,7 +7569,7 @@ John Naylor             21 Paul Rooks              20
             Aggregate: 167             Aggregate: 193 
 
         Division 2                Tue 7th Aug         
-     Brighouse Sports              Littlemoor         
+     Brighouse Sports              Littlemoor 'A'       
 Nigel Briggs            21 Adam Wider              16 
 Mark Regan              21 Dave Robson             14 
 Peter Clarke            21 Marc Armitage            8 
@@ -8103,7 +8103,7 @@ Aiden Haley             21 Paul Berry              14
             Aggregate: 180             Aggregate: 166 
 
         Division 2                Tue 14th Aug        
-        Littlemoor               Elland C & BC        
+        Littlemoor 'A'             Elland C & BC        
 Nathan Dobson           19 James Senior            21 
 Alexander Wolfenden     21 Stuart Carroll           7 
 Marc Armitage           21 Tony Dubaj               9 
@@ -8637,7 +8637,7 @@ Tony Riley              14 Danny Teale             21
             Aggregate: 197             Aggregate: 143 
 
         Division 2                Tue 21st Aug        
-     The Harold Club               Littlemoor         
+     The Harold Club               Littlemoor 'A'       
 Tom Jagger              15 Alexander Wolfenden     21 
 Mally Fowler            20 Mark Allman             21 
 Andrew Heenan           21 Adam Wider              12 
@@ -9156,7 +9156,7 @@ Andrew Whittaker        21 Mark McGorlick           9
             Aggregate: 187             Aggregate: 161 
 
         Division 2                Tue 28th Aug        
-        Littlemoor               Kirkheaton Con       
+        Littlemoor 'A'             Kirkheaton Con       
 John Armitage           16 Oliver Fox              21 
 Matthew Jacques         21 Harry Lumb              15 
 Dave Robson             21 Daniel Kilburn          16 
