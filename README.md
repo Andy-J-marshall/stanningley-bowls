@@ -148,7 +148,7 @@ A number of manual changes are required at the end of each calendar year.
 2. Update `playerDetails.py`:
 
     - Add names from `duplicatePlayerNames` above to `deduplicateNames` and assign the correct name
-    - Update `otherTeams` with any other club members plays for
+    - Update `allClubs` with any other club members plays for
     - Update `allDays` for any other leagues that need tracking
 
 3. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues

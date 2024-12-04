@@ -364,7 +364,7 @@ def checkCorrectTeamForPlayer(
             possibleTeamText = possibleTeamText.lower().strip()
 
             # Checks against full team name first
-            for team in playerDetails.teamsTracking:
+            for team in playerDetails.allClubs:
                 team = team.lower()
                 if team in possibleTeamText:
                     if (homeGame or cupHome) and possibleTeamText.startswith(team):

@@ -1,8 +1,11 @@
 import playerStatsHelper
 import clubDetails
+import littlemoorDetails
 
-players = clubDetails.players  # TODO might want to add littlemoor players here too
-duplicatePlayerNames = clubDetails.duplicatePlayerNames  # TODO figure this out
+players = list(set(clubDetails.players + littlemoorDetails.players))
+duplicatePlayerNames = list(
+    set(clubDetails.duplicatePlayerNames + littlemoorDetails.duplicatePlayerNames)
+)
 
 
 # Add alternative names for players (lowercase)
@@ -49,7 +52,7 @@ allDays = [
     "Saturday Bradford",
 ]
 
-otherTeams = [
+allClubs = [
     "stanningley",
     "pudsey",
     "burley",
@@ -60,6 +63,3 @@ otherTeams = [
     "bramley",
     "new armley",
 ]
-
-# TODO also include littlemoor?
-teamsTracking = clubDetails.teamNames + otherTeams
