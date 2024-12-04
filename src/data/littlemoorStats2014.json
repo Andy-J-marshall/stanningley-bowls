@@ -347,6 +347,97 @@
                 "wins": 10,
                 "aggDiff": 98
             }
+        },
+        "steve gardner": {
+            "totalAgg": 255,
+            "totalAggAgainst": 226,
+            "availableAgg": 294,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 147,
+            "availableAwayAgg": 147,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 136,
+            "totalHomeAggAgainst": 106,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 119,
+            "totalAwayAggAgainst": 120,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 5,
+            "homeLosses": 2,
+            "awayWins": 4,
+            "awayLosses": 3,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 14,
+            "results": [
+                "steve gardner 21 - 18 paul bowes",
+                "steve gardner 13 - 21 r senior",
+                "steve gardner 11 - 21 graham radcliffe",
+                "steve gardner 21 - 16 clive hirst",
+                "steve gardner 21 - 15 alan stone",
+                "steve gardner 21 - 10 n bridges",
+                "steve gardner 8 - 21 shaun kelly",
+                "steve gardner 21 - 12 martin peacock",
+                "steve gardner 21 - 7 john blackburn",
+                "steve gardner 16 - 21 p chalkley",
+                "steve gardner 18 - 21 joel abdy",
+                "steve gardner 21 - 17 ross ingham",
+                "steve gardner 21 - 8 john mirfin",
+                "steve gardner 21 - 18 shaun kelly"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 14,
+                "wins": 9,
+                "aggDiff": 29
+            },
+            "wednesday half holiday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
         }
     },
     "teamResults": [

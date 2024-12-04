@@ -1,5 +1,107 @@
 {
     "playerResults": {
+        "jack roberts": {
+            "totalAgg": 277,
+            "totalAggAgainst": 389,
+            "availableAgg": 420,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 210,
+            "availableAwayAgg": 210,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 150,
+            "totalHomeAggAgainst": 181,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 127,
+            "totalAwayAggAgainst": 208,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 4,
+            "homeLosses": 6,
+            "awayWins": 1,
+            "awayLosses": 9,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 20,
+            "results": [
+                "jack roberts 9 - 21 john beverley",
+                "jack roberts 21 - 19 kenneth bedford",
+                "jack roberts 3 - 21 rod bastow",
+                "jack roberts 12 - 21 donald firth",
+                "jack roberts 21 - 12 clifford wheatley",
+                "jack roberts 11 - 21 hedley kettlewell",
+                "jack roberts 15 - 21 alan mazurk",
+                "jack roberts 21 - 12 robert benn",
+                "jack roberts 15 - 21 john priestley",
+                "jack roberts 11 - 21 kath sansom",
+                "jack roberts 15 - 21 derek carroll",
+                "jack roberts 9 - 21 cliff taylor",
+                "jack roberts 18 - 21 colin hargreaves",
+                "jack roberts 21 - 12 peter howroyd",
+                "jack roberts 17 - 21 clifford wheatley",
+                "jack roberts 4 - 21 tony riley",
+                "jack roberts 21 - 19 sylvia halliday",
+                "jack roberts 20 - 21 brian russell",
+                "jack roberts 9 - 21 angela carter",
+                "jack roberts 4 - 21 nigel swales"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 20,
+                "wins": 5,
+                "aggDiff": -112
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
         "jim moorin": {
             "totalAgg": 1100,
             "totalAggAgainst": 873,
@@ -371,6 +473,107 @@
                 "aggDiff": 0
             }
         },
+        "neil porter": {
+            "totalAgg": 331,
+            "totalAggAgainst": 308,
+            "availableAgg": 399,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 252,
+            "availableAwayAgg": 147,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 229,
+            "totalHomeAggAgainst": 179,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 102,
+            "totalAwayAggAgainst": 129,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 9,
+            "homeLosses": 3,
+            "awayWins": 2,
+            "awayLosses": 5,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 19,
+            "results": [
+                "neil porter 20 - 21 barry tinker",
+                "neil porter 21 - 10 jake dearden",
+                "neil porter 21 - 20 richard bentley",
+                "neil porter 11 - 21 c heaton",
+                "neil porter 21 - 18 robert dickinson",
+                "neil porter 9 - 21 steve gledhill",
+                "neil porter 21 - 11 david peacock",
+                "neil porter 11 - 21 scott fisher",
+                "neil porter 9 - 21 stephen walker",
+                "neil porter 21 - 13 graham oliver",
+                "neil porter 21 - 12 graham hall",
+                "neil porter 21 - 10 tony quinn",
+                "neil porter 8 - 21 nigel cranston",
+                "neil porter 19 - 21 peter mcgowan",
+                "neil porter 21 - 18 wally whytell",
+                "neil porter 21 - 14 phillip rayner",
+                "neil porter 21 - 8 peter oliver",
+                "neil porter 21 - 6 nick crowther",
+                "neil porter 13 - 21 chris wood"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 9,
+                "wins": 4,
+                "aggDiff": -20
+            },
+            "spen valley": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 8
+            },
+            "spen valley (b)": {
+                "games": 2,
+                "wins": 2,
+                "aggDiff": 20
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -13
+            },
+            "saturday bradford (b)": {
+                "games": 6,
+                "wins": 4,
+                "aggDiff": 28
+            }
+        },
         "paul bowes": {
             "totalAgg": 573,
             "totalAggAgainst": 511,
@@ -478,6 +681,102 @@
                 "games": 1,
                 "wins": 0,
                 "aggDiff": -14
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
+        "steve gardner": {
+            "totalAgg": 271,
+            "totalAggAgainst": 211,
+            "availableAgg": 294,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 147,
+            "availableAwayAgg": 147,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 147,
+            "totalHomeAggAgainst": 77,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 124,
+            "totalAwayAggAgainst": 134,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 7,
+            "homeLosses": 0,
+            "awayWins": 3,
+            "awayLosses": 4,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 14,
+            "results": [
+                "steve gardner 21 - 11 gerry mcloughlin",
+                "steve gardner 13 - 21 paul edwards",
+                "steve gardner 21 - 6 joe bray",
+                "steve gardner 16 - 21 paul mottram",
+                "steve gardner 21 - 15 brian higgins",
+                "steve gardner 21 - 16 nigel marshall",
+                "steve gardner 21 - 16 norman raper",
+                "steve gardner 21 - 12 michael lee",
+                "steve gardner 21 - 11 mick lloyd",
+                "steve gardner 12 - 21 michael rhodes",
+                "steve gardner 21 - 11 ian fisher",
+                "steve gardner 20 - 21 simon rothwell",
+                "steve gardner 21 - 10 malcolm gilbert",
+                "steve gardner 21 - 19 george turton"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 14,
+                "wins": 10,
+                "aggDiff": 60
+            },
+            "spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
             },
             "saturday bradford (b)": {
                 "games": 0,

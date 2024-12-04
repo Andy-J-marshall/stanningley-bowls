@@ -445,6 +445,99 @@
                 "wins": 4,
                 "aggDiff": -57
             }
+        },
+        "steve gardner": {
+            "totalAgg": 16,
+            "totalAggAgainst": 21,
+            "availableAgg": 21,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 0,
+            "availableAwayAgg": 21,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 0,
+            "totalHomeAggAgainst": 0,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 16,
+            "totalAwayAggAgainst": 21,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 0,
+            "homeLosses": 0,
+            "awayWins": 0,
+            "awayLosses": 1,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 1,
+            "results": [
+                "steve gardner 16 - 21 wayne moseley"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -5
+            },
+            "mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
         }
     },
     "teamResults": [

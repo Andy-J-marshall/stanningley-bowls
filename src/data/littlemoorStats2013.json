@@ -1,5 +1,103 @@
 {
     "playerResults": {
+        "jack roberts": {
+            "totalAgg": 428,
+            "totalAggAgainst": 493,
+            "availableAgg": 546,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 273,
+            "availableAwayAgg": 273,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 230,
+            "totalHomeAggAgainst": 229,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 198,
+            "totalAwayAggAgainst": 264,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 4,
+            "homeLosses": 9,
+            "awayWins": 3,
+            "awayLosses": 10,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 26,
+            "results": [
+                "jack roberts 18 - 21 ralph sissons",
+                "jack roberts 9 - 21 barry turnbull",
+                "jack roberts 19 - 21 peter stockdale",
+                "jack roberts 13 - 21 ken bairstow",
+                "jack roberts 10 - 21 keith goodall",
+                "jack roberts 21 - 7 kenny mccafferty",
+                "jack roberts 21 - 16 norman lickley",
+                "jack roberts 21 - 8 patricia allison",
+                "jack roberts 21 - 19 william hutchinson",
+                "jack roberts 15 - 21 stephen holmes",
+                "jack roberts 12 - 21 alan pennington",
+                "jack roberts 21 - 13 roy scott",
+                "jack roberts 16 - 21 allen bottomley",
+                "jack roberts 8 - 21 graham oliver",
+                "jack roberts 13 - 21 bev shutt",
+                "jack roberts 19 - 21 donald firth",
+                "jack roberts 15 - 21 jim fleming",
+                "jack roberts 16 - 21 marie sutcliffe",
+                "jack roberts 11 - 21 mary hemsley",
+                "jack roberts 18 - 21 derek carroll",
+                "jack roberts 21 - 19 roy carter",
+                "jack roberts 15 - 21 john ramsey",
+                "jack roberts 17 - 21 david elliot",
+                "jack roberts 21 - 12 peter dykes",
+                "jack roberts 20 - 21 sylvia halliday",
+                "jack roberts 17 - 21 leonard hanson"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford (b)": {
+                "games": 26,
+                "wins": 7,
+                "aggDiff": -65
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
         "john armitage": {
             "totalAgg": 293,
             "totalAggAgainst": 319,
