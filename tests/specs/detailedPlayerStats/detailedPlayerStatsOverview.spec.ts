@@ -69,7 +69,7 @@ test.describe('Player detailed stats - overview', () => {
             yearSelectPage,
         }) => {
             await yearSelectPage.select2023Year();
-            await playerStatOptionsPage.selectAllClubsStatsSwitch();
+            await playerStatOptionsPage.selectAllClubsFromDropdown();
             await playerSearchPage.searchForPlayer(player);
 
             const {
@@ -114,7 +114,7 @@ test.describe('Player detailed stats - overview', () => {
         const player = 'Dave Hudson';
 
         await playerStatOptionsPage.selectAllYearsSwitch();
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
         await playerSearchPage.searchForPlayer(player);
 
         await playerStatsOverviewPage.validateOverviewStats(463, 174, -2.48);

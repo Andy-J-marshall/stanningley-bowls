@@ -39,7 +39,7 @@ test.describe('Player summary stats', () => {
         yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('jim moorin');
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
 
         await yearSelectPage.select2023Year();
         await playerSummaryPage.validateSummaryStats(111, 66, 59, 2.23);
@@ -63,7 +63,7 @@ test.describe('Player summary stats', () => {
         playerStatOptionsPage,
     }) => {
         playerSummaryPage.setPlayerToFind('dave hudson');
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
 
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSummaryPage.validateSummaryStats(463, 174, 38, -2.48);

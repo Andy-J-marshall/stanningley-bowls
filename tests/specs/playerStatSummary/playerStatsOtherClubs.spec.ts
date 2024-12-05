@@ -45,7 +45,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerSummaryPage.setPlayerToFind('jim moorin');
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
 
         await yearSelectPage.select2023Year();
         await playerSummaryPage.validateSummaryStats(111, 66, 59, 2.23);
@@ -116,22 +116,22 @@ test.describe('Player stats - Other Clubs', () => {
         await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 
-    test('Switching clubs reset the team dropdown', async ({
+    test('Switching clubs does not reset the team dropdown', async ({
         playerSummaryPage,
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
-        await expect(playerSummaryPage.playerRows).toHaveCount(15);
-
+        await yearSelectPage.select2018Year();
+        await playerStatOptionsPage.selectTeamFromDropdown(
+            'Wednesday Half Holiday Bradford'
+        );
+        await expect(playerSummaryPage.playerRows).toHaveCount(8);
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        await expect(playerSummaryPage.playerRows).toHaveCount(7);
+        await expect(playerSummaryPage.playerRows).toHaveCount(2);
+
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
-        await expect(playerSummaryPage.playerRows).toHaveCount(1);
-
-
+        await expect(playerSummaryPage.playerRows).toHaveCount(2);
         await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
-        await expect(playerSummaryPage.playerRows).toHaveCount(32);
+        await expect(playerSummaryPage.playerRows).toHaveCount(15);
     });
 });

@@ -38,7 +38,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
-    const [showClubStats, setShowClubStats] = useState(true);
+    const [showAllClubStats, setShowAllClubStats] = useState(false);
     const [statsToUse, setStatsToUse] = useState(clubStats?.playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
@@ -65,7 +65,7 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         // Set which stats to show
-        if (showClubStats) {
+        if (!showAllClubStats) {
             switch (clubNameForStats) {
                 case 'littlemoor':
                     setStatsToUse(littlemoorStats?.playerResults);
@@ -122,7 +122,7 @@ function PlayerStats(props: PlayerStatsProps) {
         clubStatsForEveryYearArray,
         littlemoorStats,
         littlemoorStatsForEveryYearArray,
-        showClubStats,
+        showAllClubStats,
         showStatsSinceStart,
         clubNameForStats,
         loaded,
@@ -141,7 +141,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function allClubsStatsCallback(showBool: boolean) {
-        setShowClubStats(!showBool);
+        setShowAllClubStats(showBool);
 
         scrollToBottom();
     }
@@ -216,7 +216,7 @@ function PlayerStats(props: PlayerStatsProps) {
             <IndividualPlayerStats
                 name={playerName.toLowerCase()}
                 playersStats={detailedStats}
-                showClubStats={showClubStats}
+                showAllClubStats={showAllClubStats}
             />
         );
     }

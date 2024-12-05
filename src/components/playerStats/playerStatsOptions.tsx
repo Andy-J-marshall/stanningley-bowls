@@ -36,21 +36,13 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
-    const [disableTeamAndClubDropdown, setDisableTeamAndClubDropdown] =
-        useState(false);
+    const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
     );
     const [clubDropdownTitle, setClubDropdownTitle] = useState(
         config.teamNames.shortName
     );
-
-    function toggleAllClubsStats(event: React.ChangeEvent<HTMLInputElement>) {
-        const allClubsStatsToggle = event.currentTarget.checked;
-        setAllClubsToggle(allClubsStatsToggle);
-        allClubsStatsCallback(allClubsStatsToggle);
-        setDisableTeamAndClubDropdown(allClubsStatsToggle);
-    }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allYearStatsToggle = event.currentTarget.checked;
@@ -67,9 +59,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setTeamDropdownTitle(formatTeamName(teamName));
             teamSpecificCallback(teamName);
 
+            setDisableOtherOptions(true);
+
             setAllGameTypesToggle(true);
             setAllVenuesToggle(true);
-            setDisableOtherOptions(true);
 
             setAllClubsToggle(false);
             allClubsStatsCallback(false);
@@ -77,18 +70,34 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             singles(false);
             pairs(false);
             home(false);
-            home(false);
+            away(false);
             cup(false);
         }
     }
 
     function selectClubStats(clubName: string) {
-        setClubDropdownTitle(capitalizeText([clubName]));
-        clubSpecificCallback(clubName);
+        if (!clubName || clubName === '') {
+            setClubDropdownTitle('All Clubs');
+            clubSpecificCallback('');
 
-        setTeamDropdownTitle(defaultTeamDropdownTitle);
-        teamSpecificCallback('');
-        setDisableOtherOptions(false);
+            setAllClubsToggle(true);
+            allClubsStatsCallback(true);
+
+            setDisableTeamDropdown(true);
+
+            setTeamDropdownTitle(defaultTeamDropdownTitle);
+            teamSpecificCallback('');
+
+            setDisableOtherOptions(false);
+        } else {
+            setClubDropdownTitle(capitalizeText([clubName]));
+            clubSpecificCallback(clubName);
+
+            setAllClubsToggle(false);
+            allClubsStatsCallback(false);
+
+            setDisableTeamDropdown(false);
+        }
     }
 
     function toggleAllMatchTypes() {
@@ -175,18 +184,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} lg={2}>
                                 <h6>OPTIONS</h6>
-                                <Form.Check
-                                    inline
-                                    key={crypto.randomUUID()}
-                                    id="#all-club-stats-select-switch"
-                                    onChange={toggleAllClubsStats}
-                                    type="switch"
-                                    label="All clubs"
-                                    checked={allClubsToggle}
-                                    disabled={disableOtherOptions}
-                                />
                                 <Form.Check
                                     inline
                                     key={crypto.randomUUID()}
@@ -197,7 +196,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} lg={4}>
                                 <h6>CLUBS & TEAMS</h6>
                                 <InputGroup>
                                     <DropdownButton
@@ -206,7 +205,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         variant="light"
                                         id="club-select-dropdown"
                                         title={clubDropdownTitle}
-                                        disabled={disableTeamAndClubDropdown}
                                     >
                                         {config.clubsForPlayersStats.map(
                                             (club, index) => (
@@ -221,6 +219,13 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                                 </Dropdown.Item>
                                             )
                                         )}
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item
+                                            id="#club-option-all"
+                                            onClick={() => selectClubStats('')}
+                                        >
+                                            All Clubs
+                                        </Dropdown.Item>
                                     </DropdownButton>
                                     <div style={{ padding: '0 0.3rem' }}></div>
                                     <DropdownButton
@@ -229,7 +234,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                         variant="light"
                                         id="team-select-dropdown"
                                         title={teamDropdownTitle}
-                                        disabled={disableTeamAndClubDropdown}
+                                        disabled={disableTeamDropdown}
                                     >
                                         {teamNames.map((teamName, index) => (
                                             <Dropdown.Item

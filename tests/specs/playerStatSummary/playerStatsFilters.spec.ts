@@ -65,7 +65,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('richard hodgson');
 
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
         await yearSelectPage.select2023Year();
 
         // All venues
@@ -134,7 +134,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('neil porter');
 
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
         await yearSelectPage.select2023Year();
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
@@ -152,7 +152,7 @@ test.describe('Player summary stats - filters', () => {
         playerStatOptionsPage,
     }) => {
         playerSummaryPage.setPlayerToFind('bernie miller');
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
 
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerSummaryPage.validateSummaryStats(416, 242, 58, 2.37);
@@ -210,9 +210,10 @@ test.describe('Player summary stats - filters', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
+
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
 
-        await expect(playerStatOptionsPage.allClubsSwitch).toBeDisabled();
+        await expect(playerStatOptionsPage.clubSelectDropdown).toBeEnabled();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.pairsOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.allGameTypesRadio).toBeDisabled();
@@ -220,6 +221,40 @@ test.describe('Player summary stats - filters', () => {
         await expect(playerStatOptionsPage.awayOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.cupOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.allVenuesRadio).toBeDisabled();
+
+        await playerStatOptionsPage.selectTeamFromDropdown('All Teams');
+        await expect(playerStatOptionsPage.clubSelectDropdown).toBeEnabled();
+        await expect(playerStatOptionsPage.singlesOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.pairsOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allGameTypesRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.homeOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.awayOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.cupOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allVenuesRadio).toBeEnabled();
+    });
+
+    test('Team dropdown defaults to All Teams when selecting All Clubs', async ({
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+
+        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(
+            'Saturday Leeds'
+        );
+
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
+        await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(
+            'All Teams'
+        );
+        await expect(playerStatOptionsPage.singlesOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.pairsOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allGameTypesRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.homeOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.awayOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.cupOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allVenuesRadio).toBeEnabled();
     });
 
     test('Clicking back to summary button remembers state of all stat toggles', async ({
@@ -230,7 +265,7 @@ test.describe('Player summary stats - filters', () => {
         const name = 'Mabel Shaw';
         playerSummaryPage.setPlayerToFind(name);
 
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerStatOptionsPage.selectSinglesOnlyRadio();
         await playerStatOptionsPage.selectAwayOnlyRadio();
@@ -243,19 +278,7 @@ test.describe('Player summary stats - filters', () => {
         await expect(playerStatOptionsPage.allYearSwitch).toBeChecked();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeChecked();
         await expect(playerStatOptionsPage.awayOnlyRadio).toBeChecked();
-        await expect(playerStatOptionsPage.allClubsSwitch).toBeChecked();
 
         await playerSummaryPage.validateSummaryStats(270, 149, 55, 1.29);
-    });
-
-    test('Team select dropdown is disabled when include all club switch is enabled', async ({
-        playerStatOptionsPage,
-        yearSelectPage,
-    }) => {
-        await yearSelectPage.select2023Year();
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
-
-        await expect(playerStatOptionsPage.teamSelectDropdown).toBeDisabled();
-        await expect(playerStatOptionsPage.clubSelectDropdown).toBeDisabled();
     });
 });
