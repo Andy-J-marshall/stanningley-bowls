@@ -175,7 +175,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} lg={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>OPTIONS</h6>
                                 <Form.Check
                                     inline
@@ -197,7 +197,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            <Col xs={12} lg={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>CLUBS & TEAMS</h6>
                                 <InputGroup>
                                     <DropdownButton
@@ -222,7 +222,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                             )
                                         )}
                                     </DropdownButton>
-                                    <div style={{ padding: '0 0.5rem' }}></div>
+                                    <div style={{ padding: '0 0.3rem' }}></div>
                                     <DropdownButton
                                         drop="up"
                                         size="sm"
@@ -256,7 +256,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     </DropdownButton>
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} lg={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>GAME TYPE</h6>
                                 <InputGroup>
                                     <Form.Check
@@ -294,7 +294,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} lg={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>VENUE</h6>
                                 <InputGroup>
                                     <Form.Check
