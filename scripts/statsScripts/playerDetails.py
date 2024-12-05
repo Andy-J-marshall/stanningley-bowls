@@ -45,7 +45,7 @@ allLeagues = [
     "Mirfield",
     "Spen Valley",
     "Monday AireWharfe",
-    "Tuesday AireWharfe",
+    "AireWharfe Vets",
     "Monday Bradford",
     "Wednesday Half Holiday Bradford",
     "Thursday Vets Bradford",

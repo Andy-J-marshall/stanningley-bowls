@@ -62,7 +62,7 @@ const leagues = [
         url: '/AW-Mon',
     },
     {
-        day: 'Tuesday AireWharfe',
+    day: 'AireWharfe Vets',
         url: '/AW-Vets',
     },
     {
