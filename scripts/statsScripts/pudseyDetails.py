@@ -54,43 +54,25 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 20
 
 # Every player (lowercase)
 players = [
-    "alyssa randell",
-    "stuart potter",
-    "andy marshall",
+    "richard hodgson",
+    "geoff hodgson",
     "stewart watson",
     "paul bowes",
-    "martin fulton",
-    "phil thornton",
-    "john armitage",
-    "jim moorin",
+    "mary spears",
+    "linda barrand",
+    "joey broadbent",  # TODO 1 game!
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
-duplicatePlayerNames = [
-    "stuart watson",
-    "andrew marshall",
-    "james moorin",
-    "phillip thornton",
-    "philip thornton",
-]
+duplicatePlayerNames = ["stuart watson"]
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday Bradford": ["john stocks"],
-    "Monday AireWharfe": ["stewart watson", "lee wider", "paul jacques"],
-    "Mirfield": ["stewart watson"],
-    "Half Holiday Bradford": ["john stocks"],
-    "Spen Valley": [
-        "alex wolfenden",
-        "paul wilczynski",
-        "nichole farrar",
-        "lewis cooper",
-    ],
-    "Bradford Vets": ["john stocks"],
-    "Saturday Bradford": [
-        "kevin siddle",
-        "robbie ellis",
-        "john stocks",
-        "paul wilczynski",
-    ],
+    "Monday AireWharfe": [""],
+    "AireWharfe Vets": [],  # TODO add stewart
+    "Mirfield": [""],
+    "Half Holiday Bradford": [],  # TODO add stewart
+    "Spen Valley": [],  # TODO add paul and stewart
+    "Bradford Vets": [],  # TODO add stewart
+    "Saturday Bradford": [],  # TODO add stewart
 }
