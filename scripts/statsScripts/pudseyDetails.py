@@ -55,10 +55,10 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 20
 # Every player (lowercase)
 players = [
     "richard hodgson",
-    "geoff hodgson",
+    # "geoff hodgson", TODO add in (also all team stats)
     "stewart watson",
     "paul bowes",
-    "mary spears",
+    # "mary spears", # TODO add in (also all team stats)
     "linda barrand",
     "joey broadbent",  # TODO 1 game!
 ]
