@@ -64,7 +64,6 @@ duplicatePlayerNames = [
 ]
 
 
-# TODO add Paul Bowes stats for 2021 (sat brad and spen)
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
     "Monday Bradford": ["john stocks"],
