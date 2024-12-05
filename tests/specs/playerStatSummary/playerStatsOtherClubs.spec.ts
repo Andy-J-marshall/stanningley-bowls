@@ -123,7 +123,7 @@ test.describe('Player stats - Other Clubs', () => {
     }) => {
         await yearSelectPage.select2018Year();
         await playerStatOptionsPage.selectTeamFromDropdown(
-            'Wednesday Half Holiday Bradford'
+            'Half Holiday Bradford'
         );
         await expect(playerSummaryPage.playerRows).toHaveCount(8);
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');

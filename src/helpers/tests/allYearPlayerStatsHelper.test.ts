@@ -134,13 +134,13 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             const result = returnTeamNamesWithGamesForAllYears(statsArray);
 
             expect(result).to.deep.equal([
+                'half holiday leeds',
                 'monday combined leeds',
                 'saturday leeds',
                 'saturday leeds (b)',
                 'thursday vets leeds',
                 'tuesday leeds',
                 'tuesday vets leeds',
-                'wednesday half holiday leeds',
                 'wednesday pairs airewharfe',
             ]);
         });

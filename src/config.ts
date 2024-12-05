@@ -32,10 +32,10 @@ export const config = {
         'monday airewharfe (b)',
         'tuesday vets leeds',
         'tuesday leeds',
-        'wednesday half holiday leeds',
-        'wednesday half holiday bradford',
-        'wednesday half holiday bradford (a)',
-        'wednesday half holiday bradford (b)',
+        'half holiday leeds',
+        'half holiday bradford',
+        'half holiday bradford (a)',
+        'half holiday bradford (b)',
         'wednesday pairs airewharfe',
         'wednesday pairs airewharfe (a)',
         'wednesday pairs airewharfe (b)',
@@ -78,10 +78,7 @@ export const config = {
             teamNames: ['tuesday leeds'],
         },
         {
-            teamNames: [
-                'wednesday half holiday leeds',
-                'wednesday half holiday bradford',
-            ],
+            teamNames: ['half holiday leeds', 'half holiday bradford'],
         },
         {
             teamNames: ['wednesday pairs airewharfe'],

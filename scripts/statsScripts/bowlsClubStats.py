@@ -32,7 +32,7 @@ from playerStatsHelper import (
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "--club",
-    choices=["littlemoor", "stanningley"],
+    choices=["littlemoor", "stanningley", "pudsey"],
     required=True,
     help="Specify the club details to use.",
 )
@@ -43,6 +43,8 @@ if args.club == "littlemoor":
     import littlemoorDetails as clubDetails
 elif args.club == "stanningley":
     import clubDetails
+elif args.club == "pudsey":
+    import pudseyDetails as clubDetails
 
 playerStats = returnListOfPlayerStats(clubDetails.teamDays, True, clubDetails.players)
 teamsProcessed = []

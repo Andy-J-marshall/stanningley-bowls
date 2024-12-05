@@ -148,12 +148,12 @@
                 "wins": 5,
                 "aggDiff": 42
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 21,
                 "wins": 14,
                 "aggDiff": 89
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -298,12 +298,12 @@
                 "wins": 6,
                 "aggDiff": 7
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 14,
                 "wins": 14,
                 "aggDiff": 136
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -422,12 +422,12 @@
                 "wins": 6,
                 "aggDiff": 19
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -580,12 +580,12 @@
                 "wins": 6,
                 "aggDiff": -63
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -731,7 +731,7 @@
             ]
         },
         {
-            "day": "Wednesday Half Holiday Bradford",
+            "day": "Half Holiday Bradford",
             "awayWins": 3,
             "homeWins": 10,
             "wins": 13,
@@ -772,7 +772,7 @@
             ]
         },
         {
-            "day": "Wednesday Half Holiday Bradford (B)",
+            "day": "Half Holiday Bradford (B)",
             "awayWins": 2,
             "homeWins": 6,
             "wins": 8,

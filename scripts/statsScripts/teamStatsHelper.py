@@ -9,8 +9,8 @@ leaguesWith10Players = [
 ]
 leaguesWith6Players = [
     "monday bradford",
-    "wednesday half holiday bradford",
-    "wednesday half holiday leeds",
+    "half holiday bradford",
+    "half holiday leeds",
 ]
 
 

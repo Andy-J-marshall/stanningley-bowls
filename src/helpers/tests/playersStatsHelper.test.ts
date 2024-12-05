@@ -168,7 +168,7 @@ describe('#playersStatsHelper Tests', () => {
                 return team.teamName === 'tuesday leeds';
             });
             const wednesday = allTeamStats.find((team: any) => {
-                return team.teamName === 'wednesday half holiday leeds';
+                return team.teamName === 'half holiday leeds';
             });
 
             expect(tuesdayEvening).to.be.undefined;
@@ -176,7 +176,7 @@ describe('#playersStatsHelper Tests', () => {
         });
 
         it('Tuesday evening and Wednesday can calculate stats', () => {
-            playerStats['paul bowes']['wednesday half holiday leeds'] = {
+            playerStats['paul bowes']['half holiday leeds'] = {
                 games: 1,
                 wins: 1,
                 aggDiff: 21,
@@ -194,7 +194,7 @@ describe('#playersStatsHelper Tests', () => {
                 return team.teamName === 'tuesday leeds';
             });
             const wednesday = allTeamStats.find((team: any) => {
-                return team.teamName === 'wednesday half holiday leeds';
+                return team.teamName === 'half holiday leeds';
             });
 
             expect(tuesdayEvening.teamWins).to.equal(7);
