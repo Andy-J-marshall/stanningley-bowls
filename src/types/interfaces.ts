@@ -28,7 +28,7 @@ export interface GameTypeButtonProps {
 export interface IndividualPlayerStatsProps {
     playersStats?: AggregatedPlayerStats | null;
     name: string;
-    showClubStats: boolean;
+    showAllClubStats: boolean;
 }
 
 export interface IndividualTeamStatsProps {

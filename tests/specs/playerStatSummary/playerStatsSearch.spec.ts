@@ -59,7 +59,7 @@ test.describe('Player stats - search', () => {
         const player = 'Clifford Brogie';
 
         await yearSelectPage.select2023Year();
-        await playerStatOptionsPage.selectAllClubsStatsSwitch();
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
         await playerSearchPage.searchForPlayer(player);
 
         await expect(detailedPlayerStatsPage.accordions).toHaveCount(4);
@@ -77,7 +77,7 @@ test.describe('Player stats - search', () => {
         );
 
         await playerSearchPage.clickBackToSummary();
-        await playerStatOptionsPage.deselectClubStatsSwitch();
+        await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
         await playerSearchPage.searchForPlayer(player);
 
         await expect(detailedPlayerStatsPage.accordions).toHaveCount(5);

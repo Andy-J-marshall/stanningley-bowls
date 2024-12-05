@@ -3,7 +3,6 @@ import { Locator, Page } from '@playwright/test';
 export class PlayerStatOptionsPage {
     public readonly page: Page;
 
-    public readonly allClubsSwitch: Locator;
     public readonly allYearSwitch: Locator;
     public readonly singlesOnlyRadio: Locator;
     public readonly pairsOnlyRadio: Locator;
@@ -17,9 +16,6 @@ export class PlayerStatOptionsPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.allClubsSwitch = page.locator(
-            ".form-check input[id='#all-club-stats-select-switch']"
-        );
         this.singlesOnlyRadio = page.locator(
             ".form-check input[id='#only-singles-radio']"
         );
@@ -46,14 +42,6 @@ export class PlayerStatOptionsPage {
         );
         this.teamSelectDropdown = page.locator('#team-select-dropdown');
         this.clubSelectDropdown = page.locator('#club-select-dropdown');
-    }
-
-    async selectAllClubsStatsSwitch() {
-        await this.allClubsSwitch.check();
-    }
-
-    async deselectClubStatsSwitch() {
-        await this.allClubsSwitch.uncheck();
     }
 
     async selectSinglesOnlyRadio() {
@@ -101,6 +89,10 @@ export class PlayerStatOptionsPage {
 
     async selectAllTeamsFromTeamDropdown() {
         await this.teamSelectDropdown.click();
+    }
+
+    async selectAllClubsFromDropdown() {
+        await this.selectClubFromDropdown('All Clubs');
     }
 
     async selectClubFromDropdown(club: string) {

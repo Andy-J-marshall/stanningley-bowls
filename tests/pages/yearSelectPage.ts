@@ -6,6 +6,7 @@ export class YearSelectPage {
     private readonly yearSelectDropdown: Locator;
     private readonly year2013: Locator;
     private readonly year2014: Locator;
+    private readonly year2018: Locator;
     private readonly year2021: Locator;
     private readonly year2022: Locator;
     private readonly year2023: Locator;
@@ -16,6 +17,7 @@ export class YearSelectPage {
         this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
         this.year2013 = page.getByRole('button', { name: '2013' });
         this.year2014 = page.getByRole('button', { name: '2014' });
+        this.year2018 = page.getByRole('button', { name: '2018' });
         this.year2021 = page.getByRole('button', { name: '2021' });
         this.year2022 = page.getByRole('button', { name: '2022' });
         this.year2023 = page.getByRole('button', { name: '2023' });
@@ -37,6 +39,11 @@ export class YearSelectPage {
     async select2022Year() {
         await this.yearSelectDropdown.click();
         await this.year2022.click();
+    }
+
+    async select2018Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2018.click();
     }
 
     async select2014Year() {
