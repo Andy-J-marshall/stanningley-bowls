@@ -183,7 +183,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     id="#all-club-stats-select-switch"
                                     onChange={toggleAllClubsStats}
                                     type="switch"
-                                    label="Include other clubs"
+                                    label="All clubs"
                                     checked={allClubsToggle}
                                     disabled={disableOtherOptions}
                                 />
