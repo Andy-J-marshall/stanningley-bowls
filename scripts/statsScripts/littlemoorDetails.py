@@ -47,6 +47,9 @@ teamDays = [
     "Saturday Bradford (B)",
 ]
 
+# Some leagues have different number of players depending on the division. Make sure you match the team name exactly as it appears in teamDays
+teamsWithWithDifferentNumberOfPlayersToLeagueNorm = ["Saturday Bradford (B)"]
+
 # Every player (lowercase)
 players = [
     "alyssa randell",

@@ -126,7 +126,10 @@ for team in clubDetails.teamDays:
                 awayAgg = awayScore
             else:
                 baseRowDownAdjustment = returnBaseRowDownNumber(False, True)
-                adjustmentForLeagueInt = returnAggRowDownNumber(league)
+                adjustmentForLeagueInt = returnAggRowDownNumber(
+                    team,
+                    clubDetails.teamsWithWithDifferentNumberOfPlayersToLeagueNorm,
+                )
                 adjustFor6PlayerTeamsInt = returnAdjustedRowNumberFor6PlayerTeams(
                     league, 0
                 )
