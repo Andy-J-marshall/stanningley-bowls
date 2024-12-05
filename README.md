@@ -135,7 +135,7 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Scripts
 
-1. Update `clubDetails.py` and `littlemoorDetails.py`:
+1. Update `stanningleyDetails.py`, `pudseyDetails.py` and `littlemoorDetails.py`:
 
     - Update the player information:
         - `players` - players who play for the club

@@ -5,6 +5,9 @@ teamNames = [
     "Stanningley Park",
     "Stanningley Park A",
     "Stanningley Park B",
+    "Stanningley Pk",
+    "Stanningley Pk A",
+    "Stanningley Pk B",
 ]
 displayTeamName = "Stanningley"
 

@@ -42,7 +42,7 @@ args = parser.parse_args()
 if args.club == "littlemoor":
     import littlemoorDetails as clubDetails
 elif args.club == "stanningley":
-    import clubDetails
+    import stanningleyDetails as clubDetails
 elif args.club == "pudsey":
     import pudseyDetails as clubDetails
 

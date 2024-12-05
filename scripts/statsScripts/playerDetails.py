@@ -1,10 +1,12 @@
 import playerStatsHelper
-import clubDetails
+import stanningleyDetails
 import littlemoorDetails
 
-players = list(set(clubDetails.players + littlemoorDetails.players))
+players = list(set(stanningleyDetails.players + littlemoorDetails.players))
 duplicatePlayerNames = list(
-    set(clubDetails.duplicatePlayerNames + littlemoorDetails.duplicatePlayerNames)
+    set(
+        stanningleyDetails.duplicatePlayerNames + littlemoorDetails.duplicatePlayerNames
+    )
 )
 
 
