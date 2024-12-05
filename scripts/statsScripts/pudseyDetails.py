@@ -30,18 +30,19 @@ displayTeamName = "Pudsey"
 
 # Days played (add duplicate days for second teams suffixed with (A) or (B) etc.)
 teamDays = [
+    # "Monday Bradford", # TODO only 2018-22
     "Monday AireWharfe (A)",
     "Monday AireWharfe (B)",
-    "AireWharfe Vets",
+    "AireWharfe Vets", # TODO only 2023 and beyond
     "Mirfield (A)",
     "Mirfield (B)",
-    "Mirfield (C)",
+    # "Mirfield (C)", # TODO only 2024 and beyond
     "Half Holiday Bradford (A)",
     "Half Holiday Bradford (B)",
     "Spen Valley (A)",
     "Spen Valley (B)",
     "Spen Valley (C)",
-    "Spen Valley (D)",
+    "Spen Valley (D)", # TODO only 2019 and beyond
     "Bradford Vets (A)",
     "Bradford Vets (B)",
     "Saturday Bradford (A)",
@@ -57,9 +58,9 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 20
 players = [
     "richard hodgson",
     "stewart watson",  # be careful of littlemoor games in 2023-4 (and check Farsley e.g. vets and Stanningley (Bradford Half Holiday)
-    "paul bowes",  # 2013-14, 2018-19 (be careful of stanningley half hol and aw mon games)
     "linda barrand",  # 2021-24
-    "joey broadbent",  # TODO 1 game in 2019
+    # "paul bowes",  # 2013-14, 2018-19 (be careful of stanningley half hol and aw mon games)
+    # "joey broadbent",  # TODO 1 game in 2019
     # "mary spears", # TODO add in (also all team stats) 2021-22
     # "geoff hodgson", TODO add in (also all team stats) Up to 2015
 ]
@@ -69,11 +70,15 @@ duplicatePlayerNames = ["stuart watson"]
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday AireWharfe": ["paul bowes"],  # TODO except 2013-14
-    "AireWharfe Vets": [],  # TODO add stewart
-    "Mirfield": [""], # TODO add paul
-    "Half Holiday Bradford": ["paul bowes"],  # TODO add stewart
-    "Spen Valley": [],  # TODO add paul and stewart
-    "Bradford Vets": [],  # TODO add stewart
-    "Saturday Bradford": [],  # TODO add stewart
+    "Monday Bradford": [],  # TODO remove this
+    "Monday AireWharfe": ["paul bowes", "joey broadbent"],  # TODO Paul except 2013-14
+    "AireWharfe Vets": ["stewart watson"],
+    "Mirfield": ["paul bowes"],  # TODO remove paul 2015-7, 2020-24
+    "Half Holiday Bradford": [
+        "paul bowes",
+        "stewart watson",
+    ],  # TODO remove stewart in 2021 only
+    "Spen Valley": ["paul bowes", "stewart watson"],  # TODO remove stewart 2022 and before, and paul 2015-7, 2020-24
+    "Bradford Vets": [],
+    "Saturday Bradford": ["stewart watson"],  # TODO remove stewart 2022 and before
 }
