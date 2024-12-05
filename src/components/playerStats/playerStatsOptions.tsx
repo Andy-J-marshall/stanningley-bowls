@@ -24,6 +24,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const searchedPlayerName = props.searchedPlayerName;
     const teamNames = props.teamNames;
 
+    const defaultTeamDropdownTitle = 'All Teams';
+
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allClubsToggle, setAllClubsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
@@ -36,8 +38,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
     const [disableTeamAndClubDropdown, setDisableTeamAndClubDropdown] =
         useState(false);
-
-    const defaultTeamDropdownTitle = 'All Teams';
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
     );
