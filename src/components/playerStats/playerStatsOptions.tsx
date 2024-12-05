@@ -182,7 +182,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} lg={2}>
                                 <h6>OPTIONS</h6>
                                 <Form.Check
                                     inline
@@ -194,7 +194,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} lg={4}>
                                 <h6>CLUBS & TEAMS</h6>
                                 <InputGroup>
                                     <DropdownButton
