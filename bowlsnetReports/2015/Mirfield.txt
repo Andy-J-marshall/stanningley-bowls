@@ -213,7 +213,7 @@ David Armitage           21 Tony Butterfield         10
              Aggregate: 171              Aggregate: 173 
 
         Division 2                 Tue 21st Apr         
-       Littlemoor BC              The Harold Club       
+       Littlemoor 'A'            The Harold Club       
 Paul Jacques             21 Steve Cooper             15 
 David Cooper             21 Scott Bloodworth          1 
 Glen Smith               21 Robert Wilkinson         12 
@@ -783,7 +783,7 @@ Hedley Kettlewell        15 Mathew Parkes            21
              Aggregate: 195              Aggregate: 136 
 
         Division 2                 Tue 28th Apr         
-       Crosland Moor               Littlemoor BC        
+       Crosland Moor               Littlemoor 'A'      
 John Greenhalgh          16 Glen Smith               21 
 Tom Fowler               17 Lee Wider                21 
 Liam Fallas              19 Martin Fulton            21 
@@ -1413,7 +1413,7 @@ Chris Blakeley           21 Connor Davis             15
              Aggregate: 144              Aggregate: 189 
 
         Division 2                  Tue 5th May         
-       Littlemoor BC              Kirkheaton Con        
+       Littlemoor 'A'            Kirkheaton Con        
 Lee Wider                20 Andy Lumb                21 
 Nigel Roper              21 Neil Jones               11 
 Paul Jacques             21 Gary Foulkes             18 
@@ -1968,7 +1968,7 @@ Martin Wilson            21 Tom Codman               13
              Aggregate: 207              Aggregate: 132 
 
         Division 2                 Tue 12th May         
-   Brighouse Sports Club           Littlemoor BC        
+   Brighouse Sports Club           Littlemoor 'A'      
 Richard Hobson           21 Gary Smith               12 
 Tony Riley               21 Glen Smith               12 
 Danny Fountain           21 Lee Wider                12 
@@ -2613,7 +2613,7 @@ Jason Shaw               17 Andy Mitchell            21
              Aggregate: 205              Aggregate: 148 
 
         Division 2                 Tue 19th May         
-    Ossett Flying Horse            Littlemoor BC        
+    Ossett Flying Horse            Littlemoor 'A'      
 Gary Amatt               21 Duncan Reeves            16 
 Kevin Burns              21 Stuart King              15 
 Christopher Davies       21 Craig Hebbard            14 
@@ -3213,7 +3213,7 @@ Ross Mallinson           11 Mark Ellis               21
              Aggregate: 186              Aggregate: 147 
 
         Division 2                 Tue 26th May         
-       Littlemoor BC               Dearne Sports        
+       Littlemoor 'A'             Dearne Sports        
 Lee Wider                20 Craig Hill               21 
 Paul Jacques             20 John Hardwick            21 
 Ian Jacques              16 Bradley Massey           21 
@@ -3828,7 +3828,7 @@ Adam Douglas             20 Mally Fowler             21
              Aggregate: 202              Aggregate: 144 
 
         Division 2                  Tue 2nd Jun         
-   Spen Victoria CB & AC           Littlemoor BC        
+   Spen Victoria CB & AC           Littlemoor 'A'      
 Richard Crowther         21 Paul Jacques             14 
 Andy Mitchell            14 Martin Fulton            21 
 Peter Senior             21 Lee Wider                11 
@@ -4398,7 +4398,7 @@ Ernie Wearing            21 Carl Upton                9
              Aggregate: 210              Aggregate: 123 
 
         Division 2                  Tue 9th Jun         
-       Littlemoor BC           Hanging Heaton C & BC    
+       Littlemoor 'A'         Hanging Heaton C & BC    
 Martin Fulton            21 Dean Scarth              17 
 Glen Pratt               21 Peter Jagger             14 
 Nigel Roper              21 John Pitt                11 
@@ -4968,7 +4968,7 @@ Andy Cairns              21 Michael Martin           13
              Aggregate: 204              Aggregate: 138 
 
         Division 2                 Tue 16th Jun         
-      Barnsley C & AC              Littlemoor BC        
+      Barnsley C & AC              Littlemoor 'A'      
 Craig Beck               11 John Armitage            21 
 Jim Norris               15 Stuart King              21 
 Shaun Goldthorpe         19 Marc Armitage            21 
@@ -5793,7 +5793,7 @@ Gary Siswick             21 Michael Armitage         17
              Aggregate: 171              Aggregate: 169 
 
         Division 2                  Tue 7th Jul         
-      Kirkheaton Con               Littlemoor BC        
+      Kirkheaton Con               Littlemoor 'A'      
 Scott Tattersley         19 Ian Jacques              21 
 Dave Fox                 11 Stuart King              21 
 Adam Douglas             18 Marc Armitage            21 
@@ -6348,7 +6348,7 @@ Matty Thorpe             10 Graham Fox               21
              Aggregate: 177              Aggregate: 173 
 
         Division 2                 Tue 14th Jul         
-       Littlemoor BC           Brighouse Sports Club    
+       Littlemoor 'A'         Brighouse Sports Club    
 Marc Armitage            21 Mark McGorlick           11 
 John Armitage            21 Richard Hobson           18 
 Paul Bowes               21 David Stansfield         15 
@@ -6993,7 +6993,7 @@ Josh Brown               21 Mick Wood                19
              Aggregate: 195              Aggregate: 158 
 
         Division 2                 Tue 21st Jul         
-      The Harold Club              Littlemoor BC        
+      The Harold Club              Littlemoor 'A'      
 Neil Tordoff              7 Paul Wyzcinski           21 
 John Armitage            20 Ian Jacques              21 
 Trevor Benn              10 Stuart King              21 
@@ -7563,7 +7563,7 @@ Tony Whitelam            21 Danny Fountain           20
              Aggregate: 193              Aggregate: 170 
 
         Division 2                 Tue 28th Jul         
-       Littlemoor BC               Crosland Moor        
+       Littlemoor 'A'             Crosland Moor        
 John Armitage            21 Trevor Boothroyd          8 
 Marc Armitage            18 Ray Whitham              21 
 Paul Bowes               21 Danny Beeby               5 
@@ -8193,7 +8193,7 @@ Peter Ellis              19 Josh Brown               21
              Aggregate: 208              Aggregate: 139 
 
         Division 2                  Tue 4th Aug         
-       Littlemoor BC            Ossett Flying Horse     
+       Littlemoor 'A'          Ossett Flying Horse     
 John Armitage            21 Kristian Shuttleworth     9 
 Marc Armitage            21 Andy Webb                12 
 Paul Bowes               12 Kevin Burns              21 
@@ -8793,7 +8793,7 @@ Paul Blackburn           13 Liam Fallas              21
              Aggregate: 182              Aggregate: 182 
 
         Division 2                 Tue 11th Aug         
-       Dearne Sports               Littlemoor BC        
+       Dearne Sports               Littlemoor 'A'      
 Roger Norris             11 David Cooper             21 
 John Hardwick            21 John Armitage             8 
 Craig Hill               21 Paul Wyzcinski           12 
@@ -9408,7 +9408,7 @@ Trevor Benn              21 Scott Tattersley         18
              Aggregate: 185              Aggregate: 167 
 
         Division 2                 Tue 18th Aug         
-       Littlemoor BC           Spen Victoria CB & AC    
+       Littlemoor 'A'         Spen Victoria CB & AC    
 Paul Bowes               21 Mark Ellis               20 
 David Cooper             21 Andrew Wood              16 
 Marc Armitage            21 Lee Murgatroyd           12 
@@ -9978,7 +9978,7 @@ Carl Upton               21 Bradley Massey           17
              Aggregate: 161              Aggregate: 173 
 
         Division 2                 Tue 25th Aug         
-   Hanging Heaton C & BC           Littlemoor BC        
+   Hanging Heaton C & BC           Littlemoor 'A'      
 David Armitage           21 Glen Pratt                4 
 Michael Armitage         17 John Armitage            21 
 Chris Blakeley           21 Paul Wyzcinski           20 
@@ -10548,7 +10548,7 @@ Allan Thompson           21 Ryan Clark               15
              Aggregate: 184              Aggregate: 173 
 
         Division 2                  Tue 1st Sep         
-       Littlemoor BC              Barnsley C & AC       
+       Littlemoor 'A'            Barnsley C & AC       
 John Armitage            21 Jim Norris               16 
 Marc Armitage            21 Carl Upton                8 
 David Cooper             21 Tom Silcock              16 

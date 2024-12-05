@@ -18,7 +18,7 @@ D Pitchforth        21 T Kelly             10
         Aggregate: 175         Aggregate: 177 
 
       Division 1            Tue 16th Apr      
-    Littlemoor WMC         Dearne Sports      
+    Littlemoor 'A'         Dearne Sports      
 I Jacques           16 E Wearing           21 
 Dave Cooper         21 J Sneddon           20 
 B Richards          21 R Norris            14 
@@ -513,7 +513,7 @@ E Wearing           21 Dave Fisher         17
         Aggregate: 193         Aggregate: 171 
 
       Division 1            Tue 23rd Apr      
-   Lower Hopton WMC        Littlemoor WMC     
+   Lower Hopton WMC        Littlemoor 'A'     
 G I Wilson          21 Dave Cooper         18 
 G A Hirst           12 D Reeves            21 
 R Hitchen           21 N Roper             11 
@@ -1113,7 +1113,7 @@ C Littlewood        17 M Williams          21
         Aggregate: 144         Aggregate: 123 
 
       Division 1            Tue 30th Apr      
-   Alverthorpe WMC         Littlemoor WMC     
+   Alverthorpe WMC         Littlemoor 'A'     
 N Webster           21 P Jacques           16 
 N Fletcher          21 M Fulton            10 
 M Brain             21 Gary Smith           6 
@@ -1773,7 +1773,7 @@ E Wearing           21 Peter Senior        11
         Aggregate: 188         Aggregate: 173 
 
       Division 1            Tue 7th May       
-    Littlemoor WMC         Pudsey BC Ltd      
+    Littlemoor 'A'         Pudsey BC Ltd      
 Dave Cooper         21 C Hatton            10 
 N Roper             15 M Smith             21 
 D Towning           21 G Wike              14 
@@ -2388,7 +2388,7 @@ D Pitchforth        15 Ryan Clark          21
         Aggregate: 193         Aggregate: 196 
 
       Division 1            Tue 14th May      
-    Littlemoor WMC          Morton House      
+    Littlemoor 'A'          Morton House      
 P Jacques           21 M Parkes            15 
 N Roper             17 M Sweeney           21 
 D Reeves            16 M Holden            21 
@@ -3033,7 +3033,7 @@ P Firth             17 C Hill              21
         Aggregate: 154         Aggregate: 180 
 
       Division 1            Tue 21st May      
-    Netherton Con          Littlemoor WMC     
+    Netherton Con          Littlemoor 'A'     
 A Daykin            21 I Jacques           13 
 J Dyson             21 D Towning           17 
 C Gant              21 M Fulton            18 
@@ -3663,7 +3663,7 @@ E Wearing           21 K Smith             19
         Aggregate: 168         Aggregate: 197 
 
       Division 1            Tue 28th May      
-    Littlemoor WMC     Spen Victoria CB & AC  
+    Littlemoor 'A'     Spen Victoria CB & AC  
 D Reeves             9 Simon Walder        21 
 Dave Cooper         15 Harry Seehra        21 
 M Fulton            21 Ross Ingham          6 
@@ -4263,7 +4263,7 @@ J Leonard            9 R Gilbert           21
         Aggregate: 111         Aggregate: 136 
 
       Division 1            Tue 4th Jun       
-    Crossgates BC          Littlemoor WMC     
+    Crossgates BC          Littlemoor 'A'     
 M Taylor            21 M Fulton            10 
 J Cranston          21 D Reeves            16 
 P Wilcox            21 P Jacques           12 
@@ -4923,7 +4923,7 @@ E Wearing           21 R Senior            19
         Aggregate: 194         Aggregate: 167 
 
       Division 1            Tue 11th Jun      
-    Littlemoor WMC      Thongsbridge C & BC   
+    Littlemoor 'A'      Thongsbridge C & BC   
 D Reeves            21 Jack Clarke         19 
 C Hebbard           18 Chris Hill          21 
 Glen Smith          21 Chris Kelly         17 
@@ -5388,7 +5388,7 @@ K Smith             16 Dave Fisher         21
         Aggregate: 199         Aggregate: 161 
 
       Division 1            Tue 2nd Jul       
-    Dearne Sports          Littlemoor WMC     
+    Dearne Sports          Littlemoor 'A'     
 D Poole             21 D Reeves             9 
 C Hill              21 Dave Cooper         18 
 J Sneddon           21 Glen Smith          20 
@@ -5883,7 +5883,7 @@ C Bedford           21 J Hardwick          12
         Aggregate: 174         Aggregate: 156 
 
       Division 1            Tue 9th Jul       
-    Littlemoor WMC        Lower Hopton WMC    
+    Littlemoor 'A'        Lower Hopton WMC    
 B Richards          21 S Pinfield          18 
 Dave Cooper         21 J Armitage          11 
 D Reeves            21 P Ingleby           12 
@@ -6483,7 +6483,7 @@ S Wood              12 R Bates             21
         Aggregate: 143         Aggregate: 126 
 
       Division 1            Tue 16th Jul      
-    Littlemoor WMC        Alverthorpe WMC     
+    Littlemoor 'A'        Alverthorpe WMC     
 D Reeves            21 M Brain             10 
 Dave Cooper         21 Scott Fisher        16 
 D Towning           21 N Webster           12 
@@ -7143,7 +7143,7 @@ P Smith             21 K Nixon             19
         Aggregate: 188         Aggregate: 174 
 
       Division 1            Tue 23rd Jul      
-    Pudsey BC Ltd          Littlemoor WMC     
+    Pudsey BC Ltd          Littlemoor 'A'     
 L Griffin           21 I Jacques           14 
 C Mordue            21 S King               7 
 J Hanson            21 P Jacques            9 
@@ -7758,7 +7758,7 @@ Andy Sorsby         16 J Webster           21
         Aggregate: 193         Aggregate: 180 
 
       Division 1            Tue 30th Jul      
-     Morton House          Littlemoor WMC     
+     Morton House          Littlemoor 'A'     
 Adrian Leach        21 D Reeves             9 
 R Dunford           21 Glen Smith          15 
 S Goldthorpe        11 D Towning           21 
@@ -8403,7 +8403,7 @@ J Sneddon           21 A Tattersley        19
         Aggregate: 196         Aggregate: 173 
 
       Division 1            Tue 6th Aug       
-    Littlemoor WMC         Netherton Con      
+    Littlemoor 'A'         Netherton Con      
 D Reeves             8 M Bramall           21 
 Dave Cooper         21 C Gant              12 
 Gary Smith          21 G McMahon            6 
@@ -9033,7 +9033,7 @@ K Smith             19 J Sneddon           21
         Aggregate: 208         Aggregate: 132 
 
       Division 1            Tue 13th Aug      
-Spen Victoria CB & AC      Littlemoor WMC     
+Spen Victoria CB & AC      Littlemoor 'A'     
 Richard Crowther    21 D Metcalfe          11 
 Peter Senior        21 Gary Smith           2 
 Mark Farmer         18 Dave Cooper         21 
@@ -9633,7 +9633,7 @@ R Gilbert           21 M Hirst             17
         Aggregate: 141         Aggregate: 138 
 
       Division 1            Tue 20th Aug      
-    Littlemoor WMC         Crossgates BC      
+    Littlemoor 'A'         Crossgates BC      
 Glen Smith          11 M Hughes            21 
 A Denton            21 J Schofield         18 
 D Towning           21 P Wilcox            14 
@@ -10293,7 +10293,7 @@ C Gant               8 D Poole             21
         Aggregate: 186         Aggregate: 173 
 
       Division 1            Tue 27th Aug      
- Thongsbridge C & BC       Littlemoor WMC     
+ Thongsbridge C & BC       Littlemoor 'A'     
 Andy Spragg         21 D Towning           13 
 Andy Sorsby         21 D Reeves            10 
 Chris Kelly         21 N McPhail           10 

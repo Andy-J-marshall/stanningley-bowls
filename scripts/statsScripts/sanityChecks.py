@@ -1,15 +1,14 @@
 import json
 import os
 import playerStatsHelper
-import clubDetails
 import statsHelper
 
 
-def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
+def checkPlayerStats(playerStats, filePath, checkTeamStatsBool, players, days):
     print("Running sanity checks on player stats")
     print("------------")
 
-    if len(players) != len(clubDetails.players):
+    if len(players) == 0:
         raise Exception("Missing players from player stats")
 
     for p in players:
@@ -17,10 +16,12 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
         stats = playerStats[player]
 
         # Check values have increased or stayed the same compared to the previous stats in the file
-        checkPlayerStatsValuesIncreased(stats, player, filePath, checkTeamStatsBool)
+        checkPlayerStatsValuesIncreased(
+            stats, player, filePath, checkTeamStatsBool, days
+        )
 
         if checkTeamStatsBool:
-            checkPlayerTeamStats(stats)
+            checkPlayerTeamStats(stats, days)
 
         # check games played
         if stats["totalGamesPlayed"] < 0 or stats["totalGamesPlayed"] > 200:
@@ -132,7 +133,9 @@ def checkPlayerStats(playerStats, players, filePath, checkTeamStatsBool):
         checkForDuplicateResults(stats["results"], player)
 
 
-def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamStatsBool):
+def checkPlayerStatsValuesIncreased(
+    updatedStats, player, filePath, checkTeamStatsBool, teamDays
+):
     if not os.path.exists(filePath):
         print("No previous stats to compare against")
         return
@@ -258,7 +261,7 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamSta
 
         # Check team stats
         if checkTeamStatsBool:
-            for team in clubDetails.teamDays:
+            for team in teamDays:
                 teamName = statsHelper.returnTeamNameToStoreData(team).lower()
                 playerTeamStats = updatedStats[teamName]
 
@@ -275,8 +278,8 @@ def checkPlayerStatsValuesIncreased(updatedStats, player, filePath, checkTeamSta
                     )
 
 
-def checkPlayerTeamStats(updatedStats):
-    for team in clubDetails.teamDays:
+def checkPlayerTeamStats(updatedStats, teamDays):
+    for team in teamDays:
         teamName = statsHelper.returnTeamNameToStoreData(team)
         playerTeamStats = updatedStats[teamName.lower()]
 
@@ -288,12 +291,12 @@ def checkPlayerTeamStats(updatedStats):
             raise Exception(f"aggDiff for {team} incorrect?")
 
 
-def checksTeamStats(allTeamResults, filePath):
+def checksTeamStats(allTeamResults, filePath, teamDays):
     print("Running sanity checks on team stats")
     print("------------")
 
     # Check values have increased or stayed the same compared to the previous stats in the file
-    checkTeamStatsValuesIncreased(allTeamResults, filePath)
+    checkTeamStatsValuesIncreased(allTeamResults, filePath, teamDays)
 
     # Check the A and B teams are not mixed up
     checkTeamNotProcessedTwice(allTeamResults)
@@ -335,7 +338,7 @@ def checksTeamStats(allTeamResults, filePath):
         checkForDuplicateResults(team["results"], dayForTeam)
 
 
-def checkTeamStatsValuesIncreased(updatedStats, filePath):
+def checkTeamStatsValuesIncreased(updatedStats, filePath, teamDays):
     if not os.path.exists(filePath):
         print("No previous stats to compare against")
         return
@@ -344,7 +347,7 @@ def checkTeamStatsValuesIncreased(updatedStats, filePath):
         file = json.load(jsonFile)
         existingTeamStats = file["teamResults"]
 
-        if len(updatedStats) != len(clubDetails.teamDays):
+        if len(updatedStats) != len(teamDays):
             raise Exception("Team missing from team stats")
 
         for team in existingTeamStats:

@@ -3,14 +3,15 @@ import IndividualPlayerStats from '../components/playerStats/IndividualPlayerSta
 import PlayerStatSummary from '../components/playerStats/playerStatSummary';
 import PlayerStatsOptions from '../components/playerStats/playerStatsOptions';
 import Search from '../components/playerStats/search';
-import { returnPlayerStats } from '../helpers/playerStatsHelper';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import { config } from '../config';
 import {
     PlayerStatsProps,
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
 } from '../types/interfaces';
+import { returnPlayerStats } from '../helpers/playerStatsHelper';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
@@ -26,8 +27,13 @@ import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 function PlayerStats(props: PlayerStatsProps) {
     const allClubsStats = props.allClubsStats;
     const clubStats = props.clubStats;
+    const littlemoorStats = props.littlemoorStats;
     const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
     const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
+    const littlemoorStatsForEveryYearArray =
+        props.littlemoorStatsForEveryYearArray;
+
+    const clubName = config.teamNames.shortName.toLowerCase();
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
@@ -36,6 +42,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [statsToUse, setStatsToUse] = useState(clubStats?.playerResults);
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
+    const [clubNameForStats, setClubNameForStats] = useState(clubName);
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         clubStatsForEveryYearArray
     );
@@ -57,22 +64,45 @@ function PlayerStats(props: PlayerStatsProps) {
         }
         setLoaded(true);
 
-        // Set whether to show club stats or all clubs stats
+        // Set which stats to show
         if (showClubStats) {
-            setStatsToUse(clubStats?.playerResults);
-            setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+            switch (clubNameForStats) {
+                case 'littlemoor':
+                    setStatsToUse(littlemoorStats?.playerResults);
+                    setAllYearsStatsToUseArray(
+                        littlemoorStatsForEveryYearArray
+                    );
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  littlemoorStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(
+                                  littlemoorStats?.playerResults
+                              )
+                    );
+                    break;
+                case clubName:
+                default:
+                    setStatsToUse(clubStats?.playerResults);
+                    setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  clubStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(clubStats?.playerResults)
+                    );
+                    break;
+            }
         } else {
             setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
         }
 
-        // Find the title, team names and players list fo the selected stats
+        // Find the title and players list fo the selected stats
         if (showStatsSinceStart) {
             setYearInTitle('');
-
-            setTeamNames(
-                returnTeamNamesWithGamesForAllYears(clubStatsForEveryYearArray)
-            );
 
             const playerListAllYears = allYearsStatsToUseArray.flatMap(
                 (yearStats) => Object.keys(yearStats.playerResults)
@@ -81,19 +111,20 @@ function PlayerStats(props: PlayerStatsProps) {
         } else {
             setYearInTitle(
                 new Date().getFullYear() !== Number(clubStats.statsYear)
-                    ? clubStats.statsYear
+                    ? allClubsStats.statsYear
                     : ''
             );
-
-            setTeamNames(returnTeamNamesWithGames(clubStats?.playerResults));
 
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         }
     }, [
         clubStats,
         clubStatsForEveryYearArray,
+        littlemoorStats,
+        littlemoorStatsForEveryYearArray,
         showClubStats,
         showStatsSinceStart,
+        clubNameForStats,
         loaded,
     ]);
 
@@ -151,6 +182,12 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
+    function clubSpecificCallback(chosenClubName: string) {
+        setClubNameForStats(chosenClubName);
+
+        scrollToBottom();
+    }
+
     const handleSearchChange = async (selected: any) => {
         setValue(selected);
         const searchedPlayerName = selected[0];
@@ -191,7 +228,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
         if (showStatsSinceStart && teamNameForStats) {
             playerStatsForSummary = returnTeamPlayerStatsForAllYears(
-                clubStatsForEveryYearArray,
+                allYearsStatsToUseArray,
                 teamNameForStats
             );
         }
@@ -254,6 +291,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 allClubsStatsCallback={allClubsStatsCallback}
                 allYearStatsCallback={allYearStatsCallback}
                 teamSpecificCallback={teamSpecificCallback}
+                clubSpecificCallback={clubSpecificCallback}
                 onlySinglesCallback={onlySinglesCallback}
                 onlyPairsCallback={onlyPairsCallback}
                 onlyHomeCallback={onlyHomeCallback}

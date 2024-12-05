@@ -13,6 +13,7 @@ export class PlayerStatOptionsPage {
     public readonly cupOnlyRadio: Locator;
     public readonly allVenuesRadio: Locator;
     public readonly teamSelectDropdown: Locator;
+    public readonly clubSelectDropdown: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -43,7 +44,8 @@ export class PlayerStatOptionsPage {
         this.allVenuesRadio = page.locator(
             ".form-check input[id='#all-venues-radio']"
         );
-        this.teamSelectDropdown = page.getByRole('button', { name: 'All' });
+        this.teamSelectDropdown = page.locator('#team-select-dropdown');
+        this.clubSelectDropdown = page.locator('#club-select-dropdown');
     }
 
     async selectAllClubsStatsSwitch() {
@@ -99,5 +101,12 @@ export class PlayerStatOptionsPage {
 
     async selectAllTeamsFromTeamDropdown() {
         await this.teamSelectDropdown.click();
+    }
+
+    async selectClubFromDropdown(club: string) {
+        await this.clubSelectDropdown.click();
+        await this.page
+            .getByRole('button', { exact: true, name: club })
+            .click();
     }
 }

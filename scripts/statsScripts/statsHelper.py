@@ -1,5 +1,3 @@
-import clubDetails
-
 leaguesWithGamesTo26 = ["wednesday pairs airewharfe"]
 
 cupText = [
@@ -68,25 +66,25 @@ def findCupGameRows(allRowsInFile, endRow):
     return cupGameRows
 
 
-def returnTeamNameForLeague(allRowsInFile, teamNameForLeague):
+def returnTeamNameForLeague(allRowsInFile, teamNameForLeague, displayTeamName, teamNames):
     possibleTeamNamesUsed = []
-    teamNameToUse = clubDetails.displayTeamName
+    teamNameToUse = displayTeamName
 
     for rowNumber, line in enumerate(allRowsInFile, start=0):
         row = allRowsInFile[rowNumber]
         if row and type(row) is str:
-            for possibleTeamName in clubDetails.teamNames:
+            for possibleTeamName in teamNames:
                 rowValue = row.lower().strip()
                 if possibleTeamName.lower() in rowValue:
                     # Filter out A team stats for B team and vice versa
                     if teamNameForLeague.lower().endswith(" (a)"):
                         if possibleTeamName.lower().endswith((" b", " 'b'")):
                             continue
-                        teamNameToUse = clubDetails.displayTeamName + " A"
+                        teamNameToUse = displayTeamName + " A"
                     elif teamNameForLeague.lower().endswith(" (b)"):
                         if possibleTeamName.lower().endswith((" a", " 'a'")):
                             continue
-                        teamNameToUse = clubDetails.displayTeamName + " B"
+                        teamNameToUse = displayTeamName + " B"
                     possibleTeamNamesUsed.append(possibleTeamName)
 
     if len(possibleTeamNamesUsed) == 0:

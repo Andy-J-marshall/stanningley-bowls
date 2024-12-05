@@ -40,7 +40,7 @@ export function returnPlayerStats(
     if (!playersStats || !playersStats[player]) {
         return null;
     }
-    
+
     const stats = playersStats[player];
     const {
         totalAgg,

@@ -1,8 +1,11 @@
+const coreClubName = 'Stanningley';
+
 export const config = {
     teamNames: {
         fullName: 'Stanningley Park Bowling Club',
-        shortName: 'Stanningley',
+        shortName: coreClubName,
     },
+    clubsForPlayersStats: [coreClubName.toLowerCase(), 'littlemoor'],
     socialLinks: {
         instagramUrl: 'https://www.instagram.com/StanningleyParkBowls',
         facebookUrl: 'https://www.facebook.com/StanningleyBowlsClub',
@@ -21,17 +24,8 @@ export const config = {
         bowlingPriceOnly: '10',
         leedsCouncilFee: '45',
     },
-    days: {
-        'monday combined leeds': 'Monday Combined',
-        'tuesday vets leeds': 'Tuesday Vets',
-        'tuesday leeds': 'Tuesday',
-        'wednesday half holiday leeds': 'Wednesday Half Holiday',
-        'wednesday pairs airewharfe': 'Wednesday Pairs',
-        'thursday vets leeds': 'Thursday Vets',
-        'saturday leeds': 'Saturday',
-        'saturday leeds (b)': 'Saturday B',
-    },
     allTeamsInLeaguesSince2013: [
+        // Leagues for club
         'monday combined leeds',
         'monday airewharfe',
         'monday airewharfe (a)',
@@ -48,44 +42,55 @@ export const config = {
         'thursday vets leeds',
         'thursday vets leeds (a)',
         'thursday vets leeds (b)',
+        'leeds ladies',
         'saturday leeds',
         'saturday leeds (a)',
         'saturday leeds (b)',
         'saturday bradford',
         'saturday bradford (a)',
         'saturday bradford (b)',
+
+        // Other leagues
+        'monday bradford',
+        'monday bradford (a)',
+        'monday bradford (b)',
+        'tuesday airewharfe',
+        'tuesday airewharfe (a)',
+        'tuesday airewharfe (b)',
+        'mirfield',
+        'mirfield (a)',
+        'mirfield (b)',
+        'spen valley',
+        'spen valley (a)',
+        'spen valley (b)',
+        'thursday vets bradford',
+        'thursday vets bradford (a)',
+        'thursday vets bradford (b)',
     ],
     historicTeamInfo: [
         {
             teamNames: ['monday combined leeds', 'monday airewharfe'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['tuesday vets leeds'],
-            bTeamForLeagueBool: false,
         },
         {
             teamNames: ['tuesday leeds'],
-            bTeamForLeagueBool: false,
         },
         {
             teamNames: [
                 'wednesday half holiday leeds',
                 'wednesday half holiday bradford',
             ],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['wednesday pairs airewharfe'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['thursday vets leeds'],
-            bTeamForLeagueBool: true,
         },
         {
             teamNames: ['saturday leeds', 'saturday bradford'],
-            bTeamForLeagueBool: true,
         },
     ],
 };

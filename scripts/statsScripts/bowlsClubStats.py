@@ -1,5 +1,6 @@
 import re
-from clubDetails import teamNames, teamDays, players, displayTeamName
+import argparse
+
 from teamStatsHelper import (
     findHomeAndAwayTeamGameRows,
     isCupGame,
@@ -27,13 +28,29 @@ from playerStatsHelper import (
     calculatePlayerStats,
 )
 
-playerStats = returnListOfPlayerStats(teamDays, True, players)
+# Set up argument parser
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--club",
+    choices=["littlemoor", "stanningley"],
+    required=True,
+    help="Specify the club details to use.",
+)
+args = parser.parse_args()
+
+# Import the appropriate club details module based on the argument
+if args.club == "littlemoor":
+    import littlemoorDetails as clubDetails
+elif args.club == "stanningley":
+    import clubDetails
+
+playerStats = returnListOfPlayerStats(clubDetails.teamDays, True, clubDetails.players)
 teamsProcessed = []
 allTeamResults = []
 
-print("UPDATING STATS:", teamNames[0].upper())
+print("UPDATING STATS:", clubDetails.teamNames[0].upper())
 
-for team in teamDays:
+for team in clubDetails.teamDays:
     print("Updating Stats: " + team)
 
     league = removeSuffixFromTeamName(team)
@@ -52,10 +69,10 @@ for team in teamDays:
 
         # Find team name used by team in this league
         teamNameUsedForLeague, teamNameToUse = returnTeamNameForLeague(
-            allRowsInFile, team
+            allRowsInFile, team, clubDetails.displayTeamName, clubDetails.teamNames
         )
 
-        checkTeamName(team, teamNameUsedForLeague, displayTeamName)
+        checkTeamName(team, teamNameUsedForLeague, clubDetails.displayTeamName)
 
         # Find the cup games in the stats
         cupGameRows = findCupGameRows(allRowsInFile, endRow)
@@ -63,7 +80,7 @@ for team in teamDays:
         #### TEAM STATS ####
         # Find team's home and away games
         homeRows, awayRows = findHomeAndAwayTeamGameRows(
-            allRowsInFile, teamNameUsedForLeague
+            allRowsInFile, teamNameUsedForLeague, clubDetails.displayTeamName
         )
 
         # Find team results and scores
@@ -109,7 +126,10 @@ for team in teamDays:
                 awayAgg = awayScore
             else:
                 baseRowDownAdjustment = returnBaseRowDownNumber(False, True)
-                adjustmentForLeagueInt = returnAggRowDownNumber(league)
+                adjustmentForLeagueInt = returnAggRowDownNumber(
+                    team,
+                    clubDetails.teamsWithWithDifferentNumberOfPlayersToLeagueNorm,
+                )
                 adjustFor6PlayerTeamsInt = returnAdjustedRowNumberFor6PlayerTeams(
                     league, 0
                 )
@@ -203,7 +223,12 @@ for team in teamDays:
         # Find rows in spreadsheet for players' games
         homePlayerRows, awayPlayerRows, combinedRows = (
             returnHomeAndAwayPlayerRowsForTeam(
-                allRowsInFile, teamNameUsedForLeague, league
+                allRowsInFile,
+                teamNameUsedForLeague,
+                league,
+                clubDetails.players,
+                clubDetails.duplicatePlayerNames,
+                clubDetails.traitorPlayers,
             )
         )
 
@@ -258,11 +283,11 @@ dataToExport = {
     "statsYear": year,
 }
 
-filename = f"src/data/{displayTeamName.lower()}Stats{year}.json"
+filename = f"src/data/{clubDetails.displayTeamName.lower()}Stats{year}.json"
 
 # Sanity checks on the data
-checksTeamStats(allTeamResults, filename)
-checkPlayerStats(playerStats, players, filename, True)
+checksTeamStats(allTeamResults, filename, clubDetails.teamDays)
+checkPlayerStats(playerStats, filename, True, clubDetails.players, clubDetails.teamDays)
 
 # Save the file
 saveFile(filename, dataToExport)

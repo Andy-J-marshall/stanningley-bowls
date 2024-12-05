@@ -187,6 +187,7 @@ test.describe('Player summary stats - filters', () => {
         await yearSelectPage.select2013Year();
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
 
+        await expect(playerSummaryPage.playerRows).toHaveCount(12);
         await playerSummaryPage.validateSummaryStats(20, 16, 80, 6.0);
     });
 
@@ -255,5 +256,6 @@ test.describe('Player summary stats - filters', () => {
         await playerStatOptionsPage.selectAllClubsStatsSwitch();
 
         await expect(playerStatOptionsPage.teamSelectDropdown).toBeDisabled();
+        await expect(playerStatOptionsPage.clubSelectDropdown).toBeDisabled();
     });
 });

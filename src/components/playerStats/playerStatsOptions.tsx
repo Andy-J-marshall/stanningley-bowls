@@ -7,13 +7,15 @@ import {
     DropdownButton,
     Dropdown,
 } from 'react-bootstrap';
+import { config } from '../../config';
 import { PlayerStatsOptionsProps } from '../../types/interfaces';
-import { formatTeamName } from '../../helpers/utils';
+import { capitalizeText, formatTeamName } from '../../helpers/utils';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allClubsStatsCallback = props.allClubsStatsCallback;
     const allYearStatsCallback = props.allYearStatsCallback;
     const teamSpecificCallback = props.teamSpecificCallback;
+    const clubSpecificCallback = props.clubSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
     const onlyPairsCallback = props.onlyPairsCallback;
     const onlyHomeCallback = props.onlyHomeCallback;
@@ -21,6 +23,8 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const onlyCupCallback = props.onlyCupCallback;
     const searchedPlayerName = props.searchedPlayerName;
     const teamNames = props.teamNames;
+
+    const defaultTeamDropdownTitle = 'All Teams';
 
     const [allYearToggle, setAllYearToggle] = useState(false);
     const [allClubsToggle, setAllClubsToggle] = useState(false);
@@ -32,18 +36,20 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const [awayOnlyToggle, setAwayOnlyToggle] = useState(false);
     const [cupOnlyToggle, setCupOnlyToggle] = useState(false);
     const [disableOtherOptions, setDisableOtherOptions] = useState(false);
-    const [disableTeamDropdown, setDisableTeamDropdown] = useState(false);
-
-    const defaultTeamDropdownTitle = 'All Teams';
+    const [disableTeamAndClubDropdown, setDisableTeamAndClubDropdown] =
+        useState(false);
     const [teamDropdownTitle, setTeamDropdownTitle] = useState(
         defaultTeamDropdownTitle
+    );
+    const [clubDropdownTitle, setClubDropdownTitle] = useState(
+        config.teamNames.shortName
     );
 
     function toggleAllClubsStats(event: React.ChangeEvent<HTMLInputElement>) {
         const allClubsStatsToggle = event.currentTarget.checked;
         setAllClubsToggle(allClubsStatsToggle);
         allClubsStatsCallback(allClubsStatsToggle);
-        setDisableTeamDropdown(allClubsStatsToggle);
+        setDisableTeamAndClubDropdown(allClubsStatsToggle);
     }
 
     function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
@@ -54,9 +60,9 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     function selectSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
+            setTeamDropdownTitle(defaultTeamDropdownTitle);
             teamSpecificCallback('');
             setDisableOtherOptions(false);
-            setTeamDropdownTitle(defaultTeamDropdownTitle);
         } else {
             setTeamDropdownTitle(formatTeamName(teamName));
             teamSpecificCallback(teamName);
@@ -74,6 +80,15 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             home(false);
             cup(false);
         }
+    }
+
+    function selectClubStats(clubName: string) {
+        setClubDropdownTitle(capitalizeText([clubName]));
+        clubSpecificCallback(clubName);
+
+        setTeamDropdownTitle(defaultTeamDropdownTitle);
+        teamSpecificCallback('');
+        setDisableOtherOptions(false);
     }
 
     function toggleAllMatchTypes() {
@@ -160,7 +175,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>OPTIONS</h6>
                                 <Form.Check
                                     inline
@@ -168,7 +183,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     id="#all-club-stats-select-switch"
                                     onChange={toggleAllClubsStats}
                                     type="switch"
-                                    label="Include other clubs"
+                                    label="All clubs"
                                     checked={allClubsToggle}
                                     disabled={disableOtherOptions}
                                 />
@@ -182,42 +197,67 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     checked={allYearToggle}
                                 />
                             </Col>
-                            <Col xs={12} md={3}>
-                                <h6>TEAMS</h6>
-                                <DropdownButton
-                                    drop="up"
-                                    size="sm"
-                                    variant="light"
-                                    id="team-select-dropdown"
-                                    title={teamDropdownTitle}
-                                    disabled={disableTeamDropdown}
-                                >
-                                    {teamNames.map((teamName, index) => (
+                            <Col xs={12} md={6} lg={3}>
+                                <h6>CLUBS & TEAMS</h6>
+                                <InputGroup>
+                                    <DropdownButton
+                                        drop="up"
+                                        size="sm"
+                                        variant="light"
+                                        id="club-select-dropdown"
+                                        title={clubDropdownTitle}
+                                        disabled={disableTeamAndClubDropdown}
+                                    >
+                                        {config.clubsForPlayersStats.map(
+                                            (club, index) => (
+                                                <Dropdown.Item
+                                                    key={index}
+                                                    id={'#club-option-' + club}
+                                                    onClick={() =>
+                                                        selectClubStats(club)
+                                                    }
+                                                >
+                                                    {capitalizeText([club])}
+                                                </Dropdown.Item>
+                                            )
+                                        )}
+                                    </DropdownButton>
+                                    <div style={{ padding: '0 0.3rem' }}></div>
+                                    <DropdownButton
+                                        drop="up"
+                                        size="sm"
+                                        variant="light"
+                                        id="team-select-dropdown"
+                                        title={teamDropdownTitle}
+                                        disabled={disableTeamAndClubDropdown}
+                                    >
+                                        {teamNames.map((teamName, index) => (
+                                            <Dropdown.Item
+                                                key={index}
+                                                id={'#team-option-' + index}
+                                                onClick={() =>
+                                                    selectSpecificTeamStats(
+                                                        teamName
+                                                    )
+                                                }
+                                            >
+                                                {formatTeamName(teamName)}
+                                            </Dropdown.Item>
+                                        ))}
+                                        <Dropdown.Divider />
                                         <Dropdown.Item
-                                            key={index}
-                                            id={'#team-option-' + index}
+                                            id="#team-option-all"
                                             onClick={() =>
-                                                selectSpecificTeamStats(
-                                                    teamName
-                                                )
+                                                selectSpecificTeamStats('')
                                             }
                                         >
-                                            {formatTeamName(teamName)}
+                                            {defaultTeamDropdownTitle}
                                         </Dropdown.Item>
-                                    ))}
-                                    <Dropdown.Divider />
-                                    <Dropdown.Item
-                                        id="#team-option-all"
-                                        onClick={() =>
-                                            selectSpecificTeamStats('')
-                                        }
-                                    >
-                                        {defaultTeamDropdownTitle}
-                                    </Dropdown.Item>
-                                </DropdownButton>
+                                    </DropdownButton>
+                                </InputGroup>
                             </Col>
-                            <Col xs={12} md={3}>
-                                <h6>GAME TYPES</h6>
+                            <Col xs={12} md={6} lg={3}>
+                                <h6>GAME TYPE</h6>
                                 <InputGroup>
                                     <Form.Check
                                         inline
@@ -254,7 +294,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} md={3}>
+                            <Col xs={12} md={6} lg={3}>
                                 <h6>VENUE</h6>
                                 <InputGroup>
                                     <Form.Check

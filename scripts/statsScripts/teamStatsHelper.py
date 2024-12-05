@@ -1,4 +1,3 @@
-import clubDetails
 import statsHelper
 
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
@@ -71,16 +70,25 @@ def returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt):
     return rowsDownAdjustmentInt
 
 
-def returnAggRowDownNumber(league):
-    if league.lower() == "monday airewharfe":
+def returnAggRowDownNumber(team, teamsWithDifferentNumberOfPlayers):
+    lowerTeam = team.lower()
+    if lowerTeam.startswith("monday airewharfe"):
         return 2
-    if league.lower() == "saturday airewharfe":
+
+    if (
+        lowerTeam.startswith("saturday airewharfe")
+        and team not in teamsWithDifferentNumberOfPlayers
+    ):
         return 2
-    # this won't work for saturday bradford teams in division 3 or below from 2025 due to 8 players in lower leagues
-    if league.lower() == "saturday bradford":
+
+    if lowerTeam.startswith("saturday bradford"):
+        if team in teamsWithDifferentNumberOfPlayers:
+            return 1
         return 3
-    if league.lower() == "mirfield":
+
+    if lowerTeam.startswith("mirfield"):
         return 4
+
     return 0
 
 
@@ -92,7 +100,7 @@ def isCupGame(cupRow):
     return False
 
 
-def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
+def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, displayTeamName):
     homeRow = []
     awayRow = []
     for rowNumber, line in enumerate(allRowsInFile, start=0):
@@ -103,10 +111,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
 
             # Check if A and B team are playing each other
             aTeamPlayingBTeamBool = False
-            if (
-                not hostedCupGame
-                and row.lower().count(clubDetails.displayTeamName.lower()) > 1
-            ):
+            if not hostedCupGame and row.lower().count(displayTeamName.lower()) > 1:
                 aTeamPlayingBTeamBool = True
                 teamLower = teamNameUsedForLeague.lower()
                 rowLower = row.lower().strip()
@@ -131,7 +136,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague):
             ):
                 words = row.strip().lower().split()
                 firstWord = words[0].lower()
-                if firstWord == clubDetails.displayTeamName.lower():
+                if firstWord == displayTeamName.lower():
                     homeRow.append(rowNumber)
                 else:
                     awayRow.append(rowNumber)

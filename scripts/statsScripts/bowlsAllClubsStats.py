@@ -1,10 +1,7 @@
-from clubDetails import allDays, players
+import playerDetails
 from sanityChecks import checkPlayerStats
 from fileUtils import findEndRowOfFile, returnTodayDate, saveFile, year
-from statsHelper import (
-    findCupGameRows,
-    removeSuffixFromTeamName,
-)
+from statsHelper import findCupGameRows
 from playerStatsHelper import (
     returnListOfPlayerStats,
     calculatePlayerStats,
@@ -13,18 +10,13 @@ from playerStatsHelper import (
 )
 
 
-playerStats = returnListOfPlayerStats(allDays, False, players)
-leaguesProcessed = []
+playerStats = returnListOfPlayerStats(
+    playerDetails.allLeagues, False, playerDetails.players
+)
 
 print("UPDATING ALL PLAYER STATS")
 
-for league in allDays:
-    # To prevent duplication
-    league = removeSuffixFromTeamName(league)
-    if league in leaguesProcessed:
-        continue
-    leaguesProcessed.append(league)
-
+for league in playerDetails.allLeagues:
     # Goes through each sheet in turn
     with open(f"bowlsnetReports/{year}/{league}.txt", "r") as file:
         print("Updating Stats: " + league)
@@ -38,7 +30,7 @@ for league in allDays:
 
         # Find rows in spreadsheet for players' games
         homePlayerRow, awayPlayerRow = returnHomeAndAwayPlayerRowsForAllTeams(
-            allRowsInFile
+            allRowsInFile, playerDetails.players, playerDetails.duplicatePlayerNames
         )
 
         # Find each players' results
@@ -85,7 +77,12 @@ for league in allDays:
 
                 # Checks player plays for expected team
                 correctPlayerFound = checkCorrectTeamForPlayer(
-                    allRowsInFile, rowNumber, homeGame, awayGame, cupHome, cupAway
+                    allRowsInFile,
+                    rowNumber,
+                    homeGame,
+                    awayGame,
+                    cupHome,
+                    cupAway,
                 )
 
                 # Find result details
@@ -114,7 +111,9 @@ dataToExport = {
 filename = f"src/data/allClubsStats{year}.json"
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, players, filename, False)
+checkPlayerStats(
+    playerStats, filename, False, playerDetails.players, playerDetails.allLeagues
+)
 
 # Save the file
 saveFile(filename, dataToExport)

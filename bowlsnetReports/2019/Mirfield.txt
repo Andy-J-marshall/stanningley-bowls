@@ -3,7 +3,7 @@
 === Complete List
 
        Division 1               Tue 16th Apr        
-      Crosland Moor              Littlemoor         
+      Crosland Moor              Littlemoor 'A'       
 Gary Siswick           21 Craig Hebbard          12 
 Terry Brook            21 Alexander Wolfenden    16 
 Wayne Moseley          21 Steve Gardner          16 
@@ -496,7 +496,7 @@ Nigel Bloomer          21 Andy Sorsby            17
            Aggregate: 174            Aggregate: 180 
 
        Division 1               Tue 23rd Apr        
-       Littlemoor               Dearne Sports       
+       Littlemoor 'A'             Dearne Sports       
 Craig Farquharson      12 Rob Wiltshire          21 
 Adam Wider             20 Andrew Whittaker       21 
 Matthew Jacques        15 Ian Chappell           21 
@@ -974,7 +974,7 @@ Trevor Boothroyd        7 Josh Brown             21
            Aggregate: 157            Aggregate: 183 
 
        Division 1               Tue 30th Apr        
-       Littlemoor               Woodland Park       
+       Littlemoor 'A'             Woodland Park       
 Alexander Wolfenden    21 Martin Wilson          20 
 Paul Wilczynski        18 Andrew Jones           21 
 John Armitage          21 Adam Jones             19 
@@ -1467,7 +1467,7 @@ Mark Bramall           21 Steve Gilroy           18
            Aggregate: 200            Aggregate: 164 
 
        Division 1                Tue 7th May        
-      Lower Hopton               Littlemoor         
+      Lower Hopton               Littlemoor 'A'       
 Ian Booth              21 Craig Farquharson       8 
 Liam Griffin           21 Paul Wilczynski        17 
 Robert Hitchen         21 Paul Jacques           10 
@@ -1930,7 +1930,7 @@ Kieran O'Prey          21 Nigel Briggs           11
            Aggregate: 205            Aggregate: 145 
 
        Division 1               Tue 14th May        
-       Littlemoor                 Pudsey BC         
+       Littlemoor 'A'               Pudsey BC         
 Alexander Wolfenden    11 Chris Mordue           21 
 Nathan Dobson          19 James Hanson           21 
 Jack Bowes             11 Josh Mordue            21 
@@ -2408,7 +2408,7 @@ Nigel Briggs           21 Steve Shannon          17
            Aggregate: 184            Aggregate: 158 
 
        Division 1               Tue 21st May        
-      Thongsbridge               Littlemoor         
+      Thongsbridge               Littlemoor 'A'       
 Mark Bramall           21 John Armitage          12 
 Ryan Clark             21 Adam Wider             10 
 Chris Kelly            21 Craig Farquharson       3 
@@ -2886,7 +2886,7 @@ Ray Whitwam            18 Andy Sorsby            21
            Aggregate: 164            Aggregate: 180 
 
        Division 1               Tue 28th May        
-       Littlemoor             Brighouse Sports      
+       Littlemoor 'A'           Brighouse Sports      
 Craig Farquharson      15 Nigel Bloomer          21 
 Nathan Dobson          17 Nigel Briggs           21 
 John Armitage          17 Peter Clarke           21 
@@ -3603,7 +3603,7 @@ Mark Atkinson          21 Ian Shuttleworth       19
            Aggregate: 199            Aggregate: 180 
 
        Division 1               Tue 11th Jun        
-       Littlemoor                Crossgates         
+       Littlemoor 'A'              Crossgates         
 Mark Allman            21 Steve Gilroy           14 
 Alexander Wolfenden    21 James Wilcox           15 
 Paul Wilczynski        21 Joseph Cranston        13 
@@ -4165,7 +4165,7 @@ Stephen Wainwright     21 Andrew Wood            12
            Aggregate: 201            Aggregate: 143 
 
        Division 1               Mon 17th Jun        
-   Ossett Flying Horse           Littlemoor         
+   Ossett Flying Horse           Littlemoor 'A'       
 Ian Shuttleworth       21 Marc Armitage          16 
 Neil Fletcher          21 Paul Jacques           19 
 Kevin Burns            21 Glen Smith             13 
@@ -4318,7 +4318,7 @@ Phillip Rann           21 Brian Stephenson        7
            Aggregate: 159            Aggregate: 117 
 
        Division 1                Tue 2nd Jul        
-       Littlemoor               Crosland Moor       
+       Littlemoor 'A'             Crosland Moor       
 Lee Wider              15 Gary Siswick           21 
 Paul Wilczynski        19 Terry Brook            21 
 Glen Pratt             11 Michael Sweeney        21 
@@ -4811,7 +4811,7 @@ Mark Booth             21 Nigel Briggs           17
            Aggregate: 203            Aggregate: 174 
 
        Division 1                Tue 9th Jul        
-      Dearne Sports              Littlemoor         
+      Dearne Sports              Littlemoor 'A'       
 Paul Bailey            21 Adam Wider              7 
 Ian Chappell           21 Alexander Wolfenden    14 
 Danny Hallas           21 Paul Jacques           16 
@@ -5289,7 +5289,7 @@ Graeme I Wilson        21 Matthew Richardson     13
            Aggregate: 169            Aggregate: 170 
 
        Division 1               Tue 16th Jul        
-      Woodland Park              Littlemoor         
+      Woodland Park              Littlemoor 'A'       
 Adam Jones             21 John Armitage          11 
 Martin Wilson          17 Alexander Wolfenden    21 
 Tommy Boyd Jnr         21 Craig Farquharson      20 
@@ -5782,7 +5782,7 @@ Kez Smith              21 Nick White             10
            Aggregate: 195            Aggregate: 163 
 
        Division 1               Tue 23rd Jul        
-       Littlemoor               Lower Hopton        
+       Littlemoor 'A'             Lower Hopton        
 Mark Allman            21 Wayne Ditchfield       15 
 John Armitage          21 Robert Hitchen          4 
 Jack Bowes             10 Ashley Tattersley      21 
@@ -6245,7 +6245,7 @@ Robert Hopper          21 Kieran O'Prey           9
            Aggregate: 196            Aggregate: 160 
 
        Division 1               Tue 30th Jul        
-        Pudsey BC                Littlemoor         
+        Pudsey BC                Littlemoor 'A'       
 Paul Bowes             21 Adam Wider             16 
 Jon Edmondson          13 Ian Jacques            21 
 James Hanson           21 Marc Armitage          11 
@@ -6680,7 +6680,7 @@ Adam Jones             21 Robert Hopper           9
            Aggregate: 183            Aggregate: 147 
 
        Division 1                Tue 6th Aug        
-       Littlemoor               Thongsbridge        
+       Littlemoor 'A'             Thongsbridge        
 Mark Allman            21 Ashley Daykin          11 
 Craig Hebbard          21 Andy Cairns            11 
 Adam Wider             21 Mark Bramall           13 
@@ -7186,7 +7186,7 @@ Andrew J Walker        21 Liam Fallas            19
            Aggregate: 195            Aggregate: 151 
 
        Division 1               Tue 13th Aug        
-    Brighouse Sports             Littlemoor         
+    Brighouse Sports             Littlemoor 'A'       
 Graham Roberts         21 Ian Jacques            14 
 Ronnie Wormald         21 Paul Jacques           16 
 Richard Hobson         21 Paul Wilczynski        18 
@@ -7711,7 +7711,7 @@ Gary Siswick           21 Dave Cooper             5
            Aggregate: 184            Aggregate: 153 
 
        Division 1               Tue 20th Aug        
-       Littlemoor            Ossett Flying Horse    
+       Littlemoor 'A'          Ossett Flying Horse    
 Mark Allman            21 Ian Shuttleworth        6 
 Paul Wilczynski        21 Craig Newton            8 
 Mark Dobson            21 Andy Webb              18 
@@ -8144,7 +8144,7 @@ Andy Webb              21 Jason McMahon          12
            Aggregate: 194            Aggregate: 134 
 
        Division 1               Tue 27th Aug        
-       Crossgates                Littlemoor         
+       Crossgates                Littlemoor 'A'       
 Joseph Cranston        21 Paul Jacques            8 
 Kevin Siddle           16 Alexander Wolfenden    21 
 James Wilcox           21 Brian Richards         14 

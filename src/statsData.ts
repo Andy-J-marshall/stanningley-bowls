@@ -20,6 +20,17 @@ import allClubsStats21 from './data/allClubsStats2021.json';
 import allClubsStats22 from './data/allClubsStats2022.json';
 import allClubsStats23 from './data/allClubsStats2023.json';
 import allClubsStats24 from './data/allClubsStats2024.json';
+import littlemoorStats13 from './data/littlemoorStats2013.json';
+import littlemoorStats14 from './data/littlemoorStats2014.json';
+import littlemoorStats15 from './data/littlemoorStats2015.json';
+import littlemoorStats16 from './data/littlemoorStats2016.json';
+import littlemoorStats17 from './data/littlemoorStats2017.json';
+import littlemoorStats18 from './data/littlemoorStats2018.json';
+import littlemoorStats19 from './data/littlemoorStats2019.json';
+import littlemoorStats21 from './data/littlemoorStats2021.json';
+import littlemoorStats22 from './data/littlemoorStats2022.json';
+import littlemoorStats23 from './data/littlemoorStats2023.json';
+import littlemoorStats24 from './data/littlemoorStats2024.json';
 
 // Stats for future years will need to be updated here
 const dataFiles = {
@@ -45,6 +56,17 @@ const dataFiles = {
     allClubsStats22,
     allClubsStats23,
     allClubsStats24,
+    littlemoorStats13,
+    littlemoorStats14,
+    littlemoorStats15,
+    littlemoorStats16,
+    littlemoorStats17,
+    littlemoorStats18,
+    littlemoorStats19,
+    littlemoorStats21,
+    littlemoorStats22,
+    littlemoorStats23,
+    littlemoorStats24,
 };
 
 const allYearClubStats = {
@@ -59,6 +81,20 @@ const allYearClubStats = {
     year2022: dataFiles.clubStats22,
     year2023: dataFiles.clubStats23,
     year2024: dataFiles.clubStats24,
+};
+
+const allYearLittlemoorStats = {
+    year2013: dataFiles.littlemoorStats13,
+    year2014: dataFiles.littlemoorStats14,
+    year2015: dataFiles.littlemoorStats15,
+    year2016: dataFiles.littlemoorStats16,
+    year2017: dataFiles.littlemoorStats17,
+    year2018: dataFiles.littlemoorStats18,
+    year2019: dataFiles.littlemoorStats19,
+    year2021: dataFiles.littlemoorStats21,
+    year2022: dataFiles.littlemoorStats22,
+    year2023: dataFiles.littlemoorStats23,
+    year2024: dataFiles.littlemoorStats24,
 };
 
 const allYearAllClubsStats = {
@@ -89,6 +125,20 @@ const clubStatsForEveryYearArray = [
     dataFiles.clubStats24,
 ];
 
+const littlemoorStatsForEveryYearArray = [
+    dataFiles.littlemoorStats13,
+    dataFiles.littlemoorStats14,
+    dataFiles.littlemoorStats15,
+    dataFiles.littlemoorStats16,
+    dataFiles.littlemoorStats17,
+    dataFiles.littlemoorStats18,
+    dataFiles.littlemoorStats19,
+    dataFiles.littlemoorStats21,
+    dataFiles.littlemoorStats22,
+    dataFiles.littlemoorStats23,
+    dataFiles.littlemoorStats24,
+];
+
 const allClubsStatsForEveryYearArray = [
     dataFiles.allClubsStats13,
     dataFiles.allClubsStats14,
@@ -106,7 +156,9 @@ const allClubsStatsForEveryYearArray = [
 export default {
     dataFiles,
     allYearClubStats,
+    allYearLittlemoorStats,
     allYearAllClubsStats,
     clubStatsForEveryYearArray,
+    littlemoorStatsForEveryYearArray,
     allClubsStatsForEveryYearArray,
 };

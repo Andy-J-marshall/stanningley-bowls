@@ -79,6 +79,12 @@ Most of the club details are stored in the `config.ts` file (e.g. membership pri
 
 The script that collates stats from all club teams can be found in the `/scripts/statsScripts` directory.
 
+Three JSON files will be generated after running the scripts:
+
+-   `stanningleyStats{year}.json` - contains the stats for all Stanningley players
+-   `littlemoorStats{year}.json` - contains the stats for Littlemoor players who also play for Stanningley
+-   `allClubsStats{year}.json` - contains the stats for all Stanningley players, including other clubs they play for
+
 ## Update the player stats
 
 There are two stages to updating the player stats:
@@ -129,14 +135,25 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Scripts
 
-1. Update `clubDetails.py` script with any changes to the players i.e. `players`, `traitorPlayers`, `duplicatePlayerNames`, and `deduplicateNames`
-2. Update `clubDetails.py` script with any changes to the teams i.e. `teamDays`, `otherTeams`, and `otherLeagues` (any leagues added to `teamDays` will need to be removed from here)
+1. Update `clubDetails.py` and `littlemoorDetails.py`:
+
+    - Update the player information:
+        - `players` - players who play for the club
+        - `traitorPlayers` - players who play for other clubs on certain days
+        - `duplicatePlayerNames` - alternative spellings for player names
+    - If adding or removing a second team, updated the following:
+        - `teamNames` - Add the lowercase team names for the B team
+        - `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`. If there is no longer a B team, remove any suffixes
+        - `teamsWithWithDifferentNumberOfPlayersToLeagueNorm` - Add any teams that have a different number of players to the league norm e.g. Saturday Bradford teams only have 8 players outside of the top 2 divisions from 2025 season onwards
+
+2. Update `playerDetails.py`:
+
+    - Add names from `duplicatePlayerNames` above to `deduplicateNames` and assign the correct name
+    - Update `allClubs` with any other club members plays for
+    - Update `allLeagues` for any other leagues that need tracking
+
 3. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
-4. If adding or removing a second team, updated the following properties in `clubDetails.py`:
-
--   `teamNames` - Add the lowercase team names for the B team
--   `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`
-
+4. Check the scripts still work for the new season. The Bowlsnet website or text reports may have changed which could cause the scripts to fail
 5. Consider whether to add league reports for any non-tracked leagues for the previous season e.g. Barkston Ash, AireWharfe Saturday. This might make it easier in the future to track these leagues if a new player joins who has played in them
 
 ## Web application
@@ -150,7 +167,6 @@ A number of manual changes are required at the end of each calendar year.
 6. Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`
 7. Configure the `config.ts` file with the new year's data:
 
-    - Change the `days` to include an extra key for the second team (suffixed with ' (b)')
     - Change the `historicTeamInfo` property include league data for any new teams or second teams
     - Update the `allTeamsInLeaguesSince2013` array to include an extra keys (second team teams need to be suffixed with ' (b)')
 
