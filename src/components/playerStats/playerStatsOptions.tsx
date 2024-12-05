@@ -70,7 +70,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             singles(false);
             pairs(false);
             home(false);
-            home(false);
+            away(false);
             cup(false);
         }
     }
