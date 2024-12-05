@@ -59,9 +59,10 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setTeamDropdownTitle(formatTeamName(teamName));
             teamSpecificCallback(teamName);
 
+            setDisableOtherOptions(true);
+
             setAllGameTypesToggle(true);
             setAllVenuesToggle(true);
-            setDisableOtherOptions(true);
 
             setAllClubsToggle(false);
             allClubsStatsCallback(false);
@@ -82,10 +83,12 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllClubsToggle(true);
             allClubsStatsCallback(true);
 
+            setDisableTeamDropdown(true);
+
             setTeamDropdownTitle(defaultTeamDropdownTitle);
             teamSpecificCallback('');
 
-            setDisableTeamDropdown(true);
+            setDisableOtherOptions(false);
         } else {
             setClubDropdownTitle(capitalizeText([clubName]));
             clubSpecificCallback(clubName);
@@ -94,7 +97,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             allClubsStatsCallback(false);
 
             setDisableTeamDropdown(false);
-            setDisableOtherOptions(false);
         }
     }
 

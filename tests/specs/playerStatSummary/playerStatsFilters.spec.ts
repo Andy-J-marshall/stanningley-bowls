@@ -210,6 +210,7 @@ test.describe('Player summary stats - filters', () => {
         yearSelectPage,
     }) => {
         await yearSelectPage.select2023Year();
+
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
 
         await expect(playerStatOptionsPage.clubSelectDropdown).toBeEnabled();
@@ -220,6 +221,40 @@ test.describe('Player summary stats - filters', () => {
         await expect(playerStatOptionsPage.awayOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.cupOnlyRadio).toBeDisabled();
         await expect(playerStatOptionsPage.allVenuesRadio).toBeDisabled();
+
+        await playerStatOptionsPage.selectTeamFromDropdown('All Teams');
+        await expect(playerStatOptionsPage.clubSelectDropdown).toBeEnabled();
+        await expect(playerStatOptionsPage.singlesOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.pairsOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allGameTypesRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.homeOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.awayOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.cupOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allVenuesRadio).toBeEnabled();
+    });
+
+    test('Team dropdown defaults to All Teams when selecting All Clubs', async ({
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        await yearSelectPage.select2023Year();
+
+        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(
+            'Saturday Leeds'
+        );
+
+        await playerStatOptionsPage.selectAllClubsFromDropdown();
+        await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(
+            'All Teams'
+        );
+        await expect(playerStatOptionsPage.singlesOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.pairsOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allGameTypesRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.homeOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.awayOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.cupOnlyRadio).toBeEnabled();
+        await expect(playerStatOptionsPage.allVenuesRadio).toBeEnabled();
     });
 
     test('Clicking back to summary button remembers state of all stat toggles', async ({
