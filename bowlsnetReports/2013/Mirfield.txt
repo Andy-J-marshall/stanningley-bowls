@@ -48,7 +48,7 @@ M Sweeney           21 P Bailey            10
         Aggregate: 178         Aggregate: 180 
 
       Division 1            Tue 16th Apr      
-    Pudsey BC Ltd       Thongsbridge C & BC   
+    Pudsey BC Ltd 'A'     Thongsbridge C & BC   
 J Spinks            21 Andy Cairns          3 
 J Edmondson         15 James Davison       21 
 T Hanson            21 A Farmer             9 
@@ -528,7 +528,7 @@ S Pinfield          19 S King              21
         Aggregate: 187         Aggregate: 178 
 
       Division 1            Tue 23rd Apr      
-    Netherton Con          Pudsey BC Ltd      
+    Netherton Con          Pudsey BC Ltd 'A'    
 A Daykin            21 J Spinks            17 
 M Bramall           19 C Hatton            21 
 P Keeling           21 J Edmondson         13 
@@ -1158,7 +1158,7 @@ M Sweeney           21 J Sneddon            8
         Aggregate: 194         Aggregate: 148 
 
       Division 1            Tue 30th Apr      
-    Pudsey BC Ltd          Crossgates BC      
+    Pudsey BC Ltd 'A'        Crossgates BC      
 I Shaw              21 S Gilroy            18 
 J Hanson            21 James Wilcox         9 
 J Spinks            21 M Hughes            20 
@@ -1773,7 +1773,7 @@ E Wearing           21 Peter Senior        11
         Aggregate: 188         Aggregate: 173 
 
       Division 1            Tue 7th May       
-    Littlemoor 'A'         Pudsey BC Ltd      
+    Littlemoor 'A'         Pudsey BC Ltd 'A'    
 Dave Cooper         21 C Hatton            10 
 N Roper             15 M Smith             21 
 D Towning           21 G Wike              14 
@@ -2418,7 +2418,7 @@ J Dyson             17 K Smith             21
         Aggregate: 175         Aggregate: 181 
 
       Division 1            Tue 14th May      
-    Pudsey BC Ltd          Dearne Sports      
+    Pudsey BC Ltd 'A'        Dearne Sports      
 T Hanson             9 K Nixon             21 
 I Shaw              21 R Meese             17 
 J Hanson            21 J Hardwick           6 
@@ -3048,7 +3048,7 @@ W Dews              21 D Reeves            13
         Aggregate: 186         Aggregate: 179 
 
       Division 1            Tue 21st May      
-    Pudsey BC Ltd         Alverthorpe WMC     
+    Pudsey BC Ltd 'A'       Alverthorpe WMC     
 C Mordue            21 D Cowsill            7 
 J Spinks            21 Robert Lloyd        10 
 P Cousins           16 N Fletcher          21 
@@ -3678,7 +3678,7 @@ C Hebbard           21 C Ellis             11
         Aggregate: 166         Aggregate: 179 
 
       Division 1            Tue 28th May      
-     Morton House          Pudsey BC Ltd      
+     Morton House          Pudsey BC Ltd 'A'    
 M Robinson          21 T Hanson            12 
 R Dunford           21 G Wike              17 
 Adrian Leach        21 J Hanson             8 
@@ -4308,7 +4308,7 @@ M Bramall           21 S Goldthorpe        17
         Aggregate: 173         Aggregate: 193 
 
       Division 1            Tue 4th Jun       
-Spen Victoria CB & AC      Pudsey BC Ltd      
+Spen Victoria CB & AC      Pudsey BC Ltd 'A'    
 T Throup            15 L Griffin           21 
 Richard Crowther    21 D Hilliam           16 
 Rod Bastow          20 J Hanson            21 
@@ -4953,7 +4953,7 @@ M Robinson          16 K Smith             21
         Aggregate: 193         Aggregate: 170 
 
       Division 1            Tue 11th Jun      
-    Pudsey BC Ltd         Lower Hopton WMC    
+    Pudsey BC Ltd 'A'       Lower Hopton WMC    
 T Hanson            20 R Nicholson         21 
 C Hatton            21 S Pinfield          16 
 C Mordue            21 G Hickey            18 
@@ -5418,7 +5418,7 @@ C Newton            21 M Holden            16
         Aggregate: 175         Aggregate: 180 
 
       Division 1            Tue 2nd Jul       
- Thongsbridge C & BC       Pudsey BC Ltd      
+ Thongsbridge C & BC       Pudsey BC Ltd 'A'    
 Chris Kelly         21 I Shaw              17 
 Ryan Clark          20 J Edmondson         21 
 James Davison       15 L Griffin           21 
@@ -5898,7 +5898,7 @@ S King              21 P Bailey            11
         Aggregate: 191         Aggregate: 154 
 
       Division 1            Tue 9th Jul       
-    Pudsey BC Ltd          Netherton Con      
+    Pudsey BC Ltd 'A'        Netherton Con      
 J Spinks            20 Ian Briggs          21 
 J Edmondson         19 C Gant              21 
 L Griffin           21 G Brook              9 
@@ -6528,7 +6528,7 @@ E Wearing           17 N Gomersall         21
         Aggregate: 174         Aggregate: 187 
 
       Division 1            Tue 16th Jul      
-    Crossgates BC          Pudsey BC Ltd      
+    Crossgates BC          Pudsey BC Ltd 'A'    
 M Hughes            21 C Hatton            14 
 Jonathan Wilcox     19 G Wike              21 
 P Wilcox            21 I Shaw              14 
@@ -7143,7 +7143,7 @@ P Smith             21 K Nixon             19
         Aggregate: 188         Aggregate: 174 
 
       Division 1            Tue 23rd Jul      
-    Pudsey BC Ltd          Littlemoor 'A'     
+    Pudsey BC Ltd 'A'        Littlemoor 'A'     
 L Griffin           21 I Jacques           14 
 C Mordue            21 S King               7 
 J Hanson            21 P Jacques            9 
@@ -7788,7 +7788,7 @@ K Smith             21 W Dews               6
         Aggregate: 205         Aggregate: 116 
 
       Division 1            Tue 30th Jul      
-    Dearne Sports          Pudsey BC Ltd      
+    Dearne Sports          Pudsey BC Ltd 'A'    
 M Kay               21 M Smith             12 
 R Norris            21 P Bowes              6 
 I Chapple           15 I Shaw              21 
@@ -8418,7 +8418,7 @@ D Towning           13 Ian Briggs          21
         Aggregate: 165         Aggregate: 175 
 
       Division 1            Tue 6th Aug       
-   Alverthorpe WMC         Pudsey BC Ltd      
+   Alverthorpe WMC         Pudsey BC Ltd 'A'    
 N Webster           21 G Wike              11 
 M Brain             14 T Hanson            21 
 C Bedford           17 J Hanson            21 
@@ -9048,7 +9048,7 @@ P Smith             21 N Roper             17
         Aggregate: 183         Aggregate: 147 
 
       Division 1            Tue 13th Aug      
-    Pudsey BC Ltd           Morton House      
+    Pudsey BC Ltd 'A'         Morton House      
 C Mordue            21 M Robinson          18 
 C Hatton            21 M Parkes            19 
 L Griffin           21 Tom Codman           3 
@@ -9678,7 +9678,7 @@ G Ellis             21 R Wiltshire          8
         Aggregate: 210         Aggregate: 112 
 
       Division 1            Tue 20th Aug      
-    Pudsey BC Ltd      Spen Victoria CB & AC  
+    Pudsey BC Ltd 'A'    Spen Victoria CB & AC  
 S Hanson            20 Richard Crowther    21 
 C Mordue            21 Ross Ingham          5 
 M Smith             21 P Smith             18 
@@ -10323,7 +10323,7 @@ K Smith             14 G Ellis             21
         Aggregate: 184         Aggregate: 178 
 
       Division 1            Tue 27th Aug      
-   Lower Hopton WMC        Pudsey BC Ltd      
+   Lower Hopton WMC        Pudsey BC Ltd 'A'    
 G I Wilson          21 C Hatton            10 
 G Hickey            21 L Griffin           16 
 R Hitchen           21 T Hanson            18 

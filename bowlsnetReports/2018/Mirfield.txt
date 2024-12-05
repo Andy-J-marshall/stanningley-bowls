@@ -63,7 +63,7 @@ Nick White              15 James Martin            21
             Aggregate: 177             Aggregate: 179 
 
         Division 1                Tue 17th Apr        
-        Pudsey BC                  Crossgates         
+        Pudsey 'A'              Crossgates         
 Jon Edmondson           21 Mark Hughes             14 
 James Hanson            21 James Wilcox            11 
 Tom Hanson              21 Mark Taylor             19 
@@ -582,7 +582,7 @@ Ian Booth               21 Gary Siswick            17
             Aggregate: 188             Aggregate: 172 
 
         Division 1                Tue 24th Apr        
-   Ossett Flying Horse             Pudsey BC          
+   Ossett Flying Horse             Pudsey 'A'      
 Darren Atkinson         20 Ian Shaw                21 
 Mark Barlow             18 Luke Sandland           21 
 Kevin Burns             21 Chris Mordue            17 
@@ -1131,7 +1131,7 @@ Nick White              21 Clive Austin            15
             Aggregate: 210             Aggregate: 112 
 
         Division 1                Tue 1st May         
-        Pudsey BC                Dearne Sports        
+        Pudsey 'A'            Dearne Sports        
 Jon Edmondson           21 Ernie Wearing           19 
 James Hanson            21 Craig Hill               7 
 Tom Hanson              21 *A.N.Other*             11 
@@ -1665,7 +1665,7 @@ Kristian Shuttleworth   21 Ryan Lysons             17
             Aggregate: 194             Aggregate: 132 
 
         Division 1                Tue 8th May         
-    Mirfield Old Bank              Pudsey BC          
+    Mirfield Old Bank              Pudsey 'A'      
 Clive Austin            20 Tom Hanson              21 
 Davis Chris             21 Chris Hatton             8 
 Gareth Coates           16 Gary Wike               21 
@@ -2199,7 +2199,7 @@ Ryan Clark              21 Michael Sweeney         17
             Aggregate: 195             Aggregate: 171 
 
         Division 1                Tue 15th May        
-        Pudsey BC                 Alverthorpe         
+        Pudsey 'A'             Alverthorpe         
 Jon Edmondson           21 Ryan Lloyd               1 
 James Hanson            21 Jeff Normanton          17 
 Tom Hanson              21 Chris Bedford           16 
@@ -2718,7 +2718,7 @@ Ray Whitwam             18 Adam Jones              21
             Aggregate: 175             Aggregate: 165 
 
         Division 1                Tue 22nd May        
-       Thongsbridge                Pudsey BC          
+       Thongsbridge                Pudsey 'A'      
 Mark Booth              18 Chris Mordue            21 
 Andy Cairns             21 David Poole             12 
 Ryan Clark              21 Mick Smith              15 
@@ -3254,7 +3254,7 @@ Andy Webb               21 Mat Hollingworth        10
             Aggregate: 204             Aggregate: 149 
 
         Division 1                Tue 29th May        
-        Pudsey BC                Crosland Moor        
+        Pudsey 'A'            Crosland Moor        
 Jon Edmondson           21 Connor Davis            12 
 James Hanson            21 Trevor Boothroyd        13 
 Tom Hanson              21 Terry Brook              9 
@@ -3801,7 +3801,7 @@ Ashley Daykin           21 Harry Seehra            13
             Aggregate: 190             Aggregate: 152 
 
         Division 1                Tue 5th Jun         
-        Pudsey BC                Woodland Park        
+        Pudsey 'A'            Woodland Park        
 Jon Edmondson           21 Steve Shannon           11 
 James Hanson            21 Chris Brown             17 
 Tom Hanson              21 Ryan Lysons              7 
@@ -4305,7 +4305,7 @@ Kez Smith               21 Terry Brook             14
             Aggregate: 207             Aggregate: 123 
 
         Division 1                Tue 12th Jun        
-       Lower Hopton                Pudsey BC          
+       Lower Hopton                Pudsey 'A'      
 Ian Booth               15 Chris Mordue            21 
 Liam Griffin            21 Jon Edmondson           20 
 Josh Brown              21 Dave Upton               4 
@@ -4869,7 +4869,7 @@ Graeme I Wilson         11 Ashley Daykin           21
             Aggregate: 162             Aggregate: 195 
 
         Division 1                Tue 3rd Jul         
-        Crossgates                 Pudsey BC          
+        Crossgates                 Pudsey 'A'      
 Joseph Cranston         21 David Poole             20 
 Steve Gilroy            21 Jon Edmondson            5 
 Mark Hughes             21 Ian Shaw                14 
@@ -5388,7 +5388,7 @@ Mark Atkinson           13 Liam Griffin            21
             Aggregate: 157             Aggregate: 174 
 
         Division 1                Tue 10th Jul        
-        Pudsey BC             Ossett Flying Horse     
+        Pudsey 'A'         Ossett Flying Horse     
 Jon Edmondson           20 Darren Atkinson         21 
 James Hanson            21 James Evison            19 
 Tom Hanson              21 Gary Amatt              15 
@@ -5937,7 +5937,7 @@ Davis Chris             20 Jack Dyson              21
             Aggregate: 177             Aggregate: 166 
 
         Division 1                Tue 17th Jul        
-      Dearne Sports                Pudsey BC          
+      Dearne Sports                Pudsey 'A'      
 Rob Wiltshire            9 David Poole             21 
 Danny Hallas            21 Dave Upton              20 
 Roger Norris            14 Josh Mordue             21 
@@ -6471,7 +6471,7 @@ Craig Rumney             6 Darren Atkinson         21
             Aggregate: 174             Aggregate: 164 
 
         Division 1                Tue 24th Jul        
-        Pudsey BC              Mirfield Old Bank      
+        Pudsey 'A'          Mirfield Old Bank      
 James Hanson            21 Andrew Heaume           13 
 Tom Hanson              10 Mat Hollingworth        21 
 Chris Hatton            21 Gareth Coates           17 
@@ -7005,7 +7005,7 @@ Mark Atkinson           18 Ashley Daykin           21
             Aggregate: 175             Aggregate: 178 
 
         Division 1                Tue 31st Jul        
-       Alverthorpe                 Pudsey BC          
+       Alverthorpe                 Pudsey 'A'      
 Chris Bedford           21 Chris Hatton            18 
 Mark Brain              13 James Hanson            21 
 Rob Carroll             21 Tom Hanson              17 
@@ -7524,7 +7524,7 @@ Simon Dinnie            21 Ross Mallinson          12
             Aggregate: 174             Aggregate: 179 
 
         Division 1                Tue 7th Aug         
-        Pudsey BC                 Thongsbridge        
+        Pudsey 'A'             Thongsbridge        
 Jon Edmondson           21 Jack Dyson              18 
 James Hanson            21 Andy Cairns             18 
 Tom Hanson              19 Ashley Daykin           21 
@@ -8073,7 +8073,7 @@ Clive Austin            21 Gary Amatt              10
             Aggregate: 173             Aggregate: 169 
 
         Division 1                Tue 14th Aug        
-      Crosland Moor                Pudsey BC          
+      Crosland Moor                Pudsey 'A'      
 Trevor Boothroyd        21 Steve Morris            20 
 Michael Sweeney         19 David Poole             21 
 Ross Mallinson           8 Chris Mordue            21 
@@ -8607,7 +8607,7 @@ Jonathan Wilcox         21 Craig Gant              19
             Aggregate: 168             Aggregate: 183 
 
         Division 1                Tue 21st Aug        
-      Woodland Park                Pudsey BC          
+      Woodland Park                Pudsey 'A'      
 Martin Wilson           21 Paul Bowes              12 
 Andrew Jones            20 Josh Mordue             21 
 Ryan Lysons             21 David Poole             15 
@@ -9111,7 +9111,7 @@ Gary Siswick            21 Steve Gilroy             8
             Aggregate: 178             Aggregate: 169 
 
         Division 1                Tue 28th Aug        
-        Pudsey BC                 Lower Hopton        
+        Pudsey 'A'             Lower Hopton        
 Jon Edmondson           21 Ashley Tattersley        8 
 James Hanson            19 Paul Ingleby            21 
 Tom Hanson              21 Stuart Mort             10 

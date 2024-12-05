@@ -1,6 +1,4 @@
 teamNames = [
-    # TODO will need to add checks for C and D suffixes
-    # TODO need all of these?
     # TODO will need to change reports to add 'A' suffix for Pudsey
     "Pudsey",
     "Pudsey A",
@@ -32,8 +30,8 @@ displayTeamName = "Pudsey"
 teamDays = [
     # "Monday Bradford", # TODO only 2018-22
     "Monday AireWharfe (A)",
-    "Monday AireWharfe (B)",
-    "AireWharfe Vets", # TODO only 2023 and beyond
+    "Monday AireWharfe (B)", # TODO no B team in 2018- 2022?
+    "AireWharfe Vets",  # TODO only 2023 and beyond
     "Mirfield (A)",
     "Mirfield (B)",
     # "Mirfield (C)", # TODO only 2024 and beyond
@@ -42,7 +40,7 @@ teamDays = [
     "Spen Valley (A)",
     "Spen Valley (B)",
     "Spen Valley (C)",
-    "Spen Valley (D)", # TODO only 2019 and beyond
+    "Spen Valley (D)",  # TODO only 2019 and beyond
     "Bradford Vets (A)",
     "Bradford Vets (B)",
     "Saturday Bradford (A)",
@@ -78,7 +76,10 @@ traitorPlayers = {
         "paul bowes",
         "stewart watson",
     ],  # TODO remove stewart in 2021 only
-    "Spen Valley": ["paul bowes", "stewart watson"],  # TODO remove stewart 2022 and before, and paul 2015-7, 2020-24
+    "Spen Valley": [
+        "paul bowes",
+        "stewart watson",
+    ],  # TODO remove stewart 2022 and before, and paul 2015-7, 2020-24
     "Bradford Vets": [],
     "Saturday Bradford": ["stewart watson"],  # TODO remove stewart 2022 and before
 }
