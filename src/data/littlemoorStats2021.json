@@ -405,6 +405,114 @@
                 "aggDiff": 0
             }
         },
+        "paul bowes": {
+            "totalAgg": 337,
+            "totalAggAgainst": 370,
+            "availableAgg": 441,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 189,
+            "availableAwayAgg": 252,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 170,
+            "totalHomeAggAgainst": 156,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 167,
+            "totalAwayAggAgainst": 214,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 5,
+            "homeLosses": 4,
+            "awayWins": 4,
+            "awayLosses": 8,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 21,
+            "results": [
+                "paul bowes 1 - 21 tom hanson",
+                "paul bowes 20 - 21 paul bailey",
+                "paul bowes 9 - 21 ian newby",
+                "paul bowes 21 - 14 chris jacques",
+                "paul bowes 21 - 3 david greenwood",
+                "paul bowes 14 - 21 andy walker",
+                "paul bowes 21 - 18 tom wiltshire",
+                "paul bowes 21 - 17 jamie hulley",
+                "paul bowes 21 - 18 alwyn beedel",
+                "paul bowes 14 - 21 craig fenton",
+                "paul bowes 21 - 20 david greenwood",
+                "paul bowes 21 - 8 richard toulson",
+                "paul bowes 10 - 21 nigel mcdermott",
+                "paul bowes 21 - 8 philip dunnill",
+                "paul bowes 10 - 21 alwyn beedel",
+                "paul bowes 16 - 21 andrew wood",
+                "paul bowes 19 - 21 mark a hughes",
+                "paul bowes 17 - 21 andrew durkin",
+                "paul bowes 9 - 21 gareth gidman",
+                "paul bowes 9 - 21 dave rankin",
+                "paul bowes 21 - 12 craig fenton"
+            ],
+            "monday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield": {
+                "games": 3,
+                "wins": 0,
+                "aggDiff": -33
+            },
+            "mirfield (b)": {
+                "games": 12,
+                "wins": 8,
+                "aggDiff": 26
+            },
+            "wednesday half holiday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "wednesday half holiday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 5,
+                "wins": 0,
+                "aggDiff": -35
+            },
+            "spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "thursday vets bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford": {
+                "games": 1,
+                "wins": 1,
+                "aggDiff": 9
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            }
+        },
         "phil thornton": {
             "totalAgg": 857,
             "totalAggAgainst": 837,
@@ -911,6 +1019,6 @@
             ]
         }
     ],
-    "lastUpdated": "04/12/2024",
+    "lastUpdated": "05/12/2024",
     "statsYear": "2021"
 }
