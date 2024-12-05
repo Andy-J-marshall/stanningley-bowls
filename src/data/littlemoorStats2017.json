@@ -81,12 +81,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 20,
                 "wins": 5,
                 "aggDiff": -112
@@ -222,12 +222,12 @@
                 "wins": 11,
                 "aggDiff": 71
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 23,
                 "wins": 17,
                 "aggDiff": 115
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -354,12 +354,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -452,12 +452,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -553,12 +553,12 @@
                 "wins": 2,
                 "aggDiff": 20
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -667,12 +667,12 @@
                 "wins": 7,
                 "aggDiff": 61
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -763,12 +763,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford (b)": {
+            "bradford vets (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -966,7 +966,7 @@
             ]
         },
         {
-            "day": "Thursday Vets Bradford",
+            "day": "Bradford Vets",
             "awayWins": 5,
             "homeWins": 11,
             "wins": 16,
@@ -1009,7 +1009,7 @@
             ]
         },
         {
-            "day": "Thursday Vets Bradford (B)",
+            "day": "Bradford Vets (B)",
             "awayWins": 1,
             "homeWins": 6,
             "wins": 7,

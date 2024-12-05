@@ -42,7 +42,7 @@ teamDays = [
     "Half Holiday Bradford (B)",
     "Spen Valley (A)",
     "Spen Valley (B)",
-    "Thursday Vets Bradford",
+    "Bradford Vets",
     "Saturday Bradford (A)",
     "Saturday Bradford (B)",
 ]
@@ -85,7 +85,7 @@ traitorPlayers = {
         "nichole farrar",
         "lewis cooper",
     ],
-    "Thursday Vets Bradford": ["john stocks"],
+    "Bradford Vets": ["john stocks"],
     "Saturday Bradford": [
         "kevin siddle",
         "robbie ellis",

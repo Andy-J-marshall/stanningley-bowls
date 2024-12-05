@@ -74,7 +74,7 @@ const leagues = [
         url: '/Bradford-HalfHol',
     },
     {
-        day: 'Thursday Vets Bradford',
+        day: 'Bradford Vets',
         url: '/Bradford-Vets',
     },
     {

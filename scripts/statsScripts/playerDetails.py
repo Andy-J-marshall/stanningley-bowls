@@ -48,7 +48,7 @@ allLeagues = [
     "AireWharfe Vets",
     "Monday Bradford",
     "Half Holiday Bradford",
-    "Thursday Vets Bradford",
+    "Bradford Vets",
     "Saturday Bradford",
 ]
 

@@ -63,9 +63,9 @@ export const config = {
         'spen valley',
         'spen valley (a)',
         'spen valley (b)',
-        'thursday vets bradford',
-        'thursday vets bradford (a)',
-        'thursday vets bradford (b)',
+        'bradford vets',
+        'bradford vets (a)',
+        'bradford vets (b)',
     ],
     historicTeamInfo: [
         {
