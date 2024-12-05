@@ -11,12 +11,12 @@ from playerStatsHelper import (
 
 
 playerStats = returnListOfPlayerStats(
-    playerDetails.allDays, False, playerDetails.players
+    playerDetails.allLeagues, False, playerDetails.players
 )
 
 print("UPDATING ALL PLAYER STATS")
 
-for league in playerDetails.allDays:
+for league in playerDetails.allLeagues:
     # Goes through each sheet in turn
     with open(f"bowlsnetReports/{year}/{league}.txt", "r") as file:
         print("Updating Stats: " + league)
@@ -111,7 +111,9 @@ dataToExport = {
 filename = f"src/data/allClubsStats{year}.json"
 
 # Sanity checks on the data
-checkPlayerStats(playerStats, filename, False, playerDetails.players, playerDetails.allDays)
+checkPlayerStats(
+    playerStats, filename, False, playerDetails.players, playerDetails.allLeagues
+)
 
 # Save the file
 saveFile(filename, dataToExport)

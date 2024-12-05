@@ -34,7 +34,7 @@ def deduplicateNames(name):
     return name
 
 
-allDays = [
+allLeagues = [
     "Monday Combined Leeds",
     "Tuesday Vets Leeds",
     "Tuesday Leeds",

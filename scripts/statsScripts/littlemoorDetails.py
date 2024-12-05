@@ -48,7 +48,8 @@ teamDays = [
 ]
 
 # Some leagues have different number of players depending on the division. Make sure you match the team name exactly as it appears in teamDays
-teamsWithWithDifferentNumberOfPlayersToLeagueNorm = ["Saturday Bradford (B)"]
+teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 2025
+
 
 # Every player (lowercase)
 players = [
