@@ -24,6 +24,7 @@ teamNames = [
     "Pudsey BC - B",
     "Pudsey BC - C",
     "Pudsey BC - D",
+    "Pudsey BC 'C' at Tyersal",
 ]
 displayTeamName = "Pudsey"
 
@@ -55,12 +56,12 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 20
 # Every player (lowercase)
 players = [
     "richard hodgson",
-    # "geoff hodgson", TODO add in (also all team stats)
     "stewart watson",
     "paul bowes",
-    # "mary spears", # TODO add in (also all team stats)
     "linda barrand",
     "joey broadbent",  # TODO 1 game!
+    # "mary spears", # TODO add in (also all team stats)
+    # "geoff hodgson", TODO add in (also all team stats)
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
