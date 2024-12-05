@@ -182,13 +182,8 @@ function PlayerStats(props: PlayerStatsProps) {
         scrollToBottom();
     }
 
-    function clubSpecificCallback(clubName: string) {
-        if (!config.clubsForPlayersStats.includes(clubName.toLowerCase())) {
-            // Default to the main club if the selected club name is not recognised
-            setClubNameForStats(clubNameForStats);
-        }
-
-        setClubNameForStats(clubName.toLowerCase());
+    function clubSpecificCallback(chosenClubName: string) {
+        setClubNameForStats(chosenClubName);
 
         scrollToBottom();
     }
