@@ -115,6 +115,7 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, displayTea
                 aTeamPlayingBTeamBool = True
                 teamLower = teamNameUsedForLeague.lower()
                 rowLower = row.lower().strip()
+                # TODO don't need to fix this?
                 if teamLower in rowLower:
                     # Determine if A or B team is playing at home and store the rows
                     if rowLower.endswith((" a", " 'a'")):

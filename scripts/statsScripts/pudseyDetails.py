@@ -56,12 +56,12 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat B in 20
 # Every player (lowercase)
 players = [
     "richard hodgson",
-    "stewart watson",
-    "paul bowes",
-    "linda barrand",
-    "joey broadbent",  # TODO 1 game!
-    # "mary spears", # TODO add in (also all team stats)
-    # "geoff hodgson", TODO add in (also all team stats)
+    "stewart watson",  # be careful of littlemoor games in 2023-4 (and check Farsley e.g. vets and Stanningley (Bradford Half Holiday)
+    "paul bowes",  # 2013-14, 2018-19 (be careful of stanningley half hol and aw mon games)
+    "linda barrand",  # 2021-24
+    "joey broadbent",  # TODO 1 game in 2019
+    # "mary spears", # TODO add in (also all team stats) 2021-22
+    # "geoff hodgson", TODO add in (also all team stats) Up to 2015
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function
@@ -69,10 +69,10 @@ duplicatePlayerNames = ["stuart watson"]
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday AireWharfe": [""],
+    "Monday AireWharfe": ["paul bowes"],  # TODO except 2013-14
     "AireWharfe Vets": [],  # TODO add stewart
-    "Mirfield": [""],
-    "Half Holiday Bradford": [],  # TODO add stewart
+    "Mirfield": [""], # TODO add paul
+    "Half Holiday Bradford": ["paul bowes"],  # TODO add stewart
     "Spen Valley": [],  # TODO add paul and stewart
     "Bradford Vets": [],  # TODO add stewart
     "Saturday Bradford": [],  # TODO add stewart

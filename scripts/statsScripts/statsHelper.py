@@ -66,7 +66,9 @@ def findCupGameRows(allRowsInFile, endRow):
     return cupGameRows
 
 
-def returnTeamNameForLeague(allRowsInFile, teamNameForLeague, displayTeamName, teamNames):
+def returnTeamNameForLeague(
+    allRowsInFile, teamNameForLeague, displayTeamName, teamNames
+):
     possibleTeamNamesUsed = []
     teamNameToUse = displayTeamName
 
@@ -78,13 +80,33 @@ def returnTeamNameForLeague(allRowsInFile, teamNameForLeague, displayTeamName, t
                 if possibleTeamName.lower() in rowValue:
                     # Filter out A team stats for B team and vice versa
                     if teamNameForLeague.lower().endswith(" (a)"):
-                        if possibleTeamName.lower().endswith((" b", " 'b'")):
+                        if possibleTeamName.lower().endswith(
+                            (" b", " 'b'", " c", " 'c'", " d", " 'd'")
+                        ):
                             continue
+
                         teamNameToUse = displayTeamName + " A"
                     elif teamNameForLeague.lower().endswith(" (b)"):
-                        if possibleTeamName.lower().endswith((" a", " 'a'")):
+                        if possibleTeamName.lower().endswith(
+                            (" a", " 'a'", " c", " 'c'", " d", " 'd'")
+                        ):
                             continue
+
                         teamNameToUse = displayTeamName + " B"
+                    elif teamNameForLeague.lower().endswith(" (c)"):
+                        if possibleTeamName.lower().endswith(
+                            (" a", " 'a'", " b", " 'b'", " d", " 'd'")
+                        ):
+                            continue
+
+                        teamNameToUse = displayTeamName + " C"
+                    elif teamNameForLeague.lower().endswith(" (d)"):
+                        if possibleTeamName.lower().endswith(
+                            (" a", " 'a'", " b", " 'b'", " c", " 'c'")
+                        ):
+                            continue
+
+                        teamNameToUse = displayTeamName + " D"
                     possibleTeamNamesUsed.append(possibleTeamName)
 
     if len(possibleTeamNamesUsed) == 0:
