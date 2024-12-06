@@ -145,12 +145,20 @@ test.describe('Player stats - Other Clubs', () => {
             'Half Holiday Bradford'
         );
         await expect(playerSummaryPage.playerRows).toHaveCount(8);
+
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
         await expect(playerSummaryPage.playerRows).toHaveCount(2);
 
+        await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
+        await expect(playerSummaryPage.playerRows).toHaveCount(0);
+
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
-        await expect(playerSummaryPage.playerRows).toHaveCount(2);
+        await expect(playerSummaryPage.playerRows).toHaveCount(1);
+
         await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
         await expect(playerSummaryPage.playerRows).toHaveCount(15);
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await expect(playerSummaryPage.playerRows).toHaveCount(2);
     });
 });
