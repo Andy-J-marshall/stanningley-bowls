@@ -129,25 +129,13 @@ function App() {
                 pudseyStatsForSelectedYear = allYearPudseyStats['year2023'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
                 break;
+            default:
             case '2024':
                 clubStatsForSelectedYear = allYearStanningleyStats['year2024'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2024'];
                 pudseyStatsForSelectedYear = allYearPudseyStats['year2024'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
-                break;
-            default:
-                const currentYear = new Date().getFullYear();
-                
-                // TODO does this default still work?
-                clubStatsForSelectedYear =
-                    allYearStanningleyStats[`year${currentYear}`];
-                allClubsStatsForSelectedYear =
-                    allYearAllClubsStats[`year${currentYear}`];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats[`year${currentYear}`];
-                pudseyStatsForSelectedYear =
-                    allYearPudseyStats[`year${currentYear}`];
                 break;
         }
 
