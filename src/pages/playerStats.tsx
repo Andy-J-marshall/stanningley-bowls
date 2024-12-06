@@ -39,8 +39,6 @@ function PlayerStats(props: PlayerStatsProps) {
     const allClubsStats = props.allClubsStats;
     const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
 
-    const clubName = config.teamNames.shortName.toLowerCase();
-
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
@@ -50,7 +48,7 @@ function PlayerStats(props: PlayerStatsProps) {
     );
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
-    const [clubNameForStats, setClubNameForStats] = useState(clubName);
+    const [clubNameForStats, setClubNameForStats] = useState('stanningley');
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
         stanningleyStatsForEveryYearArray
     );
@@ -103,7 +101,7 @@ function PlayerStats(props: PlayerStatsProps) {
                               )
                     );
                     break;
-                case clubName:
+                case 'stanningley':
                 default:
                     setStatsToUse(stanningleyStats?.playerResults);
                     setAllYearsStatsToUseArray(

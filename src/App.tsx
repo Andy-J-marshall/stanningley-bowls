@@ -19,20 +19,9 @@ import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
 const allYearStanningleyStats: any = statsData.allYearStanningleyStats;
-const stanningleyStatsForEveryYearArray: any[] =
-    statsData.stanningleyStatsForEveryYearArray;
-
 const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
-const littlemoorStatsForEveryYearArray: any[] =
-    statsData.littlemoorStatsForEveryYearArray;
-
 const allYearPudseyStats: any = statsData.allYearPudseyStats;
-const pudseyStatsForEveryYearArray: any[] =
-    statsData.pudseyStatsForEveryYearArray;
-
 const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
-const allClubsStatsForEveryYearArray: any[] =
-    statsData.allClubsStatsForEveryYearArray;
 
 function App() {
     const [stanningleyStats, setStanningleyStats] = useState(
@@ -111,19 +100,19 @@ function App() {
                                 <PlayerStats
                                     stanningleyStats={stanningleyStats}
                                     stanningleyStatsForEveryYearArray={
-                                        stanningleyStatsForEveryYearArray
+                                        statsData.stanningleyStatsForEveryYearArray
                                     }
                                     littlemoorStats={littlemoorStats}
                                     littlemoorStatsForEveryYearArray={
-                                        littlemoorStatsForEveryYearArray
+                                        statsData.littlemoorStatsForEveryYearArray
                                     }
                                     pudseyStats={pudseyStats}
                                     pudseyStatsForEveryYearArray={
-                                        pudseyStatsForEveryYearArray
+                                        statsData.pudseyStatsForEveryYearArray
                                     }
                                     allClubsStats={allClubsStats}
                                     allClubsStatsForEveryYearArray={
-                                        allClubsStatsForEveryYearArray
+                                        statsData.allClubsStatsForEveryYearArray
                                     }
                                 />
                             </div>

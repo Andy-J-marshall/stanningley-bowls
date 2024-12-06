@@ -1,11 +1,9 @@
-const coreClubName = 'Stanningley';
-
 export const config = {
     teamNames: {
         fullName: 'Stanningley Park Bowling Club',
-        shortName: coreClubName,
+        shortName: 'Stanningley',
     },
-    clubsForPlayersStats: [coreClubName.toLowerCase(), 'littlemoor', 'pudsey'],
+    clubsForPlayersStats: ['stanningley', 'littlemoor', 'pudsey'],
     socialLinks: {
         instagramUrl: 'https://www.instagram.com/StanningleyParkBowls',
         facebookUrl: 'https://www.facebook.com/StanningleyBowlsClub',
