@@ -7,18 +7,7 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
-const year = new Date().getFullYear();
-const previousYearBool = false; // Set to true to get data from previous year and change year variable to the year you want
-
-let queryParam = '';
-
-if (previousYearBool) {
-    queryParam = `?DB=${year}`;
-}
-
-function sleep() {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
-}
+const year = new Date().getFullYear(); // Change this to get data from a different year
 
 const leagues = [
     {
@@ -124,7 +113,7 @@ for (const league of leagues) {
         let page: Page = await context.newPage();
 
         // Navigate to Bowlsnet and wait for page to load
-        await page.goto(`${league.url}${queryParam}`);
+        await page.goto(`${league.url}?DB=${year}`);
         await sleep();
 
         // Click pop up if present
@@ -187,4 +176,8 @@ for (const league of leagues) {
             }
         });
     });
+}
+
+function sleep() {
+    return new Promise((resolve) => setTimeout(resolve, 1000));
 }
