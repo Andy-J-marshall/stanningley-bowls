@@ -99,7 +99,7 @@ const leagues = [
     //     url: '/AW-Sat',
     // },
     // {
-    //     day: 'AireWharfe Wednesday ',
+    //     day: 'AireWharfe Wednesday',
     //     url: '/AW-WedSingles',
     // },
     // {
