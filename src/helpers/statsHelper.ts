@@ -5,14 +5,15 @@ import {
 
 export function returnTabName(teamName: string) {
     const leagueDay = teamName.split(' ')[1];
-    // TODO check more than 1 part
+
+    if (leagueDay === undefined) {
+        return teamName.substring(0, 3).toUpperCase();
+    }
 
     let displayName = leagueDay.substring(0, 3).toUpperCase();
+
     if (teamName.toLowerCase().includes(' vets')) {
         displayName += ' (VETS)';
-    }
-    if (teamName.toLowerCase().includes(' (b)')) {
-        displayName += ' (B)';
     }
     if (teamName.toLowerCase().includes(' pairs')) {
         displayName += ' (PAIRS)';
