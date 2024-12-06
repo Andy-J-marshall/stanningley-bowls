@@ -144,8 +144,8 @@ A number of manual changes are required at the end of each calendar year.
         - `duplicatePlayerNames` - alternative spellings for player names
     - If adding or removing a second team, updated the following:
         - `teamNames` - Add the lowercase team names for the B team
-        - `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Saturday Leeds (A)', 'Saturday Leeds (B)']`. If there is no longer a B team, remove any suffixes
-        - `teamsWithWithDifferentNumberOfPlayersToLeagueNorm` - Add any teams that have a different number of players to the league norm e.g. Saturday Bradford teams only have 8 players outside of the top 2 divisions from 2025 season onwards
+        - `teamDays` - Suffix the league name with (A) and (B) for each team e.g. `['Leeds Saturday (A)', 'Leeds Saturday (B)']`. If there is no longer a B team, remove any suffixes
+        - `teamsWithWithDifferentNumberOfPlayersToLeagueNorm` - Add any teams that have a different number of players to the league norm e.g. Bradford Saturday teams only have 8 players outside of the top 2 divisions from 2025 season onwards
 
 2. Update `playerDetails.py`:
 
@@ -162,7 +162,7 @@ A number of manual changes are required at the end of each calendar year.
 1. Import the new stats files into `statsData.ts` and update the exported objects and arrays with the new files.
 2. Update `statsSelectCallback` in `App.tsx` with the reference to the new year's stats file. Also update the default stats and year to display in the useState hook.
 3. Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component
-4. If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years
+4. If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years. Make sure `returnTabName` in `statsHelper.ts` displays the team name correctly
 5. Update `History.tsx` with any trophies won
 6. Update `playersHelper.ts` with the name of any new teams or second teams. Keep the old name for the first team and put the B team stats inside a null check for backwards compatibility for previous years. These stats need to be imported and used in `playerTeamStats.tsx`
 7. Configure the `config.ts` file with the new year's data:

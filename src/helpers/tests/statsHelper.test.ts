@@ -4,28 +4,29 @@ import { checkAllWinPercAndAverageAreNumbers } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
     describe('returnTabName', () => {
-        it('should return the display name without any modifications', () => {
-            const teamName = 'Team A';
+        // TODO remember to rename files!
+        it('should return the display name without any modifications when team has 1 word', () => {
+            const teamName = 'Bradford Saturday';
             const displayName = returnTabName(teamName);
-            expect(displayName).to.equal('TEA');
+            expect(displayName).to.equal('SAT');
+        });
+
+        it('should return the display name without any modifications when team has 1 word', () => {
+            const teamName = 'Mirfield';
+            const displayName = returnTabName(teamName);
+            expect(displayName).to.equal('MIR');
         });
 
         it('should append "(VETS)" to the display name if team name includes "vets"', () => {
-            const teamName = 'Team A Vets';
+            const teamName = 'Leeds Tuesday Vets';
             const displayName = returnTabName(teamName);
-            expect(displayName).to.equal('TEA (VETS)');
-        });
-
-        it('should append "(B)" to the display name if team name includes "(b)"', () => {
-            const teamName = 'Team A (B)';
-            const displayName = returnTabName(teamName);
-            expect(displayName).to.equal('TEA (B)');
+            expect(displayName).to.equal('TUE (VETS)');
         });
 
         it('should append "(PAIRS)" to the display name if team name includes "pairs"', () => {
-            const teamName = 'Team A Pairs';
+            const teamName = 'AireWharfe Wednesday Pairs';
             const displayName = returnTabName(teamName);
-            expect(displayName).to.equal('TEA (PAIRS)');
+            expect(displayName).to.equal('WED (PAIRS)');
         });
     });
 

@@ -172,7 +172,7 @@ test.describe('Player summary stats - filters', () => {
         playerSummaryPage.setPlayerToFind('kevin waller');
 
         await yearSelectPage.select2022Year();
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
 
         await playerSummaryPage.validateSummaryStats(13, 10, 77, 6.46);
     });
@@ -185,7 +185,7 @@ test.describe('Player summary stats - filters', () => {
         playerSummaryPage.setPlayerToFind('chris gardner');
 
         await yearSelectPage.select2013Year();
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
+        await playerStatOptionsPage.selectTeamFromDropdown('Bradford Saturday');
 
         await expect(playerSummaryPage.playerRows).toHaveCount(12);
         await playerSummaryPage.validateSummaryStats(20, 16, 80, 6.0);
@@ -199,7 +199,7 @@ test.describe('Player summary stats - filters', () => {
 
         await playerStatOptionsPage.selectAllYearsSwitch();
         await playerStatOptionsPage.selectTeamFromDropdown(
-            'Monday Airewharfe (B)'
+            'Airewharfe Monday (B)'
         );
 
         await playerSummaryPage.validateSummaryStats(60, 20, 33, -4.03);
@@ -211,7 +211,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         await yearSelectPage.select2023Year();
 
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
 
         await expect(playerStatOptionsPage.clubSelectDropdown).toBeEnabled();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeDisabled();
@@ -239,9 +239,9 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         await yearSelectPage.select2023Year();
 
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Leeds');
+        await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
         await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(
-            'Saturday Leeds'
+            'Leeds Saturday'
         );
 
         await playerStatOptionsPage.selectAllClubsFromDropdown();

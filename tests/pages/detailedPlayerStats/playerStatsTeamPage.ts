@@ -48,52 +48,52 @@ export class PlayerStatsTeamPage {
     constructor(page: Page) {
         this.page = page;
 
-        this.mondayAWGames = page.locator('#mondayairewharfeGamesPlayed');
-        this.mondayAWWins = page.locator('#mondayairewharfeWins');
-        this.mondayAWWinPerc = page.locator('#mondayairewharfeWinPerc');
-        this.mondayAWLosses = page.locator('#mondayairewharfeLosses');
-        this.mondayAWAvg = page.locator('#mondayairewharfeAverage');
+        this.mondayAWGames = page.locator('#airewharfemondayGamesPlayed');
+        this.mondayAWWins = page.locator('#airewharfemondayWins');
+        this.mondayAWWinPerc = page.locator('#airewharfemondayWinPerc');
+        this.mondayAWLosses = page.locator('#airewharfemondayLosses');
+        this.mondayAWAvg = page.locator('#airewharfemondayAverage');
 
-        this.satBradfordGames = page.locator('#saturdaybradfordGamesPlayed');
-        this.satBradfordWins = page.locator('#saturdaybradfordWins');
-        this.satBradfordWinPerc = page.locator('#saturdaybradfordWinPerc');
-        this.satBradfordLosses = page.locator('#saturdaybradfordLosses');
-        this.satBradfordAvg = page.locator('#saturdaybradfordAverage');
+        this.satBradfordGames = page.locator('#bradfordsaturdayGamesPlayed');
+        this.satBradfordWins = page.locator('#bradfordsaturdayWins');
+        this.satBradfordWinPerc = page.locator('#bradfordsaturdayWinPerc');
+        this.satBradfordLosses = page.locator('#bradfordsaturdayLosses');
+        this.satBradfordAvg = page.locator('#bradfordsaturdayAverage');
 
-        this.tueVetsLeedsGames = page.locator('#tuesdayvetsleedsGamesPlayed');
-        this.tueVetsLeedsWins = page.locator('#tuesdayvetsleedsWins');
-        this.tueVetsLeedsWinPerc = page.locator('#tuesdayvetsleedsWinPerc');
-        this.tueVetsLeedsLosses = page.locator('#tuesdayvetsleedsLosses');
-        this.tueVetsLeedsAvg = page.locator('#tuesdayvetsleedsAverage');
+        this.tueVetsLeedsGames = page.locator('#leedstuesdayvetsGamesPlayed');
+        this.tueVetsLeedsWins = page.locator('#leedstuesdayvetsWins');
+        this.tueVetsLeedsWinPerc = page.locator('#leedstuesdayvetsWinPerc');
+        this.tueVetsLeedsLosses = page.locator('#leedstuesdayvetsLosses');
+        this.tueVetsLeedsAvg = page.locator('#leedstuesdayvetsAverage');
 
-        this.thuVetsLeedsGames = page.locator('#thursdayvetsleedsGamesPlayed');
-        this.thuVetsLeedsWins = page.locator('#thursdayvetsleedsWins');
-        this.thuVetsLeedsWinPerc = page.locator('#thursdayvetsleedsWinPerc');
-        this.thuVetsLeedsLosses = page.locator('#thursdayvetsleedsLosses');
-        this.thuVetsLeedsAvg = page.locator('#thursdayvetsleedsAverage');
+        this.thuVetsLeedsGames = page.locator('#leedsthursdayvetsGamesPlayed');
+        this.thuVetsLeedsWins = page.locator('#leedsthursdayvetsWins');
+        this.thuVetsLeedsWinPerc = page.locator('#leedsthursdayvetsWinPerc');
+        this.thuVetsLeedsLosses = page.locator('#leedsthursdayvetsLosses');
+        this.thuVetsLeedsAvg = page.locator('#leedsthursdayvetsAverage');
 
         this.thuVetsBLeedsGames = page.locator(
-            '#thursdayvetsleedsbGamesPlayed'
+            '#leedsthursdayvetsbGamesPlayed'
         );
-        this.thuVetsBLeedsWins = page.locator('#thursdayvetsleedsbWins');
-        this.thuVetsBLeedsWinPerc = page.locator('#thursdayvetsleedsbWinPerc');
-        this.thuVetsBLeedsLosses = page.locator('#thursdayvetsleedsbLosses');
-        this.thuVetsBLeedsAvg = page.locator('#thursdayvetsleedsbAverage');
+        this.thuVetsBLeedsWins = page.locator('#leedsthursdayvetsbWins');
+        this.thuVetsBLeedsWinPerc = page.locator('#leedsthursdayvetsbWinPerc');
+        this.thuVetsBLeedsLosses = page.locator('#leedsthursdayvetsbLosses');
+        this.thuVetsBLeedsAvg = page.locator('#leedsthursdayvetsbAverage');
 
-        this.wedBradfordGames = page.locator('#halfholidaybradfordGamesPlayed');
-        this.wedBradfordWins = page.locator('#halfholidaybradfordWins');
-        this.wedBradfordWinPerc = page.locator('#halfholidaybradfordWinPerc');
-        this.wedBradfordLosses = page.locator('#halfholidaybradfordLosses');
-        this.wedBradfordAvg = page.locator('#halfholidaybradfordAverage');
+        this.wedBradfordGames = page.locator('#bradfordhalfholidayGamesPlayed');
+        this.wedBradfordWins = page.locator('#bradfordhalfholidayWins');
+        this.wedBradfordWinPerc = page.locator('#bradfordhalfholidayWinPerc');
+        this.wedBradfordLosses = page.locator('#bradfordhalfholidayLosses');
+        this.wedBradfordAvg = page.locator('#bradfordhalfholidayAverage');
 
         this.wedPairsAWGames = page.locator(
-            '#wednesdaypairsairewharfeGamesPlayed'
+            '#airewharfewednesdaypairsGamesPlayed'
         );
-        this.wedPairsAWWins = page.locator('#wednesdaypairsairewharfeWins');
+        this.wedPairsAWWins = page.locator('#airewharfewednesdaypairsWins');
         this.wedPairsAWWinPerc = page.locator(
-            '#wednesdaypairsairewharfeWinPerc'
+            '#airewharfewednesdaypairsWinPerc'
         );
-        this.wedPairsAWLosses = page.locator('#wednesdaypairsairewharfeLosses');
-        this.wedPairsAWAvg = page.locator('#wednesdaypairsairewharfeAverage');
+        this.wedPairsAWLosses = page.locator('#airewharfewednesdaypairsLosses');
+        this.wedPairsAWAvg = page.locator('#airewharfewednesdaypairsAverage');
     }
 }

@@ -165,10 +165,10 @@ describe('#playersStatsHelper Tests', () => {
         it('Days with no games are not returned', () => {
             const { allTeamStats } = stats;
             const tuesdayEvening = allTeamStats.find((team: any) => {
-                return team.teamName === 'tuesday leeds';
+                return team.teamName === 'leeds tuesday';
             });
             const wednesday = allTeamStats.find((team: any) => {
-                return team.teamName === 'half holiday leeds';
+                return team.teamName === 'leeds half holiday';
             });
 
             expect(tuesdayEvening).to.be.undefined;
@@ -176,12 +176,12 @@ describe('#playersStatsHelper Tests', () => {
         });
 
         it('Tuesday evening and Wednesday can calculate stats', () => {
-            playerStats['paul bowes']['half holiday leeds'] = {
+            playerStats['paul bowes']['leeds half holiday'] = {
                 games: 1,
                 wins: 1,
                 aggDiff: 21,
             };
-            playerStats['paul bowes']['tuesday leeds'] = {
+            playerStats['paul bowes']['leeds tuesday'] = {
                 games: 11,
                 wins: 7,
                 aggDiff: -33,
@@ -191,10 +191,10 @@ describe('#playersStatsHelper Tests', () => {
 
             const { allTeamStats } = stats;
             const tuesdayEvening = allTeamStats.find((team: any) => {
-                return team.teamName === 'tuesday leeds';
+                return team.teamName === 'leeds tuesday';
             });
             const wednesday = allTeamStats.find((team: any) => {
-                return team.teamName === 'half holiday leeds';
+                return team.teamName === 'leeds half holiday';
             });
 
             expect(tuesdayEvening.teamWins).to.equal(7);
@@ -210,16 +210,16 @@ describe('#playersStatsHelper Tests', () => {
         it('Days with games show correct values', () => {
             const { allTeamStats } = stats;
             const monday = allTeamStats.find((team: any) => {
-                return team.teamName === 'monday combined leeds';
+                return team.teamName === 'leeds monday combined';
             });
             const tuesVets = allTeamStats.find((team: any) => {
-                return team.teamName === 'tuesday vets leeds';
+                return team.teamName === 'leeds tuesday vets';
             });
             const thursVets = allTeamStats.find((team: any) => {
-                return team.teamName === 'thursday vets leeds';
+                return team.teamName === 'leeds thursday vets';
             });
             const saturday = allTeamStats.find((team: any) => {
-                return team.teamName === 'saturday leeds';
+                return team.teamName === 'leeds saturday';
             });
 
             expect(monday.teamWins).to.equal(7);

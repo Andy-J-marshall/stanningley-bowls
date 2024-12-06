@@ -7,46 +7,35 @@ import {
 } from '@playwright/test';
 import fs from 'fs';
 
-const year = new Date().getFullYear();
-const previousYearBool = false; // Set to true to get data from previous year and change year variable to the year you want
-
-let queryParam = '';
-
-if (previousYearBool) {
-    queryParam = `?DB=${year}`;
-}
-
-function sleep() {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
-}
+const year = new Date().getFullYear(); // Change this to get data from a different year
 
 const leagues = [
     {
-        day: 'Monday Combined Leeds',
+        day: 'Leeds Monday Combined',
         url: '/Leeds-MonComb',
     },
     {
-        day: 'Tuesday Vets Leeds',
+        day: 'Leeds Tuesday Vets',
         url: '/Leeds-TueVets',
     },
     {
-        day: 'Tuesday Leeds',
+        day: 'Leeds Tuesday',
         url: '/Leeds-Tue',
     },
     {
-        day: 'Half Holiday Leeds',
+        day: 'Leeds Half Holiday',
         url: '/Leeds-Wed',
     },
     {
-        day: 'Wednesday Pairs AireWharfe',
+        day: 'AireWharfe Wednesday Pairs',
         url: '/AW-WedPairs',
     },
     {
-        day: 'Thursday Vets Leeds',
+        day: 'Leeds Thursday Vets',
         url: '/Leeds-ThuVets',
     },
     {
-        day: 'Saturday Leeds',
+        day: 'Leeds Saturday',
         url: '/Leeds-Sat',
     },
     {
@@ -58,7 +47,7 @@ const leagues = [
         url: '/WestRiding',
     },
     {
-        day: 'Monday AireWharfe',
+        day: 'AireWharfe Monday',
         url: '/AW-Mon',
     },
     {
@@ -66,11 +55,11 @@ const leagues = [
         url: '/AW-Vets',
     },
     {
-        day: 'Monday Bradford',
+        day: 'Bradford Monday',
         url: '/Bradford-Mon',
     },
     {
-        day: 'Half Holiday Bradford',
+        day: 'Bradford Half Holiday',
         url: '/Bradford-HalfHol',
     },
     {
@@ -78,7 +67,7 @@ const leagues = [
         url: '/Bradford-Vets',
     },
     {
-        day: 'Saturday Bradford',
+        day: 'Bradford Saturday',
         url: '/Bradford-Sat',
     },
     // Other leagues of interest
@@ -95,11 +84,11 @@ const leagues = [
     //     url: '/LeedsLadies',
     // },
     // {
-    //     day: 'Saturday AireWharfe',
+    //     day: 'AireWharfe Saturday',
     //     url: '/AW-Sat',
     // },
     // {
-    //     day: 'Wednesday AireWharfe',
+    //     day: 'AireWharfe Wednesday',
     //     url: '/AW-WedSingles',
     // },
     // {
@@ -124,7 +113,7 @@ for (const league of leagues) {
         let page: Page = await context.newPage();
 
         // Navigate to Bowlsnet and wait for page to load
-        await page.goto(`${league.url}${queryParam}`);
+        await page.goto(`${league.url}?DB=${year}`);
         await sleep();
 
         // Click pop up if present
@@ -187,4 +176,8 @@ for (const league of leagues) {
             }
         });
     });
+}
+
+function sleep() {
+    return new Promise((resolve) => setTimeout(resolve, 1000));
 }

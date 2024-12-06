@@ -133,7 +133,7 @@
                 "jim moorin 11 - 21 chris cox",
                 "jim moorin 10 - 21 linda gledhill"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 16,
                 "wins": 11,
                 "aggDiff": 98
@@ -148,12 +148,12 @@
                 "wins": 5,
                 "aggDiff": 42
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 21,
                 "wins": 14,
                 "aggDiff": 89
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -178,12 +178,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 18,
                 "wins": 12,
                 "aggDiff": 82
@@ -283,7 +283,7 @@
                 "john armitage 21 - 9 eddie temple",
                 "john armitage 21 - 8 dominic hanson"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -298,12 +298,12 @@
                 "wins": 6,
                 "aggDiff": 7
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 14,
                 "wins": 14,
                 "aggDiff": 136
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -328,12 +328,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 13,
                 "wins": 8,
                 "aggDiff": 30
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 3,
                 "wins": 3,
                 "aggDiff": 38
@@ -407,7 +407,7 @@
                 "martin fulton 16 - 21 andy denton",
                 "martin fulton 21 - 14 john horsley"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -422,12 +422,12 @@
                 "wins": 6,
                 "aggDiff": 19
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -452,12 +452,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 9,
                 "wins": 5,
                 "aggDiff": 8
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -565,7 +565,7 @@
                 "phil thornton 15 - 21 adrian megson",
                 "phil thornton 7 - 21 carol harpin"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 14,
                 "wins": 6,
                 "aggDiff": -24
@@ -580,12 +580,12 @@
                 "wins": 6,
                 "aggDiff": -63
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -610,12 +610,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 18,
                 "wins": 11,
                 "aggDiff": 89
@@ -624,7 +624,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday Bradford",
+            "day": "Bradford Monday",
             "awayWins": 1,
             "homeWins": 5,
             "wins": 6,
@@ -731,7 +731,7 @@
             ]
         },
         {
-            "day": "Half Holiday Bradford",
+            "day": "Bradford Half Holiday",
             "awayWins": 3,
             "homeWins": 10,
             "wins": 13,
@@ -772,7 +772,7 @@
             ]
         },
         {
-            "day": "Half Holiday Bradford (B)",
+            "day": "Bradford Half Holiday (B)",
             "awayWins": 2,
             "homeWins": 6,
             "wins": 8,
@@ -961,7 +961,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford",
+            "day": "Bradford Saturday",
             "awayWins": 4,
             "homeWins": 9,
             "wins": 13,
@@ -998,7 +998,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (B)",
+            "day": "Bradford Saturday (B)",
             "awayWins": 3,
             "homeWins": 7,
             "wins": 10,

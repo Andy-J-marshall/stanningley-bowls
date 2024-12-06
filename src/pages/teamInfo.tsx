@@ -10,37 +10,37 @@ import wedPairsImg from '../images/websiteImages/wedPairs-team.png';
 
 const teams = [
     {
-        name: 'Monday Combined Leeds',
+        name: 'Leeds Monday Combined',
         link: 'https://bowlsnet.uk/Leeds-MonComb',
         img: monImg,
     },
     {
-        name: 'Tuesday Vets Leeds',
+        name: 'Leeds Tuesday Vets',
         link: 'https://bowlsnet.uk/Leeds-TueVets',
         img: tuesVetsImg,
     },
     {
-        name: 'Tuesday Leeds',
+        name: 'Leeds Tuesday',
         link: 'https://bowlsnet.uk/Leeds-Tue',
         img: tuesImg,
     },
     {
-        name: 'Half Holiday Leeds',
+        name: 'Leeds Half Holiday',
         link: 'https://bowlsnet.uk/Leeds-Wed',
         img: wedImg,
     },
     {
-        name: 'Wednesday Pairs AireWharfe',
+        name: 'AireWharfe Wednesday Pairs',
         link: 'https://bowlsnet.uk/AW-WedPairs',
         img: wedPairsImg,
     },
     {
-        name: 'Thursday Vets Leeds',
+        name: 'Leeds Thursday Vets',
         link: 'https://bowlsnet.uk/leeds-ThuVets',
         img: thurVetsImg,
     },
     {
-        name: 'Saturday Leeds',
+        name: 'Leeds Saturday',
         link: 'https://bowlsnet.uk/Leeds-Sat',
         img: satImg,
     },

@@ -149,7 +149,7 @@ test.describe('Player stats - Other Clubs', () => {
     }) => {
         await yearSelectPage.select2018Year();
         await playerStatOptionsPage.selectTeamFromDropdown(
-            'Half Holiday Bradford'
+            'Bradford Half Holiday'
         );
         await expect(playerSummaryPage.playerRows).toHaveCount(8);
 
@@ -159,7 +159,7 @@ test.describe('Player stats - Other Clubs', () => {
         await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
         await expect(playerSummaryPage.playerRows).toHaveCount(0);
 
-        await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
+        await playerStatOptionsPage.selectTeamFromDropdown('Bradford Saturday');
         await expect(playerSummaryPage.playerRows).toHaveCount(1);
 
         await playerStatOptionsPage.selectClubFromDropdown('Stanningley');

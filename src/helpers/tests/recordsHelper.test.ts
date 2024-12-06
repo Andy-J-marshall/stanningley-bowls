@@ -16,10 +16,10 @@ describe('#RecordsHelper Tests', () => {
         it('Can return list of teams found', () => {
             const { teamsFound } = findLeaguesAvailableInData(playerResults22);
             expect(teamsFound).to.deep.equal([
-                'monday combined leeds',
-                'tuesday vets leeds',
-                'thursday vets leeds',
-                'saturday leeds',
+                'leeds monday combined',
+                'leeds tuesday vets',
+                'leeds thursday vets',
+                'leeds saturday',
             ]);
         });
 
@@ -28,7 +28,7 @@ describe('#RecordsHelper Tests', () => {
                 findLeaguesAvailableInData(playerResults22);
 
             expect(Object.keys(initialTeamRecords).length).to.equal(39);
-            const teamRecord = initialTeamRecords['monday combined leeds'];
+            const teamRecord = initialTeamRecords['leeds monday combined'];
 
             expect(teamRecord).to.deep.equal({
                 minGames: 1,
@@ -65,10 +65,10 @@ describe('#RecordsHelper Tests', () => {
                 initialTeamRecords
             );
 
-            const teamRecord = teamRecordsWithMinGames['monday combined leeds'];
-            const teamRecord2 = teamRecordsWithMinGames['saturday leeds'];
+            const teamRecord = teamRecordsWithMinGames['leeds monday combined'];
+            const teamRecord2 = teamRecordsWithMinGames['leeds saturday'];
             const teamWithNoStatsDataForYear =
-                teamRecordsWithMinGames['tuesday leeds'];
+                teamRecordsWithMinGames['leeds tuesday'];
 
             expect(teamRecord.mostGames).to.equal(19);
             expect(teamRecord2.mostGames).to.equal(17);
@@ -145,7 +145,7 @@ describe('#RecordsHelper Tests', () => {
 
         it('B team records should be null when there is no B team on that day', () => {
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('tuesday leeds')
+                t.teamNames.includes('leeds tuesday')
             );
 
             if (!teamInfo) {
@@ -162,7 +162,7 @@ describe('#RecordsHelper Tests', () => {
 
         it('Team name should be correctly returned', () => {
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('saturday leeds')
+                t.teamNames.includes('leeds saturday')
             );
 
             if (!teamInfo) {
@@ -171,12 +171,12 @@ describe('#RecordsHelper Tests', () => {
 
             const { teamName } = findTeamRecords(teamInfo, teamRecords);
 
-            expect(teamName).to.equal('saturday leeds');
+            expect(teamName).to.equal('leeds saturday');
         });
 
         it('Team records should be correct', () => {
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('saturday leeds')
+                t.teamNames.includes('leeds saturday')
             );
 
             if (!teamInfo) {
@@ -202,7 +202,7 @@ describe('#RecordsHelper Tests', () => {
 
         it('B team records should be correct', () => {
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('saturday leeds')
+                t.teamNames.includes('leeds saturday')
             );
 
             if (!teamInfo) {

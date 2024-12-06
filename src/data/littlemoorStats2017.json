@@ -56,7 +56,7 @@
                 "jack roberts 9 - 21 angela carter",
                 "jack roberts 4 - 21 nigel swales"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -91,12 +91,12 @@
                 "wins": 5,
                 "aggDiff": -112
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -197,7 +197,7 @@
                 "jim moorin 7 - 21 phillip walker",
                 "jim moorin 21 - 7 david rayner"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -232,12 +232,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 17,
                 "wins": 11,
                 "aggDiff": 29
@@ -329,7 +329,7 @@
                 "john armitage 21 - 16 david cooper",
                 "john armitage 15 - 21 gary wike"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -364,12 +364,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 17,
                 "wins": 13,
                 "aggDiff": 69
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -427,7 +427,7 @@
                 "martin fulton 18 - 21 daniel bousfield",
                 "martin fulton 17 - 21 steven gilroy"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -462,12 +462,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 1,
                 "wins": 0,
                 "aggDiff": -4
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -528,7 +528,7 @@
                 "neil porter 21 - 6 nick crowther",
                 "neil porter 13 - 21 chris wood"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -563,12 +563,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 1,
                 "wins": 0,
                 "aggDiff": -13
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 6,
                 "wins": 4,
                 "aggDiff": 28
@@ -642,7 +642,7 @@
                 "paul bowes 16 - 21 phil brooke",
                 "paul bowes 7 - 21 gareth lally"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -677,12 +677,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 1,
                 "wins": 0,
                 "aggDiff": -14
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -738,7 +738,7 @@
                 "steve gardner 21 - 10 malcolm gilbert",
                 "steve gardner 21 - 19 george turton"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -773,12 +773,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -787,7 +787,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday Bradford",
+            "day": "Bradford Monday",
             "awayWins": 2,
             "homeWins": 8,
             "wins": 10,
@@ -1052,7 +1052,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford",
+            "day": "Bradford Saturday",
             "awayWins": 0,
             "homeWins": 7,
             "wins": 7,
@@ -1089,7 +1089,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (B)",
+            "day": "Bradford Saturday (B)",
             "awayWins": 3,
             "homeWins": 8,
             "wins": 11,

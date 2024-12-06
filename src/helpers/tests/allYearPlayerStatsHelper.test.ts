@@ -134,14 +134,14 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             const result = returnTeamNamesWithGamesForAllYears(statsArray);
 
             expect(result).to.deep.equal([
-                'half holiday leeds',
-                'monday combined leeds',
-                'saturday leeds',
-                'saturday leeds (b)',
-                'thursday vets leeds',
-                'tuesday leeds',
-                'tuesday vets leeds',
-                'wednesday pairs airewharfe',
+                'airewharfe wednesday pairs',
+                'leeds half holiday',
+                'leeds monday combined',
+                'leeds saturday',
+                'leeds saturday (b)',
+                'leeds thursday vets',
+                'leeds tuesday',
+                'leeds tuesday vets',
             ]);
         });
 
@@ -169,7 +169,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             const statsArray = [stats2022, stats2023, stats2024];
             const result = returnTeamPlayerStatsForAllYears(
                 statsArray,
-                'monday combined leeds'
+                'leeds monday combined'
             );
 
             expect(result.length).to.equal(47);
@@ -191,7 +191,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             const statsArray: FullStatsFile[] = [];
             const result = returnTeamPlayerStatsForAllYears(
                 statsArray,
-                'monday combined leeds'
+                'leeds monday combined'
             );
             expect(result).to.deep.equal([]);
         });
@@ -206,7 +206,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
             ];
             const result = returnTeamPlayerStatsForAllYears(
                 statsArray,
-                'monday combined leeds'
+                'leeds monday combined'
             );
             expect(result).to.deep.equal([]);
         });
@@ -301,13 +301,13 @@ describe('#allYearPlayerStatsHelper Tests', () => {
                 'vanessa lancaster 21 - 10 gerry faller',
                 'vanessa lancaster 21 - 17 deborah stafford',
             ],
-            'monday combined leeds': { games: 13, wins: 4, aggDiff: -46 },
-            'tuesday vets leeds': { games: 0, wins: 0, aggDiff: 0 },
-            'thursday vets leeds': { games: 0, wins: 0, aggDiff: 0 },
-            'saturday leeds': { games: 0, wins: 0, aggDiff: 0 },
-            'tuesday leeds': { aggDiff: -44, games: 23, wins: 10 },
-            'wednesday pairs airewharfe': { aggDiff: 7, games: 6, wins: 3 },
-            'saturday leeds (b)': { aggDiff: 20, games: 3, wins: 3 },
+            'leeds monday combined': { games: 13, wins: 4, aggDiff: -46 },
+            'leeds tuesday vets': { games: 0, wins: 0, aggDiff: 0 },
+            'leeds thursday vets': { games: 0, wins: 0, aggDiff: 0 },
+            'leeds saturday': { games: 0, wins: 0, aggDiff: 0 },
+            'leeds tuesday': { aggDiff: -44, games: 23, wins: 10 },
+            'airewharfe wednesday pairs': { aggDiff: 7, games: 6, wins: 3 },
+            'leeds saturday (b)': { aggDiff: 20, games: 3, wins: 3 },
         });
     });
 });
