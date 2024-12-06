@@ -103,6 +103,34 @@ const leagues = [
     //     day: 'Wetherby Autumn',
     //     url: '/WetherbyAutumn',
     // },
+    // {
+    //     day: 'AireWharfe Tuesday Pairs',
+    //     url: '/AW-TuePairs',
+    // },
+    // {
+    //     day: 'Heavy Woolen Monday',
+    //     url: '/HeavyWoollenAfternoon',
+    // },
+    // {
+    //     day: 'Crossgates',
+    //     url: '/Crossgates',
+    // },
+    // {
+    //     day: 'Elland',
+    //     url: '/Halifax-Elland',
+    // },
+    // {
+    //     day: 'Halifax Wednesday',
+    //     url: '/Halifax-WedEvening',
+    // },
+    // {
+    //     day: 'Castleford Vets',
+    //     url: '/CastlefordVets-Singles',
+    // },
+    // {
+    //     day: 'Castleford Wednesday',
+    //     url: '/Castleford-Evening',
+    // },
 ];
 
 for (const league of leagues) {
