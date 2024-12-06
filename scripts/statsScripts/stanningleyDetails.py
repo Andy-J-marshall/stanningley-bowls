@@ -13,14 +13,14 @@ displayTeamName = "Stanningley"
 
 # Days played (add duplicate days for second teams suffixed with (A) or (B) etc.)
 teamDays = [
-    "Monday Combined Leeds",
-    "Tuesday Vets Leeds",
-    "Tuesday Leeds",
-    "Half Holiday Leeds",
-    "Wednesday Pairs AireWharfe",
-    "Thursday Vets Leeds",
-    "Saturday Leeds (A)",
-    "Saturday Leeds (B)",
+    "Leeds Monday Combined",
+    "Leeds Tuesday Vets",
+    "Leeds Tuesday",
+    "Leeds Half Holiday",
+    "AireWharfe Wednesday Pairs",
+    "Leeds Thursday Vets",
+    "Leeds Saturday (A)",
+    "Leeds Saturday (B)",
 ]
 
 # Some leagues have different number of players depending on the division. Make sure you match the team name exactly as it appears in teamDays
@@ -83,11 +83,11 @@ duplicatePlayerNames = [
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday Combined Leeds": ["neil porter"],
-    "Tuesday Vets Leeds": [],
-    "Tuesday Leeds": ["neil porter"],
-    "Half Holiday Leeds": ["clifford brogie"],
-    "Wednesday Pairs AireWharfe": [],
-    "Thursday Vets Leeds": ["neil porter"],
-    "Saturday Leeds": ["clifford brogie", "neil porter"],
+    "Leeds Monday Combined": ["neil porter"],
+    "Leeds Tuesday Vets": [],
+    "Leeds Tuesday": ["neil porter"],
+    "Leeds Half Holiday": ["clifford brogie"],
+    "AireWharfe Wednesday Pairs": [],
+    "Leeds Thursday Vets": ["neil porter"],
+    "Leeds Saturday": ["clifford brogie", "neil porter"],
 }

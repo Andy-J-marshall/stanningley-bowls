@@ -83,65 +83,65 @@ export class TeamStatsPage {
         );
 
         this.mondayGamesValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalGamesValue'
+            '#leedsmondaycombined-team-results #totalGamesValue'
         );
         this.mondayWinsValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalWinsValue'
+            '#leedsmondaycombined-team-results #totalWinsValue'
         );
         this.mondayLossesValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalLossesValue'
+            '#leedsmondaycombined-team-results #totalLossesValue'
         );
         this.mondayDrawsValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalDrawsValue'
+            '#leedsmondaycombined-team-results #totalDrawsValue'
         );
         this.mondayWinPercValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalWinPercValue'
+            '#leedsmondaycombined-team-results #totalWinPercValue'
         );
         this.mondayHomeWinPercValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalHomeWinPercValue'
+            '#leedsmondaycombined-team-results #totalHomeWinPercValue'
         );
         this.mondayAwayWinPercValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalAwayWinPercValue'
+            '#leedsmondaycombined-team-results #totalAwayWinPercValue'
         );
         this.mondayCupWinPercValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalCupWinPercValue'
+            '#leedsmondaycombined-team-results #totalCupWinPercValue'
         );
         this.mondayAggValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalAggValue'
+            '#leedsmondaycombined-team-results #totalAggValue'
         );
         this.mondayOpponentAggValue = page.locator(
-            '#mondaycombinedleeds-team-results #totalOpponentAggValue'
+            '#leedsmondaycombined-team-results #totalOpponentAggValue'
         );
 
         this.tuesVetsGamesValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalGamesValue'
+            '#leedstuesdayvets-team-results #totalGamesValue'
         );
         this.tuesVetsWinsValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalWinsValue'
+            '#leedstuesdayvets-team-results #totalWinsValue'
         );
         this.tuesVetsLossesValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalLossesValue'
+            '#leedstuesdayvets-team-results #totalLossesValue'
         );
         this.tuesVetsDrawsValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalDrawsValue'
+            '#leedstuesdayvets-team-results #totalDrawsValue'
         );
         this.tuesVetsWinPercValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalWinPercValue'
+            '#leedstuesdayvets-team-results #totalWinPercValue'
         );
         this.tuesVetsHomeWinPercValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalHomeWinPercValue'
+            '#leedstuesdayvets-team-results #totalHomeWinPercValue'
         );
         this.tuesVetsAwayWinPercValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalAwayWinPercValue'
+            '#leedstuesdayvets-team-results #totalAwayWinPercValue'
         );
         this.tuesVetsCupWinPercValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalCupWinPercValue'
+            '#leedstuesdayvets-team-results #totalCupWinPercValue'
         );
         this.tuesVetsAggValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalAggValue'
+            '#leedstuesdayvets-team-results #totalAggValue'
         );
         this.tuesVetsOpponentAggValue = page.locator(
-            '#tuesdayvetsleeds-team-results #totalOpponentAggValue'
+            '#leedstuesdayvets-team-results #totalOpponentAggValue'
         );
     }
 

@@ -55,12 +55,12 @@
                 "linda barrand 17 - 21 christine jarvis",
                 "linda barrand 11 - 21 barrie clough"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -75,12 +75,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -115,17 +115,17 @@
                 "wins": 1,
                 "aggDiff": -26
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -176,12 +176,12 @@
                 "mary spears 9 - 21 matt newssome",
                 "mary spears 7 - 21 david rawson"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -196,12 +196,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -236,17 +236,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -309,12 +309,12 @@
                 "richard hodgson 21 - 16 john duncanson",
                 "richard hodgson 7 - 21 suzi ladbrooke"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 4,
                 "wins": 3,
                 "aggDiff": -3
             },
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -329,12 +329,12 @@
                 "wins": 0,
                 "aggDiff": -15
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 3,
                 "wins": 2,
                 "aggDiff": 16
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -369,17 +369,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 5,
                 "wins": 3,
                 "aggDiff": -8
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -492,12 +492,12 @@
                 "stewart watson 8 - 21 andy bairstow",
                 "stewart watson 17 - 21 james teale"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 15,
                 "wins": 10,
                 "aggDiff": 35
@@ -512,12 +512,12 @@
                 "wins": 0,
                 "aggDiff": -8
             },
-            "half holiday bradford": {
+            "bradford half holiday": {
                 "games": 1,
                 "wins": 0,
                 "aggDiff": -5
             },
-            "half holiday bradford (b)": {
+            "bradford half holiday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -552,17 +552,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 2,
                 "wins": 0,
                 "aggDiff": -8
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 15,
                 "wins": 7,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -571,7 +571,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday Bradford",
+            "day": "Bradford Monday",
             "awayWins": 5,
             "homeWins": 7,
             "wins": 12,
@@ -608,7 +608,7 @@
             ]
         },
         {
-            "day": "Monday AireWharfe",
+            "day": "AireWharfe Monday",
             "awayWins": 1,
             "homeWins": 7,
             "wins": 8,
@@ -717,7 +717,7 @@
             ]
         },
         {
-            "day": "Half Holiday Bradford",
+            "day": "Bradford Half Holiday",
             "awayWins": 8,
             "homeWins": 8,
             "wins": 16,
@@ -754,7 +754,7 @@
             ]
         },
         {
-            "day": "Half Holiday Bradford (B)",
+            "day": "Bradford Half Holiday (B)",
             "awayWins": 3,
             "homeWins": 5,
             "wins": 8,
@@ -1013,7 +1013,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford",
+            "day": "Bradford Saturday",
             "awayWins": 3,
             "homeWins": 9,
             "wins": 12,
@@ -1050,7 +1050,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (B)",
+            "day": "Bradford Saturday (B)",
             "awayWins": 3,
             "homeWins": 8,
             "wins": 11,
@@ -1087,7 +1087,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (C)",
+            "day": "Bradford Saturday (C)",
             "awayWins": 4,
             "homeWins": 4,
             "wins": 8,

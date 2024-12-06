@@ -1,4 +1,4 @@
-leaguesWithGamesTo26 = ["wednesday pairs airewharfe"]
+leaguesWithGamesTo26 = ["airewharfe wednesday pairs"]
 
 cupText = [
     " trophy",

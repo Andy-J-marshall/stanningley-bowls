@@ -102,13 +102,17 @@ test.describe('Player detailed stats - teams', () => {
         await expect(playerStatsTeamPage.thuVetsLeedsAvg).toHaveText('7.00');
         await expect(playerStatsTeamPage.thuVetsLeedsWins).toHaveText('1');
         await expect(playerStatsTeamPage.thuVetsLeedsLosses).toHaveText('0');
-        await expect(playerStatsTeamPage.thuVetsLeedsWinPerc).toHaveText('100%');
+        await expect(playerStatsTeamPage.thuVetsLeedsWinPerc).toHaveText(
+            '100%'
+        );
 
-        // Leeds Tuesday Vets (B)
+        // Leeds Tuesday Vets(B)
         await expect(playerStatsTeamPage.thuVetsBLeedsGames).toHaveText('8');
         await expect(playerStatsTeamPage.thuVetsBLeedsAvg).toHaveText('9.75');
         await expect(playerStatsTeamPage.thuVetsBLeedsWins).toHaveText('7');
         await expect(playerStatsTeamPage.thuVetsBLeedsLosses).toHaveText('1');
-        await expect(playerStatsTeamPage.thuVetsBLeedsWinPerc).toHaveText('88%');
+        await expect(playerStatsTeamPage.thuVetsBLeedsWinPerc).toHaveText(
+            '88%'
+        );
     });
 });

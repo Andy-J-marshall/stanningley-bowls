@@ -46,7 +46,7 @@ describe('#ResultsHelper Tests', () => {
             const teamResults = stats2021.teamResults;
 
             const expectedResults = {
-                name: 'thursday vets leeds',
+                name: 'leeds thursday vets',
                 results: [
                     {
                         home: { name: 'Churwell Pk', score: '36' },
@@ -105,7 +105,7 @@ describe('#ResultsHelper Tests', () => {
 
             const results = returnResultsArrayForTeamsWithGames(teamResults);
             const thursdayResults = results?.find(
-                (r) => r.name === 'thursday vets leeds'
+                (r) => r.name === 'leeds thursday vets'
             );
 
             expect(results).to.have.lengthOf(3);

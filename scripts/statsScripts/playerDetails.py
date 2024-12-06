@@ -42,21 +42,21 @@ def deduplicateNames(name):
 
 
 allLeagues = [
-    "Monday Combined Leeds",
-    "Tuesday Vets Leeds",
-    "Tuesday Leeds",
-    "Half Holiday Leeds",
-    "Wednesday Pairs AireWharfe",
-    "Thursday Vets Leeds",
-    "Saturday Leeds",
+    "Leeds Monday Combined",
+    "Leeds Tuesday Vets",
+    "Leeds Tuesday",
+    "Leeds Half Holiday",
+    "AireWharfe Wednesday Pairs",
+    "Leeds Thursday Vets",
+    "Leeds Saturday",
     "Mirfield",
     "Spen Valley",
-    "Monday AireWharfe",
+    "AireWharfe Monday",
     "AireWharfe Vets",
-    "Monday Bradford",
-    "Half Holiday Bradford",
+    "Bradford Monday",
+    "Bradford Half Holiday",
     "Bradford Vets",
-    "Saturday Bradford",
+    "Bradford Saturday",
 ]
 
 allClubs = [

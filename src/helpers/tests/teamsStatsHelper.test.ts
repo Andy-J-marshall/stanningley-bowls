@@ -61,7 +61,7 @@ describe('#teamStatsHelper Tests', () => {
 
             const allPlayerStats = returnPlayerStatsForTeam(
                 playerStats,
-                'saturday leeds'
+                'leeds saturday'
             );
             const player = allPlayerStats.find(
                 (player) => player.player === 'andy marshall'
@@ -83,12 +83,12 @@ describe('#teamStatsHelper Tests', () => {
 
             const teamNames = returnTeamNamesWithGames(playerStats);
             expect(teamNames).to.deep.equal([
-                'half holiday leeds',
-                'monday combined leeds',
-                'saturday leeds',
-                'thursday vets leeds',
-                'tuesday leeds',
-                'tuesday vets leeds',
+                'leeds half holiday',
+                'leeds monday combined',
+                'leeds saturday',
+                'leeds thursday vets',
+                'leeds tuesday',
+                'leeds tuesday vets',
             ]);
         });
     });
@@ -108,7 +108,7 @@ describe('#teamStatsHelper Tests', () => {
 
         it('Team name should be correctly returned', () => {
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('monday combined leeds')
+                t.teamNames.includes('leeds monday combined')
             );
 
             if (!teamInfo) {
@@ -117,16 +117,16 @@ describe('#teamStatsHelper Tests', () => {
 
             const teamStats = findTeamStats(teamInfo!, stats2024.teamResults);
 
-            expect(teamStats.teamName).to.equal('monday combined leeds');
+            expect(teamStats.teamName).to.equal('leeds monday combined');
         });
 
         it('Team stats should be correct', () => {
             const teamStatsJson = stats2024.teamResults.find((t) =>
-                t.day.toLowerCase().includes('saturday leeds')
+                t.day.toLowerCase().includes('leeds saturday')
             );
 
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('saturday leeds')
+                t.teamNames.includes('leeds saturday')
             );
 
             if (!teamInfo) {
@@ -142,11 +142,11 @@ describe('#teamStatsHelper Tests', () => {
 
         it('B team stats should be correct', () => {
             const teamStatsJson = stats2024.teamResults.find((t) =>
-                t.day.toLowerCase().includes('saturday leeds (b)')
+                t.day.toLowerCase().includes('leeds saturday (b)')
             );
 
             const teamInfo = config.historicTeamInfo.find((t) =>
-                t.teamNames.includes('saturday leeds')
+                t.teamNames.includes('leeds saturday')
             );
 
             if (!teamInfo) {

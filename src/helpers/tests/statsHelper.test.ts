@@ -4,6 +4,8 @@ import { checkAllWinPercAndAverageAreNumbers } from '../statsHelper';
 
 describe('#StatsHelper Tests', () => {
     describe('returnTabName', () => {
+        // TODO improve these tests
+        // TODO remember to rename files!
         it('should return the display name without any modifications', () => {
             const teamName = 'Team A';
             const displayName = returnTabName(teamName);

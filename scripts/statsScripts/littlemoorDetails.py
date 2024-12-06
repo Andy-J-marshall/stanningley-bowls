@@ -24,17 +24,17 @@ displayTeamName = "Littlemoor"
 
 # Days played (add duplicate days for second teams suffixed with (A) or (B) etc.)
 teamDays = [
-    "Monday Bradford",
-    "Monday AireWharfe",
+    "Bradford Monday",
+    "AireWharfe Monday",
     "Mirfield (A)",
     "Mirfield (B)",
-    "Half Holiday Bradford (A)",
-    "Half Holiday Bradford (B)",
+    "Bradford Half Holiday (A)",
+    "Bradford Half Holiday (B)",
     "Spen Valley (A)",
     "Spen Valley (B)",
     "Bradford Vets",
-    "Saturday Bradford (A)",
-    "Saturday Bradford (B)",
+    "Bradford Saturday (A)",
+    "Bradford Saturday (B)",
 ]
 
 # Some leagues have different number of players depending on the division. Make sure you match the team name exactly as it appears in teamDays
@@ -66,10 +66,10 @@ duplicatePlayerNames = [
 
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
-    "Monday Bradford": ["john stocks"],
-    "Monday AireWharfe": ["stewart watson", "lee wider", "paul jacques"],
+    "Bradford Monday": ["john stocks"],
+    "AireWharfe Monday": ["stewart watson", "lee wider", "paul jacques"],
     "Mirfield": ["stewart watson"],
-    "Half Holiday Bradford": ["john stocks"],
+    "Bradford Half Holiday": ["john stocks"],
     "Spen Valley": [
         "alex wolfenden",
         "paul wilczynski",
@@ -77,7 +77,7 @@ traitorPlayers = {
         "lewis cooper",
     ],
     "Bradford Vets": ["john stocks"],
-    "Saturday Bradford": [
+    "Bradford Saturday": [
         "kevin siddle",
         "robbie ellis",
         "john stocks",

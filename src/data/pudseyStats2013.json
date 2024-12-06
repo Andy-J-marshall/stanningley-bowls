@@ -85,12 +85,12 @@
                 "geoff hodgson 21 - 20 keith worrall",
                 "geoff hodgson 10 - 21 richard hunter"
             ],
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airewharfe (b)": {
+            "airewharfe monday (b)": {
                 "games": 16,
                 "wins": 10,
                 "aggDiff": 56
@@ -115,17 +115,17 @@
                 "wins": 8,
                 "aggDiff": -6
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 17,
                 "wins": 10,
                 "aggDiff": 33
@@ -182,12 +182,12 @@
                 "paul bowes 5 - 21 clive foord",
                 "paul bowes 10 - 21 daniel metcalfe"
             ],
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "monday airewharfe (b)": {
+            "airewharfe monday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -212,17 +212,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 15,
                 "wins": 5,
                 "aggDiff": -47
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -277,12 +277,12 @@
                 "richard hodgson 20 - 21 jeff bolton",
                 "richard hodgson 21 - 9 john thompson"
             ],
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 13,
                 "wins": 9,
                 "aggDiff": 57
             },
-            "monday airewharfe (b)": {
+            "airewharfe monday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -307,17 +307,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -380,12 +380,12 @@
                 "stewart watson 21 - 17 graham oliver",
                 "stewart watson 21 - 9 ken walker"
             ],
-            "monday airewharfe": {
+            "airewharfe monday": {
                 "games": 17,
                 "wins": 13,
                 "aggDiff": 81
             },
-            "monday airewharfe (b)": {
+            "airewharfe monday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -410,17 +410,17 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (c)": {
+            "bradford saturday (c)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -429,7 +429,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday AireWharfe",
+            "day": "AireWharfe Monday",
             "awayWins": 6,
             "homeWins": 9,
             "wins": 15,
@@ -466,7 +466,7 @@
             ]
         },
         {
-            "day": "Monday AireWharfe (B)",
+            "day": "AireWharfe Monday (B)",
             "awayWins": 2,
             "homeWins": 8,
             "wins": 10,
@@ -657,7 +657,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford",
+            "day": "Bradford Saturday",
             "awayWins": 4,
             "homeWins": 9,
             "wins": 13,
@@ -694,7 +694,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (B)",
+            "day": "Bradford Saturday (B)",
             "awayWins": 4,
             "homeWins": 8,
             "wins": 12,
@@ -731,7 +731,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (C)",
+            "day": "Bradford Saturday (C)",
             "awayWins": 2,
             "homeWins": 10,
             "wins": 12,

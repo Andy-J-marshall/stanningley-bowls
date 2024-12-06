@@ -2,15 +2,15 @@ import statsHelper
 
 # Bradford saturday and Mirfield teams have 10 players except in low divisions
 leaguesWith10Players = [
-    "monday airewharfe",
-    "saturday airewharfe",
-    "saturday bradford",
+    "airewharfe monday",
+    "airewharfe saturday",
+    "bradford saturday",
     "mirfield",
 ]
 leaguesWith6Players = [
-    "monday bradford",
-    "half holiday bradford",
-    "half holiday leeds",
+    "bradford monday",
+    "bradford half holiday",
+    "leeds half holiday",
 ]
 
 
@@ -72,16 +72,16 @@ def returnAdjustedRowNumberFor6PlayerTeams(league, rowsDownAdjustmentInt):
 
 def returnAggRowDownNumber(team, teamsWithDifferentNumberOfPlayers):
     lowerTeam = team.lower()
-    if lowerTeam.startswith("monday airewharfe"):
+    if lowerTeam.startswith("airewharfe monday"):
         return 2
 
     if (
-        lowerTeam.startswith("saturday airewharfe")
+        lowerTeam.startswith("airewharfe saturday")
         and team not in teamsWithDifferentNumberOfPlayers
     ):
         return 2
 
-    if lowerTeam.startswith("saturday bradford"):
+    if lowerTeam.startswith("bradford saturday"):
         if team in teamsWithDifferentNumberOfPlayers:
             return 1
         return 3

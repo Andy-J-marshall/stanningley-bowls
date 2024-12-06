@@ -62,7 +62,7 @@
                 "jack roberts 20 - 21 sylvia halliday",
                 "jack roberts 17 - 21 leonard hanson"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -87,12 +87,12 @@
                 "wins": 7,
                 "aggDiff": -65
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -152,7 +152,7 @@
                 "john armitage 21 - 13 chris lodge",
                 "john armitage 17 - 21 andy swallow"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 2,
                 "wins": 1,
                 "aggDiff": 1
@@ -177,12 +177,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 14,
                 "wins": 6,
                 "aggDiff": -31
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 2,
                 "wins": 1,
                 "aggDiff": 4
@@ -235,7 +235,7 @@
                 "martin fulton 21 - 20 kieren smith",
                 "martin fulton 20 - 21 jack summers"
             ],
-            "monday bradford": {
+            "bradford monday": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -260,12 +260,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "saturday bradford": {
+            "bradford saturday": {
                 "games": 11,
                 "wins": 5,
                 "aggDiff": 22
             },
-            "saturday bradford (b)": {
+            "bradford saturday (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -274,7 +274,7 @@
     },
     "teamResults": [
         {
-            "day": "Monday Bradford",
+            "day": "Bradford Monday",
             "awayWins": 0,
             "homeWins": 2,
             "wins": 2,
@@ -473,7 +473,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford",
+            "day": "Bradford Saturday",
             "awayWins": 2,
             "homeWins": 6,
             "wins": 8,
@@ -510,7 +510,7 @@
             ]
         },
         {
-            "day": "Saturday Bradford (B)",
+            "day": "Bradford Saturday (B)",
             "awayWins": 0,
             "homeWins": 3,
             "wins": 3,
