@@ -58,108 +58,20 @@ function App() {
     }, []);
 
     function statsSelectCallback(year: string) {
-        let stanningleyStatsForSelectedYear: any;
-        let littlemoorStatsForSelectedYear: any;
-        let pudseyStatsForSelectedYear: any;
-        let allClubsStatsForSelectedYear: any;
-
-        switch (year.toString()) {
-            case '2013':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2013'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2013'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2013'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
-                break;
-            case '2014':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2014'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2014'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2014'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2014'];
-                break;
-            case '2015':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2015'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2015'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2015'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2015'];
-                break;
-            case '2016':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2016'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2016'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2016'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2016'];
-                break;
-            case '2017':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2017'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2017'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2017'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2017'];
-                break;
-            case '2018':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2018'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2018'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2018'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2018'];
-                break;
-            case '2019':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2019'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2019'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2019'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2019'];
-                break;
-            case '2021':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2021'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2021'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2021'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2021'];
-                break;
-            case '2022':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2022'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2022'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2022'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2022'];
-                break;
-            case '2023':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2023'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2023'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2023'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
-                break;
-            default:
-            case '2024':
-                stanningleyStatsForSelectedYear =
-                    allYearStanningleyStats['year2024'];
-                littlemoorStatsForSelectedYear =
-                    allYearLittlemoorStats['year2024'];
-                pudseyStatsForSelectedYear = allYearPudseyStats['year2024'];
-                allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
-                break;
+        if (allYearStanningleyStats[`year${year}`]) {
+            setStanningleyStats(allYearStanningleyStats[`year${year}`]);
+        }
+        if (allYearLittlemoorStats[`year${year}`]) {
+            setLittlemoorStats(allYearLittlemoorStats[`year${year}`]);
+        }
+        if (allYearPudseyStats[`year${year}`]) {
+            setPudseyStats(allYearPudseyStats[`year${year}`]);
+        }
+        if (allYearAllClubsStats[`year${year}`]) {
+            setAllClubsStats(allYearAllClubsStats[`year${year}`]);
         }
 
         setYearToDisplay(year.toString());
-        setStanningleyStats(stanningleyStatsForSelectedYear);
-        setLittlemoorStats(littlemoorStatsForSelectedYear);
-        setPudseyStats(pudseyStatsForSelectedYear);
-        setAllClubsStats(allClubsStatsForSelectedYear);
     }
 
     return (
