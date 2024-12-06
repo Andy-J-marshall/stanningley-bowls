@@ -20,7 +20,6 @@ teamNames = [
     "Pudsey BC - B",
     "Pudsey BC - C",
     "Pudsey BC - D",
-    "Pudsey BC 'C' at Tyersal",
 ]
 displayTeamName = "Pudsey"
 
