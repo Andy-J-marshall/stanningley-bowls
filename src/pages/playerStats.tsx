@@ -26,12 +26,14 @@ import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
     const allClubsStats = props.allClubsStats;
-    const clubStats = props.clubStats;
-    const littlemoorStats = props.littlemoorStats;
-    const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
     const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
+    const clubStats = props.clubStats;
+    const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
+    const littlemoorStats = props.littlemoorStats;
     const littlemoorStatsForEveryYearArray =
         props.littlemoorStatsForEveryYearArray;
+    const pudseyStats = props.pudseyStats;
+    const pudseyStatsForEveryYearArray = props.pudseyStatsForEveryYearArray;
 
     const clubName = config.teamNames.shortName.toLowerCase();
 
@@ -67,6 +69,21 @@ function PlayerStats(props: PlayerStatsProps) {
         // Set which stats to show
         if (!showAllClubStats) {
             switch (clubNameForStats) {
+                case 'pudsey':
+                    setStatsToUse(pudseyStats?.playerResults);
+                    setAllYearsStatsToUseArray(
+                        pudseyStatsForEveryYearArray
+                    );
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  pudseyStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(
+                                  pudseyStats?.playerResults
+                              )
+                    );
+                    break;
                 case 'littlemoor':
                     setStatsToUse(littlemoorStats?.playerResults);
                     setAllYearsStatsToUseArray(
@@ -122,6 +139,8 @@ function PlayerStats(props: PlayerStatsProps) {
         clubStatsForEveryYearArray,
         littlemoorStats,
         littlemoorStatsForEveryYearArray,
+        pudseyStats,
+        pudseyStatsForEveryYearArray,
         showAllClubStats,
         showStatsSinceStart,
         clubNameForStats,

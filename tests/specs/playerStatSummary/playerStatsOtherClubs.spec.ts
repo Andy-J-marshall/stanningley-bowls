@@ -6,6 +6,8 @@ test.describe('Player stats - Other Clubs', () => {
         await playerSummaryPage.goto();
     });
 
+    // TODO create tests
+
     test('Detailed stats for John Armitage stats are correct', async ({
         playerSearchPage,
         playerStatOptionsPage,

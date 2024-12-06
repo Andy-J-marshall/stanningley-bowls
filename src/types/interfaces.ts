@@ -61,9 +61,11 @@ export interface PlayerStatsOptionsProps {
 export interface PlayerStatsProps {
     clubStats: FullStatsFile;
     littlemoorStats: FullStatsFile;
+    pudseyStats: FullStatsFile;
     allClubsStats: FullStatsFile;
     clubStatsForEveryYearArray: FullStatsFile[];
     littlemoorStatsForEveryYearArray: FullStatsFile[];
+    pudseyStatsForEveryYearArray: FullStatsFile[];
     allClubsStatsForEveryYearArray: FullStatsFile[];
 }
 
