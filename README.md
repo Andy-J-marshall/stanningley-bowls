@@ -155,7 +155,7 @@ A number of manual changes are required at the end of each calendar year.
 
 3. If entering a new league, make sure the `bowlsClubStats.py` script will still work e.g. different scoring methods, or different number of players in a team might cause issues
 4. Check the scripts still work for the new season. The Bowlsnet website or text reports may have changed which could cause the scripts to fail
-5. Consider whether to add league reports for any non-tracked leagues for the previous season e.g. Barkston Ash, AireWharfe Saturday. This might make it easier in the future to track these leagues if a new player joins who has played in them
+5. Consider whether to add league reports for any non-tracked leagues for the previous season i.e. the ones commented out in `scripts/bowlsnet/getDataFromBowlsnet.spec.ts`. This might make it easier in the future to track these leagues if a new player joins who has played in them
 
 ## Web application
 

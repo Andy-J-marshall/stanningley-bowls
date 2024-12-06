@@ -131,6 +131,10 @@ const leagues = [
     //     day: 'Castleford Wednesday',
     //     url: '/Castleford-Evening',
     // },
+    // {
+    //     day: 'Wakefield Saturday',
+    //     url: '/WakefieldSat',
+    // },
 ];
 
 for (const league of leagues) {
