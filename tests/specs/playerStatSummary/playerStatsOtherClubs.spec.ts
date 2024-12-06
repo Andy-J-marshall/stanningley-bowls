@@ -7,6 +7,7 @@ test.describe('Player stats - Other Clubs', () => {
     });
 
     test('Detailed stats for John Armitage stats are correct', async ({
+        detailedPlayerStatsPage,
         playerSearchPage,
         playerStatOptionsPage,
         playerStatsOverviewPage,
@@ -19,6 +20,12 @@ test.describe('Player stats - Other Clubs', () => {
 
         await playerStatsOverviewPage.validateOverviewStats(57, 43, 5.21);
         await expect(playerStatsOverviewPage.biggestWin).toHaveText('21 - 3');
+
+        await expect(detailedPlayerStatsPage.overviewAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.winLossAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.aggAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.teamAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.resultsAccordion).toBeVisible();
     });
 
     test('Summary of John Armitage stats are correct', async ({
@@ -69,24 +76,43 @@ test.describe('Player stats - Other Clubs', () => {
         await playerSummaryPage.validateSummaryStats(18, 11, 61, 1.83);
     });
 
-    test('Can filter venue stats in 2014', async ({
+    test('Can filter venue stats in 2024', async ({
         playerSummaryPage,
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        playerSummaryPage.setPlayerToFind('martin fulton');
+        playerSummaryPage.setPlayerToFind('linda barrand');
 
-        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        await yearSelectPage.select2014Year();
+        await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
+        await yearSelectPage.select2023Year();
 
-        await playerStatOptionsPage.selectSinglesOnlyRadio();
-        await playerSummaryPage.validateSummaryStats(31, 23, 74, 4.97);
+        await playerSummaryPage.validateSummaryStats(22, 4, 18, -6.45);
+
+        await playerStatOptionsPage.selectCupOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(1, 0, 0, -12.0);
 
         await playerStatOptionsPage.selectHomeOnlyRadio();
-        await playerSummaryPage.validateSummaryStats(15, 13, 87, 7.47);
+        await playerSummaryPage.validateSummaryStats(12, 2, 17, -7.08);
 
         await playerStatOptionsPage.selectAwayOnlyRadio();
-        await playerSummaryPage.validateSummaryStats(16, 10, 63, 2.63);
+        await playerSummaryPage.validateSummaryStats(9, 2, 22, -5.0);
+    });
+
+    test('Can filter game type stats in 2023', async ({
+        playerSummaryPage,
+        playerStatOptionsPage,
+        yearSelectPage,
+    }) => {
+        playerSummaryPage.setPlayerToFind('richard hodgson');
+
+        await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
+        await yearSelectPage.select2023Year();
+
+        await playerStatOptionsPage.selectSinglesOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(55, 32, 58, 1.96);
+
+        await playerStatOptionsPage.selectPairsOnlyRadio();
+        await playerSummaryPage.validateSummaryStats(3, 1, 33, 0.0);
     });
 
     test('Summary of Jack Roberts stats since 2013 are correct', async ({
@@ -123,15 +149,23 @@ test.describe('Player stats - Other Clubs', () => {
     }) => {
         await yearSelectPage.select2018Year();
         await playerStatOptionsPage.selectTeamFromDropdown(
-            'Wednesday Half Holiday Bradford'
+            'Half Holiday Bradford'
         );
         await expect(playerSummaryPage.playerRows).toHaveCount(8);
+
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
         await expect(playerSummaryPage.playerRows).toHaveCount(2);
 
+        await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
+        await expect(playerSummaryPage.playerRows).toHaveCount(0);
+
         await playerStatOptionsPage.selectTeamFromDropdown('Saturday Bradford');
-        await expect(playerSummaryPage.playerRows).toHaveCount(2);
+        await expect(playerSummaryPage.playerRows).toHaveCount(1);
+
         await playerStatOptionsPage.selectClubFromDropdown('Stanningley');
         await expect(playerSummaryPage.playerRows).toHaveCount(15);
+
+        await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
+        await expect(playerSummaryPage.playerRows).toHaveCount(2);
     });
 });

@@ -80,21 +80,11 @@ export class PlayerStatsTeamPage {
         this.thuVetsBLeedsLosses = page.locator('#thursdayvetsleedsbLosses');
         this.thuVetsBLeedsAvg = page.locator('#thursdayvetsleedsbAverage');
 
-        this.wedBradfordGames = page.locator(
-            '#wednesdayhalfholidaybradfordGamesPlayed'
-        );
-        this.wedBradfordWins = page.locator(
-            '#wednesdayhalfholidaybradfordWins'
-        );
-        this.wedBradfordWinPerc = page.locator(
-            '#wednesdayhalfholidaybradfordWinPerc'
-        );
-        this.wedBradfordLosses = page.locator(
-            '#wednesdayhalfholidaybradfordLosses'
-        );
-        this.wedBradfordAvg = page.locator(
-            '#wednesdayhalfholidaybradfordAverage'
-        );
+        this.wedBradfordGames = page.locator('#halfholidaybradfordGamesPlayed');
+        this.wedBradfordWins = page.locator('#halfholidaybradfordWins');
+        this.wedBradfordWinPerc = page.locator('#halfholidaybradfordWinPerc');
+        this.wedBradfordLosses = page.locator('#halfholidaybradfordLosses');
+        this.wedBradfordAvg = page.locator('#halfholidaybradfordAverage');
 
         this.wedPairsAWGames = page.locator(
             '#wednesdaypairsairewharfeGamesPlayed'

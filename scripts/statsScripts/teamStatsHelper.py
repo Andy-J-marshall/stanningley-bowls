@@ -9,8 +9,8 @@ leaguesWith10Players = [
 ]
 leaguesWith6Players = [
     "monday bradford",
-    "wednesday half holiday bradford",
-    "wednesday half holiday leeds",
+    "half holiday bradford",
+    "half holiday leeds",
 ]
 
 
@@ -110,27 +110,21 @@ def findHomeAndAwayTeamGameRows(allRowsInFile, teamNameUsedForLeague, displayTea
             hostedCupGame = isCupGame(row.lower())
 
             # Check if A and B team are playing each other
-            aTeamPlayingBTeamBool = False
+            playingEachOtherBool = False
             if not hostedCupGame and row.lower().count(displayTeamName.lower()) > 1:
-                aTeamPlayingBTeamBool = True
-                teamLower = teamNameUsedForLeague.lower()
-                rowLower = row.lower().strip()
-                if teamLower in rowLower:
-                    # Determine if A or B team is playing at home and store the rows
-                    if rowLower.endswith((" a", " 'a'")):
-                        if teamLower.endswith((" a", " 'a'")):
+                playingEachOtherBool = True
+                suffixes = [" a", " 'a'", " b", " 'b'", " c", " 'c'", " d", " 'd'"]
+                for suffix in suffixes:
+                    if row.lower().strip().endswith(suffix):
+                        if teamNameUsedForLeague.lower().endswith(suffix):
                             awayRow.append(rowNumber)
-                        elif teamLower.endswith((" b", " 'b'")):
+                        else:
                             homeRow.append(rowNumber)
-                    elif rowLower.endswith((" b", " 'b'")):
-                        if teamLower.endswith((" b", " 'b'")):
-                            awayRow.append(rowNumber)
-                        elif teamLower.endswith((" a", " 'a'")):
-                            homeRow.append(rowNumber)
+                        break
 
             # Store home and away game rows
             if (
-                aTeamPlayingBTeamBool is False
+                playingEachOtherBool is False
                 and hostedCupGame is False
                 and teamNameUsedForLeague.lower() in row.lower()
             ):

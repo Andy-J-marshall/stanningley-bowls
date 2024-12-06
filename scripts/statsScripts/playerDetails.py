@@ -1,10 +1,17 @@
 import playerStatsHelper
-import clubDetails
+import stanningleyDetails
 import littlemoorDetails
+import pudseyDetails
 
-players = list(set(clubDetails.players + littlemoorDetails.players))
+players = list(
+    set(stanningleyDetails.players + littlemoorDetails.players + pudseyDetails.players)
+)
 duplicatePlayerNames = list(
-    set(clubDetails.duplicatePlayerNames + littlemoorDetails.duplicatePlayerNames)
+    set(
+        stanningleyDetails.duplicatePlayerNames
+        + littlemoorDetails.duplicatePlayerNames
+        + pudseyDetails.duplicatePlayerNames
+    )
 )
 
 
@@ -38,17 +45,17 @@ allLeagues = [
     "Monday Combined Leeds",
     "Tuesday Vets Leeds",
     "Tuesday Leeds",
-    "Wednesday Half Holiday Leeds",
+    "Half Holiday Leeds",
     "Wednesday Pairs AireWharfe",
     "Thursday Vets Leeds",
     "Saturday Leeds",
     "Mirfield",
     "Spen Valley",
     "Monday AireWharfe",
-    "Tuesday AireWharfe",
+    "AireWharfe Vets",
     "Monday Bradford",
-    "Wednesday Half Holiday Bradford",
-    "Thursday Vets Bradford",
+    "Half Holiday Bradford",
+    "Bradford Vets",
     "Saturday Bradford",
 ]
 

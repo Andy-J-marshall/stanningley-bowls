@@ -5,6 +5,9 @@ teamNames = [
     "Stanningley Park",
     "Stanningley Park A",
     "Stanningley Park B",
+    "Stanningley Pk",
+    "Stanningley Pk A",
+    "Stanningley Pk B",
 ]
 displayTeamName = "Stanningley"
 
@@ -13,7 +16,7 @@ teamDays = [
     "Monday Combined Leeds",
     "Tuesday Vets Leeds",
     "Tuesday Leeds",
-    "Wednesday Half Holiday Leeds",
+    "Half Holiday Leeds",
     "Wednesday Pairs AireWharfe",
     "Thursday Vets Leeds",
     "Saturday Leeds (A)",
@@ -83,7 +86,7 @@ traitorPlayers = {
     "Monday Combined Leeds": ["neil porter"],
     "Tuesday Vets Leeds": [],
     "Tuesday Leeds": ["neil porter"],
-    "Wednesday Half Holiday Leeds": ["clifford brogie"],
+    "Half Holiday Leeds": ["clifford brogie"],
     "Wednesday Pairs AireWharfe": [],
     "Thursday Vets Leeds": ["neil porter"],
     "Saturday Leeds": ["clifford brogie", "neil porter"],

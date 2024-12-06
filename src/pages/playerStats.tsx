@@ -25,26 +25,34 @@ import {
 import { returnPlayerStatSummary } from '../helpers/playerStatsSummaryHelper';
 
 function PlayerStats(props: PlayerStatsProps) {
-    const allClubsStats = props.allClubsStats;
-    const clubStats = props.clubStats;
+    const stanningleyStats = props.stanningleyStats;
+    const stanningleyStatsForEveryYearArray =
+        props.stanningleyStatsForEveryYearArray;
+
     const littlemoorStats = props.littlemoorStats;
-    const clubStatsForEveryYearArray = props.clubStatsForEveryYearArray;
-    const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
     const littlemoorStatsForEveryYearArray =
         props.littlemoorStatsForEveryYearArray;
+
+    const pudseyStats = props.pudseyStats;
+    const pudseyStatsForEveryYearArray = props.pudseyStatsForEveryYearArray;
+
+    const allClubsStats = props.allClubsStats;
+    const allClubsStatsForEveryYearArray = props.allClubsStatsForEveryYearArray;
 
     const clubName = config.teamNames.shortName.toLowerCase();
 
     const [searchedPlayerName, setSearchedPlayerName] = useState('');
     const [value, setValue] = useState(['']);
     const [loaded, setLoaded] = useState(false);
-    const [showAllClubStats, setShowAllClubStats] = useState(false);
-    const [statsToUse, setStatsToUse] = useState(clubStats?.playerResults);
+    const [showAllClubsStats, setShowAllClubsStats] = useState(false);
+    const [statsToUse, setStatsToUse] = useState(
+        stanningleyStats?.playerResults
+    );
     const [showStatsSinceStart, setShowStatsSinceStart] = useState(false);
     const [teamNameForStats, setTeamNameForStats] = useState('');
     const [clubNameForStats, setClubNameForStats] = useState(clubName);
     const [allYearsStatsToUseArray, setAllYearsStatsToUseArray] = useState(
-        clubStatsForEveryYearArray
+        stanningleyStatsForEveryYearArray
     );
     const [showSinglesOnlyBool, setShowSinglesOnlyBool] = useState(false);
     const [showPairsOnlyBool, setShowPairsOnlyBool] = useState(false);
@@ -52,7 +60,7 @@ function PlayerStats(props: PlayerStatsProps) {
     const [showAwayOnlyBool, setShowAwayOnlyBool] = useState(false);
     const [showCupOnlyBool, setShowCupOnlyBool] = useState(false);
     const [teamNames, setTeamNames] = useState(
-        returnTeamNamesWithGames(clubStats?.playerResults)
+        returnTeamNamesWithGames(stanningleyStats?.playerResults)
     );
     const [players, setPlayers] = useState(['']);
     const [yearInTitle, setYearInTitle] = useState('');
@@ -65,8 +73,21 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         // Set which stats to show
-        if (!showAllClubStats) {
+        if (!showAllClubsStats) {
             switch (clubNameForStats) {
+                case 'pudsey':
+                    setStatsToUse(pudseyStats?.playerResults);
+                    setAllYearsStatsToUseArray(pudseyStatsForEveryYearArray);
+                    setTeamNames(
+                        showStatsSinceStart
+                            ? returnTeamNamesWithGamesForAllYears(
+                                  pudseyStatsForEveryYearArray
+                              )
+                            : returnTeamNamesWithGames(
+                                  pudseyStats?.playerResults
+                              )
+                    );
+                    break;
                 case 'littlemoor':
                     setStatsToUse(littlemoorStats?.playerResults);
                     setAllYearsStatsToUseArray(
@@ -84,14 +105,18 @@ function PlayerStats(props: PlayerStatsProps) {
                     break;
                 case clubName:
                 default:
-                    setStatsToUse(clubStats?.playerResults);
-                    setAllYearsStatsToUseArray(clubStatsForEveryYearArray);
+                    setStatsToUse(stanningleyStats?.playerResults);
+                    setAllYearsStatsToUseArray(
+                        stanningleyStatsForEveryYearArray
+                    );
                     setTeamNames(
                         showStatsSinceStart
                             ? returnTeamNamesWithGamesForAllYears(
-                                  clubStatsForEveryYearArray
+                                  stanningleyStatsForEveryYearArray
                               )
-                            : returnTeamNamesWithGames(clubStats?.playerResults)
+                            : returnTeamNamesWithGames(
+                                  stanningleyStats?.playerResults
+                              )
                     );
                     break;
             }
@@ -110,7 +135,7 @@ function PlayerStats(props: PlayerStatsProps) {
             setPlayers(Array.from(new Set(playerListAllYears)).sort());
         } else {
             setYearInTitle(
-                new Date().getFullYear() !== Number(clubStats.statsYear)
+                new Date().getFullYear() !== Number(stanningleyStats.statsYear)
                     ? allClubsStats.statsYear
                     : ''
             );
@@ -118,11 +143,13 @@ function PlayerStats(props: PlayerStatsProps) {
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         }
     }, [
-        clubStats,
-        clubStatsForEveryYearArray,
+        stanningleyStats,
+        stanningleyStatsForEveryYearArray,
         littlemoorStats,
         littlemoorStatsForEveryYearArray,
-        showAllClubStats,
+        pudseyStats,
+        pudseyStatsForEveryYearArray,
+        showAllClubsStats,
         showStatsSinceStart,
         clubNameForStats,
         loaded,
@@ -141,7 +168,7 @@ function PlayerStats(props: PlayerStatsProps) {
     }
 
     function allClubsStatsCallback(showBool: boolean) {
-        setShowAllClubStats(showBool);
+        setShowAllClubsStats(showBool);
 
         scrollToBottom();
     }
@@ -216,7 +243,7 @@ function PlayerStats(props: PlayerStatsProps) {
             <IndividualPlayerStats
                 name={playerName.toLowerCase()}
                 playersStats={detailedStats}
-                showAllClubStats={showAllClubStats}
+                showAllClubsStats={showAllClubsStats}
             />
         );
     }
@@ -301,7 +328,9 @@ function PlayerStats(props: PlayerStatsProps) {
                 teamNames={teamNames}
             />
 
-            <p className="footnote">Last Updated: {clubStats.lastUpdated}</p>
+            <p className="footnote">
+                Last Updated: {stanningleyStats.lastUpdated}
+            </p>
         </div>
     );
 }

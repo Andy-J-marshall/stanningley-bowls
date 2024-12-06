@@ -745,7 +745,7 @@ Ian Gould                8 Michael Rhodes          21
             Aggregate: 166             Aggregate: 197 
 
         Division 5                Tue 23rd Apr        
-   Brighouse Sports 'B'     Pudsey BC 'C' at Tyersal  
+   Brighouse Sports 'B'     Pudsey BC 'C'  
 Richard Hobson          21 Duncan Reeves           18 
 Gordon Johnson          18 Tom Morris              21 
 Jon Gamble              19 Simon Metcalfe          21 
@@ -1201,7 +1201,7 @@ Michael Hick            21 Ryan Oconnor            11
             Aggregate: 142             Aggregate: 136 
 
         Division 5                Tue 30th Apr        
- Pudsey BC 'C' at Tyersal         Horbury WMC         
+ Pudsey BC 'C'         Horbury WMC         
 Tom Morris              20 David Horan             21 
 Mason Lindley           16 David Pursell           21 
 Craig Farquharson       21 Mark Young              18 
@@ -1657,7 +1657,7 @@ Stuart Fletcher         21 Michael Howlett         20
             Aggregate: 145             Aggregate: 122 
 
         Division 5                Tue 7th May         
-   Denby Grange BC 'B'      Pudsey BC 'C' at Tyersal  
+   Denby Grange BC 'B'      Pudsey BC 'C'  
 Michael Knowles         12 Peter Simpson           21 
 Neil Broadhead          14 Duncan Reeves           21 
 Malcolm Brown           12 Mason Lindley           21 
@@ -2113,7 +2113,7 @@ Tommy Whitaker          21 Michael Brierley        20
             Aggregate: 152             Aggregate: 130 
 
         Division 5                Tue 14th May        
-       Broad Oak BC         Pudsey BC 'C' at Tyersal  
+       Broad Oak BC         Pudsey BC 'C'  
 Russel Beaumont         21 Tom Morris              18 
 Brendan Gilbert         21 Duncan Reeves           17 
 Martin Burgess          21 Dean Scarth             20 
@@ -2556,7 +2556,7 @@ David Wright            17 Martin Burgess          21
             Aggregate:  97             Aggregate: 168 
 
         Division 5                Tue 21st May        
- Pudsey BC 'C' at Tyersal       Heckmondwike BC       
+ Pudsey BC 'C'       Heckmondwike BC       
 Taylor Smith             9 Russell Harker          21 
 Peter Simpson           21 Peter Buchan             8 
 Mason Lindley           21 Norman Booth            16 
@@ -2973,7 +2973,7 @@ Joshua Stephens         14 Michael Rhodes          21
             Aggregate: 165             Aggregate: 184 
 
         Division 5                Tue 28th May        
-    Almondbury Lib 'B'      Pudsey BC 'C' at Tyersal  
+    Almondbury Lib 'B'      Pudsey BC 'C'  
 Aidan Hick              21 Steve Harwood           10 
 Ethan Hick              21 Rick Pearson            12 
 Andy Broughton          20 Logan Preston           21 
@@ -3442,7 +3442,7 @@ Darren Wright           20 Dale Shaw               21
             Aggregate: 137             Aggregate: 127 
 
         Division 5                Tue 4th Jun         
- Pudsey BC 'C' at Tyersal        Netherton Con        
+ Pudsey BC 'C'        Netherton Con        
 Jake Daggett            21 Jimmy Nolan             13 
 Mason Lindley           21 Tommy Whitaker           8 
 Sebastian Mordue        21 Mark Richardson         14 
@@ -3885,7 +3885,7 @@ John Pejica             21 Michael Knowles          7
             Aggregate: 151             Aggregate: 145 
 
         Division 5                Tue 11th Jun        
-      Cowcliffe Lib         Pudsey BC 'C' at Tyersal  
+      Cowcliffe Lib         Pudsey BC 'C'  
 Steve Halsall           21 Simon Metcalfe          19 
 Graham Radcliffe        21 Steve Harwood           18 
 Wayne Garside           18 Craig Farquharson       21 
@@ -4700,7 +4700,7 @@ Andy Robinson           10 Richard Brooke          21
             Aggregate: 182             Aggregate: 159 
 
         Division 5                Tue 9th Jul         
- Pudsey BC 'C' at Tyersal     Brighouse Sports 'B'    
+ Pudsey BC 'C'     Brighouse Sports 'B'    
 Peter Simpson           21 John Bloomer            12 
 Simon Metcalfe          21 Dale Dyson               3 
 Logan Preston           21 Neal Hopper             11 
@@ -5156,7 +5156,7 @@ Tommy Whitaker          16 Andy Broughton          21
             Aggregate: 133             Aggregate: 147 
 
         Division 5                Tue 16th Jul        
-       Horbury WMC          Pudsey BC 'C' at Tyersal  
+       Horbury WMC          Pudsey BC 'C'  
 Mark Young              17 Stewart Watson          21 
 David Pursell           18 Dave McDonald           21 
 Martin Barlow           21 Tom Morris              17 
@@ -5627,7 +5627,7 @@ Michael Armitage        21 Jason Horsley           18
             Aggregate: 133             Aggregate: 128 
 
         Division 5                Tue 23rd Jul        
- Pudsey BC 'C' at Tyersal     Denby Grange BC 'B'     
+ Pudsey BC 'C'     Denby Grange BC 'B'     
 Simon Metcalfe          21 Chris Shires            14 
 Dave McDonald           17 Neil Broadhead          21 
 David Hilliam           21 Michael Knowles          3 
@@ -6113,7 +6113,7 @@ Steve Halsall           21 John Pejica             18
             Aggregate: 165             Aggregate: 118 
 
         Division 5                Tue 30th Jul        
- Pudsey BC 'C' at Tyersal         Broad Oak BC        
+ Pudsey BC 'C'         Broad Oak BC        
 Logan Preston           21 Darren Murphy            7 
 Jake Daggett            21 Connor Beaumont         19 
 Tom Morris              21 Kenneth Wilson          13 
@@ -6556,7 +6556,7 @@ Martin Moran            16 Danny Walker            21
             Aggregate: 163             Aggregate:  77 
 
         Division 5                Tue 6th Aug         
-     Heckmondwike BC        Pudsey BC 'C' at Tyersal  
+     Heckmondwike BC        Pudsey BC 'C'  
 Sean Carter             15 Dean Scarth             21 
 Ashley Ian Harker        5 Tom Morris              21 
 Gary Dawson             21 Duncan Reeves            6 
@@ -6973,7 +6973,7 @@ Paul Fincher            10 Simon Hough             21
             Aggregate: 181             Aggregate: 145 
 
         Division 5                Tue 13th Aug        
- Pudsey BC 'C' at Tyersal      Almondbury Lib 'B'     
+ Pudsey BC 'C'      Almondbury Lib 'B'     
 Matthew Leaf            21 Jamie Shaw               7 
 Simon Metcalfe          21 Steve Maude              7 
 Dave McDonald           20 Geoff Martin            21 
@@ -7442,7 +7442,7 @@ David Ingham             4 David Walker            21
             Aggregate: 144             Aggregate: 118 
 
         Division 5                Tue 20th Aug        
-      Netherton Con         Pudsey BC 'C' at Tyersal  
+      Netherton Con         Pudsey BC 'C'  
 Rob Parker              21 Stewart Watson          18 
 L Hayden                12 Simon Metcalfe          21 
 Ryan Oconnor             5 Logan Preston           21 
@@ -7885,7 +7885,7 @@ Malcolm Brown           10 Graham Brook            21
             Aggregate: 116             Aggregate: 168 
 
         Division 5                Tue 27th Aug        
- Pudsey BC 'C' at Tyersal        Cowcliffe Lib        
+ Pudsey BC 'C'        Cowcliffe Lib        
 Dave McDonald           15 Stephen Cameron         21 
 Simon Metcalfe          10 Harry Chadwick          21 
 Craig Farquharson       11 Graham Radcliffe        21 

@@ -58,12 +58,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -78,7 +78,7 @@
                 "wins": 0,
                 "aggDiff": -8
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -166,12 +166,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -186,7 +186,7 @@
                 "wins": 6,
                 "aggDiff": -41
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -349,12 +349,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 20,
                 "wins": 8,
                 "aggDiff": -15
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -369,7 +369,7 @@
                 "wins": 9,
                 "aggDiff": -3
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 18,
                 "wins": 6,
                 "aggDiff": -38
@@ -509,12 +509,12 @@
                 "wins": 8,
                 "aggDiff": 10
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 6,
                 "wins": 5,
                 "aggDiff": 32
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -529,7 +529,7 @@
                 "wins": 3,
                 "aggDiff": 15
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -637,12 +637,12 @@
                 "wins": 9,
                 "aggDiff": 28
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 1,
                 "wins": 1,
                 "aggDiff": 9
@@ -657,7 +657,7 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -759,12 +759,12 @@
                 "wins": 7,
                 "aggDiff": -12
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -779,7 +779,7 @@
                 "wins": 9,
                 "aggDiff": 56
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -906,12 +906,12 @@
                 "wins": 0,
                 "aggDiff": -83
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 11,
                 "wins": 6,
                 "aggDiff": 13
@@ -926,7 +926,7 @@
                 "wins": 7,
                 "aggDiff": -11
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1041,12 +1041,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 6,
                 "wins": 5,
                 "aggDiff": 21
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 1,
                 "wins": 1,
                 "aggDiff": 15
@@ -1061,7 +1061,7 @@
                 "wins": 9,
                 "aggDiff": -17
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1134,12 +1134,12 @@
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford": {
+            "half holiday bradford": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
             },
-            "wednesday half holiday bradford (b)": {
+            "half holiday bradford (b)": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1154,7 +1154,7 @@
                 "wins": 0,
                 "aggDiff": -18
             },
-            "thursday vets bradford": {
+            "bradford vets": {
                 "games": 0,
                 "wins": 0,
                 "aggDiff": 0
@@ -1330,7 +1330,7 @@
             ]
         },
         {
-            "day": "Wednesday Half Holiday Bradford",
+            "day": "Half Holiday Bradford",
             "awayWins": 4,
             "homeWins": 8,
             "wins": 12,
@@ -1369,7 +1369,7 @@
             ]
         },
         {
-            "day": "Wednesday Half Holiday Bradford (B)",
+            "day": "Half Holiday Bradford (B)",
             "awayWins": 4,
             "homeWins": 6,
             "wins": 10,
@@ -1482,7 +1482,7 @@
             ]
         },
         {
-            "day": "Thursday Vets Bradford",
+            "day": "Bradford Vets",
             "awayWins": 0,
             "homeWins": 7,
             "wins": 7,
@@ -1591,6 +1591,6 @@
             ]
         }
     ],
-    "lastUpdated": "05/12/2024",
+    "lastUpdated": "06/12/2024",
     "statsYear": "2024"
 }

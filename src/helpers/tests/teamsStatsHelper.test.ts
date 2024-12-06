@@ -83,12 +83,12 @@ describe('#teamStatsHelper Tests', () => {
 
             const teamNames = returnTeamNamesWithGames(playerStats);
             expect(teamNames).to.deep.equal([
+                'half holiday leeds',
                 'monday combined leeds',
                 'saturday leeds',
                 'thursday vets leeds',
                 'tuesday leeds',
                 'tuesday vets leeds',
-                'wednesday half holiday leeds',
             ]);
         });
     });

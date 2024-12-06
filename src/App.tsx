@@ -18,19 +18,31 @@ import './app.css';
 import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
 
-const allYearClubStats: any = statsData.allYearClubStats;
+const allYearStanningleyStats: any = statsData.allYearStanningleyStats;
+const stanningleyStatsForEveryYearArray: any[] =
+    statsData.stanningleyStatsForEveryYearArray;
+
 const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
-const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
-const clubStatsForEveryYearArray: any[] = statsData.clubStatsForEveryYearArray;
 const littlemoorStatsForEveryYearArray: any[] =
     statsData.littlemoorStatsForEveryYearArray;
+
+const allYearPudseyStats: any = statsData.allYearPudseyStats;
+const pudseyStatsForEveryYearArray: any[] =
+    statsData.pudseyStatsForEveryYearArray;
+
+const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
 const allClubsStatsForEveryYearArray: any[] =
     statsData.allClubsStatsForEveryYearArray;
 
 function App() {
-    const [clubStats, setClubStats] = useState(statsData.dataFiles.clubStats24);
+    const [stanningleyStats, setStanningleyStats] = useState(
+        statsData.dataFiles.stanningleyStats24
+    );
     const [littlemoorStats, setLittlemoorStats] = useState(
         statsData.dataFiles.littlemoorStats24
+    );
+    const [pudseyStats, setPudseyStats] = useState(
+        statsData.dataFiles.pudseyStats24
     );
     const [allClubsStats, setAllClubsStats] = useState(
         statsData.dataFiles.allClubsStats24
@@ -46,89 +58,107 @@ function App() {
     }, []);
 
     function statsSelectCallback(year: string) {
-        const currentYear = new Date().getFullYear();
-        let clubStatsForSelectedYear: any;
+        let stanningleyStatsForSelectedYear: any;
         let littlemoorStatsForSelectedYear: any;
+        let pudseyStatsForSelectedYear: any;
         let allClubsStatsForSelectedYear: any;
 
         switch (year.toString()) {
             case '2013':
-                clubStatsForSelectedYear = allYearClubStats['year2013'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2013'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2013'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2013'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2013'];
                 break;
             case '2014':
-                clubStatsForSelectedYear = allYearClubStats['year2014'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2014'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2014'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2014'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2014'];
                 break;
             case '2015':
-                clubStatsForSelectedYear = allYearClubStats['year2015'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2015'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2015'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2015'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2015'];
                 break;
             case '2016':
-                clubStatsForSelectedYear = allYearClubStats['year2016'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2016'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2016'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2016'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2016'];
                 break;
             case '2017':
-                clubStatsForSelectedYear = allYearClubStats['year2017'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2017'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2017'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2017'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2017'];
                 break;
             case '2018':
-                clubStatsForSelectedYear = allYearClubStats['year2018'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2018'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2018'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2018'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2018'];
                 break;
             case '2019':
-                clubStatsForSelectedYear = allYearClubStats['year2019'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2019'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2019'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2019'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2019'];
                 break;
             case '2021':
-                clubStatsForSelectedYear = allYearClubStats['year2021'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2021'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2021'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2021'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2021'];
                 break;
             case '2022':
-                clubStatsForSelectedYear = allYearClubStats['year2022'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2022'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2022'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2022'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2022'];
                 break;
             case '2023':
-                clubStatsForSelectedYear = allYearClubStats['year2023'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2023'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2023'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2023'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2023'];
                 break;
+            default:
             case '2024':
-                clubStatsForSelectedYear = allYearClubStats['year2024'];
+                stanningleyStatsForSelectedYear =
+                    allYearStanningleyStats['year2024'];
                 littlemoorStatsForSelectedYear =
                     allYearLittlemoorStats['year2024'];
+                pudseyStatsForSelectedYear = allYearPudseyStats['year2024'];
                 allClubsStatsForSelectedYear = allYearAllClubsStats['year2024'];
-                break;
-            default:
-                clubStatsForSelectedYear =
-                    allYearClubStats[`year${currentYear}`];
-                allClubsStatsForSelectedYear =
-                    allYearAllClubsStats[`year${currentYear}`];
                 break;
         }
 
         setYearToDisplay(year.toString());
-        setClubStats(clubStatsForSelectedYear);
+        setStanningleyStats(stanningleyStatsForSelectedYear);
         setLittlemoorStats(littlemoorStatsForSelectedYear);
+        setPudseyStats(pudseyStatsForSelectedYear);
         setAllClubsStats(allClubsStatsForSelectedYear);
     }
 
@@ -152,7 +182,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <Results
-                                    stats={clubStats}
+                                    stats={stanningleyStats}
                                     yearToDisplay={yearToDisplay}
                                 />
                             </div>
@@ -167,15 +197,19 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <PlayerStats
-                                    clubStats={clubStats}
-                                    littlemoorStats={littlemoorStats}
-                                    allClubsStats={allClubsStats}
-                                    clubStatsForEveryYearArray={
-                                        clubStatsForEveryYearArray
+                                    stanningleyStats={stanningleyStats}
+                                    stanningleyStatsForEveryYearArray={
+                                        stanningleyStatsForEveryYearArray
                                     }
+                                    littlemoorStats={littlemoorStats}
                                     littlemoorStatsForEveryYearArray={
                                         littlemoorStatsForEveryYearArray
                                     }
+                                    pudseyStats={pudseyStats}
+                                    pudseyStatsForEveryYearArray={
+                                        pudseyStatsForEveryYearArray
+                                    }
+                                    allClubsStats={allClubsStats}
                                     allClubsStatsForEveryYearArray={
                                         allClubsStatsForEveryYearArray
                                     }
@@ -192,7 +226,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <TeamStats
-                                    stats={clubStats}
+                                    stats={stanningleyStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />
@@ -208,7 +242,7 @@ function App() {
                                     yearToDisplay={yearToDisplay}
                                 />
                                 <Records
-                                    stats={clubStats}
+                                    stats={stanningleyStats}
                                     statsSelectCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
                                 />

@@ -79,10 +79,11 @@ Most of the club details are stored in the `config.ts` file (e.g. membership pri
 
 The script that collates stats from all club teams can be found in the `/scripts/statsScripts` directory.
 
-Three JSON files will be generated after running the scripts:
+Four JSON files will be generated after running the scripts:
 
 -   `stanningleyStats{year}.json` - contains the stats for all Stanningley players
 -   `littlemoorStats{year}.json` - contains the stats for Littlemoor players who also play for Stanningley
+-   `pudseyStats{year}.json` - contains the stats for Pudsey players who also play for Stanningley
 -   `allClubsStats{year}.json` - contains the stats for all Stanningley players, including other clubs they play for
 
 ## Update the player stats
@@ -135,7 +136,7 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Scripts
 
-1. Update `clubDetails.py` and `littlemoorDetails.py`:
+1. Update `stanningleyDetails.py`, `pudseyDetails.py` and `littlemoorDetails.py`:
 
     - Update the player information:
         - `players` - players who play for the club
@@ -158,9 +159,8 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Web application
 
-1. Import the new stats files into `statsData.ts`. Update `allYearClubStats` and `allYearAllClubsStats`.
-2. Update `statsCallback` in `App.tsx` with the reference to the new year's stats file
-   Update the default stats to display for `clubStats` and `allClubsStats`
+1. Import the new stats files into `statsData.ts` and update the exported objects and arrays with the new files.
+2. Update `statsSelectCallback` in `App.tsx` with the reference to the new year's stats file and update the default case to the new year. Also update the default stats and year to display in the useState hook.
 3. Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component
 4. If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years
 5. Update `History.tsx` with any trophies won

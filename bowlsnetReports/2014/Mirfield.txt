@@ -48,7 +48,7 @@ Robbie Fitzpatrick      21 Roger Norris            16
             Aggregate: 187             Aggregate: 162 
 
         Division 1                Tue 15th Apr        
-      Netherton Con              Pudsey BC Ltd        
+      Netherton Con              Pudsey BC Ltd 'A'      
 Ashley Daykin           21 Scott Fisher            14 
 Mark Bramall            11 John Spinks             21 
 G Brook                 21 Liam Griffin            13 
@@ -633,7 +633,7 @@ Michael Hick            21 G Brook                 19
             Aggregate: 185             Aggregate: 181 
 
         Division 1                Tue 22nd Apr        
-      Pudsey BC Ltd             Alverthorpe WMC       
+      Pudsey BC Ltd 'A'           Alverthorpe WMC       
 Tom Hanson              21 Paul Mottram             1 
 Liam Griffin            18 Jeff Normanton          21 
 Chris Hatton            21 Darren Atkinson         14 
@@ -1158,7 +1158,7 @@ Paul Mottram            20 Richard Brook           21
             Aggregate: 165             Aggregate: 186 
 
         Division 1                Tue 29th Apr        
-      Crossgates BC              Pudsey BC Ltd        
+      Crossgates BC              Pudsey BC Ltd 'A'      
 James Wilcox            21 Gary Wike                3 
 Peter Wilcox            20 Scott Fisher            21 
 Mark Hughes             21 Tom Hanson              17 
@@ -1773,7 +1773,7 @@ Richard Mozley          15 Mark Hughes             21
             Aggregate: 192             Aggregate: 168 
 
         Division 1                Tue 6th May         
-      Pudsey BC Ltd               Morton House        
+      Pudsey BC Ltd 'A'             Morton House        
 Jon Edmondson           21 Michael Robinson        14 
 Scott Fisher            21 Robert Dunford          13 
 Liam Griffin            21 Robbie Fitzpatrick      20 
@@ -2313,7 +2313,7 @@ Keiron Smith            21 Ernie Wearing           15
             Aggregate: 179             Aggregate: 155 
 
         Division 1                Tue 13th May        
-  Mirfield Old Bank WMC          Pudsey BC Ltd        
+  Mirfield Old Bank WMC          Pudsey BC Ltd 'A'      
 Richard Brook            4 Chris Hatton            21 
 Bryan Jenkins            4 Liam Griffin            21 
 Justin Waters           14 Tom Hanson              21 
@@ -2868,7 +2868,7 @@ Ronnie Wormald          21 Peter Wilcox            20
             Aggregate: 176             Aggregate: 180 
 
         Division 1                Tue 20th May        
-      Dearne Sports              Pudsey BC Ltd        
+      Dearne Sports              Pudsey BC Ltd 'A'      
 John Hardwick           21 Jon Edmondson           15 
 Ernie Wearing           19 Tom Hanson              21 
 John Sneddon            13 Gary Wike               21 
@@ -3468,7 +3468,7 @@ Bryan Jenkins           21 Kevin Nixon             19
             Aggregate: 205             Aggregate: 113 
 
         Division 1                Tue 27th May        
-      Pudsey BC Ltd             Brighouse Sports      
+      Pudsey BC Ltd 'A'           Brighouse Sports      
 Chris Hatton            21 Danny Fountain           5 
 Tom Hanson              21 Alan Bray                5 
 James Hanson            21 Tony Riley              11 
@@ -4008,7 +4008,7 @@ Ronnie Wormald           7 Ernie Wearing           21
             Aggregate: 175             Aggregate: 168 
 
         Division 1                Tue 3rd Jun         
-     Lower Hopton WMC            Pudsey BC Ltd        
+     Lower Hopton WMC            Pudsey BC Ltd 'A'      
 Robert Hitchen          20 Liam Griffin            21 
 Chris Brown             21 Mick Smith              16 
 Ashley Tattersley       12 Tom Hanson              21 
@@ -4638,7 +4638,7 @@ Frank Griffin           21 Nigel Bloomer           19
             Aggregate: 200             Aggregate: 158 
 
         Division 1                Tue 10th Jun        
-      Pudsey BC Ltd           Thongsbridge C & BC     
+      Pudsey BC Ltd 'A'         Thongsbridge C & BC     
 Jon Edmondson           21 James Davison           19 
 Liam Griffin            18 Ryan Clark              21 
 James Hanson            21 Chris Kelly             14 
@@ -5193,7 +5193,7 @@ Ernie Wearing           21 Michael Sweeney         18
             Aggregate: 208             Aggregate: 147 
 
         Division 1                Tue 1st Jul         
-      Pudsey BC Ltd              Netherton Con        
+      Pudsey BC Ltd 'A'            Netherton Con        
 Jon Edmondson           21 Martin Griffiths        11 
 Scott Fisher            19 Steven Hirst            21 
 Liam Griffin            21 Wayne Dews               4 
@@ -5778,7 +5778,7 @@ Wayne Dews              21 Andrew Sykes            17
             Aggregate: 153             Aggregate: 173 
 
         Division 1                Tue 8th Jul         
-     Alverthorpe WMC             Pudsey BC Ltd        
+     Alverthorpe WMC             Pudsey BC Ltd 'A'      
 Darren Atkinson         21 Jon Edmondson           15 
 Chris Bedford           10 Ian Shaw                21 
 Mark Brain              21 Scott Fisher            20 
@@ -6303,7 +6303,7 @@ Richard Mozley          21 Paul Mottram            14
             Aggregate: 198             Aggregate: 153 
 
         Division 1                Tue 15th Jul        
-      Pudsey BC Ltd              Crossgates BC        
+      Pudsey BC Ltd 'A'            Crossgates BC        
 Jon Edmondson           21 Steve Gilroy             9 
 Scott Fisher            18 Jonathan Wilcox         21 
 Liam Griffin            21 Keiron Smith             4 
@@ -6918,7 +6918,7 @@ Mark Taylor             21 Allan Thompson          16
             Aggregate: 196             Aggregate: 164 
 
         Division 1                Tue 22nd Jul        
-       Morton House              Pudsey BC Ltd        
+       Morton House              Pudsey BC Ltd 'A'      
 Robert Dunford          21 John Spinks             15 
 Dave Fisher             21 Gary Wike               15 
 Robbie Fitzpatrick      21 Ian Shaw                 7 
@@ -7458,7 +7458,7 @@ Ernie Wearing           21 Keiron Smith            20
             Aggregate: 183             Aggregate: 181 
 
         Division 1                Tue 29th Jul        
-      Pudsey BC Ltd          Mirfield Old Bank WMC    
+      Pudsey BC Ltd 'A'        Mirfield Old Bank WMC    
 Jon Edmondson           21 Clive Austin            18 
 Scott Fisher            21 Justin Waters            3 
 Liam Griffin            21 Richard Brook            8 
@@ -8013,7 +8013,7 @@ Keiron Smith            15 Josh Mordue             21
             Aggregate: 194             Aggregate: 156 
 
         Division 1                Tue 5th Aug         
-      Pudsey BC Ltd              Dearne Sports        
+      Pudsey BC Ltd 'A'            Dearne Sports        
 Jon Edmondson           21 Ernie Wearing           20 
 Scott Fisher            21 Mark Kay                10 
 Liam Griffin            21 Kevin Riley             18 
@@ -8613,7 +8613,7 @@ Ernie Wearing           10 Andrew Heaume           21
             Aggregate: 158             Aggregate: 176 
 
         Division 1                Tue 12th Aug        
-     Brighouse Sports            Pudsey BC Ltd        
+     Brighouse Sports            Pudsey BC Ltd 'A'      
 Nigel Bloomer           21 Liam Griffin            20 
 Danny Fountain          18 John Spinks             21 
 Richard Hobson           6 Jon Edmondson           21 
@@ -9153,7 +9153,7 @@ Ernie Wearing           15 Nigel Bloomer           21
             Aggregate: 186             Aggregate: 163 
 
         Division 1                Tue 19th Aug        
-      Pudsey BC Ltd             Lower Hopton WMC      
+      Pudsey BC Ltd 'A'           Lower Hopton WMC      
 Jon Edmondson           17 Ashley Tattersley       21 
 Scott Fisher            21 Ian Booth                9 
 Liam Griffin            21 Chris Brown             14 
@@ -9783,7 +9783,7 @@ Bob Whitfield           20 Justin Waters           21
             Aggregate: 174             Aggregate: 179 
 
         Division 1                Tue 26th Aug        
-   Thongsbridge C & BC           Pudsey BC Ltd        
+   Thongsbridge C & BC           Pudsey BC Ltd 'A'      
 Nick White              21 Chris Mordue            12 
 Andy Spragg             21 Gary Wike               18 
 Chris Kelly             19 Liam Griffin            21 

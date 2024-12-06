@@ -26,24 +26,9 @@ export class YearSelectPage {
         );
     }
 
-    async select2021Year() {
+    async select2013Year() {
         await this.yearSelectDropdown.click();
-        await this.year2021.click();
-    }
-
-    async select2023Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2023.click();
-    }
-
-    async select2022Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2022.click();
-    }
-
-    async select2018Year() {
-        await this.yearSelectDropdown.click();
-        await this.year2018.click();
+        await this.year2013.click();
     }
 
     async select2014Year() {
@@ -51,9 +36,24 @@ export class YearSelectPage {
         await this.year2014.click();
     }
 
-    async select2013Year() {
+    async select2018Year() {
         await this.yearSelectDropdown.click();
-        await this.year2013.click();
+        await this.year2018.click();
+    }
+
+    async select2021Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2021.click();
+    }
+
+    async select2022Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2022.click();
+    }
+
+    async select2023Year() {
+        await this.yearSelectDropdown.click();
+        await this.year2023.click();
     }
 
     async checkYearDropdownHasAllYearOptions(expectedNumber: number) {

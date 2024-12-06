@@ -123,7 +123,7 @@ Keith Hall               18 Nathan Webster           21
              Aggregate: 192              Aggregate: 151 
 
         Division 1                 Tue 21st Apr         
-   Mirfield Old Bank WMC             Pudsey BC          
+   Mirfield Old Bank WMC             Pudsey 'A'      
 Andrew Sykes             21 Chris Hatton             14 
 Richard Mozley           21 Gary Wike                15 
 Bryan Jenkins            17 Liam Griffin             21 
@@ -738,7 +738,7 @@ Martin Griffiths         21 Peter Wilcox              9
              Aggregate: 184              Aggregate: 187 
 
         Division 1                 Tue 28th Apr         
-         Pudsey BC                 Morton House         
+         Pudsey 'A'             Morton House         
 Liam Griffin             21 Robert Dunford           16 
 James Hanson             21 Marcus Leach             11 
 Tom Hanson               21 Darren Ripley             6 
@@ -1308,7 +1308,7 @@ Steve Gilroy             21 David Patrickson Snr     15
              Aggregate: 177              Aggregate: 136 
 
         Division 1                  Tue 5th May         
-       Eccleshill BC                 Pudsey BC          
+       Eccleshill BC                 Pudsey 'A'      
 Paul Rooks               21 Liam Griffin             18 
 Ian Dewhirst             21 James Hanson             16 
 Nicky Bastow              5 Chris Mordue             21 
@@ -1938,7 +1938,7 @@ Jack Dyson               21 Paul Rooks               12
              Aggregate: 207              Aggregate: 147 
 
         Division 1                 Tue 12th May         
-         Pudsey BC                 Crossgates BC        
+         Pudsey 'A'             Crossgates BC        
 Liam Griffin             19 James Wilcox             21 
 James Hanson             21 Steve Gilroy             14 
 Tom Hanson               21 Jonathan Wilcox           9 
@@ -2553,7 +2553,7 @@ James Payne              19 Andrew Heaume            21
              Aggregate: 176              Aggregate: 170 
 
         Division 1                 Tue 19th May         
-         Pudsey BC                Alverthorpe WMC       
+         Pudsey 'A'            Alverthorpe WMC       
 Chris Hatton             11 Robert Lloyd             21 
 Jon Edmondson            12 Darren Atkinson          21 
 Chris Mordue             13 Neil Fletcher            21 
@@ -3138,7 +3138,7 @@ Ian Oates                 2 James Wilcox             21
              Aggregate: 163              Aggregate: 180 
 
         Division 1                 Tue 26th May         
-      Thongsbridge BC                Pudsey BC          
+      Thongsbridge BC                Pudsey 'A'      
 Richard Atkin            10 Liam Griffin             21 
 Mark Booth               21 Ian Shaw                  7 
 Andy Cairns              21 John Spinks              15 
@@ -3708,7 +3708,7 @@ Mark Taylor              21 Paul Rooks               18
              Aggregate: 201              Aggregate: 152 
 
         Division 1                  Tue 2nd Jun         
-     Lower Hopton WMC                Pudsey BC          
+     Lower Hopton WMC                Pudsey 'A'      
 Wayne Ditchfield         21 Andy Hodgson              7 
 Paul Ingleby             14 Mick Smith               21 
 Harry Seerah             13 James Hanson             21 
@@ -4353,7 +4353,7 @@ Michael Robinson         21 Joel Abdy                12
              Aggregate: 181              Aggregate: 172 
 
         Division 1                  Tue 9th Jun         
-         Pudsey BC                 Woodland Park        
+         Pudsey 'A'             Woodland Park        
 James Hanson             21 Ryan Lysons              14 
 Josh Mordue              21 Tommy Boyd Jnr           17 
 Gary Wike                21 Andrew Jones             12 
@@ -4938,7 +4938,7 @@ Wayne Ditchfield         21 Adam Jones               16
              Aggregate: 202              Aggregate: 117 
 
         Division 1                 Tue 16th Jun         
-       Netherton Con                 Pudsey BC          
+       Netherton Con                 Pudsey 'A'      
 Mark Bramall              9 Gary Wike                21 
 Frank Cullen             14 Tom Hanson               21 
 Ashley Daykin            21 Jon Edmondson            10 
@@ -5688,7 +5688,7 @@ Ryan Lysons              19 Steve Gilroy             21
              Aggregate: 146              Aggregate: 187 
 
         Division 1                  Tue 7th Jul         
-         Pudsey BC                 Eccleshill BC        
+         Pudsey 'A'             Eccleshill BC        
 John Spinks              19 Paul Hillam              21 
 Liam Griffin             21 Neil Mylan               15 
 Tom Hanson               14 Ian Dewhirst             21 
@@ -6318,7 +6318,7 @@ Richard Stockdale        21 Michael Sweeney          11
              Aggregate: 177              Aggregate: 171 
 
         Division 1                 Tue 14th Jul         
-       Crossgates BC                 Pudsey BC          
+       Crossgates BC                 Pudsey 'A'      
 Steve Gilroy             21 Jon Edmondson            15 
 Jonathan Wilcox          21 Andy Hodgson             17 
 Jonathan Wood            21 Josh Mordue              20 
@@ -6903,7 +6903,7 @@ David Clarke             21 Ian Dewhirst             14
              Aggregate: 188              Aggregate: 136 
 
         Division 1                 Tue 21st Jul         
-         Pudsey BC             Mirfield Old Bank WMC    
+         Pudsey 'A'         Mirfield Old Bank WMC    
 Chris Mordue             14 Richard Mozley           21 
 Liam Griffin             21 Andrew Sykes             15 
 James Hanson             21 Michael Martin           12 
@@ -7518,7 +7518,7 @@ Mark Taylor              21 Colin Lloyd               0
              Aggregate: 196              Aggregate: 155 
 
         Division 1                 Tue 28th Jul         
-       Morton House                  Pudsey BC          
+       Morton House                  Pudsey 'A'      
 Phillip Baines            8 Tom Hanson               21 
 Marcus Leach              6 John Spinks              21 
 Alex Wolfenden           12 Chris Mordue             21 
@@ -8133,7 +8133,7 @@ Bryan Ibbetson           16 Mark Lofthouse           21
              Aggregate: 195              Aggregate: 137 
 
         Division 1                  Tue 4th Aug         
-      Alverthorpe WMC                Pudsey BC          
+      Alverthorpe WMC                Pudsey 'A'      
 Nathan Webster           21 Josh Mordue              13 
 Mark Brain               21 Mick Smith               15 
 Jeff Normanton           21 Chris Hatton             12 
@@ -8718,7 +8718,7 @@ Mark Taylor              21 Chris Rose               10
              Aggregate: 208              Aggregate:  76 
 
         Division 1                 Tue 11th Aug         
-         Pudsey BC                Thongsbridge BC       
+         Pudsey 'A'            Thongsbridge BC       
 Liam Griffin             19 Andy Spragg              21 
 Gary Wike                20 Mark Booth               21 
 Tom Hanson               21 Richard Jackson          15 
@@ -9288,7 +9288,7 @@ Keith Hall               13 Mark Hughes              21
              Aggregate: 167              Aggregate: 191 
 
         Division 1                 Tue 18th Aug         
-         Pudsey BC               Lower Hopton WMC       
+         Pudsey 'A'           Lower Hopton WMC       
 Liam Griffin             17 Robert Hitchen           21 
 James Hanson             20 Craig Newton             21 
 Tom Hanson               19 Chris Brown              21 
@@ -9933,7 +9933,7 @@ Ashley Tattersley        21 Alex Wolfenden           10
              Aggregate: 210              Aggregate:  97 
 
         Division 1                 Tue 25th Aug         
-       Woodland Park                 Pudsey BC          
+       Woodland Park                 Pudsey 'A'      
 Barry Connolly           19 Tom Hanson               21 
 Tony Barras              21 Steve Emmett              6 
 Tommy Boyd Snr           21 James Hanson             18 
@@ -10518,7 +10518,7 @@ Ryan Lysons              21 Joel Abdy                12
              Aggregate: 201              Aggregate: 174 
 
         Division 1                  Tue 1st Sep         
-         Pudsey BC                 Netherton Con        
+         Pudsey 'A'             Netherton Con        
 James Hanson             21 Mark Bramall             20 
 Tom Hanson               21 Craig Gant                7 
 Chris Mordue             21 Ashley Daykin            12 

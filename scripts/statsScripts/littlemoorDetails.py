@@ -11,24 +11,14 @@ teamNames = [
     "Pudsey Littlemoor",
     "Pudsey Littlemoor A",
     "Pudsey Littlemoor B",
-    "Pudsey Littlemoor 'A'",
-    "Pudsey Littlemoor 'B'",
-    "Pudsey Littlemoor - A",
-    "Pudsey Littlemoor - B",
     "Littlemoor S&SC",
-    "Littlemoor S&SC A",
-    "Littlemoor S&SC B",
     "Littlemoor S&SC 'A'",
     "Littlemoor S&SC 'B'",
-    "Littlemoor S&SC - A",
-    "Littlemoor S&SC - B",
     "Littlemoor S & SC",
     "Littlemoor S & SC A",
     "Littlemoor S & SC B",
     "Littlemoor S & SC 'A'",
     "Littlemoor S & SC 'B'",
-    "Littlemoor S & SC - A",
-    "Littlemoor S & SC - B",
 ]
 displayTeamName = "Littlemoor"
 
@@ -38,11 +28,11 @@ teamDays = [
     "Monday AireWharfe",
     "Mirfield (A)",
     "Mirfield (B)",
-    "Wednesday Half Holiday Bradford (A)",
-    "Wednesday Half Holiday Bradford (B)",
+    "Half Holiday Bradford (A)",
+    "Half Holiday Bradford (B)",
     "Spen Valley (A)",
     "Spen Valley (B)",
-    "Thursday Vets Bradford",
+    "Bradford Vets",
     "Saturday Bradford (A)",
     "Saturday Bradford (B)",
 ]
@@ -73,19 +63,20 @@ duplicatePlayerNames = [
     "philip thornton",
 ]
 
+
 # Add players who play for other teams in leagues the team player in (lowercase)
 traitorPlayers = {
     "Monday Bradford": ["john stocks"],
     "Monday AireWharfe": ["stewart watson", "lee wider", "paul jacques"],
     "Mirfield": ["stewart watson"],
-    "Wednesday Half Holiday Bradford": ["john stocks"],
+    "Half Holiday Bradford": ["john stocks"],
     "Spen Valley": [
         "alex wolfenden",
         "paul wilczynski",
         "nichole farrar",
         "lewis cooper",
     ],
-    "Thursday Vets Bradford": ["john stocks"],
+    "Bradford Vets": ["john stocks"],
     "Saturday Bradford": [
         "kevin siddle",
         "robbie ellis",

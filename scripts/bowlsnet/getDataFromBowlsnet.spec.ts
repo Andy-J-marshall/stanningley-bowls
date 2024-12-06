@@ -34,7 +34,7 @@ const leagues = [
         url: '/Leeds-Tue',
     },
     {
-        day: 'Wednesday Half Holiday Leeds',
+        day: 'Half Holiday Leeds',
         url: '/Leeds-Wed',
     },
     {
@@ -62,7 +62,7 @@ const leagues = [
         url: '/AW-Mon',
     },
     {
-        day: 'Tuesday AireWharfe',
+        day: 'AireWharfe Vets',
         url: '/AW-Vets',
     },
     {
@@ -70,11 +70,11 @@ const leagues = [
         url: '/Bradford-Mon',
     },
     {
-        day: 'Wednesday Half Holiday Bradford',
+        day: 'Half Holiday Bradford',
         url: '/Bradford-HalfHol',
     },
     {
-        day: 'Thursday Vets Bradford',
+        day: 'Bradford Vets',
         url: '/Bradford-Vets',
     },
     {
