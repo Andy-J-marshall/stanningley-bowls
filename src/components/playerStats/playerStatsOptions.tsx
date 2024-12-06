@@ -200,7 +200,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                 <h6>CLUBS & TEAMS</h6>
                                 <InputGroup>
                                     <DropdownButton
-                                        drop="up"
                                         size="sm"
                                         variant="light"
                                         id="club-select-dropdown"
@@ -229,7 +228,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     </DropdownButton>
                                     <div style={{ padding: '0 0.3rem' }}></div>
                                     <DropdownButton
-                                        drop="up"
                                         size="sm"
                                         variant="light"
                                         id="team-select-dropdown"
