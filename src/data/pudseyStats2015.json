@@ -1,5 +1,109 @@
 {
     "playerResults": {
+        "geoff hodgson": {
+            "totalAgg": 110,
+            "totalAggAgainst": 133,
+            "availableAgg": 147,
+            "availablePairsAgg": 0,
+            "availableHomeAgg": 63,
+            "availableAwayAgg": 84,
+            "availablePairsHomeAgg": 0,
+            "availablePairsAwayAgg": 0,
+            "totalPairsAgg": 0,
+            "totalPairsAggAgainst": 0,
+            "totalHomeAgg": 50,
+            "totalHomeAggAgainst": 49,
+            "totalPairsHomeAgg": 0,
+            "totalPairsHomeAggAgainst": 0,
+            "totalAwayAgg": 60,
+            "totalAwayAggAgainst": 84,
+            "totalPairsAwayAgg": 0,
+            "totalPairsAwayAggAgainst": 0,
+            "homeWins": 2,
+            "homeLosses": 1,
+            "awayWins": 0,
+            "awayLosses": 4,
+            "cupWins": 0,
+            "cupLosses": 0,
+            "pairWins": 0,
+            "pairLosses": 0,
+            "pairHomeWins": 0,
+            "pairHomeLosses": 0,
+            "pairAwayWins": 0,
+            "pairAwayLosses": 0,
+            "pairCupWins": 0,
+            "pairCupLosses": 0,
+            "totalGamesPlayed": 7,
+            "results": [
+                "geoff hodgson 14 - 21 catherine new",
+                "geoff hodgson 21 - 17 roger waite",
+                "geoff hodgson 17 - 21 bev watt",
+                "geoff hodgson 21 - 11 tony allen",
+                "geoff hodgson 19 - 21 tony whiteoak",
+                "geoff hodgson 8 - 21 alan farrow",
+                "geoff hodgson 10 - 21 jack bowes"
+            ],
+            "monday airewharfe": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "monday airewharfe (b)": {
+                "games": 3,
+                "wins": 1,
+                "aggDiff": -7
+            },
+            "mirfield": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "mirfield (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "spen valley (c)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "bradford vets": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "bradford vets (b)": {
+                "games": 3,
+                "wins": 1,
+                "aggDiff": -5
+            },
+            "saturday bradford": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (b)": {
+                "games": 0,
+                "wins": 0,
+                "aggDiff": 0
+            },
+            "saturday bradford (c)": {
+                "games": 1,
+                "wins": 0,
+                "aggDiff": -11
+            }
+        },
         "richard hodgson": {
             "totalAgg": 744,
             "totalAggAgainst": 718,
