@@ -11,7 +11,7 @@ import { capitalizeText } from '../../helpers/utils';
 function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
     const name = props.name;
     const stats = props.playersStats;
-    const showAllClubStats = props.showAllClubStats;
+    const showAllClubsStats = props.showAllClubsStats;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -28,7 +28,7 @@ function IndividualPlayerStats(props: IndividualPlayerStatsProps) {
                     <PlayerStatsOverview stats={stats} />
                     <PlayerStatsWinsLosses stats={stats} />
                     <PlayerStatsAggregates stats={stats} />
-                    {!showAllClubStats && <PlayerStatsTeams stats={stats} />}
+                    {!showAllClubsStats && <PlayerStatsTeams stats={stats} />}
                     <PlayerStatsResults stats={stats} />
                 </Accordion>
             )}

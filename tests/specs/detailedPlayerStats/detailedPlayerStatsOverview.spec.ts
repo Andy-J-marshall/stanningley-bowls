@@ -1,11 +1,11 @@
 import { expect } from '@playwright/test';
 import { test } from '../../utils/fixture';
-import clubStats2022 from '../../../src/data/stanningleyStats2023.json';
+import stanningleyStats2022 from '../../../src/data/stanningleyStats2023.json';
 import allClubsStats2023 from '../../../src/data/allClubsStats2023.json';
 import { FullStatsFile } from '../../../src/types/interfaces';
 
-const clubStats: FullStatsFile = clubStats2022;
-const allClubStats: FullStatsFile = allClubsStats2023;
+const stanningleyStats: FullStatsFile = stanningleyStats2022;
+const allClubsStats: FullStatsFile = allClubsStats2023;
 
 test.describe('Player detailed stats - overview', () => {
     test.beforeEach(async ({ playerSummaryPage }) => {
@@ -39,7 +39,7 @@ test.describe('Player detailed stats - overview', () => {
                 awayWins,
                 cupWins,
                 totalGamesPlayed,
-            } = clubStats.playerResults[player.toLowerCase()];
+            } = stanningleyStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;
@@ -79,7 +79,7 @@ test.describe('Player detailed stats - overview', () => {
                 awayWins,
                 cupWins,
                 totalGamesPlayed,
-            } = allClubStats.playerResults[player.toLowerCase()];
+            } = allClubsStats.playerResults[player.toLowerCase()];
             const totalWins = cupWins + homeWins + awayWins;
             const totalAverage =
                 (totalAgg - totalAggAgainst) / totalGamesPlayed;

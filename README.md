@@ -159,7 +159,7 @@ A number of manual changes are required at the end of each calendar year.
 
 ## Web application
 
-1. Import the new stats files into `statsData.ts`. Update `allYearClubStats` and `allYearAllClubsStats`.
+1. Import the new stats files into `statsData.ts` and update the exported objects and arrays with the new files.
 2. Update `statsSelectCallback` in `App.tsx` with the reference to the new year's stats file and update the default case to the new year. Also update the default stats and year to display in the useState hook.
 3. Add a dropdown item for the new year in the `yearSelectDropdown.tsx` component
 4. If there are any new teams added, update the `teamTabs.tsx`, `playerStatsTeams.tsx`, `teamStats.tsx`, and `teamInfo.tsx` components. Ensure any null checks are added for each new team so the components continue to work for previous years

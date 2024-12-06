@@ -27,7 +27,7 @@ describe('#RecordsHelper Tests', () => {
             const { initialTeamRecords } =
                 findLeaguesAvailableInData(playerResults22);
 
-            expect(Object.keys(initialTeamRecords).length).to.equal(38);
+            expect(Object.keys(initialTeamRecords).length).to.equal(39);
             const teamRecord = initialTeamRecords['monday combined leeds'];
 
             expect(teamRecord).to.deep.equal({
@@ -120,7 +120,7 @@ describe('#RecordsHelper Tests', () => {
             expect(bestAverage).to.equal(11.666666666666666);
             expect(bestAveragePlayer).to.deep.equal(['john armitage']);
 
-            expect(teamsInTeamRecords).to.have.length(38);
+            expect(teamsInTeamRecords).to.have.length(39);
             expect(teamsInRecordsWithGames).to.have.length(4);
         });
     });

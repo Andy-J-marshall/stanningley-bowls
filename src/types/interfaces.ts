@@ -28,7 +28,7 @@ export interface GameTypeButtonProps {
 export interface IndividualPlayerStatsProps {
     playersStats?: AggregatedPlayerStats | null;
     name: string;
-    showAllClubStats: boolean;
+    showAllClubsStats: boolean;
 }
 
 export interface IndividualTeamStatsProps {
@@ -59,13 +59,13 @@ export interface PlayerStatsOptionsProps {
 }
 
 export interface PlayerStatsProps {
-    clubStats: FullStatsFile;
+    stanningleyStats: FullStatsFile;
+    stanningleyStatsForEveryYearArray: FullStatsFile[];
     littlemoorStats: FullStatsFile;
-    pudseyStats: FullStatsFile;
-    allClubsStats: FullStatsFile;
-    clubStatsForEveryYearArray: FullStatsFile[];
     littlemoorStatsForEveryYearArray: FullStatsFile[];
+    pudseyStats: FullStatsFile;
     pudseyStatsForEveryYearArray: FullStatsFile[];
+    allClubsStats: FullStatsFile;
     allClubsStatsForEveryYearArray: FullStatsFile[];
 }
 
