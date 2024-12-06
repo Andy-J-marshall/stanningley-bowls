@@ -36,9 +36,9 @@ teamDays = [
     # "Mirfield (C)", # TODO only 2024 and beyond
     # "Half Holiday Bradford (A)", # TODO only 2019-22
     # "Half Holiday Bradford (B)",
-    # "Spen Valley (A)", # TODO no team in 2013
-    # "Spen Valley (B)",
-    # "Spen Valley (C)", # TODO no C team in 2013-14?
+    "Spen Valley (A)", # TODO no team in 2013
+    "Spen Valley (B)",
+    "Spen Valley (C)", # TODO no C team in 2013-14?
     # "Spen Valley (D)",  # TODO only 2019 and beyond
     "Bradford Vets (A)", # TODO no vets league in 2014
     "Bradford Vets (B)",
@@ -55,11 +55,11 @@ teamsWithWithDifferentNumberOfPlayersToLeagueNorm = []  # update for Sat C in 20
 players = [
     "richard hodgson",
     "stewart watson",
-    "paul bowes",
+    # "paul bowes",
+    "geoff hodgson", # TODO add in (also all team stats) Up to 2015
     # "joey broadbent",  # TODO 1 game in 2019
     # "linda barrand",  # TODO 2021-24
     # "mary spears", # TODO add in (also all team stats) 2021-22
-    # "geoff hodgson", TODO add in (also all team stats) Up to 2015
 ]
 
 # Players with different spellings of name (lowercase). Also need to add to deduplicateNames function

@@ -79,10 +79,11 @@ Most of the club details are stored in the `config.ts` file (e.g. membership pri
 
 The script that collates stats from all club teams can be found in the `/scripts/statsScripts` directory.
 
-Three JSON files will be generated after running the scripts:
+Four JSON files will be generated after running the scripts:
 
 -   `stanningleyStats{year}.json` - contains the stats for all Stanningley players
 -   `littlemoorStats{year}.json` - contains the stats for Littlemoor players who also play for Stanningley
+-   `pudseyStats{year}.json` - contains the stats for Pudsey players who also play for Stanningley
 -   `allClubsStats{year}.json` - contains the stats for all Stanningley players, including other clubs they play for
 
 ## Update the player stats
