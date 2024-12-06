@@ -7,6 +7,7 @@ test.describe('Player stats - Other Clubs', () => {
     });
 
     test('Detailed stats for John Armitage stats are correct', async ({
+        detailedPlayerStatsPage,
         playerSearchPage,
         playerStatOptionsPage,
         playerStatsOverviewPage,
@@ -19,6 +20,12 @@ test.describe('Player stats - Other Clubs', () => {
 
         await playerStatsOverviewPage.validateOverviewStats(57, 43, 5.21);
         await expect(playerStatsOverviewPage.biggestWin).toHaveText('21 - 3');
+
+        await expect(detailedPlayerStatsPage.overviewAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.winLossAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.aggAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.teamAccordion).toBeVisible();
+        await expect(detailedPlayerStatsPage.resultsAccordion).toBeVisible();
     });
 
     test('Summary of John Armitage stats are correct', async ({
