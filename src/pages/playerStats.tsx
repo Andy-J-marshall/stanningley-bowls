@@ -6,6 +6,7 @@ import Search from '../components/playerStats/search';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {
+    ClubStatsMap,
     PlayerStatsProps,
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
@@ -70,56 +71,37 @@ function PlayerStats(props: PlayerStatsProps) {
         setLoaded(true);
 
         // Set which stats to show
-        if (!showAllClubsStats) {
-            switch (clubNameForStats) {
-                case 'pudsey':
-                    setStatsToUse(pudseyStats?.playerResults);
-                    setAllYearsStatsToUseArray(pudseyStatsForEveryYearArray);
-                    setTeamNames(
-                        showStatsSinceStart
-                            ? returnTeamNamesWithGamesForAllYears(
-                                  pudseyStatsForEveryYearArray
-                              )
-                            : returnTeamNamesWithGames(
-                                  pudseyStats?.playerResults
-                              )
-                    );
-                    break;
-                case 'littlemoor':
-                    setStatsToUse(littlemoorStats?.playerResults);
-                    setAllYearsStatsToUseArray(
-                        littlemoorStatsForEveryYearArray
-                    );
-                    setTeamNames(
-                        showStatsSinceStart
-                            ? returnTeamNamesWithGamesForAllYears(
-                                  littlemoorStatsForEveryYearArray
-                              )
-                            : returnTeamNamesWithGames(
-                                  littlemoorStats?.playerResults
-                              )
-                    );
-                    break;
-                case 'stanningley':
-                default:
-                    setStatsToUse(stanningleyStats?.playerResults);
-                    setAllYearsStatsToUseArray(
-                        stanningleyStatsForEveryYearArray
-                    );
-                    setTeamNames(
-                        showStatsSinceStart
-                            ? returnTeamNamesWithGamesForAllYears(
-                                  stanningleyStatsForEveryYearArray
-                              )
-                            : returnTeamNamesWithGames(
-                                  stanningleyStats?.playerResults
-                              )
-                    );
-                    break;
-            }
-        } else {
+        if (showAllClubsStats) {
             setStatsToUse(allClubsStats?.playerResults);
             setAllYearsStatsToUseArray(allClubsStatsForEveryYearArray);
+        } else {
+            const clubStatsMap: ClubStatsMap = {
+                pudsey: {
+                    stats: pudseyStats?.playerResults,
+                    allYearsStats: pudseyStatsForEveryYearArray,
+                },
+                littlemoor: {
+                    stats: littlemoorStats?.playerResults,
+                    allYearsStats: littlemoorStatsForEveryYearArray,
+                },
+                stanningley: {
+                    stats: stanningleyStats?.playerResults,
+                    allYearsStats: stanningleyStatsForEveryYearArray,
+                },
+            };
+
+            const selectedStats =
+                clubStatsMap[clubNameForStats] || clubStatsMap['stanningley'];
+
+            setStatsToUse(selectedStats.stats);
+            setAllYearsStatsToUseArray(selectedStats.allYearsStats);
+            setTeamNames(
+                showStatsSinceStart
+                    ? returnTeamNamesWithGamesForAllYears(
+                          selectedStats.allYearsStats
+                      )
+                    : returnTeamNamesWithGames(selectedStats.stats)
+            );
         }
 
         // Find the title and players list fo the selected stats

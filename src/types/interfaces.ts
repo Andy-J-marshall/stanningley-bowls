@@ -450,3 +450,10 @@ export interface AggregatedPlayerStats {
     availablePairsAwayAgg: number;
     availablePairsCupAgg: number;
 }
+
+export type ClubStatsMap = {
+    [key: string]: {
+        stats: any;
+        allYearsStats: any[];
+    };
+};
