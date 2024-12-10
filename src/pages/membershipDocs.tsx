@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { config } from '../config';
 import { Button, ListGroup, Offcanvas } from 'react-bootstrap';
+import { config } from '../config';
 
 function MembershipDocs() {
     const [show, setShow] = useState(false);

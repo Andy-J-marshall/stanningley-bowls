@@ -5,7 +5,6 @@ import PlayerStatsOptions from '../components/playerStats/playerStatsOptions';
 import Search from '../components/playerStats/search';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import { config } from '../config';
 import {
     PlayerStatsProps,
     PlayerStatsSummary,
@@ -327,7 +326,7 @@ function PlayerStats(props: PlayerStatsProps) {
             />
 
             <p className="footnote">
-                Last Updated: {stanningleyStats.lastUpdated}
+                Last Updated: {allClubsStats.lastUpdated}
             </p>
         </div>
     );
