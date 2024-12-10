@@ -20,7 +20,7 @@ for filename in os.listdir(data_folder):
         
         # Check if 'playerResults' exists and is a dictionary
         if 'playerResults' in data and isinstance(data['playerResults'], dict):
-            # Remove the "dayPlayed" key from each player in "playerResults"
+            # Remove the specified property from each player in "playerResults"
             for player in data['playerResults'].values():
                 if propertyNameToDelete in player:
                     del player[propertyNameToDelete]
