@@ -6,7 +6,7 @@ import Search from '../components/playerStats/search';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {
-    ClubStatsMap,
+    ClubPlayerStatsMap,
     PlayerStatsProps,
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
@@ -57,7 +57,7 @@ function PlayerStats(props: PlayerStatsProps) {
             setStatsToUse(allClubsStats?.playerResults);
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         } else {
-            const clubStatsMap: ClubStatsMap = {
+            const clubStatsMap: ClubPlayerStatsMap = {
                 pudsey: pudseyStats?.playerResults,
                 littlemoor: littlemoorStats?.playerResults,
                 stanningley: stanningleyStats?.playerResults,

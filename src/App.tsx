@@ -16,14 +16,13 @@ import Fixtures from './pages/fixtures';
 import Navigation from './components/homePage/navigation';
 import Footer from './components/homePage/footer';
 import YearSelectDropdown from './components/homePage/yearSelectDropdown';
-import { FullStatsFile } from './types/interfaces';
+import { ClubStatsMap, FullStatsFile } from './types/interfaces';
 import statsData from './statsData';
 
-// TODO set types here?
-const allYearStanningleyStats: any = statsData.allYearStanningleyStats;
-const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
-const allYearPudseyStats: any = statsData.allYearPudseyStats;
-const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
+const allYearStanningleyStats: ClubStatsMap = statsData.allYearStanningleyStats;
+const allYearLittlemoorStats: ClubStatsMap = statsData.allYearLittlemoorStats;
+const allYearPudseyStats: ClubStatsMap = statsData.allYearPudseyStats;
+const allYearAllClubsStats: ClubStatsMap = statsData.allYearAllClubsStats;
 
 function App() {
     const [stanningleyStats, setStanningleyStats] = useState<FullStatsFile>(
