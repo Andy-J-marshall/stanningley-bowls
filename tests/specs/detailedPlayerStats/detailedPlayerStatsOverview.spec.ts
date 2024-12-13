@@ -95,11 +95,11 @@ test.describe('Player detailed stats - overview', () => {
     test('Detailed player stats overview for all years for Dave Hudson', async ({
         playerStatsOverviewPage,
         playerSearchPage,
-        playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         const player = 'Dave Hudson';
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerSearchPage.searchForPlayer(player);
 
         await playerStatsOverviewPage.validateOverviewStats(385, 147, -2.34);
@@ -110,10 +110,11 @@ test.describe('Player detailed stats - overview', () => {
         playerStatsOverviewPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         const player = 'Dave Hudson';
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerStatOptionsPage.selectAllClubsFromDropdown();
         await playerSearchPage.searchForPlayer(player);
 
@@ -127,6 +128,6 @@ test.describe('Player detailed stats - overview', () => {
     }) => {
         await yearSelectPage.select2022Year();
         await playerSearchPage.searchForPlayer('Jack Roberts');
-        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
+        await yearSelectPage.checkYearDropdownHasAllYearOptions(12);
     });
 });

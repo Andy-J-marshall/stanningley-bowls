@@ -13,7 +13,6 @@ import { capitalizeText, formatTeamName } from '../../helpers/utils';
 
 function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
     const allClubsStatsCallback = props.allClubsStatsCallback;
-    const allYearStatsCallback = props.allYearStatsCallback;
     const teamSpecificCallback = props.teamSpecificCallback;
     const clubSpecificCallback = props.clubSpecificCallback;
     const onlySinglesCallback = props.onlySinglesCallback;
@@ -26,8 +25,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
 
     const defaultTeamDropdownTitle = 'All Teams';
 
-    const [allYearToggle, setAllYearToggle] = useState(false);
-    const [allClubsToggle, setAllClubsToggle] = useState(false);
     const [singlesOnlyToggle, setSinglesOnlyToggle] = useState(false);
     const [pairsOnlyToggle, setPairsOnlyToggle] = useState(false);
     const [allGameTypesToggle, setAllGameTypesToggle] = useState(true);
@@ -44,12 +41,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
         config.teamNames.shortName
     );
 
-    function toggleAllYearStats(event: React.ChangeEvent<HTMLInputElement>) {
-        const allYearStatsToggle = event.currentTarget.checked;
-        setAllYearToggle(allYearStatsToggle);
-        allYearStatsCallback(allYearStatsToggle);
-    }
-
     function selectSpecificTeamStats(teamName: string) {
         if (!teamName || teamName === '') {
             setTeamDropdownTitle(defaultTeamDropdownTitle);
@@ -64,7 +55,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setAllGameTypesToggle(true);
             setAllVenuesToggle(true);
 
-            setAllClubsToggle(false);
             allClubsStatsCallback(false);
 
             singles(false);
@@ -80,7 +70,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setClubDropdownTitle('All Clubs');
             clubSpecificCallback('');
 
-            setAllClubsToggle(true);
             allClubsStatsCallback(true);
 
             setDisableTeamDropdown(true);
@@ -93,7 +82,6 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
             setClubDropdownTitle(capitalizeText([clubName]));
             clubSpecificCallback(clubName);
 
-            setAllClubsToggle(false);
             allClubsStatsCallback(false);
 
             setDisableTeamDropdown(false);
@@ -184,19 +172,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                 <Form>
                     <Form.Group className="mb-2" controlId="searchOptions">
                         <Row className="g-4 align-items-start">
-                            <Col xs={12} md={6} lg={2}>
-                                <h6>OPTIONS</h6>
-                                <Form.Check
-                                    inline
-                                    key={crypto.randomUUID()}
-                                    id="#all-years-select-switch"
-                                    onChange={toggleAllYearStats}
-                                    type="switch"
-                                    label="Combine all years"
-                                    checked={allYearToggle}
-                                />
-                            </Col>
-                            <Col xs={12} md={6} lg={4}>
+                            <Col xs={12} md={6} xl={3}>
                                 <h6>CLUBS & TEAMS</h6>
                                 <InputGroup>
                                     <DropdownButton
@@ -259,7 +235,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     </DropdownButton>
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} xl={3}>
                                 <h6>GAME TYPE</h6>
                                 <InputGroup>
                                     <Form.Check
@@ -297,7 +273,7 @@ function PlayerStatsOptions(props: PlayerStatsOptionsProps) {
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col xs={12} md={6} lg={3}>
+                            <Col xs={12} md={6} xl={3}>
                                 <h6>VENUE</h6>
                                 <InputGroup>
                                     <Form.Check

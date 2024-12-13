@@ -46,7 +46,6 @@ export interface StatsTileProps {
 
 export interface PlayerStatsOptionsProps {
     allClubsStatsCallback: (toggle: boolean) => void;
-    allYearStatsCallback: (toggle: boolean) => void;
     teamSpecificCallback: (teamName: string) => void;
     clubSpecificCallback: (teamName: string) => void;
     onlySinglesCallback: (toggle: boolean) => void;
@@ -60,13 +59,9 @@ export interface PlayerStatsOptionsProps {
 
 export interface PlayerStatsProps {
     stanningleyStats: FullStatsFile;
-    stanningleyStatsForEveryYearArray: FullStatsFile[];
     littlemoorStats: FullStatsFile;
-    littlemoorStatsForEveryYearArray: FullStatsFile[];
     pudseyStats: FullStatsFile;
-    pudseyStatsForEveryYearArray: FullStatsFile[];
     allClubsStats: FullStatsFile;
-    allClubsStatsForEveryYearArray: FullStatsFile[];
 }
 
 export interface PlayerStatOverviewTilesProps {
@@ -87,6 +82,7 @@ export interface PlayerStatAggregatesTilesProps {
 export interface YearSelectDropdownProps {
     statsCallback: (year: string) => void;
     yearToDisplay: string;
+    displayAllYearsOption: boolean;
 }
 
 export interface TeamTabsProps {
@@ -452,8 +448,5 @@ export interface AggregatedPlayerStats {
 }
 
 export type ClubStatsMap = {
-    [key: string]: {
-        stats: any;
-        allYearsStats: any[];
-    };
+    [key: string]: any;
 };

@@ -2,7 +2,6 @@ import { expect } from 'chai';
 import {
     returnPlayerStatsForAllYears,
     returnPlayerStatSummaryForAllYears,
-    returnTeamNamesWithGamesForAllYears,
     returnTeamPlayerStatsForAllYears,
 } from '../allYearPlayerStatsHelper';
 import { FullStatsFile } from '../../types/interfaces';
@@ -128,42 +127,6 @@ describe('#allYearPlayerStatsHelper Tests', () => {
         });
     });
 
-    describe('#returnTeamNamesWithGamesForAllYears()', () => {
-        it('Returns all unique team names with games across multiple years', () => {
-            const statsArray = [stats2022, stats2023, stats2024];
-            const result = returnTeamNamesWithGamesForAllYears(statsArray);
-
-            expect(result).to.deep.equal([
-                'airewharfe wednesday pairs',
-                'leeds half holiday',
-                'leeds monday combined',
-                'leeds saturday',
-                'leeds saturday (b)',
-                'leeds thursday vets',
-                'leeds tuesday',
-                'leeds tuesday vets',
-            ]);
-        });
-
-        it('Handles empty stats array', () => {
-            const statsArray: FullStatsFile[] = [];
-            const result = returnTeamNamesWithGamesForAllYears(statsArray);
-            expect(result).to.deep.equal([]);
-        });
-
-        it('Handles stats with no team games', () => {
-            const statsArray = [
-                {
-                    statsYear: '2021',
-                    lastUpdated: '2021-12-31',
-                    playerResults: {},
-                },
-            ];
-            const result = returnTeamNamesWithGamesForAllYears(statsArray);
-            expect(result).to.deep.equal([]);
-        });
-    });
-
     describe('#returnTeamPlayerStatsForAllYears()', () => {
         it('Correctly aggregates team player stats for a specific day across multiple years', () => {
             const statsArray = [stats2022, stats2023, stats2024];
@@ -216,11 +179,11 @@ describe('#allYearPlayerStatsHelper Tests', () => {
         const statsArray = [stats2022, stats2023, stats2024];
         const result = returnPlayerStatsForAllYears(statsArray);
 
-        const players = Object.keys(result);
+        const players = Object.keys(result.playerResults);
 
         expect(players.length).to.equal(47);
 
-        expect(result['vanessa lancaster']).to.deep.equal({
+        expect(result.playerResults['vanessa lancaster']).to.deep.equal({
             totalAgg: 725,
             totalAggAgainst: 788,
             availableAgg: 975,

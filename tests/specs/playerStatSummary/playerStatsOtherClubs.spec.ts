@@ -118,11 +118,12 @@ test.describe('Player stats - Other Clubs', () => {
     test('Summary of Jack Roberts stats since 2013 are correct', async ({
         playerSummaryPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('jack roberts');
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSummaryPage.validateSummaryStats(110, 40, 36, -2.06);
     });

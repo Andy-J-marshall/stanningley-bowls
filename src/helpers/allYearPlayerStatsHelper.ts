@@ -13,7 +13,6 @@ import {
     checkAllWinPercAndAverageAreNumbers,
     checkWinPercAndAverageAreNumbers,
 } from './statsHelper';
-import { returnTeamNamesWithGames } from './teamStatsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
@@ -315,20 +314,13 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
         });
     });
 
-    return collatedStats;
-}
+    const returnObject: FullStatsFile = {
+        playerResults: collatedStats,
+        lastUpdated: statsArrayCopy[0].lastUpdated,
+        statsYear: 'All Years',
+    }
 
-export function returnTeamNamesWithGamesForAllYears(
-    playerStatsArray: FullStatsFile[]
-) {
-    const daysPlayedSet: Set<string> = new Set();
-
-    playerStatsArray.forEach((playerStats) => {
-        const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
-        teamNames.forEach((teamName) => daysPlayedSet.add(teamName));
-    });
-
-    return Array.from(daysPlayedSet).sort();
+    return returnObject;
 }
 
 export function returnTeamPlayerStatsForAllYears(

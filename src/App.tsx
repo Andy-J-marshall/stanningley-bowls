@@ -1,22 +1,24 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import WebFont from 'webfontloader';
+import './app.css';
 import Home from './pages/home';
-import Footer from './components/homePage/footer';
 import Membership from './pages/membership';
 import Contact from './pages/contact';
 import Results from './pages/results';
-import Navigation from './components/homePage/navigation';
 import Records from './pages/records';
 import TeamStats from './pages/teamStats';
 import TeamInfo from './pages/teamInfo';
 import PlayerStats from './pages/playerStats';
 import History from './pages/history';
-import YearSelectDropdown from './components/homePage/yearSelectDropdown';
-import statsData from './statsData';
-import './app.css';
 import SocialInfo from './pages/socialInfo';
 import Fixtures from './pages/fixtures';
+import Navigation from './components/homePage/navigation';
+import Footer from './components/homePage/footer';
+import YearSelectDropdown from './components/homePage/yearSelectDropdown';
+import { FullStatsFile } from './types/interfaces';
+import { returnPlayerStatsForAllYears } from './helpers/allYearPlayerStatsHelper';
+import statsData from './statsData';
 
 const allYearStanningleyStats: any = statsData.allYearStanningleyStats;
 const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
@@ -24,16 +26,16 @@ const allYearPudseyStats: any = statsData.allYearPudseyStats;
 const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
 
 function App() {
-    const [stanningleyStats, setStanningleyStats] = useState(
+    const [stanningleyStats, setStanningleyStats] = useState<FullStatsFile>(
         statsData.dataFiles.stanningleyStats24
     );
-    const [littlemoorStats, setLittlemoorStats] = useState(
+    const [littlemoorStats, setLittlemoorStats] = useState<FullStatsFile>(
         statsData.dataFiles.littlemoorStats24
     );
-    const [pudseyStats, setPudseyStats] = useState(
+    const [pudseyStats, setPudseyStats] = useState<FullStatsFile>(
         statsData.dataFiles.pudseyStats24
     );
-    const [allClubsStats, setAllClubsStats] = useState(
+    const [allClubsStats, setAllClubsStats] = useState<FullStatsFile>(
         statsData.dataFiles.allClubsStats24
     );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
@@ -60,6 +62,32 @@ function App() {
             setAllClubsStats(allYearAllClubsStats[`year${year}`]);
         }
 
+        if (year.toLowerCase().includes('all')) {
+            setStanningleyStats(
+                returnPlayerStatsForAllYears(
+                    statsData.stanningleyStatsForEveryYearArray
+                )
+            );
+
+            setLittlemoorStats(
+                returnPlayerStatsForAllYears(
+                    statsData.littlemoorStatsForEveryYearArray
+                )
+            );
+
+            setPudseyStats(
+                returnPlayerStatsForAllYears(
+                    statsData.pudseyStatsForEveryYearArray
+                )
+            );
+
+            setAllClubsStats(
+                returnPlayerStatsForAllYears(
+                    statsData.allClubsStatsForEveryYearArray
+                )
+            );
+        }
+
         setYearToDisplay(year.toString());
     }
 
@@ -81,6 +109,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <Results
                                     stats={stanningleyStats}
@@ -96,24 +125,13 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={true}
                                 />
                                 <PlayerStats
                                     stanningleyStats={stanningleyStats}
-                                    stanningleyStatsForEveryYearArray={
-                                        statsData.stanningleyStatsForEveryYearArray
-                                    }
                                     littlemoorStats={littlemoorStats}
-                                    littlemoorStatsForEveryYearArray={
-                                        statsData.littlemoorStatsForEveryYearArray
-                                    }
                                     pudseyStats={pudseyStats}
-                                    pudseyStatsForEveryYearArray={
-                                        statsData.pudseyStatsForEveryYearArray
-                                    }
                                     allClubsStats={allClubsStats}
-                                    allClubsStatsForEveryYearArray={
-                                        statsData.allClubsStatsForEveryYearArray
-                                    }
                                 />
                             </div>
                         }
@@ -125,6 +143,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <TeamStats
                                     stats={stanningleyStats}
@@ -141,6 +160,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <Records
                                     stats={stanningleyStats}
