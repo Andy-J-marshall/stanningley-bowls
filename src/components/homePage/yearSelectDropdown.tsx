@@ -5,6 +5,7 @@ import { YearSelectDropdownProps } from '../../types/interfaces';
 function YearSelectDropdown(props: YearSelectDropdownProps) {
     const statsCallback = props.statsCallback;
     const yearToDisplay = props.yearToDisplay;
+    const displayAllYearsOption = props.displayAllYearsOption;
 
     const [year, setYear] = useState(yearToDisplay);
 
@@ -63,10 +64,14 @@ function YearSelectDropdown(props: YearSelectDropdownProps) {
                     <Dropdown.Item id="option2013" eventKey="2013">
                         2013
                     </Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Item id="optionAll" eventKey="All Years">
-                        All Years
-                    </Dropdown.Item>
+                    {displayAllYearsOption && (
+                        <>
+                            <Dropdown.Divider />
+                            <Dropdown.Item id="optionAll" eventKey="All Years">
+                                All Years
+                            </Dropdown.Item>
+                        </>
+                    )}
                 </div>
             </DropdownButton>
         </div>

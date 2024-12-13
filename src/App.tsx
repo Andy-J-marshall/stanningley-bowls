@@ -107,6 +107,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <Results
                                     stats={stanningleyStats}
@@ -122,6 +123,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={true}
                                 />
                                 <PlayerStats
                                     stanningleyStats={stanningleyStats}
@@ -139,6 +141,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <TeamStats
                                     stats={stanningleyStats}
@@ -155,6 +158,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
+                                    displayAllYearsOption={false}
                                 />
                                 <Records
                                     stats={stanningleyStats}
