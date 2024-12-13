@@ -13,10 +13,6 @@ import {
 } from '../types/interfaces';
 import { returnPlayerStats } from '../helpers/playerStatsHelper';
 import {
-    returnPlayerStatSummaryForAllYears,
-    returnTeamPlayerStatsForAllYears,
-} from '../helpers/allYearPlayerStatsHelper';
-import {
     returnPlayerStatsForTeam,
     returnTeamNamesWithGames,
 } from '../helpers/teamStatsHelper';
