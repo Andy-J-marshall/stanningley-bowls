@@ -47,8 +47,6 @@ function App() {
         });
     }, []);
 
-    // TODO fix issue with Records for all years (or don't save the state)
-    // TODO title case for records/team stats/results etc.
     // TODO refactor
     function statsSelectCallback(year: string) {
         const statsYearsProperty = isNaN(Number(year))
