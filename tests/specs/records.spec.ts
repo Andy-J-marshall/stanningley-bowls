@@ -111,6 +111,6 @@ test.describe('Records', () => {
     test(`Records year dropdown appears if there are multiple years of records available`, async ({
         yearSelectPage,
     }) => {
-        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
+        await yearSelectPage.checkYearDropdownHasAllYearOptions(12);
     });
 });
