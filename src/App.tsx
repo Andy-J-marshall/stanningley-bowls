@@ -17,9 +17,9 @@ import Navigation from './components/homePage/navigation';
 import Footer from './components/homePage/footer';
 import YearSelectDropdown from './components/homePage/yearSelectDropdown';
 import { FullStatsFile } from './types/interfaces';
-import { returnPlayerStatsForAllYears } from './helpers/allYearPlayerStatsHelper';
 import statsData from './statsData';
 
+// TODO set types here?
 const allYearStanningleyStats: any = statsData.allYearStanningleyStats;
 const allYearLittlemoorStats: any = statsData.allYearLittlemoorStats;
 const allYearPudseyStats: any = statsData.allYearPudseyStats;
@@ -27,16 +27,16 @@ const allYearAllClubsStats: any = statsData.allYearAllClubsStats;
 
 function App() {
     const [stanningleyStats, setStanningleyStats] = useState<FullStatsFile>(
-        statsData.dataFiles.stanningleyStats24
+        statsData.allYearStanningleyStats.year2024
     );
     const [littlemoorStats, setLittlemoorStats] = useState<FullStatsFile>(
-        statsData.dataFiles.littlemoorStats24
+        statsData.allYearLittlemoorStats.year2024
     );
     const [pudseyStats, setPudseyStats] = useState<FullStatsFile>(
-        statsData.dataFiles.pudseyStats24
+        statsData.allYearPudseyStats.year2024
     );
     const [allClubsStats, setAllClubsStats] = useState<FullStatsFile>(
-        statsData.dataFiles.allClubsStats24
+        statsData.allYearAllClubsStats.year2024
     );
     const [yearToDisplay, setYearToDisplay] = useState('2024');
 
@@ -48,47 +48,31 @@ function App() {
         });
     }, []);
 
+    // TODO fix issue with Records for all years (or don't save the state)
+    // TODO title case for records/team stats/results etc.
+    // TODO refactor
     function statsSelectCallback(year: string) {
-        if (allYearStanningleyStats[`year${year}`]) {
-            setStanningleyStats(allYearStanningleyStats[`year${year}`]);
-        }
-        if (allYearLittlemoorStats[`year${year}`]) {
-            setLittlemoorStats(allYearLittlemoorStats[`year${year}`]);
-        }
-        if (allYearPudseyStats[`year${year}`]) {
-            setPudseyStats(allYearPudseyStats[`year${year}`]);
-        }
-        if (allYearAllClubsStats[`year${year}`]) {
-            setAllClubsStats(allYearAllClubsStats[`year${year}`]);
+        // TODO refactor
+        let statsYearsProperty = year;
+        if (!isNaN(Number(year))) {
+            statsYearsProperty = `year${year}`;
+        } else {
+            statsYearsProperty = `allYears`;
         }
 
-        if (year.toLowerCase().includes('all')) {
-            setStanningleyStats(
-                returnPlayerStatsForAllYears(
-                    statsData.stanningleyStatsForEveryYearArray
-                )
-            );
+        if (
+            allYearStanningleyStats[statsYearsProperty] &&
+            allYearLittlemoorStats[statsYearsProperty] &&
+            allYearPudseyStats[statsYearsProperty] &&
+            allYearAllClubsStats[statsYearsProperty]
+        ) {
+            setStanningleyStats(allYearStanningleyStats[statsYearsProperty]);
+            setLittlemoorStats(allYearLittlemoorStats[statsYearsProperty]);
+            setPudseyStats(allYearPudseyStats[statsYearsProperty]);
+            setAllClubsStats(allYearAllClubsStats[statsYearsProperty]);
 
-            setLittlemoorStats(
-                returnPlayerStatsForAllYears(
-                    statsData.littlemoorStatsForEveryYearArray
-                )
-            );
-
-            setPudseyStats(
-                returnPlayerStatsForAllYears(
-                    statsData.pudseyStatsForEveryYearArray
-                )
-            );
-
-            setAllClubsStats(
-                returnPlayerStatsForAllYears(
-                    statsData.allClubsStatsForEveryYearArray
-                )
-            );
+            setYearToDisplay(year.toString());
         }
-
-        setYearToDisplay(year.toString());
     }
 
     return (

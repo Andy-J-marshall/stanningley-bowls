@@ -13,6 +13,7 @@ export class YearSelectPage {
     private readonly year2023: Locator;
     private readonly allYearsInDropdown: Locator;
 
+    // TODO refactor
     constructor(page: Page) {
         this.page = page;
         this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
