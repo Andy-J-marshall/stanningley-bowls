@@ -314,13 +314,13 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
         });
     });
 
-    const returnObject: FullStatsFile = {
+    const statsObject: FullStatsFile = {
         playerResults: collatedStats,
         lastUpdated: statsArrayCopy[0].lastUpdated,
         statsYear: 'All Years',
     }
 
-    return returnObject;
+    return statsObject;
 }
 
 export function returnTeamPlayerStatsForAllYears(
