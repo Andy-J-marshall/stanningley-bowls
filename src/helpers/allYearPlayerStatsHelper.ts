@@ -13,7 +13,6 @@ import {
     checkAllWinPercAndAverageAreNumbers,
     checkWinPercAndAverageAreNumbers,
 } from './statsHelper';
-import { returnTeamNamesWithGames } from './teamStatsHelper';
 
 export function returnPlayerStatSummaryForAllYears(
     statsArray: FullStatsFile[]
