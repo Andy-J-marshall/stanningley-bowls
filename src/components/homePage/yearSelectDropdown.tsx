@@ -30,6 +30,10 @@ function YearSelectDropdown(props: YearSelectDropdownProps) {
             >
                 {/* Future years will need to be added here */}
                 <div id="full-stat-years-options">
+                    <Dropdown.Item id="optionAll" eventKey="All Years">
+                        All Years
+                    </Dropdown.Item>
+                    <Dropdown.Divider />
                     <Dropdown.Item id="option2024" eventKey="2024">
                         2024
                     </Dropdown.Item>

@@ -315,21 +315,28 @@ export function returnPlayerStatsForAllYears(statsArray: FullStatsFile[]) {
         });
     });
 
-    return collatedStats;
+    const returnObject: FullStatsFile = {
+        playerResults: collatedStats,
+        lastUpdated: statsArrayCopy[0].lastUpdated,
+        statsYear: 'All Years',
+    }
+
+    return returnObject;
 }
 
-export function returnTeamNamesWithGamesForAllYears(
-    playerStatsArray: FullStatsFile[]
-) {
-    const daysPlayedSet: Set<string> = new Set();
+// TODO remove
+// export function returnTeamNamesWithGamesForAllYears(
+//     playerStatsArray: FullStatsFile[]
+// ) {
+//     const daysPlayedSet: Set<string> = new Set();
 
-    playerStatsArray.forEach((playerStats) => {
-        const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
-        teamNames.forEach((teamName) => daysPlayedSet.add(teamName));
-    });
+//     playerStatsArray.forEach((playerStats) => {
+//         const teamNames = returnTeamNamesWithGames(playerStats.playerResults);
+//         teamNames.forEach((teamName) => daysPlayedSet.add(teamName));
+//     });
 
-    return Array.from(daysPlayedSet).sort();
-}
+//     return Array.from(daysPlayedSet).sort();
+// }
 
 export function returnTeamPlayerStatsForAllYears(
     statsArray: FullStatsFile[],
