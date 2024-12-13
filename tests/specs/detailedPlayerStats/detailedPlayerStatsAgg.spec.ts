@@ -12,7 +12,7 @@ test.describe('Player detailed stats - aggregate', () => {
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
 
         await playerSearchPage.searchForPlayer('Shirley Allman');
         await detailedPlayerStatsPage.clickAggAccordion();

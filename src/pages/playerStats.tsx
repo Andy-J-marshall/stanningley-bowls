@@ -6,7 +6,7 @@ import Search from '../components/playerStats/search';
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {
-    ClubStatsMap,
+    ClubPlayerStatsMap,
     PlayerStatsProps,
     PlayerStatsSummary,
     PlayerStatsTeamSummary,
@@ -57,7 +57,7 @@ function PlayerStats(props: PlayerStatsProps) {
             setStatsToUse(allClubsStats?.playerResults);
             setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         } else {
-            const clubStatsMap: ClubStatsMap = {
+            const clubStatsMap: ClubPlayerStatsMap = {
                 pudsey: pudseyStats?.playerResults,
                 littlemoor: littlemoorStats?.playerResults,
                 stanningley: stanningleyStats?.playerResults,
@@ -75,8 +75,9 @@ function PlayerStats(props: PlayerStatsProps) {
         // Find the title and players list fo the selected stats
 
         setYearInTitle(
-            new Date().getFullYear() !== Number(stanningleyStats.statsYear)
-                ? allClubsStats.statsYear
+            !isNaN(Number(stanningleyStats.statsYear)) &&
+                new Date().getFullYear() !== Number(stanningleyStats.statsYear)
+                ? allClubsStats.statsYear.toLowerCase()
                 : ''
         );
     }, [
@@ -181,9 +182,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 statsToUse,
                 teamNameForStats
             );
-        }
-
-        if (!teamNameForStats) {
+        } else {
             playerStatsForSummary = returnPlayerStatSummary(
                 statsToUse,
                 players
@@ -205,7 +204,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     return (
         <div id="player-stat">
-            <h1>{yearInTitle.toLowerCase()} player stats</h1>
+            <h1>{yearInTitle} player stats</h1>
             <Search
                 searchList={players}
                 value={value}

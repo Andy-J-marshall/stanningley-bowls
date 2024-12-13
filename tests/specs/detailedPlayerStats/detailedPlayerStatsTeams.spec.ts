@@ -12,7 +12,7 @@ test.describe('Player detailed stats - teams', () => {
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2013Year();
+        await yearSelectPage.selectYear(2013);
 
         await playerSearchPage.searchForPlayer('Jack Roberts');
         await detailedPlayerStatsPage.clickTeamAccordion();

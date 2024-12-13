@@ -1,3 +1,4 @@
+import { returnPlayerStatsForAllYears } from './helpers/allYearPlayerStatsHelper';
 import stanningleyStats13 from './data/stanningleyStats2013.json';
 import stanningleyStats14 from './data/stanningleyStats2014.json';
 import stanningleyStats15 from './data/stanningleyStats2015.json';
@@ -44,7 +45,8 @@ import allClubsStats23 from './data/allClubsStats2023.json';
 import allClubsStats24 from './data/allClubsStats2024.json';
 
 // Stats for future years will need to be updated here
-const dataFiles = {
+
+const stanningleyStatsForEveryYearArray = [
     stanningleyStats13,
     stanningleyStats14,
     stanningleyStats15,
@@ -56,6 +58,24 @@ const dataFiles = {
     stanningleyStats22,
     stanningleyStats23,
     stanningleyStats24,
+];
+
+const allYearStanningleyStats = {
+    year2013: stanningleyStats13,
+    year2014: stanningleyStats14,
+    year2015: stanningleyStats15,
+    year2016: stanningleyStats16,
+    year2017: stanningleyStats17,
+    year2018: stanningleyStats18,
+    year2019: stanningleyStats19,
+    year2021: stanningleyStats21,
+    year2022: stanningleyStats22,
+    year2023: stanningleyStats23,
+    year2024: stanningleyStats24,
+    allYears: returnPlayerStatsForAllYears(stanningleyStatsForEveryYearArray),
+};
+
+const littlemoorStatsForEveryYearArray = [
     littlemoorStats13,
     littlemoorStats14,
     littlemoorStats15,
@@ -67,6 +87,24 @@ const dataFiles = {
     littlemoorStats22,
     littlemoorStats23,
     littlemoorStats24,
+];
+
+const allYearLittlemoorStats = {
+    year2013: littlemoorStats13,
+    year2014: littlemoorStats14,
+    year2015: littlemoorStats15,
+    year2016: littlemoorStats16,
+    year2017: littlemoorStats17,
+    year2018: littlemoorStats18,
+    year2019: littlemoorStats19,
+    year2021: littlemoorStats21,
+    year2022: littlemoorStats22,
+    year2023: littlemoorStats23,
+    year2024: littlemoorStats24,
+    allYears: returnPlayerStatsForAllYears(littlemoorStatsForEveryYearArray),
+};
+
+const pudseyStatsForEveryYearArray = [
     pudseyStats13,
     pudseyStats14,
     pudseyStats15,
@@ -78,6 +116,24 @@ const dataFiles = {
     pudseyStats22,
     pudseyStats23,
     pudseyStats24,
+];
+
+const allYearPudseyStats = {
+    year2013: pudseyStats13,
+    year2014: pudseyStats14,
+    year2015: pudseyStats15,
+    year2016: pudseyStats16,
+    year2017: pudseyStats17,
+    year2018: pudseyStats18,
+    year2019: pudseyStats19,
+    year2021: pudseyStats21,
+    year2022: pudseyStats22,
+    year2023: pudseyStats23,
+    year2024: pudseyStats24,
+    allYears: returnPlayerStatsForAllYears(pudseyStatsForEveryYearArray),
+};
+
+const allClubsStatsForEveryYearArray = [
     allClubsStats13,
     allClubsStats14,
     allClubsStats15,
@@ -89,128 +145,26 @@ const dataFiles = {
     allClubsStats22,
     allClubsStats23,
     allClubsStats24,
-};
-
-const allYearStanningleyStats = {
-    year2013: dataFiles.stanningleyStats13,
-    year2014: dataFiles.stanningleyStats14,
-    year2015: dataFiles.stanningleyStats15,
-    year2016: dataFiles.stanningleyStats16,
-    year2017: dataFiles.stanningleyStats17,
-    year2018: dataFiles.stanningleyStats18,
-    year2019: dataFiles.stanningleyStats19,
-    year2021: dataFiles.stanningleyStats21,
-    year2022: dataFiles.stanningleyStats22,
-    year2023: dataFiles.stanningleyStats23,
-    year2024: dataFiles.stanningleyStats24,
-};
-
-const allYearLittlemoorStats = {
-    year2013: dataFiles.littlemoorStats13,
-    year2014: dataFiles.littlemoorStats14,
-    year2015: dataFiles.littlemoorStats15,
-    year2016: dataFiles.littlemoorStats16,
-    year2017: dataFiles.littlemoorStats17,
-    year2018: dataFiles.littlemoorStats18,
-    year2019: dataFiles.littlemoorStats19,
-    year2021: dataFiles.littlemoorStats21,
-    year2022: dataFiles.littlemoorStats22,
-    year2023: dataFiles.littlemoorStats23,
-    year2024: dataFiles.littlemoorStats24,
-};
-
-const allYearPudseyStats = {
-    year2013: dataFiles.pudseyStats13,
-    year2014: dataFiles.pudseyStats14,
-    year2015: dataFiles.pudseyStats15,
-    year2016: dataFiles.pudseyStats16,
-    year2017: dataFiles.pudseyStats17,
-    year2018: dataFiles.pudseyStats18,
-    year2019: dataFiles.pudseyStats19,
-    year2021: dataFiles.pudseyStats21,
-    year2022: dataFiles.pudseyStats22,
-    year2023: dataFiles.pudseyStats23,
-    year2024: dataFiles.pudseyStats24,
-};
+];
 
 const allYearAllClubsStats = {
-    year2013: dataFiles.allClubsStats13,
-    year2014: dataFiles.allClubsStats14,
-    year2015: dataFiles.allClubsStats15,
-    year2016: dataFiles.allClubsStats16,
-    year2017: dataFiles.allClubsStats17,
-    year2018: dataFiles.allClubsStats18,
-    year2019: dataFiles.allClubsStats19,
-    year2021: dataFiles.allClubsStats21,
-    year2022: dataFiles.allClubsStats22,
-    year2023: dataFiles.allClubsStats23,
-    year2024: dataFiles.allClubsStats24,
+    year2013: allClubsStats13,
+    year2014: allClubsStats14,
+    year2015: allClubsStats15,
+    year2016: allClubsStats16,
+    year2017: allClubsStats17,
+    year2018: allClubsStats18,
+    year2019: allClubsStats19,
+    year2021: allClubsStats21,
+    year2022: allClubsStats22,
+    year2023: allClubsStats23,
+    year2024: allClubsStats24,
+    allYears: returnPlayerStatsForAllYears(allClubsStatsForEveryYearArray),
 };
 
-const stanningleyStatsForEveryYearArray = [
-    dataFiles.stanningleyStats13,
-    dataFiles.stanningleyStats14,
-    dataFiles.stanningleyStats15,
-    dataFiles.stanningleyStats16,
-    dataFiles.stanningleyStats17,
-    dataFiles.stanningleyStats18,
-    dataFiles.stanningleyStats19,
-    dataFiles.stanningleyStats21,
-    dataFiles.stanningleyStats22,
-    dataFiles.stanningleyStats23,
-    dataFiles.stanningleyStats24,
-];
-
-const littlemoorStatsForEveryYearArray = [
-    dataFiles.littlemoorStats13,
-    dataFiles.littlemoorStats14,
-    dataFiles.littlemoorStats15,
-    dataFiles.littlemoorStats16,
-    dataFiles.littlemoorStats17,
-    dataFiles.littlemoorStats18,
-    dataFiles.littlemoorStats19,
-    dataFiles.littlemoorStats21,
-    dataFiles.littlemoorStats22,
-    dataFiles.littlemoorStats23,
-    dataFiles.littlemoorStats24,
-];
-
-const pudseyStatsForEveryYearArray = [
-    dataFiles.pudseyStats13,
-    dataFiles.pudseyStats14,
-    dataFiles.pudseyStats15,
-    dataFiles.pudseyStats16,
-    dataFiles.pudseyStats17,
-    dataFiles.pudseyStats18,
-    dataFiles.pudseyStats19,
-    dataFiles.pudseyStats21,
-    dataFiles.pudseyStats22,
-    dataFiles.pudseyStats23,
-    dataFiles.pudseyStats24,
-];
-
-const allClubsStatsForEveryYearArray = [
-    dataFiles.allClubsStats13,
-    dataFiles.allClubsStats14,
-    dataFiles.allClubsStats15,
-    dataFiles.allClubsStats16,
-    dataFiles.allClubsStats17,
-    dataFiles.allClubsStats18,
-    dataFiles.allClubsStats19,
-    dataFiles.allClubsStats21,
-    dataFiles.allClubsStats22,
-    dataFiles.allClubsStats23,
-    dataFiles.allClubsStats24,
-];
-
 export default {
-    dataFiles,
     allYearAllClubsStats,
-    allClubsStatsForEveryYearArray,
-    stanningleyStatsForEveryYearArray,
     allYearStanningleyStats,
-    littlemoorStatsForEveryYearArray,
     allYearLittlemoorStats,
-    pudseyStatsForEveryYearArray,
     allYearPudseyStats,
 };

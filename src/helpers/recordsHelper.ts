@@ -115,7 +115,7 @@ export function findPlayerRecords(
         teamsFound.forEach((team) => {
             const teamStats = p[team];
 
-            const games = teamStats.games;
+            const games = teamStats?.games;
             if (games > 0) {
                 const wins = teamStats.wins;
                 const avg = teamStats.aggDiff / games;

@@ -22,7 +22,10 @@ function Records(props: RecordsProps) {
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
-        currentYear !== Number(stats.statsYear) ? `${stats.statsYear}` : '';
+        !isNaN(Number(stats.statsYear)) &&
+        currentYear !== Number(stats.statsYear)
+            ? `${stats.statsYear.toLowerCase()}`
+            : '';
 
     const { initialTeamRecords, teamsFound } = findLeaguesAvailableInData(
         stats.playerResults
@@ -107,11 +110,8 @@ function Records(props: RecordsProps) {
     } else {
         return (
             <div className="center" style={{ width: '95%' }}>
-                <h1>{yearInTitle} records</h1>
-                <p>
-                    No {config.teamNames.shortName} records available for the
-                    selected year
-                </p>
+                <h1>records</h1>
+                <p>No records available for the selected year</p>
             </div>
         );
     }

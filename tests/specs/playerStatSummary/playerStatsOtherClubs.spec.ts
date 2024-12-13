@@ -13,7 +13,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerStatsOverviewPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
 
         await playerSearchPage.searchForPlayer('john armitage');
@@ -37,10 +37,10 @@ test.describe('Player stats - Other Clubs', () => {
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSummaryPage.validateSummaryStats(57, 43, 75, 5.21);
 
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerSummaryPage.validateSummaryStats(58, 40, 69, 3.76);
     });
 
@@ -54,10 +54,10 @@ test.describe('Player stats - Other Clubs', () => {
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
         await playerStatOptionsPage.selectAllClubsFromDropdown();
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSummaryPage.validateSummaryStats(111, 66, 59, 2.23);
 
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerSummaryPage.validateSummaryStats(114, 83, 73, 5.57);
     });
 
@@ -69,7 +69,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerSummaryPage.setPlayerToFind('martin fulton');
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
-        await yearSelectPage.select2014Year();
+        await yearSelectPage.selectYear(2014);
         await playerStatOptionsPage.selectTeamFromDropdown('Mirfield (B)');
 
         await expect(playerSummaryPage.playerRows).toHaveCount(3);
@@ -84,7 +84,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerSummaryPage.setPlayerToFind('linda barrand');
 
         await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerSummaryPage.validateSummaryStats(22, 4, 18, -6.45);
 
@@ -106,7 +106,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerSummaryPage.setPlayerToFind('richard hodgson');
 
         await playerStatOptionsPage.selectClubFromDropdown('Pudsey');
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
         await playerSummaryPage.validateSummaryStats(55, 32, 58, 1.96);
@@ -133,7 +133,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await expect(playerSummaryPage.playerRows).toHaveCount(32);
 
         await playerStatOptionsPage.selectClubFromDropdown('Littlemoor');
@@ -148,7 +148,7 @@ test.describe('Player stats - Other Clubs', () => {
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2018Year();
+        await yearSelectPage.selectYear(2018);
         await playerStatOptionsPage.selectTeamFromDropdown(
             'Bradford Half Holiday'
         );

@@ -12,7 +12,7 @@ test.describe('Player stats - search', () => {
         detailedPlayerStatsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSearchPage.searchForPlayer('Paul Bowes');
 
         await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
@@ -26,7 +26,7 @@ test.describe('Player stats - search', () => {
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSearchPage.searchForPlayer('Alyssa Randell');
 
         await playerSearchPage.clickBackToSummary();
@@ -37,16 +37,16 @@ test.describe('Player stats - search', () => {
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSearchPage.searchForPlayer('Andy Marshall');
 
-        await yearSelectPage.select2021Year();
+        await yearSelectPage.selectYear(2021);
         await expect(playerSearchPage.noResultsMessage).toBeVisible();
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await expect(playerSearchPage.noResultsMessage).not.toBeVisible();
 
-        await yearSelectPage.select2013Year();
+        await yearSelectPage.selectYear(2013);
         await expect(playerSearchPage.noResultsMessage).toBeVisible();
     });
 
@@ -58,7 +58,7 @@ test.describe('Player stats - search', () => {
     }) => {
         const player = 'Clifford Brogie';
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerStatOptionsPage.selectAllClubsFromDropdown();
         await playerSearchPage.searchForPlayer(player);
 

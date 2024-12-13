@@ -12,7 +12,9 @@ function Results(props: ResultsProps) {
     const yearToDisplay = props.yearToDisplay;
 
     const yearInTitle =
-        currentYear !== Number(yearToDisplay) ? `${yearToDisplay}` : '';
+        !isNaN(Number(stats.statsYear)) && currentYear !== Number(yearToDisplay)
+            ? `${yearToDisplay.toLowerCase()}`
+            : '';
 
     const { teamResults } = stats;
 
@@ -27,8 +29,8 @@ function Results(props: ResultsProps) {
     if (!hasResults) {
         return (
             <div id="result">
-                <h1>{yearInTitle} results</h1>
-                <p>No results for {yearToDisplay}</p>
+                <h1>results</h1>
+                <p>No results available for the selected year</p>
             </div>
         );
     }
@@ -37,7 +39,6 @@ function Results(props: ResultsProps) {
         <div id="result">
             <h1>{yearInTitle} results</h1>
 
-            {/* Show results if found */}
             {resultsArray?.map((team, idx) => {
                 return (
                     <div key={idx} className="teamResult">

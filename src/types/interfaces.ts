@@ -447,6 +447,10 @@ export interface AggregatedPlayerStats {
     availablePairsCupAgg: number;
 }
 
+export type ClubPlayerStatsMap = {
+    [key: string]: PlayerResultsStatsFile;
+};
+
 export type ClubStatsMap = {
-    [key: string]: any;
+    [key: string]: FullStatsFile;
 };
