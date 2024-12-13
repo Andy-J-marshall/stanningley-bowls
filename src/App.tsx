@@ -47,7 +47,6 @@ function App() {
         });
     }, []);
 
-    // TODO refactor
     function statsSelectCallback(year: string) {
         const statsYearsProperty = isNaN(Number(year))
             ? 'allYears'
