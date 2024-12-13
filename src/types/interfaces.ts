@@ -448,7 +448,5 @@ export interface AggregatedPlayerStats {
 }
 
 export type ClubStatsMap = {
-    [key: string]: {
-        stats: any;
-    };
+    [key: string]: any;
 };

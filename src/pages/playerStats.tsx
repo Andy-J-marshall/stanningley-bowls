@@ -55,24 +55,21 @@ function PlayerStats(props: PlayerStatsProps) {
         // Set which stats to show
         if (showAllClubsStats) {
             setStatsToUse(allClubsStats?.playerResults);
+            setPlayers(Object.keys(allClubsStats?.playerResults).sort());
         } else {
             const clubStatsMap: ClubStatsMap = {
-                pudsey: {
-                    stats: pudseyStats?.playerResults,
-                },
-                littlemoor: {
-                    stats: littlemoorStats?.playerResults,
-                },
-                stanningley: {
-                    stats: stanningleyStats?.playerResults,
-                },
+                pudsey: pudseyStats?.playerResults,
+                littlemoor: littlemoorStats?.playerResults,
+                stanningley: stanningleyStats?.playerResults,
             };
 
             const selectedStats =
                 clubStatsMap[clubNameForStats] || clubStatsMap['stanningley'];
 
-            setStatsToUse(selectedStats.stats);
-            setTeamNames(returnTeamNamesWithGames(selectedStats.stats));
+            setPlayers(Object.keys(selectedStats).sort());
+
+            setStatsToUse(selectedStats);
+            setTeamNames(returnTeamNamesWithGames(selectedStats));
         }
 
         // Find the title and players list fo the selected stats
@@ -82,8 +79,6 @@ function PlayerStats(props: PlayerStatsProps) {
                 ? allClubsStats.statsYear
                 : ''
         );
-
-        setPlayers(Object.keys(allClubsStats?.playerResults).sort());
     }, [
         stanningleyStats,
         littlemoorStats,
