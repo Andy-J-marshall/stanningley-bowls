@@ -76,7 +76,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
         setYearInTitle(
             new Date().getFullYear() !== Number(stanningleyStats.statsYear)
-                ? allClubsStats.statsYear
+                ? allClubsStats.statsYear.toLowerCase()
                 : ''
         );
     }, [
@@ -205,7 +205,7 @@ function PlayerStats(props: PlayerStatsProps) {
 
     return (
         <div id="player-stat">
-            <h1>{yearInTitle.toLowerCase()} player stats</h1>
+            <h1>{yearInTitle} player stats</h1>
             <Search
                 searchList={players}
                 value={value}

@@ -141,7 +141,7 @@ function App() {
                                 <YearSelectDropdown
                                     statsCallback={statsSelectCallback}
                                     yearToDisplay={yearToDisplay}
-                                    displayAllYearsOption={true}
+                                    displayAllYearsOption={false}
                                 />
                                 <Records
                                     stats={stanningleyStats}
