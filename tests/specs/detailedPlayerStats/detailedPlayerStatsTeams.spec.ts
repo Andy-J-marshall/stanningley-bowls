@@ -57,9 +57,9 @@ test.describe('Player detailed stats - teams', () => {
         detailedPlayerStatsPage,
         playerStatsTeamPage,
         playerSearchPage,
-        playerStatOptionsPage,
+        yearSelectPage,
     }) => {
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSearchPage.searchForPlayer('Marion Worrall');
         await detailedPlayerStatsPage.clickTeamAccordion();
@@ -90,9 +90,9 @@ test.describe('Player detailed stats - teams', () => {
         detailedPlayerStatsPage,
         playerStatsTeamPage,
         playerSearchPage,
-        playerStatOptionsPage,
+        yearSelectPage,
     }) => {
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSearchPage.searchForPlayer('Alan Parker');
         await detailedPlayerStatsPage.clickTeamAccordion();

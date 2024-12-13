@@ -52,9 +52,10 @@ test.describe('Player detailed stats - aggregate', () => {
         playerStatsAggPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSearchPage.searchForPlayer('Richard Hodgson');
         await detailedPlayerStatsPage.clickAggAccordion();
@@ -69,8 +70,9 @@ test.describe('Player detailed stats - aggregate', () => {
         playerStatsAggPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerStatOptionsPage.selectAllClubsFromDropdown();
 
         await playerSearchPage.searchForPlayer('Shirley Sandilands');

@@ -20,6 +20,8 @@ function TeamStats(props: TeamStatsProps) {
         (team) => team.totalGamesPlayed > 0
     );
 
+    // TODO fix this and records for all years
+
     useEffect(() => {
         window.scrollTo(0, 0);
     });

@@ -100,9 +100,10 @@ test.describe('Player detailed stats - wins and losses', () => {
         playerStatsWLPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSearchPage.searchForPlayer('Richard Hodgson');
         await detailedPlayerStatsPage.clickWinsAndLossesAccordion();
@@ -120,9 +121,10 @@ test.describe('Player detailed stats - wins and losses', () => {
         playerStatsWLPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
 
         await playerSearchPage.searchForPlayer('Mabel Shaw');
         await detailedPlayerStatsPage.clickWinsAndLossesAccordion();

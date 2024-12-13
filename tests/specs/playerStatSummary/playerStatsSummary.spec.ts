@@ -50,22 +50,23 @@ test.describe('Player summary stats', () => {
 
     test('Summary of Dave Hudson stats since 2013 are correct', async ({
         playerSummaryPage,
-        playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('dave hudson');
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerSummaryPage.validateSummaryStats(385, 147, 38, -2.34);
     });
 
     test('Summary of Dave Hudson stats since 2013 for all clubs is correct', async ({
         playerSummaryPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('dave hudson');
         await playerStatOptionsPage.selectAllClubsFromDropdown();
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerSummaryPage.validateSummaryStats(463, 174, 38, -2.48);
     });
 
@@ -93,6 +94,6 @@ test.describe('Player summary stats', () => {
     test('Stats year dropdown appears if there are multiple years of stats available', async ({
         yearSelectPage,
     }) => {
-        await yearSelectPage.checkYearDropdownHasAllYearOptions(11);
+        await yearSelectPage.checkYearDropdownHasAllYearOptions(12);
     });
 });

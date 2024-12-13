@@ -114,10 +114,11 @@ test.describe('Player summary stats - filters', () => {
     test('Summary of Bernie Miller stats since 2013 for club are correct', async ({
         playerSummaryPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('bernie miller');
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerSummaryPage.validateSummaryStats(416, 242, 58, 2.37);
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
@@ -150,11 +151,12 @@ test.describe('Player summary stats - filters', () => {
     test('Summary of Bernie Miller stats since 2013 for all clubs and all years is correct', async ({
         playerSummaryPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('bernie miller');
         await playerStatOptionsPage.selectAllClubsFromDropdown();
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerSummaryPage.validateSummaryStats(416, 242, 58, 2.37);
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
@@ -194,10 +196,11 @@ test.describe('Player summary stats - filters', () => {
     test('Can filter for team specific stats for all years', async ({
         playerSummaryPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         playerSummaryPage.setPlayerToFind('adam sandilands');
 
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerStatOptionsPage.selectTeamFromDropdown(
             'Airewharfe Monday (B)'
         );
@@ -261,12 +264,13 @@ test.describe('Player summary stats - filters', () => {
         playerSummaryPage,
         playerSearchPage,
         playerStatOptionsPage,
+        yearSelectPage,
     }) => {
         const name = 'Mabel Shaw';
         playerSummaryPage.setPlayerToFind(name);
 
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await playerStatOptionsPage.selectAllYearsSwitch();
+        await yearSelectPage.selectAllYears();
         await playerStatOptionsPage.selectSinglesOnlyRadio();
         await playerStatOptionsPage.selectAwayOnlyRadio();
 
@@ -275,7 +279,6 @@ test.describe('Player summary stats - filters', () => {
         await playerSearchPage.searchForPlayer(name);
         await playerSearchPage.clickBackToSummary();
 
-        await expect(playerStatOptionsPage.allYearSwitch).toBeChecked();
         await expect(playerStatOptionsPage.singlesOnlyRadio).toBeChecked();
         await expect(playerStatOptionsPage.awayOnlyRadio).toBeChecked();
 

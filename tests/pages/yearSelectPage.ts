@@ -4,26 +4,33 @@ export class YearSelectPage {
     public readonly page: Page;
 
     private readonly yearSelectDropdown: Locator;
+    private readonly AllYears: Locator;
     private readonly year2013: Locator;
     private readonly year2014: Locator;
     private readonly year2018: Locator;
     private readonly year2021: Locator;
     private readonly year2022: Locator;
     private readonly year2023: Locator;
-    private readonly allYears: Locator;
+    private readonly allYearsInDropdown: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.yearSelectDropdown = page.locator('#year-select-dropdown-button');
+        this.AllYears = page.getByRole('button', { name: 'All Years' });
         this.year2013 = page.getByRole('button', { name: '2013' });
         this.year2014 = page.getByRole('button', { name: '2014' });
         this.year2018 = page.getByRole('button', { name: '2018' });
         this.year2021 = page.getByRole('button', { name: '2021' });
         this.year2022 = page.getByRole('button', { name: '2022' });
         this.year2023 = page.getByRole('button', { name: '2023' });
-        this.allYears = page.locator(
+        this.allYearsInDropdown = page.locator(
             '#full-stat-years-options > .dropdown-item'
         );
+    }
+
+    async selectAllYears() {
+        await this.yearSelectDropdown.click();
+        await this.AllYears.click();
     }
 
     async select2013Year() {
@@ -59,6 +66,6 @@ export class YearSelectPage {
     async checkYearDropdownHasAllYearOptions(expectedNumber: number) {
         await expect(this.yearSelectDropdown).toBeVisible();
         await this.yearSelectDropdown.click();
-        await expect(this.allYears).toHaveCount(expectedNumber);
+        await expect(this.allYearsInDropdown).toHaveCount(expectedNumber);
     }
 }

@@ -179,7 +179,7 @@ describe('#allYearPlayerStatsHelper Tests', () => {
         const statsArray = [stats2022, stats2023, stats2024];
         const result = returnPlayerStatsForAllYears(statsArray);
 
-        const players = Object.keys(result);
+        const players = Object.keys(result.playerResults);
 
         expect(players.length).to.equal(47);
 
