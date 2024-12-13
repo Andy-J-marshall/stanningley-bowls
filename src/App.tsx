@@ -49,20 +49,6 @@ function App() {
     }, []);
 
     function statsSelectCallback(year: string) {
-        if (allYearStanningleyStats[`year${year}`]) {
-            setStanningleyStats(allYearStanningleyStats[`year${year}`]);
-        }
-        if (allYearLittlemoorStats[`year${year}`]) {
-            setLittlemoorStats(allYearLittlemoorStats[`year${year}`]);
-        }
-        if (allYearPudseyStats[`year${year}`]) {
-            setPudseyStats(allYearPudseyStats[`year${year}`]);
-        }
-        if (allYearAllClubsStats[`year${year}`]) {
-            setAllClubsStats(allYearAllClubsStats[`year${year}`]);
-        }
-
-        // TODO refactor
         if (year.toLowerCase().includes('all')) {
             const allYearStanningleyStats = returnPlayerStatsForAllYears(
                 statsData.stanningleyStatsForEveryYearArray
@@ -84,6 +70,19 @@ function App() {
                 statsData.allClubsStatsForEveryYearArray
             );
             setAllClubsStats(allYearAllClubsStats);
+        } else {
+            if (allYearStanningleyStats[`year${year}`]) {
+                setStanningleyStats(allYearStanningleyStats[`year${year}`]);
+            }
+            if (allYearLittlemoorStats[`year${year}`]) {
+                setLittlemoorStats(allYearLittlemoorStats[`year${year}`]);
+            }
+            if (allYearPudseyStats[`year${year}`]) {
+                setPudseyStats(allYearPudseyStats[`year${year}`]);
+            }
+            if (allYearAllClubsStats[`year${year}`]) {
+                setAllClubsStats(allYearAllClubsStats[`year${year}`]);
+            }
         }
 
         setYearToDisplay(year.toString());
