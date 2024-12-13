@@ -182,9 +182,7 @@ function PlayerStats(props: PlayerStatsProps) {
                 statsToUse,
                 teamNameForStats
             );
-        }
-
-        if (!teamNameForStats) {
+        } else {
             playerStatsForSummary = returnPlayerStatSummary(
                 statsToUse,
                 players
