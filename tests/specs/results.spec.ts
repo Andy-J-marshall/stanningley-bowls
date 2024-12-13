@@ -10,7 +10,7 @@ test.describe('Results', () => {
         resultPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         expect(resultPage.teamResultsSections).toHaveCount(6);
         expect(resultPage.resultRows).toHaveCount(112);
@@ -25,7 +25,7 @@ test.describe('Results', () => {
         resultPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2021Year();
+        await yearSelectPage.selectYear(2021);
 
         expect(resultPage.teamResultsSections).toHaveCount(3);
         expect(resultPage.resultRows).toHaveCount(40);
@@ -40,7 +40,7 @@ test.describe('Results', () => {
         resultPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2013Year();
+        await yearSelectPage.selectYear(2013);
 
         expect(resultPage.teamResultsSections).toHaveCount(8);
         expect(resultPage.resultRows).toHaveCount(146);

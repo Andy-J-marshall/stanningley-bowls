@@ -10,7 +10,7 @@ test.describe('Records', () => {
         recordsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         expect(recordsPage.overallGamesRecord).toBeVisible();
         expect(recordsPage.thurVetsWinRecord).toBeVisible({ visible: false });
@@ -38,7 +38,7 @@ test.describe('Records', () => {
         teamTabsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await teamTabsPage.selectThurVetsTeamTab();
 
         expect(recordsPage.thurVetsWinRecord).toBeVisible();
@@ -63,7 +63,7 @@ test.describe('Records', () => {
         teamTabsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await teamTabsPage.selectTuesVetsTeamTab();
 
         expect(recordsPage.tuesVetsWinRecord).toBeVisible();
@@ -88,7 +88,7 @@ test.describe('Records', () => {
         teamTabsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await teamTabsPage.selectWedPairsTeamTab();
 
         await expect(recordsPage.noGamesMessage).toBeVisible();
@@ -101,10 +101,10 @@ test.describe('Records', () => {
     }) => {
         await teamTabsPage.selectMondayTeamTab();
 
-        await yearSelectPage.select2013Year();
+        await yearSelectPage.selectYear(2018);
         await expect(recordsPage.mondayTeamRecords).toHaveCount(2);
 
-        await yearSelectPage.select2021Year();
+        await yearSelectPage.selectYear(2021);
         await expect(recordsPage.mondayTeamRecords).toHaveCount(1);
     });
 

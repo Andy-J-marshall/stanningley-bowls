@@ -27,7 +27,7 @@ test.describe('Player detailed stats - overview', () => {
             playerSearchPage,
             yearSelectPage,
         }) => {
-            await yearSelectPage.select2023Year();
+            await yearSelectPage.selectYear(2023);
             await playerSearchPage.searchForPlayer(player);
             await expect(detailedPlayerStatsPage.playerStats).toHaveCount(1);
             await expect(detailedPlayerStatsPage.title).toHaveText(player);
@@ -68,7 +68,7 @@ test.describe('Player detailed stats - overview', () => {
             playerStatOptionsPage,
             yearSelectPage,
         }) => {
-            await yearSelectPage.select2023Year();
+            await yearSelectPage.selectYear(2023);
             await playerStatOptionsPage.selectAllClubsFromDropdown();
             await playerSearchPage.searchForPlayer(player);
 
@@ -126,7 +126,7 @@ test.describe('Player detailed stats - overview', () => {
         playerSearchPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerSearchPage.searchForPlayer('Jack Roberts');
         await yearSelectPage.checkYearDropdownHasAllYearOptions(12);
     });

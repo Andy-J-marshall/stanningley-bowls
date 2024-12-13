@@ -52,7 +52,6 @@ function App() {
     // TODO title case for records/team stats/results etc.
     // TODO refactor
     function statsSelectCallback(year: string) {
-        // TODO refactor
         const statsYearsProperty = isNaN(Number(year))
             ? 'allYears'
             : `year${year}`;

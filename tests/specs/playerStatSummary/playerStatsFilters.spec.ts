@@ -13,7 +13,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('andy marshall');
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         // All venues
         await playerSummaryPage.validateSummaryStats(51, 40, 78, 5.49);
@@ -66,7 +66,7 @@ test.describe('Player summary stats - filters', () => {
         playerSummaryPage.setPlayerToFind('richard hodgson');
 
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         // All venues
         await playerSummaryPage.validateSummaryStats(58, 33, 57, 1.86);
@@ -136,7 +136,7 @@ test.describe('Player summary stats - filters', () => {
         playerSummaryPage.setPlayerToFind('neil porter');
 
         await playerStatOptionsPage.selectAllClubsFromDropdown();
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerStatOptionsPage.selectSinglesOnlyRadio();
         await playerSummaryPage.validateSummaryStats(31, 20, 65, 4.74);
@@ -173,7 +173,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('kevin waller');
 
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
 
         await playerSummaryPage.validateSummaryStats(13, 10, 77, 6.46);
@@ -186,7 +186,7 @@ test.describe('Player summary stats - filters', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('chris gardner');
 
-        await yearSelectPage.select2013Year();
+        await yearSelectPage.selectYear(2013);
         await playerStatOptionsPage.selectTeamFromDropdown('Bradford Saturday');
 
         await expect(playerSummaryPage.playerRows).toHaveCount(12);
@@ -212,7 +212,7 @@ test.describe('Player summary stats - filters', () => {
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
 
@@ -240,7 +240,7 @@ test.describe('Player summary stats - filters', () => {
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerStatOptionsPage.selectTeamFromDropdown('Leeds Saturday');
         await expect(playerStatOptionsPage.teamSelectDropdown).toHaveText(

@@ -12,7 +12,7 @@ test.describe('Player summary stats', () => {
         yearSelectPage,
     }) => {
         const player = 'Andy Waller';
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
 
         await playerSummaryPage.clickOnPlayerLink(player);
 
@@ -26,10 +26,10 @@ test.describe('Player summary stats', () => {
     }) => {
         playerSummaryPage.setPlayerToFind('steve gardner');
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSummaryPage.validateSummaryStats(57, 44, 77, 7.81);
 
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerSummaryPage.validateSummaryStats(43, 35, 81, 7.86);
     });
 
@@ -41,10 +41,10 @@ test.describe('Player summary stats', () => {
         playerSummaryPage.setPlayerToFind('jim moorin');
         await playerStatOptionsPage.selectAllClubsFromDropdown();
 
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await playerSummaryPage.validateSummaryStats(111, 66, 59, 2.23);
 
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerSummaryPage.validateSummaryStats(114, 83, 73, 5.57);
     });
 
@@ -74,7 +74,7 @@ test.describe('Player summary stats', () => {
         playerSummaryPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2023Year();
+        await yearSelectPage.selectYear(2023);
         await expect(playerSummaryPage.playerRows).toHaveCount(32);
     });
 
@@ -83,7 +83,7 @@ test.describe('Player summary stats', () => {
         playerStatOptionsPage,
         yearSelectPage,
     }) => {
-        await yearSelectPage.select2022Year();
+        await yearSelectPage.selectYear(2022);
         await playerStatOptionsPage.selectPairsOnlyRadio();
         await playerStatOptionsPage.selectCupOnlyRadio();
 
