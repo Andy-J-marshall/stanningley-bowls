@@ -53,12 +53,9 @@ function App() {
     // TODO refactor
     function statsSelectCallback(year: string) {
         // TODO refactor
-        let statsYearsProperty = year;
-        if (!isNaN(Number(year))) {
-            statsYearsProperty = `year${year}`;
-        } else {
-            statsYearsProperty = `allYears`;
-        }
+        const statsYearsProperty = isNaN(Number(year))
+            ? 'allYears'
+            : `year${year}`;
 
         if (
             allYearStanningleyStats[statsYearsProperty] &&
