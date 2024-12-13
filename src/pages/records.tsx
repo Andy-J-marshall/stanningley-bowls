@@ -22,6 +22,7 @@ function Records(props: RecordsProps) {
 
     const currentYear = new Date().getFullYear();
     const yearInTitle =
+        !isNaN(Number(stats.statsYear)) &&
         currentYear !== Number(stats.statsYear)
             ? `${stats.statsYear.toLowerCase()}`
             : '';

@@ -12,7 +12,7 @@ function Results(props: ResultsProps) {
     const yearToDisplay = props.yearToDisplay;
 
     const yearInTitle =
-        currentYear !== Number(yearToDisplay)
+        !isNaN(Number(stats.statsYear)) && currentYear !== Number(yearToDisplay)
             ? `${yearToDisplay.toLowerCase()}`
             : '';
 

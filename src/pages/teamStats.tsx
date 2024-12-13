@@ -14,6 +14,7 @@ function TeamStats(props: TeamStatsProps) {
     const { teamResults } = stats;
     const currentYear = new Date().getFullYear();
     const yearInTitle =
+        !isNaN(Number(stats.statsYear)) &&
         currentYear !== Number(stats.statsYear)
             ? `${stats.statsYear.toLowerCase()}`
             : '';

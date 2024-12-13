@@ -75,7 +75,8 @@ function PlayerStats(props: PlayerStatsProps) {
         // Find the title and players list fo the selected stats
 
         setYearInTitle(
-            new Date().getFullYear() !== Number(stanningleyStats.statsYear)
+            !isNaN(Number(stanningleyStats.statsYear)) &&
+                new Date().getFullYear() !== Number(stanningleyStats.statsYear)
                 ? allClubsStats.statsYear.toLowerCase()
                 : ''
         );
