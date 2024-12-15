@@ -3,6 +3,8 @@ import { Locator, Page } from '@playwright/test';
 export class ResultPage {
     public readonly page: Page;
 
+    public readonly noResultsMessage: Locator;
+
     public readonly teamResultsSections: Locator;
     public readonly resultRows: Locator;
     public readonly firstResultHomeTeam: Locator;
@@ -12,6 +14,10 @@ export class ResultPage {
 
     constructor(page: Page) {
         this.page = page;
+
+        this.noResultsMessage = page.getByText(
+            'No results available for the selected year'
+        );
 
         this.resultRows = page.locator('#result tbody tr');
         this.teamResultsSections = page.locator('#result > .teamResult');

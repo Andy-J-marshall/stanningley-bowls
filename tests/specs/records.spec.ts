@@ -108,6 +108,22 @@ test.describe('Records', () => {
         await expect(recordsPage.mondayTeamRecords).toHaveCount(1);
     });
 
+    test('Records overview displays for all years if user navigates from player stats', async ({
+        playerSummaryPage,
+        recordsPage,
+        yearSelectPage,
+    }) => {
+        // Note: this page is only accessible if All Years is selected in Player Stats
+        await playerSummaryPage.goto();
+        await yearSelectPage.selectAllYears();
+        await recordsPage.goto();
+
+        expect(recordsPage.overallGamesRecord).toBeVisible();
+        expect(recordsPage.overallGamesRecordPlayer).toContainText(
+            'Donald Shaw'
+        );
+    });
+
     test(`Records year dropdown appears if there are multiple years of records available`, async ({
         yearSelectPage,
     }) => {

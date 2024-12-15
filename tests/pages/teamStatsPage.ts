@@ -4,6 +4,7 @@ export class TeamStatsPage {
     public readonly page: Page;
 
     public readonly noGamesMessage: Locator;
+    public readonly noStatsMessage: Locator;
 
     public readonly mondayTeamStats: Locator;
 
@@ -45,6 +46,9 @@ export class TeamStatsPage {
 
         this.noGamesMessage = page.getByText(
             'Stanningley did not play on this day for the selected year'
+        );
+        this.noStatsMessage = page.getByText(
+            'No team stats available for the selected year'
         );
 
         this.mondayTeamStats = page.locator(

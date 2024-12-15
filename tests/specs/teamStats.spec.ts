@@ -100,6 +100,19 @@ test.describe('Team Stats', () => {
         await expect(teamStatsPage.mondayTeamStats).toHaveCount(1);
     });
 
+    test('Team stats do not appear if All Years is selected', async ({
+        playerSummaryPage,
+        teamStatsPage,
+        yearSelectPage,
+    }) => {
+        // Note: the All Years dropdown is only accessible in PlayerStats
+        await playerSummaryPage.goto();
+        await yearSelectPage.selectAllYears();
+        await teamStatsPage.goto();
+
+        await expect(teamStatsPage.noStatsMessage).toBeVisible();
+    });
+
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({
         yearSelectPage,
     }) => {

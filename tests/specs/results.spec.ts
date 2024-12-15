@@ -51,6 +51,19 @@ test.describe('Results', () => {
         expect(resultPage.firstResultAwayScore).toHaveText('20');
     });
 
+    test('Results do not appear if All Years is selected', async ({
+        playerSummaryPage,
+        resultPage,
+        yearSelectPage,
+    }) => {
+        // Note: the All Years dropdown is only accessible in PlayerStats
+        await playerSummaryPage.goto();
+        await yearSelectPage.selectAllYears();
+        await resultPage.goto();
+
+        await expect(resultPage.noResultsMessage).toBeVisible();
+    });
+
     test(`Stats year dropdown appears if there are multiple years of stats available`, async ({
         yearSelectPage,
     }) => {
