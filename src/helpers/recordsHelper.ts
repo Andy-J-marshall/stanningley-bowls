@@ -94,8 +94,8 @@ export function findPlayerRecords(
 ) {
     const players = Object.keys(playerResults);
 
-    const minGamesForOverallRecords = 15;
-    const minGamesForTeamRecords = 11;
+    const minGamesForOverallRecords = 18;
+    const minGamesForTeamRecords = 12;
 
     let minGames = 1;
     let mostGamesPlayer: string[] = [];
